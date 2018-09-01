@@ -1,4 +1,4 @@
-﻿<Type Name="TemplatedMailWebEventProvider" FullName="System.Web.Management.TemplatedMailWebEventProvider">
+<Type Name="TemplatedMailWebEventProvider" FullName="System.Web.Management.TemplatedMailWebEventProvider">
   <TypeSignature Language="C#" Value="public sealed class TemplatedMailWebEventProvider : System.Web.Management.MailWebEventProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TemplatedMailWebEventProvider extends System.Web.Management.MailWebEventProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.TemplatedMailWebEventProvider" />
@@ -115,6 +115,7 @@
     <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
     <altmember cref="T:System.Web.Management.MailWebEventProvider" />
     <altmember cref="T:System.Web.Management.MailEventNotificationInfo" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2">Installing and Configuring ASP.NET Providers</related>
   </Docs>
   <Members>
     <Member MemberName="CurrentNotification">

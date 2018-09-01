@@ -1,4 +1,4 @@
-﻿<Type Name="WorkflowQueuingService" FullName="System.Workflow.Runtime.WorkflowQueuingService">
+<Type Name="WorkflowQueuingService" FullName="System.Workflow.Runtime.WorkflowQueuingService">
   <TypeSignature Language="C#" Value="public class WorkflowQueuingService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowQueuingService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowQueuingService" />
@@ -36,13 +36,14 @@
 ## Examples  
  The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=nameWithType> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)).  
   
  [!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
  [!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)">File System Watcher Activity</related>
   </Docs>
   <Members>
     <Member MemberName="CreateWorkflowQueue">
@@ -81,7 +82,7 @@
 ## Examples  
  The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=nameWithType> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)).  
   
  [!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
  [!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
@@ -91,6 +92,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="queueName" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
         <exception cref="T:System.InvalidOperationException">A <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> with the name specified by <paramref name="queueName" /> already exists.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)">File System Watcher Activity</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteWorkflowQueue">
@@ -121,7 +123,7 @@
 ## Examples  
  The following code example demonstrates a method that writes a string to the console, creates an instance of <xref:System.Workflow.Runtime.WorkflowQueuingService> by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=nameWithType> method. Finally, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.DeleteWorkflowQueue%2A> method to delete the queue associated with a `QueueName` property on the current workflow.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)).  
   
  [!code-csharp[WF_Samples#224](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#224)]
  [!code-vb[WF_Samples#224](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#224)]  
@@ -130,6 +132,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="queueName" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)">File System Watcher Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Exists">
@@ -162,7 +165,7 @@
 ## Examples  
  The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=nameWithType> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)).  
   
  [!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
  [!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
@@ -171,6 +174,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="queueName" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)">File System Watcher Activity</related>
       </Docs>
     </Member>
     <Member MemberName="GetWorkflowQueue">
@@ -202,7 +206,7 @@
 ## Examples  
  The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=nameWithType> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)).  
   
  [!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
  [!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
@@ -212,6 +216,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="queueName" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
         <exception cref="T:System.InvalidOperationException">The specified <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> was not found.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)">File System Watcher Activity</related>
       </Docs>
     </Member>
     <Member MemberName="PendingMessagesProperty">

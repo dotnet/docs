@@ -1,4 +1,4 @@
-﻿<Type Name="GlobalProxySelection" FullName="System.Net.GlobalProxySelection">
+<Type Name="GlobalProxySelection" FullName="System.Net.GlobalProxySelection">
   <TypeSignature Language="C#" Value="public class GlobalProxySelection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GlobalProxySelection extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.GlobalProxySelection" />
@@ -53,6 +53,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f">DefaultProxy Element (Network Settings)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="PrincipalSearchResult&lt;T&gt;" FullName="System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;T&gt;">
+<Type Name="PrincipalSearchResult&lt;T&gt;" FullName="System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class PrincipalSearchResult&lt;T&gt; : IDisposable, System.Collections.Generic.IEnumerable&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrincipalSearchResult`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.IEnumerable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" />
@@ -30,6 +30,8 @@
     <summary>Returns a collection of <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> objects that are returned by a search.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="N:System.DirectoryServices.AccountManagement" />
+    <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Dispose">
@@ -90,6 +92,8 @@
         <returns>The <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that is used to iterate through the principal objects.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -125,6 +129,8 @@
         <returns>Returns an <see cref="T:System.Collections.IEnumerator" /> containing the principals in the search result collection.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="Grammar" FullName="System.Speech.Recognition.Grammar">
+<Type Name="Grammar" FullName="System.Speech.Recognition.Grammar">
   <TypeSignature Language="C#" Value="public class Grammar" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Grammar extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.Grammar" />
@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A speech recognition grammar is a set of rules or constraints that define what a speech recognition engine can recognize as meaningful input. For more information about creating and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/library/6a7dc524-07fc-4862-8d48-8c10dc64b919),  [Create Grammars Using XML](http://msdn.microsoft.com/library/2d799487-49c6-4cc9-b42f-f71cd3824fe1), [Create Grammars Using GrammarBuilder](http://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae), and [Create Grammars Using SrgsGrammar](http://msdn.microsoft.com/library/e4d9f96e-2241-4c39-b9e0-ac9ef4e9a906).  
+ A speech recognition grammar is a set of rules or constraints that define what a speech recognition engine can recognize as meaningful input. For more information about creating and using speech recognition grammars, see [Speech Recognition](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361633(v=office.14)),  [Create Grammars Using XML](http://msdn.microsoft.com/library/2d799487-49c6-4cc9-b42f-f71cd3824fe1), [Create Grammars Using GrammarBuilder](http://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae), and [Create Grammars Using SrgsGrammar](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361680(v%3doffice.14)).  
   
  After you author a grammar, you must build it into a <xref:System.Speech.Recognition.Grammar> object that a speech recognition engine can load and that your application can use at runtime to manage speech recognition. You can use a <xref:System.Speech.Recognition.Grammar.%23ctor%2A> constructor to create a <xref:System.Speech.Recognition.Grammar> instance from a <xref:System.Speech.Recognition.GrammarBuilder> or a <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object, or from a file or a <xref:System.IO.Stream> that contains a description of a grammar in a supported format. Supported formats include the following:  
   
@@ -98,6 +98,7 @@ private static Grammar CreateGrammarFromFile()
     <altmember cref="T:System.Speech.Recognition.GrammarBuilder" />
     <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
     <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=15143">Speech Recognition Grammar Specification</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -245,6 +246,7 @@ private static Grammar CreateGrammarFromStream()
         <altmember cref="T:System.IO.Stream" />
         <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
         <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=15143">Speech Recognition Grammar Specification</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -398,6 +400,7 @@ private static Grammar CreateSrgsDocumentGrammar()
         <altmember cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" />
         <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
         <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=15143">Speech Recognition Grammar Specification</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -498,6 +501,7 @@ private static Grammar CreateGrammarFromFile()
         <exception cref="T:System.FormatException">The file does not contain a valid description, or describes a grammar that contains a rule reference that cannot be resolved.</exception>
         <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
         <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=15143">Speech Recognition Grammar Specification</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -599,6 +603,7 @@ private static Grammar CreateGrammarFromStream2()
         <altmember cref="T:System.IO.Stream" />
         <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
         <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=15143">Speech Recognition Grammar Specification</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -727,6 +732,7 @@ namespace SampleRecognition
         <altmember cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" />
         <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
         <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=15143">Speech Recognition Grammar Specification</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -827,6 +833,7 @@ private static Grammar CreateGrammarFromFile2()
         <exception cref="T:System.FormatException">The file does not contain a valid description or describes a grammar that contains a rule reference that cannot be resolved.</exception>
         <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
         <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=15143">Speech Recognition Grammar Specification</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1000,6 +1007,7 @@ private static Grammar CreateGrammarFromStream3()
         <altmember cref="T:System.IO.Stream" />
         <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
         <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=15143">Speech Recognition Grammar Specification</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1166,6 +1174,7 @@ private static Grammar CreateSrgsDocumentGrammar3()
         <altmember cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" />
         <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
         <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=15143">Speech Recognition Grammar Specification</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1366,6 +1375,7 @@ private static void DumpGrammarStatus(Grammar item)
         <altmember cref="P:System.Speech.Recognition.Grammar.Loaded" />
         <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
         <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=15143">Speech Recognition Grammar Specification</related>
       </Docs>
     </Member>
     <Member MemberName="IsStg">

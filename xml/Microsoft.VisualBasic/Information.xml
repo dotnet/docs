@@ -1,4 +1,4 @@
-﻿<Type Name="Information" FullName="Microsoft.VisualBasic.Information">
+<Type Name="Information" FullName="Microsoft.VisualBasic.Information">
   <TypeSignature Language="C#" Value="public sealed class Information" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Information extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Information" />
@@ -48,6 +48,11 @@ testVbName = VbTypeName(sysBadName)
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/information-and-interaction-summary.md">Information and Interaction Summary</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/data-types-summary.md">Data Types Summary</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/declarations-and-constants-summary.md">Declarations and Constants Summary</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/index.md">Keywords (Visual Basic)</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/runtime-library-members.md">Visual Basic Run-Time Library Members</related>
   </Docs>
   <Members>
     <Member MemberName="Erl">
@@ -142,6 +147,12 @@ testVbName = VbTypeName(sysBadName)
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/error-statement.md">Error Statement</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/on-error-statement.md">On Error Statement (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/exit-statement.md">Exit Statement (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/resume-statement.md">Resume Statement</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/error-messages/index.md">Error Messages (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/try-catch-finally-statement.md">Try...Catch...Finally Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="IsArray">
@@ -191,6 +202,7 @@ testVbName = VbTypeName(sysBadName)
         <altmember cref="M:Microsoft.VisualBasic.Information.IsReference(System.Object)" />
         <altmember cref="T:System.Object" />
         <altmember cref="M:Microsoft.VisualBasic.Information.TypeName(System.Object)" />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/arrays/index.md">Arrays in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="IsDate">
@@ -399,6 +411,7 @@ testVbName = VbTypeName(sysBadName)
         <altmember cref="M:Microsoft.VisualBasic.Information.IsReference(System.Object)" />
         <altmember cref="T:System.Object" />
         <altmember cref="M:Microsoft.VisualBasic.Information.TypeName(System.Object)" />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md">Value Types and Reference Types</related>
       </Docs>
     </Member>
     <Member MemberName="IsNumeric">
@@ -503,6 +516,7 @@ testVbName = VbTypeName(sysBadName)
         <altmember cref="M:Microsoft.VisualBasic.Information.IsNumeric(System.Object)" />
         <altmember cref="T:System.Object" />
         <altmember cref="M:Microsoft.VisualBasic.Information.TypeName(System.Object)" />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md">Value Types and Reference Types</related>
       </Docs>
     </Member>
     <Member MemberName="LBound">
@@ -564,6 +578,8 @@ Dim a(100, 5, 4) As Byte
         <altmember cref="M:Microsoft.VisualBasic.Information.UBound(System.Array,System.Int32)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.RankException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/dim-statement.md">Dim Statement (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/redim-statement.md">ReDim Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="QBColor">
@@ -729,6 +745,7 @@ Dim a(100, 5, 4) As Byte
         </remarks>
         <altmember cref="T:System.String" />
         <altmember cref="M:Microsoft.VisualBasic.Information.VbTypeName(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -803,6 +820,7 @@ Dim a(100, 5, 4) As Byte
         <altmember cref="M:Microsoft.VisualBasic.Information.IsNothing(System.Object)" />
         <altmember cref="M:Microsoft.VisualBasic.Information.IsNumeric(System.Object)" />
         <altmember cref="M:Microsoft.VisualBasic.Information.IsReference(System.Object)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="UBound">
@@ -873,6 +891,8 @@ total = (UBound(A, 1) + 1) * (UBound(A, 2) + 1) * (UBound(A, 3) + 1)
         <altmember cref="M:Microsoft.VisualBasic.Information.LBound(System.Array,System.Int32)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.RankException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/dim-statement.md">Dim Statement (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/redim-statement.md">ReDim Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="VarType">
@@ -929,6 +949,7 @@ total = (UBound(A, 1) + 1) * (UBound(A, 2) + 1) * (UBound(A, 3) + 1)
         </remarks>
         <altmember cref="T:System.Object" />
         <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="VbTypeName">
@@ -979,6 +1000,7 @@ total = (UBound(A, 1) + 1) * (UBound(A, 2) + 1) * (UBound(A, 3) + 1)
         </remarks>
         <altmember cref="T:System.String" />
         <altmember cref="M:Microsoft.VisualBasic.Information.SystemTypeName(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="FieldTemplateUserControl" FullName="System.Web.DynamicData.FieldTemplateUserControl">
+<Type Name="FieldTemplateUserControl" FullName="System.Web.DynamicData.FieldTemplateUserControl">
   <TypeSignature Language="C#" Value="public class FieldTemplateUserControl : System.Web.UI.UserControl, System.Web.DynamicData.IFieldTemplate, System.Web.UI.IBindableControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FieldTemplateUserControl extends System.Web.UI.UserControl implements class System.Web.DynamicData.IFieldTemplate, class System.Web.UI.IBindableControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.FieldTemplateUserControl" />
@@ -96,6 +96,7 @@ public partial class ForeignKeyField :
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/e0166a58-9178-4660-81a6-175994b11b12">ASP.NET Dynamic Data Scaffolding</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -277,6 +278,7 @@ public partial class ForeignKeyField :
         <summary>Gets the <see cref="T:System.Web.DynamicData.MetaColumn" /> associated with a field template.</summary>
         <value>An object that represents a database column.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/e0166a58-9178-4660-81a6-175994b11b12">ASP.NET Dynamic Data Scaffolding</related>
       </Docs>
     </Member>
     <Member MemberName="ContainerType">

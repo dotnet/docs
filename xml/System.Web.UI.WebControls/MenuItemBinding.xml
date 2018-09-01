@@ -1,4 +1,4 @@
-﻿<Type Name="MenuItemBinding" FullName="System.Web.UI.WebControls.MenuItemBinding">
+<Type Name="MenuItemBinding" FullName="System.Web.UI.WebControls.MenuItemBinding">
   <TypeSignature Language="C#" Value="public sealed class MenuItemBinding : ICloneable, System.Web.UI.IDataSourceViewSchemaAccessor, System.Web.UI.IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MenuItemBinding extends System.Object implements class System.ICloneable, class System.Web.UI.IDataSourceViewSchemaAccessor, class System.Web.UI.IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MenuItemBinding" />
@@ -915,6 +915,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
         <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Text" />
         <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.TextField" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -1998,6 +1999,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.StateBag" />
         <altmember cref="T:System.Web.UI.StateItem" />
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -2025,6 +2027,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.StateBag" />
         <altmember cref="T:System.Web.UI.StateItem" />
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -2058,6 +2061,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.StateBag" />
         <altmember cref="T:System.Web.UI.StateItem" />
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Target">

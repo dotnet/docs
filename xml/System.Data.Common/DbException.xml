@@ -1,4 +1,4 @@
-﻿<Type Name="DbException" FullName="System.Data.Common.DbException">
+<Type Name="DbException" FullName="System.Data.Common.DbException">
   <TypeSignature Language="C#" Value="public abstract class DbException : System.Runtime.InteropServices.ExternalException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit DbException extends System.Runtime.InteropServices.ExternalException" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbException" />
@@ -43,6 +43,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -60,6 +62,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -96,6 +99,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -136,6 +140,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -177,6 +182,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -219,6 +225,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -260,6 +267,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

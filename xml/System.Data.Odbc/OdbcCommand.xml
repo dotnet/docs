@@ -1,4 +1,4 @@
-﻿<Type Name="OdbcCommand" FullName="System.Data.Odbc.OdbcCommand">
+<Type Name="OdbcCommand" FullName="System.Data.Odbc.OdbcCommand">
   <TypeSignature Language="C#" Value="public sealed class OdbcCommand : System.Data.Common.DbCommand, ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OdbcCommand extends System.Data.Common.DbCommand implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcCommand" />
@@ -74,6 +74,7 @@
     </remarks>
     <altmember cref="T:System.Data.Odbc.OdbcDataAdapter" />
     <altmember cref="T:System.Data.Odbc.OdbcConnection" />
+    <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -83,6 +84,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcCommand" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -122,6 +124,7 @@
         </remarks>
         <altmember cref="T:System.Data.Odbc.OdbcDataAdapter" />
         <altmember cref="T:System.Data.Odbc.OdbcConnection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -149,6 +152,7 @@
         <param name="cmdText">The text of the query.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcCommand" /> class with the text of the query.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -178,6 +182,7 @@
         <param name="connection">An <see cref="T:System.Data.Odbc.OdbcConnection" /> object that represents the connection to a data source.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcCommand" /> class with the text of the query and an <see cref="T:System.Data.Odbc.OdbcConnection" /> object.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -225,6 +230,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -261,6 +267,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName="CommandText">
@@ -388,6 +395,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <altmember cref="P:System.Data.Odbc.OdbcCommand.Connection" />
         <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandTimeout" />
         <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName="CommandTimeout">
@@ -427,6 +435,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName="CommandType">
@@ -491,6 +500,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <exception cref="T:System.ArgumentException">The value was not a valid <see cref="T:System.Data.CommandType" />.</exception>
         <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandText" />
         <altmember cref="P:System.Data.Odbc.OdbcCommand.UpdatedRowSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -548,6 +558,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandText" />
         <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandTimeout" />
         <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDbParameter">
@@ -610,6 +621,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName="DbConnection">
@@ -732,6 +744,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <summary>Gets or sets a value that indicates whether the command object should be visible in a customized interface control.</summary>
         <value>**true**, if the command object should be visible in a control; otherwise **false**. The default is **true**.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -840,6 +853,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
  -or-  
   
  The connection is not open.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ExecuteReader">
@@ -849,6 +863,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
       </AssemblyInfo>
       <Docs>
         <summary>Sends the <see cref="P:System.Data.Odbc.OdbcCommand.CommandText" /> to the <see cref="P:System.Data.Odbc.OdbcCommand.Connection" /> and builds an <see cref="T:System.Data.Odbc.OdbcDataReader" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ExecuteReader">
@@ -886,6 +901,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName="ExecuteReader">
@@ -933,6 +949,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName="ExecuteScalar">
@@ -968,6 +985,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -1020,6 +1038,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
  ]]></format>
         </remarks>
         <altmember cref="T:System.Data.Odbc.OdbcParameter" />
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName="Prepare">
@@ -1063,6 +1082,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
  -or-  
   
  The <see cref="P:System.Data.Odbc.OdbcCommand.Connection" /> is not <see cref="M:System.Data.Odbc.OdbcConnection.Open" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName="ResetCommandTimeout">
@@ -1097,6 +1117,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbCommand.CreateParameter">
@@ -1209,6 +1230,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
     <Member MemberName="Transaction">
@@ -1298,6 +1320,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>
     </Member>
   </Members>

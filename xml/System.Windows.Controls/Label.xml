@@ -1,4 +1,4 @@
-﻿<Type Name="Label" FullName="System.Windows.Controls.Label">
+<Type Name="Label" FullName="System.Windows.Controls.Label">
   <TypeSignature Language="C#" Value="public class Label : System.Windows.Controls.ContentControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Label extends System.Windows.Controls.ContentControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Label" />
@@ -60,6 +60,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752101(v=vs.90)">How to: Set a Label's Target Property</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -173,6 +174,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752101(v=vs.90)">How to: Set a Label's Target Property</related>
       </Docs>
     </Member>
     <Member MemberName="TargetProperty">

@@ -1,4 +1,4 @@
-﻿<Type Name="IObjectListFieldCollection" FullName="System.Web.UI.MobileControls.IObjectListFieldCollection">
+<Type Name="IObjectListFieldCollection" FullName="System.Web.UI.MobileControls.IObjectListFieldCollection">
   <TypeSignature Language="C#" Value="public interface IObjectListFieldCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IObjectListFieldCollection implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.IObjectListFieldCollection" />
@@ -35,6 +35,7 @@
     <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
     <altmember cref="T:System.Collections.ICollection" />
     <altmember cref="P:System.Web.UI.MobileControls.ObjectList.AllFields" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
   </Docs>
   <Members>
     <Member MemberName="GetAll">
@@ -68,6 +69,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="IndexOf">
@@ -106,6 +108,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.IndexOf(System.String)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.IndexOf(System.Web.UI.MobileControls.ObjectListField)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListItemCollection.IndexOf(System.Web.UI.MobileControls.ObjectListItem)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -140,6 +143,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -167,6 +171,7 @@
         <summary>Returns an item in the collection, by index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The item in the collection at the specified index.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
   </Members>

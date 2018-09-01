@@ -1,4 +1,4 @@
-﻿<Type Name="HttpRuntime" FullName="System.Web.HttpRuntime">
+<Type Name="HttpRuntime" FullName="System.Web.HttpRuntime">
   <TypeSignature Language="C#" Value="public sealed class HttpRuntime" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpRuntime extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpRuntime" />
@@ -38,6 +38,7 @@
     <altmember cref="M:System.Web.HttpRuntime.ProcessRequest(System.Web.HttpWorkerRequest)" />
     <altmember cref="T:System.Web.HttpWorkerRequest" />
     <altmember cref="T:System.Web.Hosting.SimpleWorkerRequest" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d9d67414-2e53-42b1-976d-50e308165a34">Page and Application Context in ASP.NET Web Applications</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

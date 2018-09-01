@@ -1,4 +1,4 @@
-﻿<Type Name="AppearanceEditorPart" FullName="System.Web.UI.WebControls.WebParts.AppearanceEditorPart">
+<Type Name="AppearanceEditorPart" FullName="System.Web.UI.WebControls.WebParts.AppearanceEditorPart">
   <TypeSignature Language="C#" Value="public sealed class AppearanceEditorPart : System.Web.UI.WebControls.WebParts.EditorPart" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AppearanceEditorPart extends System.Web.UI.WebControls.WebParts.EditorPart" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.AppearanceEditorPart" />
@@ -84,6 +84,7 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.BehaviorEditorPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.LayoutEditorPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -107,6 +108,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.AppearanceEditorPart" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ApplyChanges">
@@ -159,6 +161,7 @@
  <see cref="P:System.Web.UI.WebControls.WebParts.Part.Title" /><see cref="P:System.Web.UI.WebControls.WebParts.Part.ChromeType" /><see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Direction" /><see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Height" /><see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Width" /><see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Hidden" /></exception>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorPart.ApplyChanges" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.SyncChanges" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -311,6 +314,7 @@
   
  If you create a custom control, you can follow the same approach, and call the <see cref="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.SyncChanges" /> method from the inherited <see cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" /> method to ensure that any intervening changes are synchronized, but it is not necessary to do this.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -353,6 +357,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

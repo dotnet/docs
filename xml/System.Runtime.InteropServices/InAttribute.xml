@@ -1,4 +1,4 @@
-﻿<Type Name="InAttribute" FullName="System.Runtime.InteropServices.InAttribute">
+<Type Name="InAttribute" FullName="System.Runtime.InteropServices.InAttribute">
   <TypeSignature Language="C#" Value="public sealed class InAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.InAttribute" />
@@ -70,6 +70,7 @@
     </remarks>
     <altmember cref="T:System.Runtime.InteropServices.OutAttribute" />
     <altmember cref="T:System.Text.StringBuilder" />
+    <related type="Article" href="~/docs/framework/interop/blittable-and-non-blittable-types.md">Blittable and Non-Blittable Types</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

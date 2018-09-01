@@ -1,4 +1,4 @@
-﻿<Type Name="IFrameworkInputElement" FullName="System.Windows.IFrameworkInputElement">
+<Type Name="IFrameworkInputElement" FullName="System.Windows.IFrameworkInputElement">
   <TypeSignature Language="C#" Value="public interface IFrameworkInputElement : System.Windows.IInputElement" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFrameworkInputElement implements class System.Windows.IInputElement" />
   <TypeSignature Language="DocId" Value="T:System.Windows.IFrameworkInputElement" />
@@ -49,6 +49,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.FrameworkElement.Name" />
         <altmember cref="P:System.Windows.FrameworkContentElement.Name" />
+        <related type="Article" href="http://msdn.microsoft.com/library/b7e61222-e8cf-48d2-acd0-6df3b7685d48">x:Name Attribute</related>
       </Docs>
     </Member>
   </Members>

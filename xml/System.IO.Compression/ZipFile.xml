@@ -1,4 +1,4 @@
-﻿<Type Name="ZipFile" FullName="System.IO.Compression.ZipFile">
+<Type Name="ZipFile" FullName="System.IO.Compression.ZipFile">
   <TypeSignature Language="C#" Value="public static class ZipFile" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ZipFile extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.Compression.ZipFile" />
@@ -69,6 +69,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/1aabb520-99b0-46c6-9368-21b4d84793eb">How to: Add or Remove References By Using the Reference Manager</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="CreateFromDirectory">

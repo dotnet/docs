@@ -1,4 +1,4 @@
-﻿<Type Name="OracleDataAdapter" FullName="System.Data.OracleClient.OracleDataAdapter">
+<Type Name="OracleDataAdapter" FullName="System.Data.OracleClient.OracleDataAdapter">
   <TypeSignature Language="C#" Value="public sealed class OracleDataAdapter : System.Data.Common.DbDataAdapter, ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OracleDataAdapter extends System.Data.Common.DbDataAdapter implements class System.Data.IDataAdapter, class System.Data.IDbDataAdapter, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleDataAdapter" />
@@ -227,6 +227,7 @@ END CURSPKG;
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Retrieving and Modifying Data in ADO.NET</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -323,6 +324,7 @@ public static void CreateOracleDataAdapter()
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Retrieving and Modifying Data in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -416,6 +418,7 @@ public static void CreateOracleDataAdapter()
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Retrieving and Modifying Data in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -504,6 +507,7 @@ public static void CreateOracleDataAdapter()
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Retrieving and Modifying Data in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -591,6 +595,7 @@ public static void CreateOracleDataAdapter()
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Retrieving and Modifying Data in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="AddToBatch">
@@ -814,6 +819,7 @@ public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Retrieving and Modifying Data in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ExecuteBatch">
@@ -1033,6 +1039,7 @@ public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Retrieving and Modifying Data in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="OnRowUpdated">
@@ -1282,6 +1289,7 @@ public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Retrieving and Modifying Data in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbDataAdapter.DeleteCommand">
@@ -1517,6 +1525,7 @@ public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Retrieving and Modifying Data in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateCommand">
@@ -1641,6 +1650,7 @@ public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Retrieving and Modifying Data in ADO.NET</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="FillMode" FullName="System.Drawing.Drawing2D.FillMode">
+<Type Name="FillMode" FullName="System.Drawing.Drawing2D.FillMode">
   <TypeSignature Language="C#" Value="public enum FillMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FillMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.FillMode" />
@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/5a36b0e4-f1f4-46c0-a85a-22ae98491950">How To: Fill Open Figures</related>
   </Docs>
   <Members>
     <Member MemberName="Alternate">

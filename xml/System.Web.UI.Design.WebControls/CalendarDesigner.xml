@@ -1,4 +1,4 @@
-﻿<Type Name="CalendarDesigner" FullName="System.Web.UI.Design.WebControls.CalendarDesigner">
+<Type Name="CalendarDesigner" FullName="System.Web.UI.Design.WebControls.CalendarDesigner">
   <TypeSignature Language="C#" Value="public class CalendarDesigner : System.Web.UI.Design.ControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CalendarDesigner extends System.Web.UI.Design.ControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.CalendarDesigner" />
@@ -23,6 +23,8 @@
   <Docs>
     <summary>Extends design-time behavior for the <see cref="T:System.Web.UI.WebControls.Calendar" /> Web server control.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,6 +71,8 @@
         <summary>Gets all the <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> objects available for the control.</summary>
         <value>A <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> object containing the <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> objects available for the control.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -103,6 +107,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnAutoFormat">
@@ -138,6 +144,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Verbs">

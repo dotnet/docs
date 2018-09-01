@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripDropDownItem" FullName="System.Windows.Forms.ToolStripDropDownItem">
+<Type Name="ToolStripDropDownItem" FullName="System.Windows.Forms.ToolStripDropDownItem">
   <TypeSignature Language="C#" Value="public abstract class ToolStripDropDownItem : System.Windows.Forms.ToolStripItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ToolStripDropDownItem extends System.Windows.Forms.ToolStripItem" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripDropDownItem" />
@@ -43,6 +43,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/e361bf98-eed8-4ed3-9dfb-5a2e865e3ce6">MenuStrip Control (Windows Forms)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/e5ef455a-e049-429c-8005-30c93132fb79">ToolStrip Control (Windows Forms)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/0fad444e-26d9-49af-8860-044d9c10d608">How To: Insert a MenuStrip into an MDI Drop-Down Menu (Windows Forms)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -283,7 +286,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
       </Docs>
     </Member>

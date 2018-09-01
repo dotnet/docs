@@ -1,4 +1,4 @@
-﻿<Type Name="TextFormatFlags" FullName="System.Windows.Forms.TextFormatFlags">
+<Type Name="TextFormatFlags" FullName="System.Windows.Forms.TextFormatFlags">
   <TypeSignature Language="C#" Value="public enum TextFormatFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextFormatFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TextFormatFlags" />
@@ -36,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/winforms/advanced/using-fonts-and-text.md">Using Fonts and Text</related>
   </Docs>
   <Members>
     <Member MemberName="Bottom">

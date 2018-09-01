@@ -1,4 +1,4 @@
-﻿<Type Name="TargetInvocationException" FullName="System.Reflection.TargetInvocationException">
+<Type Name="TargetInvocationException" FullName="System.Reflection.TargetInvocationException">
   <TypeSignature Language="C#" Value="public sealed class TargetInvocationException : ApplicationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit TargetInvocationException extends System.ApplicationException" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.TargetInvocationException" />
@@ -56,6 +56,7 @@
     </remarks>
     <altmember cref="P:System.Exception.InnerException" />
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -121,6 +122,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -177,6 +179,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
   </Members>

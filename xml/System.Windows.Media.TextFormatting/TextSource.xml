@@ -1,4 +1,4 @@
-﻿<Type Name="TextSource" FullName="System.Windows.Media.TextFormatting.TextSource">
+<Type Name="TextSource" FullName="System.Windows.Media.TextFormatting.TextSource">
   <TypeSignature Language="C#" Value="public abstract class TextSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TextSource extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextSource" />
@@ -36,6 +36,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159965">Advanced Text Formatting Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

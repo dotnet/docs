@@ -1,4 +1,4 @@
-﻿<Type Name="Content" FullName="System.Web.UI.WebControls.Content">
+<Type Name="Content" FullName="System.Web.UI.WebControls.Content">
   <TypeSignature Language="C#" Value="public class Content : System.Web.UI.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Content extends System.Web.UI.Control implements class System.Web.UI.INamingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Content" />
@@ -82,6 +82,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
+    <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -112,6 +113,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ContentPlaceHolderID">
@@ -179,6 +181,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set the property at run time.</exception>
         <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataBinding">
@@ -220,6 +223,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
         <altmember cref="E:System.Web.UI.Control.DataBinding" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Disposed">
@@ -261,6 +265,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
         <altmember cref="E:System.Web.UI.Control.Disposed" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -302,6 +307,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
         <altmember cref="E:System.Web.UI.Control.Init" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -343,6 +349,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
         <altmember cref="E:System.Web.UI.Control.Load" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PreRender">
@@ -384,6 +391,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
         <altmember cref="E:System.Web.UI.Control.PreRender" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Unload">
@@ -425,6 +433,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
         <altmember cref="E:System.Web.UI.Control.Unload" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
   </Members>

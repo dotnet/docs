@@ -1,4 +1,4 @@
-﻿<Type Name="ExtenderProvidedPropertyAttribute" FullName="System.ComponentModel.ExtenderProvidedPropertyAttribute">
+<Type Name="ExtenderProvidedPropertyAttribute" FullName="System.ComponentModel.ExtenderProvidedPropertyAttribute">
   <TypeSignature Language="C#" Value="public sealed class ExtenderProvidedPropertyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExtenderProvidedPropertyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ExtenderProvidedPropertyAttribute" />
@@ -46,6 +46,7 @@
     </remarks>
     <altmember cref="T:System.ComponentModel.IExtenderProvider" />
     <altmember cref="T:System.ComponentModel.ProvidePropertyAttribute" />
+    <related type="Article" href="http://msdn.microsoft.com/library/4ce043d8-cd48-49dd-abef-185a2079e96a">Extender Providers</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,6 +84,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.IExtenderProvider" />
         <altmember cref="T:System.ComponentModel.ProvidePropertyAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4ce043d8-cd48-49dd-abef-185a2079e96a">Extender Providers</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -125,6 +127,7 @@
         <altmember cref="T:System.ComponentModel.IExtenderProvider" />
         <altmember cref="T:System.ComponentModel.ProvidePropertyAttribute" />
         <altmember cref="M:System.Attribute.Equals(System.Object)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4ce043d8-cd48-49dd-abef-185a2079e96a">Extender Providers</related>
       </Docs>
     </Member>
     <Member MemberName="ExtenderProperty">
@@ -166,6 +169,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.IExtenderProvider" />
         <altmember cref="T:System.ComponentModel.ProvidePropertyAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4ce043d8-cd48-49dd-abef-185a2079e96a">Extender Providers</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -203,6 +207,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.IExtenderProvider" />
         <altmember cref="T:System.ComponentModel.ProvidePropertyAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4ce043d8-cd48-49dd-abef-185a2079e96a">Extender Providers</related>
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAttribute">
@@ -240,6 +245,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.IExtenderProvider" />
         <altmember cref="T:System.ComponentModel.ProvidePropertyAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4ce043d8-cd48-49dd-abef-185a2079e96a">Extender Providers</related>
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -281,6 +287,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.IExtenderProvider" />
         <altmember cref="T:System.ComponentModel.ProvidePropertyAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4ce043d8-cd48-49dd-abef-185a2079e96a">Extender Providers</related>
       </Docs>
     </Member>
     <Member MemberName="ReceiverType">
@@ -322,6 +329,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.IExtenderProvider" />
         <altmember cref="T:System.ComponentModel.ProvidePropertyAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4ce043d8-cd48-49dd-abef-185a2079e96a">Extender Providers</related>
       </Docs>
     </Member>
   </Members>

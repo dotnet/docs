@@ -1,4 +1,4 @@
-﻿<Type Name="X509SecurityTokenHandler" FullName="System.IdentityModel.Tokens.X509SecurityTokenHandler">
+<Type Name="X509SecurityTokenHandler" FullName="System.IdentityModel.Tokens.X509SecurityTokenHandler">
   <TypeSignature Language="C#" Value="public class X509SecurityTokenHandler : System.IdentityModel.Tokens.SecurityTokenHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit X509SecurityTokenHandler extends System.IdentityModel.Tokens.SecurityTokenHandler" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.X509SecurityTokenHandler" />
@@ -16,6 +16,7 @@
   <Docs>
     <summary>Represents a security token handler that processes tokens of type <see cref="T:System.IdentityModel.Tokens.X509SecurityToken" />. By default, the handler will perform chain-trust validation of the X.509 certificate.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/aca22c2c-5ae7-42af-9bbd-15c2524692ce">&lt;x509SecurityTokenHandlerRequirement&gt;</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

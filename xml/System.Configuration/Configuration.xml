@@ -1,4 +1,4 @@
-﻿<Type Name="Configuration" FullName="System.Configuration.Configuration">
+<Type Name="Configuration" FullName="System.Configuration.Configuration">
   <TypeSignature Language="C#" Value="public sealed class Configuration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Configuration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.Configuration" />
@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Configuration settings are stored in a hierarchy of configuration files. The <xref:System.Configuration.Configuration> class instance represents the merged view of the configuration settings from all of the configuration files that apply to a specific physical entity, such as a computer, or to a logical entity, such as an application or a Web site. The logical entity can exist on the local computer or on a remote server. For information about configuration files, see [Configuring Apps](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f) and [ASP.NET Configuration Files](http://msdn.microsoft.com/library/01505090-9114-41a7-93ca-068e2283ed3d).  
+ Configuration settings are stored in a hierarchy of configuration files. The <xref:System.Configuration.Configuration> class instance represents the merged view of the configuration settings from all of the configuration files that apply to a specific physical entity, such as a computer, or to a logical entity, such as an application or a Web site. The logical entity can exist on the local computer or on a remote server. For information about configuration files, see [Configuring Apps](~/docs/framework/configure-apps/index.md) and [ASP.NET Configuration Files](http://msdn.microsoft.com/library/01505090-9114-41a7-93ca-068e2283ed3d).  
   
  When no configuration file exists for a specified entity, the <xref:System.Configuration.Configuration> object represents the default configuration settings as defined by the Machine.config file.  
   
@@ -84,6 +84,9 @@
     <altmember cref="T:System.Configuration.ConfigurationSection" />
     <altmember cref="T:System.Configuration.ConfigurationManager" />
     <altmember cref="T:System.Web.Configuration.WebConfigurationManager" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1298034b-5f7d-464d-abd1-ad9e6b3eeb7e">Configuring ASP.NET Applications</related>
+    <related type="Article" href="~/docs/framework/configure-apps/index.md">Configuration Files</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/01505090-9114-41a7-93ca-068e2283ed3d">ASP.NET Configuration Files</related>
   </Docs>
   <Members>
     <Member MemberName="AppSettings">
@@ -157,6 +160,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectionStrings">
@@ -975,6 +979,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
       </Docs>
     </Member>
     <Member MemberName="TypeStringTransformer">
@@ -1007,6 +1012,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
       </Docs>
     </Member>
   </Members>

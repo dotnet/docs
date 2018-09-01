@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridDesigner" FullName="System.Web.UI.Design.WebControls.DataGridDesigner">
+<Type Name="DataGridDesigner" FullName="System.Web.UI.Design.WebControls.DataGridDesigner">
   <TypeSignature Language="C#" Value="public class DataGridDesigner : System.Web.UI.Design.WebControls.BaseDataListDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridDesigner extends System.Web.UI.Design.WebControls.BaseDataListDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.DataGridDesigner" />
@@ -38,6 +38,9 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
     <altmember cref="T:System.Web.UI.Design.WebControls.DataGridComponentEditor" />
+    <related type="Article" href="http://msdn.microsoft.com/library/c9aa6558-88a5-417c-b96f-e28853723677">GridView Web Server Control Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,6 +60,9 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.DataGridDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c9aa6558-88a5-417c-b96f-e28853723677">GridView Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="AutoFormats">
@@ -80,6 +86,9 @@
         <value>The <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> associated with this designer.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c9aa6558-88a5-417c-b96f-e28853723677">GridView Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="CreateTemplateEditingFrame">
@@ -112,6 +121,9 @@
         <summary>Creates a template editing frame using the specified verb.</summary>
         <returns>A template editing frame.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c9aa6558-88a5-417c-b96f-e28853723677">GridView Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -149,9 +161,12 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.Design.WebControls.DataGridDesigner.Dispose(System.Boolean)" /> method can be called multiple times by other objects. When overriding it, be sure that you do not reference objects that have been disposed in an earlier call to <see cref="M:System.Web.UI.Design.WebControls.DataGridDesigner.Dispose(System.Boolean)" />. For more information about how to implement this method, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about the <see cref="M:System.Web.UI.Control.Dispose" /> and <see cref="M:System.Object.Finalize" /> methods, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about the <see cref="M:System.Web.UI.Control.Dispose" /> and <see cref="M:System.Object.Finalize" /> methods, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c9aa6558-88a5-417c-b96f-e28853723677">GridView Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetCachedTemplateEditingVerbs">
@@ -181,6 +196,9 @@
         <summary>Gets the cached template editing verbs available to the designer.</summary>
         <returns>An array of <see cref="T:System.Web.UI.Design.TemplateEditingVerb" /> objects consisting of the cached template editing verbs that are available to the designer.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c9aa6558-88a5-417c-b96f-e28853723677">GridView Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -224,6 +242,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c9aa6558-88a5-417c-b96f-e28853723677">GridView Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetEmptyDesignTimeHtml">
@@ -248,6 +269,9 @@
         <summary>Gets the HTML markup used to represent an empty template-based control at design time.</summary>
         <returns>The HTML markup used to represent an empty template-based control at design time.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c9aa6558-88a5-417c-b96f-e28853723677">GridView Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetErrorDesignTimeHtml">
@@ -286,6 +310,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c9aa6558-88a5-417c-b96f-e28853723677">GridView Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetTemplateContainerDataItemProperty">
@@ -325,6 +352,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c9aa6558-88a5-417c-b96f-e28853723677">GridView Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetTemplateContent">
@@ -362,6 +392,9 @@
         <summary>Gets the content of the template.</summary>
         <returns>The content of the template.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c9aa6558-88a5-417c-b96f-e28853723677">GridView Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetTemplatePropertyParentType">
@@ -402,6 +435,9 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.Design.TemplateDefinition" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c9aa6558-88a5-417c-b96f-e28853723677">GridView Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -440,6 +476,9 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c9aa6558-88a5-417c-b96f-e28853723677">GridView Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="OnColumnsChanged">
@@ -463,6 +502,9 @@
       <Docs>
         <summary>Called when the columns of the template change.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c9aa6558-88a5-417c-b96f-e28853723677">GridView Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="OnTemplateEditingVerbsChanged">
@@ -486,6 +528,9 @@
       <Docs>
         <summary>Called when the template editing verbs change.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c9aa6558-88a5-417c-b96f-e28853723677">GridView Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="SetTemplateContent">
@@ -521,6 +566,9 @@
         <param name="templateContent">The new content for the template.</param>
         <summary>Sets the content for the specified template and frame.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c9aa6558-88a5-417c-b96f-e28853723677">GridView Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

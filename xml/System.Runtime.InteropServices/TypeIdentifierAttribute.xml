@@ -1,4 +1,4 @@
-﻿<Type Name="TypeIdentifierAttribute" FullName="System.Runtime.InteropServices.TypeIdentifierAttribute">
+<Type Name="TypeIdentifierAttribute" FullName="System.Runtime.InteropServices.TypeIdentifierAttribute">
   <TypeSignature Language="C#" Value="public sealed class TypeIdentifierAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeIdentifierAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TypeIdentifierAttribute" />
@@ -55,6 +55,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="XmlAttributeCollection" FullName="System.Xml.XmlAttributeCollection">
+<Type Name="XmlAttributeCollection" FullName="System.Xml.XmlAttributeCollection">
   <TypeSignature Language="C#" Value="public sealed class XmlAttributeCollection : System.Xml.XmlNamedNodeMap, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlAttributeCollection extends System.Xml.XmlNamedNodeMap implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlAttributeCollection" />
@@ -45,6 +45,9 @@
     </remarks>
     <altmember cref="T:System.Xml.XmlAttribute" />
     <altmember cref="T:System.Xml.XmlElement" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ce2df341-a1a4-4e97-8e1b-cd45b8e3e71e">Accessing Attributes in the DOM</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/2038a90b-92af-4a0a-baaa-08e688d95194">Unordered Node Retrieval by Name or Index</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54">XML Document Object Model (DOM)</related>
   </Docs>
   <Members>
     <Member MemberName="Append">

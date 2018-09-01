@@ -60,7 +60,7 @@
   
  The <xref:System.Web.UI.Page> object serves as the naming container for all server controls in a page, except those that implement the <xref:System.Web.UI.INamingContainer> interface or are child controls of controls that implement this interface.  
   
- The <xref:System.Web.UI.Page> class is a control that acts as the user interface for your Web application, and as such should be scrutinized to make sure best practices for writing secure code and securing applications are followed. For general information on these topics, see [Overview of Web Application Security Threats](http://msdn.microsoft.com/library/88d61678-f84e-4622-ae80-53128821855a), [NIB: Security Policy Best Practices](http://msdn.microsoft.com/library/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05), and [Key Security Concepts](~/docs/standard/security/key-security-concepts.md). For more specific information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Display Safe Error Messages](http://msdn.microsoft.com/library/6f70ac33-6e11-4e98-ab7d-bae9c0e7eefa), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Introduction to the Validation Controls](http://msdn.microsoft.com/library/3c0e7514-cff2-4bed-936d-ee3f7b740190).  
+ The <xref:System.Web.UI.Page> class is a control that acts as the user interface for your Web application, and as such should be scrutinized to make sure best practices for writing secure code and securing applications are followed. For general information on these topics, see [Overview of Web Application Security Threats](http://msdn.microsoft.com/library/88d61678-f84e-4622-ae80-53128821855a), [NIB: Security Policy Best Practices](http://msdn.microsoft.com/library/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05), and [Key Security Concepts](~/docs/standard/security/key-security-concepts.md). For more specific information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Display Safe Error Messages](http://msdn.microsoft.com/library/6f70ac33-6e11-4e98-ab7d-bae9c0e7eefa), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Introduction to the Validation Controls](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/2e4hd649(v=vs.85)).  
   
    
   
@@ -90,6 +90,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.Control" />
+    <related type="Article" href="http://msdn.microsoft.com/library/01e87387-33f4-45b5-91ec-6c540afe7ee0">ASP.NET Page Class Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417">ASP.NET Web Page Code Model</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -154,6 +156,7 @@
         <exception cref="T:System.Web.HttpException">A content template with the same name already exists.</exception>
         <altmember cref="T:System.Web.UI.MasterPage" />
         <altmember cref="T:System.Web.UI.WebControls.Content" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AddOnPreRenderCompleteAsync">
@@ -165,6 +168,7 @@
         <summary>Registers beginning and ending event handler delegates for an asynchronous page.</summary>
         <altmember cref="T:System.Web.UI.MasterPage" />
         <altmember cref="T:System.Web.UI.WebControls.Content" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddOnPreRenderCompleteAsync">
@@ -231,6 +235,7 @@
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Web.UI.PageAsyncTask.BeginHandler" /> or <see cref="P:System.Web.UI.PageAsyncTask.EndHandler" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.MasterPage" />
         <altmember cref="T:System.Web.UI.WebControls.Content" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddOnPreRenderCompleteAsync">
@@ -810,7 +815,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An application's <xref:System.Web.Caching.Cache> object allows you to store and retrieve arbitrary data on subsequent requests. The cache is not specifically associated with a page or user session. It is used primarily to enhance application performance. For more information, see [Caching Application Data](http://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d). For more information on the difference between application caching and page output caching, see [ASP.NET Caching Overview](http://msdn.microsoft.com/library/5ec28012-4972-4dc3-b3e8-9d20401fe11d).  
+ An application's <xref:System.Web.Caching.Cache> object allows you to store and retrieve arbitrary data on subsequent requests. The cache is not specifically associated with a page or user session. It is used primarily to enhance application performance. For more information, see [Caching Application Data](https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)). For more information on the difference between application caching and page output caching, see [ASP.NET Caching Overview](http://msdn.microsoft.com/library/5ec28012-4972-4dc3-b3e8-9d20401fe11d).  
   
    
   
@@ -824,6 +829,8 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">An instance of <see cref="T:System.Web.Caching.Cache" /> is not created.</exception>
         <altmember cref="T:System.Web.Caching.Cache" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/5ec28012-4972-4dc3-b3e8-9d20401fe11d">Introduction to Caching in ASP.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ClientQueryString">
@@ -968,6 +975,8 @@
         <altmember cref="T:System.Web.HttpBrowserCapabilities" />
         <altmember cref="P:System.Web.HttpRequest.Browser" />
         <altmember cref="P:System.Web.HttpRequest.UserAgent" />
+        <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Server Controls and Browser Capabilities</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/01505090-9114-41a7-93ca-068e2283ed3d">ASP.NET Configuration Files</related>
       </Docs>
     </Member>
     <Member MemberName="CodePage">
@@ -1288,6 +1297,7 @@
         <summary>Performs any initialization of the instance of the <see cref="T:System.Web.UI.Page" /> class that is required by RAD designers. This method is used only at design time.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.UserControl.DesignerInitialize" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4881917b-628f-4689-b872-472e4f8a4e3a">Design-Time Architecture</related>
       </Docs>
     </Member>
     <Member MemberName="DeterminePostBackMode">
@@ -1426,6 +1436,7 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.Page.EnableEventValidation" /> property was set after the page was initialized.</exception>
         <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterForEventValidation(System.String)" />
         <altmember cref="T:System.Web.UI.SupportsEventValidationAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fa2aa14d-a461-492e-9a79-c990904613ef">Validation ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="EnableViewState">
@@ -1476,6 +1487,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Page.EnableViewStateMac" />
+        <related type="Article" href="http://msdn.microsoft.com/library/19d2a6ed-9a77-4c7c-a7f5-74dd4b6c3818">ASP.NET View State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableViewStateMac">
@@ -1584,6 +1596,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/428ce264-b57e-4f18-94e4-635800bdc091">Error Handling in ASP.NET Pages and Applications</related>
       </Docs>
     </Member>
     <Member MemberName="ExecuteRegisteredAsyncTasks">
@@ -2316,6 +2329,7 @@
         <altmember cref="E:System.Web.UI.Page.LoadComplete" />
         <altmember cref="E:System.Web.UI.Page.PreRenderComplete" />
         <altmember cref="E:System.Web.UI.Page.SaveStateComplete" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="InitializeCulture">
@@ -2366,7 +2380,7 @@
   
 -   Use the methods and properties of the <xref:System.Web.HttpCachePolicy> class, which is exposed by the `Response.Cache` object in the page's code.  
   
- For more information, see [Caching ASP.NET Pages](http://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b).  
+ For more information, see [Caching ASP.NET Pages](https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)).  
   
  ]]></format>
         </remarks>
@@ -2406,7 +2420,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You should not call this method. To enable and manipulate output caching for a page, use either the  directive in the .aspx file, or the methods and properties of the <xref:System.Web.HttpCachePolicy> class. The latter are accessible through `Response.Cache` syntax in the page's code declaration block or code-behind file. For more information, see [Caching ASP.NET Pages](http://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b).  
+ You should not call this method. To enable and manipulate output caching for a page, use either the  directive in the .aspx file, or the methods and properties of the <xref:System.Web.HttpCachePolicy> class. The latter are accessible through `Response.Cache` syntax in the page's code declaration block or code-behind file. For more information, see [Caching ASP.NET Pages](https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)).  
   
  ]]></format>
         </remarks>
@@ -2417,6 +2431,7 @@
  A missing directive or configuration settings profile attribute.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The output cache settings location is invalid.</exception>
         <altmember cref="T:System.Web.HttpCachePolicy" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="InitOutputCache">
@@ -2465,12 +2480,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You should not call this method. To enable and manipulate output caching for a page, use either the  directive in the .aspx file, or the methods and properties of the <xref:System.Web.HttpCachePolicy> class. The latter are accessible through `Response.Cache` syntax in the page's code. For more information, see [Caching ASP.NET Pages](http://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b).  
+ You should not call this method. To enable and manipulate output caching for a page, use either the  directive in the .aspx file, or the methods and properties of the <xref:System.Web.HttpCachePolicy> class. The latter are accessible through `Response.Cache` syntax in the page's code. For more information, see [Caching ASP.NET Pages](https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">An invalid value is specified for <paramref name="location" />.</exception>
         <altmember cref="T:System.Web.HttpCachePolicy" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="InitOutputCache">
@@ -2517,12 +2533,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You should not call this method. To enable and manipulate output caching for a page, use either the  directive in the .aspx file, or methods and properties of the <xref:System.Web.HttpCachePolicy> class. The latter are accessible through `Response.Cache` syntax in the page's code. For more information, see [Caching ASP.NET Pages](http://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b).  
+ You should not call this method. To enable and manipulate output caching for a page, use either the  directive in the .aspx file, or methods and properties of the <xref:System.Web.HttpCachePolicy> class. The latter are accessible through `Response.Cache` syntax in the page's code. For more information, see [Caching ASP.NET Pages](https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">An invalid value is specified for <paramref name="location" />.</exception>
         <altmember cref="T:System.Web.HttpCachePolicy" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IsAsync">
@@ -2602,6 +2619,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d42ebea-8792-4279-acf8-5d497f3a41ea">How to: Implement Callbacks in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IsClientScriptBlockRegistered">
@@ -2929,6 +2947,7 @@
         <altmember cref="P:System.Web.UI.Page.Validators" />
         <altmember cref="T:System.Web.UI.ValidatorCollection" />
         <altmember cref="M:System.Web.UI.Page.Validate" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fa2aa14d-a461-492e-9a79-c990904613ef">Validation ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -3056,6 +3075,7 @@
         <altmember cref="E:System.Web.UI.Page.InitComplete" />
         <altmember cref="E:System.Web.UI.Page.PreRenderComplete" />
         <altmember cref="E:System.Web.UI.Page.SaveStateComplete" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="LoadPageStateFromPersistenceMedium">
@@ -3237,6 +3257,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Page.MasterPageFile" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">Understanding Master Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MasterPageFile">
@@ -3280,6 +3301,7 @@
   
  The page does not have a <see cref="T:System.Web.UI.WebControls.Content" /> control as the top level control.</exception>
         <altmember cref="P:System.Web.UI.Page.Master" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">Understanding Master Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MaxPageStateFieldLength">
@@ -3933,6 +3955,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.Page.OnPreInit(System.EventArgs)" />
         <altmember cref="E:System.Web.UI.Page.PreLoad" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="PreLoad">
@@ -3972,6 +3995,7 @@
         <altmember cref="M:System.Web.UI.Page.OnPreLoad(System.EventArgs)" />
         <altmember cref="E:System.Web.UI.Page.PreInit" />
         <altmember cref="E:System.Web.UI.Page.PreRenderComplete" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="PreRenderComplete">
@@ -4015,6 +4039,7 @@
         <altmember cref="M:System.Web.UI.Page.OnPreRenderComplete(System.EventArgs)" />
         <altmember cref="E:System.Web.UI.Page.PreLoad" />
         <altmember cref="E:System.Web.UI.Page.PreInit" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousPage">
@@ -4173,6 +4198,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/6304bff7-1b0e-4641-8acb-6d3b0badc4a3">ASP.NET Server Control Event Model</related>
       </Docs>
     </Member>
     <Member MemberName="RegisterArrayDeclaration">
@@ -4563,6 +4590,8 @@
         <exception cref="T:System.Web.HttpException">The control to register does not implement the <see cref="T:System.Web.UI.IPostBackDataHandler" /> interface.</exception>
         <altmember cref="P:System.Web.UI.Page.IsPostBack" />
         <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/6304bff7-1b0e-4641-8acb-6d3b0badc4a3">ASP.NET Server Control Event Model</related>
       </Docs>
     </Member>
     <Member MemberName="RegisterRequiresRaiseEvent">
@@ -5040,6 +5069,8 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.Routing.RequestContext.RouteData" />
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/dc88e6ba-470c-4b20-b644-35874cfd781d">How to: Access URL Parameters in a Routed Page</related>
       </Docs>
     </Member>
     <Member MemberName="SavePageStateToPersistenceMedium">
@@ -5141,6 +5172,8 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <altmember cref="M:System.Web.UI.Page.OnSaveStateComplete(System.EventArgs)" />
         <altmember cref="E:System.Web.UI.Page.InitComplete" />
         <altmember cref="E:System.Web.UI.Page.LoadComplete" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Server">
@@ -5501,7 +5534,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
   
  You typically set a value for this property in the page directive or by overriding the property. For information, see the following topics:  
   
--   [How to: Apply ASP.NET Themes](http://msdn.microsoft.com/library/f9d72364-4d77-4b73-84be-7630dc63e0fe)  
+-   [How to: Apply ASP.NET Themes](https://msdn.microsoft.com/library/f9d72364-4d77-4b73-84be-7630dc63e0fe(v=vs.100))  
   
 -   [How to: Apply ASP.NET Themes Programmatically](http://msdn.microsoft.com/library/02eed7c3-01e8-4e20-8358-df47dbd4f148))  
   
@@ -5511,6 +5544,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Web.UI.Page.StyleSheetTheme" /> is set to an invalid theme name. This exception is thrown when the <see cref="M:System.Web.UI.Page.FrameworkInitialize" /> method is called, not by the property setter.</exception>
         <altmember cref="P:System.Web.UI.Page.Theme" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes and Skins Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Theme">
@@ -5570,6 +5604,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Web.UI.Page.Theme" /> is set to an invalid theme name.</exception>
         <altmember cref="P:System.Web.UI.Page.StyleSheetTheme" />
+        <related type="Article" href="http://msdn.microsoft.com/library/02eed7c3-01e8-4e20-8358-df47dbd4f148">Applying ASP.NET Themes Programmatically</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -5670,6 +5705,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.TraceContext" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TraceEnabled">
@@ -5721,6 +5757,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <altmember cref="P:System.Web.UI.Page.Trace" />
         <altmember cref="P:System.Web.UI.Page.TraceModeValue" />
         <altmember cref="T:System.Web.TraceContext" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TraceModeValue">
@@ -5771,6 +5808,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <altmember cref="P:System.Web.UI.Page.Trace" />
         <altmember cref="P:System.Web.UI.Page.TraceEnabled" />
         <altmember cref="T:System.Web.TraceContext" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TransactionMode">
@@ -6072,6 +6110,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Web.UI.Control" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Web.UI.Page.RegisterRequiresControlState(System.Web.UI.Control)" />
         <altmember cref="M:System.Web.UI.Page.RequiresControlState(System.Web.UI.Control)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/9e98c7de-a888-48df-b14e-02ec8bef7681">Control State vs. View State Sample</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="UpdateModel&lt;TModel&gt;">
@@ -6605,6 +6644,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.UI.Page.ViewStateUserKey" /> property was accessed too late during page processing.</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=163557">Take Advantage of ASP.NET Built-in Features to Fend Off Web Attacks</related>
       </Docs>
     </Member>
     <Member MemberName="Visible">

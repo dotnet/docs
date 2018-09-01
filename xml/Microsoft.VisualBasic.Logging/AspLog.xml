@@ -1,4 +1,4 @@
-﻿<Type Name="AspLog" FullName="Microsoft.VisualBasic.Logging.AspLog">
+<Type Name="AspLog" FullName="Microsoft.VisualBasic.Logging.AspLog">
   <TypeSignature Language="C#" Value="public class AspLog : Microsoft.VisualBasic.Logging.Log" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi AspLog extends Microsoft.VisualBasic.Logging.Log" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Logging.AspLog" />
@@ -43,6 +43,7 @@
     </remarks>
     <altmember cref="T:Microsoft.VisualBasic.Logging.Log" />
     <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -84,6 +85,7 @@
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.Logging.Log" />
         <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -124,6 +126,7 @@
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.Logging.Log" />
         <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="InitializeWithDefaultsSinceNoConfigExists">

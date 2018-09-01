@@ -1,4 +1,4 @@
-﻿<Type Name="XmlDocumentFragment" FullName="System.Xml.XmlDocumentFragment">
+<Type Name="XmlDocumentFragment" FullName="System.Xml.XmlDocumentFragment">
   <TypeSignature Language="C#" Value="public class XmlDocumentFragment : System.Xml.XmlNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDocumentFragment extends System.Xml.XmlNode" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlDocumentFragment" />
@@ -33,6 +33,7 @@
     <summary>Represents a lightweight object that is useful for tree insert operations.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="M:System.Xml.XmlDocument.CreateDocumentFragment" />
+    <related type="Article" href="http://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54">XML Document Object Model (DOM)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

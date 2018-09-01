@@ -1,4 +1,4 @@
-﻿<Type Name="DefaultProfile" FullName="System.Web.Profile.DefaultProfile">
+<Type Name="DefaultProfile" FullName="System.Web.Profile.DefaultProfile">
   <TypeSignature Language="C#" Value="public class DefaultProfile : System.Web.Profile.ProfileBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DefaultProfile extends System.Web.Profile.ProfileBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.DefaultProfile" />
@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +55,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
   </Members>

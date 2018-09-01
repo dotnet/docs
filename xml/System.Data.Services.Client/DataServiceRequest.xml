@@ -1,4 +1,4 @@
-﻿<Type Name="DataServiceRequest" FullName="System.Data.Services.Client.DataServiceRequest">
+<Type Name="DataServiceRequest" FullName="System.Data.Services.Client.DataServiceRequest">
   <TypeSignature Language="C#" Value="public abstract class DataServiceRequest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataServiceRequest extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceRequest" />
@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/21075e50-8917-413e-a8ea-35a0f6e65aa5">Using a Data Service in a .NET Framework Application (WCF Data Services)</related>
   </Docs>
   <Members>
     <Member MemberName="ElementType">

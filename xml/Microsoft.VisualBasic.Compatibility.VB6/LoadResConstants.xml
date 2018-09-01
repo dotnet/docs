@@ -1,4 +1,4 @@
-﻿<Type Name="LoadResConstants" FullName="Microsoft.VisualBasic.Compatibility.VB6.LoadResConstants">
+<Type Name="LoadResConstants" FullName="Microsoft.VisualBasic.Compatibility.VB6.LoadResConstants">
   <TypeSignature Language="C#" Value="public enum LoadResConstants" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LoadResConstants extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.LoadResConstants" />
@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/my-resources-object.md">My.Resources Object</related>
   </Docs>
   <Members>
     <Member MemberName="ResBitmap">

@@ -1,4 +1,4 @@
-﻿<Type Name="DesignTimeTemplateParser" FullName="System.Web.UI.DesignTimeTemplateParser">
+<Type Name="DesignTimeTemplateParser" FullName="System.Web.UI.DesignTimeTemplateParser">
   <TypeSignature Language="C#" Value="public static class DesignTimeTemplateParser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DesignTimeTemplateParser extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DesignTimeTemplateParser" />
@@ -26,6 +26,7 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
   </Docs>
   <Members>
     <Member MemberName="ParseControl">
@@ -54,6 +55,7 @@
         <returns>The built <see cref="T:System.Web.UI.Control" /> object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="ParseControls">
@@ -86,6 +88,7 @@
         <returns>An array of built <see cref="T:System.Web.UI.Control" /> objects.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="ParseTemplate">
@@ -114,6 +117,7 @@
         <returns>The <see cref="T:System.Web.UI.RootBuilder" /> from the parser that parsed the template.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="ParseTheme">
@@ -146,6 +150,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.Exception">An error occurred while parsing the theme.</exception>
         <forInternalUseOnly />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
   </Members>

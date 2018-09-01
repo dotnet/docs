@@ -1,4 +1,4 @@
-﻿<Type Name="GenericTypeParameterBuilder" FullName="System.Reflection.Emit.GenericTypeParameterBuilder">
+<Type Name="GenericTypeParameterBuilder" FullName="System.Reflection.Emit.GenericTypeParameterBuilder">
   <TypeSignature Language="C#" Value="public sealed class GenericTypeParameterBuilder : System.Reflection.TypeInfo" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit GenericTypeParameterBuilder extends System.Reflection.TypeInfo" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.GenericTypeParameterBuilder" />
@@ -55,6 +55,7 @@
  ]]></format>
     </remarks>
     <altmember cref="M:System.Reflection.Emit.TypeBuilder.DefineGenericParameters(System.String[])" />
+    <related type="Article" href="http://msdn.microsoft.com/library/07d5f01a-7b5b-40ea-9b15-f21561098fe4">How to: Define a Generic Type with Reflection Emit</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -429,6 +430,7 @@
         <summary>Gets the position of the type parameter in the type parameter list of the generic type or method that declared the parameter.</summary>
         <value>The position of the type parameter in the type parameter list of the generic type or method that declared the parameter.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/07d5f01a-7b5b-40ea-9b15-f21561098fe4">How to: Define a Generic Type with Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName="GenericTypeArguments">
@@ -2681,6 +2683,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/07d5f01a-7b5b-40ea-9b15-f21561098fe4">How to: Define a Generic Type with Reflection Emit</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetCustomAttribute">
@@ -2825,6 +2828,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/07d5f01a-7b5b-40ea-9b15-f21561098fe4">How to: Define a Generic Type with Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName="SetInterfaceConstraints">
@@ -2887,6 +2891,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/07d5f01a-7b5b-40ea-9b15-f21561098fe4">How to: Define a Generic Type with Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">

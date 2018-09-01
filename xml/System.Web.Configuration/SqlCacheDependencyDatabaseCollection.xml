@@ -1,4 +1,4 @@
-﻿<Type Name="SqlCacheDependencyDatabaseCollection" FullName="System.Web.Configuration.SqlCacheDependencyDatabaseCollection">
+<Type Name="SqlCacheDependencyDatabaseCollection" FullName="System.Web.Configuration.SqlCacheDependencyDatabaseCollection">
   <TypeSignature Language="C#" Value="public sealed class SqlCacheDependencyDatabaseCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SqlCacheDependencyDatabaseCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SqlCacheDependencyDatabaseCollection" />
@@ -40,6 +40,8 @@
     <altmember cref="T:System.Web.Configuration.SqlCacheDependencySection" />
     <altmember cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" />
     <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1298034b-5f7d-464d-abd1-ad9e6b3eeb7e">Configuring ASP.NET Applications</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce">ASP.NET Caching Features</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

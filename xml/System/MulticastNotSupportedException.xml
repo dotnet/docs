@@ -1,4 +1,4 @@
-﻿<Type Name="MulticastNotSupportedException" FullName="System.MulticastNotSupportedException">
+<Type Name="MulticastNotSupportedException" FullName="System.MulticastNotSupportedException">
   <TypeSignature Language="C#" Value="public sealed class MulticastNotSupportedException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit MulticastNotSupportedException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.MulticastNotSupportedException" />
@@ -49,6 +49,7 @@
     </remarks>
     <altmember cref="T:System.Exception" />
     <altmember cref="T:System.MulticastDelegate" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -199,6 +200,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
   </Members>

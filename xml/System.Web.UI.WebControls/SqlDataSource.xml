@@ -69,7 +69,7 @@
 ## Data Connections  
  To connect to a database, you must set the <xref:System.Web.UI.WebControls.SqlDataSource.ConnectionString%2A> property to a valid connection string. The <xref:System.Web.UI.WebControls.SqlDataSource> can support any SQL relational database that can be connected to using an ADO.NET provider, such as the `SqlClient`, `OleDb`, `Odbc`, or `OracleClient` provider. For information about how to secure connection strings, see [How To: Secure Connection Strings when Using Data Source Controls](http://msdn.microsoft.com/library/942f6dcb-d278-4bec-8403-60eede9bcd62).  
   
- To retrieve data from an underlying database, set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property with an SQL query. If the database that the <xref:System.Web.UI.WebControls.SqlDataSource> is associated with supports stored procedures, you can set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property to the name of a stored procedure. The SQL query that you specify can also be a parameterized query. You can add <xref:System.Web.UI.WebControls.Parameter> objects that are associated with a parameterized query to the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection. For more information about parameterized SQL queries and their syntax, see [Using Parameters with Data Source Controls for Filtering](http://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f).  
+ To retrieve data from an underlying database, set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property with an SQL query. If the database that the <xref:System.Web.UI.WebControls.SqlDataSource> is associated with supports stored procedures, you can set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property to the name of a stored procedure. The SQL query that you specify can also be a parameterized query. You can add <xref:System.Web.UI.WebControls.Parameter> objects that are associated with a parameterized query to the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection. For more information about parameterized SQL queries and their syntax, see [Using Parameters with Data Source Controls for Filtering](https://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f(v=vs.100)).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource> control retrieves data whenever the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method is called. This method provides programmatic access to the method that is specified by <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property. The <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method is automatically called by controls that are bound to the <xref:System.Web.UI.WebControls.SqlDataSource> when their <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method is called. If you set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property of a data-bound control, the control automatically binds to data from the data source, as required. Setting the `DataSourceID` property is the recommended method for binding an <xref:System.Web.UI.WebControls.ObjectDataSource> control to a data-bound control. Alternatively, you can use the `DataSource` property, but then you must explicitly call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method of the data-bound control. Some examples of data-bound controls that can use <xref:System.Web.UI.WebControls.SqlDataSource> are <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.DetailsView>, <xref:System.Web.UI.WebControls.DataList>, and <xref:System.Web.UI.WebControls.DropDownList>. You can call the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method programmatically at any time to retrieve data from the underlying database.  
   
@@ -79,7 +79,7 @@
 ## Performing Data Operations  
  Depending on the capabilities of the underlying database product and the configuration of the instance of the <xref:System.Web.UI.WebControls.SqlDataSource> class, you can perform data operations, such as updates, inserts, and deletes. To perform these data operations, set the appropriate command text and any associated parameters for the operation that you want to perform. For example, for an update operation, set the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> property to an SQL string or the name of a stored procedure and add any required parameters to the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection. The update is performed when the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> method is called, either explicitly by your code or automatically by a data-bound control. The same general pattern is followed for <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.Insert%2A> operations.  
   
- The SQL queries and commands that you use in the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A>, <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A>, <xref:System.Web.UI.WebControls.SqlDataSource.InsertCommand%2A>, and <xref:System.Web.UI.WebControls.SqlDataSource.DeleteCommand%2A> properties can be parameterized. This means that the query or command can use placeholders instead of literal values and bind the placeholders to application or user-defined variables. You can bind parameters in SQL queries to Session variables, values that are passed on the query string for a Web Forms page, the property values of other server controls, and more. For more information about how to use parameters in SQL queries with the <xref:System.Web.UI.WebControls.SqlDataSource>, see [Using Parameters with Data Source Controls for Filtering](http://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f) and [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ The SQL queries and commands that you use in the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A>, <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A>, <xref:System.Web.UI.WebControls.SqlDataSource.InsertCommand%2A>, and <xref:System.Web.UI.WebControls.SqlDataSource.DeleteCommand%2A> properties can be parameterized. This means that the query or command can use placeholders instead of literal values and bind the placeholders to application or user-defined variables. You can bind parameters in SQL queries to Session variables, values that are passed on the query string for a Web Forms page, the property values of other server controls, and more. For more information about how to use parameters in SQL queries with the <xref:System.Web.UI.WebControls.SqlDataSource>, see [Using Parameters with Data Source Controls for Filtering](https://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f(v=vs.100)) and [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
   
 > [!NOTE]
 >  By default, if one of the parameters is `null` when you execute a `Select` command, no data will be returned and no exception will be thrown. You can change this behavior by setting the <xref:System.Web.UI.WebControls.SqlDataSource.CancelSelectOnNullParameter%2A> property to `false`.  
@@ -607,6 +607,10 @@
     <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
     <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
     <altmember cref="T:System.Web.UI.DataSourceControl" />
+    <related type="Article" href="http://msdn.microsoft.com/library/9812a6d5-23d2-4427-8b98-70a2abfec3bc">Accessing Data in Visual Studio</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -619,6 +623,8 @@
         <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
         <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
         <altmember cref="T:System.Web.UI.DataSourceControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -640,6 +646,8 @@
         <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
         <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
         <altmember cref="T:System.Web.UI.DataSourceControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -686,6 +694,8 @@
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ConnectionString" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommand" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -730,6 +740,8 @@
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ConnectionString" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommand" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CacheDuration">
@@ -786,6 +798,8 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.CacheExpirationPolicy" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.EnableCaching" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CacheExpirationPolicy">
@@ -837,6 +851,8 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.CacheDuration" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.EnableCaching" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CacheKeyDependency">
@@ -881,6 +897,8 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.CacheDuration" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CancelSelectOnNullParameter">
@@ -916,6 +934,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ConflictDetection">
@@ -955,6 +975,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.ConflictOptions" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectionString">
@@ -1029,6 +1051,9 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ProviderName" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDataSourceView">
@@ -1066,6 +1091,8 @@
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.GetViewNames" />
         <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
         <altmember cref="T:System.Web.UI.DataSourceView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataSourceMode">
@@ -1121,6 +1148,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.SqlDataSource.DataSourceMode" /> property is not one of the values defined in the <see cref="T:System.Web.UI.WebControls.SqlDataSourceMode" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceMode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -1168,6 +1198,9 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.</exception>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteCommand" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteCommand">
@@ -1221,6 +1254,9 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteParameters" />
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteCommandType">
@@ -1258,6 +1294,8 @@
         <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteCommand" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Deleted">
@@ -1292,6 +1330,9 @@
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnDeleted(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteParameters">
@@ -1360,6 +1401,9 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteCommand" />
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Deleting">
@@ -1404,6 +1448,9 @@
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnDeleting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableCaching">
@@ -1455,6 +1502,8 @@
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.SqlDataSource.EnableCaching" /> property is set to <see langword="true" /> when caching is not supported by the <see cref="T:System.Web.UI.WebControls.SqlDataSource" />.</exception>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.CacheDuration" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.CacheExpirationPolicy" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FilterExpression">
@@ -1508,6 +1557,8 @@
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.SqlDataSource.FilterExpression" /> property was set and the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> is in <see cref="F:System.Web.UI.WebControls.SqlDataSourceMode.DataReader" /> mode.</exception>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.FilterParameters" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DataSourceMode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Filtering">
@@ -1540,6 +1591,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FilterParameters">
@@ -1601,6 +1655,9 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.FilterExpression" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DataSourceMode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDbProviderFactory">
@@ -1632,6 +1689,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Data.Common.DbProviderFactory" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -1669,6 +1728,8 @@
           <paramref name="viewName" /> is <see langword="null" /> or something other than <c>Table</c>.</exception>
         <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.GetViewNames" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetViewNames">
@@ -1700,6 +1761,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.GetView(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -1756,6 +1819,9 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.</exception>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertCommand" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="InsertCommand">
@@ -1831,6 +1897,9 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertParameters" />
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="InsertCommandType">
@@ -1880,6 +1949,9 @@
         <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertCommand" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Inserted">
@@ -1931,6 +2003,9 @@
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnInserted(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Inserting">
@@ -1982,6 +2057,9 @@
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnInserting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="InsertParameters">
@@ -2051,6 +2129,9 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertCommand" />
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -2083,6 +2164,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OldValuesParameterFormatString">
@@ -2123,6 +2206,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -2155,6 +2240,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderName">
@@ -2225,6 +2313,9 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ConnectionString" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -2249,6 +2340,8 @@
         <returns>An object that contains the saved state of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.IStateManager.SaveViewState" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2316,6 +2409,9 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> object cannot establish a connection with the underlying data source.</exception>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommand" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SelectCommand">
@@ -2381,6 +2477,10 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295">Using Parameters with the SqlDataSource Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SelectCommandType">
@@ -2426,6 +2526,8 @@
         <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommand" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -2460,6 +2562,9 @@
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnSelected(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Selecting">
@@ -2494,6 +2599,9 @@
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnSelecting(System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SelectParameters">
@@ -2562,6 +2670,9 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommand" />
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SortParameterName">
@@ -2599,6 +2710,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SqlCacheDependency">
@@ -2647,6 +2760,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -2677,6 +2792,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.IStateManager.TrackViewState" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -2734,6 +2851,9 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.</exception>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateCommand" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateCommand">
@@ -2797,6 +2917,9 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateParameters" />
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateCommandType">
@@ -2834,6 +2957,8 @@
         <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateCommand" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Updated">
@@ -2876,6 +3001,9 @@
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnUpdated(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateParameters">
@@ -2944,6 +3072,9 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateCommand" />
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Updating">
@@ -2989,6 +3120,9 @@
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnUpdating(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
   </Members>

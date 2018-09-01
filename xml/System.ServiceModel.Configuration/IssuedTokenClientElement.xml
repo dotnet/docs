@@ -1,4 +1,4 @@
-﻿<Type Name="IssuedTokenClientElement" FullName="System.ServiceModel.Configuration.IssuedTokenClientElement">
+<Type Name="IssuedTokenClientElement" FullName="System.ServiceModel.Configuration.IssuedTokenClientElement">
   <TypeSignature Language="C#" Value="public sealed class IssuedTokenClientElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IssuedTokenClientElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.IssuedTokenClientElement" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents a configuration element that specifies the token issued as a client credential. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/b6eae4b7-a6cd-4e1a-b0f6-f407022550b0">&lt;IssuedToken&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

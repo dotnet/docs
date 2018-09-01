@@ -1,4 +1,4 @@
-﻿<Type Name="TextSimpleMarkerProperties" FullName="System.Windows.Media.TextFormatting.TextSimpleMarkerProperties">
+<Type Name="TextSimpleMarkerProperties" FullName="System.Windows.Media.TextFormatting.TextSimpleMarkerProperties">
   <TypeSignature Language="C#" Value="public class TextSimpleMarkerProperties : System.Windows.Media.TextFormatting.TextMarkerProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextSimpleMarkerProperties extends System.Windows.Media.TextFormatting.TextMarkerProperties" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextSimpleMarkerProperties" />
@@ -27,6 +27,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Media.TextFormatting.TextMarkerProperties" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159965">Advanced Text Formatting Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

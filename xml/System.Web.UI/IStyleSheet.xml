@@ -1,4 +1,4 @@
-﻿<Type Name="IStyleSheet" FullName="System.Web.UI.IStyleSheet">
+<Type Name="IStyleSheet" FullName="System.Web.UI.IStyleSheet">
   <TypeSignature Language="C#" Value="public interface IStyleSheet" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStyleSheet" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IStyleSheet" />
@@ -49,6 +49,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.Style" />
     <altmember cref="T:System.Web.UI.HtmlControls.HtmlHead" />
+    <related type="Article" href="https://msdn.microsoft.com/library/14adecd2-b688-45ec-b942-4a89183b3f91">Walkthrough: Implementing a New Style</related>
   </Docs>
   <Members>
     <Member MemberName="CreateStyleRule">

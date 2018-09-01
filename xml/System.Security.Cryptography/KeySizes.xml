@@ -1,4 +1,4 @@
-﻿<Type Name="KeySizes" FullName="System.Security.Cryptography.KeySizes">
+<Type Name="KeySizes" FullName="System.Security.Cryptography.KeySizes">
   <TypeSignature Language="C#" Value="public sealed class KeySizes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit KeySizes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.KeySizes" />
@@ -45,6 +45,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

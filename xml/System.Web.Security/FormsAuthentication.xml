@@ -1,4 +1,4 @@
-﻿<Type Name="FormsAuthentication" FullName="System.Web.Security.FormsAuthentication">
+<Type Name="FormsAuthentication" FullName="System.Web.Security.FormsAuthentication">
   <TypeSignature Language="C#" Value="public sealed class FormsAuthentication" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FormsAuthentication extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.FormsAuthentication" />
@@ -78,6 +78,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">To use the <see cref="T:System.Web.Security.FormsAuthentication" /> class in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -109,6 +110,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="Authenticate">
@@ -184,6 +186,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="CookieDomain">
@@ -226,6 +229,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="CookieMode">
@@ -270,6 +274,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="CookieSameSite">
@@ -341,6 +346,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="Decrypt">
@@ -382,6 +388,7 @@
  \- or -  
   
  <paramref name="encryptedTicket" /> is of an invalid format.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultUrl">
@@ -423,6 +430,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="EnableCrossAppRedirects">
@@ -475,6 +483,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="EnableFormsAuthentication">
@@ -554,6 +563,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="ticket" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="FormsCookieName">
@@ -597,6 +607,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="FormsCookiePath">
@@ -640,6 +651,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAuthCookie">
@@ -649,6 +661,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates an authentication cookie for a given user name.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetAuthCookie">
@@ -686,6 +699,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="GetAuthCookie">
@@ -723,6 +737,7 @@
         <summary>Creates an authentication cookie for a given user name. This does not set the cookie as part of the outgoing response.</summary>
         <returns>An <see cref="T:System.Web.HttpCookie" /> that contains encrypted forms-authentication ticket information.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="GetRedirectUrl">
@@ -781,6 +796,7 @@ This method does not create a cookie.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="HashPasswordForStoringInConfigFile">
@@ -843,6 +859,7 @@ This method does not create a cookie.
  <paramref name="passwordFormat" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="passwordFormat" /> is not a valid <see cref="T:System.Web.Configuration.FormsAuthPasswordFormat" /> value.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -873,6 +890,7 @@ This method does not create a cookie.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -936,6 +954,7 @@ This method does not create a cookie.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="RedirectFromLoginPage">
@@ -945,6 +964,7 @@ This method does not create a cookie.
       </AssemblyInfo>
       <Docs>
         <summary>Redirects an authenticated user back to the originally requested URL or the default URL.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="RedirectFromLoginPage">
@@ -1004,6 +1024,7 @@ This method does not create a cookie.
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The return URL specified in the query string contains a protocol other than HTTP: or HTTPS:.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectFromLoginPage">
@@ -1054,6 +1075,7 @@ This method does not create a cookie.
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The return URL specified in the query string contains a protocol other than HTTP: or HTTPS:.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="RedirectToLoginPage">
@@ -1083,6 +1105,7 @@ This method does not create a cookie.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="RedirectToLoginPage">
@@ -1127,6 +1150,7 @@ This method does not create a cookie.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToLoginPage">
@@ -1169,6 +1193,7 @@ This method does not create a cookie.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="RenewTicketIfOld">
@@ -1205,6 +1230,7 @@ This method does not create a cookie.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="RequireSSL">
@@ -1252,6 +1278,7 @@ This method does not create a cookie.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetAuthCookie">
@@ -1269,6 +1296,9 @@ This method does not create a cookie.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=197376">Explained: Forms Authentication in ASP.NET 2.0</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=197377">How To: Use Membership in ASP.NET 2.0</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="SetAuthCookie">
@@ -1307,6 +1337,7 @@ This method does not create a cookie.
         </remarks>
         <exception cref="T:System.Web.HttpException">
           <see cref="P:System.Web.Security.FormsAuthentication.RequireSSL" /> is <see langword="true" /> and <see cref="P:System.Web.HttpRequest.IsSecureConnection" /> is <see langword="false" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="SetAuthCookie">
@@ -1347,6 +1378,9 @@ This method does not create a cookie.
         </remarks>
         <exception cref="T:System.Web.HttpException">
           <see cref="P:System.Web.Security.FormsAuthentication.RequireSSL" /> is <see langword="true" /> and <see cref="P:System.Web.HttpRequest.IsSecureConnection" /> is <see langword="false" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=197376">Explained: Forms Authentication in ASP.NET 2.0</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=197377">How To: Use Membership in ASP.NET 2.0</related>
       </Docs>
     </Member>
     <Member MemberName="SignOut">
@@ -1397,6 +1431,9 @@ This method does not create a cookie.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=197376">Explained: Forms Authentication in ASP.NET 2.0</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=197377">How To: Use Membership in ASP.NET 2.0</related>
       </Docs>
     </Member>
     <Member MemberName="SlidingExpiration">
@@ -1447,6 +1484,7 @@ This method does not create a cookie.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>
       </Docs>
     </Member>
     <Member MemberName="TicketCompatibilityMode">

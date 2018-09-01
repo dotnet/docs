@@ -1,4 +1,4 @@
-﻿<Type Name="DBDataPermission" FullName="System.Data.Common.DBDataPermission">
+<Type Name="DBDataPermission" FullName="System.Data.Common.DBDataPermission">
   <TypeSignature Language="C#" Value="public abstract class DBDataPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit DBDataPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DBDataPermission" />
@@ -32,6 +32,7 @@
   <Docs>
     <summary>Enables a .NET Framework data provider to help ensure that a user has a security level adequate for accessing data.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -42,6 +43,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of a <see langword="DBDataPermission" /> class.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -71,6 +73,7 @@
       <Docs>
         <summary>Initializes a new instance of a <see langword="DBDataPermission" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -99,6 +102,7 @@
         <param name="permission">An existing <see langword="DBDataPermission" /> used to create a new <see langword="DBDataPermission" />.</param>
         <summary>Initializes a new instance of a <see langword="DBDataPermission" /> class using an existing <see langword="DBDataPermission" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -127,6 +131,7 @@
         <param name="permissionAttribute">A security action associated with a custom security attribute.</param>
         <summary>Initializes a new instance of a <see langword="DBDataPermission" /> class with the specified <see langword="DBDataPermissionAttribute" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -155,6 +160,7 @@
         <param name="state">One of the <see cref="T:System.Security.Permissions.PermissionState" /> values.</param>
         <summary>Initializes a new instance of a <see langword="DBDataPermission" /> class with the specified <see cref="T:System.Security.Permissions.PermissionState" /> value.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -197,6 +203,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -247,6 +254,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AllowBlankPassword">
@@ -283,6 +291,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -311,6 +320,7 @@
       <Docs>
         <summary>Removes all permissions that were previous added using the <see cref="M:System.Data.Common.DBDataPermission.Add(System.String,System.String,System.Data.KeyRestrictionBehavior)" /> method.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -347,6 +357,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -376,6 +387,7 @@
         <summary>Creates a new instance of the <see langword="DBDataPermission" /> class.</summary>
         <returns>A new <see langword="DBDataPermission" /> object.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FromXml">
@@ -413,6 +425,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -453,6 +466,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is not a null reference (<see langword="Nothing" /> in Visual Basic) and is not an instance of the same class as the current permission object.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsSubsetOf">
@@ -494,6 +508,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is an object that is not of the same type as the current permission object.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsUnrestricted">
@@ -524,6 +539,7 @@
         <returns>
           <see langword="true" /> if the permission can be represented as unrestricted.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -560,6 +576,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -600,6 +617,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="target" /> object is not the same type as the current permission object.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

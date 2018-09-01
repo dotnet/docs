@@ -1,4 +1,4 @@
-﻿<Type Name="RotateTransform" FullName="System.Windows.Media.RotateTransform">
+<Type Name="RotateTransform" FullName="System.Windows.Media.RotateTransform">
   <TypeSignature Language="C#" Value="public sealed class RotateTransform : System.Windows.Media.Transform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RotateTransform extends System.Windows.Media.Transform" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.RotateTransform" />
@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -148,6 +149,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
       </Docs>
     </Member>
     <Member MemberName="AngleProperty">
@@ -206,6 +208,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
       </Docs>
     </Member>
     <Member MemberName="CenterXProperty">
@@ -264,6 +267,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
       </Docs>
     </Member>
     <Member MemberName="CenterYProperty">

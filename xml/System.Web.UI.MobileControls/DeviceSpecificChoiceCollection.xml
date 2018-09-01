@@ -1,4 +1,4 @@
-﻿<Type Name="DeviceSpecificChoiceCollection" FullName="System.Web.UI.MobileControls.DeviceSpecificChoiceCollection">
+<Type Name="DeviceSpecificChoiceCollection" FullName="System.Web.UI.MobileControls.DeviceSpecificChoiceCollection">
   <TypeSignature Language="C#" Value="public class DeviceSpecificChoiceCollection : System.Web.UI.MobileControls.ArrayListCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeviceSpecificChoiceCollection extends System.Web.UI.MobileControls.ArrayListCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection" />
@@ -44,6 +44,9 @@
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt; Element</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -83,6 +86,9 @@
         <altmember cref="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.AddAt(System.Int32,System.Web.UI.MobileControls.DeviceSpecificChoice)" />
         <altmember cref="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Remove(System.Web.UI.MobileControls.DeviceSpecificChoice)" />
         <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -121,6 +127,9 @@
         <altmember cref="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.RemoveAt(System.Int32)" />
         <altmember cref="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Add(System.Web.UI.MobileControls.DeviceSpecificChoice)" />
         <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="All">
@@ -156,6 +165,9 @@
         <value>The array of <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> objects contained by the collection.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -187,6 +199,9 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -215,6 +230,9 @@
         <value>The <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> object at the given <paramref name="index" /> in the collection.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -242,6 +260,9 @@
         <summary>Removes the specified choice. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -269,6 +290,9 @@
         <summary>Removes the item at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
       </Docs>
     </Member>
   </Members>

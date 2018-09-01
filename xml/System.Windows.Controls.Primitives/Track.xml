@@ -1,4 +1,4 @@
-﻿<Type Name="Track" FullName="System.Windows.Controls.Primitives.Track">
+<Type Name="Track" FullName="System.Windows.Controls.Primitives.Track">
   <TypeSignature Language="C#" Value="public class Track : System.Windows.FrameworkElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Track extends System.Windows.FrameworkElement" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.Track" />
@@ -84,6 +84,7 @@
     <altmember cref="T:System.Windows.Controls.Slider" />
     <altmember cref="T:System.Windows.Controls.Primitives.RangeBase" />
     <altmember cref="T:System.Windows.Controls.Primitives.ScrollBar" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160041">Styling with ControlTemplates Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -639,6 +640,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Controls.Primitives.Thumb" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160041">Styling with ControlTemplates Sample</related>
       </Docs>
     </Member>
     <Member MemberName="Value">

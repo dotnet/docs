@@ -1,4 +1,4 @@
-﻿<Type Name="RoleServiceManager" FullName="System.Web.UI.RoleServiceManager">
+<Type Name="RoleServiceManager" FullName="System.Web.UI.RoleServiceManager">
   <TypeSignature Language="C#" Value="public class RoleServiceManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RoleServiceManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.RoleServiceManager" />
@@ -53,6 +53,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.Configuration.ScriptingRoleServiceSection" />
+    <related type="Article" href="https://msdn.microsoft.com/library/8290e543-7eff-47a4-aace-681f3c07229b">Web Services in ASP.NET AJAX</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/280f6ad9-ba1a-4fc9-b0cc-22e39e54a82d">Using Roles Information with ASP.NET AJAX</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="InstalledFontCollection" FullName="System.Drawing.Text.InstalledFontCollection">
+<Type Name="InstalledFontCollection" FullName="System.Drawing.Text.InstalledFontCollection">
   <TypeSignature Language="C#" Value="public sealed class InstalledFontCollection : System.Drawing.Text.FontCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InstalledFontCollection extends System.Drawing.Text.FontCollection" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Text.InstalledFontCollection" />
@@ -37,6 +37,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/winforms/advanced/using-fonts-and-text.md">Using Fonts and Text</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +57,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Text.InstalledFontCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/winforms/advanced/using-fonts-and-text.md">Using Fonts and Text</related>
       </Docs>
     </Member>
   </Members>

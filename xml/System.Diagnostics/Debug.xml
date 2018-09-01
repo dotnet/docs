@@ -1,4 +1,4 @@
-﻿<Type Name="Debug" FullName="System.Diagnostics.Debug">
+<Type Name="Debug" FullName="System.Diagnostics.Debug">
   <TypeSignature Language="C#" Value="public static class Debug" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Debug extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Debug" />
@@ -1155,6 +1155,13 @@ End of list of errors
  -or-  
   
  The number that indicates an argument to format is less than zero, or greater than or equal to the number of specified objects to format.</exception>
+        <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard DateTime Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom DateTime Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/enumeration-format-strings.md">Enumeration Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="Unindent">

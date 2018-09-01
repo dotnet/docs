@@ -1,4 +1,4 @@
-﻿<Type Name="JavaScriptConverter" FullName="System.Web.Script.Serialization.JavaScriptConverter">
+<Type Name="JavaScriptConverter" FullName="System.Web.Script.Serialization.JavaScriptConverter">
   <TypeSignature Language="C#" Value="public abstract class JavaScriptConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit JavaScriptConverter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Serialization.JavaScriptConverter" />
@@ -48,6 +48,7 @@
 -   <see cref="P:System.Web.Script.Serialization.JavaScriptConverter.SupportedTypes" /><see cref="T:System.Web.Script.Serialization.JavaScriptSerializer" /> provides the <see cref="M:System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType``1(System.Object)" /> method that will be used by implementers of <see cref="T:System.Web.Script.Serialization.JavaScriptConverter" />. Converter code must be able to take a value that is contained in the dictionary that the serializer passes to it, and then convert that value into an object of type <paramref name="T" />. Rather than re-implementing the custom conversion code to accomplish this, you can call the <see cref="M:System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType``1(System.Object)" /> method.</para>
     </block>
     <altmember cref="T:System.Web.Configuration.Converter" />
+    <related type="Article" href="https://msdn.microsoft.com/library/8290e543-7eff-47a4-aace-681f3c07229b">Web Services in ASP.NET AJAX</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

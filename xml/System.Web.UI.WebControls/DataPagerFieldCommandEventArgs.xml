@@ -37,6 +37,7 @@
     <altmember cref="T:System.Web.UI.WebControls.ImageButton" />
     <altmember cref="T:System.Web.UI.WebControls.LinkButton" />
     <altmember cref="M:System.Web.UI.WebControls.TemplatePagerField.HandleEvent(System.Web.UI.WebControls.CommandEventArgs)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -85,6 +86,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CommandSource">
@@ -113,6 +115,7 @@
         <value>The control that raised the event.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs.Item" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -153,6 +156,7 @@
         <altmember cref="T:System.Web.UI.WebControls.DataPagerFieldItem" />
         <altmember cref="P:System.Web.UI.WebControls.DataPagerFieldItem.PagerField" />
         <altmember cref="P:System.Web.UI.WebControls.DataPagerFieldItem.Pager" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
   </Members>

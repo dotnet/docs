@@ -1,4 +1,4 @@
-﻿<Type Name="WizardStepCollection" FullName="System.Web.UI.WebControls.WizardStepCollection">
+<Type Name="WizardStepCollection" FullName="System.Web.UI.WebControls.WizardStepCollection">
   <TypeSignature Language="C#" Value="public sealed class WizardStepCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WizardStepCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WizardStepCollection" />
@@ -59,6 +59,7 @@
     <altmember cref="T:System.Web.UI.WebControls.Wizard" />
     <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
     <altmember cref="T:System.Web.UI.WebControls.Login" />
+    <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -103,6 +104,7 @@
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
         <altmember cref="M:System.Web.UI.WebControls.WizardStepCollection.AddAt(System.Int32,System.Web.UI.WebControls.WizardStepBase)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -143,6 +145,7 @@
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
         <altmember cref="M:System.Web.UI.WebControls.WizardStepCollection.Add(System.Web.UI.WebControls.WizardStepBase)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -180,6 +183,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -218,6 +222,7 @@
           <paramref name="wizardStep" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -264,6 +269,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
         <altmember cref="M:System.Web.UI.WebControls.WizardStepCollection.GetEnumerator" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -299,6 +305,7 @@
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
         <altmember cref="T:System.Web.UI.WebControls.Wizard" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -328,6 +335,7 @@
         <altmember cref="M:System.Web.UI.WebControls.WizardStepCollection.CopyTo(System.Web.UI.WebControls.WizardStepBase[],System.Int32)" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -364,6 +372,7 @@
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object passed in is <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -420,6 +429,7 @@
         <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
         <altmember cref="M:System.Web.UI.WebControls.WizardStepCollection.Add(System.Web.UI.WebControls.WizardStepBase)" />
         <altmember cref="M:System.Web.UI.WebControls.WizardStepCollection.AddAt(System.Int32,System.Web.UI.WebControls.WizardStepBase)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -449,6 +459,7 @@
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
         <altmember cref="T:System.Web.UI.WebControls.Wizard" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -486,6 +497,7 @@
         </remarks>
         <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
         <altmember cref="T:System.Collections.ICollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -521,6 +533,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -565,6 +578,7 @@
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
         <altmember cref="M:System.Web.UI.WebControls.WizardStepCollection.RemoveAt(System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -603,6 +617,7 @@
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
         <altmember cref="M:System.Web.UI.WebControls.WizardStepCollection.Remove(System.Web.UI.WebControls.WizardStepBase)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -639,6 +654,7 @@
         </remarks>
         <altmember cref="P:System.Collections.ICollection.SyncRoot" />
         <altmember cref="T:System.Collections.ICollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -667,6 +683,7 @@
         <param name="index">The position in the target array at which to start receiving the copied content.</param>
         <summary>Copies all the items from a <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection to a one-dimensional array, starting at the specified index in the target array.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -695,6 +712,7 @@
         <summary>Appends the specified object to the end of the collection.</summary>
         <returns>The position into which the new element was inserted.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -724,6 +742,7 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Collections.IList" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -752,6 +771,7 @@
         <summary>Determines the index value that represents the position of the specified object in the collection.</summary>
         <returns>The index value of the specified object in the collection.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -781,6 +801,7 @@
         <param name="value">The object to insert into the collection.</param>
         <summary>Inserts the specified object in the collection at the specified position.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -807,6 +828,7 @@
         <value>
           <see langword="true" /> if the collection has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -843,6 +865,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -870,6 +893,7 @@
         <param name="value">The object to remove from the collection.</param>
         <summary>Removes the specified object from the collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
   </Members>

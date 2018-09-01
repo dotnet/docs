@@ -1,4 +1,4 @@
-﻿<Type Name="Image" FullName="System.Web.UI.WebControls.Image">
+<Type Name="Image" FullName="System.Web.UI.WebControls.Image">
   <TypeSignature Language="C#" Value="public class Image : System.Web.UI.WebControls.WebControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Image extends System.Web.UI.WebControls.WebControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Image" />
@@ -107,6 +107,8 @@
     <altmember cref="P:System.Web.UI.WebControls.Image.ImageUrl" />
     <altmember cref="P:System.Web.UI.WebControls.Image.AlternateText" />
     <altmember cref="P:System.Web.UI.WebControls.Image.ImageAlign" />
+    <related type="Article" href="http://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9">Image Web Server Control Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

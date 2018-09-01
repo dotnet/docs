@@ -1,4 +1,4 @@
-﻿<Type Name="BoundColumn" FullName="System.Web.UI.WebControls.BoundColumn">
+<Type Name="BoundColumn" FullName="System.Web.UI.WebControls.BoundColumn">
   <TypeSignature Language="C#" Value="public class BoundColumn : System.Web.UI.WebControls.DataGridColumn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BoundColumn extends System.Web.UI.WebControls.DataGridColumn" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BoundColumn" />
@@ -201,6 +201,9 @@
         </remarks>
         <altmember cref="F:System.String.Empty" />
         <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom DateTime Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="FormatDataValue">

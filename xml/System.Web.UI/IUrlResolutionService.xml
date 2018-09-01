@@ -1,4 +1,4 @@
-﻿<Type Name="IUrlResolutionService" FullName="System.Web.UI.IUrlResolutionService">
+<Type Name="IUrlResolutionService" FullName="System.Web.UI.IUrlResolutionService">
   <TypeSignature Language="C#" Value="public interface IUrlResolutionService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUrlResolutionService" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IUrlResolutionService" />
@@ -23,6 +23,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/2447f50c-b849-483c-8093-85ed53e7a5bd">ASP.NET Web Site Paths</related>
   </Docs>
   <Members>
     <Member MemberName="ResolveClientUrl">
@@ -56,6 +57,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2447f50c-b849-483c-8093-85ed53e7a5bd">ASP.NET Web Site Paths</related>
       </Docs>
     </Member>
   </Members>

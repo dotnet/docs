@@ -1,4 +1,4 @@
-﻿<Type Name="ScaleTransform" FullName="System.Windows.Media.ScaleTransform">
+<Type Name="ScaleTransform" FullName="System.Windows.Media.ScaleTransform">
   <TypeSignature Language="C#" Value="public sealed class ScaleTransform : System.Windows.Media.Transform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScaleTransform extends System.Windows.Media.Transform" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.ScaleTransform" />
@@ -30,6 +30,7 @@
     <altmember cref="P:System.Windows.Media.ScaleTransform.ScaleY" />
     <altmember cref="P:System.Windows.Media.ScaleTransform.CenterX" />
     <altmember cref="P:System.Windows.Media.ScaleTransform.CenterY" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -150,6 +151,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Windows.UIElement.RenderTransformOrigin" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
       </Docs>
     </Member>
     <Member MemberName="CenterXProperty">
@@ -208,6 +210,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Windows.UIElement.RenderTransformOrigin" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
       </Docs>
     </Member>
     <Member MemberName="CenterYProperty">
@@ -359,6 +362,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
       </Docs>
     </Member>
     <Member MemberName="ScaleXProperty">
@@ -421,6 +425,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
       </Docs>
     </Member>
     <Member MemberName="ScaleYProperty">

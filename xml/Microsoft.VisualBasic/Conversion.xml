@@ -1,4 +1,4 @@
-﻿<Type Name="Conversion" FullName="Microsoft.VisualBasic.Conversion">
+<Type Name="Conversion" FullName="Microsoft.VisualBasic.Conversion">
   <TypeSignature Language="C#" Value="public sealed class Conversion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Conversion extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Conversion" />
@@ -37,6 +37,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/index.md">Keywords (Visual Basic)</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/runtime-library-members.md">Visual Basic Run-Time Library Members</related>
   </Docs>
   <Members>
     <Member MemberName="CTypeDynamic">
@@ -108,6 +111,8 @@ End Class
         <altmember cref="M:System.Dynamic.DynamicObject.TryConvert(System.Dynamic.ConvertBinder,System.Object@)" />
         <altmember cref="M:System.Dynamic.DynamicMetaObject.BindConvert(System.Dynamic.ConvertBinder)" />
         <altmember cref="M:Microsoft.VisualBasic.Conversion.CTypeDynamic``1(System.Object)" />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/early-late-binding/working-with-dynamic-objects.md">Working with Dynamic Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md">Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CTypeDynamic&lt;TargetType&gt;">
@@ -181,6 +186,8 @@ End Class
         <altmember cref="M:System.Dynamic.DynamicObject.TryConvert(System.Dynamic.ConvertBinder,System.Object@)" />
         <altmember cref="M:System.Dynamic.DynamicMetaObject.BindConvert(System.Dynamic.ConvertBinder)" />
         <altmember cref="M:Microsoft.VisualBasic.Conversion.CTypeDynamic(System.Object,System.Type)" />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/early-late-binding/working-with-dynamic-objects.md">Working with Dynamic Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md">Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ErrorToString">
@@ -350,6 +357,11 @@ End Class
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/math-functions.md">Math Functions (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Fix">
@@ -408,6 +420,11 @@ End Class
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/math-functions.md">Math Functions (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Fix">
@@ -466,6 +483,11 @@ End Class
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/math-functions.md">Math Functions (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Fix">
@@ -524,6 +546,11 @@ End Class
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/math-functions.md">Math Functions (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Fix">
@@ -582,6 +609,11 @@ End Class
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/math-functions.md">Math Functions (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Fix">
@@ -640,6 +672,11 @@ End Class
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/math-functions.md">Math Functions (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Fix">
@@ -698,6 +735,11 @@ End Class
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/math-functions.md">Math Functions (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Hex">
@@ -761,6 +803,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/how-to-convert-hexadecimal-strings-to-numbers.md">How to: Convert Hexadecimal Strings to Numbers</related>
       </Docs>
     </Member>
     <Member MemberName="Hex">
@@ -815,6 +859,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/how-to-convert-hexadecimal-strings-to-numbers.md">How to: Convert Hexadecimal Strings to Numbers</related>
       </Docs>
     </Member>
     <Member MemberName="Hex">
@@ -869,6 +915,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/how-to-convert-hexadecimal-strings-to-numbers.md">How to: Convert Hexadecimal Strings to Numbers</related>
       </Docs>
     </Member>
     <Member MemberName="Hex">
@@ -923,6 +971,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/how-to-convert-hexadecimal-strings-to-numbers.md">How to: Convert Hexadecimal Strings to Numbers</related>
       </Docs>
     </Member>
     <Member MemberName="Hex">
@@ -977,6 +1027,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/how-to-convert-hexadecimal-strings-to-numbers.md">How to: Convert Hexadecimal Strings to Numbers</related>
       </Docs>
     </Member>
     <Member MemberName="Hex">
@@ -1036,6 +1088,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/how-to-convert-hexadecimal-strings-to-numbers.md">How to: Convert Hexadecimal Strings to Numbers</related>
       </Docs>
     </Member>
     <Member MemberName="Hex">
@@ -1095,6 +1149,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/how-to-convert-hexadecimal-strings-to-numbers.md">How to: Convert Hexadecimal Strings to Numbers</related>
       </Docs>
     </Member>
     <Member MemberName="Hex">
@@ -1154,6 +1210,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/how-to-convert-hexadecimal-strings-to-numbers.md">How to: Convert Hexadecimal Strings to Numbers</related>
       </Docs>
     </Member>
     <Member MemberName="Hex">
@@ -1213,6 +1271,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/how-to-convert-hexadecimal-strings-to-numbers.md">How to: Convert Hexadecimal Strings to Numbers</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Int">
@@ -1280,6 +1340,11 @@ End Class
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/math-functions.md">Math Functions (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Int">
@@ -1338,6 +1403,11 @@ End Class
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/math-functions.md">Math Functions (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Int">
@@ -1396,6 +1466,11 @@ End Class
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/math-functions.md">Math Functions (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Int">
@@ -1454,6 +1529,11 @@ End Class
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/math-functions.md">Math Functions (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Int">
@@ -1512,6 +1592,11 @@ End Class
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/math-functions.md">Math Functions (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Int">
@@ -1570,6 +1655,11 @@ End Class
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/math-functions.md">Math Functions (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Int">
@@ -1628,6 +1718,11 @@ End Class
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/math-functions.md">Math Functions (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Oct">
@@ -1691,6 +1786,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
       </Docs>
     </Member>
     <Member MemberName="Oct">
@@ -1745,6 +1842,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
       </Docs>
     </Member>
     <Member MemberName="Oct">
@@ -1799,6 +1898,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
       </Docs>
     </Member>
     <Member MemberName="Oct">
@@ -1853,6 +1954,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
       </Docs>
     </Member>
     <Member MemberName="Oct">
@@ -1907,6 +2010,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
       </Docs>
     </Member>
     <Member MemberName="Oct">
@@ -1966,6 +2071,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
       </Docs>
     </Member>
     <Member MemberName="Oct">
@@ -2025,6 +2132,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
       </Docs>
     </Member>
     <Member MemberName="Oct">
@@ -2084,6 +2193,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
       </Docs>
     </Member>
     <Member MemberName="Oct">
@@ -2143,6 +2254,8 @@ End Class
           <paramref name="Number" /> is not a numeric type.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
       </Docs>
     </Member>
     <Member MemberName="Str">
@@ -2197,6 +2310,8 @@ End Class
         <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Val" />
         <altmember cref="T:System.ArgumentNullException" />
         <altmember cref="T:System.InvalidCastException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/conversion-summary.md">Conversion Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Val">
@@ -2289,6 +2404,7 @@ Val("&HFFFF") 
         <altmember cref="T:System.OverflowException" />
         <altmember cref="T:System.InvalidCastException" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
       </Docs>
     </Member>
     <Member MemberName="Val">
@@ -2372,6 +2488,7 @@ Val("&HFFFF") 
         <altmember cref="T:System.OverflowException" />
         <altmember cref="T:System.InvalidCastException" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
       </Docs>
     </Member>
     <Member MemberName="Val">
@@ -2455,6 +2572,7 @@ Val("&HFFFF") 
         <altmember cref="T:System.OverflowException" />
         <altmember cref="T:System.InvalidCastException" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
       </Docs>
     </Member>
   </Members>

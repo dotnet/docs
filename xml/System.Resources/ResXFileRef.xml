@@ -1,4 +1,4 @@
-﻿<Type Name="ResXFileRef" FullName="System.Resources.ResXFileRef">
+<Type Name="ResXFileRef" FullName="System.Resources.ResXFileRef">
   <TypeSignature Language="C#" Value="public class ResXFileRef" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ResXFileRef extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXFileRef" />
@@ -53,6 +53,7 @@
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
     <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+    <related type="Article" href="http://msdn.microsoft.com/library/168f941a-2b84-43f8-933f-cf4a8548d824">Working with .resx Files Programmatically</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="SpecialDirectoriesProxy" FullName="Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy">
+<Type Name="SpecialDirectoriesProxy" FullName="Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy">
   <TypeSignature Language="C#" Value="public class SpecialDirectoriesProxy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi SpecialDirectoriesProxy extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy" />
@@ -61,6 +61,7 @@
     </remarks>
     <forInternalUseOnly />
     <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName="AllUsersApplicationData">
@@ -102,6 +103,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentUserApplicationData">
@@ -143,6 +145,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Desktop">
@@ -184,6 +187,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="MyDocuments">
@@ -225,6 +229,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="MyMusic">
@@ -266,6 +271,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="MyPictures">
@@ -307,6 +313,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ProgramFiles">
@@ -348,6 +355,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Programs">
@@ -389,6 +397,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Temp">
@@ -430,6 +439,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

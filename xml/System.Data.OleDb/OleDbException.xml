@@ -1,4 +1,4 @@
-﻿<Type Name="OleDbException" FullName="System.Data.OleDb.OleDbException">
+<Type Name="OleDbException" FullName="System.Data.OleDb.OleDbException">
   <TypeSignature Language="C#" Value="public sealed class OleDbException : System.Data.Common.DbException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit OleDbException extends System.Data.Common.DbException" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbException" />
@@ -44,6 +44,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Data.OleDb.OleDbErrorCollection" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
   </Docs>
   <Members>
     <Member MemberName="ErrorCode">
@@ -72,6 +73,7 @@
         <summary>Gets the HRESULT of the error.</summary>
         <value>The HRESULT of the error.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="Errors">
@@ -120,6 +122,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">

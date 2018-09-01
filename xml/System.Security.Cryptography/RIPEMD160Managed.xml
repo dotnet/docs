@@ -1,4 +1,4 @@
-﻿<Type Name="RIPEMD160Managed" FullName="System.Security.Cryptography.RIPEMD160Managed">
+<Type Name="RIPEMD160Managed" FullName="System.Security.Cryptography.RIPEMD160Managed">
   <TypeSignature Language="C#" Value="public class RIPEMD160Managed : System.Security.Cryptography.RIPEMD160" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RIPEMD160Managed extends System.Security.Cryptography.RIPEMD160" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RIPEMD160Managed" />
@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,6 +81,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The policy is not compliant with the FIPS algorithm.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="HashCore">
@@ -125,6 +127,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Security.Cryptography.HashAlgorithm" />
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="HashFinal">
@@ -161,6 +164,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -191,6 +195,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
   </Members>

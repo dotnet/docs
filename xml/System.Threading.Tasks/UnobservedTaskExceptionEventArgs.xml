@@ -1,4 +1,4 @@
-﻿<Type Name="UnobservedTaskExceptionEventArgs" FullName="System.Threading.Tasks.UnobservedTaskExceptionEventArgs">
+<Type Name="UnobservedTaskExceptionEventArgs" FullName="System.Threading.Tasks.UnobservedTaskExceptionEventArgs">
   <TypeSignature Language="C#" Value="public class UnobservedTaskExceptionEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UnobservedTaskExceptionEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.UnobservedTaskExceptionEventArgs" />
@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,6 +75,7 @@
         <param name="exception">The Exception that has gone unobserved.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.UnobservedTaskExceptionEventArgs" /> class with the unobserved exception.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -110,6 +112,7 @@
         <summary>The Exception that went unobserved.</summary>
         <value>The Exception that went unobserved.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
     <Member MemberName="Observed">
@@ -146,6 +149,7 @@
         <summary>Gets whether this exception has been marked as "observed."</summary>
         <value>true if this exception has been marked as "observed"; otherwise false.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
     <Member MemberName="SetObserved">
@@ -182,6 +186,7 @@
       <Docs>
         <summary>Marks the <see cref="P:System.Threading.Tasks.UnobservedTaskExceptionEventArgs.Exception" /> as "observed," thus preventing it from triggering exception escalation policy which, by default, terminates the process.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
   </Members>

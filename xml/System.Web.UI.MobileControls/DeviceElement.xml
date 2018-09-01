@@ -1,4 +1,4 @@
-﻿<Type Name="DeviceElement" FullName="System.Web.UI.MobileControls.DeviceElement">
+<Type Name="DeviceElement" FullName="System.Web.UI.MobileControls.DeviceElement">
   <TypeSignature Language="C#" Value="public sealed class DeviceElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeviceElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.DeviceElement" />
@@ -29,6 +29,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/d053675a-279a-40fa-ac24-89c86d94a862">Extended Browser Capabilities</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -38,6 +40,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d053675a-279a-40fa-ac24-89c86d94a862">Extended Browser Capabilities</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -62,6 +66,8 @@
         <param name="inheritsFrom">The device adapter set that this device adapter set inherits from.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> class with the specified identifier and device adapter set to inherit from. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d053675a-279a-40fa-ac24-89c86d94a862">Extended Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -90,6 +96,8 @@
         <param name="pageAdapter">Identifies the page adapter class for the device set.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> class with the specified identifier and page adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d053675a-279a-40fa-ac24-89c86d94a862">Extended Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -120,6 +128,8 @@
         <param name="pageAdapter">Identifies the page adapter class for the device set.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> class with the specified identifier, page adapter, and device adapter set to inherit from. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d053675a-279a-40fa-ac24-89c86d94a862">Extended Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -147,6 +157,8 @@
         <summary>Gets the collection of control elements for this device element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The collection of control elements for this device element.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d053675a-279a-40fa-ac24-89c86d94a862">Extended Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName="ElementProperty">
@@ -199,6 +211,8 @@
         <summary>Gets or sets the name of the device adapter set that this device adapter set inherits from. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The name of the device adapter set that this device adapter set inherits from.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d053675a-279a-40fa-ac24-89c86d94a862">Extended Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -229,6 +243,8 @@
         <summary>Gets the string value that uniquely identifies the device adapter set. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The string value that uniquely identifies the device adapter set.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d053675a-279a-40fa-ac24-89c86d94a862">Extended Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName="PageAdapter">
@@ -262,6 +278,8 @@
         <summary>Gets the type of the page adapter class for this device adapter set. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The type of the page adapter class for this device adapter set.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d053675a-279a-40fa-ac24-89c86d94a862">Extended Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName="PredicateClass">
@@ -292,6 +310,8 @@
         <summary>Gets or sets the class containing the method used to detect whether the device adapter set is applicable. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The class to which the method specified by the <paramref name="predicateMethod" /> parameter belongs.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d053675a-279a-40fa-ac24-89c86d94a862">Extended Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName="PredicateMethod">
@@ -322,6 +342,8 @@
         <summary>Gets or sets the method used to detect through the current <see cref="T:System.Web.HttpContext" /> instance whether the device adapter set is applicable. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The method used to detect through the current <see cref="T:System.Web.HttpContext" /> whether the device adapter set is applicable.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d053675a-279a-40fa-ac24-89c86d94a862">Extended Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">

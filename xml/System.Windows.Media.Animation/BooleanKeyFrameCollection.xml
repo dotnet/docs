@@ -1,4 +1,4 @@
-﻿<Type Name="BooleanKeyFrameCollection" FullName="System.Windows.Media.Animation.BooleanKeyFrameCollection">
+<Type Name="BooleanKeyFrameCollection" FullName="System.Windows.Media.Animation.BooleanKeyFrameCollection">
   <TypeSignature Language="C#" Value="public class BooleanKeyFrameCollection : System.Windows.Freezable, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BooleanKeyFrameCollection extends System.Windows.Freezable implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.BooleanKeyFrameCollection" />
@@ -52,6 +52,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Media.Animation.BooleanKeyFrame" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160012">KeyFrame Animation Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

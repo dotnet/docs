@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationManifest" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest">
+<Type Name="ApplicationManifest" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest">
   <TypeSignature Language="C#" Value="public sealed class ApplicationManifest : Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationManifest extends Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest" />
@@ -860,6 +860,7 @@
         <summary>Gets or sets a property that is used to serialize the entry point identity to an XML file.</summary>
         <value>The entry point identity.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="/visualstudio/deployment/entrypoint-element-clickonce-application">&lt;entryPoint&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="XmlEntryPointParameters">
@@ -905,6 +906,7 @@
         <summary>Gets or sets a property that is used to serialize the entry point parameters to an XML file.</summary>
         <value>The entry point parameters.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="/visualstudio/deployment/entrypoint-element-clickonce-application">&lt;entryPoint&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="XmlEntryPointPath">
@@ -950,6 +952,7 @@
         <summary>Gets or sets a property that specifies the entry point for executing the assembly and that is used to serialize the entry point to an XML file.</summary>
         <value>The entry point for executing the assembly.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="/visualstudio/deployment/entrypoint-element-clickonce-application">&lt;entryPoint&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="XmlErrorReportUrl">

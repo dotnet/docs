@@ -1,4 +1,4 @@
-﻿<Type Name="ObjectListShowCommandsEventArgs" FullName="System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs">
+<Type Name="ObjectListShowCommandsEventArgs" FullName="System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs">
   <TypeSignature Language="C#" Value="public class ObjectListShowCommandsEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectListShowCommandsEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs" />
@@ -40,6 +40,7 @@
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
     <altmember cref="E:System.Web.UI.MobileControls.ObjectList.ShowItemCommands" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,6 +75,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="E:System.Web.UI.MobileControls.ObjectList.ShowItemCommands" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Commands">
@@ -106,6 +108,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="E:System.Web.UI.MobileControls.ObjectList.ShowItemCommands" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="ListItem">
@@ -131,6 +134,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="E:System.Web.UI.MobileControls.ObjectList.ShowItemCommands" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
   </Members>

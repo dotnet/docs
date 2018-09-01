@@ -1,4 +1,4 @@
-﻿<Type Name="PropertyValueEditor" FullName="System.Activities.Presentation.PropertyEditing.PropertyValueEditor">
+<Type Name="PropertyValueEditor" FullName="System.Activities.Presentation.PropertyEditing.PropertyValueEditor">
   <TypeSignature Language="C#" Value="public class PropertyValueEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyValueEditor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.PropertyValueEditor" />
@@ -94,7 +94,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates a new <see cref="T:System.ComponentModel.EditorAttribute" /> to designate that a particular  <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueEditor" /> be used to change a property value.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName="CreateEditorAttribute">
@@ -173,7 +174,8 @@
       <Docs>
         <summary>Gets or sets the <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyValueEditor.InlineEditorTemplate" />, the <see cref="T:System.Windows.DataTemplate" /> that is used for an inline editor.</summary>
         <value>A <see cref="T:System.Windows.DataTemplate" /> that represents an inline editor.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

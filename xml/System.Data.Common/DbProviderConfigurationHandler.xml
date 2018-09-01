@@ -1,4 +1,4 @@
-﻿<Type Name="DbProviderConfigurationHandler" FullName="System.Data.Common.DbProviderConfigurationHandler">
+<Type Name="DbProviderConfigurationHandler" FullName="System.Data.Common.DbProviderConfigurationHandler">
   <TypeSignature Language="C#" Value="public class DbProviderConfigurationHandler : System.Configuration.IConfigurationSectionHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DbProviderConfigurationHandler extends System.Object implements class System.Configuration.IConfigurationSectionHandler" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbProviderConfigurationHandler" />
@@ -22,6 +22,7 @@
     <summary>This class can be used by any provider to support a provider-specific configuration section.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,6 +42,7 @@
         <summary>This class can be used by any provider to support a provider-specific configuration section.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -72,6 +74,7 @@
         <returns>The new expression.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

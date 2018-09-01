@@ -1,4 +1,4 @@
-﻿<Type Name="PropertyExpression" FullName="System.Web.UI.WebControls.Expressions.PropertyExpression">
+<Type Name="PropertyExpression" FullName="System.Web.UI.WebControls.Expressions.PropertyExpression">
   <TypeSignature Language="C#" Value="public class PropertyExpression : System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyExpression extends System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.PropertyExpression" />
@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/b93e32b9-af41-4539-a009-6cbbe809c702">QueryExtender Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

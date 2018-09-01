@@ -1,4 +1,4 @@
-﻿<Type Name="ResXResourceSet" FullName="System.Resources.ResXResourceSet">
+<Type Name="ResXResourceSet" FullName="System.Resources.ResXResourceSet">
   <TypeSignature Language="C#" Value="public class ResXResourceSet : System.Resources.ResourceSet" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResXResourceSet extends System.Resources.ResourceSet" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXResourceSet" />
@@ -45,6 +45,7 @@
     <block subset="none" type="overrides">
       <para>Derived classes of <see cref="T:System.Resources.ResXResourceSet" /> that use their own resource reader and writer should override the <see cref="M:System.Resources.ResXResourceSet.GetDefaultReader" /> and <see cref="M:System.Resources.ResXResourceSet.GetDefaultWriter" /> methods to provide the appropriate functionality for interpreting the <see cref="T:System.Resources.ResXResourceSet" /> instance.</para>
     </block>
+    <related type="Article" href="http://msdn.microsoft.com/library/168f941a-2b84-43f8-933f-cf4a8548d824">Working with .resx Files Programmatically</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

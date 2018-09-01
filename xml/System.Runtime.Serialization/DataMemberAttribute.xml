@@ -1,4 +1,4 @@
-﻿<Type Name="DataMemberAttribute" FullName="System.Runtime.Serialization.DataMemberAttribute">
+<Type Name="DataMemberAttribute" FullName="System.Runtime.Serialization.DataMemberAttribute">
   <TypeSignature Language="C#" Value="public sealed class DataMemberAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataMemberAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.DataMemberAttribute" />
@@ -66,6 +66,10 @@
     <altmember cref="T:System.Runtime.Serialization.DataContractAttribute" />
     <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
     <altmember cref="T:System.Runtime.Serialization.IExtensibleDataObject" />
+    <related type="Article" href="~/docs/framework/wcf/feature-details/using-data-contracts.md">Using Data Contracts</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/bf0ab338-4d36-4e12-8002-8ebfdeb346cb">Best Practices: Data Contract Versioning</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/53a3b505-4b27-444b-b079-0eb84a97cfd8">Data Member Default Values</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/0658a47d-b6e5-4ae0-ba72-ababc3c6ff33">Data Member Order</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -221,6 +225,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.SerializationException">the member is not present.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/4a0700cb-5f5f-4137-8705-3a3ecf06461f">Data Contract Versioning</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/bf0ab338-4d36-4e12-8002-8ebfdeb346cb">Best Practices: Data Contract Versioning</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -263,6 +269,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/wcf/feature-details/using-data-contracts.md">Using Data Contracts</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/31f87e6c-247b-48f5-8e94-b9e1e33d8d09">Data Contract Names</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/4a0700cb-5f5f-4137-8705-3a3ecf06461f">Data Contract Versioning</related>
       </Docs>
     </Member>
     <Member MemberName="Order">
@@ -303,6 +312,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/0658a47d-b6e5-4ae0-ba72-ababc3c6ff33">Data Member Order</related>
       </Docs>
     </Member>
   </Members>

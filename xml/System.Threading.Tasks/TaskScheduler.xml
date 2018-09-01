@@ -1,4 +1,4 @@
-﻿<Type Name="TaskScheduler" FullName="System.Threading.Tasks.TaskScheduler">
+<Type Name="TaskScheduler" FullName="System.Threading.Tasks.TaskScheduler">
   <TypeSignature Language="C#" Value="public abstract class TaskScheduler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TaskScheduler extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskScheduler" />
@@ -116,6 +116,8 @@
  ]]></format>
     </remarks>
     <threadsafe>All members of the abstract <see cref="T:System.Threading.Tasks.TaskScheduler" /> type are thread-safe and may be used from multiple threads concurrently.</threadsafe>
+    <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+    <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -148,6 +150,8 @@
       <Docs>
         <summary>Initializes the <see cref="T:System.Threading.Tasks.TaskScheduler" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -193,6 +197,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -232,10 +238,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Task Schedulers](http://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65).  
+ For more information, see <xref:System.Threading.Tasks.TaskScheduler>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -299,11 +307,12 @@
 ## Remarks  
  All <xref:System.Threading.Tasks.Task> instances queued to the returned scheduler will be executed through a call to the <xref:System.Threading.SynchronizationContext.Post%2A> method on that context.  
   
- For more information, see [Task Schedulers](http://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65).  
+ For more information, see <xref:System.Threading.Tasks.TaskScheduler>.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current SynchronizationContext may not be used as a TaskScheduler.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
       </Docs>
     </Member>
     <Member MemberName="GetScheduledTasks">
@@ -381,6 +390,8 @@ protected override IEnumerable<Task> GetScheduledTasks()
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This scheduler is unable to generate a list of queued tasks at this time.</exception>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -420,10 +431,12 @@ protected override IEnumerable<Task> GetScheduledTasks()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Task Schedulers](http://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65).  
+ For more information, see <xref:System.Threading.Tasks.TaskScheduler>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
       </Docs>
     </Member>
     <Member MemberName="MaximumConcurrencyLevel">
@@ -463,10 +476,12 @@ protected override IEnumerable<Task> GetScheduledTasks()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Task Schedulers](http://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65).  
+ For more information, see <xref:System.Threading.Tasks.TaskScheduler>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
       </Docs>
     </Member>
     <Member MemberName="QueueTask">
@@ -522,6 +537,8 @@ protected override IEnumerable<Task> GetScheduledTasks()
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="task" /> argument is null.</exception>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
       </Docs>
     </Member>
     <Member MemberName="TryDequeue">
@@ -569,13 +586,15 @@ protected override IEnumerable<Task> GetScheduledTasks()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Task Schedulers](http://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65).  
+ For more information, see <xref:System.Threading.Tasks.TaskScheduler>.  
   
  This method may execute in a finally block; therefore it should return as quickly as possible so that any resources such as <xref:System.Threading.CancellationTokenRegistration> objects can be disposed of in a timely manner.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="task" /> argument is null.</exception>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
       </Docs>
     </Member>
     <Member MemberName="TryExecuteTask">
@@ -630,6 +649,8 @@ protected override IEnumerable<Task> GetScheduledTasks()
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <paramref name="task" /> is not associated with this scheduler.</exception>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
       </Docs>
     </Member>
     <Member MemberName="TryExecuteTaskInline">
@@ -685,12 +706,14 @@ protected override IEnumerable<Task> GetScheduledTasks()
   
  The derived scheduler is responsible for making sure that the calling thread is suitable for executing the given task as far as its own scheduling and execution policies are concerned.  
   
- For more information, see [Task Schedulers](http://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65).  
+ For more information, see <xref:System.Threading.Tasks.TaskScheduler>.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="task" /> argument is null.</exception>
         <exception cref="T:System.InvalidOperationException">The <paramref name="task" /> was already executed.</exception>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
       </Docs>
     </Member>
     <Member MemberName="UnobservedTaskException">
@@ -752,6 +775,8 @@ protected override IEnumerable<Task> GetScheduledTasks()
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/runtime/throwunobservedtaskexceptions-element.md">&lt;ThrowUnobservedTaskExceptions&gt; Element</related>
       </Docs>
     </Member>
   </Members>

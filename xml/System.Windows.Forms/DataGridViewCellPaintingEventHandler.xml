@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewCellPaintingEventHandler" FullName="System.Windows.Forms.DataGridViewCellPaintingEventHandler">
+<Type Name="DataGridViewCellPaintingEventHandler" FullName="System.Windows.Forms.DataGridViewCellPaintingEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridViewCellPaintingEventHandler(object sender, DataGridViewCellPaintingEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewCellPaintingEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellPaintingEventHandler" />
@@ -46,5 +46,6 @@
     <altmember cref="E:System.Windows.Forms.DataGridView.CellPainting" />
     <altmember cref="T:System.Windows.Forms.DataGridViewCellPaintingEventArgs" />
     <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <related type="Article" href="http://msdn.microsoft.com/library/478b20c9-625c-4116-9c5c-5a16e6f4ec67">How to: Customize the Appearance of Cells in the Windows Forms DataGridView Control</related>
   </Docs>
 </Type>

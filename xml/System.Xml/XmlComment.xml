@@ -1,4 +1,4 @@
-﻿<Type Name="XmlComment" FullName="System.Xml.XmlComment">
+<Type Name="XmlComment" FullName="System.Xml.XmlComment">
   <TypeSignature Language="C#" Value="public class XmlComment : System.Xml.XmlCharacterData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlComment extends System.Xml.XmlCharacterData" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlComment" />
@@ -33,6 +33,7 @@
     <summary>Represents the content of an XML comment.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="M:System.Xml.XmlDocument.CreateComment(System.String)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54">XML Document Object Model (DOM)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="PagerStyle" FullName="System.Web.UI.MobileControls.PagerStyle">
+<Type Name="PagerStyle" FullName="System.Web.UI.MobileControls.PagerStyle">
   <TypeSignature Language="C#" Value="public class PagerStyle : System.Web.UI.MobileControls.Style" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PagerStyle extends System.Web.UI.MobileControls.Style" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.PagerStyle" />
@@ -36,6 +36,7 @@
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
     <altmember cref="T:System.Web.UI.MobileControls.Style" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -92,6 +93,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
         <altmember cref="P:System.Web.UI.MobileControls.PagerStyle.NextPageText" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetPageLabelText">
@@ -131,6 +133,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
         <altmember cref="P:System.Web.UI.MobileControls.PagerStyle.PageLabel" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetPreviousPageText">
@@ -168,6 +171,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.PagerStyle.PreviousPageText" />
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="NextPageText">
@@ -231,6 +235,7 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
         <altmember cref="P:System.Web.UI.MobileControls.PagerStyle.NextPageText" />
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="NextPageTextKey">
@@ -255,6 +260,7 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="PageLabel">
@@ -329,6 +335,7 @@ void Page_Load(object sender, EventArgs e)
         </remarks>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="PageLabelKey">
@@ -353,6 +360,7 @@ void Page_Load(object sender, EventArgs e)
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousPageText">
@@ -419,6 +427,7 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
         <altmember cref="T:System.Web.UI.MobileControls.PagerStyle" />
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousPageTextKey">
@@ -443,6 +452,7 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
   </Members>

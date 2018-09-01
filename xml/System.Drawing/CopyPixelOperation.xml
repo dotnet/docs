@@ -1,4 +1,4 @@
-﻿<Type Name="CopyPixelOperation" FullName="System.Drawing.CopyPixelOperation">
+<Type Name="CopyPixelOperation" FullName="System.Drawing.CopyPixelOperation">
   <TypeSignature Language="C#" Value="public enum CopyPixelOperation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CopyPixelOperation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.CopyPixelOperation" />
@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/33b76910-13a3-4521-be98-5c097341ae3b">How to: Copy Pixels For Reducing Flicker in Windows Forms</related>
   </Docs>
   <Members>
     <Member MemberName="Blackness">

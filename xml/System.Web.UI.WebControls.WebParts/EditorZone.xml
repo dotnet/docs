@@ -1,4 +1,4 @@
-﻿<Type Name="EditorZone" FullName="System.Web.UI.WebControls.WebParts.EditorZone">
+<Type Name="EditorZone" FullName="System.Web.UI.WebControls.WebParts.EditorZone">
   <TypeSignature Language="C#" Value="public class EditorZone : System.Web.UI.WebControls.WebParts.EditorZoneBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EditorZone extends System.Web.UI.WebControls.WebParts.EditorZoneBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.EditorZone" />
@@ -76,6 +76,9 @@
       <para>If you want to create a custom <see cref="T:System.Web.UI.WebControls.WebParts.EditorZone" /> zone to gain greater control over the rendering of the editing UI, you can inherit directly from the <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> class, as long as you do not need to provide zone template support for page developers to add <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls to your zone declaratively. In such a case, you would add all <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls to a zone programmatically. If you want to provide zone template support, you should inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.EditorZone" /> class.</para>
     </block>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.EditorPart" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Web Parts Control Set Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -99,6 +102,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorZone" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateEditorParts">
@@ -131,6 +135,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> control does not have an ID.</exception>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.IWebEditable.CreateEditorParts" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ZoneTemplate">
@@ -200,6 +205,7 @@
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZone.ZoneTemplate" />
         <altmember cref="T:System.Web.UI.ITemplate" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.InvalidateEditorParts" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

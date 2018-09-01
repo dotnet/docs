@@ -1,4 +1,4 @@
-﻿<Type Name="SqlCacheDependencySection" FullName="System.Web.Configuration.SqlCacheDependencySection">
+<Type Name="SqlCacheDependencySection" FullName="System.Web.Configuration.SqlCacheDependencySection">
   <TypeSignature Language="C#" Value="public sealed class SqlCacheDependencySection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SqlCacheDependencySection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SqlCacheDependencySection" />
@@ -42,6 +42,7 @@
     <altmember cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" />
     <altmember cref="T:System.Web.Configuration.SqlCacheDependencyDatabaseCollection" />
     <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce">ASP.NET Caching Features</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -115,6 +116,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d5fbd79f-972d-4557-9a39-f90684b3dcd3">Setting the Cacheability of a Page</related>
       </Docs>
     </Member>
     <Member MemberName="ElementProperty">

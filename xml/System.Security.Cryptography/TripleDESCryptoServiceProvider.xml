@@ -1,4 +1,4 @@
-﻿<Type Name="TripleDESCryptoServiceProvider" FullName="System.Security.Cryptography.TripleDESCryptoServiceProvider">
+<Type Name="TripleDESCryptoServiceProvider" FullName="System.Security.Cryptography.TripleDESCryptoServiceProvider">
   <TypeSignature Language="C#" Value="public sealed class TripleDESCryptoServiceProvider : System.Security.Cryptography.TripleDES" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TripleDESCryptoServiceProvider extends System.Security.Cryptography.TripleDES" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.TripleDESCryptoServiceProvider" />
@@ -61,6 +61,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,6 +114,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The <see cref="T:System.Security.Cryptography.TripleDES" /> cryptographic service provider is not available.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="BlockSize">
@@ -237,6 +239,7 @@
  -or-  
   
  The algorithm key size was not available.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateEncryptor">
@@ -353,6 +356,7 @@
  -or-  
   
  The algorithm key size was not available.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -440,6 +444,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="GenerateKey">
@@ -482,6 +487,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="IV">

@@ -1,4 +1,4 @@
-﻿<Type Name="SqlFileStream" FullName="System.Data.SqlTypes.SqlFileStream">
+<Type Name="SqlFileStream" FullName="System.Data.SqlTypes.SqlFileStream">
   <TypeSignature Language="C#" Value="public sealed class SqlFileStream : System.IO.Stream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlFileStream extends System.IO.Stream" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlFileStream" />
@@ -35,6 +35,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/fafdc31a-f435-4cd3-883f-1dfadd971277">SQL Server Data Type Mappings (ADO.NET)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/e00827b3-7511-4b2d-91d7-851ca86cc6b5">SQL Server Binary and Large-Value Data (ADO.NET)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -60,6 +63,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -115,6 +119,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified <paramref name="path" /> is invalid, such as being on an unmapped drive.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The access requested is not permitted by the operating system for the specified path. This occurs when Write or ReadWrite access is specified, and the file or directory is set for read-only access.</exception>
         <exception cref="T:System.InvalidOperationException">NtCreateFile fails with error code set to ERROR_SHARING_VIOLATION.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -174,6 +179,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified <paramref name="path" /> is invalid, such as being on an unmapped drive.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The access requested is not permitted by the operating system for the specified path. This occurs when Write or ReadWrite access is specified, and the file or directory is set for read-only access.</exception>
         <exception cref="T:System.InvalidOperationException">NtCreateFile fails with error code set to ERROR_SHARING_VIOLATION.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="BeginRead">
@@ -216,6 +222,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Reading data is not supported on the stream.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="BeginWrite">
@@ -258,6 +265,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Writing data is not supported on the stream.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -281,6 +289,7 @@
         <value>
           <see langword="true" /> if the current stream supports reading; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="CanSeek">
@@ -304,6 +313,7 @@
         <value>
           <see langword="true" /> if the current stream supports seeking; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="CanTimeout">
@@ -355,6 +365,7 @@
         <value>
           <see langword="true" /> if the current stream supports writing; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -407,6 +418,7 @@
         <returns>The number of bytes read from the stream, between zero (0) and the number of bytes you requested. Streams return zero (0) only at the end of the stream, otherwise, they should block until at least one byte is available.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.IAsyncResult" /> object did not come from the corresponding <see langword="BeginRead" /> method.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="EndWrite">
@@ -433,6 +445,7 @@
         <summary>Ends an asynchronous write operation.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.IAsyncResult" /> object did not come from the corresponding <see langword="BeginWrite" /> method.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -477,6 +490,7 @@
       <Docs>
         <summary>clears all buffers for this stream and causes any buffered data to be written to the underlying device.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -499,6 +513,7 @@
         <summary>Gets a value indicating the length of the current stream in bytes.</summary>
         <value>An <see cref="T:System.Int64" /> indicating the length of the current stream in bytes.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -521,6 +536,7 @@
         <summary>Gets the logical path of the <see cref="T:System.Data.SqlTypes.SqlFileStream" /> passed to the constructor.</summary>
         <value>A string value indicating the name of the <see cref="T:System.Data.SqlTypes.SqlFileStream" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -543,6 +559,7 @@
         <summary>Gets or sets the position within the current stream.</summary>
         <value>The current position within the <see cref="T:System.Data.SqlTypes.SqlFileStream" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -581,6 +598,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The object does not support reading of data.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="ReadByte">
@@ -612,6 +630,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The object does not support reading of data.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="ReadTimeout">
@@ -639,6 +658,7 @@
         <summary>Gets or sets a value, in milliseconds, that determines how long the stream will attempt to read before timing out.</summary>
         <value>A value, in milliseconds, that determines how long the stream will attempt to read before timing out.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="Seek">
@@ -667,6 +687,7 @@
         <summary>Sets the position within the current stream.</summary>
         <returns>The new position within the current stream.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="SetLength">
@@ -700,6 +721,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The object does not support reading of data.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="TransactionContext">
@@ -722,6 +744,7 @@
         <summary>Gets or sets the transaction context for this <see cref="T:System.Data.SqlTypes.SqlFileStream" /> object.</summary>
         <value>The <paramref name="transactionContext" /> array that was passed to the constructor for this <see cref="T:System.Data.SqlTypes.SqlFileStream" /> object.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -759,6 +782,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The object does not support writing of data.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteByte">
@@ -792,6 +816,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The object does not support writing of data.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteTimeout">
@@ -819,6 +844,7 @@
         <summary>Gets or sets a value, in milliseconds, that determines how long the stream will attempt to write before timing out.</summary>
         <value>A value, in milliseconds, that determines how long the stream will attempt to write before timing out.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="IDataSourceSchema" FullName="System.Web.UI.Design.IDataSourceSchema">
+<Type Name="IDataSourceSchema" FullName="System.Web.UI.Design.IDataSourceSchema">
   <TypeSignature Language="C#" Value="public interface IDataSourceSchema" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataSourceSchema" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDataSourceSchema" />
@@ -26,6 +26,7 @@
     <altmember cref="T:System.Web.UI.Design.DataSetSchema" />
     <altmember cref="T:System.Web.UI.Design.XmlDocumentSchema" />
     <altmember cref="T:System.Web.UI.Design.TypeSchema" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
   </Docs>
   <Members>
     <Member MemberName="GetViews">

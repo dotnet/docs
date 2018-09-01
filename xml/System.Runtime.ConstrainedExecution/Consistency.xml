@@ -1,4 +1,4 @@
-﻿<Type Name="Consistency" FullName="System.Runtime.ConstrainedExecution.Consistency">
+<Type Name="Consistency" FullName="System.Runtime.ConstrainedExecution.Consistency">
   <TypeSignature Language="C#" Value="public enum Consistency" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed Consistency extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.ConstrainedExecution.Consistency" />
@@ -47,6 +47,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute" />
+    <related type="Article" href="http://msdn.microsoft.com/library/99354547-39c1-4b0b-8553-938e8f8d1808">Constrained Execution Regions</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/cf624c1f-c160-46a1-bb2b-213587688da7">Reliability Best Practices</related>
   </Docs>
   <Members>
     <Member MemberName="MayCorruptAppDomain">

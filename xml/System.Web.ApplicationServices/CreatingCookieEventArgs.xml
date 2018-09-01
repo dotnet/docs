@@ -1,4 +1,4 @@
-﻿<Type Name="CreatingCookieEventArgs" FullName="System.Web.ApplicationServices.CreatingCookieEventArgs">
+<Type Name="CreatingCookieEventArgs" FullName="System.Web.ApplicationServices.CreatingCookieEventArgs">
   <TypeSignature Language="C#" Value="public class CreatingCookieEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CreatingCookieEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.CreatingCookieEventArgs" />
@@ -36,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
   </Docs>
   <Members>
     <Member MemberName="CookieIsSet">
@@ -82,6 +83,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CustomCredential">

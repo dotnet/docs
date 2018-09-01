@@ -1,4 +1,4 @@
-﻿<Type Name="ProfileParameter" FullName="System.Web.UI.WebControls.ProfileParameter">
+<Type Name="ProfileParameter" FullName="System.Web.UI.WebControls.ProfileParameter">
   <TypeSignature Language="C#" Value="public class ProfileParameter : System.Web.UI.WebControls.Parameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProfileParameter extends System.Web.UI.WebControls.Parameter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ProfileParameter" />
@@ -40,6 +40,7 @@
     <altmember cref="T:System.Web.UI.WebControls.QueryStringParameter" />
     <altmember cref="T:System.Web.UI.WebControls.SessionParameter" />
     <altmember cref="P:System.Web.HttpContext.Profile" />
+    <related type="Article" href="https://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f(v=vs.100)">Using Parameters with Data Source Controls</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

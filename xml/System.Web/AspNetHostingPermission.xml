@@ -1,4 +1,4 @@
-﻿<Type Name="AspNetHostingPermission" FullName="System.Web.AspNetHostingPermission">
+<Type Name="AspNetHostingPermission" FullName="System.Web.AspNetHostingPermission">
   <TypeSignature Language="C#" Value="public sealed class AspNetHostingPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit AspNetHostingPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="DocId" Value="T:System.Web.AspNetHostingPermission" />
@@ -50,6 +50,9 @@
     </remarks>
     <altmember cref="T:System.Web.AspNetHostingPermissionAttribute" />
     <altmember cref="T:System.Web.AspNetHostingPermissionLevel" />
+    <related type="Article" href="~/docs/framework/misc/code-access-security.md">Code Access Security</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74">Using Libraries from Partially Trusted Code</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f897c794-10d3-414c-86b7-59b66564bbf1">ASP.NET Trust Levels and Policy Files</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

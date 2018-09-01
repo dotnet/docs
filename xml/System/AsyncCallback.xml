@@ -1,4 +1,4 @@
-﻿<Type Name="AsyncCallback" FullName="System.AsyncCallback">
+<Type Name="AsyncCallback" FullName="System.AsyncCallback">
   <TypeSignature Language="C#" Value="public delegate void AsyncCallback(IAsyncResult ar);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AsyncCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.AsyncCallback" />
@@ -64,5 +64,10 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.IAsyncResult" />
+    <related type="Article" href="http://msdn.microsoft.com/library/9d97206c-8917-406c-8961-7d0909d84eeb">Using an AsyncCallback Delegate to End an Asynchronous Operation</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/e3e5475d-c5e9-43f0-928e-d18df8ca1f1d">Using an AsyncCallback Delegate and State Object</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/41972034-92ed-450a-9664-ab93fcc6f1fb">Calling Synchronous Methods Asynchronously</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/c6baed9f-2a25-4728-9a9a-53b7b14840cf">Event-based Asynchronous Pattern (EAP)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
   </Docs>
 </Type>

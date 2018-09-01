@@ -1,4 +1,4 @@
-﻿<Type Name="ClientViaElement" FullName="System.ServiceModel.Configuration.ClientViaElement">
+<Type Name="ClientViaElement" FullName="System.ServiceModel.Configuration.ClientViaElement">
   <TypeSignature Language="C#" Value="public sealed class ClientViaElement : System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClientViaElement extends System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ClientViaElement" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents a configuration element that specifies the route a message should take. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/c27ee94e-babd-459b-9574-2a6d67d11314">ClientVia element in Configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

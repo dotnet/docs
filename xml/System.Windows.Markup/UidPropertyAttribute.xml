@@ -1,4 +1,4 @@
-﻿<Type Name="UidPropertyAttribute" FullName="System.Windows.Markup.UidPropertyAttribute">
+<Type Name="UidPropertyAttribute" FullName="System.Windows.Markup.UidPropertyAttribute">
   <TypeSignature Language="C#" Value="public sealed class UidPropertyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UidPropertyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.UidPropertyAttribute" />
@@ -38,6 +38,10 @@
  ]]></format>
     </remarks>
     <altmember cref="P:System.Windows.UIElement.Uid" />
+    <related type="Article" href="http://msdn.microsoft.com/library/5dfb299a-b6e2-41b8-8694-e6ac987547f1">XAML-Related CLR Attributes For Custom Types and Libraries</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/c2667cbd-2f46-4a7f-9dfc-53696e35e8e4">Defining Custom Types for Use with .NET Framework XAML Services</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/0e11f386-808c-4eae-9ba6-029ad7ba2211">NET XAML Services Conceptual Documentation</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/81defade-483b-4a89-b76d-9b25bba34010">x:Uid Attribute</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

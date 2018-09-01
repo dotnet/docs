@@ -1,4 +1,4 @@
-﻿<Type Name="ProfileManager" FullName="System.Web.Profile.ProfileManager">
+<Type Name="ProfileManager" FullName="System.Web.Profile.ProfileManager">
   <TypeSignature Language="C#" Value="public static class ProfileManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ProfileManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileManager" />
@@ -71,6 +71,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
   </Docs>
   <Members>
     <Member MemberName="AddDynamicProfileProperty">
@@ -154,6 +155,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AutomaticSaveEnabled">
@@ -205,6 +207,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt was made to get the <see cref="P:System.Web.Profile.ProfileManager.AutomaticSaveEnabled" /> property value without at least <see cref="F:System.Web.AspNetHostingPermissionLevel.Medium" /> permission.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteInactiveProfiles">
@@ -253,6 +256,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteProfile">
@@ -304,6 +308,7 @@
           <paramref name="username" /> is an empty string ("") or contains a comma.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="DeleteProfiles">
@@ -313,6 +318,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Deletes profile properties and information from the data source for a supplied list of profiles.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="DeleteProfiles">
@@ -376,6 +382,7 @@
  \- or -  
   
  One of the items in <paramref name="usernames" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteProfiles">
@@ -436,6 +443,7 @@
  \- or -  
   
  One of the <see cref="T:System.Web.Profile.ProfileInfo" /> objects in <paramref name="profiles" /> has a <see cref="P:System.Web.Profile.ProfileInfo.UserName" /> that is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -482,6 +490,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindInactiveProfilesByUserName">
@@ -491,6 +500,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Retrieves profile information for profiles in which the last activity date occurred on or before a specified date and time and the user name for the profile matches a specified name.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FindInactiveProfilesByUserName">
@@ -550,6 +560,7 @@
           <paramref name="usernameToMatch" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="usernameToMatch" /> is an empty string ("").</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindInactiveProfilesByUserName">
@@ -626,6 +637,7 @@
  \- or -  
   
  <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindProfilesByUserName">
@@ -635,6 +647,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Retrieves profile information for profiles in which the user name matches a specified name.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FindProfilesByUserName">
@@ -691,6 +704,7 @@
           <paramref name="usernameToMatch" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="usernameToMatch" /> is an empty string ("").</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindProfilesByUserName">
@@ -765,6 +779,7 @@
  \- or -  
   
  <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAllInactiveProfiles">
@@ -774,6 +789,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Retrieves user profile data for profiles in which the last activity date occurred on or before a specified date and time.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetAllInactiveProfiles">
@@ -824,6 +840,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllInactiveProfiles">
@@ -880,6 +897,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAllProfiles">
@@ -889,6 +907,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Retrieves user profile data for profiles in the data source.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetAllProfiles">
@@ -934,6 +953,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllProfiles">
@@ -985,6 +1005,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetNumberOfInactiveProfiles">
@@ -1031,6 +1052,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetNumberOfProfiles">
@@ -1072,6 +1094,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -1110,6 +1133,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt was made to get the <see cref="P:System.Web.Profile.ProfileManager.Provider" /> property value without at least <see cref="F:System.Web.AspNetHostingPermissionLevel.Medium" /> permission.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Providers">
@@ -1172,6 +1196,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt was made to get the <see cref="P:System.Web.Profile.ProfileManager.Providers" /> property value without at least <see cref="F:System.Web.AspNetHostingPermissionLevel.Medium" /> permission.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
   </Members>

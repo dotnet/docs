@@ -1,4 +1,4 @@
-﻿<Type Name="AutomationElement+AutomationElementInformation" FullName="System.Windows.Automation.AutomationElement+AutomationElementInformation">
+<Type Name="AutomationElement+AutomationElementInformation" FullName="System.Windows.Automation.AutomationElement+AutomationElementInformation">
   <TypeSignature Language="C#" Value="public struct AutomationElement.AutomationElementInformation" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit AutomationElement/AutomationElementInformation extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationElement.AutomationElementInformation" />
@@ -34,6 +34,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/a6c31d7b-b33e-49b3-b5c1-31a345f9b7c8">UI Automation Properties Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/255905af-0b17-485c-93d4-8a2db2a6524b">UI Automation Properties for Clients</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/09576b1a-291f-435c-980e-dee32d899ae1">Get UI Automation Element Properties</related>
   </Docs>
   <Members>
     <Member MemberName="AcceleratorKey">
@@ -223,6 +226,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/261dcc59-3a62-4e40-91dd-63ff9d2241c0">UI Automation Control Types</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/75159ef8-bd43-4d13-acb7-1f1fe9253160">UI Automation Control Types Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FrameworkId">
@@ -349,6 +354,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsControlElement">
@@ -379,6 +385,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">

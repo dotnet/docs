@@ -1,4 +1,4 @@
-﻿<Type Name="CustomAttributeFormatException" FullName="System.Reflection.CustomAttributeFormatException">
+<Type Name="CustomAttributeFormatException" FullName="System.Reflection.CustomAttributeFormatException">
   <TypeSignature Language="C#" Value="public class CustomAttributeFormatException : FormatException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CustomAttributeFormatException extends System.FormatException" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.CustomAttributeFormatException" />
@@ -47,6 +47,7 @@
     </remarks>
     <altmember cref="T:System.Exception" />
     <altmember cref="T:System.FormatException" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -236,6 +237,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
   </Members>

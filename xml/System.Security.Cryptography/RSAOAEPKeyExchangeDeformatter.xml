@@ -1,4 +1,4 @@
-﻿<Type Name="RSAOAEPKeyExchangeDeformatter" FullName="System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter">
+<Type Name="RSAOAEPKeyExchangeDeformatter" FullName="System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter">
   <TypeSignature Language="C#" Value="public class RSAOAEPKeyExchangeDeformatter : System.Security.Cryptography.AsymmetricKeyExchangeDeformatter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RSAOAEPKeyExchangeDeformatter extends System.Security.Cryptography.AsymmetricKeyExchangeDeformatter" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter" />
@@ -53,6 +53,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -99,6 +100,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -134,6 +136,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="DecryptKeyExchange">
@@ -193,6 +196,7 @@
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The key exchange data verification has failed.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException">The key is missing.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -237,6 +241,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="SetKey">
@@ -282,6 +287,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
   </Members>

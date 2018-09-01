@@ -1,4 +1,4 @@
-﻿<Type Name="WebApplicationLifetimeEvent" FullName="System.Web.Management.WebApplicationLifetimeEvent">
+<Type Name="WebApplicationLifetimeEvent" FullName="System.Web.Management.WebApplicationLifetimeEvent">
   <TypeSignature Language="C#" Value="public class WebApplicationLifetimeEvent : System.Web.Management.WebManagementEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebApplicationLifetimeEvent extends System.Web.Management.WebManagementEvent" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebApplicationLifetimeEvent" />
@@ -90,6 +90,7 @@
     <block subset="none" type="overrides">
       <para>When formatting your custom event information for display, override the <see cref="M:System.Web.Management.WebBaseEvent.FormatCustomEventDetails(System.Web.Management.WebEventFormatter)" /> method rather than the <see cref="Overload:System.Web.Management.WebBaseEvent.ToString" /> method. This will avoid overwriting or tampering with sensitive system information.</para>
     </block>
+    <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -99,6 +100,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebApplicationLifetimeEvent" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -148,6 +150,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -199,6 +202,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IncrementPerfCounters">
@@ -221,6 +225,7 @@
       <Docs>
         <summary>Used internally to increment performance counters.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
       </Docs>
     </Member>
   </Members>

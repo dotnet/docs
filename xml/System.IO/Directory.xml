@@ -1,4 +1,4 @@
-﻿<Type Name="Directory" FullName="System.IO.Directory">
+<Type Name="Directory" FullName="System.IO.Directory">
   <TypeSignature Language="C#" Value="public static class Directory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Directory extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.Directory" />
@@ -97,6 +97,10 @@
     <altmember cref="T:System.IO.DirectoryInfo" />
     <altmember cref="T:System.IO.FileInfo" />
     <altmember cref="T:System.IO.FileSystemWatcher" />
+    <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+    <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+    <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+    <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="CreateDirectory">
@@ -220,6 +224,9 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="path" /> contains a colon character (:) that is not part of a drive label ("C:\\").</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files or directories. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.DirectoryInfo" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDirectory">
@@ -402,6 +409,9 @@ Directory::CreateDirectory("Public\\Html");
   
  The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -502,6 +512,9 @@ Directory::CreateDirectory("Public\\Html");
   
  The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="EnumerateDirectories">
@@ -1444,6 +1457,9 @@ Directory::CreateDirectory("Public\\Html");
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="T:System.IO.DirectoryInfo" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAccessControl">
@@ -1652,6 +1668,9 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetCreationTimeUtc">
@@ -1725,6 +1744,9 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetCurrentDirectory">
@@ -1788,6 +1810,9 @@ Directory::CreateDirectory("Public\\Html");
   
  This method is available in the .NET Compact Framework, but is not currently supported.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to path information for the current directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetDirectories">
@@ -1873,6 +1898,9 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for accessing path information for the current directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
         <altmember cref="M:System.IO.Directory.GetCurrentDirectory" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetDirectories">
@@ -1961,6 +1989,9 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to path information for the current directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
         <altmember cref="M:System.IO.Directory.GetCurrentDirectory" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetDirectories">
@@ -2076,6 +2107,9 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to path information for the current directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
         <altmember cref="M:System.IO.Directory.GetCurrentDirectory" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryRoot">
@@ -2148,6 +2182,9 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to path information for the current directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetFiles">
@@ -2238,6 +2275,9 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is not found or is invalid (for example, it is on an unmapped drive).</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to path information for the current directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetFiles">
@@ -2342,6 +2382,9 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is not found or is invalid (for example, it is on an unmapped drive).</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to path information for the current directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetFiles">
@@ -2469,6 +2512,9 @@ Directory::CreateDirectory("Public\\Html");
   
  A network error has occurred.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to path information for the current directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetFileSystemEntries">
@@ -2555,6 +2601,9 @@ Directory::CreateDirectory("Public\\Html");
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to path information for the current directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
         <altmember cref="T:System.IO.FileSystemInfo" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetFileSystemEntries">
@@ -2652,6 +2701,9 @@ Directory::CreateDirectory("Public\\Html");
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to path information for the current directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
         <altmember cref="T:System.IO.FileSystemInfo" />
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetFileSystemEntries">
@@ -2853,6 +2905,9 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.NotSupportedException">The <paramref name="path" /> parameter is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetLastAccessTimeUtc">
@@ -2927,6 +2982,9 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.NotSupportedException">The <paramref name="path" /> parameter is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetLastWriteTime">
@@ -3004,6 +3062,9 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetLastWriteTimeUtc">
@@ -3077,6 +3138,9 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetLogicalDrives">
@@ -3137,6 +3201,9 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.IO.IOException">An I/O error occured (for example, a disk error).</exception>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code, such as calling native code with PInvoke or COM interop. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetParent">
@@ -3217,6 +3284,9 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.Security.SecurityException">.NET Framework only: The caller does not have the required permissions. </exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from files or directories. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="T:System.IO.DirectoryInfo" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Move">
@@ -3303,6 +3373,9 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path specified by <paramref name="sourceDirName" /> is invalid (for example, it is on an unmapped drive).</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from <paramref name="sourceDirName" /> and writing to <paramref name="sourceDirName" /> and <paramref name="destDirName" />. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="SetAccessControl">
@@ -3454,6 +3527,9 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.PlatformNotSupportedException">The current operating system is not Windows NT or later.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="SetCreationTimeUtc">
@@ -3521,6 +3597,9 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.PlatformNotSupportedException">The current operating system is not Windows NT or later.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="SetCurrentDirectory">
@@ -3599,6 +3678,9 @@ Directory::CreateDirectory("Public\\Html");
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to files or directories. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="SetLastAccessTime">
@@ -3670,6 +3752,9 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="lastAccessTime" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="SetLastAccessTimeUtc">
@@ -3746,6 +3831,9 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="lastAccessTimeUtc" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="SetLastWriteTime">
@@ -3820,6 +3908,9 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="lastWriteTime" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="SetLastWriteTimeUtc">
@@ -3899,6 +3990,9 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="lastWriteTimeUtc" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
   </Members>

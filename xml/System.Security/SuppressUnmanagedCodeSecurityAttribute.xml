@@ -1,4 +1,4 @@
-﻿<Type Name="SuppressUnmanagedCodeSecurityAttribute" FullName="System.Security.SuppressUnmanagedCodeSecurityAttribute">
+<Type Name="SuppressUnmanagedCodeSecurityAttribute" FullName="System.Security.SuppressUnmanagedCodeSecurityAttribute">
   <TypeSignature Language="C#" Value="public sealed class SuppressUnmanagedCodeSecurityAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SuppressUnmanagedCodeSecurityAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.SuppressUnmanagedCodeSecurityAttribute" />
@@ -61,6 +61,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="MemoryStream" FullName="System.IO.MemoryStream">
+<Type Name="MemoryStream" FullName="System.IO.MemoryStream">
   <TypeSignature Language="C#" Value="public class MemoryStream : System.IO.Stream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MemoryStream extends System.IO.Stream" />
   <TypeSignature Language="DocId" Value="T:System.IO.MemoryStream" />
@@ -66,6 +66,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+    <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+    <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -123,6 +126,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -180,6 +186,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -241,6 +250,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is negative.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -295,6 +307,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -354,6 +369,9 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> or <paramref name="count" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">The buffer length minus <paramref name="index" /> is less than <paramref name="count" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -415,6 +433,9 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> or <paramref name="count" /> are negative.</exception>
         <exception cref="T:System.ArgumentException">The buffer length minus <paramref name="index" /> is less than <paramref name="count" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -476,6 +497,9 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
         <exception cref="T:System.ArgumentException">The buffer length minus <paramref name="index" /> is less than <paramref name="count" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="BeginRead">
@@ -593,6 +617,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="CanSeek">
@@ -642,6 +669,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="CanWrite">
@@ -691,6 +721,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Capacity">
@@ -755,6 +788,9 @@
         <exception cref="T:System.ObjectDisposedException">The current stream is closed.</exception>
         <exception cref="T:System.NotSupportedException">
           <see langword="set" /> is invoked on a stream whose capacity cannot be modified.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -1008,6 +1044,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="FlushAsync">
@@ -1065,6 +1104,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The stream has been disposed.</exception>
+        <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="GetBuffer">
@@ -1119,6 +1159,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The <see langword="MemoryStream" /> instance was not created with a publicly visible buffer.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -1175,6 +1218,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="ObjectInvariant">
@@ -1254,6 +1300,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The position is set to a negative value or a value greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -1365,6 +1414,9 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="offset" /> subtracted from the buffer length is less than <paramref name="count" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current stream instance is closed.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
@@ -1517,6 +1569,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current stream instance is closed.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Seek">
@@ -1591,6 +1646,9 @@
   
  <paramref name="offset" /> caused an arithmetic overflow.</exception>
         <exception cref="T:System.ObjectDisposedException">The current stream instance is closed.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="SetLength">
@@ -1652,6 +1710,9 @@
  The current stream does not support writing.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="value" /> is negative or is greater than the maximum length of the <see cref="T:System.IO.MemoryStream" />, where the maximum length is(<see cref="F:System.Int32.MaxValue" /> - origin), and origin is the index into the underlying buffer at which the stream starts.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="ToArray">
@@ -1709,6 +1770,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="TryGetBuffer">
@@ -1858,6 +1922,9 @@
           <paramref name="offset" /> or <paramref name="count" /> are negative.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ObjectDisposedException">The current stream instance is closed.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -2017,6 +2084,9 @@
   
  The current position is at the end of the stream, and the capacity cannot be modified.</exception>
         <exception cref="T:System.ObjectDisposedException">The current stream is closed.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -2068,6 +2138,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current or target stream is closed.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
   </Members>

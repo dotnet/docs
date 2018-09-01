@@ -1,4 +1,4 @@
-﻿<Type Name="StatusBarAutomationPeer" FullName="System.Windows.Automation.Peers.StatusBarAutomationPeer">
+<Type Name="StatusBarAutomationPeer" FullName="System.Windows.Automation.Peers.StatusBarAutomationPeer">
   <TypeSignature Language="C#" Value="public class StatusBarAutomationPeer : System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StatusBarAutomationPeer extends System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.StatusBarAutomationPeer" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Exposes <see cref="T:System.Windows.Controls.Primitives.StatusBar" /> types to UI Automation.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,6 +45,7 @@
         <param name="owner">The <see cref="T:System.Windows.Controls.Primitives.StatusBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.StatusBarAutomationPeer" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.StatusBarAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">
@@ -67,6 +69,7 @@
         <summary>Gets the control type for the <see cref="T:System.Windows.Controls.Primitives.StatusBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.StatusBarAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
         <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.StatusBar" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetChildrenCore">
@@ -90,6 +93,7 @@
         <summary>Gets the collection of child elements of the <see cref="T:System.Windows.Controls.Primitives.StatusBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.StatusBarAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.</summary>
         <returns>A list of child elements.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">
@@ -113,6 +117,7 @@
         <summary>Gets the name of the <see cref="T:System.Windows.Controls.Primitives.StatusBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.StatusBarAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
         <returns>A string that contains "StatusBar".</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
   </Members>

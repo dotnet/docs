@@ -1,4 +1,4 @@
-﻿<Type Name="GroupCollection" FullName="System.Text.RegularExpressions.GroupCollection">
+<Type Name="GroupCollection" FullName="System.Text.RegularExpressions.GroupCollection">
   <TypeSignature Language="C#" Value="public class GroupCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit GroupCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.GroupCollection" />
@@ -434,6 +434,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/0fc18634-f590-4062-8d5c-f0b71abe405b">Grouping Constructs</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -500,6 +501,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/0fc18634-f590-4062-8d5c-f0b71abe405b">Grouping Constructs</related>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">

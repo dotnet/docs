@@ -1,4 +1,4 @@
-﻿<Type Name="TogglePattern" FullName="System.Windows.Automation.TogglePattern">
+<Type Name="TogglePattern" FullName="System.Windows.Automation.TogglePattern">
   <TypeSignature Language="C#" Value="public class TogglePattern : System.Windows.Automation.BasePattern" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TogglePattern extends System.Windows.Automation.BasePattern" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TogglePattern" />
@@ -18,6 +18,8 @@
     <summary>Represents a control that can cycle through a set of states and maintain a state once set.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Windows.Automation.Provider.IToggleProvider" />
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md">UI Automation Control Patterns for Clients</related>
   </Docs>
   <Members>
     <Member MemberName="Cached">

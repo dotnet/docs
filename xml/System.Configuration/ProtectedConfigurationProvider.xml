@@ -1,4 +1,4 @@
-﻿<Type Name="ProtectedConfigurationProvider" FullName="System.Configuration.ProtectedConfigurationProvider">
+<Type Name="ProtectedConfigurationProvider" FullName="System.Configuration.ProtectedConfigurationProvider">
   <TypeSignature Language="C#" Value="public abstract class ProtectedConfigurationProvider : System.Configuration.Provider.ProviderBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ProtectedConfigurationProvider extends System.Configuration.Provider.ProviderBase" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ProtectedConfigurationProvider" />
@@ -84,6 +84,7 @@ providerName="System.Data.SqlClient" />
     <altmember cref="T:System.Configuration.ProtectedConfigurationSection" />
     <altmember cref="T:System.Configuration.DpapiProtectedConfigurationProvider" />
     <altmember cref="T:System.Configuration.RsaProtectedConfigurationProvider" />
+    <related type="Article" href="http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1">Encrypting Configuration Information Using Protected Configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -202,6 +203,7 @@ providerName="System.Data.SqlClient" />
         <block subset="none" type="overrides">
           <para>Override this method to perform custom encryption.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/eb5dee1e-f6ac-4b16-bc2c-32c1e8cd9341">Encrypting and Decrypting Configuration Sections</related>
       </Docs>
     </Member>
   </Members>

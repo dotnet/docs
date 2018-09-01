@@ -1,4 +1,4 @@
-﻿<Type Name="ProxyElement" FullName="System.Net.Configuration.ProxyElement">
+<Type Name="ProxyElement" FullName="System.Net.Configuration.ProxyElement">
   <TypeSignature Language="C#" Value="public sealed class ProxyElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProxyElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.ProxyElement" />
@@ -35,6 +35,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Net.WebProxy" />
+    <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +64,7 @@
         </remarks>
         <altmember cref="T:System.Net.IAuthenticationModule" />
         <altmember cref="T:System.Net.AuthenticationManager" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="AutoDetect">
@@ -92,6 +94,7 @@
           <see cref="F:System.Net.Configuration.ProxyElement.AutoDetectValues.True" /> if the <see cref="T:System.Net.WebProxy" /> is automatically detected; <see cref="F:System.Net.Configuration.ProxyElement.AutoDetectValues.False" /> if the <see cref="T:System.Net.WebProxy" /> is not automatically detected; or <see cref="F:System.Net.Configuration.ProxyElement.AutoDetectValues.Unspecified" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.WebProxy" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="BypassOnLocal">
@@ -130,6 +133,7 @@
         </remarks>
         <altmember cref="T:System.Net.WebProxy" />
         <altmember cref="P:System.Net.WebProxy.BypassProxyOnLocal" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -185,6 +189,7 @@
         <value>A <see cref="T:System.String" /> containing a URI.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.WebProxy" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="ScriptLocation">
@@ -213,6 +218,7 @@
         <value>A <see cref="T:System.Uri" /> specifying the location of the automatic proxy detection script.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.WebProxy" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="UseSystemDefault">
@@ -242,6 +248,7 @@
           <see langword="true" /> if the Internet Explorer LAN settings are used to detect and configure the default <see cref="T:System.Net.WebProxy" /> used for requests; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.WebProxy" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlSource" FullName="System.Web.UI.HtmlControls.HtmlSource">
+<Type Name="HtmlSource" FullName="System.Web.UI.HtmlControls.HtmlSource">
   <TypeSignature Language="C#" Value="public class HtmlSource : System.Web.UI.HtmlControls.HtmlControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlSource extends System.Web.UI.HtmlControls.HtmlControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlSource" />
@@ -21,6 +21,7 @@
   <Docs>
     <summary>Provides programmatic access to the HTML <see langword="&lt;source&gt;" /> element on the server.</summary>
     <remarks>To be added.</remarks>
+    <related type="ExternalDocumentation" href="http://dev.w3.org/html5/spec/the-source-element.html#the-source-element">source element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -94,6 +95,7 @@
         <summary>Gets or sets the <see langword="src" /> attribute.</summary>
         <value>The <see langword="src" /> attribute.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://dev.w3.org/html5/spec/the-source-element.html#attr-source-src">src attribute</related>
       </Docs>
     </Member>
   </Members>

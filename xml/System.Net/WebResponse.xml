@@ -1,4 +1,4 @@
-﻿<Type Name="WebResponse" FullName="System.Net.WebResponse">
+<Type Name="WebResponse" FullName="System.Net.WebResponse">
   <TypeSignature Language="C#" Value="public abstract class WebResponse : MarshalByRefObject, IDisposable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit WebResponse extends System.MarshalByRefObject implements class System.IDisposable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebResponse" />
@@ -239,6 +239,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
+        <related type="Article" href="~/docs/framework/network-programming/using-streams-on-the-network.md">Using Streams on the Network</related>
       </Docs>
     </Member>
     <Member MemberName="ContentLength">
@@ -549,6 +550,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
+        <related type="Article" href="~/docs/framework/network-programming/using-streams-on-the-network.md">Using Streams on the Network</related>
       </Docs>
     </Member>
     <Member MemberName="Headers">

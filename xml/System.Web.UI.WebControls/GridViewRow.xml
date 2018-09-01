@@ -1,4 +1,4 @@
-﻿<Type Name="GridViewRow" FullName="System.Web.UI.WebControls.GridViewRow">
+<Type Name="GridViewRow" FullName="System.Web.UI.WebControls.GridViewRow">
   <TypeSignature Language="C#" Value="public class GridViewRow : System.Web.UI.WebControls.TableRow, System.Web.UI.IDataItemContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridViewRow extends System.Web.UI.WebControls.TableRow implements class System.Web.UI.IDataItemContainer, class System.Web.UI.INamingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewRow" />
@@ -96,6 +96,7 @@
     <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowIndex" />
     <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowState" />
     <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowType" />
+    <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

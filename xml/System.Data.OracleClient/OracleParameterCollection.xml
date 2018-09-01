@@ -1,4 +1,4 @@
-﻿<Type Name="OracleParameterCollection" FullName="System.Data.OracleClient.OracleParameterCollection">
+<Type Name="OracleParameterCollection" FullName="System.Data.OracleClient.OracleParameterCollection">
   <TypeSignature Language="C#" Value="public sealed class OracleParameterCollection : System.Data.Common.DbParameterCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OracleParameterCollection extends System.Data.Common.DbParameterCollection" />
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleParameterCollection" />
@@ -15,7 +15,8 @@
     <BaseTypeName>System.Data.Common.DbParameterCollection</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-1.1">System.MarshalByRefObject</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Attributes>
     <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBParametersEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>

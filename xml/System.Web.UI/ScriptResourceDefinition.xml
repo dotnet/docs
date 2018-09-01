@@ -1,4 +1,4 @@
-﻿<Type Name="ScriptResourceDefinition" FullName="System.Web.UI.ScriptResourceDefinition">
+<Type Name="ScriptResourceDefinition" FullName="System.Web.UI.ScriptResourceDefinition">
   <TypeSignature Language="C#" Value="public class ScriptResourceDefinition : System.Web.UI.IScriptResourceDefinition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptResourceDefinition extends System.Object implements class System.Web.UI.IScriptResourceDefinition" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptResourceDefinition" />
@@ -178,6 +178,7 @@
         <summary>Gets or sets the debug mode path of the script resource that is used when debug mode is enabled.</summary>
         <value>The path of a script resource that is used when debug mode is enabled.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375">Debugging and Tracing ASP.NET AJAX Applications Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoadSuccessExpression">

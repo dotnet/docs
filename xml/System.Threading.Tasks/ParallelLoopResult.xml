@@ -1,4 +1,4 @@
-﻿<Type Name="ParallelLoopResult" FullName="System.Threading.Tasks.ParallelLoopResult">
+<Type Name="ParallelLoopResult" FullName="System.Threading.Tasks.ParallelLoopResult">
   <TypeSignature Language="C#" Value="public struct ParallelLoopResult" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ParallelLoopResult extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.ParallelLoopResult" />
@@ -34,6 +34,7 @@
  ]]></format>
     </remarks>
     <threadsafe>All public members of <see cref="T:System.Threading.Tasks.ParallelLoopResult" /> are thread safe and may be called from multiple threads concurrently.</threadsafe>
+    <related type="Article" href="~/docs/standard/parallel-programming/data-parallelism-task-parallel-library.md">Data Parallelism (Task Parallel Library)</related>
   </Docs>
   <Members>
     <Member MemberName="IsCompleted">

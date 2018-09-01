@@ -1,4 +1,4 @@
-﻿<Type Name="Operators" FullName="Microsoft.VisualBasic.CompilerServices.Operators">
+<Type Name="Operators" FullName="Microsoft.VisualBasic.CompilerServices.Operators">
   <TypeSignature Language="C#" Value="public sealed class Operators" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Operators extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.Operators" />
@@ -33,6 +33,7 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <related type="Article" href="~/docs/visual-basic/language-reference/operators/index.md">Operators (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName="AddObject">
@@ -69,6 +70,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/addition-operator.md">+ Operator (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="AndObject">
@@ -105,6 +107,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/and-operator.md">And Operator (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CompareObject">
@@ -181,6 +184,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/comparison-operators.md">Comparison Operators (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CompareObjectEqual">
@@ -220,6 +224,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/comparison-operators.md">Comparison Operators (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CompareObjectGreater">
@@ -259,6 +264,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/comparison-operators.md">Comparison Operators (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CompareObjectGreaterEqual">
@@ -298,6 +304,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/comparison-operators.md">Comparison Operators (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CompareObjectLess">
@@ -337,6 +344,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/comparison-operators.md">Comparison Operators (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CompareObjectLessEqual">
@@ -376,6 +384,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/comparison-operators.md">Comparison Operators (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CompareObjectNotEqual">
@@ -415,6 +424,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/comparison-operators.md">Comparison Operators (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CompareString">
@@ -493,6 +503,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/comparison-operators.md">Comparison Operators (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ConcatenateObject">
@@ -529,6 +540,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/concatenation-operator.md">&amp; Operator (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ConditionalCompareObjectEqual">
@@ -567,6 +579,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/procedures/operator-procedures.md">Operator Procedures</related>
       </Docs>
     </Member>
     <Member MemberName="ConditionalCompareObjectGreater">
@@ -605,6 +618,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/procedures/operator-procedures.md">Operator Procedures</related>
       </Docs>
     </Member>
     <Member MemberName="ConditionalCompareObjectGreaterEqual">
@@ -643,6 +657,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/procedures/operator-procedures.md">Operator Procedures</related>
       </Docs>
     </Member>
     <Member MemberName="ConditionalCompareObjectLess">
@@ -681,6 +696,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/procedures/operator-procedures.md">Operator Procedures</related>
       </Docs>
     </Member>
     <Member MemberName="ConditionalCompareObjectLessEqual">
@@ -719,6 +735,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/procedures/operator-procedures.md">Operator Procedures</related>
       </Docs>
     </Member>
     <Member MemberName="ConditionalCompareObjectNotEqual">
@@ -757,6 +774,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/procedures/operator-procedures.md">Operator Procedures</related>
       </Docs>
     </Member>
     <Member MemberName="DivideObject">
@@ -793,6 +811,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/floating-point-division-operator.md">/ Operator (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ExponentObject">
@@ -829,6 +848,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/exponentiation-operators.md">^ Operator (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="FallbackInvokeUserDefinedOperator">
@@ -901,6 +921,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/integer-division-operator.md">\ Operator</related>
       </Docs>
     </Member>
     <Member MemberName="LeftShiftObject">
@@ -937,6 +958,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/left-shift-operator.md">&lt;&lt; Operator (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="LikeObject">
@@ -976,6 +998,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/like-operator.md">Like Operator</related>
       </Docs>
     </Member>
     <Member MemberName="LikeString">
@@ -1015,6 +1038,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/like-operator.md">Like Operator</related>
       </Docs>
     </Member>
     <Member MemberName="ModObject">
@@ -1051,6 +1075,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/mod-operator.md">Mod Operator (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="MultiplyObject">
@@ -1087,6 +1112,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/multiplication-operator.md">* Operator (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="NegateObject">
@@ -1121,6 +1147,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/subtraction-operator.md">- Operator (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="NotObject">
@@ -1155,6 +1182,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/not-operator.md">Not Operator (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="OrObject">
@@ -1191,6 +1219,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/or-operator.md">Or Operator (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="PlusObject">
@@ -1225,6 +1254,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/addition-operator.md">+ Operator (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="RightShiftObject">
@@ -1261,6 +1291,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/right-shift-operator.md">&gt;&gt; Operator (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="SubtractObject">
@@ -1297,6 +1328,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/subtraction-operator.md">- Operator (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="XorObject">
@@ -1333,6 +1365,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/xor-operator.md">Xor Operator (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

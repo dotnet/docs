@@ -1,4 +1,4 @@
-﻿<Type Name="ProtectedConfigurationProviderCollection" FullName="System.Configuration.ProtectedConfigurationProviderCollection">
+<Type Name="ProtectedConfigurationProviderCollection" FullName="System.Configuration.ProtectedConfigurationProviderCollection">
   <TypeSignature Language="C#" Value="public class ProtectedConfigurationProviderCollection : System.Configuration.Provider.ProviderCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProtectedConfigurationProviderCollection extends System.Configuration.Provider.ProviderCollection" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ProtectedConfigurationProviderCollection" />
@@ -38,6 +38,7 @@
     </remarks>
     <altmember cref="T:System.Configuration.ProtectedConfiguration" />
     <altmember cref="T:System.Configuration.ProtectedConfigurationProvider" />
+    <related type="Article" href="http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1">Encrypting Configuration Information Using Protected Configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

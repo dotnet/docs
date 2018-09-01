@@ -1,4 +1,4 @@
-﻿<Type Name="SrgsItem" FullName="System.Speech.Recognition.SrgsGrammar.SrgsItem">
+<Type Name="SrgsItem" FullName="System.Speech.Recognition.SrgsGrammar.SrgsItem">
   <TypeSignature Language="C#" Value="public class SrgsItem : System.Speech.Recognition.SrgsGrammar.SrgsElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SrgsItem extends System.Speech.Recognition.SrgsGrammar.SrgsElement" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsItem" />
@@ -43,6 +43,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361680(v%3doffice.14)">Create Grammars Using SrgsGrammar</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -297,6 +298,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361680(v%3doffice.14)">Create Grammars Using SrgsGrammar</related>
       </Docs>
     </Member>
     <Member MemberName="Elements">
@@ -324,6 +326,7 @@
         <summary>Gets the collection of objects contained by the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsItem" /> instance.</summary>
         <value>The collection of objects contained by the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsItem" /> instance.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361680(v%3doffice.14)">Create Grammars Using SrgsGrammar</related>
       </Docs>
     </Member>
     <Member MemberName="MaxRepeat">
@@ -355,6 +358,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361680(v%3doffice.14)">Create Grammars Using SrgsGrammar</related>
       </Docs>
     </Member>
     <Member MemberName="MinRepeat">
@@ -386,6 +390,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361680(v%3doffice.14)">Create Grammars Using SrgsGrammar</related>
       </Docs>
     </Member>
     <Member MemberName="RepeatProbability">
@@ -421,6 +426,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">An attempt is made to set <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsItem.RepeatProbability" /> to a value that is negative or larger than 1.0.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361680(v%3doffice.14)">Create Grammars Using SrgsGrammar</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetRepeat">
@@ -464,6 +470,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="count" /> is less than 0 or greater than 255.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361680(v%3doffice.14)">Create Grammars Using SrgsGrammar</related>
       </Docs>
     </Member>
     <Member MemberName="SetRepeat">
@@ -497,6 +504,7 @@
  <paramref name="maxRepeat" /> is less than zero or larger than 255.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="minRepeat" /> is larger than <paramref name="maxRepeat" />.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361680(v%3doffice.14)">Create Grammars Using SrgsGrammar</related>
       </Docs>
     </Member>
     <Member MemberName="Weight">
@@ -534,6 +542,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">An attempt is made to set <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsItem.Weight" /> to a negative value.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361680(v%3doffice.14)">Create Grammars Using SrgsGrammar</related>
       </Docs>
     </Member>
   </Members>

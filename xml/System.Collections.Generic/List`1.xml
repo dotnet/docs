@@ -1,4 +1,4 @@
-﻿<Type Name="List&lt;T&gt;" FullName="System.Collections.Generic.List&lt;T&gt;">
+<Type Name="List&lt;T&gt;" FullName="System.Collections.Generic.List&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class List&lt;T&gt; : System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.Generic.IReadOnlyList&lt;T&gt;, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit List`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IList`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.List`1" />
@@ -131,6 +131,8 @@
  It is safe to perform multiple read operations on a <see cref="T:System.Collections.Generic.List`1" />, but issues can occur if the collection is modified while it’s being read. To ensure thread safety, lock the collection during a read or write operation. To enable a collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization. For collections with built-in synchronization, see the classes in the <see cref="N:System.Collections.Concurrent" /> namespace. For an inherently thread–safe alternative, see the <see cref="T:System.Collections.Immutable.ImmutableList`1" /> class.</threadsafe>
     <altmember cref="T:System.Collections.IList" />
     <altmember cref="T:System.Collections.Immutable.ImmutableList`1" />
+    <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7">Iterators (C# and Visual Basic)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -593,6 +595,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The default comparer <see cref="P:System.Collections.Generic.Comparer`1.Default" /> cannot find an implementation of the <see cref="T:System.IComparable`1" /> generic interface or the <see cref="T:System.IComparable" /> interface for type <paramref name="T" />.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="BinarySearch">
@@ -675,6 +678,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="comparer" /> is <see langword="null" />, and the default comparer <see cref="P:System.Collections.Generic.Comparer`1.Default" /> cannot find an implementation of the <see cref="T:System.IComparable`1" /> generic interface or the <see cref="T:System.IComparable" /> interface for type <paramref name="T" />.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="BinarySearch">
@@ -767,6 +771,7 @@
           <paramref name="comparer" /> is <see langword="null" />, and the default comparer <see cref="P:System.Collections.Generic.Comparer`1.Default" /> cannot find an implementation of the <see cref="T:System.IComparable`1" /> generic interface or the <see cref="T:System.IComparable" /> interface for type <paramref name="T" />.</exception>
         <altmember cref="T:System.Collections.Generic.IComparer`1" />
         <altmember cref="T:System.IComparable`1" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Capacity">
@@ -968,6 +973,7 @@
         </remarks>
         <altmember cref="M:System.Collections.Generic.List`1.IndexOf(`0)" />
         <altmember cref="M:System.Collections.Generic.List`1.LastIndexOf(`0)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertAll&lt;TOutput&gt;">
@@ -2463,6 +2469,7 @@ Public Function StartsWith(e As Employee) As Boolean
         </remarks>
         <altmember cref="M:System.Collections.Generic.List`1.LastIndexOf(`0)" />
         <altmember cref="M:System.Collections.Generic.List`1.Contains(`0)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -2527,6 +2534,7 @@ Public Function StartsWith(e As Employee) As Boolean
           <paramref name="index" /> is outside the range of valid indexes for the <see cref="T:System.Collections.Generic.List`1" />.</exception>
         <altmember cref="M:System.Collections.Generic.List`1.LastIndexOf(`0)" />
         <altmember cref="M:System.Collections.Generic.List`1.Contains(`0)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -2601,6 +2609,7 @@ Public Function StartsWith(e As Employee) As Boolean
  <paramref name="index" /> and <paramref name="count" /> do not specify a valid section in the <see cref="T:System.Collections.Generic.List`1" />.</exception>
         <altmember cref="M:System.Collections.Generic.List`1.LastIndexOf(`0)" />
         <altmember cref="M:System.Collections.Generic.List`1.Contains(`0)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -2909,6 +2918,7 @@ Public Function StartsWith(e As Employee) As Boolean
         </remarks>
         <altmember cref="M:System.Collections.Generic.List`1.IndexOf(`0)" />
         <altmember cref="M:System.Collections.Generic.List`1.Contains(`0)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -2973,6 +2983,7 @@ Public Function StartsWith(e As Employee) As Boolean
           <paramref name="index" /> is outside the range of valid indexes for the <see cref="T:System.Collections.Generic.List`1" />.</exception>
         <altmember cref="M:System.Collections.Generic.List`1.IndexOf(`0)" />
         <altmember cref="M:System.Collections.Generic.List`1.Contains(`0)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -3047,6 +3058,7 @@ Public Function StartsWith(e As Employee) As Boolean
  <paramref name="index" /> and <paramref name="count" /> do not specify a valid section in the <see cref="T:System.Collections.Generic.List`1" />.</exception>
         <altmember cref="M:System.Collections.Generic.List`1.IndexOf(`0)" />
         <altmember cref="M:System.Collections.Generic.List`1.Contains(`0)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -3123,6 +3135,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <altmember cref="M:System.Collections.Generic.List`1.RemoveRange(System.Int32,System.Int32)" />
         <altmember cref="M:System.Collections.Generic.List`1.Add(`0)" />
         <altmember cref="M:System.Collections.Generic.List`1.Insert(System.Int32,`0)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAll">
@@ -3589,6 +3602,7 @@ Public Function StartsWith(e As Employee) As Boolean
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The default comparer <see cref="P:System.Collections.Generic.Comparer`1.Default" /> cannot find an implementation of the <see cref="T:System.IComparable`1" /> generic interface or the <see cref="T:System.IComparable" /> interface for type <paramref name="T" />.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -3665,6 +3679,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <exception cref="T:System.InvalidOperationException">
           <paramref name="comparer" /> is <see langword="null" />, and the default comparer <see cref="P:System.Collections.Generic.Comparer`1.Default" /> cannot find implementation of the <see cref="T:System.IComparable`1" /> generic interface or the <see cref="T:System.IComparable" /> interface for type <paramref name="T" />.</exception>
         <exception cref="T:System.ArgumentException">The implementation of <paramref name="comparer" /> caused an error during the sort. For example, <paramref name="comparer" /> might not return 0 when comparing an item with itself.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -3745,6 +3760,7 @@ Public Function StartsWith(e As Employee) As Boolean
           <paramref name="comparison" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The implementation of <paramref name="comparison" /> caused an error during the sort. For example, <paramref name="comparison" /> might not return 0 when comparing an item with itself.</exception>
         <altmember cref="T:System.Comparison`1" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -3836,6 +3852,7 @@ Public Function StartsWith(e As Employee) As Boolean
  The implementation of <paramref name="comparer" /> caused an error during the sort. For example, <paramref name="comparer" /> might not return 0 when comparing an item with itself.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="comparer" /> is <see langword="null" />, and the default comparer <see cref="P:System.Collections.Generic.Comparer`1.Default" /> cannot find implementation of the <see cref="T:System.IComparable`1" /> generic interface or the <see cref="T:System.IComparable" /> interface for type <paramref name="T" />.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly">

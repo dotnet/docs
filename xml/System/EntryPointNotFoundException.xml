@@ -1,4 +1,4 @@
-﻿<Type Name="EntryPointNotFoundException" FullName="System.EntryPointNotFoundException">
+<Type Name="EntryPointNotFoundException" FullName="System.EntryPointNotFoundException">
   <TypeSignature Language="C#" Value="public class EntryPointNotFoundException : TypeLoadException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit EntryPointNotFoundException extends System.TypeLoadException" />
   <TypeSignature Language="DocId" Value="T:System.EntryPointNotFoundException" />
@@ -91,6 +91,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -288,6 +289,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
   </Members>

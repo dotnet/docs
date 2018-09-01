@@ -1,4 +1,4 @@
-﻿<Type Name="PrintQueue" FullName="System.Printing.PrintQueue">
+<Type Name="PrintQueue" FullName="System.Printing.PrintQueue">
   <TypeSignature Language="C#" Value="public class PrintQueue : System.Printing.PrintSystemObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi PrintQueue extends System.Printing.PrintSystemObject" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintQueue" />
@@ -572,6 +572,8 @@
         </remarks>
         <altmember cref="T:System.Threading.ApartmentState" />
         <altmember cref="T:System.STAThreadAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/e78b14f1-e487-43cd-9c6d-1a07483f1730">Exposing COM Components to the .NET Framework</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
       </Docs>
     </Member>
     <Member MemberName="AddJob">
@@ -666,6 +668,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=186397">Print Schema</related>
       </Docs>
     </Member>
     <Member MemberName="Comment">
@@ -755,6 +758,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates an <see cref="T:System.Windows.Xps.XpsDocumentWriter" /> object.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CreateXpsDocumentWriter">
@@ -800,6 +804,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
       </Docs>
     </Member>
     <Member MemberName="CreateXpsDocumentWriter">
@@ -835,6 +840,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
       </Docs>
     </Member>
     <Member MemberName="CreateXpsDocumentWriter">
@@ -875,6 +881,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
       </Docs>
     </Member>
     <Member MemberName="CreateXpsDocumentWriter">
@@ -919,6 +926,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
       </Docs>
     </Member>
     <Member MemberName="CreateXpsDocumentWriter">
@@ -968,6 +976,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
       </Docs>
     </Member>
     <Member MemberName="CreateXpsDocumentWriter">
@@ -1016,6 +1025,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentJobSettings">
@@ -2706,6 +2716,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=186397">Print Schema</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="MergeAndValidatePrintTicket">

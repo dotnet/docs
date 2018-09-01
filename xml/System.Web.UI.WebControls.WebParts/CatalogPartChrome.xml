@@ -1,4 +1,4 @@
-﻿<Type Name="CatalogPartChrome" FullName="System.Web.UI.WebControls.WebParts.CatalogPartChrome">
+<Type Name="CatalogPartChrome" FullName="System.Web.UI.WebControls.WebParts.CatalogPartChrome">
   <TypeSignature Language="C#" Value="public class CatalogPartChrome" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CatalogPartChrome extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.CatalogPartChrome" />
@@ -60,6 +60,7 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartChrome" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.EditorPartChrome" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

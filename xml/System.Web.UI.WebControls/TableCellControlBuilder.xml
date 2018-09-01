@@ -1,4 +1,4 @@
-﻿<Type Name="TableCellControlBuilder" FullName="System.Web.UI.WebControls.TableCellControlBuilder">
+<Type Name="TableCellControlBuilder" FullName="System.Web.UI.WebControls.TableCellControlBuilder">
   <TypeSignature Language="C#" Value="public class TableCellControlBuilder : System.Web.UI.ControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableCellControlBuilder extends System.Web.UI.ControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableCellControlBuilder" />
@@ -27,6 +27,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.ControlBuilderAttribute" />
     <altmember cref="T:System.Web.UI.ControlBuilder" />
+    <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

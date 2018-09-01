@@ -1,4 +1,4 @@
-﻿<Type Name="IConfigurationSectionHandler" FullName="System.Configuration.IConfigurationSectionHandler">
+<Type Name="IConfigurationSectionHandler" FullName="System.Configuration.IConfigurationSectionHandler">
   <TypeSignature Language="C#" Value="public interface IConfigurationSectionHandler" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConfigurationSectionHandler" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.IConfigurationSectionHandler" />
@@ -77,6 +77,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Configuration.ConfigurationSection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/febaca98-c727-4017-95ed-82e2fb6cf234">How to: Create Custom Configuration Sections Using ConfigurationSection</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/07f68a3f-2920-4665-a824-47bda744e662">How to: Create Custom Configuration Sections Using IConfigurationSectionHandler</related>
       </Docs>
     </Member>
   </Members>

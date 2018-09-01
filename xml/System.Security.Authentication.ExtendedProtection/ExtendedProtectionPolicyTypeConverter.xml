@@ -1,4 +1,4 @@
-﻿<Type Name="ExtendedProtectionPolicyTypeConverter" FullName="System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicyTypeConverter">
+<Type Name="ExtendedProtectionPolicyTypeConverter" FullName="System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicyTypeConverter">
   <TypeSignature Language="C#" Value="public class ExtendedProtectionPolicyTypeConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExtendedProtectionPolicyTypeConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicyTypeConverter" />
@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

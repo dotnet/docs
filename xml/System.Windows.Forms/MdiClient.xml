@@ -1,4 +1,4 @@
-﻿<Type Name="MdiClient" FullName="System.Windows.Forms.MdiClient">
+<Type Name="MdiClient" FullName="System.Windows.Forms.MdiClient">
   <TypeSignature Language="C#" Value="public sealed class MdiClient : System.Windows.Forms.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MdiClient extends System.Windows.Forms.Control" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MdiClient" />
@@ -42,6 +42,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/04fb414b-811f-4a83-aab6-b4a24646dec5">How To: Create an MDI Window List with MenuStrip (Windows Forms)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/64992ed9-44af-4baf-b45f-863e6ab35711">How to: Create an MDI Form with Menu Merging and ToolStrip Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

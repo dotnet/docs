@@ -1,4 +1,4 @@
-﻿<Type Name="DeviceSpecificChoice" FullName="System.Web.UI.MobileControls.DeviceSpecificChoice">
+<Type Name="DeviceSpecificChoice" FullName="System.Web.UI.MobileControls.DeviceSpecificChoice">
   <TypeSignature Language="C#" Value="public class DeviceSpecificChoice : System.Web.UI.IAttributeAccessor, System.Web.UI.IParserAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeviceSpecificChoice extends System.Object implements class System.Web.UI.IAttributeAccessor, class System.Web.UI.IParserAccessor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
@@ -42,7 +42,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is analogous to the [\<Choice>](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element. Choices are tested in the order that they appear within a [\<DeviceSpecific>](http://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) element. If you specify the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property of the `<Choice>` element, its value must be the name of a device filter defined in the `<deviceFilters>` section of the Machine.config file. At run time, ASP.NET evaluates the specified device filter against the capabilities of the current device. If successful, the choice is selected. If you do not specify the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property, the defaults for the `<Choice>` element are selected.  
+ This class is analogous to the [\<Choice>](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element. Choices are tested in the order that they appear within a [\<DeviceSpecific>](https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) element. If you specify the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property of the `<Choice>` element, its value must be the name of a device filter defined in the `<deviceFilters>` section of the Machine.config file. At run time, ASP.NET evaluates the specified device filter against the capabilities of the current device. If successful, the choice is selected. If you do not specify the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property, the defaults for the `<Choice>` element are selected.  
   
    
   
@@ -62,6 +62,9 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">For operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,6 +84,9 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -113,6 +119,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="Argument">
@@ -143,6 +152,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="Contents">
@@ -181,6 +193,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -233,6 +248,9 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="GetAttribute">
@@ -260,6 +278,9 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
         <returns>A <see cref="T:System.String" /> that contains the value of the specified attribute.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">There is no attribute in the object identified by <paramref name="key" />.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="HasTemplates">
@@ -288,10 +309,13 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the currently selected choice in the [&lt;DeviceSpecific&gt;](http://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) element has templates defined within it. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <summary>Gets a value indicating whether the currently selected choice in the [&lt;DeviceSpecific&gt;](https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) element has templates defined within it. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if the currently selected choice has templates defined with in it; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="SetAttribute">
@@ -319,6 +343,9 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
         <param name="value">The value that is assigned to the attribute.</param>
         <summary>Assigns the given value to the attribute specified by the key. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.GetAttribute">
@@ -359,6 +386,8 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.SetAttribute">
@@ -400,6 +429,8 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IParserAccessor.AddParsedSubObject">
@@ -432,6 +463,8 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="Templates">
@@ -463,6 +496,9 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
         <summary>Gets the templates that have been defined in the [&lt;Choice&gt;](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An <see cref="T:System.Collections.IDictionary" /> instance containing the <see cref="T:System.Web.UI.ITemplate" /> objects defined for the <see langword="&lt;Choice&gt;" /> element.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="Xmlns">
@@ -498,6 +534,9 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b">&lt;DeviceSpecific&gt; Element</related>
       </Docs>
     </Member>
   </Members>

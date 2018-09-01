@@ -1,4 +1,4 @@
-﻿<Type Name="CompilerInfo" FullName="System.CodeDom.Compiler.CompilerInfo">
+<Type Name="CompilerInfo" FullName="System.CodeDom.Compiler.CompilerInfo">
   <TypeSignature Language="C#" Value="public sealed class CompilerInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CompilerInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CompilerInfo" />
@@ -32,7 +32,7 @@
   
  The <xref:System.CodeDom.Compiler.CompilerInfo> class provides read-only access to these settings in the machine configuration file. Use the <xref:System.CodeDom.Compiler.CompilerInfo.GetLanguages%2A>, <xref:System.CodeDom.Compiler.CompilerInfo.GetExtensions%2A>, and <xref:System.CodeDom.Compiler.CompilerInfo.CodeDomProviderType%2A> members to examine the corresponding configuration attributes for a language provider. Use the <xref:System.CodeDom.Compiler.CompilerInfo.CreateDefaultCompilerParameters%2A> method to obtain the compiler options and warning level attribute values for a language provider.  
   
- For more details on language provider settings in the configuration file, see [Compiler and Language Provider Settings Schema](http://msdn.microsoft.com/library/c020b139-8699-4f0d-9ac9-70d0c5b2a8c8).  
+ For more details on language provider settings in the configuration file, see [Compiler and Language Provider Settings Schema](~/docs/framework/configure-apps/file-schema/compiler/index.md).  
   
 > [!NOTE]
 >  This class contains a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full-trust permission. For details about link demands, see [Link Demands](~/docs/framework/misc/link-demands.md).  
@@ -51,6 +51,7 @@
     <permission cref="T:System.Security.Permissions.SecurityPermission">for calling members of <see cref="T:System.CodeDom.Compiler.CompilerInfo" />. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
     <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
     <altmember cref="T:System.CodeDom.Compiler.CodeDomProvider" />
+    <related type="Article" href="~/docs/framework/configure-apps/file-schema/compiler/index.md">Compiler and Language Provider Settings Schema</related>
   </Docs>
   <Members>
     <Member MemberName="CodeDomProviderType">
@@ -156,6 +157,7 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling members of <see cref="T:System.CodeDom.Compiler.CompilerInfo" />. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Associated <see cref="T:System.Security.Permissions.PermissionState" /> enumeration value: <see langword="Unrestricted" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/compiler/index.md">Compiler and Language Provider Settings Schema</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateProvider">
@@ -212,6 +214,7 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling members of <see cref="T:System.CodeDom.Compiler.CompilerInfo" />. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Associated <see cref="T:System.Security.Permissions.PermissionState" /> enumeration value: <see langword="Unrestricted" />.</permission>
         <altmember cref="T:System.CodeDom.Compiler.CodeDomProvider" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/compiler/index.md">Compiler and Language Provider Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="CreateProvider">
@@ -351,6 +354,7 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling members of <see cref="T:System.CodeDom.Compiler.CompilerInfo" />. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Associated <see cref="T:System.Security.Permissions.PermissionState" /> enumeration value: <see langword="Unrestricted" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension(System.String)" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/compiler/index.md">Compiler and Language Provider Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -450,6 +454,7 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling members of <see cref="T:System.CodeDom.Compiler.CompilerInfo" />. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Associated <see cref="T:System.Security.Permissions.PermissionState" /> enumeration value: <see langword="Unrestricted" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage(System.String)" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/compiler/index.md">Compiler and Language Provider Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="IsCodeDomProviderTypeValid">

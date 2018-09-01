@@ -1,4 +1,4 @@
-﻿<Type Name="PageCatalogPart" FullName="System.Web.UI.WebControls.WebParts.PageCatalogPart">
+<Type Name="PageCatalogPart" FullName="System.Web.UI.WebControls.WebParts.PageCatalogPart">
   <TypeSignature Language="C#" Value="public sealed class PageCatalogPart : System.Web.UI.WebControls.WebParts.CatalogPart" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PageCatalogPart extends System.Web.UI.WebControls.WebParts.CatalogPart" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PageCatalogPart" />
@@ -89,6 +89,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.ImportCatalogPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -121,6 +122,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AccessKey">
@@ -171,6 +173,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebControl.AccessKey" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -221,6 +224,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebControl.BackColor" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="BackImageUrl">
@@ -271,6 +275,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Panel.BackImageUrl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -321,6 +326,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebControl.BorderColor" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -371,6 +377,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebControl.BorderStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="BorderWidth">
@@ -421,6 +428,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebControl.BorderWidth" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CssClass">
@@ -474,6 +482,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebControl.CssClass" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultButton">
@@ -524,6 +533,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Panel.DefaultButton" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -574,6 +584,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Panel.Direction" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -624,6 +635,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebControl.Enabled" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -678,6 +690,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set the property.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebControl.EnableTheming" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -728,6 +741,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebControl.Font" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -778,6 +792,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebControl.ForeColor" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetAvailableWebPartDescriptions">
@@ -841,6 +856,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogPart.GetAvailableWebPartDescriptions" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetWebPart">
@@ -908,6 +924,7 @@
           <paramref name="description" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="description" /> is not an available <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDescription" /> value.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GroupingText">
@@ -958,6 +975,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Panel.GroupingText" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -1008,6 +1026,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebControl.Height" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -1058,6 +1077,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Panel.HorizontalAlign" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -1183,6 +1203,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Panel.ScrollBars" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SkinID">
@@ -1240,6 +1261,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set the property.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebControl.SkinID" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="TabIndex">
@@ -1290,6 +1312,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebControl.TabIndex" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -1330,6 +1353,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ToolTip">
@@ -1380,6 +1404,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebControl.ToolTip" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -1430,6 +1455,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Control.Visible" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1480,6 +1506,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebControl.Width" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -1530,6 +1557,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Panel.Wrap" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

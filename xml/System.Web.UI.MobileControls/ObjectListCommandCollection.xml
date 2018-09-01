@@ -1,4 +1,4 @@
-﻿<Type Name="ObjectListCommandCollection" FullName="System.Web.UI.MobileControls.ObjectListCommandCollection">
+<Type Name="ObjectListCommandCollection" FullName="System.Web.UI.MobileControls.ObjectListCommandCollection">
   <TypeSignature Language="C#" Value="public class ObjectListCommandCollection : System.Web.UI.MobileControls.ArrayListCollectionBase, System.Web.UI.IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectListCommandCollection extends System.Web.UI.MobileControls.ArrayListCollectionBase implements class System.Web.UI.IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListCommandCollection" />
@@ -43,6 +43,7 @@
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -74,6 +75,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.Remove(System.String)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.RemoveAt(System.Int32)" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -114,6 +116,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.Remove(System.String)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.RemoveAt(System.Int32)" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -149,6 +152,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -188,6 +192,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.IndexOf(System.Web.UI.MobileControls.ObjectListField)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListItemCollection.IndexOf(System.Web.UI.MobileControls.ObjectListItem)" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -239,6 +244,7 @@
         <value>The <see cref="T:System.Web.UI.MobileControls.ObjectListCommand" /> item at the specified index.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -295,6 +301,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Remove(System.Web.UI.MobileControls.ObjectListField)" />
         <altmember cref="M:System.Web.UI.MobileControls.StyleSheet.Remove(System.String)" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -322,6 +329,7 @@
         <summary>Removes the command at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -409,6 +417,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -440,6 +449,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -470,6 +480,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">

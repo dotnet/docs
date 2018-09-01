@@ -1,4 +1,4 @@
-﻿<Type Name="InternalApplicationIdentityHelper" FullName="System.Deployment.Internal.InternalApplicationIdentityHelper">
+<Type Name="InternalApplicationIdentityHelper" FullName="System.Deployment.Internal.InternalApplicationIdentityHelper">
   <TypeSignature Language="C#" Value="public static class InternalApplicationIdentityHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit InternalApplicationIdentityHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Deployment.Internal.InternalApplicationIdentityHelper" />
@@ -23,6 +23,7 @@
   <Docs>
     <summary>Provides access to internal properties of an <see cref="T:System.ApplicationIdentity" /> object.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/e72f2550-bdec-4a20-a2f4-2e14847266c1">IDefinitionAppId Interface</related>
   </Docs>
   <Members>
     <Member MemberName="GetInternalAppId">
@@ -56,6 +57,7 @@
         <returns>The unique identifier held by the <see cref="T:System.ApplicationIdentity" /> object.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/e72f2550-bdec-4a20-a2f4-2e14847266c1">IDefinitionAppId Interface</related>
       </Docs>
     </Member>
   </Members>

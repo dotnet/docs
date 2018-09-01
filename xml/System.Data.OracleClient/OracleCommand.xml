@@ -1,4 +1,4 @@
-﻿<Type Name="OracleCommand" FullName="System.Data.OracleClient.OracleCommand">
+<Type Name="OracleCommand" FullName="System.Data.OracleClient.OracleCommand">
   <TypeSignature Language="C#" Value="public sealed class OracleCommand : System.Data.Common.DbCommand, ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OracleCommand extends System.Data.Common.DbCommand implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleCommand" />
@@ -75,6 +75,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -84,6 +85,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleCommand" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -124,6 +126,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -147,6 +150,7 @@
         <param name="commandText">The text of the query.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleCommand" /> class with the text of the query.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -182,6 +186,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -232,6 +237,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -270,6 +276,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -297,6 +304,7 @@
         <summary>Creates a copy of this <see cref="T:System.Data.OracleClient.OracleCommand" /> object.</summary>
         <returns>A new <see cref="T:System.Data.OracleClient.OracleCommand" /> object in which all property values are the same as the original.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="CommandText">
@@ -363,6 +371,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="CommandTimeout">
@@ -409,6 +418,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="CommandType">
@@ -469,6 +479,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value was not a valid <see cref="T:System.Data.CommandType" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -524,6 +535,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Data.OracleClient.OracleCommand.Connection" /> property was changed while a transaction was in progress.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDbParameter">
@@ -578,6 +590,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="DbConnection">
@@ -685,6 +698,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
         <value>
           <see langword="true" />, if the command object should be visible in a control; otherwise <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="ExecuteDbDataReader">
@@ -759,6 +773,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
  -or-  
   
  The connection is not open.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="ExecuteOracleNonQuery">
@@ -802,6 +817,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
  -or-  
   
  The connection is not open.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="ExecuteOracleScalar">
@@ -840,6 +856,7 @@ count = command.ExecuteOracleScalar();
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ExecuteReader">
@@ -849,6 +866,7 @@ count = command.ExecuteOracleScalar();
       </AssemblyInfo>
       <Docs>
         <summary>Sends the <see cref="P:System.Data.OracleClient.OracleCommand.CommandText" /> to the <see cref="P:System.Data.OracleClient.OracleCommand.Connection" /> and builds an <see cref="T:System.Data.OracleClient.OracleDataReader" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ExecuteReader">
@@ -890,6 +908,7 @@ count = command.ExecuteOracleScalar();
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="ExecuteReader">
@@ -938,6 +957,7 @@ count = command.ExecuteOracleScalar();
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="ExecuteScalar">
@@ -984,6 +1004,7 @@ Int32 count = (int32) ExecuteScalar();
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -1038,6 +1059,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="Prepare">
@@ -1073,6 +1095,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
  -or-  
   
  The <see cref="P:System.Data.OracleClient.OracleCommand.Connection" /> is not <see cref="M:System.Data.OracleClient.OracleConnection.Open" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="ResetCommandTimeout">
@@ -1102,6 +1125,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbCommand.CreateParameter">
@@ -1218,6 +1242,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="UpdatedRowSource">
@@ -1256,6 +1281,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value entered was not one of the <see cref="T:System.Data.UpdateRowSource" /> values.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
   </Members>

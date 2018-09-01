@@ -1,4 +1,4 @@
-﻿<Type Name="IdentityVerifier" FullName="System.ServiceModel.Security.IdentityVerifier">
+<Type Name="IdentityVerifier" FullName="System.ServiceModel.Security.IdentityVerifier">
   <TypeSignature Language="C#" Value="public abstract class IdentityVerifier" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit IdentityVerifier extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.IdentityVerifier" />
@@ -26,6 +26,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/f2d34e43-fa8b-46d2-91cf-d2960e13e16b">How To: Create a Custom Client Identity Verifier</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/a4c8f52c-5b30-45c4-a545-63244aba82be">Specifying the Identity of a Service for Authentication</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

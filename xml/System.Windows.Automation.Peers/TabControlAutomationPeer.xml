@@ -1,4 +1,4 @@
-﻿<Type Name="TabControlAutomationPeer" FullName="System.Windows.Automation.Peers.TabControlAutomationPeer">
+<Type Name="TabControlAutomationPeer" FullName="System.Windows.Automation.Peers.TabControlAutomationPeer">
   <TypeSignature Language="C#" Value="public class TabControlAutomationPeer : System.Windows.Automation.Peers.SelectorAutomationPeer, System.Windows.Automation.Provider.ISelectionProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TabControlAutomationPeer extends System.Windows.Automation.Peers.SelectorAutomationPeer implements class System.Windows.Automation.Provider.ISelectionProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.TabControlAutomationPeer" />
@@ -21,6 +21,7 @@
   <Docs>
     <summary>Exposes <see cref="T:System.Windows.Controls.TabControl" /> types to UI Automation.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,6 +49,7 @@
         <param name="owner">The <see cref="T:System.Windows.Controls.TabControl" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TabControlAutomationPeer" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.TabControlAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateItemAutomationPeer">
@@ -74,6 +76,7 @@
         <summary>Creates a new <see cref="T:System.Windows.Automation.Peers.TabItemAutomationPeer" />.</summary>
         <returns>The created <see cref="T:System.Windows.Automation.Peers.TabItemAutomationPeer" /> object.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">
@@ -97,6 +100,7 @@
         <summary>Gets the collection of child elements for the <see cref="T:System.Windows.Controls.TabItem" /> that is associated with the new <see cref="T:System.Windows.Automation.Peers.TabItemAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.</summary>
         <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Tab" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">
@@ -120,6 +124,7 @@
         <summary>Gets the name of the <see cref="T:System.Windows.Controls.TabItem" /> that is associated with the new <see cref="T:System.Windows.Automation.Peers.TabItemAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
         <returns>A string that contains "TabControl".</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetClickablePointCore">
@@ -143,6 +148,7 @@
         <summary>This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClickablePoint" />.</summary>
         <returns>A <see cref="T:System.Windows.Point" /> containing <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NaN" />; the only clickable points in a <see cref="T:System.Windows.Controls.TabControl" /> are the child <see cref="T:System.Windows.Controls.TabItem" /> elements.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired">

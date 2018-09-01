@@ -1,4 +1,4 @@
-﻿<Type Name="SplashScreen" FullName="System.Windows.SplashScreen">
+<Type Name="SplashScreen" FullName="System.Windows.SplashScreen">
   <TypeSignature Language="C#" Value="public class SplashScreen" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SplashScreen extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.SplashScreen" />
@@ -266,6 +266,7 @@
           <see langword="true" /> if the splash screen window should use the WS_EX_TOPMOST style; otherwise <see langword="false" />.</param>
         <summary>Displays the splash screen.</summary>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=145016">CreateWindowEx</related>
       </Docs>
     </Member>
   </Members>

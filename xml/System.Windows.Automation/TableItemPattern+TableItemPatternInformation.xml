@@ -1,4 +1,4 @@
-﻿<Type Name="TableItemPattern+TableItemPatternInformation" FullName="System.Windows.Automation.TableItemPattern+TableItemPatternInformation">
+<Type Name="TableItemPattern+TableItemPatternInformation" FullName="System.Windows.Automation.TableItemPattern+TableItemPatternInformation">
   <TypeSignature Language="C#" Value="public struct TableItemPattern.TableItemPatternInformation" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit TableItemPattern/TableItemPatternInformation extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TableItemPattern.TableItemPatternInformation" />
@@ -17,6 +17,10 @@
   <Docs>
     <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.TableItemPattern" /> object using its <see cref="P:System.Windows.Automation.TableItemPattern.Current" /> or <see cref="P:System.Windows.Automation.TableItemPattern.Cached" /> accessors.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md">UI Automation Control Patterns for Clients</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ac3c5eaa-49c7-4653-b83e-532e2a2604a2">Expose the Content of a Table Using UI Automation</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
   </Docs>
   <Members>
     <Member MemberName="Column">
@@ -51,6 +55,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ac3c5eaa-49c7-4653-b83e-532e2a2604a2">Expose the Content of a Table Using UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="ColumnSpan">
@@ -85,6 +90,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ac3c5eaa-49c7-4653-b83e-532e2a2604a2">Expose the Content of a Table Using UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="ContainingGrid">
@@ -119,6 +125,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ac3c5eaa-49c7-4653-b83e-532e2a2604a2">Expose the Content of a Table Using UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="GetColumnHeaderItems">
@@ -154,6 +161,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ac3c5eaa-49c7-4653-b83e-532e2a2604a2">Expose the Content of a Table Using UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="GetRowHeaderItems">
@@ -189,6 +197,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ac3c5eaa-49c7-4653-b83e-532e2a2604a2">Expose the Content of a Table Using UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -223,6 +232,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ac3c5eaa-49c7-4653-b83e-532e2a2604a2">Expose the Content of a Table Using UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="RowSpan">
@@ -257,6 +267,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ac3c5eaa-49c7-4653-b83e-532e2a2604a2">Expose the Content of a Table Using UI Automation</related>
       </Docs>
     </Member>
   </Members>

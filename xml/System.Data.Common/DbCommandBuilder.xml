@@ -1,4 +1,4 @@
-﻿<Type Name="DbCommandBuilder" FullName="System.Data.Common.DbCommandBuilder">
+<Type Name="DbCommandBuilder" FullName="System.Data.Common.DbCommandBuilder">
   <TypeSignature Language="C#" Value="public abstract class DbCommandBuilder : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbCommandBuilder extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbCommandBuilder" />
@@ -46,6 +46,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,6 +76,8 @@
       <Docs>
         <summary>Initializes a new instance of a class that inherits from the <see cref="T:System.Data.Common.DbCommandBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ApplyParameterInfo">
@@ -122,6 +126,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CatalogLocation">
@@ -159,6 +165,8 @@
         <summary>Sets or gets the <see cref="T:System.Data.Common.CatalogLocation" /> for an instance of the <see cref="T:System.Data.Common.DbCommandBuilder" /> class.</summary>
         <value>A <see cref="T:System.Data.Common.CatalogLocation" /> object.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CatalogSeparator">
@@ -196,6 +204,8 @@
         <summary>Sets or gets a string used as the catalog separator for an instance of the <see cref="T:System.Data.Common.DbCommandBuilder" /> class.</summary>
         <value>A string indicating the catalog separator for use with an instance of the <see cref="T:System.Data.Common.DbCommandBuilder" /> class.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ConflictOption">
@@ -233,6 +243,8 @@
         <summary>Specifies which <see cref="T:System.Data.ConflictOption" /> is to be used by the <see cref="T:System.Data.Common.DbCommandBuilder" />.</summary>
         <value>Returns one of the <see cref="T:System.Data.ConflictOption" /> values describing the behavior of this <see cref="T:System.Data.Common.DbCommandBuilder" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataAdapter">
@@ -285,6 +297,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -334,8 +348,10 @@
           <para>
             <see cref="Overload:System.Data.Common.DbCommandBuilder.Dispose" /> can be called multiple times by other objects. When overriding <see cref="M:System.Data.Common.DbCommandBuilder.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see cref="Overload:System.Data.Common.DbCommandBuilder.Dispose" />. For more information about how to implement <see cref="M:System.Data.Common.DbCommandBuilder.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see langword="Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see langword="Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetDeleteCommand">
@@ -360,6 +376,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetDeleteCommand">
@@ -404,6 +422,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDeleteCommand">
@@ -459,6 +479,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetInsertCommand">
@@ -483,6 +505,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetInsertCommand">
@@ -527,6 +551,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetInsertCommand">
@@ -582,6 +608,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetParameterName">
@@ -592,6 +620,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Returns the name of the specified parameter.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetParameterName">
@@ -628,6 +657,8 @@
         <summary>Returns the name of the specified parameter in the format of @p#. Use when building a custom command builder.</summary>
         <returns>The name of the parameter with the specified number appended as part of the parameter name.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetParameterName">
@@ -664,6 +695,8 @@
         <summary>Returns the full parameter name, given the partial parameter name.</summary>
         <returns>The full parameter name corresponding to the partial parameter name requested.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetParameterPlaceholder">
@@ -707,6 +740,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSchemaTable">
@@ -750,6 +785,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetUpdateCommand">
@@ -774,6 +811,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetUpdateCommand">
@@ -818,6 +857,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetUpdateCommand">
@@ -873,6 +914,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="InitializeCommand">
@@ -916,6 +959,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="QuoteIdentifier">
@@ -952,6 +997,8 @@
         <summary>Given an unquoted identifier in the correct catalog case, returns the correct quoted form of that identifier, including properly escaping any embedded quotes in the identifier.</summary>
         <returns>The quoted version of the identifier. Embedded quotes within the identifier are properly escaped.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="QuotePrefix">
@@ -1000,6 +1047,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This property cannot be changed after an insert, update, or delete command has been generated.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="QuoteSuffix">
@@ -1047,6 +1096,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RefreshSchema">
@@ -1092,6 +1143,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RowUpdatingHandler">
@@ -1127,6 +1180,8 @@
         <param name="rowUpdatingEvent">A <see cref="T:System.Data.Common.RowUpdatingEventArgs" /> instance containing information about the event.</param>
         <summary>Adds an event handler for the <see cref="E:System.Data.OleDb.OleDbDataAdapter.RowUpdating" /> event.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SchemaSeparator">
@@ -1171,6 +1226,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SetAllValues">
@@ -1216,6 +1273,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SetRowUpdatingHandler">
@@ -1258,6 +1317,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UnquoteIdentifier">
@@ -1294,6 +1355,8 @@
         <summary>Given a quoted identifier, returns the correct unquoted form of that identifier, including properly un-escaping any embedded quotes in the identifier.</summary>
         <returns>The unquoted identifier, with embedded quotes properly un-escaped.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="ParallelExecutionMode" FullName="System.Linq.ParallelExecutionMode">
+<Type Name="ParallelExecutionMode" FullName="System.Linq.ParallelExecutionMode">
   <TypeSignature Language="C#" Value="public enum ParallelExecutionMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ParallelExecutionMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Linq.ParallelExecutionMode" />
@@ -25,6 +25,9 @@
   <Docs>
     <summary>The query execution mode is a hint that specifies how the system should handle performance trade-offs when parallelizing queries.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/standard/parallel-programming/parallel-linq-plinq.md">Parallel LINQ (PLINQ)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/e52ff26c-c5d3-4fab-9fec-c937fb387963">How to: Specify the Execution Mode in PLINQ</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/53706c7e-397d-467a-98cd-c0d1fd63ba5e">Understanding Speedup in PLINQ</related>
   </Docs>
   <Members>
     <Member MemberName="Default">

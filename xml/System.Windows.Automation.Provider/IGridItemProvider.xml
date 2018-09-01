@@ -1,4 +1,4 @@
-﻿<Type Name="IGridItemProvider" FullName="System.Windows.Automation.Provider.IGridItemProvider">
+<Type Name="IGridItemProvider" FullName="System.Windows.Automation.Provider.IGridItemProvider">
   <TypeSignature Language="C#" Value="public interface IGridItemProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IGridItemProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IGridItemProvider" />
@@ -38,6 +38,11 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Automation.GridItemPattern" />
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/3584c0a1-9cd0-4968-8b63-b06390890ef6">Client-side UI Automation Provider Implementation</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/0d635c35-ffa8-4dc8-bbc9-12fcd5445776">Support Control Patterns in a UI Automation Provider</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/bffbae08-fe2a-42fd-ab84-f37187518916">Implementing the UI Automation GridItem Control Pattern</related>
   </Docs>
   <Members>
     <Member MemberName="Column">
@@ -70,6 +75,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bffbae08-fe2a-42fd-ab84-f37187518916">Implementing the UI Automation GridItem Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="ColumnSpan">
@@ -102,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bffbae08-fe2a-42fd-ab84-f37187518916">Implementing the UI Automation GridItem Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="ContainingGrid">
@@ -134,6 +141,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bffbae08-fe2a-42fd-ab84-f37187518916">Implementing the UI Automation GridItem Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -166,6 +174,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bffbae08-fe2a-42fd-ab84-f37187518916">Implementing the UI Automation GridItem Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="RowSpan">
@@ -198,6 +207,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bffbae08-fe2a-42fd-ab84-f37187518916">Implementing the UI Automation GridItem Control Pattern</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="SEHException" FullName="System.Runtime.InteropServices.SEHException">
+<Type Name="SEHException" FullName="System.Runtime.InteropServices.SEHException">
   <TypeSignature Language="C#" Value="public class SEHException : System.Runtime.InteropServices.ExternalException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SEHException extends System.Runtime.InteropServices.ExternalException" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.SEHException" />
@@ -90,6 +90,8 @@ catch(…)
  ]]></format>
     </remarks>
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/610b364b-2761-429d-9c4a-afbc3e66f1b9">How to: Map HRESULTs and Exceptions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -306,6 +308,7 @@ catch(…)
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="CanResume">

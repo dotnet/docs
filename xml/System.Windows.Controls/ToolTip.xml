@@ -1,4 +1,4 @@
-﻿<Type Name="ToolTip" FullName="System.Windows.Controls.ToolTip">
+<Type Name="ToolTip" FullName="System.Windows.Controls.ToolTip">
   <TypeSignature Language="C#" Value="public class ToolTip : System.Windows.Controls.ContentControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ToolTip extends System.Windows.Controls.ContentControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ToolTip" />
@@ -69,6 +69,7 @@
     <altmember cref="T:System.Windows.Controls.ToolTipEventArgs" />
     <altmember cref="T:System.Windows.Controls.ToolTipEventHandler" />
     <altmember cref="T:System.Windows.Controls.ToolTipService" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160053">WPF Controls Gallery Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

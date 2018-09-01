@@ -1,4 +1,4 @@
-﻿<Type Name="ITransformProvider" FullName="System.Windows.Automation.Provider.ITransformProvider">
+<Type Name="ITransformProvider" FullName="System.Windows.Automation.Provider.ITransformProvider">
   <TypeSignature Language="C#" Value="public interface ITransformProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITransformProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ITransformProvider" />
@@ -38,6 +38,11 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Automation.TransformPattern" />
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/3584c0a1-9cd0-4968-8b63-b06390890ef6">Client-side UI Automation Provider Implementation</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/0d635c35-ffa8-4dc8-bbc9-12fcd5445776">Support Control Patterns in a UI Automation Provider</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/5f49d843-5845-4800-9d9c-56ce0d146844">Implementing the UI Automation Transform Control Pattern</related>
   </Docs>
   <Members>
     <Member MemberName="CanMove">
@@ -71,6 +76,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/5f49d843-5845-4800-9d9c-56ce0d146844">Implementing the UI Automation Transform Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="CanResize">
@@ -104,6 +110,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/5f49d843-5845-4800-9d9c-56ce0d146844">Implementing the UI Automation Transform Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="CanRotate">
@@ -137,6 +144,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/5f49d843-5845-4800-9d9c-56ce0d146844">Implementing the UI Automation Transform Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="Move">
@@ -180,6 +188,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">If the <see cref="P:System.Windows.Automation.Provider.ITransformProvider.CanMove" /> property is false.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/5f49d843-5845-4800-9d9c-56ce0d146844">Implementing the UI Automation Transform Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="Resize">
@@ -225,6 +234,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">If the <see cref="P:System.Windows.Automation.Provider.ITransformProvider.CanResize" /> property is false.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/5f49d843-5845-4800-9d9c-56ce0d146844">Implementing the UI Automation Transform Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="Rotate">
@@ -266,6 +276,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">If the <see cref="P:System.Windows.Automation.Provider.ITransformProvider.CanRotate" /> property is false.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/5f49d843-5845-4800-9d9c-56ce0d146844">Implementing the UI Automation Transform Control Pattern</related>
       </Docs>
     </Member>
   </Members>

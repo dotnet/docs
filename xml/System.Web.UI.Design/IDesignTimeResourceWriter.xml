@@ -1,4 +1,4 @@
-﻿<Type Name="IDesignTimeResourceWriter" FullName="System.Web.UI.Design.IDesignTimeResourceWriter">
+<Type Name="IDesignTimeResourceWriter" FullName="System.Web.UI.Design.IDesignTimeResourceWriter">
   <TypeSignature Language="C#" Value="public interface IDesignTimeResourceWriter : IDisposable, System.Resources.IResourceWriter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDesignTimeResourceWriter implements class System.IDisposable, class System.Resources.IResourceWriter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDesignTimeResourceWriter" />
@@ -21,6 +21,8 @@
   <Docs>
     <summary>Used by the <see cref="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" /> class to localize data at design time.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/fb71af46-bf58-47bc-8e22-6f02c9fe903e">Localizing ASP.NET Web Pages Using Resources</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
   </Docs>
   <Members>
     <Member MemberName="CreateResourceKey">
@@ -49,6 +51,8 @@
         <summary>Creates a key, using the provided string, to use to retrieve data from the given resource.</summary>
         <returns>The key used to write or retrieve <paramref name="obj" /> from <paramref name="resourceName" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/fb71af46-bf58-47bc-8e22-6f02c9fe903e">Localizing ASP.NET Web Pages Using Resources</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
   </Members>

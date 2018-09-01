@@ -1,4 +1,4 @@
-﻿<Type Name="PropertyItem" FullName="System.Drawing.Imaging.PropertyItem">
+<Type Name="PropertyItem" FullName="System.Drawing.Imaging.PropertyItem">
   <TypeSignature Language="C#" Value="public sealed class PropertyItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PropertyItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.PropertyItem" />
@@ -40,6 +40,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/72ec0b31-0be7-444a-9575-1dbcb864e0be">How To: Read Image Metadata</related>
   </Docs>
   <Members>
     <Member MemberName="Id">

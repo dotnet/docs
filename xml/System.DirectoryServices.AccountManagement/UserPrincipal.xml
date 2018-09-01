@@ -1,4 +1,4 @@
-﻿<Type Name="UserPrincipal" FullName="System.DirectoryServices.AccountManagement.UserPrincipal">
+<Type Name="UserPrincipal" FullName="System.DirectoryServices.AccountManagement.UserPrincipal">
   <TypeSignature Language="C#" Value="public class UserPrincipal : System.DirectoryServices.AccountManagement.AuthenticablePrincipal" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UserPrincipal extends System.DirectoryServices.AccountManagement.AuthenticablePrincipal" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.UserPrincipal" />
@@ -27,6 +27,7 @@
     <summary>Encapsulates principals that are user accounts.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="N:System.DirectoryServices.AccountManagement" />
+    <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -38,6 +39,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> class.</summary>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -97,6 +99,7 @@ ctx.Dispose();
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -134,6 +137,7 @@ ctx.Dispose();
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AdvancedSearchFilter">
@@ -191,6 +195,7 @@ ctx.Dispose();
         <exception cref="T:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException">The user principal object for the current user could not be found. The principal object may contain an access control list to prevent access by unauthorized users.</exception>
         <exception cref="T:System.DirectoryServices.AccountManagement.MultipleMatchesException">Multiple user principal objects matching the current user were found.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EmailAddress">
@@ -216,6 +221,7 @@ ctx.Dispose();
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EmployeeId">
@@ -241,6 +247,7 @@ ctx.Dispose();
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindByBadPasswordAttempt">
@@ -601,6 +608,7 @@ ctx.Dispose();
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="MiddleName">
@@ -626,6 +634,7 @@ ctx.Dispose();
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Surname">
@@ -651,6 +660,7 @@ ctx.Dispose();
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="VoiceTelephoneNumber">
@@ -676,6 +686,7 @@ ctx.Dispose();
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
   </Members>

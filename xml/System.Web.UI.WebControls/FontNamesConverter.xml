@@ -1,4 +1,4 @@
-﻿<Type Name="FontNamesConverter" FullName="System.Web.UI.WebControls.FontNamesConverter">
+<Type Name="FontNamesConverter" FullName="System.Web.UI.WebControls.FontNamesConverter">
   <TypeSignature Language="C#" Value="public class FontNamesConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FontNamesConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FontNamesConverter" />
@@ -38,6 +38,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.ComponentModel.TypeConverter" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/bf3158fb-2fde-494f-bb77-a4645733e1ef">Type Converter Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,6 +71,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/bf3158fb-2fde-494f-bb77-a4645733e1ef">Type Converter Sample</related>
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -123,6 +127,8 @@
         <altmember cref="T:System.Type" />
         <altmember cref="M:System.Web.UI.WebControls.FontNamesConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
         <altmember cref="M:System.Web.UI.WebControls.FontNamesConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/bf3158fb-2fde-494f-bb77-a4645733e1ef">Type Converter Sample</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -179,6 +185,8 @@
         <altmember cref="T:System.Object" />
         <altmember cref="M:System.Web.UI.WebControls.FontNamesConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
         <altmember cref="M:System.Web.UI.WebControls.FontNamesConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/bf3158fb-2fde-494f-bb77-a4645733e1ef">Type Converter Sample</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -240,6 +248,8 @@
         <altmember cref="T:System.Object" />
         <altmember cref="T:System.Type" />
         <altmember cref="M:System.Web.UI.WebControls.FontNamesConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/bf3158fb-2fde-494f-bb77-a4645733e1ef">Type Converter Sample</related>
       </Docs>
     </Member>
   </Members>

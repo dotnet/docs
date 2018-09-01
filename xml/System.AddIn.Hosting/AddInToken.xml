@@ -1,4 +1,4 @@
-﻿<Type Name="AddInToken" FullName="System.AddIn.Hosting.AddInToken">
+<Type Name="AddInToken" FullName="System.AddIn.Hosting.AddInToken">
   <TypeSignature Language="C#" Value="public sealed class AddInToken : System.Collections.Generic.IEnumerable&lt;System.AddIn.Hosting.QualificationDataItem&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit AddInToken extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;valuetype System.AddIn.Hosting.QualificationDataItem&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.AddInToken" />
@@ -60,6 +60,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/8dd45b02-7218-40f9-857d-40d7b98b850b">Add-Ins and Extensibility</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Activate&lt;T&gt;">
@@ -114,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8dd45b02-7218-40f9-857d-40d7b98b850b">Add-Ins and Extensibility</related>
       </Docs>
     </Member>
     <Member MemberName="Activate&lt;T&gt;">
@@ -161,6 +163,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8dd45b02-7218-40f9-857d-40d7b98b850b">Add-Ins and Extensibility</related>
       </Docs>
     </Member>
     <Member MemberName="Activate&lt;T&gt;">

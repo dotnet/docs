@@ -1,4 +1,4 @@
-﻿<Type Name="TableHeaderRow" FullName="System.Web.UI.WebControls.TableHeaderRow">
+<Type Name="TableHeaderRow" FullName="System.Web.UI.WebControls.TableHeaderRow">
   <TypeSignature Language="C#" Value="public class TableHeaderRow : System.Web.UI.WebControls.TableRow" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableHeaderRow extends System.Web.UI.WebControls.TableRow" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableHeaderRow" />
@@ -47,6 +47,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.TableFooterRow" />
     <altmember cref="T:System.Web.UI.WebControls.Table" />
+    <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +71,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TableHeaderRow" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
   </Members>

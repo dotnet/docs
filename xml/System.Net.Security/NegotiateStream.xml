@@ -1,4 +1,4 @@
-﻿<Type Name="NegotiateStream" FullName="System.Net.Security.NegotiateStream">
+<Type Name="NegotiateStream" FullName="System.Net.Security.NegotiateStream">
   <TypeSignature Language="C#" Value="public class NegotiateStream : System.Net.Security.AuthenticatedStream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NegotiateStream extends System.Net.Security.AuthenticatedStream" />
   <TypeSignature Language="DocId" Value="T:System.Net.Security.NegotiateStream" />
@@ -64,6 +64,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/8bf0b428-5a21-4299-8d6e-bf8251fd978a">Changes to NTLM authentication for HTTPWebRequest in Version 3.5 SP1</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -399,6 +400,7 @@
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="AuthenticateAsClient">
@@ -546,6 +548,7 @@
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AuthenticateAsClientAsync">
@@ -739,6 +742,7 @@
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="AuthenticateAsClientAsync">
@@ -879,6 +883,7 @@
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AuthenticateAsServer">
@@ -1014,6 +1019,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The <paramref name="policy" /> parameter was set to <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" /> on a platform that does not support extended protection.</exception>
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="AuthenticateAsServer">
@@ -1161,6 +1167,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The <paramref name="policy" /> parameter was set to <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" /> on a platform that does not support extended protection.</exception>
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AuthenticateAsServerAsync">
@@ -1280,6 +1287,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The <paramref name="policy" /> parameter was set to <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" /> on a platform that does not support extended protection.</exception>
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="AuthenticateAsServerAsync">
@@ -1416,6 +1424,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The <paramref name="policy" /> parameter was set to <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" /> on a platform that does not support extended protection.</exception>
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="BeginAuthenticateAsClient">
@@ -1658,6 +1667,7 @@
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="BeginAuthenticateAsClient">
@@ -1819,6 +1829,7 @@
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="BeginAuthenticateAsServer">
@@ -1963,6 +1974,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The <paramref name="policy" /> parameter was set to <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" /> on a platform that does not support extended protection.</exception>
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="BeginAuthenticateAsServer">
@@ -2122,6 +2134,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The <paramref name="policy" /> parameter was set to <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" /> on a platform that does not support extended protection.</exception>
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="BeginRead">
@@ -2564,7 +2577,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
       </Docs>
     </Member>

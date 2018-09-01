@@ -1,4 +1,4 @@
-﻿<Type Name="SplineColorKeyFrame" FullName="System.Windows.Media.Animation.SplineColorKeyFrame">
+<Type Name="SplineColorKeyFrame" FullName="System.Windows.Media.Animation.SplineColorKeyFrame">
   <TypeSignature Language="C#" Value="public class SplineColorKeyFrame : System.Windows.Media.Animation.ColorKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SplineColorKeyFrame extends System.Windows.Media.Animation.ColorKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SplineColorKeyFrame" />
@@ -222,6 +222,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160011">Key Spline Animation Sample</related>
       </Docs>
     </Member>
     <Member MemberName="KeySplineProperty">

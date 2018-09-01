@@ -1,4 +1,4 @@
-﻿<Type Name="AuditLogLocation" FullName="System.ServiceModel.AuditLogLocation">
+<Type Name="AuditLogLocation" FullName="System.ServiceModel.AuditLogLocation">
   <TypeSignature Language="C#" Value="public enum AuditLogLocation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuditLogLocation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.AuditLogLocation" />
@@ -46,6 +46,8 @@
     <altmember cref="P:System.ServiceModel.Description.ServiceSecurityAuditBehavior.MessageAuthenticationAuditLevel" />
     <altmember cref="P:System.ServiceModel.Description.ServiceSecurityAuditBehavior.ServiceAuthorizationAuditLevel" />
     <altmember cref="T:System.ServiceModel.AuditLevel" />
+    <related type="Article" href="http://msdn.microsoft.com/library/5633f61c-a3c9-40dd-8070-1c373b66a716">Auditing Security Events</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ba517369-a034-4f8e-a2c4-66517716062b">serviceSecurityAudit element</related>
   </Docs>
   <Members>
     <Member MemberName="Application">

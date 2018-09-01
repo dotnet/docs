@@ -1,4 +1,4 @@
-﻿<Type Name="LineSegment" FullName="System.Windows.Media.LineSegment">
+<Type Name="LineSegment" FullName="System.Windows.Media.LineSegment">
   <TypeSignature Language="C#" Value="public sealed class LineSegment : System.Windows.Media.PathSegment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LineSegment extends System.Windows.Media.PathSegment" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.LineSegment" />
@@ -29,6 +29,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Media.PathFigure" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159989">Geometries Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

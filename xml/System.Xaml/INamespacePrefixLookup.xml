@@ -1,4 +1,4 @@
-﻿<Type Name="INamespacePrefixLookup" FullName="System.Xaml.INamespacePrefixLookup">
+<Type Name="INamespacePrefixLookup" FullName="System.Xaml.INamespacePrefixLookup">
   <TypeSignature Language="C#" Value="public interface INamespacePrefixLookup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INamespacePrefixLookup" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.INamespacePrefixLookup" />
@@ -24,6 +24,7 @@
     </remarks>
     <altmember cref="T:System.Xaml.NamespaceDeclaration" />
     <altmember cref="T:System.Windows.Markup.XmlnsPrefixAttribute" />
+    <related type="Article" href="http://msdn.microsoft.com/library/b4dad00f-03da-4579-a4e9-d8d72d2ccbce">Service Contexts Available to Type Converters and Markup Extensions</related>
   </Docs>
   <Members>
     <Member MemberName="LookupPrefix">

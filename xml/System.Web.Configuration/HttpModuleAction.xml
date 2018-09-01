@@ -1,4 +1,4 @@
-﻿<Type Name="HttpModuleAction" FullName="System.Web.Configuration.HttpModuleAction">
+<Type Name="HttpModuleAction" FullName="System.Web.Configuration.HttpModuleAction">
   <TypeSignature Language="C#" Value="public sealed class HttpModuleAction : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpModuleAction extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpModuleAction" />
@@ -89,6 +89,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202">Global Assembly Cache</related>
       </Docs>
     </Member>
     <Member MemberName="ElementProperty">

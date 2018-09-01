@@ -1,4 +1,4 @@
-﻿<Type Name="ColorMatrix" FullName="System.Drawing.Imaging.ColorMatrix">
+<Type Name="ColorMatrix" FullName="System.Drawing.Imaging.ColorMatrix">
   <TypeSignature Language="C#" Value="public sealed class ColorMatrix" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ColorMatrix extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ColorMatrix" />
@@ -65,6 +65,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/f28c54fd-9c80-4f6f-b242-55f7ffcda84b">Recoloring Images</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

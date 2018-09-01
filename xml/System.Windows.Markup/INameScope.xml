@@ -1,4 +1,4 @@
-﻿<Type Name="INameScope" FullName="System.Windows.Markup.INameScope">
+<Type Name="INameScope" FullName="System.Windows.Markup.INameScope">
   <TypeSignature Language="C#" Value="public interface INameScope" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INameScope" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.INameScope" />
@@ -38,6 +38,7 @@
     </remarks>
     <altmember cref="T:System.Windows.NameScope" />
     <altmember cref="T:System.Windows.Markup.INameScopeDictionary" />
+    <related type="Article" href="http://msdn.microsoft.com/library/b7e61222-e8cf-48d2-acd0-6df3b7685d48">x:Name Attribute</related>
   </Docs>
   <Members>
     <Member MemberName="FindName">
@@ -75,6 +76,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.NameScope" />
+        <related type="Article" href="http://msdn.microsoft.com/library/b7e61222-e8cf-48d2-acd0-6df3b7685d48">x:Name Attribute</related>
       </Docs>
     </Member>
     <Member MemberName="RegisterName">

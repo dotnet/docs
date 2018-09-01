@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStrip" FullName="System.Windows.Forms.ToolStrip">
+<Type Name="ToolStrip" FullName="System.Windows.Forms.ToolStrip">
   <TypeSignature Language="C#" Value="public class ToolStrip : System.Windows.Forms.ScrollableControl, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStrip extends System.Windows.Forms.ScrollableControl implements class System.ComponentModel.IComponent, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStrip" />
@@ -99,6 +99,7 @@
     <altmember cref="T:System.Windows.Forms.ToolStripItem" />
     <altmember cref="T:System.Windows.Forms.ToolStripDropDown" />
     <altmember cref="T:System.Windows.Forms.ToolStripContainer" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e5ef455a-e049-429c-8005-30c93132fb79">ToolStrip Control (Windows Forms)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -258,6 +259,7 @@
         <altmember cref="E:System.Windows.Forms.Control.DragEnter" />
         <altmember cref="E:System.Windows.Forms.Control.DragLeave" />
         <altmember cref="E:System.Windows.Forms.Control.DragDrop" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8480b69a-379f-4dc2-8dcf-365ed93692b2">How to: Enable Reordering of ToolStrip Items at Run Time in Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="AllowMerge">
@@ -800,6 +802,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/fa10e0ad-4cbf-4c0d-9082-359c2f855d4e">How to: Manage ToolStrip Overflow in Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -1492,7 +1495,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
       </Docs>
     </Member>
@@ -1543,6 +1546,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b595429-ba9f-46af-9c55-3d5cc53f7fff">How to: Define Z-Ordering of Docked ToolStrip Controls</related>
       </Docs>
     </Member>
     <Member MemberName="EndDrag">
@@ -1797,6 +1801,7 @@
         <summary>Returns the item located at the specified point in the client area of the <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
         <returns>The <see cref="T:System.Windows.Forms.ToolStripItem" /> at the specified location, or <see langword="null" /> if the <see cref="T:System.Windows.Forms.ToolStripItem" /> is not found.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc06e61f-43b6-4408-a676-2542dcfcd96e">Windows Forms Coordinates</related>
       </Docs>
     </Member>
     <Member MemberName="GetItemAt">
@@ -3600,6 +3605,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ToolStrip.OnRendererChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStrip.OnRendererChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/88a804ba-679f-4ba3-938a-0dc396199c5b">How To: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/525e2347-0804-49aa-b9a3-9b2cabbf1c35">How to: Set the ToolStrip Renderer at Run Time</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/46acef3e-9844-4ae8-9a2e-3006fe99cadf">How to: Set the ToolStrip Renderer for an Application</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c208b2f6-8105-474b-9075-d582e1792870">How to: Create a Professionally Styled ToolStrip Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnRightToLeftChanged">
@@ -3994,6 +4003,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/88a804ba-679f-4ba3-938a-0dc396199c5b">How To: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/525e2347-0804-49aa-b9a3-9b2cabbf1c35">How to: Set the ToolStrip Renderer at Run Time</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/46acef3e-9844-4ae8-9a2e-3006fe99cadf">How to: Set the ToolStrip Renderer for an Application</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c208b2f6-8105-474b-9075-d582e1792870">How to: Create a Professionally Styled ToolStrip Control</related>
       </Docs>
     </Member>
     <Member MemberName="RendererChanged">
@@ -4032,6 +4045,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/88a804ba-679f-4ba3-938a-0dc396199c5b">How To: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/525e2347-0804-49aa-b9a3-9b2cabbf1c35">How to: Set the ToolStrip Renderer at Run Time</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/46acef3e-9844-4ae8-9a2e-3006fe99cadf">How to: Set the ToolStrip Renderer for an Application</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c208b2f6-8105-474b-9075-d582e1792870">How to: Create a Professionally Styled ToolStrip Control</related>
       </Docs>
     </Member>
     <Member MemberName="RenderMode">
@@ -4073,6 +4090,10 @@
         <exception cref="T:System.NotSupportedException">
           <see cref="T:System.Windows.Forms.ToolStripRenderMode" /> is set to <see cref="F:System.Windows.Forms.ToolStripRenderMode.Custom" /> without the <see cref="P:System.Windows.Forms.ToolStrip.Renderer" /> property being assigned to a new instance of <see cref="T:System.Windows.Forms.ToolStripRenderer" />.</exception>
         <altmember cref="P:System.Windows.Forms.ToolStrip.Renderer" />
+        <related type="Article" href="http://msdn.microsoft.com/library/88a804ba-679f-4ba3-938a-0dc396199c5b">How To: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/525e2347-0804-49aa-b9a3-9b2cabbf1c35">How to: Set the ToolStrip Renderer at Run Time</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/46acef3e-9844-4ae8-9a2e-3006fe99cadf">How to: Set the ToolStrip Renderer for an Application</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c208b2f6-8105-474b-9075-d582e1792870">How to: Create a Professionally Styled ToolStrip Control</related>
       </Docs>
     </Member>
     <Member MemberName="ResetMinimumSize">
@@ -4424,6 +4445,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c5d86024-a7c5-44ee-8b3f-2daf53d80d3e">How to: Use ToolTips in ToolStrip Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Stretch">

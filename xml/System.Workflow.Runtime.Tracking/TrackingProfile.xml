@@ -1,4 +1,4 @@
-﻿<Type Name="TrackingProfile" FullName="System.Workflow.Runtime.Tracking.TrackingProfile">
+<Type Name="TrackingProfile" FullName="System.Workflow.Runtime.Tracking.TrackingProfile">
   <TypeSignature Language="C#" Value="public class TrackingProfile" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TrackingProfile extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingProfile" />
@@ -45,13 +45,14 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> using the <xref:System.Workflow.Runtime.Tracking.TrackingProfile.%23ctor%2A> constructor and use the object's properties to help track the execution of a workflow. The example code uses the <xref:System.Workflow.Runtime.Tracking.TrackingProfile.ActivityTrackPoints%2A>, <xref:System.Workflow.Runtime.Tracking.TrackingProfile.Version%2A>, and <xref:System.Workflow.Runtime.Tracking.TrackingProfile.WorkflowTrackPoints%2A> properties.  
   
- This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](http://msdn.microsoft.com/library/a81e48bb-12f4-4e2b-9176-ea4e6b6e3d21).  
+ This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms742042(v=vs.90)).  
   
  [!code-csharp[WF_Samples#291](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#291)]
  [!code-vb[WF_Samples#291](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#291)]  
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms742042(v=vs.90)">Query Using SQLTrackingService</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,13 +81,14 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> using the <xref:System.Workflow.Runtime.Tracking.TrackingProfile.%23ctor%2A> constructor and use the object's properties to help track the execution of a workflow. The example code uses the <xref:System.Workflow.Runtime.Tracking.TrackingProfile.ActivityTrackPoints%2A>, <xref:System.Workflow.Runtime.Tracking.TrackingProfile.Version%2A>, and <xref:System.Workflow.Runtime.Tracking.TrackingProfile.WorkflowTrackPoints%2A> properties.  
   
- This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](http://msdn.microsoft.com/library/a81e48bb-12f4-4e2b-9176-ea4e6b6e3d21).  
+ This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms742042(v=vs.90)).  
   
  [!code-csharp[WF_Samples#291](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#291)]
  [!code-vb[WF_Samples#291](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#291)]  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms742042(v=vs.90)">Query Using SQLTrackingService</related>
       </Docs>
     </Member>
     <Member MemberName="ActivityTrackPoints">
@@ -121,13 +123,14 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> using the <xref:System.Workflow.Runtime.Tracking.TrackingProfile.%23ctor%2A> constructor and use the object's properties to help track the execution of a workflow. The example code uses the <xref:System.Workflow.Runtime.Tracking.TrackingProfile.ActivityTrackPoints%2A>, <xref:System.Workflow.Runtime.Tracking.TrackingProfile.Version%2A>, and <xref:System.Workflow.Runtime.Tracking.TrackingProfile.WorkflowTrackPoints%2A> properties.  
   
- This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](http://msdn.microsoft.com/library/a81e48bb-12f4-4e2b-9176-ea4e6b6e3d21).  
+ This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms742042(v=vs.90)).  
   
  [!code-csharp[WF_Samples#291](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#291)]
  [!code-vb[WF_Samples#291](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#291)]  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms742042(v=vs.90)">Query Using SQLTrackingService</related>
       </Docs>
     </Member>
     <Member MemberName="UserTrackPoints">
@@ -191,13 +194,14 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> using the <xref:System.Workflow.Runtime.Tracking.TrackingProfile.%23ctor%2A> constructor and use the object's properties to help track the execution of a workflow. The example code uses the <xref:System.Workflow.Runtime.Tracking.TrackingProfile.ActivityTrackPoints%2A>, <xref:System.Workflow.Runtime.Tracking.TrackingProfile.Version%2A>, and <xref:System.Workflow.Runtime.Tracking.TrackingProfile.WorkflowTrackPoints%2A> properties.  
   
- This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](http://msdn.microsoft.com/library/a81e48bb-12f4-4e2b-9176-ea4e6b6e3d21).  
+ This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms742042(v=vs.90)).  
   
  [!code-csharp[WF_Samples#291](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#291)]
  [!code-vb[WF_Samples#291](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#291)]  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms742042(v=vs.90)">Query Using SQLTrackingService</related>
       </Docs>
     </Member>
     <Member MemberName="WorkflowTrackPoints">
@@ -232,13 +236,14 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> using the <xref:System.Workflow.Runtime.Tracking.TrackingProfile.%23ctor%2A> constructor and use the object's properties to help track the execution of a workflow. The example code uses the <xref:System.Workflow.Runtime.Tracking.TrackingProfile.ActivityTrackPoints%2A>, <xref:System.Workflow.Runtime.Tracking.TrackingProfile.Version%2A>, and <xref:System.Workflow.Runtime.Tracking.TrackingProfile.WorkflowTrackPoints%2A> properties.  
   
- This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](http://msdn.microsoft.com/library/a81e48bb-12f4-4e2b-9176-ea4e6b6e3d21).  
+ This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms742042(v=vs.90)).  
   
  [!code-csharp[WF_Samples#291](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#291)]
  [!code-vb[WF_Samples#291](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#291)]  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms742042(v=vs.90)">Query Using SQLTrackingService</related>
       </Docs>
     </Member>
   </Members>

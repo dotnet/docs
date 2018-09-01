@@ -1,4 +1,4 @@
-﻿<Type Name="SearchExpression" FullName="System.Web.UI.WebControls.Expressions.SearchExpression">
+<Type Name="SearchExpression" FullName="System.Web.UI.WebControls.Expressions.SearchExpression">
   <TypeSignature Language="C#" Value="public class SearchExpression : System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SearchExpression extends System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.SearchExpression" />
@@ -36,6 +36,7 @@
     </remarks>
     <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.Expressions.SearchExpression.DataFields" /> property is <see langword="null" /> (<see langword="Nothing" /> in Visual Basic)</exception>
     <altmember cref="T:System.Web.UI.WebControls.QueryExtender" />
+    <related type="Article" href="http://msdn.microsoft.com/library/b93e32b9-af41-4539-a009-6cbbe809c702">QueryExtender Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

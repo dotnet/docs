@@ -1,4 +1,4 @@
-﻿<Type Name="MachineKeySection" FullName="System.Web.Configuration.MachineKeySection">
+<Type Name="MachineKeySection" FullName="System.Web.Configuration.MachineKeySection">
   <TypeSignature Language="C#" Value="public sealed class MachineKeySection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MachineKeySection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.MachineKeySection" />
@@ -48,6 +48,7 @@
       <para>If you to specify keys in this configuration section, as is required in Web-farm scenarios, it is recommended that you encrypt this section by using protected configuration.</para>
     </block>
     <altmember cref="T:System.Configuration.ConfigurationSection" />
+    <related type="Article" href="http://msdn.microsoft.com/library/a211c071-cdf5-4869-8b7f-c4bec398c299">Forms Authentication Credentials</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

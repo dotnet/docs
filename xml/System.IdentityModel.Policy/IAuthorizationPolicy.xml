@@ -1,4 +1,4 @@
-﻿<Type Name="IAuthorizationPolicy" FullName="System.IdentityModel.Policy.IAuthorizationPolicy">
+<Type Name="IAuthorizationPolicy" FullName="System.IdentityModel.Policy.IAuthorizationPolicy">
   <TypeSignature Language="C#" Value="public interface IAuthorizationPolicy : System.IdentityModel.Policy.IAuthorizationComponent" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAuthorizationPolicy implements class System.IdentityModel.Policy.IAuthorizationComponent" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Policy.IAuthorizationPolicy" />
@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/1db325ec-85be-47d0-8b6e-3ba2fdf3dda0">Authorization Policy Sample</related>
   </Docs>
   <Members>
     <Member MemberName="Evaluate">

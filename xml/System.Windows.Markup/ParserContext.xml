@@ -1,4 +1,4 @@
-﻿<Type Name="ParserContext" FullName="System.Windows.Markup.ParserContext">
+<Type Name="ParserContext" FullName="System.Windows.Markup.ParserContext">
   <TypeSignature Language="C#" Value="public class ParserContext : System.Windows.Markup.IUriContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ParserContext extends System.Object implements class System.Windows.Markup.IUriContext" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ParserContext" />
@@ -249,6 +249,7 @@
         </remarks>
         <altmember cref="T:System.Windows.Markup.XmlLanguage" />
         <altmember cref="T:System.Windows.Markup.XmlLangPropertyAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7aac0078-a1c5-41f8-b8b0-975510d9dca0">xml:lang Attribute</related>
       </Docs>
     </Member>
     <Member MemberName="XmlnsDictionary">
@@ -315,6 +316,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/5e1814f0-5b30-43d5-8c88-dede335a89d7">xml:space Attribute</related>
       </Docs>
     </Member>
   </Members>

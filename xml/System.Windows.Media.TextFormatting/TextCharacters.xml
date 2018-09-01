@@ -1,4 +1,4 @@
-﻿<Type Name="TextCharacters" FullName="System.Windows.Media.TextFormatting.TextCharacters">
+<Type Name="TextCharacters" FullName="System.Windows.Media.TextFormatting.TextCharacters">
   <TypeSignature Language="C#" Value="public class TextCharacters : System.Windows.Media.TextFormatting.TextRun" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextCharacters extends System.Windows.Media.TextFormatting.TextRun" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextCharacters" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents a collection of character glyphs from distinct physical typefaces.</summary>
     <remarks>To be added.</remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159965">Advanced Text Formatting Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

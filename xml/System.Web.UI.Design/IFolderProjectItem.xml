@@ -1,4 +1,4 @@
-﻿<Type Name="IFolderProjectItem" FullName="System.Web.UI.Design.IFolderProjectItem">
+<Type Name="IFolderProjectItem" FullName="System.Web.UI.Design.IFolderProjectItem">
   <TypeSignature Language="C#" Value="public interface IFolderProjectItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFolderProjectItem" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IFolderProjectItem" />
@@ -14,6 +14,8 @@
   <Docs>
     <summary>Provides an interface for a project folder in a design host, such as Visual Studio 2005.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName="AddDocument">
@@ -43,6 +45,8 @@
         <returns>An <see cref="T:System.Web.UI.Design.IDocumentProjectItem" /> representing the added document.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.Design.IDocumentProjectItem" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="AddFolder">
@@ -69,6 +73,8 @@
         <summary>Creates a new folder in a project folder of a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].</summary>
         <returns>An <see cref="T:System.Web.UI.Design.IFolderProjectItem" /> representing the new folder.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Children">
@@ -91,6 +97,8 @@
         <summary>Gets a collection of items in a project folder in a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].</summary>
         <value>An <see cref="T:System.Collections.ICollection" /> containing the items in the project folder of the design host.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="ECCurve+NamedCurves" FullName="System.Security.Cryptography.ECCurve+NamedCurves">
+<Type Name="ECCurve+NamedCurves" FullName="System.Security.Cryptography.ECCurve+NamedCurves">
   <TypeSignature Language="C#" Value="public static class ECCurve.NamedCurves" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit ECCurve/NamedCurves extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECCurve.NamedCurves" />
@@ -59,6 +59,7 @@
         <summary>Gets a brainpoolP160r1 named curve.</summary>
         <value>A brainpoolP160r1 named curve.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/mt632245.aspx">CNG Named Elliptic Curves</related>
       </Docs>
     </Member>
     <Member MemberName="brainpoolP160t1">
@@ -91,6 +92,7 @@
         <summary>Gets a brainpoolP160t1 named curve.</summary>
         <value>A brainpoolP160t1 named curve.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/mt632245.aspx">CNG Named Elliptic Curves</related>
       </Docs>
     </Member>
     <Member MemberName="brainpoolP192r1">
@@ -123,6 +125,7 @@
         <summary>Gets a brainpoolP192r1 named curve.</summary>
         <value>A brainpoolP192r1 named curve.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/mt632245.aspx">CNG Named Elliptic Curves</related>
       </Docs>
     </Member>
     <Member MemberName="brainpoolP192t1">
@@ -155,6 +158,7 @@
         <summary>Gets a brainpoolP192t1 named curve.</summary>
         <value>A brainpoolP192t1 named curve.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/mt632245.aspx">CNG Named Elliptic Curves</related>
       </Docs>
     </Member>
     <Member MemberName="brainpoolP224r1">
@@ -187,6 +191,7 @@
         <summary>Gets a brainpoolP224r1 named curve.</summary>
         <value>A brainpoolP224r1 named curve.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/mt632245.aspx">CNG Named Elliptic Curves</related>
       </Docs>
     </Member>
     <Member MemberName="brainpoolP224t1">
@@ -219,6 +224,7 @@
         <summary>Gets a brainpoolP224t1 named curve.</summary>
         <value>A brainpoolP224t1 named curve.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/mt632245.aspx">CNG Named Elliptic Curves</related>
       </Docs>
     </Member>
     <Member MemberName="brainpoolP256r1">
@@ -251,6 +257,7 @@
         <summary>Gets a brainpoolP256r1 named curve.</summary>
         <value>A brainpoolP256r1 named curve.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/mt632245.aspx">CNG Named Elliptic Curves</related>
       </Docs>
     </Member>
     <Member MemberName="brainpoolP256t1">
@@ -283,6 +290,7 @@
         <summary>Gets a brainpoolP256t1 named curve.</summary>
         <value>A brainpoolP256t1 named curve.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/mt632245.aspx">CNG Named Elliptic Curves</related>
       </Docs>
     </Member>
     <Member MemberName="brainpoolP320r1">
@@ -315,6 +323,7 @@
         <summary>Gets a brainpoolP320r1 named curve.</summary>
         <value>A brainpoolP320r1 named curve.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/mt632245.aspx">CNG Named Elliptic Curves</related>
       </Docs>
     </Member>
     <Member MemberName="brainpoolP320t1">
@@ -347,6 +356,7 @@
         <summary>Gets a brainpoolP320t1 named curve.</summary>
         <value>A brainpoolP320t1 named curve.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/mt632245.aspx">CNG Named Elliptic Curves</related>
       </Docs>
     </Member>
     <Member MemberName="brainpoolP384r1">
@@ -379,6 +389,7 @@
         <summary>Gets a brainpoolP384r1 named curve.</summary>
         <value>A brainpoolP384r1 named curve.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/mt632245.aspx">CNG Named Elliptic Curves</related>
       </Docs>
     </Member>
     <Member MemberName="brainpoolP384t1">
@@ -411,6 +422,7 @@
         <summary>Gets a brainpoolP384t1 named curve.</summary>
         <value>A brainpoolP384t1 named curve.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/mt632245.aspx">CNG Named Elliptic Curves</related>
       </Docs>
     </Member>
     <Member MemberName="brainpoolP512r1">
@@ -443,6 +455,7 @@
         <summary>Gets a brainpoolP512r1 named curve.</summary>
         <value>A brainpoolP512r1 named curve.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/mt632245.aspx">CNG Named Elliptic Curves</related>
       </Docs>
     </Member>
     <Member MemberName="brainpoolP512t1">
@@ -475,6 +488,7 @@
         <summary>Gets a brainpoolP512t1 named curve.</summary>
         <value>A brainpoolP512t1 named curve.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/mt632245.aspx">CNG Named Elliptic Curves</related>
       </Docs>
     </Member>
     <Member MemberName="nistP256">
@@ -507,6 +521,7 @@
         <summary>Gets a nistP256 named curve.</summary>
         <value>A nistP256 named curve.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/mt632245.aspx">CNG Named Elliptic Curves</related>
       </Docs>
     </Member>
     <Member MemberName="nistP384">
@@ -539,6 +554,7 @@
         <summary>Gets a nistP384 named curve.</summary>
         <value>A nistP384 named curve.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/mt632245.aspx">CNG Named Elliptic Curves</related>
       </Docs>
     </Member>
     <Member MemberName="nistP521">
@@ -571,6 +587,7 @@
         <summary>Gets a nistP521 named curve.</summary>
         <value>A nistP521 named curve.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/mt632245.aspx">CNG Named Elliptic Curves</related>
       </Docs>
     </Member>
   </Members>

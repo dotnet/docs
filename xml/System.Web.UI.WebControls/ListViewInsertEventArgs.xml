@@ -1,4 +1,4 @@
-﻿<Type Name="ListViewInsertEventArgs" FullName="System.Web.UI.WebControls.ListViewInsertEventArgs">
+<Type Name="ListViewInsertEventArgs" FullName="System.Web.UI.WebControls.ListViewInsertEventArgs">
   <TypeSignature Language="C#" Value="public class ListViewInsertEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewInsertEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewInsertEventArgs" />
@@ -45,6 +45,7 @@
     <altmember cref="E:System.Web.UI.WebControls.ListView.ItemInserting" />
     <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
     <altmember cref="P:System.Web.UI.WebControls.ListViewInsertEventArgs.Values" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -87,6 +88,7 @@
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="T:System.Web.UI.WebControls.ListViewItem" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemInserting" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -124,6 +126,7 @@
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="T:System.Web.UI.WebControls.ListViewItem" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemInserting" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -173,6 +176,7 @@
         <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Keys" />
         <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Values" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemInserting" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
   </Members>

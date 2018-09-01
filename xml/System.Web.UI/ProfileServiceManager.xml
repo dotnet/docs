@@ -1,4 +1,4 @@
-﻿<Type Name="ProfileServiceManager" FullName="System.Web.UI.ProfileServiceManager">
+<Type Name="ProfileServiceManager" FullName="System.Web.UI.ProfileServiceManager">
   <TypeSignature Language="C#" Value="public class ProfileServiceManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProfileServiceManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ProfileServiceManager" />
@@ -51,6 +51,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.Configuration.ScriptingProfileServiceSection" />
+    <related type="Article" href="http://msdn.microsoft.com/library/91239ae6-d01c-4f4e-a433-eb9040dbed61">Using Profile Information with ASP.NET AJAX</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

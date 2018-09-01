@@ -1,4 +1,4 @@
-﻿<Type Name="ListViewDataItem" FullName="System.Web.UI.WebControls.ListViewDataItem">
+<Type Name="ListViewDataItem" FullName="System.Web.UI.WebControls.ListViewDataItem">
   <TypeSignature Language="C#" Value="public class ListViewDataItem : System.Web.UI.WebControls.ListViewItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewDataItem extends System.Web.UI.WebControls.ListViewItem" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewDataItem" />
@@ -13,7 +13,8 @@
   <Base>
     <BaseTypeName>System.Web.UI.WebControls.ListViewItem</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Represents an individual data item in a <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
     <remarks>
@@ -47,6 +48,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.ListView" />
     <altmember cref="T:System.Web.UI.WebControls.ListViewItem" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,6 +85,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -129,6 +132,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ListViewDataItem.DataItemIndex" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataItemIndex">
@@ -165,6 +169,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ListViewDataItem.DataItem" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewDataItem.DisplayIndex" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayIndex">
@@ -212,6 +217,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewDataItem.DataItemIndex" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">

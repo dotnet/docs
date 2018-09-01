@@ -1,4 +1,4 @@
-﻿<Type Name="BamlLocalizer" FullName="System.Windows.Markup.Localizer.BamlLocalizer">
+<Type Name="BamlLocalizer" FullName="System.Windows.Markup.Localizer.BamlLocalizer">
   <TypeSignature Language="C#" Value="public class BamlLocalizer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BamlLocalizer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Localizer.BamlLocalizer" />
@@ -32,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160016">LocBaml Tool Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

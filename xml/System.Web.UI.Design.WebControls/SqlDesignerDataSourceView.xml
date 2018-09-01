@@ -1,4 +1,4 @@
-﻿<Type Name="SqlDesignerDataSourceView" FullName="System.Web.UI.Design.WebControls.SqlDesignerDataSourceView">
+<Type Name="SqlDesignerDataSourceView" FullName="System.Web.UI.Design.WebControls.SqlDesignerDataSourceView">
   <TypeSignature Language="C#" Value="public class SqlDesignerDataSourceView : System.Web.UI.Design.DesignerDataSourceView" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlDesignerDataSourceView extends System.Web.UI.Design.DesignerDataSourceView" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView" />
@@ -18,6 +18,8 @@
     <summary>Provides a design-time view of data for the <see cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" /> class.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,6 +49,8 @@
         <param name="viewName">The name of the view in the data source.</param>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView" /> class using the provided data source designer and name of the view.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="CanDelete">
@@ -71,6 +75,8 @@
           <see langword="true" /> if the <see cref="M:System.Web.UI.DataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" /> method is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Design.DesignerDataSourceView.CanDelete" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="CanInsert">
@@ -95,6 +101,8 @@
           <see langword="true" /> if the <see cref="M:System.Web.UI.DataSourceView.ExecuteInsert(System.Collections.IDictionary)" /> method is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Design.DesignerDataSourceView.CanInsert" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="CanPage">
@@ -119,6 +127,8 @@
           <see langword="true" /> if paging through the data retrieved by the <see cref="M:System.Web.UI.DataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" /> method is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Design.DesignerDataSourceView.CanPage" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="CanRetrieveTotalRowCount">
@@ -143,6 +153,8 @@
           <see langword="true" /> if retrieving the total number of data rows is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Design.DesignerDataSourceView.CanRetrieveTotalRowCount" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="CanSort">
@@ -167,6 +179,8 @@
           <see langword="true" /> if a sorted view on the underlying data source is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Design.DesignerDataSourceView.CanSort" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="CanUpdate">
@@ -191,6 +205,8 @@
           <see langword="true" /> if the <see cref="M:System.Web.UI.DataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" /> method is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Design.DesignerDataSourceView.CanUpdate" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeData">
@@ -221,6 +237,8 @@
         <returns>A <see cref="T:System.Web.UI.DataSourceView" /> object containing data to display at design time.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Design.DesignerDataSourceView.GetDesignTimeData(System.Int32,System.Boolean@)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -245,6 +263,8 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Design.WebControls.DesignerDataSourceView.Schema" />
         <altmember cref="" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

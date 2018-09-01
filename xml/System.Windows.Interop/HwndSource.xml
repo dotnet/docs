@@ -1,4 +1,4 @@
-﻿<Type Name="HwndSource" FullName="System.Windows.Interop.HwndSource">
+<Type Name="HwndSource" FullName="System.Windows.Interop.HwndSource">
   <TypeSignature Language="C#" Value="public class HwndSource : System.Windows.PresentationSource, IDisposable, System.Windows.Interop.IKeyboardInputSink, System.Windows.Interop.IWin32Window" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi HwndSource extends System.Windows.PresentationSource implements class System.IDisposable, class System.Windows.Interop.IKeyboardInputSink, class System.Windows.Interop.IWin32Window" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.HwndSource" />
@@ -1225,6 +1225,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/0ffbde0d-701d-45a3-a6fa-dd71f4d9772e">WPF and Win32 Interoperation Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ee5258b7-6567-415a-9b1c-c0cbe46e79ef">Input Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.OnMnemonic">

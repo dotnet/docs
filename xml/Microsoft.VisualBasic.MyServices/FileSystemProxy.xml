@@ -1,4 +1,4 @@
-﻿<Type Name="FileSystemProxy" FullName="Microsoft.VisualBasic.MyServices.FileSystemProxy">
+<Type Name="FileSystemProxy" FullName="Microsoft.VisualBasic.MyServices.FileSystemProxy">
   <TypeSignature Language="C#" Value="public class FileSystemProxy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi FileSystemProxy extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MyServices.FileSystemProxy" />
@@ -68,6 +68,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:Microsoft.VisualBasic.FileIO.SpecialDirectories" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName="CombinePath">
@@ -128,6 +129,7 @@
           <paramref name="baseDirectory" /> or <paramref name="relativePath" /> are malformed paths.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.GetParentPath(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CopyDirectory">
@@ -137,6 +139,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Copies a directory to another directory.</summary>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md">How to: Get the Collection of Files in a Directory in Visual Basic</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CopyDirectory">
@@ -200,6 +204,9 @@
         <exception cref="T:System.UnauthorizedAccessException">A destination file exists but cannot be accessed.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md">How to: Get the Collection of Files in a Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md">How to: Parse File Paths in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="CopyDirectory">
@@ -268,6 +275,9 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md">How to: Get the Collection of Files in a Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md">How to: Parse File Paths in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="CopyDirectory">
@@ -334,6 +344,9 @@
         <exception cref="T:System.UnauthorizedAccessException">A destination file exists but cannot be accessed.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md">How to: Get the Collection of Files in a Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md">How to: Parse File Paths in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="CopyDirectory">
@@ -404,6 +417,9 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md">How to: Get the Collection of Files in a Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md">How to: Parse File Paths in Visual Basic</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CopyFile">
@@ -413,6 +429,11 @@
       </AssemblyInfo>
       <Docs>
         <summary>Copies a file to a new location.</summary>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-files-with-a-specific-pattern-to-a-directory.md">How to: Copy Files with a Specific Pattern to a Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-copy-of-a-file-in-the-same-directory.md">How to: Create a Copy of a File in the Same Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-a-directory-to-another-directory.md">How to: Copy a Directory to Another Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-rename-a-file.md">How to: Rename a File in Visual Basic</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CopyFile">
@@ -483,6 +504,11 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Controls the ability to access registry variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-files-with-a-specific-pattern-to-a-directory.md">How to: Copy Files with a Specific Pattern to a Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-copy-of-a-file-in-the-same-directory.md">How to: Create a Copy of a File in the Same Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-a-directory-to-another-directory.md">How to: Copy a Directory to Another Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-rename-a-file.md">How to: Rename a File in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="CopyFile">
@@ -556,6 +582,11 @@
         <permission cref="T:System.Security.Permissions.RegistryPermission">Controls the ability to access registry variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-files-with-a-specific-pattern-to-a-directory.md">How to: Copy Files with a Specific Pattern to a Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-copy-of-a-file-in-the-same-directory.md">How to: Create a Copy of a File in the Same Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-a-directory-to-another-directory.md">How to: Copy a Directory to Another Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-rename-a-file.md">How to: Rename a File in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="CopyFile">
@@ -629,6 +660,11 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Controls the ability to access registry variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-files-with-a-specific-pattern-to-a-directory.md">How to: Copy Files with a Specific Pattern to a Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-copy-of-a-file-in-the-same-directory.md">How to: Create a Copy of a File in the Same Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-a-directory-to-another-directory.md">How to: Copy a Directory to Another Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-rename-a-file.md">How to: Rename a File in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="CopyFile">
@@ -706,6 +742,11 @@
         <permission cref="T:System.Security.Permissions.RegistryPermission">Controls the ability to access registry variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-files-with-a-specific-pattern-to-a-directory.md">How to: Copy Files with a Specific Pattern to a Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-copy-of-a-file-in-the-same-directory.md">How to: Create a Copy of a File in the Same Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-a-directory-to-another-directory.md">How to: Copy a Directory to Another Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-rename-a-file.md">How to: Rename a File in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDirectory">
@@ -760,6 +801,7 @@
         <exception cref="T:System.UnauthorizedAccessException">The user does not have permission to create the directory.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="M:System.IO.Directory.CreateDirectory(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentDirectory">
@@ -803,6 +845,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is not valid.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user lacks necessary permissions.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="DeleteDirectory">
@@ -871,6 +914,8 @@
         <exception cref="T:System.OperationCanceledException">The user cancels the operation or the directory cannot be deleted.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.DeleteDirectoryOption" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-delete-a-file.md">How to: Delete a File in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteDirectory">
@@ -939,6 +984,8 @@
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.RecycleOption" />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UIOption" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-delete-a-file.md">How to: Delete a File in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteDirectory">
@@ -1010,6 +1057,8 @@
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.RecycleOption" />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UIOption" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-delete-a-file.md">How to: Delete a File in Visual Basic</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="DeleteFile">
@@ -1080,6 +1129,8 @@
         <exception cref="T:System.IO.FileNotFoundException">The file does not exist.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user does not have permission to delete the file or the file is read-only.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-delete-a-file.md">How to: Delete a File in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteFile">
@@ -1150,6 +1201,8 @@
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.RecycleOption" />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UIOption" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-delete-a-file.md">How to: Delete a File in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteFile">
@@ -1224,6 +1277,8 @@
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.RecycleOption" />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UIOption" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-delete-a-file.md">How to: Delete a File in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="DirectoryExists">
@@ -1261,6 +1316,9 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md">Creating, Deleting, and Moving Files and Directories in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md">Walkthrough: Manipulating Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="Drives">
@@ -1301,6 +1359,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
         <altmember cref="T:System.IO.DriveInfo" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="FileExists">
@@ -1343,6 +1402,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The name of the file ends with a backslash (\\).</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md">Creating, Deleting, and Moving Files and Directories in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md">Walkthrough: Manipulating Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindInFiles">
@@ -1420,6 +1482,8 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.SearchOption" />
         <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md">Walkthrough: Manipulating Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FindInFiles">
@@ -1496,6 +1560,8 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.SearchOption" />
         <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md">Walkthrough: Manipulating Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetDirectories">
@@ -1564,6 +1630,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.SearchOption" />
         <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="GetDirectories">
@@ -1636,6 +1703,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.SearchOption" />
         <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryInfo">
@@ -1686,6 +1754,7 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:System.IO.DirectoryInfo" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="GetDriveInfo">
@@ -1737,6 +1806,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:System.IO.DriveInfo" />
         <altmember cref="T:System.IO.DriveType" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="GetFileInfo">
@@ -1793,6 +1863,8 @@
         <exception cref="T:System.UnauthorizedAccessException">The user lacks ACL (access control list) access to the file.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:System.IO.FileInfo" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md">Walkthrough: Manipulating Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetFiles">
@@ -1870,6 +1942,9 @@
         <exception cref="T:System.UnauthorizedAccessException">The user lacks necessary permissions.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-find-files-with-a-specific-pattern.md">How to: Find Files with a Specific Pattern in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md">How to: Get the Collection of Files in a Directory in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="GetFiles">
@@ -1949,6 +2024,9 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.SearchOption" />
         <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-find-files-with-a-specific-pattern.md">How to: Find Files with a Specific Pattern in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md">How to: Get the Collection of Files in a Directory in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="GetName">
@@ -1999,6 +2077,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="GetParentPath">
@@ -2044,6 +2123,8 @@
           <paramref name="path" /> is <see langword="Nothing" />.</exception>
         <exception cref="T:System.IO.PathTooLongException">The path exceeds the system-defined maximum length.</exception>
         <exception cref="T:System.NotSupportedException">A file or directory name in the path contains a colon (:) or is in an invalid format.</exception>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md">How to: Parse File Paths in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="GetTempFileName">
@@ -2083,6 +2164,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md">Creating, Deleting, and Moving Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="MoveDirectory">
@@ -2150,6 +2233,8 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.MoveFile(System.String,System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.CopyDirectory(System.String,System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md">Creating, Deleting, and Moving Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="MoveDirectory">
@@ -2212,6 +2297,8 @@
         <altmember cref="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.MoveFile(System.String,System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.CopyDirectory(System.String,System.String)" />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UIOption" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md">Creating, Deleting, and Moving Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="MoveDirectory">
@@ -2273,6 +2360,8 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.MoveFile(System.String,System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.CopyDirectory(System.String,System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md">Creating, Deleting, and Moving Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="MoveDirectory">
@@ -2341,6 +2430,8 @@
         <altmember cref="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.CopyDirectory(System.String,System.String)" />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UIOption" />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md">Creating, Deleting, and Moving Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="MoveFile">
@@ -2414,6 +2505,8 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls the ability to access all environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Controls the ability to access registry variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md">Creating, Deleting, and Moving Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="MoveFile">
@@ -2482,6 +2575,8 @@
         <permission cref="T:System.Security.Permissions.RegistryPermission">Controls the ability to access registry variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UIOption" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md">Creating, Deleting, and Moving Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="MoveFile">
@@ -2549,6 +2644,8 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls the ability to access all environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Controls the ability to access registry variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md">Creating, Deleting, and Moving Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="MoveFile">
@@ -2622,6 +2719,7 @@
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UIOption" />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md">Creating, Deleting, and Moving Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="OpenTextFieldParser">
@@ -2690,6 +2788,12 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files.md">How to: Read From Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From Comma-Delimited Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From Text Files with Multiple Formats in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md">Parsing Text Files with the TextFieldParser Object</related>
       </Docs>
     </Member>
     <Member MemberName="OpenTextFieldParser">
@@ -2757,6 +2861,12 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files.md">How to: Read From Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From Comma-Delimited Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From Text Files with Multiple Formats in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md">Parsing Text Files with the TextFieldParser Object</related>
       </Docs>
     </Member>
     <Member MemberName="OpenTextFieldParser">
@@ -2824,6 +2934,12 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files.md">How to: Read From Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From Comma-Delimited Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From Text Files with Multiple Formats in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md">Parsing Text Files with the TextFieldParser Object</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="OpenTextFileReader">
@@ -2886,6 +3002,9 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:System.Text.Encoding" />
         <altmember cref="T:System.IO.StreamReader" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-text-from-files-with-a-streamreader.md">How to: Read Text from Files with a StreamReader (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="OpenTextFileReader">
@@ -2940,6 +3059,9 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:System.Text.Encoding" />
         <altmember cref="T:System.IO.StreamReader" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-text-from-files-with-a-streamreader.md">How to: Read Text from Files with a StreamReader (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="OpenTextFileWriter">
@@ -3008,6 +3130,8 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:System.Text.Encoding" />
         <altmember cref="T:System.IO.StreamWriter" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="OpenTextFileWriter">
@@ -3068,6 +3192,8 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:System.Text.Encoding" />
         <altmember cref="T:System.IO.StreamWriter" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ReadAllBytes">
@@ -3127,6 +3253,8 @@
         <exception cref="T:System.OutOfMemoryException">There is not enough memory to write the string to buffer.</exception>
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadAllText">
@@ -3204,6 +3332,12 @@
         <altmember cref="T:System.Text.Encoding" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.ReadAllText(System.String)" />
         <altmember cref="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-text-from-files-with-a-streamreader.md">How to: Read Text from Files with a StreamReader (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md">Troubleshooting: Reading from and Writing to Text Files</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md">Walkthrough: Manipulating Files and Directories in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md">File Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="ReadAllText">
@@ -3272,6 +3406,12 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:System.Text.Encoding" />
         <altmember cref="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-text-from-files-with-a-streamreader.md">How to: Read Text from Files with a StreamReader (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md">Troubleshooting: Reading from and Writing to Text Files</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md">Walkthrough: Manipulating Files and Directories in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md">File Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="RenameDirectory">
@@ -3328,6 +3468,9 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user does not have required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md">How to: Parse File Paths in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md">Creating, Deleting, and Moving Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="RenameFile">
@@ -3392,6 +3535,8 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user does not have required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md">Creating, Deleting, and Moving Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="SpecialDirectories">
@@ -3424,6 +3569,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.SpecialDirectories" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteAllBytes">
@@ -3487,6 +3633,9 @@
         <exception cref="T:System.OutOfMemoryException">There is not enough memory to write the string to buffer.</exception>
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-to-binary-files.md">How to: Write to a Binary File in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteAllText">
@@ -3570,6 +3719,8 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:System.Text.Encoding" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.WriteAllText(System.String,System.String,System.Boolean)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="WriteAllText">
@@ -3642,6 +3793,8 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:System.Text.Encoding" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="ItemContainerGenerator" FullName="System.Windows.Controls.ItemContainerGenerator">
+<Type Name="ItemContainerGenerator" FullName="System.Windows.Controls.ItemContainerGenerator">
   <TypeSignature Language="C#" Value="public sealed class ItemContainerGenerator : System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator, System.Windows.IWeakEventListener" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ItemContainerGenerator extends System.Object implements class System.Windows.Controls.Primitives.IItemContainerGenerator, class System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator, class System.Windows.IWeakEventListener" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ItemContainerGenerator" />
@@ -42,6 +42,7 @@
  ]]></format>
     </remarks>
     <altmember cref="P:System.Windows.Controls.ItemsControl.ItemContainerGenerator" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms750552(v=vs.90)">Get a Combo Box Item</related>
   </Docs>
   <Members>
     <Member MemberName="ContainerFromIndex">
@@ -68,6 +69,7 @@
         <summary>Returns the element corresponding to the item at the given index within the <see cref="T:System.Windows.Controls.ItemCollection" />.</summary>
         <returns>Returns the element corresponding to the item at the given index within the <see cref="T:System.Windows.Controls.ItemCollection" /> or returns <see langword="null" /> if the item is not realized.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms750552(v=vs.90)">Get a Combo Box Item</related>
       </Docs>
     </Member>
     <Member MemberName="ContainerFromItem">
@@ -123,6 +125,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3">using Statement (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/using-statement.md">Using Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="IndexFromContainer">

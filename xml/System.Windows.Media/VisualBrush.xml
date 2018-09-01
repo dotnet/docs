@@ -1,4 +1,4 @@
-﻿<Type Name="VisualBrush" FullName="System.Windows.Media.VisualBrush">
+<Type Name="VisualBrush" FullName="System.Windows.Media.VisualBrush">
   <TypeSignature Language="C#" Value="public sealed class VisualBrush : System.Windows.Media.TileBrush" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VisualBrush extends System.Windows.Media.TileBrush" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.VisualBrush" />
@@ -37,6 +37,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160049">VisualBrush Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -64,6 +65,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.VisualBrush" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160049">VisualBrush Sample</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -85,6 +87,7 @@
         <param name="visual">The contents of the new <see cref="T:System.Windows.Media.VisualBrush" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.VisualBrush" /> class that contains the specified <see cref="P:System.Windows.Media.VisualBrush.Visual" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160049">VisualBrush Sample</related>
       </Docs>
     </Member>
     <Member MemberName="AutoLayoutContent">

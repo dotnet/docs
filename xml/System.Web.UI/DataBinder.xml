@@ -1,4 +1,4 @@
-﻿<Type Name="DataBinder" FullName="System.Web.UI.DataBinder">
+<Type Name="DataBinder" FullName="System.Web.UI.DataBinder">
   <TypeSignature Language="C#" Value="public sealed class DataBinder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataBinder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataBinder" />
@@ -23,7 +23,7 @@
 ## Remarks  
  You can use the overloaded static <xref:System.Web.UI.DataBinder.Eval%2A> method of this class in data-binding syntax in an ASP.NET Web page. This provides an easier syntax to work with than standard data binding. However, because `DataBinder.Eval` provides automatic type conversion, it can result in slower performance.  
   
- For more information about ASP.NET data binding, expressions, and syntax, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
+ For more information about ASP.NET data binding, expressions, and syntax, see [Binding to Databases](https://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](https://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
   
  Starting in .NET Framework 4.5, you can use model binding to simplify some of the tasks that you had to perform through data-binding in earlier versions. For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](/aspnet/web-forms/overview/presenting-and-managing-data/model-binding/retrieving-data).  
   
@@ -266,6 +266,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.XPathBinder" />
         <altmember cref="T:System.Web.UI.IBindableTemplate" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetDataItem">

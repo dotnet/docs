@@ -1,4 +1,4 @@
-﻿<Type Name="ChannelBinding" FullName="System.Security.Authentication.ExtendedProtection.ChannelBinding">
+<Type Name="ChannelBinding" FullName="System.Security.Authentication.ExtendedProtection.ChannelBinding">
   <TypeSignature Language="C#" Value="public abstract class ChannelBinding : Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ChannelBinding extends Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid" />
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
@@ -37,6 +37,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Net.TransportContext" />
+    <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

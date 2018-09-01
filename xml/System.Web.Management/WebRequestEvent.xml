@@ -1,4 +1,4 @@
-﻿<Type Name="WebRequestEvent" FullName="System.Web.Management.WebRequestEvent">
+<Type Name="WebRequestEvent" FullName="System.Web.Management.WebRequestEvent">
   <TypeSignature Language="C#" Value="public class WebRequestEvent : System.Web.Management.WebManagementEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebRequestEvent extends System.Web.Management.WebManagementEvent" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebRequestEvent" />
@@ -68,6 +68,7 @@ type="SamplesAspNet.SampleWebRequestEvent,webrequestevent,Version=1.0.1573.23947
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlMeta" FullName="System.Web.UI.HtmlControls.HtmlMeta">
+<Type Name="HtmlMeta" FullName="System.Web.UI.HtmlControls.HtmlMeta">
   <TypeSignature Language="C#" Value="public class HtmlMeta : System.Web.UI.HtmlControls.HtmlControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlMeta extends System.Web.UI.HtmlControls.HtmlControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlMeta" />
@@ -263,6 +263,7 @@
           <para>When extending the <see cref="T:System.Web.UI.HtmlControls.HtmlMeta" /> control, override the <see cref="M:System.Web.UI.HtmlControls.HtmlMeta.Render(System.Web.UI.HtmlTextWriter)" /> method to provide custom rendering.</para>
         </block>
         <altmember cref="F:System.Web.UI.HtmlTextWriter.SelfClosingTagEnd" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
       </Docs>
     </Member>
     <Member MemberName="Scheme">

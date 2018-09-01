@@ -1,4 +1,4 @@
-﻿<Type Name="ControlSkinDelegate" FullName="System.Web.UI.ControlSkinDelegate">
+<Type Name="ControlSkinDelegate" FullName="System.Web.UI.ControlSkinDelegate">
   <TypeSignature Language="C#" Value="public delegate System.Web.UI.Control ControlSkinDelegate(Control control);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ControlSkinDelegate extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ControlSkinDelegate" />
@@ -41,5 +41,6 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">Introduction to ASP.NET Themes</related>
   </Docs>
 </Type>

@@ -1,4 +1,4 @@
-﻿<Type Name="ChangeRejectedException" FullName="System.ComponentModel.Composition.ChangeRejectedException">
+<Type Name="ChangeRejectedException" FullName="System.ComponentModel.Composition.ChangeRejectedException">
   <TypeSignature Language="C#" Value="public class ChangeRejectedException : System.ComponentModel.Composition.CompositionException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ChangeRejectedException extends System.ComponentModel.Composition.CompositionException" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.ChangeRejectedException" />
@@ -69,6 +69,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -130,6 +131,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -168,6 +170,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName="Message">

@@ -1,4 +1,4 @@
-﻿<Type Name="FirstDayOfWeek" FullName="Microsoft.VisualBasic.FirstDayOfWeek">
+<Type Name="FirstDayOfWeek" FullName="Microsoft.VisualBasic.FirstDayOfWeek">
   <TypeSignature Language="C#" Value="public enum FirstDayOfWeek" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FirstDayOfWeek extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FirstDayOfWeek" />
@@ -36,6 +36,9 @@
     <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(Microsoft.VisualBasic.DateInterval,System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
     <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
     <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/constants-and-enumerations.md">Constants and Enumerations</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/constants-enums/when-to-use-an-enumeration.md">When to Use an Enumeration</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md">How to: Refer to an Enumeration Member</related>
   </Docs>
   <Members>
     <Member MemberName="Friday">

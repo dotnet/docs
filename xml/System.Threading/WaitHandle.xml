@@ -1,4 +1,4 @@
-﻿<Type Name="WaitHandle" FullName="System.Threading.WaitHandle">
+<Type Name="WaitHandle" FullName="System.Threading.WaitHandle">
   <TypeSignature Language="C#" Value="public abstract class WaitHandle : MarshalByRefObject, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi abstract beforefieldinit WaitHandle extends System.MarshalByRefObject implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.WaitHandle" />
@@ -88,6 +88,11 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <related type="Article" href="~/docs/standard/threading/index.md">Threading</related>
+    <related type="Article" href="~/docs/standard/threading/threading-objects-and-features.md">Threading Objects and Features</related>
+    <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutexes</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
+    <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphores</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -169,6 +174,7 @@
         <block subset="none" type="overrides">
           <para>You should override the <see langword="Dispose(Boolean)" /> method to release resources allocated in derived classes.</para>
         </block>
+        <related type="Article" href="~/docs/standard/garbage-collection/implementing-dispose.md">Implementing a Dispose Method</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -230,6 +236,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/garbage-collection/unmanaged.md">Cleaning Up Unmanaged Resources</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -288,6 +295,7 @@
   
  The <see cref="M:System.Threading.WaitHandle.Close" /> or <see cref="M:System.Threading.WaitHandle.Dispose" /> method can be called multiple times by other objects. When overriding this method, be careful not to reference objects that have been previously disposed in an earlier call to <see langword="Dispose" /> or <see langword="Close" />.</para>
         </block>
+        <related type="Article" href="~/docs/standard/garbage-collection/implementing-dispose.md">Implementing a Dispose Method</related>
       </Docs>
     </Member>
     <Member MemberName="Finalize">

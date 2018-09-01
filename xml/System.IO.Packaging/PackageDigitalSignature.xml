@@ -1,4 +1,4 @@
-﻿<Type Name="PackageDigitalSignature" FullName="System.IO.Packaging.PackageDigitalSignature">
+<Type Name="PackageDigitalSignature" FullName="System.IO.Packaging.PackageDigitalSignature">
   <TypeSignature Language="C#" Value="public class PackageDigitalSignature" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PackageDigitalSignature extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackageDigitalSignature" />
@@ -36,6 +36,8 @@
     </remarks>
     <altmember cref="T:System.IO.Packaging.PackageDigitalSignatureManager" />
     <altmember cref="T:System.Windows.Xps.Packaging.XpsDigitalSignature" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions (OPC) Specification</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
   </Docs>
   <Members>
     <Member MemberName="CertificateEmbeddingOption">
@@ -73,6 +75,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
         <altmember cref="P:System.IO.Packaging.PackageDigitalSignature.Signer" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
       </Docs>
     </Member>
     <Member MemberName="GetPartTransformList">
@@ -101,6 +104,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
         <altmember cref="N:System.Security.Cryptography.Xml" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
       </Docs>
     </Member>
     <Member MemberName="Signature">
@@ -131,6 +135,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
       </Docs>
     </Member>
     <Member MemberName="SignaturePart">
@@ -161,6 +166,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
       </Docs>
     </Member>
     <Member MemberName="SignatureType">
@@ -184,6 +190,7 @@
         <value>A [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] string that identifies the signature type. The default is <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigC14NTransformUrl" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
       </Docs>
     </Member>
     <Member MemberName="SignatureValue">
@@ -208,6 +215,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
         <altmember cref="M:System.Security.Policy.Hash.GenerateHash(System.Security.Cryptography.HashAlgorithm)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
       </Docs>
     </Member>
     <Member MemberName="SignedParts">
@@ -233,6 +241,7 @@
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
         <altmember cref="T:System.IO.Packaging.PackagePart" />
         <altmember cref="P:System.IO.Packaging.PackageDigitalSignature.SignedRelationshipSelectors" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
       </Docs>
     </Member>
     <Member MemberName="SignedRelationshipSelectors">
@@ -256,6 +265,7 @@
         <value>The list of the <see cref="T:System.IO.Packaging.PackageRelationship" /> parts that have been signed with the signature.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
       </Docs>
     </Member>
     <Member MemberName="Signer">
@@ -288,6 +298,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
       </Docs>
     </Member>
     <Member MemberName="SigningTime">
@@ -323,6 +334,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
         <altmember cref="P:System.IO.Packaging.PackageDigitalSignature.TimeFormat" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
       </Docs>
     </Member>
     <Member MemberName="TimeFormat">
@@ -419,6 +431,7 @@
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
         <altmember cref="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifyCertificate(System.Security.Cryptography.X509Certificates.X509Certificate)" />
         <altmember cref="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifySignatures(System.Boolean)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
       </Docs>
     </Member>
     <Member MemberName="Verify">
@@ -457,6 +470,7 @@
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
         <altmember cref="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifyCertificate(System.Security.Cryptography.X509Certificates.X509Certificate)" />
         <altmember cref="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifySignatures(System.Boolean)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
       </Docs>
     </Member>
   </Members>

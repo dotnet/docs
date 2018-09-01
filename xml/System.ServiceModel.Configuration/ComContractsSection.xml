@@ -1,4 +1,4 @@
-﻿<Type Name="ComContractsSection" FullName="System.ServiceModel.Configuration.ComContractsSection">
+<Type Name="ComContractsSection" FullName="System.ServiceModel.Configuration.ComContractsSection">
   <TypeSignature Language="C#" Value="public sealed class ComContractsSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComContractsSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ComContractsSection" />
@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/42e74148-223d-4888-a8ed-1d928527eb09">ComContracts in Configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

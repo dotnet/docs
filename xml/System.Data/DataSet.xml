@@ -128,6 +128,7 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
+    <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -138,6 +139,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.DataSet" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -184,6 +186,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Data.DataTableCollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -233,6 +236,7 @@
         </remarks>
         <altmember cref="P:System.Data.DataSet.DataSetName" />
         <altmember cref="T:System.Data.DataTableCollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -361,6 +365,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -401,6 +406,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="CaseSensitive">
@@ -459,6 +465,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -507,6 +514,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -559,6 +567,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Data.DataSet.Copy" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -609,6 +618,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Data.DataSet.Clone" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateDataReader">
@@ -640,6 +650,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CreateDataReader">
@@ -688,6 +699,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDataReader">
@@ -745,6 +757,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="DataSetName">
@@ -796,6 +809,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultViewManager">
@@ -853,6 +867,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="DetermineSchemaSerializationMode">
@@ -871,6 +886,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="DetermineSchemaSerializationMode">
@@ -914,6 +930,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="DetermineSchemaSerializationMode">
@@ -959,6 +976,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="EndInit">
@@ -999,6 +1017,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="EnforceConstraints">
@@ -1057,6 +1076,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.ConstraintException">One or more constraints cannot be enforced.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ExtendedProperties">
@@ -1115,6 +1135,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetChanges">
@@ -1125,6 +1146,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Gets a copy of the <see cref="T:System.Data.DataSet" /> containing all changes made to it since it was last loaded, or since <see cref="M:System.Data.DataSet.AcceptChanges" /> was called.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetChanges">
@@ -1175,6 +1197,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Data.DataSet.HasChanges" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetChanges">
@@ -1229,6 +1252,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetDataSetSchema">
@@ -1306,6 +1330,7 @@
         <summary>Populates a serialization information object with the data needed to serialize the <see cref="T:System.Data.DataSet" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetSchemaSerializable">
@@ -1752,6 +1777,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetXmlSchema">
@@ -1805,6 +1831,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="HasChanges">
@@ -1815,6 +1842,7 @@ class Program {
       </AssemblyInfo>
       <Docs>
         <summary>Gets a value indicating whether the <see cref="T:System.Data.DataSet" /> has changes, including new, deleted, or modified rows.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="HasChanges">
@@ -1860,6 +1888,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="HasChanges">
@@ -1913,6 +1942,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="HasErrors">
@@ -1970,6 +2000,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="InferXmlSchema">
@@ -1980,6 +2011,7 @@ class Program {
       </AssemblyInfo>
       <Docs>
         <summary>Applies XML schema to the <see cref="T:System.Data.DataSet" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="InferXmlSchema">
@@ -2017,6 +2049,7 @@ class Program {
         <param name="nsArray">An array of namespace Uniform Resource Identifier (URI) strings to be excluded from schema inference.</param>
         <summary>Applies the XML schema from the specified <see cref="T:System.IO.Stream" /> to the <see cref="T:System.Data.DataSet" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="InferXmlSchema">
@@ -2055,6 +2088,7 @@ class Program {
         <param name="nsArray">An array of namespace Uniform Resource Identifier (URI) strings to be excluded from schema inference.</param>
         <summary>Applies the XML schema from the specified <see cref="T:System.IO.TextReader" /> to the <see cref="T:System.Data.DataSet" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="InferXmlSchema">
@@ -2096,6 +2130,7 @@ class Program {
         <exception cref="T:System.Security.SecurityException">
           <see cref="T:System.Security.Permissions.FileIOPermission" /> is not set to <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">For reading and writing files. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" />.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="InferXmlSchema">
@@ -2134,6 +2169,7 @@ class Program {
         <param name="nsArray">An array of namespace Uniform Resource Identifier (URI) strings to be excluded from schema inference.</param>
         <summary>Applies the XML schema from the specified <see cref="T:System.Xml.XmlReader" /> to the <see cref="T:System.Data.DataSet" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Initialized">
@@ -2172,6 +2208,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="InitializeDerivedDataSet">
@@ -2295,6 +2332,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Load">
@@ -2337,6 +2375,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Load">
@@ -2405,6 +2444,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2473,6 +2513,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2545,6 +2586,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Locale">
@@ -2602,6 +2644,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Merge">
@@ -2612,6 +2655,7 @@ class Program {
       </AssemblyInfo>
       <Docs>
         <summary>Merges a specified <see cref="T:System.Data.DataSet" />, <see cref="T:System.Data.DataTable" />, or array of <see cref="T:System.Data.DataRow" /> objects into the current <see langword="DataSet" /> or <see langword="DataTable" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Merge">
@@ -2667,6 +2711,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -2734,6 +2779,7 @@ class Program {
         <altmember cref="T:System.Data.ForeignKeyConstraint" />
         <altmember cref="M:System.Data.DataSet.GetChanges" />
         <altmember cref="T:System.Data.UniqueConstraint" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -2798,6 +2844,7 @@ class Program {
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="table" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -2865,6 +2912,7 @@ class Program {
         </remarks>
         <altmember cref="T:System.Data.ForeignKeyConstraint" />
         <altmember cref="T:System.Data.UniqueConstraint" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -2926,6 +2974,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -2996,6 +3045,7 @@ class Program {
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="dataSet" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -3064,6 +3114,7 @@ class Program {
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="dataSet" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="MergeFailed">
@@ -3116,6 +3167,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -3175,6 +3227,7 @@ class Program {
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The namespace already has data.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanging">
@@ -3221,6 +3274,7 @@ class Program {
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Data.DataSet.OnPropertyChanging(System.ComponentModel.PropertyChangedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Data.DataSet.OnPropertyChanging(System.ComponentModel.PropertyChangedEventArgs)" /> method.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="OnRemoveRelation">
@@ -3264,6 +3318,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="OnRemoveTable">
@@ -3315,6 +3370,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Prefix">
@@ -3371,6 +3427,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePropertyChanging">
@@ -3407,6 +3464,7 @@ class Program {
         <param name="name">The name of the property that is about to change.</param>
         <summary>Sends a notification that the specified <see cref="T:System.Data.DataSet" /> property is about to change.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadXml">
@@ -3417,6 +3475,7 @@ class Program {
       </AssemblyInfo>
       <Docs>
         <summary>Reads XML schema and data into the <see cref="T:System.Data.DataSet" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ReadXml">
@@ -3498,6 +3557,7 @@ class Program {
         <altmember cref="M:System.Data.DataSet.ReadXmlSchema(System.Xml.XmlReader)" />
         <altmember cref="M:System.Data.DataSet.WriteXml(System.IO.Stream)" />
         <altmember cref="M:System.Data.DataSet.WriteXmlSchema(System.IO.Stream)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
@@ -3579,6 +3639,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
@@ -3661,6 +3722,7 @@ class Program {
         <exception cref="T:System.Security.SecurityException">
           <see cref="T:System.Security.Permissions.FileIOPermission" /> is not set to <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
@@ -3742,6 +3804,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
@@ -3817,6 +3880,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
@@ -3890,6 +3954,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
@@ -3966,6 +4031,7 @@ class Program {
         <exception cref="T:System.Security.SecurityException">
           <see cref="T:System.Security.Permissions.FileIOPermission" /> is not set to <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
@@ -4039,6 +4105,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadXmlSchema">
@@ -4049,6 +4116,7 @@ class Program {
       </AssemblyInfo>
       <Docs>
         <summary>Reads an XML schema into the <see cref="T:System.Data.DataSet" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ReadXmlSchema">
@@ -4111,6 +4179,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ReadXmlSchema">
@@ -4174,6 +4243,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ReadXmlSchema">
@@ -4236,6 +4306,7 @@ class Program {
         <exception cref="T:System.Security.SecurityException">
           <see cref="T:System.Security.Permissions.FileIOPermission" /> is not set to <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ReadXmlSchema">
@@ -4299,6 +4370,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ReadXmlSerializable">
@@ -4389,6 +4461,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Relations">
@@ -4442,6 +4515,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="RemotingFormat">
@@ -4479,6 +4553,7 @@ class Program {
         <summary>Gets or sets a <see cref="T:System.Data.SerializationFormat" /> for the <see cref="T:System.Data.DataSet" /> used during remoting.</summary>
         <value>A <see cref="T:System.Data.SerializationFormat" /> object.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -4512,6 +4587,7 @@ class Program {
       <Docs>
         <summary>Clears all tables and removes all relations, foreign constraints, and tables from the <see cref="T:System.Data.DataSet" />. Subclasses should override <see cref="M:System.Data.DataSet.Reset" /> to restore a <see cref="T:System.Data.DataSet" /> to its original state.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="SchemaSerializationMode">
@@ -4570,6 +4646,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeRelations">
@@ -4620,6 +4697,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeTables">
@@ -4670,6 +4748,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -4721,6 +4800,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IListSource.ContainsListCollection">
@@ -5020,6 +5100,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteXml">
@@ -5030,6 +5111,7 @@ class Program {
       </AssemblyInfo>
       <Docs>
         <summary>Writes XML data, and optionally the schema, from the <see cref="T:System.Data.DataSet" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="WriteXml">
@@ -5085,6 +5167,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
@@ -5133,6 +5216,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
@@ -5184,6 +5268,7 @@ class Program {
         <exception cref="T:System.Security.SecurityException">
           <see cref="T:System.Security.Permissions.FileIOPermission" /> is not set to <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
@@ -5235,6 +5320,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
@@ -5284,6 +5370,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
@@ -5342,6 +5429,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
@@ -5403,6 +5491,7 @@ class Program {
         <exception cref="T:System.Security.SecurityException">
           <see cref="T:System.Security.Permissions.FileIOPermission" /> is not set to <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
@@ -5461,6 +5550,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteXmlSchema">
@@ -5471,6 +5561,7 @@ class Program {
       </AssemblyInfo>
       <Docs>
         <summary>Writes the <see cref="T:System.Data.DataSet" /> structure as an XML schema.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="WriteXmlSchema">
@@ -5527,6 +5618,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="WriteXmlSchema">
@@ -5584,6 +5676,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="WriteXmlSchema">
@@ -5640,6 +5733,7 @@ class Program {
         <exception cref="T:System.Security.SecurityException">
           <see cref="T:System.Security.Permissions.FileIOPermission" /> is not set to <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="WriteXmlSchema">
@@ -5697,6 +5791,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d4c4b69-8919-4224-8a65-6cca1c61b48f">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="WriteXmlSchema">

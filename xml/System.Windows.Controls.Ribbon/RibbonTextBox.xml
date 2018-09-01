@@ -1,4 +1,4 @@
-﻿<Type Name="RibbonTextBox" FullName="System.Windows.Controls.Ribbon.RibbonTextBox">
+<Type Name="RibbonTextBox" FullName="System.Windows.Controls.Ribbon.RibbonTextBox">
   <TypeSignature Language="C#" Value="public class RibbonTextBox : System.Windows.Controls.TextBox, System.Windows.Input.ICommandSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonTextBox extends System.Windows.Controls.TextBox implements class System.Windows.Input.ICommandSource" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonTextBox" />
@@ -302,6 +302,7 @@ Ribbon text box controls
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94">Ribbon Layout and Resizing</related>
       </Docs>
     </Member>
     <Member MemberName="ControlSizeDefinitionProperty">
@@ -730,6 +731,7 @@ Ribbon text box controls
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94">Ribbon Layout and Resizing</related>
       </Docs>
     </Member>
     <Member MemberName="LargeImageSourceProperty">
@@ -1327,6 +1329,7 @@ Ribbon text box controls
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94">Ribbon Layout and Resizing</related>
       </Docs>
     </Member>
     <Member MemberName="SmallImageSourceProperty">

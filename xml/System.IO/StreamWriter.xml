@@ -1,4 +1,4 @@
-﻿<Type Name="StreamWriter" FullName="System.IO.StreamWriter">
+<Type Name="StreamWriter" FullName="System.IO.StreamWriter">
   <TypeSignature Language="C#" Value="public class StreamWriter : System.IO.TextWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit StreamWriter extends System.IO.TextWriter" />
   <TypeSignature Language="DocId" Value="T:System.IO.StreamWriter" />
@@ -70,6 +70,10 @@
     <altmember cref="T:System.IO.StreamReader" />
     <altmember cref="T:System.Text.Encoder" />
     <altmember cref="T:System.Text.Encoding" />
+    <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+    <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+    <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+    <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -150,6 +154,9 @@
           <paramref name="stream" /> is not writable.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -227,6 +234,9 @@
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label syntax.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -299,6 +309,9 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="stream" /> is not writable.</exception>
         <altmember cref="T:System.Text.Encoding" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -379,6 +392,9 @@
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -455,6 +471,9 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="stream" /> is not writable.</exception>
         <altmember cref="T:System.Text.Encoding" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -537,6 +556,9 @@
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.Text.Encoding" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -692,6 +714,9 @@
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.Text.Encoding" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="AutoFlush">
@@ -754,6 +779,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="BaseStream">
@@ -800,6 +828,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -856,6 +887,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Text.EncoderFallbackException">The current encoding does not support displaying half of a Unicode surrogate pair.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -913,6 +947,9 @@
   
  This method calls the dispose method of the base class, <see cref="M:System.IO.TextWriter.Dispose(System.Boolean)" />.</para>
         </block>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -970,6 +1007,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -1045,6 +1085,9 @@
         <exception cref="T:System.IO.IOException">An I/O error has occurred.</exception>
         <exception cref="T:System.Text.EncoderFallbackException">The current encoding does not support displaying half of a Unicode surrogate pair.</exception>
         <altmember cref="M:System.IO.Stream.Close" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="FlushAsync">
@@ -1147,6 +1190,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Write">
@@ -1216,6 +1262,9 @@
           <see cref="P:System.IO.StreamWriter.AutoFlush" /> is true or the <see cref="T:System.IO.StreamWriter" /> buffer is full, and current writer is closed.</exception>
         <exception cref="T:System.NotSupportedException">
           <see cref="P:System.IO.StreamWriter.AutoFlush" /> is true or the <see cref="T:System.IO.StreamWriter" /> buffer is full, and the contents of the buffer cannot be written to the underlying fixed size stream because the <see cref="T:System.IO.StreamWriter" /> is at the end the stream.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1281,6 +1330,9 @@
           <see cref="P:System.IO.StreamWriter.AutoFlush" /> is true or the <see cref="T:System.IO.StreamWriter" /> buffer is full, and current writer is closed.</exception>
         <exception cref="T:System.NotSupportedException">
           <see cref="P:System.IO.StreamWriter.AutoFlush" /> is true or the <see cref="T:System.IO.StreamWriter" /> buffer is full, and the contents of the buffer cannot be written to the underlying fixed size stream because the <see cref="T:System.IO.StreamWriter" /> is at the end the stream.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1370,6 +1422,9 @@
         <exception cref="T:System.NotSupportedException">
           <see cref="P:System.IO.StreamWriter.AutoFlush" /> is true or the <see cref="T:System.IO.StreamWriter" /> buffer is full, and the contents of the buffer cannot be written to the underlying fixed size stream because the <see cref="T:System.IO.StreamWriter" /> is at the end the stream.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1451,6 +1506,9 @@
           <see cref="P:System.IO.StreamWriter.AutoFlush" /> is true or the <see cref="T:System.IO.StreamWriter" /> buffer is full, and current writer is closed.</exception>
         <exception cref="T:System.NotSupportedException">
           <see cref="P:System.IO.StreamWriter.AutoFlush" /> is true or the <see cref="T:System.IO.StreamWriter" /> buffer is full, and the contents of the buffer cannot be written to the underlying fixed size stream because the <see cref="T:System.IO.StreamWriter" /> is at the end the stream.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteAsync">

@@ -1,4 +1,4 @@
-﻿<Type Name="TextViewElement" FullName="System.Web.UI.MobileControls.TextViewElement">
+<Type Name="TextViewElement" FullName="System.Web.UI.MobileControls.TextViewElement">
   <TypeSignature Language="C#" Value="public class TextViewElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextViewElement extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.TextViewElement" />
@@ -33,6 +33,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dkh2b1x0(v=vs.85)">Introduction to the TextView Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
   </Docs>
   <Members>
     <Member MemberName="BreakAfter">
@@ -106,6 +108,7 @@
         <value>
           <see langword="true" /> if text is bold; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dkh2b1x0(v=vs.85)">Introduction to the TextView Control</related>
       </Docs>
     </Member>
     <Member MemberName="IsItalic">
@@ -130,6 +133,7 @@
         <value>
           <see langword="true" /> if text is italic; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dkh2b1x0(v=vs.85)">Introduction to the TextView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -160,6 +164,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dkh2b1x0(v=vs.85)">Introduction to the TextView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -183,6 +188,7 @@
         <summary>Returns the URL of the text. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The URL of the text.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dkh2b1x0(v=vs.85)">Introduction to the TextView Control</related>
       </Docs>
     </Member>
   </Members>

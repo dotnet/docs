@@ -1,4 +1,4 @@
-﻿<Type Name="WebProcessStatistics" FullName="System.Web.Management.WebProcessStatistics">
+<Type Name="WebProcessStatistics" FullName="System.Web.Management.WebProcessStatistics">
   <TypeSignature Language="C#" Value="public class WebProcessStatistics" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi WebProcessStatistics extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebProcessStatistics" />
@@ -76,6 +76,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.Management.WebHeartbeatEvent" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

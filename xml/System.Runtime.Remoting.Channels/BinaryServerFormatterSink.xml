@@ -1,4 +1,4 @@
-﻿<Type Name="BinaryServerFormatterSink" FullName="System.Runtime.Remoting.Channels.BinaryServerFormatterSink">
+<Type Name="BinaryServerFormatterSink" FullName="System.Runtime.Remoting.Channels.BinaryServerFormatterSink">
   <TypeSignature Language="C#" Value="public class BinaryServerFormatterSink : System.Runtime.Remoting.Channels.IChannelSinkBase, System.Runtime.Remoting.Channels.IServerChannelSink" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BinaryServerFormatterSink extends System.Object implements class System.Runtime.Remoting.Channels.IChannelSinkBase, class System.Runtime.Remoting.Channels.IServerChannelSink" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.BinaryServerFormatterSink" />
@@ -36,7 +36,7 @@
 |--------------|-----------------|  
 |`includeVersions`|Specifies whether the formatter will include versioning information. Values `true` or `false`.|  
 |`strictBinding`|Indicates that a receiving formatter will first try to identify the type using complete version information if it exists before using only the type name and assembly name without version information. Values `true` or `false`. The default for both system-provided formatters is `false`.|  
-|`typeFilterLevel`|A string value that specifies the level of automatic deserialization that a server channel attempts. Supported values are `Low` (the default) and `Full`. For details about deserialization levels, see [&#91;\<topic://cpconAutomaticDeserializationInNETRemoting>&#93;](http://msdn.microsoft.com/library/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).<br /><br /> This property is supported only by the .NET Framework version 1.1 on the following platforms: Windows 98, Windows NT 4.0, Windows Millennium Edition, Windows 2000, Windows XP Home Edition, Windows XP Professional, and Windows Server 2003 family.|  
+|`typeFilterLevel`|A string value that specifies the level of automatic deserialization that a server channel attempts. Supported values are `Low` (the default) and `Full`. For details about deserialization levels, see [Automatic Deserialization in .NET Framework Remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5dxse167(v=vs.100)).<br /><br /> This property is supported only by the .NET Framework version 1.1 on the following platforms: Windows 98, Windows NT 4.0, Windows Millennium Edition, Windows 2000, Windows XP Home Edition, Windows XP Professional, and Windows Server 2003 family.|  
   
 > [!IMPORTANT]
 >  Using an instance of this object with untrusted data or across an unsecure channel is a security risk. Use this object only with trusted data and across a secure channel. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
@@ -44,6 +44,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tdzwhfy3(v=vs.100)">Sinks and Sink Chains</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5dxse167(v=vs.100)">Automatic Deserialization in .NET Framework Remoting</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -105,6 +107,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Runtime.Remoting.Channels.ServerChannelSinkStack" />
         <altmember cref="M:System.Runtime.Remoting.Channels.ServerChannelSinkStack.Push(System.Runtime.Remoting.Channels.IServerChannelSink,System.Object)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tdzwhfy3(v=vs.100)">Sinks and Sink Chains</related>
       </Docs>
     </Member>
     <Member MemberName="GetResponseStream">
@@ -145,6 +148,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tdzwhfy3(v=vs.100)">Sinks and Sink Chains</related>
       </Docs>
     </Member>
     <Member MemberName="NextChannelSink">
@@ -246,10 +250,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [&#91;\<topic://cpconchannelformatterconfigurationproperties>&#93;](http://msdn.microsoft.com/library/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+ For more information, see [&#91;\<topic://cpconchannelformatterconfigurationproperties>&#93;](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kw7c6kwc(v=vs.100)).  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kw7c6kwc(v=vs.100)">Channel and Formatter Configuration Properties</related>
       </Docs>
     </Member>
     <Member MemberName="TypeFilterLevel">
@@ -281,7 +286,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Supported values are `Low` (the default) and `Full`. For details about deserialization levels, see [Automatic Deserialization in .NET Remoting](http://msdn.microsoft.com/library/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).  
+ Supported values are `Low` (the default) and `Full`. For details about deserialization levels, see [Automatic Deserialization in .NET Remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5dxse167(v=vs.100)).  
   
  ]]></format>
         </remarks>

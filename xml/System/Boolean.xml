@@ -1,4 +1,4 @@
-﻿<Type Name="Boolean" FullName="System.Boolean">
+<Type Name="Boolean" FullName="System.Boolean">
   <TypeSignature Language="C#" Value="public struct Boolean : IComparable, IComparable&lt;bool&gt;, IConvertible, IEquatable&lt;bool&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit bool extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;bool&gt;, class System.IConvertible, class System.IEquatable`1&lt;bool&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Boolean" />
@@ -713,6 +713,7 @@
           <paramref name="value" /> is not equivalent to <see cref="F:System.Boolean.TrueString" /> or <see cref="F:System.Boolean.FalseString" />.</exception>
         <altmember cref="F:System.Boolean.TrueString" />
         <altmember cref="F:System.Boolean.FalseString" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d139bc00-3c4e-4d78-ac9a-5c951b258d28">Parsing Other Strings</related>
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -1820,6 +1821,7 @@
         <altmember cref="M:System.Boolean.Parse(System.String)" />
         <altmember cref="F:System.Boolean.TrueString" />
         <altmember cref="F:System.Boolean.FalseString" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d139bc00-3c4e-4d78-ac9a-5c951b258d28">Parsing Other Strings in the .NET Framework</related>
       </Docs>
     </Member>
   </Members>

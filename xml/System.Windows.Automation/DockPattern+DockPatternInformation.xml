@@ -1,4 +1,4 @@
-﻿<Type Name="DockPattern+DockPatternInformation" FullName="System.Windows.Automation.DockPattern+DockPatternInformation">
+<Type Name="DockPattern+DockPatternInformation" FullName="System.Windows.Automation.DockPattern+DockPatternInformation">
   <TypeSignature Language="C#" Value="public struct DockPattern.DockPatternInformation" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit DockPattern/DockPatternInformation extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.DockPattern.DockPatternInformation" />
@@ -25,6 +25,9 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Automation.Provider.IDockProvider" />
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md">UI Automation Control Patterns for Clients</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
   </Docs>
   <Members>
     <Member MemberName="DockPosition">

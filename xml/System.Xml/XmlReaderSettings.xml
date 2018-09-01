@@ -1,4 +1,4 @@
-﻿<Type Name="XmlReaderSettings" FullName="System.Xml.XmlReaderSettings">
+<Type Name="XmlReaderSettings" FullName="System.Xml.XmlReaderSettings">
   <TypeSignature Language="C#" Value="public sealed class XmlReaderSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlReaderSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlReaderSettings" />
@@ -68,6 +68,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -228,6 +229,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CheckCharacters">

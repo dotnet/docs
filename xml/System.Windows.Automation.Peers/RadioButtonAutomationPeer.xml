@@ -1,4 +1,4 @@
-﻿<Type Name="RadioButtonAutomationPeer" FullName="System.Windows.Automation.Peers.RadioButtonAutomationPeer">
+<Type Name="RadioButtonAutomationPeer" FullName="System.Windows.Automation.Peers.RadioButtonAutomationPeer">
   <TypeSignature Language="C#" Value="public class RadioButtonAutomationPeer : System.Windows.Automation.Peers.ToggleButtonAutomationPeer, System.Windows.Automation.Provider.ISelectionItemProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RadioButtonAutomationPeer extends System.Windows.Automation.Peers.ToggleButtonAutomationPeer implements class System.Windows.Automation.Provider.ISelectionItemProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RadioButtonAutomationPeer" />
@@ -21,6 +21,7 @@
   <Docs>
     <summary>Exposes <see cref="T:System.Windows.Controls.RadioButton" /> types to UI Automation.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,6 +49,7 @@
         <param name="owner">The <see cref="T:System.Windows.Controls.RadioButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RadioButtonAutomationPeer" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.RadioButtonAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">
@@ -71,6 +73,7 @@
         <summary>Gets the control type for the <see cref="T:System.Windows.Controls.RadioButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RadioButtonAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />..</summary>
         <returns>The control type for the <see cref="T:System.Windows.Controls.RadioButton" /> object.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">
@@ -95,6 +98,7 @@
         <returns>A string that contains "RadioButton".</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassNameCore" />
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPattern">

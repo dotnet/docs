@@ -1,4 +1,4 @@
-﻿<Type Name="PlaceHolder" FullName="System.Web.UI.WebControls.PlaceHolder">
+<Type Name="PlaceHolder" FullName="System.Web.UI.WebControls.PlaceHolder">
   <TypeSignature Language="C#" Value="public class PlaceHolder : System.Web.UI.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PlaceHolder extends System.Web.UI.Control" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PlaceHolder" />
@@ -68,6 +68,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.Control" />
     <altmember cref="P:System.Web.UI.Control.Controls" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8b0589d2-5b61-4b06-8bda-8c1dc187f881">PlaceHolder Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -92,6 +93,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.PlaceHolder" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b0589d2-5b61-4b06-8bda-8c1dc187f881">PlaceHolder Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -134,6 +136,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Control.SkinID" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b0589d2-5b61-4b06-8bda-8c1dc187f881">PlaceHolder Web Server Control</related>
       </Docs>
     </Member>
   </Members>

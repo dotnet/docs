@@ -1,4 +1,4 @@
-﻿<Type Name="ServiceBehaviorElement" FullName="System.ServiceModel.Configuration.ServiceBehaviorElement">
+<Type Name="ServiceBehaviorElement" FullName="System.ServiceModel.Configuration.ServiceBehaviorElement">
   <TypeSignature Language="C#" Value="public class ServiceBehaviorElement : System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement&lt;System.ServiceModel.Configuration.BehaviorExtensionElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceBehaviorElement extends System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement`1&lt;class System.ServiceModel.Configuration.BehaviorExtensionElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceBehaviorElement" />
@@ -20,6 +20,7 @@
   <Docs>
     <summary>Represents a configuration element that contains a list of service behaviors that is applied to all Windows Communication Foundation (WCF) services on the machine.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/5aed9062-cc36-4b72-b9dd-a3018b8ffafc">&lt;serviceBehaviors&gt;</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

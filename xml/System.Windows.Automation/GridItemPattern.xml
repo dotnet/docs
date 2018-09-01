@@ -1,4 +1,4 @@
-﻿<Type Name="GridItemPattern" FullName="System.Windows.Automation.GridItemPattern">
+<Type Name="GridItemPattern" FullName="System.Windows.Automation.GridItemPattern">
   <TypeSignature Language="C#" Value="public class GridItemPattern : System.Windows.Automation.BasePattern" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridItemPattern extends System.Windows.Automation.BasePattern" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.GridItemPattern" />
@@ -25,6 +25,9 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Automation.Provider.IGridItemProvider" />
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md">UI Automation Control Patterns for Clients</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/bffbae08-fe2a-42fd-ab84-f37187518916">Implementing the UI Automation GridItem Control Pattern</related>
   </Docs>
   <Members>
     <Member MemberName="Cached">

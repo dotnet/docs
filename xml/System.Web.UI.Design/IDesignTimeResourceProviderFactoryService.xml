@@ -1,4 +1,4 @@
-﻿<Type Name="IDesignTimeResourceProviderFactoryService" FullName="System.Web.UI.Design.IDesignTimeResourceProviderFactoryService">
+<Type Name="IDesignTimeResourceProviderFactoryService" FullName="System.Web.UI.Design.IDesignTimeResourceProviderFactoryService">
   <TypeSignature Language="C#" Value="public interface IDesignTimeResourceProviderFactoryService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDesignTimeResourceProviderFactoryService" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDesignTimeResourceProviderFactoryService" />
@@ -15,6 +15,8 @@
     <summary>Provides an interface for creating a custom <see cref="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" /> class.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName="GetFactory">
@@ -39,6 +41,8 @@
         <returns>A design time resource provider factory.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

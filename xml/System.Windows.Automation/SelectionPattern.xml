@@ -1,4 +1,4 @@
-﻿<Type Name="SelectionPattern" FullName="System.Windows.Automation.SelectionPattern">
+<Type Name="SelectionPattern" FullName="System.Windows.Automation.SelectionPattern">
   <TypeSignature Language="C#" Value="public class SelectionPattern : System.Windows.Automation.BasePattern" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SelectionPattern extends System.Windows.Automation.BasePattern" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.SelectionPattern" />
@@ -25,6 +25,9 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Automation.Provider.ISelectionProvider" />
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md">UI Automation Control Patterns for Clients</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/449c3068-a5d6-4f66-84c6-1bcc7dd4d209">Implementing the UI Automation Selection Control Pattern</related>
   </Docs>
   <Members>
     <Member MemberName="Cached">

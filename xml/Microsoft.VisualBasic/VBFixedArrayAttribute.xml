@@ -1,4 +1,4 @@
-﻿<Type Name="VBFixedArrayAttribute" FullName="Microsoft.VisualBasic.VBFixedArrayAttribute">
+<Type Name="VBFixedArrayAttribute" FullName="Microsoft.VisualBasic.VBFixedArrayAttribute">
   <TypeSignature Language="C#" Value="public sealed class VBFixedArrayAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VBFixedArrayAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.VBFixedArrayAttribute" />
@@ -42,6 +42,7 @@
     <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Array@,System.Int64,System.Boolean,System.Boolean)" />
     <altmember cref="M:Microsoft.VisualBasic.FileSystem.FilePut(System.Int32,System.Array,System.Int64,System.Boolean,System.Boolean)" />
     <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/attributes.md">Attributes (Visual Basic)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -82,6 +83,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Runtime.InteropServices.MarshalAsAttribute" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/attributes.md">Attributes (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md">Object Lifetime: How Objects Are Created and Destroyed</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -115,6 +118,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Runtime.InteropServices.MarshalAsAttribute" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/attributes.md">Attributes (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md">Object Lifetime: How Objects Are Created and Destroyed</related>
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -146,6 +151,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Runtime.InteropServices.MarshalAsAttribute" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/attributes.md">Attributes (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -177,6 +183,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Runtime.InteropServices.MarshalAsAttribute" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/attributes.md">Attributes (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

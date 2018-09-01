@@ -1,4 +1,4 @@
-﻿<Type Name="TimeoutException" FullName="System.TimeoutException">
+<Type Name="TimeoutException" FullName="System.TimeoutException">
   <TypeSignature Language="C#" Value="public class TimeoutException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TimeoutException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.TimeoutException" />
@@ -61,6 +61,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -220,6 +221,7 @@
         <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is <see langword="null" />, or <see cref="P:System.Exception.HResult" /> is zero (0).</exception>
         <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
         <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2b1ea3be-1152-4032-b2b3-07794054c405">Binary Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

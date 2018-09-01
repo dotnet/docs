@@ -1,4 +1,4 @@
-﻿<Type Name="ExtensionsSection" FullName="System.ServiceModel.Configuration.ExtensionsSection">
+<Type Name="ExtensionsSection" FullName="System.ServiceModel.Configuration.ExtensionsSection">
   <TypeSignature Language="C#" Value="public class ExtensionsSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExtensionsSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ExtensionsSection" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents a configuration section that contains all the extension definitions.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/bcfe5c44-04ef-4a20-96a5-90bfadf39623">&lt;extensions&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,6 +75,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/59f2791a-c78f-40d7-aa80-0d9cd10135d9">&lt;behaviorExtensions&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="BindingElementExtensions">
@@ -135,6 +137,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/59f2791a-c78f-40d7-aa80-0d9cd10135d9">&lt;behaviorExtensions&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="EndpointExtensions">

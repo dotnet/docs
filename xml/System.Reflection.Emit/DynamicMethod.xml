@@ -1,4 +1,4 @@
-﻿<Type Name="DynamicMethod" FullName="System.Reflection.Emit.DynamicMethod">
+<Type Name="DynamicMethod" FullName="System.Reflection.Emit.DynamicMethod">
   <TypeSignature Language="C#" Value="public sealed class DynamicMethod : System.Reflection.MethodInfo" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit DynamicMethod extends System.Reflection.MethodInfo" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.DynamicMethod" />
@@ -94,6 +94,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md">How to: Define and Execute Dynamic Methods</related>
+    <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
+    <related type="Article" href="~/docs/framework/reflection-and-codedom/walkthrough-emitting-code-in-partial-trust-scenarios.md">Walkthrough: Emitting Code in Partial Trust Scenarios</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -162,6 +165,9 @@
           <paramref name="name" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="returnType" /> is a type for which <see cref="P:System.Type.IsByRef" /> returns <see langword="true" />.</exception>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md">How to: Define and Execute Dynamic Methods</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/walkthrough-emitting-code-in-partial-trust-scenarios.md">Walkthrough: Emitting Code in Partial Trust Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -236,6 +242,9 @@
           <paramref name="name" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="returnType" /> is a type for which <see cref="P:System.Type.IsByRef" /> returns <see langword="true" />.</exception>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md">How to: Define and Execute Dynamic Methods</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/walkthrough-emitting-code-in-partial-trust-scenarios.md">Walkthrough: Emitting Code in Partial Trust Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -313,6 +322,8 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="returnType" /> is a type for which <see cref="P:System.Type.IsByRef" /> returns <see langword="true" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">to associate the dynamic method with a module other than the calling module. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess" />.</permission>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md">How to: Define and Execute Dynamic Methods</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -403,6 +414,8 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="returnType" /> is <see langword="null" />, or is a type for which <see cref="P:System.Type.IsByRef" /> returns <see langword="true" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">to associate the dynamic method with a type in a module other than the calling module. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess" />.</permission>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md">How to: Define and Execute Dynamic Methods</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -474,6 +487,8 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="returnType" /> is a type for which <see cref="P:System.Type.IsByRef" /> returns <see langword="true" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">to associate the dynamic method with a module other than the calling module. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess" />.</permission>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md">How to: Define and Execute Dynamic Methods</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -545,6 +560,8 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="returnType" /> is <see langword="null" />, or is a type for which <see cref="P:System.Type.IsByRef" /> returns <see langword="true" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">to associate the dynamic method with a type in a module other than the calling module. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess" />.</permission>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md">How to: Define and Execute Dynamic Methods</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -630,6 +647,8 @@
         <permission cref="T:System.Security.Permissions.ReflectionPermission">to associate the dynamic method with a module other than the calling module. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess" />.</permission>
         <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md">How to: Define and Execute Dynamic Methods</related>
         <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md">How to: Define and Execute Dynamic Methods</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -713,6 +732,8 @@
   
  <paramref name="returnType" /> is a type for which <see cref="P:System.Type.IsByRef" /> returns <see langword="true" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">to associate the dynamic method with a type in a module other than the calling module. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess" />.</permission>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md">How to: Define and Execute Dynamic Methods</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -872,6 +893,7 @@
         <exception cref="T:System.InvalidOperationException">The dynamic method has no method body.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="delegateType" /> has the wrong number of parameters or the wrong parameter types.</exception>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md">How to: Define and Execute Dynamic Methods</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDelegate">
@@ -1289,6 +1311,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md">How to: Define and Execute Dynamic Methods</related>
       </Docs>
     </Member>
     <Member MemberName="GetILGenerator">
@@ -1345,6 +1368,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md">How to: Define and Execute Dynamic Methods</related>
       </Docs>
     </Member>
     <Member MemberName="GetMethodImplementationFlags">
@@ -1672,6 +1696,11 @@
         <exception cref="T:System.InvalidOperationException">The dynamic method doesn't have a method body.</exception>
         <altmember cref="P:System.Reflection.Emit.DynamicMethod.IsSecuritySafeCritical" />
         <altmember cref="P:System.Reflection.Emit.DynamicMethod.IsSecurityTransparent" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
+        <related type="Article" href="~/docs/framework/security/security-changes.md">Security Changes in the .NET Framework Version 4.0</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/5fd8f46d-3961-46a7-84af-2eb1f48e75cf">Security-Transparent Code, Level 1</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0">Security-Transparent Code, Level 2</related>
       </Docs>
     </Member>
     <Member MemberName="IsSecuritySafeCritical">
@@ -1739,6 +1768,11 @@
         <exception cref="T:System.InvalidOperationException">The dynamic method doesn't have a method body.</exception>
         <altmember cref="P:System.Reflection.Emit.DynamicMethod.IsSecurityCritical" />
         <altmember cref="P:System.Reflection.Emit.DynamicMethod.IsSecurityTransparent" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
+        <related type="Article" href="~/docs/framework/security/security-changes.md">Security Changes in the .NET Framework Version 4.0</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/5fd8f46d-3961-46a7-84af-2eb1f48e75cf">Security-Transparent Code, Level 1</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0">Security-Transparent Code, Level 2</related>
       </Docs>
     </Member>
     <Member MemberName="IsSecurityTransparent">
@@ -1806,6 +1840,11 @@
         <exception cref="T:System.InvalidOperationException">The dynamic method doesn't have a method body.</exception>
         <altmember cref="P:System.Reflection.Emit.DynamicMethod.IsSecurityCritical" />
         <altmember cref="P:System.Reflection.Emit.DynamicMethod.IsSecuritySafeCritical" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
+        <related type="Article" href="~/docs/framework/security/security-changes.md">Security Changes in the .NET Framework Version 4.0</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/5fd8f46d-3961-46a7-84af-2eb1f48e75cf">Security-Transparent Code, Level 1</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0">Security-Transparent Code, Level 2</related>
       </Docs>
     </Member>
     <Member MemberName="MethodHandle">

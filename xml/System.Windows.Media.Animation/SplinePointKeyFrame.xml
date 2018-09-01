@@ -1,4 +1,4 @@
-﻿<Type Name="SplinePointKeyFrame" FullName="System.Windows.Media.Animation.SplinePointKeyFrame">
+<Type Name="SplinePointKeyFrame" FullName="System.Windows.Media.Animation.SplinePointKeyFrame">
   <TypeSignature Language="C#" Value="public class SplinePointKeyFrame : System.Windows.Media.Animation.PointKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SplinePointKeyFrame extends System.Windows.Media.Animation.PointKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SplinePointKeyFrame" />
@@ -222,6 +222,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160012">KeyFrame Animation Sample</related>
       </Docs>
     </Member>
     <Member MemberName="KeySplineProperty">

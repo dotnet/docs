@@ -1,4 +1,4 @@
-﻿<Type Name="SmtpClient" FullName="System.Net.Mail.SmtpClient">
+<Type Name="SmtpClient" FullName="System.Net.Mail.SmtpClient">
   <TypeSignature Language="C#" Value="public class SmtpClient : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SmtpClient extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.SmtpClient" />
@@ -92,6 +92,10 @@
  ]]></format>
     </remarks>
     <altmember cref="N:System.Net.Mime" />
+    <related type="Article" href="~/docs/framework/network-programming/index.md">Network Programming in the .NET Framework</related>
+    <related type="Article" href="~/docs/framework/network-programming/network-programming-samples.md">Network Programming Samples</related>
+    <related type="Article" href="~/docs/framework/network-programming/network-tracing.md">Network Tracing in the .NET Framework</related>
+    <related type="Article" href="~/docs/framework/network-programming/security-in-network-programming.md">Security in Network Programming</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -306,6 +310,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md">MailSettings Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="Credentials">
@@ -449,6 +454,8 @@
         </remarks>
         <altmember cref="T:System.Net.Configuration.SmtpSection" />
         <altmember cref="P:System.Net.Configuration.SmtpSection.DeliveryMethod" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md">&lt;mailSettings&gt; Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md">&lt;smtp&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -656,6 +663,9 @@
         <altmember cref="T:System.Net.Configuration.SmtpSection" />
         <altmember cref="T:System.Net.Configuration.SmtpNetworkElement" />
         <altmember cref="P:System.Net.Configuration.SmtpNetworkElement.EnableSsl" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md">&lt;mailSettings&gt; Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md">&lt;smtp&gt; Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/network-element-network-settings.md">&lt;network&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="Host">
@@ -717,6 +727,9 @@
         <altmember cref="T:System.Net.Configuration.SmtpNetworkElement" />
         <altmember cref="P:System.Net.Configuration.SmtpNetworkElement.Host" />
         <altmember cref="P:System.Net.Mail.SmtpClient.Port" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md">mailSettings for system.net</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md">&lt;smtp&gt; Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/network-element-network-settings.md">&lt;network&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="OnSendCompleted">
@@ -815,6 +828,8 @@
         </remarks>
         <altmember cref="T:System.Net.Configuration.SmtpSection" />
         <altmember cref="P:System.Net.Configuration.SmtpSection.DeliveryMethod" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md">&lt;mailSettings&gt; Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md">&lt;smtp&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="Port">
@@ -874,6 +889,9 @@
         <altmember cref="T:System.Net.Configuration.SmtpNetworkElement" />
         <altmember cref="P:System.Net.Configuration.SmtpNetworkElement.Port" />
         <altmember cref="P:System.Net.Mail.SmtpClient.Host" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md">mailSettings for system.net</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md">&lt;smtp&gt; Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/network-element-network-settings.md">&lt;network&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Send">
@@ -1631,6 +1649,8 @@
  -or-  
   
  <see cref="P:System.Net.Mail.SmtpClient.Port" /> is zero.</exception>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/connectionmanagement-element-network-settings.md">connectionManagement Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/network-programming/managing-connections.md">Managing Connections</related>
       </Docs>
     </Member>
     <Member MemberName="TargetName">
@@ -1683,6 +1703,10 @@
         <altmember cref="T:System.Net.Configuration.SmtpSection" />
         <altmember cref="T:System.Net.Configuration.SmtpNetworkElement" />
         <altmember cref="P:System.Net.Configuration.SmtpNetworkElement.TargetName" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md">&lt;mailSettings&gt; Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md">&lt;smtp&gt; Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/network-element-network-settings.md">&lt;network&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="Timeout">

@@ -45,7 +45,7 @@
 ## Remarks  
  Use the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration with the <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=nameWithType> attribute to specify how types are marshaled during interoperation with unmanaged code.  You can use this enumeration to marshal code using simple value types (I1, I2, I4, I8, R4, R8, U2, U4, and U8), unmanaged types that are unavailable in the .NET Framework, and various miscellaneous types.  
   
- For more information, see [Interoperating with Unmanaged Code](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258).  
+ For more information, see [Interoperating with Unmanaged Code](~/docs/framework/interop/index.md).  
   
    
   

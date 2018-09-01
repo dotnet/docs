@@ -1,4 +1,4 @@
-﻿<Type Name="Region" FullName="System.Drawing.Region">
+<Type Name="Region" FullName="System.Drawing.Region">
   <TypeSignature Language="C#" Value="public sealed class Region : MarshalByRefObject, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Region extends System.MarshalByRefObject implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Region" />
@@ -49,6 +49,7 @@
     </remarks>
     <altmember cref="T:System.Drawing.Rectangle" />
     <altmember cref="T:System.Drawing.Drawing2D.GraphicsPath" />
+    <related type="Article" href="http://msdn.microsoft.com/library/7809295b-870f-4107-a8b5-8386c298acd5">Using Regions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

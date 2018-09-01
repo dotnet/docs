@@ -1,4 +1,4 @@
-﻿<Type Name="FieldType" FullName="Microsoft.VisualBasic.FileIO.FieldType">
+<Type Name="FieldType" FullName="Microsoft.VisualBasic.FileIO.FieldType">
   <TypeSignature Language="C#" Value="public enum FieldType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FieldType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.FieldType" />
@@ -26,6 +26,8 @@
     <altmember cref="P:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType" />
     <altmember cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" />
     <altmember cref="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.OpenTextFieldParser(System.String)" />
+    <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From a Comma-Delimited Text File in Visual Basic</related>
+    <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md">How to: Read From a Fixed-width Text File in Visual Basic</related>
   </Docs>
   <Members>
     <Member MemberName="Delimited">

@@ -1,4 +1,4 @@
-﻿<Type Name="IWebEventCustomEvaluator" FullName="System.Web.Management.IWebEventCustomEvaluator">
+<Type Name="IWebEventCustomEvaluator" FullName="System.Web.Management.IWebEventCustomEvaluator">
   <TypeSignature Language="C#" Value="public interface IWebEventCustomEvaluator" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebEventCustomEvaluator" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.IWebEventCustomEvaluator" />
@@ -73,6 +73,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.Management.RuleFiringRecord" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
   </Docs>
   <Members>
     <Member MemberName="CanFire">

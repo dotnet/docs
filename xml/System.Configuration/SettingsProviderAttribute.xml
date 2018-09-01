@@ -1,4 +1,4 @@
-﻿<Type Name="SettingsProviderAttribute" FullName="System.Configuration.SettingsProviderAttribute">
+<Type Name="SettingsProviderAttribute" FullName="System.Configuration.SettingsProviderAttribute">
   <TypeSignature Language="C#" Value="public sealed class SettingsProviderAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SettingsProviderAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsProviderAttribute" />
@@ -42,6 +42,7 @@
     </remarks>
     <altmember cref="T:System.Configuration.SettingsProvider" />
     <altmember cref="T:System.Configuration.SettingsBase" />
+    <related type="Article" href="http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562">Application Settings Architecture</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

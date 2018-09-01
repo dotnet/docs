@@ -1,4 +1,4 @@
-﻿<Type Name="AsymmetricSignatureFormatter" FullName="System.Security.Cryptography.AsymmetricSignatureFormatter">
+<Type Name="AsymmetricSignatureFormatter" FullName="System.Security.Cryptography.AsymmetricSignatureFormatter">
   <TypeSignature Language="C#" Value="public abstract class AsymmetricSignatureFormatter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AsymmetricSignatureFormatter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.AsymmetricSignatureFormatter" />
@@ -40,6 +40,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +79,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateSignature">
@@ -132,6 +134,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="CreateSignature">
@@ -177,6 +180,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="hash" /> parameter is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="SetHashAlgorithm">
@@ -220,6 +224,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="SetKey">
@@ -263,6 +268,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
   </Members>

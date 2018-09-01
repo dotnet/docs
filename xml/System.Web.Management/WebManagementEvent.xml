@@ -1,4 +1,4 @@
-﻿<Type Name="WebManagementEvent" FullName="System.Web.Management.WebManagementEvent">
+<Type Name="WebManagementEvent" FullName="System.Web.Management.WebManagementEvent">
   <TypeSignature Language="C#" Value="public class WebManagementEvent : System.Web.Management.WebBaseEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebManagementEvent extends System.Web.Management.WebBaseEvent" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebManagementEvent" />
@@ -63,6 +63,7 @@
  The event code you specify for your custom event must be greater than <see cref="F:System.Web.Management.WebEventCodes.WebExtendedBase" />.</para>
     </block>
     <altmember cref="T:System.Web.Management.WebAuditEvent" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

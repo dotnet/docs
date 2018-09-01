@@ -1,4 +1,4 @@
-﻿<Type Name="HyperLinkColumn" FullName="System.Web.UI.WebControls.HyperLinkColumn">
+<Type Name="HyperLinkColumn" FullName="System.Web.UI.WebControls.HyperLinkColumn">
   <TypeSignature Language="C#" Value="public class HyperLinkColumn : System.Web.UI.WebControls.DataGridColumn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HyperLinkColumn extends System.Web.UI.WebControls.DataGridColumn" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HyperLinkColumn" />
@@ -71,6 +71,9 @@
     <altmember cref="T:System.Web.UI.WebControls.ButtonColumn" />
     <altmember cref="T:System.Web.UI.WebControls.EditCommandColumn" />
     <altmember cref="T:System.Web.UI.WebControls.TemplateColumn" />
+    <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461">Introduction to Validating User Input in ASP.NET Web Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -225,6 +228,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlField" />
         <altmember cref="M:System.String.Format(System.String,System.Object)" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="DataTextField">
@@ -340,6 +344,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.HyperLinkColumn.DataTextField" />
         <altmember cref="M:System.String.Format(System.String,System.Object)" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="FormatDataNavigateUrlValue">
@@ -626,6 +631,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Web Server Controls and Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName="Text">

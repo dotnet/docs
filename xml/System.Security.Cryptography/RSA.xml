@@ -1,4 +1,4 @@
-﻿<Type Name="RSA" FullName="System.Security.Cryptography.RSA">
+<Type Name="RSA" FullName="System.Security.Cryptography.RSA">
   <TypeSignature Language="C#" Value="public abstract class RSA : System.Security.Cryptography.AsymmetricAlgorithm" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RSA extends System.Security.Cryptography.AsymmetricAlgorithm" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSA" />
@@ -47,6 +47,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,6 +87,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Create">
@@ -140,6 +142,7 @@
         <summary>Creates an instance of the default implementation of the <see cref="T:System.Security.Cryptography.RSA" /> algorithm.</summary>
         <returns>A new instance of the default implementation of <see cref="T:System.Security.Cryptography.RSA" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -244,6 +247,7 @@
         <summary>Creates an instance of the specified implementation of <see cref="T:System.Security.Cryptography.RSA" />.</summary>
         <returns>A new instance of the specified implementation of <see cref="T:System.Security.Cryptography.RSA" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Decrypt">
@@ -330,6 +334,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method call is not supported. This exception is thrown starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)].</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Encrypt">
@@ -416,6 +421,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method call is not supported. This exception is thrown starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)].</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="ExportParameters">
@@ -457,6 +463,7 @@
         <summary>When overridden in a derived class, exports the <see cref="T:System.Security.Cryptography.RSAParameters" />.</summary>
         <returns>The parameters for <see cref="T:System.Security.Cryptography.RSA" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="FromXmlString">
@@ -509,6 +516,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="xmlString" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The format of the <paramref name="xmlString" /> parameter is not valid.</exception>
         <exception cref="T:System.PlatformNotSupportedException">.NET Core only: This member is not supported.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="HashData">
@@ -646,6 +654,7 @@
         <param name="parameters">The parameters for <see cref="T:System.Security.Cryptography.RSA" />.</param>
         <summary>When overridden in a derived class, imports the specified <see cref="T:System.Security.Cryptography.RSAParameters" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="KeyExchangeAlgorithm">
@@ -1003,6 +1012,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">.NET Core only: This member is not supported.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="TryDecrypt">

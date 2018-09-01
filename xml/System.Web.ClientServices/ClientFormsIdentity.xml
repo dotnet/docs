@@ -1,4 +1,4 @@
-﻿<Type Name="ClientFormsIdentity" FullName="System.Web.ClientServices.ClientFormsIdentity">
+<Type Name="ClientFormsIdentity" FullName="System.Web.ClientServices.ClientFormsIdentity">
   <TypeSignature Language="C#" Value="public class ClientFormsIdentity : IDisposable, System.Security.Principal.IIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClientFormsIdentity extends System.Object implements class System.IDisposable, class System.Security.Principal.IIdentity" />
   <TypeSignature Language="DocId" Value="T:System.Web.ClientServices.ClientFormsIdentity" />
@@ -56,6 +56,8 @@
     <altmember cref="P:System.Web.ClientServices.ClientFormsIdentity.IsAuthenticated" />
     <altmember cref="P:System.Web.ClientServices.ClientFormsIdentity.AuthenticationType" />
     <altmember cref="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Logout" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/bb7c8950-4517-4dae-b705-b74a14059b26">Walkthrough: Using Client Application Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -89,6 +91,7 @@
         <param name="authenticationCookies">The cookies retrieved from the authentication service.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.ClientServices.ClientFormsIdentity" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="AuthenticationCookies">
@@ -123,6 +126,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="AuthenticationType">
@@ -169,6 +173,8 @@
         <altmember cref="P:System.Security.Principal.IIdentity.IsAuthenticated" />
         <altmember cref="P:System.Security.Principal.IIdentity.AuthenticationType" />
         <altmember cref="P:System.Web.ClientServices.ClientFormsIdentity.IsAuthenticated" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8">How to: Configure Client Application Services</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -178,6 +184,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Releases the resources used by the <see cref="T:System.Web.ClientServices.ClientFormsIdentity" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Dispose">
@@ -213,6 +220,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -252,8 +260,9 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="IsAuthenticated">
@@ -304,6 +313,8 @@
         <altmember cref="P:System.Security.Principal.IIdentity.IsAuthenticated" />
         <altmember cref="P:System.Security.Principal.IIdentity.AuthenticationType" />
         <altmember cref="P:System.Web.ClientServices.ClientFormsIdentity.AuthenticationType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8">How to: Configure Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -331,6 +342,7 @@
         <summary>Gets the name of the user.</summary>
         <value>The name of the user.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -358,6 +370,7 @@
         <summary>Gets the membership provider that is used to authenticate the user.</summary>
         <value>The membership provider that is used to authenticate the user.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="RevalidateUser">
@@ -400,6 +413,10 @@
         </remarks>
         <altmember cref="T:System.Web.ClientServices.ConnectivityStatus" />
         <altmember cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8">How to: Configure Client Application Services</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/6dde4a2d-85e1-4275-aa55-24b84111be91">Advanced Settings for Services Dialog Box</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/bb7c8950-4517-4dae-b705-b74a14059b26">Walkthrough: Using Client Application Services</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlWindowCollection" FullName="System.Windows.Forms.HtmlWindowCollection">
+<Type Name="HtmlWindowCollection" FullName="System.Windows.Forms.HtmlWindowCollection">
   <TypeSignature Language="C#" Value="public class HtmlWindowCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlWindowCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlWindowCollection" />
@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/default.asp?url=/workshop/browser/mshtml/reference/ifaces/framescollection2/framescollection2.asp?frame=true">IHTMLFramesCollection2 Interface</related>
   </Docs>
   <Members>
     <Member MemberName="Count">
@@ -67,6 +68,7 @@
         <summary>Gets the number of elements in the collection.</summary>
         <value>The number of <see cref="T:System.Windows.Forms.HtmlWindow" /> objects in the current <see cref="T:System.Windows.Forms.HtmlWindowCollection" />.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/default.asp?url=/workshop/browser/mshtml/reference/ifaces/framescollection2/get_length.asp?frame=true">length Property</related>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -110,6 +112,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/default.asp?url=/workshop/browser/mshtml/reference/ifaces/framescollection2/item.asp?frame=true">item Method</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -147,6 +150,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is greater than the number of items in the collection.</exception>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/default.asp?url=/workshop/browser/mshtml/reference/ifaces/framescollection2/item.asp?frame=true">item Method</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -182,6 +186,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="windowId" /> is not the name of a <see langword="Frame" /> object in the current document or in any of its children.</exception>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/default.asp?url=/workshop/browser/mshtml/reference/ifaces/framescollection2/item.asp?frame=true">item Method</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">

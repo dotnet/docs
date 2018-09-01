@@ -1,4 +1,4 @@
-﻿<Type Name="PrintTicket" FullName="System.Printing.PrintTicket">
+<Type Name="PrintTicket" FullName="System.Printing.PrintTicket">
   <TypeSignature Language="C#" Value="public sealed class PrintTicket : System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintTicket extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintTicket" />
@@ -126,6 +126,7 @@
           <paramref name="xmlStream" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="xmlStream" /> is not valid XML.</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=186397">Print Schema</related>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -334,6 +335,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=186397">Print Schema</related>
       </Docs>
     </Member>
     <Member MemberName="InputBin">
@@ -900,6 +902,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=186397">Print Schema</related>
       </Docs>
     </Member>
     <Member MemberName="Stapling">

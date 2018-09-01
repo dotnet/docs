@@ -1,4 +1,4 @@
-﻿<Type Name="TripleDES" FullName="System.Security.Cryptography.TripleDES">
+<Type Name="TripleDES" FullName="System.Security.Cryptography.TripleDES">
   <TypeSignature Language="C#" Value="public abstract class TripleDES : System.Security.Cryptography.SymmetricAlgorithm" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TripleDES extends System.Security.Cryptography.SymmetricAlgorithm" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.TripleDES" />
@@ -60,6 +60,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Security.Cryptography.Aes" />
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -107,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Create">
@@ -182,6 +184,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -241,6 +244,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="IsWeakKey">
@@ -292,6 +296,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The size of the <paramref name="rgbKey" /> parameter is not valid.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -341,6 +346,7 @@
  -or-  
   
  An attempt was made to set a weak key (see <see cref="M:System.Security.Cryptography.TripleDES.IsWeakKey(System.Byte[])" />).</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="LegalBlockSizes">

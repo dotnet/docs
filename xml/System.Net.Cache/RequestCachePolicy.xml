@@ -1,4 +1,4 @@
-﻿<Type Name="RequestCachePolicy" FullName="System.Net.Cache.RequestCachePolicy">
+<Type Name="RequestCachePolicy" FullName="System.Net.Cache.RequestCachePolicy">
   <TypeSignature Language="C#" Value="public class RequestCachePolicy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequestCachePolicy extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.Cache.RequestCachePolicy" />
@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/network-programming/cache-management-for-network-applications.md">Cache Management for Network Applications</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -104,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/network-programming/cache-management-for-network-applications.md">Cache Management for Network Applications</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -154,6 +156,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">level is not a valid <see cref="T:System.Net.Cache.RequestCacheLevel" />.value.</exception>
+        <related type="Article" href="~/docs/framework/network-programming/cache-management-for-network-applications.md">Cache Management for Network Applications</related>
       </Docs>
     </Member>
     <Member MemberName="Level">
@@ -208,6 +211,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/network-programming/cache-management-for-network-applications.md">Cache Management for Network Applications</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -251,6 +255,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/network-programming/cache-management-for-network-applications.md">Cache Management for Network Applications</related>
       </Docs>
     </Member>
   </Members>

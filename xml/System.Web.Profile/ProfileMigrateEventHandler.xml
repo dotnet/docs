@@ -1,4 +1,4 @@
-﻿<Type Name="ProfileMigrateEventHandler" FullName="System.Web.Profile.ProfileMigrateEventHandler">
+<Type Name="ProfileMigrateEventHandler" FullName="System.Web.Profile.ProfileMigrateEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ProfileMigrateEventHandler(object sender, ProfileMigrateEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProfileMigrateEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileMigrateEventHandler" />
@@ -68,5 +68,6 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
   </Docs>
 </Type>

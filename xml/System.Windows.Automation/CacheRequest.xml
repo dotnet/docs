@@ -1,4 +1,4 @@
-﻿<Type Name="CacheRequest" FullName="System.Windows.Automation.CacheRequest">
+<Type Name="CacheRequest" FullName="System.Windows.Automation.CacheRequest">
   <TypeSignature Language="C#" Value="public sealed class CacheRequest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CacheRequest extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.CacheRequest" />
@@ -47,6 +47,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771456(v=vs.90)">FetchTimer Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +75,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="Activate">
@@ -112,6 +117,8 @@
         </remarks>
         <altmember cref="M:System.Windows.Automation.CacheRequest.Push" />
         <altmember cref="M:System.Windows.Automation.CacheRequest.Pop" />
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Add">
@@ -172,6 +179,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Automation.CacheRequest" /> is active.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -215,6 +224,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Automation.CacheRequest" /> is active.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="AutomationElementMode">
@@ -262,6 +273,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -348,6 +361,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to remove a cache request that was not the last one pushed onto the stack.</exception>
         <altmember cref="M:System.Windows.Automation.CacheRequest.Push" />
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="Push">
@@ -388,6 +403,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Windows.Automation.CacheRequest.Pop" />
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="TreeFilter">
@@ -431,6 +448,8 @@
  ]]></format>
         </remarks>
         <altmember cref="F:System.Windows.Automation.Automation.ContentViewCondition" />
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="TreeScope">
@@ -474,6 +493,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt was made to set the property to <see cref="F:System.Windows.Automation.TreeScope.Parent" /> or <see cref="F:System.Windows.Automation.TreeScope.Ancestors" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="UseManagedPresentationBindingElementImporter" FullName="System.ServiceModel.Channels.UseManagedPresentationBindingElementImporter">
+<Type Name="UseManagedPresentationBindingElementImporter" FullName="System.ServiceModel.Channels.UseManagedPresentationBindingElementImporter">
   <TypeSignature Language="C#" Value="public class UseManagedPresentationBindingElementImporter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UseManagedPresentationBindingElementImporter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.UseManagedPresentationBindingElementImporter" />
@@ -14,7 +14,8 @@
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Converts WSDL-based policies for <see cref="T:System.ServiceModel.Channels.UseManagedPresentationBindingElement" />s into descriptions of the binding elements that can implement these policies for the service.</summary>
     <remarks>To be added.</remarks>

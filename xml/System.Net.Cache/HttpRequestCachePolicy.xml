@@ -1,4 +1,4 @@
-﻿<Type Name="HttpRequestCachePolicy" FullName="System.Net.Cache.HttpRequestCachePolicy">
+<Type Name="HttpRequestCachePolicy" FullName="System.Net.Cache.HttpRequestCachePolicy">
   <TypeSignature Language="C#" Value="public class HttpRequestCachePolicy : System.Net.Cache.RequestCachePolicy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpRequestCachePolicy extends System.Net.Cache.RequestCachePolicy" />
   <TypeSignature Language="DocId" Value="T:System.Net.Cache.HttpRequestCachePolicy" />
@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/network-programming/cache-management-for-network-applications.md">Cache Management for Network Applications</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

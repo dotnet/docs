@@ -1,4 +1,4 @@
-﻿<Type Name="XContainer" FullName="System.Xml.Linq.XContainer">
+<Type Name="XContainer" FullName="System.Xml.Linq.XContainer">
   <TypeSignature Language="C#" Value="public abstract class XContainer : System.Xml.Linq.XNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XContainer extends System.Xml.Linq.XNode" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XContainer" />
@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/b8e4d9a9-a87b-4010-871a-67fd95b50e2b">How to: Retrieve Elements at a Particular Depth</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Add">
@@ -118,6 +120,7 @@ Console.WriteLine(xmlTree)
         <altmember cref="Overload:System.Xml.Linq.XContainer.AddFirst" />
         <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
         <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Add">
@@ -248,6 +251,7 @@ Console.WriteLine(xmlTree)
         <altmember cref="Overload:System.Xml.Linq.XContainer.AddFirst" />
         <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
         <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -388,6 +392,7 @@ Console.WriteLine(xmlTree)
         <altmember cref="Overload:System.Xml.Linq.XContainer.AddFirst" />
         <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
         <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AddFirst">
@@ -468,6 +473,7 @@ Console.WriteLine(xmlTree)
         <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
         <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
         <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddFirst">
@@ -597,6 +603,7 @@ Console.WriteLine(xmlTree)
         <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
         <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
         <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="AddFirst">
@@ -738,6 +745,7 @@ Console.WriteLine(xmlTree)
         <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
         <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
         <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="CreateWriter">
@@ -860,6 +868,8 @@ Console.WriteLine(newTree)
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f01bdf96-c5a9-4859-b220-125ee531e71f">Serializing XML Trees</related>
       </Docs>
     </Member>
     <Member MemberName="DescendantNodes">
@@ -965,6 +975,7 @@ element content
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XContainer.Descendants" />
         <altmember cref="Overload:System.Xml.Linq.XContainer.Elements" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Descendants">
@@ -985,6 +996,7 @@ element content
         </remarks>
         <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
         <altmember cref="Overload:System.Xml.Linq.XContainer.Elements" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Descendants">
@@ -1080,6 +1092,7 @@ GrandChild
         <altmember cref="M:System.Xml.Linq.XElement.DescendantsAndSelf" />
         <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
         <altmember cref="Overload:System.Xml.Linq.XContainer.Elements" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Descendants">
@@ -1219,6 +1232,7 @@ End Module
         </remarks>
         <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
         <altmember cref="Overload:System.Xml.Linq.XContainer.Elements" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Element">
@@ -1413,6 +1427,7 @@ End Module
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XContainer.Elements" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Elements">
@@ -1434,6 +1449,7 @@ End Module
         <altmember cref="M:System.Xml.Linq.XContainer.Element(System.Xml.Linq.XName)" />
         <altmember cref="Overload:System.Xml.Linq.XContainer.Descendants" />
         <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Elements">
@@ -1585,6 +1601,7 @@ End Module
         <altmember cref="M:System.Xml.Linq.XContainer.Element(System.Xml.Linq.XName)" />
         <altmember cref="Overload:System.Xml.Linq.XContainer.Descendants" />
         <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Elements">
@@ -1730,6 +1747,7 @@ End Module
         <altmember cref="M:System.Xml.Linq.XContainer.Element(System.Xml.Linq.XName)" />
         <altmember cref="Overload:System.Xml.Linq.XContainer.Descendants" />
         <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="FirstNode">
@@ -1805,6 +1823,7 @@ Console.WriteLine(firstNode)
         </remarks>
         <altmember cref="P:System.Xml.Linq.XContainer.LastNode" />
         <altmember cref="M:System.Xml.Linq.XContainer.Nodes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="LastNode">
@@ -1880,6 +1899,7 @@ Console.WriteLine(lastNode)
         </remarks>
         <altmember cref="P:System.Xml.Linq.XContainer.FirstNode" />
         <altmember cref="M:System.Xml.Linq.XContainer.Nodes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Nodes">
@@ -2064,6 +2084,7 @@ Text
         <altmember cref="M:System.Xml.Linq.XElement.Attributes" />
         <altmember cref="Overload:System.Xml.Linq.XContainer.Descendants" />
         <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveNodes">
@@ -2150,6 +2171,7 @@ Console.WriteLine(xmltree)
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
         <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReplaceNodes">
@@ -2221,6 +2243,7 @@ Console.WriteLine(root)
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
         <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ReplaceNodes">
@@ -2320,6 +2343,7 @@ Console.WriteLine(root)
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
         <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="ReplaceNodes">
@@ -2428,6 +2452,7 @@ Console.WriteLine(root)
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
         <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
   </Members>

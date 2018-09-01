@@ -1,4 +1,4 @@
-﻿<Type Name="MultipleViewPattern+MultipleViewPatternInformation" FullName="System.Windows.Automation.MultipleViewPattern+MultipleViewPatternInformation">
+<Type Name="MultipleViewPattern+MultipleViewPatternInformation" FullName="System.Windows.Automation.MultipleViewPattern+MultipleViewPatternInformation">
   <TypeSignature Language="C#" Value="public struct MultipleViewPattern.MultipleViewPatternInformation" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit MultipleViewPattern/MultipleViewPatternInformation extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation" />
@@ -17,6 +17,10 @@
   <Docs>
     <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.MultipleViewPattern" /> object using its <see cref="P:System.Windows.Automation.MultipleViewPattern.Current" /> or <see cref="P:System.Windows.Automation.MultipleViewPattern.Cached" /> accessors.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md">UI Automation Control Patterns for Clients</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/5bf1b248-ffee-48c8-9613-0b134bbe9f6a">Implementing the UI Automation MultipleView Control Pattern</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
   </Docs>
   <Members>
     <Member MemberName="CurrentView">

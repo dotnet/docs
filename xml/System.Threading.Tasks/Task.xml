@@ -1,4 +1,4 @@
-﻿<Type Name="Task" FullName="System.Threading.Tasks.Task">
+<Type Name="Task" FullName="System.Threading.Tasks.Task">
   <TypeSignature Language="C#" Value="public class Task : IAsyncResult, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Task extends System.Object implements class System.IAsyncResult, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Task" />
@@ -147,6 +147,9 @@
     </remarks>
     <threadsafe>All members of <see cref="T:System.Threading.Tasks.Task" />, except for <see cref="M:System.Threading.Tasks.Task.Dispose" />, are thread-safe and may be used from multiple threads concurrently.</threadsafe>
     <altmember cref="T:System.Threading.Tasks.Task`1" />
+    <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+    <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364">Samples for Parallel Programming with the .NET Framework</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -3112,6 +3115,7 @@ Task t Status: RanToCompletion, Result: 42
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="action" /> parameter was <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md">Exception Handling (Task Parallel Library)</related>
       </Docs>
     </Member>
     <Member MemberName="Run">
@@ -3160,6 +3164,7 @@ Task t Status: RanToCompletion, Result: 42
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> parameter was <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md">Exception Handling (Task Parallel Library)</related>
       </Docs>
     </Member>
     <Member MemberName="Run">
@@ -3227,6 +3232,7 @@ Task t Status: RanToCompletion, Result: 42
         <exception cref="T:System.ArgumentNullException">The <paramref name="action" /> parameter was <see langword="null" />.</exception>
         <exception cref="T:System.Threading.Tasks.TaskCanceledException">The task has been canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with <paramref name="cancellationToken" /> was disposed.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md">Exception Handling (Task Parallel Library)</related>
       </Docs>
     </Member>
     <Member MemberName="Run">
@@ -3278,6 +3284,8 @@ Task t Status: RanToCompletion, Result: 42
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> parameter was <see langword="null" />.</exception>
         <exception cref="T:System.Threading.Tasks.TaskCanceledException">The task has been canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with <paramref name="cancellationToken" /> was disposed.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md">Exception Handling (Task Parallel Library)</related>
       </Docs>
     </Member>
     <Member MemberName="Run&lt;TResult&gt;">
@@ -3330,6 +3338,7 @@ Task t Status: RanToCompletion, Result: 42
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> parameter was <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md">Exception Handling (Task Parallel Library)</related>
       </Docs>
     </Member>
     <Member MemberName="Run&lt;TResult&gt;">
@@ -3400,6 +3409,7 @@ Task t Status: RanToCompletion, Result: 42
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> parameter is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md">Exception Handling (Task Parallel Library)</related>
       </Docs>
     </Member>
     <Member MemberName="Run&lt;TResult&gt;">
@@ -3455,6 +3465,8 @@ Task t Status: RanToCompletion, Result: 42
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> parameter was <see langword="null" />.</exception>
         <exception cref="T:System.Threading.Tasks.TaskCanceledException">The task has been canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with <paramref name="cancellationToken" /> was disposed.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md">Exception Handling (Task Parallel Library)</related>
       </Docs>
     </Member>
     <Member MemberName="Run&lt;TResult&gt;">
@@ -3535,6 +3547,8 @@ Task t Status: RanToCompletion, Result: 42
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Threading.Tasks.TaskCanceledException">The task has been canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with <paramref name="cancellationToken" /> was disposed.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md">Exception Handling (Task Parallel Library)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="RunSynchronously">
@@ -3600,6 +3614,7 @@ Task t Status: RanToCompletion, Result: 42
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.Tasks.Task" /> instance has been disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Threading.Tasks.Task" /> is not in a valid state to be started. It may have already been started, executed, or canceled, or it may have been created in a manner that doesn't support direct scheduling.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md">Exception Handling (Task Parallel Library)</related>
       </Docs>
     </Member>
     <Member MemberName="RunSynchronously">
@@ -3652,6 +3667,7 @@ Task t Status: RanToCompletion, Result: 42
         <exception cref="T:System.ArgumentNullException">The <paramref name="scheduler" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Threading.Tasks.Task" /> is not in a valid state to be started. It may have already been started, executed, or canceled, or it may have been created in a manner that doesn't support direct scheduling.</exception>
         <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md">Exception Handling (Task Parallel Library)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Start">
@@ -3719,6 +3735,7 @@ Task t Status: RanToCompletion, Result: 42
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.Tasks.Task" /> instance has been disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Threading.Tasks.Task" /> is not in a valid state to be started. It may have already been started, executed, or canceled, or it may have been created in a manner that doesn't support direct scheduling.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md">Exception Handling (Task Parallel Library)</related>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -3771,6 +3788,7 @@ Task t Status: RanToCompletion, Result: 42
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Threading.Tasks.Task" /> is not in a valid state to be started. It may have already been started, executed, or canceled, or it may have been created in a manner that doesn't support direct scheduling.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.Tasks.Task" /> instance has been disposed.</exception>
         <exception cref="T:System.Threading.Tasks.TaskSchedulerException">The scheduler was unable to queue this task.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md">Exception Handling (Task Parallel Library)</related>
       </Docs>
     </Member>
     <Member MemberName="Status">
@@ -3960,11 +3978,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Threading.Tasks.Task.Wait%2A> is a synchronization method that causes the calling thread to wait until the current task has completed. If the current task has not started execution, the Wait method attempts to remove the task from the scheduler and execute it inline on the current thread. If it is unable to do that, or if the current task has already started execution, it blocks the calling thread until the task completes. For more information, see [Task.Wait and "Inlining"](http://blogs.msdn.com/b/pfxteam/archive/2009/10/15/9907713.aspx) in the Parallel Programming with .NET blog.  
-  
- For more information and an example, see [How to: Wait on One or More Tasks to Complete](http://msdn.microsoft.com/library/79cb522b-9c93-46ed-b23a-c06908f3a374).  
-  
-   
+ <xref:System.Threading.Tasks.Task.Wait%2A> is a synchronization method that causes the calling thread to wait until the current task has completed. If the current task has not started execution, the Wait method attempts to remove the task from the scheduler and execute it inline on the current thread. If it is unable to do that, or if the current task has already started execution, it blocks the calling thread until the task completes. For more information, see [Task.Wait and "Inlining"](http://blogs.msdn.com/b/pfxteam/archive/2009/10/15/9907713.aspx) in the Parallel Programming with .NET blog.   
   
 ## Examples  
  The following example starts a task that generates one million random integers between 0 and 100 and computes their mean. The example uses the <xref:System.Threading.Tasks.Task.Wait%2A> method to ensure that the task completes before the application terminates. Otherwise, because this is a console application, the example would terminate before the task can compute and display the mean.  
@@ -3980,6 +3994,7 @@ Task t Status: RanToCompletion, Result: 42
  -or-  
   
  An exception was thrown during the execution of the task. The <see cref="P:System.AggregateException.InnerExceptions" /> collection contains information about the exception or exceptions.</exception>
+        <related type="ExternalDocumentation" href="http://blogs.msdn.com/b/pfxteam/archive/2009/10/15/9907713.aspx">Task.Wait and “Inlining”</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">

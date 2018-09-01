@@ -1,4 +1,4 @@
-﻿<Type Name="Exception" FullName="System.Exception">
+<Type Name="Exception" FullName="System.Exception">
   <TypeSignature Language="C#" Value="public class Exception : System.Runtime.InteropServices._Exception, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable beforefieldinit Exception extends System.Object implements class System.Runtime.InteropServices._Exception, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Exception" />
@@ -279,6 +279,9 @@ Stack Trace:
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+    <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources in Desktop Apps</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1">Assertions in Managed Code</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -468,6 +471,7 @@ Stack Trace:
         <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is <see langword="null" /> or <see cref="P:System.Exception.HResult" /> is zero (0).</exception>
         <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
         <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -895,6 +899,8 @@ Stack Trace:
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/610b364b-2761-429d-9c4a-afbc3e66f1b9">How to: Map HRESULTs and Exceptions</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/windows/desktop/aa378137.aspx">Common HRESULT Values</related>
       </Docs>
     </Member>
     <Member MemberName="InnerException">

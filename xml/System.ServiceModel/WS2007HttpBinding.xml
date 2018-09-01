@@ -1,4 +1,4 @@
-﻿<Type Name="WS2007HttpBinding" FullName="System.ServiceModel.WS2007HttpBinding">
+<Type Name="WS2007HttpBinding" FullName="System.ServiceModel.WS2007HttpBinding">
   <TypeSignature Language="C#" Value="public class WS2007HttpBinding : System.ServiceModel.WSHttpBinding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WS2007HttpBinding extends System.ServiceModel.WSHttpBinding" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WS2007HttpBinding" />
@@ -24,6 +24,10 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/57ffcbea-807c-4e43-a41c-44b3db8ed2af">Security Protocols</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/0da47b82-f8eb-42da-8bfe-e56ce7ba6f59">Reliable Messaging Protocol version 1.1</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/2820b0ec-2f32-430c-b299-1f0e95e1f2dc">Transaction Protocols</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f2981678-ebdb-433d-899b-467f7df95fb2">Web Services Protocols Interoperability Guide</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

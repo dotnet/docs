@@ -1,4 +1,4 @@
-﻿<Type Name="ListDictionary" FullName="System.Collections.Specialized.ListDictionary">
+<Type Name="ListDictionary" FullName="System.Collections.Specialized.ListDictionary">
   <TypeSignature Language="C#" Value="public class ListDictionary : System.Collections.IDictionary" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ListDictionary extends System.Object implements class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.ListDictionary" />
@@ -75,6 +75,7 @@
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
     <altmember cref="T:System.Collections.IDictionary" />
     <altmember cref="T:System.Collections.Hashtable" />
+    <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -138,6 +139,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -194,6 +196,7 @@
         </remarks>
         <altmember cref="T:System.Collections.IComparer" />
         <altmember cref="M:System.Object.Equals(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -381,6 +384,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Collections.IDictionary" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -814,6 +818,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Collections.Specialized.ListDictionary.Add(System.Object,System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -935,6 +940,7 @@
           <paramref name="key" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Collections.Specialized.ListDictionary.Add(System.Object,System.Object)" />
         <altmember cref="M:System.Collections.IDictionary.Remove(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">

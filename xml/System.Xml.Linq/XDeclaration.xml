@@ -1,4 +1,4 @@
-﻿<Type Name="XDeclaration" FullName="System.Xml.Linq.XDeclaration">
+<Type Name="XDeclaration" FullName="System.Xml.Linq.XDeclaration">
   <TypeSignature Language="C#" Value="public class XDeclaration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XDeclaration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XDeclaration" />
@@ -39,6 +39,8 @@
  ]]></format>
     </remarks>
     <altmember cref="P:System.Xml.Linq.XDocument.Declaration" />
+    <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -51,6 +53,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XDeclaration" /> class.</summary>
         <altmember cref="M:System.Xml.Linq.XDeclaration.ToString" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -93,6 +97,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Xml.Linq.XDeclaration.ToString" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -174,6 +180,8 @@ Console.WriteLine(File.ReadAllText("Root.xml"))
  ]]></format>
         </remarks>
         <altmember cref="M:System.Xml.Linq.XDeclaration.ToString" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -320,6 +328,8 @@ Encoding of loaded document is:utf-16
  ]]></format>
         </remarks>
         <altmember cref="M:System.Xml.Linq.XDeclaration.ToString" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </Member>
     <Member MemberName="Standalone">
@@ -397,6 +407,7 @@ yes
  ]]></format>
         </remarks>
         <altmember cref="P:System.Xml.Linq.XDeclaration.Version" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -432,6 +443,7 @@ yes
         <summary>Provides the declaration as a formatted string.</summary>
         <returns>A <see cref="T:System.String" /> that contains the formatted XML string.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -509,6 +521,7 @@ yes
  ]]></format>
         </remarks>
         <altmember cref="P:System.Xml.Linq.XDeclaration.Standalone" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
   </Members>

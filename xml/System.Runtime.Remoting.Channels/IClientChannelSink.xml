@@ -1,4 +1,4 @@
-﻿<Type Name="IClientChannelSink" FullName="System.Runtime.Remoting.Channels.IClientChannelSink">
+<Type Name="IClientChannelSink" FullName="System.Runtime.Remoting.Channels.IClientChannelSink">
   <TypeSignature Language="C#" Value="public interface IClientChannelSink : System.Runtime.Remoting.Channels.IChannelSinkBase" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IClientChannelSink implements class System.Runtime.Remoting.Channels.IChannelSinkBase" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IClientChannelSink" />
@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tdzwhfy3(v=vs.100)">Sinks and Sink Chains</related>
   </Docs>
   <Members>
     <Member MemberName="AsyncProcessRequest">
@@ -90,6 +91,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tdzwhfy3(v=vs.100)">Sinks and Sink Chains</related>
       </Docs>
     </Member>
     <Member MemberName="AsyncProcessResponse">
@@ -190,6 +192,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tdzwhfy3(v=vs.100)">Sinks and Sink Chains</related>
       </Docs>
     </Member>
     <Member MemberName="NextChannelSink">
@@ -288,6 +291,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tdzwhfy3(v=vs.100)">Sinks and Sink Chains</related>
       </Docs>
     </Member>
   </Members>

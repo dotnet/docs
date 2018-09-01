@@ -1,4 +1,4 @@
-﻿<Type Name="IDisposable" FullName="System.IDisposable">
+<Type Name="IDisposable" FullName="System.IDisposable">
   <TypeSignature Language="C#" Value="public interface IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.IDisposable" />
@@ -131,6 +131,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:Microsoft.Win32.SafeHandles.SafeFileHandle" />
+    <related type="Article" href="~/docs/standard/garbage-collection/implementing-dispose.md">Implementing a Dispose Method</related>
   </Docs>
   <Members>
     <Member MemberName="Dispose">
@@ -206,6 +207,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/garbage-collection/implementing-dispose.md">Implementing a Dispose Method</related>
       </Docs>
     </Member>
   </Members>

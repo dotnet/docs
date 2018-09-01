@@ -1,4 +1,4 @@
-﻿<Type Name="OrderByExpression" FullName="System.Web.UI.WebControls.Expressions.OrderByExpression">
+<Type Name="OrderByExpression" FullName="System.Web.UI.WebControls.Expressions.OrderByExpression">
   <TypeSignature Language="C#" Value="public class OrderByExpression : System.Web.UI.WebControls.Expressions.DataSourceExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OrderByExpression extends System.Web.UI.WebControls.Expressions.DataSourceExpression" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.OrderByExpression" />
@@ -46,6 +46,7 @@
     </remarks>
     <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.Expressions.OrderByExpression.DataField" /> property is <see langword="null" />.</exception>
     <altmember cref="T:System.Web.UI.WebControls.QueryExtender" />
+    <related type="Article" href="http://msdn.microsoft.com/library/b93e32b9-af41-4539-a009-6cbbe809c702">QueryExtender Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

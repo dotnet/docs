@@ -1,4 +1,4 @@
-﻿<Type Name="EntityPropertyMappingAttribute" FullName="System.Data.Services.Common.EntityPropertyMappingAttribute">
+<Type Name="EntityPropertyMappingAttribute" FullName="System.Data.Services.Common.EntityPropertyMappingAttribute">
   <TypeSignature Language="C#" Value="public sealed class EntityPropertyMappingAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EntityPropertyMappingAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Common.EntityPropertyMappingAttribute" />
@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/7315c6d8-f452-4fb2-a0c1-76ab0593c146">How to: Create a Data Service Using the Reflection Provider (WCF Data Services)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

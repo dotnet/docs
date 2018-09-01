@@ -1,4 +1,4 @@
-﻿<Type Name="Single" FullName="System.Single">
+<Type Name="Single" FullName="System.Single">
   <TypeSignature Language="C#" Value="public struct Single : IComparable, IComparable&lt;float&gt;, IConvertible, IEquatable&lt;float&gt;, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit float32 extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;float32&gt;, class System.IConvertible, class System.IEquatable`1&lt;float32&gt;, class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Single" />
@@ -1833,6 +1833,7 @@
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number less than <see cref="F:System.Single.MinValue" /> or greater than <see cref="F:System.Single.MaxValue" />.</exception>
         <altmember cref="M:System.Single.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1972,6 +1973,7 @@
  <paramref name="style" /> includes the <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> value.</exception>
         <altmember cref="M:System.Single.ToString" />
         <altmember cref="Overload:System.Single.TryParse" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -2070,6 +2072,7 @@
           <paramref name="s" /> represents a number less than <see cref="F:System.Single.MinValue" /> or greater than <see cref="F:System.Single.MaxValue" />.</exception>
         <altmember cref="M:System.Single.ToString" />
         <altmember cref="Overload:System.Single.TryParse" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -2227,6 +2230,7 @@
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number that is less than <see cref="F:System.Single.MinValue" /> or greater than <see cref="F:System.Single.MaxValue" />.</exception>
         <altmember cref="M:System.Single.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="PositiveInfinity">
@@ -3180,6 +3184,7 @@
         </remarks>
         <altmember cref="M:System.Single.Parse(System.String)" />
         <altmember cref="T:System.String" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3279,6 +3284,7 @@
         </remarks>
         <altmember cref="M:System.Single.Parse(System.String)" />
         <altmember cref="T:System.String" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3367,6 +3373,8 @@
           <paramref name="format" /> is invalid.</exception>
         <altmember cref="M:System.Single.Parse(System.String)" />
         <altmember cref="T:System.String" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md">How to: Pad a Number with Leading Zeros</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3455,6 +3463,8 @@
         </remarks>
         <altmember cref="M:System.Single.Parse(System.String)" />
         <altmember cref="T:System.String" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md">How to: Pad a Number with Leading Zeros</related>
       </Docs>
     </Member>
     <Member MemberName="TryFormat">
@@ -3616,6 +3626,7 @@
         </remarks>
         <altmember cref="M:System.Single.Parse(System.String)" />
         <altmember cref="M:System.Single.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -3780,6 +3791,7 @@
  <paramref name="style" /> is the <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> value.</exception>
         <altmember cref="M:System.Single.Parse(System.String)" />
         <altmember cref="M:System.Single.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
   </Members>

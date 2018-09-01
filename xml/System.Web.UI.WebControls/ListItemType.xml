@@ -1,4 +1,4 @@
-﻿<Type Name="ListItemType" FullName="System.Web.UI.WebControls.ListItemType">
+<Type Name="ListItemType" FullName="System.Web.UI.WebControls.ListItemType">
   <TypeSignature Language="C#" Value="public enum ListItemType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListItemType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListItemType" />
@@ -33,6 +33,7 @@
     <altmember cref="P:System.Web.UI.WebControls.DataGridItem.ItemType" />
     <altmember cref="P:System.Web.UI.WebControls.DataListItem.ItemType" />
     <altmember cref="P:System.Web.UI.WebControls.RepeaterItem.ItemType" />
+    <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName="AlternatingItem">

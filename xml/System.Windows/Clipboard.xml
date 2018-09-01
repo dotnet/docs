@@ -1,4 +1,4 @@
-﻿<Type Name="Clipboard" FullName="System.Windows.Clipboard">
+<Type Name="Clipboard" FullName="System.Windows.Clipboard">
   <TypeSignature Language="C#" Value="public static class Clipboard" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Clipboard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Clipboard" />
@@ -54,6 +54,9 @@
     </remarks>
     <altmember cref="T:System.Windows.DataObject" />
     <altmember cref="T:System.Windows.IDataObject" />
+    <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/ms649012(v=vs.85).aspx">About the Clipboard</related>
+    <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/ms649014(v=vs.85).aspx">Clipboard Operations</related>
+    <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/ms649016(v=vs.85).aspx">Using the Clipboard</related>
   </Docs>
   <Members>
     <Member MemberName="Clear">

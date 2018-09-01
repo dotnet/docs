@@ -1,4 +1,4 @@
-﻿<Type Name="BooleanOption" FullName="System.Web.UI.MobileControls.BooleanOption">
+<Type Name="BooleanOption" FullName="System.Web.UI.MobileControls.BooleanOption">
   <TypeSignature Language="C#" Value="public enum BooleanOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BooleanOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.BooleanOption" />
@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
   </Docs>
   <Members>
     <Member MemberName="False">
@@ -51,6 +52,7 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>The specified style will not be applied. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -73,6 +75,7 @@
       <MemberValue>-1</MemberValue>
       <Docs>
         <summary>Default value. If the value is <see cref="F:System.Web.UI.MobileControls.BooleanOption.NotSet" />, then the font attributes are inherited from the control's style, or, if the style is not defined, from the control's parent control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="True">
@@ -95,6 +98,7 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>The specified style will be applied. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
   </Members>

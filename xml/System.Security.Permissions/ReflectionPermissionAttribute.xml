@@ -1,4 +1,4 @@
-﻿<Type Name="ReflectionPermissionAttribute" FullName="System.Security.Permissions.ReflectionPermissionAttribute">
+<Type Name="ReflectionPermissionAttribute" FullName="System.Security.Permissions.ReflectionPermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class ReflectionPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ReflectionPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.ReflectionPermissionAttribute" />
@@ -48,6 +48,9 @@
     </remarks>
     <altmember cref="T:System.Security.Permissions.ReflectionPermission" />
     <altmember cref="T:System.Security.Permissions.ReflectionPermissionFlag" />
+    <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
+    <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
+    <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -257,6 +260,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
       </Docs>
     </Member>
     <Member MemberName="TypeInformation">

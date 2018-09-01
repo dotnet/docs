@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationDeployment" FullName="System.Deployment.Application.ApplicationDeployment">
+<Type Name="ApplicationDeployment" FullName="System.Deployment.Application.ApplicationDeployment">
   <TypeSignature Language="C#" Value="public sealed class ApplicationDeployment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationDeployment extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.ApplicationDeployment" />
@@ -47,6 +47,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/59a0dd5f-1cab-4f2f-b780-0ab7399905d5">Walkthrough: Downloading Assemblies On Demand with the ClickOnce Deployment API Using the Designer</related>
   </Docs>
   <Members>
     <Member MemberName="ActivationUri">
@@ -561,6 +562,11 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="groupName" /> parameter is null or zero-length.</exception>
         <altmember cref="Overload:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fdaa553f-a27e-44eb-a4e2-08c122105a87">Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243">ClickOnce Application Manifest</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d">Accessing Local and Remote Data in ClickOnce Applications</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc">How to: Include a Data File in a ClickOnce Application</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e379921e-9ef1-4326-bbf3-53ba67925526">Architecture of the ClickOnce Cache</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="DownloadFileGroupAsync">
@@ -621,6 +627,11 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="groupName" /> parameter is null or zero-length.</exception>
         <exception cref="T:System.InvalidOperationException">You cannot initiate more than one download of <paramref name="groupName" /> at a time.</exception>
         <altmember cref="M:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fdaa553f-a27e-44eb-a4e2-08c122105a87">Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243">ClickOnce Application Manifest</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d">Accessing Local and Remote Data in ClickOnce Applications</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc">How to: Include a Data File in a ClickOnce Application</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e379921e-9ef1-4326-bbf3-53ba67925526">Architecture of the ClickOnce Cache</related>
       </Docs>
     </Member>
     <Member MemberName="DownloadFileGroupAsync">
@@ -670,6 +681,11 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="groupName" /> parameter is null or zero-length.</exception>
         <exception cref="T:System.InvalidOperationException">You cannot initiate more than one download of <paramref name="groupName" /> at a time.</exception>
         <altmember cref="M:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fdaa553f-a27e-44eb-a4e2-08c122105a87">Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243">ClickOnce Application Manifest</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d">Accessing Local and Remote Data in ClickOnce Applications</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc">How to: Include a Data File in a ClickOnce Application</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e379921e-9ef1-4326-bbf3-53ba67925526">Architecture of the ClickOnce Cache</related>
       </Docs>
     </Member>
     <Member MemberName="DownloadFileGroupAsyncCancel">
@@ -947,6 +963,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/d8b6e7bb-4ea0-47f3-91cd-48580bdceccc">Choosing a ClickOnce Update Strategy</related>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -1006,6 +1023,8 @@
         <altmember cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync" />
         <altmember cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdate" />
         <altmember cref="M:System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d8b6e7bb-4ea0-47f3-91cd-48580bdceccc">Choosing a ClickOnce Update Strategy</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a05b5f2f-d1f2-471a-8096-8b11f7554265">ClickOnce Deployment and Security</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
@@ -1061,6 +1080,8 @@
         <exception cref="T:System.Deployment.Application.DeploymentDownloadException">The new deployment could not be downloaded from its location on the network.</exception>
         <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
         <altmember cref="E:System.Deployment.Application.ApplicationDeployment.UpdateCompleted" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d8b6e7bb-4ea0-47f3-91cd-48580bdceccc">Choosing a ClickOnce Update Strategy</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a05b5f2f-d1f2-471a-8096-8b11f7554265">ClickOnce Deployment and Security</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateAsyncCancel">
@@ -1091,6 +1112,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/d8b6e7bb-4ea0-47f3-91cd-48580bdceccc">Choosing a ClickOnce Update Strategy</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateCompleted">
@@ -1229,6 +1251,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/7faacd35-2638-492d-80f6-6b57e5f820de">How to: Specify an Alternate Location for Deployment Updates</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateProgressChanged">

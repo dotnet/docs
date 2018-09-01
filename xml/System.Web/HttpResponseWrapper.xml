@@ -1,4 +1,4 @@
-﻿<Type Name="HttpResponseWrapper" FullName="System.Web.HttpResponseWrapper">
+<Type Name="HttpResponseWrapper" FullName="System.Web.HttpResponseWrapper">
   <TypeSignature Language="C#" Value="public class HttpResponseWrapper : System.Web.HttpResponseBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpResponseWrapper extends System.Web.HttpResponseBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpResponseWrapper" />
@@ -1593,6 +1593,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -1630,6 +1631,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route name.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -1667,6 +1669,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -1706,6 +1709,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -1745,6 +1749,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="RedirectToRoutePermanent">
@@ -1791,6 +1796,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -1828,6 +1834,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route name.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -1865,6 +1872,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -1904,6 +1912,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -1943,6 +1952,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="RemoveOutputCacheItem">

@@ -1,4 +1,4 @@
-﻿<Type Name="CantStartSingleInstanceException" FullName="Microsoft.VisualBasic.ApplicationServices.CantStartSingleInstanceException">
+<Type Name="CantStartSingleInstanceException" FullName="Microsoft.VisualBasic.ApplicationServices.CantStartSingleInstanceException">
   <TypeSignature Language="C#" Value="public class CantStartSingleInstanceException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable CantStartSingleInstanceException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.CantStartSingleInstanceException" />
@@ -38,6 +38,7 @@
  ]]></format>
     </remarks>
     <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
+    <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -48,6 +49,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.CantStartSingleInstanceException" /> class.</summary>
         <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -81,6 +83,7 @@
  ]]></format>
         </remarks>
         <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -123,6 +126,7 @@
  ]]></format>
         </remarks>
         <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -166,6 +170,7 @@
  ]]></format>
         </remarks>
         <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -212,6 +217,7 @@
  ]]></format>
         </remarks>
         <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
       </Docs>
     </Member>
   </Members>

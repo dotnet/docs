@@ -1,4 +1,4 @@
-﻿<Type Name="VBMath" FullName="Microsoft.VisualBasic.VBMath">
+<Type Name="VBMath" FullName="Microsoft.VisualBasic.VBMath">
   <TypeSignature Language="C#" Value="public sealed class VBMath" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VBMath extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.VBMath" />
@@ -37,6 +37,10 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/derived-math-functions.md">Derived Math Functions (Visual Basic)</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/index.md">Keywords (Visual Basic)</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/runtime-library-members.md">Visual Basic Run-Time Library Members</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Randomize">
@@ -92,6 +96,7 @@
  ]]></format>
         </remarks>
         <altmember cref="Overload:Microsoft.VisualBasic.VBMath.Rnd" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Randomize">
@@ -141,6 +146,7 @@
  ]]></format>
         </remarks>
         <altmember cref="Overload:Microsoft.VisualBasic.VBMath.Rnd" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Rnd">
@@ -208,6 +214,7 @@
  ]]></format>
         </remarks>
         <altmember cref="Overload:Microsoft.VisualBasic.VBMath.Randomize" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Rnd">
@@ -268,6 +275,7 @@
  ]]></format>
         </remarks>
         <altmember cref="Overload:Microsoft.VisualBasic.VBMath.Randomize" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/math-summary.md">Math Summary</related>
       </Docs>
     </Member>
   </Members>

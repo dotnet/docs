@@ -1,4 +1,4 @@
-﻿<Type Name="Calendar" FullName="System.Web.UI.WebControls.Calendar">
+<Type Name="Calendar" FullName="System.Web.UI.WebControls.Calendar">
   <TypeSignature Language="C#" Value="public class Calendar : System.Web.UI.WebControls.WebControl, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Calendar extends System.Web.UI.WebControls.WebControl implements class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Calendar" />
@@ -208,6 +208,8 @@
     <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowGridLines" />
     <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowNextPrevMonth" />
     <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowTitle" />
+    <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/3a461fdb-6fcc-49f0-b998-92d759890a94">Calendar Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

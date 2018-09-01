@@ -1,4 +1,4 @@
-﻿<Type Name="SecurityContextSecurityToken" FullName="System.ServiceModel.Security.Tokens.SecurityContextSecurityToken">
+<Type Name="SecurityContextSecurityToken" FullName="System.ServiceModel.Security.Tokens.SecurityContextSecurityToken">
   <TypeSignature Language="C#" Value="public class SecurityContextSecurityToken : System.IdentityModel.Tokens.SecurityToken" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecurityContextSecurityToken extends System.IdentityModel.Tokens.SecurityToken" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" />
@@ -13,7 +13,8 @@
   <Base>
     <BaseTypeName>System.IdentityModel.Tokens.SecurityToken</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Represents the token defined by the WS-SecureConversation specification.</summary>
     <remarks>

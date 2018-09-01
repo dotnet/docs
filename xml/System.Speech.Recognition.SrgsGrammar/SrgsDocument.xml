@@ -1,4 +1,4 @@
-﻿<Type Name="SrgsDocument" FullName="System.Speech.Recognition.SrgsGrammar.SrgsDocument">
+<Type Name="SrgsDocument" FullName="System.Speech.Recognition.SrgsGrammar.SrgsDocument">
   <TypeSignature Language="C#" Value="public class SrgsDocument" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SrgsDocument extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" />
@@ -29,12 +29,13 @@
   
  After the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object is created, it can be loaded into a <xref:System.Speech.Recognition.Grammar> object or compiled by <xref:System.Speech.Recognition.SrgsGrammar.SrgsGrammarCompiler>, enabling it to be read by a <xref:System.Speech.Recognition.Grammar> object.  
   
- See [Create Grammars Using SrgsGrammar](http://msdn.microsoft.com/library/e4d9f96e-2241-4c39-b9e0-ac9ef4e9a906) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/library/610116c7-3817-40ff-857b-5d41e8511043) for more information and examples.  
+ See [Create Grammars Using SrgsGrammar](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361680(v%3doffice.14)) in the [System Speech Programming Guide for .NET Framework](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361625(v%3doffice.14)) for more information and examples.  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Speech.Recognition.Grammar" />
     <altmember cref="T:System.Speech.Recognition.SrgsGrammar.SrgsGrammarCompiler" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361680(v%3doffice.14)">Create Grammars Using SrgsGrammar</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -573,7 +574,7 @@ if (File.Exists(srgsDocumentFile))
   
  In System.Speech, you can use any of three phonetic alphabets to specify custom pronunciations: International Phone Alphabet (IPA), Universal Phone Set (UPS), or the SAPI phone set. The specified phonetic alphabet determines which phone set will be used to define inline pronunciations for <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken> objects. The phones specified in <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken.Pronunciation%2A> must match the phonetic alphabet specified in <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.PhoneticAlphabet%2A>.  
   
- See [Lexicons and Phonetic Alphabets](http://msdn.microsoft.com/library/435e3c6f-6834-4e5a-b0f6-c17b2275dc51) for more information.  
+ See [Lexicons and Phonetic Alphabets](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh378335(v%3doffice.14)) for more information.  
   
  ]]></format>
         </remarks>

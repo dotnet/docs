@@ -35,6 +35,7 @@
     <altmember cref="T:System.Web.UI.WebControls.DataPager" />
     <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
     <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,6 +70,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -112,6 +114,7 @@
         <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.Insert(System.Int32,System.Web.UI.WebControls.DataPagerField)" />
         <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.Remove(System.Web.UI.WebControls.DataPagerField)" />
         <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt(System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CloneFields">
@@ -146,6 +149,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.DataPagerField.CloneField" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -174,6 +178,7 @@
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection contains the specified field; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -201,6 +206,7 @@
         <param name="index">The zero-based index in <c>array</c> at which copying starts.</param>
         <summary>Copies the complete <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection to a one-dimensional <see cref="T:System.Array" /> object, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CreateKnownType">
@@ -236,6 +242,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified index is not in the recognized range.</exception>
         <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.GetKnownTypes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FieldsChanged">
@@ -270,6 +277,7 @@
         <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.Insert(System.Int32,System.Web.UI.WebControls.DataPagerField)" />
         <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.Remove(System.Web.UI.WebControls.DataPagerField)" />
         <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt(System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetKnownTypes">
@@ -294,6 +302,7 @@
         <returns>An array of type objects that identify the types of <see cref="T:System.Web.UI.WebControls.DataPagerField" /> objects that the collection can contain.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.CreateKnownType(System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -321,6 +330,7 @@
         <returns>The index of the <paramref name="field" /> parameter, if it is found in the collection; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -349,6 +359,7 @@
         <summary>Inserts the specified <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object into the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection at the specified index.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.IndexOf(System.Web.UI.WebControls.DataPagerField)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -381,6 +392,7 @@
         <value>The <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object that is at the specified index in the collection.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnClearComplete">
@@ -416,6 +428,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.StateManagedCollection.Clear" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnInsertComplete">
@@ -451,6 +464,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.Insert(System.Int32,System.Web.UI.WebControls.DataPagerField)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnRemoveComplete">
@@ -487,6 +501,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.Remove(System.Web.UI.WebControls.DataPagerField)" />
         <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt(System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnValidate">
@@ -524,6 +539,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="o" /> is not an instance of the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> class or of one of its derived classes.</exception>
         <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -549,6 +565,7 @@
         <param name="field">The object to remove from the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection.</param>
         <summary>Removes the specified <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object from the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -574,6 +591,7 @@
         <param name="index">The index of the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object to remove.</param>
         <summary>Removes the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object at the specified index from the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SetDirtyObject">
@@ -607,6 +625,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="AsyncCompletedEventHandler" FullName="System.ComponentModel.AsyncCompletedEventHandler">
+<Type Name="AsyncCompletedEventHandler" FullName="System.ComponentModel.AsyncCompletedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void AsyncCompletedEventHandler(object sender, AsyncCompletedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AsyncCompletedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.AsyncCompletedEventHandler" />
@@ -55,5 +55,6 @@
     <altmember cref="T:System.ComponentModel.AsyncCompletedEventArgs" />
     <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
     <altmember cref="T:System.ComponentModel.AsyncOperation" />
+    <related type="Article" href="http://msdn.microsoft.com/library/792aa8da-918b-458e-b154-9836b97735f3">Asynchronous Pattern for Components</related>
   </Docs>
 </Type>

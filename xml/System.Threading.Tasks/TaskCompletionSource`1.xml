@@ -1,4 +1,4 @@
-﻿<Type Name="TaskCompletionSource&lt;TResult&gt;" FullName="System.Threading.Tasks.TaskCompletionSource&lt;TResult&gt;">
+<Type Name="TaskCompletionSource&lt;TResult&gt;" FullName="System.Threading.Tasks.TaskCompletionSource&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public class TaskCompletionSource&lt;TResult&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskCompletionSource`1&lt;TResult&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskCompletionSource`1" />
@@ -50,6 +50,8 @@
  ]]></format>
     </remarks>
     <threadsafe>All members of <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" /> are thread-safe and may be used from multiple threads concurrently.</threadsafe>
+    <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+    <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -90,6 +92,8 @@
       <Docs>
         <summary>Creates a <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -123,6 +127,8 @@
         <param name="state">The state to use as the underlying <see cref="T:System.Threading.Tasks.Task`1" />'s AsyncState.</param>
         <summary>Creates a <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" /> with the specified state.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -164,6 +170,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> represent options invalid for use with a <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -200,6 +208,8 @@
         <summary>Creates a <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" /> with the specified state and options.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> represent options invalid for use with a <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName="SetCanceled">
@@ -235,6 +245,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying <see cref="T:System.Threading.Tasks.Task`1" /> is already in one of the three final states: <see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion" />, <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" />, or <see cref="F:System.Threading.Tasks.TaskStatus.Canceled" />, or if the underlying <see cref="T:System.Threading.Tasks.Task`1" /> has already been disposed.</exception>
         <altmember cref="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled" />
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetException">
@@ -286,6 +299,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="exceptions" /> argument is null.</exception>
         <exception cref="T:System.ArgumentException">There are one or more null elements in <paramref name="exceptions" />.</exception>
         <exception cref="T:System.InvalidOperationException">The underlying <see cref="T:System.Threading.Tasks.Task`1" /> is already in one of the three final states: <see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion" />, <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" />, or <see cref="F:System.Threading.Tasks.TaskStatus.Canceled" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName="SetException">
@@ -324,6 +339,8 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="P:System.Threading.Tasks.TaskCompletionSource`1.Task" /> was disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> argument is null.</exception>
         <exception cref="T:System.InvalidOperationException">The underlying <see cref="T:System.Threading.Tasks.Task`1" /> is already in one of the three final states: <see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion" />, <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" />, or <see cref="F:System.Threading.Tasks.TaskStatus.Canceled" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName="SetResult">
@@ -362,6 +379,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="P:System.Threading.Tasks.TaskCompletionSource`1.Task" /> was disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The underlying <see cref="T:System.Threading.Tasks.Task`1" /> is already in one of the three final states: <see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion" />, <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" />, or <see cref="F:System.Threading.Tasks.TaskStatus.Canceled" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName="Task">
@@ -404,6 +423,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="TrySetCanceled">
@@ -458,6 +480,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName="TrySetCanceled">
@@ -571,6 +595,8 @@
  -or-  
   
  The <paramref name="exceptions" /> collection is empty.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName="TrySetException">
@@ -616,6 +642,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="P:System.Threading.Tasks.TaskCompletionSource`1.Task" /> was disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName="TrySetResult">
@@ -662,6 +690,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
   </Members>

@@ -47,7 +47,7 @@
  The <xref:System.Web.UI.WebControls.LoginStatus> control displays either a text or an image link, depending on the setting of the <xref:System.Web.UI.WebControls.LoginStatus.LoginImageUrl%2A> and <xref:System.Web.UI.WebControls.LoginStatus.LogoutImageUrl%2A> properties. You can display either text or images for one or both states.  
   
 > [!NOTE]
->  If you are not familiar with the set of login controls available in ASP.NET, see [ASP.NET Login Controls Overview](http://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d) before continuing. For a list of other topics related to login controls and membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
+>  If you are not familiar with the set of login controls available in ASP.NET, see [ASP.NET Login Controls Overview](https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)) before continuing. For a list of other topics related to login controls and membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
   
  When a user is not logged in to the site, the <xref:System.Web.UI.WebControls.LoginStatus> control provides a link to the login page defined in the application configuration settings. When the user is logged in to the Web site, the <xref:System.Web.UI.WebControls.LoginStatus> control provides a link to log out of the Web site. Logging out of the Web site clears the user's authentication status and when using cookies will clear the cookie from the user's client computer. On any subsequent visit to the Web site, the <xref:System.Web.UI.WebControls.LoginStatus> control will display the prompt to log in.  
   
@@ -108,6 +108,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -131,6 +132,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LoginStatus" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -162,6 +164,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoggedOut">
@@ -203,6 +206,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.LoginStatus.OnLoggedOut(System.EventArgs)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoggingOut">
@@ -243,6 +247,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoginImageUrl">
@@ -297,6 +302,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.LoginStatus.LoginText" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoginText">
@@ -344,6 +350,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.LoginStatus.LoginImageUrl" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LogoutAction">
@@ -401,6 +408,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is set to an invalid <see cref="T:System.Web.UI.WebControls.LogoutAction" /> value.</exception>
         <altmember cref="T:System.Web.UI.WebControls.LogoutAction" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LogoutImageUrl">
@@ -454,6 +462,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LogoutPageUrl">
@@ -513,6 +522,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.LoginStatus.LogoutAction" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LogoutText">
@@ -560,6 +570,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.LoginStatus.LogoutImageUrl" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnLoggedOut">
@@ -607,6 +618,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.LoginStatus.OnLoggedOut(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.LoginStatus.OnLoggedOut(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnLoggingOut">
@@ -654,6 +666,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.LoginStatus.OnLoggingOut(System.Web.UI.WebControls.LoginCancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.LoginStatus.OnLoggingOut(System.Web.UI.WebControls.LoginCancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -693,6 +706,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.LoginStatus.OnPreRender(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.LoginStatus.OnPreRender(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -800,6 +814,7 @@
         <block subset="none" type="overrides">
           <para>You can override this property to specify which <see cref="T:System.Web.UI.HtmlTextWriterTag" /> value to use for your derived control.</para>
         </block>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
   </Members>

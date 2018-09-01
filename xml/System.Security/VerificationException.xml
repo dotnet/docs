@@ -1,4 +1,4 @@
-﻿<Type Name="VerificationException" FullName="System.Security.VerificationException">
+<Type Name="VerificationException" FullName="System.Security.VerificationException">
   <TypeSignature Language="C#" Value="public class VerificationException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit VerificationException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Security.VerificationException" />
@@ -42,6 +42,7 @@
     <summary>The exception that is thrown when the security policy requires code to be type safe and the verification process is unable to verify that the code is type safe.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -233,6 +234,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Serialization</related>
       </Docs>
     </Member>
   </Members>

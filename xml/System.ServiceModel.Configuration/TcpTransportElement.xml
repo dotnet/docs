@@ -1,4 +1,4 @@
-﻿<Type Name="TcpTransportElement" FullName="System.ServiceModel.Configuration.TcpTransportElement">
+<Type Name="TcpTransportElement" FullName="System.ServiceModel.Configuration.TcpTransportElement">
   <TypeSignature Language="C#" Value="public sealed class TcpTransportElement : System.ServiceModel.Configuration.ConnectionOrientedTransportElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TcpTransportElement extends System.ServiceModel.Configuration.ConnectionOrientedTransportElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.TcpTransportElement" />
@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/8fcd18c1-9958-42e7-b442-7903f7bdb563">TcpTransport element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

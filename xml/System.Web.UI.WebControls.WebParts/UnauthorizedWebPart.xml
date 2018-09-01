@@ -1,4 +1,4 @@
-﻿<Type Name="UnauthorizedWebPart" FullName="System.Web.UI.WebControls.WebParts.UnauthorizedWebPart">
+<Type Name="UnauthorizedWebPart" FullName="System.Web.UI.WebControls.WebParts.UnauthorizedWebPart">
   <TypeSignature Language="C#" Value="public sealed class UnauthorizedWebPart : System.Web.UI.WebControls.WebParts.ProxyWebPart" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UnauthorizedWebPart extends System.Web.UI.WebControls.WebParts.ProxyWebPart" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart" />
@@ -62,6 +62,7 @@
  ]]></format>
     </remarks>
     <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -85,6 +86,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart" />
         <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -120,6 +122,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart" />
         <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -162,6 +165,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart" />
         <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

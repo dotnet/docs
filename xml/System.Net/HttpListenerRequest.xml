@@ -1,4 +1,4 @@
-﻿<Type Name="HttpListenerRequest" FullName="System.Net.HttpListenerRequest">
+<Type Name="HttpListenerRequest" FullName="System.Net.HttpListenerRequest">
   <TypeSignature Language="C#" Value="public sealed class HttpListenerRequest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpListenerRequest extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.HttpListenerRequest" />
@@ -1322,6 +1322,7 @@
         <altmember cref="P:System.Net.HttpListenerRequest.TransportContext" />
         <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="TransportContext">
@@ -1372,6 +1373,7 @@
         <altmember cref="P:System.Net.HttpListenerRequest.ServiceName" />
         <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -1490,6 +1492,8 @@
         <altmember cref="T:System.Net.HttpListener" />
         <altmember cref="T:System.Net.HttpListenerContext" />
         <altmember cref="T:System.Net.HttpListenerResponse" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/62f121fd-3f2e-4033-bb39-48ae996bfbd9">&lt;httpListener&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="UrlReferrer">

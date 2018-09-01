@@ -1,4 +1,4 @@
-﻿<Type Name="IProvideValueTarget" FullName="System.Windows.Markup.IProvideValueTarget">
+<Type Name="IProvideValueTarget" FullName="System.Windows.Markup.IProvideValueTarget">
   <TypeSignature Language="C#" Value="public interface IProvideValueTarget" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProvideValueTarget" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IProvideValueTarget" />
@@ -103,6 +103,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/db07a952-05ce-4aa4-b6f9-aac7397d0326">Type Converters or Markup Extensions for XAML</related>
       </Docs>
     </Member>
     <Member MemberName="TargetProperty">
@@ -139,6 +140,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/db07a952-05ce-4aa4-b6f9-aac7397d0326">Type Converters or Markup Extensions for XAML</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlWindow" FullName="System.Windows.Forms.HtmlWindow">
+<Type Name="HtmlWindow" FullName="System.Windows.Forms.HtmlWindow">
   <TypeSignature Language="C#" Value="public sealed class HtmlWindow" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HtmlWindow extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlWindow" />
@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms535873.aspx">window Object</related>
+    <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/aa741505.aspx">IHTMLWindow2 Interface</related>
   </Docs>
   <Members>
     <Member MemberName="Alert">
@@ -72,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms535933.aspx">alert Method</related>
       </Docs>
     </Member>
     <Member MemberName="AttachEventHandler">
@@ -105,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListenerx">EventTarget.addEventListener()</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -144,6 +148,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536367.aspx">close Method</related>
       </Docs>
     </Member>
     <Member MemberName="Confirm">
@@ -224,6 +229,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536376.aspx">confirm Method</related>
       </Docs>
     </Member>
     <Member MemberName="DetachEventHandler">
@@ -250,6 +256,7 @@
         <param name="eventHandler">A reference to the managed code that handles the event.</param>
         <summary>Removes the named event handler.</summary>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536411.aspx">detachEvent Method</related>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -331,6 +338,9 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/aa741505.aspx">IHTMLWindow2 Interface</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/aa741356.aspx">IHTMLWindow3 Interface</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/aa741344.aspx">IHTMLWindow4 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -396,6 +406,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/cc197053.aspx">onerror Event</related>
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -427,6 +438,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536425.aspx">focus Method</related>
       </Docs>
     </Member>
     <Member MemberName="Frames">
@@ -466,6 +478,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms537459.aspx">frames Collection</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -535,6 +548,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536934.aspx">onfocus Event</related>
       </Docs>
     </Member>
     <Member MemberName="History">
@@ -602,6 +616,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms537459.aspx">closed Property</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -642,6 +657,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/cc197055.aspx">onload Event</related>
       </Docs>
     </Member>
     <Member MemberName="LostFocus">
@@ -718,6 +734,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The code trying to execute this operation does not have permission to manipulate this window.</exception>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536626.aspx">moveTo Method</related>
       </Docs>
     </Member>
     <Member MemberName="MoveTo">
@@ -777,6 +794,7 @@
         <summary>Gets or sets the name of the window.</summary>
         <value>A <see cref="T:System.String" /> representing the name.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534187.aspx">name Property</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Navigate">
@@ -818,6 +836,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536638.aspx">navigate Method</related>
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1105,6 +1124,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536651.aspx">open Method</related>
       </Docs>
     </Member>
     <Member MemberName="Opener">
@@ -1214,6 +1234,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536651.aspx">open Method</related>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1243,6 +1264,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534326.aspx">parent Property</related>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -1280,6 +1302,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc06e61f-43b6-4408-a676-2542dcfcd96e">Windows Forms Coordinates</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534389.aspx">screenLeft Property</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534390.aspx">screenTop Property</related>
       </Docs>
     </Member>
     <Member MemberName="Prompt">
@@ -1317,6 +1342,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536673.aspx">prompt Method</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveFocus">
@@ -1346,6 +1372,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536347.aspx">blur Method</related>
       </Docs>
     </Member>
     <Member MemberName="Resize">
@@ -1379,6 +1406,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536959.aspx">onresize Event</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ResizeTo">
@@ -1423,6 +1451,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The window you are trying to resize is in a different domain than its parent window. This restriction is part of cross-frame scripting security; for more information, see [About Cross-Frame Scripting and Security](http://msdn.microsoft.com/library/ms533028.aspx).</exception>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536723.aspx">resizeTo Method</related>
       </Docs>
     </Member>
     <Member MemberName="ResizeTo">
@@ -1484,6 +1513,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536966.aspx">onscroll Event</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ScrollTo">
@@ -1532,6 +1562,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536731.aspx">scrollTo Method</related>
       </Docs>
     </Member>
     <Member MemberName="ScrollTo">
@@ -1617,6 +1648,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534648.aspx">status Property</related>
       </Docs>
     </Member>
     <Member MemberName="Unload">
@@ -1650,6 +1682,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536973.aspx">onunload Event</related>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -1717,6 +1750,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.UnauthorizedAccessException">You cannot access a <c>FRAME</c> elements or the <c>FRAME</c>'s document if the <c>FRAME</c> is in a different zone than the <c>FRAMESET</c> that contains it. For a full explanation, see [About Cross-Frame Scripting and Security](http://msdn.microsoft.com/library/ms533028.aspx).</permission>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms533771.aspx">frameElement Property</related>
       </Docs>
     </Member>
   </Members>

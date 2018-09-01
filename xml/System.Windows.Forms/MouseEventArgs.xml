@@ -1,4 +1,4 @@
-﻿<Type Name="MouseEventArgs" FullName="System.Windows.Forms.MouseEventArgs">
+<Type Name="MouseEventArgs" FullName="System.Windows.Forms.MouseEventArgs">
   <TypeSignature Language="C#" Value="public class MouseEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MouseEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MouseEventArgs" />
@@ -274,6 +274,8 @@
         <altmember cref="P:System.Windows.Forms.MouseEventArgs.Button" />
         <altmember cref="P:System.Windows.Forms.MouseEventArgs.Y" />
         <altmember cref="P:System.Windows.Forms.MouseEventArgs.X" />
+        <related type="Article" href="http://msdn.microsoft.com/library/cc06e61f-43b6-4408-a676-2542dcfcd96e">Windows Forms Coordinates</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8cf0070d-793b-4876-b09e-d20d28280fab">Mouse Events in Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="X">

@@ -1,4 +1,4 @@
-﻿<Type Name="BindingExpression" FullName="System.Windows.Data.BindingExpression">
+<Type Name="BindingExpression" FullName="System.Windows.Data.BindingExpression">
   <TypeSignature Language="C#" Value="public sealed class BindingExpression : System.Windows.Data.BindingExpressionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BindingExpression extends System.Windows.Data.BindingExpressionBase implements class System.Windows.IWeakEventListener" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.BindingExpression" />
@@ -13,7 +13,8 @@
   <Base>
     <BaseTypeName>System.Windows.Data.BindingExpressionBase</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Contains information about a single instance of a <see cref="T:System.Windows.Data.Binding" />.</summary>
     <remarks>

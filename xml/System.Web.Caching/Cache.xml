@@ -1,4 +1,4 @@
-﻿<Type Name="Cache" FullName="System.Web.Caching.Cache">
+<Type Name="Cache" FullName="System.Web.Caching.Cache">
   <TypeSignature Language="C#" Value="public sealed class Cache : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Cache extends System.Object implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.Cache" />
@@ -47,6 +47,7 @@
     <altmember cref="T:System.Web.HttpContext" />
     <altmember cref="T:System.Web.Caching.CacheDependency" />
     <altmember cref="T:System.Web.Caching.CacheItemRemovedCallback" />
+    <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -125,7 +126,7 @@
  The following example creates an `AddItemToCache` method. When this method is called, it sets an `itemRemoved` property to `false` and registers an `onRemove` method with a new instance of the <xref:System.Web.Caching.CacheItemRemovedCallback> delegate. The delegate's signature is used in the `RemovedCallback` method. The `AddItemToCache` method then checks the value associated with the `Key1` key in the cache. If the value is `null`, the `Add` method places an item in the cache with a key of `Key1`, a value of `Value 1`, an absolute expiration of 60 seconds, and a high cache priority. It also uses the `onRemove` method as an argument. This allows the `RemovedCallback` method to be called when this item is removed from the cache.  
   
 > [!NOTE]
->  For examples of how to use the <xref:System.Web.Caching.CacheDependency> class and the <xref:System.Web.Caching.CacheItemRemovedCallback> delegate, see [Caching Application Data](http://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d).  
+>  For examples of how to use the <xref:System.Web.Caching.CacheDependency> class and the <xref:System.Web.Caching.CacheItemRemovedCallback> delegate, see [Caching Application Data](https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)).  
   
  [!code-csharp[System.Web.Caching Examples#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Caching Examples/CS/cachecs.aspx#3)]
  [!code-vb[System.Web.Caching Examples#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Caching Examples/VB/cachevb.aspx#3)]  
@@ -138,6 +139,7 @@
         <altmember cref="T:System.Web.Caching.CacheDependency" />
         <altmember cref="T:System.Web.Caching.CacheItemPriority" />
         <altmember cref="T:System.Web.Caching.CacheItemRemovedCallback" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -283,6 +285,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -375,6 +378,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> or <paramref name="value" /> parameter is <see langword="null" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -486,6 +490,7 @@
         <exception cref="T:System.ArgumentException">The <paramref name="absoluteExpiration" /> and <paramref name="slidingExpiration" /> parameters are both set for the item you are trying to add to the <see langword="Cache" />.</exception>
         <altmember cref="T:System.DateTime" />
         <altmember cref="T:System.TimeSpan" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -609,6 +614,7 @@
         <altmember cref="T:System.TimeSpan" />
         <altmember cref="T:System.Web.Caching.CacheItemPriority" />
         <altmember cref="T:System.Web.Caching.CacheItemRemovedCallback" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -664,6 +670,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName="NoAbsoluteExpiration">
@@ -779,6 +786,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">

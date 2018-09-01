@@ -1,4 +1,4 @@
-﻿<Type Name="DoubleKeyFrame" FullName="System.Windows.Media.Animation.DoubleKeyFrame">
+<Type Name="DoubleKeyFrame" FullName="System.Windows.Media.Animation.DoubleKeyFrame">
   <TypeSignature Language="C#" Value="public abstract class DoubleKeyFrame : System.Windows.Freezable, System.Windows.Media.Animation.IKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DoubleKeyFrame extends System.Windows.Freezable implements class System.Windows.Media.Animation.IKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.DoubleKeyFrame" />
@@ -23,6 +23,7 @@
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Windows.Media.Animation.DoubleKeyFrameCollection" />
     <altmember cref="T:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160012">KeyFrame Animation Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -205,6 +206,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160012">KeyFrame Animation Sample</related>
       </Docs>
     </Member>
     <Member MemberName="KeyTimeProperty">

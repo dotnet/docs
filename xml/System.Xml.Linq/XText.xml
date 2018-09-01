@@ -1,4 +1,4 @@
-﻿<Type Name="XText" FullName="System.Xml.Linq.XText">
+<Type Name="XText" FullName="System.Xml.Linq.XText">
   <TypeSignature Language="C#" Value="public class XText : System.Xml.Linq.XNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XText extends System.Xml.Linq.XNode" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XText" />
@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -53,6 +54,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XText" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -115,6 +117,7 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -156,6 +159,7 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="NodeType">
@@ -265,6 +269,7 @@ Text
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -348,6 +353,7 @@ Newer text
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -392,6 +398,7 @@ Newer text
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="WriteToAsync">

@@ -1,4 +1,4 @@
-﻿<Type Name="XmlStreamStore" FullName="System.Windows.Annotations.Storage.XmlStreamStore">
+<Type Name="XmlStreamStore" FullName="System.Windows.Annotations.Storage.XmlStreamStore">
   <TypeSignature Language="C#" Value="public sealed class XmlStreamStore : System.Windows.Annotations.Storage.AnnotationStore" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlStreamStore extends System.Windows.Annotations.Storage.AnnotationStore" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.Storage.XmlStreamStore" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents an XML data store for writing and reading user annotations.</summary>
     <remarks>To be added.</remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=73824">XML Markup Compatibility Specification</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -443,6 +444,7 @@
         </remarks>
         <altmember cref="P:System.Windows.Annotations.Storage.XmlStreamStore.IgnoredNamespaces" />
         <altmember cref="P:System.Windows.Annotations.Storage.XmlStreamStore.WellKnownNamespaces" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=73824">XML Markup Compatibility Specification</related>
       </Docs>
     </Member>
     <Member MemberName="IgnoredNamespaces">
@@ -481,6 +483,7 @@
         </remarks>
         <altmember cref="P:System.Windows.Annotations.Storage.XmlStreamStore.WellKnownNamespaces" />
         <altmember cref="M:System.Windows.Annotations.Storage.XmlStreamStore.GetWellKnownCompatibleNamespaces(System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=73824">XML Markup Compatibility Specification</related>
       </Docs>
     </Member>
     <Member MemberName="OnStoreContentChanged">
@@ -543,6 +546,7 @@
         </remarks>
         <altmember cref="P:System.Windows.Annotations.Storage.XmlStreamStore.IgnoredNamespaces" />
         <altmember cref="M:System.Windows.Annotations.Storage.XmlStreamStore.GetWellKnownCompatibleNamespaces(System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=73824">XML Markup Compatibility Specification</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="SelectionRangeConverter" FullName="System.Windows.Forms.SelectionRangeConverter">
+<Type Name="SelectionRangeConverter" FullName="System.Windows.Forms.SelectionRangeConverter">
   <TypeSignature Language="C#" Value="public class SelectionRangeConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SelectionRangeConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SelectionRangeConverter" />
@@ -23,7 +23,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.SelectionRange> class represents a single date or a range of dates. This class is commonly associated with the <xref:System.Windows.Forms.MonthCalendar> control, where it represents the selected and highlighted dates. The <xref:System.Windows.Forms.SelectionRangeConverter> class is an adjunct class to <xref:System.Windows.Forms.SelectionRange> that enables you to convert to and from other types, most often strings.  
   
- For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class, [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada), and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
+ For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class, [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada), and [How to: Implement a Type Converter](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)).  
   
 > [!NOTE]
 >  You should never create a <xref:System.Windows.Forms.SelectionRangeConverter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
@@ -35,6 +35,8 @@
     <altmember cref="T:System.DateTime" />
     <altmember cref="T:System.ComponentModel.TypeConverter" />
     <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+    <related type="Article" href="http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada">Generalized Type Conversion</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

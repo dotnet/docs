@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripDropDownButton" FullName="System.Windows.Forms.ToolStripDropDownButton">
+<Type Name="ToolStripDropDownButton" FullName="System.Windows.Forms.ToolStripDropDownButton">
   <TypeSignature Language="C#" Value="public class ToolStripDropDownButton : System.Windows.Forms.ToolStripDropDownItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripDropDownButton extends System.Windows.Forms.ToolStripDropDownItem" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripDropDownButton" />
@@ -41,6 +41,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Forms.ToolStripDropDownItem" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e5ef455a-e049-429c-8005-30c93132fb79">ToolStrip Control (Windows Forms)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

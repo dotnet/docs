@@ -1,4 +1,4 @@
-﻿<Type Name="PrintTicketConverter" FullName="System.Printing.Interop.PrintTicketConverter">
+<Type Name="PrintTicketConverter" FullName="System.Printing.Interop.PrintTicketConverter">
   <TypeSignature Language="C#" Value="public sealed class PrintTicketConverter : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintTicketConverter extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Printing.Interop.PrintTicketConverter" />
@@ -69,6 +69,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="clientPrintSchemaVersion" /> is 0 or less.</exception>
         <exception cref="T:System.Printing.PrintQueueException">The converter was unable to bind to <paramref name="deviceName" />.</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=186397">Print Schema</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ConvertDevModeToPrintTicket">
@@ -322,6 +323,7 @@
         <summary>Gets the maximum [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) version that <see cref="T:System.Printing.Interop.PrintTicketConverter" /> can support.</summary>
         <value>The maximum [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) version that <see cref="T:System.Printing.Interop.PrintTicketConverter" /> can support.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=186397">Print Schema</related>
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">

@@ -1,4 +1,4 @@
-﻿<Type Name="PlatformNotSupportedException" FullName="System.PlatformNotSupportedException">
+<Type Name="PlatformNotSupportedException" FullName="System.PlatformNotSupportedException">
   <TypeSignature Language="C#" Value="public class PlatformNotSupportedException : NotSupportedException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PlatformNotSupportedException extends System.NotSupportedException" />
   <TypeSignature Language="DocId" Value="T:System.PlatformNotSupportedException" />
@@ -48,6 +48,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="HttpException" FullName="System.Web.HttpException">
+<Type Name="HttpException" FullName="System.Web.HttpException">
   <TypeSignature Language="C#" Value="public class HttpException : System.Runtime.InteropServices.ExternalException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit HttpException extends System.Runtime.InteropServices.ExternalException" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpException" />
@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.HttpException> class is an HTTP-specific exception class that enables ASP.NET to generate exception information. For more information about throwing and handling exceptions, see [Exceptions](http://msdn.microsoft.com/library/f99a1d29-a2a8-47af-9707-9909f9010735).  
+ The <xref:System.Web.HttpException> class is an HTTP-specific exception class that enables ASP.NET to generate exception information. For more information about throwing and handling exceptions, see [Exceptions](~/docs/standard/exceptions/index.md).  
   
    
   
@@ -41,6 +41,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -95,6 +97,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Exception.InnerException" />
+        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -137,6 +140,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Exception.InnerException" />
+        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -201,6 +205,7 @@
         </remarks>
         <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
         <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -252,6 +257,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Exception.InnerException" />
+        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -291,6 +297,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Exception.InnerException" />
+        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -344,6 +351,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Exception.InnerException" />
+        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -385,6 +393,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Exception.InnerException" />
+        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateFromLastError">
@@ -511,6 +520,7 @@
         </remarks>
         <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
         <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName="WebEventCode">

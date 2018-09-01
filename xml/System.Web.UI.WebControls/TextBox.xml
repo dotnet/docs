@@ -268,6 +268,8 @@
     <altmember cref="P:System.Web.UI.WebControls.TextBox.Wrap" />
     <altmember cref="P:System.Web.UI.WebControls.TextBox.ReadOnly" />
     <altmember cref="P:System.Web.UI.WebControls.TextBox.MaxLength" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f">TextBox Web Server Control Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1154,7 +1156,7 @@
   
  View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control's life cycle. For more information, see [ASP.NET Application Life Cycle Overview for IIS 5.0 and 6.0](http://msdn.microsoft.com/library/de0d8a1c-b1bc-48e1-b246-26e32289a82f).  
   
- When view state is saved, this string object is returned to the client as a variable that is stored in a hidden HTML input element. When you author custom server controls, you can improve efficiency by overriding this method and modifying your server control's `ViewState` property. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ When view state is saved, this string object is returned to the client as a variable that is stored in a hidden HTML input element. When you author custom server controls, you can improve efficiency by overriding this method and modifying your server control's `ViewState` property. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
  ]]></format>
         </remarks>

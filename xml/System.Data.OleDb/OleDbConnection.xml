@@ -1,4 +1,4 @@
-﻿<Type Name="OleDbConnection" FullName="System.Data.OleDb.OleDbConnection">
+<Type Name="OleDbConnection" FullName="System.Data.OleDb.OleDbConnection">
   <TypeSignature Language="C#" Value="public sealed class OleDbConnection : System.Data.Common.DbConnection, ICloneable, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OleDbConnection extends System.Data.Common.DbConnection implements class System.Data.IDbConnection, class System.ICloneable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbConnection" />
@@ -64,6 +64,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -73,6 +74,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbConnection" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -116,6 +118,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -163,6 +166,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="BeginDbTransaction">
@@ -197,6 +201,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Starts a database transaction.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="BeginTransaction">
@@ -237,6 +242,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Parallel transactions are not supported.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="BeginTransaction">
@@ -282,6 +288,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Parallel transactions are not supported.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="ChangeDatabase">
@@ -329,6 +336,7 @@
         <exception cref="T:System.ArgumentException">The database name is not valid.</exception>
         <exception cref="T:System.InvalidOperationException">The connection is not open.</exception>
         <exception cref="T:System.Data.OleDb.OleDbException">Cannot change the database.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -367,6 +375,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectionString">
@@ -487,6 +496,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An invalid connection string argument has been supplied or a required connection string argument has not been supplied.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectionTimeout">
@@ -542,6 +552,7 @@
         <exception cref="T:System.ArgumentException">The value set is less than 0.</exception>
         <altmember cref="P:System.Data.OleDb.OleDbConnection.Database" />
         <altmember cref="P:System.Data.OleDb.OleDbConnection.DataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="CreateCommand">
@@ -566,6 +577,8 @@
         <summary>Creates and returns an <see cref="T:System.Data.OleDb.OleDbCommand" /> object associated with the <see cref="T:System.Data.OleDb.OleDbConnection" />.</summary>
         <returns>An <see cref="T:System.Data.OleDb.OleDbCommand" /> object.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDbCommand">
@@ -644,6 +657,7 @@
         <altmember cref="P:System.Data.OleDb.OleDbConnection.ConnectionString" />
         <altmember cref="P:System.Data.OleDb.OleDbConnection.ConnectionTimeout" />
         <altmember cref="P:System.Data.OleDb.OleDbConnection.DataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -696,6 +710,7 @@
         <altmember cref="P:System.Data.OleDb.OleDbConnection.ConnectionTimeout" />
         <altmember cref="P:System.Data.OleDb.OleDbConnection.Database" />
         <altmember cref="P:System.Data.OleDb.OleDbConnection.ConnectionString" />
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -759,6 +774,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="EnlistTransaction">
@@ -790,6 +806,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="GetOleDbSchemaTable">
@@ -845,6 +862,7 @@
  -or-  
   
  The <paramref name="schema" /> parameter contains a value of <see cref="F:System.Data.OleDb.OleDbSchemaGuid.DbInfoLiterals" /> and the <paramref name="restrictions" /> parameter contains one or more restrictions.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetSchema">
@@ -854,6 +872,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Returns schema information for the data source of this <see cref="T:System.Data.OleDb.OleDbConnection" />.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetSchema">
@@ -877,6 +896,7 @@
         <summary>Returns schema information for the data source of this <see cref="T:System.Data.OleDb.OleDbConnection" />.</summary>
         <returns>A <see cref="T:System.Data.DataTable" /> that contains schema information.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="GetSchema">
@@ -910,6 +930,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="GetSchema">
@@ -949,6 +970,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="InfoMessage">
@@ -1025,6 +1047,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection is already open.</exception>
         <exception cref="T:System.Data.OleDb.OleDbException">A connection-level error occurred while opening the connection.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -1072,6 +1095,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="ReleaseObjectPool">
@@ -1122,6 +1146,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/2bd83b1e-3ea9-43c4-bade-d9cdb9bbbb04">Understanding Connection Pooling</related>
       </Docs>
     </Member>
     <Member MemberName="ResetState">
@@ -1159,6 +1185,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="ServerVersion">
@@ -1211,6 +1238,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection is closed.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -1265,6 +1293,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="StateChange">

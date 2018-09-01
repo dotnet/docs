@@ -1,4 +1,4 @@
-﻿<Type Name="TypedTableBaseExtensions" FullName="System.Data.TypedTableBaseExtensions">
+<Type Name="TypedTableBaseExtensions" FullName="System.Data.TypedTableBaseExtensions">
   <TypeSignature Language="C#" Value="public static class TypedTableBaseExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TypedTableBaseExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.TypedTableBaseExtensions" />
@@ -26,6 +26,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2">Standard Query Operators Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ad712fa1-2baf-462a-b163-574cce6d376a">Querying Typed DataSets</related>
   </Docs>
   <Members>
     <Member MemberName="AsEnumerable&lt;TRow&gt;">

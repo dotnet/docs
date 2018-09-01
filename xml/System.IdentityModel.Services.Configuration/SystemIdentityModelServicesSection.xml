@@ -1,4 +1,4 @@
-﻿<Type Name="SystemIdentityModelServicesSection" FullName="System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection">
+<Type Name="SystemIdentityModelServicesSection" FullName="System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection">
   <TypeSignature Language="C#" Value="public sealed class SystemIdentityModelServicesSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SystemIdentityModelServicesSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection" />
@@ -23,6 +23,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/fa1624dd-2d74-4ae3-942e-498cee261ac5">&lt;system.identityModel.services&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +62,7 @@
         <summary>Gets a reference to the <see langword="&lt;system.identityModel.services&gt;" /> section from the configuration file.</summary>
         <value>The <see langword="&lt;system.identityModel.services&gt;" /> section from the configuration file. <see langword="null" /> if the configuration file does not contain a <see langword="&lt;system.identityModel.services&gt;" /> section.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/fa1624dd-2d74-4ae3-942e-498cee261ac5">&lt;system.identityModel.services&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultFederationConfigurationElement">
@@ -89,6 +91,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b14054c-6d07-46ab-ab58-03f14beac0f2">&lt;federationConfiguration&gt;</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/fa1624dd-2d74-4ae3-942e-498cee261ac5">&lt;system.identityModel.services&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="FederationConfigurationElements">
@@ -115,6 +119,8 @@
         <summary>Gets the collection of <see langword="&lt;federationConfiguration&gt;" /> elements configured in this <see langword="&lt;system.identityModel.services&gt;" /> section.</summary>
         <value>A collection that contains all of the <see langword="&lt;federationConfiguration&gt;" /> elements configured in this <see langword="&lt;system.identityModel.services&gt;" /> section.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b14054c-6d07-46ab-ab58-03f14beac0f2">&lt;federationConfiguration&gt;</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/fa1624dd-2d74-4ae3-942e-498cee261ac5">&lt;system.identityModel.services&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="SectionName">

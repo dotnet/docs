@@ -1,4 +1,4 @@
-﻿<Type Name="CertificateEmbeddingOption" FullName="System.IO.Packaging.CertificateEmbeddingOption">
+<Type Name="CertificateEmbeddingOption" FullName="System.IO.Packaging.CertificateEmbeddingOption">
   <TypeSignature Language="C#" Value="public enum CertificateEmbeddingOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CertificateEmbeddingOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.CertificateEmbeddingOption" />
@@ -34,6 +34,9 @@
     </remarks>
     <altmember cref="P:System.IO.Packaging.PackageDigitalSignatureManager.CertificateOption" />
     <altmember cref="P:System.IO.Packaging.PackageDigitalSignature.CertificateEmbeddingOption" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159966">Creating a Package with a Digital Signature Sample</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions (OPC) Specification</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
   </Docs>
   <Members>
     <Member MemberName="InCertificatePart">

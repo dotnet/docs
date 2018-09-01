@@ -1,4 +1,4 @@
-﻿<Type Name="ProviderMetadata" FullName="System.Diagnostics.Eventing.Reader.ProviderMetadata">
+<Type Name="ProviderMetadata" FullName="System.Diagnostics.Eventing.Reader.ProviderMetadata">
   <TypeSignature Language="C#" Value="public class ProviderMetadata : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProviderMetadata extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.ProviderMetadata" />
@@ -28,6 +28,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -37,6 +39,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.Reader.ProviderMetadata" /> class.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -64,6 +68,8 @@
         <param name="providerName">The name of the event provider that you want to retrieve information about.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.Reader.ProviderMetadata" /> class by specifying the name of the provider that you want to retrieve information about.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -95,6 +101,8 @@
         <param name="targetCultureInfo">The culture that specifies the language that the information should be returned in.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.Reader.ProviderMetadata" /> class by specifying the name of the provider that you want to retrieve information about, the event log service that the provider is registered with, and the language that you want to return the information in.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -122,6 +130,8 @@
         <summary>Gets the localized name of the event provider.</summary>
         <value>Returns a string that contains the localized name of the event provider.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -131,6 +141,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Releases the resources used by this object.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Dispose">
@@ -156,6 +168,8 @@
       <Docs>
         <summary>Releases all the resources used by this object.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -193,6 +207,8 @@
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by this object, and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Events">
@@ -220,6 +236,8 @@
         <summary>Gets an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventMetadata" /> objects, each of which represents an event that is defined in the provider.</summary>
         <value>Returns an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventMetadata" /> objects.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="HelpLink">
@@ -242,6 +260,8 @@
         <summary>Gets the base of the URL used to form help requests for the events in this event provider.</summary>
         <value>Returns a <see cref="T:System.Uri" /> value.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -264,6 +284,8 @@
         <summary>Gets the globally unique identifier (GUID) for the event provider.</summary>
         <value>Returns the GUID value for the event provider.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Keywords">
@@ -286,6 +308,8 @@
         <summary>Gets an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventKeyword" /> objects, each of which represent an event keyword that is defined in the event provider.</summary>
         <value>Returns an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventKeyword" /> objects.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Levels">
@@ -308,6 +332,8 @@
         <summary>Gets an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventLevel" /> objects, each of which represent a level that is defined in the event provider.</summary>
         <value>Returns an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventLevel" /> objects.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="LogLinks">
@@ -335,6 +361,8 @@
         <summary>Gets an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventLogLink" /> objects, each of which represent a link to an event log that is used by the event provider.</summary>
         <value>Returns an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventLogLink" /> objects.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="MessageFilePath">
@@ -357,6 +385,8 @@
         <summary>Gets the path of the file that contains the message table resource that has the strings associated with the provider metadata.</summary>
         <value>Returns a string that contains the path of the provider message file.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -384,6 +414,8 @@
         <summary>Gets the unique name of the event provider.</summary>
         <value>Returns a string that contains the unique name of the event provider.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Opcodes">
@@ -406,6 +438,8 @@
         <summary>Gets an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventOpcode" /> objects, each of which represent an opcode that is defined in the event provider.</summary>
         <value>Returns an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventOpcode" /> objects.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="ParameterFilePath">
@@ -428,6 +462,8 @@
         <summary>Gets the path of the file that contains the message table resource that has the strings used for parameter substitutions in event descriptions.</summary>
         <value>Returns a string that contains the path of the file that contains the message table resource that has the strings used for parameter substitutions in event descriptions.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="ResourceFilePath">
@@ -450,6 +486,8 @@
         <summary>Gets the path to the file that contains the metadata associated with the provider.</summary>
         <value>Returns a string that contains the path to the file that contains the metadata associated with the provider.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Tasks">
@@ -472,6 +510,8 @@
         <summary>Gets an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventTask" /> objects, each of which represent a task that is defined in the event provider.</summary>
         <value>Returns an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventTask" /> objects.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="MaskedTextBox" FullName="System.Windows.Forms.MaskedTextBox">
+<Type Name="MaskedTextBox" FullName="System.Windows.Forms.MaskedTextBox">
   <TypeSignature Language="C#" Value="public class MaskedTextBox : System.Windows.Forms.TextBoxBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MaskedTextBox extends System.Windows.Forms.TextBoxBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MaskedTextBox" />
@@ -109,6 +109,7 @@
     </remarks>
     <altmember cref="P:System.Windows.Forms.MaskedTextBox.Mask" />
     <altmember cref="T:System.ComponentModel.MaskedTextProvider" />
+    <related type="Article" href="http://msdn.microsoft.com/library/235d6121-027d-481d-8d59-4f6794d15d0c">MaskedTextBox Control (Windows Forms)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="TimeZoneInfo" FullName="System.TimeZoneInfo">
+<Type Name="TimeZoneInfo" FullName="System.TimeZoneInfo">
   <TypeSignature Language="C#" Value="public sealed class TimeZoneInfo : IEquatable&lt;TimeZoneInfo&gt;, System.Runtime.Serialization.IDeserializationCallback, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit TimeZoneInfo extends System.Object implements class System.IEquatable`1&lt;class System.TimeZoneInfo&gt;, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.TimeZoneInfo" />
@@ -220,6 +220,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Converts a time to the time in a particular time zone.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ConvertTime">
@@ -306,6 +307,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method recognizes only the current adjustment rule when performing the conversion if <paramref name="dateTime" /> is treated as a local time or if <paramref name="destinationTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertTime">
@@ -375,6 +377,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule to the time zone conversion if <paramref name="dateTimeOffset" /> is treated as a local time or if <paramref name="destinationTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertTime">
@@ -478,6 +481,7 @@
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when performing the conversion if <paramref name="dateTime" /> is treated as a local time, if <paramref name="sourceTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />, or if <paramref name="destinationTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
         <altmember cref="Overload:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId" />
+        <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ConvertTimeBySystemTimeZoneId">
@@ -488,6 +492,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Converts a time to the time in another time zone based on a time zone identifier.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ConvertTimeBySystemTimeZoneId">
@@ -563,6 +568,7 @@
         <exception cref="T:System.InvalidTimeZoneException">The time zone identifier was found, but the registry data is corrupted.</exception>
         <exception cref="T:System.Security.SecurityException">The process does not have the permissions required to read from the registry key that contains the time zone information.</exception>
         <exception cref="T:System.TimeZoneNotFoundException">The <paramref name="destinationTimeZoneId" /> identifier was not found on the local system.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertTimeBySystemTimeZoneId">
@@ -625,6 +631,7 @@
         <exception cref="T:System.InvalidTimeZoneException">The time zone identifier was found but the registry data is corrupted.</exception>
         <exception cref="T:System.Security.SecurityException">The process does not have the permissions required to read from the registry key that contains the time zone information.</exception>
         <exception cref="T:System.TimeZoneNotFoundException">The <paramref name="destinationTimeZoneId" /> identifier was not found on the local system.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertTimeBySystemTimeZoneId">
@@ -720,6 +727,7 @@
  -or-  
   
  The <paramref name="destinationTimeZoneId" /> identifier was not found on the local system.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertTimeFromUtc">
@@ -790,6 +798,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule to the time zone conversion if <paramref name="destinationTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ConvertTimeToUtc">
@@ -800,6 +809,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Converts a date and time to Coordinated Universal Time (UTC).</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ConvertTimeToUtc">
@@ -873,6 +883,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule to the time zone conversion. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertTimeToUtc">
@@ -948,6 +959,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, the method applies only the current adjustment rule to the time zone conversion if <paramref name="sourceTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateCustomTimeZone">
@@ -1042,6 +1054,7 @@
   
  The <paramref name="baseUtcOffset" /> parameter does not represent a whole number of minutes.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="baseUtcOffset" /> parameter is greater than 14 hours or less than -14 hours.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a6af8647-7893-4f29-95a9-d94c65a6e8dd">How to: Create Time Zones Without Adjustment Rules</related>
       </Docs>
     </Member>
     <Member MemberName="CreateCustomTimeZone">
@@ -1159,6 +1172,7 @@
  -or-  
   
  The sum of the <paramref name="baseUtcOffset" /> parameter and the <see cref="P:System.TimeZoneInfo.AdjustmentRule.DaylightDelta" /> value of one or more objects in the <paramref name="adjustmentRules" /> array is greater than 14 hours or less than -14 hours.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/c52ef192-13a9-435f-8015-3b12eae8c47c">How to: Create Time Zones with Adjustment Rules</related>
       </Docs>
     </Member>
     <Member MemberName="CreateCustomTimeZone">
@@ -1280,6 +1294,8 @@
  -or-  
   
  The sum of the <paramref name="baseUtcOffset" /> parameter and the <see cref="P:System.TimeZoneInfo.AdjustmentRule.DaylightDelta" /> value of one or more objects in the <paramref name="adjustmentRules" /> array is greater than 14 hours or less than -14 hours.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a6af8647-7893-4f29-95a9-d94c65a6e8dd">How to: Create Time Zones Without Adjustment Rules</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c52ef192-13a9-435f-8015-3b12eae8c47c">How to: Create Time Zones with Adjustment Rules</related>
       </Docs>
     </Member>
     <Member MemberName="DaylightName">
@@ -1614,6 +1630,7 @@
         <exception cref="T:System.Security.SecurityException">The process does not have the permissions required to read from the registry key that contains the time zone information.</exception>
         <exception cref="T:System.InvalidTimeZoneException">The time zone identifier was found, but the registry data is corrupted.</exception>
         <altmember cref="P:System.TimeZoneInfo.Id" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8cb620e5-c6a6-4267-a52e-beeb73cd1a34">How to: Instantiate a TimeZoneInfo Object</related>
       </Docs>
     </Member>
     <Member MemberName="FromSerializedString">
@@ -1672,6 +1689,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="source" /> parameter is a null string.</exception>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The source parameter cannot be deserialized back into a <see cref="T:System.TimeZoneInfo" /> object.</exception>
         <altmember cref="M:System.TimeZoneInfo.ToSerializedString" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6b7b4de9-da07-47e3-8f4c-823f81798ee7">How to: Restore Time Zones from an Embedded Resource</related>
       </Docs>
     </Member>
     <Member MemberName="GetAdjustmentRules">
@@ -1822,6 +1840,8 @@
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when determining whether <paramref name="dateTime" /> is ambiguous if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report ambiguous time offsets for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
         <altmember cref="Overload:System.TimeZoneInfo.IsAmbiguousTime" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2cf5fb25-492c-4875-9245-98cac8348e97">How to: Resolve Ambiguous Times</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/bca874ee-5b68-4654-8bbd-3711220ef332">How to: Let Users Resolve Ambiguous Times</related>
       </Docs>
     </Member>
     <Member MemberName="GetAmbiguousTimeOffsets">
@@ -1879,6 +1899,8 @@
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when determining whether <paramref name="dateTimeOffset" /> is ambiguous if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report ambiguous time offsets for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
         <altmember cref="M:System.TimeZoneInfo.IsAmbiguousTime(System.DateTime)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2cf5fb25-492c-4875-9245-98cac8348e97">How to: Resolve Ambiguous Times</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/bca874ee-5b68-4654-8bbd-3711220ef332">How to: Let Users Resolve Ambiguous Times</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -2701,6 +2723,7 @@
  [!code-csharp[System.TimeZoneInfo.ConvertTimeToUtc#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timezoneinfo.converttimetoutc/cs/converttimetoutc.cs#1)]
  [!code-vb[System.TimeZoneInfo.ConvertTimeToUtc#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timezoneinfo.converttimetoutc/vb/converttimetoutc.vb#1)]</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/961fb70b-83f0-4dab-a042-cb5fcd817cf5">How to: Access the Predefined UTC and Local Time Zone Objects</related>
       </Docs>
     </Member>
     <Member MemberName="StandardName">
@@ -2964,6 +2987,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.TimeZoneInfo.FromSerializedString(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3c96d83a-a057-4496-abb0-8f4b12712558">How to: Save Time Zones to an Embedded Resource</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3070,6 +3094,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/961fb70b-83f0-4dab-a042-cb5fcd817cf5">How to: Access the Predefined UTC and Local Time Zone Objects</related>
       </Docs>
     </Member>
   </Members>

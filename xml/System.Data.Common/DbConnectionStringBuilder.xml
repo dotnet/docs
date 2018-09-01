@@ -1,4 +1,4 @@
-﻿<Type Name="DbConnectionStringBuilder" FullName="System.Data.Common.DbConnectionStringBuilder">
+<Type Name="DbConnectionStringBuilder" FullName="System.Data.Common.DbConnectionStringBuilder">
   <TypeSignature Language="C#" Value="public class DbConnectionStringBuilder : System.Collections.IDictionary, System.ComponentModel.ICustomTypeDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DbConnectionStringBuilder extends System.Object implements class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable, class System.ComponentModel.ICustomTypeDescriptor" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbConnectionStringBuilder" />
@@ -84,6 +84,8 @@ initial catalog="AdventureWorks;NewValue=Bad"
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -94,6 +96,8 @@ initial catalog="AdventureWorks;NewValue=Bad"
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbConnectionStringBuilder" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -123,6 +127,8 @@ initial catalog="AdventureWorks;NewValue=Bad"
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbConnectionStringBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -163,6 +169,8 @@ initial catalog="AdventureWorks;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -228,6 +236,8 @@ initial catalog="AdventureWorks;NewValue=Bad"
  -or-  
   
  The <see cref="T:System.Data.Common.DbConnectionStringBuilder" /> has a fixed size.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AppendKeyValuePair">
@@ -238,6 +248,8 @@ initial catalog="AdventureWorks;NewValue=Bad"
       </AssemblyInfo>
       <Docs>
         <summary>Provides an efficient and safe way to append a key and value to an existing <see cref="T:System.Text.StringBuilder" /> object.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AppendKeyValuePair">
@@ -293,6 +305,8 @@ initial catalog="AdventureWorks;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AppendKeyValuePair">
@@ -352,6 +366,8 @@ initial catalog="AdventureWorks;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="BrowsableConnectionString">
@@ -412,6 +428,8 @@ initial catalog="AdventureWorks;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -456,6 +474,8 @@ initial catalog="AdventureWorks;NewValue=Bad"
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Data.Common.DbConnectionStringBuilder" /> is read-only.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ClearPropertyDescriptors">
@@ -495,6 +515,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectionString">
@@ -571,6 +592,8 @@ initial catalog="AdventureWorks;NewValue=Bad"
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An invalid connection string argument has been supplied.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -629,6 +652,8 @@ The collection contains the key "Data Source".
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="keyword" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -680,6 +705,8 @@ The collection contains the key "Data Source".
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EquivalentTo">
@@ -743,6 +770,8 @@ builder2.EquivalentTo(builder3) = False
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -778,6 +807,8 @@ builder2.EquivalentTo(builder3) = False
         <param name="propertyDescriptors">The <see cref="T:System.Collections.Hashtable" /> to be filled with information about this <see cref="T:System.Data.Common.DbConnectionStringBuilder" />.</param>
         <summary>Fills a supplied <see cref="T:System.Collections.Hashtable" /> with information about all the properties of this <see cref="T:System.Data.Common.DbConnectionStringBuilder" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -828,6 +859,8 @@ builder2.EquivalentTo(builder3) = False
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -878,6 +911,8 @@ builder2.EquivalentTo(builder3) = False
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -944,6 +979,8 @@ builder2.EquivalentTo(builder3) = False
  -or-  
   
  The property is set, <paramref name="keyword" /> does not exist in the collection, and the <see cref="T:System.Data.Common.DbConnectionStringBuilder" /> has a fixed size.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -1002,6 +1039,8 @@ builder2.EquivalentTo(builder3) = False
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -1067,6 +1106,8 @@ jet oledb:system database=system.mdw
         <exception cref="T:System.ArgumentNullException">
           <paramref name="keyword" /> is null (<see langword="Nothing" /> in Visual Basic)</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Data.Common.DbConnectionStringBuilder" /> is read-only, or the <see cref="T:System.Data.Common.DbConnectionStringBuilder" /> has a fixed size.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerialize">
@@ -1112,6 +1153,8 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -1160,6 +1203,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -1206,6 +1250,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -1251,6 +1296,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Add">
@@ -1300,6 +1346,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Contains">
@@ -1349,6 +1396,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.GetEnumerator">
@@ -1394,6 +1442,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.IsFixedSize">
@@ -1491,6 +1540,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Remove">
@@ -1538,6 +1588,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -1583,6 +1634,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetAttributes">
@@ -1624,6 +1676,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetClassName">
@@ -1665,6 +1718,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetComponentName">
@@ -1706,6 +1760,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetConverter">
@@ -1747,6 +1802,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent">
@@ -1788,6 +1844,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty">
@@ -1829,6 +1886,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEditor">
@@ -1873,6 +1931,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEvents">
@@ -1924,6 +1983,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEvents">
@@ -1968,6 +2028,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="System.ComponentModel.ICustomTypeDescriptor.GetProperties">
@@ -2019,6 +2080,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetProperties">
@@ -2063,6 +2125,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner">
@@ -2107,6 +2170,7 @@ jet oledb:system database=system.mdw
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2141,6 +2205,8 @@ jet oledb:system database=system.mdw
         <summary>Returns the connection string associated with this <see cref="T:System.Data.Common.DbConnectionStringBuilder" />.</summary>
         <returns>The current <see cref="P:System.Data.Common.DbConnectionStringBuilder.ConnectionString" /> property.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
@@ -2207,6 +2273,8 @@ Unable to retrieve value for null key.
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="keyword" /> contains a null value (<see langword="Nothing" /> in Visual Basic).</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -2278,6 +2346,8 @@ username
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Working with Connection Strings</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

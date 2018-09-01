@@ -1,4 +1,4 @@
-﻿<Type Name="ValidationSummaryDesigner" FullName="System.Web.UI.Design.WebControls.ValidationSummaryDesigner">
+<Type Name="ValidationSummaryDesigner" FullName="System.Web.UI.Design.WebControls.ValidationSummaryDesigner">
   <TypeSignature Language="C#" Value="public class ValidationSummaryDesigner : System.Web.UI.Design.WebControls.PreviewControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValidationSummaryDesigner extends System.Web.UI.Design.WebControls.PreviewControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ValidationSummaryDesigner" />
@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +61,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateViewControl">
@@ -82,6 +84,7 @@
         <summary>Returns a copy of the associated control for viewing or rendering on the design surface.</summary>
         <returns>A Web server control.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -113,6 +116,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
   </Members>

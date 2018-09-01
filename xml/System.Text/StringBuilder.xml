@@ -1,4 +1,4 @@
-﻿<Type Name="StringBuilder" FullName="System.Text.StringBuilder">
+<Type Name="StringBuilder" FullName="System.Text.StringBuilder">
   <TypeSignature Language="C#" Value="public sealed class StringBuilder : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit StringBuilder extends System.Object implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Text.StringBuilder" />
@@ -2079,6 +2079,14 @@
       </AssemblyInfo>
       <Docs>
         <summary>Appends the string returned by processing a composite format string, which contains zero or more format items, to this instance. Each format item is replaced by the string representation of a corresponding object argument.</summary>
+        <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/enumeration-format-strings.md">Enumeration Format Strings</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AppendFormat">
@@ -2174,6 +2182,15 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/enumeration-format-strings.md">Enumeration Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="AppendFormat">
@@ -2272,6 +2289,15 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/enumeration-format-strings.md">Enumeration Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="AppendFormat">
@@ -2371,6 +2397,16 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
+        <related type="Article" href="~/docs/standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md">How to: Define and Use Custom Numeric Format Providers</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/enumeration-format-strings.md">Enumeration Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="AppendFormat">
@@ -2491,6 +2527,16 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
+        <related type="Article" href="~/docs/standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md">How to: Define and Use Custom Numeric Format Providers</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/enumeration-format-strings.md">Enumeration Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="AppendFormat">
@@ -2583,6 +2629,15 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/enumeration-format-strings.md">Enumeration Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="AppendFormat">
@@ -2684,6 +2739,16 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
+        <related type="Article" href="~/docs/standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md">How to: Define and Use Custom Numeric Format Providers</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/enumeration-format-strings.md">Enumeration Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="AppendFormat">
@@ -2778,6 +2843,15 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/enumeration-format-strings.md">Enumeration Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="AppendFormat">
@@ -2881,6 +2955,16 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
+        <related type="Article" href="~/docs/standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md">How to: Define and Use Custom Numeric Format Providers</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/enumeration-format-strings.md">Enumeration Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="AppendJoin">

@@ -1,4 +1,4 @@
-﻿<Type Name="CallbackTimeoutsElement" FullName="System.ServiceModel.Configuration.CallbackTimeoutsElement">
+<Type Name="CallbackTimeoutsElement" FullName="System.ServiceModel.Configuration.CallbackTimeoutsElement">
   <TypeSignature Language="C#" Value="public sealed class CallbackTimeoutsElement : System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CallbackTimeoutsElement extends System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.CallbackTimeoutsElement" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents a configuration element that specifies timeout for a client callback. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/d7fcfc5f-6d35-491e-8fa6-2f964c1e792f">CallbackTimeouts in Configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

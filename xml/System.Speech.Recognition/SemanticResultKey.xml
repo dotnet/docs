@@ -1,4 +1,4 @@
-﻿<Type Name="SemanticResultKey" FullName="System.Speech.Recognition.SemanticResultKey">
+<Type Name="SemanticResultKey" FullName="System.Speech.Recognition.SemanticResultKey">
   <TypeSignature Language="C#" Value="public class SemanticResultKey" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SemanticResultKey extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SemanticResultKey" />
@@ -31,9 +31,6 @@
   
  You can use <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey> objects, in conjunction with <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> objects, to define the semantic structure for a speech recognition grammar. To access the semantic information in a recognition result, obtain an instance of <xref:System.Speech.Recognition.SemanticValue> through the <xref:System.Speech.Recognition.RecognizedPhrase.Semantics%2A> property on <xref:System.Speech.Recognition.RecognizedPhrase>.  
   
- For more information about using <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey> objects, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c) and [Using a SemanticResultKey to Extract a SemanticResultValue](http://msdn.microsoft.com/library/198e29b8-845f-4cec-a25e-f55c0eaf46aa) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/library/610116c7-3817-40ff-857b-5d41e8511043).  
-  
-   
   
 ## Examples  
  The following example creates a <xref:System.Speech.Recognition.Grammar> to recognize password input of the form "My password is …", where the actual input is matched with a wildcard.  
@@ -88,6 +85,7 @@ private void pwdGrammar()
     </remarks>
     <altmember cref="T:System.Speech.Recognition.SemanticValue" />
     <altmember cref="T:System.Speech.Recognition.SemanticResultValue" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361587(v%3doffice.14)">Using a SemanticResultKey to Extract a SemanticResultValue</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

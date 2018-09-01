@@ -1,4 +1,4 @@
-﻿<Type Name="TransportContext" FullName="System.Net.TransportContext">
+<Type Name="TransportContext" FullName="System.Net.TransportContext">
   <TypeSignature Language="C#" Value="public abstract class TransportContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TransportContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.TransportContext" />
@@ -45,6 +45,7 @@
     <altmember cref="P:System.Net.Security.SslStream.TransportContext" />
     <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
     <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
+    <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

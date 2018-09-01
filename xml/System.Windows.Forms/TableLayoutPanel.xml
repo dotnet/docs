@@ -1,4 +1,4 @@
-﻿<Type Name="TableLayoutPanel" FullName="System.Windows.Forms.TableLayoutPanel">
+<Type Name="TableLayoutPanel" FullName="System.Windows.Forms.TableLayoutPanel">
   <TypeSignature Language="C#" Value="public class TableLayoutPanel : System.Windows.Forms.Panel, System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableLayoutPanel extends System.Windows.Forms.Panel implements class System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutPanel" />
@@ -120,6 +120,11 @@
     </remarks>
     <altmember cref="T:System.Windows.Forms.FlowLayoutPanel" />
     <altmember cref="T:System.Windows.Forms.TableLayoutSettings" />
+    <related type="Article" href="http://msdn.microsoft.com/library/b6706efb-d7a4-45ec-8cf4-08fa993e3afb">Best Practices for the TableLayoutPanel Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/9233e0c3-2fa6-405e-8701-959479b1250e">AutoSize Behavior in the TableLayoutPanel Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/0d267c35-25f1-49b8-8976-c64e8f0ddc0b">How to: Anchor and Dock Child Controls in a TableLayoutPanel Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/d13eff2d-701c-4b6e-8838-3885cbfb7223">How to: Design a Windows Forms Layout that Responds Well to Localization</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/babdf198-404c-485d-a914-ed370c6ecd99">How to: Create a Resizable Windows Form for Data Entry</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -374,6 +379,7 @@
         </remarks>
         <altmember cref="T:System.Windows.Forms.ColumnStyle" />
         <altmember cref="P:System.Windows.Forms.TableLayoutPanel.RowStyles" />
+        <related type="Article" href="http://msdn.microsoft.com/library/9233e0c3-2fa6-405e-8701-959479b1250e">AutoSize Behavior in the TableLayoutPanel Control</related>
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -1210,6 +1216,7 @@
         </remarks>
         <altmember cref="T:System.Windows.Forms.RowStyle" />
         <altmember cref="P:System.Windows.Forms.TableLayoutPanel.ColumnStyles" />
+        <related type="Article" href="http://msdn.microsoft.com/library/9233e0c3-2fa6-405e-8701-959479b1250e">AutoSize Behavior in the TableLayoutPanel Control</related>
       </Docs>
     </Member>
     <Member MemberName="ScaleControl">

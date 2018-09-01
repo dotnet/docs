@@ -1,4 +1,4 @@
-﻿<Type Name="PageAdapter" FullName="System.Web.UI.Adapters.PageAdapter">
+<Type Name="PageAdapter" FullName="System.Web.UI.Adapters.PageAdapter">
   <TypeSignature Language="C#" Value="public abstract class PageAdapter : System.Web.UI.Adapters.ControlAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PageAdapter extends System.Web.UI.Adapters.ControlAdapter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Adapters.PageAdapter" />
@@ -126,6 +126,7 @@
         <altmember cref="T:System.Web.HttpCacheVaryByHeaders" />
         <altmember cref="P:System.Web.HttpCachePolicy.VaryByHeaders" />
         <altmember cref="T:System.Web.UI.Page" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5032122d-221f-4fed-a5a7-90011f5f88fd">How to: Cache Versions of a Page, Based on HTTP Headers</related>
       </Docs>
     </Member>
     <Member MemberName="CacheVaryByParams">
@@ -163,6 +164,7 @@
         <altmember cref="T:System.Web.UI.Page" />
         <altmember cref="T:System.Web.HttpCacheVaryByParams" />
         <altmember cref="P:System.Web.HttpCachePolicy.VaryByParams" />
+        <related type="Article" href="http://msdn.microsoft.com/library/a504b287-c8d2-4838-9817-3ffee416fec4">How to: Cache Versions of a Page, Based on Parameters</related>
       </Docs>
     </Member>
     <Member MemberName="ClientState">
@@ -202,6 +204,8 @@
         <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.LoadAdapterViewState(System.Object)" />
         <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.SaveAdapterControlState" />
         <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.SaveAdapterViewState" />
+        <related type="Article" href="https://msdn.microsoft.com/library/082c763e-ffe8-4baf-b5e5-a26b2d383187">Page Adapters and View State</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DeterminePostBackMode">

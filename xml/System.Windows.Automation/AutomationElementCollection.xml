@@ -1,4 +1,4 @@
-﻿<Type Name="AutomationElementCollection" FullName="System.Windows.Automation.AutomationElementCollection">
+<Type Name="AutomationElementCollection" FullName="System.Windows.Automation.AutomationElementCollection">
   <TypeSignature Language="C#" Value="public class AutomationElementCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AutomationElementCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationElementCollection" />
@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="CopyTo">

@@ -1,4 +1,4 @@
-﻿<Type Name="GridItemPattern+GridItemPatternInformation" FullName="System.Windows.Automation.GridItemPattern+GridItemPatternInformation">
+<Type Name="GridItemPattern+GridItemPatternInformation" FullName="System.Windows.Automation.GridItemPattern+GridItemPatternInformation">
   <TypeSignature Language="C#" Value="public struct GridItemPattern.GridItemPatternInformation" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit GridItemPattern/GridItemPatternInformation extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.GridItemPattern.GridItemPatternInformation" />
@@ -18,6 +18,11 @@
     <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.GridItemPattern" /> object using its <see cref="P:System.Windows.Automation.GridItemPattern.Current" /> or <see cref="P:System.Windows.Automation.GridItemPattern.Cached" /> accessors.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Windows.Automation.Provider.IGridItemProvider" />
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md">UI Automation Control Patterns for Clients</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/bffbae08-fe2a-42fd-ab84-f37187518916">Implementing the UI Automation GridItem Control Pattern</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/234d11a0-7ce7-4309-8989-2f4720e02f78">Implementing the UI Automation Grid Control Pattern</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
   </Docs>
   <Members>
     <Member MemberName="Column">

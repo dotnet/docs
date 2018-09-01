@@ -1,4 +1,4 @@
-﻿<Type Name="SchemeSettingElement" FullName="System.Configuration.SchemeSettingElement">
+<Type Name="SchemeSettingElement" FullName="System.Configuration.SchemeSettingElement">
   <TypeSignature Language="C#" Value="public sealed class SchemeSettingElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SchemeSettingElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.SchemeSettingElement" />
@@ -34,6 +34,7 @@
     <altmember cref="P:System.Configuration.UriSection.SchemeSettings" />
     <altmember cref="T:System.GenericUriParserOptions" />
     <altmember cref="T:System.Uri" />
+    <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -107,6 +108,7 @@
         <altmember cref="P:System.Configuration.UriSection.SchemeSettings" />
         <altmember cref="T:System.GenericUriParserOptions" />
         <altmember cref="T:System.Uri" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -151,6 +153,7 @@
         <altmember cref="P:System.Configuration.UriSection.SchemeSettings" />
         <altmember cref="T:System.GenericUriParserOptions" />
         <altmember cref="T:System.Uri" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">

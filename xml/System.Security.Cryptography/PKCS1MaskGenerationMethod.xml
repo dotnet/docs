@@ -1,4 +1,4 @@
-﻿<Type Name="PKCS1MaskGenerationMethod" FullName="System.Security.Cryptography.PKCS1MaskGenerationMethod">
+<Type Name="PKCS1MaskGenerationMethod" FullName="System.Security.Cryptography.PKCS1MaskGenerationMethod">
   <TypeSignature Language="C#" Value="public class PKCS1MaskGenerationMethod : System.Security.Cryptography.MaskGenerationMethod" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PKCS1MaskGenerationMethod extends System.Security.Cryptography.MaskGenerationMethod" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.PKCS1MaskGenerationMethod" />
@@ -40,6 +40,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +77,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="GenerateMask">
@@ -127,6 +129,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="HashName">
@@ -167,6 +170,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
   </Members>

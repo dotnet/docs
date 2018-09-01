@@ -1,4 +1,4 @@
-﻿<Type Name="RouteTable" FullName="System.Web.Routing.RouteTable">
+<Type Name="RouteTable" FullName="System.Web.Routing.RouteTable">
   <TypeSignature Language="C#" Value="public class RouteTable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RouteTable extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RouteTable" />
@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,6 +69,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteTable" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="Routes">
@@ -115,6 +117,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
   </Members>

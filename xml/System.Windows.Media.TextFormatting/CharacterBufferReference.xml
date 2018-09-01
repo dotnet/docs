@@ -1,4 +1,4 @@
-﻿<Type Name="CharacterBufferReference" FullName="System.Windows.Media.TextFormatting.CharacterBufferReference">
+<Type Name="CharacterBufferReference" FullName="System.Windows.Media.TextFormatting.CharacterBufferReference">
   <TypeSignature Language="C#" Value="public struct CharacterBufferReference : IEquatable&lt;System.Windows.Media.TextFormatting.CharacterBufferReference&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CharacterBufferReference extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Windows.Media.TextFormatting.CharacterBufferReference&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.CharacterBufferReference" />
@@ -21,6 +21,7 @@
   <Docs>
     <summary>Describes a character buffer for a text run.</summary>
     <remarks>To be added.</remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159965">Advanced Text Formatting Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

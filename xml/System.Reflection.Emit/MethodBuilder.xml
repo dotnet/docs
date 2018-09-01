@@ -1,4 +1,4 @@
-﻿<Type Name="MethodBuilder" FullName="System.Reflection.Emit.MethodBuilder">
+<Type Name="MethodBuilder" FullName="System.Reflection.Emit.MethodBuilder">
   <TypeSignature Language="C#" Value="public sealed class MethodBuilder : System.Reflection.MethodInfo, System.Runtime.InteropServices._MethodBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit MethodBuilder extends System.Reflection.MethodInfo implements class System.Runtime.InteropServices._MethodBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.MethodBuilder" />
@@ -462,6 +462,7 @@
         <altmember cref="T:System.Reflection.MethodInfo" />
         <altmember cref="P:System.Type.IsGenericType" />
         <altmember cref="Overload:System.Reflection.Emit.TypeBuilder.DefineMethod" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-a-generic-method-with-reflection-emit.md">How to: Define a Generic Method with Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName="DefineParameter">
@@ -736,6 +737,7 @@
         </remarks>
         <altmember cref="T:System.Reflection.MethodInfo" />
         <altmember cref="P:System.Type.IsGenericType" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-a-generic-method-with-reflection-emit.md">How to: Define a Generic Method with Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName="GetGenericMethodDefinition">
@@ -778,6 +780,7 @@
         <exception cref="T:System.InvalidOperationException">The current method is not generic. That is, the <see cref="P:System.Reflection.Emit.MethodBuilder.IsGenericMethod" /> property returns <see langword="false" />.</exception>
         <altmember cref="T:System.Reflection.MethodInfo" />
         <altmember cref="P:System.Type.IsGenericType" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-a-generic-method-with-reflection-emit.md">How to: Define a Generic Method with Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -1249,6 +1252,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-a-generic-method-with-reflection-emit.md">How to: Define a Generic Method with Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName="IsGenericMethodDefinition">
@@ -1295,6 +1299,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-a-generic-method-with-reflection-emit.md">How to: Define a Generic Method with Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName="IsSecurityCritical">
@@ -1442,6 +1447,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-a-generic-method-with-reflection-emit.md">How to: Define a Generic Method with Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName="MethodHandle">
@@ -2051,6 +2057,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current method is generic, but is not a generic method definition. That is, the <see cref="P:System.Reflection.Emit.MethodBuilder.IsGenericMethod" /> property is <see langword="true" />, but the <see cref="P:System.Reflection.Emit.MethodBuilder.IsGenericMethodDefinition" /> property is <see langword="false" />.</exception>
         <altmember cref="M:System.Reflection.Emit.MethodBuilder.SetReturnType(System.Type)" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-a-generic-method-with-reflection-emit.md">How to: Define a Generic Method with Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName="SetReturnType">
@@ -2113,6 +2120,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current method is generic, but is not a generic method definition. That is, the <see cref="P:System.Reflection.Emit.MethodBuilder.IsGenericMethod" /> property is <see langword="true" />, but the <see cref="P:System.Reflection.Emit.MethodBuilder.IsGenericMethodDefinition" /> property is <see langword="false" />.</exception>
         <altmember cref="M:System.Reflection.Emit.MethodBuilder.SetParameters(System.Type[])" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-a-generic-method-with-reflection-emit.md">How to: Define a Generic Method with Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName="SetSignature">

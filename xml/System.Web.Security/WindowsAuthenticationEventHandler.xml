@@ -1,4 +1,4 @@
-﻿<Type Name="WindowsAuthenticationEventHandler" FullName="System.Web.Security.WindowsAuthenticationEventHandler">
+<Type Name="WindowsAuthenticationEventHandler" FullName="System.Web.Security.WindowsAuthenticationEventHandler">
   <TypeSignature Language="C#" Value="public delegate void WindowsAuthenticationEventHandler(object sender, WindowsAuthenticationEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WindowsAuthenticationEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.WindowsAuthenticationEventHandler" />
@@ -47,5 +47,6 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/0346bc00-a4c6-491b-a103-ad2100f71606">Windows Authentication Provider</related>
   </Docs>
 </Type>

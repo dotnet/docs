@@ -1,4 +1,4 @@
-﻿<Type Name="Audio" FullName="Microsoft.VisualBasic.Devices.Audio">
+<Type Name="Audio" FullName="Microsoft.VisualBasic.Devices.Audio">
   <TypeSignature Language="C#" Value="public class Audio" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Audio extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.Audio" />
@@ -52,6 +52,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,7 +79,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [Objects](http://msdn.microsoft.com/library/651c73e4-dca8-402b-9c6b-e3902b3a3f4b)  
+ [Objects](~/docs/visual-basic/language-reference/objects/index.md)  
   
  ]]></format>
         </remarks>
@@ -175,6 +176,8 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
         <altmember cref="M:Microsoft.VisualBasic.Devices.Audio.Stop" />
         <altmember cref="T:Microsoft.VisualBasic.AudioPlayMode" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md">Playing Sounds (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -256,6 +259,8 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
         <altmember cref="M:Microsoft.VisualBasic.Devices.Audio.Stop" />
         <altmember cref="T:Microsoft.VisualBasic.AudioPlayMode" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md">Playing Sounds (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -337,6 +342,8 @@
         <altmember cref="M:Microsoft.VisualBasic.Devices.Audio.Stop" />
         <altmember cref="T:Microsoft.VisualBasic.AudioPlayMode" />
         <altmember cref="T:System.IO.Stream" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md">Playing Sounds (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -421,6 +428,8 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
         <altmember cref="M:Microsoft.VisualBasic.Devices.Audio.Stop" />
         <altmember cref="T:Microsoft.VisualBasic.AudioPlayMode" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md">Playing Sounds (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="PlaySystemSound">
@@ -492,6 +501,8 @@
           <paramref name="systemSound" /> is <see langword="Nothing" />.</exception>
         <altmember cref="T:System.Media.SystemSound" />
         <altmember cref="T:System.Media.SystemSounds" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md">Playing Sounds (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -550,6 +561,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md">Playing Sounds (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

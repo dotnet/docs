@@ -1,4 +1,4 @@
-﻿<Type Name="StateActivity" FullName="System.Workflow.Activities.StateActivity">
+<Type Name="StateActivity" FullName="System.Workflow.Activities.StateActivity">
   <TypeSignature Language="C#" Value="public class StateActivity : System.Workflow.ComponentModel.CompositeActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StateActivity extends System.Workflow.ComponentModel.CompositeActivity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.StateActivity" />
@@ -62,6 +62,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -71,6 +72,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.StateActivity" /> class.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -99,6 +101,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -121,6 +124,7 @@
         <param name="name">The user-defined name of the activity.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.StateActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -147,6 +151,7 @@
         <summary>Cancels the execution of the <see cref="T:System.Workflow.Activities.StateActivity" />.</summary>
         <returns>The current status of the <see cref="T:System.Workflow.ComponentModel.Activity" /> in the running workflow instance.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -173,6 +178,7 @@
         <summary>Executes the <see cref="T:System.Workflow.Activities.StateActivity" />.</summary>
         <returns>The current status of the <see cref="T:System.Workflow.ComponentModel.Activity" /> in the running workflow instance.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </Member>
     <Member MemberName="GetDynamicActivity">
@@ -200,6 +206,7 @@
         <returns>The dynamic child activities.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The executable activities do not contain the <paramref name="childActivityName" />.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -225,6 +232,7 @@
         <param name="provider">The service provider from which to obtain services.</param>
         <summary>Initializes the <see cref="T:System.Workflow.Activities.StateActivity" /> using the service provider.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </Member>
     <Member MemberName="OnActivityChangeAdd">
@@ -259,6 +267,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </Member>
     <Member MemberName="OnClosed">
@@ -305,6 +314,7 @@
       <Docs>
         <summary>Holds the string value of the change tracking data key; "StateActivity.StateChange". This field is a constant.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </Member>
   </Members>

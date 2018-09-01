@@ -1,4 +1,4 @@
-﻿<Type Name="MobilePage" FullName="System.Web.UI.MobileControls.MobilePage">
+<Type Name="MobilePage" FullName="System.Web.UI.MobileControls.MobilePage">
   <TypeSignature Language="C#" Value="public class MobilePage : System.Web.UI.Page" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MobilePage extends System.Web.UI.Page" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.MobilePage" />
@@ -53,6 +53,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +74,8 @@
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.MobilePage" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AbsoluteFilePath">
@@ -107,6 +111,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ActiveForm">
@@ -163,6 +169,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The page does not contain any forms.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Adapter">
@@ -200,6 +208,11 @@
         <summary>Gets the device-specific adapter for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The device-specific adapter for the control.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">Introduction to Mobile Application Development in ASP.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AddedControl">
@@ -234,6 +247,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -270,6 +284,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The <see cref="P:System.Web.UI.MobileControls.MobilePage.StyleSheet" /> property has already been set.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AllowCustomAttributes">
@@ -330,6 +345,8 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.MobileControls.MobileControl.CustomAttributes" />
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ClientViewState">
@@ -367,6 +384,9 @@
         <summary>Gets the view-state information, which combines private view state and an identifier for application view state, to write to the client in encoded form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The view-state information, which combines private view state and an identifier for application view state.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateHtmlTextWriter">
@@ -407,6 +427,9 @@
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.ChtmlMobileTextWriter" />
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
+        <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">ASP.NET Device Filtering Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8437a6a5-855c-4637-8654-75a87b293847">Adapter Mappings</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DesignMode">
@@ -451,6 +474,8 @@
         <value>
           <see langword="true" /> if the page is being instantiated in design mode; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DeterminePostBackMode">
@@ -482,6 +507,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Device">
@@ -528,6 +554,8 @@
         </remarks>
         <altmember cref="T:System.Web.Mobile.MobileCapabilities" />
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.ControlAdapter" />
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableEventValidation">
@@ -561,6 +589,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set this property.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -603,6 +632,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set this property. The value of this property cannot be changed.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Forms">
@@ -640,6 +670,9 @@
         <summary>Gets the collection of forms on the specified <see cref="T:System.Web.UI.MobileControls.MobilePage" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The collection of forms that is contained in the page.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/0140DAA7-3C17-40DF-8C63-FDFC3AD8E803">Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetControlAdapter">
@@ -674,6 +707,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetForm">
@@ -710,6 +745,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The requested form was not found.</exception>
         <altmember cref="T:System.Web.UI.MobileControls.Form" />
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPrivateViewState">
@@ -744,6 +781,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HasHiddenVariables">
@@ -769,6 +808,8 @@
         <returns>
           <see langword="true" /> if the page has any hidden variables defined; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HiddenPostEventArgumentId">
@@ -798,6 +839,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HiddenPostEventSourceId">
@@ -829,6 +873,9 @@
         </remarks>
         <altmember cref="P:System.Web.UI.MobileControls.MobilePage.HiddenVariables" />
         <altmember cref="F:System.Web.UI.MobileControls.MobilePage.HiddenVariablePrefix" />
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HiddenVariablePrefix">
@@ -851,6 +898,8 @@
       <Docs>
         <summary>Returns the prefix to use to render hidden variables. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HiddenVariables">
@@ -888,6 +937,9 @@
         <summary>Gets a dictionary of hidden variables on the specified <see cref="T:System.Web.UI.MobileControls.MobilePage" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A dictionary of the hidden variables that is contained in the page.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IdSeparator">
@@ -918,6 +970,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Page.ID" />
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="InitOutputCache">
@@ -976,6 +1029,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="InitOutputCache">
@@ -1018,6 +1072,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoadPageStateFromPersistenceMedium">
@@ -1050,6 +1105,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.MobilePage.SavePageStateToPersistenceMedium(System.Object)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1079,13 +1135,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is primarily used by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is primarily used by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
  This member overrides the <xref:System.Web.UI.Control.LoadViewState%2A?displayProperty=nameWithType> method and saves any existing adapter state with the view state in an object array.  
   
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.MobilePage.SaveViewState" />
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="MakePathAbsolute">
@@ -1120,6 +1177,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="MasterPageFile">
@@ -1171,6 +1230,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set this property. Master pages are not supported on mobile pages.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnDeviceCustomize">
@@ -1204,6 +1264,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnError">
@@ -1237,6 +1300,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -1270,6 +1334,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
@@ -1303,6 +1368,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreInit">
@@ -1335,6 +1401,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -1368,6 +1435,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnUnload">
@@ -1401,6 +1469,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnViewStateExpire">
@@ -1443,6 +1512,8 @@
  -or-  
   
  The session state history has exceeded its allocated size.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PageClientViewStateKey">
@@ -1468,10 +1539,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This field is used by adapters to render private view state. For more information, see the [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce) documentation.  
+ This field is used by adapters to render private view state. For more information, see the [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)) documentation.  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="QueryStringText">
@@ -1510,6 +1585,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -1545,6 +1622,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="RedirectToMobilePage">
@@ -1554,6 +1632,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Redirects to another mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="RedirectToMobilePage">
@@ -1580,6 +1660,8 @@
         <param name="url">The URL of the redirect action.</param>
         <summary>Redirects to another mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToMobilePage">
@@ -1609,6 +1691,8 @@
         <summary>Redirects to a specified mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.HttpResponse.Redirect(System.String,System.Boolean)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RelativeFilePath">
@@ -1637,6 +1721,8 @@
         <summary>Gets a relative URL to the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A relative URL to the page.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemovedControl">
@@ -1671,6 +1757,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.Form" />
         <altmember cref="P:System.Web.UI.MobileControls.MobilePage.Forms" />
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -1704,6 +1791,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RenderControl">
@@ -1736,6 +1824,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SavePageStateToPersistenceMedium">
@@ -1771,6 +1860,7 @@
         </remarks>
         <exception cref="T:System.Exception">Session state is disabled or read-only.</exception>
         <altmember cref="M:System.Web.UI.MobileControls.MobilePage.LoadPageStateFromPersistenceMedium" />
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1803,6 +1893,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.MobilePage.LoadViewState(System.Object)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StyleSheet">
@@ -1847,6 +1938,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StyleSheetTheme">
@@ -1886,6 +1980,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set this property. Themes are not supported on Mobile Web Forms pages.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Theme">
@@ -1924,6 +2019,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set this property. Themes are not supported on Mobile Web Forms pages.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -1961,6 +2057,7 @@
         <value>An empty string.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set the <see cref="P:System.Web.UI.MobileControls.MobilePage.Title" /> property.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UniqueFilePathSuffix">
@@ -2061,6 +2158,7 @@
         </remarks>
         <exception cref="T:System.Exception">
           <paramref name="control" /> must be contained in a <see cref="T:System.Web.UI.MobileControls.Form" /> control.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ViewStateID">
@@ -2086,10 +2184,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This field is used by adapters to render view-state information. For more information, see the [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce) documentation.  
+ This field is used by adapters to render view-state information. For more information, see the [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)) documentation.  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
   </Members>

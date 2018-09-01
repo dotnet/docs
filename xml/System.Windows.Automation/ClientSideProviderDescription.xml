@@ -1,4 +1,4 @@
-﻿<Type Name="ClientSideProviderDescription" FullName="System.Windows.Automation.ClientSideProviderDescription">
+<Type Name="ClientSideProviderDescription" FullName="System.Windows.Automation.ClientSideProviderDescription">
   <TypeSignature Language="C#" Value="public struct ClientSideProviderDescription" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ClientSideProviderDescription extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ClientSideProviderDescription" />
@@ -17,6 +17,9 @@
   <Docs>
     <summary>Describes the scope of a client-side UI Automation provider so that it can be registered with the UI Automation client application.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/a03af4d9-2771-43cc-b07b-d468dca23190">Register a Client-side Provider Assembly</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/d91edaf2-be28-41ec-a508-af421cb43c3d">Create Client-side UI Automation Providers</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f325f0d8-1715-41ea-85ca-45b82ffea8bc">Implement UI Automation Providers in a Client Application</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -63,6 +66,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a03af4d9-2771-43cc-b07b-d468dca23190">Register a Client-side Provider Assembly</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d91edaf2-be28-41ec-a508-af421cb43c3d">Create Client-side UI Automation Providers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f325f0d8-1715-41ea-85ca-45b82ffea8bc">Implement UI Automation Providers in a Client Application</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -101,6 +107,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a03af4d9-2771-43cc-b07b-d468dca23190">Register a Client-side Provider Assembly</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d91edaf2-be28-41ec-a508-af421cb43c3d">Create Client-side UI Automation Providers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f325f0d8-1715-41ea-85ca-45b82ffea8bc">Implement UI Automation Providers in a Client Application</related>
       </Docs>
     </Member>
     <Member MemberName="ClassName">
@@ -135,6 +144,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a03af4d9-2771-43cc-b07b-d468dca23190">Register a Client-side Provider Assembly</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d91edaf2-be28-41ec-a508-af421cb43c3d">Create Client-side UI Automation Providers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f325f0d8-1715-41ea-85ca-45b82ffea8bc">Implement UI Automation Providers in a Client Application</related>
       </Docs>
     </Member>
     <Member MemberName="ClientSideProviderFactoryCallback">
@@ -162,6 +174,9 @@
         <summary>Gets the method that creates the client-side provider.</summary>
         <value>The callback method.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a03af4d9-2771-43cc-b07b-d468dca23190">Register a Client-side Provider Assembly</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d91edaf2-be28-41ec-a508-af421cb43c3d">Create Client-side UI Automation Providers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f325f0d8-1715-41ea-85ca-45b82ffea8bc">Implement UI Automation Providers in a Client Application</related>
       </Docs>
     </Member>
     <Member MemberName="Flags">

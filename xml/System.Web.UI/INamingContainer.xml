@@ -1,4 +1,4 @@
-﻿<Type Name="INamingContainer" FullName="System.Web.UI.INamingContainer">
+<Type Name="INamingContainer" FullName="System.Web.UI.INamingContainer">
   <TypeSignature Language="C#" Value="public interface INamingContainer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INamingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.INamingContainer" />
@@ -34,6 +34,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.Control" />
     <altmember cref="T:System.Web.UI.Page" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
   </Docs>
   <Members />
 </Type>

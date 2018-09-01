@@ -1,4 +1,4 @@
-﻿<Type Name="DataRelationCollection" FullName="System.Data.DataRelationCollection">
+<Type Name="DataRelationCollection" FullName="System.Data.DataRelationCollection">
   <TypeSignature Language="C#" Value="public abstract class DataRelationCollection : System.Data.InternalDataCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataRelationCollection extends System.Data.InternalDataCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataRelationCollection" />
@@ -68,6 +68,8 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
+    <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,6 +99,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.DataRelationCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Add">
@@ -107,6 +111,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Adds a <see cref="T:System.Data.DataRelation" /> to the <see cref="T:System.Data.DataRelationCollection" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Add">
@@ -156,6 +162,8 @@
         <exception cref="T:System.ArgumentException">The relation already belongs to this collection, or it belongs to another collection.</exception>
         <exception cref="T:System.Data.DuplicateNameException">The collection already has a relation with the specified name. (The comparison is not case sensitive.)</exception>
         <exception cref="T:System.Data.InvalidConstraintException">The relation has entered an invalid state since it was created.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -202,6 +210,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -252,6 +262,8 @@
         <exception cref="T:System.ArgumentException">The relation already belongs to this collection, or it belongs to another collection.</exception>
         <exception cref="T:System.Data.DuplicateNameException">The collection already has a relation with the same name. (The comparison is not case sensitive.)</exception>
         <exception cref="T:System.Data.InvalidConstraintException">The relation has entered an invalid state since it was created.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -300,6 +312,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -360,6 +374,8 @@
         <exception cref="T:System.ArgumentException">The relation already belongs to this collection, or it belongs to another collection.</exception>
         <exception cref="T:System.Data.DuplicateNameException">The collection already has a relation with the same name. (The comparison is not case sensitive.)</exception>
         <exception cref="T:System.Data.InvalidConstraintException">The relation has entered an invalid state since it was created.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -411,6 +427,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -466,6 +484,8 @@
         <exception cref="T:System.ArgumentException">The relation already belongs to this collection, or it belongs to another collection.</exception>
         <exception cref="T:System.Data.DuplicateNameException">The collection already has a relation with the same name. (The comparison is not case sensitive.)</exception>
         <exception cref="T:System.Data.InvalidConstraintException">The relation has entered an invalid state since it was created.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="AddCore">
@@ -505,6 +525,8 @@
         <exception cref="T:System.ArgumentNullException">The relation is null.</exception>
         <exception cref="T:System.ArgumentException">The relation already belongs to this collection, or it belongs to another collection.</exception>
         <exception cref="T:System.Data.DuplicateNameException">The collection already has a relation with the same name. (The comparison is not case sensitive.)</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -554,6 +576,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="CanRemove">
@@ -592,6 +616,8 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Data.DataRelation" /> can be removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -625,6 +651,8 @@
       <Docs>
         <summary>Clears the collection of any relations.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="CollectionChanged">
@@ -657,6 +685,8 @@
       <Docs>
         <summary>Occurs when the collection has changed.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -695,6 +725,8 @@
         <returns>
           <see langword="true" />, if a relation with the specified name exists; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -732,6 +764,8 @@
         <param name="index">The index to start from.</param>
         <summary>Copies the collection of <see cref="T:System.Data.DataRelation" /> objects starting at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="GetDataSet">
@@ -776,6 +810,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Gets the index of the specified data relation.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="IndexOf">
@@ -813,6 +849,8 @@
         <summary>Gets the index of the specified <see cref="T:System.Data.DataRelation" /> object.</summary>
         <returns>The 0-based index of the relation, or -1 if the relation is not found in the collection.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -850,6 +888,8 @@
         <summary>Gets the index of the <see cref="T:System.Data.DataRelation" /> specified by name.</summary>
         <returns>The zero-based index of the relation with the specified name, or -1 if the relation does not exist in the collection.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -860,6 +900,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Gets the specified <see cref="T:System.Data.DataRelation" /> from the collection.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -898,6 +940,8 @@
         <value>The <see cref="T:System.Data.DataRelation" />, or a null value if the specified <see cref="T:System.Data.DataRelation" /> does not exist.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.IndexOutOfRangeException">The index value is greater than the number of items in the collection.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -935,6 +979,8 @@
         <summary>Gets the <see cref="T:System.Data.DataRelation" /> object specified by name.</summary>
         <value>The named <see cref="T:System.Data.DataRelation" />, or a null value if the specified <see cref="T:System.Data.DataRelation" /> does not exist.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="OnCollectionChanged">
@@ -981,6 +1027,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Data.DataRelationCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" /> in an inheriting class, make sure that you call the <see cref="M:System.Data.DataRelationCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" /> method for the base class.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="OnCollectionChanging">
@@ -1027,6 +1075,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Data.DataRelationCollection.OnCollectionChanging(System.ComponentModel.CollectionChangeEventArgs)" /> in an inheriting class, make sure that you call the <see cref="M:System.Data.DataRelationCollection.OnCollectionChanging(System.ComponentModel.CollectionChangeEventArgs)" /> method for the base class.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Remove">
@@ -1037,6 +1087,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Removes the specified relation from the collection.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Remove">
@@ -1082,6 +1134,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The relation is a null value.</exception>
         <exception cref="T:System.ArgumentException">The relation does not belong to the collection.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -1126,6 +1180,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The collection does not have a relation with the specified name.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -1170,6 +1226,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The collection does not have a relation at the specified index.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveCore">
@@ -1208,6 +1266,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The collection does not have a relation at the specified index.</exception>
         <exception cref="T:System.ArgumentException">The specified relation does not belong to this collection, or it belongs to another collection.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4">Adding a Relationship between Tables</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e">Navigating a Relationship between Tables</related>
       </Docs>
     </Member>
   </Members>

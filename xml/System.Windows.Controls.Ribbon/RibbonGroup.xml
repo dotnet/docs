@@ -1,4 +1,4 @@
-﻿<Type Name="RibbonGroup" FullName="System.Windows.Controls.Ribbon.RibbonGroup">
+<Type Name="RibbonGroup" FullName="System.Windows.Controls.Ribbon.RibbonGroup">
   <TypeSignature Language="C#" Value="public class RibbonGroup : System.Windows.Controls.HeaderedItemsControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonGroup extends System.Windows.Controls.HeaderedItemsControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonGroup" />
@@ -291,6 +291,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94">Ribbon Layout and Resizing</related>
       </Docs>
     </Member>
     <Member MemberName="IsCollapsedProperty">
@@ -543,6 +544,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94">Ribbon Layout and Resizing</related>
       </Docs>
     </Member>
     <Member MemberName="LargeImageSourceProperty">
@@ -1126,6 +1128,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94">Ribbon Layout and Resizing</related>
       </Docs>
     </Member>
     <Member MemberName="SmallImageSourceProperty">

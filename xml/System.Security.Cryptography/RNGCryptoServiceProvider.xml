@@ -1,4 +1,4 @@
-﻿<Type Name="RNGCryptoServiceProvider" FullName="System.Security.Cryptography.RNGCryptoServiceProvider">
+<Type Name="RNGCryptoServiceProvider" FullName="System.Security.Cryptography.RNGCryptoServiceProvider">
   <TypeSignature Language="C#" Value="public sealed class RNGCryptoServiceProvider : System.Security.Cryptography.RandomNumberGenerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RNGCryptoServiceProvider extends System.Security.Cryptography.RandomNumberGenerator" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RNGCryptoServiceProvider" />
@@ -55,6 +55,7 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -110,6 +111,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -155,6 +157,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -193,6 +196,7 @@
         <param name="cspParams">The parameters to pass to the cryptographic service provider (CSP).</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RNGCryptoServiceProvider" /> class with the specified parameters.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -238,6 +242,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -362,6 +367,7 @@
         <exception cref="T:System.Security.Cryptography.CryptographicException">The cryptographic service provider (CSP) cannot be acquired.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="data" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetNonZeroBytes">
@@ -422,6 +428,7 @@
         <exception cref="T:System.Security.Cryptography.CryptographicException">The cryptographic service provider (CSP) cannot be acquired.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="data" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
   </Members>

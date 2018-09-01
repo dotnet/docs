@@ -1,4 +1,4 @@
-﻿<Type Name="MeshGeometry3D" FullName="System.Windows.Media.Media3D.MeshGeometry3D">
+<Type Name="MeshGeometry3D" FullName="System.Windows.Media.Media3D.MeshGeometry3D">
   <TypeSignature Language="C#" Value="public sealed class MeshGeometry3D : System.Windows.Media.Media3D.Geometry3D" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MeshGeometry3D extends System.Windows.Media.Media3D.Geometry3D" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.MeshGeometry3D" />
@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,6 +58,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -79,6 +81,7 @@
         <summary>Gets the bounding <see cref="T:System.Windows.Media.Media3D.Rect3D" /> for this <see cref="T:System.Windows.Media.Media3D.MeshGeometry3D" />.</summary>
         <value>Bounding <see cref="T:System.Windows.Media.Media3D.Rect3D" /> for the <see cref="T:System.Windows.Media.Media3D.MeshGeometry3D" />.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -215,6 +218,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
       </Docs>
     </Member>
     <Member MemberName="NormalsProperty">
@@ -306,6 +310,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
       </Docs>
     </Member>
     <Member MemberName="PositionsProperty">
@@ -372,6 +377,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
       </Docs>
     </Member>
     <Member MemberName="TextureCoordinatesProperty">
@@ -439,6 +445,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
       </Docs>
     </Member>
     <Member MemberName="TriangleIndicesProperty">

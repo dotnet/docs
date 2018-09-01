@@ -1,4 +1,4 @@
-﻿<Type Name="IssuedTokenParametersEndpointAddressElement" FullName="System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement">
+<Type Name="IssuedTokenParametersEndpointAddressElement" FullName="System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement">
   <TypeSignature Language="C#" Value="public sealed class IssuedTokenParametersEndpointAddressElement : System.ServiceModel.Configuration.EndpointAddressElementBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IssuedTokenParametersEndpointAddressElement extends System.ServiceModel.Configuration.EndpointAddressElementBase" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents a configuration element that specifies an endpoint that issues a security token. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/120b3f37-7331-4816-b712-d6aab39655a4">&lt;IssuedTokenParameters&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

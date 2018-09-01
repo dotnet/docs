@@ -1,4 +1,4 @@
-﻿<Type Name="FileDialogPermissionAttribute" FullName="System.Security.Permissions.FileDialogPermissionAttribute">
+<Type Name="FileDialogPermissionAttribute" FullName="System.Security.Permissions.FileDialogPermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class FileDialogPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit FileDialogPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.FileDialogPermissionAttribute" />
@@ -57,6 +57,7 @@
     </remarks>
     <altmember cref="T:System.Security.Permissions.FileDialogPermission" />
     <altmember cref="T:System.Security.Permissions.FileDialogPermissionAccess" />
+    <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

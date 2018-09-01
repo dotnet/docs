@@ -1,4 +1,4 @@
-﻿<Type Name="Formatter" FullName="System.Runtime.Serialization.Formatter">
+<Type Name="Formatter" FullName="System.Runtime.Serialization.Formatter">
   <TypeSignature Language="C#" Value="public abstract class Formatter : System.Runtime.Serialization.IFormatter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Formatter extends System.Object implements class System.Runtime.Serialization.IFormatter" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatter" />
@@ -100,6 +100,7 @@
 -   <see cref="P:System.Runtime.Serialization.Formatter.Context" /></para>
     </block>
     <altmember cref="T:System.Runtime.Serialization.ObjectIDGenerator" />
+    <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -272,6 +273,7 @@
         <block subset="none" type="overrides">
           <para>You must implement this method in a derived class.</para>
         </block>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName="GetNext">
@@ -486,6 +488,7 @@
         <block subset="none" type="overrides">
           <para>You must implement this method in a derived class.</para>
         </block>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName="SurrogateSelector">

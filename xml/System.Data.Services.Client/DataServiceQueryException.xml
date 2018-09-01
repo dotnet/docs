@@ -1,4 +1,4 @@
-﻿<Type Name="DataServiceQueryException" FullName="System.Data.Services.Client.DataServiceQueryException">
+<Type Name="DataServiceQueryException" FullName="System.Data.Services.Client.DataServiceQueryException">
   <TypeSignature Language="C#" Value="public sealed class DataServiceQueryException : InvalidOperationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DataServiceQueryException extends System.InvalidOperationException" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceQueryException" />
@@ -76,6 +76,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -116,6 +117,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -190,6 +192,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

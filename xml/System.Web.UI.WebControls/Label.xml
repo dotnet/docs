@@ -1,4 +1,4 @@
-﻿<Type Name="Label" FullName="System.Web.UI.WebControls.Label">
+<Type Name="Label" FullName="System.Web.UI.WebControls.Label">
   <TypeSignature Language="C#" Value="public class Label : System.Web.UI.WebControls.WebControl, System.Web.UI.ITextControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Label extends System.Web.UI.WebControls.WebControl implements class System.Web.UI.ITextControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Label" />
@@ -145,6 +145,10 @@
  ]]></format>
     </remarks>
     <altmember cref="P:System.Web.UI.WebControls.Label.Text" />
+    <related type="Article" href="http://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac">Label Web Server Control Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461">Introduction to Validating User Input in ASP.NET Web Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -347,7 +351,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
  The <xref:System.Web.UI.WebControls.Label.LoadViewState%2A> method restores view-state information for the <xref:System.Web.UI.WebControls.Label> control from a previous page request that was saved by the <xref:System.Web.UI.WebControls.WebControl.SaveViewState%2A> method.  
   
@@ -508,7 +512,7 @@
   
  The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
- This property is the default property that a <xref:System.Web.UI.WebControls.ControlParameter> object binds to at run time. For more information, see <xref:System.Web.UI.ControlValuePropertyAttribute>, <xref:System.Web.UI.WebControls.ControlParameter>, and [Using Parameters with Data Source Controls for Filtering](http://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f).  
+ This property is the default property that a <xref:System.Web.UI.WebControls.ControlParameter> object binds to at run time. For more information, see <xref:System.Web.UI.ControlValuePropertyAttribute>, <xref:System.Web.UI.WebControls.ControlParameter>, and [Using Parameters with Data Source Controls for Filtering](https://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f(v=vs.100)).  
   
    
   

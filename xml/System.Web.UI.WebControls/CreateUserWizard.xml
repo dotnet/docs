@@ -58,7 +58,7 @@
  The <xref:System.Web.UI.WebControls.CreateUserWizard> control provides the user interface for the <xref:System.Web.Security.MembershipProvider> object that communicates with your Web site's user data store to create new user accounts in the data store. The <xref:System.Web.UI.WebControls.CreateUserWizard> relies on the <xref:System.Web.Security.MembershipProvider> to create the user and disable them if necessary.  
   
 > [!NOTE]
->  If you are not familiar with ASP.NET login controls, you might find it helpful to read [ASP.NET Login Controls Overview](http://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d) before continuing. For a list of other topics related to login controls and membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
+>  If you are not familiar with ASP.NET login controls, you might find it helpful to read [ASP.NET Login Controls Overview](https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)) before continuing. For a list of other topics related to login controls and membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
   
  By default, the <xref:System.Web.UI.WebControls.CreateUserWizard> control will accept a user name and password from the Web site visitor. Based on the requirements of the site's <xref:System.Web.Security.MembershipProvider> object, the <xref:System.Web.UI.WebControls.CreateUserWizard> control will optionally accept an email address, represented by the <xref:System.Web.UI.WebControls.CreateUserWizard.Email%2A> property, and a password recovery confirmation question and answer, represented by <xref:System.Web.UI.WebControls.CreateUserWizard.Question%2A> and <xref:System.Web.UI.WebControls.CreateUserWizard.Answer%2A>. For a table showing all required and optional controls for <xref:System.Web.UI.WebControls.CreateUserWizard>, see <xref:System.Web.UI.WebControls.CreateUserWizard.CreateUserStep%2A>.  
   
@@ -411,6 +411,10 @@
     <altmember cref="T:System.Web.UI.WebControls.Wizard" />
     <altmember cref="T:System.Web.UI.WebControls.CreateUserWizardStep" />
     <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+    <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/d85075bc-9c1a-4453-8a0c-539b10853c9c">Securing Login Controls</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd">Managing Users By Using Membership</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -429,6 +433,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CreateUserWizard" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ActiveStepIndex">
@@ -463,6 +468,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Answer">
@@ -529,6 +535,7 @@
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.AnswerLabelText" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.AnswerRequiredErrorMessage" />
         <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendingMail" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="AnswerLabelText">
@@ -564,6 +571,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Answer" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="AnswerRequiredErrorMessage">
@@ -599,6 +607,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Answer" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="AutoGeneratePassword">
@@ -642,6 +651,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CompleteStep">
@@ -683,6 +693,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.CompleteWizardStep" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CompleteSuccessText">
@@ -727,6 +739,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CompleteSuccessTextStyle">
@@ -797,6 +810,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ConfirmPassword">
@@ -838,6 +852,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Password" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ConfirmPasswordCompareErrorMessage">
@@ -874,6 +889,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Password" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ConfirmPassword" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ConfirmPasswordLabelText">
@@ -909,6 +925,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ConfirmPassword" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ConfirmPasswordRequiredErrorMessage">
@@ -944,6 +961,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ConfirmPassword" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueButtonClick">
@@ -975,6 +993,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnContinueButtonClick(System.EventArgs)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueButtonCommandName">
@@ -1007,6 +1026,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueButtonImageUrl">
@@ -1053,6 +1073,7 @@
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonStyle" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueButtonStyle">
@@ -1126,6 +1147,7 @@
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonImageUrl" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueButtonText">
@@ -1174,6 +1196,7 @@
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonImageUrl" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueButtonType">
@@ -1205,6 +1228,7 @@
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonImageUrl" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueDestinationPageUrl">
@@ -1263,6 +1287,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -1372,6 +1397,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatedUser(System.EventArgs)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CreateUserButtonImageUrl">
@@ -1418,6 +1444,7 @@
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonType" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CreateUserButtonStyle">
@@ -1491,6 +1518,7 @@
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonImageUrl" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CreateUserButtonText">
@@ -1540,6 +1568,7 @@
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonImageUrl" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CreateUserButtonType">
@@ -1571,6 +1600,7 @@
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonImageUrl" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CreateUserError">
@@ -1606,6 +1636,7 @@
         <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreateUserError(System.Web.UI.WebControls.CreateUserErrorEventArgs)" />
         <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
         <altmember cref="T:System.Web.UI.WebControls.CreateUserErrorEventHandler" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CreateUserStep">
@@ -1665,6 +1696,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.CreateUserWizardStep" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CreatingUser">
@@ -1706,6 +1738,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatingUser(System.Web.UI.WebControls.LoginCancelEventArgs)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="DisableCreatedUser">
@@ -1749,6 +1782,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.Security.MembershipUser.IsApproved" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="DisplaySideBar">
@@ -1777,6 +1811,7 @@
         <value>
           <see langword="true" /> if the sidebar area should be displayed for the <see cref="T:System.Web.UI.WebControls.CreateUserWizard" /> control; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="DuplicateEmailErrorMessage">
@@ -1812,6 +1847,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.DuplicateUserNameErrorMessage" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="DuplicateUserNameErrorMessage">
@@ -1847,6 +1883,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.DuplicateEmailErrorMessage" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="EditProfileIconUrl">
@@ -1885,6 +1922,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileText" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileUrl" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="EditProfileText">
@@ -1924,6 +1962,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileIconUrl" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileUrl" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="EditProfileUrl">
@@ -1962,6 +2001,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileIconUrl" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileText" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Email">
@@ -1999,6 +2039,7 @@
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EmailLabelText" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EmailRegularExpression" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.MembershipProvider" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="EmailLabelText">
@@ -2034,6 +2075,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Email" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="EmailRegularExpression">
@@ -2076,6 +2118,8 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EmailRegularExpressionErrorMessage" />
+        <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="EmailRegularExpressionErrorMessage">
@@ -2114,6 +2158,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EmailRegularExpression" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="EmailRequiredErrorMessage">
@@ -2149,6 +2194,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Email" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ErrorMessageStyle">
@@ -2236,6 +2282,7 @@
         <altmember cref="M:System.Web.Security.MembershipProvider.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object,System.Web.Security.MembershipCreateStatus@)" />
         <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreateUserError(System.Web.UI.WebControls.CreateUserErrorEventArgs)" />
         <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignModeState">
@@ -2297,6 +2344,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageText" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="HelpPageText">
@@ -2336,6 +2384,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageIconUrl" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageUrl" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="HelpPageUrl">
@@ -2374,6 +2423,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageIconUrl" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageText" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="HyperLinkStyle">
@@ -2444,6 +2494,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="InstructionText">
@@ -2486,6 +2537,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.InstructionTextStyle" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="InstructionTextStyle">
@@ -2557,6 +2609,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.InstructionText" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="InvalidAnswerErrorMessage">
@@ -2601,6 +2654,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="InvalidEmailErrorMessage">
@@ -2637,6 +2691,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="InvalidPasswordErrorMessage">
@@ -2681,6 +2736,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="InvalidQuestionErrorMessage">
@@ -2725,6 +2781,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="LabelStyle">
@@ -2807,6 +2864,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -2878,6 +2936,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.DisableCreatedUser" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="MailDefinition">
@@ -2971,6 +3030,7 @@ Thank you for creating an account with our Web site.
         <altmember cref="T:System.Web.UI.WebControls.MailDefinition" />
         <altmember cref="T:System.Web.Mail.MailMessage" />
         <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendingMail(System.Web.UI.WebControls.MailMessageEventArgs)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="MembershipProvider">
@@ -3143,6 +3203,8 @@ Thank you for creating an account with our Web site.
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The specified membership provider is not defined in the Web.config file.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd">Managing Users By Using Membership</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -3211,6 +3273,7 @@ Thank you for creating an account with our Web site.
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnContinueButtonClick(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnContinueButtonClick(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonClick" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="OnCreatedUser">
@@ -3253,6 +3316,7 @@ Thank you for creating an account with our Web site.
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatedUser(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatedUser(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.CreatedUser" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="OnCreateUserError">
@@ -3294,6 +3358,7 @@ Thank you for creating an account with our Web site.
         </block>
         <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.CreateUserError" />
         <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="OnCreatingUser">
@@ -3349,6 +3414,7 @@ Thank you for creating an account with our Web site.
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatingUser(System.Web.UI.WebControls.LoginCancelEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatingUser(System.Web.UI.WebControls.LoginCancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.CreatingUser" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="OnNextButtonClick">
@@ -3467,6 +3533,7 @@ Thank you for creating an account with our Web site.
         <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendingMail" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.MailDefinition" />
         <altmember cref="T:System.Web.Mail.MailMessage" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="OnSendMailError">
@@ -3524,6 +3591,7 @@ Thank you for creating an account with our Web site.
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendMailError(System.Web.UI.WebControls.SendMailErrorEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendMailError(System.Web.UI.WebControls.SendMailErrorEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendMailError" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Password">
@@ -3565,6 +3633,7 @@ Thank you for creating an account with our Web site.
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ConfirmPassword" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordHintStyle">
@@ -3635,6 +3704,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordHintText">
@@ -3673,6 +3743,7 @@ Thank you for creating an account with our Web site.
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.PasswordRegularExpression" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Password" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordLabelText">
@@ -3708,6 +3779,7 @@ Thank you for creating an account with our Web site.
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Password" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordRegularExpression">
@@ -3756,6 +3828,8 @@ Thank you for creating an account with our Web site.
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.PasswordRegularExpressionErrorMessage" />
+        <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordRegularExpressionErrorMessage">
@@ -3800,6 +3874,7 @@ Thank you for creating an account with our Web site.
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.PasswordRegularExpression" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordRequiredErrorMessage">
@@ -3835,6 +3910,7 @@ Thank you for creating an account with our Web site.
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Password" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Question">
@@ -3891,6 +3967,7 @@ Thank you for creating an account with our Web site.
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.MembershipProvider" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Answer" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="QuestionAndAnswerRequired">
@@ -3930,6 +4007,7 @@ Thank you for creating an account with our Web site.
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Question" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Answer" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="QuestionLabelText">
@@ -3965,6 +4043,7 @@ Thank you for creating an account with our Web site.
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Question" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="QuestionRequiredErrorMessage">
@@ -3999,6 +4078,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RequireEmail">
@@ -4044,6 +4124,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -4124,6 +4205,7 @@ Thank you for creating an account with our Web site.
         <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendingMail(System.Web.UI.WebControls.MailMessageEventArgs)" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.MailDefinition" />
         <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendMailError" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="SendMailError">
@@ -4167,6 +4249,7 @@ Thank you for creating an account with our Web site.
         <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendMailError(System.Web.UI.WebControls.SendMailErrorEventArgs)" />
         <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendingMail" />
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.MailDefinition" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="SetDesignModeState">
@@ -4230,6 +4313,8 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0">ASP.NET Controls and Accessibility</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="TextBoxStyle">
@@ -4310,6 +4395,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="TitleTextStyle">
@@ -4380,6 +4466,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -4438,6 +4525,7 @@ Thank you for creating an account with our Web site.
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreateUserError(System.Web.UI.WebControls.CreateUserErrorEventArgs)" />
         <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -4480,6 +4568,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="UserNameLabelText">
@@ -4515,6 +4604,7 @@ Thank you for creating an account with our Web site.
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.UserName" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="UserNameRequiredErrorMessage">
@@ -4549,6 +4639,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ValidatorTextStyle">
@@ -4635,6 +4726,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="WizardSteps">
@@ -4674,6 +4766,8 @@ Thank you for creating an account with our Web site.
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WizardStepCollection" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">Login ASP.NET Controls</related>
       </Docs>
     </Member>
   </Members>

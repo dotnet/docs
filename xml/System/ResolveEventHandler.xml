@@ -1,4 +1,4 @@
-﻿<Type Name="ResolveEventHandler" FullName="System.ResolveEventHandler">
+<Type Name="ResolveEventHandler" FullName="System.ResolveEventHandler">
   <TypeSignature Language="C#" Value="public delegate System.Reflection.Assembly ResolveEventHandler(object sender, ResolveEventArgs args);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ResolveEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ResolveEventHandler" />
@@ -60,5 +60,6 @@
     <altmember cref="E:System.AppDomain.ResourceResolve" />
     <altmember cref="E:System.AppDomain.AssemblyResolve" />
     <altmember cref="E:System.AppDomain.ReflectionOnlyAssemblyResolve" />
+    <related type="Article" href="http://msdn.microsoft.com/library/5099e549-f4fd-49fb-a290-549edd456c6a">Resolving Assembly Loads</related>
   </Docs>
 </Type>

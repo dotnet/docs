@@ -1,4 +1,4 @@
-﻿<Type Name="SessionIDManager" FullName="System.Web.SessionState.SessionIDManager">
+<Type Name="SessionIDManager" FullName="System.Web.SessionState.SessionIDManager">
   <TypeSignature Language="C#" Value="public class SessionIDManager : System.Web.SessionState.ISessionIDManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SessionIDManager extends System.Object implements class System.Web.SessionState.ISessionIDManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionIDManager" />
@@ -37,6 +37,8 @@
   
  You can replace the entire <see cref="T:System.Web.SessionState.SessionIDManager" /> with a custom session-ID manager by creating a class that implements the <see cref="T:System.Web.SessionState.ISessionIDManager" /> interface. If your custom session-ID manager supports cookieless session identifiers, you will need to implement a solution for sending and retrieving session identifiers in the URL, such as an ISAPI filter. For more information about creating a custom session-ID manager, see <see cref="T:System.Web.SessionState.ISessionIDManager" />.</para>
     </block>
+    <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b">HTTP Handlers and HTTP Modules Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,6 +71,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateSessionID">
@@ -136,6 +139,7 @@
         <block subset="none" type="overrides">
           <para>You can supply a custom session identifier to be used by ASP.NET session state by creating a class that inherits the <see cref="T:System.Web.SessionState.SessionIDManager" /> class and overriding the <see cref="M:System.Web.SessionState.SessionIDManager.CreateSessionID(System.Web.HttpContext)" /> and <see cref="M:System.Web.SessionState.SessionIDManager.Validate(System.String)" /> methods with your own custom implementations. If your custom session ID does not meet the character constraints enforced by the default implementation of the <see cref="M:System.Web.SessionState.SessionIDManager.Validate(System.String)" /> method, you should override the <see cref="M:System.Web.SessionState.SessionIDManager.Validate(System.String)" /> method to provide validation of your custom session identifier. In this case, the <see cref="T:System.Web.SessionState.SessionIDManager" /> class will ensure that your custom session identifier is URL encoded in the HTTP response and URL decoded from the HTTP request using the <see cref="M:System.Web.SessionState.SessionIDManager.Encode(System.String)" /> and <see cref="M:System.Web.SessionState.SessionIDManager.Decode(System.String)" /> methods, respectively.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Decode">
@@ -174,6 +178,7 @@
         <block subset="none" type="overrides">
           <para>For an example of a class that inherits the <see cref="T:System.Web.SessionState.SessionIDManager" /> class and overrides the <see cref="M:System.Web.SessionState.SessionIDManager.CreateSessionID(System.Web.HttpContext)" /> and <see cref="M:System.Web.SessionState.SessionIDManager.Validate(System.String)" /> methods, see the example provided for the <see cref="M:System.Web.SessionState.SessionIDManager.CreateSessionID(System.Web.HttpContext)" /> method.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Encode">
@@ -211,6 +216,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSessionID">
@@ -250,6 +256,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The length of the session-identifier value retrieved from the HTTP request exceeds the <see cref="P:System.Web.SessionState.SessionIDManager.SessionIDMaxLength" /> value.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -282,6 +289,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="InitializeRequest">
@@ -363,6 +371,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SaveSessionID">
@@ -415,6 +424,7 @@
  -or-  
   
  The session ID passed to this method failed validation.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SessionIDMaxLength">
@@ -446,6 +456,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -508,6 +519,7 @@
         <block subset="none" type="overrides">
           <para>You can supply a custom session identifier to be used by ASP.NET session state by creating a class that inherits the <see cref="T:System.Web.SessionState.SessionIDManager" /> class and overriding the <see cref="M:System.Web.SessionState.SessionIDManager.CreateSessionID(System.Web.HttpContext)" /> and <see cref="M:System.Web.SessionState.SessionIDManager.Validate(System.String)" /> methods with your own custom implementation. Even when you create a custom session identifier, the session ID is limited to 80 characters by the <see cref="T:System.Web.SessionState.SessionIDManager" /> class.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
   </Members>

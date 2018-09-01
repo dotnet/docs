@@ -1,4 +1,4 @@
-﻿<Type Name="XmlText" FullName="System.Xml.XmlText">
+<Type Name="XmlText" FullName="System.Xml.XmlText">
   <TypeSignature Language="C#" Value="public class XmlText : System.Xml.XmlCharacterData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlText extends System.Xml.XmlCharacterData" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlText" />
@@ -33,6 +33,7 @@
     <summary>Represents the text content of an element or attribute.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="M:System.Xml.XmlDocument.CreateTextNode(System.String)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54">XML Document Object Model (DOM)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

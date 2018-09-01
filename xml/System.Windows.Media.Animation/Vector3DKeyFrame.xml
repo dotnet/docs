@@ -1,4 +1,4 @@
-﻿<Type Name="Vector3DKeyFrame" FullName="System.Windows.Media.Animation.Vector3DKeyFrame">
+<Type Name="Vector3DKeyFrame" FullName="System.Windows.Media.Animation.Vector3DKeyFrame">
   <TypeSignature Language="C#" Value="public abstract class Vector3DKeyFrame : System.Windows.Freezable, System.Windows.Media.Animation.IKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Vector3DKeyFrame extends System.Windows.Freezable implements class System.Windows.Media.Animation.IKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.Vector3DKeyFrame" />
@@ -23,6 +23,7 @@
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Windows.Media.Animation.Vector3DKeyFrameCollection" />
     <altmember cref="T:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160012">KeyFrame Animation Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -205,6 +206,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160012">KeyFrame Animation Sample</related>
       </Docs>
     </Member>
     <Member MemberName="KeyTimeProperty">

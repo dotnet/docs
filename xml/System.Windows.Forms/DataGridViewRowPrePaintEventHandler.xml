@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewRowPrePaintEventHandler" FullName="System.Windows.Forms.DataGridViewRowPrePaintEventHandler">
+<Type Name="DataGridViewRowPrePaintEventHandler" FullName="System.Windows.Forms.DataGridViewRowPrePaintEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridViewRowPrePaintEventHandler(object sender, DataGridViewRowPrePaintEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewRowPrePaintEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowPrePaintEventHandler" />
@@ -42,5 +42,6 @@
     </remarks>
     <altmember cref="T:System.Windows.Forms.DataGridView" />
     <altmember cref="E:System.Windows.Forms.DataGridView.RowPrePaint" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d40b53d2-7e7c-48c5-8570-6e79d15c3bbb">How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control</related>
   </Docs>
 </Type>

@@ -1,4 +1,4 @@
-﻿<Type Name="AutoCompleteType" FullName="System.Web.UI.WebControls.AutoCompleteType">
+<Type Name="AutoCompleteType" FullName="System.Web.UI.WebControls.AutoCompleteType">
   <TypeSignature Language="C#" Value="public enum AutoCompleteType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutoCompleteType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.AutoCompleteType" />
@@ -47,6 +47,8 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.TextBox" />
     <altmember cref="P:System.Web.UI.WebControls.TextBox.AutoCompleteType" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f">TextBox Web Server Control Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
   </Docs>
   <Members>
     <Member MemberName="BusinessCity">

@@ -1,4 +1,4 @@
-﻿<Type Name="ComputerPrincipal" FullName="System.DirectoryServices.AccountManagement.ComputerPrincipal">
+<Type Name="ComputerPrincipal" FullName="System.DirectoryServices.AccountManagement.ComputerPrincipal">
   <TypeSignature Language="C#" Value="public class ComputerPrincipal : System.DirectoryServices.AccountManagement.AuthenticablePrincipal" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComputerPrincipal extends System.DirectoryServices.AccountManagement.AuthenticablePrincipal" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" />
@@ -27,6 +27,7 @@
     <summary>Encapsulates principals that are computer accounts.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="N:System.DirectoryServices.AccountManagement" />
+    <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -45,6 +46,7 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -113,6 +115,7 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindByBadPasswordAttempt">
@@ -152,6 +155,7 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindByExpirationTime">
@@ -191,6 +195,7 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindByIdentity">
@@ -202,6 +207,7 @@
       <Docs>
         <summary>Returns a computer principal object that matches the specified identity value.</summary>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FindByIdentity">
@@ -233,6 +239,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.MultipleMatchesException">Multiple computer principal objects matching the current computer object were found.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindByIdentity">
@@ -266,6 +273,7 @@
         <exception cref="T:System.MultipleMatchesException">Multiple computer principal objects matching the current computer object were found.</exception>
         <exception cref="T:System.ComponenetModel.InvalidEnumerationOperatorException">The identity value is not a valid <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindByLockoutTime">
@@ -305,6 +313,7 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindByLogonTime">
@@ -344,6 +353,7 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindByPasswordSetTime">
@@ -383,6 +393,7 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ServicePrincipalNames">
@@ -407,6 +418,7 @@
         <value>A collection of SPNs that specify the names of the accounts registered for this computer. The syntax for the SPN depends on the underlying store.</value>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
   </Members>

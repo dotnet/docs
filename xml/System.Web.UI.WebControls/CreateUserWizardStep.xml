@@ -1,4 +1,4 @@
-﻿<Type Name="CreateUserWizardStep" FullName="System.Web.UI.WebControls.CreateUserWizardStep">
+<Type Name="CreateUserWizardStep" FullName="System.Web.UI.WebControls.CreateUserWizardStep">
   <TypeSignature Language="C#" Value="public sealed class CreateUserWizardStep : System.Web.UI.WebControls.TemplatedWizardStep" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CreateUserWizardStep extends System.Web.UI.WebControls.TemplatedWizardStep" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CreateUserWizardStep" />
@@ -80,6 +80,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/7983d61e-d317-4181-8ab9-cab549adf9dc">How to: Customize the ASP.NET CreateUserWizard Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -103,6 +105,8 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.WebControls.CreateUserWizardStep" /> control.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/7983d61e-d317-4181-8ab9-cab549adf9dc">How to: Customize the ASP.NET CreateUserWizard Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="AllowReturn">
@@ -148,6 +152,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the property.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/7983d61e-d317-4181-8ab9-cab549adf9dc">How to: Customize the ASP.NET CreateUserWizard Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepType">
@@ -204,6 +210,8 @@
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Web.UI.WebControls.CreateUserWizardStep.StepType" /> property to a value other than the <see langword="WizardStepType.Auto" /> enumeration value.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WizardStepType" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7983d61e-d317-4181-8ab9-cab549adf9dc">How to: Customize the ASP.NET CreateUserWizard Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -238,6 +246,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/7983d61e-d317-4181-8ab9-cab549adf9dc">How to: Customize the ASP.NET CreateUserWizard Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
   </Members>

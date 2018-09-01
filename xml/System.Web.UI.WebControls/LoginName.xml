@@ -1,4 +1,4 @@
-﻿<Type Name="LoginName" FullName="System.Web.UI.WebControls.LoginName">
+<Type Name="LoginName" FullName="System.Web.UI.WebControls.LoginName">
   <TypeSignature Language="C#" Value="public class LoginName : System.Web.UI.WebControls.WebControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LoginName extends System.Web.UI.WebControls.WebControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LoginName" />
@@ -47,7 +47,7 @@
  By default, the <xref:System.Web.UI.WebControls.LoginName> control displays the name contained in the <xref:System.Web.UI.Page.User%2A> property of the <xref:System.Web.UI.Page> class. If the `System.Web.UI.Page.User.Identity.Name` property is empty, the control is not rendered.  
   
 > [!NOTE]
->  If you are not familiar with the set of login controls available in ASP.NET, see [ASP.NET Login Controls Overview](http://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d) before continuing. For a list of other topics related to login controls and membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
+>  If you are not familiar with the set of login controls available in ASP.NET, see [ASP.NET Login Controls Overview](https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)) before continuing. For a list of other topics related to login controls and membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
   
  To change the text displayed by the <xref:System.Web.UI.WebControls.LoginName> control, set the <xref:System.Web.UI.WebControls.LoginName.FormatString%2A> property.  
   
@@ -111,6 +111,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -141,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FormatString">
@@ -196,6 +198,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The format string is not valid.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -329,6 +332,7 @@
         <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
         <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
         <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
   </Members>

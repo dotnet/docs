@@ -1,4 +1,4 @@
-﻿<Type Name="ComPersistableTypeElement" FullName="System.ServiceModel.Configuration.ComPersistableTypeElement">
+<Type Name="ComPersistableTypeElement" FullName="System.ServiceModel.Configuration.ComPersistableTypeElement">
   <TypeSignature Language="C#" Value="public sealed class ComPersistableTypeElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComPersistableTypeElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ComPersistableTypeElement" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Specifies all the persistable types.This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/4d255097-45f0-4a04-945e-41d9bcfe8c54">ComPersistableType in Configuration</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

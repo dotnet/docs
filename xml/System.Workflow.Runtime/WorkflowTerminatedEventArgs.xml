@@ -1,4 +1,4 @@
-﻿<Type Name="WorkflowTerminatedEventArgs" FullName="System.Workflow.Runtime.WorkflowTerminatedEventArgs">
+<Type Name="WorkflowTerminatedEventArgs" FullName="System.Workflow.Runtime.WorkflowTerminatedEventArgs">
   <TypeSignature Language="C#" Value="public class WorkflowTerminatedEventArgs : System.Workflow.Runtime.WorkflowEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowTerminatedEventArgs extends System.Workflow.Runtime.WorkflowEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowTerminatedEventArgs" />
@@ -36,13 +36,14 @@
 ## Examples  
  The following code example demonstrates an event handler method that takes <xref:System.Workflow.Runtime.WorkflowTerminatedEventArgs> as a parameter. The `OnWorkflowTerminated` method is called when the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowTerminated> event is raised. The code uses the <xref:System.Workflow.Runtime.WorkflowTerminatedEventArgs.Exception%2A> property get the message associated with the exception that caused the workflow to terminate.  
   
- This code example is part of the Sequential Workflow with Parameters SDK Sample from the Program.cs file. For more information, see [Sequential Workflow with Parameters](http://msdn.microsoft.com/library/17157f2d-8fed-4848-a386-e4efa381b66b).  
+ This code example is part of the Sequential Workflow with Parameters SDK Sample from the Program.cs file. For more information, see [Workflow with Parameters Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741685(v=vs.90)).  
   
  [!code-csharp[WF_Samples#193](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#193)]
  [!code-vb[WF_Samples#193](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#193)]  
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741685(v=vs.90)">Workflow with Parameters Sample</related>
   </Docs>
   <Members>
     <Member MemberName="Exception">
@@ -80,13 +81,14 @@
 ## Examples  
  The following code example demonstrates how you can use the <xref:System.Workflow.Runtime.WorkflowTerminatedEventArgs.Exception%2A> property to obtain information about an exception that caused a workflow to terminate. The `OnWorkflowTerminated` method takes a <xref:System.Workflow.Runtime.WorkflowTerminatedEventArgs> as a parameter. This method is called when the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowTerminated> event is raised. The code uses the <xref:System.Workflow.Runtime.WorkflowTerminatedEventArgs.Exception%2A> property get the message associated with the exception that caused the workflow to terminate.  
   
- This code example is part of the Sequential Workflow with Parameters SDK Sample from the Program.cs file. For more information, see [Sequential Workflow with Parameters](http://msdn.microsoft.com/library/17157f2d-8fed-4848-a386-e4efa381b66b).  
+ This code example is part of the Sequential Workflow with Parameters SDK Sample from the Program.cs file. For more information, see [Workflow with Parameters Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741685(v=vs.90)).  
   
  [!code-csharp[WF_Samples#193](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#193)]
  [!code-vb[WF_Samples#193](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#193)]  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741685(v=vs.90)">Workflow with Parameters Sample</related>
       </Docs>
     </Member>
   </Members>

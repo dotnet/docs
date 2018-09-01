@@ -1,4 +1,4 @@
-﻿<Type Name="EventLogType" FullName="System.Diagnostics.Eventing.Reader.EventLogType">
+<Type Name="EventLogType" FullName="System.Diagnostics.Eventing.Reader.EventLogType">
   <TypeSignature Language="C#" Value="public enum EventLogType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventLogType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogType" />
@@ -16,6 +16,8 @@
   <Docs>
     <summary>Defines the type of events that are logged in an event log. Each log can only contain one type of event.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
   </Docs>
   <Members>
     <Member MemberName="Administrative">

@@ -1,4 +1,4 @@
-﻿<Type Name="Panel" FullName="System.Web.UI.WebControls.Panel">
+<Type Name="Panel" FullName="System.Web.UI.WebControls.Panel">
   <TypeSignature Language="C#" Value="public class Panel : System.Web.UI.WebControls.WebControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Panel extends System.Web.UI.WebControls.WebControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Panel" />
@@ -121,6 +121,7 @@
     <altmember cref="P:System.Web.UI.WebControls.Panel.Direction" />
     <altmember cref="P:System.Web.UI.WebControls.Panel.BackImageUrl" />
     <altmember cref="P:System.Web.UI.WebControls.Panel.ScrollBars" />
+    <related type="Article" href="http://msdn.microsoft.com/library/127b61ed-87f2-46f4-92a3-785166e7245b">Panel Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

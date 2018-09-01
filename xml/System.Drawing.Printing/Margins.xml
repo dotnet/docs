@@ -1,4 +1,4 @@
-﻿<Type Name="Margins" FullName="System.Drawing.Printing.Margins">
+<Type Name="Margins" FullName="System.Drawing.Printing.Margins">
   <TypeSignature Language="C#" Value="public class Margins : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Margins extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.Margins" />
@@ -55,6 +55,7 @@
     <altmember cref="T:System.Drawing.Printing.PageSettings" />
     <altmember cref="T:System.Drawing.Printing.PrintController" />
     <altmember cref="T:System.Drawing.Printing.MarginsConverter" />
+    <related type="Article" href="http://msdn.microsoft.com/library/a4a2960c-eb70-48e2-b641-cfb222704e46">Windows Forms Print Support</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

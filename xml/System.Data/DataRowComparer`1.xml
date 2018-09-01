@@ -1,4 +1,4 @@
-﻿<Type Name="DataRowComparer&lt;TRow&gt;" FullName="System.Data.DataRowComparer&lt;TRow&gt;">
+<Type Name="DataRowComparer&lt;TRow&gt;" FullName="System.Data.DataRowComparer&lt;TRow&gt;">
   <TypeSignature Language="C#" Value="public sealed class DataRowComparer&lt;TRow&gt; : System.Collections.Generic.IEqualityComparer&lt;TRow&gt; where TRow : DataRow" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataRowComparer`1&lt;(class System.Data.DataRow) TRow&gt; extends System.Object implements class System.Collections.Generic.IEqualityComparer`1&lt;!TRow&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataRowComparer`1" />
@@ -42,6 +42,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/8fe0eadf-297b-487c-8d4b-7816753c2883">Comparing DataRows</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/dfd91658-8d8a-45a4-a356-e327e809f21d">LINQ to DataSet Examples</related>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -76,6 +78,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8fe0eadf-297b-487c-8d4b-7816753c2883">Comparing DataRows</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/dfd91658-8d8a-45a4-a356-e327e809f21d">LINQ to DataSet Examples</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -120,6 +124,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or both of the source <see cref="T:System.Data.DataRow" /> objects are <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/8fe0eadf-297b-487c-8d4b-7816753c2883">Comparing DataRows</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/dfd91658-8d8a-45a4-a356-e327e809f21d">LINQ to DataSet Examples</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -158,6 +164,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The source <see cref="T:System.Data.DataRow" /> objects does not belong to a <see cref="T:System.Data.DataTable" />.</exception>
         <exception cref="T:System.ArgumentNullException">The source <see cref="T:System.Data.DataRow" /> objects is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/8fe0eadf-297b-487c-8d4b-7816753c2883">Comparing DataRows</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/dfd91658-8d8a-45a4-a356-e327e809f21d">LINQ to DataSet Examples</related>
       </Docs>
     </Member>
   </Members>

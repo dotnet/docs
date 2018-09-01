@@ -1,4 +1,4 @@
-﻿<Type Name="RangeValuePattern" FullName="System.Windows.Automation.RangeValuePattern">
+<Type Name="RangeValuePattern" FullName="System.Windows.Automation.RangeValuePattern">
   <TypeSignature Language="C#" Value="public class RangeValuePattern : System.Windows.Automation.BasePattern" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RangeValuePattern extends System.Windows.Automation.BasePattern" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.RangeValuePattern" />
@@ -25,6 +25,9 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Automation.Provider.IRangeValueProvider" />
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md">UI Automation Control Patterns for Clients</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/225feaa4-918e-418b-938e-7389338d0a69">Implementing the UI Automation RangeValue Control Pattern</related>
   </Docs>
   <Members>
     <Member MemberName="Cached">
@@ -57,6 +60,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The requested property is not in the cache.</exception>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md">UI Automation Control Patterns for Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/225feaa4-918e-418b-938e-7389338d0a69">Implementing the UI Automation RangeValue Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -88,6 +94,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md">UI Automation Control Patterns for Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/225feaa4-918e-418b-938e-7389338d0a69">Implementing the UI Automation RangeValue Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnlyProperty">

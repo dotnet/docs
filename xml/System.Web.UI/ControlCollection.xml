@@ -1,4 +1,4 @@
-﻿<Type Name="ControlCollection" FullName="System.Web.UI.ControlCollection">
+<Type Name="ControlCollection" FullName="System.Web.UI.ControlCollection">
   <TypeSignature Language="C#" Value="public class ControlCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ControlCollection" />
@@ -27,7 +27,7 @@
 ## Remarks  
  You can access any of the properties and methods of the <xref:System.Web.UI.ControlCollection> class through the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> property. Since the <xref:System.Web.UI.Control> class is the base class for all ASP.NET server controls, all server controls inherit this property.  
   
- For more information about collections, see [Collections and Data Structures](http://msdn.microsoft.com/library/60cc581f-1db5-445b-ba04-a173396bf872).  
+ For more information about collections, see [Collections and Data Structures](~/docs/standard/collections/index.md).  
   
    
   
@@ -42,6 +42,7 @@
     <altmember cref="T:System.Web.UI.Control" />
     <altmember cref="T:System.Web.UI.Page" />
     <altmember cref="P:System.Web.UI.Control.Controls" />
+    <related type="Article" href="~/docs/standard/collections/index.md">Collections and Data Structures</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

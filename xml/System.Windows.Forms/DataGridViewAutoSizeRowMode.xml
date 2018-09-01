@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewAutoSizeRowMode" FullName="System.Windows.Forms.DataGridViewAutoSizeRowMode">
+<Type Name="DataGridViewAutoSizeRowMode" FullName="System.Windows.Forms.DataGridViewAutoSizeRowMode">
   <TypeSignature Language="C#" Value="public enum DataGridViewAutoSizeRowMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewAutoSizeRowMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAutoSizeRowMode" />
@@ -40,6 +40,8 @@
     </remarks>
     <altmember cref="T:System.Windows.Forms.DataGridView" />
     <altmember cref="Overload:System.Windows.Forms.DataGridView.AutoResizeRow" />
+    <related type="Article" href="http://msdn.microsoft.com/library/a5620a9c-0d06-41e3-8934-c25ddb16c9e6">Sizing Options in the Windows Forms DataGridView Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/63d770dc-b3f5-462b-901a-3125b2753792">How to: Programmatically Resize Cells To Fit Content in the Windows Forms DataGridView Control</related>
   </Docs>
   <Members>
     <Member MemberName="AllCells">

@@ -1,4 +1,4 @@
-﻿<Type Name="Expression&lt;TDelegate&gt;" FullName="System.Linq.Expressions.Expression&lt;TDelegate&gt;">
+<Type Name="Expression&lt;TDelegate&gt;" FullName="System.Linq.Expressions.Expression&lt;TDelegate&gt;">
   <TypeSignature Language="C#" Value="public sealed class Expression&lt;TDelegate&gt; : System.Linq.Expressions.LambdaExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Expression`1&lt;TDelegate&gt; extends System.Linq.Expressions.LambdaExpression" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.Expression`1" />
@@ -62,6 +62,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md">Lambda Expressions (C# Programming Guide)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b">Expression Trees</related>
   </Docs>
   <Members>
     <Member MemberName="Accept">

@@ -1,4 +1,4 @@
-﻿<Type Name="IRawElementProviderFragment" FullName="System.Windows.Automation.Provider.IRawElementProviderFragment">
+<Type Name="IRawElementProviderFragment" FullName="System.Windows.Automation.Provider.IRawElementProviderFragment">
   <TypeSignature Language="C#" Value="public interface IRawElementProviderFragment : System.Windows.Automation.Provider.IRawElementProviderSimple" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRawElementProviderFragment implements class System.Windows.Automation.Provider.IRawElementProviderSimple" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IRawElementProviderFragment" />
@@ -39,6 +39,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-providers-overview.md">UI Automation Providers Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771502(v=vs.90)">Fragment Provider Sample</related>
   </Docs>
   <Members>
     <Member MemberName="BoundingRectangle">
@@ -78,6 +81,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="FragmentRoot">
@@ -115,6 +119,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetEmbeddedFragmentRoots">
@@ -145,6 +150,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeId">
@@ -185,6 +191,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -239,6 +246,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="SetFocus">
@@ -268,6 +276,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
   </Members>

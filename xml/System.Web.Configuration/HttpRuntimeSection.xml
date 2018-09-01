@@ -1,4 +1,4 @@
-﻿<Type Name="HttpRuntimeSection" FullName="System.Web.Configuration.HttpRuntimeSection">
+<Type Name="HttpRuntimeSection" FullName="System.Web.Configuration.HttpRuntimeSection">
   <TypeSignature Language="C#" Value="public sealed class HttpRuntimeSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpRuntimeSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpRuntimeSection" />
@@ -327,6 +327,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c6d99815-e022-4d2c-9420-1d7ab5b9d504">Using Application Domains</related>
       </Docs>
     </Member>
     <Member MemberName="EnableHeaderChecking">
@@ -382,6 +383,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/985fe5d8-eb71-4024-b361-41fbdc1618d8">HTTP</related>
       </Docs>
     </Member>
     <Member MemberName="EnableKernelOutputCache">
@@ -436,6 +438,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce">ASP.NET Caching Features</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f882bf1b-a009-4312-ac06-74370ffabc0b">Performance Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableVersionHeader">
@@ -479,6 +483,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903">Assembly Versioning</related>
       </Docs>
     </Member>
     <Member MemberName="EncoderType">
@@ -777,6 +782,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/app-domains/application-domains.md">Application Domains Overview</related>
       </Docs>
     </Member>
     <Member MemberName="MinFreeThreads">
@@ -825,6 +831,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/threading/threads-and-threading.md">Threads and Threading</related>
+        <related type="Article" href="~/docs/standard/threading/using-threads-and-threading.md">Using Threads and Threading</related>
       </Docs>
     </Member>
     <Member MemberName="MinLocalRequestFreeThreads">
@@ -870,6 +878,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/threading/threads-and-threading.md">Threads and Threading</related>
+        <related type="Article" href="~/docs/standard/threading/using-threads-and-threading.md">Using Threads and Threading</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -1370,6 +1380,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/app-domains/application-domains.md">Application Domains Overview</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="ZipPackage" FullName="System.IO.Packaging.ZipPackage">
+<Type Name="ZipPackage" FullName="System.IO.Packaging.ZipPackage">
   <TypeSignature Language="C#" Value="public sealed class ZipPackage : System.IO.Packaging.Package" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ZipPackage extends System.IO.Packaging.Package" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.ZipPackage" />
@@ -44,6 +44,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.IO.Packaging.PackagePart" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160055">Writing a Package Sample</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160034">Reading a Package Sample</related>
   </Docs>
   <Members>
     <Member MemberName="CreatePartCore">

@@ -1,4 +1,4 @@
-﻿<Type Name="DbEnumerator" FullName="System.Data.Common.DbEnumerator">
+<Type Name="DbEnumerator" FullName="System.Data.Common.DbEnumerator">
   <TypeSignature Language="C#" Value="public class DbEnumerator : System.Collections.IEnumerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DbEnumerator extends System.Object implements class System.Collections.IEnumerator" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbEnumerator" />
@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -52,6 +53,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbEnumerator" /> class.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -116,6 +118,7 @@
         <param name="reader">The <see langword="DataReader" /> through which to iterate.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbEnumerator" /> class using the specified <see langword="DataReader" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -187,6 +190,7 @@
           <see langword="true" /> to automatically close the <see langword="DataReader" /> after iterating through its data; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbEnumerator" /> class using the specified <see langword="DataReader" />, and indicates whether to automatically close the <see langword="DataReader" /> after iterating through its data.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -232,6 +236,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -279,6 +284,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -332,6 +338,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

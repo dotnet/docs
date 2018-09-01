@@ -1,4 +1,4 @@
-﻿<Type Name="SqlMembershipProvider" FullName="System.Web.Security.SqlMembershipProvider">
+<Type Name="SqlMembershipProvider" FullName="System.Web.Security.SqlMembershipProvider">
   <TypeSignature Language="C#" Value="public class SqlMembershipProvider : System.Web.Security.MembershipProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlMembershipProvider extends System.Web.Security.MembershipProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.SqlMembershipProvider" />
@@ -71,6 +71,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -101,6 +102,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ApplicationName">
@@ -162,6 +164,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt was made to set the <see cref="P:System.Web.Security.SqlMembershipProvider.ApplicationName" /> property to an empty string or <see langword="null" />.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">An attempt was made to set the <see cref="P:System.Web.Security.SqlMembershipProvider.ApplicationName" /> property to a string that is longer than 256 characters.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ChangePassword">
@@ -265,6 +268,7 @@
           <paramref name="username" /> was not found in the database.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">An error occurred while setting the new password value at the database.</exception>
         <exception cref="T:System.Exception">An unhandled exception occurred.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ChangePasswordQuestionAndAnswer">
@@ -359,6 +363,7 @@
   
  <paramref name="newPasswordAnswer" /> is <see langword="null" /> and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresQuestionAndAnswer" /> is <see langword="true" />.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">An error occurred when changing the password question and answer in the database.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="CreateUser">
@@ -455,6 +460,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteUser">
@@ -515,6 +521,7 @@
           <paramref name="username" /> is an empty string (""), contains a comma, or is longer than 256 characters.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="EnablePasswordReset">
@@ -570,6 +577,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="EnablePasswordRetrieval">
@@ -627,6 +635,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="FindUsersByEmail">
@@ -697,6 +706,7 @@
  \- or -  
   
  <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> plus <paramref name="pageSize" /> minus one exceeds <see cref="F:System.Int32.MaxValue" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="FindUsersByName">
@@ -769,6 +779,7 @@
  <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> plus <paramref name="pageSize" /> minus one exceeds <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="usernameToMatch" /> is <see langword="null" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GeneratePassword">
@@ -814,6 +825,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllUsers">
@@ -874,6 +886,7 @@
  \- or -  
   
  <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> plus <paramref name="pageSize" /> minus one exceeds <see cref="F:System.Int32.MaxValue" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GetNumberOfUsersOnline">
@@ -919,6 +932,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GetPassword">
@@ -1013,6 +1027,7 @@
  \- or -  
   
  <paramref name="passwordAnswer" /> is <see langword="null" /> and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresQuestionAndAnswer" /> is <see langword="true" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetUser">
@@ -1022,6 +1037,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Gets the information for a membership user from the data source.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetUser">
@@ -1062,6 +1078,7 @@
           <paramref name="providerUserKey" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="providerUserKey" /> is not of type <see cref="T:System.Guid" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GetUser">
@@ -1121,6 +1138,7 @@
  <paramref name="username" /> contains a comma.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GetUserNameByEmail">
@@ -1172,6 +1190,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="email" /> exceeds 256 characters.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">More than one user with the same email address exists in the database and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail" /> is <see langword="true" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -1259,6 +1278,7 @@
  The application configuration file for this <see cref="T:System.Web.Security.SqlMembershipProvider" /> instance contains an unrecognized attribute.</exception>
         <exception cref="T:System.Web.HttpException">The current trust level is less than <see langword="Low" />.</exception>
         <exception cref="T:System.InvalidOperationException">The provider has already been initialized prior to the current call to the <see cref="M:System.Web.Security.SqlMembershipProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" /> method.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="MaxInvalidPasswordAttempts">
@@ -1319,6 +1339,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="MinRequiredNonAlphanumericCharacters">
@@ -1377,6 +1398,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="MinRequiredPasswordLength">
@@ -1433,6 +1455,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordAttemptWindow">
@@ -1493,6 +1516,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordFormat">
@@ -1553,6 +1577,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordStrengthRegularExpression">
@@ -1617,6 +1642,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="RequiresQuestionAndAnswer">
@@ -1674,6 +1700,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="RequiresUniqueEmail">
@@ -1725,6 +1752,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ResetPassword">
@@ -1817,6 +1845,7 @@
   
  <paramref name="passwordAnswer" /> is <see langword="null" /> and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresQuestionAndAnswer" /> is <see langword="true" />.</exception>
         <exception cref="T:System.Exception">An unhandled exception occurred.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="UnlockUser">
@@ -1857,6 +1886,7 @@
           <paramref name="username" /> is an empty string, is longer than 256 characters, or contains a comma.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateUser">
@@ -1932,6 +1962,7 @@
  \- or -  
   
  The user update failed.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ValidateUser">
@@ -1985,6 +2016,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationException" FullName="System.ApplicationException">
+<Type Name="ApplicationException" FullName="System.ApplicationException">
   <TypeSignature Language="C#" Value="public class ApplicationException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ApplicationException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:System.ApplicationException" />
@@ -46,6 +46,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+    <related type="Article" href="~/docs/standard/design-guidelines/using-standard-exception-types.md">Using Standard Exception Types</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -195,6 +197,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and Soap Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -247,6 +250,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
   </Members>

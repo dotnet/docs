@@ -1,4 +1,4 @@
-﻿<Type Name="TextPattern" FullName="System.Windows.Automation.TextPattern">
+<Type Name="TextPattern" FullName="System.Windows.Automation.TextPattern">
   <TypeSignature Language="C#" Value="public class TextPattern : System.Windows.Automation.BasePattern" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextPattern extends System.Windows.Automation.BasePattern" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TextPattern" />
@@ -25,6 +25,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Automation.Provider.ITextProvider" />
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md">UI Automation Control Patterns for Clients</related>
   </Docs>
   <Members>
     <Member MemberName="AnimationStyleAttribute">
@@ -92,7 +94,7 @@
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the [BackgroundColor](http://msdn.microsoft.com/library/default.asp?url=/library/gdi/colors_9xiq.asp) attribute of a text range.</summary>
+        <summary>Identifies the BackgroundColor attribute of a text range.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -420,7 +422,7 @@
 ## Remarks  
  This attribute refers to the relative stroke, thickness, or boldness of a font.  
   
- This attribute is modeled after the `lfWeight` field in [GDI LOGFONT](http://msdn.microsoft.com/library/default.asp?url=/library/gdi/fontext_1wmq.asp). For consistency, the following values have been adopted from LOGFONT: 0=DontCare, 100=Thin, 200=ExtraLight or UltraLight, 300=Light, 400=Normal or Regular, 500=Medium, 600=SemiBold or DemiBold, 700=Bold, 800=ExtraBold or UltraBold, and 900=Heavy or Black.  
+ This attribute is modeled after the `lfWeight` field in GDI LOGFONT. For consistency, the following values have been adopted from LOGFONT: 0=DontCare, 100=Thin, 200=ExtraLight or UltraLight, 300=Light, 400=Normal or Regular, 500=Medium, 600=SemiBold or DemiBold, 700=Bold, 800=ExtraBold or UltraBold, and 900=Heavy or Black.  
   
  This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
   
@@ -463,7 +465,7 @@
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="ForegroundColor" /> ([COLORREF](http://msdn.microsoft.com/library/default.asp?url=/library/gdi/colors_9xiq.asp)) attribute of a text range.</summary>
+        <summary>Identifies the <see langword="ForegroundColor" /> (COLORREF) attribute of a text range.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

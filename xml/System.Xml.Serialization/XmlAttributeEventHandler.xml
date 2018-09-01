@@ -1,4 +1,4 @@
-﻿<Type Name="XmlAttributeEventHandler" FullName="System.Xml.Serialization.XmlAttributeEventHandler">
+<Type Name="XmlAttributeEventHandler" FullName="System.Xml.Serialization.XmlAttributeEventHandler">
   <TypeSignature Language="C#" Value="public delegate void XmlAttributeEventHandler(object sender, XmlAttributeEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlAttributeEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlAttributeEventHandler" />
@@ -65,5 +65,10 @@
     <altmember cref="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.Stream)" />
     <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
     <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+    <related type="Article" href="~/docs/standard/serialization/introducing-xml-serialization.md">Introducing XML Serialization</related>
+    <related type="Article" href="~/docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md">How to: Specify an Alternate Element Name for an XML Stream</related>
+    <related type="Article" href="~/docs/standard/serialization/controlling-xml-serialization-using-attributes.md">Controlling XML Serialization Using Attributes</related>
+    <related type="Article" href="~/docs/standard/serialization/examples-of-xml-serialization.md">Examples of XML Serialization</related>
+    <related type="Article" href="~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md">XML Schema Definition Tool (Xsd.exe)</related>
   </Docs>
 </Type>

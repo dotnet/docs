@@ -1,4 +1,4 @@
-﻿<Type Name="TogglePatternIdentifiers" FullName="System.Windows.Automation.TogglePatternIdentifiers">
+<Type Name="TogglePatternIdentifiers" FullName="System.Windows.Automation.TogglePatternIdentifiers">
   <TypeSignature Language="C#" Value="public static class TogglePatternIdentifiers" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TogglePatternIdentifiers extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TogglePatternIdentifiers" />
@@ -25,6 +25,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Automation.TogglePattern" />
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/3cfe875f-b0c0-413d-9703-5f14e6a1a30e">Implementing the UI Automation Toggle Control Pattern</related>
   </Docs>
   <Members>
     <Member MemberName="Pattern">
@@ -53,6 +55,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/3cfe875f-b0c0-413d-9703-5f14e6a1a30e">Implementing the UI Automation Toggle Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="ToggleStateProperty">
@@ -81,6 +84,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/3cfe875f-b0c0-413d-9703-5f14e6a1a30e">Implementing the UI Automation Toggle Control Pattern</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="DataTrigger" FullName="System.Windows.DataTrigger">
+<Type Name="DataTrigger" FullName="System.Windows.DataTrigger">
   <TypeSignature Language="C#" Value="public class DataTrigger : System.Windows.TriggerBase, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataTrigger extends System.Windows.TriggerBase implements class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.DataTrigger" />
@@ -57,6 +57,7 @@
     </remarks>
     <altmember cref="T:System.Windows.Trigger" />
     <altmember cref="T:System.Windows.MultiDataTrigger" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -148,6 +149,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Windows.DataTrigger.Value" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
       </Docs>
     </Member>
     <Member MemberName="ReceiveMarkupExtension">
@@ -252,6 +254,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddChild">
@@ -391,6 +394,7 @@
         <exception cref="T:System.ArgumentException">Expressions are not supported. Bindings are not supported.</exception>
         <altmember cref="P:System.Windows.DataTrigger.Binding" />
         <altmember cref="P:System.Windows.DataTrigger.Setters" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
       </Docs>
     </Member>
   </Members>

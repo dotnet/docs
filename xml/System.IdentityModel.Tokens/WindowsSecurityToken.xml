@@ -1,4 +1,4 @@
-﻿<Type Name="WindowsSecurityToken" FullName="System.IdentityModel.Tokens.WindowsSecurityToken">
+<Type Name="WindowsSecurityToken" FullName="System.IdentityModel.Tokens.WindowsSecurityToken">
   <TypeSignature Language="C#" Value="public class WindowsSecurityToken : System.IdentityModel.Tokens.SecurityToken" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WindowsSecurityToken extends System.IdentityModel.Tokens.SecurityToken" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.WindowsSecurityToken" />
@@ -13,7 +13,8 @@
   <Base>
     <BaseTypeName>System.IdentityModel.Tokens.SecurityToken</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Represents a security token that is based on the identity of a Windows domain or user account.</summary>
     <remarks>

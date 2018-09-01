@@ -1,4 +1,4 @@
-﻿<Type Name="Unit" FullName="System.Web.UI.WebControls.Unit">
+<Type Name="Unit" FullName="System.Web.UI.WebControls.Unit">
   <TypeSignature Language="C#" Value="public struct Unit" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit Unit extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Unit" />
@@ -57,6 +57,7 @@
     <altmember cref="M:System.Web.UI.WebControls.Unit.Percentage(System.Double)" />
     <altmember cref="M:System.Web.UI.WebControls.Unit.Pixel(System.Int32)" />
     <altmember cref="M:System.Web.UI.WebControls.Unit.Point(System.Int32)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -66,6 +67,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Unit" /> structure.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -110,6 +112,7 @@
           <paramref name="value" /> is not between -32768 and 32767.</exception>
         <altmember cref="P:System.Web.UI.WebControls.Unit.Value" />
         <altmember cref="P:System.Web.UI.WebControls.Unit.Type" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -154,6 +157,7 @@
           <paramref name="value" /> is not between -32768 and 32767.</exception>
         <altmember cref="P:System.Web.UI.WebControls.Unit.Value" />
         <altmember cref="P:System.Web.UI.WebControls.Unit.Type" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -211,6 +215,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Unit.Value" />
         <altmember cref="P:System.Web.UI.WebControls.Unit.Type" />
         <altmember cref="T:System.Web.UI.WebControls.UnitType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -257,6 +262,7 @@
           <paramref name="value" /> is not between -32768 and 32767.</exception>
         <altmember cref="P:System.Web.UI.WebControls.Unit.Value" />
         <altmember cref="P:System.Web.UI.WebControls.Unit.Type" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -320,6 +326,7 @@
           <paramref name="value" /> is not a valid CSS-compliant unit expression.</exception>
         <altmember cref="P:System.Web.UI.WebControls.Unit.Value" />
         <altmember cref="P:System.Web.UI.WebControls.Unit.Type" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -342,6 +349,7 @@
       <Docs>
         <summary>Represents an empty <see cref="T:System.Web.UI.WebControls.Unit" />. This field is read-only.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -380,6 +388,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -405,6 +414,7 @@
         <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.ValueType.GetHashCode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -474,6 +484,7 @@
   
  The equivalent method for this operator is <xref:System.Web.UI.WebControls.Unit.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -508,6 +519,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Web.UI.WebControls.Unit.Pixel%28System.Int32%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -545,6 +557,7 @@
   
  The equivalent method for this operator is <xref:System.Web.UI.WebControls.Unit.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Parse">
@@ -554,6 +567,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Converts a string to a <see cref="T:System.Web.UI.WebControls.Unit" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Parse">
@@ -603,6 +617,7 @@
         <altmember cref="M:System.Web.UI.WebControls.Unit.Percentage(System.Double)" />
         <altmember cref="M:System.Web.UI.WebControls.Unit.Pixel(System.Int32)" />
         <altmember cref="M:System.Web.UI.WebControls.Unit.Point(System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -647,6 +662,7 @@
         <altmember cref="M:System.Web.UI.WebControls.Unit.Percentage(System.Double)" />
         <altmember cref="M:System.Web.UI.WebControls.Unit.Pixel(System.Int32)" />
         <altmember cref="M:System.Web.UI.WebControls.Unit.Point(System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="Percentage">
@@ -688,6 +704,7 @@
         <altmember cref="M:System.Web.UI.WebControls.Unit.Parse(System.String)" />
         <altmember cref="M:System.Web.UI.WebControls.Unit.Pixel(System.Int32)" />
         <altmember cref="M:System.Web.UI.WebControls.Unit.Point(System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="Pixel">
@@ -736,6 +753,7 @@
         <altmember cref="M:System.Web.UI.WebControls.Unit.Parse(System.String)" />
         <altmember cref="M:System.Web.UI.WebControls.Unit.Percentage(System.Double)" />
         <altmember cref="M:System.Web.UI.WebControls.Unit.Point(System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="Point">
@@ -777,6 +795,7 @@
         <altmember cref="M:System.Web.UI.WebControls.Unit.Parse(System.String)" />
         <altmember cref="M:System.Web.UI.WebControls.Unit.Pixel(System.Int32)" />
         <altmember cref="M:System.Web.UI.WebControls.Unit.Percentage(System.Double)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ToString">
@@ -786,6 +805,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Converts a <see cref="T:System.Web.UI.WebControls.Unit" /> to a string equivalent.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ToString">
@@ -810,6 +830,7 @@
         <summary>Converts a <see cref="T:System.Web.UI.WebControls.Unit" /> to a <see cref="T:System.String" />.</summary>
         <returns>A <see cref="T:System.String" /> that represents this <see cref="T:System.Web.UI.WebControls.Unit" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -850,6 +871,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Globalization.CultureInfo" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -899,6 +921,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.UnitType" />
         <altmember cref="T:System.Globalization.NumberFormatInfo" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -934,6 +957,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.UnitType" />
         <altmember cref="P:System.Web.UI.WebControls.Unit.Value" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -970,6 +994,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Unit.Type" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
   </Members>

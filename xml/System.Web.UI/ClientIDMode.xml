@@ -1,4 +1,4 @@
-﻿<Type Name="ClientIDMode" FullName="System.Web.UI.ClientIDMode">
+<Type Name="ClientIDMode" FullName="System.Web.UI.ClientIDMode">
   <TypeSignature Language="C#" Value="public enum ClientIDMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClientIDMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ClientIDMode" />
@@ -52,6 +52,10 @@
     <altmember cref="P:System.Web.Configuration.PagesSection.ClientIDMode" />
     <altmember cref="P:System.Web.UI.DataSourceControl.ClientIDMode" />
     <altmember cref="P:System.Web.DynamicData.DynamicDataManager.ClientIDMode" />
+    <related type="Article" href="http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7">ASP.NET Control Identification</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/fb58ed73-d8f7-401c-9560-d99dd9ca7db8">How to: Access Controls from JavaScript by ID</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/776f3747-7fa7-4851-ae27-f728ede1a564">Walkthrough: Making Data-Bound Controls Easier to Access from JavaScript</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f0eaf202-61b6-4cd8-9604-6b7638fdf0ae">Walkthrough: Making Controls Located in Web User Controls Easier to Access From JavaScript</related>
   </Docs>
   <Members>
     <Member MemberName="AutoID">

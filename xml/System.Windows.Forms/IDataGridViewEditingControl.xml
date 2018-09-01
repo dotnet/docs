@@ -1,4 +1,4 @@
-﻿<Type Name="IDataGridViewEditingControl" FullName="System.Windows.Forms.IDataGridViewEditingControl">
+<Type Name="IDataGridViewEditingControl" FullName="System.Windows.Forms.IDataGridViewEditingControl">
   <TypeSignature Language="C#" Value="public interface IDataGridViewEditingControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataGridViewEditingControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IDataGridViewEditingControl" />
@@ -53,6 +53,7 @@
     <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxCell" />
     <altmember cref="P:System.Windows.Forms.DataGridViewCell.EditType" />
     <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e79a9d4e-64ec-41f5-93ec-f5492633cbb2">How to: Host Controls in Windows Forms DataGridView Cells</related>
   </Docs>
   <Members>
     <Member MemberName="ApplyCellStyleToEditingControl">

@@ -1,4 +1,4 @@
-﻿<Type Name="AssemblyCollection" FullName="System.Web.Configuration.AssemblyCollection">
+<Type Name="AssemblyCollection" FullName="System.Web.Configuration.AssemblyCollection">
   <TypeSignature Language="C#" Value="public sealed class AssemblyCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AssemblyCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.AssemblyCollection" />
@@ -75,6 +75,7 @@
     </remarks>
     <altmember cref="T:System.Configuration.ConfigurationElement" />
     <altmember cref="T:System.Web.Configuration.AssemblyInfo" />
+    <related type="Article" href="http://msdn.microsoft.com/library/b8e3362a-f821-4696-b98d-571d4bbfe431">&lt;assembly&gt; Element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

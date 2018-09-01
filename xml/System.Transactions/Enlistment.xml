@@ -1,4 +1,4 @@
-﻿<Type Name="Enlistment" FullName="System.Transactions.Enlistment">
+<Type Name="Enlistment" FullName="System.Transactions.Enlistment">
   <TypeSignature Language="C#" Value="public class Enlistment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Enlistment extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.Enlistment" />
@@ -49,6 +49,7 @@
     <threadsafe>This type is thread safe.</threadsafe>
     <altmember cref="T:System.Transactions.PreparingEnlistment" />
     <altmember cref="T:System.Transactions.IEnlistmentNotification" />
+    <related type="Article" href="https://msdn.microsoft.com/en-us/library/7bf66ce7-4190-4910-89d7-df4ad43e9f31">Enlisting Resources As Participants In A Transaction</related>
   </Docs>
   <Members>
     <Member MemberName="Done">
@@ -94,6 +95,7 @@
         </remarks>
         <altmember cref="T:System.Transactions.PreparingEnlistment" />
         <altmember cref="T:System.Transactions.IEnlistmentNotification" />
+        <related type="Article" href="https://msdn.microsoft.com/en-us/library/7bf66ce7-4190-4910-89d7-df4ad43e9f31">Enlisting Resources As Participants In A Transaction</related>
       </Docs>
     </Member>
   </Members>

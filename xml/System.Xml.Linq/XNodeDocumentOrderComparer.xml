@@ -1,4 +1,4 @@
-﻿<Type Name="XNodeDocumentOrderComparer" FullName="System.Xml.Linq.XNodeDocumentOrderComparer">
+<Type Name="XNodeDocumentOrderComparer" FullName="System.Xml.Linq.XNodeDocumentOrderComparer">
   <TypeSignature Language="C#" Value="public sealed class XNodeDocumentOrderComparer : System.Collections.Generic.IComparer&lt;System.Xml.Linq.XNode&gt;, System.Collections.IComparer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XNodeDocumentOrderComparer extends System.Object implements class System.Collections.Generic.IComparer`1&lt;class System.Xml.Linq.XNode&gt;, class System.Collections.IComparer" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XNodeDocumentOrderComparer" />
@@ -45,6 +45,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -120,6 +121,7 @@ Child3 is before Child5
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Compare">
@@ -204,6 +206,7 @@ Child3 is before Child5
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The two nodes do not share a common ancestor.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IComparer.Compare">

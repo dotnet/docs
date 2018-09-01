@@ -1,4 +1,4 @@
-﻿<Type Name="AnimationTimeline" FullName="System.Windows.Media.Animation.AnimationTimeline">
+<Type Name="AnimationTimeline" FullName="System.Windows.Media.Animation.AnimationTimeline">
   <TypeSignature Language="C#" Value="public abstract class AnimationTimeline : System.Windows.Media.Animation.Timeline" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AnimationTimeline extends System.Windows.Media.Animation.Timeline" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.AnimationTimeline" />
@@ -41,6 +41,7 @@
   
  For more information about creating custom animations, see the [Custom Animations Overview](~/docs/framework/wpf/graphics-multimedia/custom-animations-overview.md).</para>
     </block>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159981">Custom Animation Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

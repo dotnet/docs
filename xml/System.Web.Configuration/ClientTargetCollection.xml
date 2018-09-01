@@ -1,4 +1,4 @@
-﻿<Type Name="ClientTargetCollection" FullName="System.Web.Configuration.ClientTargetCollection">
+<Type Name="ClientTargetCollection" FullName="System.Web.Configuration.ClientTargetCollection">
   <TypeSignature Language="C#" Value="public sealed class ClientTargetCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClientTargetCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ClientTargetCollection" />
@@ -53,6 +53,7 @@
     <altmember cref="T:System.Web.Configuration.ClientTarget" />
     <altmember cref="T:System.Web.Configuration.ClientTargetSection" />
     <altmember cref="P:System.Web.UI.Page.ClientTarget" />
+    <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Server Controls and Browser Capabilities</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

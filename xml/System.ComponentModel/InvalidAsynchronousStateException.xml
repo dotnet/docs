@@ -1,4 +1,4 @@
-﻿<Type Name="InvalidAsynchronousStateException" FullName="System.ComponentModel.InvalidAsynchronousStateException">
+<Type Name="InvalidAsynchronousStateException" FullName="System.ComponentModel.InvalidAsynchronousStateException">
   <TypeSignature Language="C#" Value="public class InvalidAsynchronousStateException : ArgumentException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit InvalidAsynchronousStateException extends System.ArgumentException" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.InvalidAsynchronousStateException" />
@@ -38,6 +38,7 @@
     <altmember cref="T:System.ComponentModel.AsyncOperation" />
     <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
     <altmember cref="T:System.Threading.SynchronizationContext" />
+    <related type="Article" href="http://msdn.microsoft.com/library/958d6617-5e70-4b36-b5db-63c16dc35e43">Multithreaded Programming with the Event-based Asynchronous Pattern</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -87,6 +88,7 @@
         <altmember cref="T:System.ComponentModel.AsyncOperation" />
         <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
         <altmember cref="T:System.Threading.SynchronizationContext" />
+        <related type="Article" href="http://msdn.microsoft.com/library/958d6617-5e70-4b36-b5db-63c16dc35e43">Multithreaded Programming with the Event-based Asynchronous Pattern</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -130,6 +132,7 @@
         <altmember cref="T:System.ComponentModel.AsyncOperation" />
         <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
         <altmember cref="T:System.Threading.SynchronizationContext" />
+        <related type="Article" href="http://msdn.microsoft.com/library/958d6617-5e70-4b36-b5db-63c16dc35e43">Multithreaded Programming with the Event-based Asynchronous Pattern</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -174,6 +177,7 @@
         <altmember cref="T:System.ComponentModel.AsyncOperation" />
         <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
         <altmember cref="T:System.Threading.SynchronizationContext" />
+        <related type="Article" href="http://msdn.microsoft.com/library/958d6617-5e70-4b36-b5db-63c16dc35e43">Multithreaded Programming with the Event-based Asynchronous Pattern</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -219,6 +223,7 @@
         <altmember cref="T:System.ComponentModel.AsyncOperation" />
         <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
         <altmember cref="T:System.Threading.SynchronizationContext" />
+        <related type="Article" href="http://msdn.microsoft.com/library/958d6617-5e70-4b36-b5db-63c16dc35e43">Multithreaded Programming with the Event-based Asynchronous Pattern</related>
       </Docs>
     </Member>
   </Members>

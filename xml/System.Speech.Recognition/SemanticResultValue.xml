@@ -1,4 +1,4 @@
-﻿<Type Name="SemanticResultValue" FullName="System.Speech.Recognition.SemanticResultValue">
+<Type Name="SemanticResultValue" FullName="System.Speech.Recognition.SemanticResultValue">
   <TypeSignature Language="C#" Value="public class SemanticResultValue" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SemanticResultValue extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SemanticResultValue" />
@@ -76,11 +76,7 @@ Choices fgOrbgChoice = new Choices();
 fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("background"));  
 fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("foreground"));  
 SemanticResultKey fgOrbgChoiceKey = new SemanticResultKey("BgOrFgText", fgOrbgChoice);  
-```  
-  
- For more information about using <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey> objects, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c) and [Using a SemanticResultKey to Extract a SemanticResultValue](http://msdn.microsoft.com/library/198e29b8-845f-4cec-a25e-f55c0eaf46aa) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/library/610116c7-3817-40ff-857b-5d41e8511043).  
-  
-   
+```
   
 ## Examples  
  The following example returns a <xref:System.Speech.Recognition.Grammar> that recognizes the command "Set/Change/Alter Foreground/Background … [color list]".  <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey> instances (in conjunction with <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects) are used to define semantics that can be parsed on recognition.  The parsed semantics will determine which color was requested and whether the foreground or background is to be modified.  
@@ -137,6 +133,7 @@ private Grammar FgBgColorGrammar()
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361587(v%3doffice.14)">Using a SemanticResultKey to Extract a SemanticResultValue</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="MonthCalendar" FullName="System.Windows.Forms.MonthCalendar">
+<Type Name="MonthCalendar" FullName="System.Windows.Forms.MonthCalendar">
   <TypeSignature Language="C#" Value="public class MonthCalendar : System.Windows.Forms.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MonthCalendar extends System.Windows.Forms.Control" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MonthCalendar" />
@@ -78,6 +78,10 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Forms.DateTimePicker" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d09b95c9-e108-4608-9b31-b9100c0677bf">How to: Change the Windows Forms MonthCalendar Control's Appearance</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/d197caa2-38a5-4cb4-acc3-562130c2ace3">How to: Display More than One Month in the Windows Forms MonthCalendar Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/8b20db5b-8118-4825-90e8-2c45c186ac7d">How to: Display Specific Days in Bold with the Windows Forms MonthCalendar Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/95d9ab95-b0f8-4c19-9f63-b5cd4593a5d0">How to: Select a Range of Dates in the Windows Forms MonthCalendar Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

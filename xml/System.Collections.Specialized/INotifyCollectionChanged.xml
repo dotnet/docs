@@ -1,4 +1,4 @@
-﻿<Type Name="INotifyCollectionChanged" FullName="System.Collections.Specialized.INotifyCollectionChanged">
+<Type Name="INotifyCollectionChanged" FullName="System.Collections.Specialized.INotifyCollectionChanged">
   <TypeSignature Language="C#" Value="public interface INotifyCollectionChanged" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INotifyCollectionChanged" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.INotifyCollectionChanged" />
@@ -49,6 +49,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://www.codeproject.com/Articles/1004644/ObservableCollection-Simply-Explained">ObservableCollection Simply Explained</related>
   </Docs>
   <Members>
     <Member MemberName="CollectionChanged">

@@ -1,4 +1,4 @@
-﻿<Type Name="Matrix" FullName="System.Drawing.Drawing2D.Matrix">
+<Type Name="Matrix" FullName="System.Drawing.Drawing2D.Matrix">
   <TypeSignature Language="C#" Value="public sealed class Matrix : MarshalByRefObject, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Matrix extends System.MarshalByRefObject implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.Matrix" />
@@ -62,6 +62,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/9fef7451-bddf-4c68-9350-400d1f1f25a3">Coordinate Systems and Transformations</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

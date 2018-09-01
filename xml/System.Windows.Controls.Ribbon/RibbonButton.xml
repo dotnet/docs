@@ -1,4 +1,4 @@
-﻿<Type Name="RibbonButton" FullName="System.Windows.Controls.Ribbon.RibbonButton">
+<Type Name="RibbonButton" FullName="System.Windows.Controls.Ribbon.RibbonButton">
   <TypeSignature Language="C#" Value="public class RibbonButton : System.Windows.Controls.Button" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonButton extends System.Windows.Controls.Button" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonButton" />
@@ -152,6 +152,7 @@ Ribbon button controls with highlight
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94">Ribbon Layout and Resizing</related>
       </Docs>
     </Member>
     <Member MemberName="ControlSizeDefinitionProperty">
@@ -609,6 +610,7 @@ Ribbon button controls
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94">Ribbon Layout and Resizing</related>
       </Docs>
     </Member>
     <Member MemberName="LargeImageSourceProperty">
@@ -1334,6 +1336,7 @@ Ribbon button controls
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94">Ribbon Layout and Resizing</related>
       </Docs>
     </Member>
     <Member MemberName="SmallImageSourceProperty">

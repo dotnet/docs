@@ -1,4 +1,4 @@
-﻿<Type Name="Switch" FullName="System.Diagnostics.Switch">
+<Type Name="Switch" FullName="System.Diagnostics.Switch">
   <TypeSignature Language="C#" Value="public abstract class Switch" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Switch extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Switch" />
@@ -91,6 +91,7 @@
     <altmember cref="T:System.Diagnostics.TraceSwitch" />
     <altmember cref="T:System.Diagnostics.Debug" />
     <altmember cref="T:System.Diagnostics.Trace" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8ab913aa-f400-4406-9436-f45bc6e54fbe">Trace Switches</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

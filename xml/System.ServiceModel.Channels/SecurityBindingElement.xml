@@ -1,4 +1,4 @@
-﻿<Type Name="SecurityBindingElement" FullName="System.ServiceModel.Channels.SecurityBindingElement">
+<Type Name="SecurityBindingElement" FullName="System.ServiceModel.Channels.SecurityBindingElement">
   <TypeSignature Language="C#" Value="public abstract class SecurityBindingElement : System.ServiceModel.Channels.BindingElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SecurityBindingElement extends System.ServiceModel.Channels.BindingElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.SecurityBindingElement" />
@@ -52,6 +52,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/12300bf4-c730-4405-9f65-d286f68b5a43">SecurityBindingElement Authentication Modes</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/203a9f9e-3a73-427c-87aa-721c56265b29">How To: Create a Custom Binding Using the SecurityBindingElement</related>
   </Docs>
   <Members>
     <Member MemberName="AllowInsecureTransport">

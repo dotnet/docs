@@ -1,4 +1,4 @@
-﻿<Type Name="Parallel" FullName="System.Threading.Tasks.Parallel">
+<Type Name="Parallel" FullName="System.Threading.Tasks.Parallel">
   <TypeSignature Language="C#" Value="public static class Parallel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Parallel extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Parallel" />
@@ -42,6 +42,8 @@
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Threading.Tasks.Parallel" /> are thread-safe and may be used concurrently from multiple threads.</threadsafe>
+    <related type="Article" href="~/docs/standard/parallel-programming/data-parallelism-task-parallel-library.md">Data Parallelism (Task Parallel Library)</related>
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364">Samples for Parallel Programming with the .NET Framework</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="For">
@@ -125,6 +127,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <altmember cref="T:System.Threading.Tasks.ParallelLoopState" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -183,6 +186,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -241,6 +245,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -291,6 +296,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -348,6 +354,7 @@
  The <paramref name="parallelOptions" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -413,6 +420,7 @@
  The <paramref name="parallelOptions" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -478,6 +486,7 @@
  The <paramref name="parallelOptions" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -543,6 +552,7 @@
  The <paramref name="parallelOptions" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For&lt;TLocal&gt;">
@@ -615,6 +625,7 @@
   
  The <paramref name="localFinally" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For&lt;TLocal&gt;">
@@ -687,6 +698,7 @@
   
  The <paramref name="localFinally" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For&lt;TLocal&gt;">
@@ -772,6 +784,7 @@
         <exception cref="T:System.OperationCanceledException">The <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> argument is canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For&lt;TLocal&gt;">
@@ -849,6 +862,7 @@
         <exception cref="T:System.OperationCanceledException">The <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> argument is canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ForEach&lt;TSource&gt;">
@@ -921,6 +935,7 @@
  -or-  
   
  Any methods in the source orderable partitioner return <see langword="null" />.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -983,6 +998,7 @@
  -or-  
   
  The <see cref="M:System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)" /> method in the <paramref name="source" /> partitioner does not return the correct number of partitions.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1053,6 +1069,7 @@
  -or-  
   
  The <see cref="M:System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)" /> method in the <paramref name="source" /> partitioner does not return the correct number of partitions.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1107,6 +1124,7 @@
   
  The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1161,6 +1179,7 @@
   
  The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1223,6 +1242,7 @@
   
  The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1292,6 +1312,7 @@
  -or-  
   
  The exception that is thrown when any methods in the <paramref name="source" /> orderable partitioner return <see langword="null" />.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1357,6 +1378,7 @@
  -or-  
   
  The exception that is thrown when any methods in the <paramref name="source" /> partitioner return <see langword="null" />.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1422,6 +1444,7 @@
  -or-  
   
  The exception that is thrown when any methods in the <paramref name="source" /> partitioner return <see langword="null" />.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1483,6 +1506,7 @@
  The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1544,6 +1568,7 @@
  The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1605,6 +1630,7 @@
  The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
@@ -1678,6 +1704,7 @@
  The <paramref name="localFinally" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions" /> property in the <paramref name="source" /><see cref="T:System.Collections.Concurrent.Partitioner" /> returns <see langword="false" /> or the partitioner returns <see langword="null" /> partitions.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
@@ -1751,6 +1778,7 @@
  The <paramref name="localFinally" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions" /> property in the <paramref name="source" /><see cref="T:System.Collections.Concurrent.Partitioner" /> returns <see langword="false" /> or the partitioner returns <see langword="null" /> partitions.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
@@ -1823,6 +1851,7 @@
   
  The <paramref name="localFinally" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
@@ -1903,6 +1932,7 @@
   
  The <paramref name="localFinally" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
@@ -1979,6 +2009,7 @@
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.OperationCanceledException">The <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> argument is canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
@@ -2059,6 +2090,7 @@
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.OperationCanceledException">The <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> argument is canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
@@ -2138,6 +2170,7 @@
         <exception cref="T:System.OperationCanceledException">The <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> argument is canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
@@ -2217,6 +2250,7 @@
         <exception cref="T:System.OperationCanceledException">The <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> argument is canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Invoke">

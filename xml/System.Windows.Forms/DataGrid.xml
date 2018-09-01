@@ -1,4 +1,4 @@
-﻿<Type Name="DataGrid" FullName="System.Windows.Forms.DataGrid">
+<Type Name="DataGrid" FullName="System.Windows.Forms.DataGrid">
   <TypeSignature Language="C#" Value="public class DataGrid : System.Windows.Forms.Control, System.ComponentModel.ISupportInitialize, System.Windows.Forms.IDataGridEditingService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGrid extends System.Windows.Forms.Control implements class System.ComponentModel.ISupportInitialize, class System.Windows.Forms.IDataGridEditingService" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGrid" />
@@ -163,6 +163,7 @@
     <altmember cref="T:System.Data.DataView" />
     <altmember cref="T:System.Data.DataTable" />
     <altmember cref="T:System.Data.DataRow" />
+    <related type="Article" href="~/docs/framework/data/adonet/index.md">ADO.NET</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="DataServiceCollection&lt;T&gt;" FullName="System.Data.Services.Client.DataServiceCollection&lt;T&gt;">
+<Type Name="DataServiceCollection&lt;T&gt;" FullName="System.Data.Services.Client.DataServiceCollection&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class DataServiceCollection&lt;T&gt; : System.Collections.ObjectModel.ObservableCollection&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataServiceCollection`1&lt;T&gt; extends System.Collections.ObjectModel.ObservableCollection`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceCollection`1" />
@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/b32e1d49-c214-4cb1-867e-88fbb3d08c8d">Binding Data to Controls (WCF Data Services)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -412,6 +413,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/32f9b588-c832-44c4-a7e0-fcce635df59a">Loading Deferred Content (WCF Data Services)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b32e1d49-c214-4cb1-867e-88fbb3d08c8d">Binding Data to Controls (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="Detach">

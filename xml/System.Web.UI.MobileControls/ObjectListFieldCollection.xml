@@ -1,4 +1,4 @@
-﻿<Type Name="ObjectListFieldCollection" FullName="System.Web.UI.MobileControls.ObjectListFieldCollection">
+<Type Name="ObjectListFieldCollection" FullName="System.Web.UI.MobileControls.ObjectListFieldCollection">
   <TypeSignature Language="C#" Value="public class ObjectListFieldCollection : System.Web.UI.MobileControls.ArrayListCollectionBase, System.Collections.ICollection, System.Web.UI.IStateManager, System.Web.UI.MobileControls.IObjectListFieldCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectListFieldCollection extends System.Web.UI.MobileControls.ArrayListCollectionBase implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Web.UI.IStateManager, class System.Web.UI.MobileControls.IObjectListFieldCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
@@ -47,6 +47,7 @@
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
     <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -85,6 +86,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Clear" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Remove(System.Web.UI.MobileControls.ObjectListField)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.RemoveAt(System.Int32)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -127,6 +129,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Clear" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Remove(System.Web.UI.MobileControls.ObjectListField)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.RemoveAt(System.Int32)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -162,6 +165,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetAll">
@@ -190,6 +194,7 @@
         <returns>The items in the specified collection as a single array of <see cref="T:System.Web.UI.MobileControls.ObjectListItem" /> objects.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="IndexOf">
@@ -241,6 +246,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.IndexOf(System.String)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.IndexOf(System.Web.UI.MobileControls.ObjectListField)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListItemCollection.IndexOf(System.Web.UI.MobileControls.ObjectListItem)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -283,6 +289,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.IndexOf(System.String)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.IndexOf(System.Web.UI.MobileControls.ObjectListField)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListItemCollection.IndexOf(System.Web.UI.MobileControls.ObjectListItem)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -337,6 +344,7 @@
         <value>A string representing the value of the field at the specified index.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -402,6 +410,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.Remove(System.String)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.Remove(System.String)" />
         <altmember cref="M:System.Web.UI.MobileControls.StyleSheet.Remove(System.String)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -430,6 +439,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommandCollection" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -481,6 +491,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -551,6 +562,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -582,6 +594,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -612,6 +625,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">

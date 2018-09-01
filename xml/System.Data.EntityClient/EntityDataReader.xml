@@ -1,4 +1,4 @@
-﻿<Type Name="EntityDataReader" FullName="System.Data.EntityClient.EntityDataReader">
+<Type Name="EntityDataReader" FullName="System.Data.EntityClient.EntityDataReader">
   <TypeSignature Language="C#" Value="public class EntityDataReader : System.Data.Common.DbDataReader, System.Data.IExtendedDataRecord" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityDataReader extends System.Data.Common.DbDataReader implements class System.Data.IDataRecord, class System.Data.IExtendedDataRecord" />
   <TypeSignature Language="DocId" Value="T:System.Data.EntityClient.EntityDataReader" />
@@ -206,6 +206,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5">Working with EntityClient</related>
       </Docs>
     </Member>
     <Member MemberName="GetBoolean">
@@ -396,6 +397,7 @@
         <summary>Returns nested readers as <see cref="T:System.Data.Common.DbDataReader" /> objects.</summary>
         <returns>The nested readers as <see cref="T:System.Data.Common.DbDataReader" /> objects.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5">Working with EntityClient</related>
       </Docs>
     </Member>
     <Member MemberName="GetDataRecord">
@@ -425,6 +427,7 @@
         <summary>Returns a nested <see cref="T:System.Data.Common.DbDataRecord" />.</summary>
         <returns>The nested data record.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5">Working with EntityClient</related>
       </Docs>
     </Member>
     <Member MemberName="GetDataTypeName">
@@ -454,6 +457,7 @@
         <summary>Gets the name of the data type of the specified column.</summary>
         <returns>The name of the data type.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5">Working with EntityClient</related>
       </Docs>
     </Member>
     <Member MemberName="GetDateTime">
@@ -509,6 +513,7 @@
         <summary>Returns a <see cref="T:System.Data.Common.DbDataReader" /> object for the requested column ordinal that can be overridden with a provider-specific implementation.</summary>
         <returns>A data reader.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5">Working with EntityClient</related>
       </Docs>
     </Member>
     <Member MemberName="GetDecimal">
@@ -1006,6 +1011,7 @@
         <summary>Gets the value of the specified column as an instance of <see cref="T:System.Object" />.</summary>
         <returns>The value of the specified column.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5">Working with EntityClient</related>
       </Docs>
     </Member>
     <Member MemberName="GetValues">
@@ -1035,6 +1041,7 @@
         <summary>Populates an array of objects with the column values of the current row.</summary>
         <returns>The number of instances of <see cref="T:System.Object" /> in the array.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5">Working with EntityClient</related>
       </Docs>
     </Member>
     <Member MemberName="HasRows">
@@ -1240,6 +1247,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5">Working with EntityClient</related>
       </Docs>
     </Member>
     <Member MemberName="RecordsAffected">

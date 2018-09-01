@@ -1,4 +1,4 @@
-﻿<Type Name="Style" FullName="System.Web.UI.WebControls.Style">
+<Type Name="Style" FullName="System.Web.UI.WebControls.Style">
   <TypeSignature Language="C#" Value="public class Style : System.ComponentModel.Component, System.Web.UI.IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Style extends System.ComponentModel.Component implements class System.Web.UI.IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Style" />
@@ -60,6 +60,9 @@
     <altmember cref="P:System.Web.UI.WebControls.Style.BorderColor" />
     <altmember cref="P:System.Web.UI.WebControls.Style.Height" />
     <altmember cref="P:System.Web.UI.WebControls.Style.Width" />
+    <related type="Article" href="http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Web Server Controls and Browser Capabilities</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

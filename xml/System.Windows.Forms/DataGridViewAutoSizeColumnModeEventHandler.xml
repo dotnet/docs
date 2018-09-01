@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewAutoSizeColumnModeEventHandler" FullName="System.Windows.Forms.DataGridViewAutoSizeColumnModeEventHandler">
+<Type Name="DataGridViewAutoSizeColumnModeEventHandler" FullName="System.Windows.Forms.DataGridViewAutoSizeColumnModeEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridViewAutoSizeColumnModeEventHandler(object sender, DataGridViewAutoSizeColumnModeEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewAutoSizeColumnModeEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAutoSizeColumnModeEventHandler" />
@@ -40,5 +40,6 @@
     <altmember cref="P:System.Windows.Forms.DataGridViewColumn.AutoSizeMode" />
     <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" />
     <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs" />
+    <related type="Article" href="http://msdn.microsoft.com/library/7532764d-e5c1-4943-a08b-6377a722d3b6">Resizing Columns and Rows in the Windows Forms DataGridView Control</related>
   </Docs>
 </Type>

@@ -1,4 +1,4 @@
-﻿<Type Name="TextBox" FullName="System.Web.UI.MobileControls.TextBox">
+<Type Name="TextBox" FullName="System.Web.UI.MobileControls.TextBox">
   <TypeSignature Language="C#" Value="public class TextBox : System.Web.UI.MobileControls.TextControl, System.Web.UI.IPostBackDataHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextBox extends System.Web.UI.MobileControls.TextControl implements class System.Web.UI.IPostBackDataHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.TextBox" />
@@ -78,6 +78,7 @@
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="P:System.Web.UI.MobileControls.MobileControl.CustomAttributes" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/f9wh6174(v=vs.85)">Introduction to the TextBox Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,6 +98,7 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.WebControls.TextBox" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/f9wh6174(v=vs.85)">Introduction to the TextBox Control</related>
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -165,6 +167,7 @@
         <value>The maximum number of characters allowed in the text box.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/f9wh6174(v=vs.85)">Introduction to the TextBox Control</related>
       </Docs>
     </Member>
     <Member MemberName="Numeric">
@@ -207,6 +210,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/f9wh6174(v=vs.85)">Introduction to the TextBox Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnTextChanged">
@@ -240,6 +244,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/f9wh6174(v=vs.85)">Introduction to the TextBox Control</related>
       </Docs>
     </Member>
     <Member MemberName="Password">
@@ -285,6 +290,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/f9wh6174(v=vs.85)">Introduction to the TextBox Control</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -314,6 +320,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/f9wh6174(v=vs.85)">Introduction to the TextBox Control</related>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -356,6 +363,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
         <altmember cref="T:System.Web.UI.MobileControls.ValidationSummary" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/f9wh6174(v=vs.85)">Introduction to the TextBox Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -393,6 +401,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/f9wh6174(v=vs.85)">Introduction to the TextBox Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -423,6 +432,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/f9wh6174(v=vs.85)">Introduction to the TextBox Control</related>
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -461,6 +471,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.TextBox.OnTextChanged(System.EventArgs)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/f9wh6174(v=vs.85)">Introduction to the TextBox Control</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -492,6 +503,7 @@
         <summary>Gets or sets the <see langword="Title" /> attribute on WML devices. The default value is an empty string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The <see langword="Title" /> attribute on WML devices.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/f9wh6174(v=vs.85)">Introduction to the TextBox Control</related>
       </Docs>
     </Member>
   </Members>

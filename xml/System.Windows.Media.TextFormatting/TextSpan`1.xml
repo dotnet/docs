@@ -1,4 +1,4 @@
-﻿<Type Name="TextSpan&lt;T&gt;" FullName="System.Windows.Media.TextFormatting.TextSpan&lt;T&gt;">
+<Type Name="TextSpan&lt;T&gt;" FullName="System.Windows.Media.TextFormatting.TextSpan&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class TextSpan&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextSpan`1&lt;T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextSpan`1" />
@@ -21,6 +21,7 @@
     <typeparam name="T">The object type to pair.</typeparam>
     <summary>Represents a generic class that allows a simple pairing of an object of type T and a specified run length.</summary>
     <remarks>To be added.</remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159965">Advanced Text Formatting Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

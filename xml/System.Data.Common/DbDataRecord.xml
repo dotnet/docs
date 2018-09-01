@@ -1,4 +1,4 @@
-﻿<Type Name="DbDataRecord" FullName="System.Data.Common.DbDataRecord">
+<Type Name="DbDataRecord" FullName="System.Data.Common.DbDataRecord">
   <TypeSignature Language="C#" Value="public abstract class DbDataRecord : System.ComponentModel.ICustomTypeDescriptor, System.Data.IDataRecord" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbDataRecord extends System.Object implements class System.ComponentModel.ICustomTypeDescriptor, class System.Data.IDataRecord" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbDataRecord" />
@@ -36,6 +36,7 @@
   <Docs>
     <summary>Implements <see cref="T:System.Data.IDataRecord" /> and <see cref="T:System.ComponentModel.ICustomTypeDescriptor" />, and provides data binding support for <see cref="T:System.Data.Common.DbEnumerator" />.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +66,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbDataRecord" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FieldCount">
@@ -103,6 +105,7 @@
         <value>The number of fields within the current record.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Not connected to a data source to read from.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetBoolean">
@@ -152,6 +155,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetByte">
@@ -200,6 +204,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -256,6 +261,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetChar">
@@ -304,6 +310,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -360,6 +367,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -401,6 +409,7 @@
         <summary>Not currently supported.</summary>
         <returns>Not currently supported.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDataTypeName">
@@ -442,6 +451,7 @@
         <summary>Returns the name of the back-end data type.</summary>
         <returns>The name of the back-end data type.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDateTime">
@@ -490,6 +500,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDbDataReader">
@@ -527,6 +538,7 @@
         <summary>Returns a <see cref="T:System.Data.Common.DbDataReader" /> object for the requested column ordinal that can be overridden with a provider-specific implementation.</summary>
         <returns>A <see cref="T:System.Data.Common.DbDataReader" /> object.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDecimal">
@@ -575,6 +587,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDouble">
@@ -623,6 +636,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetFieldType">
@@ -664,6 +678,7 @@
         <summary>Returns the <see cref="T:System.Type" /> that is the data type of the object.</summary>
         <returns>The <see cref="T:System.Type" /> that is the data type of the object.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetFloat">
@@ -712,6 +727,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetGuid">
@@ -754,6 +770,7 @@
         <returns>The GUID value of the specified field.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetInt16">
@@ -802,6 +819,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetInt32">
@@ -850,6 +868,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetInt64">
@@ -898,6 +917,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetName">
@@ -939,6 +959,7 @@
         <summary>Returns the name of the specified column.</summary>
         <returns>The name of the specified column.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetOrdinal">
@@ -980,6 +1001,7 @@
         <summary>Returns the column ordinal, given the name of the column.</summary>
         <returns>The column ordinal.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetString">
@@ -1028,6 +1050,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -1069,6 +1092,7 @@
         <summary>Returns the value at the specified column in its native format.</summary>
         <returns>The value to return.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetValues">
@@ -1117,6 +1141,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsDBNull">
@@ -1166,6 +1191,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -1176,6 +1202,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Indicates that value from a column in its native format. This property is read-only.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -1217,6 +1244,7 @@
         <summary>Indicates the value at the specified column in its native format given the column ordinal. This property is read-only.</summary>
         <value>The value at the specified column in its native format.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1258,6 +1286,7 @@
         <summary>Indicates the value at the specified column in its native format given the column name. This property is read-only.</summary>
         <value>The value at the specified column in its native format.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetAttributes">
@@ -1298,6 +1327,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetClassName">
@@ -1338,6 +1368,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetComponentName">
@@ -1378,6 +1409,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetConverter">
@@ -1418,6 +1450,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent">
@@ -1458,6 +1491,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty">
@@ -1498,6 +1532,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEditor">
@@ -1541,6 +1576,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEvents">
@@ -1581,6 +1617,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEvents">
@@ -1624,6 +1661,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetProperties">
@@ -1664,6 +1702,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetProperties">
@@ -1707,6 +1746,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner">
@@ -1750,6 +1790,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

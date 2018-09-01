@@ -1,4 +1,4 @@
-﻿<Type Name="SiteMapHierarchicalDataSourceView" FullName="System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView">
+<Type Name="SiteMapHierarchicalDataSourceView" FullName="System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView">
   <TypeSignature Language="C#" Value="public class SiteMapHierarchicalDataSourceView : System.Web.UI.HierarchicalDataSourceView" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SiteMapHierarchicalDataSourceView extends System.Web.UI.HierarchicalDataSourceView" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView" />
@@ -30,6 +30,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -68,6 +70,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -102,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -135,6 +139,7 @@
         <altmember cref="T:System.Web.UI.WebControls.SiteMapDataSourceView" />
         <altmember cref="T:System.Web.SiteMapNode" />
         <altmember cref="T:System.Web.SiteMapNodeCollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control Overview</related>
       </Docs>
     </Member>
   </Members>

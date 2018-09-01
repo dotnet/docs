@@ -1,4 +1,4 @@
-﻿<Type Name="WebRequest" FullName="System.Net.WebRequest">
+<Type Name="WebRequest" FullName="System.Net.WebRequest">
   <TypeSignature Language="C#" Value="public abstract class WebRequest : MarshalByRefObject, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit WebRequest extends System.MarshalByRefObject implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebRequest" />
@@ -72,6 +72,8 @@
       <para>When you inherit from <see cref="T:System.Net.WebRequest" />, you must override the following members: <see cref="P:System.Net.WebRequest.Method" />, <see cref="P:System.Net.WebRequest.RequestUri" />, <see cref="P:System.Net.WebRequest.Headers" />, <see cref="P:System.Net.WebRequest.ContentLength" />, <see cref="P:System.Net.WebRequest.ContentType" />, <see cref="P:System.Net.WebRequest.Credentials" />, <see cref="P:System.Net.WebRequest.PreAuthenticate" />, <see cref="M:System.Net.WebRequest.GetRequestStream" />, <see cref="M:System.Net.WebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />, <see cref="M:System.Net.WebRequest.EndGetRequestStream(System.IAsyncResult)" />, <see cref="M:System.Net.WebRequest.GetResponse" />, <see cref="M:System.Net.WebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />, and <see cref="M:System.Net.WebRequest.EndGetResponse(System.IAsyncResult)" />. In addition, you must provide an implementation of the <see cref="T:System.Net.IWebRequestCreate" /> interface, which defines the <see cref="M:System.Net.IWebRequestCreate.Create(System.Uri)" /> method used when you call <see cref="M:System.Net.WebRequest.Create(System.Uri)" />. You must register the class that implements the <see cref="T:System.Net.IWebRequestCreate" /> interface, using the <see cref="M:System.Net.WebRequest.RegisterPrefix(System.String,System.Net.IWebRequestCreate)" /> method or the configuration file.</para>
     </block>
     <altmember cref="T:System.Net.HttpWebRequest" />
+    <related type="Article" href="~/docs/framework/network-programming/requesting-data.md">Requesting Data</related>
+    <related type="Article" href="~/docs/framework/network-programming/programming-pluggable-protocols.md">Programming Pluggable Protocols</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -189,6 +191,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the constructor, when the constructor is not overridden in a descendant class.</exception>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName="Abort">
@@ -363,6 +366,7 @@
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
         <altmember cref="M:System.Net.WebRequest.EndGetRequestStream(System.IAsyncResult)" />
+        <related type="Article" href="~/docs/framework/network-programming/making-asynchronous-requests.md">Making Asynchronous Requests</related>
       </Docs>
     </Member>
     <Member MemberName="BeginGetResponse">
@@ -434,6 +438,7 @@
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
         <altmember cref="M:System.Net.WebRequest.EndGetResponse(System.IAsyncResult)" />
         <altmember cref="M:System.Net.WebRequest.GetResponse" />
+        <related type="Article" href="~/docs/framework/network-programming/making-asynchronous-requests.md">Making Asynchronous Requests</related>
       </Docs>
     </Member>
     <Member MemberName="CachePolicy">
@@ -547,6 +552,7 @@
         </block>
         <altmember cref="P:System.Net.Configuration.ConnectionManagementElement.MaxConnection" />
         <altmember cref="P:System.Net.HttpWebRequest.ConnectionGroupName" />
+        <related type="Article" href="~/docs/framework/network-programming/connection-grouping.md">Connection Grouping</related>
       </Docs>
     </Member>
     <Member MemberName="ContentLength">
@@ -764,6 +770,7 @@
           </block>  
   
  The URI specified in <paramref name="requestUriString" /> is not a valid URI.</exception>
+        <related type="Article" href="~/docs/framework/network-programming/programming-pluggable-protocols.md">Programming Pluggable Protocols</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -1288,6 +1295,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
         <altmember cref="M:System.Net.WebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/network-programming/making-asynchronous-requests.md">Making Asynchronous Requests</related>
       </Docs>
     </Member>
     <Member MemberName="EndGetResponse">
@@ -1353,6 +1361,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
         <altmember cref="M:System.Net.WebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/network-programming/making-asynchronous-requests.md">Making Asynchronous Requests</related>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -1456,6 +1465,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
         <altmember cref="M:System.Net.WebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/network-programming/using-streams-on-the-network.md">Using Streams on the Network</related>
       </Docs>
     </Member>
     <Member MemberName="GetRequestStreamAsync">

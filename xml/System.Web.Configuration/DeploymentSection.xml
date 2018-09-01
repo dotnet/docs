@@ -1,4 +1,4 @@
-﻿<Type Name="DeploymentSection" FullName="System.Web.Configuration.DeploymentSection">
+<Type Name="DeploymentSection" FullName="System.Web.Configuration.DeploymentSection">
   <TypeSignature Language="C#" Value="public sealed class DeploymentSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeploymentSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.DeploymentSection" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Defines a configuration setting that is typically used on a production server to override application-level settings that are appropriate only on development computers.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/a202175f-a85a-44fd-bc35-c8b5c82f31c3">ASP.NET Configuration Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

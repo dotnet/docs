@@ -1,4 +1,4 @@
-﻿<Type Name="EntityTemplateFactory" FullName="System.Web.DynamicData.EntityTemplateFactory">
+<Type Name="EntityTemplateFactory" FullName="System.Web.DynamicData.EntityTemplateFactory">
   <TypeSignature Language="C#" Value="public class EntityTemplateFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityTemplateFactory extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.EntityTemplateFactory" />
@@ -32,6 +32,7 @@
     </remarks>
     <altmember cref="T:System.Web.DynamicData.FilterFactory" />
     <altmember cref="T:System.Web.DynamicData.FieldTemplateFactory" />
+    <related type="Article" href="http://msdn.microsoft.com/library/03d33a22-d3c0-41df-a717-82ce86329a08">Walkthrough: Customizing Table layout using Entity Templates</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

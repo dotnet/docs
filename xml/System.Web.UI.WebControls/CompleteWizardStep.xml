@@ -1,4 +1,4 @@
-﻿<Type Name="CompleteWizardStep" FullName="System.Web.UI.WebControls.CompleteWizardStep">
+<Type Name="CompleteWizardStep" FullName="System.Web.UI.WebControls.CompleteWizardStep">
   <TypeSignature Language="C#" Value="public sealed class CompleteWizardStep : System.Web.UI.WebControls.TemplatedWizardStep" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CompleteWizardStep extends System.Web.UI.WebControls.TemplatedWizardStep" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CompleteWizardStep" />
@@ -32,6 +32,7 @@
     <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
     <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CompleteStep" />
     <altmember cref="T:System.Web.UI.WebControls.CreateUserWizardStep" />
+    <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +56,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CompleteWizardStep" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StepType">
@@ -107,6 +109,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Web.UI.WebControls.CompleteWizardStep.StepType" /> property.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -141,6 +144,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control Overview</related>
       </Docs>
     </Member>
   </Members>

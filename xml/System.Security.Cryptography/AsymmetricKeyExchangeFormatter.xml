@@ -1,4 +1,4 @@
-﻿<Type Name="AsymmetricKeyExchangeFormatter" FullName="System.Security.Cryptography.AsymmetricKeyExchangeFormatter">
+<Type Name="AsymmetricKeyExchangeFormatter" FullName="System.Security.Cryptography.AsymmetricKeyExchangeFormatter">
   <TypeSignature Language="C#" Value="public abstract class AsymmetricKeyExchangeFormatter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AsymmetricKeyExchangeFormatter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.AsymmetricKeyExchangeFormatter" />
@@ -45,6 +45,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,6 +84,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateKeyExchange">
@@ -137,6 +139,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="CreateKeyExchange">
@@ -183,6 +186,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -216,6 +220,7 @@
         <summary>When overridden in a derived class, gets the parameters for the asymmetric key exchange.</summary>
         <value>A string in XML format containing the parameters of the asymmetric key exchange operation.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="SetKey">
@@ -259,6 +264,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
   </Members>

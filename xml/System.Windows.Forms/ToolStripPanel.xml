@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripPanel" FullName="System.Windows.Forms.ToolStripPanel">
+<Type Name="ToolStripPanel" FullName="System.Windows.Forms.ToolStripPanel">
   <TypeSignature Language="C#" Value="public class ToolStripPanel : System.Windows.Forms.ContainerControl, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripPanel extends System.Windows.Forms.ContainerControl implements class System.ComponentModel.IComponent, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripPanel" />
@@ -62,6 +62,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/aa47af39-1e71-40ee-bb75-2d2478f81bd0">ToolStripPanel Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/4eadda6d-e3b8-4151-aaf2-a8d564fbe6b3">How to: Join ToolStripPanels</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/d6b884fc-0846-465f-83c3-5dc0fe93b00f">How to: Use ToolStripPanels for MDI</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -491,7 +494,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
       </Docs>
     </Member>
@@ -582,6 +585,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/4eadda6d-e3b8-4151-aaf2-a8d564fbe6b3">How to: Join ToolStripPanels</related>
       </Docs>
     </Member>
     <Member MemberName="Join">

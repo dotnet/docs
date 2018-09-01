@@ -1,4 +1,4 @@
-﻿<Type Name="XmlDeclaration" FullName="System.Xml.XmlDeclaration">
+<Type Name="XmlDeclaration" FullName="System.Xml.XmlDeclaration">
   <TypeSignature Language="C#" Value="public class XmlDeclaration : System.Xml.XmlLinkedNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDeclaration extends System.Xml.XmlLinkedNode" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlDeclaration" />
@@ -40,6 +40,7 @@
  ]]></format>
     </remarks>
     <altmember cref="M:System.Xml.XmlDocument.CreateXmlDeclaration(System.String,System.String,System.String)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54">XML Document Object Model (DOM)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

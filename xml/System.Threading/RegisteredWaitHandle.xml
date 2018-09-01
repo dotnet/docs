@@ -1,4 +1,4 @@
-﻿<Type Name="RegisteredWaitHandle" FullName="System.Threading.RegisteredWaitHandle">
+<Type Name="RegisteredWaitHandle" FullName="System.Threading.RegisteredWaitHandle">
   <TypeSignature Language="C#" Value="public sealed class RegisteredWaitHandle : MarshalByRefObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegisteredWaitHandle extends System.MarshalByRefObject" />
   <TypeSignature Language="DocId" Value="T:System.Threading.RegisteredWaitHandle" />
@@ -55,6 +55,7 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <related type="Article" href="~/docs/standard/threading/the-managed-thread-pool.md">The managed thread pool</related>
   </Docs>
   <Members>
     <Member MemberName="Finalize">
@@ -147,6 +148,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/threading/the-managed-thread-pool.md">The managed thread pool</related>
       </Docs>
     </Member>
   </Members>

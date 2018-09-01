@@ -1,4 +1,4 @@
-﻿<Type Name="IXamlIndexingReader" FullName="System.Xaml.IXamlIndexingReader">
+<Type Name="IXamlIndexingReader" FullName="System.Xaml.IXamlIndexingReader">
   <TypeSignature Language="C#" Value="public interface IXamlIndexingReader" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXamlIndexingReader" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.IXamlIndexingReader" />
@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/7c11abec-1075-474c-9d9b-778e5dab21c3">Understanding XAML Node Stream Structures and Concepts</related>
   </Docs>
   <Members>
     <Member MemberName="Count">

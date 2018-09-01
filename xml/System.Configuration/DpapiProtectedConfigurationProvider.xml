@@ -1,4 +1,4 @@
-﻿<Type Name="DpapiProtectedConfigurationProvider" FullName="System.Configuration.DpapiProtectedConfigurationProvider">
+<Type Name="DpapiProtectedConfigurationProvider" FullName="System.Configuration.DpapiProtectedConfigurationProvider">
   <TypeSignature Language="C#" Value="public sealed class DpapiProtectedConfigurationProvider : System.Configuration.ProtectedConfigurationProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DpapiProtectedConfigurationProvider extends System.Configuration.ProtectedConfigurationProvider" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.DpapiProtectedConfigurationProvider" />
@@ -77,6 +77,8 @@
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />[FullTrust](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3)</permission>
     <altmember cref="T:System.Configuration.RsaProtectedConfigurationProvider" />
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/3a62a79c-b70f-4a9d-8f33-817fb9d1623e">Specifying a Protected Configuration Provider</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripButton" FullName="System.Windows.Forms.ToolStripButton">
+<Type Name="ToolStripButton" FullName="System.Windows.Forms.ToolStripButton">
   <TypeSignature Language="C#" Value="public class ToolStripButton : System.Windows.Forms.ToolStripItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripButton extends System.Windows.Forms.ToolStripItem" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripButton" />
@@ -43,6 +43,8 @@
     </remarks>
     <altmember cref="T:System.Windows.Forms.ToolStrip" />
     <altmember cref="T:System.Windows.Forms.MenuStrip" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e361bf98-eed8-4ed3-9dfb-5a2e865e3ce6">MenuStrip Control (Windows Forms)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/e5ef455a-e049-429c-8005-30c93132fb79">ToolStrip Control (Windows Forms)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="ProcessModuleCollection" FullName="System.Diagnostics.ProcessModuleCollection">
+<Type Name="ProcessModuleCollection" FullName="System.Diagnostics.ProcessModuleCollection">
   <TypeSignature Language="C#" Value="public class ProcessModuleCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProcessModuleCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ProcessModuleCollection" />
@@ -26,7 +26,8 @@
     <BaseTypeName>System.Object</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-4.5">System.Collections.ReadOnlyCollectionBase</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Provides a strongly typed collection of <see cref="T:System.Diagnostics.ProcessModule" /> objects.</summary>
     <remarks>

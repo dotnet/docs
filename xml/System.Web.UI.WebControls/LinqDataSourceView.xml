@@ -14,7 +14,8 @@
     <BaseTypeName>System.Web.UI.WebControls.ContextDataSourceView</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-3.5">System.Web.UI.DataSourceView</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Supports the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control and provides an interface for data-bound controls to perform LINQ data operations.</summary>
     <remarks>
@@ -53,7 +54,7 @@
   
  You can sort the data that you retrieve with the <xref:System.Web.UI.WebControls.LinqDataSource> control by adding an `OrderBy` clause. You can provide a sort expression for the <xref:System.Web.UI.WebControls.LinqDataSourceView> instance by setting the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property of the <xref:System.Web.UI.DataSourceSelectArguments> object that is passed to the <xref:System.Web.UI.WebControls.LinqDataSourceView.Select%2A> method. The syntax for the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property is the same as the syntax for a <xref:System.Data.DataView.Sort%2A?displayProperty=nameWithType> property.  
   
- The <xref:System.Web.UI.WebControls.LinqDataSourceView> control implements the <xref:System.Web.UI.IStateManager> interface and uses view state to track its state across page requests. Implementations of the <xref:System.Web.UI.WebControls.QueryableDataSourceView.IsTrackingViewState%2A> property and the <xref:System.Web.UI.WebControls.QueryableDataSourceView.LoadViewState%2A>, <xref:System.Web.UI.WebControls.QueryableDataSourceView.SaveViewState%2A>, and <xref:System.Web.UI.WebControls.QueryableDataSourceView.TrackViewState%2A> methods are provided to enable view-state tracking for the control. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ The <xref:System.Web.UI.WebControls.LinqDataSourceView> control implements the <xref:System.Web.UI.IStateManager> interface and uses view state to track its state across page requests. Implementations of the <xref:System.Web.UI.WebControls.QueryableDataSourceView.IsTrackingViewState%2A> property and the <xref:System.Web.UI.WebControls.QueryableDataSourceView.LoadViewState%2A>, <xref:System.Web.UI.WebControls.QueryableDataSourceView.SaveViewState%2A>, and <xref:System.Web.UI.WebControls.QueryableDataSourceView.TrackViewState%2A> methods are provided to enable view-state tracking for the control. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
  ]]></format>
     </remarks>

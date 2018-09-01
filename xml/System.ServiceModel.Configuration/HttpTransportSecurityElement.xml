@@ -1,4 +1,4 @@
-﻿<Type Name="HttpTransportSecurityElement" FullName="System.ServiceModel.Configuration.HttpTransportSecurityElement">
+<Type Name="HttpTransportSecurityElement" FullName="System.ServiceModel.Configuration.HttpTransportSecurityElement">
   <TypeSignature Language="C#" Value="public sealed class HttpTransportSecurityElement : System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpTransportSecurityElement extends System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.HttpTransportSecurityElement" />
@@ -18,6 +18,8 @@
   <Docs>
     <summary>Represents a configuration element that controls authentication parameters for the HTTP transport. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/8b30c065-b32a-4fa3-8eb4-5537a9c6b897">httpTransport element</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/088a7bce-6bb2-4839-ad74-f68d4b1aa0f9">HttpTransportBindingElement</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="FormParameter" FullName="System.Web.UI.WebControls.FormParameter">
+<Type Name="FormParameter" FullName="System.Web.UI.WebControls.FormParameter">
   <TypeSignature Language="C#" Value="public class FormParameter : System.Web.UI.WebControls.Parameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormParameter extends System.Web.UI.WebControls.Parameter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormParameter" />
@@ -50,6 +50,7 @@
     <altmember cref="T:System.Web.UI.WebControls.ProfileParameter" />
     <altmember cref="T:System.Web.UI.WebControls.QueryStringParameter" />
     <altmember cref="T:System.Web.UI.WebControls.SessionParameter" />
+    <related type="Article" href="https://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f(v=vs.100)">Using Parameters with Data Source Controls</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -59,6 +60,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FormParameter" /> class.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f(v=vs.100)">Using Parameters with Data Source Controls</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -99,6 +101,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f(v=vs.100)">Using Parameters with Data Source Controls</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -129,6 +132,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.FormParameter.Clone" />
+        <related type="Article" href="https://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f(v=vs.100)">Using Parameters with Data Source Controls</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -172,6 +176,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
         <altmember cref="P:System.Web.UI.WebControls.FormParameter.FormField" />
+        <related type="Article" href="https://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f(v=vs.100)">Using Parameters with Data Source Controls</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -242,6 +247,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
         <altmember cref="P:System.Web.UI.WebControls.FormParameter.FormField" />
+        <related type="Article" href="https://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f(v=vs.100)">Using Parameters with Data Source Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -273,6 +279,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.FormParameter.#ctor(System.Web.UI.WebControls.FormParameter)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f(v=vs.100)">Using Parameters with Data Source Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
@@ -310,6 +317,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.FormParameter.FormField" />
+        <related type="Article" href="https://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f(v=vs.100)">Using Parameters with Data Source Controls</related>
       </Docs>
     </Member>
     <Member MemberName="FormField">
@@ -366,6 +374,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Parameter.DefaultValue" />
         <altmember cref="M:System.Web.UI.WebControls.FormParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f(v=vs.100)">Using Parameters with Data Source Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ValidateInput">

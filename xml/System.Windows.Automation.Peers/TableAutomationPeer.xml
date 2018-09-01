@@ -1,4 +1,4 @@
-﻿<Type Name="TableAutomationPeer" FullName="System.Windows.Automation.Peers.TableAutomationPeer">
+<Type Name="TableAutomationPeer" FullName="System.Windows.Automation.Peers.TableAutomationPeer">
   <TypeSignature Language="C#" Value="public class TableAutomationPeer : System.Windows.Automation.Peers.TextElementAutomationPeer, System.Windows.Automation.Provider.IGridProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableAutomationPeer extends System.Windows.Automation.Peers.TextElementAutomationPeer implements class System.Windows.Automation.Provider.IGridProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.TableAutomationPeer" />
@@ -21,6 +21,7 @@
   <Docs>
     <summary>Exposes <see cref="T:System.Windows.Documents.Table" /> types to UI Automation.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,6 +44,7 @@
         <param name="owner">The <see cref="T:System.Windows.Documents.Table" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TableAutomationPeer" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.TableAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">
@@ -66,6 +68,7 @@
         <summary>Gets the control type for the <see cref="T:System.Windows.Documents.Table" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TableAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
         <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Table" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">
@@ -89,6 +92,7 @@
         <summary>Gets the name of the <see cref="T:System.Windows.Documents.Table" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TableAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
         <returns>A string that contains "Table".</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPattern">
@@ -114,6 +118,7 @@
         <summary>Gets the control pattern for the <see cref="T:System.Windows.Documents.Table" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TableAutomationPeer" />.</summary>
         <returns>If <paramref name="patternInterface" /> is <see cref="F:System.Windows.Automation.Peers.PatternInterface.Grid" />, this method returns a <see langword="this" /> pointer; otherwise, this method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsContentElementCore">
@@ -162,6 +167,7 @@
         <returns>
           <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IGridProvider.ColumnCount">

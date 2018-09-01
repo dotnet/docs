@@ -1,4 +1,4 @@
-﻿<Type Name="ISerializable" FullName="System.Runtime.Serialization.ISerializable">
+<Type Name="ISerializable" FullName="System.Runtime.Serialization.ISerializable">
   <TypeSignature Language="C#" Value="public interface ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ISerializable" />
@@ -69,6 +69,8 @@
       <para>Implement this interface to allow an object to take part in its own serialization and deserialization.</para>
     </block>
     <altmember cref="T:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector" />
+    <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
+    <related type="Article" href="~/docs/standard/serialization/custom-serialization.md">Custom serialization</related>
   </Docs>
   <Members>
     <Member MemberName="GetObjectData">
@@ -140,6 +142,7 @@
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
         <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <related type="Article" href="~/docs/standard/serialization/custom-serialization.md">Custom serialization</related>
       </Docs>
     </Member>
   </Members>

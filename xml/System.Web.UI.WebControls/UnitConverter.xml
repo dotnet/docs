@@ -1,4 +1,4 @@
-﻿<Type Name="UnitConverter" FullName="System.Web.UI.WebControls.UnitConverter">
+<Type Name="UnitConverter" FullName="System.Web.UI.WebControls.UnitConverter">
   <TypeSignature Language="C#" Value="public class UnitConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UnitConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.UnitConverter" />
@@ -34,6 +34,7 @@
     <altmember cref="T:System.Web.UI.WebControls.Unit" />
     <altmember cref="T:System.ComponentModel.TypeDescriptor" />
     <altmember cref="T:System.ComponentModel.TypeConverter" />
+    <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +59,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.UnitConverter" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -88,6 +90,7 @@
         <returns>
           <see langword="true" /> if the source type can be converted from; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -117,6 +120,7 @@
         <returns>
           <see langword="true" /> if the converter supports converting a <see cref="T:System.Web.UI.WebControls.Unit" /> object to the destination type; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -148,6 +152,7 @@
         <summary>Performs type conversion from the specified context, object, and argument list.</summary>
         <returns>The object resulting from conversion.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">

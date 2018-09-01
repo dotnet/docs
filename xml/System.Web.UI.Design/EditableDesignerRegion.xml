@@ -1,4 +1,4 @@
-﻿<Type Name="EditableDesignerRegion" FullName="System.Web.UI.Design.EditableDesignerRegion">
+<Type Name="EditableDesignerRegion" FullName="System.Web.UI.Design.EditableDesignerRegion">
   <TypeSignature Language="C#" Value="public class EditableDesignerRegion : System.Web.UI.Design.DesignerRegion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EditableDesignerRegion extends System.Web.UI.Design.DesignerRegion" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.EditableDesignerRegion" />
@@ -39,6 +39,8 @@
     </remarks>
     <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
     <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -48,6 +50,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -77,6 +81,8 @@
         <param name="name">The name of the region.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> class using the given owner and name.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -109,6 +115,8 @@
           <see langword="true" /> to have the region accept only Web server controls for content; otherwise, <see langword="false" />.</param>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> class using the given owner and name and the initial value of the <see cref="P:System.Web.UI.Design.EditableDesignerRegion.ServerControlsOnly" /> property.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Content">
@@ -131,6 +139,8 @@
         <summary>Gets or sets the HTML markup for the content of the region.</summary>
         <value>HTML markup representing the content of the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> object.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetChildViewRendering">
@@ -156,6 +166,8 @@
         <summary>Returns a <see cref="T:System.Web.UI.Design.ViewRendering" /> object containing the design-time HTML markup for the given control.</summary>
         <returns>A <see cref="T:System.Web.UI.Design.ViewRendering" /> object.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="ServerControlsOnly">
@@ -187,6 +199,8 @@
         <value>
           <see langword="true" /> if the region can contain only Web server controls; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="SupportsDataBinding">
@@ -218,6 +232,8 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> content supports binding to a data source; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

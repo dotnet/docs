@@ -1,4 +1,4 @@
-﻿<Type Name="OracleCommandBuilder" FullName="System.Data.OracleClient.OracleCommandBuilder">
+<Type Name="OracleCommandBuilder" FullName="System.Data.OracleClient.OracleCommandBuilder">
   <TypeSignature Language="C#" Value="public sealed class OracleCommandBuilder : System.Data.Common.DbCommandBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OracleCommandBuilder extends System.Data.Common.DbCommandBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleCommandBuilder" />
@@ -87,6 +87,7 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

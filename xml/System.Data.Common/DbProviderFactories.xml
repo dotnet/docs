@@ -1,4 +1,4 @@
-﻿<Type Name="DbProviderFactories" FullName="System.Data.Common.DbProviderFactories">
+<Type Name="DbProviderFactories" FullName="System.Data.Common.DbProviderFactories">
   <TypeSignature Language="C#" Value="public static class DbProviderFactories" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DbProviderFactories extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbProviderFactories" />
@@ -21,6 +21,8 @@
   <Docs>
     <summary>Represents a set of static methods for creating one or more instances of <see cref="T:System.Data.Common.DbProviderFactory" /> classes.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="GetFactory">
@@ -30,6 +32,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Returns an instance of a <see cref="T:System.Data.Common.DbProviderFactory" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetFactory">
@@ -97,6 +101,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetFactory">
@@ -134,6 +140,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetFactoryClasses">
@@ -193,6 +201,8 @@
   
  </description></item></list></returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetProviderInvariantNames">

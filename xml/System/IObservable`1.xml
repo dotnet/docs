@@ -1,4 +1,4 @@
-﻿<Type Name="IObservable&lt;T&gt;" FullName="System.IObservable&lt;T&gt;">
+<Type Name="IObservable&lt;T&gt;" FullName="System.IObservable&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IObservable&lt;out T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IObservable`1&lt;+ T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.IObservable`1" />
@@ -85,6 +85,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.IObserver`1" />
+    <related type="Article" href="http://msdn.microsoft.com/library/3680171f-f522-453c-aa4a-54f755a78f88">The Observer Design Pattern</related>
   </Docs>
   <Members>
     <Member MemberName="Subscribe">

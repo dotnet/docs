@@ -1,4 +1,4 @@
-﻿<Type Name="WizardStepBase" FullName="System.Web.UI.WebControls.WizardStepBase">
+<Type Name="WizardStepBase" FullName="System.Web.UI.WebControls.WizardStepBase">
   <TypeSignature Language="C#" Value="public abstract class WizardStepBase : System.Web.UI.WebControls.View" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WizardStepBase extends System.Web.UI.WebControls.View" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WizardStepBase" />
@@ -39,6 +39,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
     <altmember cref="T:System.Web.UI.WebControls.Wizard" />
+    <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +63,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="AllowReturn">
@@ -129,6 +131,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.Wizard" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -167,6 +170,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Control.EnableTheming" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -215,6 +219,8 @@
  -or-  
   
  The property was set to the same identifier as another step in the containing <see cref="P:System.Web.UI.WebControls.WizardStepBase.Wizard" /> control at design time.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7">Web Forms Control Identification</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -283,6 +289,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WizardStepBase.Title" />
         <altmember cref="P:System.Web.UI.WebControls.WizardStepBase.ID" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
@@ -308,6 +315,8 @@
         <param name="e">The <see cref="T:System.EventArgs" /> object that contains the event data.</param>
         <summary>Raises the <see cref="M:System.Web.UI.Control.OnLoad(System.EventArgs)" /> event.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
       </Docs>
     </Member>
     <Member MemberName="RenderChildren">
@@ -333,6 +342,7 @@
         <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
         <summary>Outputs the content of the <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> control's child controls to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object, which writes the content to be rendered on the client.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepType">
@@ -389,6 +399,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> enumeration values.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WizardStepType" />
         <altmember cref="T:System.Web.UI.WebControls.Wizard" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -438,6 +449,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.Wizard" />
         <altmember cref="P:System.Web.UI.WebControls.WizardStepBase.Name" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Wizard">
@@ -475,6 +487,7 @@
         <value>The <see cref="T:System.Web.UI.WebControls.Wizard" /> control that is the parent of the object derived from <see cref="T:System.Web.UI.WebControls.WizardStepBase" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.Wizard" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
   </Members>

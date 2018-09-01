@@ -1,4 +1,4 @@
-﻿<Type Name="TraceWebEventProvider" FullName="System.Web.Management.TraceWebEventProvider">
+<Type Name="TraceWebEventProvider" FullName="System.Web.Management.TraceWebEventProvider">
   <TypeSignature Language="C#" Value="public sealed class TraceWebEventProvider : System.Web.Management.WebEventProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TraceWebEventProvider extends System.Web.Management.WebEventProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.TraceWebEventProvider" />
@@ -77,6 +77,7 @@
     <altmember cref="T:System.Web.Management.WebEventProvider" />
     <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
     <altmember cref="T:System.Diagnostics.Trace" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2">Installing and Configuring ASP.NET Providers</related>
   </Docs>
   <Members>
     <Member MemberName="Flush">

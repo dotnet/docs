@@ -1,4 +1,4 @@
-﻿<Type Name="DllImportAttribute" FullName="System.Runtime.InteropServices.DllImportAttribute">
+<Type Name="DllImportAttribute" FullName="System.Runtime.InteropServices.DllImportAttribute">
   <TypeSignature Language="C#" Value="public sealed class DllImportAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DllImportAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.DllImportAttribute" />
@@ -191,6 +191,7 @@
         </remarks>
         <altmember cref="F:System.Runtime.InteropServices.DllImportAttribute.CharSet" />
         <altmember cref="T:System.Runtime.InteropServices.BestFitMappingAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a">Interop Marshaling</related>
       </Docs>
     </Member>
     <Member MemberName="CallingConvention">
@@ -598,6 +599,7 @@
         </remarks>
         <altmember cref="F:System.Runtime.InteropServices.DllImportAttribute.CharSet" />
         <altmember cref="F:System.Runtime.InteropServices.DllImportAttribute.BestFitMapping" />
+        <related type="Article" href="http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a">Interop Marshaling</related>
       </Docs>
     </Member>
     <Member MemberName="Value">

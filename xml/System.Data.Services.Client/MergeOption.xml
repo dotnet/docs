@@ -1,4 +1,4 @@
-﻿<Type Name="MergeOption" FullName="System.Data.Services.Client.MergeOption">
+<Type Name="MergeOption" FullName="System.Data.Services.Client.MergeOption">
   <TypeSignature Language="C#" Value="public enum MergeOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MergeOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.MergeOption" />
@@ -24,6 +24,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/f0dbf7b0-0292-4e31-9ae4-b98288336dc1">Object Materialization (WCF Data Services)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/a09f4985-9f0d-48c8-b183-83d67a3dfe5f">Query Projections (WCF Data Services)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0">Querying the Data Service (WCF Data Services)</related>
   </Docs>
   <Members>
     <Member MemberName="AppendOnly">

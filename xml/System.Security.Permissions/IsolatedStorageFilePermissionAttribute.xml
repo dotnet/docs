@@ -1,4 +1,4 @@
-﻿<Type Name="IsolatedStorageFilePermissionAttribute" FullName="System.Security.Permissions.IsolatedStorageFilePermissionAttribute">
+<Type Name="IsolatedStorageFilePermissionAttribute" FullName="System.Security.Permissions.IsolatedStorageFilePermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class IsolatedStorageFilePermissionAttribute : System.Security.Permissions.IsolatedStoragePermissionAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit IsolatedStorageFilePermissionAttribute extends System.Security.Permissions.IsolatedStoragePermissionAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.IsolatedStorageFilePermissionAttribute" />
@@ -50,6 +50,7 @@
     <altmember cref="T:System.Security.Permissions.IsolatedStoragePermission" />
     <altmember cref="T:System.Security.Permissions.IsolatedStoragePermissionAttribute" />
     <altmember cref="T:System.Security.Permissions.IsolatedStorageContainment" />
+    <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

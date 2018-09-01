@@ -1,4 +1,4 @@
-﻿<Type Name="List" FullName="System.Web.UI.MobileControls.List">
+<Type Name="List" FullName="System.Web.UI.MobileControls.List">
   <TypeSignature Language="C#" Value="public class List : System.Web.UI.MobileControls.PagedControl, System.Web.UI.INamingContainer, System.Web.UI.IPostBackEventHandler, System.Web.UI.MobileControls.ITemplateable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit List extends System.Web.UI.MobileControls.PagedControl implements class System.Web.UI.INamingContainer, class System.Web.UI.IPostBackEventHandler, class System.Web.UI.MobileControls.ITemplateable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.List" />
@@ -66,7 +66,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This control supports templated rendering by using device template sets and internal pagination. For more information, see [Device Filtering Overview](http://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19) and [Pagination](http://msdn.microsoft.com/library/b4f4c4bc-226b-46ec-ae46-00497a32f4f2).  
+ This control supports templated rendering by using device template sets and internal pagination. For more information, see [Device Filtering Overview](https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)) and [Pagination](https://msdn.microsoft.com/library/b4f4c4bc-226b-46ec-ae46-00497a32f4f2).  
   
    
   
@@ -80,6 +80,8 @@
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.List" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/21wehf11(v=vs.85)">Introduction to the Link Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/b4f4c4bc-226b-46ec-ae46-00497a32f4f2">Pagination</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -99,6 +101,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.List" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/21wehf11(v=vs.85)">Introduction to the Link Control</related>
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -209,6 +212,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataMember">
@@ -250,6 +254,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -294,6 +299,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataTextField">
@@ -325,6 +331,7 @@
         <summary>Specifies which property of a data-bound item to use when binding an item's <see cref="P:System.Web.UI.MobileControls.MobileListItem.Text" /> property. The default is <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The property of a data-bound item to use when binding an item's <see cref="P:System.Web.UI.MobileControls.MobileListItem.Text" /> property.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataValueField">
@@ -356,6 +363,7 @@
         <summary>Specifies which property of a data-bound item to use when binding an item's <see cref="P:System.Web.UI.MobileControls.MobileListItem.Value" /> property. The default is <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The property of a data-bound item to use when binding an item's <see cref="P:System.Web.UI.MobileControls.MobileListItem.Value" /> property.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="Decoration">
@@ -408,6 +416,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="EnsureChildControls">
@@ -493,6 +502,7 @@
           <see langword="true" /> if the control has an event handler registered for the appropriate <see cref="E:System.Web.UI.MobileControls.List.ItemCommand" /> event; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="E:System.Web.UI.MobileControls.List.ItemCommand" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="InternalItemCount">
@@ -562,6 +572,7 @@
         <altmember cref="E:System.Web.UI.MobileControls.ObjectList.ItemCommand" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommandEventArgs" />
         <altmember cref="M:System.Web.UI.MobileControls.Command.OnItemCommand(System.Web.UI.WebControls.CommandEventArgs)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="ItemDataBind">
@@ -604,6 +615,7 @@
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListDataBindEventArgs" />
         <altmember cref="T:System.Web.UI.MobileControls.SelectionList" />
         <altmember cref="M:System.Web.UI.MobileControls.List.OnItemDataBind(System.Web.UI.MobileControls.ListDataBindEventArgs)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -654,6 +666,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="ItemsAsLinks">
@@ -693,6 +706,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -812,6 +826,7 @@
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.MobileControls.List.ItemCommand" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnItemDataBind">
@@ -846,6 +861,7 @@
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.MobileControls.List.ItemDataBind" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnLoadItems">
@@ -954,6 +970,7 @@
         <param name="eventArgument">A <see cref="T:System.String" /> object that represents an optional event argument to be passed to the event handler.</param>
         <summary>Notifies the <see cref="T:System.Web.UI.MobileControls.List" /> object of a postback event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1011,6 +1028,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">

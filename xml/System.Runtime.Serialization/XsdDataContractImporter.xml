@@ -1,4 +1,4 @@
-﻿<Type Name="XsdDataContractImporter" FullName="System.Runtime.Serialization.XsdDataContractImporter">
+<Type Name="XsdDataContractImporter" FullName="System.Runtime.Serialization.XsdDataContractImporter">
   <TypeSignature Language="C#" Value="public class XsdDataContractImporter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XsdDataContractImporter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.XsdDataContractImporter" />
@@ -38,6 +38,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.Serialization.XsdDataContractExporter" />
+    <related type="Article" href="~/docs/framework/wcf/feature-details/using-data-contracts.md">Using Data Contracts</related>
+    <related type="Article" href="~/docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md">Types Supported by the Data Contract Serializer</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -418,6 +420,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Runtime.Serialization.KnownTypeAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337">Data Contract Known Types</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Import">

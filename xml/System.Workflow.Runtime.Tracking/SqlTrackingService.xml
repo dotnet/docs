@@ -1,4 +1,4 @@
-﻿<Type Name="SqlTrackingService" FullName="System.Workflow.Runtime.Tracking.SqlTrackingService">
+<Type Name="SqlTrackingService" FullName="System.Workflow.Runtime.Tracking.SqlTrackingService">
   <TypeSignature Language="C#" Value="public sealed class SqlTrackingService : System.Workflow.Runtime.Tracking.TrackingService, System.Workflow.Runtime.Tracking.IProfileNotification" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlTrackingService extends System.Workflow.Runtime.Tracking.TrackingService implements class System.Workflow.Runtime.Tracking.IProfileNotification" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.SqlTrackingService" />
@@ -44,6 +44,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa348821(v=vs.90)">Using SqlTrackingService</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa349365(v=vs.90)">Data Maintenance with SqlTrackingService</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -316,10 +318,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> allows you to partition the database in order to provide an efficient method for archiving and deleting tracking records. If your database experiences long periods between down times or your database has no planned downtime, you can set <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.PartitionOnCompletion%2A> to move tracking records associated with a workflow instance from the active instance tables to the currently active partition when the workflow instance completes. This allows you to archive or delete these records without having to lock the data in the active instance tables of the database. For more information about partitioning, see [Data Maintenance with SqlTrackingService](http://msdn.microsoft.com/library/a62d5719-d6cd-4871-a3ab-56ea629d4e00).  
+ The <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> allows you to partition the database in order to provide an efficient method for archiving and deleting tracking records. If your database experiences long periods between down times or your database has no planned downtime, you can set <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.PartitionOnCompletion%2A> to move tracking records associated with a workflow instance from the active instance tables to the currently active partition when the workflow instance completes. This allows you to archive or delete these records without having to lock the data in the active instance tables of the database. For more information about partitioning, see [Data Maintenance with SqlTrackingService](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa349365(v=vs.90)).  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa349365(v=vs.90)">Data Maintenance with SqlTrackingService</related>
       </Docs>
     </Member>
     <Member MemberName="ProfileChangeCheckInterval">
@@ -529,10 +532,11 @@
 > [!NOTE]
 >  The workflow runtime engine caches its tracking profiles. Therefore, it must receive a <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileRemoved> event for any workflow type for which it already has a tracking profile associated in its cache before it will stop using its cached profile for new instances of that workflow type. Likewise, the workflow runtime engine must receive a <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileUpdated> event for such workflow types before it will load a new tracking profile into its cache to associate with new instances of the workflow type. The <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> raises the appropriate events for applicable workflow types when it examines the database for changes to its tracking profiles. The frequency at which the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> performs this operation is set by <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileChangeCheckInterval%2A>.  Therefore, whenever you call the `UpdateTrackingProfile` or `DeleteTrackingProfile` stored procedures there may be a delay of up to the period specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileChangeCheckInterval%2A> before the workflow runtime engine will reflect your changes in its profile cache.  
 >   
->  For more information about tracking profiles, see [Creating and Using Tracking Profiles](http://msdn.microsoft.com/library/f018ad09-d20f-4626-9792-31d9f278d0b0).  
+>  For more information about tracking profiles, see [Creating and Using Tracking Profiles](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735943(v=vs.90)).  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735943(v=vs.90)">Creating and Using Tracking Profiles</related>
       </Docs>
     </Member>
   </Members>

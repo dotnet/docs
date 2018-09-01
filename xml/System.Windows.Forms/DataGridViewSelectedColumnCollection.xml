@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewSelectedColumnCollection" FullName="System.Windows.Forms.DataGridViewSelectedColumnCollection">
+<Type Name="DataGridViewSelectedColumnCollection" FullName="System.Windows.Forms.DataGridViewSelectedColumnCollection">
   <TypeSignature Language="C#" Value="public class DataGridViewSelectedColumnCollection : System.Windows.Forms.BaseCollection, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewSelectedColumnCollection extends System.Windows.Forms.BaseCollection implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewSelectedColumnCollection" />
@@ -39,6 +39,7 @@
     <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
     <altmember cref="M:System.Windows.Forms.DataGridView.AreAllCellsSelected(System.Boolean)" />
     <altmember cref="M:System.Windows.Forms.DataGridViewColumnCollection.GetColumnCount(System.Windows.Forms.DataGridViewElementStates)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8321a8a6-6340-4fd1-b475-fa090b905aaf">Best Practices for Scaling the Windows Forms DataGridView Control</related>
   </Docs>
   <Members>
     <Member MemberName="Clear">

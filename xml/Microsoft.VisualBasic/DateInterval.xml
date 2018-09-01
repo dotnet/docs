@@ -1,4 +1,4 @@
-﻿<Type Name="DateInterval" FullName="Microsoft.VisualBasic.DateInterval">
+<Type Name="DateInterval" FullName="Microsoft.VisualBasic.DateInterval">
   <TypeSignature Language="C#" Value="public enum DateInterval" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DateInterval extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.DateInterval" />
@@ -31,6 +31,9 @@
     <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(Microsoft.VisualBasic.DateInterval,System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
     <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateAdd(Microsoft.VisualBasic.DateInterval,System.Double,System.DateTime)" />
     <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateDiff(Microsoft.VisualBasic.DateInterval,System.DateTime,System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/constants-and-enumerations.md">Constants and Enumerations</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/constants-enums/when-to-use-an-enumeration.md">When to Use an Enumeration</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md">How to: Refer to an Enumeration Member</related>
   </Docs>
   <Members>
     <Member MemberName="Day">

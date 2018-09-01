@@ -1,4 +1,4 @@
-﻿<Type Name="OutputCacheSection" FullName="System.Web.Configuration.OutputCacheSection">
+<Type Name="OutputCacheSection" FullName="System.Web.Configuration.OutputCacheSection">
   <TypeSignature Language="C#" Value="public sealed class OutputCacheSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OutputCacheSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.OutputCacheSection" />
@@ -26,6 +26,9 @@
     </remarks>
     <altmember cref="T:System.Web.Configuration.CacheSection" />
     <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce">ASP.NET Caching</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/d5fbd79f-972d-4557-9a39-f90684b3dcd3">Setting the Cacheability of a Page</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -137,6 +140,8 @@
         </remarks>
         <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
         <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d5fbd79f-972d-4557-9a39-f90684b3dcd3">Setting the Cacheability of a Page</related>
       </Docs>
     </Member>
     <Member MemberName="EnableKernelCacheForVaryByStar">
@@ -177,6 +182,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName="EnableOutputCache">
@@ -222,6 +228,8 @@
         </remarks>
         <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
         <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d5fbd79f-972d-4557-9a39-f90684b3dcd3">Setting the Cacheability of a Page</related>
       </Docs>
     </Member>
     <Member MemberName="OmitVaryStar">
@@ -268,6 +276,7 @@
         <altmember cref="M:System.Web.HttpCachePolicy.SetOmitVaryStar(System.Boolean)" />
         <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
         <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -369,6 +378,8 @@
         </remarks>
         <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
         <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d5fbd79f-972d-4557-9a39-f90684b3dcd3">Setting the Cacheability of a Page</related>
       </Docs>
     </Member>
   </Members>

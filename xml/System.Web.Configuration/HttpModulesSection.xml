@@ -1,4 +1,4 @@
-﻿<Type Name="HttpModulesSection" FullName="System.Web.Configuration.HttpModulesSection">
+<Type Name="HttpModulesSection" FullName="System.Web.Configuration.HttpModulesSection">
   <TypeSignature Language="C#" Value="public sealed class HttpModulesSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpModulesSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpModulesSection" />
@@ -51,6 +51,7 @@
     </remarks>
     <altmember cref="T:System.Web.Configuration.HttpModuleActionCollection" />
     <altmember cref="T:System.Web.Configuration.HttpModuleAction" />
+    <related type="Article" href="http://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b">HTTP Handlers and HTTP Modules Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

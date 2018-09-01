@@ -1,4 +1,4 @@
-﻿<Type Name="TextEndOfParagraph" FullName="System.Windows.Media.TextFormatting.TextEndOfParagraph">
+<Type Name="TextEndOfParagraph" FullName="System.Windows.Media.TextFormatting.TextEndOfParagraph">
   <TypeSignature Language="C#" Value="public class TextEndOfParagraph : System.Windows.Media.TextFormatting.TextEndOfLine" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextEndOfParagraph extends System.Windows.Media.TextFormatting.TextEndOfLine" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextEndOfParagraph" />
@@ -25,6 +25,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Media.TextFormatting.TextEndOfLine" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159965">Advanced Text Formatting Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

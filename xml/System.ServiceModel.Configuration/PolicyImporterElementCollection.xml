@@ -1,4 +1,4 @@
-﻿<Type Name="PolicyImporterElementCollection" FullName="System.ServiceModel.Configuration.PolicyImporterElementCollection">
+<Type Name="PolicyImporterElementCollection" FullName="System.ServiceModel.Configuration.PolicyImporterElementCollection">
   <TypeSignature Language="C#" Value="public sealed class PolicyImporterElementCollection : System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection&lt;System.ServiceModel.Configuration.PolicyImporterElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PolicyImporterElementCollection extends System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection`1&lt;class System.ServiceModel.Configuration.PolicyImporterElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.PolicyImporterElementCollection" />
@@ -25,6 +25,7 @@
   <Docs>
     <summary>Represents a collection of <see cref="T:System.ServiceModel.Configuration.PolicyImporterElement" /> instances. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/f8267a6f-bc09-4ec1-9b26-9445f137f663">&lt;policyImporters&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="AxHost" FullName="System.Windows.Forms.AxHost">
+<Type Name="AxHost" FullName="System.Windows.Forms.AxHost">
   <TypeSignature Language="C#" Value="public abstract class AxHost : System.Windows.Forms.Control, System.ComponentModel.ICustomTypeDescriptor, System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AxHost extends System.Windows.Forms.Control implements class System.ComponentModel.ICustomTypeDescriptor, class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AxHost" />
@@ -1070,6 +1070,8 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=166076">IOleObject::DoVerb</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=166077">IOleObject::EnumVerbs</related>
       </Docs>
     </Member>
     <Member MemberName="DragDrop">
@@ -1641,6 +1643,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Drawing.Font" />
         <altmember cref="P:System.Windows.Forms.Control.DefaultFont" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=166075">IFont</related>
       </Docs>
     </Member>
     <Member MemberName="GetFontFromIFontDisp">
@@ -1677,6 +1680,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Drawing.Font" />
         <altmember cref="P:System.Windows.Forms.Control.DefaultFont" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=166073">IFontDisp</related>
       </Docs>
     </Member>
     <Member MemberName="GetIFontDispFromFont">
@@ -1713,6 +1717,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Font.Unit" /> property value is not <see cref="F:System.Drawing.GraphicsUnit.Point" />.</exception>
         <altmember cref="T:System.Drawing.Font" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=166073">IFontDisp</related>
       </Docs>
     </Member>
     <Member MemberName="GetIFontFromFont">
@@ -1749,6 +1754,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Font.Unit" /> property value is not <see cref="F:System.Drawing.GraphicsUnit.Point" />.</exception>
         <altmember cref="T:System.Drawing.Font" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=166075">IFont</related>
       </Docs>
     </Member>
     <Member MemberName="GetIPictureDispFromPicture">

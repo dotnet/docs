@@ -1,4 +1,4 @@
-﻿<Type Name="XmlTextReader" FullName="System.Xml.XmlTextReader">
+<Type Name="XmlTextReader" FullName="System.Xml.XmlTextReader">
   <TypeSignature Language="C#" Value="public class XmlTextReader : System.Xml.XmlReader, System.Xml.IXmlLineInfo, System.Xml.IXmlNamespaceResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlTextReader extends System.Xml.XmlReader implements class System.Xml.IXmlLineInfo, class System.Xml.IXmlNamespaceResolver" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlTextReader" />
@@ -103,6 +103,7 @@
     <block subset="none" type="overrides">
       <para>This class has an inheritance demand. Full trust is required to inherit from <see langword="XmlTextReader" />.</para>
     </block>
+    <related type="Article" href="http://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

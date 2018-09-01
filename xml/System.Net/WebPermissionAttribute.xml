@@ -1,4 +1,4 @@
-﻿<Type Name="WebPermissionAttribute" FullName="System.Net.WebPermissionAttribute">
+<Type Name="WebPermissionAttribute" FullName="System.Net.WebPermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class WebPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit WebPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebPermissionAttribute" />
@@ -152,6 +152,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Net.WebPermissionAttribute.Accept" /> is not <see langword="null" /> when you attempt to set the value. If you wish to specify more than one Accept URI, use an additional attribute declaration statement.</exception>
+        <related type="Article" href="~/docs/framework/network-programming/introducing-pluggable-protocols.md">Introducing Pluggable Protocols</related>
       </Docs>
     </Member>
     <Member MemberName="AcceptPattern">
@@ -198,6 +199,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Net.WebPermissionAttribute.AcceptPattern" /> is not <see langword="null" /> when you attempt to set the value. If you wish to specify more than one Accept URI, use an additional attribute declaration statement.</exception>
+        <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language - Quick Reference</related>
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -244,6 +246,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Net.WebPermissionAttribute.Connect" /> is not <see langword="null" /> when you attempt to set the value. If you wish to specify more than one Connect URI, use an additional attribute declaration statement.</exception>
+        <related type="Article" href="~/docs/framework/network-programming/introducing-pluggable-protocols.md">Introducing Pluggable Protocols</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectPattern">
@@ -290,6 +293,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Net.WebPermissionAttribute.ConnectPattern" /> is not <see langword="null" /> when you attempt to set the value. If you wish to specify more than one connect URI, use an additional attribute declaration statement.</exception>
+        <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language - Quick Reference</related>
       </Docs>
     </Member>
     <Member MemberName="CreatePermission">

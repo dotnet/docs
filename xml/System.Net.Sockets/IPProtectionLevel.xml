@@ -1,4 +1,4 @@
-﻿<Type Name="IPProtectionLevel" FullName="System.Net.Sockets.IPProtectionLevel">
+<Type Name="IPProtectionLevel" FullName="System.Net.Sockets.IPProtectionLevel">
   <TypeSignature Language="C#" Value="public enum IPProtectionLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IPProtectionLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.IPProtectionLevel" />
@@ -38,6 +38,7 @@
     <altmember cref="M:System.Net.Sockets.Socket.SetIPProtectionLevel(System.Net.Sockets.IPProtectionLevel)" />
     <altmember cref="M:System.Net.Sockets.TcpListener.AllowNatTraversal(System.Boolean)" />
     <altmember cref="M:System.Net.Sockets.UdpClient.AllowNatTraversal(System.Boolean)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/366c634c-7d16-478f-aedf-053eda94a1a0">&lt;socket&gt; Element (Network Settings)</related>
   </Docs>
   <Members>
     <Member MemberName="EdgeRestricted">

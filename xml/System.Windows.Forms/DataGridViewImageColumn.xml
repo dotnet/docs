@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewImageColumn" FullName="System.Windows.Forms.DataGridViewImageColumn">
+<Type Name="DataGridViewImageColumn" FullName="System.Windows.Forms.DataGridViewImageColumn">
   <TypeSignature Language="C#" Value="public class DataGridViewImageColumn : System.Windows.Forms.DataGridViewColumn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewImageColumn extends System.Windows.Forms.DataGridViewColumn" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewImageColumn" />
@@ -291,6 +291,7 @@
         <altmember cref="T:System.Windows.Forms.DataGridView" />
         <altmember cref="P:System.Windows.Forms.DataGridView.DefaultCellStyle" />
         <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Description">

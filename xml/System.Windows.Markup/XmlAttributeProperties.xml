@@ -1,4 +1,4 @@
-﻿<Type Name="XmlAttributeProperties" FullName="System.Windows.Markup.XmlAttributeProperties">
+<Type Name="XmlAttributeProperties" FullName="System.Windows.Markup.XmlAttributeProperties">
   <TypeSignature Language="C#" Value="public sealed class XmlAttributeProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlAttributeProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XmlAttributeProperties" />
@@ -184,6 +184,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/5e1814f0-5b30-43d5-8c88-dede335a89d7">xml:space Attribute</related>
       </Docs>
     </Member>
     <Member MemberName="SetXmlNamespaceMaps">

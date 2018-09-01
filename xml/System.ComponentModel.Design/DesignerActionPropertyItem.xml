@@ -1,4 +1,4 @@
-﻿<Type Name="DesignerActionPropertyItem" FullName="System.ComponentModel.Design.DesignerActionPropertyItem">
+<Type Name="DesignerActionPropertyItem" FullName="System.ComponentModel.Design.DesignerActionPropertyItem">
   <TypeSignature Language="C#" Value="public sealed class DesignerActionPropertyItem : System.ComponentModel.Design.DesignerActionItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerActionPropertyItem extends System.ComponentModel.Design.DesignerActionItem" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionPropertyItem" />
@@ -33,7 +33,7 @@
 |Boolean value|The item is displayed using a binary UI, such as a check mark.|  
 |None of the above.|The item is displayed as a non-editable text string using the data type's <xref:System.Object.ToString%2A> method.|  
   
- All fundamental types, such as <xref:System.Boolean?displayProperty=nameWithType>, and common [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] data types, such as <xref:System.String?displayProperty=nameWithType>, supply standard type converters and editors. For more information about type converters, see [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56) or [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada). For more information about type editors, see [How to: Implement a UI Type Editor](http://msdn.microsoft.com/library/ed961fb9-ee02-4666-b511-05f3204bb75c).  
+ All fundamental types, such as <xref:System.Boolean?displayProperty=nameWithType>, and common [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] data types, such as <xref:System.String?displayProperty=nameWithType>, supply standard type converters and editors. For more information about type converters, see [How to: Implement a Type Converter](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)) or [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada). For more information about type editors, see [How to: Implement a UI Type Editor](http://msdn.microsoft.com/library/ed961fb9-ee02-4666-b511-05f3204bb75c).  
   
    
   
@@ -48,6 +48,7 @@
     <altmember cref="P:System.ComponentModel.Design.DesignerActionPropertyItem.MemberName" />
     <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
     <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
+    <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -96,6 +97,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -140,6 +142,7 @@
         </remarks>
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -192,6 +195,7 @@
         </remarks>
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="MemberName">
@@ -230,6 +234,7 @@
         </remarks>
         <altmember cref="M:System.ComponentModel.Design.DesignerActionPropertyItem.#ctor(System.String,System.String,System.String,System.String)" />
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="RelatedComponent">
@@ -271,6 +276,7 @@
         </remarks>
         <altmember cref="T:System.ComponentModel.Design.DesignerActionItem" />
         <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.AllowAssociate" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
   </Members>

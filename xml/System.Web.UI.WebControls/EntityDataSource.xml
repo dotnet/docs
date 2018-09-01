@@ -1,4 +1,4 @@
-﻿<Type Name="EntityDataSource" FullName="System.Web.UI.WebControls.EntityDataSource">
+<Type Name="EntityDataSource" FullName="System.Web.UI.WebControls.EntityDataSource">
   <TypeSignature Language="C#" Value="public class EntityDataSource : System.Web.UI.DataSourceControl, System.Web.DynamicData.IDynamicDataSource, System.Web.UI.WebControls.IQueryableDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityDataSource extends System.Web.UI.DataSourceControl implements class System.Web.DynamicData.IDynamicDataSource, class System.Web.UI.IDataSource, class System.Web.UI.WebControls.IQueryableDataSource" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EntityDataSource" />
@@ -114,6 +114,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0">Introducing the Entity Framework</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

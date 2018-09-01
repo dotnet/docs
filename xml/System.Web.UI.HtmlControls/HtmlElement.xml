@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlElement" FullName="System.Web.UI.HtmlControls.HtmlElement">
+<Type Name="HtmlElement" FullName="System.Web.UI.HtmlControls.HtmlElement">
   <TypeSignature Language="C#" Value="public class HtmlElement : System.Web.UI.HtmlControls.HtmlContainerControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlElement extends System.Web.UI.HtmlControls.HtmlContainerControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlElement" />
@@ -16,6 +16,7 @@
   <Docs>
     <summary>Provides programmatic access to the document's <see langword="&lt;html&gt;" /> element on the server, which represents the document's root.</summary>
     <remarks>To be added.</remarks>
+    <related type="ExternalDocumentation" href="http://www.w3.org/TR/html5/semantics.html#the-root-element">root element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +66,7 @@
         <summary>Gets or sets the <see langword="manifest" /> attribute.</summary>
         <value>The <see langword="manifest" /> attribute..</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://www.w3.org/TR/html5/semantics.html#attr-html-manifest">manifest attribute</related>
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">

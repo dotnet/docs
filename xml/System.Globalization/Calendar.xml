@@ -1,4 +1,4 @@
-﻿<Type Name="Calendar" FullName="System.Globalization.Calendar">
+<Type Name="Calendar" FullName="System.Globalization.Calendar">
   <TypeSignature Language="C#" Value="public abstract class Calendar : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Calendar extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.Calendar" />
@@ -121,6 +121,8 @@
     <altmember cref="T:System.Globalization.TaiwanLunisolarCalendar" />
     <altmember cref="T:System.Globalization.ThaiBuddhistCalendar" />
     <altmember cref="T:System.Globalization.UmAlQuraCalendar" />
+    <related type="Article" href="~/docs/standard/datetime/working-with-calendars.md">Working with Calendars</related>
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Calendar-3360a84a">Sample: Calendar Week Range Utility</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -3100,6 +3102,7 @@
         <altmember cref="T:System.DateTime" />
         <altmember cref="M:System.Globalization.Calendar.GetMonthsInYear(System.Int32)" />
         <altmember cref="M:System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32)" />
+        <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Calendar-3360a84a">Sample: Calendar Week Range Utility</related>
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -3201,6 +3204,7 @@
         <altmember cref="P:System.Globalization.Calendar.Eras" />
         <altmember cref="M:System.Globalization.Calendar.GetMonthsInYear(System.Int32)" />
         <altmember cref="M:System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32)" />
+        <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Calendar-3360a84a">Sample: Calendar Week Range Utility</related>
       </Docs>
     </Member>
     <Member MemberName="ToFourDigitYear">

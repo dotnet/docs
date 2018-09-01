@@ -1,4 +1,4 @@
-﻿<Type Name="WebServiceOutputActivity" FullName="System.Workflow.Activities.WebServiceOutputActivity">
+<Type Name="WebServiceOutputActivity" FullName="System.Workflow.Activities.WebServiceOutputActivity">
   <TypeSignature Language="C#" Value="public sealed class WebServiceOutputActivity : System.Workflow.ComponentModel.Activity, System.Workflow.ComponentModel.IDynamicPropertyTypeProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebServiceOutputActivity extends System.Workflow.ComponentModel.Activity implements class System.Workflow.ComponentModel.IDynamicPropertyTypeProvider" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.WebServiceOutputActivity" />
@@ -51,6 +51,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735929(v=vs.90)">Using the WebServiceOutput Activity</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -60,6 +61,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.WebServiceOutputActivity" /> class.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735929(v=vs.90)">Using the WebServiceOutput Activity</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -78,6 +80,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.WebServiceOutputActivity" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735929(v=vs.90)">Using the WebServiceOutput Activity</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -100,6 +103,7 @@
         <param name="name">The user-defined name of the activity.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.WebServiceOutputActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735929(v=vs.90)">Using the WebServiceOutput Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -193,6 +197,7 @@
         <summary>Gets or sets the name of the preceding <see cref="T:System.Workflow.Activities.WebServiceInputActivity" /> class.</summary>
         <value>The name of the preceding <see cref="T:System.Workflow.Activities.WebServiceInputActivity" /> class.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735929(v=vs.90)">Using the WebServiceOutput Activity</related>
       </Docs>
     </Member>
     <Member MemberName="InputActivityNameProperty">
@@ -221,6 +226,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735929(v=vs.90)">Using the WebServiceOutput Activity</related>
       </Docs>
     </Member>
     <Member MemberName="ParameterBindings">
@@ -254,6 +260,7 @@
         <summary>Gets the collection of bindings associated with the out/ref and return value of the corresponding <see cref="T:System.Workflow.Activities.WebServiceInputActivity" /> method.</summary>
         <value>This collection is used to bind the outbound parameters to locations in the workflow. When the <see cref="T:System.Workflow.Activities.WebServiceOutputActivity" /> executes, it extracts the values from the bound locations and delivers these back to the blocked Web service method.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735929(v=vs.90)">Using the WebServiceOutput Activity</related>
       </Docs>
     </Member>
     <Member MemberName="ParameterBindingsProperty">
@@ -282,6 +289,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735929(v=vs.90)">Using the WebServiceOutput Activity</related>
       </Docs>
     </Member>
     <Member MemberName="SendingOutput">
@@ -308,6 +316,7 @@
       <Docs>
         <summary>Occurs before the <see cref="T:System.Workflow.Activities.WebServiceOutputActivity" /> sends output to the client.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735929(v=vs.90)">Using the WebServiceOutput Activity</related>
       </Docs>
     </Member>
     <Member MemberName="SendingOutputEvent">
@@ -336,6 +345,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735929(v=vs.90)">Using the WebServiceOutput Activity</related>
       </Docs>
     </Member>
     <Member MemberName="System.Workflow.ComponentModel.IDynamicPropertyTypeProvider.GetAccessType">

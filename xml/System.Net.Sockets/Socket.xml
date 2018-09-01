@@ -1,4 +1,4 @@
-﻿<Type Name="Socket" FullName="System.Net.Sockets.Socket">
+<Type Name="Socket" FullName="System.Net.Sockets.Socket">
   <TypeSignature Language="C#" Value="public class Socket : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Socket extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.Socket" />
@@ -78,6 +78,14 @@
     <altmember cref="N:System.Net.Cache" />
     <altmember cref="N:System.Net.Security" />
     <altmember cref="T:System.Net.Sockets.SocketAsyncEventArgs" />
+    <related type="Article" href="~/docs/framework/network-programming/index.md">Network Programming in the .NET Framework</related>
+    <related type="Article" href="~/docs/framework/network-programming/best-practices-for-system-net-classes.md">Best Practices for System.Net Classes</related>
+    <related type="Article" href="~/docs/framework/network-programming/cache-management-for-network-applications.md">Cache Management for Network Applications</related>
+    <related type="Article" href="~/docs/framework/network-programming/internet-protocol-version-6.md">Internet Protocol Version 6</related>
+    <related type="Article" href="~/docs/framework/network-programming/network-programming-samples.md">Network Programming Samples</related>
+    <related type="Article" href="~/docs/framework/network-programming/network-tracing.md">Network Tracing in the .NET Framework</related>
+    <related type="Article" href="~/docs/framework/network-programming/security-in-network-programming.md">Security in Network Programming</related>
+    <related type="Article" href="~/docs/framework/network-programming/socket-performance-enhancements-in-version-3-5.md">Socket Performance Enhancements in Version 3.5</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -603,6 +611,8 @@
         <altmember cref="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" />
         <altmember cref="T:System.Net.Sockets.Socket" />
         <altmember cref="P:System.Net.Sockets.Socket.RemoteEndPoint" />
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
       </Docs>
     </Member>
     <Member MemberName="BeginAccept">
@@ -704,6 +714,8 @@
         <altmember cref="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" />
         <altmember cref="T:System.Net.Sockets.Socket" />
         <altmember cref="P:System.Net.Sockets.Socket.RemoteEndPoint" />
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
       </Docs>
     </Member>
     <Member MemberName="BeginAccept">
@@ -802,6 +814,8 @@
         <altmember cref="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" />
         <altmember cref="T:System.Net.Sockets.Socket" />
         <altmember cref="P:System.Net.Sockets.Socket.RemoteEndPoint" />
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="BeginConnect">
@@ -1111,6 +1125,9 @@
         <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
         <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
         <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
       </Docs>
     </Member>
     <Member MemberName="BeginConnect">
@@ -1206,6 +1223,9 @@
         <altmember cref="M:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)" />
         <altmember cref="M:System.Net.Sockets.Socket.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)" />
         <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
         <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
         <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
         <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
@@ -1369,6 +1389,9 @@
         <altmember cref="T:System.AsyncCallback" />
         <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
         <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
       </Docs>
     </Member>
     <Member MemberName="BeginReceive">
@@ -1454,6 +1477,9 @@
         <altmember cref="T:System.AsyncCallback" />
         <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
         <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
       </Docs>
     </Member>
     <Member MemberName="BeginReceive">
@@ -1578,6 +1604,9 @@
         <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
         <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
         <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
       </Docs>
     </Member>
     <Member MemberName="BeginReceive">
@@ -1685,6 +1714,9 @@
         <altmember cref="T:System.AsyncCallback" />
         <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
         <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
         <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
         <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
         <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
@@ -1815,6 +1847,7 @@
         <altmember cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" />
         <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
         <altmember cref="M:System.Net.Sockets.Socket.Accept" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
         <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
       </Docs>
     </Member>
@@ -2008,6 +2041,9 @@
         <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
         <altmember cref="T:System.AsyncCallback" />
         <altmember cref="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
       </Docs>
     </Member>
     <Member MemberName="BeginSend">
@@ -2098,6 +2134,9 @@
         <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
         <altmember cref="T:System.AsyncCallback" />
         <altmember cref="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
       </Docs>
     </Member>
     <Member MemberName="BeginSend">
@@ -2199,6 +2238,9 @@
         <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
         <altmember cref="T:System.AsyncCallback" />
         <altmember cref="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
       </Docs>
     </Member>
     <Member MemberName="BeginSend">
@@ -2315,6 +2357,9 @@
         <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
         <altmember cref="T:System.AsyncCallback" />
         <altmember cref="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
         <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
         <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
         <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
@@ -2619,6 +2664,7 @@
         <altmember cref="P:System.Net.Sockets.Socket.LocalEndPoint" />
         <altmember cref="F:System.Net.Sockets.SocketOptionName.Broadcast" />
         <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
         <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
       </Docs>
     </Member>
@@ -3714,7 +3760,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see cref="M:System.Net.Sockets.Socket.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see cref="M:System.Net.Sockets.Socket.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
       </Docs>
     </Member>

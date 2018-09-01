@@ -1,4 +1,4 @@
-﻿<Type Name="IdentifierCase" FullName="System.Data.Common.IdentifierCase">
+<Type Name="IdentifierCase" FullName="System.Data.Common.IdentifierCase">
   <TypeSignature Language="C#" Value="public enum IdentifierCase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IdentifierCase extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.IdentifierCase" />
@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Insensitive">
@@ -64,6 +65,7 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>The data source ignores identifier case when searching the system catalog. The identifiers "ab" and "AB" will match.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Sensitive">
@@ -95,6 +97,7 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>The data source distinguishes identifier case when searching the system catalog. The identifiers "ab" and "AB" will not match.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -126,6 +129,7 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>The data source has ambiguous rules regarding identifier case and cannot discern this information.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

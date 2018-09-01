@@ -1,4 +1,4 @@
-﻿<Type Name="BitmapMetadata" FullName="System.Windows.Media.Imaging.BitmapMetadata">
+<Type Name="BitmapMetadata" FullName="System.Windows.Media.Imaging.BitmapMetadata">
   <TypeSignature Language="C#" Value="public class BitmapMetadata : System.Windows.Media.ImageMetadata, System.Collections.Generic.IEnumerable&lt;string&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BitmapMetadata extends System.Windows.Media.ImageMetadata implements class System.Collections.Generic.IEnumerable`1&lt;string&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapMetadata" />
@@ -45,6 +45,10 @@
     <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
     <altmember cref="M:System.Windows.Media.Imaging.BitmapMetadata.SetQuery(System.String,System.Object)" />
     <altmember cref="M:System.Windows.Media.Imaging.BitmapMetadata.GetQuery(System.String)" />
+    <related type="ExternalDocumentation" href="http://www.w3.org/TR/PNG-Chunks.html">Portable Network Graphics Textual Data (tEXt) Specification</related>
+    <related type="ExternalDocumentation" href="http://www.iptc.org/">International Press Telecommunications Council (IPTC) Schema Information</related>
+    <related type="ExternalDocumentation" href="http://www.adobe.com/products/xmp/main.html">Adobe Extensible Metadata Platform (XMP)</related>
+    <related type="ExternalDocumentation" href="http://www.exif.org/specifications.html">EXIF (Exchangeable Image File Format) Specification</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -414,6 +418,10 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="query" /> is <see langword="null" />.</exception>
+        <related type="ExternalDocumentation" href="http://www.w3.org/TR/PNG-Chunks.html">Portable Network Graphics Textual Data (tEXt) Specification</related>
+        <related type="ExternalDocumentation" href="http://www.iptc.org/">International Press Telecommunications Council (IPTC) Schema Information</related>
+        <related type="ExternalDocumentation" href="http://www.adobe.com/products/xmp/main.html">Adobe Extensible Metadata Platform (XMP)</related>
+        <related type="ExternalDocumentation" href="http://www.exif.org/specifications.html">EXIF (Exchangeable Image File Format) Specification</related>
       </Docs>
     </Member>
     <Member MemberName="Copyright">
@@ -673,6 +681,10 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="query" /> is <see langword="null" />.</exception>
+        <related type="ExternalDocumentation" href="http://www.w3.org/TR/PNG-Chunks.html">Portable Network Graphics Textual Data (tEXt) Specification</related>
+        <related type="ExternalDocumentation" href="http://www.iptc.org/">International Press Telecommunications Council (IPTC) Schema Information</related>
+        <related type="ExternalDocumentation" href="http://www.adobe.com/products/xmp/main.html">Adobe Extensible Metadata Platform (XMP)</related>
+        <related type="ExternalDocumentation" href="http://www.exif.org/specifications.html">EXIF (Exchangeable Image File Format) Specification</related>
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -798,6 +810,10 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://www.w3.org/TR/PNG-Chunks.html">Portable Network Graphics Textual Data (tEXt) Specification</related>
+        <related type="ExternalDocumentation" href="http://www.iptc.org/">International Press Telecommunications Council (IPTC) Schema Information</related>
+        <related type="ExternalDocumentation" href="http://www.adobe.com/products/xmp/main.html">Adobe Extensible Metadata Platform (XMP)</related>
+        <related type="ExternalDocumentation" href="http://www.exif.org/specifications.html">EXIF (Exchangeable Image File Format) Specification</related>
       </Docs>
     </Member>
     <Member MemberName="Rating">
@@ -862,6 +878,10 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="query" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">Occurs when image metadata is read-only.</exception>
+        <related type="ExternalDocumentation" href="http://www.w3.org/TR/PNG-Chunks.html">Portable Network Graphics Textual Data (tEXt) Specification</related>
+        <related type="ExternalDocumentation" href="http://www.iptc.org/">International Press Telecommunications Council (IPTC) Schema Information</related>
+        <related type="ExternalDocumentation" href="http://www.adobe.com/products/xmp/main.html">Adobe Extensible Metadata Platform (XMP)</related>
+        <related type="ExternalDocumentation" href="http://www.exif.org/specifications.html">EXIF (Exchangeable Image File Format) Specification</related>
       </Docs>
     </Member>
     <Member MemberName="SetQuery">
@@ -918,6 +938,10 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://www.w3.org/TR/PNG-Chunks.html">Portable Network Graphics Textual Data (tEXt) Specification</related>
+        <related type="ExternalDocumentation" href="http://www.iptc.org/">International Press Telecommunications Council (IPTC) Schema Information</related>
+        <related type="ExternalDocumentation" href="http://www.adobe.com/products/xmp/main.html">Adobe Extensible Metadata Platform (XMP)</related>
+        <related type="ExternalDocumentation" href="http://www.exif.org/specifications.html">EXIF (Exchangeable Image File Format) Specification</related>
       </Docs>
     </Member>
     <Member MemberName="Subject">

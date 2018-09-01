@@ -1,4 +1,4 @@
-﻿<Type Name="IWindowProvider" FullName="System.Windows.Automation.Provider.IWindowProvider">
+<Type Name="IWindowProvider" FullName="System.Windows.Automation.Provider.IWindowProvider">
   <TypeSignature Language="C#" Value="public interface IWindowProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWindowProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IWindowProvider" />
@@ -36,6 +36,11 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Automation.WindowPattern" />
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/3584c0a1-9cd0-4968-8b63-b06390890ef6">Client-side UI Automation Provider Implementation</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/0d635c35-ffa8-4dc8-bbc9-12fcd5445776">Support Control Patterns in a UI Automation Provider</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -71,6 +76,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">When the control is unable to perform the requested action.</exception>
         <exception cref="T:System.Windows.Automation.ElementNotAvailableException">When the target element is no longer available (for example, the window has closed).</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="InteractionState">
@@ -93,6 +99,7 @@
         <summary>Gets the interaction state of the window.</summary>
         <value>The <see cref="T:System.Windows.Automation.WindowInteractionState" /> of the control.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="IsModal">
@@ -116,6 +123,7 @@
         <value>
           <see langword="true" /> if the window is modal; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="IsTopmost">
@@ -139,6 +147,7 @@
         <value>
           <see langword="true" /> if the window is topmost; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="Maximizable">
@@ -162,6 +171,7 @@
         <value>
           <see langword="true" /> if the window can be maximized; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="Minimizable">
@@ -185,6 +195,7 @@
         <value>
           <see langword="true" /> if the window can be minimized; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="SetVisualState">
@@ -211,6 +222,7 @@
         <summary>Changes the visual state of the window. For example, minimizes or maximizes it.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">When the control does not support the requested behavior.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="VisualState">
@@ -233,6 +245,7 @@
         <summary>Gets the visual state of the window.</summary>
         <value>The visual state of the window.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="WaitForInputIdle">
@@ -270,6 +283,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">When the parameter passed in is not a valid number.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
   </Members>

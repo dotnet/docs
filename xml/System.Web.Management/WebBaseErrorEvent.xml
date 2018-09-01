@@ -1,4 +1,4 @@
-﻿<Type Name="WebBaseErrorEvent" FullName="System.Web.Management.WebBaseErrorEvent">
+<Type Name="WebBaseErrorEvent" FullName="System.Web.Management.WebBaseErrorEvent">
   <TypeSignature Language="C#" Value="public class WebBaseErrorEvent : System.Web.Management.WebManagementEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebBaseErrorEvent extends System.Web.Management.WebManagementEvent" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebBaseErrorEvent" />
@@ -78,6 +78,7 @@
     <altmember cref="T:System.Web.Management.WebManagementEvent" />
     <altmember cref="T:System.Web.Management.WebErrorEvent" />
     <altmember cref="T:System.Web.Management.WebRequestEvent" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

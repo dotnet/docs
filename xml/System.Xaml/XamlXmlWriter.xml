@@ -1,4 +1,4 @@
-﻿<Type Name="XamlXmlWriter" FullName="System.Xaml.XamlXmlWriter">
+<Type Name="XamlXmlWriter" FullName="System.Xaml.XamlXmlWriter">
   <TypeSignature Language="C#" Value="public class XamlXmlWriter : System.Xaml.XamlWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlXmlWriter extends System.Xaml.XamlWriter" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlXmlWriter" />
@@ -37,6 +37,7 @@
  ]]></format>
     </remarks>
     <altmember cref="M:System.Xaml.XamlServices.Save(System.IO.Stream,System.Object)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/7c11abec-1075-474c-9d9b-778e5dab21c3">Understanding XAML Node Stream Structures and Concepts</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="CommandFormat" FullName="System.Web.UI.MobileControls.CommandFormat">
+<Type Name="CommandFormat" FullName="System.Web.UI.MobileControls.CommandFormat">
   <TypeSignature Language="C#" Value="public enum CommandFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CommandFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.CommandFormat" />
@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
   </Docs>
   <Members>
     <Member MemberName="Button">
@@ -53,6 +54,7 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>Renders the <see cref="T:System.Web.UI.MobileControls.Command" /> control as a button. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="Link">
@@ -75,6 +77,7 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>Renders the <see cref="T:System.Web.UI.MobileControls.Command" /> control as a hyperlink. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
   </Members>

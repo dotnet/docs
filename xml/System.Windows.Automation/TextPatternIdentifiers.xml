@@ -1,4 +1,4 @@
-﻿<Type Name="TextPatternIdentifiers" FullName="System.Windows.Automation.TextPatternIdentifiers">
+<Type Name="TextPatternIdentifiers" FullName="System.Windows.Automation.TextPatternIdentifiers">
   <TypeSignature Language="C#" Value="public static class TextPatternIdentifiers" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TextPatternIdentifiers extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TextPatternIdentifiers" />
@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-providers-overview.md">UI Automation Providers Overview</related>
   </Docs>
   <Members>
     <Member MemberName="AnimationStyleAttribute">
@@ -83,7 +84,7 @@
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the [BackgroundColor](http://msdn.microsoft.com/library/default.asp?url=/library/gdi/colors_9xiq.asp) attribute of a text range.</summary>
+        <summary>Identifies the BackgroundColor attribute of a text range.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -302,7 +303,7 @@
 ## Remarks  
  Refers to the relative stroke, thickness or boldness of a font.  
   
- This is modeled after the `lfWeight` field in [GDI LOGFONT](http://msdn.microsoft.com/library/default.asp?url=/library/gdi/fontext_1wmq.asp). For consistency, the following values have been adopted from LOGFONT: 0=DontCare, 100=Thin, 200=ExtraLight or UltraLight, 300=Light, 400=Normal or Regular, 500=Medium, 600=SemiBold or DemiBold, 700=Bold, 800=ExtraBold or UltraBold, and 900=Heavy or Black.  
+ This is modeled after the `lfWeight` field in GDI LOGFONT. For consistency, the following values have been adopted from LOGFONT: 0=DontCare, 100=Thin, 200=ExtraLight or UltraLight, 300=Light, 400=Normal or Regular, 500=Medium, 600=SemiBold or DemiBold, 700=Bold, 800=ExtraBold or UltraBold, and 900=Heavy or Black.  
   
  This identifier is used by UI Automation providers. UI Automation client applications should use the equivalent field in <xref:System.Windows.Automation.TextPattern>.  
   
@@ -333,7 +334,7 @@
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the [ForegroundColor](http://msdn.microsoft.com/library/default.asp?url=/library/gdi/colors_9xiq.asp) ([COLORREF](http://msdn.microsoft.com/library/default.asp?url=/library/gdi/colors_9xiq.asp)) attribute of a text range.</summary>
+        <summary>Identifies the ForegroundColor (COLORREF) attribute of a text range.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

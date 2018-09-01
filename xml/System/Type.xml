@@ -1,4 +1,4 @@
-﻿<Type Name="Type" FullName="System.Type">
+<Type Name="Type" FullName="System.Type">
   <TypeSignature Language="C#" Value="public abstract class Type : System.Reflection.MemberInfo, System.Reflection.IReflect, System.Runtime.InteropServices._Type" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Type extends System.Reflection.MemberInfo implements class System.Reflection.IReflect, class System.Runtime.InteropServices._Type" />
   <TypeSignature Language="DocId" Value="T:System.Type" />
@@ -239,6 +239,7 @@
     <altmember cref="T:System.Object" />
     <altmember cref="N:System.Reflection" />
     <altmember cref="T:System.Security.Permissions.ReflectionPermission" />
+    <related type="Article" href="~/docs/framework/reflection-and-codedom/viewing-type-information.md">Viewing Type Information</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -436,6 +437,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <altmember cref="P:System.Type.FullName" />
         <altmember cref="P:System.Type.Namespace" />
         <altmember cref="T:System.Reflection.AssemblyName" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md">Specifying Fully Qualified Type Names</related>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -572,6 +574,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <altmember cref="M:System.Type.FindInterfaces(System.Reflection.TypeFilter,System.Object)" />
         <altmember cref="P:System.Type.UnderlyingSystemType" />
         <altmember cref="M:System.Type.IsSubclassOf(System.Type)" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/reflection-and-generic-types.md">Reflection and Generic Types</related>
       </Docs>
     </Member>
     <Member MemberName="ContainsGenericParameters">
@@ -630,6 +633,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <altmember cref="P:System.Type.ContainsGenericParameters" />
         <altmember cref="P:System.Type.IsGenericTypeDefinition" />
         <altmember cref="M:System.Type.MakeGenericType(System.Type[])" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/reflection-and-generic-types.md">Reflection and Generic Types</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-examine-and-instantiate-generic-types-with-reflection.md">How to: Examine and Instantiate Generic Types with Reflection</related>
       </Docs>
     </Member>
     <Member MemberName="DeclaringMethod">
@@ -694,6 +699,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  ]]></format>
         </remarks>
         <altmember cref="P:System.Type.IsGenericParameter" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/reflection-and-generic-types.md">Reflection and Generic Types</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-examine-and-instantiate-generic-types-with-reflection.md">How to: Examine and Instantiate Generic Types with Reflection</related>
       </Docs>
     </Member>
     <Member MemberName="DeclaringType">
@@ -1501,6 +1508,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <altmember cref="P:System.Type.Namespace" />
         <altmember cref="P:System.Type.AssemblyQualifiedName" />
         <altmember cref="T:System.Reflection.AssemblyName" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md">Specifying Fully Qualified Type Names</related>
       </Docs>
     </Member>
     <Member MemberName="GenericParameterAttributes">
@@ -1555,6 +1563,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <exception cref="T:System.NotSupportedException">The invoked method is not supported in the base class.</exception>
         <altmember cref="M:System.Type.GetGenericParameterConstraints" />
         <altmember cref="P:System.Type.IsGenericParameter" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/reflection-and-generic-types.md">Reflection and Generic Types</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-examine-and-instantiate-generic-types-with-reflection.md">How to: Examine and Instantiate Generic Types with Reflection</related>
       </Docs>
     </Member>
     <Member MemberName="GenericParameterPosition">
@@ -1626,6 +1636,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <altmember cref="M:System.Type.MakeGenericType(System.Type[])" />
         <altmember cref="P:System.Type.ContainsGenericParameters" />
         <altmember cref="P:System.Type.IsGenericParameter" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/reflection-and-generic-types.md">Reflection and Generic Types</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-examine-and-instantiate-generic-types-with-reflection.md">How to: Examine and Instantiate Generic Types with Reflection</related>
       </Docs>
     </Member>
     <Member MemberName="GenericTypeArguments">
@@ -3565,6 +3577,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <exception cref="T:System.NotSupportedException">The invoked method is not supported in the base class. Derived classes must provide an implementation.</exception>
         <altmember cref="P:System.Type.ContainsGenericParameters" />
         <altmember cref="P:System.Type.IsGenericTypeDefinition" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/reflection-and-generic-types.md">Reflection and Generic Types</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-examine-and-instantiate-generic-types-with-reflection.md">How to: Examine and Instantiate Generic Types with Reflection</related>
       </Docs>
     </Member>
     <Member MemberName="GetGenericParameterConstraints">
@@ -3619,6 +3633,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Type" /> object is not a generic type parameter. That is, the <see cref="P:System.Type.IsGenericParameter" /> property returns <see langword="false" />.</exception>
         <altmember cref="P:System.Type.GenericParameterAttributes" />
         <altmember cref="P:System.Type.IsGenericParameter" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-examine-and-instantiate-generic-types-with-reflection.md">How to: Examine and Instantiate Generic Types with Reflection</related>
       </Docs>
     </Member>
     <Member MemberName="GetGenericTypeDefinition">
@@ -3686,6 +3701,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <altmember cref="M:System.Type.MakeGenericType(System.Type[])" />
         <altmember cref="P:System.Type.ContainsGenericParameters" />
         <altmember cref="P:System.Type.IsGenericTypeDefinition" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/reflection-and-generic-types.md">Reflection and Generic Types</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-examine-and-instantiate-generic-types-with-reflection.md">How to: Examine and Instantiate Generic Types with Reflection</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -7104,6 +7121,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <remarks>To be added.</remarks>
         <exception cref="T:System.Reflection.TargetInvocationException">A class initializer is invoked and throws an exception.</exception>
         <altmember cref="T:System.TypeLoadException" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md">Specifying Fully Qualified Type Names</related>
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -7307,6 +7325,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         <altmember cref="M:System.Reflection.Assembly.GetAssembly(System.Type)" />
         <altmember cref="M:System.Reflection.Assembly.GetType(System.String)" />
         <altmember cref="T:System.Reflection.AssemblyName" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md">Specifying Fully Qualified Type Names</related>
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -7534,6 +7553,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         <altmember cref="M:System.Reflection.Assembly.GetAssembly(System.Type)" />
         <altmember cref="M:System.Reflection.Assembly.GetType(System.String)" />
         <altmember cref="T:System.Reflection.AssemblyName" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md">Specifying Fully Qualified Type Names</related>
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -7745,6 +7765,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         <altmember cref="M:System.Reflection.Assembly.GetAssembly(System.Type)" />
         <altmember cref="M:System.Reflection.Assembly.GetType(System.String)" />
         <altmember cref="T:System.Reflection.AssemblyName" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md">Specifying Fully Qualified Type Names</related>
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -8405,7 +8426,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
    
   
 ## Examples  
- The following example uses the CLSID of the Microsoft Word [Application object](http://msdn.microsoft.com/library/office/ff838565.aspx) to retrieve a COM type that represents the Microsoft Word application. It then instantiates the type by calling the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method, and closes it by calling the [Application.Quit](http://msdn.microsoft.com/library/office/ff844895.aspx) method.  
+ The following example uses the CLSID of the Microsoft Word [Application object](https://msdn.microsoft.com/vba/word-vba/articles/application-object-word) to retrieve a COM type that represents the Microsoft Word application. It then instantiates the type by calling the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method, and closes it by calling the [Application.Quit](https://msdn.microsoft.com/VBA/Word-VBA/articles/application-quit-method-word) method.  
   
  [!code-csharp[System.Type.GetTypeFromCLSID#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.type.gettypefromclsid/cs/gettypefromclsid1.cs#1)]
  [!code-vb[System.Type.GetTypeFromCLSID#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.type.gettypefromclsid/vb/gettypefromclsid1.vb#1)]  
@@ -8491,7 +8512,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
    
   
 ## Examples  
- The following example uses the CLSID of the Microsoft Word [Application object](http://msdn.microsoft.com/library/office/ff838565.aspx) to retrieve a COM type that represents the Microsoft Word application. It then instantiates the type by calling the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method, and closes it by calling the [Application.Quit](http://msdn.microsoft.com/library/office/ff844895.aspx) method. An exception is thrown if an error occurs while loading the type.  
+ The following example uses the CLSID of the Microsoft Word [Application object](https://msdn.microsoft.com/vba/word-vba/articles/application-object-word) to retrieve a COM type that represents the Microsoft Word application. It then instantiates the type by calling the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method, and closes it by calling the [Application.Quit](https://msdn.microsoft.com/VBA/Word-VBA/articles/application-quit-method-word) method. An exception is thrown if an error occurs while loading the type.  
   
  [!code-csharp[System.Type.GetTypeFromCLSID#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.type.gettypefromclsid/cs/gettypefromclsid_ex2.cs#2)]
  [!code-vb[System.Type.GetTypeFromCLSID#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.type.gettypefromclsid/vb/gettypefromclsid_ex2.vb#2)]  
@@ -8568,7 +8589,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
    
   
 ## Examples  
- The following example uses the CLSID of the Microsoft Word [Application object](http://msdn.microsoft.com/library/office/ff838565.aspx) to retrieve a COM type that represents the Microsoft Word application from a server named computer17.central.contoso.com. It then instantiates the type by calling the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method, and closes it by calling the [Application.Quit](http://msdn.microsoft.com/library/office/ff844895.aspx) method.  
+ The following example uses the CLSID of the Microsoft Word [Application object](https://msdn.microsoft.com/vba/word-vba/articles/application-object-word) to retrieve a COM type that represents the Microsoft Word application from a server named computer17.central.contoso.com. It then instantiates the type by calling the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method, and closes it by calling the [Application.Quit](https://msdn.microsoft.com/VBA/Word-VBA/articles/application-quit-method-word) method.  
   
  [!code-csharp[System.Type.GetTypeFromCLSID#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.type.gettypefromclsid/cs/gettypefromclsid_ex3.cs#3)]
  [!code-vb[System.Type.GetTypeFromCLSID#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.type.gettypefromclsid/vb/gettypefromclsid_ex3.vb#3)]  
@@ -8654,7 +8675,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
    
   
 ## Examples  
- The following example uses the CLSID of the Microsoft Word [Application object](http://msdn.microsoft.com/library/office/ff838565.aspx) to retrieve a COM type that represents the Microsoft Word application from a server named computer17.central.contoso.com. It then instantiates the type by calling the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method, and closes it by calling the [Application.Quit](http://msdn.microsoft.com/library/office/ff844895.aspx) method. An exception is thrown if an error occurs while loading the type.  
+ The following example uses the CLSID of the Microsoft Word [Application object](https://msdn.microsoft.com/vba/word-vba/articles/application-object-word) to retrieve a COM type that represents the Microsoft Word application from a server named computer17.central.contoso.com. It then instantiates the type by calling the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method, and closes it by calling the [Application.Quit](https://msdn.microsoft.com/VBA/Word-VBA/articles/application-quit-method-word) method. An exception is thrown if an error occurs while loading the type.  
   
  [!code-csharp[System.Type.GetTypeFromCLSID#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.type.gettypefromclsid/cs/gettypefromclsid_ex4.cs#4)]
  [!code-vb[System.Type.GetTypeFromCLSID#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.type.gettypefromclsid/vb/gettypefromclsid_ex4.vb#4)]  
@@ -10344,6 +10365,7 @@ GetType(Array).IsAssignableFrom(type)
         <altmember cref="T:System.Reflection.TypeAttributes" />
         <altmember cref="P:System.Type.IsLayoutSequential" />
         <altmember cref="P:System.Type.IsExplicitLayout" />
+        <related type="Article" href="~/docs/standard/metadata-and-self-describing-components.md">Metadata and Self-Describing Components</related>
       </Docs>
     </Member>
     <Member MemberName="IsByRef">
@@ -10992,6 +11014,7 @@ GetType(Array).IsAssignableFrom(type)
         <altmember cref="T:System.Runtime.InteropServices.StructLayoutAttribute" />
         <altmember cref="P:System.Type.IsAutoLayout" />
         <altmember cref="P:System.Type.IsLayoutSequential" />
+        <related type="Article" href="~/docs/standard/metadata-and-self-describing-components.md">Metadata and Self-Describing Components</related>
       </Docs>
     </Member>
     <Member MemberName="IsGenericMethodParameter">
@@ -11078,6 +11101,8 @@ GetType(Array).IsAssignableFrom(type)
         <altmember cref="M:System.Type.GetGenericArguments" />
         <altmember cref="M:System.Type.GetGenericParameterConstraints" />
         <altmember cref="P:System.Type.GenericParameterAttributes" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/reflection-and-generic-types.md">Reflection and Generic Types</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-examine-and-instantiate-generic-types-with-reflection.md">How to: Examine and Instantiate Generic Types with Reflection</related>
       </Docs>
     </Member>
     <Member MemberName="IsGenericType">
@@ -11160,6 +11185,8 @@ GetType(Array).IsAssignableFrom(type)
         </remarks>
         <altmember cref="P:System.Type.ContainsGenericParameters" />
         <altmember cref="P:System.Type.IsGenericTypeDefinition" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/reflection-and-generic-types.md">Reflection and Generic Types</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-examine-and-instantiate-generic-types-with-reflection.md">How to: Examine and Instantiate Generic Types with Reflection</related>
       </Docs>
     </Member>
     <Member MemberName="IsGenericTypeDefinition">
@@ -11215,6 +11242,8 @@ GetType(Array).IsAssignableFrom(type)
         </remarks>
         <altmember cref="P:System.Type.ContainsGenericParameters" />
         <altmember cref="M:System.Type.GetGenericTypeDefinition" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/reflection-and-generic-types.md">Reflection and Generic Types</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-examine-and-instantiate-generic-types-with-reflection.md">How to: Examine and Instantiate Generic Types with Reflection</related>
       </Docs>
     </Member>
     <Member MemberName="IsGenericTypeParameter">
@@ -11480,6 +11509,7 @@ GetType(Array).IsAssignableFrom(type)
         <altmember cref="T:System.Reflection.TypeAttributes" />
         <altmember cref="P:System.Type.IsAutoLayout" />
         <altmember cref="P:System.Type.IsExplicitLayout" />
+        <related type="Article" href="~/docs/standard/metadata-and-self-describing-components.md">Metadata and Self-Describing Components</related>
       </Docs>
     </Member>
     <Member MemberName="IsMarshalByRef">
@@ -12464,6 +12494,8 @@ GetType(Array).IsAssignableFrom(type)
         </remarks>
         <altmember cref="P:System.Type.IsSecuritySafeCritical" />
         <altmember cref="P:System.Type.IsSecurityTransparent" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
+        <related type="Article" href="~/docs/framework/security/security-changes.md">Security Changes in the .NET Framework</related>
       </Docs>
     </Member>
     <Member MemberName="IsSecuritySafeCritical">
@@ -12518,6 +12550,8 @@ GetType(Array).IsAssignableFrom(type)
         </remarks>
         <altmember cref="P:System.Type.IsSecurityCritical" />
         <altmember cref="P:System.Type.IsSecurityTransparent" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
+        <related type="Article" href="~/docs/framework/security/security-changes.md">Security Changes in the .NET Framework</related>
       </Docs>
     </Member>
     <Member MemberName="IsSecurityTransparent">
@@ -12566,6 +12600,8 @@ GetType(Array).IsAssignableFrom(type)
         </remarks>
         <altmember cref="P:System.Type.IsSecurityCritical" />
         <altmember cref="P:System.Type.IsSecuritySafeCritical" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
+        <related type="Article" href="~/docs/framework/security/security-changes.md">Security Changes in the .NET Framework</related>
       </Docs>
     </Member>
     <Member MemberName="IsSerializable">
@@ -13440,6 +13476,8 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
         <exception cref="T:System.NotSupportedException">The invoked method is not supported in the base class. Derived classes must provide an implementation.</exception>
         <altmember cref="P:System.Type.IsGenericTypeDefinition" />
         <altmember cref="M:System.Type.GetGenericTypeDefinition" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/reflection-and-generic-types.md">Reflection and Generic Types</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-examine-and-instantiate-generic-types-with-reflection.md">How to: Examine and Instantiate Generic Types with Reflection</related>
       </Docs>
     </Member>
     <Member MemberName="MakePointerType">
@@ -13763,6 +13801,7 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
         <altmember cref="T:System.String" />
         <altmember cref="P:System.Type.FullName" />
         <altmember cref="P:System.Type.AssemblyQualifiedName" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md">Specifying Fully Qualified Type Names</related>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -14011,6 +14050,8 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
         <altmember cref="M:System.Reflection.Assembly.GetAssembly(System.Type)" />
         <altmember cref="M:System.Reflection.Assembly.GetType(System.String)" />
         <altmember cref="T:System.Reflection.AssemblyName" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md">Specifying Fully Qualified Type Names</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md">How to: Load Assemblies into the Reflection-Only Context</related>
       </Docs>
     </Member>
     <Member MemberName="StructLayoutAttribute">

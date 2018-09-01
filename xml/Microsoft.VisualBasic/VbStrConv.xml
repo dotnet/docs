@@ -1,4 +1,4 @@
-﻿<Type Name="VbStrConv" FullName="Microsoft.VisualBasic.VbStrConv">
+<Type Name="VbStrConv" FullName="Microsoft.VisualBasic.VbStrConv">
   <TypeSignature Language="C#" Value="public enum VbStrConv" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VbStrConv extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.VbStrConv" />
@@ -30,6 +30,10 @@
  ]]></format>
     </remarks>
     <altmember cref="M:Microsoft.VisualBasic.Strings.StrConv(System.String,Microsoft.VisualBasic.VbStrConv,System.Int32)" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/constants-and-enumerations.md">Constants and Enumerations</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/constants-enums/when-to-use-an-enumeration.md">When to Use an Enumeration</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md">How to: Refer to an Enumeration Member</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/introduction-to-strings.md">Introduction to Strings in Visual Basic</related>
   </Docs>
   <Members>
     <Member MemberName="Hiragana">

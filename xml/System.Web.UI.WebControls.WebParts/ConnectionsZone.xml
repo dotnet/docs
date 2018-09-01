@@ -1,4 +1,4 @@
-﻿<Type Name="ConnectionsZone" FullName="System.Web.UI.WebControls.WebParts.ConnectionsZone">
+<Type Name="ConnectionsZone" FullName="System.Web.UI.WebControls.WebParts.ConnectionsZone">
   <TypeSignature Language="C#" Value="public class ConnectionsZone : System.Web.UI.WebControls.WebParts.ToolZone" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectionsZone extends System.Web.UI.WebControls.WebParts.ToolZone" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" />
@@ -99,6 +99,8 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionPoint" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Web Parts Connections Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -144,6 +146,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CancelVerb">
@@ -371,6 +374,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ConfigureVerb">
@@ -1465,7 +1469,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
  When this method is invoked, it determines whether view state was previously saved for the control and, if so, sets the view state to the saved value. The method overrides the <xref:System.Web.UI.WebControls.WebParts.ToolZone.LoadViewState%2A> method inherited from the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class, so that it can add to the base implementation and restore state for the several zone-level verbs used in the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
   

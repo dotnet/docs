@@ -1,4 +1,4 @@
-﻿<Type Name="HttpWebResponse" FullName="System.Net.HttpWebResponse">
+<Type Name="HttpWebResponse" FullName="System.Net.HttpWebResponse">
   <TypeSignature Language="C#" Value="public class HttpWebResponse : System.Net.WebResponse, IDisposable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit HttpWebResponse extends System.Net.WebResponse implements class System.IDisposable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Net.HttpWebResponse" />
@@ -550,7 +550,7 @@ The contents of the response from the Internet resource are returned as a <xref:
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see cref="M:System.Net.HttpWebResponse.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see cref="M:System.Net.HttpWebResponse.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
       </Docs>
     </Member>
@@ -1239,7 +1239,8 @@ The contents of the response from the Internet resource are returned as a <xref:
         <summary>Gets a value that indicates whether headers are supported.</summary>
         <value>
           <see langword="true" /> if headers are supported; otherwise, <see langword="false" />. Always returns <see langword="true" />.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">

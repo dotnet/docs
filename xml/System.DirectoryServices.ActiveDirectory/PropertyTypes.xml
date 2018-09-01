@@ -1,4 +1,4 @@
-﻿<Type Name="PropertyTypes" FullName="System.DirectoryServices.ActiveDirectory.PropertyTypes">
+<Type Name="PropertyTypes" FullName="System.DirectoryServices.ActiveDirectory.PropertyTypes">
   <TypeSignature Language="C#" Value="public enum PropertyTypes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyTypes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.PropertyTypes" />
@@ -22,6 +22,7 @@
   <Docs>
     <summary>Specifies the property types to select when calling the <see cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindAllProperties(System.DirectoryServices.ActiveDirectory.PropertyTypes)" /> method.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/2d756396-d57b-489a-ac97-2db225613751">Accessing the Schema</related>
   </Docs>
   <Members>
     <Member MemberName="Indexed">

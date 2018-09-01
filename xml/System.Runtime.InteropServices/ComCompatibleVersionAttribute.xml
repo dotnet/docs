@@ -1,4 +1,4 @@
-﻿<Type Name="ComCompatibleVersionAttribute" FullName="System.Runtime.InteropServices.ComCompatibleVersionAttribute">
+<Type Name="ComCompatibleVersionAttribute" FullName="System.Runtime.InteropServices.ComCompatibleVersionAttribute">
   <TypeSignature Language="C#" Value="public sealed class ComCompatibleVersionAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComCompatibleVersionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComCompatibleVersionAttribute" />
@@ -59,6 +59,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.InteropServices.GuidAttribute" />
+    <related type="Article" href="~/docs/framework/tools/tlbexp-exe-type-library-exporter.md">Tlbexp.exe (Type Library Exporter)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

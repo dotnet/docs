@@ -1,4 +1,4 @@
-﻿<Type Name="IDeserializationCallback" FullName="System.Runtime.Serialization.IDeserializationCallback">
+<Type Name="IDeserializationCallback" FullName="System.Runtime.Serialization.IDeserializationCallback">
   <TypeSignature Language="C#" Value="public interface IDeserializationCallback" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDeserializationCallback" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.IDeserializationCallback" />
@@ -49,6 +49,7 @@
   
  If an object needs to execute code on its child objects, it can delay this action, implement <see cref="T:System.Runtime.Serialization.IDeserializationCallback" />, and execute the code only when it is called back on this interface.</para>
     </block>
+    <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
   </Docs>
   <Members>
     <Member MemberName="OnDeserialization">
@@ -99,6 +100,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
   </Members>

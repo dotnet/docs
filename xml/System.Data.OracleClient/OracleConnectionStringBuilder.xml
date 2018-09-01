@@ -1,4 +1,4 @@
-﻿<Type Name="OracleConnectionStringBuilder" FullName="System.Data.OracleClient.OracleConnectionStringBuilder">
+<Type Name="OracleConnectionStringBuilder" FullName="System.Data.OracleClient.OracleConnectionStringBuilder">
   <TypeSignature Language="C#" Value="public sealed class OracleConnectionStringBuilder : System.Data.Common.DbConnectionStringBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OracleConnectionStringBuilder extends System.Data.Common.DbConnectionStringBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleConnectionStringBuilder" />
@@ -78,6 +78,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -105,6 +106,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleConnectionStringBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -147,6 +149,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
         </remarks>
         <exception cref="T:System.Collections.Generic.KeyNotFoundException">Invalid key name within the connection string.</exception>
         <exception cref="T:System.FormatException">Invalid value within the connection string (specifically, when a Boolean or numeric value was expected but not supplied).</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -184,6 +187,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -228,6 +232,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="keyword" /> is null (<see langword="Nothing" /> in Visual Basic)</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -276,6 +281,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Enlist">
@@ -316,6 +322,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -392,6 +399,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -475,6 +483,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
           <paramref name="keyword" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
         <exception cref="T:System.Collections.Generic.KeyNotFoundException">Tried to add a key which does not exist within the available keys.</exception>
         <exception cref="T:System.FormatException">Invalid value within the connection string (specifically, when a Boolean or numeric value was expected but not supplied).</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -514,6 +523,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
         </remarks>
         <altmember cref="P:System.Data.OracleClient.OracleConnectionStringBuilder.Values" />
         <altmember cref="P:System.Data.OracleClient.OracleConnectionStringBuilder.Item(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="LoadBalanceTimeout">
@@ -554,6 +564,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="MaxPoolSize">
@@ -594,6 +605,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="MinPoolSize">
@@ -634,6 +646,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="OmitOracleConnectionName">
@@ -675,6 +688,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Password">
@@ -723,6 +737,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="PersistSecurityInfo">
@@ -763,6 +778,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Pooling">
@@ -803,6 +819,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -869,6 +886,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="keyword" /> is null (<see langword="Nothing" /> in Visual Basic).</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerialize">
@@ -903,6 +921,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
@@ -947,6 +966,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Unicode">
@@ -987,6 +1007,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="UserID">
@@ -1029,6 +1050,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -1066,6 +1088,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8434b608-c4d3-43d3-8ae3-6d8c6b726759">Building Connection Strings</related>
       </Docs>
     </Member>
   </Members>

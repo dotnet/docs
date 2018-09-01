@@ -1,4 +1,4 @@
-﻿<Type Name="HttpCapabilitiesSectionHandler" FullName="System.Web.Configuration.HttpCapabilitiesSectionHandler">
+<Type Name="HttpCapabilitiesSectionHandler" FullName="System.Web.Configuration.HttpCapabilitiesSectionHandler">
   <TypeSignature Language="C#" Value="public class HttpCapabilitiesSectionHandler : System.Configuration.IConfigurationSectionHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpCapabilitiesSectionHandler extends System.Object implements class System.Configuration.IConfigurationSectionHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpCapabilitiesSectionHandler" />
@@ -36,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Web Server Controls and Browser Capabilities</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +60,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.HttpCapabilitiesSectionHandler" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Web Server Controls and Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -96,6 +98,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Web Server Controls and Browser Capabilities</related>
       </Docs>
     </Member>
   </Members>

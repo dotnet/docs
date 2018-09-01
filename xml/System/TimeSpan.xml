@@ -1,4 +1,4 @@
-﻿<Type Name="TimeSpan" FullName="System.TimeSpan">
+<Type Name="TimeSpan" FullName="System.TimeSpan">
   <TypeSignature Language="C#" Value="public struct TimeSpan : IComparable, IComparable&lt;TimeSpan&gt;, IEquatable&lt;TimeSpan&gt;, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit TimeSpan extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;valuetype System.TimeSpan&gt;, class System.IEquatable`1&lt;valuetype System.TimeSpan&gt;, class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.TimeSpan" />
@@ -2987,6 +2987,8 @@ If the `input` argument is not a day value only, it must include an hours and a 
  -or-  
   
  At least one of the days, hours, minutes, or seconds components in <paramref name="input" /> is outside its valid range.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -3073,6 +3075,8 @@ If the `input` argument is not a day value only, it must include an hours and a 
   
  At least one of the days, hours, minutes, or seconds components in <paramref name="input" /> is outside its valid range.</exception>
         <altmember cref="M:System.TimeSpan.TryParseExact(System.String,System.String[],System.IFormatProvider,System.TimeSpan@)" />
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -3222,6 +3226,8 @@ If the `input` argument is not a day value only, it must include an hours and a 
  -or-  
   
  At least one of the days, hours, minutes, or seconds components in <paramref name="input" /> is outside its valid range.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -3313,6 +3319,8 @@ If the `input` argument is not a day value only, it must include an hours and a 
  -or-  
   
  At least one of the days, hours, minutes, or seconds components in <paramref name="input" /> is outside its valid range.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Seconds">
@@ -3966,6 +3974,8 @@ If the `input` argument is not a day value only, it must include an hours and a 
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The <paramref name="format" /> parameter is not recognized or is not supported.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -4045,6 +4055,8 @@ If the `input` argument is not a day value only, it must include an hours and a 
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The <paramref name="format" /> parameter is not recognized or is not supported.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="TotalDays">
@@ -4782,6 +4794,8 @@ If the `input` argument is not a day value only, it must include an hours and a 
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="TryParseExact">
@@ -4860,6 +4874,8 @@ If the `input` argument is not a day value only, it must include an hours and a 
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="TryParseExact">
@@ -5003,6 +5019,8 @@ If the `input` argument is not a day value only, it must include an hours and a 
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="TryParseExact">
@@ -5085,6 +5103,8 @@ If the `input` argument is not a day value only, it must include an hours and a 
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Zero">

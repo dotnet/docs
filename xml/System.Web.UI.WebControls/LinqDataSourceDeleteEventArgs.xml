@@ -1,4 +1,4 @@
-﻿<Type Name="LinqDataSourceDeleteEventArgs" FullName="System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs">
+<Type Name="LinqDataSourceDeleteEventArgs" FullName="System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs">
   <TypeSignature Language="C#" Value="public class LinqDataSourceDeleteEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinqDataSourceDeleteEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs" />
@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

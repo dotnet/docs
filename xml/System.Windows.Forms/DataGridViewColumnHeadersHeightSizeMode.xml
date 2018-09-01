@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewColumnHeadersHeightSizeMode" FullName="System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode">
+<Type Name="DataGridViewColumnHeadersHeightSizeMode" FullName="System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode">
   <TypeSignature Language="C#" Value="public enum DataGridViewColumnHeadersHeightSizeMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewColumnHeadersHeightSizeMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode" />
@@ -38,6 +38,7 @@
     <altmember cref="T:System.Windows.Forms.DataGridView" />
     <altmember cref="P:System.Windows.Forms.DataGridView.ColumnHeadersHeightSizeMode" />
     <altmember cref="Overload:System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight" />
+    <related type="Article" href="http://msdn.microsoft.com/library/a5620a9c-0d06-41e3-8934-c25ddb16c9e6">Sizing Options in the Windows Forms DataGridView Control</related>
   </Docs>
   <Members>
     <Member MemberName="AutoSize">

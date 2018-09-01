@@ -1,4 +1,4 @@
-﻿<Type Name="SoapAttributeOverrides" FullName="System.Xml.Serialization.SoapAttributeOverrides">
+<Type Name="SoapAttributeOverrides" FullName="System.Xml.Serialization.SoapAttributeOverrides">
   <TypeSignature Language="C#" Value="public class SoapAttributeOverrides" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapAttributeOverrides extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.SoapAttributeOverrides" />
@@ -65,6 +65,10 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
+    <related type="Article" href="~/docs/standard/serialization/introducing-xml-serialization.md">Introducing XML Serialization</related>
+    <related type="Article" href="~/docs/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md">How to: Serialize an Object as a SOAP-Encoded XML Stream</related>
+    <related type="Article" href="~/docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md">Attributes That Control Encoded SOAP Serialization</related>
+    <related type="Article" href="~/docs/standard/serialization/examples-of-xml-serialization.md">Examples of XML Serialization</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

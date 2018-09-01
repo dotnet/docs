@@ -1,4 +1,4 @@
-﻿<Type Name="ObjectQuery&lt;T&gt;" FullName="System.Data.Objects.ObjectQuery&lt;T&gt;">
+<Type Name="ObjectQuery&lt;T&gt;" FullName="System.Data.Objects.ObjectQuery&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class ObjectQuery&lt;T&gt; : System.Data.Objects.ObjectQuery, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Linq.IOrderedQueryable&lt;T&gt;, System.Linq.IQueryable&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectQuery`1&lt;T&gt; extends System.Data.Objects.ObjectQuery implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.IEnumerable, class System.ComponentModel.IListSource, class System.Linq.IOrderedQueryable, class System.Linq.IOrderedQueryable`1&lt;!T&gt;, class System.Linq.IQueryable, class System.Linq.IQueryable`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.ObjectQuery`1" />
@@ -58,6 +58,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/9e7d8837-28c5-429d-a824-7bafb59724cf">Entity SQL Language</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/641f9b68-9046-47a1-abb0-1c8eaeda0e2d">LINQ to Entities</related>
+    <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -77,6 +80,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects and Shaping Results (Entity Framework)</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -116,6 +120,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -196,6 +201,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="Except">
@@ -242,6 +248,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="query" /> parameter is <see langword="null" /> or an empty string.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects and Shaping Results (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -282,6 +289,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="GroupBy">
@@ -345,6 +353,7 @@
  -or-  
   
  The <paramref name="projection" /> parameter is <see langword="null" /> or an empty string.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="Include">
@@ -397,6 +406,7 @@
           <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is <see langword="empty" />.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -443,6 +453,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="query" /> parameter is <see langword="null" /> or is an empty string.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -490,6 +501,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value specified on set is not valid.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="OfType&lt;TResultType&gt;">
@@ -527,6 +539,8 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.EntitySqlException">The type specified is not valid.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/be01614e-070e-41be-9746-bb674b41e488(v=vs.90)">How to: Create and Execute Object Queries using Table-per-Hierarchy Inheritance (Entity Framework)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="OrderBy">
@@ -580,6 +594,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="keys" /> or <paramref name="parameters" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="key" /> is an empty string.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -638,6 +653,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
   
  <paramref name="parameters" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="projection" /> is an empty string.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="SelectValue&lt;TResultType&gt;">
@@ -700,6 +716,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
   
  <paramref name="parameters" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="projection" /> is an empty string.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="Skip">
@@ -758,6 +775,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
  -or-  
   
  <paramref name="count" /> is an empty string.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator">
@@ -790,6 +808,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -852,6 +871,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
           <paramref name="count" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="count" /> is an empty string.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -912,6 +932,7 @@ ObjectQuery <DiscontinuedProduct>.Union(ObjectQuery<Product>)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="query" /> parameter is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="UnionAll">
@@ -972,6 +993,7 @@ ObjectQuery <DiscontinuedProduct>.Union(ObjectQuery<Product>)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="query" /> parameter is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="Where">
@@ -1023,6 +1045,7 @@ ObjectQuery <DiscontinuedProduct>.Union(ObjectQuery<Product>)
   
  <paramref name="parameters" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="predicate" /> is an empty string.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
   </Members>

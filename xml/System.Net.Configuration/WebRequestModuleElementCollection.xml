@@ -1,4 +1,4 @@
-﻿<Type Name="WebRequestModuleElementCollection" FullName="System.Net.Configuration.WebRequestModuleElementCollection">
+<Type Name="WebRequestModuleElementCollection" FullName="System.Net.Configuration.WebRequestModuleElementCollection">
   <TypeSignature Language="C#" Value="public sealed class WebRequestModuleElementCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebRequestModuleElementCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.WebRequestModuleElementCollection" />
@@ -32,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

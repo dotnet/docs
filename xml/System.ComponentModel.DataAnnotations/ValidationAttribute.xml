@@ -1,4 +1,4 @@
-﻿<Type Name="ValidationAttribute" FullName="System.ComponentModel.DataAnnotations.ValidationAttribute">
+<Type Name="ValidationAttribute" FullName="System.ComponentModel.DataAnnotations.ValidationAttribute">
   <TypeSignature Language="C#" Value="public abstract class ValidationAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ValidationAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.ValidationAttribute" />
@@ -31,6 +31,7 @@
  ]]></format>
     </remarks>
     <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">The <see cref="P:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceType" /> and <see cref="P:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceName" /> properties for localized error message are set at the same time that the non-localized <see cref="P:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage" /> property error message is set.</exception>
+    <related type="Article" href="http://msdn.microsoft.com/library/ef99e518-f112-4797-bf9c-79f4ceb466ea">How to: Customize Data Field Validation in the Data Model Using Custom Attributes</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="XmlResolver" FullName="System.Xml.XmlResolver">
+<Type Name="XmlResolver" FullName="System.Xml.XmlResolver">
   <TypeSignature Language="C#" Value="public abstract class XmlResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlResolver extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlResolver" />
@@ -82,6 +82,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -299,6 +300,7 @@ resolver.Credentials = myCache;
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ResolveUri">

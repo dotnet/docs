@@ -1,4 +1,4 @@
-﻿<Type Name="AsyncFlowControl" FullName="System.Threading.AsyncFlowControl">
+<Type Name="AsyncFlowControl" FullName="System.Threading.AsyncFlowControl">
   <TypeSignature Language="C#" Value="public struct AsyncFlowControl : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit AsyncFlowControl extends System.ValueType implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.AsyncFlowControl" />
@@ -89,6 +89,7 @@
  -or-  
   
  The <see cref="T:System.Threading.AsyncFlowControl" /> structure has already been used to call <see cref="M:System.Threading.AsyncFlowControl.Dispose" /> or <see cref="M:System.Threading.AsyncFlowControl.Undo" />.</exception>
+        <related type="Article" href="~/docs/standard/garbage-collection/unmanaged.md">Cleaning Up Unmanaged Resources</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Equals">

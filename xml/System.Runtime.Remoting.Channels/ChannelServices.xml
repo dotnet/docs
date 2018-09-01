@@ -1,4 +1,4 @@
-﻿<Type Name="ChannelServices" FullName="System.Runtime.Remoting.Channels.ChannelServices">
+<Type Name="ChannelServices" FullName="System.Runtime.Remoting.Channels.ChannelServices">
   <TypeSignature Language="C#" Value="public sealed class ChannelServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ChannelServices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.ChannelServices" />
@@ -37,6 +37,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cxk374d9(v=vs.90)">Application Domains</related>
   </Docs>
   <Members>
     <Member MemberName="AsyncDispatchMessage">
@@ -403,7 +404,7 @@
   
  You cannot register two channels with the same name in a <xref:System.AppDomain>. By default, the name of a <xref:System.Runtime.Remoting.Channels.Http.HttpChannel> is "http" and the name of a <xref:System.Runtime.Remoting.Channels.Tcp.TcpChannel> is "tcp". Therefore, if you want to register two channels of the same type, you must specify a different name for one of them through configuration properties.  
   
- For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/library/226ecf74-ebbd-4ea0-a701-dcf4441deefe) and [\<channel> Element (Template)](http://msdn.microsoft.com/library/73399d48-f0fd-46e9-828b-6cdafde5ffce).  
+ For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kw7c6kwc(v=vs.100)) and [\<channel> Element (Template)](http://msdn.microsoft.com/library/73399d48-f0fd-46e9-828b-6cdafde5ffce).  
   
  If the `ensureSecurity` parameter is set to `true`, the remoting system determines whether the channel implements <xref:System.Runtime.Remoting.Channels.ISecurableChannel>, and if so, enables encryption and digital signatures. An exception is thrown if the channel does not implement <xref:System.Runtime.Remoting.Channels.ISecurableChannel>.  
   

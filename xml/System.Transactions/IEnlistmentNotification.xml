@@ -1,4 +1,4 @@
-﻿<Type Name="IEnlistmentNotification" FullName="System.Transactions.IEnlistmentNotification">
+<Type Name="IEnlistmentNotification" FullName="System.Transactions.IEnlistmentNotification">
   <TypeSignature Language="C#" Value="public interface IEnlistmentNotification" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEnlistmentNotification" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.IEnlistmentNotification" />
@@ -54,6 +54,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Transactions.ISinglePhaseNotification" />
+    <related type="Article" href="http://msdn.microsoft.com/library/786a12c2-d530-49f4-9c59-5c973e15a11d">Enlisting Resources as Participants in a Transaction</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/694ea153-e4db-41ae-96ac-9ac66dcb69a9">Committing a Transaction in Single-Phase and Multi-Phase</related>
   </Docs>
   <Members>
     <Member MemberName="Commit">

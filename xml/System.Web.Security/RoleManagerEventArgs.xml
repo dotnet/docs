@@ -1,4 +1,4 @@
-﻿<Type Name="RoleManagerEventArgs" FullName="System.Web.Security.RoleManagerEventArgs">
+<Type Name="RoleManagerEventArgs" FullName="System.Web.Security.RoleManagerEventArgs">
   <TypeSignature Language="C#" Value="public sealed class RoleManagerEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RoleManagerEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.RoleManagerEventArgs" />
@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using Roles</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +59,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using Roles</related>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -100,6 +102,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using Roles</related>
       </Docs>
     </Member>
     <Member MemberName="RolesPopulated">
@@ -140,6 +143,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using Roles</related>
       </Docs>
     </Member>
   </Members>

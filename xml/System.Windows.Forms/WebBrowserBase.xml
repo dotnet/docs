@@ -1,4 +1,4 @@
-﻿<Type Name="WebBrowserBase" FullName="System.Windows.Forms.WebBrowserBase">
+<Type Name="WebBrowserBase" FullName="System.Windows.Forms.WebBrowserBase">
   <TypeSignature Language="C#" Value="public class WebBrowserBase : System.Windows.Forms.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebBrowserBase extends System.Windows.Forms.Control" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserBase" />
@@ -87,6 +87,7 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <forInternalUseOnly />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198812">WebBrowser Control</related>
       </Docs>
     </Member>
     <Member MemberName="AllowDrop">

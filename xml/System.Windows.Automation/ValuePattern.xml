@@ -1,4 +1,4 @@
-﻿<Type Name="ValuePattern" FullName="System.Windows.Automation.ValuePattern">
+<Type Name="ValuePattern" FullName="System.Windows.Automation.ValuePattern">
   <TypeSignature Language="C#" Value="public class ValuePattern : System.Windows.Automation.BasePattern" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValuePattern extends System.Windows.Automation.BasePattern" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ValuePattern" />
@@ -18,6 +18,9 @@
     <summary>Represents a control that has an intrinsic value that does not span a range and can be represented as a string. This string may or may not be editable depending on the control and its settings.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Windows.Automation.Provider.IValueProvider" />
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md">UI Automation Control Patterns for Clients</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771478(v=vs.90)">TextPattern Insert Text Sample</related>
   </Docs>
   <Members>
     <Member MemberName="Cached">
@@ -50,6 +53,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The requested property is not in the cache.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771478(v=vs.90)">TextPattern Insert Text Sample</related>
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -81,6 +85,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771478(v=vs.90)">TextPattern Insert Text Sample</related>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnlyProperty">
@@ -119,6 +124,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771478(v=vs.90)">TextPattern Insert Text Sample</related>
       </Docs>
     </Member>
     <Member MemberName="Pattern">
@@ -157,6 +163,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771478(v=vs.90)">TextPattern Insert Text Sample</related>
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -199,6 +206,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The control is read-only.</exception>
         <exception cref="T:System.Windows.Automation.ElementNotEnabledException">The control is not enabled.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771478(v=vs.90)">TextPattern Insert Text Sample</related>
       </Docs>
     </Member>
     <Member MemberName="ValueProperty">
@@ -235,6 +243,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771478(v=vs.90)">TextPattern Insert Text Sample</related>
       </Docs>
     </Member>
   </Members>

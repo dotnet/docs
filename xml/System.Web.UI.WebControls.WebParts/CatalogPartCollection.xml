@@ -1,4 +1,4 @@
-﻿<Type Name="CatalogPartCollection" FullName="System.Web.UI.WebControls.WebParts.CatalogPartCollection">
+<Type Name="CatalogPartCollection" FullName="System.Web.UI.WebControls.WebParts.CatalogPartCollection">
   <TypeSignature Language="C#" Value="public sealed class CatalogPartCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CatalogPartCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" />
@@ -56,6 +56,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -73,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -105,6 +107,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -150,6 +153,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -174,6 +178,7 @@
         <param name="catalogParts">An <see cref="T:System.Collections.ICollection" /> of additional <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" /> class by passing in an <see cref="T:System.Collections.ICollection" /> collection of the existing <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls in a zone, and an additional collection of controls.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -219,6 +224,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -254,6 +260,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -282,6 +289,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -327,6 +335,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -381,6 +390,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -426,6 +436,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="NotifyCollectionChangedAction" FullName="System.Collections.Specialized.NotifyCollectionChangedAction">
+<Type Name="NotifyCollectionChangedAction" FullName="System.Collections.Specialized.NotifyCollectionChangedAction">
   <TypeSignature Language="C#" Value="public enum NotifyCollectionChangedAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NotifyCollectionChangedAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.NotifyCollectionChangedAction" />
@@ -38,6 +38,7 @@
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Collections.Specialized.INotifyCollectionChanged" />
     <altmember cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
+    <related type="ExternalDocumentation" href="http://www.codeproject.com/Articles/1004644/ObservableCollection-Simply-Explained">ObservableCollection Simply Explained</related>
   </Docs>
   <Members>
     <Member MemberName="Add">

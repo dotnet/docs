@@ -1,4 +1,4 @@
-﻿<Type Name="PageTheme" FullName="System.Web.UI.PageTheme">
+<Type Name="PageTheme" FullName="System.Web.UI.PageTheme">
   <TypeSignature Language="C#" Value="public abstract class PageTheme" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PageTheme extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PageTheme" />
@@ -35,6 +35,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.Page" />
+    <related type="Article" href="http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">Introduction to ASP.NET Themes</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +59,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PageTheme" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">Introduction to ASP.NET Themes</related>
       </Docs>
     </Member>
     <Member MemberName="AppRelativeTemplateSourceDirectory">
@@ -398,6 +400,7 @@
         <altmember cref="Overload:System.Web.UI.TemplateControl.XPath" />
         <altmember cref="T:System.Web.UI.XPathBinder" />
         <altmember cref="T:System.Xml.XPath.XPathExpression" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="XPath">
@@ -478,6 +481,7 @@
         <altmember cref="T:System.Web.UI.XPathBinder" />
         <altmember cref="T:System.Xml.IXmlNamespaceResolver" />
         <altmember cref="T:System.Xml.XPath.XPathExpression" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="XPathSelect">

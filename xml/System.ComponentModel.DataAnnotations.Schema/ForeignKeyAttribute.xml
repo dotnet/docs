@@ -1,4 +1,4 @@
-﻿<Type Name="ForeignKeyAttribute" FullName="System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute">
+<Type Name="ForeignKeyAttribute" FullName="System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute">
   <TypeSignature Language="C#" Value="public class ForeignKeyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ForeignKeyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute" />
@@ -69,7 +69,7 @@ The annotation may be placed on the foreign key property and specify the associa
   
 ## Remarks
 
-If you add the `ForeignKey` attribute to a foreign key property, `name` should specify the name of the associated navigation property. If you add the `ForeignKey` attribute to a navigation property, `name` should specify the name of one or more associated foreign keys. If a navigation property has multiple foreign keys, use commas to separate the list of foreign key names. For more information, see [Code First Data Annotations](https://msdn.microsoft.com/en-us/library/jj591583(v=vs.113).aspx).
+If you add the `ForeignKey` attribute to a foreign key property, `name` should specify the name of the associated navigation property. If you add the `ForeignKey` attribute to a navigation property, `name` should specify the name of one or more associated foreign keys. If a navigation property has multiple foreign keys, use commas to separate the list of foreign key names. For more information, see [Code First Data Annotations](https://msdn.microsoft.com/library/jj591583(v=vs.113).aspx).
   
       ]]></format>
         </remarks>
@@ -104,7 +104,7 @@ If you add the `ForeignKey` attribute to a foreign key property, `name` should s
   
 ## Remarks
 
-If the `ForeignKey` attribute is applied to a foreign key property, the `Name` property specifies the name of the associated navigation property. If the `ForeignKey` attribute is applied to a navigation property, the `Name` property specifies the name of one or more associated foreign keys. If a navigation property has multiple foreign keys, commas separate the list of foreign key names. For more information, see [Code First Data Annotations](https://msdn.microsoft.com/en-us/library/jj591583(v=vs.113).aspx).
+If the `ForeignKey` attribute is applied to a foreign key property, the `Name` property specifies the name of the associated navigation property. If the `ForeignKey` attribute is applied to a navigation property, the `Name` property specifies the name of one or more associated foreign keys. If a navigation property has multiple foreign keys, commas separate the list of foreign key names. For more information, see [Code First Data Annotations](https://msdn.microsoft.com/library/jj591583(v=vs.113).aspx).
   
       ]]></format>
         </remarks>

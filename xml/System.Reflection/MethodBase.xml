@@ -1,4 +1,4 @@
-﻿<Type Name="MethodBase" FullName="System.Reflection.MethodBase">
+<Type Name="MethodBase" FullName="System.Reflection.MethodBase">
   <TypeSignature Language="C#" Value="public abstract class MethodBase : System.Reflection.MemberInfo, System.Runtime.InteropServices._MethodBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit MethodBase extends System.Reflection.MemberInfo implements class System.Runtime.InteropServices._MethodBase" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.MethodBase" />
@@ -1058,6 +1058,7 @@
         <exception cref="T:System.InvalidOperationException">The type that declares the method is an open generic type. That is, the <see cref="P:System.Type.ContainsGenericParameters" /> property returns <see langword="true" /> for the declaring type.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
         <altmember cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/dynamically-loading-and-using-types.md">Dynamically Loading and Using Types</related>
       </Docs>
     </Member>
     <Member MemberName="IsAbstract">
@@ -1888,6 +1889,8 @@ The following table summarizes the invariant conditions for terms specific to ge
         </remarks>
         <altmember cref="P:System.Reflection.MethodBase.IsSecuritySafeCritical" />
         <altmember cref="P:System.Reflection.MethodBase.IsSecurityTransparent" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
+        <related type="Article" href="~/docs/framework/security/security-changes.md">Security Changes in the .NET Framework Version 4.0</related>
       </Docs>
     </Member>
     <Member MemberName="IsSecuritySafeCritical">
@@ -1942,6 +1945,8 @@ The following table summarizes the invariant conditions for terms specific to ge
         </remarks>
         <altmember cref="P:System.Reflection.MethodBase.IsSecurityCritical" />
         <altmember cref="P:System.Reflection.MethodBase.IsSecurityTransparent" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
+        <related type="Article" href="~/docs/framework/security/security-changes.md">Security Changes in the .NET Framework Version 4.0</related>
       </Docs>
     </Member>
     <Member MemberName="IsSecurityTransparent">
@@ -1990,6 +1995,8 @@ The following table summarizes the invariant conditions for terms specific to ge
         </remarks>
         <altmember cref="P:System.Reflection.MethodBase.IsSecurityCritical" />
         <altmember cref="P:System.Reflection.MethodBase.IsSecuritySafeCritical" />
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
+        <related type="Article" href="~/docs/framework/security/security-changes.md">Security Changes in the .NET Framework Version 4.0</related>
       </Docs>
     </Member>
     <Member MemberName="IsSpecialName">

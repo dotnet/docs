@@ -1,4 +1,4 @@
-﻿<Type Name="XamlSetMarkupExtensionEventArgs" FullName="System.Windows.Markup.XamlSetMarkupExtensionEventArgs">
+<Type Name="XamlSetMarkupExtensionEventArgs" FullName="System.Windows.Markup.XamlSetMarkupExtensionEventArgs">
   <TypeSignature Language="C#" Value="public class XamlSetMarkupExtensionEventArgs : System.Windows.Markup.XamlSetValueEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlSetMarkupExtensionEventArgs extends System.Windows.Markup.XamlSetValueEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlSetMarkupExtensionEventArgs" />
@@ -24,6 +24,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Markup.XamlSetValueEventArgs" />
+    <related type="Article" href="http://msdn.microsoft.com/library/261b2b11-2dc0-462f-8c66-55b8c9c6e436">Markup Extensions for XAML Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="SaveChangesOptions" FullName="System.Data.Services.Client.SaveChangesOptions">
+<Type Name="SaveChangesOptions" FullName="System.Data.Services.Client.SaveChangesOptions">
   <TypeSignature Language="C#" Value="public enum SaveChangesOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SaveChangesOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.SaveChangesOptions" />
@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/00d993be-ffed-4dea-baf7-6eea982cdb54">Updating the Data Service (WCF Data Services)</related>
   </Docs>
   <Members>
     <Member MemberName="Batch">

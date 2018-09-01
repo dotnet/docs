@@ -15,7 +15,7 @@
   
  Use one the methods of the <xref:System.Speech.Synthesis.PromptBuilder> class whose name begins with "`Append`" to build content for prompts from text, Speech Synthesis Markup Language (SSML), files containing text or SSML markup, or prerecorded audio files.  
   
- See [Constructing a Complex Prompt](http://msdn.microsoft.com/library/552cb356-7344-473e-b0f2-7a9983f8c1a4) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/library/610116c7-3817-40ff-857b-5d41e8511043) for more information and examples.  
+ See [Constructing a Complex Prompt](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361616(v%3doffice.14)) in the [System Speech Programming Guide for .NET Framework](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361625(v%3doffice.14)) for more information and examples.  
   
  **Generate Speech**  
   
@@ -29,13 +29,13 @@
   
  To get information about the beginning and end of the speaking of a prompt by the <xref:System.Speech.Synthesis.SpeechSynthesizer>, use the <xref:System.Speech.Synthesis.SpeakStartedEventArgs> and <xref:System.Speech.Synthesis.SpeakCompletedEventArgs> classes.  
   
- See [Using Speech Synthesis Events](http://msdn.microsoft.com/library/09bf41e6-b88c-4ff2-9287-e42bfd38d836) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/library/610116c7-3817-40ff-857b-5d41e8511043) for more information and examples.  
+ See [Using Speech Synthesis Events](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361577(v%3doffice.14)) in the [System Speech Programming Guide for .NET Framework](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361625(v%3doffice.14)) for more information and examples.  
   
  **Modify Voice Characteristics**  
   
  The <xref:System.Speech.Synthesis.PromptStyle> class and <xref:System.Speech.Synthesis.PromptBuilder.StartStyle%2A> and <xref:System.Speech.Synthesis.PromptBuilder.AppendText%2A> methods let you modify characteristics of a <xref:System.Speech.Synthesis.SpeechSynthesizer> voice using <xref:System.Speech.Synthesis.PromptStyle.Emphasis%2A>, <xref:System.Speech.Synthesis.PromptStyle.Rate%2A>, and <xref:System.Speech.Synthesis.PromptStyle.Volume%2A> parameters. To modify characteristics of a voice such as culture, age, and gender, use one of the <xref:System.Speech.Synthesis.PromptBuilder.StartVoice%2A> methods of the <xref:System.Speech.Synthesis.PromptBuilder> class or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods of the <xref:System.Speech.Synthesis.SpeechSynthesizer> class.  
   
- See [Controlling Voice Attributes](http://msdn.microsoft.com/library/0fa3f10d-2696-4701-9735-68c59ffe4816) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/library/610116c7-3817-40ff-857b-5d41e8511043) for more information.  
+ See [Controlling Voice Attributes](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh362932(v%3doffice.14)) in the [System Speech Programming Guide for .NET Framework](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361625(v%3doffice.14)) for more information.  
   
  ]]></format>
     </remarks>
@@ -43,5 +43,8 @@
     <altmember cref="N:System.Speech.Recognition" />
     <altmember cref="N:System.Speech.Recognition.SrgsGrammar" />
     <altmember cref="N:System.Speech.Synthesis.TtsEngine" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361616(v%3doffice.14)">Constructing a Complex Prompt</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361577(v%3doffice.14)">Using Speech Synthesis Events</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh362932(v%3doffice.14)">Controlling Voice Attributes</related>
   </Docs>
 </Namespace>

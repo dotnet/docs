@@ -1,4 +1,4 @@
-﻿<Type Name="Path" FullName="System.IO.Path">
+<Type Name="Path" FullName="System.IO.Path">
   <TypeSignature Language="C#" Value="public static class Path" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed Path extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.Path" />
@@ -79,6 +79,10 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+    <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+    <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+    <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
   </Docs>
   <Members>
     <Member MemberName="AltDirectorySeparatorChar">
@@ -131,6 +135,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="ChangeExtension">
@@ -207,6 +214,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Combine">
@@ -355,6 +365,9 @@
           <paramref name="path1" /> or <paramref name="path2" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path1" /> or <paramref name="path2" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Combine">
@@ -545,6 +558,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryName">
@@ -643,6 +659,9 @@
           </block>  
   
  The <paramref name="path" /> parameter is longer than the system-defined maximum length.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetExtension">
@@ -728,6 +747,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetFileName">
@@ -815,6 +837,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetFileNameWithoutExtension">
@@ -900,6 +925,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetFullPath">
@@ -987,6 +1015,9 @@
           <paramref name="path" /> contains a colon (":") that is not part of a volume identifier (for example, "c:\\").</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path.</permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetFullPath">
@@ -1226,6 +1257,9 @@
  -or-  
   
  <see cref="F:System.String.Empty" /> was passed to <paramref name="path" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetRandomFileName">
@@ -1365,6 +1399,9 @@
   
  This method was unable to create a temporary file.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the temporary directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetTempPath">
@@ -1444,6 +1481,9 @@ C:\Users\UserName\AppData\Local\Temp\
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permissions.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for unrestricted access to environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="HasExtension">
@@ -1530,6 +1570,9 @@ C:\Users\UserName\AppData\Local\Temp\
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="InvalidPathChars">
@@ -1589,6 +1632,9 @@ C:\Users\UserName\AppData\Local\Temp\
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="IsPathFullyQualified">
@@ -1727,6 +1773,9 @@ C:\Users\UserName\AppData\Local\Temp\
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -1833,6 +1882,9 @@ C:\Users\UserName\AppData\Local\Temp\
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="TryJoin">
@@ -1947,6 +1999,9 @@ C:\Users\UserName\AppData\Local\Temp\
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
   </Members>

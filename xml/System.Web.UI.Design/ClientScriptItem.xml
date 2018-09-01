@@ -1,4 +1,4 @@
-﻿<Type Name="ClientScriptItem" FullName="System.Web.UI.Design.ClientScriptItem">
+<Type Name="ClientScriptItem" FullName="System.Web.UI.Design.ClientScriptItem">
   <TypeSignature Language="C#" Value="public sealed class ClientScriptItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClientScriptItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ClientScriptItem" />
@@ -38,6 +38,7 @@
     <altmember cref="T:System.Web.UI.Design.ClientScriptItemCollection" />
     <altmember cref="M:System.Web.UI.Design.WebFormsRootDesigner.AddClientScriptToDocument(System.Web.UI.Design.ClientScriptItem)" />
     <altmember cref="M:System.Web.UI.Design.WebFormsRootDesigner.GetClientScriptsInDocument" />
+    <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -103,6 +104,7 @@
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Source" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Type" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Id" />
+        <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -133,6 +135,7 @@
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Language" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Source" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Type" />
+        <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Language">
@@ -173,6 +176,7 @@
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Source" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Type" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Id" />
+        <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -215,6 +219,7 @@
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Language" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Type" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Id" />
+        <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -257,6 +262,7 @@
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Source" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Type" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Id" />
+        <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -288,6 +294,7 @@
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Language" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Source" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Id" />
+        <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
       </Docs>
     </Member>
   </Members>

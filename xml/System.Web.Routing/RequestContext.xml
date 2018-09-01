@@ -1,4 +1,4 @@
-﻿<Type Name="RequestContext" FullName="System.Web.Routing.RequestContext">
+<Type Name="RequestContext" FullName="System.Web.Routing.RequestContext">
   <TypeSignature Language="C#" Value="public class RequestContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequestContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RequestContext" />
@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

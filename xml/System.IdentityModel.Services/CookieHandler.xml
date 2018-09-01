@@ -1,4 +1,4 @@
-﻿<Type Name="CookieHandler" FullName="System.IdentityModel.Services.CookieHandler">
+<Type Name="CookieHandler" FullName="System.IdentityModel.Services.CookieHandler">
   <TypeSignature Language="C#" Value="public abstract class CookieHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CookieHandler extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.CookieHandler" />
@@ -43,6 +43,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.IdentityModel.Services.ChunkedCookieHandler" />
+    <related type="Article" href="http://msdn.microsoft.com/library/bfdc127f-8d94-4566-8bef-f583c6ae7398">&lt;cookieHandler&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -298,6 +299,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bfdc127f-8d94-4566-8bef-f583c6ae7398">&lt;cookieHandler&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="HideFromClientScript">

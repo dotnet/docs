@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripItem" FullName="System.Windows.Forms.ToolStripItem">
+<Type Name="ToolStripItem" FullName="System.Windows.Forms.ToolStripItem">
   <TypeSignature Language="C#" Value="public abstract class ToolStripItem : System.ComponentModel.Component, IDisposable, System.Windows.Forms.IDropTarget" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ToolStripItem extends System.ComponentModel.Component implements class System.ComponentModel.IComponent, class System.IDisposable, class System.Windows.Forms.IDropTarget" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItem" />
@@ -87,6 +87,7 @@
     <altmember cref="T:System.Windows.Forms.ToolStripMenuItem" />
     <altmember cref="T:System.Windows.Forms.ToolStripSplitButton" />
     <altmember cref="T:System.Windows.Forms.ToolStripDropDownButton" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e5ef455a-e049-429c-8005-30c93132fb79">ToolStrip Control (Windows Forms)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -1427,7 +1428,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
       </Docs>
     </Member>

@@ -1,4 +1,4 @@
-﻿<Type Name="Border" FullName="System.Windows.Controls.Border">
+<Type Name="Border" FullName="System.Windows.Controls.Border">
   <TypeSignature Language="C#" Value="public class Border : System.Windows.Controls.Decorator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Border extends System.Windows.Controls.Decorator" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Border" />
@@ -38,6 +38,7 @@
     </remarks>
     <altmember cref="T:System.Windows.Media.Brush" />
     <altmember cref="T:System.Windows.Thickness" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160053">WPF Controls Gallery Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

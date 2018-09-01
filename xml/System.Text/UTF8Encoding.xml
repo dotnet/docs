@@ -1,4 +1,4 @@
-﻿<Type Name="UTF8Encoding" FullName="System.Text.UTF8Encoding">
+<Type Name="UTF8Encoding" FullName="System.Text.UTF8Encoding">
   <TypeSignature Language="C#" Value="public class UTF8Encoding : System.Text.Encoding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit UTF8Encoding extends System.Text.Encoding" />
   <TypeSignature Language="DocId" Value="T:System.Text.UTF8Encoding" />
@@ -88,6 +88,7 @@
     </remarks>
     <altmember cref="T:System.Text.Decoder" />
     <altmember cref="T:System.Text.Encoder" />
+    <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -1349,6 +1350,7 @@
         <altmember cref="M:System.Text.UTF8Encoding.GetString(System.Byte[],System.Int32,System.Int32)" />
         <altmember cref="M:System.Text.UTF8Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
         <altmember cref="M:System.Text.UTF8Encoding.GetEncoder" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="GetEncoder">
@@ -1407,6 +1409,7 @@
         <altmember cref="M:System.Text.UTF8Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
         <altmember cref="M:System.Text.UTF8Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
         <altmember cref="M:System.Text.UTF8Encoding.GetDecoder" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">

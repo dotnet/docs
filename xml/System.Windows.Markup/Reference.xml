@@ -1,4 +1,4 @@
-﻿<Type Name="Reference" FullName="System.Windows.Markup.Reference">
+<Type Name="Reference" FullName="System.Windows.Markup.Reference">
   <TypeSignature Language="C#" Value="public class Reference : System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Reference extends System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Reference" />
@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/2982e68b-d26b-4aa3-826a-34c57a9c5199">x:Reference Markup Extension</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="LazyInitializer" FullName="System.Threading.LazyInitializer">
+<Type Name="LazyInitializer" FullName="System.Threading.LazyInitializer">
   <TypeSignature Language="C#" Value="public static class LazyInitializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit LazyInitializer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.LazyInitializer" />
@@ -58,6 +58,7 @@ ExpensiveData _data = null;
  ]]></format>
     </remarks>
     <threadsafe>The methods of <see cref="T:System.Threading.LazyInitializer" /> are thread-safe and may be called from multiple threads concurrently.</threadsafe>
+    <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="EnsureInitialized&lt;T&gt;">
@@ -127,6 +128,7 @@ ExpensiveData _data = null;
         </remarks>
         <exception cref="T:System.MemberAccessException">Permissions to access the constructor of type <paramref name="T" /> were missing.</exception>
         <exception cref="T:System.MissingMemberException">Type <paramref name="T" /> does not have a default constructor.</exception>
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
       </Docs>
     </Member>
     <Member MemberName="EnsureInitialized&lt;T&gt;">
@@ -188,6 +190,7 @@ ExpensiveData _data = null;
         <exception cref="T:System.MissingMemberException">Type <paramref name="T" /> does not have a default constructor.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="valueFactory" /> returned null (Nothing in Visual Basic).</exception>
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
       </Docs>
     </Member>
     <Member MemberName="EnsureInitialized&lt;T&gt;">
@@ -242,6 +245,7 @@ ExpensiveData _data = null;
         </remarks>
         <exception cref="T:System.MemberAccessException">Permissions to access the constructor of type <paramref name="T" /> were missing.</exception>
         <exception cref="T:System.MissingMemberException">Type <paramref name="T" /> does not have a default constructor.</exception>
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
       </Docs>
     </Member>
     <Member MemberName="EnsureInitialized&lt;T&gt;">
@@ -336,6 +340,7 @@ ExpensiveData _data = null;
         </remarks>
         <exception cref="T:System.MemberAccessException">Permissions to access the constructor of type <paramref name="T" /> were missing.</exception>
         <exception cref="T:System.MissingMemberException">Type <paramref name="T" /> does not have a default constructor.</exception>
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
       </Docs>
     </Member>
   </Members>

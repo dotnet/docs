@@ -1,4 +1,4 @@
-﻿<Type Name="IfElseActivity" FullName="System.Workflow.Activities.IfElseActivity">
+<Type Name="IfElseActivity" FullName="System.Workflow.Activities.IfElseActivity">
   <TypeSignature Language="C#" Value="public sealed class IfElseActivity : System.Workflow.ComponentModel.CompositeActivity, System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IfElseActivity extends System.Workflow.ComponentModel.CompositeActivity implements class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.IfElseActivity" />
@@ -54,13 +54,15 @@
    
   
 ## Examples  
- The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.IfElseActivity> class and add two <xref:System.Workflow.Activities.IfElseBranchActivity> classes to it. This code example is part of the SequentialWorkflowWithParameters SDK Sample from the SequentialWorkflow.cs file. For more information, see [Sequential Workflow With Parameters](http://msdn.microsoft.com/library/17157f2d-8fed-4848-a386-e4efa381b66b).  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.IfElseActivity> class and add two <xref:System.Workflow.Activities.IfElseBranchActivity> classes to it. This code example is part of the SequentialWorkflowWithParameters SDK Sample from the SequentialWorkflow.cs file. For more information, see [Workflow with Parameters Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741685(v=vs.90)).  
   
  [!code-csharp[wf_samples#194](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#194)]
  [!code-vb[wf_samples#194](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#194)]  
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734698(v=vs.90)">Using the IfElse Activity</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734614(v=vs.90)">Using Conditions in Workflows</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -70,6 +72,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.IfElseActivity" /> class.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734698(v=vs.90)">Using the IfElse Activity</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734614(v=vs.90)">Using Conditions in Workflows</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -91,13 +95,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.IfElseActivity> class and add two <xref:System.Workflow.Activities.IfElseBranchActivity> classes to it. This code example is part of the SequentialWorkflowWithParameters SDK sample from the SequentialWorkflow.cs file. For more information, see [Sequential Workflow With Parameters](http://msdn.microsoft.com/library/17157f2d-8fed-4848-a386-e4efa381b66b).  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.IfElseActivity> class and add two <xref:System.Workflow.Activities.IfElseBranchActivity> classes to it. This code example is part of the SequentialWorkflowWithParameters SDK sample from the SequentialWorkflow.cs file. For more information, see [Workflow with Parameters Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741685(v=vs.90)).  
   
  [!code-csharp[wf_samples#296](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#296)]
  [!code-vb[wf_samples#296](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#296)]  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734698(v=vs.90)">Using the IfElse Activity</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734614(v=vs.90)">Using Conditions in Workflows</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -120,6 +126,8 @@
         <param name="name">The user-defined name of the activity.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.IfElseActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734698(v=vs.90)">Using the IfElse Activity</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734614(v=vs.90)">Using Conditions in Workflows</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AddBranch">
@@ -129,6 +137,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Adds a new branch to the <see cref="T:System.Workflow.Activities.IfElseActivity" />.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734698(v=vs.90)">Using the IfElse Activity</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734614(v=vs.90)">Using Conditions in Workflows</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddBranch">
@@ -155,6 +165,8 @@
         <summary>Adds a new branch to the <see cref="T:System.Workflow.Activities.IfElseActivity" /> using a collection of new activities to add to the new branch.</summary>
         <returns>The updated <see cref="T:System.Workflow.Activities.IfElseBranchActivity" /> with the new branches.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734698(v=vs.90)">Using the IfElse Activity</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734614(v=vs.90)">Using Conditions in Workflows</related>
       </Docs>
     </Member>
     <Member MemberName="AddBranch">
@@ -183,6 +195,8 @@
         <summary>Adds a new branch to the <see cref="T:System.Workflow.Activities.IfElseActivity" /> using a collection of new activities to add to the new branch.</summary>
         <returns>The updated <see cref="T:System.Workflow.Activities.IfElseBranchActivity" /> with the new branches.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734698(v=vs.90)">Using the IfElse Activity</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734614(v=vs.90)">Using Conditions in Workflows</related>
       </Docs>
     </Member>
     <Member MemberName="Cancel">

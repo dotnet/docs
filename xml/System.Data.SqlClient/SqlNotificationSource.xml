@@ -1,4 +1,4 @@
-﻿<Type Name="SqlNotificationSource" FullName="System.Data.SqlClient.SqlNotificationSource">
+<Type Name="SqlNotificationSource" FullName="System.Data.SqlClient.SqlNotificationSource">
   <TypeSignature Language="C#" Value="public enum SqlNotificationSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SqlNotificationSource extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlNotificationSource" />
@@ -26,6 +26,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Client">
@@ -48,6 +49,7 @@
       <MemberValue>-2</MemberValue>
       <Docs>
         <summary>A client-initiated notification occurred, such as a client-side time-out or as a result of attempting to add a command to a dependency that has already fired.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -70,6 +72,7 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>Data has changed; for example, an insert, update, delete, or truncate operation occurred.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Database">
@@ -92,6 +95,7 @@
       <MemberValue>3</MemberValue>
       <Docs>
         <summary>The database state changed; for example, the database related to the query was dropped or detached.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Environment">
@@ -114,6 +118,7 @@
       <MemberValue>6</MemberValue>
       <Docs>
         <summary>The run-time environment was not compatible with notifications; for example, the isolation level was set to snapshot, or one or more SET options are not compatible.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Execution">
@@ -136,6 +141,7 @@
       <MemberValue>7</MemberValue>
       <Docs>
         <summary>A run-time error occurred during execution.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -158,6 +164,7 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>A database object changed; for example, an underlying object related to the query was dropped or modified.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -180,6 +187,7 @@
       <MemberValue>8</MemberValue>
       <Docs>
         <summary>Internal only; not intended to be used in your code.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Statement">
@@ -202,6 +210,7 @@
       <MemberValue>5</MemberValue>
       <Docs>
         <summary>The Transact-SQL statement is not valid for notifications; for example, a SELECT statement that could not be notified or a non-SELECT statement was executed.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System">
@@ -224,6 +233,7 @@
       <MemberValue>4</MemberValue>
       <Docs>
         <summary>A system-related event occurred. For example, there was an internal error, the server was restarted, or resource pressure caused the invalidation.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -246,6 +256,7 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>The subscription time-out expired.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -268,6 +279,7 @@
       <MemberValue>-1</MemberValue>
       <Docs>
         <summary>Used when the source option sent by the server was not recognized by the client.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

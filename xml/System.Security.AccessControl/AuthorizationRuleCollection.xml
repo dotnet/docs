@@ -1,4 +1,4 @@
-﻿<Type Name="AuthorizationRuleCollection" FullName="System.Security.AccessControl.AuthorizationRuleCollection">
+<Type Name="AuthorizationRuleCollection" FullName="System.Security.AccessControl.AuthorizationRuleCollection">
   <TypeSignature Language="C#" Value="public sealed class AuthorizationRuleCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AuthorizationRuleCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AuthorizationRuleCollection" />
@@ -20,7 +20,8 @@
     <BaseTypeName>System.Object</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-4.5">System.Collections.ReadOnlyCollectionBase</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Represents a collection of <see cref="T:System.Security.AccessControl.AuthorizationRule" /> objects.</summary>
     <remarks>To be added.</remarks>

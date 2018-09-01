@@ -1,4 +1,4 @@
-﻿<Type Name="ListViewInsertedEventArgs" FullName="System.Web.UI.WebControls.ListViewInsertedEventArgs">
+<Type Name="ListViewInsertedEventArgs" FullName="System.Web.UI.WebControls.ListViewInsertedEventArgs">
   <TypeSignature Language="C#" Value="public class ListViewInsertedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewInsertedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewInsertedEventArgs" />
@@ -47,6 +47,7 @@
     <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.Exception" />
     <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.ExceptionHandled" />
     <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.KeepInInsertMode" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,6 +91,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -143,6 +145,7 @@
         <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.Exception" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.ExceptionHandled" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.Values" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -190,6 +193,7 @@
         <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.AffectedRows" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.ExceptionHandled" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.Values" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -241,6 +245,7 @@
         <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.AffectedRows" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.Exception" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.Values" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="KeepInInsertMode">
@@ -288,6 +293,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -329,6 +335,7 @@
         <altmember cref="T:System.Collections.DictionaryEntry" />
         <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Keys" />
         <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Values" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
   </Members>

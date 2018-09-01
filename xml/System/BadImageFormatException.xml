@@ -1,4 +1,4 @@
-﻿<Type Name="BadImageFormatException" FullName="System.BadImageFormatException">
+<Type Name="BadImageFormatException" FullName="System.BadImageFormatException">
   <TypeSignature Language="C#" Value="public class BadImageFormatException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit BadImageFormatException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.BadImageFormatException" />
@@ -92,6 +92,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -304,6 +305,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

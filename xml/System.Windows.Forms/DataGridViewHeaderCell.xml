@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewHeaderCell" FullName="System.Windows.Forms.DataGridViewHeaderCell">
+<Type Name="DataGridViewHeaderCell" FullName="System.Windows.Forms.DataGridViewHeaderCell">
   <TypeSignature Language="C#" Value="public class DataGridViewHeaderCell : System.Windows.Forms.DataGridViewCell" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewHeaderCell extends System.Windows.Forms.DataGridViewCell" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewHeaderCell" />
@@ -477,6 +477,7 @@
         <altmember cref="P:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles" />
         <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
         <altmember cref="M:System.Windows.Forms.DataGridViewHeaderCell.OnMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8321a8a6-6340-4fd1-b475-fa090b905aaf">Best Practices for Scaling the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="MouseEnterUnsharesRow">
@@ -523,6 +524,7 @@
         <altmember cref="T:System.Windows.Forms.DataGridViewColumnHeaderCell" />
         <altmember cref="T:System.Windows.Forms.DataGridViewTopLeftHeaderCell" />
         <altmember cref="M:System.Windows.Forms.DataGridViewHeaderCell.OnMouseEnter(System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8321a8a6-6340-4fd1-b475-fa090b905aaf">Best Practices for Scaling the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="MouseLeaveUnsharesRow">
@@ -566,6 +568,7 @@
         <altmember cref="T:System.Windows.Forms.DataGridViewColumnHeaderCell" />
         <altmember cref="T:System.Windows.Forms.DataGridViewTopLeftHeaderCell" />
         <altmember cref="M:System.Windows.Forms.DataGridViewHeaderCell.OnMouseLeave(System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8321a8a6-6340-4fd1-b475-fa090b905aaf">Best Practices for Scaling the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="MouseUpUnsharesRow">
@@ -609,6 +612,7 @@
         <altmember cref="T:System.Windows.Forms.DataGridViewColumnHeaderCell" />
         <altmember cref="T:System.Windows.Forms.DataGridViewTopLeftHeaderCell" />
         <altmember cref="M:System.Windows.Forms.DataGridViewHeaderCell.OnMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8321a8a6-6340-4fd1-b475-fa090b905aaf">Best Practices for Scaling the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">

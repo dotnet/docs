@@ -1,4 +1,4 @@
-﻿<Type Name="StateBag" FullName="System.Web.UI.StateBag">
+<Type Name="StateBag" FullName="System.Web.UI.StateBag">
   <TypeSignature Language="C#" Value="public sealed class StateBag : System.Collections.IDictionary, System.Web.UI.IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StateBag extends System.Object implements class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable, class System.Web.UI.IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.StateBag" />
@@ -32,7 +32,7 @@
   
  This class is the primary storage mechanism for all HTML and Web server controls. It stores attribute/value pairs as strings associated with the control. It tracks changes to these attributes only after the <xref:System.Web.UI.Control.OnInit%2A> method is executed for a page request, and saves the changes to the page's or control's view state.  
   
- This class implements a dictionary, and you can add items to it or remove items from it as you would any dictionary object. For more information about data collections, such as dictionaries, see [Collections and Data Structures](http://msdn.microsoft.com/library/60cc581f-1db5-445b-ba04-a173396bf872).  
+ This class implements a dictionary, and you can add items to it or remove items from it as you would any dictionary object. For more information about data collections, such as dictionaries, see [Collections and Data Structures](~/docs/standard/collections/index.md).  
   
    
   
@@ -48,6 +48,8 @@
     <altmember cref="T:System.Collections.IDictionary" />
     <altmember cref="P:System.Web.UI.Control.ViewState" />
     <altmember cref="T:System.Web.UI.AttributeCollection" />
+    <related type="Article" href="~/docs/standard/collections/index.md">Collections and Data Structures</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -155,6 +157,7 @@
         <altmember cref="P:System.Web.UI.StateBag.Item(System.String)" />
         <altmember cref="M:System.Web.UI.StateBag.Clear" />
         <altmember cref="M:System.Web.UI.StateBag.Remove(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/af79fa0d-4bc8-47a6-9915-d8e355bfb732">ASP.NET State Management Recommendations</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -359,6 +362,7 @@
         <altmember cref="M:System.Web.UI.StateBag.Add(System.String,System.Object)" />
         <altmember cref="M:System.Web.UI.StateBag.Remove(System.String)" />
         <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <related type="Article" href="http://msdn.microsoft.com/library/af79fa0d-4bc8-47a6-9915-d8e355bfb732">ASP.NET State Management Recommendations</related>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -944,7 +948,7 @@
 ## Remarks  
  This method restores view-state information for the <xref:System.Web.UI.StateBag> object from a previous page request that was saved by the <xref:System.Web.UI.StateBag.System%23Web%23UI%23IStateManager%23SaveViewState%2A> method.  
   
- This method is primarily used by control developers. You can override this method to control how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is primarily used by control developers. You can override this method to control how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
  ]]></format>
         </remarks>
@@ -987,7 +991,7 @@
   
  View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control life cycle. For more information, see [NIB: ASP.NET Web Server Controls](http://msdn.microsoft.com/library/e18eb2f2-cf00-47ae-b1a1-dfc188a6dea1).  
   
- When view state is saved, this string object is returned to the client as a variable that is stored in an HTML `Hidden` element. When you author custom server controls, you can improve efficiency by overriding this method and modifying your server control's <xref:System.Web.UI.Control.ViewState%2A> property. For more information, see [NIB: ASP.NET Web Server Controls](http://msdn.microsoft.com/library/e18eb2f2-cf00-47ae-b1a1-dfc188a6dea1) and [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ When view state is saved, this string object is returned to the client as a variable that is stored in an HTML `Hidden` element. When you author custom server controls, you can improve efficiency by overriding this method and modifying your server control's <xref:System.Web.UI.Control.ViewState%2A> property. For more information, see [NIB: ASP.NET Web Server Controls](http://msdn.microsoft.com/library/e18eb2f2-cf00-47ae-b1a1-dfc188a6dea1) and [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
  ]]></format>
         </remarks>

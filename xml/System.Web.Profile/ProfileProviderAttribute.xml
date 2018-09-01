@@ -1,4 +1,4 @@
-﻿<Type Name="ProfileProviderAttribute" FullName="System.Web.Profile.ProfileProviderAttribute">
+<Type Name="ProfileProviderAttribute" FullName="System.Web.Profile.ProfileProviderAttribute">
   <TypeSignature Language="C#" Value="public sealed class ProfileProviderAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProfileProviderAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileProviderAttribute" />
@@ -78,6 +78,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -120,6 +121,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderName">
@@ -147,6 +149,7 @@
         <summary>Gets the name of the profile provider for the user-profile property.</summary>
         <value>The name of the profile provider for the user-profile property.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="OdbcErrorCollection" FullName="System.Data.Odbc.OdbcErrorCollection">
+<Type Name="OdbcErrorCollection" FullName="System.Data.Odbc.OdbcErrorCollection">
   <TypeSignature Language="C#" Value="public sealed class OdbcErrorCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit OdbcErrorCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcErrorCollection" />
@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="CopyTo">
@@ -55,6 +56,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Copies the elements of the <see cref="T:System.Data.Odbc.OdbcErrorCollection" /> into an array, starting at the specified index within the array.</summary>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CopyTo">
@@ -102,6 +104,7 @@
         <exception cref="T:System.ArgumentException">The sum of <paramref name="index" /> and the number of elements in the <see cref="T:System.Data.Odbc.OdbcErrorCollection" /> is greater than the length of the array.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is not valid for <paramref name="array" />.</exception>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -143,6 +146,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -183,6 +187,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -245,6 +250,7 @@
         <summary>Gets the error at the specified index.</summary>
         <value>An <see cref="T:System.Data.Odbc.OdbcError" /> that contains the error at the specified index.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">

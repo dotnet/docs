@@ -1,4 +1,4 @@
-﻿<Type Name="XmlSerializerOperationBehavior" FullName="System.ServiceModel.Description.XmlSerializerOperationBehavior">
+<Type Name="XmlSerializerOperationBehavior" FullName="System.ServiceModel.Description.XmlSerializerOperationBehavior">
   <TypeSignature Language="C#" Value="public class XmlSerializerOperationBehavior : System.ServiceModel.Description.IOperationBehavior, System.ServiceModel.Description.IWsdlExportExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSerializerOperationBehavior extends System.Object implements class System.ServiceModel.Description.IOperationBehavior, class System.ServiceModel.Description.IWsdlExportExtension" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.XmlSerializerOperationBehavior" />
@@ -46,6 +46,7 @@
     </remarks>
     <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
     <altmember cref="T:System.ServiceModel.Description.DataContractSerializerOperationBehavior" />
+    <related type="Article" href="http://msdn.microsoft.com/library/c680602d-39d3-44f1-bf22-8e6654ad5069">Using the XmlSerializer</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="FormControlBuilder" FullName="System.Web.UI.MobileControls.FormControlBuilder">
+<Type Name="FormControlBuilder" FullName="System.Web.UI.MobileControls.FormControlBuilder">
   <TypeSignature Language="C#" Value="public class FormControlBuilder : System.Web.UI.MobileControls.LiteralTextContainerControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormControlBuilder extends System.Web.UI.MobileControls.LiteralTextContainerControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.FormControlBuilder" />
@@ -31,6 +31,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/8zz36572(v=vs.85)">Creating an ASP.NET Mobile User Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

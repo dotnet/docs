@@ -1,4 +1,4 @@
-﻿<Type Name="StrongNameIdentityPermission" FullName="System.Security.Permissions.StrongNameIdentityPermission">
+<Type Name="StrongNameIdentityPermission" FullName="System.Security.Permissions.StrongNameIdentityPermission">
   <TypeSignature Language="C#" Value="public sealed class StrongNameIdentityPermission : System.Security.CodeAccessPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit StrongNameIdentityPermission extends System.Security.CodeAccessPermission" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.StrongNameIdentityPermission" />
@@ -58,6 +58,8 @@
     <altmember cref="T:System.Security.Permissions.StrongNamePublicKeyBlob" />
     <altmember cref="T:System.Security.Policy.StrongName" />
     <altmember cref="T:System.Security.Policy.StrongNameMembershipCondition" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b">Strong-Named Assemblies</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd">Friend Assemblies</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

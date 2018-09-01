@@ -1,4 +1,4 @@
-﻿<Type Name="StringCollection" FullName="System.Collections.Specialized.StringCollection">
+<Type Name="StringCollection" FullName="System.Collections.Specialized.StringCollection">
   <TypeSignature Language="C#" Value="public class StringCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit StringCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.StringCollection" />
@@ -63,6 +63,7 @@
  This implementation does not provide a synchronized (thread safe) wrapper for a <see cref="T:System.Collections.Specialized.StringCollection" />, but derived classes can create their own synchronized versions of the <see cref="T:System.Collections.Specialized.StringCollection" /> using the <see cref="P:System.Collections.Specialized.StringCollection.SyncRoot" /> property.  
   
  Enumerating through a collection is intrinsically not a thread safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+    <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -335,6 +336,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.Specialized.StringCollection.IndexOf(System.String)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -579,6 +581,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.Specialized.StringCollection.Contains(System.String)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -874,6 +877,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -1229,6 +1233,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -1283,6 +1288,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -1572,6 +1578,7 @@
         <altmember cref="M:System.Collections.IList.Add(System.Object)" />
         <altmember cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
         <altmember cref="P:System.Collections.Specialized.StringCollection.Count" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
   </Members>

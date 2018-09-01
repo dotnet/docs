@@ -1,4 +1,4 @@
-﻿<Type Name="IntPtr" FullName="System.IntPtr">
+<Type Name="IntPtr" FullName="System.IntPtr">
   <TypeSignature Language="C#" Value="public struct IntPtr : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit native int extends System.ValueType implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.IntPtr" />
@@ -602,7 +602,8 @@
         <param name="value">A 32-bit signed integer.</param>
         <summary>Converts the value of a 32-bit signed integer to an <see cref="T:System.IntPtr" />.</summary>
         <returns>A new instance of <see cref="T:System.IntPtr" /> initialized to <paramref name="value" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <altmember cref="Overload:System.IntPtr.#ctor" />
       </Docs>
     </Member>
@@ -652,7 +653,8 @@
         <param name="value">A 64-bit signed integer.</param>
         <summary>Converts the value of a 64-bit signed integer to an <see cref="T:System.IntPtr" />.</summary>
         <returns>A new instance of <see cref="T:System.IntPtr" /> initialized to <paramref name="value" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <exception cref="T:System.OverflowException">On a 32-bit platform, <paramref name="value" /> is too large to represent as an <see cref="T:System.IntPtr" />.</exception>
         <altmember cref="Overload:System.IntPtr.#ctor" />
       </Docs>
@@ -760,7 +762,8 @@
         <param name="value">The pointer or handle to convert.</param>
         <summary>Converts the value of the specified <see cref="T:System.IntPtr" /> to a 64-bit signed integer.</summary>
         <returns>The contents of <paramref name="value" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <altmember cref="M:System.IntPtr.ToInt64" />
       </Docs>
     </Member>
@@ -814,7 +817,8 @@
   
  This API is not CLS-compliant.</summary>
         <returns>The contents of <paramref name="value" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <altmember cref="M:System.IntPtr.ToPointer" />
       </Docs>
     </Member>
@@ -871,7 +875,8 @@
   
  This API is not CLS-compliant.</summary>
         <returns>A new instance of <see cref="T:System.IntPtr" /> initialized to <paramref name="value" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="Overload:System.IntPtr.#ctor" />
       </Docs>
@@ -1486,6 +1491,9 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="Zero">

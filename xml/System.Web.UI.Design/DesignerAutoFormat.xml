@@ -1,4 +1,4 @@
-﻿<Type Name="DesignerAutoFormat" FullName="System.Web.UI.Design.DesignerAutoFormat">
+<Type Name="DesignerAutoFormat" FullName="System.Web.UI.Design.DesignerAutoFormat">
   <TypeSignature Language="C#" Value="public abstract class DesignerAutoFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DesignerAutoFormat extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DesignerAutoFormat" />
@@ -59,6 +59,7 @@
     <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatStyle" />
     <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
     <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -93,6 +94,7 @@
         <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
         <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Apply">
@@ -138,6 +140,7 @@
         <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
         <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
         <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPreviewControl">
@@ -182,6 +185,7 @@
         </block>
         <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
         <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -227,6 +231,7 @@
         <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
         <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -266,6 +271,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
         <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -304,6 +310,7 @@
         <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
         <altmember cref="P:System.Web.UI.Design.DesignerAutoFormat.Name" />
         <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
   </Members>

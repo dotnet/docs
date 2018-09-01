@@ -1,4 +1,4 @@
-﻿<Type Name="MessageLoggingElement" FullName="System.ServiceModel.Configuration.MessageLoggingElement">
+<Type Name="MessageLoggingElement" FullName="System.ServiceModel.Configuration.MessageLoggingElement">
   <TypeSignature Language="C#" Value="public sealed class MessageLoggingElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MessageLoggingElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MessageLoggingElement" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents an XML element that defines the settings for the message-logging capabilities of Windows Communication Foundation (WCF).</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/1d06a7e6-9633-4a12-8c5d-123adbbc19c5">&lt;messageLogging&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="TextMessageEncodingElement" FullName="System.ServiceModel.Configuration.TextMessageEncodingElement">
+<Type Name="TextMessageEncodingElement" FullName="System.ServiceModel.Configuration.TextMessageEncodingElement">
   <TypeSignature Language="C#" Value="public sealed class TextMessageEncodingElement : System.ServiceModel.Configuration.BindingElementExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TextMessageEncodingElement extends System.ServiceModel.Configuration.BindingElementExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.TextMessageEncodingElement" />
@@ -33,6 +33,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.ServiceModel.Channels.TextMessageEncodingBindingElement" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e6d834d0-356e-45eb-b530-bbefbb9ec3f0">TextMessageEncoding in Configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

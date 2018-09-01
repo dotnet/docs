@@ -1,4 +1,4 @@
-﻿<Type Name="TypeLibVarAttribute" FullName="System.Runtime.InteropServices.TypeLibVarAttribute">
+<Type Name="TypeLibVarAttribute" FullName="System.Runtime.InteropServices.TypeLibVarAttribute">
   <TypeSignature Language="C#" Value="public sealed class TypeLibVarAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeLibVarAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TypeLibVarAttribute" />
@@ -50,6 +50,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/tools/tlbimp-exe-type-library-importer.md">Tlbimp.exe (Type Library Importer)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

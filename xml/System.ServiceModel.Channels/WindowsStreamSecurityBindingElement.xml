@@ -1,4 +1,4 @@
-﻿<Type Name="WindowsStreamSecurityBindingElement" FullName="System.ServiceModel.Channels.WindowsStreamSecurityBindingElement">
+<Type Name="WindowsStreamSecurityBindingElement" FullName="System.ServiceModel.Channels.WindowsStreamSecurityBindingElement">
   <TypeSignature Language="C#" Value="public class WindowsStreamSecurityBindingElement : System.ServiceModel.Channels.BindingElement, System.ServiceModel.Channels.ISecurityCapabilities, System.ServiceModel.Channels.ITransportTokenAssertionProvider, System.ServiceModel.Description.IPolicyExportExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WindowsStreamSecurityBindingElement extends System.ServiceModel.Channels.BindingElement implements class System.ServiceModel.Channels.ISecurityCapabilities, class System.ServiceModel.Channels.ITransportTokenAssertionProvider, class System.ServiceModel.Description.IPolicyExportExtension" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement" />
@@ -56,6 +56,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/e3da85c8-57f3-4e32-a4cb-50123f30fea6">Custom Stream Upgrades</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

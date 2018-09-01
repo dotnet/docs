@@ -1,4 +1,4 @@
-﻿<Type Name="ThreadPriority" FullName="System.Threading.ThreadPriority">
+<Type Name="ThreadPriority" FullName="System.Threading.ThreadPriority">
   <TypeSignature Language="C#" Value="public enum ThreadPriority" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ThreadPriority extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadPriority" />
@@ -57,6 +57,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Threading.Thread" />
+    <related type="Article" href="~/docs/standard/threading/scheduling-threads.md">Scheduling threads</related>
   </Docs>
   <Members>
     <Member MemberName="AboveNormal">

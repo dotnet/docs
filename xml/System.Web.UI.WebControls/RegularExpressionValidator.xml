@@ -1,4 +1,4 @@
-﻿<Type Name="RegularExpressionValidator" FullName="System.Web.UI.WebControls.RegularExpressionValidator">
+<Type Name="RegularExpressionValidator" FullName="System.Web.UI.WebControls.RegularExpressionValidator">
   <TypeSignature Language="C#" Value="public class RegularExpressionValidator : System.Web.UI.WebControls.BaseValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RegularExpressionValidator extends System.Web.UI.WebControls.BaseValidator" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RegularExpressionValidator" />
@@ -62,6 +62,7 @@
     <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
     <altmember cref="P:System.Web.UI.WebControls.BaseValidator.EnableClientScript" />
     <altmember cref="T:System.Text.RegularExpressions.Regex" />
+    <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="ICustomTypeDescriptor" FullName="System.ComponentModel.ICustomTypeDescriptor">
+<Type Name="ICustomTypeDescriptor" FullName="System.ComponentModel.ICustomTypeDescriptor">
   <TypeSignature Language="C#" Value="public interface ICustomTypeDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICustomTypeDescriptor" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ICustomTypeDescriptor" />
@@ -43,6 +43,7 @@
     <altmember cref="T:System.ComponentModel.TypeDescriptor" />
     <altmember cref="T:System.ComponentModel.CustomTypeDescriptor" />
     <altmember cref="T:System.ComponentModel.TypeDescriptionProvider" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e81b8e2f-e06e-44fa-8129-7bdb0230101f">Type Descriptor Overview</related>
   </Docs>
   <Members>
     <Member MemberName="GetAttributes">

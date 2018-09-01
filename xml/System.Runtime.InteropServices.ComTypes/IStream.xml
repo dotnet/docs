@@ -1,4 +1,4 @@
-﻿<Type Name="IStream" FullName="System.Runtime.InteropServices.ComTypes.IStream">
+<Type Name="IStream" FullName="System.Runtime.InteropServices.ComTypes.IStream">
   <TypeSignature Language="C#" Value="public interface IStream" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStream" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IStream" />
@@ -49,6 +49,8 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/aa380034.aspx">IStream</related>
+    <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/aa380010.aspx">ISequentialStream</related>
   </Docs>
   <Members>
     <Member MemberName="Clone">

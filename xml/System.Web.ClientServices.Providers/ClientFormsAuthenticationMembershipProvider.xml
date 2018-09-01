@@ -1,4 +1,4 @@
-﻿<Type Name="ClientFormsAuthenticationMembershipProvider" FullName="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider">
+<Type Name="ClientFormsAuthenticationMembershipProvider" FullName="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider">
   <TypeSignature Language="C#" Value="public class ClientFormsAuthenticationMembershipProvider : System.Web.Security.MembershipProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClientFormsAuthenticationMembershipProvider extends System.Web.Security.MembershipProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider" />
@@ -46,6 +46,9 @@
     </remarks>
     <altmember cref="Overload:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser" />
     <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8">How to: Configure Client Application Services</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/5431a671-eb02-4e18-a651-24764fccec9a">How to: Implement User Login and Logout with Client Application Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,6 +67,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="ApplicationName">
@@ -93,6 +97,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="ChangePassword">
@@ -131,6 +136,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="ChangePasswordQuestionAndAnswer">
@@ -171,6 +177,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="CreateUser">
@@ -219,6 +226,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteUser">
@@ -255,6 +263,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="EnablePasswordReset">
@@ -284,6 +293,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="EnablePasswordRetrieval">
@@ -313,6 +323,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="FindUsersByEmail">
@@ -346,6 +357,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="FindUsersByName">
@@ -379,6 +391,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllUsers">
@@ -410,6 +423,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetNumberOfUsersOnline">
@@ -434,6 +448,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetPassword">
@@ -463,6 +478,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetUser">
@@ -472,6 +488,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>This method is not used by this class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetUser">
@@ -501,6 +518,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetUser">
@@ -530,6 +548,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetUserNameByEmail">
@@ -557,6 +576,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -618,6 +638,8 @@
   
  <paramref name="config" /> contains an unrecognized value.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider" /> has already been initialized.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8">How to: Configure Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="Logout">
@@ -662,6 +684,7 @@
         <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the membership provider is unable to access the authentication service.</exception>
         <altmember cref="Overload:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser" />
         <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="MaxInvalidPasswordAttempts">
@@ -693,6 +716,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="MinRequiredNonAlphanumericCharacters">
@@ -722,6 +746,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="MinRequiredPasswordLength">
@@ -751,6 +776,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordAttemptWindow">
@@ -780,6 +806,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordFormat">
@@ -809,6 +836,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordStrengthRegularExpression">
@@ -838,6 +866,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="RequiresQuestionAndAnswer">
@@ -867,6 +896,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="RequiresUniqueEmail">
@@ -896,6 +926,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="ResetPassword">
@@ -932,6 +963,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="ServiceUri">
@@ -975,6 +1007,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">When getting this property, no service URI was found in the application configuration file, and this property has not been previously set.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8">How to: Configure Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="UnlockUser">
@@ -1009,6 +1043,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateUser">
@@ -1042,6 +1077,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="UserValidated">
@@ -1083,6 +1119,7 @@
         <altmember cref="T:System.Web.ClientServices.Providers.UserValidatedEventArgs" />
         <altmember cref="P:System.Web.ClientServices.Providers.UserValidatedEventArgs.UserName" />
         <altmember cref="M:System.Web.ClientServices.ClientFormsIdentity.RevalidateUser" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ValidateUser">
@@ -1093,6 +1130,7 @@
       <Docs>
         <summary>Authenticates a user by using the specified credentials.</summary>
         <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ValidateUser">
@@ -1147,6 +1185,9 @@
         <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the membership provider is unable to access the authentication service.</exception>
         <altmember cref="T:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider" />
         <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8">How to: Configure Client Application Services</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/5431a671-eb02-4e18-a651-24764fccec9a">How to: Implement User Login and Logout with Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="ValidateUser">
@@ -1196,6 +1237,9 @@
         </remarks>
         <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the membership provider is unable to access the authentication service.</exception>
         <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8">How to: Configure Client Application Services</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/5431a671-eb02-4e18-a651-24764fccec9a">How to: Implement User Login and Logout with Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="ValidateUser">
@@ -1244,6 +1288,9 @@
         </remarks>
         <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the membership provider is unable to access the authentication service.</exception>
         <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8">How to: Configure Client Application Services</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/5431a671-eb02-4e18-a651-24764fccec9a">How to: Implement User Login and Logout with Client Application Services</related>
       </Docs>
     </Member>
   </Members>

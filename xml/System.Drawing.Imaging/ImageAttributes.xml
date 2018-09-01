@@ -1,4 +1,4 @@
-﻿<Type Name="ImageAttributes" FullName="System.Drawing.Imaging.ImageAttributes">
+<Type Name="ImageAttributes" FullName="System.Drawing.Imaging.ImageAttributes">
   <TypeSignature Language="C#" Value="public sealed class ImageAttributes : ICloneable, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ImageAttributes extends System.Object implements class System.ICloneable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ImageAttributes" />
@@ -52,6 +52,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/44df4556-a433-49c0-ac0f-9a12063a5860">How To: Use a Color Matrix to Transform a Single Color</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f28c54fd-9c80-4f6f-b242-55f7ffcda84b">Recoloring Images</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1280,6 +1282,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f28c54fd-9c80-4f6f-b242-55f7ffcda84b">Recoloring Images</related>
       </Docs>
     </Member>
     <Member MemberName="SetColorMatrix">
@@ -1327,6 +1330,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f28c54fd-9c80-4f6f-b242-55f7ffcda84b">Recoloring Images</related>
       </Docs>
     </Member>
     <Member MemberName="SetColorMatrix">

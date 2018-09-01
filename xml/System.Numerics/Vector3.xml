@@ -1,4 +1,4 @@
-﻿<Type Name="Vector3" FullName="System.Numerics.Vector3">
+<Type Name="Vector3" FullName="System.Numerics.Vector3">
   <TypeSignature Language="C#" Value="public struct Vector3 : IEquatable&lt;System.Numerics.Vector3&gt;, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Vector3 extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Numerics.Vector3&gt;, class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Numerics.Vector3" />
@@ -1892,6 +1892,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1941,6 +1943,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Transform">

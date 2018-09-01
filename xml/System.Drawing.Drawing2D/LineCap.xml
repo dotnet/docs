@@ -1,4 +1,4 @@
-﻿<Type Name="LineCap" FullName="System.Drawing.Drawing2D.LineCap">
+<Type Name="LineCap" FullName="System.Drawing.Drawing2D.LineCap">
   <TypeSignature Language="C#" Value="public enum LineCap" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LineCap extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.LineCap" />
@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md">Using a Pen to Draw Lines and Shapes</related>
   </Docs>
   <Members>
     <Member MemberName="AnchorMask">

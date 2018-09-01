@@ -1,4 +1,4 @@
-﻿<Type Name="SelectionList" FullName="System.Web.UI.MobileControls.SelectionList">
+<Type Name="SelectionList" FullName="System.Web.UI.MobileControls.SelectionList">
   <TypeSignature Language="C#" Value="public class SelectionList : System.Web.UI.MobileControls.MobileControl, System.Web.UI.IPostBackDataHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SelectionList extends System.Web.UI.MobileControls.MobileControl implements class System.Web.UI.IPostBackDataHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.SelectionList" />
@@ -79,6 +79,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +99,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.SelectionList" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -157,6 +159,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="DataMember">
@@ -198,6 +203,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -242,6 +250,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="DataTextField">
@@ -273,6 +284,9 @@
         <summary>Specifies which property of a data-bound item to use when binding an item's <see cref="P:System.Web.UI.MobileControls.MobileListItem.Text" /> property. The default is <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The property of a data-bound item to use when binding an item's <see cref="P:System.Web.UI.MobileControls.MobileListItem.Text" /> property.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="DataValueField">
@@ -304,6 +318,9 @@
         <summary>Specifies which property of a data-bound item to use when binding an item's <see cref="P:System.Web.UI.MobileControls.MobileListItem.Value" /> property. The default is <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The property of a data-bound item to use when binding an item's <see cref="P:System.Web.UI.MobileControls.MobileListItem.Value" /> property.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="IsMultiSelect">
@@ -349,6 +366,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ItemDataBind">
@@ -386,6 +406,9 @@
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListDataBindEventArgs" />
         <altmember cref="M:System.Web.UI.MobileControls.SelectionList.OnItemDataBind(System.Web.UI.MobileControls.ListDataBindEventArgs)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -436,6 +459,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -473,6 +499,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">the call to <see cref="M:System.Web.UI.MobileControls.IControlAdapter.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection,System.Object,System.Boolean@)" /> on the object referenced by <see cref="P:System.Web.UI.MobileControls.MobileControl.Adapter" /> returns <see langword="false" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">Introduction to ASP.NET Mobile Application Development</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -558,6 +587,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -617,6 +649,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -646,6 +681,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">Introduction to ASP.NET Mobile Application Development</related>
       </Docs>
     </Member>
     <Member MemberName="Rows">
@@ -699,6 +736,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">an attempt was made to set the <see cref="T:System.Web.UI.MobileControls.SelectionList" /> value to less than zero.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -768,6 +808,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">an attempt was made to set the <see cref="P:System.Web.UI.MobileControls.SelectionList.SelectedIndex" /> property to less than <see langword="-1" /> or greater than or equal to the number of items.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="SelectedIndexChanged">
@@ -810,6 +853,9 @@
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.SelectionList.OnSelectedIndexChanged(System.EventArgs)" />
         <altmember cref="P:System.Web.UI.MobileControls.SelectionList.SelectedIndex" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Selection">
@@ -854,6 +900,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="SelectType">
@@ -911,6 +960,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -956,6 +1008,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -985,6 +1040,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -1016,6 +1074,9 @@
         <summary>Gets or sets the <see langword="Title" /> attribute on WML devices. The default value is an empty <see langword="string" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The <see langword="Title" /> attribute on WML devices.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">

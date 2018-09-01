@@ -1,4 +1,4 @@
-﻿<Type Name="SectionInformation" FullName="System.Configuration.SectionInformation">
+<Type Name="SectionInformation" FullName="System.Configuration.SectionInformation">
   <TypeSignature Language="C#" Value="public sealed class SectionInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SectionInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.SectionInformation" />
@@ -797,6 +797,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1">Encrypting Configuration Information Using Protected Configuration</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -986,6 +987,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1">Encrypting Configuration Information Using Protected Configuration</related>
       </Docs>
     </Member>
     <Member MemberName="ProtectSection">
@@ -1055,6 +1057,7 @@
         <altmember cref="T:System.Configuration.DpapiProtectedConfigurationProvider" />
         <altmember cref="T:System.Configuration.RsaProtectedConfigurationProvider" />
         <related type="Article" href="https://msdn.microsoft.com/library/53tyfkaw(v=vs.100).aspx">Encrypting Configuration Information Using Protected Configuration</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1">Encrypting Configuration Information Using Protected Configuration</related>
       </Docs>
     </Member>
     <Member MemberName="RequirePermission">
@@ -1368,6 +1371,7 @@ Dim apSection As AppSettingsSection = _
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1">Encrypting Configuration Information Using Protected Configuration</related>
       </Docs>
     </Member>
   </Members>

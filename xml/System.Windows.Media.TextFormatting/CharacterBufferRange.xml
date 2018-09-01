@@ -1,4 +1,4 @@
-﻿<Type Name="CharacterBufferRange" FullName="System.Windows.Media.TextFormatting.CharacterBufferRange">
+<Type Name="CharacterBufferRange" FullName="System.Windows.Media.TextFormatting.CharacterBufferRange">
   <TypeSignature Language="C#" Value="public struct CharacterBufferRange : IEquatable&lt;System.Windows.Media.TextFormatting.CharacterBufferRange&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CharacterBufferRange extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Windows.Media.TextFormatting.CharacterBufferRange&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.CharacterBufferRange" />
@@ -21,6 +21,7 @@
   <Docs>
     <summary>Describes a string of characters.</summary>
     <remarks>To be added.</remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159965">Advanced Text Formatting Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

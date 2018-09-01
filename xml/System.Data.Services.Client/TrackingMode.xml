@@ -1,4 +1,4 @@
-﻿<Type Name="TrackingMode" FullName="System.Data.Services.Client.TrackingMode">
+<Type Name="TrackingMode" FullName="System.Data.Services.Client.TrackingMode">
   <TypeSignature Language="C#" Value="public enum TrackingMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TrackingMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.TrackingMode" />
@@ -26,6 +26,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/b32e1d49-c214-4cb1-867e-88fbb3d08c8d">Binding Data to Controls (ADO.NET Data Services)</related>
   </Docs>
   <Members>
     <Member MemberName="AutoChangeTracking">

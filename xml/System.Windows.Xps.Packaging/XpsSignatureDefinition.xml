@@ -1,4 +1,4 @@
-﻿<Type Name="XpsSignatureDefinition" FullName="System.Windows.Xps.Packaging.XpsSignatureDefinition">
+<Type Name="XpsSignatureDefinition" FullName="System.Windows.Xps.Packaging.XpsSignatureDefinition">
   <TypeSignature Language="C#" Value="public class XpsSignatureDefinition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsSignatureDefinition extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsSignatureDefinition" />
@@ -38,6 +38,8 @@
     </remarks>
     <altmember cref="T:System.IO.Packaging.PackageDigitalSignature" />
     <altmember cref="T:System.Windows.Xps.Packaging.XpsDigitalSignature" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=65761">XML Paper Specification (XPS)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

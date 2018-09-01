@@ -1,4 +1,4 @@
-﻿<Type Name="Keyboard" FullName="Microsoft.VisualBasic.Devices.Keyboard">
+<Type Name="Keyboard" FullName="Microsoft.VisualBasic.Devices.Keyboard">
   <TypeSignature Language="C#" Value="public class Keyboard" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Keyboard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.Keyboard" />
@@ -51,6 +51,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/aa37d54c-5c98-4b44-b98a-c26d2a03c038">Accessing the Keyboard</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +77,8 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Devices.Keyboard" /> class.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/aa37d54c-5c98-4b44-b98a-c26d2a03c038">Accessing the Keyboard</related>
       </Docs>
     </Member>
     <Member MemberName="AltKeyDown">
@@ -125,6 +129,8 @@
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
         <altmember cref="P:System.Windows.Forms.Control.ModifierKeys" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/aa37d54c-5c98-4b44-b98a-c26d2a03c038">Accessing the Keyboard</related>
       </Docs>
     </Member>
     <Member MemberName="CapsLock">
@@ -179,6 +185,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/aa37d54c-5c98-4b44-b98a-c26d2a03c038">Accessing the Keyboard</related>
       </Docs>
     </Member>
     <Member MemberName="CtrlKeyDown">
@@ -229,6 +237,8 @@
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
         <altmember cref="P:System.Windows.Forms.Control.ModifierKeys" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/aa37d54c-5c98-4b44-b98a-c26d2a03c038">Accessing the Keyboard</related>
       </Docs>
     </Member>
     <Member MemberName="NumLock">
@@ -283,6 +293,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/aa37d54c-5c98-4b44-b98a-c26d2a03c038">Accessing the Keyboard</related>
       </Docs>
     </Member>
     <Member MemberName="ScrollLock">
@@ -337,6 +349,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/aa37d54c-5c98-4b44-b98a-c26d2a03c038">Accessing the Keyboard</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SendKeys">
@@ -449,6 +463,9 @@
         <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
         <altmember cref="M:System.Windows.Forms.SendKeys.Send(System.String)" />
         <altmember cref="M:System.Windows.Forms.SendKeys.SendWait(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/aa37d54c-5c98-4b44-b98a-c26d2a03c038">Accessing the Keyboard</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9280ca96-7a93-47a3-8d01-6d01be0657cb">Walkthrough: Calling Windows APIs</related>
       </Docs>
     </Member>
     <Member MemberName="SendKeys">
@@ -549,6 +566,9 @@
         <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
         <altmember cref="M:System.Windows.Forms.SendKeys.Send(System.String)" />
         <altmember cref="M:System.Windows.Forms.SendKeys.SendWait(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/aa37d54c-5c98-4b44-b98a-c26d2a03c038">Accessing the Keyboard</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9280ca96-7a93-47a3-8d01-6d01be0657cb">Walkthrough: Calling Windows APIs</related>
       </Docs>
     </Member>
     <Member MemberName="ShiftKeyDown">
@@ -599,6 +619,8 @@
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
         <altmember cref="P:System.Windows.Forms.Control.ModifierKeys" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/aa37d54c-5c98-4b44-b98a-c26d2a03c038">Accessing the Keyboard</related>
       </Docs>
     </Member>
   </Members>

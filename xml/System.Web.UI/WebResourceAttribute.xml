@@ -1,4 +1,4 @@
-﻿<Type Name="WebResourceAttribute" FullName="System.Web.UI.WebResourceAttribute">
+<Type Name="WebResourceAttribute" FullName="System.Web.UI.WebResourceAttribute">
   <TypeSignature Language="C#" Value="public sealed class WebResourceAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebResourceAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebResourceAttribute" />
@@ -75,6 +75,11 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Attribute" />
+    <related type="Article" href="http://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd">ASP.NET Web Page Resources Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/5212666e-98ab-47e4-a497-b5545ab15c7f">/resource (Embed Resource File to Output) (C# Compiler Options)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/eee2f227-91f2-4f2b-a9d6-1c51c5320858">/resource (Visual Basic)</related>
+    <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

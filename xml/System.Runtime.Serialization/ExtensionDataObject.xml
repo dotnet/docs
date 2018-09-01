@@ -1,4 +1,4 @@
-﻿<Type Name="ExtensionDataObject" FullName="System.Runtime.Serialization.ExtensionDataObject">
+<Type Name="ExtensionDataObject" FullName="System.Runtime.Serialization.ExtensionDataObject">
   <TypeSignature Language="C#" Value="public sealed class ExtensionDataObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExtensionDataObject extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ExtensionDataObject" />
@@ -46,6 +46,7 @@
     <altmember cref="T:System.Runtime.Serialization.XmlObjectSerializer" />
     <altmember cref="T:System.Runtime.Serialization.DataContractAttribute" />
     <altmember cref="T:System.Runtime.Serialization.DataMemberAttribute" />
+    <related type="Article" href="~/docs/framework/wcf/feature-details/using-data-contracts.md">Using Data Contracts</related>
   </Docs>
   <Members />
 </Type>

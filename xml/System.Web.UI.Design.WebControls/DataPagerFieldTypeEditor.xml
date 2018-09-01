@@ -1,4 +1,4 @@
-﻿<Type Name="DataPagerFieldTypeEditor" FullName="System.Web.UI.Design.WebControls.DataPagerFieldTypeEditor">
+<Type Name="DataPagerFieldTypeEditor" FullName="System.Web.UI.Design.WebControls.DataPagerFieldTypeEditor">
   <TypeSignature Language="C#" Value="public class DataPagerFieldTypeEditor : System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataPagerFieldTypeEditor extends System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.DataPagerFieldTypeEditor" />
@@ -32,6 +32,7 @@
     <altmember cref="T:System.Web.UI.WebControls.DataPager" />
     <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
     <altmember cref="P:System.Web.UI.WebControls.DataPager.Fields" />
+    <related type="Article" href="http://msdn.microsoft.com/library/f068b4ea-6e8c-4c0b-aefd-188b337240da">User Interface Type Editors Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +59,7 @@
         <altmember cref="T:System.Web.UI.WebControls.DataPager" />
         <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
         <altmember cref="P:System.Web.UI.WebControls.DataPager.Fields" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f068b4ea-6e8c-4c0b-aefd-188b337240da">User Interface Type Editors Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EditValue">
@@ -91,6 +93,7 @@
         <altmember cref="T:System.Web.UI.WebControls.DataPager" />
         <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
         <altmember cref="P:System.Web.UI.WebControls.DataPager.Fields" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f068b4ea-6e8c-4c0b-aefd-188b337240da">User Interface Type Editors Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetEditStyle">
@@ -128,6 +131,7 @@
         <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
         <altmember cref="P:System.Web.UI.WebControls.DataPager.Fields" />
         <altmember cref="T:System.Drawing.Design.UITypeEditorEditStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f068b4ea-6e8c-4c0b-aefd-188b337240da">User Interface Type Editors Overview</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="Rfc2898DeriveBytes" FullName="System.Security.Cryptography.Rfc2898DeriveBytes">
+<Type Name="Rfc2898DeriveBytes" FullName="System.Security.Cryptography.Rfc2898DeriveBytes">
   <TypeSignature Language="C#" Value="public class Rfc2898DeriveBytes : System.Security.Cryptography.DeriveBytes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Rfc2898DeriveBytes extends System.Security.Cryptography.DeriveBytes" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Rfc2898DeriveBytes" />
@@ -58,6 +58,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -132,6 +133,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The specified salt size is smaller than 8 bytes or the iteration count is less than 1.</exception>
         <exception cref="T:System.ArgumentNullException">The password or salt is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -185,6 +187,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The specified salt size is smaller than 8 bytes.</exception>
         <exception cref="T:System.ArgumentNullException">The password or salt is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -309,6 +312,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The specified salt size is smaller than 8 bytes or the iteration count is less than 1.</exception>
         <exception cref="T:System.ArgumentNullException">The password or salt is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -371,6 +375,7 @@
         <exception cref="T:System.ArgumentNullException">The password or salt is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="iterations" /> is out of range. This parameter requires a non-negative number.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -670,6 +675,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="cb" /> is out of range. This parameter requires a non-negative number.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="HashAlgorithm">
@@ -744,6 +750,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The number of iterations is less than 1.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -795,6 +802,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Salt">
@@ -839,6 +847,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The specified salt size is smaller than 8 bytes.</exception>
         <exception cref="T:System.ArgumentNullException">The salt is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
   </Members>

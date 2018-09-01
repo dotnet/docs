@@ -1,4 +1,4 @@
-﻿<Type Name="SqlDataReader" FullName="System.Data.SqlClient.SqlDataReader">
+<Type Name="SqlDataReader" FullName="System.Data.SqlClient.SqlDataReader">
   <TypeSignature Language="C#" Value="public class SqlDataReader : System.Data.Common.DbDataReader, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlDataReader extends System.Data.Common.DbDataReader implements class System.Data.IDataReader, class System.Data.IDataRecord, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlDataReader" />
@@ -59,6 +59,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders</related>
+    <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -106,6 +109,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -138,6 +145,10 @@
         <summary>Gets the <see cref="T:System.Data.SqlClient.SqlConnection" /> associated with the <see cref="T:System.Data.SqlClient.SqlDataReader" />.</summary>
         <value>The <see cref="T:System.Data.SqlClient.SqlConnection" /> associated with the <see cref="T:System.Data.SqlClient.SqlDataReader" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Depth">
@@ -181,6 +192,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FieldCount">
@@ -225,6 +239,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">There is no current connection to an instance of SQL Server.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetBoolean">
@@ -275,6 +292,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetByte">
@@ -325,6 +345,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -384,6 +407,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetChar">
@@ -440,6 +466,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -502,6 +529,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -584,6 +614,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDateTime">
@@ -634,6 +665,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDateTimeOffset">
@@ -680,6 +714,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6f5ff56a-a57e-49d7-8ae9-bbed697e42e3">Date and Time Data Types (Katmai)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDecimal">
@@ -730,6 +768,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDouble">
@@ -780,6 +821,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -820,6 +864,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetFieldType">
@@ -860,6 +907,9 @@
         <summary>Gets the <see cref="T:System.Type" /> that is the data type of the object.</summary>
         <returns>The <see cref="T:System.Type" /> that is the data type of the object. If the type does not exist on the client, in the case of a User-Defined Type (UDT) returned from the database, **GetFieldType** returns null.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetFieldValue&lt;T&gt;">
@@ -1055,6 +1105,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetGuid">
@@ -1105,6 +1158,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetInt16">
@@ -1155,6 +1211,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetInt32">
@@ -1205,6 +1264,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetInt64">
@@ -1255,6 +1317,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetName">
@@ -1295,6 +1360,9 @@
         <summary>Gets the name of the specified column.</summary>
         <returns>The name of the specified column.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetOrdinal">
@@ -1355,6 +1423,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The name specified is not a valid column name.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetProviderSpecificFieldType">
@@ -1391,6 +1462,9 @@
         <summary>Gets an <see langword="Object" /> that is a representation of the underlying provider-specific field type.</summary>
         <returns>Gets an <see cref="T:System.Object" /> that is a representation of the underlying provider-specific field type.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetProviderSpecificValue">
@@ -1427,6 +1501,10 @@
         <summary>Gets an <see langword="Object" /> that is a representation of the underlying provider specific value.</summary>
         <returns>An <see cref="T:System.Object" /> that is a representation of the underlying provider specific value.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetProviderSpecificValues">
@@ -1463,6 +1541,10 @@
         <summary>Gets an array of objects that are a representation of the underlying provider specific values.</summary>
         <returns>The array of objects that are a representation of the underlying provider specific values.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSchemaTable">
@@ -1535,6 +1617,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.SqlClient.SqlDataReader" /> is closed.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlBinary">
@@ -1579,6 +1662,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlBoolean">
@@ -1623,6 +1710,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlByte">
@@ -1667,6 +1758,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlBytes">
@@ -1703,6 +1798,10 @@
         <summary>Gets the value of the specified column as <see cref="T:System.Data.SqlTypes.SqlBytes" />.</summary>
         <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlBytes" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlChars">
@@ -1739,6 +1838,10 @@
         <summary>Gets the value of the specified column as <see cref="T:System.Data.SqlTypes.SqlChars" />.</summary>
         <returns>The value of the column expressed as a  <see cref="T:System.Data.SqlTypes.SqlChars" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlDateTime">
@@ -1783,6 +1886,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlDecimal">
@@ -1827,6 +1934,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlDouble">
@@ -1871,6 +1982,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlGuid">
@@ -1915,6 +2030,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlInt16">
@@ -1959,6 +2078,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlInt32">
@@ -2003,6 +2126,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlInt64">
@@ -2047,6 +2174,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlMoney">
@@ -2091,6 +2222,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlSingle">
@@ -2135,6 +2270,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlString">
@@ -2179,6 +2318,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlValue">
@@ -2223,6 +2366,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlValues">
@@ -2269,6 +2416,10 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="values" /> is null.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlXml">
@@ -2317,6 +2468,10 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The index passed was outside the range of 0 to <see cref="P:System.Data.DataTableReader.FieldCount" /> - 1</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to read or access columns in a closed <see cref="T:System.Data.SqlClient.SqlDataReader" />.</exception>
         <exception cref="T:System.InvalidCastException">The retrieved data is not compatible with the <see cref="T:System.Data.SqlTypes.SqlXml" /> type.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Manipulating Data (ADO.NET)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetStream">
@@ -2458,6 +2613,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetTextReader">
@@ -2577,6 +2736,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6f5ff56a-a57e-49d7-8ae9-bbed697e42e3">Date and Time Data Types (Katmai)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -2624,6 +2787,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetValues">
@@ -2683,6 +2850,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetXmlReader">
@@ -2776,6 +2947,9 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Data.SqlClient.SqlDataReader" /> contains one or more rows; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsClosed">
@@ -2820,6 +2994,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsCommandBehavior">
@@ -2855,6 +3033,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsDBNull">
@@ -2906,6 +3085,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsDBNullAsync">
@@ -2974,6 +3156,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Gets the value of a column in its native format.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -3015,6 +3198,9 @@
         <value>The value of the specified column in its native format.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -3065,6 +3251,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">No column with the specified name was found.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="NextResult">
@@ -3112,6 +3301,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="NextResultAsync">
@@ -3158,6 +3350,7 @@
   
  <see langword="Context Connection=true" /> is specified in the connection string.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">SQL Server returned an error while executing the command text.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -3214,6 +3407,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.SqlClient.SqlException">SQL Server returned an error while executing the command text.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
@@ -3262,6 +3459,7 @@
   
  <see langword="Context Connection=true" /> is specified in the connection string.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">SQL Server returned an error while executing the command text.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RecordsAffected">
@@ -3307,6 +3505,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -3374,6 +3576,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">
@@ -3436,6 +3639,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

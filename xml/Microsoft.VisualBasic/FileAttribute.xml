@@ -1,4 +1,4 @@
-﻿<Type Name="FileAttribute" FullName="Microsoft.VisualBasic.FileAttribute">
+<Type Name="FileAttribute" FullName="Microsoft.VisualBasic.FileAttribute">
   <TypeSignature Language="C#" Value="public enum FileAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FileAttribute extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileAttribute" />
@@ -36,6 +36,9 @@
     <altmember cref="M:Microsoft.VisualBasic.FileSystem.Dir(System.String,Microsoft.VisualBasic.FileAttribute)" />
     <altmember cref="M:Microsoft.VisualBasic.FileSystem.GetAttr(System.String)" />
     <altmember cref="M:Microsoft.VisualBasic.FileSystem.SetAttr(System.String,Microsoft.VisualBasic.FileAttribute)" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/constants-and-enumerations.md">Constants and Enumerations</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/constants-enums/when-to-use-an-enumeration.md">When to Use an Enumeration</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md">How to: Refer to an Enumeration Member</related>
   </Docs>
   <Members>
     <Member MemberName="Archive">

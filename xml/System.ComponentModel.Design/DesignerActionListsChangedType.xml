@@ -1,4 +1,4 @@
-﻿<Type Name="DesignerActionListsChangedType" FullName="System.ComponentModel.Design.DesignerActionListsChangedType">
+<Type Name="DesignerActionListsChangedType" FullName="System.ComponentModel.Design.DesignerActionListsChangedType">
   <TypeSignature Language="C#" Value="public enum DesignerActionListsChangedType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DesignerActionListsChangedType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionListsChangedType" />
@@ -35,6 +35,7 @@
     <altmember cref="T:System.ComponentModel.Design.DesignerActionListCollection" />
     <altmember cref="P:System.ComponentModel.Design.DesignerActionListsChangedEventArgs.ChangeType" />
     <altmember cref="E:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged" />
+    <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
   </Docs>
   <Members>
     <Member MemberName="ActionListsAdded">

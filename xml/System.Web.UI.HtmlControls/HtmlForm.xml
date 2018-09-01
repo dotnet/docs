@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlForm" FullName="System.Web.UI.HtmlControls.HtmlForm">
+<Type Name="HtmlForm" FullName="System.Web.UI.HtmlControls.HtmlForm">
   <TypeSignature Language="C#" Value="public class HtmlForm : System.Web.UI.HtmlControls.HtmlContainerControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlForm extends System.Web.UI.HtmlControls.HtmlContainerControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlForm" />
@@ -48,6 +48,7 @@
     <altmember cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" />
     <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Enctype" />
     <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Method" />
+    <related type="Article" href="http://msdn.microsoft.com/library/fedf234e-b7c4-4644-a9e8-c1c0870b043b">Cross-Page Posting in an ASP.NET Web Page</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -158,6 +159,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7">ASP.NET Control Identification</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -244,6 +246,7 @@
         <altmember cref="P:System.Web.UI.Control.ID" />
         <altmember cref="M:System.Web.UI.HtmlControls.HtmlForm.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultFocus">
@@ -453,6 +456,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.UniqueID" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -807,6 +811,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13">Accessibility in Visual Studio 2010 and ASP.NET 4</related>
       </Docs>
     </Member>
     <Member MemberName="UniqueID">
@@ -851,6 +857,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Name" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
       </Docs>
     </Member>
   </Members>

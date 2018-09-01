@@ -1,4 +1,4 @@
-﻿<Type Name="WaitCallback" FullName="System.Threading.WaitCallback">
+<Type Name="WaitCallback" FullName="System.Threading.WaitCallback">
   <TypeSignature Language="C#" Value="public delegate void WaitCallback(object state);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WaitCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Threading.WaitCallback" />
@@ -54,10 +54,12 @@
 
  For examples that use the `WaitCallback` delegate, see the <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A?displayProperty=nameWithType> method.
   
- For more information about the thread pool, see [The Managed Thread Pool](~/docs/standard/threading/the-managed-thread-pool.md).  
+ For more information about the thread pool, see [The managed thread pool](~/docs/standard/threading/the-managed-thread-pool.md).  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Threading.ThreadPool" />
+    <related type="Article" href="~/docs/standard/threading/threads-and-threading.md">Threads and Threading</related>
+    <related type="Article" href="~/docs/standard/threading/the-managed-thread-pool.md">The managed thread pool</related>
   </Docs>
 </Type>

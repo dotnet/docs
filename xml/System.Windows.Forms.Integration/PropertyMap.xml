@@ -1,4 +1,4 @@
-﻿<Type Name="PropertyMap" FullName="System.Windows.Forms.Integration.PropertyMap">
+<Type Name="PropertyMap" FullName="System.Windows.Forms.Integration.PropertyMap">
   <TypeSignature Language="C#" Value="public class PropertyMap" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyMap extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Integration.PropertyMap" />
@@ -48,6 +48,9 @@
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
     <altmember cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" />
     <altmember cref="P:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap" />
+    <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms751565(v=vs.100).aspx">Property Mapping</related>
+    <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788740(v=vs.100).aspx">Walkthrough: Mapping Properties Using the ElementHost Control</related>
+    <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788729(v=vs.100).aspx">Walkthrough: Mapping Properties Using the WindowsFormsHost Element</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -77,6 +80,9 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" />
         <altmember cref="P:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap" />
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms751565(v=vs.100).aspx">Property Mapping</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788740(v=vs.100).aspx">Walkthrough: Mapping Properties Using the ElementHost Control</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788729(v=vs.100).aspx">Walkthrough: Mapping Properties Using the WindowsFormsHost Element</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -126,6 +132,9 @@
         <related type="Article" href="~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md">Windows Forms and WPF Property Mapping</related>
         <related type="Article" href="~/docs/framework/wpf/advanced/walkthrough-mapping-properties-using-the-elementhost-control.md">Walkthrough: Mapping Properties Using the ElementHost Control</related>
         <related type="Article" href="~/docs/framework/wpf/advanced/walkthrough-mapping-properties-using-the-windowsformshost-element.md">Walkthrough: Mapping Properties Using the WindowsFormsHost Element</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms751565(v=vs.100).aspx">Property Mapping</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788740(v=vs.100).aspx">Walkthrough: Mapping Properties Using the ElementHost Control</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788729(v=vs.100).aspx">Walkthrough: Mapping Properties Using the WindowsFormsHost Element</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -177,6 +186,9 @@
           <paramref name="propertyName" /> has an existing mapping.</exception>
         <altmember cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" />
         <altmember cref="P:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap" />
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms751565(v=vs.100).aspx">Property Mapping</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788740(v=vs.100).aspx">Walkthrough: Mapping Properties Using the ElementHost Control</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788729(v=vs.100).aspx">Walkthrough: Mapping Properties Using the WindowsFormsHost Element</related>
       </Docs>
     </Member>
     <Member MemberName="Apply">
@@ -229,6 +241,9 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" />
         <altmember cref="P:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap" />
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms751565(v=vs.100).aspx">Property Mapping</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788740(v=vs.100).aspx">Walkthrough: Mapping Properties Using the ElementHost Control</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788729(v=vs.100).aspx">Walkthrough: Mapping Properties Using the WindowsFormsHost Element</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -253,6 +268,9 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" />
         <altmember cref="P:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap" />
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms751565(v=vs.100).aspx">Property Mapping</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788740(v=vs.100).aspx">Walkthrough: Mapping Properties Using the ElementHost Control</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788729(v=vs.100).aspx">Walkthrough: Mapping Properties Using the WindowsFormsHost Element</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -282,6 +300,9 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" />
         <altmember cref="P:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap" />
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms751565(v=vs.100).aspx">Property Mapping</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788740(v=vs.100).aspx">Walkthrough: Mapping Properties Using the ElementHost Control</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788729(v=vs.100).aspx">Walkthrough: Mapping Properties Using the WindowsFormsHost Element</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultTranslators">
@@ -313,6 +334,9 @@
         </remarks>
         <altmember cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" />
         <altmember cref="P:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap" />
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms751565(v=vs.100).aspx">Property Mapping</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788740(v=vs.100).aspx">Walkthrough: Mapping Properties Using the ElementHost Control</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788729(v=vs.100).aspx">Walkthrough: Mapping Properties Using the WindowsFormsHost Element</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -364,6 +388,9 @@
         <exception cref="T:System.ArgumentException">The property given by <paramref name="propertyName" /> does not exist on <see cref="P:System.Windows.Forms.Integration.PropertyMap.SourceObject" />.</exception>
         <altmember cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" />
         <altmember cref="P:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap" />
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms751565(v=vs.100).aspx">Property Mapping</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788740(v=vs.100).aspx">Walkthrough: Mapping Properties Using the ElementHost Control</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788729(v=vs.100).aspx">Walkthrough: Mapping Properties Using the WindowsFormsHost Element</related>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -388,6 +415,9 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" />
         <altmember cref="P:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap" />
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms751565(v=vs.100).aspx">Property Mapping</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788740(v=vs.100).aspx">Walkthrough: Mapping Properties Using the ElementHost Control</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788729(v=vs.100).aspx">Walkthrough: Mapping Properties Using the WindowsFormsHost Element</related>
       </Docs>
     </Member>
     <Member MemberName="PropertyMappingError">
@@ -426,6 +456,9 @@
         </remarks>
         <altmember cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" />
         <altmember cref="P:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap" />
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms751565(v=vs.100).aspx">Property Mapping</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788740(v=vs.100).aspx">Walkthrough: Mapping Properties Using the ElementHost Control</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788729(v=vs.100).aspx">Walkthrough: Mapping Properties Using the WindowsFormsHost Element</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -470,6 +503,9 @@
           <paramref name="propertyName" /> is <see langword="null" />.</exception>
         <altmember cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" />
         <altmember cref="P:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap" />
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms751565(v=vs.100).aspx">Property Mapping</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788740(v=vs.100).aspx">Walkthrough: Mapping Properties Using the ElementHost Control</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788729(v=vs.100).aspx">Walkthrough: Mapping Properties Using the WindowsFormsHost Element</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -512,6 +548,9 @@
           <paramref name="propertyName" /> is <see langword="null" />.</exception>
         <altmember cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" />
         <altmember cref="P:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap" />
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms751565(v=vs.100).aspx">Property Mapping</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788740(v=vs.100).aspx">Walkthrough: Mapping Properties Using the ElementHost Control</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788729(v=vs.100).aspx">Walkthrough: Mapping Properties Using the WindowsFormsHost Element</related>
       </Docs>
     </Member>
     <Member MemberName="ResetAll">
@@ -549,6 +588,9 @@
         </remarks>
         <altmember cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" />
         <altmember cref="P:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap" />
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms751565(v=vs.100).aspx">Property Mapping</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788740(v=vs.100).aspx">Walkthrough: Mapping Properties Using the ElementHost Control</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788729(v=vs.100).aspx">Walkthrough: Mapping Properties Using the WindowsFormsHost Element</related>
       </Docs>
     </Member>
     <Member MemberName="SourceObject">
@@ -585,6 +627,9 @@
         </remarks>
         <altmember cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" />
         <altmember cref="P:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap" />
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms751565(v=vs.100).aspx">Property Mapping</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788740(v=vs.100).aspx">Walkthrough: Mapping Properties Using the ElementHost Control</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788729(v=vs.100).aspx">Walkthrough: Mapping Properties Using the WindowsFormsHost Element</related>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -609,6 +654,9 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" />
         <altmember cref="P:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap" />
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms751565(v=vs.100).aspx">Property Mapping</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788740(v=vs.100).aspx">Walkthrough: Mapping Properties Using the ElementHost Control</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms788729(v=vs.100).aspx">Walkthrough: Mapping Properties Using the WindowsFormsHost Element</related>
       </Docs>
     </Member>
   </Members>

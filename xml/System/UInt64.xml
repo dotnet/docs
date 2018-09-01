@@ -1,4 +1,4 @@
-﻿<Type Name="UInt64" FullName="System.UInt64">
+<Type Name="UInt64" FullName="System.UInt64">
   <TypeSignature Language="C#" Value="public struct UInt64 : IComparable, IComparable&lt;ulong&gt;, IConvertible, IEquatable&lt;ulong&gt;, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit unsigned int64 extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;unsigned int64&gt;, class System.IConvertible, class System.IEquatable`1&lt;unsigned int64&gt;, class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.UInt64" />
@@ -73,6 +73,7 @@
     </remarks>
     <threadsafe>All members of this type are thread safe. Members that appear to modify instance state actually return a new instance initialized with the new value. As with any other type, reading and writing to a shared variable that contains an instance of this type must be protected by a lock to guarantee thread safety.</threadsafe>
     <altmember cref="T:System.Int64" />
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="CompareTo">
@@ -665,6 +666,7 @@
         <exception cref="T:System.FormatException">The <paramref name="s" /> parameter is not in the correct format.</exception>
         <exception cref="T:System.OverflowException">The <paramref name="s" /> parameter represents a number less than <see cref="F:System.UInt64.MinValue" /> or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
         <altmember cref="Overload:System.UInt64.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -794,6 +796,7 @@
  <paramref name="s" /> includes non-zero, fractional digits.</exception>
         <altmember cref="Overload:System.UInt64.ToString" />
         <altmember cref="Overload:System.UInt64.TryParse" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -887,6 +890,7 @@
         <exception cref="T:System.OverflowException">The <paramref name="s" /> parameter represents a number less than <see cref="F:System.UInt64.MinValue" /> or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
         <altmember cref="M:System.UInt64.ToString" />
         <altmember cref="Overload:System.UInt64.TryParse" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1055,6 +1059,7 @@
   
  <paramref name="s" /> includes non-zero, fractional digits.</exception>
         <altmember cref="Overload:System.UInt64.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -1919,6 +1924,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.UInt64.Parse(System.String)" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1992,6 +1998,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.UInt64.Parse(System.String)" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2071,6 +2078,8 @@
         </remarks>
         <exception cref="T:System.FormatException">The <paramref name="format" /> parameter is invalid.</exception>
         <altmember cref="M:System.UInt64.Parse(System.String)" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md">How to: Pad a Number with Leading Zeros</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2163,6 +2172,9 @@
         </remarks>
         <exception cref="T:System.FormatException">The <paramref name="format" /> parameter is invalid.</exception>
         <altmember cref="M:System.UInt64.Parse(System.String)" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md">How to: Pad a Number with Leading Zeros</related>
+        <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
       </Docs>
     </Member>
     <Member MemberName="TryFormat">
@@ -2329,6 +2341,8 @@
         <altCompliant cref="M:System.Decimal.Parse(System.String)" />
         <altmember cref="Overload:System.UInt64.Parse" />
         <altmember cref="Overload:System.UInt64.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
+        <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -2505,6 +2519,7 @@
         <altmember cref="M:System.UInt64.Parse(System.String)" />
         <altmember cref="Overload:System.UInt64.Parse" />
         <altmember cref="Overload:System.UInt64.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
   </Members>

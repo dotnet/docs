@@ -1,4 +1,4 @@
-﻿<Type Name="SetStateActivity" FullName="System.Workflow.Activities.SetStateActivity">
+<Type Name="SetStateActivity" FullName="System.Workflow.Activities.SetStateActivity">
   <TypeSignature Language="C#" Value="public sealed class SetStateActivity : System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SetStateActivity extends System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.SetStateActivity" />
@@ -60,6 +60,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734685(v=vs.90)">Using the SetState Activity</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -69,6 +70,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SetStateActivity" /> class.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734685(v=vs.90)">Using the SetState Activity</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -96,6 +98,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734685(v=vs.90)">Using the SetState Activity</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -118,6 +121,7 @@
         <param name="name">The user-defined name of the activity.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SetStateActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734685(v=vs.90)">Using the SetState Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -184,6 +188,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734685(v=vs.90)">Using the SetState Activity</related>
       </Docs>
     </Member>
     <Member MemberName="TargetStateNameProperty">
@@ -212,6 +217,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734685(v=vs.90)">Using the SetState Activity</related>
       </Docs>
     </Member>
   </Members>

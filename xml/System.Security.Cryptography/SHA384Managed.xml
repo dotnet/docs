@@ -1,4 +1,4 @@
-﻿<Type Name="SHA384Managed" FullName="System.Security.Cryptography.SHA384Managed">
+<Type Name="SHA384Managed" FullName="System.Security.Cryptography.SHA384Managed">
   <TypeSignature Language="C#" Value="public class SHA384Managed : System.Security.Cryptography.SHA384" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SHA384Managed extends System.Security.Cryptography.SHA384" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.SHA384Managed" />
@@ -54,6 +54,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,6 +98,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The Federal Information Processing Standards (FIPS) security setting is enabled. This implementation is not part of the Windows Platform FIPS-validated cryptographic algorithms.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -232,6 +234,7 @@
         </remarks>
         <altmember cref="T:System.Security.Cryptography.HashAlgorithm" />
         <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="HashFinal">
@@ -278,6 +281,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -320,6 +324,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="TryHashFinal">

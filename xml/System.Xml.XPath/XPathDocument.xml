@@ -1,4 +1,4 @@
-﻿<Type Name="XPathDocument" FullName="System.Xml.XPath.XPathDocument">
+<Type Name="XPathDocument" FullName="System.Xml.XPath.XPathDocument">
   <TypeSignature Language="C#" Value="public class XPathDocument : System.Xml.XPath.IXPathNavigable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XPathDocument extends System.Object implements class System.Xml.XPath.IXPathNavigable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XPathDocument" />
@@ -41,6 +41,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Xml.XPath.XPathNavigator" />
+    <related type="Article" href="http://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081">Process XML Data Using the XPath Data Model</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

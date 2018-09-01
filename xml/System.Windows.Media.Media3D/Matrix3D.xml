@@ -1,4 +1,4 @@
-﻿<Type Name="Matrix3D" FullName="System.Windows.Media.Media3D.Matrix3D">
+<Type Name="Matrix3D" FullName="System.Windows.Media.Media3D.Matrix3D">
   <TypeSignature Language="C#" Value="public struct Matrix3D : IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit Matrix3D extends System.ValueType implements class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Matrix3D" />
@@ -147,6 +147,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160033">Quaternion Viewer Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

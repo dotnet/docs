@@ -1,4 +1,4 @@
-﻿<Type Name="HostExecutionContext" FullName="System.Threading.HostExecutionContext">
+<Type Name="HostExecutionContext" FullName="System.Threading.HostExecutionContext">
   <TypeSignature Language="C#" Value="public class HostExecutionContext : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HostExecutionContext extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.HostExecutionContext" />
@@ -223,6 +223,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/garbage-collection/unmanaged.md">Cleaning Up Unmanaged Resources</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">

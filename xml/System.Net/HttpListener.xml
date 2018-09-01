@@ -1,4 +1,4 @@
-﻿<Type Name="HttpListener" FullName="System.Net.HttpListener">
+<Type Name="HttpListener" FullName="System.Net.HttpListener">
   <TypeSignature Language="C#" Value="public sealed class HttpListener : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpListener extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Net.HttpListener" />
@@ -75,6 +75,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/8bf0b428-5a21-4299-8d6e-bf8251fd978a">Changes to NTLM authentication for HTTPWebRequest in Version 3.5 SP1</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -482,6 +483,7 @@
         <altmember cref="T:System.Net.HttpListener.ExtendedProtectionSelector" />
         <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="EndGetContext">
@@ -604,6 +606,7 @@
         <altmember cref="T:System.Net.HttpListener.ExtendedProtectionSelector" />
         <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="ExtendedProtectionSelectorDelegate">
@@ -664,6 +667,7 @@
         <altmember cref="T:System.Net.HttpListener.ExtendedProtectionSelector" />
         <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="GetContext">

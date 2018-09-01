@@ -1,4 +1,4 @@
-﻿<Type Name="MsmqIntegrationBindingElement" FullName="System.ServiceModel.Configuration.MsmqIntegrationBindingElement">
+<Type Name="MsmqIntegrationBindingElement" FullName="System.ServiceModel.Configuration.MsmqIntegrationBindingElement">
   <TypeSignature Language="C#" Value="public class MsmqIntegrationBindingElement : System.ServiceModel.Configuration.MsmqBindingElementBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MsmqIntegrationBindingElement extends System.ServiceModel.Configuration.MsmqBindingElementBase" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MsmqIntegrationBindingElement" />
@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/eaaa7651-e6e5-4fae-9dad-c1867d38b586">MsmqIntegrationBindingElement</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/edf277f3-e3bf-4ed8-9f55-83b5788430a7">msmqIntegrationBinding element</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

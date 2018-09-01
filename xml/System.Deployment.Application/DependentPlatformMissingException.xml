@@ -1,4 +1,4 @@
-﻿<Type Name="DependentPlatformMissingException" FullName="System.Deployment.Application.DependentPlatformMissingException">
+<Type Name="DependentPlatformMissingException" FullName="System.Deployment.Application.DependentPlatformMissingException">
   <TypeSignature Language="C#" Value="public class DependentPlatformMissingException : System.Deployment.Application.DeploymentException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DependentPlatformMissingException extends System.Deployment.Application.DeploymentException" />
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DependentPlatformMissingException" />
@@ -70,6 +70,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -104,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -134,6 +136,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -172,6 +175,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

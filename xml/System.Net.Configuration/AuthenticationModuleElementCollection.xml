@@ -1,4 +1,4 @@
-﻿<Type Name="AuthenticationModuleElementCollection" FullName="System.Net.Configuration.AuthenticationModuleElementCollection">
+<Type Name="AuthenticationModuleElementCollection" FullName="System.Net.Configuration.AuthenticationModuleElementCollection">
   <TypeSignature Language="C#" Value="public sealed class AuthenticationModuleElementCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AuthenticationModuleElementCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.AuthenticationModuleElementCollection" />
@@ -34,6 +34,7 @@
     </remarks>
     <altmember cref="T:System.Net.IAuthenticationModule" />
     <altmember cref="T:System.Net.AuthenticationManager" />
+    <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,6 +70,7 @@
         </remarks>
         <altmember cref="T:System.Net.IAuthenticationModule" />
         <altmember cref="T:System.Net.AuthenticationManager" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -96,6 +98,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.IAuthenticationModule" />
         <altmember cref="T:System.Net.AuthenticationManager" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -200,6 +203,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.IAuthenticationModule" />
         <altmember cref="T:System.Net.AuthenticationManager" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -211,6 +215,7 @@
         <summary>Gets or sets the element with the specified index or key.</summary>
         <altmember cref="T:System.Net.IAuthenticationModule" />
         <altmember cref="T:System.Net.AuthenticationManager" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -244,6 +249,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.IAuthenticationModule" />
         <altmember cref="T:System.Net.AuthenticationManager" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -277,6 +283,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.IAuthenticationModule" />
         <altmember cref="T:System.Net.AuthenticationManager" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Remove">
@@ -313,6 +320,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.IAuthenticationModule" />
         <altmember cref="T:System.Net.AuthenticationManager" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -340,6 +348,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.IAuthenticationModule" />
         <altmember cref="T:System.Net.AuthenticationManager" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -367,6 +376,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.IAuthenticationModule" />
         <altmember cref="T:System.Net.AuthenticationManager" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
   </Members>

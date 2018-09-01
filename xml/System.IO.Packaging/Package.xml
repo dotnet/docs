@@ -1,4 +1,4 @@
-﻿<Type Name="Package" FullName="System.IO.Packaging.Package">
+<Type Name="Package" FullName="System.IO.Packaging.Package">
   <TypeSignature Language="C#" Value="public abstract class Package : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Package extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.Package" />
@@ -77,6 +77,8 @@
     </remarks>
     <altmember cref="T:System.IO.Packaging.PackagePart" />
     <altmember cref="T:System.Windows.Xps.Packaging.XpsDocument" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions (OPC) Specification</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

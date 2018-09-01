@@ -1,4 +1,4 @@
-﻿<Type Name="LoginView" FullName="System.Web.UI.WebControls.LoginView">
+<Type Name="LoginView" FullName="System.Web.UI.WebControls.LoginView">
   <TypeSignature Language="C#" Value="public class LoginView : System.Web.UI.Control, System.Web.UI.INamingContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LoginView extends System.Web.UI.Control implements class System.Web.UI.INamingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LoginView" />
@@ -61,7 +61,7 @@
  The <xref:System.Web.UI.WebControls.LoginView> control displays different Web site content templates (or "views") for different users, based on whether the user is authenticated and, if so, which Web site roles he or she belongs to.  
   
 > [!NOTE]
->  If you are not familiar with the set of login controls available in ASP.NET, see [ASP.NET Login Controls Overview](http://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d) before continuing. For a list of other topics related to login controls and membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
+>  If you are not familiar with the set of login controls available in ASP.NET, see [ASP.NET Login Controls Overview](https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)) before continuing. For a list of other topics related to login controls and membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
   
  The template stored in the <xref:System.Web.UI.WebControls.LoginView.AnonymousTemplate%2A> property is displayed to any visitor to the Web site who has not logged in. Once a user is logged in, the site displays either a template associated with one of the user's roles in the <xref:System.Web.UI.WebControls.LoginView.RoleGroups%2A> property or the default template specified in the <xref:System.Web.UI.WebControls.LoginView.LoggedInTemplate%2A> property.  
   
@@ -141,6 +141,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.Security.Roles" />
+    <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -164,6 +165,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LoginView" /> control.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AnonymousTemplate">
@@ -223,6 +225,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -245,6 +248,7 @@
         <summary>Gets the <see cref="T:System.Web.UI.ControlCollection" /> object that contains the child controls for the <see cref="T:System.Web.UI.WebControls.LoginView" /> control.</summary>
         <value>The collection of child controls for the <see cref="T:System.Web.UI.WebControls.LoginView" /> control.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -274,6 +278,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -341,6 +346,8 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.LoginView.SkinID" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes and Skins</related>
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -379,6 +386,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">You call the <see cref="M:System.Web.UI.WebControls.LoginView.Focus" /> method.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -404,6 +412,7 @@
         <param name="savedState">An <see cref="T:System.Object" /> that represents the control state to be restored.</param>
         <summary>This method implements <see cref="M:System.Web.UI.Control.LoadControlState(System.Object)" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoggedInTemplate">
@@ -468,6 +477,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Security.Roles" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -507,6 +517,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.LoginView.OnInit(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.LoginView.OnInit(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -546,6 +557,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.LoginView.OnPreRender(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.LoginView.OnPreRender(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnViewChanged">
@@ -589,6 +601,7 @@
         </block>
         <altmember cref="E:System.Web.UI.WebControls.LoginView.ViewChanged" />
         <altmember cref="M:System.Web.UI.WebControls.LoginView.OnViewChanging(System.EventArgs)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnViewChanging">
@@ -632,6 +645,7 @@
         </block>
         <altmember cref="E:System.Web.UI.WebControls.LoginView.ViewChanging" />
         <altmember cref="M:System.Web.UI.WebControls.LoginView.OnViewChanged(System.EventArgs)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -725,6 +739,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Security.Roles" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
@@ -815,6 +830,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The skin specified in the <see cref="P:System.Web.UI.WebControls.LoginView.SkinID" /> property does not exist in the theme.</exception>
         <altmember cref="P:System.Web.UI.WebControls.LoginView.EnableTheming" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes and Skins</related>
       </Docs>
     </Member>
     <Member MemberName="ViewChanged">
@@ -852,6 +869,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.LoginView.OnViewChanged(System.EventArgs)" />
         <altmember cref="E:System.Web.UI.WebControls.LoginView.ViewChanging" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ViewChanging">
@@ -889,6 +907,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.LoginView.OnViewChanging(System.EventArgs)" />
         <altmember cref="E:System.Web.UI.WebControls.LoginView.ViewChanged" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
   </Members>

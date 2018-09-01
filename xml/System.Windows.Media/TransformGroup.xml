@@ -1,4 +1,4 @@
-﻿<Type Name="TransformGroup" FullName="System.Windows.Media.TransformGroup">
+<Type Name="TransformGroup" FullName="System.Windows.Media.TransformGroup">
   <TypeSignature Language="C#" Value="public sealed class TransformGroup : System.Windows.Media.Transform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TransformGroup extends System.Windows.Media.Transform" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TransformGroup" />
@@ -34,6 +34,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Media.Transform" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -89,6 +90,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
       </Docs>
     </Member>
     <Member MemberName="ChildrenProperty">

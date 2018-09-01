@@ -1,4 +1,4 @@
-﻿<Type Name="StateItem" FullName="System.Web.UI.StateItem">
+<Type Name="StateItem" FullName="System.Web.UI.StateItem">
   <TypeSignature Language="C#" Value="public sealed class StateItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StateItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.StateItem" />
@@ -37,6 +37,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.StateBag" />
     <altmember cref="M:System.Web.UI.Control.SaveViewState" />
+    <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
   </Docs>
   <Members>
     <Member MemberName="IsDirty">

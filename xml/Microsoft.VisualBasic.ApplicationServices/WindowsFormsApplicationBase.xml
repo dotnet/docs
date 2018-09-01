@@ -1,4 +1,4 @@
-﻿<Type Name="WindowsFormsApplicationBase" FullName="Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase">
+<Type Name="WindowsFormsApplicationBase" FullName="Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase">
   <TypeSignature Language="C#" Value="public class WindowsFormsApplicationBase : Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi WindowsFormsApplicationBase extends Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase" />
@@ -43,6 +43,7 @@
     </remarks>
     <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase" />
     <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -75,6 +76,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -111,6 +113,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ApplicationContext">
@@ -164,6 +167,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.ApplicationContext" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="DoEvents">
@@ -235,6 +239,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
         <altmember cref="M:System.Windows.Forms.Application.DoEvents" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="EnableVisualStyles">
@@ -274,6 +279,7 @@
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize(System.Collections.ObjectModel.ReadOnlyCollection{System.String})" />
         <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md">Extending the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="HideSplashScreen">
@@ -319,6 +325,7 @@
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime" />
         <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen" />
         <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md">Extending the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="IsSingleInstance">
@@ -363,6 +370,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run(System.String[])" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md">Extending the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="MainForm">
@@ -397,6 +405,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.Form" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="MinimumSplashScreenDisplayTime">
@@ -473,6 +482,8 @@
         <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize(System.Collections.ObjectModel.ReadOnlyCollection{System.String})" />
         <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen" />
         <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md">Extending the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="NetworkAvailabilityChanged">
@@ -546,6 +557,7 @@
         <altmember cref="T:Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler" />
         <altmember cref="E:Microsoft.VisualBasic.Devices.Network.NetworkAvailabilityChanged" />
         <altmember cref="T:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="OnCreateMainForm">
@@ -585,6 +597,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md">Extending the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="OnCreateSplashScreen">
@@ -624,6 +637,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md">Extending the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="OnInitialize">
@@ -678,6 +692,7 @@
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.EnableVisualStyles" />
         <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen" />
         <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md">Extending the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="OnRun">
@@ -726,6 +741,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md">Extending the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="OnShutdown">
@@ -765,6 +781,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md">Extending the Visual Basic Application Model</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="OnStartup">
@@ -808,6 +826,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md">Extending the Visual Basic Application Model</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="OnStartupNextInstance">
@@ -855,6 +875,7 @@
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.IsSingleInstance" />
         <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs" />
         <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md">Extending the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="OnUnhandledException">
@@ -899,6 +920,7 @@
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs" />
         <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md">Extending the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="OpenForms">
@@ -957,6 +979,7 @@
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions that are related to user interfaces and the Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
         <altmember cref="T:System.Windows.Forms.FormCollection" />
         <altmember cref="P:System.Windows.Forms.Application.OpenForms" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Run">
@@ -1013,6 +1036,8 @@
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Net.SocketPermission">Controls rights to make or accept connections on a transport address. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">Controls access to a Windows NT performance counter component. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="SaveMySettingsOnExit">
@@ -1084,6 +1109,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Configuration.ApplicationSettingsBase.Save" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ShowSplashScreen">
@@ -1126,6 +1152,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize(System.Collections.ObjectModel.ReadOnlyCollection{System.String})" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md">Extending the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="Shutdown">
@@ -1183,6 +1210,10 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.EventArgs" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/log-info/how-to-log-messages-when-the-application-starts-or-shuts-down.md">How to: Log Messages When the Application Starts or Shuts Down</related>
+        <related type="Article" href="/visualstudio/ide/reference/application-page-project-designer-visual-basic">Application Page, Project Designer (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="ShutdownStyle">
@@ -1282,6 +1313,7 @@
         <exception cref="T:System.ArgumentNullException">The same value is assigned to this property and the <see cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm" /> property.</exception>
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime" />
         <altmember cref="T:System.Windows.Forms.Form" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Startup">
@@ -1349,6 +1381,9 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">Controls the ability to add an event handler for this event. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlAppDomain" />.</permission>
         <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="/visualstudio/ide/reference/application-page-project-designer-visual-basic">Application Page, Project Designer (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="StartupNextInstance">
@@ -1429,6 +1464,9 @@
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />
         <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs" />
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs.CommandLine" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="/visualstudio/ide/reference/application-page-project-designer-visual-basic">Application Page, Project Designer (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="UnhandledException">
@@ -1508,6 +1546,8 @@
         <altmember cref="N:Microsoft.VisualBasic.ApplicationServices" />
         <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventHandler" />
         <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="UseCompatibleTextRendering">
@@ -1571,6 +1611,8 @@ End Property
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md">Extending the Visual Basic Application Model</related>
+        <related type="Article" href="/visualstudio/ide/reference/application-page-project-designer-visual-basic">Application Page, Project Designer (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

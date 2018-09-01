@@ -1,4 +1,4 @@
-﻿<Type Name="SelectionPatternIdentifiers" FullName="System.Windows.Automation.SelectionPatternIdentifiers">
+<Type Name="SelectionPatternIdentifiers" FullName="System.Windows.Automation.SelectionPatternIdentifiers">
   <TypeSignature Language="C#" Value="public static class SelectionPatternIdentifiers" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SelectionPatternIdentifiers extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.SelectionPatternIdentifiers" />
@@ -24,6 +24,11 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-providers-overview.md">UI Automation Providers Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/0d635c35-ffa8-4dc8-bbc9-12fcd5445776">Support Control Patterns in a UI Automation Provider</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/449c3068-a5d6-4f66-84c6-1bcc7dd4d209">Implementing the UI Automation Selection Control Pattern</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771502(v=vs.90)">Fragment Provider Sample</related>
   </Docs>
   <Members>
     <Member MemberName="CanSelectMultipleProperty">
@@ -52,6 +57,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771502(v=vs.90)">Fragment Provider Sample</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/449c3068-a5d6-4f66-84c6-1bcc7dd4d209">Implementing the UI Automation Selection Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="InvalidatedEvent">
@@ -82,6 +89,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771502(v=vs.90)">Fragment Provider Sample</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/449c3068-a5d6-4f66-84c6-1bcc7dd4d209">Implementing the UI Automation Selection Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="IsSelectionRequiredProperty">
@@ -110,6 +119,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771502(v=vs.90)">Fragment Provider Sample</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/449c3068-a5d6-4f66-84c6-1bcc7dd4d209">Implementing the UI Automation Selection Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="Pattern">
@@ -138,6 +149,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771502(v=vs.90)">Fragment Provider Sample</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/449c3068-a5d6-4f66-84c6-1bcc7dd4d209">Implementing the UI Automation Selection Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="SelectionProperty">
@@ -166,6 +179,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771502(v=vs.90)">Fragment Provider Sample</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/449c3068-a5d6-4f66-84c6-1bcc7dd4d209">Implementing the UI Automation Selection Control Pattern</related>
       </Docs>
     </Member>
   </Members>

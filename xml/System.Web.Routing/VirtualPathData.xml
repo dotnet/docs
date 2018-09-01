@@ -1,4 +1,4 @@
-﻿<Type Name="VirtualPathData" FullName="System.Web.Routing.VirtualPathData">
+<Type Name="VirtualPathData" FullName="System.Web.Routing.VirtualPathData">
   <TypeSignature Language="C#" Value="public class VirtualPathData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VirtualPathData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.VirtualPathData" />
@@ -40,6 +40,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/200fe812-d0a6-4531-b9b4-cfc4ee83a678">How to: Define a Route</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +69,7 @@
         <param name="virtualPath">The generated URL.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.VirtualPathData" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="DataTokens">
@@ -104,6 +107,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="Route">
@@ -137,6 +141,7 @@
         <summary>Gets or sets the route that is used to create the URL.</summary>
         <value>An object that represents the route that matched the parameters that were used to generate a URL.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="VirtualPath">
@@ -182,6 +187,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="DynamicQueryStringParameter" FullName="System.Web.DynamicData.DynamicQueryStringParameter">
+<Type Name="DynamicQueryStringParameter" FullName="System.Web.DynamicData.DynamicQueryStringParameter">
   <TypeSignature Language="C#" Value="public class DynamicQueryStringParameter : System.Web.UI.WebControls.Parameter, System.Web.DynamicData.IWhereParametersProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicQueryStringParameter extends System.Web.UI.WebControls.Parameter implements class System.Web.DynamicData.IWhereParametersProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicQueryStringParameter" />
@@ -47,6 +47,7 @@
     <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.WhereParameters" />
     <altmember cref="T:System.Web.UI.WebControls.EntityDataSource" />
     <altmember cref="P:System.Web.UI.WebControls.EntityDataSource.WhereParameters" />
+    <related type="Article" href="http://msdn.microsoft.com/library/78c7fcd7-5f38-46a0-a4bc-48eff3c8a512">ASP.NET Dynamic Data Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

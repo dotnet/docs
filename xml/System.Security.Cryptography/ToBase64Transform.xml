@@ -1,4 +1,4 @@
-﻿<Type Name="ToBase64Transform" FullName="System.Security.Cryptography.ToBase64Transform">
+<Type Name="ToBase64Transform" FullName="System.Security.Cryptography.ToBase64Transform">
   <TypeSignature Language="C#" Value="public class ToBase64Transform : System.Security.Cryptography.ICryptoTransform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToBase64Transform extends System.Object implements class System.IDisposable, class System.Security.Cryptography.ICryptoTransform" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ToBase64Transform" />
@@ -53,6 +53,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,6 +83,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ToBase64Transform" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="CanReuseTransform">
@@ -129,6 +131,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="CanTransformMultipleBlocks">
@@ -181,6 +184,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -232,6 +236,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -340,6 +345,7 @@
   
  For more information about <see langword="Dispose" /> and <see langword="Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).</para>
         </block>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -373,6 +379,7 @@
       <Docs>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Security.Cryptography.ToBase64Transform" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="InputBlockSize">
@@ -425,6 +432,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="OutputBlockSize">
@@ -477,6 +485,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">
@@ -574,6 +583,7 @@
  The <paramref name="inputCount" /> parameter contains an invalid value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="inputBuffer" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="inputBuffer" /> parameter requires a non-negative number.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="TransformFinalBlock">
@@ -637,6 +647,7 @@
  The <paramref name="inputCount" /> parameter contains an invalid value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="inputBuffer" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="inputBuffer" /> parameter requires a non-negative number.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
   </Members>

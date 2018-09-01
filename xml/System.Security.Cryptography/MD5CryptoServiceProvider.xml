@@ -1,4 +1,4 @@
-﻿<Type Name="MD5CryptoServiceProvider" FullName="System.Security.Cryptography.MD5CryptoServiceProvider">
+<Type Name="MD5CryptoServiceProvider" FullName="System.Security.Cryptography.MD5CryptoServiceProvider">
   <TypeSignature Language="C#" Value="public sealed class MD5CryptoServiceProvider : System.Security.Cryptography.MD5" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MD5CryptoServiceProvider extends System.Security.Cryptography.MD5" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.MD5CryptoServiceProvider" />
@@ -64,6 +64,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -99,6 +100,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.MD5CryptoServiceProvider" /> class.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">A FIPS-compliant algorithm policy is not being used.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -281,6 +283,7 @@
       <Docs>
         <summary>Initializes an instance of <see cref="T:System.Security.Cryptography.MD5CryptoServiceProvider" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
   </Members>

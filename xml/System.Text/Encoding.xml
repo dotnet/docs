@@ -1,4 +1,4 @@
-﻿<Type Name="Encoding" FullName="System.Text.Encoding">
+<Type Name="Encoding" FullName="System.Text.Encoding">
   <TypeSignature Language="C#" Value="public abstract class Encoding : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Encoding extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Text.Encoding" />
@@ -263,6 +263,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -501,6 +502,7 @@
         <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
         <altmember cref="P:System.Text.Encoding.UTF8" />
         <altmember cref="P:System.Text.Encoding.Unicode" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="BigEndianUnicode">
@@ -569,6 +571,7 @@
         <altmember cref="T:System.Text.UnicodeEncoding" />
         <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
         <altmember cref="P:System.Text.Encoding.Unicode" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="BodyName">
@@ -952,6 +955,7 @@
         <exception cref="T:System.InvalidOperationException">A value cannot be assigned in a set operation because the current <see cref="T:System.Text.Encoding" /> object is read-only.</exception>
         <altmember cref="T:System.Text.DecoderFallback" />
         <altmember cref="T:System.Text.DecoderFallbackBuffer" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -1068,6 +1072,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
         <exception cref="T:System.InvalidOperationException">A value cannot be assigned in a set operation because the current <see cref="T:System.Text.Encoding" /> object is read-only.</exception>
         <altmember cref="T:System.Text.EncoderFallback" />
         <altmember cref="T:System.Text.EncoderFallbackBuffer" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="EncodingName">
@@ -3033,6 +3038,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
         <altmember cref="M:System.Text.Encoding.GetString(System.Byte[])" />
         <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
         <altmember cref="M:System.Text.Encoding.GetEncoder" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="GetEncoder">
@@ -3086,6 +3092,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
         <altmember cref="M:System.Text.Encoding.GetBytes(System.Char[])" />
         <altmember cref="M:System.Text.Encoding.GetByteCount(System.Char[])" />
         <altmember cref="M:System.Text.Encoding.GetDecoder" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetEncoding">
@@ -3191,6 +3198,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
         <altmember cref="P:System.Text.Encoding.EncoderFallback" />
         <altmember cref="T:System.Text.EncoderFallback" />
         <altmember cref="M:System.Text.Encoding.GetEncodings" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -3271,6 +3279,7 @@ In the .NET Framework, the <xref:System.Text.Encoding.GetEncoding%2A> method rel
         <altmember cref="P:System.Text.Encoding.EncoderFallback" />
         <altmember cref="T:System.Text.EncoderFallback" />
         <altmember cref="M:System.Text.Encoding.GetEncodings" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -3370,6 +3379,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
         <altmember cref="P:System.Text.Encoding.EncoderFallback" />
         <altmember cref="T:System.Text.EncoderFallback" />
         <altmember cref="M:System.Text.Encoding.GetEncodings" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -3451,6 +3461,7 @@ In the .NET Framework, the <xref:System.Text.Encoding.GetEncoding%2A> method rel
         <altmember cref="P:System.Text.Encoding.EncoderFallback" />
         <altmember cref="T:System.Text.EncoderFallback" />
         <altmember cref="M:System.Text.Encoding.GetEncodings" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="GetEncodings">
@@ -3512,6 +3523,7 @@ In the .NET Framework, the <xref:System.Text.Encoding.GetEncoding%2A> method rel
  ]]></format>
         </remarks>
         <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -4698,6 +4710,7 @@ Starting with the .NET Framework 4.6, the .NET Framework includes one encoding p
         <altmember cref="T:System.Text.UnicodeEncoding" />
         <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
         <altmember cref="P:System.Text.Encoding.BigEndianUnicode" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="UTF32">
@@ -4761,6 +4774,7 @@ Starting with the .NET Framework 4.6, the .NET Framework includes one encoding p
         <altmember cref="P:System.Text.Encoding.UTF8" />
         <altmember cref="P:System.Text.Encoding.Unicode" />
         <altmember cref="P:System.Text.Encoding.BigEndianUnicode" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="UTF7">
@@ -4816,6 +4830,7 @@ Starting with the .NET Framework 4.6, the .NET Framework includes one encoding p
         </remarks>
         <altmember cref="T:System.Text.UTF7Encoding" />
         <altmember cref="P:System.Text.Encoding.UTF8" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="UTF8">
@@ -4899,6 +4914,7 @@ Starting with the .NET Framework 4.6, the .NET Framework includes one encoding p
         </remarks>
         <altmember cref="T:System.Text.UTF8Encoding" />
         <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="WebName">

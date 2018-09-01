@@ -1,4 +1,4 @@
-﻿<Type Name="TypeConverterAttribute" FullName="System.ComponentModel.TypeConverterAttribute">
+<Type Name="TypeConverterAttribute" FullName="System.ComponentModel.TypeConverterAttribute">
   <TypeSignature Language="C#" Value="public sealed class TypeConverterAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeConverterAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.TypeConverterAttribute" />
@@ -39,7 +39,7 @@
 ## Remarks  
  The class you use for conversion must inherit from <xref:System.ComponentModel.TypeConverter>. Use the <xref:System.ComponentModel.TypeConverterAttribute.ConverterTypeName%2A> property to get the name of the class that provides the data conversion for the object this attribute is bound to.  
   
- For more information about attributes, see [Attributes](~/docs/standard/attributes/index.md). For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
+ For more information about attributes, see [Attributes](~/docs/standard/attributes/index.md). For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)).  
   
  In order to establish a type converter on a custom class that provides type conversion behavior for XAML, you apply the <xref:System.ComponentModel.TypeConverterAttribute> attribute to your type. The argument of the attribute references your type converter implementation. Your type converter should be able to accept values from a string that is used for attributes or initialization text in XAML markup, and convert that string into your intended destination type. For more information, see [TypeConverters and XAML](~/docs/framework/wpf/advanced/typeconverters-and-xaml.md).  
   
@@ -67,6 +67,9 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.ComponentModel.TypeConverter" />
+    <related type="Article" href="http://msdn.microsoft.com/library/5dfb299a-b6e2-41b8-8694-e6ac987547f1">XAML-Related CLR Attributes For Custom Types and Libraries</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/c2667cbd-2f46-4a7f-9dfc-53696e35e8e4">Defining Custom Types for Use with .NET Framework XAML Services</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/0e11f386-808c-4eae-9ba6-029ad7ba2211">NET XAML Services Conceptual Documentation</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="StreamSecurityUpgradeInitiator" FullName="System.ServiceModel.Channels.StreamSecurityUpgradeInitiator">
+<Type Name="StreamSecurityUpgradeInitiator" FullName="System.ServiceModel.Channels.StreamSecurityUpgradeInitiator">
   <TypeSignature Language="C#" Value="public abstract class StreamSecurityUpgradeInitiator : System.ServiceModel.Channels.StreamUpgradeInitiator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit StreamSecurityUpgradeInitiator extends System.ServiceModel.Channels.StreamUpgradeInitiator" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator" />
@@ -26,6 +26,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/e3da85c8-57f3-4e32-a4cb-50123f30fea6">Custom Stream Upgrades</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

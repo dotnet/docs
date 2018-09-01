@@ -1,4 +1,4 @@
-﻿<Type Name="FtpWebRequest" FullName="System.Net.FtpWebRequest">
+<Type Name="FtpWebRequest" FullName="System.Net.FtpWebRequest">
   <TypeSignature Language="C#" Value="public sealed class FtpWebRequest : System.Net.WebRequest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FtpWebRequest extends System.Net.WebRequest" />
   <TypeSignature Language="DocId" Value="T:System.Net.FtpWebRequest" />
@@ -409,6 +409,7 @@
         <altmember cref="T:System.Net.WebRequest" />
         <altmember cref="T:System.Net.WebResponse" />
         <altmember cref="T:System.Net.WebClient" />
+        <related type="Article" href="~/docs/framework/network-programming/managing-connections.md">Managing Connections</related>
       </Docs>
     </Member>
     <Member MemberName="ContentLength">
@@ -685,6 +686,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The caller tried to set this property to <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/0eb0c5cb-dd97-484d-8614-785e88877abb">defaultFtpCachePolicy (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="EnableSsl">

@@ -1,4 +1,4 @@
-﻿<Type Name="BehaviorEditorPart" FullName="System.Web.UI.WebControls.WebParts.BehaviorEditorPart">
+<Type Name="BehaviorEditorPart" FullName="System.Web.UI.WebControls.WebParts.BehaviorEditorPart">
   <TypeSignature Language="C#" Value="public sealed class BehaviorEditorPart : System.Web.UI.WebControls.WebParts.EditorPart" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BehaviorEditorPart extends System.Web.UI.WebControls.WebParts.EditorPart" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.BehaviorEditorPart" />
@@ -134,6 +134,8 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.AppearanceEditorPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.LayoutEditorPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" />
+    <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -166,6 +168,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ApplyChanges">
@@ -206,6 +209,7 @@
         <altmember cref="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.ApplyChanges" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.LayoutEditorPart.ApplyChanges" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.ApplyChanges" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -276,6 +280,7 @@
         <altmember cref="P:System.Web.UI.WebControls.WebParts.LayoutEditorPart.DefaultButton" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.DefaultButton" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.DefaultButton" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -309,6 +314,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.LayoutEditorPart.Display" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.Display" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -394,6 +400,7 @@
         <altmember cref="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.SyncChanges" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.LayoutEditorPart.SyncChanges" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.SyncChanges" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -444,6 +451,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

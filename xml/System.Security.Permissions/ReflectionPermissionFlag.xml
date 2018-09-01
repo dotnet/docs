@@ -1,4 +1,4 @@
-﻿<Type Name="ReflectionPermissionFlag" FullName="System.Security.Permissions.ReflectionPermissionFlag">
+<Type Name="ReflectionPermissionFlag" FullName="System.Security.Permissions.ReflectionPermissionFlag">
   <TypeSignature Language="C#" Value="public enum ReflectionPermissionFlag" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ReflectionPermissionFlag extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.ReflectionPermissionFlag" />
@@ -64,6 +64,8 @@
     </remarks>
     <altmember cref="T:System.Security.Permissions.ReflectionPermission" />
     <altmember cref="T:System.Security.Permissions.ReflectionPermissionAttribute" />
+    <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
+    <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
   </Docs>
   <Members>
     <Member MemberName="AllFlags">

@@ -1,4 +1,4 @@
-﻿<Type Name="RegexMatchTimeoutException" FullName="System.Text.RegularExpressions.RegexMatchTimeoutException">
+<Type Name="RegexMatchTimeoutException" FullName="System.Text.RegularExpressions.RegexMatchTimeoutException">
   <TypeSignature Language="C#" Value="public class RegexMatchTimeoutException : TimeoutException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RegexMatchTimeoutException extends System.TimeoutException implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.RegexMatchTimeoutException" />
@@ -62,6 +62,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/34df1152-0b22-4a1c-a76c-3c28c47b70d8">Backtracking</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/618e5afb-3a97-440d-831a-70e4c526a51c">Best Practices for Regular Expressions in the .NET Framework</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

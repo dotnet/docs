@@ -1,4 +1,4 @@
-﻿<Type Name="SqlInfoMessageEventArgs" FullName="System.Data.SqlClient.SqlInfoMessageEventArgs">
+<Type Name="SqlInfoMessageEventArgs" FullName="System.Data.SqlClient.SqlInfoMessageEventArgs">
   <TypeSignature Language="C#" Value="public sealed class SqlInfoMessageEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlInfoMessageEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlInfoMessageEventArgs" />
@@ -37,6 +37,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Errors">
@@ -70,6 +71,7 @@
         <summary>Gets the collection of warnings sent from the server.</summary>
         <value>The collection of warnings sent from the server.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -110,6 +112,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -150,6 +153,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -184,6 +188,7 @@
         <summary>Retrieves a string representation of the <see cref="E:System.Data.SqlClient.SqlConnection.InfoMessage" /> event.</summary>
         <returns>A string representing the <see cref="E:System.Data.SqlClient.SqlConnection.InfoMessage" /> event.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

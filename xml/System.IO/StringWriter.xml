@@ -1,4 +1,4 @@
-﻿<Type Name="StringWriter" FullName="System.IO.StringWriter">
+<Type Name="StringWriter" FullName="System.IO.StringWriter">
   <TypeSignature Language="C#" Value="public class StringWriter : System.IO.TextWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit StringWriter extends System.IO.TextWriter" />
   <TypeSignature Language="DocId" Value="T:System.IO.StringWriter" />
@@ -77,6 +77,9 @@
     </remarks>
     <altmember cref="T:System.Text.StringBuilder" />
     <altmember cref="T:System.IO.StringReader" />
+    <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+    <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+    <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -159,6 +162,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -234,6 +240,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -311,6 +320,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="sb" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -374,6 +386,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="sb" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -434,6 +449,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -493,6 +511,9 @@
           <para>
             <see cref="M:System.IO.StringWriter.Dispose(System.Boolean)" /> can be called multiple times by other objects. When overriding <see cref="M:System.IO.StringWriter.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed in an earlier call to <see cref="M:System.IO.StringWriter.Dispose(System.Boolean)" />.</para>
         </block>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -561,6 +582,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="FlushAsync">
@@ -668,6 +692,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -735,6 +762,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Write">
@@ -825,6 +855,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The writer is closed.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -930,6 +963,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The writer is closed.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1015,6 +1051,9 @@
           <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
         <exception cref="T:System.ArgumentException">(<paramref name="index" /> + <paramref name="count" />)&gt; <paramref name="buffer" />. <see langword="Length" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The writer is closed.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteAsync">

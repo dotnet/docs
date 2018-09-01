@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewComboBoxColumn" FullName="System.Windows.Forms.DataGridViewComboBoxColumn">
+<Type Name="DataGridViewComboBoxColumn" FullName="System.Windows.Forms.DataGridViewComboBoxColumn">
   <TypeSignature Language="C#" Value="public class DataGridViewComboBoxColumn : System.Windows.Forms.DataGridViewColumn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewComboBoxColumn extends System.Windows.Forms.DataGridViewColumn" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewComboBoxColumn" />
@@ -73,6 +73,7 @@
     <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />
     <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxEditingControl" />
     <altmember cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" />
+    <related type="Article" href="http://msdn.microsoft.com/library/bcbe794a-d1fa-47f8-b5a3-5f085b32097d">How to: Access Objects in a Windows Forms DataGridViewComboBoxCell Drop-Down List</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

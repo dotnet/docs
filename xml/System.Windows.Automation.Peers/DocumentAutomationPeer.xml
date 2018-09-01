@@ -1,4 +1,4 @@
-﻿<Type Name="DocumentAutomationPeer" FullName="System.Windows.Automation.Peers.DocumentAutomationPeer">
+<Type Name="DocumentAutomationPeer" FullName="System.Windows.Automation.Peers.DocumentAutomationPeer">
   <TypeSignature Language="C#" Value="public class DocumentAutomationPeer : System.Windows.Automation.Peers.ContentTextAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DocumentAutomationPeer extends System.Windows.Automation.Peers.ContentTextAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.DocumentAutomationPeer" />
@@ -27,6 +27,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/a79d594b-1ca0-4543-8dac-afd2c645201d">UI Automation Support for the Document Control Type</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

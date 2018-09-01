@@ -1,4 +1,4 @@
-﻿<Type Name="DbTransaction" FullName="System.Data.Common.DbTransaction">
+<Type Name="DbTransaction" FullName="System.Data.Common.DbTransaction">
   <TypeSignature Language="C#" Value="public abstract class DbTransaction : MarshalByRefObject, IDisposable, System.Data.IDbTransaction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbTransaction extends System.MarshalByRefObject implements class System.Data.IDbTransaction, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbTransaction" />
@@ -36,6 +36,7 @@
   <Docs>
     <summary>The base class for a transaction.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +66,8 @@
       <Docs>
         <summary>Initializes a new <see cref="T:System.Data.Common.DbTransaction" /> object.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions in ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Commit">
@@ -101,6 +104,8 @@
       <Docs>
         <summary>Commits the database transaction.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions in ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -141,6 +146,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions in ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DbConnection">
@@ -181,6 +188,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions in ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -198,6 +207,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions in ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Dispose">
@@ -241,6 +252,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions in ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -284,6 +297,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions in ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsolationLevel">
@@ -320,6 +335,8 @@
         <summary>Specifies the <see cref="T:System.Data.IsolationLevel" /> for this transaction.</summary>
         <value>The <see cref="T:System.Data.IsolationLevel" /> for this transaction.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions in ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Rollback">
@@ -356,6 +373,8 @@
       <Docs>
         <summary>Rolls back a transaction from a pending state.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions in ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbTransaction.Connection">
@@ -392,6 +411,8 @@
         <summary>Gets the <see cref="T:System.Data.Common.DbConnection" /> object associated with the transaction, or a null reference if the transaction is no longer valid.</summary>
         <value>The <see cref="T:System.Data.Common.DbConnection" /> object associated with the transaction.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions in ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

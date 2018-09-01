@@ -1,4 +1,4 @@
-﻿<Type Name="AppSettingsExpressionBuilder" FullName="System.Web.Compilation.AppSettingsExpressionBuilder">
+<Type Name="AppSettingsExpressionBuilder" FullName="System.Web.Compilation.AppSettingsExpressionBuilder">
   <TypeSignature Language="C#" Value="public class AppSettingsExpressionBuilder : System.Web.Compilation.ExpressionBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AppSettingsExpressionBuilder extends System.Web.Compilation.ExpressionBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.AppSettingsExpressionBuilder" />
@@ -75,6 +75,7 @@
     <altmember cref="T:System.Configuration.ConfigurationManager" />
     <altmember cref="P:System.Configuration.ConfigurationManager.AppSettings" />
     <altmember cref="T:System.Web.UI.CompilationMode" />
+    <related type="Article" href="http://msdn.microsoft.com/library/9ae6373a-853a-4d6e-8639-8c173dacb59f">ASP.NET Expressions Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +99,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.AppSettingsExpressionBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9ae6373a-853a-4d6e-8639-8c173dacb59f">ASP.NET Expressions Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EvaluateExpression">
@@ -139,6 +141,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.CompilationMode" />
         <altmember cref="P:System.Configuration.ConfigurationManager.AppSettings" />
+        <related type="Article" href="http://msdn.microsoft.com/library/9ae6373a-853a-4d6e-8639-8c173dacb59f">ASP.NET Expressions Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAppSetting">
@@ -183,6 +186,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The key is not found in Web.config.</exception>
         <altmember cref="P:System.Configuration.ConfigurationManager.AppSettings" />
+        <related type="Article" href="http://msdn.microsoft.com/library/9ae6373a-853a-4d6e-8639-8c173dacb59f">ASP.NET Expressions Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAppSetting">
@@ -226,6 +230,7 @@
   
  The return value could not be converted.</exception>
         <altmember cref="P:System.Configuration.ConfigurationManager.AppSettings" />
+        <related type="Article" href="http://msdn.microsoft.com/library/9ae6373a-853a-4d6e-8639-8c173dacb59f">ASP.NET Expressions Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetCodeExpression">
@@ -264,6 +269,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Configuration.ConfigurationManager.AppSettings" />
+        <related type="Article" href="http://msdn.microsoft.com/library/9ae6373a-853a-4d6e-8639-8c173dacb59f">ASP.NET Expressions Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SupportsEvaluate">
@@ -296,6 +302,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.CompilationMode" />
         <altmember cref="P:System.Configuration.ConfigurationManager.AppSettings" />
+        <related type="Article" href="http://msdn.microsoft.com/library/9ae6373a-853a-4d6e-8639-8c173dacb59f">ASP.NET Expressions Overview</related>
       </Docs>
     </Member>
   </Members>

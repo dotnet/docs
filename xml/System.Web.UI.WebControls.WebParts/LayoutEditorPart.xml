@@ -1,4 +1,4 @@
-﻿<Type Name="LayoutEditorPart" FullName="System.Web.UI.WebControls.WebParts.LayoutEditorPart">
+<Type Name="LayoutEditorPart" FullName="System.Web.UI.WebControls.WebParts.LayoutEditorPart">
   <TypeSignature Language="C#" Value="public sealed class LayoutEditorPart : System.Web.UI.WebControls.WebParts.EditorPart" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LayoutEditorPart extends System.Web.UI.WebControls.WebParts.EditorPart" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.LayoutEditorPart" />
@@ -81,6 +81,7 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.AppearanceEditorPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.BehaviorEditorPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,6 +114,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ApplyChanges">
@@ -160,6 +162,7 @@
         <exception cref="T:System.Exception">An error occurred when setting the value of the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.ChromeState" /> property on the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</exception>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorPart.ApplyChanges" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.LayoutEditorPart.SyncChanges" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -228,6 +231,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Panel.DefaultButton" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -258,6 +262,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorPart.Display" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -344,6 +349,7 @@
         </block>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.LayoutEditorPart.ApplyChanges" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorPart.SyncChanges" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -391,6 +397,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

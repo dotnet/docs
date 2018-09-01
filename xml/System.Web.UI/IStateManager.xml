@@ -1,4 +1,4 @@
-﻿<Type Name="IStateManager" FullName="System.Web.UI.IStateManager">
+<Type Name="IStateManager" FullName="System.Web.UI.IStateManager">
   <TypeSignature Language="C#" Value="public interface IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IStateManager" />
@@ -34,6 +34,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.StateBag" />
     <altmember cref="T:System.Web.UI.StateItem" />
+    <related type="Article" href="http://msdn.microsoft.com/library/af79fa0d-4bc8-47a6-9915-d8e355bfb732">ASP.NET State Management Recommendations</related>
   </Docs>
   <Members>
     <Member MemberName="IsTrackingViewState">
@@ -68,6 +69,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.StateBag" />
         <altmember cref="T:System.Web.UI.StateItem" />
+        <related type="Article" href="http://msdn.microsoft.com/library/af79fa0d-4bc8-47a6-9915-d8e355bfb732">ASP.NET State Management Recommendations</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -97,7 +99,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
    
   
@@ -109,6 +111,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.StateBag" />
         <altmember cref="T:System.Web.UI.StateItem" />
+        <related type="Article" href="http://msdn.microsoft.com/library/af79fa0d-4bc8-47a6-9915-d8e355bfb732">ASP.NET State Management Recommendations</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -143,6 +146,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.StateBag" />
         <altmember cref="T:System.Web.UI.StateItem" />
+        <related type="Article" href="http://msdn.microsoft.com/library/af79fa0d-4bc8-47a6-9915-d8e355bfb732">ASP.NET State Management Recommendations</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -181,6 +185,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.StateBag" />
         <altmember cref="T:System.Web.UI.StateItem" />
+        <related type="Article" href="http://msdn.microsoft.com/library/af79fa0d-4bc8-47a6-9915-d8e355bfb732">ASP.NET State Management Recommendations</related>
       </Docs>
     </Member>
   </Members>

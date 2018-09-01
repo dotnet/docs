@@ -1,4 +1,4 @@
-﻿<Type Name="Int32" FullName="System.Int32">
+<Type Name="Int32" FullName="System.Int32">
   <TypeSignature Language="C#" Value="public struct Int32 : IComparable, IComparable&lt;int&gt;, IConvertible, IEquatable&lt;int&gt;, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit int32 extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;int32&gt;, class System.IConvertible, class System.IEquatable`1&lt;int32&gt;, class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Int32" />
@@ -116,6 +116,7 @@
     </remarks>
     <threadsafe>All members of this type are thread safe. Members that appear to modify instance state actually return a new instance initialized with the new value. As with any other type, reading and writing to a shared variable that contains an instance of this type must be protected by a lock to guarantee thread safety.</threadsafe>
     <altmember cref="T:System.UInt32" />
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="CompareTo">
@@ -719,6 +720,7 @@
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number less than <see cref="F:System.Int32.MinValue" /> or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <altmember cref="M:System.Int32.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -841,6 +843,7 @@
  <paramref name="s" /> includes non-zero, fractional digits.</exception>
         <altmember cref="M:System.Int32.ToString" />
         <altmember cref="Overload:System.Int32.TryParse" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -928,6 +931,7 @@
           <paramref name="s" /> represents a number less than <see cref="F:System.Int32.MinValue" /> or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <altmember cref="M:System.Int32.ToString" />
         <altmember cref="Overload:System.Int32.TryParse" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1080,6 +1084,7 @@
   
  <paramref name="s" /> includes non-zero, fractional digits.</exception>
         <altmember cref="M:System.Int32.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -1970,6 +1975,7 @@
         </remarks>
         <altmember cref="M:System.Int32.Parse(System.String)" />
         <altmember cref="T:System.String" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2062,6 +2068,7 @@
         </remarks>
         <altmember cref="M:System.Int32.Parse(System.String)" />
         <altmember cref="T:System.String" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2147,6 +2154,10 @@
           <paramref name="format" /> is invalid or not supported.</exception>
         <altmember cref="M:System.Int32.Parse(System.String)" />
         <altmember cref="T:System.String" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md">How to: Pad a Number with Leading Zeros</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2241,6 +2252,11 @@
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is invalid or not supported.</exception>
         <altmember cref="M:System.Int32.Parse(System.String)" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md">How to: Pad a Number with Leading Zeros</related>
+        <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
       </Docs>
     </Member>
     <Member MemberName="TryFormat">
@@ -2401,6 +2417,8 @@
         </remarks>
         <altmember cref="M:System.Int32.Parse(System.String)" />
         <altmember cref="M:System.Int32.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
+        <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -2557,6 +2575,7 @@
         <altmember cref="M:System.Int32.Parse(System.String)" />
         <altmember cref="T:System.Globalization.NumberStyles" />
         <altmember cref="M:System.Int32.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="HMAC" FullName="System.Security.Cryptography.HMAC">
+<Type Name="HMAC" FullName="System.Security.Cryptography.HMAC">
   <TypeSignature Language="C#" Value="public abstract class HMAC : System.Security.Cryptography.KeyedHashAlgorithm" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HMAC extends System.Security.Cryptography.KeyedHashAlgorithm" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.HMAC" />
@@ -44,6 +44,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -379,6 +380,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Security.Cryptography.HashAlgorithm" />
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="HashFinal">
@@ -420,6 +422,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="HashName">
@@ -550,6 +553,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">An attempt is made to change the <see cref="P:System.Security.Cryptography.HMAC.Key" /> property after hashing has begun.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="TryHashFinal">

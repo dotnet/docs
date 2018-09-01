@@ -1,4 +1,4 @@
-﻿<Type Name="AssemblyName" FullName="System.Reflection.AssemblyName">
+<Type Name="AssemblyName" FullName="System.Reflection.AssemblyName">
   <TypeSignature Language="C#" Value="public sealed class AssemblyName : ICloneable, System.Runtime.InteropServices._AssemblyName, System.Runtime.Serialization.IDeserializationCallback, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit AssemblyName extends System.Object implements class System.ICloneable, class System.Runtime.InteropServices._AssemblyName, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyName" />
@@ -157,6 +157,7 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
     <altmember cref="P:System.Type.FullName" />
     <altmember cref="M:System.Type.GetType" />
     <altmember cref="P:System.Type.AssemblyQualifiedName" />
+    <related type="Article" href="~/docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md">Specifying Fully Qualified Type Names</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -663,6 +664,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md">Specifying Fully Qualified Type Names</related>
       </Docs>
     </Member>
     <Member MemberName="GetAssemblyName">
@@ -1046,6 +1048,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md">Specifying Fully Qualified Type Names</related>
       </Docs>
     </Member>
     <Member MemberName="OnDeserialization">

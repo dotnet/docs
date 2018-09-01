@@ -144,7 +144,7 @@
  For more information about data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
 > [!NOTE]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. Whenever possible, it is strongly recommended that values are HTML-encoded before they are displayed in this control (the <xref:System.Web.UI.WebControls.BoundField> class HTML-encodes values by default). ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Introduction to the Validation Controls](http://msdn.microsoft.com/library/3c0e7514-cff2-4bed-936d-ee3f7b740190).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. Whenever possible, it is strongly recommended that values are HTML-encoded before they are displayed in this control (the <xref:System.Web.UI.WebControls.BoundField> class HTML-encodes values by default). ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Introduction to the Validation Controls](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/2e4hd649(v=vs.85)).  
   
 <a name="data_operations"></a>   
 ## Data Operations  
@@ -586,6 +586,7 @@
     <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateSelectButton" />
     <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
     <altmember cref="Overload:System.Web.HttpServerUtility.HtmlEncode" />
+    <related type="Article" href="https://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f(v=vs.100)">ASP.NET Data Source Control Parameters</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -807,6 +808,7 @@
         <altmember cref="P:System.Web.UI.WebControls.GridView.SortExpression" />
         <altmember cref="E:System.Web.UI.WebControls.GridView.Sorted" />
         <altmember cref="E:System.Web.UI.WebControls.GridView.Sorting" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3cb265d3-9799-4091-bade-64ae7dbcad3c">Sorting Data in a GridView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="AlternatingRowStyle">
@@ -1500,6 +1502,10 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Control.ClientIDMode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7">ASP.NET Control Identification</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/fb58ed73-d8f7-401c-9560-d99dd9ca7db8">How to: Access Controls from JavaScript by ID</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/776f3747-7fa7-4851-ae27-f728ede1a564">Walkthrough: Making Data-Bound Controls Easier to Access from JavaScript</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0eaf202-61b6-4cd8-9604-6b7638fdf0ae">Walkthrough: Making Controls Located in Web User Controls Easier to Access From JavaScript</related>
       </Docs>
     </Member>
     <Member MemberName="ClientIDRowSuffixDataKeys">
@@ -1614,6 +1620,7 @@
         <altmember cref="T:System.Web.UI.WebControls.ImageField" />
         <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
         <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateColumns" />
+        <related type="Article" href="http://msdn.microsoft.com/library/9df1c8e2-d507-4cf1-a15b-c39dfede2ca7">How to: Set GridView Web Server Control Column Width Dynamically</related>
       </Docs>
     </Member>
     <Member MemberName="ColumnsGenerator">
@@ -3327,7 +3334,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
  ]]></format>
         </remarks>
@@ -3371,6 +3378,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnBubbleEvent(System.Object,System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnBubbleEvent(System.Object,System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/f145b3fc-5ae0-4509-a2aa-1ff6934706bd">Walkthrough: Handling Events</related>
       </Docs>
     </Member>
     <Member MemberName="OnDataPropertyChanged">
@@ -4219,6 +4227,7 @@
         <altmember cref="E:System.Web.UI.WebControls.GridView.Sorted" />
         <altmember cref="E:System.Web.UI.WebControls.GridView.Sorting" />
         <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorting(System.Web.UI.WebControls.GridViewSortEventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3cb265d3-9799-4091-bade-64ae7dbcad3c">Sorting Data in a GridView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnSorting">
@@ -4265,6 +4274,7 @@
         <altmember cref="E:System.Web.UI.WebControls.GridView.Sorting" />
         <altmember cref="E:System.Web.UI.WebControls.GridView.Sorted" />
         <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorted(System.EventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3cb265d3-9799-4091-bade-64ae7dbcad3c">Sorting Data in a GridView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="PageCount">
@@ -6437,6 +6447,7 @@
         <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorted(System.EventArgs)" />
         <altmember cref="E:System.Web.UI.WebControls.GridView.Sorting" />
         <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorting(System.Web.UI.WebControls.GridViewSortEventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3cb265d3-9799-4091-bade-64ae7dbcad3c">Sorting Data in a GridView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SortedAscendingCellStyle">
@@ -6708,6 +6719,7 @@
         <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorting(System.Web.UI.WebControls.GridViewSortEventArgs)" />
         <altmember cref="E:System.Web.UI.WebControls.GridView.Sorted" />
         <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorted(System.EventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3cb265d3-9799-4091-bade-64ae7dbcad3c">Sorting Data in a GridView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.ICallbackEventHandler.GetCallbackResult">

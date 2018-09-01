@@ -1,4 +1,4 @@
-﻿<Type Name="RayHitTestParameters" FullName="System.Windows.Media.Media3D.RayHitTestParameters">
+<Type Name="RayHitTestParameters" FullName="System.Windows.Media.Media3D.RayHitTestParameters">
   <TypeSignature Language="C#" Value="public sealed class RayHitTestParameters : System.Windows.Media.Media3D.HitTestParameters3D" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RayHitTestParameters extends System.Windows.Media.Media3D.HitTestParameters3D" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.RayHitTestParameters" />
@@ -25,6 +25,7 @@
  ]]></format>
     </remarks>
     <altmember cref="M:System.Windows.Media.VisualTreeHelper.HitTest(System.Windows.Media.Media3D.Visual3D,System.Windows.Media.HitTestFilterCallback,System.Windows.Media.HitTestResultCallback,System.Windows.Media.Media3D.HitTestParameters3D)" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159959">3-D Hit Testing Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,6 +58,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Windows.Media.VisualTreeHelper.HitTest(System.Windows.Media.Media3D.Visual3D,System.Windows.Media.HitTestFilterCallback,System.Windows.Media.HitTestResultCallback,System.Windows.Media.Media3D.HitTestParameters3D)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159959">3-D Hit Testing Sample</related>
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -98,6 +100,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Windows.Media.VisualTreeHelper.HitTest(System.Windows.Media.Media3D.Visual3D,System.Windows.Media.HitTestFilterCallback,System.Windows.Media.HitTestResultCallback,System.Windows.Media.Media3D.HitTestParameters3D)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159959">3-D Hit Testing Sample</related>
       </Docs>
     </Member>
     <Member MemberName="Origin">
@@ -139,6 +142,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Windows.Media.VisualTreeHelper.HitTest(System.Windows.Media.Media3D.Visual3D,System.Windows.Media.HitTestFilterCallback,System.Windows.Media.HitTestResultCallback,System.Windows.Media.Media3D.HitTestParameters3D)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159959">3-D Hit Testing Sample</related>
       </Docs>
     </Member>
   </Members>

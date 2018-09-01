@@ -1,4 +1,4 @@
-﻿<Type Name="PrincipalExistsException" FullName="System.DirectoryServices.AccountManagement.PrincipalExistsException">
+<Type Name="PrincipalExistsException" FullName="System.DirectoryServices.AccountManagement.PrincipalExistsException">
   <TypeSignature Language="C#" Value="public class PrincipalExistsException : System.DirectoryServices.AccountManagement.PrincipalException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PrincipalExistsException extends System.DirectoryServices.AccountManagement.PrincipalException" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.PrincipalExistsException" />
@@ -24,6 +24,7 @@
     <summary>Thrown by <see cref="Overload:System.DirectoryServices.AccountManagement.PrincipalCollection.Add" /> method when an attempt is made to insert a principal that already exists in the collection, or by <see cref="N:System.DirectoryServices.AccountManagement.Principal.Save" /> when an attempt is made to save a new principal that already exists in the store.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="N:System.DirectoryServices.AccountManagement" />
+    <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -35,6 +36,7 @@
       <Docs>
         <summary>Instantiates a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalExistsException" /> class.</summary>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -67,6 +69,7 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -103,6 +106,7 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -134,6 +138,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalExistsException" /> class from the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> instances.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -172,6 +177,7 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
   </Members>

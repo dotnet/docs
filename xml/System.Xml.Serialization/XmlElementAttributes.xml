@@ -1,4 +1,4 @@
-﻿<Type Name="XmlElementAttributes" FullName="System.Xml.Serialization.XmlElementAttributes">
+<Type Name="XmlElementAttributes" FullName="System.Xml.Serialization.XmlElementAttributes">
   <TypeSignature Language="C#" Value="public class XmlElementAttributes : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlElementAttributes extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlElementAttributes" />
@@ -26,7 +26,8 @@
     <BaseTypeName>System.Object</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-4.5">System.Collections.CollectionBase</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Represents a collection of <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> objects used by the <see cref="T:System.Xml.Serialization.XmlSerializer" /> to override the default way it serializes a class.</summary>
     <remarks>
@@ -47,6 +48,11 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+    <related type="Article" href="~/docs/standard/serialization/introducing-xml-serialization.md">Introducing XML Serialization</related>
+    <related type="Article" href="~/docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md">How to: Specify an Alternate Element Name for an XML Stream</related>
+    <related type="Article" href="~/docs/standard/serialization/controlling-xml-serialization-using-attributes.md">Controlling XML Serialization Using Attributes</related>
+    <related type="Article" href="~/docs/standard/serialization/examples-of-xml-serialization.md">Examples of XML Serialization</related>
+    <related type="Article" href="~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md">XML Schema Definition Tool (Xsd.exe)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

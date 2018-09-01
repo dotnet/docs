@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewColumnHeaderCell" FullName="System.Windows.Forms.DataGridViewColumnHeaderCell">
+<Type Name="DataGridViewColumnHeaderCell" FullName="System.Windows.Forms.DataGridViewColumnHeaderCell">
   <TypeSignature Language="C#" Value="public class DataGridViewColumnHeaderCell : System.Windows.Forms.DataGridViewHeaderCell" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewColumnHeaderCell extends System.Windows.Forms.DataGridViewHeaderCell" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnHeaderCell" />
@@ -209,6 +209,7 @@
         <altmember cref="T:System.Drawing.Rectangle" />
         <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
         <altmember cref="P:System.Windows.Forms.DataGridViewCell.ContentBounds" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetInheritedContextMenuStrip">
@@ -286,6 +287,7 @@
         <altmember cref="P:System.Windows.Forms.DataGridViewCell.InheritedStyle" />
         <altmember cref="P:System.Windows.Forms.DataGridViewCell.HasStyle" />
         <altmember cref="P:System.Windows.Forms.DataGridViewCell.Style" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -322,6 +324,7 @@
         <altmember cref="T:System.Drawing.Size" />
         <altmember cref="T:System.Windows.Forms.DataGridView" />
         <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetValue">

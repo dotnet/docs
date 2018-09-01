@@ -1,4 +1,4 @@
-﻿<Type Name="SplineDecimalKeyFrame" FullName="System.Windows.Media.Animation.SplineDecimalKeyFrame">
+<Type Name="SplineDecimalKeyFrame" FullName="System.Windows.Media.Animation.SplineDecimalKeyFrame">
   <TypeSignature Language="C#" Value="public class SplineDecimalKeyFrame : System.Windows.Media.Animation.DecimalKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SplineDecimalKeyFrame extends System.Windows.Media.Animation.DecimalKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SplineDecimalKeyFrame" />
@@ -222,6 +222,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160011">Key Spline Animation Sample</related>
       </Docs>
     </Member>
     <Member MemberName="KeySplineProperty">

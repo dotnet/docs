@@ -1,4 +1,4 @@
-﻿<Type Name="CertificateRequest" FullName="System.Security.Cryptography.X509Certificates.CertificateRequest">
+<Type Name="CertificateRequest" FullName="System.Security.Cryptography.X509Certificates.CertificateRequest">
   <TypeSignature Language="C#" Value="public sealed class CertificateRequest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CertificateRequest extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.CertificateRequest" />
@@ -578,5 +578,29 @@ The type of signing key represented by <paramref name="issuerCertificate" /> cou
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateSigningRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs />
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs />
+    </MemberGroup>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs />
+    </MemberGroup>
   </Members>
 </Type>

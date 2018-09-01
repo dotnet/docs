@@ -1,4 +1,4 @@
-﻿<Type Name="CALLCONV" FullName="System.Runtime.InteropServices.ComTypes.CALLCONV">
+<Type Name="CALLCONV" FullName="System.Runtime.InteropServices.ComTypes.CALLCONV">
   <TypeSignature Language="C#" Value="public enum CALLCONV" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CALLCONV extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.CALLCONV" />
@@ -61,6 +61,11 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.InteropServices.CallingConvention" />
+    <related type="Article" href="http://msdn.microsoft.com/library/a91fc665-034a-48ce-b6bd-d27125f308a7">Obsolete Calling Conventions</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/a05db5eb-0844-4d9d-8b92-b1b2434be0ea">Overview of x64 Calling Conventions</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/41ca3554-b2e3-4868-9a84-f1b46e6e21d9">Visual C++ Calling Convention</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/11b1e45c-8fd1-420b-bca0-a19e294c1d85">C++ Language Reference Calling Conventions</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/de468979-eab8-4158-90c5-c198932f93b9">Argument Passing and Naming Conventions</related>
   </Docs>
   <Members>
     <Member MemberName="CC_CDECL">

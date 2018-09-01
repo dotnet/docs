@@ -1,4 +1,4 @@
-﻿<Type Name="WSHttpBindingElement" FullName="System.ServiceModel.Configuration.WSHttpBindingElement">
+<Type Name="WSHttpBindingElement" FullName="System.ServiceModel.Configuration.WSHttpBindingElement">
   <TypeSignature Language="C#" Value="public class WSHttpBindingElement : System.ServiceModel.Configuration.WSHttpBindingBaseElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WSHttpBindingElement extends System.ServiceModel.Configuration.WSHttpBindingBaseElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WSHttpBindingElement" />
@@ -25,6 +25,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.ServiceModel.WSHttpBinding" />
+    <related type="Article" href="http://msdn.microsoft.com/library/0eee8ced-ad68-427d-b95a-97260e98deed">wsHttpBinding Element</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

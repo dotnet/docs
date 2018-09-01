@@ -1,4 +1,4 @@
-﻿<Type Name="WebService" FullName="System.Web.Services.WebService">
+<Type Name="WebService" FullName="System.Web.Services.WebService">
   <TypeSignature Language="C#" Value="public class WebService : System.ComponentModel.MarshalByValueComponent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebService extends System.ComponentModel.MarshalByValueComponent" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.WebService" />
@@ -359,6 +359,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Security.Principal.IPrincipal" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w67h0dw7(v=vs.100)">Securing XML Web Services Created Using ASP.NET</related>
       </Docs>
     </Member>
   </Members>

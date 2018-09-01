@@ -1,4 +1,4 @@
-﻿<Type Name="CheckBox" FullName="System.Windows.Forms.CheckBox">
+<Type Name="CheckBox" FullName="System.Windows.Forms.CheckBox">
   <TypeSignature Language="C#" Value="public class CheckBox : System.Windows.Forms.ButtonBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CheckBox extends System.Windows.Forms.ButtonBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CheckBox" />
@@ -77,6 +77,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Forms.ButtonBase" />
+    <related type="Article" href="http://msdn.microsoft.com/library/0719d798-c307-40d3-9040-72a62679c227">CheckBox Control (Windows Forms)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

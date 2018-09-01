@@ -1,4 +1,4 @@
-﻿<Type Name="String" FullName="System.String">
+<Type Name="String" FullName="System.String">
   <TypeSignature Language="C#" Value="public sealed class String : ICloneable, IComparable, IComparable&lt;string&gt;, IConvertible, IEquatable&lt;string&gt;, System.Collections.Generic.IEnumerable&lt;char&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit string extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;char&gt;, class System.Collections.IEnumerable, class System.ICloneable, class System.IComparable, class System.IComparable`1&lt;string&gt;, class System.IConvertible, class System.IEquatable`1&lt;string&gt;" />
   <TypeSignature Language="DocId" Value="T:System.String" />
@@ -546,6 +546,8 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
     <altmember cref="T:System.Collections.IEnumerable" />
     <altmember cref="T:System.Text.StringBuilder" />
     <altmember cref="T:System.Globalization.CultureInfo" />
+    <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7">Best Practices for Using Strings in the .NET Framework</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -1439,6 +1441,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7">Best Practices for Using Strings in the .NET Framework</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Compare">
@@ -5193,6 +5196,15 @@ The following are some of the examples included in the article:
 
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/enumeration-format-strings.md">Enumeration Format Strings</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Format">
@@ -5261,6 +5273,15 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
  -or-  
   
  The index of a format item is not zero.</exception>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/enumeration-format-strings.md">Enumeration Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -5344,6 +5365,15 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
  -or-  
   
  The index of a format item is less than zero, or greater than or equal to the length of the <paramref name="args" /> array.</exception>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/enumeration-format-strings.md">Enumeration Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -5491,6 +5521,15 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
         <altmember cref="T:System.ICustomFormatter" />
         <altmember cref="T:System.IFormatProvider" />
         <altmember cref="T:System.Globalization.NumberFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/enumeration-format-strings.md">Enumeration Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -5562,6 +5601,15 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
  -or-  
   
  The index of a format item is not zero or one.</exception>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-timespan-format-strings.md">Standard TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-timespan-format-strings.md">Custom TimeSpan Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/enumeration-format-strings.md">Enumeration Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -5698,6 +5746,8 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
  -or-  
   
  The index of a format item is less than zero, or greater than two.</exception>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -5938,6 +5988,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
           <para>The value returned by <see cref="M:System.String.GetHashCode" /> is platform-dependent. It differs on the 32-bit and 64-bit versions of the .NET Framework. It also can differ between versions of the .NET Framework.</para>
         </block>
         <altmember cref="M:System.Object.GetHashCode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c08125d6-56cc-4b23-b482-813ff85dc630">&lt;UseRandomizedStringHashAlgorithm&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">

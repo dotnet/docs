@@ -1,4 +1,4 @@
-﻿<Type Name="ToolBar" FullName="System.Windows.Controls.ToolBar">
+<Type Name="ToolBar" FullName="System.Windows.Controls.ToolBar">
   <TypeSignature Language="C#" Value="public class ToolBar : System.Windows.Controls.HeaderedItemsControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ToolBar extends System.Windows.Controls.HeaderedItemsControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ToolBar" />
@@ -52,6 +52,7 @@
     <altmember cref="T:System.Windows.Controls.Primitives.ToolBarOverflowPanel" />
     <altmember cref="T:System.Windows.Controls.Primitives.ToolBarPanel" />
     <altmember cref="T:System.Windows.Controls.ToolBarTray" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160053">WPF Controls Gallery Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

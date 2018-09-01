@@ -1,4 +1,4 @@
-﻿<Type Name="User" FullName="Microsoft.VisualBasic.ApplicationServices.User">
+<Type Name="User" FullName="Microsoft.VisualBasic.ApplicationServices.User">
   <TypeSignature Language="C#" Value="public class User" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi User extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.User" />
@@ -45,6 +45,7 @@
     <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
     <altmember cref="P:System.Web.HttpContext.User" />
     <altmember cref="P:System.Web.HttpContext.Current" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +76,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/accessing-user-data.md">Accessing User Data (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentPrincipal">
@@ -144,6 +147,7 @@
         <exception cref="T:System.Security.SecurityException">The caller does not have the permission required to set the principal.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
         <altmember cref="T:System.Security.Principal.IPrincipal" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="InitializeWithWindowsUser">
@@ -201,6 +205,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="InternalPrincipal">
@@ -230,6 +235,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="IsAuthenticated">
@@ -283,6 +289,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="IsInRole">
@@ -353,6 +360,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="IsInRole">
@@ -415,6 +423,7 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.BuiltInRole" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -473,6 +482,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/accessing-user-data.md">Accessing User Data (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

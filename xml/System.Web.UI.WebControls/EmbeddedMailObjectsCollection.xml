@@ -1,4 +1,4 @@
-﻿<Type Name="EmbeddedMailObjectsCollection" FullName="System.Web.UI.WebControls.EmbeddedMailObjectsCollection">
+<Type Name="EmbeddedMailObjectsCollection" FullName="System.Web.UI.WebControls.EmbeddedMailObjectsCollection">
   <TypeSignature Language="C#" Value="public sealed class EmbeddedMailObjectsCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EmbeddedMailObjectsCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EmbeddedMailObjectsCollection" />
@@ -103,6 +103,7 @@
     <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendingMail" />
     <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
     <altmember cref="T:System.Net.Mail.MailMessage" />
+    <related type="Article" href="http://msdn.microsoft.com/library/448f7802-0aa8-4304-abf7-82e138877dc8">Web Site Administration Tool Application Tab</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

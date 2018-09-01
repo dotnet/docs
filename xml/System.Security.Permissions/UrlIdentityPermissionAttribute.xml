@@ -1,4 +1,4 @@
-﻿<Type Name="UrlIdentityPermissionAttribute" FullName="System.Security.Permissions.UrlIdentityPermissionAttribute">
+<Type Name="UrlIdentityPermissionAttribute" FullName="System.Security.Permissions.UrlIdentityPermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class UrlIdentityPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit UrlIdentityPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.UrlIdentityPermissionAttribute" />
@@ -56,6 +56,7 @@
     <altmember cref="T:System.Security.Permissions.UrlIdentityPermission" />
     <altmember cref="T:System.Security.Policy.Url" />
     <altmember cref="T:System.Security.Policy.UrlMembershipCondition" />
+    <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

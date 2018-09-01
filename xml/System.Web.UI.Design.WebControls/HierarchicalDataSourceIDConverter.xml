@@ -1,4 +1,4 @@
-﻿<Type Name="HierarchicalDataSourceIDConverter" FullName="System.Web.UI.Design.WebControls.HierarchicalDataSourceIDConverter">
+<Type Name="HierarchicalDataSourceIDConverter" FullName="System.Web.UI.Design.WebControls.HierarchicalDataSourceIDConverter">
   <TypeSignature Language="C#" Value="public class HierarchicalDataSourceIDConverter : System.Web.UI.Design.WebControls.DataSourceIDConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HierarchicalDataSourceIDConverter extends System.Web.UI.Design.WebControls.DataSourceIDConverter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.HierarchicalDataSourceIDConverter" />
@@ -30,6 +30,7 @@
     <altmember cref="T:System.ComponentModel.TypeConverter" />
     <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
     <altmember cref="T:System.Web.UI.IHierarchicalDataSource" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

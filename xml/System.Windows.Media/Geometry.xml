@@ -1,4 +1,4 @@
-﻿<Type Name="Geometry" FullName="System.Windows.Media.Geometry">
+<Type Name="Geometry" FullName="System.Windows.Media.Geometry">
   <TypeSignature Language="C#" Value="public abstract class Geometry : System.Windows.Media.Animation.Animatable, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract Geometry extends System.Windows.Media.Animation.Animatable implements class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Geometry" />
@@ -49,6 +49,7 @@
       <para>Although this class is abstract, it is not publicly extensible.</para>
     </block>
     <altmember cref="T:System.Windows.Shapes.Path" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159989">Geometries Sample</related>
   </Docs>
   <Members>
     <Member MemberName="Bounds">
@@ -1366,6 +1367,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
       </Docs>
     </Member>
     <Member MemberName="TransformProperty">

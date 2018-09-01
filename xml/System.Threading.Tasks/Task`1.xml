@@ -1,4 +1,4 @@
-﻿<Type Name="Task&lt;TResult&gt;" FullName="System.Threading.Tasks.Task&lt;TResult&gt;">
+<Type Name="Task&lt;TResult&gt;" FullName="System.Threading.Tasks.Task&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public class Task&lt;TResult&gt; : System.Threading.Tasks.Task" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Task`1&lt;TResult&gt; extends System.Threading.Tasks.Task" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Task`1" />
@@ -70,6 +70,9 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
     </remarks>
     <threadsafe>All members of <see cref="T:System.Threading.Tasks.Task`1" />, except for <see cref="M:System.Threading.Tasks.Task.Dispose" />, are thread-safe and may be used from multiple threads concurrently.</threadsafe>
     <altmember cref="T:System.Threading.Tasks.Task" />
+    <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+    <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364">Samples for Parallel Programming with the .NET Framework</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -136,6 +139,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -182,6 +187,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -228,6 +235,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -275,6 +284,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskCreationOptions" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -323,6 +334,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -372,6 +385,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskCreationOptions" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -421,6 +436,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskCreationOptions" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -472,6 +489,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskCreationOptions" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
     <Member MemberName="ConfigureAwait">
@@ -527,6 +546,9 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       </AssemblyInfo>
       <Docs>
         <summary>Creates a continuation task that executes when another task completes.</summary>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ContinueWith">
@@ -584,6 +606,9 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.Tasks.Task`1" /> has been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="continuationAction" /> argument is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -642,6 +667,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="continuationAction" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -708,6 +734,9 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
   
  The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="continuationAction" /> argument is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -762,6 +791,9 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.Tasks.Task`1" /> has been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="continuationAction" /> argument is null.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -817,6 +849,9 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
  -or-  
   
  The <paramref name="scheduler" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -869,6 +904,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="continuationAction" /> argument is null.</exception>
         <exception cref="T:System.ObjectDisposedException">The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -922,6 +958,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="continuationAction" /> argument is null.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -974,6 +1011,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="scheduler" /> argument is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -1037,6 +1075,9 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
   
  The <paramref name="scheduler" /> argument is null.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -1094,6 +1135,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         <exception cref="T:System.ArgumentNullException">The <paramref name="scheduler" /> argument is null.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -1147,6 +1189,9 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.Tasks.Task`1" /> has been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="continuationFunction" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -1209,6 +1254,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="continuationFunction" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -1267,6 +1313,9 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
   
  The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="continuationFunction" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -1327,6 +1376,9 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.Tasks.Task`1" /> has been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="continuationFunction" /> argument is null.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -1386,6 +1438,10 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
  -or-  
   
  The <paramref name="scheduler" /> argument is null.</exception>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -1442,6 +1498,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="continuationFunction" /> argument is null.</exception>
         <exception cref="T:System.ObjectDisposedException">The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -1501,6 +1558,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="continuationFunction" /> argument is null.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -1557,6 +1615,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="scheduler" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -1628,6 +1687,9 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
   
  The <paramref name="scheduler" /> argument is null.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -1691,6 +1753,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         <exception cref="T:System.ArgumentNullException">The <paramref name="scheduler" /> argument is null.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The  <paramref name="continuationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
       </Docs>
     </Member>
     <Member MemberName="Factory">
@@ -1751,6 +1814,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
     <Member MemberName="GetAwaiter">
@@ -1866,6 +1931,9 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
  -or-  
   
  An exception was thrown during the execution of the task. The <see cref="P:System.AggregateException.InnerExceptions" /> collection contains information about the exception or exceptions.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-return-a-value-from-a-task.md">How to: Return a Value from a Task</related>
       </Docs>
     </Member>
   </Members>

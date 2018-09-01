@@ -1,4 +1,4 @@
-﻿<Type Name="InterfaceMapping" FullName="System.Reflection.InterfaceMapping">
+<Type Name="InterfaceMapping" FullName="System.Reflection.InterfaceMapping">
   <TypeSignature Language="C#" Value="public struct InterfaceMapping" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit InterfaceMapping extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.InterfaceMapping" />
@@ -47,6 +47,8 @@
  ]]></format>
     </remarks>
     <altmember cref="M:System.Type.GetInterfaceMap(System.Type)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2">Explicit Interface Implementation (C# Programming Guide)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/1fafb83f-f55a-4215-8ea9-681e8622613d">Implements Statement</related>
   </Docs>
   <Members>
     <Member MemberName="InterfaceMethods">

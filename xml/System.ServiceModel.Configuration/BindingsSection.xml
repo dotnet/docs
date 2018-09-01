@@ -1,4 +1,4 @@
-﻿<Type Name="BindingsSection" FullName="System.ServiceModel.Configuration.BindingsSection">
+<Type Name="BindingsSection" FullName="System.ServiceModel.Configuration.BindingsSection">
   <TypeSignature Language="C#" Value="public sealed class BindingsSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BindingsSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BindingsSection" />
@@ -40,6 +40,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.BindingsSection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b62cd369-5409-4030-8490-9759a462dd3a">Biundings in Configuration</related>
       </Docs>
     </Member>
     <Member MemberName="BasicHttpBinding">

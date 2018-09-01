@@ -1,4 +1,4 @@
-﻿<Type Name="HttpResponse" FullName="System.Web.HttpResponse">
+<Type Name="HttpResponse" FullName="System.Web.HttpResponse">
   <TypeSignature Language="C#" Value="public sealed class HttpResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpResponse" />
@@ -145,6 +145,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="dependencies" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This method was called too late in the cache processing pipeline, after the cached response was already created.</exception>
         <altmember cref="T:System.Web.Caching.CacheDependency" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AddCacheItemDependencies">
@@ -196,6 +197,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Caching.CacheDependency" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AddCacheItemDependencies">
@@ -229,6 +231,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Caching.CacheDependency" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AddCacheItemDependency">
@@ -273,6 +276,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.HttpResponse.AddCacheItemDependency(System.String)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AddFileDependencies">
@@ -319,6 +323,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Caching.CacheDependency" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AddFileDependencies">
@@ -354,6 +359,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AddFileDependency">
@@ -395,6 +401,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AddHeader">
@@ -619,6 +626,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=36829">Windows Server 2003 Product Help</related>
       </Docs>
     </Member>
     <Member MemberName="ApplyAppPathModifier">
@@ -1592,6 +1600,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The operation requires the integrated pipeline mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework version 3.0.</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=86952">Upgrading ASP.NET Applications to IIS 7.0: Differences between IIS 7.0 Integrated Mode and Classic mode</related>
       </Docs>
     </Member>
     <Member MemberName="HeadersWritten">
@@ -2226,6 +2235,7 @@ Response.RedirectToRoute(
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -2281,6 +2291,7 @@ Response.RedirectToRoute("Products");
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -2338,6 +2349,7 @@ Response.RedirectToRoute(
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -2392,6 +2404,7 @@ Response.RedirectToRoute("Product",
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -2451,6 +2464,7 @@ Response.RedirectToRoute("Product",
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="RedirectToRoutePermanent">
@@ -2512,6 +2526,7 @@ Response.RedirectToRoutePermanent(
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -2567,6 +2582,7 @@ Response.RedirectToRoutePermanent("Products");
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -2624,6 +2640,7 @@ Response.RedirectToRoutePermanent(
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -2678,6 +2695,7 @@ Response.RedirectToRoutePermanent("Product",
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -2737,6 +2755,7 @@ Response.RedirectToRoutePermanent("Product",
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="RemoveOutputCacheItem">
@@ -3666,6 +3685,9 @@ Response.RedirectToRoutePermanent("Product",
         <exception cref="T:System.ArgumentException">The target of the <paramref name="callback" /> parameter is of type <see cref="T:System.Web.UI.Control" />.</exception>
         <altmember cref="T:System.Web.HttpResponseSubstitutionCallback" />
         <altmember cref="T:System.Web.UI.WebControls.Substitution" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d5fbd79f-972d-4557-9a39-f90684b3dcd3">Setting the Cacheability of a Page</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cdd8e523-7305-4685-a456-c5be1de1367e">Caching Portions of an ASP.NET Page</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/09c9bd9a-0d68-4a5c-aa6f-1b461c208795">Dynamically Updating Portions of a Cached Page</related>
       </Docs>
     </Member>
   </Members>

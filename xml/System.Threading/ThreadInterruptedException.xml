@@ -1,4 +1,4 @@
-﻿<Type Name="ThreadInterruptedException" FullName="System.Threading.ThreadInterruptedException">
+<Type Name="ThreadInterruptedException" FullName="System.Threading.ThreadInterruptedException">
   <TypeSignature Language="C#" Value="public class ThreadInterruptedException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ThreadInterruptedException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadInterruptedException" />
@@ -58,6 +58,7 @@
     </remarks>
     <altmember cref="T:System.Threading.Thread" />
     <altmember cref="T:System.Threading.ThreadState" />
+    <related type="Article" href="~/docs/standard/threading/pausing-and-resuming-threads.md">Pausing and Resuming Threads</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -109,6 +110,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/threading/pausing-and-resuming-threads.md">Pausing and interrupting threads</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -154,6 +156,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/threading/pausing-and-resuming-threads.md">Pausing and Resuming Threads</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -201,6 +204,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/threading/pausing-and-resuming-threads.md">Pausing and Resuming Threads</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -250,6 +254,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/threading/pausing-and-resuming-threads.md">Pausing and Resuming Threads</related>
       </Docs>
     </Member>
   </Members>

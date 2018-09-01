@@ -1,4 +1,4 @@
-﻿<Type Name="DesignerActionMethodItem" FullName="System.ComponentModel.Design.DesignerActionMethodItem">
+<Type Name="DesignerActionMethodItem" FullName="System.ComponentModel.Design.DesignerActionMethodItem">
   <TypeSignature Language="C#" Value="public class DesignerActionMethodItem : System.ComponentModel.Design.DesignerActionItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerActionMethodItem extends System.ComponentModel.Design.DesignerActionItem" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionMethodItem" />
@@ -39,6 +39,7 @@
     <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
     <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
     <altmember cref="P:System.ComponentModel.Design.DesignerActionMethodItem.MemberName" />
+    <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -89,6 +90,7 @@
         <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
         <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.Verbs" />
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -134,6 +136,7 @@
         <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
         <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.Verbs" />
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -179,6 +182,7 @@
         <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
         <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.Verbs" />
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -228,6 +232,7 @@
         <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
         <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.Verbs" />
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -275,6 +280,7 @@
         <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
         <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.Verbs" />
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -334,6 +340,7 @@
         <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
         <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.Verbs" />
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="IncludeAsDesignerVerb">
@@ -374,6 +381,7 @@
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.#ctor(System.ComponentModel.Design.DesignerActionList[])" />
         <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
         <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.Verbs" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -405,6 +413,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The method, named in <see cref="P:System.ComponentModel.Design.DesignerActionMethodItem.MemberName" /> cannot be found.</exception>
         <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="MemberName">
@@ -445,6 +454,7 @@
         </remarks>
         <altmember cref="M:System.ComponentModel.Design.DesignerActionMethodItem.#ctor(System.ComponentModel.Design.DesignerActionList,System.String,System.String)" />
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="RelatedComponent">
@@ -486,6 +496,7 @@
         </remarks>
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
         <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.AllowAssociate" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
   </Members>

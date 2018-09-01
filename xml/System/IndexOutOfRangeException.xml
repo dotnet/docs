@@ -1,4 +1,4 @@
-﻿<Type Name="IndexOutOfRangeException" FullName="System.IndexOutOfRangeException">
+<Type Name="IndexOutOfRangeException" FullName="System.IndexOutOfRangeException">
   <TypeSignature Language="C#" Value="public sealed class IndexOutOfRangeException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit IndexOutOfRangeException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.IndexOutOfRangeException" />
@@ -147,6 +147,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

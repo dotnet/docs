@@ -1,4 +1,4 @@
-﻿<Type Name="PermissionSet" FullName="System.Security.PermissionSet">
+<Type Name="PermissionSet" FullName="System.Security.PermissionSet">
   <TypeSignature Language="C#" Value="public class PermissionSet : System.Collections.ICollection, System.Runtime.Serialization.IDeserializationCallback, System.Security.ISecurityEncodable, System.Security.IStackWalk" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PermissionSet extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Runtime.Serialization.IDeserializationCallback, class System.Security.ISecurityEncodable, class System.Security.IStackWalk" />
   <TypeSignature Language="DocId" Value="T:System.Security.PermissionSet" />
@@ -303,6 +303,7 @@
  -or-  
   
  There is already an active <see cref="M:System.Security.PermissionSet.Assert" /> for the current frame.</exception>
+        <related type="Article" href="~/docs/framework/misc/using-the-assert-method.md">Using the Assert Method</related>
       </Docs>
     </Member>
     <Member MemberName="ContainsNonCodeAccessPermissions">

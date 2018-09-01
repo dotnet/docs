@@ -1,4 +1,4 @@
-﻿<Type Name="RemotingConfiguration" FullName="System.Runtime.Remoting.RemotingConfiguration">
+<Type Name="RemotingConfiguration" FullName="System.Runtime.Remoting.RemotingConfiguration">
   <TypeSignature Language="C#" Value="public static class RemotingConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RemotingConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.RemotingConfiguration" />
@@ -214,7 +214,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Passing `null` as the `filename` parameter will cause default remoting initialization without requiring the existence of a configuration file. For more information about remoting and security see [Security in Remoting.](http://msdn.microsoft.com/library/9574262c-d4b1-41c5-8600-24ff147c0add)  
+ Passing `null` as the `filename` parameter will cause default remoting initialization without requiring the existence of a configuration file. For more information about remoting and security see [Security in Remoting.](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/9hwst9th(v=vs.100))  
   
  For configuration file syntax, see [Remoting Settings Schema](http://msdn.microsoft.com/library/dc2d1e62-9af7-4ca1-99fd-98b93bb4db9e).  
   
@@ -347,7 +347,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a detailed description of client-activated objects, see [&#91;\<topic://cpconClientActivation>&#93;](http://msdn.microsoft.com/library/4a791494-c18a-4711-a5c1-4ab0e49a8f1a).  
+ For a detailed description of client-activated objects, see [Client Activation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w93betdk(v=vs.100)).  
   
  ]]></format>
         </remarks>
@@ -390,7 +390,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a detailed description of client-activated objects, see [&#91;\<topic://cpconClientActivation>&#93;](http://msdn.microsoft.com/library/4a791494-c18a-4711-a5c1-4ab0e49a8f1a).  
+ For a detailed description of client-activated objects, see [Client Activation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w93betdk(v=vs.100)).  
   
    
   
@@ -442,7 +442,7 @@
 ## Remarks  
  Well-known object types can be either single call or singleton. If an object type is single call, then a new instance of it is created each time a call from the client comes in. All calls to a singleton object are handled by one instance of that object.  
   
- For a more detailed description of well-known objects, see [&#91;\<topic://cpconServerActivation>&#93;](http://msdn.microsoft.com/library/77ded6e2-4ca8-448b-acf2-562d27fd4396).  
+ For a more detailed description of well-known objects, see [Server Activation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/y0h540a7(v=vs.100)).  
   
    
   
@@ -494,7 +494,7 @@
 ## Remarks  
  Well-known object types can be either single call or singleton. If an object type is single call, then a new instance of it is created each time a call from the client comes in. All calls to a singleton object are handled by one instance of that object.  
   
- For a more detailed description of well-known objects, see [&#91;\<topic://cpconServerActivation>&#93;](http://msdn.microsoft.com/library/77ded6e2-4ca8-448b-acf2-562d27fd4396).  
+ For a more detailed description of well-known objects, see [Server Activation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/y0h540a7(v=vs.100)).  
   
    
   
@@ -615,6 +615,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w93betdk(v=vs.100)">Client Activation</related>
       </Docs>
     </Member>
     <Member MemberName="IsRemotelyActivatedClientType">
@@ -661,6 +662,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w93betdk(v=vs.100)">Client Activation</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="IsWellKnownClientType">
@@ -715,6 +717,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/y0h540a7(v=vs.100)">Server Activation</related>
       </Docs>
     </Member>
     <Member MemberName="IsWellKnownClientType">
@@ -761,6 +764,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/y0h540a7(v=vs.100)">Server Activation</related>
       </Docs>
     </Member>
     <Member MemberName="ProcessId">
@@ -841,7 +845,7 @@
   
  To activate a client-activated object type with the `new` keyword, you must first register the object type on the client end using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method gives the remoting infrastructure the location of the remote application where `new` attempts to create it. If, on the other hand, you use the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method to create a new instance of the client-activated object, you must supply the remote application's URL as a parameter, so no prior registration on the client end is necessary. To supply the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method with the URL of the server where you want to create the object, you must encapsulate the URL in an instance of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> class.  
   
- For a detailed description of client-activated objects, see [&#91;\<topic://cpconClientActivation>&#93;](http://msdn.microsoft.com/library/4a791494-c18a-4711-a5c1-4ab0e49a8f1a).  
+ For a detailed description of client-activated objects, see [Client Activation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w93betdk(v=vs.100)).  
   
  ]]></format>
         </remarks>
@@ -889,7 +893,7 @@
   
  To activate a client-activated object type with the `new` keyword, you must first register the object type on the client end using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method gives the remoting infrastructure the location of the remote application where `new` attempts to create it. If, on the other hand, you use the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method to create a new instance of the client-activated object, you must supply the remote application's URL as a parameter, so no prior registration on the client end is necessary. To supply the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method with the URL of the server where you want to create the object, you must encapsulate the URL in an instance of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> class.  
   
- For a detailed description of client-activated objects, see [&#91;\<topic://cpconClientActivation>&#93;](http://msdn.microsoft.com/library/4a791494-c18a-4711-a5c1-4ab0e49a8f1a)  
+ For a detailed description of client-activated objects, see [Client Activation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w93betdk(v=vs.100))  
   
    
   
@@ -956,7 +960,7 @@
   
  To activate a client-activated object type with the `new` keyword, you must first register the object type on the client end using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method gives the remoting infrastructure the location of the remote application, where `new` attempts to create it. If, on the other hand, you use the <xref:System.Activator.CreateInstance%2A> method to create a new instance of the client-activated object, you must supply the remote application's URL as a parameter, so no prior registration on the client end is necessary. To supply the <xref:System.Activator.CreateInstance%2A> method with the URL of the server where you want to create the object, you must encapsulate the URL in an instance of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> class.  
   
- For a detailed description of client-activated objects, see [&#91;\<topic://cpconClientActivation>&#93;](http://msdn.microsoft.com/library/4a791494-c18a-4711-a5c1-4ab0e49a8f1a).  
+ For a detailed description of client-activated objects, see [Client Activation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w93betdk(v=vs.100)).  
   
  ]]></format>
         </remarks>
@@ -1002,7 +1006,7 @@
   
  To activate a client-activated object type with the `new` keyword, you must first register the object type on the client end using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method gives the remoting infrastructure the location of the remote application, where `new` attempts to create it. If, on the other hand, you use the <xref:System.Activator.CreateInstance%2A> method to create a new instance of the client-activated object, you must supply the remote application's URL as a parameter, so no prior registration on the client end is necessary. To supply the <xref:System.Activator.CreateInstance%2A> method with the URL of the server where you want to create the object, you must encapsulate the URL in an instance of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> class.  
   
- For a detailed description of client-activated objects, see [&#91;\<topic://cpconClientActivation>&#93;](http://msdn.microsoft.com/library/4a791494-c18a-4711-a5c1-4ab0e49a8f1a).  
+ For a detailed description of client-activated objects, see [Client Activation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w93betdk(v=vs.100)).  
   
    
   
@@ -1072,7 +1076,7 @@
 ## Remarks  
  Any client that knows the URI of a registered well-known object can obtain a proxy for the object by registering the channel it prefers with <xref:System.Runtime.Remoting.Channels.ChannelServices>, and activating the object by calling `new` or <xref:System.Activator.GetObject%2A?displayProperty=nameWithType>. To activate a well-known object with `new`, you must first register the well-known object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method gives the remoting infrastructure the location of the remote object, which allows the `new` keyword to create it. If, on the other hand, you use the <xref:System.Activator.GetObject%2A?displayProperty=nameWithType> method to activate the well-known object, you must supply it with the object's URL as an argument, so no prior registration on the client end is necessary.  
   
- For a detailed description of well-known objects, see [&#91;\<topic://cpconServerActivation>&#93;](http://msdn.microsoft.com/library/77ded6e2-4ca8-448b-acf2-562d27fd4396).  
+ For a detailed description of well-known objects, see [Server Activation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/y0h540a7(v=vs.100)).  
   
  ]]></format>
         </remarks>
@@ -1118,7 +1122,7 @@
 ## Remarks  
  Any client that knows the URI of a registered well-known object can obtain a proxy for the object by registering the channel it prefers with <xref:System.Runtime.Remoting.Channels.ChannelServices>, and activating the object by calling `new` or <xref:System.Activator.GetObject%2A?displayProperty=nameWithType>. To activate a well-known object with `new`, you must first register the well-known object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method gives the remoting infrastructure the location of the remote object, which allows the `new` keyword to create it. If, on the other hand, you use the <xref:System.Activator.GetObject%2A?displayProperty=nameWithType> method to activate the well-known object, you must supply it with the object's URL as an argument, so no prior registration on the client end is necessary.  
   
- For a detailed description of well-known objects, see [&#91;\<topic://cpconServerActivation>&#93;](http://msdn.microsoft.com/library/77ded6e2-4ca8-448b-acf2-562d27fd4396).  
+ For a detailed description of well-known objects, see [Server Activation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/y0h540a7(v=vs.100)).  
   
    
   
@@ -1192,7 +1196,7 @@
   
  The remote object itself is not instantiated by the registration process. This only happens when a client attempts to call a method on the object or activates the object from the client side.  
   
- For a detailed description of well-known objects, see [&#91;\<topic://cpconServerActivation>&#93;](http://msdn.microsoft.com/library/77ded6e2-4ca8-448b-acf2-562d27fd4396).  
+ For a detailed description of well-known objects, see [Server Activation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/y0h540a7(v=vs.100)).  
   
    
   
@@ -1251,7 +1255,7 @@
   
  The remote object itself is not instantiated by the registration process. This only happens when a client attempts to call a method on the object or activates the object from the client side.  
   
- For a detailed description of well-known objects, see [&#91;\<topic://cpconServerActivation>&#93;](http://msdn.microsoft.com/library/77ded6e2-4ca8-448b-acf2-562d27fd4396).  
+ For a detailed description of well-known objects, see [Server Activation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/y0h540a7(v=vs.100)).  
   
    
   

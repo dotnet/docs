@@ -1,4 +1,4 @@
-﻿<Type Name="SqlRowUpdatingEventArgs" FullName="System.Data.SqlClient.SqlRowUpdatingEventArgs">
+<Type Name="SqlRowUpdatingEventArgs" FullName="System.Data.SqlClient.SqlRowUpdatingEventArgs">
   <TypeSignature Language="C#" Value="public sealed class SqlRowUpdatingEventArgs : System.Data.Common.RowUpdatingEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlRowUpdatingEventArgs extends System.Data.Common.RowUpdatingEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlRowUpdatingEventArgs" />
@@ -62,6 +62,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,6 +96,7 @@
         <param name="tableMapping">The <see cref="T:System.Data.Common.DataTableMapping" /> sent through an <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlRowUpdatingEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="BaseCommand">
@@ -150,6 +152,7 @@
         <summary>Gets or sets the <see cref="T:System.Data.SqlClient.SqlCommand" /> to execute when performing the <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</summary>
         <value>The <see cref="T:System.Data.SqlClient.SqlCommand" /> to execute when performing the <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

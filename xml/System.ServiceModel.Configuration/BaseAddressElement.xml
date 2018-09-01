@@ -1,4 +1,4 @@
-﻿<Type Name="BaseAddressElement" FullName="System.ServiceModel.Configuration.BaseAddressElement">
+<Type Name="BaseAddressElement" FullName="System.ServiceModel.Configuration.BaseAddressElement">
   <TypeSignature Language="C#" Value="public sealed class BaseAddressElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BaseAddressElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BaseAddressElement" />
@@ -18,6 +18,7 @@
     <summary>Represents a configuration element that specifies the base addresses used by the service host. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.ServiceModel.Configuration.HostElement" />
+    <related type="Article" href="http://msdn.microsoft.com/library/78918102-2898-46e0-9ea8-6b8afe65603e">BaseAddresses in Configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

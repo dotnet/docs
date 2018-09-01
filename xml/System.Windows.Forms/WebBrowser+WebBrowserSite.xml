@@ -1,4 +1,4 @@
-﻿<Type Name="WebBrowser+WebBrowserSite" FullName="System.Windows.Forms.WebBrowser+WebBrowserSite">
+<Type Name="WebBrowser+WebBrowserSite" FullName="System.Windows.Forms.WebBrowser+WebBrowserSite">
   <TypeSignature Language="C#" Value="protected class WebBrowser.WebBrowserSite : System.Windows.Forms.WebBrowserSiteBase" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit WebBrowser/WebBrowserSite extends System.Windows.Forms.WebBrowserSiteBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowser.WebBrowserSite" />
@@ -34,6 +34,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for overriding this type, which requires access to unmanaged code. Associated enumerations: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /> and <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=98894">WebBrowser Control</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=98895">IDocHostUIHandler Interface</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="WorkflowTheme" FullName="System.Workflow.ComponentModel.Design.WorkflowTheme">
+<Type Name="WorkflowTheme" FullName="System.Workflow.ComponentModel.Design.WorkflowTheme">
   <TypeSignature Language="C#" Value="public sealed class WorkflowTheme : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WorkflowTheme extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.WorkflowTheme" />
@@ -95,7 +95,7 @@
    
   
 ## Examples  
- The following example demonstrates how to access the `AmbientTheme` property. This example is from the Tracking Profile Designer SDK sample. For more information, see [Tracking Profile Designer Sample](http://msdn.microsoft.com/library/a280199c-3000-4148-ac63-cb5aaeac07c8).  
+ The following example demonstrates how to access the `AmbientTheme` property. This example is from the Tracking Profile Designer SDK sample. For more information, see [Tracking Profile Designer Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms742004(v=vs.90)).  
   
  [!code-csharp[Wf_samples#124](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#124)]
  [!code-vb[Wf_samples#124](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#124)]  
@@ -234,13 +234,14 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.CurrentTheme%2A> property to access the <xref:System.Workflow.ComponentModel.Design.AmbientTheme> associated with a workflow.  
   
- This code example is part of the Workflow Monitor SDK Sample from the DesignerGlyphProvider.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ This code example is part of the Workflow Monitor SDK Sample from the DesignerGlyphProvider.cs file. For more information, see [Workflow Monitor](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741706(v=vs.90)).  
   
  [!code-csharp[WF_Samples#133](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#133)]
  [!code-vb[WF_Samples#133](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#133)]  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741706(v=vs.90)">Workflow Monitor</related>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -665,7 +666,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to set and un-set the `ReadOnly` property for the purposes of setting the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.AmbientTheme%2A> property. This example is from the Tracking Profile Designer SDK sample. For more information, see [Tracking Profile Designer Sample](http://msdn.microsoft.com/library/a280199c-3000-4148-ac63-cb5aaeac07c8).  
+ The following example shows how to set and un-set the `ReadOnly` property for the purposes of setting the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.AmbientTheme%2A> property. This example is from the Tracking Profile Designer SDK sample. For more information, see [Tracking Profile Designer Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms742004(v=vs.90)).  
   
  [!code-csharp[Wf_samples#124](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#124)]
  [!code-vb[Wf_samples#124](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#124)]  

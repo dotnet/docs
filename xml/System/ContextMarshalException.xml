@@ -1,4 +1,4 @@
-﻿<Type Name="ContextMarshalException" FullName="System.ContextMarshalException">
+<Type Name="ContextMarshalException" FullName="System.ContextMarshalException">
   <TypeSignature Language="C#" Value="public class ContextMarshalException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ContextMarshalException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.ContextMarshalException" />
@@ -53,6 +53,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

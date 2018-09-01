@@ -1,4 +1,4 @@
-﻿<Type Name="CryptoConfig" FullName="System.Security.Cryptography.CryptoConfig">
+<Type Name="CryptoConfig" FullName="System.Security.Cryptography.CryptoConfig">
   <TypeSignature Language="C#" Value="public class CryptoConfig" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi CryptoConfig extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CryptoConfig" />
@@ -89,6 +89,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -118,6 +119,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CryptoConfig" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="AddAlgorithm">
@@ -351,6 +353,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Reflection.TargetInvocationException">The algorithm described by the <paramref name="name" /> parameter was used with Federal Information Processing Standards (FIPS) mode enabled, but is not FIPS compatible.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="CreateFromName">
@@ -419,6 +422,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Reflection.TargetInvocationException">The algorithm described by the <paramref name="name" /> parameter was used with Federal Information Processing Standards (FIPS) mode enabled, but is not FIPS compatible.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="EncodeOID">
@@ -474,6 +478,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="str" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException">An error occurred while encoding the OID.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="MapNameToOID">
@@ -533,6 +538,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
   </Members>

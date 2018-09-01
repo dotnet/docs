@@ -1,4 +1,4 @@
-﻿<Type Name="HitTestResult" FullName="System.Windows.Media.HitTestResult">
+<Type Name="HitTestResult" FullName="System.Windows.Media.HitTestResult">
   <TypeSignature Language="C#" Value="public abstract class HitTestResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HitTestResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.HitTestResult" />
@@ -32,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159994">Hit Test Using DrawingVisuals Sample</related>
   </Docs>
   <Members>
     <Member MemberName="VisualHit">

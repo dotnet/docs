@@ -1,4 +1,4 @@
-﻿<Type Name="SqlClientPermission" FullName="System.Data.SqlClient.SqlClientPermission">
+<Type Name="SqlClientPermission" FullName="System.Data.SqlClient.SqlClientPermission">
   <TypeSignature Language="C#" Value="public sealed class SqlClientPermission : System.Data.Common.DBDataPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SqlClientPermission extends System.Data.Common.DBDataPermission" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlClientPermission" />
@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/93e099eb-daa1-4f1e-b031-c1e10a996f88">Code Access Security and ADO.NET</related>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -48,6 +50,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlClientPermission" /> class.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -80,6 +83,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlClientPermission" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -108,6 +112,8 @@
         <param name="state">One of the <see cref="T:System.Security.Permissions.PermissionState" /> values.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlClientPermission" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/93e099eb-daa1-4f1e-b031-c1e10a996f88">Code Access Security and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -153,6 +159,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/93e099eb-daa1-4f1e-b031-c1e10a996f88">Code Access Security and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -208,6 +216,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/93e099eb-daa1-4f1e-b031-c1e10a996f88">Code Access Security and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -237,6 +247,7 @@
         <summary>Returns the <see cref="T:System.Data.SqlClient.SqlClientPermission" /> as an <see cref="T:System.Security.IPermission" />.</summary>
         <returns>A copy of the current permission object.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

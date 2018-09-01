@@ -1,4 +1,4 @@
-﻿<Type Name="SqlByte" FullName="System.Data.SqlTypes.SqlByte">
+<Type Name="SqlByte" FullName="System.Data.SqlTypes.SqlByte">
   <TypeSignature Language="C#" Value="public struct SqlByte : IComparable, System.Data.SqlTypes.INullable, System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit SqlByte extends System.ValueType implements class System.Data.SqlTypes.INullable, class System.IComparable, class System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlByte" />
@@ -50,6 +50,7 @@
   <Docs>
     <summary>Represents an 8-bit unsigned integer, in the range of 0 through 255, to be stored in or retrieved from a database.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -87,6 +88,7 @@
         <param name="value">A byte value to be stored in the <see cref="P:System.Data.SqlTypes.SqlByte.Value" /> property of the new <see cref="T:System.Data.SqlTypes.SqlByte" /> structure.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlByte" /> structure using the specified byte value.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -130,6 +132,7 @@
         <summary>Computes the sum of the two specified <see cref="T:System.Data.SqlTypes.SqlByte" /> structures.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlByte" /> structure whose <see langword="Value" /> property contains the results of the addition.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="BitwiseAnd">
@@ -173,6 +176,7 @@
         <summary>Computes the bitwise AND of its <see cref="T:System.Data.SqlTypes.SqlByte" /> operands.</summary>
         <returns>The results of the bitwise AND operation.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="BitwiseOr">
@@ -216,6 +220,7 @@
         <summary>Computes the bitwise OR of its two <see cref="T:System.Data.SqlTypes.SqlByte" /> operands.</summary>
         <returns>The results of the bitwise OR operation.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CompareTo">
@@ -225,6 +230,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Compares this instance to the supplied object and returns an indication of their relative values.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CompareTo">
@@ -287,6 +293,7 @@
   
  </description></item></list></returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -353,6 +360,7 @@
   
  </description></item></list></returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Divide">
@@ -396,6 +404,7 @@
         <summary>Divides its first <see cref="T:System.Data.SqlTypes.SqlByte" /> operand by its second.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlByte" /> structure whose <see cref="P:System.Data.SqlTypes.SqlByte.Value" /> property contains the results of the division.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Equals">
@@ -405,6 +414,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Performs a logical comparison to determine whether a <see cref="T:System.Data.SqlTypes.SqlByte" /> structure's value is equal to another object.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Equals">
@@ -447,6 +457,7 @@
         <returns>
           <see langword="true" /> if object is an instance of <see cref="T:System.Data.SqlTypes.SqlByte" /> and the two are equal; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -491,6 +502,7 @@
         <returns>
           <see langword="true" /> if the two values are equal. Otherwise, <see langword="false" />. If either instance is null, then the <see langword="SqlByte" /> will be null.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -529,6 +541,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="GetXsdType">
@@ -565,6 +578,7 @@
         <summary>Returns the XML Schema definition language (XSD) of the specified <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
         <returns>A <see langword="string" /> value that indicates the XSD of the specified <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="GreaterThan">
@@ -608,6 +622,7 @@
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlByte" /> to determine whether the first is greater than the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlByte" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="GreaterThanOrEqual">
@@ -651,6 +666,7 @@
         <summary>Compares two <see cref="T:System.Data.SqlTypes.SqlByte" /> structures to determine whether the first is greater than or equal to the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlByte" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="IsNull">
@@ -699,6 +715,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="LessThan">
@@ -742,6 +759,7 @@
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlByte" /> to determine whether the first is less than the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlByte" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="LessThanOrEqual">
@@ -785,6 +803,7 @@
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlByte" /> to determine whether the first is less than or equal to the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlByte" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="MaxValue">
@@ -828,6 +847,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="MinValue">
@@ -871,6 +891,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Mod">
@@ -914,6 +935,7 @@
         <summary>Computes the remainder after dividing its first <see cref="T:System.Data.SqlTypes.SqlByte" /> operand by its second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlByte" /> structure whose <see cref="P:System.Data.SqlTypes.SqlByte.Value" /> contains the remainder.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Modulus">
@@ -963,6 +985,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -1006,6 +1029,7 @@
         <summary>Computes the product of the two <see cref="T:System.Data.SqlTypes.SqlByte" /> operands.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlByte" /> structure whose <see cref="P:System.Data.SqlTypes.SqlByte.Value" /> property contains the product of the multiplication.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="NotEquals">
@@ -1049,6 +1073,7 @@
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlByte" /> to determine whether they are not equal.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlByte" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Null">
@@ -1092,6 +1117,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="OnesComplement">
@@ -1133,6 +1159,7 @@
         <summary>The ones complement operator performs a bitwise one's complement operation on its <see cref="T:System.Data.SqlTypes.SqlByte" /> operand.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlByte" /> structure whose <see cref="P:System.Data.SqlTypes.SqlByte.Value" /> property contains the ones complement of the <see cref="T:System.Data.SqlTypes.SqlByte" /> parameter.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -1178,6 +1205,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.Add%28System.Data.SqlTypes.SqlByte%2CSystem.Data.SqlTypes.SqlByte%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseAnd">
@@ -1223,6 +1251,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.BitwiseAnd%28System.Data.SqlTypes.SqlByte%2CSystem.Data.SqlTypes.SqlByte%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseOr">
@@ -1268,6 +1297,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.BitwiseOr%28System.Data.SqlTypes.SqlByte%2CSystem.Data.SqlTypes.SqlByte%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Division">
@@ -1313,6 +1343,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.Divide%28System.Data.SqlTypes.SqlByte%2CSystem.Data.SqlTypes.SqlByte%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1358,6 +1389,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.Equals%28System.Data.SqlTypes.SqlByte%2CSystem.Data.SqlTypes.SqlByte%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_ExclusiveOr">
@@ -1403,6 +1435,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.Xor(System.Data.SqlTypes.SqlByte,System.Data.SqlTypes.SqlByte)?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="op_Explicit">
@@ -1412,6 +1445,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Converts a parameter to a <see cref="T:System.Data.SqlTypes.SqlByte" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="op_Explicit">
@@ -1455,6 +1489,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.ToSqlByte?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1496,6 +1531,7 @@
         <summary>Converts the supplied <see cref="T:System.Data.SqlTypes.SqlByte" /> structure to a byte.</summary>
         <returns>A byte whose value equals the <see cref="P:System.Data.SqlTypes.SqlByte.Value" /> property of the <see cref="T:System.Data.SqlTypes.SqlByte" /> parameter.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1539,6 +1575,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.ToSqlByte?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1582,6 +1619,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDouble.ToSqlByte?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1625,6 +1663,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.ToSqlByte?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1668,6 +1707,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt32.ToSqlByte?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1711,6 +1751,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt64.ToSqlByte?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1754,6 +1795,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlMoney.ToSqlByte?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1797,6 +1839,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlSingle.ToSqlByte?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1840,6 +1883,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.ToSqlByte?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -1885,6 +1929,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.GreaterThan%28System.Data.SqlTypes.SqlByte%2CSystem.Data.SqlTypes.SqlByte%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -1930,6 +1975,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.GreaterThanOrEqual(System.Data.SqlTypes.SqlByte,System.Data.SqlTypes.SqlByte)?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1971,6 +2017,7 @@
         <summary>Converts the supplied byte value to a <see cref="T:System.Data.SqlTypes.SqlByte" />.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlByte" /> structure whose <see cref="P:System.Data.SqlTypes.SqlByte.Value" /> property is equal to the supplied parameter.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -2016,6 +2063,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.NotEquals(System.Data.SqlTypes.SqlByte,System.Data.SqlTypes.SqlByte)?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -2061,6 +2109,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.LessThan%28System.Data.SqlTypes.SqlByte%2CSystem.Data.SqlTypes.SqlByte%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -2106,6 +2155,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.LessThanOrEqual(System.Data.SqlTypes.SqlByte,System.Data.SqlTypes.SqlByte)>.]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Modulus">
@@ -2151,6 +2201,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.Mod%28System.Data.SqlTypes.SqlByte%2CSystem.Data.SqlTypes.SqlByte%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
@@ -2196,6 +2247,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.Multiply%28System.Data.SqlTypes.SqlByte%2CSystem.Data.SqlTypes.SqlByte%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_OnesComplement">
@@ -2239,6 +2291,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.OnesComplement%28System.Data.SqlTypes.SqlByte%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -2284,6 +2337,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.Subtract(System.Data.SqlTypes.SqlByte,System.Data.SqlTypes.SqlByte)?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -2325,6 +2379,7 @@
         <summary>Converts the <see cref="T:System.String" /> representation of a number to its 8-bit unsigned integer equivalent.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlByte" /> structure that contains the 8-bit number represented by the <see langword="String" /> parameter.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -2368,6 +2423,7 @@
         <summary>Subtracts the second <see cref="T:System.Data.SqlTypes.SqlByte" /> operand from the first.</summary>
         <returns>The results of subtracting the second <see cref="T:System.Data.SqlTypes.SqlByte" /> operand from the first.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.Serialization.IXmlSerializable.GetSchema">
@@ -2520,6 +2576,7 @@
         <returns>
           <see langword="true" /> if the <see cref="P:System.Data.SqlTypes.SqlByte.Value" /> is non-zero; <see langword="false" /> if zero; otherwise Null.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlDecimal">
@@ -2558,6 +2615,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlByte" /> structure to <see cref="T:System.Data.SqlTypes.SqlDecimal" />.</summary>
         <returns>A <see langword="SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> equals the <see cref="P:System.Data.SqlTypes.SqlByte.Value" /> of this <see cref="T:System.Data.SqlTypes.SqlByte" /> structure.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlDouble">
@@ -2596,6 +2654,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlByte" /> structure to <see cref="T:System.Data.SqlTypes.SqlDouble" />.</summary>
         <returns>A <see langword="SqlDouble" /> structure with the same value as this <see cref="T:System.Data.SqlTypes.SqlByte" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlInt16">
@@ -2634,6 +2693,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlByte" /> structure to <see cref="T:System.Data.SqlTypes.SqlInt16" />.</summary>
         <returns>A <see langword="SqlInt16" /> structure with the same value as this <see cref="T:System.Data.SqlTypes.SqlByte" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlInt32">
@@ -2672,6 +2732,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlByte" /> to <see cref="T:System.Data.SqlTypes.SqlInt32" />.</summary>
         <returns>A <see langword="SqlInt32" /> structure with the same value as this <see cref="T:System.Data.SqlTypes.SqlByte" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlInt64">
@@ -2710,6 +2771,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlByte" /> structure to <see cref="T:System.Data.SqlTypes.SqlInt64" />.</summary>
         <returns>A <see langword="SqlInt64" /> structure who <see cref="P:System.Data.SqlTypes.SqlInt64.Value" /> equals the <see cref="P:System.Data.SqlTypes.SqlByte.Value" /> of this <see cref="T:System.Data.SqlTypes.SqlByte" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlMoney">
@@ -2748,6 +2810,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlByte" /> structure to <see cref="T:System.Data.SqlTypes.SqlMoney" />.</summary>
         <returns>A <see langword="SqlMoney" /> structure whose <see cref="P:System.Data.SqlTypes.SqlMoney.Value" /> equals the <see cref="P:System.Data.SqlTypes.SqlByte.Value" /> of this <see cref="T:System.Data.SqlTypes.SqlByte" /> structure.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlSingle">
@@ -2786,6 +2849,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlByte" /> structure to <see cref="T:System.Data.SqlTypes.SqlSingle" />.</summary>
         <returns>A <see langword="SqlSingle" /> structure that has the same <see cref="P:System.Data.SqlTypes.SqlSingle.Value" /> as this <see cref="T:System.Data.SqlTypes.SqlByte" /> structure.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlString">
@@ -2824,6 +2888,7 @@
         <summary>Converts this instance of <see cref="T:System.Data.SqlTypes.SqlByte" /> to <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
         <returns>A <see langword="SqlString" /> that contains the string representation of the <see cref="T:System.Data.SqlTypes.SqlByte" /> structure's <see cref="P:System.Data.SqlTypes.SqlByte.Value" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2862,6 +2927,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlByte" /> structure to a <see cref="T:System.String" />.</summary>
         <returns>A string that contains the <see cref="P:System.Data.SqlTypes.SqlByte.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlByte" />. If the <see langword="Value" /> is null, the <see langword="String" /> will be a null string.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -2899,6 +2965,7 @@
         <summary>Gets the value of the <see cref="T:System.Data.SqlTypes.SqlByte" /> structure. This property is read-only</summary>
         <value>The value of the <see cref="T:System.Data.SqlTypes.SqlByte" /> structure.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Xor">
@@ -2942,6 +3009,7 @@
         <summary>Performs a bitwise exclusive-OR operation on the supplied parameters.</summary>
         <returns>The results of the XOR operation.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Zero">
@@ -2985,6 +3053,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
   </Members>

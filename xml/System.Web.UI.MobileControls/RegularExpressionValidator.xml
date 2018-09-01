@@ -1,4 +1,4 @@
-﻿<Type Name="RegularExpressionValidator" FullName="System.Web.UI.MobileControls.RegularExpressionValidator">
+<Type Name="RegularExpressionValidator" FullName="System.Web.UI.MobileControls.RegularExpressionValidator">
   <TypeSignature Language="C#" Value="public class RegularExpressionValidator : System.Web.UI.MobileControls.BaseValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RegularExpressionValidator extends System.Web.UI.MobileControls.BaseValidator" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.RegularExpressionValidator" />
@@ -62,6 +62,8 @@
     <altmember cref="T:System.Web.UI.MobileControls.RegularExpressionValidator" />
     <altmember cref="T:System.Web.UI.MobileControls.RequiredFieldValidator" />
     <altmember cref="T:System.Web.UI.MobileControls.ValidationSummary" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/868290ew(v=vs.85)">Introduction to the RegularExpressionValidator Control</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0zt0w6xe(v=vs.85)">Validation Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -188,6 +190,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The regular expression assigned was malformed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/868290ew(v=vs.85)">Introduction to the RegularExpressionValidator Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0zt0w6xe(v=vs.85)">Validation Controls</related>
       </Docs>
     </Member>
   </Members>

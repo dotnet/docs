@@ -1,4 +1,4 @@
-﻿<Type Name="ComClassAttribute" FullName="Microsoft.VisualBasic.ComClassAttribute">
+<Type Name="ComClassAttribute" FullName="Microsoft.VisualBasic.ComClassAttribute">
   <TypeSignature Language="C#" Value="public sealed class ComClassAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ComClassAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ComClassAttribute" />
@@ -44,6 +44,9 @@
  ]]></format>
     </remarks>
     <altmember cref="N:System.Runtime.InteropServices" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/attributes.md">Attributes (Visual Basic)</related>
+    <related type="Article" href="~/docs/framework/interop/applying-interop-attributes.md">Applying Interop Attributes</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/com-interop/walkthrough-creating-com-objects.md">Walkthrough: Creating COM Objects with Visual Basic</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -80,6 +83,9 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.Runtime.InteropServices" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/attributes.md">Attributes (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/com-interop/walkthrough-creating-com-objects.md">Walkthrough: Creating COM Objects with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md">Object Lifetime: How Objects Are Created and Destroyed</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -111,6 +117,9 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.Runtime.InteropServices" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/attributes.md">Attributes (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/com-interop/walkthrough-creating-com-objects.md">Walkthrough: Creating COM Objects with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md">Object Lifetime: How Objects Are Created and Destroyed</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -144,6 +153,9 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.Runtime.InteropServices" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/attributes.md">Attributes (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/com-interop/walkthrough-creating-com-objects.md">Walkthrough: Creating COM Objects with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md">Object Lifetime: How Objects Are Created and Destroyed</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -179,6 +191,9 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.Runtime.InteropServices" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/attributes.md">Attributes (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/com-interop/walkthrough-creating-com-objects.md">Walkthrough: Creating COM Objects with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md">Object Lifetime: How Objects Are Created and Destroyed</related>
       </Docs>
     </Member>
     <Member MemberName="ClassID">
@@ -215,6 +230,7 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.Runtime.InteropServices" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/attributes.md">Attributes (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="EventID">
@@ -251,6 +267,7 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.Runtime.InteropServices" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/attributes.md">Attributes (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="InterfaceID">
@@ -287,6 +304,7 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.Runtime.InteropServices" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/attributes.md">Attributes (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="InterfaceShadows">
@@ -326,6 +344,8 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.Runtime.InteropServices" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/attributes.md">Attributes (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/declared-elements/shadowing.md">Shadowing in Visual Basic</related>
       </Docs>
     </Member>
   </Members>

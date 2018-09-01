@@ -1,4 +1,4 @@
-﻿<Type Name="ServicePointManager" FullName="System.Net.ServicePointManager">
+<Type Name="ServicePointManager" FullName="System.Net.ServicePointManager">
   <TypeSignature Language="C#" Value="public class ServicePointManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ServicePointManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.ServicePointManager" />
@@ -51,6 +51,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Net.ServicePoint" />
+    <related type="Article" href="http://msdn.microsoft.com/library/6e5def51-3646-4ef6-a7bd-c69151321bec">ServicePointManager Element (Network Settings)</related>
   </Docs>
   <Members>
     <Member MemberName="CertificatePolicy">
@@ -479,6 +480,7 @@
         <altmember cref="T:System.Net.ServicePoint" />
         <altmember cref="P:System.Net.Configuration.ServicePointManagerElement.EncryptionPolicy" />
         <altmember cref="T:System.Net.Security.EncryptionPolicy" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6e5def51-3646-4ef6-a7bd-c69151321bec">ServicePointManager Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="Expect100Continue">

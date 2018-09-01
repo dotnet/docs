@@ -1,4 +1,4 @@
-﻿<Type Name="MissingMemberException" FullName="System.MissingMemberException">
+<Type Name="MissingMemberException" FullName="System.MissingMemberException">
   <TypeSignature Language="C#" Value="public class MissingMemberException : MemberAccessException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MissingMemberException extends System.MemberAccessException implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.MissingMemberException" />
@@ -65,6 +65,7 @@
     <altmember cref="T:System.Exception" />
     <altmember cref="T:System.MissingFieldException" />
     <altmember cref="T:System.MissingMethodException" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -223,6 +224,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -277,6 +279,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -501,6 +504,7 @@
         <altmember cref="T:System.Exception" />
         <altmember cref="T:System.MissingFieldException" />
         <altmember cref="T:System.MissingMethodException" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName="Signature">

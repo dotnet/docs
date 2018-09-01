@@ -1,4 +1,4 @@
-﻿<Type Name="TransactionFlowBindingElement" FullName="System.ServiceModel.Channels.TransactionFlowBindingElement">
+<Type Name="TransactionFlowBindingElement" FullName="System.ServiceModel.Channels.TransactionFlowBindingElement">
   <TypeSignature Language="C#" Value="public sealed class TransactionFlowBindingElement : System.ServiceModel.Channels.BindingElement, System.ServiceModel.Description.IPolicyExportExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TransactionFlowBindingElement extends System.ServiceModel.Channels.BindingElement implements class System.ServiceModel.Description.IPolicyExportExtension" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.TransactionFlowBindingElement" />
@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/wcf/feature-details/enabling-transaction-flow.md">Enabling Transaction Flow</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -87,7 +88,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about choosing the protocol to be used, see [Enabling Transaction Flow](http://msdn.microsoft.com/library/31a6bc6a-4ef4-45ba-a753-1efa1a19d917).  
+ For more information about choosing the protocol to be used, see [Enabling Transaction Flow](~/docs/framework/wcf/feature-details/enabling-transaction-flow.md).  
   
  ]]></format>
         </remarks>
@@ -460,7 +461,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about choosing the protocol to be used, see [Enabling Transaction Flow](http://msdn.microsoft.com/library/31a6bc6a-4ef4-45ba-a753-1efa1a19d917).  
+ For more information about choosing the protocol to be used, see [Enabling Transaction Flow](~/docs/framework/wcf/feature-details/enabling-transaction-flow.md).  
   
  ]]></format>
         </remarks>

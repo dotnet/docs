@@ -1,4 +1,4 @@
-﻿<Type Name="Delegate" FullName="System.Delegate">
+<Type Name="Delegate" FullName="System.Delegate">
   <TypeSignature Language="C#" Value="public abstract class Delegate : ICloneable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi abstract serializable beforefieldinit Delegate extends System.Object implements class System.ICloneable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Delegate" />
@@ -113,6 +113,11 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.MulticastDelegate" />
+    <related type="Article" href="http://msdn.microsoft.com/library/41972034-92ed-450a-9664-ab93fcc6f1fb">Calling Synchronous Methods Asynchronously</related>
+    <related type="Article" href="~/docs/csharp/programming-guide/delegates/index.md">Delegates (C# Programming Guide)</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/delegates/index.md">Delegates (Visual Basic)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/1cdf3420-89c1-47c0-b796-aa984020e0f8">How to: Define and Use Delegates (C++/CLI)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="AspNetHostingPermissionLevel" FullName="System.Web.AspNetHostingPermissionLevel">
+<Type Name="AspNetHostingPermissionLevel" FullName="System.Web.AspNetHostingPermissionLevel">
   <TypeSignature Language="C#" Value="public enum AspNetHostingPermissionLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AspNetHostingPermissionLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.AspNetHostingPermissionLevel" />
@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/0001d062-f5cd-44e5-bb07-35155569fdb8">ASP.NET Code Access Security</related>
   </Docs>
   <Members>
     <Member MemberName="High">

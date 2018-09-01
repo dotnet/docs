@@ -1,4 +1,4 @@
-﻿<Type Name="XamlReader" FullName="System.Xaml.XamlReader">
+<Type Name="XamlReader" FullName="System.Xaml.XamlReader">
   <TypeSignature Language="C#" Value="public abstract class XamlReader : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XamlReader extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlReader" />
@@ -49,6 +49,7 @@
     <altmember cref="T:System.Xaml.XamlObjectReader" />
     <altmember cref="T:System.Xaml.XamlXmlReader" />
     <altmember cref="T:System.Xaml.XamlReaderSettings" />
+    <related type="Article" href="http://msdn.microsoft.com/library/7c11abec-1075-474c-9d9b-778e5dab21c3">Understanding XAML Node Stream Structures and Concepts</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

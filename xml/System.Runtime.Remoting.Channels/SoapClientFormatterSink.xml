@@ -1,4 +1,4 @@
-﻿<Type Name="SoapClientFormatterSink" FullName="System.Runtime.Remoting.Channels.SoapClientFormatterSink">
+<Type Name="SoapClientFormatterSink" FullName="System.Runtime.Remoting.Channels.SoapClientFormatterSink">
   <TypeSignature Language="C#" Value="public class SoapClientFormatterSink : System.Runtime.Remoting.Channels.IChannelSinkBase, System.Runtime.Remoting.Channels.IClientChannelSink, System.Runtime.Remoting.Channels.IClientFormatterSink, System.Runtime.Remoting.Messaging.IMessageSink" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapClientFormatterSink extends System.Object implements class System.Runtime.Remoting.Channels.IChannelSinkBase, class System.Runtime.Remoting.Channels.IClientChannelSink, class System.Runtime.Remoting.Channels.IClientFormatterSink, class System.Runtime.Remoting.Messaging.IMessageSink" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.SoapClientFormatterSink" />
@@ -46,6 +46,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.Remoting.Channels.SoapClientFormatterSinkProvider" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tdzwhfy3(v=vs.100)">Sinks and Sink Chains</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -129,6 +130,7 @@
         <param name="stream">The stream headed to the transport sink.</param>
         <summary>Requests asynchronous processing of a method call on the current sink.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tdzwhfy3(v=vs.100)">Sinks and Sink Chains</related>
       </Docs>
     </Member>
     <Member MemberName="AsyncProcessResponse">
@@ -160,6 +162,7 @@
         <param name="stream">The stream coming back from the transport sink.</param>
         <summary>Requests asynchronous processing of a response to a method call on the current sink.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tdzwhfy3(v=vs.100)">Sinks and Sink Chains</related>
       </Docs>
     </Member>
     <Member MemberName="GetRequestStream">
@@ -189,6 +192,7 @@
         <summary>Returns the <see cref="T:System.IO.Stream" /> onto which the provided message is to be serialized.</summary>
         <returns>The <see cref="T:System.IO.Stream" /> onto which the provided message is to be serialized.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tdzwhfy3(v=vs.100)">Sinks and Sink Chains</related>
       </Docs>
     </Member>
     <Member MemberName="NextChannelSink">
@@ -269,6 +273,7 @@
         <param name="responseStream">When this method returns, contains a <see cref="T:System.IO.Stream" /> coming back from the transport sink. This parameter is passed uninitialized.</param>
         <summary>Requests message processing from the current sink.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tdzwhfy3(v=vs.100)">Sinks and Sink Chains</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -292,6 +297,7 @@
         <summary>Gets a <see cref="T:System.Collections.IDictionary" /> of properties for the current channel sink.</summary>
         <value>A <see cref="T:System.Collections.IDictionary" /> of properties for the current channel sink.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kw7c6kwc(v=vs.100)">Channel and Formatter Configuration Properties</related>
       </Docs>
     </Member>
     <Member MemberName="SyncProcessMessage">
@@ -319,6 +325,7 @@
         <summary>Synchronously processes the provided message.</summary>
         <returns>The response to the processed message.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tdzwhfy3(v=vs.100)">Sinks and Sink Chains</related>
       </Docs>
     </Member>
   </Members>

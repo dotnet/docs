@@ -1,4 +1,4 @@
-﻿<Type Name="IConvertible" FullName="System.IConvertible">
+<Type Name="IConvertible" FullName="System.IConvertible">
   <TypeSignature Language="C#" Value="public interface IConvertible" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConvertible" />
   <TypeSignature Language="DocId" Value="T:System.IConvertible" />
@@ -62,6 +62,7 @@
   
  Most conversion methods have a parameter of type <see cref="T:System.IFormatProvider" /> that represents either the current culture (<see cref="P:System.Globalization.CultureInfo.CurrentCulture" />) or a specific culture. For the most part, the <see cref="T:System.IConvertible" /> implementations of the base types ignore this parameter. However, you can choose whether to use it in your code.</para>
     </block>
+    <related type="Article" href="~/docs/standard/base-types/type-conversion.md">Type Conversion in the .NET Framework</related>
   </Docs>
   <Members>
     <Member MemberName="GetTypeCode">

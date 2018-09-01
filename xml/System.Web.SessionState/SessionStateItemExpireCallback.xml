@@ -1,4 +1,4 @@
-﻿<Type Name="SessionStateItemExpireCallback" FullName="System.Web.SessionState.SessionStateItemExpireCallback">
+<Type Name="SessionStateItemExpireCallback" FullName="System.Web.SessionState.SessionStateItemExpireCallback">
   <TypeSignature Language="C#" Value="public delegate void SessionStateItemExpireCallback(string id, SessionStateStoreData item);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SessionStateItemExpireCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionStateItemExpireCallback" />
@@ -34,5 +34,6 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
   </Docs>
 </Type>

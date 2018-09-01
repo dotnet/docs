@@ -1,4 +1,4 @@
-﻿<Type Name="PersistChildrenAttribute" FullName="System.Web.UI.PersistChildrenAttribute">
+<Type Name="PersistChildrenAttribute" FullName="System.Web.UI.PersistChildrenAttribute">
   <TypeSignature Language="C#" Value="public sealed class PersistChildrenAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PersistChildrenAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PersistChildrenAttribute" />
@@ -47,6 +47,8 @@
     </remarks>
     <altmember cref="T:System.Attribute" />
     <altmember cref="T:System.Web.UI.ParseChildrenAttribute" />
+    <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/4881917b-628f-4689-b872-472e4f8a4e3a">Design-Time Architecture</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -98,6 +100,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.Control" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/4yf3whkx(v=vs.90)">Custom Control Development</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -363,6 +366,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.PersistChildrenAttribute.#ctor(System.Boolean,System.Boolean)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/22bdc64b-ab7e-4da7-80f7-bbad3ea39015">Writing Your Own Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac8e85a9-422e-49b8-98c0-5ade5853ea7c">Implementing Custom Persistence</related>
       </Docs>
     </Member>
     <Member MemberName="Yes">

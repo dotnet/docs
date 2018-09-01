@@ -1,4 +1,4 @@
-﻿<Type Name="TransactionProtocol" FullName="System.ServiceModel.TransactionProtocol">
+<Type Name="TransactionProtocol" FullName="System.ServiceModel.TransactionProtocol">
   <TypeSignature Language="C#" Value="public abstract class TransactionProtocol" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TransactionProtocol extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.TransactionProtocol" />
@@ -30,6 +30,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.ServiceModel.Channels.TransactionFlowBindingElement" />
+    <related type="Article" href="~/docs/framework/wcf/feature-details/enabling-transaction-flow.md">Enabling Transaction Flow</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,7 +84,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information on selecting a transaction protocol, see [Enabling Transaction Flow](http://msdn.microsoft.com/library/31a6bc6a-4ef4-45ba-a753-1efa1a19d917).  
+ For more information on selecting a transaction protocol, see [Enabling Transaction Flow](~/docs/framework/wcf/feature-details/enabling-transaction-flow.md).  
   
  ]]></format>
         </remarks>

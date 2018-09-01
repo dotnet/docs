@@ -1,4 +1,4 @@
-﻿<Type Name="RuleCondition" FullName="System.Workflow.Activities.Rules.RuleCondition">
+<Type Name="RuleCondition" FullName="System.Workflow.Activities.Rules.RuleCondition">
   <TypeSignature Language="C#" Value="public abstract class RuleCondition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit RuleCondition extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleCondition" />
@@ -22,6 +22,7 @@
   <Docs>
     <summary>Base type for <see cref="T:System.Workflow.Activities.Rules.RuleExpressionCondition" /> and any custom conditions created by users.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734452(v=vs.90)">Rules Evaluation in RuleSets</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,6 +41,7 @@
       <Docs>
         <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734452(v=vs.90)">Rules Evaluation in RuleSets</related>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -63,6 +65,7 @@
         <summary>When overridden in a derived class, creates a deep copy of the current <see cref="T:System.Workflow.Activities.Rules.RuleCondition" />.</summary>
         <returns>A <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> that is identical to this instance</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734452(v=vs.90)">Rules Evaluation in RuleSets</related>
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
@@ -90,6 +93,7 @@
         <returns>
           <see langword="true" /> to show that the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> evaluated to <see langword="true" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734452(v=vs.90)">Rules Evaluation in RuleSets</related>
       </Docs>
     </Member>
     <Member MemberName="GetDependencies">
@@ -116,6 +120,7 @@
         <summary>When overridden in a derived class, gets the dependencies for the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" />.</summary>
         <returns>A list of symbols that represent entities read by the condition.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734452(v=vs.90)">Rules Evaluation in RuleSets</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -138,6 +143,7 @@
         <summary>Gets or sets the name of the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" />.</summary>
         <value>The name of the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734452(v=vs.90)">Rules Evaluation in RuleSets</related>
       </Docs>
     </Member>
     <Member MemberName="OnRuntimeInitialized">
@@ -194,6 +200,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734452(v=vs.90)">Rules Evaluation in RuleSets</related>
       </Docs>
     </Member>
   </Members>

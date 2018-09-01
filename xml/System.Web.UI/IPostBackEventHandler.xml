@@ -1,4 +1,4 @@
-﻿<Type Name="IPostBackEventHandler" FullName="System.Web.UI.IPostBackEventHandler">
+<Type Name="IPostBackEventHandler" FullName="System.Web.UI.IPostBackEventHandler">
   <TypeSignature Language="C#" Value="public interface IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IPostBackEventHandler" />
@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
   </Docs>
   <Members>
     <Member MemberName="RaisePostBackEvent">
@@ -73,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
       </Docs>
     </Member>
   </Members>

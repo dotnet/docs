@@ -1,4 +1,4 @@
-﻿<Type Name="ExtendedProtectionPolicy" FullName="System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy">
+<Type Name="ExtendedProtectionPolicy" FullName="System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy">
   <TypeSignature Language="C#" Value="public class ExtendedProtectionPolicy : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ExtendedProtectionPolicy extends System.Object implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
@@ -50,6 +50,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -104,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -147,6 +149,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -192,6 +195,7 @@
           <paramref name="policyEnforcement" /> is specified as <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="customChannelBinding" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -238,6 +242,7 @@
           <paramref name="policyEnforcement" /> is specified as <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="customServiceNames" /> is <see langword="null" /> or an empty list.</exception>
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -285,6 +290,7 @@
           <paramref name="policyEnforcement" /> is specified as <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="customServiceNames" /> is <see langword="null" /> or an empty list.</exception>
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="CustomChannelBinding">
@@ -330,6 +336,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="CustomServiceNames">
@@ -375,6 +382,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="OSSupportsExtendedProtection">
@@ -415,6 +423,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="PolicyEnforcement">
@@ -460,6 +469,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="ProtectionScenario">
@@ -505,6 +515,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -550,6 +561,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -589,6 +601,7 @@
         <summary>Gets a string representation for the extended protection policy instance.</summary>
         <returns>A <see cref="T:System.String" /> instance that contains the representation of the <see cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" /> instance.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
   </Members>

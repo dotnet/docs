@@ -1,4 +1,4 @@
-﻿<Type Name="SchemaClassType" FullName="System.DirectoryServices.ActiveDirectory.SchemaClassType">
+<Type Name="SchemaClassType" FullName="System.DirectoryServices.ActiveDirectory.SchemaClassType">
   <TypeSignature Language="C#" Value="public enum SchemaClassType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SchemaClassType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.SchemaClassType" />
@@ -19,6 +19,7 @@
     <remarks>To be added.</remarks>
     <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" />
     <altmember cref="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.Type" />
+    <related type="Article" href="https://msdn.microsoft.com/library/2d756396-d57b-489a-ac97-2db225613751">Accessing the Schema</related>
   </Docs>
   <Members>
     <Member MemberName="Abstract">

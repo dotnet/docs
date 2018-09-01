@@ -1,4 +1,4 @@
-﻿<Type Name="DataServiceContext" FullName="System.Data.Services.Client.DataServiceContext">
+<Type Name="DataServiceContext" FullName="System.Data.Services.Client.DataServiceContext">
   <TypeSignature Language="C#" Value="public class DataServiceContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataServiceContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceContext" />
@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/21075e50-8917-413e-a8ea-35a0f6e65aa5">Working with .NET Framework Client Libraries (WCF Data Services)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -530,6 +531,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/902a2dc1-d0e9-4b00-90a8-becc4cb1f6a7">How to: Execute Asynchronous Data Service Queries (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="BeginExecuteBatch">
@@ -1230,6 +1232,7 @@
   
  When the <see cref="M:System.Data.Services.Client.DataServiceContext.EndExecute``1(System.IAsyncResult)" /> method was previously called.</exception>
         <exception cref="T:System.InvalidOperationException">When an error is raised either during execution of the request or when it converts the contents of the response message into objects.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/902a2dc1-d0e9-4b00-90a8-becc4cb1f6a7">How to: Execute Asynchronous Data Service Queries (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="EndExecuteBatch">
@@ -1502,6 +1505,8 @@
         <exception cref="T:System.ArgumentException">When <paramref name="requestUri" /> is not a valid URI for the data service.</exception>
         <exception cref="T:System.InvalidOperationException">When an error is raised either during execution of the request or when it converts the contents of the response message into objects.</exception>
         <exception cref="T:System.Data.Services.Client.DataServiceQueryException">When the data service returns an HTTP 404: Resource Not Found error.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/32f9b588-c832-44c4-a7e0-fcce635df59a">Loading Deferred Content (WCF Data Services)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/bb786ea4-f3ef-4ad3-9a41-3a0b7feb6a1f">How to: Load Paged Results (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="ExecuteBatch">
@@ -1552,6 +1557,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/3b4db7df-bd33-43a1-8ea4-63a18e131f97">How to: Execute Queries in a Batch (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="GetEntityDescriptor">
@@ -2101,6 +2107,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">When <paramref name="entity" /> is in a <see cref="F:System.Data.Services.Client.EntityStates.Detached" /> or <see cref="F:System.Data.Services.Client.EntityStates.Added" /> state.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/bb786ea4-f3ef-4ad3-9a41-3a0b7feb6a1f">How to: Load Paged Results (WCF Data Services)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/32f9b588-c832-44c4-a7e0-fcce635df59a">Loading Deferred Content (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="LoadProperty&lt;T&gt;">

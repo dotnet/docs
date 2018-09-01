@@ -1,4 +1,4 @@
-﻿<Type Name="ObjectListViewMode" FullName="System.Web.UI.MobileControls.ObjectListViewMode">
+<Type Name="ObjectListViewMode" FullName="System.Web.UI.MobileControls.ObjectListViewMode">
   <TypeSignature Language="C#" Value="public enum ObjectListViewMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ObjectListViewMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListViewMode" />
@@ -34,6 +34,7 @@
     </remarks>
     <altmember cref="P:System.Web.UI.MobileControls.ObjectList.ViewMode" />
     <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
   </Docs>
   <Members>
     <Member MemberName="Commands">
@@ -58,6 +59,7 @@
         <summary>Command's view in WML. This is the default view displayed when the page containing the object list is rendered for the first time. It consists of either the label fields of the items, or (when TableFields is not empty) a table with columns corresponding to the table fields and rows corresponding to items. When there is more information in the <see langword="Details" /> view, a hyperlink for each item displaying the <see langword="Details" /> view is rendered, by default reading <see langword="More" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <altmember cref="P:System.Web.UI.MobileControls.ObjectList.ViewMode" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Details">
@@ -82,6 +84,7 @@
         <summary>Details view. This view is rendered separately only for WML devices. It consists of a menu with the ObjectList's commands, along with an menu item displaying the <see langword="Details" /> view. For HTML devices, this view is combined with the <see langword="Details" /> view, with the commands appearing as hyperlinks below the details. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <altmember cref="P:System.Web.UI.MobileControls.ObjectList.ViewMode" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -106,6 +109,7 @@
         <summary>List view. This view displays each field of the item, including title and value. In HTML, this view is combined with the <see langword="Commands" /> view, with the commands appearing as hyperlinks below the details. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <altmember cref="P:System.Web.UI.MobileControls.ObjectList.ViewMode" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
   </Members>

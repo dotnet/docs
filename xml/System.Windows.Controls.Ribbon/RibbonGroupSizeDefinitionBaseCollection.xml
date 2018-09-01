@@ -1,4 +1,4 @@
-﻿<Type Name="RibbonGroupSizeDefinitionBaseCollection" FullName="System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBaseCollection">
+<Type Name="RibbonGroupSizeDefinitionBaseCollection" FullName="System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBaseCollection">
   <TypeSignature Language="C#" Value="public class RibbonGroupSizeDefinitionBaseCollection : System.Windows.FreezableCollection&lt;System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBase&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonGroupSizeDefinitionBaseCollection extends System.Windows.FreezableCollection`1&lt;class System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBase&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBaseCollection" />
@@ -72,6 +72,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94">Ribbon Layout and Resizing</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

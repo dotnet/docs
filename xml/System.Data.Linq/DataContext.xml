@@ -1,4 +1,4 @@
-﻿<Type Name="DataContext" FullName="System.Data.Linq.DataContext">
+<Type Name="DataContext" FullName="System.Data.Linq.DataContext">
   <TypeSignature Language="C#" Value="public class DataContext : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataContext extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.DataContext" />
@@ -299,6 +299,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/fb7f23c4-4572-4c38-9898-a287807d070c">How to: Dynamically Create a Database (LINQ to SQL)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/4ed76327-54a7-414b-82a9-7579bfcec04b">SQL-CLR Type Mapping (LINQ to SQL)</related>
       </Docs>
     </Member>
     <Member MemberName="CreateMethodCallQuery&lt;TResult&gt;">

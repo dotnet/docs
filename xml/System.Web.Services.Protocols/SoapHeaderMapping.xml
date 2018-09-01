@@ -1,4 +1,4 @@
-﻿<Type Name="SoapHeaderMapping" FullName="System.Web.Services.Protocols.SoapHeaderMapping">
+<Type Name="SoapHeaderMapping" FullName="System.Web.Services.Protocols.SoapHeaderMapping">
   <TypeSignature Language="C#" Value="public sealed class SoapHeaderMapping" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapHeaderMapping extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapHeaderMapping" />
@@ -65,6 +65,7 @@
         <summary>Gets a <see cref="T:System.Web.Services.Protocols.SoapHeaderDirection" /> value that indicates the direction of the SOAP header mapping.</summary>
         <value>A <see cref="T:System.Web.Services.Protocols.SoapHeaderDirection" /> value that indicates the direction of the SOAP header mapping.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dz7ks0ee(v=vs.100)">How to: Change a SOAP Header's Recipients</related>
       </Docs>
     </Member>
     <Member MemberName="HeaderType">

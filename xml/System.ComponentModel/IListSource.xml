@@ -1,4 +1,4 @@
-﻿<Type Name="IListSource" FullName="System.ComponentModel.IListSource">
+<Type Name="IListSource" FullName="System.ComponentModel.IListSource">
   <TypeSignature Language="C#" Value="public interface IListSource" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IListSource" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.IListSource" />
@@ -82,6 +82,7 @@
     <altmember cref="T:System.ComponentModel.BindingList`1" />
     <altmember cref="T:System.ComponentModel.IBindingList" />
     <altmember cref="T:System.Collections.CollectionBase" />
+    <related type="Article" href="http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27">Data Binding and Windows Forms</related>
   </Docs>
   <Members>
     <Member MemberName="ContainsListCollection">
@@ -136,6 +137,7 @@
         <altmember cref="T:System.ComponentModel.ITypedList" />
         <altmember cref="T:System.ComponentModel.BindingList`1" />
         <altmember cref="T:System.ComponentModel.IBindingList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27">Data Binding and Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="GetList">
@@ -185,6 +187,7 @@
         <altmember cref="T:System.ComponentModel.ITypedList" />
         <altmember cref="T:System.ComponentModel.BindingList`1" />
         <altmember cref="T:System.ComponentModel.IBindingList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27">Data Binding and Windows Forms</related>
       </Docs>
     </Member>
   </Members>

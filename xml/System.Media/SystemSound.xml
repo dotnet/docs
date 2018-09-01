@@ -1,4 +1,4 @@
-﻿<Type Name="SystemSound" FullName="System.Media.SystemSound">
+<Type Name="SystemSound" FullName="System.Media.SystemSound">
   <TypeSignature Language="C#" Value="public class SystemSound" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SystemSound extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Media.SystemSound" />
@@ -30,6 +30,7 @@
     </remarks>
     <altmember cref="T:System.Media.SystemSounds" />
     <altmember cref="T:System.Media.SoundPlayer" />
+    <related type="Article" href="http://msdn.microsoft.com/library/f3945af9-045c-4e2d-b251-377c37ca2d77">SoundPlayer Class (Windows Forms)</related>
   </Docs>
   <Members>
     <Member MemberName="Play">
@@ -70,6 +71,7 @@
         </remarks>
         <altmember cref="T:System.Media.SystemSounds" />
         <altmember cref="T:System.Media.SoundPlayer" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f3945af9-045c-4e2d-b251-377c37ca2d77">SoundPlayer Class (Windows Forms)</related>
       </Docs>
     </Member>
   </Members>

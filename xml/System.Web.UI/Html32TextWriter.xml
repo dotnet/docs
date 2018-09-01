@@ -1,4 +1,4 @@
-﻿<Type Name="Html32TextWriter" FullName="System.Web.UI.Html32TextWriter">
+<Type Name="Html32TextWriter" FullName="System.Web.UI.Html32TextWriter">
   <TypeSignature Language="C#" Value="public class Html32TextWriter : System.Web.UI.HtmlTextWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Html32TextWriter extends System.Web.UI.HtmlTextWriter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Html32TextWriter" />
@@ -36,6 +36,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+    <related type="Article" href="http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08">Walkthrough: Developing and Using a Custom Server Control</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

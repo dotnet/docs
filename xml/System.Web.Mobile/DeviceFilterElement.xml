@@ -1,4 +1,4 @@
-﻿<Type Name="DeviceFilterElement" FullName="System.Web.Mobile.DeviceFilterElement">
+<Type Name="DeviceFilterElement" FullName="System.Web.Mobile.DeviceFilterElement">
   <TypeSignature Language="C#" Value="public sealed class DeviceFilterElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeviceFilterElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Mobile.DeviceFilterElement" />
@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/4a28z6x5(v=vs.85)">Introduction to Device Filters</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -73,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/4a28z6x5(v=vs.85)">Introduction to Device Filters</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

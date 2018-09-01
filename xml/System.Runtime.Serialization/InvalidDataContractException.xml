@@ -1,4 +1,4 @@
-﻿<Type Name="InvalidDataContractException" FullName="System.Runtime.Serialization.InvalidDataContractException">
+<Type Name="InvalidDataContractException" FullName="System.Runtime.Serialization.InvalidDataContractException">
   <TypeSignature Language="C#" Value="public class InvalidDataContractException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit InvalidDataContractException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.InvalidDataContractException" />
@@ -49,6 +49,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
+    <related type="Article" href="~/docs/framework/wcf/feature-details/using-data-contracts.md">Using Data Contracts</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

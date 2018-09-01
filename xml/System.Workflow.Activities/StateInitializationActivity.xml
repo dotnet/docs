@@ -1,4 +1,4 @@
-﻿<Type Name="StateInitializationActivity" FullName="System.Workflow.Activities.StateInitializationActivity">
+<Type Name="StateInitializationActivity" FullName="System.Workflow.Activities.StateInitializationActivity">
   <TypeSignature Language="C#" Value="public sealed class StateInitializationActivity : System.Workflow.Activities.SequenceActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StateInitializationActivity extends System.Workflow.Activities.SequenceActivity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.StateInitializationActivity" />
@@ -58,6 +58,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734483(v=vs.90)">Using the StateInitialization Activity</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,6 +87,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734483(v=vs.90)">Using the StateInitialization Activity</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="AuthorizationStoreRoleProvider" FullName="System.Web.Security.AuthorizationStoreRoleProvider">
+<Type Name="AuthorizationStoreRoleProvider" FullName="System.Web.Security.AuthorizationStoreRoleProvider">
   <TypeSignature Language="C#" Value="public class AuthorizationStoreRoleProvider : System.Web.Security.RoleProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AuthorizationStoreRoleProvider extends System.Web.Security.RoleProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.AuthorizationStoreRoleProvider" />
@@ -95,6 +95,7 @@ msxml://<path to xml file>
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -125,6 +126,7 @@ msxml://<path to xml file>
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="AddUsersToRoles">
@@ -204,6 +206,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="ApplicationName">
@@ -273,6 +276,7 @@ msxml://<path to xml file>
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">An attempt was made to set the <see cref="P:System.Web.Security.AuthorizationStoreRoleProvider.ApplicationName" /> to a string that is longer than 256 characters.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="CacheRefreshInterval">
@@ -300,6 +304,7 @@ msxml://<path to xml file>
         <summary>Gets the number of minutes between refreshes of the cache of the policy-store data.</summary>
         <value>The number of minutes between refreshes of cached policy-store data. The default is 60.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="CreateRole">
@@ -361,6 +366,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteRole">
@@ -431,6 +437,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="FindUsersInRole">
@@ -460,6 +467,7 @@ msxml://<path to xml file>
         <returns>A string array containing the names of all the users whose user name matches <paramref name="usernameToMatch" /> and who are members of the specified role.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotImplementedException">An unsupported method was called.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllRoles">
@@ -509,6 +517,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="GetRolesForUser">
@@ -565,6 +574,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="GetUsersInRole">
@@ -627,6 +637,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -673,6 +684,7 @@ msxml://<path to xml file>
   
  The configuration for this <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance contains an unrecognized attribute.</exception>
         <exception cref="T:System.Web.HttpException">The ASP.NET application is not running at <see cref="F:System.Web.AspNetHostingPermissionLevel.Low" /> trust or higher.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="IsUserInRole">
@@ -744,6 +756,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveUsersFromRoles">
@@ -823,6 +836,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="RoleExists">
@@ -884,6 +898,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="ScopeName">
@@ -921,6 +936,7 @@ msxml://<path to xml file>
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="RoleManagerEventHandler" FullName="System.Web.Security.RoleManagerEventHandler">
+<Type Name="RoleManagerEventHandler" FullName="System.Web.Security.RoleManagerEventHandler">
   <TypeSignature Language="C#" Value="public delegate void RoleManagerEventHandler(object sender, RoleManagerEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RoleManagerEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.RoleManagerEventHandler" />
@@ -43,5 +43,6 @@
  ]]></format>
     </remarks>
     <altmember cref="E:System.Web.Security.RoleManagerModule.GetRoles" />
+    <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using Roles</related>
   </Docs>
 </Type>

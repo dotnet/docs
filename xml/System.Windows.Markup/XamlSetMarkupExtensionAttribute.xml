@@ -1,4 +1,4 @@
-﻿<Type Name="XamlSetMarkupExtensionAttribute" FullName="System.Windows.Markup.XamlSetMarkupExtensionAttribute">
+<Type Name="XamlSetMarkupExtensionAttribute" FullName="System.Windows.Markup.XamlSetMarkupExtensionAttribute">
   <TypeSignature Language="C#" Value="public sealed class XamlSetMarkupExtensionAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XamlSetMarkupExtensionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlSetMarkupExtensionAttribute" />
@@ -32,6 +32,7 @@
     <altmember cref="P:System.Xaml.Schema.XamlTypeInvoker.SetMarkupExtensionHandler" />
     <altmember cref="M:System.Xaml.XamlType.LookupSetMarkupExtensionHandler" />
     <altmember cref="T:System.Xaml.XamlObjectWriter" />
+    <related type="Article" href="http://msdn.microsoft.com/library/261b2b11-2dc0-462f-8c66-55b8c9c6e436">Markup Extensions for XAML Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="UriSection" FullName="System.Configuration.UriSection">
+<Type Name="UriSection" FullName="System.Configuration.UriSection">
   <TypeSignature Language="C#" Value="public sealed class UriSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UriSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.UriSection" />
@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -119,6 +120,7 @@
         <altmember cref="T:System.Configuration.IdnElement" />
         <altmember cref="T:System.Configuration.IriParsingElement" />
         <altmember cref="T:System.Uri" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="IriParsing">
@@ -170,6 +172,7 @@
         <altmember cref="T:System.Configuration.IdnElement" />
         <altmember cref="T:System.Configuration.IriParsingElement" />
         <altmember cref="T:System.Uri" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -241,6 +244,7 @@
         <altmember cref="T:System.Configuration.SchemeSettingElement" />
         <altmember cref="T:System.Configuration.SchemeSettingElementCollection" />
         <altmember cref="T:System.GenericUriParserOptions" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
   </Members>

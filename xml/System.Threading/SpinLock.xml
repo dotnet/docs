@@ -1,4 +1,4 @@
-﻿<Type Name="SpinLock" FullName="System.Threading.SpinLock">
+<Type Name="SpinLock" FullName="System.Threading.SpinLock">
   <TypeSignature Language="C#" Value="public struct SpinLock" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SpinLock extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Threading.SpinLock" />
@@ -73,6 +73,9 @@
  ]]></format>
     </remarks>
     <threadsafe>All members of <see cref="T:System.Threading.SpinLock" /> are thread-safe and may be used from multiple threads concurrently.</threadsafe>
+    <related type="Article" href="http://msdn.microsoft.com/library/f9af93bb-7a0d-4ba5-afe8-74f48b6b6958">SpinLock</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/a9ed3e4e-4f29-4207-b730-ed0a51ecbc19">How to: Use SpinWait and SpinLock</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/62ee2e68-0bdd-4869-afc9-f0a57a11ae01">How to: Enable Thread-Tracking Mode in SpinLock</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -158,6 +161,9 @@ End Class
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9af93bb-7a0d-4ba5-afe8-74f48b6b6958">SpinLock</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a9ed3e4e-4f29-4207-b730-ed0a51ecbc19">How to: Use SpinLock for Low-Level Synchronization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/62ee2e68-0bdd-4869-afc9-f0a57a11ae01">How to: Enable Thread-Tracking Mode in SpinLock</related>
       </Docs>
     </Member>
     <Member MemberName="Enter">
@@ -205,6 +211,9 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="lockTaken" /> argument must be initialized to false prior to calling Enter.</exception>
         <exception cref="T:System.Threading.LockRecursionException">Thread ownership tracking is enabled, and the current thread has already acquired this lock.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9af93bb-7a0d-4ba5-afe8-74f48b6b6958">SpinLock</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a9ed3e4e-4f29-4207-b730-ed0a51ecbc19">How to: Use SpinLock for Low-Level Synchronization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/62ee2e68-0bdd-4869-afc9-f0a57a11ae01">How to: Enable Thread-Tracking Mode in SpinLock</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Exit">
@@ -264,6 +273,9 @@ End Class
  ]]></format>
         </remarks>
         <exception cref="T:System.Threading.SynchronizationLockException">Thread ownership tracking is enabled, and the current thread is not the owner of this lock.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9af93bb-7a0d-4ba5-afe8-74f48b6b6958">SpinLock</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a9ed3e4e-4f29-4207-b730-ed0a51ecbc19">How to: Use SpinLock for Low-Level Synchronization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/62ee2e68-0bdd-4869-afc9-f0a57a11ae01">How to: Enable Thread-Tracking Mode in SpinLock</related>
       </Docs>
     </Member>
     <Member MemberName="Exit">
@@ -315,6 +327,9 @@ End Class
  ]]></format>
         </remarks>
         <exception cref="T:System.Threading.SynchronizationLockException">Thread ownership tracking is enabled, and the current thread is not the owner of this lock.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9af93bb-7a0d-4ba5-afe8-74f48b6b6958">SpinLock</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a9ed3e4e-4f29-4207-b730-ed0a51ecbc19">How to: Use SpinLock for Low-Level Synchronization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/62ee2e68-0bdd-4869-afc9-f0a57a11ae01">How to: Enable Thread-Tracking Mode in SpinLock</related>
       </Docs>
     </Member>
     <Member MemberName="IsHeld">
@@ -353,6 +368,9 @@ End Class
         <summary>Gets whether the lock is currently held by any thread.</summary>
         <value>true if the lock is currently held by any thread; otherwise false.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9af93bb-7a0d-4ba5-afe8-74f48b6b6958">SpinLock</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a9ed3e4e-4f29-4207-b730-ed0a51ecbc19">How to: Use SpinLock for Low-Level Synchronization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/62ee2e68-0bdd-4869-afc9-f0a57a11ae01">How to: Enable Thread-Tracking Mode in SpinLock</related>
       </Docs>
     </Member>
     <Member MemberName="IsHeldByCurrentThread">
@@ -399,6 +417,9 @@ End Class
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Thread ownership tracking is disabled.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9af93bb-7a0d-4ba5-afe8-74f48b6b6958">SpinLock</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a9ed3e4e-4f29-4207-b730-ed0a51ecbc19">How to: Use SpinLock for Low-Level Synchronization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/62ee2e68-0bdd-4869-afc9-f0a57a11ae01">How to: Enable Thread-Tracking Mode in SpinLock</related>
       </Docs>
     </Member>
     <Member MemberName="IsThreadOwnerTrackingEnabled">
@@ -437,6 +458,9 @@ End Class
         <summary>Gets whether thread ownership tracking is enabled for this instance.</summary>
         <value>true if thread ownership tracking is enabled for this instance; otherwise false.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9af93bb-7a0d-4ba5-afe8-74f48b6b6958">SpinLock</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a9ed3e4e-4f29-4207-b730-ed0a51ecbc19">How to: Use SpinLock for Low-Level Synchronization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/62ee2e68-0bdd-4869-afc9-f0a57a11ae01">How to: Enable Thread-Tracking Mode in SpinLock</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="TryEnter">
@@ -448,6 +472,9 @@ End Class
       </AssemblyInfo>
       <Docs>
         <summary>Attempts to acquire the lock in a reliable manner, such that even if an exception occurs within the method call, <paramref name="lockTaken" /> can be examined reliably to determine whether the lock was acquired.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9af93bb-7a0d-4ba5-afe8-74f48b6b6958">SpinLock</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a9ed3e4e-4f29-4207-b730-ed0a51ecbc19">How to: Use SpinLock for Low-Level Synchronization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/62ee2e68-0bdd-4869-afc9-f0a57a11ae01">How to: Enable Thread-Tracking Mode in SpinLock</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="TryEnter">
@@ -493,6 +520,9 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="lockTaken" /> argument must be initialized to false prior to calling TryEnter.</exception>
         <exception cref="T:System.Threading.LockRecursionException">Thread ownership tracking is enabled, and the current thread has already acquired this lock.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9af93bb-7a0d-4ba5-afe8-74f48b6b6958">SpinLock</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a9ed3e4e-4f29-4207-b730-ed0a51ecbc19">How to: Use SpinLock for Low-Level Synchronization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/62ee2e68-0bdd-4869-afc9-f0a57a11ae01">How to: Enable Thread-Tracking Mode in SpinLock</related>
       </Docs>
     </Member>
     <Member MemberName="TryEnter">
@@ -542,6 +572,9 @@ End Class
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="lockTaken" /> argument must be initialized to false prior to calling TryEnter.</exception>
         <exception cref="T:System.Threading.LockRecursionException">Thread ownership tracking is enabled, and the current thread has already acquired this lock.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9af93bb-7a0d-4ba5-afe8-74f48b6b6958">SpinLock</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a9ed3e4e-4f29-4207-b730-ed0a51ecbc19">How to: Use SpinLock for Low-Level Synchronization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/62ee2e68-0bdd-4869-afc9-f0a57a11ae01">How to: Enable Thread-Tracking Mode in SpinLock</related>
       </Docs>
     </Member>
     <Member MemberName="TryEnter">
@@ -591,6 +624,9 @@ End Class
           <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out -or- timeout is greater than <see cref="F:System.Int32.MaxValue" /> milliseconds.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="lockTaken" /> argument must be initialized to false prior to calling TryEnter.</exception>
         <exception cref="T:System.Threading.LockRecursionException">Thread ownership tracking is enabled, and the current thread has already acquired this lock.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9af93bb-7a0d-4ba5-afe8-74f48b6b6958">SpinLock</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a9ed3e4e-4f29-4207-b730-ed0a51ecbc19">How to: Use SpinLock for Low-Level Synchronization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/62ee2e68-0bdd-4869-afc9-f0a57a11ae01">How to: Enable Thread-Tracking Mode in SpinLock</related>
       </Docs>
     </Member>
   </Members>

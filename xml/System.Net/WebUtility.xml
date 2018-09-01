@@ -1,4 +1,4 @@
-﻿<Type Name="WebUtility" FullName="System.Net.WebUtility">
+<Type Name="WebUtility" FullName="System.Net.WebUtility">
   <TypeSignature Language="C#" Value="public static class WebUtility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WebUtility extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebUtility" />
@@ -40,6 +40,7 @@
     <altmember cref="T:System.Web.HttpUtility" />
     <altmember cref="T:System.Web.HttpServerUtility" />
     <altmember cref="P:System.Web.HttpContext.Server" />
+    <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="HtmlDecode">
@@ -211,6 +212,7 @@
         <altmember cref="M:System.Net.WebUtility.HtmlDecode(System.String)" />
         <altmember cref="M:System.Web.HttpUtility.HtmlDecode(System.String)" />
         <altmember cref="T:System.Uri" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <Member MemberName="HtmlEncode">
@@ -258,6 +260,7 @@
         <altmember cref="M:System.Net.WebUtility.HtmlDecode(System.String,System.IO.TextWriter)" />
         <altmember cref="M:System.Web.HttpUtility.HtmlDecode(System.String,System.IO.TextWriter)" />
         <altmember cref="T:System.Uri" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <Member MemberName="UrlDecode">

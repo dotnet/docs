@@ -1,4 +1,4 @@
-﻿<Type Name="ServiceBehaviorElementCollection" FullName="System.ServiceModel.Configuration.ServiceBehaviorElementCollection">
+<Type Name="ServiceBehaviorElementCollection" FullName="System.ServiceModel.Configuration.ServiceBehaviorElementCollection">
   <TypeSignature Language="C#" Value="public sealed class ServiceBehaviorElementCollection : System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection&lt;System.ServiceModel.Configuration.ServiceBehaviorElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceBehaviorElementCollection extends System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection`1&lt;class System.ServiceModel.Configuration.ServiceBehaviorElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceBehaviorElementCollection" />
@@ -25,6 +25,7 @@
   <Docs>
     <summary>Contains a collection of <see cref="T:System.ServiceModel.Configuration.ServiceBehaviorElement" /> object. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/5aed9062-cc36-4b72-b9dd-a3018b8ffafc">&lt;serviceBehaviors&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

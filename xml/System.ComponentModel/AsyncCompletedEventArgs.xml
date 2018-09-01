@@ -1,4 +1,4 @@
-﻿<Type Name="AsyncCompletedEventArgs" FullName="System.ComponentModel.AsyncCompletedEventArgs">
+<Type Name="AsyncCompletedEventArgs" FullName="System.ComponentModel.AsyncCompletedEventArgs">
   <TypeSignature Language="C#" Value="public class AsyncCompletedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AsyncCompletedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.AsyncCompletedEventArgs" />
@@ -59,6 +59,7 @@
     <altmember cref="T:System.ComponentModel.AsyncCompletedEventHandler" />
     <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
     <altmember cref="T:System.ComponentModel.AsyncOperation" />
+    <related type="Article" href="http://msdn.microsoft.com/library/43402d19-8d30-426d-8785-1a4478233bfa">Implementing the Event-based Asynchronous Pattern</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -201,6 +202,7 @@
         <altmember cref="T:System.ComponentModel.AsyncCompletedEventHandler" />
         <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
         <altmember cref="T:System.ComponentModel.AsyncOperation" />
+        <related type="Article" href="http://msdn.microsoft.com/library/43402d19-8d30-426d-8785-1a4478233bfa">Implementing the Event-based Asynchronous Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -264,6 +266,7 @@
         <altmember cref="T:System.ComponentModel.AsyncCompletedEventHandler" />
         <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
         <altmember cref="T:System.ComponentModel.AsyncOperation" />
+        <related type="Article" href="http://msdn.microsoft.com/library/43402d19-8d30-426d-8785-1a4478233bfa">Implementing the Event-based Asynchronous Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="RaiseExceptionIfNecessary">
@@ -315,6 +318,7 @@
         </block>
         <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
         <altmember cref="T:System.ComponentModel.AsyncOperation" />
+        <related type="Article" href="http://msdn.microsoft.com/library/43402d19-8d30-426d-8785-1a4478233bfa">Implementing the Event-based Asynchronous Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="UserState">
@@ -375,6 +379,7 @@
         <altmember cref="T:System.ComponentModel.AsyncCompletedEventHandler" />
         <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
         <altmember cref="T:System.ComponentModel.AsyncOperation" />
+        <related type="Article" href="http://msdn.microsoft.com/library/43402d19-8d30-426d-8785-1a4478233bfa">Implementing the Event-based Asynchronous Pattern</related>
       </Docs>
     </Member>
   </Members>

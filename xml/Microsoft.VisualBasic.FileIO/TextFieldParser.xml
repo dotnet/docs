@@ -1,4 +1,4 @@
-﻿<Type Name="TextFieldParser" FullName="Microsoft.VisualBasic.FileIO.TextFieldParser">
+<Type Name="TextFieldParser" FullName="Microsoft.VisualBasic.FileIO.TextFieldParser">
   <TypeSignature Language="C#" Value="public class TextFieldParser : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi TextFieldParser extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.TextFieldParser" />
@@ -46,6 +46,9 @@
  ]]></format>
     </remarks>
     <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+    <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md">Parsing Text Files with the TextFieldParser Object</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/2ewecs64(v=vs.85)">Troubleshooting Exceptions: Microsoft.VisualBasic.FileIO.TextFieldParser.MalformedLineException</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -56,6 +59,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -90,6 +94,10 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="stream" /> cannot be read from.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From Comma-Delimited Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md">How to: Read From Fixed-width Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From Text Files with Multiple Formats in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -123,6 +131,10 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="Nothing" />.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From Comma-Delimited Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md">How to: Read From Fixed-width Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From Text Files with Multiple Formats in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -156,6 +168,10 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path" /> is an empty string.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From Comma-Delimited Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md">How to: Read From Fixed-width Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From Text Files with Multiple Formats in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -196,6 +212,10 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="stream" /> cannot be read from.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From Comma-Delimited Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md">How to: Read From Fixed-width Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From Text Files with Multiple Formats in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -235,6 +255,10 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path" /> is an empty string or <paramref name="defaultEncoding" /> is <see langword="Nothing" />.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From Comma-Delimited Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md">How to: Read From Fixed-width Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From Text Files with Multiple Formats in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -280,6 +304,10 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="stream" /> cannot be read from.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From Comma-Delimited Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md">How to: Read From Fixed-width Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From Text Files with Multiple Formats in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -324,6 +352,10 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path" /> is an empty string or <paramref name="defaultEncoding" /> is <see langword="Nothing" />.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From Comma-Delimited Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md">How to: Read From Fixed-width Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From Text Files with Multiple Formats in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -372,6 +404,10 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="stream" /> cannot be read from.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From Comma-Delimited Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md">How to: Read From Fixed-width Text Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From Text Files with Multiple Formats in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -409,6 +445,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md">Parsing Text Files with the TextFieldParser Object</related>
       </Docs>
     </Member>
     <Member MemberName="CommentTokens">
@@ -460,6 +498,10 @@
         </remarks>
         <exception cref="T:System.ArgumentException">A comment token includes white space.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From a Comma-Delimited Text File in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md">How to: Read From a Fixed-width Text File in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From a Text File with Multiple Formats in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="Delimiters">
@@ -512,6 +554,8 @@
         <exception cref="T:System.ArgumentException">A delimiter value is set to a newline character, an empty string, or <see langword="Nothing" />.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters(System.String[])" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md">Parsing Text Files with the TextFieldParser Object</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -522,6 +566,7 @@
       <Docs>
         <summary>Releases resources used by the <see cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" /> object.</summary>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Dispose">
@@ -548,6 +593,7 @@
         <summary>Releases resources used by the <see cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" /> object.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -574,6 +620,7 @@
         <summary>Releases resources used by the <see cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" /> object.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="EndOfData">
@@ -619,6 +666,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ErrorLine">
@@ -670,6 +718,12 @@
  ]]></format>
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md">Parsing Text Files with the TextFieldParser Object</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From a Text File with Multiple Formats in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md">How to: Read From a Fixed-width Text File in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From a Comma-Delimited Text File in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/try-catch-finally-statement.md">Try...Catch...Finally Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ErrorLineNumber">
@@ -721,6 +775,12 @@
  ]]></format>
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md">Parsing Text Files with the TextFieldParser Object</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From a Text File with Multiple Formats in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md">How to: Read From a Fixed-width Text File in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From a Comma-Delimited Text File in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/try-catch-finally-statement.md">Try...Catch...Finally Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="FieldWidths">
@@ -773,6 +833,12 @@
         <exception cref="T:System.ArgumentException">A width value in any location other than the last entry of the array is less than or equal to zero.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FieldType" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md">How to: Read From a Fixed-width Text File in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From a Comma-Delimited Text File in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From a Text File with Multiple Formats in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md">Parsing Text Files with the TextFieldParser Object</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/2ewecs64(v=vs.85)">Troubleshooting Exceptions: Microsoft.VisualBasic.FileIO.TextFieldParser.MalformedLineException</related>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -796,6 +862,7 @@
         <summary>Allows the <see cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" /> object to attempt to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="HasFieldsEnclosedInQuotes">
@@ -852,6 +919,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="LineNumber">
@@ -899,6 +967,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="PeekChars">
@@ -955,6 +1024,9 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="numberOfChars" /> is less than 0.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md">Parsing Text Files with the TextFieldParser Object</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="ReadFields">
@@ -1011,6 +1083,11 @@
         <altmember cref="P:Microsoft.VisualBasic.FileIO.TextFieldParser.FieldWidths" />
         <altmember cref="P:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters" />
         <altmember cref="M:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadLine" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From a Comma-Delimited Text File in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md">How to: Read From a Fixed-width Text File in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From a Text File with Multiple Formats in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md">Parsing Text Files with the TextFieldParser Object</related>
       </Docs>
     </Member>
     <Member MemberName="ReadLine">
@@ -1065,6 +1142,8 @@
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadFields" />
         <altmember cref="M:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadToEnd" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md">Parsing Text Files with the TextFieldParser Object</related>
       </Docs>
     </Member>
     <Member MemberName="ReadToEnd">
@@ -1119,6 +1198,8 @@
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadFields" />
         <altmember cref="M:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadLine" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md">Parsing Text Files with the TextFieldParser Object</related>
       </Docs>
     </Member>
     <Member MemberName="SetDelimiters">
@@ -1182,6 +1263,9 @@
         <exception cref="T:System.ArgumentException">A delimiter is zero-length.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.FileIO.TextFieldParser.SetFieldWidths(System.Int32[])" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md">Parsing Text Files with the TextFieldParser Object</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From a Comma-Delimited Text File in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="SetFieldWidths">
@@ -1250,6 +1334,8 @@
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters(System.String[])" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md">Parsing Text Files with the TextFieldParser Object</related>
       </Docs>
     </Member>
     <Member MemberName="TextFieldType">
@@ -1305,6 +1391,12 @@
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FieldType" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md">Parsing Text Files with the TextFieldParser Object</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From a Comma-Delimited Text File in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md">How to: Read From a Fixed-width Text File in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From a Text File with Multiple Formats in Visual Basic</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/2ewecs64(v=vs.85)">Troubleshooting Exceptions: Microsoft.VisualBasic.FileIO.TextFieldParser.MalformedLineException</related>
       </Docs>
     </Member>
     <Member MemberName="TrimWhiteSpace">
@@ -1351,6 +1443,11 @@
  ]]></format>
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md">Parsing Text Files with the TextFieldParser Object</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md">How to: Read From a Comma-Delimited Text File in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md">How to: Read From a Fixed-width Text File in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md">How to: Read From a Text File with Multiple Formats in Visual Basic</related>
       </Docs>
     </Member>
   </Members>

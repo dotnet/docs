@@ -1,4 +1,4 @@
-﻿<Type Name="NameObjectCollectionBase" FullName="System.Collections.Specialized.NameObjectCollectionBase">
+<Type Name="NameObjectCollectionBase" FullName="System.Collections.Specialized.NameObjectCollectionBase">
   <TypeSignature Language="C#" Value="public abstract class NameObjectCollectionBase : System.Collections.ICollection, System.Runtime.Serialization.IDeserializationCallback, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit NameObjectCollectionBase extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.NameObjectCollectionBase" />
@@ -83,6 +83,7 @@
     <altmember cref="T:System.Collections.Hashtable" />
     <altmember cref="T:System.Collections.Specialized.NameValueCollection" />
     <altmember cref="T:System.String" />
+    <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -140,6 +141,7 @@
         </remarks>
         <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
         <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -187,6 +189,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Collections.IEqualityComparer" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -240,6 +243,7 @@
           <paramref name="capacity" /> is less than zero.</exception>
         <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
         <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -299,6 +303,7 @@
         <altmember cref="T:System.Collections.IComparer" />
         <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
         <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -350,6 +355,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
         <altmember cref="T:System.Collections.IEqualityComparer" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -400,6 +406,7 @@
         <altmember cref="T:System.Runtime.Serialization.ISerializable" />
         <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
         <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -463,6 +470,7 @@
         <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
         <altmember cref="T:System.Collections.IComparer" />
         <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="BaseAdd">
@@ -1027,6 +1035,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="BaseRemoveAt">
@@ -1153,6 +1162,7 @@
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the valid range of indexes for the collection.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="BaseSet">
@@ -1212,6 +1222,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
         <altmember cref="M:System.Collections.Specialized.NameObjectCollectionBase.GetEnumerator" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="Count">

@@ -1,4 +1,4 @@
-﻿<Type Name="CompositeDuplexElement" FullName="System.ServiceModel.Configuration.CompositeDuplexElement">
+<Type Name="CompositeDuplexElement" FullName="System.ServiceModel.Configuration.CompositeDuplexElement">
   <TypeSignature Language="C#" Value="public sealed class CompositeDuplexElement : System.ServiceModel.Configuration.BindingElementExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CompositeDuplexElement extends System.ServiceModel.Configuration.BindingElementExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.CompositeDuplexElement" />
@@ -27,6 +27,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.ServiceModel.Channels.CompositeDuplexBindingElement" />
+    <related type="Article" href="http://msdn.microsoft.com/library/725004d1-ce88-4405-a220-78e89844f81f">CompositeDuplex element in Configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

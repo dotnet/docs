@@ -1,4 +1,4 @@
-﻿<Type Name="ActiveDirectoryMembershipProvider" FullName="System.Web.Security.ActiveDirectoryMembershipProvider">
+<Type Name="ActiveDirectoryMembershipProvider" FullName="System.Web.Security.ActiveDirectoryMembershipProvider">
   <TypeSignature Language="C#" Value="public class ActiveDirectoryMembershipProvider : System.Web.Security.MembershipProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActiveDirectoryMembershipProvider extends System.Web.Security.MembershipProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.ActiveDirectoryMembershipProvider" />
@@ -180,6 +180,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?linkid=149233">How to: Use Membership in ASP.NET 2.0</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -205,6 +207,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ApplicationName">
@@ -331,6 +334,7 @@
         <exception cref="T:System.Configuration.Provider.ProviderException">A secure connection could not be made to an Active Directory Application Mode server.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.Security.ActiveDirectoryMembershipProvider.ChangePassword(System.String,System.String,System.String)" /> method is called before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance is initialized.</exception>
         <exception cref="T:System.Exception">An unhandled exception occurred.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ChangePasswordQuestionAndAnswer">
@@ -442,6 +446,7 @@
  <paramref name="newPasswordAnswer" /> is <see langword="null" /> and <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.RequiresQuestionAndAnswer" /> property is <see langword="true" />.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">The [machineKey Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) configuration element indicates an auto-generated machine encryption key. You must explicitly set the <see langword="decriptionKey" /> attribute of the [machineKey Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) element to store password answers with the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.Security.ActiveDirectoryMembershipProvider.ChangePasswordQuestionAndAnswer(System.String,System.String,System.String,System.String)" /> method is called before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance is initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="CreateUser">
@@ -535,6 +540,7 @@
  The <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> was unable to establish a secure connection to the directory when attempting to set the password for the new user.</exception>
         <exception cref="T:System.Runtime.InteropServices.COMException">An error occurred while attempting to create the user.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.Security.ActiveDirectoryMembershipProvider.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object,System.Web.Security.MembershipCreateStatus@)" /> method is called before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance is initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentConnectionProtection">
@@ -593,6 +599,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt to access the <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.CurrentConnectionProtection" /> property was made before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance was initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteUser">
@@ -650,6 +657,7 @@
           <paramref name="username" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Runtime.InteropServices.COMException">An error occurred while attempting to delete the user.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.Security.ActiveDirectoryMembershipProvider.DeleteUser(System.String,System.Boolean)" /> method is called before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance is initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="EnablePasswordReset">
@@ -731,6 +739,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt to access the <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.EnablePasswordReset" /> property was made before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance was initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="EnablePasswordRetrieval">
@@ -829,6 +838,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt to access the <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.EnableSearchMethods" /> property was made before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance was initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="FindUsersByEmail">
@@ -902,6 +912,7 @@
   
  <paramref name="pageSize" /> multiplied by <paramref name="pageIndex" />, plus <paramref name="pageSize" />, minus 1 is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.EnableSearchMethods" /> property is <see langword="false" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="FindUsersByName">
@@ -973,6 +984,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="usernameToMatch" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.EnableSearchMethods" /> property is <see langword="false" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GeneratePassword">
@@ -1012,6 +1024,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllUsers">
@@ -1071,6 +1084,7 @@
   
  <paramref name="pageSize" /> multiplied by <paramref name="pageIndex" />, plus <paramref name="pageSize" />, minus 1 is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.EnableSearchMethods" /> property is <see langword="false" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GetNumberOfUsersOnline">
@@ -1102,6 +1116,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Any call to the <see cref="M:System.Web.Security.ActiveDirectoryMembershipProvider.GetNumberOfUsersOnline" /> method.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GetPassword">
@@ -1138,6 +1153,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> does not support password retrieval.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetUser">
@@ -1243,6 +1259,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.Security.ActiveDirectoryMembershipProvider.GetUser(System.String,System.Boolean)" /> method is called before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance is initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GetUserNameByEmail">
@@ -1297,6 +1314,7 @@
  after trimming, <paramref name="email" /> is empty.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">More than one user exists in the data store with the same email address and the <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.RequiresUniqueEmail" /> property value is <see langword="true" />.</exception>
         <exception cref="T:System.InvalidOperationException">The provider is not initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -1506,6 +1524,7 @@
  An attribute specified in the application configuration file is not valid.</exception>
         <exception cref="T:System.Web.HttpException">The application is running in a hosted environment and the <see cref="T:System.Web.AspNetHostingPermissionLevel" /> is set to <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</exception>
         <exception cref="T:System.Runtime.InteropServices.COMException">An error occurred while querying the directory.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="MaxInvalidPasswordAttempts">
@@ -1567,6 +1586,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt to access the <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.MaxInvalidPasswordAttempts" /> property was made before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance was initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="MinRequiredNonAlphanumericCharacters">
@@ -1625,6 +1645,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.MinRequiredNonAlphanumericCharacters" /> property is accessed before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance is initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="MinRequiredPasswordLength">
@@ -1682,6 +1703,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.MinRequiredPasswordLength" /> property is accessed before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance is initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordAnswerAttemptLockoutDuration">
@@ -1743,6 +1765,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt to access the <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.PasswordAnswerAttemptLockoutDuration" /> property was made before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance was initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordAttemptWindow">
@@ -1803,6 +1826,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt to access the <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.PasswordAttemptWindow" /> property was made before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance was initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordFormat">
@@ -1832,6 +1856,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordStrengthRegularExpression">
@@ -1899,6 +1924,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.PasswordStrengthRegularExpression" /> property is accessed before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance is initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="RequiresQuestionAndAnswer">
@@ -1974,6 +2000,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt to access the <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.RequiresQuestionAndAnswer" /> property was made before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance was initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="RequiresUniqueEmail">
@@ -2031,6 +2058,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt to access the <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.RequiresUniqueEmail" /> property was made before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance was initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ResetPassword">
@@ -2144,6 +2172,7 @@
   
  A secure connection cannot be made to an Active Directory Application Mode server to set the new password.</exception>
         <exception cref="T:System.Exception">An unhandled exception occurred.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="UnlockUser">
@@ -2197,6 +2226,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.Security.ActiveDirectoryMembershipProvider.UnlockUser(System.String)" /> method is called before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance is initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateUser">
@@ -2272,6 +2302,7 @@
  \- or -  
   
  The <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.RequiresUniqueEmail" /> property is <see langword="true" />, and the new value of the <see cref="P:System.Web.Security.MembershipUser.Email" /> property duplicates an existing email address.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ValidateUser">
@@ -2346,6 +2377,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.Security.ActiveDirectoryMembershipProvider.ValidateUser(System.String,System.String)" /> method is called before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance is initialized.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="Uri" FullName="System.Uri">
+<Type Name="Uri" FullName="System.Uri">
   <TypeSignature Language="C#" Value="public class Uri : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Uri extends System.Object implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Uri" />
@@ -185,6 +185,9 @@ http://myUrl/
     <altmember cref="M:System.Uri.MakeRelative(System.Uri)" />
     <altmember cref="M:System.Uri.IsWellFormedOriginalString" />
     <altmember cref="T:System.UriBuilder" />
+    <related type="Article" href="http://msdn.microsoft.com/library/35883fe9-2d09-4d8b-80ca-cf23a941e459">Changes to the System.Uri namespace in Version 2.0</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/b5e994c3-3535-4aff-8e1b-b69be22e9a22">International Resource Identifier Support in System.UriSystem.Uri</related>
+    <related type="Article" href="~/docs/framework/network-programming/index.md">Network Programming in the .NET Framework</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -401,6 +404,7 @@ http://myUrl/
  -or-  
   
  The MS-DOS path specified in the URI must start with c:\\\\.</exception>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -3021,6 +3025,7 @@ If you used an escaped string to construct this instance (for example, "http://[
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://www.ietf.org/">http://www.ietf.org</related>
       </Docs>
     </Member>
     <Member MemberName="IsWellFormedUriString">
@@ -3085,6 +3090,7 @@ If you used an escaped string to construct this instance (for example, "http://[
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://www.ietf.org/">http://www.ietf.org</related>
       </Docs>
     </Member>
     <Member MemberName="LocalPath">

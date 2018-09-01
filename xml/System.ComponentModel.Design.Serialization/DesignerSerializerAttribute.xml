@@ -1,4 +1,4 @@
-﻿<Type Name="DesignerSerializerAttribute" FullName="System.ComponentModel.Design.Serialization.DesignerSerializerAttribute">
+<Type Name="DesignerSerializerAttribute" FullName="System.ComponentModel.Design.Serialization.DesignerSerializerAttribute">
   <TypeSignature Language="C#" Value="public sealed class DesignerSerializerAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerSerializerAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.DesignerSerializerAttribute" />
@@ -49,6 +49,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/c342635a-aa5f-4281-915b-b013738af15a">Designer Serialization Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -99,6 +100,7 @@
         <param name="baseSerializerTypeName">The fully qualified name of the base data type of the serializer. Multiple serializers can be supplied for a class as long as the serializers have different base types.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.DesignerSerializerAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c342635a-aa5f-4281-915b-b013738af15a">Designer Serialization Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -134,6 +136,7 @@
         <param name="baseSerializerType">The base data type of the serializer. Multiple serializers can be supplied for a class as long as the serializers have different base types.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.DesignerSerializerAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c342635a-aa5f-4281-915b-b013738af15a">Designer Serialization Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -169,6 +172,7 @@
         <param name="baseSerializerType">The base data type of the serializer. Multiple serializers can be supplied for a class as long as the serializers have different base types.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.DesignerSerializerAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c342635a-aa5f-4281-915b-b013738af15a">Designer Serialization Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SerializerBaseTypeName">
@@ -207,6 +211,7 @@
         <summary>Gets the fully qualified type name of the serializer base type.</summary>
         <value>The fully qualified type name of the serializer base type.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c342635a-aa5f-4281-915b-b013738af15a">Designer Serialization Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SerializerTypeName">
@@ -245,6 +250,7 @@
         <summary>Gets the fully qualified type name of the serializer.</summary>
         <value>The fully qualified type name of the serializer.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c342635a-aa5f-4281-915b-b013738af15a">Designer Serialization Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TypeId">
@@ -285,6 +291,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c342635a-aa5f-4281-915b-b013738af15a">Designer Serialization Overview</related>
       </Docs>
     </Member>
   </Members>

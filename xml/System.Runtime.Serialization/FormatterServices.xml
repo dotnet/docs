@@ -1,4 +1,4 @@
-﻿<Type Name="FormatterServices" FullName="System.Runtime.Serialization.FormatterServices">
+<Type Name="FormatterServices" FullName="System.Runtime.Serialization.FormatterServices">
   <TypeSignature Language="C#" Value="public static class FormatterServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed FormatterServices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.FormatterServices" />
@@ -34,6 +34,7 @@
     <summary>Provides static methods to aid with the implementation of a <see cref="T:System.Runtime.Serialization.Formatter" /> for serialization. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Runtime.Serialization.Formatter" />
+    <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
   </Docs>
   <Members>
     <Member MemberName="CheckTypeSecurity">
@@ -77,7 +78,7 @@
 ## Remarks  
  Use this method to determine whether a specified type can be deserialized when the <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel> property is set to `Low`.  
   
- .NET Framework remoting provides two levels of automatic deserialization, <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> and <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full>. <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> helps protect against deserialization attacks by deserializing only the types associated with the most basic remoting functionality. The <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full> deserialization level supports automatic deserialization of all types that remoting supports in all situations. For more information about the.NET Framework remoting types that <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> and <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full> support, see [&#91;\<topic://cpconAutomaticDeserializationInNETRemoting>&#93;](http://msdn.microsoft.com/library/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).  
+ .NET Framework remoting provides two levels of automatic deserialization, <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> and <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full>. <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> helps protect against deserialization attacks by deserializing only the types associated with the most basic remoting functionality. The <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full> deserialization level supports automatic deserialization of all types that remoting supports in all situations. For more information about the.NET Framework remoting types that <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> and <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full> support, see [Automatic Deserialization in .NET Framework Remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5dxse167(v=vs.100)).  
   
    
   
@@ -90,6 +91,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The <paramref name="t" /> parameter is an advanced type and cannot be deserialized when the <see cref="T:System.Runtime.Serialization.Formatters.TypeFilterLevel" /> property is set to <see langword="Low" />.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5dxse167(v=vs.100)">Automatic Deserialization in .NET Framework Remoting</related>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -279,6 +281,7 @@ Because the `GetSerializableMembers` method calls the <xref:System.Type.GetField
         <permission cref="T:System.Security.Permissions.SecurityPermission">For providing serialization services. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />, <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
         <altmember cref="T:System.Runtime.Serialization.ISerializable" />
         <altmember cref="T:System.Reflection.MemberInfo" />
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName="GetSerializableMembers">
@@ -338,6 +341,7 @@ Because the `GetSerializableMembers` method calls the <xref:System.Type.GetField
         <permission cref="T:System.Security.Permissions.SecurityPermission">For providing serialization services. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />, <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
         <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
         <altmember cref="T:System.Reflection.MemberInfo" />
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName="GetSurrogateForCyclicalReference">

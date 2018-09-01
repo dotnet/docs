@@ -1,4 +1,4 @@
-﻿<Type Name="Marshal" FullName="System.Runtime.InteropServices.Marshal">
+<Type Name="Marshal" FullName="System.Runtime.InteropServices.Marshal">
   <TypeSignature Language="C#" Value="public static class Marshal" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Marshal extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.Marshal" />
@@ -120,6 +120,7 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject(System.Object,System.Type)" />
         <altmember cref="M:System.Runtime.InteropServices.Marshal.GetIUnknownForObject(System.Object)" />
         <altmember cref="M:System.Runtime.InteropServices.Marshal.GetIDispatchForObject(System.Object)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=148625">IUnknown::AddRef</related>
       </Docs>
     </Member>
     <Member MemberName="AllocCoTaskMem">
@@ -2040,6 +2041,7 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeCoTaskMem(System.IntPtr)" />
         <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeHGlobal(System.IntPtr)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/~/docs/framework/interop/blittable-and-non-blittable-types.md">Blittable and Non-Blittable types</related>
       </Docs>
     </Member>
     <Member MemberName="DestroyStructure&lt;T&gt;">
@@ -3269,6 +3271,7 @@
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="Overload:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR" />
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms221233(v=vs.85).aspx">IErrorInfo Interface</related>
       </Docs>
     </Member>
     <Member MemberName="GetExceptionForHR">
@@ -3330,6 +3333,7 @@
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="Overload:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR" />
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms221233(v=vs.85).aspx">IErrorInfo Interface</related>
       </Docs>
     </Member>
     <Member MemberName="GetExceptionPointers">
@@ -8071,6 +8075,7 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="M:System.Runtime.InteropServices.Marshal.ReAllocCoTaskMem(System.IntPtr,System.Int32)" />
         <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeHGlobal(System.IntPtr)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=148781">GlobalAlloc Function</related>
       </Docs>
     </Member>
     <Member MemberName="Release">

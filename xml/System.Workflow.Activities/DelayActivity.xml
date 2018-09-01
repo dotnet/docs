@@ -1,4 +1,4 @@
-﻿<Type Name="DelayActivity" FullName="System.Workflow.Activities.DelayActivity">
+<Type Name="DelayActivity" FullName="System.Workflow.Activities.DelayActivity">
   <TypeSignature Language="C#" Value="public sealed class DelayActivity : System.Workflow.ComponentModel.Activity, System.Workflow.Activities.IEventActivity, System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DelayActivity extends System.Workflow.ComponentModel.Activity implements class System.Workflow.Activities.IEventActivity, class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.DelayActivity" />
@@ -69,6 +69,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741719(v=vs.90)">Delay Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -78,6 +79,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.DelayActivity" /> class.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741719(v=vs.90)">Delay Sample</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -106,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741719(v=vs.90)">Delay Sample</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -128,6 +131,7 @@
         <param name="name">The user-defined name of the activity.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.DelayActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741719(v=vs.90)">Delay Sample</related>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -265,6 +269,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741719(v=vs.90)">Delay Sample</related>
       </Docs>
     </Member>
     <Member MemberName="InitializeTimeoutDurationEvent">
@@ -293,6 +298,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741719(v=vs.90)">Delay Sample</related>
       </Docs>
     </Member>
     <Member MemberName="OnClosed">
@@ -486,6 +492,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741719(v=vs.90)">Delay Sample</related>
       </Docs>
     </Member>
     <Member MemberName="TimeoutDurationProperty">
@@ -522,6 +529,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741719(v=vs.90)">Delay Sample</related>
       </Docs>
     </Member>
   </Members>

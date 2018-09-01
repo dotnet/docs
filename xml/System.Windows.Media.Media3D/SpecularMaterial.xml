@@ -1,4 +1,4 @@
-﻿<Type Name="SpecularMaterial" FullName="System.Windows.Media.Media3D.SpecularMaterial">
+<Type Name="SpecularMaterial" FullName="System.Windows.Media.Media3D.SpecularMaterial">
   <TypeSignature Language="C#" Value="public sealed class SpecularMaterial : System.Windows.Media.Media3D.Material" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SpecularMaterial extends System.Windows.Media.Media3D.Material" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.SpecularMaterial" />
@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159959">3-D Hit Testing Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -69,6 +70,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159959">3-D Hit Testing Sample</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -101,6 +103,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159959">3-D Hit Testing Sample</related>
       </Docs>
     </Member>
     <Member MemberName="Brush">
@@ -145,6 +148,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159959">3-D Hit Testing Sample</related>
       </Docs>
     </Member>
     <Member MemberName="BrushProperty">
@@ -272,6 +276,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159959">3-D Hit Testing Sample</related>
       </Docs>
     </Member>
     <Member MemberName="ColorProperty">
@@ -367,6 +372,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159959">3-D Hit Testing Sample</related>
       </Docs>
     </Member>
     <Member MemberName="SpecularPowerProperty">

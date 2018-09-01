@@ -1,4 +1,4 @@
-﻿<Type Name="Attribute" FullName="System.Attribute">
+<Type Name="Attribute" FullName="System.Attribute">
   <TypeSignature Language="C#" Value="public abstract class Attribute : System.Runtime.InteropServices._Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Attribute extends System.Object implements class System.Runtime.InteropServices._Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Attribute" />
@@ -76,6 +76,8 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <related type="Article" href="http://msdn.microsoft.com/library/dd7604eb-9fa3-4b60-b2dd-b47739fa3148">Applying Attributes</related>
+    <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="BehaviorsSection" FullName="System.ServiceModel.Configuration.BehaviorsSection">
+<Type Name="BehaviorsSection" FullName="System.ServiceModel.Configuration.BehaviorsSection">
   <TypeSignature Language="C#" Value="public class BehaviorsSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BehaviorsSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BehaviorsSection" />
@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/0e5da4e6-1aa5-466c-924e-f10efee57f0b">Behaviors in Configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

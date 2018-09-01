@@ -1,4 +1,4 @@
-﻿<Type Name="IFormatProvider" FullName="System.IFormatProvider">
+<Type Name="IFormatProvider" FullName="System.IFormatProvider">
   <TypeSignature Language="C#" Value="public interface IFormatProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFormatProvider" />
   <TypeSignature Language="DocId" Value="T:System.IFormatProvider" />
@@ -75,6 +75,8 @@
     </remarks>
     <altmember cref="T:System.ICustomFormatter" />
     <altmember cref="T:System.IFormattable" />
+    <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+    <related type="Article" href="~/docs/standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md">How to: Define and Use Custom Numeric Format Providers</related>
   </Docs>
   <Members>
     <Member MemberName="GetFormat">

@@ -33,7 +33,7 @@
  The <xref:System.CodeDom.Compiler.CompilerErrorCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.Compiler.CompilerError> objects.  
   
 > [!NOTE]
->  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about inheritance demands, see  [Inheritance Demands](http://msdn.microsoft.com/library/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about inheritance demands, see  [Inheritance Demands](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/x4yx82e6(v=vs.100)).  
   
    
   

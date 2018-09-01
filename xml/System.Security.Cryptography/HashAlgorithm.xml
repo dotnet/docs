@@ -1,4 +1,4 @@
-﻿<Type Name="HashAlgorithm" FullName="System.Security.Cryptography.HashAlgorithm">
+<Type Name="HashAlgorithm" FullName="System.Security.Cryptography.HashAlgorithm">
   <TypeSignature Language="C#" Value="public abstract class HashAlgorithm : System.Security.Cryptography.ICryptoTransform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HashAlgorithm extends System.Object implements class System.IDisposable, class System.Security.Cryptography.ICryptoTransform" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.HashAlgorithm" />
@@ -59,6 +59,7 @@
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Security.Cryptography.HashAlgorithm" /> class, you must override the following members:  <see cref="M:System.Security.Cryptography.HashAlgorithm.HashCore(System.Byte[],System.Int32,System.Int32)" /> and <see cref="M:System.Security.Cryptography.HashAlgorithm.HashFinal" />.</para>
     </block>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

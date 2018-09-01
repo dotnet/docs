@@ -1,4 +1,4 @@
-﻿<Type Name="RuntimeBinderInternalCompilerException" FullName="Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException">
+<Type Name="RuntimeBinderInternalCompilerException" FullName="Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException">
   <TypeSignature Language="C#" Value="public class RuntimeBinderInternalCompilerException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RuntimeBinderInternalCompilerException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException" />
@@ -76,6 +76,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -115,6 +116,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="BufferedGraphics" FullName="System.Drawing.BufferedGraphics">
+<Type Name="BufferedGraphics" FullName="System.Drawing.BufferedGraphics">
   <TypeSignature Language="C#" Value="public sealed class BufferedGraphics : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BufferedGraphics extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.BufferedGraphics" />
@@ -59,6 +59,7 @@
  ]]></format>
     </remarks>
     <threadsafe>The <see cref="T:System.Drawing.BufferedGraphics" /> class is not thread safe. When accessing a graphics buffer from separate threads, it is important to use a thread-access control mechanism to prevent conflicts.</threadsafe>
+    <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
   </Docs>
   <Members>
     <Member MemberName="Dispose">
@@ -99,6 +100,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -157,6 +159,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Drawing.Graphics" />
+        <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Render">
@@ -195,6 +198,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -237,6 +241,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Drawing.Graphics" />
+        <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -280,6 +285,7 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Related enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
         <altmember cref="T:System.IntPtr" />
+        <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
       </Docs>
     </Member>
   </Members>

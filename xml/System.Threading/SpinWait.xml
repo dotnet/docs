@@ -1,4 +1,4 @@
-﻿<Type Name="SpinWait" FullName="System.Threading.SpinWait">
+<Type Name="SpinWait" FullName="System.Threading.SpinWait">
   <TypeSignature Language="C#" Value="public struct SpinWait" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SpinWait extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Threading.SpinWait" />
@@ -46,6 +46,8 @@
  ]]></format>
     </remarks>
     <threadsafe>While <see cref="T:System.Threading.SpinWait" /> is designed to be used in concurrent applications, it is not designed to be used from multiple threads concurrently. <see cref="T:System.Threading.SpinWait" /> members are not thread-safe. If multiple threads must spin, each should use its own instance of <see cref="T:System.Threading.SpinWait" />.</threadsafe>
+    <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
   </Docs>
   <Members>
     <Member MemberName="Count">
@@ -79,6 +81,8 @@
         <summary>Gets the number of times <see cref="M:System.Threading.SpinWait.SpinOnce" /> has been called on this instance.</summary>
         <value>Returns an integer that represents the number of times <see cref="M:System.Threading.SpinWait.SpinOnce" /> has been called on this instance.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
       </Docs>
     </Member>
     <Member MemberName="NextSpinWillYield">
@@ -119,6 +123,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -302,6 +308,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
       </Docs>
     </Member>
     <Member MemberName="SpinOnce">
@@ -342,6 +350,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SpinUntil">
@@ -353,6 +363,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Spins until the specified condition is satisfied.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="SpinUntil">
@@ -390,6 +402,8 @@
         <summary>Spins until the specified condition is satisfied.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="condition" /> argument is null.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
       </Docs>
     </Member>
     <Member MemberName="SpinUntil">
@@ -432,6 +446,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="condition" /> argument is null.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
       </Docs>
     </Member>
     <Member MemberName="SpinUntil">
@@ -474,6 +490,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="condition" /> argument is null.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
       </Docs>
     </Member>
   </Members>

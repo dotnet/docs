@@ -1,4 +1,4 @@
-﻿<Type Name="CaseInsensitiveComparer" FullName="System.Collections.CaseInsensitiveComparer">
+<Type Name="CaseInsensitiveComparer" FullName="System.Collections.CaseInsensitiveComparer">
   <TypeSignature Language="C#" Value="public class CaseInsensitiveComparer : System.Collections.IComparer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CaseInsensitiveComparer extends System.Object implements class System.Collections.IComparer" />
   <TypeSignature Language="DocId" Value="T:System.Collections.CaseInsensitiveComparer" />
@@ -70,6 +70,7 @@
     <altmember cref="P:System.Threading.Thread.CurrentCulture" />
     <altmember cref="T:System.Globalization.CultureInfo" />
     <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
+    <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -129,6 +130,7 @@
         <altmember cref="P:System.Threading.Thread.CurrentCulture" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.CompareInfo" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -183,6 +185,7 @@
           <paramref name="culture" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.CompareInfo" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Compare">
@@ -264,6 +267,7 @@
         <altmember cref="T:System.Globalization.CompareInfo" />
         <altmember cref="P:System.Threading.Thread.CurrentCulture" />
         <altmember cref="T:System.Globalization.CultureInfo" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -307,6 +311,7 @@
         </remarks>
         <altmember cref="P:System.Threading.Thread.CurrentCulture" />
         <altmember cref="T:System.Globalization.CompareInfo" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultInvariant">
@@ -359,6 +364,7 @@
         </remarks>
         <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
         <altmember cref="T:System.Globalization.CompareInfo" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
   </Members>

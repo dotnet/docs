@@ -1,4 +1,4 @@
-﻿<Type Name="PromptBuilder" FullName="System.Speech.Synthesis.PromptBuilder">
+<Type Name="PromptBuilder" FullName="System.Speech.Synthesis.PromptBuilder">
   <TypeSignature Language="C#" Value="public class PromptBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PromptBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.PromptBuilder" />
@@ -35,7 +35,7 @@
   
  To generate speech from a <xref:System.Speech.Synthesis.PromptBuilder> object, you can pass it as an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method.  
   
- For more information, see [Constructing a Complex Prompt](http://msdn.microsoft.com/library/552cb356-7344-473e-b0f2-7a9983f8c1a4).  
+ For more information, see [Constructing a Complex Prompt](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361616(v%3doffice.14)).  
   
  ]]></format>
     </remarks>
@@ -1556,6 +1556,7 @@ public void ProperName()
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=58363">International Phonetic Association</related>
       </Docs>
     </Member>
     <Member MemberName="ClearContent">

@@ -1,4 +1,4 @@
-﻿<Type Name="ValidationRule" FullName="System.Windows.Controls.ValidationRule">
+<Type Name="ValidationRule" FullName="System.Windows.Controls.ValidationRule">
   <TypeSignature Language="C#" Value="public abstract class ValidationRule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ValidationRule extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ValidationRule" />
@@ -160,6 +160,7 @@
         </remarks>
         <altmember cref="T:System.Windows.Controls.DataErrorValidationRule" />
         <altmember cref="T:System.Windows.Controls.ExceptionValidationRule" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159972">Binding Validation Sample</related>
       </Docs>
     </Member>
     <Member MemberName="Validate">

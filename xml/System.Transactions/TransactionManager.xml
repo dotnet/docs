@@ -1,4 +1,4 @@
-﻿<Type Name="TransactionManager" FullName="System.Transactions.TransactionManager">
+<Type Name="TransactionManager" FullName="System.Transactions.TransactionManager">
   <TypeSignature Language="C#" Value="public static class TransactionManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed TransactionManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionManager" />
@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/d342c5c7-da64-4a4c-8e63-b52f4fbf2691">Performing Recovery</related>
   </Docs>
   <Members>
     <Member MemberName="DefaultTimeout">
@@ -249,6 +250,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="resourceManagerIdentifier" /> parameter is <see langword="null" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/d342c5c7-da64-4a4c-8e63-b52f4fbf2691">Performing Recovery</related>
       </Docs>
     </Member>
     <Member MemberName="Reenlist">
@@ -335,6 +337,7 @@ For more information on recovery, see [Performing Recovery](https://msdn.microso
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Transactions.TransactionManager.RecoveryComplete(System.Guid)" /> has already been called for the specified <paramref name="resourceManagerIdentifier" />. The reenlistment is rejected.</exception>
         <exception cref="T:System.Transactions.TransactionException">The <paramref name="resourceManagerIdentifier" /> does not match the content of the specified recovery information in <paramref name="recoveryInformation" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/d342c5c7-da64-4a4c-8e63-b52f4fbf2691">Performing Recovery</related>
       </Docs>
     </Member>
   </Members>

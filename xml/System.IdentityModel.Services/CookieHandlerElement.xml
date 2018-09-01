@@ -1,4 +1,4 @@
-﻿<Type Name="CookieHandlerElement" FullName="System.IdentityModel.Services.CookieHandlerElement">
+<Type Name="CookieHandlerElement" FullName="System.IdentityModel.Services.CookieHandlerElement">
   <TypeSignature Language="C#" Value="public class CookieHandlerElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CookieHandlerElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.CookieHandlerElement" />
@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/bfdc127f-8d94-4566-8bef-f583c6ae7398">&lt;cookieHandler&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,6 +84,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/7220de45-1d14-4aec-a29e-4a2ea8ac861f">&lt;chunkedCookieHandler&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="CustomCookieHandler">
@@ -118,6 +120,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a03b153d-5ec6-4915-9031-6f0c3fd348be">&lt;customCookieHandler&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="Domain">
@@ -151,6 +154,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bfdc127f-8d94-4566-8bef-f583c6ae7398">&lt;cookieHandler&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="GetConfiguredCookieHandler">
@@ -217,6 +221,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bfdc127f-8d94-4566-8bef-f583c6ae7398">&lt;cookieHandler&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -252,6 +257,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bfdc127f-8d94-4566-8bef-f583c6ae7398">&lt;cookieHandler&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -285,6 +291,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bfdc127f-8d94-4566-8bef-f583c6ae7398">&lt;cookieHandler&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -320,6 +327,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bfdc127f-8d94-4566-8bef-f583c6ae7398">&lt;cookieHandler&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="PersistentSessionLifetime">
@@ -356,6 +364,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bfdc127f-8d94-4566-8bef-f583c6ae7398">&lt;cookieHandler&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="RequireSsl">
@@ -392,6 +401,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bfdc127f-8d94-4566-8bef-f583c6ae7398">&lt;cookieHandler&gt;</related>
       </Docs>
     </Member>
   </Members>

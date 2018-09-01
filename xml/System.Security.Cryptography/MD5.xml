@@ -1,4 +1,4 @@
-﻿<Type Name="MD5" FullName="System.Security.Cryptography.MD5">
+<Type Name="MD5" FullName="System.Security.Cryptography.MD5">
   <TypeSignature Language="C#" Value="public abstract class MD5 : System.Security.Cryptography.HashAlgorithm" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MD5 extends System.Security.Cryptography.HashAlgorithm" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.MD5" />
@@ -58,6 +58,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,6 +98,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Create">
@@ -152,6 +154,7 @@
         <returns>A new instance of the <see cref="T:System.Security.Cryptography.MD5" /> hash algorithm.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Reflection.TargetInvocationException">The algorithm was used with Federal Information Processing Standards (FIPS) mode enabled, but is not FIPS compatible.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -202,6 +205,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Reflection.TargetInvocationException">The algorithm described by the <paramref name="algName" /> parameter was used with Federal Information Processing Standards (FIPS) mode enabled, but is not FIPS compatible.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
   </Members>

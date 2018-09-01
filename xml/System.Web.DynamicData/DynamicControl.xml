@@ -1,4 +1,4 @@
-﻿<Type Name="DynamicControl" FullName="System.Web.DynamicData.DynamicControl">
+<Type Name="DynamicControl" FullName="System.Web.DynamicData.DynamicControl">
   <TypeSignature Language="C#" Value="public class DynamicControl : System.Web.UI.Control, System.Web.DynamicData.IFieldFormattingOptions, System.Web.DynamicData.IFieldTemplateHost, System.Web.UI.IAttributeAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicControl extends System.Web.UI.Control implements class System.Web.DynamicData.IFieldFormattingOptions, class System.Web.DynamicData.IFieldTemplateHost, class System.Web.UI.IAttributeAccessor" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicControl" />
@@ -118,6 +118,8 @@
     <altmember cref="T:System.Web.UI.WebControls.ListView" />
     <altmember cref="T:System.Web.UI.WebControls.Repeater" />
     <altmember cref="T:System.Web.DynamicData.DynamicField" />
+    <related type="Article" href="http://msdn.microsoft.com/library/78c7fcd7-5f38-46a0-a4bc-48eff3c8a512">ASP.NET Dynamic Data Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/e0166a58-9178-4660-81a6-175994b11b12">ASP.NET Dynamic Data Scaffolding</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -292,6 +294,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/5436e8f6-171a-4361-a9a3-cec826a08c91">Handling Null Database Values Using Data Source Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CssClass">
@@ -422,6 +425,7 @@
         <altmember cref="P:System.Web.DynamicData.DynamicControl.DataField" />
         <altmember cref="T:System.ComponentModel.DataAnnotations.DisplayFormatAttribute" />
         <altmember cref="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="FieldTemplate">
@@ -824,6 +828,7 @@
         </remarks>
         <altmember cref="T:System.ComponentModel.DataAnnotations.UIHintAttribute" />
         <altmember cref="P:System.Web.DynamicData.DynamicControl.DataField" />
+        <related type="Article" href="http://msdn.microsoft.com/library/78c7fcd7-5f38-46a0-a4bc-48eff3c8a512">ASP.NET Dynamic Data Model Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">

@@ -1,4 +1,4 @@
-﻿<Type Name="OrCondition" FullName="System.Windows.Automation.OrCondition">
+<Type Name="OrCondition" FullName="System.Windows.Automation.OrCondition">
   <TypeSignature Language="C#" Value="public class OrCondition : System.Windows.Automation.Condition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OrCondition extends System.Windows.Automation.Condition" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.OrCondition" />
@@ -20,6 +20,7 @@
     <altmember cref="T:System.Windows.Automation.Condition" />
     <altmember cref="T:System.Windows.Automation.AndCondition" />
     <altmember cref="T:System.Windows.Automation.NotCondition" />
+    <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

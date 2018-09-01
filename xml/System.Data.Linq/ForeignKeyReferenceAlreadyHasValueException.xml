@@ -1,4 +1,4 @@
-﻿<Type Name="ForeignKeyReferenceAlreadyHasValueException" FullName="System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException">
+<Type Name="ForeignKeyReferenceAlreadyHasValueException" FullName="System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException">
   <TypeSignature Language="C#" Value="public class ForeignKeyReferenceAlreadyHasValueException : InvalidOperationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ForeignKeyReferenceAlreadyHasValueException extends System.InvalidOperationException" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException" />
@@ -63,6 +63,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -102,6 +103,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -145,6 +147,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
   </Members>

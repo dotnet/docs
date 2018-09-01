@@ -1,4 +1,4 @@
-﻿<Type Name="FontFamily" FullName="System.Drawing.FontFamily">
+<Type Name="FontFamily" FullName="System.Drawing.FontFamily">
   <TypeSignature Language="C#" Value="public sealed class FontFamily : MarshalByRefObject, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FontFamily extends System.MarshalByRefObject implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.FontFamily" />
@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/winforms/advanced/using-fonts-and-text.md">Using Fonts and Text</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -392,6 +393,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/winforms/advanced/how-to-obtain-font-metrics.md">How To: Obtain Font Metrics</related>
       </Docs>
     </Member>
     <Member MemberName="GetCellDescent">
@@ -436,6 +438,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/winforms/advanced/how-to-obtain-font-metrics.md">How To: Obtain Font Metrics</related>
       </Docs>
     </Member>
     <Member MemberName="GetEmHeight">
@@ -485,6 +488,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/winforms/advanced/how-to-obtain-font-metrics.md">How To: Obtain Font Metrics</related>
       </Docs>
     </Member>
     <Member MemberName="GetFamilies">
@@ -603,6 +607,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/winforms/advanced/how-to-obtain-font-metrics.md">How To: Obtain Font Metrics</related>
       </Docs>
     </Member>
     <Member MemberName="GetName">

@@ -1,4 +1,4 @@
-﻿<Type Name="Duration" FullName="System.Windows.Duration">
+<Type Name="Duration" FullName="System.Windows.Duration">
   <TypeSignature Language="C#" Value="public struct Duration" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Duration extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Duration" />
@@ -71,6 +71,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159969">Animation Example Gallery</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

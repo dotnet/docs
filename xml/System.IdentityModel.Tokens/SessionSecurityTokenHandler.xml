@@ -1,4 +1,4 @@
-﻿<Type Name="SessionSecurityTokenHandler" FullName="System.IdentityModel.Tokens.SessionSecurityTokenHandler">
+<Type Name="SessionSecurityTokenHandler" FullName="System.IdentityModel.Tokens.SessionSecurityTokenHandler">
   <TypeSignature Language="C#" Value="public class SessionSecurityTokenHandler : System.IdentityModel.Tokens.SecurityTokenHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SessionSecurityTokenHandler extends System.IdentityModel.Tokens.SecurityTokenHandler" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SessionSecurityTokenHandler" />
@@ -60,6 +60,9 @@
     <altmember cref="T:System.IdentityModel.Tokens.SessionSecurityToken" />
     <altmember cref="T:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler" />
     <altmember cref="T:System.IdentityModel.CookieTransform" />
+    <related type="Article" href="http://msdn.microsoft.com/library/496a1735-cbb7-49d5-a6aa-dd5550462073">&lt;sessionTokenRequirement&gt;</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/fc3cd7fa-2b45-4614-a44f-8fa9b9d15284">WIF and Web Farms</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/98bce126-18a9-401b-b20d-67ee462a5f8a">WIF Session Management</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -517,6 +520,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="customConfigElements" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The configuration specified by <paramref name="customConfigElements" /> is not valid. For example, it does not contain a <see langword="&lt;sessionTokenRequirement&gt;" /> element, it contains more than one <see langword="&lt;sessionTokenRequirement&gt;" /> element, a valid <see cref="T:System.TimeSpan" /> value cannot be read from the <see langword="lifetime" /> attribute, or the <see langword="lifetime" /> attribute specifies a value that is less than <see cref="F:System.TimeSpan.Zero" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/496a1735-cbb7-49d5-a6aa-dd5550462073">&lt;sessionTokenRequirement&gt;</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadToken">
@@ -713,6 +717,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt to set a time span that is less than or equal to zero occurs.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/496a1735-cbb7-49d5-a6aa-dd5550462073">&lt;sessionTokenRequirement&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="TokenType">

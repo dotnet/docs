@@ -1,4 +1,4 @@
-﻿<Type Name="ReceiveErrorHandling" FullName="System.ServiceModel.ReceiveErrorHandling">
+<Type Name="ReceiveErrorHandling" FullName="System.ServiceModel.ReceiveErrorHandling">
   <TypeSignature Language="C#" Value="public enum ReceiveErrorHandling" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ReceiveErrorHandling extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ReceiveErrorHandling" />
@@ -31,6 +31,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/wcf/feature-details/poison-message-handling.md">Poison Message Handling</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751472(v=vs.90)">Poison Message Handling in MSMQ 3.0</related>
   </Docs>
   <Members>
     <Member MemberName="Drop">

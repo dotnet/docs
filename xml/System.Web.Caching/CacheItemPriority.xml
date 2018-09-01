@@ -1,4 +1,4 @@
-﻿<Type Name="CacheItemPriority" FullName="System.Web.Caching.CacheItemPriority">
+<Type Name="CacheItemPriority" FullName="System.Web.Caching.CacheItemPriority">
   <TypeSignature Language="C#" Value="public enum CacheItemPriority" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheItemPriority extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheItemPriority" />
@@ -36,6 +36,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.Caching.Cache" />
+    <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
   </Docs>
   <Members>
     <Member MemberName="AboveNormal">

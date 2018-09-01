@@ -1,4 +1,4 @@
-﻿<Type Name="ExtensionAttribute" FullName="System.Runtime.CompilerServices.ExtensionAttribute">
+<Type Name="ExtensionAttribute" FullName="System.Runtime.CompilerServices.ExtensionAttribute">
   <TypeSignature Language="C#" Value="public sealed class ExtensionAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExtensionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ExtensionAttribute" />
@@ -51,6 +51,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/b8020aae-374d-46a9-bcb7-8cc2390b93b6">Extension Methods (Visual Basic)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51">Extension Methods (C# Programming Guide)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="ListSelectType" FullName="System.Web.UI.MobileControls.ListSelectType">
+<Type Name="ListSelectType" FullName="System.Web.UI.MobileControls.ListSelectType">
   <TypeSignature Language="C#" Value="public enum ListSelectType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListSelectType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ListSelectType" />
@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
   </Docs>
   <Members>
     <Member MemberName="CheckBox">
@@ -51,6 +52,7 @@
       <MemberValue>4</MemberValue>
       <Docs>
         <summary>Renders list items with check boxes and multiple selection capability. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="DropDown">
@@ -73,6 +75,7 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>Renders list items in a drop-down list box. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="ListBox">
@@ -95,6 +98,7 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>Renders list items in a list box. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="MultiSelectListBox">
@@ -117,6 +121,7 @@
       <MemberValue>3</MemberValue>
       <Docs>
         <summary>Renders list items in a list box with multiple selection capability. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
     <Member MemberName="Radio">
@@ -139,6 +144,7 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>Renders list items as options. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
       </Docs>
     </Member>
   </Members>

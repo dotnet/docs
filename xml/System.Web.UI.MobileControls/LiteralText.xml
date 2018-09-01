@@ -1,4 +1,4 @@
-﻿<Type Name="LiteralText" FullName="System.Web.UI.MobileControls.LiteralText">
+<Type Name="LiteralText" FullName="System.Web.UI.MobileControls.LiteralText">
   <TypeSignature Language="C#" Value="public class LiteralText : System.Web.UI.MobileControls.PagedControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LiteralText extends System.Web.UI.MobileControls.PagedControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.LiteralText" />
@@ -49,6 +49,9 @@
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.WebControls.Literal" />
+    <related type="Article" href="https://msdn.microsoft.com/library/321C4977-513D-46B9-B0C5-250B4053A046">Adding New Device Adapters and Device Support</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/BB6615D1-79EE-4F44-9519-045CECB58D80">Device Specific Composition</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/776c8a45-53f3-41e9-8c39-db29bfc2392b">Mobile Controls Reference</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -139,6 +142,9 @@
         <summary>Returns the text for the current page, when the control is broken across pages. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The text for the current page, when the control is broken across pages.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/321C4977-513D-46B9-B0C5-250B4053A046">Adding New Device Adapters and Device Support</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/BB6615D1-79EE-4F44-9519-045CECB58D80">Device Specific Composition</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/776c8a45-53f3-41e9-8c39-db29bfc2392b">Mobile Controls Reference</related>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -177,6 +183,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/321C4977-513D-46B9-B0C5-250B4053A046">Adding New Device Adapters and Device Support</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/BB6615D1-79EE-4F44-9519-045CECB58D80">Device Specific Composition</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/776c8a45-53f3-41e9-8c39-db29bfc2392b">Mobile Controls Reference</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="Queue&lt;T&gt;" FullName="System.Collections.Generic.Queue&lt;T&gt;">
+<Type Name="Queue&lt;T&gt;" FullName="System.Collections.Generic.Queue&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class Queue&lt;T&gt; : System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Queue`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.Queue`1" />
@@ -401,6 +401,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">

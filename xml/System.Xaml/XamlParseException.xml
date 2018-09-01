@@ -1,4 +1,4 @@
-﻿<Type Name="XamlParseException" FullName="System.Xaml.XamlParseException">
+<Type Name="XamlParseException" FullName="System.Xaml.XamlParseException">
   <TypeSignature Language="C#" Value="public class XamlParseException : System.Xaml.XamlException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit XamlParseException extends System.Xaml.XamlException" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlParseException" />
@@ -29,6 +29,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Markup.XamlParseException" />
+    <related type="Article" href="http://msdn.microsoft.com/library/0e11f386-808c-4eae-9ba6-029ad7ba2211">.NET Framework XAML Services Conceptual Documentation</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

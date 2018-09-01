@@ -1,4 +1,4 @@
-﻿<Type Name="ChineseLunisolarCalendar" FullName="System.Globalization.ChineseLunisolarCalendar">
+<Type Name="ChineseLunisolarCalendar" FullName="System.Globalization.ChineseLunisolarCalendar">
   <TypeSignature Language="C#" Value="public class ChineseLunisolarCalendar : System.Globalization.EastAsianLunisolarCalendar" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ChineseLunisolarCalendar extends System.Globalization.EastAsianLunisolarCalendar" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.ChineseLunisolarCalendar" />
@@ -52,6 +52,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/datetime/working-with-calendars.md">Working with Calendars</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

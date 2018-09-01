@@ -1,4 +1,4 @@
-﻿<Type Name="Image" FullName="System.Web.UI.MobileControls.Image">
+<Type Name="Image" FullName="System.Web.UI.MobileControls.Image">
   <TypeSignature Language="C#" Value="public class Image : System.Web.UI.MobileControls.MobileControl, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Image extends System.Web.UI.MobileControls.MobileControl implements class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Image" />
@@ -53,7 +53,7 @@
    
   
 ## Examples  
- The following code sample code shows how to use a [\<DeviceSpecific>](http://msdn.microsoft.com/library/6dca8eb9-d6f6-479a-abac-20fc9d485cc8) control within an Image control to specify different images for different devices. If you have available a file named Sunshine.gif, it will appear in Internet Explorer. If you view the page on a WML device such as an OpenWave phone or a CHTML device, it will appear as a sun icon. The page also displays the name of the browser and the resolved name of the image.  
+ The following code sample code shows how to use a [\<DeviceSpecific>](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)) control within an Image control to specify different images for different devices. If you have available a file named Sunshine.gif, it will appear in Internet Explorer. If you view the page on a WML device such as an OpenWave phone or a CHTML device, it will appear as a sun icon. The page also displays the name of the browser and the resolved name of the image.  
   
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
@@ -67,6 +67,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/36x54d77(v=vs.85)">Introduction to the Image Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,6 +87,7 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.Image" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/36x54d77(v=vs.85)">Introduction to the Image Control</related>
       </Docs>
     </Member>
     <Member MemberName="AlternateText">
@@ -124,6 +126,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/36x54d77(v=vs.85)">Introduction to the Image Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ty14c55d(v=vs.85)">Adding and Configuring an Image Control</related>
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -161,7 +165,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because various devices provide a set of built-in pictures, such as images for a heart, sunshine, a book, a right arrow, and so on, by using a [\<DeviceSpecific>](http://msdn.microsoft.com/library/6dca8eb9-d6f6-479a-abac-20fc9d485cc8) control within the <xref:System.Web.UI.MobileControls.Image> control, you can provide a wide variety of graphics that can be integrated into the devices themselves, as well as standard Web graphics.  
+ Because various devices provide a set of built-in pictures, such as images for a heart, sunshine, a book, a right arrow, and so on, by using a [\<DeviceSpecific>](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)) control within the <xref:System.Web.UI.MobileControls.Image> control, you can provide a wide variety of graphics that can be integrated into the devices themselves, as well as standard Web graphics.  
   
  For example, you can specify `symbol:63726` as the <xref:System.Web.UI.MobileControls.Image.ImageUrl%2A> property value for all devices that require WML markup, and Sunshine.gif as the <xref:System.Web.UI.MobileControls.Image.ImageUrl%2A> property value for HTML devices.  
   
@@ -183,6 +187,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/36x54d77(v=vs.85)">Introduction to the Image Control</related>
       </Docs>
     </Member>
     <Member MemberName="NavigateUrl">
@@ -224,6 +229,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/36x54d77(v=vs.85)">Introduction to the Image Control</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -250,6 +256,7 @@
         <summary>Notifies the <see cref="T:System.Web.UI.MobileControls.Image" /> object of a postback event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/36x54d77(v=vs.85)">Introduction to the Image Control</related>
       </Docs>
     </Member>
     <Member MemberName="SoftkeyLabel">
@@ -289,6 +296,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.MobileControls.Image.NavigateUrl" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/36x54d77(v=vs.85)">Introduction to the Image Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -329,6 +337,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/36x54d77(v=vs.85)">Introduction to the Image Control</related>
       </Docs>
     </Member>
   </Members>

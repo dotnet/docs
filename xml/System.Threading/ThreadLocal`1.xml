@@ -1,4 +1,4 @@
-﻿<Type Name="ThreadLocal&lt;T&gt;" FullName="System.Threading.ThreadLocal&lt;T&gt;">
+<Type Name="ThreadLocal&lt;T&gt;" FullName="System.Threading.ThreadLocal&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class ThreadLocal&lt;T&gt; : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ThreadLocal`1&lt;T&gt; extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadLocal`1" />
@@ -60,6 +60,8 @@
     <threadsafe>With the exception of <see cref="M:System.Threading.ThreadLocal`1.Dispose" />, all public and protected members of <see cref="T:System.Threading.ThreadLocal`1" /> are thread-safe and may be used concurrently from multiple threads. The value returned for the <see cref="P:System.Threading.ThreadLocal`1.Value" /> and <see cref="P:System.Threading.ThreadLocal`1.IsValueCreated" /> properties is specific for the thread on which the property is accessed.</threadsafe>
     <altmember cref="T:System.Lazy`1" />
     <altmember cref="T:System.Threading.AsyncLocal`1" />
+    <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -115,6 +117,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Lazy`1" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -192,6 +196,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="valueFactory" /> is a null reference (Nothing in Visual Basic).</exception>
         <altmember cref="T:System.Lazy`1" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -297,6 +303,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Lazy`1" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -341,6 +349,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Lazy`1" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -375,6 +385,8 @@
         <summary>Releases the resources used by this <see cref="T:System.Threading.ThreadLocal`1" /> instance.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Lazy`1" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="IsValueCreated">
@@ -410,6 +422,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ThreadLocal`1" /> instance has been disposed.</exception>
         <altmember cref="T:System.Lazy`1" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -456,6 +470,8 @@
         <exception cref="T:System.InvalidOperationException">The initialization function attempted to reference <see cref="P:System.Threading.ThreadLocal`1.Value" /> recursively.</exception>
         <exception cref="T:System.MissingMemberException">No default constructor is provided and no value factory is supplied.</exception>
         <altmember cref="T:System.Lazy`1" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -505,6 +521,8 @@
         <exception cref="T:System.InvalidOperationException">The initialization function attempted to reference <see cref="P:System.Threading.ThreadLocal`1.Value" /> recursively.</exception>
         <exception cref="T:System.MissingMemberException">No default constructor is provided and no value factory is supplied.</exception>
         <altmember cref="T:System.Lazy`1" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="Values">

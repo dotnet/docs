@@ -1,4 +1,4 @@
-﻿<Type Name="TemplatedEditableDesignerRegion" FullName="System.Web.UI.Design.TemplatedEditableDesignerRegion">
+<Type Name="TemplatedEditableDesignerRegion" FullName="System.Web.UI.Design.TemplatedEditableDesignerRegion">
   <TypeSignature Language="C#" Value="public class TemplatedEditableDesignerRegion : System.Web.UI.Design.EditableDesignerRegion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplatedEditableDesignerRegion extends System.Web.UI.Design.EditableDesignerRegion" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" />
@@ -18,6 +18,8 @@
     <summary>Defines an editable region of content within the design-time markup for the associated control.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Web.UI.Design.EditableDesignerRegion" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +41,8 @@
         <param name="templateDefinition">A <see cref="T:System.Web.UI.Design.TemplateDefinition" /> instance for the template to edit.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" /> class using the provided template definition.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="IsSingleInstanceTemplate">
@@ -70,6 +74,8 @@
         <value>
           <see langword="true" /> if the template appears only once; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="SupportsDataBinding">
@@ -94,6 +100,8 @@
           <see langword="true" /> if the template represented by the region can be bound to a data source; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set this property.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="TemplateDefinition">
@@ -121,6 +129,8 @@
         <summary>Gets a <see cref="T:System.Web.UI.Design.TemplateDefinition" /> object describing the template that is referenced by the region.</summary>
         <value>A <see cref="T:System.Web.UI.Design.TemplateDefinition" /> object.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

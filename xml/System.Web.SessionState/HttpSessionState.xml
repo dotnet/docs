@@ -1,4 +1,4 @@
-﻿<Type Name="HttpSessionState" FullName="System.Web.SessionState.HttpSessionState">
+<Type Name="HttpSessionState" FullName="System.Web.SessionState.HttpSessionState">
   <TypeSignature Language="C#" Value="public sealed class HttpSessionState : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpSessionState extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.HttpSessionState" />
@@ -54,6 +54,8 @@
     </remarks>
     <altmember cref="N:System.Web.Profile" />
     <altmember cref="N:System.Web.Caching" />
+    <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Abandon">
@@ -88,6 +90,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -134,6 +137,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -157,6 +162,7 @@
       <Docs>
         <summary>Removes all keys and values from the session-state collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CodePage">
@@ -189,6 +195,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Contents">
@@ -227,6 +234,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CookieMode">
@@ -272,6 +280,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -302,6 +311,7 @@
         <param name="index">The zero-based index in <c>array</c> from which copying starts.</param>
         <summary>Copies the collection of session-state values to a one-dimensional array, starting at the specified index in the array.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -328,6 +338,7 @@
         <summary>Gets the number of items in the session-state collection.</summary>
         <value>The number of items in the collection.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -365,6 +376,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsCookieless">
@@ -431,6 +443,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsNewSession">
@@ -455,6 +468,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
         <value>
           <see langword="true" /> if the session was created with the current request; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -479,6 +493,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
         <value>
           <see langword="true" /> if the session is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -506,6 +521,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
         <value>
           <see langword="true" /> if access to the collection is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -515,6 +531,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
       </AssemblyInfo>
       <Docs>
         <summary>Gets or sets individual session values.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -542,6 +559,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
         <summary>Gets or sets a session value by numerical index.</summary>
         <value>The session-state value stored at the specified index, or <see langword="null" /> if the item does not exist.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -569,6 +587,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
         <summary>Gets or sets a session value by name.</summary>
         <value>The session-state value with the specified name, or <see langword="null" /> if the item does not exist.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -592,6 +611,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
         <summary>Gets a collection of the keys for all values stored in the session-state collection.</summary>
         <value>The <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> that contains all the session keys.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LCID">
@@ -624,6 +644,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -671,6 +692,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -712,6 +734,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAll">
@@ -747,6 +770,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -779,6 +803,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
  \- or -  
   
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Web.SessionState.HttpSessionState.Count" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SessionID">
@@ -833,6 +858,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StaticObjects">
@@ -873,6 +899,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -899,6 +926,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
         <summary>Gets an object that can be used to synchronize access to the collection of session-state values.</summary>
         <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -947,6 +975,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="DeviceElementCollection" FullName="System.Web.UI.MobileControls.DeviceElementCollection">
+<Type Name="DeviceElementCollection" FullName="System.Web.UI.MobileControls.DeviceElementCollection">
   <TypeSignature Language="C#" Value="public sealed class DeviceElementCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeviceElementCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.DeviceElementCollection" />
@@ -32,6 +32,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">ASP.NET Device Filtering Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,6 +52,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceElementCollection" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">ASP.NET Device Filtering Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -74,6 +78,8 @@
         <param name="deviceElement">The <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> to add.</param>
         <summary>Adds a device element to the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">ASP.NET Device Filtering Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AllKeys">
@@ -96,6 +102,8 @@
         <summary>Returns an array of the keys for the device elements that are contained in the <see cref="T:System.Web.UI.MobileControls.DeviceElementCollection" /> collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An array containing the keys for the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> objects contained in the <see cref="T:System.Web.UI.MobileControls.DeviceElementCollection" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">ASP.NET Device Filtering Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -118,6 +126,8 @@
       <Docs>
         <summary>Removes all the device elements from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">ASP.NET Device Filtering Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CollectionType">
@@ -140,6 +150,8 @@
         <summary>Gets the configuration collection type of this <see cref="T:System.Web.UI.MobileControls.DeviceElementCollection" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A value from the <see cref="T:System.Configuration.ConfigurationElementCollectionType" /> enumeration representing the type of the collection.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">ASP.NET Device Filtering Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -220,6 +232,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Gets or sets a device element in the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">ASP.NET Device Filtering Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -246,6 +260,8 @@
         <summary>Gets or sets the device element at the specified index location. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> at the specified index.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">ASP.NET Device Filtering Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -272,6 +288,8 @@
         <summary>Returns the device element with the specified key. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> with the specified key. If no object exists in the collection with the specified <paramref name="name" />, <see cref="P:System.Web.UI.MobileControls.DeviceElementCollection.Item(System.String)" /> returns <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">ASP.NET Device Filtering Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -303,6 +321,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Removes the specified device element from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">ASP.NET Device Filtering Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Remove">
@@ -328,6 +348,8 @@
         <param name="name">The key of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> to remove.</param>
         <summary>Removes the named device element from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">ASP.NET Device Filtering Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -352,6 +374,8 @@
         <param name="deviceElement">The <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> to remove.</param>
         <summary>Removes the specified device element from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">ASP.NET Device Filtering Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -377,6 +401,8 @@
         <param name="index">The index location of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> to remove.</param>
         <summary>Removes the device element at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">ASP.NET Device Filtering Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ThrowOnDuplicate">

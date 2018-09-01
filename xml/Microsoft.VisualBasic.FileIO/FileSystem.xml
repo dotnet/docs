@@ -1,4 +1,4 @@
-﻿<Type Name="FileSystem" FullName="Microsoft.VisualBasic.FileIO.FileSystem">
+<Type Name="FileSystem" FullName="Microsoft.VisualBasic.FileIO.FileSystem">
   <TypeSignature Language="C#" Value="public class FileSystem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileSystem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.FileSystem" />
@@ -60,6 +60,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:Microsoft.VisualBasic.FileIO.SpecialDirectories" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,7 +87,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [Objects (Visual Basic)](http://msdn.microsoft.com/library/651c73e4-dca8-402b-9c6b-e3902b3a3f4b)  
+ [Objects (Visual Basic)](~/docs/visual-basic/language-reference/objects/index.md)  
   
  ]]></format>
         </remarks>

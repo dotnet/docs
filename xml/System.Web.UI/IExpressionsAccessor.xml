@@ -1,4 +1,4 @@
-﻿<Type Name="IExpressionsAccessor" FullName="System.Web.UI.IExpressionsAccessor">
+<Type Name="IExpressionsAccessor" FullName="System.Web.UI.IExpressionsAccessor">
   <TypeSignature Language="C#" Value="public interface IExpressionsAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExpressionsAccessor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IExpressionsAccessor" />
@@ -22,6 +22,7 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <related type="Article" href="http://msdn.microsoft.com/library/9ae6373a-853a-4d6e-8639-8c173dacb59f">ASP.NET Expressions Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Expressions">

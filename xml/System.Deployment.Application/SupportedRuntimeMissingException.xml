@@ -1,4 +1,4 @@
-﻿<Type Name="SupportedRuntimeMissingException" FullName="System.Deployment.Application.SupportedRuntimeMissingException">
+<Type Name="SupportedRuntimeMissingException" FullName="System.Deployment.Application.SupportedRuntimeMissingException">
   <TypeSignature Language="C#" Value="public class SupportedRuntimeMissingException : System.Deployment.Application.DependentPlatformMissingException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SupportedRuntimeMissingException extends System.Deployment.Application.DependentPlatformMissingException" />
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.SupportedRuntimeMissingException" />
@@ -21,6 +21,7 @@
   <Docs>
     <summary>This exception is thrown when a runtime version that is compatible with this application cannot be found.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/f6c3ee55-9e65-403d-8664-3ebde872c7d4">&lt;compatibleFrameworks&gt; Element</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -61,6 +62,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -94,6 +96,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -160,6 +163,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -214,6 +218,7 @@
         <summary>Gets the version of the runtime where this application can install and run.</summary>
         <value>A string that contains the runtime version number.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f6c3ee55-9e65-403d-8664-3ebde872c7d4">&lt;compatibleFrameworks&gt; Element</related>
       </Docs>
     </Member>
   </Members>

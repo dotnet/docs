@@ -1,4 +1,4 @@
-﻿<Type Name="DataObject" FullName="System.Windows.Forms.DataObject">
+<Type Name="DataObject" FullName="System.Windows.Forms.DataObject">
   <TypeSignature Language="C#" Value="public class DataObject : System.Runtime.InteropServices.ComTypes.IDataObject, System.Windows.Forms.IDataObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataObject extends System.Object implements class System.Runtime.InteropServices.ComTypes.IDataObject, class System.Windows.Forms.IDataObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataObject" />
@@ -160,6 +160,7 @@
         <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
         <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
         <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=150123">IDataObject</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

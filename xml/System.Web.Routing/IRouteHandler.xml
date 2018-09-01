@@ -1,4 +1,4 @@
-﻿<Type Name="IRouteHandler" FullName="System.Web.Routing.IRouteHandler">
+<Type Name="IRouteHandler" FullName="System.Web.Routing.IRouteHandler">
   <TypeSignature Language="C#" Value="public interface IRouteHandler" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRouteHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.IRouteHandler" />
@@ -22,6 +22,7 @@
   <Docs>
     <summary>Defines the contract that a class must implement in order to process a request for a matching route pattern.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
   </Docs>
   <Members>
     <Member MemberName="GetHttpHandler">
@@ -50,6 +51,7 @@
         <summary>Provides the object that processes the request.</summary>
         <returns>An object that processes the request.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
   </Members>

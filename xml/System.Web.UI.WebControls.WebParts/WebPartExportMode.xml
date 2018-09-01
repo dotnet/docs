@@ -1,4 +1,4 @@
-﻿<Type Name="WebPartExportMode" FullName="System.Web.UI.WebControls.WebParts.WebPartExportMode">
+<Type Name="WebPartExportMode" FullName="System.Web.UI.WebControls.WebParts.WebPartExportMode">
   <TypeSignature Language="C#" Value="public enum WebPartExportMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebPartExportMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartExportMode" />
@@ -51,6 +51,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.PersonalizableAttribute" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.ImportCatalogPart" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName="All">

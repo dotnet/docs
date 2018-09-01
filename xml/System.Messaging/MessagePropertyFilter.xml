@@ -1,4 +1,4 @@
-﻿<Type Name="MessagePropertyFilter" FullName="System.Messaging.MessagePropertyFilter">
+<Type Name="MessagePropertyFilter" FullName="System.Messaging.MessagePropertyFilter">
   <TypeSignature Language="C#" Value="public class MessagePropertyFilter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessagePropertyFilter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessagePropertyFilter" />
@@ -14,7 +14,8 @@
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Attributes>
     <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.ExpandableObjectConverter))</AttributeName>

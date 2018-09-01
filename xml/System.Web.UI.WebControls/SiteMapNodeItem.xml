@@ -1,4 +1,4 @@
-﻿<Type Name="SiteMapNodeItem" FullName="System.Web.UI.WebControls.SiteMapNodeItem">
+<Type Name="SiteMapNodeItem" FullName="System.Web.UI.WebControls.SiteMapNodeItem">
   <TypeSignature Language="C#" Value="public class SiteMapNodeItem : System.Web.UI.WebControls.WebControl, System.Web.UI.IDataItemContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SiteMapNodeItem extends System.Web.UI.WebControls.WebControl implements class System.Web.UI.IDataItemContainer, class System.Web.UI.INamingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SiteMapNodeItem" />
@@ -48,6 +48,8 @@
     <altmember cref="T:System.Web.UI.WebControls.SiteMapPath" />
     <altmember cref="T:System.Web.SiteMapNode" />
     <altmember cref="T:System.Web.UI.WebControls.SiteMapNodeItemType" />
+    <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -286,6 +288,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SiteMapNodeItem.SiteMapNode" />
+        <related type="Article" href="https://msdn.microsoft.com/library/383e32a9-b5a1-4abc-a8a6-e87c336b240f">ASP.NET Site Navigation</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DataItemIndex">
@@ -366,6 +369,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SiteMapNodeItem.ItemIndex" />
+        <related type="Article" href="https://msdn.microsoft.com/library/383e32a9-b5a1-4abc-a8a6-e87c336b240f">ASP.NET Site Navigation</related>
       </Docs>
     </Member>
   </Members>

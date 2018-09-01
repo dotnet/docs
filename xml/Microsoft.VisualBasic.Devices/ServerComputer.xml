@@ -1,4 +1,4 @@
-﻿<Type Name="ServerComputer" FullName="Microsoft.VisualBasic.Devices.ServerComputer">
+<Type Name="ServerComputer" FullName="Microsoft.VisualBasic.Devices.ServerComputer">
   <TypeSignature Language="C#" Value="public class ServerComputer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ServerComputer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.ServerComputer" />
@@ -54,6 +54,7 @@
     <altmember cref="T:Microsoft.VisualBasic.Devices.Ports" />
     <altmember cref="T:Microsoft.VisualBasic.MyServices.RegistryProxy" />
     <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -77,6 +78,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Devices.ServerComputer" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Clock">
@@ -132,6 +134,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.Devices.Clock" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="FileSystem">
@@ -181,6 +184,10 @@
  ]]></format>
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.MyServices.FileSystemProxy" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md">Creating, Deleting, and Moving Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="Info">
@@ -230,6 +237,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.Devices.ComputerInfo" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -279,6 +287,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Environment.MachineName" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Network">
@@ -328,6 +337,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.Devices.Network" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/performing-network-operations.md">Performing Network Operations</related>
       </Docs>
     </Member>
     <Member MemberName="Registry">
@@ -365,6 +376,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.MyServices.RegistryProxy" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="UnhandledExceptionEventArgs" FullName="Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs">
+<Type Name="UnhandledExceptionEventArgs" FullName="Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs">
   <TypeSignature Language="C#" Value="public class UnhandledExceptionEventArgs : System.Threading.ThreadExceptionEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi UnhandledExceptionEventArgs extends System.Threading.ThreadExceptionEventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs" />
@@ -38,6 +38,7 @@
  ]]></format>
     </remarks>
     <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException" />
+    <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +77,7 @@
  ]]></format>
         </remarks>
         <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="ExitApplication">
@@ -114,6 +116,7 @@
  ]]></format>
         </remarks>
         <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
       </Docs>
     </Member>
   </Members>

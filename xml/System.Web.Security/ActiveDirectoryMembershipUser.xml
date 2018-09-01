@@ -1,4 +1,4 @@
-﻿<Type Name="ActiveDirectoryMembershipUser" FullName="System.Web.Security.ActiveDirectoryMembershipUser">
+<Type Name="ActiveDirectoryMembershipUser" FullName="System.Web.Security.ActiveDirectoryMembershipUser">
   <TypeSignature Language="C#" Value="public class ActiveDirectoryMembershipUser : System.Web.Security.MembershipUser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ActiveDirectoryMembershipUser extends System.Web.Security.MembershipUser" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.ActiveDirectoryMembershipUser" />
@@ -62,6 +62,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to Membership</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

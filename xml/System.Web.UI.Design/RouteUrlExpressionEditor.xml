@@ -1,4 +1,4 @@
-﻿<Type Name="RouteUrlExpressionEditor" FullName="System.Web.UI.Design.RouteUrlExpressionEditor">
+<Type Name="RouteUrlExpressionEditor" FullName="System.Web.UI.Design.RouteUrlExpressionEditor">
   <TypeSignature Language="C#" Value="public class RouteUrlExpressionEditor : System.Web.UI.Design.ExpressionEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RouteUrlExpressionEditor extends System.Web.UI.Design.ExpressionEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.RouteUrlExpressionEditor" />
@@ -25,6 +25,8 @@
     </remarks>
     <altmember cref="T:System.Web.Compilation.RouteUrlExpressionBuilder" />
     <altmember cref="T:System.Web.UI.Design.RouteUrlExpressionEditorSheet" />
+    <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/1ffd4085-71f6-4822-be8f-f682ca638650">How to: Construct URLs from Routes</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,6 +51,8 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.Compilation.RouteUrlExpressionBuilder" />
         <altmember cref="T:System.Web.UI.Design.RouteUrlExpressionEditorSheet" />
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/1ffd4085-71f6-4822-be8f-f682ca638650">How to: Construct URLs from Routes</related>
       </Docs>
     </Member>
     <Member MemberName="EvaluateExpression">
@@ -89,6 +93,8 @@
         </remarks>
         <altmember cref="T:System.Web.Compilation.RouteUrlExpressionBuilder" />
         <altmember cref="T:System.Web.UI.Design.RouteUrlExpressionEditorSheet" />
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/1ffd4085-71f6-4822-be8f-f682ca638650">How to: Construct URLs from Routes</related>
       </Docs>
     </Member>
     <Member MemberName="GetExpressionEditorSheet">
@@ -125,6 +131,8 @@
         </remarks>
         <altmember cref="T:System.Web.Compilation.RouteUrlExpressionBuilder" />
         <altmember cref="T:System.Web.UI.Design.RouteUrlExpressionEditorSheet" />
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/1ffd4085-71f6-4822-be8f-f682ca638650">How to: Construct URLs from Routes</related>
       </Docs>
     </Member>
   </Members>

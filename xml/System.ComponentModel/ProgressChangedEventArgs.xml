@@ -1,4 +1,4 @@
-﻿<Type Name="ProgressChangedEventArgs" FullName="System.ComponentModel.ProgressChangedEventArgs">
+<Type Name="ProgressChangedEventArgs" FullName="System.ComponentModel.ProgressChangedEventArgs">
   <TypeSignature Language="C#" Value="public class ProgressChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProgressChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ProgressChangedEventArgs" />
@@ -40,6 +40,10 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.ComponentModel.BackgroundWorker" />
+    <related type="Article" href="http://msdn.microsoft.com/library/3c1aa4d4-da87-4a03-b812-3d167b8c57cf">How to: Implement a Component that Supports the Event-based Asynchronous Pattern</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/9f483f93-1613-4be1-a021-b4934e9c78f3">How to: Implement a Form That Uses a Background Operation</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/35e9549c-1568-4768-ad07-17cc6dff11e1">How to: Use Components that Support the Event-based Asynchronous Pattern</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,6 +85,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ProgressChangedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.BackgroundWorker" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3c1aa4d4-da87-4a03-b812-3d167b8c57cf">How to: Implement a Component that Supports the Event-based Asynchronous Pattern</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9f483f93-1613-4be1-a021-b4934e9c78f3">How to: Implement a Form That Uses a Background Operation</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/35e9549c-1568-4768-ad07-17cc6dff11e1">How to: Use Components that Support the Event-based Asynchronous Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="ProgressPercentage">
@@ -137,6 +145,10 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.BackgroundWorker" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3c1aa4d4-da87-4a03-b812-3d167b8c57cf">How to: Implement a Component that Supports the Event-based Asynchronous Pattern</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9f483f93-1613-4be1-a021-b4934e9c78f3">How to: Implement a Form That Uses a Background Operation</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/35e9549c-1568-4768-ad07-17cc6dff11e1">How to: Use Components that Support the Event-based Asynchronous Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="UserState">
@@ -188,6 +200,10 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.BackgroundWorker" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3c1aa4d4-da87-4a03-b812-3d167b8c57cf">How to: Implement a Component that Supports the Event-based Asynchronous Pattern</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9f483f93-1613-4be1-a021-b4934e9c78f3">How to: Implement a Form That Uses a Background Operation</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/35e9549c-1568-4768-ad07-17cc6dff11e1">How to: Use Components that Support the Event-based Asynchronous Pattern</related>
       </Docs>
     </Member>
   </Members>

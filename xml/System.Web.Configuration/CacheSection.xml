@@ -1,4 +1,4 @@
-﻿<Type Name="CacheSection" FullName="System.Web.Configuration.CacheSection">
+<Type Name="CacheSection" FullName="System.Web.Configuration.CacheSection">
   <TypeSignature Language="C#" Value="public sealed class CacheSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.CacheSection" />
@@ -47,6 +47,7 @@
     <altmember cref="T:System.Web.Configuration.SqlCacheDependencySection" />
     <altmember cref="T:System.Web.Caching.Cache" />
     <altmember cref="P:System.Web.HttpContext.Cache" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce">ASP.NET Caching Features</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -158,6 +159,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c8931600-b167-477d-bd5a-0186ac908646">How to: Set Expirations for Page Caching</related>
       </Docs>
     </Member>
     <Member MemberName="DisableMemoryCollection">
@@ -205,6 +207,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce">ASP.NET Caching Features</related>
       </Docs>
     </Member>
     <Member MemberName="PercentagePhysicalMemoryUsedLimit">
@@ -248,6 +251,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce">ASP.NET Caching Features</related>
       </Docs>
     </Member>
     <Member MemberName="PrivateBytesLimit">
@@ -291,6 +295,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce">ASP.NET Caching Features</related>
       </Docs>
     </Member>
     <Member MemberName="PrivateBytesPollTime">
@@ -328,6 +333,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce">ASP.NET Caching Features</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">

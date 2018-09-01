@@ -1,4 +1,4 @@
-﻿<Type Name="WorkflowChanges" FullName="System.Workflow.ComponentModel.WorkflowChanges">
+<Type Name="WorkflowChanges" FullName="System.Workflow.ComponentModel.WorkflowChanges">
   <TypeSignature Language="C#" Value="public sealed class WorkflowChanges" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowChanges extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.WorkflowChanges" />
@@ -43,6 +43,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734775(v=vs.90)">Using Workflow Changes in Workflows</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="MobileFormsAuthentication" FullName="System.Web.Mobile.MobileFormsAuthentication">
+<Type Name="MobileFormsAuthentication" FullName="System.Web.Mobile.MobileFormsAuthentication">
   <TypeSignature Language="C#" Value="public class MobileFormsAuthentication" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MobileFormsAuthentication extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Mobile.MobileFormsAuthentication" />
@@ -41,6 +41,9 @@
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="Overload:System.Web.Mobile.MobileFormsAuthentication.RedirectFromLoginPage" />
     <altmember cref="T:System.Web.Security.FormsAuthentication" />
+    <related type="Article" href="http://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad">Basic Security Practices for Web Applications</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to Membership</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="RedirectFromLoginPage">
@@ -93,6 +96,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad">Basic Security Practices for Web Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to Membership</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectFromLoginPage">
@@ -138,6 +144,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad">Basic Security Practices for Web Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to Membership</related>
       </Docs>
     </Member>
     <Member MemberName="SignOut">
@@ -163,6 +172,9 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.IPageAdapter.PersistCookielessData" />
         <altmember cref="M:System.Web.Security.FormsAuthentication.SignOut" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad">Basic Security Practices for Web Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to Membership</related>
       </Docs>
     </Member>
   </Members>

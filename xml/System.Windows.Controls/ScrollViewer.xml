@@ -1,4 +1,4 @@
-﻿<Type Name="ScrollViewer" FullName="System.Windows.Controls.ScrollViewer">
+<Type Name="ScrollViewer" FullName="System.Windows.Controls.ScrollViewer">
   <TypeSignature Language="C#" Value="public class ScrollViewer : System.Windows.Controls.ContentControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ScrollViewer extends System.Windows.Controls.ContentControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ScrollViewer" />
@@ -65,6 +65,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160053">WPF Controls Gallery Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

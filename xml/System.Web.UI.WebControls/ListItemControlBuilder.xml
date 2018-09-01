@@ -1,4 +1,4 @@
-﻿<Type Name="ListItemControlBuilder" FullName="System.Web.UI.WebControls.ListItemControlBuilder">
+<Type Name="ListItemControlBuilder" FullName="System.Web.UI.WebControls.ListItemControlBuilder">
   <TypeSignature Language="C#" Value="public class ListItemControlBuilder : System.Web.UI.ControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListItemControlBuilder extends System.Web.UI.ControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListItemControlBuilder" />
@@ -27,6 +27,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.ListItem" />
     <altmember cref="T:System.Web.UI.ControlBuilderAttribute" />
+    <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="BufferedStream" FullName="System.IO.BufferedStream">
+<Type Name="BufferedStream" FullName="System.IO.BufferedStream">
   <TypeSignature Language="C#" Value="public sealed class BufferedStream : System.IO.Stream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BufferedStream extends System.IO.Stream" />
   <TypeSignature Language="DocId" Value="T:System.IO.BufferedStream" />
@@ -71,6 +71,9 @@
     <altmember cref="T:System.IO.FileStream" />
     <altmember cref="T:System.IO.MemoryStream" />
     <altmember cref="T:System.IO.Stream" />
+    <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+    <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+    <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -125,6 +128,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -183,6 +189,9 @@
           <paramref name="stream" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="bufferSize" /> is negative.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="BeginRead">
@@ -385,6 +394,9 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.IO.BufferedStream.Read(System.Byte[],System.Int32,System.Int32)" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="CanSeek">
@@ -443,6 +455,9 @@
         </remarks>
         <altmember cref="M:System.IO.BufferedStream.SetLength(System.Int64)" />
         <altmember cref="M:System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="CanWrite">
@@ -500,6 +515,9 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.IO.BufferedStream.Write(System.Byte[],System.Int32,System.Int32)" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -713,6 +731,9 @@
         <exception cref="T:System.ObjectDisposedException">The stream has been disposed.</exception>
         <exception cref="T:System.IO.IOException">The data source or repository is not open.</exception>
         <altmember cref="M:System.IO.Stream.Close" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="FlushAsync">
@@ -792,6 +813,9 @@
         <exception cref="T:System.IO.IOException">The underlying stream is <see langword="null" /> or closed.</exception>
         <exception cref="T:System.NotSupportedException">The stream does not support seeking.</exception>
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -846,6 +870,9 @@
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
         <altmember cref="P:System.IO.BufferedStream.CanSeek" />
         <altmember cref="M:System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -925,6 +952,9 @@
         <altmember cref="M:System.Buffer.BlockCopy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)" />
         <altmember cref="P:System.IO.BufferedStream.CanRead" />
         <altmember cref="M:System.IO.BufferedStream.Write(System.Byte[],System.Int32,System.Int32)" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
@@ -1028,6 +1058,9 @@
         <block subset="none" type="overrides">
           <para>The default implementation on <see langword="Stream" /> creates a new single-byte array and then calls <see cref="M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)" />. While this is formally correct, it is inefficient. Any stream with an internal buffer should override this method and provide a much more efficient version that reads the buffer directly, avoiding the extra array allocation on every call.</para>
         </block>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Seek">
@@ -1091,6 +1124,9 @@
         <exception cref="T:System.NotSupportedException">The stream does not support seeking.</exception>
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
         <altmember cref="T:System.IO.SeekOrigin" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="SetLength">
@@ -1148,6 +1184,9 @@
         <exception cref="T:System.NotSupportedException">The stream does not support both writing and seeking.</exception>
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
         <altmember cref="M:System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="UnderlyingStream">
@@ -1240,6 +1279,9 @@
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
         <altmember cref="P:System.IO.BufferedStream.CanWrite" />
         <altmember cref="M:System.IO.BufferedStream.Read(System.Byte[],System.Int32,System.Int32)" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1343,6 +1385,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
   </Members>

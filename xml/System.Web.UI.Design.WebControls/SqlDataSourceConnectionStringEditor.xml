@@ -1,4 +1,4 @@
-﻿<Type Name="SqlDataSourceConnectionStringEditor" FullName="System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor">
+<Type Name="SqlDataSourceConnectionStringEditor" FullName="System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor">
   <TypeSignature Language="C#" Value="public class SqlDataSourceConnectionStringEditor : System.Web.UI.Design.ConnectionStringEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlDataSourceConnectionStringEditor extends System.Web.UI.Design.ConnectionStringEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor" />
@@ -30,6 +30,8 @@
     </remarks>
     <altmember cref="T:System.ComponentModel.Design.Data.IDataEnvironment" />
     <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,6 +55,8 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetProviderName">
@@ -79,6 +83,8 @@
         <summary>Returns the <see cref="P:System.Web.UI.WebControls.SqlDataSource.ProviderName" /> property of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> object.</summary>
         <returns>The <see cref="P:System.Web.UI.WebControls.SqlDataSource.ProviderName" /> property of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" />, if the <paramref name="instance" /> is not <see langword="null" />; otherwise, an empty string ("").</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="SetProviderName">
@@ -106,6 +112,8 @@
         <param name="connection">The <see cref="T:System.ComponentModel.Design.Data.DesignerDataConnection" /> associated with the <see cref="T:System.Web.UI.WebControls.SqlDataSource" />.</param>
         <summary>Sets the <see cref="P:System.Web.UI.WebControls.SqlDataSource.ProviderName" /> property of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> object.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

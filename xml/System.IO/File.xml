@@ -1,4 +1,4 @@
-﻿<Type Name="File" FullName="System.IO.File">
+<Type Name="File" FullName="System.IO.File">
   <TypeSignature Language="C#" Value="public static class File" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit File extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.File" />
@@ -83,6 +83,10 @@
     </remarks>
     <altmember cref="T:System.IO.DriveInfo" />
     <altmember cref="T:System.IO.FileSystemWatcher" />
+    <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+    <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+    <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+    <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="AppendAllLines">
@@ -627,6 +631,10 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for appending to the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" /></permission>
         <altmember cref="T:System.IO.StreamWriter" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Copy">
@@ -723,6 +731,10 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from <paramref name="sourceFileName" /> and writing to <paramref name="destFileName" />. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="M:System.IO.Directory.Move(System.String,System.String)" />
         <altmember cref="M:System.IO.File.Move(System.String,System.String)" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -816,6 +828,10 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from <paramref name="sourceFileName" /> and writing to <paramref name="destFileName" />. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="M:System.IO.Directory.Move(System.String,System.String)" />
         <altmember cref="M:System.IO.File.Move(System.String,System.String)" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Create">
@@ -910,6 +926,10 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for permission to read and write to the file described by the <paramref name="path" /> parameter. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /> . Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -994,6 +1014,10 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for permission to read and write to the file described by the <paramref name="path" /> parameter. Security action: Demand. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -1201,6 +1225,10 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
       </Docs>
     </Member>
     <Member MemberName="Decrypt">
@@ -1377,6 +1405,9 @@
   
  <paramref name="path" /> specified a read-only file.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for deleting the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Encrypt">
@@ -1538,6 +1569,9 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="M:System.IO.Directory.Exists(System.String)" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAccessControl">
@@ -1750,6 +1784,9 @@
         <exception cref="T:System.IO.IOException">This file is being used by another process.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetCreationTime">
@@ -1827,6 +1864,9 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetCreationTimeUtc">
@@ -1902,6 +1942,9 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetLastAccessTime">
@@ -1979,6 +2022,9 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetLastAccessTimeUtc">
@@ -2047,6 +2093,9 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetLastWriteTime">
@@ -2124,6 +2173,9 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetLastWriteTimeUtc">
@@ -2192,6 +2244,9 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Move">
@@ -2273,6 +2328,9 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="sourceFileName" /> or <paramref name="destFileName" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from <paramref name="sourceFileName" /> and writing to <paramref name="destFileName" />. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Open">
@@ -2377,6 +2435,9 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from and writing to the specified file. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -2471,6 +2532,9 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from and writing to the specified file. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -2569,6 +2633,9 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from and writing to the specified file. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="OpenRead">
@@ -2649,6 +2716,10 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
       </Docs>
     </Member>
     <Member MemberName="OpenText">
@@ -2723,6 +2794,10 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
       </Docs>
     </Member>
     <Member MemberName="OpenWrite">
@@ -2804,6 +2879,10 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
       </Docs>
     </Member>
     <Member MemberName="ReadAllBytes">
@@ -2874,6 +2953,10 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
       </Docs>
     </Member>
     <Member MemberName="ReadAllBytesAsync">
@@ -2995,6 +3078,10 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
       </Docs>
     </Member>
     <Member MemberName="ReadAllLines">
@@ -3081,6 +3168,10 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
       </Docs>
     </Member>
     <Member MemberName="ReadAllLinesAsync">
@@ -3234,6 +3325,10 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
       </Docs>
     </Member>
     <Member MemberName="ReadAllText">
@@ -3324,6 +3419,10 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
       </Docs>
     </Member>
     <Member MemberName="ReadAllTextAsync">
@@ -3958,6 +4057,9 @@
  The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="SetCreationTime">
@@ -4022,6 +4124,9 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="SetCreationTimeUtc">
@@ -4091,6 +4196,9 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="SetLastAccessTime">
@@ -4161,6 +4269,9 @@
           <paramref name="lastAccessTime" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="SetLastAccessTimeUtc">
@@ -4227,6 +4338,9 @@
           <paramref name="lastAccessTimeUtc" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="SetLastWriteTime">
@@ -4297,6 +4411,9 @@
           <paramref name="lastWriteTime" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="SetLastWriteTimeUtc">
@@ -4363,6 +4480,9 @@
           <paramref name="lastWriteTimeUtc" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="WriteAllBytes">

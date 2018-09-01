@@ -1,4 +1,4 @@
-﻿<Type Name="DynamicField" FullName="System.Web.DynamicData.DynamicField">
+<Type Name="DynamicField" FullName="System.Web.DynamicData.DynamicField">
   <TypeSignature Language="C#" Value="public class DynamicField : System.Web.UI.WebControls.DataControlField, System.Web.DynamicData.IFieldFormattingOptions, System.Web.UI.IAttributeAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicField extends System.Web.UI.WebControls.DataControlField implements class System.Web.DynamicData.IFieldFormattingOptions, class System.Web.UI.IAttributeAccessor" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicField" />
@@ -172,6 +172,8 @@
     <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
     <altmember cref="T:System.Web.UI.WebControls.BoundField" />
     <altmember cref="T:System.Web.DynamicData.DynamicControl" />
+    <related type="Article" href="http://msdn.microsoft.com/library/78c7fcd7-5f38-46a0-a4bc-48eff3c8a512">ASP.NET Dynamic Data Overview</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=286117">Model Binding and Web Forms</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -533,6 +535,7 @@
         <altmember cref="P:System.Web.DynamicData.DynamicField.DataField" />
         <altmember cref="T:System.ComponentModel.DataAnnotations.DisplayFormatAttribute" />
         <altmember cref="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="ExtractValuesFromCell">
@@ -671,6 +674,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -893,6 +897,7 @@
         <altmember cref="T:System.ComponentModel.DataAnnotations.UIHintAttribute" />
         <altmember cref="P:System.Web.DynamicData.DynamicField.DataField" />
         <altmember cref="M:System.Web.UI.WebControls.DataControlField.OnFieldChanged" />
+        <related type="Article" href="http://msdn.microsoft.com/library/78c7fcd7-5f38-46a0-a4bc-48eff3c8a512">ASP.NET Dynamic Data Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ValidateRequestMode">

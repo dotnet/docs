@@ -1,4 +1,4 @@
-﻿<Type Name="IStackWalk" FullName="System.Security.IStackWalk">
+<Type Name="IStackWalk" FullName="System.Security.IStackWalk">
   <TypeSignature Language="C#" Value="public interface IStackWalk" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStackWalk" />
   <TypeSignature Language="DocId" Value="T:System.Security.IStackWalk" />
@@ -77,6 +77,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The calling code does not have <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Assertion" />.</exception>
+        <related type="Article" href="~/docs/framework/misc/using-the-assert-method.md">Using the Assert Method</related>
       </Docs>
     </Member>
     <Member MemberName="Demand">

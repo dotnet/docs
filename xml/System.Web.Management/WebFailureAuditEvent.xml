@@ -1,4 +1,4 @@
-﻿<Type Name="WebFailureAuditEvent" FullName="System.Web.Management.WebFailureAuditEvent">
+<Type Name="WebFailureAuditEvent" FullName="System.Web.Management.WebFailureAuditEvent">
   <TypeSignature Language="C#" Value="public class WebFailureAuditEvent : System.Web.Management.WebAuditEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebFailureAuditEvent extends System.Web.Management.WebAuditEvent" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebFailureAuditEvent" />
@@ -98,6 +98,7 @@ profile="Default"/>
     <altmember cref="T:System.Web.Management.WebAuditEvent" />
     <altmember cref="T:System.Web.Management.WebSuccessAuditEvent" />
     <altmember cref="T:System.Web.Management.WebEventCodes" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

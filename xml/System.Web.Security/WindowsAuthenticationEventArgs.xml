@@ -1,4 +1,4 @@
-﻿<Type Name="WindowsAuthenticationEventArgs" FullName="System.Web.Security.WindowsAuthenticationEventArgs">
+<Type Name="WindowsAuthenticationEventArgs" FullName="System.Web.Security.WindowsAuthenticationEventArgs">
   <TypeSignature Language="C#" Value="public sealed class WindowsAuthenticationEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WindowsAuthenticationEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.WindowsAuthenticationEventArgs" />
@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/0346bc00-a4c6-491b-a103-ad2100f71606">Windows Authentication Provider</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +77,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/0346bc00-a4c6-491b-a103-ad2100f71606">Windows Authentication Provider</related>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -111,6 +113,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/0346bc00-a4c6-491b-a103-ad2100f71606">Windows Authentication Provider</related>
       </Docs>
     </Member>
     <Member MemberName="Identity">
@@ -156,6 +159,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/0346bc00-a4c6-491b-a103-ad2100f71606">Windows Authentication Provider</related>
       </Docs>
     </Member>
     <Member MemberName="User">
@@ -204,6 +208,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/0346bc00-a4c6-491b-a103-ad2100f71606">Windows Authentication Provider</related>
       </Docs>
     </Member>
   </Members>

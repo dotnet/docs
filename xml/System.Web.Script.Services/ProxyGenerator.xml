@@ -1,4 +1,4 @@
-﻿<Type Name="ProxyGenerator" FullName="System.Web.Script.Services.ProxyGenerator">
+<Type Name="ProxyGenerator" FullName="System.Web.Script.Services.ProxyGenerator">
   <TypeSignature Language="C#" Value="public static class ProxyGenerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ProxyGenerator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Services.ProxyGenerator" />
@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/8290e543-7eff-47a4-aace-681f3c07229b">Web Services in ASP.NET AJAX</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="GetClientProxyScript">

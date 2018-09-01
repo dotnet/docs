@@ -1,4 +1,4 @@
-﻿<Type Name="InvalidFilterCriteriaException" FullName="System.Reflection.InvalidFilterCriteriaException">
+<Type Name="InvalidFilterCriteriaException" FullName="System.Reflection.InvalidFilterCriteriaException">
   <TypeSignature Language="C#" Value="public class InvalidFilterCriteriaException : ApplicationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit InvalidFilterCriteriaException extends System.ApplicationException" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.InvalidFilterCriteriaException" />
@@ -51,6 +51,7 @@
     <altmember cref="T:System.Type" />
     <altmember cref="T:System.ApplicationException" />
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -252,6 +253,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
   </Members>

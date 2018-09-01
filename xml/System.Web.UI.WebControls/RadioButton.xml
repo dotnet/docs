@@ -1,4 +1,4 @@
-﻿<Type Name="RadioButton" FullName="System.Web.UI.WebControls.RadioButton">
+<Type Name="RadioButton" FullName="System.Web.UI.WebControls.RadioButton">
   <TypeSignature Language="C#" Value="public class RadioButton : System.Web.UI.WebControls.CheckBox" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RadioButton extends System.Web.UI.WebControls.CheckBox implements class System.Web.UI.IPostBackDataHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RadioButton" />
@@ -115,6 +115,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.CheckBox" />
+    <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -149,6 +150,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="GroupName">
@@ -201,6 +203,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -241,6 +244,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
+        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -274,6 +278,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -306,6 +311,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -345,6 +351,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -379,6 +386,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
       </Docs>
     </Member>
   </Members>

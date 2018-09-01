@@ -1,4 +1,4 @@
-﻿<Type Name="ComUdtElementCollection" FullName="System.ServiceModel.Configuration.ComUdtElementCollection">
+<Type Name="ComUdtElementCollection" FullName="System.ServiceModel.Configuration.ComUdtElementCollection">
   <TypeSignature Language="C#" Value="public sealed class ComUdtElementCollection : System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection&lt;System.ServiceModel.Configuration.ComUdtElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComUdtElementCollection extends System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection`1&lt;class System.ServiceModel.Configuration.ComUdtElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ComUdtElementCollection" />
@@ -25,6 +25,7 @@
   <Docs>
     <summary>Represents a collection of <see cref="T:System.ServiceModel.Configuration.ComUdtElement" /> instances. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/3f8e1c0c-cfdf-4c79-ac65-c64e9323a51c">ComUdtElements in Config</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

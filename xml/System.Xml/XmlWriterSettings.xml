@@ -1,4 +1,4 @@
-﻿<Type Name="XmlWriterSettings" FullName="System.Xml.XmlWriterSettings">
+<Type Name="XmlWriterSettings" FullName="System.Xml.XmlWriterSettings">
   <TypeSignature Language="C#" Value="public sealed class XmlWriterSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlWriterSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlWriterSettings" />
@@ -185,6 +185,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CheckCharacters">

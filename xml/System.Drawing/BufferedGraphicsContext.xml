@@ -1,4 +1,4 @@
-﻿<Type Name="BufferedGraphicsContext" FullName="System.Drawing.BufferedGraphicsContext">
+<Type Name="BufferedGraphicsContext" FullName="System.Drawing.BufferedGraphicsContext">
   <TypeSignature Language="C#" Value="public sealed class BufferedGraphicsContext : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BufferedGraphicsContext extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.BufferedGraphicsContext" />
@@ -49,6 +49,7 @@
     <altmember cref="T:System.Drawing.BufferedGraphics" />
     <altmember cref="T:System.Drawing.BufferedGraphicsManager" />
     <altmember cref="F:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer" />
+    <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +80,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
+        <related type="Article" href="~/docs/framework/winforms/advanced/how-to-manually-manage-buffered-graphics.md">How to: Manually Manage Buffered Graphics</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Allocate">
@@ -135,6 +138,7 @@
         <altmember cref="T:System.Drawing.BufferedGraphics" />
         <altmember cref="T:System.Drawing.Graphics" />
         <altmember cref="T:System.Drawing.Rectangle" />
+        <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
       </Docs>
     </Member>
     <Member MemberName="Allocate">
@@ -183,6 +187,7 @@
         <altmember cref="T:System.Drawing.BufferedGraphics" />
         <altmember cref="T:System.IntPtr" />
         <altmember cref="T:System.Drawing.Rectangle" />
+        <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -218,6 +223,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -269,6 +275,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
       </Docs>
     </Member>
     <Member MemberName="MaximumBuffer">
@@ -314,6 +321,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The height or width of the size is less than or equal to zero.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for allowing user access to all windows. Related enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="CallExternalMethodActivity" FullName="System.Workflow.Activities.CallExternalMethodActivity">
+<Type Name="CallExternalMethodActivity" FullName="System.Workflow.Activities.CallExternalMethodActivity">
   <TypeSignature Language="C#" Value="public class CallExternalMethodActivity : System.Workflow.ComponentModel.Activity, System.Workflow.ComponentModel.IDynamicPropertyTypeProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CallExternalMethodActivity extends System.Workflow.ComponentModel.Activity implements class System.Workflow.ComponentModel.IDynamicPropertyTypeProvider" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.CallExternalMethodActivity" />
@@ -50,13 +50,14 @@
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity> in a custom activity to call an external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. For more information, see [Listen Sample](http://msdn.microsoft.com/library/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+ The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity> in a custom activity to call an external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. For more information, see [Listen Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741698(v=vs.90)).  
   
  [!code-csharp[wf_samples#213](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#213)]
  [!code-vb[wf_samples#213](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#213)]  
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734739(v=vs.90)">Using the CallExternalMethod Activity</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -77,6 +78,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734739(v=vs.90)">Using the CallExternalMethod Activity</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -98,7 +100,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how initialize a new instance of the <xref:System.Workflow.Activities.CallExternalMethodActivity>. The code also initializes new instances of the <xref:System.Workflow.Activities.ListenActivity>, <xref:System.Workflow.Activities.EventDrivenActivity>, <xref:System.Workflow.Activities.HandleExternalEventActivity>, <xref:System.Workflow.Activities.DelayActivity> and <xref:System.Workflow.Activities.CodeActivity> classes. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. For more information, see [Listen Sample](http://msdn.microsoft.com/library/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+ The following code example shows how initialize a new instance of the <xref:System.Workflow.Activities.CallExternalMethodActivity>. The code also initializes new instances of the <xref:System.Workflow.Activities.ListenActivity>, <xref:System.Workflow.Activities.EventDrivenActivity>, <xref:System.Workflow.Activities.HandleExternalEventActivity>, <xref:System.Workflow.Activities.DelayActivity> and <xref:System.Workflow.Activities.CodeActivity> classes. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. For more information, see [Listen Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741698(v=vs.90)).  
   
  [!code-csharp[wf_samples#214](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#214)]
  [!code-vb[wf_samples#214](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#214)]  
@@ -183,6 +185,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734739(v=vs.90)">Using the CallExternalMethod Activity</related>
       </Docs>
     </Member>
     <Member MemberName="CorrelationTokenProperty">
@@ -211,6 +214,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734739(v=vs.90)">Using the CallExternalMethod Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -241,6 +245,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="executionContext" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
         <exception cref="T:System.InvalidOperationException">The service object for the <paramref name="executionContext" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734739(v=vs.90)">Using the CallExternalMethod Activity</related>
       </Docs>
     </Member>
     <Member MemberName="InitializeProperties">
@@ -270,6 +275,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734739(v=vs.90)">Using the CallExternalMethodActivity Activity</related>
       </Docs>
     </Member>
     <Member MemberName="InterfaceType">
@@ -312,13 +318,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to set the <xref:System.Workflow.Activities.CallExternalMethodActivity.InterfaceType%2A> property. The interface type must be attributed with the <xref:System.Workflow.Activities.ExternalDataExchangeAttribute>. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. For more information, see [Listen Sample](http://msdn.microsoft.com/library/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+ The following code example shows how to set the <xref:System.Workflow.Activities.CallExternalMethodActivity.InterfaceType%2A> property. The interface type must be attributed with the <xref:System.Workflow.Activities.ExternalDataExchangeAttribute>. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. For more information, see [Listen Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741698(v=vs.90)).  
   
  [!code-csharp[wf_samples#217](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#217)]
  [!code-vb[wf_samples#217](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#217)]  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734739(v=vs.90)">Using the CallExternalMethod Activity</related>
       </Docs>
     </Member>
     <Member MemberName="InterfaceTypeProperty">
@@ -349,6 +356,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734739(v=vs.90)">Using the CallExternalMethod Activity</related>
       </Docs>
     </Member>
     <Member MemberName="MethodInvoking">
@@ -378,13 +386,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodInvoking> event to set the method to call before invoking the external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. For more information, see [Listen Sample](http://msdn.microsoft.com/library/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+ The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodInvoking> event to set the method to call before invoking the external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. For more information, see [Listen Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741698(v=vs.90)).  
   
  [!code-csharp[wf_samples#217](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#217)]
  [!code-vb[wf_samples#217](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#217)]  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734739(v=vs.90)">Using the CallExternalMethod Activity</related>
       </Docs>
     </Member>
     <Member MemberName="MethodInvokingEvent">
@@ -415,6 +424,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734739(v=vs.90)">Using the CallExternalMethod Activity</related>
       </Docs>
     </Member>
     <Member MemberName="MethodName">
@@ -460,13 +470,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodName%2A> property to set the method name of the external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. For more information, see [Listen Sample](http://msdn.microsoft.com/library/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+ The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodName%2A> property to set the method name of the external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. For more information, see [Listen Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741698(v=vs.90)).  
   
  [!code-csharp[wf_samples#217](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#217)]
  [!code-vb[wf_samples#217](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#217)]  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734739(v=vs.90)">Using the CallExternalMethod Activity</related>
       </Docs>
     </Member>
     <Member MemberName="MethodNameProperty">
@@ -497,6 +508,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734739(v=vs.90)">Using the CallExternalMethod Activity</related>
       </Docs>
     </Member>
     <Member MemberName="OnMethodInvoked">
@@ -532,6 +544,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734739(v=vs.90)">Using the CallExternalMethod Activity</related>
       </Docs>
     </Member>
     <Member MemberName="OnMethodInvoking">
@@ -567,6 +580,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734739(v=vs.90)">Using the CallExternalMethod Activity</related>
       </Docs>
     </Member>
     <Member MemberName="ParameterBindings">
@@ -609,6 +623,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734739(v=vs.90)">Using the CallExternalMethod Activity</related>
       </Docs>
     </Member>
     <Member MemberName="ParameterBindingsProperty">
@@ -637,6 +652,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734739(v=vs.90)">Using the CallExternalMethod Activity</related>
       </Docs>
     </Member>
     <Member MemberName="System.Workflow.ComponentModel.IDynamicPropertyTypeProvider.GetAccessType">

@@ -1,4 +1,4 @@
-﻿<Type Name="DbMetaDataColumnNames" FullName="System.Data.Common.DbMetaDataColumnNames">
+<Type Name="DbMetaDataColumnNames" FullName="System.Data.Common.DbMetaDataColumnNames">
   <TypeSignature Language="C#" Value="public static class DbMetaDataColumnNames" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DbMetaDataColumnNames extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbMetaDataColumnNames" />
@@ -27,6 +27,7 @@
   <Docs>
     <summary>Provides static values that are used for the column names in the **MetaDataCollection** objects contained in the <see cref="T:System.Data.DataTable" />. The <see cref="T:System.Data.DataTable" /> is created by the **GetSchema** method.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName="CollectionName">
@@ -58,6 +59,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **CollectionName** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ColumnSize">
@@ -89,6 +91,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **ColumnSize** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CompositeIdentifierSeparatorPattern">
@@ -120,6 +123,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **CompositeIdentifierSeparatorPattern** column in the **DataSourceInformation** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateFormat">
@@ -151,6 +155,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **CreateFormat** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateParameters">
@@ -182,6 +187,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **CreateParameters** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataSourceProductName">
@@ -213,6 +219,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **DataSourceProductName** column in the **DataSourceInformation** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataSourceProductVersion">
@@ -244,6 +251,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **DataSourceProductVersion** column in the **DataSourceInformation** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataSourceProductVersionNormalized">
@@ -275,6 +283,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **DataSourceProductVersionNormalized** column in the **DataSourceInformation** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataType">
@@ -306,6 +315,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **DataType** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GroupByBehavior">
@@ -337,6 +347,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **GroupByBehavior** column in the **DataSourceInformation** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IdentifierCase">
@@ -368,6 +379,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **IdentifierCase** column in the **DataSourceInformation** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IdentifierPattern">
@@ -399,6 +411,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **IdentifierPattern** column in the **DataSourceInformation** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsAutoIncrementable">
@@ -430,6 +443,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **IsAutoIncrementable** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsBestMatch">
@@ -461,6 +475,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **IsBestMatch** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsCaseSensitive">
@@ -492,6 +507,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **IsCaseSensitive** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsConcurrencyType">
@@ -523,6 +539,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **IsConcurrencyType** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsFixedLength">
@@ -554,6 +571,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **IsFixedLength** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsFixedPrecisionScale">
@@ -585,6 +603,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **IsFixedPrecisionScale** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsLiteralSupported">
@@ -616,6 +635,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **IsLiteralSupported** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsLong">
@@ -647,6 +667,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **IsLong** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsNullable">
@@ -678,6 +699,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **IsNullable** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsSearchable">
@@ -709,6 +731,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **IsSearchable** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsSearchableWithLike">
@@ -740,6 +763,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **IsSearchableWithLike** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsUnsigned">
@@ -771,6 +795,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **IsUnsigned** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LiteralPrefix">
@@ -802,6 +827,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **LiteralPrefix** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LiteralSuffix">
@@ -833,6 +859,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **LiteralSuffix** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="MaximumScale">
@@ -864,6 +891,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **MaximumScale** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="MinimumScale">
@@ -902,6 +930,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="NumberOfIdentifierParts">
@@ -933,6 +962,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **NumberOfIdentifierParts** column in the **MetaDataCollections** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="NumberOfRestrictions">
@@ -964,6 +994,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **NumberOfRestrictions** column in the **MetaDataCollections** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OrderByColumnsInSelect">
@@ -995,6 +1026,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **OrderByColumnsInSelect** column in the **DataSourceInformation** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ParameterMarkerFormat">
@@ -1026,6 +1058,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **ParameterMarkerFormat** column in the **DataSourceInformation** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ParameterMarkerPattern">
@@ -1057,6 +1090,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **ParameterMarkerPattern** column in the **DataSourceInformation** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ParameterNameMaxLength">
@@ -1088,6 +1122,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **ParameterNameMaxLength** column in the **DataSourceInformation** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ParameterNamePattern">
@@ -1119,6 +1154,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **ParameterNamePattern** column in the **DataSourceInformation** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderDbType">
@@ -1150,6 +1186,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **ProviderDbType** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="QuotedIdentifierCase">
@@ -1181,6 +1218,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **QuotedIdentifierCase** column in the **DataSourceInformation** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="QuotedIdentifierPattern">
@@ -1212,6 +1250,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **QuotedIdentifierPattern** column in the **DataSourceInformation** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ReservedWord">
@@ -1243,6 +1282,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **ReservedWord** column in the **ReservedWords** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StatementSeparatorPattern">
@@ -1274,6 +1314,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **StatementSeparatorPattern** column in the **DataSourceInformation** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StringLiteralPattern">
@@ -1305,6 +1346,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **StringLiteralPattern** column in the **DataSourceInformation** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SupportedJoinOperators">
@@ -1336,6 +1378,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **SupportedJoinOperators** column in the **DataSourceInformation** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -1367,6 +1410,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **TypeName** column in the **DataTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

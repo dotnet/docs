@@ -1,4 +1,4 @@
-﻿<Type Name="Assembly" FullName="System.Reflection.Assembly">
+<Type Name="Assembly" FullName="System.Reflection.Assembly">
   <TypeSignature Language="C#" Value="public abstract class Assembly : System.Reflection.ICustomAttributeProvider, System.Runtime.InteropServices._Assembly, System.Runtime.Serialization.ISerializable, System.Security.IEvidenceFactory" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi abstract serializable beforefieldinit Assembly extends System.Object implements class System.Reflection.ICustomAttributeProvider, class System.Runtime.InteropServices._Assembly, class System.Runtime.Serialization.ISerializable, class System.Security.IEvidenceFactory" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Assembly" />
@@ -109,6 +109,7 @@
     <threadsafe>This type is thread safe.</threadsafe>
     <altmember cref="T:System.AppDomain" />
     <altmember cref="T:System.Reflection.AssemblyName" />
+    <related type="Article" href="~/docs/framework/app-domains/application-domains.md">Application Domains</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -880,6 +881,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md">Specifying Fully Qualified Type Names</related>
       </Docs>
     </Member>
     <Member MemberName="GetAssembly">
@@ -1892,6 +1894,7 @@
         <exception cref="T:System.NotImplementedException">Resource length is greater than <see cref="F:System.Int64.MaxValue" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
         <altmember cref="M:System.Reflection.Assembly.GetManifestResourceNames" />
+        <related type="Article" href="~/docs/framework/app-domains/assembly-manifest.md">Assembly Manifest</related>
       </Docs>
     </Member>
     <Member MemberName="GetManifestResourceStream">
@@ -1959,6 +1962,7 @@
         <exception cref="T:System.NotImplementedException">Resource length is greater than <see cref="F:System.Int64.MaxValue" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
         <altmember cref="M:System.Reflection.Assembly.GetManifestResourceNames" />
+        <related type="Article" href="~/docs/framework/app-domains/assembly-manifest.md">Assembly Manifest</related>
       </Docs>
     </Member>
     <Member MemberName="GetModule">
@@ -3268,6 +3272,7 @@
         <permission cref="T:System.Net.WebPermission">for reading a URI that does not begin with "file://".</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
         <altmember cref="T:System.Reflection.AssemblyName" />
+        <related type="Article" href="~/docs/framework/deployment/how-the-runtime-locates-assemblies.md">How the Runtime Locates Assemblies</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -3364,6 +3369,7 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
         <altmember cref="T:System.Reflection.AssemblyName" />
         <altmember cref="M:System.Reflection.Assembly.LoadFrom(System.String)" />
+        <related type="Article" href="~/docs/framework/deployment/how-the-runtime-locates-assemblies.md">How the Runtime Locates Assemblies</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -3517,6 +3523,7 @@
         <permission cref="T:System.Net.WebPermission">for reading a URI that does not begin with "file://".</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
         <altmember cref="T:System.Security.Policy.Evidence" />
+        <related type="Article" href="~/docs/framework/deployment/how-the-runtime-locates-assemblies.md">How the Runtime Locates Assemblies</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -3601,6 +3608,7 @@
  An assembly or module was loaded twice with two different evidences.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
         <altmember cref="T:System.Security.Policy.Evidence" />
+        <related type="Article" href="~/docs/framework/deployment/how-the-runtime-locates-assemblies.md">How the Runtime Locates Assemblies</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -4684,6 +4692,7 @@ The ability to execute code in remote assemblies is disabled. See <see href="htt
         </remarks>
         <exception cref="T:System.NotSupportedException">The current assembly is a dynamic assembly, represented by an <see cref="T:System.Reflection.Emit.AssemblyBuilder" /> object.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+        <related type="Article" href="~/docs/framework/app-domains/shadow-copy-assemblies.md">Shadow Copying Assemblies</related>
       </Docs>
     </Member>
     <Member MemberName="ManifestModule">
@@ -5225,6 +5234,8 @@ The ability to execute code in remote assemblies is disabled. See <see href="htt
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/misc/security-transparent-code.md">Security-Transparent Code</related>
+        <related type="Article" href="~/docs/framework/security/security-changes.md">Security Changes in the .NET Framework 4</related>
       </Docs>
     </Member>
     <Member MemberName="System.Reflection.ICustomAttributeProvider.GetCustomAttributes">

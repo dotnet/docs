@@ -1,4 +1,4 @@
-﻿<Type Name="BigInteger" FullName="System.Numerics.BigInteger">
+<Type Name="BigInteger" FullName="System.Numerics.BigInteger">
   <TypeSignature Language="C#" Value="public struct BigInteger : IComparable, IComparable&lt;System.Numerics.BigInteger&gt;, IEquatable&lt;System.Numerics.BigInteger&gt;, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit BigInteger extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;valuetype System.Numerics.BigInteger&gt;, class System.IEquatable`1&lt;valuetype System.Numerics.BigInteger&gt;, class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Numerics.BigInteger" />
@@ -7111,6 +7111,8 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -7247,6 +7249,8 @@ value Mod 2 = 0
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is not a valid format string.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -7329,6 +7333,8 @@ value Mod 2 = 0
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is not a valid format string.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="TryFormat">

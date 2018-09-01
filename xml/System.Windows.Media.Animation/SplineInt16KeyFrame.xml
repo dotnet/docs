@@ -1,4 +1,4 @@
-﻿<Type Name="SplineInt16KeyFrame" FullName="System.Windows.Media.Animation.SplineInt16KeyFrame">
+<Type Name="SplineInt16KeyFrame" FullName="System.Windows.Media.Animation.SplineInt16KeyFrame">
   <TypeSignature Language="C#" Value="public class SplineInt16KeyFrame : System.Windows.Media.Animation.Int16KeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SplineInt16KeyFrame extends System.Windows.Media.Animation.Int16KeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SplineInt16KeyFrame" />
@@ -222,6 +222,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160011">Key Spline Animation Sample</related>
       </Docs>
     </Member>
     <Member MemberName="KeySplineProperty">

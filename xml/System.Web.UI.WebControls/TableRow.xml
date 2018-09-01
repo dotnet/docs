@@ -1,4 +1,4 @@
-﻿<Type Name="TableRow" FullName="System.Web.UI.WebControls.TableRow">
+<Type Name="TableRow" FullName="System.Web.UI.WebControls.TableRow">
   <TypeSignature Language="C#" Value="public class TableRow : System.Web.UI.WebControls.WebControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableRow extends System.Web.UI.WebControls.WebControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableRow" />
@@ -207,6 +207,7 @@
     <altmember cref="P:System.Web.UI.WebControls.TableRow.HorizontalAlign" />
     <altmember cref="P:System.Web.UI.WebControls.TableRow.VerticalAlign" />
     <altmember cref="P:System.Web.UI.WebControls.TableRow.Cells" />
+    <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -243,6 +244,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Cells">
@@ -295,6 +297,7 @@
         <altmember cref="T:System.Web.UI.WebControls.Table" />
         <altmember cref="T:System.Web.UI.WebControls.TableCellCollection" />
         <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -329,6 +332,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.TableRow.CellControlCollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -357,6 +361,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -413,6 +418,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
         <altmember cref="P:System.Web.UI.WebControls.TableRow.VerticalAlign" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -445,6 +451,7 @@
         <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
         <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
         <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TableSection">
@@ -501,6 +508,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="T:System.Web.UI.WebControls.TableRowSection" /> is not valid.</exception>
         <altmember cref="T:System.Web.UI.WebControls.TableRowSection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="VerticalAlign">
@@ -556,6 +564,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.VerticalAlign" />
         <altmember cref="P:System.Web.UI.WebControls.TableRow.HorizontalAlign" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
   </Members>

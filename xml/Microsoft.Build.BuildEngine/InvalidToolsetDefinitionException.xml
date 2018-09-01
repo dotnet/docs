@@ -1,4 +1,4 @@
-﻿<Type Name="InvalidToolsetDefinitionException" FullName="Microsoft.Build.BuildEngine.InvalidToolsetDefinitionException">
+<Type Name="InvalidToolsetDefinitionException" FullName="Microsoft.Build.BuildEngine.InvalidToolsetDefinitionException">
   <TypeSignature Language="C#" Value="public class InvalidToolsetDefinitionException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit InvalidToolsetDefinitionException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.InvalidToolsetDefinitionException" />
@@ -138,6 +138,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -181,6 +182,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

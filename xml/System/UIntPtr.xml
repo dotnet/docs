@@ -1,4 +1,4 @@
-﻿<Type Name="UIntPtr" FullName="System.UIntPtr">
+<Type Name="UIntPtr" FullName="System.UIntPtr">
   <TypeSignature Language="C#" Value="public struct UIntPtr : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit native unsigned int extends System.ValueType implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.UIntPtr" />
@@ -520,7 +520,8 @@
         <param name="value">A 32-bit unsigned integer. </param>
         <summary>Converts the value of a 32-bit unsigned integer to an <see cref="T:System.UIntPtr" />.</summary>
         <returns>A new instance of <see cref="T:System.UIntPtr" /> initialized to <paramref name="value" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <altmember cref="Overload:System.UIntPtr.#ctor" />
       </Docs>
     </Member>
@@ -562,7 +563,8 @@
         <param name="value">A 64-bit unsigned integer.</param>
         <summary>Converts the value of a 64-bit unsigned integer to an <see cref="T:System.UIntPtr" />.</summary>
         <returns>A new instance of <see cref="T:System.UIntPtr" /> initialized to <paramref name="value" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <exception cref="T:System.OverflowException">On a 32-bit platform, <paramref name="value" /> is too large to represent as an <see cref="T:System.UIntPtr" />.</exception>
         <altmember cref="Overload:System.UIntPtr.#ctor" />
       </Docs>
@@ -664,7 +666,8 @@
         <param name="value">The pointer or handle to convert.</param>
         <summary>Converts the value of the specified <see cref="T:System.UIntPtr" /> to a 64-bit unsigned integer.</summary>
         <returns>The contents of <paramref name="value" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <altmember cref="M:System.UIntPtr.ToUInt64" />
       </Docs>
     </Member>
@@ -715,7 +718,8 @@
   
  This API is not CLS-compliant.</summary>
         <returns>The contents of <paramref name="value" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="M:System.UIntPtr.ToPointer" />
       </Docs>
@@ -767,7 +771,8 @@
   
  This API is not CLS-compliant.</summary>
         <returns>A new instance of <see cref="T:System.UIntPtr" /> initialized to <paramref name="value" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="Overload:System.UIntPtr.#ctor" />
       </Docs>

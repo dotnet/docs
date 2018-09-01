@@ -1,4 +1,4 @@
-﻿<Type Name="ParentControlDesigner" FullName="System.Windows.Forms.Design.ParentControlDesigner">
+<Type Name="ParentControlDesigner" FullName="System.Windows.Forms.Design.ParentControlDesigner">
   <TypeSignature Language="C#" Value="public class ParentControlDesigner : System.Windows.Forms.Design.ControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ParentControlDesigner extends System.Windows.Forms.Design.ControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ParentControlDesigner" />
@@ -41,6 +41,7 @@
     <altmember cref="T:System.ComponentModel.Design.IDesigner" />
     <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
     <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +66,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="AddPaddingSnapLines">
@@ -95,6 +97,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="AllowControlLasso">
@@ -130,6 +133,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="AllowGenericDragBox">
@@ -158,6 +162,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="AllowSetChildIndexOnDrop">
@@ -193,6 +198,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="CanAddComponent">
@@ -274,6 +280,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="CanParent">
@@ -313,6 +320,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateTool">
@@ -362,6 +370,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="CreateTool">
@@ -404,6 +413,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="CreateTool">
@@ -444,6 +454,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="CreateToolCore">
@@ -497,6 +508,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultControlLocation">
@@ -532,6 +544,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -572,13 +585,14 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
         <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
         <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="DrawGrid">
@@ -609,6 +623,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="EnableDragRect">
@@ -638,6 +653,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="GetControl">
@@ -670,6 +686,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="GetControlGlyph">
@@ -708,6 +725,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="GetGlyphs">
@@ -746,6 +764,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="GetParentForComponent">
@@ -777,6 +796,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="GetUpdatedRect">
@@ -821,6 +841,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="GridSize">
@@ -851,6 +872,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -889,6 +911,7 @@
         <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="InitializeNewComponent">
@@ -920,6 +943,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="InvokeCreateTool">
@@ -958,6 +982,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="MouseDragTool">
@@ -993,6 +1018,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="OnDragComplete">
@@ -1030,6 +1056,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="OnDragDrop">
@@ -1068,6 +1095,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="OnDragEnter">
@@ -1099,6 +1127,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="OnDragLeave">
@@ -1130,6 +1159,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="OnDragOver">
@@ -1161,6 +1191,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="OnGiveFeedback">
@@ -1228,6 +1259,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="OnMouseDragEnd">
@@ -1267,6 +1299,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="OnMouseDragMove">
@@ -1310,6 +1343,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="OnMouseEnter">
@@ -1404,6 +1438,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="OnSetCursor">
@@ -1439,6 +1474,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -1477,6 +1513,7 @@
         <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="SnapLines">
@@ -1505,6 +1542,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.SnapLine" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="WndProc">

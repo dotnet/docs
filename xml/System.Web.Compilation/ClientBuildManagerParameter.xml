@@ -1,4 +1,4 @@
-﻿<Type Name="ClientBuildManagerParameter" FullName="System.Web.Compilation.ClientBuildManagerParameter">
+<Type Name="ClientBuildManagerParameter" FullName="System.Web.Compilation.ClientBuildManagerParameter">
   <TypeSignature Language="C#" Value="public class ClientBuildManagerParameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ClientBuildManagerParameter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ClientBuildManagerParameter" />
@@ -45,6 +45,7 @@
     </remarks>
     <altmember cref="T:System.Web.Compilation.ClientBuildManager" />
     <altmember cref="T:System.Web.Compilation.PrecompilationFlags" />
+    <related type="Article" href="http://msdn.microsoft.com/library/a88e56f9-b232-47c5-92e0-f9674ed15e5a">ASP.NET Web Site Precompilation</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -151,6 +152,7 @@
         </remarks>
         <altmember cref="T:System.Web.Compilation.ClientBuildManager" />
         <altmember cref="T:System.Web.Compilation.PrecompilationFlags" />
+        <related type="Article" href="http://msdn.microsoft.com/library/a88e56f9-b232-47c5-92e0-f9674ed15e5a">ASP.NET Web Site Precompilation</related>
       </Docs>
     </Member>
     <Member MemberName="StrongNameKeyContainer">
@@ -198,6 +200,8 @@
         </remarks>
         <altmember cref="T:System.Web.Compilation.ClientBuildManager" />
         <altmember cref="T:System.Web.Compilation.PrecompilationFlags" />
+        <related type="Article" href="http://msdn.microsoft.com/library/a88e56f9-b232-47c5-92e0-f9674ed15e5a">ASP.NET Web Site Precompilation</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f3022b39-f17f-48c1-b067-025eab0ce8bc">Importing and Exporting Protected Configuration RSA Key Containers</related>
       </Docs>
     </Member>
     <Member MemberName="StrongNameKeyFile">
@@ -245,6 +249,8 @@
         </remarks>
         <altmember cref="T:System.Web.Compilation.ClientBuildManager" />
         <altmember cref="T:System.Web.Compilation.PrecompilationFlags" />
+        <related type="Article" href="http://msdn.microsoft.com/library/a88e56f9-b232-47c5-92e0-f9674ed15e5a">ASP.NET Web Site Precompilation</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9">Creating and Using Strong-Named Assemblies</related>
       </Docs>
     </Member>
   </Members>

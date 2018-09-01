@@ -1,4 +1,4 @@
-﻿<Type Name="PolicyImporterElement" FullName="System.ServiceModel.Configuration.PolicyImporterElement">
+<Type Name="PolicyImporterElement" FullName="System.ServiceModel.Configuration.PolicyImporterElement">
   <TypeSignature Language="C#" Value="public sealed class PolicyImporterElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PolicyImporterElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.PolicyImporterElement" />
@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/b0d03456-546f-44bb-ab12-1b2ce7f98fca">&lt;policyImporter&gt;</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

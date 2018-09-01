@@ -1,4 +1,4 @@
-﻿<Type Name="WebBrowser" FullName="System.Windows.Controls.WebBrowser">
+<Type Name="WebBrowser" FullName="System.Windows.Controls.WebBrowser">
   <TypeSignature Language="C#" Value="public sealed class WebBrowser : System.Windows.Interop.ActiveXHost" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebBrowser extends System.Windows.Interop.ActiveXHost" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.WebBrowser" />
@@ -13,7 +13,8 @@
   <Base>
     <BaseTypeName>System.Windows.Interop.ActiveXHost</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Hosts and navigates between HTML documents. Enables interoperability between WPF managed code and HTML script.</summary>
     <remarks>
@@ -117,6 +118,7 @@ internal interface IServiceProvider
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160056">XBAP Hosting Silverlight Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

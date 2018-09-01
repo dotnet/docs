@@ -1,4 +1,4 @@
-﻿<Type Name="WSDualHttpBindingElement" FullName="System.ServiceModel.Configuration.WSDualHttpBindingElement">
+<Type Name="WSDualHttpBindingElement" FullName="System.ServiceModel.Configuration.WSDualHttpBindingElement">
   <TypeSignature Language="C#" Value="public class WSDualHttpBindingElement : System.ServiceModel.Configuration.StandardBindingElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WSDualHttpBindingElement extends System.ServiceModel.Configuration.StandardBindingElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WSDualHttpBindingElement" />
@@ -27,6 +27,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.ServiceModel.WSDualHttpBinding" />
+    <related type="Article" href="http://msdn.microsoft.com/library/fd8ac4e2-5641-473b-9115-73f14ab1c065">wsDualHttpBinding Element</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

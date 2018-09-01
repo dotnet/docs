@@ -1,4 +1,4 @@
-﻿<Type Name="NumericPagerField" FullName="System.Web.UI.WebControls.NumericPagerField">
+<Type Name="NumericPagerField" FullName="System.Web.UI.WebControls.NumericPagerField">
   <TypeSignature Language="C#" Value="public class NumericPagerField : System.Web.UI.WebControls.DataPagerField" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumericPagerField extends System.Web.UI.WebControls.DataPagerField" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.NumericPagerField" />
@@ -62,6 +62,8 @@
     <altmember cref="T:System.Web.UI.WebControls.ListView" />
     <altmember cref="T:System.Web.UI.WebControls.NextPreviousPagerField" />
     <altmember cref="T:System.Web.UI.WebControls.TemplatePagerField" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/50fc4478-63fb-4e8a-84b0-fbb34d47cebe">Walkthrough: Displaying, Paging and Sorting Data Using the ListView Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -103,6 +105,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="ButtonCount">
@@ -152,6 +155,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.NumericPagerField.ButtonCount" /> property is set to a value less than 1.</exception>
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.ButtonType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="ButtonType">
@@ -216,6 +220,7 @@
         <altmember cref="T:System.Web.UI.WebControls.ButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.PreviousPageImageUrl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CopyProperties">
@@ -254,6 +259,7 @@
         <altmember cref="M:System.Web.UI.WebControls.NumericPagerField.CreateField" />
         <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
         <altmember cref="M:System.Web.UI.WebControls.DataPagerField.CloneField" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDataPagers">
@@ -297,6 +303,7 @@
         <altmember cref="M:System.Web.UI.WebControls.DataPager.CreatePagerFields" />
         <altmember cref="P:System.Web.UI.WebControls.DataPager.Fields" />
         <altmember cref="T:System.Web.UI.WebControls.DataPagerFieldItem" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CreateField">
@@ -332,6 +339,7 @@
         </block>
         <altmember cref="M:System.Web.UI.WebControls.DataPagerField.CloneField" />
         <altmember cref="M:System.Web.UI.WebControls.NumericPagerField.CopyProperties(System.Web.UI.WebControls.DataPagerField)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentPageLabelCssClass">
@@ -388,6 +396,7 @@
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.ButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.NextPreviousButtonCssClass" />
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.NumericButtonCssClass" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -422,6 +431,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -445,6 +455,7 @@
         <summary>Serves as a hash function for the <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> class.</summary>
         <returns>A hash code for the current <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> object. For more information, see the <see cref="M:System.Object.GetHashCode" /> class.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="HandleEvent">
@@ -489,6 +500,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataControlCommands" />
         <altmember cref="M:System.Web.UI.WebControls.DataPager.OnBubbleEvent(System.Object,System.EventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="NextPageImageUrl">
@@ -547,6 +559,7 @@
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.ButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.NextPageText" />
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.PreviousPageImageUrl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="NextPageText">
@@ -597,6 +610,7 @@
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.ButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.PreviousPageText" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="NextPreviousButtonCssClass">
@@ -652,6 +666,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.CurrentPageLabelCssClass" />
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.NumericButtonCssClass" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="NumericButtonCssClass">
@@ -710,6 +725,7 @@
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.ButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.CurrentPageLabelCssClass" />
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.NextPreviousButtonCssClass" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousPageImageUrl">
@@ -768,6 +784,7 @@
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.ButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.PreviousPageText" />
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousPageText">
@@ -818,6 +835,7 @@
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.ButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.PreviousPageImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.NextPageText" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RenderNonBreakingSpacesBetweenControls">
@@ -859,6 +877,7 @@
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.CurrentPageLabelCssClass" />
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.NextPreviousButtonCssClass" />
         <altmember cref="P:System.Web.UI.WebControls.NumericPagerField.NumericButtonCssClass" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="OutputCacheProfileCollection" FullName="System.Web.Configuration.OutputCacheProfileCollection">
+<Type Name="OutputCacheProfileCollection" FullName="System.Web.Configuration.OutputCacheProfileCollection">
   <TypeSignature Language="C#" Value="public sealed class OutputCacheProfileCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OutputCacheProfileCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.OutputCacheProfileCollection" />
@@ -43,6 +43,10 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce">ASP.NET Caching Features</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/51149563-a347-4b2b-bdc2-57a317e12487">How to: Set a Page's Cacheability Declaratively</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/659d419e-9418-46cc-90ce-646a785b24e2">How to: Set a Page's Cacheability Programmatically</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

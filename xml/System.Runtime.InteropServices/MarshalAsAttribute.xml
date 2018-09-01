@@ -1,4 +1,4 @@
-﻿<Type Name="MarshalAsAttribute" FullName="System.Runtime.InteropServices.MarshalAsAttribute">
+<Type Name="MarshalAsAttribute" FullName="System.Runtime.InteropServices.MarshalAsAttribute">
   <TypeSignature Language="C#" Value="public sealed class MarshalAsAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit MarshalAsAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.MarshalAsAttribute" />
@@ -78,6 +78,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
+    <related type="Article" href="~/docs/framework/tools/tlbexp-exe-type-library-exporter.md">Type Library Exporter (Tlbexp.exe)</related>
+    <related type="Article" href="~/docs/framework/tools/tlbimp-exe-type-library-importer.md">Type Library Importer (Tlbimp.exe)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -138,6 +140,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
+        <related type="Article" href="~/docs/framework/tools/tlbimp-exe-type-library-importer.md">Tlbimp.exe (Type Library Importer)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

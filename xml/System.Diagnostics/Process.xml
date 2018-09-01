@@ -1,4 +1,4 @@
-﻿<Type Name="Process" FullName="System.Diagnostics.Process">
+<Type Name="Process" FullName="System.Diagnostics.Process">
   <TypeSignature Language="C#" Value="public class Process : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Process extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Process" />
@@ -26,7 +26,8 @@
     <BaseTypeName>System.Object</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-4.5">System.ComponentModel.Component</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Attributes>
     <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.ComponentModel.DefaultEvent("Exited")</AttributeName>
@@ -121,6 +122,7 @@
     <altmember cref="M:System.Diagnostics.Process.CloseMainWindow" />
     <altmember cref="M:System.Diagnostics.Process.Kill" />
     <altmember cref="T:System.Diagnostics.ProcessThread" />
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/windowsdesktop/Using-the-NET-Process-Class-d70597ef">Using the .NET Process Class</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

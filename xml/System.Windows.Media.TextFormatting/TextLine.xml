@@ -1,4 +1,4 @@
-﻿<Type Name="TextLine" FullName="System.Windows.Media.TextFormatting.TextLine">
+<Type Name="TextLine" FullName="System.Windows.Media.TextFormatting.TextLine">
   <TypeSignature Language="C#" Value="public abstract class TextLine : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TextLine extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextLine" />
@@ -21,6 +21,7 @@
   <Docs>
     <summary>Provides an abstract class for supporting formatting services to a line of text.</summary>
     <remarks>To be added.</remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159965">Advanced Text Formatting Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="SkewTransform" FullName="System.Windows.Media.SkewTransform">
+<Type Name="SkewTransform" FullName="System.Windows.Media.SkewTransform">
   <TypeSignature Language="C#" Value="public sealed class SkewTransform : System.Windows.Media.Transform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SkewTransform extends System.Windows.Media.Transform" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.SkewTransform" />
@@ -26,6 +26,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -142,6 +143,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
       </Docs>
     </Member>
     <Member MemberName="AngleXProperty">
@@ -200,6 +202,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
       </Docs>
     </Member>
     <Member MemberName="AngleYProperty">
@@ -258,6 +261,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
       </Docs>
     </Member>
     <Member MemberName="CenterXProperty">
@@ -316,6 +320,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
       </Docs>
     </Member>
     <Member MemberName="CenterYProperty">

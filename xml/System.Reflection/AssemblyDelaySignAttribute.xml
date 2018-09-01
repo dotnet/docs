@@ -1,4 +1,4 @@
-﻿<Type Name="AssemblyDelaySignAttribute" FullName="System.Reflection.AssemblyDelaySignAttribute">
+<Type Name="AssemblyDelaySignAttribute" FullName="System.Reflection.AssemblyDelaySignAttribute">
   <TypeSignature Language="C#" Value="public sealed class AssemblyDelaySignAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyDelaySignAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyDelaySignAttribute" />
@@ -69,6 +69,8 @@ sn -k TestPublicKey.snk
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/metadata-and-self-describing-components.md">Metadata and Self-Describing Components</related>
+    <related type="Article" href="~/docs/standard/managed-execution-process.md">Managed Execution Process</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

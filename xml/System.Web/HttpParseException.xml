@@ -1,4 +1,4 @@
-﻿<Type Name="HttpParseException" FullName="System.Web.HttpParseException">
+<Type Name="HttpParseException" FullName="System.Web.HttpParseException">
   <TypeSignature Language="C#" Value="public sealed class HttpParseException : System.Web.HttpException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit HttpParseException extends System.Web.HttpException" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpParseException" />
@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.HttpParseException> class is an HTTP-specific exception class that enables ASP.NET to output parser exception information. For more information on throwing and handling exceptions, see [Exceptions](http://msdn.microsoft.com/library/f99a1d29-a2a8-47af-9707-9909f9010735).  
+ The <xref:System.Web.HttpParseException> class is an HTTP-specific exception class that enables ASP.NET to output parser exception information. For more information on throwing and handling exceptions, see [Exceptions](~/docs/standard/exceptions/index.md).  
   
    
   
@@ -43,6 +43,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.HtmlControls.HtmlSelect" />
     <altmember cref="T:System.Web.UI.HtmlControls.HtmlSelectBuilder" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

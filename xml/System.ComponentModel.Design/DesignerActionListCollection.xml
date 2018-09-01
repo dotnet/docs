@@ -1,4 +1,4 @@
-﻿<Type Name="DesignerActionListCollection" FullName="System.ComponentModel.Design.DesignerActionListCollection">
+<Type Name="DesignerActionListCollection" FullName="System.ComponentModel.Design.DesignerActionListCollection">
   <TypeSignature Language="C#" Value="public class DesignerActionListCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerActionListCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionListCollection" />
@@ -62,6 +62,7 @@
     <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.ActionLists" />
     <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Add" />
     <altmember cref="T:System.Collections.ArrayList" />
+    <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -103,6 +104,7 @@
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.AddRange(System.ComponentModel.Design.DesignerActionList[])" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -136,6 +138,7 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.AddRange(System.ComponentModel.Design.DesignerActionList[])" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -175,6 +178,7 @@
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.IndexOf(System.ComponentModel.Design.DesignerActionList)" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Insert(System.Int32,System.ComponentModel.Design.DesignerActionList)" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Remove(System.ComponentModel.Design.DesignerActionList)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AddRange">
@@ -223,6 +227,7 @@
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Add(System.ComponentModel.Design.DesignerActionList)" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.#ctor(System.ComponentModel.Design.DesignerActionList[])" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -261,6 +266,7 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Add(System.ComponentModel.Design.DesignerActionList)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -298,6 +304,7 @@
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
         <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.IndexOf(System.ComponentModel.Design.DesignerActionList)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -345,6 +352,7 @@
         <exception cref="T:System.InvalidCastException">A problem occurred casting the elements of the current collection to the type of the destination array, perhaps as the result of a failed downcast.</exception>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
         <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -382,6 +390,7 @@
         <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Contains(System.ComponentModel.Design.DesignerActionList)" />
         <altmember cref="P:System.ComponentModel.Design.DesignerActionListCollection.Item(System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -427,6 +436,7 @@
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Add(System.ComponentModel.Design.DesignerActionList)" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Remove(System.ComponentModel.Design.DesignerActionList)" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.OnInsert(System.Int32,System.Object)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -463,6 +473,7 @@
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.IndexOf(System.ComponentModel.Design.DesignerActionList)" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Contains(System.ComponentModel.Design.DesignerActionList)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="OnClear">
@@ -633,6 +644,7 @@
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Insert(System.Int32,System.ComponentModel.Design.DesignerActionList)" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Add(System.ComponentModel.Design.DesignerActionList)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
   </Members>

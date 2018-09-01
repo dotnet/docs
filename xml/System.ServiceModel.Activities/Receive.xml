@@ -1,4 +1,4 @@
-﻿<Type Name="Receive" FullName="System.ServiceModel.Activities.Receive">
+<Type Name="Receive" FullName="System.ServiceModel.Activities.Receive">
   <TypeSignature Language="C#" Value="public sealed class Receive : System.Activities.Activity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Receive extends System.Activities.Activity" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Receive" />
@@ -81,6 +81,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=189151">How to Send and Receive Faults in Workflow Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -587,6 +588,7 @@
         <returns>
           <see langword="true" /> if the <see cref="P:System.ServiceModel.Activities.Receive.CorrelatesOn" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=189151">How to Send and Receive Faults in Workflow Services</related>
       </Docs>
     </Member>
   </Members>

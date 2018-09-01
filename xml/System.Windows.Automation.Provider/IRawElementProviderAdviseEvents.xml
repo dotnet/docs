@@ -1,4 +1,4 @@
-﻿<Type Name="IRawElementProviderAdviseEvents" FullName="System.Windows.Automation.Provider.IRawElementProviderAdviseEvents">
+<Type Name="IRawElementProviderAdviseEvents" FullName="System.Windows.Automation.Provider.IRawElementProviderAdviseEvents">
   <TypeSignature Language="C#" Value="public interface IRawElementProviderAdviseEvents : System.Windows.Automation.Provider.IRawElementProviderSimple" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRawElementProviderAdviseEvents implements class System.Windows.Automation.Provider.IRawElementProviderSimple" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IRawElementProviderAdviseEvents" />
@@ -32,6 +32,7 @@
   <Docs>
     <summary>Exposes methods that are called to notify the root element of a fragment when a UI Automation client application begins or ends listening for events.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
   </Docs>
   <Members>
     <Member MemberName="AdviseEventAdded">

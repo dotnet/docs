@@ -1,4 +1,4 @@
-﻿<Type Name="IControlDesignerView" FullName="System.Web.UI.Design.IControlDesignerView">
+<Type Name="IControlDesignerView" FullName="System.Web.UI.Design.IControlDesignerView">
   <TypeSignature Language="C#" Value="public interface IControlDesignerView" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IControlDesignerView" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IControlDesignerView" />
@@ -22,6 +22,8 @@
  ]]></format>
     </remarks>
     <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName="ContainingRegion">
@@ -45,6 +47,8 @@
         <value>A <see cref="T:System.Web.UI.Design.DesignerRegion" /> object if the associated control is contained in a designer region; otherwise <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetBounds">
@@ -72,6 +76,8 @@
         <returns>A <see cref="T:System.Drawing.Rectangle" /> containing information about the location and measurements of the view at design time.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
@@ -97,6 +103,8 @@
         <summary>Notifies the design host that the area represented by the provided rectangle needs to be repainted on the design surface.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="NamingContainerDesigner">
@@ -120,6 +128,8 @@
         <value>An IDesigner object representing the designer component for the naming container for the associated control; otherwise <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="SetFlags">
@@ -148,6 +158,8 @@
         <summary>For a description of this member, see <see cref="M:System.Web.UI.Design.IControlDesignerView.SetFlags(System.Web.UI.Design.ViewFlags,System.Boolean)" />.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="SetRegionContent">
@@ -176,6 +188,8 @@
         <summary>Puts the provided content into the provided designer region.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="SupportsRegions">
@@ -200,6 +214,8 @@
           <see langword="true" /> if designer regions are supported; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -223,6 +239,8 @@
         <summary>Causes the associated control to redraw the invalidated regions within its client area.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="ViewEvent">
@@ -258,6 +276,8 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

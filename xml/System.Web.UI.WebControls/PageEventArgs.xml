@@ -38,6 +38,7 @@
     <altmember cref="T:System.Web.UI.WebControls.IPageableItemContainer" />
     <altmember cref="E:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable" />
     <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,6 +91,7 @@
         <altmember cref="P:System.Web.UI.WebControls.PageEventArgs.StartRowIndex" />
         <altmember cref="P:System.Web.UI.WebControls.PageEventArgs.MaximumRows" />
         <altmember cref="P:System.Web.UI.WebControls.PageEventArgs.TotalRowCount" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="MaximumRows">
@@ -119,6 +121,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.WebControls.PageEventArgs.StartRowIndex" />
         <altmember cref="P:System.Web.UI.WebControls.PageEventArgs.TotalRowCount" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StartRowIndex">
@@ -148,6 +151,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.WebControls.PageEventArgs.MaximumRows" />
         <altmember cref="P:System.Web.UI.WebControls.PageEventArgs.TotalRowCount" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="TotalRowCount">
@@ -177,6 +181,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.WebControls.PageEventArgs.MaximumRows" />
         <altmember cref="P:System.Web.UI.WebControls.PageEventArgs.StartRowIndex" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="DataRowComparer" FullName="System.Data.DataRowComparer">
+<Type Name="DataRowComparer" FullName="System.Data.DataRowComparer">
   <TypeSignature Language="C#" Value="public static class DataRowComparer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DataRowComparer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataRowComparer" />
@@ -28,6 +28,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/8fe0eadf-297b-487c-8d4b-7816753c2883">Comparing DataRows</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/dfd91658-8d8a-45a4-a356-e327e809f21d">LINQ to DataSet Examples</related>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -57,6 +59,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8fe0eadf-297b-487c-8d4b-7816753c2883">Comparing DataRows</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/dfd91658-8d8a-45a4-a356-e327e809f21d">LINQ to DataSet Examples</related>
       </Docs>
     </Member>
   </Members>

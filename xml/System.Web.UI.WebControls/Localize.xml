@@ -1,4 +1,4 @@
-﻿<Type Name="Localize" FullName="System.Web.UI.WebControls.Localize">
+<Type Name="Localize" FullName="System.Web.UI.WebControls.Localize">
   <TypeSignature Language="C#" Value="public class Localize : System.Web.UI.WebControls.Literal" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Localize extends System.Web.UI.WebControls.Literal" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Localize" />
@@ -86,6 +86,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.Literal" />
     <altmember cref="T:System.Web.UI.WebControls.Label" />
+    <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -117,6 +118,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.Literal" />
+        <related type="Article" href="http://msdn.microsoft.com/library/9f856045-c514-4efb-8c6c-30c0c29cc780">Literal Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
       </Docs>
     </Member>
   </Members>

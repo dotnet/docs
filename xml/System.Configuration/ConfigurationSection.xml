@@ -1,4 +1,4 @@
-﻿<Type Name="ConfigurationSection" FullName="System.Configuration.ConfigurationSection">
+<Type Name="ConfigurationSection" FullName="System.Configuration.ConfigurationSection">
   <TypeSignature Language="C#" Value="public abstract class ConfigurationSection : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ConfigurationSection extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationSection" />
@@ -90,6 +90,7 @@
     <altmember cref="T:System.Configuration.Configuration" />
     <altmember cref="T:System.Configuration.SectionInformation" />
     <altmember cref="T:System.Configuration.ConfigurationElement" />
+    <related type="Article" href="http://msdn.microsoft.com/library/5696e8b2-d489-4220-aef2-f2e0ca9099b4">ASP.NET Configuration API Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -391,6 +392,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializePropertyInTargetVersion">
@@ -436,6 +438,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeSectionInTargetVersion">
@@ -475,6 +478,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
       </Docs>
     </Member>
   </Members>

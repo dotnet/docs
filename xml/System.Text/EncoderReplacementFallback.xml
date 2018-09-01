@@ -1,4 +1,4 @@
-﻿<Type Name="EncoderReplacementFallback" FullName="System.Text.EncoderReplacementFallback">
+<Type Name="EncoderReplacementFallback" FullName="System.Text.EncoderReplacementFallback">
   <TypeSignature Language="C#" Value="public sealed class EncoderReplacementFallback : System.Text.EncoderFallback" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit EncoderReplacementFallback extends System.Text.EncoderFallback" />
   <TypeSignature Language="DocId" Value="T:System.Text.EncoderReplacementFallback" />
@@ -65,6 +65,7 @@
     <altmember cref="T:System.Text.EncoderReplacementFallbackBuffer" />
     <altmember cref="Overload:System.Text.EncoderReplacementFallback.#ctor" />
     <altmember cref="P:System.Text.EncoderReplacementFallback.DefaultString" />
+    <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

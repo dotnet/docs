@@ -1,4 +1,4 @@
-﻿<Type Name="CustomBindingElement" FullName="System.ServiceModel.Configuration.CustomBindingElement">
+<Type Name="CustomBindingElement" FullName="System.ServiceModel.Configuration.CustomBindingElement">
   <TypeSignature Language="C#" Value="public class CustomBindingElement : System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement&lt;System.ServiceModel.Configuration.BindingElementExtensionElement&gt;, System.Collections.Generic.ICollection&lt;System.ServiceModel.Configuration.BindingElementExtensionElement&gt;, System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Configuration.BindingElementExtensionElement&gt;, System.ServiceModel.Configuration.IBindingConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CustomBindingElement extends System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement`1&lt;class System.ServiceModel.Configuration.BindingElementExtensionElement&gt; implements class System.Collections.Generic.ICollection`1&lt;class System.ServiceModel.Configuration.BindingElementExtensionElement&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Configuration.BindingElementExtensionElement&gt;, class System.Collections.IEnumerable, class System.ServiceModel.Configuration.IBindingConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.CustomBindingElement" />
@@ -49,6 +49,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/845df323-be53-4848-92ef-ba67a406484d">Windows Communication Foundation Bindings</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/9da4f960-f64e-4d8a-894d-2b09eba5ce4b">customBinding Element</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

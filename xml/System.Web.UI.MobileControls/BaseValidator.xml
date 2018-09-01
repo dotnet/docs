@@ -1,4 +1,4 @@
-﻿<Type Name="BaseValidator" FullName="System.Web.UI.MobileControls.BaseValidator">
+<Type Name="BaseValidator" FullName="System.Web.UI.MobileControls.BaseValidator">
   <TypeSignature Language="C#" Value="public abstract class BaseValidator : System.Web.UI.MobileControls.TextControl, System.Web.UI.IValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseValidator extends System.Web.UI.MobileControls.TextControl implements class System.Web.UI.IValidator" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.BaseValidator" />
@@ -62,6 +62,8 @@
     <altmember cref="T:System.Web.UI.MobileControls.RegularExpressionValidator" />
     <altmember cref="T:System.Web.UI.MobileControls.RequiredFieldValidator" />
     <altmember cref="T:System.Web.UI.MobileControls.ValidationSummary" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0zt0w6xe(v=vs.85)">Validation Controls</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/3db6f7e6-ad52-42cf-a429-c2aaa7d64ed7">Validating Against a Specific Value for ASP.NET Server Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -89,6 +91,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0zt0w6xe(v=vs.85)">Validation Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CheckControlValidationProperty">
@@ -119,6 +122,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">either the <paramref name="name" /> or <paramref name="propertyName" /> parameters is <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0zt0w6xe(v=vs.85)">Validation Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ControlPropertiesValid">
@@ -146,6 +150,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">the <see cref="P:System.Web.UI.MobileControls.BaseValidator.ControlToValidate" /> property is empty or the control does not exist.</exception>
         <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0zt0w6xe(v=vs.85)">Validation Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ControlToValidate">
@@ -188,6 +193,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0zt0w6xe(v=vs.85)">Validation Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CreateStyle">
@@ -212,6 +218,7 @@
         <returns>A new <see cref="T:System.Web.UI.MobileControls.Style" /> object.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0zt0w6xe(v=vs.85)">Validation Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CreateWebValidator">
@@ -244,6 +251,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0zt0w6xe(v=vs.85)">Validation Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -288,6 +296,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0zt0w6xe(v=vs.85)">Validation Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ErrorMessage">
@@ -327,6 +336,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0zt0w6xe(v=vs.85)">Validation Controls</related>
       </Docs>
     </Member>
     <Member MemberName="EvaluateIsValid">
@@ -360,6 +370,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0zt0w6xe(v=vs.85)">Validation Controls</related>
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -399,6 +410,7 @@
           <see langword="true" /> if the data validated by the control is valid; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0zt0w6xe(v=vs.85)">Validation Controls</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -510,6 +522,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0zt0w6xe(v=vs.85)">Validation Controls</related>
       </Docs>
     </Member>
     <Member MemberName="VisibleWeight">

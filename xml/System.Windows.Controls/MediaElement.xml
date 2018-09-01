@@ -1,4 +1,4 @@
-﻿<Type Name="MediaElement" FullName="System.Windows.Controls.MediaElement">
+<Type Name="MediaElement" FullName="System.Windows.Controls.MediaElement">
   <TypeSignature Language="C#" Value="public class MediaElement : System.Windows.FrameworkElement, System.Windows.Markup.IUriContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi MediaElement extends System.Windows.FrameworkElement implements class System.Windows.Markup.IUriContext" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.MediaElement" />
@@ -1050,6 +1050,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?linkid=57417">IWMPEventsScriptCommand</related>
       </Docs>
     </Member>
     <Member MemberName="ScriptCommandEvent">

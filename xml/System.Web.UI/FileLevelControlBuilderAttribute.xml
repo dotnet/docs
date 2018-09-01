@@ -1,4 +1,4 @@
-﻿<Type Name="FileLevelControlBuilderAttribute" FullName="System.Web.UI.FileLevelControlBuilderAttribute">
+<Type Name="FileLevelControlBuilderAttribute" FullName="System.Web.UI.FileLevelControlBuilderAttribute">
   <TypeSignature Language="C#" Value="public sealed class FileLevelControlBuilderAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileLevelControlBuilderAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.FileLevelControlBuilderAttribute" />
@@ -33,6 +33,7 @@
     <altmember cref="T:System.Web.UI.UserControl" />
     <altmember cref="T:System.Web.UI.Page" />
     <altmember cref="T:System.Web.UI.TemplateControl" />
+    <related type="Article" href="https://msdn.microsoft.com/library/22bdc64b-ab7e-4da7-80f7-bbad3ea39015">Writing Your Own Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="EventLogInstaller" FullName="System.Diagnostics.EventLogInstaller">
+<Type Name="EventLogInstaller" FullName="System.Diagnostics.EventLogInstaller">
   <TypeSignature Language="C#" Value="public class EventLogInstaller : System.Configuration.Install.ComponentInstaller" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventLogInstaller extends System.Configuration.Install.ComponentInstaller" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLogInstaller" />
@@ -63,6 +63,7 @@
     </remarks>
     <altmember cref="T:System.Diagnostics.EventLog" />
     <altmember cref="Overload:System.Diagnostics.EventLog.CreateEventSource" />
+    <related type="Article" href="~/docs/framework/tools/installutil-exe-installer-tool.md">Installutil.exe (Installer Tool)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

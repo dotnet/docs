@@ -1,4 +1,4 @@
-﻿<Type Name="GregorianCalendar" FullName="System.Globalization.GregorianCalendar">
+<Type Name="GregorianCalendar" FullName="System.Globalization.GregorianCalendar">
   <TypeSignature Language="C#" Value="public class GregorianCalendar : System.Globalization.Calendar" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit GregorianCalendar extends System.Globalization.Calendar" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.GregorianCalendar" />
@@ -80,6 +80,8 @@
     <altmember cref="T:System.Globalization.Calendar" />
     <altmember cref="P:System.Globalization.CultureInfo.Calendar" />
     <altmember cref="P:System.Globalization.CultureInfo.OptionalCalendars" />
+    <related type="Article" href="~/docs/standard/datetime/working-with-calendars.md">Working with Calendars</related>
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Calendar-3360a84a">Sample: Calendar Week Range Utility</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

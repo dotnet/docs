@@ -1,4 +1,4 @@
-﻿<Type Name="ThreadAbortException" FullName="System.Threading.ThreadAbortException">
+<Type Name="ThreadAbortException" FullName="System.Threading.ThreadAbortException">
   <TypeSignature Language="C#" Value="public sealed class ThreadAbortException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ThreadAbortException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadAbortException" />
@@ -74,6 +74,7 @@ Main ending.
     </remarks>
     <altmember cref="T:System.Threading.Thread" />
     <altmember cref="M:System.Threading.Thread.Abort(System.Object)" />
+    <related type="Article" href="~/docs/standard/threading/destroying-threads.md">Destroying threads</related>
   </Docs>
   <Members>
     <Member MemberName="ExceptionState">
@@ -130,6 +131,7 @@ Main ending.
         </remarks>
         <altmember cref="P:System.Threading.Thread.CurrentThread" />
         <altmember cref="M:System.Threading.Thread.Abort(System.Object)" />
+        <related type="Article" href="~/docs/standard/threading/destroying-threads.md">Destroying threads</related>
       </Docs>
     </Member>
   </Members>

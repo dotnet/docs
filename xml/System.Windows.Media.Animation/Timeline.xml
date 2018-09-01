@@ -1,4 +1,4 @@
-﻿<Type Name="Timeline" FullName="System.Windows.Media.Animation.Timeline">
+<Type Name="Timeline" FullName="System.Windows.Media.Animation.Timeline">
   <TypeSignature Language="C#" Value="public abstract class Timeline : System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Timeline extends System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.Timeline" />
@@ -62,6 +62,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159970">Animation Timing Behavior Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

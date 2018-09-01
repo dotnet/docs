@@ -1,4 +1,4 @@
-﻿<Type Name="GradientStopCollection" FullName="System.Windows.Media.GradientStopCollection">
+<Type Name="GradientStopCollection" FullName="System.Windows.Media.GradientStopCollection">
   <TypeSignature Language="C#" Value="public sealed class GradientStopCollection : System.Windows.Media.Animation.Animatable, IFormattable, System.Collections.Generic.ICollection&lt;System.Windows.Media.GradientStop&gt;, System.Collections.Generic.IEnumerable&lt;System.Windows.Media.GradientStop&gt;, System.Collections.Generic.IList&lt;System.Windows.Media.GradientStop&gt;, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GradientStopCollection extends System.Windows.Media.Animation.Animatable implements class System.Collections.Generic.ICollection`1&lt;class System.Windows.Media.GradientStop&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Media.GradientStop&gt;, class System.Collections.Generic.IList`1&lt;class System.Windows.Media.GradientStop&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GradientStopCollection" />
@@ -66,6 +66,7 @@
     <altmember cref="T:System.Collections.Generic.IList`1" />
     <altmember cref="T:System.Collections.Generic.ICollection`1" />
     <altmember cref="T:System.Collections.Generic.IEnumerable`1" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159973">Brushes Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

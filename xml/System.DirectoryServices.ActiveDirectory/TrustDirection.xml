@@ -1,4 +1,4 @@
-﻿<Type Name="TrustDirection" FullName="System.DirectoryServices.ActiveDirectory.TrustDirection">
+<Type Name="TrustDirection" FullName="System.DirectoryServices.ActiveDirectory.TrustDirection">
   <TypeSignature Language="C#" Value="public enum TrustDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TrustDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/e1df3378-17b0-4429-91c7-13d4a457fb6e">Working With Trusts</related>
   </Docs>
   <Members>
     <Member MemberName="Bidirectional">

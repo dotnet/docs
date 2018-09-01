@@ -1,4 +1,4 @@
-﻿<Type Name="TitleStyle" FullName="System.Web.UI.WebControls.WebParts.TitleStyle">
+<Type Name="TitleStyle" FullName="System.Web.UI.WebControls.WebParts.TitleStyle">
   <TypeSignature Language="C#" Value="public sealed class TitleStyle : System.Web.UI.WebControls.TableItemStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TitleStyle extends System.Web.UI.WebControls.TableItemStyle" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.TitleStyle" />
@@ -37,6 +37,7 @@
     <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
     <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
     <altmember cref="T:System.Web.UI.WebControls.Style" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +63,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -108,6 +110,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.TableItemStyle.Wrap" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

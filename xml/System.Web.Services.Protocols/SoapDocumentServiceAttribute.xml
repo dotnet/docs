@@ -1,4 +1,4 @@
-﻿<Type Name="SoapDocumentServiceAttribute" FullName="System.Web.Services.Protocols.SoapDocumentServiceAttribute">
+<Type Name="SoapDocumentServiceAttribute" FullName="System.Web.Services.Protocols.SoapDocumentServiceAttribute">
   <TypeSignature Language="C#" Value="public sealed class SoapDocumentServiceAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapDocumentServiceAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapDocumentServiceAttribute" />
@@ -36,7 +36,7 @@
   
  To set the default method level formatting to `RPC`, apply a <xref:System.Web.Services.Protocols.SoapRpcServiceAttribute> to the class implementing the XML Web service.  
   
- For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/library/1d777288-c0d9-4e6a-b638-f010da031952).  
+ For more details, see [Customizing SOAP Message Formatting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dkwy2d72(v=vs.100)).  
   
  This attribute can be applied to a class implementing an XML Web service.  
   
@@ -44,6 +44,7 @@
     </remarks>
     <altmember cref="T:System.Web.Services.Protocols.SoapDocumentMethodAttribute" />
     <altmember cref="T:System.Web.Services.Protocols.SoapRpcServiceAttribute" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dkwy2d72(v=vs.100)">Customizing SOAP Message Formatting</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -149,6 +150,7 @@
         <value>The default <see cref="T:System.Web.Services.Protocols.SoapParameterStyle" /> for SOAP requests and SOAP responses to and from XML Web service methods within the XML Web service. If not set, the default is <see cref="F:System.Web.Services.Protocols.SoapParameterStyle.Wrapped" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.Services.Protocols.SoapParameterStyle" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dkwy2d72(v=vs.100)">Customizing SOAP Message Formatting</related>
       </Docs>
     </Member>
     <Member MemberName="RoutingStyle">
@@ -202,11 +204,12 @@
 ## Remarks  
  The Web Services Description Language (WSDL) defines two formatting styles for parameters sent to and from XML Web services: <xref:System.Web.Services.Description.SoapBindingUse.Encoded> and <xref:System.Web.Services.Description.SoapBindingUse.Literal>. <xref:System.Web.Services.Description.SoapBindingUse.Encoded> refers to formatting the parameters using the SOAP encoding outlined in the SOAP specification in section 5. <xref:System.Web.Services.Description.SoapBindingUse.Literal> refers to formatting the parameters using a predefined XSD schema for each parameter.  
   
- For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/library/1d777288-c0d9-4e6a-b638-f010da031952).  
+ For more details, see [Customizing SOAP Message Formatting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dkwy2d72(v=vs.100)).  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Services.Description.SoapBindingUse" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dkwy2d72(v=vs.100)">Customizing SOAP Message Formatting</related>
       </Docs>
     </Member>
   </Members>

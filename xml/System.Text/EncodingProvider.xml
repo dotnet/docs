@@ -1,4 +1,4 @@
-﻿<Type Name="EncodingProvider" FullName="System.Text.EncodingProvider">
+<Type Name="EncodingProvider" FullName="System.Text.EncodingProvider">
   <TypeSignature Language="C#" Value="public abstract class EncodingProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EncodingProvider extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Text.EncodingProvider" />
@@ -73,6 +73,7 @@
  ]]></format>
     </remarks>
     <altmember cref="M:System.Text.Encoding.GetEncoding(System.String)" />
+    <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/system.text.codepagesencodingprovider.instance(v=vs.110).aspx">CodePagesEncodingProvider.Instance Property</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="X509ClientCertificateAuthentication" FullName="System.ServiceModel.Security.X509ClientCertificateAuthentication">
+<Type Name="X509ClientCertificateAuthentication" FullName="System.ServiceModel.Security.X509ClientCertificateAuthentication">
   <TypeSignature Language="C#" Value="public class X509ClientCertificateAuthentication" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit X509ClientCertificateAuthentication extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.X509ClientCertificateAuthentication" />
@@ -43,6 +43,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.IdentityModel.Selectors.X509CertificateValidator" />
+    <related type="Article" href="http://msdn.microsoft.com/library/bb0190ff-0738-4e54-8d22-c97d343708bf">How To: Create a Service Employing a Custom Certificate Validator</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/6ffb8682-8f07-4a45-afbb-8d2487e9dbc3">Working with Certificates</related>
   </Docs>
   <Members>
     <Member MemberName="CertificateValidationMode">
@@ -163,6 +165,7 @@
           <see langword="set" /> when credential is read-only.</exception>
         <altmember cref="P:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode" />
         <altmember cref="T:System.IdentityModel.Selectors.X509CertificateValidator" />
+        <related type="Article" href="http://msdn.microsoft.com/library/bb0190ff-0738-4e54-8d22-c97d343708bf">How To: Create a Service Employing a Custom Certificate Validator</related>
       </Docs>
     </Member>
     <Member MemberName="IncludeWindowsGroups">
@@ -329,6 +332,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see langword="set" /> when credential is read-only.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6ffb8682-8f07-4a45-afbb-8d2487e9dbc3">Working with Certificates</related>
       </Docs>
     </Member>
     <Member MemberName="TrustedStoreLocation">

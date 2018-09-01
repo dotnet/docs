@@ -1,4 +1,4 @@
-﻿<Type Name="ClientScriptManager" FullName="System.Web.UI.ClientScriptManager">
+<Type Name="ClientScriptManager" FullName="System.Web.UI.ClientScriptManager">
   <TypeSignature Language="C#" Value="public sealed class ClientScriptManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClientScriptManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ClientScriptManager" />
@@ -51,6 +51,8 @@
     <altmember cref="T:System.Web.UI.Page" />
     <altmember cref="P:System.Web.Configuration.HttpCapabilitiesBase.SupportsCallback" />
     <altmember cref="P:System.Web.Configuration.HttpCapabilitiesBase.SupportsXmlHttp" />
+    <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185">Client Callbacks Without Postbacks in ASP.NET Pages</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="GetCallbackEventReference">
@@ -132,6 +134,7 @@
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.Control" /> specified is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.Control" /> specified does not implement the <see cref="T:System.Web.UI.ICallbackEventHandler" /> interface.</exception>
         <altmember cref="T:System.Web.UI.ICallbackEventHandler" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185">Client Callbacks Without Postbacks in ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetCallbackEventReference">
@@ -185,6 +188,7 @@
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.Control" /> specified is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.Control" /> specified does not implement the <see cref="T:System.Web.UI.ICallbackEventHandler" /> interface.</exception>
         <altmember cref="T:System.Web.UI.ICallbackEventHandler" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185">Client Callbacks Without Postbacks in ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetCallbackEventReference">
@@ -247,6 +251,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.ICallbackEventHandler" />
         <altmember cref="P:System.Web.UI.Control.UniqueID" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185">Client Callbacks Without Postbacks in ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetCallbackEventReference">
@@ -295,6 +300,7 @@
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.Control" /> specified is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.Control" /> specified does not implement the <see cref="T:System.Web.UI.ICallbackEventHandler" /> interface.</exception>
         <altmember cref="T:System.Web.UI.ICallbackEventHandler" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185">Client Callbacks Without Postbacks in ASP.NET Pages</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetPostBackClientHyperlink">
@@ -455,6 +461,7 @@
         <altmember cref="T:System.Web.UI.PostBackOptions" />
         <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
         <altmember cref="T:System.Web.UI.WebControls.Button" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185">Client Callbacks Without Postbacks in ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetPostBackEventReference">
@@ -512,6 +519,7 @@
         <exception cref="T:System.ArgumentNullException">The specified <see cref="T:System.Web.UI.Control" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.PostBackOptions" />
         <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185">Client Callbacks Without Postbacks in ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetPostBackEventReference">
@@ -556,6 +564,7 @@
         <altmember cref="T:System.Web.UI.PostBackOptions" />
         <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
         <altmember cref="T:System.Web.UI.WebControls.Button" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185">Client Callbacks Without Postbacks in ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetPostBackEventReference">
@@ -605,6 +614,7 @@
         <exception cref="T:System.ArgumentNullException">The specified <see cref="T:System.Web.UI.Control" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.PostBackOptions" />
         <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185">Client Callbacks Without Postbacks in ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetWebResourceUrl">
@@ -670,6 +680,9 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
         <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterClientScriptResource(System.Type,System.String)" />
         <altmember cref="T:System.Web.UI.WebResourceAttribute" />
         <altmember cref="T:System.Web.Handlers.AssemblyResourceLoader" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd">ASP.NET Web Page Resources Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/5212666e-98ab-47e4-a497-b5545ab15c7f">/resource (Embed Resource File to Output) (C# Compiler Options)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/eee2f227-91f2-4f2b-a9d6-1c51c5320858">/resource (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="IsClientScriptBlockRegistered">
@@ -1652,6 +1665,7 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
         </remarks>
         <exception cref="T:System.InvalidOperationException">The method is called prior to the <see cref="M:System.Web.UI.Page.Render(System.Web.UI.HtmlTextWriter)" /> method.</exception>
         <altmember cref="M:System.Web.UI.ClientScriptManager.ValidateEvent(System.String,System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/18fc94c9-56fc-46c3-9f29-7358f18667df">Client Callback with Validation Implementation Example</related>
       </Docs>
     </Member>
     <Member MemberName="RegisterHiddenField">

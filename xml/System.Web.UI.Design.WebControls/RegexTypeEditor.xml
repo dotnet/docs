@@ -1,4 +1,4 @@
-﻿<Type Name="RegexTypeEditor" FullName="System.Web.UI.Design.WebControls.RegexTypeEditor">
+<Type Name="RegexTypeEditor" FullName="System.Web.UI.Design.WebControls.RegexTypeEditor">
   <TypeSignature Language="C#" Value="public class RegexTypeEditor : System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RegexTypeEditor extends System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.RegexTypeEditor" />
@@ -20,6 +20,9 @@
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Text.RegularExpressions.Regex" />
     <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+    <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,6 +48,7 @@
         <summary>Creates an instance of the <see cref="T:System.Web.UI.Design.WebControls.RegexTypeEditor" /> class.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Text.RegularExpressions.Regex" />
+        <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
       </Docs>
     </Member>
     <Member MemberName="EditValue">
@@ -77,6 +81,8 @@
         <returns>The new value of the object. If the value of the object hasn't changed, this method returns the same object it received.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Text.RegularExpressions.Regex" />
+        <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
       </Docs>
     </Member>
     <Member MemberName="GetEditStyle">
@@ -105,6 +111,8 @@
         <returns>A <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> value that indicates the editor style used by the method.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Text.RegularExpressions.Regex" />
+        <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
       </Docs>
     </Member>
   </Members>

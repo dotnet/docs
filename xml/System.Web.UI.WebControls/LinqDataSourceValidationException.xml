@@ -1,4 +1,4 @@
-﻿<Type Name="LinqDataSourceValidationException" FullName="System.Web.UI.WebControls.LinqDataSourceValidationException">
+<Type Name="LinqDataSourceValidationException" FullName="System.Web.UI.WebControls.LinqDataSourceValidationException">
   <TypeSignature Language="C#" Value="public class LinqDataSourceValidationException : Exception, System.Web.DynamicData.IDynamicValidatorException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit LinqDataSourceValidationException extends System.Exception implements class System.Runtime.Serialization.ISerializable, class System.Web.DynamicData.IDynamicValidatorException" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceValidationException" />
@@ -116,6 +116,7 @@ protected void LinqDataSource_Updating(object sender,
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -155,6 +156,7 @@ protected void LinqDataSource_Updating(object sender,
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -251,6 +253,7 @@ protected void LinqDataSource_Updating(object sender,
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">

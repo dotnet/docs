@@ -1,4 +1,4 @@
-﻿<Type Name="QueryStringParameter" FullName="System.Web.UI.WebControls.QueryStringParameter">
+<Type Name="QueryStringParameter" FullName="System.Web.UI.WebControls.QueryStringParameter">
   <TypeSignature Language="C#" Value="public class QueryStringParameter : System.Web.UI.WebControls.Parameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueryStringParameter extends System.Web.UI.WebControls.Parameter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.QueryStringParameter" />
@@ -54,6 +54,7 @@
     <altmember cref="T:System.Web.UI.WebControls.FormParameter" />
     <altmember cref="T:System.Web.UI.WebControls.ProfileParameter" />
     <altmember cref="T:System.Web.UI.WebControls.SessionParameter" />
+    <related type="Article" href="https://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f(v=vs.100)">[&lt;topic://vbconASPNETDataSourceControlParameters&gt;]</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

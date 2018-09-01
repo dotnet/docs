@@ -1,4 +1,4 @@
-﻿<Type Name="TextControl" FullName="System.Web.UI.MobileControls.TextControl">
+<Type Name="TextControl" FullName="System.Web.UI.MobileControls.TextControl">
   <TypeSignature Language="C#" Value="public abstract class TextControl : System.Web.UI.MobileControls.MobileControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TextControl extends System.Web.UI.MobileControls.MobileControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.TextControl" />
@@ -36,6 +36,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dkh2b1x0(v=vs.85)">Introduction to the TextView Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -101,6 +102,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dkh2b1x0(v=vs.85)">Introduction to the TextView Control</related>
       </Docs>
     </Member>
   </Members>

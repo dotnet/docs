@@ -1,4 +1,4 @@
-﻿<Type Name="DataSourceControl" FullName="System.Web.UI.DataSourceControl">
+<Type Name="DataSourceControl" FullName="System.Web.UI.DataSourceControl">
   <TypeSignature Language="C#" Value="public abstract class DataSourceControl : System.Web.UI.Control, System.ComponentModel.IListSource, System.Web.UI.IDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataSourceControl extends System.Web.UI.Control implements class System.ComponentModel.IListSource, class System.Web.UI.IDataSource" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceControl" />
@@ -206,6 +206,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set this property.</exception>
         <altmember cref="P:System.Web.UI.Control.ClientIDMode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7">ASP.NET Control Identification</related>
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -645,6 +646,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set the value of the <see cref="P:System.Web.UI.DataSourceControl.SkinID" /> property.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3(v=vs.100)">ASP.NET Themes Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IListSource.ContainsListCollection">

@@ -1,4 +1,4 @@
-﻿<Type Name="TaskCanceledException" FullName="System.Threading.Tasks.TaskCanceledException">
+<Type Name="TaskCanceledException" FullName="System.Threading.Tasks.TaskCanceledException">
   <TypeSignature Language="C#" Value="public class TaskCanceledException : OperationCanceledException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TaskCanceledException extends System.OperationCanceledException" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskCanceledException" />
@@ -34,6 +34,9 @@
     <summary>Represents an exception used to communicate task cancellation.</summary>
     <remarks>To be added.</remarks>
     <threadsafe>The <see cref="P:System.Threading.Tasks.TaskCanceledException.Task" /> property is thread-safe and may be used from multiple threads concurrently.</threadsafe>
+    <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+    <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+    <related type="Article" href="~/docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md">How to: Cancel a Task and Its Children</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -88,6 +91,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md">How to: Cancel a Task and Its Children</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -133,6 +140,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md">How to: Cancel a Task and Its Children</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -165,6 +176,10 @@
         <param name="task">A task that has been canceled.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.TaskCanceledException" /> class with a reference to the <see cref="T:System.Threading.Tasks.Task" /> that has been canceled.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md">How to: Cancel a Task and Its Children</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -205,6 +220,11 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md">How to: Cancel a Task and Its Children</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/p/?LinkID=248602">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -254,6 +274,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md">How to: Cancel a Task and Its Children</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -321,6 +345,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md">How to: Cancel a Task and Its Children</related>
       </Docs>
     </Member>
   </Members>

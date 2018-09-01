@@ -1,4 +1,4 @@
-﻿<Type Name="Part" FullName="System.Web.UI.WebControls.WebParts.Part">
+<Type Name="Part" FullName="System.Web.UI.WebControls.WebParts.Part">
   <TypeSignature Language="C#" Value="public abstract class Part : System.Web.UI.WebControls.Panel, System.Web.UI.INamingContainer, System.Web.UI.WebControls.ICompositeControlDesignerAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Part extends System.Web.UI.WebControls.Panel implements class System.Web.UI.INamingContainer, class System.Web.UI.WebControls.ICompositeControlDesignerAccessor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.Part" />
@@ -86,6 +86,9 @@
     <block subset="none" type="overrides">
       <para>Normally, you should not inherit directly from the <see cref="T:System.Web.UI.WebControls.WebParts.Part" /> class to develop custom Web Parts controls. To provide full Web Parts functionality, the Web Parts control set requires the classes derived from the <see cref="T:System.Web.UI.WebControls.WebParts.Part" /> class, namely <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" />, <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" />, and <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" />, so you should derive from them to develop custom controls. However, it is still important to understand the behavior of the base <see cref="T:System.Web.UI.WebControls.WebParts.Part" /> class, because it provides a common set of properties used by all other part classes.</para>
     </block>
+    <related type="Article" href="http://msdn.microsoft.com/library/13525a0a-22b8-4861-b24c-99df859e2cb5">Introduction to Web Parts</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Overview: The Web Parts Control Set</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName="ChromeState">
@@ -134,6 +137,7 @@
         <block subset="none" type="overrides">
           <para>Derived classes such as <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> can override <see cref="P:System.Web.UI.WebControls.WebParts.Part.ChromeState" /> to enable user personalization of the control's border state.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ChromeType">
@@ -182,6 +186,7 @@
         <block subset="none" type="overrides">
           <para>Derived classes such as <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> can override <see cref="P:System.Web.UI.WebControls.WebParts.Part.ChromeType" /> to enable user personalization of the kind of border that frames a control.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -214,6 +219,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Control.Controls" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -291,6 +297,7 @@
         </block>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls">
@@ -316,6 +323,7 @@
         <summary>Allows the developer of a designer for a composite part control to recreate the control's child controls on the design surface.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -369,6 +377,7 @@
         </block>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Subtitle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

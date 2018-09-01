@@ -1,4 +1,4 @@
-﻿<Type Name="TaskExtensions" FullName="System.Threading.Tasks.TaskExtensions">
+<Type Name="TaskExtensions" FullName="System.Threading.Tasks.TaskExtensions">
   <TypeSignature Language="C#" Value="public static class TaskExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TaskExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskExtensions" />
@@ -28,6 +28,9 @@
   <Docs>
     <summary>Provides a set of static (Shared in Visual Basic) methods for working with specific kinds of <see cref="T:System.Threading.Tasks.Task" /> instances.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+    <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+    <related type="Article" href="~/docs/standard/parallel-programming/how-to-unwrap-a-nested-task.md">How to: Unwrap a Nested Task</related>
   </Docs>
   <Members>
     <Member MemberName="Unwrap">
@@ -80,6 +83,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The exception that is thrown if the <paramref name="task" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-unwrap-a-nested-task.md">How to: Unwrap a Nested Task</related>
       </Docs>
     </Member>
     <Member MemberName="Unwrap&lt;TResult&gt;">
@@ -129,6 +135,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The exception that is thrown if the <paramref name="task" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-unwrap-a-nested-task.md">How to: Unwrap a Nested Task</related>
       </Docs>
     </Member>
   </Members>

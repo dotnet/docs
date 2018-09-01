@@ -1,4 +1,4 @@
-﻿<Type Name="IpcClientChannel" FullName="System.Runtime.Remoting.Channels.Ipc.IpcClientChannel">
+<Type Name="IpcClientChannel" FullName="System.Runtime.Remoting.Channels.Ipc.IpcClientChannel">
   <TypeSignature Language="C#" Value="public class IpcClientChannel : System.Runtime.Remoting.Channels.IChannel, System.Runtime.Remoting.Channels.IChannelSender, System.Runtime.Remoting.Channels.ISecurableChannel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IpcClientChannel extends System.Object implements class System.Runtime.Remoting.Channels.IChannel, class System.Runtime.Remoting.Channels.IChannelSender, class System.Runtime.Remoting.Channels.ISecurableChannel" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel" />
@@ -131,7 +131,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/library/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+ For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kw7c6kwc(v=vs.100)).  
   
  If you do not require sink functionality, set the `sinkProvider` parameter to `null`.  
   
@@ -145,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kw7c6kwc(v=vs.100)">Channel and Formatter Configuration Properties</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

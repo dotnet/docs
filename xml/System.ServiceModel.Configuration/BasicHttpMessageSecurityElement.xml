@@ -1,4 +1,4 @@
-﻿<Type Name="BasicHttpMessageSecurityElement" FullName="System.ServiceModel.Configuration.BasicHttpMessageSecurityElement">
+<Type Name="BasicHttpMessageSecurityElement" FullName="System.ServiceModel.Configuration.BasicHttpMessageSecurityElement">
   <TypeSignature Language="C#" Value="public sealed class BasicHttpMessageSecurityElement : System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BasicHttpMessageSecurityElement extends System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BasicHttpMessageSecurityElement" />
@@ -19,6 +19,7 @@
     <summary>An XML element that configures HTTP message security.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.ServiceModel.BasicHttpMessageSecurity" />
+    <related type="Article" href="http://msdn.microsoft.com/library/51cdd329-6461-471a-8747-56c2299b61e5">BasicHttpMessageSecurity in configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

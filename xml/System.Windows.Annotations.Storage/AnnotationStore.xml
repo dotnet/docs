@@ -1,4 +1,4 @@
-﻿<Type Name="AnnotationStore" FullName="System.Windows.Annotations.Storage.AnnotationStore">
+<Type Name="AnnotationStore" FullName="System.Windows.Annotations.Storage.AnnotationStore">
   <TypeSignature Language="C#" Value="public abstract class AnnotationStore : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AnnotationStore extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.Storage.AnnotationStore" />
@@ -342,7 +342,7 @@
           <para>
             <see cref="M:System.Windows.Annotations.Storage.AnnotationStore.Dispose(System.Boolean)" /> can be called multiple times by other objects.  When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see cref="M:System.Windows.Annotations.Storage.AnnotationStore.Dispose(System.Boolean)" />. For more information about how to implement <see cref="M:System.Windows.Annotations.Storage.AnnotationStore.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see cref="M:System.IDisposable.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see cref="M:System.IDisposable.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
       </Docs>
     </Member>
@@ -371,7 +371,7 @@
 ## Remarks  
  This method overrides base <xref:System.Object.Finalize%2A> method.  The application program should not call <xref:System.Windows.Annotations.Storage.AnnotationStore.Finalize%2A> directly.  <xref:System.Windows.Annotations.Storage.AnnotationStore.Finalize%2A> is automatically invoked during garbage collection unless disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
   
- For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/library/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ For more information, see [Finalize Methods and Destructors](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/0s71x931(v%3dvs.100)), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).  
   
  ]]></format>
         </remarks>
@@ -766,6 +766,7 @@
         <summary>Gets the object to use as a synchronization lock for <see cref="T:System.Windows.Annotations.Storage.AnnotationStore" /> critical sections.</summary>
         <value>The object to use as a synchronization lock for <see cref="T:System.Windows.Annotations.Storage.AnnotationStore" /> critical sections.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/lock-statement.md">lock keyword</related>
       </Docs>
     </Member>
   </Members>

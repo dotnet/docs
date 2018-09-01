@@ -1,4 +1,4 @@
-﻿<Type Name="AuthenticateEventHandler" FullName="System.Web.UI.WebControls.AuthenticateEventHandler">
+<Type Name="AuthenticateEventHandler" FullName="System.Web.UI.WebControls.AuthenticateEventHandler">
   <TypeSignature Language="C#" Value="public delegate void AuthenticateEventHandler(object sender, AuthenticateEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuthenticateEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.AuthenticateEventHandler" />
@@ -32,5 +32,6 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
   </Docs>
 </Type>

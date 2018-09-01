@@ -1,4 +1,4 @@
-﻿<Type Name="ProviderConnectionPointCollection" FullName="System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection">
+<Type Name="ProviderConnectionPointCollection" FullName="System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection">
   <TypeSignature Language="C#" Value="public sealed class ProviderConnectionPointCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProviderConnectionPointCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection" />
@@ -32,6 +32,7 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />
     <altmember cref="T:System.Collections.ReadOnlyCollectionBase" />
     <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -79,6 +80,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -122,6 +124,7 @@
   
  There are duplicate IDs in the collection of connection points.</exception>
         <altmember cref="T:System.Collections.ICollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -150,6 +153,7 @@
           <see langword="true" /> if the provider connection point is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -187,6 +191,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -217,6 +222,7 @@
  ]]></format>
         </remarks>
         <altmember cref="F:System.Web.UI.WebControls.WebParts.ConnectionPoint.DefaultID" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -253,6 +259,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -262,6 +269,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Gets a specific member of the collection according to its position or a unique identifier.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -289,6 +297,7 @@
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" /> at the index specified.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Collections.IList.Item(System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -315,6 +324,7 @@
         <summary>Gets a member of the collection based on a unique string identifier.</summary>
         <value>The first <see cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" /> whose ID equals the value of <paramref name="id" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

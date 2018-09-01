@@ -1,4 +1,4 @@
-﻿<Type Name="ControlBuilder" FullName="System.Web.UI.ControlBuilder">
+<Type Name="ControlBuilder" FullName="System.Web.UI.ControlBuilder">
   <TypeSignature Language="C#" Value="public class ControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ControlBuilder" />
@@ -1114,6 +1114,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb">Dynamic Source Code Generation and Compilation</related>
       </Docs>
     </Member>
     <Member MemberName="ServiceProvider">

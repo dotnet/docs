@@ -1,4 +1,4 @@
-﻿<Type Name="TemplateControl" FullName="System.Web.UI.TemplateControl">
+<Type Name="TemplateControl" FullName="System.Web.UI.TemplateControl">
   <TypeSignature Language="C#" Value="public abstract class TemplateControl : System.Web.UI.Control, System.Web.UI.IFilterResolutionService, System.Web.UI.INamingContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract TemplateControl extends System.Web.UI.Control implements class System.Web.UI.IFilterResolutionService, class System.Web.UI.INamingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.TemplateControl" />
@@ -113,6 +113,7 @@
         <altmember cref="E:System.Web.UI.TemplateControl.CommitTransaction" />
         <altmember cref="E:System.Web.UI.TemplateControl.Error" />
         <altmember cref="M:System.Web.UI.TemplateControl.OnAbortTransaction(System.EventArgs)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/w97s6fw4(v=vs.85)">Transaction Processing</related>
       </Docs>
     </Member>
     <Member MemberName="AppRelativeVirtualPath">
@@ -229,6 +230,7 @@
         <altmember cref="E:System.Web.UI.TemplateControl.AbortTransaction" />
         <altmember cref="E:System.Web.UI.TemplateControl.Error" />
         <altmember cref="M:System.Web.UI.TemplateControl.OnCommitTransaction(System.EventArgs)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/w97s6fw4(v=vs.85)">Transaction Processing</related>
       </Docs>
     </Member>
     <Member MemberName="Construct">
@@ -466,6 +468,7 @@
   
  <paramref name="expression" /> is an empty string ("").</exception>
         <altmember cref="T:System.Web.UI.DataBinder" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="FrameworkInitialize">
@@ -544,7 +547,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Application-level resources are stored in the App_GlobalResources folder. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/library/5a29f26b-d94d-48d9-864e-5ee8890dc265).  
+ Application-level resources are stored in the App_GlobalResources folder. For more information, see [Resources in ASP.NET Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/1ztca10y(v=vs.85)).  
   
    
   
@@ -557,6 +560,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/1ztca10y(v=vs.85)">Resources in ASP.NET Applications</related>
+        <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
       </Docs>
     </Member>
     <Member MemberName="GetGlobalResourceObject">
@@ -592,11 +597,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Application-level resources are stored in the App_GlobalResources folder. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/library/5a29f26b-d94d-48d9-864e-5ee8890dc265).  
+ Application-level resources are stored in the App_GlobalResources folder. For more information, see [Resources in ASP.NET Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/1ztca10y(v=vs.85)).  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/1ztca10y(v=vs.85)">Resources in ASP.NET Applications</related>
+        <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetLocalResourceObject">
@@ -635,7 +642,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Local resource files are stored in the App_LocalResources directory. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/library/5a29f26b-d94d-48d9-864e-5ee8890dc265)  
+ Local resource files are stored in the App_LocalResources directory. For more information, see [Resources in ASP.NET Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/1ztca10y(v=vs.85))  
   
    
   
@@ -648,6 +655,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/1ztca10y(v=vs.85)">Resources in ASP.NET Applications</related>
+        <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
       </Docs>
     </Member>
     <Member MemberName="GetLocalResourceObject">
@@ -681,11 +690,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Local resource files are stored in the App_LocalResources directory. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/library/5a29f26b-d94d-48d9-864e-5ee8890dc265)  
+ Local resource files are stored in the App_LocalResources directory. For more information, see [Resources in ASP.NET Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/1ztca10y(v=vs.85))  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/1ztca10y(v=vs.85)">Resources in ASP.NET Applications</related>
+        <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="LoadControl">
@@ -705,6 +716,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" />
         <altmember cref="M:System.Web.UI.Control.OnLoad(System.EventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="LoadControl">
@@ -758,6 +770,7 @@
         <altmember cref="M:System.Web.UI.TemplateControl.LoadControl(System.Type,System.Object[])" />
         <altmember cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" />
         <altmember cref="M:System.Web.UI.Control.OnLoad(System.EventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoadControl">
@@ -804,6 +817,7 @@
         <altmember cref="M:System.Web.UI.TemplateControl.LoadControl(System.String)" />
         <altmember cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" />
         <altmember cref="M:System.Web.UI.Control.OnLoad(System.EventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoadTemplate">
@@ -878,6 +892,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/w97s6fw4(v=vs.85)">Transaction Processing</related>
       </Docs>
     </Member>
     <Member MemberName="OnCommitTransaction">
@@ -919,6 +934,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/w97s6fw4(v=vs.85)">Transaction Processing</related>
       </Docs>
     </Member>
     <Member MemberName="OnError">
@@ -1269,6 +1285,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IFilterResolutionService.CompareFilters">
@@ -1379,13 +1396,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.TestDeviceFilter%2A> method invokes the <xref:System.Web.Configuration.HttpCapabilitiesBase.IsBrowser%2A> method. For more information on device filtering, see [Device Filtering Overview](http://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19).  
+ The <xref:System.Web.UI.TemplateControl.TestDeviceFilter%2A> method invokes the <xref:System.Web.Configuration.HttpCapabilitiesBase.IsBrowser%2A> method. For more information on device filtering, see [Device Filtering Overview](https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)).  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.HttpContext" />
         <altmember cref="T:System.Web.HttpRequest" />
         <altmember cref="M:System.Web.Configuration.HttpCapabilitiesBase.IsBrowser(System.String)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">Introduction to Device Filtering in ASP.NET</related>
       </Docs>
     </Member>
     <Member MemberName="WriteUTF8ResourceString">
@@ -1536,6 +1554,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The data-binding method can be used only for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
         <altmember cref="T:System.Web.UI.XPathBinder" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="XPath">
@@ -1612,6 +1631,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The data-binding method can be used only for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
         <altmember cref="T:System.Web.UI.XPathBinder" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="XPathSelect">

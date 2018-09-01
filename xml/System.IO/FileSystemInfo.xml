@@ -1,4 +1,4 @@
-﻿<Type Name="FileSystemInfo" FullName="System.IO.FileSystemInfo">
+<Type Name="FileSystemInfo" FullName="System.IO.FileSystemInfo">
   <TypeSignature Language="C#" Value="public abstract class FileSystemInfo : MarshalByRefObject, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit FileSystemInfo extends System.MarshalByRefObject implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.IO.FileSystemInfo" />
@@ -77,6 +77,10 @@
  Security Action: Inheritance Demand</permission>
     <altmember cref="T:System.IO.FileSystemWatcher" />
     <altmember cref="T:System.IO.DriveInfo" />
+    <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+    <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+    <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+    <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -125,6 +129,9 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -169,6 +176,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> is null.</exception>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -262,6 +272,9 @@
           <see cref="M:System.IO.FileSystemInfo.Refresh" /> cannot initialize the data.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing files and directories. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /> Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="CreationTime">
@@ -346,6 +359,9 @@ On Unix platforms that do not support creation or birth time, this property retu
         <exception cref="T:System.ArgumentOutOfRangeException">The caller attempts to set an invalid creation time.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for setting the creation time. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="CreationTimeUtc">
@@ -426,6 +442,9 @@ On Unix platforms that do not support creation or birth time, this property retu
         <exception cref="T:System.ArgumentOutOfRangeException">The caller attempts to set an invalid access time.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for setting the creation time. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -463,6 +482,9 @@ On Unix platforms that do not support creation or birth time, this property retu
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid; for example, it is on an unmapped drive.</exception>
         <exception cref="T:System.IO.IOException">There is an open handle on the file or directory, and the operating system is Windows XP or earlier. This open handle can result from enumerating directories and files. For more information, see [How to: Enumerate Directories and Files](~/docs/standard/io/how-to-enumerate-directories-and-files.md).</exception>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Exists">
@@ -506,6 +528,9 @@ On Unix platforms that do not support creation or birth time, this property retu
  ]]></format>
         </remarks>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Extension">
@@ -560,6 +585,9 @@ On Unix platforms that do not support creation or birth time, this property retu
  ]]></format>
         </remarks>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="FullName">
@@ -621,6 +649,9 @@ On Unix platforms that do not support creation or birth time, this property retu
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="FullPath">
@@ -661,6 +692,9 @@ On Unix platforms that do not support creation or birth time, this property retu
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).</para>
         </block>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -725,6 +759,9 @@ On Unix platforms that do not support creation or birth time, this property retu
  Security action: Link Demand</permission>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="LastAccessTime">
@@ -805,6 +842,9 @@ On Unix platforms that do not support creation or birth time, this property retu
         <exception cref="T:System.ArgumentOutOfRangeException">The caller attempts to set an invalid access time</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for setting the last access time. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="LastAccessTimeUtc">
@@ -882,6 +922,9 @@ On Unix platforms that do not support creation or birth time, this property retu
         <exception cref="T:System.ArgumentOutOfRangeException">The caller attempts to set an invalid access time.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for setting the last access time. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="LastWriteTime">
@@ -960,6 +1003,9 @@ On Unix platforms that do not support creation or birth time, this property retu
         <exception cref="T:System.ArgumentOutOfRangeException">The caller attempts to set an invalid write time.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for setting the last write time. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="LastWriteTimeUtc">
@@ -1035,6 +1081,9 @@ On Unix platforms that do not support creation or birth time, this property retu
         <exception cref="T:System.ArgumentOutOfRangeException">The caller attempts to set an invalid write time.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for setting the last write time. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1079,6 +1128,9 @@ On Unix platforms that do not support creation or birth time, this property retu
  ]]></format>
         </remarks>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="OriginalPath">
@@ -1120,6 +1172,9 @@ On Unix platforms that do not support creation or birth time, this property retu
  ]]></format>
         </remarks>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -1170,6 +1225,9 @@ On Unix platforms that do not support creation or birth time, this property retu
         </remarks>
         <exception cref="T:System.IO.IOException">A device such as a disk drive is not ready.</exception>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
   </Members>

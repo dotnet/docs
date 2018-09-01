@@ -1,4 +1,4 @@
-﻿<Type Name="SemaphoreFullException" FullName="System.Threading.SemaphoreFullException">
+<Type Name="SemaphoreFullException" FullName="System.Threading.SemaphoreFullException">
   <TypeSignature Language="C#" Value="public class SemaphoreFullException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SemaphoreFullException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Threading.SemaphoreFullException" />
@@ -68,6 +68,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Threading.Semaphore" />
+    <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -127,6 +128,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Semaphore" />
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -179,6 +181,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Semaphore" />
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -224,6 +227,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Semaphore" />
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -271,6 +275,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Semaphore" />
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
   </Members>

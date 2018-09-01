@@ -74,7 +74,7 @@
   
  When more than one user can change the database concurrently, there is the potential for concurrency conflict. The <xref:System.Web.UI.WebControls.SqlDataSource> control has controls concurrency through the <xref:System.Web.UI.WebControls.SqlDataSource.ConflictDetection?displayProperty=nameWithType> property. The functionality is implemented in the <xref:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection?displayProperty=nameWithType> property.  
   
- Like many other Web server controls, the <xref:System.Web.UI.WebControls.SqlDataSourceView> implements the <xref:System.Web.UI.IStateManager> interface and uses view state to track its state across page requests. Implementations of the <xref:System.Web.UI.WebControls.SqlDataSourceView.IsTrackingViewState%2A> and property and the <xref:System.Web.UI.WebControls.SqlDataSourceView.LoadViewState%2A>, <xref:System.Web.UI.WebControls.SqlDataSourceView.SaveViewState%2A>, and <xref:System.Web.UI.WebControls.SqlDataSourceView.TrackViewState%2A> methods are provided to enable view state tracking for the control. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ Like many other Web server controls, the <xref:System.Web.UI.WebControls.SqlDataSourceView> implements the <xref:System.Web.UI.IStateManager> interface and uses view state to track its state across page requests. Implementations of the <xref:System.Web.UI.WebControls.SqlDataSourceView.IsTrackingViewState%2A> and property and the <xref:System.Web.UI.WebControls.SqlDataSourceView.LoadViewState%2A>, <xref:System.Web.UI.WebControls.SqlDataSourceView.SaveViewState%2A>, and <xref:System.Web.UI.WebControls.SqlDataSourceView.TrackViewState%2A> methods are provided to enable view state tracking for the control. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
  ]]></format>
     </remarks>
@@ -384,6 +384,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.UI.ConflictOptions" /> values.</exception>
         <altmember cref="T:System.Web.UI.ConflictOptions" />
+        <related type="Article" href="http://msdn.microsoft.com/library/34779c84-3512-49d9-8e6f-643aaae216ce">SqlDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -1379,7 +1380,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is primarily used by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] infrastructure and is not intended to be used directly from your code.  However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is primarily used by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] infrastructure and is not intended to be used directly from your code.  However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSourceView.LoadViewState%2A> method restores view-state information for the <xref:System.Web.UI.WebControls.SqlDataSourceView> object from a previous page request that was saved by the <xref:System.Web.UI.WebControls.SqlDataSourceView.SaveViewState%2A> method.  
   
@@ -1914,7 +1915,7 @@
   
  View state is the accumulation of the values of the properties for a server control. These values are automatically placed in the <xref:System.Web.UI.Control.ViewState%2A> property for the server control, which is an instance of the <xref:System.Web.UI.StateBag> class. The <xref:System.Web.UI.Control.ViewState%2A> value for the server control is then persisted to a string object after the save state stage of the server control life cycle.  
   
- When view state is saved, the string object that was persisted after the save state stage of the server control life cycle is returned to the client as a variable that is stored in an HTML `Hidden` element. When you author custom server controls, you can improve efficiency by overriding the <xref:System.Web.UI.WebControls.SqlDataSourceView.SaveViewState%2A> method and modifying the `ViewState` property for your server control. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ When view state is saved, the string object that was persisted after the save state stage of the server control life cycle is returned to the client as a variable that is stored in an HTML `Hidden` element. When you author custom server controls, you can improve efficiency by overriding the <xref:System.Web.UI.WebControls.SqlDataSourceView.SaveViewState%2A> method and modifying the `ViewState` property for your server control. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
  ]]></format>
         </remarks>

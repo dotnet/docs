@@ -1,4 +1,4 @@
-﻿<Type Name="FlowLayoutPanel" FullName="System.Windows.Forms.FlowLayoutPanel">
+<Type Name="FlowLayoutPanel" FullName="System.Windows.Forms.FlowLayoutPanel">
   <TypeSignature Language="C#" Value="public class FlowLayoutPanel : System.Windows.Forms.Panel, System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FlowLayoutPanel extends System.Windows.Forms.Panel implements class System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FlowLayoutPanel" />
@@ -71,6 +71,7 @@
     </remarks>
     <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
     <altmember cref="P:System.Windows.Forms.FlowLayoutPanel.FlowDirection" />
+    <related type="Article" href="http://msdn.microsoft.com/library/a2bcdfca-9b63-45e6-9c0e-3411015cba98">How to: Anchor and Dock Child Controls in a FlowLayoutPanel Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="UserScopedSettingAttribute" FullName="System.Configuration.UserScopedSettingAttribute">
+<Type Name="UserScopedSettingAttribute" FullName="System.Configuration.UserScopedSettingAttribute">
   <TypeSignature Language="C#" Value="public sealed class UserScopedSettingAttribute : System.Configuration.SettingAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UserScopedSettingAttribute extends System.Configuration.SettingAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.UserScopedSettingAttribute" />
@@ -50,6 +50,7 @@
     <altmember cref="T:System.Configuration.ApplicationSettingsBase" />
     <altmember cref="T:System.Configuration.SettingsProvider" />
     <altmember cref="T:System.Configuration.ConfigurationErrorsException" />
+    <related type="Article" href="http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562">Application Settings Architecture</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -85,6 +86,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Configuration.SettingsProvider" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/wabtadw6(v=vs.90)">How to: Create Application Settings</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="Control" FullName="System.Web.UI.Control">
+<Type Name="Control" FullName="System.Web.UI.Control">
   <TypeSignature Language="C#" Value="public class Control : IDisposable, System.ComponentModel.IComponent, System.Web.UI.IControlBuilderAccessor, System.Web.UI.IControlDesignerAccessor, System.Web.UI.IDataBindingsAccessor, System.Web.UI.IExpressionsAccessor, System.Web.UI.IParserAccessor, System.Web.UI.IUrlResolutionService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Control extends System.Object implements class System.ComponentModel.IComponent, class System.IDisposable, class System.Web.UI.IControlBuilderAccessor, class System.Web.UI.IControlDesignerAccessor, class System.Web.UI.IDataBindingsAccessor, class System.Web.UI.IExpressionsAccessor, class System.Web.UI.IParserAccessor, class System.Web.UI.IUrlResolutionService" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Control" />
@@ -99,7 +99,7 @@
   
  The <xref:System.Web.UI.Control> class can directly or indirectly be used as part of the user interface for your Web application, and as such should be scrutinized to make sure best practices for writing secure code and securing applications are followed.  
   
- For general information on these topics, see [Overview of Web Application Security Threats](http://msdn.microsoft.com/library/88d61678-f84e-4622-ae80-53128821855a), [NIB: Security Policy Best Practices](http://msdn.microsoft.com/library/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05), and [Key Security Concepts](~/docs/standard/security/key-security-concepts.md). For more specific information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Display Safe Error Messages](http://msdn.microsoft.com/library/6f70ac33-6e11-4e98-ab7d-bae9c0e7eefa), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Introduction to the Validation Controls](http://msdn.microsoft.com/library/3c0e7514-cff2-4bed-936d-ee3f7b740190).  
+ For general information on these topics, see [Overview of Web Application Security Threats](http://msdn.microsoft.com/library/88d61678-f84e-4622-ae80-53128821855a), [NIB: Security Policy Best Practices](http://msdn.microsoft.com/library/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05), and [Key Security Concepts](~/docs/standard/security/key-security-concepts.md). For more specific information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Display Safe Error Messages](http://msdn.microsoft.com/library/6f70ac33-6e11-4e98-ab7d-bae9c0e7eefa), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Introduction to the Validation Controls](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/2e4hd649(v=vs.85)).  
   
    
   
@@ -118,6 +118,7 @@
     <altmember cref="T:System.Web.UI.TemplateControl" />
     <altmember cref="T:System.Web.UI.LiteralControl" />
     <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+    <related type="Article" href="http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef">Developing Custom ASP.NET Server Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -169,12 +170,13 @@
 ## Remarks  
  ASP.NET Web pages are usable across a wide range of devices and browsers that can request information from the Web. The <xref:System.Web.UI.Control.Adapter%2A> property returns the <xref:System.Web.UI.Adapters.ControlAdapter> object that renders the control on the requesting device or browser's screen.  
   
- For more information about adapters, see [Architectural Overview of Adaptive Control Behavior](http://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff).  
+ For more information about adapters, see [Architectural Overview of Adaptive Control Behavior](https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)).  
   
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter,System.Web.UI.Adapters.ControlAdapter)" />
         <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="AddedControl">
@@ -654,6 +656,7 @@
         <altmember cref="M:System.Web.UI.Control.DataBind" />
         <altmember cref="M:System.Web.UI.Control.ClearChildControlState" />
         <altmember cref="M:System.Web.UI.Control.ClearChildState" />
+        <related type="Article" href="http://msdn.microsoft.com/library/07664410-02dd-4494-af53-a9259741d4f2">How to: Create Templated User Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ClearEffectiveClientIDMode">
@@ -753,6 +756,11 @@ span#ProductIDLabel { background-color: white; }
         <altmember cref="P:System.Web.UI.Control.NamingContainer" />
         <altmember cref="P:System.Web.UI.Control.ID" />
         <altmember cref="T:System.Web.UI.INamingContainer" />
+        <related type="Article" href="http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7">ASP.NET Control Identification</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/fb58ed73-d8f7-401c-9560-d99dd9ca7db8">How to: Access Controls from JavaScript by ID</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/776f3747-7fa7-4851-ae27-f728ede1a564">Walkthrough: Making Data-Bound Controls Easier to Access from JavaScript</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0eaf202-61b6-4cd8-9604-6b7638fdf0ae">Walkthrough: Making Controls Located in Web User Controls Easier to Access From JavaScript</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ClientIDMode">
@@ -816,6 +824,10 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7">ASP.NET Control Identification</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/fb58ed73-d8f7-401c-9560-d99dd9ca7db8">How to: Access Controls from JavaScript by ID</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/776f3747-7fa7-4851-ae27-f728ede1a564">Walkthrough: Making Data-Bound Controls Easier to Access from JavaScript</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0eaf202-61b6-4cd8-9604-6b7638fdf0ae">Walkthrough: Making Controls Located in Web User Controls Easier to Access From JavaScript</related>
       </Docs>
     </Member>
     <Member MemberName="ClientIDSeparator">
@@ -1013,6 +1025,8 @@ span#ProductIDLabel { background-color: white; }
         <altmember cref="T:System.Web.UI.ControlCollection" />
         <altmember cref="P:System.Web.UI.Control.ChildControlsCreated" />
         <altmember cref="T:System.Web.UI.INamingContainer" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef">Developing Custom ASP.NET Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f769d290-fd04-4084-85fc-4ea30dd2e8ae">ASP.NET Web Server Controls Templates</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -1115,6 +1129,8 @@ span#ProductIDLabel { background-color: white; }
         <altmember cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" />
         <altmember cref="E:System.Web.UI.Control.DataBinding" />
         <altmember cref="M:System.Web.UI.Control.DataBindChildren" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef">Developing Custom ASP.NET Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -1155,6 +1171,7 @@ span#ProductIDLabel { background-color: white; }
         </remarks>
         <altmember cref="E:System.Web.UI.Control.DataBinding" />
         <altmember cref="M:System.Web.UI.Control.DataBindChildren" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataBindChildren">
@@ -1187,6 +1204,7 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef">Developing Custom ASP.NET Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="DataBinding">
@@ -1223,6 +1241,7 @@ span#ProductIDLabel { background-color: white; }
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="DataItemContainer">
@@ -1323,6 +1342,7 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -1364,6 +1384,7 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="Disposed">
@@ -1394,6 +1415,7 @@ span#ProductIDLabel { background-color: white; }
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Control.Dispose" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -1445,6 +1467,7 @@ span#ProductIDLabel { background-color: white; }
   
  The control has already been added to the <see langword="Controls" /> collection.</exception>
         <altmember cref="P:System.Web.UI.Control.SkinID" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableViewState">
@@ -1514,6 +1537,9 @@ span#ProductIDLabel { background-color: white; }
         <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
         <altmember cref="M:System.Web.UI.Control.SaveViewState" />
         <altmember cref="P:System.Web.UI.Control.IsViewStateEnabled" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9e98c7de-a888-48df-b14e-02ec8bef7681">Control State vs. View State Example</related>
       </Docs>
     </Member>
     <Member MemberName="EndRenderTracing">
@@ -1728,6 +1754,7 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/59964ef8-72ef-4159-9f1a-5b230ff46fb3">How to: Access Server Controls by ID</related>
       </Docs>
     </Member>
     <Member MemberName="FindControl">
@@ -1844,6 +1871,7 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetRouteUrl">
@@ -1891,6 +1919,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl(
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetRouteUrl">
@@ -1943,6 +1972,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl(
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetRouteUrl">
@@ -1992,6 +2022,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetRouteUrl">
@@ -2041,6 +2072,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetUniqueIDRelativeTo">
@@ -2315,6 +2347,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="IsChildControlStateCleared">
@@ -2497,6 +2530,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -2525,7 +2559,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Override this method when you need to specify how a custom server control restores its control state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ Override this method when you need to specify how a custom server control restores its control state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
    
   
@@ -2542,6 +2576,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         <altmember cref="M:System.Web.UI.Control.SaveControlState" />
         <altmember cref="P:System.Web.UI.Control.ViewState" />
         <altmember cref="M:System.Web.UI.Control.SaveViewState" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -2571,7 +2606,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
    
   
@@ -2585,6 +2620,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         </remarks>
         <altmember cref="P:System.Web.UI.Control.ViewState" />
         <altmember cref="M:System.Web.UI.Control.SaveViewState" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewStateByID">
@@ -2820,6 +2856,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         </remarks>
         <altmember cref="E:System.Web.UI.Control.DataBinding" />
         <altmember cref="M:System.Web.UI.Control.DataBind" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -2860,6 +2897,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.Page" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
@@ -2901,6 +2939,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         </remarks>
         <altmember cref="T:System.Web.UI.Page" />
         <altmember cref="P:System.Web.UI.Page.IsPostBack" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -2941,6 +2980,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.Page" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="OnUnload">
@@ -2981,6 +3021,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.Control.Unload" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="OpenFile">
@@ -3156,6 +3197,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="RaiseBubbleEvent">
@@ -3284,6 +3326,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="RenderChildren">
@@ -3419,7 +3462,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
 ## Remarks  
  ASP.NET Web pages are usable across a wide range of devices and browsers that can request information from the Web. The <xref:System.Web.UI.Control.Adapter%2A> property returns the <xref:System.Web.UI.Adapters.ControlAdapter> object that renders the control on the requesting device or browser's screen.  
   
- For more information about adapters, see [Architectural Overview of Adaptive Control Behavior](http://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff).  
+ For more information about adapters, see [Architectural Overview of Adaptive Control Behavior](https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)).  
   
  If a server control's <xref:System.Web.UI.Control.Visible%2A> property is set to `true` and tracing is enabled for the page, then trace information associated with the control is captured.  
   
@@ -3431,6 +3474,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         <altmember cref="P:System.Web.UI.Control.Adapter" />
         <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
         <altmember cref="P:System.Web.HttpContext.Trace" />
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="RenderingCompatibility">
@@ -3515,7 +3559,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  The specific adapter type returned depends on the descendent type of the <xref:System.Web.UI.Control> class that is being rendered.  
   
- For more information about adapters, see [Architectural Overview of Adaptive Control Behavior](http://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff).  
+ For more information about adapters, see [Architectural Overview of Adaptive Control Behavior](https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)).  
   
  ]]></format>
         </remarks>
@@ -3625,6 +3669,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         </remarks>
         <exception cref="T:System.ArgumentNullException">Occurs if the <paramref name="relativeUrl" /> parameter contains <see langword="null" />.</exception>
         <altmember cref="P:System.Web.UI.Control.TemplateSourceDirectory" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2447f50c-b849-483c-8093-85ed53e7a5bd">ASP.NET Web Site Paths</related>
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
@@ -3670,12 +3715,13 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         <block subset="none" type="overrides">
           <para>When control state is saved, a string object is returned to the client as a variable that is stored in an HTML <see langword="HIDDEN" /> element. Override this method to extract the state information to use in your control.  
   
- Control state is intended for small amounts of critical data, such as a page index or a keyword. Using control state for large amounts of data can adversely affect page performance. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).</para>
+ Control state is intended for small amounts of critical data, such as a page index or a keyword. Using control state for large amounts of data can adversely affect page performance. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).</para>
         </block>
         <altmember cref="M:System.Web.UI.Control.LoadControlState(System.Object)" />
         <altmember cref="M:System.Web.UI.Control.SaveViewState" />
         <altmember cref="P:System.Web.UI.Control.ViewState" />
         <altmember cref="T:System.Web.UI.StateBag" />
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -3705,7 +3751,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
 ## Remarks  
  View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control life cycle. For more information, see [ASP.NET Page Life Cycle Overview](http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991).  
   
- When view state is saved, this string object is returned to the client as a variable that is stored in an HTML `HIDDEN` element. When you author a custom server control with a custom view state, the view state can be managed explicitly with the <xref:System.Web.UI.Control.SaveViewState%2A> and <xref:System.Web.UI.Control.LoadViewState%2A> methods. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce). For information on implementing a custom session-state provider, see [Implementing a Session-State Store Provider](http://msdn.microsoft.com/library/baadfec5-c881-468a-9681-7d8796b05a66).  
+ When view state is saved, this string object is returned to the client as a variable that is stored in an HTML `HIDDEN` element. When you author a custom server control with a custom view state, the view state can be managed explicitly with the <xref:System.Web.UI.Control.SaveViewState%2A> and <xref:System.Web.UI.Control.LoadViewState%2A> methods. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)). For information on implementing a custom session-state provider, see [Implementing a Session-State Store Provider](http://msdn.microsoft.com/library/baadfec5-c881-468a-9681-7d8796b05a66).  
   
    
   
@@ -3720,6 +3766,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
         <altmember cref="P:System.Web.UI.Control.ViewState" />
         <altmember cref="T:System.Web.UI.StateBag" />
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/baadfec5-c881-468a-9681-7d8796b05a66">Implementing a Session-State Store Provider</related>
       </Docs>
     </Member>
     <Member MemberName="SetDesignModeState">
@@ -3975,6 +4023,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  The control was already added to the <see langword="Controls" /> collection.</exception>
         <altmember cref="P:System.Web.UI.Control.EnableTheming" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IControlBuilderAccessor.ControlBuilder">
@@ -4572,6 +4621,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="ValidateRequestMode">
@@ -4642,11 +4692,11 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A server control's view state is the accumulation of all its property values. In order to preserve these values across HTTP requests, ASP.NET server controls use this property, which is an instance of the <xref:System.Web.UI.StateBag> class, to store the property values. The values are then passed as a variable to an HTML hidden input element when subsequent requests are processed. For more information about saving server control view state, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ A server control's view state is the accumulation of all its property values. In order to preserve these values across HTTP requests, ASP.NET server controls use this property, which is an instance of the <xref:System.Web.UI.StateBag> class, to store the property values. The values are then passed as a variable to an HTML hidden input element when subsequent requests are processed. For more information about saving server control view state, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
  View state is enabled for all server controls by default, but there are circumstances in which you will want to disable it. For more information, see [ASP.NET Performance Overview](http://msdn.microsoft.com/library/f882bf1b-a009-4312-ac06-74370ffabc0b).  
   
- For information about dictionaries and how to use them, see [Collections and Data Structures](http://msdn.microsoft.com/library/60cc581f-1db5-445b-ba04-a173396bf872).  
+ For information about dictionaries and how to use them, see [Collections and Data Structures](~/docs/standard/collections/index.md).  
   
    
   
@@ -4659,6 +4709,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.StateBag" />
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ViewStateIgnoresCase">
@@ -4760,6 +4811,9 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         <altmember cref="P:System.Web.UI.Control.EnableViewState" />
         <altmember cref="P:System.Web.UI.Control.IsViewStateEnabled" />
         <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/19d2a6ed-9a77-4c7c-a7f5-74dd4b6c3818">ASP.NET View State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/en-us/library/C90FA3D7-788A-47D2-A80F-138122A1D8EE">Controlling View State</related>
       </Docs>
     </Member>
     <Member MemberName="Visible">

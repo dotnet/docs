@@ -1,4 +1,4 @@
-﻿<Type Name="Form" FullName="System.Web.UI.MobileControls.Form">
+<Type Name="Form" FullName="System.Web.UI.MobileControls.Form">
   <TypeSignature Language="C#" Value="public class Form : System.Web.UI.MobileControls.Panel, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Form extends System.Web.UI.MobileControls.Panel implements class System.Web.UI.IPostBackEventHandler, class System.Web.UI.MobileControls.ITemplateable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Form" />
@@ -57,7 +57,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A form represents the outermost grouping of controls within an ASP.NET mobile Web page. An individual mobile Web page can contain multiple forms at the outermost level. Forms cannot be nested; use <xref:System.Web.UI.MobileControls.Panel> controls if you want to nest containers. For more information, see [Introduction to the Form Control](http://msdn.microsoft.com/library/24a1946a-bb3c-41c8-90cd-f00643525016). To display a specific form, either set the <xref:System.Web.UI.MobileControls.MobilePage.ActiveForm%2A> property on the current page to the desired form, or set the <xref:System.Web.UI.MobileControls.Link.NavigateUrl%2A> property in a <xref:System.Web.UI.MobileControls.Link> control to the desired form. You can include literal text along with its accompanying markup tags in the text contents of the <xref:System.Web.UI.MobileControls.Form> control. When using templates, it is important to remember that the <xref:System.Web.UI.MobileControls.Form> control creates instances of templates in the <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method for the form. The <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method for the form is called before `Page_Load` and `Page_Init`. Also, the page constructor executes too early to set templates in the <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method because the form is not yet created. To correct this, hook the form's own <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method, and create an instance of the template there. For more information, see [Implementing Templated Rendering](http://msdn.microsoft.com/library/b86d9d1d-ab18-4cad-a825-092826bb3922).  
+ A form represents the outermost grouping of controls within an ASP.NET mobile Web page. An individual mobile Web page can contain multiple forms at the outermost level. Forms cannot be nested; use <xref:System.Web.UI.MobileControls.Panel> controls if you want to nest containers. For more information, see [Introduction to the Form Control](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)). To display a specific form, either set the <xref:System.Web.UI.MobileControls.MobilePage.ActiveForm%2A> property on the current page to the desired form, or set the <xref:System.Web.UI.MobileControls.Link.NavigateUrl%2A> property in a <xref:System.Web.UI.MobileControls.Link> control to the desired form. You can include literal text along with its accompanying markup tags in the text contents of the <xref:System.Web.UI.MobileControls.Form> control. When using templates, it is important to remember that the <xref:System.Web.UI.MobileControls.Form> control creates instances of templates in the <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method for the form. The <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method for the form is called before `Page_Load` and `Page_Init`. Also, the page constructor executes too early to set templates in the <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method because the form is not yet created. To correct this, hook the form's own <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method, and create an instance of the template there. For more information, see [Implementing Templated Rendering](http://msdn.microsoft.com/library/b86d9d1d-ab18-4cad-a825-092826bb3922).  
   
    
   
@@ -75,6 +75,7 @@
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.StyleSheet" />
     <altmember cref="P:System.Web.UI.MobileControls.Form.PagerStyle" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -94,6 +95,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.Form" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -139,6 +141,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.Command" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="Activate">
@@ -189,6 +192,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.MobileControls.MobilePage.ActiveForm" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="BreakAfter">
@@ -245,6 +249,8 @@
  -or-  
   
  An attempt was made to set the property.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/985bfb0b-1e0a-433c-99e7-c5bcf36ab938">Inside the ASP.NET Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ControlToPaginate">
@@ -303,6 +309,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.MobileControls.Panel.Paginate" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultTemplatedUI">
@@ -373,6 +380,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="Deactivate">
@@ -416,6 +424,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="Footer">
@@ -470,6 +479,9 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.MobileControls.DeviceSpecific.SelectedChoice" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">DeviceSpecific Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="GetLinkedForms">
@@ -512,6 +524,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="HasActivateHandler">
@@ -537,6 +550,7 @@
         <returns>
           <see langword="true" /> if the form has a handler for the <see cref="E:System.Web.UI.MobileControls.Form.Activate" /> event; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="HasDeactivateHandler">
@@ -562,6 +576,7 @@
         <returns>
           <see langword="true" /> if the <see cref="E:System.Web.UI.MobileControls.Form.Deactivate" /> event exists; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="Header">
@@ -606,6 +621,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="LoadPrivateViewState">
@@ -671,6 +687,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.FormMethod" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnActivate">
@@ -710,6 +727,7 @@
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.MobileControls.Form.Activate" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnDataBinding">
@@ -775,6 +793,7 @@
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.MobileControls.Form.Activate" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -810,6 +829,7 @@
         </remarks>
         <exception cref="T:System.Exception">The form is contained by another form.</exception>
         <altmember cref="T:System.Web.UI.Page" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="OnPaginated">
@@ -843,6 +863,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -926,6 +947,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.MobileControls.Form.CurrentPage" />
         <altmember cref="E:System.Web.UI.MobileControls.Form.Paginated" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="PagerStyle">
@@ -978,6 +1000,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="PaginateChildren">
@@ -1037,6 +1060,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.MobileControls.Form.CurrentPage" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="PaginateRecursive">
@@ -1088,6 +1112,7 @@
         <param name="eventArgument">A <see cref="T:System.String" /> that represents an optional event argument to be passed to the event handler.</param>
         <summary>Notifies the <see cref="T:System.Web.UI.MobileControls.Form" /> object of a postback event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -1176,6 +1201,7 @@
         <summary>Returns the panel that contains any device-specific script for the form, if a script template has been defined and chosen for the target device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The panel that contains any device-specific script for the form.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -1208,6 +1234,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -1246,6 +1273,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)">Introduction to the Form Control</related>
       </Docs>
     </Member>
   </Members>

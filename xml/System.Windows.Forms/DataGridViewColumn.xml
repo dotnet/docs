@@ -206,6 +206,8 @@
         <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" />
         <altmember cref="P:System.Windows.Forms.DataGridView.AutoSizeColumnsMode" />
         <altmember cref="P:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/a5620a9c-0d06-41e3-8934-c25ddb16c9e6">Sizing Options in the Windows Forms DataGridView Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7532764d-e5c1-4943-a08b-6377a722d3b6">Resizing Columns and Rows in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="CellTemplate">
@@ -497,6 +499,8 @@
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
         <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8321a8a6-6340-4fd1-b475-fa090b905aaf">Best Practices for Scaling the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayIndex">
@@ -742,6 +746,8 @@
         <altmember cref="T:System.Windows.Forms.DataGridView" />
         <altmember cref="P:System.Windows.Forms.DataGridViewColumn.AutoSizeMode" />
         <altmember cref="P:System.Windows.Forms.DataGridView.AutoSizeColumnsMode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/b4ef7411-ebf4-4e26-bb33-aecec90de80c">Column Fill Mode in the Windows Forms DataGridView Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7532764d-e5c1-4943-a08b-6377a722d3b6">Resizing Columns and Rows in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Frozen">
@@ -1000,6 +1006,8 @@
         <altmember cref="P:System.Windows.Forms.DataGridViewColumn.AutoSizeMode" />
         <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" />
         <altmember cref="P:System.Windows.Forms.DataGridView.AutoSizeColumnsMode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/a5620a9c-0d06-41e3-8934-c25ddb16c9e6">Sizing Options in the Windows Forms DataGridView Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7532764d-e5c1-4943-a08b-6377a722d3b6">Resizing Columns and Rows in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="InheritedStyle">
@@ -1040,6 +1048,7 @@
         <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
         <altmember cref="P:System.Windows.Forms.DataGridViewBand.DefaultCellStyle" />
         <altmember cref="P:System.Windows.Forms.DataGridView.DefaultCellStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="IsDataBound">
@@ -1311,6 +1320,8 @@
         <value>The <see cref="T:System.ComponentModel.ISite" /> associated with the column, if any.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3">Programming with Components</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/075d666a-d322-4ef5-a700-d8c76dde87b9">Containers, Sites, and Components</related>
       </Docs>
     </Member>
     <Member MemberName="SortMode">

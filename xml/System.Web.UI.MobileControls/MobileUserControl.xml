@@ -1,4 +1,4 @@
-﻿<Type Name="MobileUserControl" FullName="System.Web.UI.MobileControls.MobileUserControl">
+<Type Name="MobileUserControl" FullName="System.Web.UI.MobileControls.MobileUserControl">
   <TypeSignature Language="C#" Value="public class MobileUserControl : System.Web.UI.UserControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MobileUserControl extends System.Web.UI.UserControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.MobileUserControl" />
@@ -43,6 +43,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.UserControl" />
+    <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

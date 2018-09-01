@@ -1,4 +1,4 @@
-﻿<Type Name="ComUnregisterFunctionAttribute" FullName="System.Runtime.InteropServices.ComUnregisterFunctionAttribute">
+<Type Name="ComUnregisterFunctionAttribute" FullName="System.Runtime.InteropServices.ComUnregisterFunctionAttribute">
   <TypeSignature Language="C#" Value="public sealed class ComUnregisterFunctionAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComUnregisterFunctionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComUnregisterFunctionAttribute" />
@@ -58,6 +58,7 @@
     </remarks>
     <altmember cref="T:System.Runtime.InteropServices.ComRegisterFunctionAttribute" />
     <altmember cref="M:System.Runtime.InteropServices.RegistrationServices.UnregisterAssembly(System.Reflection.Assembly)" />
+    <related type="Article" href="~/docs/framework/tools/regasm-exe-assembly-registration-tool.md">Regasm.exe (Assembly Registration Tool)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

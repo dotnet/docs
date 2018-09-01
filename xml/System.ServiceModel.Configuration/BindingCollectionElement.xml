@@ -1,4 +1,4 @@
-﻿<Type Name="BindingCollectionElement" FullName="System.ServiceModel.Configuration.BindingCollectionElement">
+<Type Name="BindingCollectionElement" FullName="System.ServiceModel.Configuration.BindingCollectionElement">
   <TypeSignature Language="C#" Value="public abstract class BindingCollectionElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BindingCollectionElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BindingCollectionElement" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents a configuration section that contains a collection of binding elements, each of which describes an aspect of how an endpoint communicates with other endpoints, that is built, consistently, into a channel factory on the client and a channel listener on the service.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/b62cd369-5409-4030-8490-9759a462dd3a">Bindings in Configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

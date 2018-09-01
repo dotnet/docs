@@ -1,4 +1,4 @@
-﻿<Type Name="XamlNodeType" FullName="System.Xaml.XamlNodeType">
+<Type Name="XamlNodeType" FullName="System.Xaml.XamlNodeType">
   <TypeSignature Language="C#" Value="public enum XamlNodeType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XamlNodeType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlNodeType" />
@@ -17,6 +17,7 @@
     <remarks>To be added.</remarks>
     <altmember cref="P:System.Xaml.XamlReader.NodeType" />
     <altmember cref="T:System.Xaml.XamlObjectWriter" />
+    <related type="Article" href="http://msdn.microsoft.com/library/7c11abec-1075-474c-9d9b-778e5dab21c3">Understanding XAML Node Stream Structures and Concepts</related>
   </Docs>
   <Members>
     <Member MemberName="EndMember">

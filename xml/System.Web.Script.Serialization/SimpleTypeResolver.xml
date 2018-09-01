@@ -1,4 +1,4 @@
-﻿<Type Name="SimpleTypeResolver" FullName="System.Web.Script.Serialization.SimpleTypeResolver">
+<Type Name="SimpleTypeResolver" FullName="System.Web.Script.Serialization.SimpleTypeResolver">
   <TypeSignature Language="C#" Value="public class SimpleTypeResolver : System.Web.Script.Serialization.JavaScriptTypeResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SimpleTypeResolver extends System.Web.Script.Serialization.JavaScriptTypeResolver" />
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Serialization.SimpleTypeResolver" />
@@ -37,6 +37,7 @@
  ]]></format>
     </remarks>
     <altmember cref="P:System.Type.AssemblyQualifiedName" />
+    <related type="Article" href="https://msdn.microsoft.com/library/8290e543-7eff-47a4-aace-681f3c07229b">Web Services in ASP.NET AJAX</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

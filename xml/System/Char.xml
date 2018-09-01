@@ -1,4 +1,4 @@
-﻿<Type Name="Char" FullName="System.Char">
+<Type Name="Char" FullName="System.Char">
   <TypeSignature Language="C#" Value="public struct Char : IComparable, IComparable&lt;char&gt;, IConvertible, IEquatable&lt;char&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit char extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;char&gt;, class System.IConvertible, class System.IEquatable`1&lt;char&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Char" />
@@ -3616,6 +3616,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The length of <paramref name="s" /> is not 1.</exception>
         <altmember cref="M:System.Char.ToString" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d139bc00-3c4e-4d78-ac9a-5c951b258d28">Parsing Other Strings in the .NET Framework</related>
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -5051,6 +5052,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         </remarks>
         <altmember cref="M:System.Char.Parse(System.String)" />
         <altmember cref="M:System.Char.ToString" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d139bc00-3c4e-4d78-ac9a-5c951b258d28">Parsing Other Strings in the .NET Framework</related>
       </Docs>
     </Member>
   </Members>

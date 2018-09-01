@@ -1,4 +1,4 @@
-﻿<Type Name="EventWaitHandle" FullName="System.Threading.EventWaitHandle">
+<Type Name="EventWaitHandle" FullName="System.Threading.EventWaitHandle">
   <TypeSignature Language="C#" Value="public class EventWaitHandle : System.Threading.WaitHandle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventWaitHandle extends System.Threading.WaitHandle" />
   <TypeSignature Language="DocId" Value="T:System.Threading.EventWaitHandle" />
@@ -69,6 +69,8 @@
     <altmember cref="T:System.Threading.WaitHandle" />
     <altmember cref="T:System.Threading.AutoResetEvent" />
     <altmember cref="T:System.Threading.ManualResetEvent" />
+    <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -140,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -204,6 +207,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is longer than 260 characters.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -265,6 +269,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is longer than 260 characters.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -341,6 +346,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is longer than 260 characters.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName="GetAccessControl">
@@ -401,6 +407,7 @@
  The current <see cref="T:System.Threading.EventWaitHandle" /> object represents a named system event, and was not opened with <see cref="F:System.Security.AccessControl.EventWaitHandleRights.ReadPermissions" />.</exception>
         <exception cref="T:System.NotSupportedException">Not supported for Windows 98 or Windows Millennium Edition.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="M:System.Threading.WaitHandle.Close" /> method was previously called on this <see cref="T:System.Threading.EventWaitHandle" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="OpenExisting">
@@ -495,6 +502,7 @@
         <exception cref="T:System.IO.IOException">A Win32 error occurred.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The named event exists, but the user does not have the security access required to use it.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName="OpenExisting">
@@ -567,6 +575,7 @@
         <exception cref="T:System.IO.IOException">A Win32 error occurred.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The named event exists, but the user does not have the desired security access.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -609,6 +618,7 @@
           <see langword="true" /> if the operation succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="M:System.Threading.WaitHandle.Close" /> method was previously called on this <see cref="T:System.Threading.EventWaitHandle" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -674,6 +684,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="M:System.Threading.WaitHandle.Close" /> method was previously called on this <see cref="T:System.Threading.EventWaitHandle" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName="SetAccessControl">
@@ -735,6 +746,7 @@
  The event was not opened with <see cref="F:System.Security.AccessControl.EventWaitHandleRights.ChangePermissions" />.</exception>
         <exception cref="T:System.SystemException">The current <see cref="T:System.Threading.EventWaitHandle" /> object does not represent a named system event.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="M:System.Threading.WaitHandle.Close" /> method was previously called on this <see cref="T:System.Threading.EventWaitHandle" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="TryOpenExisting">

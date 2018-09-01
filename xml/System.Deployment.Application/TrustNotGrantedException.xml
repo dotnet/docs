@@ -1,4 +1,4 @@
-﻿<Type Name="TrustNotGrantedException" FullName="System.Deployment.Application.TrustNotGrantedException">
+<Type Name="TrustNotGrantedException" FullName="System.Deployment.Application.TrustNotGrantedException">
   <TypeSignature Language="C#" Value="public class TrustNotGrantedException : System.Deployment.Application.DeploymentException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TrustNotGrantedException extends System.Deployment.Application.DeploymentException" />
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.TrustNotGrantedException" />
@@ -39,6 +39,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/a05b5f2f-d1f2-471a-8096-8b11f7554265">ClickOnce Deployment and Security</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/b24a1702-8fbe-45b1-87a0-9618a0708f1d">Trusted Application Deployment Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

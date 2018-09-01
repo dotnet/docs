@@ -1,4 +1,4 @@
-﻿<Type Name="ConnectivityStatus" FullName="System.Web.ClientServices.ConnectivityStatus">
+<Type Name="ConnectivityStatus" FullName="System.Web.ClientServices.ConnectivityStatus">
   <TypeSignature Language="C#" Value="public static class ConnectivityStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ConnectivityStatus extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.ClientServices.ConnectivityStatus" />
@@ -33,6 +33,7 @@
  ]]></format>
     </remarks>
     <altmember cref="M:System.Web.ClientServices.ClientFormsIdentity.RevalidateUser" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
   </Docs>
   <Members>
     <Member MemberName="IsOffline">
@@ -72,6 +73,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.ClientServices.ClientFormsIdentity.RevalidateUser" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
   </Members>

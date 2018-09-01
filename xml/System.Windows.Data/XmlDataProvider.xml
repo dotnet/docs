@@ -1,4 +1,4 @@
-﻿<Type Name="XmlDataProvider" FullName="System.Windows.Data.XmlDataProvider">
+<Type Name="XmlDataProvider" FullName="System.Windows.Data.XmlDataProvider">
   <TypeSignature Language="C#" Value="public class XmlDataProvider : System.Windows.Data.DataSourceProvider, System.Windows.Markup.IUriContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDataProvider extends System.Windows.Data.DataSourceProvider implements class System.Windows.Markup.IUriContext" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.XmlDataProvider" />
@@ -51,6 +51,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Data.ObjectDataProvider" />
+    <related type="Article" href="http://msdn.microsoft.com/library/7ce209c2-621b-4977-b643-565f7e663534">x:XData XAML Directive Element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

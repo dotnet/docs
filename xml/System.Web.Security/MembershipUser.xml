@@ -1,4 +1,4 @@
-﻿<Type Name="MembershipUser" FullName="System.Web.Security.MembershipUser">
+<Type Name="MembershipUser" FullName="System.Web.Security.MembershipUser">
   <TypeSignature Language="C#" Value="public class MembershipUser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MembershipUser extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.MembershipUser" />
@@ -34,7 +34,7 @@
  The <xref:System.Web.Security.MembershipUser> object is used to represent a single membership user in the membership data store. It exposes information about the membership user such as the email address, and provides functionality for the membership user such as the ability to change or reset his or her password.  
   
 > [!NOTE]
->  If you are not familiar with the membership features of ASP.NET, see [Introduction to Membership](http://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980) before continuing. For a list of other topics related to membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
+>  If you are not familiar with the membership features of ASP.NET, see [Introduction to Membership](https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)) before continuing. For a list of other topics related to membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
   
  A <xref:System.Web.Security.MembershipUser> object is returned by the <xref:System.Web.Security.Membership.GetUser%2A> and <xref:System.Web.Security.Membership.CreateUser%2A> methods or as part of a <xref:System.Web.Security.MembershipUserCollection> returned by the <xref:System.Web.Security.Membership.GetAllUsers%2A>, <xref:System.Web.Security.Membership.FindUsersByName%2A>, and <xref:System.Web.Security.Membership.FindUsersByEmail%2A> methods.  
   
@@ -53,6 +53,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to Membership</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -62,6 +63,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates a new membership user object with the specified property values.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -95,6 +97,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -173,6 +176,7 @@
   
  <paramref name="providerName" /> is not found in the <see cref="P:System.Web.Security.Membership.Providers" /> collection.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The constructor is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, derive your class from the type and then call the default protected constructor, or change the application to target the full version of the .NET Framework.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ChangePassword">
@@ -239,6 +243,7 @@
  <paramref name="newPassword" /> is <see langword="null" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
         <altmember cref="T:System.Web.Security.SqlMembershipProvider" />
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ChangePasswordQuestionAndAnswer">
@@ -307,6 +312,7 @@
           <paramref name="password" /> is <see langword="null" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
         <altmember cref="T:System.Web.Security.SqlMembershipProvider" />
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="Comment">
@@ -348,6 +354,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Security.SqlMembershipProvider" />
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="CreationDate">
@@ -388,6 +395,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="Email">
@@ -431,6 +439,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetPassword">
@@ -440,6 +449,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Gets the password for the membership user from the membership data store.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetPassword">
@@ -495,6 +505,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GetPassword">
@@ -553,6 +564,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="IsApproved">
@@ -595,6 +607,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.Security.MembershipUser.IsLockedOut" />
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="IsLockedOut">
@@ -638,6 +651,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.Security.MembershipUser.IsApproved" />
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="IsOnline">
@@ -685,6 +699,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="LastActivityDate">
@@ -732,6 +747,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="LastLockoutDate">
@@ -768,6 +784,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="LastLoginDate">
@@ -812,6 +829,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="LastPasswordChangedDate">
@@ -855,6 +873,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordQuestion">
@@ -903,6 +922,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderName">
@@ -940,6 +960,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderUserKey">
@@ -977,6 +998,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ResetPassword">
@@ -986,6 +1008,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Resets a user's password to a new, automatically generated password.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ResetPassword">
@@ -1040,6 +1063,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ResetPassword">
@@ -1094,6 +1118,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1125,6 +1150,7 @@
         <summary>Returns the user name for the membership user.</summary>
         <returns>The <see cref="P:System.Web.Security.MembershipUser.UserName" /> for the membership user.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="UnlockUser">
@@ -1164,6 +1190,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -1215,6 +1242,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
   </Members>

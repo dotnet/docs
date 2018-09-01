@@ -1,4 +1,4 @@
-﻿<Type Name="XmlEntityReference" FullName="System.Xml.XmlEntityReference">
+<Type Name="XmlEntityReference" FullName="System.Xml.XmlEntityReference">
   <TypeSignature Language="C#" Value="public class XmlEntityReference : System.Xml.XmlLinkedNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlEntityReference extends System.Xml.XmlLinkedNode" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlEntityReference" />
@@ -29,6 +29,7 @@
     <summary>Represents an entity reference node.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="M:System.Xml.XmlDocument.CreateEntityReference(System.String)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54">XML Document Object Model (DOM)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +72,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a42f81b3-0403-4e34-b346-7d2129804e54">Creating New Entity References</related>
       </Docs>
     </Member>
     <Member MemberName="BaseURI">

@@ -1,4 +1,4 @@
-﻿<Type Name="FormsAuthenticationEventArgs" FullName="System.Web.Security.FormsAuthenticationEventArgs">
+<Type Name="FormsAuthenticationEventArgs" FullName="System.Web.Security.FormsAuthenticationEventArgs">
   <TypeSignature Language="C#" Value="public sealed class FormsAuthenticationEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FormsAuthenticationEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.FormsAuthenticationEventArgs" />
@@ -41,6 +41,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +77,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -111,6 +113,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
       </Docs>
     </Member>
     <Member MemberName="User">
@@ -159,6 +162,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
       </Docs>
     </Member>
   </Members>

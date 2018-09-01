@@ -1,4 +1,4 @@
-﻿<Type Name="WebProcessInformation" FullName="System.Web.Management.WebProcessInformation">
+<Type Name="WebProcessInformation" FullName="System.Web.Management.WebProcessInformation">
   <TypeSignature Language="C#" Value="public sealed class WebProcessInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebProcessInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebProcessInformation" />
@@ -86,6 +86,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.Management.WebHeartbeatEvent" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
   </Docs>
   <Members>
     <Member MemberName="AccountName">

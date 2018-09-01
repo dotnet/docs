@@ -1,4 +1,4 @@
-﻿<Type Name="SqlNullValueException" FullName="System.Data.SqlTypes.SqlNullValueException">
+<Type Name="SqlNullValueException" FullName="System.Data.SqlTypes.SqlNullValueException">
   <TypeSignature Language="C#" Value="public sealed class SqlNullValueException : System.Data.SqlTypes.SqlTypeException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SqlNullValueException extends System.Data.SqlTypes.SqlTypeException" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlNullValueException" />
@@ -100,6 +100,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -149,6 +150,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -188,6 +190,7 @@
         <param name="e">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlNullValueException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">

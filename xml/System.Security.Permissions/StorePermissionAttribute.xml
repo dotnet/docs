@@ -1,4 +1,4 @@
-﻿<Type Name="StorePermissionAttribute" FullName="System.Security.Permissions.StorePermissionAttribute">
+<Type Name="StorePermissionAttribute" FullName="System.Security.Permissions.StorePermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class StorePermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit StorePermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.StorePermissionAttribute" />
@@ -43,6 +43,7 @@
     </remarks>
     <altmember cref="T:System.Security.Permissions.StorePermission" />
     <altmember cref="T:System.Security.Permissions.StorePermissionFlags" />
+    <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

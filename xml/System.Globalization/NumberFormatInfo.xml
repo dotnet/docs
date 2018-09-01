@@ -1,4 +1,4 @@
-﻿<Type Name="NumberFormatInfo" FullName="System.Globalization.NumberFormatInfo">
+<Type Name="NumberFormatInfo" FullName="System.Globalization.NumberFormatInfo">
   <TypeSignature Language="C#" Value="public sealed class NumberFormatInfo : ICloneable, IFormatProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit NumberFormatInfo extends System.Object implements class System.ICloneable, class System.IFormatProvider" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.NumberFormatInfo" />
@@ -332,6 +332,7 @@
     </remarks>
     <altmember cref="T:System.Globalization.CultureInfo" />
     <altmember cref="T:System.IFormatProvider" />
+    <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

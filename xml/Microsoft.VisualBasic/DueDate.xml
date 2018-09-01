@@ -1,4 +1,4 @@
-﻿<Type Name="DueDate" FullName="Microsoft.VisualBasic.DueDate">
+<Type Name="DueDate" FullName="Microsoft.VisualBasic.DueDate">
   <TypeSignature Language="C#" Value="public enum DueDate" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DueDate extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.DueDate" />
@@ -27,6 +27,10 @@
  ]]></format>
     </remarks>
     <altmember cref="T:Microsoft.VisualBasic.DateInterval" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/constants-and-enumerations.md">Constants and Enumerations</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/financial-summary.md">Financial Summary</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/constants-enums/when-to-use-an-enumeration.md">When to Use an Enumeration</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md">How to: Refer to an Enumeration Member</related>
   </Docs>
   <Members>
     <Member MemberName="BegOfPeriod">

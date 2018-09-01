@@ -1,4 +1,4 @@
-﻿<Type Name="SslStream" FullName="System.Net.Security.SslStream">
+<Type Name="SslStream" FullName="System.Net.Security.SslStream">
   <TypeSignature Language="C#" Value="public class SslStream : System.Net.Security.AuthenticatedStream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SslStream extends System.Net.Security.AuthenticatedStream implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Security.SslStream" />
@@ -2346,7 +2346,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
       </Docs>
     </Member>
@@ -3690,6 +3690,7 @@
         <value>The <see cref="T:System.Net.TransportContext" /> object that contains the channel binding token (CBT) used for extended protection.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Write">

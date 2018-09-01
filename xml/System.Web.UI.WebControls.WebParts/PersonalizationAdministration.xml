@@ -1,4 +1,4 @@
-﻿<Type Name="PersonalizationAdministration" FullName="System.Web.UI.WebControls.WebParts.PersonalizationAdministration">
+<Type Name="PersonalizationAdministration" FullName="System.Web.UI.WebControls.WebParts.PersonalizationAdministration">
   <TypeSignature Language="C#" Value="public static class PersonalizationAdministration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PersonalizationAdministration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PersonalizationAdministration" />
@@ -41,6 +41,11 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
   </Docs>
   <Members>
     <Member MemberName="ApplicationName">
@@ -80,6 +85,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindInactiveUserState">
@@ -90,6 +99,10 @@
       <Docs>
         <summary>Returns a collection of per-user personalization state information for inactive users, based on the specified parameters.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FindInactiveUserState">
@@ -155,6 +168,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="FindInactiveUserState">
@@ -240,6 +257,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindSharedState">
@@ -250,6 +271,10 @@
       <Docs>
         <summary>Returns a collection of shared personalization state information based on the specified parameters.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FindSharedState">
@@ -307,6 +332,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="FindSharedState">
@@ -384,6 +413,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindUserState">
@@ -394,6 +427,10 @@
       <Docs>
         <summary>Returns a collection of per-user personalization state information based on the specified parameters.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FindUserState">
@@ -465,6 +502,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="FindUserState">
@@ -556,6 +597,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAllInactiveUserState">
@@ -566,6 +611,10 @@
       <Docs>
         <summary>Returns a collection of all per-user personalization state information associated with inactive users.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetAllInactiveUserState">
@@ -608,6 +657,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllInactiveUserState">
@@ -671,6 +724,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAllState">
@@ -722,6 +779,10 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="scope" /> is not a valid member of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllState">
@@ -787,6 +848,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetCountOfInactiveUserState">
@@ -797,6 +862,10 @@
       <Docs>
         <summary>Returns a count of the per-user personalization items in the underlying data store for inactive users.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetCountOfInactiveUserState">
@@ -847,6 +916,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="GetCountOfInactiveUserState">
@@ -905,6 +978,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetCountOfState">
@@ -915,6 +992,10 @@
       <Docs>
         <summary>Returns a count of the personalization state items in the underlying data store that exist for the specified scope and additional parameters.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetCountOfState">
@@ -974,6 +1055,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="GetCountOfState">
@@ -1027,6 +1112,10 @@
           <paramref name="scope" /> is not a valid member of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="GetCountOfUserState">
@@ -1083,6 +1172,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -1126,6 +1219,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="Providers">
@@ -1164,6 +1261,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ResetAllState">
@@ -1207,6 +1308,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count of affected rows.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ResetInactiveUserState">
@@ -1217,6 +1322,10 @@
       <Docs>
         <summary>Resets per-user personalization state information by deleting the associated rows in the underlying data store.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ResetInactiveUserState">
@@ -1269,6 +1378,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ResetInactiveUserState">
@@ -1329,6 +1442,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ResetSharedState">
@@ -1339,6 +1456,10 @@
       <Docs>
         <summary>Resets shared state in the underlying data store for the specified path or paths.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ResetSharedState">
@@ -1392,6 +1513,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was either a negative number or was greater than one.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ResetSharedState">
@@ -1448,6 +1573,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ResetState">
@@ -1517,6 +1646,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ResetUserState">
@@ -1527,6 +1660,10 @@
       <Docs>
         <summary>Resets all per-user state in the underlying data store for the specified parameters.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ResetUserState">
@@ -1579,6 +1716,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ResetUserState">
@@ -1637,6 +1778,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ResetUserState">
@@ -1695,6 +1840,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ResetUserState">
@@ -1759,6 +1908,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
   </Members>

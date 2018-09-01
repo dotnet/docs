@@ -1,4 +1,4 @@
-﻿<Type Name="DictionaryBase" FullName="System.Collections.DictionaryBase">
+<Type Name="DictionaryBase" FullName="System.Collections.DictionaryBase">
   <TypeSignature Language="C#" Value="public abstract class DictionaryBase : System.Collections.IDictionary" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit DictionaryBase extends System.Object implements class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.DictionaryBase" />
@@ -75,6 +75,7 @@
     <altmember cref="T:System.Collections.Hashtable" />
     <altmember cref="T:System.Collections.IDictionary" />
     <altmember cref="N:System.Collections.Generic" />
+    <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1292,6 +1293,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.IsFixedSize">
@@ -1584,6 +1586,7 @@
  The <see cref="T:System.Collections.DictionaryBase" /> has a fixed size.</exception>
         <altmember cref="M:System.Collections.IDictionary.Add(System.Object,System.Object)" />
         <altmember cref="M:System.Collections.IDictionary.Remove(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Values">

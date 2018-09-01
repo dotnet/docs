@@ -1,4 +1,4 @@
-﻿<Type Name="ListViewDeletedEventArgs" FullName="System.Web.UI.WebControls.ListViewDeletedEventArgs">
+<Type Name="ListViewDeletedEventArgs" FullName="System.Web.UI.WebControls.ListViewDeletedEventArgs">
   <TypeSignature Language="C#" Value="public class ListViewDeletedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewDeletedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewDeletedEventArgs" />
@@ -48,6 +48,7 @@
     <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.ExceptionHandled" />
     <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys" />
     <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -92,6 +93,7 @@
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
         <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemDeleted(System.Web.UI.WebControls.ListViewDeletedEventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -145,6 +147,7 @@
         <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemDeleted(System.Web.UI.WebControls.ListViewDeletedEventArgs)" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ConflictDetection" />
         <altmember cref="T:System.Web.UI.ConflictOptions" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -192,6 +195,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -240,6 +244,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -288,6 +293,8 @@
         <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
         <altmember cref="T:System.Collections.DictionaryEntry" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/aa3f28c5-fd99-4978-8a66-c7709e0816c4">How a Data Source Control Creates Parameters for Data-bound Fields</related>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -339,6 +346,8 @@
         <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
         <altmember cref="T:System.Collections.DictionaryEntry" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/aa3f28c5-fd99-4978-8a66-c7709e0816c4">How a Data Source Control Creates Parameters for Data-bound Fields</related>
       </Docs>
     </Member>
   </Members>

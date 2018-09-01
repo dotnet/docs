@@ -1,4 +1,4 @@
-﻿<Type Name="RuntimeBinderException" FullName="Microsoft.CSharp.RuntimeBinder.RuntimeBinderException">
+<Type Name="RuntimeBinderException" FullName="Microsoft.CSharp.RuntimeBinder.RuntimeBinderException">
   <TypeSignature Language="C#" Value="public class RuntimeBinderException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RuntimeBinderException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.CSharp.RuntimeBinder.RuntimeBinderException" />
@@ -76,6 +76,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -115,6 +116,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="EndpointBehaviorElement" FullName="System.ServiceModel.Configuration.EndpointBehaviorElement">
+<Type Name="EndpointBehaviorElement" FullName="System.ServiceModel.Configuration.EndpointBehaviorElement">
   <TypeSignature Language="C#" Value="public class EndpointBehaviorElement : System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement&lt;System.ServiceModel.Configuration.BehaviorExtensionElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EndpointBehaviorElement extends System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement`1&lt;class System.ServiceModel.Configuration.BehaviorExtensionElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.EndpointBehaviorElement" />
@@ -20,6 +20,8 @@
   <Docs>
     <summary>Represents a configuration element that contains a list of endpoint behaviors that is applied to all Windows Communication Foundation (WCF) endpoints on the machine.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/0e5da4e6-1aa5-466c-924e-f10efee57f0b">&lt;Behaviors&gt;</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/fb851947-e8dd-4f8c-8323-26fae90b09c3">&lt;endpointBehaviors&gt;</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="TemplateContainer" FullName="System.Web.UI.MobileControls.TemplateContainer">
+<Type Name="TemplateContainer" FullName="System.Web.UI.MobileControls.TemplateContainer">
   <TypeSignature Language="C#" Value="public class TemplateContainer : System.Web.UI.MobileControls.Panel, System.Web.UI.INamingContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateContainer extends System.Web.UI.MobileControls.Panel implements class System.Web.UI.INamingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.TemplateContainer" />
@@ -58,6 +58,10 @@
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.MobileListItem" />
+    <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x5bxt7h7(v=vs.85)">Container Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/72d9403c-7191-4313-b8f2-fbc1ffed7d2d">Developing Mobile Web Applications</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -77,6 +81,9 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.TemplateContainer" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x5bxt7h7(v=vs.85)">Container Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/72d9403c-7191-4313-b8f2-fbc1ffed7d2d">Developing Mobile Web Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName="BreakAfter">

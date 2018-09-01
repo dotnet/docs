@@ -1,4 +1,4 @@
-﻿<Type Name="CachingSectionGroup" FullName="System.Runtime.Caching.Configuration.CachingSectionGroup">
+<Type Name="CachingSectionGroup" FullName="System.Runtime.Caching.Configuration.CachingSectionGroup">
   <TypeSignature Language="C#" Value="public sealed class CachingSectionGroup : System.Configuration.ConfigurationSectionGroup" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CachingSectionGroup extends System.Configuration.ConfigurationSectionGroup" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.Configuration.CachingSectionGroup" />
@@ -23,6 +23,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/182a622f-f7cf-472d-9d0b-451d2fd94525">&lt;memoryCache&gt; Element (Cache Settings)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +79,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/182a622f-f7cf-472d-9d0b-451d2fd94525">&lt;memoryCache&gt; Element (Cache Settings)</related>
       </Docs>
     </Member>
   </Members>

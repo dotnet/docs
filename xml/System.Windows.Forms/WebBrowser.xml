@@ -1,4 +1,4 @@
-﻿<Type Name="WebBrowser" FullName="System.Windows.Forms.WebBrowser">
+<Type Name="WebBrowser" FullName="System.Windows.Forms.WebBrowser">
   <TypeSignature Language="C#" Value="public class WebBrowser : System.Windows.Forms.WebBrowserBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebBrowser extends System.Windows.Forms.WebBrowserBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowser" />
@@ -78,7 +78,7 @@
  The <xref:System.Windows.Forms.WebBrowser> control is a managed wrapper for the ActiveX [WebBrowser control](http://go.microsoft.com/fwlink/?LinkId=198812), and uses whichever version of the control is installed on the user's computer.  
   
 > [!NOTE]
->  This class makes security demands at the class level. A <xref:System.Security.SecurityException> is thrown when a derived class or any caller in the call stack does not have full trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/library/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class makes security demands at the class level. A <xref:System.Security.SecurityException> is thrown when a derived class or any caller in the call stack does not have full trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/x4yx82e6(v=vs.100)).  
   
 > [!NOTE]
 >  The <xref:System.Windows.Forms.WebBrowser> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
@@ -97,6 +97,9 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for derived classes to inherit this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+    <related type="Article" href="http://msdn.microsoft.com/library/12667861-5b5b-46bc-8fb5-675e25264c9f">WebBrowser Control (Windows Forms)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74">Using Libraries from Partially Trusted Code</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -221,6 +224,8 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <altmember cref="P:System.Windows.Forms.WebBrowser.WebBrowserShortcutsEnabled" />
         <altmember cref="P:System.Windows.Forms.WebBrowser.AllowWebBrowserDrop" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="AttachInterfaces">
@@ -513,6 +518,8 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <altmember cref="M:System.Windows.Forms.WebBrowser.DetachSink" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/aa768283.aspx">DWebBrowserEvents2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="CreateWebBrowserSiteBase">
@@ -550,6 +557,8 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <altmember cref="T:System.Windows.Forms.WebBrowser.WebBrowserSite" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/aa753260.aspx">IDocHostUIHandler Interface</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -639,6 +648,8 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <altmember cref="M:System.Windows.Forms.WebBrowser.CreateSink" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/aa768283.aspx">DWebBrowserEvents2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -727,6 +738,8 @@
         <altmember cref="T:System.Windows.Forms.HtmlDocument" />
         <altmember cref="M:System.Windows.Forms.HtmlDocument.InvokeScript(System.String,System.Object[])" />
         <altmember cref="P:System.Windows.Forms.WebBrowser.ObjectForScripting" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="DocumentCompleted">
@@ -849,6 +862,8 @@
         <altmember cref="P:System.Windows.Forms.WebBrowser.Document" />
         <altmember cref="P:System.Windows.Forms.WebBrowser.DocumentText" />
         <altmember cref="T:System.IO.Stream" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="DocumentText">
@@ -908,6 +923,8 @@
         <altmember cref="P:System.Windows.Forms.WebBrowser.Document" />
         <altmember cref="P:System.Windows.Forms.WebBrowser.DocumentStream" />
         <altmember cref="E:System.Windows.Forms.WebBrowser.DocumentCompleted" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="DocumentTitle">
@@ -965,6 +982,8 @@
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <altmember cref="E:System.Windows.Forms.WebBrowser.DocumentTitleChanged" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="DocumentTitleChanged">
@@ -1058,6 +1077,8 @@
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="EncryptionLevel">
@@ -1103,6 +1124,8 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <altmember cref="E:System.Windows.Forms.WebBrowser.EncryptionLevelChanged" />
         <altmember cref="T:System.Windows.Forms.WebBrowserEncryptionLevel" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="EncryptionLevelChanged">
@@ -1372,6 +1395,8 @@
         <altmember cref="M:System.Windows.Forms.WebBrowser.GoSearch" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.Stop" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="GoSearch">
@@ -1424,6 +1449,8 @@
         <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.Stop" />
         <altmember cref="P:System.Windows.Forms.WebBrowser.Url" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="IsBusy">
@@ -1470,6 +1497,8 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <altmember cref="P:System.Windows.Forms.WebBrowser.ReadyState" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.Stop" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="IsOffline">
@@ -1514,6 +1543,8 @@
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="IsWebBrowserContextMenuEnabled">
@@ -1613,6 +1644,8 @@
         <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1672,6 +1705,8 @@
         <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1716,6 +1751,8 @@
         <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
         <altmember cref="E:System.Windows.Forms.WebBrowser.NewWindow" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1760,6 +1797,8 @@
         <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1805,6 +1844,8 @@
         <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
         <altmember cref="E:System.Windows.Forms.WebBrowser.NewWindow" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1850,6 +1891,8 @@
         <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1898,6 +1941,8 @@
         <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1947,6 +1992,8 @@
         <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
         <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="Navigated">
@@ -2328,6 +2375,8 @@
         </block>
         <altmember cref="E:System.Windows.Forms.WebBrowser.DocumentCompleted" />
         <altmember cref="T:System.Windows.Forms.WebBrowserDocumentCompletedEventArgs" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="OnDocumentTitleChanged">
@@ -2868,6 +2917,8 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <altmember cref="P:System.Windows.Forms.WebBrowser.IsBusy" />
         <altmember cref="T:System.Windows.Forms.WebBrowserReadyState" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Refresh">
@@ -3016,6 +3067,8 @@
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the [IWebBrowser2 interface](http://go.microsoft.com/fwlink/?LinkId=151479) could not be retrieved from the underlying ActiveX [WebBrowser control](http://go.microsoft.com/fwlink/?LinkId=151478).</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="ScrollBarsEnabled">
@@ -3318,6 +3371,8 @@
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <altmember cref="E:System.Windows.Forms.WebBrowser.StatusTextChanged" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="StatusTextChanged">
@@ -3476,6 +3531,8 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <altmember cref="Overload:System.Windows.Forms.WebBrowser.Navigate" />
         <altmember cref="E:System.Windows.Forms.WebBrowser.DocumentCompleted" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151478">WebBrowser Control</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=151479">IWebBrowser2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="Version">

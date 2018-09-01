@@ -1,4 +1,4 @@
-﻿<Type Name="ActivationContext" FullName="System.ActivationContext">
+<Type Name="ActivationContext" FullName="System.ActivationContext">
   <TypeSignature Language="C#" Value="public sealed class ActivationContext : IDisposable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ActivationContext extends System.Object implements class System.IDisposable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.ActivationContext" />
@@ -51,6 +51,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="/visualstudio/deployment/publishing-clickonce-applications">Publishing ClickOnce Applications</related>
   </Docs>
   <Members>
     <Member MemberName="ApplicationManifestBytes">

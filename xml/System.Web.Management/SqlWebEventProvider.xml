@@ -1,4 +1,4 @@
-﻿<Type Name="SqlWebEventProvider" FullName="System.Web.Management.SqlWebEventProvider">
+<Type Name="SqlWebEventProvider" FullName="System.Web.Management.SqlWebEventProvider">
   <TypeSignature Language="C#" Value="public class SqlWebEventProvider : System.Web.Management.BufferedWebEventProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlWebEventProvider extends System.Web.Management.BufferedWebEventProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.SqlWebEventProvider" />
@@ -82,6 +82,7 @@
     </remarks>
     <altmember cref="T:System.Web.Management.WebEventProvider" />
     <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2">Installing and Configuring ASP.NET Providers</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

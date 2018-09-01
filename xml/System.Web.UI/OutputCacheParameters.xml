@@ -1,4 +1,4 @@
-﻿<Type Name="OutputCacheParameters" FullName="System.Web.UI.OutputCacheParameters">
+<Type Name="OutputCacheParameters" FullName="System.Web.UI.OutputCacheParameters">
   <TypeSignature Language="C#" Value="public sealed class OutputCacheParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OutputCacheParameters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.OutputCacheParameters" />
@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/cdd8e523-7305-4685-a456-c5be1de1367e">Caching Portions of an ASP.NET Page</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -264,6 +266,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.PartialCachingAttribute.VaryByParams" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
       </Docs>
     </Member>
     <Member MemberName="VaryByControl">
@@ -327,6 +330,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.PartialCachingAttribute.VaryByCustom" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
       </Docs>
     </Member>
     <Member MemberName="VaryByHeader">
@@ -361,6 +365,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
       </Docs>
     </Member>
     <Member MemberName="VaryByParam">
@@ -396,6 +401,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.PartialCachingAttribute.VaryByParams" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
       </Docs>
     </Member>
   </Members>

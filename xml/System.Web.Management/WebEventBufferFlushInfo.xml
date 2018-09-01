@@ -1,4 +1,4 @@
-﻿<Type Name="WebEventBufferFlushInfo" FullName="System.Web.Management.WebEventBufferFlushInfo">
+<Type Name="WebEventBufferFlushInfo" FullName="System.Web.Management.WebEventBufferFlushInfo">
   <TypeSignature Language="C#" Value="public sealed class WebEventBufferFlushInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebEventBufferFlushInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebEventBufferFlushInfo" />
@@ -37,6 +37,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Events">

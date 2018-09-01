@@ -1,4 +1,4 @@
-﻿<Type Name="FrameworkElement" FullName="System.Windows.FrameworkElement">
+<Type Name="FrameworkElement" FullName="System.Windows.FrameworkElement">
   <TypeSignature Language="C#" Value="public class FrameworkElement : System.Windows.UIElement, System.ComponentModel.ISupportInitialize, System.Windows.IFrameworkInputElement, System.Windows.Markup.IQueryAmbient" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi FrameworkElement extends System.Windows.UIElement implements class System.ComponentModel.ISupportInitialize, class System.Windows.IFrameworkInputElement, class System.Windows.IInputElement, class System.Windows.Markup.IQueryAmbient" />
   <TypeSignature Language="DocId" Value="T:System.Windows.FrameworkElement" />
@@ -1279,6 +1279,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Windows.FrameworkElement.OverridesDefaultStyle" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160025">NumericUpDown Custom Control with Theme and UI Automation Support Sample</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultStyleKeyProperty">
@@ -1373,6 +1374,7 @@
         </remarks>
         <altmember cref="M:System.Windows.FrameworkElement.FindResource(System.Object)" />
         <altmember cref="P:System.Windows.FrameworkElement.Name" />
+        <related type="Article" href="http://msdn.microsoft.com/library/b7e61222-e8cf-48d2-acd0-6df3b7685d48">x:Name Attribute</related>
       </Docs>
     </Member>
     <Member MemberName="FindResource">
@@ -2390,6 +2392,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=158252">2-D Transforms Sample</related>
       </Docs>
     </Member>
     <Member MemberName="LayoutTransformProperty">
@@ -2516,6 +2519,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c5358e14-d24c-44c7-b5eb-6062a4fd981c">x:Array Markup Extension</related>
       </Docs>
     </Member>
     <Member MemberName="Margin">
@@ -4065,6 +4069,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Windows.Application.Resources" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1985cd45-f197-42d5-b75e-886add64b248">x:Key Attribute</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetBinding">

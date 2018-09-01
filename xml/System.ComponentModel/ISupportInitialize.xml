@@ -1,4 +1,4 @@
-﻿<Type Name="ISupportInitialize" FullName="System.ComponentModel.ISupportInitialize">
+<Type Name="ISupportInitialize" FullName="System.ComponentModel.ISupportInitialize">
   <TypeSignature Language="C#" Value="public interface ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ISupportInitialize" />
@@ -44,6 +44,7 @@
  ]]></format>
     </remarks>
     <altmember cref="M:System.Windows.Forms.Control.SuspendLayout" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3">Programming with Components</related>
   </Docs>
   <Members>
     <Member MemberName="BeginInit">
@@ -89,6 +90,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Windows.Forms.Control.SuspendLayout" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3">Programming with Components</related>
       </Docs>
     </Member>
     <Member MemberName="EndInit">
@@ -134,6 +136,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Windows.Forms.Control.SuspendLayout" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3">Programming with Components</related>
       </Docs>
     </Member>
   </Members>

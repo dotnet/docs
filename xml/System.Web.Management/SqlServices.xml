@@ -1,4 +1,4 @@
-﻿<Type Name="SqlServices" FullName="System.Web.Management.SqlServices">
+<Type Name="SqlServices" FullName="System.Web.Management.SqlServices">
   <TypeSignature Language="C#" Value="public static class SqlServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SqlServices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.SqlServices" />
@@ -35,6 +35,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/48a70e56-9e1c-4a41-a89e-5be7ac8fe18d">Installing the SQL Server Provider Database</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4">Session State Modes</related>
   </Docs>
   <Members>
     <Member MemberName="GenerateApplicationServicesScripts">
@@ -67,6 +69,7 @@
         <returns>Returns the generated script code.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.Management.SqlFeatures" />
+        <related type="Article" href="http://msdn.microsoft.com/library/48a70e56-9e1c-4a41-a89e-5be7ac8fe18d">Installing the SQL Server Provider Database</related>
       </Docs>
     </Member>
     <Member MemberName="GenerateSessionStateScripts">
@@ -100,6 +103,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
         <altmember cref="T:System.Web.Management.SessionStateType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4">Session State Modes</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Install">
@@ -110,6 +114,7 @@
       <Docs>
         <summary>Installs components for specified ASP.NET features on a SQL Server database.</summary>
         <altmember cref="T:System.Web.Management.SqlFeatures" />
+        <related type="Article" href="http://msdn.microsoft.com/library/48a70e56-9e1c-4a41-a89e-5be7ac8fe18d">Installing the SQL Server Provider Database</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Install">
@@ -166,6 +171,7 @@
         <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contains one or more invalid flags.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
         <altmember cref="T:System.Web.Management.SqlFeatures" />
+        <related type="Article" href="http://msdn.microsoft.com/library/48a70e56-9e1c-4a41-a89e-5be7ac8fe18d">Installing the SQL Server Provider Database</related>
       </Docs>
     </Member>
     <Member MemberName="Install">
@@ -219,6 +225,7 @@
         <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contains one or more invalid flags.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
         <altmember cref="T:System.Web.Management.SqlFeatures" />
+        <related type="Article" href="http://msdn.microsoft.com/library/48a70e56-9e1c-4a41-a89e-5be7ac8fe18d">Installing the SQL Server Provider Database</related>
       </Docs>
     </Member>
     <Member MemberName="Install">
@@ -271,6 +278,7 @@
         <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contains one or more invalid flags.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
         <altmember cref="T:System.Web.Management.SqlFeatures" />
+        <related type="Article" href="http://msdn.microsoft.com/library/48a70e56-9e1c-4a41-a89e-5be7ac8fe18d">Installing the SQL Server Provider Database</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="InstallSessionState">
@@ -281,6 +289,7 @@
       <Docs>
         <summary>Installs components for ASP.NET session state on a SQL Server database.</summary>
         <altmember cref="T:System.Web.Management.SessionStateType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4">Session State Modes</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="InstallSessionState">
@@ -337,6 +346,7 @@
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
         <altmember cref="T:System.Web.Management.SessionStateType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4">Session State Modes</related>
       </Docs>
     </Member>
     <Member MemberName="InstallSessionState">
@@ -385,6 +395,7 @@
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
         <altmember cref="T:System.Web.Management.SessionStateType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4">Session State Modes</related>
       </Docs>
     </Member>
     <Member MemberName="InstallSessionState">
@@ -445,6 +456,7 @@
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
         <altmember cref="T:System.Web.Management.SessionStateType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4">Session State Modes</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Uninstall">
@@ -455,6 +467,7 @@
       <Docs>
         <summary>Removes components for selected ASP.NET features from a SQL Server database.</summary>
         <altmember cref="T:System.Web.Management.SqlFeatures" />
+        <related type="Article" href="http://msdn.microsoft.com/library/48a70e56-9e1c-4a41-a89e-5be7ac8fe18d">Installing the SQL Server Provider Database</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Uninstall">
@@ -511,6 +524,7 @@
         <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contained one or more invalid flags.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation, an attempt was made to uninstall from a nonexistent database, or one or more tables for the features in the specified database contained data.</exception>
         <altmember cref="T:System.Web.Management.SqlFeatures" />
+        <related type="Article" href="http://msdn.microsoft.com/library/48a70e56-9e1c-4a41-a89e-5be7ac8fe18d">Installing the SQL Server Provider Database</related>
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -567,6 +581,7 @@
         <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contained one or more invalid flags.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation, an attempt was made to uninstall from a nonexistent database, or one or more tables for the features in the specified database contained data.</exception>
         <altmember cref="T:System.Web.Management.SqlFeatures" />
+        <related type="Article" href="http://msdn.microsoft.com/library/48a70e56-9e1c-4a41-a89e-5be7ac8fe18d">Installing the SQL Server Provider Database</related>
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -619,6 +634,7 @@
         <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contained one or more invalid flags.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation, an attempt was made to uninstall from a nonexistent database, or one or more tables for the features in the specified database contained data.</exception>
         <altmember cref="T:System.Web.Management.SqlFeatures" />
+        <related type="Article" href="http://msdn.microsoft.com/library/48a70e56-9e1c-4a41-a89e-5be7ac8fe18d">Installing the SQL Server Provider Database</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="UninstallSessionState">
@@ -629,6 +645,7 @@
       <Docs>
         <summary>Removes components for ASP.NET session state from a SQL Server database.</summary>
         <altmember cref="T:System.Web.Management.SessionStateType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4">Session State Modes</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="UninstallSessionState">
@@ -684,6 +701,7 @@
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
         <altmember cref="T:System.Web.Management.SessionStateType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4">Session State Modes</related>
       </Docs>
     </Member>
     <Member MemberName="UninstallSessionState">
@@ -732,6 +750,7 @@
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
         <altmember cref="T:System.Web.Management.SessionStateType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4">Session State Modes</related>
       </Docs>
     </Member>
     <Member MemberName="UninstallSessionState">
@@ -791,6 +810,7 @@
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
         <altmember cref="T:System.Web.Management.SessionStateType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4">Session State Modes</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="SpeechSynthesizer" FullName="System.Speech.Synthesis.SpeechSynthesizer">
+<Type Name="SpeechSynthesizer" FullName="System.Speech.Synthesis.SpeechSynthesizer">
   <TypeSignature Language="C#" Value="public sealed class SpeechSynthesizer : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SpeechSynthesizer extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SpeechSynthesizer" />
@@ -83,6 +83,7 @@ namespace SampleSynthesis
     <altmember cref="T:System.Speech.Synthesis.InstalledVoice" />
     <altmember cref="T:System.Speech.Synthesis.Prompt" />
     <altmember cref="T:System.Speech.Synthesis.PromptBuilder" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361644(v%3doffice.14)">Speech Synthesis</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -148,7 +149,7 @@ namespace SampleSynthesis
 ## Remarks  
  A pronunciation lexicon is a collection of words or phrases together with their pronunciations, which consist of letters and characters from a supported phonetic alphabet. You can use a lexicon to specify custom pronunciations for specialized vocabulary in your application.  
   
- Pronunciations specified in an external lexicon file take precedence over the pronunciations of the speech synthesizer's internal lexicon or dictionary. However, pronunciations specified inline in prompts created with any of the <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithPronunciation%2A>, <xref:System.Speech.Synthesis.PromptBuilder.AppendSsmlMarkup%2A>, or <xref:System.Speech.Synthesis.PromptBuilder.AppendSsml%2A> methods take precedence over pronunciations specified in any lexicon. Inline pronunciations apply only to a single occurrence of a word. See [Lexicons and Phonetic Alphabets](http://msdn.microsoft.com/library/435e3c6f-6834-4e5a-b0f6-c17b2275dc51) for more information.  
+ Pronunciations specified in an external lexicon file take precedence over the pronunciations of the speech synthesizer's internal lexicon or dictionary. However, pronunciations specified inline in prompts created with any of the <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithPronunciation%2A>, <xref:System.Speech.Synthesis.PromptBuilder.AppendSsmlMarkup%2A>, or <xref:System.Speech.Synthesis.PromptBuilder.AppendSsml%2A> methods take precedence over pronunciations specified in any lexicon. Inline pronunciations apply only to a single occurrence of a word. See [Lexicons and Phonetic Alphabets](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh378335(v%3doffice.14)) for more information.  
   
  You can add multiple lexicons to a <xref:System.Speech.Synthesis.SpeechSynthesizer> object.Two values are currently supported for the `mediaType` parameter:  
   

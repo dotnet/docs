@@ -1,4 +1,4 @@
-﻿<Type Name="ProfileInfo" FullName="System.Web.Profile.ProfileInfo">
+<Type Name="ProfileInfo" FullName="System.Web.Profile.ProfileInfo">
   <TypeSignature Language="C#" Value="public class ProfileInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ProfileInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileInfo" />
@@ -36,6 +36,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/58de6e99-31a7-41b9-93ed-51b9b4a67e98">Implementing a Profile Provider</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -45,6 +47,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Web.Profile.ProfileInfo" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -77,6 +80,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -122,6 +126,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/58de6e99-31a7-41b9-93ed-51b9b4a67e98">Implementing a Profile Provider</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsAnonymous">
@@ -150,6 +156,7 @@
         <value>
           <see langword="true" /> if the user name for the profile is anonymous; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LastActivityDate">
@@ -172,6 +179,7 @@
         <summary>Gets the last date and time when the profile was read or updated.</summary>
         <value>A <see cref="T:System.DateTime" /> that represents the last date and time when the profile was read or updated.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LastUpdatedDate">
@@ -194,6 +202,7 @@
         <summary>Gets the last date and time when the profile was updated.</summary>
         <value>A <see cref="T:System.DateTime" /> that represents the last date and time when the profile was updated.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -228,6 +237,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -255,6 +265,7 @@
         <summary>Gets the user name for the profile.</summary>
         <value>The user name for the profile.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
   </Members>

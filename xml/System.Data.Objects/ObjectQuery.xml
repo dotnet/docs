@@ -1,4 +1,4 @@
-﻿<Type Name="ObjectQuery" FullName="System.Data.Objects.ObjectQuery">
+<Type Name="ObjectQuery" FullName="System.Data.Objects.ObjectQuery">
   <TypeSignature Language="C#" Value="public abstract class ObjectQuery : System.Collections.IEnumerable, System.ComponentModel.IListSource, System.Linq.IOrderedQueryable, System.Linq.IQueryable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ObjectQuery extends System.Object implements class System.Collections.IEnumerable, class System.ComponentModel.IListSource, class System.Linq.IOrderedQueryable, class System.Linq.IQueryable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.ObjectQuery" />
@@ -37,6 +37,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/641f9b68-9046-47a1-abb0-1c8eaeda0e2d">LINQ to Entities</related>
   </Docs>
   <Members>
     <Member MemberName="CommandText">
@@ -86,7 +87,7 @@
 ## Remarks  
  The context for the query includes the connection, cache, and metadata. For more information, see [Object Services Overview (Entity Framework)](http://msdn.microsoft.com/library/43014cf9-c9cb-4538-bfbb-197820b60038).  
   
- The connection property is mutable and must be set before a query can be executed. For more information, see [Managing Connections in Object Services (Entity Framework)](http://msdn.microsoft.com/library/a1df87ef-6441-417d-b264-bb58360e5d67).  
+ The connection property is mutable and must be set before a query can be executed. For more information, see [Managing Connections in Object Services (Entity Framework)](https://msdn.microsoft.com/library/a1df87ef-6441-417d-b264-bb58360e5d67(v=vs.90)).  
   
    
   
@@ -98,6 +99,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects and Shaping Results (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="EnablePlanCaching">
@@ -127,6 +129,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -161,6 +164,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="GetResultType">
@@ -194,6 +198,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/a1df87ef-6441-417d-b264-bb58360e5d67(v=vs.90)">Managing Connections in Object Services (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/196097a5-a791-4ac4-9e6a-805685d481d5">ADO.NET Metadata</related>
       </Docs>
     </Member>
     <Member MemberName="MergeOption">
@@ -223,6 +229,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects and Shaping Results (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -260,6 +267,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -301,6 +309,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IListSource.ContainsListCollection">
@@ -500,6 +509,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects and Shaping Results (Entity Framework)</related>
       </Docs>
     </Member>
   </Members>

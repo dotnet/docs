@@ -1,4 +1,4 @@
-﻿<Type Name="TrackingWorkflowTerminatedEventArgs" FullName="System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs">
+<Type Name="TrackingWorkflowTerminatedEventArgs" FullName="System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs">
   <TypeSignature Language="C#" Value="public class TrackingWorkflowTerminatedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TrackingWorkflowTerminatedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs" />
@@ -44,13 +44,14 @@
 ## Examples  
  The following code example demonstrates a method, named `WriteTerminatedEventArgs`, which captures a <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs>. The code checks whether the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs.Exception%2A> property is `null` (`Nothing` in Visual Basic). If it is not, the code writes the message associated with the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs.Exception%2A> property to the console. If <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs.Exception%2A> is `null` (`Nothing`), the code does not write any exception information to the console.  
   
- This code example is part of the EventArgs Tracking SDK Sample from the Program.cs file. For more information, see [EventArgs Tracking Sample](http://msdn.microsoft.com/library/94818da2-c3c4-4a13-b47a-a0fb30dbbf1c).  
+ This code example is part of the EventArgs Tracking SDK Sample from the Program.cs file. For more information, see [EventArgs Tracking Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741730(v=vs.90)).  
   
  [!code-csharp[WF_Samples#288](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#288)]
  [!code-vb[WF_Samples#288](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#288)]  
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741730(v=vs.90)">EventArgs Tracking Sample</related>
   </Docs>
   <Members>
     <Member MemberName="Exception">
@@ -85,13 +86,14 @@
 ## Examples  
  The following code example demonstrates a method, named `WriteTerminatedEventArgs`, which captures a <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs>. The code checks whether the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs.Exception%2A> property is `null` (`Nothing` in Visual Basic). If it is not, the code writes the message associated with the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs.Exception%2A> property to the console. If <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs.Exception%2A> is `null` (`Nothing`), the code does not write any exception information to the console.  
   
- This code example is part of the EventArgs Tracking SDK Sample from the Program.cs file. For more information, see [EventArgs Tracking Sample](http://msdn.microsoft.com/library/94818da2-c3c4-4a13-b47a-a0fb30dbbf1c).  
+ This code example is part of the EventArgs Tracking SDK Sample from the Program.cs file. For more information, see [EventArgs Tracking Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741730(v=vs.90)).  
   
  [!code-csharp[WF_Samples#288](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#288)]
  [!code-vb[WF_Samples#288](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#288)]  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741730(v=vs.90)">EventArgs Tracking Sample</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="ArrayTypeMismatchException" FullName="System.ArrayTypeMismatchException">
+<Type Name="ArrayTypeMismatchException" FullName="System.ArrayTypeMismatchException">
   <TypeSignature Language="C#" Value="public class ArrayTypeMismatchException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ArrayTypeMismatchException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.ArrayTypeMismatchException" />
@@ -70,6 +70,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -246,6 +247,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -309,6 +311,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
   </Members>

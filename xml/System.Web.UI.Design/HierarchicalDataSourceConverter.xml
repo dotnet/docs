@@ -1,4 +1,4 @@
-﻿<Type Name="HierarchicalDataSourceConverter" FullName="System.Web.UI.Design.HierarchicalDataSourceConverter">
+<Type Name="HierarchicalDataSourceConverter" FullName="System.Web.UI.Design.HierarchicalDataSourceConverter">
   <TypeSignature Language="C#" Value="public class HierarchicalDataSourceConverter : System.Web.UI.Design.DataSourceConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HierarchicalDataSourceConverter extends System.Web.UI.Design.DataSourceConverter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.HierarchicalDataSourceConverter" />
@@ -27,7 +27,7 @@
 > [!CAUTION]
 >  You should never access a type converter directly. Instead, call the appropriate converter by using the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in <xref:System.ComponentModel.TypeConverter>.  
   
- For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
+ For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)).  
   
    
   
@@ -40,6 +40,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.HierarchicalDataSourceControl" />
     <altmember cref="T:System.Web.UI.Design.HierarchicalDataSourceDesigner" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

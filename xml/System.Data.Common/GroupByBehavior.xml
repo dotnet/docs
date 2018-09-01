@@ -1,4 +1,4 @@
-﻿<Type Name="GroupByBehavior" FullName="System.Data.Common.GroupByBehavior">
+<Type Name="GroupByBehavior" FullName="System.Data.Common.GroupByBehavior">
   <TypeSignature Language="C#" Value="public enum GroupByBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GroupByBehavior extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.GroupByBehavior" />
@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName="ExactMatch">
@@ -64,6 +65,7 @@
       <MemberValue>4</MemberValue>
       <Docs>
         <summary>The GROUP BY clause must contain all nonaggregated columns in the select list, and must not contain other columns not in the select list.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="MustContainAll">
@@ -95,6 +97,7 @@
       <MemberValue>3</MemberValue>
       <Docs>
         <summary>The GROUP BY clause must contain all nonaggregated columns in the select list, and can contain other columns not in the select list.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="NotSupported">
@@ -126,6 +129,7 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>The GROUP BY clause is not supported.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -157,6 +161,7 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>The support for the GROUP BY clause is unknown.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Unrelated">
@@ -188,6 +193,7 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>There is no relationship between the columns in the GROUP BY clause and the nonaggregated columns in the SELECT list. You may group by any column.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

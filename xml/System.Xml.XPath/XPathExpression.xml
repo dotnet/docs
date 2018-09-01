@@ -1,4 +1,4 @@
-﻿<Type Name="XPathExpression" FullName="System.Xml.XPath.XPathExpression">
+<Type Name="XPathExpression" FullName="System.Xml.XPath.XPathExpression">
   <TypeSignature Language="C#" Value="public abstract class XPathExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XPathExpression extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XPathExpression" />
@@ -291,6 +291,7 @@ expression.AddSort("@ISBN", (IComparer)isbn);
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="Overload:System.String.Compare" />
         <altmember cref="M:System.Xml.XPath.XPathExpression.SetContext(System.Xml.XmlNamespaceManager)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=148089">Namespace Prefix in String Passed to XPathExpression.AddSort</related>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -749,6 +750,7 @@ expression.AddSort("@ISBN", (IComparer)isbn);
         <altmember cref="M:System.Xml.XPath.XPathExpression.SetContext(System.Xml.XmlNamespaceManager)" />
         <altmember cref="T:System.Xml.IXmlNamespaceResolver" />
         <altmember cref="M:System.Xml.XPath.XPathExpression.Compile(System.String,System.Xml.IXmlNamespaceResolver)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4772f20e-1e7f-496e-93c2-1484473be555">User Defined Functions and Variables</related>
       </Docs>
     </Member>
     <Member MemberName="SetContext">
@@ -851,6 +853,7 @@ expression.AddSort("@ISBN", (IComparer)isbn);
         <altmember cref="M:System.Xml.XPath.XPathExpression.SetContext(System.Xml.IXmlNamespaceResolver)" />
         <altmember cref="T:System.Xml.IXmlNamespaceResolver" />
         <altmember cref="M:System.Xml.XPath.XPathExpression.Compile(System.String,System.Xml.IXmlNamespaceResolver)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4772f20e-1e7f-496e-93c2-1484473be555">User Defined Functions and Variables</related>
       </Docs>
     </Member>
   </Members>

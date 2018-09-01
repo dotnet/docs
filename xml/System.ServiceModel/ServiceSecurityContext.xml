@@ -1,4 +1,4 @@
-﻿<Type Name="ServiceSecurityContext" FullName="System.ServiceModel.ServiceSecurityContext">
+<Type Name="ServiceSecurityContext" FullName="System.ServiceModel.ServiceSecurityContext">
   <TypeSignature Language="C#" Value="public class ServiceSecurityContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceSecurityContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ServiceSecurityContext" />
@@ -62,6 +62,10 @@
     <altmember cref="T:System.IdentityModel.Claims.Claim" />
     <altmember cref="T:System.IdentityModel.Claims.ClaimSet" />
     <altmember cref="T:System.ServiceModel.ServiceAuthorizationManager" />
+    <related type="Article" href="http://msdn.microsoft.com/library/389b5a57-4175-4bc0-ada0-fc750d51149f">How To: Examine the Security Context</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/1db325ec-85be-47d0-8b6e-3ba2fdf3dda0">Authorization Policy Sample</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f0ecc6f7-f4b5-42a4-9cb1-b02e28e26620">Securing Services</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/099defbb-5d35-434e-9336-1a49b9ec7663">Claims and Authorization</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -317,6 +321,7 @@
         </remarks>
         <altmember cref="T:System.Security.Permissions.PrincipalPermissionAttribute" />
         <altmember cref="T:System.Security.Principal.IPrincipal" />
+        <related type="Article" href="http://msdn.microsoft.com/library/389b5a57-4175-4bc0-ada0-fc750d51149f">How To: Examine the Security Context</related>
       </Docs>
     </Member>
     <Member MemberName="WindowsIdentity">

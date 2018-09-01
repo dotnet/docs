@@ -1,4 +1,4 @@
-﻿<Type Name="PostBackOptions" FullName="System.Web.UI.PostBackOptions">
+<Type Name="PostBackOptions" FullName="System.Web.UI.PostBackOptions">
   <TypeSignature Language="C#" Value="public sealed class PostBackOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PostBackOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PostBackOptions" />
@@ -201,6 +201,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/fedf234e-b7c4-4644-a9e8-c1c0870b043b">Cross-Page Posting in an ASP.NET Web Page</related>
       </Docs>
     </Member>
     <Member MemberName="Argument">

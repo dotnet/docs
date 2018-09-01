@@ -1,4 +1,4 @@
-﻿<Type Name="DateTimeSerializationSection+DateTimeSerializationMode" FullName="System.Xml.Serialization.Configuration.DateTimeSerializationSection+DateTimeSerializationMode">
+<Type Name="DateTimeSerializationSection+DateTimeSerializationMode" FullName="System.Xml.Serialization.Configuration.DateTimeSerializationSection+DateTimeSerializationMode">
   <TypeSignature Language="C#" Value="public enum DateTimeSerializationSection.DateTimeSerializationMode" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed DateTimeSerializationSection/DateTimeSerializationMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode" />
@@ -30,6 +30,9 @@
     <forInternalUseOnly />
     <altmember cref="T:System.DateTime" />
     <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
+    <related type="Article" href="http://msdn.microsoft.com/library/90fda55c-7730-41e9-bc4b-6423a4b920af">&lt;dateTimeSerialization&gt; Element</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38">Configuration File Schema for the .NET Framework</related>
+    <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
   </Docs>
   <Members>
     <Member MemberName="Default">

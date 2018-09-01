@@ -1,4 +1,4 @@
-﻿<Type Name="ScriptManagerProxy" FullName="System.Web.UI.ScriptManagerProxy">
+<Type Name="ScriptManagerProxy" FullName="System.Web.UI.ScriptManagerProxy">
   <TypeSignature Language="C#" Value="public class ScriptManagerProxy : System.Web.UI.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptManagerProxy extends System.Web.UI.Control" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptManagerProxy" />
@@ -115,6 +115,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.ScriptManager" />
+    <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -416,6 +417,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.RoleServiceManager" />
+        <related type="Article" href="http://msdn.microsoft.com/library/280f6ad9-ba1a-4fc9-b0cc-22e39e54a82d">Using Roles Information with ASP.NET AJAX</related>
       </Docs>
     </Member>
     <Member MemberName="Scripts">

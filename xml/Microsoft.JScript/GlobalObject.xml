@@ -1,4 +1,4 @@
-﻿<Type Name="GlobalObject" FullName="Microsoft.JScript.GlobalObject">
+<Type Name="GlobalObject" FullName="Microsoft.JScript.GlobalObject">
   <TypeSignature Language="C#" Value="public class GlobalObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GlobalObject extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.GlobalObject" />
@@ -102,6 +102,7 @@
         <value>The managed type that corresponds to the JScript <see langword="boolean" /> data type.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/hhw1f6w5(v=vs.100)">Data Type Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Boolean">

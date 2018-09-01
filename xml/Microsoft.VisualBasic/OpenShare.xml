@@ -1,4 +1,4 @@
-﻿<Type Name="OpenShare" FullName="Microsoft.VisualBasic.OpenShare">
+<Type Name="OpenShare" FullName="Microsoft.VisualBasic.OpenShare">
   <TypeSignature Language="C#" Value="public enum OpenShare" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OpenShare extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.OpenShare" />
@@ -30,6 +30,9 @@
     </remarks>
     <altmember cref="T:Microsoft.VisualBasic.OpenAccess" />
     <altmember cref="T:Microsoft.VisualBasic.OpenMode" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/constants-and-enumerations.md">Constants and Enumerations</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/constants-enums/when-to-use-an-enumeration.md">When to Use an Enumeration</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md">How to: Refer to an Enumeration Member</related>
   </Docs>
   <Members>
     <Member MemberName="Default">

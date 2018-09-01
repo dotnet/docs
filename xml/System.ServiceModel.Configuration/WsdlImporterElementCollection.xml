@@ -1,4 +1,4 @@
-﻿<Type Name="WsdlImporterElementCollection" FullName="System.ServiceModel.Configuration.WsdlImporterElementCollection">
+<Type Name="WsdlImporterElementCollection" FullName="System.ServiceModel.Configuration.WsdlImporterElementCollection">
   <TypeSignature Language="C#" Value="public sealed class WsdlImporterElementCollection : System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection&lt;System.ServiceModel.Configuration.WsdlImporterElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WsdlImporterElementCollection extends System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection`1&lt;class System.ServiceModel.Configuration.WsdlImporterElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WsdlImporterElementCollection" />
@@ -25,6 +25,7 @@
   <Docs>
     <summary>Represents a collection of <see cref="T:System.ServiceModel.Configuration.WsdlImporterElement" /> instances. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/986b2165-8430-4dba-b1b8-00396841bb96">&lt;wsdlImporter&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

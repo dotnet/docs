@@ -1,4 +1,4 @@
-﻿<Type Name="RangeValidator" FullName="System.Web.UI.MobileControls.RangeValidator">
+<Type Name="RangeValidator" FullName="System.Web.UI.MobileControls.RangeValidator">
   <TypeSignature Language="C#" Value="public class RangeValidator : System.Web.UI.MobileControls.BaseValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RangeValidator extends System.Web.UI.MobileControls.BaseValidator" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.RangeValidator" />
@@ -62,6 +62,7 @@
     <altmember cref="T:System.Web.UI.MobileControls.RegularExpressionValidator" />
     <altmember cref="T:System.Web.UI.MobileControls.RequiredFieldValidator" />
     <altmember cref="T:System.Web.UI.MobileControls.ValidationSummary" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/sd2hd57f(v=vs.85)">Introduction to the RangeValidator Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,6 +84,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.ValidationDataType" />
         <altmember cref="T:System.Web.UI.MobileControls.BaseValidator" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/sd2hd57f(v=vs.85)">Introduction to the RangeValidator Control</related>
       </Docs>
     </Member>
     <Member MemberName="ControlPropertiesValid">
@@ -115,6 +117,7 @@
  the <see cref="P:System.Web.UI.MobileControls.RangeValidator.MinimumValue" /> is larger than <see cref="P:System.Web.UI.MobileControls.RangeValidator.MaximumValue" />.</exception>
         <altmember cref="T:System.Web.UI.MobileControls.BaseValidator" />
         <altmember cref="T:System.Web.UI.MobileControls.CompareValidator" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/sd2hd57f(v=vs.85)">Introduction to the RangeValidator Control</related>
       </Docs>
     </Member>
     <Member MemberName="CreateWebValidator">
@@ -210,6 +213,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.BaseValidator" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/sd2hd57f(v=vs.85)">Introduction to the RangeValidator Control</related>
       </Docs>
     </Member>
     <Member MemberName="MinimumValue">
@@ -258,6 +262,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.BaseValidator" />
         <altmember cref="P:System.Web.UI.MobileControls.RangeValidator.MaximumValue" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/sd2hd57f(v=vs.85)">Introduction to the RangeValidator Control</related>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -312,6 +317,7 @@
         <exception cref="T:System.ArgumentException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.ValidationDataType" /> values.</exception>
         <altmember cref="T:System.Web.UI.WebControls.ValidationDataType" />
         <altmember cref="T:System.Web.UI.MobileControls.BaseValidator" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/sd2hd57f(v=vs.85)">Introduction to the RangeValidator Control</related>
       </Docs>
     </Member>
   </Members>

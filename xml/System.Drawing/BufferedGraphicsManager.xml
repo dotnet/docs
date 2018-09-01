@@ -1,4 +1,4 @@
-﻿<Type Name="BufferedGraphicsManager" FullName="System.Drawing.BufferedGraphicsManager">
+<Type Name="BufferedGraphicsManager" FullName="System.Drawing.BufferedGraphicsManager">
   <TypeSignature Language="C#" Value="public sealed class BufferedGraphicsManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BufferedGraphicsManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.BufferedGraphicsManager" />
@@ -41,6 +41,7 @@
     </remarks>
     <altmember cref="T:System.Drawing.BufferedGraphicsContext" />
     <altmember cref="T:System.Drawing.BufferedGraphics" />
+    <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">[&lt;topic://vbconDoubleBuffering&gt;]</related>
   </Docs>
   <Members>
     <Member MemberName="Current">

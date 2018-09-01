@@ -1,4 +1,4 @@
-﻿<Type Name="AudienceUriElement" FullName="System.IdentityModel.Configuration.AudienceUriElement">
+<Type Name="AudienceUriElement" FullName="System.IdentityModel.Configuration.AudienceUriElement">
   <TypeSignature Language="C#" Value="public sealed class AudienceUriElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AudienceUriElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Configuration.AudienceUriElement" />
@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/7a3d8515-d756-4afe-a22d-07cbe2217ee3">&lt;audienceUris&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

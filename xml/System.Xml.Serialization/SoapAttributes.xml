@@ -1,4 +1,4 @@
-﻿<Type Name="SoapAttributes" FullName="System.Xml.Serialization.SoapAttributes">
+<Type Name="SoapAttributes" FullName="System.Xml.Serialization.SoapAttributes">
   <TypeSignature Language="C#" Value="public class SoapAttributes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapAttributes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.SoapAttributes" />
@@ -49,6 +49,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+    <related type="Article" href="~/docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md">Attributes That Control Encoded SOAP Serialization</related>
+    <related type="Article" href="~/docs/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md">How to: Serialize an Object as a SOAP-Encoded XML Stream</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -110,6 +112,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+        <related type="Article" href="~/docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md">Attributes That Control Encoded SOAP Serialization</related>
+        <related type="Article" href="~/docs/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md">How to: Serialize an Object as a SOAP-Encoded XML Stream</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -203,6 +207,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+        <related type="Article" href="~/docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md">Attributes That Control Encoded SOAP Serialization</related>
+        <related type="Article" href="~/docs/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md">How to: Serialize an Object as a SOAP-Encoded XML Stream</related>
       </Docs>
     </Member>
     <Member MemberName="SoapDefaultValue">
@@ -261,6 +267,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+        <related type="Article" href="~/docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md">Attributes That Control Encoded SOAP Serialization</related>
+        <related type="Article" href="~/docs/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md">How to: Serialize an Object as a SOAP-Encoded XML Stream</related>
       </Docs>
     </Member>
     <Member MemberName="SoapElement">
@@ -321,6 +329,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+        <related type="Article" href="~/docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md">Attributes That Control Encoded SOAP Serialization</related>
+        <related type="Article" href="~/docs/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md">How to: Serialize an Object as a SOAP-Encoded XML Stream</related>
       </Docs>
     </Member>
     <Member MemberName="SoapEnum">
@@ -381,6 +391,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+        <related type="Article" href="~/docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md">Attributes That Control Encoded SOAP Serialization</related>
+        <related type="Article" href="~/docs/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md">How to: Serialize an Object as a SOAP-Encoded XML Stream</related>
       </Docs>
     </Member>
     <Member MemberName="SoapIgnore">
@@ -444,6 +456,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+        <related type="Article" href="~/docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md">Attributes That Control Encoded SOAP Serialization</related>
+        <related type="Article" href="~/docs/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md">How to: Serialize an Object as a SOAP-Encoded XML Stream</related>
       </Docs>
     </Member>
     <Member MemberName="SoapType">
@@ -502,6 +516,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+        <related type="Article" href="~/docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md">Attributes That Control Encoded SOAP Serialization</related>
+        <related type="Article" href="~/docs/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md">How to: Serialize an Object as a SOAP-Encoded XML Stream</related>
       </Docs>
     </Member>
   </Members>

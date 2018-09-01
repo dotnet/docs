@@ -1,4 +1,4 @@
-﻿<Type Name="StructLayoutAttribute" FullName="System.Runtime.InteropServices.StructLayoutAttribute">
+<Type Name="StructLayoutAttribute" FullName="System.Runtime.InteropServices.StructLayoutAttribute">
   <TypeSignature Language="C#" Value="public sealed class StructLayoutAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StructLayoutAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.StructLayoutAttribute" />
@@ -60,6 +60,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/tools/tlbimp-exe-type-library-importer.md">Tlbimp.exe (Type Library Importer)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -111,6 +112,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Runtime.InteropServices.LayoutKind" />
+        <related type="Article" href="~/docs/framework/tools/tlbimp-exe-type-library-importer.md">Tlbimp.exe (Type Library Importer)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

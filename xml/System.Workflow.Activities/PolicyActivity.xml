@@ -1,4 +1,4 @@
-﻿<Type Name="PolicyActivity" FullName="System.Workflow.Activities.PolicyActivity">
+<Type Name="PolicyActivity" FullName="System.Workflow.Activities.PolicyActivity">
   <TypeSignature Language="C#" Value="public sealed class PolicyActivity : System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PolicyActivity extends System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.PolicyActivity" />
@@ -48,6 +48,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms733605(v=vs.90)">Using the Policy Activity</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -85,6 +86,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms733605(v=vs.90)">Using the Policy Activity</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -107,6 +109,7 @@
         <param name="name">The user-defined name of the activity.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.PolicyActivity" /> using the name of the activity.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms733605(v=vs.90)">Using the Policy Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -195,6 +198,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms733605(v=vs.90)">Using the Policy Activity</related>
       </Docs>
     </Member>
     <Member MemberName="RuleSetReferenceProperty">
@@ -223,6 +227,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms733605(v=vs.90)">Using the Policy Activity</related>
       </Docs>
     </Member>
   </Members>

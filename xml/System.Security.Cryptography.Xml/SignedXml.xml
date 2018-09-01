@@ -1,4 +1,4 @@
-﻿<Type Name="SignedXml" FullName="System.Security.Cryptography.Xml.SignedXml">
+<Type Name="SignedXml" FullName="System.Security.Cryptography.Xml.SignedXml">
   <TypeSignature Language="C#" Value="public class SignedXml" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SignedXml extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.SignedXml" />
@@ -170,6 +170,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://www.w3.org/TR/xmldsig-bestpractices">XML Signature Best Practices</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

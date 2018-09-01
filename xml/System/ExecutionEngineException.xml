@@ -1,4 +1,4 @@
-﻿<Type Name="ExecutionEngineException" FullName="System.ExecutionEngineException">
+<Type Name="ExecutionEngineException" FullName="System.ExecutionEngineException">
   <TypeSignature Language="C#" Value="public sealed class ExecutionEngineException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ExecutionEngineException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.ExecutionEngineException" />
@@ -197,6 +197,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
   </Members>

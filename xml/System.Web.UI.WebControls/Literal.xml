@@ -1,4 +1,4 @@
-﻿<Type Name="Literal" FullName="System.Web.UI.WebControls.Literal">
+<Type Name="Literal" FullName="System.Web.UI.WebControls.Literal">
   <TypeSignature Language="C#" Value="public class Literal : System.Web.UI.Control, System.Web.UI.ITextControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Literal extends System.Web.UI.Control implements class System.Web.UI.ITextControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Literal" />
@@ -100,6 +100,10 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.Label" />
     <altmember cref="P:System.Web.UI.WebControls.Literal.Text" />
+    <related type="Article" href="http://msdn.microsoft.com/library/9f856045-c514-4efb-8c6c-30c0c29cc780">Literal Web Server Control Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461">Introduction to Validating User Input in ASP.NET Web Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -124,6 +128,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Literal" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9f856045-c514-4efb-8c6c-30c0c29cc780">Literal Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -165,6 +170,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">
           <paramref name="obj" /> is not of type <see cref="T:System.Web.UI.LiteralControl" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/9f856045-c514-4efb-8c6c-30c0c29cc780">Literal Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -202,6 +208,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9f856045-c514-4efb-8c6c-30c0c29cc780">Literal Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -240,6 +247,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="M:System.Web.UI.WebControls.Literal.Focus" /> was called on a <see cref="T:System.Web.UI.WebControls.Literal" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/9f856045-c514-4efb-8c6c-30c0c29cc780">Literal Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -300,6 +308,10 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.LiteralMode" /> enumeration values.</exception>
         <altmember cref="T:System.Web.UI.WebControls.LiteralMode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/9f856045-c514-4efb-8c6c-30c0c29cc780">Literal Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">Introduction to Device Filtering in ASP.NET</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Web Server Controls and Browser Capabilities</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -408,6 +420,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9f856045-c514-4efb-8c6c-30c0c29cc780">Literal Web Server Control Overview</related>
       </Docs>
     </Member>
   </Members>

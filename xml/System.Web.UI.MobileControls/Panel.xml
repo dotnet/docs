@@ -1,4 +1,4 @@
-﻿<Type Name="Panel" FullName="System.Web.UI.MobileControls.Panel">
+<Type Name="Panel" FullName="System.Web.UI.MobileControls.Panel">
   <TypeSignature Language="C#" Value="public class Panel : System.Web.UI.MobileControls.MobileControl, System.Web.UI.MobileControls.ITemplateable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Panel extends System.Web.UI.MobileControls.MobileControl implements class System.Web.UI.MobileControls.ITemplateable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Panel" />
@@ -66,7 +66,7 @@
   
 -   Providing information to the ASP.NET page framework about which controls to keep together when paginating. By default, the contents of a panel are kept together on a page. You can modify this behavior by setting the <xref:System.Web.UI.MobileControls.Panel.Paginate%2A> property for the panel.  
   
- You can include literal text together with its accompanying markup tags in the text contents of the <xref:System.Web.UI.MobileControls.Panel>. For more information, see [Literal Text Inside Form Markup](http://msdn.microsoft.com/library/05e061ed-9916-4ece-bfc8-7bf131fe232e).  
+ You can include literal text together with its accompanying markup tags in the text contents of the <xref:System.Web.UI.MobileControls.Panel>. For more information, see [Literal Text Inside Form Markup](http://msdn.microsoft.com/library/https://msdn.microsoft.com/library/05e061ed-9916-4ece-bfc8-7bf131fe232e).  
   
    
   
@@ -83,6 +83,12 @@
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.WebControls.Panel" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/14aacw79(v=vs.85)">Introduction to the Panel Control</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/6ws165a4(v=vs.85)">Organizing Content with Containers</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/4beh5zt8(v=vs.85)">Introducing Control Templates</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/05e061ed-9916-4ece-bfc8-7bf131fe232e">Literal Text Inside Form Markup</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">DeviceSpecific Element</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -103,6 +109,9 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.Panel" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.Panel" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/14aacw79(v=vs.85)">Introduction to the Panel Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/6ws165a4(v=vs.85)">Organizing Content with Containers</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/4beh5zt8(v=vs.85)">Introducing Control Templates</related>
       </Docs>
     </Member>
     <Member MemberName="AddLinkedForms">
@@ -214,6 +223,11 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.TextView" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/14aacw79(v=vs.85)">Introduction to the Panel Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/6ws165a4(v=vs.85)">Organizing Content with Containers</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/4beh5zt8(v=vs.85)">Introducing Control Templates</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">DeviceSpecific Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d">&lt;Choice&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultTemplatedUI">
@@ -325,6 +339,9 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.Form" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/14aacw79(v=vs.85)">Introduction to the Panel Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/6ws165a4(v=vs.85)">Organizing Content with Containers</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/4beh5zt8(v=vs.85)">Introducing Control Templates</related>
       </Docs>
     </Member>
     <Member MemberName="PaginateChildren">

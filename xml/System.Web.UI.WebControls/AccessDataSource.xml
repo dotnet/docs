@@ -1,4 +1,4 @@
-﻿<Type Name="AccessDataSource" FullName="System.Web.UI.WebControls.AccessDataSource">
+<Type Name="AccessDataSource" FullName="System.Web.UI.WebControls.AccessDataSource">
   <TypeSignature Language="C#" Value="public class AccessDataSource : System.Web.UI.WebControls.SqlDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AccessDataSource extends System.Web.UI.WebControls.SqlDataSource" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.AccessDataSource" />
@@ -518,6 +518,7 @@
     <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
     <altmember cref="T:System.Web.UI.WebControls.Parameter" />
     <altmember cref="N:System.Data.OleDb" />
+    <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -527,6 +528,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.AccessDataSource" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -560,6 +562,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -599,6 +602,7 @@
         <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.DataFile" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommand" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectionString">
@@ -649,6 +653,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Web.UI.WebControls.AccessDataSource.ConnectionString" /> property.</exception>
         <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.DataFile" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDataSourceView">
@@ -684,6 +689,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.AccessDataSourceView" />
         <altmember cref="M:System.Web.UI.IDataSource.GetView(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="DataFile">
@@ -761,6 +767,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">An invalid path was given.</exception>
         <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.ConnectionString" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="GetDbProviderFactory">
@@ -785,6 +792,7 @@
         <returns>An <see cref="T:System.Data.OleDb.OleDbFactory" /> object.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.ProviderName" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderName">
@@ -836,6 +844,7 @@
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Web.UI.WebControls.AccessDataSource.ProviderName" /> property.</exception>
         <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.ConnectionString" />
         <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.DataFile" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="SqlCacheDependency">
@@ -877,6 +886,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to get or set the <see cref="P:System.Web.UI.WebControls.AccessDataSource.SqlCacheDependency" /> property.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
       </Docs>
     </Member>
   </Members>

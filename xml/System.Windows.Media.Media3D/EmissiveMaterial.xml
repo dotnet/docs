@@ -1,4 +1,4 @@
-﻿<Type Name="EmissiveMaterial" FullName="System.Windows.Media.Media3D.EmissiveMaterial">
+<Type Name="EmissiveMaterial" FullName="System.Windows.Media.Media3D.EmissiveMaterial">
   <TypeSignature Language="C#" Value="public sealed class EmissiveMaterial : System.Windows.Media.Media3D.Material" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EmissiveMaterial extends System.Windows.Media.Media3D.Material" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.EmissiveMaterial" />
@@ -26,6 +26,7 @@
     </remarks>
     <altmember cref="T:System.Windows.Media.Media3D.DiffuseMaterial" />
     <altmember cref="T:System.Windows.Media.Media3D.SpecularMaterial" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159960">3-D Lights Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -76,6 +77,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Media.Media3D.DiffuseMaterial" />
         <altmember cref="T:System.Windows.Media.Media3D.SpecularMaterial" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159960">3-D Lights Sample</related>
       </Docs>
     </Member>
     <Member MemberName="Brush">
@@ -115,6 +117,7 @@
         </remarks>
         <altmember cref="T:System.Windows.Media.Media3D.DiffuseMaterial" />
         <altmember cref="T:System.Windows.Media.Media3D.SpecularMaterial" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159960">3-D Lights Sample</related>
       </Docs>
     </Member>
     <Member MemberName="BrushProperty">
@@ -243,6 +246,7 @@
         </remarks>
         <altmember cref="T:System.Windows.Media.Media3D.DiffuseMaterial" />
         <altmember cref="T:System.Windows.Media.Media3D.SpecularMaterial" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159960">3-D Lights Sample</related>
       </Docs>
     </Member>
     <Member MemberName="ColorProperty">

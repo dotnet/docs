@@ -1,4 +1,4 @@
-﻿<Type Name="DragDropEffects" FullName="System.Windows.Forms.DragDropEffects">
+<Type Name="DragDropEffects" FullName="System.Windows.Forms.DragDropEffects">
   <TypeSignature Language="C#" Value="public enum DragDropEffects" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DragDropEffects extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DragDropEffects" />
@@ -48,6 +48,7 @@
     </remarks>
     <altmember cref="T:System.Windows.Forms.DragEventArgs" />
     <altmember cref="T:System.Windows.Forms.GiveFeedbackEventArgs" />
+    <related type="Article" href="http://msdn.microsoft.com/library/7cce79b6-5835-46fd-b690-73f12ad368b2">Drag-and-Drop Operations and Clipboard Support</related>
   </Docs>
   <Members>
     <Member MemberName="All">

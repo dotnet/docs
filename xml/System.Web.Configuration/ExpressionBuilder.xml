@@ -1,4 +1,4 @@
-﻿<Type Name="ExpressionBuilder" FullName="System.Web.Configuration.ExpressionBuilder">
+<Type Name="ExpressionBuilder" FullName="System.Web.Configuration.ExpressionBuilder">
   <TypeSignature Language="C#" Value="public sealed class ExpressionBuilder : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ExpressionBuilder extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ExpressionBuilder" />
@@ -33,6 +33,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.Compilation.AppSettingsExpressionBuilder" />
+    <related type="Article" href="http://msdn.microsoft.com/library/9ae6373a-853a-4d6e-8639-8c173dacb59f">ASP.NET Expressions Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

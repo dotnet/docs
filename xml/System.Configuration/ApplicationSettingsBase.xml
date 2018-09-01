@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationSettingsBase" FullName="System.Configuration.ApplicationSettingsBase">
+<Type Name="ApplicationSettingsBase" FullName="System.Configuration.ApplicationSettingsBase">
   <TypeSignature Language="C#" Value="public abstract class ApplicationSettingsBase : System.Configuration.SettingsBase, System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ApplicationSettingsBase extends System.Configuration.SettingsBase implements class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ApplicationSettingsBase" />
@@ -84,6 +84,7 @@
     <altmember cref="T:System.Configuration.UserScopedSettingAttribute" />
     <altmember cref="T:System.Configuration.SettingsGroupNameAttribute" />
     <altmember cref="T:System.Configuration.SettingsProviderAttribute" />
+    <related type="Article" href="http://msdn.microsoft.com/library/64090a34-8556-4904-8ea0-20efe9f8c886">Application Settings for Windows Forms</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -958,6 +959,7 @@
         <altmember cref="T:System.Configuration.SettingChangingEventArgs" />
         <altmember cref="E:System.Configuration.ApplicationSettingsBase.PropertyChanged" />
         <altmember cref="P:System.Configuration.ApplicationSettingsBase.Item(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/9f145ada-4267-436a-aa4c-c4dcffd0afb7">How to: Validate Application Settings</related>
       </Docs>
     </Member>
     <Member MemberName="SettingsKey">

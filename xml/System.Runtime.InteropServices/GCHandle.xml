@@ -1,4 +1,4 @@
-﻿<Type Name="GCHandle" FullName="System.Runtime.InteropServices.GCHandle">
+<Type Name="GCHandle" FullName="System.Runtime.InteropServices.GCHandle">
   <TypeSignature Language="C#" Value="public struct GCHandle" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit GCHandle extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.GCHandle" />
@@ -61,6 +61,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.InteropServices.GCHandleType" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=163485">The Truth About GCHandles</related>
   </Docs>
   <Members>
     <Member MemberName="AddrOfPinnedObject">

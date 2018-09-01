@@ -1,4 +1,4 @@
-﻿<Type Name="HttpCacheVaryByParams" FullName="System.Web.HttpCacheVaryByParams">
+<Type Name="HttpCacheVaryByParams" FullName="System.Web.HttpCacheVaryByParams">
   <TypeSignature Language="C#" Value="public sealed class HttpCacheVaryByParams" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpCacheVaryByParams extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCacheVaryByParams" />
@@ -39,6 +39,7 @@
     <altmember cref="T:System.Web.UI.BasePartialCachingControl" />
     <altmember cref="T:System.Web.UI.StaticPartialCachingControl" />
     <altmember cref="T:System.Web.HttpCacheVaryByHeaders" />
+    <related type="Article" href="http://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -156,6 +157,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="header" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a504b287-c8d2-4838-9817-3ffee416fec4">How to: Cache Versions of a Page, Based on Parameters</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
       </Docs>
     </Member>
     <Member MemberName="SetParams">

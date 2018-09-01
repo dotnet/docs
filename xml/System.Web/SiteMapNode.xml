@@ -1,4 +1,4 @@
-﻿<Type Name="SiteMapNode" FullName="System.Web.SiteMapNode">
+<Type Name="SiteMapNode" FullName="System.Web.SiteMapNode">
   <TypeSignature Language="C#" Value="public class SiteMapNode : ICloneable, System.Web.UI.IHierarchyData, System.Web.UI.INavigateUIData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SiteMapNode extends System.Object implements class System.ICloneable, class System.Web.UI.IHierarchyData, class System.Web.UI.INavigateUIData" />
   <TypeSignature Language="DocId" Value="T:System.Web.SiteMapNode" />
@@ -56,6 +56,8 @@
     <altmember cref="T:System.Web.SiteMap" />
     <altmember cref="T:System.Web.SiteMapProvider" />
     <altmember cref="T:System.Web.XmlSiteMapProvider" />
+    <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -1221,6 +1223,7 @@
         <altmember cref="P:System.Web.SiteMapProvider.SecurityTrimmingEnabled" />
         <altmember cref="T:System.Web.Security.UrlAuthorizationModule" />
         <altmember cref="T:System.Web.Security.FileAuthorizationModule" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ba7c17d4-f709-4501-8441-2340e2d6db05">ASP.NET Authorization</related>
       </Docs>
     </Member>
     <Member MemberName="RootNode">

@@ -1,4 +1,4 @@
-﻿<Type Name="MenuDesigner" FullName="System.Web.UI.Design.WebControls.MenuDesigner">
+<Type Name="MenuDesigner" FullName="System.Web.UI.Design.WebControls.MenuDesigner">
   <TypeSignature Language="C#" Value="public class MenuDesigner : System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner, System.Web.UI.Design.IDataBindingSchemaProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MenuDesigner extends System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner implements class System.Web.UI.Design.IDataBindingSchemaProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.MenuDesigner" />
@@ -69,6 +69,8 @@
     <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
     <altmember cref="T:System.Web.UI.Design.HtmlControlDesigner" />
     <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -105,6 +107,7 @@
         <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
         <altmember cref="T:System.Web.UI.Design.HtmlControlDesigner" />
         <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -140,6 +143,7 @@
         <altmember cref="P:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.ActionLists" />
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.ActionLists" />
         <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.ActionLists" />
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="AutoFormats">
@@ -172,6 +176,7 @@
         <altmember cref="T:System.Web.UI.WebControls.Menu" />
         <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" />
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CanRefreshSchema">
@@ -198,6 +203,8 @@
         <value>
           <see langword="true" /> if the schema can be refreshed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -243,6 +250,7 @@
         <altmember cref="P:System.Web.UI.WebControls.HierarchicalDataBoundControl.DataSourceID" />
         <altmember cref="M:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
         <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -285,6 +293,7 @@
         <altmember cref="M:System.Web.UI.Design.WebControls.MenuDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
         <altmember cref="M:System.Web.UI.WebControls.Menu.GetDesignModeState" />
         <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetDesignTimeHtml" />
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetEmptyDesignTimeHtml">
@@ -326,6 +335,7 @@
         <altmember cref="M:System.Web.UI.Design.WebControls.MenuDesigner.GetDesignTimeHtml" />
         <altmember cref="M:System.Web.UI.Design.WebControls.MenuDesigner.GetErrorDesignTimeHtml(System.Exception)" />
         <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetErrorDesignTimeHtml">
@@ -370,6 +380,7 @@
         <altmember cref="M:System.Web.UI.Design.WebControls.MenuDesigner.GetDesignTimeHtml" />
         <altmember cref="M:System.Web.UI.Design.WebControls.MenuDesigner.GetEmptyDesignTimeHtml" />
         <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetSampleDataSource">
@@ -402,6 +413,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.Menu" />
         <altmember cref="T:System.Web.UI.IHierarchicalEnumerable" />
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -450,6 +462,7 @@
         <altmember cref="E:System.Web.UI.Design.IControlDesignerView.ViewEvent" />
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.Initialize(System.ComponentModel.IComponent)" />
         <altmember cref="M:System.ComponentModel.Design.ComponentDesigner.Initialize(System.ComponentModel.IComponent)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RefreshSchema">
@@ -486,6 +499,8 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Design.WebControls.MenuDesigner.CanRefreshSchema" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -512,6 +527,8 @@
         <value>An <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" /> object that describes the structure of the data source.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.Design.IDataSourceViewSchema" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema">
@@ -551,6 +568,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.Design.IDataBindingSchemaProvider" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataBindingSchemaProvider.RefreshSchema">
@@ -591,6 +610,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataBindingSchemaProvider.Schema">
@@ -628,6 +649,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="TemplateGroups">
@@ -662,6 +685,7 @@
         <altmember cref="T:System.Web.UI.Design.TemplateGroup" />
         <altmember cref="T:System.Web.UI.Design.TemplateDefinition" />
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -701,6 +725,7 @@
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.ViewControl" />
         <altmember cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
   </Members>

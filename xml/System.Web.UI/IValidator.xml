@@ -1,4 +1,4 @@
-﻿<Type Name="IValidator" FullName="System.Web.UI.IValidator">
+<Type Name="IValidator" FullName="System.Web.UI.IValidator">
   <TypeSignature Language="C#" Value="public interface IValidator" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IValidator" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IValidator" />
@@ -45,6 +45,8 @@
     <altmember cref="T:System.Web.UI.WebControls.RangeValidator" />
     <altmember cref="T:System.Web.UI.WebControls.RegularExpressionValidator" />
     <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
+    <related type="Article" href="http://msdn.microsoft.com/library/f3ece2ad-2e88-40df-bb8b-3fe53ecf21ab">How to: Validate with a Custom Function for ASP.NET Server Controls</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/fa2aa14d-a461-492e-9a79-c990904613ef">Validation ASP.NET Controls</related>
   </Docs>
   <Members>
     <Member MemberName="ErrorMessage">

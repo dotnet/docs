@@ -1,4 +1,4 @@
-﻿<Type Name="ImageCodecInfo" FullName="System.Drawing.Imaging.ImageCodecInfo">
+<Type Name="ImageCodecInfo" FullName="System.Drawing.Imaging.ImageCodecInfo">
   <TypeSignature Language="C#" Value="public sealed class ImageCodecInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImageCodecInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ImageCodecInfo" />
@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/0e838ea1-4e7e-4334-b882-ab25df607b8b">Using Image Encoders and Decoders in Managed GDI+</related>
   </Docs>
   <Members>
     <Member MemberName="Clsid">
@@ -239,6 +240,7 @@
         <summary>Gets or sets a <see cref="T:System.Guid" /> structure that contains a GUID that identifies the codec's format.</summary>
         <value>A <see cref="T:System.Guid" /> structure that contains a GUID that identifies the codec's format.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/0e838ea1-4e7e-4334-b882-ab25df607b8b">Using Image Encoders and Decoders in Managed GDI+</related>
       </Docs>
     </Member>
     <Member MemberName="GetImageDecoders">

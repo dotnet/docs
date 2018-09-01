@@ -1,4 +1,4 @@
-﻿<Type Name="Automation" FullName="System.Windows.Automation.Automation">
+<Type Name="Automation" FullName="System.Windows.Automation.Automation">
   <TypeSignature Language="C#" Value="public static class Automation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Automation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Automation" />
@@ -61,6 +61,8 @@
         <altmember cref="M:System.Windows.Automation.Automation.AddAutomationFocusChangedEventHandler(System.Windows.Automation.AutomationFocusChangedEventHandler)" />
         <altmember cref="M:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.AutomationPropertyChangedEventHandler,System.Windows.Automation.AutomationProperty[])" />
         <altmember cref="M:System.Windows.Automation.Automation.AddStructureChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.StructureChangedEventHandler)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/b688effa-b3e8-4b05-944d-05ed89a245aa">Subscribe to UI Automation Events</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b909e388-3f24-4997-b6d4-bd9c35c2dc27">UI Automation Events Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddAutomationFocusChangedEventHandler">
@@ -107,6 +109,8 @@
         <altmember cref="M:System.Windows.Automation.Automation.AddAutomationEventHandler(System.Windows.Automation.AutomationEvent,System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.AutomationEventHandler)" />
         <altmember cref="M:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.AutomationPropertyChangedEventHandler,System.Windows.Automation.AutomationProperty[])" />
         <altmember cref="M:System.Windows.Automation.Automation.AddStructureChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.StructureChangedEventHandler)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/b688effa-b3e8-4b05-944d-05ed89a245aa">Subscribe to UI Automation Events</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b909e388-3f24-4997-b6d4-bd9c35c2dc27">UI Automation Events Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddAutomationPropertyChangedEventHandler">
@@ -165,6 +169,8 @@
         <altmember cref="M:System.Windows.Automation.Automation.AddAutomationEventHandler(System.Windows.Automation.AutomationEvent,System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.AutomationEventHandler)" />
         <altmember cref="M:System.Windows.Automation.Automation.AddAutomationFocusChangedEventHandler(System.Windows.Automation.AutomationFocusChangedEventHandler)" />
         <altmember cref="M:System.Windows.Automation.Automation.AddStructureChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.StructureChangedEventHandler)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/b688effa-b3e8-4b05-944d-05ed89a245aa">Subscribe to UI Automation Events</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b909e388-3f24-4997-b6d4-bd9c35c2dc27">UI Automation Events Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddStructureChangedEventHandler">
@@ -217,6 +223,8 @@
         <altmember cref="M:System.Windows.Automation.Automation.RemoveStructureChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.StructureChangedEventHandler)" />
         <altmember cref="M:System.Windows.Automation.Automation.AddAutomationEventHandler(System.Windows.Automation.AutomationEvent,System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.AutomationEventHandler)" />
         <altmember cref="M:System.Windows.Automation.Automation.AddAutomationFocusChangedEventHandler(System.Windows.Automation.AutomationFocusChangedEventHandler)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/b688effa-b3e8-4b05-944d-05ed89a245aa">Subscribe to UI Automation Events</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b909e388-3f24-4997-b6d4-bd9c35c2dc27">UI Automation Events Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Compare">
@@ -343,6 +351,7 @@
         </remarks>
         <altmember cref="F:System.Windows.Automation.Automation.ControlViewCondition" />
         <altmember cref="F:System.Windows.Automation.Automation.RawViewCondition" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <Member MemberName="ControlViewCondition">
@@ -376,6 +385,7 @@
         </remarks>
         <altmember cref="F:System.Windows.Automation.Automation.ContentViewCondition" />
         <altmember cref="F:System.Windows.Automation.Automation.RawViewCondition" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <Member MemberName="PatternName">
@@ -481,6 +491,7 @@
         </remarks>
         <altmember cref="F:System.Windows.Automation.Automation.ContentViewCondition" />
         <altmember cref="F:System.Windows.Automation.Automation.ControlViewCondition" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAllEventHandlers">
@@ -507,6 +518,8 @@
         <altmember cref="M:System.Windows.Automation.Automation.RemoveAutomationFocusChangedEventHandler(System.Windows.Automation.AutomationFocusChangedEventHandler)" />
         <altmember cref="M:System.Windows.Automation.Automation.RemoveAutomationPropertyChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationPropertyChangedEventHandler)" />
         <altmember cref="M:System.Windows.Automation.Automation.RemoveStructureChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.StructureChangedEventHandler)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/b688effa-b3e8-4b05-944d-05ed89a245aa">Subscribe to UI Automation Events</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b909e388-3f24-4997-b6d4-bd9c35c2dc27">UI Automation Events Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAutomationEventHandler">
@@ -547,6 +560,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Windows.Automation.Automation.RemoveAllEventHandlers" />
+        <related type="Article" href="http://msdn.microsoft.com/library/b688effa-b3e8-4b05-944d-05ed89a245aa">Subscribe to UI Automation Events</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b909e388-3f24-4997-b6d4-bd9c35c2dc27">UI Automation Events Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAutomationFocusChangedEventHandler">
@@ -583,6 +598,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Windows.Automation.Automation.RemoveAllEventHandlers" />
+        <related type="Article" href="http://msdn.microsoft.com/library/b688effa-b3e8-4b05-944d-05ed89a245aa">Subscribe to UI Automation Events</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b909e388-3f24-4997-b6d4-bd9c35c2dc27">UI Automation Events Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAutomationPropertyChangedEventHandler">
@@ -621,6 +638,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Windows.Automation.Automation.RemoveAllEventHandlers" />
+        <related type="Article" href="http://msdn.microsoft.com/library/b688effa-b3e8-4b05-944d-05ed89a245aa">Subscribe to UI Automation Events</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b909e388-3f24-4997-b6d4-bd9c35c2dc27">UI Automation Events Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveStructureChangedEventHandler">
@@ -649,6 +668,8 @@
         <summary>Removes the specified structure-changed event handler.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Automation.Automation.RemoveAllEventHandlers" />
+        <related type="Article" href="http://msdn.microsoft.com/library/b688effa-b3e8-4b05-944d-05ed89a245aa">Subscribe to UI Automation Events</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b909e388-3f24-4997-b6d4-bd9c35c2dc27">UI Automation Events Overview</related>
       </Docs>
     </Member>
   </Members>

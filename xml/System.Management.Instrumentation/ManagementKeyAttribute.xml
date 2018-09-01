@@ -1,4 +1,4 @@
-﻿<Type Name="ManagementKeyAttribute" FullName="System.Management.Instrumentation.ManagementKeyAttribute">
+<Type Name="ManagementKeyAttribute" FullName="System.Management.Instrumentation.ManagementKeyAttribute">
   <TypeSignature Language="C#" Value="public sealed class ManagementKeyAttribute : System.Management.Instrumentation.ManagementMemberAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ManagementKeyAttribute extends System.Management.Instrumentation.ManagementMemberAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementKeyAttribute" />
@@ -61,6 +61,7 @@ public int Id
     <altmember cref="T:System.Management.Instrumentation.ManagementProbeAttribute" />
     <altmember cref="T:System.Management.Instrumentation.ManagementConfigurationAttribute" />
     <altmember cref="T:System.Management.Instrumentation.ManagementTaskAttribute" />
+    <related type="Article" href="https://msdn.microsoft.com/library/d7eb170a-f1ba-454c-a8f0-b9acd2008464">WMI.NET Provider Extensions Attributes</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

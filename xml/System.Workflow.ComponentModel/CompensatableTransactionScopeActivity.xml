@@ -1,4 +1,4 @@
-﻿<Type Name="CompensatableTransactionScopeActivity" FullName="System.Workflow.ComponentModel.CompensatableTransactionScopeActivity">
+<Type Name="CompensatableTransactionScopeActivity" FullName="System.Workflow.ComponentModel.CompensatableTransactionScopeActivity">
   <TypeSignature Language="C#" Value="public sealed class CompensatableTransactionScopeActivity : System.Workflow.ComponentModel.CompositeActivity, System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;, System.Workflow.ComponentModel.ICompensatableActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CompensatableTransactionScopeActivity extends System.Workflow.ComponentModel.CompositeActivity implements class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;, class System.Workflow.ComponentModel.ICompensatableActivity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.CompensatableTransactionScopeActivity" />
@@ -52,6 +52,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa349376(v=vs.90)">Using the CompensatableTransactionScopeActivity Activity</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -61,6 +62,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.CompensatableTransactionScopeActivity" /> class.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa349376(v=vs.90)">Using the CompensatableTransactionScopeActivity Activity</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -79,6 +81,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.CompensatableTransactionScopeActivity" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa349376(v=vs.90)">Using the CompensatableTransactionScopeActivity Activity</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -111,6 +114,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa349376(v=vs.90)">Using the CompensatableTransactionScopeActivity Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -318,6 +322,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa349376(v=vs.90)">Using the CompensatableTransactionScopeActivity Activity</related>
       </Docs>
     </Member>
   </Members>

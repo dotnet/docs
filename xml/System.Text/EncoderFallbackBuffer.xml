@@ -1,4 +1,4 @@
-﻿<Type Name="EncoderFallbackBuffer" FullName="System.Text.EncoderFallbackBuffer">
+<Type Name="EncoderFallbackBuffer" FullName="System.Text.EncoderFallbackBuffer">
   <TypeSignature Language="C#" Value="public abstract class EncoderFallbackBuffer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EncoderFallbackBuffer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Text.EncoderFallbackBuffer" />
@@ -63,6 +63,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Text.EncoderFallback" />
+    <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Character Encoding in the .NET Framework</related>
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/Cyrillic-to-Roman-f7e88b29">Sample: Cyrillic to Roman Transliteration Utility</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

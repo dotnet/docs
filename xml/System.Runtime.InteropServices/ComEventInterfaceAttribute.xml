@@ -1,4 +1,4 @@
-﻿<Type Name="ComEventInterfaceAttribute" FullName="System.Runtime.InteropServices.ComEventInterfaceAttribute">
+<Type Name="ComEventInterfaceAttribute" FullName="System.Runtime.InteropServices.ComEventInterfaceAttribute">
   <TypeSignature Language="C#" Value="public sealed class ComEventInterfaceAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComEventInterfaceAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComEventInterfaceAttribute" />
@@ -62,6 +62,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/tools/tlbimp-exe-type-library-importer.md">Tlbimp.exe (Type Library Importer)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

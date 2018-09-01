@@ -1,4 +1,4 @@
-﻿<Type Name="DynamicFilter" FullName="System.Web.DynamicData.DynamicFilter">
+<Type Name="DynamicFilter" FullName="System.Web.DynamicData.DynamicFilter">
   <TypeSignature Language="C#" Value="public class DynamicFilter : System.Web.UI.Control, System.Web.DynamicData.IFilterExpressionProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicFilter extends System.Web.UI.Control implements class System.Web.DynamicData.IFilterExpressionProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicFilter" />
@@ -113,6 +113,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.DynamicData.QueryableFilterRepeater" />
+    <related type="Article" href="http://msdn.microsoft.com/library/7c86f5d5-795c-4b28-8733-8ea9c0802d0f">Walkthrough: Filtering Rows in Tables with a Parent-Child Relationship</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

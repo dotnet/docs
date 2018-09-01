@@ -1,4 +1,4 @@
-﻿<Type Name="StyleSheet" FullName="System.Web.UI.MobileControls.StyleSheet">
+<Type Name="StyleSheet" FullName="System.Web.UI.MobileControls.StyleSheet">
   <TypeSignature Language="C#" Value="public class StyleSheet : System.Web.UI.MobileControls.MobileControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi StyleSheet extends System.Web.UI.MobileControls.MobileControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.StyleSheet" />
@@ -60,6 +60,7 @@
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -107,6 +108,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.Exception">the object to be added does not have a Name attribute.</exception>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="Alignment">
@@ -164,6 +166,7 @@
  An attempt was made to set the property.</exception>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="P:System.Web.UI.MobileControls.MobileControl.Alignment" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -221,6 +224,7 @@
  An attempt was made to set the property.</exception>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="P:System.Web.UI.MobileControls.MobileControl.BackColor" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="BreakAfter">
@@ -272,6 +276,7 @@
  An attempt was made to set the property.</exception>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="P:System.Web.UI.MobileControls.MobileControl.BreakAfter" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -306,6 +311,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -337,6 +343,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="EnableViewState">
@@ -422,6 +429,7 @@
         <exception cref="T:System.Exception">The <see cref="P:System.Web.UI.MobileControls.StyleSheet.Font" /> property was accessed at run time,</exception>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.FontInfo" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -479,6 +487,7 @@
  An attempt was made to set the property.</exception>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="P:System.Web.UI.MobileControls.MobileControl.ForeColor" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -508,6 +517,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -577,6 +587,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -609,6 +620,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.Remove(System.String)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.Remove(System.String)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Remove(System.Web.UI.MobileControls.ObjectListField)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -691,6 +703,7 @@
  An attempt was made to set the property.</exception>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="P:System.Web.UI.MobileControls.MobileControl.StyleReference" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="Styles">
@@ -726,6 +739,7 @@
         <value>The collection of styles in a style sheet.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -852,6 +866,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="P:System.Web.UI.MobileControls.MobileControl.Wrapping" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
   </Members>

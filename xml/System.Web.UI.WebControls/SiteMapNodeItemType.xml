@@ -1,4 +1,4 @@
-﻿<Type Name="SiteMapNodeItemType" FullName="System.Web.UI.WebControls.SiteMapNodeItemType">
+<Type Name="SiteMapNodeItemType" FullName="System.Web.UI.WebControls.SiteMapNodeItemType">
   <TypeSignature Language="C#" Value="public enum SiteMapNodeItemType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SiteMapNodeItemType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SiteMapNodeItemType" />
@@ -43,6 +43,8 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.SiteMapNodeItem" />
     <altmember cref="T:System.Web.UI.WebControls.SiteMapPath" />
+    <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
   </Docs>
   <Members>
     <Member MemberName="Current">

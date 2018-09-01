@@ -1,4 +1,4 @@
-﻿<Type Name="HttpResponseSubstitutionCallback" FullName="System.Web.HttpResponseSubstitutionCallback">
+<Type Name="HttpResponseSubstitutionCallback" FullName="System.Web.HttpResponseSubstitutionCallback">
   <TypeSignature Language="C#" Value="public delegate string HttpResponseSubstitutionCallback(HttpContext context);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpResponseSubstitutionCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpResponseSubstitutionCallback" />
@@ -48,5 +48,6 @@
     <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
     <altmember cref="E:System.Web.UI.WebControls.AdRotator.AdCreated" />
     <altmember cref="M:System.Web.HttpResponse.WriteSubstitution(System.Web.HttpResponseSubstitutionCallback)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/cdd8e523-7305-4685-a456-c5be1de1367e">Caching Portions of an ASP.NET Page</related>
   </Docs>
 </Type>

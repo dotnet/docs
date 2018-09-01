@@ -1,4 +1,4 @@
-﻿<Type Name="SmtpException" FullName="System.Net.Mail.SmtpException">
+<Type Name="SmtpException" FullName="System.Net.Mail.SmtpException">
   <TypeSignature Language="C#" Value="public class SmtpException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SmtpException extends System.Exception implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.SmtpException" />
@@ -500,6 +500,7 @@
         <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains the destination of the serialized stream associated with the new <see cref="T:System.Net.Mail.SmtpException" />.</param>
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> instance with the data needed to serialize the <see cref="T:System.Net.Mail.SmtpException" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
         <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>

@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlDocument" FullName="System.Windows.Forms.HtmlDocument">
+<Type Name="HtmlDocument" FullName="System.Windows.Forms.HtmlDocument">
   <TypeSignature Language="C#" Value="public sealed class HtmlDocument" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HtmlDocument extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlDocument" />
@@ -63,6 +63,8 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="https://developer.mozilla.org/en-US/docs/Web/API/Document">document - Web APIs</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574(v=vs.85)">IHTMLDocument2 Interface</related>
   </Docs>
   <Members>
     <Member MemberName="ActiveElement">
@@ -96,6 +98,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752581(v=vs.85)">activeElement Property</related>
       </Docs>
     </Member>
     <Member MemberName="ActiveLinkColor">
@@ -127,6 +130,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752564.aspx">alinkColor Property</related>
       </Docs>
     </Member>
     <Member MemberName="All">
@@ -168,6 +172,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752582.aspx">all Property</related>
       </Docs>
     </Member>
     <Member MemberName="AttachEventHandler">
@@ -203,6 +208,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752535.aspx">attachEvent Method</related>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -237,6 +243,7 @@
         <altmember cref="P:System.Windows.Forms.HtmlDocument.ForeColor" />
         <altmember cref="P:System.Windows.Forms.HtmlDocument.LinkColor" />
         <altmember cref="P:System.Windows.Forms.HtmlDocument.VisitedLinkColor" />
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752565.aspx">bgColor Property</related>
       </Docs>
     </Member>
     <Member MemberName="Body">
@@ -280,6 +287,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752585.aspx">body Property</related>
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -316,6 +324,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752611.aspx">onclick Event</related>
       </Docs>
     </Member>
     <Member MemberName="ContextMenuShowing">
@@ -351,6 +360,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ms536914.aspx">oncontextmenu Event</related>
       </Docs>
     </Member>
     <Member MemberName="Cookie">
@@ -394,6 +404,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752569.aspx">cookie Property</related>
       </Docs>
     </Member>
     <Member MemberName="CreateElement">
@@ -441,6 +452,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752570.aspx">createElement Method</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultEncoding">
@@ -470,6 +482,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ms537500.aspx">Character Set Recognition</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ms533714.aspx">defaultCharset Property</related>
       </Docs>
     </Member>
     <Member MemberName="DetachEventHandler">
@@ -496,6 +510,7 @@
         <param name="eventHandler">The managed code that handles the event.</param>
         <summary>Removes an event handler from a named event on the HTML DOM.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752539.aspx">detachEvent Method</related>
       </Docs>
     </Member>
     <Member MemberName="Domain">
@@ -530,6 +545,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The argument for the <c>Domain</c> property must be a valid domain name using Domain Name System (DNS) conventions.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752575.aspx">domain Property</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ms533028.aspx">About Cross-Frame Scripting and Security</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ms535250.aspx">frame Object</related>
       </Docs>
     </Member>
     <Member MemberName="DomDocument">
@@ -575,6 +593,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">For <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /> permission. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574(v=vs.85)">IHTMLDocument2 Interface</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=128638">MSHTML Reference</related>
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -597,6 +617,8 @@
         <summary>Gets or sets the character encoding for this document.</summary>
         <value>The <see cref="T:System.String" /> representing the current character encoding.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ms537500.aspx">Character Set Recognition</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752566.aspx">charset Property</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -663,6 +685,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ms536419.aspx">execCommand Method</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198814">Command Identifiers</related>
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -701,6 +725,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">For <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /> permission to set focus on a form. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752527.aspx">focus Method</related>
       </Docs>
     </Member>
     <Member MemberName="Focused">
@@ -765,6 +790,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752520.aspx">onfocusin Event</related>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -797,6 +823,7 @@
         <altmember cref="P:System.Windows.Forms.HtmlDocument.BackColor" />
         <altmember cref="P:System.Windows.Forms.HtmlDocument.LinkColor" />
         <altmember cref="P:System.Windows.Forms.HtmlDocument.VisitedLinkColor" />
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752580.aspx">fgColor Property</related>
       </Docs>
     </Member>
     <Member MemberName="Forms">
@@ -838,6 +865,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752591.aspx">forms Property</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752432.aspx">IHTMLFormElement Interface</related>
       </Docs>
     </Member>
     <Member MemberName="GetElementById">
@@ -879,6 +908,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752543.aspx">getElementById Method</related>
       </Docs>
     </Member>
     <Member MemberName="GetElementFromPoint">
@@ -919,6 +949,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752576.aspx">elementFromPoint Method</related>
       </Docs>
     </Member>
     <Member MemberName="GetElementsByTagName">
@@ -955,6 +986,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752545.aspx">getElementsByTagName Method</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -1017,6 +1049,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752593.aspx">images Property</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="InvokeScript">
@@ -1230,6 +1263,7 @@ window.alert("Name is " + name + "; address is " + address);
         <altmember cref="P:System.Windows.Forms.HtmlDocument.ForeColor" />
         <altmember cref="P:System.Windows.Forms.HtmlDocument.BackColor" />
         <altmember cref="P:System.Windows.Forms.HtmlDocument.VisitedLinkColor" />
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752608.aspx">linkColor Property</related>
       </Docs>
     </Member>
     <Member MemberName="Links">
@@ -1261,6 +1295,7 @@ window.alert("Name is " + name + "; address is " + address);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752595.aspx">links Property</related>
       </Docs>
     </Member>
     <Member MemberName="LosingFocus">
@@ -1299,6 +1334,7 @@ window.alert("Name is " + name + "; address is " + address);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752521.aspx">onfocusout Event</related>
       </Docs>
     </Member>
     <Member MemberName="MouseDown">
@@ -1339,6 +1375,7 @@ window.alert("Name is " + name + "; address is " + address);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752619.aspx">onmousedown Event</related>
       </Docs>
     </Member>
     <Member MemberName="MouseLeave">
@@ -1377,6 +1414,7 @@ window.alert("Name is " + name + "; address is " + address);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ms536948.aspx">onmouseout Event</related>
       </Docs>
     </Member>
     <Member MemberName="MouseMove">
@@ -1415,6 +1453,7 @@ window.alert("Name is " + name + "; address is " + address);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752620.aspx">onmousemove Event</related>
       </Docs>
     </Member>
     <Member MemberName="MouseOver">
@@ -1453,6 +1492,7 @@ window.alert("Name is " + name + "; address is " + address);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752622.aspx">onmouseover Event</related>
       </Docs>
     </Member>
     <Member MemberName="MouseUp">
@@ -1491,6 +1531,7 @@ window.alert("Name is " + name + "; address is " + address);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752623.aspx">onmouseup Event</related>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1594,6 +1635,7 @@ window.alert("Name is " + name + "; address is " + address);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752628.aspx">open Method</related>
       </Docs>
     </Member>
     <Member MemberName="RightToLeft">
@@ -1626,6 +1668,7 @@ window.alert("Name is " + name + "; address is " + address);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752540.aspx">dir Property</related>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -1663,6 +1706,7 @@ window.alert("Name is " + name + "; address is " + address);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752561.aspx">onstop Event</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -1765,6 +1809,7 @@ window.alert("Name is " + name + "; address is " + address);
         <altmember cref="P:System.Windows.Forms.HtmlDocument.BackColor" />
         <altmember cref="P:System.Windows.Forms.HtmlDocument.ForeColor" />
         <altmember cref="P:System.Windows.Forms.HtmlDocument.LinkColor" />
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752638.aspx">vlinkColor Property</related>
       </Docs>
     </Member>
     <Member MemberName="Window">
@@ -1794,6 +1839,7 @@ window.alert("Name is " + name + "; address is " + address);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa752599.aspx">parentWindow Property</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1837,6 +1883,7 @@ window.alert("Name is " + name + "; address is " + address);
  ]]></format>
         </remarks>
         <altmember cref="M:System.Windows.Forms.HtmlDocument.OpenNew(System.Boolean)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/default.asp?url=/workshop/browser/mshtml/reference/ifaces/document2/write.asp">write Method</related>
       </Docs>
     </Member>
   </Members>

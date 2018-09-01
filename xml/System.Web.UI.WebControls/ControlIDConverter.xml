@@ -1,4 +1,4 @@
-﻿<Type Name="ControlIDConverter" FullName="System.Web.UI.WebControls.ControlIDConverter">
+<Type Name="ControlIDConverter" FullName="System.Web.UI.WebControls.ControlIDConverter">
   <TypeSignature Language="C#" Value="public class ControlIDConverter : System.ComponentModel.StringConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlIDConverter extends System.ComponentModel.StringConverter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ControlIDConverter" />
@@ -22,7 +22,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ControlIDConverter> class derives from the <xref:System.ComponentModel.StringConverter> class and provides a list of control IDs for display in a property grid control in design-time environments. The <xref:System.Web.UI.WebControls.ControlIDConverter> class also serves as the base class for the <xref:System.Web.UI.WebControls.AssociatedControlConverter> and <xref:System.Web.UI.WebControls.ValidatedControlConverter> classes, which are type converters for Web controls and controls that support validation property attributes, respectively.  
   
- For more information about type converters, see [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56) or [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada).  
+ For more information about type converters, see [How to: Implement a Type Converter](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)) or [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada).  
   
    
   
@@ -42,6 +42,8 @@
     <altmember cref="T:System.ComponentModel.TypeConverter" />
     <altmember cref="T:System.Web.UI.WebControls.AssociatedControlConverter" />
     <altmember cref="T:System.Web.UI.WebControls.ValidatedControlConverter" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada">Generalized Type Conversion</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,6 +76,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada">Generalized Type Conversion</related>
       </Docs>
     </Member>
     <Member MemberName="FilterControl">
@@ -103,6 +107,8 @@
         <block subset="none" type="overrides">
           <para>The implementation of the <see cref="M:System.Web.UI.WebControls.ControlIDConverter.FilterControl(System.Web.UI.Control)" /> method returns <see langword="true" /> in all cases. Classes that derive from the <see cref="T:System.Web.UI.WebControls.ControlIDConverter" /> override this method to provide their own filtering mechanism. For example, the <see cref="T:System.Web.UI.WebControls.AssociatedControlConverter" /> class overrides the <see cref="M:System.Web.UI.WebControls.ControlIDConverter.FilterControl(System.Web.UI.Control)" /> method and returns <see langword="true" /> only if the control is a Web server control.</para>
         </block>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada">Generalized Type Conversion</related>
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -138,6 +144,8 @@
         </remarks>
         <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
         <altmember cref="M:System.Web.UI.WebControls.ControlIDConverter.FilterControl(System.Web.UI.Control)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada">Generalized Type Conversion</related>
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesExclusive">
@@ -179,6 +187,8 @@
         </block>
         <altmember cref="M:System.Web.UI.WebControls.ControlIDConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
         <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada">Generalized Type Conversion</related>
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">
@@ -212,6 +222,8 @@
         <altmember cref="M:System.Web.UI.WebControls.ControlIDConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
         <altmember cref="M:System.Web.UI.WebControls.ControlIDConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
         <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada">Generalized Type Conversion</related>
       </Docs>
     </Member>
   </Members>

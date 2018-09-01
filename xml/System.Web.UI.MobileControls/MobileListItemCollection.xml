@@ -1,4 +1,4 @@
-﻿<Type Name="MobileListItemCollection" FullName="System.Web.UI.MobileControls.MobileListItemCollection">
+<Type Name="MobileListItemCollection" FullName="System.Web.UI.MobileControls.MobileListItemCollection">
   <TypeSignature Language="C#" Value="public class MobileListItemCollection : System.Web.UI.MobileControls.ArrayListCollectionBase, System.Web.UI.IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MobileListItemCollection extends System.Web.UI.MobileControls.ArrayListCollectionBase implements class System.Web.UI.IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.MobileListItemCollection" />
@@ -46,6 +46,8 @@
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.Clear" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -55,6 +57,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.MobileListItemCollection" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -74,6 +78,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.MobileListItemCollection" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -104,6 +110,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Add">
@@ -113,6 +121,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Adds an item to the end of a collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Add">
@@ -146,6 +156,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -190,6 +202,8 @@
         <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.Clear" />
         <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.Remove(System.String)" />
         <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.RemoveAt(System.Int32)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -224,6 +238,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -276,6 +293,8 @@
         <summary>Gets the items in the specified collection as a single array of <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> objects. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>An array of the items in the specified collection.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -315,6 +334,8 @@
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.IndexOf(System.Web.UI.MobileControls.ObjectListField)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListItemCollection.IndexOf(System.Web.UI.MobileControls.ObjectListItem)" />
         <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.IndexOf(System.Web.UI.MobileControls.MobileListItem)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Insert">
@@ -324,6 +345,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Adds an item to the specified location in the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Insert">
@@ -360,6 +383,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.MobileListItem" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -395,6 +420,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -446,6 +473,8 @@
         <value>The <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> item at the specified index.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.MobileListItem" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -480,6 +509,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Removes the item with the specified value. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Remove">
@@ -510,6 +541,8 @@
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.Remove(System.String)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Remove(System.Web.UI.MobileControls.ObjectListField)" />
         <altmember cref="M:System.Web.UI.MobileControls.StyleSheet.Remove(System.String)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -540,6 +573,8 @@
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.Remove(System.String)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Remove(System.Web.UI.MobileControls.ObjectListField)" />
         <altmember cref="M:System.Web.UI.MobileControls.StyleSheet.Remove(System.String)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -567,6 +602,8 @@
         <summary>Removes the item at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommandCollection" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -616,6 +653,8 @@
         <param name="value">The <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> array.</param>
         <summary>Sets the array of <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> objects as the <see cref="T:System.Web.UI.MobileControls.MobileListItemCollection" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -681,6 +720,8 @@
         </remarks>
         <exception cref="T:System.Exception">the view state data has been modified or corrupted.</exception>
         <altmember cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -712,6 +753,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.IStateManager.SaveViewState" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -742,6 +785,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.IStateManager.TrackViewState" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">

@@ -1,4 +1,4 @@
-﻿<Type Name="TransformerInfo" FullName="System.Web.Configuration.TransformerInfo">
+<Type Name="TransformerInfo" FullName="System.Web.Configuration.TransformerInfo">
   <TypeSignature Language="C#" Value="public sealed class TransformerInfo : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TransformerInfo extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TransformerInfo" />
@@ -52,6 +52,7 @@
     <altmember cref="T:System.Configuration.ConfigurationSection" />
     <altmember cref="T:System.Web.Configuration.WebPartsSection" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Overview: Web Parts Connections</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -257,6 +258,7 @@
         </remarks>
         <altmember cref="T:System.Web.Configuration.WebPartsSection" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Overview: Web Parts Connections</related>
       </Docs>
     </Member>
   </Members>

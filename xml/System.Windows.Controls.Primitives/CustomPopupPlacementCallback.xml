@@ -1,4 +1,4 @@
-﻿<Type Name="CustomPopupPlacementCallback" FullName="System.Windows.Controls.Primitives.CustomPopupPlacementCallback">
+<Type Name="CustomPopupPlacementCallback" FullName="System.Windows.Controls.Primitives.CustomPopupPlacementCallback">
   <TypeSignature Language="C#" Value="public delegate System.Windows.Controls.Primitives.CustomPopupPlacement[] CustomPopupPlacementCallback(Size popupSize, Size targetSize, Point offset);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CustomPopupPlacementCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.CustomPopupPlacementCallback" />
@@ -40,5 +40,6 @@
     <altmember cref="P:System.Windows.Controls.Primitives.Popup.CustomPopupPlacementCallback" />
     <altmember cref="P:System.Windows.Controls.ToolTip.CustomPopupPlacementCallback" />
     <altmember cref="P:System.Windows.Controls.ContextMenu.CustomPopupPlacementCallback" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160032">Popup Placement Sample</related>
   </Docs>
 </Type>

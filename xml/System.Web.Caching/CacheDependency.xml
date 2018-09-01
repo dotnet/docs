@@ -1,4 +1,4 @@
-﻿<Type Name="CacheDependency" FullName="System.Web.Caching.CacheDependency">
+<Type Name="CacheDependency" FullName="System.Web.Caching.CacheDependency">
   <TypeSignature Language="C#" Value="public class CacheDependency : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi CacheDependency extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheDependency" />
@@ -43,6 +43,7 @@
     </remarks>
     <altmember cref="T:System.Web.Caching.Cache" />
     <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
+    <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -54,6 +55,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.CacheDependency" /> class.</summary>
         <altmember cref="T:System.Web.Caching.Cache" />
         <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -88,6 +90,7 @@
         </remarks>
         <altmember cref="T:System.Web.Caching.Cache" />
         <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -134,6 +137,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Caching.Cache" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -180,6 +184,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Caching.Cache" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -227,6 +232,7 @@
         </remarks>
         <altmember cref="T:System.Web.Caching.Cache" />
         <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -273,6 +279,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Caching.Cache" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -316,6 +323,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Caching.Cache" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -367,6 +375,7 @@
         </remarks>
         <altmember cref="T:System.Web.Caching.Cache" />
         <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -464,6 +473,7 @@
         </remarks>
         <altmember cref="T:System.Web.Caching.Cache" />
         <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName="DependencyDispose">
@@ -502,6 +512,7 @@
         </remarks>
         <altmember cref="T:System.Web.Caching.Cache" />
         <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -562,6 +573,7 @@
         </block>
         <altmember cref="T:System.Web.Caching.Cache" />
         <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName="GetFileDependencies">
@@ -665,6 +677,7 @@
         </remarks>
         <altmember cref="T:System.Web.Caching.Cache" />
         <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName="ItemRemoved">
@@ -752,6 +765,7 @@
         </remarks>
         <altmember cref="T:System.Web.Caching.Cache" />
         <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName="SetCacheDependencyChanged">
@@ -812,6 +826,7 @@
         </remarks>
         <altmember cref="T:System.Web.Caching.Cache" />
         <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
     <Member MemberName="TakeOwnership">
@@ -886,6 +901,7 @@
         </remarks>
         <altmember cref="T:System.Web.Caching.Cache" />
         <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
       </Docs>
     </Member>
   </Members>

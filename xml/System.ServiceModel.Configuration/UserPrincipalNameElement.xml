@@ -1,4 +1,4 @@
-﻿<Type Name="UserPrincipalNameElement" FullName="System.ServiceModel.Configuration.UserPrincipalNameElement">
+<Type Name="UserPrincipalNameElement" FullName="System.ServiceModel.Configuration.UserPrincipalNameElement">
   <TypeSignature Language="C#" Value="public sealed class UserPrincipalNameElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UserPrincipalNameElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.UserPrincipalNameElement" />
@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/68032f69-149e-4613-bae4-18314d4fd294">&lt;userPrincipalName&gt; element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

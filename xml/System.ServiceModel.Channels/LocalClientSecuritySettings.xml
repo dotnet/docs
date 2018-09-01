@@ -1,4 +1,4 @@
-﻿<Type Name="LocalClientSecuritySettings" FullName="System.ServiceModel.Channels.LocalClientSecuritySettings">
+<Type Name="LocalClientSecuritySettings" FullName="System.ServiceModel.Channels.LocalClientSecuritySettings">
   <TypeSignature Language="C#" Value="public sealed class LocalClientSecuritySettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LocalClientSecuritySettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.LocalClientSecuritySettings" />
@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/491d1705-eb29-43c2-a44c-c0cf996f74eb">How To: Set a Max Clock Skew</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -338,6 +339,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is <see langword="set" /> to a value less than 0.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/491d1705-eb29-43c2-a44c-c0cf996f74eb">How To: Set a Max Clock Skew</related>
       </Docs>
     </Member>
     <Member MemberName="MaxCookieCachingTime">

@@ -1,4 +1,4 @@
-﻿<Type Name="BasePartialCachingControl" FullName="System.Web.UI.BasePartialCachingControl">
+<Type Name="BasePartialCachingControl" FullName="System.Web.UI.BasePartialCachingControl">
   <TypeSignature Language="C#" Value="public abstract class BasePartialCachingControl : System.Web.UI.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BasePartialCachingControl extends System.Web.UI.Control" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.BasePartialCachingControl" />
@@ -45,6 +45,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.UserControl" />
+    <related type="Article" href="http://msdn.microsoft.com/library/cdd8e523-7305-4685-a456-c5be1de1367e">Caching Portions of an ASP.NET Page</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

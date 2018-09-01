@@ -1,4 +1,4 @@
-﻿<Type Name="HMACRIPEMD160" FullName="System.Security.Cryptography.HMACRIPEMD160">
+<Type Name="HMACRIPEMD160" FullName="System.Security.Cryptography.HMACRIPEMD160">
   <TypeSignature Language="C#" Value="public class HMACRIPEMD160 : System.Security.Cryptography.HMAC" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HMACRIPEMD160 extends System.Security.Cryptography.HMAC" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.HMACRIPEMD160" />
@@ -47,6 +47,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -85,6 +86,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -121,6 +123,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> parameter is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="StyleSheetLocation" FullName="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation">
+<Type Name="StyleSheetLocation" FullName="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation">
   <TypeSignature Language="C#" Value="public enum StyleSheetLocation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StyleSheetLocation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation" />
@@ -30,6 +30,8 @@
     </remarks>
     <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.CssLocation" />
     <altmember cref="N:System.Web.UI.MobileControls.Adapters.XhtmlAdapters" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
   </Docs>
   <Members>
     <Member MemberName="ApplicationCache">

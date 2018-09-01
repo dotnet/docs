@@ -1,4 +1,4 @@
-﻿<Type Name="ByteKeyFrameCollection" FullName="System.Windows.Media.Animation.ByteKeyFrameCollection">
+<Type Name="ByteKeyFrameCollection" FullName="System.Windows.Media.Animation.ByteKeyFrameCollection">
   <TypeSignature Language="C#" Value="public class ByteKeyFrameCollection : System.Windows.Freezable, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ByteKeyFrameCollection extends System.Windows.Freezable implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ByteKeyFrameCollection" />
@@ -45,6 +45,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Media.Animation.ByteKeyFrame" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160012">KeyFrame Animation Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

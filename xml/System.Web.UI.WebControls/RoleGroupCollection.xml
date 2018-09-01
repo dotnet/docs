@@ -1,4 +1,4 @@
-﻿<Type Name="RoleGroupCollection" FullName="System.Web.UI.WebControls.RoleGroupCollection">
+<Type Name="RoleGroupCollection" FullName="System.Web.UI.WebControls.RoleGroupCollection">
   <TypeSignature Language="C#" Value="public sealed class RoleGroupCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RoleGroupCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RoleGroupCollection" />
@@ -40,6 +40,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.RoleGroup" />
+    <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +64,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RoleGroupCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -98,6 +100,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -125,6 +128,7 @@
         <returns>
           <see langword="true" /> if the specified role group is a member of the collection; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -159,6 +163,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingRoleGroup">
@@ -198,6 +203,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="user" /> is <see langword="null" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -231,6 +237,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -265,6 +272,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -291,6 +299,7 @@
         <summary>Gets the role group at the specified index.</summary>
         <value>The <see cref="T:System.Web.UI.WebControls.RoleGroup" /> at the specified index.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnValidate">
@@ -348,6 +357,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
   </Members>

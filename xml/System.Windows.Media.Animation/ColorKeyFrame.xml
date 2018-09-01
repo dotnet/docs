@@ -1,4 +1,4 @@
-﻿<Type Name="ColorKeyFrame" FullName="System.Windows.Media.Animation.ColorKeyFrame">
+<Type Name="ColorKeyFrame" FullName="System.Windows.Media.Animation.ColorKeyFrame">
   <TypeSignature Language="C#" Value="public abstract class ColorKeyFrame : System.Windows.Freezable, System.Windows.Media.Animation.IKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ColorKeyFrame extends System.Windows.Freezable implements class System.Windows.Media.Animation.IKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ColorKeyFrame" />
@@ -23,6 +23,7 @@
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Windows.Media.Animation.ColorKeyFrameCollection" />
     <altmember cref="T:System.Windows.Media.Animation.ColorAnimationUsingKeyFrames" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160012">KeyFrame Animation Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -196,6 +197,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160012">KeyFrame Animation Sample</related>
       </Docs>
     </Member>
     <Member MemberName="KeyTimeProperty">

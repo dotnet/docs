@@ -1,4 +1,4 @@
-﻿<Type Name="DataSetFieldSchema" FullName="System.Web.UI.Design.DataSetFieldSchema">
+<Type Name="DataSetFieldSchema" FullName="System.Web.UI.Design.DataSetFieldSchema">
   <TypeSignature Language="C#" Value="public sealed class DataSetFieldSchema : System.Web.UI.Design.IDataSourceFieldSchema" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataSetFieldSchema extends System.Object implements class System.Web.UI.Design.IDataSourceFieldSchema" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DataSetFieldSchema" />
@@ -43,6 +43,7 @@
     <altmember cref="T:System.Web.UI.Design.DataSetViewSchema" />
     <altmember cref="T:System.Data.DataSet" />
     <altmember cref="T:System.Data.DataColumn" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

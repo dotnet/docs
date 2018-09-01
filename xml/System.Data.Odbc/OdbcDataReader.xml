@@ -1,4 +1,4 @@
-﻿<Type Name="OdbcDataReader" FullName="System.Data.Odbc.OdbcDataReader">
+<Type Name="OdbcDataReader" FullName="System.Data.Odbc.OdbcDataReader">
   <TypeSignature Language="C#" Value="public sealed class OdbcDataReader : System.Data.Common.DbDataReader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OdbcDataReader extends System.Data.Common.DbDataReader" />
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcDataReader" />
@@ -19,7 +19,8 @@
     <BaseTypeName>System.Data.Common.DbDataReader</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-1.1">System.MarshalByRefObject</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Provides a way of reading a forward-only stream of data rows from a data source. This class cannot be inherited.</summary>
     <remarks>
@@ -44,6 +45,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -89,6 +91,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="Depth">
@@ -123,6 +126,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -189,6 +193,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">There is no current connection to a data source.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -251,6 +256,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetByte">
@@ -292,6 +298,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -345,6 +352,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetChar">
@@ -386,6 +394,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -439,6 +448,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -503,6 +513,7 @@
         <summary>Gets the name of the source data type.</summary>
         <returns>The name of the source data type.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetDate">
@@ -534,6 +545,7 @@
         <summary>Gets the value of the specified column as a <see cref="T:System.DateTime" /> object.</summary>
         <returns>The value of the specified column as a <see cref="T:System.DateTime" /> object.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetDateTime">
@@ -575,6 +587,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetDecimal">
@@ -618,6 +631,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetDouble">
@@ -659,6 +673,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -693,6 +708,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetFieldType">
@@ -724,6 +740,7 @@
         <summary>Gets the <see cref="T:System.Type" /> that is the data type of the object.</summary>
         <returns>The <see cref="T:System.Type" /> that is the data type of the object.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetFloat">
@@ -765,6 +782,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetGuid">
@@ -806,6 +824,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetInt16">
@@ -847,6 +866,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetInt32">
@@ -888,6 +908,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetInt64">
@@ -929,6 +950,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetName">
@@ -961,6 +983,7 @@
         <returns>A string that is the name of the specified column.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Data.Odbc.OdbcDataReader.GetOrdinal(System.String)" />
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetOrdinal">
@@ -1012,6 +1035,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Data.Odbc.OdbcDataReader.GetName(System.Int32)" />
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetSchemaTable">
@@ -1084,6 +1108,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.Odbc.OdbcDataReader" /> is closed.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetString">
@@ -1125,6 +1150,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetTime">
@@ -1156,6 +1182,7 @@
         <summary>Gets the value of the specified column as a <see cref="T:System.TimeSpan" /> object.</summary>
         <returns>The value of the specified column as a <see cref="T:System.TimeSpan" /> object.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -1194,6 +1221,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="GetValues">
@@ -1242,6 +1270,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="HasRows">
@@ -1270,6 +1299,7 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Data.Odbc.OdbcDataReader" /> contains one or more rows; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="IsClosed">
@@ -1305,6 +1335,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="IsDBNull">
@@ -1344,6 +1375,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -1353,6 +1385,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Gets the value of a column in its native format.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -1385,6 +1418,7 @@
         <value>The value of the specified column in its native format.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1426,6 +1460,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">No column with the specified name was found.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="NextResult">
@@ -1464,6 +1499,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -1510,6 +1546,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="RecordsAffected">
@@ -1548,6 +1585,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">

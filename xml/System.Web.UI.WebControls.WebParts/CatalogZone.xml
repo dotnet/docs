@@ -1,4 +1,4 @@
-﻿<Type Name="CatalogZone" FullName="System.Web.UI.WebControls.WebParts.CatalogZone">
+<Type Name="CatalogZone" FullName="System.Web.UI.WebControls.WebParts.CatalogZone">
   <TypeSignature Language="C#" Value="public class CatalogZone : System.Web.UI.WebControls.WebParts.CatalogZoneBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CatalogZone extends System.Web.UI.WebControls.WebParts.CatalogZoneBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.CatalogZone" />
@@ -104,6 +104,9 @@
  If you inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZone" /> class, you can override the <see cref="M:System.Web.UI.WebControls.WebParts.CatalogZone.CreateCatalogParts" /> method and use the method to add custom <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls to a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" />, if you want greater programmatic control over adding custom <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls to your zone.</para>
     </block>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Web Parts Control Set Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -142,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateCatalogParts">
@@ -178,6 +182,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> control does not have an ID.</exception>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ZoneTemplate">
@@ -234,6 +239,7 @@
         </block>
         <altmember cref="T:System.Web.UI.ITemplate" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogZone.CreateCatalogParts" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

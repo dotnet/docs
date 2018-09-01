@@ -1,4 +1,4 @@
-﻿<Type Name="ParallelOptions" FullName="System.Threading.Tasks.ParallelOptions">
+<Type Name="ParallelOptions" FullName="System.Threading.Tasks.ParallelOptions">
   <TypeSignature Language="C#" Value="public class ParallelOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ParallelOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.ParallelOptions" />
@@ -27,6 +27,7 @@
     <summary>Stores options that configure the operation of methods on the <see cref="T:System.Threading.Tasks.Parallel" /> class.</summary>
     <remarks>To be added.</remarks>
     <threadsafe>The constructor is thread-safe and may be used by multiple threads concurrently to construct multiple instances. None of the other public members are thread-safe.</threadsafe>
+    <related type="Article" href="~/docs/standard/parallel-programming/data-parallelism-task-parallel-library.md">Data Parallelism (Task Parallel Library)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

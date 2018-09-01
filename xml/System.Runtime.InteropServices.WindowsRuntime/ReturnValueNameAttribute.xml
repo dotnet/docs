@@ -1,4 +1,4 @@
-﻿<Type Name="ReturnValueNameAttribute" FullName="System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute">
+<Type Name="ReturnValueNameAttribute" FullName="System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute">
   <TypeSignature Language="C#" Value="public sealed class ReturnValueNameAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReturnValueNameAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute" />
@@ -85,6 +85,7 @@ End Function
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/p/?LinkId=238313">Creating Windows Runtime Components in C# and Visual Basic</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

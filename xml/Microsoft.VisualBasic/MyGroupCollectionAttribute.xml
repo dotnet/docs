@@ -1,4 +1,4 @@
-﻿<Type Name="MyGroupCollectionAttribute" FullName="Microsoft.VisualBasic.MyGroupCollectionAttribute">
+<Type Name="MyGroupCollectionAttribute" FullName="Microsoft.VisualBasic.MyGroupCollectionAttribute">
   <TypeSignature Language="C#" Value="public sealed class MyGroupCollectionAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MyGroupCollectionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MyGroupCollectionAttribute" />
@@ -38,6 +38,8 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <related type="Article" href="http://msdn.microsoft.com/library/f6bff4e6-6769-4294-956b-037aa6106d2a">My.Forms Object</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f188dc05-2c75-41b6-bb68-122d1c3110a2">My.WebServices Object</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -85,6 +87,8 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="http://msdn.microsoft.com/library/f6bff4e6-6769-4294-956b-037aa6106d2a">My.Forms Object</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f188dc05-2c75-41b6-bb68-122d1c3110a2">My.WebServices Object</related>
       </Docs>
     </Member>
     <Member MemberName="CreateMethod">
@@ -120,6 +124,8 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="http://msdn.microsoft.com/library/f6bff4e6-6769-4294-956b-037aa6106d2a">My.Forms Object</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f188dc05-2c75-41b6-bb68-122d1c3110a2">My.WebServices Object</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultInstanceAlias">
@@ -155,6 +161,8 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="http://msdn.microsoft.com/library/f6bff4e6-6769-4294-956b-037aa6106d2a">My.Forms Object</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f188dc05-2c75-41b6-bb68-122d1c3110a2">My.WebServices Object</related>
       </Docs>
     </Member>
     <Member MemberName="DisposeMethod">
@@ -190,6 +198,8 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="http://msdn.microsoft.com/library/f6bff4e6-6769-4294-956b-037aa6106d2a">My.Forms Object</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f188dc05-2c75-41b6-bb68-122d1c3110a2">My.WebServices Object</related>
       </Docs>
     </Member>
     <Member MemberName="MyGroupName">
@@ -225,6 +235,8 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="http://msdn.microsoft.com/library/f6bff4e6-6769-4294-956b-037aa6106d2a">My.Forms Object</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f188dc05-2c75-41b6-bb68-122d1c3110a2">My.WebServices Object</related>
       </Docs>
     </Member>
   </Members>

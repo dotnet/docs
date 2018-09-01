@@ -1,4 +1,4 @@
-﻿<Type Name="CspParameters" FullName="System.Security.Cryptography.CspParameters">
+<Type Name="CspParameters" FullName="System.Security.Cryptography.CspParameters">
   <TypeSignature Language="C#" Value="public sealed class CspParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CspParameters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CspParameters" />
@@ -64,6 +64,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -122,6 +123,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -178,6 +180,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -238,6 +241,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -293,6 +297,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -448,6 +453,7 @@
         <value>An enumeration value, or a bitwise combination of enumeration values.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">Value is not a valid enumeration value.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="KeyContainerName">
@@ -499,6 +505,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="KeyNumber">
@@ -554,6 +561,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="KeyPassword">
@@ -680,6 +688,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderType">
@@ -749,6 +758,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
   </Members>

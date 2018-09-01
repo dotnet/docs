@@ -1,4 +1,4 @@
-﻿<Type Name="EncoderParameter" FullName="System.Drawing.Imaging.EncoderParameter">
+<Type Name="EncoderParameter" FullName="System.Drawing.Imaging.EncoderParameter">
   <TypeSignature Language="C#" Value="public sealed class EncoderParameter : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit EncoderParameter extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.EncoderParameter" />
@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/0e838ea1-4e7e-4334-b882-ab25df607b8b">Using Image Encoders and Decoders in Managed GDI+</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

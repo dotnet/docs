@@ -1,4 +1,4 @@
-﻿<Type Name="PackagePart" FullName="System.IO.Packaging.PackagePart">
+<Type Name="PackagePart" FullName="System.IO.Packaging.PackagePart">
   <TypeSignature Language="C#" Value="public abstract class PackagePart" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PackagePart extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackagePart" />
@@ -35,6 +35,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -102,6 +103,7 @@
           <paramref name="package" /> or <paramref name="partUri" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
         <altmember cref="Overload:System.IO.Packaging.PackagePart.GetStream" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -165,6 +167,7 @@
           <paramref name="partUri" /> is not a valid <see cref="T:System.IO.Packaging.PackagePart" /> [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</exception>
         <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
         <altmember cref="Overload:System.IO.Packaging.PackagePart.GetStream" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -224,6 +227,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="compressionOption" /> value is not valid.</exception>
         <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
         <altmember cref="Overload:System.IO.Packaging.PackagePart.GetStream" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="CompressionOption">
@@ -325,6 +329,7 @@
   
  The string returned by the derived class <see cref="M:System.IO.Packaging.PackagePart.GetContentTypeCore" /> method is empty.</exception>
         <altmember cref="Overload:System.IO.Packaging.PackagePart.GetStream" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateRelationship">
@@ -356,6 +361,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CreateRelationship">
@@ -452,6 +458,7 @@
         <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationship(System.String)" />
         <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationships" />
         <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationshipsByType(System.String)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="CreateRelationship">
@@ -553,6 +560,7 @@
         <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationship(System.String)" />
         <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationships" />
         <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationshipsByType(System.String)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteRelationship">
@@ -808,6 +816,7 @@
   
  The <see cref="P:System.IO.Packaging.PackagePart.Package" /> is not open (<see cref="M:System.IO.Packaging.Package.Dispose(System.Boolean)" /> or <see cref="M:System.IO.Packaging.Package.Close" /> has been called).</exception>
         <exception cref="T:System.IO.IOException">The package is write-only (relationship information cannot be read).</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetStream">

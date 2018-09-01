@@ -1,4 +1,4 @@
-﻿<Type Name="Strings" FullName="Microsoft.VisualBasic.Strings">
+<Type Name="Strings" FullName="Microsoft.VisualBasic.Strings">
   <TypeSignature Language="C#" Value="public sealed class Strings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Strings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Strings" />
@@ -37,6 +37,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/index.md">Keywords (Visual Basic)</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/runtime-library-members.md">Visual Basic Run-Time Library Members</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Asc">
@@ -98,6 +101,7 @@
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="P:System.Globalization.TextInfo.ANSICodePage" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/index.md">Functions (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Asc">
@@ -149,6 +153,7 @@
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="P:System.Globalization.TextInfo.ANSICodePage" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/index.md">Functions (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AscW">
@@ -210,6 +215,7 @@
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="P:System.Globalization.TextInfo.ANSICodePage" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/index.md">Functions (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="AscW">
@@ -261,6 +267,7 @@
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="P:System.Globalization.TextInfo.ANSICodePage" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/index.md">Functions (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Chr">
@@ -321,6 +328,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Conversion.Str(System.Object)" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <Member MemberName="ChrW">
@@ -381,6 +389,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Conversion.Str(System.Object)" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Filter">
@@ -456,6 +465,7 @@
           <paramref name="Source" /> is <see langword="Nothing" /> or is not a one-dimensional array.</exception>
         <altmember cref="M:Microsoft.VisualBasic.Strings.Replace(System.String,System.String,System.String,System.Int32,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -521,6 +531,7 @@
           <paramref name="Source" /> is <see langword="Nothing" /> or is not a one-dimensional array.</exception>
         <altmember cref="M:Microsoft.VisualBasic.Strings.Replace(System.String,System.String,System.String,System.Int32,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -722,6 +733,7 @@
         </remarks>
         <altmember cref="M:System.String.Format(System.String,System.Object)" />
         <altmember cref="M:Microsoft.VisualBasic.Conversion.Str(System.Object)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <Member MemberName="FormatCurrency">
@@ -792,6 +804,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.InvalidCastException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation</related>
       </Docs>
     </Member>
     <Member MemberName="FormatDateTime">
@@ -855,6 +868,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.FormatPercent(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(Microsoft.VisualBasic.DateInterval,System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <Member MemberName="FormatNumber">
@@ -920,6 +934,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.FormatPercent(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
         <altmember cref="T:Microsoft.VisualBasic.TriState" />
         <altmember cref="T:System.InvalidCastException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <Member MemberName="FormatPercent">
@@ -986,6 +1001,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
         <altmember cref="T:Microsoft.VisualBasic.TriState" />
         <altmember cref="T:System.InvalidCastException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <Member MemberName="GetChar">
@@ -1034,6 +1050,7 @@
           <paramref name="str" /> is <see langword="Nothing" />, <paramref name="Index" /> &lt; 1, or <paramref name="Index" /> is greater than index of last character of <paramref name="str" />.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Mid" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="InStr">
@@ -1118,8 +1135,10 @@
  </description>
             </item>
             <item>
-              <term></term>
-              <description></description>
+              <term>
+              </term>
+              <description>
+              </description>
             </item>
           </list>
         </returns>
@@ -1151,6 +1170,9 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.InStrRev(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.StrComp(System.String,System.String,Microsoft.VisualBasic.CompareMethod)" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/index.md">Strings in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/introduction-to-strings.md">Introduction to Strings in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/option-compare-statement.md">Option Compare Statement</related>
       </Docs>
     </Member>
     <Member MemberName="InStr">
@@ -1266,6 +1288,9 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.InStrRev(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.StrComp(System.String,System.String,Microsoft.VisualBasic.CompareMethod)" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/index.md">Strings in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/introduction-to-strings.md">Introduction to Strings in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/option-compare-statement.md">Option Compare Statement</related>
       </Docs>
     </Member>
     <Member MemberName="InStrRev">
@@ -1380,6 +1405,8 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="Start" /> = 0 or <paramref name="Start" /> &lt; -1.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.InStr" />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/index.md">Strings in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/introduction-to-strings.md">Introduction to Strings in Visual Basic</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Join">
@@ -1435,6 +1462,7 @@
           <paramref name="SourceArray" /> is not one dimensional.</exception>
         <altmember cref="M:Microsoft.VisualBasic.Strings.Split(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -1481,6 +1509,7 @@
           <paramref name="SourceArray" /> is not one dimensional.</exception>
         <altmember cref="M:Microsoft.VisualBasic.Strings.Split(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="LCase">
@@ -1537,6 +1566,8 @@
  ]]></format>
         </remarks>
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.UCase" />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/index.md">Strings in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/introduction-to-strings.md">Introduction to Strings in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="LCase">
@@ -1584,6 +1615,8 @@
  ]]></format>
         </remarks>
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.UCase" />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/index.md">Strings in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/introduction-to-strings.md">Introduction to Strings in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -1636,6 +1669,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Mid" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Len">
@@ -1700,6 +1734,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -1755,6 +1791,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -1810,6 +1848,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -1865,6 +1905,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -1920,6 +1962,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -1975,6 +2019,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -2030,6 +2076,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -2085,6 +2133,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -2140,6 +2190,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -2200,6 +2252,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -2260,6 +2314,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -2315,6 +2371,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -2370,6 +2428,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -2430,6 +2490,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -2490,6 +2552,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -2550,6 +2614,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="LSet">
@@ -2594,6 +2660,9 @@
  ]]></format>
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.Strings.RSet(System.String,System.Int32)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md">Efficient Use of Data Types</related>
       </Docs>
     </Member>
     <Member MemberName="LTrim">
@@ -2640,6 +2709,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Left(System.String,System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.Space(System.Int32)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Mid">
@@ -2706,6 +2776,10 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.RTrim(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/index.md">Strings in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/introduction-to-strings.md">Introduction to Strings in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/mid-statement.md">Mid Statement</related>
       </Docs>
     </Member>
     <Member MemberName="Mid">
@@ -2765,6 +2839,10 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.RTrim(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/index.md">Strings in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/introduction-to-strings.md">Introduction to Strings in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/mid-statement.md">Mid Statement</related>
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -2847,6 +2925,7 @@ Dim aString As String = Replace(TestString, "o", "i")
           <paramref name="Count" /> &lt; -1 or <paramref name="Start" /> &lt;= 0.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Filter" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -2899,6 +2978,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Mid" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <Member MemberName="RSet">
@@ -2943,6 +3023,9 @@ Dim aString As String = Replace(TestString, "o", "i")
  ]]></format>
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.Strings.LSet(System.String,System.Int32)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md">Efficient Use of Data Types</related>
       </Docs>
     </Member>
     <Member MemberName="RTrim">
@@ -2989,6 +3072,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <altmember cref="M:Microsoft.VisualBasic.Strings.Left(System.String,System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.Space(System.Int32)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Space">
@@ -3034,6 +3118,7 @@ Dim aString As String = Replace(TestString, "o", "i")
           <paramref name="Number" /> &lt; 0.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Split">
@@ -3115,6 +3200,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         </remarks>
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Join" />
         <altmember cref="T:Microsoft.VisualBasic.CompareMethod" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <Member MemberName="StrComp">
@@ -3188,6 +3274,9 @@ Dim aString As String = Replace(TestString, "o", "i")
           <paramref name="Compare" /> value is not valid.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.InStr" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/index.md">Strings in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/introduction-to-strings.md">Introduction to Strings in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="StrConv">
@@ -3267,6 +3356,8 @@ Dim aString As String = Replace(TestString, "o", "i")
         <altmember cref="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)" />
         <altmember cref="T:System.String" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="StrDup">
@@ -3326,6 +3417,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <Member MemberName="StrDup">
@@ -3376,6 +3468,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <Member MemberName="StrDup">
@@ -3426,6 +3519,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.ArgumentNullException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <Member MemberName="StrReverse">
@@ -3466,6 +3560,7 @@ Dim aString As String = Replace(TestString, "o", "i")
  ]]></format>
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.Strings.InStrRev(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <Member MemberName="Trim">
@@ -3512,6 +3607,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <altmember cref="M:Microsoft.VisualBasic.Strings.Left(System.String,System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.Space(System.Int32)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="UCase">
@@ -3568,6 +3664,9 @@ Dim aString As String = Replace(TestString, "o", "i")
  ]]></format>
         </remarks>
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.LCase" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/index.md">Strings in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/introduction-to-strings.md">Introduction to Strings in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="UCase">
@@ -3615,6 +3714,9 @@ Dim aString As String = Replace(TestString, "o", "i")
  ]]></format>
         </remarks>
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.LCase" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">String Manipulation Summary</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/index.md">Strings in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/introduction-to-strings.md">Introduction to Strings in Visual Basic</related>
       </Docs>
     </Member>
   </Members>

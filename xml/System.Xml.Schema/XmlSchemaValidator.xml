@@ -1,4 +1,4 @@
-﻿<Type Name="XmlSchemaValidator" FullName="System.Xml.Schema.XmlSchemaValidator">
+<Type Name="XmlSchemaValidator" FullName="System.Xml.Schema.XmlSchemaValidator">
   <TypeSignature Language="C#" Value="public sealed class XmlSchemaValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlSchemaValidator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaValidator" />
@@ -62,6 +62,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
+    <related type="Article" href="http://msdn.microsoft.com/library/911d4460-dd91-4958-85b2-2ca3299f9ec6">XmlSchemaValidator Push-Based Validation</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

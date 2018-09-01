@@ -1,4 +1,4 @@
-﻿<Type Name="ServiceElementCollection" FullName="System.ServiceModel.Configuration.ServiceElementCollection">
+<Type Name="ServiceElementCollection" FullName="System.ServiceModel.Configuration.ServiceElementCollection">
   <TypeSignature Language="C#" Value="public sealed class ServiceElementCollection : System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection&lt;System.ServiceModel.Configuration.ServiceElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceElementCollection extends System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection`1&lt;class System.ServiceModel.Configuration.ServiceElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceElementCollection" />
@@ -25,6 +25,7 @@
   <Docs>
     <summary>Represents a collection of <see cref="T:System.ServiceModel.Configuration.ServiceElement" /> instances. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/13123dd6-c4a9-4a04-a984-df184b851788">&lt;service&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="SByte" FullName="System.SByte">
+<Type Name="SByte" FullName="System.SByte">
   <TypeSignature Language="C#" Value="public struct SByte : IComparable, IComparable&lt;sbyte&gt;, IConvertible, IEquatable&lt;sbyte&gt;, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit int8 extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;int8&gt;, class System.IConvertible, class System.IEquatable`1&lt;int8&gt;, class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.SByte" />
@@ -76,6 +76,7 @@
     <altCompliant cref="T:System.Int16" />
     <threadsafe>All members of this type are thread safe. Members that appear to modify instance state actually return a new instance initialized with the new value. As with any other type, reading and writing to a shared variable that contains an instance of this type must be protected by a lock to guarantee thread safety.</threadsafe>
     <altmember cref="T:System.Byte" />
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="CompareTo">
@@ -631,6 +632,8 @@
           <paramref name="s" /> does not consist of an optional sign followed by a sequence of digits (zero through nine).</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number less than <see cref="F:System.SByte.MinValue" /> or greater than <see cref="F:System.SByte.MaxValue" />.</exception>
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -762,6 +765,8 @@
  <paramref name="style" /> is not a combination of <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> and <see cref="F:System.Globalization.NumberStyles.HexNumber" /> values.</exception>
         <altmember cref="M:System.SByte.ToString" />
         <altmember cref="Overload:System.SByte.TryParse" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -856,6 +861,7 @@
           <paramref name="s" /> represents a number less than <see cref="F:System.SByte.MinValue" /> or greater than <see cref="F:System.SByte.MaxValue" />.</exception>
         <altmember cref="M:System.SByte.ToString" />
         <altmember cref="Overload:System.SByte.TryParse" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1880,6 +1886,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1960,6 +1969,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2034,6 +2046,10 @@
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is invalid.</exception>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md">How to: Pad a Number with Leading Zeros</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2121,6 +2137,11 @@
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is invalid.</exception>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md">How to: Pad a Number with Leading Zeros</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
+        <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
       </Docs>
     </Member>
     <Member MemberName="TryFormat">
@@ -2281,6 +2302,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -2452,6 +2474,7 @@
   
  <paramref name="style" /> is not a combination of <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> and <see cref="F:System.Globalization.NumberStyles.HexNumber" /> values.</exception>
         <altmember cref="M:System.SByte.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="CancellationTokenRegistration" FullName="System.Threading.CancellationTokenRegistration">
+<Type Name="CancellationTokenRegistration" FullName="System.Threading.CancellationTokenRegistration">
   <TypeSignature Language="C#" Value="public struct CancellationTokenRegistration : IDisposable, IEquatable&lt;System.Threading.CancellationTokenRegistration&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CancellationTokenRegistration extends System.ValueType implements class System.IDisposable, class System.IEquatable`1&lt;valuetype System.Threading.CancellationTokenRegistration&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Threading.CancellationTokenRegistration" />
@@ -51,6 +51,9 @@
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Threading.CancellationTokenRegistration" /> are thread-safe and may be used concurrently from multiple threads, with the exception of Dispose, which must only be used when all other operations on the <see cref="T:System.Threading.CancellationTokenRegistration" /> have completed.</threadsafe>
+    <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
+    <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/8838dd75-18ed-4b8b-b322-cd4531faac64">How to: Register Callbacks for Cancellation Requests</related>
   </Docs>
   <Members>
     <Member MemberName="Dispose">
@@ -102,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8838dd75-18ed-4b8b-b322-cd4531faac64">How to: Register Callbacks for Cancellation Requests</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Equals">
@@ -154,6 +158,9 @@
   
  Two <see cref="T:System.Threading.CancellationTokenRegistration" /> instances are equal if they both refer to the output of a single call to the same Register method of a <see cref="T:System.Threading.CancellationToken" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8838dd75-18ed-4b8b-b322-cd4531faac64">How to: Register Callbacks for Cancellation Requests</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -199,6 +206,9 @@
   
  Two <see cref="T:System.Threading.CancellationTokenRegistration" /> instances are equal if they both refer to the output of a single call to the same Register method of a <see cref="T:System.Threading.CancellationToken" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8838dd75-18ed-4b8b-b322-cd4531faac64">How to: Register Callbacks for Cancellation Requests</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -236,6 +246,9 @@
         <summary>Serves as a hash function for a <see cref="T:System.Threading.CancellationTokenRegistration" />.</summary>
         <returns>A hash code for the current <see cref="T:System.Threading.CancellationTokenRegistration" /> instance.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8838dd75-18ed-4b8b-b322-cd4531faac64">How to: Register Callbacks for Cancellation Requests</related>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -278,6 +291,9 @@
         <summary>Determines whether two <see cref="T:System.Threading.CancellationTokenRegistration" /> instances are equal.</summary>
         <returns>True if the instances are equal; otherwise, false.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8838dd75-18ed-4b8b-b322-cd4531faac64">How to: Register Callbacks for Cancellation Requests</related>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -320,6 +336,9 @@
         <summary>Determines whether two <see cref="T:System.Threading.CancellationTokenRegistration" /> instances are not equal.</summary>
         <returns>True if the instances are not equal; otherwise, false.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8838dd75-18ed-4b8b-b322-cd4531faac64">How to: Register Callbacks for Cancellation Requests</related>
       </Docs>
     </Member>
     <Member MemberName="Token">

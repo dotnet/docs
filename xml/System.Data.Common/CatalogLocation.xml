@@ -1,4 +1,4 @@
-﻿<Type Name="CatalogLocation" FullName="System.Data.Common.CatalogLocation">
+<Type Name="CatalogLocation" FullName="System.Data.Common.CatalogLocation">
   <TypeSignature Language="C#" Value="public enum CatalogLocation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CatalogLocation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CatalogLocation" />
@@ -26,6 +26,7 @@
   <Docs>
     <summary>Indicates the position of the catalog name in a qualified table name in a text command.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName="End">
@@ -65,6 +66,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -104,6 +106,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

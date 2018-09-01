@@ -1,4 +1,4 @@
-﻿<Type Name="MatrixAnimationUsingKeyFrames" FullName="System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames">
+<Type Name="MatrixAnimationUsingKeyFrames" FullName="System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames">
   <TypeSignature Language="C#" Value="public class MatrixAnimationUsingKeyFrames : System.Windows.Media.Animation.MatrixAnimationBase, System.Windows.Markup.IAddChild, System.Windows.Media.Animation.IKeyFrameAnimation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MatrixAnimationUsingKeyFrames extends System.Windows.Media.Animation.MatrixAnimationBase implements class System.Windows.Markup.IAddChild, class System.Windows.Media.Animation.IKeyFrameAnimation" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" />
@@ -36,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160012">KeyFrame Animation Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

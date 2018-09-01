@@ -1,4 +1,4 @@
-﻿<Type Name="HttpContext" FullName="System.Web.HttpContext">
+<Type Name="HttpContext" FullName="System.Web.HttpContext">
   <TypeSignature Language="C#" Value="public sealed class HttpContext : IServiceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpContext extends System.Object implements class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpContext" />
@@ -44,6 +44,7 @@
     </remarks>
     <altmember cref="T:System.Web.IHttpModule" />
     <altmember cref="T:System.Web.IHttpHandler" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=196730">A Matter of Context</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -546,6 +547,7 @@ End Sub
         </remarks>
         <altmember cref="P:System.Web.HttpContext.Handler" />
         <altmember cref="P:System.Web.HttpContext.PreviousHandler" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b">HTTP Handlers and HTTP Modules Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentNotification">
@@ -738,6 +740,8 @@ End Sub
       </AssemblyInfo>
       <Docs>
         <summary>Gets an application-level resource.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/345e86a7-3851-4cdc-8309-a77bdb0d0a97">ASP.NET Web Site Layout</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetGlobalResourceObject">
@@ -787,6 +791,9 @@ End Sub
   
  The main assembly does not contain the resources for the neutral culture, and these resources are required because the appropriate satellite assembly is missing.</exception>
         <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/345e86a7-3851-4cdc-8309-a77bdb0d0a97">ASP.NET Web Site Layout</related>
+        <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
       </Docs>
     </Member>
     <Member MemberName="GetGlobalResourceObject">
@@ -833,6 +840,8 @@ End Sub
   
  The main assembly does not contain the resources for the neutral culture, and these resources are required because the appropriate satellite assembly is missing.</exception>
         <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
+        <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetLocalResourceObject">
@@ -843,6 +852,9 @@ End Sub
       <Docs>
         <summary>Gets a page-level resource.</summary>
         <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/345e86a7-3851-4cdc-8309-a77bdb0d0a97">ASP.NET Web Site Layout</related>
+        <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetLocalResourceObject">
@@ -887,6 +899,10 @@ End Sub
         <exception cref="T:System.ArgumentException">The specified <paramref name="virtualPath" /> parameter is not in the current application's root directory.</exception>
         <exception cref="T:System.InvalidOperationException">The resource class for the page was not found.</exception>
         <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/345e86a7-3851-4cdc-8309-a77bdb0d0a97">ASP.NET Web Site Layout</related>
+        <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7a06d512-6fc3-40ca-9cb6-7f41d1a9fa28">How to: Retrieve Resource Values Programmatically</related>
       </Docs>
     </Member>
     <Member MemberName="GetLocalResourceObject">
@@ -928,6 +944,10 @@ End Sub
         <exception cref="T:System.ArgumentException">The specified <paramref name="virtualPath" /> parameter is not in the current application's root directory.</exception>
         <exception cref="T:System.InvalidOperationException">The resource class for the page was not found.</exception>
         <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/345e86a7-3851-4cdc-8309-a77bdb0d0a97">ASP.NET Web Site Layout</related>
+        <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7a06d512-6fc3-40ca-9cb6-7f41d1a9fa28">How to: Retrieve Resource Values Programmatically</related>
       </Docs>
     </Member>
     <Member MemberName="GetSection">
@@ -994,6 +1014,7 @@ End Sub
         </remarks>
         <altmember cref="P:System.Web.HttpContext.CurrentHandler" />
         <altmember cref="P:System.Web.HttpContext.PreviousHandler" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b">HTTP Handlers and HTTP Modules Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsCustomErrorEnabled">
@@ -1163,6 +1184,7 @@ End Sub
         <summary>Gets a key/value collection that can be used to organize and share data between an <see cref="T:System.Web.IHttpModule" /> interface and an <see cref="T:System.Web.IHttpHandler" /> interface during an HTTP request.</summary>
         <value>An <see cref="T:System.Collections.IDictionary" /> key/value collection that provides access to an individual value in the collection by a specified key.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms972109.aspx">A Matter of Context</related>
       </Docs>
     </Member>
     <Member MemberName="PageInstrumentation">
@@ -1215,6 +1237,7 @@ End Sub
         </remarks>
         <altmember cref="P:System.Web.HttpContext.Handler" />
         <altmember cref="P:System.Web.HttpContext.CurrentHandler" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b">HTTP Handlers and HTTP Modules Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Profile">
@@ -1417,6 +1440,8 @@ End Sub
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Web.HttpException">The <paramref name="path" /> parameter is not in the current application's root directory.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName="RewritePath">
@@ -1463,6 +1488,8 @@ End Sub
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Web.HttpException">The <paramref name="path" /> parameter is not in the current application's root directory.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName="RewritePath">
@@ -1513,6 +1540,8 @@ End Sub
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is not in the current application's root directory.</exception>
         <exception cref="T:System.Web.HttpException">The <paramref name="filePath" /> parameter is not in the current application's root directory.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName="RewritePath">
@@ -1565,6 +1594,8 @@ End Sub
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is not in the current application's root directory.</exception>
         <exception cref="T:System.Web.HttpException">The <paramref name="filePath" /> parameter is not in the current application's root directory.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName="Server">
@@ -1924,6 +1955,10 @@ firstName = DirectCast(context.Session("FirstName"), String)
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://www.asp.net/mvc/tutorials/security/using-oauth-providers-with-mvc">Using OAuth Providers with MVC 4</related>
+        <related type="ExternalDocumentation" href="http://www.asp.net/web-forms/tutorials/aspnet-45/getting-started-with-aspnet-45-web-forms/checkout-and-payment-with-paypal">Getting Started with ASP.NET 4.5 Web Forms - Checkout and Payment with PayPal</related>
+        <related type="ExternalDocumentation" href="http://www.asp.net/web-api/overview/creating-web-apis/using-web-api-with-entity-framework/using-web-api-with-entity-framework,-part-6">Using Web API with Entity Framework - Part 6</related>
+        <related type="ExternalDocumentation" href="http://www.asp.net/mvc/tutorials/older-versions/nerddinner/secure-applications-using-authentication-and-authorization">Nerd Dinner - Secure Applications Using Authentication and Authorization</related>
       </Docs>
     </Member>
     <Member MemberName="WebSocketNegotiatedProtocol">

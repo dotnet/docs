@@ -1,4 +1,4 @@
-﻿<Type Name="ConnectionManagementElement" FullName="System.Net.Configuration.ConnectionManagementElement">
+<Type Name="ConnectionManagementElement" FullName="System.Net.Configuration.ConnectionManagementElement">
   <TypeSignature Language="C#" Value="public sealed class ConnectionManagementElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConnectionManagementElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.ConnectionManagementElement" />
@@ -30,6 +30,7 @@
     </remarks>
     <altmember cref="T:System.Net.ServicePointManager" />
     <altmember cref="T:System.Net.ServicePoint" />
+    <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -59,6 +60,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.ServicePointManager" />
         <altmember cref="T:System.Net.ServicePoint" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -92,6 +94,7 @@
         </remarks>
         <altmember cref="T:System.Net.ServicePointManager" />
         <altmember cref="T:System.Net.ServicePoint" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="Address">

@@ -1,4 +1,4 @@
-﻿<Type Name="RegistryProxy" FullName="Microsoft.VisualBasic.MyServices.RegistryProxy">
+<Type Name="RegistryProxy" FullName="Microsoft.VisualBasic.MyServices.RegistryProxy">
   <TypeSignature Language="C#" Value="public class RegistryProxy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RegistryProxy extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MyServices.RegistryProxy" />
@@ -48,6 +48,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:Microsoft.Win32.Registry" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+    <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName="ClassesRoot">
@@ -115,6 +117,9 @@
         </remarks>
         <altmember cref="T:Microsoft.Win32.RegistryKey" />
         <altmember cref="F:Microsoft.Win32.Registry.ClassesRoot" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentConfig">
@@ -180,6 +185,9 @@
         </remarks>
         <altmember cref="T:Microsoft.Win32.RegistryKey" />
         <altmember cref="F:Microsoft.Win32.Registry.CurrentConfig" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentUser">
@@ -245,6 +253,9 @@
         </remarks>
         <altmember cref="T:Microsoft.Win32.RegistryKey" />
         <altmember cref="F:Microsoft.Win32.Registry.CurrentUser" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <Member MemberName="DynData">
@@ -310,6 +321,9 @@
         </remarks>
         <altmember cref="T:Microsoft.Win32.RegistryKey" />
         <altmember cref="F:Microsoft.Win32.Registry.DynData" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -371,6 +385,9 @@
           <paramref name="keyName" /> does not begin with a valid registry root.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">to read from the registry. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Read" /></permission>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">to read a registry key of type REG_EXPAND_SZ. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <Member MemberName="LocalMachine">
@@ -436,6 +453,9 @@
         </remarks>
         <altmember cref="T:Microsoft.Win32.RegistryKey" />
         <altmember cref="F:Microsoft.Win32.Registry.LocalMachine" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <Member MemberName="PerformanceData">
@@ -505,6 +525,9 @@
         </remarks>
         <altmember cref="T:Microsoft.Win32.RegistryKey" />
         <altmember cref="F:Microsoft.Win32.Registry.PerformanceData" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetValue">
@@ -579,6 +602,9 @@
         <permission cref="T:System.Security.Permissions.RegistryPermission">to modify the specified registry key if it exists, or to create the registry key if it does not already exist. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" />, <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Create" /></permission>
         <altmember cref="T:Microsoft.Win32.RegistryValueKind" />
         <altmember cref="Overload:Microsoft.Win32.Registry.SetValue" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -651,6 +677,9 @@
         <permission cref="T:System.Security.Permissions.RegistryPermission">to modify the specified registry key if it exists, or to create the registry key if it does not already exist. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" />, <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Create" /></permission>
         <altmember cref="T:Microsoft.Win32.RegistryValueKind" />
         <altmember cref="Overload:Microsoft.Win32.Registry.SetValue" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <Member MemberName="Users">
@@ -716,6 +745,9 @@
         </remarks>
         <altmember cref="T:Microsoft.Win32.RegistryKey" />
         <altmember cref="F:Microsoft.Win32.Registry.Users" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
   </Members>

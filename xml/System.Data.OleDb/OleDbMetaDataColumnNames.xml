@@ -1,4 +1,4 @@
-﻿<Type Name="OleDbMetaDataColumnNames" FullName="System.Data.OleDb.OleDbMetaDataColumnNames">
+<Type Name="OleDbMetaDataColumnNames" FullName="System.Data.OleDb.OleDbMetaDataColumnNames">
   <TypeSignature Language="C#" Value="public static class OleDbMetaDataColumnNames" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit OleDbMetaDataColumnNames extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbMetaDataColumnNames" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Provides static values that are used for the column names in the <see cref="T:System.Data.OleDb.OleDbMetaDataCollectionNames" /> objects contained in the <see cref="T:System.Data.DataTable" />. The <see cref="T:System.Data.DataTable" /> is created by the **GetSchema** method.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
   </Docs>
   <Members>
     <Member MemberName="BooleanFalseLiteral">
@@ -38,6 +39,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **BooleanFalseLiteral** column.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="BooleanTrueLiteral">
@@ -59,6 +61,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **BooleanTrueLiteral** column.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="DateTimeDigits">
@@ -80,6 +83,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **DateTimeDigits** column.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="NativeDataType">
@@ -101,6 +105,7 @@
       <Docs>
         <summary>Used by the **GetSchema** method to create the **NativeDataType** column.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
   </Members>

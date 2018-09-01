@@ -1,4 +1,4 @@
-﻿<Type Name="SqlString" FullName="System.Data.SqlTypes.SqlString">
+<Type Name="SqlString" FullName="System.Data.SqlTypes.SqlString">
   <TypeSignature Language="C#" Value="public struct SqlString : IComparable, System.Data.SqlTypes.INullable, System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit SqlString extends System.ValueType implements class System.Data.SqlTypes.INullable, class System.IComparable, class System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlString" />
@@ -70,6 +70,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
  ]]></format>
     </remarks>
     <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
+    <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -79,6 +80,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlString" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -116,6 +118,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <param name="data">The string to store.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlString" /> structure using the specified string.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -155,6 +158,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <param name="lcid">Specifies the geographical locale and language for the new <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlString" /> structure using the specified string and locale id values.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -196,6 +200,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <param name="data">The data array to store.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlString" /> structure using the specified locale id, compare options, and data.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -237,6 +242,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <param name="compareOptions">Specifies the compare options for the new <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlString" /> structure using the specified string, locale id, and compare option values.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -281,6 +287,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
           <see langword="true" /> if Unicode encoded. Otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlString" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -326,6 +333,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <param name="count">The number of characters from index to copy.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlString" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -374,6 +382,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
           <see langword="true" /> if Unicode encoded. Otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlString" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -423,6 +432,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="BinarySort">
@@ -466,6 +476,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="BinarySort2">
@@ -501,6 +512,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <Docs>
         <summary>Specifies that sorts should be based on a character's numeric value instead of its alphabetical value.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -539,6 +551,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Creates a copy of this <see cref="T:System.Data.SqlTypes.SqlString" /> object.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlString" /> object in which all property values are the same as the original.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="CompareInfo">
@@ -576,6 +589,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Gets the <see cref="T:System.Globalization.CompareInfo" /> object that defines how string comparisons should be performed for this <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</summary>
         <value>A <see langword="CompareInfo" /> object that defines string comparison for this <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="CompareOptionsFromSqlCompareOptions">
@@ -616,6 +630,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Gets the <see cref="T:System.Globalization.CompareOptions" /> enumeration equilvalent of the specified <see cref="T:System.Data.SqlTypes.SqlCompareOptions" /> value.</summary>
         <returns>A <see langword="CompareOptions" /> value that corresponds to the <see langword="SqlCompareOptions" /> for this <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CompareTo">
@@ -625,6 +640,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       </AssemblyInfo>
       <Docs>
         <summary>Compares this instance to a specified object and returns an indication of their relative values.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CompareTo">
@@ -687,6 +703,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  </description></item></list></returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -753,6 +770,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  </description></item></list></returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Concat">
@@ -796,6 +814,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Concatenates the two specified <see cref="T:System.Data.SqlTypes.SqlString" /> structures.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlString" /> that contains the newly concatenated value representing the contents of the two <see cref="T:System.Data.SqlTypes.SqlString" /> parameters.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="CultureInfo">
@@ -833,6 +852,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Gets the <see cref="T:System.Globalization.CultureInfo" /> structure that represents information about the culture of this <see cref="T:System.Data.SqlTypes.SqlString" /> object.</summary>
         <value>A <see cref="T:System.Globalization.CultureInfo" /> structure that describes information about the culture of this SqlString structure including the names of the culture, the writing system, and the calendar used, and also access to culture-specific objects that provide methods for common operations, such as formatting dates and sorting strings.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Equals">
@@ -842,6 +862,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       </AssemblyInfo>
       <Docs>
         <summary>Performs a logical comparison of two structures to determine whether they are equal.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Equals">
@@ -883,6 +904,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Compares the supplied object parameter to the <see cref="P:System.Data.SqlTypes.SqlString.Value" /> property of the <see cref="T:System.Data.SqlTypes.SqlString" /> object.</summary>
         <returns>Equals will return <see langword="true" /> if the object is an instance of <see cref="T:System.Data.SqlTypes.SqlString" /> and the two are equal; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -927,6 +949,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <returns>
           <see langword="true" /> if the two values are equal. Otherwise, <see langword="false" />. If either instance is null, then the <see langword="SqlString" /> will be null.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -965,6 +988,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Gets the hash code for this instance.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="GetNonUnicodeBytes">
@@ -1003,6 +1027,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Gets an array of bytes, that contains the contents of the <see cref="T:System.Data.SqlTypes.SqlString" /> in ANSI format.</summary>
         <returns>An byte array, that contains the contents of the <see cref="T:System.Data.SqlTypes.SqlString" /> in ANSI format.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="GetUnicodeBytes">
@@ -1041,6 +1066,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Gets an array of bytes, that contains the contents of the <see cref="T:System.Data.SqlTypes.SqlString" /> in Unicode format.</summary>
         <returns>An byte array, that contains the contents of the <see cref="T:System.Data.SqlTypes.SqlString" /> in Unicode format.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="GetXsdType">
@@ -1120,6 +1146,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlString" /> operands to determine whether the first is greater than the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlString" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="GreaterThanOrEqual">
@@ -1163,6 +1190,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlString" /> operands to determine whether the first is greater than or equal to the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlString" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="IgnoreCase">
@@ -1206,6 +1234,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="IgnoreKanaType">
@@ -1251,6 +1280,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="IgnoreNonSpace">
@@ -1296,6 +1326,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="IgnoreWidth">
@@ -1341,6 +1372,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="IsNull">
@@ -1389,6 +1421,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f18b288f-b265-4bbe-957f-c6833c0645ef">Handling Null Values (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="LCID">
@@ -1426,6 +1460,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Specifies the geographical locale and language for the <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</summary>
         <value>The locale id for the string stored in the <see cref="P:System.Data.SqlTypes.SqlString.Value" /> property.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="LessThan">
@@ -1469,6 +1504,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlString" /> operands to determine whether the first is less than the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlString" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="LessThanOrEqual">
@@ -1512,6 +1548,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlString" /> operands to determine whether the first is less than or equal to the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlString" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="NotEquals">
@@ -1555,6 +1592,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlString" /> operands to determine whether they are not equal.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlString" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Null">
@@ -1598,6 +1636,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -1643,6 +1682,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.Concat%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1688,6 +1728,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.Equals%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="op_Explicit">
@@ -1697,6 +1738,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       </AssemblyInfo>
       <Docs>
         <summary>Converts to and from a <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="op_Explicit">
@@ -1740,6 +1782,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1783,6 +1826,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1826,6 +1870,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1869,6 +1914,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1912,6 +1958,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDouble.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1955,6 +2002,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlGuid.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1998,6 +2046,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2041,6 +2090,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt32.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2084,6 +2134,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt64.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2127,6 +2178,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlMoney.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2170,6 +2222,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlSingle.ToSqlString?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2211,6 +2264,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts a <see cref="T:System.Data.SqlTypes.SqlString" /> to a <see cref="T:System.String" /></summary>
         <returns>A <see langword="String" />, whose contents are the same as the <see cref="P:System.Data.SqlTypes.SqlString.Value" /> property of the <see cref="T:System.Data.SqlTypes.SqlString" /> parameter.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -2256,6 +2310,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.GreaterThan%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -2301,6 +2356,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.GreaterThanOrEqual%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2342,6 +2398,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts the <see cref="T:System.String" /> parameter to a <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlString" /> that contains the value of the specified <see langword="String" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -2387,6 +2444,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.NotEquals%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -2432,6 +2490,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.LessThan%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -2477,6 +2536,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.LessThanOrEqual%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="SqlCompareOptions">
@@ -2514,6 +2574,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>A combination of one or more of the <see cref="T:System.Data.SqlTypes.SqlCompareOptions" /> enumeration values that represent the way in which this <see cref="T:System.Data.SqlTypes.SqlString" /> should be compared to other <see cref="T:System.Data.SqlTypes.SqlString" /> structures.</summary>
         <value>A value specifying how this <see cref="T:System.Data.SqlTypes.SqlString" /> should be compared to other <see cref="T:System.Data.SqlTypes.SqlString" /> structures.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.Serialization.IXmlSerializable.GetSchema">
@@ -2666,6 +2727,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <returns>
           <see langword="true" /> if the <see cref="P:System.Data.SqlTypes.SqlString.Value" /> is non-zero; <see langword="false" /> if zero; otherwise Null.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlByte">
@@ -2704,6 +2766,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlByte" />.</summary>
         <returns>A new <see langword="SqlByte" /> structure whose <see cref="P:System.Data.SqlTypes.SqlByte.Value" /> equals the number represented by this <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlDateTime">
@@ -2742,6 +2805,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlDateTime" />.</summary>
         <returns>A new <see langword="SqlDateTime" /> structure that contains the date value represented by this <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlDecimal">
@@ -2780,6 +2844,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlDecimal" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> that contains the value of this <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlDouble">
@@ -2818,6 +2883,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlDouble" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDouble" /> that is equal to the numeric value of this <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlGuid">
@@ -2856,6 +2922,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlGuid" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlGuid" /> structure whose <see cref="P:System.Data.SqlTypes.SqlGuid.Value" /> is the <see langword="Guid" /> represented by this <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlInt16">
@@ -2894,6 +2961,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlInt16" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlInt16" /> that is equal to the numeric value of this <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlInt32">
@@ -2932,6 +3000,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlInt32" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlInt32" /> that is equal to the numeric value of this <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlInt64">
@@ -2970,6 +3039,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlInt64" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlInt64" /> that is equal to the numeric value of this <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlMoney">
@@ -3008,6 +3078,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlMoney" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlMoney" /> that is equal to the numeric value of this <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlSingle">
@@ -3046,6 +3117,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlSingle" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlSingle" /> that is equal to the numeric value of this <see cref="T:System.Data.SqlTypes.SqlString" />..</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3084,6 +3156,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts a <see cref="T:System.Data.SqlTypes.SqlString" /> object to a <see cref="T:System.String" />.</summary>
         <returns>A <see cref="T:System.String" /> with the same value as this <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -3122,6 +3195,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <value>The string that is stored.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Data.SqlTypes.SqlNullValueException">The value of the string is <see cref="F:System.Data.SqlTypes.SqlString.Null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
     </Member>
   </Members>

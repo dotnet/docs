@@ -1,4 +1,4 @@
-﻿<Type Name="StringKeyFrame" FullName="System.Windows.Media.Animation.StringKeyFrame">
+<Type Name="StringKeyFrame" FullName="System.Windows.Media.Animation.StringKeyFrame">
   <TypeSignature Language="C#" Value="public abstract class StringKeyFrame : System.Windows.Freezable, System.Windows.Media.Animation.IKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit StringKeyFrame extends System.Windows.Freezable implements class System.Windows.Media.Animation.IKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.StringKeyFrame" />
@@ -23,6 +23,7 @@
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Windows.Media.Animation.StringKeyFrameCollection" />
     <altmember cref="T:System.Windows.Media.Animation.StringAnimationUsingKeyFrames" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160012">KeyFrame Animation Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -205,6 +206,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160012">KeyFrame Animation Sample</related>
       </Docs>
     </Member>
     <Member MemberName="KeyTimeProperty">

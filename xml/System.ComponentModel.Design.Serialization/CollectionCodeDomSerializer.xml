@@ -1,4 +1,4 @@
-﻿<Type Name="CollectionCodeDomSerializer" FullName="System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer">
+<Type Name="CollectionCodeDomSerializer" FullName="System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer">
   <TypeSignature Language="C#" Value="public class CollectionCodeDomSerializer : System.ComponentModel.Design.Serialization.CodeDomSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CollectionCodeDomSerializer extends System.ComponentModel.Design.Serialization.CodeDomSerializer" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer" />
@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb">Dynamic Source Code Generation and Compilation</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,6 +85,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="method" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Reflection.MethodInfo" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb">Dynamic Source Code Generation and Compilation</related>
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -132,6 +134,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="manager" /> or <paramref name="value" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb">Dynamic Source Code Generation and Compilation</related>
       </Docs>
     </Member>
     <Member MemberName="SerializeCollection">
@@ -176,6 +179,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="manager" />, <paramref name="targetType" />, <paramref name="originalCollection" />, or <paramref name="valuesToSerialize" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb">Dynamic Source Code Generation and Compilation</related>
       </Docs>
     </Member>
   </Members>

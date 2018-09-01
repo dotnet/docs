@@ -1,4 +1,4 @@
-﻿<Type Name="StrongNameIdentityPermissionAttribute" FullName="System.Security.Permissions.StrongNameIdentityPermissionAttribute">
+<Type Name="StrongNameIdentityPermissionAttribute" FullName="System.Security.Permissions.StrongNameIdentityPermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class StrongNameIdentityPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit StrongNameIdentityPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" />
@@ -58,6 +58,8 @@
     <altmember cref="T:System.Security.Permissions.StrongNamePublicKeyBlob" />
     <altmember cref="T:System.Security.Policy.StrongName" />
     <altmember cref="T:System.Security.Policy.StrongNameMembershipCondition" />
+    <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd">Friend Assemblies</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

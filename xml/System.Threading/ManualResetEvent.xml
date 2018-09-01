@@ -1,4 +1,4 @@
-﻿<Type Name="ManualResetEvent" FullName="System.Threading.ManualResetEvent">
+<Type Name="ManualResetEvent" FullName="System.Threading.ManualResetEvent">
   <TypeSignature Language="C#" Value="public sealed class ManualResetEvent : System.Threading.EventWaitHandle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ManualResetEvent extends System.Threading.EventWaitHandle" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ManualResetEvent" />
@@ -73,6 +73,8 @@
     </remarks>
     <threadsafe>This class is thread safe.</threadsafe>
     <altmember cref="T:System.Threading.WaitHandle" />
+    <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+    <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">Manual Reset Event</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -122,6 +124,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.WaitHandle" />
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">

@@ -1,4 +1,4 @@
-﻿<Type Name="Grid" FullName="System.Windows.Controls.Grid">
+<Type Name="Grid" FullName="System.Windows.Controls.Grid">
   <TypeSignature Language="C#" Value="public class Grid : System.Windows.Controls.Panel, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Grid extends System.Windows.Controls.Panel implements class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Grid" />
@@ -55,6 +55,7 @@
     </remarks>
     <altmember cref="T:System.Windows.Documents.Table" />
     <altmember cref="T:System.Windows.GridUnitType" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160053">WPF Controls Gallery Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

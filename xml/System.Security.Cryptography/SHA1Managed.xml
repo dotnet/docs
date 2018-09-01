@@ -1,4 +1,4 @@
-﻿<Type Name="SHA1Managed" FullName="System.Security.Cryptography.SHA1Managed">
+<Type Name="SHA1Managed" FullName="System.Security.Cryptography.SHA1Managed">
   <TypeSignature Language="C#" Value="public class SHA1Managed : System.Security.Cryptography.SHA1" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SHA1Managed extends System.Security.Cryptography.SHA1" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.SHA1Managed" />
@@ -56,6 +56,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,6 +87,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.SHA1Managed" /> class.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">This class is not compliant with the FIPS algorithm.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -212,6 +214,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Security.Cryptography.HashAlgorithm" />
         <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="HashFinal">
@@ -246,6 +249,7 @@
         <summary>Returns the computed <see cref="T:System.Security.Cryptography.SHA1" /> hash value after all data has been written to the object.</summary>
         <returns>The computed hash code.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -279,6 +283,7 @@
       <Docs>
         <summary>Initializes an instance of <see cref="T:System.Security.Cryptography.SHA1Managed" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="TryHashFinal">

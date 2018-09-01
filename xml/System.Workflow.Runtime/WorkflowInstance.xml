@@ -1,4 +1,4 @@
-﻿<Type Name="WorkflowInstance" FullName="System.Workflow.Runtime.WorkflowInstance">
+<Type Name="WorkflowInstance" FullName="System.Workflow.Runtime.WorkflowInstance">
   <TypeSignature Language="C#" Value="public sealed class WorkflowInstance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowInstance extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowInstance" />
@@ -47,6 +47,7 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms742169(v=vs.90)">Canceling a Workflow</related>
   </Docs>
   <Members>
     <Member MemberName="Abort">
@@ -191,6 +192,7 @@
  -or-  
   
  The <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> specified by <paramref name="queueName" /> is not enabled.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms742169(v=vs.90)">Canceling a Workflow</related>
       </Docs>
     </Member>
     <Member MemberName="EnqueueItemOnIdle">
@@ -433,6 +435,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The workflow runtime engine is not running.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms742169(v=vs.90)">Canceling a Workflow</related>
       </Docs>
     </Member>
     <Member MemberName="InstanceId">
@@ -470,13 +473,14 @@
   
  The second snippet uses the <xref:System.Workflow.Runtime.WorkflowInstance.InstanceId%2A> property as the first object in an `OrderEventArgs` constructor call when the `CallBackForApproval` method is called.  
   
- This code example is part of the Listen SDK Sample from the OrderServiceImple.cs file. For more information, see [Listen Sample](http://msdn.microsoft.com/library/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+ This code example is part of the Listen SDK Sample from the OrderServiceImple.cs file. For more information, see [Listen Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741698(v=vs.90)).  
   
  [!code-csharp[WF_Samples#211](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#211)]
  [!code-vb[WF_Samples#211](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#211)]  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741698(v=vs.90)">Listen Sample</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -627,6 +631,7 @@
  -or-  
   
  The workflow instance has already been started.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms742169(v=vs.90)">Canceling a Workflow</related>
       </Docs>
     </Member>
     <Member MemberName="Suspend">

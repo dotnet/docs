@@ -1,4 +1,4 @@
-﻿<Type Name="DBDataPermissionAttribute" FullName="System.Data.Common.DBDataPermissionAttribute">
+<Type Name="DBDataPermissionAttribute" FullName="System.Data.Common.DBDataPermissionAttribute">
   <TypeSignature Language="C#" Value="public abstract class DBDataPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit DBDataPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DBDataPermissionAttribute" />
@@ -34,6 +34,7 @@
   <Docs>
     <summary>Associates a security action with a custom security attribute.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +63,7 @@
         <param name="action">One of the security action values representing an action that can be performed by declarative security.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DBDataPermissionAttribute" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AllowBlankPassword">
@@ -91,6 +93,7 @@
         <value>
           <see langword="true" /> if a blank password is allowed; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectionString">
@@ -126,6 +129,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="KeyRestrictionBehavior">
@@ -154,6 +158,7 @@
         <summary>Identifies whether the list of connection string parameters identified by the <see cref="P:System.Data.Common.DBDataPermissionAttribute.KeyRestrictions" /> property are the only connection string parameters allowed.</summary>
         <value>One of the <see cref="T:System.Data.KeyRestrictionBehavior" /> values.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="KeyRestrictions">
@@ -193,6 +198,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeConnectionString">
@@ -230,6 +236,7 @@
         <returns>
           <see langword="true" /> if the attribute should serialize the connection string; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeKeyRestrictions">
@@ -267,6 +274,7 @@
         <returns>
           <see langword="true" /> if the attribute should serialize the set of key restrictions; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

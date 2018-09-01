@@ -1,4 +1,4 @@
-﻿<Type Name="SoapHeaderHandling" FullName="System.Web.Services.Protocols.SoapHeaderHandling">
+<Type Name="SoapHeaderHandling" FullName="System.Web.Services.Protocols.SoapHeaderHandling">
   <TypeSignature Language="C#" Value="public sealed class SoapHeaderHandling" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapHeaderHandling extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapHeaderHandling" />
@@ -61,6 +61,7 @@
         <summary>Checks to ensure that the SOAP headers that must be understood have been understood; if not, this method throws an exception.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Web.Services.Protocols.SoapHeaderException">A SOAP header that must be understood was not understood.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/y4t36w86(v=vs.100)">How to: Handle SOAP Headers Required by an XML Web Service Client</related>
       </Docs>
     </Member>
     <Member MemberName="GetHeaderMembers">
@@ -94,6 +95,7 @@
         <param name="client">This parameter is currently not used.</param>
         <summary>Gets the SOAP header content for the specified SOAP message.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dz7ks0ee(v=vs.100)">How to: Change a SOAP Header's Recipients</related>
       </Docs>
     </Member>
     <Member MemberName="ReadHeaders">
@@ -134,6 +136,7 @@
         <summary>Returns a <see cref="T:System.String" /> that contains the SOAP header content of the SOAP message.</summary>
         <returns>A <see cref="T:System.String" /> that contains the SOAP header content of the SOAP message.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dz7ks0ee(v=vs.100)">How to: Change a SOAP Header's Recipients</related>
       </Docs>
     </Member>
     <Member MemberName="SetHeaderMembers">
@@ -167,6 +170,7 @@
         <param name="client">This parameter is currently not used.</param>
         <summary>Sets the SOAP header content for the specified SOAP message.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dz7ks0ee(v=vs.100)">How to: Change a SOAP Header's Recipients</related>
       </Docs>
     </Member>
     <Member MemberName="WriteHeaders">
@@ -208,6 +212,7 @@
         <param name="envelopeNS">A <see cref="T:System.String" /> that contains the namespace for the SOAP message envelope.</param>
         <summary>Writes the specified SOAP header content to the SOAP message.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dz7ks0ee(v=vs.100)">How to: Change a SOAP Header's Recipients</related>
       </Docs>
     </Member>
     <Member MemberName="WriteUnknownHeaders">

@@ -1,4 +1,4 @@
-﻿<Type Name="InternalTypeHelper" FullName="System.Windows.Markup.InternalTypeHelper">
+<Type Name="InternalTypeHelper" FullName="System.Windows.Markup.InternalTypeHelper">
   <TypeSignature Language="C#" Value="public abstract class InternalTypeHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit InternalTypeHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.InternalTypeHelper" />
@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/544296d4-f38e-4498-af49-c9f4dad28964">XAML Security Considerations</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="AutoResetEvent" FullName="System.Threading.AutoResetEvent">
+<Type Name="AutoResetEvent" FullName="System.Threading.AutoResetEvent">
   <TypeSignature Language="C#" Value="public sealed class AutoResetEvent : System.Threading.EventWaitHandle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AutoResetEvent extends System.Threading.EventWaitHandle" />
   <TypeSignature Language="DocId" Value="T:System.Threading.AutoResetEvent" />
@@ -79,6 +79,8 @@
     </remarks>
     <threadsafe>This class is thread safe.</threadsafe>
     <altmember cref="T:System.Threading.WaitHandle" />
+    <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/6d39c48d-6b37-4a9b-8631-f2924cfd9c18">AutoResetEvent</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -138,6 +140,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.WaitHandle" />
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d39c48d-6b37-4a9b-8631-f2924cfd9c18">AutoResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">

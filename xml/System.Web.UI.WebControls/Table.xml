@@ -1,4 +1,4 @@
-﻿<Type Name="Table" FullName="System.Web.UI.WebControls.Table">
+<Type Name="Table" FullName="System.Web.UI.WebControls.Table">
   <TypeSignature Language="C#" Value="public class Table : System.Web.UI.WebControls.WebControl, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Table extends System.Web.UI.WebControls.WebControl implements class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Table" />
@@ -552,6 +552,8 @@
     <altmember cref="T:System.Web.UI.WebControls.TableRowCollection" />
     <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
     <altmember cref="T:System.Web.UI.WebControls.DataList" />
+    <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -578,6 +580,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -621,6 +624,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="BackImageUrl">
@@ -674,6 +678,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -717,6 +722,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Table.CaptionAlign" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CaptionAlign">
@@ -766,6 +772,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.TableCaptionAlign" /> enumeration values.</exception>
         <altmember cref="P:System.Web.UI.WebControls.Table.Caption" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -809,6 +816,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Table.CellSpacing" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -851,6 +859,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Table.CellPadding" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -896,6 +905,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.TableRow" />
         <altmember cref="T:System.Web.UI.ControlCollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -937,6 +947,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GridLines">
@@ -994,6 +1005,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.GridLines" />
+        <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Server Controls and Browser Capabilities</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -1048,6 +1061,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -1083,6 +1097,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RenderBeginTag">
@@ -1122,6 +1137,7 @@
         <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
         <altmember cref="M:System.Web.UI.WebControls.Table.RenderContents(System.Web.UI.HtmlTextWriter)" />
         <altmember cref="P:System.Web.UI.WebControls.WebControl.TagKey" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -1168,6 +1184,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The table sections are not in order.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Rows">
@@ -1222,6 +1239,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.TableRow" />
         <altmember cref="T:System.Web.UI.WebControls.TableRowCollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -1254,6 +1272,7 @@
         <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
         <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
         <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -1298,6 +1317,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for raising the event for a <see cref="T:System.Web.UI.WebControls.Table" /> object, override the <see cref="M:System.Web.UI.WebControls.Table.RaisePostBackEvent(System.String)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.Table.RaisePostBackEvent(System.String)" /> method to raise the event when posted data has changed for the control.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
   </Members>

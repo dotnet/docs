@@ -1,4 +1,4 @@
-﻿<Type Name="PrintDialog" FullName="System.Windows.Forms.PrintDialog">
+<Type Name="PrintDialog" FullName="System.Windows.Forms.PrintDialog">
   <TypeSignature Language="C#" Value="public sealed class PrintDialog : System.Windows.Forms.CommonDialog" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintDialog extends System.Windows.Forms.CommonDialog" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PrintDialog" />
@@ -49,6 +49,7 @@
     </remarks>
     <altmember cref="T:System.Windows.Forms.PageSetupDialog" />
     <altmember cref="T:System.Windows.Forms.PrintPreviewDialog" />
+    <related type="Article" href="http://msdn.microsoft.com/library/09b54db1-d7c7-42fa-b98a-840e6b80a9ad">PrintDialog Component (Windows Forms)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

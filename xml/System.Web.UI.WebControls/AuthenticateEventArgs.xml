@@ -1,4 +1,4 @@
-﻿<Type Name="AuthenticateEventArgs" FullName="System.Web.UI.WebControls.AuthenticateEventArgs">
+<Type Name="AuthenticateEventArgs" FullName="System.Web.UI.WebControls.AuthenticateEventArgs">
   <TypeSignature Language="C#" Value="public class AuthenticateEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AuthenticateEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.AuthenticateEventArgs" />
@@ -34,6 +34,8 @@
     </remarks>
     <altmember cref="E:System.Web.UI.WebControls.Login.Authenticate" />
     <altmember cref="T:System.Web.UI.WebControls.Login" />
+    <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -66,6 +68,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.AuthenticateEventArgs" /> class with the <see cref="P:System.Web.UI.WebControls.AuthenticateEventArgs.Authenticated" /> property set to <see langword="false" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -94,6 +98,8 @@
           <see langword="true" /> if the user is authenticated; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.AuthenticateEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Authenticated">
@@ -142,6 +148,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
   </Members>

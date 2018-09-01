@@ -1,4 +1,4 @@
-﻿<Type Name="CriticalHandle" FullName="System.Runtime.InteropServices.CriticalHandle">
+<Type Name="CriticalHandle" FullName="System.Runtime.InteropServices.CriticalHandle">
   <TypeSignature Language="C#" Value="public abstract class CriticalHandle : System.Runtime.ConstrainedExecution.CriticalFinalizerObject, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CriticalHandle extends System.Runtime.ConstrainedExecution.CriticalFinalizerObject implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.CriticalHandle" />
@@ -573,6 +573,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/76994ee6-9fa9-4059-b813-26578d24427c">Diagnosing Run-time Errors with Managed Debugging Assistants</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/44cd98ba-95e5-40a1-874d-e8e163612c51">ReleaseHandleFailed</related>
       </Docs>
     </Member>
     <Member MemberName="SetHandle">

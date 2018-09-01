@@ -1,4 +1,4 @@
-﻿<Type Name="ProcessThreadCollection" FullName="System.Diagnostics.ProcessThreadCollection">
+<Type Name="ProcessThreadCollection" FullName="System.Diagnostics.ProcessThreadCollection">
   <TypeSignature Language="C#" Value="public class ProcessThreadCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProcessThreadCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ProcessThreadCollection" />
@@ -26,7 +26,8 @@
     <BaseTypeName>System.Object</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-4.5">System.Collections.ReadOnlyCollectionBase</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Provides a strongly typed collection of <see cref="T:System.Diagnostics.ProcessThread" /> objects.</summary>
     <remarks>To be added.</remarks>

@@ -1,4 +1,4 @@
-﻿<Type Name="OleDbParameterCollection" FullName="System.Data.OleDb.OleDbParameterCollection">
+<Type Name="OleDbParameterCollection" FullName="System.Data.OleDb.OleDbParameterCollection">
   <TypeSignature Language="C#" Value="public sealed class OleDbParameterCollection : System.Data.Common.DbParameterCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OleDbParameterCollection extends System.Data.Common.DbParameterCollection" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbParameterCollection" />
@@ -15,7 +15,8 @@
     <BaseTypeName>System.Data.Common.DbParameterCollection</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-1.1">System.MarshalByRefObject</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Attributes>
     <Attribute FrameworkAlternate="xamarinmac-3.0">
       <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBParametersEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
@@ -51,6 +52,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Add">
@@ -60,6 +63,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Adds an <see cref="T:System.Data.OleDb.OleDbParameter" /> to the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Add">
@@ -99,6 +104,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Data.OleDb.OleDbParameter" /> specified in the <paramref name="value" /> parameter is already added to this or another <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is null.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -134,6 +141,8 @@
         <summary>Adds the specified <see cref="T:System.Data.OleDb.OleDbParameter" /> object to the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</summary>
         <returns>The index of the new <see cref="T:System.Data.OleDb.OleDbParameter" /> object in the collection.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -172,6 +181,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -226,6 +237,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The <paramref name="value" /> parameter is not an <see cref="T:System.Data.OleDb.OleDbParameter" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -266,6 +279,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -308,6 +323,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AddRange">
@@ -317,6 +334,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Adds elements to the end of the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddRange">
@@ -342,6 +361,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="values">The <see cref="T:System.Array" /> values to add.</param>
         <summary>Adds an array of values to the end of the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -367,6 +388,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="values">The <see cref="T:System.Data.OleDb.OleDbParameter" /> values to add.</param>
         <summary>Adds an array of <see cref="T:System.Data.OleDb.OleDbParameter" /> values to the end of the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="AddWithValue">
@@ -395,6 +418,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Adds a value to the end of the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</summary>
         <returns>An <see cref="T:System.Data.OleDb.OleDbParameter" /> object.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -418,6 +443,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <Docs>
         <summary>Removes all <see cref="T:System.Data.OleDb.OleDbParameter" /> objects from the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Contains">
@@ -427,6 +454,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Determines whether the specified object is in this <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Contains">
@@ -454,6 +483,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <returns>
           <see langword="true" /> if the <see cref="T:System.Data.OleDb.OleDbParameter" /> is in the collection; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -482,6 +513,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <returns>
           <see langword="true" /> if the <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> contains <paramref name="value" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -510,6 +543,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <returns>
           <see langword="true" /> if the <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> contains the value; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CopyTo">
@@ -519,6 +554,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Copies all the elements of the current <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> to the specified object.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CopyTo">
@@ -546,6 +583,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="index">A 32-bit integer that represents the index in the <see cref="T:System.Array" /> at which copying starts.</param>
         <summary>Copies all the elements of the current <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> to the specified one-dimensional <see cref="T:System.Array" /> starting at the specified destination <see cref="T:System.Array" /> index.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -573,6 +612,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="index">A 32-bit integer that represents the index in the <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> at which copying starts.</param>
         <summary>Copies all the elements of the current <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> to the specified <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> starting at the specified destination index.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -604,6 +645,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Returns an integer that contains the number of elements in the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />. Read-only.</summary>
         <value>The number of elements in the <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> as an integer.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -628,6 +671,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Returns an enumerator that iterates through the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="GetParameter">
@@ -689,6 +734,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Gets the location of the specified <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> within the collection.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="IndexOf">
@@ -715,6 +762,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Gets the location of the specified <see cref="T:System.Data.OleDb.OleDbParameter" /> within the collection.</summary>
         <returns>The zero-based location of the specified <see cref="T:System.Data.OleDb.OleDbParameter" /> that is a <see cref="T:System.Data.OleDb.OleDbParameter" /> within the collection.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -742,6 +791,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>The location of the specified <see cref="T:System.Object" /> within the collection.</summary>
         <returns>The zero-based location of the specified <see cref="T:System.Object" /> that is a <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> within the collection.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -769,6 +820,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Gets the location of the specified <see cref="T:System.Data.OleDb.OleDbParameter" /> with the specified name.</summary>
         <returns>The zero-based location of the specified <see cref="T:System.Data.OleDb.OleDbParameter" /> with the specified case-sensitive name.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Insert">
@@ -778,6 +831,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Inserts a <see cref="T:System.Data.OleDb.OleDbParameter" /> object into the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Insert">
@@ -805,6 +860,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="value">An <see cref="T:System.Data.OleDb.OleDbParameter" /> object to be inserted in the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</param>
         <summary>Inserts a <see cref="T:System.Data.OleDb.OleDbParameter" /> object into the <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -833,6 +890,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="value">A <see cref="T:System.Object" /> to be inserted in the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</param>
         <summary>Inserts a <see cref="T:System.Object" /> into the <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -856,6 +915,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <value>
           <see langword="true" /> if the <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> has a fixed size; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -879,6 +940,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <value>
           <see langword="true" /> if the <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> is read only; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -902,6 +965,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <value>
           <see langword="true" /> if the <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> is synchronized; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -911,6 +976,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Gets or sets the <see cref="T:System.Data.OleDb.OleDbParameter" /> with a specified attribute.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -960,6 +1027,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The index specified does not exist.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1009,6 +1078,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The name specified does not exist.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Remove">
@@ -1018,6 +1089,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Removes the <see cref="T:System.Data.OleDb.OleDbParameter" /> object from the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Remove">
@@ -1045,6 +1118,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">The parameter is not a <see cref="T:System.Data.OleDb.OleDbParameter" />.</exception>
         <exception cref="T:System.SystemException">The parameter does not exist in the collection.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -1071,6 +1146,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="value">An <see cref="T:System.Object" /> to be removed from the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</param>
         <summary>Removes the <see cref="T:System.Object" /> object from the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="RemoveAt">
@@ -1080,6 +1157,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Removes the <see cref="T:System.Data.OleDb.OleDbParameter" /> object from the <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> at the specified index.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="RemoveAt">
@@ -1106,6 +1185,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="index">The zero-based index of the <see cref="T:System.Data.OleDb.OleDbParameter" /> object to remove.</param>
         <summary>Removes the <see cref="T:System.Data.OleDb.OleDbParameter" /> from the <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -1132,6 +1213,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="parameterName">The name of the <see cref="T:System.Data.OleDb.OleDbParameter" /> object to remove.</param>
         <summary>Removes the <see cref="T:System.Data.OleDb.OleDbParameter" /> from the <see cref="T:System.Data.OleDb.OleDbParameterCollection" /> at the specified parameter name.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="SetParameter">
@@ -1208,6 +1291,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />. Read-only.</summary>
         <value>An object that can be used to synchronize access to the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
   </Members>

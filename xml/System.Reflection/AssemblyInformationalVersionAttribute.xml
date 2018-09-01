@@ -1,4 +1,4 @@
-﻿<Type Name="AssemblyInformationalVersionAttribute" FullName="System.Reflection.AssemblyInformationalVersionAttribute">
+<Type Name="AssemblyInformationalVersionAttribute" FullName="System.Reflection.AssemblyInformationalVersionAttribute">
   <TypeSignature Language="C#" Value="public sealed class AssemblyInformationalVersionAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyInformationalVersionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyInformationalVersionAttribute" />
@@ -52,6 +52,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903">Assembly Versioning</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/2cfebe19-7436-49f1-bd99-3c4019f0b676">Assemblies in the Common Language Runtime</related>
+    <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,6 +99,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903">Assembly Versioning</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/2cfebe19-7436-49f1-bd99-3c4019f0b676">Assemblies in the Common Language Runtime</related>
+        <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
       </Docs>
     </Member>
     <Member MemberName="InformationalVersion">
@@ -133,6 +139,8 @@
         <summary>Gets version information.</summary>
         <value>A string containing the version information.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2cfebe19-7436-49f1-bd99-3c4019f0b676">Assemblies in the Common Language Runtime</related>
+        <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="LocalValueEnumerator" FullName="System.Windows.LocalValueEnumerator">
+<Type Name="LocalValueEnumerator" FullName="System.Windows.LocalValueEnumerator">
   <TypeSignature Language="C#" Value="public struct LocalValueEnumerator : System.Collections.IEnumerator" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit LocalValueEnumerator extends System.ValueType implements class System.Collections.IEnumerator" />
   <TypeSignature Language="DocId" Value="T:System.Windows.LocalValueEnumerator" />
@@ -98,6 +98,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms749010(v=vs.90)">How to: Restore the Default Value of a Dependency Property</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">

@@ -1,4 +1,4 @@
-﻿<Type Name="ValuePatternIdentifiers" FullName="System.Windows.Automation.ValuePatternIdentifiers">
+<Type Name="ValuePatternIdentifiers" FullName="System.Windows.Automation.ValuePatternIdentifiers">
   <TypeSignature Language="C#" Value="public static class ValuePatternIdentifiers" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ValuePatternIdentifiers extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ValuePatternIdentifiers" />
@@ -24,6 +24,10 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-providers-overview.md">UI Automation Providers Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/0d635c35-ffa8-4dc8-bbc9-12fcd5445776">Support Control Patterns in a UI Automation Provider</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/b0fcdd87-3add-4345-bca9-e891205e02ba">Implementing the UI Automation Value Control Pattern</related>
   </Docs>
   <Members>
     <Member MemberName="IsReadOnlyProperty">
@@ -54,6 +58,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b0fcdd87-3add-4345-bca9-e891205e02ba">Implementing the UI Automation Value Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="Pattern">
@@ -84,6 +89,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b0fcdd87-3add-4345-bca9-e891205e02ba">Implementing the UI Automation Value Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="ValueProperty">
@@ -112,6 +118,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b0fcdd87-3add-4345-bca9-e891205e02ba">Implementing the UI Automation Value Control Pattern</related>
       </Docs>
     </Member>
   </Members>

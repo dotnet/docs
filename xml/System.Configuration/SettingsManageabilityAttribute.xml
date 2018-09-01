@@ -1,4 +1,4 @@
-﻿<Type Name="SettingsManageabilityAttribute" FullName="System.Configuration.SettingsManageabilityAttribute">
+<Type Name="SettingsManageabilityAttribute" FullName="System.Configuration.SettingsManageabilityAttribute">
   <TypeSignature Language="C#" Value="public sealed class SettingsManageabilityAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SettingsManageabilityAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsManageabilityAttribute" />
@@ -37,6 +37,7 @@
     </remarks>
     <altmember cref="T:System.Configuration.SettingsManageability" />
     <altmember cref="T:System.Configuration.ApplicationSettingsBase" />
+    <related type="Article" href="http://msdn.microsoft.com/library/64090a34-8556-4904-8ea0-20efe9f8c886">Application Settings for Windows Forms</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="BinaryServerFormatterSinkProvider" FullName="System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider">
+<Type Name="BinaryServerFormatterSinkProvider" FullName="System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider">
   <TypeSignature Language="C#" Value="public class BinaryServerFormatterSinkProvider : System.Runtime.Remoting.Channels.IServerChannelSinkProvider, System.Runtime.Remoting.Channels.IServerFormatterSinkProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BinaryServerFormatterSinkProvider extends System.Object implements class System.Runtime.Remoting.Channels.IServerChannelSinkProvider, class System.Runtime.Remoting.Channels.IServerFormatterSinkProvider" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider" />
@@ -48,6 +48,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.Remoting.Channels.BinaryServerFormatterSink" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kw7c6kwc(v=vs.100)">Channel and Formatter Configuration Properties</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -208,7 +209,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Supported values are `Low` (the default) and `Full`. For details about deserialization levels, see [Automatic Deserialization in .NET Remoting](http://msdn.microsoft.com/library/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).  
+ Supported values are `Low` (the default) and `Full`. For details about deserialization levels, see [Automatic Deserialization in .NET Remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5dxse167(v=vs.100)).  
   
  ]]></format>
         </remarks>

@@ -1,4 +1,4 @@
-﻿<Type Name="OdbcConnection" FullName="System.Data.Odbc.OdbcConnection">
+<Type Name="OdbcConnection" FullName="System.Data.Odbc.OdbcConnection">
   <TypeSignature Language="C#" Value="public sealed class OdbcConnection : System.Data.Common.DbConnection, ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OdbcConnection extends System.Data.Common.DbConnection implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcConnection" />
@@ -58,6 +58,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -67,6 +68,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcConnection" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -113,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -163,6 +166,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="BeginDbTransaction">
@@ -201,6 +205,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Starts a transaction at the data source.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="BeginTransaction">
@@ -250,6 +255,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A transaction is currently active. Parallel transactions are not supported.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="BeginTransaction">
@@ -299,6 +305,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A transaction is currently active. Parallel transactions are not supported.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="ChangeDatabase">
@@ -347,6 +354,7 @@
         <exception cref="T:System.ArgumentException">The database name is not valid.</exception>
         <exception cref="T:System.InvalidOperationException">The connection is not open.</exception>
         <exception cref="T:System.Data.Odbc.OdbcException">Cannot change the database.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -397,6 +405,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectionString">
@@ -512,6 +521,7 @@ driver-defined-attribute-keyword ::= identifier
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectionTimeout">
@@ -558,6 +568,7 @@ driver-defined-attribute-keyword ::= identifier
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value set is less than 0.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="CreateCommand">
@@ -586,6 +597,7 @@ driver-defined-attribute-keyword ::= identifier
         <summary>Creates and returns an <see cref="T:System.Data.Odbc.OdbcCommand" /> object associated with the <see cref="T:System.Data.Odbc.OdbcConnection" />.</summary>
         <returns>An <see cref="T:System.Data.Odbc.OdbcCommand" /> object.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDbCommand">
@@ -665,6 +677,7 @@ driver-defined-attribute-keyword ::= identifier
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -718,6 +731,7 @@ driver-defined-attribute-keyword ::= identifier
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -793,6 +807,7 @@ driver-defined-attribute-keyword ::= identifier
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="EnlistDistributedTransaction">
@@ -870,6 +885,7 @@ driver-defined-attribute-keyword ::= identifier
       </AssemblyInfo>
       <Docs>
         <summary>Returns schema information for the data source of this <see cref="T:System.Data.Odbc.OdbcConnection" />.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetSchema">
@@ -893,6 +909,7 @@ driver-defined-attribute-keyword ::= identifier
         <summary>Returns schema information for the data source of this <see cref="T:System.Data.Odbc.OdbcConnection" />.</summary>
         <returns>A <see cref="T:System.Data.DataTable" /> that contains schema information.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="GetSchema">
@@ -929,6 +946,7 @@ driver-defined-attribute-keyword ::= identifier
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="GetSchema">
@@ -971,6 +989,7 @@ driver-defined-attribute-keyword ::= identifier
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="InfoMessage">
@@ -1004,6 +1023,7 @@ driver-defined-attribute-keyword ::= identifier
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -1042,6 +1062,7 @@ driver-defined-attribute-keyword ::= identifier
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The functionality of this method is unsupported in the base class and must be implemented in a derived class instead.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="ReleaseObjectPool">
@@ -1090,6 +1111,7 @@ driver-defined-attribute-keyword ::= identifier
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="ServerVersion">
@@ -1138,6 +1160,7 @@ driver-defined-attribute-keyword ::= identifier
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection is closed.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -1190,6 +1213,7 @@ driver-defined-attribute-keyword ::= identifier
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
     <Member MemberName="StateChange">

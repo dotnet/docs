@@ -1,4 +1,4 @@
-﻿<Type Name="ParameterizedThreadStart" FullName="System.Threading.ParameterizedThreadStart">
+<Type Name="ParameterizedThreadStart" FullName="System.Threading.ParameterizedThreadStart">
   <TypeSignature Language="C#" Value="public delegate void ParameterizedThreadStart(object obj);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ParameterizedThreadStart extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ParameterizedThreadStart" />
@@ -84,5 +84,6 @@
     <altmember cref="T:System.Threading.Thread" />
     <altmember cref="Overload:System.Threading.Thread.Start" />
     <altmember cref="T:System.AppDomain" />
+    <related type="Article" href="~/docs/standard/threading/creating-threads-and-passing-data-at-start-time.md">Creating Threads</related>
   </Docs>
 </Type>

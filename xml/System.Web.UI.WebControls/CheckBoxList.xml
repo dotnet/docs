@@ -1,4 +1,4 @@
-﻿<Type Name="CheckBoxList" FullName="System.Web.UI.WebControls.CheckBoxList">
+<Type Name="CheckBoxList" FullName="System.Web.UI.WebControls.CheckBoxList">
   <TypeSignature Language="C#" Value="public class CheckBoxList : System.Web.UI.WebControls.ListControl, System.Web.UI.INamingContainer, System.Web.UI.IPostBackDataHandler, System.Web.UI.WebControls.IRepeatInfoUser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CheckBoxList extends System.Web.UI.WebControls.ListControl implements class System.Web.UI.INamingContainer, class System.Web.UI.IPostBackDataHandler, class System.Web.UI.WebControls.IRepeatInfoUser" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CheckBoxList" />
@@ -158,6 +158,10 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.ListControl" />
     <altmember cref="T:System.Web.UI.WebControls.CheckBox" />
+    <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461">Introduction to Validating User Input in ASP.NET Web Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -195,6 +199,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -250,6 +255,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.CellSpacing" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -303,6 +309,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.CellPadding" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -344,6 +351,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="FindControl">
@@ -382,6 +390,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="GetItemStyle">
@@ -423,6 +432,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="HasFooter">
@@ -456,6 +466,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="HasHeader">
@@ -489,6 +500,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="HasSeparators">
@@ -522,6 +534,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -567,6 +580,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
         <altmember cref="M:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged(System.EventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -639,6 +653,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CheckBoxList.OnPreRender(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.CheckBoxList.OnPreRender(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -677,6 +692,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
         <altmember cref="M:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged(System.EventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -722,6 +738,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RenderItem">
@@ -766,6 +783,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RenderWhenDataEmpty">
@@ -851,6 +869,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The number of columns is set to a negative value.</exception>
         <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatDirection" />
         <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatLayout" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RepeatDirection">
@@ -925,6 +944,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The specified display direction of the list is not one of the <see cref="T:System.Web.UI.WebControls.RepeatDirection" /> values.</exception>
         <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatColumns" />
         <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatLayout" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RepeatedItemCount">
@@ -959,6 +979,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RepeatLayout">
@@ -1016,6 +1037,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The specified layout is not one of the <see cref="T:System.Web.UI.WebControls.RepeatLayout" /> values.</exception>
         <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatColumns" />
         <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatDirection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13">Accessibility in Visual Studio 2010 and ASP.NET 4</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -1066,6 +1089,7 @@
           <para>To define a custom implementation for processing posted data for a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="M:System.Web.UI.WebControls.CheckBoxList.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.CheckBoxList.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> method to process the posted data for the control.</para>
         </block>
         <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -1109,6 +1133,7 @@
           <para>To define a custom implementation for raising the event for a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="M:System.Web.UI.WebControls.CheckBoxList.RaisePostDataChangedEvent" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.CheckBoxList.RaisePostDataChangedEvent" /> method to raise the event when posted data has changed for the control.</para>
         </block>
         <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.GetItemStyle">
@@ -1168,6 +1193,7 @@
           <para>To define a custom implementation for retrieving the style of an item in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="M:System.Web.UI.WebControls.CheckBoxList.GetItemStyle(System.Web.UI.WebControls.ListItemType,System.Int32)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.CheckBoxList.GetItemStyle(System.Web.UI.WebControls.ListItemType,System.Int32)" /> method to retrieve the style of an item.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.HasFooter">
@@ -1212,6 +1238,7 @@
           <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.CheckBoxList.System#Web#UI#WebControls#IRepeatInfoUser#HasFooter" /> member in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasFooter" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasFooter" /> property.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.HasHeader">
@@ -1256,6 +1283,7 @@
           <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.CheckBoxList.System#Web#UI#WebControls#IRepeatInfoUser#HasHeader" /> member in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasHeader" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasHeader" /> property.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators">
@@ -1300,6 +1328,7 @@
           <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.CheckBoxList.System#Web#UI#WebControls#IRepeatInfoUser#HasSeparators" /> member in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasSeparators" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasSeparators" /> property.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.RenderItem">
@@ -1361,6 +1390,7 @@
           <para>To define a custom implementation for rendering items in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="M:System.Web.UI.WebControls.CheckBoxList.RenderItem(System.Web.UI.WebControls.ListItemType,System.Int32,System.Web.UI.WebControls.RepeatInfo,System.Web.UI.HtmlTextWriter)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.CheckBoxList.RenderItem(System.Web.UI.WebControls.ListItemType,System.Int32,System.Web.UI.WebControls.RepeatInfo,System.Web.UI.HtmlTextWriter)" /> method to render an item in the control.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount">
@@ -1404,6 +1434,7 @@
           <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.CheckBoxList.System#Web#UI#WebControls#IRepeatInfoUser#RepeatedItemCount" /> member in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatedItemCount" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatedItemCount" /> property.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="TextAlign">
@@ -1458,6 +1489,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified label text alignment is not one of the <see cref="T:System.Web.UI.WebControls.TextAlign" /> values.</exception>
         <altmember cref="T:System.Web.UI.WebControls.TextAlign" />
+        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
   </Members>

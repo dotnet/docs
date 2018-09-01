@@ -1,4 +1,4 @@
-﻿<Type Name="UTF32Encoding" FullName="System.Text.UTF32Encoding">
+<Type Name="UTF32Encoding" FullName="System.Text.UTF32Encoding">
   <TypeSignature Language="C#" Value="public sealed class UTF32Encoding : System.Text.Encoding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit UTF32Encoding extends System.Text.Encoding" />
   <TypeSignature Language="DocId" Value="T:System.Text.UTF32Encoding" />
@@ -106,6 +106,7 @@
     <altmember cref="T:System.Text.UnicodeEncoding" />
     <altmember cref="T:System.Globalization.UnicodeCategory" />
     <altmember cref="T:System.Globalization.CharUnicodeInfo" />
+    <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -1312,6 +1313,7 @@
         <altmember cref="M:System.Text.UTF32Encoding.GetString(System.Byte[],System.Int32,System.Int32)" />
         <altmember cref="M:System.Text.UTF32Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
         <altmember cref="M:System.Text.UTF32Encoding.GetEncoder" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="GetEncoder">
@@ -1368,6 +1370,7 @@
         <altmember cref="M:System.Text.UTF32Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
         <altmember cref="M:System.Text.UTF32Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
         <altmember cref="M:System.Text.UTF32Encoding.GetDecoder" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">

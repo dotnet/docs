@@ -1,4 +1,4 @@
-﻿<Type Name="OleDbTransaction" FullName="System.Data.OleDb.OleDbTransaction">
+<Type Name="OleDbTransaction" FullName="System.Data.OleDb.OleDbTransaction">
   <TypeSignature Language="C#" Value="public sealed class OleDbTransaction : System.Data.Common.DbTransaction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OleDbTransaction extends System.Data.Common.DbTransaction" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbTransaction" />
@@ -15,7 +15,8 @@
     <BaseTypeName>System.Data.Common.DbTransaction</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-1.1">System.MarshalByRefObject</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Represents an SQL transaction to be made at a data source. This class cannot be inherited.</summary>
     <remarks>
@@ -28,6 +29,7 @@
     </remarks>
     <altmember cref="T:System.Data.OleDb.OleDbDataAdapter" />
     <altmember cref="T:System.Data.OleDb.OleDbConnection" />
+    <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Begin">
@@ -37,6 +39,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initiates a nested database transaction.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Begin">
@@ -69,6 +72,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Nested transactions are not supported.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </Member>
     <Member MemberName="Begin">
@@ -104,6 +108,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Nested transactions are not supported.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </Member>
     <Member MemberName="Commit">
@@ -143,6 +148,7 @@
  -or-  
   
  The connection is broken.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -173,6 +179,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </Member>
     <Member MemberName="DbConnection">
@@ -271,6 +278,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </Member>
     <Member MemberName="Rollback">
@@ -315,6 +323,7 @@
  -or-  
   
  The connection is broken.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">

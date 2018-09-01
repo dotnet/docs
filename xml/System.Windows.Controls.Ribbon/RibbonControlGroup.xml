@@ -1,4 +1,4 @@
-﻿<Type Name="RibbonControlGroup" FullName="System.Windows.Controls.Ribbon.RibbonControlGroup">
+<Type Name="RibbonControlGroup" FullName="System.Windows.Controls.Ribbon.RibbonControlGroup">
   <TypeSignature Language="C#" Value="public class RibbonControlGroup : System.Windows.Controls.ItemsControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonControlGroup extends System.Windows.Controls.ItemsControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonControlGroup" />
@@ -102,6 +102,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94">Ribbon Layout and Resizing</related>
       </Docs>
     </Member>
     <Member MemberName="ControlSizeDefinitionProperty">

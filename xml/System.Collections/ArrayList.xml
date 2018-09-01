@@ -1,4 +1,4 @@
-﻿<Type Name="ArrayList" FullName="System.Collections.ArrayList">
+<Type Name="ArrayList" FullName="System.Collections.ArrayList">
   <TypeSignature Language="C#" Value="public class ArrayList : ICloneable, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ArrayList extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.ArrayList" />
@@ -94,6 +94,7 @@
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
     <altmember cref="T:System.Collections.IList" />
     <altmember cref="T:System.Collections.Generic.List`1" />
+    <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -551,6 +552,7 @@
         <exception cref="T:System.ArgumentException">Neither <paramref name="value" /> nor the elements of <see cref="T:System.Collections.ArrayList" /> implement the <see cref="T:System.IComparable" /> interface.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="value" /> is not of the same type as the elements of the <see cref="T:System.Collections.ArrayList" />.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="BinarySearch">
@@ -630,6 +632,7 @@
           <paramref name="comparer" /> is <see langword="null" /> and neither <paramref name="value" /> nor the elements of <see cref="T:System.Collections.ArrayList" /> implement the <see cref="T:System.IComparable" /> interface.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="comparer" /> is <see langword="null" /> and <paramref name="value" /> is not of the same type as the elements of the <see cref="T:System.Collections.ArrayList" />.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="BinarySearch">
@@ -716,6 +719,7 @@
  <paramref name="count" /> is less than zero.</exception>
         <altmember cref="T:System.Collections.IComparer" />
         <altmember cref="T:System.IComparable" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Capacity">
@@ -948,6 +952,7 @@
         </remarks>
         <altmember cref="M:System.Collections.ArrayList.IndexOf(System.Object)" />
         <altmember cref="M:System.Collections.ArrayList.LastIndexOf(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CopyTo">
@@ -1701,6 +1706,7 @@
         </remarks>
         <altmember cref="M:System.Collections.ArrayList.LastIndexOf(System.Object)" />
         <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -1770,6 +1776,7 @@
           <paramref name="startIndex" /> is outside the range of valid indexes for the <see cref="T:System.Collections.ArrayList" />.</exception>
         <altmember cref="M:System.Collections.ArrayList.LastIndexOf(System.Object)" />
         <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -1849,6 +1856,7 @@
  <paramref name="startIndex" /> and <paramref name="count" /> do not specify a valid section in the <see cref="T:System.Collections.ArrayList" />.</exception>
         <altmember cref="M:System.Collections.ArrayList.LastIndexOf(System.Object)" />
         <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -2363,6 +2371,7 @@
         </remarks>
         <altmember cref="M:System.Collections.ArrayList.IndexOf(System.Object)" />
         <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -2432,6 +2441,7 @@
           <paramref name="startIndex" /> is outside the range of valid indexes for the <see cref="T:System.Collections.ArrayList" />.</exception>
         <altmember cref="M:System.Collections.ArrayList.IndexOf(System.Object)" />
         <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -2511,6 +2521,7 @@
  <paramref name="startIndex" /> and <paramref name="count" /> do not specify a valid section in the <see cref="T:System.Collections.ArrayList" />.</exception>
         <altmember cref="M:System.Collections.ArrayList.IndexOf(System.Object)" />
         <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadOnly">
@@ -2718,6 +2729,7 @@
         <altmember cref="M:System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)" />
         <altmember cref="M:System.Collections.ArrayList.Add(System.Object)" />
         <altmember cref="M:System.Collections.ArrayList.Insert(System.Int32,System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -3212,6 +3224,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.ArrayList" /> is read-only.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -3280,6 +3293,7 @@
         <exception cref="T:System.InvalidOperationException">An error occurred while comparing two elements.</exception>
         <exception cref="T:System.ArgumentException">
           <see langword="null" /> is passed for <paramref name="comparer" />, and the elements in the list do not implement <see cref="T:System.IComparable" />.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -3356,6 +3370,7 @@
           <paramref name="index" /> and <paramref name="count" /> do not specify a valid range in the <see cref="T:System.Collections.ArrayList" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.ArrayList" /> is read-only.</exception>
         <exception cref="T:System.InvalidOperationException">An error occurred while comparing two elements.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Synchronized">

@@ -1,4 +1,4 @@
-﻿<Type Name="ClassInterfaceAttribute" FullName="System.Runtime.InteropServices.ClassInterfaceAttribute">
+<Type Name="ClassInterfaceAttribute" FullName="System.Runtime.InteropServices.ClassInterfaceAttribute">
   <TypeSignature Language="C#" Value="public sealed class ClassInterfaceAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClassInterfaceAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ClassInterfaceAttribute" />
@@ -66,6 +66,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.InteropServices.ClassInterfaceType" />
+    <related type="Article" href="~/docs/framework/tools/tlbexp-exe-type-library-exporter.md">Tlbexp.exe (Type Library Exporter)</related>
+    <related type="Article" href="~/docs/framework/tools/tlbimp-exe-type-library-importer.md">Tlbimp.exe (Type Library Importer)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -126,6 +128,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Runtime.InteropServices.ClassInterfaceType" />
+        <related type="Article" href="~/docs/framework/tools/tlbimp-exe-type-library-importer.md">Tlbimp.exe (Type Library Importer)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

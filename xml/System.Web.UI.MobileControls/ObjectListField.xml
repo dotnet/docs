@@ -1,4 +1,4 @@
-﻿<Type Name="ObjectListField" FullName="System.Web.UI.MobileControls.ObjectListField">
+<Type Name="ObjectListField" FullName="System.Web.UI.MobileControls.ObjectListField">
   <TypeSignature Language="C#" Value="public sealed class ObjectListField : System.Web.UI.IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObjectListField extends System.Object implements class System.Web.UI.IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListField" />
@@ -53,6 +53,7 @@
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
     <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,6 +75,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataBindItem">
@@ -105,6 +107,7 @@
         <exception cref="T:System.Exception">the specified <see cref="P:System.Web.UI.MobileControls.ObjectListField.DataField" /> does not exist.</exception>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataField">
@@ -142,6 +145,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataFormatString">
@@ -179,6 +183,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -219,6 +224,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -284,6 +290,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -316,6 +323,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -347,6 +355,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -384,6 +393,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -415,6 +425,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="DataControlFieldHeaderCell" FullName="System.Web.UI.WebControls.DataControlFieldHeaderCell">
+<Type Name="DataControlFieldHeaderCell" FullName="System.Web.UI.WebControls.DataControlFieldHeaderCell">
   <TypeSignature Language="C#" Value="public class DataControlFieldHeaderCell : System.Web.UI.WebControls.DataControlFieldCell" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataControlFieldHeaderCell extends System.Web.UI.WebControls.DataControlFieldCell" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataControlFieldHeaderCell" />
@@ -94,6 +94,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202">Walkthrough: Creating an Accessible Web Application</related>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">

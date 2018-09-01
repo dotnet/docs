@@ -1,4 +1,4 @@
-﻿<Type Name="ResXResourceReader" FullName="System.Resources.ResXResourceReader">
+<Type Name="ResXResourceReader" FullName="System.Resources.ResXResourceReader">
   <TypeSignature Language="C#" Value="public class ResXResourceReader : IDisposable, System.Collections.IEnumerable, System.Resources.IResourceReader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResXResourceReader extends System.Object implements class System.Collections.IEnumerable, class System.IDisposable, class System.Resources.IResourceReader" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXResourceReader" />
@@ -73,6 +73,8 @@
     <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
     <altmember cref="T:System.Resources.ResXResourceWriter" />
+    <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/168f941a-2b84-43f8-933f-cf4a8548d824">Working with .resx Files Programmatically</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

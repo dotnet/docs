@@ -59,6 +59,8 @@
     <altmember cref="N:System.Reflection" />
     <altmember cref="T:System.ComponentModel.IComponent" />
     <altmember cref="T:System.ComponentModel.ISite" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e81b8e2f-e06e-44fa-8129-7bdb0230101f">Type Descriptor Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775">Reflection</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="AddAttributes">
@@ -2199,6 +2201,7 @@
           <paramref name="component" /> is a cross-process remoted object.</exception>
         <altmember cref="M:System.ComponentModel.TypeDescriptor.AddEditorTable(System.Type,System.Collections.Hashtable)" />
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetConverter" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f068b4ea-6e8c-4c0b-aefd-188b337240da">User Interface Type Editors Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetEditor">
@@ -2253,6 +2256,7 @@
           <paramref name="type" /> or <paramref name="editorBaseType" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.ComponentModel.TypeDescriptor.AddEditorTable(System.Type,System.Collections.Hashtable)" />
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetConverter" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f068b4ea-6e8c-4c0b-aefd-188b337240da">User Interface Type Editors Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetEditor">
@@ -2316,6 +2320,7 @@
         <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
         <altmember cref="M:System.ComponentModel.TypeDescriptor.AddEditorTable(System.Type,System.Collections.Hashtable)" />
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetConverter" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f068b4ea-6e8c-4c0b-aefd-188b337240da">User Interface Type Editors Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetEvents">
@@ -2872,6 +2877,7 @@
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateProperty" />
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c186c4b6-076c-438d-9ed3-f13da29c8c1f">How to: Access Design-time Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetProperties">

@@ -1,4 +1,4 @@
-﻿<Type Name="CurrentValueRecord" FullName="System.Data.Objects.CurrentValueRecord">
+<Type Name="CurrentValueRecord" FullName="System.Data.Objects.CurrentValueRecord">
   <TypeSignature Language="C#" Value="public abstract class CurrentValueRecord : System.Data.Objects.DbUpdatableDataRecord" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CurrentValueRecord extends System.Data.Objects.DbUpdatableDataRecord" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.CurrentValueRecord" />
@@ -14,7 +14,8 @@
     <BaseTypeName>System.Data.Objects.DbUpdatableDataRecord</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-3.5">System.Data.Common.DbDataRecord</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Provides access to the current values of object data.</summary>
     <remarks>

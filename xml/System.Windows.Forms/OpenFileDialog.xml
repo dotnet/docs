@@ -1,4 +1,4 @@
-﻿<Type Name="OpenFileDialog" FullName="System.Windows.Forms.OpenFileDialog">
+<Type Name="OpenFileDialog" FullName="System.Windows.Forms.OpenFileDialog">
   <TypeSignature Language="C#" Value="public sealed class OpenFileDialog : System.Windows.Forms.FileDialog" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OpenFileDialog extends System.Windows.Forms.FileDialog" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.OpenFileDialog" />
@@ -48,6 +48,7 @@ On a right-to-left operating system, setting the containing form's <xref:System.
     <altmember cref="T:System.Windows.Forms.FileDialog" />
     <altmember cref="T:System.Windows.Forms.CommonDialog" />
     <altmember cref="T:System.Windows.Forms.SaveFileDialog" />
+    <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="Message" FullName="System.Windows.Forms.Message">
+<Type Name="Message" FullName="System.Windows.Forms.Message">
   <TypeSignature Language="C#" Value="public struct Message" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Message extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Message" />
@@ -36,6 +36,9 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198815">Messages and Message Queues</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198816">MSG Structure</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198817">Message Constants</related>
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -232,6 +235,9 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198815">Messages and Message Queues</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198816">MSG Structure</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198817">Message Constants</related>
       </Docs>
     </Member>
     <Member MemberName="Msg">
@@ -274,6 +280,9 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198815">Messages and Message Queues</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198816">MSG Structure</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198817">Message Constants</related>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -438,6 +447,9 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198815">Messages and Message Queues</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198816">MSG Structure</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198817">Message Constants</related>
       </Docs>
     </Member>
   </Members>

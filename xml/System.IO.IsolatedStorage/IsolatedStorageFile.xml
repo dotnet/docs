@@ -1,4 +1,4 @@
-﻿<Type Name="IsolatedStorageFile" FullName="System.IO.IsolatedStorage.IsolatedStorageFile">
+<Type Name="IsolatedStorageFile" FullName="System.IO.IsolatedStorage.IsolatedStorageFile">
   <TypeSignature Language="C#" Value="public sealed class IsolatedStorageFile : System.IO.IsolatedStorage.IsolatedStorage, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IsolatedStorageFile extends System.IO.IsolatedStorage.IsolatedStorage implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.IO.IsolatedStorage.IsolatedStorageFile" />
@@ -59,6 +59,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
   </Docs>
   <Members>
     <Member MemberName="AvailableFreeSpace">
@@ -105,6 +106,7 @@
   
  Isolated storage is disabled.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -155,6 +157,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CopyFile">
@@ -236,6 +239,7 @@
  -or-  
   
  An I/O error has occurred.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="CopyFile">
@@ -309,6 +313,7 @@
  -or-  
   
  An I/O error has occurred.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDirectory">
@@ -370,6 +375,7 @@
         <exception cref="T:System.ArgumentNullException">The directory path is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for accessing the isolated storage scope.</permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="CreateFile">
@@ -428,6 +434,7 @@
           <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The directory in <paramref name="path" /> does not exist.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentSize">
@@ -497,6 +504,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The property is unavailable. The current store has a roaming scope or is not open.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object size is undefined.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteDirectory">
@@ -558,6 +566,7 @@
         <exception cref="T:System.ArgumentNullException">The directory path was <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for accessing the isolated storage scope.</permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteFile">
@@ -621,6 +630,7 @@
         <exception cref="T:System.ArgumentNullException">The file path is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for accessing files in the isolated storage scope.</permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="DirectoryExists">
@@ -674,6 +684,7 @@
  -or-  
   
  Isolated storage is disabled.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -730,6 +741,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="FileExists">
@@ -779,6 +791,7 @@
         <exception cref="T:System.InvalidOperationException">The isolated store is closed.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -869,6 +882,7 @@
  -or-  
   
  Isolated storage is disabled.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetDirectoryNames">
@@ -931,6 +945,7 @@
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Caller does not have permission to enumerate directories.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">One or more directories are not found.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryNames">
@@ -1003,6 +1018,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The directory or directories specified by <paramref name="searchPattern" /> are not found.</exception>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -1054,6 +1070,7 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="F:System.Security.Permissions.IsolatedStorageContainment.AdministerIsolatedStorageByUser" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetFileNames">
@@ -1111,6 +1128,7 @@
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">File paths from the isolated store root cannot be determined.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="GetFileNames">
@@ -1179,6 +1197,7 @@
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The file path specified by <paramref name="searchPattern" /> cannot be found.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="GetLastAccessTime">
@@ -1240,6 +1259,7 @@
  -or-  
   
  Isolated storage is disabled.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="GetLastWriteTime">
@@ -1301,6 +1321,7 @@
  -or-  
   
  Isolated storage is disabled.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="GetMachineStoreForApplication">
@@ -1364,6 +1385,7 @@
         <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="F:System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByUser" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="GetMachineStoreForAssembly">
@@ -1422,6 +1444,7 @@
         <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="F:System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByUser" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="GetMachineStoreForDomain">
@@ -1503,6 +1526,7 @@
  An isolated storage location cannot be initialized.</exception>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="F:System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByUser" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="GetPermission">
@@ -1614,6 +1638,7 @@
         <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain" />
         <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication" />
         <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly" />
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="GetStore">
@@ -1687,6 +1712,7 @@
         <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain" />
         <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication" />
         <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly" />
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="GetStore">
@@ -1768,6 +1794,7 @@
         <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain" />
         <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication" />
         <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly" />
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="GetStore">
@@ -1859,6 +1886,7 @@
         <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain" />
         <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication" />
         <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly" />
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="GetStore">
@@ -1938,6 +1966,7 @@
         <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain" />
         <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication" />
         <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly" />
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="GetUserStoreForApplication">
@@ -2003,6 +2032,7 @@
  The permissions for the application domain cannot be determined.</exception>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="F:System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByUser" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="GetUserStoreForAssembly">
@@ -2066,6 +2096,7 @@
  The permissions for the calling assembly cannot be determined.</exception>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="F:System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByUser" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="GetUserStoreForDomain">
@@ -2148,6 +2179,7 @@
  The permissions for the application domain cannot be determined.</exception>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="F:System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByUser" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="GetUserStoreForSite">
@@ -2195,6 +2227,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="IncreaseQuotaTo">
@@ -2266,6 +2299,7 @@
  -or-  
   
  Isolated storage is disabled.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -2310,6 +2344,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="MaximumSize">
@@ -2377,6 +2412,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The property is unavailable. <see cref="P:System.IO.IsolatedStorage.IsolatedStorageFile.MaximumSize" /> cannot be determined without evidence from the assembly's creation. The evidence could not be determined when the object was created.</exception>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">An isolated storage error occurred.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="MoveDirectory">
@@ -2449,6 +2485,7 @@
  -or-  
   
  <paramref name="sourceDirectoryName" /> and <paramref name="destinationDirectoryName" /> refer to the same directory.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="MoveFile">
@@ -2513,6 +2550,7 @@
  -or-  
   
  Isolated storage is disabled.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="OpenFile">
@@ -2584,6 +2622,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The directory in <paramref name="path" /> does not exist.</exception>
         <exception cref="T:System.IO.FileNotFoundException">No file was found and the <paramref name="mode" /> is set to <see cref="F:System.IO.FileMode.Open" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="OpenFile">
@@ -2647,6 +2686,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The directory in <paramref name="path" /> does not exist.</exception>
         <exception cref="T:System.IO.FileNotFoundException">No file was found and the <paramref name="mode" /> is set to <see cref="F:System.IO.FileMode.Open" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="OpenFile">
@@ -2712,6 +2752,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The directory in <paramref name="path" /> does not exist.</exception>
         <exception cref="T:System.IO.FileNotFoundException">No file was found and the <paramref name="mode" /> is set to <see cref="M:System.IO.FileInfo.Open(System.IO.FileMode)" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="Quota">
@@ -2760,6 +2801,7 @@
   
  Isolated storage is disabled.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Remove">
@@ -2830,6 +2872,8 @@
         </remarks>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store cannot be deleted.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/3947e333-5af6-4601-b2f1-24d4d6129cf3">How to: Delete Stores in Isolated Storage</related>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -2885,6 +2929,8 @@
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store cannot be removed.</exception>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="F:System.Security.Permissions.IsolatedStorageContainment.AdministerIsolatedStorageByUser" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/3947e333-5af6-4601-b2f1-24d4d6129cf3">How to: Delete Stores in Isolated Storage</related>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
     <Member MemberName="UsedSize">
@@ -2927,6 +2973,7 @@
         <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
+        <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
   </Members>

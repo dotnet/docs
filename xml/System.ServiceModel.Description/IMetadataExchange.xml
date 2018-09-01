@@ -1,4 +1,4 @@
-﻿<Type Name="IMetadataExchange" FullName="System.ServiceModel.Description.IMetadataExchange">
+<Type Name="IMetadataExchange" FullName="System.ServiceModel.Description.IMetadataExchange">
   <TypeSignature Language="C#" Value="public interface IMetadataExchange" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMetadataExchange" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.IMetadataExchange" />
@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/66a61bd0-18d3-4e7e-bf8b-177a10ac2f60">Metadata</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/3a56831a-cabc-45c0-bd02-12e2e9bd7313">Publishing Metadata</related>
   </Docs>
   <Members>
     <Member MemberName="BeginGet">

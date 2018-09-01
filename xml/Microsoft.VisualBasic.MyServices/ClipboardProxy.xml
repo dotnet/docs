@@ -1,4 +1,4 @@
-﻿<Type Name="ClipboardProxy" FullName="Microsoft.VisualBasic.MyServices.ClipboardProxy">
+<Type Name="ClipboardProxy" FullName="Microsoft.VisualBasic.MyServices.ClipboardProxy">
   <TypeSignature Language="C#" Value="public class ClipboardProxy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ClipboardProxy extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MyServices.ClipboardProxy" />
@@ -65,6 +65,7 @@
     </remarks>
     <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
     <altmember cref="T:System.Windows.Forms.Clipboard" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName="Clear">
@@ -121,6 +122,8 @@ My.Computer.Clipboard.Clear()
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
         <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
         <altmember cref="M:System.Windows.Forms.Clipboard.Clear" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading from the Clipboard (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ContainsAudio">
@@ -176,6 +179,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:System.Windows.Forms.Clipboard.ContainsAudio" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md">Playing Sounds</related>
       </Docs>
     </Member>
     <Member MemberName="ContainsData">
@@ -240,6 +245,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetDataObject" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData(System.String,System.Object)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject(System.Windows.Forms.DataObject)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="ContainsFileDropList">
@@ -298,6 +305,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:System.Windows.Forms.Clipboard.ContainsFileDropList" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetFileDropList" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetFileDropList(System.Collections.Specialized.StringCollection)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="ContainsImage">
@@ -355,6 +364,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:System.Windows.Forms.Clipboard.ContainsImage" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetImage" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetImage(System.Drawing.Image)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ContainsText">
@@ -421,6 +432,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:System.Windows.Forms.Clipboard.ContainsText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="ContainsText">
@@ -482,6 +495,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:System.Windows.Forms.Clipboard.ContainsText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="GetAudioStream">
@@ -537,6 +552,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:System.Windows.Forms.Clipboard.GetAudioStream" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsAudio" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -599,6 +616,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetDataObject" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData(System.String,System.Object)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject(System.Windows.Forms.DataObject)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="GetDataObject">
@@ -667,6 +686,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetData(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData(System.String,System.Object)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject(System.Windows.Forms.DataObject)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="GetFileDropList">
@@ -727,6 +748,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:System.Windows.Forms.Clipboard.GetFileDropList" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsFileDropList" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetFileDropList(System.Collections.Specialized.StringCollection)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="GetImage">
@@ -784,6 +807,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:System.Windows.Forms.Clipboard.GetImage" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsImage" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetImage(System.Drawing.Image)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading from the Clipboard (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetText">
@@ -851,6 +876,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:System.Windows.Forms.Clipboard.GetText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading from the Clipboard (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="GetText">
@@ -913,6 +940,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:System.Windows.Forms.Clipboard.GetText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading from the Clipboard (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetAudio">
@@ -984,6 +1013,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:System.Windows.Forms.Clipboard.SetAudio" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsAudio" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="SetAudio">
@@ -1045,6 +1076,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:System.Windows.Forms.Clipboard.SetAudio" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsAudio" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -1112,6 +1145,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetData(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetDataObject" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject(System.Windows.Forms.DataObject)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="SetDataObject">
@@ -1185,6 +1220,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetData(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetDataObject" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData(System.String,System.Object)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="SetFileDropList">
@@ -1245,6 +1282,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:System.Windows.Forms.Clipboard.SetFileDropList(System.Collections.Specialized.StringCollection)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsFileDropList" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetFileDropList" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="SetImage">
@@ -1307,6 +1346,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:System.Windows.Forms.Clipboard.SetImage(System.Drawing.Image)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsImage" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetImage" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetText">
@@ -1384,6 +1425,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:System.Windows.Forms.Clipboard.SetText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="SetText">
@@ -1455,6 +1498,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:System.Windows.Forms.Clipboard.SetText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
   </Members>

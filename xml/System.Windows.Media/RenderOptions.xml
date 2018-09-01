@@ -1,4 +1,4 @@
-﻿<Type Name="RenderOptions" FullName="System.Windows.Media.RenderOptions">
+<Type Name="RenderOptions" FullName="System.Windows.Media.RenderOptions">
   <TypeSignature Language="C#" Value="public static class RenderOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RenderOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.RenderOptions" />
@@ -25,6 +25,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Media.RenderCapability" />
+    <related type="Article" href="http://msdn.microsoft.com/library/67cafaad-57ad-4ecb-9c08-57fac144393e">Performance Profiling Tools for WPF</related>
   </Docs>
   <Members>
     <Member MemberName="BitmapScalingMode">

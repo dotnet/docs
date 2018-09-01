@@ -1,4 +1,4 @@
-﻿<Type Name="IDocumentProjectItem" FullName="System.Web.UI.Design.IDocumentProjectItem">
+<Type Name="IDocumentProjectItem" FullName="System.Web.UI.Design.IDocumentProjectItem">
   <TypeSignature Language="C#" Value="public interface IDocumentProjectItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDocumentProjectItem" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDocumentProjectItem" />
@@ -15,6 +15,8 @@
     <summary>Provides an interface for accessing a document item retrieved from a design host at design time.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Web.UI.Design.IProjectItem" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName="GetContents">
@@ -39,6 +41,8 @@
         <returns>A <see cref="T:System.IO.Stream" /> object.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.IO.Stream" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -62,6 +66,8 @@
         <summary>Opens a document item that is retrieved from the design host.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="Overload:System.IO.File.Open" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

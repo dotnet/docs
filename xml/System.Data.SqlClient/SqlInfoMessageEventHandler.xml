@@ -1,4 +1,4 @@
-﻿<Type Name="SqlInfoMessageEventHandler" FullName="System.Data.SqlClient.SqlInfoMessageEventHandler">
+<Type Name="SqlInfoMessageEventHandler" FullName="System.Data.SqlClient.SqlInfoMessageEventHandler">
   <TypeSignature Language="C#" Value="public delegate void SqlInfoMessageEventHandler(object sender, SqlInfoMessageEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SqlInfoMessageEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlInfoMessageEventHandler" />
@@ -43,5 +43,6 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
 </Type>

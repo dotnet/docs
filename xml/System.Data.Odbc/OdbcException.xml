@@ -1,4 +1,4 @@
-﻿<Type Name="OdbcException" FullName="System.Data.Odbc.OdbcException">
+<Type Name="OdbcException" FullName="System.Data.Odbc.OdbcException">
   <TypeSignature Language="C#" Value="public sealed class OdbcException : System.Data.Common.DbException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit OdbcException extends System.Data.Common.DbException" />
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcException" />
@@ -48,6 +48,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Data.Odbc.OdbcErrorCollection" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
   </Docs>
   <Members>
     <Member MemberName="Errors">
@@ -90,6 +91,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -193,6 +195,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
   </Members>

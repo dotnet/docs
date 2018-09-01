@@ -1,4 +1,4 @@
-﻿<Type Name="UmAlQuraCalendar" FullName="System.Globalization.UmAlQuraCalendar">
+<Type Name="UmAlQuraCalendar" FullName="System.Globalization.UmAlQuraCalendar">
   <TypeSignature Language="C#" Value="public class UmAlQuraCalendar : System.Globalization.Calendar" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit UmAlQuraCalendar extends System.Globalization.Calendar" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.UmAlQuraCalendar" />
@@ -56,6 +56,8 @@
     <altmember cref="P:System.Globalization.CultureInfo.Calendar" />
     <altmember cref="P:System.Globalization.CultureInfo.OptionalCalendars" />
     <altmember cref="T:System.Globalization.HijriCalendar" />
+    <related type="Article" href="~/docs/standard/datetime/working-with-calendars.md">Working with Calendars</related>
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Calendar-3360a84a">Sample: Calendar Week Range Utility</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="SelectorAutomationPeer" FullName="System.Windows.Automation.Peers.SelectorAutomationPeer">
+<Type Name="SelectorAutomationPeer" FullName="System.Windows.Automation.Peers.SelectorAutomationPeer">
   <TypeSignature Language="C#" Value="public abstract class SelectorAutomationPeer : System.Windows.Automation.Peers.ItemsControlAutomationPeer, System.Windows.Automation.Provider.ISelectionProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SelectorAutomationPeer extends System.Windows.Automation.Peers.ItemsControlAutomationPeer implements class System.Windows.Automation.Provider.ISelectionProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.SelectorAutomationPeer" />
@@ -21,6 +21,7 @@
   <Docs>
     <summary>Exposes <see cref="T:System.Windows.Controls.Primitives.Selector" /> types to UI Automation.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,6 +49,7 @@
         <param name="owner">The <see cref="T:System.Windows.Controls.Primitives.Selector" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.SelectorAutomationPeer" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.SelectorAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">
@@ -71,6 +73,7 @@
         <summary>Gets the control type for the <see cref="T:System.Windows.Controls.Primitives.Selector" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.SelectorAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
         <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.List" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPattern">
@@ -96,6 +99,8 @@
         <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.Primitives.Selector" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.SelectorAutomationPeer" />.</summary>
         <returns>If <paramref name="patternInterface" /> is <see cref="F:System.Windows.Automation.Peers.PatternInterface.Selection" />, this method returns a pointer to the current instance; otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple">

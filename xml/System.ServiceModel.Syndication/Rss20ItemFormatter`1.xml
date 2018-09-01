@@ -1,4 +1,4 @@
-﻿<Type Name="Rss20ItemFormatter&lt;TSyndicationItem&gt;" FullName="System.ServiceModel.Syndication.Rss20ItemFormatter&lt;TSyndicationItem&gt;">
+<Type Name="Rss20ItemFormatter&lt;TSyndicationItem&gt;" FullName="System.ServiceModel.Syndication.Rss20ItemFormatter&lt;TSyndicationItem&gt;">
   <TypeSignature Language="C#" Value="public class Rss20ItemFormatter&lt;TSyndicationItem&gt; : System.ServiceModel.Syndication.Rss20ItemFormatter where TSyndicationItem : SyndicationItemnew()" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Rss20ItemFormatter`1&lt;.ctor (class System.ServiceModel.Syndication.SyndicationItem) TSyndicationItem&gt; extends System.ServiceModel.Syndication.Rss20ItemFormatter" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.Rss20ItemFormatter`1" />
@@ -25,7 +25,8 @@
   <Base>
     <BaseTypeName>System.ServiceModel.Syndication.Rss20ItemFormatter</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Attributes>
     <Attribute FrameworkAlternate="xamarinmac-3.0">
       <AttributeName>System.Xml.Serialization.XmlRoot("item", Namespace="")</AttributeName>

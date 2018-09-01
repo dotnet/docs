@@ -1,4 +1,4 @@
-﻿<Type Name="RuleSet" FullName="System.Workflow.Activities.Rules.RuleSet">
+<Type Name="RuleSet" FullName="System.Workflow.Activities.Rules.RuleSet">
   <TypeSignature Language="C#" Value="public class RuleSet" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RuleSet extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleSet" />
@@ -22,6 +22,7 @@
   <Docs>
     <summary>Contains a collection of <see cref="T:System.Workflow.Activities.Rules.Rule" /> classes along with the semantics for forward-chaining execution of those rules. A <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> can be executed directly in code or using the <see cref="T:System.Workflow.Activities.PolicyActivity" /> activity.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa349441(v=vs.90)">Forward Chaining of Rules</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

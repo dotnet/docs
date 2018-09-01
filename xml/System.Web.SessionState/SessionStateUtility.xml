@@ -1,4 +1,4 @@
-﻿<Type Name="SessionStateUtility" FullName="System.Web.SessionState.SessionStateUtility">
+<Type Name="SessionStateUtility" FullName="System.Web.SessionState.SessionStateUtility">
   <TypeSignature Language="C#" Value="public static class SessionStateUtility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SessionStateUtility extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionStateUtility" />
@@ -59,6 +59,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
   </Docs>
   <Members>
     <Member MemberName="AddHttpSessionStateToContext">

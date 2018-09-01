@@ -1,4 +1,4 @@
-﻿<Type Name="JapaneseLunisolarCalendar" FullName="System.Globalization.JapaneseLunisolarCalendar">
+<Type Name="JapaneseLunisolarCalendar" FullName="System.Globalization.JapaneseLunisolarCalendar">
   <TypeSignature Language="C#" Value="public class JapaneseLunisolarCalendar : System.Globalization.EastAsianLunisolarCalendar" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit JapaneseLunisolarCalendar extends System.Globalization.EastAsianLunisolarCalendar" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.JapaneseLunisolarCalendar" />
@@ -53,6 +53,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Globalization.JapaneseCalendar" />
+    <related type="Article" href="~/docs/standard/datetime/working-with-calendars.md">Working with Calendars</related>
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Calendar-3360a84a">Sample: Calendar Week Range Utility</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="IDataObject" FullName="System.Windows.IDataObject">
+<Type Name="IDataObject" FullName="System.Windows.IDataObject">
   <TypeSignature Language="C#" Value="public interface IDataObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.IDataObject" />
@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160014">Load a Dropped File Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="GetData">
@@ -72,6 +73,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160014">Load a Dropped File Sample</related>
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -110,6 +112,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160014">Load a Dropped File Sample</related>
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -153,6 +156,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160014">Load a Dropped File Sample</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetDataPresent">
@@ -215,6 +219,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160014">Load a Dropped File Sample</related>
       </Docs>
     </Member>
     <Member MemberName="GetDataPresent">
@@ -258,6 +263,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160014">Load a Dropped File Sample</related>
       </Docs>
     </Member>
     <Member MemberName="GetDataPresent">
@@ -316,6 +322,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160014">Load a Dropped File Sample</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetFormats">

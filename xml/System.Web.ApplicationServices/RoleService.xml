@@ -1,4 +1,4 @@
-﻿<Type Name="RoleService" FullName="System.Web.ApplicationServices.RoleService">
+<Type Name="RoleService" FullName="System.Web.ApplicationServices.RoleService">
   <TypeSignature Language="C#" Value="public class RoleService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RoleService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.RoleService" />
@@ -43,6 +43,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/16d05285-2a63-4d46-a8c4-7c6672697912">Windows Communication Foundation Role Service Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -101,6 +102,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">Role management is not enabled.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/16d05285-2a63-4d46-a8c4-7c6672697912">Windows Communication Foundation Role Service Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsCurrentUserInRole">
@@ -146,6 +148,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="role" /> is <see langword="null" /> or the user is not logged in.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">Role management is not enabled.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/16d05285-2a63-4d46-a8c4-7c6672697912">Windows Communication Foundation Role Service Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SelectingProvider">

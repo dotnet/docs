@@ -1,4 +1,4 @@
-﻿<Type Name="EventKeyword" FullName="System.Diagnostics.Eventing.Reader.EventKeyword">
+<Type Name="EventKeyword" FullName="System.Diagnostics.Eventing.Reader.EventKeyword">
   <TypeSignature Language="C#" Value="public sealed class EventKeyword" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventKeyword extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventKeyword" />
@@ -26,6 +26,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
   </Docs>
   <Members>
     <Member MemberName="DisplayName">
@@ -48,6 +50,8 @@
         <summary>Gets the localized name of the keyword.</summary>
         <value>Returns a string that contains a localized name for this keyword.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -70,6 +74,8 @@
         <summary>Gets the non-localized name of the keyword.</summary>
         <value>Returns a string that contains the non-localized name of this keyword.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -104,6 +110,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
   </Members>

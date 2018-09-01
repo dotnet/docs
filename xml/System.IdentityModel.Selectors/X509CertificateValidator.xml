@@ -1,4 +1,4 @@
-﻿<Type Name="X509CertificateValidator" FullName="System.IdentityModel.Selectors.X509CertificateValidator">
+<Type Name="X509CertificateValidator" FullName="System.IdentityModel.Selectors.X509CertificateValidator">
   <TypeSignature Language="C#" Value="public abstract class X509CertificateValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract X509CertificateValidator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.X509CertificateValidator" />
@@ -20,7 +20,8 @@
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Validates an X.509 certificate.</summary>
     <remarks>

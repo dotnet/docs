@@ -1,4 +1,4 @@
-﻿<Type Name="ObjectListItem" FullName="System.Web.UI.MobileControls.ObjectListItem">
+<Type Name="ObjectListItem" FullName="System.Web.UI.MobileControls.ObjectListItem">
   <TypeSignature Language="C#" Value="public class ObjectListItem : System.Web.UI.MobileControls.MobileListItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectListItem extends System.Web.UI.MobileControls.MobileListItem" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListItem" />
@@ -36,6 +36,7 @@
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
     <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -101,6 +102,7 @@
         <summary>Gets or sets the specified field by index or name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -130,6 +132,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -166,6 +169,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">

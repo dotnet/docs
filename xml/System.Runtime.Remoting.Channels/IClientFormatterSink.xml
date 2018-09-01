@@ -1,4 +1,4 @@
-﻿<Type Name="IClientFormatterSink" FullName="System.Runtime.Remoting.Channels.IClientFormatterSink">
+<Type Name="IClientFormatterSink" FullName="System.Runtime.Remoting.Channels.IClientFormatterSink">
   <TypeSignature Language="C#" Value="public interface IClientFormatterSink : System.Runtime.Remoting.Channels.IClientChannelSink, System.Runtime.Remoting.Messaging.IMessageSink" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IClientFormatterSink implements class System.Runtime.Remoting.Channels.IChannelSinkBase, class System.Runtime.Remoting.Channels.IClientChannelSink, class System.Runtime.Remoting.Messaging.IMessageSink" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IClientFormatterSink" />
@@ -35,6 +35,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tdzwhfy3(v=vs.100)">Sinks and Sink Chains</related>
   </Docs>
   <Members />
 </Type>

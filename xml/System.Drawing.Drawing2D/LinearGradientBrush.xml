@@ -1,4 +1,4 @@
-﻿<Type Name="LinearGradientBrush" FullName="System.Drawing.Drawing2D.LinearGradientBrush">
+<Type Name="LinearGradientBrush" FullName="System.Drawing.Drawing2D.LinearGradientBrush">
   <TypeSignature Language="C#" Value="public sealed class LinearGradientBrush : System.Drawing.Brush" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LinearGradientBrush extends System.Drawing.Brush" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.LinearGradientBrush" />
@@ -41,6 +41,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/6c88e1cc-1217-4399-ac12-cb37592b9f01">How To: Create a Linear Gradient</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

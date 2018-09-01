@@ -1,4 +1,4 @@
-﻿<Type Name="Func&lt;T1,T2,TResult&gt;" FullName="System.Func&lt;T1,T2,TResult&gt;">
+<Type Name="Func&lt;T1,T2,TResult&gt;" FullName="System.Func&lt;T1,T2,TResult&gt;">
   <TypeSignature Language="C#" Value="public delegate TResult Func&lt;in T1,in T2,out TResult&gt;(T1 arg1, T2 arg2);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Func`3&lt;- T1, - T2, + TResult&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Func`3" />
@@ -110,5 +110,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md">Lambda Expressions (C# Programming Guide)</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/procedures/lambda-expressions.md">Lambda Expressions</related>
+    <related type="Article" href="~/docs/csharp/programming-guide/delegates/index.md">Delegates (C# Programming Guide)</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/delegates/index.md">Delegates in Visual Basic</related>
   </Docs>
 </Type>

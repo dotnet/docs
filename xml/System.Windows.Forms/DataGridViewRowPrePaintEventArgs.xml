@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewRowPrePaintEventArgs" FullName="System.Windows.Forms.DataGridViewRowPrePaintEventArgs">
+<Type Name="DataGridViewRowPrePaintEventArgs" FullName="System.Windows.Forms.DataGridViewRowPrePaintEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridViewRowPrePaintEventArgs : System.ComponentModel.HandledEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewRowPrePaintEventArgs extends System.ComponentModel.HandledEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowPrePaintEventArgs" />
@@ -331,6 +331,7 @@
         <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
         <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
         <altmember cref="P:System.Windows.Forms.DataGridViewRow.DefaultCellStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8321a8a6-6340-4fd1-b475-fa090b905aaf">Best Practices for Scaling the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="IsFirstDisplayedRow">

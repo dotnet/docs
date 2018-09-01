@@ -1,4 +1,4 @@
-﻿<Type Name="CodeDomProvider" FullName="System.CodeDom.Compiler.CodeDomProvider">
+<Type Name="CodeDomProvider" FullName="System.CodeDom.Compiler.CodeDomProvider">
   <TypeSignature Language="C#" Value="public abstract class CodeDomProvider : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CodeDomProvider extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CodeDomProvider" />
@@ -44,10 +44,10 @@
   
  The <xref:System.CodeDom.Compiler.CodeDomProvider> class provides static methods to discover and enumerate the <xref:System.CodeDom.Compiler.CodeDomProvider> implementations on a computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A> method returns the settings for all <xref:System.CodeDom.Compiler.CodeDomProvider> implementations on a computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A> method returns the settings for a specific <xref:System.CodeDom.Compiler.CodeDomProvider> implementation, based on the programming language name. The <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> method returns an instance of a <xref:System.CodeDom.Compiler.CodeDomProvider> implementation for a specific language.  
   
- For more details on language provider settings in the configuration file, see [Compiler and Language Provider Settings Schema](http://msdn.microsoft.com/library/c020b139-8699-4f0d-9ac9-70d0c5b2a8c8).  
+ For more details on language provider settings in the configuration file, see [Compiler and Language Provider Settings Schema](~/docs/framework/configure-apps/file-schema/compiler/index.md).  
   
 > [!NOTE]
->  This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown if either the immediate caller or the derived class does not have full trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/library/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown if either the immediate caller or the derived class does not have full trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/x4yx82e6(v=vs.100)).  
   
    
   
@@ -69,6 +69,7 @@
     <altmember cref="T:Microsoft.CSharp.CSharpCodeProvider" />
     <altmember cref="T:Microsoft.VisualBasic.VBCodeProvider" />
     <altmember cref="T:Microsoft.JScript.JScriptCodeProvider" />
+    <related type="Article" href="~/docs/framework/configure-apps/file-schema/compiler/index.md">Compiler and Language Provider Settings Schema</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1121,6 +1122,7 @@
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <altmember cref="T:System.CodeDom.Compiler.CompilerInfo" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/compiler/index.md">Compiler and Language Provider Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="GetCompilerInfo">
@@ -1159,7 +1161,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. For information about machine configuration files, see the Machine Configuration Files section in [Configuring Apps](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f). The <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A> method searches each provider configuration element for the specified language name. The returned <xref:System.CodeDom.Compiler.CompilerInfo> instance contains the configured language provider and compiler settings.  
+ The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. For information about machine configuration files, see the Machine Configuration Files section in [Configuring Apps](~/docs/framework/configure-apps/index.md). The <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A> method searches each provider configuration element for the specified language name. The returned <xref:System.CodeDom.Compiler.CompilerInfo> instance contains the configured language provider and compiler settings.  
   
  The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> method checks whether at least one provider implementation supports a specific language. You can validate a language name using <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> before passing it to <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A>. This prevents throwing a <xref:System.Configuration.ConfigurationException?displayProperty=nameWithType> when you access the <xref:System.CodeDom.Compiler.CompilerInfo> instance for an unsupported language name.  
   
@@ -1184,6 +1186,7 @@
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <altmember cref="T:System.CodeDom.Compiler.CompilerInfo" />
         <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage(System.String)" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/compiler/index.md">Compiler and Language Provider Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="GetConverter">
@@ -1285,6 +1288,7 @@
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension(System.String)" />
         <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateProvider(System.String)" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/compiler/index.md">Compiler and Language Provider Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="GetTypeOutput">
@@ -1387,6 +1391,7 @@
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension(System.String)" />
         <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateProvider(System.String)" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/compiler/index.md">Compiler and Language Provider Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="IsDefinedLanguage">
@@ -1445,6 +1450,7 @@
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateProvider(System.String)" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/compiler/index.md">Compiler and Language Provider Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="IsValidIdentifier">

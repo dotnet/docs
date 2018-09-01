@@ -1,4 +1,4 @@
-﻿<Type Name="NamedPipeConnectionPoolSettingsElement" FullName="System.ServiceModel.Configuration.NamedPipeConnectionPoolSettingsElement">
+<Type Name="NamedPipeConnectionPoolSettingsElement" FullName="System.ServiceModel.Configuration.NamedPipeConnectionPoolSettingsElement">
   <TypeSignature Language="C#" Value="public sealed class NamedPipeConnectionPoolSettingsElement : System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NamedPipeConnectionPoolSettingsElement extends System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NamedPipeConnectionPoolSettingsElement" />
@@ -18,6 +18,7 @@
   <Docs>
     <summary>Represents a configuration element that specifies additional connection pool settings for a Named Pipe transport. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/079bccb8-54b5-4436-a43d-5567763f72ce">NamedPipeConnectionPoolSettings</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlVideo" FullName="System.Web.UI.HtmlControls.HtmlVideo">
+<Type Name="HtmlVideo" FullName="System.Web.UI.HtmlControls.HtmlVideo">
   <TypeSignature Language="C#" Value="public class HtmlVideo : System.Web.UI.HtmlControls.HtmlContainerControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlVideo extends System.Web.UI.HtmlControls.HtmlContainerControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlVideo" />
@@ -16,6 +16,7 @@
   <Docs>
     <summary>Provides programmatic access to the HTML <see langword="&lt;video&gt;" /> element on the server.</summary>
     <remarks>To be added.</remarks>
+    <related type="ExternalDocumentation" href="http://dev.w3.org/html5/spec/the-video-element.html#the-video-element">video element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +66,7 @@
         <summary>Gets or sets the <see langword="poster" /> attribute.</summary>
         <value>The <see langword="poster" /> attribute.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://dev.w3.org/html5/spec/the-video-element.html#attr-video-poster">poster attribute</related>
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -121,6 +123,7 @@
         <summary>Gets or sets the <see langword="src" /> attribute.</summary>
         <value>The <see langword="src" /> attribute.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://dev.w3.org/html5/spec/media-elements.html#attr-media-src">src attribute</related>
       </Docs>
     </Member>
   </Members>

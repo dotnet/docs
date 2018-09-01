@@ -1,4 +1,4 @@
-﻿<Type Name="BaseTemplateParser" FullName="System.Web.UI.BaseTemplateParser">
+<Type Name="BaseTemplateParser" FullName="System.Web.UI.BaseTemplateParser">
   <TypeSignature Language="C#" Value="public abstract class BaseTemplateParser : System.Web.UI.TemplateParser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseTemplateParser extends System.Web.UI.TemplateParser" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.BaseTemplateParser" />
@@ -25,6 +25,7 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <related type="Article" href="https://msdn.microsoft.com/library/a638e52e-eb7d-41be-948e-e0c4c3b9d0a4">Template Sets and Templated Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

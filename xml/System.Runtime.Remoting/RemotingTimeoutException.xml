@@ -1,4 +1,4 @@
-﻿<Type Name="RemotingTimeoutException" FullName="System.Runtime.Remoting.RemotingTimeoutException">
+<Type Name="RemotingTimeoutException" FullName="System.Runtime.Remoting.RemotingTimeoutException">
   <TypeSignature Language="C#" Value="public class RemotingTimeoutException : System.Runtime.Remoting.RemotingException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RemotingTimeoutException extends System.Runtime.Remoting.RemotingException" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.RemotingTimeoutException" />
@@ -41,6 +41,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -160,6 +161,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
   </Members>

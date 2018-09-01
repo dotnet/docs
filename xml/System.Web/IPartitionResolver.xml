@@ -1,4 +1,4 @@
-﻿<Type Name="IPartitionResolver" FullName="System.Web.IPartitionResolver">
+<Type Name="IPartitionResolver" FullName="System.Web.IPartitionResolver">
   <TypeSignature Language="C#" Value="public interface IPartitionResolver" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPartitionResolver" />
   <TypeSignature Language="DocId" Value="T:System.Web.IPartitionResolver" />
@@ -26,6 +26,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.SessionState.SessionStateMode" />
+    <related type="Article" href="http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4">Session State Modes</related>
   </Docs>
   <Members>
     <Member MemberName="Initialize">
@@ -55,6 +56,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4">Session State Modes</related>
       </Docs>
     </Member>
     <Member MemberName="ResolvePartition">
@@ -89,6 +91,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.SessionState.HttpSessionState.SessionID" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4">Session State Modes</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="SymmetricSecurityBindingElement" FullName="System.ServiceModel.Channels.SymmetricSecurityBindingElement">
+<Type Name="SymmetricSecurityBindingElement" FullName="System.ServiceModel.Channels.SymmetricSecurityBindingElement">
   <TypeSignature Language="C#" Value="public sealed class SymmetricSecurityBindingElement : System.ServiceModel.Channels.SecurityBindingElement, System.ServiceModel.Description.IPolicyExportExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SymmetricSecurityBindingElement extends System.ServiceModel.Channels.SecurityBindingElement implements class System.ServiceModel.Description.IPolicyExportExtension" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.SymmetricSecurityBindingElement" />
@@ -43,6 +43,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/a7c7747a-5b8c-463f-8493-7266dac75066">How To: Create a SecurityBindingElement for a Specified Authentication Mode</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

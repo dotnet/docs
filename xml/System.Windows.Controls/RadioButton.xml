@@ -1,4 +1,4 @@
-﻿<Type Name="RadioButton" FullName="System.Windows.Controls.RadioButton">
+<Type Name="RadioButton" FullName="System.Windows.Controls.RadioButton">
   <TypeSignature Language="C#" Value="public class RadioButton : System.Windows.Controls.Primitives.ToggleButton" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RadioButton extends System.Windows.Controls.Primitives.ToggleButton" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.RadioButton" />
@@ -55,6 +55,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160053">WPF Controls Gallery Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

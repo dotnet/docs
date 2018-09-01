@@ -1,4 +1,4 @@
-﻿<Type Name="IdentityElement" FullName="System.ServiceModel.Configuration.IdentityElement">
+<Type Name="IdentityElement" FullName="System.ServiceModel.Configuration.IdentityElement">
   <TypeSignature Language="C#" Value="public sealed class IdentityElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IdentityElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.IdentityElement" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents a configuration element that enables the authentication of an endpoint by other endpoints exchanging messages with it. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/79fa8c1c-85bb-4b67-bc67-bfaf721303f8">Service Identity Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

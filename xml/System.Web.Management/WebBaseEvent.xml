@@ -1,4 +1,4 @@
-﻿<Type Name="WebBaseEvent" FullName="System.Web.Management.WebBaseEvent">
+<Type Name="WebBaseEvent" FullName="System.Web.Management.WebBaseEvent">
   <TypeSignature Language="C#" Value="public class WebBaseEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi WebBaseEvent extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebBaseEvent" />
@@ -64,6 +64,7 @@
   
  The event code you specify for your custom event must be greater than <see cref="F:System.Web.Management.WebEventCodes.WebExtendedBase" />.</para>
     </block>
+    <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -646,6 +647,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f897c794-10d3-414c-86b7-59b66564bbf1">ASP.NET Trust Levels and Policy Files</related>
       </Docs>
     </Member>
     <Member MemberName="Raise">
@@ -690,6 +692,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.Management.WebBaseEvent.EventCode" /> property of <paramref name="eventRaised" /> has a value that is reserved for ASP.NET.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/f897c794-10d3-414c-86b7-59b66564bbf1">ASP.NET Trust Levels and Policy Files</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ToString">

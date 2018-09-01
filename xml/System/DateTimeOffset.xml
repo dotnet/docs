@@ -1,4 +1,4 @@
-﻿<Type Name="DateTimeOffset" FullName="System.DateTimeOffset">
+<Type Name="DateTimeOffset" FullName="System.DateTimeOffset">
   <TypeSignature Language="C#" Value="public struct DateTimeOffset : IComparable, IComparable&lt;DateTimeOffset&gt;, IEquatable&lt;DateTimeOffset&gt;, IFormattable, System.Runtime.Serialization.IDeserializationCallback, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DateTimeOffset extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;valuetype System.DateTimeOffset&gt;, class System.IEquatable`1&lt;valuetype System.DateTimeOffset&gt;, class System.IFormattable, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.DateTimeOffset" />
@@ -98,6 +98,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/datetime/choosing-between-datetime.md">Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo</related>
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -170,6 +172,7 @@
  -or-  
   
  The UTC date and time that results from applying the offset is later than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
+        <related type="Article" href="~/docs/standard/datetime/instantiating-a-datetimeoffset-object.md">Instantiating a DateTimeOffset Object</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -244,6 +247,7 @@
  -or-  
   
  <see cref="P:System.DateTimeOffset.UtcDateTime" /> is less than <see cref="F:System.DateTimeOffset.MinValue" /> or greater than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
+        <related type="Article" href="~/docs/standard/datetime/instantiating-a-datetimeoffset-object.md">Instantiating a DateTimeOffset Object</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -311,6 +315,7 @@
  -or-  
   
  <paramref name="Offset" /> s less than -14 hours or greater than 14 hours.</exception>
+        <related type="Article" href="~/docs/standard/datetime/instantiating-a-datetimeoffset-object.md">Instantiating a DateTimeOffset Object</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -406,6 +411,7 @@
  -or-  
   
  The <see cref="P:System.DateTimeOffset.UtcDateTime" /> property is earlier than <see cref="F:System.DateTimeOffset.MinValue" /> or later than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
+        <related type="Article" href="~/docs/standard/datetime/instantiating-a-datetimeoffset-object.md">Instantiating a DateTimeOffset Object</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -507,6 +513,7 @@
  -or-  
   
  The <see cref="P:System.DateTimeOffset.UtcDateTime" /> property is earlier than <see cref="F:System.DateTimeOffset.MinValue" /> or later than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
+        <related type="Article" href="~/docs/standard/datetime/instantiating-a-datetimeoffset-object.md">Instantiating a DateTimeOffset Object</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -611,6 +618,7 @@
  -or-  
   
  The <see cref="P:System.DateTimeOffset.UtcDateTime" /> property is earlier than <see cref="F:System.DateTimeOffset.MinValue" /> or later than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
+        <related type="Article" href="~/docs/standard/datetime/instantiating-a-datetimeoffset-object.md">Instantiating a DateTimeOffset Object</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -680,6 +688,7 @@
   
  The resulting <see cref="T:System.DateTimeOffset" /> value is greater than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
         <altmember cref="M:System.DateTimeOffset.op_Addition(System.DateTimeOffset,System.TimeSpan)" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddDays">
@@ -814,6 +823,7 @@
  -or-  
   
  The resulting <see cref="T:System.DateTimeOffset" /> value is greater than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddMilliseconds">
@@ -871,6 +881,7 @@
  -or-  
   
  The resulting <see cref="T:System.DateTimeOffset" /> value is greater than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddMinutes">
@@ -930,6 +941,7 @@
  -or-  
   
  The resulting <see cref="T:System.DateTimeOffset" /> value is greater than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddMonths">
@@ -1058,6 +1070,7 @@
  -or-  
   
  The resulting <see cref="T:System.DateTimeOffset" /> value is greater than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddTicks">
@@ -1128,6 +1141,7 @@
  -or-  
   
  The resulting <see cref="T:System.DateTimeOffset" /> value is greater than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddYears">
@@ -1402,6 +1416,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard DateTime Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom DateTime Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="DateTime">
@@ -1458,6 +1474,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.DateTimeOffset.LocalDateTime" />
+        <related type="Article" href="~/docs/standard/datetime/converting-between-datetime-and-offset.md">Converting Between DateTime and DateTimeOffset</related>
       </Docs>
     </Member>
     <Member MemberName="Day">
@@ -2648,6 +2665,7 @@
   
  The resulting <see cref="T:System.DateTimeOffset" /> value is greater than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
         <altmember cref="M:System.DateTimeOffset.Add(System.TimeSpan)" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -3149,6 +3167,7 @@
  The equivalent method for this operator is <xref:System.DateTimeOffset.Subtract%28System.TimeSpan%29?displayProperty=nameWithType>.]]></format>
         </remarks>
         <altmember cref="M:System.DateTimeOffset.Subtract(System.DateTimeOffset)" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -3211,6 +3230,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTimeOffset" /> value is less than <see cref="F:System.DateTimeOffset.MinValue" /> or greater than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
         <altmember cref="M:System.DateTimeOffset.Subtract(System.TimeSpan)" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Parse">
@@ -3657,6 +3677,8 @@ The following example parses an array of strings that are expected to conform to
           <para>In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <see cref="Overload:System.DateTimeOffset.ParseExact" /> method throws a <see cref="T:System.FormatException" /> if the string to be parsed contains an hour component and an AM/PM designator that are not in agreement. In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, the AM/PM designator is ignored.</para>
         </block>
         <altmember cref="Overload:System.DateTimeOffset.TryParseExact" />
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -3932,6 +3954,8 @@ Strings that do not specify a UTC offset are assumed to have the offset of the l
           <para>In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <see cref="Overload:System.DateTimeOffset.ParseExact" /> method throws a <see cref="T:System.FormatException" /> if the string to be parsed contains an hour component and an AM/PM designator that are not in agreement. In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, the AM/PM designator is ignored.</para>
         </block>
         <altmember cref="Overload:System.DateTimeOffset.TryParseExact" />
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -4051,6 +4075,8 @@ Strings that do not specify a UTC offset are assumed to have the offset of the l
           <para>In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <see cref="Overload:System.DateTimeOffset.ParseExact" /> method throws a <see cref="T:System.FormatException" /> if the string to be parsed contains an hour component and an AM/PM designator that are not in agreement. In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, the AM/PM designator is ignored.</para>
         </block>
         <altmember cref="Overload:System.DateTimeOffset.TryParseExact" />
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Second">
@@ -4183,6 +4209,7 @@ Strings that do not specify a UTC offset are assumed to have the offset of the l
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -4250,6 +4277,7 @@ Strings that do not specify a UTC offset are assumed to have the offset of the l
  -or-  
   
  The resulting <see cref="T:System.DateTimeOffset" /> value is greater than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -4920,6 +4948,8 @@ Me.ToUtcDateTime().ToFileTime()
  [!code-csharp[System.DateTimeOffset.ToString.ArgumentOutOfRangeException#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetimeoffset.tostring.argumentoutofrangeexception/cs/datetimeoffset.tostring.argumentoutofrangeexception3.cs#3)]
  [!code-vb[System.DateTimeOffset.ToString.ArgumentOutOfRangeException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetimeoffset.tostring.argumentoutofrangeexception/vb/datetimeoffset.tostring.argumentoutofrangeexception3.vb#3)]</para>
         </block>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -5016,6 +5046,9 @@ Me.ToUtcDateTime().ToFileTime()
  [!code-csharp[System.DateTimeOffset.ToString.ArgumentOutOfRangeException#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetimeoffset.tostring.argumentoutofrangeexception/cs/datetimeoffset.tostring.argumentoutofrangeexception4.cs#4)]
  [!code-vb[System.DateTimeOffset.ToString.ArgumentOutOfRangeException#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetimeoffset.tostring.argumentoutofrangeexception/vb/datetimeoffset.tostring.argumentoutofrangeexception4.vb#4)]</para>
         </block>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
       </Docs>
     </Member>
     <Member MemberName="ToUniversalTime">
@@ -5314,6 +5347,7 @@ Me.ToUtcDateTime().ToFileTime()
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.DateTimeOffset.Parse" />
+        <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
       </Docs>
     </Member>
     <Member MemberName="TryParse">

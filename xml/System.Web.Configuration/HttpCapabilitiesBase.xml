@@ -1,4 +1,4 @@
-﻿<Type Name="HttpCapabilitiesBase" FullName="System.Web.Configuration.HttpCapabilitiesBase">
+<Type Name="HttpCapabilitiesBase" FullName="System.Web.Configuration.HttpCapabilitiesBase">
   <TypeSignature Language="C#" Value="public class HttpCapabilitiesBase : System.Web.UI.IFilterResolutionService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpCapabilitiesBase extends System.Object implements class System.Web.UI.IFilterResolutionService" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpCapabilitiesBase" />
@@ -986,6 +986,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=42245">ECMA official Web site</related>
       </Docs>
     </Member>
     <Member MemberName="Frames">

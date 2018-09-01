@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlTrack" FullName="System.Web.UI.HtmlControls.HtmlTrack">
+<Type Name="HtmlTrack" FullName="System.Web.UI.HtmlControls.HtmlTrack">
   <TypeSignature Language="C#" Value="public class HtmlTrack : System.Web.UI.HtmlControls.HtmlControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlTrack extends System.Web.UI.HtmlControls.HtmlControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlTrack" />
@@ -21,6 +21,7 @@
   <Docs>
     <summary>Provides programmatic access to the HTML <see langword="&lt;track&gt;" /> element.</summary>
     <remarks>To be added.</remarks>
+    <related type="ExternalDocumentation" href="http://dev.w3.org/html5/spec/the-track-element.html#the-track-element">track element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -94,6 +95,7 @@
         <summary>Gets or sets the <see langword="src" /> attribute.</summary>
         <value>The <see langword="src" /> attribute.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://dev.w3.org/html5/spec/the-track-element.html#attr-track-src">src attribute</related>
       </Docs>
     </Member>
   </Members>

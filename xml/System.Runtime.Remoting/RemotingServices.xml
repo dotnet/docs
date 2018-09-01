@@ -1,4 +1,4 @@
-﻿<Type Name="RemotingServices" FullName="System.Runtime.Remoting.RemotingServices">
+<Type Name="RemotingServices" FullName="System.Runtime.Remoting.RemotingServices">
   <TypeSignature Language="C#" Value="public static class RemotingServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed RemotingServices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.RemotingServices" />
@@ -759,7 +759,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about application domains, see [Application Domains](http://msdn.microsoft.com/library/39e57d07-a740-4cd4-ae82-e119ea3856c1).  
+ For information about application domains, see [Application Domains](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cxk374d9(v=vs.90)).  
   
    
   
@@ -770,6 +770,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cxk374d9(v=vs.90)">Application Domains</related>
       </Docs>
     </Member>
     <Member MemberName="IsObjectOutOfContext">
@@ -1040,6 +1041,7 @@
         <altmember cref="T:System.Uri" />
         <altmember cref="T:System.Runtime.Remoting.Proxies.RealProxy" />
         <altmember cref="T:System.Runtime.Remoting.ObjRef" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cxk374d9(v=vs.90)">Application Domains</related>
       </Docs>
     </Member>
     <Member MemberName="Marshal">
@@ -1104,6 +1106,7 @@
         <altmember cref="T:System.Uri" />
         <altmember cref="T:System.Runtime.Remoting.Proxies.RealProxy" />
         <altmember cref="T:System.Runtime.Remoting.ObjRef" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cxk374d9(v=vs.90)">Application Domains</related>
       </Docs>
     </Member>
     <Member MemberName="Marshal">
@@ -1163,6 +1166,7 @@
         <altmember cref="T:System.Uri" />
         <altmember cref="T:System.Runtime.Remoting.Proxies.RealProxy" />
         <altmember cref="T:System.Runtime.Remoting.ObjRef" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cxk374d9(v=vs.90)">Application Domains</related>
       </Docs>
     </Member>
     <Member MemberName="SetObjectUriForMarshal">

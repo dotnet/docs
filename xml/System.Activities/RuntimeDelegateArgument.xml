@@ -1,4 +1,4 @@
-﻿<Type Name="RuntimeDelegateArgument" FullName="System.Activities.RuntimeDelegateArgument">
+<Type Name="RuntimeDelegateArgument" FullName="System.Activities.RuntimeDelegateArgument">
   <TypeSignature Language="C#" Value="public sealed class RuntimeDelegateArgument" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RuntimeDelegateArgument extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.RuntimeDelegateArgument" />
@@ -41,7 +41,8 @@
         <param name="direction">One of the enumeration values that specifies the direction of data flow through an argument.</param>
         <param name="boundArgument">The delegate argument that is represented by this <see cref="T:System.Activities.RuntimeDelegateArgument" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Activities.RuntimeDelegateArgument" /> class using the specified name, data type, argument direction, and <see cref="T:System.Activities.DelegateArgument" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BoundArgument">

@@ -1,4 +1,4 @@
-﻿<Type Name="RegexEditorDialog" FullName="System.Web.UI.Design.WebControls.RegexEditorDialog">
+<Type Name="RegexEditorDialog" FullName="System.Web.UI.Design.WebControls.RegexEditorDialog">
   <TypeSignature Language="C#" Value="public class RegexEditorDialog : System.Windows.Forms.Form" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RegexEditorDialog extends System.Windows.Forms.Form" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.RegexEditorDialog" />
@@ -24,6 +24,7 @@
     <summary>Provides a dialog box for editing regular expressions used by the <see cref="T:System.Web.UI.WebControls.RegularExpressionValidator" />.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Text.RegularExpressions.Regex" />
+    <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,6 +49,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.RegexEditorDialog" /> class.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Text.RegularExpressions.Regex" />
+        <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
       </Docs>
     </Member>
     <Member MemberName="cmdHelp_Click">
@@ -82,6 +84,7 @@
         <summary>Represents the method that will handle the Help event of the dialog box.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Text.RegularExpressions.Regex" />
+        <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
       </Docs>
     </Member>
     <Member MemberName="cmdOK_Click">
@@ -111,6 +114,7 @@
         <summary>Represents the method that will handle the OK event of the dialog box.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Text.RegularExpressions.Regex" />
+        <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
       </Docs>
     </Member>
     <Member MemberName="cmdTestValidate_Click">
@@ -140,6 +144,7 @@
         <summary>Represents the method that will handle the **TestValidate** event of the dialog box.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Text.RegularExpressions.Regex" />
+        <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -179,9 +184,10 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
         <altmember cref="T:System.Text.RegularExpressions.Regex" />
+        <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
       </Docs>
     </Member>
     <Member MemberName="lstStandardExpressions_SelectedIndexChanged">
@@ -211,6 +217,7 @@
         <summary>Represents the method that will handle the SelectedIndexChanged event of the dialog box.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Text.RegularExpressions.Regex" />
+        <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
       </Docs>
     </Member>
     <Member MemberName="RegexTypeEditor_Activated">
@@ -240,6 +247,7 @@
         <summary>Represents the method that will handle the Activated event of dialog box.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Text.RegularExpressions.Regex" />
+        <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
       </Docs>
     </Member>
     <Member MemberName="RegularExpression">
@@ -272,6 +280,7 @@
         <value>The name of the regular expression.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Text.RegularExpressions.Regex" />
+        <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
       </Docs>
     </Member>
     <Member MemberName="txtExpression_TextChanged">
@@ -301,6 +310,7 @@
         <summary>Represents the method that will handle the **TextChanged** event of the dialog box.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Text.RegularExpressions.Regex" />
+        <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
       </Docs>
     </Member>
   </Members>

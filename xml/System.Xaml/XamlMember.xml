@@ -1,4 +1,4 @@
-﻿<Type Name="XamlMember" FullName="System.Xaml.XamlMember">
+<Type Name="XamlMember" FullName="System.Xaml.XamlMember">
   <TypeSignature Language="C#" Value="public class XamlMember : IEquatable&lt;System.Xaml.XamlMember&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlMember extends System.Object implements class System.IEquatable`1&lt;class System.Xaml.XamlMember&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlMember" />
@@ -52,6 +52,7 @@
     <altmember cref="T:System.Xaml.XamlType" />
     <altmember cref="T:System.Xaml.XamlDirective" />
     <altmember cref="T:System.Xaml.XamlObjectWriter" />
+    <related type="Article" href="http://msdn.microsoft.com/library/7c11abec-1075-474c-9d9b-778e5dab21c3">Understanding XAML Node Stream Structures and Concepts</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -790,6 +791,7 @@
         <value>
           <see langword="true" /> if this <see cref="T:System.Xaml.XamlMember" /> is initialized with a valid <see langword="xamlName" /> string; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/11e4cada-41d2-494d-9531-0d3df4dfcbe3">XamlName</related>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -1660,6 +1662,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/11e4cada-41d2-494d-9531-0d3df4dfcbe3">XamlName</related>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">

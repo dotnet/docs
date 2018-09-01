@@ -1,4 +1,4 @@
-﻿<Type Name="DataSourceExpression" FullName="System.Web.UI.WebControls.Expressions.DataSourceExpression">
+<Type Name="DataSourceExpression" FullName="System.Web.UI.WebControls.Expressions.DataSourceExpression">
   <TypeSignature Language="C#" Value="public abstract class DataSourceExpression : System.Web.UI.IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataSourceExpression extends System.Object implements class System.Web.UI.IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.DataSourceExpression" />
@@ -20,6 +20,7 @@
   <Docs>
     <summary>Represents a base class for creating expression classes.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/b93e32b9-af41-4539-a009-6cbbe809c702">QueryExtender Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -66,6 +66,11 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
     </block>
     <altmember cref="T:System.Web.SiteMapProvider" />
     <altmember cref="T:System.Web.XmlSiteMapProvider" />
+    <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/4f3ce72a-4fa3-4c3a-94c8-3e2bc4a92d85">ASP.NET Site Navigation Providers</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433">Working with Assemblies and the Global Assembly Cache</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1223,6 +1228,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.SiteMapProvider.IsAccessibleToUser(System.Web.HttpContext,System.Web.SiteMapNode)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4028528f-e01c-4ae3-bd8d-bb161718fe61">ASP.NET Site-Map Security Trimming</related>
       </Docs>
     </Member>
     <Member MemberName="SiteMapResolve">

@@ -1,4 +1,4 @@
-﻿<Type Name="SqlNotificationInfo" FullName="System.Data.SqlClient.SqlNotificationInfo">
+<Type Name="SqlNotificationInfo" FullName="System.Data.SqlClient.SqlNotificationInfo">
   <TypeSignature Language="C#" Value="public enum SqlNotificationInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SqlNotificationInfo extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlNotificationInfo" />
@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName="AlreadyChanged">
@@ -46,6 +47,7 @@
       <MemberValue>-2</MemberValue>
       <Docs>
         <summary>The <see langword="SqlDependency" /> object already fired, and new commands cannot be added to it.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Alter">
@@ -68,6 +70,7 @@
       <MemberValue>5</MemberValue>
       <Docs>
         <summary>An underlying server object related to the query was modified.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -90,6 +93,7 @@
       <MemberValue>3</MemberValue>
       <Docs>
         <summary>Data was changed by a DELETE statement.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Drop">
@@ -112,6 +116,7 @@
       <MemberValue>4</MemberValue>
       <Docs>
         <summary>An underlying object related to the query was dropped.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -134,6 +139,7 @@
       <MemberValue>7</MemberValue>
       <Docs>
         <summary>An internal server error occurred.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Expired">
@@ -156,6 +162,7 @@
       <MemberValue>12</MemberValue>
       <Docs>
         <summary>The <see langword="SqlDependency" /> object has expired.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -178,6 +185,7 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>Data was changed by an INSERT statement.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -200,6 +208,7 @@
       <MemberValue>9</MemberValue>
       <Docs>
         <summary>A statement was provided that cannot be notified (for example, an UPDATE statement).</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Isolation">
@@ -222,6 +231,7 @@
       <MemberValue>11</MemberValue>
       <Docs>
         <summary>The statement was executed under an isolation mode that was not valid (for example, Snapshot).</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -243,6 +253,7 @@
       <MemberValue>16</MemberValue>
       <Docs>
         <summary>Used to distinguish the server-side cause for a query notification firing.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Options">
@@ -265,6 +276,7 @@
       <MemberValue>10</MemberValue>
       <Docs>
         <summary>The SET options were not set appropriately at subscription time.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousFire">
@@ -287,6 +299,7 @@
       <MemberValue>14</MemberValue>
       <Docs>
         <summary>A previous statement has caused query notifications to fire under the current transaction.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Query">
@@ -309,6 +322,7 @@
       <MemberValue>8</MemberValue>
       <Docs>
         <summary>A SELECT statement that cannot be notified or was provided.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Resource">
@@ -331,6 +345,7 @@
       <MemberValue>13</MemberValue>
       <Docs>
         <summary>Fires as a result of server resource pressure.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Restart">
@@ -353,6 +368,7 @@
       <MemberValue>6</MemberValue>
       <Docs>
         <summary>The server was restarted (notifications are sent during restart.).</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TemplateLimit">
@@ -375,6 +391,7 @@
       <MemberValue>15</MemberValue>
       <Docs>
         <summary>The subscribing query causes the number of templates on one of the target tables to exceed the maximum allowable limit.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Truncate">
@@ -397,6 +414,7 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>One or more tables were truncated.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -419,6 +437,7 @@
       <MemberValue>-1</MemberValue>
       <Docs>
         <summary>Used when the info option sent by the server was not recognized by the client.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -441,6 +460,7 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>Data was changed by an UPDATE statement.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

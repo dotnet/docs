@@ -1,4 +1,4 @@
-﻿<Type Name="RibbonControl" FullName="System.Windows.Controls.Ribbon.RibbonControl">
+<Type Name="RibbonControl" FullName="System.Windows.Controls.Ribbon.RibbonControl">
   <TypeSignature Language="C#" Value="public class RibbonControl : System.Windows.Controls.ContentControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonControl extends System.Windows.Controls.ContentControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonControl" />
@@ -89,6 +89,7 @@ Ribbon controls that are selected
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94">Ribbon Layout and Resizing</related>
       </Docs>
     </Member>
     <Member MemberName="ControlSizeDefinitionProperty">

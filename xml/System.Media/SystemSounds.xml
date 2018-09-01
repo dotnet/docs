@@ -1,4 +1,4 @@
-﻿<Type Name="SystemSounds" FullName="System.Media.SystemSounds">
+<Type Name="SystemSounds" FullName="System.Media.SystemSounds">
   <TypeSignature Language="C#" Value="public sealed class SystemSounds" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SystemSounds extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Media.SystemSounds" />
@@ -28,6 +28,7 @@
     </remarks>
     <altmember cref="T:System.Media.SystemSound" />
     <altmember cref="T:System.Media.SoundPlayer" />
+    <related type="Article" href="http://msdn.microsoft.com/library/f3945af9-045c-4e2d-b251-377c37ca2d77">SoundPlayer Class (Windows Forms)</related>
   </Docs>
   <Members>
     <Member MemberName="Asterisk">
@@ -63,6 +64,7 @@
         </remarks>
         <altmember cref="T:System.Media.SystemSound" />
         <altmember cref="T:System.Media.SoundPlayer" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f3945af9-045c-4e2d-b251-377c37ca2d77">SoundPlayer Class (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="Beep">
@@ -98,6 +100,7 @@
         </remarks>
         <altmember cref="T:System.Media.SystemSound" />
         <altmember cref="T:System.Media.SoundPlayer" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f3945af9-045c-4e2d-b251-377c37ca2d77">SoundPlayer Class (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="Exclamation">
@@ -133,6 +136,7 @@
         </remarks>
         <altmember cref="T:System.Media.SystemSound" />
         <altmember cref="T:System.Media.SoundPlayer" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f3945af9-045c-4e2d-b251-377c37ca2d77">SoundPlayer Class (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="Hand">
@@ -168,6 +172,7 @@
         </remarks>
         <altmember cref="T:System.Media.SystemSound" />
         <altmember cref="T:System.Media.SoundPlayer" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f3945af9-045c-4e2d-b251-377c37ca2d77">SoundPlayer Class (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="Question">
@@ -203,6 +208,7 @@
         </remarks>
         <altmember cref="T:System.Media.SystemSound" />
         <altmember cref="T:System.Media.SoundPlayer" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f3945af9-045c-4e2d-b251-377c37ca2d77">SoundPlayer Class (Windows Forms)</related>
       </Docs>
     </Member>
   </Members>

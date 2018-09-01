@@ -1,4 +1,4 @@
-﻿<Type Name="FlowControl" FullName="Microsoft.VisualBasic.CompilerServices.FlowControl">
+<Type Name="FlowControl" FullName="Microsoft.VisualBasic.CompilerServices.FlowControl">
   <TypeSignature Language="C#" Value="public sealed class FlowControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FlowControl extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.FlowControl" />
@@ -37,6 +37,8 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <related type="Article" href="~/docs/visual-basic/language-reference/statements/for-next-statement.md">For...Next Statement (Visual Basic)</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/statements/for-each-next-statement.md">For Each...Next Statement (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName="CheckForSyncLockOnValueType">
@@ -71,6 +73,8 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/for-next-statement.md">For...Next Statement (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/for-each-next-statement.md">For Each...Next Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ForEachInArr">
@@ -106,6 +110,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/for-each-next-statement.md">For Each...Next Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ForEachInObj">
@@ -141,6 +146,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/for-each-next-statement.md">For Each...Next Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ForEachNextObj">
@@ -179,6 +185,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/for-each-next-statement.md">For Each...Next Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ForLoopInitObj">
@@ -225,6 +232,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/for-next-statement.md">For...Next Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ForNextCheckDec">
@@ -265,6 +273,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/for-next-statement.md">For...Next Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ForNextCheckObj">
@@ -305,6 +314,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/for-next-statement.md">For...Next Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ForNextCheckR4">
@@ -345,6 +355,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/for-next-statement.md">For...Next Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ForNextCheckR8">
@@ -385,6 +396,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/for-next-statement.md">For...Next Statement (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

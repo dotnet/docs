@@ -1,4 +1,4 @@
-﻿<Type Name="IDataBindingSchemaProvider" FullName="System.Web.UI.Design.IDataBindingSchemaProvider">
+<Type Name="IDataBindingSchemaProvider" FullName="System.Web.UI.Design.IDataBindingSchemaProvider">
   <TypeSignature Language="C#" Value="public interface IDataBindingSchemaProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataBindingSchemaProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDataBindingSchemaProvider" />
@@ -21,6 +21,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName="CanRefreshSchema">
@@ -44,6 +46,8 @@
         <value>
           <see langword="true" />, if the schema can be refreshed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="RefreshSchema">
@@ -78,6 +82,8 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -101,6 +107,8 @@
         <value>The current schema object for the designer.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.Design.IDataSourceViewSchema" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewCheckBoxCell" FullName="System.Windows.Forms.DataGridViewCheckBoxCell">
+<Type Name="DataGridViewCheckBoxCell" FullName="System.Windows.Forms.DataGridViewCheckBoxCell">
   <TypeSignature Language="C#" Value="public class DataGridViewCheckBoxCell : System.Windows.Forms.DataGridViewCell, System.Windows.Forms.IDataGridViewEditingCell" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewCheckBoxCell extends System.Windows.Forms.DataGridViewCell implements class System.Windows.Forms.IDataGridViewEditingCell" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
@@ -203,6 +203,7 @@
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
         <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.OnContentClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8321a8a6-6340-4fd1-b475-fa090b905aaf">Best Practices for Scaling the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="ContentDoubleClickUnsharesRow">
@@ -246,6 +247,7 @@
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
         <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.OnContentDoubleClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8321a8a6-6340-4fd1-b475-fa090b905aaf">Best Practices for Scaling the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -817,6 +819,7 @@
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
         <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.OnKeyDown(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8321a8a6-6340-4fd1-b475-fa090b905aaf">Best Practices for Scaling the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="KeyUpUnsharesRow">
@@ -857,6 +860,7 @@
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
         <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.OnKeyUp(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8321a8a6-6340-4fd1-b475-fa090b905aaf">Best Practices for Scaling the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="MouseDownUnsharesRow">
@@ -896,6 +900,7 @@
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
         <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8321a8a6-6340-4fd1-b475-fa090b905aaf">Best Practices for Scaling the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="MouseEnterUnsharesRow">
@@ -934,6 +939,7 @@
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
         <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseEnter(System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8321a8a6-6340-4fd1-b475-fa090b905aaf">Best Practices for Scaling the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="MouseLeaveUnsharesRow">
@@ -973,6 +979,7 @@
         <altmember cref="T:System.Windows.Forms.DataGridView" />
         <altmember cref="T:System.Windows.Forms.ButtonState" />
         <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseLeave(System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8321a8a6-6340-4fd1-b475-fa090b905aaf">Best Practices for Scaling the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="MouseUpUnsharesRow">
@@ -1012,6 +1019,7 @@
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
         <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8321a8a6-6340-4fd1-b475-fa090b905aaf">Best Practices for Scaling the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnContentClick">
@@ -1114,6 +1122,7 @@
         <altmember cref="M:System.Windows.Forms.Control.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
         <altmember cref="E:System.Windows.Forms.Control.KeyDown" />
         <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.KeyDownUnsharesRow(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4519b928-bfc8-4e8b-bb9c-b1e76a0ca552">Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnKeyUp">
@@ -1154,6 +1163,7 @@
         <altmember cref="M:System.Windows.Forms.Control.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />
         <altmember cref="E:System.Windows.Forms.Control.KeyUp" />
         <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.KeyUpUnsharesRow(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4519b928-bfc8-4e8b-bb9c-b1e76a0ca552">Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnLeave">

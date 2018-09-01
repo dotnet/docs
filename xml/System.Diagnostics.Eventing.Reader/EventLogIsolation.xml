@@ -1,4 +1,4 @@
-﻿<Type Name="EventLogIsolation" FullName="System.Diagnostics.Eventing.Reader.EventLogIsolation">
+<Type Name="EventLogIsolation" FullName="System.Diagnostics.Eventing.Reader.EventLogIsolation">
   <TypeSignature Language="C#" Value="public enum EventLogIsolation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventLogIsolation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogIsolation" />
@@ -16,6 +16,8 @@
   <Docs>
     <summary>Defines the default access permissions for the event log. The Application and System values indicate that the log shares the access control list (ACL) with the appropriate Windows log (the Application or System event logs) and share the Event Tracing for Windows (ETW) session with other logs of the same isolation. All channels with Custom isolation use a private ETW session.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
   </Docs>
   <Members>
     <Member MemberName="Application">

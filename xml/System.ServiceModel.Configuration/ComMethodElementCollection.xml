@@ -1,4 +1,4 @@
-﻿<Type Name="ComMethodElementCollection" FullName="System.ServiceModel.Configuration.ComMethodElementCollection">
+<Type Name="ComMethodElementCollection" FullName="System.ServiceModel.Configuration.ComMethodElementCollection">
   <TypeSignature Language="C#" Value="public sealed class ComMethodElementCollection : System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection&lt;System.ServiceModel.Configuration.ComMethodElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComMethodElementCollection extends System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection`1&lt;class System.ServiceModel.Configuration.ComMethodElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ComMethodElementCollection" />
@@ -25,6 +25,7 @@
   <Docs>
     <summary>Contains a collection of <see cref="T:System.ServiceModel.Configuration.ComMethodElement" /> instances. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/7f21d7ed-b268-498a-9b08-76c38361fd1e">ComMethods in Configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

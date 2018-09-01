@@ -1,4 +1,4 @@
-﻿<Type Name="LiteralTextControlBuilder" FullName="System.Web.UI.MobileControls.LiteralTextControlBuilder">
+<Type Name="LiteralTextControlBuilder" FullName="System.Web.UI.MobileControls.LiteralTextControlBuilder">
   <TypeSignature Language="C#" Value="public class LiteralTextControlBuilder : System.Web.UI.MobileControls.MobileControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LiteralTextControlBuilder extends System.Web.UI.MobileControls.MobileControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.LiteralTextControlBuilder" />
@@ -33,6 +33,7 @@
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.LiteralText" />
     <altmember cref="T:System.Web.UI.MobileControls.MobileControlBuilder" />
+    <related type="Article" href="https://msdn.microsoft.com/library/985bfb0b-1e0a-433c-99e7-c5bcf36ab938">Inside the ASP.NET Mobile Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

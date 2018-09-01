@@ -1,4 +1,4 @@
-﻿<Type Name="IDataContractSurrogate" FullName="System.Runtime.Serialization.IDataContractSurrogate">
+<Type Name="IDataContractSurrogate" FullName="System.Runtime.Serialization.IDataContractSurrogate">
   <TypeSignature Language="C#" Value="public interface IDataContractSurrogate" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataContractSurrogate" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.IDataContractSurrogate" />
@@ -37,6 +37,9 @@
     <altmember cref="T:System.ServiceModel.Description.DataContractSerializerOperationBehavior" />
     <altmember cref="T:System.Runtime.Serialization.XsdDataContractExporter" />
     <altmember cref="T:System.Runtime.Serialization.XsdDataContractImporter" />
+    <related type="Article" href="http://msdn.microsoft.com/library/b0188f3c-00a9-4cf0-a887-a2284c8fb014">DataContract Surrogate Sample</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/8c31134c-46c5-4ed7-94af-bab0ac0dfce5">Data Contract Surrogates</related>
+    <related type="Article" href="~/docs/framework/wcf/feature-details/using-data-contracts.md">Using Data Contracts</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="GetCustomDataToExport">

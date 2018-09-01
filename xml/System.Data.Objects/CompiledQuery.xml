@@ -1,4 +1,4 @@
-﻿<Type Name="CompiledQuery" FullName="System.Data.Objects.CompiledQuery">
+<Type Name="CompiledQuery" FullName="System.Data.Objects.CompiledQuery">
   <TypeSignature Language="C#" Value="public sealed class CompiledQuery" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CompiledQuery extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.CompiledQuery" />
@@ -32,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/8025ba1d-29c7-4407-841b-d5a3bed40b7a">Compiled Queries (LINQ to Entities)</related>
   </Docs>
   <Members>
     <Member MemberName="Compile&lt;TArg0,TResult&gt;">

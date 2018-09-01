@@ -1,4 +1,4 @@
-﻿<Type Name="HttpUtility" FullName="System.Web.HttpUtility">
+<Type Name="HttpUtility" FullName="System.Web.HttpUtility">
   <TypeSignature Language="C#" Value="public sealed class HttpUtility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpUtility extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpUtility" />
@@ -51,6 +51,7 @@
     </remarks>
     <altmember cref="T:System.Web.HttpServerUtility" />
     <altmember cref="P:System.Web.HttpContext.Server" />
+    <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -155,6 +156,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <Member MemberName="HtmlAttributeEncode">
@@ -206,6 +208,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="HtmlDecode">
@@ -444,6 +447,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.HttpUtility.HtmlDecode(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <Member MemberName="HtmlEncode">
@@ -496,6 +500,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.HttpUtility.HtmlDecode(System.String,System.IO.TextWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="JavaScriptStringEncode">
@@ -1259,6 +1264,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.HttpUtility.UrlDecode(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <Member MemberName="UrlEncode">
@@ -1316,6 +1322,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.HttpUtility.UrlDecode(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <Member MemberName="UrlEncode">
@@ -1371,6 +1378,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.HttpUtility.UrlDecode(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <Member MemberName="UrlEncode">
@@ -1434,6 +1442,7 @@
         </remarks>
         <altmember cref="M:System.Web.HttpUtility.UrlDecode(System.String)" />
         <related type="Article" href="https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="UrlEncodeToBytes">
@@ -1496,6 +1505,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.HttpUtility.UrlDecodeToBytes(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <Member MemberName="UrlEncodeToBytes">
@@ -1547,6 +1557,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.HttpUtility.UrlDecodeToBytes(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <Member MemberName="UrlEncodeToBytes">
@@ -1600,6 +1611,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.HttpUtility.UrlDecodeToBytes(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <Member MemberName="UrlEncodeToBytes">
@@ -1663,6 +1675,7 @@
   
  <paramref name="count" /> is less than <see langword="0" />, or <paramref name="count" /> + <paramref name="offset" /> is greater than the length of the <paramref name="bytes" /> array.</exception>
         <altmember cref="M:System.Web.HttpUtility.UrlDecodeToBytes(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <Member MemberName="UrlEncodeUnicode">
@@ -1716,6 +1729,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <Member MemberName="UrlEncodeUnicodeToBytes">
@@ -1769,6 +1783,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <Member MemberName="UrlPathEncode">

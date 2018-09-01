@@ -1,4 +1,4 @@
-﻿<Type Name="HttpCookiesSection" FullName="System.Web.Configuration.HttpCookiesSection">
+<Type Name="HttpCookiesSection" FullName="System.Web.Configuration.HttpCookiesSection">
   <TypeSignature Language="C#" Value="public sealed class HttpCookiesSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpCookiesSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpCookiesSection" />
@@ -42,6 +42,7 @@
     <forInternalUseOnly />
     <altmember cref="T:System.Web.HttpCookie" />
     <altmember cref="T:System.Web.HttpCookieMode" />
+    <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">Introduction to ASP.NET Web Page State Management</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -157,6 +158,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.Web.HttpCookie" />
         <altmember cref="T:System.Web.HttpCookieMode" />
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">Introduction to ASP.NET Web Page State Management</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -228,6 +230,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="http://msdn.microsoft.com/library/6e4289e6-d1b7-4e82-ab0d-e83e3b6063ed">Using Secure Sockets Layer</related>
       </Docs>
     </Member>
     <Member MemberName="SameSite">

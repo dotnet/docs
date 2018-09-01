@@ -1,4 +1,4 @@
-﻿<Type Name="XCData" FullName="System.Xml.Linq.XCData">
+<Type Name="XCData" FullName="System.Xml.Linq.XCData">
   <TypeSignature Language="C#" Value="public class XCData : System.Xml.Linq.XText" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XCData extends System.Xml.Linq.XText" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XCData" />
@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -49,6 +50,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XCData" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -115,6 +117,7 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -161,6 +164,7 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="NodeType">
@@ -271,6 +275,7 @@ Text
         </remarks>
         <altmember cref="T:System.Xml.XmlNodeType" />
         <altmember cref="T:System.Xml.Linq.XNode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -315,6 +320,8 @@ Text
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f01bdf96-c5a9-4859-b220-125ee531e71f">Serializing XML Trees</related>
       </Docs>
     </Member>
     <Member MemberName="WriteToAsync">

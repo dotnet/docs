@@ -1,4 +1,4 @@
-﻿<Type Name="SplineRotation3DKeyFrame" FullName="System.Windows.Media.Animation.SplineRotation3DKeyFrame">
+<Type Name="SplineRotation3DKeyFrame" FullName="System.Windows.Media.Animation.SplineRotation3DKeyFrame">
   <TypeSignature Language="C#" Value="public class SplineRotation3DKeyFrame : System.Windows.Media.Animation.Rotation3DKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SplineRotation3DKeyFrame extends System.Windows.Media.Animation.Rotation3DKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SplineRotation3DKeyFrame" />
@@ -222,6 +222,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160011">Key Spline Animation Sample</related>
       </Docs>
     </Member>
     <Member MemberName="KeySplineProperty">

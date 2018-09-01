@@ -1,4 +1,4 @@
-﻿<Type Name="StateMachineWorkflowActivity" FullName="System.Workflow.Activities.StateMachineWorkflowActivity">
+<Type Name="StateMachineWorkflowActivity" FullName="System.Workflow.Activities.StateMachineWorkflowActivity">
   <TypeSignature Language="C#" Value="public class StateMachineWorkflowActivity : System.Workflow.Activities.StateActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StateMachineWorkflowActivity extends System.Workflow.Activities.StateActivity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.StateMachineWorkflowActivity" />
@@ -69,6 +69,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735945(v=vs.90)">State Machine Workflows</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

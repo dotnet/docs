@@ -1,4 +1,4 @@
-﻿<Type Name="SiteMapNodeItemEventHandler" FullName="System.Web.UI.WebControls.SiteMapNodeItemEventHandler">
+<Type Name="SiteMapNodeItemEventHandler" FullName="System.Web.UI.WebControls.SiteMapNodeItemEventHandler">
   <TypeSignature Language="C#" Value="public delegate void SiteMapNodeItemEventHandler(object sender, SiteMapNodeItemEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SiteMapNodeItemEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SiteMapNodeItemEventHandler" />
@@ -33,5 +33,6 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.SiteMapNodeItemEventArgs" />
+    <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
   </Docs>
 </Type>

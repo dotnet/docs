@@ -1,4 +1,4 @@
-﻿<Type Name="EncoderParameters" FullName="System.Drawing.Imaging.EncoderParameters">
+<Type Name="EncoderParameters" FullName="System.Drawing.Imaging.EncoderParameters">
   <TypeSignature Language="C#" Value="public sealed class EncoderParameters : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EncoderParameters extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.EncoderParameters" />
@@ -22,6 +22,7 @@
   <Docs>
     <summary>Encapsulates an array of <see cref="T:System.Drawing.Imaging.EncoderParameter" /> objects.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/0e838ea1-4e7e-4334-b882-ab25df607b8b">Using Image Encoders and Decoders in Managed GDI+</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

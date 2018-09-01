@@ -1,4 +1,4 @@
-﻿<Type Name="BasicHttpBindingElement" FullName="System.ServiceModel.Configuration.BasicHttpBindingElement">
+<Type Name="BasicHttpBindingElement" FullName="System.ServiceModel.Configuration.BasicHttpBindingElement">
   <TypeSignature Language="C#" Value="public class BasicHttpBindingElement : System.ServiceModel.Configuration.HttpBindingBaseElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BasicHttpBindingElement extends System.ServiceModel.Configuration.HttpBindingBaseElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BasicHttpBindingElement" />
@@ -19,6 +19,7 @@
     <summary>Represents an XML element that specifies a binding used to communicate with WS-I Basic Profile 1.1-conformant Web Services like ASMX-based services or to accept messages from ASMX-based clients.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.ServiceModel.BasicHttpBinding" />
+    <related type="Article" href="http://msdn.microsoft.com/library/85cf1a4f-26c2-48c7-bda6-6c960d5d3fb3">BasicHttpBinding in Configuration</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

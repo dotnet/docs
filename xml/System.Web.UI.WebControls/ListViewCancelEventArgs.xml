@@ -1,4 +1,4 @@
-﻿<Type Name="ListViewCancelEventArgs" FullName="System.Web.UI.WebControls.ListViewCancelEventArgs">
+<Type Name="ListViewCancelEventArgs" FullName="System.Web.UI.WebControls.ListViewCancelEventArgs">
   <TypeSignature Language="C#" Value="public class ListViewCancelEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewCancelEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewCancelEventArgs" />
@@ -41,6 +41,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.ListView" />
     <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCanceling" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,6 +87,7 @@
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCanceling" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewCancelEventArgs.CancelMode" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewCancelEventArgs.ItemIndex" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelMode">
@@ -130,6 +132,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCanceling" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
@@ -177,6 +180,7 @@
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="P:System.Web.UI.WebControls.ListView.Items" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCanceling" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="StyleTypedPropertyAttribute" FullName="System.Windows.StyleTypedPropertyAttribute">
+<Type Name="StyleTypedPropertyAttribute" FullName="System.Windows.StyleTypedPropertyAttribute">
   <TypeSignature Language="C#" Value="public sealed class StyleTypedPropertyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StyleTypedPropertyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Windows.StyleTypedPropertyAttribute" />
@@ -36,6 +36,7 @@
  ]]></format>
     </remarks>
     <altmember cref="P:System.Windows.Style.TargetType" />
+    <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

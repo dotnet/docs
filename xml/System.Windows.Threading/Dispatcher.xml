@@ -1,4 +1,4 @@
-﻿<Type Name="Dispatcher" FullName="System.Windows.Threading.Dispatcher">
+<Type Name="Dispatcher" FullName="System.Windows.Threading.Dispatcher">
   <TypeSignature Language="C#" Value="public sealed class Dispatcher" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Dispatcher extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.Dispatcher" />
@@ -55,6 +55,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160038">Single-Threaded Application with Long-Running Calculation Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="BeginInvoke">
@@ -236,6 +237,7 @@
           <paramref name="method" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="priority" /> is not a valid <see cref="T:System.Windows.Threading.DispatcherPriority" />.</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160038">Single-Threaded Application with Long-Running Calculation Sample</related>
       </Docs>
     </Member>
     <Member MemberName="BeginInvoke">
@@ -388,6 +390,7 @@
           <paramref name="method" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="priority" /> is not a valid <see cref="T:System.Windows.Threading.DispatcherPriority" />.</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160038">Single-Threaded Application with Long-Running Calculation Sample</related>
       </Docs>
     </Member>
     <Member MemberName="BeginInvoke">
@@ -468,6 +471,7 @@
           <paramref name="method" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <see cref="T:System.Windows.Threading.DispatcherPriority" /> is not a valid priority.</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160038">Single-Threaded Application with Long-Running Calculation Sample</related>
       </Docs>
     </Member>
     <Member MemberName="BeginInvokeShutdown">

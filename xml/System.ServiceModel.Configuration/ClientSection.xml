@@ -1,4 +1,4 @@
-﻿<Type Name="ClientSection" FullName="System.ServiceModel.Configuration.ClientSection">
+<Type Name="ClientSection" FullName="System.ServiceModel.Configuration.ClientSection">
   <TypeSignature Language="C#" Value="public sealed class ClientSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClientSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ClientSection" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents the client section of a configuration file, which defines a list of endpoints that a client can connect to. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/bf0f7031-76c8-4e7e-a6c6-9ad9119134be">Clients in Configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

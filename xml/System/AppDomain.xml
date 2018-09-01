@@ -1,4 +1,4 @@
-﻿<Type Name="AppDomain" FullName="System.AppDomain">
+<Type Name="AppDomain" FullName="System.AppDomain">
   <TypeSignature Language="C#" Value="public sealed class AppDomain : MarshalByRefObject, _AppDomain, System.Security.IEvidenceFactory" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit AppDomain extends System.MarshalByRefObject implements class System._AppDomain, class System.Security.IEvidenceFactory" />
   <TypeSignature Language="DocId" Value="T:System.AppDomain" />
@@ -81,6 +81,10 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/07ea8438-7a34-49f0-a7e8-3d6ff7e4a482">How To: Configure an Application Domain</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ba1fa43e-49f5-47d9-bd7f-3024af16f4ba">How To: Create an Application Domain</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/1432aa2d-bd83-4346-bf3b-a1b7920e2aa9">How to: Load Assemblies into an Application Domain</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f356116d-e415-4f7c-a332-6e6a60227192">How to: Unload an Application Domain</related>
   </Docs>
   <Members>
     <Member MemberName="ActivationContext">
@@ -419,6 +423,7 @@
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="P:System.ResolveEventArgs.RequestingAssembly" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5099e549-f4fd-49fb-a290-549edd456c6a">Resolving Assembly Loads</related>
       </Docs>
     </Member>
     <Member MemberName="BaseDirectory">
@@ -608,6 +613,7 @@
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="F:System.String.Empty" />
+        <related type="Article" href="~/docs/framework/app-domains/shadow-copy-assemblies.md">Shadow Copying Assemblies</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateComInstanceFrom">
@@ -4871,6 +4877,7 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="T:System.Runtime.ExceptionServices.FirstChanceExceptionEventArgs" />
         <altmember cref="E:System.AppDomain.UnhandledException" />
+        <related type="Article" href="http://msdn.microsoft.com/library/66f002b8-a97d-4a6e-a503-2cec01689113">How to: Receive First-Chance Exception Notifications</related>
       </Docs>
     </Member>
     <Member MemberName="FriendlyName">
@@ -6100,6 +6107,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The current process attempted to assign the value <see langword="false" /> to this property.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/318bedf8-7f35-4f00-b34a-2b7b8e3fa315">Application Domain Resource Monitoring</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/02119ab6-1e91-448e-97ad-e7b2e5c4bbbd">&lt;appdomainResourceMonitoring&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="MonitoringSurvivedMemorySize">
@@ -6145,6 +6154,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see langword="static" /> (<see langword="Shared" /> in Visual Basic) <see cref="P:System.AppDomain.MonitoringIsEnabled" /> property is set to <see langword="false" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/318bedf8-7f35-4f00-b34a-2b7b8e3fa315">Application Domain Resource Monitoring</related>
       </Docs>
     </Member>
     <Member MemberName="MonitoringSurvivedProcessMemorySize">
@@ -6190,6 +6200,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see langword="static" /> (<see langword="Shared" /> in Visual Basic) <see cref="P:System.AppDomain.MonitoringIsEnabled" /> property is set to <see langword="false" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/318bedf8-7f35-4f00-b34a-2b7b8e3fa315">Application Domain Resource Monitoring</related>
       </Docs>
     </Member>
     <Member MemberName="MonitoringTotalAllocatedMemorySize">
@@ -6228,6 +6239,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see langword="static" /> (<see langword="Shared" /> in Visual Basic) <see cref="P:System.AppDomain.MonitoringIsEnabled" /> property is set to <see langword="false" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/318bedf8-7f35-4f00-b34a-2b7b8e3fa315">Application Domain Resource Monitoring</related>
       </Docs>
     </Member>
     <Member MemberName="MonitoringTotalProcessorTime">
@@ -6277,6 +6289,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see langword="static" /> (<see langword="Shared" /> in Visual Basic) <see cref="P:System.AppDomain.MonitoringIsEnabled" /> property is set to <see langword="false" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/318bedf8-7f35-4f00-b34a-2b7b8e3fa315">Application Domain Resource Monitoring</related>
       </Docs>
     </Member>
     <Member MemberName="PermissionSet">
@@ -6717,6 +6730,7 @@
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="P:System.AppDomainSetup.CachePath" />
+        <related type="Article" href="~/docs/framework/app-domains/shadow-copy-assemblies.md">Shadow Copying Assemblies</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetData">
@@ -7034,6 +7048,7 @@
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="~/docs/framework/app-domains/shadow-copy-assemblies.md">Shadow Copying Assemblies</related>
       </Docs>
     </Member>
     <Member MemberName="SetShadowCopyPath">
@@ -7108,6 +7123,7 @@
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="~/docs/framework/app-domains/shadow-copy-assemblies.md">Shadow Copying Assemblies</related>
       </Docs>
     </Member>
     <Member MemberName="SetThreadPrincipal">
@@ -7236,6 +7252,7 @@
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <altmember cref="P:System.AppDomainSetup.ShadowCopyFiles" />
+        <related type="Article" href="~/docs/framework/app-domains/shadow-copy-assemblies.md">Shadow Copying Assemblies</related>
       </Docs>
     </Member>
     <Member MemberName="System._AppDomain.GetIDsOfNames">

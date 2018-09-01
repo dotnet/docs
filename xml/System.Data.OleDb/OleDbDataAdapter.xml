@@ -1,4 +1,4 @@
-﻿<Type Name="OleDbDataAdapter" FullName="System.Data.OleDb.OleDbDataAdapter">
+<Type Name="OleDbDataAdapter" FullName="System.Data.OleDb.OleDbDataAdapter">
   <TypeSignature Language="C#" Value="public sealed class OleDbDataAdapter : System.Data.Common.DbDataAdapter, ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OleDbDataAdapter extends System.Data.Common.DbDataAdapter implements class System.Data.IDataAdapter, class System.Data.IDbDataAdapter, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbDataAdapter" />
@@ -74,6 +74,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">Working with DataAdapters</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -83,6 +84,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbDataAdapter" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">Working with DataAdapters</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -124,6 +126,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">Working with DataAdapters</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -171,6 +174,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">Working with DataAdapters</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -220,6 +224,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">Working with DataAdapters</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -269,6 +274,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">Working with DataAdapters</related>
       </Docs>
     </Member>
     <Member MemberName="CreateRowUpdatedEvent">
@@ -393,6 +399,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">Working with DataAdapters</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -426,6 +433,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Adds or refreshes rows in the <see cref="T:System.Data.DataSet" /> to match those in an ADO <see langword="Recordset" /> or <see langword="Record" /> object.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">Working with DataAdapters</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Fill">
@@ -527,6 +535,7 @@ OleDbDataAdapter custDA = new OleDbDataAdapter();
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">Working with DataAdapters</related>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -614,6 +623,7 @@ OleDbDataAdapter custDA = new OleDbDataAdapter();
  ]]></format>
         </remarks>
         <exception cref="T:System.SystemException">The source table is invalid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">Working with DataAdapters</related>
       </Docs>
     </Member>
     <Member MemberName="InsertCommand">
@@ -677,6 +687,7 @@ OleDbDataAdapter custDA = new OleDbDataAdapter();
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">Working with DataAdapters</related>
       </Docs>
     </Member>
     <Member MemberName="OnRowUpdated">
@@ -785,6 +796,7 @@ OleDbDataAdapter custDA = new OleDbDataAdapter();
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">Working with DataAdapters</related>
       </Docs>
     </Member>
     <Member MemberName="RowUpdating">
@@ -841,6 +853,7 @@ OleDbDataAdapter custDA = new OleDbDataAdapter();
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">Working with DataAdapters</related>
       </Docs>
     </Member>
     <Member MemberName="SelectCommand">
@@ -901,6 +914,7 @@ OleDbDataAdapter custDA = new OleDbDataAdapter();
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">Working with DataAdapters</related>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbDataAdapter.DeleteCommand">

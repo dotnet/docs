@@ -1,4 +1,4 @@
-﻿<Type Name="SortOrder" FullName="System.Data.SqlClient.SortOrder">
+<Type Name="SortOrder" FullName="System.Data.SqlClient.SortOrder">
   <TypeSignature Language="C#" Value="public enum SortOrder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SortOrder extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SortOrder" />
@@ -26,6 +26,7 @@
   <Docs>
     <summary>Specifies how rows of data are sorted.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Ascending">
@@ -57,6 +58,7 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>Rows are sorted in ascending order.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Descending">
@@ -88,6 +90,7 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>Rows are sorted in descending order.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Unspecified">
@@ -119,6 +122,7 @@
       <MemberValue>-1</MemberValue>
       <Docs>
         <summary>The default. No sort order is specified.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

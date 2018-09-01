@@ -1,4 +1,4 @@
-﻿<Type Name="ValidationConstraints" FullName="System.Windows.Forms.ValidationConstraints">
+<Type Name="ValidationConstraints" FullName="System.Windows.Forms.ValidationConstraints">
   <TypeSignature Language="C#" Value="public enum ValidationConstraints" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidationConstraints extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ValidationConstraints" />
@@ -40,6 +40,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1">User Input Validation in Windows Forms (Windows Forms)</related>
   </Docs>
   <Members>
     <Member MemberName="Enabled">

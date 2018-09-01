@@ -1,4 +1,4 @@
-﻿<Type Name="ScrollBarAutomationPeer" FullName="System.Windows.Automation.Peers.ScrollBarAutomationPeer">
+<Type Name="ScrollBarAutomationPeer" FullName="System.Windows.Automation.Peers.ScrollBarAutomationPeer">
   <TypeSignature Language="C#" Value="public class ScrollBarAutomationPeer : System.Windows.Automation.Peers.RangeBaseAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScrollBarAutomationPeer extends System.Windows.Automation.Peers.RangeBaseAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ScrollBarAutomationPeer" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Exposes <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> types to UI Automation.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,6 +45,7 @@
         <param name="owner">The <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ScrollBarAutomationPeer" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.ScrollBarAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">
@@ -67,6 +69,7 @@
         <summary>Gets the name of the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ScrollBarAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
         <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.ScrollBar" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">
@@ -90,6 +93,7 @@
         <summary>Gets the name of the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ScrollBarAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
         <returns>A string that contains the word "ScrollBar".</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetClickablePointCore">
@@ -113,6 +117,7 @@
         <summary>Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClickablePoint" />.</summary>
         <returns>A <see cref="T:System.Windows.Point" /> that has values of <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NaN" />; the only clickable points in a <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> are the child elements.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetOrientationCore">
@@ -137,6 +142,7 @@
         <returns>
           <see cref="F:System.Windows.Automation.Peers.AutomationOrientation.Horizontal" /> or <see cref="F:System.Windows.Automation.Peers.AutomationOrientation.Vertical" />, depending on the orientation of the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsContentElementCore">

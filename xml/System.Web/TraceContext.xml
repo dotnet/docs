@@ -1,4 +1,4 @@
-﻿<Type Name="TraceContext" FullName="System.Web.TraceContext">
+<Type Name="TraceContext" FullName="System.Web.TraceContext">
   <TypeSignature Language="C#" Value="public sealed class TraceContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TraceContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.TraceContext" />
@@ -32,6 +32,7 @@
     <altmember cref="T:System.Web.TraceContextEventArgs" />
     <altmember cref="T:System.Web.TraceContextEventHandler" />
     <altmember cref="T:System.Web.TraceContextRecord" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +57,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.TraceContext" /> class.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.HttpContext" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -100,6 +102,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7931c942-63c1-47c3-a045-9d9de3cacdbf">&lt;trace&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="TraceFinished">
@@ -139,6 +143,7 @@
         <altmember cref="T:System.Web.TraceContextEventHandler" />
         <altmember cref="T:System.Web.TraceContextEventArgs" />
         <altmember cref="T:System.Web.TraceContextRecord" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TraceMode">
@@ -179,6 +184,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.TraceMode" /> enumeration values.</exception>
         <altmember cref="T:System.Web.UI.Page" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Warn">
@@ -221,6 +227,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Warn">
@@ -256,6 +263,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Warn">
@@ -302,6 +310,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Write">
@@ -344,6 +353,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -387,6 +397,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -433,6 +444,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
   </Members>

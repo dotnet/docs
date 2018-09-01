@@ -1,4 +1,4 @@
-﻿<Type Name="UltimateResourceFallbackLocation" FullName="System.Resources.UltimateResourceFallbackLocation">
+<Type Name="UltimateResourceFallbackLocation" FullName="System.Resources.UltimateResourceFallbackLocation">
   <TypeSignature Language="C#" Value="public enum UltimateResourceFallbackLocation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed UltimateResourceFallbackLocation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Resources.UltimateResourceFallbackLocation" />
@@ -45,6 +45,7 @@
     </remarks>
     <altmember cref="T:System.Resources.ResourceManager" />
     <altmember cref="T:System.Resources.NeutralResourcesLanguageAttribute" />
+    <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
   </Docs>
   <Members>
     <Member MemberName="MainAssembly">

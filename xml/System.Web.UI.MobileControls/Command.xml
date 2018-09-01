@@ -1,4 +1,4 @@
-﻿<Type Name="Command" FullName="System.Web.UI.MobileControls.Command">
+<Type Name="Command" FullName="System.Web.UI.MobileControls.Command">
   <TypeSignature Language="C#" Value="public class Command : System.Web.UI.MobileControls.TextControl, System.Web.UI.IPostBackDataHandler, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Command extends System.Web.UI.MobileControls.TextControl implements class System.Web.UI.IPostBackDataHandler, class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Command" />
@@ -86,6 +86,7 @@
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.TextControl" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,6 +107,7 @@
         <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Command" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.TextControl" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -145,6 +147,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -185,6 +188,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="CommandArgument">
@@ -229,6 +233,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="CommandName">
@@ -260,6 +265,7 @@
         <summary>Gets or sets the command name associated with the <see cref="T:System.Web.UI.MobileControls.Command" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The name of the <see cref="T:System.Web.UI.MobileControls.Command" /> that raised the event.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -318,6 +324,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -359,6 +366,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="IsFormSubmitControl">
@@ -394,6 +402,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="ItemCommand">
@@ -435,6 +444,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -474,6 +484,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -507,6 +518,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnItemCommand">
@@ -546,6 +558,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.Command.OnClick(System.EventArgs)" />
         <altmember cref="P:System.Web.UI.MobileControls.Command.CommandName" />
         <altmember cref="P:System.Web.UI.MobileControls.Command.CommandArgument" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -604,6 +617,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -633,6 +647,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="SoftkeyLabel">
@@ -677,6 +692,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.MobileControls.Command.SoftkeyLabel" />
         <altmember cref="T:System.Web.UI.MobileControls.TextControl" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -713,6 +729,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -742,6 +759,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -781,6 +799,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>
   </Members>

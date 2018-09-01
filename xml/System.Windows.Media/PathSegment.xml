@@ -1,4 +1,4 @@
-﻿<Type Name="PathSegment" FullName="System.Windows.Media.PathSegment">
+<Type Name="PathSegment" FullName="System.Windows.Media.PathSegment">
   <TypeSignature Language="C#" Value="public abstract class PathSegment : System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract PathSegment extends System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.PathSegment" />
@@ -36,6 +36,7 @@
     </block>
     <altmember cref="T:System.Windows.Shapes.Path" />
     <altmember cref="T:System.Windows.Media.GeometryDrawing" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159989">Geometries Sample</related>
   </Docs>
   <Members>
     <Member MemberName="Clone">

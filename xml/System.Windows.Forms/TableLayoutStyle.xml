@@ -1,4 +1,4 @@
-﻿<Type Name="TableLayoutStyle" FullName="System.Windows.Forms.TableLayoutStyle">
+<Type Name="TableLayoutStyle" FullName="System.Windows.Forms.TableLayoutStyle">
   <TypeSignature Language="C#" Value="public abstract class TableLayoutStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TableLayoutStyle extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutStyle" />
@@ -37,6 +37,7 @@
     <altmember cref="T:System.Windows.Forms.TableLayoutStyleCollection" />
     <altmember cref="T:System.Windows.Forms.TableLayoutColumnStyleCollection" />
     <altmember cref="T:System.Windows.Forms.TableLayoutRowStyleCollection" />
+    <related type="Article" href="http://msdn.microsoft.com/library/9233e0c3-2fa6-405e-8701-959479b1250e">AutoSize Behavior in the TableLayoutPanel Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -111,6 +112,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.SizeType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/9233e0c3-2fa6-405e-8701-959479b1250e">AutoSize Behavior in the TableLayoutPanel Control</related>
       </Docs>
     </Member>
   </Members>

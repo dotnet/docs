@@ -1,4 +1,4 @@
-﻿<Type Name="XmlDataSourceDesigner" FullName="System.Web.UI.Design.WebControls.XmlDataSourceDesigner">
+<Type Name="XmlDataSourceDesigner" FullName="System.Web.UI.Design.WebControls.XmlDataSourceDesigner">
   <TypeSignature Language="C#" Value="public class XmlDataSourceDesigner : System.Web.UI.Design.HierarchicalDataSourceDesigner, System.Web.UI.Design.IDataSourceDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDataSourceDesigner extends System.Web.UI.Design.HierarchicalDataSourceDesigner implements class System.Web.UI.Design.IDataSourceDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.XmlDataSourceDesigner" />
@@ -29,6 +29,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,6 +55,8 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.XmlDataSourceDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="CanConfigure">
@@ -80,6 +84,8 @@
           <see langword="true" />, if the <see cref="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.Configure" /> method can be called; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="CanRefreshSchema">
@@ -107,6 +113,8 @@
           <see langword="true" />, if the <see cref="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.RefreshSchema(System.Boolean)" /> method can be called, otherwise <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Configure">
@@ -140,6 +148,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -170,6 +180,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="DataFile">
@@ -200,6 +212,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -228,6 +242,8 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.Design.DesignerHierarchicalDataSourceView" />
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -254,6 +270,8 @@
         <summary>Initializes the designer and loads the specified component.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -280,6 +298,8 @@
         <summary>Used by a designer component to add properties to or remove properties from, the Properties grid in a design host at design time or to provide new design-time properties that might correspond to properties on the associated control.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="RefreshSchema">
@@ -310,6 +330,8 @@
         <summary>Refreshes the schema from the data source, while optionally suppressing events.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.CanConfigure">
@@ -344,6 +366,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema">
@@ -378,6 +402,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.Configure">
@@ -410,6 +436,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.DataSourceChanged">
@@ -478,6 +506,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.GetViewNames">
@@ -511,6 +541,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.RefreshSchema">
@@ -546,6 +578,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.ResumeDataSourceEvents">
@@ -578,6 +612,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.SchemaRefreshed">
@@ -642,6 +678,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -672,6 +710,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="TransformFile">
@@ -702,6 +742,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="XPath">
@@ -732,6 +774,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="ButtonField" FullName="System.Web.UI.WebControls.ButtonField">
+<Type Name="ButtonField" FullName="System.Web.UI.WebControls.ButtonField">
   <TypeSignature Language="C#" Value="public class ButtonField : System.Web.UI.WebControls.ButtonFieldBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ButtonField extends System.Web.UI.WebControls.ButtonFieldBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ButtonField" />
@@ -409,6 +409,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="FormatDataTextValue">

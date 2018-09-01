@@ -1,4 +1,4 @@
-﻿<Type Name="ScriptingJsonSerializationSection" FullName="System.Web.Configuration.ScriptingJsonSerializationSection">
+<Type Name="ScriptingJsonSerializationSection" FullName="System.Web.Configuration.ScriptingJsonSerializationSection">
   <TypeSignature Language="C#" Value="public sealed class ScriptingJsonSerializationSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScriptingJsonSerializationSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ScriptingJsonSerializationSection" />
@@ -47,6 +47,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Configuration.ConfigurationSection" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ea4fb56e-bc1d-405a-9877-00cf5e552a30">How to: Configure ASP.NET Services in ASP.NET AJAX</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -131,6 +132,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/8290e543-7eff-47a4-aace-681f3c07229b">Web Services in ASP.NET AJAX</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -195,6 +197,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than one.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/8290e543-7eff-47a4-aace-681f3c07229b">Web Services in ASP.NET AJAX</related>
       </Docs>
     </Member>
   </Members>

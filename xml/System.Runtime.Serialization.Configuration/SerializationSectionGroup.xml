@@ -1,4 +1,4 @@
-﻿<Type Name="SerializationSectionGroup" FullName="System.Runtime.Serialization.Configuration.SerializationSectionGroup">
+<Type Name="SerializationSectionGroup" FullName="System.Runtime.Serialization.Configuration.SerializationSectionGroup">
   <TypeSignature Language="C#" Value="public sealed class SerializationSectionGroup : System.Configuration.ConfigurationSectionGroup" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SerializationSectionGroup extends System.Configuration.ConfigurationSectionGroup" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Configuration.SerializationSectionGroup" />
@@ -27,6 +27,7 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <related type="Article" href="http://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337">Data Contract Known Types</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

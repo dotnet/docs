@@ -1,4 +1,4 @@
-﻿<Type Name="ExtensionElement" FullName="System.ServiceModel.Configuration.ExtensionElement">
+<Type Name="ExtensionElement" FullName="System.ServiceModel.Configuration.ExtensionElement">
   <TypeSignature Language="C#" Value="public class ExtensionElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExtensionElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ExtensionElement" />
@@ -17,6 +17,10 @@
   <Docs>
     <summary>Represents a configuration element that defines an extension, which enables the user to create user-defined bindings, behaviors, etc.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/53a59fb6-dede-47ec-9384-b3c2e8f0c1fa">&lt;extensions&gt;</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/8373f94d-d095-486f-8f1e-4ac2f72b58c7">&lt;bindingExtensions&gt;</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/bb597fc0-c947-451c-afda-bf23d42f4f4d">&lt;bindingElementExtensions&gt;</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/59f2791a-c78f-40d7-aa80-0d9cd10135d9">&lt;behaviorExtensions&gt;</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

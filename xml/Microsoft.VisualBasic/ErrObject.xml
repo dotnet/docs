@@ -1,4 +1,4 @@
-﻿<Type Name="ErrObject" FullName="Microsoft.VisualBasic.ErrObject">
+<Type Name="ErrObject" FullName="Microsoft.VisualBasic.ErrObject">
   <TypeSignature Language="C#" Value="public sealed class ErrObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ErrObject extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ErrObject" />
@@ -45,6 +45,10 @@ End If
  ]]></format>
     </remarks>
     <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/statements/on-error-statement.md">On Error Statement (Visual Basic)</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/statements/try-catch-finally-statement.md">Try...Catch...Finally Statement (Visual Basic)</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/index.md">Keywords (Visual Basic)</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/runtime-library-members.md">Visual Basic Run-Time Library Members</related>
   </Docs>
   <Members>
     <Member MemberName="Clear">
@@ -103,6 +107,7 @@ End If
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
         <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/on-error-statement.md">On Error Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -473,6 +478,8 @@ End If
         <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
         <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
         <altmember cref="T:System.ArgumentException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/error-statement.md">Error Statement</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/on-error-statement.md">On Error Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -514,6 +521,7 @@ End If
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
         <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/on-error-statement.md">On Error Statement (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

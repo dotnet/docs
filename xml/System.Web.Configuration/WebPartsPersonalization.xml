@@ -1,4 +1,4 @@
-﻿<Type Name="WebPartsPersonalization" FullName="System.Web.Configuration.WebPartsPersonalization">
+<Type Name="WebPartsPersonalization" FullName="System.Web.Configuration.WebPartsPersonalization">
   <TypeSignature Language="C#" Value="public sealed class WebPartsPersonalization : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebPartsPersonalization extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.WebPartsPersonalization" />
@@ -62,6 +62,7 @@ type="System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider"
     </remarks>
     <altmember cref="T:System.Configuration.ConfigurationElement" />
     <altmember cref="T:System.Web.Configuration.WebPartsSection" />
+    <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

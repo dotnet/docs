@@ -1,4 +1,4 @@
-﻿<Type Name="MemoryMappedViewStream" FullName="System.IO.MemoryMappedFiles.MemoryMappedViewStream">
+<Type Name="MemoryMappedViewStream" FullName="System.IO.MemoryMappedFiles.MemoryMappedViewStream">
   <TypeSignature Language="C#" Value="public sealed class MemoryMappedViewStream : System.IO.UnmanagedMemoryStream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MemoryMappedViewStream extends System.IO.UnmanagedMemoryStream" />
   <TypeSignature Language="DocId" Value="T:System.IO.MemoryMappedFiles.MemoryMappedViewStream" />
@@ -44,6 +44,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/a483d1b5-64aa-45b6-86ef-11b859f7f02e">Memory-Mapped Files</related>
   </Docs>
   <Members>
     <Member MemberName="Dispose">

@@ -1,4 +1,4 @@
-﻿<Type Name="AddInStore" FullName="System.AddIn.Hosting.AddInStore">
+<Type Name="AddInStore" FullName="System.AddIn.Hosting.AddInStore">
   <TypeSignature Language="C#" Value="public static class AddInStore" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AddInStore extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.AddInStore" />
@@ -44,6 +44,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/8dd45b02-7218-40f9-857d-40d7b98b850b">Add-Ins and Extensibility</related>
   </Docs>
   <Members>
     <Member MemberName="FindAddIn">

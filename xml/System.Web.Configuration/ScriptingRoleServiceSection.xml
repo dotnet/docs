@@ -1,4 +1,4 @@
-﻿<Type Name="ScriptingRoleServiceSection" FullName="System.Web.Configuration.ScriptingRoleServiceSection">
+<Type Name="ScriptingRoleServiceSection" FullName="System.Web.Configuration.ScriptingRoleServiceSection">
   <TypeSignature Language="C#" Value="public sealed class ScriptingRoleServiceSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScriptingRoleServiceSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ScriptingRoleServiceSection" />
@@ -47,6 +47,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.RoleServiceManager" />
+    <related type="Article" href="http://msdn.microsoft.com/library/280f6ad9-ba1a-4fc9-b0cc-22e39e54a82d">Using Roles Information with ASP.NET AJAX</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

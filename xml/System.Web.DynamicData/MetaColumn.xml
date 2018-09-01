@@ -1,4 +1,4 @@
-﻿<Type Name="MetaColumn" FullName="System.Web.DynamicData.MetaColumn">
+<Type Name="MetaColumn" FullName="System.Web.DynamicData.MetaColumn">
   <TypeSignature Language="C#" Value="public class MetaColumn : System.Web.DynamicData.IFieldFormattingOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MetaColumn extends System.Object implements class System.Web.DynamicData.IFieldFormattingOptions" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.MetaColumn" />
@@ -32,6 +32,7 @@
     </remarks>
     <altmember cref="T:System.Web.DynamicData.MetaChildrenColumn" />
     <altmember cref="T:System.Web.DynamicData.MetaForeignKeyColumn" />
+    <related type="Article" href="http://msdn.microsoft.com/library/78c7fcd7-5f38-46a0-a4bc-48eff3c8a512">ASP.NET Dynamic Data Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -736,6 +737,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.DynamicData.MetaColumn.IsString" />
+        <related type="Article" href="http://msdn.microsoft.com/library/e0166a58-9178-4660-81a6-175994b11b12">ASP.NET Dynamic Data Scaffolding</related>
       </Docs>
     </Member>
     <Member MemberName="IsPrimaryKey">
@@ -1322,6 +1324,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.DataAnnotations.UIHintAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/e0166a58-9178-4660-81a6-175994b11b12">ASP.NET Dynamic Data Scaffolding</related>
       </Docs>
     </Member>
   </Members>

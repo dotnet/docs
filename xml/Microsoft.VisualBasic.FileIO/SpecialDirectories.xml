@@ -1,4 +1,4 @@
-﻿<Type Name="SpecialDirectories" FullName="Microsoft.VisualBasic.FileIO.SpecialDirectories">
+<Type Name="SpecialDirectories" FullName="Microsoft.VisualBasic.FileIO.SpecialDirectories">
   <TypeSignature Language="C#" Value="public class SpecialDirectories" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi SpecialDirectories extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.SpecialDirectories" />
@@ -52,6 +52,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +77,7 @@
         <summary>Returns an instance of the <see cref="P:Microsoft.VisualBasic.MyServices.FileSystemProxy.SpecialDirectories" /> class.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="AllUsersApplicationData">
@@ -115,6 +117,7 @@
         <exception cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentUserApplicationData">
@@ -155,6 +158,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Desktop">
@@ -195,6 +199,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="MyDocuments">
@@ -235,6 +240,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="MyMusic">
@@ -275,6 +281,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="MyPictures">
@@ -315,6 +322,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ProgramFiles">
@@ -355,6 +363,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Programs">
@@ -395,6 +404,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Temp">
@@ -435,6 +445,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

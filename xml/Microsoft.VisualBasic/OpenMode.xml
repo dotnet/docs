@@ -1,4 +1,4 @@
-﻿<Type Name="OpenMode" FullName="Microsoft.VisualBasic.OpenMode">
+<Type Name="OpenMode" FullName="Microsoft.VisualBasic.OpenMode">
   <TypeSignature Language="C#" Value="public enum OpenMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OpenMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.OpenMode" />
@@ -34,6 +34,9 @@
     </remarks>
     <altmember cref="T:Microsoft.VisualBasic.OpenShare" />
     <altmember cref="T:Microsoft.VisualBasic.OpenAccess" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/constants-and-enumerations.md">Constants and Enumerations</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/constants-enums/when-to-use-an-enumeration.md">When to Use an Enumeration</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md">How to: Refer to an Enumeration Member</related>
   </Docs>
   <Members>
     <Member MemberName="Append">

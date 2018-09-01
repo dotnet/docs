@@ -1,4 +1,4 @@
-﻿<Type Name="SqlCacheDependencyAdmin" FullName="System.Web.Caching.SqlCacheDependencyAdmin">
+<Type Name="SqlCacheDependencyAdmin" FullName="System.Web.Caching.SqlCacheDependencyAdmin">
   <TypeSignature Language="C#" Value="public static class SqlCacheDependencyAdmin" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SqlCacheDependencyAdmin extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.SqlCacheDependencyAdmin" />
@@ -46,6 +46,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
+    <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
   </Docs>
   <Members>
     <Member MemberName="DisableNotifications">

@@ -1,4 +1,4 @@
-﻿<Type Name="WebApplicationInformation" FullName="System.Web.Management.WebApplicationInformation">
+<Type Name="WebApplicationInformation" FullName="System.Web.Management.WebApplicationInformation">
   <TypeSignature Language="C#" Value="public sealed class WebApplicationInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebApplicationInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebApplicationInformation" />
@@ -79,6 +79,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.Management.WebHeartbeatEvent" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
   </Docs>
   <Members>
     <Member MemberName="ApplicationDomain">

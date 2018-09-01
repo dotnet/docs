@@ -1,4 +1,4 @@
-﻿<Type Name="PropertyCondition" FullName="System.Windows.Automation.PropertyCondition">
+<Type Name="PropertyCondition" FullName="System.Windows.Automation.PropertyCondition">
   <TypeSignature Language="C#" Value="public class PropertyCondition : System.Windows.Automation.Condition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyCondition extends System.Windows.Automation.Condition" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.PropertyCondition" />
@@ -17,6 +17,8 @@
   <Docs>
     <summary>Represents a <see cref="T:System.Windows.Automation.Condition" /> that tests whether a property has a specified value.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/255905af-0b17-485c-93d4-8a2db2a6524b">UI Automation Properties for Clients</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -101,6 +103,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/255905af-0b17-485c-93d4-8a2db2a6524b">UI Automation Properties for Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <Member MemberName="Flags">
@@ -128,6 +132,7 @@
         <summary>Gets the flags used for testing the property value.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/255905af-0b17-485c-93d4-8a2db2a6524b">UI Automation Properties for Clients</related>
       </Docs>
     </Member>
     <Member MemberName="Property">
@@ -155,6 +160,7 @@
         <summary>Gets the property that this condition is testing.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/255905af-0b17-485c-93d4-8a2db2a6524b">UI Automation Properties for Clients</related>
       </Docs>
     </Member>
     <Member MemberName="Value">

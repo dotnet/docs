@@ -1,4 +1,4 @@
-﻿<Type Name="PrivateFontCollection" FullName="System.Drawing.Text.PrivateFontCollection">
+<Type Name="PrivateFontCollection" FullName="System.Drawing.Text.PrivateFontCollection">
   <TypeSignature Language="C#" Value="public sealed class PrivateFontCollection : System.Drawing.Text.FontCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrivateFontCollection extends System.Drawing.Text.FontCollection" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Text.PrivateFontCollection" />
@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/winforms/advanced/using-fonts-and-text.md">Using Fonts and Text</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,6 +84,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.FileNotFoundException">The specified font is not supported or the font file cannot be found.</exception>
+        <related type="Article" href="~/docs/framework/winforms/advanced/using-fonts-and-text.md">Using Fonts and Text</related>
       </Docs>
     </Member>
     <Member MemberName="AddMemoryFont">

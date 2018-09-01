@@ -1,4 +1,4 @@
-﻿<Type Name="DeriveBytes" FullName="System.Security.Cryptography.DeriveBytes">
+<Type Name="DeriveBytes" FullName="System.Security.Cryptography.DeriveBytes">
   <TypeSignature Language="C#" Value="public abstract class DeriveBytes : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DeriveBytes extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.DeriveBytes" />
@@ -43,6 +43,7 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Security.Cryptography.DeriveBytes" />, you must override the following members: <see cref="M:System.Security.Cryptography.DeriveBytes.GetBytes(System.Int32)" />, and <see cref="M:System.Security.Cryptography.DeriveBytes.Reset" />.</para>
     </block>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +76,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DeriveBytes" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -189,6 +191,7 @@
   
  For more information about <see langword="Dispose" /> and <see langword="Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).</para>
         </block>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -229,6 +232,7 @@
         <summary>When overridden in a derived class, returns pseudo-random key bytes.</summary>
         <returns>A byte array filled with pseudo-random key bytes.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -265,6 +269,7 @@
       <Docs>
         <summary>When overridden in a derived class, resets the state of the operation.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
   </Members>

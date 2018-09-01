@@ -26,7 +26,7 @@
   
  The <xref:System.Diagnostics.EventSchemaTraceListener> class converts tracing and debugging information into an XML-encoded text stream. The description of the XML output is shown in the tables later in this section.  
   
- You can enable or disable an <xref:System.Diagnostics.EventSchemaTraceListener> object through the application configuration file, and then use the configured <xref:System.Diagnostics.EventSchemaTraceListener> object in your application. Alternately, you can create an <xref:System.Diagnostics.EventSchemaTraceListener> object in your code. We recommend that you enable trace listeners through the application configuration file. For information about the use of configuration files for tracing and debugging, see [Trace and Debug Settings Schema](http://msdn.microsoft.com/library/277ca5f6-e1c4-41b6-a47f-3a67ce5b94ac).  
+ You can enable or disable an <xref:System.Diagnostics.EventSchemaTraceListener> object through the application configuration file, and then use the configured <xref:System.Diagnostics.EventSchemaTraceListener> object in your application. Alternately, you can create an <xref:System.Diagnostics.EventSchemaTraceListener> object in your code. We recommend that you enable trace listeners through the application configuration file. For information about the use of configuration files for tracing and debugging, see [Trace and Debug Settings Schema](~/docs/framework/configure-apps/file-schema/trace-debug/index.md).  
   
  To configure an <xref:System.Diagnostics.EventSchemaTraceListener> object, modify the configuration file that corresponds to the name of your application. In this file, you can add, remove, or set the properties for a listener. The configuration file should be formatted as follows:  
   

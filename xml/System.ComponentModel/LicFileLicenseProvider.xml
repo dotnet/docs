@@ -1,4 +1,4 @@
-﻿<Type Name="LicFileLicenseProvider" FullName="System.ComponentModel.LicFileLicenseProvider">
+<Type Name="LicFileLicenseProvider" FullName="System.ComponentModel.LicFileLicenseProvider">
   <TypeSignature Language="C#" Value="public class LicFileLicenseProvider : System.ComponentModel.LicenseProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LicFileLicenseProvider extends System.ComponentModel.LicenseProvider" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.LicFileLicenseProvider" />
@@ -56,6 +56,7 @@
     <altmember cref="T:System.ComponentModel.LicenseProviderAttribute" />
     <altmember cref="T:System.ComponentModel.LicFileLicenseProvider" />
     <altmember cref="T:System.ComponentModel.LicenseUsageMode" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57">How to: License Components and Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +99,7 @@
         <altmember cref="T:System.ComponentModel.LicenseProviderAttribute" />
         <altmember cref="T:System.ComponentModel.LicFileLicenseProvider" />
         <altmember cref="T:System.ComponentModel.LicenseUsageMode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57">How to: License Components and Controls</related>
       </Docs>
     </Member>
     <Member MemberName="GetKey">
@@ -142,6 +144,7 @@
         <altmember cref="T:System.ComponentModel.LicenseProviderAttribute" />
         <altmember cref="T:System.ComponentModel.LicFileLicenseProvider" />
         <altmember cref="T:System.ComponentModel.LicenseUsageMode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57">How to: License Components and Controls</related>
       </Docs>
     </Member>
     <Member MemberName="GetLicense">
@@ -202,6 +205,7 @@
         <altmember cref="T:System.ComponentModel.LicenseProviderAttribute" />
         <altmember cref="T:System.ComponentModel.LicFileLicenseProvider" />
         <altmember cref="T:System.ComponentModel.LicenseUsageMode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57">How to: License Components and Controls</related>
       </Docs>
     </Member>
     <Member MemberName="IsKeyValid">
@@ -259,6 +263,7 @@
         <altmember cref="T:System.ComponentModel.LicenseProviderAttribute" />
         <altmember cref="T:System.ComponentModel.LicFileLicenseProvider" />
         <altmember cref="T:System.ComponentModel.LicenseUsageMode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57">How to: License Components and Controls</related>
       </Docs>
     </Member>
   </Members>

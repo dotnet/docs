@@ -1,4 +1,4 @@
-﻿<Type Name="ConfigurationPropertyOptions" FullName="System.Configuration.ConfigurationPropertyOptions">
+<Type Name="ConfigurationPropertyOptions" FullName="System.Configuration.ConfigurationPropertyOptions">
   <TypeSignature Language="C#" Value="public enum ConfigurationPropertyOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConfigurationPropertyOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationPropertyOptions" />
@@ -33,6 +33,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Configuration.ConfigurationProperty" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
   </Docs>
   <Members>
     <Member MemberName="IsAssemblyStringTransformationRequired">

@@ -1,4 +1,4 @@
-﻿<Type Name="CancellationTokenSource" FullName="System.Threading.CancellationTokenSource">
+<Type Name="CancellationTokenSource" FullName="System.Threading.CancellationTokenSource">
   <TypeSignature Language="C#" Value="public class CancellationTokenSource : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CancellationTokenSource extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.CancellationTokenSource" />
@@ -76,6 +76,8 @@
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Threading.CancellationTokenSource" /> are thread-safe and may be used concurrently from multiple threads, with the exception of <see cref="M:System.Threading.CancellationTokenSource.Dispose" />, which must only be used when all other operations on the <see cref="T:System.Threading.CancellationTokenSource" /> object have completed.</threadsafe>
+    <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
+    <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -121,6 +123,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.CancellationTokenSource" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -226,6 +230,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Communicates a request for cancellation.</summary>
+        <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Cancel">
@@ -283,6 +289,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Threading.CancellationTokenSource" /> has been disposed.</exception>
         <exception cref="T:System.AggregateException">An aggregate exception containing all the exceptions thrown by the registered callbacks on the associated <see cref="T:System.Threading.CancellationToken" />.</exception>
+        <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -337,6 +345,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Threading.CancellationTokenSource" /> has been disposed.</exception>
         <exception cref="T:System.AggregateException">An aggregate exception containing all the exceptions thrown by the registered callbacks on the associated <see cref="T:System.Threading.CancellationToken" />.</exception>
+        <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CancelAfter">
@@ -492,6 +502,9 @@
           <paramref name="tokens" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="tokens" /> is empty.</exception>
+        <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/6f4f3804-2ed7-41b4-a97a-6e32b93f6e05">How to: Listen for Multiple Cancellation Requests</related>
       </Docs>
     </Member>
     <Member MemberName="CreateLinkedTokenSource">
@@ -532,6 +545,9 @@
         <returns>A <see cref="T:System.Threading.CancellationTokenSource" /> that is linked to the source tokens.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">A <see cref="T:System.Threading.CancellationTokenSource" /> associated with one of the source tokens has been disposed.</exception>
+        <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/6f4f3804-2ed7-41b4-a97a-6e32b93f6e05">How to: Listen for Multiple Cancellation Requests</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -676,6 +692,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="Token">
@@ -715,6 +733,8 @@
         <value>The <see cref="T:System.Threading.CancellationToken" /> associated with this <see cref="T:System.Threading.CancellationTokenSource" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The token source has been disposed.</exception>
+        <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="DefaultProxySection" FullName="System.Net.Configuration.DefaultProxySection">
+<Type Name="DefaultProxySection" FullName="System.Net.Configuration.DefaultProxySection">
   <TypeSignature Language="C#" Value="public sealed class DefaultProxySection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DefaultProxySection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.DefaultProxySection" />
@@ -37,6 +37,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Net.WebProxy" />
+    <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +57,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.DefaultProxySection" /> class.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.WebProxy" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="BypassList">
@@ -91,6 +93,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Net.WebProxy" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -156,6 +159,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Net.WebProxy" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="PostDeserialize">
@@ -247,6 +251,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Net.WebProxy" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">

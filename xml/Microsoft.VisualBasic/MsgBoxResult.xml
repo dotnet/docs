@@ -1,4 +1,4 @@
-﻿<Type Name="MsgBoxResult" FullName="Microsoft.VisualBasic.MsgBoxResult">
+<Type Name="MsgBoxResult" FullName="Microsoft.VisualBasic.MsgBoxResult">
   <TypeSignature Language="C#" Value="public enum MsgBoxResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MsgBoxResult extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MsgBoxResult" />
@@ -28,6 +28,9 @@
     </remarks>
     <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
     <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/constants-and-enumerations.md">Constants and Enumerations</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/constants-enums/when-to-use-an-enumeration.md">When to Use an Enumeration</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md">How to: Refer to an Enumeration Member</related>
   </Docs>
   <Members>
     <Member MemberName="Abort">

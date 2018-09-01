@@ -1,4 +1,4 @@
-﻿<Type Name="StateFinalizationActivity" FullName="System.Workflow.Activities.StateFinalizationActivity">
+<Type Name="StateFinalizationActivity" FullName="System.Workflow.Activities.StateFinalizationActivity">
   <TypeSignature Language="C#" Value="public sealed class StateFinalizationActivity : System.Workflow.Activities.SequenceActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StateFinalizationActivity extends System.Workflow.Activities.SequenceActivity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.StateFinalizationActivity" />
@@ -48,6 +48,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734537(v=vs.90)">Using the StateFinalization Activity</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +67,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.StateFinalizationActivity" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734537(v=vs.90)">Using the StateFinalization Activity</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

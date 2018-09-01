@@ -1,4 +1,4 @@
-﻿<Type Name="RibbonWindowSmallIconConverter" FullName="System.Windows.Controls.Ribbon.Primitives.RibbonWindowSmallIconConverter">
+<Type Name="RibbonWindowSmallIconConverter" FullName="System.Windows.Controls.Ribbon.Primitives.RibbonWindowSmallIconConverter">
   <TypeSignature Language="C#" Value="public class RibbonWindowSmallIconConverter : System.Windows.Data.IValueConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonWindowSmallIconConverter extends System.Object implements class System.Windows.Data.IValueConverter" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.Primitives.RibbonWindowSmallIconConverter" />
@@ -28,6 +28,7 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <related type="Article" href="http://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94">Ribbon Layout and Resizing</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

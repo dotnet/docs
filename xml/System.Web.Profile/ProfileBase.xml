@@ -1,4 +1,4 @@
-﻿<Type Name="ProfileBase" FullName="System.Web.Profile.ProfileBase">
+<Type Name="ProfileBase" FullName="System.Web.Profile.ProfileBase">
   <TypeSignature Language="C#" Value="public class ProfileBase : System.Configuration.SettingsBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProfileBase extends System.Configuration.SettingsBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileBase" />
@@ -69,6 +69,7 @@
 
       </para>
     </block>
+    <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -164,6 +165,7 @@
  -or-  
   
  A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the  section.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Create">
@@ -173,6 +175,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates an instance of a user profile.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Create">
@@ -244,6 +247,7 @@
  -or-  
   
  A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the  section.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -313,6 +317,7 @@
  -or-  
   
  A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the  section.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetProfileGroup">
@@ -418,6 +423,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">The specified profile property group name was not found in the  configuration section.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPropertyValue">
@@ -474,6 +480,7 @@
  -or-  
   
  The provider for the specified profile property did not recognize the specified property.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -509,6 +516,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsAnonymous">
@@ -539,6 +547,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsDirty">
@@ -571,6 +580,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -624,6 +634,7 @@
  The provider for the specified profile property did not recognize the specified property.</exception>
         <exception cref="T:System.Configuration.SettingsPropertyIsReadOnlyException">An attempt was made to set a property value that was marked as read-only.</exception>
         <exception cref="T:System.Configuration.SettingsPropertyWrongTypeException">An attempt was made to assign a value to a property using an incompatible type.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LastActivityDate">
@@ -653,6 +664,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LastUpdatedDate">
@@ -682,6 +694,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -740,6 +753,7 @@
  -or-  
   
  A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the  section.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -771,6 +785,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SetPropertyValue">
@@ -830,6 +845,7 @@
  The provider for the specified profile property did not recognize the specified property.</exception>
         <exception cref="T:System.Configuration.SettingsPropertyIsReadOnlyException">An attempt was made to set a value value on a property that was marked as read-only.</exception>
         <exception cref="T:System.Configuration.SettingsPropertyWrongTypeException">An attempt was made to assign a value to a property using an incompatible type.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -866,6 +882,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
   </Members>

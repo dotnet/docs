@@ -1,4 +1,4 @@
-﻿<Type Name="AuthorizationPolicyTypeElementCollection" FullName="System.ServiceModel.Configuration.AuthorizationPolicyTypeElementCollection">
+<Type Name="AuthorizationPolicyTypeElementCollection" FullName="System.ServiceModel.Configuration.AuthorizationPolicyTypeElementCollection">
   <TypeSignature Language="C#" Value="public sealed class AuthorizationPolicyTypeElementCollection : System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection&lt;System.ServiceModel.Configuration.AuthorizationPolicyTypeElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AuthorizationPolicyTypeElementCollection extends System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1&lt;class System.ServiceModel.Configuration.AuthorizationPolicyTypeElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.AuthorizationPolicyTypeElementCollection" />
@@ -25,6 +25,7 @@
   <Docs>
     <summary>Contains a collection of <see cref="T:System.ServiceModel.Configuration.AuthorizationPolicyTypeElement" /> instances. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/5b367489-54d7-408b-8f56-cb157dd68eaf">AuthorizationPolicy in Configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

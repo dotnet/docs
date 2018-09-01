@@ -1,4 +1,4 @@
-﻿<Type Name="SiteMapDataSourceView" FullName="System.Web.UI.WebControls.SiteMapDataSourceView">
+<Type Name="SiteMapDataSourceView" FullName="System.Web.UI.WebControls.SiteMapDataSourceView">
   <TypeSignature Language="C#" Value="public class SiteMapDataSourceView : System.Web.UI.DataSourceView" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SiteMapDataSourceView extends System.Web.UI.DataSourceView" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SiteMapDataSourceView" />
@@ -30,6 +30,8 @@
     </remarks>
     <altmember cref="T:System.Web.UI.HierarchicalDataSourceView" />
     <altmember cref="T:System.Web.UI.WebControls.SiteMapDataSource" />
+    <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -74,6 +76,7 @@
         </remarks>
         <altmember cref="T:System.Web.SiteMapNode" />
         <altmember cref="T:System.Web.SiteMapNodeCollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -113,6 +116,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.SiteMapNodeCollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ExecuteSelect">
@@ -148,6 +152,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">The <paramref name="arguments" /> passed to the <see cref="M:System.Web.UI.WebControls.SiteMapDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" /> specify that the data source should perform some additional work while retrieving data to enable paging or sorting through the retrieved data, but the data source control does not support the requested capability.</exception>
         <altmember cref="M:System.Web.UI.WebControls.SiteMapDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnDataSourceViewChanged">
@@ -174,6 +179,7 @@
         <summary>Raises the <see cref="E:System.Web.UI.DataSourceView.DataSourceViewChanged" /> event.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.DataSourceView.OnDataSourceViewChanged(System.EventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -211,6 +217,7 @@
         <altmember cref="M:System.Web.UI.WebControls.SiteMapDataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" />
         <altmember cref="T:System.Web.SiteMapNodeCollection" />
         <altmember cref="T:System.Web.UI.IHierarchicalEnumerable" />
+        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control Overview</related>
       </Docs>
     </Member>
   </Members>

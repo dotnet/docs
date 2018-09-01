@@ -1,4 +1,4 @@
-﻿<Type Name="PackUriHelper" FullName="System.IO.Packaging.PackUriHelper">
+<Type Name="PackUriHelper" FullName="System.IO.Packaging.PackUriHelper">
   <TypeSignature Language="C#" Value="public static class PackUriHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed PackUriHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackUriHelper" />
@@ -176,6 +176,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Create">
@@ -238,6 +239,7 @@
           <paramref name="packageUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="packageUri" /> is not an absolute URI.</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -312,6 +314,7 @@
  -or-  
   
  <paramref name="partUri" /> is not a valid part URI syntax.</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -392,6 +395,7 @@
  -or-  
   
  <paramref name="fragment" /> is empty or does begin with "#".</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="CreatePartUri">
@@ -451,6 +455,8 @@
         </remarks>
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160055">Writing a Package Sample</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="GetNormalizedPartUri">
@@ -496,6 +502,7 @@
         <altmember cref="M:System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri,System.Uri)" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="GetPackageUri">
@@ -539,6 +546,7 @@
         </remarks>
         <altmember cref="Overload:System.IO.Packaging.PackUriHelper.Create" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="GetPartUri">
@@ -585,6 +593,7 @@
         <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetNormalizedPartUri(System.Uri)" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="GetRelationshipPartUri">
@@ -693,6 +702,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="sourcePartUri" /> or <paramref name="targetPartUri" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="GetSourcePartUriFromRelationshipPartUri">
@@ -750,6 +760,7 @@
   
  The <see cref="P:System.IO.Packaging.PackageRelationship.SourceUri" /> of the relationship part references another relationship part (not valid).</exception>
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetRelationshipPartUri(System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="IsRelationshipPartUri">
@@ -792,6 +803,7 @@
  <paramref name="partUri" /> is an invalid <see cref="T:System.IO.Packaging.PackagePart" /> syntax.</exception>
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="ResolvePartUri">
@@ -859,6 +871,7 @@
  <paramref name="targetUri" /> is not a valid relative URI.</exception>
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="UriSchemePack">

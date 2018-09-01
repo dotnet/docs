@@ -1,4 +1,4 @@
-﻿<Type Name="FileSystemWatcher" FullName="System.IO.FileSystemWatcher">
+<Type Name="FileSystemWatcher" FullName="System.IO.FileSystemWatcher">
   <TypeSignature Language="C#" Value="public class FileSystemWatcher : System.ComponentModel.Component, System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileSystemWatcher extends System.ComponentModel.Component implements class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.IO.FileSystemWatcher" />
@@ -125,6 +125,7 @@
     <altmember cref="T:System.IO.RenamedEventHandler" />
     <altmember cref="T:System.IO.WaitForChangedResult" />
     <altmember cref="T:System.IO.WatcherChangeTypes" />
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/Using-a-FileSystemWatcher-4bc97af4">Using a FileSystemWatcher Component in a Windows Form</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

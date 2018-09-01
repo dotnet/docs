@@ -1,4 +1,4 @@
-﻿<Type Name="AssemblyKeyFileAttribute" FullName="System.Reflection.AssemblyKeyFileAttribute">
+<Type Name="AssemblyKeyFileAttribute" FullName="System.Reflection.AssemblyKeyFileAttribute">
   <TypeSignature Language="C#" Value="public sealed class AssemblyKeyFileAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyKeyFileAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyKeyFileAttribute" />
@@ -70,6 +70,8 @@ sn -k TestPublicKey.snk
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/metadata-and-self-describing-components.md">Metadata and Self-Describing Components</related>
+    <related type="Article" href="~/docs/standard/managed-execution-process.md">Managed Execution Process</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

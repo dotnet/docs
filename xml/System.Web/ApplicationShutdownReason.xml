@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationShutdownReason" FullName="System.Web.ApplicationShutdownReason">
+<Type Name="ApplicationShutdownReason" FullName="System.Web.ApplicationShutdownReason">
   <TypeSignature Language="C#" Value="public enum ApplicationShutdownReason" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ApplicationShutdownReason extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.ApplicationShutdownReason" />
@@ -29,6 +29,7 @@
     <altmember cref="P:System.Web.HttpRuntime.AppDomainAppPath" />
     <altmember cref="M:System.Web.HttpRuntime.UnloadAppDomain" />
     <altmember cref="P:System.Web.Configuration.HostingEnvironmentSection.IdleTimeout" />
+    <related type="Article" href="http://msdn.microsoft.com/library/345e86a7-3851-4cdc-8309-a77bdb0d0a97">ASP.NET Web Site Layout</related>
   </Docs>
   <Members>
     <Member MemberName="BinDirChangeOrDirectoryRename">

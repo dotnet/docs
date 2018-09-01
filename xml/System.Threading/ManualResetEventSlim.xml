@@ -1,4 +1,4 @@
-﻿<Type Name="ManualResetEventSlim" FullName="System.Threading.ManualResetEventSlim">
+<Type Name="ManualResetEventSlim" FullName="System.Threading.ManualResetEventSlim">
   <TypeSignature Language="C#" Value="public class ManualResetEventSlim : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManualResetEventSlim extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ManualResetEventSlim" />
@@ -56,6 +56,7 @@
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Threading.ManualResetEventSlim" /> are thread-safe and may be used concurrently from multiple threads, with the exception of Dispose, which must only be used when all other operations on the <see cref="T:System.Threading.ManualResetEventSlim" /> have completed, and Reset, which should only be used when no other threads are accessing the event.</threadsafe>
+    <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -67,6 +68,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class.</summary>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -96,6 +98,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class with an initial state of nonsignaled.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -129,6 +132,7 @@
         <param name="initialState">true to set the initial state signaled; false to set the initial state to nonsignaled.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class with a Boolean value indicating whether to set the intial state to signaled.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -166,6 +170,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="spinCount" /> is less than 0 or greater than the maximum allowed value.</exception>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -177,6 +182,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Releases resources used by the current instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class.</summary>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Dispose">
@@ -225,6 +231,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -268,6 +275,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </Member>
     <Member MemberName="IsSet">
@@ -301,6 +309,7 @@
         <summary>Gets whether the event is set.</summary>
         <value>true if the event has is set; otherwise, false.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -342,6 +351,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed.</exception>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -375,6 +385,7 @@
       <Docs>
         <summary>Sets the state of the event to signaled, which allows one or more threads waiting on the event to proceed.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </Member>
     <Member MemberName="SpinCount">
@@ -408,6 +419,7 @@
         <summary>Gets the number of spin waits that will occur before falling back to a kernel-based wait operation.</summary>
         <value>Returns the number of spin waits that will occur before falling back to a kernel-based wait operation.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Wait">
@@ -419,6 +431,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Blocks the current thread until the current <see cref="T:System.Threading.ManualResetEventSlim" /> is set.</summary>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Wait">
@@ -461,6 +474,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The maximum number of waiters has been exceeded.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed.</exception>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -503,6 +517,7 @@
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
         <exception cref="T:System.InvalidOperationException">The maximum number of waiters has been exceeded.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed.</exception>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -549,6 +564,7 @@
         <exception cref="T:System.OperationCanceledException">
           <paramref name="cancellationToken" /> was canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed or the <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has been disposed.</exception>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -595,6 +611,7 @@
  The number of milliseconds in <paramref name="timeout" /> is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.InvalidOperationException">The maximum number of waiters has been exceeded.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed.</exception>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -640,6 +657,7 @@
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
         <exception cref="T:System.InvalidOperationException">The maximum number of waiters has been exceeded.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed or the <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has been disposed.</exception>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -689,6 +707,7 @@
  The number of milliseconds in <paramref name="timeout" /> is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.InvalidOperationException">The maximum number of waiters has been exceeded.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed or the <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has been disposed.</exception>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </Member>
     <Member MemberName="WaitHandle">
@@ -729,6 +748,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent and ManualResetEventSlim</related>
       </Docs>
     </Member>
   </Members>

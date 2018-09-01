@@ -1,4 +1,4 @@
-﻿<Type Name="ListCommandEventHandler" FullName="System.Web.UI.MobileControls.ListCommandEventHandler">
+<Type Name="ListCommandEventHandler" FullName="System.Web.UI.MobileControls.ListCommandEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ListCommandEventHandler(object sender, ListCommandEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListCommandEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ListCommandEventHandler" />
@@ -49,5 +49,6 @@
     </remarks>
     <altmember cref="T:System.Web.UI.MobileControls.List" />
     <altmember cref="T:System.Web.UI.MobileControls.SelectionList" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
   </Docs>
 </Type>

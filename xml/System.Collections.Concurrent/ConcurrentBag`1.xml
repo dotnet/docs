@@ -1,4 +1,4 @@
-﻿<Type Name="ConcurrentBag&lt;T&gt;" FullName="System.Collections.Concurrent.ConcurrentBag&lt;T&gt;">
+<Type Name="ConcurrentBag&lt;T&gt;" FullName="System.Collections.Concurrent.ConcurrentBag&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class ConcurrentBag&lt;T&gt; : System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ConcurrentBag`1&lt;T&gt; extends System.Object implements class System.Collections.Concurrent.IProducerConsumerCollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.ConcurrentBag`1" />
@@ -78,6 +78,7 @@
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" /> are thread-safe and may be used concurrently from multiple threads. However, members accessed through one of the interfaces the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" /> implements, including extension methods, are not guaranteed to be thread safe and may need to be synchronized by the caller.</threadsafe>
+    <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,6 +107,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -140,6 +142,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="collection" /> is a null reference (Nothing in Visual Basic).</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -175,6 +178,7 @@
         <param name="item">The object to be added to the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" />. The value can be a null reference (Nothing in Visual Basic) for reference types.</param>
         <summary>Adds an object to the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -239,6 +243,7 @@
           <paramref name="index" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="index" /> is equal to or greater than the length of the <paramref name="array" /> -or- the number of elements in the source <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -282,6 +287,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -325,6 +331,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -357,6 +364,7 @@
         <summary>Gets a value that indicates whether the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" /> is empty.</summary>
         <value>true if the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" /> is empty; otherwise, false.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;.TryAdd">
@@ -392,6 +400,7 @@
         <summary>Attempts to add an object to the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" />.</summary>
         <returns>Always returns true</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -436,6 +445,7 @@
           <paramref name="index" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="array" /> is multidimensional. -or- <paramref name="array" /> does not have zero-based indexing. -or- <paramref name="index" /> is equal to or greater than the length of the <paramref name="array" /> -or- The number of elements in the source <see cref="T:System.Collections.ICollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />. -or- The type of the source <see cref="T:System.Collections.ICollection" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -471,6 +481,7 @@
         <summary>Gets a value indicating whether access to the <see cref="T:System.Collections.ICollection" /> is synchronized with the SyncRoot.</summary>
         <value>true if access to the <see cref="T:System.Collections.ICollection" /> is synchronized with the SyncRoot; otherwise, false. For <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" />, this property always returns false.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -507,6 +518,7 @@
         <value>Returns null  (Nothing in Visual Basic).</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">The SyncRoot property is not supported.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -587,6 +599,7 @@
         <summary>Copies the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" /> elements to a new array.</summary>
         <returns>A new array containing a snapshot of elements copied from the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="TryPeek">
@@ -628,6 +641,7 @@
         <summary>Attempts to return an object from the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" /> without removing it.</summary>
         <returns>true if an object was returned successfully; otherwise, false.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="TryTake">
@@ -669,6 +683,7 @@
         <summary>Attempts to remove and return an object from the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" />.</summary>
         <returns>true if an object was removed successfully; otherwise, false.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
   </Members>

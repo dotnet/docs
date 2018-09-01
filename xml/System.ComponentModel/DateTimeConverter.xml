@@ -38,7 +38,7 @@
   
  The <xref:System.ComponentModel.TypeConverter.ConvertTo%2A> method uses the current culture, if a <xref:System.Globalization.CultureInfo> is not supplied. Generally, <xref:System.ComponentModel.TypeConverter.ConvertTo%2A> uses the <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A> property to format a date and <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A> with the <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A> property to format a date and time. If the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property is passed, <xref:System.ComponentModel.TypeConverter.ConvertTo%2A> uses yyyy-mm-dd to format a date and <xref:System.Object.ToString%2A> to format a date and time.  
   
- For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
+ For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)).  
   
 > [!NOTE]
 >  You should never create an instance of <xref:System.ComponentModel.DateTimeConverter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  

@@ -1,4 +1,4 @@
-﻿<Type Name="FontUnitConverter" FullName="System.Web.UI.WebControls.FontUnitConverter">
+<Type Name="FontUnitConverter" FullName="System.Web.UI.WebControls.FontUnitConverter">
   <TypeSignature Language="C#" Value="public class FontUnitConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FontUnitConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FontUnitConverter" />
@@ -31,6 +31,7 @@
     <altmember cref="T:System.Web.UI.WebControls.Unit" />
     <altmember cref="T:System.ComponentModel.TypeDescriptor" />
     <altmember cref="T:System.ComponentModel.TypeConverter" />
+    <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">Cascading Style Sheets Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,6 +65,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">Cascading Style Sheets Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -108,6 +110,7 @@
         <altmember cref="T:System.Web.UI.WebControls.FontUnit" />
         <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
         <altmember cref="T:System.Type" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">Cascading Style Sheets Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -142,6 +145,7 @@
   
 </para></block></returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">Cascading Style Sheets Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -192,6 +196,7 @@
         <altmember cref="F:System.Web.UI.WebControls.FontUnit.Empty" />
         <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
         <altmember cref="T:System.Globalization.CultureInfo" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">Cascading Style Sheets Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -246,6 +251,7 @@
         <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Type" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">Cascading Style Sheets Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -320,6 +326,7 @@
         </remarks>
         <altmember cref="M:System.ComponentModel.TypeConverter.GetStandardValuesExclusive" />
         <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">Cascading Style Sheets Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">
@@ -357,6 +364,7 @@
         </remarks>
         <altmember cref="M:System.ComponentModel.TypeConverter.GetStandardValuesSupported" />
         <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">Cascading Style Sheets Overview</related>
       </Docs>
     </Member>
   </Members>

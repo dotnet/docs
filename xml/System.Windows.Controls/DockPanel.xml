@@ -1,4 +1,4 @@
-﻿<Type Name="DockPanel" FullName="System.Windows.Controls.DockPanel">
+<Type Name="DockPanel" FullName="System.Windows.Controls.DockPanel">
   <TypeSignature Language="C#" Value="public class DockPanel : System.Windows.Controls.Panel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DockPanel extends System.Windows.Controls.Panel" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DockPanel" />
@@ -33,6 +33,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Controls.Dock" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms747326(v=vs.90)">Change Dock Properties Programmatically</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160053">WPF Controls Gallery Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

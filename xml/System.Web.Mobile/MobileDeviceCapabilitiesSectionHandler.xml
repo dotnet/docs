@@ -1,4 +1,4 @@
-﻿<Type Name="MobileDeviceCapabilitiesSectionHandler" FullName="System.Web.Mobile.MobileDeviceCapabilitiesSectionHandler">
+<Type Name="MobileDeviceCapabilitiesSectionHandler" FullName="System.Web.Mobile.MobileDeviceCapabilitiesSectionHandler">
   <TypeSignature Language="C#" Value="public class MobileDeviceCapabilitiesSectionHandler : System.Configuration.IConfigurationSectionHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MobileDeviceCapabilitiesSectionHandler extends System.Object implements class System.Configuration.IConfigurationSectionHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.Mobile.MobileDeviceCapabilitiesSectionHandler" />
@@ -34,6 +34,9 @@
     <block subset="none" type="overrides">
       <para>Instances of classes that inherit the <see cref="T:System.Web.Mobile.MobileDeviceCapabilitiesSectionHandler" /> class must be thread safe and stateless. The <see cref="M:System.Web.Mobile.MobileDeviceCapabilitiesSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" /> method must be callable from multiple threads simultaneously. See <see cref="T:System.Configuration.IConfigurationSectionHandler" /> for more information about inheriting.</para>
     </block>
+    <related type="Article" href="http://msdn.microsoft.com/library/a202175f-a85a-44fd-bc35-c8b5c82f31c3">ASP.NET Configuration Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/cce0dd24-5e96-41b8-96bb-6a8af7bcdb14">ASP.NET Configuration API</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">Introduction to Mobile Application Development in ASP.NET</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +57,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Mobile.MobileDeviceCapabilitiesSectionHandler" /> class. This method supports the .NET Framework infrastructure. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.Mobile.MobileDeviceCapabilitiesSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/cce0dd24-5e96-41b8-96bb-6a8af7bcdb14">ASP.NET Configuration API</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -85,6 +89,7 @@
         <returns>A dictionary of the device filter information contained in the specified <paramref name="node" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">Required attributes are not present or empty, or the <see langword="type" /> attribute refers to a non-existent <see cref="T:System.Type" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cce0dd24-5e96-41b8-96bb-6a8af7bcdb14">ASP.NET Configuration API</related>
       </Docs>
     </Member>
     <Member MemberName="System.Configuration.IConfigurationSectionHandler.Create">

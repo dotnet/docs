@@ -1,4 +1,4 @@
-﻿<Type Name="EditorZoneBase" FullName="System.Web.UI.WebControls.WebParts.EditorZoneBase">
+<Type Name="EditorZoneBase" FullName="System.Web.UI.WebControls.WebParts.EditorZoneBase">
   <TypeSignature Language="C#" Value="public abstract class EditorZoneBase : System.Web.UI.WebControls.WebParts.ToolZone" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EditorZoneBase extends System.Web.UI.WebControls.WebParts.ToolZone" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" />
@@ -76,6 +76,8 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
+    <related type="Article" href="http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0">Walkthrough: Changing Display Modes on a Web Parts Page</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -101,6 +103,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ApplyVerb">
@@ -167,6 +170,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CancelVerb">
@@ -235,6 +239,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -267,6 +272,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.EndWebPartEditing" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -289,6 +295,7 @@
       <Docs>
         <summary>Creates the set of child controls associated with an <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> zone.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateEditorPartChrome">
@@ -325,6 +332,7 @@
           <para>The <see cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorPartChrome" /> method can be overridden in a derived class to provide a different implementation. For example, you might create a customized <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartChrome" /> class to give you more control over the rendering and appearance of the editing UI. If you override the <see cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorPartChrome" /> method in a derived zone, you could create your custom <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartChrome" /> object in the overridden method.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartChrome" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateEditorParts">
@@ -357,6 +365,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.IWebEditable.CreateEditorParts" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.InvalidateEditorParts" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -424,6 +433,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorPartChrome" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="EditorParts">
@@ -490,6 +500,7 @@
         <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.IWebEditable.CreateEditorParts" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.GenericWebPart.CreateEditorParts" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="EmptyZoneText">
@@ -549,6 +560,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -625,6 +637,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorParts" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -653,7 +666,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
  The <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.LoadViewState%2A> method overrides the base method to check whether the page is being loaded because an OK verb, a cancel verb, or an apply verb was clicked in the zone. If so, the method handles the state associated with each respective scenario.  
   
@@ -661,6 +674,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The size of the <paramref name="savedState" /> object does not equal the size of the current view-state object.</exception>
         <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OKVerb">
@@ -729,6 +743,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnDisplayModeChanged">
@@ -780,6 +795,7 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.OnDisplayModeChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs)" /> method can be overridden or called programmatically in a custom editor zone control that inherits from the <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> class or the <see cref="T:System.Web.UI.WebControls.WebParts.EditorZone" /> class.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -806,6 +822,7 @@
         <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event, and calls the <see cref="M:System.Web.UI.WebControls.WebParts.EditorPartChrome.PerformPreRender" /> method for the chrome elements of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="E:System.Web.UI.Control.PreRender" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnSelectedWebPartChanged">
@@ -855,6 +872,7 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.OnSelectedWebPartChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartEventArgs)" /> method can be overridden or called programmatically in a custom editor zone control that inherits from the <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> class or the <see cref="T:System.Web.UI.WebControls.WebParts.EditorZone" /> class.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -887,6 +905,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -920,6 +939,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.Render(System.Web.UI.HtmlTextWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RenderBody">
@@ -967,6 +987,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RenderBody(System.Web.UI.HtmlTextWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RenderVerbs">
@@ -1011,6 +1032,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1041,6 +1063,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -1070,6 +1093,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartToEdit">
@@ -1103,6 +1127,7 @@
           <para>The protected <see cref="P:System.Web.UI.WebControls.WebParts.EditorZoneBase.WebPartToEdit" /> property is accessible only in derived classes, which can call this property on the base <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> class to get an object reference to the current control being edited.</para>
         </block>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorPart.WebPartToEdit" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

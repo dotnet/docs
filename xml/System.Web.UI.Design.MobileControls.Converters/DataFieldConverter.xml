@@ -1,4 +1,4 @@
-﻿<Type Name="DataFieldConverter" FullName="System.Web.UI.Design.MobileControls.Converters.DataFieldConverter">
+<Type Name="DataFieldConverter" FullName="System.Web.UI.Design.MobileControls.Converters.DataFieldConverter">
   <TypeSignature Language="C#" Value="public class DataFieldConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataFieldConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.MobileControls.Converters.DataFieldConverter" />
@@ -37,6 +37,7 @@
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.ComponentModel.TypeConverter" />
     <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

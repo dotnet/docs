@@ -1,4 +1,4 @@
-﻿<Type Name="IWebApplication" FullName="System.Web.UI.Design.IWebApplication">
+<Type Name="IWebApplication" FullName="System.Web.UI.Design.IWebApplication">
   <TypeSignature Language="C#" Value="public interface IWebApplication : IServiceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebApplication implements class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IWebApplication" />
@@ -23,6 +23,7 @@
   <Docs>
     <summary>Provides an interface for accessing a Web application in a design host, such as Microsoft Visual Studio 2005, at design time.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
   </Docs>
   <Members>
     <Member MemberName="GetProjectItemFromUrl">
@@ -50,6 +51,7 @@
         <returns>A project item from a design host based on its URL.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.Design.IProjectItem" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="OpenWebConfiguration">
@@ -78,6 +80,7 @@
         <returns>An object representing the current Web application in the design host.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Configuration.Configuration" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="RootProjectItem">
@@ -101,6 +104,7 @@
         <value>The root project item from the design host.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.Design.IProjectItem" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
   </Members>

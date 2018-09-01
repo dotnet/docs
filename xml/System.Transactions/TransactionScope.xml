@@ -1,4 +1,4 @@
-﻿<Type Name="TransactionScope" FullName="System.Transactions.TransactionScope">
+<Type Name="TransactionScope" FullName="System.Transactions.TransactionScope">
   <TypeSignature Language="C#" Value="public sealed class TransactionScope : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TransactionScope extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionScope" />
@@ -60,6 +60,7 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms172152(v=vs.85)">Implementing An Implicit Transaction Using Transaction Scope</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -105,6 +106,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms172152(v=vs.85)">Implementing An Implicit Transaction Using Transaction Scope</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -143,6 +145,7 @@
         <param name="transaction">The transaction to be set as the ambient transaction, so that transactional work done inside the scope uses this transaction.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class and sets the specified transaction as the ambient transaction, so that transactional work done inside the scope uses this transaction.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms172152(v=vs.85)">Implementing An Implicit Transaction Using Transaction Scope</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -255,6 +258,7 @@
         <param name="option">An instance of the <see cref="T:System.Transactions.TransactionScopeOption" /> enumeration that describes the transaction requirements associated with this transaction scope.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified requirements.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms172152(v=vs.85)">Implementing An Implicit Transaction Using Transaction Scope</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -370,6 +374,7 @@
         <param name="timeout">The <see cref="T:System.TimeSpan" /> after which the transaction scope times out and aborts the transaction.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified timeout value, and sets the specified transaction as the ambient transaction, so that transactional work done inside the scope uses this transaction.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms172152(v=vs.85)">Implementing An Implicit Transaction Using Transaction Scope</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -413,6 +418,7 @@
         <param name="timeout">The <see cref="T:System.TimeSpan" /> after which the transaction scope times out and aborts the transaction.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified timeout value and requirements.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms172152(v=vs.85)">Implementing An Implicit Transaction Using Transaction Scope</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -460,6 +466,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms172152(v=vs.85)">Implementing An Implicit Transaction Using Transaction Scope</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -556,6 +563,7 @@ When you use the `transactionOptions` parameter to specify an <xref:System.Trans
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms172152(v=vs.85)">Implementing An Implicit Transaction Using Transaction Scope</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -610,6 +618,7 @@ When you use the `transactionOptions` parameter to specify an <xref:System.Trans
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms172152(v=vs.85)">Implementing An Implicit Transaction Using Transaction Scope</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -710,6 +719,7 @@ When you use the `transactionOptions` parameter to specify an <xref:System.Trans
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This method has already been called once.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms172152(v=vs.85)">Implementing An Implicit Transaction Using Transaction Scope</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -766,6 +776,7 @@ When you use the `transactionOptions` parameter to specify an <xref:System.Trans
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms172152(v=vs.85)">Implementing An Implicit Transaction Using Transaction Scope</related>
       </Docs>
     </Member>
   </Members>

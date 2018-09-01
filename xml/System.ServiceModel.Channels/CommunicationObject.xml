@@ -1,4 +1,4 @@
-﻿<Type Name="CommunicationObject" FullName="System.ServiceModel.Channels.CommunicationObject">
+<Type Name="CommunicationObject" FullName="System.ServiceModel.Channels.CommunicationObject">
   <TypeSignature Language="C#" Value="public abstract class CommunicationObject : System.ServiceModel.ICommunicationObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CommunicationObject extends System.Object implements class System.ServiceModel.ICommunicationObject" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.CommunicationObject" />
@@ -1404,6 +1404,7 @@
         <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="F:System.ServiceModel.CommunicationState.Faulted" /> state and cannot be modified.</exception>
         <exception cref="T:System.TimeoutException">The default interval of time that was allotted for the operation was exceeded before the operation was completed.</exception>
         <altmember cref="M:System.ServiceModel.Channels.CommunicationObject.BeginOpen(System.AsyncCallback,System.Object)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/01e7d0b8-10f9-45c3-a4c5-53d44dc61eb8">Message Security with a Windows Client</related>
       </Docs>
     </Member>
     <Member MemberName="Open">

@@ -1,4 +1,4 @@
-﻿<Type Name="PersonalizationState" FullName="System.Web.UI.WebControls.WebParts.PersonalizationState">
+<Type Name="PersonalizationState" FullName="System.Web.UI.WebControls.WebParts.PersonalizationState">
   <TypeSignature Language="C#" Value="public abstract class PersonalizationState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PersonalizationState extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PersonalizationState" />
@@ -30,6 +30,10 @@
       <para>Derived classes should always call the base class constructor from the derived constructor.</para>
     </block>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.PersonalizationProvider" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

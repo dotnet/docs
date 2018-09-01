@@ -1,4 +1,4 @@
-﻿<Type Name="ITemplateable" FullName="System.Web.UI.MobileControls.ITemplateable">
+<Type Name="ITemplateable" FullName="System.Web.UI.MobileControls.ITemplateable">
   <TypeSignature Language="C#" Value="public interface ITemplateable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITemplateable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ITemplateable" />
@@ -28,6 +28,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <related type="Article" href="https://msdn.microsoft.com/library/a638e52e-eb7d-41be-948e-e0c4c3b9d0a4">Template Sets and Templated Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f7a806ec-63cd-4ebc-ab21-95196a6c68af">Device Template Support</related>
   </Docs>
   <Members />
 </Type>

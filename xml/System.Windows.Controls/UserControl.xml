@@ -1,4 +1,4 @@
-﻿<Type Name="UserControl" FullName="System.Windows.Controls.UserControl">
+<Type Name="UserControl" FullName="System.Windows.Controls.UserControl">
   <TypeSignature Language="C#" Value="public class UserControl : System.Windows.Controls.ContentControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi UserControl extends System.Windows.Controls.ContentControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.UserControl" />
@@ -44,6 +44,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160025">NumericUpDown Custom Control with Theme and UI Automation Support Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

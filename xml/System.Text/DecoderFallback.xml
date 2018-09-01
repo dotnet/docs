@@ -1,4 +1,4 @@
-﻿<Type Name="DecoderFallback" FullName="System.Text.DecoderFallback">
+<Type Name="DecoderFallback" FullName="System.Text.DecoderFallback">
   <TypeSignature Language="C#" Value="public abstract class DecoderFallback" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit DecoderFallback extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Text.DecoderFallback" />
@@ -66,6 +66,7 @@
     <altmember cref="T:System.Text.DecoderFallbackBuffer" />
     <altmember cref="T:System.Text.DecoderReplacementFallback" />
     <altmember cref="T:System.Text.DecoderExceptionFallback" />
+    <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Character Encoding in the .NET Framework</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -145,6 +146,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Text.DecoderFallbackBuffer" />
+        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Character Encoding in the .NET Framework</related>
       </Docs>
     </Member>
     <Member MemberName="ExceptionFallback">

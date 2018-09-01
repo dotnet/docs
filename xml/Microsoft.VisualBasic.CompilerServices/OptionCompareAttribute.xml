@@ -1,4 +1,4 @@
-﻿<Type Name="OptionCompareAttribute" FullName="Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute">
+<Type Name="OptionCompareAttribute" FullName="Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute">
   <TypeSignature Language="C#" Value="public sealed class OptionCompareAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OptionCompareAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute" />
@@ -37,6 +37,7 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <related type="Article" href="~/docs/visual-basic/language-reference/statements/option-compare-statement.md">Option Compare Statement</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,6 +70,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/option-compare-statement.md">Option Compare Statement</related>
       </Docs>
     </Member>
   </Members>

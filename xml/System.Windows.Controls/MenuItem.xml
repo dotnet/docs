@@ -1,4 +1,4 @@
-﻿<Type Name="MenuItem" FullName="System.Windows.Controls.MenuItem">
+<Type Name="MenuItem" FullName="System.Windows.Controls.MenuItem">
   <TypeSignature Language="C#" Value="public class MenuItem : System.Windows.Controls.HeaderedItemsControl, System.Windows.Input.ICommandSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi MenuItem extends System.Windows.Controls.HeaderedItemsControl implements class System.Windows.Input.ICommandSource" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.MenuItem" />
@@ -290,7 +290,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is used to associate a command with a particular <xref:System.Windows.Controls.MenuItem> instance. The following example associates the **Copy** command with a <xref:System.Windows.Controls.MenuItem> and automatically supplies the input gesture text **Ctrl+C**. The example does not set the <xref:System.Windows.Controls.HeaderedItemsControl.Header%2A> property, but the <xref:System.Windows.Controls.HeaderedItemsControl.Header%2A> for the <xref:System.Windows.Controls.MenuItem> is "Copy" at run time.  You can specify another header for the <xref:System.Windows.Controls.MenuItem> if you want it to be different. For information on how to bind to the desired command, see [Add a Command to a MenuItem](http://msdn.microsoft.com/library/013d68a0-5373-4a68-bd91-5de574307370).  
+ This property is used to associate a command with a particular <xref:System.Windows.Controls.MenuItem> instance. The following example associates the **Copy** command with a <xref:System.Windows.Controls.MenuItem> and automatically supplies the input gesture text **Ctrl+C**. The example does not set the <xref:System.Windows.Controls.HeaderedItemsControl.Header%2A> property, but the <xref:System.Windows.Controls.HeaderedItemsControl.Header%2A> for the <xref:System.Windows.Controls.MenuItem> is "Copy" at run time.  You can specify another header for the <xref:System.Windows.Controls.MenuItem> if you want it to be different. For information on how to bind to the desired command, see [Add a Command to a MenuItem](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741839(v=vs.90)).  
   
  [!code-xaml[MenuItems_snip#MenuItemCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItems_snip/CSharp/Pane1.xaml#menuitemcommand)]  
   
@@ -652,6 +652,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741839(v=vs.90)">Add a Command to a MenuItem</related>
       </Docs>
     </Member>
     <Member MemberName="InputGestureTextProperty">
@@ -1988,6 +1989,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms749214(v=vs.90)">Style a Separator Used as a Menu Item</related>
       </Docs>
     </Member>
     <Member MemberName="ShouldApplyItemContainerStyle">

@@ -1,4 +1,4 @@
-﻿<Type Name="HostAdapterAttribute" FullName="System.AddIn.Pipeline.HostAdapterAttribute">
+<Type Name="HostAdapterAttribute" FullName="System.AddIn.Pipeline.HostAdapterAttribute">
   <TypeSignature Language="C#" Value="public sealed class HostAdapterAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HostAdapterAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Pipeline.HostAdapterAttribute" />
@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/8dd45b02-7218-40f9-857d-40d7b98b850b">Add-Ins and Extensibility</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

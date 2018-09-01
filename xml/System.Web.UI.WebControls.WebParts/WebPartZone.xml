@@ -1,4 +1,4 @@
-﻿<Type Name="WebPartZone" FullName="System.Web.UI.WebControls.WebParts.WebPartZone">
+<Type Name="WebPartZone" FullName="System.Web.UI.WebControls.WebParts.WebPartZone">
   <TypeSignature Language="C#" Value="public class WebPartZone : System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebPartZone extends System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartZone" />
@@ -71,6 +71,9 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebZone" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Web Parts Control Set Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/13525a0a-22b8-4861-b24c-99df859e2cb5">Introduction to ASP.NET Web Parts</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -109,6 +112,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetInitialWebParts">
@@ -147,6 +151,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZone.ZoneTemplate" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -172,6 +177,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Overrides the base method to indicate that the zone has successfully been registered with the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ZoneTemplate">
@@ -232,6 +238,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">Registration of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls in the zone is already complete.</exception>
         <altmember cref="T:System.Web.UI.ITemplate" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

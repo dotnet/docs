@@ -1,4 +1,4 @@
-﻿<Type Name="ProfileModule" FullName="System.Web.Profile.ProfileModule">
+<Type Name="ProfileModule" FullName="System.Web.Profile.ProfileModule">
   <TypeSignature Language="C#" Value="public sealed class ProfileModule : System.Web.IHttpModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProfileModule extends System.Object implements class System.Web.IHttpModule" />
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileModule" />
@@ -68,6 +68,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -100,6 +101,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -134,6 +136,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -171,6 +174,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="MigrateAnonymous">
@@ -233,6 +237,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Personalize">
@@ -313,6 +318,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
   </Members>

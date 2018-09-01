@@ -1,4 +1,4 @@
-﻿<Type Name="AssemblyCopyrightAttribute" FullName="System.Reflection.AssemblyCopyrightAttribute">
+<Type Name="AssemblyCopyrightAttribute" FullName="System.Reflection.AssemblyCopyrightAttribute">
   <TypeSignature Language="C#" Value="public sealed class AssemblyCopyrightAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyCopyrightAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyCopyrightAttribute" />
@@ -54,6 +54,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/2cfebe19-7436-49f1-bd99-3c4019f0b676">Assemblies in the Common Language Runtime</related>
+    <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -91,6 +93,8 @@
         <param name="copyright">The copyright information.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyCopyrightAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2cfebe19-7436-49f1-bd99-3c4019f0b676">Assemblies in the Common Language Runtime</related>
+        <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
       </Docs>
     </Member>
     <Member MemberName="Copyright">
@@ -128,6 +132,8 @@
         <summary>Gets copyright information.</summary>
         <value>A string containing the copyright information.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2cfebe19-7436-49f1-bd99-3c4019f0b676">Assemblies in the Common Language Runtime</related>
+        <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="WmpBitmapEncoder" FullName="System.Windows.Media.Imaging.WmpBitmapEncoder">
+<Type Name="WmpBitmapEncoder" FullName="System.Windows.Media.Imaging.WmpBitmapEncoder">
   <TypeSignature Language="C#" Value="public sealed class WmpBitmapEncoder : System.Windows.Media.Imaging.BitmapEncoder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WmpBitmapEncoder extends System.Windows.Media.Imaging.BitmapEncoder" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.WmpBitmapEncoder" />
@@ -30,6 +30,7 @@
     </remarks>
     <altmember cref="T:System.Windows.Media.Imaging.BitmapEncoder" />
     <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
+    <related type="ExternalDocumentation" href="http://www.microsoft.com/whdc/xps/wmphoto.mspx">Windows Media Photo Specification</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="ComImportAttribute" FullName="System.Runtime.InteropServices.ComImportAttribute">
+<Type Name="ComImportAttribute" FullName="System.Runtime.InteropServices.ComImportAttribute">
   <TypeSignature Language="C#" Value="public sealed class ComImportAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComImportAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComImportAttribute" />
@@ -62,6 +62,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/tools/tlbimp-exe-type-library-importer.md">Tlbimp.exe (Type Library Importer)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

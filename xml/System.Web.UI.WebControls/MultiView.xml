@@ -1,4 +1,4 @@
-﻿<Type Name="MultiView" FullName="System.Web.UI.WebControls.MultiView">
+<Type Name="MultiView" FullName="System.Web.UI.WebControls.MultiView">
   <TypeSignature Language="C#" Value="public class MultiView : System.Web.UI.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MultiView extends System.Web.UI.Control" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MultiView" />
@@ -169,6 +169,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.View" />
+    <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -194,6 +195,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ActiveViewChanged">
@@ -236,6 +238,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.MultiView.OnActiveViewChanged(System.EventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ActiveViewIndex">
@@ -291,6 +294,7 @@
         <altmember cref="T:System.Web.UI.WebControls.View" />
         <altmember cref="M:System.Web.UI.WebControls.MultiView.SetActiveView(System.Web.UI.WebControls.View)" />
         <altmember cref="M:System.Web.UI.WebControls.MultiView.GetActiveView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -326,6 +330,7 @@
         <exception cref="T:System.Web.HttpException">The specified <see cref="T:System.Object" /> is not a <see cref="T:System.Web.UI.WebControls.View" /> control.</exception>
         <altmember cref="T:System.Web.UI.WebControls.View" />
         <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -358,6 +363,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.View" />
         <altmember cref="T:System.Web.UI.WebControls.ViewCollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -395,6 +401,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetActiveView">
@@ -442,6 +449,7 @@
         <altmember cref="T:System.Web.UI.WebControls.View" />
         <altmember cref="M:System.Web.UI.WebControls.MultiView.SetActiveView(System.Web.UI.WebControls.View)" />
         <altmember cref="P:System.Web.UI.WebControls.MultiView.ActiveViewIndex" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -467,6 +475,7 @@
         <param name="state">An <see cref="T:System.Object" /> that represents the state of the <see cref="T:System.Web.UI.WebControls.MultiView" /> control.</param>
         <summary>Loads the current state of the <see cref="T:System.Web.UI.WebControls.MultiView" /> control.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="NextViewCommandName">
@@ -509,6 +518,7 @@
         <altmember cref="F:System.Web.UI.WebControls.MultiView.PreviousViewCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIDCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIndexCommandName" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnActiveViewChanged">
@@ -560,6 +570,7 @@
           <para>When overriding <see cref="M:System.Web.UI.WebControls.MultiView.OnActiveViewChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.MultiView.OnActiveViewChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.MultiView.ActiveViewChanged" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -598,6 +609,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.UI.WebControls.MultiView" /> control cannot find the <see cref="T:System.Web.UI.WebControls.View" /> specified in the <see cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" /> property of <paramref name="e" />.</exception>
         <exception cref="T:System.FormatException">The <see cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" /> property of <paramref name="e" /> cannot be parsed as an integer.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -630,6 +642,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousViewCommandName">
@@ -675,6 +688,7 @@
         <altmember cref="F:System.Web.UI.WebControls.MultiView.NextViewCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIDCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIndexCommandName" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemovedControl">
@@ -707,6 +721,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -743,6 +758,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
@@ -766,6 +782,7 @@
         <summary>Saves the current state of the <see cref="T:System.Web.UI.WebControls.MultiView" /> control.</summary>
         <returns>An <see cref="T:System.Object" /> that represents the state of the <see cref="T:System.Web.UI.WebControls.MultiView" /> control. If there is no state associated with the <see cref="T:System.Web.UI.WebControls.MultiView" /> control, this method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SetActiveView">
@@ -815,6 +832,7 @@
         <altmember cref="P:System.Web.UI.WebControls.MultiView.ActiveViewIndex" />
         <altmember cref="M:System.Web.UI.WebControls.MultiView.GetActiveView" />
         <altmember cref="T:System.Web.UI.WebControls.View" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SwitchViewByIDCommandName">
@@ -860,6 +878,7 @@
         <altmember cref="F:System.Web.UI.WebControls.MultiView.PreviousViewCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.MultiView.NextViewCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIndexCommandName" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SwitchViewByIndexCommandName">
@@ -905,6 +924,7 @@
         <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIDCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.MultiView.PreviousViewCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.MultiView.NextViewCommandName" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Views">
@@ -953,6 +973,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ViewCollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
   </Members>

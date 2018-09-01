@@ -1,4 +1,4 @@
-﻿<Type Name="ComPersistableTypeElementCollection" FullName="System.ServiceModel.Configuration.ComPersistableTypeElementCollection">
+<Type Name="ComPersistableTypeElementCollection" FullName="System.ServiceModel.Configuration.ComPersistableTypeElementCollection">
   <TypeSignature Language="C#" Value="public sealed class ComPersistableTypeElementCollection : System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection&lt;System.ServiceModel.Configuration.ComPersistableTypeElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComPersistableTypeElementCollection extends System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection`1&lt;class System.ServiceModel.Configuration.ComPersistableTypeElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ComPersistableTypeElementCollection" />
@@ -25,6 +25,7 @@
   <Docs>
     <summary>Represents a collection of <see cref="T:System.ServiceModel.Configuration.ComPersistableTypeElement" /> objects. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/4d255097-45f0-4a04-945e-41d9bcfe8c54">CompersistableTypes in Configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

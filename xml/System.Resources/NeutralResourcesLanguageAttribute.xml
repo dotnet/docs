@@ -1,4 +1,4 @@
-﻿<Type Name="NeutralResourcesLanguageAttribute" FullName="System.Resources.NeutralResourcesLanguageAttribute">
+<Type Name="NeutralResourcesLanguageAttribute" FullName="System.Resources.NeutralResourcesLanguageAttribute">
   <TypeSignature Language="C#" Value="public sealed class NeutralResourcesLanguageAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NeutralResourcesLanguageAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Resources.NeutralResourcesLanguageAttribute" />
@@ -146,6 +146,7 @@ csc Example.cs /resource:ExampleResources.resources
     </remarks>
     <altmember cref="T:System.Resources.UltimateResourceFallbackLocation" />
     <altmember cref="P:System.Resources.ResourceManager.FallbackLocation" />
+    <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -248,6 +249,7 @@ csc Example.cs /resource:ExampleResources.resources
           <paramref name="location" /> is not a member of <see cref="T:System.Resources.UltimateResourceFallbackLocation" />.</exception>
         <altmember cref="T:System.Resources.UltimateResourceFallbackLocation" />
         <altmember cref="P:System.Resources.ResourceManager.FallbackLocation" />
+        <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
       </Docs>
     </Member>
     <Member MemberName="CultureName">
@@ -324,6 +326,7 @@ csc Example.cs /resource:ExampleResources.resources
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Resources.UltimateResourceFallbackLocation" />
         <altmember cref="P:System.Resources.ResourceManager.FallbackLocation" />
+        <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
       </Docs>
     </Member>
   </Members>

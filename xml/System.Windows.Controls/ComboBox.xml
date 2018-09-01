@@ -1,4 +1,4 @@
-﻿<Type Name="ComboBox" FullName="System.Windows.Controls.ComboBox">
+<Type Name="ComboBox" FullName="System.Windows.Controls.ComboBox">
   <TypeSignature Language="C#" Value="public class ComboBox : System.Windows.Controls.Primitives.Selector" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ComboBox extends System.Windows.Controls.Primitives.Selector" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ComboBox" />
@@ -80,6 +80,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Controls.ComboBoxItem" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160053">WPF Controls Gallery Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

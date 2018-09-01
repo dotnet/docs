@@ -1,4 +1,4 @@
-﻿<Type Name="ComUdtElement" FullName="System.ServiceModel.Configuration.ComUdtElement">
+<Type Name="ComUdtElement" FullName="System.ServiceModel.Configuration.ComUdtElement">
   <TypeSignature Language="C#" Value="public sealed class ComUdtElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComUdtElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ComUdtElement" />
@@ -49,6 +49,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/3f8e1c0c-cfdf-4c79-ac65-c64e9323a51c">ComUdtElements in Config</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

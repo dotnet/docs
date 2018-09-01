@@ -1,4 +1,4 @@
-﻿<Type Name="AuthenticationService" FullName="System.Web.ApplicationServices.AuthenticationService">
+<Type Name="AuthenticationService" FullName="System.Web.ApplicationServices.AuthenticationService">
   <TypeSignature Language="C#" Value="public class AuthenticationService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AuthenticationService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.AuthenticationService" />
@@ -45,6 +45,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -104,6 +105,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.ApplicationServices.AuthenticatingEventArgs" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreatingCookie">
@@ -146,6 +148,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.ApplicationServices.CreatingCookieEventArgs" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsLoggedIn">
@@ -185,6 +188,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Login">
@@ -234,12 +238,13 @@
  The <xref:System.Web.ApplicationServices.AuthenticationService.Login%2A> method raises the <xref:System.Web.ApplicationServices.AuthenticationService.Authenticating> event and the <xref:System.Web.ApplicationServices.AuthenticationService.CreatingCookie> event. Create an event handler for <xref:System.Web.ApplicationServices.AuthenticationService.Authenticating> to customize authentication, such as checking the values in `customCredential` or validating credentials through a non-default membership provider. The values in `customCredential` are not validated by the default membership provider. To customize the authentication cookie, create an event handler for <xref:System.Web.ApplicationServices.AuthenticationService.CreatingCookie>.  
   
 > [!NOTE]
->  Do not call the <xref:System.Web.ApplicationServices.AuthenticationService.Login%2A> method from code that is executing on the Web server. You call the <xref:System.Web.ApplicationServices.AuthenticationService.Login%2A> method only as part of a WCF service. For more information, see [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1).  
+>  Do not call the <xref:System.Web.ApplicationServices.AuthenticationService.Login%2A> method from code that is executing on the Web server. You call the <xref:System.Web.ApplicationServices.AuthenticationService.Login%2A> method only as part of a WCF service. For more information, see [ASP.NET Authentication](https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="userName" /> or <paramref name="password" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Logout">
@@ -275,11 +280,12 @@
  The <xref:System.Web.ApplicationServices.AuthenticationService> class does not store information on the server about which authentication tickets have been cleared.  
   
 > [!NOTE]
->  Do not call the <xref:System.Web.ApplicationServices.AuthenticationService.Logout%2A> method from code that is executing on the Web server. You call the <xref:System.Web.ApplicationServices.AuthenticationService.Logout%2A> method only as part of a WCF service. For more information, see [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1).  
+>  Do not call the <xref:System.Web.ApplicationServices.AuthenticationService.Logout%2A> method from code that is executing on the Web server. You call the <xref:System.Web.ApplicationServices.AuthenticationService.Logout%2A> method only as part of a WCF service. For more information, see [ASP.NET Authentication](https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)).  
   
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.Security.FormsAuthentication.SignOut" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ValidateUser">
@@ -326,12 +332,13 @@
  The <xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> method raises the <xref:System.Web.ApplicationServices.AuthenticationService.Authenticating> event, but does not raise the <xref:System.Web.ApplicationServices.AuthenticationService.CreatingCookie> event.  
   
 > [!NOTE]
->  Do not call the <xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> method from code that is executing on the Web server. You call the <xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> method only as part of a WCF service. For more information, see [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1).  
+>  Do not call the <xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> method from code that is executing on the Web server. You call the <xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> method only as part of a WCF service. For more information, see [ASP.NET Authentication](https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="userName" /> or <paramref name="password" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
       </Docs>
     </Member>
   </Members>

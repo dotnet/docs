@@ -1,4 +1,4 @@
-﻿<Type Name="TextPatternRange" FullName="System.Windows.Automation.Text.TextPatternRange">
+<Type Name="TextPatternRange" FullName="System.Windows.Automation.Text.TextPatternRange">
   <TypeSignature Language="C#" Value="public class TextPatternRange" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextPatternRange extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Text.TextPatternRange" />
@@ -27,6 +27,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Automation.Provider.ITextRangeProvider" />
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md">UI Automation Control Patterns for Clients</related>
   </Docs>
   <Members>
     <Member MemberName="AddToSelection">

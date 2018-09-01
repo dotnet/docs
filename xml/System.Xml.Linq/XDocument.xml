@@ -1,4 +1,4 @@
-﻿<Type Name="XDocument" FullName="System.Xml.Linq.XDocument">
+<Type Name="XDocument" FullName="System.Xml.Linq.XDocument">
   <TypeSignature Language="C#" Value="public class XDocument : System.Xml.Linq.XContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XDocument extends System.Xml.Linq.XContainer" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XDocument" />
@@ -108,6 +108,8 @@ Console.WriteLine(doc)
     <altmember cref="T:System.Xml.Linq.XDeclaration" />
     <altmember cref="T:System.Xml.Linq.XElement" />
     <altmember cref="T:System.Xml.Linq.XNode" />
+    <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/90f78331-1be8-42fb-93e7-bd1325826467">XDocument Class Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -199,6 +201,8 @@ Console.WriteLine(doc)
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/90f78331-1be8-42fb-93e7-bd1325826467">XDocument Class Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -270,6 +274,8 @@ Console.WriteLine(doc)
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/90f78331-1be8-42fb-93e7-bd1325826467">XDocument Class Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -388,6 +394,8 @@ Console.WriteLine(doc)
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/90f78331-1be8-42fb-93e7-bd1325826467">XDocument Class Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -432,6 +440,8 @@ Console.WriteLine(doc)
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/90f78331-1be8-42fb-93e7-bd1325826467">XDocument Class Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -561,6 +571,8 @@ Console.WriteLine(File.ReadAllText("Test.xml"))
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/90f78331-1be8-42fb-93e7-bd1325826467">XDocument Class Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Declaration">
@@ -641,6 +653,8 @@ Console.WriteLine(doc.Declaration)
  ]]></format>
         </remarks>
         <altmember cref="T:System.Xml.Linq.XDeclaration" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </Member>
     <Member MemberName="DocumentType">
@@ -782,6 +796,7 @@ Console.WriteLine(doc)
         </remarks>
         <altmember cref="T:System.Xml.Linq.XDocumentType" />
         <altmember cref="P:System.Xml.Linq.XDocument.NodeType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Load">
@@ -805,6 +820,8 @@ Console.WriteLine(doc)
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d266f58d-f2f3-4668-b661-e716e658d13a">Querying an XDocument vs. Querying an XElement</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Load">
@@ -936,6 +953,8 @@ Console.WriteLine(doc)
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d266f58d-f2f3-4668-b661-e716e658d13a">Querying an XDocument vs. Querying an XElement</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1050,6 +1069,8 @@ Console.WriteLine(doc)
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d266f58d-f2f3-4668-b661-e716e658d13a">Querying an XDocument vs. Querying an XElement</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1158,6 +1179,8 @@ End Using
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d266f58d-f2f3-4668-b661-e716e658d13a">Querying an XDocument vs. Querying an XElement</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1340,6 +1363,8 @@ Count of white space nodes (preserving whitespace): 3
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d266f58d-f2f3-4668-b661-e716e658d13a">Querying an XDocument vs. Querying an XElement</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1436,6 +1461,8 @@ nodes if preserving whitespace: 82
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d266f58d-f2f3-4668-b661-e716e658d13a">Querying an XDocument vs. Querying an XElement</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1580,6 +1607,8 @@ Root                1    2
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </Member>
     <Member MemberName="LoadAsync">
@@ -1738,6 +1767,7 @@ Document
         </remarks>
         <altmember cref="T:System.Xml.XmlNodeType" />
         <altmember cref="P:System.Xml.Linq.XDocument.DocumentType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Parse">
@@ -1796,6 +1826,8 @@ Console.WriteLine(doc)
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8bdfdca0-6738-47a4-af3b-6d36d85e4d28">Parsing XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Parse">
@@ -1890,6 +1922,8 @@ Console.WriteLine(doc)
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8bdfdca0-6738-47a4-af3b-6d36d85e4d28">Parsing XML</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1993,6 +2027,8 @@ nodes when not preserving whitespace: 4
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8bdfdca0-6738-47a4-af3b-6d36d85e4d28">Parsing XML</related>
       </Docs>
     </Member>
     <Member MemberName="Root">
@@ -2087,6 +2123,8 @@ Pubs
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/69468b03-4f18-4d69-98a4-3fa90d904f08">How to: Find All Nodes in a Namespace</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Save">
@@ -2101,6 +2139,8 @@ Pubs
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Save">
@@ -2234,6 +2274,8 @@ Console.WriteLine(sb.ToString())
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2314,6 +2356,8 @@ Console.WriteLine(File.ReadAllText("Root.xml"))
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2402,6 +2446,8 @@ Console.WriteLine(sb.ToString())
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2556,6 +2602,8 @@ End Using
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2645,6 +2693,8 @@ Console.WriteLine(File.ReadAllText("Root2.xml"))
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </Member>
     <Member MemberName="SaveAsync">
@@ -2818,6 +2868,7 @@ Console.WriteLine(sb.ToString())
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="WriteToAsync">

@@ -1,4 +1,4 @@
-﻿<Type Name="Principal" FullName="System.DirectoryServices.AccountManagement.Principal">
+<Type Name="Principal" FullName="System.DirectoryServices.AccountManagement.Principal">
   <TypeSignature Language="C#" Value="public abstract class Principal : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Principal extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.Principal" />
@@ -35,6 +35,7 @@
  ]]></format>
     </remarks>
     <altmember cref="N:System.DirectoryServices.AccountManagement" />
+    <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +71,7 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CheckDisposedOrDeleted">
@@ -120,6 +122,7 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="M:System.DirectoryServices.AccountManagement.Principal.Dispose" /> method has been called on this principal object.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.DirectoryServices.AccountManagement.Principal.Delete" /> method has been called on this principal object.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -155,6 +158,7 @@
         <value>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that contains the context associated with this principal.</value>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ContextRaw">
@@ -199,6 +203,7 @@
         <value>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that contains the context associated with this principal.</value>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ContextType">
@@ -235,6 +240,7 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -269,6 +275,7 @@
   
  The target context type must match the context type of the current principal.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -301,6 +308,7 @@
         <value>The description text for this principal or null if there is no description.</value>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -333,6 +341,7 @@
         <value>The display name for this principal or null if there is no display name.</value>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -365,6 +374,7 @@
         <summary>Disposes the current instance of the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DistinguishedName">
@@ -394,6 +404,7 @@
         <value>The DN for this principal or null if there is no DN.</value>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -423,6 +434,7 @@
           <see langword="true" /> if the supplied object and current principal objects represent the same underlying principal in the store; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ExtensionGet">
@@ -497,6 +509,8 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00">System.DirectoryServices.AccountManagement Principle Extensions</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindByIdentity">
@@ -508,6 +522,7 @@
       <Docs>
         <summary>Returns a principal object that matches the specified identity value.</summary>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FindByIdentity">
@@ -544,6 +559,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.MultipleMatchesException">Multiple principal objects matching the current object were found.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindByIdentity">
@@ -593,6 +609,7 @@
       <Docs>
         <summary>Returns a principal object that matches the specified identity type, and value. This method is called by the implementation of the derived-class **FindByIdentity** method to restrict the search to the derived class type and is not intended to be called directly from your code.</summary>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FindByIdentityWithType">
@@ -636,6 +653,7 @@
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object that matches the specified identity value and type, or null if no matches are found.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindByIdentityWithType">
@@ -680,6 +698,7 @@
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object that matches the specified identity value and type or null if no matches are found.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetGroups">
@@ -701,6 +720,7 @@
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
         <altmember cref="M:System.DirectoryServices.AccountManagement.Principal.GetGroups" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetGroups">
@@ -743,6 +763,7 @@
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
         <altmember cref="M:System.DirectoryServices.AccountManagement.Principal.GetGroups" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetGroups">
@@ -790,6 +811,7 @@
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
         <altmember cref="M:System.DirectoryServices.AccountManagement.Principal.GetGroups" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -815,6 +837,7 @@
         <returns>A hash code for the current principal.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetUnderlyingObject">
@@ -846,6 +869,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationExtension">The current principal has not been persisted and does not have an associated <see cref="T:System.DirectoryServices.DirectoryEntry" /> object.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetUnderlyingObjectType">
@@ -876,6 +900,7 @@
         <returns>The underlying object type. For AD DS, AD LDS, and SAM the type is <see cref="T:System.DirectoryServices.DirectoryEntry" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Guid">
@@ -912,6 +937,7 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="IsMemberOf">
@@ -923,6 +949,7 @@
       <Docs>
         <summary>Returns a Boolean value that specifies whether the group is a member of the specified group.</summary>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="IsMemberOf">
@@ -966,6 +993,7 @@
         <exception cref="T:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException">The <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> specified in the group parameter could not be found.</exception>
         <exception cref="T:System.DirectoryServices.AccountManagement.MultipleMatchesException">More than one matching <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> was found.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsMemberOf">
@@ -1012,6 +1040,7 @@
         <exception cref="T:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException">The identity type or value does not correspond to a <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" />.</exception>
         <exception cref="T:System.DirectoryServices.AccountManagement.MultipleMatchesException">More than one matching <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> was found.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1046,6 +1075,7 @@
         <exception cref="T:System.ArgumentNullException">The application tried to set the name to null.</exception>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SamAccountName">
@@ -1080,6 +1110,7 @@
         <exception cref="T:System.ArgumentNullException">The application tried to set the SAM account name to null.</exception>
         <exception cref="T:System.InvalidOperationException">The application tried to set the SAM account name on a persisted principal.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Save">
@@ -1091,6 +1122,7 @@
       <Docs>
         <summary>Saves the changes that were made on the principal object to the store. If this is a new principal object, this method inserts it into the store.</summary>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Save">
@@ -1126,6 +1158,7 @@
         <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalExistsException">The principal already occurs in the store.</exception>
         <exception cref="T:System.DirectoryServices.AccountManagement.PasswordException">The password does not meet complexity requirements.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -1171,6 +1204,7 @@
         <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalExistsException">The principal already occurs in the store.</exception>
         <exception cref="T:System.DirectoryServices.AccountManagement.PasswordException">The password does not meet complexity requirements.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Sid">
@@ -1200,6 +1234,7 @@
         <value>The <see cref="T:System.Security.Principal.SecurityIdentifier" /> for this principal or null if there is no SID.</value>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StructuralObjectClass">
@@ -1229,6 +1264,7 @@
         <value>The structural object class directory attribute.</value>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1262,6 +1298,7 @@
         <returns>A string representation of the current <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UserPrincipalName">
@@ -1302,6 +1339,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
   </Members>

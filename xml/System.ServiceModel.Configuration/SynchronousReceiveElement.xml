@@ -1,4 +1,4 @@
-﻿<Type Name="SynchronousReceiveElement" FullName="System.ServiceModel.Configuration.SynchronousReceiveElement">
+<Type Name="SynchronousReceiveElement" FullName="System.ServiceModel.Configuration.SynchronousReceiveElement">
   <TypeSignature Language="C#" Value="public sealed class SynchronousReceiveElement : System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SynchronousReceiveElement extends System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.SynchronousReceiveElement" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents a configuration element that is used to specify run-time behavior for receiving messages in either a service or client application. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/cc070387-3d11-4b02-a952-bc08ad2df05a">&lt;synchronousReceive&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

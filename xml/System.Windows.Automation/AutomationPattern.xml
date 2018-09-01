@@ -1,4 +1,4 @@
-﻿<Type Name="AutomationPattern" FullName="System.Windows.Automation.AutomationPattern">
+<Type Name="AutomationPattern" FullName="System.Windows.Automation.AutomationPattern">
   <TypeSignature Language="C#" Value="public class AutomationPattern : System.Windows.Automation.AutomationIdentifier" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AutomationPattern extends System.Windows.Automation.AutomationIdentifier" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationPattern" />
@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
   </Docs>
   <Members>
     <Member MemberName="LookupById">

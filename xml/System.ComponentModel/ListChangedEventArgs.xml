@@ -1,4 +1,4 @@
-﻿<Type Name="ListChangedEventArgs" FullName="System.ComponentModel.ListChangedEventArgs">
+<Type Name="ListChangedEventArgs" FullName="System.ComponentModel.ListChangedEventArgs">
   <TypeSignature Language="C#" Value="public class ListChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ListChangedEventArgs" />
@@ -50,6 +50,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.ComponentModel.IBindingList" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e5675663-fc91-4e0d-87a9-481b25b64c0f">Working with DataView Events</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -109,6 +110,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.IBindingList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/e5675663-fc91-4e0d-87a9-481b25b64c0f">Working with DataView Events</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -156,6 +158,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.IBindingList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/e5675663-fc91-4e0d-87a9-481b25b64c0f">Working with DataView Events</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -238,6 +241,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ListChangedEventArgs" /> class given the type of change and the old and new index of the item that was moved.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.IBindingList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/e5675663-fc91-4e0d-87a9-481b25b64c0f">Working with DataView Events</related>
       </Docs>
     </Member>
     <Member MemberName="ListChangedType">
@@ -289,6 +293,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.IBindingList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/e5675663-fc91-4e0d-87a9-481b25b64c0f">Working with DataView Events</related>
       </Docs>
     </Member>
     <Member MemberName="NewIndex">
@@ -345,6 +350,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.IBindingList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/e5675663-fc91-4e0d-87a9-481b25b64c0f">Working with DataView Events</related>
       </Docs>
     </Member>
     <Member MemberName="OldIndex">
@@ -396,6 +402,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.IBindingList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/e5675663-fc91-4e0d-87a9-481b25b64c0f">Working with DataView Events</related>
       </Docs>
     </Member>
     <Member MemberName="PropertyDescriptor">
@@ -446,6 +453,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.IBindingList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/e5675663-fc91-4e0d-87a9-481b25b64c0f">Working with DataView Events</related>
       </Docs>
     </Member>
   </Members>

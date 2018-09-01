@@ -1,4 +1,4 @@
-﻿<Type Name="OdbcMetaDataCollectionNames" FullName="System.Data.Odbc.OdbcMetaDataCollectionNames">
+<Type Name="OdbcMetaDataCollectionNames" FullName="System.Data.Odbc.OdbcMetaDataCollectionNames">
   <TypeSignature Language="C#" Value="public static class OdbcMetaDataCollectionNames" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit OdbcMetaDataCollectionNames extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcMetaDataCollectionNames" />
@@ -21,6 +21,7 @@
   <Docs>
     <summary>Provides a list of constants for use with the **GetSchema** method to retrieve metadata collections.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
   </Docs>
   <Members>
     <Member MemberName="Columns">
@@ -46,6 +47,7 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Columns** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="Indexes">
@@ -71,6 +73,7 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Indexes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="ProcedureColumns">
@@ -96,6 +99,7 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **ProcedureColumns** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="ProcedureParameters">
@@ -121,6 +125,7 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **ProcedureParameters** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="Procedures">
@@ -146,6 +151,7 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Procedures** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="Tables">
@@ -171,6 +177,7 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Tables** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="Views">
@@ -196,6 +203,7 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Views** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
   </Members>

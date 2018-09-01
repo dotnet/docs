@@ -1,4 +1,4 @@
-﻿<Type Name="SqlBulkCopyColumnMappingCollection" FullName="System.Data.SqlClient.SqlBulkCopyColumnMappingCollection">
+<Type Name="SqlBulkCopyColumnMappingCollection" FullName="System.Data.SqlClient.SqlBulkCopyColumnMappingCollection">
   <TypeSignature Language="C#" Value="public sealed class SqlBulkCopyColumnMappingCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlBulkCopyColumnMappingCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection" />
@@ -24,7 +24,8 @@
     <BaseTypeName>System.Object</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-4.5">System.Collections.CollectionBase</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Collection of <see cref="T:System.Data.SqlClient.SqlBulkCopyColumnMapping" /> objects that inherits from <see cref="T:System.Collections.CollectionBase" />.</summary>
     <remarks>
@@ -52,6 +53,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Add">
@@ -62,6 +65,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Adds a new <see cref="T:System.Data.SqlClient.SqlBulkCopyColumnMapping" /> to the <see cref="T:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection" />.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Add">
@@ -111,6 +115,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -167,6 +173,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -223,6 +231,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -279,6 +289,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -335,6 +347,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -386,6 +400,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -423,6 +439,8 @@
         <returns>
           <see langword="true" /> if the specified mapping exists in the collection; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -460,6 +478,8 @@
         <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
         <summary>Copies the elements of the <see cref="T:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection" /> to an array of <see cref="T:System.Data.SqlClient.SqlBulkCopyColumnMapping" /> items, starting at a particular index.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -553,6 +573,8 @@
         <summary>Gets the index of the specified <see cref="T:System.Data.SqlClient.SqlBulkCopyColumnMapping" /> object.</summary>
         <returns>The zero-based index of the column mapping, or -1 if the column mapping is not found in the collection.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -591,6 +613,8 @@
           <see cref="T:System.Data.SqlClient.SqlBulkCopyColumnMapping" /> object to be inserted in the collection.</param>
         <summary>Insert a new <see cref="T:System.Data.SqlClient.SqlBulkCopyColumnMapping" /> at the index specified.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -627,6 +651,8 @@
         <summary>Gets the <see cref="T:System.Data.SqlClient.SqlBulkCopyColumnMapping" /> object at the specified index.</summary>
         <value>A <see cref="T:System.Data.SqlClient.SqlBulkCopyColumnMapping" /> object.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -683,6 +709,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -737,6 +765,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">

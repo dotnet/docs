@@ -1,4 +1,4 @@
-﻿<Type Name="MultiTrigger" FullName="System.Windows.MultiTrigger">
+<Type Name="MultiTrigger" FullName="System.Windows.MultiTrigger">
   <TypeSignature Language="C#" Value="public sealed class MultiTrigger : System.Windows.TriggerBase, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MultiTrigger extends System.Windows.TriggerBase implements class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.MultiTrigger" />
@@ -44,6 +44,7 @@
     </remarks>
     <altmember cref="T:System.Windows.Trigger" />
     <altmember cref="T:System.Windows.MultiDataTrigger" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160010">Introduction to Styling and Templating Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -126,6 +127,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Windows.MultiTrigger.Setters" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160010">Introduction to Styling and Templating Sample</related>
       </Docs>
     </Member>
     <Member MemberName="Setters">
@@ -192,6 +194,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Windows.MultiTrigger.Conditions" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160010">Introduction to Styling and Templating Sample</related>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddChild">

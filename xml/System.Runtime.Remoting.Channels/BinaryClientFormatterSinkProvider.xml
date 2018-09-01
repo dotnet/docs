@@ -1,4 +1,4 @@
-﻿<Type Name="BinaryClientFormatterSinkProvider" FullName="System.Runtime.Remoting.Channels.BinaryClientFormatterSinkProvider">
+<Type Name="BinaryClientFormatterSinkProvider" FullName="System.Runtime.Remoting.Channels.BinaryClientFormatterSinkProvider">
   <TypeSignature Language="C#" Value="public class BinaryClientFormatterSinkProvider : System.Runtime.Remoting.Channels.IClientChannelSinkProvider, System.Runtime.Remoting.Channels.IClientFormatterSinkProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BinaryClientFormatterSinkProvider extends System.Object implements class System.Runtime.Remoting.Channels.IClientChannelSinkProvider, class System.Runtime.Remoting.Channels.IClientFormatterSinkProvider" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.BinaryClientFormatterSinkProvider" />
@@ -46,6 +46,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kw7c6kwc(v=vs.100)">Channel and Formatter Configuration Properties</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -99,6 +100,7 @@
         <param name="providerData">A <see cref="T:System.Collections.ICollection" /> of <see cref="T:System.Runtime.Remoting.Channels.SinkProviderData" /> objects that contain provider data to use with the new instance of <see cref="T:System.Runtime.Remoting.Channels.BinaryClientFormatterSinkProvider" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.BinaryClientFormatterSinkProvider" /> class with the given properties and provider data.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kw7c6kwc(v=vs.100)">Channel and Formatter Configuration Properties</related>
       </Docs>
     </Member>
     <Member MemberName="CreateSink">

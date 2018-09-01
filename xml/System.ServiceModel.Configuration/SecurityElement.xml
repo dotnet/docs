@@ -1,4 +1,4 @@
-﻿<Type Name="SecurityElement" FullName="System.ServiceModel.Configuration.SecurityElement">
+<Type Name="SecurityElement" FullName="System.ServiceModel.Configuration.SecurityElement">
   <TypeSignature Language="C#" Value="public sealed class SecurityElement : System.ServiceModel.Configuration.SecurityElementBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SecurityElement extends System.ServiceModel.Configuration.SecurityElementBase" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.SecurityElement" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents a configuration element that specifies the security options for a custom binding. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/9da4f960-f64e-4d8a-894d-2b09eba5ce4b">customBinding Element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

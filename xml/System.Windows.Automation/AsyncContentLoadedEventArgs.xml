@@ -1,4 +1,4 @@
-﻿<Type Name="AsyncContentLoadedEventArgs" FullName="System.Windows.Automation.AsyncContentLoadedEventArgs">
+<Type Name="AsyncContentLoadedEventArgs" FullName="System.Windows.Automation.AsyncContentLoadedEventArgs">
   <TypeSignature Language="C#" Value="public sealed class AsyncContentLoadedEventArgs : System.Windows.Automation.AutomationEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AsyncContentLoadedEventArgs extends System.Windows.Automation.AutomationEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AsyncContentLoadedEventArgs" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Provides data for a <see cref="F:System.Windows.Automation.AutomationElement.AsyncContentLoadedEvent" />.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/b909e388-3f24-4997-b6d4-bd9c35c2dc27">UI Automation Events Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

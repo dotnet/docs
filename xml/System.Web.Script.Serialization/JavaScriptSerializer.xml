@@ -1,4 +1,4 @@
-﻿<Type Name="JavaScriptSerializer" FullName="System.Web.Script.Serialization.JavaScriptSerializer">
+<Type Name="JavaScriptSerializer" FullName="System.Web.Script.Serialization.JavaScriptSerializer">
   <TypeSignature Language="C#" Value="public class JavaScriptSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JavaScriptSerializer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Serialization.JavaScriptSerializer" />
@@ -65,6 +65,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/4e876911-6276-4de8-b22a-d326a2033582">Using Web Services in ASP.NET AJAX</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/fc06c224-f01a-45be-94af-bd71afbc07b0">Calling Web Services from Client Script in ASP.NET AJAX</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -142,6 +144,7 @@
         </remarks>
         <altmember cref="T:System.Web.Script.Serialization.JavaScriptTypeResolver" />
         <altmember cref="T:System.Web.Script.Serialization.SimpleTypeResolver" />
+        <related type="Article" href="https://msdn.microsoft.com/library/4e876911-6276-4de8-b22a-d326a2033582">Using Web Services in ASP.NET AJAX</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertToType">

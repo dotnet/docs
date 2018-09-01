@@ -1,4 +1,4 @@
-﻿<Type Name="CustomBindingElementCollection" FullName="System.ServiceModel.Configuration.CustomBindingElementCollection">
+<Type Name="CustomBindingElementCollection" FullName="System.ServiceModel.Configuration.CustomBindingElementCollection">
   <TypeSignature Language="C#" Value="public sealed class CustomBindingElementCollection : System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection&lt;System.ServiceModel.Configuration.CustomBindingElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CustomBindingElementCollection extends System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection`1&lt;class System.ServiceModel.Configuration.CustomBindingElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.CustomBindingElementCollection" />
@@ -26,6 +26,7 @@
     <summary>Represents a collection of <see cref="T:System.ServiceModel.Configuration.CustomBindingElement" /> objects. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.ServiceModel.Channels.CustomBinding" />
+    <related type="Article" href="http://msdn.microsoft.com/library/9da4f960-f64e-4d8a-894d-2b09eba5ce4b">CustomBindings in Configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

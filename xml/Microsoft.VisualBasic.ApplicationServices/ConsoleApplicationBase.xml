@@ -1,4 +1,4 @@
-﻿<Type Name="ConsoleApplicationBase" FullName="Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase">
+<Type Name="ConsoleApplicationBase" FullName="Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase">
   <TypeSignature Language="C#" Value="public class ConsoleApplicationBase : Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ConsoleApplicationBase extends Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase" />
@@ -41,6 +41,7 @@
     </remarks>
     <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase" />
     <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,6 +65,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CommandLineArgs">
@@ -132,6 +134,7 @@
         <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
         <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs" />
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs.CommandLine" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Deployment">
@@ -157,9 +160,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `My.Application.Deployment` property returns the application's ClickOnce <xref:System.Deployment.Application.ApplicationDeployment> object. The <xref:System.Deployment.Application.ApplicationDeployment> object provides support for updating the current deployment programmatically as well as support for the on-demand download of files. For more information on ClickOnce applications and how to deploy them, see [ClickOnce Security and Deployment](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a) and [Publishing ClickOnce Applications](http://msdn.microsoft.com/library/eb6dfe79-f54c-4331-8e36-073688e70973).  
+ The `My.Application.Deployment` property returns the application's ClickOnce <xref:System.Deployment.Application.ApplicationDeployment> object. The <xref:System.Deployment.Application.ApplicationDeployment> object provides support for updating the current deployment programmatically as well as support for the on-demand download of files. For more information on ClickOnce applications and how to deploy them, see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment) and [Publishing ClickOnce Applications](/visualstudio/deployment/publishing-clickonce-applications).  
   
- Confirm that the <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.IsNetworkDeployed%2A> property is `True` before you access the `My.Application.Deployment` property. Otherwise, if the application is not deployed using ClickOnce, reading the `My.Application.Deployment` property results in an <xref:System.Deployment.Application.InvalidDeploymentException> exception. For more information on deploying a ClickOnce application, see [How to: Publish a ClickOnce Application using the Publish Wizard](http://msdn.microsoft.com/library/2e4aa67c-4445-4f7b-9e03-9acb95829127).  
+ Confirm that the <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.IsNetworkDeployed%2A> property is `True` before you access the `My.Application.Deployment` property. Otherwise, if the application is not deployed using ClickOnce, reading the `My.Application.Deployment` property results in an <xref:System.Deployment.Application.InvalidDeploymentException> exception. For more information on deploying a ClickOnce application, see [How to: Publish a ClickOnce Application using the Publish Wizard](/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard).  
   
  For more information on using the `My.Application.Deployment` property, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
@@ -182,13 +185,17 @@
   
  [!code-vb[VbVbalrMyApplication#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#4)]  
   
- Only applications that are ClickOnce deployed can be updated using the `My.Application.Deployment` object. For more information on deploying a ClickOnce application, see [How to: Publish a ClickOnce Application using the Publish Wizard](http://msdn.microsoft.com/library/2e4aa67c-4445-4f7b-9e03-9acb95829127).  
+ Only applications that are ClickOnce deployed can be updated using the `My.Application.Deployment` object. For more information on deploying a ClickOnce application, see [How to: Publish a ClickOnce Application using the Publish Wizard](/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Deployment.Application.InvalidDeploymentException">The application is not deployed as a ClickOnce application.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:System.Deployment.Application.ApplicationDeployment" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
+        <related type="Article" href="/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard">How to: Publish a ClickOnce Application</related>
+        <related type="Article" href="/visualstudio/deployment/publishing-clickonce-applications">Publish ClickOnce applications</related>
       </Docs>
     </Member>
     <Member MemberName="InternalCommandLine">
@@ -229,6 +236,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="IsNetworkDeployed">
@@ -254,11 +262,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `My.Application.IsNetworkDeployed` property indicates whether the application was deployed from a network using ClickOnce. For more information on ClickOnce applications, see [ClickOnce Security and Deployment](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a).  
+ The `My.Application.IsNetworkDeployed` property indicates whether the application was deployed from a network using ClickOnce. For more information on ClickOnce applications, see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment).  
   
  You should confirm that this property is `True` before you access the <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.Deployment%2A> property. Otherwise, if the application is not deployed from a network using ClickOnce, reading the `My.Application.Deployment` property results in an <xref:System.Deployment.Application.InvalidDeploymentException> exception.  
   
- For more information on configuring ClickOnce, see [Publishing ClickOnce Applications](http://msdn.microsoft.com/library/eb6dfe79-f54c-4331-8e36-073688e70973). For more information on deploying a ClickOnce application, see [How to: Publish a ClickOnce Application using the Publish Wizard](http://msdn.microsoft.com/library/2e4aa67c-4445-4f7b-9e03-9acb95829127).  
+ For more information on configuring ClickOnce, see [Publishing ClickOnce Applications](/visualstudio/deployment/publishing-clickonce-applications). For more information on deploying a ClickOnce application, see [How to: Publish a ClickOnce Application using the Publish Wizard](/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard).  
   
  For more information on using the `My.Application.IsNetworkDeployed` property, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
@@ -281,11 +289,14 @@
   
  [!code-vb[VbVbalrMyApplication#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#4)]  
   
- Only applications that are ClickOnce-deployed can be updated using the `My.Application.Deployment` object. For more information on deploying a ClickOnce application, see [How to: Publish a ClickOnce Application using the Publish Wizard](http://msdn.microsoft.com/library/2e4aa67c-4445-4f7b-9e03-9acb95829127).  
+ Only applications that are ClickOnce-deployed can be updated using the `My.Application.Deployment` object. For more information on deploying a ClickOnce application, see [How to: Publish a ClickOnce Application using the Publish Wizard](/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard).  
   
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
+        <related type="Article" href="/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard">How to: Publish a ClickOnce Application</related>
       </Docs>
     </Member>
   </Members>

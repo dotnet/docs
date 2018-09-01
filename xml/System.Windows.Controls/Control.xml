@@ -1,4 +1,4 @@
-﻿<Type Name="Control" FullName="System.Windows.Controls.Control">
+<Type Name="Control" FullName="System.Windows.Controls.Control">
   <TypeSignature Language="C#" Value="public class Control : System.Windows.FrameworkElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Control extends System.Windows.FrameworkElement" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Control" />
@@ -54,6 +54,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160053">WPF Controls Gallery Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

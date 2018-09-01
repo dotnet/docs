@@ -1,4 +1,4 @@
-﻿<Type Name="IssuedTokenClientBehaviorsElementCollection" FullName="System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElementCollection">
+<Type Name="IssuedTokenClientBehaviorsElementCollection" FullName="System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElementCollection">
   <TypeSignature Language="C#" Value="public sealed class IssuedTokenClientBehaviorsElementCollection : System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection&lt;System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IssuedTokenClientBehaviorsElementCollection extends System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1&lt;class System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElementCollection" />
@@ -25,6 +25,7 @@
   <Docs>
     <summary>Represents a collection of <see cref="T:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement" /> instances. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/b6eae4b7-a6cd-4e1a-b0f6-f407022550b0">&lt;IssuedToken&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

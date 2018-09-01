@@ -1,4 +1,4 @@
-﻿<Type Name="UIElement" FullName="System.Windows.UIElement">
+<Type Name="UIElement" FullName="System.Windows.UIElement">
   <TypeSignature Language="C#" Value="public class UIElement : System.Windows.Media.Visual, System.Windows.IInputElement, System.Windows.Media.Animation.IAnimatable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi UIElement extends System.Windows.Media.Visual implements class System.Windows.IInputElement, class System.Windows.Media.Animation.IAnimatable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.UIElement" />
@@ -12840,6 +12840,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa970908(v=vs.90)">Pixel Snapping in WPF Applications</related>
       </Docs>
     </Member>
     <Member MemberName="SnapsToDevicePixelsProperty">
@@ -14286,6 +14287,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81defade-483b-4a89-b76d-9b25bba34010">x:Uid Attribute</related>
       </Docs>
     </Member>
     <Member MemberName="UidProperty">

@@ -1,4 +1,4 @@
-﻿<Type Name="ServicePrincipalNameElement" FullName="System.ServiceModel.Configuration.ServicePrincipalNameElement">
+<Type Name="ServicePrincipalNameElement" FullName="System.ServiceModel.Configuration.ServicePrincipalNameElement">
   <TypeSignature Language="C#" Value="public sealed class ServicePrincipalNameElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServicePrincipalNameElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServicePrincipalNameElement" />
@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/3f3b85d3-20f2-4cd8-8a6a-ee18befbd165">&lt;servicePrincipalName&gt; element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

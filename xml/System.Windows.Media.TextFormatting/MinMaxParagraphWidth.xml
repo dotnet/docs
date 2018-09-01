@@ -1,4 +1,4 @@
-﻿<Type Name="MinMaxParagraphWidth" FullName="System.Windows.Media.TextFormatting.MinMaxParagraphWidth">
+<Type Name="MinMaxParagraphWidth" FullName="System.Windows.Media.TextFormatting.MinMaxParagraphWidth">
   <TypeSignature Language="C#" Value="public struct MinMaxParagraphWidth : IEquatable&lt;System.Windows.Media.TextFormatting.MinMaxParagraphWidth&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit MinMaxParagraphWidth extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Windows.Media.TextFormatting.MinMaxParagraphWidth&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.MinMaxParagraphWidth" />
@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159965">Advanced Text Formatting Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Equals">

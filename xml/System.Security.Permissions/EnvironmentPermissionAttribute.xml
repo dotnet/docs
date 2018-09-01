@@ -1,4 +1,4 @@
-﻿<Type Name="EnvironmentPermissionAttribute" FullName="System.Security.Permissions.EnvironmentPermissionAttribute">
+<Type Name="EnvironmentPermissionAttribute" FullName="System.Security.Permissions.EnvironmentPermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class EnvironmentPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit EnvironmentPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.EnvironmentPermissionAttribute" />
@@ -50,6 +50,7 @@
     </remarks>
     <altmember cref="T:System.Security.Permissions.EnvironmentPermission" />
     <altmember cref="T:System.Security.Permissions.EnvironmentPermissionAccess" />
+    <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

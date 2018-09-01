@@ -1,4 +1,4 @@
-﻿<Type Name="FormsIdentity" FullName="System.Web.Security.FormsIdentity">
+<Type Name="FormsIdentity" FullName="System.Web.Security.FormsIdentity">
   <TypeSignature Language="C#" Value="public class FormsIdentity : System.Security.Claims.ClaimsIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FormsIdentity extends System.Security.Claims.ClaimsIdentity" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.FormsIdentity" />
@@ -15,7 +15,8 @@
     <BaseTypeName>System.Security.Claims.ClaimsIdentity</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-1.1">System.Object</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Attributes>
     <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -42,6 +43,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -74,6 +76,7 @@
         <param name="ticket">The authentication ticket upon which this identity is based.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Security.FormsIdentity" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -118,6 +121,7 @@
         <summary>Gets the type of authenticated identity.</summary>
         <value>The type of authenticated identity. This property always returns "Forms".</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
       </Docs>
     </Member>
     <Member MemberName="Claims">
@@ -185,6 +189,7 @@
         <summary>Gets a value that indicates whether authentication took place.</summary>
         <value>This property always returns <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -215,6 +220,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
       </Docs>
     </Member>
     <Member MemberName="Ticket">
@@ -243,6 +249,7 @@
         <summary>Gets the <see cref="T:System.Web.Security.FormsAuthenticationTicket" /> for the forms-authentication user identity.</summary>
         <value>The <see cref="T:System.Web.Security.FormsAuthenticationTicket" /> supplied to the <see cref="M:System.Web.Security.FormsIdentity.#ctor(System.Web.Security.FormsAuthenticationTicket)" /> constructor for the current object.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
       </Docs>
     </Member>
   </Members>

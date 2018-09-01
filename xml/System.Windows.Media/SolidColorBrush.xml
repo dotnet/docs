@@ -1,4 +1,4 @@
-﻿<Type Name="SolidColorBrush" FullName="System.Windows.Media.SolidColorBrush">
+<Type Name="SolidColorBrush" FullName="System.Windows.Media.SolidColorBrush">
   <TypeSignature Language="C#" Value="public sealed class SolidColorBrush : System.Windows.Media.Brush" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SolidColorBrush extends System.Windows.Media.Brush" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.SolidColorBrush" />
@@ -97,6 +97,7 @@
     </remarks>
     <altmember cref="T:System.Windows.Media.Brush" />
     <altmember cref="T:System.Windows.Media.Brushes" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159973">Brushes Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -251,6 +252,7 @@
         <altmember cref="T:System.Windows.Media.Brushes" />
         <altmember cref="T:System.Windows.Media.Animation.ColorAnimation" />
         <altmember cref="T:System.Windows.Media.Animation.ColorAnimationUsingKeyFrames" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159973">Brushes Sample</related>
       </Docs>
     </Member>
     <Member MemberName="ColorProperty">

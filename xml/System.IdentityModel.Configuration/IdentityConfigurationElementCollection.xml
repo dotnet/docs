@@ -1,4 +1,4 @@
-﻿<Type Name="IdentityConfigurationElementCollection" FullName="System.IdentityModel.Configuration.IdentityConfigurationElementCollection">
+<Type Name="IdentityConfigurationElementCollection" FullName="System.IdentityModel.Configuration.IdentityConfigurationElementCollection">
   <TypeSignature Language="C#" Value="public sealed class IdentityConfigurationElementCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IdentityConfigurationElementCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Configuration.IdentityConfigurationElementCollection" />
@@ -28,6 +28,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/1db76253-07da-447b-9e7a-3705c7228cf4">&lt;identityConfiguration&gt;</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/210ce7e9-d07b-400c-800f-5f525dcf95e8">&lt;system.identityModel&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

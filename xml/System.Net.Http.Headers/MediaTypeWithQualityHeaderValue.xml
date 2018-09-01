@@ -1,4 +1,4 @@
-﻿<Type Name="MediaTypeWithQualityHeaderValue" FullName="System.Net.Http.Headers.MediaTypeWithQualityHeaderValue">
+<Type Name="MediaTypeWithQualityHeaderValue" FullName="System.Net.Http.Headers.MediaTypeWithQualityHeaderValue">
   <TypeSignature Language="C#" Value="public sealed class MediaTypeWithQualityHeaderValue : System.Net.Http.Headers.MediaTypeHeaderValue" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MediaTypeWithQualityHeaderValue extends System.Net.Http.Headers.MediaTypeHeaderValue" />
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" />
@@ -20,7 +20,8 @@
   <Base>
     <BaseTypeName>System.Net.Http.Headers.MediaTypeHeaderValue</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Represents a media type with an additional quality factor used in a Content-Type header.</summary>
     <remarks>

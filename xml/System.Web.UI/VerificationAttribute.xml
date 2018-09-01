@@ -1,4 +1,4 @@
-﻿<Type Name="VerificationAttribute" FullName="System.Web.UI.VerificationAttribute">
+<Type Name="VerificationAttribute" FullName="System.Web.UI.VerificationAttribute">
   <TypeSignature Language="C#" Value="public sealed class VerificationAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit VerificationAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.VerificationAttribute" />
@@ -67,6 +67,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

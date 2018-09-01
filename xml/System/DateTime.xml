@@ -1,4 +1,4 @@
-﻿<Type Name="DateTime" FullName="System.DateTime">
+<Type Name="DateTime" FullName="System.DateTime">
   <TypeSignature Language="C#" Value="public struct DateTime : IComparable, IComparable&lt;DateTime&gt;, IConvertible, IEquatable&lt;DateTime&gt;, IFormattable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DateTime extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;valuetype System.DateTime&gt;, class System.IConvertible, class System.IEquatable`1&lt;valuetype System.DateTime&gt;, class System.IFormattable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.DateTime" />
@@ -474,6 +474,9 @@ The behavior of the .NET Framework and COM means that if your application round-
     <altmember cref="T:System.Globalization.Calendar" />
     <altmember cref="M:System.TimeZone.GetUtcOffset(System.DateTime)" />
     <altmember cref="T:System.TimeZoneInfo" />
+    <related type="Article" href="~/docs/standard/datetime/choosing-between-datetime.md">Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo</related>
+    <related type="Article" href="~/docs/standard/datetime/working-with-calendars.md">Working with Calendars</related>
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -1445,6 +1448,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
         <altmember cref="T:System.TimeSpan" />
         <altmember cref="M:System.TimeSpan.Add(System.TimeSpan)" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddDays">
@@ -1574,6 +1578,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
         <altmember cref="M:System.DateTime.Add(System.TimeSpan)" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddMilliseconds">
@@ -1636,6 +1641,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
         <altmember cref="T:System.Double" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddMinutes">
@@ -1699,6 +1705,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
         <altmember cref="T:System.Double" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddMonths">
@@ -1826,6 +1833,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
         <altmember cref="T:System.Double" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddTicks">
@@ -1877,6 +1885,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
         <altmember cref="T:System.Int64" />
         <altmember cref="P:System.DateTime.Ticks" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddYears">
@@ -2989,6 +2998,7 @@ The behavior of the .NET Framework and COM means that if your application round-
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetDateTimeFormats">
@@ -3186,6 +3196,7 @@ July, 2009
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="GetDateTimeFormats">
@@ -3249,6 +3260,7 @@ July, 2009
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is not a valid standard date and time format specifier character.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="GetDateTimeFormats">
@@ -3418,6 +3430,7 @@ juillet 2009
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="GetDateTimeFormats">
@@ -3483,6 +3496,7 @@ juillet 2009
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is not a valid standard date and time format specifier character.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -4209,6 +4223,7 @@ juillet 2009
         <altmember cref="M:System.DateTime.Add(System.TimeSpan)" />
         <altmember cref="T:System.TimeSpan" />
         <altmember cref="P:System.DateTime.Ticks" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -4643,6 +4658,7 @@ juillet 2009
         </remarks>
         <altmember cref="M:System.DateTime.Subtract(System.DateTime)" />
         <altmember cref="P:System.DateTime.Ticks" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -4706,6 +4722,7 @@ juillet 2009
         <altmember cref="M:System.DateTime.Subtract(System.TimeSpan)" />
         <altmember cref="P:System.DateTime.Ticks" />
         <altmember cref="T:System.TimeSpan" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Parse">
@@ -4949,6 +4966,9 @@ It handles the <xref:System.FormatException> exception that is thrown when the m
         <altmember cref="Overload:System.DateTime.TryParse" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -5021,6 +5041,9 @@ The following example parses an array of date strings by using the conventions o
         <altmember cref="Overload:System.DateTime.TryParse" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -5130,6 +5153,10 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="Overload:System.DateTime.TryParse" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/how-to-round-trip-date-and-time-values.md">How to: Round-trip Date and Time Values</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ParseExact">
@@ -5239,6 +5266,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="Overload:System.DateTime.TryParseExact" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -5417,6 +5447,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="Overload:System.DateTime.TryParseExact" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -5536,6 +5569,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="Overload:System.DateTime.TryParseExact" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Second">
@@ -5656,6 +5692,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md">COM Interoperability in .NET Framework Applications (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Subtract">
@@ -5739,6 +5776,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The result is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -5820,6 +5858,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The result is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
         <altmember cref="T:System.TimeSpan" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -7109,6 +7148,8 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
         <altmember cref="M:System.DateTime.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToLongTimeString">
@@ -7172,6 +7213,8 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
         <altmember cref="M:System.DateTime.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToOADate">
@@ -7285,6 +7328,8 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
         <altmember cref="M:System.DateTime.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToShortTimeString">
@@ -7348,6 +7393,8 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
         <altmember cref="M:System.DateTime.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ToString">
@@ -7608,6 +7655,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         </block>
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
         <altmember cref="T:System.Globalization.CultureInfo" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -7704,6 +7754,10 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         </block>
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
         <altmember cref="T:System.Globalization.CultureInfo" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
       </Docs>
     </Member>
     <Member MemberName="ToUniversalTime">
@@ -7941,6 +7995,10 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="Overload:System.DateTime.Parse" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -8094,6 +8152,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="Overload:System.DateTime.Parse" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="TryParseExact">
@@ -8286,6 +8347,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="Overload:System.DateTime.ParseExact" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="TryParseExact">
@@ -8395,6 +8459,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="Overload:System.DateTime.ParseExact" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="UnixEpoch">

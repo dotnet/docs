@@ -1,4 +1,4 @@
-﻿<Type Name="PolygonHotSpot" FullName="System.Web.UI.WebControls.PolygonHotSpot">
+<Type Name="PolygonHotSpot" FullName="System.Web.UI.WebControls.PolygonHotSpot">
   <TypeSignature Language="C#" Value="public sealed class PolygonHotSpot : System.Web.UI.WebControls.HotSpot" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PolygonHotSpot extends System.Web.UI.WebControls.HotSpot" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PolygonHotSpot" />
@@ -38,6 +38,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
     <altmember cref="P:System.Web.UI.WebControls.PolygonHotSpot.Coordinates" />
+    <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +77,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Coordinates">
@@ -119,6 +121,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetCoordinates">
@@ -166,6 +169,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
         <altmember cref="P:System.Web.UI.WebControls.PolygonHotSpot.Coordinates" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="MarkupName">

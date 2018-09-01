@@ -1,4 +1,4 @@
-﻿<Type Name="ExportAttribute" FullName="System.ComponentModel.Composition.ExportAttribute">
+<Type Name="ExportAttribute" FullName="System.ComponentModel.Composition.ExportAttribute">
   <TypeSignature Language="C#" Value="public class ExportAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExportAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.ExportAttribute" />
@@ -45,6 +45,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.ComponentModel.Composition.ImportAttribute" />
+    <related type="Article" href="http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde">Attributed Programming Model Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="DateTimeFormatInfo" FullName="System.Globalization.DateTimeFormatInfo">
+<Type Name="DateTimeFormatInfo" FullName="System.Globalization.DateTimeFormatInfo">
   <TypeSignature Language="C#" Value="public sealed class DateTimeFormatInfo : ICloneable, IFormatProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DateTimeFormatInfo extends System.Object implements class System.ICloneable, class System.IFormatProvider" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.DateTimeFormatInfo" />
@@ -968,6 +968,8 @@
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
         <altmember cref="P:System.Globalization.DateTimeFormatInfo.TimeSeparator" />
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="DayNames">
@@ -1142,6 +1144,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="GetAbbreviatedDayName">
@@ -2104,6 +2108,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="LongTimePattern">
@@ -2170,6 +2176,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="MonthDayPattern">
@@ -2235,6 +2243,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="MonthGenitiveNames">
@@ -2580,6 +2590,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="SetAllDateTimePatterns">
@@ -2654,6 +2666,8 @@
           <paramref name="patterns" /> has an array element whose value is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
         <altmember cref="Overload:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns" />
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ShortDatePattern">
@@ -2716,6 +2730,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ShortestDayNames">
@@ -2837,6 +2853,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="SortableDateTimePattern">
@@ -2894,6 +2912,8 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern" />
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -2975,6 +2995,8 @@
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
         <altmember cref="P:System.Globalization.DateTimeFormatInfo.DateSeparator" />
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="UniversalSortableDateTimePattern">
@@ -3032,6 +3054,8 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Globalization.DateTimeFormatInfo.SortableDateTimePattern" />
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard DateTime Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="YearMonthPattern">
@@ -3100,6 +3124,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
   </Members>

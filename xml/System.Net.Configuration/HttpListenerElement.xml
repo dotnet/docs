@@ -1,4 +1,4 @@
-﻿<Type Name="HttpListenerElement" FullName="System.Net.Configuration.HttpListenerElement">
+<Type Name="HttpListenerElement" FullName="System.Net.Configuration.HttpListenerElement">
   <TypeSignature Language="C#" Value="public sealed class HttpListenerElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpListenerElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.HttpListenerElement" />
@@ -88,6 +88,8 @@
     </remarks>
     <altmember cref="T:System.Net.HttpListener" />
     <altmember cref="P:System.Net.HttpListenerRequest.Url" />
+    <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/62f121fd-3f2e-4033-bb39-48ae996bfbd9">&lt;httpListener&gt; Element (Network Settings)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -263,6 +265,8 @@
         </remarks>
         <altmember cref="T:System.Net.HttpListener" />
         <altmember cref="P:System.Net.HttpListenerRequest.Url" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/62f121fd-3f2e-4033-bb39-48ae996bfbd9">&lt;httpListener&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
   </Members>

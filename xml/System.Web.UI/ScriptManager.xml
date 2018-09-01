@@ -1,4 +1,4 @@
-﻿<Type Name="ScriptManager" FullName="System.Web.UI.ScriptManager">
+<Type Name="ScriptManager" FullName="System.Web.UI.ScriptManager">
   <TypeSignature Language="C#" Value="public class ScriptManager : System.Web.UI.Control, System.Web.UI.IPostBackDataHandler, System.Web.UI.IPostBackEventHandler, System.Web.UI.IScriptManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ScriptManager extends System.Web.UI.Control implements class System.Web.UI.IPostBackDataHandler, class System.Web.UI.IPostBackEventHandler, class System.Web.UI.IScriptManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptManager" />
@@ -283,6 +283,7 @@
     <altmember cref="T:System.Web.UI.ScriptMode" />
     <altmember cref="T:System.Web.UI.ScriptReference" />
     <altmember cref="T:System.Web.UI.ServiceReference" />
+    <related type="Article" href="http://msdn.microsoft.com/library/fceeb3c5-c59f-46a9-af4f-b0d7155a1efc">Sys.WebForms.PageRequestManager Class</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1173,6 +1174,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/69b34e6d-d590-4d03-a763-b7ae54b47d74">Localizing a Date Using Client Script</related>
       </Docs>
     </Member>
     <Member MemberName="EnableScriptLocalization">
@@ -1220,6 +1222,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/e6b15435-57c1-4dd1-9bd3-5d4c509685bb">Localizing Resources for Component Libraries Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableSecureHistoryState">
@@ -1871,6 +1874,7 @@
         <block subset="none" type="overrides">
           <para>When overriding this method, call the base <see cref="M:System.Web.UI.ScriptManager.OnInit(System.EventArgs)" /> method so that script files are correctly handled for partial-page rendering.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -1907,6 +1911,7 @@
         <block subset="none" type="overrides">
           <para>When overriding this method, call the base <see cref="M:System.Web.UI.ScriptManager.OnPreRender(System.EventArgs)" /> method so that script blocks and services are correctly handled for partial-page rendering.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnResolveCompositeScriptReference">

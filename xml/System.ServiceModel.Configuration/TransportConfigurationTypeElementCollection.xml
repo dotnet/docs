@@ -1,4 +1,4 @@
-﻿<Type Name="TransportConfigurationTypeElementCollection" FullName="System.ServiceModel.Configuration.TransportConfigurationTypeElementCollection">
+<Type Name="TransportConfigurationTypeElementCollection" FullName="System.ServiceModel.Configuration.TransportConfigurationTypeElementCollection">
   <TypeSignature Language="C#" Value="public sealed class TransportConfigurationTypeElementCollection : System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection&lt;System.ServiceModel.Configuration.TransportConfigurationTypeElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TransportConfigurationTypeElementCollection extends System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1&lt;class System.ServiceModel.Configuration.TransportConfigurationTypeElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.TransportConfigurationTypeElementCollection" />
@@ -25,6 +25,7 @@
   <Docs>
     <summary>A collection of <see cref="T:System.ServiceModel.Configuration.TransportConfigurationTypeElement" /> elements.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/21e38acf-450a-4bda-82b6-de305e1f7cd8">transport element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

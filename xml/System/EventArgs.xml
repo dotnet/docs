@@ -1,4 +1,4 @@
-﻿<Type Name="EventArgs" FullName="System.EventArgs">
+<Type Name="EventArgs" FullName="System.EventArgs">
   <TypeSignature Language="C#" Value="public class EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit EventArgs extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.EventArgs" />
@@ -60,6 +60,11 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/42afade7-3a02-4f2e-868b-95845f302f8f">How to: Raise and Consume Events</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70">Events (Visual Basic)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/a8e51b22-d294-44fb-9539-0072f06c4cb3">Events (C# Programming Guide)</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=261485">Events and routed events overview (Windows store apps)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -100,6 +105,11 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/42afade7-3a02-4f2e-868b-95845f302f8f">How to: Raise and Consume Events</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70">Events (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a8e51b22-d294-44fb-9539-0072f06c4cb3">Events (C# Programming Guide)</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=261485">Events and routed events overview (Windows store apps)</related>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -151,6 +161,11 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/42afade7-3a02-4f2e-868b-95845f302f8f">How to: Raise and Consume Events</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70">Events (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a8e51b22-d294-44fb-9539-0072f06c4cb3">Events (C# Programming Guide)</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=261485">Events and routed events overview (Windows store apps)</related>
       </Docs>
     </Member>
   </Members>

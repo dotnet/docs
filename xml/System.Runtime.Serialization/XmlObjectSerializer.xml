@@ -1,4 +1,4 @@
-﻿<Type Name="XmlObjectSerializer" FullName="System.Runtime.Serialization.XmlObjectSerializer">
+<Type Name="XmlObjectSerializer" FullName="System.Runtime.Serialization.XmlObjectSerializer">
   <TypeSignature Language="C#" Value="public abstract class XmlObjectSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlObjectSerializer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.XmlObjectSerializer" />
@@ -50,6 +50,8 @@
     </block>
     <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
     <altmember cref="T:System.Runtime.Serialization.NetDataContractSerializer" />
+    <related type="Article" href="~/docs/framework/wcf/feature-details/using-data-contracts.md">Using Data Contracts</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/3d64837e-0a0c-4cc8-90ff-a5c6f313c63a">Data Contract Serializer</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

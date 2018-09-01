@@ -1,4 +1,4 @@
-﻿<Type Name="WebExceptionStatus" FullName="System.Net.WebExceptionStatus">
+<Type Name="WebExceptionStatus" FullName="System.Net.WebExceptionStatus">
   <TypeSignature Language="C#" Value="public enum WebExceptionStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebExceptionStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebExceptionStatus" />
@@ -37,6 +37,7 @@
     </remarks>
     <forInternalUseOnly />
     <altmember cref="T:System.Net.WebException" />
+    <related type="Article" href="~/docs/framework/network-programming/handling-errors.md">Handling Errors</related>
   </Docs>
   <Members>
     <Member MemberName="CacheEntryNotFound">

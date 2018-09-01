@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewCellStyle" FullName="System.Windows.Forms.DataGridViewCellStyle">
+<Type Name="DataGridViewCellStyle" FullName="System.Windows.Forms.DataGridViewCellStyle">
   <TypeSignature Language="C#" Value="public class DataGridViewCellStyle : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewCellStyle extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellStyle" />
@@ -62,6 +62,8 @@
     <altmember cref="P:System.Windows.Forms.DataGridViewCell.InheritedStyle" />
     <altmember cref="P:System.Windows.Forms.DataGridViewCell.Style" />
     <altmember cref="T:System.Windows.Forms.DataGridViewCellFormattingEventArgs" />
+    <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488">DataGridView Control Overview (Windows Forms)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -72,6 +74,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> class.</summary>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -91,6 +94,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> class using default property values.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -115,6 +119,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dataGridViewCellStyle" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Alignment">
@@ -154,6 +159,8 @@
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.DataGridViewContentAlignment" /> value.</exception>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/07bf558d-3748-42ba-8ba0-37fdef924081">Data Formatting in the Windows Forms DataGridView Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="ApplyStyle">
@@ -188,6 +195,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dataGridViewCellStyle" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -221,6 +229,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -245,6 +254,7 @@
         <returns>A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> that represents an exact copy of this cell style.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataSourceNullValue">
@@ -307,6 +317,7 @@
         <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
         <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.IsDataSourceNullValueDefault" />
         <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.NullValue" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -335,6 +346,7 @@
           <see langword="true" /> if <paramref name="o" /> is a <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> and has the same property values as this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -374,6 +386,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -412,6 +425,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -467,6 +481,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/07bf558d-3748-42ba-8ba0-37fdef924081">Data Formatting in the Windows Forms DataGridView Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="FormatProvider">
@@ -501,6 +517,7 @@
         <value>An <see cref="T:System.IFormatProvider" /> used for cell formatting. The default is <see cref="P:System.Globalization.CultureInfo.CurrentUICulture" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -568,6 +585,7 @@
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
         <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="IsFormatProviderDefault">
@@ -610,6 +628,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="IsNullValueDefault">
@@ -652,6 +671,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="NullValue">
@@ -707,6 +727,8 @@
         <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
         <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue" />
         <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.IsDataSourceNullValueDefault" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8c33543c-9c08-4636-a65a-fdf714a529b7">How to: Format Data in the Windows Forms DataGridView Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -747,6 +769,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="SelectionBackColor">
@@ -780,6 +803,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="SelectionForeColor">
@@ -818,6 +842,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -856,6 +881,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Tag">
@@ -890,6 +916,7 @@
         <value>An object that contains additional data. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -914,6 +941,7 @@
         <returns>A string indicating the current property settings of the <see cref="T:System.Windows.Forms.DataGridViewCellStyle" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="WrapMode">
@@ -958,6 +986,8 @@
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.DataGridViewTriState" /> value.</exception>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8c33543c-9c08-4636-a65a-fdf714a529b7">How to: Format Data in the Windows Forms DataGridView Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="DeliveryFailure" FullName="System.ServiceModel.Channels.DeliveryFailure">
+<Type Name="DeliveryFailure" FullName="System.ServiceModel.Channels.DeliveryFailure">
   <TypeSignature Language="C#" Value="public enum DeliveryFailure" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeliveryFailure extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.DeliveryFailure" />
@@ -31,6 +31,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/b8757992-ffce-40ad-9e9b-3243f6d0fce1">Using Queues</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/62210fd8-a372-4d55-ab9b-c99827d1885e">How To: Exchange Messages with WCF Endpoints and MSMQ applications</related>
   </Docs>
   <Members>
     <Member MemberName="AccessDenied">

@@ -27,6 +27,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WizardNavigationEventHandler" />
+    <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +57,7 @@
         <param name="nextStepIndex">The index of the <see cref="T:System.Web.UI.WebControls.WizardStep" /> object that the <see cref="T:System.Web.UI.WebControls.Wizard" /> control will display next.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WizardNavigationEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -87,6 +89,7 @@
         <value>
           <see langword="true" /> if the navigation to the next step should be canceled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentStepIndex">
@@ -114,6 +117,7 @@
         <summary>Gets the index of the <see cref="T:System.Web.UI.WebControls.WizardStep" /> object currently displayed in the <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</summary>
         <value>A zero-based index value that represents the <see cref="T:System.Web.UI.WebControls.WizardStep" /> object that is currently displayed in the <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="NextStepIndex">
@@ -141,6 +145,7 @@
         <summary>Gets a value that represents the index of the <see cref="T:System.Web.UI.WebControls.WizardStep" /> object that the <see cref="T:System.Web.UI.WebControls.Wizard" /> control will display next.</summary>
         <value>A zero-based index value that represents the <see cref="T:System.Web.UI.WebControls.WizardStep" /> object that the <see cref="T:System.Web.UI.WebControls.Wizard" /> control will display next.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
   </Members>

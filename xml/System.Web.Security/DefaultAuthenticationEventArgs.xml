@@ -1,4 +1,4 @@
-﻿<Type Name="DefaultAuthenticationEventArgs" FullName="System.Web.Security.DefaultAuthenticationEventArgs">
+<Type Name="DefaultAuthenticationEventArgs" FullName="System.Web.Security.DefaultAuthenticationEventArgs">
   <TypeSignature Language="C#" Value="public sealed class DefaultAuthenticationEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DefaultAuthenticationEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.DefaultAuthenticationEventArgs" />
@@ -27,6 +27,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -77,6 +78,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -112,6 +114,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
       </Docs>
     </Member>
   </Members>

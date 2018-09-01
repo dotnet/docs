@@ -1,4 +1,4 @@
-﻿<Type Name="BitmapMetadataBlob" FullName="System.Windows.Media.Imaging.BitmapMetadataBlob">
+<Type Name="BitmapMetadataBlob" FullName="System.Windows.Media.Imaging.BitmapMetadataBlob">
   <TypeSignature Language="C#" Value="public class BitmapMetadataBlob" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BitmapMetadataBlob extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapMetadataBlob" />
@@ -25,6 +25,10 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Media.Imaging.BitmapMetadata" />
+    <related type="ExternalDocumentation" href="http://www.w3.org/TR/PNG-Chunks.html">Portable Network Graphics Textual Data (tEXt) Specification</related>
+    <related type="ExternalDocumentation" href="http://www.iptc.org">International Press Telecommunications Council (IPTC) Schema Information</related>
+    <related type="ExternalDocumentation" href="http://www.adobe.com/products/xmp/main.html">Adobe Extensible Metadata Platform (XMP)</related>
+    <related type="ExternalDocumentation" href="http://www.exif.org/specifications.html">EXIF (Exchangeable Image File Format) Specification</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

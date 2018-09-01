@@ -1,4 +1,4 @@
-﻿<Type Name="MsmqTransportElement" FullName="System.ServiceModel.Configuration.MsmqTransportElement">
+<Type Name="MsmqTransportElement" FullName="System.ServiceModel.Configuration.MsmqTransportElement">
   <TypeSignature Language="C#" Value="public sealed class MsmqTransportElement : System.ServiceModel.Configuration.MsmqElementBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MsmqTransportElement extends System.ServiceModel.Configuration.MsmqElementBase" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MsmqTransportElement" />
@@ -26,6 +26,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/19d89f35-76ac-49dc-832b-e8bec2d5e33b">MSMQTransport element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

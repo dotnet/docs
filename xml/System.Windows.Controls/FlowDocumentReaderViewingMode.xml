@@ -1,4 +1,4 @@
-﻿<Type Name="FlowDocumentReaderViewingMode" FullName="System.Windows.Controls.FlowDocumentReaderViewingMode">
+<Type Name="FlowDocumentReaderViewingMode" FullName="System.Windows.Controls.FlowDocumentReaderViewingMode">
   <TypeSignature Language="C#" Value="public enum FlowDocumentReaderViewingMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FlowDocumentReaderViewingMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.FlowDocumentReaderViewingMode" />
@@ -34,6 +34,7 @@
  ]]></format>
     </remarks>
     <altmember cref="P:System.Windows.Controls.FlowDocumentReader.ViewingMode" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160054">WPF Layout Gallery Sample</related>
   </Docs>
   <Members>
     <Member MemberName="Page">

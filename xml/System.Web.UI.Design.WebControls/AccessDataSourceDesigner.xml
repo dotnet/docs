@@ -1,4 +1,4 @@
-﻿<Type Name="AccessDataSourceDesigner" FullName="System.Web.UI.Design.WebControls.AccessDataSourceDesigner">
+<Type Name="AccessDataSourceDesigner" FullName="System.Web.UI.Design.WebControls.AccessDataSourceDesigner">
   <TypeSignature Language="C#" Value="public class AccessDataSourceDesigner : System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AccessDataSourceDesigner extends System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.AccessDataSourceDesigner" />
@@ -42,6 +42,8 @@
     <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
     <altmember cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
     <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -115,6 +117,8 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
         <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.DataFile" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetConnectionString">
@@ -158,6 +162,8 @@
         <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.ConnectionString" />
         <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.DataFile" />
         <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -210,6 +216,8 @@
         <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
         <altmember cref="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.PreFilterProperties(System.Collections.IDictionary)" />
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
   </Members>

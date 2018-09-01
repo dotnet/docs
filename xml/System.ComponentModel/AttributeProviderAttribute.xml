@@ -1,4 +1,4 @@
-﻿<Type Name="AttributeProviderAttribute" FullName="System.ComponentModel.AttributeProviderAttribute">
+<Type Name="AttributeProviderAttribute" FullName="System.ComponentModel.AttributeProviderAttribute">
   <TypeSignature Language="C#" Value="public class AttributeProviderAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AttributeProviderAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.AttributeProviderAttribute" />
@@ -59,6 +59,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e81b8e2f-e06e-44fa-8129-7bdb0230101f">Type Descriptor Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -105,6 +106,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="typeName" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <related type="Article" href="http://msdn.microsoft.com/library/e81b8e2f-e06e-44fa-8129-7bdb0230101f">Type Descriptor Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -150,6 +152,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <related type="Article" href="http://msdn.microsoft.com/library/e81b8e2f-e06e-44fa-8129-7bdb0230101f">Type Descriptor Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -188,6 +191,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="propertyName" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <related type="Article" href="http://msdn.microsoft.com/library/e81b8e2f-e06e-44fa-8129-7bdb0230101f">Type Descriptor Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PropertyName">
@@ -227,6 +231,7 @@
         <value>The name of the property for which attributes will be retrieved.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <related type="Article" href="http://msdn.microsoft.com/library/e81b8e2f-e06e-44fa-8129-7bdb0230101f">Type Descriptor Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -266,6 +271,7 @@
         <value>The assembly qualified name of the type specified in the constructor.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <related type="Article" href="http://msdn.microsoft.com/library/e81b8e2f-e06e-44fa-8129-7bdb0230101f">Type Descriptor Overview</related>
       </Docs>
     </Member>
   </Members>

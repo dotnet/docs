@@ -1,4 +1,4 @@
-﻿<Type Name="XmlAnyElementAttributes" FullName="System.Xml.Serialization.XmlAnyElementAttributes">
+<Type Name="XmlAnyElementAttributes" FullName="System.Xml.Serialization.XmlAnyElementAttributes">
   <TypeSignature Language="C#" Value="public class XmlAnyElementAttributes : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlAnyElementAttributes extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlAnyElementAttributes" />
@@ -26,7 +26,8 @@
     <BaseTypeName>System.Object</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-4.5">System.Collections.CollectionBase</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Represents a collection of <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" /> objects.</summary>
     <remarks>

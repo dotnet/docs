@@ -1,4 +1,4 @@
-﻿<Type Name="SnapLine" FullName="System.Windows.Forms.Design.Behavior.SnapLine">
+<Type Name="SnapLine" FullName="System.Windows.Forms.Design.Behavior.SnapLine">
   <TypeSignature Language="C#" Value="public sealed class SnapLine" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SnapLine extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.SnapLine" />
@@ -53,6 +53,7 @@
     <altmember cref="T:System.Windows.Forms.Design.Behavior.SnapLineType" />
     <altmember cref="T:System.Windows.Forms.Design.Behavior.SnapLinePriority" />
     <altmember cref="P:System.Windows.Forms.Design.ControlDesigner.SnapLines" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

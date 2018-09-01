@@ -1,4 +1,4 @@
-﻿<Type Name="DataColumnSelectionConverter" FullName="System.Web.UI.Design.DataColumnSelectionConverter">
+<Type Name="DataColumnSelectionConverter" FullName="System.Web.UI.Design.DataColumnSelectionConverter">
   <TypeSignature Language="C#" Value="public class DataColumnSelectionConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataColumnSelectionConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DataColumnSelectionConverter" />
@@ -37,6 +37,7 @@
     <altmember cref="T:System.ComponentModel.TypeConverter" />
     <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetConverter" />
     <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
+    <related type="Article" href="http://msdn.microsoft.com/library/4881917b-628f-4689-b872-472e4f8a4e3a">Design-Time Architecture</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

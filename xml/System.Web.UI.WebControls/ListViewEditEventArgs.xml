@@ -1,4 +1,4 @@
-﻿<Type Name="ListViewEditEventArgs" FullName="System.Web.UI.WebControls.ListViewEditEventArgs">
+<Type Name="ListViewEditEventArgs" FullName="System.Web.UI.WebControls.ListViewEditEventArgs">
   <TypeSignature Language="C#" Value="public class ListViewEditEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewEditEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewEditEventArgs" />
@@ -41,6 +41,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.ListView" />
     <altmember cref="E:System.Web.UI.WebControls.ListView.ItemEditing" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,6 +81,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ListViewEditEventArgs.NewEditIndex" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="NewEditIndex">
@@ -126,6 +128,7 @@
         <altmember cref="P:System.Web.UI.WebControls.ListView.Items" />
         <altmember cref="T:System.Web.UI.WebControls.ListViewItem" />
         <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="ComplexPropertyEntry" FullName="System.Web.UI.ComplexPropertyEntry">
+<Type Name="ComplexPropertyEntry" FullName="System.Web.UI.ComplexPropertyEntry">
   <TypeSignature Language="C#" Value="public class ComplexPropertyEntry : System.Web.UI.BuilderPropertyEntry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComplexPropertyEntry extends System.Web.UI.BuilderPropertyEntry" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ComplexPropertyEntry" />
@@ -27,6 +27,7 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0fabh212(v=vs.85)">Customizing with Control Templates</related>
   </Docs>
   <Members>
     <Member MemberName="IsCollectionItem">

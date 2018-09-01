@@ -1,4 +1,4 @@
-﻿<Type Name="Clipboard" FullName="System.Windows.Forms.Clipboard">
+<Type Name="Clipboard" FullName="System.Windows.Forms.Clipboard">
   <TypeSignature Language="C#" Value="public sealed class Clipboard" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Clipboard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Clipboard" />
@@ -59,6 +59,7 @@
     <altmember cref="T:System.Windows.Forms.DataObject" />
     <altmember cref="T:System.Windows.Forms.DataFormats" />
     <altmember cref="T:System.Windows.Forms.IDataObject" />
+    <related type="Article" href="http://msdn.microsoft.com/library/15abda8b-0527-47c7-aedb-77ab595f2bf1">Additional Security Considerations in Windows Forms</related>
   </Docs>
   <Members>
     <Member MemberName="Clear">

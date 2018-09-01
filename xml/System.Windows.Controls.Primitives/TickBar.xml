@@ -1,4 +1,4 @@
-﻿<Type Name="TickBar" FullName="System.Windows.Controls.Primitives.TickBar">
+<Type Name="TickBar" FullName="System.Windows.Controls.Primitives.TickBar">
   <TypeSignature Language="C#" Value="public class TickBar : System.Windows.FrameworkElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi TickBar extends System.Windows.FrameworkElement" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.TickBar" />
@@ -57,6 +57,7 @@
     <altmember cref="T:System.Windows.Controls.Primitives.TickPlacement" />
     <altmember cref="T:System.Windows.Controls.Slider" />
     <altmember cref="T:System.Windows.Controls.Primitives.ScrollBar" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms746671(v=vs.90)">Slider How-to Topics</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

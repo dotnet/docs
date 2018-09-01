@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlElement" FullName="System.Windows.Forms.HtmlElement">
+<Type Name="HtmlElement" FullName="System.Windows.Forms.HtmlElement">
   <TypeSignature Language="C#" Value="public sealed class HtmlElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HtmlElement extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlElement" />
@@ -40,6 +40,10 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=104876">IHTMLElement Interface</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=104877">IHTMLElement2 Interface</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=104878">IHTMLElement3 Interface</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=104879">IHTMLElement4 Interface</related>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -123,6 +127,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Windows.Forms.HtmlDocument.CreateElement(System.String)" />
+        <related type="ExternalDocumentation" href="https://developer.mozilla.org/docs/Web/API/Node/appendChild">appendChild Method</related>
       </Docs>
     </Member>
     <Member MemberName="AttachEventHandler">
@@ -160,6 +165,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListenerx">EventTarget.addEventListener()</related>
       </Docs>
     </Member>
     <Member MemberName="CanHaveChildren">
@@ -284,6 +290,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536913.aspx">onclick Event</related>
       </Docs>
     </Member>
     <Member MemberName="ClientRectangle">
@@ -338,6 +345,10 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Windows.Forms.HtmlElement.OffsetRectangle" />
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms533564.aspx">clientLeft Property</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms533565.aspx">clientTop Property</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms533566.aspx">clientWidth Property</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms533563.aspx">clientHeight Property</related>
       </Docs>
     </Member>
     <Member MemberName="DetachEventHandler">
@@ -364,6 +375,7 @@
         <param name="eventHandler">The managed code that handles the event.</param>
         <summary>Removes an event handler from a named event on the HTML Document Object Model (DOM).</summary>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536411.aspx">detachEvent Method</related>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -439,6 +451,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Windows.Forms.HtmlDocument.DomDocument" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=104877">IHTMLElement2 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="DoubleClick">
@@ -481,6 +494,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536921.aspx">ondblclick Event</related>
       </Docs>
     </Member>
     <Member MemberName="Drag">
@@ -529,6 +543,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536923.aspx">ondrag Event</related>
       </Docs>
     </Member>
     <Member MemberName="DragEnd">
@@ -569,6 +584,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536924.aspx">ondragend Event</related>
       </Docs>
     </Member>
     <Member MemberName="DragLeave">
@@ -642,6 +658,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536927.aspx">ondragover Event</related>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -672,6 +689,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms533734.aspx">disabled Property</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -728,6 +746,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms533755.aspx">firstChild Property</related>
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -759,6 +778,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536425.aspx">focus Method</related>
       </Docs>
     </Member>
     <Member MemberName="Focusing">
@@ -801,6 +821,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536935.aspx">onfocusin Event</related>
       </Docs>
     </Member>
     <Member MemberName="GetAttribute">
@@ -844,6 +865,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536429.aspx">getAttribute Method</related>
       </Docs>
     </Member>
     <Member MemberName="GetElementsByTagName">
@@ -870,6 +892,7 @@
         <summary>Retrieves a collection of elements represented in HTML by the specified <c>HTML</c> tag.</summary>
         <returns>An <see cref="T:System.Windows.Forms.HtmlElementCollection" /> containing all elements whose <c>HTML</c> tag name is equal to <paramref name="tagName" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536439.aspx">getElementsByTagName Method</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -944,6 +967,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536934.aspx">onfocus Event</related>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -974,6 +998,8 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Windows.Forms.HtmlElement.Name" />
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms533880.aspx">id Property</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534184.aspx">name Property</related>
       </Docs>
     </Member>
     <Member MemberName="InnerHtml">
@@ -1017,6 +1043,8 @@
         <altmember cref="M:System.Windows.Forms.HtmlElement.AppendChild(System.Windows.Forms.HtmlElement)" />
         <altmember cref="M:System.Windows.Forms.HtmlElement.InsertAdjacentElement(System.Windows.Forms.HtmlElementInsertionOrientation,System.Windows.Forms.HtmlElement)" />
         <altmember cref="P:System.Windows.Forms.HtmlElement.InnerText" />
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms533897.aspx">innerHTML Property</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536452.aspx">insertAdjacentHTML Method</related>
       </Docs>
     </Member>
     <Member MemberName="InnerText">
@@ -1058,6 +1086,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">The specified element cannot contain text (for example, an <c>IMG</c> element).</exception>
         <altmember cref="P:System.Windows.Forms.HtmlElement.InnerHtml" />
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms533899.aspx">innerText Property</related>
       </Docs>
     </Member>
     <Member MemberName="InsertAdjacentElement">
@@ -1103,6 +1132,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536451.aspx">insertAdjacentElement Method</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="InvokeMember">
@@ -1241,6 +1271,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536938.aspx">onkeydown Event</related>
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -1283,6 +1314,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536939.aspx">onkeypress Event</related>
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -1325,6 +1357,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536940.aspx">onkeyup Event</related>
       </Docs>
     </Member>
     <Member MemberName="LosingFocus">
@@ -1400,6 +1433,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536936.aspx">onfocusout Event</related>
       </Docs>
     </Member>
     <Member MemberName="MouseDown">
@@ -1440,6 +1474,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536944.aspx">onmousedown Event</related>
       </Docs>
     </Member>
     <Member MemberName="MouseEnter">
@@ -1546,6 +1581,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536947.aspx">onmousemove Event</related>
       </Docs>
     </Member>
     <Member MemberName="MouseOver">
@@ -1586,6 +1622,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536949.aspx">onmouseover Event</related>
       </Docs>
     </Member>
     <Member MemberName="MouseUp">
@@ -1626,6 +1663,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536950.aspx">onmouseup Event</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1665,6 +1703,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534184.aspx">name Property</related>
       </Docs>
     </Member>
     <Member MemberName="NextSibling">
@@ -1694,6 +1733,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534189.aspx">nextSibling Property</related>
       </Docs>
     </Member>
     <Member MemberName="OffsetParent">
@@ -1759,6 +1799,8 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534302.aspx">offsetParent Property</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms530302.aspx">Measuring Element Dimension and Location</related>
       </Docs>
     </Member>
     <Member MemberName="OffsetRectangle">
@@ -1829,6 +1871,11 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Windows.Forms.HtmlElement.OffsetParent" />
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534200.aspx">offsetLeft Property</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534303.aspx">offsetTop Property</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534304.aspx">offsetWidth Property</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534199.aspx">offsetHeight Property</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms530302.aspx">Measuring Element Dimension and Location</related>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1978,6 +2025,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Windows.Forms.HtmlElement.InnerHtml" />
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534310.aspx">outerHTML Property</related>
       </Docs>
     </Member>
     <Member MemberName="OuterText">
@@ -2011,6 +2059,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">You cannot set text outside of this element.</exception>
         <altmember cref="P:System.Windows.Forms.HtmlElement.InnerText" />
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534311.aspx">outerText Property</related>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -2050,6 +2099,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534327.aspx">parentElement Property</related>
       </Docs>
     </Member>
     <Member MemberName="RaiseEvent">
@@ -2113,6 +2163,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536347.aspx">blur Method</related>
       </Docs>
     </Member>
     <Member MemberName="ScrollIntoView">
@@ -2148,6 +2199,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536730.aspx">scrollIntoView Method</related>
       </Docs>
     </Member>
     <Member MemberName="ScrollLeft">
@@ -2177,6 +2229,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534617.aspx">scrollLeft Property</related>
       </Docs>
     </Member>
     <Member MemberName="ScrollRectangle">
@@ -2208,6 +2261,11 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534617.aspx">scrollLeft Property</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534618.aspx">scrollTop Property</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534615.aspx">scrollHeight Property</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534619.aspx">scrollWidth Property</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534312.aspx">overflow Property</related>
       </Docs>
     </Member>
     <Member MemberName="ScrollTop">
@@ -2237,6 +2295,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534618.aspx">scrollTop Property</related>
       </Docs>
     </Member>
     <Member MemberName="SetAttribute">
@@ -2285,6 +2344,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536739.aspx">setAttribute Method</related>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -2353,6 +2413,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534654.aspx">tabIndex Property</related>
       </Docs>
     </Member>
     <Member MemberName="TagName">
@@ -2391,6 +2452,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Windows.Forms.HtmlDocument.GetElementsByTagName(System.String)" />
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534657.aspx">tagName Property</related>
       </Docs>
     </Member>
   </Members>

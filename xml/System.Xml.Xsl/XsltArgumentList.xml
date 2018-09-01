@@ -1,4 +1,4 @@
-﻿<Type Name="XsltArgumentList" FullName="System.Xml.Xsl.XsltArgumentList">
+<Type Name="XsltArgumentList" FullName="System.Xml.Xsl.XsltArgumentList">
   <TypeSignature Language="C#" Value="public class XsltArgumentList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XsltArgumentList extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.XsltArgumentList" />
@@ -76,6 +76,9 @@
       <Docs>
         <summary>Implements a new instance of the <see cref="T:System.Xml.Xsl.XsltArgumentList" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4ebdbad-087c-4cfe-acc0-17c48142f81a">XSLT Extension Objects</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/fe60aaa0-ae43-4b1c-9be1-426af66ba757">XSLT Parameters</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="AddExtensionObject">
@@ -143,6 +146,9 @@
   
  The <paramref name="namespaceUri" /> already has an extension object associated with it.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have sufficient permissions to call this method.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4ebdbad-087c-4cfe-acc0-17c48142f81a">XSLT Extension Objects</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/fe60aaa0-ae43-4b1c-9be1-426af66ba757">XSLT Parameters</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="AddParam">
@@ -234,6 +240,9 @@
  The <paramref name="name" /> is not a valid name according to the W3C XML specification.  
   
  The <paramref name="namespaceUri" /> already has a parameter associated with it.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4ebdbad-087c-4cfe-acc0-17c48142f81a">XSLT Extension Objects</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/fe60aaa0-ae43-4b1c-9be1-426af66ba757">XSLT Parameters</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -267,6 +276,9 @@
       <Docs>
         <summary>Removes all parameters and extension objects from the <see cref="T:System.Xml.Xsl.XsltArgumentList" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4ebdbad-087c-4cfe-acc0-17c48142f81a">XSLT Extension Objects</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/fe60aaa0-ae43-4b1c-9be1-426af66ba757">XSLT Parameters</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="GetExtensionObject">
@@ -304,6 +316,9 @@
         <summary>Gets the object associated with the given namespace.</summary>
         <returns>The namespace URI object or <see langword="null" /> if one was not found.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4ebdbad-087c-4cfe-acc0-17c48142f81a">XSLT Extension Objects</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/fe60aaa0-ae43-4b1c-9be1-426af66ba757">XSLT Parameters</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="GetParam">
@@ -343,6 +358,9 @@
         <summary>Gets the parameter associated with the namespace qualified name.</summary>
         <returns>The parameter object or <see langword="null" /> if one was not found.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4ebdbad-087c-4cfe-acc0-17c48142f81a">XSLT Extension Objects</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/fe60aaa0-ae43-4b1c-9be1-426af66ba757">XSLT Parameters</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveExtensionObject">
@@ -380,6 +398,9 @@
         <summary>Removes the object with the namespace URI from the <see cref="T:System.Xml.Xsl.XsltArgumentList" />.</summary>
         <returns>The object with the namespace URI or <see langword="null" /> if one was not found.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4ebdbad-087c-4cfe-acc0-17c48142f81a">XSLT Extension Objects</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/fe60aaa0-ae43-4b1c-9be1-426af66ba757">XSLT Parameters</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveParam">
@@ -419,6 +440,9 @@
         <summary>Removes the parameter from the <see cref="T:System.Xml.Xsl.XsltArgumentList" />.</summary>
         <returns>The parameter object or <see langword="null" /> if one was not found.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4ebdbad-087c-4cfe-acc0-17c48142f81a">XSLT Extension Objects</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/fe60aaa0-ae43-4b1c-9be1-426af66ba757">XSLT Parameters</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="XsltMessageEncountered">
@@ -457,6 +481,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a4ebdbad-087c-4cfe-acc0-17c48142f81a">XSLT Extension Objects</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/fe60aaa0-ae43-4b1c-9be1-426af66ba757">XSLT Parameters</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
   </Members>

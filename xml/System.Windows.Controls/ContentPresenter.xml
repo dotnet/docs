@@ -1,4 +1,4 @@
-﻿<Type Name="ContentPresenter" FullName="System.Windows.Controls.ContentPresenter">
+<Type Name="ContentPresenter" FullName="System.Windows.Controls.ContentPresenter">
   <TypeSignature Language="C#" Value="public class ContentPresenter : System.Windows.FrameworkElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ContentPresenter extends System.Windows.FrameworkElement" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ContentPresenter" />
@@ -62,6 +62,7 @@
     </remarks>
     <altmember cref="T:System.Windows.TemplateBindingExtension" />
     <altmember cref="T:System.Windows.Controls.ItemsPresenter" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160010">Introduction to Styling and Templating Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

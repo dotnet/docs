@@ -1,4 +1,4 @@
-﻿<Type Name="DesignerActionItem" FullName="System.ComponentModel.Design.DesignerActionItem">
+<Type Name="DesignerActionItem" FullName="System.ComponentModel.Design.DesignerActionItem">
   <TypeSignature Language="C#" Value="public abstract class DesignerActionItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DesignerActionItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionItem" />
@@ -42,6 +42,7 @@
     <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
     <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
     <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
+    <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,6 +81,7 @@
         <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.Category" />
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="AllowAssociate">
@@ -135,6 +137,7 @@
         <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.Category" />
         <altmember cref="P:System.ComponentModel.Design.DesignerActionMethodItem.RelatedComponent" />
         <altmember cref="P:System.ComponentModel.Design.DesignerActionPropertyItem.RelatedComponent" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="Category">
@@ -173,6 +176,7 @@
         </remarks>
         <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.AllowAssociate" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -211,6 +215,7 @@
         </remarks>
         <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.DisplayName" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionItem.#ctor(System.String,System.String,System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -247,6 +252,7 @@
         </remarks>
         <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.Description" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionItem.#ctor(System.String,System.String,System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -280,6 +286,7 @@
         </remarks>
         <altmember cref="T:System.Collections.IDictionary" />
         <altmember cref="T:System.Collections.Specialized.HybridDictionary" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="ShowInSourceView">

@@ -1,4 +1,4 @@
-﻿<Type Name="XPathNavigator" FullName="System.Xml.XPath.XPathNavigator">
+<Type Name="XPathNavigator" FullName="System.Xml.XPath.XPathNavigator">
   <TypeSignature Language="C#" Value="public abstract class XPathNavigator : System.Xml.XPath.XPathItem, ICloneable, System.Xml.IXmlNamespaceResolver, System.Xml.XPath.IXPathNavigable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XPathNavigator extends System.Xml.XPath.XPathItem implements class System.ICloneable, class System.Xml.IXmlNamespaceResolver, class System.Xml.XPath.IXPathNavigable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XPathNavigator" />
@@ -111,6 +111,7 @@
     <altmember cref="T:System.Xml.XPath.XPathDocument" />
     <altmember cref="T:System.Xml.XmlDocument" />
     <altmember cref="T:System.Xml.XmlNode" />
+    <related type="Article" href="http://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081">Process XML Data Using the XPath Data Model</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

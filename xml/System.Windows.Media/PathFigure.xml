@@ -1,4 +1,4 @@
-﻿<Type Name="PathFigure" FullName="System.Windows.Media.PathFigure">
+<Type Name="PathFigure" FullName="System.Windows.Media.PathFigure">
   <TypeSignature Language="C#" Value="public sealed class PathFigure : System.Windows.Media.Animation.Animatable, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PathFigure extends System.Windows.Media.Animation.Animatable implements class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.PathFigure" />
@@ -54,6 +54,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159989">Geometries Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

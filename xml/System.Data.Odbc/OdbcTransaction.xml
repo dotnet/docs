@@ -1,4 +1,4 @@
-﻿<Type Name="OdbcTransaction" FullName="System.Data.Odbc.OdbcTransaction">
+<Type Name="OdbcTransaction" FullName="System.Data.Odbc.OdbcTransaction">
   <TypeSignature Language="C#" Value="public sealed class OdbcTransaction : System.Data.Common.DbTransaction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OdbcTransaction extends System.Data.Common.DbTransaction" />
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcTransaction" />
@@ -19,7 +19,8 @@
     <BaseTypeName>System.Data.Common.DbTransaction</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-1.1">System.MarshalByRefObject</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Represents an SQL transaction to be made at a data source. This class cannot be inherited.</summary>
     <remarks>
@@ -40,6 +41,7 @@
     </remarks>
     <altmember cref="T:System.Data.Odbc.OdbcDataAdapter" />
     <altmember cref="T:System.Data.Odbc.OdbcConnection" />
+    <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
   </Docs>
   <Members>
     <Member MemberName="Commit">
@@ -83,6 +85,7 @@
  -or-  
   
  The connection is broken.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -117,6 +120,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </Member>
     <Member MemberName="DbConnection">
@@ -206,6 +210,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </Member>
     <Member MemberName="Rollback">
@@ -254,6 +259,7 @@
  -or-  
   
  The connection is broken.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">

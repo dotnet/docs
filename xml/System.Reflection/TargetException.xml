@@ -1,4 +1,4 @@
-﻿<Type Name="TargetException" FullName="System.Reflection.TargetException">
+<Type Name="TargetException" FullName="System.Reflection.TargetException">
   <TypeSignature Language="C#" Value="public class TargetException : ApplicationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TargetException extends System.ApplicationException" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.TargetException" />
@@ -52,6 +52,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -251,6 +252,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
   </Members>

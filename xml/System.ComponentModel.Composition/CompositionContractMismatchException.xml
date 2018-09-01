@@ -1,4 +1,4 @@
-﻿<Type Name="CompositionContractMismatchException" FullName="System.ComponentModel.Composition.CompositionContractMismatchException">
+<Type Name="CompositionContractMismatchException" FullName="System.ComponentModel.Composition.CompositionContractMismatchException">
   <TypeSignature Language="C#" Value="public class CompositionContractMismatchException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CompositionContractMismatchException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.CompositionContractMismatchException" />
@@ -69,6 +69,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -108,6 +109,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -147,6 +149,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and Soap Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -190,6 +193,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
   </Members>

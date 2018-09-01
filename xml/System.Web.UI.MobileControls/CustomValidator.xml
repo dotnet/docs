@@ -1,4 +1,4 @@
-﻿<Type Name="CustomValidator" FullName="System.Web.UI.MobileControls.CustomValidator">
+<Type Name="CustomValidator" FullName="System.Web.UI.MobileControls.CustomValidator">
   <TypeSignature Language="C#" Value="public class CustomValidator : System.Web.UI.MobileControls.BaseValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CustomValidator extends System.Web.UI.MobileControls.BaseValidator" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.CustomValidator" />
@@ -62,6 +62,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0b130ft3(v=vs.85)">Introduction to the CustomValidator Control</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/w2e9k2tc(v=vs.85)">Adding and Configuring a CustomValidator Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -231,6 +233,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0b130ft3(v=vs.85)">Introduction to the CustomValidator Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/w2e9k2tc(v=vs.85)">Adding and Configuring a CustomValidator Control</related>
       </Docs>
     </Member>
   </Members>

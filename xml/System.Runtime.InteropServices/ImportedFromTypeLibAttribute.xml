@@ -1,4 +1,4 @@
-﻿<Type Name="ImportedFromTypeLibAttribute" FullName="System.Runtime.InteropServices.ImportedFromTypeLibAttribute">
+<Type Name="ImportedFromTypeLibAttribute" FullName="System.Runtime.InteropServices.ImportedFromTypeLibAttribute">
   <TypeSignature Language="C#" Value="public sealed class ImportedFromTypeLibAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImportedFromTypeLibAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ImportedFromTypeLibAttribute" />
@@ -49,6 +49,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.InteropServices.ComImportAttribute" />
+    <related type="Article" href="~/docs/framework/tools/tlbimp-exe-type-library-importer.md">Tlbimp.exe (Type Library Importer)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

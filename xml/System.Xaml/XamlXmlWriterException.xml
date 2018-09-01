@@ -1,4 +1,4 @@
-﻿<Type Name="XamlXmlWriterException" FullName="System.Xaml.XamlXmlWriterException">
+<Type Name="XamlXmlWriterException" FullName="System.Xaml.XamlXmlWriterException">
   <TypeSignature Language="C#" Value="public class XamlXmlWriterException : System.Xaml.XamlException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit XamlXmlWriterException extends System.Xaml.XamlException" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlXmlWriterException" />
@@ -29,6 +29,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Xaml.XamlXmlWriter" />
+    <related type="Article" href="http://msdn.microsoft.com/library/7c11abec-1075-474c-9d9b-778e5dab21c3">Understanding XAML Node Stream Structures and Concepts</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

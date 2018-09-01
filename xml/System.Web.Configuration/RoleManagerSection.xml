@@ -1,4 +1,4 @@
-﻿<Type Name="RoleManagerSection" FullName="System.Web.Configuration.RoleManagerSection">
+<Type Name="RoleManagerSection" FullName="System.Web.Configuration.RoleManagerSection">
   <TypeSignature Language="C#" Value="public sealed class RoleManagerSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RoleManagerSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.RoleManagerSection" />
@@ -69,6 +69,7 @@
     <altmember cref="T:System.Configuration.ConfigurationSection" />
     <altmember cref="T:System.Web.Security.RoleManagerModule" />
     <altmember cref="T:System.Web.Security.Roles" />
+    <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding Role Management</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

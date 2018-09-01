@@ -1,4 +1,4 @@
-﻿<Type Name="TabControl" FullName="System.Windows.Controls.TabControl">
+<Type Name="TabControl" FullName="System.Windows.Controls.TabControl">
   <TypeSignature Language="C#" Value="public class TabControl : System.Windows.Controls.Primitives.Selector" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi TabControl extends System.Windows.Controls.Primitives.Selector" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.TabControl" />
@@ -49,6 +49,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160053">WPF Controls Gallery Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -626,6 +627,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160041">Styling with ControlTemplates Sample</related>
       </Docs>
     </Member>
     <Member MemberName="SelectedContentProperty">
@@ -755,6 +757,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160041">Styling with ControlTemplates Sample</related>
       </Docs>
     </Member>
     <Member MemberName="SelectedContentTemplateProperty">
@@ -841,6 +844,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160041">Styling with ControlTemplates Sample</related>
       </Docs>
     </Member>
     <Member MemberName="SelectedContentTemplateSelectorProperty">

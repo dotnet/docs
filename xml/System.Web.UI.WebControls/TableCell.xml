@@ -1,4 +1,4 @@
-﻿<Type Name="TableCell" FullName="System.Web.UI.WebControls.TableCell">
+<Type Name="TableCell" FullName="System.Web.UI.WebControls.TableCell">
   <TypeSignature Language="C#" Value="public class TableCell : System.Web.UI.WebControls.WebControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableCell extends System.Web.UI.WebControls.WebControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableCell" />
@@ -133,6 +133,10 @@
     <altmember cref="P:System.Web.UI.WebControls.TableCell.Wrap" />
     <altmember cref="P:System.Web.UI.WebControls.TableCell.RowSpan" />
     <altmember cref="P:System.Web.UI.WebControls.TableCell.ColumnSpan" />
+    <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461">Introduction to Validating User Input in ASP.NET Web Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -173,6 +177,7 @@
  ]]></format>
         </remarks>
         <altmember cref="F:System.Web.UI.HtmlTextWriterTag.Td" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -226,6 +231,7 @@
         <altmember cref="P:System.Web.UI.WebControls.TableCell.RowSpan" />
         <altmember cref="P:System.Web.UI.WebControls.TableCell.ColumnSpan" />
         <altmember cref="P:System.Web.UI.WebControls.TableCell.AssociatedHeaderCellID" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -267,6 +273,7 @@
         <altmember cref="P:System.Web.UI.WebControls.TableCell.Text" />
         <altmember cref="T:System.Web.UI.LiteralControl" />
         <altmember cref="T:System.Web.UI.ControlCollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AssociatedHeaderCellID">
@@ -328,6 +335,7 @@ HorizontalAlign="Left">(2,0)
         <altmember cref="T:System.Web.UI.WebControls.TableHeaderCell" />
         <altmember cref="M:System.Web.UI.WebControls.TableCell.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
         <altmember cref="T:System.Web.UI.WebControls.StringArrayConverter" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ColumnSpan">
@@ -389,6 +397,7 @@ HorizontalAlign="Left">(2,0)
         <altmember cref="P:System.Web.UI.WebControls.TableCell.RowSpan" />
         <altmember cref="T:System.Web.UI.WebControls.Table" />
         <altmember cref="T:System.Web.UI.WebControls.TableHeaderCell" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -438,6 +447,7 @@ HorizontalAlign="Left">(2,0)
         <altmember cref="P:System.Web.UI.WebControls.TableCell.Wrap" />
         <altmember cref="P:System.Web.UI.WebControls.TableCell.HorizontalAlign" />
         <altmember cref="P:System.Web.UI.WebControls.TableCell.VerticalAlign" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -498,6 +508,7 @@ HorizontalAlign="Left">(2,0)
         <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
         <altmember cref="P:System.Web.UI.WebControls.TableCell.VerticalAlign" />
         <altmember cref="T:System.Web.UI.WebControls.TableHeaderCell" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -544,6 +555,7 @@ HorizontalAlign="Left">(2,0)
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RowSpan">
@@ -585,6 +597,7 @@ HorizontalAlign="Left">(2,0)
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than <see langword="0" />.</exception>
         <altmember cref="P:System.Web.UI.WebControls.TableCell.ColumnSpan" />
         <altmember cref="T:System.Web.UI.WebControls.Table" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -681,6 +694,10 @@ HorizontalAlign="Left">(2,0)
         </remarks>
         <altmember cref="F:System.String.Empty" />
         <altmember cref="P:System.Web.UI.WebControls.TableCell.Text" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461">Introduction to Validating User Input in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="VerticalAlign">
@@ -721,6 +738,7 @@ HorizontalAlign="Left">(2,0)
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.VerticalAlign" />
         <altmember cref="P:System.Web.UI.WebControls.TableCell.HorizontalAlign" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -761,6 +779,7 @@ HorizontalAlign="Left">(2,0)
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.TableItemStyle.Wrap" />
+        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
   </Members>

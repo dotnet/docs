@@ -1,4 +1,4 @@
-﻿<Type Name="HttpClient" FullName="System.Net.Http.HttpClient">
+<Type Name="HttpClient" FullName="System.Net.Http.HttpClient">
   <TypeSignature Language="C#" Value="public class HttpClient : System.Net.Http.HttpMessageInvoker" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpClient extends System.Net.Http.HttpMessageInvoker" />
   <TypeSignature Language="DocId" Value="T:System.Net.Http.HttpClient" />
@@ -109,6 +109,11 @@ AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", False)
  
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=245696">Connecting to a web service</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=245697">Quickstart: Connecting using HttpClient </related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=245699">How to use HttpClient handlers</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=245698">How to secure HttpClient connections</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=242550">HttpClient Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

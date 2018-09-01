@@ -1,4 +1,4 @@
-﻿<Type Name="OutputCacheLocation" FullName="System.Web.UI.OutputCacheLocation">
+<Type Name="OutputCacheLocation" FullName="System.Web.UI.OutputCacheLocation">
   <TypeSignature Language="C#" Value="public enum OutputCacheLocation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OutputCacheLocation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.OutputCacheLocation" />
@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The values specified by this enumeration are used when you include an `@ OutputCache` directive in an .aspx file. These values determine the cache location for page output. For more information, see [Caching ASP.NET Pages](http://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b).  
+ The values specified by this enumeration are used when you include an `@ OutputCache` directive in an .aspx file. These values determine the cache location for page output. For more information, see [Caching ASP.NET Pages](https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)).  
   
    
   
@@ -33,6 +33,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.Page" />
+    <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
   </Docs>
   <Members>
     <Member MemberName="Any">

@@ -1,4 +1,4 @@
-﻿<Type Name="Convert" FullName="System.Convert">
+<Type Name="Convert" FullName="System.Convert">
   <TypeSignature Language="C#" Value="public static class Convert" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Convert extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Convert" />
@@ -178,6 +178,7 @@
     <altmember cref="T:System.Boolean" />
     <altmember cref="T:System.Char" />
     <altmember cref="T:System.String" />
+    <related type="Article" href="~/docs/standard/base-types/type-conversion.md">Type Conversion in the .NET Framework</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="ChangeType">
@@ -770,6 +771,7 @@
  The format of <paramref name="s" /> is invalid. <paramref name="s" /> contains a non-base-64 character, more than two padding characters, or a non-white space-character among the padding characters.</exception>
         <altmember cref="M:System.Convert.ToBase64String(System.Byte[])" />
         <altmember cref="T:System.Security.Cryptography.FromBase64Transform" />
+        <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Base64-1c3d9c03">Sample: .NET Framework 4 Base64 Converter</related>
       </Docs>
     </Member>
     <Member MemberName="GetTypeCode">
@@ -1319,6 +1321,7 @@
  <paramref name="offset" /> plus <paramref name="length" /> is greater than the length of <paramref name="inArray" />.</exception>
         <altmember cref="M:System.Convert.FromBase64String(System.String)" />
         <altmember cref="T:System.Security.Cryptography.ToBase64Transform" />
+        <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Base64-1c3d9c03">Sample: .NET Framework 4 Base64 Converter</related>
       </Docs>
     </Member>
     <Member MemberName="ToBase64String">
@@ -4999,6 +5002,7 @@
         <exception cref="T:System.FormatException">
           <paramref name="value" /> is not a properly formatted date and time string.</exception>
         <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -5198,6 +5202,7 @@
  -or-  
   
  The conversion is not supported.</exception>
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -5261,6 +5266,7 @@
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="value" /> is not a properly formatted date and time string.</exception>
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ToDecimal">

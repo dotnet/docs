@@ -1,4 +1,4 @@
-﻿<Type Name="SocketElement" FullName="System.Net.Configuration.SocketElement">
+<Type Name="SocketElement" FullName="System.Net.Configuration.SocketElement">
   <TypeSignature Language="C#" Value="public sealed class SocketElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SocketElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.SocketElement" />
@@ -28,6 +28,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/366c634c-7d16-478f-aedf-053eda94a1a0">Socket Element (Network Settings)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,6 +83,8 @@
         <value>
           <see langword="true" /> to use completion ports; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/366c634c-7d16-478f-aedf-053eda94a1a0">&lt;socket&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="AlwaysUseCompletionPortsForConnect">
@@ -109,6 +113,8 @@
         <value>
           <see langword="true" /> to use completion ports; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/366c634c-7d16-478f-aedf-053eda94a1a0">&lt;socket&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="IPProtectionLevel">
@@ -144,6 +150,8 @@
         </remarks>
         <altmember cref="T:System.Net.Sockets.IPProtectionLevel" />
         <altmember cref="F:System.Net.Sockets.SocketOptionName.IPProtectionLevel" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/366c634c-7d16-478f-aedf-053eda94a1a0">&lt;socket&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="PostDeserialize">

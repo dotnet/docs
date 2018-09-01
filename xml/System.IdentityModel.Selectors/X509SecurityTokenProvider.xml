@@ -1,4 +1,4 @@
-﻿<Type Name="X509SecurityTokenProvider" FullName="System.IdentityModel.Selectors.X509SecurityTokenProvider">
+<Type Name="X509SecurityTokenProvider" FullName="System.IdentityModel.Selectors.X509SecurityTokenProvider">
   <TypeSignature Language="C#" Value="public class X509SecurityTokenProvider : System.IdentityModel.Selectors.SecurityTokenProvider, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit X509SecurityTokenProvider extends System.IdentityModel.Selectors.SecurityTokenProvider implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.X509SecurityTokenProvider" />
@@ -30,6 +30,7 @@
     </remarks>
     <altmember cref="T:System.IdentityModel.Selectors.SecurityTokenManager" />
     <altmember cref="T:System.IdentityModel.Selectors.SecurityTokenAuthenticator" />
+    <related type="Article" href="http://msdn.microsoft.com/library/6d892973-1558-4115-a9e1-696777776125">How To: Create a Custom Token</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

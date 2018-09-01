@@ -1,4 +1,4 @@
-﻿<Type Name="TraceContextEventHandler" FullName="System.Web.TraceContextEventHandler">
+<Type Name="TraceContextEventHandler" FullName="System.Web.TraceContextEventHandler">
   <TypeSignature Language="C#" Value="public delegate void TraceContextEventHandler(object sender, TraceContextEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TraceContextEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.TraceContextEventHandler" />
@@ -45,5 +45,6 @@
     <altmember cref="T:System.Web.TraceContextEventArgs" />
     <altmember cref="E:System.Web.TraceContext.TraceFinished" />
     <altmember cref="T:System.Web.TraceContext" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
   </Docs>
 </Type>

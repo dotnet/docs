@@ -1,4 +1,4 @@
-﻿<Type Name="LiteralMode" FullName="System.Web.UI.WebControls.LiteralMode">
+<Type Name="LiteralMode" FullName="System.Web.UI.WebControls.LiteralMode">
   <TypeSignature Language="C#" Value="public enum LiteralMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LiteralMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LiteralMode" />
@@ -39,6 +39,10 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.Literal" />
+    <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">Introduction to Device Filtering in ASP.NET</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Web Server Controls and Browser Capabilities</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/9f856045-c514-4efb-8c6c-30c0c29cc780">Literal Web Server Control Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
   </Docs>
   <Members>
     <Member MemberName="Encode">

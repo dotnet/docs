@@ -1,4 +1,4 @@
-﻿<Type Name="CodeAccessPermission" FullName="System.Security.CodeAccessPermission">
+<Type Name="CodeAccessPermission" FullName="System.Security.CodeAccessPermission">
   <TypeSignature Language="C#" Value="public abstract class CodeAccessPermission : System.Security.IPermission, System.Security.IStackWalk" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit CodeAccessPermission extends System.Object implements class System.Security.IPermission, class System.Security.ISecurityEncodable, class System.Security.IStackWalk" />
   <TypeSignature Language="DocId" Value="T:System.Security.CodeAccessPermission" />
@@ -161,6 +161,7 @@
         <block subset="none" type="overrides">
           <para>You cannot override this method.</para>
         </block>
+        <related type="Article" href="~/docs/framework/misc/using-the-assert-method.md">Using the Assert Method</related>
       </Docs>
     </Member>
     <Member MemberName="Copy">

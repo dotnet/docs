@@ -1,4 +1,4 @@
-﻿<Type Name="MobileControlBuilder" FullName="System.Web.UI.MobileControls.MobileControlBuilder">
+<Type Name="MobileControlBuilder" FullName="System.Web.UI.MobileControls.MobileControlBuilder">
   <TypeSignature Language="C#" Value="public class MobileControlBuilder : System.Web.UI.ControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MobileControlBuilder extends System.Web.UI.ControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.MobileControlBuilder" />
@@ -42,6 +42,7 @@
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.MobileControl" />
+    <related type="Article" href="https://msdn.microsoft.com/library/985bfb0b-1e0a-433c-99e7-c5bcf36ab938">Inside the ASP.NET Mobile Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

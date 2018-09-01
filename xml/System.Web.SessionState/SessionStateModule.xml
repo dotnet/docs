@@ -1,4 +1,4 @@
-﻿<Type Name="SessionStateModule" FullName="System.Web.SessionState.SessionStateModule">
+<Type Name="SessionStateModule" FullName="System.Web.SessionState.SessionStateModule">
   <TypeSignature Language="C#" Value="public sealed class SessionStateModule : System.Web.SessionState.ISessionStateModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SessionStateModule extends System.Object implements class System.Web.IHttpModule, class System.Web.SessionState.ISessionStateModule" />
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionStateModule" />
@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +60,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -94,6 +96,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -165,6 +168,7 @@ public void Session_OnEnd()
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -209,6 +213,7 @@ public void Session_OnEnd()
  -or-  
   
  The <see langword="mode" /> attribute in the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) configuration element is set to <see cref="F:System.Web.SessionState.SessionStateMode.Custom" /> and the provider identified by name in the <see langword="customProvider" /> attribute has not been added to the [providers Element for sessionState (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/219d6778-9fb8-48ac-810d-bec68cf7d6aa) sub-element.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ReleaseSessionState">
@@ -330,6 +335,7 @@ public void Session_OnEnd()
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
   </Members>

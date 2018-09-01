@@ -1,4 +1,4 @@
-﻿<Type Name="KeySpline" FullName="System.Windows.Media.Animation.KeySpline">
+<Type Name="KeySpline" FullName="System.Windows.Media.Animation.KeySpline">
   <TypeSignature Language="C#" Value="public class KeySpline : System.Windows.Freezable, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeySpline extends System.Windows.Freezable implements class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.KeySpline" />
@@ -59,6 +59,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160011">Key Spline Animation Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

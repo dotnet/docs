@@ -1,4 +1,4 @@
-﻿<Type Name="DataContractSerializer" FullName="System.Runtime.Serialization.DataContractSerializer">
+<Type Name="DataContractSerializer" FullName="System.Runtime.Serialization.DataContractSerializer">
   <TypeSignature Language="C#" Value="public sealed class DataContractSerializer : System.Runtime.Serialization.XmlObjectSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataContractSerializer extends System.Runtime.Serialization.XmlObjectSerializer" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.DataContractSerializer" />
@@ -84,6 +84,8 @@
     <altmember cref="T:System.Runtime.Serialization.DataContractAttribute" />
     <altmember cref="T:System.Runtime.Serialization.IExtensibleDataObject" />
     <altmember cref="T:System.Runtime.Serialization.ExtensionDataObject" />
+    <related type="Article" href="~/docs/framework/wcf/feature-details/using-data-contracts.md">Using Data Contracts</related>
+    <related type="Article" href="~/docs/framework/wcf/feature-details/serialization-and-deserialization.md">Serialization and Deserialization</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -807,6 +809,7 @@
         <altmember cref="T:System.Runtime.Serialization.DataContractAttribute" />
         <altmember cref="T:System.Runtime.Serialization.IExtensibleDataObject" />
         <altmember cref="T:System.Runtime.Serialization.ExtensionDataObject" />
+        <related type="Article" href="http://msdn.microsoft.com/library/413c9044-26f8-4ecb-968c-18495ea52cd9">Forward Compatible Data Contracts</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="IsStartObject">

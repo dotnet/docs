@@ -1,4 +1,4 @@
-﻿<Type Name="IFormatter" FullName="System.Runtime.Serialization.IFormatter">
+<Type Name="IFormatter" FullName="System.Runtime.Serialization.IFormatter">
   <TypeSignature Language="C#" Value="public interface IFormatter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFormatter" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.IFormatter" />
@@ -44,6 +44,7 @@
     </block>
     <altmember cref="T:System.Runtime.Serialization.Formatter" />
     <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+    <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
   </Docs>
   <Members>
     <Member MemberName="Binder">
@@ -172,6 +173,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -219,6 +221,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName="SurrogateSelector">

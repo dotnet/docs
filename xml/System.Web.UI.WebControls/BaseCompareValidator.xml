@@ -1,4 +1,4 @@
-﻿<Type Name="BaseCompareValidator" FullName="System.Web.UI.WebControls.BaseCompareValidator">
+<Type Name="BaseCompareValidator" FullName="System.Web.UI.WebControls.BaseCompareValidator">
   <TypeSignature Language="C#" Value="public abstract class BaseCompareValidator : System.Web.UI.WebControls.BaseValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseCompareValidator extends System.Web.UI.WebControls.BaseValidator" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BaseCompareValidator" />
@@ -492,6 +492,7 @@
         <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
         <altmember cref="T:System.Globalization.NumberFormatInfo" />
         <altmember cref="P:System.Globalization.NumberFormatInfo.CurrentInfo" />
+        <related type="Article" href="http://msdn.microsoft.com/library/e6e2bb94-a95d-44e2-b68c-cfdd1db77784">Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="CutoffYear">

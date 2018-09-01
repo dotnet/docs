@@ -1,4 +1,4 @@
-﻿<Type Name="SettingsSection" FullName="System.Net.Configuration.SettingsSection">
+<Type Name="SettingsSection" FullName="System.Net.Configuration.SettingsSection">
   <TypeSignature Language="C#" Value="public sealed class SettingsSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SettingsSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.SettingsSection" />
@@ -26,6 +26,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/189ce989-c39b-427d-b004-6b82a668b931">Settings Element (Network Settings)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

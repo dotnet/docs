@@ -1,4 +1,4 @@
-﻿<Type Name="XpsImage" FullName="System.Windows.Xps.Packaging.XpsImage">
+<Type Name="XpsImage" FullName="System.Windows.Xps.Packaging.XpsImage">
   <TypeSignature Language="C#" Value="public class XpsImage : System.Windows.Xps.Packaging.XpsResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsImage extends System.Windows.Xps.Packaging.XpsResource" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsImage" />
@@ -40,6 +40,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Xps.Packaging.XpsFont" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=65761">XML Paper Specification (XPS)</related>
   </Docs>
   <Members />
 </Type>

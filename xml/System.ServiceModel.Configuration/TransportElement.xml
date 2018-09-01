@@ -1,4 +1,4 @@
-﻿<Type Name="TransportElement" FullName="System.ServiceModel.Configuration.TransportElement">
+<Type Name="TransportElement" FullName="System.ServiceModel.Configuration.TransportElement">
   <TypeSignature Language="C#" Value="public abstract class TransportElement : System.ServiceModel.Configuration.BindingElementExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TransportElement extends System.ServiceModel.Configuration.BindingElementExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.TransportElement" />
@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/005c894b-af70-48aa-a1c1-c99338083c27">Transports in WCF</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

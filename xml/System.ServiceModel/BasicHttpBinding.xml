@@ -21,7 +21,8 @@
     <BaseTypeName>System.ServiceModel.HttpBindingBase</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-3.0">System.ServiceModel.Channels.Binding</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Represents a binding that a Windows Communication Foundation (WCF) service can use to configure and expose endpoints that are able to communicate with ASMX-based Web services and clients and other services that conform to the WS-I Basic Profile 1.1.</summary>
     <remarks>

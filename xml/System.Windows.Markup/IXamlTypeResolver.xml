@@ -1,4 +1,4 @@
-﻿<Type Name="IXamlTypeResolver" FullName="System.Windows.Markup.IXamlTypeResolver">
+<Type Name="IXamlTypeResolver" FullName="System.Windows.Markup.IXamlTypeResolver">
   <TypeSignature Language="C#" Value="public interface IXamlTypeResolver" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXamlTypeResolver" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IXamlTypeResolver" />
@@ -34,6 +34,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Xaml.Schema.XamlTypeTypeConverter" />
+    <related type="Article" href="http://msdn.microsoft.com/library/0e11f386-808c-4eae-9ba6-029ad7ba2211">System.Xaml Conceptual Documentation</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/db07a952-05ce-4aa4-b6f9-aac7397d0326">Type Converters or Markup Extensions for XAML</related>
   </Docs>
   <Members>
     <Member MemberName="Resolve">

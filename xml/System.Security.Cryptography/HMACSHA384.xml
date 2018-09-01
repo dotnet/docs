@@ -1,4 +1,4 @@
-﻿<Type Name="HMACSHA384" FullName="System.Security.Cryptography.HMACSHA384">
+<Type Name="HMACSHA384" FullName="System.Security.Cryptography.HMACSHA384">
   <TypeSignature Language="C#" Value="public class HMACSHA384 : System.Security.Cryptography.HMAC" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HMACSHA384 extends System.Security.Cryptography.HMAC" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.HMACSHA384" />
@@ -57,6 +57,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -107,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -155,6 +157,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> parameter is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -390,6 +393,7 @@ public static void Test()
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="TryHashFinal">

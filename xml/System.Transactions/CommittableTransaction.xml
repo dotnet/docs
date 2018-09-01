@@ -1,4 +1,4 @@
-﻿<Type Name="CommittableTransaction" FullName="System.Transactions.CommittableTransaction">
+<Type Name="CommittableTransaction" FullName="System.Transactions.CommittableTransaction">
   <TypeSignature Language="C#" Value="public sealed class CommittableTransaction : System.Transactions.Transaction, IAsyncResult, IDisposable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit CommittableTransaction extends System.Transactions.Transaction implements class System.IAsyncResult, class System.IDisposable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.CommittableTransaction" />
@@ -66,6 +66,8 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms172152(v=vs.85)">Implementing An Implicit Transaction Using Transaction Scope</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f6c648f8-d638-4228-bfa4-0d65dd262968">Implementing An Explicit Transaction Using CommittableTransaction</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="AbandonedMutexException" FullName="System.Threading.AbandonedMutexException">
+<Type Name="AbandonedMutexException" FullName="System.Threading.AbandonedMutexException">
   <TypeSignature Language="C#" Value="public class AbandonedMutexException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit AbandonedMutexException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Threading.AbandonedMutexException" />
@@ -62,6 +62,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Threading.Mutex" />
+    <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -120,6 +121,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -171,6 +173,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -224,6 +227,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -271,6 +275,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -326,6 +331,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -381,6 +387,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -440,6 +447,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
     <Member MemberName="Mutex">
@@ -482,6 +490,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
     <Member MemberName="MutexIndex">
@@ -536,6 +545,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
   </Members>

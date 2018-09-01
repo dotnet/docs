@@ -1,4 +1,4 @@
-﻿<Type Name="Visual" FullName="System.Windows.Media.Visual">
+<Type Name="Visual" FullName="System.Windows.Media.Visual">
   <TypeSignature Language="C#" Value="public abstract class Visual : System.Windows.DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Visual extends System.Windows.DependencyObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Visual" />
@@ -947,6 +947,7 @@ Visual class hierarchy
         <summary>Gets or sets the clip region of the <see cref="T:System.Windows.Media.Visual" /> as a <see cref="T:System.Windows.Media.Geometry" /> value.</summary>
         <value>The clip region value of the visual as a <see cref="T:System.Windows.Media.Geometry" /> type.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms746710(v=vs.90)">How to: Create a Clip Region</related>
       </Docs>
     </Member>
     <Member MemberName="VisualEdgeMode">

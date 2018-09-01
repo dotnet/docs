@@ -1,4 +1,4 @@
-﻿<Type Name="UrlRoutingModule" FullName="System.Web.Routing.UrlRoutingModule">
+<Type Name="UrlRoutingModule" FullName="System.Web.Routing.UrlRoutingModule">
   <TypeSignature Language="C#" Value="public class UrlRoutingModule : System.Web.IHttpModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UrlRoutingModule extends System.Object implements class System.Web.IHttpModule" />
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.UrlRoutingModule" />
@@ -36,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +63,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.UrlRoutingModule" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -90,6 +92,7 @@
       <Docs>
         <summary>Disposes of the resources (other than memory) that are used by the module.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -121,6 +124,7 @@
         <param name="application">An object that provides access to the methods, properties, and events common to all application objects in an ASP.NET application.</param>
         <summary>Initializes a module and prepares it to handle requests.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="PostMapRequestHandler">
@@ -162,6 +166,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.Routing.RouteData.RouteHandler" /> property for the route is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="PostResolveRequestCache">
@@ -197,6 +202,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RouteCollection">
@@ -227,6 +233,7 @@
         <summary>Gets or sets the collection of defined routes for the ASP.NET application.</summary>
         <value>An object that contains the routes.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.IHttpModule.Dispose">
@@ -266,6 +273,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.IHttpModule.Init">
@@ -308,6 +316,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
   </Members>

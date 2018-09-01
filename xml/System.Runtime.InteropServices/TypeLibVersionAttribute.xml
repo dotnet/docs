@@ -1,4 +1,4 @@
-﻿<Type Name="TypeLibVersionAttribute" FullName="System.Runtime.InteropServices.TypeLibVersionAttribute">
+<Type Name="TypeLibVersionAttribute" FullName="System.Runtime.InteropServices.TypeLibVersionAttribute">
   <TypeSignature Language="C#" Value="public sealed class TypeLibVersionAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeLibVersionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TypeLibVersionAttribute" />
@@ -52,6 +52,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/tools/tlbexp-exe-type-library-exporter.md">Tlbexp.exe (Type Library Exporter)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="RoleManagerModule" FullName="System.Web.Security.RoleManagerModule">
+<Type Name="RoleManagerModule" FullName="System.Web.Security.RoleManagerModule">
   <TypeSignature Language="C#" Value="public sealed class RoleManagerModule : System.Web.IHttpModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RoleManagerModule extends System.Object implements class System.Web.IHttpModule" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.RoleManagerModule" />
@@ -32,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +63,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -96,6 +98,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName="GetRoles">
@@ -136,6 +139,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -171,6 +175,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
   </Members>

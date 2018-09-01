@@ -1,4 +1,4 @@
-﻿<Type Name="GCLatencyMode" FullName="System.Runtime.GCLatencyMode">
+<Type Name="GCLatencyMode" FullName="System.Runtime.GCLatencyMode">
   <TypeSignature Language="C#" Value="public enum GCLatencyMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed GCLatencyMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.GCLatencyMode" />
@@ -44,6 +44,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/96278bb7-6eab-4612-8594-ceebfc887d81">Latency Modes</related>
   </Docs>
   <Members>
     <Member MemberName="Batch">

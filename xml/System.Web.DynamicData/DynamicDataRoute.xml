@@ -1,4 +1,4 @@
-﻿<Type Name="DynamicDataRoute" FullName="System.Web.DynamicData.DynamicDataRoute">
+<Type Name="DynamicDataRoute" FullName="System.Web.DynamicData.DynamicDataRoute">
   <TypeSignature Language="C#" Value="public class DynamicDataRoute : System.Web.Routing.Route" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicDataRoute extends System.Web.Routing.Route" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicDataRoute" />
@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/200fe812-d0a6-4531-b9b4-cfc4ee83a678">How to: Define a Route</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

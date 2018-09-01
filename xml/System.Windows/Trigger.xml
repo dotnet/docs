@@ -1,4 +1,4 @@
-﻿<Type Name="Trigger" FullName="System.Windows.Trigger">
+<Type Name="Trigger" FullName="System.Windows.Trigger">
   <TypeSignature Language="C#" Value="public class Trigger : System.Windows.TriggerBase, System.ComponentModel.ISupportInitialize, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Trigger extends System.Windows.TriggerBase implements class System.ComponentModel.ISupportInitialize, class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Trigger" />
@@ -54,6 +54,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160010">Introduction to Styling and Templating Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -123,6 +124,7 @@
         <exception cref="T:System.ArgumentException">A <see cref="T:System.Windows.Style" /> cannot contain a <see cref="T:System.Windows.Trigger" /> that refers to the <see cref="T:System.Windows.Style" /> property.</exception>
         <exception cref="T:System.InvalidOperationException">After a <see cref="T:System.Windows.Trigger" /> is in use, it cannot be modified.</exception>
         <altmember cref="P:System.Windows.Trigger.Value" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160010">Introduction to Styling and Templating Sample</related>
       </Docs>
     </Member>
     <Member MemberName="ReceiveTypeConverter">
@@ -223,6 +225,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160010">Introduction to Styling and Templating Sample</related>
       </Docs>
     </Member>
     <Member MemberName="SourceName">

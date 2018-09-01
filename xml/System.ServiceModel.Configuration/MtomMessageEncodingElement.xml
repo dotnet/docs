@@ -1,4 +1,4 @@
-﻿<Type Name="MtomMessageEncodingElement" FullName="System.ServiceModel.Configuration.MtomMessageEncodingElement">
+<Type Name="MtomMessageEncodingElement" FullName="System.ServiceModel.Configuration.MtomMessageEncodingElement">
   <TypeSignature Language="C#" Value="public sealed class MtomMessageEncodingElement : System.ServiceModel.Configuration.BindingElementExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MtomMessageEncodingElement extends System.ServiceModel.Configuration.BindingElementExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MtomMessageEncodingElement" />
@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/7865d171-cd1e-430a-8421-39cc13541d1b">mtomMessageEncoding element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -1,4 +1,4 @@
-﻿<Type Name="SplineDoubleKeyFrame" FullName="System.Windows.Media.Animation.SplineDoubleKeyFrame">
+<Type Name="SplineDoubleKeyFrame" FullName="System.Windows.Media.Animation.SplineDoubleKeyFrame">
   <TypeSignature Language="C#" Value="public class SplineDoubleKeyFrame : System.Windows.Media.Animation.DoubleKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SplineDoubleKeyFrame extends System.Windows.Media.Animation.DoubleKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SplineDoubleKeyFrame" />
@@ -222,6 +222,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160011">Key Spline Animation Sample</related>
       </Docs>
     </Member>
     <Member MemberName="KeySplineProperty">

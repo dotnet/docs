@@ -1,4 +1,4 @@
-﻿<Type Name="BitmapSource" FullName="System.Windows.Media.Imaging.BitmapSource">
+<Type Name="BitmapSource" FullName="System.Windows.Media.Imaging.BitmapSource">
   <TypeSignature Language="C#" Value="public abstract class BitmapSource : System.Windows.Media.ImageSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BitmapSource extends System.Windows.Media.ImageSource" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapSource" />
@@ -49,6 +49,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Media.Imaging.BitmapImage" />
+    <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/ee719902(v=vs.85).aspx">Microsoft Windows Imaging Component</related>
+    <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/ee690171(v=vs.85).aspx">IWCBitmapSource</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

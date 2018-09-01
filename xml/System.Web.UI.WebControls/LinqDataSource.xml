@@ -1,4 +1,4 @@
-﻿<Type Name="LinqDataSource" FullName="System.Web.UI.WebControls.LinqDataSource">
+<Type Name="LinqDataSource" FullName="System.Web.UI.WebControls.LinqDataSource">
   <TypeSignature Language="C#" Value="public class LinqDataSource : System.Web.UI.WebControls.ContextDataSource, System.Web.DynamicData.IDynamicDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinqDataSource extends System.Web.UI.WebControls.ContextDataSource implements class System.Web.DynamicData.IDynamicDataSource, class System.Web.UI.IDataSource" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSource" />
@@ -226,6 +226,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -621,6 +622,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
       </Docs>
     </Member>
     <Member MemberName="CreateQueryableView">
@@ -882,6 +884,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
       </Docs>
     </Member>
     <Member MemberName="EnableInsert">
@@ -933,6 +936,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
       </Docs>
     </Member>
     <Member MemberName="EnableObjectTracking">
@@ -2083,6 +2087,7 @@ protected void LinqDataSource_Selecting(object sender,
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.DynamicData.IDynamicDataSource.ContextType">

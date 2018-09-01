@@ -1,4 +1,4 @@
-﻿<Type Name="Calendar" FullName="System.Web.UI.MobileControls.Calendar">
+<Type Name="Calendar" FullName="System.Web.UI.MobileControls.Calendar">
   <TypeSignature Language="C#" Value="public class Calendar : System.Web.UI.MobileControls.MobileControl, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Calendar extends System.Web.UI.MobileControls.MobileControl implements class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Calendar" />
@@ -78,6 +78,8 @@
     <altmember cref="T:System.Web.UI.WebControls.Calendar" />
     <altmember cref="P:System.Web.UI.MobileControls.Calendar.SelectionMode" />
     <altmember cref="P:System.Web.UI.MobileControls.Calendar.WebCalendar" />
+    <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">Introduction to Mobile Application Development in ASP.NET</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/b73x06dt(v=vs.85)">ASP.NET Mobile Web Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,6 +99,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.Calendar" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/b73x06dt(v=vs.85)">ASP.NET Mobile Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CalendarEntryText">
@@ -143,6 +146,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/b73x06dt(v=vs.85)">ASP.NET Mobile Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateWebCalendar">
@@ -174,6 +178,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/b73x06dt(v=vs.85)">ASP.NET Mobile Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="FirstDayOfWeek">
@@ -217,6 +222,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/b73x06dt(v=vs.85)">ASP.NET Mobile Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnSelectionChanged">
@@ -252,6 +258,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/b73x06dt(v=vs.85)">ASP.NET Mobile Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -284,6 +291,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/b73x06dt(v=vs.85)">ASP.NET Mobile Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RaiseSelectionChangedEvent">
@@ -314,6 +322,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/b73x06dt(v=vs.85)">ASP.NET Mobile Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SelectedDate">
@@ -365,6 +374,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.MobileControls.Calendar.SelectionMode" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/b73x06dt(v=vs.85)">ASP.NET Mobile Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SelectedDates">
@@ -414,6 +424,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/b73x06dt(v=vs.85)">ASP.NET Mobile Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SelectionChanged">
@@ -437,6 +448,7 @@
         <summary>Occurs each time the user selects a day, a week, or a month in the <see cref="T:System.Web.UI.MobileControls.Calendar" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Calendar.OnSelectionChanged" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/b73x06dt(v=vs.85)">ASP.NET Mobile Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SelectionMode">
@@ -487,6 +499,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.CalendarSelectionMode" /> values.</exception>
         <altmember cref="T:System.Web.UI.WebControls.CalendarSelectionMode" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/b73x06dt(v=vs.85)">ASP.NET Mobile Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ShowDayHeader">
@@ -534,6 +547,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/b73x06dt(v=vs.85)">ASP.NET Mobile Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -566,6 +580,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/b73x06dt(v=vs.85)">ASP.NET Mobile Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="VisibleDate">
@@ -616,6 +631,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/b73x06dt(v=vs.85)">ASP.NET Mobile Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebCalendar">
@@ -668,6 +684,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/b73x06dt(v=vs.85)">ASP.NET Mobile Web Pages</related>
       </Docs>
     </Member>
   </Members>

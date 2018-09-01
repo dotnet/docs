@@ -1,4 +1,4 @@
-﻿<Type Name="XmlTypeAttribute" FullName="System.Xml.Serialization.XmlTypeAttribute">
+<Type Name="XmlTypeAttribute" FullName="System.Xml.Serialization.XmlTypeAttribute">
   <TypeSignature Language="C#" Value="public class XmlTypeAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlTypeAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlTypeAttribute" />
@@ -49,7 +49,7 @@
 > [!NOTE]
 >  If you set the <xref:System.Xml.Serialization.XmlTypeAttribute.IncludeInSchema%2A> property to `false`, the [XML Schema Definition Tool (Xsd.exe)](~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md) does not include the type in the schema. By default, for each public class, the XSD tool generates a `complexType` and an element of that type.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
 > [!NOTE]
 >  You can use the word `XmlType` in your code instead of the longer <xref:System.Xml.Serialization.XmlTypeAttribute>.  
@@ -69,6 +69,10 @@
     <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
     <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
     <altmember cref="P:System.Xml.Serialization.XmlAttributes.XmlText" />
+    <related type="Article" href="~/docs/standard/serialization/introducing-xml-serialization.md">Introducing XML Serialization</related>
+    <related type="Article" href="~/docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md">How to: Specify an Alternate Element Name for an XML Stream</related>
+    <related type="Article" href="~/docs/standard/serialization/controlling-xml-serialization-using-attributes.md">Controlling XML Serialization Using Attributes</related>
+    <related type="Article" href="~/docs/standard/serialization/examples-of-xml-serialization.md">Examples of XML Serialization</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

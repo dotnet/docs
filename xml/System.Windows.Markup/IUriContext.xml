@@ -1,4 +1,4 @@
-﻿<Type Name="IUriContext" FullName="System.Windows.Markup.IUriContext">
+<Type Name="IUriContext" FullName="System.Windows.Markup.IUriContext">
   <TypeSignature Language="C#" Value="public interface IUriContext" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUriContext" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IUriContext" />
@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/db07a952-05ce-4aa4-b6f9-aac7397d0326">Type Converters or Markup Extensions for XAML</related>
   </Docs>
   <Members>
     <Member MemberName="BaseUri">
@@ -67,6 +68,7 @@
         <summary>Gets or sets the base URI of the current application context.</summary>
         <value>The base URI of the application context.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/db07a952-05ce-4aa4-b6f9-aac7397d0326">Type Converters or Markup Extensions for XAML</related>
       </Docs>
     </Member>
   </Members>

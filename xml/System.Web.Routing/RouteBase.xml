@@ -1,4 +1,4 @@
-﻿<Type Name="RouteBase" FullName="System.Web.Routing.RouteBase">
+<Type Name="RouteBase" FullName="System.Web.Routing.RouteBase">
   <TypeSignature Language="C#" Value="public abstract class RouteBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RouteBase extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RouteBase" />
@@ -32,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +59,7 @@
       <Docs>
         <summary>Initializes the class for use by an inherited class instance. This constructor can only be called by an inherited class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetRouteData">
@@ -87,6 +89,7 @@
         <summary>When overridden in a derived class, returns route information about the request.</summary>
         <returns>An object that contains the values from the route definition if the route matches the current request, or <see langword="null" /> if the route does not match the request.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualPath">
@@ -124,6 +127,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RouteExistingFiles">

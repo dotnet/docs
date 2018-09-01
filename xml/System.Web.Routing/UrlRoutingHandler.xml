@@ -1,4 +1,4 @@
-﻿<Type Name="UrlRoutingHandler" FullName="System.Web.Routing.UrlRoutingHandler">
+<Type Name="UrlRoutingHandler" FullName="System.Web.Routing.UrlRoutingHandler">
   <TypeSignature Language="C#" Value="public abstract class UrlRoutingHandler : System.Web.IHttpHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit UrlRoutingHandler extends System.Object implements class System.Web.IHttpHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.UrlRoutingHandler" />
@@ -61,6 +61,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -87,6 +88,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.UrlRoutingHandler" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="IsReusable">
@@ -115,6 +117,7 @@
         <summary>Gets a value that indicates whether another request can use the <see cref="T:System.Web.Routing.UrlRoutingHandler" /> instance.</summary>
         <value>Always <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ProcessRequest">
@@ -124,6 +127,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Processes an HTTP request that matches a route.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ProcessRequest">
@@ -156,6 +160,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.Web.HttpException">The request does not match any route.</exception>
         <exception cref="T:System.InvalidOperationException">No handler is defined for the route.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="ProcessRequest">
@@ -186,6 +191,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.Web.HttpException">The request does not match any route.</exception>
         <exception cref="T:System.InvalidOperationException">No handler is defined for the route.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RouteCollection">
@@ -216,6 +222,7 @@
         <summary>Gets or sets the collection of defined routes for the ASP.NET application.</summary>
         <value>An object that contains the routes.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.IHttpHandler.IsReusable">
@@ -256,6 +263,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.IHttpHandler.ProcessRequest">
@@ -298,6 +306,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="VerifyAndProcessRequest">
@@ -328,6 +337,7 @@
         <param name="httpContext">An object that provides references to the intrinsic server objects (for example, <see cref="P:System.Web.HttpContext.Request" />, <see cref="P:System.Web.HttpContext.Response" />, <see cref="P:System.Web.HttpContext.Session" />, and <see cref="P:System.Web.HttpContext.Server" />).</param>
         <summary>When overridden in a derived class, validates the HTTP handler and performs the steps that are required to process the request.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="LocalFileSettingsProvider" FullName="System.Configuration.LocalFileSettingsProvider">
+<Type Name="LocalFileSettingsProvider" FullName="System.Configuration.LocalFileSettingsProvider">
   <TypeSignature Language="C#" Value="public class LocalFileSettingsProvider : System.Configuration.SettingsProvider, System.Configuration.IApplicationSettingsProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LocalFileSettingsProvider extends System.Configuration.SettingsProvider implements class System.Configuration.IApplicationSettingsProvider" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.LocalFileSettingsProvider" />
@@ -46,6 +46,7 @@
     <altmember cref="T:System.Configuration.ApplicationSettingsBase" />
     <altmember cref="T:System.Configuration.ClientSettingsSection" />
     <altmember cref="T:System.Configuration.IConfigurationSectionHandler" />
+    <related type="Article" href="http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562">Application Settings Architecture</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

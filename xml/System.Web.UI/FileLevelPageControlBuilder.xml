@@ -1,4 +1,4 @@
-﻿<Type Name="FileLevelPageControlBuilder" FullName="System.Web.UI.FileLevelPageControlBuilder">
+<Type Name="FileLevelPageControlBuilder" FullName="System.Web.UI.FileLevelPageControlBuilder">
   <TypeSignature Language="C#" Value="public class FileLevelPageControlBuilder : System.Web.UI.RootBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileLevelPageControlBuilder extends System.Web.UI.RootBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.FileLevelPageControlBuilder" />
@@ -127,6 +127,7 @@
         <exception cref="T:System.Web.HttpParseException">The content page contained a literal other than a <see cref="T:System.Web.UI.WebControls.Content" /> control.</exception>
         <altmember cref="T:System.Web.UI.WebControls.Content" />
         <altmember cref="P:System.Web.UI.MasterPage.Master" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
   </Members>

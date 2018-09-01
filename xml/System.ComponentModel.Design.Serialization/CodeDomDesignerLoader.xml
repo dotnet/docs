@@ -1,4 +1,4 @@
-﻿<Type Name="CodeDomDesignerLoader" FullName="System.ComponentModel.Design.Serialization.CodeDomDesignerLoader">
+<Type Name="CodeDomDesignerLoader" FullName="System.ComponentModel.Design.Serialization.CodeDomDesignerLoader">
   <TypeSignature Language="C#" Value="public abstract class CodeDomDesignerLoader : System.ComponentModel.Design.Serialization.BasicDesignerLoader, System.ComponentModel.Design.Serialization.IDesignerSerializationService, System.ComponentModel.Design.Serialization.INameCreationService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CodeDomDesignerLoader extends System.ComponentModel.Design.Serialization.BasicDesignerLoader implements class System.ComponentModel.Design.Serialization.IDesignerSerializationService, class System.ComponentModel.Design.Serialization.INameCreationService" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader" />
@@ -42,6 +42,7 @@
     <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
     <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
     <altmember cref="N:System.CodeDom" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb">Dynamic Source Code Generation and Compilation</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -166,6 +167,7 @@
         <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationService" />
         <altmember cref="T:System.ComponentModel.Design.Serialization.ComponentSerializationService" />
         <altmember cref="T:System.ComponentModel.Design.Serialization.INameCreationService" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb">Dynamic Source Code Generation and Compilation</related>
       </Docs>
     </Member>
     <Member MemberName="IsReloadNeeded">
@@ -352,6 +354,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.CodeDom.CodeCompileUnit" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb">Dynamic Source Code Generation and Compilation</related>
       </Docs>
     </Member>
     <Member MemberName="PerformFlush">
@@ -429,6 +432,7 @@
         <exception cref="T:System.NotSupportedException">The language did not provide a code parser for this file; this file type may not support a designer.</exception>
         <exception cref="T:System.InvalidOperationException">The class can be designed, but it is not the first class in the file, or the designer could not be shown for this file because none of the classes within it can be designed.</exception>
         <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb">Dynamic Source Code Generation and Compilation</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.Serialization.IDesignerSerializationService.Deserialize">
@@ -597,6 +601,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.Design.ITypeResolutionService" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb">Dynamic Source Code Generation and Compilation</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -630,6 +635,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.CodeDom.CodeCompileUnit" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb">Dynamic Source Code Generation and Compilation</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="IRouteConstraint" FullName="System.Web.Routing.IRouteConstraint">
+<Type Name="IRouteConstraint" FullName="System.Web.Routing.IRouteConstraint">
   <TypeSignature Language="C#" Value="public interface IRouteConstraint" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRouteConstraint" />
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.IRouteConstraint" />
@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
   </Docs>
   <Members>
     <Member MemberName="Match">
@@ -75,6 +76,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
   </Members>

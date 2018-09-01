@@ -1,4 +1,4 @@
-﻿<Type Name="XpsDigSigPartAlteringRestrictions" FullName="System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions">
+<Type Name="XpsDigSigPartAlteringRestrictions" FullName="System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions">
   <TypeSignature Language="C#" Value="public enum XpsDigSigPartAlteringRestrictions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XpsDigSigPartAlteringRestrictions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions" />
@@ -44,6 +44,9 @@
     </remarks>
     <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDocument.SignDigitally" />
     <altmember cref="T:System.IO.Packaging.PackageDigitalSignature" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions (OPC) Specification</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=65761">XML Paper Specification (XPS)</related>
   </Docs>
   <Members>
     <Member MemberName="Annotations">

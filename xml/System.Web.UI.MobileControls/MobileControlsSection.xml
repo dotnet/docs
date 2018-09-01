@@ -1,4 +1,4 @@
-﻿<Type Name="MobileControlsSection" FullName="System.Web.UI.MobileControls.MobileControlsSection">
+<Type Name="MobileControlsSection" FullName="System.Web.UI.MobileControls.MobileControlsSection">
   <TypeSignature Language="C#" Value="public sealed class MobileControlsSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MobileControlsSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.MobileControlsSection" />
@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/220179a0-b78d-49b9-84e3-b755ce47e650">Configuration Files in the Mobile Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,6 +48,7 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.MobileControlsSection" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/220179a0-b78d-49b9-84e3-b755ce47e650">Configuration Files in the Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="AllowCustomAttributes">
@@ -75,6 +77,7 @@
         <value>
           <see langword="true" /> if pages are allowed to have custom attributes; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/220179a0-b78d-49b9-84e3-b755ce47e650">Configuration Files in the Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CookielessDataDictionaryType">
@@ -108,6 +111,7 @@
         <summary>Gets or sets the type of the dictionary class that maintains the keys for cookieless forms authentication. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The <see cref="T:System.Type" /> of the dictionary class.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/220179a0-b78d-49b9-84e3-b755ce47e650">Configuration Files in the Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Devices">
@@ -135,6 +139,7 @@
         <summary>Gets the collection of device elements that programmatically represent the [device](http://msdn.microsoft.com/library/d6d2a3c9-d5f8-43be-a783-822d59a0b587) elements of a configuration file. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The <see cref="T:System.Web.UI.MobileControls.DeviceElementCollection" /> that contains the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> objects that programmatically represent the [device](http://msdn.microsoft.com/library/d6d2a3c9-d5f8-43be-a783-822d59a0b587) elements of the configuration file.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/220179a0-b78d-49b9-84e3-b755ce47e650">Configuration Files in the Mobile Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -187,6 +192,7 @@
         <summary>Gets or sets the size of the history to use to keep the application view state in the server session. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The size of the history stack. The default is 5.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/220179a0-b78d-49b9-84e3-b755ce47e650">Configuration Files in the Mobile Controls</related>
       </Docs>
     </Member>
   </Members>

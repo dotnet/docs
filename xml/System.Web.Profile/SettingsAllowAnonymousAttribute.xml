@@ -1,4 +1,4 @@
-﻿<Type Name="SettingsAllowAnonymousAttribute" FullName="System.Web.Profile.SettingsAllowAnonymousAttribute">
+<Type Name="SettingsAllowAnonymousAttribute" FullName="System.Web.Profile.SettingsAllowAnonymousAttribute">
   <TypeSignature Language="C#" Value="public sealed class SettingsAllowAnonymousAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SettingsAllowAnonymousAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.SettingsAllowAnonymousAttribute" />
@@ -113,6 +113,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -160,6 +161,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Allow">
@@ -188,6 +190,7 @@
         <value>
           <see langword="true" /> if anonymous users can access the associated profile property; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAttribute">
@@ -212,6 +215,7 @@
         <returns>
           <see langword="true" /> if the <see cref="P:System.Web.Profile.SettingsAllowAnonymousAttribute.Allow" /> property is set to the default value; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
   </Members>

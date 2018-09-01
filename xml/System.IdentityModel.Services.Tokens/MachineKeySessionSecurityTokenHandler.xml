@@ -1,4 +1,4 @@
-﻿<Type Name="MachineKeySessionSecurityTokenHandler" FullName="System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler">
+<Type Name="MachineKeySessionSecurityTokenHandler" FullName="System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler">
   <TypeSignature Language="C#" Value="public class MachineKeySessionSecurityTokenHandler : System.IdentityModel.Tokens.SessionSecurityTokenHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MachineKeySessionSecurityTokenHandler extends System.IdentityModel.Tokens.SessionSecurityTokenHandler" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler" />
@@ -46,6 +46,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.IdentityModel.Tokens.SessionSecurityTokenHandler" />
+    <related type="Article" href="http://msdn.microsoft.com/library/fc3cd7fa-2b45-4614-a44f-8fa9b9d15284">WIF and Web Farms</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

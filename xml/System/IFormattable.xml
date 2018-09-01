@@ -1,4 +1,4 @@
-﻿<Type Name="IFormattable" FullName="System.IFormattable">
+<Type Name="IFormattable" FullName="System.IFormattable">
   <TypeSignature Language="C#" Value="public interface IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.IFormattable" />
@@ -88,6 +88,7 @@
     <altmember cref="T:System.IFormatProvider" />
     <altmember cref="M:System.Object.ToString" />
     <altmember cref="P:System.Threading.Thread.CurrentCulture" />
+    <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
   </Docs>
   <Members>
     <Member MemberName="ToString">

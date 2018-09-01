@@ -1,4 +1,4 @@
-﻿<Type Name="ProfileEventHandler" FullName="System.Web.Profile.ProfileEventHandler">
+<Type Name="ProfileEventHandler" FullName="System.Web.Profile.ProfileEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ProfileEventHandler(object sender, ProfileEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProfileEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileEventHandler" />
@@ -43,5 +43,6 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.Profile.ProfileEventArgs" />
+    <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
   </Docs>
 </Type>

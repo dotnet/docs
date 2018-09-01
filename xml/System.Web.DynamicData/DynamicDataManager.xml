@@ -1,4 +1,4 @@
-﻿<Type Name="DynamicDataManager" FullName="System.Web.DynamicData.DynamicDataManager">
+<Type Name="DynamicDataManager" FullName="System.Web.DynamicData.DynamicDataManager">
   <TypeSignature Language="C#" Value="public class DynamicDataManager : System.Web.UI.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicDataManager extends System.Web.UI.Control" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicDataManager" />
@@ -235,6 +235,8 @@
         <value>A value that indicates how the <see cref="P:System.Web.UI.Control.ClientID" /> property is generated. This property cannot be set.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Control.ClientIDMode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7">ASP.NET Control Identification</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/fb58ed73-d8f7-401c-9560-d99dd9ca7db8">How to: Access controls from client script</related>
       </Docs>
     </Member>
     <Member MemberName="DataControls">

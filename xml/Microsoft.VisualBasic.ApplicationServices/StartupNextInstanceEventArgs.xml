@@ -1,4 +1,4 @@
-﻿<Type Name="StartupNextInstanceEventArgs" FullName="Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs">
+<Type Name="StartupNextInstanceEventArgs" FullName="Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs">
   <TypeSignature Language="C#" Value="public class StartupNextInstanceEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi StartupNextInstanceEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs" />
@@ -36,6 +36,7 @@
     </remarks>
     <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
     <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance(Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs)" />
+    <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +72,7 @@
         </remarks>
         <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
         <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance(Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="BringToForeground">
@@ -110,6 +112,7 @@
         </remarks>
         <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
         <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance(Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
       </Docs>
     </Member>
     <Member MemberName="CommandLine">
@@ -146,6 +149,7 @@
         </remarks>
         <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
         <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance(Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md">Overview of the Visual Basic Application Model</related>
       </Docs>
     </Member>
   </Members>

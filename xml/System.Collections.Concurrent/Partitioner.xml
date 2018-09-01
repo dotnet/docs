@@ -1,4 +1,4 @@
-﻿<Type Name="Partitioner" FullName="System.Collections.Concurrent.Partitioner">
+<Type Name="Partitioner" FullName="System.Collections.Concurrent.Partitioner">
   <TypeSignature Language="C#" Value="public static class Partitioner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Partitioner extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.Partitioner" />
@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Create">
@@ -91,6 +93,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="toExclusive" /> argument is less than or equal to the <paramref name="fromInclusive" /> argument.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -137,6 +142,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="toExclusive" /> argument is less than or equal to the <paramref name="fromInclusive" /> argument.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -189,6 +197,9 @@
  -or-  
   
  The <paramref name="rangeSize" /> argument is less than or equal to 0.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -241,6 +252,9 @@
  -or-  
   
  The <paramref name="rangeSize" /> argument is less than or equal to 0.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="Create&lt;TSource&gt;">
@@ -288,6 +302,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="Create&lt;TSource&gt;">
@@ -387,6 +404,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="Create&lt;TSource&gt;">
@@ -436,6 +456,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
   </Members>

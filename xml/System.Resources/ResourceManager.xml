@@ -1,4 +1,4 @@
-﻿<Type Name="ResourceManager" FullName="System.Resources.ResourceManager">
+<Type Name="ResourceManager" FullName="System.Resources.ResourceManager">
   <TypeSignature Language="C#" Value="public class ResourceManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ResourceManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResourceManager" />
@@ -375,6 +375,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
     <altmember cref="T:System.Globalization.CultureInfo" />
     <altmember cref="P:System.Globalization.CultureInfo.CurrentUICulture" />
     <altmember cref="T:System.Resources.SatelliteContractVersionAttribute" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -878,6 +879,7 @@ csc Example.cs /resource:ExampleResources.resources
         </remarks>
         <altmember cref="T:System.Resources.UltimateResourceFallbackLocation" />
         <altmember cref="T:System.Resources.NeutralResourcesLanguageAttribute" />
+        <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
       </Docs>
     </Member>
     <Member MemberName="GetNeutralResourcesLanguage">
@@ -1023,6 +1025,7 @@ GetObject.exe
         <exception cref="T:System.Resources.MissingSatelliteAssemblyException">The default culture's resources reside in a satellite assembly that could not be found. For information about how to handle this exception, see the "Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions" section in the <see cref="T:System.Resources.ResourceManager" /> class topic.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
         <altmember cref="M:System.Resources.ResourceManager.GetStream(System.String)" />
+        <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
       </Docs>
     </Member>
     <Member MemberName="GetObject">
@@ -1133,6 +1136,7 @@ ShowNumbers.exe
         <threadsafe>The <see cref="M:System.Resources.ResourceManager.GetObject(System.String,System.Globalization.CultureInfo)" /> method is thread safe.</threadsafe>
         <altmember cref="M:System.Resources.ResourceManager.GetStream(System.String,System.Globalization.CultureInfo)" />
         <altmember cref="T:System.Globalization.CultureInfo" />
+        <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
       </Docs>
     </Member>
     <Member MemberName="GetResourceFileName">
@@ -1183,6 +1187,7 @@ ShowNumbers.exe
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
         <altmember cref="T:System.Globalization.CultureInfo" />
+        <related type="Article" href="~/docs/standard/globalization-localization/index.md">Globalizing and localizing .NET applications</related>
       </Docs>
     </Member>
     <Member MemberName="GetResourceSet">
@@ -1304,6 +1309,7 @@ al /out:fr-FR\ShowNumbers.resources.dll /culture:fr-FR /embed:NumberResources.fr
           <paramref name="tryParents" /> is <see langword="true" />, no usable set of resources has been found, and there are no default culture resources.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
         <altmember cref="T:System.Globalization.CultureInfo" />
+        <related type="Article" href="~/docs/standard/globalization-localization/index.md">Globalizing and localizing .NET applications</related>
       </Docs>
     </Member>
     <Member MemberName="GetSatelliteContractVersion">
@@ -1625,6 +1631,8 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
         <threadsafe>The <see cref="M:System.Resources.ResourceManager.GetString(System.String)" /> method is thread safe.</threadsafe>
         <altmember cref="T:System.Globalization.CultureInfo" />
+        <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/eca16922-1c46-4f68-aefe-e7a12283641f">Retrieving Resources in Satellite Assemblies</related>
       </Docs>
     </Member>
     <Member MemberName="GetString">
@@ -1733,6 +1741,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
         <threadsafe>The <see cref="M:System.Resources.ResourceManager.GetString(System.String,System.Globalization.CultureInfo)" /> method is thread safe.</threadsafe>
         <altmember cref="T:System.Globalization.CultureInfo" />
+        <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
       </Docs>
     </Member>
     <Member MemberName="HeaderVersionNumber">
@@ -1867,6 +1876,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
           <para>This method completes all the work necessary to find a resource set, and can be recursive and reentrant. In other words, this method might load an assembly and trigger an <see cref="E:System.AppDomain.AssemblyLoad" /> event, which then calls back into a <see cref="T:System.Resources.ResourceManager" /> object that has not been completely initialized. To avoid taking extra locks, this method is not thread safe. The <see cref="M:System.Resources.ResourceManager.GetResourceSet(System.Globalization.CultureInfo,System.Boolean,System.Boolean)" />, <see cref="M:System.Resources.ResourceManager.GetString(System.String)" />, and <see cref="M:System.Resources.ResourceManager.GetObject(System.String)" /> methods do all the necessary synchronization.</para>
         </block>
         <altmember cref="T:System.Globalization.CultureInfo" />
+        <related type="Article" href="~/docs/standard/globalization-localization/index.md">Globalizing and localizing .NET applications</related>
       </Docs>
     </Member>
     <Member MemberName="MagicNumber">

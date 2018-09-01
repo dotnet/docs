@@ -1,4 +1,4 @@
-﻿<Type Name="HybridDictionary" FullName="System.Collections.Specialized.HybridDictionary">
+<Type Name="HybridDictionary" FullName="System.Collections.Specialized.HybridDictionary">
   <TypeSignature Language="C#" Value="public class HybridDictionary : System.Collections.IDictionary" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit HybridDictionary extends System.Object implements class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.HybridDictionary" />
@@ -79,6 +79,7 @@
     <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
     <altmember cref="M:System.Object.GetHashCode" />
     <altmember cref="M:System.Object.Equals(System.Object)" />
+    <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -144,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -192,6 +194,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -246,6 +249,7 @@
         </remarks>
         <altmember cref="T:System.Collections.IComparer" />
         <altmember cref="M:System.Object.Equals(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -293,6 +297,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -486,6 +491,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Collections.IDictionary" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -911,6 +917,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Collections.Specialized.HybridDictionary.Add(System.Object,System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -1034,6 +1041,7 @@
           <paramref name="key" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Collections.Specialized.HybridDictionary.Add(System.Object,System.Object)" />
         <altmember cref="M:System.Collections.IDictionary.Remove(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">

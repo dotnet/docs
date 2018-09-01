@@ -1,4 +1,4 @@
-﻿<Type Name="DesignerSerializationVisibilityAttribute" FullName="System.ComponentModel.DesignerSerializationVisibilityAttribute">
+<Type Name="DesignerSerializationVisibilityAttribute" FullName="System.ComponentModel.DesignerSerializationVisibilityAttribute">
   <TypeSignature Language="C#" Value="public sealed class DesignerSerializationVisibilityAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerSerializationVisibilityAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" />
@@ -68,6 +68,7 @@
     <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
     <altmember cref="T:System.ComponentModel.AttributeCollection" />
     <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
+    <related type="Article" href="http://msdn.microsoft.com/library/7829fcdd-8205-405f-8231-a1282a9835c9">How to: Serialize Collections of Standard Types with the DesignerSerializationVisibilityAttribute</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

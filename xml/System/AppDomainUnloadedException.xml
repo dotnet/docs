@@ -1,4 +1,4 @@
-﻿<Type Name="AppDomainUnloadedException" FullName="System.AppDomainUnloadedException">
+<Type Name="AppDomainUnloadedException" FullName="System.AppDomainUnloadedException">
   <TypeSignature Language="C#" Value="public class AppDomainUnloadedException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit AppDomainUnloadedException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.AppDomainUnloadedException" />
@@ -77,6 +77,7 @@
     </remarks>
     <altmember cref="T:System.AppDomain" />
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -224,6 +225,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -276,6 +278,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="ResourceWriter" FullName="System.Resources.ResourceWriter">
+<Type Name="ResourceWriter" FullName="System.Resources.ResourceWriter">
   <TypeSignature Language="C#" Value="public sealed class ResourceWriter : System.Resources.IResourceWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResourceWriter extends System.Object implements class System.IDisposable, class System.Resources.IResourceWriter" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResourceWriter" />
@@ -68,6 +68,8 @@
     </remarks>
     <altmember cref="T:System.Resources.IResourceWriter" />
     <altmember cref="T:System.IDisposable" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Desktop Apps</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -126,6 +128,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="stream" /> parameter is not writable.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="stream" /> parameter is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/index.md">Globalizing and localizing .NET applications</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -176,6 +179,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="fileName" /> parameter is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/index.md">Globalizing and localizing .NET applications</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AddResource">
@@ -248,6 +252,7 @@
           <paramref name="name" /> (or a name that varies only by capitalization) has already been added to this <see cref="T:System.Resources.ResourceWriter" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Resources.ResourceWriter" /> has been closed and its hash table is unavailable.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
       </Docs>
     </Member>
     <Member MemberName="AddResource">
@@ -310,6 +315,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> or <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Resources.ResourceWriter" /> has been closed.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
       </Docs>
     </Member>
     <Member MemberName="AddResource">
@@ -375,6 +381,7 @@
           <paramref name="name" /> (or a name that varies only by capitalization) has already been added to this <see cref="T:System.Resources.ResourceWriter" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Resources.ResourceWriter" /> has been closed and its hash table is unavailable.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
       </Docs>
     </Member>
     <Member MemberName="AddResource">
@@ -440,6 +447,7 @@
           <paramref name="name" /> (or a name that varies only by capitalization) has already been added to this ResourceWriter.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Resources.ResourceWriter" /> has been closed and its hash table is unavailable.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
       </Docs>
     </Member>
     <Member MemberName="AddResource">
@@ -505,6 +513,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> or <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Resources.ResourceWriter" /> has been closed.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
       </Docs>
     </Member>
     <Member MemberName="AddResourceData">

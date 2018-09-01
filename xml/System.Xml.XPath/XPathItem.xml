@@ -1,4 +1,4 @@
-﻿<Type Name="XPathItem" FullName="System.Xml.XPath.XPathItem">
+<Type Name="XPathItem" FullName="System.Xml.XPath.XPathItem">
   <TypeSignature Language="C#" Value="public abstract class XPathItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XPathItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XPathItem" />
@@ -184,6 +184,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Xml.XPath.XPathItem.Value" />
+        <related type="Article" href="http://msdn.microsoft.com/library/63570538-06e3-4401-ad4d-ac50be90c7bf">Type Support in the System.Xml Classes</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -284,6 +285,7 @@
         <exception cref="T:System.FormatException">The item's value is not in the correct format for the target type.</exception>
         <exception cref="T:System.InvalidCastException">The attempted cast is not valid.</exception>
         <exception cref="T:System.OverflowException">The attempted cast resulted in an overflow.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/63570538-06e3-4401-ad4d-ac50be90c7bf">Type Support in the System.Xml Classes</related>
       </Docs>
     </Member>
     <Member MemberName="ValueAs">
@@ -341,6 +343,7 @@
         <exception cref="T:System.InvalidCastException">The attempted cast is not valid.</exception>
         <exception cref="T:System.OverflowException">The attempted cast resulted in an overflow.</exception>
         <altmember cref="T:System.Xml.IXmlNamespaceResolver" />
+        <related type="Article" href="http://msdn.microsoft.com/library/63570538-06e3-4401-ad4d-ac50be90c7bf">Type Support in the System.Xml Classes</related>
       </Docs>
     </Member>
     <Member MemberName="ValueAsBoolean">
@@ -388,6 +391,7 @@
         </remarks>
         <exception cref="T:System.FormatException">The item's value is not in the correct format for the <see cref="T:System.Boolean" /> type.</exception>
         <exception cref="T:System.InvalidCastException">The attempted cast to <see cref="T:System.Boolean" /> is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/63570538-06e3-4401-ad4d-ac50be90c7bf">Type Support in the System.Xml Classes</related>
       </Docs>
     </Member>
     <Member MemberName="ValueAsDateTime">
@@ -435,6 +439,7 @@
         </remarks>
         <exception cref="T:System.FormatException">The item's value is not in the correct format for the <see cref="T:System.DateTime" /> type.</exception>
         <exception cref="T:System.InvalidCastException">The attempted cast to <see cref="T:System.DateTime" /> is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/63570538-06e3-4401-ad4d-ac50be90c7bf">Type Support in the System.Xml Classes</related>
       </Docs>
     </Member>
     <Member MemberName="ValueAsDouble">
@@ -483,6 +488,7 @@
         <exception cref="T:System.FormatException">The item's value is not in the correct format for the <see cref="T:System.Double" /> type.</exception>
         <exception cref="T:System.InvalidCastException">The attempted cast to <see cref="T:System.Double" /> is not valid.</exception>
         <exception cref="T:System.OverflowException">The attempted cast resulted in an overflow.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/63570538-06e3-4401-ad4d-ac50be90c7bf">Type Support in the System.Xml Classes</related>
       </Docs>
     </Member>
     <Member MemberName="ValueAsInt">
@@ -531,6 +537,7 @@
         <exception cref="T:System.FormatException">The item's value is not in the correct format for the <see cref="T:System.Int32" /> type.</exception>
         <exception cref="T:System.InvalidCastException">The attempted cast to <see cref="T:System.Int32" /> is not valid.</exception>
         <exception cref="T:System.OverflowException">The attempted cast resulted in an overflow.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/63570538-06e3-4401-ad4d-ac50be90c7bf">Type Support in the System.Xml Classes</related>
       </Docs>
     </Member>
     <Member MemberName="ValueAsLong">
@@ -579,6 +586,7 @@
         <exception cref="T:System.FormatException">The item's value is not in the correct format for the <see cref="T:System.Int64" /> type.</exception>
         <exception cref="T:System.InvalidCastException">The attempted cast to <see cref="T:System.Int64" /> is not valid.</exception>
         <exception cref="T:System.OverflowException">The attempted cast resulted in an overflow.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/63570538-06e3-4401-ad4d-ac50be90c7bf">Type Support in the System.Xml Classes</related>
       </Docs>
     </Member>
     <Member MemberName="ValueType">
@@ -630,6 +638,7 @@
           <para>All implementers must provide a <see cref="P:System.Xml.XPath.XPathItem.ValueType" /> property for every item, even if it is only <see cref="T:System.String" />.</para>
         </block>
         <altmember cref="P:System.Xml.XPath.XPathItem.TypedValue" />
+        <related type="Article" href="http://msdn.microsoft.com/library/63570538-06e3-4401-ad4d-ac50be90c7bf">Type Support in the System.Xml Classes</related>
       </Docs>
     </Member>
     <Member MemberName="XmlType">

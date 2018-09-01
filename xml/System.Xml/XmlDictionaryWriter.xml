@@ -1,4 +1,4 @@
-﻿<Type Name="XmlDictionaryWriter" FullName="System.Xml.XmlDictionaryWriter">
+<Type Name="XmlDictionaryWriter" FullName="System.Xml.XmlDictionaryWriter">
   <TypeSignature Language="C#" Value="public abstract class XmlDictionaryWriter : System.Xml.XmlWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlDictionaryWriter extends System.Xml.XmlWriter" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlDictionaryWriter" />
@@ -1828,6 +1828,7 @@ binarywriter.WriteEndAttribute();
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteElementString">
@@ -2569,6 +2570,7 @@ binarywriter.WriteEndAttribute();
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteXmlAttribute">

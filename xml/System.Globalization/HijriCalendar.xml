@@ -1,4 +1,4 @@
-﻿<Type Name="HijriCalendar" FullName="System.Globalization.HijriCalendar">
+<Type Name="HijriCalendar" FullName="System.Globalization.HijriCalendar">
   <TypeSignature Language="C#" Value="public class HijriCalendar : System.Globalization.Calendar" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit HijriCalendar extends System.Globalization.Calendar" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.HijriCalendar" />
@@ -81,6 +81,9 @@
     <altmember cref="P:System.Globalization.CultureInfo.Calendar" />
     <altmember cref="P:System.Globalization.CultureInfo.OptionalCalendars" />
     <altmember cref="T:System.Globalization.UmAlQuraCalendar" />
+    <related type="Article" href="~/docs/standard/datetime/working-with-calendars.md">Working with Calendars</related>
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Calendar-3360a84a">Sample: Calendar Week Range Utility</related>
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/vstudio/This-is-a-desktop-program-cd99bfd4">Sample: Viewing the Hijri Date for Arabian countries in 3D</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

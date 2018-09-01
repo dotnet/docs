@@ -1,4 +1,4 @@
-﻿<Type Name="ClaimsPrincipalPermissionAttribute" FullName="System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute">
+<Type Name="ClaimsPrincipalPermissionAttribute" FullName="System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class ClaimsPrincipalPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClaimsPrincipalPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute" />
@@ -67,6 +67,7 @@
     <altmember cref="T:System.IdentityModel.Services.ClaimsPrincipalPermission" />
     <altmember cref="P:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration" />
     <altmember cref="T:System.Security.Claims.ClaimsAuthorizationManager" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8b14054c-6d07-46ab-ab58-03f14beac0f2">&lt;federationConfiguration&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

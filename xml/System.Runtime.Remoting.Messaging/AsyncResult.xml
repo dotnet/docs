@@ -1,4 +1,4 @@
-﻿<Type Name="AsyncResult" FullName="System.Runtime.Remoting.Messaging.AsyncResult">
+<Type Name="AsyncResult" FullName="System.Runtime.Remoting.Messaging.AsyncResult">
   <TypeSignature Language="C#" Value="public class AsyncResult : IAsyncResult, System.Runtime.Remoting.Messaging.IMessageSink" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi beforefieldinit AsyncResult extends System.Object implements class System.IAsyncResult, class System.Runtime.Remoting.Messaging.IMessageSink" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.AsyncResult" />
@@ -56,6 +56,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/asynchronous-programming-patterns/asynchronous-programming-using-delegates.md">Asynchronous Programming Using Delegates</related>
   </Docs>
   <Members>
     <Member MemberName="AsyncDelegate">

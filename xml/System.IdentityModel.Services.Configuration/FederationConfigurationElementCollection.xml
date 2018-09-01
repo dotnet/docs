@@ -1,4 +1,4 @@
-﻿<Type Name="FederationConfigurationElementCollection" FullName="System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection">
+<Type Name="FederationConfigurationElementCollection" FullName="System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection">
   <TypeSignature Language="C#" Value="public sealed class FederationConfigurationElementCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FederationConfigurationElementCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection" />
@@ -21,6 +21,7 @@
   <Docs>
     <summary>Contains a collection of all of the <see langword="&lt;federationConfiguration&gt;" /> elements that are specified in the configuration file. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/8b14054c-6d07-46ab-ab58-03f14beac0f2">&lt;federationConfiguration&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -119,6 +120,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">No element with the specified name was found.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b14054c-6d07-46ab-ab58-03f14beac0f2">&lt;federationConfiguration&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="GetElementKey">

@@ -1,4 +1,4 @@
-﻿<Type Name="LoadItemsEventArgs" FullName="System.Web.UI.MobileControls.LoadItemsEventArgs">
+<Type Name="LoadItemsEventArgs" FullName="System.Web.UI.MobileControls.LoadItemsEventArgs">
   <TypeSignature Language="C#" Value="public class LoadItemsEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LoadItemsEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.LoadItemsEventArgs" />
@@ -42,6 +42,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <related type="Article" href="https://msdn.microsoft.com/library/78F2786D-0B5B-4760-9616-5027357713C2">Pagination Support</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/b4f4c4bc-226b-46ec-ae46-00497a32f4f2">Pagination</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,6 +76,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/78F2786D-0B5B-4760-9616-5027357713C2">Pagination Support</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b4f4c4bc-226b-46ec-ae46-00497a32f4f2">Pagination</related>
       </Docs>
     </Member>
     <Member MemberName="ItemCount">
@@ -120,6 +124,8 @@
         <summary>Gets the index of the first item to be loaded by the invoked event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The index of the first item to be loaded by the invoked event.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/78F2786D-0B5B-4760-9616-5027357713C2">Pagination Support</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b4f4c4bc-226b-46ec-ae46-00497a32f4f2">Pagination</related>
       </Docs>
     </Member>
   </Members>

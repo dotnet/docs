@@ -1,4 +1,4 @@
-﻿<Type Name="CharKeyFrameCollection" FullName="System.Windows.Media.Animation.CharKeyFrameCollection">
+<Type Name="CharKeyFrameCollection" FullName="System.Windows.Media.Animation.CharKeyFrameCollection">
   <TypeSignature Language="C#" Value="public class CharKeyFrameCollection : System.Windows.Freezable, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CharKeyFrameCollection extends System.Windows.Freezable implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.CharKeyFrameCollection" />
@@ -46,6 +46,7 @@
     </remarks>
     <altmember cref="T:System.Windows.Media.Animation.CharAnimationUsingKeyFrames" />
     <altmember cref="T:System.Windows.Media.Animation.CharKeyFrame" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160012">KeyFrame Animation Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

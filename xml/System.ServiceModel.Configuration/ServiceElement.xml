@@ -1,4 +1,4 @@
-﻿<Type Name="ServiceElement" FullName="System.ServiceModel.Configuration.ServiceElement">
+<Type Name="ServiceElement" FullName="System.ServiceModel.Configuration.ServiceElement">
   <TypeSignature Language="C#" Value="public sealed class ServiceElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceElement" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents an XML element that contains the settings for a Windows Communication Foundation (WCF) service, as well as endpoints that expose the service. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/13123dd6-c4a9-4a04-a984-df184b851788">&lt;service&gt;</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

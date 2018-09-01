@@ -1,4 +1,4 @@
-﻿<Type Name="ErrorFormatterPage" FullName="System.Web.UI.MobileControls.ErrorFormatterPage">
+<Type Name="ErrorFormatterPage" FullName="System.Web.UI.MobileControls.ErrorFormatterPage">
   <TypeSignature Language="C#" Value="public class ErrorFormatterPage : System.Web.UI.MobileControls.MobilePage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ErrorFormatterPage extends System.Web.UI.MobileControls.MobilePage" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ErrorFormatterPage" />
@@ -34,6 +34,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/f38yc3w5(v=vs.85)">How to: Work with Emulators and Browsers</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,6 +86,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Mobile.MobileErrorInfo" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/f38yc3w5(v=vs.85)">How to: Work with Emulators and Browsers</related>
       </Docs>
     </Member>
     <Member MemberName="InitContent">
@@ -116,6 +120,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/f38yc3w5(v=vs.85)">How to: Work with Emulators and Browsers</related>
       </Docs>
     </Member>
     <Member MemberName="LoadPageStateFromPersistenceMedium">
@@ -174,6 +180,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">there is no exception stored in the <see cref="T:System.Web.HttpContext" />.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SavePageStateToPersistenceMedium">

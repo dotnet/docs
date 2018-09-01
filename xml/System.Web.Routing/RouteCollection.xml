@@ -1,4 +1,4 @@
-﻿<Type Name="RouteCollection" FullName="System.Web.Routing.RouteCollection">
+<Type Name="RouteCollection" FullName="System.Web.Routing.RouteCollection">
   <TypeSignature Language="C#" Value="public class RouteCollection : System.Collections.ObjectModel.Collection&lt;System.Web.Routing.RouteBase&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RouteCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Web.Routing.RouteBase&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RouteCollection" />
@@ -47,6 +47,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -56,6 +57,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteCollection" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -77,6 +79,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -101,6 +104,7 @@
         <param name="virtualPathProvider">A provider for retrieving resources from a virtual file system.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteCollection" /> class by using the specified virtual path provider.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -156,6 +160,7 @@
           <paramref name="item" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is already used in the collection.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="AppendTrailingSlash">
@@ -210,6 +215,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetReadLock">
@@ -260,6 +266,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetRouteData">
@@ -292,6 +299,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.HttpContextBase.Request" /> property of the object in the <paramref name="context" /> parameter is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetVirtualPath">
@@ -301,6 +309,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Returns information about the URL path that is associated with the route.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetVirtualPath">
@@ -331,6 +340,7 @@
         <summary>Returns information about the URL path that is associated with the route, given the specified context and parameter values.</summary>
         <returns>An object that contains information about the URL path that is associated with the route.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualPath">
@@ -364,6 +374,7 @@
         <returns>An object that contains information about the URL path that is associated with the route.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">No route could be found that has the name specified in the <paramref name="name" /> parameter.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetWriteLock">
@@ -406,6 +417,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Ignore">
@@ -425,6 +437,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Ignore">
@@ -471,6 +484,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="Ignore">
@@ -522,6 +536,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="url" /> parameter is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
@@ -565,6 +580,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
           <paramref name="item" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="item" /> is already in the collection.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -601,6 +617,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="LowercaseUrls">
@@ -655,6 +672,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="MapPageRoute">
@@ -704,6 +722,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="MapPageRoute">
@@ -755,6 +774,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="MapPageRoute">
@@ -808,6 +828,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="MapPageRoute">
@@ -863,6 +884,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="MapPageRoute">
@@ -916,6 +938,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="routeUrl" /> parameter is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveItem">
@@ -951,6 +974,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RouteExistingFiles">
@@ -992,6 +1016,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -1035,6 +1060,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
           <paramref name="item" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="item" /> is already in the collection.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
   </Members>

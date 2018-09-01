@@ -1,4 +1,4 @@
-﻿<Type Name="EventTask" FullName="System.Diagnostics.Eventing.Reader.EventTask">
+<Type Name="EventTask" FullName="System.Diagnostics.Eventing.Reader.EventTask">
   <TypeSignature Language="C#" Value="public sealed class EventTask" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventTask extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventTask" />
@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
   </Docs>
   <Members>
     <Member MemberName="DisplayName">
@@ -46,6 +48,8 @@
         <summary>Gets the localized name for the event task.</summary>
         <value>Returns a string that contains the localized name for the event task.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="EventGuid">
@@ -68,6 +72,8 @@
         <summary>Gets the event globally unique identifier (GUID) associated with the task.</summary>
         <value>Returns a GUID value.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -90,6 +96,8 @@
         <summary>Gets the non-localized name of the event task.</summary>
         <value>Returns a string that contains the non-localized name of the event task.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -117,6 +125,8 @@
         <summary>Gets the numeric value associated with the task.</summary>
         <value>Returns an integer value.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
   </Members>

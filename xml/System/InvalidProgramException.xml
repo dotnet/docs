@@ -1,4 +1,4 @@
-﻿<Type Name="InvalidProgramException" FullName="System.InvalidProgramException">
+<Type Name="InvalidProgramException" FullName="System.InvalidProgramException">
   <TypeSignature Language="C#" Value="public sealed class InvalidProgramException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit InvalidProgramException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.InvalidProgramException" />
@@ -51,6 +51,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -210,6 +211,7 @@
         <altmember cref="T:System.Exception" />
         <altmember cref="P:System.Exception.InnerException" />
         <altmember cref="P:System.Exception.Message" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and throwing exceptions in .NET</related>
       </Docs>
     </Member>
   </Members>

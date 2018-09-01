@@ -1,4 +1,4 @@
-﻿<Type Name="SendMailErrorEventHandler" FullName="System.Web.UI.WebControls.SendMailErrorEventHandler">
+<Type Name="SendMailErrorEventHandler" FullName="System.Web.UI.WebControls.SendMailErrorEventHandler">
   <TypeSignature Language="C#" Value="public delegate void SendMailErrorEventHandler(object sender, SendMailErrorEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SendMailErrorEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SendMailErrorEventHandler" />
@@ -62,5 +62,11 @@
     <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendMailError" />
     <altmember cref="T:System.Net.Mail.MailMessage" />
     <altmember cref="T:System.Web.Mail.SmtpMail" />
+    <related type="Article" href="http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
+    <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md">smtp Element (Network Settings)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/448f7802-0aa8-4304-abf7-82e138877dc8">Web Site Administration Tool Application Tab</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/d85075bc-9c1a-4453-8a0c-539b10853c9c">Securing Login Controls</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad">Basic Security Practices for Web Applications</related>
   </Docs>
 </Type>

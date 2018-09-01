@@ -1,4 +1,4 @@
-﻿<Type Name="SequenceActivity" FullName="System.Workflow.Activities.SequenceActivity">
+<Type Name="SequenceActivity" FullName="System.Workflow.Activities.SequenceActivity">
   <TypeSignature Language="C#" Value="public class SequenceActivity : System.Workflow.ComponentModel.CompositeActivity, System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SequenceActivity extends System.Workflow.ComponentModel.CompositeActivity implements class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.SequenceActivity" />
@@ -58,6 +58,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735795(v=vs.90)">Using the Sequence Activity</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -67,6 +68,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SequenceActivity" /> class.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735795(v=vs.90)">Using the Sequence Activity</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -95,6 +97,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735795(v=vs.90)">Using the Sequence Activity</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -117,6 +120,7 @@
         <param name="name">The user-defined name of the activity.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SequenceActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735795(v=vs.90)">Using the Sequence Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -143,6 +147,7 @@
         <summary>Cancels the execution of the activity.</summary>
         <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of the activity after canceling the execution.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735795(v=vs.90)">Using the Sequence Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -169,6 +174,7 @@
         <summary>Executes the activity.</summary>
         <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of the activity after executing the activity.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735795(v=vs.90)">Using the Sequence Activity</related>
       </Docs>
     </Member>
     <Member MemberName="HandleFault">
@@ -250,6 +256,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="executionContext" /> is a null reference (Nothing in Visual Basic).</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735795(v=vs.90)">Using the Sequence Activity</related>
       </Docs>
     </Member>
     <Member MemberName="OnWorkflowChangesCompleted">

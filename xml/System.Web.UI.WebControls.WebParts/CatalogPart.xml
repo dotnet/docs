@@ -1,4 +1,4 @@
-﻿<Type Name="CatalogPart" FullName="System.Web.UI.WebControls.WebParts.CatalogPart">
+<Type Name="CatalogPart" FullName="System.Web.UI.WebControls.WebParts.CatalogPart">
   <TypeSignature Language="C#" Value="public abstract class CatalogPart : System.Web.UI.WebControls.WebParts.Part" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CatalogPart extends System.Web.UI.WebControls.WebParts.Part" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.CatalogPart" />
@@ -106,6 +106,9 @@
       <para>Because the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> class is abstract, you cannot use it directly on a Web page. The Web Parts control set provides three <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls (listed in the table in the Remarks section of this topic) that derive from the base class and that can be used on Web Parts pages. These controls should provide most of the features needed to create catalogs of Web server controls. However, you might have specialized needs that would require developing a custom <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> control. For example, you can create a special type of <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> control that makes server controls available through a Web service, or directly from a database. To do this, you must inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> class. You must also override the abstract <see cref="M:System.Web.UI.WebControls.WebParts.CatalogPart.GetAvailableWebPartDescriptions" /> and <see cref="M:System.Web.UI.WebControls.WebParts.CatalogPart.GetWebPart(System.Web.UI.WebControls.WebParts.WebPartDescription)" /> methods to provide an implementation that returns the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> or other server controls, and their descriptions. You will also need methods to load the various server controls from your database or Web service.</para>
     </block>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" />
+    <related type="Article" href="http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08">Walkthrough: Developing and Using a Custom Server Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0">Walkthrough: Changing Display Modes on a Web Parts Page</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -129,6 +132,7 @@
       <Docs>
         <summary>Initializes the class for use by an inherited class instance. This constructor can only be called by an inherited class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayTitle">
@@ -181,6 +185,7 @@
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorPart.DisplayTitle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetAvailableWebPartDescriptions">
@@ -216,6 +221,7 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.WebControls.WebParts.CatalogPart.GetAvailableWebPartDescriptions" /> method is abstract, so it must be implemented by derived <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls. This method is called by the zone that contains a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> control, and by an associated <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartChrome" /> object when the contents of a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> zone are rendered.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignModeState">
@@ -284,6 +290,7 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.WebControls.WebParts.CatalogPart.GetWebPart(System.Web.UI.WebControls.WebParts.WebPartDescription)" /> method is abstract, so it must be implemented by derived <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls. This method is called by the zone that contains a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> control, by an associated <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartChrome" /> object, and by the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> object on a Web page.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -320,6 +327,7 @@
         <block subset="none" type="overrides">
           <para>This method can optionally be overridden in a derived class.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SetDesignModeState">
@@ -381,6 +389,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Zone">
@@ -417,6 +426,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebZone" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

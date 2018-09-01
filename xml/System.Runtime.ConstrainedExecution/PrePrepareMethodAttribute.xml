@@ -1,4 +1,4 @@
-﻿<Type Name="PrePrepareMethodAttribute" FullName="System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute">
+<Type Name="PrePrepareMethodAttribute" FullName="System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute">
   <TypeSignature Language="C#" Value="public sealed class PrePrepareMethodAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrePrepareMethodAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute" />
@@ -40,6 +40,8 @@
  ]]></format>
     </remarks>
     <altmember cref="M:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod(System.RuntimeMethodHandle)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/99354547-39c1-4b0b-8553-938e8f8d1808">Constrained Execution Regions</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/cf624c1f-c160-46a1-bb2b-213587688da7">Reliability Best Practices</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

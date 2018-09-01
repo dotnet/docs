@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridColumnCollectionEditor" FullName="System.Web.UI.Design.WebControls.DataGridColumnCollectionEditor">
+<Type Name="DataGridColumnCollectionEditor" FullName="System.Web.UI.Design.WebControls.DataGridColumnCollectionEditor">
   <TypeSignature Language="C#" Value="public class DataGridColumnCollectionEditor : System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridColumnCollectionEditor extends System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.DataGridColumnCollectionEditor" />
@@ -29,6 +29,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <related type="Article" href="http://msdn.microsoft.com/library/f068b4ea-6e8c-4c0b-aefd-188b337240da">User Interface Type Editors Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +55,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.DataGridColumnCollectionEditor" /> class.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f068b4ea-6e8c-4c0b-aefd-188b337240da">User Interface Type Editors Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EditValue">
@@ -88,6 +90,7 @@
         <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
         <altmember cref="T:System.IServiceProvider" />
         <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f068b4ea-6e8c-4c0b-aefd-188b337240da">User Interface Type Editors Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetEditStyle">
@@ -124,6 +127,7 @@
         </remarks>
         <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
         <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f068b4ea-6e8c-4c0b-aefd-188b337240da">User Interface Type Editors Overview</related>
       </Docs>
     </Member>
   </Members>

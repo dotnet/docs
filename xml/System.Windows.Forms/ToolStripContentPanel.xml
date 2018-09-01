@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripContentPanel" FullName="System.Windows.Forms.ToolStripContentPanel">
+<Type Name="ToolStripContentPanel" FullName="System.Windows.Forms.ToolStripContentPanel">
   <TypeSignature Language="C#" Value="public class ToolStripContentPanel : System.Windows.Forms.Panel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripContentPanel extends System.Windows.Forms.Panel" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripContentPanel" />
@@ -63,6 +63,7 @@
     </remarks>
     <altmember cref="T:System.Windows.Forms.ToolStripContainer" />
     <altmember cref="T:System.Windows.Forms.ToolStrip" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e5ef455a-e049-429c-8005-30c93132fb79">ToolStrip Control (Windows Forms)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

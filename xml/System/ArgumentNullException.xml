@@ -60,6 +60,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -223,6 +224,7 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for providing serialization services. Associated enumeration:   <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" /> Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /></permission>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

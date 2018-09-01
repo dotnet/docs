@@ -1,4 +1,4 @@
-﻿<Type Name="OutputCacheProfile" FullName="System.Web.Configuration.OutputCacheProfile">
+<Type Name="OutputCacheProfile" FullName="System.Web.Configuration.OutputCacheProfile">
   <TypeSignature Language="C#" Value="public sealed class OutputCacheProfile : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OutputCacheProfile extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.OutputCacheProfile" />
@@ -43,6 +43,9 @@
     </remarks>
     <altmember cref="T:System.Web.Configuration.OutputCacheProfileCollection" />
     <altmember cref="T:System.Web.Caching.CacheDependency" />
+    <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/51149563-a347-4b2b-bdc2-57a317e12487">How to: Set a Page's Cacheability Declaratively</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/659d419e-9418-46cc-90ce-646a785b24e2">How to: Set a Page's Cacheability Programmatically</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -111,6 +114,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.HttpCachePolicy" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -154,6 +158,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -197,6 +202,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.OutputCacheLocation" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -448,6 +454,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/7f7d839a-c060-4d2a-9c4e-7fd1080ec0ad">Caching Multiple Versions of User Control Output</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/1bcaf2d0-0803-49be-a831-c0714a60e81c">How to: Cache Multiple Versions of a User Control, Based on Parameters</related>
       </Docs>
     </Member>
     <Member MemberName="VaryByCustom">
@@ -494,6 +502,9 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.HttpApplication.GetVaryByCustomString(System.Web.HttpContext,System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/7f7d839a-c060-4d2a-9c4e-7fd1080ec0ad">Caching Multiple Versions of User Control Output</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b6c73735-a3cd-4d19-ba4d-0431881b0db0">How to: Cache Versions of a Page, Based on Custom Strings</related>
       </Docs>
     </Member>
     <Member MemberName="VaryByHeader">
@@ -539,6 +550,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
       </Docs>
     </Member>
     <Member MemberName="VaryByParam">
@@ -588,6 +601,9 @@
         </remarks>
         <altmember cref="T:System.Web.HttpCacheVaryByParams" />
         <altmember cref="P:System.Web.HttpCachePolicy.VaryByParams" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/1bcaf2d0-0803-49be-a831-c0714a60e81c">How to: Cache Multiple Versions of a User Control, Based on Parameters</related>
       </Docs>
     </Member>
   </Members>

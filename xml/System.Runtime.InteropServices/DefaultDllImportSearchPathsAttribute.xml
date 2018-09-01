@@ -1,4 +1,4 @@
-﻿<Type Name="DefaultDllImportSearchPathsAttribute" FullName="System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute">
+<Type Name="DefaultDllImportSearchPathsAttribute" FullName="System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute">
   <TypeSignature Language="C#" Value="public sealed class DefaultDllImportSearchPathsAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DefaultDllImportSearchPathsAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute" />
@@ -59,6 +59,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.InteropServices.DllImportSearchPath" />
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=236091">LoadLibraryEx</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

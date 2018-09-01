@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripProgressBar" FullName="System.Windows.Forms.ToolStripProgressBar">
+<Type Name="ToolStripProgressBar" FullName="System.Windows.Forms.ToolStripProgressBar">
   <TypeSignature Language="C#" Value="public class ToolStripProgressBar : System.Windows.Forms.ToolStripControlHost" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripProgressBar extends System.Windows.Forms.ToolStripControlHost" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripProgressBar" />
@@ -50,6 +50,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/e5ef455a-e049-429c-8005-30c93132fb79">ToolStrip Control (Windows Forms)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

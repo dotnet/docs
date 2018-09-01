@@ -1,4 +1,4 @@
-﻿<Type Name="XmlNode" FullName="System.Xml.XmlNode">
+<Type Name="XmlNode" FullName="System.Xml.XmlNode">
   <TypeSignature Language="C#" Value="public abstract class XmlNode : ICloneable, System.Collections.IEnumerable, System.Xml.XPath.IXPathNavigable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlNode extends System.Object implements class System.Collections.IEnumerable, class System.ICloneable, class System.Xml.XPath.IXPathNavigable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlNode" />
@@ -58,6 +58,7 @@
  ]]></format>
     </remarks>
     <altmember cref="M:System.Xml.XmlNode.SelectNodes(System.String)" />
+    <related type="Article" href="~/docs/standard/data/xml/create-new-nodes-in-the-dom.md">[&lt;topic://cpconCreateNewNodesInDOM&gt;]</related>
   </Docs>
   <Members>
     <Member MemberName="AppendChild">
@@ -137,6 +138,7 @@ Display the modified XML...
           <para>When overriding <see langword="AppendChild" /> in a derived class, in order for events to be raised correctly, you must call the <see langword="AppendChild" /> method of the base class.</para>
         </block>
         <altmember cref="M:System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/891e54f5-54f6-4bb4-b624-9d1b6a1f1216">Inserting Nodes into an XML Document</related>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -1057,6 +1059,7 @@ d.</elem>
           <para>When overriding <see langword="InsertAfter" /> in a derived class, in order for events to be raised correctly, you must call the <see langword="InsertAfter" /> method of the base class.</para>
         </block>
         <altmember cref="M:System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/891e54f5-54f6-4bb4-b624-9d1b6a1f1216">Inserting Nodes into an XML Document</related>
       </Docs>
     </Member>
     <Member MemberName="InsertBefore">
@@ -1130,6 +1133,7 @@ d.</elem>
           <para>When overriding <see langword="InsertBefore" /> in a derived class, in order for events to be raised correctly, you must call the <see langword="InsertBefore" /> method of the base class.</para>
         </block>
         <altmember cref="M:System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/891e54f5-54f6-4bb4-b624-9d1b6a1f1216">Inserting Nodes into an XML Document</related>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -2078,6 +2082,7 @@ d.</elem>
           <para>When overriding <see langword="PrependChild" /> in a derived class, in order for events to be raised correctly, you must call the <see langword="PrependChild" /> method of the base class.</para>
         </block>
         <altmember cref="M:System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/891e54f5-54f6-4bb4-b624-9d1b6a1f1216">Inserting Nodes into an XML Document</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousSibling">
@@ -2427,6 +2432,8 @@ d.</elem>
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
+        <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="SelectNodes">
@@ -2512,6 +2519,8 @@ nodeList = root.SelectNodes("//book[contains(title,""'Emma'"")]")
         </remarks>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix. See [XPath Examples](http://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</exception>
         <altmember cref="M:System.Xml.XmlNode.SelectSingleNode(System.String)" />
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
+        <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
       </Docs>
     </Member>
     <Member MemberName="SelectNodes">
@@ -2618,6 +2627,8 @@ nodeList = root.SelectNodes("//ab:book[contains(ab:title,""'Emma'"")]", nsmgr)
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix which is not defined in the <see langword="XmlNamespaceManager" />.</exception>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
+        <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SelectSingleNode">
@@ -2652,6 +2663,8 @@ nodeList = root.SelectNodes("//ab:book[contains(ab:title,""'Emma'"")]", nsmgr)
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
+        <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="SelectSingleNode">
@@ -2735,6 +2748,8 @@ book = root.SelectSingleNode("descendant::book[title=""'Emma'""]")
         </remarks>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix.</exception>
         <altmember cref="M:System.Xml.XmlNode.SelectNodes(System.String)" />
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
+        <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
       </Docs>
     </Member>
     <Member MemberName="SelectSingleNode">
@@ -2839,6 +2854,8 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix which is not defined in the <see langword="XmlNamespaceManager" />.</exception>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
+        <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
       </Docs>
     </Member>
     <Member MemberName="Supports">

@@ -1,4 +1,4 @@
-﻿<Type Name="IPageAdapter" FullName="System.Web.UI.MobileControls.IPageAdapter">
+<Type Name="IPageAdapter" FullName="System.Web.UI.MobileControls.IPageAdapter">
   <TypeSignature Language="C#" Value="public interface IPageAdapter : System.Web.UI.MobileControls.IControlAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPageAdapter implements class System.Web.UI.MobileControls.IControlAdapter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.IPageAdapter" />
@@ -32,6 +32,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <related type="Article" href="https://msdn.microsoft.com/library/28893297-2c45-4c57-a2b3-9cdd5898f988">Mobile Text Writer Rendering Best Practices</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
   </Docs>
   <Members>
     <Member MemberName="CacheVaryByHeaders">
@@ -58,10 +60,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see Output Caching in [Mobile Text Writer Rendering Best Practices](http://msdn.microsoft.com/library/28893297-2c45-4c57-a2b3-9cdd5898f988).  
+ For more information, see Output Caching in [Mobile Text Writer Rendering Best Practices](https://msdn.microsoft.com/library/28893297-2c45-4c57-a2b3-9cdd5898f988).  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/28893297-2c45-4c57-a2b3-9cdd5898f988">Mobile Text Writer Rendering Best Practices</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="CookielessDataDictionary">
@@ -92,6 +96,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/28893297-2c45-4c57-a2b3-9cdd5898f988">Mobile Text Writer Rendering Best Practices</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="CreateTextWriter">
@@ -119,6 +125,8 @@
         <summary>Creates and returns a text writer suitable for the given adapters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A text writer suitable for the given adapters.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/28893297-2c45-4c57-a2b3-9cdd5898f988">Mobile Text Writer Rendering Best Practices</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="DeterminePostBackMode">
@@ -160,6 +168,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/28893297-2c45-4c57-a2b3-9cdd5898f988">Mobile Text Writer Rendering Best Practices</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="HandleError">
@@ -197,6 +207,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/28893297-2c45-4c57-a2b3-9cdd5898f988">Mobile Text Writer Rendering Best Practices</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="HandlePagePostBackEvent">
@@ -234,6 +246,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/28893297-2c45-4c57-a2b3-9cdd5898f988">Mobile Text Writer Rendering Best Practices</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="OptimumPageWeight">
@@ -257,6 +272,9 @@
         <summary>Returns a page weight appropriate for the target device. Used in form pagination. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The page weight appropriate for the target device.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/28893297-2c45-4c57-a2b3-9cdd5898f988">Mobile Text Writer Rendering Best Practices</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/78F2786D-0B5B-4760-9616-5027357713C2">Pagination Support</related>
       </Docs>
     </Member>
     <Member MemberName="Page">
@@ -280,6 +298,7 @@
         <summary>Gets or sets the page to which the adapter is attached. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The page to which the page adapter is attached.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="PersistCookielessData">
@@ -311,6 +330,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/28893297-2c45-4c57-a2b3-9cdd5898f988">Mobile Text Writer Rendering Best Practices</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
   </Members>

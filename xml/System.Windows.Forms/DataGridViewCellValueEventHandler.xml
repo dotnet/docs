@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewCellValueEventHandler" FullName="System.Windows.Forms.DataGridViewCellValueEventHandler">
+<Type Name="DataGridViewCellValueEventHandler" FullName="System.Windows.Forms.DataGridViewCellValueEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridViewCellValueEventHandler(object sender, DataGridViewCellValueEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewCellValueEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellValueEventHandler" />
@@ -48,5 +48,6 @@
     <altmember cref="E:System.Windows.Forms.DataGridView.CellValueNeeded" />
     <altmember cref="E:System.Windows.Forms.DataGridView.CellValuePushed" />
     <altmember cref="T:System.Windows.Forms.DataGridViewCellValueEventArgs" />
+    <related type="Article" href="http://msdn.microsoft.com/library/feae5d43-2848-4b1a-8ea7-77085dc415b5">Virtual Mode in the Windows Forms DataGridView Control</related>
   </Docs>
 </Type>

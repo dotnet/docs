@@ -1,4 +1,4 @@
-﻿<Type Name="MultiViewControlBuilder" FullName="System.Web.UI.WebControls.MultiViewControlBuilder">
+<Type Name="MultiViewControlBuilder" FullName="System.Web.UI.WebControls.MultiViewControlBuilder">
   <TypeSignature Language="C#" Value="public class MultiViewControlBuilder : System.Web.UI.ControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MultiViewControlBuilder extends System.Web.UI.ControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MultiViewControlBuilder" />
@@ -23,6 +23,8 @@
     <altmember cref="T:System.Web.UI.ControlBuilder" />
     <altmember cref="T:System.Web.UI.WebControls.MultiView" />
     <altmember cref="T:System.Web.UI.ControlBuilderAttribute" />
+    <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/732b0040-60a2-4dd1-91ee-81d3e094ab56">Metadata Attributes for Custom Server Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,6 +48,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.MultiViewControlBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/732b0040-60a2-4dd1-91ee-81d3e094ab56">Metadata Attributes for Custom Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="AppendSubBuilder">
@@ -79,6 +83,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.ControlBuilder" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/732b0040-60a2-4dd1-91ee-81d3e094ab56">Metadata Attributes for Custom Server Controls</related>
       </Docs>
     </Member>
   </Members>

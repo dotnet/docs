@@ -1,4 +1,4 @@
-﻿<Type Name="TagMapInfo" FullName="System.Web.Configuration.TagMapInfo">
+<Type Name="TagMapInfo" FullName="System.Web.Configuration.TagMapInfo">
   <TypeSignature Language="C#" Value="public sealed class TagMapInfo : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TagMapInfo extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TagMapInfo" />
@@ -95,6 +95,7 @@
         <altmember cref="P:System.Web.Configuration.TagMapInfo.TagType" />
         <altmember cref="P:System.Web.Configuration.TagMapInfo.MappedTagType" />
         <altmember cref="P:System.Type.AssemblyQualifiedName" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8f8c2c90-f15d-400e-87e7-a757e4f04d0e">Assembly Names</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -197,6 +198,7 @@
         <altmember cref="T:System.Web.Configuration.PagesSection" />
         <altmember cref="P:System.Web.Configuration.TagMapInfo.MappedTagType" />
         <altmember cref="P:System.Type.AssemblyQualifiedName" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8f8c2c90-f15d-400e-87e7-a757e4f04d0e">Assembly Names</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -302,6 +304,7 @@
         <altmember cref="T:System.Web.Configuration.PagesSection" />
         <altmember cref="P:System.Web.Configuration.TagMapInfo.MappedTagType" />
         <altmember cref="P:System.Type.AssemblyQualifiedName" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8f8c2c90-f15d-400e-87e7-a757e4f04d0e">Assembly Names</related>
       </Docs>
     </Member>
   </Members>

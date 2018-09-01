@@ -1,4 +1,4 @@
-﻿<Type Name="SqlClientMetaDataCollectionNames" FullName="System.Data.SqlClient.SqlClientMetaDataCollectionNames">
+<Type Name="SqlClientMetaDataCollectionNames" FullName="System.Data.SqlClient.SqlClientMetaDataCollectionNames">
   <TypeSignature Language="C#" Value="public static class SqlClientMetaDataCollectionNames" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SqlClientMetaDataCollectionNames extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlClientMetaDataCollectionNames" />
@@ -22,6 +22,8 @@
   <Docs>
     <summary>Provides a list of constants for use with the **GetSchema** method to retrieve metadata collections.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Columns">
@@ -48,6 +50,8 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Columns** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Databases">
@@ -74,6 +78,8 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Databases** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ForeignKeys">
@@ -100,6 +106,8 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **ForeignKeys** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IndexColumns">
@@ -126,6 +134,8 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **IndexColumns** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Indexes">
@@ -152,6 +162,8 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Indexes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -178,6 +190,8 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Parameters** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ProcedureColumns">
@@ -204,6 +218,8 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **ProcedureColumns** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Procedures">
@@ -230,6 +246,8 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Procedures** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Tables">
@@ -256,6 +274,8 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Tables** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UserDefinedTypes">
@@ -282,6 +302,8 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **UserDefinedTypes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Users">
@@ -308,6 +330,8 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Users** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ViewColumns">
@@ -334,6 +358,8 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **ViewColumns** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Views">
@@ -360,6 +386,8 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Views** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

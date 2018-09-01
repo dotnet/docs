@@ -1,4 +1,4 @@
-﻿<Type Name="HttpDigestClientElement" FullName="System.ServiceModel.Configuration.HttpDigestClientElement">
+<Type Name="HttpDigestClientElement" FullName="System.ServiceModel.Configuration.HttpDigestClientElement">
   <TypeSignature Language="C#" Value="public sealed class HttpDigestClientElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpDigestClientElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.HttpDigestClientElement" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents the current HTTP digest credential in the <see langword="clientCredential" /> element. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/3da4f276-dfd9-4247-8c07-01d83618727c">&lt;httpDigest&gt; element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

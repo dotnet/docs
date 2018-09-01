@@ -1,4 +1,4 @@
-﻿<Type Name="SqlTypeException" FullName="System.Data.SqlTypes.SqlTypeException">
+<Type Name="SqlTypeException" FullName="System.Data.SqlTypes.SqlTypeException">
   <TypeSignature Language="C#" Value="public class SqlTypeException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SqlTypeException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlTypeException" />
@@ -159,6 +159,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

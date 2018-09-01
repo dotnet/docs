@@ -1,4 +1,4 @@
-﻿<Type Name="ServiceTimeoutsElement" FullName="System.ServiceModel.Configuration.ServiceTimeoutsElement">
+<Type Name="ServiceTimeoutsElement" FullName="System.ServiceModel.Configuration.ServiceTimeoutsElement">
   <TypeSignature Language="C#" Value="public sealed class ServiceTimeoutsElement : System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceTimeoutsElement extends System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceTimeoutsElement" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents a configuration element that specifies the timeout for a service. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/ada536cf-97dc-4cd7-89ec-ed1466c1c557">&lt;serviceTimeOuts&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -81,7 +81,7 @@
  For a table showing which controls are required and which are optional, see <xref:System.Web.UI.WebControls.Login.LayoutTemplate%2A> property.  
   
 > [!NOTE]
->  If you are not familiar with the set of login controls available in ASP.NET, see [ASP.NET Login Controls Overview](http://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d) before continuing. For a list of other topics related to login controls and membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
+>  If you are not familiar with the set of login controls available in ASP.NET, see [ASP.NET Login Controls Overview](https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)) before continuing. For a list of other topics related to login controls and membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
   
 > [!IMPORTANT]
 >  Accepting user input is a potential security threat. Malicious users can send data that is intended to expose vulnerabilities or run programs that try generated passwords. To improve security when working with user input, you should use the validation features of your control and secure any data providers that are configured for your control. For more information, see [Securing Login Controls](http://msdn.microsoft.com/library/d85075bc-9c1a-4453-8a0c-539b10853c9c), [Basic Security Practices for Web Applications](http://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad), and [Securing Membership](http://msdn.microsoft.com/library/2dab2012-c278-426a-bb0d-93b260c428a7).  
@@ -238,6 +238,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.Security.Membership" />
+    <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to Membership</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -296,6 +298,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Authenticate">
@@ -345,6 +348,7 @@
         <altmember cref="T:System.Web.UI.WebControls.AuthenticateEventHandler" />
         <altmember cref="T:System.Web.UI.WebControls.AuthenticateEventArgs" />
         <altmember cref="M:System.Web.UI.WebControls.Login.OnAuthenticate(System.Web.UI.WebControls.AuthenticateEventArgs)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="BorderPadding">
@@ -380,6 +384,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.Login.BorderPadding" /> property is set to a value less than -1.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CheckBoxStyle">
@@ -469,6 +474,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Login.RememberMeSet" />
         <altmember cref="P:System.Web.UI.WebControls.Login.RememberMeText" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -498,6 +504,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateUserIconUrl">
@@ -537,6 +544,7 @@
         <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
         <altmember cref="P:System.Web.UI.WebControls.Login.CreateUserText" />
         <altmember cref="P:System.Web.UI.WebControls.Login.CreateUserUrl" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateUserText">
@@ -595,6 +603,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Login.CreateUserIconUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Login.CreateUserUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Login.HyperLinkStyle" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateUserUrl">
@@ -654,6 +663,7 @@
         <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
         <altmember cref="P:System.Web.UI.WebControls.Login.CreateUserIconUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Login.CreateUserText" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DestinationPageUrl">
@@ -714,6 +724,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayRememberMe">
@@ -768,6 +779,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Login.RememberMeSet" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FailureAction">
@@ -820,6 +832,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.UI.WebControls.LoginFailureAction" /> enumeration values.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FailureText">
@@ -872,6 +885,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Login.FailureTextStyle" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FailureTextStyle">
@@ -960,6 +974,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Login.FailureText" />
         <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HelpPageIconUrl">
@@ -998,6 +1013,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.WebControls.Login.HelpPageText" />
         <altmember cref="P:System.Web.UI.WebControls.Login.HelpPageUrl" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HelpPageText">
@@ -1052,6 +1068,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Login.HelpPageIconUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Login.HelpPageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Login.HyperLinkStyle" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HelpPageUrl">
@@ -1109,6 +1126,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Login.HelpPageIconUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Login.HelpPageText" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HyperLinkStyle">
@@ -1203,6 +1221,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Login.HelpPageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Login.PasswordRecoveryUrl" />
         <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="InstructionText">
@@ -1253,6 +1272,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Login.InstructionTextStyle" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="InstructionTextStyle">
@@ -1337,6 +1357,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LabelStyle">
@@ -1428,6 +1449,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Login.PasswordLabelText" />
         <altmember cref="P:System.Web.UI.WebControls.Login.UserNameLabelText" />
         <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LayoutTemplate">
@@ -1518,6 +1540,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1589,6 +1612,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoggingIn">
@@ -1631,6 +1655,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoginButtonCommandName">
@@ -1659,6 +1684,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoginButtonImageUrl">
@@ -1712,6 +1738,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoginButtonStyle">
@@ -1796,6 +1823,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoginButtonText">
@@ -1851,6 +1879,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoginButtonType">
@@ -1905,6 +1934,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.Login.LoginButtonType" /> property is not set to a valid <see cref="T:System.Web.UI.WebControls.ButtonType" /> enumeration value.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoginError">
@@ -1944,6 +1974,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.Login.OnLoginError(System.EventArgs)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="MembershipProvider">
@@ -1987,6 +2018,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnAuthenticate">
@@ -2034,6 +2066,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Login.OnAuthenticate(System.Web.UI.WebControls.AuthenticateEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Login.OnAuthenticate(System.Web.UI.WebControls.AuthenticateEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -2076,6 +2109,7 @@
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Login.OnBubbleEvent(System.Object,System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Login.OnBubbleEvent(System.Object,System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="M:System.Web.UI.Control.OnBubbleEvent(System.Object,System.EventArgs)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnLoggedIn">
@@ -2123,6 +2157,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Login.OnLoggedIn(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Login.OnLoggedIn(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnLoggingIn">
@@ -2178,6 +2213,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Login.OnLoggingIn(System.Web.UI.WebControls.LoginCancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Login.OnLoggingIn(System.Web.UI.WebControls.LoginCancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnLoginError">
@@ -2225,6 +2261,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Login.OnLoginError(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Login.OnLoginError(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -2265,6 +2302,7 @@
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Login.OnPreRender(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Login.OnPreRender(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -2308,6 +2346,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.Login.Orientation" /> property is not set to a valid <see cref="T:System.Web.UI.WebControls.Orientation" /> enumeration value.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Password">
@@ -2361,6 +2400,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordLabelText">
@@ -2409,6 +2449,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordRecoveryIconUrl">
@@ -2449,6 +2490,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Login.PasswordRecoveryText" />
         <altmember cref="P:System.Web.UI.WebControls.Login.PasswordRecoveryUrl" />
         <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordRecoveryText">
@@ -2505,6 +2547,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Login.PasswordRecoveryUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Login.HyperLinkStyle" />
         <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordRecoveryUrl">
@@ -2563,6 +2606,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Login.PasswordRecoveryUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Login.HyperLinkStyle" />
         <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordRequiredErrorMessage">
@@ -2617,6 +2661,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RememberMeSet">
@@ -2668,6 +2713,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Login.DisplayRememberMe" />
         <altmember cref="P:System.Web.UI.WebControls.Login.RememberMeText" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RememberMeText">
@@ -2706,6 +2752,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -2847,6 +2894,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b4332d67-e0a5-4f88-928b-5c84fb892b5e">Customizing Appearance and Behavior of the ASP.NET Login Controls</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f769d290-fd04-4084-85fc-4ea30dd2e8ae">ASP.NET Web Server Controls Templates</related>
       </Docs>
     </Member>
     <Member MemberName="TextBoxStyle">
@@ -2937,6 +2987,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Login.Password" />
         <altmember cref="P:System.Web.UI.WebControls.Login.UserName" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TextLayout">
@@ -2985,6 +3036,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.UI.WebControls.LoginTextLayout" /> enumeration values.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TitleText">
@@ -3035,6 +3087,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Login.TitleTextStyle" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TitleTextStyle">
@@ -3126,6 +3179,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Login.TitleText" />
         <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -3150,6 +3204,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.WebControls.Login.LoadViewState(System.Object)" />
         <altmember cref="M:System.Web.UI.WebControls.Login.SaveViewState" />
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -3192,6 +3247,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UserNameLabelText">
@@ -3240,6 +3296,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UserNameRequiredErrorMessage">
@@ -3294,6 +3351,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ValidatorTextStyle">
@@ -3358,6 +3416,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b4332d67-e0a5-4f88-928b-5c84fb892b5e">Customizing Appearance and Behavior of the ASP.NET Login Controls</related>
       </Docs>
     </Member>
     <Member MemberName="VisibleWhenLoggedIn">
@@ -3408,6 +3468,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
   </Members>

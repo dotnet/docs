@@ -1,4 +1,4 @@
-﻿<Type Name="Queue" FullName="System.Collections.Queue">
+<Type Name="Queue" FullName="System.Collections.Queue">
   <TypeSignature Language="C#" Value="public class Queue : ICloneable, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Queue extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Queue" />
@@ -449,6 +449,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">

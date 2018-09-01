@@ -1,4 +1,4 @@
-﻿<Type Name="ServicePoint" FullName="System.Net.ServicePoint">
+<Type Name="ServicePoint" FullName="System.Net.ServicePoint">
   <TypeSignature Language="C#" Value="public class ServicePoint" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServicePoint extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.ServicePoint" />
@@ -401,6 +401,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The connection limit is equal to or less than 0.</exception>
+        <related type="Article" href="~/docs/framework/network-programming/managing-connections.md">Managing Connections</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectionName">
@@ -455,6 +456,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/network-programming/connection-grouping.md">Connection Grouping</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentConnections">

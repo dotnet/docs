@@ -1,4 +1,4 @@
-﻿<Type Name="MediaScriptCommandEventArgs" FullName="System.Windows.Media.MediaScriptCommandEventArgs">
+<Type Name="MediaScriptCommandEventArgs" FullName="System.Windows.Media.MediaScriptCommandEventArgs">
   <TypeSignature Language="C#" Value="public sealed class MediaScriptCommandEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MediaScriptCommandEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.MediaScriptCommandEventArgs" />
@@ -17,6 +17,7 @@
   <Docs>
     <summary>Provides data for the <see cref="E:System.Windows.Controls.MediaElement.ScriptCommand" /> and <see cref="E:System.Windows.Media.MediaPlayer.ScriptCommand" /> events.</summary>
     <remarks>To be added.</remarks>
+    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?linkid=57417">IWMPEventsScriptCommand</related>
   </Docs>
   <Members>
     <Member MemberName="ParameterType">
@@ -44,6 +45,7 @@
         <summary>Gets the type of script command that was raised.</summary>
         <value>The type of script command.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?linkid=57417">IWMPEventsScriptCommand</related>
       </Docs>
     </Member>
     <Member MemberName="ParameterValue">
@@ -71,6 +73,7 @@
         <summary>Gets the arguments associated with the script command type.</summary>
         <value>The arguments associated with the script command type.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?linkid=57417">IWMPEventsScriptCommand</related>
       </Docs>
     </Member>
   </Members>

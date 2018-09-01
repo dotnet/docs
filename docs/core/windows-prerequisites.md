@@ -3,7 +3,7 @@ title: Prerequisites for .NET Core on Windows
 description: Learn what dependencies you need on your Windows machine to develop and run .NET Core applications.
 author: mairaw
 ms.author: mairaw
-ms.date: 08/20/2018
+ms.date: 08/31/2018
 ---
 # Prerequisites for .NET Core on Windows
 
@@ -118,11 +118,14 @@ To develop .NET Core 1.x apps in Visual Studio, [download and install Visual Stu
 > For more information about the project format changes, see [High-level overview of changes](./tools/cli-msbuild-architecture.md).
 ---
 
+<a name="vs-mapping"></a>
+
 > [!TIP]
 > To verify your Visual Studio 2017 version:
 >
 > * On the **Help** menu, choose **About Microsoft Visual Studio**.
 > * In the **About Microsoft Visual Studio** dialog, verify the version number.
+>   * For .NET Core 2.2 Preview 1 apps, Visual Studio 2017 version 15.9 (currently in Preview) or higher.
 >   * For .NET Core 2.1 apps, Visual Studio 2017 version 15.7 or higher.
 >   * For .NET Core 2.0 apps, Visual Studio 2017 version 15.3 or higher.
 >   * For .NET Core 1.x apps, Visual Studio 2017 version 15.0 or higher.

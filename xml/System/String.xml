@@ -137,11 +137,11 @@
 ## Strings and The Unicode Standard  
  Characters in a string are represented by UTF-16 encoded code units, which correspond to <xref:System.Char> values.  
   
- Each character in a string has an associated Unicode character category, which is represented in the .NET Framework by the <xref:System.Globalization.UnicodeCategory> enumeration. The category of a character or a surrogate pair can be determined by calling the <xref:System.Globalization.CharUnicodeInfo.GetUnicodeCategory%2A?displayProperty=nameWithType> method.  
+ Each character in a string has an associated Unicode character category, which is represented in .NET by the <xref:System.Globalization.UnicodeCategory> enumeration. The category of a character or a surrogate pair can be determined by calling the <xref:System.Globalization.CharUnicodeInfo.GetUnicodeCategory%2A?displayProperty=nameWithType> method.  
   
  .NET maintains its own table of characters and their corresponding categories, which ensures that a specific version of a .NET implementation running on different platforms returns identical character category information. The following table lists .NET versions and the versions of the Unicode Standard on which their character categories are based.  
   
-|.NET Framework version|Version of the Unicode Standard|  
+|.NET version|Version of the Unicode Standard|  
 |----------------------------|-------------------------------------|  
 |[!INCLUDE[net_v11_long](~/includes/net-v11-long-md.md)]|[The Unicode Standard, Version 4.0.0](https://www.unicode.org/versions/Unicode4.0.0/)|  
 |The .NET Framework 2.0|[The Unicode Standard, Version 5.0.0](https://www.unicode.org/versions/Unicode5.0.0)|  
@@ -155,9 +155,9 @@
 |[!INCLUDE[net_v462](~/includes/net-v462-md.md)]|[The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/)|  
 |.NET Core (all versions)|[The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/)|
   
- In addition, the .NET Framework supports string comparison and sorting based on the Unicode standard. In versions of the .NET Framework through the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the .NET Framework maintains its own table of string data. This is also true of versions of the .NET Framework starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on Windows 7. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on Window 8 and later versions of the Windows operating system, the runtime delegates string comparison and sorting operations to the operating system. The following table lists the versions of the .NET Framework and the versions of the Unicode Standard on which character comparison and sorting are based.  
+ In addition, .NET supports string comparison and sorting based on the Unicode standard. In versions of the .NET Framework through the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the .NET Framework maintains its own table of string data. This is also true of versions of the .NET Framework starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on Windows 7. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on Window 8 and later versions of the Windows operating system, the runtime delegates string comparison and sorting operations to the operating system. The following table lists the versions of .NET and the versions of the Unicode Standard on which character comparison and sorting are based.  
   
-|.NET Framework version|Version of the Unicode Standard|  
+|.NET version|Version of the Unicode Standard|  
 |----------------------------|-------------------------------------|  
 |[!INCLUDE[net_v11_long](~/includes/net-v11-long-md.md)]|[The Unicode Standard, Version 4.0.0](https://www.unicode.org/versions/Unicode4.0.0/)|  
 |The .NET Framework 2.0|[The Unicode Standard, Version 5.0.0](https://www.unicode.org/versions/Unicode5.0.0)|  
@@ -165,12 +165,11 @@
 |[!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]|[The Unicode Standard, Version 5.0.0](https://www.unicode.org/versions/Unicode5.0.0)|  
 |[!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later on Windows 7|[The Unicode Standard, Version 5.0.0](https://www.unicode.org/versions/Unicode5.0.0)|  
 |[!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later on Windows 8 and later Windows operating systems|[The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/)|  
-
-In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of the Unicode Standard](https://www.unicode.org/versions/Unicode8.0.0/).
+|.NET Core (all versions)|[The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/).|
 
 <a name="EmbeddedNulls"></a>   
 ## Strings and embedded null characters  
- In the .NET Framework, a <xref:System.String> object can include embedded null characters, which count as a part of the string's length. However, in some languages such as C and C++, a null character indicates the end of a string; it is not considered a part of the string and is not counted as part of the string's length. This means that the following common assumptions that C and C++ programmers or libraries written in C or C++ might make about strings are not necessarily valid when applied to <xref:System.String> objects:  
+ In .NET, a <xref:System.String> object can include embedded null characters, which count as a part of the string's length. However, in some languages such as C and C++, a null character indicates the end of a string; it is not considered a part of the string and is not counted as part of the string's length. This means that the following common assumptions that C and C++ programmers or libraries written in C or C++ might make about strings are not necessarily valid when applied to <xref:System.String> objects:  
   
 -   The value returned by the `strlen` or `wcslen` functions does not necessarily equal <xref:System.String.Length%2A?displayProperty=nameWithType>.  
   
@@ -250,7 +249,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
 ## Ordinal vs. culture-sensitive operations  
  Members of the <xref:System.String> class perform either ordinal or culture-sensitive (linguistic) operations on a <xref:System.String> object. An ordinal operation acts on the numeric value of each <xref:System.Char> object. A culture-sensitive operation acts on the value of the <xref:System.String> object, and takes culture-specific casing, sorting, formatting, and parsing rules into account. Culture-sensitive operations execute in the context of an explicitly declared culture or the implicit current culture. The two kinds of operations can produce very different results when they are performed on the same string.  
   
- The .NET Framework also supports culture-insensitive linguistic string operations by using the invariant culture (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>), which is loosely based on the culture settings of the English language independent of region. Unlike other <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> settings, the settings of the invariant culture are guaranteed to remain consistent on a single computer, from system to system, and across versions of the .NET Framework. The invariant culture can be seen as a kind of black box that ensures stability of string comparisons and ordering across all cultures.  
+.NET also supports culture-insensitive linguistic string operations by using the invariant culture (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>), which is loosely based on the culture settings of the English language independent of region. Unlike other <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> settings, the settings of the invariant culture are guaranteed to remain consistent on a single computer, from system to system, and across versions of .NET. The invariant culture can be seen as a kind of black box that ensures stability of string comparisons and ordering across all cultures.  
   
 > [!IMPORTANT]
 >  If your application makes a security decision about a symbolic identifier such as a file name or named pipe, or about persisted data such as the text-based data in an XML file, the operation should use an ordinal comparison instead of a culture-sensitive comparison. This is because a culture-sensitive comparison can yield different results depending on the culture in effect, whereas an ordinal comparison depends solely on the binary value of the compared characters.  
@@ -335,11 +334,11 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
  [!code-csharp[System.String.Class#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Class/cs/compare1.cs#10)]
  [!code-vb[System.String.Class#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Class/vb/compare1.vb#10)]  
   
- The .NET Framework supports word, string, and ordinal sort rules:  
+ .NET supports word, string, and ordinal sort rules:  
   
 -   A word sort performs a culture-sensitive comparison of strings in which certain nonalphanumeric Unicode characters might have special weights assigned to them. For example, the hyphen (-) might have a very small weight assigned to it so that "coop" and "co-op" appear next to each other in a sorted list. For a list of the <xref:System.String> methods that compare two strings using word sort rules, see the [String operations by category](#ByCategory) section.  
   
--   A string sort also performs a culture-sensitive comparison. It is similar to a word sort, except that there are no special cases, and all nonalphanumeric symbols come before all alphanumeric Unicode characters. Two strings can be compared using string sort rules by calling the <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=nameWithType> method overloads that have an `options` parameter that is supplied a value of <xref:System.Globalization.CompareOptions.StringSort?displayProperty=nameWithType>. Note that this is the only method that the .NET Framework provides to compare two strings using string sort rules.  
+-   A string sort also performs a culture-sensitive comparison. It is similar to a word sort, except that there are no special cases, and all nonalphanumeric symbols come before all alphanumeric Unicode characters. Two strings can be compared using string sort rules by calling the <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=nameWithType> method overloads that have an `options` parameter that is supplied a value of <xref:System.Globalization.CompareOptions.StringSort?displayProperty=nameWithType>. Note that this is the only method that .NET provides to compare two strings using string sort rules.  
   
 -   An ordinal sort compares strings based on the numeric value of each <xref:System.Char> object in the string. An ordinal comparison is automatically case-sensitive because the lowercase and uppercase versions of a character have different code points. However, if case is not important, you can specify an ordinal comparison that ignores case. This is equivalent to converting the string to uppercase by using the invariant culture and then performing an ordinal comparison on the result. For a list of the <xref:System.String> methods that compare two strings using ordinal sort rules, see the [String operations by category](#ByCategory) section.  
   
@@ -372,7 +371,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
  [!code-vb[System.String.Class#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Class/vb/compare2.vb#12)]  
   
 > [!TIP]
->  Internally, the.NET Framework uses sort keys to support culturally sensitive string comparison. Each character in a string is given several categories of sort weights, including alphabetic, case, and diacritic. A sort key, represented by the <xref:System.Globalization.SortKey> class, provides a repository of these weights for a particular string. If your app performs a large number of searching or sorting operations on the same set of strings, you can improve its performance by generating and storing sort keys for all the strings that it uses. When a sort or comparison operation is required, you use the sort keys instead of the strings. For more information, see the <xref:System.Globalization.SortKey> class.  
+>  Internally, .NET uses sort keys to support culturally sensitive string comparison. Each character in a string is given several categories of sort weights, including alphabetic, case, and diacritic. A sort key, represented by the <xref:System.Globalization.SortKey> class, provides a repository of these weights for a particular string. If your app performs a large number of searching or sorting operations on the same set of strings, you can improve its performance by generating and storing sort keys for all the strings that it uses. When a sort or comparison operation is required, you use the sort keys instead of the strings. For more information, see the <xref:System.Globalization.SortKey> class.  
   
  If you don't specify a string comparison convention, sorting methods such as <xref:System.Array.Sort%28System.Array%29?displayProperty=nameWithType> perform a culture-sensitive, case-sensitive sort on strings. The following example illustrates how changing the current culture affects the order of sorted strings in an array. It creates an array of three strings. First, it sets the `System.Threading.Thread.CurrentThread.CurrentCulture` property to en-US and calls the <xref:System.Array.Sort%28System.Array%29?displayProperty=nameWithType> method. The resulting sort order is based on sorting conventions for the English (United States) culture. Next, the example sets the `System.Threading.Thread.CurrentThread.CurrentCulture` property to da-DK and calls the <xref:System.Array.Sort%2A?displayProperty=nameWithType> method again. Notice how the resulting sort order differs from the en-US results because it uses the sorting conventions for Danish (Denmark).  
   
@@ -423,7 +422,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
   
  Multiple representations for a single character complicate searching, sorting, matching, and other string operations.  
   
- The Unicode standard defines a process called normalization that returns one binary representation of a Unicode character for any of its equivalent binary representations. Normalization can use several algorithms, called normalization forms, that follow different rules. The .NET Framework supports Unicode normalization forms C, D, KC, and KD. When strings have been normalized to the same normalization form, they can be compared by using ordinal comparison.  
+ The Unicode standard defines a process called normalization that returns one binary representation of a Unicode character for any of its equivalent binary representations. Normalization can use several algorithms, called normalization forms, that follow different rules. .NET supports Unicode normalization forms C, D, KC, and KD. When strings have been normalized to the same normalization form, they can be compared by using ordinal comparison.  
   
  An ordinal comparison is a binary comparison of the Unicode scalar value of corresponding <xref:System.Char> objects in each string. The <xref:System.String> class includes a number of methods that can perform an ordinal comparison, including the following:  
   
@@ -469,7 +468,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
 -   Methods that indicate the starting position of a substring in a string instance. These include the <xref:System.String.IndexOf%2A>, <xref:System.String.IndexOfAny%2A>, <xref:System.String.LastIndexOf%2A>, and <xref:System.String.LastIndexOfAny%2A> methods.  
   
 > [!WARNING]
->  If you want to search a string for a particular pattern rather than a specific substring, you should use regular expressions. For more information, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md).  
+>  If you want to search a string for a particular pattern rather than a specific substring, you should use regular expressions. For more information, see [.NET Regular Expressions](~/docs/standard/base-types/regular-expressions.md).  
   
 ### Modifying a string  
  The <xref:System.String> class includes the following methods that appear to modify the value of a string:  
@@ -5026,7 +5025,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
 ## Formatting and culture  
  Generally, objects in the argument list are converted to their string representations by using the conventions of the current culture, which is returned by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property. You can control this behavior by calling one of the overloads of <xref:System.String.Format%2A> that includes a `provider` parameter. The `provider` parameter is an <xref:System.IFormatProvider> implementation that supplies custom and culture-specific formatting information that is used to moderate the formatting process.  
   
- The <xref:System.IFormatProvider> interface has a single member, <xref:System.IFormatProvider.GetFormat%2A>, which is responsible for returning the object that provides formatting information. The .NET Framework has three <xref:System.IFormatProvider> implementations that provide culture-specific formatting:  
+ The <xref:System.IFormatProvider> interface has a single member, <xref:System.IFormatProvider.GetFormat%2A>, which is responsible for returning the object that provides formatting information. .NET has three <xref:System.IFormatProvider> implementations that provide culture-specific formatting:  
   
 -   <xref:System.Globalization.CultureInfo>. Its <xref:System.Globalization.CultureInfo.GetFormat%2A> method returns a culture-specific <xref:System.Globalization.NumberFormatInfo> object for formatting numeric values and a culture-specific <xref:System.Globalization.DateTimeFormatInfo> object for formatting date and time values.  
   
@@ -5924,7 +5923,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
 > [!IMPORTANT]
 >  If two string objects are equal, the <xref:System.String.GetHashCode%2A> method returns identical values. However, there is not a unique hash code value for each unique string value. Different strings can return the same hash code.  
 >   
->  The hash code itself is not guaranteed to be stable. Hash codes for identical strings can differ across versions of the .NET Framework and across platforms (such as 32-bit and 64-bit) for a single version of the .NET Framework. In some cases, they can even differ by application domain. This implies two subsequent runs of the same program may return different hash codes.  
+>  The hash code itself is not guaranteed to be stable. Hash codes for identical strings can differ across .NET implementations, across .NET versions, and across .NET platforms (such as 32-bit and 64-bit) for a single version of .NET. In some cases, they can even differ by application domain. This implies that two subsequent runs of the same program may return different hash codes.  
 >   
 >  As a result, hash codes should never be used outside of the application domain in which they were created, they should never be used as key fields in a collection, and they should never be persisted.  
 >   
@@ -5969,7 +5968,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ```  
   
 > [!IMPORTANT]
->  Hash codes are used to insert and retrieve keyed objects from hash tables efficiently. However, hash codes don't uniquely identify strings. Identical strings have  equal hash codes, but the common language runtime can also assign the same hash code to different strings. In addition, hash codes can vary by version of the .NET Framework, by platform within a single version, and by application domain. Because of this, you should not serialize or persist hash code values, nor should you use them as keys in a hash table or dictionary.  
+>  Hash codes are used to insert and retrieve keyed objects from hash tables efficiently. However, hash codes don't uniquely identify strings. Identical strings have  equal hash codes, but the common language runtime can also assign the same hash code to different strings. In addition, hash codes can vary by version of .NET, by platform within a single version, and by application domain. Because of this, you should not serialize or persist hash code values, nor should you use them as keys in a hash table or dictionary.  
   
  For additional information about the use of hash codes and the `GetHashCode` method, see <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
@@ -5985,7 +5984,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
-          <para>The value returned by <see cref="M:System.String.GetHashCode" /> is platform-dependent. It differs on the 32-bit and 64-bit versions of the .NET Framework. It also can differ between versions of the .NET Framework.</para>
+          <para>The value returned by <see cref="M:System.String.GetHashCode" /> is platform-dependent. It differs on the 32-bit and 64-bit versions of the .NET Framework. It also can differ between versions of the .NET Framework and .NET Core.</para>
         </block>
         <altmember cref="M:System.Object.GetHashCode" />
         <related type="Article" href="http://msdn.microsoft.com/library/c08125d6-56cc-4b23-b482-813ff85dc630">&lt;UseRandomizedStringHashAlgorithm&gt; Element</related>
@@ -7386,7 +7385,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ## Remarks  
  Some Unicode characters have multiple equivalent binary representations consisting of sets of combining and/or composite Unicode characters. The existence of multiple representations for a single character complicates searching, sorting, matching, and other operations.  
   
- The Unicode standard defines a process called normalization that returns one binary representation when given any of the equivalent binary representations of a character. Normalization can be performed with several algorithms, called normalization forms, that obey different rules. The .NET Framework currently supports normalization forms C, D, KC, and KD.  
+ The Unicode standard defines a process called normalization that returns one binary representation when given any of the equivalent binary representations of a character. Normalization can be performed with several algorithms, called normalization forms, that obey different rules. .NET currently supports normalization forms C, D, KC, and KD.  
   
  For a description of supported Unicode normalization forms, see <xref:System.Text.NormalizationForm?displayProperty=nameWithType>.  
   
@@ -7452,7 +7451,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ## Remarks  
  Some Unicode characters have multiple equivalent binary representations consisting of sets of combining and/or composite Unicode characters. The existence of multiple representations for a single character complicates searching, sorting, matching, and other operations.  
   
- The Unicode standard defines a process called normalization that returns one binary representation when given any of the equivalent binary representations of a character. Normalization can be performed with several algorithms, called normalization forms, that obey different rules. The .NET Framework currently supports normalization forms C, D, KC, and KD.  
+ The Unicode standard defines a process called normalization that returns one binary representation when given any of the equivalent binary representations of a character. Normalization can be performed with several algorithms, called normalization forms, that obey different rules. .NET currently supports normalization forms C, D, KC, and KD.  
   
  For a description of supported Unicode normalization forms, see <xref:System.Text.NormalizationForm?displayProperty=nameWithType>.  
   
@@ -9174,7 +9173,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ## Remarks  
  The <xref:System.String.Length%2A> property returns the number of <xref:System.Char> objects in this instance, not the number of Unicode characters. The reason is that a Unicode character might be represented by more than one <xref:System.Char>. Use the <xref:System.Globalization.StringInfo?displayProperty=nameWithType> class to work with each Unicode character instead of each <xref:System.Char>.  
   
- In some languages, such as C and C++, a null character indicates the end of a string. In the .NET Framework, a null character can be embedded in a string. When a string includes one or more null characters, they are included in the length of the total string. For example, in the following string, the substrings "abc" and "def" are separated by a null character. The <xref:System.String.Length%2A> property returns 7, which indicates that it includes the six alphabetic characters as well as the null character.  
+ In some languages, such as C and C++, a null character indicates the end of a string. In .NET, a null character can be embedded in a string. When a string includes one or more null characters, they are included in the length of the total string. For example, in the following string, the substrings "abc" and "def" are separated by a null character. The <xref:System.String.Length%2A> property returns 7, which indicates that it includes the six alphabetic characters as well as the null character.  
   
  [!code-cpp[System.String.Class#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Class/cpp/system.string.class.cpp#1)]
  [!code-csharp[System.String.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Class/cs/System.String.Class.cs#1)]
@@ -9248,7 +9247,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  The existence of multiple representations for a single character complicates searching, sorting, matching, and other operations.  
   
- The Unicode standard defines a process called normalization that returns one binary representation when given any of the equivalent binary representations of a character. Normalization can be performed with several algorithms, called normalization forms, that obey different rules. The .NET Framework supports the four normalization forms (C, D, KC, and KD) that are defined by the Unicode standard.When two strings are represented in the same normalization form, theycan be compared by using ordinal comparison.  
+ The Unicode standard defines a process called normalization that returns one binary representation when given any of the equivalent binary representations of a character. Normalization can be performed with several algorithms, called normalization forms, that obey different rules. .NET supports the four normalization forms (C, D, KC, and KD) that are defined by the Unicode standard. When two strings are represented in the same normalization form, they can be compared by using ordinal comparison.  
   
  To normalize and compare two strings, do the following:  
   
@@ -9323,7 +9322,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ## Remarks  
  Some Unicode characters have multiple equivalent binary representations consisting of sets of combining and/or composite Unicode characters. The existence of multiple representations for a single character complicates searching, sorting, matching, and other operations.  
   
- The Unicode standard defines a process called normalization that returns one binary representation when given any of the equivalent binary representations of a character. Normalization can be performed with several algorithms, called normalization forms, that obey different rules. The .NET Framework supports the four normalization forms (C, D, KC, and KD) that are defined by the Unicode standard.When two strings are represented in the same normalization form, they can be compared by using ordinal comparison.  
+ The Unicode standard defines a process called normalization that returns one binary representation when given any of the equivalent binary representations of a character. Normalization can be performed with several algorithms, called normalization forms, that obey different rules. .NET supports the four normalization forms (C, D, KC, and KD) that are defined by the Unicode standard. When two strings are represented in the same normalization form, they can be compared by using ordinal comparison.  
   
  To normalize and compare two strings, do the following:  
   
@@ -12668,7 +12667,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  To create a string from the characters in a character array, call the <xref:System.String.%23ctor%28System.Char%5B%5D%29> constructor.  
   
- To create a byte array that contains the encoded characters in a string, instantiate the appropriate <xref:System.Text.Encoding> object and call its <xref:System.Text.Encoding.GetBytes%28System.String%29?displayProperty=nameWithType> method. Some of the standard encodings available in the .NET Framework include the following:  
+ To create a byte array that contains the encoded characters in a string, instantiate the appropriate <xref:System.Text.Encoding> object and call its <xref:System.Text.Encoding.GetBytes%28System.String%29?displayProperty=nameWithType> method. Some of the standard encodings available in .NET include the following:  
   
 |Encoding|Object|  
 |--------------|------------|  
@@ -12678,7 +12677,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 |UTF-16|<xref:System.Text.UnicodeEncoding>|  
 |UTF-32|<xref:System.Text.UTF32Encoding>|  
   
- For more information, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
+ For more information, see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md).  
   
    
   
@@ -12755,7 +12754,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  If `length` is zero, the returned array is empty and has a zero length. If this instance is `null` or an empty string (""), the returned array is empty and has a zero length.  
   
- To create a byte array that contains the encoded characters in a portion of a string, instantiate the appropriate <xref:System.Text.Encoding> object and call its <xref:System.Text.Encoding.GetBytes%28System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Byte%5B%5D%2CSystem.Int32%29> method. Some of the standard encodings available in the .NET Framework include the following:  
+ To create a byte array that contains the encoded characters in a portion of a string, instantiate the appropriate <xref:System.Text.Encoding> object and call its <xref:System.Text.Encoding.GetBytes%28System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Byte%5B%5D%2CSystem.Int32%29> method. Some of the standard encodings available in .NET include:  
   
 |Encoding|Object|  
 |--------------|------------|  
@@ -12765,7 +12764,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 |UTF-16|<xref:System.Text.UnicodeEncoding>|  
 |UTF-32|<xref:System.Text.UTF32Encoding>|  
   
- For more information, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
+ For more information, see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md).  
   
    
   
@@ -13401,7 +13400,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.String.Trim%2A> method removes from the current string all leading and trailing white-space characters. Each leading and trailing trim operation stops when a non-white-space character is encountered. For example, if the current string is "   abc   xyz   ", the <xref:System.String.Trim%2A> method returns "abc   xyz". To remove white-space characters between words in a string, use a [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md).  
+ The <xref:System.String.Trim%2A> method removes from the current string all leading and trailing white-space characters. Each leading and trailing trim operation stops when a non-white-space character is encountered. For example, if the current string is "   abc   xyz   ", the <xref:System.String.Trim%2A> method returns "abc   xyz". To remove white-space characters between words in a string, use [.NET Regular Expressions](~/docs/standard/base-types/regular-expressions.md).  
   
 > [!NOTE]
 >  If the <xref:System.String.Trim%2A> method removes any characters from the current instance, this method does not modify the value of the current instance. Instead, it returns a new string in which all leading and trailing white space characters found in the current instance are removed.  

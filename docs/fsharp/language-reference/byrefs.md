@@ -160,7 +160,7 @@ type S(count1: Span<int>, count2: Span<int>) =
 
 `IsByRefLike` does not imply `Struct`. Both must be present on the type.
 
-A "`byref`-like" struct in F# is a stack-bound value type. It will never be allocated on the managed heap. They are useful for high-performance programming, as they are enforced with set of strong checks about the lifetimes and non-capture. These rules are:
+A "`byref`-like" struct in F# is a stack-bound value type. It is never allocated on the managed heap. They are useful for high-performance programming, as they are enforced with set of strong checks about the lifetimes and non-capture. These rules are:
 
 * They can be used as function parameters, method parameters, local variables, method returns.
 * They cannot be static or instance members of a class or normal struct.
@@ -186,14 +186,40 @@ printfn "%d" sum // 'sum' is of type 'int'
 
 To avoid the implicit dereference, such as passing a reference through multiple chained calls, use `&x` (where `x` is the value).
 
-Direct assignment to return `byref`s is permitted:
+You can also directly assign to a return `byref`. Consider the following (highly imperative) program:
 
 ```fsharp
-let mutable v = System.DateTime.Now
+ype C() =
+    let mutable nums = [| 1; 3; 7; 15; 31; 63; 127; 255; 511; 1023 |]
 
-let f() = &v
+    override __.ToString() = String.Join(' ', nums)
 
-f() <-  f().AddDays(2.0)
+    member __.FindLargestSmallerThan(target: int) =
+        let mutable ctr = nums.Length - 1
+
+        while ctr > 0 && nums.[ctr] >= target do ctr <- ctr - 1
+
+        if ctr > 0 then &nums.[ctr] else &nums.[0]
+
+[<EntryPoint>]
+let main argv =
+    let c = C()
+    printfn "Original sequence: %s" (c.ToString())
+
+    let v = &c.FindLargestSmallerThan 16
+
+    v <- v*2 // Directly assign to the byref return
+
+    printfn "New sequence:      %s" (c.ToString())
+
+    0 // return an integer exit code
+```
+
+This is the output:
+
+```console
+Original sequence: 1 3 7 15 31 63 127 255 511 1023
+New sequence:      1 3 7 30 31 63 127 255 511 1023
 ```
 
 ## Scoping for byrefs
@@ -201,10 +227,14 @@ f() <-  f().AddDays(2.0)
 A `let`-bound value cannot have its reference escape the scope in which it was defined. For example, the following is disallowed:
 
 ```fsharp
+let test2 () =
+    let x = 12
+    &x // Error: 'y' escapes its defined scope!
+
 let test () =
     let x =
         let y = 1
-        &y // `y` escapes scope!
+        &y // Error: `y` escapes its defined scope!
     ()
 ```
 

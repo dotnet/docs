@@ -61,7 +61,7 @@ type S(count1: Span<int>, count2: Span<int>) =
 
 `IsByRefLike` does not imply `Struct`. Both must be present on the type.
 
-A "`byref`-like" struct in F# is a stack-bound value type. It will never be allocated on the managed heap. They are useful for high-performance programming, as they are enforced with set of strong checks about the lifetimes and non-capture. These rules are:
+A "`byref`-like" struct in F# is a stack-bound value type. It is never allocated on the managed heap. They are useful for high-performance programming, as they are enforced with set of strong checks about the lifetimes and non-capture. These rules are:
 
 * They can be used as function parameters, method parameters, local variables, method returns.
 * They cannot be static or instance members of a class or normal struct.
@@ -81,7 +81,7 @@ type S(count1: int, count2: int) =
 
 `IsReadOnly` does not imply `Struct`. You must add both to have an `IsReadOnly` struct.
 
-Use of this attribute will emit metadata letting F# and C# know to treat it as `inref<'T>` and `in ref`, respectively.
+Use of this attribute emits metadata letting F# and C# know to treat it as `inref<'T>` and `in ref`, respectively.
 
 Defining a mutable value inside of a readonly struct produces an error.
 

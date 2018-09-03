@@ -47,7 +47,7 @@ You can represent [Records](records.md) and [Discriminated Unions](discriminated
 
 ## ByRefLike structs
 
-You can define your own structs that can adhere to `byref`-like semantics (see [Byrefs](byrefs.md) for more). This is done with the <cref:system.runtime.compilerservices.isbyreflikeattribute> attribute:
+You can define your own structs that can adhere to `byref`-like semantics (see [Byrefs](byrefs.md) for more). This is done with the <xref:system.runtime.compilerservices.isbyreflikeattribute> attribute:
 
 ```fsharp
 open System
@@ -70,7 +70,7 @@ A "`byref`-like" struct in F# is a stack-bound value type. It will never be allo
 
 ## ReadOnly structs
 
-You can annotate structs with the <cref:system.runtime.compilerservices.isreadonlyattribute> attribute. For example:
+You can annotate structs with the <xref:system.runtime.compilerservices.isreadonlyattribute> attribute. For example:
 
 ```fsharp
 [<IsReadOnly; Struct>]

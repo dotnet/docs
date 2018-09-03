@@ -79,51 +79,6 @@ C# programmers should know that ref works differently in F# than it does in C#. 
 >[!NOTE]
 `mutable` variables may be automatically promoted to `'a ref` if captured by a closure; see [Values](values/index.md).
 
-## Consuming C# `ref` returns
-
-Starting with F# 4.1, you can consume `ref` returns generated in C#.  The result of such a call is a `byref<_>` pointer.
-
-The following C# method:
-
-```csharp
-namespace RefReturns
-{
-    public static class RefClass
-    {
-        public static ref int Find(int val, int[] vals)
-        {
-            for (int i = 0; i < vals.Length; i++)
-            {
-                if (vals[i] == val)
-                {
-                    return ref numbers[i]; // Returns the location, not the value
-                }
-            }
-
-            throw new IndexOutOfRangeException($"{nameof(number)} not found");
-        }
-    }
-}
-```
-
-Can be transparently called by F# with no special syntax:
-
-```fsharp
-open RefReturns
-
-let consumeRefReturn() =
-    let result = RefClass.Find(3, [| 1; 2; 3; 4; 5 |]) // 'result' is of type 'byref<int>'.
-    ()
-```
-
-You can also declare functions which could take a `ref` return as input, for example:
-
-```fsharp
-let f (x: byref<int>) = &x
-```
-
-There is currently no way to generate a `ref` return in F# which could be consumed in C#.
-
 ## See Also
 [F# Language Reference](index.md)
 

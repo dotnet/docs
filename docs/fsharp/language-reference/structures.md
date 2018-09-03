@@ -43,8 +43,48 @@ The following code examples illustrate structure definitions.
 
 ## Struct Records and Discriminated Unions
 
-Starting with F# 4.1, you can represent [Records](records.md) and [Discriminated Unions](discriminated-unions.md) as structs with the `[<Struct>]` attribute.  See each article to learn more.
-    
+You can represent [Records](records.md) and [Discriminated Unions](discriminated-unions.md) as structs with the `[<Struct>]` attribute.  See each article to learn more.
+
+## ByRefLike structs
+
+You can define your own structs that can adhere to `byref`-like semantics (see [Byrefs](byrefs.md) for more). This is done with the <cref:system.runtime.compilerservices.isbyreflikeattribute> attribute:
+
+```fsharp
+open System
+open System.Runtime.CompilerServices
+
+[<IsByRefLike; Struct>]
+type S(count1: Span<int>, count2: Span<int>) =
+    member x.Count1 = count1
+    member x.Count2 = count2
+```
+
+`IsByRefLike` does not imply `Struct`. Both must be present on the type.
+
+A "`byref`-like" struct in F# is a stack-bound value type. It will never be allocated on the managed heap. They are useful for high-performance programming, as they are enforced with set of strong checks about the lifetimes and non-capture. These rules are:
+
+* They can be used as function parameters, method parameters, local variables, method returns.
+* They cannot be static or instance members of a class or normal struct.
+* They cannot be captured by any closure construct (`async` methods or lambda expressions).
+* They cannot be used as a generic parameter.
+
+## ReadOnly structs
+
+You can annotate structs with the <cref:system.runtime.compilerservices.isreadonlyattribute> attribute. For example:
+
+```fsharp
+[<IsReadOnly; Struct>]
+type S(count1: int, count2: int) =
+    member x.Count1 = count1
+    member x.Count2 = count2
+```
+
+`IsReadOnly` does not imply `Struct`. You must add both to have an `IsReadOnly` struct.
+
+Use of this attribute will emit metadata letting F# and C# know to treat it as `inref<'T>` and `in ref`, respectively.
+
+Defining a mutable value inside of a readonly struct produces an error.
+
 ## See Also
 [F# Language Reference](index.md)
 

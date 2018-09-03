@@ -68,6 +68,8 @@ A "`byref`-like" struct in F# is a stack-bound value type. It is never allocated
 * They cannot be captured by any closure construct (`async` methods or lambda expressions).
 * They cannot be used as a generic parameter.
 
+Although these rules very strongly restrict usage, they do so to fulfill the promise of high-performance computing in a safe manner.
+
 ## ReadOnly structs
 
 You can annotate structs with the <xref:System.Runtime.CompilerServices.IsReadOnlyAttribute> attribute. For example:

@@ -169,6 +169,8 @@ A "`byref`-like" struct in F# is a stack-bound value type. It is never allocated
 
 This last point is crucial for F# "pipeline" style programming, as `|>` is a generic function that parameterizes its input types. This restriction may be relaxed for `|>` in the future, as it is inline and does not make any calls to non-inlined generic functions in its body.
 
+Although these rules very strongly restrict usage, they do so to fulfill the promise of high-performance computing in a safe manner.
+
 ## Byref returns
 
 Byref returns from F# functions or members can be produced and consumed. When consuming a `byref`-returning method, the value is implicitly dereferenced. For example:

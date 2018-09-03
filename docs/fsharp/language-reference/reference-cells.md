@@ -67,17 +67,9 @@ The output is as follows.
 
 The field `contents` is provided for compatibility with other versions of ML and will produce a warning during compilation. To disable the warning, use the `--mlcompatibility` compiler option. For more information, see [Compiler Options](compiler-options.md).
 
-The following code illustrates the use of reference cells in parameter passing. The Incrementor type has a method Increment that takes a parameter that includes byref in the parameter type. The byref in the parameter type indicates that callers must pass a reference cell or the address of a typical variable of the specified type, in this case int. The remaining code illustrates how to call Increment with both of these types of arguments, and shows the use of the ref operator on a variable to create a reference cell (ref myDelta1). It then shows the use of the address-of operator (&amp;) to generate an appropriate argument. Finally, the Increment method is called again by using a reference cell that is declared by using a let binding. The final line of code demonstrates the use of the ! operator to dereference the reference cell for printing.
+C# programmers should know that `ref` in C# is not the same thing as `ref` in F#. The equivalent constructs in F# are [byrefs](byrefs.md), which are a different concept from reference cells.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2204.fs)]
-
-For more information about how to pass by reference, see [Parameters and Arguments](parameters-and-arguments.md).
-
->[!NOTE]
-C# programmers should know that ref works differently in F# than it does in C#. For example, the use of ref when you pass an argument does not have the same effect in F# as it does in C#.
-
->[!NOTE]
-`mutable` variables may be automatically promoted to `'a ref` if captured by a closure; see [Values](values/index.md).
+Values marked as `mutable`may be automatically promoted to `'a ref` if captured by a closure; see [Values](values/index.md).
 
 ## See Also
 [F# Language Reference](index.md)

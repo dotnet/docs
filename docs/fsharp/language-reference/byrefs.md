@@ -231,7 +231,7 @@ A `let`-bound value cannot have its reference escape the scope in which it was d
 ```fsharp
 let test2 () =
     let x = 12
-    &x // Error: 'y' escapes its defined scope!
+    &x // Error: 'x' escapes its defined scope!
 
 let test () =
     let x =
@@ -240,4 +240,4 @@ let test () =
     ()
 ```
 
-This is for soundness reasons, as it prevents compiling code that could crash at runtime.
+This is for soundness reasons, as it prevents you from getting different results depending on if you compile with optimizations on or off.

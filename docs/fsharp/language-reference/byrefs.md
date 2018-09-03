@@ -9,7 +9,7 @@ ms.date: 09/02/2018
 F# has two major concepts that deal in the space of low-level programming:
 
 * The `byref`/`inref`/`outref` types, which are a managed pointers. They have restrictions on usage so that you cannot compile a program that would be invalid at runtime.
-* A `byref`-like struct, which is a [structure](structures.md) that has similar semantics and the same compile-time restrictions as `byref<'T>`. One example is <xref:System.Span-1>.
+* A `byref`-like struct, which is a [structure](structures.md) that has similar semantics and the same compile-time restrictions as `byref<'T>`. One example is <xref:System.Span%601>.
 
 ## Syntax
 
@@ -146,7 +146,7 @@ In both cases, the overloads taking `System.DateTime` are resolved rater than th
 
 ## Byref-like structs
 
-In addition to the `byref`/`inref`/`outref` trio, you can define your own structs that can adhere to `byref`-like semantics. This is done with the <xref:system.runtime.compilerservices.isbyreflikeattribute> attribute:
+In addition to the `byref`/`inref`/`outref` trio, you can define your own structs that can adhere to `byref`-like semantics. This is done with the <xref:System.Runtime.CompilerServices.IsByRefLikeAttribute> attribute:
 
 ```fsharp
 open System

@@ -50,5 +50,6 @@ foreach (var i in query2)
   
  For a more detailed tutorial on chaining queries together, see [Tutorial: Chaining Queries Together](https://msdn.microsoft.com/library/c08d228a-f07a-4c98-810f-1bf0e8f2257c).  
   
-## See Also  
- [Performance (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/performance-linq-to-xml.md)
+## See Also
+
+- [Performance (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/performance-linq-to-xml.md)

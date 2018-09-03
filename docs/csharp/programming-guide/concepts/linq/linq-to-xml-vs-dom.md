@@ -125,5 +125,6 @@ doc.AppendChild(name);
 ## Support for Schema Information  
  [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] provides support for XSD validation through extension methods in the <xref:System.Xml.Schema?displayProperty=nameWithType> namespace. You can validate that an XML tree complies with an XSD. You can populate the XML tree with the post-schema-validation infoset (PSVI). For more information, see [How to: Validate Using XSD](https://msdn.microsoft.com/library/481a97fa-6e96-46f2-8c9a-415555fac33b) and <xref:System.Xml.Schema.Extensions>.  
   
-## See Also  
- [Getting Started (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/getting-started-linq-to-xml.md)
+## See Also
+
+- [Getting Started (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/getting-started-linq-to-xml.md)

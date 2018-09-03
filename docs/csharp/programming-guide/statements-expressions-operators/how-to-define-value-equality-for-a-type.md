@@ -56,6 +56,7 @@ When you define a class or struct, you decide whether it makes sense to create a
   
  The [==](../../../csharp/language-reference/operators/equality-comparison-operator.md) and [!=](../../../csharp/language-reference/operators/not-equal-operator.md) operators cannot operate on a struct unless the struct explicitly overloads them.  
   
-## See Also  
- [Equality Comparisons](../../../csharp/programming-guide/statements-expressions-operators/equality-comparisons.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+## See Also
+
+- [Equality Comparisons](../../../csharp/programming-guide/statements-expressions-operators/equality-comparisons.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)

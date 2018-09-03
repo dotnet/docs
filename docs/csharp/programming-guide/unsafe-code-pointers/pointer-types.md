@@ -83,12 +83,13 @@ The following table lists the operators and statements that can operate on point
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
 ## See Also
- [C# Programming Guide](../index.md)  
- [Unsafe Code and Pointers](index.md)  
- [Pointer Conversions](pointer-conversions.md)  
- [Pointer Expressions](pointer-expressions.md)  
- [Types](../../language-reference/keywords/types.md)  
- [unsafe](../../language-reference/keywords/unsafe.md)  
- [fixed Statement](../../language-reference/keywords/fixed-statement.md)  
- [stackalloc](../../language-reference/keywords/stackalloc.md)  
- [Boxing and Unboxing](../types/boxing-and-unboxing.md)
+
+- [C# Programming Guide](../index.md)  
+- [Unsafe Code and Pointers](index.md)  
+- [Pointer Conversions](pointer-conversions.md)  
+- [Pointer Expressions](pointer-expressions.md)  
+- [Types](../../language-reference/keywords/types.md)  
+- [unsafe](../../language-reference/keywords/unsafe.md)  
+- [fixed Statement](../../language-reference/keywords/fixed-statement.md)  
+- [stackalloc](../../language-reference/keywords/stackalloc.md)  
+- [Boxing and Unboxing](../types/boxing-and-unboxing.md)

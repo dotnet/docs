@@ -177,8 +177,9 @@ stringList.Add(4);
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Conversion of XML Data Types](../../../standard/data/xml/conversion-of-xml-data-types.md)  
- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Conversion of XML Data Types](../../../standard/data/xml/conversion-of-xml-data-types.md)  
+- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)

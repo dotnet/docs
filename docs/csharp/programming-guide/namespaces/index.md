@@ -46,9 +46,10 @@ Namespaces are heavily used in C# programming in two ways. First, the .NET Frame
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)  
- [using Directive](../../../csharp/language-reference/keywords/using-directive.md)  
- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)  
- [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)  
+- [using Directive](../../../csharp/language-reference/keywords/using-directive.md)  
+- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)  
+- [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)

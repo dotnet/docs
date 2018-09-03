@@ -26,8 +26,8 @@ You can use the code presented in the following example to determine whether an 
 
 [!code-csharp-interactive[whether an instance is of a nullable type](../../../../samples/snippets/csharp/programming-guide/nullable-types/IdentifyNullableType.cs#4)]
   
-## See also
+## See Also
 
-[Nullable types](index.md)  
-[Using nullable types](using-nullable-types.md)  
-<xref:System.Nullable.GetUnderlyingType%2A>  
+- [Nullable types](index.md)  
+- [Using nullable types](using-nullable-types.md)  
+- <xref:System.Nullable.GetUnderlyingType%2A>  

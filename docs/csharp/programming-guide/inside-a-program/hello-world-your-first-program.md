@@ -120,11 +120,12 @@ The following procedure creates a C# version of the traditional "Hello World!" p
   
  For more information about the C# compiler and its options, see [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md).
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Inside a C# Program](../../../csharp/programming-guide/inside-a-program/index.md)  
- [Strings](../../../csharp/programming-guide/strings/index.md)  
- [\<paveover>C# Sample Applications](https://msdn.microsoft.com/library/9a9d7aaa-51d3-4224-b564-95409b0f3e15)  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)  
- [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Inside a C# Program](../../../csharp/programming-guide/inside-a-program/index.md)  
+- [Strings](../../../csharp/programming-guide/strings/index.md)  
+- [\<paveover>C# Sample Applications](https://msdn.microsoft.com/library/9a9d7aaa-51d3-4224-b564-95409b0f3e15)  
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)  
+- [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

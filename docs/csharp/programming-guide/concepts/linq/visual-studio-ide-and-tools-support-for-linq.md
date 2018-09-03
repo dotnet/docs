@@ -18,5 +18,6 @@ The Visual Studio integrated development environment (IDE) provides the followin
 ## Visual Studio Debugger Support  
  The Visual Studio debugger supports debugging of query expressions. For more information, see [Debugging LINQ](/visualstudio/debugger/debugging-linq).  
   
-## See Also  
- [Language-Integrated Query (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/index.md)
+## See Also
+
+- [Language-Integrated Query (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/index.md)

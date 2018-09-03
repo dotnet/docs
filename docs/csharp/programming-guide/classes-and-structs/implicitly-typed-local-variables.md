@@ -67,15 +67,16 @@ Local variables can be declared without giving an explicit type. The `var` keywo
   
  However, the use of `var` does have at least the potential to make your code more difficult to understand for other developers. For that reason, the C# documentation generally uses `var` only when it is required.  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [Implicitly Typed Arrays](../../../csharp/programming-guide/arrays/implicitly-typed-arrays.md)  
- [How to: Use Implicitly Typed Local Variables and Arrays in a Query Expression](../../../csharp/programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md)  
- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
- [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)  
- [var](../../../csharp/language-reference/keywords/var.md)  
- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
- [LINQ (Language-Integrated Query)](../../../csharp/linq/index.md)  
- [for](../../../csharp/language-reference/keywords/for.md)  
- [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)  
- [using Statement](../../../csharp/language-reference/keywords/using-statement.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [Implicitly Typed Arrays](../../../csharp/programming-guide/arrays/implicitly-typed-arrays.md)  
+- [How to: Use Implicitly Typed Local Variables and Arrays in a Query Expression](../../../csharp/programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md)  
+- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
+- [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)  
+- [var](../../../csharp/language-reference/keywords/var.md)  
+- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
+- [LINQ (Language-Integrated Query)](../../../csharp/linq/index.md)  
+- [for](../../../csharp/language-reference/keywords/for.md)  
+- [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)  
+- [using Statement](../../../csharp/language-reference/keywords/using-statement.md)

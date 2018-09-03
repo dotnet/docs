@@ -48,7 +48,8 @@ person.SetAge(person.GetAge() + 1);
   
  Notice that `ToString` is not explicitly used in the program. It is invoked by default by the `WriteLine` calls.  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)

@@ -79,8 +79,9 @@ protected override void Finalize()
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- <xref:System.IDisposable>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
- [Garbage Collection](../../../standard/garbage-collection/index.md)
+## See Also
+
+- <xref:System.IDisposable>  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
+- [Garbage Collection](../../../standard/garbage-collection/index.md)

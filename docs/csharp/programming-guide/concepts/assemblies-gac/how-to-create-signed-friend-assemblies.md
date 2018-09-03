@@ -82,12 +82,13 @@ This example shows how to use friend assemblies with assemblies that have strong
 ## .NET Framework Security  
  There are similarities between the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute and the <xref:System.Security.Permissions.StrongNameIdentityPermission> class. The main difference is that <xref:System.Security.Permissions.StrongNameIdentityPermission> can demand security permissions to run a particular section of code, whereas the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute controls the visibility of `internal` types and members.  
   
-## See Also  
- <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>  
- [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)  
- [Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md)  
- [How to: Create Unsigned Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)  
- [/keyfile](../../../../visual-basic/reference/command-line-compiler/keyfile.md)  
- [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/k5b5tt23)  
- [Creating and Using Strong-Named Assemblies](../../../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)  
- [C# Programming Guide](../../../../csharp/programming-guide/index.md)
+## See Also
+
+- <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>  
+- [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)  
+- [Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md)  
+- [How to: Create Unsigned Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)  
+- [/keyfile](../../../../visual-basic/reference/command-line-compiler/keyfile.md)  
+- [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/k5b5tt23)  
+- [Creating and Using Strong-Named Assemblies](../../../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)  
+- [C# Programming Guide](../../../../csharp/programming-guide/index.md)

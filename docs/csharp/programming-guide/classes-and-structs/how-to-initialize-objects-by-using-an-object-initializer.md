@@ -26,6 +26,7 @@ You can use object initializers to initialize type objects in a declarative mann
 ## Compiling the Code  
  To run this code, copy and paste the class into a Visual C# console application project that has been created in Visual Studio.  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)

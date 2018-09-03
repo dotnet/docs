@@ -118,7 +118,7 @@ Baud Rate: 300 Duplex: Half Parity: true
 ```
 
 ## Passing by Reference
-Passing an F# value by reference involves the `byref` keyword, which specifies that the parameter is actually a pointer to the value being passed by reference. Any value passed into a method with a `byref` as the argument must be `mutable`.
+Passing an F# value by reference involves the [`byref` keyword](byrefs.md), which specifies that the parameter is actually a pointer to the value being passed by reference. Any value passed into a method with a `byref` as the argument must be `mutable`.
 
 Because the parameter is a pointer and the value is mutable, any changes to the value are retained after the execution of the function.
 
@@ -145,7 +145,7 @@ The following code illustrates both calling a .NET method that takes a parameter
 
 When run in a project, the output of the previous code is as follows:
 
-```
+```console
 a 1 10 Hello world 1 True
 "a"
 1
@@ -156,4 +156,7 @@ true
 ```
 
 ## See Also
+
 [Members](members/index.md)
+
+[Byrefs](byrefs.md)

@@ -42,6 +42,38 @@ There are three forms of `byref`:
 
 A `byref<'T>` can be passed anywhere where an `inref<'T>` is expected. Similarly, a `byref<'T>` can be passed anywhere where an `outref<'T>` is expected.
 
+## Using byrefs
+
+To use a `inref<'T>`, all you need is to get a pointer value with `&`:
+
+```fsharp
+open System
+
+let f (dt: inref<DateTime>) =
+    printfn "Now: %s" (dt.ToString())
+
+let dt = DateTime.Now
+f &dt // Pass a pointer to 'dt'
+```
+
+If you wish to write to the pointer by using an `outref<'T>` or `byref<'T>`, then you need to also make the value you grab a pointer to mutable.
+
+```fsharp
+open System
+
+let f (dt: byref<DateTime>) =
+    printfn "Now: %s" (dt.ToString())
+    dt <- DateTime.Now
+
+// Make 'dt' mutable
+let mutable dt = DateTime.Now
+
+// Now you can pass the pointer to 'dt'
+f &dt
+```
+
+If all you are doing is writing the pointer instead of also reading it, consider using `outref<'T>` instead of `byref<'T>`.
+
 ### Inref semantics
 
 Consider the following code:
@@ -68,9 +100,9 @@ All of these rules together mean that the holder of an `inref` pointer may not m
 
 The purpose of `outref<'T>` is for documenting that the pointer should only be read from. Unexpectedly, `outref<'T>` permits reading the underlying value despite its name. This is for compatibility purposes. Semantically, `outref<'T>` is no different than `byref<'T>`.
 
-### Interop with C# #
+### Interop with C #
 
-C# supports the `in ref` and `out ref` keywords, in addition to `ref` returns. The following table shows how F# interprets what C# can emit:
+C# supports the `in ref` and `out ref` keywords, in addition to `ref` returns. The following table shows how F# interprets what C# emits:
 
 |C# construct|F# infers|
 |------------|---------|

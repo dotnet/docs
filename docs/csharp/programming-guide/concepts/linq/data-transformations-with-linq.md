@@ -91,10 +91,11 @@ ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
   
  [!code-csharp[CsLINQGettingStarted#10](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/data-transformations-with-linq_4.cs)]  
   
-## See Also  
- [Language-Integrated Query (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/index.md)  
- [LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/index.md)  
- [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)  
- [LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml.md)  
- [LINQ Query Expressions](../../../../csharp/programming-guide/linq-query-expressions/index.md)  
- [select clause](../../../../csharp/language-reference/keywords/select-clause.md)
+## See Also
+
+- [Language-Integrated Query (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/index.md)  
+- [LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/index.md)  
+- [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)  
+- [LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml.md)  
+- [LINQ Query Expressions](../../../../csharp/programming-guide/linq-query-expressions/index.md)  
+- [select clause](../../../../csharp/language-reference/keywords/select-clause.md)

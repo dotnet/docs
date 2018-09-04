@@ -28,5 +28,6 @@ using System.Reflection;
 using System.IO.Packaging;  
 ```  
   
-## See Also  
- [LINQ to XML Programming Overview (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)
+## See Also
+
+- [LINQ to XML Programming Overview (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)

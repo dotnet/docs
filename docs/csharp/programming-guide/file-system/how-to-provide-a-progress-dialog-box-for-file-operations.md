@@ -25,5 +25,6 @@ You can provide a standard dialog box that shows progress on file operations in 
   
  [!code-csharp[csFilesandFolders#11](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-provide-a-progress-dialog-box-for-file-operations_1.cs)]  
   
-## See Also  
- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)
+## See Also
+
+- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)

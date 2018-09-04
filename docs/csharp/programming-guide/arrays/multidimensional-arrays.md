@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 020ce02e-7dff-4273-8e53-bf0b33747232
 ---
 # Multidimensional Arrays (C# Programming Guide)
+
 Arrays can have more than one dimension. For example, the following declaration creates a two-dimensional array of four rows and two columns.  
   
  [!code-csharp[csProgGuideArrays#11](../../../csharp/programming-guide/arrays/codesnippet/CSharp/multidimensional-arrays_1.cs)]  
@@ -15,7 +16,8 @@ Arrays can have more than one dimension. For example, the following declaration 
   
  [!code-csharp[csProgGuideArrays#12](../../../csharp/programming-guide/arrays/codesnippet/CSharp/multidimensional-arrays_2.cs)]  
   
-## Array Initialization  
+## Array Initialization
+
  You can initialize the array upon declaration, as is shown in the following example.  
   
  [!code-csharp[csProgGuideArrays#13](../../../csharp/programming-guide/arrays/codesnippet/CSharp/multidimensional-arrays_3.cs)]  
@@ -40,8 +42,9 @@ Arrays can have more than one dimension. For example, the following declaration 
   
  [!code-csharp[csProgGuideArrays#17](../../../csharp/programming-guide/arrays/codesnippet/CSharp/multidimensional-arrays_8.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Arrays](../../../csharp/programming-guide/arrays/index.md)  
- [Single-Dimensional Arrays](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)  
- [Jagged Arrays](../../../csharp/programming-guide/arrays/jagged-arrays.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Arrays](../../../csharp/programming-guide/arrays/index.md)  
+- [Single-Dimensional Arrays](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)  
+- [Jagged Arrays](../../../csharp/programming-guide/arrays/jagged-arrays.md)

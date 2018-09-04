@@ -81,6 +81,7 @@ new XElement("Contacts",
   
  For more information, see [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md).  
   
-## See Also  
- <xref:System.Xml.Linq>  
- [Getting Started (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/getting-started-linq-to-xml.md)
+## See Also
+
+- <xref:System.Xml.Linq>  
+- [Getting Started (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/getting-started-linq-to-xml.md)

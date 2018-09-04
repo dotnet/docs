@@ -118,6 +118,7 @@ If you embed type information in an application that references COM objects, you
   
 5.  Verify that an Excel workbook has been created at the location specified in the sample code: C:\SampleFolder\SampleWorkbook.xls.  
   
-## See Also  
- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)  
- [/link (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)
+## See Also
+
+- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)  
+- [/link (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)

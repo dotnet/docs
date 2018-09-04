@@ -16,9 +16,10 @@ The following simple example shows the standard way to declare events in a base 
 ## Example  
  [!code-csharp[csProgGuideEvents#1](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-raise-base-class-events-in-derived-classes_1.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Events](../../../csharp/programming-guide/events/index.md)  
- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
- [Creating Event Handlers in Windows Forms](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Events](../../../csharp/programming-guide/events/index.md)  
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
+- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
+- [Creating Event Handlers in Windows Forms](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)

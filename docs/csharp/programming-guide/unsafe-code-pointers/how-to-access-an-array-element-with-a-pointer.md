@@ -27,15 +27,17 @@ for (int i = 65; i < 123; i++)
   
  [!code-csharp[csProgGuidePointers#12](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-access-an-array-element-with-a-pointer_2.cs)]  
   
- **Uppercase letters:**  
-**ABCDEFGHIJKLMNOPQRSTUVWXYZ**  
-**Lowercase letters:**  
-**abcdefghijklmnopqrstuvwxyz**   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
- [Types](../../../csharp/language-reference/keywords/types.md)  
- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)
+**Uppercase letters:**
+**ABCDEFGHIJKLMNOPQRSTUVWXYZ**
+**Lowercase letters:**
+**abcdefghijklmnopqrstuvwxyz**
+
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
+- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
+- [Types](../../../csharp/language-reference/keywords/types.md)  
+- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
+- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
+- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)

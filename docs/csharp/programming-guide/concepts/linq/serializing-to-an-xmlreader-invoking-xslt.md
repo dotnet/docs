@@ -53,5 +53,6 @@ Console.WriteLine(newTree);
 </Root>  
 ```  
   
-## See Also  
- [Serializing XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/serializing-xml-trees.md)
+## See Also
+
+- [Serializing XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/serializing-xml-trees.md)

@@ -59,7 +59,8 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
   
  [Delegates and Events](https://msdn.microsoft.com/library/orm-9780596521066-01-17.aspx) in [Learning C# 3.0: Master the fundamentals of C# 3.0](https://msdn.microsoft.com/library/orm-9780596521066-01.aspx)  
   
-## See Also  
- <xref:System.Delegate>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Events](../../../csharp/programming-guide/events/index.md)
+## See Also
+
+- <xref:System.Delegate>  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Events](../../../csharp/programming-guide/events/index.md)

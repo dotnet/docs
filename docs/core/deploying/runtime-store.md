@@ -11,18 +11,20 @@ Starting with .NET Core 2.0, it's possible to package and deploy apps against a 
 
 This feature is implemented as a *runtime package store*, which is a directory on disk where packages are stored (typically at */usr/local/share/dotnet/store* on macOS/Linux and *C:/Program Files/dotnet/store* on Windows). Under this directory, there are subdirectories for architectures and [target frameworks](../../standard/frameworks.md). The file layout is similar to the way that [NuGet assets are laid out on disk](/nuget/create-packages/supporting-multiple-target-frameworks#framework-version-folder-structure):
 
-    \dotnet
-        \store
-            \x64
-                \netcoreapp2.0
-                    \microsoft.applicationinsights
-                    \microsoft.aspnetcore
-                    ...
-            \x86
-                \netcoreapp2.0
-                    \microsoft.applicationinsights
-                    \microsoft.aspnetcore
-                    ...
+```
+\dotnet
+    \store
+        \x64
+            \netcoreapp2.0
+                \microsoft.applicationinsights
+                \microsoft.aspnetcore
+                ...
+        \x86
+            \netcoreapp2.0
+                \microsoft.applicationinsights
+                \microsoft.aspnetcore
+                ...
+```
 
 A *target manifest* file lists the packages in the runtime package store. Developers can target this manifest when publishing their app. The target manifest is typically provided by the owner of the targeted production environment.
 

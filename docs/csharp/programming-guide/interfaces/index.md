@@ -87,6 +87,7 @@ An interface contains definitions for a group of related functionalities that a 
 ## Featured Book Chapter  
  [Interfaces](https://msdn.microsoft.com/library/orm-9780596521066-01-13.aspx) in [Learning C# 3.0: Master the Fundamentals of C# 3.0](https://msdn.microsoft.com/library/orm-9780596521066-01.aspx)  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)

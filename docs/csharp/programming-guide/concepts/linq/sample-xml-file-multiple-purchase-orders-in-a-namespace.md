@@ -103,5 +103,6 @@ The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq]
 </aw:PurchaseOrders>  
 ```  
   
-## See Also  
- [Sample XML Documents (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)
+## See Also
+
+- [Sample XML Documents (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)

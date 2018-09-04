@@ -76,8 +76,7 @@ test()
 
 As you can see, it's quite easy to chain together various validation functions if you force them all to return a `Result`.  This lets you break up functionality like this into small pieces which are as composable as you need them to be.  This also has the added value of *enforcing* the use of [pattern matching](pattern-matching.md) at the end of a round of validation, which in turns enforces a higher degree of program correctness.
 
-## See Also
+## See also
 
-[Discriminated Unions](discriminated-unions.md)
-
-[Pattern Matching](pattern-matching.md)
+- [Discriminated Unions](discriminated-unions.md)
+- [Pattern Matching](pattern-matching.md)

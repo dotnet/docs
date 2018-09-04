@@ -21,6 +21,7 @@ abstract member member-name : type-signature
 ```
 
 ## Remarks
+
 In object-oriented programming, an abstract class is used as a base class of a hierarchy, and represents common functionality of a diverse set of object types. As the name "abstract" implies, abstract classes often do not correspond directly onto concrete entities in the problem domain. However, they do represent what many different concrete entities have in common.
 
 Abstract classes must have the `AbstractClass` attribute. They can have implemented and unimplemented members. The use of the term *abstract* when applied to a class is the same as in other .NET languages; however, the use of the term *abstract* when applied to methods (and properties) is a little different in F# from its use in other .NET languages. In F#, when a method is marked with the `abstract` keyword, this indicates that a member has an entry, known as a *virtual dispatch slot*, in the internal table of virtual functions for that type. In other words, the method is virtual, although the `virtual` keyword is not used in the F# language. The keyword `abstract` is used on virtual methods regardless of whether the method is implemented. The declaration of a virtual dispatch slot is separate from the definition of a method for that dispatch slot. Therefore, the F# equivalent of a virtual method declaration and definition in another .NET language is a combination of both an abstract method declaration and a separate definition, with either the `default` keyword or the `override` keyword. For more information and examples, see [Methods](members/methods.md).
@@ -48,11 +49,9 @@ Area of Square: 100.000000
 Area of Circle: 78.539816
 ```
 
-## See Also
-[Classes](classes.md)
+## See also
 
-[Members](members/index.md)
-
-[Methods](members/methods.md)
-
-[Properties](members/Properties.md)
+- [Classes](classes.md)
+- [Members](members/index.md)
+- [Methods](members/methods.md)
+- [Properties](members/Properties.md)

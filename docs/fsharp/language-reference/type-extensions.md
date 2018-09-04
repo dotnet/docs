@@ -163,6 +163,5 @@ Finally, if multiple intrinsic type extensions exist for one type, all members m
 
 ## See also
 
-[F# Language Reference](index.md)
-
-[Members](members/index.md)
+- [F# Language Reference](index.md)
+- [Members](members/index.md)

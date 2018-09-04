@@ -136,5 +136,6 @@ Console.WriteLine(root);
 </aw:Root>  
 ```  
   
-## See Also  
- [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+## See Also
+
+- [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)

@@ -60,9 +60,9 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
   
 ## See Also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
-- [Using Variance in Delegates](https://msdn.microsoft.com/library/e6acad03-93e0-4efb-a158-8696d5eb4ecf)  
-- [Variance in Delegates](https://msdn.microsoft.com/library/e3b98197-6c5b-4e55-9c6e-9739b60645ca)  
-- [Using Variance for Func and Action Generic Delegates](https://msdn.microsoft.com/library/e69c4f39-09aa-4c6d-a752-08cc767d8290)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)
+- [Using Variance in Delegates](../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md)
+- [Variance in Delegates](../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)
+- [Using Variance for Func and Action Generic Delegates](../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)
 - [Events](../../../csharp/programming-guide/events/index.md)

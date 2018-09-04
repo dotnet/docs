@@ -44,16 +44,16 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  [Writing Queries in C# (LINQ)](../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
  Demonstrates the C# language features that are used to write [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions.  
   
- [Manipulating Data (C#) (LINQ to SQL)](https://msdn.microsoft.com/library/bb386927.aspx)  
+ [Manipulating Data (C#) (LINQ to SQL)](../framework/data/adonet/sql/linq/walkthrough-manipulating-data-csharp.md)  
  Describes a [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] scenario for adding, modifying, and deleting data in a database.  
   
- [Simple Object Model and Query (C#) (LINQ to SQL)](https://msdn.microsoft.com/library/bb386940.aspx)  
+ [Simple Object Model and Query (C#) (LINQ to SQL)](../framework/data/adonet/sql/linq/walkthrough-simple-object-model-and-query-csharp.md)  
  Demonstrates how to create an entity class and a simple query to filter the entity class.  
   
- [Using Only Stored Procedures (C#) (LINQ to SQL)](https://msdn.microsoft.com/library/bb399407.aspx)  
+ [Using Only Stored Procedures (C#) (LINQ to SQL)](../framework/data/adonet/sql/linq/walkthrough-using-only-stored-procedures-csharp.md)  
  Demonstrates how to use LINQ to SQL to access data by executing only stored procedures.  
   
- [Querying Across Relationships (C#) (LINQ to SQL)](https://msdn.microsoft.com/library/bb386951.aspx)  
+ [Querying Across Relationships (C#) (LINQ to SQL)](../framework/data/adonet/sql/linq/walkthrough-querying-across-relationships-csharp.md)  
  Demonstrates the use of [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] associations to represent foreign-key relationships in a database.  
 
  [Writing a Visualizer in C#](/visualstudio/debugger/walkthrough-writing-a-visualizer-in-csharp)  

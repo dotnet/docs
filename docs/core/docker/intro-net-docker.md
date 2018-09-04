@@ -121,7 +121,7 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 * [Windows Communication Framework (WCF) images on GitHub](https://github.com/microsoft/wcf-docker)
 
-* [Windows Communication Framework (WCF) Docker samples using .NET Full Framework 4.6.2](https://github.com/Microsoft/wcf-docker-samples)
+* [Windows Communication Framework (WCF) Docker samples using .NET Framework 4.6.2](https://github.com/Microsoft/wcf-docker-samples)
 
 #### Internet Information Server (IIS)
 

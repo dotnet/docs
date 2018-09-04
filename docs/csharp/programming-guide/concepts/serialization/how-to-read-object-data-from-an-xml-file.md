@@ -59,5 +59,5 @@ public void ReadXML()
 
 - <xref:System.IO.StreamWriter>  
 - [How to: Write Object Data to an XML File (C#)](../../../../csharp/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)  
-- [Serialization (C# )](../../../../csharp/programming-guide/concepts/serialization/index.md)  
+- [Serialization (C#)](../../../../csharp/programming-guide/concepts/serialization/index.md)  
 - [C# Programming Guide](../../../../csharp/programming-guide/index.md)

@@ -110,7 +110,7 @@ If you embed type information in an application that references COM objects, you
   
 1.  Open the project created by this walkthrough in Visual Studio.  
   
-2.  On the **Build** menu, choose **Publish CreateExcelWorkbook**. Follow the steps of the Publish Wizard to create an installable version of the application. For more information, see [Publish Wizard (Office Development in Visual Studio)](https://msdn.microsoft.com/library/bb625071).  
+2.  On the **Build** menu, choose **Publish CreateExcelWorkbook**. Follow the steps of the Publish Wizard to create an installable version of the application. For more information, see [Publish Wizard (Office Development in Visual Studio)](/visualstudio/vsto/publish-wizard-office-development-in-visual-studio).  
   
 3.  Install the application on a computer on which the .NET Framework 4 or higher and a different version of Excel are installed.  
   

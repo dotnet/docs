@@ -115,7 +115,7 @@ The output of `function5` with this input is as follows.
 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
 ```
 
-The next example shows the use of a wildcard character (_) when the element is not needed in the loop.
+The next example shows the use of a wildcard character (\_) when the element is not needed in the loop.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5207.fs)]
 

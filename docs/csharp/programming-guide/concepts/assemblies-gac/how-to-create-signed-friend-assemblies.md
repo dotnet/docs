@@ -10,7 +10,7 @@ This example shows how to use friend assemblies with assemblies that have strong
   
 1.  Open a command prompt.  
   
-2.  Use the following sequence of commands with the Strong Name tool to generate a keyfile and to display its public key. For more information, see [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/k5b5tt23).  
+2.  Use the following sequence of commands with the Strong Name tool to generate a keyfile and to display its public key. For more information, see [Sn.exe (Strong Name Tool)](../../../../framework/tools/sn-exe-strong-name-tool.md).  
   
     1.  Generate a strong-name key for this example and store it in the file FriendAssemblies.snk:  
   
@@ -88,7 +88,7 @@ This example shows how to use friend assemblies with assemblies that have strong
 - [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)  
 - [Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md)  
 - [How to: Create Unsigned Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)  
-- [/keyfile](../../../../visual-basic/reference/command-line-compiler/keyfile.md)  
-- [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/k5b5tt23)  
+- [/keyfile](../../../../csharp/language-reference/compiler-options/keyfile-compiler-option.md)  
+- [Sn.exe (Strong Name Tool)](../../../../framework/tools/sn-exe-strong-name-tool.md)  
 - [Creating and Using Strong-Named Assemblies](../../../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)  
 - [C# Programming Guide](../../../../csharp/programming-guide/index.md)

@@ -63,7 +63,7 @@ This section provides detailed information on key C# language features and featu
  [XML Documentation Comments](../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)  
   
 ## Platform Sections  
- [Application Domains](../../framework/app-domains/application-domains)  
+ [Application Domains](../../framework/app-domains/application-domains.md)  
   
  [Assemblies and the Global Assembly Cache](../../csharp/programming-guide/concepts/assemblies-gac/index.md)  
   

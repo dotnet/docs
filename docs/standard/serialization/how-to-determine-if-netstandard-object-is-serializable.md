@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine if a .NET Standard object is serializable"
+title: "How to determine if a .NET Standard object is serializable"
 description: "Shows how to determine whether a .NET Standard type can be serialized at run time."
 ms.date: "10/20/2017"
 dev_langs: 
@@ -11,7 +11,7 @@ helpviewer_keywords:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# How to: Determine if a .NET Standard object is serializable
+# How to determine if a .NET Standard object is serializable
 
 The .NET Standard is a specification that defines the types and members that must be present on specific .NET implementations that conform to that version of the standard. However, the .NET Standard does not define whether a type is serializable. The types defined in the .NET Standard Library are not marked with the <xref:System.SerializableAttribute> attribute. Instead, specific .NET implementations, such as the .NET Framework and .NET Core, are free to determine whether a particular type is serializable. 
 
@@ -27,8 +27,8 @@ You can then pass any object to the method to determine whether it can be serial
 [!code-csharp[test-is-a-type-serializable](~/samples/snippets/standard/serialization/is-serializable/csharp/program.cs#1)]
 [!code-vb[test-is-a-type-serializable](~/samples/snippets/standard/serialization/is-serializable/vb/program.vb#1)]
 
-# See also
+## See also
 
-[Binary serialization](binary-serialization.md)   
-<xref:System.SerializableAttribute?displayProperty=nameWithType>    
-<xref:System.Type.IsSerializable?displayProperty=nameWithType>   
+- [Binary serialization](binary-serialization.md)
+- <xref:System.SerializableAttribute?displayProperty=nameWithType>
+- <xref:System.Type.IsSerializable?displayProperty=nameWithType>

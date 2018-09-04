@@ -63,7 +63,7 @@
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
-      <para>You can create a custom profile implementation that inherits from the <see cref="T:System.Web.Profile.ProfileBase" /> abstract class and defines properties for the user profile that are not specified in the  configuration element. You can specify a custom user-profile type in the Web.config file with the <see langword="inherits" /> attribute of the  configuration element, as shown in the following example. The code for the <c>EmployeeProfile</c> class is included in the Example section of this topic. 
+      <para>You can create a custom profile implementation that inherits from the <see cref="T:System.Web.Profile.ProfileBase" /> abstract class and defines properties for the user profile that are not specified in the  configuration element. You can specify a custom user-profile type in the Web.config file with the <see langword="inherits" /> attribute of the  configuration element, as shown in the following example. The code for the <c>EmployeeProfile</c> class is included in the Example section of this topic. <br/>
 
 [!code-xml[System.Web.Profile.ProfileBase-Config](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/CS/config.xml)]  
 

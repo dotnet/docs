@@ -69,16 +69,17 @@ All types and type members have an accessibility level, which controls whether t
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
- [private](../../../csharp/language-reference/keywords/private.md)  
- [public](../../../csharp/language-reference/keywords/public.md)  
- [internal](../../../csharp/language-reference/keywords/internal.md)  
- [protected](../../../csharp/language-reference/keywords/protected.md)  
- [protected internal](../../../csharp/language-reference/keywords/protected-internal.md)  
- [private protected](../../../csharp/language-reference/keywords/private-protected.md)  
- [class](../../../csharp/language-reference/keywords/class.md)  
- [struct](../../../csharp/language-reference/keywords/struct.md)  
- [interface](../../../csharp/language-reference/keywords/interface.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
+- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
+- [private](../../../csharp/language-reference/keywords/private.md)  
+- [public](../../../csharp/language-reference/keywords/public.md)  
+- [internal](../../../csharp/language-reference/keywords/internal.md)  
+- [protected](../../../csharp/language-reference/keywords/protected.md)  
+- [protected internal](../../../csharp/language-reference/keywords/protected-internal.md)  
+- [private protected](../../../csharp/language-reference/keywords/private-protected.md)  
+- [class](../../../csharp/language-reference/keywords/class.md)  
+- [struct](../../../csharp/language-reference/keywords/struct.md)  
+- [interface](../../../csharp/language-reference/keywords/interface.md)

@@ -93,8 +93,9 @@ Properties combine aspects of both fields and methods. To the user of an object,
   
  [!code-csharp[csProgGuideProperties#6](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-properties_12.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
- [Interface Properties](../../../csharp/programming-guide/classes-and-structs/interface-properties.md)  
- [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
+- [Interface Properties](../../../csharp/programming-guide/classes-and-structs/interface-properties.md)  
+- [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)

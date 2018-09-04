@@ -12,15 +12,15 @@ ms.assetid: 4084581e-b931-498b-9534-cf7ef5b68690
 # How to: Define Value Equality for a Type (C# Programming Guide)
 When you define a class or struct, you decide whether it makes sense to create a custom definition of value equality (or equivalence) for the type. Typically, you implement value equality when objects of the type are expected to be added to a collection of some sort, or when their primary purpose is to store a set of fields or properties. You can base your definition of value equality on a comparison of all the fields and properties in the type, or you can base the definition on a subset. But in either case, and in both classes and structs, your implementation should follow the five guarantees of equivalence:  
   
-1.  x.`Equals`(x) returns `true.` This is called the reflexive property.  
+1.  `x.Equals(x)` returns `true`. This is called the reflexive property.  
   
-2.  x.`Equals`(y) returns the same value as y.`Equals`(x). This is called the symmetric property.  
+2.  `x.Equals(y)` returns the same value as `y.Equals(x)`. This is called the symmetric property.  
   
-3.  if (x.`Equals`(y) && y.`Equals`(z)) returns `true`, then x.`Equals`(z) returns `true`. This is called the transitive property.  
+3.  if `(x.Equals(y) && y.Equals(z))` returns `true`, then `x.Equals(z)` returns `true`. This is called the transitive property.  
   
-4.  Successive invocations of x.`Equals`(y) return the same value as long as the objects referenced by x and y are not modified.  
+4.  Successive invocations of `x.Equals(y)` return the same value as long as the objects referenced by x and y are not modified.  
   
-5.  x.`Equals`(null) returns `false`. However, null.Equals(null) throws an exception; it does not obey rule number two above.  
+5.  `x.Equals(null)` returns `false`. However, `null.Equals(null)` throws an exception; it does not obey rule number two above.  
   
  Any struct that you define already has a default implementation of value equality that it inherits from the <xref:System.ValueType?displayProperty=nameWithType> override of the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method. This implementation uses reflection to examine all the fields and properties in the type. Although this implementation produces correct results, it is relatively slow compared to a custom implementation that you write specifically for the type.  
   

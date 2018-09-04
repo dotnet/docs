@@ -51,5 +51,5 @@ You can store multiple variables of the same type in an array data structure. Yo
 ## See Also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Collections](https://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)  
+- [Collections](../../../csharp/programming-guide/concepts/collections.md)  
 - [Array Collection Type](https://msdn.microsoft.com/library/8a9964de-8941-47b1-a3cf-a01bc88db9e8)

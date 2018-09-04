@@ -55,7 +55,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     //}  
     ```  
   
-3.  Create a collection of tasks. The following code defines a [query](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
+3.  Create a collection of tasks. The following code defines a [query](../../../../csharp/programming-guide/concepts/linq/index.md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
   
      Add the following code to method `SumPageSizesAsync` after the declaration of `urlList`.  
   
@@ -130,7 +130,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     //}  
     ```  
   
-3.  Define a [query](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
+3.  Define a [query](../../../../csharp/programming-guide/concepts/linq/index.md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
   
      Add the following code to method `SumPageSizesAsync` after the declaration of `client` and `urlList`.  
   

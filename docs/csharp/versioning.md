@@ -23,7 +23,7 @@ Ideally, the version information you give your library should help developers de
 with their projects that make use of older versions of that same library.
 
 The most basic approach to SemVer is the 3 component format `MAJOR.MINOR.PATCH`, where:
- 
+
 * `MAJOR` is incremented when you make incompatible API changes
 * `MINOR` is incremented when you add functionality in a backwards-compatible manner
 * `PATCH` is incremented when you make backwards-compatible bug fixes
@@ -52,7 +52,7 @@ The easier you make it for your users to upgrade to the new version of your libr
 
 ### Application Configuration File
 
-As a .NET developer there's a very high chance you've encountered [the `app.config` file](https://msdn.microsoft.com/library/1fk1t1t0(v=vs.110).aspx) present in most project types.
+As a .NET developer there's a very high chance you've encountered [the `app.config` file](../framework/configure-apps/file-schema/index.md) present in most project types.
 This simple configuration file can go a long way into improving the rollout of new updates. You should generally design your libraries in such
 a way that information that is likely to change regularly is stored in the `app.config` file, this way when such information is updated
 the config file of older versions just needs to be replaced with the new one without the need for recompilation of the library.
@@ -66,7 +66,7 @@ Lucky for you C# and the .NET ecosystem comes with features and techniques that 
 
 ### Assembly Binding Redirection
 
-You can use the `app.config` file to update the version of a library your app uses. By adding what is called a [*binding redirect*](https://msdn.microsoft.com/library/7wd6ex19(v=vs.110).aspx) your
+You can use the `app.config` file to update the version of a library your app uses. By adding what is called a [*binding redirect*](../framework/configure-apps/redirect-assembly-versions.md) your
 can use the new library version without having to recompile your app. The following example shows how you would update
 your app's `app.config` file to use the `1.0.1` patch version of `ReferencedLibrary` instead of the `1.0.0` version it was originally compiled with.
 

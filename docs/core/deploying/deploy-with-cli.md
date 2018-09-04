@@ -3,7 +3,7 @@ title: .NET Core app deployment with CLI tools
 description: Learn .NET Core app deployment with command-line interface (CLI) tools
 author: rpetrusha
 ms.author: ronpet
-ms.date: 04/18/2017
+ms.date: 00/03/2018
 ---
 
 # Deploying .NET Core apps with command-line interface (CLI) tools
@@ -50,7 +50,7 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
    After you've debugged and tested the program, create the deployment by using the following command:
 
       ```console
-      dotnet publish -f netcoreapp1.1 -c Release
+      dotnet publish -f netcoreapp2.1 -c Release
       ```
    This creates a Release (rather than a Debug) version of your app. The resulting files are placed in a directory named *publish*      that's in a subdirectory of your project's *bin* directory.
 
@@ -129,7 +129,7 @@ Deploying a self-contained deployment without third-party dependencies involves 
       dotnet publish -c Release -r osx.10.11-x64
       ```
 
-   This creates a Release (rather than a Debug) version of your app for each target platform. The resulting files are placed in a subdirectory named *publish* that's in a subdirectory of your project's *.\bin\Release\netcoreapp1.1\<runtime_identifier>* subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
+   This creates a Release (rather than a Debug) version of your app for each target platform. The resulting files are placed in a subdirectory named *publish* that's in a subdirectory of your project's *.\bin\Release\netcoreapp2.1\<runtime_identifier>* subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
 
 Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions. You can choose not to package it with your application's files. You should, however, save it in the event that you want to debug the Release build of your app.
 
@@ -141,7 +141,7 @@ The following is the complete *csproj* file for this project.
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
 </Project>
@@ -167,7 +167,7 @@ The following is the complete *csproj* file for this project:
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
   <ItemGroup>

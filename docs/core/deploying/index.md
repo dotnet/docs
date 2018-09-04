@@ -3,7 +3,7 @@ title: .NET Core Application Deployment
 description: Deploying a .NET Core application.
 author: rpetrusha
 ms.author: ronpet
-ms.date: 04/18/2017
+ms.date: 09/03/2018
 ---
 
 # .NET Core application deployment
@@ -36,7 +36,9 @@ There are also a few disadvantages:
 
 ## Self-contained deployments (SCD)
 
-For a self-contained deployment, you deploy your app and any required third-party dependencies along with the version of .NET Core that you used to build the app. Creating an SCD doesn't include the [native dependencies of .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) on various platforms, so these must be present before the app runs. For more information on version binding at runtime, see the article on [version binding in .NET Core](../versions/selection.md)
+For a self-contained deployment, you deploy your app and any required third-party dependencies along with the version of .NET Core that you used to build the app. Creating an SCD doesn't include the [native dependencies of .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) on various platforms, so these must be present before the app runs. For more information on version binding at runtime, see the article on [version binding in .NET Core](../versions/selection.md).
+
+Starting with NET Core 2.1 SDK (version 2.1.300), .NET Core supports *patch version roll forward*. When you create a self-contained deployment, .NET Core tools automatically include the latest serviced runtime of the .NET Core version that your application targets. (The latest serviced runtime includes security patches and other bug fixes.) The serviced runtime does not have to be present on your build system; it is downloaded automatically from NuGet.org. For more information, including instructions on how to opt out of patch version roll forward, see [Self-contained deployment runtime roll forward](runtime-patch-selection.md).
 
 FDD and SCD deployments use separate host executables, so you can sign a host executable for an SCD with your publisher signature.
 

@@ -78,13 +78,14 @@ Giraffe g2 = (Giraffe) a;
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
 
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Types](../../../csharp/programming-guide/types/index.md)  
- [() Operator](../../../csharp/language-reference/operators/invocation-operator.md)  
- [explicit](../../../csharp/language-reference/keywords/explicit.md)  
- [implicit](../../../csharp/language-reference/keywords/implicit.md)  
- [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)  
- [Generalized Type Conversion](https://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada)  
- [Exported Type Conversion](https://msdn.microsoft.com/library/1dfe55f4-07a2-4b61-aabf-a8cf65783a6b)  
- [How to: Convert a String to a Number](../../../csharp/programming-guide/types/how-to-convert-a-string-to-a-number.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Types](../../../csharp/programming-guide/types/index.md)  
+- [() Operator](../../../csharp/language-reference/operators/invocation-operator.md)  
+- [explicit](../../../csharp/language-reference/keywords/explicit.md)  
+- [implicit](../../../csharp/language-reference/keywords/implicit.md)  
+- [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)  
+- [Generalized Type Conversion](https://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada)  
+- [Exported Type Conversion](https://msdn.microsoft.com/library/1dfe55f4-07a2-4b61-aabf-a8cf65783a6b)  
+- [How to: Convert a String to a Number](../../../csharp/programming-guide/types/how-to-convert-a-string-to-a-number.md)

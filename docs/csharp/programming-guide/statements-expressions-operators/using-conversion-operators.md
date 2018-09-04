@@ -26,8 +26,9 @@ You can use `implicit` conversion operators, which are easier to use, or `explic
   
  [!code-csharp[csProgGuideStatements#12](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-conversion-operators_2.cs)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)  
- [is](../../../csharp/language-reference/keywords/is.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)  
+- [is](../../../csharp/language-reference/keywords/is.md)

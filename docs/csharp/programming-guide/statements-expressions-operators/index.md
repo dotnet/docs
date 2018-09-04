@@ -38,6 +38,7 @@ The C# code that comprises an application consists of statements made up of keyw
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)

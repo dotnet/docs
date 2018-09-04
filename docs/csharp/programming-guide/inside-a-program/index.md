@@ -28,5 +28,6 @@ The section discusses the general structure of a C# program, and includes the st
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)

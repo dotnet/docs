@@ -14,7 +14,8 @@ This example demonstrates how to create multicast delegates. A useful property o
 ## Example  
  [!code-csharp[csProgGuideDelegates#11](../../../csharp/programming-guide/delegates/codesnippet/CSharp/how-to-combine-delegates-multicast-delegates_1.cs)]  
   
-## See Also  
- <xref:System.MulticastDelegate>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Events](../../../csharp/programming-guide/events/index.md)
+## See Also
+
+- <xref:System.MulticastDelegate>  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Events](../../../csharp/programming-guide/events/index.md)

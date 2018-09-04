@@ -79,6 +79,7 @@ This section provides detailed information on key C# language features and featu
   
  [Reflection](../../csharp/programming-guide/concepts/reflection.md)  
   
-## See Also  
- [C# Reference](../../csharp/language-reference/index.md)  
- [C#](../../csharp/index.md)
+## See Also
+
+- [C# Reference](../../csharp/language-reference/index.md)  
+- [C#](../../csharp/index.md)

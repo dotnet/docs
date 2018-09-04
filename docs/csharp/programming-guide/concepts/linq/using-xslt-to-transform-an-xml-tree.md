@@ -52,7 +52,8 @@ Console.WriteLine(newTree);
 </Root>  
 ```  
   
-## See Also  
- <xref:System.Xml.Linq.XContainer.CreateWriter%2A?displayProperty=nameWithType>  
- <xref:System.Xml.Linq.XNode.CreateReader%2A?displayProperty=nameWithType>  
- [Advanced LINQ to XML Programming (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)
+## See Also
+
+- <xref:System.Xml.Linq.XContainer.CreateWriter%2A?displayProperty=nameWithType>  
+- <xref:System.Xml.Linq.XNode.CreateReader%2A?displayProperty=nameWithType>  
+- [Advanced LINQ to XML Programming (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

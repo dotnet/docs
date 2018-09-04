@@ -60,6 +60,7 @@ Starting with C# 7.0, both the get and set accessor can be an implemented as exp
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)

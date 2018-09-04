@@ -76,6 +76,6 @@ foo() // returns 42
 
 ## See also
 
-[F# Language Reference](index.md)  
-[Active Patterns](active-patterns.md)  
-[Pattern Matching](pattern-matching.md)  
+- [F# Language Reference](index.md)  
+- [Active Patterns](active-patterns.md)  
+- [Pattern Matching](pattern-matching.md)  

@@ -125,9 +125,8 @@ The following tokens are reserved as keywords for future expansion of the F# lan
 * `virtual`
 * `volatile`
 
-## See Also
-[F# Language Reference](index.md)
+## See also
 
-[Symbol and Operator Reference](symbol-and-operator-reference/index.md)
-
-[Compiler Options](compiler-options.md)
+- [F# Language Reference](index.md)
+- [Symbol and Operator Reference](symbol-and-operator-reference/index.md)
+- [Compiler Options](compiler-options.md)

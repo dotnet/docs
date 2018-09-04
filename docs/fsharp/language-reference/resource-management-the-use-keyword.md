@@ -8,12 +8,15 @@ ms.date: 05/16/2016
 This topic describes the keyword `use` and the `using` function, which can control the initialization and release of resources.
 
 ## Resources
+
 The term *resource* is used in more than one way. Yes, resources can be data that an application uses, such as strings, graphics, and the like, but in this context, *resources* refers to software or operating system resources, such as graphics device contexts, file handles, network and database connections, concurrency objects such as wait handles, and so on. The use of these resources by applications involves the acquisition of the resource from the operating system or other resource provider, followed by the later release of the resource to the pool so that it can be provided to another application. Problems occur when applications do not release resources back to the common pool.
 
 ## Managing Resources
+
 To efficiently and responsibly manage resources in an application, you must release resources promptly and in a predictable manner. The .NET Framework helps you do this by providing the `System.IDisposable` interface. A type that implements `System.IDisposable` has the `System.IDisposable.Dispose` method, which correctly frees resources. Well-written applications guarantee that `System.IDisposable.Dispose` is called promptly when any object that holds a limited resource is no longer needed. Fortunately, most .NET languages provide support to make this easier, and F# is no exception. There are two useful language constructs that support the dispose pattern: the `use` binding and the `using` function.
 
 ## use Binding
+
 The `use` keyword has a form that resembles that of the `let` binding:
 
 use *value* = *expression*
@@ -27,8 +30,8 @@ The following example shows how to close a file automatically by using the `use`
 >[!NOTE]
 You can use `use` in computation expressions, in which case a customized version of the `use` expression is used. For more information, see [Sequences](sequences.md), [Asynchronous Workflows](asynchronous-workflows.md), and [Computation Expressions](computation-expressions.md).
 
-
 ## using Function
+
 The `using` function has the following form:
 
 `using` (*expression1*) *function-or-lambda*
@@ -49,6 +52,6 @@ Note that the function could be a function that has some arguments applied alrea
 
 The `using` function and the `use` binding are nearly equivalent ways to accomplish the same thing. The `using` keyword provides more control over when `Dispose` is called. When you use `using`, `Dispose` is called at the end of the function or lambda expression; when you use the `use` keyword, `Dispose` is called at the end of the containing code block. In general, you should prefer to use `use` instead of the `using` function.
 
+## See also
 
-## See Also
-[F# Language Reference](index.md)
+- [F# Language Reference](index.md)

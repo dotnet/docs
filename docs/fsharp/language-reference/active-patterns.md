@@ -7,7 +7,6 @@ ms.date: 05/16/2016
 
 *Active patterns* enable you to define named partitions that subdivide input data, so that you can use these names in a pattern matching expression just as you would for a discriminated union. You can use active patterns to decompose data in a customized manner for each partition.
 
-
 ## Syntax
 
 ```fsharp
@@ -18,6 +17,7 @@ let (|identifier|_|) [ arguments ] = expression
 ```
 
 ## Remarks
+
 In the previous syntax, the identifiers are names for partitions of the input data that is represented by *arguments*, or, in other words, names for subsets of the set of all values of the arguments. There can be up to seven partitions in an active pattern definition. The *expression* describes the form into which to decompose the data. You can use an active pattern definition to define the rules for determining which of the named partitions the values given as arguments belong to. The (| and |) symbols are referred to as *banana clips* and the function created by this type of let binding is called an *active recognizer*.
 
 As an example, consider the following active pattern with an argument.
@@ -64,8 +64,8 @@ In combination, these two ways of using active patterns enable you to partition 
 
 The resulting pattern matching expressions enable data to be written in a convenient way that is very readable, greatly simplifying potentially complex branching and data analysis code.
 
-
 ## Partial Active Patterns
+
 Sometimes, you need to partition only part of the input space. In that case, you write a set of partial patterns each of which match some inputs but fail to match other inputs. Active patterns that do not always produce a value are called *partial active patterns*; they have a return value that is an option type. To define a partial active pattern, you use a wildcard character (_) at the end of the list of patterns inside the banana clips. The following code illustrates the use of a partial active pattern.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5004.fs)]
@@ -100,6 +100,7 @@ The output is as follows:
 ```
 
 ## Parameterized Active Patterns
+
 Active patterns always take at least one argument for the item being matched, but they may take additional arguments as well, in which case the name *parameterized active pattern* applies. Additional arguments allow a general pattern to be specialized. For example, active patterns that use regular expressions to parse strings often include the regular expression as an extra parameter, as in the following code, which also uses the partial active pattern `Integer` defined in the previous code example. In this example, strings that use regular expressions for various date formats are given to customize the general ParseRegex active pattern. The Integer active pattern is used to convert the matched strings into integers that can be passed to the DateTime constructor.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5006.fs)]
@@ -121,8 +122,7 @@ Hello, random citizen!
 Hello, George!
 ```
 
-## See Also
-[F# Language Reference](index.md)
+## See also
 
-[Match Expressions](match-expressions.md)
-
+- [F# Language Reference](index.md)
+- [Match Expressions](match-expressions.md)

@@ -95,7 +95,7 @@ Optional parameters in ExampleMethod
 ## COM Interfaces  
  Named and optional arguments, along with support for dynamic objects and other enhancements, greatly improve interoperability with COM APIs, such as Office Automation APIs.  
   
- For example, the [AutoFormat](<xref:Microsoft.Office.Interop.Excel.Range.AutoFormat%2A>) method in the Microsoft Office Excel [Range](<xref:Microsoft.Office.Interop.Excel.Range>) interface has seven parameters, all of which are optional. These parameters are shown in the following illustration.  
+ For example, the <xref:Microsoft.Office.Interop.Excel.Range.AutoFormat%2A> method in the Microsoft Office Excel <xref:Microsoft.Office.Interop.Excel.Range> interface has seven parameters, all of which are optional. These parameters are shown in the following illustration.  
   
  ![IntelliSense Quick Info for the AutoFormat method.](../../../csharp/programming-guide/classes-and-structs/media/autoformat_parameters.png "AutoFormat_Parameters")  
 AutoFormat parameters  

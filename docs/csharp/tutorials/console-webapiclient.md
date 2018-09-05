@@ -56,8 +56,7 @@ run your application.
 
 ## Adding New Dependencies
 One of the key design goals for .NET Core is to minimize the size of
-the .NET framework installation. The .NET Core Application framework contains
-only the most common elements of the .NET full framework. If an application
+the .NET installation. If an application
 needs additional libraries for some of its features, you add those
 dependencies into your C# project (\*.csproj) file. For our example, you'll need to add the `System.Runtime.Serialization.Json` package
 so your application can process JSON responses.

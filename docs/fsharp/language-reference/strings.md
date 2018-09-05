@@ -11,6 +11,7 @@ The API reference links in this article will take you to MSDN.  The docs.microso
 The `string` type represents immutable text as a sequence of Unicode characters. `string` is an alias for `System.String` in the .NET Framework.
 
 ## Remarks
+
 String literals are delimited by the quotation mark (") character. The backslash character ( \\ ) is used to encode certain special characters. The backslash and the next character together are known as an *escape sequence*. Escape sequences supported in F# string literals are shown in the following table.
 
 |Character|Escape sequence|
@@ -60,23 +61,27 @@ def
 You can represent ASCII strings by arrays of unsigned bytes, type `byte[]`. You add the suffix `B` to a string literal to indicate that it is an ASCII string. ASCII string literals used with byte arrays support the same escape sequences as Unicode strings, except for the Unicode escape sequences.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1004.fs)]
-    
+
 ## String Operators
+
 There are two ways to concatenate strings: by using the `+` operator or by using the `^` operator. The `+` operator maintains compatibility with the .NET Framework string handling features.
 
 The following example illustrates string concatenation.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1006.fs)]
-    
+
 ## String Class
+
 Because the string type in F# is actually a .NET Framework `System.String` type, all the `System.String` members are available. This includes the `+` operator, which is used to concatenate strings, the `Length` property, and the `Chars` property, which returns the string as an array of Unicode characters. For more information about strings, see `System.String`.
 
 By using the `Chars` property of `System.String`, you can access the individual characters in a string by specifying an index, as is shown in the following code.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1005.fs)]
-    
+
 ## String Module
+
 Additional functionality for string handling is included in the `String` module in the `FSharp.Core` namespace. For more information, see [Core.String Module](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.string-module-%5bfsharp%5d).
 
-## See Also
-[F# Language Reference](index.md)
+## See also
+
+- [F# Language Reference](index.md)

@@ -37,8 +37,9 @@ The following C# code example illustrates how to use platform invoke services to
 ## .NET Framework Security  
  For more information, see [Security in .NET](../../../standard/security/index.md).  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Interoperability Overview](../../../csharp/programming-guide/interop/interoperability-overview.md)  
- [A Closer Look at Platform Invoke](../../../framework/interop/consuming-unmanaged-dll-functions.md#a-closer-look-at-platform-invoke)  
- [Marshaling Data with Platform Invoke](../../../framework/interop/marshaling-data-with-platform-invoke.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Interoperability Overview](../../../csharp/programming-guide/interop/interoperability-overview.md)  
+- [A Closer Look at Platform Invoke](../../../framework/interop/consuming-unmanaged-dll-functions.md#a-closer-look-at-platform-invoke)  
+- [Marshaling Data with Platform Invoke](../../../framework/interop/marshaling-data-with-platform-invoke.md)

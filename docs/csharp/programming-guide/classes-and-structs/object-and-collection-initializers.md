@@ -80,7 +80,8 @@ var numbers = new Dictionary<int, string> {
  
  [!code-csharp[csProgGuideLINQ#85](../../../csharp/programming-guide/arrays/codesnippet/CSharp/object-and-collection-initializers_8.cs)]
  
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
+- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)

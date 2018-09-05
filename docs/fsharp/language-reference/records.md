@@ -116,14 +116,10 @@ If you write the same code with classes, the two class objects would be unequal 
 
 If you need reference equality for records, add the attribute `[<ReferenceEquality>]` above the record.
 
-## See Also
+## See also
 
-[F# Types](fsharp-types.md)
-
-[Classes](classes.md)
-
-[F# Language Reference](index.md)
-
-[Reference-Equality](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.referenceequalityattribute-class-%5bfsharp%5d)
-
-[Pattern Matching](pattern-matching.md)
+- [F# Types](fsharp-types.md)
+- [Classes](classes.md)
+- [F# Language Reference](index.md)
+- [Reference-Equality](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.referenceequalityattribute-class-%5bfsharp%5d)
+- [Pattern Matching](pattern-matching.md)

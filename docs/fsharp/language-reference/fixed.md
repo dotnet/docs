@@ -55,6 +55,6 @@ let doPointerWork() =
 doPointerWork()
 ```
 
-## See Also
+## See also
 
-[NativePtr Module](https://msdn.microsoft.com/visualfsharpdocs/conceptual/nativeinterop.nativeptr-module-%5Bfsharp%5D)
+- [NativePtr Module](https://msdn.microsoft.com/visualfsharpdocs/conceptual/nativeinterop.nativeptr-module-%5Bfsharp%5D)

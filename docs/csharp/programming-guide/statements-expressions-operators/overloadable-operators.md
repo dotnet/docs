@@ -26,7 +26,7 @@ C# allows user-defined types to overload operators by defining static member fun
 
 For information about how to overload an operator, see the [operator](../../language-reference/keywords/operator.md) keyword article.
 
-## See also
+## See Also
 
 - [C# Programming Guide](../index.md)
 - [Statements, Expressions, and Operators](index.md)

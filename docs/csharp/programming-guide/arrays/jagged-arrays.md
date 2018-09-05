@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 537c65a6-0e0a-4a00-a2b8-086f38519c70
 ---
 # Jagged Arrays (C# Programming Guide)
+
 A jagged array is an array whose elements are arrays. The elements of a jagged array can be of different dimensions and sizes. A jagged array is sometimes called an "array of arrays." The following examples show how to declare, initialize, and access jagged arrays.  
   
  The following is a declaration of a single-dimensional array that has three elements, each of which is a single-dimensional array of integers:  
@@ -51,14 +52,16 @@ A jagged array is an array whose elements are arrays. The elements of a jagged a
   
  returns a value of 3.  
   
-## Example  
+## Example
+
  This example builds an array whose elements are themselves arrays. Each one of the array elements has a different size.  
   
  [!code-csharp[csProgGuideArrays#18](../../../csharp/programming-guide/arrays/codesnippet/CSharp/jagged-arrays_10.cs)]  
   
-## See Also  
- <xref:System.Array>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Arrays](../../../csharp/programming-guide/arrays/index.md)  
- [Single-Dimensional Arrays](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)  
- [Multidimensional Arrays](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)
+## See Also
+
+- <xref:System.Array>  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Arrays](../../../csharp/programming-guide/arrays/index.md)  
+- [Single-Dimensional Arrays](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)  
+- [Multidimensional Arrays](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)

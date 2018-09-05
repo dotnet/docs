@@ -10,8 +10,8 @@ The API reference links in this article will take you to MSDN.  The docs.microso
 
 A list in F# is an ordered, immutable series of elements of the same type. To perform basic operations on lists, use the functions in the [List module](https://msdn.microsoft.com/library/a2264ba3-2d45-40dd-9040-4f7aa2ad9788).
 
-
 ## Creating and Initializing Lists
+
 You can define a list by explicitly listing out the elements, separated by semicolons and enclosed in square brackets, as shown in the following line of code.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1301.fs)]
@@ -37,6 +37,7 @@ You can also use a sequence expression to create a list. See [Sequence Expressio
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1303.fs)]
 
 ## Operators for Working with Lists
+
 You can attach elements to a list by using the `::` (cons) operator. If `list1` is `[2; 3; 4]`, the following code creates `list2` as `[100; 2; 3; 4]`.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1305.fs)]
@@ -51,8 +52,8 @@ Because lists in F# are immutable, any modifying operations generate new lists i
 
 Lists in F# are implemented as singly linked lists, which means that operations that access only the head of the list are O(1), and element access is O(*n*).
 
-
 ## Properties
+
 The list type supports the following properties:
 
 |Property|Type|Description|
@@ -66,12 +67,13 @@ The list type supports the following properties:
 Following are some examples of using these properties.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1307.fs)]
-    
+
 ## Using Lists
+
 Programming with lists enables you to perform complex operations with a small amount of code. This section describes common operations on lists that are important to functional programming.
 
-
 ### Recursion with Lists
+
 Lists are uniquely suited to recursive programming techniques. Consider an operation that must be performed on every element of a list. You can do this recursively by operating on the head of the list and then passing the tail of the list, which is a smaller list that consists of the original list without the first element, back again to the next level of recursion.
 
 To write such a recursive function, you use the cons operator (`::`) in pattern matching, which enables you to separate the head of a list from the tail.
@@ -96,10 +98,11 @@ Primes Up To 100:
 ```
 
 ## Module Functions
+
 The [List module](https://msdn.microsoft.com/library/a2264ba3-2d45-40dd-9040-4f7aa2ad9788) provides functions that access the elements of a list. The head element is the fastest and easiest to access. Use the property [Head](https://msdn.microsoft.com/library/5f9414fd-6bdb-470a-8b72-40016db30740) or the module function [List.head](https://msdn.microsoft.com/library/22514cc5-0511-498b-a2cc-837b688a6da2). You can access the tail of a list by using the [Tail](https://msdn.microsoft.com/library/2a6f8eb9-dc32-41aa-8b62-2baffaface91) property or the [List.tail](https://msdn.microsoft.com/library/da0a0638-4420-4571-84b6-d09ae601f601) function. To find an element by index, use the [List.nth](https://msdn.microsoft.com/library/1f717d57-89be-4007-a971-9cf5a28d83b1) function. `List.nth` traverses the list. Therefore, it is O(*n*). If your code uses `List.nth` frequently, you might want to consider using an array instead of a list. Element access in arrays is O(1).
 
-
 ### Boolean Operations on Lists
+
 The [List.isEmpty](https://msdn.microsoft.com/library/a7941d44-9e92-427c-b806-c378f4558107) function determines whether a list has any elements.
 
 The [List.exists](https://msdn.microsoft.com/library/15a3ebd5-98f0-44c0-8220-7dedec3e68a8) function applies a Boolean test to elements of a list and returns `true` if any element satisfies the test. [List.exists2](https://msdn.microsoft.com/library/7532b39e-3f4f-4534-a60b-d7721dc6fa7e) is similar but operates on successive pairs of elements in two lists.
@@ -147,6 +150,7 @@ false
 ```
 
 ### Sort Operations on Lists
+
 The [List.sort](https://msdn.microsoft.com/library/17f1030e-aa7e-41dd-94ea-72cb6c04fd3d), [List.sortBy](https://msdn.microsoft.com/library/955bfc5f-ad9c-4f2d-a7ab-91e43eb21359), and [List.sortWith](https://msdn.microsoft.com/library/1d806a54-9166-4198-906d-15101f7916c7) functions sort lists. The sorting function determines which of these three functions to use. `List.sort` uses default generic comparison. Generic comparison uses global operators based on the generic compare function to compare values. It works efficiently with a wide variety of element types, such as simple numeric types, tuples, records, discriminated unions, lists, arrays, and any type that implements `System.IComparable`. For types that implement `System.IComparable`, generic comparison uses the `System.IComparable.CompareTo()` function. Generic comparison also works with strings, but uses a culture-independent sorting order. Generic comparison should not be used on unsupported types, such as function types. Also, the performance of the default generic comparison is best for small structured types; for larger structured types that need to be compared and sorted frequently, consider implementing `System.IComparable` and providing an efficient implementation of the `System.IComparable.CompareTo()` method.
 
 `List.sortBy` takes a function that returns a value that is used as the sort criterion, and `List.sortWith` takes a comparison function as an argument. These latter two functions are useful when you are working with types that do not support comparison, or when the comparison requires more complex comparison semantics, as in the case of culture-aware strings.
@@ -187,6 +191,7 @@ Rev = 1;}]
 ```
 
 ### Search Operations on Lists
+
 Numerous search operations are supported for lists. The simplest, [List.find](https://msdn.microsoft.com/library/0594593e-9c75-44c1-8f5a-a37b2e561c06), enables you to find the first element that matches a given condition.
 
 The following code example demonstrates the use of `List.find` to find the first number that is divisible by 5 in a list.
@@ -217,6 +222,7 @@ The first even value is at position 8.
 ```
 
 ### Arithmetic Operations on Lists
+
 Common arithmetic operations such as sum and average are built into the [List module](https://msdn.microsoft.com/library/a2264ba3-2d45-40dd-9040-4f7aa2ad9788). To work with [List.sum](https://msdn.microsoft.com/library/54d47fe3-5ecf-4883-beb5-e915342a17f9), the list element type must support the `+` operator and have a zero value. All built-in arithmetic types satisfy these conditions. To work with [List.average](https://msdn.microsoft.com/library/2b9a627b-106d-4548-8c4c-ab5058b8f8e1), the element type must support division without a remainder, which excludes integral types but allows for floating point types. The [List.sumBy](https://msdn.microsoft.com/library/b7623389-0fe1-4762-9c67-51079903ab7d) and [List.averageBy](https://msdn.microsoft.com/library/936cc9ec-62af-464d-8726-7999c2f48403) functions take a function as a parameter, and this function's results are used to calculate the values for the sum or average.
 
 The following code demonstrates the use of `List.sum`, `List.sumBy`, and `List.average`.
@@ -231,8 +237,8 @@ The following code shows the use of `List.averageBy`.
 
 The output is `5.5`.
 
-
 ### Lists and Tuples
+
 Lists that contain tuples can be manipulated by zip and unzip functions. These functions combine two lists of single values into one list of tuples or separate one list of tuples into two lists of single values. The simplest [List.zip](https://msdn.microsoft.com/library/3028d790-8f48-4c94-bf08-b058bec3689c) function takes two lists of single elements and produces a single list of tuple pairs. Another version, [List.zip3](https://msdn.microsoft.com/library/003cc28e-0de3-4d99-89ed-cb19028e3c5b), takes three lists of single elements and produces a single list of tuples that have three elements. The following code example demonstrates the use of `List.zip`.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lists/snippet13.fs)]
@@ -277,6 +283,7 @@ The output is as follows:
 ```
 
 ### Operating on List Elements
+
 F# supports a variety of operations on list elements. The simplest is [List.iter](https://msdn.microsoft.com/library/f778d075-81a9-4994-af60-cddcc53a201f), which enables you to call a function on every element of a list. Variations include [List.iter2](https://msdn.microsoft.com/library/ea3b7761-916c-4016-9bd8-651124c98b40), which enables you to perform an operation on elements of two lists, [List.iteri](https://msdn.microsoft.com/library/6dd21ae6-5c00-41cd-8306-821e513d8f60), which is like `List.iter` except that the index of each element is passed as an argument to the function that is called for each element, and [List.iteri2](https://msdn.microsoft.com/library/9658d740-9be5-4bf7-b663-c8ab2b3e196c), which is a combination of the functionality of `List.iter2` and `List.iteri`. The following code example illustrates these functions.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lists/snippet17.fs)]
@@ -377,11 +384,13 @@ The output is as follows:
 ```
 
 ### Operating on Multiple Lists
+
 Lists can be joined together. To join two lists into one, use [List.append](https://msdn.microsoft.com/library/2954da80-3f4a-4a4b-9371-794645c03426). To join more than two lists, use [List.concat](https://msdn.microsoft.com/library/c5afd433-8764-4ea8-a6a8-937fb4d77c4c).
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lists/snippet26.fs)]
-    
+
 ### Fold and Scan Operations
+
 Some list operations involve interdependencies between all of the list elements. The fold and scan operations are like `List.iter` and `List.map` in that you invoke a function on each element, but these operations provide an additional parameter called the *accumulator* that carries information through the computation.
 
 Use `List.fold` to perform a calculation on a list.
@@ -417,22 +426,19 @@ The function [List.reduce](https://msdn.microsoft.com/library/048e1f95-691b-49cb
 In the following code, the first call to the lambda expression is given the arguments 2 and 4, and returns 6, and the next call is given the arguments 6 and 10, so the result is 16.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lists/snippet33.fs)]
-    
+
 ### Converting Between Lists and Other Collection Types
+
 The `List` module provides functions for converting to and from both sequences and arrays. To convert to or from a sequence, use [List.toSeq](https://msdn.microsoft.com/library/7024be4b-ee70-43cc-8d0a-e6564a4ff7c0) or [List.ofSeq](https://msdn.microsoft.com/library/74ab9289-4a59-4433-92eb-3f662d7f7db0). To convert to or from an array, use [List.toArray](https://msdn.microsoft.com/library/ac87dd82-a0cd-40b3-b1fa-dd3168134547) or [List.ofArray](https://msdn.microsoft.com/library/f4bddc26-8c8f-4307-a6d7-a49dceb97032).
 
-
 ### Additional Operations
+
 For information about additional operations on lists, see the library reference topic [Collections.List Module](https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.list-module-%5bfsharp%5d).
 
+## See also
 
-## See Also
-[F# Language Reference](index.md)
-
-[F# Types](fsharp-types.md)
-
-[Sequences](sequences.md)
-
-[Arrays](arrays.md)
-
-[Options](options.md)
+- [F# Language Reference](index.md)
+- [F# Types](fsharp-types.md)
+- [Sequences](sequences.md)
+- [Arrays](arrays.md)
+- [Options](options.md)

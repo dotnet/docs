@@ -14,6 +14,7 @@ ref expression
 ```
 
 ## Remarks
+
 You use the `ref` operator before a value to create a new reference cell that encapsulates the value. You can then change the underlying value because it is mutable.
 
 A reference cell holds an actual value; it is not just an address. When you create a reference cell by using the `ref` operator, you create a copy of the underlying value as an encapsulated mutable value.
@@ -71,11 +72,9 @@ C# programmers should know that `ref` in C# is not the same thing as `ref` in F#
 
 Values marked as `mutable`may be automatically promoted to `'a ref` if captured by a closure; see [Values](values/index.md).
 
-## See Also
-[F# Language Reference](index.md)
+## See also
 
-[Parameters and Arguments](parameters-and-arguments.md)
-
-[Symbol and Operator Reference](symbol-and-operator-reference/index.md)
-
-[Values](values/index.md)
+- [F# Language Reference](index.md)
+- [Parameters and Arguments](parameters-and-arguments.md)
+- [Symbol and Operator Reference](symbol-and-operator-reference/index.md)
+- [Values](values/index.md)

@@ -75,4 +75,4 @@ At this time, there are no other module-bound functions for Value Options.
 
 ## See also
 
-[Options](options.md)
+- [Options](options.md)

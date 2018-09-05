@@ -25,7 +25,8 @@ This example defines two structs, `RomanNumeral` and `BinaryNumeral`, and demons
   
      performs a conversion from a `BinaryNumeral` to a `RomanNumeral`. Because `RomanNumeral` defines an implicit conversion from `BinaryNumeral`, no cast is required.  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)

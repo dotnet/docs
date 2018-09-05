@@ -213,7 +213,7 @@ You can use additional LINQ query features by calling members of the enumerable 
 |[Queries](../../../language-reference/queries/index.md)|Provides reference information about the query clauses that are available in Visual Basic.|  
 |[LINQ (Language-Integrated Query)](../../concepts/linq/index.md)|Includes general information, programming guidance, and samples for LINQ.|  
 |[LINQ to SQL](~/docs/framework/data/adonet/sql/linq/index.md)|Includes general information, programming guidance, and samples for LINQ to SQL.|  
-|[LINQ to Objects]../../concepts/linq/linq-to-objects.md)|Includes general information, programming guidance, and samples for LINQ to Objects.|  
+|[LINQ to Objects](../../concepts/linq/linq-to-objects.md)|Includes general information, programming guidance, and samples for LINQ to Objects.|  
 |[LINQ to ADO.NET (Portal Page)](../../concepts/linq/linq-to-adonet-portal-page.md)|Includes links to general information, programming guidance, and samples for LINQ to ADO.NET.|  
 |[LINQ to XML](../../concepts/linq/linq-to-xml.md)|Includes general information, programming guidance, and samples for LINQ to XML.|  
   

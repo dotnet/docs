@@ -10,7 +10,6 @@ The API reference links in this article will take you to MSDN.  The docs.microso
 
 An *import declaration* specifies a module or namespace whose elements you can reference without using a fully qualified name.
 
-
 ## Syntax
 
 ```fsharp
@@ -18,6 +17,7 @@ open module-or-namespace-name
 ```
 
 ## Remarks
+
 Referencing code by using the fully qualified namespace or module path every time can create code that is hard to write, read, and maintain. Instead, you can use the `open` keyword for frequently used modules and namespaces so that when you reference a member of that module or namespace, you can use the short form of the name instead of the fully qualified name. This keyword is similar to the `using` keyword in C#, `using namespace` in Visual C++, and `Imports` in Visual Basic.
 
 The module or namespace provided must be in the same project or in a referenced project or assembly. If it is not, you can add a reference to the project, or use the `-reference` command`-`line option (or its abbreviation, `-r`). For more information, see [Compiler Options](compiler-options.md).
@@ -40,8 +40,8 @@ printfn "%A" empty
 
 Therefore, be careful when you open modules or namespaces such as `List` or `Seq` that contain members that have identical names; instead, consider using the qualified names. You should avoid any situation in which the code is dependent upon the order of the import declarations.
 
-
 ## Namespaces That Are Open by Default
+
 Some namespaces are so frequently used in F# code that they are opened implicitly without the need of an explicit import declaration. The following table shows the namespaces that are open by default.
 
 |Namespace|Description|
@@ -53,17 +53,15 @@ Some namespaces are so frequently used in F# code that they are opened implicitl
 |`Microsoft.FSharp.Text`|Contains functions for formatted IO, such as the `printf` function.|
 
 ## AutoOpen Attribute
+
 You can apply the `AutoOpen` attribute to an assembly if you want to automatically open a namespace or module when the assembly is referenced. You can also apply the `AutoOpen` attribute to a module to automatically open that module when the parent module or namespace is opened. For more information, see [Core.AutoOpenAttribute Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.autoopenattribute-class-%5bfsharp%5d).
 
-
 ## RequireQualifiedAccess Attribute
+
 Some modules, records, or union types may specify the `RequireQualifiedAccess` attribute. When you reference elements of those modules, records, or unions, you must use a qualified name regardless of whether you include an import declaration. If you use this attribute strategically on types that define commonly used names, you help avoid name collisions and thereby make code more resilient to changes in libraries. For more information, see [Core.RequireQualifiedAccessAttribute Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.requirequalifiedaccessattribute-class-%5Bfsharp%5D).
 
+## See also
 
-## See Also
-[# Language Reference](index.md)
-
-[Namespaces](namespaces.md)
-
-[Modules](modules.md)
-
+- [# Language Reference](index.md)
+- [Namespaces](namespaces.md)
+- [Modules](modules.md)

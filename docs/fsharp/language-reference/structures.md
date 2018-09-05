@@ -23,6 +23,7 @@ type [accessibility-modifier] type-name =
 ```
 
 ## Remarks
+
 Structures are *value types*, which means that they are stored directly on the stack or, when they are used as fields or array elements, inline in the parent type. Unlike classes and records, structures have pass-by-value semantics. This means that they are useful primarily for small aggregates of data that are accessed and copied frequently.
 
 In the previous syntax, two forms are shown. The first is not the lightweight syntax, but it is nevertheless frequently used because, when you use the `struct` and `end` keywords, you can omit the `StructAttribute` attribute, which appears in the second form. You can abbreviate `StructAttribute` to just `Struct`.
@@ -40,10 +41,6 @@ Attributes and accessibility modifiers are allowed on structures, and follow the
 The following code examples illustrate structure definitions.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2501.fs)]
-
-## Struct Records and Discriminated Unions
-
-You can represent [Records](records.md) and [Discriminated Unions](discriminated-unions.md) as structs with the `[<Struct>]` attribute.  See each article to learn more.
 
 ## ByRefLike structs
 
@@ -87,11 +84,13 @@ Use of this attribute emits metadata letting F# and C# know to treat it as `inre
 
 Defining a mutable value inside of a readonly struct produces an error.
 
-## See Also
-[F# Language Reference](index.md)
+## Struct Records and Discriminated Unions
 
-[Classes](classes.md)
+You can represent [Records](records.md) and [Discriminated Unions](discriminated-unions.md) as structs with the `[<Struct>]` attribute.  See each article to learn more.
 
-[Records](records.md)
+## See also
 
-[Members](members/index.md)
+- [F# Language Reference](index.md)
+- [Classes](classes.md)
+- [Records](records.md)
+- [Members](members/index.md)

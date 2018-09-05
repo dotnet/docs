@@ -15,7 +15,8 @@ Because objects are polymorphic, it is possible for a variable of a base class t
   
  [!code-csharp[csProgGuideTypes#40](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-safely-cast-by-using-as-and-is-operators_1.cs)]  
   
-## See Also  
- [Types](../../../csharp/programming-guide/types/index.md)  
- [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)  
- [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md)
+## See Also
+
+- [Types](../../../csharp/programming-guide/types/index.md)  
+- [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)  
+- [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md)

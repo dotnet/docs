@@ -118,7 +118,7 @@ C# 7.3 to use ref local reassignment:
 This second version is more efficient with longer sequences in scenarios where the number sought is
 closer to the end of the array.
 
-## See also
+## See Also
 
-[ref keyword](../../language-reference/keywords/ref.md)  
-[Reference Semantics with Value Types](../../../csharp/reference-semantics-with-value-types.md)
+- [ref keyword](../../language-reference/keywords/ref.md)  
+- [Reference Semantics with Value Types](../../../csharp/reference-semantics-with-value-types.md)

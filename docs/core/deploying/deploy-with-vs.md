@@ -50,7 +50,7 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
 
       1. The **Publish** tab now shows a single profile, **FolderProfile**. The profile's configuration settings are shown in the **Summary** section of the tab.
 
-   The resulting files are placed in a directory named `Publish` that is in a subdirectory of your project's *.\bin\release\netcoreapp2.1* subdirectory.
+   The resulting files are placed in a directory named `Publish` on Windows and `publish` on Unix systems that is in a subdirectory of your project's *.\bin\release\netcoreapp2.1* subdirectory.
 
 Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions. You can choose not to package it with your application's files. You should, however, save it in the event that you want to debug the Release build of your app.
 

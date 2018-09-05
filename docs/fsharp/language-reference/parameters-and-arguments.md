@@ -121,7 +121,7 @@ Baud Rate: 300 Duplex: Half Parity: true
 
 ## Passing by Reference
 
-Passing an F# value by reference involves [byrefs](byrefs.md), which are managed pointer types. Guidance for which type is use is as follows:
+Passing an F# value by reference involves [byrefs](byrefs.md), which are managed pointer types. Guidance for which type to use is as follows:
 
 * Use `inref<'T>` if you only need to read the pointer.
 * Use `outref<'T>` if you only need to write to the pointer.

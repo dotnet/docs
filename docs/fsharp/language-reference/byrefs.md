@@ -6,9 +6,9 @@ ms.date: 09/02/2018
 
 # Byrefs
 
-F# has two major concepts that deal in the space of low-level programming:
+F# has two major feature areas that deal in the space of low-level programming:
 
-* The `byref`/`inref`/`outref` types, which are a managed pointers. They have restrictions on usage so that you cannot compile a program that would be invalid at runtime.
+* The `byref`/`inref`/`outref` types, which are a managed pointers. They have restrictions on usage so that you cannot compile a program that is invalid at runtime.
 * A `byref`-like struct, which is a [structure](structures.md) that has similar semantics and the same compile-time restrictions as `byref<'T>`. One example is <xref:System.Span%601>.
 
 ## Syntax
@@ -40,11 +40,11 @@ There are three forms of `byref`:
 * `outref<'T>`, a managed pointer for writing to the underlying value.
 * `byref<'T>`, a managed pointer for reading and writing the underlying value.
 
-A `byref<'T>` can be passed anywhere where an `inref<'T>` is expected. Similarly, a `byref<'T>` can be passed anywhere where an `outref<'T>` is expected.
+A `byref<'T>` can be passed where an `inref<'T>` is expected. Similarly, a `byref<'T>` can be passed where an `outref<'T>` is expected.
 
 ## Using byrefs
 
-To use a `inref<'T>`, all you need is to get a pointer value with `&`:
+To use a `inref<'T>`, you need to get a pointer value with `&`:
 
 ```fsharp
 open System
@@ -56,7 +56,7 @@ let dt = DateTime.Now
 f &dt // Pass a pointer to 'dt'
 ```
 
-If you wish to write to the pointer by using an `outref<'T>` or `byref<'T>`, then you need to also make the value you grab a pointer to mutable.
+To write to the pointer by using an `outref<'T>` or `byref<'T>`, you must also make the value you grab a pointer to `mutable`.
 
 ```fsharp
 open System
@@ -72,7 +72,7 @@ let mutable dt = DateTime.Now
 f &dt
 ```
 
-If all you are doing is writing the pointer instead of also reading it, consider using `outref<'T>` instead of `byref<'T>`.
+If you are only writing the pointer instead of reading it, consider using `outref<'T>` instead of `byref<'T>`.
 
 ### Inref semantics
 
@@ -98,7 +98,7 @@ All of these rules together mean that the holder of an `inref` pointer may not m
 
 ### Outref semantics
 
-The purpose of `outref<'T>` is for documenting that the pointer should only be read from. Unexpectedly, `outref<'T>` permits reading the underlying value despite its name. This is for compatibility purposes. Semantically, `outref<'T>` is no different than `byref<'T>`.
+The purpose of `outref<'T>` is to indicate that the pointer should only be read from. Unexpectedly, `outref<'T>` permits reading the underlying value despite its name. This is for compatibility purposes. Semantically, `outref<'T>` is no different than `byref<'T>`.
 
 ### Interop with C #
 
@@ -142,7 +142,7 @@ let v =  C.M(res)
 let v2 =  C.M2(res, 4)
 ```
 
-In both cases, the overloads taking `System.DateTime` are resolved rater than the overloads taking `inref<System.DateTime>`.
+In both cases, the overloads taking `System.DateTime` are resolved rather than the overloads taking `inref<System.DateTime>`.
 
 ## Byref-like structs
 
@@ -160,14 +160,14 @@ type S(count1: Span<int>, count2: Span<int>) =
 
 `IsByRefLike` does not imply `Struct`. Both must be present on the type.
 
-A "`byref`-like" struct in F# is a stack-bound value type. It is never allocated on the managed heap. They are useful for high-performance programming, as they are enforced with set of strong checks about the lifetimes and non-capture. These rules are:
+A "`byref`-like" struct in F# is a stack-bound value type. It is never allocated on the managed heap. A `byref`-like struct is useful for high-performance programming, as it is enforced with set of strong checks about lifetime and non-capture. The rules are:
 
 * They can be used as function parameters, method parameters, local variables, method returns.
 * They cannot be static or instance members of a class or normal struct.
 * They cannot be captured by any closure construct (`async` methods or lambda expressions).
 * They cannot be used as a generic parameter.
 
-This last point is crucial for F# "pipeline" style programming, as `|>` is a generic function that parameterizes its input types. This restriction may be relaxed for `|>` in the future, as it is inline and does not make any calls to non-inlined generic functions in its body.
+This last point is crucial for F# pipeline-style programming, as `|>` is a generic function that parameterizes its input types. This restriction may be relaxed for `|>` in the future, as it is inline and does not make any calls to non-inlined generic functions in its body.
 
 Although these rules very strongly restrict usage, they do so to fulfill the promise of high-performance computing in a safe manner.
 
@@ -226,18 +226,18 @@ New sequence:      1 3 7 30 31 63 127 255 511 1023
 
 ## Scoping for byrefs
 
-A `let`-bound value cannot have its reference escape the scope in which it was defined. For example, the following is disallowed:
+A `let`-bound value cannot have its reference exceed the scope in which it was defined. For example, the following is disallowed:
 
 ```fsharp
 let test2 () =
     let x = 12
-    &x // Error: 'x' escapes its defined scope!
+    &x // Error: 'x' exceeds its defined scope!
 
 let test () =
     let x =
         let y = 1
-        &y // Error: `y` escapes its defined scope!
+        &y // Error: `y` exceeds its defined scope!
     ()
 ```
 
-This is for soundness reasons, as it prevents you from getting different results depending on if you compile with optimizations on or off.
+This prevents you from getting different results depending on if you compile with optimizations on or off.

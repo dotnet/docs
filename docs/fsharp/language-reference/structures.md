@@ -44,7 +44,7 @@ The following code examples illustrate structure definitions.
 
 ## ByRefLike structs
 
-You can define your own structs that can adhere to `byref`-like semantics (see [Byrefs](byrefs.md) for more). This is done with the <xref:System.Runtime.CompilerServices.IsByRefLikeAttribute> attribute:
+You can define your own structs that can adhere to `byref`-like semantics: see [Byrefs](byrefs.md) for more information. This is done with the <xref:System.Runtime.CompilerServices.IsByRefLikeAttribute> attribute:
 
 ```fsharp
 open System
@@ -58,7 +58,7 @@ type S(count1: Span<int>, count2: Span<int>) =
 
 `IsByRefLike` does not imply `Struct`. Both must be present on the type.
 
-A "`byref`-like" struct in F# is a stack-bound value type. It is never allocated on the managed heap. They are useful for high-performance programming, as they are enforced with set of strong checks about the lifetimes and non-capture. These rules are:
+A "`byref`-like" struct in F# is a stack-bound value type. It is never allocated on the managed heap. A `byref`-like struct is useful for high-performance programming, as it is enforced with set of strong checks about lifetime and non-capture. The rules are:
 
 * They can be used as function parameters, method parameters, local variables, method returns.
 * They cannot be static or instance members of a class or normal struct.

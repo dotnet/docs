@@ -24,8 +24,12 @@
   
  To create an instance of a user profile in an ASP.NET application, it is recommended that you use the <xref:System.Web.Profile.ProfileBase.Create%2A> method.  
   
-   
-  
+## Notes to Inheritors   
+
+You can create a custom profile implementation that inherits from the <xref:System.Web.Profile.ProfileBase> abstract class and defines properties for the user profile that are not specified in the configuration element. You can specify a custom user-profile type in the web.config file with the `inherits` attribute of the configuration element, as shown in the following example. The code for the `EmployeeProfile` class is included in the Example section of this topic. 
+
+[!code-xml[System.Web.Profile.ProfileBase-Config](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/CS/config.xml)]  
+
 ## Examples  
  The following code example shows a Web.config file that specifies a user profile that contains a `ZipCode` property of type `string` and a `RecentSearchList` property of type <xref:System.Collections.Specialized.StringCollection>. The generated <xref:System.Web.HttpContext.Profile%2A> property of the current <xref:System.Web.HttpContext> will have strongly typed accessors for each of the specified properties.  
   
@@ -47,7 +51,7 @@
 </configuration>  
 ```  
   
- The following code example shows an ASP.NET page that reads and sets the `ZipCode` property specified for the user profile. Before attempting to run this code, set the provider to the default `AspNetSqlProvider` in the ASP.NET configuration settings for the Web site.  
+ The following example shows an ASP.NET page that reads and sets the `ZipCode` property specified for the user profile. Before attempting to run this code, set the provider to the default `AspNetSqlProvider` in the ASP.NET configuration settings for the Web site.  
   
  [!code-aspx-csharp[System.Web.Profile.HttpProfileBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/CS/defaultcs.aspx#1)]
  [!code-aspx-vb[System.Web.Profile.HttpProfileBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/VB/defaultvb.aspx#1)]  
@@ -62,13 +66,6 @@
   
  ]]></format>
     </remarks>
-    <block subset="none" type="overrides">
-      <para>You can create a custom profile implementation that inherits from the <see cref="T:System.Web.Profile.ProfileBase" /> abstract class and defines properties for the user profile that are not specified in the  configuration element. You can specify a custom user-profile type in the Web.config file with the <see langword="inherits" /> attribute of the  configuration element, as shown in the following example. The code for the <c>EmployeeProfile</c> class is included in the Example section of this topic. <br/>
-
-[!code-xml[System.Web.Profile.ProfileBase-Config](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/CS/config.xml)]  
-
-      </para>
-    </block>
     <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
   </Docs>
   <Members>

@@ -27,16 +27,17 @@ The <xref:System.IO.BinaryWriter> and <xref:System.IO.BinaryReader?displayProper
 ## Robust Programming  
  If `Test.data` already exists in the current directory, an <xref:System.IO.IOException> exception is thrown. Use the file mode option <xref:System.IO.FileMode.Create?displayProperty=nameWithType> when you initialize the file stream to always create a new file without throwing an  exception.  
   
-## See Also  
- <xref:System.IO.BinaryReader>  
- <xref:System.IO.BinaryWriter>  
- <xref:System.IO.FileStream>  
- <xref:System.IO.FileStream.Seek%2A?displayProperty=nameWithType>  
- <xref:System.IO.SeekOrigin>  
- [How to: Enumerate Directories and Files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
- [How to: Open and Append to a Log File](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
- [How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
- [How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
- [How to: Read Characters from a String](../../../docs/standard/io/how-to-read-characters-from-a-string.md)  
- [How to: Write Characters to a String](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
- [File and Stream I/O](../../../docs/standard/io/index.md)
+## See also
+
+- <xref:System.IO.BinaryReader>  
+- <xref:System.IO.BinaryWriter>  
+- <xref:System.IO.FileStream>  
+- <xref:System.IO.FileStream.Seek%2A?displayProperty=nameWithType>  
+- <xref:System.IO.SeekOrigin>  
+- [How to: Enumerate Directories and Files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
+- [How to: Open and Append to a Log File](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
+- [How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
+- [How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
+- [How to: Read Characters from a String](../../../docs/standard/io/how-to-read-characters-from-a-string.md)  
+- [How to: Write Characters to a String](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
+- [File and Stream I/O](../../../docs/standard/io/index.md)

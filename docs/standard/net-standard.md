@@ -154,4 +154,4 @@ You can see the set of PCL profiles that are compatible with the .NET Standard:
 
 ## See also
 
-[.NET Standard Versions](https://github.com/dotnet/standard/blob/master/docs/versions.md)
+- [.NET Standard Versions](https://github.com/dotnet/standard/blob/master/docs/versions.md)

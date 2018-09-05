@@ -49,5 +49,6 @@ ms.author: "ronpet"
  [!code-csharp[TPLDataflow_ExecutionBlocks#3](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_executionblocks/cs/dataflowexecutionblocks.cs#3)]
  [!code-vb[TPLDataflow_ExecutionBlocks#3](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_executionblocks/vb/dataflowexecutionblocks.vb#3)]  
   
-## See Also  
- [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+## See also
+
+- [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)

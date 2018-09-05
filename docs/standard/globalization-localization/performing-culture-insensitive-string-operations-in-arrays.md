@@ -15,8 +15,9 @@ Overloads of the <xref:System.Array.Sort%2A?displayProperty=nameWithType> and <x
   
  **Note** Passing **CultureInfo.InvariantCulture** to a comparison method does perform a culture-insensitive comparison. However, it does not cause a non-linguistic comparison, for example, for file paths, registry keys, and environment variables. Neither does it support security decisions based on the comparison result. For a non-linguistic comparison or support for result-based security decisions, the application should use a comparison method that accepts a <xref:System.StringComparison> value. The application should then pass <xref:System.StringComparison.Ordinal>.  
   
-## See Also  
- <xref:System.Array.Sort%2A?displayProperty=nameWithType>  
- <xref:System.Array.BinarySearch%2A?displayProperty=nameWithType>  
- <xref:System.Collections.IComparer>  
- [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)
+## See also
+
+- <xref:System.Array.Sort%2A?displayProperty=nameWithType>  
+- <xref:System.Array.BinarySearch%2A?displayProperty=nameWithType>  
+- <xref:System.Collections.IComparer>  
+- [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)

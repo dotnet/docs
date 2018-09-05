@@ -67,8 +67,9 @@ The localizability review is an intermediate step in the development of a world-
   
  If you've followed the globalization recommendations when developing your application, handled culture-sensitive features correctly, and identified and addressed the localization issues that arose during testing, you can proceed to the next step, [Localization](../../../docs/standard/globalization-localization/localization.md).  
   
-## See Also  
- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)  
- [Localization](../../../docs/standard/globalization-localization/localization.md)  
- [Globalization](../../../docs/standard/globalization-localization/globalization.md)  
- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
+## See also
+
+- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)  
+- [Localization](../../../docs/standard/globalization-localization/localization.md)  
+- [Globalization](../../../docs/standard/globalization-localization/globalization.md)  
+- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)

@@ -30,7 +30,8 @@ This example shows how to parallelize operations by using <xref:System.Threading
   
 -   Copy and paste the entire example into a Microsoft Visual Studio 2010 project and press F5.  
   
-## See Also  
- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
- [How to: Cancel a Task and Its Children](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md)  
- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+## See also
+
+- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
+- [How to: Cancel a Task and Its Children](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md)  
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

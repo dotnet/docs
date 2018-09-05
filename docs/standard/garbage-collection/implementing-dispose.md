@@ -157,11 +157,11 @@ The following example illustrates the dispose pattern for a derived class, `Disp
   
 ## See also
 
-<xref:System.GC.SuppressFinalize%2A>   
-<xref:System.IDisposable>   
-<xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>   
-<xref:Microsoft.Win32.SafeHandles>   
-<xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>   
-<xref:System.Object.Finalize%2A?displayProperty=nameWithType>   
-[How to: Define and Consume Classes and Structs (C++/CLI)](/cpp/dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli)   
-[Dispose Pattern](../../../docs/standard/design-guidelines/dispose-pattern.md)
+- <xref:System.GC.SuppressFinalize%2A>   
+- <xref:System.IDisposable>   
+- <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>   
+- <xref:Microsoft.Win32.SafeHandles>   
+- <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>   
+- <xref:System.Object.Finalize%2A?displayProperty=nameWithType>   
+- [How to: Define and Consume Classes and Structs (C++/CLI)](/cpp/dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli)   
+- [Dispose Pattern](../../../docs/standard/design-guidelines/dispose-pattern.md)

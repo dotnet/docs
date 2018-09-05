@@ -200,7 +200,8 @@ ms.author: "ronpet"
   
  For more information about using type converters to perform conversions, see <xref:System.ComponentModel.TypeConverter?displayProperty=nameWithType>.  
   
-## See Also  
- <xref:System.Convert?displayProperty=nameWithType>  
- <xref:System.IConvertible>  
- [Type Conversion Tables](../../../docs/standard/base-types/conversion-tables.md)
+## See also
+
+- <xref:System.Convert?displayProperty=nameWithType>  
+- <xref:System.IConvertible>  
+- [Type Conversion Tables](../../../docs/standard/base-types/conversion-tables.md)

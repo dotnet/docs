@@ -101,7 +101,7 @@ ms.author: "ronpet"
   
  [Back to top](#introduction)  
   
-## See Also  
+## See also
  [Overview](../../docs/framework/get-started/overview.md)  
  [Language Independence and Language-Independent Components](../../docs/standard/language-independence-and-language-independent-components.md)  
  [Metadata and Self-Describing Components](../../docs/standard/metadata-and-self-describing-components.md)  

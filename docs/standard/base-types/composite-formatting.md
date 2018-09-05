@@ -150,16 +150,17 @@ The .NET composite formatting feature takes a list of objects and a composite fo
  [!code-csharp[Formatting.Composite#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Composite/cs/Composite1.cs#6)]
  [!code-vb[Formatting.Composite#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/Composite1.vb#6)]  
   
-## See Also  
- <xref:System.Console.WriteLine%2A>  
- <xref:System.String.Format%2A?displayProperty=nameWithType>  
- [String interpolation (C#)](../../csharp/language-reference/tokens/interpolated.md)  
- [String interpolation (Visual Basic)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)  
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
- [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)  
- [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)  
- [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)  
- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)  
- [Standard TimeSpan Format Strings](../../../docs/standard/base-types/standard-timespan-format-strings.md)  
- [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)  
- [Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)
+## See also
+
+- <xref:System.Console.WriteLine%2A>  
+- <xref:System.String.Format%2A?displayProperty=nameWithType>  
+- [String interpolation (C#)](../../csharp/language-reference/tokens/interpolated.md)  
+- [String interpolation (Visual Basic)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)  
+- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
+- [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)  
+- [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)  
+- [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)  
+- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)  
+- [Standard TimeSpan Format Strings](../../../docs/standard/base-types/standard-timespan-format-strings.md)  
+- [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)  
+- [Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)

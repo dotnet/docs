@@ -43,15 +43,16 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
   
 ||||  
 |---|---|---|  
-|[add](../../../csharp/language-reference/keywords/add.md)|[alias](../../../csharp/language-reference/keywords/extern-alias.md)|[ascending](../../../csharp/language-reference/keywords/ascending.md)|  
-|[async](../../../csharp/language-reference/keywords/async.md)|[await](../../../csharp/language-reference/keywords/await.md)|[descending](../../../csharp/language-reference/keywords/descending.md)|  
-|[dynamic](../../../csharp/language-reference/keywords/dynamic.md)|[from](../../../csharp/language-reference/keywords/from-clause.md)|[get](../../../csharp/language-reference/keywords/get.md)|  
-|[global](../../../csharp/language-reference/keywords/global.md)|[group](../../../csharp/language-reference/keywords/group-clause.md)|[into](../../../csharp/language-reference/keywords/into.md)|  
-|[join](../../../csharp/language-reference/keywords/join-clause.md)|[let](../../../csharp/language-reference/keywords/let-clause.md)|[nameof](nameof.md)|   
-|[orderby](../../../csharp/language-reference/keywords/orderby-clause.md)|[partial (type)](../../../csharp/language-reference/keywords/partial-type.md)|[partial (method)](../../../csharp/language-reference/keywords/partial-method.md)|   
-|[remove](../../../csharp/language-reference/keywords/remove.md)|[select](../../../csharp/language-reference/keywords/select-clause.md)|[set](../../../csharp/language-reference/keywords/set.md)|   
-|[value](../../../csharp/language-reference/keywords/value.md)|[var](../../../csharp/language-reference/keywords/var.md)|[when (filter condition)](when.md)|   
-|[where (generic type constraint)](../../../csharp/language-reference/keywords/where-generic-type-constraint.md)|[where (query clause)](../../../csharp/language-reference/keywords/where-clause.md)|[yield](../../../csharp/language-reference/keywords/yield.md)|  
+|[add](add.md)|[alias](extern-alias.md)|[ascending](ascending.md)|
+|[async](async.md)|[await](await.md)|[by](by.md)|
+|[descending](descending.md)|[dynamic](dynamic.md)|[equals](equals.md)|
+|[from](from-clause.md)|[get](get.md)|[global](global.md)|
+|[group](group-clause.md)|[into](into.md)|[join](join-clause.md)|
+|[let](let-clause.md)|[nameof](nameof.md)|[on](on.md)|
+|[orderby](orderby-clause.md)|[partial (type)](partial-type.md)|[partial (method)](partial-method.md)|
+|[remove](remove.md)|[select](select-clause.md)|[set](set.md)|
+|[value](value.md)|[var](var.md)|[when (filter condition)](when.md)|
+|[where (generic type constraint)](where-generic-type-constraint.md)|[where (query clause)](where-clause.md)|[yield](yield.md)|
   
 ## See Also
 

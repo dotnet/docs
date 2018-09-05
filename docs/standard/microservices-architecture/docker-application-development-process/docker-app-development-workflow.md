@@ -29,7 +29,7 @@ In this guide, this whole process is detailed and every major step is explained 
 
 When you are using an editor/CLI development approach (for example, Visual Studio Code plus Docker CLI on macOS or Windows), you need to know every step, generally in more detail than if you are using Visual Studio. For more details about working in a CLI environment, refer to the e-book [Containerized Docker Application lifecycle with Microsoft Platforms and Tools](http://aka.ms/dockerlifecycleebook/).
 
-When you're using Visual Studio, many of those steps are handled for you, which dramatically improves your productivity. This is especially true when you are using Visual Studio 2017 and targeting multi-container applications. For instance, with just one mouse click, Visual Studio adds the Dockerfile and *docker-compose.yml* file to your projects with the configuration for your application. When you run the application in Visual Studio, it builds the Docker image and runs the multi-container application directly in Docker. It even allows you to debug several containers at once. These features boost your development speed.
+When you're using Visual Studio, many of those steps are handled for you, which dramatically improves your productivity. This is especially true when you are using Visual Studio 2017 and targeting multi-container applications. For instance, with just one mouse click, Visual Studio adds the *Dockerfile* and *docker-compose.yml* files to your projects with the configuration for your application. When you run the application in Visual Studio, it builds the Docker image and runs the multi-container application directly in Docker. It even allows you to debug several containers at once. These features boost your development speed.
 
 In the guidance that follows, we explain what's happening "under the covers" with Docker.
 
@@ -248,7 +248,7 @@ When you add Docker solution support to a service project in a Visual Studio sol
 
 ![Add Docker Support menu item in Visual Studio](./media/add-container-orchestrator-support.png)
 
-Adding container orchestrator support in Visual Studio not only adds the Dockerfile to your project, but also adds configuration information to a global docker-compose.yml file at the solution level. You'll see a new project node (the *docker-compose.dcproj* project file) in **Solution Explorer** that contains the added docker-compose.yml file:
+Adding container orchestrator support in Visual Studio not only adds the Dockerfile to your project, but also adds configuration information to a global docker-compose.yml file at the solution level. You'll see a new project node (the *docker-compose.dcproj* project file) in **Solution Explorer** that contains the docker-compose.yml file:
 
 ![docker-compose node in Solution Explorer](./media/docker-compose-files.PNG)
 

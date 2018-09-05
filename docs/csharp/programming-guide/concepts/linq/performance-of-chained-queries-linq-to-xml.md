@@ -48,7 +48,7 @@ foreach (var i in query2)
   
  For more information on iterators, see [yield](../../../../csharp/language-reference/keywords/yield.md).  
   
- For a more detailed tutorial on chaining queries together, see [Tutorial: Chaining Queries Together](https://msdn.microsoft.com/library/c08d228a-f07a-4c98-810f-1bf0e8f2257c).  
+ For a more detailed tutorial on chaining queries together, see [Tutorial: Chaining Queries Together](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md).  
   
 ## See Also
 

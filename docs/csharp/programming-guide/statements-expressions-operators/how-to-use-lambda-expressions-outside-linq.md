@@ -26,4 +26,4 @@ public partial class Form1 : Form
 
 - [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
 - [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
-- [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)
+- [Language Integrated Query (LINQ))](../../../csharp/programming-guide/concepts/linq/index.md)

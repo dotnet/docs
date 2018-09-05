@@ -13,15 +13,19 @@ A *tuple* is a grouping of unnamed but ordered values, possibly of different typ
 (element, ... , element)
 struct(element, ... ,element )
 ```
+
 ## Remarks
+
 Each *element* in the previous syntax can be any valid F# expression.
 
 ## Examples
+
 Examples of tuples include pairs, triples, and so on, of the same or different types. Some examples are illustrated in the following code.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L6-L21)]
-    
+
 ## Obtaining Individual Values
+
 You can use pattern matching to access and assign names for tuple elements, as shown in the following code.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L27-L29)]
@@ -53,6 +57,7 @@ There is no built-in function that returns the third element of a triple, but yo
 Generally, it is better to use pattern matching to access individual tuple elements.
 
 ## Using Tuples
+
 Tuples provide a convenient way to return multiple values from a function, as shown in the following example. This example performs integer division and returns the rounded result of the operation as a first member of a tuple pair and the remainder as a second member of the pair.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L83-L86)]
@@ -68,6 +73,7 @@ The usual syntax for defining the function `let sum a b = a + b` enables you to 
 Using a tuple as the parameter disables currying. For more information, see "Partial Application of Arguments" in [Functions](functions/index.md).
 
 ## Names of Tuple Types
+
 When you write out the name of a type that is a tuple, you use the `*` symbol to separate elements. For a tuple that consists of an `int`, a `float`, and a `string`, such as `(10, 10.0, "ten")`, the type would be written as follows.
 
 ```fsharp
@@ -111,6 +117,7 @@ You must pattern match on one tuple and construct the other with the constituent
 [!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/interop.fsx#L18-L22)]
 
 ## Compiled Form of Reference Tuples
+
 This section explains the form of tuples when they're compiled.  The information here isn't necessary to read unless you are targeting .NET Framework 3.5 or lower.
 
 Tuples are compiled into objects of one of several generic types, all named `System.Tuple`, that are overloaded on the arity, or number of type parameters. Tuple types appear in this form when you view them from another language, such as C# or Visual Basic, or when you are using a tool that is not aware of F# constructs. The `Tuple` types were introduced in .NET Framework 4. If you are targeting an earlier version of the .NET Framework, the compiler uses versions of [System.Tuple](https://msdn.microsoft.com/library/5ac7953d-acdc-4a58-bfb7-c1f6406c0fa3) from the 2.0 version of the F# Core Library. The types in this library are used only for applications that target the 2.0, 3.0, and 3.5 versions of the .NET Framework. Type forwarding is used to ensure binary compatibility between .NET Framework 2.0 and .NET Framework 4 F# components.
@@ -119,7 +126,7 @@ Tuples are compiled into objects of one of several generic types, all named `Sys
 
 Struct tuples (for example, `struct (x, y)`), are fundamentally different from reference tuples.  They are compiled into the <xref:System.ValueTuple> type, overloaded by arity, or the number of type parameters.  They are equivalent to [C# 7.0 Tuples](../../csharp/tuples.md) and [Visual Basic 2017 Tuples](../../visual-basic/programming-guide/language-features/data-types/tuples.md), and interoperate bidirectionally.
 
-## See Also
-[F# Language Reference](index.md)
+## See also
 
-[F# Types](fsharp-types.md)
+- [F# Language Reference](index.md)
+- [F# Types](fsharp-types.md)

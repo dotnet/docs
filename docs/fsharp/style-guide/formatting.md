@@ -259,24 +259,24 @@ Indent `{` in type definition by 4 spaces and start the field list on the same l
 ```fsharp
 // OK
 type PostalAddress =
-    { Address : string
-      City : string
-      Zip : string }
+    { Address: string
+      City: string
+      Zip: string }
     member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
 
 // Not OK
 type PostalAddress =
-  { Address : string
-    City : string
-    Zip : string }
+  { Address: string
+    City: string
+    Zip: string }
     member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
     
 // Unusual in F#
 type PostalAddress =
     { 
-        Address : string
-        City : string
-        Zip : string
+        Address: string
+        City: string
+        Zip: string
     }
 ```
 
@@ -285,9 +285,9 @@ Placing the opening token on the same line and the closing token on a new line i
 ```fsharp
 //  OK, but verbose syntax required
 type PostalAddress = { 
-    Address : string
-    City : string
-    Zip : string
+    Address: string
+    City: string
+    Zip: string
 } with
     member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
 ```

@@ -24,5 +24,6 @@ The following example shows one way that user code can poll a cancellation token
   
  If you are calling <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A>, you only have to explicitly check the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property if you have other work to do in response to the cancellation besides throwing the exception. In this example, you can see that the code actually accesses the property twice: once in the explicit access and again in the <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A> method. But because the act of reading the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property involves only one volatile read instruction per access, the double access is not significant from a performance perspective. It is still preferable to call the method rather than manually throw the <xref:System.OperationCanceledException>.  
   
-## See Also  
- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)
+## See also
+
+- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)

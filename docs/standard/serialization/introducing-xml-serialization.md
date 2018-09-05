@@ -169,15 +169,15 @@ For a complete list of type mappings, see the **DataType** property for any of t
 
 - <xref:System.Xml.Serialization.XmlRootAttribute>
 
-## See Also
+## See also
 
-<xref:System.Xml.Serialization.XmlSerializer>  
-<xref:System.Runtime.Serialization.DataContractSerializer>  
-<xref:System.IO.FileStream>  
-[XML and SOAP Serialization](xml-and-soap-serialization.md)  
-[Binary Serialization](binary-serialization.md)  
-[Serialization](index.md)  
-<xref:System.Xml.Serialization.XmlSerializer>  
-[Examples of XML Serialization](examples-of-xml-serialization.md)  
-[How to: Serialize an Object](how-to-serialize-an-object.md)  
-[How to: Deserialize an Object](how-to-deserialize-an-object.md)  
+- <xref:System.Xml.Serialization.XmlSerializer>
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.IO.FileStream>
+- [XML and SOAP Serialization](xml-and-soap-serialization.md)
+- [Binary Serialization](binary-serialization.md)
+- [Serialization](index.md)
+- <xref:System.Xml.Serialization.XmlSerializer>
+- [Examples of XML Serialization](examples-of-xml-serialization.md)
+- [How to: Serialize an Object](how-to-serialize-an-object.md)
+- [How to: Deserialize an Object](how-to-deserialize-an-object.md)

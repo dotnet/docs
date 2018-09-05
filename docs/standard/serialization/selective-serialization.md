@@ -25,7 +25,8 @@ If possible, make an object that could contain security-sensitive data nonserial
 
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
   
-## See also  
- [Binary Serialization](binary-serialization.md)  
- [XML and SOAP Serialization](xml-and-soap-serialization.md)  
- [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)
+## See also
+
+- [Binary Serialization](binary-serialization.md)  
+- [XML and SOAP Serialization](xml-and-soap-serialization.md)  
+- [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)

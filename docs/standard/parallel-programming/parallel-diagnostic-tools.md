@@ -23,5 +23,6 @@ Visual Studio provides extensive support for debugging and profiling multi-threa
 ## Profiling  
  The Concurrency Visualizer report views enable you to visualize how the threads in a parallel program interact with each other and with threads from other processes on the system. For more information, see [Concurrency Visualizer](/visualstudio/profiling/concurrency-visualizer).  
   
-## See Also  
- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)
+## See also
+
+- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)

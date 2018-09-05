@@ -261,6 +261,7 @@ The Task Parallel Library (TPL) is based on the concept of a *task*, which repre
 |[Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)|Describes how to use <xref:System.Threading.Tasks.Parallel.For%2A> and <xref:System.Threading.Tasks.Parallel.ForEach%2A> to create parallel loops over data.|  
 |[Parallel Programming](../../../docs/standard/parallel-programming/index.md)|Top level node for .NET Framework parallel programming.|  
   
-## See Also  
- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
- [Samples for Parallel Programming with the .NET Framework](https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)
+## See also
+
+- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
+- [Samples for Parallel Programming with the .NET Framework](https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)

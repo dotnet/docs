@@ -26,7 +26,7 @@ function2-body
 
 Recursive functions, functions that call themselves, are identified explicitly in the F# language. This makes the identifer that is being defined available in the scope of the function.
 
-The following code illustrates a recursive function that computes the *n*th Fibonacci number.
+The following code illustrates a recursive function that computes the *n*<sup>th</sup> Fibonacci number.
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet4001.fs)]
 

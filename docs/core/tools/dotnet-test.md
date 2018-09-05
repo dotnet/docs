@@ -246,6 +246,10 @@ Run the tests in the `test1` project:
 
 `dotnet test ~/projects/test1/test1.csproj`
 
+Run the tests in the project in the current directory and generate a test results file in the trx format:
+
+`dotnet test --logger:trx`
+
 ## Filter option details
 
 `--filter <EXPRESSION>`

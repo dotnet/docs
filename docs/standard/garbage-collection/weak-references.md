@@ -46,5 +46,6 @@ The garbage collector cannot collect an object in use by an application while th
   
  Avoid using weak references as an automatic solution to memory management problems. Instead, develop an effective caching policy for handling your application's objects.  
   
-## See Also  
- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)
+## See also
+
+- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)

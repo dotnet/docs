@@ -47,5 +47,6 @@ ms.author: "ronpet"
 |[Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)|Provides an overview of the Task Parallel Library.|  
 |[Parallel Programming](../../../docs/standard/parallel-programming/index.md)|Introduces Parallel Programming in the .NET Framework.|  
   
-## See Also  
- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)
+## See also
+
+- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)

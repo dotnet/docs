@@ -72,4 +72,5 @@ The .NET Framework supports the standard numeric integral and floating-point pri
  SIMD can also be downloaded as a [NuGet package](https://www.nuget.org/packages/System.Numerics.Vectors).  The NuGET package also includes a generic <xref:System.Numerics.Vector%601> structure that allows you to create a vector of any primitive numeric type. (The primitive numeric types include all numeric types in the <xref:System> namespace except for <xref:System.Decimal>.) In addition, the <xref:System.Numerics.Vector%601> structure provides a library of convenience methods that you can call when working with vectors.  
   
 ## See also
- [Application Essentials](../../docs/standard/application-essentials.md)
+
+- [Application Essentials](../../docs/standard/application-essentials.md)

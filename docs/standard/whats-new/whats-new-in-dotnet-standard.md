@@ -87,5 +87,5 @@ dotnet new classlib -lang vb
 
 ## See also
 
-[.NET Standard](../net-standard.md)  
-[Introducing .NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)
+- [.NET Standard](../net-standard.md)  
+- [Introducing .NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)

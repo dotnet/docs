@@ -157,11 +157,12 @@ If you have an operation that will take a long time to complete, and you do not 
     > [!CAUTION]
     >  When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md) before implementing any solution that uses multithreading.  
   
-## See Also  
- <xref:System.ComponentModel.BackgroundWorker>  
- [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md)  
- [Multithreading in Components](https://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
- [NOT IN BUILD: Multithreading in Visual Basic](https://msdn.microsoft.com/library/c731a50c-09c1-4468-9646-54c86b75d269)  
- [How to: Implement a Form That Uses a Background Operation](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)  
- [Walkthrough: Running an Operation in the Background](../../../../docs/framework/winforms/controls/walkthrough-running-an-operation-in-the-background.md)  
- [BackgroundWorker Component](../../../../docs/framework/winforms/controls/backgroundworker-component.md)
+## See also
+
+- <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType>
+- [Managed Threading](../../../../docs/standard/threading/index.md)
+- [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md)
+- [Event-based Asynchronous Pattern Overview](../../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)
+- [How to: Implement a Form That Uses a Background Operation](how-to-implement-a-form-that-uses-a-background-operation.md)  
+- [Walkthrough: Running an Operation in the Background](walkthrough-running-an-operation-in-the-background.md)
+- [BackgroundWorker Component](backgroundworker-component.md)

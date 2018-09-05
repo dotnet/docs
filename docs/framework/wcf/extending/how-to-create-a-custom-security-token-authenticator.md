@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Custom Security Token Authenticator"
+title: "How to: create a custom security token authenticator"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -10,7 +10,7 @@ ms.assetid: 10e245f7-d31e-42e7-82a2-d5780325d372
 author: "BrucePerlerMS"
 manager: "mbaldwin"
 ---
-# How to: Create a custom security token authenticator
+# How to: create a custom security token authenticator
 This topic shows how to create a custom security token authenticator and how to integrate it with a custom security token manager. A security token authenticator validates the content of a security token provided with an incoming message. If the validation succeeds, the authenticator returns a collection of <xref:System.IdentityModel.Policy.IAuthorizationPolicy> instances that, when evaluated, returns a set of claims.  
   
  To use a custom security token authenticator in Windows Communication Foundation (WCF), you must first create custom credentials and security token manager implementations. For more information about creating custom credentials and a security token manager, see [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md). For more information about credentials, security token manager, and provider and authenticator classes, see [Security Architecture](http://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f).  

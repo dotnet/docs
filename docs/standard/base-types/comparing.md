@@ -144,7 +144,7 @@ ms.author: "ronpet"
   
  Both methods are useful when used in conjunction with the **String.Remove** method. You can use either the **IndexOf** or **LastIndexOf** methods to retrieve the position of a character, and then supply that position to the **Remove** method in order to remove a character or a word that begins with that character.  
   
-## See also  
+## See also
 
 - [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
 - [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)

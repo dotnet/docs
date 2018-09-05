@@ -65,6 +65,7 @@ Because a Web page can be displayed anywhere in the world, users can input numer
 ## .NET Framework Security  
  To prevent a user from injecting script into the HTML stream, user input should never be directly echoed back in the server response. Instead, it should be encoded by using the <xref:System.Web.HttpServerUtility.HtmlEncode%2A?displayProperty=nameWithType> method.  
   
-## See Also  
- [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)  
- [Parsing Numeric Strings](../../../docs/standard/base-types/parsing-numeric.md)
+## See also
+
+- [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)  
+- [Parsing Numeric Strings](../../../docs/standard/base-types/parsing-numeric.md)

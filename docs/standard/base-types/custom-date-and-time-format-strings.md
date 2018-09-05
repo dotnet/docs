@@ -736,9 +736,10 @@ A date and time format string defines the text representation of a <xref:System.
 
  The result string produced by many of the custom date and time format specifiers also depends on properties of the current <xref:System.Globalization.DateTimeFormatInfo> object. Your application can change the result produced by some custom date and time format specifiers by changing the corresponding <xref:System.Globalization.DateTimeFormatInfo> property. For example, the "ddd" format specifier adds an abbreviated weekday name found in the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A> string array to the result string. Similarly, the "MMMM" format specifier adds a full month name found in the <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A> string array to the result string.
 
-## See Also
- <xref:System.DateTime?displayProperty=nameWithType>
- <xref:System.IFormatProvider?displayProperty=nameWithType>
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
- [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)
- [Sample: .NET Framework 4 Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)
+## See also
+
+- <xref:System.DateTime?displayProperty=nameWithType>
+- <xref:System.IFormatProvider?displayProperty=nameWithType>
+- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
+- [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)
+- [Sample: .NET Framework 4 Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)

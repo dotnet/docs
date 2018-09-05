@@ -412,7 +412,7 @@ The following example uses both the escape character and the single quote to def
 
 [Back to table](#table)
 
-## See Also
+## See also
 
-[Formatting Types](formatting-types.md)  
-[Standard TimeSpan Format Strings](standard-timespan-format-strings.md)  
+- [Formatting Types](formatting-types.md)  
+- [Standard TimeSpan Format Strings](standard-timespan-format-strings.md)  

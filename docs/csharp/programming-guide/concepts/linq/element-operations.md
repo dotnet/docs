@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 283206c9-3246-4c48-b01a-d9de409a7231
 ---
 # Element Operations (C#)
+
 Element operations return a single, specific element from a sequence.  
   
  The standard query operator methods that perform element operations are listed in the following section.  

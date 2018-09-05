@@ -8,6 +8,7 @@ ms.date: 07/20/2018
 This topic describes bitwise operators that are available in the F# language.
 
 ## Summary of Bitwise Operators
+
 The following table describes the bitwise operators that are supported for unboxed integral types in the F# language.
 
 |Operator|Notes|
@@ -21,10 +22,8 @@ The following table describes the bitwise operators that are supported for unbox
 
 The following types can be used with bitwise operators: `byte`, `sbyte`, `int16`, `uint16`, `int32 (int)`, `uint32`, `int64`, `uint64`, `nativeint`, and `unativeint`.
 
-## See Also
-[Symbol and Operator Reference](index.md)
+## See also
 
-[Arithmetic Operators](arithmetic-operators.md)
-
-[Boolean Operators](boolean-operators.md)
-
+- [Symbol and Operator Reference](index.md)
+- [Arithmetic Operators](arithmetic-operators.md)
+- [Boolean Operators](boolean-operators.md)

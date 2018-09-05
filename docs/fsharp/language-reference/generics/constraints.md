@@ -7,7 +7,6 @@ ms.date: 05/16/2016
 
 This topic describes constraints that you can apply to generic type parameters to specify the requirements for a type argument in a generic type or function.
 
-
 ## Syntax
 
 ```fsharp
@@ -15,6 +14,7 @@ type-parameter-list when constraint1 [ and constraint2]
 ```
 
 ## Remarks
+
 There are several different constraints you can apply to limit the types that can be used in a generic type. The following table lists and describes these constraints.
 
 |Constraint|Syntax|Description|
@@ -108,7 +108,7 @@ type Class14<'T,'U when 'T : equality and 'U : equality> =
 class end
 ```
 
-## See Also
-[Generics](index.md)
+## See also
 
-[Constraints](constraints.md)
+- [Generics](index.md)
+- [Constraints](constraints.md)

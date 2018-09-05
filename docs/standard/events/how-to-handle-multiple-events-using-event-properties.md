@@ -44,8 +44,9 @@ To use event properties, you define the event properties in the class that raise
  [!code-csharp[Conceptual.Events.Other#31](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.events.other/cs/example3.cs#31)]
  [!code-vb[Conceptual.Events.Other#31](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.events.other/vb/example3.vb#31)]  
   
-## See Also  
- <xref:System.ComponentModel.EventHandlerList?displayProperty=nameWithType>  
- [Events](../../../docs/standard/events/index.md)  
- <xref:System.Web.UI.Control.Events%2A>  
- [How to: Declare Custom Events To Conserve Memory](~/docs/visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)
+## See also
+
+- <xref:System.ComponentModel.EventHandlerList?displayProperty=nameWithType>  
+- [Events](../../../docs/standard/events/index.md)  
+- <xref:System.Web.UI.Control.Events%2A>  
+- [How to: Declare Custom Events To Conserve Memory](~/docs/visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)

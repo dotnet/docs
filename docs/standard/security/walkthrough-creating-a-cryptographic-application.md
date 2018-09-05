@@ -204,5 +204,6 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
   
 2.  Click the `Decrypt File` button and select the file just encrypted. This will be successful because you have the full key pair to decrypt.  
   
-## See Also  
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+## See also
+
+- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)

@@ -24,5 +24,6 @@ XmlDocument doc = new XmlDocument();
   
  There is a class called the **XmlNameTable**. This class is a table of atomized string objects. This table provides an efficient means for the XML parser to use the same string object for all repeated element and attribute names in an XML document. An **XmlNameTable** is automatically created when a document is created as shown above and is loaded with attribute and element names when the document is loaded. If you already have a document with a name table, and those names would be useful in another document, you can create a new document using the **Load** method that takes an **XmlNameTable** as a parameter. When the document is created with this method, it uses the existing **XmlNameTable** with all the attributes and elements already loaded into it from the other document. It can be used for efficiently comparing element and attribute names. For more information on the **XmlNameTable**, see [Object Comparison Using XmlNameTable](../../../../docs/standard/data/xml/object-comparison-using-xmlnametable.md). For reference, see <xref:System.Xml.XmlNameTable>.  
   
-## See Also  
- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## See also
+
+- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

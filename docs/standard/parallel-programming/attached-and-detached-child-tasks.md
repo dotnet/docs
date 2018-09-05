@@ -72,6 +72,7 @@ A *child task* (or *nested task*) is a <xref:System.Threading.Tasks.Task?display
   
  You might also want to prevent a child task from attaching to its parent when the child task does not finish in a timely manner. Because a parent task does not finish until all child tasks finish, a long-running child task can cause the overall app to perform poorly. For an example that shows how to improve app performance by preventing a task from attaching to its parent task, see [How to: Prevent a Child Task from Attaching to its Parent](../../../docs/standard/parallel-programming/how-to-prevent-a-child-task-from-attaching-to-its-parent.md).  
   
-## See Also  
- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
- [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)
+## See also
+
+- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
+- [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)

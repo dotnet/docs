@@ -52,5 +52,6 @@ The following code example shows the Web method on the client that turns off ASP
   
 -   The code uses the following namespaces: <xref:System>, <xref:System.Runtime.Serialization>, <xref:System.Web.Services>, <xref:System.Web.Services.Protocols>, <xref:System.Xml>, <xref:System.Xml.Serialization>, and <xref:System.Xml.Schema>.  
   
-## See also  
- [Custom Serialization](custom-serialization.md)
+## See also
+
+- [Custom Serialization](custom-serialization.md)

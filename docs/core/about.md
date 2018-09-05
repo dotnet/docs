@@ -25,7 +25,7 @@ C#, Visual Basic, and F# languages can be used to write applications and librari
 
 .NET Core exposes APIs for many scenarios, a few of which follow:
 
-- Primitive types, such as [string][string] and [int][int].
+- Primitive types, such as [bool][bool] and [int][int].
 - Collections, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.
 - Utility types, such as <xref:System.Net.Http.HttpClient?displayProperty=nameWithType>, and <xref:System.IO.FileStream?displayProperty=nameWithType>.
 - Data types, such as <xref:System.Data.DataSet?displayProperty=nameWithType>, and [DbSet][dbset].
@@ -33,7 +33,7 @@ C#, Visual Basic, and F# languages can be used to write applications and librari
 
 .NET Core provides compatibility with .NET Framework and Mono APIs by implementing the [.NET Standard](../standard/net-standard.md) specification.
 
-[string]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/string
+[bool]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/bool
 [int]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/int
 [pipelines]: https://blogs.msdn.microsoft.com/dotnet/2018/07/09/system-io-pipelines-high-performance-io-in-net/
 [dbset]: https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/

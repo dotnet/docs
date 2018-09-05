@@ -78,8 +78,9 @@ The attribute was not found.
   
  You can use the members of the <xref:System.Type> class to get the individual methods and members in the passed class. This example first queries the **Type** object to get attribute information for the class level. Next, it uses <xref:System.Type.GetMethods%2A?displayProperty=nameWithType> to place instances of all methods into an array of <xref:System.Reflection.MemberInfo?displayProperty=nameWithType> objects to retrieve attribute information for the method level. You can also use the <xref:System.Type.GetProperties%2A?displayProperty=nameWithType> method to check for attributes on the property level or <xref:System.Type.GetConstructors%2A?displayProperty=nameWithType> to check for attributes on the constructor level.  
   
-## See Also  
- <xref:System.Type?displayProperty=nameWithType>  
- <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType>  
- <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>  
- [Attributes](../../../docs/standard/attributes/index.md)
+## See also
+
+- <xref:System.Type?displayProperty=nameWithType>  
+- <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType>  
+- <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>  
+- [Attributes](../../../docs/standard/attributes/index.md)

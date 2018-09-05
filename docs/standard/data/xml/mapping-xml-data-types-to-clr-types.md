@@ -73,5 +73,6 @@ The following table describes the default mapping between the XML data types and
 |Comment node|<xref:System.Xml.XPath.XPathNavigator>|  
 |Processing instruction node|<xref:System.Xml.XPath.XPathNavigator>|  
   
-## See Also  
- [Type Support in the System.Xml Classes](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)
+## See also
+
+- [Type Support in the System.Xml Classes](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)

@@ -26,5 +26,6 @@ The following code example uses a `try`/`catch` block to catch an <xref:System.A
 [!code-csharp[CodeTryCatchFinallyExample#3](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeTryCatchFinallyExample/CS/source2.cs#3)]
 [!code-vb[CodeTryCatchFinallyExample#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeTryCatchFinallyExample/VB/source2.vb#3)]  
 
-## See Also  
-[Exceptions](index.md)   
+## See also
+
+- [Exceptions](index.md)

@@ -94,6 +94,7 @@ This section describes the best practices to follow when developing world-ready 
   
 5.  Note that the uiCulture value can be set to the browser accept language.  
   
-## See Also  
- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)  
- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
+## See also
+
+- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)  
+- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)

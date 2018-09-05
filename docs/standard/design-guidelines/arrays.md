@@ -23,7 +23,8 @@ ms.author: "ronpet"
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- <xref:System.Array>  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
- [Usage Guidelines](../../../docs/standard/design-guidelines/usage-guidelines.md)
+## See also
+
+- <xref:System.Array>  
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+- [Usage Guidelines](../../../docs/standard/design-guidelines/usage-guidelines.md)

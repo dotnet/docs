@@ -73,8 +73,9 @@ Be sure to choose your collection class carefully. Using the wrong type can rest
   
  PLINQ provides a parallel implementation of LINQ to Objects that can offer faster query execution in many scenarios, through more efficient use of multi-core computers. For more information, see [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md).  
   
-## See Also  
- <xref:System.Collections>  
- <xref:System.Collections.Specialized>  
- <xref:System.Collections.Generic>  
- [Thread-Safe Collections](../../../docs/standard/collections/thread-safe/index.md)
+## See also
+
+- <xref:System.Collections>  
+- <xref:System.Collections.Specialized>  
+- <xref:System.Collections.Generic>  
+- [Thread-Safe Collections](../../../docs/standard/collections/thread-safe/index.md)

@@ -85,5 +85,6 @@ Unhandled exceptions that are thrown by user code that is running inside a task 
 ## UnobservedTaskException Event  
  In some scenarios, such as when hosting untrusted plug-ins, benign exceptions might be common, and it might be too difficult to manually observe them all. In these cases, you can handle the <xref:System.Threading.Tasks.TaskScheduler.UnobservedTaskException?displayProperty=nameWithType> event. The <xref:System.Threading.Tasks.UnobservedTaskExceptionEventArgs?displayProperty=nameWithType> instance that is passed to your handler can be used to prevent the unobserved exception from being propagated back to the joining thread.  
   
-## See Also  
- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+## See also
+
+- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)

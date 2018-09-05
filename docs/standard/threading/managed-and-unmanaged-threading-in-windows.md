@@ -57,9 +57,10 @@ Management of all threads is done through the <xref:System.Threading.Thread> cla
 ## Blocking Issues  
  If a thread makes an unmanaged call into the operating system that has blocked the thread in unmanaged code, the runtime will not take control of it for <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> or <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>. In the case of <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>, the runtime marks the thread for **Abort** and takes control of it when it re-enters managed code. It is preferable for you to use managed blocking rather than unmanaged blocking. <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=nameWithType>,<xref:System.Threading.WaitHandle.WaitAny%2A?displayProperty=nameWithType>, <xref:System.Threading.WaitHandle.WaitAll%2A?displayProperty=nameWithType>, <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType>, <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=nameWithType>, <xref:System.Threading.Thread.Join%2A?displayProperty=nameWithType>, <xref:System.GC.WaitForPendingFinalizers%2A?displayProperty=nameWithType>, and so on are all responsive to <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> and to <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>. Also, if your thread is in a single-threaded apartment, all these managed blocking operations will correctly pump messages in your apartment while your thread is blocked.  
   
-## See Also  
- <xref:System.Threading.Thread.ApartmentState%2A?displayProperty=nameWithType>  
- <xref:System.Threading.ThreadState>  
- <xref:System.EnterpriseServices.ServicedComponent>  
- <xref:System.Threading.Thread>  
- <xref:System.Threading.Monitor>
+## See also
+
+- <xref:System.Threading.Thread.ApartmentState%2A?displayProperty=nameWithType>  
+- <xref:System.Threading.ThreadState>  
+- <xref:System.EnterpriseServices.ServicedComponent>  
+- <xref:System.Threading.Thread>  
+- <xref:System.Threading.Monitor>

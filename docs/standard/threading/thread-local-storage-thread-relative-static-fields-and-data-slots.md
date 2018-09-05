@@ -51,9 +51,10 @@ You can use managed thread local storage (TLS) to store data that is unique to a
   
  Named slots can be convenient, because you can retrieve the slot when you need it by passing its name to the <xref:System.Threading.Thread.GetNamedDataSlot%2A> method, instead of maintaining a reference to an unnamed slot. However, if another component uses the same name for its thread-relative storage and a thread executes code from both your component and the other component, the two components might corrupt each other's data. (This scenario assumes that both components are running in the same application domain, and that they are not designed to share the same data.)  
   
-## See Also  
- <xref:System.ContextStaticAttribute>  
- <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType>  
- <xref:System.ThreadStaticAttribute>  
- <xref:System.Runtime.Remoting.Messaging.CallContext>  
- [Threading](../../../docs/standard/threading/index.md)
+## See also
+
+- <xref:System.ContextStaticAttribute>  
+- <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType>  
+- <xref:System.ThreadStaticAttribute>  
+- <xref:System.Runtime.Remoting.Messaging.CallContext>  
+- [Threading](../../../docs/standard/threading/index.md)

@@ -43,12 +43,13 @@ You can use a <xref:System.Threading.Mutex> object to provide exclusive access t
   
  For information on access control security for mutexes, see the <xref:System.Security.AccessControl.MutexSecurity> and <xref:System.Security.AccessControl.MutexAccessRule> classes, the <xref:System.Security.AccessControl.MutexRights> enumeration, the <xref:System.Threading.Mutex.GetAccessControl%2A>, <xref:System.Threading.Mutex.SetAccessControl%2A>, and <xref:System.Threading.Mutex.OpenExisting%2A> methods of the <xref:System.Threading.Mutex> class, and the <xref:System.Threading.Mutex.%23ctor%28System.Boolean%2CSystem.String%2CSystem.Boolean%40%2CSystem.Security.AccessControl.MutexSecurity%29> constructor.  
   
-## See Also  
- <xref:System.Threading.Mutex>  
- <xref:System.Threading.Mutex.%23ctor%2A>  
- <xref:System.Security.AccessControl.MutexSecurity>  
- <xref:System.Security.AccessControl.MutexAccessRule>  
- [Threading](../../../docs/standard/threading/index.md)  
- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)  
- [Monitors](https://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)  
- [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)
+## See also
+
+- <xref:System.Threading.Mutex>  
+- <xref:System.Threading.Mutex.%23ctor%2A>  
+- <xref:System.Security.AccessControl.MutexSecurity>  
+- <xref:System.Security.AccessControl.MutexAccessRule>  
+- [Threading](../../../docs/standard/threading/index.md)  
+- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)  
+- [Monitors](https://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)  
+- [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)

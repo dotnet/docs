@@ -159,15 +159,16 @@ ms.author: "ronpet"
   
  For a conceptual overview, see [Interlocked Operations](../../../docs/standard/threading/interlocked-operations.md).  
   
-## See Also  
- [Synchronizing Data for Multithreading](../../../docs/standard/threading/synchronizing-data-for-multithreading.md)  
- [Monitors](https://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)  
- [Mutexes](../../../docs/standard/threading/mutexes.md)  
- [Semaphore and SemaphoreSlim](../../../docs/standard/threading/semaphore-and-semaphoreslim.md)  
- [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](../../../docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)  
- [Wait Handles](https://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)  
- [Interlocked Operations](../../../docs/standard/threading/interlocked-operations.md)  
- [Reader-Writer Locks](../../../docs/standard/threading/reader-writer-locks.md)  
- [Barrier](../../../docs/standard/threading/barrier.md)  
- [SpinWait](../../../docs/standard/threading/spinwait.md)  
- [SpinLock](../../../docs/standard/threading/spinlock.md)
+## See also
+
+- [Synchronizing Data for Multithreading](../../../docs/standard/threading/synchronizing-data-for-multithreading.md)  
+- [Monitors](https://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)  
+- [Mutexes](../../../docs/standard/threading/mutexes.md)  
+- [Semaphore and SemaphoreSlim](../../../docs/standard/threading/semaphore-and-semaphoreslim.md)  
+- [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](../../../docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)  
+- [Wait Handles](https://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)  
+- [Interlocked Operations](../../../docs/standard/threading/interlocked-operations.md)  
+- [Reader-Writer Locks](../../../docs/standard/threading/reader-writer-locks.md)  
+- [Barrier](../../../docs/standard/threading/barrier.md)  
+- [SpinWait](../../../docs/standard/threading/spinwait.md)  
+- [SpinLock](../../../docs/standard/threading/spinlock.md)

@@ -76,7 +76,8 @@ xsltc /settings:DTD+,script+ /out:myTest calc.xsl
 xsltc booksort.xsl output.xsl  
 ```  
   
-## See Also  
- <xref:System.Xml.Xsl.XslCompiledTransform>  
- [How to: Perform an XSLT Transformation by Using an Assembly](../../../../docs/standard/data/xml/how-to-perform-an-xslt-transformation-by-using-an-assembly.md)  
- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+## See also
+
+- <xref:System.Xml.Xsl.XslCompiledTransform>  
+- [How to: Perform an XSLT Transformation by Using an Assembly](../../../../docs/standard/data/xml/how-to-perform-an-xslt-transformation-by-using-an-assembly.md)  
+- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)

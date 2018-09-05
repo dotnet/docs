@@ -38,5 +38,6 @@ The examples in this topic show how to work with events. They include examples o
  [!code-csharp[EventsOverview#7](../../../samples/snippets/csharp/VS_Snippets_CLR/eventsoverview/cs/programwithdelegate.cs#7)]
  [!code-vb[EventsOverview#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1withdelegate.vb#7)]  
   
-## See Also  
- [Events](../../../docs/standard/events/index.md)
+## See also
+
+- [Events](../../../docs/standard/events/index.md)

@@ -43,8 +43,9 @@ The observer design pattern requires a division between an observer, which regis
  [!code-csharp[Conceptual.ObserverDesign.HowTo#12](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/observer.cs#12)]
  [!code-vb[Conceptual.ObserverDesign.HowTo#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/observer.vb#12)]  
   
-## See Also  
- <xref:System.IObserver%601>  
- [Observer Design Pattern](../../../docs/standard/events/observer-design-pattern.md)  
- [How to: Implement a Provider](../../../docs/standard/events/how-to-implement-a-provider.md)  
- [Observer Design Pattern Best Practices](../../../docs/standard/events/observer-design-pattern-best-practices.md)
+## See also
+
+- <xref:System.IObserver%601>  
+- [Observer Design Pattern](../../../docs/standard/events/observer-design-pattern.md)  
+- [How to: Implement a Provider](../../../docs/standard/events/how-to-implement-a-provider.md)  
+- [Observer Design Pattern Best Practices](../../../docs/standard/events/observer-design-pattern-best-practices.md)

@@ -51,6 +51,7 @@ xsc.Add("urn:bookstore-schema", "Books.xsd");
 vr.Schemas.Add(xsc);  
 ```  
   
-## See Also  
- [XDR Validation with XmlSchemaCollection](../../../../docs/standard/data/xml/xdr-validation-with-xmlschemacollection.md)  
- [XML Schema (XSD) Validation with XmlSchemaCollection](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemacollection.md)
+## See also
+
+- [XDR Validation with XmlSchemaCollection](../../../../docs/standard/data/xml/xdr-validation-with-xmlschemacollection.md)  
+- [XML Schema (XSD) Validation with XmlSchemaCollection](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemacollection.md)

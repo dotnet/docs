@@ -40,5 +40,6 @@ There are many ways you can modify the nodes and content in a document. You can:
   
  It is valid to add or remove a read-only child from a node that can be edited. However, attempts to modify the read-only node itself throws an <xref:System.InvalidOperationException>. An example of this is modifying the children of an <xref:System.Xml.XmlEntityReference> node. The children are read-only and cannot be modified. Any attempt to modify them throws an <xref:System.InvalidOperationException>.  
   
-## See Also  
- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## See also
+
+- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

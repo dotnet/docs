@@ -28,5 +28,6 @@ Tree structure for entity references that are preserved
   
  By default, general entities like `&abc;` are preserved and **XmlEntityReference** nodes always created.  
   
-## See Also  
- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## See also
+
+- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

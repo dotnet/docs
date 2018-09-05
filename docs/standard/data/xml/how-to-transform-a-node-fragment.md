@@ -41,5 +41,6 @@ When you transform data contained in an <xref:System.Xml.XmlDocument> or <xref:S
 ### Output  
  Book title is The Confidence Man.  
   
-## See Also  
- [Using the XslCompiledTransform Class](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md)
+## See also
+
+- [Using the XslCompiledTransform Class](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md)

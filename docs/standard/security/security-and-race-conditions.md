@@ -98,5 +98,6 @@ void DoOtherWork()
 ## Race Conditions in Finalizers  
  Race conditions can also occur in an object that references a static or unmanaged resource that it then frees in its finalizer. If multiple objects share a resource that is manipulated in a class's finalizer, the objects must synchronize all access to that resource.  
   
-## See Also  
- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+## See also
+
+- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)

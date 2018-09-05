@@ -1598,10 +1598,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The remainder is calculated by using the modulus operation.  
-  
+ The remainder value equals the result of the [remainder operator](~/docs/csharp/language-reference/operators/remainder-operator.md).  
    
-  
 ## Examples  
  The following example demonstrates the <xref:System.Math.DivRem%28System.Int32%2CSystem.Int32%2CSystem.Int32%40%29> method.  
   
@@ -1662,7 +1660,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The remainder is calculated by using the modulus operation.  
+ The remainder value equals the result of the [remainder operator](~/docs/csharp/language-reference/operators/remainder-operator.md).  
   
    
   

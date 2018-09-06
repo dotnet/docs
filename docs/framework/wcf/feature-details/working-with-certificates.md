@@ -79,12 +79,12 @@ To program Windows Communication Foundation (WCF) security, X.509 digital certif
   
  When creating a custom authenticator, the most important method to override is the <xref:System.IdentityModel.Selectors.X509CertificateValidator.Validate%2A> method. For an example of custom authentication, see the [X.509 Certificate Validator](../../../../docs/framework/wcf/samples/x-509-certificate-validator.md) sample. For more information, see [Custom Credential and Credential Validation](../../../../docs/framework/wcf/extending/custom-credential-and-credential-validation.md).  
   
-## Using Makecert.exe to Build a Certificate Chain  
- The Certificate Creation Tool (Makecert.exe) creates X.509 certificates and private key/public key pairs. You can save the private key to disk and then use it to issue and sign new certificates, thus simulating a hierarchy of chained certificates. The tool is intended for use only as an aid when developing services and should never be used to create certificates for actual deployment. When developing an WCF service, use the following steps to build a chain of trust with Makecert.exe.  
+## Using the Powershell New-SelfSignedCertificate Cmdlet to Build a Certificate Chain  
+ The Powershell New-SelfSignedCertificate cmdlet creates X.509 certificates and private key/public key pairs. You can save the private key to disk and then use it to issue and sign new certificates, thus simulating a hierarchy of chained certificates. The cmdlet is intended for use only as an aid when developing services and should never be used to create certificates for actual deployment. When developing a WCF service, use the following steps to build a chain of trust with the New-SelfSignedCertificate cmdlet.  
   
-#### To build a chain of trust with Makecert.exe  
+#### To build a chain of trust with the New-SelfSignedCertificate cmdlet  
   
-1.  Create a temporary root authority (self-signed) certificate using the MakeCert.exe tool. Save the private key to the disk.  
+1.  Create a temporary root authority (self-signed) certificate using the New-SelfSignedCertificate cmdlet. Save the private key to the disk.  
   
 2.  Use the new certificate to issue another certificate that contains the public key.  
   

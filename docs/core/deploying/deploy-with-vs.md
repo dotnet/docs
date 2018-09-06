@@ -4,6 +4,9 @@ description: Learn .NET Core app deployment with Visual Studio
 author: rpetrusha
 ms.author: ronpet
 ms.date: 09/03/2018
+dev_langs: 
+  - "csharp"
+  - "vb"
 ---
 
 # Deploying .NET Core apps with Visual Studio

@@ -4,6 +4,9 @@ description: Learn .NET Core app deployment with command-line interface (CLI) to
 author: rpetrusha
 ms.author: ronpet
 ms.date: 09/05/2018
+dev_langs: 
+  - "csharp"
+  - "vb"
 ---
 
 # Deploying .NET Core apps with command-line interface (CLI) tools

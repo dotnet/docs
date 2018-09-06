@@ -29,5 +29,6 @@ If a method is blocked while it is waiting for an event to be signaled, it canno
  [!code-csharp[Cancellation#10](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex10.cs#10)]
  [!code-vb[Cancellation#10](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex10.vb#10)]  
   
-## See Also  
- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)
+## See also
+
+- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)

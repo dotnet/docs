@@ -41,7 +41,8 @@ This example shows how to use a <xref:System.Threading.Tasks.Parallel.ForEach%2A
   
 -   Press F5  
   
-## See Also  
- [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+## See also
+
+- [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
+- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

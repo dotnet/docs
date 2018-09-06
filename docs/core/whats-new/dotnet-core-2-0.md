@@ -24,7 +24,7 @@ In previous versions of .NET Core, you had to run the [dotnet restore](../tools/
 
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
-You can also disable the automatic invocation of `dotnet restore` by passing the `--no-restore` switch to the `new`, `run`, `build`, `publish`, `pack`, and `test` commands. 
+You can also disable the automatic invocation of `dotnet restore` by passing the `--no-restore` switch to the `new`, `run`, `build`, `publish`, `pack`, and `test` commands.
 
 ### Retargeting to .NET Core 2.0
 
@@ -70,7 +70,7 @@ For example, to create a Visual Basic "Hello World" application, do the followin
 
    The command creates a project file with a `.vbproj` file extension, along with a Visual Basic source code file named *Program.vb*. This file contains the source code to write the string "Hello World!" to the console window.
 
-1.  Enter the command `dotnet run`. The [.NET Core CLI](../tools/index.md) automatically compiles and executes the application, which displays the message "Hello World!" in the console window.
+1. Enter the command `dotnet run`. The [.NET Core CLI](../tools/index.md) automatically compiles and executes the application, which displays the message "Hello World!" in the console window.
 
 ### Support for C# 7.1
 
@@ -156,4 +156,5 @@ You can now install the .NET Core SDK independently of Visual Studio. This makes
 - [Applications that are deployed to the Cloud with Azure](/azure/architecture/reference-architectures/index.md)
 
 ## See also
-[What's new in ASP.NET Core 2.0](/aspnet/core/aspnetcore-2.0)
+
+* [What's new in ASP.NET Core 2.0](/aspnet/core/aspnetcore-2.0)

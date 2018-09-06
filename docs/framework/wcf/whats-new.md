@@ -60,9 +60,9 @@ This topic discusses features new to Windows Communication Foundation (WCF).
 |--------------|--------|-----------------|------------------------------|  
 |channelInitializationTimeout|<xref:System.ServiceModel.NetTcpBinding>|30 seconds|<xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.ChannelInitializationTimeout%2A>|  
 |listenBacklog|<xref:System.ServiceModel.NetTcpBinding>|12 * number of processors|<xref:System.ServiceModel.NetTcpBinding.ListenBacklog%2A>|  
-|maxPendingAccepts|ConnectionOrientedTransportBindingElement<br /><br /> SMSvcHost.exe|2 * number of processors for transport<br /><br /> 4 \* number of processors for SMSvcHost.exe|<xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxPendingAccepts%2A> [Configuring the Net.TCP Port Sharing Service](http://msdn.microsoft.com/library/b6dd81fa-68b7-4e1b-868e-88e5901b7ea0)|  
+|maxPendingAccepts|ConnectionOrientedTransportBindingElement<br /><br /> SMSvcHost.exe|2 * number of processors for transport<br /><br /> 4 \* number of processors for SMSvcHost.exe|<xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxPendingAccepts%2A> [Configuring the Net.TCP Port Sharing Service](https://msdn.microsoft.com/library/b6dd81fa-68b7-4e1b-868e-88e5901b7ea0)|  
 |maxPendingConnections|ConnectionOrientedTransportBindingElement|12 * number of processors|<xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxPendingConnections%2A>|  
-|receiveTimeout|SMSvcHost.exe|30 seconds|[Configuring the Net.TCP Port Sharing Service](http://msdn.microsoft.com/library/b6dd81fa-68b7-4e1b-868e-88e5901b7ea0)|  
+|receiveTimeout|SMSvcHost.exe|30 seconds|[Configuring the Net.TCP Port Sharing Service](https://msdn.microsoft.com/library/b6dd81fa-68b7-4e1b-868e-88e5901b7ea0)|  
   
 ## XML Editor Tooltips  
  In order to help new and existing WCF service developers to configure their services, the Visual Studio XML editor now provides tooltips for every configuration element and its properties that is part of the service configuration file.  
@@ -96,7 +96,7 @@ This topic discusses features new to Windows Communication Foundation (WCF).
  Support has been added to allow for WCF services with Internationalized Domain Names. For more information see [WCF and Internationalized Domain Names](../../../docs/framework/wcf/feature-details/wcf-and-internationalized-domain-names.md).  
   
 ## HttpClient  
- A new class called <xref:System.Net.Http.HttpClient> has been added to make working with HTTP requests much easier. For more info, see [Making apps social and connected with HTTP services](http://go.microsoft.com/fwlink/?LinkId=231886) and the [HTTP Client Sample](http://code.msdn.microsoft.com/windowsapps/HttpClient-sample-55700664).  
+ A new class called <xref:System.Net.Http.HttpClient> has been added to make working with HTTP requests much easier. For more info, see [Making apps social and connected with HTTP services](https://go.microsoft.com/fwlink/?LinkId=231886) and the [HTTP Client Sample](https://code.msdn.microsoft.com/windowsapps/HttpClient-sample-55700664).  
   
 ## Configuration Intellisense  
  Attribute values in configuration files for custom attributes defined in the project now support intellisense to facilitate working with configurations quickly and accurately.  

@@ -67,8 +67,8 @@ In unsafe mode, you can allocate memory on the stack, where it is not subject to
 
 ## See Also
 
- [C# Reference](../index.md)  
- [C# Programming Guide](../../programming-guide/index.md)  
- [C# Keywords](index.md)  
- [unsafe](unsafe.md)  
- [Fixed Size Buffers](../../programming-guide/unsafe-code-pointers/fixed-size-buffers.md)
+- [C# Reference](../index.md)  
+- [C# Programming Guide](../../programming-guide/index.md)  
+- [C# Keywords](index.md)  
+- [unsafe](unsafe.md)  
+- [Fixed Size Buffers](../../programming-guide/unsafe-code-pointers/fixed-size-buffers.md)

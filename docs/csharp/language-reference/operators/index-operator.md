@@ -43,11 +43,12 @@ Square brackets (`[]`) are used for arrays, indexers, and attributes. They can a
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Operators](../../../csharp/language-reference/operators/index.md)  
- [Arrays](../../../csharp/programming-guide/arrays/index.md)  
- [Indexers](../../../csharp/programming-guide/indexers/index.md)  
- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Operators](../../../csharp/language-reference/operators/index.md)  
+- [Arrays](../../../csharp/programming-guide/arrays/index.md)  
+- [Indexers](../../../csharp/programming-guide/indexers/index.md)  
+- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
+- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)

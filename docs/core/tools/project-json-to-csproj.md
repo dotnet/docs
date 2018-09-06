@@ -9,19 +9,13 @@ ms.date: 03/13/2017
 
 By [Nate McMaster](https://github.com/natemcmaster)
 
-During the development of the .NET Core tooling, an important design change was made to 
-no longer support *project.json* files and instead move the .NET Core projects to the MSBuild/csproj 
-format.
+During the development of the .NET Core tooling, an important design change was made to no longer support *project.json* files and instead move the .NET Core projects to the MSBuild/csproj format.
 
-This article shows how the settings in *project.json* are represented in the MSBuild/csproj format so you
-can learn how to use the new format and understand the changes made by the migration tools when you're
-upgrading your project to the latest version of the tooling. 
- 
+This article shows how the settings in *project.json* are represented in the MSBuild/csproj format so you can learn how to use the new format and understand the changes made by the migration tools when you're upgrading your project to the latest version of the tooling.
+
 ## The csproj format
 
-The new format, \*.csproj, is an XML-based format. The following example shows the root node of a 
-.NET Core project using the `Microsoft.NET.Sdk`. For web projects, the SDK used is 
-`Microsoft.NET.Sdk.Web`.
+The new format, \*.csproj, is an XML-based format. The following example shows the root node of a .NET Core project using the `Microsoft.NET.Sdk`. For web projects, the SDK used is `Microsoft.NET.Sdk.Web`.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -41,7 +35,7 @@ The new format, \*.csproj, is an XML-based format. The following example shows t
 
 No longer supported. In csproj, this is determined by the project filename, which is defined by the directory name. For example, `MyProjectName.csproj`.
 
-By default, the project filename also specifies the value of the `<AssemblyName>` and `<PackageId>` properties. 
+By default, the project filename also specifies the value of the `<AssemblyName>` and `<PackageId>` properties.
 
 ```xml
 <PropertyGroup>
@@ -50,7 +44,7 @@ By default, the project filename also specifies the value of the `<AssemblyName>
 </PropertyGroup>
 ```
 
-The `<AssemblyName>` will have a different value than `<PackageId>` if `buildOptions\outputName` property was defined in project.json. 
+The `<AssemblyName>` will have a different value than `<PackageId>` if `buildOptions\outputName` property was defined in project.json.
 For more information, see [Other common build options](#other-common-build-options).
 
 ### version
@@ -60,6 +54,7 @@ For more information, see [Other common build options](#other-common-build-optio
   "version": "1.0.0-alpha-*"
 }
 ```
+
 Use the `VersionPrefix` and `VersionSuffix` properties:
 
 ```xml
@@ -133,7 +128,7 @@ And it's really great!</Description>
 }
 ```
 
-Use the `TargetFrameworks` property to define your list of target frameworks. Use semi-colon to separate multiple framework values. 
+Use the `TargetFrameworks` property to define your list of target frameworks. Use semi-colon to separate multiple framework values.
 
 ```xml
 <PropertyGroup>
@@ -144,7 +139,7 @@ Use the `TargetFrameworks` property to define your list of target frameworks. Us
 ## dependencies
 
 > [!IMPORTANT]
-> If the dependency is a **project** and not a package, the format is different. 
+> If the dependency is a **project** and not a package, the format is different.
 > For more information, see the [dependency type](#dependency-type) section.
 
 ### NETStandard.Library metapackage
@@ -276,9 +271,7 @@ Note that the `<RuntimeFrameworkVersion>` value in the migrated project is deter
 ```
 
 > [!NOTE]
-> This will break the way that `dotnet pack --version-suffix $suffix` determines the 
-dependency version of a project reference.
-
+> This will break the way that `dotnet pack --version-suffix $suffix` determines the dependency version of a project reference.
 
 #### type: build
 
@@ -312,7 +305,7 @@ dependency version of a project reference.
 }
 ```
 
-There is no equivalent in csproj. 
+There is no equivalent in csproj.
 
 ## runtimes
 
@@ -458,7 +451,7 @@ See also [Files](#files).
 
 ```json
 {
-  "packOptions": {    
+  "packOptions": {
     "summary": "numl is a machine learning library intended to ease the use of using standard modeling techniques for both prediction and clustering.",
     "tags": ["machine learning", "framework"],
     "releaseNotes": "Version 0.9.12-beta",
@@ -490,9 +483,8 @@ See also [Files](#files).
 </PropertyGroup>
 ```
 
-There is no equivalent for the `owners` element in MSBuild. 
-For `summary`, you can use the MSBuild `<Description>` property, even though the value of `summary` is not migrated automatically to that property, since that 
-property is mapped to the [`description`](#-other-common-root-level-options) element.
+There is no equivalent for the `owners` element in MSBuild.
+For `summary`, you can use the MSBuild `<Description>` property, even though the value of `summary` is not migrated automatically to that property, since that property is mapped to the [`description`](#-other-common-root-level-options) element.
 
 ## scripts
 
@@ -549,6 +541,7 @@ All settings in this group, except for the "System.GC.Server" property, are plac
 ```
 
 The "System.GC.Server" property is migrated into the csproj file:
+
 ```xml
 <PropertyGroup>
   <ServerGarbageCollection>true</ServerGarbageCollection>
@@ -556,6 +549,7 @@ The "System.GC.Server" property is migrated into the csproj file:
 ```
 
 However, you can set all those values in the csproj as well as MSBuild properties:
+
 ```xml
 <PropertyGroup>
   <ServerGarbageCollection>true</ServerGarbageCollection>
@@ -574,7 +568,7 @@ However, you can set all those values in the csproj as well as MSBuild propertie
 }
 ```
 
-Not supported in csproj. You must instead create include content files in your *.nuspec* file. 
+Not supported in csproj. You must instead create include content files in your *.nuspec* file.
 For more information, see [Including content files](/nuget/schema/nuspec#including-content-files).
 
 ## files
@@ -633,13 +627,10 @@ All MSBuild `ItemGroup` elements support `Include`, `Exclude`, and `Remove`.
 
 Package layout inside the .nupkg can be modified with `PackagePath="path"`.
 
-Except for `Content`, most item groups require explicitly adding `Pack="true"` to 
-be included in the package. `Content` will be put in the *content* folder
-in a package since the MSBuild `<IncludeContentInPack>` property is set to `true` by default. 
+Except for `Content`, most item groups require explicitly adding `Pack="true"` to be included in the package. `Content` will be put in the *content* folder in a package since the MSBuild `<IncludeContentInPack>` property is set to `true` by default.
 For more information, see [Including content in a package](/nuget/schema/msbuild-targets#including-content-in-a-package).
 
-`PackagePath="%(Identity)"` is a short way of setting package path
-to the project-relative file path.
+`PackagePath="%(Identity)"` is a short way of setting package path to the project-relative file path.
 
 ## testRunner
 
@@ -683,4 +674,4 @@ to the project-relative file path.
 
 ## See Also
 
-[High-level overview of changes in CLI](../tools/cli-msbuild-architecture.md)
+* [High-level overview of changes in CLI](../tools/cli-msbuild-architecture.md)

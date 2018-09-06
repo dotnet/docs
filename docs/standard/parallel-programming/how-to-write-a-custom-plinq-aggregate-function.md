@@ -27,6 +27,7 @@ This example shows how to use the <xref:System.Linq.ParallelEnumerable.Aggregate
   
  Note that when a lambda expression body consists of a single expression, the return value of the <xref:System.Func%602?displayProperty=nameWithType> delegate is the value of the expression.  
   
-## See Also  
- <xref:System.Linq.ParallelEnumerable>  
- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+## See also
+
+- <xref:System.Linq.ParallelEnumerable>  
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

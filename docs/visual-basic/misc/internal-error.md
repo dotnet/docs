@@ -14,4 +14,4 @@ An internal malfunction has occurred in Visual Basic.
   
 ## See Also  
  [On Error Statement](../../visual-basic/language-reference/statements/on-error-statement.md)  
- [Raise Method (Err Object)](http://msdn.microsoft.com/library/80ffe307-57f1-4ef5-92d7-8ae7b6ec3f42)
+ [Raise Method (Err Object)](https://msdn.microsoft.com/library/80ffe307-57f1-4ef5-92d7-8ae7b6ec3f42)

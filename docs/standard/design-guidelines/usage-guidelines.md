@@ -32,4 +32,4 @@ The <xref:System.IDisposable?displayProperty=nameWithType> interface is not cove
   
 ## See also
 
-[Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

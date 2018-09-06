@@ -19,7 +19,6 @@ Typical measures of first-class status include the following:
 
 The last two measures define what are known as *higher-order operations* or *higher-order functions*. Higher-order functions accept functions as arguments and return functions as the value of function calls. These operations support such mainstays of functional programming as mapping functions and composition of functions.
 
-
 ## Give the Value a Name
 
 If a function is a first-class value, you must be able to name it, just as you can name integers, strings, and other built-in types. This is referred to in functional programming literature as binding an identifier to a value. F# uses [`let` bindings](../language-reference/functions/let-bindings.md) to bind names to values: `let <identifier> = <value>`. The following code shows two examples.
@@ -36,7 +35,6 @@ F# provides the following more concise syntax to achieve the same result with le
 
 The examples that follow mostly use the first style, `let <function-name> = <lambda-expression>`, to emphasize the similarities between the declaration of functions and the declaration of other types of values. However, all the named functions can also be written with the concise syntax. Some of the examples are written in both ways.
 
-
 ## Store the Value in a Data Structure
 
 A first-class value can be stored in a data structure. The following code shows examples that store values in lists and in tuples.
@@ -50,7 +48,7 @@ To verify that a function name stored in a tuple does in fact evaluate to a func
 Similarly, just as identifier `num` and integer 10 can be used interchangeably, so can identifier `squareIt` and lambda expression `fun n -> n * n`.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet25.fs)]
-    
+
 ## Pass the Value as an Argument
 
 If a value has first-class status in a language, you can pass it as an argument to a function. For example, it is common to pass integers and strings as arguments. The following code shows integers and strings passed as arguments in F#.
@@ -98,16 +96,15 @@ The following code uses `checkFor` to create a new function that takes one argum
 The following example uses the first-class status of functions in F# to declare a function, `compose`, that returns a composition of two function arguments.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet34.fs)]
-    
+
 >[!NOTE]
 For an even shorter version, see the following section, "Curried Functions."
-
 
 The following code sends two functions as arguments to `compose`, both of which take a single argument of the same type. The return value is a new function that is a composition of the two function arguments.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet35.fs)]
-    
->[!NOTE] 
+
+>[!NOTE]
 F# provides two operators, `<<` and `>>`, that compose functions. For example, `let squareAndDouble2 = doubleIt << squareIt` is equivalent to `let squareAndDouble = compose doubleIt squareIt` in the previous example.
 
 The following example of returning a function as the value of a function call creates a simple guessing game. To create a game, call `makeGame` with the value that you want someone to guess sent in for `target`. The return value from function `makeGame` is a function that takes one argument (the guess) and reports whether the guess is correct.
@@ -117,7 +114,7 @@ The following example of returning a function as the value of a function call cr
 The following code calls `makeGame`, sending the value `7` for `target`. Identifier `playGame` is bound to the returned lambda expression. Therefore, `playGame` is a function that takes as its one argument a value for `guess`.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet37.fs)]
-    
+
 ## Curried Functions
 
 Many of the examples in the previous section can be written more concisely by taking advantage of the implicit *currying* in F# function declarations. Currying is a process that transforms a function that has more than one parameter into a series of embedded functions, each of which has a single parameter. In F#, functions that have more than one parameter are inherently curried. For example, `compose` from the previous section can be written as shown in the following concise style, with three parameters.
@@ -135,8 +132,8 @@ You can access this function in several ways. Each of the following examples ret
 To verify that the function still works as it did before, try the original test cases again.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet41.fs)]
-    
->[!NOTE] 
+
+>[!NOTE]
 You can restrict currying by enclosing parameters in tuples. For more information, see "Parameter Patterns" in [Parameters and Arguments](../language-reference/parameters-and-arguments.md).
 
 The following example uses implicit currying to write a shorter version of `makeGame`. The details of how `makeGame` constructs and returns the `game` function are less explicit in this format, but you can verify by using the original test cases that the result is the same.
@@ -145,8 +142,8 @@ The following example uses implicit currying to write a shorter version of `make
 
 For more information about currying, see "Partial Application of Arguments" in [Functions](../language-reference/functions/index.md).
 
-
 ## Identifier and Function Definition Are Interchangeable
+
 The variable name `num` in the previous examples evaluates to the integer 10, and it is no surprise that where `num` is valid, 10 is also valid. The same is true of function identifiers and their values: anywhere the name of the function can be used, the lambda expression to which it is bound can be used.
 
 The following example defines a `Boolean` function called `isNegative`, and then uses the name of the function and the definition of the function interchangeably. The next three examples all return and display `False`.
@@ -157,7 +154,7 @@ To take it one step further, substitute the value that `applyIt` is bound to for
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet44.fs)]
 
-## Functions Are First-Class Values in F# #
+## Functions Are First-Class Values in F\#
 
 The examples in the previous sections demonstrate that functions in F# satisfy the criteria for being first-class values in F#:
 
@@ -184,15 +181,11 @@ The following code contains all the examples in this topic.
 ### Code
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet47.fs)]
-    
-## See Also
 
-[Lists](../language-reference/lists.md)
+## See also
 
-[Tuples](../language-reference/tuples.md)
-
-[Functions](../language-reference/functions/index.md)
-
-[`let` Bindings](../language-reference/functions/let-bindings.md)
-
-[Lambda Expressions: The `fun` Keyword](../language-reference/functions/lambda-expressions-the-fun-keyword.md)
+- [Lists](../language-reference/lists.md)
+- [Tuples](../language-reference/tuples.md)
+- [Functions](../language-reference/functions/index.md)
+- [`let` Bindings](../language-reference/functions/let-bindings.md)
+- [Lambda Expressions: The `fun` Keyword](../language-reference/functions/lambda-expressions-the-fun-keyword.md)

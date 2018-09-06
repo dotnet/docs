@@ -11,7 +11,7 @@ manager: "markl"
 ---
 # Caching in UI Automation Clients
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](http://go.microsoft.com/fwlink/?LinkID=156746).  
+>  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This topic introduces caching of [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties and control patterns.  
   
@@ -101,4 +101,4 @@ manager: "markl"
 ## See Also  
  [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)  
  [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)  
- [FetchTimer Sample](http://msdn.microsoft.com/library/5b7d3294-de22-4f24-b2d6-d4785a304b90)
+ [FetchTimer Sample](https://msdn.microsoft.com/library/5b7d3294-de22-4f24-b2d6-d4785a304b90)

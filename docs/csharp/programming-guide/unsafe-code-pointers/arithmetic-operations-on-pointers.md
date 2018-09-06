@@ -29,14 +29,15 @@ This topic discusses using the arithmetic operators `+` and **-** to manipulate 
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)  
- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
- [C# Operators](../../../csharp/language-reference/operators/index.md)  
- [Manipulating Pointers](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)  
- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
- [Types](../../../csharp/language-reference/keywords/types.md)  
- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)  
+- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
+- [C# Operators](../../../csharp/language-reference/operators/index.md)  
+- [Manipulating Pointers](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)  
+- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
+- [Types](../../../csharp/language-reference/keywords/types.md)  
+- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
+- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
+- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)

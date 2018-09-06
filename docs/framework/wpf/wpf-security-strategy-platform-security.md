@@ -44,7 +44,7 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
  Historically, buffer overruns have been the cause of many high-impact security exploits. A buffer overrun occurs when an attacker takes advantage of a code vulnerability that allows the injection of malicious code that writes past the boundaries of a buffer. This then allows an attacker to hijack the process in which the code is executing by overwriting the return address of a function to cause the execution of the attacker's code. The result is malicious code that executes arbitrary code with the same privileges as the hijacked process.  
   
- At a high level, the /GS compiler flag protects against some potential buffer overruns by injecting a special security cookie to protect the return address of a function that has local string buffers. After a function returns, the security cookie is compared with its previous value. If the value has changed, a buffer overrun may have occurred and the process is stopped with an error condition. Stopping the process prevents the execution of potentially malicious code. See [/GS (Buffer Security Check)](http://msdn.microsoft.com/library/8dbf701c.aspx) for more details.  
+ At a high level, the /GS compiler flag protects against some potential buffer overruns by injecting a special security cookie to protect the return address of a function that has local string buffers. After a function returns, the security cookie is compared with its previous value. If the value has changed, a buffer overrun may have occurred and the process is stopped with an error condition. Stopping the process prevents the execution of potentially malicious code. See [/GS (Buffer Security Check)](https://msdn.microsoft.com/library/8dbf701c.aspx) for more details.  
   
  [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] is compiled with the /GS flag to add yet another layer of defense to [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] applications.  
   
@@ -82,7 +82,7 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
 #### Defense-In-Depth Layer  
  Since [!INCLUDE[TLA#tla_winfxwebapp#plural](../../../includes/tlasharptla-winfxwebappsharpplural-md.md)] are generally sandboxed by the Internet zone permission set, removing these privileges does not harm [!INCLUDE[TLA#tla_winfxwebapp#plural](../../../includes/tlasharptla-winfxwebappsharpplural-md.md)] from a compatibility perspective. Instead, an additional defense-in-depth layer is created; if a sandboxed application is able to exploit other layers and hijack the process, the process will still only have limited privileges.  
   
- See [Using a Least-Privileged User Account](http://technet.microsoft.com/library/cc700846.aspx).  
+ See [Using a Least-Privileged User Account](https://technet.microsoft.com/library/cc700846.aspx).  
   
 <a name="Common_Language_Runtime_Security"></a>   
 ## Common Language Runtime Security  
@@ -168,7 +168,7 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
 <a name="ClickOnce_Deployment"></a>   
 ### ClickOnce Deployment  
- [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)] is a comprehensive deployment technology that is included with .NET Framework, and integrates with [!INCLUDE[TLA#tla_visualstu](../../../includes/tlasharptla-visualstu-md.md)] (see [ClickOnce Deployment Overview](http://msdn.microsoft.com/library/142dbbz4.aspx) for detailed information). Standalone [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] applications can be deployed using [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)], while browser-hosted applications must be deployed with [!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)].  
+ [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)] is a comprehensive deployment technology that is included with .NET Framework, and integrates with [!INCLUDE[TLA#tla_visualstu](../../../includes/tlasharptla-visualstu-md.md)] (see [ClickOnce Deployment Overview](https://msdn.microsoft.com/library/142dbbz4.aspx) for detailed information). Standalone [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] applications can be deployed using [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)], while browser-hosted applications must be deployed with [!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)].  
   
  Applications deployed using [!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)] are given an additional security layer over [!INCLUDE[TLA#tla_cas](../../../includes/tlasharptla-cas-md.md)]; essentially, [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)] deployed applications request the permissions that they need. They are granted only those permissions if they do not exceed the set of permissions for the zone from which the application is deployed. By reducing the set of permissions to only those that are needed, even if they are less than those provided by the launch zone's permission set, the number of resources that the application has access to is reduce to a bare minimum. Consequently, if the application is hijacked, the potential for damage to the client machine is reduced.  
   
@@ -203,10 +203,10 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
  [!INCLUDE[TLA2#tla_ie7](../../../includes/tla2sharptla-ie7-md.md)] incorporates and extends the security capabilities of [!INCLUDE[TLA2#tla_ie6sp2](../../../includes/tla2sharptla-ie6sp2-md.md)] as part of an ongoing commitment to security.  
   
 ## See Also  
- [Understanding Security in Microsoft Internet Explorer 6 in Windows XP SP2](http://www.microsoft.com/downloads/details.aspx?FamilyId=E550F940-37A0-4541-B5E2-704AB386C3ED&displaylang=en)  
- [Understanding and Working in Protected Mode Internet Explorer](http://msdn.microsoft.com/library/bb250462.aspx)  
- [Windows XP Service Pack 3](http://www.microsoft.com/windows/products/windowsxp/sp3/default.mspx)  
- [Windows Vista Security Guide](http://www.microsoft.com/downloads/details.aspx?familyid=a3d1bbed-7f35-4e72-bfb5-b84a526c1565&displaylang=en)  
+ [Understanding Security in Microsoft Internet Explorer 6 in Windows XP SP2](https://www.microsoft.com/downloads/details.aspx?FamilyId=E550F940-37A0-4541-B5E2-704AB386C3ED&displaylang=en)  
+ [Understanding and Working in Protected Mode Internet Explorer](https://msdn.microsoft.com/library/bb250462.aspx)  
+ [Windows XP Service Pack 3](https://www.microsoft.com/windows/products/windowsxp/sp3/default.mspx)  
+ [Windows Vista Security Guide](https://www.microsoft.com/downloads/details.aspx?familyid=a3d1bbed-7f35-4e72-bfb5-b84a526c1565&displaylang=en)  
  [Code Access Security](../../../docs/framework/misc/code-access-security.md)  
  [Security](../../../docs/framework/wpf/security-wpf.md)  
  [WPF Partial Trust Security](../../../docs/framework/wpf/wpf-partial-trust-security.md)  

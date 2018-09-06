@@ -75,6 +75,7 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
   
  When you are done using a cryptographic key, clear it from memory by setting each byte to zero or by calling the <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> method of the managed cryptography class.  Cryptographic keys can sometimes be read from memory by a debugger or read from a hard drive if the memory location is paged to disk.  
   
-## See Also  
- <xref:System.Security.Cryptography.Xml>  
- [How to: Encrypt XML Elements with Asymmetric Keys](../../../docs/standard/security/how-to-encrypt-xml-elements-with-asymmetric-keys.md)
+## See also
+
+- <xref:System.Security.Cryptography.Xml>  
+- [How to: Encrypt XML Elements with Asymmetric Keys](../../../docs/standard/security/how-to-encrypt-xml-elements-with-asymmetric-keys.md)

@@ -17,7 +17,7 @@ This example shows how to translate (move) an element by using a <xref:System.Wi
 ## Example  
  [!code-xaml[transformsSample#53](../../../../samples/snippets/csharp/VS_Snippets_Wpf/transformsSample/CS/TranslateTransformExample.xaml#53)]  
   
- For the complete sample, see [2-D Transforms Sample](http://go.microsoft.com/fwlink/?LinkID=158252).  
+ For the complete sample, see [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252).  
   
 ## See Also  
  [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)

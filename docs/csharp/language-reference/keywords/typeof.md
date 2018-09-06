@@ -25,12 +25,9 @@ System.Type type = i.GetType();
   
  The `typeof` operator cannot be overloaded.  
   
- The `typeof` operator can also be used on open generic types. Types with more than one type parameter must have the appropriate number of commas in the specification. The following example shows how to determine whether the return type of a method is a generic <xref:System.Collections.Generic.IEnumerable%601>. Assume that method is an instance of a MethodInfo type:  
+ The `typeof` operator can also be used on open generic types. Types with more than one type parameter must have the appropriate number of commas in the specification. The following example shows how to determine whether the return type of a method is a generic <xref:System.Collections.Generic.IEnumerable%601>. <xref:System.Type.GetInterface%2A?displayProperty=nameWithType> will return `null` if the return type is not an <xref:System.Collections.Generic.IEnumerable%601> generic type.
   
-```csharp  
-string s = method.ReturnType.GetInterface  
-    (typeof(System.Collections.Generic.IEnumerable<>).FullName);  
-```  
+ [!code-csharp[typeof_3.cs](~/samples/snippets/csharp/keywords/typeof/typeof_3.cs)]   
   
 ## Example  
  [!code-csharp[csrefKeywordsOperator#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/typeof_1.cs)]  
@@ -43,10 +40,11 @@ string s = method.ReturnType.GetInterface
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- <xref:System.Type?displayProperty=nameWithType>  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [is](../../../csharp/language-reference/keywords/is.md)  
- [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)
+## See Also
+
+- <xref:System.Type?displayProperty=nameWithType>  
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [is](../../../csharp/language-reference/keywords/is.md)  
+- [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)

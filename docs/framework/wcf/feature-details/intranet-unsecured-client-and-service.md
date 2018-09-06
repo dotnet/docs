@@ -111,4 +111,4 @@ The following illustration depicts a simple Windows Communication Foundation (WC
 ## See Also  
  <xref:System.ServiceModel.NetTcpBinding>  
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+ [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

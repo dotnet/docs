@@ -26,5 +26,6 @@ The following example demonstrates how to use a <xref:System.Threading.SpinLock>
   
  Note the use of `false` (`False` in Visual Basic) in the call to <xref:System.Threading.SpinLock.Exit%2A>. This provides the best performance. Specify `true` (`True`)on IA64 architectures to use the memory fence, which flushes the write buffers to ensure that the lock is now available for other threads to exit.  
   
-## See Also  
- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)
+## See also
+
+- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)

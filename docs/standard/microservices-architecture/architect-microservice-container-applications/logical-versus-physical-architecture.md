@@ -11,7 +11,7 @@ It is useful at this point to stop and discuss the distinction between logical a
 
 To begin, building microservices does not require the use of any specific technology. For instance, Docker containers are not mandatory in order to create a microservice-based architecture. Those microservices could also be run as plain processes. Microservices is a logical architecture.
 
-Moreover, even when a microservice could be physically implemented as a single service, process, or container (for simplicity’s sake, that is the approach taken in the initial version of [eShopOnContainers](http://aka.ms/MicroservicesArchitecture)), this parity between business microservice and physical service or container is not necessarily required in all cases when you build a large and complex application composed of many dozens or even hundreds of services.
+Moreover, even when a microservice could be physically implemented as a single service, process, or container (for simplicity’s sake, that is the approach taken in the initial version of [eShopOnContainers](https://aka.ms/MicroservicesArchitecture)), this parity between business microservice and physical service or container is not necessarily required in all cases when you build a large and complex application composed of many dozens or even hundreds of services.
 
 This is where there is a difference between an application’s logical architecture and physical architecture. The logical architecture and logical boundaries of a system do not necessarily map one-to-one to the physical or deployment architecture. It can happen, but it often does not.
 

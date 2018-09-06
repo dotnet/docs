@@ -167,5 +167,6 @@ catch (Exception ex)
 }
 ```
 
-## See Also  
-[Exceptions](index.md)
+## See also
+
+- [Exceptions](index.md)

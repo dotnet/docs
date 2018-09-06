@@ -68,7 +68,6 @@
 #### [Creating XML Trees](creating-xml-trees.md)
 ##### [Functional Construction (LINQ to XML)](functional-construction-linq-to-xml.md)
 ##### [Creating XML Trees in C# (LINQ to XML)](creating-xml-trees-linq-to-xml-2.md)
-##### [Cloning vs. Attaching](cloning-vs-attaching.md)
 ##### [Parsing XML](parsing-xml.md)
 ###### [How to: Parse a String](how-to-parse-a-string.md)
 ###### [How to: Load XML from a File](how-to-load-xml-from-a-file.md)

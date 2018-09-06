@@ -55,7 +55,7 @@ Dim l, m As Long, x, y As Single
 ' In the preceding statement, l and m are Long, x and y are Single.  
 ```  
   
- For more information on data types, see [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md). For more information on objects, see [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md) and [Programming with Components](http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3).  
+ For more information on data types, see [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md). For more information on objects, see [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md) and [Programming with Components](https://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3).  
   
 ## Local Type Inference  
  *Type inference* is used to determine the data types of local variables declared without an `As` clause. The compiler infers the type of the variable from the type of the initialization expression. This enables you to declare variables without explicitly stating a type. In the following example, both `num1` and `num2` are strongly typed as integers.  
@@ -74,7 +74,7 @@ Dim l, m As Long, x, y As Single
 ## See Also  
  [How to: Create a New Variable](../../../../visual-basic/programming-guide/language-features/variables/how-to-create-a-new-variable.md)  
  [How to: Move Data Into and Out of a Variable](../../../../visual-basic/programming-guide/language-features/variables/how-to-move-data-into-and-out-of-a-variable.md)  
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
  [Protected](../../../../visual-basic/language-reference/modifiers/protected.md)  
  [Friend](../../../../visual-basic/language-reference/modifiers/friend.md)  
  [Static](../../../../visual-basic/language-reference/modifiers/static.md)  

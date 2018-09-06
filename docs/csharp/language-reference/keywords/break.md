@@ -43,9 +43,9 @@ Sorry, invalid selection.
 
 ## See Also
 
-[C# Reference](../../../csharp/language-reference/index.md)  
-[C# Programming Guide](../../../csharp/programming-guide/index.md)  
-[C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-[switch](../../../csharp/language-reference/keywords/switch.md)  
-[Jump Statements](../../../csharp/language-reference/keywords/jump-statements.md)  
-[Iteration Statements](../../../csharp/language-reference/keywords/iteration-statements.md)
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [switch](../../../csharp/language-reference/keywords/switch.md)  
+- [Jump Statements](../../../csharp/language-reference/keywords/jump-statements.md)  
+- [Iteration Statements](../../../csharp/language-reference/keywords/iteration-statements.md)

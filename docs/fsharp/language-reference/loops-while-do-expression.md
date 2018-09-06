@@ -7,7 +7,6 @@ ms.date: 05/16/2016
 
 The `while...do` expression is used to perform iterative execution (looping) while a specified test condition is true.
 
-
 ## Syntax
 
 ```fsharp
@@ -16,6 +15,7 @@ while test-expression do
 ```
 
 ## Remarks
+
 The *test-expression* is evaluated; if it is `true`, the *body-expression* is executed and the test expression is evaluated again. The *body-expression* must have type `unit`. If the test expression is `false`, the iteration ends.
 
 The following example illustrates the use of the `while...do` expression.
@@ -29,13 +29,11 @@ The output of the previous code is a stream of random numbers between 1 and 20, 
 Found a 10!
 ```
 
->[!NOTE] 
+>[!NOTE]
 You can use `while...do` in sequence expressions and other computation expressions, in which case a customized version of the `while...do` expression is used. For more information, see [Sequences](sequences.md), [Asynchronous Workflows](asynchronous-workflows.md), and [Computation Expressions](computation-expressions.md).
 
+## See also
 
-## See Also
-[F# Language Reference](index.md)
-
-[Loops: `for...in` Expression](loops-for-in-expression.md)
-
-[Loops: `for...to` Expression](loops-for-to-expression.md)
+- [F# Language Reference](index.md)
+- [Loops: `for...in` Expression](loops-for-in-expression.md)
+- [Loops: `for...to` Expression](loops-for-to-expression.md)

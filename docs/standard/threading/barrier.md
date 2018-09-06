@@ -43,6 +43,7 @@ A *barrier* is a user-defined synchronization primitive that enables multiple th
   
  For more information, see [Chaining Tasks by Using Continuation Tasks](../../../docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md).  
   
-## See Also  
- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)  
- [How to: Synchronize Concurrent Operations with a Barrier](../../../docs/standard/threading/how-to-synchronize-concurrent-operations-with-a-barrier.md)
+## See also
+
+- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)  
+- [How to: Synchronize Concurrent Operations with a Barrier](../../../docs/standard/threading/how-to-synchronize-concurrent-operations-with-a-barrier.md)

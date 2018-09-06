@@ -32,8 +32,8 @@ The Windows Forms `TreeView` control displays a hierarchy of nodes, like the way
   
  [How to: Attach a ShortCut Menu to a TreeView Node](../../../../docs/framework/winforms/controls/how-to-attach-a-shortcut-menu-to-a-treeview-node.md)  
  Demonstrates how to add a shortcut menu to a tree view node.  
-  
- Also see [How to: Add and Remove Nodes with the Windows Forms TreeView Control Using the Designer](http://msdn.microsoft.com/library/ms233651\(v=vs.110\)), [How to: Attach a Shortcut Menu to a TreeNode Using the Designer](http://msdn.microsoft.com/library/ms171708\(v=vs.110\)).  
+
+Also see [How to: Add and Remove Nodes with the Windows Forms TreeView Control Using the Designer](add-and-remove-nodes-with-wf-treeview-control-using-the-designer.md), and [How to: Attach a Shortcut Menu to a TreeNode Using the Designer](how-to-attach-a-shortcut-menu-to-a-treenode-using-the-designer.md).  
   
 ## Reference  
  <xref:System.Windows.Forms.TreeView> class  

@@ -12,7 +12,7 @@ ms.assetid: 028deb1a-acf8-4911-979a-ba8431cd9d82
 The following procedure demonstrates how to create a <xref:System.Windows.Forms.ToolStrip> and add seven <xref:System.Windows.Forms.ToolStripButton> controls that represent typical tasks.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ### To add standard items in the designer  
   

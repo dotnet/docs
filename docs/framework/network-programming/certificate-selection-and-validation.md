@@ -35,13 +35,13 @@ The <xref:System.Net> classes support several ways to select and validate <xref:
 ## Tools for Certificate Configuration  
  A number of tools are available for client and server certificate configuration.  
   
- The *Winhttpcertcfg.exe* tool can be used to configure client certificates. The *Winhttpcertcfg.exe* tool is provided as one of the tools with the Windows Server 2003 Resource Kit. This tool is also available as a download as part of the Windows Server 2003 Resource Kit Tools at www.microsoft.com.  
+ The *Winhttpcertcfg.exe* tool can be used to configure client certificates. The *Winhttpcertcfg.exe* tool is provided as one of the tools with the Windows Server 2003 Resource Kit. This tool is also available as a download as part of the Windows Server 2003 Resource Kit Tools at [www.microsoft.com](https://www.microsoft.com).  
   
 The *HttpCfg.exe* tool can be used to configure server certificates for the <xref:System.Net.HttpListener> class. The *HttpCfg.exe* tool is provided as one of the support tools for Windows Server 2003 and Windows XP Service Pack 2. *HttpCfg.exe* and the other support tools are not installed by default on either Windows Server 2003 or Windows XP. On Windows Server 2003. the support tools are installed separately from the following folder and file on the Windows Server 2003 CD-ROM:  
   
  \Support\Tools\Suptools.msi  
   
- For use with Windows XP Service Pack 2, the Windows XP Support Tools are available as a download from www.microsoft.com.  
+ For use with Windows XP Service Pack 2, the Windows XP Support Tools are available as a download from [www.microsoft.com](https://www.microsoft.com).  
   
  The source code to a version of the *HttpCfg.exe* tool is also provided as a sample with the Windows Server SDK. The source code to the *HttpCfg.exe* sample is installed by default with the networking samples as part of the Windows SDK under the following folder:  
   

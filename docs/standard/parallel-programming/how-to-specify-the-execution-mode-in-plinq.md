@@ -26,6 +26,7 @@ This example shows how to force PLINQ to bypass its default heuristics and paral
 ## Compiling the Code  
  Cut and paste this code into the [PLINQ Data Sample](../../../docs/standard/parallel-programming/plinq-data-sample.md) and call the method from `Main`.  
   
-## See Also  
- <xref:System.Linq.ParallelEnumerable.AsSequential%2A>  
- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+## See also
+
+- <xref:System.Linq.ParallelEnumerable.AsSequential%2A>  
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

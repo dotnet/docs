@@ -17,8 +17,8 @@ For more detailed information, see the version of [SQL Server documentation](/sq
   
  **SQL Server documentation**
 
-1. [CLR Stored Procedures](http://go.microsoft.com/fwlink/?LinkId=115400)  
+1. [CLR Stored Procedures](https://go.microsoft.com/fwlink/?LinkId=115400)  
   
 ## See Also  
- [Creating SQL Server 2005 Objects In Managed Code](http://msdn.microsoft.com/library/5358a825-e19b-49aa-8214-674ce5fed1da)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [Creating SQL Server 2005 Objects In Managed Code](https://msdn.microsoft.com/library/5358a825-e19b-49aa-8214-674ce5fed1da)  
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -245,13 +245,14 @@ foreach (XmlSchema schema in schemaSet.Schemas())
   
  For more information about validating XML documents using an <xref:System.Xml.Schema.XmlSchemaSet>, see [XML Schema (XSD) Validation with XmlSchemaSet](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemaset.md).  
   
-## See Also  
- <xref:System.Xml.Schema.XmlSchemaSet.Add%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.Contains%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.Reprocess%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.Remove%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.RemoveRecursive%2A>  
- [XmlSchemaSet as a Schema Cache](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
- [XML Schema (XSD) Validation with XmlSchemaSet](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemaset.md)
+## See also
+
+- <xref:System.Xml.Schema.XmlSchemaSet.Add%2A>  
+- <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A>  
+- <xref:System.Xml.Schema.XmlSchemaSet.Contains%2A>  
+- <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A>  
+- <xref:System.Xml.Schema.XmlSchemaSet.Reprocess%2A>  
+- <xref:System.Xml.Schema.XmlSchemaSet.Remove%2A>  
+- <xref:System.Xml.Schema.XmlSchemaSet.RemoveRecursive%2A>  
+- [XmlSchemaSet as a Schema Cache](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
+- [XML Schema (XSD) Validation with XmlSchemaSet](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemaset.md)

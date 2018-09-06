@@ -22,5 +22,6 @@ The following example uses some of the methods discussed in the [Basic String Op
   
  When the preceding code is executed, the user is asked to enter his or her name and address. The application places the information in the appropriate properties and displays the information back to the user, creating a single string that displays the city, state, and ZIP Code information.  
   
-## See Also  
- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)
+## See also
+
+- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)

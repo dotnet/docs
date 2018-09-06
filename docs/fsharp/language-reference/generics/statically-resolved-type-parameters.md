@@ -7,7 +7,6 @@ ms.date: 05/16/2016
 
 A *statically resolved type parameter* is a type parameter that is replaced with an actual type at compile time instead of at run time. They are preceded by a caret (^) symbol.
 
-
 ## Syntax
 
 ```
@@ -15,6 +14,7 @@ A *statically resolved type parameter* is a type parameter that is replaced with
 ```
 
 ## Remarks
+
 In the F# language, there are two distinct kinds of type parameters. The first kind is the standard generic type parameter. These are indicated by an apostrophe ('), as in `'T` and `'U`. They are equivalent to generic type parameters in other .NET Framework languages. The other kind is statically resolved and is indicated by a caret symbol, as in `^T` and `^U`.
 
 Statically resolved type parameters are primarily useful in conjunction with member constraints, which are constraints that allow you to specify that a type argument must have a particular member or members in order to be used. There is no way to create this kind of constraint by using a regular generic type parameter.
@@ -79,13 +79,10 @@ let inline replace (a: ^a) (f: ^b): ^a0 when (CFunctor or  ^b): (static member r
     replace_instance<CFunctor, _, _, _> (a, f)
 ```
 
-## See Also
-[Generics](index.md)
+## See also
 
-[Type Inference](../type-inference.md)
-
-[Automatic Generalization](automatic-generalization.md)
-
-[Constraints](constraints.md)
-
-[Inline Functions](../functions/inline-functions.md)
+- [Generics](index.md)
+- [Type Inference](../type-inference.md)
+- [Automatic Generalization](automatic-generalization.md)
+- [Constraints](constraints.md)
+- [Inline Functions](../functions/inline-functions.md)

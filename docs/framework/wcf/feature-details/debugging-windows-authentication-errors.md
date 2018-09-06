@@ -12,7 +12,7 @@ ms.assetid: 181be4bd-79b1-4a66-aee2-931887a6d7cc
 # Debugging Windows Authentication Errors
 When using Windows authentication as a security mechanism, the Security Support Provider Interface (SSPI) handles security processes. When security errors occur at the SSPI layer, they are surfaced by Windows Communication Foundation (WCF). This topic provides a framework and set of questions to help diagnose the errors.  
   
- For an overview of the Kerberos protocol, see [Kerberos Explained](http://go.microsoft.com/fwlink/?LinkID=86946); for an overview of SSPI, see [SSPI](http://go.microsoft.com/fwlink/?LinkId=88941).  
+ For an overview of the Kerberos protocol, see [Kerberos Explained](https://go.microsoft.com/fwlink/?LinkID=86946); for an overview of SSPI, see [SSPI](https://go.microsoft.com/fwlink/?LinkId=88941).  
   
  For Windows authentication, WCF typically uses the *Negotiate* Security Support Provider (SSP), which performs Kerberos mutual authentication between the client and service. If the Kerberos protocol is not available, by default WCF falls back to NT LAN Manager (NTLM). However, you can configure WCF to use only the Kerberos protocol (and to throw an exception if Kerberos is not available). You can also configure WCF to use restricted forms of the Kerberos protocol.  
   
@@ -60,7 +60,7 @@ When using Windows authentication as a security mechanism, the Security Support 
   
  In load-balancing scenarios, such as Web farms or Web gardens, a common practice is to define a unique account for each application, assign an SPN to that account, and ensure that all of the application's services run in that account.  
   
- To obtain an SPN for your service's account, you need to be an Active Directory domain administrator. For more information, see [Kerberos Technical Supplement for Windows](http://go.microsoft.com/fwlink/?LinkID=88330).  
+ To obtain an SPN for your service's account, you need to be an Active Directory domain administrator. For more information, see [Kerberos Technical Supplement for Windows](https://go.microsoft.com/fwlink/?LinkID=88330).  
   
 #### Kerberos Protocol Direct Requires the Service to Run Under a Domain Machine Account  
  This occurs when the `ClientCredentialType` property is set to `Windows` and the <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A> property is set to `false`, as shown in the following code.  

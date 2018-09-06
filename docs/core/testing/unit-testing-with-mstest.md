@@ -140,7 +140,6 @@ In the *unit-testing-using-mstest* directory, run `dotnet test` again. The `dotn
 Now that you've made one test pass, it's time to write more. There are a few other simple cases for prime numbers: 0, -1. You could add new tests with the `[TestMethod]` attribute, but that quickly becomes tedious. There are other MSTest attributes that enable you to write a suite of similar tests.  A `[DataTestMethod]`attribute represents a suite of tests that execute the same code but have different input arguments. You can use the `[DataRow]` attribute to specify values for those inputs.
 
 Instead of creating new tests, apply these two attributes to create a single data driven test. The data driven test is a method that tests several values less than two, which is the lowest prime number:
-:
 
 [!code-csharp[Sample_TestCode](../../../samples/core/getting-started/unit-testing-using-mstest/PrimeService.Tests/PrimeService_IsPrimeShould.cs?name=Sample_TestCode)]
 

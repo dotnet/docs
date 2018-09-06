@@ -83,8 +83,9 @@ Operating systems use processes to separate the different applications that they
 > [!NOTE]
 >  In the .NET Framework versions 1.0 and 1.1, the common language runtime silently traps some exceptions, for example in thread pool threads. This may corrupt application state and eventually cause applications to hang, which might be very difficult to debug.  
   
-## See Also  
- <xref:System.Threading.ThreadPool>  
- <xref:System.ComponentModel.BackgroundWorker>  
- [Synchronizing Data for Multithreading](../../../docs/standard/threading/synchronizing-data-for-multithreading.md)  
- [The Managed Thread Pool](../../../docs/standard/threading/the-managed-thread-pool.md)
+## See also
+
+- <xref:System.Threading.ThreadPool>  
+- <xref:System.ComponentModel.BackgroundWorker>  
+- [Synchronizing Data for Multithreading](../../../docs/standard/threading/synchronizing-data-for-multithreading.md)  
+- [The Managed Thread Pool](../../../docs/standard/threading/the-managed-thread-pool.md)

@@ -40,13 +40,13 @@ The .NET Framework 4.7.2 builds on previous versions of the .NET Framework 4.x b
  
 You can download the .NET Framework 4.7.2  from the following locations:
 
-- [.NET Framework 4.7.2 Web Installer](http://go.microsoft.com/fwlink/?LinkId=863262)
+- [.NET Framework 4.7.2 Web Installer](https://go.microsoft.com/fwlink/?LinkId=863262)
 
-- [NET Framework 4.7.2 Offline Installer](http://go.microsoft.com/fwlink/?LinkId=863265)
+- [NET Framework 4.7.2 Offline Installer](https://go.microsoft.com/fwlink/?LinkId=863265)
 
 The .NET Framework 4.7.2 can be installed on Windows 10, Windows 8.1, Windows 7 SP1, and the corresponding server platforms starting with Windows Server 2008 R2 SP1. You can install the .NET Framework 4.7.2 by using either the web installer or the offline installer. The recommended way for most users is to use the web installer.
 
-You can target the .NET Framework 4.7.2 in Visual Studio 2012 or later by installing the [.NET Framework 4.7.2 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=874338). 
+You can target the .NET Framework 4.7.2 in Visual Studio 2012 or later by installing the [.NET Framework 4.7.2 Developer Pack](https://go.microsoft.com/fwlink/?LinkId=874338). 
 
 ### What's new in the .NET Framework 4.7.2
 
@@ -592,6 +592,7 @@ Starting with applications that target the .NET Framework 4.7, the .NET Framewor
 High DPI support is an opt-in feature that you configure by defining a [\<System.Windows.Forms.ConfigurationSection>](../configure-apps/file-schema/winforms/index.md) section in your application configuration file. For more information on adding high DPI support and dynamic DPI support to your Windows Forms application, see [High DPI Support in Windows Forms](../winforms/high-dpi-support-in-windows-forms.md).
 
 <a name="WPF47" />
+
 #### Windows Presentation Foundation (WPF)
 
 In the .NET Framework 4.7, WPF includes the following enhancements:
@@ -630,7 +631,7 @@ The [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] includes new features
 
 - [Debugging improvements](#Debug462)
 
-For a list of new APIs added to the .NET Framework 4.6.2, see [.NET Framework 4.6.2 API Changes](https://github.com/Microsoft/dotnet/blob/master/releases/net462/dotnet462-api-changes.md) on GitHub. For a list of feature improvements and bug fixes in the .NET Framework 4.6.2, see [.NET Framework 4.6.2 List of Changes](http://go.microsoft.com/fwlink/?LinkId=708778) on GitHub.  For additional information, see [Announcing .NET Framework 4.6.2](https://blogs.msdn.microsoft.com/dotnet/2016/08/02/announcing-net-framework-4-6-2/) in the .NET blog.
+For a list of new APIs added to the .NET Framework 4.6.2, see [.NET Framework 4.6.2 API Changes](https://github.com/Microsoft/dotnet/blob/master/releases/net462/dotnet462-api-changes.md) on GitHub. For a list of feature improvements and bug fixes in the .NET Framework 4.6.2, see [.NET Framework 4.6.2 List of Changes](https://go.microsoft.com/fwlink/?LinkId=708778) on GitHub.  For additional information, see [Announcing .NET Framework 4.6.2](https://blogs.msdn.microsoft.com/dotnet/2016/08/02/announcing-net-framework-4-6-2/) in the .NET blog.
 
 <a name="ASPNET462" />
 ### ASP.NET
@@ -1010,7 +1011,7 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
 
  **Support for C# expressions and IntelliSense in the Re-hosted WF Designer**
 
- Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], WF supports C# expressions in both the Visual Studio Designer and in code workflows. The Re-hosted Workflow Designer is a key feature of WF that allows for the Workflow Designer to be in an application outside Visual Studio (for example, in WPF).  Windows Workflow Foundation provides the ability to support C# expressions and IntelliSense in the Re-hosted Workflow Designer. For more information, see the [Windows Workflow Foundation blog](http://go.microsoft.com/fwlink/?LinkID=809042&clcid=0x409).
+ Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], WF supports C# expressions in both the Visual Studio Designer and in code workflows. The Re-hosted Workflow Designer is a key feature of WF that allows for the Workflow Designer to be in an application outside Visual Studio (for example, in WPF).  Windows Workflow Foundation provides the ability to support C# expressions and IntelliSense in the Re-hosted Workflow Designer. For more information, see the [Windows Workflow Foundation blog](https://go.microsoft.com/fwlink/?LinkID=809042&clcid=0x409).
 
  `Availability of IntelliSense when a customer rebuilds a workflow project from Visual Studio`
  In versions of the .NET Framework prior to the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], WF Designer IntelliSense is broken when a customer rebuilds a workflow project from Visual Studio. While the project build is successful, the workflow types are not found on the designer, and warnings from IntelliSense for the missing workflow types appear in the **Error List** window. The [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] addresses this issue and makes IntelliSense available.
@@ -1073,11 +1074,11 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
 
  For more information on the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)], see the following topics:
 
-- The [.NET Framework 4.6.1 list of changes](http://go.microsoft.com/fwlink/?LinkId=622964)
+- The [.NET Framework 4.6.1 list of changes](https://go.microsoft.com/fwlink/?LinkId=622964)
 
 - [Application Compatibility in 4.6.1](../../../docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-6-1.md)
 
-- [The .NET Framework API diff](http://go.microsoft.com/fwlink/?LinkId=622989) (on GitHub)
+- [The .NET Framework API diff](https://go.microsoft.com/fwlink/?LinkId=622989) (on GitHub)
 
 <a name="Crypto" />
 
@@ -1132,7 +1133,7 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
 - Current thread culture.
 
- For additional information on language support in WPF, see the [WPF blog post on .NET Framework 4.6.1 features](http://go.microsoft.com/fwlink/?LinkID=691819).
+ For additional information on language support in WPF, see the [WPF blog post on .NET Framework 4.6.1 features](https://go.microsoft.com/fwlink/?LinkID=691819).
 
  **Additional support for per-user custom dictionaries**
 
@@ -1157,7 +1158,7 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
  **DirectX extensions**
 
- WPF includes a [NuGet package](http://go.microsoft.com/fwlink/?LinkID=691342) that provides new implementations of <xref:System.Windows.Interop.D3DImage> that make it easy for you to interoperate with DX10 and Dx11 content. The code for this package has been open sourced and is available [on GitHub](https://github.com/Microsoft/WPFDXInterop).
+ WPF includes a [NuGet package](https://go.microsoft.com/fwlink/?LinkID=691342) that provides new implementations of <xref:System.Windows.Interop.D3DImage> that make it easy for you to interoperate with DX10 and Dx11 content. The code for this package has been open sourced and is available [on GitHub](https://github.com/Microsoft/WPFDXInterop).
 
 <a name="WWF461" />
 
@@ -1205,7 +1206,7 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
      MVC, Web API, and Web Pages are unified into a single framework called MVC 6. You build ASP.NET 5 apps through the new tools in Visual Studio 2015. Your existing applications will work on the new .NET Framework; however to build an app that uses MVC 6 or SignalR 3, you must use the project system in Visual Studio 2015.
 
-     For information, see [ASP.NET 5](http://go.microsoft.com/fwlink/?LinkId=518238).
+     For information, see [ASP.NET 5](https://go.microsoft.com/fwlink/?LinkId=518238).
 
 - **ASP.NET Updates**
 
@@ -1264,7 +1265,7 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
 - **64-bit JIT Compiler for managed code**
 
-     The .NET Framework 4.6 features a new version of the 64-bit JIT compiler (originally code-named RyuJIT). The new 64-bit compiler provides significant performance improvements over the older 64-bit JIT compiler. The new 64-bit compiler is enabled for 64-bit processes running on top of the .NET Framework 4.6. Your app will run in a 64-bit process if it is compiled as 64-bit or AnyCPU and is running on a 64-bit operating system. While care has been taken to make the transition to the new compiler as transparent as possible, changes in behavior are possible. We would like to hear directly about any issues encountered when using the new JIT compiler. Please contact us through [Microsoft Connect](http://connect.microsoft.com/) if you encounter an issue that may be related to the new 64-bit JIT compiler.
+     The .NET Framework 4.6 features a new version of the 64-bit JIT compiler (originally code-named RyuJIT). The new 64-bit compiler provides significant performance improvements over the older 64-bit JIT compiler. The new 64-bit compiler is enabled for 64-bit processes running on top of the .NET Framework 4.6. Your app will run in a 64-bit process if it is compiled as 64-bit or AnyCPU and is running on a 64-bit operating system. While care has been taken to make the transition to the new compiler as transparent as possible, changes in behavior are possible. We would like to hear directly about any issues encountered when using the new JIT compiler. Please contact us through [Microsoft Connect](https://connect.microsoft.com/) if you encounter an issue that may be related to the new 64-bit JIT compiler.
 
      The new 64-bit JIT compiler also includes hardware SIMD acceleration features when coupled with SIMD-enabled types in the <xref:System.Numerics> namespace, which can yield good performance improvements.
 
@@ -1537,7 +1538,7 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
 - **Open-source .NET Framework packages**
 
-     .NET Core packages such as the immutable collections, [SIMD APIs](http://go.microsoft.com/fwlink/?LinkID=518639), and networking APIs such as those found in the <xref:System.Net.Http> namespace are now available as open source packages on [GitHub](https://github.com/). To access the code, see [CoreFx on GitHub](https://github.com/dotnet/corefx). For more information and how to contribute to these packages, see [.NET Core and Open-Source](../../../docs/framework/get-started/net-core-and-open-source.md), [.NET Home Page on GitHub](https://github.com/dotnet/home).
+     .NET Core packages such as the immutable collections, [SIMD APIs](https://go.microsoft.com/fwlink/?LinkID=518639), and networking APIs such as those found in the <xref:System.Net.Http> namespace are now available as open source packages on [GitHub](https://github.com/). To access the code, see [CoreFx on GitHub](https://github.com/dotnet/corefx). For more information and how to contribute to these packages, see [.NET Core and Open-Source](../../../docs/framework/get-started/net-core-and-open-source.md), [.NET Home Page on GitHub](https://github.com/dotnet/home).
 
  [Back to top](#introduction)
 
@@ -1619,7 +1620,7 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 ## What's new in the .NET Framework 4.5.1
  **April 2014 updates**:
 
-- [Visual Studio 2013 Update 2](http://go.microsoft.com/fwlink/p/?LinkId=393658) includes updates to the Portable Class Library templates to support these scenarios:
+- [Visual Studio 2013 Update 2](https://go.microsoft.com/fwlink/p/?LinkId=393658) includes updates to the Portable Class Library templates to support these scenarios:
 
     - You can use Windows Runtime APIs in portable libraries that target Windows 8.1, Windows Phone 8.1, and Windows Phone Silverlight 8.1.
 
@@ -1633,7 +1634,7 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
 - The .NET Framework content set now includes documentation for [!INCLUDE[net_native](../../../includes/net-native-md.md)], which is a precompilation technology for building and deploying Windows apps. [!INCLUDE[net_native](../../../includes/net-native-md.md)] compiles your apps directly to native code, rather than to intermediate language (IL), for better performance. For details, see [Compiling Apps with .NET Native](../../../docs/framework/net-native/index.md).
 
-- The [.NET Framework Reference Source](http://referencesource.microsoft.com/) provides a new browsing experience and enhanced functionality. You can now browse through the .NET Framework source code online, [download the reference](http://referencesource.microsoft.com/download.html) for offline viewing, and step through the sources (including patches and updates) during debugging. For more information, see the blog entry [A new look for .NET Reference Source](https://blogs.msdn.microsoft.com/dotnet/2014/02/24/a-new-look-for-net-reference-source/).
+- The [.NET Framework Reference Source](https://referencesource.microsoft.com/) provides a new browsing experience and enhanced functionality. You can now browse through the .NET Framework source code online, [download the reference](https://referencesource.microsoft.com/download.html) for offline viewing, and step through the sources (including patches and updates) during debugging. For more information, see the blog entry [A new look for .NET Reference Source](https://blogs.msdn.microsoft.com/dotnet/2014/02/24/a-new-look-for-net-reference-source/).
 
  Core new features and enhancements in the .NET Framework 4.5.1 include:
 
@@ -1663,7 +1664,7 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
  Improvements when debugging your .NET Framework apps in [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)] include:
 
-- Return values in the Visual Studio debugger. When you debug a managed app in [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], the Autos window displays return types and values for methods. This information is available for desktop, Windows Store, and Windows Phone apps. For more information, see [Examine return values of method calls](http://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f\(v=vs.120\).aspx) in the MSDN Library.
+- Return values in the Visual Studio debugger. When you debug a managed app in [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], the Autos window displays return types and values for methods. This information is available for desktop, Windows Store, and Windows Phone apps. For more information, see [Examine return values of method calls](https://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f\(v=vs.120\).aspx) in the MSDN Library.
 
 - Edit and Continue for 64-bit apps. [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)] supports the Edit and Continue feature for 64-bit managed apps for desktop, Windows Store, and Windows Phone. The existing limitations remain in effect for both 32-bit and 64-bit apps (see the last section of the [Supported Code Changes (C#)](/visualstudio/debugger/supported-code-changes-csharp) article).
 
@@ -1673,7 +1674,7 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
  Starting with [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], you can use the [Managed Profile Guided Optimization Tool (Mpgo.exe)](../../../docs/framework/tools/mpgo-exe-managed-profile-guided-optimization-tool.md) to optimize [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps as well as desktop apps.
 
- For new features in ASP.NET 4.5.1, see [ASP.NET 4.5.1 and Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkID=309094) on the ASP.NET site.
+ For new features in ASP.NET 4.5.1, see [ASP.NET 4.5.1 and Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkID=309094) on the ASP.NET site.
 
  [Back to top](#introduction)
 
@@ -1722,7 +1723,7 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
 - Multiple scopes.
 
-- A subset of MEF that you can use when you create [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. This subset is available as a [downloadable package](http://go.microsoft.com/fwlink/?LinkId=256238) from the NuGet Gallery. To install the package, open your project in Visual Studio, choose **Manage NuGet Packages** from the **Project** menu, and search online for the `Microsoft.Composition` package.
+- A subset of MEF that you can use when you create [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. This subset is available as a [downloadable package](https://go.microsoft.com/fwlink/?LinkId=256238) from the NuGet Gallery. To install the package, open your project in Visual Studio, choose **Manage NuGet Packages** from the **Project** menu, and search online for the `Microsoft.Composition` package.
 
  For more information, see [Managed Extensibility Framework (MEF)](../../../docs/framework/mef/index.md).
 
@@ -1739,16 +1740,16 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 <a name="parallel" />
 
 ### Parallel computing
- The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] provides several new features and improvements for parallel computing. These include improved performance, increased control, improved support for asynchronous programming, a new dataflow library, and improved support for parallel debugging and performance analysis. See the entry [What’s New for Parallelism in .NET 4.5](http://go.microsoft.com/fwlink/?LinkId=235061) in the Parallel Programming with .NET blog.
+ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] provides several new features and improvements for parallel computing. These include improved performance, increased control, improved support for asynchronous programming, a new dataflow library, and improved support for parallel debugging and performance analysis. See the entry [What’s New for Parallelism in .NET 4.5](https://go.microsoft.com/fwlink/?LinkId=235061) in the Parallel Programming with .NET blog.
 
 <a name="web" />
 
 ### Web
  ASP.NET 4.5 and 4.5.1 add model binding for Web Forms, WebSocket support, asynchronous handlers, performance enhancements, and many other features. For more information, see the following resources:
 
-- [ASP.NET 4.5 and Visual Studio 2012](http://msdn.microsoft.com/library/ac9bb7f6-f094-4af7-bad0-acf49a5dbc55) in the MSDN Library.
+- [ASP.NET 4.5 and Visual Studio 2012](https://msdn.microsoft.com/library/ac9bb7f6-f094-4af7-bad0-acf49a5dbc55) in the MSDN Library.
 
-- [ASP.NET 4.5.1 and Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkID=309094) on the ASP.NET site.
+- [ASP.NET 4.5.1 and Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkID=309094) on the ASP.NET site.
 
 <a name="networking" />
 
@@ -1831,14 +1832,14 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
 - Support for WCF services that use internationalized domain names (IDNs).
 
- For more information, see [What's New in Windows Communication Foundation](http://go.microsoft.com/fwlink/?LinkId=228173).
+ For more information, see [What's New in Windows Communication Foundation](https://go.microsoft.com/fwlink/?LinkId=228173).
 
 <a name="windows_workflow_foundation" />
 
 ### Windows Workflow Foundation (WF)
  In the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], several new features were added to Windows Workflow Foundation (WF), including:
 
-- State machine workflows, which were first introduced as part of the .NET Framework 4.0.1 ([.NET Framework 4 Platform Update 1](http://go.microsoft.com/fwlink/?LinkID=215092)). This update included several new classes and activities that enabled developers to create state machine workflows. These classes and activities were updated for the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] to include:
+- State machine workflows, which were first introduced as part of the .NET Framework 4.0.1 ([.NET Framework 4 Platform Update 1](https://go.microsoft.com/fwlink/?LinkID=215092)). This update included several new classes and activities that enabled developers to create state machine workflows. These classes and activities were updated for the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] to include:
 
     - The ability to set breakpoints on states.
 
@@ -1884,11 +1885,11 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
 - Contract-first workflow service development, which provides support for automatically generating activities to match an existing service contract.
 
- For more information, see [What's New in Windows Workflow Foundation](http://go.microsoft.com/fwlink/?LinkId=228176).
+ For more information, see [What's New in Windows Workflow Foundation](https://go.microsoft.com/fwlink/?LinkId=228176).
 
 <a name="tailored" />
 ### [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]
- [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps are designed for specific form factors and leverage the power of the Windows operating system. A subset of the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or 4.5.1 is available for building [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps for Windows by using C# or Visual Basic. This subset is called [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)] and is discussed in an [overview](http://go.microsoft.com/fwlink/?LinkId=228491) in the Windows Dev Center.
+ [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps are designed for specific form factors and leverage the power of the Windows operating system. A subset of the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or 4.5.1 is available for building [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps for Windows by using C# or Visual Basic. This subset is called [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)] and is discussed in an [overview](https://go.microsoft.com/fwlink/?LinkId=228491) in the Windows Dev Center.
 
 <a name="portable" />
 ### Portable Class Libraries

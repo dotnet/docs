@@ -36,13 +36,14 @@ ms.assetid: 0202d3f1-a50b-427d-a5bb-79208b8f1c22
   
 2.  Type **http://localhost/IXmlSerializable/Service.asmx**.  
   
-## See Also  
- <xref:System.Xml.Serialization.IXmlSerializable>  
- <xref:System.Xml.Serialization>  
- <xref:System.Xml.XmlConvert>  
- <xref:System.Xml.XmlQualifiedName>  
- <xref:System.Xml.XmlReader>  
- <xref:System.Xml.Schema.XmlSchema>  
- <xref:System.Xml.Schema.XmlSchemaSet>  
- <xref:System.Xml.XmlUrlResolver>  
- <xref:System.Xml.XmlWriter>
+## See also
+
+- <xref:System.Xml.Serialization.IXmlSerializable>  
+- <xref:System.Xml.Serialization>  
+- <xref:System.Xml.XmlConvert>  
+- <xref:System.Xml.XmlQualifiedName>  
+- <xref:System.Xml.XmlReader>  
+- <xref:System.Xml.Schema.XmlSchema>  
+- <xref:System.Xml.Schema.XmlSchemaSet>  
+- <xref:System.Xml.XmlUrlResolver>  
+- <xref:System.Xml.XmlWriter>

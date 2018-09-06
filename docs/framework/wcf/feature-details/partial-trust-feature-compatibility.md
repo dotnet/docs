@@ -57,7 +57,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
   
 -   All serializable `[DataContract]` types must be `public`.  
   
--   All serializable `[DataMember]` fields or properties in a `[DataContract]` type must be public and read/write. The serialization and deserialization of [readonly](http://go.microsoft.com/fwlink/?LinkID=98854) fields is not supported when running WCF in a partially-trusted application.  
+-   All serializable `[DataMember]` fields or properties in a `[DataContract]` type must be public and read/write. The serialization and deserialization of [readonly](https://go.microsoft.com/fwlink/?LinkID=98854) fields is not supported when running WCF in a partially-trusted application.  
   
 -   The `[Serializable]`/ISerializable programming model is not supported in a partial trust environment.  
   
@@ -138,7 +138,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
  WCF service host does not support partial trust. If you want to use a WCF service in partial trust, do not use the WCF Service Library Project template in Visual Studio to build your service. Instead, create a new Web site in Visual Studio by choosing the WCF service Web site template, which can host the service in a Web server on which WCF partial trust is supported.  
   
 ## Other Limitations  
- WCF is generally limited to the security considerations imposed upon it by the hosting application. For example, if WCF is hosted in a XAML Browser Application (XBAP), it is subject to XBAP limitations, as described in [Windows Presentation Foundation Partial Trust Security](http://go.microsoft.com/fwlink/?LinkId=89138).  
+ WCF is generally limited to the security considerations imposed upon it by the hosting application. For example, if WCF is hosted in a XAML Browser Application (XBAP), it is subject to XBAP limitations, as described in [Windows Presentation Foundation Partial Trust Security](https://go.microsoft.com/fwlink/?LinkId=89138).  
   
  The following additional features are not enabled when running indigo2 in a partial trust environment:  
   

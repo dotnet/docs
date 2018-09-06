@@ -13,7 +13,7 @@ The .NET Framework is required to run many applications on Windows. You can use 
 
 ![This application could not be started](./media/this-application-could-not-be-started.png)
 
-These instructions will help you install the .NET Framework versions you need. The [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255) is the latest version. It is not supported on Windows Vista and Windows Server 2008. It is included with [Windows 10 April 2018 Update](https://www.microsoft.com/software-download/windows10).
+These instructions will help you install the .NET Framework versions you need. The [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255) is the latest version. It is not supported on Windows Vista and Windows Server 2008. It is included with [Windows 10 April 2018 Update](https://www.microsoft.com/software-download/windows10).
 
 ## .NET Framework 4.6
 
@@ -23,7 +23,7 @@ The [.NET Framework 4.6](https://www.microsoft.com/en-us/download/details.aspx?i
 
 ## .NET Framework 3.5
 
-You can install the [.NET Framework 3.5](http://go.microsoft.com/fwlink/?LinkID=213834&dotnetdocs) on Windows Vista.
+You can install the [.NET Framework 3.5](https://go.microsoft.com/fwlink/?LinkID=213834&dotnetdocs) on Windows Vista.
 
 The .NET Framework 3.5 supports apps built for .NET Framework 1.0 through 3.5.
 

@@ -70,5 +70,6 @@ foreach (XElement el in c1)
 3  
 ```  
   
-## See Also  
- [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+## See Also
+
+- [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)

@@ -16,7 +16,7 @@ This section provides examples that demonstrate how to accomplish common tasks u
  [Change Selection in a RichTextBox Programmatically](../../../../docs/framework/wpf/controls/change-selection-in-a-richtextbox-programmatically.md)  
  [Save, Load, and Print RichTextBox Content](../../../../docs/framework/wpf/controls/how-to-save-load-and-print-richtextbox-content.md)  
  [Position a Custom Context Menu in a RichTextBox](../../../../docs/framework/wpf/controls/how-to-position-a-custom-context-menu-in-a-richtextbox.md)  
- [How to: Replace the Default Content Host for a RichTextBox](http://msdn.microsoft.com/library/dec1b2ce-9ca5-4bb2-bf54-f8a80a3c8beb)  
+ [How to: Replace the Default Content Host for a RichTextBox](https://msdn.microsoft.com/library/dec1b2ce-9ca5-4bb2-bf54-f8a80a3c8beb)  
   
 ## See Also  
  <xref:System.Windows.Controls.TextBox>  

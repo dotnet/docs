@@ -53,11 +53,11 @@ The following example shows many usages of the `default` literal in a default va
 
 [!code-csharp[csProgGuideGenerics#3](../../../../samples/snippets/csharp/programming-guide/statements-expressions-operators/default-literal.cs)]
 
-## See also
+## See Also
 
- <xref:System.Collections.Generic>  
- [C# Programming Guide](../index.md)  
- [Generics (C# Programming Guide)](../generics/index.md)  
- [Generic Methods](../generics/generic-methods.md)  
- [Generics in .NET](~/docs/standard/generics/index.md)  
- [Default values table](../../language-reference/keywords/default-values-table.md)
+- <xref:System.Collections.Generic>  
+- [C# Programming Guide](../index.md)  
+- [Generics (C# Programming Guide)](../generics/index.md)  
+- [Generic Methods](../generics/generic-methods.md)  
+- [Generics in .NET](~/docs/standard/generics/index.md)  
+- [Default values table](../../language-reference/keywords/default-values-table.md)

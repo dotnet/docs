@@ -85,5 +85,6 @@ You can use the .NET Framework [Portable Class Library](../../../docs/standard/c
   
  [!code-xaml[PortableClassLibraryMVVM#6](../../../samples/snippets/csharp/VS_Snippets_CLR/portableclasslibrarymvvm/cs/mainwindow.xaml#6)]  
   
-## See Also  
- [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)
+## See also
+
+- [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)

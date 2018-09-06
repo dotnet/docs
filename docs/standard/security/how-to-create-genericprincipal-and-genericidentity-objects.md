@@ -134,9 +134,10 @@ The IsAuthenticated is: True
 Is this a Manager? True  
 ```  
   
-## See Also  
- <xref:System.Security.Principal.GenericIdentity>  
- <xref:System.Security.Principal.GenericPrincipal>  
- <xref:System.Security.Permissions.PrincipalPermission>  
- [Replacing a Principal Object](../../../docs/standard/security/replacing-a-principal-object.md)  
- [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)
+## See also
+
+- <xref:System.Security.Principal.GenericIdentity>  
+- <xref:System.Security.Principal.GenericPrincipal>  
+- <xref:System.Security.Permissions.PrincipalPermission>  
+- [Replacing a Principal Object](../../../docs/standard/security/replacing-a-principal-object.md)  
+- [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)

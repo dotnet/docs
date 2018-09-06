@@ -471,5 +471,6 @@ static void SchemaValidationEventHandler(object sender, ValidationEventArgs e)
 > [!NOTE]
 >  The values returned by the various properties of the <xref:System.Xml.Schema.XmlSchemaValidator> class are not altered by calling any of the methods in the above table.  
   
-## See Also  
- <xref:System.Xml.Schema.XmlSchemaValidator>
+## See also
+
+- <xref:System.Xml.Schema.XmlSchemaValidator>

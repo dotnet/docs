@@ -38,5 +38,6 @@ doc.documentElement.SetAttribute("xmlns","456");
   
  Therefore, changing `xmlns` attributes will have no affect until you save and reload the **XmlDocument** object.  
   
-## See Also  
- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## See also
+
+- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

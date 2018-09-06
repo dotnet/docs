@@ -88,6 +88,7 @@ public class MyStuff : MyObject
   
  Using the [Serializable](xref:System.SerializableAttribute) attribute is convenient, but it has limitations as previously demonstrated. Refer to the [Serialization Guidelines](serialization-guidelines.md) for information about when you should mark a class for serialization. Serialization cannot be added to a class after it has been compiled.  
   
-## See also  
- [Binary Serialization](binary-serialization.md)  
- [XML and SOAP Serialization](xml-and-soap-serialization.md)
+## See also
+
+- [Binary Serialization](binary-serialization.md)  
+- [XML and SOAP Serialization](xml-and-soap-serialization.md)

@@ -112,6 +112,7 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
   
  Never embed a private key directly into your source code.  Embedded keys can be easily read from an assembly using the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) or by opening the assembly in a text editor such as Notepad.  
   
-## See Also  
- <xref:System.Security.Cryptography.Xml>  
- [How to: Verify the Digital Signatures of XML Documents](../../../docs/standard/security/how-to-verify-the-digital-signatures-of-xml-documents.md)
+## See also
+
+- <xref:System.Security.Cryptography.Xml>  
+- [How to: Verify the Digital Signatures of XML Documents](../../../docs/standard/security/how-to-verify-the-digital-signatures-of-xml-documents.md)

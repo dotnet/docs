@@ -73,6 +73,6 @@ For a comprehensive discussion of TAP, APM, and EAP, see the links provided in t
 
 ## See also
 
-[Asynchronous programming in C#](~/docs/csharp/async.md)   
-[Async Programming in F#](~/docs/fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)   
-[Asynchronous Programming with Async and Await (Visual Basic)](~/docs/visual-basic/programming-guide/concepts/async/index.md)
+- [Asynchronous programming in C#](~/docs/csharp/async.md)   
+- [Async Programming in F#](~/docs/fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)   
+- [Asynchronous Programming with Async and Await (Visual Basic)](~/docs/visual-basic/programming-guide/concepts/async/index.md)

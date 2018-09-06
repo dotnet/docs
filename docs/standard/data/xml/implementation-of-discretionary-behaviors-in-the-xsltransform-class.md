@@ -73,13 +73,13 @@ The following table shows the features that are optional for an XSLT processor t
 |-------------|------------------------|-----------|
 |`disable-output-escaping` attribute on `<xsl:text...>` and `<xsl:value-of...>` tags.|W3C XSLT 1.0 Recommendation,<br /><br /> Section 16.4|The `disable-output-escaping` attribute is ignored when the `xsl:text` or `xsl:value-of` elements are used in an `xsl:comment`, `xsl:processing-instruction`, or `xsl:attribute` element.<br /><br /> Result tree fragments that contain text and the text output that has been escaped are not supported.<br /><br /> The disable-output-escaping attribute is ignored when transforming to an <xref:System.Xml.XmlReader> or <xref:System.Xml.XmlWriter> object.|
 
-## See Also
+## See also
 
-<xref:System.Xml.Xsl.XslTransform>
-[XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)  
-[XSLT Transformations with the XslTransform Class](xslt-transformations-with-the-xsltransform-class.md)  
-[XPathNavigator in Transformations](xpathnavigator-in-transformations.md)  
-[XPathNodeIterator in Transformations](xpathnodeiterator-in-transformations.md)  
-[XPathDocument Input to XslTransform](xpathdocument-input-to-xsltransform.md)  
-[XmlDataDocument Input to XslTransform](xmldatadocument-input-to-xsltransform.md)  
-[XmlDocument Input to XslTransform](xmldocument-input-to-xsltransform.md)  
+- <xref:System.Xml.Xsl.XslTransform>
+- [XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)  
+- [XSLT Transformations with the XslTransform Class](xslt-transformations-with-the-xsltransform-class.md)  
+- [XPathNavigator in Transformations](xpathnavigator-in-transformations.md)  
+- [XPathNodeIterator in Transformations](xpathnodeiterator-in-transformations.md)  
+- [XPathDocument Input to XslTransform](xpathdocument-input-to-xsltransform.md)  
+- [XmlDataDocument Input to XslTransform](xmldatadocument-input-to-xsltransform.md)  
+- [XmlDocument Input to XslTransform](xmldocument-input-to-xsltransform.md)  

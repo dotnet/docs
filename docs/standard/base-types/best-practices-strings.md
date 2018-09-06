@@ -364,5 +364,6 @@ ms.author: "ronpet"
 18.02.1905 15:12  
 ```  
   
-## See Also  
- [Manipulating Strings](../../../docs/standard/base-types/manipulating-strings.md)
+## See also
+
+- [Manipulating Strings](../../../docs/standard/base-types/manipulating-strings.md)

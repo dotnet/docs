@@ -51,8 +51,9 @@ The <xref:System.Threading.Interlocked> class provides methods that synchronize 
  [!code-csharp[Conceptual.Interlocked#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.interlocked/cs/source2.cs#2)]
  [!code-vb[Conceptual.Interlocked#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interlocked/vb/source2.vb#2)]  
   
-## See Also  
- <xref:System.Threading.Interlocked>  
- <xref:System.Threading.Monitor>  
- [Threading](../../../docs/standard/threading/index.md)  
- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)
+## See also
+
+- <xref:System.Threading.Interlocked>  
+- <xref:System.Threading.Monitor>  
+- [Threading](../../../docs/standard/threading/index.md)  
+- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)

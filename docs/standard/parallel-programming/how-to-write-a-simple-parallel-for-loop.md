@@ -57,8 +57,9 @@ This topic contains two examples that illustrate the <xref:System.Threading.Task
   
 -   Copy and paste this code into a Visual Studio 2010 project.  
   
-## See Also  
- <xref:System.Threading.Tasks.Parallel.For%2A>  
- <xref:System.Threading.Tasks.Parallel.ForEach%2A>  
- [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)
+## See also
+
+- <xref:System.Threading.Tasks.Parallel.For%2A>  
+- <xref:System.Threading.Tasks.Parallel.ForEach%2A>  
+- [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
+- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)

@@ -1,4 +1,4 @@
-﻿<Type Name="WebPartDisplayModeCancelEventHandler" FullName="System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventHandler">
+<Type Name="WebPartDisplayModeCancelEventHandler" FullName="System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventHandler">
   <TypeSignature Language="C#" Value="public delegate void WebPartDisplayModeCancelEventHandler(object sender, WebPartDisplayModeCancelEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebPartDisplayModeCancelEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventHandler" />
@@ -30,7 +30,7 @@
 ## Remarks  
  The method specified in the <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventHandler> delegate is called when a <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanging> event is raised.  
   
- Page developers can provide custom handlers for Web Parts events by adding an `OnDisplayModeChanging` attribute to the `<asp:webpartmanager>` element in a page, and assigning a custom method name to the attribute. A custom handler can also be assigned programmatically. For more information on programmatically assigning an event handler, see [NIB: How to: Connect Event Handler Methods to Events](http://msdn.microsoft.com/library/348e9600-22e3-49a2-8864-11c5bb3e98fc).  
+ Page developers can provide custom handlers for Web Parts events by adding an `OnDisplayModeChanging` attribute to the `<asp:webpartmanager>` element in a page, and assigning a custom method name to the attribute. A custom handler can also be assigned programmatically. For more information about how to subscribe to an event, see [How to: Raise and Consume Events](~/docs/standard/events/how-to-raise-and-consume-events.md).  
   
  ]]></format>
     </remarks>

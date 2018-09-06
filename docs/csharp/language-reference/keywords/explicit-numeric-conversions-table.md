@@ -1,6 +1,6 @@
 ---
 title: "Explicit numeric conversions table (C# Reference)"
-ms.date: 09/05/2018
+ms.date: 09/06/2018
 helpviewer_keywords: 
   - "conversions [C#], explicit numeric"
   - "numeric conversions [C#], explicit"
@@ -12,7 +12,7 @@ ms.assetid: f3bb9e76-6b92-4df7-bc36-f866c24e1dfd
 ---
 # Explicit numeric conversions table (C# Reference)
 
-The following table shows the predefined explicit conversions between .NET numeric types, for which there is no [implicit conversion](implicit-numeric-conversions-table.md).
+The following table shows the predefined explicit conversions between .NET numeric types for which there is no [implicit conversion](implicit-numeric-conversions-table.md).
 
 |From|To|  
 |----------|--------|  
@@ -31,7 +31,7 @@ The following table shows the predefined explicit conversions between .NET numer
   
 ## Remarks  
   
-- The explicit numeric conversion may cause loss of precision or result in throwing exceptions.  
+- The explicit numeric conversion may cause loss of precision or result in throwing an exception, typically an <xref:System.OverflowException>.  
   
 - When you convert a `decimal` value to an integral type, this value is rounded towards zero to the nearest integral value. If the resulting integral value is outside the range of the destination type, an <xref:System.OverflowException> is thrown.  
   

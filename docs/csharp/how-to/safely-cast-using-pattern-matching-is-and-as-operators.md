@@ -21,7 +21,7 @@ The preceding sample demonstrates a few features of pattern matching syntax. It 
 
 You can also use the same syntax for testing if a [nullable type](../programming-guide/nullable-types/index.md) has a value, as shown in the following sample code:
 
-[!code-csharp-interactive[Pattern matching with nullable types](../../../samples/snippets/csharp/how-to/safelycast/patternmatchingnullable/Program.cs#PatternMatchingNullable)]
+[!code-csharp-interactive[Pattern matching with nullable types](../../../samples/snippets/csharp/how-to/safelycast/nullablepatternmatching/Program.cs#PatternMatchingNullable)]
 
 The preceding sample demonstrates other features of pattern matching to use with conversions. You can test a variable for the null pattern. The `is` test always returns `false` when the value of the variable is the null value. The pattern matching `is` statement doesn't allow a nullable value type, such as `int?` or `Nullable<int>`, but you can test for any other value type.
 
@@ -29,7 +29,7 @@ The preceding sample also shows how you use the pattern matching `is` expression
 
 If you want to test if a variable is a given type, but not assign it to a new variable, you can use the `is` and `as` operators for reference types and nullable types, as shown in the following code:
 
-[!code-csharp-interactive[testing variable types with the is and as statements](../../../samples/snippets/csharp/how-to/safelycast/isandas/Program.cs#IsAndAs)]
+[!code-csharp-interactive[testing variable types with the is and as statements](../../../samples/snippets/csharp/how-to/safelycast/asandis/Program.cs#IsAndAs)]
 
 The preceding code shows how to use the `is` and `as` statements that were part of the C# language before pattern matching was introduced.
 

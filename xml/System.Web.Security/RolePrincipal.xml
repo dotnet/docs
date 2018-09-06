@@ -143,6 +143,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-instance-note](~/includes/untrusted-data-instance-note.md)]
+
  This overload of the <xref:System.Web.Security.RolePrincipal.%23ctor%2A> constructor creates a new <xref:System.Web.Security.RolePrincipal> object and initializes its property values. Role information for the current user is read from the supplied `encryptedTicket` and cached with the <xref:System.Web.Security.RolePrincipal> object. The <xref:System.Web.Security.RolePrincipal.ProviderName%2A> property is set to the <xref:System.Configuration.Provider.ProviderBase.Name%2A> of the default role provider.  
   
  For information on enabling role management, see the <xref:System.Web.Security.Roles> class.  
@@ -235,6 +238,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-instance-note](~/includes/untrusted-data-instance-note.md)]
+
  This overload of the <xref:System.Web.Security.RolePrincipal.%23ctor%2A> constructor creates a new <xref:System.Web.Security.RolePrincipal> object and initializes its property values. Role information for the current user is read from the supplied `encryptedTicket` and cached with the <xref:System.Web.Security.RolePrincipal> object. The <xref:System.Web.Security.RolePrincipal.ProviderName%2A> property is set to the value specified in the `providerName` parameter.  
   
  For information on enabling role management, see the <xref:System.Web.Security.Roles> class.  

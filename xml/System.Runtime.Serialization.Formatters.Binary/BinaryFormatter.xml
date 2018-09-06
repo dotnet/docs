@@ -335,9 +335,8 @@
   
 ## Remarks  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
-  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  ]]></format>
         </remarks>
       </Docs>
@@ -390,10 +389,7 @@
 ## Remarks  
  For successful deserialization, the current position in the stream must be at the beginning of the object graph.  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
-  
-   
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
 ## Examples  
  [!code-cpp[BinaryFormatterClass Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/BinaryFormatterClass Example/CPP/binaryformatter.cpp#1)]
@@ -455,8 +451,7 @@
   
  In order for deserialization to succeed the current position in the stream must be at the beginning of the object graph.  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  ]]></format>
         </remarks>
@@ -814,8 +809,7 @@
   
  For successful deserialization, the current position in the stream must be at the beginning of the object graph.  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  ]]></format>
         </remarks>
@@ -872,9 +866,8 @@
   
  For successful deserialization, the current position in the stream must be at the beginning of the object graph.  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
-  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="serializationStream" /> is <see langword="null" />.</exception>

@@ -125,9 +125,8 @@
   
 ## Remarks  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
-  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  ]]></format>
         </remarks>
       </Docs>
@@ -161,9 +160,8 @@
 ## Remarks  
  This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the view-state value contained in a <xref:System.IO.Stream> object to a LOS-formatted object.  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
-  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  ]]></format>
         </remarks>
         <altmember cref="T:System.IO.Stream" />
@@ -199,9 +197,8 @@
 ## Remarks  
  This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the view-state value contained in a <xref:System.IO.TextReader> object to a LOS-formatted object.  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
-  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  ]]></format>
         </remarks>
         <altmember cref="T:System.IO.TextReader" />
@@ -237,9 +234,8 @@
 ## Remarks  
  This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the specified view-state value to a LOS-formatted object.  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
-  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The view state is invalid.</exception>

@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).

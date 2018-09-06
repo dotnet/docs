@@ -132,6 +132,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  The <xref:System.Web.SessionState.SessionStateItemCollection.Deserialize%2A> method can be used to read the contents of a <xref:System.Web.SessionState.SessionStateItemCollection> collection from the session store.  
   
  To write the contents of a <xref:System.Web.SessionState.SessionStateItemCollection> object to the session store, use the <xref:System.Web.SessionState.SessionStateItemCollection.Serialize%2A> method.  
@@ -275,6 +278,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
+
+[!INCLUDE [untrusted-data-instance-note](~/includes/untrusted-data-instance-note.md)]
+
  The following code example sets and gets values in a <xref:System.Web.SessionState.SessionStateItemCollection> collection by numerical index.  
   
  [!code-csharp[System.Web.SessionState.SessionStateItemCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SessionState.SessionStateItemCollection/CS/keyscs.aspx#2)]
@@ -315,6 +321,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
+
+ [!INCLUDE [untrusted-data-instance-note](~/includes/untrusted-data-instance-note.md)]
+
  The following code example sets and gets values in a <xref:System.Web.SessionState.SessionStateItemCollection> collection by name.  
   
  [!code-csharp[System.Web.SessionState.SessionStateItemCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SessionState.SessionStateItemCollection/CS/keyscs.aspx#1)]

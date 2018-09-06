@@ -19,7 +19,10 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
+## Remarks
+
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
  This binding can be used to enable WCF applications to send and receive messages to and from existing MSMQ applications that use COM, native C++ APIs or the types defined in the <xref:System.Messaging> namespace.  
   
    

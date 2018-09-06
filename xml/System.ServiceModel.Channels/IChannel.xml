@@ -28,6 +28,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-interface-note](~/includes/untrusted-data-interface-note.md)]
+
  Channels must satisfy the contract of a state machine as defined by the <xref:System.ServiceModel.ICommunicationObject> interface.  
   
  The <xref:System.ServiceModel.Channels.IChannel> interface adds the  

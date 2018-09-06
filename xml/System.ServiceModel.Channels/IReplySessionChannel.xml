@@ -24,6 +24,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-interface-note](~/includes/untrusted-data-interface-note.md)]
+
  The <xref:System.ServiceModel.Channels.IReplySessionChannel> interface indicates that an <xref:System.ServiceModel.Channels.IReplyChannel> implements <xref:System.ServiceModel.Channels.IInputSession> semantics.  
   
  The <xref:System.ServiceModel.Channels.IInputSession> associated with its <xref:System.ServiceModel.Channels.IReplySessionChannel> can be retrieved through the <xref:System.ServiceModel.Channels.ISessionChannel%601.Session%2A> property.  

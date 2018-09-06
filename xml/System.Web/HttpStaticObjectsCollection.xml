@@ -145,8 +145,11 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- The <xref:System.Web.HttpStaticObjectsCollection.Deserialize%2A> method is used to read the contents of a <xref:System.Web.HttpStaticObjectsCollection> object that is stored in a storage location that is created by the <xref:System.Web.HttpStaticObjectsCollection.Serialize%2A> method. To serialize an <xref:System.Web.HttpStaticObjectsCollection>, use the <xref:System.Web.HttpStaticObjectsCollection.Serialize%2A> method.  
+## Remarks
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
+The <xref:System.Web.HttpStaticObjectsCollection.Deserialize%2A> method is used to read the contents of a <xref:System.Web.HttpStaticObjectsCollection> object that is stored in a storage location that is created by the <xref:System.Web.HttpStaticObjectsCollection.Serialize%2A> method. To serialize an <xref:System.Web.HttpStaticObjectsCollection>, use the <xref:System.Web.HttpStaticObjectsCollection.Serialize%2A> method.  
   
  ]]></format>
         </remarks>

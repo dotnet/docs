@@ -271,7 +271,15 @@
         <param name="info">The data needed to serialize or deserialize an object.</param>
         <param name="context">The source and destination of a given serialized stream.</param>
         <summary>Initializes a new instance of a <see cref="T:System.Data.DataSet" /> class that has the given serialization information and context.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+[!INCLUDE [untrusted-data-instance-note](~/includes/untrusted-data-instance-note.md)]
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -307,7 +315,15 @@
         <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> object.</param>
         <param name="ConstructSchema">The boolean value.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.DataSet" /> class.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+[!INCLUDE [untrusted-data-instance-note](~/includes/untrusted-data-instance-note.md)]
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AcceptChanges">

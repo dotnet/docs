@@ -680,9 +680,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  By default this method throws a <xref:System.NotImplementedException> exception.  
   
@@ -719,8 +718,7 @@
   
 ## Remarks  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  By default this method throws a <xref:System.NotImplementedException> exception.  
   
@@ -768,8 +766,7 @@
   
 ## Remarks  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  The default implementation ignores the `tokenResolver` parameter and delegates the call to the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ReadToken%2A?displayProperty=nameWithType> method.  
   

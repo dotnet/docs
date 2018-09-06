@@ -306,6 +306,8 @@
 
 ## Remarks
 
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
 A resource manager facilitates resolution of durable enlistments in a transaction by reenlisting the transaction participant after resource failure.
 
 The `resourceManagerIdentifier` parameter is used to consistently label the participant of a transaction in the event of a resource failure. When calling the <xref:System.Transactions.TransactionManager.Reenlist%2A> method, the resource manager must provide the same `resourceManagerIdentifier` as it used when it originally called the <xref:System.Transactions.Transaction.EnlistDurable%2A> method during enlistment, or a <xref:System.Transactions.TransactionException> is thrown.

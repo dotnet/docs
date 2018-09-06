@@ -44,7 +44,15 @@
         <param name="type">The type to convert the object to.</param>
         <summary>Changes the specified value to the specified type.</summary>
         <returns>An object that contains the converted value of the specified type.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+  
+ ]]></format>
+        </remarks>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -75,7 +83,15 @@
         <param name="value">The object to be converted.</param>
         <summary>Changes the specified value to the current type.</summary>
         <returns>An object of the specified type that contains the converted value.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+  
+ ]]></format>
+        </remarks>
         <forInternalUseOnly />
       </Docs>
     </Member>

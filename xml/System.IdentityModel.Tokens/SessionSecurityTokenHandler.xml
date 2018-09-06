@@ -533,7 +533,10 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
+## Remarks
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  The default implementation deserializes the token from either a WS-Secure Conversation Feb2005 or WS-Secure Conversation 1.3 `<wsc:SecurityContextToken>` element.  
   
  ]]></format>
@@ -565,7 +568,10 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
+## Remarks
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  The reader must be positioned at either a WS-Secure Conversation Feb2005 or a WS-Secure Conversation 1.3 `<wsc:SecurityContextToken>` element.  
   
  The default implementation invokes the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29?displayProperty=nameWithType> method using a default token resolver.  
@@ -604,7 +610,10 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
+## Remarks
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  The default implementation creates an <xref:System.Xml.XmlDictionaryReader> over the token and invokes the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29?displayProperty=nameWithType> method.  
   
  ]]></format>
@@ -638,7 +647,10 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
+## Remarks
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  The reader must be positioned at either a WS-Secure Conversation Feb2005 or a WS-Secure Conversation 1.3 `<wsc:SecurityContextToken>` element.  
   
  If the token material is cached, it is read from the token cache, which is an instance of the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache> class. Otherwise, the token material is read from the child element of the `<wsc:SecurityContextToken>` element that is specified by the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CookieElementName%2A> and <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CookieNamespace%2A> properties and the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms%2A> method is invoked to decode the cookie.  

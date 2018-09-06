@@ -41,13 +41,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stores all the resources localized for one particular culture, ignoring all other cultures, including any fallback rules.  
-  
- **Security Note**: Calling methods in this class with untrusted data is a security risk. Call the methods in the class only with trusted data. For more information, see [Untrusted Data Security Risks](https://docs.com/rick-anderson-1/8710/untrusted-data-security-risks).</summary>
+    <summary>Stores all the resources localized for one particular culture, ignoring all other cultures, including any fallback rules.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
  The <xref:System.Resources.ResourceSet> class enumerates over an <xref:System.Resources.IResourceReader>, loading every name and value, and storing them in a <xref:System.Collections.Hashtable>. A custom <xref:System.Resources.IResourceReader> can be used.  
   
  You can instantiate a <xref:System.Resources.ResourceSet> object that represents the resources of a specific culture by calling the <xref:System.Resources.ResourceManager.GetResourceSet%2A?displayProperty=nameWithType> method.  

@@ -22,7 +22,15 @@
   </Interfaces>
   <Docs>
     <summary>Represents a channel that is used to send WS-Trust messages to a security token service (STS).</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
+]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

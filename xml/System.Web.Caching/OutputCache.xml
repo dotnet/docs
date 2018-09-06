@@ -79,8 +79,11 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- This method is used by output-cache providers that are operating under partial trust.  
+## Remarks
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
+This method is used by output-cache providers that are operating under partial trust.  
   
  ]]></format>
         </remarks>

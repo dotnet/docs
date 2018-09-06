@@ -58,8 +58,7 @@
   
 ## Remarks  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  The <xref:System.Configuration.SettingsProperty> object describes information about the value stored by the <xref:System.Configuration.SettingsPropertyValue> object.  
   

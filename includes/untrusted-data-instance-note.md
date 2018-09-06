@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Using an instance of this object with untrusted data is a security risk. Use this object only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).

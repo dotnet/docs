@@ -117,9 +117,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  Generates a strongly typed <xref:System.Data.DataSet>.  
   
@@ -167,8 +166,7 @@
   
 ## Remarks  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  Generates a strongly typed <xref:System.Data.DataSet>.  
   
@@ -211,8 +209,7 @@
   
 ## Remarks  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  Generates a strongly typed <xref:System.Data.DataSet>.  
   
@@ -260,9 +257,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  Generates a strongly typed <xref:System.Data.DataSet>.  
   
@@ -312,8 +308,7 @@
   
 ## Remarks  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  Generates a strongly typed <xref:System.Data.DataSet>.  
   
@@ -364,8 +359,7 @@
   
 ## Remarks  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  Generates a strongly typed <xref:System.Data.DataSet>.  
   
@@ -417,8 +411,7 @@
   
 ## Remarks  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  Generates a strongly typed <xref:System.Data.DataSet>.  
   
@@ -464,9 +457,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  Generates a strongly typed <xref:System.Data.DataSet>.  
   
@@ -514,8 +506,7 @@
   
 ## Remarks  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  Generates a strongly typed <xref:System.Data.DataSet>.  
   
@@ -572,9 +563,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  This method returns the first provider name in the specified `inputFileContent`.  
   
@@ -612,8 +602,7 @@
   
 ## Remarks  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  Returns the provider name for the given `tableName` in the <xref:System.Data.DataSet>.  
   

@@ -31,6 +31,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-interface-note](~/includes/untrusted-data-interface-note.md)]
+
  The <xref:System.ServiceModel.IContextChannel> defines the controls for the context of a channel. This includes the <xref:System.ServiceModel.IContextChannel.SessionId%2A>, <xref:System.ServiceModel.IContextChannel.InputSession%2A>, <xref:System.ServiceModel.IContextChannel.OutputSession%2A>, and <xref:System.ServiceModel.IContextChannel.AllowOutputBatching%2A> for the channel, and the <xref:System.ServiceModel.IContextChannel.LocalAddress%2A> and <xref:System.ServiceModel.IContextChannel.RemoteAddress%2A> for the endpoints participating in the session. The <xref:System.ServiceModel.IContextChannel> interface forms part of the <xref:System.ServiceModel.IServiceChannel> and <xref:System.ServiceModel.IClientChannel> interfaces and of the <xref:System.ServiceModel.IDuplexContextChannel> interface.  
   
  ]]></format>

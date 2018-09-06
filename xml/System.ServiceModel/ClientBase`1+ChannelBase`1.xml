@@ -50,7 +50,15 @@
   <Docs>
     <typeparam name="T">The generic class.</typeparam>
     <summary>Represents the Generic ChannelBase class.</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
+]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

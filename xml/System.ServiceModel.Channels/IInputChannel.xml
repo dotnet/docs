@@ -28,6 +28,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-interface-note](~/includes/untrusted-data-interface-note.md)]
+
  The <xref:System.ServiceModel.Channels.IInputChannel> contract includes synchronous and asynchronous variants of receive, try-to-receive and wait-for-a-message functionality.  
   
  The pull model is used typically with an <xref:System.ServiceModel.Channels.IInputChannel> to receive messages: you call <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> (to "pull" a message out of the channel) and then wait for a message to arrive. An alternative usage pattern is to call <xref:System.ServiceModel.Channels.IInputChannel.BeginWaitForMessage%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> or <xref:System.ServiceModel.Channels.IInputChannel.BeginWaitForMessage%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29>, and then call <xref:System.ServiceModel.Channels.IInputChannel.Receive%28System.TimeSpan%29>. This approach is common for transactional usages where you start the transaction between the calls to <xref:System.ServiceModel.Channels.IInputChannel.WaitForMessage%28System.TimeSpan%29> and <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A>.  

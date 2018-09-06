@@ -33,8 +33,7 @@
 ## Remarks  
  This class provides a serialization method that can serialize a specified design-time license context.  
   
-> [!IMPORTANT]
->  Using an instance of this object with untrusted data is a security risk. Use this class only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+[!INCLUDE [untrusted-data-instance-note](~/includes/untrusted-data-instance-note.md)]
   
  ]]></format>
     </remarks>

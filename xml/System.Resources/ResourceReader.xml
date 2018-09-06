@@ -40,13 +40,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enumerates the resources in a binary resources (.resources) file by reading sequential resource name/value pairs.  
-  
- **Security Note**: Calling methods in this class with untrusted data is a security risk. Call the methods in the class only with trusted data. For more information, see [Untrusted Data Security Risks](https://docs.com/rick-anderson-1/8710/untrusted-data-security-risks).</summary>
+    <summary>Enumerates the resources in a binary resources (.resources) file by reading sequential resource name/value pairs.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
  The <xref:System.Resources.ResourceReader> class provides a standard implementation of the <xref:System.Resources.IResourceReader> interface. A <xref:System.Resources.ResourceReader> instance represents either a standalone .resources file or a .resources file that is embedded in an assembly. It is used to enumerate the resources in a .resources file and retrieve its name/value pairs. It differs from the <xref:System.Resources.ResourceManager> class, which is used to retrieve specified named resources from a .resources file that is embedded in an assembly. The <xref:System.Resources.ResourceManager> class is used to retrieve resources whose names are known in advance, whereas the <xref:System.Resources.ResourceReader> class is useful for retrieving resources whose number or precise names are not known at compile time. For example, an application may use a resources file to store configuration information that is organized into sections and items in a section, where the number of sections or items in a section is not known in advance. Resources can then be named generically (such as `Section1`, `Section1Item1`, `Section1Item2`, and so on) and retrieved by using a <xref:System.Resources.ResourceReader> object.  
   
 > [!IMPORTANT]
@@ -198,9 +199,8 @@ Label15="Alternate Email Address:"
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!IMPORTANT]
->  Using an instance of this object with untrusted data is a security risk. Use this object only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+
+[!INCLUDE [untrusted-data-instance-note](~/includes/untrusted-data-instance-note.md)].
   
  ]]></format>
         </remarks>
@@ -251,10 +251,7 @@ Label15="Alternate Email Address:"
 ## Remarks  
  The <xref:System.Resources.ResourceReader.%23ctor%28System.IO.Stream%29> constructor instantiates a <xref:System.Resources.ResourceReader> object that retrieves resources either from a standalone .resources file or from a .resources file that is embedded in an assembly. To read from a standalone .resources file, instantiate a <xref:System.IO.Stream> object and pass it to the <xref:System.Resources.ResourceReader.%23ctor%28System.IO.Stream%29> constructor. To read from an embedded .resources file, call the <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=nameWithType> method with the case-sensitive name of the .resources file, and pass the returned <xref:System.IO.Stream> object to the <xref:System.Resources.ResourceReader.%23ctor%28System.IO.Stream%29> constructor.  
   
-> [!IMPORTANT]
->  Using an instance of this object with untrusted data is a security risk. Use this object only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
-  
-   
+[!INCLUDE [untrusted-data-instance-note](~/includes/untrusted-data-instance-note.md)]
   
 ## Examples  
  The example in this section uses the following .txt file named `PatientForm.txt` to define the resources used by an application.  
@@ -343,12 +340,9 @@ Label11="Mobile Phone:"
   
 ## Remarks  
  The <xref:System.Resources.ResourceReader.%23ctor%28System.String%29> constructor instantiates a <xref:System.Resources.ResourceReader> object that retrieves resources from a standalone .resources file. To retrieve resources from an embedded .resources file, use the <xref:System.Resources.ResourceReader.%23ctor%28System.IO.Stream%29> constructor.  
-  
-> [!IMPORTANT]
->  Using an instance of this object with untrusted data is a security risk. Use this object only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
-  
-   
-  
+
+[!INCLUDE [untrusted-data-instance-note](~/includes/untrusted-data-instance-note.md)]
+
 ## Examples  
  The example in this section uses the following .txt file named `PatientForm.txt` to define the resources used by an application.  
   

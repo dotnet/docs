@@ -309,7 +309,15 @@
         <param name="dataObj">Object that contains activities to deserialize.</param>
         <summary>Deserializes items from an <see cref="T:System.Windows.Forms.IDataObject" /> received during a drag-and-drop operation or from the clipboard.</summary>
         <returns>An array of activities deserialized from an <see cref="T:System.Windows.Forms.IDataObject" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">

@@ -37,6 +37,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
  Channels transport messages across remoting boundaries (for example, between computers or application domains). The <xref:System.Runtime.Remoting.Channels.Http.HttpChannel> class transports messages using the HTTP protocol.  
   
  Channels are used by the .NET Framework remoting infrastructure to transport remote calls. When a client makes a call to a remote object, the call is serialized into a message that is sent by a client channel and received by a server channel. It is then deserialized and processed. Any returned values are transmitted by the server channel and received by the client channel.  

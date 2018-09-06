@@ -976,6 +976,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-instance-note](~/includes/untrusted-data-instance-note.md)]
+
  This property contains one of the following:  
   
 -   Information about the method that the failed assembly was executing when the security check that triggered the exception occurred.  

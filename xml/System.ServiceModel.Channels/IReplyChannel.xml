@@ -21,6 +21,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-interface-note](~/includes/untrusted-data-interface-note.md)]
+
  The <xref:System.ServiceModel.Channels.IReplyChannel> interface includes synchronous and asynchronous variants of a <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> method return an <xref:System.ServiceModel.Channels.RequestContext> that can be used to construct replies to received requests.  
   
  The contract includes synchronous and asynchronous variants of receive, try-to-receive and wait-for-a-message functionality.  

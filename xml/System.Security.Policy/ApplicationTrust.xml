@@ -327,7 +327,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.ISecurityPolicyEncodable.ToXml%2A> and <xref:System.Security.ISecurityPolicyEncodable.FromXml%2A> methods are implemented to make <xref:System.Security.Policy.ApplicationTrust> objects XML-encodable for security policy use.  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
+The <xref:System.Security.ISecurityPolicyEncodable.ToXml%2A> and <xref:System.Security.ISecurityPolicyEncodable.FromXml%2A> methods are implemented to make <xref:System.Security.Policy.ApplicationTrust> objects XML-encodable for security policy use.  
   
  ]]></format>
         </remarks>

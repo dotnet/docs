@@ -474,9 +474,8 @@
   
 ## Remarks  
  This method assumes the default format is text XML.  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  ]]></format>
         </remarks>
@@ -641,9 +640,8 @@
   
 ## Remarks  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
-  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  ]]></format>
         </remarks>
       </Docs>
@@ -676,9 +674,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  ]]></format>
         </remarks>
@@ -719,9 +716,8 @@
  The `verifyObjectName` parameter determines whether it can read an object by examining the name and namespace of the XML element the reader is positioned at, and comparing the values to expected name and namespace. The expected name and namespace can be set with the following: the data contract name and namespace of the type passed into the constructor, or the `rootName` and `rootNamespace` values passed into the constructor (if present).  
   
  You can set the `rootName` and `rootNamespace` in the following constructors: <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.String%2CSystem.String%29>, <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%29>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%2CSystem.Runtime.Serialization.StreamingContext%2CSystem.Int32%2CSystem.Boolean%2CSystem.Runtime.Serialization.Formatters.FormatterAssemblyStyle%2CSystem.Runtime.Serialization.ISurrogateSelector%29>.  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  ]]></format>
         </remarks>
@@ -763,9 +759,8 @@
   
  You can set the `rootName` and `rootNamespace` in the following constructors: <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.String%2CSystem.String%29>, <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%29>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%2CSystem.Runtime.Serialization.StreamingContext%2CSystem.Int32%2CSystem.Boolean%2CSystem.Runtime.Serialization.Formatters.FormatterAssemblyStyle%2CSystem.Runtime.Serialization.ISurrogateSelector%29>.  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
-  
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">the <paramref name="reader" /> is set to <see langword="null" />.</exception>

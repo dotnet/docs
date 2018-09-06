@@ -28,6 +28,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-interface-note](~/includes/untrusted-data-interface-note.md)]
+
  The sending side of channels must expose the <xref:System.Runtime.Remoting.Channels.IChannelSender> interface.  
   
    

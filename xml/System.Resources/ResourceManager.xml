@@ -38,13 +38,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a resource manager that provides convenient access to culture-specific resources at run time.  
-  
- **Security Note**: Calling methods in this class with untrusted data is a security risk. Call the methods in the class only with trusted data. For more information, see [Untrusted Data Security Risks](https://docs.com/rick-anderson-1/8710/untrusted-data-security-risks).</summary>
+    <summary>Represents a resource manager that provides convenient access to culture-specific resources at run time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
  The <xref:System.Resources.ResourceManager> class retrieves resources from a binary .resources file that is embedded in an assembly or from a standalone .resources file. If an app has been localized and localized resources have been deployed in [satellite assemblies](~/docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md), it looks up culture-specific resources, provides resource fallback when a localized resource does not exist, and supports resource serialization.  
   
  For more information about creating and managing resources in desktop apps and [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, see the following sections:  

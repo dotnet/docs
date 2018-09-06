@@ -316,9 +316,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  ]]></format>
         </remarks>
@@ -350,9 +349,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  ]]></format>
         </remarks>

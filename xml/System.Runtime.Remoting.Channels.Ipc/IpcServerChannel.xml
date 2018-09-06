@@ -30,6 +30,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
  Channels are used by the .NET Framework remoting infrastructure to transport remote calls. When a client calls a remote object, the call is serialized into a message that is sent by a client channel and received by a server channel. After the message is received, it is deserialized and processed. Any returned values are transmitted by the server channel and received by the client channel.  
   
  The <xref:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel> class uses the Windows interprocess communication (IPC) system to transport messages between application domains on the same computer. When communicating between application domains on the same computer, the IPC channel is much faster than the TCP or HTTP channels.  

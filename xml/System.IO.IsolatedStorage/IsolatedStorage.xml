@@ -35,7 +35,10 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
+## Remarks
+
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
  For information about file-based isolated storage, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class.  
   
 > [!IMPORTANT]

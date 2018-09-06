@@ -1253,6 +1253,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  If you do not know the format of the target application, you can store data in multiple formats using this method. Data stored using this method can be converted to a compatible format when it is retrieved.  
   
  The <xref:System.Windows.Forms.DataObject.SetData%28System.Object%29> overload stores the `data` value in a format that it determines by calling the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method. If `data` implements the <xref:System.Runtime.Serialization.ISerializable> interface, this overload also stores the value in the <xref:System.Windows.DataFormats.Serializable> format.  
@@ -1308,6 +1311,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  If you do not know the format of the target application, you can store data in multiple formats using this method.  
   
  Data stored using this method can be converted to a compatible format when it is retrieved.  
@@ -1365,6 +1371,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  If you do not know the format of the target application, you can store data in multiple formats using this method.  
   
  Data stored using this method can be converted to a compatible format when it is retrieved.  
@@ -1424,6 +1433,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  If you do not know the format of the target application, you can store data in multiple formats using this method.  
   
    

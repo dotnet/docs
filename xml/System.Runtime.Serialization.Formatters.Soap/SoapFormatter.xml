@@ -237,9 +237,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  ]]></format>
         </remarks>
@@ -275,10 +274,7 @@
 ## Remarks  
  For successful deserialization, the current position in the stream must be at the beginning of the object graph.  
   
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
-  
-   
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
 ## Examples  
  [!code-cpp[SoapFormatter Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapFormatter Example/CPP/soapformatter.cpp#1)]
@@ -327,9 +323,8 @@
   
 ## TimeSpan Serialization  
  TimeSpan objects are serialized according to the ISO 8601: 1998 section 5.5.3.2.1 "Alternative" standard.  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
   
  ]]></format>
         </remarks>

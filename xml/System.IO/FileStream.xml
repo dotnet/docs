@@ -76,7 +76,7 @@
  [!code-csharp[fstream class#1](~/samples/snippets/csharp/VS_Snippets_CLR/FStream Class/CS/fstream class.cs#1)]
  [!code-vb[fstream class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FStream Class/VB/fstream class.vb#1)]  
   
- The following example shows how to write to a file asynchronously. This code runs in a WPF app that has a TextBlock named UserInput and a button hooked up to a Click event handler that is named Button_Click. The file path needs to be changed to a file than exits on the computer.  
+ The following example shows how to write to a file asynchronously. This code runs in a WPF app that has a TextBlock named UserInput and a button hooked up to a Click event handler that is named Button_Click. The file path needs to be changed to a file that exists on the computer.  
   
  [!code-csharp[Asynchronous_File_IO_async#3](~/samples/snippets/csharp/VS_Snippets_CLR/Asynchronous_File_IO_async/cs/example3.cs#3)]
  [!code-vb[Asynchronous_File_IO_async#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/Asynchronous_File_IO_async/vb/example3.vb#3)]  

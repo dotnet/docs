@@ -1989,24 +1989,24 @@
 ## Remarks  
  This operation complies with the remainder operation defined in Section 5.1 of ANSI/IEEE Std 754-1985; IEEE Standard for Binary Floating-Point Arithmetic; Institute of Electrical and Electronics Engineers, Inc; 1985.  
   
- The <xref:System.Math.IEEERemainder%2A> method is not the same as the modulus operator. Although both return the remainder after division, the formulas they use are different. The formula for the <xref:System.Math.IEEERemainder%2A> method is:  
+ The <xref:System.Math.IEEERemainder%2A> method is not the same as the [remainder operator](~/docs/csharp/language-reference/operators/remainder-operator.md). Although both return the remainder after division, the formulas they use are different. The formula for the <xref:System.Math.IEEERemainder%2A> method is:  
   
 ```  
 IEEERemainder = dividend - (divisor * Math.Round(dividend / divisor))  
 ```  
   
- In contrast, the formula for the modulus operator is:  
+ In contrast, the formula for the remainder operator is:  
   
 ```  
-Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *   
-          (Math.Floor(Math.Abs(dividend) / Math.Abs(divisor))))) *   
-          Math.Sign(dividend)  
+Remainder = (Math.Abs(dividend) - (Math.Abs(divisor) *   
+            (Math.Floor(Math.Abs(dividend) / Math.Abs(divisor))))) *   
+            Math.Sign(dividend)  
 ```  
   
    
   
 ## Examples  
- The following example contrasts the remainder returned by the <xref:System.Math.IEEERemainder%2A> method with the remainder returned by the modulus division operator.  
+ The following example contrasts the remainder returned by the <xref:System.Math.IEEERemainder%2A> method with the remainder returned by the [remainder operator](~/docs/csharp/language-reference/operators/remainder-operator.md).  
   
  [!code-csharp[System.Math.IEEERemainder#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.ieeeremainder/cs/ieeeremainder1.cs#1)]
  [!code-vb[System.Math.IEEERemainder#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.ieeeremainder/vb/ieeeremainder1.vb#1)]  

@@ -141,15 +141,16 @@ Screwdriver set as a generic tool
   
 -   *Constructed Type*. A class, structure, interface, procedure, or delegate declared from a generic type by supplying type arguments for its type parameters.  
   
-## See Also  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
- [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
- [Of](../../../../visual-basic/language-reference/statements/of-clause.md)  
- [As](../../../../visual-basic/language-reference/statements/as-clause.md)  
- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)  
- [Covariance and Contravariance](../../concepts/covariance-contravariance/index.md)  
- [Iterators](https://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)
+## See also
+
+- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
+- [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
+- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
+- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
+- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
+- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
+- [Of](../../../../visual-basic/language-reference/statements/of-clause.md)  
+- [As](../../../../visual-basic/language-reference/statements/as-clause.md)  
+- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)  
+- [Covariance and Contravariance](../../concepts/covariance-contravariance/index.md)  
+- [Iterators](../../../../visual-basic/programming-guide/concepts/iterators.md)

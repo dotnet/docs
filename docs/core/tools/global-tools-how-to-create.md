@@ -28,15 +28,13 @@ Navigate to the `botsay` directory created by the previous command.
 
 Open the `Program.cs` file with your favorite text editor, such as `vim` or [Visual Studio Code](https://code.visualstudio.com/).
 
-Add the following `using` directive to the top of the file, this will help shorten the code to display the version information of the application.
+Add the following `using` directive to the top of the file, this helps shorten the code to display the version information of the application.
 
 ```csharp
 using System.Reflection;
 ```
 
-Next, move down to the `static void Main(string[] args)` method. Erase any code that exists inside this method, most likely you have a print statement in there from the console application template.
-
-Add the following code to process the command line arguments for your application. This code will first check if any arguments were passed. If no arguments were passed, a little help message will be displayed. If arguments were passed, all of those arguments will be transformed into a string and printed with the bot.
+Next, move down to the `Main` method. Replace the method with the following code to process the command-line arguments for your application. If no arguments were passed, a short help message is displayed. Otherwise, all of those arguments are transformed into a string and printed with the bot.
 
 ```csharp
 static void Main(string[] args)
@@ -61,7 +59,7 @@ static void Main(string[] args)
 
 ### Create the bot
 
-Next, add a new method named `ShowBot` which takes a string parameter. This method will print out the message and the ascii bot. The ascii bot code was taken from the awesome [dotnetbot](https://github.com/dotnet/core/blob/master/samples/dotnetsay/Program.cs) sample.
+Next, add a new method named `ShowBot` that takes a string parameter. This method prints out the message and the ASCII bot. The ASCII bot code was taken from the [dotnetbot](https://github.com/dotnet/core/blob/master/samples/dotnetsay/Program.cs) sample.
 
 ```csharp
 static void ShowBot(string message)
@@ -112,7 +110,7 @@ static void ShowBot(string message)
 
 ### Test the tool
 
-You can run the project and see the output. Try these variations to run our application:
+Run the project and see the output. Try these variations of the command-line to see different results:
 
 ```csharp
 dotnet run
@@ -130,7 +128,7 @@ Before you can pack and distribute the application as a Global Tool, you need to
 [REQUIRED] Indicates that the application will be packaged for install as a Global Tool.
 
 - `<ToolCommandName>`  
-[OPTIONAL] An alternative name for the tool, otherwise the command name for the tool will be named after the project file. You can have multiple tools in a package, choosing a unique and friendly name will help differentiate from other tools in the same package.
+[OPTIONAL] An alternative name for the tool, otherwise the command name for the tool will be named after the project file. You can have multiple tools in a package, choosing a unique and friendly name helps differentiate from other tools in the same package.
 
 - `<PackageOutputPath>`  
 [OPTIONAL] Where the NuGet package will be produced. The NuGet package is what the .NET Core CLI Global Tools uses to install your tool.
@@ -151,7 +149,7 @@ Before you can pack and distribute the application as a Global Tool, you need to
 </Project>
 ```
 
-Even though `<PackageOutputPath>` is optional, we'll use it in this example. Make sure you set it: `<PackageOutputPath>./nupkg</PackageOutputPath>`.
+Even though `<PackageOutputPath>` is optional, use it in this example. Make sure you set it: `<PackageOutputPath>./nupkg</PackageOutputPath>`.
 
 Next, create a NuGet package for your application.
 
@@ -159,7 +157,7 @@ Next, create a NuGet package for your application.
 dotnet pack
 ```
 
-The `botsay.1.0.0.nupkg` file will be created in the folder identified by the `<PackageOutputPath>` XML value from the `botsay.csproj` file, which in this example is the `./nupkg` folder. This will make it easy to install and test. When you want to release a tool publicly, upload it to [https://www.nuget.org](https://www.nuget.org).
+The `botsay.1.0.0.nupkg` file is created in the folder identified by the `<PackageOutputPath>` XML value from the `botsay.csproj` file, which in this example is the `./nupkg` folder. This makes it easy to install and test. When you want to release a tool publicly, upload it to [https://www.nuget.org](https://www.nuget.org).
 
 Now that you have a package, install the tool from that package: 
 

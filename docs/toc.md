@@ -288,6 +288,7 @@
 ### [Search strings](csharp/how-to/search-strings.md)
 ### [Modify string contents](csharp/how-to/modify-string-contents.md)
 ### [Compare strings](csharp/how-to/compare-strings.md)
+### [Safely cast using pattern matching, is and as operators](csharp/how-to/safely-cast-using-pattern-matching-is-and-as-operators.md)
 <!-- End of C# Concepts section -->
 ## [The .NET Compiler Platform SDK (Roslyn APIs)](csharp/roslyn-sdk/)
 ## [C# Programming Guide](csharp/programming-guide/)

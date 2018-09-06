@@ -20,7 +20,7 @@ Docker support is included in Visual Studio 2017. Download Visual Studio 2017 he
 
 ## Use Docker Tools in Visual Studio 2017
 
-There are two levels of Docker support you can add to a project. In .NET Core web app projects, you can just a *Dockerfile* file to the project by enabling [Docker support](#add-docker-support). The next level is [container orchestrator support](#add-container-orchestrator-support), which adds a *Dockerfile* to the project (if it doesn't already exist) and a *docker-compose.yml* file at the solution level.
+There are two levels of Docker support you can add to a project. In .NET Core web app projects, you can just add a *Dockerfile* file to the project by enabling Docker support. The next level is container orchestrator support, which adds a *Dockerfile* to the project (if it doesn't already exist) and a *docker-compose.yml* file at the solution level.
 
 The **Add** > **Docker Support** and **Add** > **Container Orchestrator Support** commands are located on the right-click menu (or context menu) of the project node for a web app project in **Solution Explorer**:
 
@@ -35,7 +35,7 @@ You can add Docker support to an existing .NET Core web app project by selecting
 When you add or enable Docker support, Visual Studio adds a *Dockerfile* file to the project.
 
 > [!NOTE]
-> When you enable Docker support during project creation for a .NET Framework web app project (not a .NET Core web app project), container orchestrator support is also added.
+> When you enable Docker Compose support during project creation for a .NET Framework web app project (not a .NET Core web app project), container orchestrator support is also added.
 >
 > ![Enable Docker compose support for a .NET Framework web app project](media/enable-docker-compose-support.png)
 

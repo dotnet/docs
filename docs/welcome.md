@@ -3,7 +3,7 @@ title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
 author: mairaw
 ms.author: mairaw
-ms.date: 04/30/2018
+ms.date: 09/07/2018
 ms.topic: article
 ms.prod: dotnet
 ms.devlang: dotnet
@@ -17,23 +17,24 @@ Build many types of apps with .NET, such as cloud, IoT, and games using free cro
 
 ## News
 
-- [Visual Studio for Mac version 7.6](https://blogs.msdn.microsoft.com/visualstudio/2018/08/20/visual-studio-for-mac-version-7-6/)
-- [Announcing F# 4.5](https://blogs.msdn.microsoft.com/dotnet/2018/08/14/announcing-f-4-5/)
-- [Visual Studio 2017 version 15.8](https://blogs.msdn.microsoft.com/visualstudio/2018/08/14/visual-studio-2017-version-15-8/)
-- [.NET Core 2.0 will reach End of Life on October 1, 2018](https://blogs.msdn.microsoft.com/dotnet/2018/06/20/net-core-2-0-will-reach-end-of-life-on-september-1-2018/)
-- [Announcing .NET Core 2.1](https://blogs.msdn.microsoft.com/dotnet/2018/05/30/announcing-net-core-2-1/)
-- [Announcing Entity Framework Core 2.1](https://blogs.msdn.microsoft.com/dotnet/2018/05/30/announcing-entity-framework-core-2-1/)
-- [ASP.NET Core 2.1.0 now available](https://blogs.msdn.microsoft.com/webdev/2018/05/30/asp-net-core-2-1-0-now-available/)
-- [Introducing ML.NET: Cross-platform, Proven and Open Source Machine Learning Framework](https://blogs.msdn.microsoft.com/dotnet/2018/05/07/introducing-ml-net-cross-platform-proven-and-open-source-machine-learning-framework/)
+For news about .NET, check the following blogs:
+
+- [.NET Blog](https://blogs.msdn.microsoft.com/dotnet/)
+- [ASP.NET Blog](https://blogs.msdn.microsoft.com/webdev/)
+- [The Visual Studio Blog](https://blogs.msdn.microsoft.com/visualstudio/)
+- [The Visual Basic Team](https://blogs.msdn.microsoft.com/vbteam/)
+
+Also follow the latest .NET events:
+
 - [Microsoft Build 2018](https://channel9.msdn.com/Events/Build/2018)
-- [Announcing the .NET Framework 4.7.2](https://blogs.msdn.microsoft.com/dotnet/2018/04/30/announcing-the-net-framework-4-7-2/)
-- [Welcome to C# 7.2 and Span](https://blogs.msdn.microsoft.com/dotnet/2017/11/15/welcome-to-c-7-2-and-span/)
-- [Announcing .NET Standard 2.0](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-net-standard-2-0/)
-- [New for Visual Basic: .NET Standard Class Libraries and the dotnet CLI!](https://blogs.msdn.microsoft.com/vbteam/2017/08/14/new-for-visual-basic-net-standard-class-libraries-and-the-dotnet-cli/)
-- [Visual Studio for Mac: now generally available](https://blogs.msdn.microsoft.com/visualstudio/2017/05/10/visual-studio-for-mac-now-generally-available/)
-- [Announcing Visual Studio 2017 General Availability](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/announcing-visual-studio-2017-general-availability-and-more/)
-- [Announcing F# 4.1 and the Visual F# Tools for Visual Studio 2017](https://blogs.msdn.microsoft.com/dotnet/2017/03/07/announcing-f-4-1-and-the-visual-f-tools-for-visual-studio-2017-2/)
-- [Introducing .NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)
+- [.NET Conf](https://www.dotnetconf.net/)
+
+For information about the latest features added to the .NET implementations and supported languages, see the following articles:
+
+- [What's new in .NET Core](core/whats-new/index.md)
+- [What's new in the .NET Framework](framework/whats-new/index.md)
+- [What's new in C#](csharp/whats-new/index.md)
+- [What's new for Visual Basic](visual-basic/getting-started/whats-new.md)
 
 ## Documentation
 

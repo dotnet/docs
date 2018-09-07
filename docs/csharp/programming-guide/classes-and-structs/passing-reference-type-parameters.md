@@ -36,7 +36,6 @@ A variable of a [reference type](../../../csharp/language-reference/keywords/ref
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Passing Parameters](../../../csharp/programming-guide/classes-and-structs/passing-parameters.md)  
-- [Passing Arrays Using ref and out](../../../csharp/programming-guide/arrays/passing-arrays-using-ref-and-out.md)  
 - [ref](../../../csharp/language-reference/keywords/ref.md)  
 - [in](../../../csharp/language-reference/keywords/in-parameter-modifier.md)  
 - [out](../../../csharp/language-reference/keywords/out.md)  

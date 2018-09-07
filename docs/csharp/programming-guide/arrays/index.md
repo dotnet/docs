@@ -42,8 +42,6 @@ You can store multiple variables of the same type in an array data structure. Yo
   
 -   [Passing Arrays as Arguments](../../../csharp/programming-guide/arrays/passing-arrays-as-arguments.md)  
   
--   [Passing Arrays Using ref and out](../../../csharp/programming-guide/arrays/passing-arrays-using-ref-and-out.md)   
-  
 ## C# Language Specification
 
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

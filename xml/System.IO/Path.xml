@@ -39,12 +39,15 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
   
  A path is a string that provides the location of a file or directory. A path does not necessarily point to a location on disk; for example, a path might map to a location in memory or on a device. The exact format of a path is determined by the current platform. For example, on some systems, a path can start with a drive or volume letter, while this element is not present in other systems. On some systems, file paths can contain extensions, which indicate the type of information stored in the file. The format of a file name extension is platform-dependent; for example, some systems limit extensions to three characters, and others do not. The current platform also determines the set of characters used to separate the elements of a path, and the set of characters that cannot be used when specifying paths. Because of these differences, the fields of the `Path` class as well as the exact behavior of some members of the `Path` class are platform-dependent.  
   
  A path can contain absolute or relative location information. Absolute paths fully specify a location: the file or directory can be uniquely identified regardless of the current location. Relative paths specify a partial location: the current location is used as the starting point when locating a file specified with a relative path. To determine the current directory, call <xref:System.IO.Directory.GetCurrentDirectory%2A?displayProperty=nameWithType>.  
-  
+
+ .NET Core 1.1 and later versions and .NET Framework 4.6.2 and later versions also support access to file system objects that are device names, such as "\\?\C:\".
+
+For more information on file path formats on Windows, see [File path formats on Windows systems](~/docs/standard/io/file-path-formats.md).
+
  Most members of the `Path` class do not interact with the file system and do not verify the existence of the file specified by a path string. `Path` class members that modify a path string, such as <xref:System.IO.Path.ChangeExtension%2A>, have no effect on names of files in the file system. `Path` members do, however, validate the contents of a specified path string, and throw an <xref:System.ArgumentException> exception if the string contains characters that are not valid in path strings, as defined in the characters returned from the <xref:System.IO.Path.GetInvalidPathChars%2A> method. For example, on Windows-based desktop platforms, invalid path characters might include quote ("), less than (\<), greater than (>), pipe (&#124;), backspace (\b), null (\0), and Unicode characters 16 through 18 and 20 through 25.  
   
  The members of the `Path` class enable you to quickly and easily perform common operations such as determining whether a file name extension is part of a path, and combining two strings into one path name.  
@@ -975,7 +978,6 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
   
  The absolute path includes all information required to locate a file or directory on a system.  
   
@@ -988,13 +990,13 @@
  If you pass in a short file name, it is expanded to a long file name.  
   
  If a path contains no significant characters it is invalid unless it contains one or more "." characters followed by any number of spaces, then it will be parsed as either "." or "..".  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
+
+  .NET Core 1.1 and later versions and .NET Framework 4.6.2 and later versions also support paths that include device names, such as "\\?\C:\".
+
+For more information on file path formats on Windows, see [File path formats on Windows systems](~/docs/standard/io/file-path-formats.md). For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).
   
 ## Examples  
- The following code example demonstrates the `GetFullPath` method on a Windows-based desktop platform.  
+ The following example demonstrates the `GetFullPath` method on a Windows-based desktop platform.  
   
  [!code-cpp[System.IO.Path Members#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Path Members/CPP/pathmembers.cpp#7)]
  [!code-csharp[System.IO.Path Members#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Path Members/CS/pathmembers.cs#7)]
@@ -1170,10 +1172,11 @@
         <Parameter Name="path" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="path">The path from which to obtain root directory information.</param>
+        <summary>Gets the root directory information from the path contained in the specified character span.</summary>
+        <returns>A character span containing the root directory of `path`.</returns>
         <remarks>To be added.</remarks>
+        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="GetPathRoot">
@@ -1217,7 +1220,7 @@
       <Docs>
         <param name="path">The path from which to obtain root directory information.</param>
         <summary>Gets the root directory information of the specified path.</summary>
-        <returns>The root directory of <paramref name="path" />, such as "C:\\", or <see langword="null" /> if <paramref name="path" /> is <see langword="null" />, or an empty string if <paramref name="path" /> does not contain root directory information.</returns>
+        <returns>The root directory of <paramref name="path" />, or <see langword="null" /> if <paramref name="path" /> is <see langword="null" />, or an empty string if <paramref name="path" /> does not contain root directory information.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1226,21 +1229,19 @@
   
  Possible patterns for the string returned by this method are as follows:  
   
--   An empty string (`path` specified a relative path on the current drive or volume).  
+- An empty string (`path` specified a relative path on the current drive or volume).  
   
--   "/" (`path` specified an absolute path on the current drive).  
+- "\" (`path` specified an absolute path on the current drive).  
   
--   "X:" (`path` specified a relative path on a drive, where X represents a drive or volume letter).  
+- "X:" (`path` specified a relative path on a drive, where X represents a drive or volume letter).  
   
--   "X:/" (`path` specified an absolute path on a given drive).  
+- "X:\" (`path` specified an absolute path on a given drive).  
   
--   "\\\ComputerName\SharedFolder" (a UNC path).  
+- "\\\ComputerName\SharedFolder" (a UNC path).  
   
- The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+- "\\?\C:" (a DOS device path, supported in .NET Core 1.1 and later versions and in .NET Framework 4.6.2 and later versions)
    
+ For more information on file paths on Windows, see [File path formats on Windows systems](~/docs/standard/io/file-path-formats.md). For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
 ## Examples  
  The following code example demonstrates a use of the `GetPathRoot` method.  
@@ -1257,6 +1258,7 @@
  -or-  
   
  <see cref="F:System.String.Empty" /> was passed to <paramref name="path" />.</exception>
+        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>

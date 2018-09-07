@@ -36,23 +36,20 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- This collection is based on the <xref:System.Collections.Specialized.NameObjectCollectionBase> class. However, unlike the <xref:System.Collections.Specialized.NameObjectCollectionBase>, this class stores multiple string values under a single key.  
+## Remarks
+
+ This collection is based on the <xref:System.Collections.Specialized.NameObjectCollectionBase> class. Each element of the collection is a key/value pair. However, unlike the <xref:System.Collections.Specialized.NameObjectCollectionBase>, this class can store multiple string values under a single key.  
   
  This class can be used for headers, query strings and form data.  
   
- Each element is a key/value pair.  
+ Collections of this type do not preserve the ordering of elements, and no particular ordering is guaranteed when enumerating the collection.  
   
- Collections of this type do not preserve the ordering of element, and no particular ordering is guaranteed when enumerating the collection.  
-  
- The capacity of a <xref:System.Collections.Specialized.NameValueCollection> is the number of elements the <xref:System.Collections.Specialized.NameValueCollection> can hold. As elements are added to a <xref:System.Collections.Specialized.NameValueCollection>, the capacity is automatically increased as required through reallocation.  
+ The capacity of a <xref:System.Collections.Specialized.NameValueCollection> is the number of elements the <xref:System.Collections.Specialized.NameValueCollection> can hold. As elements are added, its capacity is automatically increased as required through reallocation.  
   
  The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Specialized.NameValueCollection>. The default hash code provider is the <xref:System.Collections.CaseInsensitiveHashCodeProvider>.  
   
- The comparer determines whether two keys are equal. The default comparer is the <xref:System.Collections.CaseInsensitiveComparer>.  
-  
- In .NET Framework version 1.0, this class uses culture-sensitive string comparisons. However, in .NET Framework version 1.1 and later, this class uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> when comparing strings. For more information about how culture affects comparisons and sorting, see [Performing Culture-Insensitive String Operations](~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md).  
-  
+ The comparer determines whether two keys are equal. The default comparer is a <xref:System.Collections.CaseInsensitiveComparer> that uses the conventions of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantInfo); that is, key comparisons are case-insensitive by default. To perform case-sensitive key comparisons, call the <xref:System.Collections.Specialized.NameValueCollection.#ctor(System.Collections.IEqualityComparer)?displayProperty=nameWithType> constructor, and provide a value of <xref:System.StringComparer.CurrentCulture?displayProperty=nameWithType>, <xref:System.StringComparer.InvariantCulture?displayProperty=nameWithType>, or <xref:System.StringComparer.Ordinal?displayProperty=nameWithType> as the `equalityComparer` argument. For more information about how culture affects comparisons and sorting, see [Performing Culture-Insensitive String Operations](~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md). 
+
  `null` is allowed as a key or as a value.  
   
 > [!CAUTION]

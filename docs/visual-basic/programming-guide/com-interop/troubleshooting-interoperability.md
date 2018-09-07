@@ -120,11 +120,12 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
   
  Assemblies that are not shared should be located side by side in the directory with the calling application.  
   
-## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
- [Tlbimp.exe (Type Library Importer)](../../../framework/tools/tlbimp-exe-type-library-importer.md)  
- [Tlbexp.exe (Type Library Exporter)](https://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)  
- [Walkthrough: Implementing Inheritance with COM Objects](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)  
- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)  
- [Global Assembly Cache](../../../framework/app-domains/gac.md)
+## See also
+
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
+- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
+- [Tlbimp.exe (Type Library Importer)](../../../framework/tools/tlbimp-exe-type-library-importer.md)  
+- [Tlbexp.exe (Type Library Exporter)](../../../framework/tools/tlbexp-exe-type-library-exporter.md)  
+- [Walkthrough: Implementing Inheritance with COM Objects](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)  
+- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)  
+- [Global Assembly Cache](../../../framework/app-domains/gac.md)

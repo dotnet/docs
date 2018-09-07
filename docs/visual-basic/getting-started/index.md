@@ -60,5 +60,5 @@ Provides a list of Web sites and newsgroups that can help you find answers to co
  [Visual C++](/cpp/)  
  Provides links into the Visual C++ documentation.  
   
- [Office and SharePoint Development](https://msdn.microsoft.com/library/d2tx7z6d)  
+ [Office and SharePoint Development](/visualstudio/vsto/office-and-sharepoint-development-in-visual-studio)  
  Provides information about using Microsoft Office and Visual Studio as part of a business application.

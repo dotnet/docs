@@ -21,8 +21,9 @@ Visual Basic provides integrated language support that enables it to interact wi
 |[Manipulating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/manipulating-xml.md)|Describes how to load and parse XML by using Visual Basic.|  
 |[Accessing XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/accessing-xml.md)|Describes the XML axis properties and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] methods for accessing XML elements and attributes.|  
   
-## See also  
- <xref:System.Xml.Linq>  
- [XML Literals](../../../../visual-basic/language-reference/xml-literals/index.md)  
- [XML Axis Properties](../../../../visual-basic/language-reference/xml-axis/index.md)  
- [LINQ to XML](https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13)
+## See also
+
+- <xref:System.Xml.Linq>  
+- [XML Literals](../../../../visual-basic/language-reference/xml-literals/index.md)  
+- [XML Axis Properties](../../../../visual-basic/language-reference/xml-axis/index.md)  
+- [LINQ to XML](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md)

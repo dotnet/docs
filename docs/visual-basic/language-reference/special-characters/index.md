@@ -11,6 +11,6 @@ Special characters are predefined, contextual characters that modifies the progr
 
 - [$](interpolated.md), the interpolated string character.
 
-## See Also  
-[Visual Basic Reference](../../../csharp/language-reference/index.md)   
- 
+## See also  
+
+- [Visual Basic Reference](../../../visual-basic/language-reference/index.md)

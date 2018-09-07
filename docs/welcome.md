@@ -3,7 +3,7 @@ title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
 author: mairaw
 ms.author: mairaw
-ms.date: 04/30/2018
+ms.date: 09/07/2018
 ms.topic: article
 ms.prod: dotnet
 ms.devlang: dotnet
@@ -17,21 +17,24 @@ Build many types of apps with .NET, such as cloud, IoT, and games using free cro
 
 ## News
 
+For news about .NET, check the following blogs:
+
+- [.NET Blog](https://blogs.msdn.microsoft.com/dotnet/)
+- [ASP.NET Blog](https://blogs.msdn.microsoft.com/webdev/)
+- [The Visual Studio Blog](https://blogs.msdn.microsoft.com/visualstudio/)
+- [The Visual Basic Team](https://blogs.msdn.microsoft.com/vbteam/)
+
+Also follow the latest .NET events:
+
 - [Microsoft Build 2018](https://channel9.msdn.com/Events/Build/2018)
-- [Announcing the .NET Framework 4.7.2](https://blogs.msdn.microsoft.com/dotnet/2018/04/30/announcing-the-net-framework-4-7-2/)
-- [Announcing .NET Core 2.1 Preview 2](https://blogs.msdn.microsoft.com/dotnet/2018/04/11/announcing-net-core-2-1-preview-2/)
-- [ASP.NET Core 2.1.0-preview2 now available](https://blogs.msdn.microsoft.com/webdev/2018/04/12/asp-net-core-2-1-0-preview2-now-available/)
-- [Announcing Entity Framework Core 2.1 Preview 2](https://blogs.msdn.microsoft.com/dotnet/2018/04/11/announcing-entity-framework-core-2-1-preview-2/)
-- [Visual Studio 2017 version 15.6, Visual Studio for Mac version 7.4 Released](https://blogs.msdn.microsoft.com/visualstudio/2018/03/06/visual-studio-2017-version-15-6-visual-studio-for-mac-version-7-4-released/)
-- [Welcome to C# 7.2 and Span](https://blogs.msdn.microsoft.com/dotnet/2017/11/15/welcome-to-c-7-2-and-span/)
-- [.NET Core 2.0 Released!](https://channel9.msdn.com/Blogs/dotnet/NET-Core-20-Released)
-- [Announcing .NET Standard 2.0](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-net-standard-2-0/)
-- [New for Visual Basic: .NET Standard Class Libraries and the dotnet CLI!](https://blogs.msdn.microsoft.com/vbteam/2017/08/14/new-for-visual-basic-net-standard-class-libraries-and-the-dotnet-cli/)
-- [Introducing .NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)
-- [Visual Studio for Mac: now generally available](https://blogs.msdn.microsoft.com/visualstudio/2017/05/10/visual-studio-for-mac-now-generally-available/)
-- [Announcing Visual Studio 2017 General Availability](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/announcing-visual-studio-2017-general-availability-and-more/)
-- [What's new for .NET Core and Visual Studio 2017 (video)](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/T108)
-- [Announcing F# 4.1 and the Visual F# Tools for Visual Studio 2017](https://blogs.msdn.microsoft.com/dotnet/2017/03/07/announcing-f-4-1-and-the-visual-f-tools-for-visual-studio-2017-2/)
+- [.NET Conf](https://www.dotnetconf.net/)
+
+For information about the latest features added to the .NET implementations and supported languages, see the following articles:
+
+- [What's new in .NET Core](core/whats-new/index.md)
+- [What's new in the .NET Framework](framework/whats-new/index.md)
+- [What's new in C#](csharp/whats-new/index.md)
+- [What's new for Visual Basic](visual-basic/getting-started/whats-new.md)
 
 ## Documentation
 

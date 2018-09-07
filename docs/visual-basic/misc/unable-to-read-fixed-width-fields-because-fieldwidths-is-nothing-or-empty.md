@@ -12,8 +12,9 @@ The `TextFieldParser` is unable to read fixed-width fields because the `FieldWid
   
 -   Set `FieldWidths` to a valid value.  
   
-## See Also  
- [TextFieldParser.SetFieldWidths Method](https://msdn.microsoft.com/library/958fed9f-e0f3-4fc5-83b4-386156bdf036)  
- [TextFieldParser.FieldWidths Property](https://msdn.microsoft.com/library/c6985360-60c6-494e-89e7-43b6b73f2597)  
- [How to: Read From Fixed-width Text Files](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)  
- [TextFieldParser Object](../../visual-basic/language-reference/objects/textfieldparser-object.md)
+## See also
+
+- [TextFieldParser.SetFieldWidths Method](xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetFieldWidths%2A)  
+- [TextFieldParser.FieldWidths Property](xref:Microsoft.VisualBasic.FileIO.TextFieldParser.FieldWidths%2A)  
+- [How to: Read From Fixed-width Text Files](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)  
+- [TextFieldParser Object](../../visual-basic/language-reference/objects/textfieldparser-object.md)

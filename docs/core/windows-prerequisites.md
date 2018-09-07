@@ -25,6 +25,8 @@ This article shows the dependencies needed to develop .NET Core applications on 
 * Windows Server 2012 R2 (Full Server or Server Core)
 * Windows Server 2016 or later versions (Full Server, Server Core, or Nano Server)
 
+## .NET Core supported operating systems
+
 The following articles have a complete list of .NET Core supported operating systems per version:
 
 * [.NET Core 2.1 - Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md)

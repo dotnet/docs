@@ -22,11 +22,12 @@ ActiveX controls are COM components or objects you can insert into a Web page or
      The new control appears with the other tools in the **Toolbox**.  
   
     > [!NOTE]
-    >  You can use the Aximp utility to manually create an interop assembly for ActiveX controls. For more information, see [Aximp.exe (Windows Forms ActiveX Control Importer)](https://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
+    >  You can use the Aximp utility to manually create an interop assembly for ActiveX controls. For more information, see [Aximp.exe (Windows Forms ActiveX Control Importer)](../../../framework/tools/aximp-exe-windows-forms-activex-control-importer.md).  
   
-## See Also  
- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
- [How to: Add ActiveX Controls to Windows Forms](../../../framework/winforms/controls/how-to-add-activex-controls-to-windows-forms.md)  
- [Aximp.exe (Windows Forms ActiveX Control Importer)](https://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0)  
- [Considerations When Hosting an ActiveX Control on a Windows Form](../../../framework/winforms/controls/considerations-when-hosting-an-activex-control-on-a-windows-form.md)  
- [Troubleshooting Interoperability](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)
+## See also
+
+- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
+- [How to: Add ActiveX Controls to Windows Forms](../../../framework/winforms/controls/how-to-add-activex-controls-to-windows-forms.md)  
+- [Aximp.exe (Windows Forms ActiveX Control Importer)](../../../framework/tools/aximp-exe-windows-forms-activex-control-importer.md)  
+- [Considerations When Hosting an ActiveX Control on a Windows Form](../../../framework/winforms/controls/considerations-when-hosting-an-activex-control-on-a-windows-form.md)  
+- [Troubleshooting Interoperability](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)

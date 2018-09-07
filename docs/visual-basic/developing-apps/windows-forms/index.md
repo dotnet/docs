@@ -61,7 +61,7 @@ An important part of Visual Basic is the ability to create Windows Forms applica
 |To|See|  
 |--------|---------|  
 |Use the <xref:System.Windows.Forms.BindingSource> component|[How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer](../../../framework/winforms/controls/bind-wf-controls-with-the-bindingsource.md)|  
-|Work with [!INCLUDE[vstecado](~/includes/vstecado-md.md)] data sources|[How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](https://msdn.microsoft.com/library/ya3sah92.aspx)|  
+|Work with [!INCLUDE[vstecado](~/includes/vstecado-md.md)] data sources|[How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](../../../framework/winforms/controls/sort-and-filter-ado-net-data-with-wf-bindingsource-component.md)|
 |Use the Data Sources window|[Walkthrough: Displaying Data on a Windows Form](/visualstudio/data-tools/accessing-data-in-visual-studio)|  
   
 ## Deploying Applications to Client Computers  
@@ -89,7 +89,8 @@ An important part of Visual Basic is the ability to create Windows Forms applica
 |Print the contents of a form|[How to: Print Graphics in Windows Forms](../../../framework/winforms/advanced/how-to-print-graphics-in-windows-forms.md)<br /><br /> [How to: Print a Multi-Page Text File in Windows Forms](../../../framework/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md)|   
 |Learn more about Windows Forms security|[Security in Windows Forms Overview](../../../framework/winforms/security-in-windows-forms-overview.md)|  
   
-## See Also  
- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>  
- [Windows Forms Overview](../../../framework/winforms/windows-forms-overview.md)  
- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)
+## See also
+
+- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>  
+- [Windows Forms Overview](../../../framework/winforms/windows-forms-overview.md)  
+- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)

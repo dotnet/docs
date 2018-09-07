@@ -50,8 +50,6 @@ However, methods can be overloaded when one method has a `ref`, `in`, or `out` p
   
  Properties are not variables. They are methods, and cannot be passed to `ref` parameters.  
   
- For information about how to pass arrays, see [Passing Arrays Using ref and out](../../../csharp/programming-guide/arrays/passing-arrays-using-ref-and-out.md).  
-  
  You can't use the `ref`, `in`, and `out` keywords for the following kinds of methods:  
   
 - Async methods, which you define by using the [async](async.md) modifier.  

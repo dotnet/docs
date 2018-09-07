@@ -5,5 +5,4 @@
 ## [Jagged Arrays](jagged-arrays.md)
 ## [Using foreach with Arrays](using-foreach-with-arrays.md)
 ## [Passing Arrays as Arguments](passing-arrays-as-arguments.md)
-## [Passing Arrays Using ref and out](passing-arrays-using-ref-and-out.md)
 ## [Implicitly Typed Arrays](implicitly-typed-arrays.md)

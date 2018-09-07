@@ -77,7 +77,7 @@ a.Where(...).OrderBy(...).Select(...).ForAll(x => fs.Write(x));
   
 ```vb  
 Dim mre = New ManualResetEventSlim()  
-Enumerable.Range(0, ProcessorCount * 100).AsParallel().ForAll(Sub(j)   
+Enumerable.Range(0, Environment.ProcessorCount * 100).AsParallel().ForAll(Sub(j)   
    If j = Environment.ProcessorCount Then  
        Console.WriteLine("Set on {0} with value of {1}", Thread.CurrentThread.ManagedThreadId, j)  
        mre.Set()  
@@ -90,7 +90,7 @@ End Sub) ' deadlocks
   
 ```csharp  
 ManualResetEventSlim mre = new ManualResetEventSlim();  
-Enumerable.Range(0, ProcessorCount * 100).AsParallel().ForAll((j) =>  
+Enumerable.Range(0, Environment.ProcessorCount * 100).AsParallel().ForAll((j) =>  
 {  
     if (j == Environment.ProcessorCount)  
     {  

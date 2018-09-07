@@ -1224,7 +1224,7 @@
 |\<|Shift down. Converts all characters that follow to lowercase.|  
 |>|Shift up. Converts all characters that follow to uppercase.|  
 |&#124;|Disable a previous shift up or shift down.|  
-|\|Escape. Escapes a mask character, turning it into a literal. "\\\\" is the escape sequence for a backslash.|  
+|&#92;|Escape. Escapes a mask character, turning it into a literal. "\\\\" is the escape sequence for a backslash.|  
 |All other characters|Literals. All non-mask elements will appear as themselves within <xref:System.Windows.Forms.MaskedTextBox>. Literals always occupy a static position in the mask at run time, and cannot be moved or deleted by the user.|  
   
  If you change a mask when <xref:System.Windows.Forms.MaskedTextBox> already contains user input filtered by a previous mask, <xref:System.Windows.Forms.MaskedTextBox> will attempt to migrate that input into the new mask definition. If it fails, it will clear the existing input. Assigning a zero-length string as the mask will preserve any existing data in the control. When used with a zero-length mask, <xref:System.Windows.Forms.MaskedTextBox> behaves like a single-line <xref:System.Windows.Forms.TextBox> control.  

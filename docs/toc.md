@@ -132,6 +132,7 @@
 ## [.NET Core CLI Tools](core/tools/index.md)
 ### [Telemetry](core/tools/telemetry.md)
 ### [Global Tools](core/tools/global-tools.md)
+#### [Create a Global Tool](core/tools/global-tools-how-to-create.md)
 ### [Extensibility Model](core/tools/extensibility.md)
 ### [Continuous Integration](core/tools/using-ci-with-cli.md)
 ### [Custom templates](core/tools/custom-templates.md)

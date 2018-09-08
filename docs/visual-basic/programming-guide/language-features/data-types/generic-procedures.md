@@ -27,17 +27,15 @@ A *generic procedure*, also called a *generic method*, is a procedure defined wi
   
  If the compiler cannot infer the type arguments from the context of your call, it reports an error. One possible cause of such an error is an array rank mismatch. For example, suppose you define a normal parameter as an array of a type parameter. If you call the generic procedure supplying an array of a different rank (number of dimensions), the mismatch causes type inference to fail. The following code shows a call in which a two-dimensional array is passed to a procedure that expects a one-dimensional array.  
   
- `Public Sub demoSub(Of t)(ByVal arg() As t)`  
-  
- `End Sub`  
-  
- `Public Sub callDemoSub()`  
-  
- `Dim twoDimensions(,) As Integer`  
-  
- `demoSub(twoDimensions)`  
-  
- `End Sub`  
+```vb  
+Public Sub demoSub(Of t)(ByVal arg() As t)
+End Sub
+
+Public Sub callDemoSub()
+    Dim twoDimensions(,) As Integer
+    demoSub(twoDimensions)
+End Sub
+```
   
  You can invoke type inference only by omitting all the type arguments. If you supply one type argument, you must supply them all.  
   

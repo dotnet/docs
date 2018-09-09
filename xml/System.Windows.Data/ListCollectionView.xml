@@ -1143,8 +1143,8 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the complete and unfiltered underlying collection.</summary>
-        <value>The underlying collection, which must implement <see cref="T:System.Collections.IList" />.</value>
+        <summary>Gets the filtered and sorted list of items.</summary>
+        <value>The <see cref="T:System.Collections.IList" /> on which filtering and sorting have been applied.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

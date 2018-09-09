@@ -10,7 +10,7 @@ Lambda expressions are not limited to [!INCLUDE[vbteclinq](~/includes/vbteclinq-
   
 ## Example  
   
-```  
+```csharp  
 public partial class Form1 : Form  
 {  
     public Form1()  

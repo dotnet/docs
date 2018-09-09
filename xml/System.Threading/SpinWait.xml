@@ -33,7 +33,7 @@
 ## Remarks  
  <xref:System.Threading.SpinWait> encapsulates common spinning logic. On single-processor machines, yields are always used instead of busy waits, and on computers with Intel processors employing Hyper-Threading technology, it helps to prevent hardware thread starvation. SpinWait encapsulates a good mixture of spinning and true yielding.  
   
- <xref:System.Threading.SpinWait> is a value type, which means that low-level code can utilize SpinWait without fear of unnecessary allocation overheads. SpinWait is not generally useful for ordinary applications. In most cases, you should use the synchronization classes provided by the .NET Framework, such as <xref:System.Threading.Monitor>. For most purposes where spin waiting is required, however, the <xref:System.Threading.SpinWait> type should be preferred over the <xref:System.Threading.Thread.SpinWait%2A> method.  
+ <xref:System.Threading.SpinWait> is a value type, which means that low-level code can utilize SpinWait without fear of unnecessary allocation overheads. SpinWait is not generally useful for ordinary applications. In most cases, you should use the synchronization classes provided by the .NET Framework, such as <xref:System.Threading.Monitor>. For most purposes where spin waiting is required, however, the <xref:System.Threading.SpinWait> type should be preferred over the <xref:System.Threading.Thread.SpinWait%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -46,8 +46,8 @@
  ]]></format>
     </remarks>
     <threadsafe>While <see cref="T:System.Threading.SpinWait" /> is designed to be used in concurrent applications, it is not designed to be used from multiple threads concurrently. <see cref="T:System.Threading.SpinWait" /> members are not thread-safe. If multiple threads must spin, each should use its own instance of <see cref="T:System.Threading.SpinWait" />.</threadsafe>
-    <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
+    <related type="Article" href="~/docs/standard/threading/spinwait.md">SpinWait</related>
+    <related type="Article" href="~/docs/standard/threading/how-to-use-spinwait-to-implement-a-two-phase-wait-operation.md">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
   </Docs>
   <Members>
     <Member MemberName="Count">

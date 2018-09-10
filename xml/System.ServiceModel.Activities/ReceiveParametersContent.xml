@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enables a workflow service to receive data n the form of parameters.<see cref="T:System.ServiceModel.Activities.ReceiveParametersContent" /> is interoperable with non-workflow WCF clients and services. The <see cref="P:System.ServiceModel.Activities.ReceiveParametersContent.Parameters" /> collection is similar to the argument declaration on a C# method signature.The <see cref="P:System.ServiceModel.Activities.ReceiveParametersContent.Parameters" /> collection cannot contain arguments marked with <see cref="T:System.ServiceModel.MessageContractAttribute" />, or of type <see cref="T:System.ServiceModel.Channels.Message" />. Please use <see cref="T:System.ServiceModel.Activities.ReceiveMessageContent" /> for these types of data.This is a sealed class.</summary>
+    <summary>Enables a workflow service to receive data in the form of parameters .<see cref="T:System.ServiceModel.Activities.ReceiveParametersContent" /> is interoperable with non-workflow WCF clients and services. The <see cref="P:System.ServiceModel.Activities.ReceiveParametersContent.Parameters" /> collection is similar to the argument declaration on a C# method signature.The <see cref="P:System.ServiceModel.Activities.ReceiveParametersContent.Parameters" /> collection cannot contain arguments marked with <see cref="T:System.ServiceModel.MessageContractAttribute" />, or of type <see cref="T:System.ServiceModel.Channels.Message" />. Use <see cref="T:System.ServiceModel.Activities.ReceiveMessageContent" /> for these types of data. This is a sealed class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

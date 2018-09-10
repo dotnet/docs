@@ -155,7 +155,7 @@
         <Parameter Name="inlineCategories" Type="System.ServiceModel.Syndication.InlineCategoriesDocument" />
       </Parameters>
       <Docs>
-        <param name="inlineCategories">An <see cref="T:System.ServiceModel.Syndication.InlineCategories" /> instance used to create the new categories document.</param>
+        <param name="inlineCategories">An <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" /> instance used to create the new categories document.</param>
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> class.</summary>
         <returns>Returns a new <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</returns>
         <remarks>To be added.</remarks>

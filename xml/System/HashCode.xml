@@ -118,7 +118,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <typeparam name="T">The type of the value to add to the hash code.</typeparam>
         <param name="value">The value to add to the hash code.</param>
         <param name="comparer">
-          The <see cref="T:System.Collections.Generic.IEqualityComparer&lt;T&gt;" /> to use to calculate the hash code.
+          The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to use to calculate the hash code.
           This value can be a null reference (Nothing in Visual Basic), which will use the default equality comparer for
           <typeparamref name="T" />.
         </param>

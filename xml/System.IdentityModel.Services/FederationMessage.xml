@@ -17,7 +17,7 @@
     <summary>Defines the base class from which all federation message classes derive.</summary>
     <remarks>To be added.</remarks>
     <block subset="none" type="overrides">
-      <para>At a minimum, you must override the <see cref="P:System.IdentityModel.Services.FederationMessage.ProviderIdentifier" /> property and the <see cref="M:System.IdentityModel.Services.FederationMessage.Write(System.IO.TextWriter)" /> method in derived classes.</para>
+      <para>At a minimum, you must override the <see cref="M:System.IdentityModel.Services.FederationMessage.Write(System.IO.TextWriter)" /> method in derived classes, and you may choose to override the protected <see cref="M:System.IdentityModel.Services.FederationMessage.Validate" /> method.</para>
     </block>
   </Docs>
   <Members>

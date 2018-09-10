@@ -483,7 +483,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="samlSecurityToken" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.IdentityModel.Tokens.SamlSecurityToken.Assertion" /> property of <paramref name="samlSecurityToken" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The handler is not configured or an issuer name registry is not configured for the handler. (The <see cref="P:System.IdentityModel.Tokens.SamlSecurityTokenHandler.Configuration" /> property is <see langword="null" /> or is set to a <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration" /> with an <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.IssuerNameRegistry" /> property that is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The handler is not configured or an issuer name registry is not configured for the handler. (The <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration" /> property is <see langword="null" /> or is set to a <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration" /> with an <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.IssuerNameRegistry" /> property that is <see langword="null" />.</exception>
         <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">The issuer name returned by the configured issuer name registry for the security token (<paramref name="samlSecurityToken" />) is <see langword="null" /> or empty.</exception>
       </Docs>
     </Member>
@@ -771,7 +771,7 @@
  The <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.Caches" /> property of the handler configuration (accessed through the <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration" /> property) is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="token" /> cannot be cast as an instance of <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" />.</exception>
-        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenValidationException">The ID of the assertion associated with the token is <see langword="null" /> or empty. (The <see cref="P:System.IdentityModel.Tokens.SamlSecurityToken.Assertion" /> property of the token references a <see cref="T:System.IdentityModel.Tokens.SamlAssertion" /> that has an <see cref="P:System.IdentityModel.Tokens.SamlAssertion.Id" /> property that references a <see cref="T:System.IdentityModel.Tokens.SamlId" /> with a <see cref="P:System.IdentityModel.Tokens.SamlId.Value" /> property that is <see langword="null" /> or empty.)</exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenValidationException">The ID of the assertion associated with the token is <see langword="null" /> or empty. (The <see cref="P:System.IdentityModel.Tokens.SamlSecurityToken.Assertion" /> property of the token references a <see cref="T:System.IdentityModel.Tokens.SamlAssertion" /> that has an <see cref="P:System.IdentityModel.Tokens.SamlAssertion.AssertionId" /> property that references a <see cref="T:System.IdentityModel.Tokens.Saml2Id" /> with a <see cref="P:System.IdentityModel.Tokens.Saml2Id.Value" /> property that is <see langword="null" /> or empty.)</exception>
         <exception cref="T:System.IdentityModel.Tokens.SecurityTokenReplayDetectedException">The token already exists in the <see cref="T:System.IdentityModel.Tokens.TokenReplayCache" />.</exception>
       </Docs>
     </Member>
@@ -1489,7 +1489,7 @@
       <Docs>
         <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
         <summary>Reads the &lt;saml:AuthzDecisionStatement&gt; element or a &lt;saml:Statement&gt; element that specifies an xsi:type of saml:AuthzDecisionStatementType.</summary>
-        <returns>A <see cref="T:System.IdentityModel.Tokens.SamlAuthorizationStatement" /> that represents the element that is read.</returns>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement" /> that represents the element that is read.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" />.</exception>
@@ -1876,7 +1876,7 @@
         <param name="attribute">The <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> to use.</param>
         <param name="subject">The <see cref="T:System.Security.Claims.ClaimsIdentity" /> that is the subject of this token.</param>
         <param name="issuer">The issuer of the claim.</param>
-        <summary>This method gets called when a special type of <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> is detected. The <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> passed in wraps a <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> that contains a collection of attribute values (in the <see cref="P:System.IdentityModel.Tokens.SamlAttribute.Values" /> property), each of which will get mapped to a claim. All of the claims will be returned in an <see cref="T:System.Security.Claims.ClaimsIdentity" /> with the specified issuer.</summary>
+        <summary>This method gets called when a special type of <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> is detected. The <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> passed in wraps a <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> that contains a collection of attribute values (in the <see cref="P:System.IdentityModel.Tokens.SamlAttribute.AttributeValues" /> property), each of which will get mapped to a claim. All of the claims will be returned in an <see cref="T:System.Security.Claims.ClaimsIdentity" /> with the specified issuer.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> does not contain any valid attribute values.</exception>
       </Docs>

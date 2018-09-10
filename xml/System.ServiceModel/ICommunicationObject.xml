@@ -161,7 +161,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">
-          <see cref="M:System.ServiceModel.ICommunicationObject.BeginClose" /> was called on an object in the <see cref="F:System.ServiceModel.CommunicationState.Faulted" /> state.</exception>
+          <see cref="M:System.ServiceModel.ICommunicationObject.BeginClose(System.AsyncCallback,System.Object)" /> was called on an object in the <see cref="F:System.ServiceModel.CommunicationState.Faulted" /> state.</exception>
         <exception cref="T:System.TimeoutException">The default timeout elapsed before the <see cref="T:System.ServiceModel.ICommunicationObject" /> was able to close gracefully.</exception>
       </Docs>
     </Member>
@@ -208,7 +208,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">
-          <see cref="M:System.ServiceModel.ICommunicationObject.BeginClose" /> was called on an object in the <see cref="F:System.ServiceModel.CommunicationState.Faulted" /> state.</exception>
+          <see cref="M:System.ServiceModel.ICommunicationObject.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" /> was called on an object in the <see cref="F:System.ServiceModel.CommunicationState.Faulted" /> state.</exception>
         <exception cref="T:System.TimeoutException">The specified timeout elapsed before the <see cref="T:System.ServiceModel.ICommunicationObject" /> was able to close gracefully.</exception>
       </Docs>
     </Member>

@@ -143,7 +143,7 @@
         <param name="inputs">The inputs to the service operation.</param>
         <param name="operationContext">Provides the execution context of the service operation invoked.</param>
         <param name="instanceId">The instance ID of the workflow instance being created.</param>
-        <param name="responseContext">The <see cref="T:System.ServiceModel.Activities.WorkflowHostingEndpointResponseContext" /> object that can be used to send replies back to the message source for a request/reply contract.</param>
+        <param name="responseContext">The object that can be used to send replies back to the message source for a request/reply contract.</param>
         <summary>Override to create a new <see cref="T:System.ServiceModel.Activities.WorkflowCreationContext" /> instance.</summary>
         <returns>A workflow creation context object.</returns>
         <remarks>

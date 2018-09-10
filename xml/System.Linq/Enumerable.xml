@@ -2577,7 +2577,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
- The <xref:System.Linq.Enumerable.Distinct%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%60%600%7D%29> method returns an unordered sequence that contains no duplicate values. If c`omparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values.  
+ The <xref:System.Linq.Enumerable.Distinct%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%60%600%7D%29> method returns an unordered sequence that contains no duplicate values. If `comparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values.  
   
    
   
@@ -2923,7 +2923,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If c`omparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values.  
+ If `comparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values.  
   
    
   
@@ -4298,7 +4298,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
- If c`omparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to hash and compare keys.  
+ If `comparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to hash and compare keys.  
   
  A join refers to the operation of correlating the elements of two sources of information based on a common key. <xref:System.Linq.Enumerable.Join%2A> brings the two information sources and the keys by which they are matched together in one method call. This differs from the use of `SelectMany`, which requires more than one method call to perform the same operation.  
   
@@ -8814,7 +8814,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Linq.Enumerable.SequenceEqual%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%60%600%7D%29> method enumerates the two source sequences in parallel and compares corresponding elements by using the specified <xref:System.Collections.Generic.IEqualityComparer%601>. If c`omparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare elements.  
+ The <xref:System.Linq.Enumerable.SequenceEqual%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%60%600%7D%29> method enumerates the two source sequences in parallel and compares corresponding elements by using the specified <xref:System.Collections.Generic.IEqualityComparer%601>. If `comparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare elements.  
   
    
   
@@ -12146,7 +12146,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
- If c`omparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values.  
+ If `comparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values.  
   
  When the object returned by this method is enumerated, <xref:System.Linq.Enumerable.Union%2A> enumerates `first` and `second` in that order and yields each element that has not already been yielded.  
   

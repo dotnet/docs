@@ -27,12 +27,12 @@ Using the installer script allows for non-administrative installation on your bu
 
 The installer script is automated to run at the start of the build to fetch and install the desired version of the SDK. The *desired version* is whatever version of the SDK your projects require to build. The script allows you to install the SDK in a local directory on the server, run the tools from the installed location, and then clean up (or let the CI service clean up) after the build. This provides encapsulation and isolation to your entire build process. The installation script reference is found in the [dotnet-install](dotnet-install-script.md) topic.
 
-> [!NOTE]
+> [!NOTE]Azure DevOps Services
 > When using the installer script, native dependencies aren't installed automatically. You must install the native dependencies if the operating system doesn't have them. See the list of prerequisites in the [.NET Core native prerequisites](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) topic.
 
 ## CI setup examples
 
-This section describes a manual setup using a PowerShell or bash script, along with a description of several software as a service (SaaS) CI solutions. The SaaS CI solutions covered are [Travis CI](https://travis-ci.org/), [AppVeyor](https://www.appveyor.com/), and [Visual Studio Team Services Build](https://docs.microsoft.com/vsts/build-release/index).
+This section describes a manual setup using a PowerShell or bash script, along with a description of several software as a service (SaaS) CI solutions. The SaaS CI solutions covered are [Travis CI](https://travis-ci.org/), [AppVeyor](https://www.appveyor.com/), and [ Build](https://docs.microsoft.com/azure/devops/build-release/index).
 
 ### Manual setup
 
@@ -136,16 +136,16 @@ install:
   # See appveyor.yml example for install script
 ```
 
-### Visual Studio Team Services (VSTS)
+### Azure DevOps Services
 
-Configure Visual Studio Team Services (VSTS) to build .NET Core projects using one of these approaches:
+Configure Azure DevOps Services to build .NET Core projects using one of these approaches:
 
 1. Run the script from the [manual setup step](#manual-setup) using your commands.
-1. Create a build composed of several VSTS built-in build tasks that are configured to use .NET Core tools.
+1. Create a build composed of several Azure DevOps Services built-in build tasks that are configured to use .NET Core tools.
 
-Both solutions are valid. Using a manual setup script, you control the version of the tools that you receive, since you download them as part of the build. The build is run from a script that you must create. This topic only covers the manual option. For more information on composing a build with VSTS build tasks, visit the VSTS [Continuous integration and deployment](https://docs.microsoft.com/vsts/build-release/index) topic.
+Both solutions are valid. Using a manual setup script, you control the version of the tools that you receive, since you download them as part of the build. The build is run from a script that you must create. This topic only covers the manual option. For more information on composing a build with Azure DevOps Services build tasks, visit the Azure DevOps Services [Continuous integration and deployment](https://docs.microsoft.com/azure/devops/build-release/index) topic.
 
-To use a manual setup script in VSTS, create a new build definition and specify the script to run for the build step. This is accomplished using the VSTS user interface:
+To use a manual setup script in Azure DevOps Services, create a new build definition and specify the script to run for the build step. This is accomplished using the Azure DevOps Services user interface:
 
 1. Start by creating a new build definition. Once you reach the screen that provides you an option to define what kind of a build you wish to create, select the **Empty** option.
 
@@ -165,7 +165,7 @@ To use a manual setup script in VSTS, create a new build definition and specify 
 
 ## Orchestrating the build
 
-Most of this document describes how to acquire the .NET Core tools and configure various CI services without providing information on how to orchestrate, or *actually build*, your code with .NET Core. The choices on how to structure the build process depend on many factors that cannot be covered in a general way here. Explore the resources and samples provided in the documentation sets of [Travis CI](https://travis-ci.org/), [AppVeyor](https://www.appveyor.com/), and [VSTS](https://docs.microsoft.com/vsts/build-release/index) for more information on orchestrating your builds with each technology.
+Most of this document describes how to acquire the .NET Core tools and configure various CI services without providing information on how to orchestrate, or *actually build*, your code with .NET Core. The choices on how to structure the build process depend on many factors that cannot be covered in a general way here. Explore the resources and samples provided in the documentation sets of [Travis CI](https://travis-ci.org/), [AppVeyor](https://www.appveyor.com/), and [Azure DevOps Services](https://docs.microsoft.com/azure/devops/build-release/index) for more information on orchestrating your builds with each technology.
 
 Two general approaches that you take in structuring the build process for .NET Core code using the .NET Core tools are using MSBuild directly or using the .NET Core command-line commands. Which approach you should take is determined by your comfort level with the approaches and trade-offs in complexity. MSBuild provides you the ability to express your build process as tasks and targets, but it comes with the added complexity of learning MSBuild project file syntax. Using the .NET Core command-line tools is perhaps simpler, but it requires you to write orchestration logic in a scripting language like `bash` or PowerShell.
 

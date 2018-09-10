@@ -29,6 +29,7 @@ The installer script is automated to run at the start of the build to fetch and 
 
 > [!NOTE]
 > **Azure DevOps Services**
+>
 > When using the installer script, native dependencies aren't installed automatically. You must install the native dependencies if the operating system doesn't have them. See the list of prerequisites in the [.NET Core native prerequisites](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) topic.
 
 ## CI setup examples

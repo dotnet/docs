@@ -141,7 +141,7 @@ Private Sub OnTimer(sender As Object, e As Timers.ElapsedEventArgs)
 End Sub
 ```
 
-You might want to perform tasks by using background worker threads instead of running all your work on the main thread. For an example of this, see the <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType> reference page.
+You might want to perform tasks by using background worker threads instead of running all your work on the main thread. For more information, see <xref:System.ComponentModel.BackgroundWorker?displayProperty=fullName>.
 
 ### Define what occurs when the service is stopped
 

@@ -17,7 +17,7 @@ ms.date: 09/22/2017
 
 -   An end-to-end DevOps environment supporting Continuous Integration/Continuous Deployment connecting to the production Docker environments provides agility and ultimately improves the time to market of your applications.
 
-Visual Studio Team Services greatly simplifies your DevOps environment designated to Docker environments from your Continuous Deployment pipelines, including simple Docker environments or more advanced microservice and container orchestrators based on Azure.
+Azure DevOps Services greatly simplifies your DevOps environment designated to Docker environments from your Continuous Deployment pipelines, including simple Docker environments or more advanced microservice and container orchestrators based on Azure.
 
 >[!div class="step-by-step"]
 [Previous](../run-manage-monitor-docker-environments/monitor-containerized-application-services.md)

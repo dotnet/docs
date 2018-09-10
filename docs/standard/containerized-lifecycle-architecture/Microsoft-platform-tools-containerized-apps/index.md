@@ -23,17 +23,17 @@ Table 3-1: Open DevOps workflow to any technology
 | Host | Microsoft technologies | Third-party—Azure pluggable |
 | ---------------------------| ----------------------------------------------------| --------------------------------------------------------------------------------|
 | Platform for Docker apps   | • Microsoft Visual Studio and Visual Studio Code<br /> • .NET<br /> • Microsoft Azure Container Service<br /> • Azure Service Fabric<br /> • Azure Container Registry<br /> | • Any code editor (for example, Sublime)<br /> • Any language (Node.js, Java, Go, etc.)<br /> • Any orchestrator and scheduler<br /> • Any Docker registry<br /> |
-| DevOps for Docker apps     | • Visual Studio Team Services<br /> • Microsoft Team Foundation Server<br /> • Azure Container Service<br /> • Azure Service Fabric<br /> | • GitHub, Git, Subversion, etc.<br /> • Jenkins, Chef, Puppet, Velocity, CircleCI, TravisCI, etc.<br /> • On-premises Docker Datacenter, Docker Swarm, Mesos DC/OS, Kubernetes, etc.<br /> |
+| DevOps for Docker apps     | • Azure DevOps Services<br /> • Microsoft Team Foundation Server<br /> • Azure Container Service<br /> • Azure Service Fabric<br /> | • GitHub, Git, Subversion, etc.<br /> • Jenkins, Chef, Puppet, Velocity, CircleCI, TravisCI, etc.<br /> • On-premises Docker Datacenter, Docker Swarm, Mesos DC/OS, Kubernetes, etc.<br /> |
 | Management and monitoring  | • Operations Management Suite<br /> • Applications Insights<br /> | • Marathon, Chronos, etc.<br />
 
 The Microsoft platform and tools for containerized Docker apps, as defined in Table 3-1, comprise the following components:
 
 -   **Platform for Docker Apps development** The development of a service, or collection of services that make up an "app." The development platform provides all the work developers requires prior to pushing their code to a shared code repository. Developing services, deployed as containers, are very similar to the development of the same apps or services without Docker. You continue to use your preferred language (.NET, Node.js, Go, etc.) and preferred editor or IDE like Visual Studio or Visual Studio Code. However, rather than consider Docker a deployment destination, you develop your services in the Docker environment. You build, run, test, and debug your code in containers locally, providing the destination environment at development time. By providing the destination environment locally, Docker containers set up what will drastically help you improve your DevOps life cycle. Visual Studio and Visual Studio Code have extensions to integrate Docker containers within your development process.
 
--   **DevOps for Docker Apps** Developers creating Docker applications can use Visual Studio Team Services (VSTS) or any other third-party product, like Jenkins, to build out a comprehensive automated application life cycle management (ALM).
+-   **DevOps for Docker Apps** Developers creating Docker applications can use Azure DevOps Services or any other third-party product, like Jenkins, to build out a comprehensive automated application life cycle management (ALM).
 
-With VSTS, developers can create container-focused DevOps for a fast, iterative process that covers source-code control from anywhere (VSTS-Git, GitHub, any remote Git repository, or Subversion), Continuous Integration (CI), internal unit tests, inter container/service integration tests, Continuous Delivery (CD), and release management (RM). Developers also can automate their Docker application releases into Azure Container Service, from development to staging and production environments.
-
+With Azure DevOps Services, developers can create container-focused DevOps for a fast, iterative process that covers source-code control from anywhere (Azure DevOps Services-Git, GitHub, any remote Git repository, or Subversion), Continuous Integration (CI), internal unit tests, inter container/service integration tests, Continuous Delivery (CD), and release management (RM). Developers also can automate their Docker application releases into Azure Container Service, from development to staging and production environments.
+ 
 -   IT production management and monitoring.
 
 **Management** IT can manage production applications and services in several ways:

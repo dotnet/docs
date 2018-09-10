@@ -45,7 +45,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Threading.WaitHandle> class encapsulates Win32 synchronization handles, and is used to represent all synchronization objects in the runtime that allow multiple wait operations. For a comparison of wait handles with other synchronization objects, see [Overview of Synchronization Primitives](~/docs/standard/threading/overview-of-synchronization-primitives.md).  
+ The <xref:System.Threading.WaitHandle> class encapsulates a native operating system synchronization handle and is used to represent all synchronization objects in the runtime that allow multiple wait operations. For a comparison of wait handles with other synchronization objects, see [Overview of Synchronization Primitives](~/docs/standard/threading/overview-of-synchronization-primitives.md).  
   
  The <xref:System.Threading.WaitHandle> class itself is abstract. Classes derived from <xref:System.Threading.WaitHandle> define a signaling mechanism to indicate taking or releasing access to a shared resource, but they use the inherited <xref:System.Threading.WaitHandle> methods to block while waiting for access to shared resources. The classes derived from <xref:System.Threading.WaitHandle> include:  
   
@@ -61,7 +61,7 @@
   
  Because the <xref:System.Threading.WaitHandle> class derives from <xref:System.MarshalByRefObject>, these classes can be used to synchronize the activities of threads across application domain boundaries.  
   
- In addition to its derived classes, the <xref:System.Threading.WaitHandle> class has a number of static methods that block a thread until one or more synchronization objects receive a signal.. These include:  
+ In addition to its derived classes, the <xref:System.Threading.WaitHandle> class has a number of static methods that block a thread until one or more synchronization objects receive a signal. These include:  
   
 -   <xref:System.Threading.WaitHandle.SignalAndWait%2A>, which allows a thread to signal one wait handle and immediately wait on another.  
   
@@ -74,7 +74,7 @@
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type or a type derived from it, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.Threading.WaitHandle.Close%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
- <xref:System.Threading.WaitHandle> implements the <xref:System.IDisposable.Dispose%2A> pattern. See [Dispose Pattern](~/docs/standard/design-guidelines/dispose-pattern.md). When you derive from <xref:System.Threading.WaitHandle>, use the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A> property to store your native handle operating system handle. You do not need to override the protected <xref:System.Threading.WaitHandle.Dispose%2A> method unless you use additional unmanaged resources.  
+ <xref:System.Threading.WaitHandle> implements the <xref:System.IDisposable.Dispose%2A> pattern. See [Dispose Pattern](~/docs/standard/design-guidelines/dispose-pattern.md). When you derive from <xref:System.Threading.WaitHandle>, use the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A> property to store your native operating system handle. You do not need to override the protected <xref:System.Threading.WaitHandle.Dispose%2A> method unless you use additional unmanaged resources.  
   
    
   

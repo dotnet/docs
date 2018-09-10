@@ -27,7 +27,9 @@ Using the installer script allows for non-administrative installation on your bu
 
 The installer script is automated to run at the start of the build to fetch and install the desired version of the SDK. The *desired version* is whatever version of the SDK your projects require to build. The script allows you to install the SDK in a local directory on the server, run the tools from the installed location, and then clean up (or let the CI service clean up) after the build. This provides encapsulation and isolation to your entire build process. The installation script reference is found in the [dotnet-install](dotnet-install-script.md) topic.
 
-> [!NOTE]Azure DevOps Services
+> [!NOTE]
+> **Azure DevOps Services**
+>
 > When using the installer script, native dependencies aren't installed automatically. You must install the native dependencies if the operating system doesn't have them. See the list of prerequisites in the [.NET Core native prerequisites](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) topic.
 
 ## CI setup examples

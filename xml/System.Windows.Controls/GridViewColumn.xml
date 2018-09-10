@@ -37,9 +37,9 @@
 ## Remarks  
  A <xref:System.Windows.Controls.GridViewColumn> is used by the <xref:System.Windows.Controls.GridView> view mode to display a column of data. The <xref:System.Windows.Controls.ListView> that implements the <xref:System.Windows.Controls.GridView> view mode provides the data for the column. You use data binding to specify the data for the <xref:System.Windows.Controls.GridViewColumn>.  
   
- You can use the <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A> property to define the data to display in a column. You can also define the data as part of a <xref:System.Windows.DataTemplate> that is specified by the <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A> property. If different cells have different <xref:System.Windows.DataTemplate> objects, the <xref:System.Windows.Controls.GridViewColumn.CellTemplateSelector%2A> property can specify a <xref:System.Windows.Controls.DataTemplateSelector>. The following list shows the properties mentioned here, in their order of precedence from highest to lowest:  
+ You can use the <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A> to define the data to display in a column. You can also define the data as part of a <xref:System.Windows.DataTemplate> that is specified by the <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A> property. If different cells have different <xref:System.Windows.DataTemplate> objects, the <xref:System.Windows.Controls.GridViewColumn.CellTemplateSelector%2A> property can specify a <xref:System.Windows.Controls.DataTemplateSelector>. The following list shows the properties mentioned here, in their order of precedence from highest to lowest:  
   
--   <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A>  
+-   <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A>
   
 -   <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A>  
   
@@ -364,11 +364,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A> property associates a type of data from a data source to a column so that the column displays a set of values of that type. Examples of data source objects include <xref:System.Windows.Data.XmlDataProvider> objects and <xref:System.Windows.Data.ObjectDataProvider> objects.  
+ This property associates a type of data from a data source to a column so that the column displays a set of values of that type. Examples of data source objects include <xref:System.Windows.Data.XmlDataProvider> objects and <xref:System.Windows.Data.ObjectDataProvider> objects.  
   
  The following properties are all used to define the content and style of a column cell, and are listed here in their order of precedence, from highest to lowest:  
   
--   <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A>  
+-   `DisplayMemberBinding` (this property) 
   
 -   <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A>  
   

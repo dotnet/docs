@@ -37,7 +37,7 @@ This article demonstrates how to create a simple Windows service app in Visual S
 
 To begin, you create the project and set values that are required for the service to function correctly.
 
-1. In Visual Studio, on the menu bar, choose **File** > **New** > **Project** or press **Ctrl** + **Shift** + **N** to open the **New Project** dialog.
+1. In Visual Studio, on the menu bar, choose **File** > **New** > **Project** (or press **Ctrl**+**Shift**+**N**) to open the **New Project** dialog.
 
 2. Navigate to the **Windows Service** project template. Expand **Installed** > [**Visual C#** or **Visual Basic**] > **Windows Desktop**, or enter **Windows Service** in the search box.
 
@@ -50,17 +50,17 @@ To begin, you create the project and set values that are required for the servic
 
      The project template includes a component class named `Service1` that inherits from <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType>.
 
-3. Rename the service from **Service1** to **MyNewService**. In the **Design** view for Service1.cs (or Service1.vb), click the link to **switch to code view**. Right-click on **Service1** and select **Rename** from the context menu. Enter **MyNewService** and then choose **Apply** or press **Enter**.
+3. Rename the service from **Service1** to **MyNewService**. In the **Design** view for Service1.cs (or Service1.vb), click the link to **switch to code view**. Right-click on **Service1** and select **Rename** from the context menu. Enter **MyNewService** and then press **Enter** or click **Apply**.
 
 4. In the **Properties** window for **Service1.cs [Design]** or **Service1.vb [Design]**, change the **ServiceName** value to **MyNewService**.
 
-5. In **Solution Explorer**, rename **Service1.cs** to **MyNewService.cs**, or **Service1.vb** to **MyNewService.vb**.
+5. In **Solution Explorer**, rename **Service1.cs** to **MyNewService.cs**, or rename **Service1.vb** to **MyNewService.vb**.
 
 ## Add features to the service
 
 In this section, you add a custom event log to the Windows service. Event logs are not associated in any way with Windows services. Here the <xref:System.Diagnostics.EventLog> component is used as an example of the type of component you could add to a Windows service.
 
-### To add custom event log functionality to your service
+### Add custom event log functionality
 
 1. In **Solution Explorer**, open the context menu for **MyNewService.cs** or **MyNewService.vb**, and then choose **View Designer**.
 
@@ -68,89 +68,99 @@ In this section, you add a custom event log to the Windows service. Event logs a
 
 3. In **Solution Explorer**, open the context menu for **MyNewService.cs** or **MyNewService.vb**, and then choose **View Code**.
 
-4. Add a declaration for the **eventLog** object in the `MyNewService` class, right after the line that declares the `components` variable:
+4. Edit the constructor to define a custom event log:
 
-     [!code-csharp[VbRadconService#16](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#16)]
-     [!code-vb[VbRadconService#16](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#16)]
+   ```csharp
+   public MyNewService()
+   {
+        InitializeComponent();
 
-5. Add or edit the constructor to define a custom event log:
-
-     [!code-csharp[VbRadconService#2](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#2)]
-     [!code-vb[VbRadconService#2](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#2)]
-
-### To define what occurs when the service starts
-
--   In the Code Editor, locate the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method that was automatically overridden when you created the project, and replace the code with the following. This adds an entry to the event log when the service starts running:
-
-     [!code-csharp[VbRadconService#3](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#3)]
-     [!code-vb[VbRadconService#3](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#3)]
-
-     A service application is designed to be long-running, so it usually polls or monitors something in the system. The monitoring is set up in the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method. However, <xref:System.ServiceProcess.ServiceBase.OnStart%2A> doesn’t actually do the monitoring. The <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method must return to the operating system after the service's operation has begun. It must not loop forever or block. To set up a simple polling mechanism, you can use the <xref:System.Timers.Timer?displayProperty=nameWithType> component as follows: In the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method, set parameters on the component, and then set the <xref:System.Timers.Timer.Enabled%2A> property to `true`. The timer raises events in your code periodically, at which time your service could do its monitoring. You can use the following code to do this:
-
-    ```csharp
-    // Set up a timer to trigger every minute.
-    System.Timers.Timer timer = new System.Timers.Timer();
-    timer.Interval = 60000; // 60 seconds
-    timer.Elapsed += new System.Timers.ElapsedEventHandler(this.OnTimer);
-    timer.Start();
-    ```
-
-    ```vb
-    ' Set up a timer to trigger every minute.
-    Dim timer As System.Timers.Timer = New System.Timers.Timer()
-    timer.Interval = 60000 ' 60 seconds
-    AddHandler timer.Elapsed, AddressOf Me.OnTimer
-    timer.Start()
-    ```
-     Add a member variable to the class. It will contain the identifier of the next event to write into the event log.
-
-    ```csharp
-    private int eventId = 1;
-    ```
-
-    ```vb
-    Private eventId As Integer = 1
-    ```
-
-     Add code to handle the timer event:
-
-    ```csharp
-    public void OnTimer(object sender, System.Timers.ElapsedEventArgs args)
-    {
-        // TODO: Insert monitoring activities here.
-        eventLog1.WriteEntry("Monitoring the System", EventLogEntryType.Information, eventId++);
+        eventLog1 = new System.Diagnostics.EventLog();
+        if (!System.Diagnostics.EventLog.SourceExists("MySource"))
+        {
+            System.Diagnostics.EventLog.CreateEventSource(
+                "MySource", "MyNewLog");
+        }
+        eventLog1.Source = "MySource";
+        eventLog1.Log = "MyNewLog";
     }
-    ```
+   ```
 
-    ```vb
-    Private Sub OnTimer(sender As Object, e As Timers.ElapsedEventArgs)
-        ' TODO: Insert monitoring activities here.
-        eventLog1.WriteEntry("Monitoring the System", EventLogEntryType.Information, eventId)
-        eventId = eventId + 1
-    End Sub
-    ```
+   [!code-vb[VbRadconService#2](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#2)]
 
-     You might want to perform tasks by using background worker threads instead of running all your work on the main thread. For an example of this, see the <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType> reference page.
+### Define what occurs when the service starts
 
-### To define what occurs when the service is stopped
+In the code editor, locate the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method that was automatically overridden when you created the project. Add a line of code that writes an entry to the event log when the service starts:
 
--   Replace the code for the <xref:System.ServiceProcess.ServiceBase.OnStop%2A> method with the following. This adds an entry to the event log when the service is stopped:
+[!code-csharp[VbRadconService#3](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#3)]
+[!code-vb[VbRadconService#3](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#3)]
 
-     [!code-csharp[VbRadconService#4](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#4)]
-     [!code-vb[VbRadconService#4](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#4)]
+A service application is designed to be long-running, so it usually polls or monitors something in the system. The monitoring is set up in the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method. However, <xref:System.ServiceProcess.ServiceBase.OnStart%2A> doesn’t actually do the monitoring. The <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method must return to the operating system after the service's operation has begun. It must not loop forever or block. To set up a simple polling mechanism, you can use the <xref:System.Timers.Timer?displayProperty=nameWithType> component as follows: In the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method, set parameters on the component, and then set the <xref:System.Timers.Timer.Enabled%2A> property to `true`. The timer raises events in your code periodically, at which time your service could do its monitoring. You can use the following code to do this:
 
- In the next section, you can override the <xref:System.ServiceProcess.ServiceBase.OnPause%2A>, <xref:System.ServiceProcess.ServiceBase.OnContinue%2A>, and <xref:System.ServiceProcess.ServiceBase.OnShutdown%2A> methods to define additional processing for your component.
+```csharp
+// Set up a timer that triggers every minute.
+System.Timers.Timer timer = new System.Timers.Timer();
+timer.Interval = 60000; // 60 seconds
+timer.Elapsed += new System.Timers.ElapsedEventHandler(this.OnTimer);
+timer.Start();
+```
 
-### To define other actions for the service
+```vb
+' Set up a timer that triggers every minute.
+Dim timer As System.Timers.Timer = New System.Timers.Timer()
+timer.Interval = 60000 ' 60 seconds
+AddHandler timer.Elapsed, AddressOf Me.OnTimer
+timer.Start()
+```
 
--   Locate the method that you want to handle, and override it to define what you want to occur.
+Add a member variable to the class. It contains the identifier of the next event to write into the event log.
 
-     The following code shows how you can override the <xref:System.ServiceProcess.ServiceBase.OnContinue%2A> method:
+```csharp
+private int eventId = 1;
+```
 
-     [!code-csharp[VbRadconService#5](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#5)]
-     [!code-vb[VbRadconService#5](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#5)]
+```vb
+Private eventId As Integer = 1
+```
 
- Some custom actions have to occur when a Windows service is installed by the <xref:System.Configuration.Install.Installer> class. Visual Studio can create these installers specifically for a Windows service and add them to your project.
+Add a new method to handle the timer event:
+
+```csharp
+public void OnTimer(object sender, System.Timers.ElapsedEventArgs args)
+{
+    // TODO: Insert monitoring activities here.
+    eventLog1.WriteEntry("Monitoring the System", EventLogEntryType.Information, eventId++);
+}
+```
+
+```vb
+Private Sub OnTimer(sender As Object, e As Timers.ElapsedEventArgs)
+    ' TODO: Insert monitoring activities here.
+    eventLog1.WriteEntry("Monitoring the System", EventLogEntryType.Information, eventId)
+    eventId = eventId + 1
+End Sub
+```
+
+You might want to perform tasks by using background worker threads instead of running all your work on the main thread. For an example of this, see the <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType> reference page.
+
+### Define what occurs when the service is stopped
+
+Add a line of code to the <xref:System.ServiceProcess.ServiceBase.OnStop%2A> method that adds an entry to the event log when the service is stopped:
+
+```csharp
+eventLog1.WriteEntry("In OnStop.");
+```
+
+[!code-vb[VbRadconService#4](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#4)]
+
+### Define other actions for the service
+
+You can override the <xref:System.ServiceProcess.ServiceBase.OnPause%2A>, <xref:System.ServiceProcess.ServiceBase.OnContinue%2A>, and <xref:System.ServiceProcess.ServiceBase.OnShutdown%2A> methods to define additional processing for your component. The following code shows how you can override the <xref:System.ServiceProcess.ServiceBase.OnContinue%2A> method:
+
+[!code-csharp[VbRadconService#5](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#5)]
+[!code-vb[VbRadconService#5](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#5)]
+
+Some custom actions have to occur when a Windows service is installed by the <xref:System.Configuration.Install.Installer> class. Visual Studio can create these installers specifically for a Windows service and add them to your project.
 
 ## Set service status
 
@@ -158,7 +168,7 @@ Services report their status to the Service Control Manager, so that users can t
 
 To implement service pending status:
 
-1. Add a `using` statement or `Imports` declaration to the <xref:System.Runtime.InteropServices?displayProperty=nameWithType> namespace in the MyNewService.cs or MyNewService.vb file:
+1. Add a `using` statement or `Imports` declaration for the <xref:System.Runtime.InteropServices?displayProperty=nameWithType> namespace in the MyNewService.cs or MyNewService.vb file:
 
     ```csharp
     using System.Runtime.InteropServices;
@@ -172,27 +182,27 @@ To implement service pending status:
 
     ```csharp
     public enum ServiceState
-      {
-          SERVICE_STOPPED = 0x00000001,
-          SERVICE_START_PENDING = 0x00000002,
-          SERVICE_STOP_PENDING = 0x00000003,
-          SERVICE_RUNNING = 0x00000004,
-          SERVICE_CONTINUE_PENDING = 0x00000005,
-          SERVICE_PAUSE_PENDING = 0x00000006,
-          SERVICE_PAUSED = 0x00000007,
-      }
+    {
+        SERVICE_STOPPED = 0x00000001,
+        SERVICE_START_PENDING = 0x00000002,
+        SERVICE_STOP_PENDING = 0x00000003,
+        SERVICE_RUNNING = 0x00000004,
+        SERVICE_CONTINUE_PENDING = 0x00000005,
+        SERVICE_PAUSE_PENDING = 0x00000006,
+        SERVICE_PAUSED = 0x00000007,
+    }
 
-      [StructLayout(LayoutKind.Sequential)]
-      public struct ServiceStatus
-      {
-          public int dwServiceType;
-          public ServiceState dwCurrentState;
-          public int dwControlsAccepted;
-          public int dwWin32ExitCode;
-          public int dwServiceSpecificExitCode;
-          public int dwCheckPoint;
-          public int dwWaitHint;
-      };
+    [StructLayout(LayoutKind.Sequential)]
+    public struct ServiceStatus
+    {
+        public int dwServiceType;
+        public ServiceState dwCurrentState;
+        public int dwControlsAccepted;
+        public int dwWin32ExitCode;
+        public int dwServiceSpecificExitCode;
+        public int dwCheckPoint;
+        public int dwWaitHint;
+    };
     ```
 
     ```vb
@@ -218,11 +228,11 @@ To implement service pending status:
     End Structure
     ```
 
-3. Now, in the `MyNewService` class, declare the [SetServiceStatus function](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) by using platform invoke:
+3. Now, in the `MyNewService` class, declare the [SetServiceStatus function](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) by using [platform invoke](../interop/consuming-unmanaged-dll-functions.md):
 
     ```csharp
-    [DllImport("advapi32.dll", SetLastError=true)]
-            private static extern bool SetServiceStatus(IntPtr handle, ref ServiceStatus serviceStatus);
+    [DllImport("advapi32.dll", SetLastError = true)]
+    private static extern bool SetServiceStatus(System.IntPtr handle, ref ServiceStatus serviceStatus);
     ```
 
     ```vb
@@ -263,7 +273,7 @@ To implement service pending status:
 
 6. (Optional) Repeat this procedure for the <xref:System.ServiceProcess.ServiceBase.OnStop%2A> method.
 
-> [!CAUTION]
+> [!NOTE]
 > The [Service Control Manager](/windows/desktop/Services/service-control-manager) uses the `dwWaitHint` and `dwCheckpoint` members of the [SERVICE_STATUS structure](/windows/desktop/api/winsvc/ns-winsvc-_service_status) to determine how much time to wait for a Windows service to start or shut down. If your <xref:System.ServiceProcess.ServiceBase.OnStart%2A> and <xref:System.ServiceProcess.ServiceBase.OnStop%2A> methods run long, your service can request more time by calling [SetServiceStatus](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) again with an incremented `dwCheckPoint` value.
 
 ## Add installers to the service
@@ -276,7 +286,7 @@ Before you can run a Windows service, you need to install it, which registers it
 
 3. Open the context menu for the designer window (if you’re using a pointing device, right-click inside the window), and then choose **Add Installer**.
 
-     By default, a component class that contains two installers is added to your project. The component is named **ProjectInstaller**, and the installers it contains are the installer for your service and the installer for the service's associated process.
+   By default, a component class that contains two installers is added to your project. The component is named **ProjectInstaller**, and the installers it contains are the installer for your service and the installer for the service's associated process.
 
 4. In **Design** view for **ProjectInstaller**, choose **serviceInstaller1** for a Visual C# project, or **ServiceInstaller1** for a Visual Basic project.
 
@@ -290,115 +300,127 @@ Before you can run a Windows service, you need to install it, which registers it
 
      ![Installer Properties for a Windows service](../../../docs/framework/windows-services/media/windowsservice-installerproperties.PNG "WindowsService_InstallerProperties")
 
-9. In the designer, choose **serviceProcessInstaller1** for a Visual C# project, or **ServiceProcessInstaller1** for a Visual Basic project. Set the <xref:System.ServiceProcess.ServiceProcessInstaller.Account%2A> property to <xref:System.ServiceProcess.ServiceAccount.LocalSystem>. This will cause the service to be installed and to run on a local service account.
+9. In the designer, choose **serviceProcessInstaller1** for a Visual C# project, or **ServiceProcessInstaller1** for a Visual Basic project. Set the <xref:System.ServiceProcess.ServiceProcessInstaller.Account%2A> property to <xref:System.ServiceProcess.ServiceAccount.LocalSystem>. This causes the service to be installed and to run using the local system account.
 
     > [!IMPORTANT]
     > The <xref:System.ServiceProcess.ServiceAccount.LocalSystem> account has broad permissions, including the ability to write to the event log. Use this account with caution, because it might increase your risk of attacks from malicious software. For other tasks, consider using the <xref:System.ServiceProcess.ServiceAccount.LocalService> account, which acts as a non-privileged user on the local computer and presents anonymous credentials to any remote server. This example fails if you try to use the <xref:System.ServiceProcess.ServiceAccount.LocalService> account, because it needs permission to write to the event log.
 
      For more information about installers, see [How to: Add Installers to Your service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md).
 
-## Set Startup Parameters
+## (Optional) Set startup parameters
 
 A Windows service, like any other executable, can accept command-line arguments, or startup parameters. When you add code to process startup parameters, users can start your service with their own custom startup parameters by using the Services window in the Windows Control Panel. However, these startup parameters are not persisted the next time the service starts. To set startup parameters permanently, you can set them in the registry, as shown in this procedure.
 
 > [!NOTE]
-> Before you decide to add startup parameters, consider whether that is the best way to pass information to your service. Although startup parameters are easy to use and to parse, and users can easily override them, they might be harder for users to discover and use without documentation. Generally, if your service requires more than just a few startup parameters, you should consider using the registry or a configuration file instead. Every Windows service has an entry in the registry under HKLM\System\CurrentControlSet\services. Under the service's key, you can use the **Parameters** subkey to store information that your service can access. You can use application configuration files for a Windows service the same way you do for other types of programs. For example code, see <xref:System.Configuration.ConfigurationManager.AppSettings%2A>.
+> Before you decide to add startup parameters, consider whether that is the best way to pass information to your service. Although startup parameters are easy to use and to parse, and users can easily override them, they might be harder for users to discover and use without documentation. Generally, if your service requires more than just a few startup parameters, you should consider using the registry or a configuration file instead. Every Windows service has an entry in the registry under **HKLM\System\CurrentControlSet\services**. Under the service's key, you can use the **Parameters** subkey to store information that your service can access. You can use application configuration files for a Windows service the same way you do for other types of programs. For example code, see <xref:System.Configuration.ConfigurationManager.AppSettings%2A>.
 
 To add startup parameters:
 
-1. In the `Main` method in Program.cs or in MyNewService.Designer.vb, add an argument for the command line:
+1. In the `Main` method in Program.cs or in MyNewService.Designer.vb, add an input parameter to pass to the service constructor:
 
-```csharp
-static void Main(string[] args)
-{
-    ServiceBase[] ServicesToRun = new ServiceBase[] { new MyNewService(args) };
-    ServiceBase.Run(ServicesToRun);
-}
-```
+   ```csharp
+   static void Main(string[] args)
+   {
+       ServiceBase[] ServicesToRun;
+       ServicesToRun = new ServiceBase[]
+       {
+           new MyNewService(args)
+       };
+       ServiceBase.Run(ServicesToRun);
+   }
+   ```
 
-```vb
-Shared Sub Main(ByVal cmdArgs() As String)
-    Dim ServicesToRun() As System.ServiceProcess.ServiceBase = New System.ServiceProcess.ServiceBase() {New MyNewServiceVB(cmdArgs)}
-    System.ServiceProcess.ServiceBase.Run(ServicesToRun)
-End Sub
-```
+   ```vb
+   Shared Sub Main(ByVal cmdArgs() As String)
+       Dim ServicesToRun() As System.ServiceProcess.ServiceBase = New System.ServiceProcess.ServiceBase() {New MyNewServiceVB(cmdArgs)}
+       System.ServiceProcess.ServiceBase.Run(ServicesToRun)
+   End Sub
+   ```
 
 2. Change the `MyNewService` constructor as follows:
 
-```csharp
-public MyNewService(string[] args)
-{
-    InitializeComponent();
-    string eventSourceName = "MySource";
-    string logName = "MyNewLog";
-    if (args.Count() > 0)
-    {
-        eventSourceName = args[0];
-    }
-    if (args.Count() > 1)
-    {
-        logName = args[1];
-    }
-    eventLog1 = new System.Diagnostics.EventLog();
-    if (!System.Diagnostics.EventLog.SourceExists(eventSourceName))
-    {
-        System.Diagnostics.EventLog.CreateEventSource(eventSourceName, logName);
-    }
-    eventLog1.Source = eventSourceName;
-    eventLog1.Log = logName;
-}
-```
+   ```csharp
+   public MyNewService(string[] args)
+   {
+       InitializeComponent();
 
-```vb
-Public Sub New(ByVal cmdArgs() As String)
-    InitializeComponent()
-    Dim eventSourceName As String = "MySource"
-    Dim logName As String = "MyNewLog"
-    If (cmdArgs.Count() > 0) Then
-        eventSourceName = cmdArgs(0)
-    End If
-    If (cmdArgs.Count() > 1) Then
-        logName = cmdArgs(1)
-    End If
-    eventLog1 = New System.Diagnostics.EventLog()
-    If (Not System.Diagnostics.EventLog.SourceExists(eventSourceName)) Then
-        System.Diagnostics.EventLog.CreateEventSource(eventSourceName, logName)
-    End If
-    eventLog1.Source = eventSourceName
-    eventLog1.Log = logName
-End Sub
-```
+        string eventSourceName = "MySource";
+        string logName = "MyNewLog";
 
-This code sets the event source and log name according to the supplied startup parameters, or uses default values if no arguments are supplied.
+        if (args.Length > 0)
+        {
+            eventSourceName = args[0];
+        }
+
+        if (args.Length > 1)
+        {
+            logName = args[1];
+        }
+
+        eventLog1 = new System.Diagnostics.EventLog();
+
+        if (!System.Diagnostics.EventLog.SourceExists(eventSourceName))
+        {
+            System.Diagnostics.EventLog.CreateEventSource(eventSourceName, logName);
+        }
+
+        eventLog1.Source = eventSourceName;
+        eventLog1.Log = logName;
+   }
+   ```
+
+   ```vb
+   Public Sub New(ByVal cmdArgs() As String)
+       InitializeComponent()
+       Dim eventSourceName As String = "MySource"
+       Dim logName As String = "MyNewLog"
+       If (cmdArgs.Count() > 0) Then
+           eventSourceName = cmdArgs(0)
+       End If
+       If (cmdArgs.Count() > 1) Then
+           logName = cmdArgs(1)
+       End If
+       eventLog1 = New System.Diagnostics.EventLog()
+       If (Not System.Diagnostics.EventLog.SourceExists(eventSourceName)) Then
+           System.Diagnostics.EventLog.CreateEventSource(eventSourceName, logName)
+       End If
+       eventLog1.Source = eventSourceName
+       eventLog1.Log = logName
+   End Sub
+   ```
+
+   This code sets the event source and log name according to the supplied startup parameters, or uses default values if no arguments are supplied.
 
 3. To specify the command-line arguments, add the following code to the `ProjectInstaller` class in ProjectInstaller.cs or ProjectInstaller.vb:
 
-```csharp
-protected override void OnBeforeInstall(IDictionary savedState)
-{
-    string parameter = "MySource1\" \"MyLogFile1";
-    Context.Parameters["assemblypath"] = "\"" + Context.Parameters["assemblypath"] + "\" \"" + parameter + "\"";
-    base.OnBeforeInstall(savedState);
-}
-```
+   ```csharp
+   protected override void OnBeforeInstall(IDictionary savedState)
+   {
+       string parameter = "MySource1\" \"MyLogFile1";
+       Context.Parameters["assemblypath"] = "\"" + Context.Parameters["assemblypath"] + "\" \"" + parameter + "\"";
+       base.OnBeforeInstall(savedState);
+   }
+   ```
 
-```vb
-Protected Overrides Sub OnBeforeInstall(ByVal savedState As IDictionary)
-    Dim parameter As String = "MySource1"" ""MyLogFile1"
-    Context.Parameters("assemblypath") = """" + Context.Parameters("assemblypath") + """ """ + parameter + """"
-    MyBase.OnBeforeInstall(savedState)
-End Sub
-```
+   ```vb
+   Protected Overrides Sub OnBeforeInstall(ByVal savedState As IDictionary)
+       Dim parameter As String = "MySource1"" ""MyLogFile1"
+       Context.Parameters("assemblypath") = """" + Context.Parameters("assemblypath") + """ """ + parameter + """"
+       MyBase.OnBeforeInstall(savedState)
+   End Sub
+   ```
 
-This code modifies the **ImagePath** registry key, which typically contains the full path to the executable for the Windows service, by adding the default parameter values. The quotation marks around the path (and around each individual parameter) are required for the service to start up correctly. To change the startup parameters for this Windows service, users can change the parameters given in the **ImagePath** registry key, although the better way is to change it programmatically and expose the functionality to users in a friendly way (for example, in a management or configuration utility).
+   This code modifies the **ImagePath** registry key, which typically contains the full path to the executable for the Windows service, by adding the default parameter values. The quotation marks around the path (and around each individual parameter) are required for the service to start up correctly. To change the startup parameters for this Windows service, users can change the parameters given in the **ImagePath** registry key, although the better way is to change it programmatically and expose the functionality to users in a friendly way (for example, in a management or configuration utility).
 
 ## Build the service
 
-1. In **Solution Explorer**, open the context menu for your project, and then choose **Properties**. The property pages for your project  appear.
+1. In **Solution Explorer**, open the context menu for your project, and then choose **Properties**.
 
-2. On the Application tab, in the **Startup object** list, choose **MyNewService.Program**.
+   The property pages for your project appear.
 
-3. In **Solution Explorer**, open the context menu for your project, and then choose **Build** to build the project (Keyboard: Ctrl+Shift+B).
+2. On the **Application** tab, in the **Startup object** list, choose **MyNewService.Program**.
+
+3. In **Solution Explorer**, open the context menu for your project, and then choose **Build** to build the project (Keyboard: **Ctrl**+**Shift**+**B**).
 
 ## Install the service
 
@@ -418,13 +440,13 @@ Now that you've built the Windows service, you can install it. To install a Wind
 
     If the **installutil.exe** process reports failure, check the install log to find out why. By default the log is in the same folder as the service executable. The installation can fail if  the <xref:System.ComponentModel.RunInstallerAttribute> Class is not present on the `ProjectInstaller` class, if the attribute is not set to `true`, or if the `ProjectInstaller` class is not `public`.
 
-    For more information, see [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md).
+For more information, see [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md).
 
 ## Start and run the service
 
-1. In Windows, open the **Start** screen or **Start** menu, and type **services.msc**.
+1. In Windows, open the **Services** app. Press **Windows**+**R** to open the **Run** box, and then enter **services.msc** and press **Enter** or click **OK**.
 
-     You should now see **MyNewService** listed in the **Services** window.
+     You should see your service listed in the **Services** window, displayed alphabetically by the display name that you set for it.
 
      ![MyNewService in the Services window.](../../../docs/framework/windows-services/media/windowsservices-serviceswindow.PNG)
 
@@ -443,9 +465,9 @@ Now that you've built the Windows service, you can install it. To install a Wind
 
 2. In **Event Viewer**, expand **Applications and Services Logs**.
 
-3. Locate the listing for **MyNewLog** (or **MyLogFile1**, if you used the optional procedure to add command-line arguments) and expand it. You should see entries for the two actions (start and stop) your service performed.
+3. Locate the listing for **MyNewLog** (or **MyLogFile1**, if you followed the optional procedure to add command-line arguments) and expand it. You should see entries for the two actions (start and stop) that your service performed.
 
-     ![Use the Event Viewer to see the event log entries](../../../docs/framework/windows-services/media/windowsservices-eventviewer.PNG)
+     ![Use the Event Viewer to see the event log entries](../../../docs/framework/windows-services/media/windows-service-event-viewer.png)
 
 ## Uninstall a Windows service
 

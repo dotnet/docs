@@ -52,7 +52,7 @@ If you are writing a class with some operations that may incur noticeable delays
 -   Create a class called `PrimeNumberCalculator` that inherits from <xref:System.ComponentModel.Component>.  
   
 ## Defining Public Asynchronous Events and Delegates  
- Your component communicates to clients using events. The *MethodName***Completed** event alerts clients to the completion of an asynchronous task, and the *MethodName***ProgressChanged** event informs clients of the progress of an asynchronous task.  
+ Your component communicates to clients using events. The _MethodName_**Completed** event alerts clients to the completion of an asynchronous task, and the _MethodName_**ProgressChanged** event informs clients of the progress of an asynchronous task.  
   
 #### To define asynchronous events for clients of your component:  
   

@@ -50,10 +50,7 @@
   
  An operation that uses ordinal sort rules performs a comparison based on the numeric value (Unicode code point) of each <xref:System.Char> in the string. An ordinal comparison is fast but culture-insensitive. When you use ordinal sort rules to sort strings that start with Unicode characters (U+), the string U+xxxx comes before the string U+yyyy if the value of xxxx is numerically less than yyyy.  
   
- For more information about comparisons, see the <xref:System.String?displayProperty=nameWithType> class remarks. For more information about culture, see the <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> class remarks. For guidelines on when to use ordinal or culture-sensitive comparison rules or the rules of the invariant culture, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md). For a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems, see [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921).
-  
-  
-   
+ For more information about comparisons, see the <xref:System.String?displayProperty=nameWithType> class remarks. For more information about culture, see the <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> class remarks. For guidelines on when to use ordinal or culture-sensitive comparison rules or the rules of the invariant culture, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md). For a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems, see [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921). For the sort weight table for Linux and macOS, see the [Default Unicode Collation Element Table](https://www.unicode.org/Public/UCA/latest/allkeys.txt).   
   
 ## Examples  
  The following example compares four sets of words by using each member of the <xref:System.StringComparison> enumeration.  The comparisons use the conventions of the English (United States) and Sami, Nothern (Sweden) cultures. Note that the strings "encyclopædia" and "encyclopedia" are considered equivalent in the en-US culture but not in the Sami, Northern (Sweden) culture.  

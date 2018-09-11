@@ -3,7 +3,7 @@ title: Getting started with .NET Core using the CLI
 description: A step-by-step tutorial showing how to get started with .NET Core on Windows, Linux, or macOS using the .NET Core command-line interface (CLI).
 author: cartermp
 ms.author: mairaw
-ms.date: 03/08/2017
+ms.date: 09/10/2018
 ms.technology: dotnet-cli
 ---
 # Getting started with .NET Core on Windows/Linux/macOS using the command line
@@ -14,7 +14,7 @@ If you're unfamiliar with the .NET Core CLI toolset, read the [.NET Core SDK ove
 
 ## Prerequisites
 
-- [.NET Core SDK 1.0](https://www.microsoft.com/net/download/core).
+- [.NET Core SDK 2.1](https://www.microsoft.com/net/download/core).
 - A text editor or code editor of your choice.
 
 ## Hello, Console App!
@@ -25,7 +25,6 @@ Open a command prompt and create a folder named *Hello*. Navigate to the folder 
 
 ```console
 $ dotnet new console
-$ dotnet restore
 $ dotnet run
 ```
 
@@ -54,13 +53,12 @@ Let's do a quick walkthrough:
 
    [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
-2. `$ dotnet restore`
+   `dotnet new` calls [`dotnet restore`](../tools/dotnet-restore.md) implicitly. `dotnet restore` calls into [NuGet](https://www.nuget.org/) (.NET package manager) to restore the tree of dependencies. NuGet analyzes the *Hello.csproj* file, downloads the dependencies defined in the file (or grabs them from a cache on your machine), and writes the *obj/project.assets.json* file, which is necessary to compile and run the sample. 
+   
+   > [!IMPORTANT]
+   > If you're using a .NET Core 1.x version of the SDK, you'll have to call `dotnet restore` yourself after calling `dotnet new`.
 
-   [`dotnet restore`](../tools/dotnet-restore.md) calls into [NuGet](https://www.nuget.org/) (.NET package manager) to restore the tree of dependencies. NuGet analyzes the *Hello.csproj* file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the *obj/project.assets.json* file.  The *project.assets.json* file is necessary to be able to compile and run.
-
-   The *project.assets.json* file is a persisted and complete set of the graph of NuGet dependencies and other information describing an app.  This file is read by other tools, such as [`dotnet build`](../tools/dotnet-build.md) and [`dotnet run`](../tools/dotnet-run.md), enabling them to process the source code with a correct set of NuGet dependencies and binding resolutions.
-
-3. `$ dotnet run`
+2. `$ dotnet run`
 
    [`dotnet run`](../tools/dotnet-run.md) calls [`dotnet build`](../tools/dotnet-build.md) to ensure that the build targets have been built, and then calls `dotnet <assembly.dll>` to run the target application.
 
@@ -69,10 +67,9 @@ Let's do a quick walkthrough:
     Hello World!
     ```
 
-    Alternatively, you can also execute [`dotnet build`](../tools/dotnet-build.md) to compile the code without running the build console applications. This results in a compiled application as a DLL file that can be run with `dotnet bin\Debug\netcoreapp1.0\Hello.dll` on Windows (use `/` for non-Windows systems). You may also specify arguments to the application as you'll see later on the topic.
-
+    Alternatively, you can also execute [`dotnet build`](../tools/dotnet-build.md) to compile the code without running the build console applications. This results in a compiled application as a DLL file that can be run with `dotnet bin\Debug\netcoreapp2.1\Hello.dll` on Windows (use `/` for non-Windows systems). You may also specify arguments to the application as you'll see later on the topic.
     ```console
-    $ dotnet bin\Debug\netcoreapp1.0\Hello.dll
+    $ dotnet bin\Debug\netcoreapp2.1\Hello.dll
     Hello World!
     ```
 

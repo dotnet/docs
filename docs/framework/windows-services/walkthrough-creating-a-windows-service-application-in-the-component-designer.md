@@ -1,5 +1,5 @@
 ---
-title: Create a Windows service application
+title: Create a Windows service application in Visual Studio
 ms.date: 09/10/2018
 dev_langs:
   - "csharp"
@@ -11,54 +11,40 @@ ms.assetid: e24d8a3d-edc6-485c-b6e0-5672d91fb607
 author: "ghogen"
 manager: "douge"
 ---
-# Walkthrough: Create a Windows service app in the Component Designer
+# Walkthrough: Create a Windows service app
 
-This article demonstrates how to create a simple Windows service app in Visual Studio that writes messages to an event log. Here are the basic steps that you perform to create and use your service:
-
-1. [Create a service](#create-a-service) by using the **Windows service** project template, and then configure it. This template creates a class for you that inherits from <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType> and writes much of the basic service code, such as the code to start the service.
-
-2. [Add features to the service](#add-features-to-the-service) for the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> and <xref:System.ServiceProcess.ServiceBase.OnStop%2A> procedures, and override any other methods that you want to redefine.
-
-3. [Set service status](#set-service-status). By default, services created with <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType> implement only a subset of the available status flags. If your service takes a long time to start up, pause, or stop, you can implement status values such as **Start Pending** or **Stop Pending** to indicate that it's working on an operation.
-
-4. [Add installers to the service](#add-installers-to-the-service) for your service application.
-
-5. (Optional) [Set startup parameters](#set-startup-parameters), specify default startup arguments, and enable users to override default settings when they start your service manually.
-
-6. [Build the service](#build-the-service).
-
-7. [Install the service](#install-the-service) on the local machine.
-
-8. Access the Windows Service Control Manager and [start and run the service](#start-and-run-the-service).
-
-9. [Uninstall a Windows service](#uninstall-a-windows-service).
+This article demonstrates how to create a simple Windows service app in Visual Studio that writes messages to an event log.
 
 ## Create a service
 
-To begin, you create the project and set values that are required for the service to function correctly.
+To begin, create the project and set values that are required for the service to function correctly.
 
 1. In Visual Studio, on the menu bar, choose **File** > **New** > **Project** (or press **Ctrl**+**Shift**+**N**) to open the **New Project** dialog.
 
-2. Navigate to the **Windows Service** project template. Expand **Installed** > [**Visual C#** or **Visual Basic**] > **Windows Desktop**, or enter **Windows Service** in the search box.
+2. Navigate to and select the **Windows Service** project template. Expand **Installed** > [**Visual C#** or **Visual Basic**] > **Windows Desktop**, or type **Windows Service** in the search box on the upper right.
 
    ![Windows Service template in New Project dialog in Visual Studio](media/new-project-dialog.png)
 
    > [!NOTE]
    > If you don't see the **Windows Service** template, you may need to install the **.NET desktop development** workload. In the **New Project** dialog, click the link that says **Open Visual Studio Installer** on the lower left. In **Visual Studio Installer**, select the **.NET desktop development** workload and then choose **Modify**.
 
-3. Select the **Windows Service (.NET Framework)** project template. Name the project **MyNewService**, and then choose **OK**.
+3. Name the project **MyNewService**, and then choose **OK**.
 
-     The project template includes a component class named `Service1` that inherits from <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType>.
+   The project template includes a component class named `Service1` that inherits from <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType>. It includes much of the basic service code, such as the code to start the service.
 
-3. Rename the service from **Service1** to **MyNewService**. In the **Design** view for Service1.cs (or Service1.vb), click the link to **switch to code view**. Right-click on **Service1** and select **Rename** from the context menu. Enter **MyNewService** and then press **Enter** or click **Apply**.
+## Rename the service
 
-4. In the **Properties** window for **Service1.cs [Design]** or **Service1.vb [Design]**, change the **ServiceName** value to **MyNewService**.
+Rename the service from **Service1** to **MyNewService**.
 
-5. In **Solution Explorer**, rename **Service1.cs** to **MyNewService.cs**, or rename **Service1.vb** to **MyNewService.vb**.
+1. In the **Design** view for Service1.cs (or Service1.vb), click the link to **switch to code view**. Right-click on **Service1** and select **Rename** from the context menu. Enter **MyNewService** and then press **Enter** or click **Apply**.
+
+2. In the **Properties** window for **Service1.cs [Design]** or **Service1.vb [Design]**, change the **ServiceName** value to **MyNewService**.
+
+3. In **Solution Explorer**, rename **Service1.cs** to **MyNewService.cs**, or rename **Service1.vb** to **MyNewService.vb**.
 
 ## Add features to the service
 
-In this section, you add a custom event log to the Windows service. Event logs are not associated in any way with Windows services. Here the <xref:System.Diagnostics.EventLog> component is used as an example of the type of component you could add to a Windows service.
+In this section, you add a custom event log to the Windows service. Event logs are not associated in any way with Windows services. The <xref:System.Diagnostics.EventLog> component is used here as an example of the type of component you can add to a Windows service.
 
 ### Add custom event log functionality
 
@@ -305,7 +291,7 @@ Before you can run a Windows service, you need to install it, which registers it
     > [!IMPORTANT]
     > The <xref:System.ServiceProcess.ServiceAccount.LocalSystem> account has broad permissions, including the ability to write to the event log. Use this account with caution, because it might increase your risk of attacks from malicious software. For other tasks, consider using the <xref:System.ServiceProcess.ServiceAccount.LocalService> account, which acts as a non-privileged user on the local computer and presents anonymous credentials to any remote server. This example fails if you try to use the <xref:System.ServiceProcess.ServiceAccount.LocalService> account, because it needs permission to write to the event log.
 
-     For more information about installers, see [How to: Add Installers to Your service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md).
+For more information about installers, see [How to: Add Installers to Your service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md).
 
 ## (Optional) Set startup parameters
 
@@ -420,15 +406,15 @@ To add startup parameters:
 
 2. On the **Application** tab, in the **Startup object** list, choose **MyNewService.Program**.
 
-3. In **Solution Explorer**, open the context menu for your project, and then choose **Build** to build the project (Keyboard: **Ctrl**+**Shift**+**B**).
+3. In **Solution Explorer**, open the context menu for your project, and then choose **Build** to build the project (or press **Ctrl**+**Shift**+**B**).
 
 ## Install the service
 
-Now that you've built the Windows service, you can install it. To install a Windows service, you must have administrative credentials on the computer on which you're installing it.
+Now that you've built the Windows service, you can install it. To install a Windows service, you must have administrator credentials on the computer on which you're installing it.
 
-1. Open **Developer Command Prompt for Visual Studio** with administrative credentials. (If you’re using a mouse, right-click on **Developer Command Prompt for VS 2017** in the Windows Start menu, and then choose **More** > **Run as Administrator**.)
+1. Open **Developer Command Prompt for Visual Studio** with administrative credentials. If you’re using a mouse, right-click on **Developer Command Prompt for VS 2017** in the Windows Start menu, and then choose **More** > **Run as Administrator**.
 
-2. In the command prompt window, navigate to the folder that contains your project's output.
+2. In the **Developer Command Prompt** window, navigate to the folder that contains your project's output (by default, it's the *\bin\Debug* subdirectory of your project).
 
 3. Enter the following command:
 
@@ -436,23 +422,23 @@ Now that you've built the Windows service, you can install it. To install a Wind
     installutil.exe MyNewService.exe
     ```
 
-    If the service installs successfully, **installutil.exe** reports success. If the system could not find **InstallUtil.exe**, make sure that it exists on your computer. This tool is installed with the .NET Framework to the folder `%WINDIR%\Microsoft.NET\Framework[64]\`*framework_version*. For example, the default path for the 32-bit version of the .NET Framework 4, 4.5, 4.5.1, and 4.5.2 is `C:\Windows\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe`.
+    If the service installs successfully, **installutil.exe** reports success. If the system could not find **InstallUtil.exe**, make sure that it exists on your computer. This tool is installed with the .NET Framework to the folder *%windir%\Microsoft.NET\Framework[64]\\[framework version]*. For example, the default path for the 32-bit version is *%windir%\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe*.
 
-    If the **installutil.exe** process reports failure, check the install log to find out why. By default the log is in the same folder as the service executable. The installation can fail if  the <xref:System.ComponentModel.RunInstallerAttribute> Class is not present on the `ProjectInstaller` class, if the attribute is not set to `true`, or if the `ProjectInstaller` class is not `public`.
+    If the **installutil.exe** process reports failure, check the install log to find out why. By default the log is in the same folder as the service executable. The installation can fail if  the <xref:System.ComponentModel.RunInstallerAttribute> Class is not present on the `ProjectInstaller` class, if the attribute is not set to **true**, or if the `ProjectInstaller` class is not marked **public**.
 
 For more information, see [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md).
 
 ## Start and run the service
 
-1. In Windows, open the **Services** app. Press **Windows**+**R** to open the **Run** box, and then enter **services.msc** and press **Enter** or click **OK**.
+1. In Windows, open the **Services** desktop app. Press **Windows**+**R** to open the **Run** box, and then enter **services.msc** and press **Enter** or click **OK**.
 
-     You should see your service listed in the **Services** window, displayed alphabetically by the display name that you set for it.
+     You should see your service listed in **Services**, displayed alphabetically by the display name that you set for it.
 
      ![MyNewService in the Services window.](../../../docs/framework/windows-services/media/windowsservices-serviceswindow.PNG)
 
-2. In the **Services** window, open the shortcut menu for your service, and then choose **Start**.
+2. In **Services**, open the shortcut menu for your service, and then choose **Start**.
 
-3. Open the shortcut menu for the service, and then choose **Stop**.
+3. To stop the service, open the shortcut menu for the service, and then choose **Stop**.
 
 4. (Optional) From the command line, you can use the commands `net start ServiceName` and `net stop ServiceName` to start and stop your service.
 
@@ -469,7 +455,7 @@ For more information, see [How to: Install and Uninstall Services](../../../docs
 
      ![Use the Event Viewer to see the event log entries](../../../docs/framework/windows-services/media/windows-service-event-viewer.png)
 
-## Uninstall a Windows service
+## Uninstall the service
 
 1. Open **Developer Command Prompt for Visual Studio** with administrative credentials.
 

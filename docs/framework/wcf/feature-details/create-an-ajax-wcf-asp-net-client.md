@@ -19,7 +19,7 @@ This topic shows how to use Visual Studio to create an AJAX-enabled Windows Comm
 
 1. In the **New ASP.NET Web Application** dialog, select **Empty** and then select **OK**.
 
-   ![ASP.NET web app type dialog in Visual Studio](../media/create-an-ajax-wcf-asp-net-client/new-asp-net-web-app-type.png)
+   ![ASP.NET web app type dialog in Visual Studio](media/create-an-ajax-wcf-asp-net-client/new-asp-net-web-app-type.png)
 
 ## Add a web form
 
@@ -45,7 +45,7 @@ This topic shows how to use Visual Studio to create an AJAX-enabled Windows Comm
 
 1. In the **Add New Item** dialog, expand the **Installed** > **Visual C#** > **Web** category, and then select the **WCF Service (AJAX-enabled)** template.
 
-   ![WCF Service (AJAX-enabled) item template in Visual Studio](../media/create-an-ajax-wcf-asp-net-client/add-wcf-service.png)
+   ![WCF Service (AJAX-enabled) item template in Visual Studio](media/create-an-ajax-wcf-asp-net-client/add-wcf-service.png)
 
 1. Name the service **CostService** and then select **Add**.
 

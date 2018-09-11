@@ -1,5 +1,5 @@
 ---
-title: Write a simple parallel program
+title: Write a simple parallel program using ForEach
 ms.date: 09/12/2018
 ms.technology: dotnet-standard
 dev_langs:

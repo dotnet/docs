@@ -57,7 +57,7 @@ The .NET Framework 4.7.2 includes new features in the following areas:
 - [Networking](#net472)
 - [SQL](#sql472)
 - [WPF](#wpf472)
-- [ClickOnce](#ClickOnce472)
+- [ClickOnce](#clickonce)
 
 A continuing focus in the .NET Framework 4.7.2 is improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology. For information on accessibility improvement in the .NET Framework 4.7.2, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md).
 
@@ -403,7 +403,6 @@ public class StaticResourceResolvedEventArgs : EventArgs
 
 The event is not raised (and its `add` accessor is ignored) unless <xref:System.Windows.Diagnostics.VisualDiagnostics> is enabled and the [`ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO`](xref:System.Windows.Diagnostics.VisualDiagnostics.GetXamlSourceInfo%2A) environment variable is set.
 
-<a name="clickonce472" />
 #### ClickOnce
 
 HDPI-aware applications for Windows Forms, Windows Presentation Foundation (WPF), and Visual Studio Tools for Office (VSTO) can all be deployed by using ClickOnce. If the following entry is found in the application manifest, deployment will succeed under .NET Framework 4.7.2:
@@ -629,7 +628,7 @@ The [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] includes new features
 
 - [Windows Workflow Foundation (WF)](#WF462)
 
-- [ClickOnce](#ClickOnce)
+- [ClickOnce](#clickonce-1)
 
 - [Converting Windows Forms and WPF apps to UWP apps](#UWPConvert)
 
@@ -1043,10 +1042,10 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
 
 - Flowchart Activity Designer or other Workflow Activity Designers may display all objects in their default locations as opposed to attached property values.
 
-<a name="ClickOnce" />
 
 ### ClickOnce
- ClickOnce has been updated to support TLS 1.1 and TLS 1.2 in addition to the 1.0 protocol, which it already supports. ClickOnce automatically detects which protocol is required; no extra steps within the ClickOnce application are required to enable TLS 1.1 and 1.2 support.
+
+ClickOnce has been updated to support TLS 1.1 and TLS 1.2 in addition to the 1.0 protocol, which it already supports. ClickOnce automatically detects which protocol is required; no extra steps within the ClickOnce application are required to enable TLS 1.1 and 1.2 support.
 
 <a name="UWPConvert" />
 

@@ -7,13 +7,13 @@ ms.date: 09/12/2018
 ---
 # Using Visual Studio Tools for Docker (Visual Studio on Windows)
 
-The developer workflow when using Visual Studio Tools for Docker is similar to the workflow when using Visual Studio Code and Docker CLI (in fact, it is based on the same Docker CLI), but it is easier to get started, simplifies the process, and provides greater productivity for the build, run, and compose tasks. It's also able to execute and debug your containers via simple actions like F5 and Ctrl+F5 from Visual Studio. With the optional Container Orchestration support, in addition to being able to run and debug a single container, you also can run and debug a group of containers (a whole solution) at the same time if they are defined in the same docker-compose.yml file at the solution level.
+The developer workflow when using Visual Studio Tools for Docker is similar to the workflow when using Visual Studio Code and Docker CLI (in fact, it is based on the same Docker CLI), but it is easier to get started, simplifies the process, and provides greater productivity for the build, run, and compose tasks. It's also able to execute and debug your containers via simple actions like F5 and Ctrl+F5 from Visual Studio. With the optional Container Orchestration support, in addition to being able to run and debug a single container, you also can run and debug a group of containers (a whole solution) at the same time if they are defined in the same *docker-compose.yml* file at the solution level.
 
 ## Configuring your local environment
 
 With the latest versions of Docker for Windows, it is easier than ever to develop Docker applications because the setup is straightforward, as explained in the following references.
 
-**More info:** To learn more about installing Docker for Windows, go to https://docs.docker.com/docker-for-windows/>.
+**More info:** To learn more about installing Docker for Windows, go to <https://docs.docker.com/docker-for-windows/>.
 
 **More info:** For instructions on installing Visual Studio, go to [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/).
 

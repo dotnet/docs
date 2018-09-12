@@ -30,18 +30,18 @@ This topic describes how to retrieve metadata from a WCF service and use it to c
 
 3.  Add a reference to System.ServiceModel to the GettingStartedClient project by right-clicking the **Reference** folder under the GettingStartedClient project in Solution Explorer and select **Add** Reference. In the **Add Reference** dialog select **Framework** on the left-hand side of the dialog. In the Search Assemblies textbox, type in `System.ServiceModel`. In the center section of the dialog select **System.ServiceModel**, click the **Add** button, and click the **Close** button. Save the solution by clicking the **Save All** button below the main menu.
 
-4.  Next you add a service reference to the Calculator Service. Before you can do that, you must start up the GettingStartedHost console application. Once the host is running, right-click the **References** folder under the GettingStartedClient project in **Solution Explorer** and select **Add** > **Service Reference**. Type in the following URL in the address box of the **Add Service Reference** dialog:  [http://localhost:8000/ServiceModelSamples/Service](http://localhost:8000/ServiceModelSamples/Service) and click the **Go** button. The CalculatorService should then be displayed in the Services list box. Double-click CalculatorService and it will expand and show the service contracts implemented by the service. Leave the default namespace as is and click the **OK** button.
+4.  Next you add a service reference to the Calculator Service. Before you can do that, you must start up the GettingStartedHost console application. Once the host is running, right-click the **References** folder under the GettingStartedClient project in **Solution Explorer** and select **Add** > **Service Reference**. Type in the following URL in the address box of the **Add Service Reference** dialog:  [http://localhost:8000/GettingStartedClient/Service](http://localhost:8000/GettingStartedClient/Service) and click the **Go** button. The CalculatorService should then be displayed in the Services list box. Double-click CalculatorService and it will expand and show the service contracts implemented by the service. Leave the default namespace as is and click the **OK** button.
 
      When you add a reference to a service using Visual Studio a new item will appear in the Solution Explorer under the Service References folder under the GettingStartedClient project.  If you use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool a source code file and app.config file will be generated.
 
      You can also use the command-line tool [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) with the appropriate switches to create the client code. The following example generates a code file and a configuration file for the service. The first example shows how to generate the proxy in VB and the second shows how to generated the proxy in C#:
 
     ```
-    svcutil.exe /language:vb /out:generatedProxy.vb /config:app.config http://localhost:8000/ServiceModelSamples/service
+    svcutil.exe /language:vb /out:generatedProxy.vb /config:app.config http://localhost:8000/GettingStartedClient/service
     ```
 
     ```csharp
-    svcutil.exe /language:cs /out:generatedProxy.cs /config:app.config http://localhost:8000/ServiceModelSamples/service
+    svcutil.exe /language:cs /out:generatedProxy.cs /config:app.config http://localhost:8000/GettingStartedClient/service
     ```
 
  You have now created the proxy that the client application will use to call the calculator service. Proceed to the next topic in the series: [How to: Configure a Client](../../../docs/framework/wcf/how-to-configure-a-basic-wcf-client.md)

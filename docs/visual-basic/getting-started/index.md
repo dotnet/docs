@@ -1,6 +1,6 @@
 ---
 title: "Get started with Visual Basic"
-ms.date: 08/10/2017
+ms.date: 09/10/2018
 helpviewer_keywords: 
   - "get started, Visual Basic"
   - "Visual Basic, get started"
@@ -25,12 +25,6 @@ Lists changes in this release that might prevent an application from compiling o
   
 [Additional Resources for Visual Basic Programmers](additional-resources.md)  
 Provides a list of Web sites and newsgroups that can help you find answers to common problems.  
-
-## Develop .NET Core applications with Visual Basic
-
-[Build a Visual Basic Hello World app with .NET Core in Visual Studio 2017](../../core/tutorials/vb-with-visual-studio.md) 
-
-[Build a class library with Visual Basic and .NET Core in Visual Studio 2017](../../core/tutorials/vb-library-with-visual-studio.md) 
 
 ## See also
  [Get Visual Basic](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)  

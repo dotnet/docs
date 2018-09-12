@@ -61,7 +61,7 @@ The template creates an analyzer that reports a warning on each type declaration
 
 The template also provides a code fix that changes any type name containing lower case characters to all upper case. You can click on the light bulb displayed with the warning to see the suggested changes. Accepting the suggested changes updates the type name and all references to that type in the solution. Now that you've seen the initial analyzer in action, close the second Visual Studio instance and return to your analyzer project.
 
-You don't have to start a second copy of Visual Studio and create new code to test every change in your analyzer. The template also creates a unit test project for you. That project contains two tests. `Test1` shows the typical format of a test that analyzes code without triggering a diagnostic. `Test2` shows the format of a test that triggers a diagnostic, and then applies a suggested code fix. As you build your analyzer and code fix, you'll write tests for different code structures to verify your work. Unit tests for analyzers are much quicker than testing them interactively with Visual Studio.
+You don't have to start a second copy of Visual Studio and create new code to test every change in your analyzer. The template also creates a unit test project for you. That project contains two tests. `TestMethod1` shows the typical format of a test that analyzes code without triggering a diagnostic. `TestMethod2` shows the format of a test that triggers a diagnostic, and then applies a suggested code fix. As you build your analyzer and code fix, you'll write tests for different code structures to verify your work. Unit tests for analyzers are much quicker than testing them interactively with Visual Studio.
 
 > [!TIP]
 > Analyzer unit tests are a great tool when you know what code constructs should and shouldn't trigger your analyzer. Loading your analyzer in another copy of Visual Studio is a great tool to explore and find constructs you may not have thought about yet.
@@ -123,7 +123,7 @@ int x = 0;
 Console.WriteLine(x);
 ```
 
-The first step is to find local declarations. Change the parameter name from `obj` to `context`. Add the following code to `AnalyzeNode` in **MakeConstAnalyzer.cs**:
+The first step is to find local declarations. Add the following code to `AnalyzeNode` in **MakeConstAnalyzer.cs**:
 
 ```csharp
 var localDeclaration = (LocalDeclarationStatementSyntax)context.Node;
@@ -183,7 +183,7 @@ Console.WriteLine(x);
 
 The user chooses it from the light bulb UI in the editor and Visual Studio changes the code.
 
-Open the **CodeFixProvider.cs** file added by the template.  This code fix is already wired up to the Diagnostic ID produced by your diagnostic analyzer, but it doesn't yet implement the right code transform. First you should remove some of the template code. Change the title string to "Make constant":
+Open the **MakeConstCodeFixProvider.cs** file added by the template.  This code fix is already wired up to the Diagnostic ID produced by your diagnostic analyzer, but it doesn't yet implement the right code transform. First you should remove some of the template code. Change the title string to "Make constant":
 
 [!code-csharp[Update the CodeFix title](~/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst/MakeConstCodeFixProvider.cs#CodeFixTitle "Update the CodeFix title")]
 
@@ -248,17 +248,17 @@ Your code fix is ready to try.  Press F5 to run the analyzer project in a second
 
 ![Can make const warnings](media/how-to-write-csharp-analyzer-code-fix/make-const-warning.png)
 
-Notice that if you type const before each variable, the warnings are automatically removed. Additionally, changing a variable to const can affect the reporting of other variables. Add the `const` modifier to both `i` and `j`, and you get a new warning on `k` because it can now be `const`.
+You've made a lot of progress. There are squiggles under the declarations that can be made `const`. But there is still work to do. This works fine if you add `const` to the declarations starting with `i`, then `j` and finally `k`. But, if you add the `const` modifier i a different order, starting with `k`, your analyzer creates errors: `k` can't be declared `const`, unless `i` and `j` are both already `const`. You've got to do more analysis to ensure you handle the different ways variables can be declared and initialized.
 
 ## Build data driven tests
 
 Your analyzer and code fix work on a simple case of a single declaration that can be made const. There are numerous possible declaration statements where this implementation makes mistakes. You'll address these cases by working with the unit test library written by the template. It's much faster than repeatedly opening a second copy of Visual Studio.
 
-Open the **MakeConstUnitTests.cs** file in the unit test project. The template created two tests that follow the two common patterns for an analyzer and code fix unit test. `Test1` shows the pattern for a test that ensures the analyzer doesn't report a diagnostic when it shouldn't. `Test2` shows the pattern for reporting a diagnostic and running the code fix.
+Open the **MakeConstUnitTests.cs** file in the unit test project. The template created two tests that follow the two common patterns for an analyzer and code fix unit test. `TestMethod1` shows the pattern for a test that ensures the analyzer doesn't report a diagnostic when it shouldn't. `TestMethod2` shows the pattern for reporting a diagnostic and running the code fix.
 
 The code for almost every test for your analyzer follows one of these two patterns. For the first step, you can rework these tests as data driven tests. Then, it will be easy to create new tests by adding new string constants to represent different test inputs.
 
-For efficiency, the first step is to refactor the two tests into data driven tests. Then, you only need to define a couple string constants for each new test. While your refactoring, rename both methods to better names. Replace `Test1` with this test that ensures no diagnostic is raised:
+For efficiency, the first step is to refactor the two tests into data driven tests. Then, you only need to define a couple string constants for each new test. While your refactoring, rename both methods to better names. Replace `TestMethod1` with this test that ensures no diagnostic is raised:
 
 ```csharp
 [DataTestMethod]
@@ -271,7 +271,7 @@ public void WhenTestCodeIsValidNoDiagnosticIsTriggered(string testCode)
 
 You can create a new data row for this test by defining any code fragment that should not cause your diagnostic to trigger a warning. This overload of `VerifyCSharpDiagnostic` passes when there are no diagnostics triggered for the source code fragment.  
 
-Next, replace `Test2` with this test that ensures a diagnostic is raised and a code fix applied for the source code fragment:
+Next, replace `TestMethod2` with this test that ensures a diagnostic is raised and a code fix applied for the source code fragment:
 
 ```csharp
 [DataTestMethod]
@@ -299,7 +299,7 @@ public void WhenDiagosticIsRaisedFixUpdatesCode(
 }
 ```
 
-The preceding code also made a couple changes to the code that builds the expected diagnostic result. It uses the public constants registered in the `MakeConst` analyzer. In addition, it uses two string constants for the input and fixed source:
+The preceding code also made a couple changes to the code that builds the expected diagnostic result. It uses the public constants registered in the `MakeConst` analyzer. In addition, it uses two string constants for the input and fixed source. Add the following string constants to the `UnitTest` class:
 
 [!code-csharp[string constants for fix test](~/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#FirstFixTest "string constants for fix test")]
 
@@ -307,7 +307,7 @@ Run these two tests to make sure they pass. In Visual Studio, open the **Test Ex
 
 ## Create tests for valid declarations
 
-As a general rule, analyzers should exist as quickly as possible, doing minimal work. Visual Studio calls registered analyzers as the user edits code. Responsiveness is a key requirement.  There are a number of tests to add for declarations that should not raise your diagnostic. There are several test cases for code that should not raise your diagnostic. Your analyzer already handles one of those tests, the case where a variable is assigned after being initialized. Add the following string constant to your tests to represent that case:
+As a general rule, analyzers should exit as quickly as possible, doing minimal work. Visual Studio calls registered analyzers as the user edits code. Responsiveness is a key requirement. There are several test cases for code that should not raise your diagnostic. Your analyzer already handles one of those tests, the case where a variable is assigned after being initialized. Add the following string constant to your tests to represent that case:
 
 [!code-csharp[variable assigned](~/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#VariableAssigned "a variable that is assigned after being initialized won't raise the diagnostic")]
 
@@ -334,7 +334,7 @@ This test passes as well. Next, add constants for conditions you haven't handled
 
    [!code-csharp[declarations where the initializer isn't const](~/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#InitializerNotConstant "a declaration where the initializer is not a compile-time constant should not raise the diagnostic")]
 
-All of the preceding conditions are complicated a C# rule that allows multiple declarations as part of one statement. Consider the following test case string constant:
+It can be even more complicated because C# allows multiple declarations as one statement. Consider the following test case string constant:
 
 [!code-csharp[multiple initializers](~/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#MultipleInitializers "A declaration can be made constant only if all variables in that statement can be made constant")]
 
@@ -486,9 +486,15 @@ You must write a bit more code in your code fix provider to replace the var' key
 * Make sure that `var` isn't a type name in this program. (If so, `const var` is legal).
 * Simplify the full type name
 
-That sounds like a lot of code. It's not. Add the following code immediately after the initialization of `newModifiers`:
+That sounds like a lot of code. It's not. Replace the line that declares and initializes `newLocal` with the following code. It goes immediately after the initialization of `newModifiers`:
 
 [!code-csharp[Replace Var designations](~/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst/MakeConstCodeFixProvider.cs#ReplaceVar "Replace a var designation with the explicit type")]
+
+You'll need to add one `using` statement to use the <xref:Microsoft.CodeAnalysis.Simplification.Simplifier> type:
+
+```csharp
+using Microsoft.CodeAnalysis.Simplification;
+```
 
 Run your tests, and they should all pass. Congratulate yourself by running your finished analyzer. Press Ctrl+F5 to run the analyzer project in a second instance of Visual Studio with the Roslyn Preview extension loaded.
 
@@ -496,6 +502,16 @@ Run your tests, and they should all pass. Congratulate yourself by running your 
 * Next, add `object s = "abc";` to the Main method. Because of the second bug fix, no warning should be reported.
 * Finally, add another local variable that uses the `var` keyword. You'll see that a warning is reported and a suggestion appears beneath to the left.
 * Move the editor caret over the squiggly underline and press Ctrl+. to display the suggested code fix. Upon selecting your code fix, note that the var' keyword is now handled correctly.
+
+Finally, add the following code:
+
+```csharp
+int i = 2;
+int j = 32;
+int k = i + j;
+```
+
+After these changes, you get red squiggles only on the first two variables. Add `const` to both `i` and `j`, and you get a new warning on `k` because it can now be `const`.
 
 Congratulations! You've created your first .NET Compiler Platform extension that performs on-the-fly code analysis to detect an issue and provides a quick fix to correct it. Along the way, you've learned many of the code APIs that are part of the .NET Compiler Platform SDK (Roslyn APIs). You can check your work against the [completed sample](https://github.com/dotnet/samples/tree/master/csharp/roslyn-sdk/Tutorials/MakeConst) in our samples GitHub repository. Or you can download [zip file of the completed project](https://github.com/dotnet/samples/blob/master/csharp/roslyn-sdk/Tutorials/MakeConst.zip)
 

@@ -33,7 +33,7 @@ With Visual Studio version 15.8 and later, if you have multiple projects in a so
 
 When you choose this option, Visual Studio adds a service section in your solution's *docker-compose.yml* files (or creates the files if they didn't exist). It's an easy way to begin composing your multi-container solution; you then can open the *docker-compose.yml* files and update them with additional features.
 
-This action not only adds the *DockerFile* to your project, it also adds the required configuration lines of code to a global docker-compose.yml set at the solution level.
+This action adds the required configuration lines of code to a global *docker-compose.yml* set at the solution level.
 
 You also can turn on Docker support when creating an ASP.NET Core project in Visual Studio 2017, as shown in Figure 4-27.
 

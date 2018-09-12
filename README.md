@@ -6,7 +6,7 @@ This repository contains the conceptual documentation for .NET. The [.NET docume
 - [API reference](https://github.com/dotnet/dotnet-api-docs)
 - [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)
 
-Issues and tasks for all three of those repositories are tracked here.
+Issues and tasks for all three of those repositories are tracked here. We have a large community using these resources. We make our best effort to respond to issues in a timely fashion. You can read more about our procedures for classifying and resolving issues in our [Issues policy](issues-policy.md) topic.
 
 We welcome contributions to help us improve and complete the .NET docs. To contribute, see the [Contributing Guide](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md) and the [issues list](https://github.com/dotnet/docs/issues).
 

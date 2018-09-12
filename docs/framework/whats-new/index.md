@@ -403,7 +403,8 @@ public class StaticResourceResolvedEventArgs : EventArgs
 
 The event is not raised (and its `add` accessor is ignored) unless <xref:System.Windows.Diagnostics.VisualDiagnostics> is enabled and the [`ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO`](xref:System.Windows.Diagnostics.VisualDiagnostics.GetXamlSourceInfo%2A) environment variable is set.
 
-#### <a name="clickonce472" /> ClickOnce
+<a name="clickonce472" />
+#### ClickOnce
 
 HDPI-aware applications for Windows Forms, Windows Presentation Foundation (WPF), and Visual Studio Tools for Office (VSTO) can all be deployed by using ClickOnce. If the following entry is found in the application manifest, deployment will succeed under .NET Framework 4.7.2:
 
@@ -1226,7 +1227,7 @@ The unmanaged profiling API has been enhanced as follows:
 
          ASP.NET now provides a simple task-based API for asynchronous response flushing, <xref:System.Web.HttpResponse.FlushAsync%2A?displayProperty=nameWithType>, that allows responses to be flushed asynchronously by using your language's `async/await` support.
 
-    - **`**Model binding supports task-returning methods**
+    - **Model binding supports task-returning methods**
 
          In the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], ASP.NET added the Model Binding feature that enabled an extensible, code-focused approach to CRUD-based data operations in Web Forms pages and user controls. The Model Binding system now supports <xref:System.Threading.Tasks.Task>-returning model binding methods. This feature allows Web Forms developers to get the scalability benefits of async with the ease of the data-binding system when using newer versions of ORMs, including the Entity Framework.
 

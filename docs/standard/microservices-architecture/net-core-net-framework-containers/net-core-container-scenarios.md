@@ -19,7 +19,7 @@ Clearly, if your goal is to have an application (web app or service) that can ru
 
 .NET Core also supports macOS as a development platform. However, when you deploy containers to a Docker host, that host must (currently) be based on Linux or Windows. For example, in a development environment, you could use a Linux VM running on a Mac.
 
-[Visual Studio](https://www.visualstudio.com/) provides an integrated development environment (IDE) for Windows and supports Docker development.
+[Visual Studio](https://www.visualstudio.com/vs/) provides an integrated development environment (IDE) for Windows and supports Docker development.
 
 [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/) is an IDE, evolution of Xamarin Studio, that runs on macOS and supports Docker-based application development. This should be the preferred choice for developers working in Mac machines who also want to use a powerful IDE.
 

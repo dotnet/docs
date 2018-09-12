@@ -42,8 +42,8 @@ To call functions exported from an unmanaged library, a .NET Framework applicati
 |**WCHAR**|**wchar_t**|<xref:System.Char?displayProperty=nameWithType>|Decorate with Unicode.|  
 |**LPSTR**|**char &ast;**|<xref:System.String?displayProperty=nameWithType> or <xref:System.Text.StringBuilder?displayProperty=nameWithType>|Decorate with ANSI.|  
 |**LPCSTR**|**Const char  &ast;|<xref:System.String?displayProperty=nameWithType> or <xref:System.Text.StringBuilder?displayProperty=nameWithType>|Decorate with ANSI.|  
-|**LPWSTR**|**wchar_t  &ast;**|<xref:System.String?displayProperty=nameWithType> or <xref:System.Text.StringBuilder?displayProperty=nameWithType>|Decorate with Unicode.|  
-|**LPCWSTR**|**Const wchar_t  &ast;**|<xref:System.String?displayProperty=nameWithType> or <xref:System.Text.StringBuilder?displayProperty=nameWithType>|Decorate with Unicode.|  
+|**LPWSTR**|**wchar_t &ast;**|<xref:System.String?displayProperty=nameWithType> or <xref:System.Text.StringBuilder?displayProperty=nameWithType>|Decorate with Unicode.|  
+|**LPCWSTR**|**Const wchar_t &ast;**|<xref:System.String?displayProperty=nameWithType> or <xref:System.Text.StringBuilder?displayProperty=nameWithType>|Decorate with Unicode.|  
 |**FLOAT**|**Float**|<xref:System.Single?displayProperty=nameWithType>|32 bits|  
 |**DOUBLE**|**Double**|<xref:System.Double?displayProperty=nameWithType>|64 bits|  
   

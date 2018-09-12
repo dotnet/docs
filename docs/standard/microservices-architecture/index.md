@@ -3,40 +3,82 @@ title: .NET Microservices. Architecture for Containerized .NET Applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Microservices are modular and independently deployable services. Docker containers (for Linux and Windows) simplify deployment and testing by bundling a service and its dependencies into a single unit, which is then run in an isolated environment.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 06/06/2018
+ms.date: 08/31/2018
 ---
 
-![](./media/cover.png)
+# .NET Microservices: Architecture for Containerized .NET Applications
+![Book cover](./media/cover-small.png)
 
-# .NET Microservices. Architecture for Containerized .NET Applications
+**EDITION v2.1.02** - Updated to ASP.NET Core 2.1
 
-DOWNLOAD available at: <https://aka.ms/microservicesebook>
+This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers. 
 
-PUBLISHED BY
+To make it easier to get started, the guide focuses on a reference containerized and microservice-based application that you can explore. The reference application is available at the [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) GitHub repo.
 
-Microsoft Developer Division, .NET and Visual Studio product teams
+## Action links
 
-A division of Microsoft Corporation
+* Download this eBook in your format of choice: | [PDF](https://aka.ms/microservicesebook) | [MOBI](https://www.microsoft.com/net/download/thank-you/microservices-architecture-ebook-mobi) | [EPUB](https://www.microsoft.com/net/download/thank-you/microservices-architecture-ebook-epub) |
 
-One Microsoft Way
+* Clone/Fork the reference application [eShopOnContainers on GitHub](https://github.com/dotnet-architecture/eShopOnContainers)
+ 
+* Watch the [introductory video on Channel 9](http://aka.ms/microservices-video)
 
-Redmond, Washington 98052-6399
+* Get to know the [Microservices Architecture](http://aka.ms/MicroservicesArchitecture) right away
 
-Copyright © 2018 by Microsoft Corporation
+## Introduction
 
-All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
+Enterprises are increasingly realizing cost savings, solving deployment problems, and improving DevOps and production operations by using containers. Microsoft has been releasing container innovations for Windows and Linux by creating products like Azure Container Service and Azure Service Fabric, and by partnering with industry leaders like Docker, Mesosphere, and Kubernetes. These products deliver container solutions that help companies build and deploy applications at cloud speed and scale, whatever their choice of platform or tools.
 
-This book is provided “as-is” and expresses the author’s views and opinions. The views, opinions and information expressed in this book, including URL and other Internet website references, may change without notice.
+Docker is becoming the de facto standard in the container industry, supported by the most significant vendors in the Windows and Linux ecosystems. (Microsoft is one of the main cloud vendors supporting Docker.) In the future, Docker will probably be ubiquitous in any datacenter in the cloud or on-premises.
 
-Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.
+In addition, the [microservices](https://martinfowler.com/articles/microservices.html) architecture is emerging as an important approach for distributed mission-critical applications. In a microservice-based architecture, the application is built on a collection of services that can be developed, tested, deployed, and versioned independently.
 
-Microsoft and the trademarks listed at http://www.microsoft.com on the “Trademarks” webpage are trademarks of the Microsoft group of companies.
+## About this guide
 
-Mac and macOS are trademarks of Apple Inc.
+This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers. To make it easier to get started with containers and microservices, the guide focuses on a reference containerized and microservice-based application that you can explore. The sample application is available at the [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) GitHub repo.
 
-The Docker whale logo is a registered trademark of Docker, Inc. Used by permission.
+This guide provides foundational development and architectural guidance primarily at a development environment level with a focus on two technologies: Docker and .NET Core. Our intention is that you read this guide when thinking about your application design without focusing on the infrastructure (cloud or on-premises) of your production environment. You will make decisions about your infrastructure later, when you create your production-ready applications. Therefore, this guide is intended to be infrastructure agnostic and more development-environment-centric.
 
-All other marks and logos are property of their respective owners.
+After you have studied this guide, your next step would be to learn about production-ready microservices on Microsoft Azure.
+
+## Version
+
+This guide has been revised to cover **.NET Core 2.1** version plus many additional updates related to the same “wave” of technologies (that is. Azure and additional 3rd party technologies) coinciding in time with .NET Core 2.1. That’s why the book version has also been updated to version **2.1**. 
+
+## What this guide does not cover
+
+This guide does not focus on the application lifecycle, DevOps, CI/CD pipelines, or team work. The complementary guide [Containerized Docker Application Lifecycle with Microsoft Platform and Tools](https://aka.ms/dockerlifecycleebook) focuses on that subject. The current guide also does not provide implementation details on Azure infrastructure, such as information on specific orchestrators.
+
+### Additional resources
+
+-   **Containerized Docker Application Lifecycle with Microsoft Platform and Tools** (downloadable e-book)  
+    [*https://aka.ms/dockerlifecycleebook*](https://aka.ms/dockerlifecycleebook)
+
+## Who should use this guide
+
+We wrote this guide for developers and solution architects who are new to Docker-based application development and to microservices-based architecture. This guide is for you if you want to learn how to architect, design, and implement proof-of-concept applications with Microsoft development technologies (with special focus on .NET Core) and with Docker containers.
+
+You will also find this guide useful if you are a technical decision maker, such as an enterprise architect, who wants an architecture and technology overview before you decide on what approach to select for new and modern distributed applications.
+
+### How to use this guide
+
+The first part of this guide introduces Docker containers, discusses how to choose between .NET Core and the .NET Framework as a development framework, and provides an overview of microservices. This content is for architects and technical decision makers who want an overview but don't need to focus on code implementation details.
+
+The second part of the guide starts with the [Development process for Docker based applications](#ch_dev_process_for_docker_based_apps) section. It focuses on development and microservice patterns for implementing applications using .NET Core and Docker. This section will be of most interest to developers and architects who want to focus on code and on patterns and implementation details.
+
+## Related microservice and container-based reference application: eShopOnContainers
+
+The eShopOnContainers application is an open-source reference app for .NET Core and microservices that is designed to be deployed using Docker containers. The application consists of multiple subsystems, including several e-store UI front ends (a Web MVC app, a Web SPA, and a native mobile app). It also includes the back-end microservices and containers for all required server-side operations. 
+
+The purpose of the application is to showcase architectural patterns. **IT IS NOT A PRODUCTION-READY TEMPLATE** to start real-world applications. In fact, the application is in a permanent beta state, as it’s also used to test new potentially interesting technologies as they show up.
+
+## Send us your feedback!
+
+We wrote this guide to help you understand the architecture of containerized applications and microservices in .NET. The guide and related reference application will be evolving, so we welcome your feedback! If you have comments about how this guide can be improved, please send them to:
+
+[dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com)
+
+## Credits
 
 Co-Authors:
 
@@ -97,55 +139,40 @@ Participants and reviewers:
 > **Michael Friis**, Product Manager, Docker Inc
 >
 > **Charles Lowell**, Software Engineer, VS CAT team, Microsoft
+>
+> **Miguel Veloso**, Sr. Consultant at Turing Challenge
 
-## Introduction
 
-Enterprises are increasingly realizing cost savings, solving deployment problems, and improving DevOps and production operations by using containers. Microsoft has been releasing container innovations for Windows and Linux by creating products like Azure Container Service and Azure Service Fabric, and by partnering with industry leaders like Docker, Mesosphere, and Kubernetes. These products deliver container solutions that help companies build and deploy applications at cloud speed and scale, whatever their choice of platform or tools.
+## Copyright
 
-Docker is becoming the de facto standard in the container industry, supported by the most significant vendors in the Windows and Linux ecosystems. (Microsoft is one of the main cloud vendors supporting Docker.) In the future, Docker will probably be ubiquitous in any datacenter in the cloud or on-premises.
+DOWNLOAD available at: <https://aka.ms/microservicesebook>
 
-In addition, the [microservices](https://martinfowler.com/articles/microservices.html) architecture is emerging as an important approach for distributed mission-critical applications. In a microservice-based architecture, the application is built on a collection of services that can be developed, tested, deployed, and versioned independently.
+PUBLISHED BY
 
-## About this guide
+Microsoft Developer Division, .NET and Visual Studio product teams
 
-This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers. To make it easier to get started with containers and microservices, the guide focuses on a reference containerized and microservice-based application that you can explore. The sample application is available at the [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) GitHub repo.
+A division of Microsoft Corporation
 
-This guide provides foundational development and architectural guidance primarily at a development environment level with a focus on two technologies: Docker and .NET Core. Our intention is that you read this guide when thinking about your application design without focusing on the infrastructure (cloud or on-premises) of your production environment. You will make decisions about your infrastructure later, when you create your production-ready applications. Therefore, this guide is intended to be infrastructure agnostic and more development-environment-centric.
+One Microsoft Way
 
-After you have studied this guide, your next step would be to learn about production-ready microservices on Microsoft Azure.
+Redmond, Washington 98052-6399
 
-## What this guide does not cover
+Copyright © 2018 by Microsoft Corporation
 
-This guide does not focus on the application lifecycle, DevOps, CI/CD pipelines, or team work. The complementary guide [Containerized Docker Application Lifecycle with Microsoft Platform and Tools](https://aka.ms/dockerlifecycleebook) focuses on that subject. The current guide also does not provide implementation details on Azure infrastructure, such as information on specific orchestrators.
+All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
-### Additional resources
+This book is provided “as-is” and expresses the author’s views and opinions. The views, opinions and information expressed in this book, including URL and other Internet website references, may change without notice.
 
--   **Containerized Docker Application Lifecycle with Microsoft Platform and Tools** (downloadable e-book)
-    [*https://aka.ms/dockerlifecycleebook*](https://aka.ms/dockerlifecycleebook)
+Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.
 
-## Who should use this guide
+Microsoft and the trademarks listed at http://www.microsoft.com on the “Trademarks” webpage are trademarks of the Microsoft group of companies.
 
-We wrote this guide for developers and solution architects who are new to Docker-based application development and to microservices-based architecture. This guide is for you if you want to learn how to architect, design, and implement proof-of-concept applications with Microsoft development technologies (with special focus on .NET Core) and with Docker containers.
+Mac and macOS are trademarks of Apple Inc.
 
-You will also find this guide useful if you are a technical decision maker, such as an enterprise architect, who wants an architecture and technology overview before you decide on what approach to select for new and modern distributed applications.
+The Docker whale logo is a registered trademark of Docker, Inc. Used by permission.
 
-### How to use this guide
+All other marks and logos are property of their respective owners.
 
-The first part of this guide introduces Docker containers, discusses how to choose between .NET Core and the .NET Framework as a development framework, and provides an overview of microservices. This content is for architects and technical decision makers who want an overview but who do not need to focus on code implementation details.
-
-The second part of the guide starts with the [Development process for Docker based applications](#ch_dev_process_for_docker_based_apps) section. It focuses on development and microservice patterns for implementing applications using .NET Core and Docker. This section will be of most interest to developers and architects who want to focus on code and on patterns and implementation details.
-
-## Related microservice and container-based reference application: eShopOnContainers
-
-The eShopOnContainers application is a reference app for .NET Core and microservices that is designed to be deployed using Docker containers. The application consists of multiple subsystems, including several e-store UI front ends (a Web app and a native mobile app). It also includes the back-end microservices and containers for all required server-side operations.
-
-This microservice and container-based application source code is open source and available at the [eShopOnContainers](https://aka.ms/MicroservicesArchitecture) GitHub repo.
-
-## Send us your feedback!
-
-We wrote this guide to help you understand the architecture of containerized applications and microservices in .NET. The guide and related reference application will be evolving, so we welcome your feedback! If you have comments about how this guide can be improved, please send them to:
-
-[dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com)
 
 >[!div class="step-by-step"]
 [Next](container-docker-introduction/index.md)

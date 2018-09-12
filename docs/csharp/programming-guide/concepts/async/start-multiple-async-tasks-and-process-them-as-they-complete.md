@@ -1,6 +1,6 @@
 ---
-title: "Start Multiple Async Tasks and Process Them As They Complete (C#)"
-ms.date: 07/20/2015
+title: Process asynchronous tasks as they complete
+ms.date: 09/12/2018
 ms.assetid: 25331850-35a7-43b3-ab76-3908e4346b9d
 ---
 # Start Multiple Async Tasks and Process Them As They Complete (C#)
@@ -12,37 +12,35 @@ The following example uses a query to create a collection of tasks. Each task do
 > [!NOTE]
 > To run the examples, you must have Visual Studio (2012 or newer) and the .NET Framework 4.5 or newer installed on your computer.
 
-## Download the example
+## Download an example solution
 
 You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.
 
-1.  Decompress the file that you downloaded, and then start Visual Studio.
+> [!TIP]
+> If you don't want to download the project, you can review the MainWindow.xaml.cs file at the end of this topic instead.
+
+1.  Extract the files that you downloaded from the .zip file, and then start Visual Studio.
 
 2.  On the menu bar, choose **File** > **Open** > **Project/Solution**.
 
-3.  In the **Open Project** dialog box, open the folder that holds the sample code that you decompressed, and then open the solution (.sln) file for AsyncFineTuningCS.
+3.  In the **Open Project** dialog box, open the folder that holds the sample code you downloaded, and then open the solution (.sln) file for AsyncFineTuningCS.
 
 4.  In **Solution Explorer**, open the shortcut menu for the **ProcessTasksAsTheyFinish** project, and then choose **Set as StartUp Project**.
 
-5.  Choose the **F5** key to run the project.
-
-    Or, choose the **Ctrl**+**F5** keys to run the project without debugging it.
+5.  Choose the **F5** key to run the program (or, press **Ctrl**+**F5** keys to run the program without debugging it).
 
 6.  Run the project several times to verify that the downloaded lengths don't always appear in the same order.
 
-If you don't want to download the project, you can review the MainWindow.xaml.cs file at the end of this topic.
+## Create the program yourself
 
-## Build the example
+This example adds to the code that’s developed in [Cancel Remaining Async Tasks after One Is Complete (C#)](../../../../csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md), and it uses the same UI.
 
-This example adds to the code that’s developed in [Cancel Remaining Async Tasks after One Is Complete (C#)](../../../../csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md) and [Cancel Remaining Async Tasks after One Is Complete (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md) and uses the same UI.
+To build the example yourself, step by step, follow the instructions in the [Downloading the Example](../../../../csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md#downloading-the-example) section, but set **CancelAfterOneTask** as the startup project. Add the changes in this topic to the `AccessTheWebAsync` method in that project. The changes are marked with asterisks.
 
-To build the example yourself, step by step, follow the instructions in the [Downloading the Example](../../../../csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md#downloading-the-example) section, but choose **CancelAfterOneTask** as the **StartUp Project**. Add the changes in this topic to the `AccessTheWebAsync` method in that project. The changes are marked with asterisks.
-
-The **CancelAfterOneTask** project already includes a query that, when executed, creates a collection of tasks. Each call to `ProcessURLAsync` in the following code returns a <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer.
+The **CancelAfterOneTask** project already includes a query that, when executed, creates a collection of tasks. Each call to `ProcessURLAsync` in the following code returns a <xref:System.Threading.Tasks.Task%601>, where `TResult` is an integer:
 
 ```csharp
-IEnumerable<Task<int>> downloadTasksQuery =
-    from url in urlList select ProcessURL(url, client, ct);
+IEnumerable<Task<int>> downloadTasksQuery = from url in urlList select ProcessURL(url, client, ct);
 ```
 
 In the MainWindow.xaml.cs file of the project, make the following changes to the `AccessTheWebAsync` method.
@@ -74,16 +72,14 @@ In the MainWindow.xaml.cs file of the project, make the following changes to the
         resultsTextBox.Text += String.Format("\r\nLength of the download:  {0}", length);
         ```
 
-Run the project several times to verify that the downloaded lengths don't always appear in the same order.
+Run the program several times to verify that the downloaded lengths don't always appear in the same order.
 
 > [!CAUTION]
 > You can use `WhenAny` in a loop, as described in the example, to solve problems that involve a small number of tasks. However, other approaches are more efficient if you have a large number of tasks to process. For more information and examples, see [Processing tasks as they complete](https://blogs.msdn.microsoft.com/pfxteam/2012/08/02/processing-tasks-as-they-complete/).
 
 ## Complete example
 
-The following code is the complete text of the MainWindow.xaml.cs file for the example. Asterisks mark the elements that were added for this example.
-
-Notice that you must add a reference for <xref:System.Net.Http>.
+The following code is the complete text of the MainWindow.xaml.cs file for the example. Asterisks mark the elements that were added for this example. Also, take note that you must add a reference for <xref:System.Net.Http>.
 
 You can download the project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).
 

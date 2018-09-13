@@ -44,7 +44,7 @@
 ## Remarks  
  For an example of how to use a Spin Lock, see [How to: Use SpinLock for Low-Level Synchronization](~/docs/standard/threading/how-to-use-spinlock-for-low-level-synchronization.md).  
   
- Spin locks can be used for leaf-level locks where the object allocation implied by using a <xref:System.Threading.Monitor>, in size or due to garbage collection pressure, is overly expensive. A spin lock can be useful in to avoid blocking; however, if you expect a significant amount of blocking, you should probably not use spin locks due to excessive spinning. Spinning can be beneficial when locks are fine-grained and large in number (for example, a lock per node in a linked list) and also when lock hold-times are always extremely short. In general, while holding a spin lock, one should avoid any of these actions:  
+ Spin locks can be used for leaf-level locks where the object allocation implied by using a <xref:System.Threading.Monitor>, in size or due to garbage collection pressure, is overly expensive. A spin lock can be useful to avoid blocking; however, if you expect a significant amount of blocking, you should probably not use spin locks due to excessive spinning. Spinning can be beneficial when locks are fine-grained and large in number (for example, a lock per node in a linked list) and also when lock hold-times are always extremely short. In general, while holding a spin lock, one should avoid any of these actions:  
   
 -   blocking,  
   

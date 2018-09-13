@@ -484,7 +484,7 @@ See also [Files](#files).
 ```
 
 There is no equivalent for the `owners` element in MSBuild.
-For `summary`, you can use the MSBuild `<Description>` property, even though the value of `summary` is not migrated automatically to that property, since that property is mapped to the [`description`](#-other-common-root-level-options) element.
+For `summary`, you can use the MSBuild `<Description>` property, even though the value of `summary` is not migrated automatically to that property, since that property is mapped to the [`description`](#other-common-root-level-options) element.
 
 ## scripts
 

@@ -7,7 +7,7 @@ ms.date: 09/12/2018
 ---
 # Using Visual Studio Tools for Docker (Visual Studio on Windows)
 
-The development workflow when using Visual Studio Tools for Docker is similar to the workflow when using Visual Studio Code and Docker CLI. In fact, it is based on the same Docker CLI, but it's easier to get started, simplifies the process, and provides greater productivity for the build, run, and compose tasks. It's also able to execute and debug your containers via simple actions like F5 and Ctrl+F5 from Visual Studio. With the optional container orchestration support, in addition to being able to run and debug a single container, you can run and debug a group of containers (a whole solution) at the same time. Just define the containers in the same *docker-compose.yml* file at the solution level.
+The development workflow when using Visual Studio Tools for Docker is similar to the workflow when using Visual Studio Code and Docker CLI. In fact, it's based on the same Docker CLI, but it's easier to get started, simplifies the process, and provides greater productivity for the build, run, and compose tasks. It's also able to execute and debug your containers via simple actions like F5 and Ctrl+F5 from Visual Studio. With the optional container orchestration support, in addition to being able to run and debug a single container, you can run and debug a group of containers (a whole solution) at the same time. Just define the containers in the same *docker-compose.yml* file at the solution level.
 
 ## Configuring your local environment
 
@@ -23,7 +23,7 @@ To see more about installing Visual Studio Tools for Docker, go to <http://aka.m
 
 ## Using Docker Tools in Visual Studio 2017
 
-When adding Docker support to a project (see Figure 4-26), Visual Studio adds a Dockerfile to the project root.
+When adding Docker support to a project (see Figure 4-26), Visual Studio adds a *Dockerfile* to the project root.
 
 ![Turning on Docker Solution support in a Visual Studio 2017 project](./media/image32.png)
 
@@ -57,7 +57,7 @@ You can also use Service Fabric instead of Docker Compose to manage multiple con
 
 Build, debug, update, and refresh apps in a local Docker container: [https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh/](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)
 
-Deploy an ASP.NET container to a container registry: [https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker/](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
+Deploy an ASP.NET Core Docker container to a container registry: [https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker/](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
 
 >[!div class="step-by-step"]
 [Previous](docker-apps-inner-loop-workflow.md)

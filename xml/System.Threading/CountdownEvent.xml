@@ -39,16 +39,22 @@
   </Attributes>
   <Docs>
     <summary>Represents a synchronization primitive that is signaled when its count reaches zero.</summary>
-    <remarks>To be added.</remarks>
-    <threadsafe>All public and protected members of <see cref="T:System.Threading.CountdownEvent" /> are thread-safe and may be used concurrently from multiple threads, with the exception of Dispose, which must only be used when all other operations on the <see cref="T:System.Threading.CountdownEvent" /> have completed, and Reset, which should only be used when no other threads are accessing the event.  
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+## Examples  
   
- Example  
-  
- The following example shows how to use a <see cref="T:System.Threading.CountdownEvent" />:  
+ The following example shows how to use a `CountdownEvent`:  
   
  [!code-csharp[System.Threading.CountdownEvent#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.countdownevent/cs/countdownevent.cs#01)]
- [!code-vb[System.Threading.CountdownEvent#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.countdownevent/vb/countdownevent.vb#01)]</threadsafe>
-    <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+ [!code-vb[System.Threading.CountdownEvent#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.countdownevent/vb/countdownevent.vb#01)]  
+  
+          ]]></format>
+        </remarks>
+    <threadsafe>All public and protected members of <see cref="T:System.Threading.CountdownEvent" /> are thread-safe and may be used concurrently from multiple threads, with the exception of <see cref="M:System.Threading.CountdownEvent.Dispose" />, which must only be used when all other operations on the <see cref="T:System.Threading.CountdownEvent" /> have completed, and <see cref="M:System.Threading.CountdownEvent.Reset" />, which should only be used when no other threads are accessing the event.  
+  
+</threadsafe>
+    <related type="Article" href="~/docs/standard/threading/countdownevent.md">CountdownEvent</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

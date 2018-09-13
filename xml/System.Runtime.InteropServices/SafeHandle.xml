@@ -104,7 +104,7 @@
   
  `HexViewer <filename> -Fault`  
   
- Optionally specify `-Fault` to intentionally attempt to leak the handle by aborting the thread in a certain window. Use the Windows Perform.exe tool to monitor handle counts while injecting faults.  
+ Optionally specify `-Fault` to intentionally attempt to leak the handle by aborting the thread in a certain window. Use the Windows Perfmon.exe tool to monitor handle counts while injecting faults.  
   
  [!code-csharp[SafeHandle#1](~/samples/snippets/csharp/VS_Snippets_CLR/SafeHandle/CS/program.cs#1)]  
   

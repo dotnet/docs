@@ -49,24 +49,24 @@ You can enable automatic binding redirects in existing apps that target older ve
    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
    ```
 
-The following shows an example project file with the element inserted:
+   The following shows an example project file with the element inserted:
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-    <PropertyGroup>
-      <Configuration Condition=" '$(Configuration)' == ''     ">Debug</Configuration>
-      <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-      <ProjectGuid>{123334}</ProjectGuid>
-      ...
-      <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    </PropertyGroup>
-  ...
-</Project>
-```
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+     <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+       <PropertyGroup>
+         <Configuration Condition=" '$(Configuration)' == ''     ">Debug</Configuration>
+         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+         <ProjectGuid>{123334}</ProjectGuid>
+         ...
+         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+       </PropertyGroup>
+     ...
+   </Project>
+   ```
 
-4. Compile your app.
+3. Compile your app.
 
 ## Enable automatic binding redirects in web apps
 

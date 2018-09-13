@@ -35,7 +35,7 @@ To use <xref:System.Threading.Tasks.Parallel.ForEach%2A> with a non-generic coll
 
 You can also use Parallel LINQ (PLINQ) to parallelize processing of <xref:System.Collections.Generic.IEnumerable%601> data sources. PLINQ enables you to use declarative query syntax to express the loop behavior. For more information, see [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md).
 
-## Compile the code
+## Compile and run the code
 
 - Copy and paste this code into a Visual Studio **Console App** project.
 

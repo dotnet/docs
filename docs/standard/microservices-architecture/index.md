@@ -5,8 +5,8 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 08/31/2018
 ---
-
 # .NET Microservices: Architecture for Containerized .NET Applications
+
 ![Book cover](./media/cover-small.png)
 
 **EDITION v2.1.02** - Updated to ASP.NET Core 2.1
@@ -64,7 +64,7 @@ You will also find this guide useful if you are a technical decision maker, such
 
 The first part of this guide introduces Docker containers, discusses how to choose between .NET Core and the .NET Framework as a development framework, and provides an overview of microservices. This content is for architects and technical decision makers who want an overview but don't need to focus on code implementation details.
 
-The second part of the guide starts with the [Development process for Docker based applications](#ch_dev_process_for_docker_based_apps) section. It focuses on development and microservice patterns for implementing applications using .NET Core and Docker. This section will be of most interest to developers and architects who want to focus on code and on patterns and implementation details.
+The second part of the guide starts with the [Development process for Docker based applications](./docker-application-development-process/index.md) section. It focuses on development and microservice patterns for implementing applications using .NET Core and Docker. This section will be of most interest to developers and architects who want to focus on code and on patterns and implementation details.
 
 ## Related microservice and container-based reference application: eShopOnContainers
 

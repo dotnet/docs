@@ -158,11 +158,6 @@
         "_csharplang/spec/*.md": "07/01/2017",
         "_vblang/spec/*.md": "07/21/2017"
       },
-      "ms.workload": {
-        "docs/core/**/**.md": ["dotnetcore"],
-        "docs/framework/**/**.md": ["dotnet"],
-        "docs/standard/**/**.md": ["dotnet", "dotnetcore"]
-      },
       "ms.technology": {
         "_csharplang/spec/*.md": "csharp-spec",
         "_vblang/spec/*.md": "vb-spec",

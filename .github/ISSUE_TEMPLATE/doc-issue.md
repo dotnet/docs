@@ -4,7 +4,7 @@ about: Create an issue to help us improve
 
 ---
 
-**Before you enter an issue**
+**Before you open an issue**
 
 If the issue is:
 
@@ -12,6 +12,11 @@ If the issue is:
 - A general support question, consider asking on a support forum site.
 - A site design concern, create an issue at [MicrosoftDocs/Feedback](https://github.com/MicrosoftDocs/Feedback/Issues/new/choose).
 - A problem completing a tutorial, compare your code with the completed sample.
+- A duplicate of an open or closed issue, leave a comment on that issue.
+
+**Issue description**
+
+&lt;include description here&gt;
 
 **Target framework**
 

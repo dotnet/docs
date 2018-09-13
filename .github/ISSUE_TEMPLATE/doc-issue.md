@@ -4,7 +4,7 @@ about: Create an issue to help us improve
 
 ---
 
-## Before you enter an issue
+**Before you enter an issue**
 
 If the issue is:
 
@@ -13,7 +13,7 @@ If the issue is:
 - A site design concern, create an issue at [MicrosoftDocs/Feedback](https://github.com/MicrosoftDocs/Feedback/Issues/new/choose).
 - A problem completing a tutorial, compare your code with the completed sample.
 
-## Target framework
+**Target framework**
 
 Check the .NET target framework(s) being used, and include the version number(s).
 
@@ -21,8 +21,15 @@ Check the .NET target framework(s) being used, and include the version number(s)
 - [ ] .NET Framework
 - [ ] .NET Standard
 
-If using the .NET Core SDK, include the output from the `dotnet --info` command:
+If using the:
+
+- .NET Core SDK, include output from `dotnet --info`.
+- .NET Framework, include info from Visual Studio's **Help** > **About Microsoft Visual Studio** dialog.
+
+<details>
+<summary><strong>Output</strong></summary>
 
 ```console
-<replace with dotnet --info output>
+<replace with output>
 ```
+</details>

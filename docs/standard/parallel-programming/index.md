@@ -1,6 +1,6 @@
 ---
 title: "Parallel Programming in .NET"
-ms.date: "03/30/2017"
+ms.date: 09/12/2018
 ms.technology: dotnet-standard
 helpviewer_keywords:
   - "parallel programming"
@@ -10,9 +10,13 @@ ms.author: "ronpet"
 ---
 # Parallel Programming in .NET
 
-Many personal computers and workstations have several CPU cores that enable multiple threads to be executed simultaneously. Computers in the near future are expected to have significantly more cores. To take advantage of the hardware of today and tomorrow, you can parallelize your code to distribute work across multiple processors. In the past, parallelization required low-level manipulation of threads and locks. Visual Studio 2010 and the .NET Framework 4 enhance support for parallel programming by providing a new runtime, new class library types, and new diagnostic tools. These features simplify parallel development so that you can write efficient, fine-grained, and scalable parallel code in a natural idiom without having to work directly with threads or the thread pool. The following illustration provides a high-level overview of the parallel programming architecture in the .NET Framework 4.
+Many personal computers and workstations have multiple CPU cores that enable multiple threads to be executed simultaneously. To take advantage of the hardware, you can parallelize your code to distribute work across multiple processors.
 
- ![.NET Parallel Programming Architecture](./media/tpl-architecture.png "TPL_Architecture")
+In the past, parallelization required low-level manipulation of threads and locks. Visual Studio and the .NET Framework enhance support for parallel programming by providing a runtime, class library types, and diagnostic tools. These features, which were introduced with the .NET Framework 4, simplify parallel development. You can write efficient, fine-grained, and scalable parallel code in a natural idiom without having to work directly with threads or the thread pool.
+
+The following illustration provides a high-level overview of the parallel programming architecture in the .NET Framework:
+
+![.NET Parallel Programming Architecture](./media/tpl-architecture.png)
 
 ## Related Topics
 

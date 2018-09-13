@@ -15,7 +15,7 @@ This topic discusses the client configuration file that was generated using the 
 
 Open the generated configuration file (App.config) from the GettingStartedClient project. The following example is a view of the generated configuration file. Under the [\<system.serviceModel>](../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) section, find the [\<endpoint>](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.
 
-    ```xml
+```xml
     <?xml version="1.0" encoding="utf-8" ?>
     <configuration>
         <startup>
@@ -41,7 +41,7 @@ Open the generated configuration file (App.config) from the GettingStartedClient
             </client>
         </system.serviceModel>
     </configuration>
-    ```
+```
 
 This example configures the endpoint that the client uses to access the service that is located at the following address: `http://localhost:8000/ServiceModelSamples/Service/CalculatorService`
 

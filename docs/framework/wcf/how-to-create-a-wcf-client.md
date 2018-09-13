@@ -26,7 +26,17 @@ The client application uses the generated proxy class to communicate with the se
 
 2. Add a reference to System.ServiceModel to the GettingStartedClient project. Right-click on the **References** folder under the GettingStartedClient project in **Solution Explorer**, and then select **Add Reference**. In the **Add Reference** dialog, select **Framework** on the left-hand side of the dialog under **Assemblies**. Find and select **System.ServiceModel**, and then choose **OK**. Save the solution by selecting **File** > **Save All**.
 
-3. Add a service reference to the Calculator Service. Before you can do that, start up the GettingStartedHost console application. Once the host is running, right-click the **References** folder under the GettingStartedClient project in **Solution Explorer** and select **Add** > **Service Reference**. Enter the following URL in the address box of the **Add Service Reference** dialog:  [http://localhost:8000/GettingStartedClient/Service](http://localhost:8000/GettingStartedClient/Service) and click the **Go** button. The CalculatorService should then be displayed in the **Services** list box. Double-click CalculatorService and it will expand and show the service contracts implemented by the service. Leave the default namespace as-is and choose the **OK** button.
+3. Add a service reference to the Calculator Service.
+
+   1. First, start up the GettingStartedHost console application.
+
+   2. Once the host is running, right-click the **References** folder under the GettingStartedClient project in **Solution Explorer** and select **Add** > **Service Reference**.
+
+   3. Enter the following URL in the address box of the **Add Service Reference** dialog: [http://localhost:8000/GettingStartedClient/Service](http://localhost:8000/GettingStartedClient/Service)
+
+   4. Choose **Go**.
+
+   The CalculatorService is displayed in the **Services** list box. Double-click CalculatorService to expand it and show the service contracts implemented by the service. Leave the default namespace as-is and choose **OK**.
 
     When you add a reference to a service using Visual Studio, a new item appears in **Solution Explorer** under the **Service References** folder under the GettingStartedClient project. If you use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool, a source code file and app.config file are generated.
 

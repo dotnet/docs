@@ -161,7 +161,7 @@ End Module
 
 1. Run the GettingStartedHost console application from inside Visual Studio.
 
-   The service must be run with administrator privileges. Because Visual Studio was opened with administrator privileges, GettingStartedHost is also run with administrator privileges. You can also open a new command prompt using **Run as Administrator** and run service.exe within it.
+   The service must be run with administrator privileges. Because Visual Studio was opened with administrator privileges, GettingStartedHost is also run with administrator privileges. You can also open a new command prompt using **Run as administrator** and run service.exe within it.
 
 2. Open a web browser and browse to the service's debug page at `http://localhost:8000/GettingStarted/CalculatorService`.
 

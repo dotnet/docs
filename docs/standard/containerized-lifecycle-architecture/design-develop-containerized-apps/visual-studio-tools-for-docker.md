@@ -8,7 +8,7 @@ ms.custom: vs-dotnet
 ---
 # Using Visual Studio Tools for Docker (Visual Studio on Windows)
 
-The Visual Studio Tools for Docker developer workflow is similar to using Visual Studio Code and Docker CLI (it is based on the same Docker CLI). Visual Studio Tools for Docker makes it even easier to get started, simplifies the process, and provides greater productivity for the build, run, and compose tasks. Execute and debug your containers via simple actions like **F5** and **Ctrl**+**F5**.
+The Visual Studio Tools for Docker development workflow is similar to the workflow when using Visual Studio Code and Docker CLI. In fact, it's based on the same Docker CLI, but it's easier to get started, simplifies the process, and provides greater productivity for the build, run, and compose tasks. Execute and debug your containers via simple actions like **F5** and **Ctrl**+**F5**. With the optional container orchestration support, in addition to being able to run and debug a single container, you can run and debug a group of containers (a whole solution) at the same time.
 
 > [!NOTE]
 > This article applies to Visual Studio on Windows, and not Visual Studio for Mac.

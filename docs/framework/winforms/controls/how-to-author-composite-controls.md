@@ -24,7 +24,7 @@ Composite controls can be employed in many ways. You can author them as part of 
   
 3.  In the **Add New Item** dialog box, give the class file (.vb or .cs file) the name you want the composite control to have.  
   
-4.  Click the **Add** button to create the class file for the composite control.  
+4.  Select the **Add** button to create the class file for the composite control.  
   
 5.  Add controls from the **Toolbox** to the composite control surface.  
   

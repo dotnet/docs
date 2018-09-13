@@ -11,7 +11,7 @@ The development workflow when using Visual Studio Tools for Docker is similar to
 
 ## Configuring your local environment
 
-Docker support is included in Visual Studio 2017, with the Web Development workload installed. Install Docker for Windows separately.
+Docker support is included in Visual Studio 2017 with any of the .NET and .NET Core workloads installed. Install Docker for Windows separately.
 
 With the latest versions of Docker for Windows, it is easier than ever to develop Docker applications because the setup is straightforward, as explained in the following references.
 

@@ -105,7 +105,7 @@ The following items can be serialized using the **XmLSerializer** class:
 
 ## Advantages of Using XML Serialization
 
-The **XmlSerializer**class gives you complete and flexible control when you serialize an object as XML. If you are creating an XML Web service, you can apply attributes that control serialization to classes and members to ensure that the XML output conforms to a specific schema.
+The **XmlSerializer** class gives you complete and flexible control when you serialize an object as XML. If you are creating an XML Web service, you can apply attributes that control serialization to classes and members to ensure that the XML output conforms to a specific schema.
 
 For example, **XmlSerializer** enables you to:
 

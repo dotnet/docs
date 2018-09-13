@@ -28,7 +28,7 @@ Automatic binding redirects are enabled by default for traditional desktop apps 
    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
    ```
 
-3. Change **true** to **false**:
+3. Change `true` to `false`:
 
    ```xml
    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>

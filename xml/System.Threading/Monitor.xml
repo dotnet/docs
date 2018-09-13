@@ -127,9 +127,9 @@
 ## Pulse, PulseAll, and Wait  
  Once a thread owns the lock and has entered the critical section that the lock protects, it can call the <xref:System.Threading.Monitor.Wait%2A?displayProperty=nameWithType>, <xref:System.Threading.Monitor.Pulse%2A?displayProperty=nameWithType>, and <xref:System.Threading.Monitor.PulseAll%2A?displayProperty=nameWithType> methods.  
   
- <xref:System.Threading.Monitor.Wait%2A> releases the lock if it is held, allows a waiting thread or threads to obtain the lock and enter the critical section,   and waits to be notified by a call to the <xref:System.Threading.Monitor.Pulse%2A?displayProperty=nameWithType> or <xref:System.Threading.Monitor.PulseAll%2A?displayProperty=nameWithType> method. When <xref:System.Threading.Monitor.Wait%2A> is notified, it returns and obtains the lock again.  
+ When the thread that holds the lock calls <xref:System.Threading.Monitor.Wait%2A>, the lock is released and the thread is added to the waiting queue of the synchronized object. The first thread in the ready queue, if any, acquires the lock and enters the critical section. The thread is moved from the waiting queue to the ready queue when either the <xref:System.Threading.Monitor.Pulse%2A?displayProperty=nameWithType> (to be moved, the thread must be at the head of the waiting queue) or the <xref:System.Threading.Monitor.PulseAll%2A?displayProperty=nameWithType> method is called by the thread that holds the lock. The <xref:System.Threading.Monitor.Wait%2A> method returns when the calling thread reacquires the lock.  
   
- Both <xref:System.Threading.Monitor.Pulse%2A> and <xref:System.Threading.Monitor.PulseAll%2A> signal for the next thread in the wait queue to proceed.  
+ When the thread that holds the lock calls <xref:System.Threading.Monitor.Pulse%2A>, the thread at the head of the waiting queue is moved to the ready queue. The call to the <xref:System.Threading.Monitor.PulseAll%2A> method moves all the threads from the waiting queue to the ready queue.  
   
 <a name="WaitHandles"></a>   
 ## Monitors and wait handles  

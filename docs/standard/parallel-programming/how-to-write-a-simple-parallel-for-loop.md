@@ -22,14 +22,14 @@ This topic contains two examples that illustrate the <xref:System.Threading.Task
 
 The first example calculates the size of files in a single directory. The second computes the product of two matrices.
 
-## Example
+## Directory size example
 
 This example is a simple command-line utility that calculates the total size of files in a directory. It expects a single directory path as an argument, and reports the number and total size of the files in that directory. After verifying that the directory exists, it uses the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method to enumerate the files in the directory and determine their file sizes. Each file size is then added to the `totalSize` variable. Note that the addition is performed by calling the <xref:System.Threading.Interlocked.Add%2A?displayProperty=nameWithType> so that the addition is performed as an atomic operation. Otherwise, multiple tasks could try to update the `totalSize` variable simultaneously.
 
 [!code-csharp[Conceptual.Parallel.For#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.parallel.for/cs/for1.cs#1)]
 [!code-vb[Conceptual.Parallel.For#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.parallel.for/vb/for1.vb#1)]
 
-## Example
+## Matrix and stopwatch example
 
 This example uses the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method to compute the product of two matrices. It also shows how to use the <xref:System.Diagnostics.Stopwatch?displayProperty=nameWithType> class to compare the performance of a parallel loop with a non-parallel loop. Note that, because it can generate a large volume of output, the example allows output to be redirected to a file.
 

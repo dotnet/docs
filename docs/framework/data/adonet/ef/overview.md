@@ -9,20 +9,6 @@ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] is a set of t
 
 The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] enables developers to work with data in the form of domain-specific objects and properties, such as customers and customer addresses, without having to concern themselves with the underlying database tables and columns where this data is stored. With the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], developers can work at a higher level of abstraction when they deal with data, and can create and maintain data-oriented applications with less code than in traditional applications. Because the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] is a component of the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)], [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] applications can run on any computer on which the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] starting with version 3.5 SP1 is installed.
 
-The following sections in this topic provide more detail about the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]:
-
--   [Giving Life to Models](#LifeToModels)
-
--   [Mapping Objects to Data](#MappingObjectsToData)
-
--   [Accessing and Changing Entity Data](#AccessingData)
-
--   [Data Providers](#DataProviders)
-
--   [Entity Data Model Tools](#Tools)
-
--   [Learning More](#LearnMore)
-
 <a name="LifeToModels"></a>
 ## Giving Life to Models
  A longstanding and common design approach when building an application or service is the division of the application or service into three parts: a domain model, a logical model, and a physical model. The domain model defines the entities and relationships in the system that is being modeled. The logical model for a relational database normalizes the entities and relationships into tables with foreign key constraints. The physical model addresses the capabilities of a particular data engine by specifying storage details such as partitioning and indexing.
@@ -79,20 +65,14 @@ The following sections in this topic provide more detail about the [!INCLUDE[ado
 Together with the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] runtime, Visual Studio includes the mapping and modeling tools. For more information, see [Modeling and Mapping](../../../../../docs/framework/data/adonet/ef/modeling-and-mapping.md).
 
 <a name="LearnMore"></a>
-## Learning More
+## Learn More
  The following topics enable you to learn more about the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]:
 
- [Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md)
+ [Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md) -  Provides information about how to get up and running quickly using the [Quickstart](https://msdn.microsoft.com/library/0bc534be-789f-4819-b9f6-76e51d961675), which shows how to create a simple [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.
 
- Provide information about how to get up and running quickly using the [Quickstart](https://msdn.microsoft.com/library/0bc534be-789f-4819-b9f6-76e51d961675), which shows how to create a simple [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.
+ [Entity Framework Terminology](../../../../../docs/framework/data/adonet/ef/terminology.md) - Defines many of the terms that are introduced by the Entity Data Model and the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] and that are used in [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] documentation.
 
- [Entity Framework Terminology](../../../../../docs/framework/data/adonet/ef/terminology.md)
-
- Defines many of the terms that are introduced by the Entity Data Model and the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] and that are used in [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] documentation.
-
- [Entity Framework Resources](../../../../../docs/framework/data/adonet/ef/resources.md)
-
- Provides links to conceptual topics and links to external topics and resources for building [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] applications.
+ [Entity Framework Resources](../../../../../docs/framework/data/adonet/ef/resources.md) - Provides links to conceptual topics and links to external topics and resources for building [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] applications.
 
 ## See Also
 

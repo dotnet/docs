@@ -13,36 +13,10 @@ This walkthrough starts with a synchronous Windows Presentation Foundation (WPF)
 
 If you don't want to build the applications yourself, you can download [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f).
 
-In this walkthrough, you complete the following tasks:
-
--   [To create a WPF application](#CreateWPFApp)
-
--   [To design a simple WPF MainWindow](#MainWindow)
-
--   [To add a reference](#AddRef)
-
--   [To add necessary using directives](#usingDir)
-
--   [To create a synchronous application](#synchronous)
-
--   [To test the synchronous solution](#testSynch)
-
--   [To convert GetURLContents to an asynchronous method](#GetURLContents)
-
--   [To convert SumPageSizes to an asynchronous method](#SumPageSizes)
-
--   [To convert startButton_Click to an asynchronous method](#startButton)
-
--   [To test the asynchronous solution](#testAsynch)
-
--   [To replace method GetURLContentsAsync with a .NET Framework method](#GetURLContentsAsync)
-
--   [Example](#BKMK_CompleteCodeExamples)
-
 > [!NOTE]
 > To run the examples, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.
 
-## <a name="CreateWPFApp"></a> Create a WPF application
+## Create a WPF application
 
 1.  Start Visual Studio.
 
@@ -56,9 +30,7 @@ In this walkthrough, you complete the following tasks:
 
      The new project appears in **Solution Explorer**.
 
-##  <a name="BKMK_DesignWPFMainWin"></a>
-
-###  <a name="MainWindow"></a> To design a simple WPF MainWindow
+## Design a simple WPF MainWindow
 
 1.  In the Visual Studio Code Editor, choose the **MainWindow.xaml** tab.
 
@@ -86,9 +58,7 @@ In this walkthrough, you complete the following tasks:
 
      For more information about the WPF XAML Designer, see [Creating a UI by using XAML Designer](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio).
 
-##  <a name="BKMK_AddReference"></a>
-
-###  <a name="AddRef"></a> To add a reference
+## Add a reference
 
 1.  In **Solution Explorer**, highlight your project's name.
 
@@ -104,9 +74,7 @@ In this walkthrough, you complete the following tasks:
 
 6.  Choose the **OK** button to close the dialog box.
 
-##  <a name="BKMK_AddStatesandDirs"></a>
-
-###  <a name="usingDir"></a> To add necessary using directives
+## Add necessary using directives
 
 1.  In **Solution Explorer**, open the shortcut menu for MainWindow.xaml.cs, and then choose **View Code**.
 
@@ -118,9 +86,7 @@ In this walkthrough, you complete the following tasks:
     using System.IO;
     ```
 
-##  <a name="BKMK_CreatSynchApp"></a>
-
-###  <a name="synchronous"></a> To create a synchronous application
+## Create a synchronous app
 
 1.  In the design window, MainWindow.xaml, double-click the **Start** button to create the `startButton_Click` event handler in MainWindow.xaml.cs.
 
@@ -224,35 +190,32 @@ In this walkthrough, you complete the following tasks:
     }
     ```
 
-##  <a name="BKMK_TestSynchSol"></a>
+## Test the synchronous solution
 
-###  <a name="testSynch"></a> To test the synchronous solution
+Choose the **F5** key to run the program, and then choose the **Start** button.
 
-1.  Choose the **F5** key to run the program, and then choose the **Start** button.
+Output that resembles the following list should appear:
 
-     Output that resembles the following list should appear.
+```text
+msdn.microsoft.com/library/windows/apps/br211380.aspx        383832
+msdn.microsoft.com                                            33964
+msdn.microsoft.com/library/hh290136.aspx               225793
+msdn.microsoft.com/library/ee256749.aspx               143577
+msdn.microsoft.com/library/hh290138.aspx               237372
+msdn.microsoft.com/library/hh290140.aspx               128279
+msdn.microsoft.com/library/dd470362.aspx               157649
+msdn.microsoft.com/library/aa578028.aspx               204457
+msdn.microsoft.com/library/ms404677.aspx               176405
+msdn.microsoft.com/library/ff730837.aspx               143474
 
-    ```text
-    msdn.microsoft.com/library/windows/apps/br211380.aspx        383832
-    msdn.microsoft.com                                            33964
-    msdn.microsoft.com/library/hh290136.aspx               225793
-    msdn.microsoft.com/library/ee256749.aspx               143577
-    msdn.microsoft.com/library/hh290138.aspx               237372
-    msdn.microsoft.com/library/hh290140.aspx               128279
-    msdn.microsoft.com/library/dd470362.aspx               157649
-    msdn.microsoft.com/library/aa578028.aspx               204457
-    msdn.microsoft.com/library/ms404677.aspx               176405
-    msdn.microsoft.com/library/ff730837.aspx               143474
+Total bytes returned:  1834802
 
-    Total bytes returned:  1834802
+Control returned to startButton_Click.
+```
 
-    Control returned to startButton_Click.
-    ```
+Notice that it takes a few seconds to display the counts. During that time, the UI thread is blocked while it waits for requested resources to download. As a result, you can't move, maximize, minimize, or even close the display window after you choose the  **Start** button. These efforts fail until the byte counts start to appear. If a website isn’t responding, you have no indication of which site failed. It is difficult even to stop waiting and close the program.
 
-     Notice that it takes a few seconds to display the counts. During that time, the UI thread is blocked while it waits for requested resources to download. As a result, you can't move, maximize, minimize, or even close the display window after you choose the  **Start** button. These efforts fail until the byte counts start to appear. If a website isn’t responding, you have no indication of which site failed. It is difficult even to stop waiting and close the program.
-
-##  <a name="BKMK_ConvertGtBtArr"></a>
-###  <a name="GetURLContents"></a> To convert GetURLContents to an asynchronous method
+## Convert GetURLContents to an asynchronous method
 
 1.  To convert the synchronous solution to an asynchronous solution, the best place to start is in `GetURLContents` because the calls to the <xref:System.Net.HttpWebRequest> method <xref:System.Net.HttpWebRequest.GetResponse%2A> and to the <xref:System.IO.Stream> method <xref:System.IO.Stream.CopyTo%2A> are where the application accesses the web. The .NET Framework makes the conversion easy by supplying asynchronous versions of both methods.
 
@@ -333,8 +296,7 @@ In this walkthrough, you complete the following tasks:
 
      With those few changes, the conversion of `GetURLContents` to an asynchronous method is complete.
 
-##  <a name="BKMK_ConvertSumPagSzs"></a>
-###  <a name="SumPageSizes"></a> To convert SumPageSizes to an asynchronous method
+## Convert SumPageSizes to an asynchronous method
 
 1.  Repeat the steps from the previous procedure for `SumPageSizes`. First, change the call to `GetURLContents` to an asynchronous call.
 
@@ -373,8 +335,7 @@ In this walkthrough, you complete the following tasks:
 
      The conversion of `SumPageSizes` to `SumPageSizesAsync` is complete.
 
-##  <a name="BKMK_Cnvrtbttn1"></a>
-###  <a name="startButton"></a> To convert startButton_Click to an asynchronous method
+## Convert startButton_Click to an asynchronous method
 
 1.  In the event handler, change the name of the called method from `SumPageSizes` to `SumPageSizesAsync`, if you haven’t already done so.
 
@@ -419,8 +380,7 @@ In this walkthrough, you complete the following tasks:
 
      The conversion of the project from synchronous to asynchronous processing is complete.
 
-##  <a name="BKMK_testAsynchSolution"></a>
-###  <a name="testAsynch"></a> To test the asynchronous solution
+## Test the asynchronous solution
 
 1.  Choose the **F5** key to run the program, and then choose the **Start** button.
 
@@ -430,8 +390,7 @@ In this walkthrough, you complete the following tasks:
 
     -   Most importantly, the UI thread isn’t blocked during the downloads. You can move or resize the window while the web resources are being downloaded, counted, and displayed. If one of the websites is slow or not responding, you can cancel the operation by choosing the **Close** button (the x in the red field in the upper-right corner).
 
-##  <a name="BKMK_ReplaceGetByteArrayAsync"></a>
-###  <a name="GetURLContentsAsync"></a> To replace method GetURLContentsAsync with a .NET Framework method
+## Replace method GetURLContentsAsync with a .NET Framework method
 
 1.  The .NET Framework 4.5 provides many async methods that you can use. One of them, the <xref:System.Net.Http.HttpClient> method <xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29>, does just what you need for this walkthrough. You can use it instead of the `GetURLContentsAsync` method that you created in an earlier procedure.
 
@@ -456,7 +415,7 @@ In this walkthrough, you complete the following tasks:
 
      The behavior of this version of the project should match the behavior that the "To test the asynchronous solution" procedure describes but with even less effort from you.
 
-##  <a name="BKMK_CompleteCodeExamples"></a> Example
+## Example code
 
 The following code contains the full example of the conversion from a synchronous to an asynchronous solution by using the asynchronous `GetURLContentsAsync` method that you wrote. Notice that it strongly resembles the original, synchronous solution.
 
@@ -724,7 +683,7 @@ namespace AsyncExampleWPF
 }
 ```
 
-## See Also
+## See also
 
 - [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)
 - [async](../../../../csharp/language-reference/keywords/async.md)

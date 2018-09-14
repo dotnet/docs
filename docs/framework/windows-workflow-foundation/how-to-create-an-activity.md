@@ -17,21 +17,14 @@ Activities are the core unit of behavior in [!INCLUDE[wf1](../../../includes/wf1
 
 1.  Open Visual Studio and choose **New** > **Project** from the **File** menu.
 
-2.  Expand the **Other Project Types** node in the **Installed** templates list and select **Visual Studio Solutions**.
-
-3.  Select **Blank Solution** from the **Visual Studio Solutions** list. Type `WF45GettingStartedTutorial` in the **Name** box and then click **OK**.
-
-4.  Right-click **WF45GettingStartedTutorial** in **Solution Explorer** and choose **Add** > **New Project**.
-
-    > [!TIP]
-    > If the **Solution Explorer** window is not displayed, select **Solution Explorer** from the **View** menu.
-
-5.  Under the **Installed** category, select **Visual C#** > **Workflow** (or **Visual Basic** > **Workflow**). Select the **Activity Library** project template. Type `NumberGuessWorkflowActivities` in the **Name** box and then click **OK**.
+2.  In the **New Project** dialog, under the **Installed** category, select **Visual C#** > **Workflow** (or **Visual Basic** > **Workflow**).
 
     > [!NOTE]
     > If you don't see the **Workflow** template category, you may need to install the **Windows Workflow Foundation** component of Visual Studio. Choose the **Open Visual Studio Installer** link on the left-hand side of the **New Project** dialog. In Visual Studio Installer, select the **Individual components** tab. Then, under the **Development activities** category, select the **Windows Workflow Foundation** component. Choose **Modify** to install the component.
 
-6.  Right-click **Activity1.xaml** in **Solution Explorer** and choose **Delete**. Click **OK** to confirm.
+3. Select the **Activity Library** project template. Type `NumberGuessWorkflowActivities` in the **Name** box and then click **OK**.
+
+4.  Right-click **Activity1.xaml** in **Solution Explorer** and choose **Delete**. Click **OK** to confirm.
 
 ## Create the ReadInt activity
 
@@ -86,22 +79,24 @@ Activities are the core unit of behavior in [!INCLUDE[wf1](../../../includes/wf1
 
 15. Drag a **WriteLine** activity from the **Primitives** section of the **Toolbox** and drop it onto the **Drop activity here** label of the **Sequence** activity.
 
-16. Bind the **Text** argument of the **WriteLine** activity to the **Text** argument of the **Prompt** activity by typing `Text` into the **Enter a C# expression** or **Enter a VB expression** box in the **Properties** window, and then press the TAB key two times. This dismisses the IntelliSense list members window and saves the property value by moving the selection off the property. This property can also be set by typing `Text` into the **Enter a C# expression** or **Enter a VB expression** box on the activity itself.
+16. Bind the **Text** argument of the **WriteLine** activity to the **Text** argument of the **Prompt** activity by typing `Text` into the **Enter a C# expression** or **Enter a VB expression** box in the **Properties** window, and then press the **Tab** key two times. This dismisses the IntelliSense list members window and saves the property value by moving the selection off the property. This property can also be set by typing `Text` into the **Enter a C# expression** or **Enter a VB expression** box on the activity itself.
 
     > [!TIP]
     > If the **Properties Window** is not displayed, select **Properties Window** from the **View** menu.
 
 17. Drag a **ReadInt** activity from the **NumberGuessWorkflowActivities** section of the **Toolbox** and drop it in the **Sequence** activity so that it follows the **WriteLine** activity.
 
-18. Bind the **BookmarkName** argument of the **ReadInt** activity to the **BookmarkName** argument of the **Prompt** activity by typing `BookmarkName` into the **Enter a VB expression** box to the right of the **BookmarkName** argument in the **Properties Window**, and then press the TAB key two times to close the IntelliSense list members window and save the property.
+18. Bind the **BookmarkName** argument of the **ReadInt** activity to the **BookmarkName** argument of the **Prompt** activity by typing `BookmarkName` into the **Enter a VB expression** box to the right of the **BookmarkName** argument in the **Properties Window**, and then press the **Tab** key two times to close the IntelliSense list members window and save the property.
 
-19. Bind the **Result** argument of the **ReadInt** activity to the **Result** argument of the **Prompt** activity by typing `Result` into the **Enter a VB expression** box to the right of the **Result** argument in the **Properties Window**, and then press the TAB key two times.
+19. Bind the **Result** argument of the **ReadInt** activity to the **Result** argument of the **Prompt** activity by typing `Result` into the **Enter a VB expression** box to the right of the **Result** argument in the **Properties Window**, and then press the **Tab** key two times.
 
 20. Press **Ctrl**+**Shift**+**B** to build the solution.
 
-     For instructions on how to create a workflow by using these activities, see the next step in the tutorial, [How to: Create a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow.md).
+## Next steps
 
-## See Also
+For instructions on how to create a workflow by using these activities, see the next step in the tutorial, [How to: Create a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow.md).
+
+## See also
 
 - <xref:System.Activities.CodeActivity>
 - <xref:System.Activities.NativeActivity%601>

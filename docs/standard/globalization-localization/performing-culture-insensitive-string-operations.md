@@ -38,4 +38,5 @@ Most .NET Framework methods that perform culture-sensitive string operations by 
 
 ## See also
 
-- [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921)
+- [Sorting Weight Tables (for .NET on Windows systems)](https://www.microsoft.com/en-us/download/details.aspx?id=10921)
+- [Default Unicode Collation Element Table (for .NET Core on Linux and macOS)](https://www.unicode.org/Public/UCA/latest/allkeys.txt)

@@ -55,7 +55,7 @@ When creating an application that uses the **XmlSerializer**, you should be awar
 
 - Serialized sensitive data might be vulnerable.
 
-  After the **XmlSerializer**has serialized data, it can be stored as an XML file or other data store. If your data store is available to other processes, or is visible on an intranet or the Internet, the data can be stolen and used maliciously. For example, if you create an application that serializes orders that include credit card numbers, the data is highly sensitive. To help prevent this, always protect the store for your data and take steps to keep it private.
+  After the **XmlSerializer** has serialized data, it can be stored as an XML file or other data store. If your data store is available to other processes, or is visible on an intranet or the Internet, the data can be stolen and used maliciously. For example, if you create an application that serializes orders that include credit card numbers, the data is highly sensitive. To help prevent this, always protect the store for your data and take steps to keep it private.
 
 ## Serialization of a Simple Class
 
@@ -105,7 +105,7 @@ The following items can be serialized using the **XmLSerializer** class:
 
 ## Advantages of Using XML Serialization
 
-The **XmlSerializer**class gives you complete and flexible control when you serialize an object as XML. If you are creating an XML Web service, you can apply attributes that control serialization to classes and members to ensure that the XML output conforms to a specific schema.
+The **XmlSerializer** class gives you complete and flexible control when you serialize an object as XML. If you are creating an XML Web service, you can apply attributes that control serialization to classes and members to ensure that the XML output conforms to a specific schema.
 
 For example, **XmlSerializer** enables you to:
 

@@ -14,14 +14,14 @@ ms.workload:
 ---
 # Handling I/O errors in .NET
 
-In addition to the exceptions that can be thrown in any method call (such as an <xref:System.OutOfMemoryException> when a system is stressed or an <xref:System.NullReferernceException> due to programmer error), .NET file system methods can throw the following exceptions:
+In addition to the exceptions that can be thrown in any method call (such as an <xref:System.OutOfMemoryException> when a system is stressed or an <xref:System.NullReferenceException> due to programmer error), .NET file system methods can throw the following exceptions:
 
 - <xref:System.IO.IOException?displayProperty=nameWithType>, the base class of all <xref:System.IO> exception types. It is thrown for errors whose return codes from the operating system don't directly map to any other exception type.
 - <xref:System.IO.FileNotFoundException?displayProperty=nameWithType>.
 - <xref:System.IO.DirectoryNotFoundException?displayProperty=nameWithType>.
 - <xref:System.IO.DriveNotFoundException??displayProperty=nameWithType>.
 - <xref:System.IO.PathTooLongException?displayProperty=nameWithType>.
-- <xref:System.OperationCancelledException?displayProperty=nameWithType>.
+- <xref:System.OperationCanceledException?displayProperty=nameWithType>.
 - <xref:System.UnauthorizedAccessException?displayProperty=nameWithType>.
 - <xref:System.ArgumentException?displayProperty=nameWithType>, which is thrown for invalid path characters on .NET Framework and on .NET Core 2.0 and previous versions.
 - <xref:System.NotSupportedException?displayProperty=nameWithType>, which is thrown for invalid colons in .NET Framework.
@@ -33,7 +33,7 @@ Because the file system is an operating system resource, I/O methods in both .NE
 
 For example, on the Windows operating system, a method call that returns an error code of `ERROR_FILE_NOT_FOUND` (or 0x02) maps to a <xref:System.IO.FileNotFoundException>, and an error code of `ERROR_PATH_NOT_FOUND` (or 0x03) maps to a <xref:System.IO.DirectoryNotFoundException>.
 
-However, the precise conditions under which the operating system returns particular error codes is often undocumented or poorly documented. As a result, unexpected exceptions can occur. For example, because you are working with a directory rather than a file, you would expect that providing an invalid directory path to the <xref:System.IO.DirectoryInfo.#ctor%6A?displayProperty=nameWithType> constructor throws a <xref:System.IO.DirectoryNotFoundException>. However, it may also throw a <xref:System.IO.FileNotFoundException>.
+However, the precise conditions under which the operating system returns particular error codes is often undocumented or poorly documented. As a result, unexpected exceptions can occur. For example, because you are working with a directory rather than a file, you would expect that providing an invalid directory path to the <xref:System.IO.DirectoryInfo.%23ctor%2A?displayProperty=nameWithType> constructor throws a <xref:System.IO.DirectoryNotFoundException>. However, it may also throw a <xref:System.IO.FileNotFoundException>.
 
 ## Exception handling in I/O operations
 
@@ -46,7 +46,7 @@ Because of this reliance on the operating system, identical exception conditions
 | <xref:System.IO.DirectoryNotFoundException> | Yes | Yes |
 | <xref:System.IO.DriveNotFoundException?> | Yes | Yes |
 | <xref:System.IO.PathTooLongException> | Yes | Yes |
-| <xref:System.OperationCancelledException> | Yes | Yes |
+| <xref:System.OperationCanceledException> | Yes | Yes |
 | <xref:System.UnauthorizedAccessException> | Yes | Yes |
 | <xref:System.ArgumentException> | .NET Core 2.0 and earlier| Yes |
 | <xref:System.NotSupportedException> | No | Yes |
@@ -63,7 +63,7 @@ In addition, starting with .NET Core 2.1, validation checks for path correctness
 
 Note that, in your exception handling code, you should always handle the <xref:System.IO.IOException> last. Otherwise, because it is the base class of all other IO exceptions, the catch blocks of derived classes will not be evaluated.
 
-In the case of an <xref:System.IO.IOException>, you can get additional error information from the [IOException.HResult](xref:System.Exception.HResult) property. To convert the HResult value to a Win32 error code, you strip out the upper 16 bits of the 32-bit value. The following table lists error codes that may be wrapped in an <xref:System.IOException>.
+In the case of an <xref:System.IO.IOException>, you can get additional error information from the [IOException.HResult](xref:System.Exception.HResult) property. To convert the HResult value to a Win32 error code, you strip out the upper 16 bits of the 32-bit value. The following table lists error codes that may be wrapped in an <xref:System.IO.IOException>.
 
 | HResult | Constant | Description |
 | --- | --- | --- |

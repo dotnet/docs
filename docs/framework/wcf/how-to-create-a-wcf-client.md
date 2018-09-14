@@ -1,6 +1,6 @@
 ---
 title: "How to: Create a Windows Communication Foundation Client"
-ms.date: "03/30/2017"
+ms.date: 09/14/2018
 helpviewer_keywords:
   - "clients [WCF], running"
   - "WCF clients [WCF], running"

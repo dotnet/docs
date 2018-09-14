@@ -1,6 +1,6 @@
 ---
 title: "How to: Define a Windows Communication Foundation Service Contract"
-ms.date: "03/30/2017"
+ms.date: 09/14/2018
 helpviewer_keywords:
   - "service contracts [WCF], defining"
 dev_langs:
@@ -36,13 +36,8 @@ This is the first of six tasks required to create a basic Windows Communication 
 3. Open the IService1.cs or IService1.vb file and delete the code within the namespace declaration, leaving the namespace declaration. Inside the namespace declaration define a new interface called `ICalculator` as shown in the code below.
 
     ```csharp
-    // IService.cs
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Runtime.Serialization;
     using System.ServiceModel;
-    using System.Text;
 
     namespace GettingStartedLib
     {
@@ -62,8 +57,6 @@ This is the first of six tasks required to create a basic Windows Communication 
     ```
 
     ```vb
-    'IService.vb
-    Imports System
     Imports System.ServiceModel
 
     Namespace GettingStartedLib
@@ -84,9 +77,6 @@ This is the first of six tasks required to create a basic Windows Communication 
     ```
 
      This contract defines an online calculator. Notice the `ICalculator` interface is marked with the <xref:System.ServiceModel.ServiceContractAttribute> attribute. This attribute defines a namespace that is used to disambiguate the contract name. Each calculator operation is marked with the <xref:System.ServiceModel.OperationContractAttribute> attribute.
-
-    > [!NOTE]
-    > When using attributes to annotate an interface, member, or class, you can drop the "Attribute" part from the attribute name. So <xref:System.ServiceModel.ServiceContractAttribute> becomes `[ServiceContract]` in C#, or `<ServiceContract>` in Visual Basic.
 
 ## Next steps
 

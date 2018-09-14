@@ -1,6 +1,6 @@
 ---
 title: "How to: Implement a Windows Communication Foundation Service Contract"
-ms.date: "03/30/2017"
+ms.date: 09/14/2018
 dev_langs:
   - "csharp"
   - "vb"
@@ -19,13 +19,8 @@ The next step in creating a WCF application is to implement the service interfac
 Open the Service1.cs or Service1.vb file and add the following code:
 
 ```csharp
-//Service1.cs
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.Text;
 
 namespace GettingStartedLib
 {
@@ -68,8 +63,6 @@ namespace GettingStartedLib
 ```
 
 ```vb
-'Service1.vb
-Imports System
 Imports System.ServiceModel
 
 Namespace GettingStartedLib
@@ -119,13 +112,8 @@ Each method implements the calculator operation and writes some text to the cons
 The following code shows both the interface that defines the contract and the implementation of the interface.
 
 ```csharp
-// IService1.cs
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.Text;
 
 namespace GettingStartedLib
 {
@@ -145,13 +133,8 @@ namespace GettingStartedLib
 ```
 
 ```csharp
-// Service1.cs
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.Text;
 
 namespace GettingStartedLib
 {
@@ -194,8 +177,6 @@ namespace GettingStartedLib
 ```
 
 ```vb
-'IService.vb
-Imports System
 Imports System.ServiceModel
 
 Namespace GettingStartedLib
@@ -216,7 +197,6 @@ End Namespace
 ```
 
 ```vb
-Imports System
 Imports System.ServiceModel
 
 Namespace GettingStartedLib

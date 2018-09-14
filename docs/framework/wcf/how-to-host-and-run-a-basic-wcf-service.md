@@ -1,6 +1,6 @@
 ---
 title: "How to: Host and Run a Basic Windows Communication Foundation Service"
-ms.date: "03/30/2017"
+ms.date: 09/14/2018
 dev_langs:
   - "csharp"
   - "vb"
@@ -38,14 +38,10 @@ A complete listing of the code written in this task is provided in the example f
 Open the Program.cs or Module.vb file and enter the following code:
 
 ```csharp
-// program.cs
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.ServiceModel;
-using GettingStartedLib;
 using System.ServiceModel.Description;
+using GettingStartedLib;
 
 namespace GettingStartedHost
 {
@@ -90,8 +86,6 @@ namespace GettingStartedHost
 ```
 
 ```vb
-'Module1.vb
-Imports System
 Imports System.ServiceModel
 Imports System.ServiceModel.Description
 Imports GettingStartedLibVB.GettingStartedLib
@@ -138,18 +132,18 @@ Module Service
 End Module
 ```
 
-1. Step 1 - Creates an instance of the Uri class to hold the base address of the service. Services are identified by a URL which contains a base address and an optional URI. The base address is formatted as follows:[transport]://[machine-name or domain][:optional port #]/[optional URI segment]The base address for the calculator service uses the HTTP transport, localhost, port 8000, and the URI segment "GettingStarted"
+**Step 1** - Creates an instance of the Uri class to hold the base address of the service. Services are identified by a URL which contains a base address and an optional URI. The base address is formatted as follows:[transport]://[machine-name or domain][:optional port #]/[optional URI segment]The base address for the calculator service uses the HTTP transport, localhost, port 8000, and the URI segment "GettingStarted"
 
-2. Step 2 – Creates an instance of the <xref:System.ServiceModel.ServiceHost> class to host the service. The constructor takes two parameters, the type of the class that implements the service contract, and the base address of the service.
+**Step 2** – Creates an instance of the <xref:System.ServiceModel.ServiceHost> class to host the service. The constructor takes two parameters, the type of the class that implements the service contract, and the base address of the service.
 
-3. Step 3 – Creates a <xref:System.ServiceModel.Description.ServiceEndpoint> instance. A service endpoint is composed of an address, a binding, and a service contract. The <xref:System.ServiceModel.Description.ServiceEndpoint> constructor therefore takes the service contract interface type, a binding, and an address. The service contract is `ICalculator`, which you defined and implement in the service type. The binding used in this sample is <xref:System.ServiceModel.WSHttpBinding> which is a built-in binding that is used for connecting to endpoints that conform to the WS-* specifications. For more information about WCF bindings, see [WCF Bindings Overview](../../../docs/framework/wcf/bindings-overview.md). The address is appended to the base address to identify the endpoint. The address specified in this code is "CalculatorService" so the fully qualified address for the endpoint is `"http://localhost:8000/GettingStarted/CalculatorService"`.
+**Step 3** – Creates a <xref:System.ServiceModel.Description.ServiceEndpoint> instance. A service endpoint is composed of an address, a binding, and a service contract. The <xref:System.ServiceModel.Description.ServiceEndpoint> constructor therefore takes the service contract interface type, a binding, and an address. The service contract is `ICalculator`, which you defined and implement in the service type. The binding used in this sample is <xref:System.ServiceModel.WSHttpBinding> which is a built-in binding that is used for connecting to endpoints that conform to the WS-* specifications. For more information about WCF bindings, see [WCF Bindings Overview](../../../docs/framework/wcf/bindings-overview.md). The address is appended to the base address to identify the endpoint. The address specified in this code is "CalculatorService" so the fully qualified address for the endpoint is `"http://localhost:8000/GettingStarted/CalculatorService"`.
 
     > [!IMPORTANT]
     > Adding a service endpoint is optional when using .NET Framework 4 or later. In these versions, if no endpoints are added in code or configuration, WCF adds one default endpoint for each combination of base address and contract implemented by the service. For more information about default endpoints see [Specifying an Endpoint Address](../../../docs/framework/wcf/specifying-an-endpoint-address.md). For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).
 
-4. Step 4 – Enable metadata exchange. Clients will use metadata exchange to generate proxies that will be used to call the service operations. To enable metadata exchange create a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> instance, set it’s <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> property to `true`, and add the behavior to the <!--zz <xref:System.ServiceModel.ServiceHost.Behaviors%2A>  -->`System.ServiceModel.ServiceHost.Behaviors%2A` collection of the <xref:System.ServiceModel.ServiceHost> instance.
+**Step 4** – Enable metadata exchange. Clients will use metadata exchange to generate proxies that will be used to call the service operations. To enable metadata exchange create a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> instance, set it’s <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> property to `true`, and add the behavior to the <!--zz <xref:System.ServiceModel.ServiceHost.Behaviors%2A>  -->`System.ServiceModel.ServiceHost.Behaviors%2A` collection of the <xref:System.ServiceModel.ServiceHost> instance.
 
-5. Step 5 – Open the <xref:System.ServiceModel.ServiceHost> to listen for incoming messages. Notice the code waits for the user to hit enter. If you do not do this, the app will close immediately and the service will shut down.Also notice a  try/catch block used. After the <xref:System.ServiceModel.ServiceHost> has been instantiated, all other code is placed in a try/catch block. For more information about safely catching exceptions thrown by <xref:System.ServiceModel.ServiceHost>, see [Avoiding Problems with the Using Statement](../../../docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md)
+**Step 5** – Open the <xref:System.ServiceModel.ServiceHost> to listen for incoming messages. Notice the code waits for the user to hit enter. If you do not do this, the app will close immediately and the service will shut down.Also notice a  try/catch block used. After the <xref:System.ServiceModel.ServiceHost> has been instantiated, all other code is placed in a try/catch block. For more information about safely catching exceptions thrown by <xref:System.ServiceModel.ServiceHost>, see [Avoiding Problems with the Using Statement](../../../docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md)
 
 > [!IMPORTANT]
 > Edit App.config in GettingStartedLib to reflect the changes made in code:
@@ -172,13 +166,8 @@ The following example includes the service contract and implementation from prev
 To compile this with a command-line compiler, compile IService1.cs and Service1.cs into a class library that references `System.ServiceModel.dll`. Compile Program.cs as a console application.
 
 ```csharp
-// IService1.cs
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.Text;
 
 namespace GettingStartedLib
 {
@@ -198,13 +187,8 @@ namespace GettingStartedLib
 ```
 
 ```csharp
-// Service1.cs
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.Text;
 
 namespace GettingStartedLib
 {
@@ -247,14 +231,10 @@ namespace GettingStartedLib
 ```
 
 ```csharp
-//Program.cs
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.ServiceModel;
-using GettingStartedLib;
 using System.ServiceModel.Description;
+using GettingStartedLib;
 
 namespace GettingStartedHost
 {
@@ -299,8 +279,6 @@ namespace GettingStartedHost
 ```
 
 ```vb
-'IService1.vb
-Imports System
 Imports System.ServiceModel
 
 Namespace GettingStartedLib
@@ -321,8 +299,6 @@ End Namespace
 ```
 
 ```vb
-'Service1.vb
-Imports System
 Imports System.ServiceModel
 
 Namespace GettingStartedLib
@@ -366,8 +342,6 @@ End Namespace
 ```
 
 ```vb
-'Module1.vb
-Imports System
 Imports System.ServiceModel
 Imports System.ServiceModel.Description
 Imports GettingStartedLibVB.GettingStartedLib

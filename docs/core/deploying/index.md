@@ -56,7 +56,7 @@ It also has a number of disadvantages:
 
 - The size of your deployment package is relatively large, since you have to include .NET Core as well as your app and its third-party dependencies.
 
-  Starting with .NET Core 2.0, you can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET Core [*globalization invariant mode*](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md). Ordinarily, .NET Core on Linux relies on the [ICU libraries](https://github.com/dotnet/docs/issues/http%22//icu-project.org) for globalization support. In invariant mode, the libraries are not included with your deployment, and all cultures behave like the [invariannt culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
+  Starting with .NET Core 2.0, you can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET Core [*globalization invariant mode*](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md). Ordinarily, .NET Core on Linux relies on the [ICU libraries](https://github.com/dotnet/docs/issues/http%22//icu-project.org) for globalization support. In invariant mode, the libraries are not included with your deployment, and all cultures behave like the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
 
 - Deploying numerous self-contained .NET Core apps to a system can consume significant amounts of disk space, since each app duplicates .NET Core files.
 

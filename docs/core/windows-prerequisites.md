@@ -55,7 +55,7 @@ The following articles have a complete list of .NET Core supported operating sys
 
 ## Prerequisites with Visual Studio 2017
 
-You can use any editor to develop .NET Core applications using the .NET Core SDK. [Visual Studio 2017](#visual-studio-2017) provides an integrated development environment for .NET Core apps on Windows.
+You can use any editor to develop .NET Core applications using the .NET Core SDK. Visual Studio 2017 provides an integrated development environment for .NET Core apps on Windows.
 
 You can read more about the changes in Visual Studio 2017 in the [release notes](/visualstudio/releasenotes/vs2017-relnotes).
 

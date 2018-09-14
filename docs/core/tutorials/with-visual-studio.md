@@ -4,6 +4,7 @@ description: Learn how to build a simple .NET Core console application with C# u
 author: BillWagner
 ms.author: wiwagn
 ms.date: 09/13/2017
+ms.custom: vs-dotnet
 ---
 # Build a C# Hello World application with .NET Core in Visual Studio 2017
 

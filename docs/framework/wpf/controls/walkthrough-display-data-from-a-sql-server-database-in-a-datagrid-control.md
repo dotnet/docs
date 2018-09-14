@@ -27,7 +27,7 @@ In this walkthrough, you retrieve data from a SQL Server database and display th
   
      The Add New Item dialog box appears.  
   
-3.  In the Installed Templates pane, select **Data** and in the list of templates, select **ADO.NET Entity Data Mode**l.  
+3.  In the Installed Templates pane, select **Data** and in the list of templates, select **ADO.NET Entity Data Model**.  
   
      ![Select ADO.NET Entity Data Model](../../../../docs/framework/wpf/controls/media/datagrid-sql-ef-step1.png "DataGrid_SQL_EF_Step1")  
   

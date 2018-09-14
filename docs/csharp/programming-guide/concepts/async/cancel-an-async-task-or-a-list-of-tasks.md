@@ -120,14 +120,14 @@ The examples use the UI that [Fine-Tuning Your Async Application (C#)](../../../
 
 5.  If you don’t cancel the program, it produces the following output.
 
-    ```
+    ```text
     Ready to download.
     Length of the downloaded string: 158125.
     ```
 
      If you choose the **Cancel** button before the program finishes downloading the content, the program produces the following output.
 
-    ```
+    ```text
     Ready to download.
     Download canceled.
     ```
@@ -140,17 +140,17 @@ The examples use the UI that [Fine-Tuning Your Async Application (C#)](../../../
 
 1.  Decompress the file that you downloaded, and then start Visual Studio.
 
-2.  On the menu bar, choose **File**, **Open**, **Project/Solution**.
+2.  On the menu bar, choose **File** > **Open** > **Project/Solution**.
 
 3.  In the **Open Project** dialog box, open the folder that holds the sample code that you decompressed, and then open the solution (.sln) file for AsyncFineTuningCS.
 
 4.  In **Solution Explorer**, open the shortcut menu for the **CancelAListOfTasks** project, and then choose **Set as StartUp Project**.
 
-5.  Choose the F5 key to run the project.
+5.  Choose the **F5** key to run the project.
 
-     Choose the Ctrl+F5 keys to run the project without debugging it.
+     Choose the **Ctrl**+**F5** keys to run the project without debugging it.
 
- If you don't want to download the project, you can review the MainWindow.xaml.cs files at the end of this topic.
+If you don't want to download the project, you can review the MainWindow.xaml.cs files at the end of this topic.
 
 ### Building the Example
  To extend the example yourself, step by step, follow the instructions in the "Downloading the Example" section, but choose **CancelATask** as the **StartUp Project**. Add the following changes to that project. Asterisks mark the changes in the program.

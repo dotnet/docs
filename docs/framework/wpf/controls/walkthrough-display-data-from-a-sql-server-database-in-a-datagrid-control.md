@@ -31,29 +31,25 @@ You need the following components to complete this walkthrough:
 
 3.  In the Installed Templates pane, select **Data** and in the list of templates, select **ADO.NET Entity Data Model**.
 
-     ![Select ADO.NET Entity Data Model](../../../../docs/framework/wpf/controls/media/datagrid-sql-ef-step1.png "DataGrid_SQL_EF_Step1")
+     ![ADO.NET Entity Data Model item template](../../wcf/feature-details/media/ado-net-entity-data-model-item-template.png)
 
 4.  Name the file `AdventureWorksModel.edmx` and then click **Add**.
 
      The Entity Data Model Wizard appears.
 
-5.  In the Choose Model Contents screen, select **Generate from database** and then click **Next**.
-
-     ![Select Generate from database option](../../../../docs/framework/wpf/controls/media/datagrid-sql-ef-step2.png "DataGrid_SQL_EF_Step2")
+5.  In the Choose Model Contents screen, select **EF Designer from database** and then click **Next**.
 
 6.  In the Choose Your Data Connection screen, provide the connection to your AdventureWorksLT2008 database. For more information, see [Choose Your Data Connection Dialog Box](https://go.microsoft.com/fwlink/?LinkId=160190).
 
-     ![Provide connection to database](../../../../docs/framework/wpf/controls/media/datagrid-sql-ef-step3.png "DataGrid_SQL_EF_Step3")
+    Make sure that the name is `AdventureWorksLT2008Entities` and that the **Save entity connection settings in App.Config as** check box is selected, and then click **Next**.
 
-7.  Make sure that the name is `AdventureWorksLT2008Entities` and that the **Save entity connection settings in App.Config as** check box is selected, and then click **Next**.
-
-8.  In the Choose Your Database Objects screen, expand the Tables node, and select the **Product** and **ProductCategory** tables.
+7.  In the Choose Your Database Objects screen, expand the Tables node, and select the **Product** and **ProductCategory** tables.
 
      You can generate entity classes for all of the tables; however, in this example you only retrieve data from those two tables.
 
      ![Select Product and ProductCategory from tables](../../../../docs/framework/wpf/controls/media/datagrid-sql-ef-step4.png "DataGrid_SQL_EF_Step4")
 
-9. Click **Finish**.
+8. Click **Finish**.
 
      The Product and ProductCategory entities are displayed in the Entity Designer.
 

@@ -3,53 +3,83 @@ title: Decision table. .NET frameworks to use for Docker
 description: .NET Microservices Architecture for Containerized .NET Applications | Decision table, .NET frameworks to use for Docker
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/18/2017
+ms.date: 09/11/2018
 ---
 # Decision table: .NET frameworks to use for Docker
 
-The following summarizes whether to use .NET Framework or .NET Core, and Windows or Linux containers. Remember that for Linux containers, you need Linux-based Docker hosts (VMs or servers) and that for Windows Containers you need Windows Server based Docker hosts (VMs or servers).
-
-There are several features of your application that affect your decision. You should weigh the importance of these features when making your decision.
+The following decision table summarizes whether to use .NET Framework or .NET Core. Remember that for Linux containers, you need Linux-based Docker hosts (VMs or servers) and that for Windows Containers you need Windows Server based Docker hosts (VMs or servers).
 
 > [!IMPORTANT]
 > Your development machines will run one Docker host, either Linux or Windows. Related microservices that you want to run and test together in one solution will all need to run on the same container platform.
 
-* Your application architecture choice is **Microservices on containers**.
-    - Your .NET implementation choice should be *.NET Core*.
-    - Your container platform choice can be either *Linux containers* or *Windows containers*.
-* Your application architecture choice is a **Monolithic application**.
-    - Your .NET implementation choice can be either *.NET Core* or *.NET Framework*.
-    - If you have chosen *.NET Core*, your container platform choice can be either *Linux containers* or *Windows containers*.
-    - If you have chosen *.NET Framework*, your container platform choice must be *Windows containers*.
-* Your application is a  **New container-based development ("green-field")**.
-    - Your .NET implementation choice should be *.NET Core*.
-    - Your container platform choice can be either *Linux containers* or *Windows containers*.
-* Your application is a **Windows Server legacy app ("brown-field") migration to containers**
-    - Your .NET implementation choice is *.NET Framework* based on framework dependency.
-    - Your container platform choice must be *Windows containers* because of the .NET Framework dependency.
-* Your application's design goal is **Best-in-class performance and scalability**.
-    - Your .NET implementation choice should be *.NET Core*.
-    - Your container platform choice can be either *Linux containers* or *Windows containers*.
-* You built your application using **ASP.NET Core**.
-    - Your .NET implementation choice should be *.NET Core*.
-    - You can use the *.NET Framework* implementation, if you have other framework dependencies.
-    - If you have chosen *.NET Core*, your container platform choice can be either *Linux containers* or *Windows containers*.
-    - If you have chosen *.NET Framework*, your container platform choice must be *Windows containers*.
-* You built your application using **ASP.NET 4 (MVC 5, Web API 2, and Web Forms)**.
-    - Your .NET implementation choice is *.NET Framework* based on framework dependency.
-    - Your container platform choice must be *Windows containers* because of the .NET Framework dependency.
-* Your application uses **SignalR services**.
-    - Your .NET implementation choice can be *.NET Framework*, or *.NET Core 2.1 (when released) or later*.
-    - Your container platform choice must be *Windows containers* if you chose the SignalR implementation in .NET Framework.
-    - Your container platform choice can be either Linux containers or Windows containers if you chose the SignalR implementation in .NET Core 2.1 or later (when released).  
-    - When **SignalR services** run on *.NET Core*, you can use *Linux containers or Windows Containers*.
-* Your application uses **WCF, WF, and other legacy frameworks**.
-    - Your .NET implementation choice is *.NET Framework*, or *.NET Core (in the roadmap for a future release)*.
-    - Your container platform choice must be *Windows containers* because of the .NET Framework dependency.
-* Your application involves **Consumption of Azure services**.
-    - Your .NET implementation choice is *.NET Framework*, or *.NET Core (eventually all Azure services will provide client SDKs for .NET Core)*.
-    - Your container platform choice must be *Windows containers* if you use .NET Framework client APIs.
-    - If you use client APIs available for *.NET Core*, you can also choose between *Linux containers and Windows containers*.
+<table>
+<thead>
+<tr class="header">
+<th><strong>Architecture / App Type</strong></th>
+<th><strong>Linux containers</strong></th>
+<th><strong>Windows Containers</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Microservices on containers</td>
+<td>.NET Core</td>
+<td>.NET Core</td>
+</tr>
+<tr class="even">
+<td>Monolithic app</td>
+<td>.NET Core</td>
+<td><p>.NET Framework</p>
+<p>.NET Core</p></td>
+</tr>
+<tr class="odd">
+<td>Best-in-class performance and scalability</td>
+<td>.NET Core</td>
+<td>.NET Core</td>
+</tr>
+<tr class="even">
+<td>Windows Server legacy app ("brown-field") migration to containers</td>
+<td>--</td>
+<td>.NET Framework</td>
+</tr>
+<tr class="odd">
+<td>New container-based development ("green-field")</td>
+<td>.NET Core</td>
+<td>.NET Core</td>
+</tr>
+<tr class="even">
+<td>ASP.NET Core</td>
+<td>.NET Core</td>
+<td><p>.NET Core (recommended)</p>
+<p>.NET Framework</p></td>
+</tr>
+<tr class="odd">
+<td>ASP.NET 4 (MVC 5, Web API 2, and Web Forms)</td>
+<td>--</td>
+<td>.NET Framework</td>
+</tr>
+<tr class="even">
+<td>SignalR services</td>
+<td>.NET Core 2.1 or higher version</td>
+<td><p>.NET Framework</p>
+<p>.NET Core 2.1 or higher version</p></td>
+</tr>
+<tr class="odd">
+<td>WCF, WF, and other legacy frameworks</td>
+<td>WCF in .NET Core (only the WCF client library)</td>
+<td><p>.NET Framework</p>
+<p>WCF in .NET Core (only the WCF client library)</p></td>
+</tr>
+<tr class="even">
+<td>Consumption of Azure services</td>
+<td><p>.NET Core</p>
+<p>(eventually all Azure services will provide client SDKs for .NET Core)</p></td>
+<td><p>.NET Framework</p>
+<p>.NET Core</p>
+<p>(eventually all Azure services will provide client SDKs for .NET Core)</p></td>
+</tr>
+</tbody>
+</table>
 
 >[!div class="step-by-step"]
 [Previous](net-framework-container-scenarios.md)

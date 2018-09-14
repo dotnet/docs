@@ -9,7 +9,7 @@ Developing and deploying a Windows Communication Foundation (WCF) service that i
 
 -   Ensure that IIS, ASP.NET, WCF, and the WCF activation component are correctly installed and registered.
 
--   Create a new IIS application, or reuse an existing [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application.
+-   Create a new IIS application, or reuse an existing ASP.NET application.
 
 -   Create a .svc file for the WCF service.
 
@@ -20,17 +20,18 @@ Developing and deploying a Windows Communication Foundation (WCF) service that i
 For a detailed walkthrough of creating an IIS-hosted WCF service, see [How to: Host a WCF Service in IIS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md).
 
 ## Ensure That IIS, ASP.NET and WCF Are Correctly Installed and Registered
- WCF, IIS, and ASP.NET must be installed for IIS-hosted WCF services to function correctly. The procedures for installing WCF (as part of the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)]), ASP.NET and IIS vary depending on the operating system version being used. For more information about installing WCF and the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)], see [Microsoft .NET Framework 4 Web Installer](https://go.microsoft.com/fwlink/?LinkId=201185). Instructions for installing IIS can be found at [Installing IIS](https://go.microsoft.com/fwlink/?LinkId=201188).
 
- The installation process for the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)] automatically registers WCF with IIS if IIS is already present on the machine. If IIS is installed after the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)], an additional step is required to register WCF with IIS and [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]. You can do this as follows, depending on your operating system:
+WCF, IIS, and ASP.NET must be installed for IIS-hosted WCF services to function correctly. The procedures for installing WCF (as part of [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)]), ASP.NET, and IIS vary depending on your operating system. For more information about installing WCF and [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)], see [Microsoft .NET Framework 4 Web Installer](https://go.microsoft.com/fwlink/?LinkId=201185). To install IIS on Windows 10, open **Programs and Features** in **Control Panel** and then select **Turn Windows features on or off**. In **Windows Features**, select **Internet Information Services** and then choose **OK**.
 
--   [!INCLUDE[wxpsp2](../../../../includes/wxpsp2-md.md)], Windows 7, and [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)]: Use the [ServiceModel Registration Tool (ServiceModelReg.exe)](../../../../docs/framework/wcf/servicemodelreg-exe.md) tool to register WCF with IIS: To use this tool, type **ServiceModelReg.exe /i /x** in the Developer Command Prompt for Visual Studio. In Windows 10, you can open this command prompt by starting to type **Developer Command Prompt** in the search box on the Windows task bar, and then selecting **Developer Command Prompt for VS 2017** from the list of results.
+![Windows Features with IIS highlighted](media/windows-features-iis.png)
 
--   [!INCLUDE[wv](../../../../includes/wv-md.md)]: Install the Windows Communication Foundation Activation Components subcomponent of the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)]. To do this, in Control Panel, click **Add or Remove Programs** and then **Add\/Remove Windows Components**. This activates the **Windows Component Wizard**.
+Instructions for installing IIS on other operating systems can be found at [Install IIS on Windows Vista and Windows 7](/iis/install/installing-iis-7/installing-iis-on-windows-vista-and-windows-7) and [Install IIS 8.5 on Windows Server 2012 R2](/iis/install/installing-iis-85/installing-iis-85-on-windows-server-2012-r2).
 
--   Windows 7:
+The installation process for WinFX automatically registers WCF with IIS if IIS is already present on the machine. If IIS is installed after WinFX, an additional step is required to register WCF with IIS and ASP.NET. You can do this as follows, depending on your operating system:
 
- Finally you must verify that ASP.NET is configured to use the .NET Framework version 4. You do this by running the ASPNET_Regiis tool with the –i option. For more information, see [ASP.NET IIS Registration Tool](https://go.microsoft.com/fwlink/?LinkId=201186)
+- Windows XP, Windows 7, and Windows Server 2003: Use the [ServiceModel Registration Tool (ServiceModelReg.exe)](../../../../docs/framework/wcf/servicemodelreg-exe.md) tool to register WCF with IIS. To use this tool, type **ServiceModelReg.exe /i /x** in the [Developer Command Prompt for Visual Studio](../../tools/developer-command-prompt-for-vs.md).
+
+- Windows 7: Finally, you must verify that ASP.NET is configured to use the .NET Framework version 4. You do this by running the ASPNET_Regiis tool with the `–i` option. For more information, see [ASP.NET IIS Registration Tool](https://go.microsoft.com/fwlink/?LinkId=201186).
 
 ## Create a New IIS Application or Reuse an Existing ASP.NET Application
  IIS-hosted WCF services must reside inside of an IIS application. You can create a new IIS application to host WCF services exclusively. Alternatively, you can deploy an WCF service into an existing application that is already hosting [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] content (such as .aspx pages and ASP.NET Web services [ASMX]). For more information about these options, see the "Hosting WCF Side-by-Side with ASP.NET" and "Hosting WCF Services in ASP.NET Compatibility Mode" sections in [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md).
@@ -55,7 +56,7 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
  For more information about the syntax for .svc files, see [\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md).
 
 ## Deploy the Service Implementation to the IIS Application
- WCF services hosted in IIS use the same dynamic compilation model as [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)]. Just as with [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)], you can deploy the implementation code for IIS-hosted WCF services in several ways at various locations, as follows:
+ WCF services hosted in IIS use the same dynamic compilation model as [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)]. Just as with ASP.NET, you can deploy the implementation code for IIS-hosted WCF services in several ways at various locations, as follows:
 
 -   As a precompiled .dll file located in the global assembly cache (GAC) or in the application’s \bin directory. Precompiled binaries are not updated until a new version of the class library is deployed.
 
@@ -98,7 +99,6 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
  For example, a WCF endpoint configured to use HTTP digest authentication must reside in an IIS virtual directory that is also configured to allow HTTP digest authentication. Unmatched combinations of IIS settings and WCF endpoint settings result in an error during service activation.
 
 ## See Also
-
-- [Hosting in Internet Information Services](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)
-- [Internet Information Services Hosting Best Practices](../../../../docs/framework/wcf/feature-details/internet-information-services-hosting-best-practices.md)
-- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)
+ [Hosting in Internet Information Services](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)
+ [Internet Information Services Hosting Best Practices](../../../../docs/framework/wcf/feature-details/internet-information-services-hosting-best-practices.md)
+ [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)

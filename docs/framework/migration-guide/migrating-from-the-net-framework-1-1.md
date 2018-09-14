@@ -26,7 +26,7 @@ There are two ways to get an application that was compiled using the [!INCLUDE[n
     </configuration>
     ```
 
--   You can recompile the application with a compiler that targets the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]. If you originally used Visual Studio 2003 to develop and compile your solution, you can open the solution in Visual Studio and use the **Project Compatibility** dialog box to convert the solution and project files from the formats used by Visual Studio 2003 to the Microsoft Build Engine (MSBuild) format used by Visual Studio 2010 and later versions.
+-   You can recompile the application with a compiler that targets the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]. If you originally used Visual Studio 2003 to develop and compile your solution, you can open the solution in Visual Studio 2010 (and possibly later versions too) and use the **Project Compatibility** dialog box to convert the solution and project files from the formats used by Visual Studio 2003 to the Microsoft Build Engine (MSBuild) format used by Visual Studio 2010 and later versions.
 
 Regardless of whether you prefer to recompile or retarget your application, you must determine whether your application is affected by any changes introduced in later versions of the .NET Framework. These changes are of two kinds:
 

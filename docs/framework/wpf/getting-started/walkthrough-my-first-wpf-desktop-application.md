@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 author: mairaw
 ms.author: mairaw
+ms.custom: vs-dotnet
 ---
 # Walkthrough: My first WPF desktop application
 

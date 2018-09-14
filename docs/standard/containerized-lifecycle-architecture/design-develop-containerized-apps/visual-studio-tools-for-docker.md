@@ -4,6 +4,7 @@ description: Containerized Docker Application Lifecycle with Microsoft Platform 
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/12/2018
+ms.custom: vs-dotnet
 ---
 # Using Visual Studio Tools for Docker (Visual Studio on Windows)
 

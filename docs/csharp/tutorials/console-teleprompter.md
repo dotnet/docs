@@ -383,10 +383,10 @@ use the `config` object for the delay:
 private static async Task ShowTeleprompter(TelePrompterConfig config)
 {
     var words = ReadFrom("sampleQuotes.txt");
-    foreach (var line in words)
+    foreach (var word in words)
     {
-        Console.Write(line);
-        if (!string.IsNullOrWhiteSpace(line))
+        Console.Write(word);
+        if (!string.IsNullOrWhiteSpace(word))
         {
             await Task.Delay(config.DelayInMilliseconds);
         }
@@ -400,9 +400,9 @@ private static async Task GetInput(TelePrompterConfig config)
     {
         do {
             var key = Console.ReadKey(true);
-            if (key.KeyChar == '>')
+            if (key.Key.ToString() == "LeftArrow")
                 config.UpdateDelay(-10);
-            else if (key.KeyChar == '<')
+            else if (key.Key.ToString() == "RightArrow")
                 config.UpdateDelay(10);
         } while (!config.Done);
     };

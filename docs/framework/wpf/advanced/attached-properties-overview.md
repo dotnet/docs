@@ -102,7 +102,7 @@ The signature for the **Get*PropertyName*** accessor must be:
 
 #### The Set Accessor
 
-The signature for the `Set`*PropertyName* accessor must be:
+The signature for the **Set*PropertyName*** accessor must be:
 
 `public static void SetPropertyName(object target, object value)`
 

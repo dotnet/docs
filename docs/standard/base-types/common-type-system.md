@@ -314,7 +314,8 @@ The common type system defines how types are declared, used, and managed in the 
   
 -   A derived type can override an inherited virtual method. The overriding method provides a new definition of the method that will be invoked based on the type of the value at run time rather than the type of the variable known at compile time. A method can override a virtual method only if the virtual method is not marked as `final` and the new method is at least as accessible as the virtual method.  
   
-## See Also  
- [.NET API Browser](/dotnet/api)  
- [Common Language Runtime](../../../docs/standard/clr.md)  
- [Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)
+## See also
+
+- [.NET API Browser](/dotnet/api)  
+- [Common Language Runtime](../../../docs/standard/clr.md)  
+- [Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)

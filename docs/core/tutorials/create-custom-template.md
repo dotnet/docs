@@ -57,7 +57,7 @@ The template is finished. At this point, you have two options for template distr
 1. Create a folder for the NuGet package. For the tutorial, the folder name *GarciaSoftware.ConsoleTemplate.CSharp* is used, and the folder is created inside a *Documents\NuGetTemplates* folder in the user's profile. Create a folder named *content* inside of the new template folder to hold the project files.
 1. Copy the contents of your project folder, together with its *.template.config/template.json* file, into the *content* folder you created.
 1. Next to the *content* folder, add a [*nuspec* file](/nuget/create-packages/creating-a-package). The nuspec file is an XML manifest file that describes a package's contents and drives the process of creating the NuGet package.
-   
+
    ![Directory structure showing the layout of the NuGet package](./media/create-custom-template/nugetdirectorylayout.png)
 
 1. Inside of a **\<packageTypes>** element in the *nuspec* file, include a **\<packageType>** element with a `name` attribute value of `Template`. Both the *content* folder and the *nuspec* file should reside in the same directory. The table shows the minimum *nuspec* file elements required to produce a template as a NuGet package.
@@ -152,7 +152,7 @@ dotnet new -u GarciaSoftware.ConsoleTemplate.CSharp
 
 > [!NOTE]
 > The example is for demonstration purposes only. There isn't a `GarciaSoftware.ConsoleTemplate.CSharp` NuGet package at nuget.org or installed with the .NET Core SDK. If you run the command, no package/template is uninstalled and you receive the following exception:
-> 
+>
 > > Could not find something to uninstall called 'GarciaSoftware.ConsoleTemplate.CSharp'.
 
 If you installed the [NUnit 3 template for dotnet-new](https://www.nuget.org/packages/NUnit3.DotNetNew.Template/) and wish to uninstall it, use the following command:
@@ -203,7 +203,7 @@ dotnet new -u C:\Users\<USER>\Documents\Templates\GarciaSoftware.ConsoleTemplate
 
 ## See also
 
-[dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)  
-[dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)  
-[How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/)  
-[*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template)  
+* [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)  
+* [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)  
+* [How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/)
+* [*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template)  

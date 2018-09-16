@@ -132,11 +132,12 @@ This document lists the guidelines to consider when designing an API to be seria
      [!code-csharp[SerializationGuidelines#11](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#11)]
      [!code-vb[SerializationGuidelines#11](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#11)]  
   
-## See also  
- [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
- [Data Contract Serializer](../../../docs/framework/wcf/feature-details/data-contract-serializer.md)  
- [Types Supported by the Data Contract Serializer](../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)  
- [Binary Serialization](binary-serialization.md)  
- [Remote Objects](https://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)  
- [XML and SOAP Serialization](xml-and-soap-serialization.md)  
- [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)
+## See also
+
+- [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
+- [Data Contract Serializer](../../../docs/framework/wcf/feature-details/data-contract-serializer.md)  
+- [Types Supported by the Data Contract Serializer](../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)  
+- [Binary Serialization](binary-serialization.md)  
+- [Remote Objects](https://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)  
+- [XML and SOAP Serialization](xml-and-soap-serialization.md)  
+- [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)

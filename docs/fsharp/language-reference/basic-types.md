@@ -32,4 +32,5 @@ This topic lists the basic types that are defined in the F# language. These type
 You can perform computations with integers too big for the 64-bit integer type by using the [bigint](https://msdn.microsoft.com/library/dc8be18d-4042-46c4-b136-2f21a84f6efa) type. `bigint` is not considered a basic type; it is an abbreviation for `System.Numerics.BigInteger`.
 
 ## See also
-[F# Language Reference](index.md)
+
+- [F# Language Reference](index.md)

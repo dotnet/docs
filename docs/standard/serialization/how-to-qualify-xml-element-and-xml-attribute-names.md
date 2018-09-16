@@ -163,13 +163,13 @@ public class Book
 }
 ```
 
-## See Also
+## See also
 
-<xref:System.Xml.Serialization.XmlSerializer>
-[The XML Schema Definition Tool and XML Serialization](the-xml-schema-definition-tool-and-xml-serialization.md)
-[Introducing XML Serialization](introducing-xml-serialization.md)
-[XmlSerializer Class](xref:System.Xml.Serialization.XmlSerializer)
-[Attributes That Control XML Serialization](attributes-that-control-xml-serialization.md)
-[How to: Specify an Alternate Element Name for an XML Stream](how-to-specify-an-alternate-element-name-for-an-xml-stream.md)
-[How to: Serialize an Object](how-to-serialize-an-object.md)
-[How to: Deserialize an Object](how-to-deserialize-an-object.md)
+- <xref:System.Xml.Serialization.XmlSerializer>
+- [The XML Schema Definition Tool and XML Serialization](the-xml-schema-definition-tool-and-xml-serialization.md)
+- [Introducing XML Serialization](introducing-xml-serialization.md)
+- [XmlSerializer Class](xref:System.Xml.Serialization.XmlSerializer)
+- [Attributes That Control XML Serialization](attributes-that-control-xml-serialization.md)
+- [How to: Specify an Alternate Element Name for an XML Stream](how-to-specify-an-alternate-element-name-for-an-xml-stream.md)
+- [How to: Serialize an Object](how-to-serialize-an-object.md)
+- [How to: Deserialize an Object](how-to-deserialize-an-object.md)

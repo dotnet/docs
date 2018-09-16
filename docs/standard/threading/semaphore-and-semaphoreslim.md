@@ -40,7 +40,8 @@ The <xref:System.Threading.Semaphore?displayProperty=nameWithType> class represe
   
  Use access control security to protect a <xref:System.Threading.Semaphore> object that represents a named semaphore, preferably by using a constructor that specifies a <xref:System.Security.AccessControl.SemaphoreSecurity?displayProperty=nameWithType> object. You can also apply access control security using the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType> method, but this leaves a window of vulnerability between the time the semaphore is created and the time it is protected. Protecting semaphores with access control security helps prevent malicious attacks, but does not solve the problem of unintentional name collisions.  
   
-## See Also  
- <xref:System.Threading.Semaphore>  
- <xref:System.Threading.SemaphoreSlim>  
- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)
+## See also
+
+- <xref:System.Threading.Semaphore>  
+- <xref:System.Threading.SemaphoreSlim>  
+- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)

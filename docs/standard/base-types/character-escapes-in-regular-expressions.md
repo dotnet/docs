@@ -63,5 +63,6 @@ The backslash (\\) in a regular expression indicates one of the following:
 |`(.+)`|Match any character one or more times. This is the second capturing group.|  
 |`\r?\n`|Match zero or one occurrence of a carriage return followed by a new line.|  
   
-## See Also  
- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+## See also
+
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)

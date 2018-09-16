@@ -38,5 +38,6 @@ If you are the administrator for a server that is shared by hosting several smal
 </configuration>  
 ```  
   
-## See Also  
- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)
+## See also
+
+- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)

@@ -39,7 +39,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
 ## The XAML Language Specification  
  The XAML syntax terminology defined here is also defined or referenced within the XAML language specification. XAML is a language based on XML and follows or expands upon XML structural rules. Some of the terminology is shared from or is based on the terminology commonly used when describing the XML language or the XML document object model.  
   
- For more information about the XAML language specification, download [\[MS-XAML\]](http://go.microsoft.com/fwlink/?LinkId=114525) from the Microsoft Download Center.  
+ For more information about the XAML language specification, download [\[MS-XAML\]](https://go.microsoft.com/fwlink/?LinkId=114525) from the Microsoft Download Center.  
   
 <a name="xaml_and_clr"></a>   
 ## XAML and CLR  

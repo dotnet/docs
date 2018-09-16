@@ -19,7 +19,6 @@ The F# ecosystem contains a range of type providers for commonly used Internet a
 
 Where necessary, you can create custom type providers, or you can reference type providers that others have created. For example, your organization could have a data service that provides a large and growing number of named data sets, each with its own stable data schema. You can create a type provider that reads the schemas and presents the current data sets to the programmer in a strongly typed way.
 
-
 ## Before You Start
 
 The type provider mechanism is primarily designed for injecting stable data and service information spaces into the F# programming experience.
@@ -45,7 +44,6 @@ Before you start, you might ask the following questions:
 - Will it change during program execution?
 
 Type providers are best suited to situations where the schema is stable at runtime and during the lifetime of compiled code.
-
 
 ## A Simple Type Provider
 
@@ -87,8 +85,7 @@ type Type100 =
 
 Note that the set of types and members provided is statically known. This example doesn't leverage the ability of providers to provide types that depend on a schema. The implementation of the type provider is outlined in the following code, and the details are covered in later sections of this topic.
 
-
->[!WARNING] 
+>[!WARNING]
 There may be differences between this code and the online samples.
 
 ```fsharp
@@ -162,7 +159,6 @@ devenv.exe /debugexe fsc.exe -r:bin\Debug\HelloWorldTypeProvider.dll script.fsx
 As an alternative, open Visual Studio, open the Debug menu, choose `Debug/Attach to process…`, and attach to another `devenv` process where you’re editing your script. By using this method, you can more easily target particular logic in the type provider by interactively typing expressions into the second instance (with full IntelliSense and other features).
 
 You can disable Just My Code debugging to better identify errors in generated code. For information about how to enable or disable this feature, see [Navigating through Code with the Debugger](/visualstudio/debugger/navigating-through-code-with-the-debugger). Also, you can also set first-chance exception catching by opening the `Debug` menu and then choosing `Exceptions` or by choosing the Ctrl+Alt+E keys to open the `Exceptions` dialog box. In that dialog box, under `Common Language Runtime Exceptions`, select the `Thrown` check box.
-
 
 ### Implementation of the Type Provider
 
@@ -370,7 +366,6 @@ The example in this section provides only *erased provided types*, which are par
 
 In this example, each provided type is erased to type `obj`, and all uses of the type will appear as type `obj` in compiled code. In fact, the underlying objects in these examples are strings, but the type will appear as `System.Object` in .NET compiled code. As with all uses of type erasure, you can use explicit boxing, unboxing, and casting to subvert erased types. In this case, a cast exception that isn’t valid may result when the object is used. A provider runtime can define its own private representation type to help protect against false representations. You can’t define erased types in F# itself. Only provided types may be erased. You must understand the ramifications, both practical and semantic, of using either erased types for your type provider or a provider that provides erased types. An erased type has no real .NET type. Therefore, you cannot do accurate reflection over the type, and you might subvert erased types if you use runtime casts and other techniques that rely on exact runtime type semantics. Subversion of erased types frequently results in type cast exceptions at runtime.
 
-
 ### Choosing Representations for Erased Provided Types
 
 For some uses of erased provided types, no representation is required. For example, the erased provided type might contain only static properties and members and no constructors, and no methods or properties would return an instance of the type. If you can reach instances of an erased provided type, you must consider the following questions:
@@ -429,11 +424,9 @@ ProvidedConstructor(…, InvokeCode = (fun args -> <@@ new DataObject() @@>), �
 
 The previous section explained how to create a simple erasing type provider that provides a range of types, properties, and methods. This section also explained the concept of type erasure, including some of the advantages and disadvantages of providing erased types from a type provider, and discussed representations of erased types.
 
-
 ## A Type Provider That Uses Static Parameters
 
 The ability to parameterize type providers by static data enables many interesting scenarios, even in cases when the provider doesn't need to access any local or remote data. In this section, you’ll learn some basic techniques for putting together such a provider.
-
 
 ### Type Checked Regex Provider
 
@@ -731,16 +724,13 @@ do ()
 
 This section explained how to create a type provider that operates on its static parameters. The provider checks the static parameter and provides operations based on its value.
 
-
 ## A Type Provider That Is Backed By Local Data
 
 Frequently you might want type providers to present APIs based on not only static parameters but also information from local or remote systems. This section discusses type providers that are based on local data, such as local data files.
 
-
 ### Simple CSV File Provider
 
 As a simple example, consider a type provider for accessing scientific data in Comma Separated Value (CSV) format. This section assumes that the CSV files contain a header row followed by floating point data, as the following table illustrates:
-
 
 |Distance (meter)|Time (second)|
 |----------------|-------------|
@@ -887,11 +877,9 @@ Note the following points about the implementation:
 
 This section explained how to create a type provider for a local data source with a simple schema that's contained in the data source itself.
 
-
 ## Going Further
 
 The following sections include suggestions for further study.
-
 
 ### A Look at the Compiled Code for Erased Types
 
@@ -933,8 +921,8 @@ IL_0017:  ret
 
 As the example shows, all mentions of the type `Type1` and the `InstanceProperty` property have been erased, leaving only operations on the runtime types involved.
 
-
 ### Design and Naming Conventions for Type Providers
+
 Observe the following conventions when authoring type providers.
 
 **Providers for Connectivity Protocols** In general, names of most provider DLLs for data and service connectivity protocols, such as OData or SQL connections, should end in `TypeProvider` or `TypeProviders`. For example, use a DLL name that resembles the following string:
@@ -974,13 +962,12 @@ let data = Fabrikam.Data.Freebase.Astronomy.Asteroids
 
 For more information, see the `GetConnection` design convention that's described later in this topic.
 
-
 ### Design Patterns for Type Providers
 
 The following sections describe design patterns you can use when authoring type providers.
 
-
 #### The GetConnection Design Pattern
+
 Most type providers should be written to use the `GetConnection` pattern that's used by the type providers in FSharp.Data.TypeProviders.dll, as the following example shows:
 
 ```fsharp
@@ -1141,10 +1128,7 @@ You can often debug type providers most easily by using fsc.exe on a test script
 
   You can use print-to-stdout logging.
 
+## See also
 
-## See Also
-
-* [Type Providers](index.md)
-
-* [The Type Provider SDK](https://github.com/fsprojects/FSharp.TypeProviders.SDK)
-
+- [Type Providers](index.md)
+- [The Type Provider SDK](https://github.com/fsprojects/FSharp.TypeProviders.SDK)

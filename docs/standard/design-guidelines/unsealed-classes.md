@@ -23,7 +23,8 @@ Sealed classes cannot be inherited from, and they prevent extensibility. In cont
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
- [Designing for Extensibility](../../../docs/standard/design-guidelines/designing-for-extensibility.md)  
- [Sealing](../../../docs/standard/design-guidelines/sealing.md)
+## See also
+
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+- [Designing for Extensibility](../../../docs/standard/design-guidelines/designing-for-extensibility.md)  
+- [Sealing](../../../docs/standard/design-guidelines/sealing.md)

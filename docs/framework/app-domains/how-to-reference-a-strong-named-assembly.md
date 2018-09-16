@@ -62,7 +62,7 @@ csc /t:library myAssembly.cs /reference:myLibAssembly.dll
   
  If you have a public key file, you can use the following command instead (note the difference in case on the command-line option):  
   
- **sn -tp \<** *assembly* **>**  
+ **sn -tp \<** *public key file* **>**  
   
 ## See Also  
  [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)

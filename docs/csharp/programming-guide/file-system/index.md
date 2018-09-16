@@ -25,7 +25,7 @@ The following topics show how to use C# and the .NET Framework to perform variou
 |[How to: Create a Key In the Registry](../../../csharp/programming-guide/file-system/how-to-create-a-key-in-the-registry.md)|Shows how to write a key to the system registry.|  
   
 ## Related Sections  
- [File and Stream I/O](https://msdn.microsoft.com/library/k3352a4t)  
+ [File and Stream I/O](../../../standard/io/index.md)  
   
  [How to: Copy, Delete, and Move Files and Folders (C# Programming Guide)](../../../csharp/programming-guide/file-system/how-to-copy-delete-and-move-files-and-folders.md)  
   

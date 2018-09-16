@@ -15,7 +15,7 @@ author: "ghogen"
 manager: "douge"
 ---
 # How to: Install and Uninstall Services
-If you’re developing a Windows Service by using the .NET Framework, you can quickly install your service application by using a command-line utility called InstallUtil.exe. If you’re a developer who wants to release a Windows Service that users can install and uninstall  you should use InstallShield. See [Windows Installer Deployment](http://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0).  
+If you’re developing a Windows Service by using the .NET Framework, you can quickly install your service application by using a command-line utility called InstallUtil.exe. If you’re a developer who wants to release a Windows Service that users can install and uninstall  you should use InstallShield. See [Windows Installer Deployment](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0).  
   
 > [!WARNING]
 >  If you want to uninstall a service from your computer, don’t follow the steps in this article. Instead, find out which program or software package installed the service, and then choose **Add/Remove Programs** in Control Panel to uninstall that program. Note that many services are integral parts of Windows; if you remove them, you might cause system instability.  
@@ -55,7 +55,7 @@ If you’re developing a Windows Service by using the .NET Framework, you can qu
     installutil /u <yourproject>.exe  
     ```  
   
-3.  Sometimes, after the executable for a service is deleted, the service might still be present in the registry. In that case, use the command [sc delete](http://technet.microsoft.com/library/cc742045.aspx) to remove the entry for the service from the registry.  
+3.  Sometimes, after the executable for a service is deleted, the service might still be present in the registry. In that case, use the command [sc delete](https://technet.microsoft.com/library/cc742045.aspx) to remove the entry for the service from the registry.  
   
 ## See Also  
  [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  

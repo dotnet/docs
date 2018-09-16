@@ -48,5 +48,6 @@ The <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method accepts three
   
  For more information, see [Resolving External Resources During XSLT Processing](../../../../docs/standard/data/xml/resolving-external-resources-during-xslt-processing.md).  
   
-## See Also  
- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+## See also
+
+- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)

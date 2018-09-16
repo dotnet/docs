@@ -353,6 +353,10 @@
             "redirect_url": "/dotnet/csharp/async/"
         },
         {
+            "source_path": "docs/csharp/programming-guide/concepts/linq/cloning-vs-attaching.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq/creating-xml-trees-linq-to-xml-2#attaching-vs-cloning"
+        },
+        {
             "source_path": "docs/csharp/programming-guide/exceptions/exceptions-and-exception-handling.md",
             "redirect_url": "/dotnet/csharp/programming-guide/exceptions/index"
         },
@@ -1443,6 +1447,10 @@
             "redirect_url":"/dotnet/csharp/programming-guide/nullable-types/using-nullable-types"
         },
         {
+            "source_path":"docs/csharp/programming-guide/types/how-to-safely-cast-using-as-and-is-operators.md",
+            "redirect_url":"/dotnet/csharp/how-to/safely-cast-using-pattern-matching-is-and-as-operators"
+        },
+        {
             "source_path":"docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md",
             "redirect_url":"/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap"
         },
@@ -1475,12 +1483,28 @@
             "redirect_url":"/dotnet/standard/threading/using-threads-and-threading"
         },
         {
+            "source_path":"docs/framework/data/wcf/writing-a-windows-store-app-that-consumes-an-odata-service.md",
+            "redirect_url":"/dotnet/framework/data/wcf/"
+        },
+        {
             "source_path":"docs/framework/wcf/feature-details/migrate-asp-net-web-service-to-wcf.md",
             "redirect_url":"/dotnet/framework/wcf/feature-details/adopting-wcf"
         },
         {
             "source_path":"docs/framework/wcf/feature-details/migrate-asp-net-web-service-client-to-wcf.md",
             "redirect_url":"/dotnet/framework/wcf/feature-details/adopting-wcf"
+        },
+        {
+            "source_path":"docs/csharp/programming-guide/statements-expressions-operators/how-to-use-operator-overloading-to-create-a-complex-number-class.md",
+            "redirect_url":"/dotnet/csharp/language-reference/keywords/operator"
+        },
+        {
+            "source_path":"docs/fsharp/language-reference/code-formatting-guidelines.md",
+            "redirect_url":"/dotnet/fsharp/style-guide/formatting"
+        },
+        {
+            "source_path":"docs/csharp/programming-guide/arrays/passing-arrays-using-ref-and-out.md",
+            "redirect_url":"/dotnet/csharp/programming-guide/arrays"
         }
     ]
 }

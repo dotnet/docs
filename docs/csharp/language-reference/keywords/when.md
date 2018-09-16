@@ -41,8 +41,8 @@ The following example uses the `when` keyword to test for `Shape` objects that h
 
  [!code-csharp[when-with-case#1](../../../../samples/snippets/csharp/language-reference/keywords/when/when.cs#1)]  
 
-## See also 
-  [switch statement](switch.md)  
-  [try/catch statement](try-catch.md)  
-  [try/catch/finally statement](try-catch-finally.md) 
+## See also
 
+- [switch statement](switch.md)  
+- [try/catch statement](try-catch.md)  
+- [try/catch/finally statement](try-catch-finally.md) 

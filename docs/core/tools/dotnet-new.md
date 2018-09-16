@@ -16,25 +16,31 @@ ms.date: 07/31/2018
 ## Synopsis
 
 # [.NET Core 2.1](#tab/netcore21)
-```
+
+```console
 dotnet new <TEMPLATE> [--force] [-i|--install] [-lang|--language] [-n|--name] [--nuget-source] [-o|--output]
     [-u|--uninstall] [Template options]
 dotnet new <TEMPLATE> [-l|--list] [--type]
 dotnet new [-h|--help]
 ```
+
 # [.NET Core 2.0](#tab/netcore20)
-```
+
+```console
 dotnet new <TEMPLATE> [--force] [-i|--install] [-lang|--language] [-n|--name] [-o|--output] [-u|--uninstall] [Template options]
 dotnet new <TEMPLATE> [-l|--list] [--type]
 dotnet new [-h|--help]
 ```
+
 # [.NET Core 1.x](#tab/netcore1x)
-```
+
+```console
 dotnet new <TEMPLATE> [-lang|--language] [-n|--name] [-o|--output] [-all|--show-all] [-h|--help] [Template options]
 dotnet new <TEMPLATE> [-l|--list]
 dotnet new [-all|--show-all]
 dotnet new [-h|--help]
 ```
+
 ---
 
 ## Description
@@ -278,9 +284,11 @@ Each project template may have additional options available. The core templates 
 
 **web**
 
-`--use-launch-settings` - Includes *launchSettings.json* in the generated template output.
+`--exclude-launch-settings` - Exclude *launchSettings.json* from the generated template.
 
 `--no-restore` - Doesn't execute an implicit restore during project creation.
+
+`--no-https` - Project doesn't require HTTPS. This option only applies if `IndividualAuth` or `OrganizationalAuth` are not being used.
 
 **webapi**
 
@@ -305,7 +313,7 @@ Each project template may have additional options available. The core templates 
 
 `-r|--org-read-access` - Allows this application read-access to the directory. Only applies to `SingleOrg` or `MultiOrg` authentication.
 
-`--use-launch-settings` - Includes *launchSettings.json* in the generated template output.
+`--exclude-launch-settings` - Exclude *launchSettings.json* from the generated template.
 
 `-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
 
@@ -344,7 +352,7 @@ Each project template may have additional options available. The core templates 
 
 `-r|--org-read-access` - Allows this application read-access to the directory. Only applies to `SingleOrg` or `MultiOrg` authentication.
 
-`--use-launch-settings` - Includes *launchSettings.json* in the generated template output.
+`--exclude-launch-settings` - Exclude *launchSettings.json* from the generated template.
 
 `--use-browserlink` - Includes BrowserLink in the project.
 
@@ -522,7 +530,7 @@ Create a *global.json* in the current directory setting the SDK version to 2.0.0
 
 ## See also
 
-[Custom templates for dotnet new](custom-templates.md)  
-[Create a custom template for dotnet new](~/docs/core/tutorials/create-custom-template.md)  
-[dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)  
-[Available templates for dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new)
+* [Custom templates for dotnet new](custom-templates.md)  
+* [Create a custom template for dotnet new](~/docs/core/tutorials/create-custom-template.md)  
+* [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)  
+* [Available templates for dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new)

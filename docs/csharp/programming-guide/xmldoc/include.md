@@ -18,7 +18,7 @@ ms.assetid: a8a70302-6196-4643-bd09-ef33f411f18f
   
 #### Parameters  
  `filename`  
- The name of the XML file containing the documentation. The file name can be qualified with a path. Enclose `filename` in single quotation marks (' ').  
+ The name of the XML file containing the documentation. The file name can be qualified with a path relative to the source code file. Enclose `filename` in single quotation marks (' ').  
   
  `tagpath`  
  The path of the tags in `filename` that leads to the tag `name`. Enclose the path in single quotation marks (' ').  
@@ -83,6 +83,7 @@ The summary for this other type.
 </doc>   
 ```  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

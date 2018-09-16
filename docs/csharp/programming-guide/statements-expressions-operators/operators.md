@@ -157,11 +157,12 @@ a = (b = c);
 |`a = (b + c) * (d - e)`|a, b, c, +, d, e, -, *, =|  
   
 ## Operator Overloading  
- You can change the behavior of operators for custom classes and structs. This process is referred to as *operator overloading*. For more information, see [Overloadable Operators](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md).  
+ You can change the behavior of operators for custom classes and structs. This process is referred to as *operator overloading*. For more information, see [Overloadable Operators](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md) and the [operator](../../../csharp/language-reference/keywords/operator.md) keyword article.  
   
 ## Related Sections  
  For more information, see [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md) and [C# Operators](../../../csharp/language-reference/operators/index.md).  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Statements, Expressions, and Operators](../../../csharp/programming-guide/statements-expressions-operators/index.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Statements, Expressions, and Operators](../../../csharp/programming-guide/statements-expressions-operators/index.md)

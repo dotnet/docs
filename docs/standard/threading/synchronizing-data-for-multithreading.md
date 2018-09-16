@@ -61,9 +61,10 @@ When multiple threads can make calls to the properties and methods of a single o
 ## Synchronized Context  
  You can use the **SynchronizationAttribute** on any **ContextBoundObject** to synchronize all instance methods and fields. All objects in the same context domain share the same lock. Multiple threads are allowed to access the methods and fields, but only a single thread is allowed at any one time.  
   
-## See Also  
- <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>  
- [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)  
- [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md)  
- [SyncLock Statement](~/docs/visual-basic/language-reference/statements/synclock-statement.md)  
- [lock Statement](~/docs/csharp/language-reference/keywords/lock-statement.md)
+## See also
+
+- <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>  
+- [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)  
+- [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md)  
+- [SyncLock Statement](~/docs/visual-basic/language-reference/statements/synclock-statement.md)  
+- [lock Statement](~/docs/csharp/language-reference/keywords/lock-statement.md)

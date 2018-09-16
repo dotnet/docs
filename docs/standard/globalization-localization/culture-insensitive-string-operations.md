@@ -26,5 +26,6 @@ Culture-sensitive string operations can be an advantage if you are creating appl
   
  Whether or not you are developing an application that includes code to handle localization and globalization issues, you should be aware of the .NET Framework methods that retrieve culture-sensitive results by default. The purpose of this topic is to illustrate the correct way for your applications to use these methods to obtain culture-insensitive results.  
   
-## See Also  
- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)
+## See also
+
+- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)

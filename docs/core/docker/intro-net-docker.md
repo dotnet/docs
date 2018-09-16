@@ -121,7 +121,7 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 * [Windows Communication Framework (WCF) images on GitHub](https://github.com/microsoft/wcf-docker)
 
-* [Windows Communication Framework (WCF) Docker samples using .NET Full Framework 4.6.2](https://github.com/Microsoft/wcf-docker-samples)
+* [Windows Communication Framework (WCF) Docker samples using .NET Framework 4.6.2](https://github.com/Microsoft/wcf-docker-samples)
 
 #### Internet Information Server (IIS)
 
@@ -141,11 +141,11 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 * [Microsoft SQL Server Developer Edition images for Windows Containers on DockerHub](https://hub.docker.com/r/microsoft/mssql-server-windows-developer/)
 
-#### Visual Studio Team Services (VSTS) agent
+#### Azure DevOps Services agent
 
-* [Visual Studio Team Services (VSTS) agent images on DockerHub](https://hub.docker.com/r/microsoft/vsts-agent/)
+* [Azure DevOps Services agent images on DockerHub](https://hub.docker.com/r/microsoft/vsts-agent/)
 
-* [Visual Studio Team Services (VSTS) agent images on GitHub](https://github.com/Microsoft/vsts-agent-docker)
+* [Azure DevOps Services agent images on GitHub](https://github.com/Microsoft/vsts-agent-docker)
 
 #### Operations Management Suite (OMS) Linux agent
 

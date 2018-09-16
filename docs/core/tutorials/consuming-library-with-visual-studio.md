@@ -7,6 +7,7 @@ ms.date: 06/05/2018
 dev_langs: 
   - "csharp"
   - "vb"
+ms.custom: vs-dotnet
 ---
 
 # Consuming a .NET Standard library in Visual Studio 2017

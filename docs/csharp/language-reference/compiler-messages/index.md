@@ -8,13 +8,14 @@ helpviewer_keywords:
 ms.assetid: 57262ab1-6c50-4f9c-81ad-9fba48477416
 ---
 # C# Compiler Errors
+
 Some C# compiler errors have corresponding topics that explain why the error is generated, and, in some cases, how to fix the error. Use one of the following steps to see whether help is available for a particular error message.  
   
--   Find the error number (for example, CS0029) in the [Output Window](/visualstudio/ide/reference/output-window), and then search for it on Microsoft Docs.  
+- Find the error number (for example, CS0029) in the [Output Window](/visualstudio/ide/reference/output-window), and then search for it on Microsoft Docs.  
   
--   Choose the error number (for example, CS0029) in the [Output Window](/visualstudio/ide/reference/output-window), and then choose the F1 key.  
+- Choose the error number (for example, CS0029) in the [Output Window](/visualstudio/ide/reference/output-window), and then choose the F1 key.  
   
--   In the Index, enter the error number in the **Look for** box.  
+- In the Index, enter the error number in the **Look for** box.  
   
  If none of these steps leads to information about your error, go to the end of this page, and send feedback that includes the number or text of the error.  
   
@@ -22,9 +23,10 @@ Some C# compiler errors have corresponding topics that explain why the error is 
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
-## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [Sorry, we don't have specifics on this C# error](../../../csharp/misc/sorry-we-don-t-have-specifics-on-this-csharp-error.md)  
- [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp)  
- [/warn (C# Compiler Options)](../../../csharp/language-reference/compiler-options/warn-compiler-option.md)  
- [/nowarn (C# Compiler Options)](../../../csharp/language-reference/compiler-options/nowarn-compiler-option.md)
+## See Also
+
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+- [Sorry, we don't have specifics on this C# error](../../../csharp/misc/sorry-we-don-t-have-specifics-on-this-csharp-error.md)  
+- [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp)  
+- [/warn (C# Compiler Options)](../../../csharp/language-reference/compiler-options/warn-compiler-option.md)  
+- [/nowarn (C# Compiler Options)](../../../csharp/language-reference/compiler-options/nowarn-compiler-option.md)

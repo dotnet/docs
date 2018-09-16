@@ -59,7 +59,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**New**|Generates a new .pfx that is not verifiable through a Certificate Authority (CA). For more information about the types of certificates used for signing [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] deployments, see [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview).|  
 |**Password**|Provides an area to type the password used for signing with this certificate. If not applicable, can be left blank.|  
 |**Sign with stored certificate**|Displays a selectable list of digital certificates stored in your computer's certificate store.|  
-|**TimeStamping URI**|Displays the Uniform Resource Locator (URI) of a digital timestamping service. Timestamping the manifests prevents you from having to re-sign the manifests if your digital certificate expires before you deploy the next version of your application. For more information, see [Windows root certificate program members](http://go.microsoft.com/fwlink/?LinkId=159000) and [ClickOnce and Authenticode](/visualstudio/deployment/clickonce-and-authenticode).|  
+|**TimeStamping URI**|Displays the Uniform Resource Locator (URI) of a digital timestamping service. Timestamping the manifests prevents you from having to re-sign the manifests if your digital certificate expires before you deploy the next version of your application. For more information, see [Windows root certificate program members](https://go.microsoft.com/fwlink/?LinkId=159000) and [ClickOnce and Authenticode](/visualstudio/deployment/clickonce-and-authenticode).|  
 |**Don't Sign**|Allows you to save the manifest without adding a signature from a digital certificate.|  
   
 ## Tab and Panel Descriptions  
@@ -121,7 +121,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
   
 |UI Element|Description|  
 |----------------|-----------------|  
-|**Permission set type**|The minimum permission set required by this application to run on the client. For a description of these permission sets and which permissions they do or do not demand, see [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3).|  
+|**Permission set type**|The minimum permission set required by this application to run on the client. For a description of these permission sets and which permissions they do or do not demand, see [NIB: Named Permission Sets](https://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3).|  
 |**Details**|The XML created for the application manifest to represent the permission set. Unless you have a good understanding of the application manifest XML format, you should not edit this XML manually. For more information, see [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest).|  
   
 ### Deployment Manifest Tab  

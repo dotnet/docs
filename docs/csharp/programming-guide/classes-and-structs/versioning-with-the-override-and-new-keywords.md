@@ -72,8 +72,9 @@ The C# language is designed so that versioning between [base](../../../csharp/la
   
  For more examples of `new` and `override`, see [Knowing When to Use Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md).  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
+- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
+- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)

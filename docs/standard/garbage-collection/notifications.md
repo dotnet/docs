@@ -116,5 +116,6 @@ There are situations in which a full garbage collection (that is, a generation 2
  [!code-csharp[GCNotification#1](../../../samples/snippets/csharp/VS_Snippets_CLR/GCNotification/cs/Program.cs#1)]
  [!code-vb[GCNotification#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GCNotification/vb/program.vb#1)]  
   
-## See Also  
- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)
+## See also
+
+- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)

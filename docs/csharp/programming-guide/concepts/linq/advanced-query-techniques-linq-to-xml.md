@@ -20,5 +20,6 @@ This section provides examples of more advanced [!INCLUDE[sqltecxlinq](~/include
 |[How to: Modify an Office Open XML Document (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-modify-an-office-open-xml-document.md)|Presents code that opens, modifies, and saves an Office Open XML Document.|  
 |[How to: Populate an XML Tree from the File System (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-populate-an-xml-tree-from-the-file-system.md)|Presents code that creates an XML tree from the file system.|  
   
-## See Also  
- [Querying XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)
+## See Also
+
+- [Querying XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)

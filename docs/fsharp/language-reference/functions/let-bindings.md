@@ -37,7 +37,7 @@ The *body-expression* is the expression in which the names are used. The body ex
 A `let` binding can appear at the module level, in the definition of a class type, or in local scopes, such as in a function definition. A `let` binding at the top level in a module or in a class type does not need to have a body expression, but at other scope levels, the body expression is required. The bound names are usable after the point of definition, but not at any point before the `let` binding appears, as is illustrated in the following code.
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet1105.fs)]
-    
+
 ## Function Bindings
 
 Function bindings follow the rules for value bindings, except that function bindings include the function name and the parameters, as shown in the following code.
@@ -81,7 +81,7 @@ A `let` binding at the module level, in a type, or in a computation expression c
 Attributes can be applied to top-level `let` bindings in a module, as shown in the following code.
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet1111.fs)]
-    
+
 ## Scope and Accessibility of Let Bindings
 
 The scope of an entity declared with a let binding is limited to the portion of the containing scope (such as a function, module, file or class) after the binding appears. Therefore, it can be said that a let binding introduces a name into a scope. In a module, a let-bound value or function is accessible to clients of a module as long as the module is accessible, since the let bindings in a module are compiled into public functions of the module. By contrast, let bindings in a class are private to the class.
@@ -108,8 +108,7 @@ Some modules have the attribute [RequireQualifiedAccess](https://msdn.microsoft.
 
 For more information on modules and access control, see [Modules](../modules.md) and [Access Control](../access-control.md).
 
-## See Also
+## See also
 
-[Functions](index.md)
-
-[`let` Bindings in Classes](../members/let-bindings-in-classes.md)
+- [Functions](index.md)
+- [`let` Bindings in Classes](../members/let-bindings-in-classes.md)

@@ -122,6 +122,16 @@ The constant expression is evaluated as follows:
 The following example combines the type and constant patterns to test whether an object is a `Dice` instance and, if it is, to determine whether the value of a dice roll is 6.
 
 [!code-csharp[is#7](../../../../samples/snippets/csharp/language-reference/keywords/is/is-const-pattern7.cs#7)]
+
+Checking for `null` can be performed using the constant pattern. The `null` keyword is supported by the `is` statement. Its syntax is:
+
+```csharp 
+   expr is null
+```
+
+The following example shows a comparison of `null` checks:
+
+[!code-csharp[is#11](../../../../samples/snippets/csharp/language-reference/keywords/is/is-const-pattern11.cs#11)]
  
 ### <a name="var" /> var pattern </a>
 
@@ -141,9 +151,10 @@ Note that if *expr* is `null`, the `is` expression still is true and assigns `nu
   
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [typeof](../../../csharp/language-reference/keywords/typeof.md)  
- [as](../../../csharp/language-reference/keywords/as.md)  
- [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)
+## See also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [typeof](../../../csharp/language-reference/keywords/typeof.md)  
+- [as](../../../csharp/language-reference/keywords/as.md)  
+- [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)

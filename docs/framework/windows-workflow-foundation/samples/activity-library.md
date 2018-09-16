@@ -44,7 +44,7 @@ This section contains samples that demonstrate advanced custom activities in Win
  Demonstrates how to use the ADO.NET Entity Framework with Windows Workflow Foundation to simplify data access.  
   
  [Database Access Activities](../../../../docs/framework/windows-workflow-foundation/samples/database-access-activities.md)  
- Demonstrates how to create activities that allow accessing databases to retrieve or modify information and use [ADO.NET](http://go.microsoft.com/fwlink/?LinkId=166081) to access the database.  
+ Demonstrates how to create activities that allow accessing databases to retrieve or modify information and use [ADO.NET](https://go.microsoft.com/fwlink/?LinkId=166081) to access the database.  
   
  [CommentOut Activity](../../../../docs/framework/windows-workflow-foundation/samples/commentout-activity.md)  
  Demonstrates how to write a custom activity that removes other activities from the path of execution, effectively commenting them out.  

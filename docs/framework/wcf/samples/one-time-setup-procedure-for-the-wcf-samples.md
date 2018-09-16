@@ -17,9 +17,9 @@ Most of the Windows Communication Foundation (WCF) samples are hosted in Interne
   
 2.  Ensure that [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] is installed. Search the following directory for v4.0 (or later): **\Windows\Microsoft.NET\Framework**  
   
-3.  If [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] is not installed, and your operating system is not Windows Server 2008 SP2 or later, install [Hotfix 251798](http://go.microsoft.com/fwlink/?LinkId=184693).  
+3.  If [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] is not installed, and your operating system is not Windows Server 2008 SP2 or later, install [Hotfix 251798](https://go.microsoft.com/fwlink/?LinkId=184693).  
   
-4.  Run the following commands. For more information about why these commands must be run, see [IIS Hosted Service Fails](http://msdn.microsoft.com/library/ee5499fc-1b10-4cda-a9b1-13dba70f05f8).  
+4.  Run the following commands. For more information about why these commands must be run, see [IIS Hosted Service Fails](https://msdn.microsoft.com/library/ee5499fc-1b10-4cda-a9b1-13dba70f05f8).  
   
     > [!WARNING]
     >  If IIS is reinstalled, the following commands will need to be run again.  
@@ -36,7 +36,7 @@ Most of the Windows Communication Foundation (WCF) samples are hosted in Interne
   
 6.  Check for the following default directory: \<InstallDrive>:**\WF_WCF_Samples**. If the samples were previously installed, this is the default directory.  
   
-7.  If the samples are not installed, install them from the samples download location for [Visual C#](http://go.microsoft.com/fwlink/?LinkId=190939) or [Visual Basic](http://go.microsoft.com/fwlink/?LinkID=193373).  
+7.  If the samples are not installed, install them from the samples download location for [Visual C#](https://go.microsoft.com/fwlink/?LinkId=190939) or [Visual Basic](https://go.microsoft.com/fwlink/?LinkID=193373).  
   
 8.  After installing the samples, go to : \<InstallDrive>:**\WF_WCF_Samples\WCF\Setup\\**  
   

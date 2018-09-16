@@ -46,9 +46,9 @@ To create an Application Insights resource, follow the instructions in the artic
 
 ## Microsoft Operations Management Suite
 
-[Operations Management Suite](http://microsoft.com/oms) is a simplified IT management solution that provides log analytics, automation, backup, and site recovery. Based on [queries](https://blogs.technet.microsoft.com/msoms/2016/01/21/easy-microsoft-operations-management-suite-search-queries/) in Operations Management Suite, you can raise [alerts](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-monitoring-alerts) and set remediation via [Azure Automation](https://docs.microsoft.com/azure/automation/). It also seamlessly integrates with your existing management solutions to provide a single pane-of-glass view. Operations Management Suite helps you to manage and protect your on-premises and cloud infrastructure.
+[Operations Management Suite](https://microsoft.com/oms) is a simplified IT management solution that provides log analytics, automation, backup, and site recovery. Based on [queries](https://blogs.technet.microsoft.com/msoms/2016/01/21/easy-microsoft-operations-management-suite-search-queries/) in Operations Management Suite, you can raise [alerts](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-monitoring-alerts) and set remediation via [Azure Automation](https://docs.microsoft.com/azure/automation/). It also seamlessly integrates with your existing management solutions to provide a single pane-of-glass view. Operations Management Suite helps you to manage and protect your on-premises and cloud infrastructure.
 
-### [Operations Management Suite](http://microsoft.com/oms) Container Solution for Docker
+### [Operations Management Suite](https://microsoft.com/oms) Container Solution for Docker
 
 In addition to providing valuable services on its own, the Operations Management Suite Container Solution can manage and monitor Docker hosts and containers by showing information about where your containers and container hosts are, which containers are running or failed, and Docker daemon and container logs sent to *stdout* and *stderr*. It also shows performance metrics such as CPU, memory, network, and storage for the container and hosts to help you troubleshoot and find noisy neighbor containers.
 
@@ -88,7 +88,7 @@ Figure 6-3: Performance metrics of Docker hosts shown by Operations Management S
 
 Saving queries is also a standard feature in Operations Management Suite and can help you keep queries you've found useful and discover trends in your system.
 
-**More info** To find information on installing and configuring the Docker container solution in [Operations Management Suite](http://microsoft.com/oms), go to <https://docs.microsoft.com/azure/log-analytics/log-analytics-containers>.
+**More info** To find information on installing and configuring the Docker container solution in [Operations Management Suite](https://microsoft.com/oms), go to <https://docs.microsoft.com/azure/log-analytics/log-analytics-containers>.
 
 >[!div class="step-by-step"]
 [Previous](manage-production-docker-environments.md)

@@ -182,7 +182,8 @@ ms.author: "mairaw"
 |<xref:System.Linq.IOrderedQueryable%601>|Yes||  
 |<xref:System.Linq.IQueryable%601>|Yes||  
   
-## See Also  
- [Covariance and Contravariance (C#)](../../csharp/programming-guide/concepts/covariance-contravariance/index.md)  
- [Covariance and Contravariance (Visual Basic)](../../visual-basic/programming-guide/concepts/covariance-contravariance/index.md)    
- [Variance in Delegates](https://msdn.microsoft.com/library/e3b98197-6c5b-4e55-9c6e-9739b60645ca)
+## See also
+
+- [Covariance and Contravariance (C#)](../../csharp/programming-guide/concepts/covariance-contravariance/index.md)  
+- [Covariance and Contravariance (Visual Basic)](../../visual-basic/programming-guide/concepts/covariance-contravariance/index.md)    
+- [Variance in Delegates](https://msdn.microsoft.com/library/e3b98197-6c5b-4e55-9c6e-9739b60645ca)

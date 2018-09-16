@@ -19,6 +19,6 @@ The `default` keyword can be used in the `switch` statement or in a default valu
 
 ## See also
 
- [C# Reference](../index.md)  
- [C# Programming Guide](../../programming-guide/index.md)  
- [C# Keywords](index.md)  
+- [C# Reference](../index.md)  
+- [C# Programming Guide](../../programming-guide/index.md)  
+- [C# Keywords](index.md)  

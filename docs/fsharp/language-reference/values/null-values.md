@@ -7,8 +7,8 @@ ms.date: 05/16/2016
 
 This topic describes how the null value is used in F#.
 
-
 ## Null Value
+
 The null value is not normally used in F# for values or variables. However, null appears as an abnormal value in certain situations. If a type is defined in F#, null is not permitted as a regular value unless the [AllowNullLiteral](https://msdn.microsoft.com/library/4f315196-f444-4cca-ba07-1176ff71eb0f) attribute is applied to the type. If a type is defined in some other .NET language, null is a possible value, and when you are interoperating with such types, your F# code might encounter null values.
 
 For a type defined in F# and used strictly from F#, the only way to create a null value using the F# library directly is to use [Unchecked.defaultof](https://msdn.microsoft.com/library/9ff97f2a-1bd4-4f4c-afbe-5886a74ab977) or [Array.zeroCreate](https://msdn.microsoft.com/library/fa5b8e7a-1b5b-411c-8622-b58d7a14d3b2). However, for an F# type that is used from other .NET languages, or if you are using that type with an API that is not written in F#, such as the .NET Framework, null values can occur.
@@ -31,7 +31,7 @@ You can use the following code to check if an arbitrary value is null.
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet703.fs)]
 
-## See Also
-[Values](index.md)
+## See also
 
-[Match Expressions](../match-expressions.md)
+- [Values](index.md)
+- [Match Expressions](../match-expressions.md)

@@ -42,6 +42,6 @@ The `Color.ToString(System.String)` method can then be used to display the enume
 [!code-csharp[Formatting.Enum#7](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.Enum/cs/enum1.cs#7)]
 [!code-vb[Formatting.Enum#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Enum/vb/enum1.vb#7)]
 
-## See Also
+## See also
 
-[Formatting Types](formatting-types.md)
+- [Formatting Types](formatting-types.md)

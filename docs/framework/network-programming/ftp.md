@@ -20,6 +20,6 @@ The .NET Framework provides comprehensive support for the FTP protocol with the 
 ## See Also  
  [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)  
  [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)  
- [FTP Client Technology Sample](http://go.microsoft.com/fwlink/?LinkID=179557)  
- [FTP Explorer Technology Sample](http://go.microsoft.com/fwlink/?LinkID=179569)  
+ [FTP Client Technology Sample](https://go.microsoft.com/fwlink/?LinkID=179557)  
+ [FTP Explorer Technology Sample](https://go.microsoft.com/fwlink/?LinkID=179569)  
  [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)

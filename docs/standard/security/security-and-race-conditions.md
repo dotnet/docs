@@ -32,7 +32,7 @@ End Sub
 ```csharp  
 void Dispose()   
 {  
-    if( myObj != null )   
+    if (myObj != null)   
     {  
         Cleanup(myObj);  
         myObj = null;  
@@ -53,7 +53,7 @@ Sub SomeSecureFunction()
     If SomeDemandPasses() Then  
         fCallersOk = True  
         DoOtherWork()  
-        fCallersOk = False()  
+        fCallersOk = False  
     End If  
 End Sub  
   
@@ -70,16 +70,16 @@ End Sub
 ```csharp  
 void SomeSecureFunction()   
 {  
-    if(SomeDemandPasses())   
+    if (SomeDemandPasses())   
     {  
         fCallersOk = true;  
         DoOtherWork();  
-        fCallersOk = false();  
+        fCallersOk = false;  
     }  
 }  
 void DoOtherWork()   
 {  
-    if( fCallersOK )   
+    if (fCallersOK)   
     {  
         DoSomethingTrusted();  
     }  
@@ -98,5 +98,6 @@ void DoOtherWork()
 ## Race Conditions in Finalizers  
  Race conditions can also occur in an object that references a static or unmanaged resource that it then frees in its finalizer. If multiple objects share a resource that is manipulated in a class's finalizer, the objects must synchronize all access to that resource.  
   
-## See Also  
- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+## See also
+
+- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)

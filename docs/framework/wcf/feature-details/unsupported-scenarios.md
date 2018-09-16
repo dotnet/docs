@@ -64,7 +64,7 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
   
 -   Do a `p/invoke` of `CertGetCertificateContextProperty`, and inspect `dwProvType` on the returned `CertGetCertificateContextProperty`.  
   
--   Use the  `certutil` command from the command line for querying certificates. For more information, see [Certutil tasks for troubleshooting certificates](http://go.microsoft.com/fwlink/?LinkId=120056).  
+-   Use the  `certutil` command from the command line for querying certificates. For more information, see [Certutil tasks for troubleshooting certificates](https://go.microsoft.com/fwlink/?LinkId=120056).  
   
 ## Message Security Fails if Using ASP.NET Impersonation and ASP.NET Compatibility Is Required  
  WCF does not support the following combination of settings because they can prevent client authentication from occurring:  

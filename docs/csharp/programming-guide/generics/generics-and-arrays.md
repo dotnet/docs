@@ -13,9 +13,10 @@ In C# 2.0 and later, single-dimensional arrays that have a lower bound of zero a
   
  [!code-csharp[csProgGuideGenerics#35](../../../csharp/programming-guide/generics/codesnippet/CSharp/generics-and-arrays_1.cs)]  
   
-## See Also  
- <xref:System.Collections.Generic>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Generics](../../../csharp/programming-guide/generics/index.md)  
- [Arrays](../../../csharp/programming-guide/arrays/index.md)  
- [Generics](~/docs/standard/generics/index.md)
+## See Also
+
+- <xref:System.Collections.Generic>  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Generics](../../../csharp/programming-guide/generics/index.md)  
+- [Arrays](../../../csharp/programming-guide/arrays/index.md)  
+- [Generics](~/docs/standard/generics/index.md)

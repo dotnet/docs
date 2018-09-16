@@ -7,7 +7,6 @@ ms.date: 05/16/2016
 
 A *method* is a function that is associated with a type. In object-oriented programming, methods are used to expose and implement the functionality and behavior of objects and types.
 
-
 ## Syntax
 
 ```fsharp
@@ -43,6 +42,7 @@ override self-identifier.method-name parameter-list [ : return-type ] =
 ```
 
 ## Remarks
+
 In the previous syntax, you can see the various forms of method declarations and definitions. In longer method bodies, a line break follows the equal sign (=), and the whole method body is indented.
 
 Attributes can be applied to any method declaration. They precede the syntax for a method definition and are usually listed on a separate line. For more information, see [Attributes](../attributes.md).
@@ -51,8 +51,8 @@ Methods can be marked `inline`. For information about `inline`, see [Inline Func
 
 Non-inline methods can be used recursively within the type; there is no need to explicitly use the `rec` keyword.
 
-
 ## Instance Methods
+
 Instance methods are declared with the `member` keyword and a *self-identifier*, followed by a period (.) and the method name and parameters. As is the case for `let` bindings, the *parameter-list* can be a pattern. Typically, you enclose method parameters in parentheses in a tuple form, which is the way methods appear in F# when they are created in other .NET Framework languages. However, the curried form (parameters separated by spaces) is also common, and other patterns are supported also.
 
 The following example illustrates the definition and use of a non-abstract instance method.
@@ -61,8 +61,8 @@ The following example illustrates the definition and use of a non-abstract insta
 
 Within instance methods, do not use the self identifier to access fields defined by using let bindings. Use the self identifier when accessing other members and properties.
 
-
 ## Static Methods
+
 The keyword `static` is used to specify that a method can be called without an instance and is not associated with an object instance. Otherwise, methods are instance methods.
 
 The example in the next section shows fields declared with the `let` keyword, property members declared with the `member` keyword, and a static method declared with the `static` keyword.
@@ -72,6 +72,7 @@ The following example illustrates the definition and use of static methods. Assu
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3402.fs)]
 
 ## Abstract and Virtual Methods
+
 The keyword `abstract` indicates that a method has a virtual dispatch slot and might not have a definition in the class. A *virtual dispatch slot* is an entry in an internally maintained table of functions that is used at run time to look up virtual function calls in an object-oriented type. The virtual dispatch mechanism is the mechanism that implements *polymorphism*, an important feature of object-oriented programming. A class that has at least one abstract method without a definition is an *abstract class*, which means that no instances can be created of that class. For more information about abstract classes, see [Abstract Classes](../abstract-classes.md).
 
 Abstract method declarations do not include a method body. Instead, the name of the method is followed by a colon (:) and a type signature for the method. The type signature of a method is the same as that shown by IntelliSense when you pause the mouse pointer over a method name in the Visual Studio Code Editor, except without parameter names. Type signatures are also displayed by the interpreter, fsi.exe, when you are working interactively. The type signature of a method is formed by listing out the types of the parameters, followed by the return type, with appropriate separator symbols. Curried parameters are separated by `->` and tuple parameters are separated by `*`. The return value is always separated from the arguments by a `->` symbol. Parentheses can be used to group complex parameters, such as when a function type is a parameter, or to indicate when a tuple is treated as a single parameter rather than as two parameters.
@@ -89,6 +90,7 @@ The following example illustrates a derived class that overrides a base class me
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3404.fs)]
 
 ## Overloaded Methods
+
 Overloaded methods are methods that have identical names in a given type but that have different arguments. In F#, optional arguments are usually used instead of overloaded methods. However, overloaded methods are permitted in the language, provided that the arguments are in tuple form, not curried form.
 
 ## Optional Arguments
@@ -104,9 +106,11 @@ type C() =
 Note that the value passed in for `DefaultParameterValue` must match the input type.  In the above sample, it is an `int`.  Attempting to pass a non-integer value into `DefaultParameterValue` would result in a compile error.
 
 ## Example: Properties and Methods
+
 The following example contains a type that has examples of fields, private functions, properties, and a static method.
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3406.fs)]
 
-## See Also
-[Members](index.md)
+## See also
+
+- [Members](index.md)

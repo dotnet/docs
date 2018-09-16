@@ -36,7 +36,7 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
   
 -   Note that under the default behavior of the markup compile build actions, you can leave the derivation blank in the partial class definition on the code-behind side. The compiled result will assume the page root's backing type to be the basis for the partial class, even if it not specified. However, relying on this behavior is not a best practice.  
   
--   The event handlers you write in the code behind must be instance methods and cannot be static methods. These methods must be defined by the partial class within the CLR namespace identified by `x:Class`. You cannot qualify the name of an event handler to instruct a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor to look for an event handler for event wiring in a different class scope.  
+-   The event handlers you write in the code-behind must be instance methods and cannot be static methods. These methods must be defined by the partial class within the CLR namespace identified by `x:Class`. You cannot qualify the name of an event handler to instruct a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor to look for an event handler for event wiring in a different class scope.  
   
 -   The handler must match the delegate for the appropriate event in the backing type system.  
   

@@ -16,5 +16,6 @@ The topics in this section describe how [!INCLUDE[sqltecxlinq](~/includes/sqltec
 |[Scope of Default Namespaces in C#](../../../../csharp/programming-guide/concepts/linq/scope-of-default-namespaces.md)|Demonstrates the appropriate way to write queries for XML in the default namespace.|  
 |[How to: Write Queries on XML in Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-write-queries-on-xml-in-namespaces.md)|Demonstrates how to specify XML namespaces in C# LINQ to XML queries.|  
   
-## See Also  
- [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## See Also
+
+- [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

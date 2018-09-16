@@ -7,8 +7,8 @@ ms.date: 05/16/2016
 
 F# uses type inference to evaluate the types of functions and expressions. This topic describes how F# automatically generalizes the arguments and types of functions so that they work with multiple types when this is possible.
 
-
 ## Automatic Generalization
+
 The F# compiler, when it performs type inference on a function, determines whether a given parameter can be generic. The compiler examines each parameter and determines whether the function has a dependency on the specific type of that parameter. If it does not, the type is inferred to be generic.
 
 The following code example illustrates a function that the compiler infers to be generic.
@@ -33,14 +33,14 @@ let biggestIntFloat = max 2.0 3
 The `max` function also works with any type that supports the greater-than operator. Therefore, you could also use it on a string, as shown in the following code.
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-3/snippet104.fs)]
-    
+
 ## Value Restriction
+
 The compiler performs automatic generalization only on complete function definitions that have explicit arguments, and on simple immutable values.
 
 This means that the compiler issues an error if you try to compile code that is not sufficiently constrained to be a specific type, but is also not generalizable. The error message for this problem refers to this restriction on automatic generalization for values as the *value restriction*.
 
 Typically, the value restriction error occurs either when you want a construct to be generic but the compiler has insufficient information to generalize it, or when you unintentionally omit sufficient type information in a nongeneric construct. The solution to the value restriction error is to provide more explicit information to more fully constrain the type inference problem, in one of the following ways:
-
 
 - Constrain a type to be nongeneric by adding an explicit type annotation to a value or parameter.
 
@@ -91,12 +91,9 @@ let intLists = arrayOf10Lists<int>
 let floatLists = arrayOf10Lists<float>
 ```
 
-## See Also
-[Type Inference](../type-inference.md)
+## See also
 
-[Generics](index.md)
-
-[Statically Resolved Type Parameters](statically-resolved-type-parameters.md)
-
-[Constraints](constraints.md)
-
+- [Type Inference](../type-inference.md)
+- [Generics](index.md)
+- [Statically Resolved Type Parameters](statically-resolved-type-parameters.md)
+- [Constraints](constraints.md)

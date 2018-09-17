@@ -105,11 +105,9 @@ Code all lives in the [dotnet/samples](https://github.com/dotnet/samples) reposi
 
 - *snippets* contains the code snippets used throughout the documentation. Inside the *snippets* folder, the folder names identify the language of the code snippet.
 
-We will expand these directories as the docs repository adds new content. For example, we will add Xamarin directories, like `xamarin-ios` and `xamarin-android` directories.
+Under these top-level folders, the samples structure mirrors the folder structure of the related articles. For example, **core/get-started** contains the samples that relate to the articles in the **docs/core/get-started** folder. Snippets for the C# Language keywords are in **snippets/csharp/reference/keywords**.
 
-Sample code may fit more than one of these areas. In those cases, place the sample so it matches
-the topics you are covering in your documents. Ask yourself what readers will learn from reading
-your topic. What will they learn from building and running your sample?
+We will expand these directories as the docs repository adds new content. For example, we will add Xamarin directories, like `xamarin-ios` and `xamarin-android` directories.
 
 Each complete sample that you create should contain a *readme.md* file. This file should
 contain a short description of the sample (one or two paragraphs). Your *readme.md*

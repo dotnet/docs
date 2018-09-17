@@ -160,43 +160,6 @@ The following list shows some guiding rules that you should keep in mind when yo
 
 > Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site. Check the list of [open issues](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3Aguidelines-adherence) we're currently tracking for that specific goal.
 
-## Building the docs
-
-Test your changes with the [DocFX command-line tool](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html#2-use-docfx-as-a-command-line-tool), which creates a locally hosted version of the site. DocFX doesn't render style and site extensions created for docs.microsoft.com.
-
-To build the docs locally, you need to install [DocFX](https://dotnet.github.io/docfx/). DocFX requires the .NET Framework on Windows, or Mono for Linux or macOS.
-
-### Windows instructions
-
-* Download the [latest version of DocFX](https://github.com/dotnet/docfx/releases) and unzip *docfx.zip*.
-* Add DocFX to your PATH.
-* In a command prompt, navigate to the *docs* directory and run the following command:
-
-```
-docfx -t default --serve
-```
-
-* In a browser, navigate to `http://localhost:8080`.
-
-### Mono instructions
-
-* Install Mono via Homebrew - `brew install mono`.
-* Download the [latest version of DocFX](https://github.com/dotnet/docfx/releases).
-* Extract to `\bin\docfx`.
-* Create an alias for **docfx**:
-
-```
-function docfx {
-  mono $HOME/bin/docfx/docfx.exe
-}
-
-function docfx-serve {
-  mono $HOME/bin/docfx/docfx.exe serve _site
-}
-```
-
-* Run `docfx` in the *docs* directory to build the site, and `docfx-serve` to view the site at `http://localhost:8080`.
-
 ## Contributor License Agreement
 
 You must sign the [.NET Foundation Contribution License Agreement (CLA)](https://cla.dotnetfoundation.org) before your PR is merged. This is a one-time requirement for projects in the .NET Foundation. You can read more about [Contribution License Agreements (CLA)](http://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.

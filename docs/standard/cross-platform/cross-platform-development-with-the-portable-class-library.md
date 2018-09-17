@@ -1,6 +1,6 @@
 ---
 title: "Cross-Platform Development with the Portable Class Library"
-ms.date: "07/18/2018"
+ms.date: 09/17/2018
 ms.technology: dotnet-standard
 helpviewer_keywords:
   - "Portable Class Library [.NET Framework]"
@@ -10,7 +10,7 @@ ms.assetid: c31e1663-c164-4e65-b66d-d3aa8750a154
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# Cross-Platform Development with the Portable Class Library
+# Cross-platform development with the Portable Class Library
 
 The Portable Class Library project type in Visual Studio helps you build cross-platform apps and libraries for Microsoft platforms quickly and easily.
 

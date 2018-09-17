@@ -25,8 +25,8 @@ Use this option if you want to define or create your own System namespace and ob
 
 If you do not specify **-nostdlib**, mscorlib.dll is imported into your program (same as specifying **-nostdlib-**). Specifying **-nostdlib** is the same as specifying **-nostdlib+**.
 
-### To set this compiler option in Visual Studio
-
+### To set this compiler option in the Visual Studio development environment (**Visual Studio 2015 and earlier versions only**) 
+ 
 > [!NOTE]
 > The following instructions apply to Visual Studio 2015 (and earlier versions) only. The **Do not reference mscorlib.dll** build property doesn't exist in Visual Studio 2017.
 
@@ -45,3 +45,4 @@ For information on how to set this compiler option programmatically, see <xref:V
 ## See Also
 
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+

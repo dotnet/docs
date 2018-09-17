@@ -62,11 +62,11 @@ To learn more about UWP, see [Intro to the Universal Windows Platform](https://d
 ## .NET runtimes
 
 A runtime is the execution environment for a managed program. The OS is part of the runtime environment but is not part of the .NET runtime. Here are some examples of .NET runtimes:
- 
- - Common Language Runtime (CLR) for the .NET Framework
- - Core Common Language Runtime (CoreCLR) for .NET Core
- - .NET Native for Universal Windows Platform 
- - The Mono runtime for Xamarin.iOS, Xamarin.Android, Xamarin.Mac, and the Mono desktop framework
+
+- Common Language Runtime (CLR) for the .NET Framework
+- Core Common Language Runtime (CoreCLR) for .NET Core
+- .NET Native for Universal Windows Platform 
+- The Mono runtime for Xamarin.iOS, Xamarin.Android, Xamarin.Mac, and the Mono desktop framework
 
 ## .NET tooling and common infrastructure
 
@@ -79,11 +79,11 @@ You have access to an extensive set of tools and infrastructure components that 
 - Open-source build orchestration tools, such as [CAKE](https://cakebuild.net/) and [FAKE](https://fake.build/)
 
 ## See also
-[Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md)   
-[.NET Standard](net-standard.md)  
-[.NET Core Guide](../core/index.md)  
-[.NET Framework Guide](../framework/index.md)  
-[C# Guide](../csharp/index.md)  
-[F# Guide](../fsharp/index.md)  
-[VB.NET Guide](../visual-basic/index.md)  
 
+- [Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md)   
+- [.NET Standard](net-standard.md)  
+- [.NET Core Guide](../core/index.md)  
+- [.NET Framework Guide](../framework/index.md)  
+- [C# Guide](../csharp/index.md)  
+- [F# Guide](../fsharp/index.md)  
+- [VB.NET Guide](../visual-basic/index.md)  

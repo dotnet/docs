@@ -113,5 +113,6 @@ The .NET Framework provides the following two standard patterns for performing I
 ## Using the StreamExtensions Sample Code  
  The Streamextensions.cs file, in [Samples for Parallel Programming with the .NET Framework 4](https://code.msdn.microsoft.com/ParExtSamples), contains several reference implementations that use Task objects for asynchronous file and network I/O.  
   
-## See Also  
- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+## See also
+
+- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)

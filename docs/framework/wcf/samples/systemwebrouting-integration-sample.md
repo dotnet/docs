@@ -20,7 +20,7 @@ This sample may already be installed on your computer. Check for the following (
    
 `<InstallDrive>:\WF_WCF_Samples`  
    
- If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+ If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
    
 `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Hosting\WebRoutingIntegration`  
   
@@ -32,11 +32,11 @@ This sample may already be installed on your computer. Check for the following (
   
      A directory listing for the sample appears. Note that there are no files with an .svc file extension.  
   
-3.  In the address bar, add `movies` to the URL, so that it reads http://localhost:[port]/movies and press ENTER.  
+3.  In the address bar, add `movies` to the URL, so that it reads `http://localhost:[port]/movies` and press ENTER.  
   
      The movies feed appears in the browser.  
   
-4.  In the address bar, add `channels` to the URL, so that is reads http://localhost:[port]/channels and press ENTER.  
+4.  In the address bar, add `channels` to the URL, so that is reads `http://localhost:[port]/channels` and press ENTER.  
   
      The channels feed appears in the browser.  
   
@@ -62,11 +62,11 @@ This sample may already be installed on your computer. Check for the following (
   
 4.  Start the application, by right-clicking the Web application and selecting **Manage Application** and then **Browse**.  
   
-5.  In the address bar, add `movies` to the URL, so that is reads http://localhost:[port]/movies and press ENTER.  
+5.  In the address bar, add `movies` to the URL, so that is reads `http://localhost:[port]/movies` and press ENTER.  
   
      The movies feed appears in the browser.  
   
-6.  In the address bar, add `channels` to the URL, so that is reads http://localhost:[port]/channels and press ENTER.  
+6.  In the address bar, add `channels` to the URL, so that is reads `http://localhost:[port]/channels` and press ENTER.  
   
      The channels feed appears in the browser.  
   
@@ -78,4 +78,4 @@ This sample may already be installed on your computer. Check for the following (
 >  You must update the default application pool version to [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] if it’s set to version 2.  
   
 ## See Also  
- [AppFabric Hosting and Persistence Samples](http://go.microsoft.com/fwlink/?LinkId=193961)
+ [AppFabric Hosting and Persistence Samples](https://go.microsoft.com/fwlink/?LinkId=193961)

@@ -82,5 +82,6 @@ The default style is: Normal
   
 -   [Retrieving the Paragraphs and Their Styles (C#)](../../../../csharp/programming-guide/concepts/linq/retrieving-the-paragraphs-and-their-styles.md)  
   
-## See Also  
- [Tutorial: Manipulating Content in a WordprocessingML Document](http://msdn.microsoft.com/library/2696355e-4f83-4eaf-91b2-baa721f42fb4)
+## See Also
+
+- [Tutorial: Manipulating Content in a WordprocessingML Document](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

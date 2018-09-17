@@ -114,7 +114,7 @@ your topic. What will they learn from building and running your sample?
 Each complete sample that you create should contain a *readme.md* file. This file should
 contain a short description of the sample (one or two paragraphs). Your *readme.md*
 should tell readers what they will learn by exploring this sample. The *readme.md* file should also contain
-a link to the live document on the [.NET documentation site](http://docs.microsoft.com/dotnet/welcome).
+a link to the live document on the [.NET documentation site](https://docs.microsoft.com/dotnet/welcome).
 To determine where a given file in the repository maps to that site, replace `/docs` in the repository path
 with `http://docs.microsoft.com/dotnet/articles`.
 

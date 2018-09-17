@@ -17,12 +17,13 @@ The XML Schema Definition tool ([XML Schema Definition Tool (Xsd.exe)](../../../
   
  For more information about this tool and others, see [Tools](../../../docs/framework/tools/index.md). For information about the tool's options, see [XML Schema Definition Tool (Xsd.exe)](../../../docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md).  
   
-## See Also  
- <xref:System.Data.DataSet>  
- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
- [XML Schema Definition Tool (Xsd.exe)](../../../docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md)  
- <xref:System.Xml.Serialization.XmlSerializer>  
- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)  
- [How to: Use the XML Schema Definition Tool to Generate Classes and XML Schema Documents](../../../docs/standard/serialization/xml-schema-def-tool-gen.md)  
- [XML Schema Binding Support in the .NET Framework](https://msdn.microsoft.com/library/8f0619dd-f1fc-4895-ae21-6d45d0382cc1)
+## See also
+
+- <xref:System.Data.DataSet>  
+- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
+- [XML Schema Definition Tool (Xsd.exe)](../../../docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md)  
+- <xref:System.Xml.Serialization.XmlSerializer>  
+- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
+- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)  
+- [How to: Use the XML Schema Definition Tool to Generate Classes and XML Schema Documents](../../../docs/standard/serialization/xml-schema-def-tool-gen.md)  
+- [XML Schema Binding Support in the .NET Framework](https://msdn.microsoft.com/library/8f0619dd-f1fc-4895-ae21-6d45d0382cc1)

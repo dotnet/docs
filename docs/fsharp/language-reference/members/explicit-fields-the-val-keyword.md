@@ -7,7 +7,6 @@ ms.date: 05/16/2016
 
 The `val` keyword is used to declare a location to store a value in a class or structure type, without initializing it. Storage locations declared in this manner are called *explicit fields*. Another use of the `val` keyword is in conjunction with the `member` keyword to declare an auto-implemented property. For more information on auto-implemented properties, see [Properties](properties.md).
 
-
 ## Syntax
 
 ```fsharp
@@ -15,6 +14,7 @@ val [ mutable ] [ access-modifier ] field-name : type-name
 ```
 
 ## Remarks
+
 The usual way to define fields in a class or structure type is to use a `let` binding. However, `let` bindings must be initialized as part of the class constructor, which is not always possible, necessary, or desirable. You can use the `val` keyword when you want a field that is uninitialized.
 
 Explicit fields can be static or non-static. The *access-modifier* can be `public`, `private`, or `internal`. By default, explicit fields are public. This differs from `let` bindings in classes, which are always private.
@@ -29,15 +29,12 @@ The [DefaultValue](https://msdn.microsoft.com/library/a3a3307b-8c05-441e-b109-24
 
 - A structure whose fields all support a default zero value.
 
-
 For example, an immutable field called `someField` has a backing field in the .NET compiled representation with the name `someField@`, and you access the stored value using a property named `someField`.
 
 For a mutable field, the .NET compiled representation is a .NET field.
 
-
->[!WARNING] 
+>[!WARNING]
 `Note` The .NET Framework namespace `System.ComponentModel` contains an attribute that has the same name. For information about this attribute, see `System.ComponentModel.DefaultValueAttribute`.
-
 
 The following code shows the use of explicit fields and, for comparison, a `let` binding in a class that has a primary constructor. Note that the `let`-bound field `myInt1` is private. When the `let`-bound field `myInt1` is referenced from a member method, the self identifier `this` is not required. But when you are referencing the explicit fields `myInt2` and `myString`, the self identifier is required.
 
@@ -66,10 +63,8 @@ Explicit fields are not intended for routine use. In general, when possible you 
 
 When the keywords `member val` appear together in a type definition, it is a definition of an automatically implemented property. For more information, see [Properties](properties.md).
 
+## See also
 
-## See Also
-[Properties](properties.md)
-
-[Members](index.md)
-
-[`let` Bindings in Classes](let-bindings-in-classes.md)
+- [Properties](properties.md)
+- [Members](index.md)
+- [`let` Bindings in Classes](let-bindings-in-classes.md)

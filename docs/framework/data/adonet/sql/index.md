@@ -32,11 +32,11 @@ This section describes features and behaviors that are specific to the .NET Fram
   
  For complete documentation of the SQL Server Database Engine, see SQL Server Books Online for the version of SQL Server you are using.  
   
- [SQL Server Books Online](http://msdn.microsoft.com/library/ms130214.aspx)  
+ [SQL Server Books Online](/sql/sql-server/sql-server-technical-documentation)  
   
 ## See Also  
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [Data Type Mappings in ADO.NET](../../../../../docs/framework/data/adonet/data-type-mappings-in-ado-net.md)  
  [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
  [Retrieving and Modifying Data in ADO.NET](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

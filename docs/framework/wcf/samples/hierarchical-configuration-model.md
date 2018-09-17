@@ -13,7 +13,7 @@ This sample demonstrates how to implement a hierarchy of configuration files for
   
  All the services implement the `IDesc` contract. The following is the definition of the `IDesc` interface that shows the methods exposed in this interface. The `IDesc` interface is defined in Service1.cs.  
   
-```  
+```csharp  
 // Define a service contract  
 [ServiceContract(Namespace="http://Microsoft.Samples.ConfigHierarchicalModel")]  
 public interface IDesc  
@@ -52,20 +52,20 @@ public interface IDesc
 4.  To run the client, press Ctrl+F5.  
   
 > [!NOTE]
->  If these steps do not work, then make sure that your environment has been properly set up, using the following steps.  
+>  If these steps do not work, make sure that your environment has been properly set up, using the following steps:  
 >   
->  1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
-> 2.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
-> 3.  To run the sample in a single or multiple computer configurations, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+> 1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
+> 2.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
+> 3.  To run the sample in a single or multiple computer configurations, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\ConfigHierarchicalModel`  
   
 ## See Also  
- [AppFabric Management Samples](http://go.microsoft.com/fwlink/?LinkId=193960)
+ [AppFabric Management Samples](https://go.microsoft.com/fwlink/?LinkId=193960)

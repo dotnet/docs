@@ -40,6 +40,6 @@ Str = "The total count is " & count
  [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  
  [How to: Convert an Object to Another Type in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)  
  [Array Conversions](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)  
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
  [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)

@@ -14,7 +14,7 @@ ms.assetid: 77e2d373-69ba-4cbd-b6f5-2c83c38fc98b
 This example shows how to bind to objects returned by Web service method calls.  
   
 ## Example  
- This example uses the [MSDN/TechNet Publishing System (MTPS) Content Service](http://go.microsoft.com/fwlink/?LinkId=95677) to retrieve the list of languages supported by a specified document.  
+ This example uses the [MSDN/TechNet Publishing System (MTPS) Content Service](https://go.microsoft.com/fwlink/?LinkId=95677) to retrieve the list of languages supported by a specified document.  
   
  Before you call a Web service, you need to create a reference to it. To create a Web reference to the MTPS service using [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], follow the following steps:  
   
@@ -22,7 +22,7 @@ This example shows how to bind to objects returned by Web service method calls.
   
 2.  From the **Project** menu, click **Add Web Reference**.  
   
-3.  In the dialog box, set the **URL** to [http://services.msdn.microsoft.com/contentservices/contentservice.asmx?wsdl](http://services.msdn.microsoft.com/contentservices/contentservice.asmx?wsdl).  
+3.  In the dialog box, set the **URL** to [http://services.msdn.microsoft.com/contentservices/contentservice.asmx?wsdl](https://services.msdn.microsoft.com/contentservices/contentservice.asmx?wsdl).  
   
 4.  Press **Go** and then **Add Reference**.  
   
@@ -37,7 +37,7 @@ This example shows how to bind to objects returned by Web service method calls.
   
  [!code-xaml[BindToWebService#Binding](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BindToWebService/CSharp/Window1.xaml#binding)]  
   
- For information about the structure of **getContentResponse**, see [Content Service documentation](http://services.msdn.microsoft.com/ContentServices/ContentService.asmx).  
+ For information about the structure of **getContentResponse**, see [Content Service documentation](https://services.msdn.microsoft.com/ContentServices/ContentService.asmx).  
   
 ## See Also  
  [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  

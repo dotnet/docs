@@ -46,12 +46,13 @@ SQL Server and the .NET Framework are based on different type systems. For examp
 <sup>1</sup> You cannot set the `DbType` property of a `SqlParameter` to `SqlDbType.Date`.  
 <sup>2</sup> Use a specific typed accessor if you know the underlying type of the `sql_variant`.  
   
-## SQL Server Books Online Reference  
- For more information about SQL Server data types, see [Data Types (Database Engine)](http://go.microsoft.com/fwlink/?LinkID=107468).  
+## SQL Server documentation
+
+For more information about SQL Server data types, see [Data types (Transact-SQL)](/sql/t-sql/data-types/data-types-transact-sql).
   
 ## See Also  
  [SQL Server Data Types and ADO.NET](../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)  
  [SQL Server Binary and Large-Value Data](../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)  
  [Data Type Mappings in ADO.NET](../../../../docs/framework/data/adonet/data-type-mappings-in-ado-net.md)  
  [Configuring Parameters and Parameter Data Types](../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

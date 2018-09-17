@@ -35,7 +35,7 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
  To copy the code in this topic as a single listing, see [How to: Create an MDI Form with Menu Merging and ToolStrip Controls](../../../../docs/framework/winforms/controls/how-to-create-an-mdi-form-with-menu-merging-and-toolstrip-controls.md).  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Prerequisites  
  In order to complete this walkthrough, you will need:  
@@ -47,9 +47,7 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
   
 #### To create the project  
   
-1.  Create a Windows Application project called **MdiForm**.  
-  
-     For more information, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+1.  Create a Windows Application project called **MdiForm** (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
   
 2.  In the Windows Forms Designer, select the form.  
   
@@ -103,7 +101,7 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
   
 1.  Add a new form named `ChildForm` to the project.  
   
-     For more information, see [How to: Add Windows Forms to a Project](http://msdn.microsoft.com/library/3d7bb25f-fd90-47cf-9378-fa0d764686c1).  
+     For more information, see [How to: Add Windows Forms to a Project](https://msdn.microsoft.com/library/3d7bb25f-fd90-47cf-9378-fa0d764686c1).  
   
 2.  From the **Toolbox**, drag a <xref:System.Windows.Forms.MenuStrip> control onto the child form.  
   
@@ -111,7 +109,7 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
   
 4.  In the **Items Collection Editor** dialog box, add a new <xref:System.Windows.Forms.ToolStripMenuItem> named **ChildMenuItem** to the child menu.  
   
-     For more information, see [ToolStrip Items Collection Editor](http://msdn.microsoft.com/library/e681f3ab-94ba-4b2b-ac64-1dfad46caa25).  
+     For more information, see [ToolStrip Items Collection Editor](https://msdn.microsoft.com/library/e681f3ab-94ba-4b2b-ac64-1dfad46caa25).  
   
 ## Testing the Form  
   
@@ -129,7 +127,7 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
   
 4.  Click **New** several times.  
   
-     The child forms are automatically listed under the W**indow** menu item because the <xref:System.Windows.Forms.MenuStrip> control's <xref:System.Windows.Forms.MenuStrip.MdiWindowListItem%2A> property is assigned.  
+     The child forms are automatically listed under the **Window** menu item because the <xref:System.Windows.Forms.MenuStrip> control's <xref:System.Windows.Forms.MenuStrip.MdiWindowListItem%2A> property is assigned.  
   
 ## Adding ToolStrip Support  
  In this procedure, you will add four <xref:System.Windows.Forms.ToolStrip> controls to the MDI parent form. Each <xref:System.Windows.Forms.ToolStrip> control is added inside a <xref:System.Windows.Forms.ToolStripPanel> control, which is docked to the edge of the form.  

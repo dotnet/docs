@@ -37,22 +37,12 @@ public abstract class Enumeration : IComparable
     {
         return Name;
     }
-
-    public static IEnumerable<T> GetAll<T>() where T : Enumeration, new()
+    
+    public static IEnumerable<T> GetAll<T>() where T : Enumeration
     {
-        var type = typeof(T);
-        var fields = type.GetTypeInfo().GetFields(BindingFlags.Public |
-            BindingFlags.Static |
-            BindingFlags.DeclaredOnly);
-        foreach (var info in fields)
-        {
-            var instance = new T();
-            var locatedValue = info.GetValue(instance) as T;
-            if (locatedValue != null)
-            {
-                yield return locatedValue;
-            }
-        }
+        var fields = typeof(T).GetFields(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly);
+
+        return fields.Select(f => f.GetValue(null)).Cast<T>();
     }
 
     public override bool Equals(object obj)
@@ -79,24 +69,34 @@ public abstract class Enumeration : IComparable
 You can use this class as a type in any entity or value object, as for the following CardType Enumeration class:
 
 ```csharp
-public class CardType : Enumeration
+public abstract class CardType : Enumeration
 {
-    public static CardType Amex = new CardType(1, "Amex");
-    public static CardType Visa = new CardType(2, "Visa");
-    public static CardType MasterCard = new CardType(3, "MasterCard");
+    public static CardType Amex = new AmexCardType();
+    public static CardType Visa = new VisaCardType();
+    public static CardType MasterCard = new MasterCardType();
 
-    protected CardType() { }
-
-    public CardType(int id, string name)
+    protected CardType(int id, string name)
         : base(id, name)
     {
     }
 
-    public static IEnumerable<CardType> List()
+    private class AmexCardType : CardType
     {
-        return new[] { Amex, Visa, MasterCard };
+        public AmexCardType(): base(1, "Amex")
+        { }
     }
-    // Other util methods
+    
+    private class VisaCardType : CardType
+    {
+        public VisaCardType(): base(2, "Visa")
+        { }
+    }
+    
+    private class MasterCardType : CardType
+    {
+        public MasterCardType(): base(3, "MasterCard")
+        { }
+    }
 }
 ```
 

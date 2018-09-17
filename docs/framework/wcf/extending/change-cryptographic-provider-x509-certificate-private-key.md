@@ -81,4 +81,4 @@ This topic shows how to change the cryptographic provider used to provide an X.5
  [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)  
  [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)  
  [How to: Create a Custom Token](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md)  
- [Security Architecture](http://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)
+ [Security Architecture](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)

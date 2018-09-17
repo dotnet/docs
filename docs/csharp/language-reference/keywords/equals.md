@@ -20,4 +20,4 @@ The following example shows the use of the `equals` keyword in a `join` clause.
 
 ## See also
 
-[Language Integrated Query (LINQ)](../../linq/index.md)
+- [Language Integrated Query (LINQ)](../../linq/index.md)

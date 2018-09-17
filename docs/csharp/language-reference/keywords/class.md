@@ -67,6 +67,8 @@ A class can contain declarations of the following members:
 
 - [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)
 
+- [Enumerations](../../../csharp/programming-guide/enumeration-types.md)
+
 ## Example
 
 The following example demonstrates declaring class fields, constructors, and methods. It also demonstrates object instantiation and printing instance data. In this example, two classes are declared. The first class, `Child`, contains two private fields (`name` and `age`), two public constructors and one public method. The second class, `StringTest`, is used to contain `Main`.
@@ -93,7 +95,7 @@ Finally, notice that for the object created using the default constructor (`chil
 
 ## See also
 
-[C# Reference](../../../csharp/language-reference/index.md)  
-[C# Programming Guide](../../../csharp/programming-guide/index.md)  
-[C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-[Reference Types](../../../csharp/language-reference/keywords/reference-types.md)
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)

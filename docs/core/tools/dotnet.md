@@ -11,7 +11,7 @@ ms.date: 06/04/2018
 
 ## Name
 
-`dotnet` - General driver for running the command-line commands.
+`dotnet` - A tool for managing .NET source code and binaries.
 
 ## Synopsis
 
@@ -34,11 +34,9 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 ## Description
 
-`dotnet` is a generic driver for the Command Line Interface (CLI) toolchain. Invoked on its own, it provides brief usage instructions.
+`dotnet` is a tool for managing .NET source code and binaries. It exposes commands that perform specific tasks, such as [`dotnet build`](dotnet-build.md) and [`dotnet run`](dotnet-run.md). Each command defines its own arguments. Type `--help` after each command to access brief help documentation.
 
-Each specific feature is implemented as a command. To use the feature, the command is specified after `dotnet`, such as [`dotnet build`](dotnet-build.md). All of the arguments following the command are its own arguments.
-
-The only time `dotnet` is used as a command on its own is to run [framework-dependent apps](../deploying/index.md). Specify an application DLL after the `dotnet` verb to execute the application (for example, `dotnet myapp.dll`).
+`dotnet` can be used to run applications, by specifying an application DLL, such as `dotnet myapp.dll`. See [.NET Core application deployment](../deploying/index.md) for to learn about deployment options.
 
 ## Options
 
@@ -58,15 +56,15 @@ Enables diagnostic output.
 
 `--fx-version <VERSION>`
 
-Version of the installed .NET Core runtime to use to run the application.
+Version of the .NET Core runtime to use to run the application.
 
 `-h|--help`
 
-Prints out a short help for the command. If using with `dotnet`, it also prints a list of the available commands.
+Prints out documentation for a given command, such as `dotnet build --help`. `dotnet --help` prints a list of available commands.
 
 `--info`
 
-Prints out detailed information about the CLI tooling and the environment, such as the current operating system, commit SHA for the version, and other information.
+Prints out detailed information about a .NET Core installation and the machine environment, such as the current operating system, and commit SHA of the .NET Core version.
 
 `--list-runtimes`
 
@@ -78,7 +76,7 @@ Displays the installed .NET Core SDKs.
 
 `--roll-forward-on-no-candidate-fx`
 
- Rolls forward on no candidate shared framework.
+ Disables minor version roll forward, if set to `0`. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
 
 `-v|--verbosity <LEVEL>`
 
@@ -104,19 +102,19 @@ Enables diagnostic output.
 
 `--fx-version <VERSION>`
 
-Version of the installed .NET Core runtime to use to run the application.
+Version of the .NET Core runtime to use to run the application.
 
 `-h|--help`
 
-Prints out a short help for the command. If using with `dotnet`, it also prints a list of the available commands.
+Prints out documentation for a given command, such as `dotnet build --help`. `dotnet --help` prints a list of available commands.
 
 `--info`
 
-Prints out detailed information about the CLI tooling and the environment, such as the current operating system, commit SHA for the version, and other information.
+Prints out detailed information about a .NET Core installation and the machine environment, such as the current operating system, and commit SHA of the .NET Core version.
 
 `--roll-forward-on-no-candidate-fx`
 
- Rolls forward on no candidate shared framework.
+ Disables minor version roll forward, if set to `0`. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
 
 `-v|--verbosity <LEVEL>`
 
@@ -138,15 +136,15 @@ Enables diagnostic output.
 
 `--fx-version <VERSION>`
 
-Version of the installed .NET Core runtime to use to run the application.
+Version of the .NET Core runtime to use to run the application.
 
 `-h|--help`
 
-Prints out a short help for the command. If using with `dotnet`, it also prints a list of the available commands.
+Prints out documentation for a given command, such as `dotnet build --help`. `dotnet --help` prints a list of available commands.
 
 `--info`
 
-Prints out detailed information about the CLI tooling and the environment, such as the current operating system, commit SHA for the version, and other information.
+Prints out detailed information about a .NET Core installation and the machine environment, such as the current operating system, and commit SHA of the .NET Core version.
 
 `-v|--verbosity <LEVEL>`
 
@@ -253,7 +251,7 @@ Command | Function
 
 ### Additional tools
 
-Starting with .NET Core SDK 2.1.300, a number of tools that were available only on a per project basis using `DotnetCliToolReference` are now available as part of the .NET Core SDK. These tools include:
+Starting with .NET Core SDK 2.1.300, a number of tools that were available only on a per project basis using `DotnetCliToolReference` are now available as part of the .NET Core SDK. These tools are listed in the following table:
 
 | Tool                                              | Function                                                     |
 | ------------------------------------------------- | ------------------------------------------------------------ |
@@ -263,7 +261,7 @@ Starting with .NET Core SDK 2.1.300, a number of tools that were available only 
 | [user-secrets](/aspnet/core/security/app-secrets) | Manages development user secrets.                            |
 | [watch](/aspnet/core/tutorials/dotnet-watch)      | Starts a file watcher that runs a command when files change. |
 
-For more information about each tool, execute `dotnet <tool-name> --help`.
+For more information about each tool, type `dotnet <tool-name> --help`.
 
 ## Examples
 
@@ -281,7 +279,7 @@ Build a project and its dependencies in a given directory:
 
 `dotnet build`
 
-Run a framework-dependent app named `myapp.dll`:
+Run an application DLL, such as `myapp.dll`:
 
 `dotnet myapp.dll`
 
@@ -307,7 +305,7 @@ Specifies whether .NET Core runtime, shared framework, or SDK are resolved from 
 
 `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX`
 
-Disables minor version roll forward. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
+Disables minor version roll forward, if set to `0`. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
 
 # [.NET Core 2.0](#tab/netcore20)
 

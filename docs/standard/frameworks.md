@@ -125,10 +125,10 @@ The following target frameworks are deprecated. Packages targeting these target 
 
 ## See also
 
-[Packages, Metapackages and Frameworks](../core/packages.md)  
-[Developing Libraries with Cross Platform Tools](../core/tutorials/libraries.md)  
-[.NET Standard](net-standard.md)  
-[.NET Core Versioning](../core/versions/index.md)  
-[dotnet/standard GitHub repository](https://github.com/dotnet/standard)  
-[NuGet Tools GitHub Repository](https://github.com/joelverhagen/NuGetTools)  
-[Framework Profiles in .NET](https://blog.stephencleary.com/2012/05/framework-profiles-in-net.html)
+- [Packages, Metapackages and Frameworks](../core/packages.md)  
+- [Developing Libraries with Cross Platform Tools](../core/tutorials/libraries.md)  
+- [.NET Standard](net-standard.md)  
+- [.NET Core Versioning](../core/versions/index.md)  
+- [dotnet/standard GitHub repository](https://github.com/dotnet/standard)  
+- [NuGet Tools GitHub Repository](https://github.com/joelverhagen/NuGetTools)  
+- [Framework Profiles in .NET](https://blog.stephencleary.com/2012/05/framework-profiles-in-net.html)

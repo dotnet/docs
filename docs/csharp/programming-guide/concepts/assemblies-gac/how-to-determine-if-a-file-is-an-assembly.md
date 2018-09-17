@@ -8,7 +8,7 @@ A file is an assembly if and only if it is managed, and contains an assembly ent
   
 ### How to manually determine if a file is an assembly  
   
-1.  Start the [Ildasm.exe (IL Disassembler)](https://msdn.microsoft.com/library/f7dy01k1).  
+1.  Start the [Ildasm.exe (IL Disassembler)](../../../../framework/tools/ildasm-exe-il-disassembler.md).  
   
 2.  Load the file you wish to test.  
   
@@ -60,7 +60,8 @@ class TestAssembly
   
  The <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method loads the test file, and then releases it once the information is read.  
   
-## See Also  
- <xref:System.Reflection.AssemblyName>  
- [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
- [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)
+## See Also
+
+- <xref:System.Reflection.AssemblyName>  
+- [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
+- [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)

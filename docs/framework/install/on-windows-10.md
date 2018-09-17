@@ -8,7 +8,7 @@ ms.custom: "updateeachrelease"
 ---
 # Install the .NET Framework on Windows 10 and Windows Server 2016
 
-The .NET Framework is required to run many applications on Windows. The instructions in this article should help you install the .NET Framework versions that you need. The [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255) is the latest available version.
+The .NET Framework is required to run many applications on Windows. The instructions in this article should help you install the .NET Framework versions that you need. The [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255) is the latest available version.
 
 You may have arrived on this page after trying to run an application and seeing a dialog on your machine similar to the following one:
 
@@ -23,9 +23,9 @@ The .NET Framework 4.7.2 is included with:
 > [!div class="button"]
 [Download .NET Framework 4.7.2](https://www.microsoft.com/net/download/thank-you/net472?utm_source=ms-docs&utm_medium=referral)
 
-The [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255) can be used to run applications built for the .NET Framework 4.0 through 4.7.1.
+The [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255) can be used to run applications built for the .NET Framework 4.0 through 4.7.1.
 
-You can install the [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255) on:
+You can install the [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255) on:
 
 * Windows 10 Fall Creators Update (version 1709)
 * Windows 10 Creators Update (version 1703)

@@ -63,14 +63,14 @@ using System;
 using System.Web.Services;  
 using System.Web.Services.Protocols;  
 using System.Xml.Serialization;  
-public class Order{  
+public class Order {  
     // Both types of attributes can be applied. Depending on which type  
     // the method used, either one will affect the call.  
     [SoapElement(ElementName = "EncodedOrderID")]  
     [XmlElement(ElementName = "LiteralOrderID")]  
     public String OrderID;  
 }  
-public class MyService{  
+public class MyService {  
     [WebMethod][SoapDocumentMethod]  
     public Order MyLiteralMethod(){  
         Order myOrder = new Order();  
@@ -215,7 +215,7 @@ End Class
 [XmlType("BigBooksService", Namespace = "http://www.cpandl.com")]  
 [SoapType("SoapBookService")]  
 [XmlRoot("BookOrderForm")]  
-public class Order{  
+public class Order {  
     // Both types of attributes can be applied. Depending on which  
     // the method used, either one will affect the call.  
     [SoapElement(ElementName = "EncodedOrderID")]  
@@ -251,11 +251,12 @@ public class Order{
 </BookOrderForm>  
 ```  
   
-## See Also  
- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
- [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)  
- [How to: Serialize an Object as a SOAP-Encoded XML Stream](../../../docs/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md)  
- [How to: Override Encoded SOAP XML Serialization](../../../docs/standard/serialization/how-to-override-encoded-soap-xml-serialization.md)  
- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)
+## See also
+
+- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
+- [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)  
+- [How to: Serialize an Object as a SOAP-Encoded XML Stream](../../../docs/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md)  
+- [How to: Override Encoded SOAP XML Serialization](../../../docs/standard/serialization/how-to-override-encoded-soap-xml-serialization.md)  
+- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
+- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
+- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

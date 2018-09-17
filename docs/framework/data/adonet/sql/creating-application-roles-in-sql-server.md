@@ -50,10 +50,10 @@ Application roles provide a way to assign permissions to an application instead 
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Application Roles](http://msdn.microsoft.com/library/ms190998.aspx) in SQL Server Books Online|Describes how to create and use application roles in SQL Server 2008.|  
+|[Application Roles](/sql/relational-databases/security/authentication-access/application-roles)|Describes how to create and use application roles in SQL Server 2008.|  
   
 ## See Also  
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)  
  [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -8,7 +8,7 @@ ms.assetid: 03de98b8-b54c-4764-91d7-83c64e974750
 # PrintForm Component (Visual Basic)
 The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component for Visual Basic enables you to print an image of a Windows Form at run time. Its behavior replaces that of the `PrintForm` method in earlier versions of Visual Basic.  
   
- The PowerPack controls are no longer included in Visual Studio, but you can download them from the [Download Center](http://www.microsoft.com/en-us/download/details.aspx?id=25169).  
+ The PowerPack controls are no longer included in Visual Studio, but you can download them from the [Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=25169).  
   
 ## PrintForm Component Overview  
  A common scenario for Windows Forms is to create a form that is formatted to resemble a paper form or a report, and then to print an image of the form. Although you can use a <xref:System.Drawing.Printing.PrintDocument> component to do this, it would require a lot of code. The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component enables you to print an image of a form to a printer, to a print preview window, or to a file without using a <xref:System.Drawing.Printing.PrintDocument> component.  

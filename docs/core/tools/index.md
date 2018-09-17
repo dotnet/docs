@@ -113,7 +113,6 @@ dotnet build --output /build_output
 dotnet /build_output/my_app.dll
 ```
 
-
 ---
 
 ### Driver
@@ -134,7 +133,7 @@ The arguments you pass on the command line are the arguments to the command invo
 
 ### Options
 
-The options you pass on the command line are the options to the command invoked. For example when you execute `dotnet publish --output /build_output`, the `--output` option and its value are passed to the `publish` command. 
+The options you pass on the command line are the options to the command invoked. For example when you execute `dotnet publish --output /build_output`, the `--output` option and its value are passed to the `publish` command.
 
 ## Migration from project.json
 
@@ -142,5 +141,5 @@ If you used Preview 2 tooling to produce *project.json*-based projects, consult 
 
 ## See also
 
- [dotnet/CLI GitHub Repository](https://github.com/dotnet/cli/)  
- [.NET Core installation guide](https://aka.ms/dotnetcoregs)  
+* [dotnet/CLI GitHub Repository](https://github.com/dotnet/cli/)  
+* [.NET Core installation guide](https://aka.ms/dotnetcoregs)  

@@ -33,7 +33,7 @@ This walkthrough shows how to host Direct3D9 content in a Windows Presentation F
   
 #### To create the WPF project  
   
--   Create a new WPF Application project in Visual C# named `D3DHost`. For more information, see [How to: Create a New WPF Application Project](http://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82).  
+-   Create a new WPF Application project in Visual C# named `D3DHost`. For more information, see [How to: Create a New WPF Application Project](https://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82).  
   
      MainWindow.xaml opens in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].  
   

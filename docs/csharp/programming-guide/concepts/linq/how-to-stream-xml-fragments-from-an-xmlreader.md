@@ -76,5 +76,6 @@ ccc
   
  In this example, the source document is very small. However, even if there were millions of `Child` elements, this example would still have a small memory footprint.  
   
-## See Also  
- [Parsing XML (C#)](../../../../csharp/programming-guide/concepts/linq/parsing-xml.md)
+## See Also
+
+- [Parsing XML (C#)](../../../../csharp/programming-guide/concepts/linq/parsing-xml.md)

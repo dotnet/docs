@@ -11,7 +11,8 @@ One use for `accessor-declarations` is to expose many events without allocating 
 ## Example  
  [!code-csharp[csProgGuideEvents#9](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-use-a-dictionary-to-store-event-instances_1.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Events](../../../csharp/programming-guide/events/index.md)  
- [Delegates](../../../csharp/programming-guide/delegates/index.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Events](../../../csharp/programming-guide/events/index.md)  
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)

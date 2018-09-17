@@ -14,8 +14,8 @@ This sample demonstrates the Windows Communication Foundation (WCF) Routing Serv
   
     > [!NOTE]
     >  If you press F5, the Calculator Client automatically starts. If you press CTRL+SHIFT+B (build), you must start following applications yourself.  
-    >   
-    >  1.  Calculator client (./CalculatorClient/bin/client.exe  
+    >  
+    > 1.  Calculator client (./CalculatorClient/bin/client.exe  
     > 2.  Calculator service (./CalculatorService/bin/service.exe)  
     > 3.  Routing service (./RoutingService/bin/RoutingService.exe)  
   
@@ -45,9 +45,9 @@ This sample demonstrates the Windows Communication Foundation (WCF) Routing Serv
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService`  
   
 ## See Also  
- [AppFabric Hosting and Persistence Samples](http://go.microsoft.com/fwlink/?LinkId=193961)
+ [AppFabric Hosting and Persistence Samples](https://go.microsoft.com/fwlink/?LinkId=193961)

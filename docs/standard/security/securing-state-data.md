@@ -22,5 +22,6 @@ Applications that handle sensitive data or make any kind of security decisions n
   
  Make sure none of your own methods or properties exposes these values unintentionally.  
   
-## See Also  
- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+## See also
+
+- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)

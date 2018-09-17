@@ -21,11 +21,11 @@ This section explains programming concepts in the C# language.
 |[Language-Integrated Query (LINQ) (C#)](../../../csharp/programming-guide/concepts/linq/index.md)|Discusses the powerful query capabilities in the language syntax of C#, and the model for querying relational databases, XML documents, datasets, and in-memory collections.|  
 |[Object-Oriented Programming (C#)](../../../csharp/programming-guide/concepts/object-oriented-programming.md)|Describes common object-oriented concepts, including encapsulation, inheritance, and polymorphism.|  
 |[Reflection (C#)](../../../csharp/programming-guide/concepts/reflection.md)|Explains how to use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties.|  
-|[Serialization (C# )](../../../csharp/programming-guide/concepts/serialization/index.md)|Describes key concepts in binary, XML, and SOAP serialization.|  
+|[Serialization (C#)](../../../csharp/programming-guide/concepts/serialization/index.md)|Describes key concepts in binary, XML, and SOAP serialization.|  
 |[Threading (C#)](../../../csharp/programming-guide/concepts/threading/index.md)|Provides an overview of the .NET threading model and shows how to write code that performs multiple tasks at the same time to improve the performance and responsiveness of your applications.|  
   
 ## Related Sections  
   
 |||  
 |---|---|  
-|[Performance Tips](https://msdn.microsoft.com/library/ms173196(VS.110).aspx) | Discusses several basic rules that may help you increase the performance of your application.|
+|[Performance Tips](../../../../docs/framework/performance/performance-tips.md) | Discusses several basic rules that may help you increase the performance of your application.|

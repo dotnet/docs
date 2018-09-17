@@ -63,7 +63,6 @@ The following code uses regular expressions to validate the format of each strin
 | \d{4}    | matches exactly 4 digit characters  |
 | $        | matches the end of the string       |
 
-
 [!code-csharp-interactive[csProgGuideStrings#4](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#4)]
 
 This single search pattern matches many valid strings. Regular expressions are better to search for or validate against a pattern, rather than a single text string.
@@ -72,10 +71,10 @@ You can try these samples by looking at the code in our [GitHub repository](http
 
 ## See Also  
 
- [C# Programming Guide](../programming-guide/index.md)  
- [Strings](../programming-guide/strings/index.md)  
- [LINQ and Strings](../programming-guide/concepts/linq/linq-and-strings.md)   
- <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>     
- [.NET Framework Regular Expressions](../../standard/base-types/regular-expressions.md)   
- [Regular Expression Language - Quick Reference](../../standard/base-types/regular-expression-language-quick-reference.md)   
- [Best practices for using strings in .NET](../../standard/base-types/best-practices-strings.md)  
+- [C# Programming Guide](../programming-guide/index.md)  
+- [Strings](../programming-guide/strings/index.md)  
+- [LINQ and Strings](../programming-guide/concepts/linq/linq-and-strings.md)
+- <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>
+- [.NET Framework Regular Expressions](../../standard/base-types/regular-expressions.md)
+- [Regular Expression Language - Quick Reference](../../standard/base-types/regular-expression-language-quick-reference.md)
+- [Best practices for using strings in .NET](../../standard/base-types/best-practices-strings.md)  

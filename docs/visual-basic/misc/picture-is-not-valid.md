@@ -13,4 +13,4 @@ You tried to assign a graphics format other than a bitmap, icon, or Windows meta
 1.  Ensure that the file you are trying to load into the `Picture` property is a valid graphics file supported by Visual Basic.  
   
 ## See Also  
- [Graphics Changes in Visual Basic .NET](http://msdn.microsoft.com/library/24cd2d55-ebf1-42d6-b755-00e9001f1cb8)
+ [Graphics Changes in Visual Basic .NET](https://msdn.microsoft.com/library/24cd2d55-ebf1-42d6-b755-00e9001f1cb8)

@@ -40,10 +40,11 @@ A *field* is a variable of any type that is declared directly in a [class](../..
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
- [Using Constructors](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)  
- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)  
- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
- [Abstract and Sealed Classes and Class Members](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
+- [Using Constructors](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)  
+- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)  
+- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
+- [Abstract and Sealed Classes and Class Members](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)

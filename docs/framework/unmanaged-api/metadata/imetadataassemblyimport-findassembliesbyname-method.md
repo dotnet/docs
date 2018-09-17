@@ -45,7 +45,7 @@ HRESULT FindAssembliesByName (
  [in] The name of the assembly to find. The format of this string is defined in the class reference page for <xref:System.Reflection.AssemblyName>.  
   
  `ppIUnk`  
- [in] An array of type <<!--zzxref:IUnknown --> `IUnknown`> in which to put the `IMetadataAssemblyImport` interface pointers.  
+ [in] An array of type [IUnknown](/cpp/atl/iunknown) in which to put the `IMetadataAssemblyImport` interface pointers.  
   
  `cMax`  
  [out] The maximum number of interface pointers that can be placed in `ppIUnk`.  

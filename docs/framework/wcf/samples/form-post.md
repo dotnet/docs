@@ -21,7 +21,7 @@ This sample demonstrates how to extend the WCF REST programming model to support
   
  This console application project extends the [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) sample. The Basic Resource Service sample demonstrates how to expose a resource in a manner that uses the WCF REST programming model. In the Basic Resource Service sample, a customer collection resource is exposed such that customers in the collection can be created, retrieved, updated and deleted. The Basic Resource Service sample only uses the two natively supported incoming request formats, XML and JSON.  
   
- The console application in this Form Post sample utilizes the custom formatter in the HtmlFormProcessing library, which allows users to create customers by sending a request from an HTML form post using a browser. It also adds an operation that returns an HTML page, which includes the form to be posted back to the service. This HTML page is generated using a preprocessed T4 template, which consists of a .tt file and an auto-generated .cs file. The .tt file allows a developer to write a response in a template form that contains variables and control structures. For more information about T4, see [Generating Artifacts By Using Text Templates](http://go.microsoft.com/fwlink/?LinkId=178139).  
+ The console application in this Form Post sample utilizes the custom formatter in the HtmlFormProcessing library, which allows users to create customers by sending a request from an HTML form post using a browser. It also adds an operation that returns an HTML page, which includes the form to be posted back to the service. This HTML page is generated using a preprocessed T4 template, which consists of a .tt file and an auto-generated .cs file. The .tt file allows a developer to write a response in a template form that contains variables and control structures. For more information about T4, see [Generating Artifacts By Using Text Templates](https://go.microsoft.com/fwlink/?LinkId=178139).  
   
 #### To run the sample  
   
@@ -46,6 +46,6 @@ This sample demonstrates how to extend the WCF REST programming model to support
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Web\FormPost`

@@ -54,4 +54,4 @@ ADO.NET provides consistent access to data sources such as SQL Server and XML, a
 ## See Also  
  [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
  [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

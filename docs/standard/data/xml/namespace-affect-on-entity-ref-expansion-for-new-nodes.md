@@ -14,5 +14,6 @@ Because the content of an entity declaration can contain almost anything, there 
 > [!NOTE]
 >  Once the expansion occurs on a newly created entity reference node, it never reoccurs. Therefore, the namespaces used in the replacement text for the element are bound at the time that the parent node is set. However, the namespace can be changed for existing entity reference nodes when you remove and insert them somewhere else, or on entity reference nodes that are cloned with the **CloneNode** method.  
   
-## See Also  
- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## See also
+
+- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

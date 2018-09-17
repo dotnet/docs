@@ -17,10 +17,11 @@ The `using` keyword has two major uses:
   
 In addition, the [using static](using-static.md) directive lets you define a type whose static members you can access without specifying a type name.
 
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)  
- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)  
- [extern](../../../csharp/language-reference/keywords/extern.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)  
+- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)  
+- [extern](../../../csharp/language-reference/keywords/extern.md)

@@ -25,4 +25,4 @@ A <xref:System.Windows.Forms.ToolStripPanel> provides a single area for position
 ## See Also  
  <xref:System.Windows.Forms.ToolStripContainer>  
  <xref:System.Windows.Forms.ToolStripContentPanel>  
- [ToolStrip Sample](http://msdn.microsoft.com/library/b7352439-184a-4a3a-b2ad-07465d3af9ed)
+ [ToolStrip Sample](https://msdn.microsoft.com/library/b7352439-184a-4a3a-b2ad-07465d3af9ed)

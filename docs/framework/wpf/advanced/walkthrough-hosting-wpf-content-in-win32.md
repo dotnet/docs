@@ -10,7 +10,7 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 # Walkthrough: Hosting WPF Content in Win32
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides a rich environment for creating applications. However, when you have a substantial investment in [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] code, it might be more effective to add [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] functionality to your application rather than rewriting your original code. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides a straightforward mechanism for hosting [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content in a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window.  
   
- This tutorial describes how to write a sample application, [Hosting WPF Content in a Win32 Window Sample](http://go.microsoft.com/fwlink/?LinkID=160004), that hosts [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content in a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window. You can extend this sample to host any [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window. Because it involves mixing managed and unmanaged code, the application is written in [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)].  
+ This tutorial describes how to write a sample application, [Hosting WPF Content in a Win32 Window Sample](https://go.microsoft.com/fwlink/?LinkID=160004), that hosts [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content in a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window. You can extend this sample to host any [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window. Because it involves mixing managed and unmanaged code, the application is written in [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)].  
   
  
   
@@ -21,7 +21,7 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
  Because the sample that accompanies this tutorial is implemented in [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)], this tutorial assumes familiarity with the use of [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)] to program the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)][!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] plus an understanding of managed code programming. Familiarity with [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)] is helpful but not essential.  
   
 > [!NOTE]
->  This tutorial includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. For the complete sample code, see [Hosting WPF Content in a Win32 Window Sample](http://go.microsoft.com/fwlink/?LinkID=160004).  
+>  This tutorial includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. For the complete sample code, see [Hosting WPF Content in a Win32 Window Sample](https://go.microsoft.com/fwlink/?LinkID=160004).  
   
 <a name="basic_procedure"></a>   
 ## The Basic Procedure  
@@ -35,7 +35,7 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
   
 3.  Set the threading model to single-threaded apartment (STA).  
   
-4.  Handle the [WM_CREATE](http://msdn.microsoft.com/library/ms632619.aspx)notification in your window procedure and do the following:  
+4.  Handle the [WM_CREATE](/windows/desktop/winmsg/wm-create)notification in your window procedure and do the following:  
   
     1.  Create a new <xref:System.Windows.Interop.HwndSource> object with the parent window as its `parent` parameter.  
   
@@ -112,7 +112,7 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 ### Hosting the WPF Content  
  The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content is a simple address entry application. It consists of several <xref:System.Windows.Controls.TextBox> controls to take user name, address, and so on. There are also two <xref:System.Windows.Controls.Button> controls, **OK** and **Cancel**. When the user clicks **OK**, the button's <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler collects the data from the <xref:System.Windows.Controls.TextBox> controls, assigns it to corresponding properties, and raises a custom event, `OnButtonClicked`. When the user clicks **Cancel**, the handler simply raises `OnButtonClicked`. The event argument object for `OnButtonClicked` contains a Boolean field that indicates which button was clicked.  
   
- The code to host the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content is implemented in a handler for the [WM_CREATE](http://msdn.microsoft.com/library/ms632619.aspx) notification on the host window.  
+ The code to host the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content is implemented in a handler for the [WM_CREATE](/windows/desktop/winmsg/wm-create) notification on the host window.  
   
  [!code-cpp[Win32HostingWPFPage#WMCreate](../../../../samples/snippets/cpp/VS_Snippets_Wpf/Win32HostingWPFPage/CPP/Win32HostingWPFPage.cpp#wmcreate)]  
   

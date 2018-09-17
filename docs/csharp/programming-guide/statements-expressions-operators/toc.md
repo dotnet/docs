@@ -13,7 +13,6 @@
 ### [Using Conversion Operators](using-conversion-operators.md)
 ### [How to: Implement User-Defined Conversions Between Structs](how-to-implement-user-defined-conversions-between-structs.md)
 ## [default value expressions](default-value-expressions.md)
-## [How to: Use Operator Overloading to Create a Complex Number Class](how-to-use-operator-overloading-to-create-a-complex-number-class.md)
 ## [Equality Comparisons](equality-comparisons.md)
 ### [How to: Define Value Equality for a Type](how-to-define-value-equality-for-a-type.md)
 ### [How to: Test for Reference Equality (Identity)](how-to-test-for-reference-equality-identity.md)

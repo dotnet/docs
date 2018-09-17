@@ -48,7 +48,7 @@ Types of isolated storage
  Note that except for roaming stores, isolated storage is always implicitly isolated by computer because it uses the storage facilities that are local to a given computer.  
   
 > [!IMPORTANT]
->  Isolated storage is not available for [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. Instead, use the application data classes in the `Windows.Storage` namespaces included in the [!INCLUDE[wrt](../../../includes/wrt-md.md)] API to store local data and files. For more information, see [Application data](/previous-versions/windows/apps/hh464917(v=win.10)) in the Windows Dev Center.  
+>  Isolated storage is not available for [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. Instead, use the application data classes in the `Windows.Storage` namespaces included in the [!INCLUDE[wrt](../../../includes/wrt-md.md)] API to store local data and files. For more information, see [Application data](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10)) in the Windows Dev Center.  
   
 <a name="UserAssembly"></a>   
 ## Isolation by User and Assembly  
@@ -100,6 +100,7 @@ Types of isolated storage
  [!code-csharp[Conceptual.IsolatedStorage#12](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source9.cs#12)]
  [!code-vb[Conceptual.IsolatedStorage#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source9.vb#12)]  
   
-## See Also  
- <xref:System.IO.IsolatedStorage.IsolatedStorageScope>  
- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
+## See also
+
+- <xref:System.IO.IsolatedStorage.IsolatedStorageScope>  
+- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

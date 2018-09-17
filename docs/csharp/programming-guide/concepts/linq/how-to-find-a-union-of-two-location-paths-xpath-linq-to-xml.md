@@ -62,5 +62,6 @@ Results are identical
 <Price>6.99</Price>  
 ```  
   
-## See Also  
- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+## See Also
+
+- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

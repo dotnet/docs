@@ -76,7 +76,7 @@ class C
 }
 ```
 
-Fore more information, see the article on the [`fixed` statement](../language-reference/keywords/fixed-statement.md).
+For more information, see the article on the [`fixed` statement](../language-reference/keywords/fixed-statement.md).
 
 ### `ref` local variables may be reassigned
 
@@ -128,7 +128,7 @@ The second theme provides improvements to features in the language. These featur
 
 ### Tuples support `==` and `!=`
 
-The C# tuple types now support `==` and `!=`. Fore more information, see the section covering [equality](../tuples.md#equality-and-tuples) in the article on [tuples](../tuples.md).
+The C# tuple types now support `==` and `!=`. For more information, see the section covering [equality](../tuples.md#equality-and-tuples) in the article on [tuples](../tuples.md).
 
 ### Attach attributes to the backing fields for auto-implemented properties
 
@@ -172,7 +172,7 @@ public class B
 
 public class D : B
 {
-   public D(int i) : B(i, out var j)
+   public D(int i) : base(i, out var j)
    {
       Console.WriteLine($"The value of 'j' is {j}");
    }

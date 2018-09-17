@@ -6,7 +6,7 @@ ms.assetid: 312c3935-a947-4220-a837-0039d9fc458b
 # Reference
 This section provides reference information for [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] developers.  
   
- You are also encouraged to search Microsoft Docs for specific issues, and especially to participate in the [LINQ Forum](http://go.microsoft.com/fwlink/?LinkId=76488), where you can discuss more complex topics in detail with experts. In addition, you can study a white paper detailing [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] technology, complete with Visual Basic and C# code examples. For more information, see [LINQ to SQL: .NET Language-Integrated Query for Relational Data](http://go.microsoft.com/fwlink/?LinkId=93205).  
+ You are also encouraged to search Microsoft Docs for specific issues, and especially to participate in the [LINQ Forum](https://go.microsoft.com/fwlink/?LinkId=76488), where you can discuss more complex topics in detail with experts. In addition, you can study a white paper detailing [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] technology, complete with Visual Basic and C# code examples. For more information, see [LINQ to SQL: .NET Language-Integrated Query for Relational Data](https://go.microsoft.com/fwlink/?LinkId=93205).  
   
 ## In This Section  
  [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)  
@@ -34,8 +34,8 @@ This section provides reference information for [!INCLUDE[vbtecdlinq](../../../.
  [LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/index.md)  
  Provides a portal for [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] topics.  
   
- [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
+ [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
  Provides a portal for [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] topics.  
   
- [LinqDataSource Technology Overview](http://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136)  
+ [LinqDataSource Technology Overview](https://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136)  
  Describes how the <xref:System.Web.UI.WebControls.LinqDataSource> control exposes [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] to Web developers through the [!INCLUDE[vstecasp](../../../../../../includes/vstecasp-md.md)] data-source control architecture.

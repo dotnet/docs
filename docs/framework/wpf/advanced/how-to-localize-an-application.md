@@ -30,7 +30,7 @@ This tutorial explains how to create a localized application by using the LocBam
   
 <a name="create_sample_app"></a>   
 ## Create a Sample Application  
- In this step, you will prepare your application for localization. In the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] samples, a HelloApp sample is supplied that will be used for the code examples in this discussion. If you would like to use this sample, download the [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] files from the [LocBaml Tool Sample](http://go.microsoft.com/fwlink/?LinkID=160016).  
+ In this step, you will prepare your application for localization. In the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] samples, a HelloApp sample is supplied that will be used for the code examples in this discussion. If you would like to use this sample, download the [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] files from the [LocBaml Tool Sample](https://go.microsoft.com/fwlink/?LinkID=160016).  
   
 1.  Develop your application to the point where you want to start localization.  
   
@@ -75,7 +75,7 @@ This tutorial explains how to create a localized application by using the LocBam
 <a name="build_locbaml"></a>   
 ## Build the LocBaml Tool  
   
-1.  All the files necessary to build LocBaml are located in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] samples. Download the C# files from the [LocBaml Tool Sample](http://go.microsoft.com/fwlink/?LinkID=160016).  
+1.  All the files necessary to build LocBaml are located in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] samples. Download the C# files from the [LocBaml Tool Sample](https://go.microsoft.com/fwlink/?LinkID=160016).  
   
 2.  From the command line, run the project file (locbaml.csproj) to build the tool:  
   

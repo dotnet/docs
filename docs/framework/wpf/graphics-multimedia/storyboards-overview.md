@@ -57,7 +57,7 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
 |--------------------------------|-------------------|-----------|----------------------|-------------------|-------------|  
 |<xref:System.Windows.Media.Animation.BeginStoryboard> and an <xref:System.Windows.EventTrigger>|Yes|Yes|Yes|Yes|[Animate a Property by Using a Storyboard](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-by-using-a-storyboard.md)|  
 |<xref:System.Windows.Media.Animation.BeginStoryboard> and a property <xref:System.Windows.Trigger>|No|Yes|Yes|Yes|[Trigger an Animation When a Property Value Changes](../../../../docs/framework/wpf/graphics-multimedia/how-to-trigger-an-animation-when-a-property-value-changes.md)|  
-|<xref:System.Windows.Media.Animation.BeginStoryboard> and a <xref:System.Windows.DataTrigger>|No|Yes|Yes|Yes|[How to: Trigger an Animation When Data Changes](http://msdn.microsoft.com/library/a736bb3a-2ae5-479a-a33a-75a27055d863)|  
+|<xref:System.Windows.Media.Animation.BeginStoryboard> and a <xref:System.Windows.DataTrigger>|No|Yes|Yes|Yes|[How to: Trigger an Animation When Data Changes](https://msdn.microsoft.com/library/a736bb3a-2ae5-479a-a33a-75a27055d863)|  
 |<xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method|Yes|No|No|No|[Animate a Property by Using a Storyboard](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-by-using-a-storyboard.md)|  
   
  The following example uses a <xref:System.Windows.Media.Animation.Storyboard> to animate the <xref:System.Windows.FrameworkElement.Width%2A> of a <xref:System.Windows.Shapes.Rectangle> element and the <xref:System.Windows.Media.SolidColorBrush.Color%2A> of a <xref:System.Windows.Media.SolidColorBrush> used to paint that <xref:System.Windows.Shapes.Rectangle>.  
@@ -128,7 +128,7 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
 ### Indirectly Targeting a Property of a Freezable in XAML  
  To target a property of a freezable in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], use the following syntax.  
   
-||  
+| |  
 |-|  
 |*ElementPropertyName* `.` *FreezablePropertyName*|  
   
@@ -148,7 +148,7 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
   
  To target a freezable contained in a collection, you use the following path syntax.  
   
-||  
+| |  
 |-|  
 |*ElementPropertyName* `.Children[` *CollectionIndex* `].` *FreezablePropertyName*|  
   
@@ -174,7 +174,7 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
   
  You also need to specify a <xref:System.Windows.PropertyPath.Path%2A>. A <xref:System.Windows.PropertyPath.Path%2A> is a <xref:System.String> that tells the <xref:System.Windows.PropertyPath.Path%2A> how to interpret its <xref:System.Windows.PropertyPath.PathParameters%2A>. It uses the following syntax.  
   
-||  
+| |  
 |-|  
 |`(` *OwnerPropertyArrayIndex* `).(` *FreezablePropertyArrayIndex* `)`|  
   
@@ -198,7 +198,7 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
   
  To target a <xref:System.Windows.Freezable> contained in a collection, you use the following path syntax.  
   
-||  
+| |  
 |-|  
 |`(` *OwnerPropertyArrayIndex* `).(` *CollectionChildrenPropertyArrayIndex* `)` `[` *CollectionIndex* `].(` *FreezablePropertyArrayIndex* `)`|  
   

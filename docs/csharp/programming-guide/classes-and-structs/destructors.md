@@ -51,7 +51,9 @@ protected override void Finalize()
 > [!NOTE]
 >  Empty finalizers should not be used. When a class contains a finalizer, an entry is created in the `Finalize` queue. When the finalizer is called, the garbage collector is invoked to process the queue. An empty finalizer just causes a needless loss of performance.  
   
- The programmer has no control over when the finalizer is called because this is determined by the garbage collector. The garbage collector checks for objects that are no longer being used by the application. If it considers an object eligible for finalization, it calls the finalizer (if any) and reclaims the memory used to store the object. Finalizers are also called when the program exits.  
+ The programmer has no control over when the finalizer is called because this is determined by the garbage collector. The garbage collector checks for objects that are no longer being used by the application. If it considers an object eligible for finalization, it calls the finalizer (if any) and reclaims the memory used to store the object. 
+ 
+ In .NET Framework applications (but not in .NET Core applications), finalizers are also called when the program exits. 
   
  It is possible to force garbage collection by calling <xref:System.GC.Collect%2A>, but most of the time, this should be avoided because it may create performance issues.  
   
@@ -77,8 +79,9 @@ protected override void Finalize()
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- <xref:System.IDisposable>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
- [Garbage Collection](../../../standard/garbage-collection/index.md)
+## See Also
+
+- <xref:System.IDisposable>  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
+- [Garbage Collection](../../../standard/garbage-collection/index.md)

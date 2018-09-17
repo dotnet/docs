@@ -38,7 +38,7 @@ The .NET Framework Data Provider for SQL Server (SqlClient) provides `String` fu
   
 |SQL Server 2000|SQL Server 2005|SQL Server 2008|  
 |---------------------|---------------------|---------------------|  
-|[String Functions (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=115915)|[String Functions (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=115916)|[String Functions (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=115914)|  
+|[String Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115915)|[String Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115916)|[String Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115914)|  
   
 ## See Also  
  [SqlClient for Entity Framework Functions](../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md)  

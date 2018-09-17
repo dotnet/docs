@@ -14,8 +14,8 @@ When you assign a method to a delegate, *covariance* and *contravariance* provid
 ### Code  
   
 ```csharp  
-class Mammals{}  
-class Dogs : Mammals{}  
+class Mammals {}  
+class Dogs : Mammals {}  
   
 class Program  
 {  
@@ -71,6 +71,7 @@ public Form1()
 }  
 ```  
   
-## See Also  
- [Variance in Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)  
- [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)
+## See Also
+
+- [Variance in Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)  
+- [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)

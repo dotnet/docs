@@ -44,7 +44,7 @@ sealed class B : A {}
   
  The result is an error message:  
   
- `'MyDerivedC' cannot inherit from sealed class 'SealedClass'.`  
+ `'MyDerivedC': cannot derive from sealed type 'SealedClass'`  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
@@ -56,13 +56,14 @@ sealed class B : A {}
   
 -   The potential that deriving classes could modify your classes in such a way that they would no longer work correctly or as expected.  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)  
- [Abstract and Sealed Classes and Class Members](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)  
- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
- [override](../../../csharp/language-reference/keywords/override.md)  
- [virtual](../../../csharp/language-reference/keywords/virtual.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)  
+- [Abstract and Sealed Classes and Class Members](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)  
+- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
+- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
+- [override](../../../csharp/language-reference/keywords/override.md)  
+- [virtual](../../../csharp/language-reference/keywords/virtual.md)

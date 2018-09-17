@@ -290,7 +290,7 @@ using System.IO;
 using System.Collections;  
 using System.Xml.Serialization;  
   
-public class Test{  
+public class Test {  
     static void Main(){  
         Test t = new Test();  
         t.SerializeCollection("coll.xml");  
@@ -308,7 +308,7 @@ public class Test{
         x.Serialize(writer, Emps);  
     }  
 }  
-public class Employees:ICollection{  
+public class Employees:ICollection {  
     public string CollectionName;  
     private ArrayList empArray = new ArrayList();   
   
@@ -337,7 +337,7 @@ public class Employees:ICollection{
     }  
 }  
   
-public class Employee{  
+public class Employee {  
     public string EmpName;  
     public string EmpID;  
     public Employee(){}  
@@ -756,10 +756,11 @@ public class Test
 </PurchaseOrder>  
 ```  
   
-## See Also  
- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
- [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)  
- [Attributes That Control XML Serialization](../../../docs/standard/serialization/attributes-that-control-xml-serialization.md)  
- [XmlSerializer Class](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx)  
- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)
+## See also
+
+- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
+- [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)  
+- [Attributes That Control XML Serialization](../../../docs/standard/serialization/attributes-that-control-xml-serialization.md)  
+- [XmlSerializer Class](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx)  
+- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
+- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

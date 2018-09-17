@@ -109,7 +109,7 @@ Quantifiers specify how many instances of a character, group, or character class
 |`\b`|End at a word boundary.|  
   
 ### Match at Least n Times: {n,}  
- The `{`*n*`,}` quantifier matches the preceding element at least *n* times, where *n* is any integer. `{`*n*`,}` is a greedy quantifier whose lazy equivalent is `{`*n*`}?`.  
+ The `{`*n*`,}` quantifier matches the preceding element at least *n* times, where *n* is any integer. `{`*n*`,}` is a greedy quantifier whose lazy equivalent is `{`*n*`,}?`.  
   
  For example, the regular expression `\b\d{2,}\b\D+` tries to match a word boundary followed by at least two digits followed by a word boundary and a non-digit character. The following example illustrates this regular expression. The regular expression fails to match the phrase `"7 days"` because it contains just one decimal digit, but it successfully matches the phrases `"10 weeks and 300 years"`.  
   
@@ -265,6 +265,7 @@ Quantifiers specify how many instances of a character, group, or character class
  [!code-csharp[RegularExpressions.Quantifiers.EmptyMatch#2](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.quantifiers.emptymatch/cs/emptymatch4.cs#2)]
  [!code-vb[RegularExpressions.Quantifiers.EmptyMatch#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.quantifiers.emptymatch/vb/emptymatch4.vb#2)]  
   
-## See Also  
- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
- [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)
+## See also
+
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
+- [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)

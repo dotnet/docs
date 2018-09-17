@@ -13,7 +13,14 @@ ms.assetid: 698b5a73-85cf-4e0e-9e8e-6496887f8527
 The namespace alias qualifier (`::`) is used to look up identifiers. It is always positioned between two identifiers, as in this example:  
   
  [!code-csharp[csRefOperators#27](../../../csharp/language-reference/operators/codesnippet/CSharp/namespace-alias-qualifer_1.cs)]  
-  
+
+The `::` operator can also be used with a *using alias directive*:
+
+```csharp
+// using Col=System.Collections.Generic;
+var numbers = new Col::List<int> { 1, 2, 3 };
+```
+
 ## Remarks  
  The namespace alias qualifier can be `global`. This invokes a lookup in the global namespace, rather than an aliased namespace.  
   
@@ -25,10 +32,11 @@ The namespace alias qualifier (`::`) is used to look up identifiers. It is alway
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Operators](../../../csharp/language-reference/operators/index.md)  
- [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)  
- [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)  
- [extern alias](../../../csharp/language-reference/keywords/extern-alias.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Operators](../../../csharp/language-reference/operators/index.md)  
+- [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)  
+- [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)  
+- [extern alias](../../../csharp/language-reference/keywords/extern-alias.md)

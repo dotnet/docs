@@ -21,5 +21,5 @@ XML literals and XML properties are not supported in embedded code within ASP.NE
   
 ## See Also  
  [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)  
+ [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)  
  [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)

@@ -18,8 +18,8 @@ Table-valued parameters provide an easy way to marshal multiple rows of data fro
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Table-Valued Parameters (Database Engine)](http://go.microsoft.com/fwlink/?LinkId=98363) in SQL Server Books Online|Describes how to create and use table-valued parameters.|  
-|[User-Defined Table Types](http://go.microsoft.com/fwlink/?LinkId=98364) in SQL Server Books Online|Describes user-defined table types that are used to declare table-valued parameters.|  
+|[Table-Valued Parameters (Database Engine)](https://go.microsoft.com/fwlink/?LinkId=98363) in SQL Server Books Online|Describes how to create and use table-valued parameters.|  
+|[User-Defined Table Types](https://go.microsoft.com/fwlink/?LinkId=98364) in SQL Server Books Online|Describes user-defined table types that are used to declare table-valued parameters.|  
   
 ## Passing Multiple Rows in Previous Versions of SQL Server  
  Before table-valued parameters were introduced to SQL Server 2008, the options for passing multiple rows of data to a stored procedure or a parameterized SQL command were limited. A developer could choose from the following options for passing multiple rows to the server:  
@@ -33,7 +33,7 @@ Table-valued parameters provide an easy way to marshal multiple rows of data fro
 -   Use the `bcp` utility program or the <xref:System.Data.SqlClient.SqlBulkCopy> object to load many rows of data into a table. Although this technique is very efficient, it does not support server-side processing unless the data is loaded into a temporary table or table variable.  
   
 ## Creating Table-Valued Parameter Types  
- Table-valued parameters are based on strongly-typed table structures that are defined by using [!INCLUDE[tsql](../../../../../includes/tsql-md.md)] CREATE TYPE statements. You have to create a table type and define the structure in SQL Server before you can use table-valued parameters in your client applications. For more information about creating table types, see [User-Defined Table Types](http://go.microsoft.com/fwlink/?LinkID=98364) in SQL Server Books Online.  
+ Table-valued parameters are based on strongly-typed table structures that are defined by using [!INCLUDE[tsql](../../../../../includes/tsql-md.md)] CREATE TYPE statements. You have to create a table type and define the structure in SQL Server before you can use table-valued parameters in your client applications. For more information about creating table types, see [User-Defined Table Types](https://go.microsoft.com/fwlink/?LinkID=98364) in SQL Server Books Online.  
   
  The following statement creates a table type named CategoryTableType that consists of CategoryID and CategoryName columns:  
   
@@ -71,7 +71,7 @@ INSERT INTO dbo.Categories (CategoryID, CategoryName)
 ## Limitations of Table-Valued Parameters  
  There are several limitations to table-valued parameters:  
   
--   You cannot pass table-valued parameters to [CLR user-defined functions](http://msdn.microsoft.com/library/ms131077.aspx).  
+-   You cannot pass table-valued parameters to [CLR user-defined functions](/sql/relational-databases/clr-integration-database-objects-user-defined-functions/clr-user-defined-functions).  
   
 -   Table-valued parameters can only be indexed to support UNIQUE or PRIMARY KEY constraints. SQL Server does not maintain statistics on table-valued parameters.  
   
@@ -269,4 +269,4 @@ insertCommand.ExecuteNonQuery()
  [Commands and Parameters](../../../../../docs/framework/data/adonet/commands-and-parameters.md)  
  [DataAdapter Parameters](../../../../../docs/framework/data/adonet/dataadapter-parameters.md)  
  [SQL Server Data Operations in ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-operations.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

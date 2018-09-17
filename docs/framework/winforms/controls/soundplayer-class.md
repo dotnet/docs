@@ -45,4 +45,4 @@ The `SoundPlayer` class enables you to easily include sounds in your application
  [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.  
   
- Also see [HYPERLINK "http://msdn.microsoft.com/library/11bxex12(v=vs.110)" My.Computer Object](http://msdn.microsoft.com/library/11bxex12\(v=vs.110\)) or [My.Computer Object](http://msdn.microsoft.com/library/11bxex12\(v=vs.120\)).
+ Also see [HYPERLINK "http://msdn.microsoft.com/library/11bxex12(v=vs.110)" My.Computer Object](https://msdn.microsoft.com/library/11bxex12\(v=vs.110\)) or [My.Computer Object](https://msdn.microsoft.com/library/11bxex12\(v=vs.120\)).

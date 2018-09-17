@@ -19,7 +19,7 @@ This example shows how to animate the <xref:System.Windows.Media.ArcSegment.Size
  [!code-csharp[BasicAnimations_snip#SizeAnimationWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BasicAnimations_snip/CSharp/SizeAnimationExample.cs#sizeanimationwholepage)]
  [!code-vb[BasicAnimations_snip#SizeAnimationWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/BasicAnimations_snip/VisualBasic/SizeAnimationExample.vb#sizeanimationwholepage)]  
   
- For additional geometry and animation samples, see the [Geometries Sample](http://go.microsoft.com/fwlink/?LinkID=159989).  
+ For additional geometry and animation samples, see the [Geometries Sample](https://go.microsoft.com/fwlink/?LinkID=159989).  
   
 ## See Also  
  <xref:System.Windows.Media.ArcSegment.Size%2A>  
@@ -27,5 +27,5 @@ This example shows how to animate the <xref:System.Windows.Media.ArcSegment.Size
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
  [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/geometries-how-to-topics.md)  
- [Animation and Timing](http://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)  
+ [Animation and Timing](https://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)

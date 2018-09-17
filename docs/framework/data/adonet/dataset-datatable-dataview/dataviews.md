@@ -38,10 +38,10 @@ A <xref:System.Data.DataView> enables you to create different views of the data 
  Describes how to use a **DataViewManager** to manage **DataView** settings for each table in a **DataSet**.  
   
 ## Related Sections  
- [ASP.NET Web Applications](http://msdn.microsoft.com/library/a812d7b7-049e-4234-a4c2-6acf690301f6)  
+ [ASP.NET Web Applications](https://msdn.microsoft.com/library/a812d7b7-049e-4234-a4c2-6acf690301f6)  
  Provides overviews and detailed, step-by-step procedures for creating ASP.NET applications, Web Forms, and Web Services.  
   
- [Windows Applications](http://msdn.microsoft.com/library/a6bb2180-09b1-4738-b9fd-7fb05fc92f23)  
+ [Windows Applications](https://msdn.microsoft.com/library/a6bb2180-09b1-4738-b9fd-7fb05fc92f23)  
  Provides detailed information about working with Windows Forms and console applications.  
   
  [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
@@ -54,4 +54,4 @@ A <xref:System.Data.DataView> enables you to create different views of the data 
  Describes the ADO.NET architecture and components, and how to use ADO.NET to access existing data sources and manage application data.  
   
 ## See Also  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

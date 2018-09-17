@@ -127,7 +127,7 @@ and `explicitFieldTwo`, not `localVariableOne` and `localVariableTwo`:
 For any field where an explicit name is not provided, an applicable implicit
 name is projected. There is no requirement to provide semantic names,
 either explicitly or implicitly. The following initializer has     field
-names `Item1`, whose value is `42` and `StringContent`, whose value is "The answer to everything":
+names `Item1`, whose value is `42` and `stringContent`, whose value is "The answer to everything":
 
 [!code-csharp[MixedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#MixedTuple "mixed tuple")]
 
@@ -153,7 +153,7 @@ Beginning with C# 7.3, tuple types support the `==` and `!=` operators. These op
 
 [!code-csharp[TupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#Equality "Testing tuples for equality")]
 
-There are several rules that make tuple equality tests more convenient. Tuple equality performs [lifted conversions](/dotnet/csharp/language-reference/language-specification/conversions#lifted-conversion-operators) if one of the tuples is a nullable tuple, as shown in the following code:
+There are several rules that make tuple equality tests more convenient. Tuple equality performs [lifted conversions](language-reference/language-specification/index.md) if one of the tuples is a nullable tuple, as shown in the following code:
 
 
 [!code-csharp[NullableTupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#NullableEquality "Comparing Tuples and nullable tuples")]

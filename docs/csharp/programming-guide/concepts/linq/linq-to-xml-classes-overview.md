@@ -80,5 +80,6 @@ This topic provides a list of the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-
 ### XText Class  
  <xref:System.Xml.Linq.XText> represents a text node. In most cases, you do not have to use this class. This class is primarily used for mixed content.  
   
-## See Also  
- [LINQ to XML Programming Overview (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)
+## See Also
+
+- [LINQ to XML Programming Overview (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)

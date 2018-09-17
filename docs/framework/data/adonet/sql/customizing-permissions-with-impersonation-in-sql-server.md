@@ -59,14 +59,6 @@ CREATE PROCEDURE [procName] WITH EXECUTE AS 'proxyUser' AS ...
   
 -   SELF. Executing as SELF executes in the security context of the creator of the stored procedure. This is equivalent to executing as a specified user, where the specified user is the person creating or altering the procedure.  
   
-## External Resources  
- For more information, see the following resources.  
-  
-|Resource|Description|  
-|--------------|-----------------|  
-|[Context Switching](http://msdn.microsoft.com/library/ms188268.aspx) in SQL Server Books Online|Contains links to topics describing how to use the EXECUTE AS clause.|  
-|[Using EXECUTE AS to Create Custom Permission Sets](http://msdn.microsoft.com/library/ms190384.aspx) and [Using EXECUTE AS in Modules](http://msdn.microsoft.com/library/ms178106.aspx) in SQL Server Books Online|Topics describe how to use the EXECUTE AS clause.|  
-  
 ## See Also  
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)  
@@ -75,4 +67,4 @@ CREATE PROCEDURE [procName] WITH EXECUTE AS 'proxyUser' AS ...
  [Writing Secure Dynamic SQL in SQL Server](../../../../../docs/framework/data/adonet/sql/writing-secure-dynamic-sql-in-sql-server.md)  
  [Signing Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/signing-stored-procedures-in-sql-server.md)  
  [Modifying Data with Stored Procedures](../../../../../docs/framework/data/adonet/modifying-data-with-stored-procedures.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -88,7 +88,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |379893|.NET Framework 4.5.2|
     |On Windows 10 systems only: 393295<br /><br /> On all other OS versions: 393297|[!INCLUDE[net_v46](../../../includes/net-v46-md.md)]|
     |On Windows 10 November Update systems only: 394254<br /><br /> On all other OS versions: 394271|[!INCLUDE[net_v461](../../../includes/net-v461-md.md)]|
-    |On Windows 10 Anniversary Update only: 394802<br /><br /> On all other OS versions: 394806|[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]| 
+    |On Windows 10 Anniversary Update and Windows Server 2016: 394802<br /><br /> On all other OS versions: 394806|[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]| 
     |On Windows 10 Creators Update only: 460798<br/><br/> On all other OS versions: 460805 | .NET Framework 4.7 |
     |On Windows 10 Fall Creators Update only: 461308<br/><br/> On all other OS versions: 461310 | .NET Framework 4.7.1 |
     |On Windows 10 April 2018 Update only: 461808<br/><br/> On all other OS versions: 461814| .NET Framework 4.7.2 |
@@ -136,7 +136,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |.NET Framework 4.6 installed on all other Windows OS versions|393297|
     |.NET Framework 4.6.1 installed on Windows 10|394254|
     |.NET Framework 4.6.1 installed on all other Windows OS versions|394271|
-    |.NET Framework 4.6.2 installed on Windows 10 Anniversary Update|394802|
+    |.NET Framework 4.6.2 installed on Windows 10 Anniversary Update and Windows Server 2016|394802|
     |.NET Framework 4.6.2 installed on all other Windows OS versions|394806|
     |.NET Framework 4.7 installed on Windows 10 Creators Update|460798|
     |.NET Framework 4.7 installed on all other Windows OS versions|460805|

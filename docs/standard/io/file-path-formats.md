@@ -9,13 +9,10 @@ helpviewer_keywords:
   - "path formats, Windows"
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # File path formats on Windows systems
 
-Members of many of the types in the <xref:System.IO> namespace include a `path` parameter that lets you specify an absolute or relative path to a file system resource. This path is then passed to [Windows file sysem APIs](https://msdn.microsoft.com/library/windows/desktop/aa364407(v=vs.85).aspx). This topic discusses the formats for file paths that you can use on Windows systems.
+Members of many of the types in the <xref:System.IO> namespace include a `path` parameter that lets you specify an absolute or relative path to a file system resource. This path is then passed to [Windows file system APIs](https://msdn.microsoft.com/library/windows/desktop/aa364407(v=vs.85).aspx). This topic discusses the formats for file paths that you can use on Windows systems.
 
 ## Traditional DOS paths
 
@@ -111,7 +108,7 @@ Almost all paths passed to Windows APIs are normalized. During normalization, Wi
 - Evaluates relative directory components (`.` for the current directory and `..` for the parent directory).
 - Trims certain characters.
 
-This normalization happens implicitly, but you can do it explicitly by calling the <xref:System.IO.Path.GetFullPath%2A?displayProperty=nameWithType> method, which wraps a call to the  [GetFullPathName() function](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx). You can also call the Windows [GetFullPathName() function](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx) directly using P/Invoke. You can also call the 
+This normalization happens implicitly, but you can do it explicitly by calling the <xref:System.IO.Path.GetFullPath%2A?displayProperty=nameWithType> method, which wraps a call to the  [GetFullPathName() function](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea).aspx). You can also call the Windows [GetFullPathName() function](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea).aspx) directly using P/Invoke. You can also call the 
 
 ### Identifying the path
 
@@ -175,7 +172,7 @@ Along with the runs of separators and relative segments removed earlier, some ad
 
 ## Skipping normalization
 
-Normally, any path passed to a Windows API is (effectively) passed to the [GetFullPathName function](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx) and normalized. There is one important exception: a device path that begins with a question mark instead of a period. Unless the path starts exactly with `\\?\` (note the use of the canonical backslash), it is normalized.
+Normally, any path passed to a Windows API is (effectively) passed to the [GetFullPathName function](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea) and normalized. There is one important exception: a device path that begins with a question mark instead of a period. Unless the path starts exactly with `\\?\` (note the use of the canonical backslash), it is normalized.
 
 Why would you want to skip normalization? There are three major reasons:
 
@@ -190,9 +187,9 @@ Why would you want to skip normalization? There are three major reasons:
 
 Skipping normalization and max path checks is the only difference between the two device path syntaxes; they are otherwise identical. Be careful with skipping normalization, since you can easily create paths that are difficult for "normal" applications to deal with.
 
-Paths that start with `\\?\` are still normalized if you explicitly pass them to the [GetFullPathName function](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx).
+Paths that start with `\\?\` are still normalized if you explicitly pass them to the [GetFullPathName function](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea).
 
-Note that you can paths of more than `MAX_PATH` characters to [GetFullPathName](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx) without `\\?\`. It supports arbitrary length paths up to the maximum string size that Windows can handle.
+Note that you can paths of more than `MAX_PATH` characters to [GetFullPathName](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea) without `\\?\`. It supports arbitrary length paths up to the maximum string size that Windows can handle.
 
 ## Case and the Windows file system
 

@@ -32,11 +32,12 @@ The following table shows the predefined implicit pointer conversions. Implicit 
   
  [!code-csharp[csProgGuidePointers#4](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/pointer-conversions_2.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
- [Types](../../../csharp/language-reference/keywords/types.md)  
- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
+- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
+- [Types](../../../csharp/language-reference/keywords/types.md)  
+- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
+- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
+- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)

@@ -19,7 +19,7 @@ A query expression must begin with a `from` clause. Additionally, a query expres
 
 Both the range variable and the data source are strongly typed. The data source referenced in the `from` clause must have a type of <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, or a derived type such as <xref:System.Linq.IQueryable%601>.
 
-In the following example, `numbers` is the data source and `num` is the range variable. Note that both variables are strongly typed even through the [var](var.md) keyword is used.
+In the following example, `numbers` is the data source and `num` is the range variable. Note that both variables are strongly typed even though the [var](var.md) keyword is used.
 
 [!code-csharp[cscsrefQueryKeywords#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/From.cs#1)]
 
@@ -49,5 +49,5 @@ For more information about join operations that use multiple `from` clauses, see
 
 ## See also
 
-[Query Keywords (LINQ)](query-keywords.md)  
-[Language Integrated Query (LINQ)](../../linq/index.md)  
+- [Query Keywords (LINQ)](query-keywords.md)  
+- [Language Integrated Query (LINQ)](../../linq/index.md)  

@@ -35,7 +35,7 @@ This sample demonstrates how to write a custom SQL tracking participant, that wr
   
 10. In the WCF test client, double click **GetStockPrice**. This opens the `GetStockPrice` operation that takes one parameter, type in the value `Contoso` and click **Invoke**.  
   
-11. The emitted tracking records are written to a SQL database. To view the tracking records, open the TrackingSample database in SQL Management Studio and navigate to the tables. For more information about SQL Server Management Studio, see [Introducing SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=165645). SQL Server 2008 Management Studio Express can be downloaded [here](http://go.microsoft.com/fwlink/?LinkId=180520). Running a select query on the tables displays the data within the tracking records stored in the respective tables.  
+11. The emitted tracking records are written to a SQL database. To view the tracking records, open the TrackingSample database in SQL Management Studio and navigate to the tables. For more information about SQL Server Management Studio, see [Introducing SQL Server Management Studio](https://go.microsoft.com/fwlink/?LinkId=165645). SQL Server 2008 Management Studio Express can be downloaded [here](https://go.microsoft.com/fwlink/?LinkId=180520). Running a select query on the tables displays the data within the tracking records stored in the respective tables.  
   
 #### To uninstall the sample  
   
@@ -49,9 +49,9 @@ This sample demonstrates how to write a custom SQL tracking participant, that wr
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\SqlTracking`  
   
 ## See Also  
- [AppFabric Monitoring Samples](http://go.microsoft.com/fwlink/?LinkId=193959)
+ [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)

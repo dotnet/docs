@@ -6,7 +6,7 @@ about: Request a new topic to help us improve
 
 **Help us make content visible**
 
-- Tell us what you search terms you used, and how you searched docs.
+- Tell us what search terms you used and how you searched docs.
 - Tell us what docs you found that didn't address your concern.
 
 **Describe the new topic**

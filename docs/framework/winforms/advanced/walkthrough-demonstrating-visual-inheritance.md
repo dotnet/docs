@@ -74,7 +74,7 @@ Visual inheritance enables you to see the controls on the base form and to add n
   
     -   Set the **(Name)** property to **btnProtected**.  
   
-    -   Set the**Modifiers** property to **Protected**. This makes it possible for forms that inherit from **Form1** to modify the properties of **btnProtected**.  
+    -   Set the **Modifiers** property to **Protected**. This makes it possible for forms that inherit from **Form1** to modify the properties of **btnProtected**.  
   
 4.  Double-click the **Say Hello** button to add an event handler for the **Click** event.  
   
@@ -122,7 +122,7 @@ Visual inheritance enables you to see the controls on the base form and to add n
   
 #### To add an inherited form  
   
-1.  In **Solution Explorer**, right-click the **InheritanceTest** project, select **Add**, and then select**New Item**.  
+1.  In **Solution Explorer**, right-click the **InheritanceTest** project, select **Add**, and then select **New Item**.  
   
 2.  In the **Add New Item** dialog box, select the **Windows Forms** category (if you have a list of categories) and then select the **Inherited Form** template.  
   

@@ -7,6 +7,7 @@ ms.date: 09/03/2018
 dev_langs: 
   - "csharp"
   - "vb"
+ms.custom: vs-dotnet
 ---
 
 # Deploying .NET Core apps with Visual Studio

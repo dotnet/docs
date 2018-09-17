@@ -3,7 +3,7 @@ title: "Cancel an Async Task or a List of Tasks (C#)"
 ms.date: 07/20/2015
 ms.assetid: eec32dbb-70ea-4c88-bd27-fa2e34546914
 ---
-# Cancel an Async Task or a List of Tasks (C#)
+# Cancel an async task or a list of tasks (C#)
 
 You can set up a button that you can use to cancel an async application if you don't want to wait for it to finish. By following the examples in this topic, you can add a cancellation button to an application that downloads the contents of one website or a list of websites.
 
@@ -12,11 +12,13 @@ The examples use the UI that [Fine-Tuning Your Async Application (C#)](../../../
 > [!NOTE]
 > To run the examples, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.
 
-##  <a name="BKMK_CancelaTask"></a> Cancel a Task
- The first example associates the **Cancel** button with a single download task. If you choose the button while the application is downloading content, the download is canceled.
+## Cancel a task
 
-### Downloading the Example
- You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.
+The first example associates the **Cancel** button with a single download task. If you choose the button while the application is downloading content, the download is canceled.
+
+### Download the example
+
+You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.
 
 1.  Decompress the file that you downloaded, and then start Visual Studio.
 
@@ -31,7 +33,7 @@ The examples use the UI that [Fine-Tuning Your Async Application (C#)](../../../
 > [!TIP]
 > If you don't want to download the project, you can review the MainWindow.xaml.cs files at the end of this topic.
 
-### Building the Example
+### Build the example
  The following changes add a **Cancel** button to an application that downloads a website. If you don't want to download or build the example, you can review the final product in the "Complete Examples" section at the end of this topic. Asterisks mark the changes in the code.
 
  To build the example yourself, step by step, follow the instructions in the "Downloading the Example" section, but choose **StarterCode** as the **StartUp Project** instead of **CancelATask**.
@@ -132,11 +134,13 @@ The examples use the UI that [Fine-Tuning Your Async Application (C#)](../../../
     Download canceled.
     ```
 
-##  <a name="BKMK_CancelaListofTasks"></a> Cancel a List of Tasks
- You can extend the previous example to cancel many tasks by associating the same `CancellationTokenSource` instance with each task. If you choose the **Cancel** button, you cancel all tasks that aren’t yet complete.
+## Cancel a list of tasks
 
-### Downloading the Example
- You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.
+You can extend the previous example to cancel many tasks by associating the same `CancellationTokenSource` instance with each task. If you choose the **Cancel** button, you cancel all tasks that aren’t yet complete.
+
+### Download the example
+
+You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.
 
 1.  Decompress the file that you downloaded, and then start Visual Studio.
 
@@ -152,8 +156,9 @@ The examples use the UI that [Fine-Tuning Your Async Application (C#)](../../../
 
 If you don't want to download the project, you can review the MainWindow.xaml.cs files at the end of this topic.
 
-### Building the Example
- To extend the example yourself, step by step, follow the instructions in the "Downloading the Example" section, but choose **CancelATask** as the **StartUp Project**. Add the following changes to that project. Asterisks mark the changes in the program.
+### Build the example
+
+To extend the example yourself, step by step, follow the instructions in the "Downloading the Example" section, but choose **CancelATask** as the **StartUp Project**. Add the following changes to that project. Asterisks mark the changes in the program.
 
 1.  Add a method to create a list of web addresses.
 
@@ -215,7 +220,7 @@ If you don't want to download the project, you can review the MainWindow.xaml.cs
 
 5.  If you don’t cancel the program, it produces the following output.
 
-    ```
+    ```text
     Length of the downloaded string: 35939.
 
     Length of the downloaded string: 237682.
@@ -235,7 +240,7 @@ If you don't want to download the project, you can review the MainWindow.xaml.cs
 
      If you choose the **Cancel** button before the downloads are complete, the output contains the lengths of the downloads that completed before the cancellation.
 
-    ```
+    ```text
     Length of the downloaded string: 35939.
 
     Length of the downloaded string: 237682.
@@ -245,13 +250,15 @@ If you don't want to download the project, you can review the MainWindow.xaml.cs
     Downloads canceled.
     ```
 
-##  <a name="BKMK_CompleteExamples"></a> Complete Examples
- The following sections contain the code for each of the previous examples. Notice that you must add a reference for <xref:System.Net.Http>.
+## Complete examples
 
- You can download the projects from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).
+The following sections contain the code for each of the previous examples. Notice that you must add a reference for <xref:System.Net.Http>.
 
-### Cancel a Task Example
- The following code is the complete MainWindow.xaml.cs file for the example that cancels a single task.
+You can download the projects from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).
+
+### Example - Cancel a task
+
+The following code is the complete MainWindow.xaml.cs file for the example that cancels a single task.
 
 ```csharp
 using System;
@@ -361,8 +368,9 @@ namespace CancelATask
 }
 ```
 
-### Cancel a List of Tasks Example
- The following code is the complete MainWindow.xaml.cs file for the example that cancels a list of tasks.
+### Example - Cancel a list of tasks
+
+The following code is the complete MainWindow.xaml.cs file for the example that cancels a list of tasks.
 
 ```csharp
 using System;
@@ -506,7 +514,7 @@ namespace CancelAListOfTasks
 }
 ```
 
-## See Also
+## See also
 
 - <xref:System.Threading.CancellationTokenSource>
 - <xref:System.Threading.CancellationToken>

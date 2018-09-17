@@ -13,14 +13,14 @@ ms.assetid: ba72d648-9553-4849-b829-069ad5ea014b
 author: "ghogen"
 manager: "douge"
 ---
-# Developing Windows Service Applications
+# Develop Windows service apps
 
 Using Visual Studio or the .NET Framework SDK, you can easily create services by creating an application that is installed as a service. This type of application is called a Windows service. With framework features, you can create services, install them, and start, stop, and otherwise control their behavior.
 
 > [!NOTE]
 > In Visual Studio you can create a service in managed code in Visual C# or Visual Basic, which can interoperate with existing C++ code if required. Or, you can create a Windows service in native C++ by using the [ATL Project Wizard](/cpp/atl/reference/atl-project-wizard).
 
-## In This Section
+## In this section
 
 [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
 
@@ -38,7 +38,7 @@ Explains the language elements used in service programming.
 
 Describes the process of creating and configuring Windows services using the Windows service project template.
 
-## Related Sections
+## Related sections
 
 <xref:System.ServiceProcess.ServiceBase> - Describes the major features of the <xref:System.ServiceProcess.ServiceBase> class, which is used to create services.
 

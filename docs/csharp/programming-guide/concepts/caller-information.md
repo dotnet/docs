@@ -53,7 +53,7 @@ Caller Info values are emitted as literals into the Intermediate Language (IL) a
 
 You can explicitly supply the optional arguments to control the caller information or to hide caller information.
 
-### Member Names
+### Member names
 
 You can use the `CallerMemberName` attribute to avoid specifying the member name as a `String` argument to the called method. By using this technique, you avoid the problem that **Rename Refactoring** doesn't change the `String` values. This benefit is especially useful for the following tasks:
 
@@ -73,7 +73,7 @@ The following chart shows the member names that are returned when you use the `C
 |Attribute constructor|The name of the member to which the attribute is applied. If the attribute is any element within a member (such as a parameter, a return value, or a generic type parameter), this result is the name of the member that's associated with that element.|
 |No containing member (for example, assembly-level or attributes that are applied to types)|The default value of the optional parameter.|
 
-## See Also
+## See also
 
 - [Attributes (C#)](../../../csharp/programming-guide/concepts/attributes/index.md)
 - [Common Attributes (C#)](../../../csharp/programming-guide/concepts/attributes/common-attributes.md)

@@ -9,13 +9,13 @@ ms.assetid: 9ac1b522-77ab-4cdc-852a-20fcdc9ae498
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# SOS.dll (SOS Debugging Extension)
+# SOS.dll (SOS debugging extension)
 
 The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual Studio and in the Windows debugger (WinDbg.exe) by providing information about the internal Common Language Runtime (CLR) environment. This tool requires your project to have unmanaged debugging enabled. SOS.dll is automatically installed with the .NET Framework. To use SOS.dll in Visual Studio, install the [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
 
 ## Syntax
 
-```
+```shell
 ![command] [options]
 ```
 
@@ -23,7 +23,7 @@ The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual
 
 |Command|Description|
 |-------------|-----------------|
-|**AnalyzeOOM** (**ao**)|Displays the information for the last OOM that occurred on an allocation request to the garbage collection heap. (In server garbage collection, it displays OOM, if any, on each garbage collection heap.)|
+|**AnalyzeOOM** (**ao**)|Displays the information for the last out of memory (OOM) that occurred on an allocation request to the garbage collection heap. (In server garbage collection, it displays OOM, if any, on each garbage collection heap.)|
 |**BPMD** [**-nofuturemodule**] [\<*module name*> \<*method name*>] [**-md** <`MethodDesc`>] **-list** **-clear** \<*pending breakpoint number*> **-clearall**|Creates a breakpoint at the specified method in the specified module.<br /><br /> If the specified module and method have not been loaded, this command waits for a notification that the module was loaded and just-in-time (JIT) compiled before creating a breakpoint.<br /><br /> You can manage the list of pending breakpoints by using the **-list**, **-clear**, and **-clearall** options:<br /><br /> The **-list** option generates a list of all the pending breakpoints. If a pending breakpoint has a non-zero module ID, that breakpoint is specific to a function in that particular loaded module. If the pending breakpoint has a zero module ID, that breakpoint applies to modules that have not yet been loaded.<br /><br /> Use the **-clear** or **-clearall** option to remove pending breakpoints from the list.|
 |**CLRStack** [**-a**] [**-l**] [**-p**] [**-n**]|Provides a stack trace of managed code only.<br /><br /> The **-p** option shows arguments to the managed function.<br /><br /> The **-l** option shows information on local variables in a frame. The SOS Debugging Extension cannot retrieve local names, so the output for local names is in the format \<*local address*> **=** \<*value*>.<br /><br /> The **-a**(all) option is a shortcut for **-l** and **-p** combined.<br /><br /> The **-n** option disables the display of source file names and line numbers. If the debugger has the option SYMOPT_LOAD_LINES specified, SOS will look up the symbols for every managed frame and if successful will display the corresponding source file name and line number. The **-n** (No line numbers) parameter can be specified to disable this behavior.<br /><br /> The SOS Debugging Extension does not display transition frames on x64 and IA-64-based platforms.|
 |**COMState**|Lists the COM apartment model for each thread and a `Context` pointer, if available.|
@@ -113,7 +113,8 @@ To load a specific version of SOS.dll, type the following command into the Windo
 ```
 
 ## Examples
- The following command displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
+
+The following command displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
 
 ```
 !dumparray -start 2 -length 5 -detail 00ad28d0
@@ -197,7 +198,7 @@ To load a specific version of SOS.dll, type the following command into the Windo
 !token2ee unittest.exe 02000003
 ```
 
-## See Also
+## See also
 
 - [Tools](../../../docs/framework/tools/index.md)
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

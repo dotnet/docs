@@ -1,12 +1,12 @@
 ---
 title: "How to: Host a WCF Service in a Managed Application"
-ms.date: "03/30/2017"
+ms.date: 09/17/2018
 dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 5eb29db0-b6dc-4e77-8c68-0a62f79d743b
 ---
-# How to: Host a WCF Service in a Managed Application
+# How to: Host a WCF service in a managed app
 
 To host a service inside a managed application, embed the code for the service inside the managed application code, define an endpoint for the service either imperatively in code, declaratively through configuration, or using default endpoints, and then create an instance of <xref:System.ServiceModel.ServiceHost>.
 
@@ -88,7 +88,7 @@ The following example creates a <xref:System.ServiceModel.ServiceHost> object to
 [!code-csharp[CFX_SelfHost4#5](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_selfhost4/cs/program.cs#5)]
 [!code-vb[CFX_SelfHost4#5](../../../samples/snippets/visualbasic/VS_Snippets_CFX/cfx_selfhost4/vb/module1.vb#5)]
 
-## See Also
+## See also
 
 - <xref:System.Uri>
 - <xref:System.Configuration.ConfigurationManager.AppSettings%2A>

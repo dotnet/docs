@@ -34,8 +34,7 @@ The following table shows the commands supported by *Mage.exe*. For more informa
 |**-s, -Sign** `[signOptions]`|Uses a key pair or X509 certificate to sign a file. Signatures are inserted as XML elements inside of the files.<br /><br /> You must be connected to the Internet when signing a manifest that specifies a **-TimestampUri** value.|
 |**-h, -?, -Help** *[verbose]*|Describes all of the available commands and their options. Specify `verbose` to get detailed help.|
 
-<a name="NewUpdate"></a>
-## New and Update Command Options
+## New and Update command options
 
 The following table shows the options supported by the `-New` and `-Update` commands:
 
@@ -64,9 +63,9 @@ The following table shows the options supported by the `-New` and `-Update` comm
 |**-v, -Version** `versionNumber`|1.0.0.0|Application manifests.<br /><br /> Deployment manifests.|The version of the deployment. The argument must be a valid version string of the format "*N.N.N.N*", where "*N*" is an unsigned 32-bit integer.|
 |**-wpf, -WPFBrowserApp**  `isWPFApp`|false|Application manifests.<br /><br /> Deployment manifests.|Use this flag only if the application is a Windows Presentation Foundation (WPF) application that will be hosted inside of Internet Explorer, and is not a stand-alone executable. Valid values are "true" or "t", and "false" or "f".<br /><br /> For application manifests, inserts the `hostInBrowser` attribute under the `entryPoint` element of the application manifest.<br /><br /> For deployment manifests, sets the `install` attribute on the `deployment` element to false, and saves the deployment manifest with a .xbap extension. Specifying this argument along with the **-Install** argument produces an error, because a browser-hosted application cannot be an installed, offline application.|
 
-<a name="Sign"></a>
-## Sign Command Options
- The following table shows the options supported by the `-Sign` command, which apply to all types of files.
+## Sign command options
+
+The following table shows the options supported by the `-Sign` command, which apply to all types of files.
 
 |Options|Description|
 |-------------|-----------------|
@@ -195,7 +194,7 @@ The following example signs an existing deployment manifest using a digital cert
 mage -Sign deploy.application -CertFile cert.pfx -Password <passwd>
 ```
 
-## See Also
+## See also
 
 - [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)
 - [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)

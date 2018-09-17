@@ -3,7 +3,7 @@ title: "Control Flow in Async Programs (C#)"
 ms.date: 07/20/2015
 ms.assetid: fc92b08b-fe1d-4d07-84ab-5192fafe06bb
 ---
-# Control Flow in Async Programs (C#)
+# Control flow in async programs (C#)
 
 You can write and maintain asynchronous programs more easily by using the `async` and `await` keywords. However, the results might surprise you if you don't understand how your program operates. This topic traces the flow of control through a simple async program to show you when control moves from one method to another and what information is transferred each time.
 
@@ -82,15 +82,16 @@ SIX:   Back in startButton_Click.
 Length of the downloaded string: 33946.
 ```
 
-## Set Up the Program
+## Set up the program
 
 You can download the code that this topic uses from MSDN, or you can build it yourself.
 
 > [!NOTE]
 > To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.
 
-### Download the Program
- You can download the application for this topic from [Async Sample: Control Flow in Async Programs](https://code.msdn.microsoft.com/Async-Sample-Control-Flow-5c804fc0). The following steps open and run the program.
+### Download the program
+
+You can download the application for this topic from [Async Sample: Control Flow in Async Programs](https://code.msdn.microsoft.com/Async-Sample-Control-Flow-5c804fc0). The following steps open and run the program.
 
 1.  Unzip the downloaded file, and then start Visual Studio.
 
@@ -98,10 +99,11 @@ You can download the code that this topic uses from MSDN, or you can build it yo
 
 3.  Navigate to the folder that holds the unzipped sample code, open the solution (.sln) file, and then choose the **F5** key to build and run the project.
 
-### Create the Program Yourself
- The following Windows Presentation Foundation (WPF) project contains the code example for this topic.
+### Create the program Yourself
 
- To run the project, perform the following steps:
+The following Windows Presentation Foundation (WPF) project contains the code example for this topic.
+
+To run the project, perform the following steps:
 
 1.  Start Visual Studio.
 
@@ -260,19 +262,21 @@ You can download the code that this topic uses from MSDN, or you can build it yo
     Length of the downloaded string: 33946.
     ```
 
-## Trace the Program
+## Trace the program
 
 ### Steps ONE and TWO
- The first two display lines trace the path as `startButton_Click` calls `AccessTheWebAsync`, and `AccessTheWebAsync` calls the asynchronous <xref:System.Net.Http.HttpClient> method <xref:System.Net.Http.HttpClient.GetStringAsync%28System.String%29>. The following image outlines the calls from method to method.
 
- ![Steps ONE and TWO](../../../../csharp/programming-guide/concepts/async/media/asynctrace-onetwo.png "AsyncTrace-ONETWO")
+The first two display lines trace the path as `startButton_Click` calls `AccessTheWebAsync`, and `AccessTheWebAsync` calls the asynchronous <xref:System.Net.Http.HttpClient> method <xref:System.Net.Http.HttpClient.GetStringAsync%28System.String%29>. The following image outlines the calls from method to method.
 
- The return type of both `AccessTheWebAsync` and `client.GetStringAsync` is <xref:System.Threading.Tasks.Task%601>. For `AccessTheWebAsync`, TResult is an integer. For `GetStringAsync`, TResult is a string. For more information about async method return types, see [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md).
+![Steps ONE and TWO](../../../../csharp/programming-guide/concepts/async/media/asynctrace-onetwo.png "AsyncTrace-ONETWO")
 
- A task-returning async method returns a task instance when control shifts back to the caller. Control returns from an async method to its caller either when an `await` operator is encountered in the called method or when the called method ends. The display lines that are labeled "THREE" through "SIX" trace this part of the process.
+The return type of both `AccessTheWebAsync` and `client.GetStringAsync` is <xref:System.Threading.Tasks.Task%601>. For `AccessTheWebAsync`, TResult is an integer. For `GetStringAsync`, TResult is a string. For more information about async method return types, see [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md).
+
+A task-returning async method returns a task instance when control shifts back to the caller. Control returns from an async method to its caller either when an `await` operator is encountered in the called method or when the called method ends. The display lines that are labeled "THREE" through "SIX" trace this part of the process.
 
 ### Step THREE
- In `AccessTheWebAsync`, the asynchronous method <xref:System.Net.Http.HttpClient.GetStringAsync%28System.String%29> is called to download the contents of the target webpage. Control returns from `client.GetStringAsync` to `AccessTheWebAsync` when `client.GetStringAsync` returns.
+
+In `AccessTheWebAsync`, the asynchronous method <xref:System.Net.Http.HttpClient.GetStringAsync%28System.String%29> is called to download the contents of the target webpage. Control returns from `client.GetStringAsync` to `AccessTheWebAsync` when `client.GetStringAsync` returns.
 
  The `client.GetStringAsync` method returns a task of string that’s assigned to the `getStringTask` variable in `AccessTheWebAsync`. The following line in the example program shows the call to `client.GetStringAsync` and the assignment.
 
@@ -306,9 +310,10 @@ string urlContents = await getStringTask;
 > In this topic, the await operator is applied later to accommodate the output lines that mark the flow of control through the program.
 
 ### Step FOUR
- The declared return type of `AccessTheWebAsync` is `Task<int>`. Therefore, when `AccessTheWebAsync` is suspended, it returns a task of integer to `startButton_Click`. You should understand that the returned task isn’t `getStringTask`. The returned task is a new task of integer that represents what remains to be done in the suspended method, `AccessTheWebAsync`. The task is a promise from `AccessTheWebAsync` to produce an integer when the task is complete.
 
- The following statement assigns this task to the `getLengthTask` variable.
+The declared return type of `AccessTheWebAsync` is `Task<int>`. Therefore, when `AccessTheWebAsync` is suspended, it returns a task of integer to `startButton_Click`. You should understand that the returned task isn’t `getStringTask`. The returned task is a new task of integer that represents what remains to be done in the suspended method, `AccessTheWebAsync`. The task is a promise from `AccessTheWebAsync` to produce an integer when the task is complete.
+
+The following statement assigns this task to the `getLengthTask` variable.
 
 ```csharp
 Task<int> getLengthTask = AccessTheWebAsync();
@@ -333,7 +338,8 @@ int contentLength = await getLengthTask;
  ![Step FOUR](../../../../csharp/programming-guide/concepts/async/media/asynctrace-four.png "AsyncTrace-FOUR")
 
 ### Step FIVE
- When `client.GetStringAsync` signals that it’s complete, processing in `AccessTheWebAsync` is released from suspension and can continue past the await statement. The following lines of output represent the resumption of processing.
+
+When `client.GetStringAsync` signals that it’s complete, processing in `AccessTheWebAsync` is released from suspension and can continue past the await statement. The following lines of output represent the resumption of processing.
 
 ```
 FIVE:  Back in AccessTheWebAsync.
@@ -351,9 +357,10 @@ FIVE:  Back in AccessTheWebAsync.
  `AccessTheWebAsync` runs to completion, and control returns to `startButton_Click`, which is awaiting the completion.
 
 ### Step SIX
- When `AccessTheWebAsync` signals that it’s complete, processing can continue past the await statement in `startButton_Async`. In fact, the program has nothing more to do.
 
- The following lines of output represent the resumption of processing in `startButton_Async`:
+When `AccessTheWebAsync` signals that it’s complete, processing can continue past the await statement in `startButton_Async`. In fact, the program has nothing more to do.
+
+The following lines of output represent the resumption of processing in `startButton_Async`:
 
 ```
 SIX:   Back in startButton_Click.
@@ -372,7 +379,7 @@ int contentLength = await getLengthTask;
 
  ![Step SIX](../../../../csharp/programming-guide/concepts/async/media/asynctrace-six.png "AsyncTrace-SIX")
 
-## See Also
+## See also
 
 - [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
 - [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md)

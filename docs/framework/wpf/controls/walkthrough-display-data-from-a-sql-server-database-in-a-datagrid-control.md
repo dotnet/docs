@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "controls [WPF], DataGrid"
 ms.assetid: 6810b048-0a23-4f86-bfa5-97f92b3cfab4
 ---
-# Walkthrough: Display Data from a SQL Server Database in a DataGrid Control
+# Walkthrough: Display data from a SQL Server database in a DataGrid control
 
 In this walkthrough, you retrieve data from a SQL Server database and display that data in a <xref:System.Windows.Controls.DataGrid> control. You use the ADO.NET Entity Framework to create the entity classes that represent the data, and use LINQ to write a query that retrieves the specified data from an entity class.
 

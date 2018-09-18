@@ -71,7 +71,7 @@ Web developers require the ability to describe the shape and layout of the URIs 
   
 - "/shoe"  
   
-- "/shoe/*"  
+- "/shoe/\*"  
   
 - "{shoe}/boat"  
   

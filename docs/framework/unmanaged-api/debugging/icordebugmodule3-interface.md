@@ -52,7 +52,7 @@ interface ICorDebugModule3 : IUnknown
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:**4.5, 4, 3.5 SP1  
+ **.NET Framework Versions:** 4.5, 4, 3.5 SP1
   
 ## See Also  
  [ICorDebugRemoteTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)  

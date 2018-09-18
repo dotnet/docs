@@ -36,15 +36,15 @@ Web developers require the ability to describe the shape and layout of the URIs 
   
  <xref:System.UriTemplate> is designed to work with any URI scheme that conforms to the HTTP URI grammar. The following are examples of supported URI schemes.  
   
--   http://  
+- http://  
   
--   https://  
+- https://  
   
--   net.tcp://  
+- net.tcp://  
   
--   net.pipe://  
+- net.pipe://  
   
--   sb://  
+- sb://  
   
  Schemes like file:// and urn:// do not conform to the HTTP URI grammar and cause unpredictable results when used with URI templates.  
   
@@ -67,66 +67,66 @@ Web developers require the ability to describe the shape and layout of the URIs 
   
  Examples of valid template strings:  
   
--   ""  
+- ""  
   
--   "/shoe"  
+- "/shoe"  
   
--   "/shoe/*"  
+- "/shoe/\*"  
   
--   "{shoe}/boat"  
+- "{shoe}/boat"  
   
--   "{shoe}/{boat}/bed/{quilt}"  
+- "{shoe}/{boat}/bed/{quilt}"  
   
--   "shoe/{boat}"  
+- "shoe/{boat}"  
   
--   "shoe/{boat}/*"  
+- "shoe/{boat}/\*"  
   
--   "shoe/boat?x=2"  
+- "shoe/boat?x=2"  
   
--   "shoe/{boat}?x={bed}"  
+- "shoe/{boat}?x={bed}"  
   
--   "shoe/{boat}?x={bed}&y=band"  
+- "shoe/{boat}?x={bed}&y=band"  
   
--   "?x={shoe}"  
+- "?x={shoe}"  
   
--   "shoe?x=3&y={var}  
+- "shoe?x=3&y={var}  
   
  Examples of invalid template strings:  
   
--   "{shoe}/{SHOE}/x=2" – Duplicate variable names.  
+- "{shoe}/{SHOE}/x=2" – Duplicate variable names.  
   
--   "{shoe}/boat/?bed={shoe}" – Duplicate variable names.  
+- "{shoe}/boat/?bed={shoe}" – Duplicate variable names.  
   
--   "?x=2&x=3" – Name/value pairs within a query string must be unique, even if they are literals.  
+- "?x=2&x=3" – Name/value pairs within a query string must be unique, even if they are literals.  
   
--   "?x=2&" – Query string is malformed.  
+- "?x=2&" – Query string is malformed.  
   
--   "?2&x={shoe}" – Query string must be name/value pairs.  
+- "?2&x={shoe}" – Query string must be name/value pairs.  
   
--   "?y=2&&X=3" – Query string must be name value pairs, names cannot start with '&'.  
+- "?y=2&&X=3" – Query string must be name value pairs, names cannot start with '&'.  
   
 ### Compound Path Segments  
  Compound path segments allow a single URI path segment to contain multiple variables as well as variables combined with literals. The following are examples of valid compound path segments.  
   
--   /filename.{ext}/  
+- /filename.{ext}/  
   
--   /{filename}.jpg/  
+- /{filename}.jpg/  
   
--   /{filename}.{ext}/  
+- /{filename}.{ext}/  
   
--   /{a}.{b}someLiteral{c}({d})/  
+- /{a}.{b}someLiteral{c}({d})/  
   
  The following are examples of invalid path segments.  
   
--   /{} - Variables must be named.  
+- /{} - Variables must be named.  
   
--   /{shoe}{boat} - Variables must be separated by a literal.  
+- /{shoe}{boat} - Variables must be separated by a literal.  
   
 ### Matching and Compound Path Segments  
- Compound path segments allow you to define a UriTemplate that has multiple variables within a single path segment. For example, in the following template string: "Addresses/{state}.{city}" two variables (state and city) are defined within the same segment. This template would match a URL such as "http://example.com/Washington.Redmond" but it will also match an URL like "http://example.com/Washington.Redmond.Microsoft". In the latter case, the state variable will contain "Washington" and the city variable will contain "Redmond.Microsoft". In this case any text (except ‘/’) will match the {city} variable. If you want a template that will not match the "extra" text, place the variable in a separate template segment, for example: "Addresses/{state}/{city}.  
+ Compound path segments allow you to define a UriTemplate that has multiple variables within a single path segment. For example, in the following template string: "Addresses/{state}.{city}" two variables (state and city) are defined within the same segment. This template would match a URL such as `http://example.com/Washington.Redmond` but it will also match an URL like `http://example.com/Washington.Redmond.Microsoft`. In the latter case, the state variable will contain "Washington" and the city variable will contain "Redmond.Microsoft". In this case any text (except ‘/’) will match the {city} variable. If you want a template that will not match the "extra" text, place the variable in a separate template segment, for example: "Addresses/{state}/{city}.  
   
 ### Named Wildcard Segments  
- A named wildcard segment is any path variable segment whose variable name begins with the wildcard character ‘*’. The following template string contains a named wildcard segment named "shoe".  
+ A named wildcard segment is any path variable segment whose variable name begins with the wildcard character ‘\*’. The following template string contains a named wildcard segment named "shoe".  
   
 ```  
 "literal/{*shoe}"  
@@ -134,22 +134,22 @@ Web developers require the ability to describe the shape and layout of the URIs 
   
  Wildcard segments must follow the following rules:  
   
--   There can be at most one named wildcard segment for each template string.  
+- There can be at most one named wildcard segment for each template string.  
   
--   A named wildcard segment must appear at the right-most segment in the path.  
+- A named wildcard segment must appear at the right-most segment in the path.  
   
--   A named wildcard segment cannot coexist with an anonymous wildcard segment within the same template string.  
+- A named wildcard segment cannot coexist with an anonymous wildcard segment within the same template string.  
   
--   The name of a named wildcard segment must be unique.  
+- The name of a named wildcard segment must be unique.  
   
--   Named wildcard segments cannot have default values.  
+- Named wildcard segments cannot have default values.  
   
--   Named wildcard segments cannot end with "/".  
+- Named wildcard segments cannot end with "/".  
   
 ### Default Variable Values  
  Default variable values allow you to specify default values for variables within a template. Default variables can be specified with the curly braces that declare the variable or as a collection passed to the UriTemplate constructor. The following template shows two ways to specify a <xref:System.UriTemplate> with variables with default values.  
   
-```  
+```csharp
 UriTemplate t = new UriTemplate("/test/{a=1}/{b=5}");  
 ```  
   
@@ -160,7 +160,7 @@ UriTemplate t = new UriTemplate("/test/{a=1}/{b=5}");
   
  The following code shows how default variable values are handled when matching a candidate URI.  
   
-```  
+```csharp
 Uri baseAddress = new Uri("http://localhost:800   
 Dictionary<string,string> defVals = new Dictionary<string,string> {{"a","1"}, {"b", "5"}};  
 UriTemplate t = new UriTemplate("/test/{a}/{b}", defVals);0");  
@@ -187,7 +187,7 @@ foreach (string key in m1.BoundVariables.AllKeys)
   
  The following code shows how default variable values are handled when creating a URI with a template.  
   
-```  
+```csharp
 Uri baseAddress = new Uri("http://localhost:8000/");  
 Dictionary<string,string> defVals = new Dictionary<string,string> {{"a","1"}, {"b", "5"}};  
 UriTemplate t = new UriTemplate("/test/{a}/{b}", defVals);  
@@ -213,46 +213,39 @@ Console.WriteLine("Bound URI: {0}", boundUri);
 // Bound URI: http://localhost:8000/test/10/5  
 ```  
   
- When a variable is given a default value of `null` there are some additional constraints. A variable can have a default value of `null` if the variable is contained within the right most segment of the template string or if all segments to the right of the segment have default values of `null`. The following are valid template strings with default values of `null`:  
+When a variable is given a default value of `null` there are some additional constraints. A variable can have a default value of `null` if the variable is contained within the right most segment of the template string or if all segments to the right of the segment have default values of `null`. The following are valid template strings with default values of `null`:  
   
--   ```  
-    UriTemplate t = new UriTemplate("shoe/{boat=null}");  
-    ```  
--   ```  
-    UriTemplate t = new UriTemplate("{shoe=null}/{boat=null}");  
-    ```  
+- `UriTemplate t = new UriTemplate("shoe/{boat=null}");`
+
+- `UriTemplate t = new UriTemplate("{shoe=null}/{boat=null}");`
   
--   ```  
-    UriTemplate t = new UriTemplate("{shoe=1}/{boat=null}");  
-    ```  
- The following are invalid template strings with  default values of `null`:  
+- `UriTemplate t = new UriTemplate("{shoe=1}/{boat=null}");`
+
+ The following are invalid template strings with default values of `null`:  
   
--   ```  
-    UriTemplate t = new UriTemplate("{shoe=null}/boat"); // null default must be in the right most path segment  
-    ```  
+- `UriTemplate t = new UriTemplate("{shoe=null}/boat"); // null default must be in the right most path segment`
   
--   ```  
-    UriTemplate t = new UriTemplate("{shoe=null}/{boat=x}/{bed=null}"); // shoe cannot have a null default because boat does not have a default null value  
-    ```  
+- `UriTemplate t = new UriTemplate("{shoe=null}/{boat=x}/{bed=null}"); // shoe cannot have a null default because boat does not have a default null value`
+
 ### Default Values and Matching  
  When matching a candidate URI with a template that has default values, the default values are placed in the <xref:System.UriTemplateMatch.BoundVariables%2A> collection if values are not specified in the candidate URI.  
   
 ### Template Equivalence  
  Two templates are said to be *structurally equivalent* when all of the templates' literals match and they have variables in the same segments. For example the following templates are structurally equivalent:  
   
--   /a/{var1}/b b/{var2}?x=1&y=2  
+- /a/{var1}/b b/{var2}?x=1&y=2  
   
--   a/{x}/b%20b/{var1}?y=2&x=1  
+- a/{x}/b%20b/{var1}?y=2&x=1  
   
--   a/{y}/B%20B/{z}/?y=2&x=1  
+- a/{y}/B%20B/{z}/?y=2&x=1  
   
  A few things to notice:  
   
--   If a template contains leading slashes, only the first one is ignored.  
+- If a template contains leading slashes, only the first one is ignored.  
   
--   When comparing template strings for structural equivalence, case is ignored for variable names and path segments, query strings are case sensitive.  
+- When comparing template strings for structural equivalence, case is ignored for variable names and path segments, query strings are case sensitive.  
   
--   Query strings are unordered.  
+- Query strings are unordered.  
   
 ## UriTemplateTable  
  The <xref:System.UriTemplateTable> class represents an associative table of <xref:System.UriTemplate> objects bound to an object of the developer's choosing. A <xref:System.UriTemplateTable> must contain at least one <xref:System.UriTemplate> prior to calling <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29>. The contents of a <xref:System.UriTemplateTable> can be changed until <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> is called. Validation is performed when <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> is called. The type of validation performed depends upon the value of the `allowMultiple` parameter to <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29>.  
@@ -271,60 +264,60 @@ Console.WriteLine("Bound URI: {0}", boundUri);
   
  The following sets of query strings are unambiguous within themselves:  
   
--   ?x=1  
+- ?x=1  
   
--   ?x=2  
+- ?x=2  
   
--   ?x=3  
+- ?x=3  
   
--   ?x=1&y={var}  
+- ?x=1&y={var}  
   
--   ?x=2&z={var}  
+- ?x=2&z={var}  
   
--   ?x=3  
+- ?x=3  
   
--   ?x=1  
+- ?x=1  
   
--   ?  
+- ?  
   
--   ? x={var}  
+- ? x={var}  
   
--   ?  
+- ?  
   
--   ?m=get&c=rss  
+- ?m=get&c=rss  
   
--   ?m=put&c=rss  
+- ?m=put&c=rss  
   
--   ?m=get&c=atom  
+- ?m=get&c=atom  
   
--   ?m=put&c=atom  
+- ?m=put&c=atom  
   
  The following sets of query string templates are ambiguous within themselves:  
   
--   ?x=1  
+- ?x=1  
   
--   ?x={var}  
+- ?x={var}  
   
  "x=1" - Matches both templates.  
   
--   ?x=1  
+- ?x=1  
   
--   ?y=2  
+- ?y=2  
   
  "x=1&y=2" matches both templates. This is because a query string may contain more query string variables then the template it matches.  
   
--   ?x=1  
+- ?x=1  
   
--   ?x=1&y={var}  
+- ?x=1&y={var}  
   
  "x=1&y=3" matches both templates.  
   
--   ?x=3&y=4  
+- ?x=3&y=4  
   
--   ?x=3&z=5  
+- ?x=3&z=5  
   
 > [!NOTE]
->  The characters á and Á are considered to be different characters when they appear as part of a URI path or <xref:System.UriTemplate> path segment literal (but the characters a and A are considered to be the same). The characters á and Á are considered to be the same characters when they appear as part of a <xref:System.UriTemplate> {variableName} or a query string (and a and A are also considered to be the same characters).  
+> The characters á and Á are considered to be different characters when they appear as part of a URI path or <xref:System.UriTemplate> path segment literal (but the characters a and A are considered to be the same). The characters á and Á are considered to be the same characters when they appear as part of a <xref:System.UriTemplate> {variableName} or a query string (and a and A are also considered to be the same characters).  
   
 ## See Also  
  [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)  

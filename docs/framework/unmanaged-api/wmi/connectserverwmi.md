@@ -44,7 +44,7 @@ HRESULT ConnectServerWmi (
 [in] Pointer to a valid `BSTR` that contains the object path of the correct WMI namespace. See the [Remarks](#remarks) section for more information.
 
 `strUser`
-[in] A pointer to a valid `BSTR` that contains the user name. A `null` value indicates the current security context. If the user is from a different domain than the current one, `strUser` can also contain the domain and user name separated by a backslash. `strUser` can also be in user principal name (UPN) format, suhc as *userName@domainName*. See the [Remarks](#remarks) section for more information.
+[in] A pointer to a valid `BSTR` that contains the user name. A `null` value indicates the current security context. If the user is from a different domain than the current one, `strUser` can also contain the domain and user name separated by a backslash. `strUser` can also be in user principal name (UPN) format, such as `userName@domainName`. See the [Remarks](#remarks) section for more information.
 
 `strPassword`
 [in] A pointer to a valid `BSTR` that contains the password. A `null` indicates the current security context. An empty string ("") indicates a valid zero-length password.

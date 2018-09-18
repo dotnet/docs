@@ -7,96 +7,107 @@ helpviewer_keywords:
 ms.assetid: bc5f6637-5513-4d27-99bb-51aad7741e4a
 ---
 # How to: Create Temporary Certificates for Use During Development
-When developing a secure service or client using Windows Communication Foundation (WCF), it is often necessary to supply an X.509 certificate to be used as a credential. The certificate typically is part of a chain of certificates with a root authority found in the Trusted Root Certification Authorities store of the computer. Having a certificate chain enables you to scope a set of certificates where typically the root authority is from your organization or business unit. To emulate this at development time, you can create two certificates to satisfy the security requirements. The first is a self-signed certificate that is placed in the Trusted Root Certification Authorities store, and the second certificate is created from the first and is placed in either the Personal store of the Local Machine location, or the Personal store of the Current User location. This topic walks through the steps to create these two certificates using the Powershell [New-SelfSignedCertificate)](https://docs.microsoft.com/en-us/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps) cmdlet.  
-  
+
+When developing a secure service or client using Windows Communication Foundation (WCF), it is often necessary to supply an X.509 certificate to be used as a credential. The certificate typically is part of a chain of certificates with a root authority found in the Trusted Root Certification Authorities store of the computer. Having a certificate chain enables you to scope a set of certificates where typically the root authority is from your organization or business unit. To emulate this at development time, you can create two certificates to satisfy the security requirements. The first is a self-signed certificate that is placed in the Trusted Root Certification Authorities store, and the second certificate is created from the first and is placed in either the Personal store of the Local Machine location, or the Personal store of the Current User location. This topic walks through the steps to create these two certificates using the Powershell [New-SelfSignedCertificate)](/powershell/module/pkiclient/new-selfsignedcertificate) cmdlet.
+
 > [!IMPORTANT]
->  The certificates that the New-SelfSignedCertificate cmdlet generates are provided for testing purposes only. When deploying a service or client, be sure to use an appropriate certificate provided by a certification authority. This could either be from a Windows Server certificate server in your organization or a third party.  
->   
->  By default, the [New-SelfSignedCertificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps) cmdlet creates certificates that are self-signed and these certificates are insecure. Placing the self-signed certificates in the Trusted Root Certification Authorities store enables you to create a development environment that more closely simulates your deployment environment.  
-  
- For more information about creating and using certificates, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md). For more information about using a certificate as a credential, see [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md). For a tutorial about using Microsoft Authenticode technology, see [Authenticode Overviews and Tutorials](https://go.microsoft.com/fwlink/?LinkId=88919).  
-  
-### To create a self-signed root authority certificate and export the private key  
-  
-The following command creates a self-signed certificate with a subject name of "RootCA" in the Current User Personal store. 
-```
+> The certificates that the New-SelfSignedCertificate cmdlet generates are provided for testing purposes only. When deploying a service or client, be sure to use an appropriate certificate provided by a certification authority. This could either be from a Windows Server certificate server in your organization or a third party.
+>
+> By default, the [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate) cmdlet creates certificates that are self-signed and these certificates are insecure. Placing the self-signed certificates in the Trusted Root Certification Authorities store enables you to create a development environment that more closely simulates your deployment environment.
+
+ For more information about creating and using certificates, see [Working with Certificates](working-with-certificates.md). For more information about using a certificate as a credential, see [Securing Services and Clients](securing-services-and-clients.md). For a tutorial about using Microsoft Authenticode technology, see [Authenticode Overviews and Tutorials](https://go.microsoft.com/fwlink/?LinkId=88919).
+
+## To create a self-signed root authority certificate and export the private key
+
+The following command creates a self-signed certificate with a subject name of "RootCA" in the Current User Personal store.
+
+```powershell
 PS $rootCert = New-SelfSignedCertificate -CertStoreLocation cert:\CurrentUser\My -DnsName "RootCA" -TextExtension @("1.3.6.1.4.1.311.21.10={text}1.3.6.1.5.5.7.3.1,1.3.6.1.5.5.7.3.2")
 ```
-We need to export the certificate to a PFX file so that it can be imported to where it's needed in a later step. When exporting a certificate with the private key, a password is needed to protect it. We save the password in a `SecureString` and use the [Export-PfxCertificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/export-pfxcertificate?view=win10-ps) cmdlet to export the certificate with the associated private key to a PFX file. We also save just the public certificate into a CRT file using the [Export-Certificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/export-certificate?view=win10-ps) cmdlet.
-```
+
+We need to export the certificate to a PFX file so that it can be imported to where it's needed in a later step. When exporting a certificate with the private key, a password is needed to protect it. We save the password in a `SecureString` and use the [Export-PfxCertificate](/powershell/module/pkiclient/export-pfxcertificate) cmdlet to export the certificate with the associated private key to a PFX file. We also save just the public certificate into a CRT file using the [Export-Certificate](/powershell/module/pkiclient/export-certificate) cmdlet.
+
+```powershell
 PS [System.Security.SecureString]$rootcertPassword = ConvertTo-SecureString -String "password" -Force -AsPlainText
 PS [String]$rootCertPath = Join-Path -Path 'cert:\CurrentUser\My\' -ChildPath "$($rootcert.Thumbprint)"
 PS Export-PfxCertificate -Cert $rootCertPath -FilePath 'RootCA.pfx' -Password $rootcertPassword
 PS Export-Certificate -Cert $rootCertPath -FilePath 'RootCA.crt'
 ```
 
-### To create a new certificate signed by a root authority certificate  
-  
+## To create a new certificate signed by a root authority certificate
+
 The following command creates a certificate signed by the `RootCA` with a subject name of "SignedByRootCA" using the private key of the issuer.
+
+```powershell
+PS $testCert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName "SignedByRootCA" -KeyExportPolicy Exportable -KeyLength 2048 -KeyUsage DigitalSignature,KeyEncipherment -Signer $rootCert
 ```
-PS $testCert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName "SignedByRootCA" -KeyExportPolicy Exportable -KeyLength 2048 -KeyUsage DigitalSignature,KeyEncipherment -Signer $rootCert 
-```
+
 Similarly, we save the signed certificate with private key into a PFX file and just the public key into a CRT file.
-```
+
+```powershell
 PS [String]$testCertPath = Join-Path -Path 'cert:\LocalMachine\My\' -ChildPath "$($testCert.Thumbprint)"
-PS Export-PfxCertificate -Cert $testCertPath -FilePath testcert.pfx -Password $rootcertPassword 
-PS Export-Certificate -Cert $testCertPath -FilePath testcert.crt        
+PS Export-PfxCertificate -Cert $testCertPath -FilePath testcert.pfx -Password $rootcertPassword
+PS Export-Certificate -Cert $testCertPath -FilePath testcert.crt
 ```
-  
-## Installing a Certificate in the Trusted Root Certification Authorities Store  
- Once a self-signed certificate is created, you can install it in the Trusted Root Certification Authorities store. Any certificates that are signed with the certificate at this point are trusted by the computer. For this reason, delete the certificate from the store as soon as you no longer need it. When you delete this root authority certificate, all other certificates that signed with it become unauthorized. Root authority certificates are simply a mechanism whereby a group of certificates can be scoped as necessary. For example, in peer-to-peer applications, there is typically no need for a root authority because you simply trust the identity of an individual by its supplied certificate.  
-  
-#### To install a self-signed certificate in the Trusted Root Certification Authorities  
-  
-1.  Open the certificate snap-in. For more information, see [How to: View Certificates with the MMC Snap-in](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md).  
-  
-2.  Open the folder to store the certificate, either the **Local Computer** or the **Current User**.  
-  
-3.  Open the **Trusted Root Certification Authorities** folder.  
-  
-4.  Right-click the **Certificates** folder and click **All Tasks**, then click **Import**.  
-  
-5.  Follow the on-screen wizard instructions to import the TempCa.cer into the store.  
-  
-## Using Certificates With WCF  
- Once you have set up the temporary certificates, you can use them to develop WCF solutions that specify certificates as a client credential type. For example, the following XML configuration specifies message security and a certificate as the client credential type.  
-  
-#### To specify a certificate as the client credential type  
-  
--   In the configuration file for a service, use the following XML to set the security mode to message, and the client credential type to certificate.  
-  
-    ```xml  
-    <bindings>       
-      <wsHttpBinding>  
-        <binding name="CertificateForClient">  
-          <security>  
-            <message clientCredentialType="Certificate" />  
-          </security>  
-        </binding>  
-      </wsHttpBinding>  
-    </bindings>  
-    ```  
-  
- In the configuration file for a client, use the following XML to specify that the certificate is found in the user’s store, and can be found by searching the SubjectName field for the value "CohoWinery."  
-  
-```xml  
-<behaviors>  
-  <endpointBehaviors>  
-    <behavior name="CertForClient">  
-      <clientCredentials>  
-        <clientCertificate findValue="CohoWinery" x509FindType="FindBySubjectName" />  
-       </clientCredentials>  
-     </behavior>  
-   </endpointBehaviors>  
-</behaviors>  
-```  
-  
- For more information about using certificates in WCF, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
-  
-## .NET Framework Security  
- Be sure to delete any temporary root authority certificates from the **Trusted Root Certification Authorities** and **Personal** folders by right-clicking the certificate, then clicking **Delete**.  
-  
-## See Also  
- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [How to: View Certificates with the MMC Snap-in](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md)  
- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+
+## Installing a Certificate in the Trusted Root Certification Authorities Store
+
+Once a self-signed certificate is created, you can install it in the Trusted Root Certification Authorities store. Any certificates that are signed with the certificate at this point are trusted by the computer. For this reason, delete the certificate from the store as soon as you no longer need it. When you delete this root authority certificate, all other certificates that signed with it become unauthorized. Root authority certificates are simply a mechanism whereby a group of certificates can be scoped as necessary. For example, in peer-to-peer applications, there is typically no need for a root authority because you simply trust the identity of an individual by its supplied certificate.
+
+### To install a self-signed certificate in the Trusted Root Certification Authorities
+
+1. Open the certificate snap-in. For more information, see [How to: View Certificates with the MMC Snap-in](how-to-view-certificates-with-the-mmc-snap-in.md).
+
+2. Open the folder to store the certificate, either the **Local Computer** or the **Current User**.
+
+3. Open the **Trusted Root Certification Authorities** folder.
+
+4. Right-click the **Certificates** folder and click **All Tasks**, then click **Import**.
+
+5. Follow the on-screen wizard instructions to import the TempCa.cer into the store.
+
+## Using certificates With WCF
+
+Once you have set up the temporary certificates, you can use them to develop WCF solutions that specify certificates as a client credential type. For example, the following XML configuration specifies message security and a certificate as the client credential type.
+
+### To specify a certificate as the client credential type
+
+- In the configuration file for a service, use the following XML to set the security mode to message, and the client credential type to certificate.
+
+    ```xml
+    <bindings>
+      <wsHttpBinding>
+        <binding name="CertificateForClient">
+          <security>
+            <message clientCredentialType="Certificate" />
+          </security>
+        </binding>
+      </wsHttpBinding>
+    </bindings>
+    ```
+
+In the configuration file for a client, use the following XML to specify that the certificate is found in the user’s store, and can be found by searching the SubjectName field for the value "CohoWinery."
+
+```xml
+<behaviors>
+  <endpointBehaviors>
+    <behavior name="CertForClient">
+      <clientCredentials>
+        <clientCertificate findValue="CohoWinery" x509FindType="FindBySubjectName" />
+       </clientCredentials>
+     </behavior>
+   </endpointBehaviors>
+</behaviors>
+```
+
+For more information about using certificates in WCF, see [Working with Certificates](working-with-certificates.md).
+
+## .NET Framework security
+
+Be sure to delete any temporary root authority certificates from the **Trusted Root Certification Authorities** and **Personal** folders by right-clicking the certificate, then clicking **Delete**.
+
+## See also
+
+- [Working with Certificates](working-with-certificates.md)
+- [How to: View Certificates with the MMC Snap-in](how-to-view-certificates-with-the-mmc-snap-in.md)
+- [Securing Services and Clients](securing-services-and-clients.md)

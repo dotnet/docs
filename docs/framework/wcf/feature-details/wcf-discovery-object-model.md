@@ -55,9 +55,7 @@ WCF Discovery consists of a set of types that provide a unified programming mode
 -   <xref:System.ServiceModel.Discovery.ResolveResponse>  
   
 -   <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior>  
-  
--   <!--zz <xref:System.ServiceModel.Discovery.ServiceDiscoveryExtension> --> `ServiceDiscoveryExtension`  
-  
+ 
 -   <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>  
   
 -   <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>  
@@ -81,7 +79,7 @@ WCF Discovery consists of a set of types that provide a unified programming mode
  If a discovery proxy is present on the network and the <xref:System.ServiceModel.Discovery.DiscoveryClient> sends the discovery request in a multicast fashion, the discovery proxy can respond with the multicast suppression Hello message. The <xref:System.ServiceModel.Discovery.DiscoveryClient> raises the `ProxyAvailable` event when it receives Hello messages in response to outstanding `Find` or `Resolve` requests. The `ProxyAvailable` event contains the <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata> about the discovery proxy. It is up to the developer to use this information to switch from Ad hoc to Managed mode.  
   
 ## DiscoveryEndpoint  
- <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> represents a standard endpoint with a fixed discovery contract. It is used by a service or client to send or receive discovery messages. By default, <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> is set to use <xref:System.ServiceModel.Discovery.ServiceDiscoveryMode.Managed> mode and the WSDiscovery11 WS-Discovery version.  
+ <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> represents a standard endpoint with a fixed discovery contract. It is used by a service or client to send or receive discovery messages. By default, <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> is set to use <xref:System.ServiceModel.Discovery.ServiceDiscoveryMode.Managed?displayProperty=nameWithType> mode and the WSDiscovery11 WS-Discovery version.  
   
 ## DiscoveryMessageSequenceGenerator  
  <xref:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator> is used to generate a <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence> when the service is sending out Discovery or Announcement messages.  
@@ -119,11 +117,8 @@ WCF Discovery consists of a set of types that provide a unified programming mode
 ## ServiceDiscoveryBehavior  
  The <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> class allows the developer to add the discovery feature to a service. You add this behavior to the <xref:System.ServiceModel.ServiceHost>. The <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> class iterates over the application endpoints added to the service host and creates a collection of <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata> from the discoverable endpoints. All endpoints are discoverable by default. The discoverability of a particular endpoint can be controlled by adding the <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> to that particular endpoint. If announcement endpoints are added to <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> then the announcement of all discoverable endpoints is sent over each of the announcement endpoints when the service host is opened or closed.  
   
-## ServiceDiscoveryExtension  
- The <!--zz <xref:System.ServiceModel.Discovery.ServiceDiscoveryExtension> --> `ServiceDiscoveryExtension` class is created by the <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> class. The endpoints that are made discoverable can be obtained from <!--zz <xref:System.ServiceModel.Discovery.ServiceDiscoveryExtension> --> `ServiceDiscoveryExtension`. This class is also used to specify a custom discovery service implementation.  
-  
 ## UdpAnnouncementEndpoint  
  The <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> class is a standard announcement endpoint that is pre-configured for announcement over a UDP multicast binding. By default, <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> is set to use the WSApril2005 WS_Discovery version.  
   
 ## UdpDiscoveryEndpoint  
- The <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> class is a standard discovery endpoint that is pre-configured for discovery over a UDP multicast binding. By default, <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> is set to use the WSDiscovery11 WS-Discovery version and <xref:System.ServiceModel.Discovery.ServiceDiscoveryMode.Adhoc> mode.
+ The <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> class is a standard discovery endpoint that is pre-configured for discovery over a UDP multicast binding. By default, <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> is set to use the WSDiscovery11 WS-Discovery version and <xref:System.ServiceModel.Discovery.ServiceDiscoveryMode.Adhoc?displayProperty=nameWithType> mode.

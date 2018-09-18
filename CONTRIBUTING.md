@@ -89,25 +89,15 @@ We make the following distinction for code that exists in our repository:
 
 - snippets: illustrate a smaller concept or task. They compile but they are not intended to be complete applications.
 
-Code all lives in the [dotnet/samples](https://github.com/dotnet/samples) repository and is organized as follows:
+Code all lives in the [dotnet/samples](https://github.com/dotnet/samples) repository. We are working toward a model where our samples folder structure matches our docs folder structure. Standards that we follow are:
 
-- *core* contains .NET Core samples.
+- The top level *snippets* folder contains snippets for small, focused samples.
+- API reference samples have been in a folder following this pattern: *snippets/<language>/api/<namespace>/<apiname>*.
+- Other top-level folders match the top level folders in the *docs* repository. For example, the docs repository has a *machine-learning/tutorials* folder, and the samples for machine learning tutorials are in the *samples/machine-learning/tutorials* folder.
 
-  * The *core* directory contains samples that highlight .NET Core. The purpose of your sample should be to teach developers something about .NET Core. This includes the framework packaging, the new tooling, or the cross-platform experience. Our CI build server builds these samples on multiple supported platforms. Therefore, every sample must be configured to build on Linux, Mac, and Windows.
+In addition, all samples under the *core* and *standard* folders should build and run on all platforms supported by .NET Core. Our CI build system will enforce that. The top level *framework* folder contains samples that are only built and validated on Windows.
 
-- *csharp* contains C# language samples.
-
-  * The *csharp* directory contains samples where the purpose is to explain the C# language. While these samples use frameworks and libraries, their focus is on the C# language. Our CI build server builds these samples on multiple supported platforms. Therefore, every sample must be configured to build on Linux, Mac, and Windows.
-
-- *framework* contains .NET Framework samples. These samples are referenced by topics under many different locations in the documentation. These samples build only on Windows.
-
-  * The *framework* directory contains samples that highlight .NET with platform dependencies. These may include migration samples, platform-specific samples, or other samples that require the framework or the Windows-based tools. Our CI build server builds these samples on Windows only. Do not place any samples here that should be checked for cross-platform builds.
-
-- *snippets* contains the code snippets used throughout the documentation. Inside the *snippets* folder, the folder names identify the language of the code snippet.
-
-Under these top-level folders, the samples structure mirrors the folder structure of the related articles. For example, **core/get-started** contains the samples that relate to the articles in the **docs/core/get-started** folder. Snippets for the C# Language keywords are in **snippets/csharp/reference/keywords**.
-
-We will expand these directories as the docs repository adds new content. For example, we will add Xamarin directories, like `xamarin-ios` and `xamarin-android` directories.
+We may expand these directories as the docs repository adds new content. For example, we will add Xamarin directories, like `xamarin-ios` and `xamarin-android` directories.
 
 Each complete sample that you create should contain a *readme.md* file. This file should
 contain a short description of the sample (one or two paragraphs). Your *readme.md*

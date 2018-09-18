@@ -335,9 +335,9 @@
       <Docs>
         <typeparam name="TResult">The type of the elements in the returned collection.</typeparam>
         <param name="instance">The instance of the method invocation (the current object).</param>
-        <param name="methodInfo">The <see cref="T:System.Reflection.MethodInfo" /> that identifies the CLR method that corresponds to a database method.</param>
+        <param name="methodInfo">The <see cref="T:System.Reflection.MethodInfo" /> that identifies the .NET method that corresponds to a database method.</param>
         <param name="parameters">The array of parameters to be passed to the command.</param>
-        <summary>Executes the table-valued database function associated with the specified CLR method.</summary>
+        <summary>Executes the table-valued database function associated with the specified .NET method.</summary>
         <returns>A collection of resultant values returned by the database query.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -733,9 +733,9 @@ db.ExecuteCommand("UPDATE Products SET QuantityPerUnit = {0} WHERE ProductID = {
       </Parameters>
       <Docs>
         <param name="instance">The instance of the method invocation (the current object).</param>
-        <param name="methodInfo">Identifies the CLR method that corresponds to a database method.</param>
+        <param name="methodInfo">Identifies the .NET method that corresponds to a database method.</param>
         <param name="parameters">The array of parameters to be passed to the command.</param>
-        <summary>Executes the stored database procedure or scalar function associated with the specified CLR method.</summary>
+        <summary>Executes the stored database procedure or scalar function associated with the specified .NET method.</summary>
         <returns>The result (the return value and output parameters) of executing the specified method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

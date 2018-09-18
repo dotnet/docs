@@ -21,7 +21,7 @@ Collection activities are used to work with collection objects in a workflow. [!
 ## Using collection activities  
  The following code example demonstrates how to interact with a collection declared as a workflow variable. The collection used is a <xref:System.Collections.Generic.List%601> of <xref:System.String> objects named `fruitList`.  
   
-```vb  
+```csharp  
 Variable<ICollection<string>> fruitList = new Variable<ICollection<string>>  
 {  
     Default = new VisualBasicValue<ICollection<string>>("New List(Of String) From {\"Apple\", \"Orange\"}"),  

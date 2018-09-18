@@ -101,7 +101,8 @@ public partial class Service1Client : System.ServiceModel.ClientBase<MetroWcfCli
 >  XmlDictionaryWriter.Write(DateTime) now writes the DateTime object as a string.  
   
 ### Security  
- The following security modes are supported in Windows Store applications  
+
+The following security modes are supported in Windows Store applications:
   
 1. <xref:System.ServiceModel.SecurityMode.None>  
   
@@ -109,9 +110,9 @@ public partial class Service1Client : System.ServiceModel.ClientBase<MetroWcfCli
   
 3. <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>
   
-4.  <!--zz <xref:System.ServiceModel.SecurityMode.TransportCredentialOnly>  --> `System.ServiceModel.SecurityMode.TransportCredentialOnly`
+4. <xref:System.ServiceModel.SecurityMode.Message>
   
- The following client credential types are supported in Windows Store applications  
+The following client credential types are supported in Windows Store applications:
   
 1.  None  
   

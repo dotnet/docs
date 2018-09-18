@@ -1520,7 +1520,7 @@ span#ProductIDLabel { background-color: white; }
   
  There are times when it is appropriate to disable view state, particularly to improve application performance. For example, if you are loading a database request into a server control, set this property to `false`. If you do not, processor time will be wasted loading view state into the server control that will only be overridden by the database query. If <xref:System.Web.UI.Control.EnableViewState%2A> is `false`, you can use the control state to persist property information that is specific to a control and cannot be turned off like the view state property. For more information on the difference between control state and view state, see [Control State vs. View State Example](http://msdn.microsoft.com/library/9e98c7de-a888-48df-b14e-02ec8bef7681).  
   
- For information about how to enable or disable view state declaratively for an ASP.NET page, see .  
+ For information about how to enable or disable view state declaratively for an ASP.NET page, see [\@ Page](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ydy4x04a(v=vs.100)).
   
    
   

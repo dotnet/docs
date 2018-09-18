@@ -418,7 +418,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can perform asynchronous read operations by using the <xref:System.IO.Stream.ReadAsync%2A> method. The <xref:System.IO.Compression.DeflateStream.BeginRead%2A> method is still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, you can implement asynchronous I/O operations more easily by using the new async methods. For more information, see .  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can perform asynchronous read operations by using the <xref:System.IO.Stream.ReadAsync%2A> method. The <xref:System.IO.Compression.DeflateStream.BeginRead%2A> method is still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, you can implement asynchronous I/O operations more easily by using the new async methods. For more information, see [Asynchronous File I/O](~/docs/standard/io/asynchronous-file-i-o.md).
   
  Pass the <xref:System.IAsyncResult> return value to the <xref:System.IO.Compression.DeflateStream.EndRead%2A> method of the stream to determine how many bytes were read and to release operating system resources used for reading. You can do this either by using the same code that called <xref:System.IO.Compression.DeflateStream.BeginRead%2A> or in a callback passed to <xref:System.IO.Compression.DeflateStream.BeginRead%2A>.  
   
@@ -494,7 +494,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can perform asynchronous write operations by using the <xref:System.IO.Stream.WriteAsync%2A> method. The <xref:System.IO.Compression.DeflateStream.BeginWrite%2A> method is still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, you can implement asynchronous I/O operations more easily by using the new async methods. For more information, see .  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can perform asynchronous write operations by using the <xref:System.IO.Stream.WriteAsync%2A> method. The <xref:System.IO.Compression.DeflateStream.BeginWrite%2A> method is still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, you can implement asynchronous I/O operations more easily by using the new async methods. For more information, see [Asynchronous File I/O](~/docs/standard/io/asynchronous-file-i-o.md).
   
  Pass the <xref:System.IAsyncResult> object returned by the current method to <xref:System.IO.Compression.DeflateStream.EndWrite%2A> to ensure that the write completes and frees resources appropriately. You can do this either by using the same code that called <xref:System.IO.Compression.DeflateStream.BeginWrite%2A> or in a callback passed to <xref:System.IO.Compression.DeflateStream.BeginWrite%2A>. If an error occurs during an asynchronous write operation, an exception will not be thrown until <xref:System.IO.Compression.DeflateStream.EndWrite%2A> is called with the <xref:System.IAsyncResult> returned by this method.  
   
@@ -717,7 +717,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can perform asynchronous read operations by using the <xref:System.IO.Stream.ReadAsync%2A> method. The <xref:System.IO.Compression.DeflateStream.EndRead%2A> method is still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, you can implement asynchronous I/O operations more easily by using the new async methods. For more information, see .  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can perform asynchronous read operations by using the <xref:System.IO.Stream.ReadAsync%2A> method. The <xref:System.IO.Compression.DeflateStream.EndRead%2A> method is still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, you can implement asynchronous I/O operations more easily by using the new async methods. For more information, see [Asynchronous File I/O](~/docs/standard/io/asynchronous-file-i-o.md).
   
  Call this method to determine how many bytes were read from the stream. This method can be called once to return the amount of bytes read between calls to <xref:System.IO.Compression.DeflateStream.BeginRead%2A> and <xref:System.IO.Compression.DeflateStream.EndRead%2A>.  
   
@@ -776,7 +776,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can perform asynchronous write operations by using the <xref:System.IO.Stream.WriteAsync%2A> method. The <xref:System.IO.Compression.DeflateStream.EndWrite%2A> method is still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, you can implement asynchronous I/O operations more easily by using the new async methods. For more information, see .  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can perform asynchronous write operations by using the <xref:System.IO.Stream.WriteAsync%2A> method. The <xref:System.IO.Compression.DeflateStream.EndWrite%2A> method is still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, you can implement asynchronous I/O operations more easily by using the new async methods. For more information, see [Asynchronous File I/O](~/docs/standard/io/asynchronous-file-i-o.md).
   
  <xref:System.IO.Compression.DeflateStream.EndWrite%2A> must be called only once for every call to the <xref:System.IO.Compression.DeflateStream.BeginWrite%2A> method.  
   

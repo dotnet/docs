@@ -22,7 +22,7 @@
 ## Remarks  
  A <xref:System.Windows.Controls.ListViewItem> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
   
- A <xref:System.Windows.Controls.ListView> typically specifies the content for its <xref:System.Windows.Controls.ListViewItem> controls by setting the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property or the <xref:System.Windows.Controls.ItemsControl.Items%2A> property. For an example, see .  
+ A <xref:System.Windows.Controls.ListView> typically specifies the content for its <xref:System.Windows.Controls.ListViewItem> controls by setting the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property or the <xref:System.Windows.Controls.ItemsControl.Items%2A> property.
   
  Templates and styles that are defined for the <xref:System.Windows.Controls.ListViewItem> type are used to specify the display of the content in a <xref:System.Windows.Controls.ListView>.  
   

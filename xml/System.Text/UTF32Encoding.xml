@@ -46,7 +46,7 @@
   
 -   UTF-32, which represents each code point as a 32-bit integer.  
   
- For more information about the UTFs and other encodings supported by <xref:System.Text>, see .  
+ For more information about the UTFs and other encodings supported by <xref:System.Text>, see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md).
   
  The <xref:System.Text.UTF32Encoding> class represents a UTF-32 encoding. The encoder can use the big endian byte order (most significant byte first) or the little endian byte order (least significant byte first). For example, the Latin Capital Letter A (code point U+0041) is serialized as follows (in hexadecimal):  
   

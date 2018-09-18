@@ -123,10 +123,10 @@ Web developers require the ability to describe the shape and layout of the URIs 
 -   /{shoe}{boat} - Variables must be separated by a literal.  
   
 ### Matching and Compound Path Segments  
- Compound path segments allow you to define a UriTemplate that has multiple variables within a single path segment. For example, in the following template string: "Addresses/{state}.{city}" two variables (state and city) are defined within the same segment. This template would match a URL such as "http://example.com/Washington.Redmond" but it will also match an URL like "http://example.com/Washington.Redmond.Microsoft". In the latter case, the state variable will contain "Washington" and the city variable will contain "Redmond.Microsoft". In this case any text (except ‘/’) will match the {city} variable. If you want a template that will not match the "extra" text, place the variable in a separate template segment, for example: "Addresses/{state}/{city}.  
+ Compound path segments allow you to define a UriTemplate that has multiple variables within a single path segment. For example, in the following template string: "Addresses/{state}.{city}" two variables (state and city) are defined within the same segment. This template would match a URL such as `http://example.com/Washington.Redmond` but it will also match an URL like `http://example.com/Washington.Redmond.Microsoft`. In the latter case, the state variable will contain "Washington" and the city variable will contain "Redmond.Microsoft". In this case any text (except ‘/’) will match the {city} variable. If you want a template that will not match the "extra" text, place the variable in a separate template segment, for example: "Addresses/{state}/{city}.  
   
 ### Named Wildcard Segments  
- A named wildcard segment is any path variable segment whose variable name begins with the wildcard character ‘*’. The following template string contains a named wildcard segment named "shoe".  
+ A named wildcard segment is any path variable segment whose variable name begins with the wildcard character ‘\*’. The following template string contains a named wildcard segment named "shoe".  
   
 ```  
 "literal/{*shoe}"  

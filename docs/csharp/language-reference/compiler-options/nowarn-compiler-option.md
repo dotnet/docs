@@ -46,6 +46,7 @@ The **-nowarn** option lets you suppress the compiler from displaying one or mor
  For information about how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.DelaySign%2A>.  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)  
- [C# Compiler Errors](../../../csharp/language-reference/compiler-messages/index.md)
+
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)  
+- [C# Compiler Errors](../../../csharp/language-reference/compiler-messages/index.md)

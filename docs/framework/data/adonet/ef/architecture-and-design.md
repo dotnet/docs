@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: bd738d39-00e2-4bab-b387-90aac1a014bd
 ---
 # Architecture and Design
-The SQL generation module in the [Sample Provider](http://go.microsoft.com/fwlink/?LinkId=180616) is implemented as a visitor on the expression tree that represents the command tree. The generation is done in a single pass over the expression tree.  
+The SQL generation module in the [Sample Provider](https://go.microsoft.com/fwlink/?LinkId=180616) is implemented as a visitor on the expression tree that represents the command tree. The generation is done in a single pass over the expression tree.  
   
  The nodes of the tree are processed from the bottom up. First, an intermediate structure is produced: SqlSelectStatement or SqlBuilder, both implementing ISqlFragment. Next, the string SQL statement is produced from that structure. There are two reasons for the intermediate structure:  
   
@@ -19,7 +19,7 @@ The SQL generation module in the [Sample Provider](http://go.microsoft.com/fwlin
  In the second phase, while producing the actual string, aliases are renamed.  
   
 ## Data Structures  
- This section discusses the types used in the [Sample Provider](http://go.microsoft.com/fwlink/?LinkId=180616) that you use to build a SQL statement.  
+ This section discusses the types used in the [Sample Provider](https://go.microsoft.com/fwlink/?LinkId=180616) that you use to build a SQL statement.  
   
 ### ISqlFragment  
  This section covers the classes that implement the ISqlFragment interface, which serves two purposes:  

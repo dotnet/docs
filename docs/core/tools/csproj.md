@@ -14,13 +14,13 @@ Metapackages are implicitly referenced based on the target framework(s) specifie
 
 ```xml
  <PropertyGroup>
-   <TargetFramework>netcoreapp1.1</TargetFramework>
+   <TargetFramework>netcoreapp2.1</TargetFramework>
  </PropertyGroup>
  ```
  
  ```xml
  <PropertyGroup>
-   <TargetFrameworks>netcoreapp1.1;net462</TargetFrameworks>
+   <TargetFrameworks>netcoreapp2.1;net462</TargetFrameworks>
  </PropertyGroup>
  ```
 
@@ -167,10 +167,10 @@ The following example provides the fallbacks for all targets in your project:
 </PackageTargetFallback >
 ```
 
-The following example specifies the fallbacks only for the `netcoreapp1.0` target:
+The following example specifies the fallbacks only for the `netcoreapp2.1` target:
 
 ```xml
-<PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp1.0'">
+<PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp2.1'">
     $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
 </PackageTargetFallback >
 ```

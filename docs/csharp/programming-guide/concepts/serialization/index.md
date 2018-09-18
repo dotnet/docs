@@ -1,5 +1,5 @@
 ---
-title: "Serialization (C# )"
+title: "Serialization (C#)"
 ms.date: 04/26/2018
 ---
 # Serialization (C#)

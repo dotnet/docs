@@ -114,9 +114,9 @@ Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cl
 
 Telemetry
 ---------
-The .NET Core tools collect usage data in order to help us improve your experience. 
-The data is anonymous and doesn't include command-line arguments. 
-The data is collected by Microsoft and shared with the community. 
+The .NET Core tools collect usage data in order to help us improve your experience.
+The data is anonymous and doesn't include command-line arguments.
+The data is collected by Microsoft and shared with the community.
 You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
 
 Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
@@ -124,6 +124,6 @@ Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemet
 
 ## See also
 
-[What we've learned from .NET Core SDK Telemetry](https://blogs.msdn.microsoft.com/dotnet/2017/07/21/what-weve-learned-from-net-core-sdk-telemetry/)  
-[Telemetry reference source (dotnet/cli repo)](https://github.com/dotnet/cli/tree/master/src/dotnet/Telemetry)  
-[.NET Core SDK Usage Data](https://github.com/dotnet/core/blob/master/release-notes/cli-usage-data.md)  
+- [What we've learned from .NET Core SDK Telemetry](https://blogs.msdn.microsoft.com/dotnet/2017/07/21/what-weve-learned-from-net-core-sdk-telemetry/)
+- [Telemetry reference source (dotnet/cli repo)](https://github.com/dotnet/cli/tree/master/src/dotnet/Telemetry)
+- [.NET Core SDK Usage Data](https://github.com/dotnet/core/blob/master/release-notes/cli-usage-data.md)

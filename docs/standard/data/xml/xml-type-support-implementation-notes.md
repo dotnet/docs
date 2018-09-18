@@ -41,5 +41,6 @@ This topic describes some implementation details that you want to be aware of.
 ### xs:anyURI and System.Uri  
  When an instance of `xs:anyURI` that represents a relative URI is mapped to a <xref:System.Uri>, the <xref:System.Uri> object does not have a base URI.  
   
-## See Also  
- [Type Support in the System.Xml Classes](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)
+## See also
+
+- [Type Support in the System.Xml Classes](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)

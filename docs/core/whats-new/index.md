@@ -15,4 +15,4 @@ This page provides a summary of new features in each release of .NET Core starti
 
 ## See also
 
-[What's new in ASP.NET Core 2.0](/aspnet/core/aspnetcore-2.0)
+* [What's new in ASP.NET Core 2.0](/aspnet/core/aspnetcore-2.0)

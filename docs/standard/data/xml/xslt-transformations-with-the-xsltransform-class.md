@@ -90,13 +90,13 @@ public class Sample
 }
 ```
 
-## See Also
+## See also
 
-<xref:System.Xml.Xsl.XslTransform>  
-[XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)  
-[Implementation of Discretionary Behaviors in the XslTransform Class](implementation-of-discretionary-behaviors-in-the-xsltransform-class.md)  
-[XPathNavigator in Transformations](xpathnavigator-in-transformations.md)  
-[XPathNodeIterator in Transformations](xpathnodeiterator-in-transformations.md)  
-[XPathDocument Input to XslTransform](xpathdocument-input-to-xsltransform.md)  
-[XmlDataDocument Input to XslTransform](xmldatadocument-input-to-xsltransform.md)  
-[XmlDocument Input to XslTransform](xmldocument-input-to-xsltransform.md)  
+- <xref:System.Xml.Xsl.XslTransform>  
+- [XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)  
+- [Implementation of Discretionary Behaviors in the XslTransform Class](implementation-of-discretionary-behaviors-in-the-xsltransform-class.md)  
+- [XPathNavigator in Transformations](xpathnavigator-in-transformations.md)  
+- [XPathNodeIterator in Transformations](xpathnodeiterator-in-transformations.md)  
+- [XPathDocument Input to XslTransform](xpathdocument-input-to-xsltransform.md)  
+- [XmlDataDocument Input to XslTransform](xmldatadocument-input-to-xsltransform.md)  
+- [XmlDocument Input to XslTransform](xmldocument-input-to-xsltransform.md)  

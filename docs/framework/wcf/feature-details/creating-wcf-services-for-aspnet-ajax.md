@@ -6,7 +6,7 @@ ms.assetid: 04c0402c-e617-4ba5-aedf-d17692234776
 # Creating WCF Services for ASP.NET AJAX
 Microsoft ASP.NET AJAX enables you to quickly create Web pages that include a rich user experience with responsive and familiar user interface elements. ASP.NET AJAX provides client-script libraries that incorporate cross-browser ECMAScript (JavaScript) and dynamic HTML (DHTML) technologies, and it integrates them with the ASP.NET 2.0 server-based development platform. By using ASP.NET AJAX, you can improve the user experience and the efficiency of your Web applications.  
   
- ASP.NET AJAX consists of client-script libraries and of server components that are integrated to provide a robust development framework. To access a service from an ASP.NET page: once the service URL is added to the ASP.NET Script Manager control on the page, service operations may be invoked using JavaScript code that looks exactly like a regular JavaScript function call. See [Learn ASP.NET AJAX](http://go.microsoft.com/fwlink/?LinkId=186475) about the use of Web services within the AJAX framework.  
+ ASP.NET AJAX consists of client-script libraries and of server components that are integrated to provide a robust development framework. To access a service from an ASP.NET page: once the service URL is added to the ASP.NET Script Manager control on the page, service operations may be invoked using JavaScript code that looks exactly like a regular JavaScript function call. See [Learn ASP.NET AJAX](https://go.microsoft.com/fwlink/?LinkId=186475) about the use of Web services within the AJAX framework.  
   
  Most Windows Communication Foundation (WCF) services may be exposed as a service compatible with ASP.NET AJAX by adding an appropriate ASP.NET AJAX endpoint.  
   

@@ -25,6 +25,7 @@ This example shows how to specify the merge options that will apply to all subse
   
  In cases where the <xref:System.Linq.ParallelMergeOptions.AutoBuffered> option incurs an undesirable latency before the first element is yielded, try the <xref:System.Linq.ParallelMergeOptions.NotBuffered> option to yield result elements faster and more smoothly.  
   
-## See Also  
- <xref:System.Linq.ParallelMergeOptions>  
- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+## See also
+
+- <xref:System.Linq.ParallelMergeOptions>  
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

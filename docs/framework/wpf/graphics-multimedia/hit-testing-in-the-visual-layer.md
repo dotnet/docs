@@ -27,7 +27,7 @@ This topic provides an overview of hit testing functionality provided by the vis
 -   Ignoring <xref:System.Windows.UIElement> hit testing policy: This applies when you need to ignore the <xref:System.Windows.UIElement> hit testing policy, which takes into consideration such factors as whether an element is disabled or invisible.  
   
 > [!NOTE]
->  For a complete code sample illustrating hit testing at the visual layer, see [Hit Test Using DrawingVisuals Sample](http://go.microsoft.com/fwlink/?LinkID=159994) and [Hit Test with Win32 Interoperation Sample](http://go.microsoft.com/fwlink/?LinkID=159995).  
+>  For a complete code sample illustrating hit testing at the visual layer, see [Hit Test Using DrawingVisuals Sample](https://go.microsoft.com/fwlink/?LinkID=159994) and [Hit Test with Win32 Interoperation Sample](https://go.microsoft.com/fwlink/?LinkID=159995).  
   
 <a name="hit_testing_support"></a>   
 ## Hit Testing Support  
@@ -138,7 +138,7 @@ Pruning a visual tree
  <xref:System.Windows.Media.HitTestResultCallback>  
  <xref:System.Windows.Media.HitTestFilterCallback>  
  <xref:System.Windows.UIElement.IsHitTestVisible%2A>  
- [Hit Test Using DrawingVisuals Sample](http://go.microsoft.com/fwlink/?LinkID=159994)  
- [Hit Test with Win32 Interoperation Sample](http://go.microsoft.com/fwlink/?LinkID=159995)  
+ [Hit Test Using DrawingVisuals Sample](https://go.microsoft.com/fwlink/?LinkID=159994)  
+ [Hit Test with Win32 Interoperation Sample](https://go.microsoft.com/fwlink/?LinkID=159995)  
  [Hit Test Geometry in a Visual](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-geometry-in-a-visual.md)  
  [Hit Test Using a Win32 Host Container](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-using-a-win32-host-container.md)

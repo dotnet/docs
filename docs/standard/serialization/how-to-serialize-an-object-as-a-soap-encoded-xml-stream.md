@@ -64,10 +64,11 @@ XmlTypeMapping myTypeMapping =
 XmlSerializer mySerializer = new XmlSerializer(myTypeMapping);  
 ```  
   
-## See Also  
- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
- [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)  
- [XML Serialization with XML Web Services](../../../docs/standard/serialization/xml-serialization-with-xml-web-services.md)  
- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)  
- [How to: Override Encoded SOAP XML Serialization](../../../docs/standard/serialization/how-to-override-encoded-soap-xml-serialization.md)
+## See also
+
+- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
+- [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)  
+- [XML Serialization with XML Web Services](../../../docs/standard/serialization/xml-serialization-with-xml-web-services.md)  
+- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
+- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)  
+- [How to: Override Encoded SOAP XML Serialization](../../../docs/standard/serialization/how-to-override-encoded-soap-xml-serialization.md)

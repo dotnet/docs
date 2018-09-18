@@ -20,6 +20,7 @@ The following resources contain additional information about parallel programmin
 
 - The [Samples for Parallel Programming with the .NET Framework](https://code.msdn.microsoft.com/ParExtSamples) page contains many samples that demonstrate intermediate and advanced parallel programming techniques.
 
-## See also  
- [Parallel Computing Developer Center](https://msdn.microsoft.com/vstudio/bb964701)  
- [Parallel Programming in Visual C++](/cpp/parallel/parallel-programming-in-visual-cpp)  
+## See also
+
+- [Parallel Computing Developer Center](https://msdn.microsoft.com/vstudio/bb964701)  
+- [Parallel Programming in Visual C++](/cpp/parallel/parallel-programming-in-visual-cpp)  

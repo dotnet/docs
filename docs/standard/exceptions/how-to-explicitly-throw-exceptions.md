@@ -24,5 +24,6 @@ The following code example uses a `try`/`catch` block to catch a possible <xref:
 [!code-csharp[Exception.Throwing#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Exception.Throwing/CS/throw.cs#1)]
 [!code-vb[Exception.Throwing#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Exception.Throwing/VB/throw.vb#1)]  
 
-## See Also  
-[Exceptions](index.md)
+## See also
+
+- [Exceptions](index.md)

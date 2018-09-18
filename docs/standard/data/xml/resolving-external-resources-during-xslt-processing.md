@@ -38,7 +38,8 @@ There are several times during an XSLT transformation when you may need to resol
  [!code-csharp[XslCompiledTransform.Load#11](../../../../samples/snippets/csharp/VS_Snippets_Data/XslCompiledTransform.Load/CS/Xslt_Load_v2.cs#11)]
  [!code-vb[XslCompiledTransform.Load#11](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XslCompiledTransform.Load/VB/Xslt_Load_v2.vb#11)]  
   
-## See Also  
- <xref:System.Xml.Xsl.XslCompiledTransform>  
- <xref:System.Xml.Xsl.XsltSettings>  
- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+## See also
+
+- <xref:System.Xml.Xsl.XslCompiledTransform>  
+- <xref:System.Xml.Xsl.XsltSettings>  
+- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)

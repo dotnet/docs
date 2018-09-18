@@ -84,6 +84,6 @@ Provides links to more information on sophisticated development tasks and techni
 [XML Web Services Created Using ASP.NET and XML Web Service Clients](https://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c)  
 Provides topics that describe and explain how to program XML Web services using ASP.NET.
 
-## See Also
+## See also
 
-[Binary Serialization](binary-serialization.md)  
+- [Binary Serialization](binary-serialization.md)

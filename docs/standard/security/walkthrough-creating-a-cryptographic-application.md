@@ -117,7 +117,7 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
  [!code-vb[CryptoWalkThru#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#5)]  
   
 ## Decrypting a File  
- This task involves two methods, the event handler method for the `Decrypt File` button (`buttonEncryptFile_Click`), and the `DecryptFile` method. The first method displays a dialog box for selecting a file and passes its file name to the second method, which performs the decryption.  
+ This task involves two methods, the event handler method for the `Decrypt File` button (`buttonDecryptFile_Click`), and the `DecryptFile` method. The first method displays a dialog box for selecting a file and passes its file name to the second method, which performs the decryption.  
   
  The `Decrypt` method does the following:  
   
@@ -204,5 +204,6 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
   
 2.  Click the `Decrypt File` button and select the file just encrypted. This will be successful because you have the full key pair to decrypt.  
   
-## See Also  
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+## See also
+
+- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)

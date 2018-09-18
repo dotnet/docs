@@ -77,7 +77,8 @@ All numeric types have two static parsing methods, `Parse` and `TryParse`, that 
  [!code-csharp[Parsing.Numbers#3](../../../samples/snippets/csharp/VS_Snippets_CLR/parsing.numbers/cs/unicode1.cs#3)]
  [!code-vb[Parsing.Numbers#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/parsing.numbers/vb/unicode1.vb#3)]  
   
-## See Also  
- <xref:System.Globalization.NumberStyles>  
- [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)  
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
+## See also
+
+- <xref:System.Globalization.NumberStyles>  
+- [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)  
+- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)

@@ -186,9 +186,9 @@ The following is the result of transforming XML with this style sheet:
 <books xmlns:user="urn:books">Book1Book2Book3Book4</books>
 ```
 
-## See Also
+## See also
 
-<xref:System.Xml.XPath.XPathNodeIterator>  
-<xref:System.Xml.XPath.XPathNodeIterator>  
-[XSLT Transformations with the XslTransform Class](xslt-transformations-with-the-xsltransform-class.md)  
-[XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)  
+- <xref:System.Xml.XPath.XPathNodeIterator>  
+- <xref:System.Xml.XPath.XPathNodeIterator>  
+- [XSLT Transformations with the XslTransform Class](xslt-transformations-with-the-xsltransform-class.md)  
+- [XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)  

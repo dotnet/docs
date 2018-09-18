@@ -31,5 +31,6 @@ csc.exe -preferreduilang:ja-JP
   
 ## Requirements  
   
-## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+## See Also
+
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)

@@ -41,5 +41,6 @@ csc -target:winmdobj filename.cs
 ```  
   
 ## See Also  
- [-target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+
+- [-target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)  
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)

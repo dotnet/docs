@@ -24,23 +24,23 @@ Applications that consume query notifications have a common set of requirements.
   
  **SQL Server Books Online**  
   
--   [Creating a Query for Notification](http://msdn.microsoft.com/library/ms181122.aspx)  
+-   [Creating a Query for Notification](https://msdn.microsoft.com/library/ms181122.aspx)  
   
--   [Security Considerations for Service Broker](http://msdn.microsoft.com/library/ms166059.aspx)  
+-   [Security Considerations for Service Broker](https://msdn.microsoft.com/library/ms166059.aspx)  
   
--   [Security and Protection (Service Broker)](http://msdn.microsoft.com/library/bb522911.aspx)  
+-   [Security and Protection (Service Broker)](https://msdn.microsoft.com/library/bb522911.aspx)  
   
--   [Security Considerations for Notifications Services](http://msdn.microsoft.com/library/ms172604.aspx)  
+-   [Security Considerations for Notifications Services](https://msdn.microsoft.com/library/ms172604.aspx)  
   
--   [Query Notification Permissions](http://msdn.microsoft.com/library/ms188311.aspx)  
+-   [Query Notification Permissions](https://msdn.microsoft.com/library/ms188311.aspx)  
   
--   [International Considerations for Service Broker](http://msdn.microsoft.com/library/ms166028.aspx)  
+-   [International Considerations for Service Broker](https://msdn.microsoft.com/library/ms166028.aspx)  
   
--   [Solution Design Considerations (Service Broker)](http://msdn.microsoft.com/library/bb522899.aspx)  
+-   [Solution Design Considerations (Service Broker)](https://msdn.microsoft.com/library/bb522899.aspx)  
   
--   [Service Broker Developer InfoCenter](http://msdn.microsoft.com/library/ms166100.aspx)  
+-   [Service Broker Developer InfoCenter](https://msdn.microsoft.com/library/ms166100.aspx)  
   
--   [Developer's Guide (Service Broker)](http://msdn.microsoft.com/library/bb522908.aspx)  
+-   [Developer's Guide (Service Broker)](https://msdn.microsoft.com/library/bb522908.aspx)  
   
 ## Enabling Query Notifications to Run Sample Code  
  To enable Service Broker on the **AdventureWorks** database by using SQL Server Management Studio, execute the following Transact-SQL statement:  
@@ -80,4 +80,4 @@ CREATE SERVICE ContactChangeNotifications
   
 ## See Also  
  [Query Notifications in SQL Server](../../../../../docs/framework/data/adonet/sql/query-notifications-in-sql-server.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

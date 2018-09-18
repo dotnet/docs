@@ -21,7 +21,7 @@ This topic provides a brief introduction to [!INCLUDE[vbteclinqext](~/includes/v
   
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
   
- [Queries](../../../../visual-basic/language-reference/queries/queries.md)  
+ [Queries](../../../../visual-basic/language-reference/queries/index.md)  
   
  [Walkthrough: Writing Queries in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/walkthrough-writing-queries.md)  
   
@@ -149,6 +149,6 @@ Where cust.City = "London" Or cust.City = "Paris"
 ## See Also  
  <xref:System.Collections.Generic.IEnumerable%601>  
  [Getting Started with LINQ in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)  
- [Queries](../../../../visual-basic/language-reference/queries/queries.md)  
+ [Queries](../../../../visual-basic/language-reference/queries/index.md)  
  [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)

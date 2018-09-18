@@ -32,8 +32,8 @@ Some HTML documents are composed out of *frames*, or windows that can hold their
   
  This rule also applies to windows that you open using the <xref:System.Windows.Forms.HtmlWindow.Open%2A> and <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> methods. If the window you open is in a different domain from the page hosted in the <xref:System.Windows.Forms.WebBrowser> control, you will not be able to move that window or examine its contents. These restrictions are also enforced if you use the <xref:System.Windows.Forms.WebBrowser> control to display a Web site that is different from the Web site used to deploy your Windows Forms-based application. If you use [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] deployment technology to install your application from Web site A, and you use the <xref:System.Windows.Forms.WebBrowser> to display Web site B, you will not be able to access Web site B's data.  
   
- For more information about cross-site scripting, see [About Cross-Frame Scripting and Security](http://msdn.microsoft.com/library/ms533028.aspx).  
+ For more information about cross-site scripting, see [About Cross-Frame Scripting and Security](https://msdn.microsoft.com/library/ms533028.aspx).  
   
 ## See Also  
- [FRAME Element &#124; frame Object](http://msdn.microsoft.com/library/ms535250.aspx)  
+ [FRAME Element &#124; frame Object](https://msdn.microsoft.com/library/ms535250.aspx)  
  [Using the Managed HTML Document Object Model](../../../../docs/framework/winforms/controls/using-the-managed-html-document-object-model.md)

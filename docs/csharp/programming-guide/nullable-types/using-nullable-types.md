@@ -103,8 +103,8 @@ The semantics of these operators is defined by the following table:
 
 Note that these two operators don't follow the rules described in the [Operators](#operators) section: the result of an operator evaluation can be non-null even if one of the operands is null.
   
-## See also
+## See Also
 
- [Nullable types](index.md)  
- [C# Programming Guide](../../programming-guide/index.md)  
- [What exactly does 'lifted' mean?](https://blogs.msdn.microsoft.com/ericlippert/2007/06/27/what-exactly-does-lifted-mean/)  
+- [Nullable types](index.md)  
+- [C# Programming Guide](../../programming-guide/index.md)  
+- [What exactly does 'lifted' mean?](https://blogs.msdn.microsoft.com/ericlippert/2007/06/27/what-exactly-does-lifted-mean/)  

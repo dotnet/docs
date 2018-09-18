@@ -4,6 +4,7 @@ description: Learn how to build a complete .NET Core solution in Visual Studio 2
 author: bleroy
 ms.author: mairaw
 ms.date: 11/16/2016
+ms.custom: vs-dotnet
 ---
 # Building a complete .NET Core solution on Windows, using Visual Studio 2017
 

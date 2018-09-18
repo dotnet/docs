@@ -35,7 +35,7 @@ Change directories to *FSNetCore*.
 Use the `dotnet new` command, create a class library project in the **src** folder named Library.
 
 ```console
-dotnet new lib -lang F# -o src/Library
+dotnet new classlib -lang F# -o src/Library
 ```
 
 The following directory structure is produced after running the previous command:

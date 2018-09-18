@@ -81,9 +81,10 @@ In the following example, the <xref:System.DateTime.ParseExact%2A?displayPropert
 
 Each overload of the <xref:System.DateTime.Parse%2A> and <xref:System.DateTime.ParseExact%2A> methods also has an <xref:System.IFormatProvider> parameter that provides culture-specific information about the formatting of the string. This <xref:System.IFormatProvider> object is a <xref:System.Globalization.CultureInfo> object that represents a standard culture or a <xref:System.Globalization.DateTimeFormatInfo> object that is returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property.  <xref:System.DateTime.ParseExact%2A> also uses an additional string or string array argument that defines one or more custom date and time formats.  
 
-## See Also  
- [Parsing Strings](parsing-strings.md)  
- [Formatting Types](formatting-types.md)  
- [Type Conversion in .NET](type-conversion.md)  
- [Standard date and time formats](standard-date-and-time-format-strings.md)  
- [Custom date and time format strings](custom-date-and-time-format-strings.md)
+## See also
+
+- [Parsing Strings](parsing-strings.md)  
+- [Formatting Types](formatting-types.md)  
+- [Type Conversion in .NET](type-conversion.md)  
+- [Standard date and time formats](standard-date-and-time-format-strings.md)  
+- [Custom date and time format strings](custom-date-and-time-format-strings.md)

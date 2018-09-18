@@ -65,6 +65,7 @@ Widening conversion occurs when a value of one type is converted to another type
 |<xref:System.Single>|<xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.UInt16>, <xref:System.Int32>, <xref:System.UInt32>, <xref:System.Int64>, <xref:System.UInt64>|  
 |<xref:System.Double>|<xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.UInt16>, <xref:System.Int32>, <xref:System.UInt32>, <xref:System.Int64>, <xref:System.UInt64>|  
   
-## See Also  
- <xref:System.Convert?displayProperty=nameWithType>  
- [Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)
+## See also
+
+- <xref:System.Convert?displayProperty=nameWithType>  
+- [Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)

@@ -8,8 +8,8 @@ helpviewer_keywords:
   - "BC31183"
 ms.assetid: 0ab1dbce-8397-4959-b2cd-f58798b051a0
 ---
-# XML namespace URI &#39;http://www.w3.org/XML/1998/namespace&#39; can be bound only to &#39;xmlns&#39;
-The URI http://www.w3.org/XML/1998/namespace is used in an XML namespace declaration. This URI is a reserved namespace and cannot be included in an XML namespace declaration.  
+# XML namespace URI `http://www.w3.org/XML/1998/namespace`; can be bound only to &#39;xmlns&#39;
+The URI `http://www.w3.org/XML/1998/namespace` is used in an XML namespace declaration. This URI is a reserved namespace and cannot be included in an XML namespace declaration.  
   
  **Error ID:** BC31183  
   

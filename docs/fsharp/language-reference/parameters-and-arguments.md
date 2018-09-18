@@ -7,14 +7,14 @@ ms.date: 05/16/2016
 
 This topic describes language support for defining parameters and passing arguments to functions, methods, and properties. It includes information about how to pass by reference, and how to define and use methods that can take a variable number of arguments.
 
-
 ## Parameters and Arguments
+
 The term *parameter* is used to describe the names for values that are expected to be supplied. The term *argument* is used for the values provided for each parameter.
 
 Parameters can be specified in tuple or curried form, or in some combination of the two. You can pass arguments by using an explicit parameter name. Parameters of methods can be specified as optional and given a default value.
 
-
 ## Parameter Patterns
+
 Parameters supplied to functions and methods are, in general, patterns separated by spaces. This means that, in principle, any of the patterns described in [Match Expressions](match-expressions.md) can be used in a parameter list for a function or member.
 
 Methods usually use the tuple form of passing arguments. This achieves a clearer result from the perspective of other .NET languages because the tuple form matches the way arguments are passed in .NET methods.
@@ -84,6 +84,7 @@ Occasionally, patterns that involve incomplete matches are useful, for example, 
 The use of patterns that have incomplete matches is best reserved for quick prototyping and other temporary uses. The compiler will issue a warning for such code. Such patterns cannot cover the general case of all possible inputs and therefore are not suitable for component APIs.
 
 ## Named Arguments
+
 Arguments for methods can be specified by position in a comma-separated argument list, or they can be passed to a method explicitly by providing the name, followed by an equal sign and the value to be passed in. If specified by providing the name, they can appear in a different order from that used in the declaration.
 
 Named arguments can make code more readable and more adaptable to certain types of changes in the API, such as a reordering of method parameters.
@@ -101,6 +102,7 @@ In a call to a class constructor, you can set the values of properties of the cl
 For more information, see [Constructors (F#)](https://msdn.microsoft.com/library/2cd0ed07-d214-4125-8317-4f288af99f05).
 
 ## Optional Parameters
+
 You can specify an optional parameter for a method by using a question mark in front of the parameter name. Optional parameters are interpreted as the F# option type, so you can query them in the regular way that option types are queried, by using a `match` expression with `Some` and `None`. Optional parameters are permitted only on members, not on functions created by using `let` bindings.
 
 You can also use a function `defaultArg`, which sets a default value of an optional argument. The `defaultArg` function takes the optional parameter as the first argument and the default value as the second.
@@ -118,19 +120,40 @@ Baud Rate: 300 Duplex: Half Parity: true
 ```
 
 ## Passing by Reference
-F# supports the `byref` keyword, which specifies that a parameter is passed by reference. This means that any changes to the value are retained after the execution of the function. Values provided to a `byref` parameter must be mutable. Alternatively, you can pass reference cells of the appropriate type.
 
-Passing by reference in .NET languages evolved as a way to return more than one value from a function. In F#, you can return a tuple for this purpose, or use a mutable reference cell as a parameter. The `byref` parameter is mainly provided for interoperability with .NET libraries.
+Passing an F# value by reference involves [byrefs](byrefs.md), which are managed pointer types. Guidance for which type to use is as follows:
 
-The following examples illustrate the use of the `byref` keyword. Note that when you use a reference cell as a parameter, you must create a reference cell as a named value and use that as the parameter, not just add the `ref` operator as shown in the first call to `Increment` in the following code. Because creating a reference cell creates a copy of the underlying value, the first call just increments a temporary value.
+* Use `inref<'T>` if you only need to read the pointer.
+* Use `outref<'T>` if you only need to write to the pointer.
+* Use `byref<'T>` if you need to both read from and write to the pointer.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/parameters-and-arguments-1/snippet3809.fs)]
+```fsharp
+let example1 (x: inref<int>) = printfn "It's %d" x
+
+let example2 (x: outref<int>) = x <- x + 1
+
+let example3 (x: byref<int>) =
+    printfn "It'd %d" x
+    x <- x + 1
+
+// No need to make it mutable, since it's read-only
+let x = 1
+example1 &x
+
+// Needs to be mutable, since we write to it
+let mutable y = 2
+example2 &y
+example3 &y // Now 'y' is 3
+```
+
+Because the parameter is a pointer and the value is mutable, any changes to the value are retained after the execution of the function.
 
 You can use a tuple as a return value to store any `out` parameters in .NET library methods. Alternatively, you can treat the `out` parameter as a `byref` parameter. The following code example illustrates both ways.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/parameters-and-arguments-1/snippet3810.fs)]
 
 ## Parameter Arrays
+
 Occasionally it is necessary to define a function that takes an arbitrary number of parameters of heterogeneous type. It would not be practical to create all the possible overloaded methods to account for all the types that could be used. The .NET implementations provide support for such methods through the parameter array feature. A method that takes a parameter array in its signature can be provided with an arbitrary number of parameters. The parameters are put into an array. The type of the array elements determines the parameter types that can be passed to the function. If you define the parameter array with `System.Object` as the element type, then client code can pass values of any type.
 
 In F#, parameter arrays can only be defined in methods. They cannot be used in standalone functions or functions that are defined in modules.
@@ -143,7 +166,7 @@ The following code illustrates both calling a .NET method that takes a parameter
 
 When run in a project, the output of the previous code is as follows:
 
-```
+```console
 a 1 10 Hello world 1 True
 "a"
 1
@@ -153,5 +176,6 @@ a 1 10 Hello world 1 True
 true
 ```
 
-## See Also
-[Members](members/index.md)
+## See also
+
+- [Members](members/index.md)

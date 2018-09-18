@@ -48,5 +48,6 @@ The W3C XSL Transformations (XSLT) Version 1.0 Recommendation includes areas in 
   
  <sup>*</sup> This behavior is different than that of the <xref:System.Xml.Xsl.XslTransform> class. For more information, see [Implementation of Discretionary Behaviors in the XslTransform Class](../../../../docs/standard/data/xml/implementation-of-discretionary-behaviors-in-the-xsltransform-class.md).  
   
-## See Also  
- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+## See also
+
+- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)

@@ -24,6 +24,7 @@ public string FirstName { get; set; } = "Jane";
   
  Attributes are permitted on auto-implemented properties but obviously not on the backing fields since those are not accessible from your source code. If you must use an attribute on the backing field of a property, just create a regular property.  
   
-## See Also  
- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)
+## See Also
+
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
+- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)

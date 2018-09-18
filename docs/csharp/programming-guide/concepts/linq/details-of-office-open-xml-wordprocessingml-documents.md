@@ -14,5 +14,6 @@ This section provides information about the details of Office Open XML Wordproce
 |[Style Part of a WordprocessingML Document](../../../../csharp/programming-guide/concepts/linq/style-part-of-a-wordprocessingml-document.md)|Shows the style part of an Office Open XML WordprocessingML document.|  
 |[Example that Outputs Office Open XML Document Parts (C#)](../../../../csharp/programming-guide/concepts/linq/example-that-outputs-office-open-xml-document-parts.md)|Provides an example that opens an Office Open XML WordprocessingML document, and outputs the parts to the console.|  
   
-## See Also  
- [Tutorial: Manipulating Content in a WordprocessingML Document (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)
+## See Also
+
+- [Tutorial: Manipulating Content in a WordprocessingML Document (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

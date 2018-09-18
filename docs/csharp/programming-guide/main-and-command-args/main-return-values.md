@@ -87,9 +87,9 @@ When the application entry point returns a `Task` or `Task<int>`, the compiler g
 > [!NOTE]
 >If the examples used `async` modifier on the `Main` method, the compiler would generate the same code.
 
-## See also
-[C# Programming Guide](../../programming-guide/index.md)
-[C# Reference](../index.md)
-[Main() and Command-Line Arguments](index.md)
-[How to: Display Command Line Arguments](../../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)
-[How to: Access Command-Line Arguments Using foreach](../../programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)
+## See Also
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Reference](../index.md)
+- [Main() and Command-Line Arguments](index.md)
+- [How to: Display Command Line Arguments](../../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)
+- [How to: Access Command-Line Arguments Using foreach](../../programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)

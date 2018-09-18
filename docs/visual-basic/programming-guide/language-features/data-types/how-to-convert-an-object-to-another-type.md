@@ -35,5 +35,5 @@ End Sub
  [Conversions Between Strings and Other Types](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)  
  [Array Conversions](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)  
  [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
  [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)

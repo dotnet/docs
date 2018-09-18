@@ -11,4 +11,4 @@ ms.assetid: e083d805-dcf6-459d-b9af-9ef0563f2dd7
 ## See Also  
  [N-Tier and Remote Applications with LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql.md)  
  [LINQ to SQL N-Tier with Web Services](../../../../../../docs/framework/data/adonet/sql/linq/linq-to-sql-n-tier-with-web-services.md)  
- [Work with datasets in n-tier applications](http://msdn.microsoft.com/library/f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20)
+ [Work with datasets in n-tier applications](/visualstudio/data-tools/work-with-datasets-in-n-tier-applications)

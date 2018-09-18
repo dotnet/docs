@@ -7,7 +7,6 @@ ms.date: 05/16/2016
 
 This topic describes constraints that you can apply to generic type parameters to specify the requirements for a type argument in a generic type or function.
 
-
 ## Syntax
 
 ```fsharp
@@ -15,6 +14,7 @@ type-parameter-list when constraint1 [ and constraint2]
 ```
 
 ## Remarks
+
 There are several different constraints you can apply to limit the types that can be used in a generic type. The following table lists and describes these constraints.
 
 |Constraint|Syntax|Description|
@@ -29,7 +29,7 @@ There are several different constraints you can apply to limit the types that ca
 |Delegate Constraint|: delegate&lt;*tuple-parameter-type*, *return-type*&gt;|The provided type must be a delegate type that has the specified arguments and return value; not intended for common use.|
 |Comparison Constraint|: comparison|The provided type must support comparison.|
 |Equality Constraint|: equality|The provided type must support equality.|
-|Unmanaged Constraint|: unmanaged|The provided type must be an unmanaged type. Unmanaged types are either certain primitive types (`sbyte`, `byte`, `char`, `nativeint`, `unativeint`, `float32`, `float`, `int16`, `uint16`, `int32`, `uint32`, `int64`, `uint64`, or `decimal`), enumeration types, `nativeptr&lt;_&gt;`, or a non-generic structure whose fields are all unmanaged types.|
+|Unmanaged Constraint|: unmanaged|The provided type must be an unmanaged type. Unmanaged types are either certain primitive types (`sbyte`, `byte`, `char`, `nativeint`, `unativeint`, `float32`, `float`, `int16`, `uint16`, `int32`, `uint32`, `int64`, `uint64`, or `decimal`), enumeration types, `nativeptr<_>`, or a non-generic structure whose fields are all unmanaged types.|
 You have to add a constraint when your code has to use a feature that is available on the constraint type but not on types in general. For example, if you use the type constraint to specify a class type, you can use any one of the methods of that class in the generic function or type.
 
 Specifying constraints is sometimes required when writing type parameters explicitly, because without a constraint, the compiler has no way of verifying that the features that you are using will be available on any type that might be supplied at run time for the type parameter.
@@ -108,7 +108,7 @@ type Class14<'T,'U when 'T : equality and 'U : equality> =
 class end
 ```
 
-## See Also
-[Generics](index.md)
+## See also
 
-[Constraints](constraints.md)
+- [Generics](index.md)
+- [Constraints](constraints.md)

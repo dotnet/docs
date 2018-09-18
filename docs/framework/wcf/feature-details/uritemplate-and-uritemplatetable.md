@@ -161,25 +161,28 @@ UriTemplate t = new UriTemplate("/test/{a=1}/{b=5}");
  The following code shows how default variable values are handled when matching a candidate URI.  
   
 ```csharp
-Uri baseAddress = new Uri("http://localhost:800   
-Dictionary<string,string> defVals = new Dictionary<string,string> {{"a","1"}, {"b", "5"}};  
-UriTemplate t = new UriTemplate("/test/{a}/{b}", defVals);0");  
-UriTemplate t = new UriTemplate("/{state=WA}/{city=Redmond}/", true);  
-Uri candidate = new Uri("http://localhost:8000/OR");  
-  
-UriTemplateMatch m1 = t.Match(baseAddress, candidate);  
-  
-// Display contents of BoundVariables  
-foreach (string key in m1.BoundVariables.AllKeys)  
-{  
-    Console.WriteLine("\t\t{0}={1}", key, m1.BoundVariables[key]);  
-}  
+Uri baseAddress = new Uri("http://localhost:8000/");
+
+UriTemplate t = new UriTemplate("/{state=WA}/{city=Redmond}/", true);
+Uri candidate = new Uri("http://localhost:8000/OR");
+
+UriTemplateMatch m1 = t.Match(baseAddress, candidate);
+
+Console.WriteLine($"Template: {t}");
+Console.WriteLine($"Candidate URI: {candidate}");
+
+// Display contents of BoundVariables
+Console.WriteLine("BoundVariables:");
+foreach (string key in m1.BoundVariables.AllKeys)
+{
+    Console.WriteLine($"\t{key}={m1.BoundVariables[key]}");
+}
 // The output of the above code is  
-// Template: /{state=WA}/{city=Redmond}/  
-// Candidate URI: http://localhost:8000/OR  
-// BoundVariables:  
-//      STATE=OR  
-//       CITY=Redmond  
+// Template: /{state=WA}/{city=Redmond}/
+// Candidate URI: http://localhost:8000/OR
+// BoundVariables:
+//         STATE=OR
+//         CITY=Redmond
 ```  
   
 > [!NOTE]

@@ -15,12 +15,12 @@ ms.author: "mairaw"
 ---
 # Developer Command Prompt for Visual Studio
 
-The Developer Command Prompt for Visual Studio automatically sets the environment variables that enable you to easily use .NET Framework tools.
+The Developer Command Prompt for Visual Studio enables you to use .NET Framework tools more easily. It is a command prompt that automatically sets specific environment variables.
 
 > [!div class="button"]
 [Download Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
-## Searching for the command prompt on your machine
+## Search for the command prompt on your machine
 
 You may have multiple command prompts, depending on the version of Visual Studio and any additional SDKs you've installed. For example, 64-bit versions of Visual Studio provide both 32-bit and 64-bit command prompts. (The 32-bit and 64-bit versions of most tools are the same; however, a few tools make changes specific to 32-bit and 64-bit environments.) If the following steps don't work, you can try [Manually locating the files on your machine](#manually-locating-the-files-on-your-machine) or [Running the command prompt from inside Visual Studio](#running-command-prompt-from-inside-visual-studio).
 
@@ -34,7 +34,7 @@ You may have multiple command prompts, depending on the version of Visual Studio
 
 1. Go to the **Start** screen, by pressing the Windows logo key ![Windows logo](../get-started/media/windowskeyboardlogo.png "Windowskeyboardlogo") on your keyboard for example.
 
-2. On the **Start** screen, press `CTRL + TAB` to open the **Apps** list and then enter `V`. This brings a list that includes all installed Visual Studio command prompts.
+2. On the **Start** screen, press **Ctrl**+**Tab** to open the **Apps** list, and then enter `V`. This brings a list that includes all installed Visual Studio command prompts.
 
 3. Choose the **Developer Command Prompt** (or the command prompt you want to use).
 
@@ -60,7 +60,7 @@ If you have other SDKs installed, such as the [Windows 10 SDK](https://developer
 
 Usually, the shortcuts for the command prompts you have installed are placed at the **Start Menu** folder for Visual Studio, such as in C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools. But if for some reason, searching for the command prompt doesn't bring the expected results, you can try to manually locate the shortcut on your machine. Try searching for the name of the command prompt file, such as *VsDevCmd.bat*, or go to the Tools folder such as C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\Tools (path changes according to your Visual Studio version, edition, and installation location).
 
-## Run command prompt from inside Visual Studio
+## Run the command prompt from inside Visual Studio
 
 For easier access, you can add the Visual Studio Developer Command Prompt, or any other command prompt, to the **Tools** menu in Visual Studio. To make the tool available, add it to the external tools list. Here are the steps:
 
@@ -81,6 +81,8 @@ For easier access, you can add the Visual Studio Developer Command Prompt, or an
 8. Choose the **OK** button.
 
    The new menu item is added, and you can access the command prompt from the **Tools** menu.
+
+   ![Command prompt menu item in Visual Studio](media/command-prompt-vs-menu.png)
 
 ## See also
 

@@ -17,7 +17,7 @@ This tutorial teaches you a number of features in .NET Core and the C# language.
 
 You’ll build an application that reads a text file, and echoes the
 contents of that text file to the console. The output to the console is paced to match reading it aloud. You can speed up or slow down the pace
-by pressing the ‘<’ or ‘>’ keys.
+by pressing the ‘<’ (less than) or ‘>’ (greater than) keys.
 
 There are a lot of features in this tutorial. Let’s build them one by one.
 
@@ -273,7 +273,7 @@ have completed.
 > If you use C# 7.1 or later, you can create console applications with [`async` `Main` method](../whats-new/csharp-7-1.md#async-main).
 
 Next, you need to write the second asynchronous method to read from the
-Console and watch for the ‘<’ and ‘>’ keys. Here’s the method you add for
+Console and watch for the ‘<’ (less than) and ‘>’ (greater than) keys. Here’s the method you add for
 that task:
 
 ```csharp
@@ -300,7 +300,7 @@ private static async Task GetInput()
 
 This creates a lambda expression to represent an <xref:System.Action> delegate that reads a key
 from the Console and modifies a local variable representing the delay when
-the user presses the ‘<’ or ‘>’ keys. This method uses <xref:System.Console.ReadKey>
+the user presses the ‘<’ (less than) or ‘>’ (greater than) keys. This method uses <xref:System.Console.ReadKey>
 to block and wait for the user to press a key.
 
 To finish this feature, you need to create a new `async Task` returning
@@ -383,10 +383,10 @@ use the `config` object for the delay:
 private static async Task ShowTeleprompter(TelePrompterConfig config)
 {
     var words = ReadFrom("sampleQuotes.txt");
-    foreach (var line in words)
+    foreach (var word in words)
     {
-        Console.Write(line);
-        if (!string.IsNullOrWhiteSpace(line))
+        Console.Write(word);
+        if (!string.IsNullOrWhiteSpace(word))
         {
             await Task.Delay(config.DelayInMilliseconds);
         }

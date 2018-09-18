@@ -34,8 +34,7 @@ The following table shows the commands supported by *Mage.exe*. For more informa
 |**-s, -Sign** `[signOptions]`|Uses a key pair or X509 certificate to sign a file. Signatures are inserted as XML elements inside of the files.<br /><br /> You must be connected to the Internet when signing a manifest that specifies a **-TimestampUri** value.|
 |**-h, -?, -Help** *[verbose]*|Describes all of the available commands and their options. Specify `verbose` to get detailed help.|
 
-<a name="NewUpdate"></a>
-## New and Update Command Options
+## New and Update command options
 
 The following table shows the options supported by the `-New` and `-Update` commands:
 
@@ -64,9 +63,9 @@ The following table shows the options supported by the `-New` and `-Update` comm
 |**-v, -Version** `versionNumber`|1.0.0.0|Application manifests.<br /><br /> Deployment manifests.|The version of the deployment. The argument must be a valid version string of the format "*N.N.N.N*", where "*N*" is an unsigned 32-bit integer.|
 |**-wpf, -WPFBrowserApp**  `isWPFApp`|false|Application manifests.<br /><br /> Deployment manifests.|Use this flag only if the application is a Windows Presentation Foundation (WPF) application that will be hosted inside of Internet Explorer, and is not a stand-alone executable. Valid values are "true" or "t", and "false" or "f".<br /><br /> For application manifests, inserts the `hostInBrowser` attribute under the `entryPoint` element of the application manifest.<br /><br /> For deployment manifests, sets the `install` attribute on the `deployment` element to false, and saves the deployment manifest with a .xbap extension. Specifying this argument along with the **-Install** argument produces an error, because a browser-hosted application cannot be an installed, offline application.|
 
-<a name="Sign"></a>
-## Sign Command Options
- The following table shows the options supported by the `-Sign` command, which apply to all types of files.
+## Sign command options
+
+The following table shows the options supported by the `-Sign` command, which apply to all types of files.
 
 |Options|Description|
 |-------------|-----------------|
@@ -99,7 +98,11 @@ mage -Update c:\HelloWorldDeployment\HelloWorld.deploy -CertFile cert.pfx
 
  Application manifests also support custom trust sections. This helps your application obey the security principle of requesting least permission, as you can configure the manifest to demand only those specific permissions that the application requires in order to execute. *Mage.exe* does not directly support adding a custom trust section. You can add one using a text editor, an XML parser, or the graphical tool *MageUI.exe*. For more information about how to use *MageUI.exe* to add custom trust sections, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md).
 
- New manifests that are created with version 4 of *Mage.exe*, which is included with Visual Studio 2010, target the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]. To target earlier versions of the .NET Framework, you must use an earlier version of *Mage.exe*. When adding or removing assemblies from an existing manifest, or re-signing an existing manifest, *Mage.exe* does not update the manifest to target the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]. The following tables show these features and restrictions.
+Visual Studio 2017 includes version 4.6.1 of *Mage.exe*. Manifests created with this version of *Mage.exe* target .NET Framework 4. To target older versions of the .NET Framework, use an earlier version of *Mage.exe*.
+
+When you add or remove assemblies from an existing manifest, or re-sign an existing manifest, *Mage.exe* does not update the manifest to target .NET Framework 4.
+
+The following tables show these features and restrictions:
 
 |Manifest version|Operation|Mage v2.0|Mage v4.0|
 |----------------------|---------------|---------------|---------------|
@@ -125,7 +128,9 @@ mage -Update c:\HelloWorldDeployment\HelloWorld.deploy -CertFile cert.pfx
 ||Add an assembly|Not supported|OK|
 ||Remove an assembly|Not supported|OK|
 
- Mage.exe creates new manifests that target the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]. ClickOnce applications that target the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)] can run on both the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)] and the full version of the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]. If your application targets the full version of the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] and cannot run on the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)], remove the client `<framework>` element by using a text editor and re-sign the manifest. The following is a sample `<framework>` element that targets the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)].
+ Mage.exe creates new manifests that target the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]. ClickOnce applications that target the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)] can run on both the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)] and the full version of the .NET Framework 4. If your application targets the full version of the .NET Framework 4 and cannot run on the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)], remove the client `<framework>` element by using a text editor and re-sign the manifest.
+
+The following is a sample `<framework>` element that targets the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]:
 
 ```xml
 <framework targetVersion="4.0" profile="client" supportedRuntime="4.0.20506" />
@@ -189,7 +194,7 @@ The following example signs an existing deployment manifest using a digital cert
 mage -Sign deploy.application -CertFile cert.pfx -Password <passwd>
 ```
 
-## See Also
+## See also
 
 - [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)
 - [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)

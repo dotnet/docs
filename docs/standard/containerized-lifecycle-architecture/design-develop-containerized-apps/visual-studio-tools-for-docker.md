@@ -21,28 +21,32 @@ Docker support is included in Visual Studio 2017. Download Visual Studio 2017 he
 
 ## Use Docker Tools in Visual Studio 2017
 
-There are two levels of Docker support you can add to a project. Adding [Docker support](#add-docker-support) adds a *Dockerfile* file to the project. Adding [container orchestrator support](#add-container-orchestrator-support) adds a *Dockerfile* to the project and a *docker-compose.yml* file at the solution level. The **Add** > **Docker Support** and **Add** > **Container Orchestrator Support** commands are located on the right-click menu (or context menu) of the project node for an ASP.NET Core web app project in **Solution Explorer**:
+There are two levels of Docker support you can add to a project. In .NET Core web app projects, you can just add a *Dockerfile* file to the project by enabling Docker support. The next level is container orchestrator support, which adds a *Dockerfile* to the project (if it doesn't already exist) and a *docker-compose.yml* file at the solution level.
+
+The **Add** > **Docker Support** and **Add** > **Container Orchestrator Support** commands are located on the right-click menu (or context menu) of the project node for a web app project in **Solution Explorer**:
 
 ![Add Docker Support menu option in Visual Studio](media/add-docker-support-menu.png)
 
 ### Add Docker support
 
-You can add Docker support to an existing web app project by selecting **Add** > **Docker Support** in **Solution Explorer**, or you can enable Docker support during project creation. To enable Docker support during project creation, select **Enable Docker Support** in the **New ASP.NET Core Web Application** dialog box that opens after you click **OK** in the **New Project** dialog box.
+You can add Docker support to an existing .NET Core web app project by selecting **Add** > **Docker Support** in **Solution Explorer**. You can also enable Docker support during project creation by selecting **Enable Docker Support** in the **New ASP.NET Core Web Application** dialog box that opens after you click **OK** in the **New Project** dialog box.
 
 ![Enable Docker Support for new ASP.NET Core web app in Visual Studio](./media/enable-docker-support-visual-studio.png)
 
 When you add or enable Docker support, Visual Studio adds a *Dockerfile* file to the project.
 
+> [!NOTE]
+> When you enable Docker Compose support during project creation for a .NET Framework web app project (not a .NET Core web app project), container orchestrator support is also added.
+>
+> ![Enable Docker compose support for a .NET Framework web app project](media/enable-docker-compose-support.png)
+
 ### Add container orchestrator support
 
-Add container orchestrator support to compose a multicontainer solution. When you add container orchestrator support, Visual Studio not only adds a *Dockerfile* to the project, but also a global *docker-compose.yml* file at the solution level. This lets you run and debug a group of containers (a whole solution) at the same time if they're defined in the same *docker-compose.yml* file. If *docker-compose.yml* already exists, Visual Studio adds the required lines of configuration code to it.
+When you want to compose a multicontainer solution, add container orchestrator support to your projects. When you add container orchestrator support, Visual Studio adds a *Dockerfile* to the project (if it doesn't already exist) and a global *docker-compose.yml* file at the solution level. This lets you run and debug a group of containers (a whole solution) at the same time if they're defined in the same *docker-compose.yml* file. If *docker-compose.yml* already exists, Visual Studio just adds the required lines of configuration code to it.
 
 After you add container orchestration support to your project, you see the following new project and files in **Solution Explorer**:
 
 ![Docker files in Solution Explorer in Visual Studio](media/docker-support-solution-explorer.png)
-
-> [!NOTE]
-> The **Add** > **Container Orchestrator Support** menu item is available in Visual Studio 2017 version 15.8 and later. In prior versions of Visual Studio, adding Docker support to a project also added a *docker-compose.yml* file at the solution level.
 
 >[!div class="step-by-step"]
 [Previous](docker-apps-inner-loop-workflow.md)

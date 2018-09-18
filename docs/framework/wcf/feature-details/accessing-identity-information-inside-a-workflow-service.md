@@ -4,9 +4,9 @@ ms.date: "03/30/2017"
 ms.assetid: 0b832127-b35b-468e-a45f-321381170cbc
 ---
 # Accessing Identity Information inside a Workflow Service
-To access identity information inside a workflow service, you must implement the <xref:System.ServiceModel.Activities.IReceiveMessageCallback> interface in a custom execution property. In the <xref:System.ServiceModel.Activities.IReceiveMessageCallback.OnReceiveMessage(System.ServiceModel.OperationContext,System.Activities.ExecutionProperties)> method you can access the <xref:System.ServiceModel.OperationContext.ServiceSecurityContext> to access identity information. This topic will walk you through implementing this execution property, as well as a custom activity that will surface this property to the <xref:System.ServiceModel.Activities.Receive> activity at runtime.  The custom activity will implement the same behavior as a <!--zz <xref:System.ServiceModel.Activities.Sequence>--> `System.ServiceModel.Activities.Sequence` activity, except that when a <xref:System.ServiceModel.Activities.Receive> is placed inside of it, the <xref:System.ServiceModel.Activities.IReceiveMessageCallback> will be called and the identity information will be retrieved.  
+To access identity information inside a workflow service, you must implement the <xref:System.ServiceModel.Activities.IReceiveMessageCallback> interface in a custom execution property. In the <xref:System.ServiceModel.Activities.IReceiveMessageCallback.OnReceiveMessage(System.ServiceModel.OperationContext,System.Activities.ExecutionProperties)> method you can access the <xref:System.ServiceModel.OperationContext.ServiceSecurityContext> to access identity information. This topic will walk you through implementing this execution property, as well as a custom activity that will surface this property to the <xref:System.ServiceModel.Activities.Receive> activity at runtime. The custom activity will implement the same behavior as a <!--zz <xref:System.ServiceModel.Activities.Sequence>--> `System.ServiceModel.Activities.Sequence` activity, except that when a <xref:System.ServiceModel.Activities.Receive> is placed inside of it, the <xref:System.ServiceModel.Activities.IReceiveMessageCallback> will be called and the identity information will be retrieved.  
   
-### Implement IReceiveMessageCallback  
+## Implement IReceiveMessageCallback  
   
 1.  Create an empty [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] solution.  
   
@@ -44,7 +44,7 @@ To access identity information inside a workflow service, you must implement the
   
      This code uses the <xref:System.ServiceModel.OperationContext> passed into the method to access identity information.  
   
-### Implement a Native activity to add the IReceiveMessageCallback implementation to the NativeActivityContext  
+## Implement a Native activity to add the IReceiveMessageCallback implementation to the NativeActivityContext  
   
 1.  Add a new class derived from <xref:System.Activities.NativeActivity> called `AccessIdentityScope`.  
   
@@ -133,7 +133,7 @@ To access identity information inside a workflow service, you must implement the
     }  
     ```  
   
-### Implement the workflow service  
+## Implement the workflow service  
   
 1.  Open the existing `Program` class.  
   
@@ -207,7 +207,7 @@ To access identity information inside a workflow service, you must implement the
     }  
     ```  
   
-### Implement a workflow client  
+## Implement a workflow client  
   
 1.  Create a new console application project called `Client`.  
   

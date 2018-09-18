@@ -47,11 +47,11 @@ public interface IFinancesContract : IDisposable
   
  Typical modifications would include:  
   
--   Changing the endpoint address from the default ApplicationName/ComponentName/InterfaceName form to a more usable form.  
+- Changing the endpoint address from the default ApplicationName/ComponentName/InterfaceName form to a more usable form.  
   
--   Modifying the namespace of the service from the default "http://tempuri.org/InterfaceID" form to a more relevant form.  
+- Modifying the namespace of the service from the default `http://tempuri.org/InterfaceID` form to a more relevant form.  
   
--   Changing the endpoint to use a different transport binding.  
+- Changing the endpoint to use a different transport binding.  
   
      In the COM+-hosted case, the named pipes transport is used by default, but an off-machine transport like TCP can be used instead.  
   

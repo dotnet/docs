@@ -79,7 +79,7 @@ Web developers require the ability to describe the shape and layout of the URIs 
   
 - "shoe/{boat}"  
   
-- "shoe/{boat}/*"  
+- "shoe/{boat}/\*"  
   
 - "shoe/boat?x=2"  
   

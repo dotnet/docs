@@ -17,7 +17,7 @@ Developing and deploying a Windows Communication Foundation (WCF) service that i
 
 - Configure the WCF service.
 
-For a detailed walkthrough of creating an IIS-hosted WCF service, see [How to: Host a WCF Service in IIS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md).
+For a detailed walkthrough of creating an IIS-hosted WCF service, see [How to: Host a WCF Service in IIS](how-to-host-a-wcf-service-in-iis.md).
 
 ## Ensure That IIS, ASP.NET and WCF Are Correctly Installed and Registered
 
@@ -35,7 +35,7 @@ The installation process for .NET Framework automatically registers WCF with IIS
 
 ## Create a New IIS Application or Reuse an Existing ASP.NET Application
 
-IIS-hosted WCF services must reside inside of an IIS application. You can create a new IIS application to host WCF services exclusively. Alternatively, you can deploy an WCF service into an existing application that is already hosting [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] content (such as .aspx pages and ASP.NET Web services [ASMX]). For more information about these options, see the "Hosting WCF Side-by-Side with ASP.NET" and "Hosting WCF Services in ASP.NET Compatibility Mode" sections in [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md).
+IIS-hosted WCF services must reside inside of an IIS application. You can create a new IIS application to host WCF services exclusively. Alternatively, you can deploy an WCF service into an existing application that is already hosting [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] content (such as .aspx pages and ASP.NET Web services [ASMX]). For more information about these options, see the "Hosting WCF Side-by-Side with ASP.NET" and "Hosting WCF Services in ASP.NET Compatibility Mode" sections in [WCF Services and ASP.NET](wcf-services-and-aspnet.md).
 
 Note that [!INCLUDE[iis601](../../../../includes/iis601-md.md)] and later versions periodically restart an isolated object-oriented programming application. The default value is 1740 minutes. The maximum value supported is 71,582 minutes. This restart can be disabled. For more information about this property, see the [PeriodicRestartTime](https://go.microsoft.com/fwlink/?LinkId=109968).
 
@@ -79,7 +79,7 @@ IIS-hosted WCF services store their configuration in the applications Web.config
 
 ### Endpoint Addresses for IIS-Hosted Services
 
-When hosted in IIS, endpoint addresses are always considered to be relative to the address of the .svc file that represents the service. For example, if the base address of a WCF service is `http://localhost/Application1/MyService.svc` with the following endpoint configuration.
+When hosted in IIS, endpoint addresses are always considered to be relative to the address of the .svc file that represents the service. For example, if the base address of a WCF service is `http://localhost/Application1/MyService.svc` with the following endpoint configuration:
 
 ```xml
 <endpoint address="anotherEndpoint" .../>

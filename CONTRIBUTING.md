@@ -92,7 +92,7 @@ We make the following distinction for code that exists in our repository:
 Code all lives in the [dotnet/samples](https://github.com/dotnet/samples) repository. We are working toward a model where our samples folder structure matches our docs folder structure. Standards that we follow are:
 
 - The top level *snippets* folder contains snippets for small, focused samples.
-- API reference samples have been in a folder following this pattern: *snippets/<language>/api/<namespace>/<apiname>*.
+- API reference samples have been in a folder following this pattern: *snippets/\<language>/api/\<namespace>/\<apiname>*.
 - Other top-level folders match the top level folders in the *docs* repository. For example, the docs repository has a *machine-learning/tutorials* folder, and the samples for machine learning tutorials are in the *samples/machine-learning/tutorials* folder.
 
 In addition, all samples under the *core* and *standard* folders should build and run on all platforms supported by .NET Core. Our CI build system will enforce that. The top level *framework* folder contains samples that are only built and validated on Windows.

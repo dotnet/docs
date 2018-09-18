@@ -10,7 +10,7 @@ When configuring the Routing Service, it is important to select correct message 
  When selecting the filters that are used by the Routing Service, it is important that you understand how each filter works as well as what information is available as part of the incoming messages. For instance, if all messages are received over the same endpoint, the Address and EndpointName filters are not useful because all messages match these filters.  
   
 ### Action  
- The Action filter inspects the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property. If the contents of the Action header in the message match the filter data value specified in the filter configuration, then this filter returns `true`. The following example defines a `FilterElement` that uses the Action filter to match messages with an action header that contains a value of "http://namespace/contract/operation/".  
+ The Action filter inspects the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property. If the contents of the Action header in the message match the filter data value specified in the filter configuration, then this filter returns `true`. The following example defines a `FilterElement` that uses the Action filter to match messages with an action header that contains a value of `http://namespace/contract/operation/`.
   
 ```xml  
 <filter name="action1" filterType="Action" filterData="http://namespace/contract/operation/" />  
@@ -41,7 +41,7 @@ EndpointAddressMessageFilter address1 = new EndpointAddressMessageFilter(new End
  This filter should be used when the incoming messages are addressed to a unique address.  
   
 ### EndpointAddressPrefix  
- The EndpointAddressPrefix filter is similar to the EndpointAddress filter. The EndpointAddressPrefix filter inspects the EndpointAddress that the message was received on. However the EndpointAddressPrefix filter acts as a wildcard by matching addresses that begin with the value specified in the filter configuration. The following example defines a `FilterElement` that uses the EndpointAddressPrefix filter to match any messages addressed to "http://\<hostname>/vdir*".  
+ The EndpointAddressPrefix filter is similar to the EndpointAddress filter. The EndpointAddressPrefix filter inspects the EndpointAddress that the message was received on. However the EndpointAddressPrefix filter acts as a wildcard by matching addresses that begin with the value specified in the filter configuration. The following example defines a `FilterElement` that uses the EndpointAddressPrefix filter to match any messages addressed to `http://<hostname>/vdir*`.  
   
 ```xml  
 <filter name="prefix1" filterType="EndpointAddressPrefix" filterData="http://host/vdir" />  

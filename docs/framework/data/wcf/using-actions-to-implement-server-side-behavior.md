@@ -4,7 +4,8 @@ ms.date: "03/30/2017"
 ms.assetid: 11a372db-7168-498b-80d2-9419ff557ba5
 ---
 # Using actions to implement server-side behavior
-OData Actions provide a way to implement a behavior that acts upon a resource retrieved from an OData service.  For example consider a digital movie as a resource, there are many things you may do with a digital movie: check-out, rate/comment, or check-in. These are all examples of Actions that may be implemented by a WCF Data Service that manages digital movies. Actions are described in an OData response that contains a resource on which the Action can be invoked. When a user requests a resource that represents a digital movie the response returned from the WCF Data Service contains information about the Actions that are available for that resource. The availability of an Action can depend on the state of the data service or resource. For example once a digital movie is checked out it cannot be checked out by another user. Clients can invoke an action simply by specifying a URL. For example http://MyServer/MovieService.svc/Movies(6) would identify a specific digital movie and http://MyServer/MovieService.svc/Movies(6)/Checkout would invoke the action on the specific movie. Actions allow you to expose you service model without exposing your data model. Continuing with the movie service example, you may wish to allow a user to rate a movie, but not directly expose the rating data as a resource. You could implement a Rate Action to allow the user to rate a movie but not directly access the rating data as a resource.  
+
+OData Actions provide a way to implement a behavior that acts upon a resource retrieved from an OData service. For example consider a digital movie as a resource, there are many things you may do with a digital movie: check-out, rate/comment, or check-in. These are all examples of Actions that may be implemented by a WCF Data Service that manages digital movies. Actions are described in an OData response that contains a resource on which the Action can be invoked. When a user requests a resource that represents a digital movie the response returned from the WCF Data Service contains information about the Actions that are available for that resource. The availability of an Action can depend on the state of the data service or resource. For example once a digital movie is checked out it cannot be checked out by another user. Clients can invoke an action simply by specifying a URL. For example, `http://MyServer/MovieService.svc/Movies(6)` would identify a specific digital movie and `http://MyServer/MovieService.svc/Movies(6)/Checkout` would invoke the action on the specific movie. Actions allow you to expose you service model without exposing your data model. Continuing with the movie service example, you may wish to allow a user to rate a movie, but not directly expose the rating data as a resource. You could implement a Rate Action to allow the user to rate a movie but not directly access the rating data as a resource.
   
 ## Implementing an action  
  To implement a service action you must implement the <xref:System.IServiceProvider>, [IDataServiceActionProvider](https://msdn.microsoft.com/library/system.data.services.providers.idataserviceactionprovider(v=vs.113).aspx), and [IDataServiceInvokable](https://msdn.microsoft.com/library/system.data.services.providers.idataserviceinvokable(v=vs.113).aspx) interfaces. <xref:System.IServiceProvider> allows WCF Data Services to get your implementation of [IDataServiceActionProvider](https://msdn.microsoft.com/library/system.data.services.providers.idataserviceactionprovider(v=vs.113).aspx). [IDataServiceActionProvider](https://msdn.microsoft.com/library/system.data.services.providers.idataserviceactionprovider(v=vs.113).aspx) allows WCF Data Services to create, find, describe and invoke service actions. [IDataServiceInvokable](https://msdn.microsoft.com/library/system.data.services.providers.idataserviceinvokable(v=vs.113).aspx) allows you to invoke the code that implements the service actions’ behavior and get the results, if any. Keep in mind that WCF Data Services are Per-Call WCF Services, a new instance of the service will be created each time the service is called.  Make sure no unnecessary work is done when the service is created.  
@@ -46,7 +47,7 @@ OData Actions provide a way to implement a behavior that acts upon a resource re
 ## Invoking a WCF Data Service Action  
  Actions are invoked using an HTTP POST request. The URL specifies the resource followed by the action name. Parameters are passed in the body of the request. For example if there was a service called MovieService which exposed an action called Rate. You could use the following URL to invoke the Rate action on a specific movie:  
   
- http://MovieServer/MovieService.svc/Movies(1)/Rate  
+ `http://MovieServer/MovieService.svc/Movies(1)/Rate`
   
  Movies(1) specifies the movie you wish to rate and Rate specifies the Rate action. The actual value of the rating will be in the body of the HTTP request as shown in the following example:  
   
@@ -61,15 +62,15 @@ Host: localhost:15238
 ```  
   
 > [!WARNING]
->  The above sample code will work only with WCF Data Services 5.2 and later which has support for JSON light. If using an earlier version of WCF Data Services, you must specify the json verbose content-type as follows: `application/json;odata=verbose`.  
+> The above sample code will work only with WCF Data Services 5.2 and later which has support for JSON light. If using an earlier version of WCF Data Services, you must specify the json verbose content-type as follows: `application/json;odata=verbose`.  
   
  Alternatively you can invoke an action using the WCF Data Services Client as shown in the following code snippet.  
   
-```  
+```csharp
 MoviesModel context = new MoviesModel (new Uri("http://MyServer/MoviesService.svc/"));  
-            //...  
-            context.Execute(new Uri("http://MyServer/MoviesService.svc/Movies(1)/Rate"), "POST", new BodyOperationParameter("rating",4) );           
-```  
+//...  
+context.Execute(new Uri("http://MyServer/MoviesService.svc/Movies(1)/Rate"), "POST", new BodyOperationParameter("rating",4) );
+```
   
  In the code snippet above, the `MoviesModel` class was generated by using Visual Studio to Add Service Reference to a WCF Data Service.  
   

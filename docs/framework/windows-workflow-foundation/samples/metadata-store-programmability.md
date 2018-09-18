@@ -6,7 +6,7 @@ ms.assetid: 5b613661-f3f9-4e07-8e88-28c9ea2fd8f8
 # Metadata Store Programmability
 The metadata store is a [!INCLUDE[wfd1](../../../../includes/wfd1-md.md)] feature that allows for the association of arbitrary metadata, in the form of CLR attributes, to types at runtime. This allows for a loose coupling between the run-time components and their design-time counterparts, as well as the ability to change the design-time components without affecting the runtime. The sample shows how to program against the metadata store by applying attributes to a run-time type, the source for which we have no control over. The terminology typically used is that a hosting application registers the metadata for a set of types.  
   
- Within the output, you may notice an additional, unexpected attribute, <!--zz <xref:System.Runtime.InteropServices.GUIDAttribute> --> `System.Runtime.InteropServices.GUIDAttribute`. This is added when using the Metadata API and has no impact on the running of the sample.  
+ Within the output, you may notice an additional, unexpected attribute, <xref:System.Runtime.InteropServices.GuidAttribute>. This is added when using the Metadata API and has no impact on the running of the sample.  
   
  This sample demonstrates:  
   
@@ -16,7 +16,7 @@ The metadata store is a [!INCLUDE[wfd1](../../../../includes/wfd1-md.md)] featur
   
 -   Using a callback mechanism to defer metadata registration.  
   
-#### To set up, build, and run the sample  
+## To set up, build, and run the sample
   
 1.  Using [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)], open the ProgrammingMetadataStore.sln solution file.  
   

@@ -74,7 +74,8 @@ IIS-hosted WCF services store their configuration in the applications Web.config
 - Applications hosting WCF services outside of IIS can control the base address of the services they host by passing a set of base address URIs to the <xref:System.ServiceModel.ServiceHost> constructor or by providing a [\<host>](../../../../docs/framework/configure-apps/file-schema/wcf/host.md) element in the service’s configuration. Services hosted in IIS do not have the ability to control their base address; the base address of an IIS-hosted service is the address of its .svc file.
 
 ### Endpoint Addresses for IIS-Hosted Services
- When hosted in IIS, endpoint addresses are always considered to be relative to the address of the .svc file that represents the service. For example, if the base address of a WCF service is http://localhost/Application1/MyService.svc with the following endpoint configuration.
+
+When hosted in IIS, endpoint addresses are always considered to be relative to the address of the .svc file that represents the service. For example, if the base address of a WCF service is `http://localhost/Application1/MyService.svc` with the following endpoint configuration.
 
 ```xml
 <endpoint address="anotherEndpoint" .../>
@@ -82,7 +83,7 @@ IIS-hosted WCF services store their configuration in the applications Web.config
 
 This provides an endpoint that can be reached at `http://localhost/Application1/MyService.svc/anotherEndpoint`.
 
- Similarly, the endpoint configuration element that uses an empty string as the relative address provides an endpoint reachable at http://localhost/Application1/MyService.svc, which is the base address.
+Similarly, the endpoint configuration element that uses an empty string as the relative address provides an endpoint reachable at `http://localhost/Application1/MyService.svc`, which is the base address.
 
 ```xml
 <endpoint address="" ... />

@@ -59,7 +59,7 @@
 
 ### Sorting and string comparison in .NET Core
 
-All versions of .NET Core support a single version of the Unicode Standard, [The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/). [International Components for Unicode](http://site.icu-project.org/) libraries provide the implementation for comparison and sorting APIs.
+All versions of .NET Core rely on the underlying operating system when performing string comparisons. Therefore, the results of a string comparison or the order in which strings are sorted depends on the version of Unicode used by the operating system when performing the comparison. On Linux and macOS, [International Components for Unicode](http://site.icu-project.org/) libraries provide the implementation for comparison and sorting APIs.
 
 ### Using the SortVersion class
 

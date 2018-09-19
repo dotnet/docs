@@ -134,7 +134,7 @@
      [!code-vb[System.String.Class#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Class/vb/surrogate1.vb#3)]  
   
 <a name="Unicode"></a>   
-## Strings and The Unicode Standard  
+## Strings and the Unicode Standard  
  Characters in a string are represented by UTF-16 encoded code units, which correspond to <xref:System.Char> values.  
   
  Each character in a string has an associated Unicode character category, which is represented in .NET by the <xref:System.Globalization.UnicodeCategory> enumeration. The category of a character or a surrogate pair can be determined by calling the <xref:System.Globalization.CharUnicodeInfo.GetUnicodeCategory%2A?displayProperty=nameWithType> method.  
@@ -151,7 +151,7 @@
 |[!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]|[The Unicode Standard, Version 5.0.0](https://www.unicode.org/versions/Unicode5.0.0)|  
 |[!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later on Windows 7|[The Unicode Standard, Version 5.0.0](https://www.unicode.org/versions/Unicode5.0.0)|  
 |[!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later on Windows 8 and later Windows operating systems|[The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/)|  
-|.NET Core (all versions)|[The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/).|
+|.NET Core (all versions)|Depends on the version of hte Unicode Standard supported by the underlying operating system.|
 
 <a name="EmbeddedNulls"></a>   
 ## Strings and embedded null characters  
@@ -346,7 +346,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
 -   For a comparison that involves a security decision (such as whether a username is valid), you should always perform an ordinal test for equality by calling an overload of the <xref:System.String.Equals%2A> method.  
   
 > [!NOTE]
->  The culture-sensitive sorting and casing rules used in string comparison depend on the version of the .NET. In the .NET Framework 4.5 and later versions running on the [!INCLUDE[win8](~/includes/win8-md.md)] operating system, sorting, casing, normalization, and Unicode character information conforms to the Unicode 6.0 standard. On other Windows operating systems, it conforms to the Unicode 5.0 standard. On .NET Core, it conforms to the Unicode 8.0 standard. 
+>  The culture-sensitive sorting and casing rules used in string comparison depend on the version of the .NET. In the .NET Framework 4.5 and later versions running on the [!INCLUDE[win8](~/includes/win8-md.md)] operating system, sorting, casing, normalization, and Unicode character information conforms to the Unicode 6.0 standard. On other Windows operating systems, it conforms to the Unicode 5.0 standard. On .NET Core, it depends on the version of the Unicode Standard supported by the underlying operating system. 
   
  For more information about word, string, and ordinal sort rules, see the <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> topic. For additional recommendations on when to use each rule, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
   

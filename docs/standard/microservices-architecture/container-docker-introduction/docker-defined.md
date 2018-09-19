@@ -60,15 +60,15 @@ At some point, you realize the letters are just a composition of a large set of 
 
 The system is simple:
 
-1. You begin with a deck of transparent sheets containing one paragraph each
+1. You begin with a deck of transparent sheets containing one paragraph each.
 
-2. To issue a set of letters, you pick the sheets with the paragraphs you need, then you stack and align them so they look and read fine and
+2. To issue a set of letters, you pick the sheets with the paragraphs you need, then you stack and align them so they look and read fine.
 
 3. Finally, you place the set in the photocopier and press start to produce as many letters as required.
 
 So, simplifying, that's the core idea of Docker.
 
-In Docker, each layer is the resulting set of changes that happen to the filesystem after executing a command, for example, installing a program.
+In Docker, each layer is the resulting set of changes that happen to the filesystem after executing a command, such as, installing a program.
 
 So, when you "look" at the filesystem after the layer has been copied, you see all the files, included the layer when the program was installed.
 

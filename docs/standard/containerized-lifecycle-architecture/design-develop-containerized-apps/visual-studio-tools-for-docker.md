@@ -5,7 +5,7 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/05/2018
 ---
-# Use Visual Studio Tools for Docker
+# Using Visual Studio Tools for Docker (Visual Studio on Windows)
 
 The Visual Studio Tools for Docker developer workflow is similar to using Visual Studio Code and Docker CLI (it is based on the same Docker CLI). Visual Studio Tools for Docker makes it even easier to get started, simplifies the process, and provides greater productivity for the build, run, and compose tasks. Execute and debug your containers via simple actions like **F5** and **Ctrl**+**F5**.
 
@@ -47,12 +47,12 @@ After you add container orchestration support to your project, you see the follo
 
 ![Docker files in Solution Explorer in Visual Studio](media/docker-support-solution-explorer.png)
 
+**More info:** For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:
+
+Build, debug, update, and refresh apps in a local Docker container: [https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh/](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)
+
+Deploy an ASP.NET Core Docker container to a container registry: [https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker/](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
+
 >[!div class="step-by-step"]
 [Previous](docker-apps-inner-loop-workflow.md)
 [Next](set-up-windows-containers-with-powershell.md)
-
-## See also
-
-- [Visual Studio Tools for Docker with ASP.NET Core](/aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker)
-- [Deploy an ASP.NET container to a container registry using Visual Studio](/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
-- [Debugging apps in a local Docker container](/azure/vs-azure-tools-docker-edit-and-refresh)

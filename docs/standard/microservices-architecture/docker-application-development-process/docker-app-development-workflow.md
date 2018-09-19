@@ -53,8 +53,13 @@ You can start coding your application in plain .NET (usually in .NET Core if you
 
 ### Additional resources
 
-- Get started with Docker CE for Windows - [https://docs.docker.com/docker-for-windows/](https://docs.docker.com/docker-for-windows/)
-- Download Visual Studio 2017 - [https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+- **Get started with Docker CE for Windows**
+
+   [*https://docs.docker.com/docker-for-windows/*](https://docs.docker.com/docker-for-windows/)
+
+- **Visual Studio 2017**
+
+   [*https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs*](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
 
 ![Step 2 - Write Dockerfiles graphic](./media/image4.png)
 
@@ -110,8 +115,13 @@ You can specify additional configuration settings in the Dockerfile, depending o
 
 ### Additional resources
 
-- [Building Docker Images for .NET Core Applications](../../../core/docker/building-net-docker-images.md)
-- Build your own image - [https://docs.docker.com/engine/tutorials/dockerimages/](https://docs.docker.com/engine/tutorials/dockerimages/)
+- **Building Docker Images for .NET Core Applications**
+
+   [*https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images*](../../../core/docker/building-net-docker-images.md)
+
+- **Build your own image**. In the official Docker documentation.
+
+   [*https://docs.docker.com/engine/tutorials/dockerimages/*](https://docs.docker.com/engine/tutorials/dockerimages/)
 
 ### Using multi-arch image repositories
 
@@ -141,8 +151,13 @@ You can create your own Docker base image from scratch. This scenario is not rec
 
 ### Additional resources
 
-- Multi-arch .NET Core images - [https://github.com/dotnet/announcements/issues/14](https://github.com/dotnet/announcements/issues/14)
-- Create a base image - [https://docs.docker.com/engine/userguide/eng-image/baseimages/](https://docs.docker.com/engine/userguide/eng-image/baseimages/)
+- **Multi-arch .NET Core images**.
+
+   https://github.com/dotnet/announcements/issues/14
+
+- **Create a base image**. Official Docker documentation.
+
+   [*https://docs.docker.com/engine/userguide/eng-image/baseimages/*](https://docs.docker.com/engine/userguide/eng-image/baseimages/)
 
 ![Step 3 - Create images graphic](./media/image7.png)
 
@@ -306,7 +321,9 @@ The important point here is that in Visual Studio 2017 there's an additional **D
 
 ### Additional resources
 
-- Deploy an ASP.NET container to a remote Docker host - [https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker](/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
+-  **Deploy an ASP.NET container to a remote Docker host**
+
+   [*https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker*](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
 
 ### A note about testing and deploying with orchestrators
 
@@ -340,8 +357,13 @@ If you are developing using the editor/CLI approach, debugging containers is mor
 
 ### Additional resources
 
-- Debugging apps in a local Docker container - [https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)
-- Steve Lasker - Build, Debug, Deploy ASP.NET Core Apps with Docker (Video) - [https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115)
+- **Debugging apps in a local Docker container**
+
+   [*https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh*](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)
+
+- **Steve Lasker. Build, Debug, Deploy ASP.NET Core Apps with Docker.** Video.
+
+   [*https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115*](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115)
 
 ## Simplified workflow when developing containers with Visual Studio
 
@@ -353,8 +375,13 @@ In addition, you need to perform step 2 (adding Docker support to your projects)
 
 ### Additional resources
 
-- Steve Lasker - .NET Docker Development with Visual Studio 2017 - [https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111)
-- Jeffrey T. Fritz - Put a .NET Core App in a Container with the new Docker Tools for Visual Studio - [https://blogs.msdn.microsoft.com/webdev/2016/11/16/new-docker-tools-for-visual-studio/](https://blogs.msdn.microsoft.com/webdev/2016/11/16/new-docker-tools-for-visual-studio/)
+- **Steve Lasker. .NET Docker Development with Visual Studio 2017**
+
+   [*https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111*](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111)
+
+- **Jeffrey T. Fritz. Put a .NET Core App in a Container with the new Docker Tools for Visual Studio**
+
+   [*https://blogs.msdn.microsoft.com/webdev/2016/11/16/new-docker-tools-for-visual-studio/*](https://blogs.msdn.microsoft.com/webdev/2016/11/16/new-docker-tools-for-visual-studio/)
 
 ## Using PowerShell commands in a Dockerfile to set up Windows Containers
 
@@ -378,7 +405,9 @@ RUN powershell add-windowsfeature web-asp-net45
 
 ### Additional resources
 
-- Example Powershell commands to run from dockerfiles to include Windows features - aspnet-docker/Dockerfile [https://github.com/Microsoft/aspnet-docker/blob/master/4.6.2/Dockerfile](https://github.com/Microsoft/aspnet-docker/blob/master/4.6.2/Dockerfile)
+- **aspnet-docker/Dockerfile.** Example Powershell commands to run from dockerfiles to include Windows features.
+
+   [*https://github.com/Microsoft/aspnet-docker/blob/master/4.6.2/Dockerfile*](https://github.com/Microsoft/aspnet-docker/blob/master/4.6.2/Dockerfile)
 
 >[!div class="step-by-step"]
 [Previous](index.md)

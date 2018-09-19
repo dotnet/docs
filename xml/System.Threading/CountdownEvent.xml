@@ -645,7 +645,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
         <exception cref="T:System.InvalidOperationException">
-          <see cref="P:System.Threading.CountdownEvent.CurrentCount" /> is equal to <see cref="F:System.Int32.MaxValue" />.</exception>
+          <see cref="P:System.Threading.CountdownEvent.CurrentCount" /> is equal to <see cref="F:System.Int32.MaxValue" />.
+        </exception>
         <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </Member>
@@ -687,11 +688,9 @@
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="signalCount" /> is less than or equal to 0.</exception>
-        <exception cref="T:System.InvalidOperationException">The current instance is already set.  
-  
- -or-  
-  
- <see cref="P:System.Threading.CountdownEvent.CurrentCount" /> + <paramref name="signalCount" /> is equal to or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Threading.CountdownEvent.CurrentCount" /> + <paramref name="signalCount" /> is equal to or greater than <see cref="F:System.Int32.MaxValue" />.
+        </exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="Wait">

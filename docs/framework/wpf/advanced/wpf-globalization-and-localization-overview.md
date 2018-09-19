@@ -131,7 +131,7 @@ When you limit your product's availability to only one language, you limit your 
   
  Note that of the example uses the shared-sizing feature of <xref:System.Windows.Controls.Grid>. The last three columns take advantage of this by placing themselves in the same <xref:System.Windows.Controls.DefinitionBase.SharedSizeGroup%2A>. As one would expect from the name of the property, this allows the columns to share the same size. So when the "Browse…" gets localized to the longer string "Durchsuchen…", all buttons grow in width instead of having a small "OK" button and a disproportionately large "Durchsuchen…" button.  
   
- **`xml:lang`**
+ **Xml:lang**
   
  `Xml:lang="en-US"`  
   

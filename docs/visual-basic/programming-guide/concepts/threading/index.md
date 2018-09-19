@@ -31,5 +31,4 @@ Threading enables your Visual Basic program to perform concurrent processing so 
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Thread Synchronization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/thread-synchronization.md)|Describes how to control the interactions of threads.|  
 |[Threading](../../../../standard/threading/index.md)|Describes how to implement threading in the .NET Framework.|

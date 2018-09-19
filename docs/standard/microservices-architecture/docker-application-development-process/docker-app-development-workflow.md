@@ -87,9 +87,11 @@ You can also enable Docker support on an existing .NET Core web app project by r
 
 This action adds a *Dockerfile* to the project with the required configuration, and is only available on .NET Core web app projects.
 
-To add a *docker-compose.yml* file for the whole solution, right-click on the project in **Solution Explorer** and select **Add** > **Container Orchestrator Support**.
+To add a *docker-compose.yml* file for the whole solution, right-click on the project in **Solution Explorer** and select **Add** > **Container Orchestrator Support**, as shown in Figure 5-5.
 
 ![Add container orchestrator support menu option in Visual Studio](./media/add-container-orchestrator-support.png)
+
+**Figure 5-5**. Adding container orchestrator support to an existing project in Visual Studio 2017.
 
 In the following sections, we describe the information that goes into each of those files. Visual Studio can do this work for you, but it is useful to understand what goes into a Dockerfile.
 

@@ -30,7 +30,7 @@ SDK commands include `dotnet new` and `dotnet run`. The `dotnet` CLI must choose
 * The project targets an earlier version.
 * The latest version is a preview version.
 
-Apps can take advantage of the latest SDK features and improvements while targeting earlier .NET Core runtime versions. Apps can target multiple runtime versions of .NET Core on different projects, using the same SDK tools for all projects.
+Apps can take advantage of the latest SDK features and improvements while targeting earlier .NET Core runtime versions. You can target multiple runtime versions of .NET Core on different projects, using the same SDK tools for all projects.
 
 On rare occasions, you may need to use an earlier version of the SDK. You specify that version in a [*global.json* file](../tools/global-json.md). The "use latest" policy means you only use *global.json* to specify a .NET Core SDK version earlier than the latest installed version.
 

@@ -794,7 +794,7 @@
       </Parameters>
       <Docs>
         <param name="claimsIdentity">The claims identity object containing the desired UPN claim.</param>
-        <summary>Finds the UPN claim value in the specified <see cref="T:System.Security.Claims.ClaimsIdentity" /> object for the purpose of mapping the identity to a <see cref="T:System.Security.Claims.WindowsClaimsIdentity" /> object.</summary>
+        <summary>Finds the UPN claim value in the specified <see cref="T:System.Security.Claims.ClaimsIdentity" /> object for the purpose of mapping the identity to a <see cref="T:System.Security.Principal.WindowsIdentity" /> object.</summary>
         <returns>A string that contains the UPN claim value found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2114,13 +2114,7 @@
  <paramref name="assertion" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The assertion specified by <paramref name="assertion" /> has both the <see cref="T:System.IdentityModel.Tokens.EncryptingCredentials" /> and <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReceivedEncryptingCredentials" /> properties set to <see langword="null" />.  
   
- -or-  
-  
- There are no statements and no subject in the assertion specified by <paramref name="data" />. (Both the <see cref="P:System.IdentityModel.Tokens.SamlAssertion.Subject" /> property and the <see cref="P:System.IdentityModel.Tokens.SamlAssertion.Statements" /> property are <see langword="null" />.) If an assertion does not contain statements, it must contain a subject.  
-  
- -or-  
-  
- The assertion specified by <paramref name="assertion" /> contains an authentication, attribute, or authorization decision statement and no subject—these statements require a subject. (The <see cref="P:System.IdentityModel.Tokens.SamlAssertion.Statements" /> property contains a statement of type <see cref="T:System.IdentityModel.Tokens.SamlAttributeStatement" />, <see cref="T:System.IdentityModel.Tokens.SamlAuthenticationStatement" />, or <see cref="T:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement" /> and the <see cref="P:System.IdentityModel.Tokens.SamlAssertion.Subject" /> property is <see langword="null" />).</exception>
+ </exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The token encrypting credentials do not have a Symmetric Key specified.</exception>
       </Docs>
     </Member>

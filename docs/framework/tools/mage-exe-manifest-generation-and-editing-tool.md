@@ -24,7 +24,7 @@ Mage [commands] [commandOptions]
 
 ### Parameters
 
-The following table shows the commands supported by *Mage.exe*. For more information about the options supported by these commands, see [New and Update Command Options](#NewUpdate) and [Sign Command Options](#Sign).
+The following table shows the commands supported by *Mage.exe*. For more information about the options supported by these commands, see [New and Update command options](#new-and-update-command-options) and [Sign command options](#sign-command-options).
 
 |Command|Description|
 |-------------|-----------------|

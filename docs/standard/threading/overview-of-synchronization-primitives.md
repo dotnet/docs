@@ -71,7 +71,7 @@ The <xref:System.Threading.SpinLock?displayProperty=nameWithType> struct, like <
 
 For more information about benefits and drawbacks of using spin lock, see the [SpinLock](spinlock.md) article and the <xref:System.Threading.SpinLock> API reference.
 
-### ReaderWriterLockSlim Class
+### ReaderWriterLockSlim class
 
 Use the <xref:System.Threading.ReaderWriterLockSlim?displayProperty=nameWithType> class to grant exclusive access to a shared resource for writing. Multiple threads can access the resource simultaneously for reading. You might want to use <xref:System.Threading.ReaderWriterLockSlim> to synchronize access to a shared data structure that supports thread-safe read operations, but requires exclusive access to perform write operation. When a thread requests exclusive access (for example, by calling the <xref:System.Threading.ReaderWriterLockSlim.EnterWriteLock%2A?displayProperty=nameWithType> method), subsequent reader requests block until all existing readers have exited the lock, and the writer has entered and exited the lock.
   

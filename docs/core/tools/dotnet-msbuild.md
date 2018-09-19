@@ -31,12 +31,12 @@ Build a project and its dependencies:
 
 Build a project and its dependencies using Release configuration:
 
-`dotnet msbuild /p:Configuration=Release`
+`dotnet msbuild -p:Configuration=Release`
 
 Run the publish target and publish for the `osx.10.11-x64` RID:
 
-`dotnet msbuild /t:Publish /p:RuntimeIdentifiers=osx.10.11-x64`
+`dotnet msbuild -t:Publish -p:RuntimeIdentifiers=osx.10.11-x64`
 
 See the whole project with all targets included by the SDK:
 
-`dotnet msbuild /pp`
+`dotnet msbuild -pp`

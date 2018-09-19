@@ -117,7 +117,7 @@ You can map your localizable content to resource assemblies by using resource id
 2.  Use the following command to assign resource identifiers to your localizable content.
 
     ```
-    msbuild /t:updateuid LocalizingWpfInWf.csproj
+    msbuild -t:updateuid LocalizingWpfInWf.csproj
     ```
 
 3.  In **Solution Explorer**, double-click **SimpleControl.xaml** to open it in the Code Editor. You will see that the `msbuild` command has added the `Uid` attribute to all the elements. This facilitates localization through the assignment of resource identifiers.

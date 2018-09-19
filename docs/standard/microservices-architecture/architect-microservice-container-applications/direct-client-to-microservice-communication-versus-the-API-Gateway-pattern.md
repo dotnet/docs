@@ -176,6 +176,9 @@ After the initial architecture and patterns explanation sections, the next secti
 - **Clemens Vasters. Messaging and Microservices at GOTO 2016** (video)
     [*https://www.youtube.com/watch?v=rXi5CLjIQ9k*](https://www.youtube.com/watch?v=rXi5CLjIQ9k)
 
+- **API Gateway in a Nutshell** (ASP.net Core API Gateway Tutorial Series)
+     [*http://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html*](http://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html)
+
 >[!div class="step-by-step"]
 [Previous](identify-microservice-domain-model-boundaries.md)
 [Next](communication-in-microservice-architecture.md)

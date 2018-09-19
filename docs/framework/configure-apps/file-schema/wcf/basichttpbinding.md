@@ -16,36 +16,35 @@ Represents a binding that a Windows Communication Foundation (WCF) service can u
   
 ```xml  
 <basicHttpBinding>  
-   <binding   
-       allowCookies="Boolean"  
-       bypassProxyOnLocal="Boolean"  
-       closeTimeout="TimeSpan"   
-       envelopeVersion="None/Soap11/Soap12"  
-       hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
-       maxBufferPoolSize="Integer"  
-       maxBufferSize="Integer"  
-       maxReceivedMessageSize="Integer"  
-       messageEncoding="Text/Mtom"  
-              name="string"   
-       openTimeout="TimeSpan"   
-       proxyAddress="URI"  
-        receiveTimeout="TimeSpan"  
-       sendTimeout="TimeSpan"  
-              textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"  
-              transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
-       useDefaultWebProxy="Boolean"  
+   <binding allowCookies="Boolean"  
+            bypassProxyOnLocal="Boolean"  
+            closeTimeout="TimeSpan"   
+            envelopeVersion="None/Soap11/Soap12"  
+            hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
+            maxBufferPoolSize="Integer"  
+            maxBufferSize="Integer"  
+            maxReceivedMessageSize="Integer"  
+            messageEncoding="Text/Mtom"  
+            name="string"   
+            openTimeout="TimeSpan"   
+            proxyAddress="URI"  
+            receiveTimeout="TimeSpan"  
+            sendTimeout="TimeSpan"  
+            textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"  
+            transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
+            useDefaultWebProxy="Boolean">
        <security mode="None/Transport/Message/TransportWithMessageCredential/TransportCredentialOnly">  
            <transport clientCredentialType="None/Basic/Digest/Ntlm/Windows/Certificate"  
-                  proxyCredentialType="None/Basic/Digest/Ntlm/Windows"  
-                                    realm="string" />  
-           <message   
-                 algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-                            clientCredentialType="UserName/Certificate"/>  
+                      proxyCredentialType="None/Basic/Digest/Ntlm/Windows"  
+                      realm="string" />  
+           <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
+                     clientCredentialType="UserName/Certificate"/>  
        </security>  
-       <readerQuotas   
-            maxArrayLength="Integer"  
-            maxBytesPerRead="Integer"  
-            maxDepth="Integer"             maxNameTableCharCount="Integer"                maxStringContentLength="Integer" />  
+       <readerQuotas maxArrayLength="Integer"  
+                     maxBytesPerRead="Integer"  
+                     maxDepth="Integer"
+                     maxNameTableCharCount="Integer"
+                     maxStringContentLength="Integer" />  
    </binding>  
 </basicHttpBinding>  
 ```  

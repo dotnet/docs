@@ -1,6 +1,6 @@
 ---
 title: "lock statement (C# Reference)"
-description: "Use the C# lock statement to synchronize thread access to shared resource"
+description: "Use the C# lock statement to synchronize thread access to a shared resource"
 ms.date: 08/28/2018
 f1_keywords: 
   - "lock_CSharpKeyword"
@@ -11,7 +11,7 @@ ms.assetid: 656da1a4-707e-4ef6-9c6e-6d13b646af42
 ---
 # lock statement (C# Reference)
 
-The `lock` statement obtains the mutual-exclusion lock for a given object, executes a statement block, and then releases the lock. While a lock is held, the thread that holds the lock can again obtain and release the lock. Any other thread is blocked from obtaining the lock and waits until the lock is released.
+The `lock` statement acquires the mutual-exclusion lock for a given object, executes a statement block, and then releases the lock. While a lock is held, the thread that holds the lock can again acquire and release the lock. Any other thread is blocked from acquiring the lock and waits until the lock is released.
 
 The `lock` statement is of the form
 
@@ -44,7 +44,7 @@ You can't use the [await](await.md) keyword in the body of a `lock` statement.
 
 ## Remarks
 
-When you synchronize thread access to shared resource, lock on a dedicated object instance (for example, `private readonly object balanceLock = new object();`) or another instance that is unlikely to be used as a lock object by unrelated parts of the code. Avoid using the same lock object instance for different shared resources, as it might result in deadlock or lock contention. In particular, avoid using
+When you synchronize thread access to a shared resource, lock on a dedicated object instance (for example, `private readonly object balanceLock = new object();`) or another instance that is unlikely to be used as a lock object by unrelated parts of the code. Avoid using the same lock object instance for different shared resources, as it might result in deadlock or lock contention. In particular, avoid using
 
 - `this` (might be used by the callers as a lock),
 - <xref:System.Type> instances (might be obtained by the [typeof](typeof.md) operator or reflection),

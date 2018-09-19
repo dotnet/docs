@@ -93,7 +93,7 @@ Dim urlContents As String = Await client.GetStringAsync()
   
  In async methods, you use the provided keywords and types to indicate what you want to do, and the compiler does the rest, including keeping track of what must happen when control returns to an await point in a suspended method. Some routine processes, such as loops and exception handling, can be difficult to handle in traditional asynchronous code. In an async method, you write these elements much as you would in a synchronous solution, and the problem is solved.  
   
- For more information about asynchrony in previous versions of the .NET Framework, see [TPL and Traditional .NET Framework Asynchronous Programming](https://msdn.microsoft.com/library/e7b31170-a156-433f-9f26-b1fc7cd1776f).  
+ For more information about asynchrony in previous versions of the .NET Framework, see [TPL and Traditional .NET Framework Asynchronous Programming](../../../../standard/parallel-programming/tpl-and-traditional-async-programming.md).  
   
 ##  <a name="BKMK_WhatHappensUnderstandinganAsyncMethod"></a> What Happens in an Async Method  
  The most important thing to understand in asynchronous programming is how the control flow moves from method to method. The following diagram leads you through the process.  
@@ -240,7 +240,7 @@ Await Task_MethodAsync()
 |[WhenAny: Bridging between the .NET Framework and the Windows Runtime](https://msdn.microsoft.com/library/jj635140(v=vs.120).aspx)|Shows how to bridge between Task types in the .NET Framework and IAsyncOperations in the [!INCLUDE[wrt](~/includes/wrt-md.md)] so that you can use <xref:System.Threading.Tasks.Task.WhenAny%2A> with a [!INCLUDE[wrt](~/includes/wrt-md.md)] method.|[Async Sample: Bridging between .NET and Windows Runtime (AsTask and WhenAny)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/jj635140(v=vs.120))|  
 |Async Cancellation: Bridging between the .NET Framework and the Windows Runtime|Shows how to bridge between Task types in the .NET Framework and IAsyncOperations in the [!INCLUDE[wrt](~/includes/wrt-md.md)] so that you can use <xref:System.Threading.CancellationTokenSource> with a [!INCLUDE[wrt](~/includes/wrt-md.md)] method.|[Async Sample: Bridging between .NET and Windows Runtime (AsTask & Cancellation)](https://code.msdn.microsoft.com/Async-Sample-Bridging-9479eca3)|  
 |[Using Async for File Access (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/using-async-for-file-access.md)|Lists and demonstrates the benefits of using async and await to access files.||  
-|[Task-based Asynchronous Pattern (TAP)](https://msdn.microsoft.com/library/8cef1fcf-6f9f-417c-b21f-3fd8bac75007)|Describes a new pattern for asynchrony in the .NET Framework. The pattern is based on the <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> types.||  
+|[Task-based Asynchronous Pattern (TAP)](../../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)|Describes a new pattern for asynchrony in the .NET Framework. The pattern is based on the <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> types.||  
 |[Async Videos on Channel 9](https://channel9.msdn.com/search?term=async+&type=All)|Provides links to a variety of videos about async programming.||  
   
 ##  <a name="BKMK_CompleteExample"></a> Complete Example  
@@ -307,6 +307,7 @@ End Class
 ' Length of the downloaded string: 41763.  
 ```  
   
-## See Also  
- [Await Operator](../../../../visual-basic/language-reference/operators/await-operator.md)  
- [Async](../../../../visual-basic/language-reference/modifiers/async.md)
+## See also
+
+- [Await Operator](../../../../visual-basic/language-reference/operators/await-operator.md)  
+- [Async](../../../../visual-basic/language-reference/modifiers/async.md)

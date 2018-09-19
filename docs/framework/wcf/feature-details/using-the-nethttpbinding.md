@@ -4,13 +4,13 @@ ms.date: "03/30/2017"
 ms.assetid: fe134acf-ceca-49de-84a9-05a37e3841f1
 ---
 # Using the NetHttpBinding
-<xref:System.ServiceModel.NetHttpBinding> is a binding designed for consuming HTTP or WebSocket services and uses binary encoding by default. <xref:System.ServiceModel.NetHttpBinding> will detect whether it is used with a request-reply contract or duplex contract and change its behavior to match - it will use HTTP for request-reply contracts and WebSockets for duplex contracts. This behavior can be overridden using the <!--zz <xref:System.ServiceModel.NetHttpBinding.WebSocketTransportUsage%2A> --> `WebSocketTransportUsage` setting:  
+<xref:System.ServiceModel.NetHttpBinding> is a binding designed for consuming HTTP or WebSocket services and uses binary encoding by default. <xref:System.ServiceModel.NetHttpBinding> will detect whether it is used with a request-reply contract or duplex contract and change its behavior to match - it will use HTTP for request-reply contracts and WebSockets for duplex contracts. This behavior can be overridden using the <xref:System.ServiceModel.Channels.WebSocketTransportUsage> setting:  
   
-1.  Always - This forces WebSockets to be used even for request-reply contracts.  
+1. `Always` - This forces WebSockets to be used even for request-reply contracts.  
   
-2.  Never - This prevents WebSockets from being used. Attempting to use a duplex contract with this setting will result in an exception.  
+2. `Never` - This prevents WebSockets from being used. Attempting to use a duplex contract with this setting will result in an exception.  
   
-3.  WhenDuplex - This is the default value and behaves as described above.  
+3. `WhenDuplex` - This is the default value and behaves as described above.  
   
  <xref:System.ServiceModel.NetHttpBinding> supports reliable sessions in both HTTP mode and WebSocket mode. In WebSocket mode sessions are provided by the transport.  
   

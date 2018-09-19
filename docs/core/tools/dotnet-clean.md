@@ -5,7 +5,7 @@ author: mairaw
 ms.author: mairaw
 ms.date: 05/25/2018
 ---
-# dotnet-clean
+# dotnet clean
 
 [!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
 

@@ -1,6 +1,6 @@
 ---
 title: "Code Contracts"
-ms.date: "03/30/2017"
+ms.date: "09/05/2018"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -142,7 +142,7 @@ Contract.Invariant(this.x > this.y);
 }  
 ```  
   
- Invariants are conditionally defined by the CONTRACTS_FULL preprocessor symbol. During run-time checking, invariants are checked at the end of each public method. If an invariant mentions a public method in the same class, the invariant check that would normally happen at the end of that public method is disabled. Instead, the check occurs only at the end of the outermost method call to that class. This also happens if the class is re-entered because of a call to a method on another class. Invariants are not checked for object finalizers or for any methods that implement the <xref:System.IDisposable.Dispose%2A> method.  
+ Invariants are conditionally defined by the CONTRACTS_FULL preprocessor symbol. During run-time checking, invariants are checked at the end of each public method. If an invariant mentions a public method in the same class, the invariant check that would normally happen at the end of that public method is disabled. Instead, the check occurs only at the end of the outermost method call to that class. This also happens if the class is re-entered because of a call to a method on another class. Invariants are not checked for an object finalizer and an <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation.  
   
 <a name="usage_guidelines"></a>   
 ## Usage Guidelines  

@@ -10,7 +10,7 @@ An XML Schema definition language (XSD) schema can have complex types nested ins
   
 -   If no unique constraint exists on the parent, one additional primary key column per table definition named *TableName*_Id where *TableName* is the name of the parent table.  
   
--   A primary key constraint on the parent table identifying the additional column as the primary key (by setting the **IsPrimaryKey** property to **True**). The constraint is named Constraint*#* where *#* is 1, 2, 3, and so on. For example, the default name for the first constraint is Constraint1.  
+-   A primary key constraint on the parent table identifying the additional column as the primary key (by setting the **IsPrimaryKey** property to **True**). The constraint is named Constraint\# where \# is 1, 2, 3, and so on. For example, the default name for the first constraint is Constraint1.  
   
 -   A foreign key constraint on the child table identifying the additional column as the foreign key referring to the primary key of the parent table. The constraint is named *ParentTable_ChildTable* where *ParentTable* is the name of the parent table and *ChildTable* is the name of the child table.  
   

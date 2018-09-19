@@ -122,6 +122,16 @@ The constant expression is evaluated as follows:
 The following example combines the type and constant patterns to test whether an object is a `Dice` instance and, if it is, to determine whether the value of a dice roll is 6.
 
 [!code-csharp[is#7](../../../../samples/snippets/csharp/language-reference/keywords/is/is-const-pattern7.cs#7)]
+
+Checking for `null` can be performed using the constant pattern. The `null` keyword is supported by the `is` statement. Its syntax is:
+
+```csharp 
+   expr is null
+```
+
+The following example shows a comparison of `null` checks:
+
+[!code-csharp[is#11](../../../../samples/snippets/csharp/language-reference/keywords/is/is-const-pattern11.cs#11)]
  
 ### <a name="var" /> var pattern </a>
 

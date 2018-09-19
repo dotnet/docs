@@ -70,7 +70,8 @@ End Class
   
 ## Compiling the Code  
   
-## See Also  
- [LINQ and Strings (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)  
- [LINQ and File Directories (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)  
- [How to: Generate XML from CSV Files](https://msdn.microsoft.com/library/dd7bab8c-96fa-4343-94d0-9739dd6a74fd)
+## See also
+
+- [LINQ and Strings (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)  
+- [LINQ and File Directories (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)  
+- [How to: Generate XML from CSV Files](../../../../visual-basic/programming-guide/concepts/linq/how-to-generate-xml-from-csv-files.md)

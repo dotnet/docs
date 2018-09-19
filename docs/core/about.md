@@ -10,7 +10,7 @@ ms.date: 08/01/2018
 .NET Core has the following characteristics:
 
 - **Cross-platform:** Runs on Windows, macOS and Linux [operating systems](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md).
-- **Consistent across architecures:** Runs your code with the same behavior on multiple architectures, including x64, x86, and ARM.
+- **Consistent across architectures:** Runs your code with the same behavior on multiple architectures, including x64, x86, and ARM.
 - **Command-line tools:**  Includes easy-to-use command-line tools that be used for local development and in continuous-integration scenarios.
 - **Flexible deployment:** Can be included in your app or installed side-by-side user- or machine-wide. Can be used with [Docker containers](docker/index.md).
 - **Compatible:** .NET Core is compatible with .NET Framework, Xamarin and Mono, via [.NET Standard](../standard/net-standard.md).

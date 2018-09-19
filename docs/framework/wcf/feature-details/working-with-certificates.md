@@ -49,7 +49,7 @@ To program Windows Communication Foundation (WCF) security, X.509 digital certif
  Stores are protected by access control lists (ACLs), just like folders on a computer. When creating a service hosted by Internet Information Services (IIS), the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] process runs under the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] account. That account must have access to the store that contains the certificates a service uses. Each of the major stores is protected with a default access list, but the lists can be modified. If you create a separate role to access a store, you must grant that role access permission. To learn how to modify the access list using the WinHttpCertConfig.exe tool, see [How to: Create Temporary Certificates for Use During Development](../../../../docs/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development.md). For more information about using client certificates with IIS, see [How to call a Web service by using a client certificate for authentication in an ASP.NET Web application](https://go.microsoft.com/fwlink/?LinkId=88914).  
   
 ## Chain Trust and Certificate Authorities  
- Certificates are created in a hierarchy where each individual certificate is linked to the CA that issued the certificate. This link is to the CA’s certificate. The CA’s certificate then links to the CA that issued the orginal CA’s certificate. This process is repeated up until the Root CA’s certificate is reached. The Root CA’s certificate is inherently trusted.  
+ Certificates are created in a hierarchy where each individual certificate is linked to the CA that issued the certificate. This link is to the CA’s certificate. The CA’s certificate then links to the CA that issued the original CA’s certificate. This process is repeated up until the Root CA’s certificate is reached. The Root CA’s certificate is inherently trusted.  
   
  Digital certificates are used to authenticate an entity by relying on this hierarchy, also called a *chain of trust*. You can view any certificate's chain using the MMC snap-in by double-clicking any certificate, then clicking the **Certificate Path** tab. For more information about importing certificate chains for a Certification authority, see [How to: Specify the Certificate Authority Certificate Chain Used to Verify Signatures](../../../../docs/framework/wcf/feature-details/specify-the-certificate-authority-chain-verify-signatures-wcf.md).  
   
@@ -79,12 +79,12 @@ To program Windows Communication Foundation (WCF) security, X.509 digital certif
   
  When creating a custom authenticator, the most important method to override is the <xref:System.IdentityModel.Selectors.X509CertificateValidator.Validate%2A> method. For an example of custom authentication, see the [X.509 Certificate Validator](../../../../docs/framework/wcf/samples/x-509-certificate-validator.md) sample. For more information, see [Custom Credential and Credential Validation](../../../../docs/framework/wcf/extending/custom-credential-and-credential-validation.md).  
   
-## Using Makecert.exe to Build a Certificate Chain  
- The Certificate Creation Tool (Makecert.exe) creates X.509 certificates and private key/public key pairs. You can save the private key to disk and then use it to issue and sign new certificates, thus simulating a hierarchy of chained certificates. The tool is intended for use only as an aid when developing services and should never be used to create certificates for actual deployment. When developing an WCF service, use the following steps to build a chain of trust with Makecert.exe.  
+## Using the Powershell New-SelfSignedCertificate Cmdlet to Build a Certificate Chain  
+ The Powershell New-SelfSignedCertificate cmdlet creates X.509 certificates and private key/public key pairs. You can save the private key to disk and then use it to issue and sign new certificates, thus simulating a hierarchy of chained certificates. The cmdlet is intended for use only as an aid when developing services and should never be used to create certificates for actual deployment. When developing a WCF service, use the following steps to build a chain of trust with the New-SelfSignedCertificate cmdlet.  
   
-#### To build a chain of trust with Makecert.exe  
+#### To build a chain of trust with the New-SelfSignedCertificate cmdlet  
   
-1.  Create a temporary root authority (self-signed) certificate using the MakeCert.exe tool. Save the private key to the disk.  
+1.  Create a temporary root authority (self-signed) certificate using the New-SelfSignedCertificate cmdlet. Save the private key to the disk.  
   
 2.  Use the new certificate to issue another certificate that contains the public key.  
   

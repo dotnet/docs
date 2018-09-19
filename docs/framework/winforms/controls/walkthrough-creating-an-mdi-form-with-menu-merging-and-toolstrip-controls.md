@@ -127,7 +127,7 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
   
 4.  Click **New** several times.  
   
-     The child forms are automatically listed under the W**indow** menu item because the <xref:System.Windows.Forms.MenuStrip> control's <xref:System.Windows.Forms.MenuStrip.MdiWindowListItem%2A> property is assigned.  
+     The child forms are automatically listed under the **Window** menu item because the <xref:System.Windows.Forms.MenuStrip> control's <xref:System.Windows.Forms.MenuStrip.MdiWindowListItem%2A> property is assigned.  
   
 ## Adding ToolStrip Support  
  In this procedure, you will add four <xref:System.Windows.Forms.ToolStrip> controls to the MDI parent form. Each <xref:System.Windows.Forms.ToolStrip> control is added inside a <xref:System.Windows.Forms.ToolStripPanel> control, which is docked to the edge of the form.  

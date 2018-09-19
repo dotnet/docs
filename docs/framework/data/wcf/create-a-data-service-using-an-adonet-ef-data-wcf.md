@@ -28,7 +28,7 @@ The [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] also provides a 
 
 6. In the **Connection Properties** dialog box, type your server name, select the authentication method, type the database name, and then click **OK**.
 
-     The **Choose Your Data Connection**s dialog box is updated with your database connection settings.
+     The **Choose Your Data Connection** dialog box is updated with your database connection settings.
 
 7. Ensure that the **Save entity connection settings in App.Config as:** checkbox is checked. Then click **Next**.
 

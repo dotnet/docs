@@ -77,36 +77,32 @@ a.Where(...).OrderBy(...).Select(...).ForAll(x => fs.Write(x));
   
 ```vb  
 Dim mre = New ManualResetEventSlim()  
-    Enumerable.Range(0, ProcessorCount * 100).AsParallel().ForAll(Sub(j)   
-  
-                                                     If j = Environment.ProcessorCount Then  
-  
-                                                         Console.WriteLine("Set on {0} with value of {1}", Thread.CurrentThread.ManagedThreadId, j)  
-                                                         mre.Set()  
-  
-                                                     Else  
-  
-                                                         Console.WriteLine("Waiting on {0} with value of {1}", Thread.CurrentThread.ManagedThreadId, j)  
-                                                         mre.Wait()  
-                                                     End If  
-    End Sub) ' deadlocks  
+Enumerable.Range(0, Environment.ProcessorCount * 100).AsParallel().ForAll(Sub(j)   
+   If j = Environment.ProcessorCount Then  
+       Console.WriteLine("Set on {0} with value of {1}", Thread.CurrentThread.ManagedThreadId, j)  
+       mre.Set()  
+   Else  
+       Console.WriteLine("Waiting on {0} with value of {1}", Thread.CurrentThread.ManagedThreadId, j)  
+       mre.Wait()  
+   End If  
+End Sub) ' deadlocks  
 ```  
   
 ```csharp  
 ManualResetEventSlim mre = new ManualResetEventSlim();  
-            Enumerable.Range(0, ProcessorCount * 100).AsParallel().ForAll((j) =>  
-            {  
-                if (j == Environment.ProcessorCount)  
-                {  
-                    Console.WriteLine("Set on {0} with value of {1}", Thread.CurrentThread.ManagedThreadId, j);  
-                    mre.Set();  
-                }  
-                else  
-                {  
-                    Console.WriteLine("Waiting on {0} with value of {1}", Thread.CurrentThread.ManagedThreadId, j);  
-                    mre.Wait();  
-                }  
-            }); //deadlocks  
+Enumerable.Range(0, Environment.ProcessorCount * 100).AsParallel().ForAll((j) =>  
+{  
+    if (j == Environment.ProcessorCount)  
+    {  
+        Console.WriteLine("Set on {0} with value of {1}", Thread.CurrentThread.ManagedThreadId, j);  
+        mre.Set();  
+    }  
+    else  
+    {  
+        Console.WriteLine("Waiting on {0} with value of {1}", Thread.CurrentThread.ManagedThreadId, j);  
+        mre.Wait();  
+    }  
+}); //deadlocks  
 ```  
   
  In this example, one iteration sets an event, and all other iterations wait on the event. None of the waiting iterations can complete until the event-setting iteration has completed. However, it is possible that the waiting iterations block all threads that are used to execute the parallel loop, before the event-setting iteration has had a chance to execute. This results in a deadlock – the event-setting iteration will never execute, and the waiting iterations will never wake up.  

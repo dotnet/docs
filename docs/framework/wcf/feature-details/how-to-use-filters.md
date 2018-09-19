@@ -107,7 +107,7 @@ This topic outlines the basic steps required to create a routing configuration t
      This **MessageFilter** looks for a RoundingCalculator header in the message that contains a value of "rounding". This header is set by the client to indicate that the message should be routed to the roundingCalc service.  
   
     > [!NOTE]
-    >  The s12 namespace prefix is defined by default in the namespace table, and represents the namespace "http://www.w3.org/2003/05/soap-envelope".  
+    > The s12 namespace prefix is defined by default in the namespace table, and represents the namespace `http://www.w3.org/2003/05/soap-envelope`.
   
 2.  You must also define filters that look for messages received on the two virtual endpoints. The first virtual endpoint is the "regular/calculator" endpoint. The client can send requests to this endpoint to indicate that the message should be routed to the regularCalc service. The following configuration defines a filter that uses the <xref:System.ServiceModel.Dispatcher.EndpointNameMessageFilter> to determine if the message arrived through an endpoint with the name specified in filterData.  
   
@@ -150,7 +150,7 @@ This topic outlines the basic steps required to create a routing configuration t
                     filterData="group1"/>  
     ```  
   
-     During run time, this filter type alternates between all defined filter instances of this type that are configured as the same group into one collection. This causes messages processed by this custom filter to alternate between returning `true` for RoundRobinFilter1 and RoundRobinFilter2.  
+     During run time, this filter type alternates between all defined filter instances of this type that are configured as the same group into one collection. This causes messages processed by this custom filter to alternate between returning `true` for `RoundRobinFilter1` and `RoundRobinFilter2`.  
   
 ### Define Filter Tables  
   
@@ -159,7 +159,7 @@ This topic outlines the basic steps required to create a routing configuration t
     > [!NOTE]
     >  While specifying a filter priority allows you to control the order in which filters are processed, it can adversely affect the performance of the Routing Service. When possible, construct filter logic so that the use of filter priorities is not required.  
   
-     The following defines the filter table and adds the "XPathFilter" defined earlier to the table with a priority of 2. This entry also specifies that if the "XPathFilter" matches the message, the message will be routed to the "roundingCalcEndpoint"  
+     The following defines the filter table and adds the "XPathFilter" defined earlier to the table with a priority of 2. This entry also specifies that if the `XPathFilter` matches the message, the message will be routed to the `roundingCalcEndpoint`.  
   
     ```xml  
     <routing>  

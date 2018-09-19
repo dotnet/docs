@@ -10,7 +10,7 @@ ms.assetid: a9290329-77b0-4fdf-ae75-8fc17287f469
 # Collection Initializers (Visual Basic)
 *Collection initializers* provide a shortened syntax that enables you to create a collection and populate it with an initial set of values. Collection initializers are useful when you are creating a collection from a set of known values, for example, a list of menu options or categories, an initial set of numeric values, a static list of strings such as day or month names, or geographic locations such as a list of states that is used for validation.  
   
- For more information about collections, see [Collections](https://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b).  
+ For more information about collections, see [Collections](../../../../visual-basic/programming-guide/concepts/collections.md).  
   
  You identify a collection initializer by using the `From` keyword followed by braces (`{}`). This is similar to the array literal syntax that is described in [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md). The following examples show various ways to use collection initializers to create collections.  
   
@@ -70,14 +70,15 @@ ms.assetid: a9290329-77b0-4fdf-ae75-8fc17287f469
 |[How to: Create an Add Extension Method Used by a Collection Initializer](../../../../visual-basic/programming-guide/language-features/collection-initializers/how-to-create-an-add-extension-method-used-by-a-collection-initializer.md)|Shows how to create an extension method called `Add` that can be used to populate a collection with values from a collection initializer.|  
 |[How to: Create a Collection Used by a Collection Initializer](../../../../visual-basic/programming-guide/language-features/collection-initializers/how-to-create-a-collection-used-by-a-collection-initializer.md)|Shows how to enable use of a collection initializer by including an `Add` method in a collection class that implements `IEnumerable`.|  
   
-## See Also  
- [Collections](https://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)  
- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
- [Object Initializers: Named and Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)  
- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)  
- [Auto-Implemented Properties](../../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)  
- [How to: Initialize an Array Variable in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md)  
- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [How to: Create a List of Items](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md)
+## See also
+
+- [Collections](../../../../visual-basic/programming-guide/concepts/collections.md)  
+- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
+- [Object Initializers: Named and Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)  
+- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)  
+- [Auto-Implemented Properties](../../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)  
+- [How to: Initialize an Array Variable in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md)  
+- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
+- [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
+- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
+- [How to: Create a List of Items](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md)

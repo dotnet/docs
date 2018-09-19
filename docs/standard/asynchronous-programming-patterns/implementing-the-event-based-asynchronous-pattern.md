@@ -57,7 +57,7 @@ If you are writing a class with some operations that may incur noticeable delays
 ## Naming Asynchronous Methods  
  For each synchronous method *MethodName* for which you want to provide an asynchronous counterpart:  
   
- Define a *MethodName***Async** method that:  
+ Define a _MethodName_**Async** method that:  
   
 -   Returns `void`.  
   
@@ -65,9 +65,9 @@ If you are writing a class with some operations that may incur noticeable delays
   
 -   Accepts multiple invocations.  
   
- Optionally define a *MethodName***Async** overload, identical to *MethodName***Async**, but with an additional object-valued parameter called `userState`. Do this if you're prepared to manage multiple concurrent invocations of your method, in which case the `userState` value will be delivered back to all event handlers to distinguish invocations of the method. You may also choose to do this simply as a place to store user state for later retrieval.  
+ Optionally define a _MethodName_**Async** overload, identical to _MethodName_**Async**, but with an additional object-valued parameter called `userState`. Do this if you're prepared to manage multiple concurrent invocations of your method, in which case the `userState` value will be delivered back to all event handlers to distinguish invocations of the method. You may also choose to do this simply as a place to store user state for later retrieval.  
   
- For each separate *MethodName***Async** method signature:  
+ For each separate _MethodName_**Async** method signature:  
   
 1.  Define the following event in the same class as the method:  
   
@@ -102,7 +102,7 @@ If you are writing a class with some operations that may incur noticeable delays
     }  
     ```  
   
-    -   Ensure that the *MethodName***CompletedEventArgs** class exposes its members as read-only properties, and not fields, as fields prevent data binding.  
+    -   Ensure that the _MethodName_**CompletedEventArgs** class exposes its members as read-only properties, and not fields, as fields prevent data binding.  
   
     -   Do not define any <xref:System.ComponentModel.AsyncCompletedEventArgs>-derived classes for methods that do not produce results. Simply use an instance of <xref:System.ComponentModel.AsyncCompletedEventArgs> itself.  
   
@@ -114,7 +114,7 @@ If you are writing a class with some operations that may incur noticeable delays
   
 -   Does your class, including future anticipated additions to it, have only one asynchronous operation that supports cancellation?  
   
--   Can the asynchronous operations that support cancellation support multiple pending operations? That is, does the *MethodName***Async** method take a `userState` parameter, and does it allow multiple invocations before waiting for any to finish?  
+-   Can the asynchronous operations that support cancellation support multiple pending operations? That is, does the _MethodName_**Async** method take a `userState` parameter, and does it allow multiple invocations before waiting for any to finish?  
   
  Use the answers to these two questions in the table below to determine what the signature for your cancellation method should be.  
   
@@ -134,16 +134,16 @@ If you are writing a class with some operations that may incur noticeable delays
   
  If you define the `CancelAsync(object userState)` method, clients must be careful when choosing their state values to make them capable of distinguishing among all asynchronous methods invoked on the object, and not just between all invocations of a single asynchronous method.  
   
- The decision to name the single-async-operation version *MethodName***AsyncCancel** is based on being able to more easily discover the method in a design environment like Visual Studio's IntelliSense. This groups the related members and distinguishes them from other members that have nothing to do with asynchronous functionality. If you expect that there may be additional asynchronous operations added in subsequent versions, it is better to define `CancelAsync`.  
+ The decision to name the single-async-operation version _MethodName_**AsyncCancel** is based on being able to more easily discover the method in a design environment like Visual Studio's IntelliSense. This groups the related members and distinguishes them from other members that have nothing to do with asynchronous functionality. If you expect that there may be additional asynchronous operations added in subsequent versions, it is better to define `CancelAsync`.  
   
  Do not define multiple methods from the table above in the same class. That will not make sense, or it will clutter the class interface with a proliferation of methods.  
   
- These methods typically will return immediately, and the operation may or may not actually cancel. In the event handler for the *MethodName***Completed** event, the *MethodName***CompletedEventArgs** object contains a `Cancelled` field, which clients can use to determine whether the cancellation occurred.  
+ These methods typically will return immediately, and the operation may or may not actually cancel. In the event handler for the _MethodName_**Completed** event, the _MethodName_**CompletedEventArgs** object contains a `Cancelled` field, which clients can use to determine whether the cancellation occurred.  
   
  Abide by the cancellation semantics described in [Best Practices for Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md).  
   
 ## Optionally Support the IsBusy Property  
- If your class does not support multiple concurrent invocations, consider exposing an `IsBusy` property. This allows developers to determine whether a *MethodName***Async** method is running without catching an exception from the *MethodName***Async** method.  
+ If your class does not support multiple concurrent invocations, consider exposing an `IsBusy` property. This allows developers to determine whether a _MethodName_**Async** method is running without catching an exception from the _MethodName_**Async** method.  
   
  Abide by the `IsBusy` semantics described in [Best Practices for Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md).  
   
@@ -156,15 +156,15 @@ If you are writing a class with some operations that may incur noticeable delays
   
     -   `ProgressChanged` if the class has multiple asynchronous operations (or is expected to grow to include multiple asynchronous operations in future versions);  
   
-    -   *MethodName***ProgressChanged** if the class has a single asynchronous operation.  
+    -   _MethodName_**ProgressChanged** if the class has a single asynchronous operation.  
   
      This naming choice parallels that made for the cancellation method, as described in the Optionally Support Cancellation section.  
   
  This event should use the <xref:System.ComponentModel.ProgressChangedEventHandler> delegate signature and the <xref:System.ComponentModel.ProgressChangedEventArgs> class. Alternatively, if a more domain-specific progress indicator can be provided (for instance, bytes read and total bytes for a download operation), then you should define a derived class of <xref:System.ComponentModel.ProgressChangedEventArgs>.  
   
- Note that there is only one `ProgressChanged` or *MethodName***ProgressChanged** event for the class, regardless of the number of asynchronous methods it supports. Clients are expected to use the `userState` object that is passed to the *MethodName***Async** methods to distinguish among progress updates on multiple concurrent operations.  
+ Note that there is only one `ProgressChanged` or _MethodName_**ProgressChanged** event for the class, regardless of the number of asynchronous methods it supports. Clients are expected to use the `userState` object that is passed to the _MethodName_**Async** methods to distinguish among progress updates on multiple concurrent operations.  
   
- There may be situations in which multiple operations support progress and each returns a different indicator for progress. In this case, a single `ProgressChanged` event is not appropriate, and you may consider supporting multiple `ProgressChanged` events. In this case use a naming pattern of *MethodName***ProgressChanged** for each *MethodName***Async** method.  
+ There may be situations in which multiple operations support progress and each returns a different indicator for progress. In this case, a single `ProgressChanged` event is not appropriate, and you may consider supporting multiple `ProgressChanged` events. In this case use a naming pattern of _MethodName_**ProgressChanged** for each _MethodName_**Async** method.  
   
  Abide by the progress-reporting semantics described [Best Practices for Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md).  
   
@@ -174,23 +174,23 @@ If you are writing a class with some operations that may incur noticeable delays
 ### Single-operation Class  
  If your class only supports a single asynchronous operation, and that operation is able to return incremental results, then:  
   
--   Extend the <xref:System.ComponentModel.ProgressChangedEventArgs> type to carry the incremental result data, and define a *MethodName***ProgressChanged** event with this extended data.  
+-   Extend the <xref:System.ComponentModel.ProgressChangedEventArgs> type to carry the incremental result data, and define a _MethodName_**ProgressChanged** event with this extended data.  
   
--   Raise this *MethodName***ProgressChanged** event when there is an incremental result to report.  
+-   Raise this _MethodName_**ProgressChanged** event when there is an incremental result to report.  
   
- This solution applies specifically to a single-async-operation class because there is no problem with the same event occurring to return incremental results on "all operations", as the *MethodName***ProgressChanged** event does.  
+ This solution applies specifically to a single-async-operation class because there is no problem with the same event occurring to return incremental results on "all operations", as the _MethodName_**ProgressChanged** event does.  
   
 ### Multiple-operation Class with Homogeneous Incremental Results  
  In this case, your class supports multiple asynchronous methods, each capable of returning incremental results, and these incremental results all have the same type of data.  
   
- Follow the model described above for single-operation classes, as the same <xref:System.EventArgs> structure will work for all incremental results. Define a `ProgressChanged` event instead of a *MethodName***ProgressChanged** event, since it applies to multiple asynchronous methods.  
+ Follow the model described above for single-operation classes, as the same <xref:System.EventArgs> structure will work for all incremental results. Define a `ProgressChanged` event instead of a _MethodName_**ProgressChanged** event, since it applies to multiple asynchronous methods.  
   
 ### Multiple-operation Class with Heterogeneous Incremental Results  
  If your class supports multiple asynchronous methods, each returning a different type of data, you should:  
   
 -   Separate your incremental result reporting from your progress reporting.  
   
--   Define a separate *MethodName***ProgressChanged** event with appropriate <xref:System.EventArgs> for each asynchronous method to handle that method's incremental result data.  
+-   Define a separate _MethodName_**ProgressChanged** event with appropriate <xref:System.EventArgs> for each asynchronous method to handle that method's incremental result data.  
   
  Invoke that event handler on the appropriate thread as described in [Best Practices for Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md).  
   
@@ -199,9 +199,9 @@ If you are writing a class with some operations that may incur noticeable delays
   
  Given a synchronous method *MethodName*:  
   
--   `out` parameters to *MethodName* should not be part of *MethodName***Async**. Instead, they should be part of *MethodName***CompletedEventArgs** with the same name as its parameter equivalent in *MethodName* (unless there is a more appropriate name).  
+-   `out` parameters to *MethodName* should not be part of _MethodName_**Async**. Instead, they should be part of _MethodName_**CompletedEventArgs** with the same name as its parameter equivalent in *MethodName* (unless there is a more appropriate name).  
   
--   `ref` parameters to *MethodName* should appear as part of *MethodName***Async**, and as part of *MethodName***CompletedEventArgs** with the same name as its parameter equivalent in *MethodName* (unless there is a more appropriate name).  
+-   `ref` parameters to *MethodName* should appear as part of _MethodName_**Async**, and as part of _MethodName_**CompletedEventArgs** with the same name as its parameter equivalent in *MethodName* (unless there is a more appropriate name).  
   
  For example, given:  
   

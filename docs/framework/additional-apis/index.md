@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: cf2d9006-b631-4e5d-81cd-20aab78c60f1
 author: "mairaw"
 ms.author: "mairaw"
+ms.topic: conceptual
 ---
 
 # Additional class libraries and APIs

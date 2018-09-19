@@ -126,7 +126,7 @@ This topic outlines the basic steps required to create a routing configuration t
             filterData="http://localhost/routingservice/router/rounding/"/>  
     ```  
   
-     If a message is received at an address that begins with "http://localhost/routingservice/router/rounding/" then this filter evaluates to **true**. Because the base address used by this configuration is "http://localhost/routingservice/router" and the address specified for the roundingEndpoint is "rounding/calculator", the full address used to communicate with this endpoint is "http://localhost/routingservice/router/rounding/calculator", which matches this filter.  
+     If a message is received at an address that begins with `http://localhost/routingservice/router/rounding/` then this filter evaluates to **true**. Because the base address used by this configuration is `http://localhost/routingservice/router` and the address specified for the roundingEndpoint is "rounding/calculator", the full address used to communicate with this endpoint is `http://localhost/routingservice/router/rounding/calculator`, which matches this filter.  
   
     > [!NOTE]
     >  The PrefixEndpointAddress filter does not evaluate the host name when performing a match, because a single host can be referred to by using a variety of host names that may all be valid ways of referring to the host from the client application. For example, all of the following may refer to the same host:  

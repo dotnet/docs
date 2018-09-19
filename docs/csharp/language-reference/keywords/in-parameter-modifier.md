@@ -113,9 +113,10 @@ You can't use the `in`, `ref`, and `out` keywords for the following kinds of met
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../index.md)  
- [C# Programming Guide](../../programming-guide/index.md)  
- [C# Keywords](index.md)  
- [Method Parameters](method-parameters.md)  
- [Reference Semantics with Value Types](../../reference-semantics-with-value-types.md)  
+## See Also
+
+- [C# Reference](../index.md)  
+- [C# Programming Guide](../../programming-guide/index.md)  
+- [C# Keywords](index.md)  
+- [Method Parameters](method-parameters.md)  
+- [Reference Semantics with Value Types](../../reference-semantics-with-value-types.md)  

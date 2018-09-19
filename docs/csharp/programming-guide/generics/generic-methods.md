@@ -39,8 +39,9 @@ A generic method is a method that is declared with type parameters, as follows:
 ## C# Language Specification  
  For more information, see the [C# Language Specification](../../../csharp/language-reference/language-specification/index.md).  
   
-## See Also  
- <xref:System.Collections.Generic>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)
+## See Also
+
+- <xref:System.Collections.Generic>  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
+- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)

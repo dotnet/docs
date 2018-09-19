@@ -57,7 +57,7 @@ HRESULT CreateProcess (
  [in] Set to `true` to indicate that each inheritable handle in the calling process is inherited by the launched process, or `false` to indicate that the handles are not inherited. The inherited handles have the same value and access rights as the original handles.  
   
  `dwCreationFlags`  
- [in] A bitwise combination of the [Win32 Process Creation Flags](http://go.microsoft.com/fwlink/?linkid=69981) that control the priority class and the behavior of the launched process.  
+ [in] A bitwise combination of the [Win32 Process Creation Flags](https://go.microsoft.com/fwlink/?linkid=69981) that control the priority class and the behavior of the launched process.  
   
  `lpEnvironment`  
  [in] Pointer to an environment block for the new process.  

@@ -45,6 +45,7 @@ Reorganize the repository so that any existing *\*.csproj* files are removed and
 [**Source Code**][example-csproj-code]
 
 Changes to note are:
+
 * Replacement of *packages.config* and *\*.csproj* with a new [.NET Core *\*.csproj*][example-csproj-netcore]. NuGet packages are specified with `<PackageReference> ItemGroup`.
 
 ## Keep existing projects and create a .NET Core project
@@ -56,12 +57,13 @@ If there are existing projects that target older frameworks, you may want to lea
 [**Source Code**][example-csproj-different-code]
 
 Changes to note are:
+
 * The .NET Core and existing projects are kept in separate folders.
-    * Keeping projects in separate folders avoids forcing you to have Visual Studio 2017. You can create a separate solution that only opens the old projects.
+  * Keeping projects in separate folders avoids forcing you to have Visual Studio 2017. You can create a separate solution that only opens the old projects.
 
 ## See Also
 
-Please see the [.NET Core porting documentation][porting-doc] for more guidance on migrating to .NET Core.
+* Please see the [.NET Core porting documentation][porting-doc] for more guidance on migrating to .NET Core.
 
 [porting-doc]: index.md
 [example-initial-project]: media/project-structure/project.png "Existing project"

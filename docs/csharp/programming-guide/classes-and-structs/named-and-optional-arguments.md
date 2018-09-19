@@ -95,7 +95,7 @@ Optional parameters in ExampleMethod
 ## COM Interfaces  
  Named and optional arguments, along with support for dynamic objects and other enhancements, greatly improve interoperability with COM APIs, such as Office Automation APIs.  
   
- For example, the [AutoFormat](https://msdn.microsoft.com/library/microsoft.office.interop.excel.range.autoformat(v=office.15).aspx) method in the Microsoft Office Excel [Range](https://msdn.microsoft.com/library/microsoft.office.interop.excel.range(v=office.15).aspx) interface has seven parameters, all of which are optional. These parameters are shown in the following illustration.  
+ For example, the <xref:Microsoft.Office.Interop.Excel.Range.AutoFormat%2A> method in the Microsoft Office Excel <xref:Microsoft.Office.Interop.Excel.Range> interface has seven parameters, all of which are optional. These parameters are shown in the following illustration.  
   
  ![IntelliSense Quick Info for the AutoFormat method.](../../../csharp/programming-guide/classes-and-structs/media/autoformat_parameters.png "AutoFormat_Parameters")  
 AutoFormat parameters  
@@ -122,8 +122,9 @@ AutoFormat parameters
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [How to: Use Named and Optional Arguments in Office Programming](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)  
- [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)  
- [Using Constructors](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)  
- [Using Indexers](../../../csharp/programming-guide/indexers/using-indexers.md)
+## See Also
+
+- [How to: Use Named and Optional Arguments in Office Programming](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)  
+- [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)  
+- [Using Constructors](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)  
+- [Using Indexers](../../../csharp/programming-guide/indexers/using-indexers.md)

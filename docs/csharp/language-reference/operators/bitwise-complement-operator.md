@@ -22,8 +22,9 @@ The `~` operator performs a bitwise complement operation on its operand, which h
 ## Example  
  [!code-csharp[csRefOperators#25](../../../csharp/language-reference/operators/codesnippet/CSharp/bitwise-complement-operator_1.cs)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Operators](../../../csharp/language-reference/operators/index.md)  
- [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Operators](../../../csharp/language-reference/operators/index.md)  
+- [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)

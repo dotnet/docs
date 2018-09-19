@@ -18,7 +18,7 @@ The topic describes methods to enable interoperability between C# managed code a
  For more information, see [Consuming Unmanaged DLL Functions](../../../framework/interop/consuming-unmanaged-dll-functions.md) and [How to: Use Platform Invoke to Play a Wave File](../../../csharp/programming-guide/interop/how-to-use-platform-invoke-to-play-a-wave-file.md).  
   
 > [!NOTE]
->  The [Common Language Runtime](../../../standard/clr.md) (CLR) manages access to system resources. Calling unmanaged code that is outside the CLR bypasses this security mechanism, and therefore presents a security risk. For example, unmanaged code might call resources in unmanaged code directly, bypassing CLR security mechanisms. For more information, see [.NET Framework Security](https://technet.microsoft.com/en-us/security/).  
+>  The [Common Language Runtime](../../../standard/clr.md) (CLR) manages access to system resources. Calling unmanaged code that is outside the CLR bypasses this security mechanism, and therefore presents a security risk. For example, unmanaged code might call resources in unmanaged code directly, bypassing CLR security mechanisms. For more information, see [Security in .NET](../../../standard/security/index.md).  
   
 ## C++ Interop  
  You can use C++ interop, also known as It Just Works (IJW), to wrap a native C++ class so that it can be consumed by code that is authored in C# or another .NET Framework language. To do this, you write C++ code to wrap a native DLL or COM component. Unlike other .NET Framework languages, [!INCLUDE[vcprvc](~/includes/vcprvc-md.md)] has interoperability support that enables managed and unmanaged code to be located in the same application and even in the same file. You then build the C++ code by using the **/clr** compiler switch to produce a managed assembly. Finally, you add a reference to the assembly in your C# project and use the wrapped objects just as you would use other managed classes.  
@@ -51,10 +51,11 @@ The topic describes methods to enable interoperability between C# managed code a
   
  For more information, see [Exposing .NET Framework Components to COM](../../../../docs/framework/interop/exposing-dotnet-components-to-com.md) and [Example COM Class](../../../csharp/programming-guide/interop/example-com-class.md).  
   
-## See Also  
- [Improving Interop Performance](https://msdn.microsoft.com/library/ms998551.aspx)  
- [Introduction to Interoperability between COM and .NET](https://msdn.microsoft.com/library/office/bb610378.aspx)  
- [Introduction to COM Interop in Visual Basic](../../../../docs/visual-basic/programming-guide/com-interop/introduction-to-com-interop.md)  
- [Marshaling between Managed and Unmanaged Code](../../../../docs/framework/interop/interop-marshaling.md)  
- [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+## See Also
+
+- [Improving Interop Performance](https://msdn.microsoft.com/library/ms998551.aspx)  
+- [Introduction to Interoperability between COM and .NET](https://msdn.microsoft.com/library/office/bb610378.aspx)  
+- [Introduction to COM Interop in Visual Basic](../../../../docs/visual-basic/programming-guide/com-interop/introduction-to-com-interop.md)  
+- [Marshaling between Managed and Unmanaged Code](../../../../docs/framework/interop/interop-marshaling.md)  
+- [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)

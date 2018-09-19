@@ -25,9 +25,9 @@ To manage persistent data in Docker applications, there are common solutions:
 
 -   [**Azure Storage**](https://docs.microsoft.com/azure/storage/) This provides geo distributable platform as a service (PaaS) storage, providing the best of containers as long-term persistence.
 
-Data volumes are specially designated directories within one or more containers that bypass the [Union File System](https://docs.docker.com/v1.8/reference/glossary#union-file-system). Data volumes are designed to maintain data, independent of the container's life cycle. Docker therefore never automatically deletes volumes when you remove a container, nor will it "garbage collect" volumes that are no longer referenced by a container. The host operating system can browse and edit the data in any volume freely, which is just another reason to use data volumes sparingly.
+Data volumes are specially designated directories within one or more containers that bypass the [Union File System](https://docs.docker.com/glossary/?term=Union%20file%20system). Data volumes are designed to maintain data, independent of the container's life cycle. Docker therefore never automatically deletes volumes when you remove a container, nor will it "garbage collect" volumes that are no longer referenced by a container. The host operating system can browse and edit the data in any volume freely, which is just another reason to use data volumes sparingly.
 
-A [data volume container](https://docs.docker.com/v1.8/userguide/dockervolumes/) is an improvement over regular data volumes. It is essentially a dormant container that has one or more data volumes created within it (as described earlier). The data volume container provides access to containers from a central mount point. The benefit of this method of access is that it abstracts the location of the original data, making the data container a logical mount point. It also allows "application" containers accessing the data container volumes to be created and destroyed while keeping the data persistent in a dedicated container.
+A [data volume container](https://docs.docker.com/glossary/?term=volume) is an improvement over regular data volumes. It is essentially a dormant container that has one or more data volumes created within it (as described earlier). The data volume container provides access to containers from a central mount point. The benefit of this method of access is that it abstracts the location of the original data, making the data container a logical mount point. It also allows "application" containers accessing the data container volumes to be created and destroyed while keeping the data persistent in a dedicated container.
 
 Figure 4-5 shows that regular Docker volumes can be placed on storage out of the containers themselves but within the host server/VM physical boundaries. *Docker volumes don't have the ability to use a volume from one host server/VM to another*.
 
@@ -39,7 +39,7 @@ Due to the inability to manage data shared between containers that run on separa
 
 Therefore, regular data volumes are a good mechanism to work with trace files, temporal files, or any similar concept that won't affect the business data consistency if or when your containers are moved across multiple hosts.
 
-Volume plug-ins like [Flocker](https://clusterhq.com/flocker/) provide data across all hosts in a cluster. Although not all volume plug-ins are created equally, volume plug-ins typically provide externalized persistent reliable storage from the immutable containers.
+[Volume plug-ins](https://docs.docker.com/engine/extend/plugins_volume/) provide data across all hosts in a cluster. Although not all volume plug-ins are created equally, volume plug-ins typically provide externalized persistent reliable storage from the immutable containers.
 
 Remote data sources and caches like SQL Database, DocumentDB, or a remote cache like Redis would be the same as developing without containers. This is one of the preferred, and proven, ways to store business application data.
 

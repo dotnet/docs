@@ -48,7 +48,8 @@ To reclaim objects, the garbage collector must stop all the executing threads in
   
 -   You can force generation 2 collections during a low latency period by calling the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%29?displayProperty=nameWithType> method.  
   
-## See Also  
- <xref:System.GC?displayProperty=nameWithType>  
- [Induced Collections](../../../docs/standard/garbage-collection/induced.md)  
- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)
+## See also
+
+- <xref:System.GC?displayProperty=nameWithType>  
+- [Induced Collections](../../../docs/standard/garbage-collection/induced.md)  
+- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)

@@ -52,8 +52,9 @@ Events enable a [class](../../../csharp/language-reference/keywords/class.md) or
   
  [Delegates and Events](https://msdn.microsoft.com/library/orm-9780596521066-01-17.aspx) in [Learning C# 3.0: Master the fundamentals of C# 3.0](https://msdn.microsoft.com/library/orm-9780596521066-01.aspx)  
   
-## See Also  
- <xref:System.EventHandler>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
- [Creating Event Handlers in Windows Forms](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)  
+## See Also
+
+- <xref:System.EventHandler>  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
+- [Creating Event Handlers in Windows Forms](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)  

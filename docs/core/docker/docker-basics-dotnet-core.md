@@ -278,7 +278,7 @@ The following Docker images are used in this sample
 
 ## Related Resources
 
-* [.NET Core Docker samples](https://github.com/dotnet/dotnet-docker-samples/README.md)
+* [.NET Core Docker samples](https://github.com/dotnet/dotnet-docker/tree/master/samples)
 * [Dockerfile on Windows Containers](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
 * [.NET Framework Docker samples](https://github.com/Microsoft/dotnet-framework-docker-samples)
 * [ASP.NET Core on DockerHub](https://hub.docker.com/r/microsoft/aspnetcore/)

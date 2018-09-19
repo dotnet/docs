@@ -62,5 +62,6 @@ XSLT parameters are added to the <xref:System.Xml.Xsl.XsltArgumentList> using th
 </order>  
 ```  
   
-## See Also  
- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+## See also
+
+- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)

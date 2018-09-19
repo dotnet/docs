@@ -1,4 +1,4 @@
----
+﻿---
 title: "Enhanced Strong Naming"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
@@ -84,8 +84,36 @@ A strong name signature is an identity mechanism in the .NET Framework for ident
 4.  Generate the parameters for a <xref:System.Reflection.AssemblySignatureKeyAttribute> attribute, and attach the attribute to the assembly.  
   
     ```  
-    sn -ac IdentityPubKey.snk IdentityKey.snk SignaturePubKey.snk  
+    sn -a IdentityPubKey.snk IdentityKey.snk SignaturePubKey.snk  
     ```  
+
+    This produces output similar to the following.
+
+    ```
+    Information for key migration attribute.
+    (System.Reflection.AssemblySignatureKeyAttribute):
+    publicKey=
+    002400000c80000094000000060200000024000052534131000400000100010005a3a81ac0a519
+    d96244a9c589fc147c7d403e40ccf184fc290bdd06c7339389a76b738e255a2bce1d56c3e7e936
+    e4fc87d45adc82ca94c716b50a65d39d373eea033919a613e4341c66863cb2dc622bcb541762b4
+    3893434d219d1c43f07e9c83fada2aed400b9f6e44ff05e3ecde6c2827830b8f43f7ac8e3270a3
+    4d153cdd
+
+    counterSignature=
+    e3cf7c211678c4d1a7b8fb20276c894ab74c29f0b5a34de4d61e63d4a997222f78cdcbfe4c91eb
+    e1ddf9f3505a32edcb2a76f34df0450c4f61e376b70fa3cdeb7374b1b8e2078b121e2ee6e8c6a8
+    ed661cc35621b4af53ac29c9e41738f199a81240e8fd478c887d1a30729d34e954a97cddce66e3
+    ae5fec2c682e57b7442738
+    ```
+
+    This output can then be transformed into an AssemblySignatureKeyAttribute.
+
+    ```
+    [assembly:System.Reflection.AssemblySignatureKeyAttribute(
+    "002400000c80000094000000060200000024000052534131000400000100010005a3a81ac0a519d96244a9c589fc147c7d403e40ccf184fc290bdd06c7339389a76b738e255a2bce1d56c3e7e936e4fc87d45adc82ca94c716b50a65d39d373eea033919a613e4341c66863cb2dc622bcb541762b43893434d219d1c43f07e9c83fada2aed400b9f6e44ff05e3ecde6c2827830b8f43f7ac8e3270a34d153cdd",
+    "e3cf7c211678c4d1a7b8fb20276c894ab74c29f0b5a34de4d61e63d4a997222f78cdcbfe4c91ebe1ddf9f3505a32edcb2a76f34df0450c4f61e376b70fa3cdeb7374b1b8e2078b121e2ee6e8c6a8ed661cc35621b4af53ac29c9e41738f199a81240e8fd478c887d1a30729d34e954a97cddce66e3ae5fec2c682e57b7442738"
+    )]
+    ```
   
 5.  Delay-sign the assembly with the identity public key.  
   

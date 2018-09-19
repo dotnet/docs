@@ -33,15 +33,9 @@ public abstract class Enumeration : IComparable
 
     public static IEnumerable<T> GetAll<T>() where T : Enumeration
     {
-        var type = typeof(T);
-        var fields = type.GetFields(
-            BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly);
+        var fields = typeof(T).GetFields(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly);
 
-        foreach (var info in fields)
-        {
-            if (info.GetValue(null) is T locatedValue)
-                yield return locatedValue;
-        }
+        return fields.Select(f => f.GetValue(null)).Cast<T>();
     }
 
     public override bool Equals(object obj)
@@ -69,7 +63,7 @@ public abstract class Enumeration : IComparable
 You can use this class as a type in any entity or value object, as for the following CardType Enumeration class:
 
 ```csharp
-public class CardType : Enumeration
+public abstract class CardType : Enumeration
 {
     public static CardType Amex = new CardType(1, "Amex");
     public static CardType Visa = new CardType(2, "Visa");
@@ -79,12 +73,6 @@ public class CardType : Enumeration
         : base(id, name)
     {
     }
-
-    public static IEnumerable<CardType> List()
-    {
-        return new[] { Amex, Visa, MasterCard };
-    }
-    // Other util methods
 }
 ```
 

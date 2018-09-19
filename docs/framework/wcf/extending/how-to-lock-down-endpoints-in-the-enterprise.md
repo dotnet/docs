@@ -13,7 +13,7 @@ Large enterprises often require that applications are developed in compliance wi
 >   
 >  -- Mark your common behavior with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute so that it can run when deployed as a Partial Trust application. Note that a registry entry can be set on the computer to prevent APTCA-marked assemblies from running..  
 >   
->  -- Ensure that if the application is deployed as a fully-trusted application that users cannot modify the code-access security settings to run the application in a Partial Trust environment. If they can do so, the custom validator does not run and no exception is thrown. For one way to ensure this, see the `levelfinal` option using [Code Access Security Policy Tool (Caspol.exe)](http://go.microsoft.com/fwlink/?LinkId=248222).  
+>  -- Ensure that if the application is deployed as a fully-trusted application that users cannot modify the code-access security settings to run the application in a Partial Trust environment. If they can do so, the custom validator does not run and no exception is thrown. For one way to ensure this, see the `levelfinal` option using [Code Access Security Policy Tool (Caspol.exe)](https://go.microsoft.com/fwlink/?LinkId=248222).  
 >   
 >  For more information, see [Partial Trust Best Practices](../../../../docs/framework/wcf/feature-details/partial-trust-best-practices.md) and [Supported Deployment Scenarios](../../../../docs/framework/wcf/feature-details/supported-deployment-scenarios.md).  
   
@@ -27,13 +27,13 @@ Large enterprises often require that applications are developed in compliance wi
   
      [!code-csharp[LockdownValidation#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/lockdownvalidation/cs/internetclientvalidatorelement.cs#3)]  
   
-3.  Make sure the compiled assembly is signed with a strong name. For details, see the [Strong Name Tool (SN.EXE)](http://go.microsoft.com/fwlink/?LinkId=248217) and the compiler commands for your language.  
+3.  Make sure the compiled assembly is signed with a strong name. For details, see the [Strong Name Tool (SN.EXE)](https://go.microsoft.com/fwlink/?LinkId=248217) and the compiler commands for your language.  
   
 ### To install the validator into the target computer  
   
 1.  Install the endpoint validator using the appropriate mechanism. In an enterprise, this can be using Group Policy and Systems Management Server (SMS).  
   
-2.  Install the strongly-named assembly into the global assembly cache using the [Gacutil.exe (Global Assembly Cache Tool)](http://msdn.microsoft.com/library/ex0ss12c\(v=vs.110\).aspx).  
+2.  Install the strongly-named assembly into the global assembly cache using the [Gacutil.exe (Global Assembly Cache Tool)](https://msdn.microsoft.com/library/ex0ss12c\(v=vs.110\).aspx).  
   
 3.  Use the <xref:System.Configuration?displayProperty=nameWithType> namespace types to:  
   
@@ -58,5 +58,5 @@ Large enterprises often require that applications are developed in compliance wi
  You may also want to encrypt the configuration file elements. For more information, see the See Also section.  
   
 ## See Also  
- [Encrypting configuration file elements using DPAPI](http://go.microsoft.com/fwlink/?LinkId=94954)  
- [Encrypting configuration file elements using RSA](http://go.microsoft.com/fwlink/?LinkId=94955)
+ [Encrypting configuration file elements using DPAPI](https://go.microsoft.com/fwlink/?LinkId=94954)  
+ [Encrypting configuration file elements using RSA](https://go.microsoft.com/fwlink/?LinkId=94955)

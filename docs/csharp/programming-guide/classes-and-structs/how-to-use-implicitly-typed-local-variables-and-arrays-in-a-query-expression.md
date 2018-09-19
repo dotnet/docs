@@ -20,9 +20,10 @@ You can use implicitly typed local variables whenever you want the compiler to d
   
  [!code-csharp[csProgGuideLINQ#33](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression_2.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Extension Methods](../../../csharp/programming-guide/classes-and-structs/extension-methods.md)  
- [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
- [var](../../../csharp/language-reference/keywords/var.md)  
- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Extension Methods](../../../csharp/programming-guide/classes-and-structs/extension-methods.md)  
+- [LINQ (Language-Integrated Query)](../../../csharp/linq/index.md)  
+- [var](../../../csharp/language-reference/keywords/var.md)  
+- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)

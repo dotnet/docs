@@ -7,7 +7,6 @@ ms.date: 05/16/2016
 
 This topic describes the method that you use to set the entry point to an F# program.
 
-
 ## Syntax
 
 ```fsharp
@@ -16,6 +15,7 @@ let-function-binding
 ```
 
 ## Remarks
+
 In the previous syntax, *let-function-binding* is the definition of a function in a `let` binding.
 
 The entry point to a program that is compiled as an executable file is where execution formally starts. You specify the entry point to an F# application by applying the `EntryPoint` attribute to the program's `main` function. This function (created by using a `let` binding) must be the last function in the last compiled file. The last compiled file is the last file in the project or the last file that is passed to the command line.
@@ -33,10 +33,10 @@ Arguments passed to function : [|"1"; "2"; "3"|]
 ```
 
 ## Implicit Entry Point
+
 When a program has no **EntryPoint** attribute that explicitly indicates the entry point, the top level bindings in the last file to be compiled are used as the entry point.
 
+## See also
 
-## See Also
-[Functions](index.md)
-
-[let Bindings](let-bindings.md)
+- [Functions](index.md)
+- [let Bindings](let-bindings.md)

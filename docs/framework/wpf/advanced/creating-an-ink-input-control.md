@@ -94,4 +94,4 @@ You can create a custom control that dynamically and statically renders ink. Tha
   
 ## See Also  
  [Advanced Ink Handling](../../../../docs/framework/wpf/advanced/advanced-ink-handling.md)  
- [Accessing and Manipulating Pen Input](http://go.microsoft.com/fwlink/?LinkId=50752&clcid=0x409)
+ [Accessing and Manipulating Pen Input](https://go.microsoft.com/fwlink/?LinkId=50752&clcid=0x409)

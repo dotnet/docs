@@ -19,7 +19,7 @@ ms.assetid: 7924cf94-c9a6-4015-afc9-f5d22b1743bb
 ## Interoperable Data Access  
  [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] builds on standard Internet protocols to make data services interoperable with applications that do not use the .NET Framework. Because you can use standard URIs to address data, your application can access and change data by using the semantics of representational state transfer (REST), specifically the standard HTTP verbs of GET, PUT, POST, and DELETE. This enables you to access these services from any client that can parse and access data that is transmitted over standard HTTP protocols.  
   
- [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] defines a set of extensions to the Atom Publishing Protocol (AtomPub). It supports HTTP requests and responses in more than one data format to accommodate various client applications and platforms. An [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed can represent data in Atom, JavaScript Object Notation (JSON), and as plain XML. While Atom is the default format, the format of the feed is specified in the header of the HTTP request. For more information, see [OData: Atom Format](http://go.microsoft.com/fwlink/?LinkID=185794) and [OData: JSON Format](http://go.microsoft.com/fwlink/?LinkID=185795).  
+ [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] defines a set of extensions to the Atom Publishing Protocol (AtomPub). It supports HTTP requests and responses in more than one data format to accommodate various client applications and platforms. An [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed can represent data in Atom, JavaScript Object Notation (JSON), and as plain XML. While Atom is the default format, the format of the feed is specified in the header of the HTTP request. For more information, see [OData: Atom Format](https://go.microsoft.com/fwlink/?LinkID=185794) and [OData: JSON Format](https://go.microsoft.com/fwlink/?LinkID=185795).  
   
  When publishing data as an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed, [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] relies on other existing Internet facilities for such operations as caching and authentication. To accomplish this, [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] integrates with existing hosting applications and services, such as ASP.NET, Windows Communication Foundation (WCF), and Internet Information Services (IIS).  
   
@@ -42,7 +42,7 @@ ms.assetid: 7924cf94-c9a6-4015-afc9-f5d22b1743bb
   
  [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] includes client libraries for both .NET Framework-based and Silverlight-based client applications. These client libraries enable you to interact with data services by using .NET Framework objects. They also support object-based queries and LINQ queries, loading related objects, change tracking, and identity resolution. For more information, see [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md).  
   
- In addition to the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] client libraries included with the .NET Framework and with Silverlight, there are other client libraries that enable you to consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed in client applications, such as PHP, AJAX, and Java applications. For more information, see the [OData SDK](http://go.microsoft.com/fwlink/?LinkID=185796).  
+ In addition to the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] client libraries included with the .NET Framework and with Silverlight, there are other client libraries that enable you to consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed in client applications, such as PHP, AJAX, and Java applications. For more information, see the [OData SDK](https://go.microsoft.com/fwlink/?LinkID=185796).  
   
 ## Architecture Overview  
  The following diagram illustrates the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] architecture for exposing [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feeds and using these feeds in [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]-enabled client libraries:  
@@ -53,6 +53,6 @@ ms.assetid: 7924cf94-c9a6-4015-afc9-f5d22b1743bb
  [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)  
  [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)  
  [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)  
- [Accessing a Data Service (WCF Data Services)](http://msdn.microsoft.com/library/1e54a2b9-2ec6-4002-b8f8-c1d8df37c350)  
+ [Accessing a Data Service (WCF Data Services)](https://msdn.microsoft.com/library/1e54a2b9-2ec6-4002-b8f8-c1d8df37c350)  
  [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
- [Representational State Transfer (REST)](http://go.microsoft.com/fwlink/?LinkId=113919)
+ [Representational State Transfer (REST)](https://go.microsoft.com/fwlink/?LinkId=113919)

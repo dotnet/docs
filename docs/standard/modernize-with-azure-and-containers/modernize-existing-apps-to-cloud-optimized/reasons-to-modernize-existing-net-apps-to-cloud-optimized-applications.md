@@ -23,7 +23,7 @@ Your application is Cloud-Optimized if you can-in an agile manner-develop your a
 
 The key is *agility*. You can't ship with agility unless you reduce to an absolute minimum any deployment-to-production issues and dev/test environment issues. Containers (specifically, Docker, as a de facto standard) and managed services were designed specifically for this purpose.
 
-To achieve agility, you also need automated DevOps processes that are based on CI/CD pipelines that release to scalable platforms in the cloud. CI/CD platforms (like Visual Studio Team Services or Jenkins) that deploy to a scalable and resilient cloud platform (like Azure App Service, Azure Service Fabric or Azure Kubernetes Service) are key technologies for achieving agility in the cloud.
+To achieve agility, you also need automated DevOps processes that are based on CI/CD pipelines that release to scalable platforms in the cloud. CI/CD platforms (like Azure DevOps Services or Jenkins) that deploy to a scalable and resilient cloud platform (like Azure App Service, Azure Service Fabric or Azure Kubernetes Service) are key technologies for achieving agility in the cloud.
 
 The following list describes the main tenets or practices for Cloud-Optimized applications. Note that you can adopt all or only some of these principles, in a progressive or incremental approach:
 

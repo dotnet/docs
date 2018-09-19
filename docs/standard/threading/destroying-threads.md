@@ -60,7 +60,8 @@ catch (ThreadAbortException ex)
   
  You can prevent the system from rethrowing the exception by calling the <xref:System.Threading.Thread.ResetAbort%2A?displayProperty=nameWithType> method. However, you should do this only if your own code caused the <xref:System.Threading.ThreadAbortException>.  
   
-## See Also  
- <xref:System.Threading.ThreadAbortException>  
- <xref:System.Threading.Thread>  
- [Using Threads and Threading](../../../docs/standard/threading/using-threads-and-threading.md)
+## See also
+
+- <xref:System.Threading.ThreadAbortException>  
+- <xref:System.Threading.Thread>  
+- [Using Threads and Threading](../../../docs/standard/threading/using-threads-and-threading.md)

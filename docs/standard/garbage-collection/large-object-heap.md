@@ -8,9 +8,6 @@ helpviewer_keywords:
   - "GC [.NET ], large object heap"
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # The large object heap on Windows systems
 
@@ -85,7 +82,7 @@ Allocations on the large object heap impact performance in the following ways.
 
 - Allocation cost.
 
-  The CLR makes the guarantee that the memory for every new object it gives out is cleared. This means the allocation cost of a large object is completely dominated by memory clearing (unless it triggers a GC). If it takes 2 cycles to clear one byte, it takes 170,000 cycles to clear the smallest large object. Clearing the memmory of a 16MB object on a 2GHz machine takes approximately 16ms. That's a rather large cost.
+  The CLR makes the guarantee that the memory for every new object it gives out is cleared. This means the allocation cost of a large object is completely dominated by memory clearing (unless it triggers a GC). If it takes 2 cycles to clear one byte, it takes 170,000 cycles to clear the smallest large object. Clearing the memory of a 16MB object on a 2GHz machine takes approximately 16ms. That's a rather large cost.
 
 - Collection cost.
 
@@ -204,7 +201,7 @@ As you can see, this is a very simple test that just allocates large objects fro
 If all you have is a memory dump and you need to look at what objects are actually on the LOH, you can use the [SoS debugger extension](http://msdn2.microsoft.com/ms404370.aspx) provided by .NET.
 
 > [!NOTE]
-> The debugging commands mentioned in this section are applicable to the [Windows Debuggers](http://www.microsoft.com/whdc/devtools/debugging/default.mspx).
+> The debugging commands mentioned in this section are applicable to the [Windows Debuggers](https://www.microsoft.com/whdc/devtools/debugging/default.mspx).
 
 The following shows sample output from analyzing the LOH:
 

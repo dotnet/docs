@@ -131,5 +131,5 @@ This topic shows how to create a simple generic type with two type parameters, h
   
 ## See Also  
  <xref:System.Reflection.Emit.GenericTypeParameterBuilder>  
- [Using Reflection Emit](http://msdn.microsoft.com/library/ccc6540d-0e2c-4d89-b456-eb7353f9e9ac)  
- [Reflection Emit Dynamic Assembly Scenarios](http://msdn.microsoft.com/library/e1cc6750-e20f-473b-bb4e-f43bc66aecce)
+ [Using Reflection Emit](https://msdn.microsoft.com/library/ccc6540d-0e2c-4d89-b456-eb7353f9e9ac)  
+ [Reflection Emit Dynamic Assembly Scenarios](https://msdn.microsoft.com/library/e1cc6750-e20f-473b-bb4e-f43bc66aecce)

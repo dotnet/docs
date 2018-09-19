@@ -48,6 +48,7 @@ The default date and time formatting methods, such as <xref:System.DateTime.ToSt
 ## Compiling the Code  
  Compile the code at the command line using csc.exe or vb.exe. To compile the code in Visual Studio, put it in a console application project template.  
   
-## See Also  
- <xref:System.Globalization.DateTimeFormatInfo>  
- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)
+## See also
+
+- <xref:System.Globalization.DateTimeFormatInfo>  
+- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)

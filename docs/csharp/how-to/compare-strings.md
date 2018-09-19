@@ -6,13 +6,13 @@ helpviewer_keywords:
   - "strings [C#], comparison"
   - "comparing strings [C#]"
 ---
-# How to compare strings in C# #
+# How to compare strings in C\#
 
 You compare strings to answer one of two questions: "Are these two strings
 equal?" or "In what order should these strings be placed when sorting them?"
 
-Those two questions are complicated by factors that affect string
-comparisons: 
+Those two questions are complicated by factors that affect string comparisons:
+
 - You can choose an ordinal or linguistic comparison.
 - You can choose if case matters.
 - You can choose culture specific comparisons.
@@ -65,7 +65,7 @@ in sort order. In addition, some Unicode characters may be equivalent to a
 sequence of alphanumeric characters. The following example uses the phrase
 "They dance in the street." in German with the "ss" and 'ß'. Linguistically
 (in Windows), "ss" is equal to the German Essetz: 'ß' character in both "en-US"
-and "de-DE" cultures. 
+and "de-DE" cultures.
 
 [!code-csharp-interactive[Comparing strings using linguistic rules](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#3)]
 
@@ -117,7 +117,7 @@ Linguistic comparisions are dependent on the current culture, and are OS depende
 
 The following examples show how to sort and search for strings in an array using a linguistic comparison dependent on the current culture. You use the static <xref:System.Array> methods that take a <xref:System.StringComparer?displayProperty=nameWithType> parameter.
 
-This example shows how to sort an array of strings using the current culture: 
+This example shows how to sort an array of strings using the current culture:
 
 [!code-csharp-interactive[Sorting an array of strings](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#5)]
 
@@ -135,7 +135,7 @@ Once sorted, the list of strings can be searched using a binary search. The foll
 
 [!code-csharp-interactive[csProgGuideStrings#11](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#8)]
 
-Always make sure to use the same type of comparison for sorting and searching. Using different comparison types for sorting and searching produces unexpected results. 
+Always make sure to use the same type of comparison for sorting and searching. Using different comparison types for sorting and searching produces unexpected results.
 
 Collection classes such as <xref:System.Collections.Hashtable?displayProperty=nameWithType>, <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>, and <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> have constructors that take a <xref:System.StringComparer?displayProperty=nameWithType> parameter when the type of the elements or keys is `string`. In general, you should use these constructors whenever possible, and specify either <xref:System.StringComparer.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparer.OrdinalIgnoreCase?displayProperty=nameWithType>.
 
@@ -150,8 +150,9 @@ are the same object. This can lead to inconsistent results in string comparisons
 > When you test for equality of strings, you should use the methods that explicitly specify what kind of comparison you intend to perform. Your code is much more maintainable and readable. Use the overloads of the methods of the <xref:System.String?displayProperty=nameWithType> and <xref:System.Array?displayProperty=nameWithType> classes that take a <xref:System.StringComparison> enumeration parameter. You specify which type of comparison to perform. Avoid using the `==` and `!=` operators when you test for equality. The <xref:System.String.CompareTo%2A?displayProperty=nameWithType> instance methods always perform an ordinal case-sensitive comparison. They are primarily suited for ordering strings alphabetically.
 
 ## See also
- <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>  
- <xref:System.StringComparer?displayProperty=nameWithType>  
- [Strings](../programming-guide/strings/index.md)  
- [Comparing Strings](../../standard/base-types/comparing.md)  
- [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications)
+
+- <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>  
+- <xref:System.StringComparer?displayProperty=nameWithType>  
+- [Strings](../programming-guide/strings/index.md)  
+- [Comparing Strings](../../standard/base-types/comparing.md)  
+- [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications)

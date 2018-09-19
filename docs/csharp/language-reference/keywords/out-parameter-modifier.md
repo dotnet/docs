@@ -35,9 +35,7 @@ The compiler chooses the best overload by matching the parameter modifiers at th
  
 Properties are not variables and therefore cannot be passed as `out` parameters.
   
- For information about passing arrays, see [Passing Arrays Using ref and out](../../../csharp/programming-guide/arrays/passing-arrays-using-ref-and-out.md).  
-  
- You can't use the `in`, `ref`, and `out` keywords for the following kinds of methods:  
+You can't use the `in`, `ref`, and `out` keywords for the following kinds of methods:  
   
 -   Async methods, which you define by using the [async](../../../csharp/language-reference/keywords/async.md) modifier.  
   
@@ -68,8 +66,9 @@ In the previous example, the `number` variable is strongly typed as an `int`. Yo
 ## C# Language Specification  
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Method Parameters](../../../csharp/language-reference/keywords/method-parameters.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Method Parameters](../../../csharp/language-reference/keywords/method-parameters.md)

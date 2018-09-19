@@ -26,14 +26,14 @@ Add-in pipeline
   
  If you load the host and the add-in into separate application domains, you have an isolation boundary that separates the scope of the host application from the scope of the add-in. The contract is the only assembly that is loaded in both the host and add-in application domains. The host and the add-in each refer only to their view of the contract methods. Therefore, they are separated by a layer of abstraction from the contract.  
   
- To develop pipeline segments, you must create a directory structure that will contain them. For more information about development requirements and scope guidelines, see [Pipeline Development Requirements](http://msdn.microsoft.com/library/ef9fa986-e80b-43e1-868b-247f4c1d9da5).  
+ To develop pipeline segments, you must create a directory structure that will contain them. For more information about development requirements and scope guidelines, see [Pipeline Development Requirements](https://msdn.microsoft.com/library/ef9fa986-e80b-43e1-868b-247f4c1d9da5).  
   
  The following illustration shows the types that make up the pipeline segments. The names of the types shown in the illustration are arbitrary, but all types except for the host and the host view of the add-in require attributes so they can be discovered by methods that construct an information store.  
   
  ![Add&#45;in model with required attributes on types.](../../../docs/framework/add-ins/media/addin-model.png "AddIn_Model")  
 Add-in pipeline with types  
   
- The following table describes the pipeline segments for activating an add-in. For more information about these segments, see [Contracts, Views, and Adapters](http://msdn.microsoft.com/library/a6460173-9507-4b87-8c07-d4ee245d715c).  
+ The following table describes the pipeline segments for activating an add-in. For more information about these segments, see [Contracts, Views, and Adapters](https://msdn.microsoft.com/library/a6460173-9507-4b87-8c07-d4ee245d715c).  
   
 |Pipeline segment|Description|  
 |----------------------|-----------------|  
@@ -74,14 +74,14 @@ Activation path from the add-in to the host
   
      Describes a calculator add-in that performs addition, subtraction, multiplication, and divsion calculations for the host.  
   
--   [Walkthrough: Enabling Backward Compatibility as Your Host Changes](http://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848)  
+-   [Walkthrough: Enabling Backward Compatibility as Your Host Changes](https://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848)  
   
      Describes a calculator add-in with enhanced calculation capabilities, and how to maintain compatibility with the first calculator add-in.  
   
--   [Walkthrough: Passing Collections Between Hosts and Add-Ins](http://msdn.microsoft.com/library/b532c604-548e-4fab-b11c-377257dd0ee5)  
+-   [Walkthrough: Passing Collections Between Hosts and Add-Ins](https://msdn.microsoft.com/library/b532c604-548e-4fab-b11c-377257dd0ee5)  
   
      Describes how to pass data collections over the pipeline using a book store scenario.  
   
 ## See Also  
- [Add-in Pipeline Scenarios](http://msdn.microsoft.com/library/feb70e0b-8734-494c-aeaf-b567f014043e)  
+ [Add-in Pipeline Scenarios](https://msdn.microsoft.com/library/feb70e0b-8734-494c-aeaf-b567f014043e)  
  [Add-ins and Extensibility](../../../docs/framework/add-ins/index.md)

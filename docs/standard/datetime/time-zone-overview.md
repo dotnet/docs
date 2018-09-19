@@ -69,4 +69,4 @@ For details on converting times between time zones, see [Converting times betwee
 
 ## See also
 
-[Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+* [Dates, times, and time zones](../../../docs/standard/datetime/index.md)

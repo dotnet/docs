@@ -45,6 +45,7 @@ When you deserialize an object, the transport format determines whether you will
     mySerializer.Deserialize(myFileStream)  
     ```  
   
-## See Also  
- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)
+## See also
+
+- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
+- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)

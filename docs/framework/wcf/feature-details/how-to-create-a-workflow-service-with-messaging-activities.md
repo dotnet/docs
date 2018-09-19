@@ -26,7 +26,7 @@ This topic describes how to create a simple workflow service using messaging act
   
      ![The toolbox with messaging tab expanded](../../../../docs/framework/wcf/feature-details/media/wfdesignertoolbox.JPG "WFDesignerToolbox")  
   
-2.  Drag and drop a **ReceiveAndSendReply** template to the workflow designer. This creates a <!--zz <xref:System.ServiceModel.Activities.Sequence>--> `System.ServiceModel.Activities.Sequence` activity with a **Receive** activity followed by a <xref:System.ServiceModel.Activities.SendReply> activity as shown in the following illustration.  
+2.  Drag and drop a **ReceiveAndSendReply** template to the workflow designer. This creates a <xref:System.Activities.Statements.Sequence> activity with a **Receive** activity followed by a <xref:System.ServiceModel.Activities.SendReply> activity as shown in the following illustration.  
   
      ![ReceiveAndSendReply template in designer](../../../../docs/framework/wcf/feature-details/media/receiveandsendreply.JPG "ReceiveAndSendReply")  
   
@@ -40,7 +40,7 @@ This topic describes how to create a simple workflow service using messaging act
   
      ![CanCreateInstance property](../../../../docs/framework/wcf/feature-details/media/cancreateinstance.JPG "CanCreateInstance")  
   
-5.  Select the <!--zz <xref:System.ServiceModel.Activities.Sequence>--> `System.ServiceModel.Activities.Sequence` activity and click the **Variables** button in the lower left corner of the designer. This displays the variables editor. Click the **Create Variable** link to add a variable to store the string sent to the operation. Name the variable `msg` and set its **Variable** type to String as shown in the following illustration.  
+5.  Select the <xref:System.Activities.Statements.Sequence> activity and click the **Variables** button in the lower left corner of the designer. This displays the variables editor. Click the **Create Variable** link to add a variable to store the string sent to the operation. Name the variable `msg` and set its **Variable** type to String as shown in the following illustration.  
   
      ![Add a variable](../../../../docs/framework/wcf/feature-details/media/addvariable.JPG "AddVariable")  
   

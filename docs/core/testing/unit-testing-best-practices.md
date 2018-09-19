@@ -325,7 +325,7 @@ public interface IDateTimeProvider
 
 public bool GetDiscountedPrice(int price, IDateTimeProvider dateTimeProvider)
 {
-    if(DateTime.Now == DayOfWeek.Tuesday) 
+    if(dateTimeProvider.DayOfWeek() == DayOfWeek.Tuesday) 
     {
         return price / 2;
     }

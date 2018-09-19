@@ -30,11 +30,12 @@ The <xref:System.Collections.Hashtable?displayProperty=nameWithType> class, and 
   
  The <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Concurrent.ConcurrentDictionary%602> classes have the same functionality as the <xref:System.Collections.Hashtable> class. A <xref:System.Collections.Generic.Dictionary%602> of a specific type (other than <xref:System.Object>) provides better performance than a <xref:System.Collections.Hashtable> for value types. This is because the elements of <xref:System.Collections.Hashtable> are of type <xref:System.Object>; therefore, boxing and unboxing typically occur when you store or retrieve a value type. The <xref:System.Collections.Concurrent.ConcurrentDictionary%602> class should be used when multiple threads might be accessing the collection simultaneously.  
   
-## See Also  
- <xref:System.Collections.Hashtable>  
- <xref:System.Collections.IDictionary>  
- <xref:System.Collections.IHashCodeProvider>  
- <xref:System.Collections.Generic.Dictionary%602>  
- <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>  
- <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=nameWithType>  
- [Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md)
+## See also
+
+- <xref:System.Collections.Hashtable>  
+- <xref:System.Collections.IDictionary>  
+- <xref:System.Collections.IHashCodeProvider>  
+- <xref:System.Collections.Generic.Dictionary%602>  
+- <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>  
+- <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=nameWithType>  
+- [Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md)

@@ -93,9 +93,10 @@ from order in Customer.Orders...
 ## Selecting (Projections)  
  The `select` clause produces the results of the query and specifies the "shape" or type of each returned element. For example, you can specify whether your results will consist of complete `Customer` objects, just one member, a subset of members, or some completely different result type based on a computation or new object creation. When the `select` clause produces something other than a copy of the source element, the operation is called a *projection*. The use of projections to transform data is a powerful capability of [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions. For more information, see [Data Transformations with LINQ (C#)](../../../../csharp/programming-guide/concepts/linq/data-transformations-with-linq.md) and [select clause](../../../../csharp/language-reference/keywords/select-clause.md).  
   
-## See Also  
- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)  
- [LINQ Query Expressions](../../../../csharp/programming-guide/linq-query-expressions/index.md)  
- [Walkthrough: Writing Queries in C#](../../../../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
- [Query Keywords (LINQ)](../../../../csharp/language-reference/keywords/query-keywords.md)  
- [Anonymous Types](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
+## See Also
+
+- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)  
+- [LINQ Query Expressions](../../../../csharp/programming-guide/linq-query-expressions/index.md)  
+- [Walkthrough: Writing Queries in C#](../../../../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
+- [Query Keywords (LINQ)](../../../../csharp/language-reference/keywords/query-keywords.md)  
+- [Anonymous Types](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)

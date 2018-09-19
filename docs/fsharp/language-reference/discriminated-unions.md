@@ -159,6 +159,6 @@ The following attributes are commonly seen in discriminated unions:
 * `[NoComparison]`
 * `[Struct]`
 
-## See Also
+## See also
 
-[F# Language Reference](index.md)
+- [F# Language Reference](index.md)

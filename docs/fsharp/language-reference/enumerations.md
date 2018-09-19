@@ -7,7 +7,6 @@ ms.date: 05/16/2016
 
 *Enumerations*, also known as *enums*, , are integral types where labels are assigned to a subset of the values. You can use them in place of literals to make code more readable and maintainable.
 
-
 ## Syntax
 
 ```fsharp
@@ -18,6 +17,7 @@ type enum-name =
 ```
 
 ## Remarks
+
 An enumeration looks much like a discriminated union that has simple values, except that the values can be specified. The values are typically integers that start at 0 or 1, or integers that represent bit positions. If an enumeration is intended to represent bit positions, you should also use the [Flags](xref:System.FlagsAttribute) attribute.
 
 The underlying type of the enumeration is determined from the literal that is used, so that, for example, you can use literals with a suffix, such as `1u`, `2u`, and so on, for an unsigned integer (`uint32`) type.
@@ -43,8 +43,8 @@ The default `enum` function works with type `int32`. Therefore, it cannot be use
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2104.fs)]
 
 Additionally, cases for enums are always emitted as `public`. This is so that they align with C# and the rest of the .NET platform.
-    
-## See Also
-[F# Language Reference](index.md)
 
-[Casting and Conversions](casting-and-conversions.md)
+## See also
+
+- [F# Language Reference](index.md)
+- [Casting and Conversions](casting-and-conversions.md)

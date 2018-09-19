@@ -101,4 +101,4 @@ Starting with .NET Core SDK 2.1 (v. 2.1.300), the `dotnet ef` command comes incl
 
 ## See also
 
-[How project SDKs are resolved](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved)
+* [How project SDKs are resolved](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved)

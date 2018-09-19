@@ -54,5 +54,5 @@ This example requires:
 
 ## See also
 
-[Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-[How to: Resolve ambiguous times](../../../docs/standard/datetime/resolve-ambiguous-times.md)
+* [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+* [How to: Resolve ambiguous times](../../../docs/standard/datetime/resolve-ambiguous-times.md)

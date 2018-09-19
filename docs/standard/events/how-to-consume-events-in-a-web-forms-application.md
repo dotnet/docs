@@ -45,5 +45,6 @@ A common scenario in ASP.NET Web Forms applications is to populate a webpage wit
   
 3.  In the event handler method that you defined in step 2, add code to perform any actions that are required when the event occurs.  
   
-## See Also  
- [Events](../../../docs/standard/events/index.md)
+## See also
+
+- [Events](../../../docs/standard/events/index.md)

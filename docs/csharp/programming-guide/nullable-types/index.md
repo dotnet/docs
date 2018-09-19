@@ -32,7 +32,7 @@ Nullable types have the following characteristics:
   
 - You can also use the `==` and `!=` operators with a nullable type, as shown in the following example: `if (x != null) y = x.Value;`. If `a` and `b` are both null, `a == b` evaluates to `true`.  
 
-- Beginning with C# 7.0, you can use pattern matching to both examine and get a value of a nullable type: `if (x is int xValue) y = xValue;`.
+- Beginning with C# 7.0, you can use [pattern matching](../../pattern-matching.md#the-is-type-pattern-expression) to both examine and get a value of a nullable type: `if (x is int valueOfX) y = valueOfX;`.
   
 - The default value of `T?` is an instance whose <xref:System.Nullable%601.HasValue%2A> property returns `false`.  
 
@@ -48,12 +48,12 @@ Nullable types have the following characteristics:
 
 For more information, see the [Using nullable types](using-nullable-types.md) and [How to: Identify a nullable type](how-to-identify-a-nullable-type.md) topics.
   
-## See also
+## See Also
 
- <xref:System.Nullable%601?displayProperty=nameWithType>  
- <xref:System.Nullable?displayProperty=nameWithType>  
- [?? Operator](../../language-reference/operators/null-coalescing-operator.md)  
- [C# Programming Guide](../index.md)  
- [C# Guide](../../index.md)  
- [C# Reference](../../language-reference/index.md)  
- [Nullable Value Types (Visual Basic)](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)  
+- <xref:System.Nullable%601?displayProperty=nameWithType>  
+- <xref:System.Nullable?displayProperty=nameWithType>  
+- [?? Operator](../../language-reference/operators/null-coalescing-operator.md)  
+- [C# Programming Guide](../index.md)  
+- [C# Guide](../../index.md)  
+- [C# Reference](../../language-reference/index.md)  
+- [Nullable Value Types (Visual Basic)](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)  

@@ -4,6 +4,7 @@ description: Learn how to debug a Hello World app written in C# or Visual Basic 
 author: BillWagner
 ms.author: wiwagn
 ms.date: 12/15/2017
+ms.custom: vs-dotnet
 ---
 # Debug your Hello World application with Visual Studio 2017
 

@@ -24,10 +24,11 @@ This example demonstrates how to use I/O classes to synchronously copy the conte
  [!code-csharp[System.IO.Directory_Copy#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Directory_Copy/cs/program.cs#1)]
  [!code-vb[System.IO.Directory_Copy#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Directory_Copy/vb/Program.vb#1)]  
   
-## See Also  
- <xref:System.IO.FileInfo>  
- <xref:System.IO.DirectoryInfo>  
- <xref:System.IO.FileStream>  
- [File and Stream I/O](../../../docs/standard/io/index.md)  
- [Common I/O Tasks](../../../docs/standard/io/common-i-o-tasks.md)  
- [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)
+## See also
+
+- <xref:System.IO.FileInfo>  
+- <xref:System.IO.DirectoryInfo>  
+- <xref:System.IO.FileStream>  
+- [File and Stream I/O](../../../docs/standard/io/index.md)  
+- [Common I/O Tasks](../../../docs/standard/io/common-i-o-tasks.md)  
+- [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)

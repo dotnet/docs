@@ -45,6 +45,7 @@ netstandard2.0
 netcoreapp1.0
 netcoreapp1.1
 netcoreapp2.0
+netcoreapp2.1
 portable-net45-win8
 portable-win8-wpa8
 portable-net451-win81

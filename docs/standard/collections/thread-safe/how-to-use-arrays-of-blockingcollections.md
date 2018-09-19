@@ -20,6 +20,7 @@ The following example shows how to use arrays of <xref:System.Collections.Concur
  [!code-csharp[CDS_BlockingCollection#07](../../../../samples/snippets/csharp/VS_Snippets_Misc/cds_blockingcollection/cs/example07.cs#07)]
  [!code-vb[CDS_BlockingCollection#07](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_blockingcollection/vb/bcpipeline.vb#07)]  
   
-## See Also  
- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)
+## See also
+
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
+- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)

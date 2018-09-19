@@ -27,13 +27,13 @@ ms.author: "mairaw"
   
      Enables you to use a more generic (less derived) type than originally specified.  
   
-     You can assign an instance of `IEnumerable<Base>` (`IEnumerable(Of Base)` in Visual Basic) to a variable of type `IEnumerable<Derived>`.  
+     You can assign an instance of `Action<Base>` (`Action(Of Base)` in Visual Basic) to a variable of type `Action<Derived>`.  
   
 -   `Invariance`  
   
      Means that you can use only the type originally specified; so an invariant generic type parameter is neither covariant nor contravariant.  
   
-     You cannot assign an instance of `IEnumerable<Base>` (`IEnumerable(Of Base)` in Visual Basic) to a variable of type `IEnumerable<Derived>` or vice versa.  
+     You cannot assign an instance of `List<Base>` (`List(Of Base)` in Visual Basic) to a variable of type `List<Derived>` or vice versa.  
   
  Covariant type parameters enable you to make assignments that look much like ordinary [Polymorphism](~/docs/csharp/programming-guide/classes-and-structs/polymorphism.md), as shown in the following code.  
   
@@ -182,7 +182,8 @@ ms.author: "mairaw"
 |<xref:System.Linq.IOrderedQueryable%601>|Yes||  
 |<xref:System.Linq.IQueryable%601>|Yes||  
   
-## See Also  
- [Covariance and Contravariance (C#)](../../csharp/programming-guide/concepts/covariance-contravariance/index.md)  
- [Covariance and Contravariance (Visual Basic)](../../visual-basic/programming-guide/concepts/covariance-contravariance/index.md)    
- [Variance in Delegates](https://msdn.microsoft.com/library/e3b98197-6c5b-4e55-9c6e-9739b60645ca)
+## See also
+
+- [Covariance and Contravariance (C#)](../../csharp/programming-guide/concepts/covariance-contravariance/index.md)  
+- [Covariance and Contravariance (Visual Basic)](../../visual-basic/programming-guide/concepts/covariance-contravariance/index.md)    
+- [Variance in Delegates](https://msdn.microsoft.com/library/e3b98197-6c5b-4e55-9c6e-9739b60645ca)

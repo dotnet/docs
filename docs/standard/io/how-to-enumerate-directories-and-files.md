@@ -59,5 +59,6 @@ You can enumerate directories and files by using methods that return an enumerab
      [!code-csharp[System.IO.DirectoryInfo.EnumerateDirectories#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.io.directoryinfo.enumeratedirectories/cs/program.cs#1)]
      [!code-vb[System.IO.DirectoryInfo.EnumerateDirectories#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.directoryinfo.enumeratedirectories/vb/program.vb#1)]  
   
-## See Also  
- [File and Stream I/O](../../../docs/standard/io/index.md)
+## See also
+
+- [File and Stream I/O](../../../docs/standard/io/index.md)

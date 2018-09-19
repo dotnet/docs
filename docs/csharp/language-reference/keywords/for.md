@@ -1,10 +1,10 @@
 ---
-title: "for (C# Reference)"
+title: C# for statement
 ms.date: 06/13/2018
-f1_keywords: 
+f1_keywords:
   - "for"
   - "for_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "for keyword [C#]"
 ms.assetid: 34041a40-2c87-467a-9ffb-a0417d8f67a8
 ---
@@ -13,14 +13,14 @@ ms.assetid: 34041a40-2c87-467a-9ffb-a0417d8f67a8
 The `for` statement executes a statement or a block of statements while a specified boolean expression evaluates to `true`.
 
 At any point within the `for` statement block, you can break out of the loop by using the [break](break.md) statement, or step to the next iteration in the loop by using the [continue](continue.md) statement. You also can exit a `for` loop by the [goto](goto.md), [return](return.md), or [throw](throw.md) statements.
-  
+
 ## Structure of the `for` statement
 
 The `for` statement defines *initializer*, *condition*, and *iterator* sections:
-  
+
 ```csharp
-for (initializer; condition; iterator)  
-    body  
+for (initializer; condition; iterator)
+    body
 ```
 
 All three sections are optional. The body of the loop is either a statement or a block of statements.
@@ -39,11 +39,11 @@ The statements in the *initializer* section are executed only once, before enter
 
   - [assignment](../operators/assignment-operator.md) statement
 
-  - invocation of a method  
+  - invocation of a method
 
-  - prefix or postfix [increment](../operators/increment-operator.md) expression, such as `++i` or `i++`  
+  - prefix or postfix [increment](../operators/increment-operator.md) expression, such as `++i` or `i++`
 
-  - prefix or postfix [decrement](../operators/decrement-operator.md) expression, such as `--i` or `i--`  
+  - prefix or postfix [decrement](../operators/decrement-operator.md) expression, such as `--i` or `i--`
 
   - creation of an object by using [new](new-operator.md) keyword
 
@@ -67,15 +67,15 @@ i < 5
 
 ### The *iterator* section
 
-The *iterator* section defines what happens after each iteration of the body of the loop. The *iterator* section contains zero or more of the following statement expressions, separated by commas:  
+The *iterator* section defines what happens after each iteration of the body of the loop. The *iterator* section contains zero or more of the following statement expressions, separated by commas:
 
 - [assignment](../operators/assignment-operator.md) statement
 
-- invocation of a method  
+- invocation of a method
 
-- prefix or postfix [increment](../operators/increment-operator.md) expression, such as `++i` or `i++`  
+- prefix or postfix [increment](../operators/increment-operator.md) expression, such as `++i` or `i++`
 
-- prefix or postfix [decrement](../operators/decrement-operator.md) expression, such as `--i` or `i--`  
+- prefix or postfix [decrement](../operators/decrement-operator.md) expression, such as `--i` or `i--`
 
 - creation of an object by using [new](new-operator.md) keyword
 
@@ -90,23 +90,23 @@ i++
 ## Examples
 
 The following example illustrates several less common usages of the `for` statement sections: assigning a value to an external loop variable in the *initializer* section, invoking a method in both the *initializer* and the *iterator* sections, and changing the values of two variables in the *iterator* section. Select **Run** to run the example code. After that you can modify the code and run it again.
-  
+
 [!code-csharp-interactive[not typical for loop example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#6)]
-  
+
 The following example defines the infinite `for` loop:
-  
+
 [!code-csharp[infinite for loop example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#7)]
-  
-## C# language specification  
+
+## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
-  
+
 ## See also
 
-[The for statement (C# language specification)](../language-specification/index.md)  
-[C# Reference](../index.md)  
-[C# Programming Guide](../../programming-guide/index.md)  
-[C# Keywords](index.md)  
-[foreach, in](foreach-in.md)  
-[for Statement (C++)](/cpp/cpp/for-statement-cpp)  
-[Iteration Statements](iteration-statements.md)
+- [The for statement (C# language specification)](/dotnet/csharp/language-reference/language-specification/statements#the-for-statement)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
+- [foreach, in](foreach-in.md)
+- [for Statement (C++)](/cpp/cpp/for-statement-cpp)
+- [Iteration Statements](iteration-statements.md)

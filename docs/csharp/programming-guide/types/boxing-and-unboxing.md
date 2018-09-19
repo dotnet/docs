@@ -83,13 +83,13 @@ Unboxing Conversion
   
  If you change the statement:  
   
-```  
+```csharp
 int j = (short) o;  
 ```  
   
  to:  
   
-```  
+```csharp
 int j = (int) o;  
 ```  
   
@@ -107,5 +107,6 @@ int j = (int) o;
   
 -   [Value Types](../../../csharp/language-reference/keywords/value-types.md)  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)

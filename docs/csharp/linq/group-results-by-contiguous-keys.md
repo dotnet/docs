@@ -1,7 +1,7 @@
 ---
 title: Group results by contiguous keys (LINQ in C#)
 description: How to group results by contiguous keys using LINQ in C#.
-ms.date: 12/1/2016
+ms.date: 08/14/2018
 ms.assetid: cbda9c08-151b-4c9e-82f7-c3d7f3dac66b
 ---
 # Group results by contiguous keys
@@ -45,4 +45,4 @@ To use the extension method in your project, copy the `MyExtensions` static clas
 
 ## See also
 
-[Language Integrated Query (LINQ)](index.md)
+- [Language Integrated Query (LINQ)](index.md)

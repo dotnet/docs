@@ -247,6 +247,6 @@ For more information regarding node event handling, see [Events](../../../../doc
 
 If you are overriding the <xref:System.Xml.XmlDocument.CreateElement%2A> method in a derived class, default attributes are not added when you are creating new elements while editing the document. This is only an issue while editing. Because the <xref:System.Xml.XmlDocument.CreateElement%2A> method is responsible for adding default attributes to an <xref:System.Xml.XmlDocument>, you must code this functionality in the <xref:System.Xml.XmlDocument.CreateElement%2A> method. If you are loading an <xref:System.Xml.XmlDocument> that includes default attributes, they will be handled correctly. For more information on default attributes, see [Creating New Attributes for Elements in the DOM](creating-new-attributes-for-elements-in-the-dom.md).
 
-## See Also
+## See also
 
-[XML Document Object Model (DOM)](xml-document-object-model-dom.md)  
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)  

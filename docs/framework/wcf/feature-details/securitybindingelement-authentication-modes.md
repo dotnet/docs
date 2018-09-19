@@ -91,7 +91,7 @@ Windows Communication Foundation (WCF) provides several modes by which clients a
 ### MutualCertificateDuplex  
  With this authentication mode, the client authenticates using an X.509 certificate that appears at the SOAP layer as an endorsing supporting token; that is, a token that signs the message signature. The service is also authenticated using an X.509 certificate. The binding is a `AsymmetricSecurityBindingElement` returned by the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateMutualCertificateDuplexBindingElement%2A> method. Alternatively, set the `authenticationMode` attribute to `MutualCertificateDuplex`.  
   
-### MutalSslNegotiation  
+### MutualSslNegotiated  
  With this authentication mode, the client and the service authenticate using X.509 certificates. The security binding element is a `SymmetricSecurityBindingElement` returned by the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSslNegotiationBindingElement%2A> method when a value of `true` is passed for the first parameter. Alternatively, set the `authenticationMode` attribute to `MutualSslNegotiated`.  
   
 ### SecureConversation  

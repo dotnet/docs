@@ -10,7 +10,7 @@ ms.date: 08/01/2018
 .NET Core has the following characteristics:
 
 - **Cross-platform:** Runs on Windows, macOS and Linux [operating systems](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md).
-- **Consistent across architecures:** Runs your code with the same behavior on multiple architectures, including x64, x86, and ARM.
+- **Consistent across architectures:** Runs your code with the same behavior on multiple architectures, including x64, x86, and ARM.
 - **Command-line tools:**  Includes easy-to-use command-line tools that be used for local development and in continuous-integration scenarios.
 - **Flexible deployment:** Can be included in your app or installed side-by-side user- or machine-wide. Can be used with [Docker containers](docker/index.md).
 - **Compatible:** .NET Core is compatible with .NET Framework, Xamarin and Mono, via [.NET Standard](../standard/net-standard.md).
@@ -25,7 +25,7 @@ C#, Visual Basic, and F# languages can be used to write applications and librari
 
 .NET Core exposes APIs for many scenarios, a few of which follow:
 
-- Primitive types, such as [string][string] and [int][int].
+- Primitive types, such as [bool][bool] and [int][int].
 - Collections, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.
 - Utility types, such as <xref:System.Net.Http.HttpClient?displayProperty=nameWithType>, and <xref:System.IO.FileStream?displayProperty=nameWithType>.
 - Data types, such as <xref:System.Data.DataSet?displayProperty=nameWithType>, and [DbSet][dbset].
@@ -33,7 +33,7 @@ C#, Visual Basic, and F# languages can be used to write applications and librari
 
 .NET Core provides compatibility with .NET Framework and Mono APIs by implementing the [.NET Standard](../standard/net-standard.md) specification.
 
-[string]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/string
+[bool]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/bool
 [int]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/int
 [pipelines]: https://blogs.msdn.microsoft.com/dotnet/2018/07/09/system-io-pipelines-high-performance-io-in-net/
 [dbset]: https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/
@@ -96,7 +96,7 @@ It is perhaps easiest to understand the size and shape of .NET Core by comparing
 The major differences between .NET Core and the .NET Framework:
 
 - **App-models** -- .NET Core does not support all the .NET Framework app-models. In particular, it doesn't support ASP.NET Web Forms and MVC. It was announced that [.NET Core 3 will support WPF and Windows Forms](https://blogs.msdn.microsoft.com/dotnet/2018/05/07/net-core-3-and-support-for-windows-desktop-applications/).
-- **APIs** -- .NET Core contains a large subset of .NET Framework Base Class Library, with a different factoring (assembly names are different; members exposed on types differ in key cases). These differences require changes to port source to .NET Core in some cases (see [microsoft/dotnet-apiport[(https://github.com/microsoft/dotnet-apiport)). .NET Core implements the [.NET Standard](../standard/net-standard.md) API specification.
+- **APIs** -- .NET Core contains a large subset of .NET Framework Base Class Library, with a different factoring (assembly names are different; members exposed on types differ in key cases). These differences require changes to port source to .NET Core in some cases (see [microsoft/dotnet-apiport](https://github.com/microsoft/dotnet-apiport)). .NET Core implements the [.NET Standard](../standard/net-standard.md) API specification.
 - **Subsystems** -- .NET Core implements a subset of the subsystems in the .NET Framework, with the goal of a simpler implementation and programming model. For example, Code Access Security (CAS) is not supported, while reflection is supported.
 - **Platforms** -- The .NET Framework supports Windows and Windows Server while .NET Core also supports macOS and Linux.
 - **Open Source** -- .NET Core is open source, while a [read-only subset of the .NET Framework](https://github.com/microsoft/referencesource) is open source.

@@ -11,7 +11,7 @@ The Policy4 activity allows Windows Workflow Foundation in [!INCLUDE[netfx35_lon
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\Rules-Policy4`  
   
@@ -19,7 +19,7 @@ The Policy4 activity allows Windows Workflow Foundation in [!INCLUDE[netfx35_lon
   
 |Project Name|Description|Main Files|  
 |------------------|-----------------|----------------|  
-|Policy4|Contains the Policy4 activity and its [!INCLUDE[wf1](../../../../includes/wf1-md.md)] designer.|**Policy4.cs**: Policy4 activity definition.<br /><br /> **PolicyDesigner.xaml**: Custom designer for Policy4 activity. It uses the rules editor ([RuleSetDialog Class](http://go.microsoft.com/fwlink/?LinkId=150378)) from [!INCLUDE[wf1](../../../../includes/wf1-md.md)] rules engine.|  
+|Policy4|Contains the Policy4 activity and its [!INCLUDE[wf1](../../../../includes/wf1-md.md)] designer.|**Policy4.cs**: Policy4 activity definition.<br /><br /> **PolicyDesigner.xaml**: Custom designer for Policy4 activity. It uses the rules editor ([RuleSetDialog Class](https://go.microsoft.com/fwlink/?LinkId=150378)) from [!INCLUDE[wf1](../../../../includes/wf1-md.md)] rules engine.|  
 |ImperativeCodeClientSample|Sample client application that configures and runs a workflow using a Policy4 application using imperative C# code (no [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Designer used).|**ApplyDiscount.rules**: File with [!INCLUDE[wf1](../../../../includes/wf1-md.md)] rule definitions.<br /><br /> **Order.cs**: Type that represents a customer order. Rules are applied to objects of this type.<br /><br /> **Program.cs**: Configures and runs a workflow that has a Policy4 activity to apply rules defined in ApplyDiscount.rules to instances of Order objects.<br /><br /> **App.config**: Configuration file with the path of the rules file.|  
 |DesignerClientSample|Sample client application that configures and runs a workflow using a Policy4 application in the [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Designer.|**Sequence1.xaml**: Sequential workflow that uses a Policy4 activity to perform rule evaluations.<br /><br /> `Program.cs`: Runs an instance of the workflow defined in Sequence1.xaml.|  
   
@@ -40,14 +40,14 @@ public class Policy4Activity<TResult>: NativeActivity<TResult>
   
 |Property|Description|  
 |--------------|-----------------|  
-|RuleSet|The WF [RuleSet Class](http://go.microsoft.com/fwlink/?LinkId=150379) for .NET Framework 3.5 to be evaluated when the activity is executed.|  
-|TargetObject|The object against which the Rules in the [RuleSet Class](http://go.microsoft.com/fwlink/?LinkId=150379) are evaluated.|  
-|ValidationError|The list of validation errors returned by the [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Rule Engine for .NET Framework 3.5 when validating the [RuleSet Class](http://go.microsoft.com/fwlink/?LinkId=150379) against the target object before execution.|  
+|RuleSet|The WF [RuleSet Class](https://go.microsoft.com/fwlink/?LinkId=150379) for .NET Framework 3.5 to be evaluated when the activity is executed.|  
+|TargetObject|The object against which the Rules in the [RuleSet Class](https://go.microsoft.com/fwlink/?LinkId=150379) are evaluated.|  
+|ValidationError|The list of validation errors returned by the [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Rule Engine for .NET Framework 3.5 when validating the [RuleSet Class](https://go.microsoft.com/fwlink/?LinkId=150379) against the target object before execution.|  
   
 ## Policy4 Activity Designer  
  The Policy4 designer adds the capability to configure a Policy4 activity without the need to write code. After building the solution, it can be found in the toolbox in the section **Microsoft.Samples.Activities.Rules**.  
   
- The WF Designer allows you to configure a target object and a RuleSet. When the **Edit RuleSet** button is clicked, the WF [RuleSetDialog Class](http://go.microsoft.com/fwlink/?LinkId=150378) for [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] is displayed. This dialog is the re-hosted [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] Rules Editor. Use the editor to create and edit the rules that the Policy4 activity executes.  
+ The WF Designer allows you to configure a target object and a RuleSet. When the **Edit RuleSet** button is clicked, the WF [RuleSetDialog Class](https://go.microsoft.com/fwlink/?LinkId=150378) for [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] is displayed. This dialog is the re-hosted [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] Rules Editor. Use the editor to create and edit the rules that the Policy4 activity executes.  
   
 ## Using this Sample  
  No special set up is required to run this sample. Just open the solution in Visual Studio, and press F5 to run the application.  

@@ -35,5 +35,6 @@ This document demonstrates how to prevent a child task from attaching to the par
   
 ## Robust Programming  
   
-## See Also  
- [Task-based Asynchronous Programming](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)
+## See also
+
+- [Task-based Asynchronous Programming](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)

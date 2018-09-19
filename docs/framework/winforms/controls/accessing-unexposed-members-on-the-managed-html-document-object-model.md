@@ -58,7 +58,7 @@ The managed HTML Document Object Model (DOM) contains a class called <xref:Syste
 |<xref:System.Windows.Forms.HtmlWindow>|<xref:System.Windows.Forms.HtmlWindow.DomWindow%2A>|  
 |<xref:System.Windows.Forms.HtmlHistory>|<xref:System.Windows.Forms.HtmlHistory.DomHistory%2A>|  
   
- The easiest way to use the COM interfaces is to add a reference to the unmanaged HTML DOM library (MSHTML.dll) from your application, although this is unsupported. For more information, see [Knowledge Base Article 934368](http://support.microsoft.com/kb/934368).  
+ The easiest way to use the COM interfaces is to add a reference to the unmanaged HTML DOM library (MSHTML.dll) from your application, although this is unsupported. For more information, see [Knowledge Base Article 934368](https://support.microsoft.com/kb/934368).  
   
 ## Accessing Script Functions  
  An HTML page can define one or more functions by using a scripting language such as [!INCLUDE[jsprjscript](../../../../includes/jsprjscript-md.md)] or VBScript. These functions are placed inside of a `SCRIPT` page in the page, and can be run on demand or in response to an event on the DOM.  

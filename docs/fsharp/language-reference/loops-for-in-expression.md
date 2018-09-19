@@ -7,7 +7,6 @@ ms.date: 05/16/2016
 
 This looping construct is used to iterate over the matches of a pattern in an enumerable collection such as a range expression, sequence, list, array, or other construct that supports enumeration.
 
-
 ## Syntax
 
 ```fsharp
@@ -16,6 +15,7 @@ for pattern in enumerable-expression do
 ```
 
 ## Remarks
+
 The `for...in` expression can be compared to the `for each` statement in other .NET languages because it is used to loop over the values in an enumerable collection. However, `for...in` also supports pattern matching over the collection instead of just iteration over the whole collection.
 
 The enumerable expression can be specified as an enumerable collection or, by using the `..` operator, as a range on an integral type. Enumerable collections include lists, sequences, arrays, sets, maps, and so on. Any type that implements `System.Collections.IEnumerable` can be used.
@@ -115,7 +115,7 @@ The output of `function5` with this input is as follows.
 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
 ```
 
-The next example shows the use of a wildcard character (_) when the element is not needed in the loop.
+The next example shows the use of a wildcard character (\_) when the element is not needed in the loop.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5207.fs)]
 
@@ -127,10 +127,8 @@ Number of elements in list1: 5
 
 `Note` You can use `for...in` in sequence expressions and other computation expressions, in which case a customized version of the `for...in` expression is used. For more information, see [Sequences](sequences.md), [Asynchronous Workflows](asynchronous-workflows.md), and [Computation Expressions](computation-expressions.md).
 
+## See also
 
-## See Also
-[F# Language Reference](index.md)
-
-[Loops: `for...to` Expression](loops-for-to-expression.md)
-
-[Loops: `while...do` Expression](loops-while-do-expression.md)
+- [F# Language Reference](index.md)
+- [Loops: `for...to` Expression](loops-for-to-expression.md)
+- [Loops: `while...do` Expression](loops-while-do-expression.md)

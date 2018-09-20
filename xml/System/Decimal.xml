@@ -7134,7 +7134,7 @@
       </Parameters>
       <Docs>
         <param name="s">The string representation of the number to convert.</param>
-        <param name="result">To be added.</param>
+        <param name="result">When this method returns, contains the <see cref="T:System.Decimal" /> number that is equivalent to the numeric value contained in <paramref name="s" />, if the conversion succeeded, or zero if the conversion failed. The conversion fails if the <paramref name="s" /> parameter is <see langword="null" /> or <see cref="F:System.String.Empty" />, is not a number in a valid format, or represents a number less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />. This parameter is passed uininitialized; any value originally supplied in <paramref name="result" /> is overwritten. </param>
         <summary>Converts the string representation of a number to its <see cref="T:System.Decimal" /> equivalent. A return value indicates whether the conversion succeeded or failed.</summary>
         <returns>
           <see langword="true" /> if <paramref name="s" /> was converted successfully; otherwise, <see langword="false" />.</returns>
@@ -7260,7 +7260,7 @@
         <param name="s">The string representation of the number to convert.</param>
         <param name="style">A bitwise combination of enumeration values that indicates the permitted format of <c>s</c>. A typical value to specify is <see cref="F:System.Globalization.NumberStyles.Number" />.</param>
         <param name="provider">An object that supplies culture-specific parsing information about <c>s</c>.</param>
-        <param name="result">To be added.</param>
+        <param name="result">When this method returns, contains the <see cref="T:System.Decimal" /> number that is equivalent to the numeric value contained in <paramref name="s" />, if the conversion succeeded, or zero if the conversion failed. The conversion fails if the <paramref name="s" /> parameter is <see langword="null" /> or <see cref="F:System.String.Empty" />, is not a number in a format compliant with <paramref name="style" />, or represents a number less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />. This parameter is passed uininitialized; any value originally supplied in <paramref name="result" /> is overwritten. </param>
         <summary>Converts the string representation of a number to its <see cref="T:System.Decimal" /> equivalent using the specified style and culture-specific format. A return value indicates whether the conversion succeeded or failed.</summary>
         <returns>
           <see langword="true" /> if <paramref name="s" /> was converted successfully; otherwise, <see langword="false" />.</returns>

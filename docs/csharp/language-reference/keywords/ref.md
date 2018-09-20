@@ -15,7 +15,7 @@ The `ref` keyword indicates a value that is passed by reference. It is used in f
 - In a method signature and in a method call, to pass an argument to a method by reference. See [Passing an argument by reference](#passing-an-argument-by-reference) for more information.
 - In a method signature, to return a value to the caller by reference. See [Reference return values](#reference-return-values) for more information.
 - In a member body, to indicate that a reference return value is stored locally as a reference that the caller intends to modify or, in general, a local variable accesses another value by reference. See [Ref locals](#ref-locals) for more information.
-- In a `struct` declaration to declare a `ref struct` or a `ref readonly struct`. For more information, see [Reference semantics with value types](../../reference-semantics-with-value-types.md).
+- In a `struct` declaration to declare a `ref struct` or a `ref readonly struct`. For more information, see [Write safe efficient code](../../write-safe-efficient-code.md).
 
 ## Passing an argument by reference
 
@@ -121,7 +121,7 @@ When the caller stores the value returned by the `GetBookByTitle` method as a re
   
 ## See also
 
-- [Reference semantics with value types](../../reference-semantics-with-value-types.md)  
+- [Write safe efficient code](../../write-safe-efficient-code.md)  
 - [Passing Parameters](../../programming-guide/classes-and-structs/passing-parameters.md)  
 - [Method Parameters](method-parameters.md)  
 - [C# Reference](../index.md)  

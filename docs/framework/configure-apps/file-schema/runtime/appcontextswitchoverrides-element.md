@@ -127,7 +127,7 @@ The following example uses the `<add>` element to add two settings to the `<appS
 
 ```xml
 <appSettings>
-  <add key="AppContext.SetSwitch:Switch.System.,Globalization.NoAsyncCurrentCulture" value="true" />
+  <add key="AppContext.SetSwitch:Switch.System.Globalization.NoAsyncCurrentCulture" value="true" />
   <add key="AppContext.SetSwitch:Switch.System.Uri.DontEnableStrictRFC3986ReservedCharacterSets" value="true" />
 </appSettings>
 ```

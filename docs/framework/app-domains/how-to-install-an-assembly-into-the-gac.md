@@ -16,9 +16,12 @@ ms.author: "ronpet"
 
 There are two ways to install a strong-named assembly into the global assembly cache (GAC).
 
+> [!IMPORTANT]
+> Only strong-named assemblies can be installed into the GAC. For information about how to create a strong-named assembly, see [How to: Sign an Assembly with a Strong Name](how-to-sign-an-assembly-with-a-strong-name.md).
+
 ## Windows Installer
 
-[Windows Installer](/windows/desktop/Msi/installation-of-assemblies-to-the-global-assembly-cache), the Windows installation engine, is the recommended and most common way to add assemblies to the global assembly cache. Windows Installer provides reference counting of assemblies in the global assembly cache, plus other benefits. You can use the [WiX Toolset extension for Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension) to create an installer package for Windows Installer.
+[Windows Installer](/windows/desktop/Msi/installation-of-assemblies-to-the-global-assembly-cache), the Windows installation engine, is the recommended way to add assemblies to the global assembly cache. Windows Installer provides reference counting of assemblies in the global assembly cache and other benefits. You can use the [WiX Toolset extension for Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension) to create an installer package for Windows Installer.
 
 ## Global assembly cache tool
 
@@ -40,9 +43,6 @@ The following example installs an assembly with the file name `hello.dll` into t
 ```shell
 gacutil -i hello.dll
 ```
-
-> [!IMPORTANT]
-> Only strong-named assemblies can be installed into the GAC. For information about how to create a strong-named assembly, see [How to: Sign an Assembly with a Strong Name](how-to-sign-an-assembly-with-a-strong-name.md).
 
 > [!NOTE]
 > In earlier versions of the .NET Framework, the Shfusion.dll Windows shell extension enabled you to install assemblies by dragging them in **File Explorer**. Beginning with the .NET Framework 4, Shfusion.dll is obsolete.

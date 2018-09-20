@@ -39,7 +39,7 @@ New code:
 public double CalculateSquare(double value) => value * value;
 ```
 
-**Source compatible** changes introduce syntax that changes the compiled code for a public public, but in a way that is compatible with the source of the calling site. For example, changing a method signature from a by value parameter to an `in` by reference parameter is source compatible, but not binary compatible:
+**Source compatible** changes introduce syntax that changes the compiled code for a public member, but in a way that is compatible with existing call sites. For example, changing a method signature from a by value parameter to an `in` by reference parameter is source compatible, but not binary compatible:
 
 Original code:
 

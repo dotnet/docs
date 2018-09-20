@@ -146,6 +146,9 @@ You can also use expression-bodied members in read-only properties as well:
 
 [!code-csharp[FullNameExpressionMember](../../../samples/snippets/csharp/new-in-6/newcode.cs#FullNameExpressionMember)]
 
+Changing an existing member to an expression bodied member is a [binary compatible change](version-update-considerations.md#binary-compatible-changes).
+
+
 ## using static
 
 The *using static* enhancement enables you to import the static methods

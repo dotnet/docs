@@ -103,7 +103,7 @@
 ## AppContext for library consumers  
  If you are the consumer of a library, the <xref:System.AppContext> class  allows you to take advantage of a library or library method's opt-out mechanism for new functionality.   Individual methods of the class library that you are calling define particular switches that enable or disable a new behavior. The value of the switch  is a Boolean. If it is `false`, which is typically the default value, the new behavior is enabled; if it is `true`, the new behavior is disabled, and the member behaves as it did previously.  
   
- You can set the value of a switch in one of three ways:  
+ You can set the value of a switch in one of four ways:  
   
 -   By calling the <xref:System.AppContext.SetSwitch%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> method in your code.  The `switchName` argument defines the switch name, and the `isEnabled` property defines the value of the switch. Because <xref:System.AppContext> is a static class, it is available on a per-application domain basis.  
   
@@ -125,12 +125,21 @@
 -   By adding a string value whose name is the name of the switch to the `HKLM\SOFTWARE\Microsoft\.NETFramework\AppContext` key in the registry. Its value must be the string representation of a <xref:System.Boolean> that can be parsed by the <xref:System.Boolean.Parse%2A?displayProperty=nameWithType> method; that is, it must be "True", "true", "False", or "false". If the runtime encounters any other value, it ignores the switch.  
   
      Using the registry to define an <xref:System.AppContext> switch has machine scope; that is, it affects every application running on the machine.  
-  
+
+- For ASP.NET applications, you add an [\<Add>](~/docs/framework/configure-apps/file-schema/appsettings/add-element-for-appsettings.md) element to the [\<appSettings>](~/docs/framework/configure-apps/file-schema/appsettings/index.md) section of the web.config file. For example:
+
+   ```xml
+   <appSettings>
+      <add key="AppContext.SetSwitch:switchName1" value="switchValue1" />
+      <add key="AppContext.SetSwitch:switchName2" value="switchValue2" />
+   </appSettings>
+   ```
+   
  If you set the same switch in more than one way, the order of precedence for determining which setting overrides the others is:  
   
 1.  The programmatic setting.  
   
-2.  The setting in the app config file.  
+2.  The setting in the app config file or the web.config file.  
   
 3.  The registry setting.  
   

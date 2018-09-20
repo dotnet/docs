@@ -25,7 +25,7 @@ There are two ways to install a strong-named assembly into the global assembly c
 
 ## Global assembly cache tool
 
-You can use [Global assembly cache tool (gacutil.exe)](../tools/gacutil-exe-gac-tool.md) to add strong-named assemblies to the global assembly cache and to view the contents of the global assembly cache.
+You can use the [Global assembly cache tool (gacutil.exe)](../tools/gacutil-exe-gac-tool.md) to add strong-named assemblies to the global assembly cache and to view the contents of the global assembly cache.
 
    > [!NOTE]
    > Gacutil.exe is only for development purposes and should not be used to install production assemblies into the global assembly cache.

@@ -528,7 +528,7 @@
       </Parameters>
       <Docs>
         <param name="includePrivateParameters">
-          <see langword="true" /> to include private parameters; otehrwise,  <see langword="false" /> to include public parameters only.</param>
+          <see langword="true" /> to include private parameters; otherwise, <see langword="false" /> to include public parameters only.</param>
         <summary>When overridden in a derived class, exports either the public or the public and private key information from a working <see cref="T:System.Security.Cryptography.ECDiffieHellman" /> key to an <see cref="T:System.Security.Cryptography.ECParameters" /> structure so that it can be passed to the <see cref="M:System.Security.Cryptography.ECDiffieHellman.ImportParameters(System.Security.Cryptography.ECParameters)" /> method.</summary>
         <returns>An object that represents the point on the curve for this key. It can be passed to the <see cref="M:System.Security.Cryptography.ECDiffieHellman.ImportParameters(System.Security.Cryptography.ECParameters)" /> method.</returns>
         <remarks>

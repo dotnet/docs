@@ -3,7 +3,7 @@ title: Resiliency and high availability in microservices
 description: .NET Microservices Architecture for Containerized .NET Applications | Resiliency and high availability in microservices
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 09/20/2018
 ---
 # Resiliency and high availability in microservices
 
@@ -13,7 +13,7 @@ A microservice needs to be resilient to failures and to be able to restart often
 
 The problems of resiliency are compounded during other scenarios, such as when failures occur during an application upgrade. The microservice, working with the deployment system, needs to determine whether it can continue to move forward to the newer version or instead roll back to a previous version to maintain a consistent state. Questions such as whether enough machines are available to keep moving forward and how to recover previous versions of the microservice need to be considered. This requires the microservice to emit health information so that the overall application and orchestrator can make these decisions.
 
-In addition, resiliency is related to how cloud-based systems must behave. As mentioned, a cloud-based system must embrace failures and must try to automatically recover from them. For instance, in case of network or container failures, client apps or client services must have a strategy to retry sending messages or to retry requests, since in many cases failures in the cloud are partial. The [Implementing Resilient Applications](#implementing_resilient_apps) section in this guide addresses how to handle partial failure. It describes techniques like retries with exponential backoff or the Circuit Breaker pattern in .NET Core by using libraries like [Polly](https://github.com/App-vNext/Polly), which offers a large variety of policies to handle this subject.
+In addition, resiliency is related to how cloud-based systems must behave. As mentioned, a cloud-based system must embrace failures and must try to automatically recover from them. For instance, in case of network or container failures, client apps or client services must have a strategy to retry sending messages or to retry requests, since in many cases failures in the cloud are partial. The [Implementing Resilient Applications](../implement-resilient-applications/index.md) section in this guide addresses how to handle partial failure. It describes techniques like retries with exponential backoff or the Circuit Breaker pattern in .NET Core by using libraries like [Polly](https://github.com/App-vNext/Polly), which offers a large variety of policies to handle this subject.
 
 ## Health management and diagnostics in microservices
 
@@ -23,7 +23,12 @@ It may seem obvious, and it is often overlooked, but a microservice must report 
 
 Health is different from diagnostics. Health is about the microservice reporting its current state to take appropriate actions. A good example is working with upgrade and deployment mechanisms to maintain availability. Although a service might currently be unhealthy due to a process crash or machine reboot, the service might still be operational. The last thing you need is to make this worse by performing an upgrade. The best approach is to do an investigation first or allow time for the microservice to recover. Health events from a microservice help us make informed decisions and, in effect, help create self-healing services.
 
-In the Implementing health checks in ASP.NET Core services section of this guide, we explain how to use a new ASP.NET HealthChecks library in your microservices so they can report their state to a monitoring service to take appropriate actions.
+In the [Implementing health checks in ASP.NET Core services](../implement-resilient-applications/monitor-app-health.md#implementing-health-checks-in-aspnet-core-services) section of this guide, we explain how to use a new ASP.NET HealthChecks library in your microservices so they can report their state to a monitoring service to take appropriate actions.
+
+You also have the option of using an excellent open source library called Beat Pulse, available on [GitHub](https://github.com/Xabaril/BeatPulse) and as a [NuGet package](https://www.nuget.org/packages/BeatPulse/). This library also does health checks, with a twist, it handles two types of checks:
+
+   - **Liveness**: Checks if the microservice is alive, that is, if it’s able to accept requests and respond. 
+   - **Readiness**: Checks if the microservice’s dependencies (Database, queue services, etc.) are themselves ready, so the microservice can do what it’s supposed to do. 
 
 ### Using diagnostics and logs event streams
 
@@ -37,9 +42,9 @@ A microservice-based application should not try to store the output stream of ev
 
 When you create a microservice-based application, you need to deal with complexity. Of course, a single microservice is simple to deal with, but dozens or hundreds of types and thousands of instances of microservices is a complex problem. It is not just about building your microservice architecture—you also need high availability, addressability, resiliency, health, and diagnostics if you intend to have a stable and cohesive system.
 
-![](./media/image22.png)
+![Orchestrators supply a support platform for running your microservices.](./media/image22.png)
 
-**Figure 4-22**. A Microservice Platform is fundamental for an application’s health management
+**Figure 4-22**. A Microservice Platform is fundamental for an application's health management
 
 The complex problems shown in Figure 4-22 are very hard to solve by yourself. Development teams should focus on solving business problems and building custom applications with microservice-based approaches. They should not focus on solving complex infrastructure problems; if they did, the cost of any microservice-based application would be huge. Therefore, there are microservice-oriented platforms, referred to as orchestrators or microservice clusters, that try to solve the hard problems of building and running a service and using infrastructure resources efficiently. This reduces the complexities of building applications that use a microservices approach.
 
@@ -47,27 +52,26 @@ Different orchestrators might sound similar, but the diagnostics and health chec
 
 ## Additional resources
 
--   **The Twelve-Factor App. XI. Logs: Treat logs as event streams**
-    [*https://12factor.net/logs*](https://12factor.net/logs)
+-   **The Twelve-Factor App. XI. Logs: Treat logs as event streams**  
+    *https://12factor.net/logs*
 
--   **Microsoft Diagnostic EventFlow Library.** GitHub repo.
+-   **Microsoft Diagnostic EventFlow Library.** GitHub repo.  
+    *https://github.com/Azure/diagnostics-eventflow*
 
-    [*https://github.com/Azure/diagnostics-eventflow*](https://github.com/Azure/diagnostics-eventflow)
+-   **What is Azure Diagnostics**  
+    *https://docs.microsoft.com/azure/azure-diagnostics*
 
--   **What is Azure Diagnostics**
-    [*https://docs.microsoft.com/azure/azure-diagnostics*](https://docs.microsoft.com/azure/azure-diagnostics)
+-   **Connect Windows computers to the Log Analytics service in Azure**  
+    *https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents*
 
--   **Connect Windows computers to the Log Analytics service in Azure**
-    [*https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents*](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents)
+-   **Logging What You Mean: Using the Semantic Logging Application Block**  
+    *https://msdn.microsoft.com/library/dn440729(v=pandp.60).aspx*
 
--   **Logging What You Mean: Using the Semantic Logging Application Block**
-    [*https://msdn.microsoft.com/library/dn440729(v=pandp.60).aspx*](https://msdn.microsoft.com/library/dn440729(v=pandp.60).aspx)
-
--   **Splunk.** Official site.
-    [*https://www.splunk.com/*](https://www.splunk.com/)
+-   **Splunk.** Official site.  
+    *https://www.splunk.com/*
 
 -   **EventSource Class**. API for events tracing for Windows (ETW)
-    [*https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource*](xref:System.Diagnostics.Tracing.EventSource)
+    *https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource*
 
 
 

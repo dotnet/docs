@@ -3,7 +3,7 @@ title: Asynchronous message-based communication
 description: .NET Microservices Architecture for Containerized .NET Applications | Asynchronous message-based communication
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 09/20/2018
 ---
 # Asynchronous message-based communication
 
@@ -13,7 +13,7 @@ When using messaging, processes communicate by exchanging messages asynchronousl
 
 A message is composed by a header (metadata such as identification or security information) and a body. Messages are usually sent through asynchronous protocols like AMQP.
 
-The preferred infrastructure for this type of communication in the microservices community is a lightweight message broker, which is different than the large brokers and orchestrators used in SOA. In a lightweight message broker, the infrastructure is typically “dumb,” acting only as a message broker, with simple implementations such as RabbitMQ or a scalable service bus in the cloud like Azure Service Bus. In this scenario, most of the “smart” thinking still lives in the endpoints that are producing and consuming messages—that is, in the microservices.
+The preferred infrastructure for this type of communication in the microservices community is a lightweight message broker, which is different than the large brokers and orchestrators used in SOA. In a lightweight message broker, the infrastructure is typically "dumb," acting only as a message broker, with simple implementations such as RabbitMQ or a scalable service bus in the cloud like Azure Service Bus. In this scenario, most of the "smart" thinking still lives in the endpoints that are producing and consuming messages-that is, in the microservices.
 
 Another rule you should try to follow, as much as possible, is to use only asynchronous messaging between the internal services, and to use synchronous communication (such as HTTP) only from the client apps to the front-end services (API Gateways plus the first level of microservices).
 
@@ -27,7 +27,7 @@ Single-receiver message-based communication is especially well suited for sendin
 
 Once you start sending message-based communication (either with commands or events), you should avoid mixing message-based communication with synchronous HTTP communication.
 
-![](./media/image18.PNG)
+![A single microservice receiving an asynchronous message](./media/image18.png)
 
 **Figure 4-18**. A single microservice receiving an asynchronous message
 
@@ -43,13 +43,13 @@ When you use a publish/subscribe communication, you might be using an event bus 
 
 When using asynchronous event-driven communication, a microservice publishes an integration event when something happens within its domain and another microservice needs to be aware of it, like a price change in a product catalog microservice. Additional microservices subscribe to the events so they can receive them asynchronously. When that happens, the receivers might update their own domain entities, which can cause more integration events to be published. This publish/subscribe system is usually performed by using an implementation of an event bus. The event bus can be designed as an abstraction or interface, with the API that is needed to subscribe or unsubscribe to events and to publish events. The event bus can also have one or more implementations based on any inter-process and messaging broker, like a messaging queue or service bus that supports asynchronous communication and a publish/subscribe model.
 
-If a system uses eventual consistency driven by integration events, it is recommended that this approach be made completely clear to the end user. The system should not use an approach that mimics integration events, like SignalR or polling systems from the client. The end user and the business owner have to explicitly embrace eventual consistency in the system and realize that in many cases the business does not have any problem with this approach, as long as it is explicit.
+If a system uses eventual consistency driven by integration events, it is recommended that this approach be made completely clear to the end user. The system should not use an approach that mimics integration events, like SignalR or polling systems from the client. The end user and the business owner have to explicitly embrace eventual consistency in the system and realize that in many cases the business does not have any problem with this approach, as long as it is explicit. This is important because users might expect to see some results immedialtely and this might not happen with eventual consistency.
 
 As noted earlier in the [Challenges and solutions for distributed data management](#challenges-and-solutions-for-distributed-data-management) section, you can use integration events to implement business tasks that span multiple microservices. Thus you will have eventual consistency between those services. An eventually consistent transaction is made up of a collection of distributed actions. At each action, the related microservice updates a domain entity and publishes another integration event that raises the next action within the same end-to-end business task.
 
 An important point is that you might want to communicate to multiple microservices that are subscribed to the same event. To do so, you can use publish/subscribe messaging based on event-driven communication, as shown in Figure 4-19. This publish/subscribe mechanism is not exclusive to the microservice architecture. It is similar to the way [Bounded Contexts](https://martinfowler.com/bliki/BoundedContext.html) in DDD should communicate, or to the way you propagate updates from the write database to the read database in the [Command and Query Responsibility Segregation (CQRS)](https://martinfowler.com/bliki/CQRS.html) architecture pattern. The goal is to have eventual consistency between multiple data sources across your distributed system.
 
-![](./media/image19.png)
+![In asynchronous event-driven communication one microservice publishes events to an event bus and many microservices can subscribe to it, to get notified and act on it.](./media/image19.png)
 
 **Figure 4-19**. Asynchronous event-driven message communication
 
@@ -67,38 +67,38 @@ However, for mission-critical and production systems that need hyper-scalability
 
 A challenge when implementing an event-driven architecture across multiple microservices is how to atomically update state in the original microservice while resiliently publishing its related integration event into the event bus, somehow based on transactions. The following are a few ways to accomplish this, although there could be additional approaches as well.
 
--   Using a transactional (DTC-based) queue like MSMQ. (However, this is a legacy approach.)
+  - Using a transactional (DTC-based) queue like MSMQ. (However, this is a legacy approach.)
 
--   Using [transaction log mining](https://www.scoop.it/t/sql-server-transaction-log-mining).
+  - Using [transaction log mining](https://www.scoop.it/t/sql-server-transaction-log-mining).
 
--   Using full [Event Sourcing](https://msdn.microsoft.com/library/dn589792.aspx) pattern.
+  - Using full [Event Sourcing](https://msdn.microsoft.com/library/dn589792.aspx) pattern.
 
--   Using the [Outbox pattern](http://gistlabs.com/2014/05/the-outbox/): a transactional database table as a message queue that will be the base for an event-creator component that would create the event and publish it.
+  - Using the [Outbox pattern](http://gistlabs.com/2014/05/the-outbox/): a transactional database table as a message queue that will be the base for an event-creator component that would create the event and publish it.
 
-Additional topics to consider when using asynchronous communication are message idempotence and message deduplication. These topics are covered in the section [Implementing event-based communication between microservices (integration events)](#implementing_event_based_comms_microserv) later in this guide.
+Additional topics to consider when using asynchronous communication are message idempotence and message deduplication. These topics are covered in the section [Implementing event-based communication between microservices (integration events)](../multi-container-microservice-net-applications/integration-event-based-microservice-communications.md) later in this guide.
 
 ## Additional resources
 
--   **Event Driven Messaging**
-    [*http://soapatterns.org/design\_patterns/event\_driven\_messaging*](http://soapatterns.org/design_patterns/event_driven_messaging)
+-   **Event Driven Messaging**  
+    *http://soapatterns.org/design_patterns/event_driven_messaging*
 
--   **Publish/Subscribe Channel**
-    [*http://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html*](http://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html)
+-   **Publish/Subscribe Channel**  
+    *http://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html*
 
--   **Udi Dahan. Clarified CQRS**
-    [*http://udidahan.com/2009/12/09/clarified-cqrs/*](http://udidahan.com/2009/12/09/clarified-cqrs/)
+-   **Udi Dahan. Clarified CQRS**  
+    *http://udidahan.com/2009/12/09/clarified-cqrs/*
 
--   **Command and Query Responsibility Segregation (CQRS)**
-    [*https://docs.microsoft.com/azure/architecture/patterns/cqrs*](https://docs.microsoft.com/azure/architecture/patterns/cqrs)
+-   **Command and Query Responsibility Segregation (CQRS)**  
+    *https://docs.microsoft.com/azure/architecture/patterns/cqrs*
 
--   **Communicating Between Bounded Contexts**
-    [*https://msdn.microsoft.com/library/jj591572.aspx*](https://msdn.microsoft.com/library/jj591572.aspx)
+-   **Communicating Between Bounded Contexts**  
+    *https://msdn.microsoft.com/library/jj591572.aspx*
 
--   **Eventual consistency**
-    [*https://en.wikipedia.org/wiki/Eventual\_consistency*](https://en.wikipedia.org/wiki/Eventual_consistency)
+-   **Eventual consistency**  
+    *https://en.wikipedia.org/wiki/Eventual_consistency*
 
--   **Jimmy Bogard. Refactoring Towards Resilience: Evaluating Coupling**
-    [*https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/*](https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/)
+-   **Jimmy Bogard. Refactoring Towards Resilience: Evaluating Coupling**  
+    *https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/*
 
 
 >[!div class="step-by-step"]

@@ -3,9 +3,11 @@ title: Architecting Container and Microservice Based Applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Architecting Container and Microservice Based Applications
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 09/20/2018
 ---
-# Architecting Container- and Microservice-Based Applications
+# Architecting Container-and Microservice-Based Applications
+
+## Vision
 
 *Microservices offer great benefits but also raise huge new challenges. Microservice architecture patterns are fundamental pillars when creating a microservice-based application.*
 
@@ -17,7 +19,7 @@ Enterprise applications can be complex and are often composed of multiple servic
 
 In the container model, a container image instance represents a single process. By defining a container image as a process boundary, you can create primitives that can be used to scale the process or to batch it.
 
-When you design a container image, you will see an [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/) definition in the Dockerfile. This defines the process whose lifetime controls the lifetime of the container. When the process completes, the container lifecycle ends. Containers might represent long-running processes like web servers, but can also represent short-lived processes like batch jobs, which formerly might have been implemented as Azure [WebJobs](https://docs.microsoft.com/azure/app-service-web/websites-webjobs-resources).
+When you design a container image, you will see an [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#entrypoint) definition in the Dockerfile. This defines the process whose lifetime controls the lifetime of the container. When the process completes, the container lifecycle ends. Containers might represent long-running processes like web servers, but can also represent short-lived processes like batch jobs, which formerly might have been implemented as Azure [WebJobs](https://azure.microsoft.com/documentation/articles/websites-webjobs-resources/).
 
 If the process fails, the container ends, and the orchestrator takes over. If the orchestrator was configured to keep five instances running and one fails, the orchestrator will create another container instance to replace the failed process. In a batch job, the process is started with parameters. When the process completes, the work is complete. This guidance drills-down on orchestrators, later on.
 

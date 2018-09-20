@@ -8,9 +8,6 @@ helpviewer_keywords:
   - "GC [.NET ], large object heap"
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # The large object heap on Windows systems
 

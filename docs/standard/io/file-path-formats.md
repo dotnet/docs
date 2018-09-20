@@ -9,13 +9,10 @@ helpviewer_keywords:
   - "path formats, Windows"
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # File path formats on Windows systems
 
-Members of many of the types in the <xref:System.IO> namespace include a `path` parameter that lets you specify an absolute or relative path to a file system resource. This path is then passed to [Windows file sysem APIs](https://msdn.microsoft.com/library/windows/desktop/aa364407(v=vs.85).aspx). This topic discusses the formats for file paths that you can use on Windows systems.
+Members of many of the types in the <xref:System.IO> namespace include a `path` parameter that lets you specify an absolute or relative path to a file system resource. This path is then passed to [Windows file system APIs](https://msdn.microsoft.com/library/windows/desktop/aa364407(v=vs.85).aspx). This topic discusses the formats for file paths that you can use on Windows systems.
 
 ## Traditional DOS paths
 

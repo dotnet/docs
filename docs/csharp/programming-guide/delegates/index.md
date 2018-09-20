@@ -23,7 +23,7 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
 ## Delegates Overview  
  Delegates have the following properties:  
   
--   Delegates are like C++ function pointers but are type safe.  
+-   Delegates are similar to C++ function pointers, but delegates are fully object-oriented, and unlike C++ pointers to member functions, delegates encapsulate both an object instance and a method.
   
 -   Delegates allow methods to be passed as parameters.  
   

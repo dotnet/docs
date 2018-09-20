@@ -88,7 +88,7 @@ In order to build the .NET Core CLI, you need the following installed on your ma
   * Xcode
   * OpenSSL
 
-In order to build, run `build.cmd` on Windows, or `build.sh` on Linux and macOS from the root. If you don't want to execute tests, run `build.cmd /t:Compile` or `./build.sh /t:Compile`. To build the CLI in macOS Sierra, you need to set the DOTNET_RUNTIME_ID environment variable by running `export DOTNET_RUNTIME_ID=osx.10.11-x64`.
+In order to build, run `build.cmd` on Windows, or `build.sh` on Linux and macOS from the root. If you don't want to execute tests, run `build.cmd -t:Compile` or `./build.sh -t:Compile`. To build the CLI in macOS Sierra, you need to set the DOTNET_RUNTIME_ID environment variable by running `export DOTNET_RUNTIME_ID=osx.10.11-x64`.
 
 ### Using your build
 

@@ -52,7 +52,7 @@ The ref return value is an alias to another variable in the called method's scop
 - When you read its value, you are reading the value of the variable it aliases.
 - If you return it *by reference*, you are returning an alias to that same variable.
 - If you pass it to another method *by reference*, you are passing a reference to the variable it aliases.
-- When you make a [ref local](#ref-local) alias, you make a new alias to the same variable.
+- When you make a [ref local](#ref-locals) alias, you make a new alias to the same variable.
 
 
 ## Ref locals
@@ -118,7 +118,7 @@ C# 7.3 to use ref local reassignment:
 This second version is more efficient with longer sequences in scenarios where the number sought is
 closer to the end of the array.
 
-## See Also
+## See also
 
 - [ref keyword](../../language-reference/keywords/ref.md)  
 - [Reference Semantics with Value Types](../../../csharp/reference-semantics-with-value-types.md)

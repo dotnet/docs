@@ -28,8 +28,6 @@ This topic describes notable changes in the following areas:
 
 For an higher-level overview of the issues in this topic, see the [Migration Guide to the .NET Framework 4](/previous-versions/dotnet/netframework-4.0/ff657133(v=vs.100)).
 
-For migration issues after Beta 2, see [Migration Issues for .NET Framework 4 Applications: Beta 2 to RTM](https://msdn.microsoft.com/en-us/library/ff642543.aspx).
-
 For information about new features, see [What's New in the .NET Framework 4](/previous-versions/dotnet/netframework-4.0/ms171868(v=vs.100)).
 
 ## ASP.NET and Web
@@ -326,5 +324,4 @@ Namespaces: <xref:System.Xml.Linq>; <xref:System.Xml.Schema>, <xref:System.Xml.X
 
 ### Other resources
 
-- [What's Obsolete in the .NET Framework](https://msdn.microsoft.com/library/ee461502(v=vs.110).aspx)
-- [Migration Issues for .NET Framework 4 Applications: Beta 2 to RTM](https://go.microsoft.com/fwlink/?LinkId=191505)
+- [What's Obsolete in the .NET Framework Class Library](../whats-new/whats-obsolete.md)

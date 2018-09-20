@@ -16,7 +16,7 @@ ms.author: "ronpet"
 
 There are two ways to get an application that was compiled using the [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)] to run on [!INCLUDE[win7](../../../includes/win7-md.md)] or a later Windows operating system:
 
--   You can retarget the application to run under [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. Retargeting requires that you add a [\<supportedRuntime>](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md) element to the application's configuration file that allows it to run under [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]. Such a configuration file takes the following form:
+- You can retarget the application to run under .NET Framework 4 and later versions. Retargeting requires that you add a [\<supportedRuntime>](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md) element to the application's configuration file that allows it to run under .NET Framework 4 and later versions. Such a configuration file takes the following form:
 
     ```xml
     <configuration>
@@ -26,13 +26,13 @@ There are two ways to get an application that was compiled using the [!INCLUDE[n
     </configuration>
     ```
 
--   You can recompile the application with a compiler that targets the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]. If you originally used Visual Studio 2003 to develop and compile your solution, you can open the solution in Visual Studio 2010 (and possibly later versions too) and use the **Project Compatibility** dialog box to convert the solution and project files from the formats used by Visual Studio 2003 to the Microsoft Build Engine (MSBuild) format used by Visual Studio 2010 and later versions.
+- You can recompile the application with a compiler that targets the .NET Framework 4 or a later version. If you originally used Visual Studio 2003 to develop and compile your solution, you can open the solution in Visual Studio 2010 (and possibly later versions too) and use the **Project Compatibility** dialog box to convert the solution and project files from the formats used by Visual Studio 2003 to the Microsoft Build Engine (MSBuild) format.
 
 Regardless of whether you prefer to recompile or retarget your application, you must determine whether your application is affected by any changes introduced in later versions of the .NET Framework. These changes are of two kinds:
 
--   Breaking changes that occurred between the [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)] and later versions of the .NET Framework.
+- Breaking changes that occurred between the [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)] and later versions of the .NET Framework.
 
--   Types and type members that have been marked as deprecated or obsolete between the [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)] and later versions of the .NET Framework.
+- Types and type members that have been marked as deprecated or obsolete between the [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)] and later versions of the .NET Framework.
 
 Whether you retarget your application or recompile it, you should review both the breaking changes and the obsolete types and members for each version of the .NET Framework that was released after [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)].
 
@@ -52,11 +52,11 @@ However, in some cases, you may have to modify your source code and recompile yo
 
 To assess the impact of possible breaking changes on your application, you must review the following lists of changes:
 
--   [Breaking Changes in .NET Framework 2.0](https://go.microsoft.com/fwlink/?LinkId=125263) documents changes in [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)] that can affect an application that targets [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)].
+- [Breaking Changes in .NET Framework 2.0](https://go.microsoft.com/fwlink/?LinkId=125263) documents changes in [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)] that can affect an application that targets [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)].
 
--   [Changes in .NET Framework 3.5 SP1](https://go.microsoft.com/fwlink/?LinkID=186989) documents changes between the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] and the [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)].
+- [Changes in .NET Framework 3.5 SP1](https://go.microsoft.com/fwlink/?LinkID=186989) documents changes between the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] and the [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)].
 
--   [.NET Framework 4 Migration Issues](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md) documents changes between the [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)] and the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)].
+- [.NET Framework 4 Migration Issues](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md) documents changes between the [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)] and the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)].
 
 ## Obsolete Types and Members
 

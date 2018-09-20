@@ -10,19 +10,20 @@ These samples provide instruction on various aspects of Windows Workflow Foundat
 The samples can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=150780).
 
 > [!NOTE]
-> These samples were created with Visual Studio 2010 and [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], but are compatible with later versions of Visual Studio and the .NET Framework. Additional samples for Windows Workflow Foundation in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] can be found on [Code MSDN](https://aka.ms/WF45Samples).
+> These samples were created with Visual Studio 2010 and [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], but are compatible with later versions of Visual Studio and the .NET Framework. Additional samples for Windows Workflow Foundation in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] can be found on [MSDN code samples](https://aka.ms/WF45Samples).
 
 ## In this section
- [Application](../../../../docs/framework/windows-workflow-foundation/samples/application.md)
 
- Provides samples that are related to workflow applications.
+[Application](../../../../docs/framework/windows-workflow-foundation/samples/application.md)
 
- [Basic](../../../../docs/framework/windows-workflow-foundation/samples/basic.md)
+Provides samples that are related to workflow applications.
 
- Provides samples that demonstrate basic Windows Workflow Foundation (WF) functionality.
+[Basic](../../../../docs/framework/windows-workflow-foundation/samples/basic.md)
 
- [Scenario](../../../../docs/framework/windows-workflow-foundation/samples/scenario.md)
+Provides samples that demonstrate basic Windows Workflow Foundation (WF) functionality.
 
- Provides examples of Windows Workflow Foundation (WF) scenarios.
+[Scenario](../../../../docs/framework/windows-workflow-foundation/samples/scenario.md)
 
- The samples can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=150780).
+Provides examples of Windows Workflow Foundation (WF) scenarios.
+
+The samples can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=150780).

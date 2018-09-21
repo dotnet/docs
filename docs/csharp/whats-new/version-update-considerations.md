@@ -6,23 +6,27 @@ ms.date: 09/19/2018
 
 # Version and update considerations for C# developers
 
-Compatibility is a very important goal as new features are added to the C# language. In almost all cases, you can use a new compiler version without breaking existing code.
+Compatibility is a very important goal as new features are added to the C# language. In almost all cases, existing code can be recompiled with a new compiler version without issue.
 
-More care may be required when you adopt new language features in a library, and consumers of that library have not yet upgraded. The are two variations of compatibility: source compatible and binary compatible.
-
-## Source compatible changes
-
-Changes to your library are **source compatible** when assemblies that use your library must be recompiled against the new version to work correctly. Source code changes to the dependent library aren't required, but a rebuild is.
+More care may be required when you adopt new language features in a library. You may be creating a new library with features found in the latest version, and need to ensure apps that target older versions can use it. Or, you may be upgrading an existing library and many of your users may not have upgraded versions yet. As you make decisions on adopting new features, you'll need to two variations of compatibility: source compatible and binary compatible.
 
 ## Binary compatible changes
 
 Changes to your library are **binary compatible** when your updated library can be used without rebuilding applications that use it. Dependent assemblies are not required to be rebuilt, nor are any source code changes required. Binary compatible changes are also source compatible changes.
 
+## Source compatible changes
+
+Changes to your library are **source compatible** when assemblies that use your library do not require source code changes, but the source must be recompiled against the new version to work correctly.
+
+## Incompatible changes
+
+If a change is neither **source compatible** nor **binary compatible**, source code changes are required in dependent libraries in addition to rebuilding the dependent library.
+
 ## Evaluate your library
 
-These compatibility concepts affect the public and protected declarations for your library, not its internal implementation. For that reason, many language enhancements are always binary compatible changes. Adopting any new features internally are always **binary compatible**.  
+These compatibility concepts affect the public and protected declarations for your library, not its internal implementation. Adopting any new features internally are always **binary compatible**.  
 
-**Binary compatible** changes provide new syntax that generates the same compiled code for public declarations as the older syntax. For example, change a method to an expression bodied member is a **binary compatible** change:
+**Binary compatible** changes provide new syntax that generates the same compiled code for public declarations as the older syntax. For example, changing a method to an expression-bodied member is a **binary compatible** change:
 
 Original code:
 

@@ -122,7 +122,7 @@ You can also use the new `unmanaged` constraint, to specify that a type paramete
 
 For more information, see the articles on [`where` generic constraints](../language-reference/keywords/where-generic-type-constraint.md) and [constraints on type parameters](../programming-guide/generics/constraints-on-type-parameters.md).
 
-Adding these constraints to existing types is neither a [source compatible change](version-update-considerations.md#source-compatible-changes) nor [binary compatible change](version-update-considerations.md#binary-compatible-changes).
+Adding these constraints to existing types is an [incompatible change](version-update-considerations.md#incompatible-changes). Closed generic types may no longer meet these new constraints.
 
 ## Make existing features better
 

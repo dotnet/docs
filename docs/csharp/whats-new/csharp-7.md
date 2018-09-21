@@ -404,7 +404,7 @@ The addition of ref locals and ref returns enable algorithms that are more
 efficient by avoiding copying values, or performing dereferencing operations
 multiple times.
 
-Adding `ref` to the return value is a [source compatible change](version-update-considerations.md#source-compatible-changes). However, value will be copied to the storage specified at the call site.
+Adding `ref` to the return value is a [source compatible change](version-update-considerations.md#source-compatible-changes). Existing code compiles, but the ref return value is copied when assigned. Callers must update the storage for the return value to a `ref` local variable to store the return as a reference.
 
 ## Local functions
 

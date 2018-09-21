@@ -3,7 +3,6 @@ title: "How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF"
 ms.date: "03/30/2017"
 ms.assetid: 0efb76bc-9f7b-4afe-be1c-2a57c917010b
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF
 ## Applies To  

@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: 5eba950e-b9e1-48eb-ab8e-b69db76bf589
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Return Properties from a UI Automation Provider
 > [!NOTE]

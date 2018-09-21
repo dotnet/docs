@@ -12,7 +12,6 @@ helpviewer_keywords:
 ms.assetid: dc522c45-4a80-4831-8955-f7b68a47edfd
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;clear&gt; Element for authenticationModules (Network Settings)
 Clears all authentication modules from the application.  

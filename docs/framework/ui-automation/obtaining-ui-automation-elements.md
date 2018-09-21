@@ -7,7 +7,6 @@ helpviewer_keywords:
 ms.assetid: c2caaf45-e59c-42a1-bc9b-77a6de520171
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Obtaining UI Automation Elements
 > [!NOTE]

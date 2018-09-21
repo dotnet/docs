@@ -3,7 +3,6 @@ title: "Endpoint: Security Validation and Authentication Failures"
 ms.date: "03/30/2017"
 ms.assetid: 5bad60aa-6084-4c7b-aefd-9b581f04382e
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Endpoint: Security Validation and Authentication Failures
 Counter name: Security Validation and Authentication Failures  

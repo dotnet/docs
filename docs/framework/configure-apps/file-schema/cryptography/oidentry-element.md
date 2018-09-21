@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 22fb88b0-bf27-489c-9ca0-e65950ac136c
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;oidEntry&gt; Element
 Maps an ASN.1 object identifier (OID) to a friendly name.  

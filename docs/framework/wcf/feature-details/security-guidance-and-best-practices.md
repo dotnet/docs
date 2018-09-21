@@ -5,7 +5,6 @@ helpviewer_keywords:
   - "secure applications [WCF]"
 ms.assetid: 79e4e6f7-0c00-4045-b0f0-e6a7c37c7788
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Security Guidance and Best Practices
 The topics in this section present guidance for and items to consider when creating secure Windows Communication Foundation (WCF) applications. For more information about Windows Server AppFabric and security see, [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)  

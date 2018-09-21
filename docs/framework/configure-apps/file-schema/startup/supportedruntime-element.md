@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;supportedRuntime&gt; Element
 

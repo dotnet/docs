@@ -3,7 +3,6 @@ title: "&lt;userNameSecurityTokenHandlerRequirement&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 6ec3bac1-b014-49ae-843c-c54518cb709a
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;userNameSecurityTokenHandlerRequirement&gt;
 Provides configuration for the <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> class or derived classes.  

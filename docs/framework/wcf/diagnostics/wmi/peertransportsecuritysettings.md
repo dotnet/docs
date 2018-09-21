@@ -3,7 +3,6 @@ title: "PeerTransportSecuritySettings"
 ms.date: "03/30/2017"
 ms.assetid: 1df08cbb-68c5-4d36-9f88-a776a8117de8
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # PeerTransportSecuritySettings
 PeerTransportSecuritySettings  

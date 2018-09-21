@@ -3,7 +3,6 @@ title: "ReadMe for Extended Protection Authentication Sample"
 ms.date: "03/30/2017"
 ms.assetid: 80bf2e97-398d-4db5-9040-d96478a2ccab
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # ReadMe for Extended Protection Authentication Sample
 Extended Protection is a security initiative to protect against man-in-the-middle (MITM) attacks, in which an attacker (the "man-in-the-middle") intercepts a client’s credentials and uses them to access secure resources on the client’s intended server.  

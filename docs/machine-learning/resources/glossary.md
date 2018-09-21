@@ -5,7 +5,6 @@ author: jralexander
 ms.author: johalex
 ms.date: 05/31/2018
 ms.topic: conceptual
-manager: wpickett
 ---
 # Machine learning glossary
 

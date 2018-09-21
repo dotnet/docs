@@ -7,7 +7,6 @@ helpviewer_keywords:
 ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Accessibility Best Practices
 > [!NOTE]

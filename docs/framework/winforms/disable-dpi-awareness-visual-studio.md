@@ -6,7 +6,6 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 author: gewarren
 ms.author: gewarren
-manager: douge
 ---
 # Disable DPI-awareness in Visual Studio
 

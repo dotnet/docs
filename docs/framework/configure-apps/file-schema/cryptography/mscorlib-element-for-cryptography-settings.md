@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: d549668f-31f1-4b92-8021-a9135c09ca3c
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;mscorlib&gt; Element for Cryptography Settings
 Contains the [\<cryptographySettings> element](../../../../../docs/framework/configure-apps/file-schema/cryptography/cryptographysettings-element.md).  

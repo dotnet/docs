@@ -6,7 +6,6 @@ dev_langs:
   - "vb"
 ms.assetid: 00959326-aa9d-44d0-af61-54933d4adc7f
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Transport Security Overview
 Transport security mechanisms in Windows Communication Foundation (WCF) depend on the binding and transport being used. For example, when using the <xref:System.ServiceModel.WSHttpBinding> class, the transport is HTTP, and the primary mechanism for securing the transport is Secure Sockets Layer (SSL) over HTTP, commonly called HTTPS. This topic discusses the major transport security mechanisms used in the WCF system-provided bindings.  

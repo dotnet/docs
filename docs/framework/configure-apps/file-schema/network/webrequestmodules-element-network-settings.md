@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 1263de11-3e0a-4f94-97c9-710b2ae53817
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;webRequestModules&gt; Element (Network Settings)
 Specifies modules to use to request information from network hosts.  

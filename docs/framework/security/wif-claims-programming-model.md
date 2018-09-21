@@ -3,7 +3,6 @@ title: "WIF Claims Programming Model"
 ms.date: "03/30/2017"
 ms.assetid: 149cb875-9b1c-4695-b88a-fbf1725a02f9
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # WIF Claims Programming Model
 ASP.NET and Windows Communication Foundation (WCF) developers ordinarily use the IIdentity and IPrincipal interfaces to work with the user’s identity information. In .NET 4.5, Windows Identity Foundation (WIF) has been integrated such that claims are now always present for any principal as illustrated in the following diagram:

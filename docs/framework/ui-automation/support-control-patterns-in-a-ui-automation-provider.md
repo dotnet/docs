@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 0d635c35-ffa8-4dc8-bbc9-12fcd5445776
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Support Control Patterns in a UI Automation Provider
 > [!NOTE]

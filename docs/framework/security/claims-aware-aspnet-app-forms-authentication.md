@@ -3,7 +3,6 @@ title: "How To: Build Claims-Aware ASP.NET Application Using Forms-Based Authent
 ms.date: "03/30/2017"
 ms.assetid: 98a3e029-1a9b-4e0c-b5d0-29d3f23f5b15
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How To: Build Claims-Aware ASP.NET Application Using Forms-Based Authentication
 ## Applies To  

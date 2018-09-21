@@ -3,7 +3,6 @@ title: "WIF Code Sample Index"
 ms.date: "03/30/2017"
 ms.assetid: 6711f01a-4743-43ce-95ab-5e2302a363ea
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # WIF Code Sample Index
 The following are code samples for Windows Identity Foundation 4.5:  

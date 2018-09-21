@@ -3,7 +3,6 @@ title: "System.ServiceModel.Security.SecurityTokenProviderClosed"
 ms.date: "03/30/2017"
 ms.assetid: 978c76b9-a9c8-435f-847d-0503e78dde50
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.SecurityTokenProviderClosed
 System.ServiceModel.Security.SecurityTokenProviderClosed  

@@ -1,15 +1,14 @@
 ---
 title: Create a Windows service application in Visual Studio
 ms.date: 09/10/2018
-dev_langs:
+dev_langs: 
   - "csharp"
   - "vb"
-helpviewer_keywords:
+helpviewer_keywords: 
   - "Windows service applications, walkthroughs"
   - "Windows service applications, creating"
 ms.assetid: e24d8a3d-edc6-485c-b6e0-5672d91fb607
 author: "ghogen"
-manager: "douge"
 ---
 # Walkthrough: Create a Windows service app
 

@@ -12,7 +12,6 @@ helpviewer_keywords:
   - "installutil.exe tool"
 ms.assetid: c89c5169-f567-4305-9d62-db31a1de5481
 author: "ghogen"
-manager: "douge"
 ---
 # How to: Install and Uninstall Services
 If you’re developing a Windows Service by using the .NET Framework, you can quickly install your service application by using a command-line utility called InstallUtil.exe. If you’re a developer who wants to release a Windows Service that users can install and uninstall  you should use InstallShield. See [Windows Installer Deployment](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0).  

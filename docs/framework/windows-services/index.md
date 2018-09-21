@@ -1,7 +1,7 @@
 ---
 title: "Developing Windows Service Applications"
 ms.date: "03/30/2017"
-helpviewer_keywords:
+helpviewer_keywords: 
   - "ServiceInstaller class, Windows Service applications"
   - "Service class, Windows Service applications"
   - "Windows Service applications"
@@ -11,7 +11,6 @@ helpviewer_keywords:
   - ".NET applications, Windows applications"
 ms.assetid: ba72d648-9553-4849-b829-069ad5ea014b
 author: "ghogen"
-manager: "douge"
 ---
 # Develop Windows service apps
 

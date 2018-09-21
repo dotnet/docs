@@ -16,11 +16,11 @@ ms.author: "ronpet"
 ---
 # How to: View the contents of the global assembly cache
 
-Use the [global assembly cache tool (gacutil.exe)](../tools/gacutil-exe-gac-tool.md) to view the contents of the global assembly cache.
+Use the [global assembly cache tool (gacutil.exe)](../tools/gacutil-exe-gac-tool.md) to view the contents of the global assembly cache (GAC).
 
-## To view a list of the assemblies in the global assembly cache
+## View the assemblies in the GAC
 
-At the [Visual Studio command prompt](../tools/developer-command-prompt-for-vs.md), type the following command:
+To view a list of the assemblies in the global assembly cache, open [Developer Command Prompt for Visual Studio](../tools/developer-command-prompt-for-vs.md), and then enter the following command:
 
 ```shell
 gacutil -l

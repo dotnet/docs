@@ -31,10 +31,27 @@ The images for these containers are created the same way and function the same. 
 
 Figure 2-3 shows a comparison between VMs and Docker containers.
 
-| Virtual Machines | Docker Containers |
-| -----------------| ------------------|
-|![For VMs, there are three base layers in the host server, from the bottom-up: infrastructure, Host Operating System and a Hypervisor and on top of all that each VM has its own OS and all necessary libraries.](./media/image3.png)|![For Docker, the host server only has the infrastructure and the OS and on top of that, the container engine, that keeps container isolated but sharing the base OS services.](./media/image4.png)|
-|Virtual machines include the application, the required libraries or binaries, and a full guest operating system. Full virtualization requires more resources than containerization. | Containers include the application and all its dependencies. However, they share the OS kernel with other containers, running as isolated processes in user space on the host operating system. (Except in Hyper-V containers, where each container runs inside of a special virtual machine per container.) |
+<div>
+    <style>
+        .div-row { width: 100% }
+        .div-col { padding: 10px }
+        @media(min-width: 960px) { .div-col { width: 50%; float: left; } }
+        @media(max-width: 959px) { .div-col { width: 100%; } }
+        .figure-text { font-size: smaller }
+    </style>
+    <div class="div-row">
+        <div class="div-col">
+            <p><strong>Virtual Machines</strong></p>
+            <p><img src="media/image3.png" style="" alt="For VMs, there are three base layers in the host server, from the bottom-up: infrastructure, Host Operating System and a Hypervisor and on top of all that each VM has its own OS and all necessary libraries" data-linktype="relative-path" class="x-hidden-focus"></p>
+            <p class="figure-text">Virtual machines include the application, the required libraries or binaries, and a full guest operating system. Full virtualization requires more resources than containerization.</p>
+        </div>
+        <div class="div-col">
+            <p><strong>Docker Containers</strong></p>
+            <p><img src="media/image4.png" style="" alt="For Docker, the host server only has the infrastructure and the OS and on top of that, the container engine, that keeps container isolated but sharing the base OS services." data-linktype="relative-path"></p>
+            <p class="figure-text">Containers include the application and all its dependencies. However, they share the OS kernel with other containers, running as isolated processes in user space on the host operating system. (Except in Hyper-V containers, where each container runs inside of a special virtual machine per container.)</p>
+        </div>
+    </div>
+</div>
 
 **Figure 2-3**. Comparison of traditional virtual machines to Docker containers
 

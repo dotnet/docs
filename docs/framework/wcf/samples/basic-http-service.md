@@ -15,7 +15,7 @@ This sample demonstrates how to implement an HTTP-based, RPC-based service - pop
   
  The App.config file configures the WCF service with a default <xref:System.ServiceModel.Description.WebHttpEndpoint> that has the <xref:System.ServiceModel.Description.WebHttpEndpoint.HelpEnabled%2A> property set to `true`. As a result, the WCF infrastructure creates an automatic HTML based help page at `http://localhost:8000/Customers/help` that provides information about how to construct HTTP requests to the service and how to consume the service’s HTTP response.  
   
- Program.cs demonstrates how a WCF channel factory can be used to make calls to the service and process responses. Note that this is just one way to access a WCF service. It is also possible to access the service using other .NET Framework classes like <xref:System.Net.HttpWebRequest> and <xref:System.Net.WebClient>. Other samples in the SDK (such as the [Automatic Format Selection](../../../../docs/framework/wcf/samples/automatic-format-selection.md) sample and [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) sample) show how to use these classes to communicate with a WCF service.  
+ Program.cs demonstrates how a WCF channel factory can be used to make calls to the service and process responses. Note that this is just one way to access a WCF service. It is also possible to access the service using other .NET Framework classes like <xref:System.Net.HttpWebRequest> and <xref:System.Net.WebClient>.
   
  The sample consists a self-hosted service and a client that both run within a console application. As the console application runs, the client makes requests to the service and writes the pertinent information from the responses to the console window.  
   
@@ -35,7 +35,3 @@ This sample demonstrates how to implement an HTTP-based, RPC-based service - pop
 >  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\BasicHttpService`  
-  
-## See Also  
- [Automatic Format Selection](../../../../docs/framework/wcf/samples/automatic-format-selection.md)  
- [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md)

@@ -100,7 +100,6 @@
 #### [How to: Enable the Net.TCP Port Sharing Service](how-to-enable-the-net-tcp-port-sharing-service.md)
 #### [How to: Configure a WCF Service to Use Port Sharing](how-to-configure-a-wcf-service-to-use-port-sharing.md)
 #### [Configuring the Net.TCP Port Sharing Service](configuring-the-net-tcp-port-sharing-service.md)
-### [Encoding Binary Objects with ByteStream Encoder](encoding-binary-objects-with-bytestream-encoder.md)
 ## [Queues and Reliable Sessions](queues-and-reliable-sessions.md)
 ### [Reliable Sessions](reliable-sessions.md)
 #### [Reliable Sessions Overview](reliable-sessions-overview.md)

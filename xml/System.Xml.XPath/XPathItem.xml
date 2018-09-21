@@ -1,4 +1,4 @@
-<Type Name="XPathItem" FullName="System.Xml.XPath.XPathItem">
+﻿<Type Name="XPathItem" FullName="System.Xml.XPath.XPathItem">
   <TypeSignature Language="C#" Value="public abstract class XPathItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XPathItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XPathItem" />
@@ -84,6 +84,9 @@
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -663,6 +666,9 @@
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaType</ReturnType>

@@ -1,4 +1,4 @@
-<Type Name="OleDbTransaction" FullName="System.Data.OleDb.OleDbTransaction">
+﻿<Type Name="OleDbTransaction" FullName="System.Data.OleDb.OleDbTransaction">
   <TypeSignature Language="C#" Value="public sealed class OleDbTransaction : System.Data.Common.DbTransaction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OleDbTransaction extends System.Data.Common.DbTransaction" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbTransaction" />
@@ -15,8 +15,7 @@
     <BaseTypeName>System.Data.Common.DbTransaction</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-1.1">System.MarshalByRefObject</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Represents an SQL transaction to be made at a data source. This class cannot be inherited.</summary>
     <remarks>

@@ -1,10 +1,10 @@
-<Type Name="MembershipUserCollection" FullName="System.Web.Security.MembershipUserCollection">
+﻿<Type Name="MembershipUserCollection" FullName="System.Web.Security.MembershipUserCollection">
   <TypeSignature Language="C#" Value="public sealed class MembershipUserCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit MembershipUserCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.MembershipUserCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MembershipUserCollection&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class MembershipUserCollection sealed : System::Collections::ICollection" />
-  <TypeSignature Language="F#" Value="type MembershipUserCollection = class&#xA;    interface IEnumerable&#xA;    interface ICollection" />
+  <TypeSignature Language="F#" Value="type MembershipUserCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Web.ApplicationServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

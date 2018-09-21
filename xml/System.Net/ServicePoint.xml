@@ -1,4 +1,4 @@
-<Type Name="ServicePoint" FullName="System.Net.ServicePoint">
+﻿<Type Name="ServicePoint" FullName="System.Net.ServicePoint">
   <TypeSignature Language="C#" Value="public class ServicePoint" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServicePoint extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.ServicePoint" />
@@ -585,6 +585,12 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.ServicePoint</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

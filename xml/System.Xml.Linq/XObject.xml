@@ -1,4 +1,4 @@
-<Type Name="XObject" FullName="System.Xml.Linq.XObject">
+﻿<Type Name="XObject" FullName="System.Xml.Linq.XObject">
   <TypeSignature Language="C#" Value="public abstract class XObject : System.Xml.IXmlLineInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XObject extends System.Object implements class System.Xml.IXmlLineInfo" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XObject" />
@@ -1602,9 +1602,6 @@ Count after removing: 2
       <MemberSignature Language="VB.NET" Value="Function HasLineInfo () As Boolean Implements IXmlLineInfo.HasLineInfo" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Xml.IXmlLineInfo.HasLineInfo() = System::Xml::IXmlLineInfo::HasLineInfo;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Xml.IXmlLineInfo.HasLineInfo</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1746,9 +1743,6 @@ Root                1    2
       <MemberSignature Language="C++ CLI" Value="property int System::Xml::IXmlLineInfo::LineNumber { int get(); };" />
       <MemberSignature Language="F#" Usage="System.Xml.IXmlLineInfo.LineNumber" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Xml.IXmlLineInfo.LineNumber</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1887,9 +1881,6 @@ Root                1    2
       <MemberSignature Language="C++ CLI" Value="property int System::Xml::IXmlLineInfo::LinePosition { int get(); };" />
       <MemberSignature Language="F#" Usage="System.Xml.IXmlLineInfo.LinePosition" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Xml.IXmlLineInfo.LinePosition</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

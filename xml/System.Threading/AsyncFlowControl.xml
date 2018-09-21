@@ -1,4 +1,4 @@
-<Type Name="AsyncFlowControl" FullName="System.Threading.AsyncFlowControl">
+﻿<Type Name="AsyncFlowControl" FullName="System.Threading.AsyncFlowControl">
   <TypeSignature Language="C#" Value="public struct AsyncFlowControl : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit AsyncFlowControl extends System.ValueType implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.AsyncFlowControl" />
@@ -304,6 +304,12 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

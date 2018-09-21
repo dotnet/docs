@@ -1,4 +1,4 @@
-<Type Name="IExpressionEditorInstance" FullName="System.Activities.Presentation.View.IExpressionEditorInstance">
+﻿<Type Name="IExpressionEditorInstance" FullName="System.Activities.Presentation.View.IExpressionEditorInstance">
   <TypeSignature Language="C#" Value="public interface IExpressionEditorInstance" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExpressionEditorInstance" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.IExpressionEditorInstance" />
@@ -694,8 +694,7 @@
       <Docs>
         <summary>Gets or sets the maximum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control. This property implicitly sets the height of the <see langword="ExpressionTextBox" /> control when growing to fit.</summary>
         <value>Returns an <see cref="T:System.Int32" /> that containing the maximum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinLines">
@@ -716,8 +715,7 @@
       <Docs>
         <summary>Gets or sets the minimum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control. This property implicitly sets the height of the <see langword="ExpressionTextBox" /> control.</summary>
         <value>Returns an <see cref="T:System.Int32" /> that contains the minimum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterInfo">

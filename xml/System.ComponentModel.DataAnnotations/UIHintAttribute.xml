@@ -1,4 +1,4 @@
-<Type Name="UIHintAttribute" FullName="System.ComponentModel.DataAnnotations.UIHintAttribute">
+﻿<Type Name="UIHintAttribute" FullName="System.ComponentModel.DataAnnotations.UIHintAttribute">
   <TypeSignature Language="C#" Value="public class UIHintAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UIHintAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.UIHintAttribute" />
@@ -316,6 +316,9 @@
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>

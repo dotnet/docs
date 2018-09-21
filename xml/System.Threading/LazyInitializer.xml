@@ -1,4 +1,4 @@
-<Type Name="LazyInitializer" FullName="System.Threading.LazyInitializer">
+﻿<Type Name="LazyInitializer" FullName="System.Threading.LazyInitializer">
   <TypeSignature Language="C#" Value="public static class LazyInitializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit LazyInitializer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.LazyInitializer" />
@@ -260,6 +260,12 @@ ExpensiveData _data = null;
         <AssemblyName>System.Threading</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>

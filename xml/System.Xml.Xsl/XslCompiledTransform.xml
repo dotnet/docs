@@ -1,4 +1,4 @@
-<Type Name="XslCompiledTransform" FullName="System.Xml.Xsl.XslCompiledTransform">
+﻿<Type Name="XslCompiledTransform" FullName="System.Xml.Xsl.XslCompiledTransform">
   <TypeSignature Language="C#" Value="public sealed class XslCompiledTransform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XslCompiledTransform extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.XslCompiledTransform" />
@@ -206,6 +206,12 @@
         <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.CompilerErrorCollection</ReturnType>
@@ -864,6 +870,12 @@ xslt.Load(typeof(bookOrders));
         <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.TempFileCollection</ReturnType>

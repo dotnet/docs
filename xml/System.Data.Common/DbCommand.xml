@@ -1,4 +1,4 @@
-<Type Name="DbCommand" FullName="System.Data.Common.DbCommand">
+﻿<Type Name="DbCommand" FullName="System.Data.Common.DbCommand">
   <TypeSignature Language="C#" Value="public abstract class DbCommand : System.ComponentModel.Component, IDisposable, System.Data.IDbCommand" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbCommand extends System.ComponentModel.Component implements class System.Data.IDbCommand, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbCommand" />
@@ -556,6 +556,12 @@
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -576,6 +582,12 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

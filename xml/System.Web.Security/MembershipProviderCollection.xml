@@ -1,4 +1,4 @@
-<Type Name="MembershipProviderCollection" FullName="System.Web.Security.MembershipProviderCollection">
+﻿<Type Name="MembershipProviderCollection" FullName="System.Web.Security.MembershipProviderCollection">
   <TypeSignature Language="C#" Value="public sealed class MembershipProviderCollection : System.Configuration.Provider.ProviderCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MembershipProviderCollection extends System.Configuration.Provider.ProviderCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.MembershipProviderCollection" />
@@ -62,7 +62,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>

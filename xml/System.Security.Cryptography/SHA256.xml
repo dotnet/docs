@@ -1,4 +1,4 @@
-<Type Name="SHA256" FullName="System.Security.Cryptography.SHA256">
+﻿<Type Name="SHA256" FullName="System.Security.Cryptography.SHA256">
   <TypeSignature Language="C#" Value="public abstract class SHA256 : System.Security.Cryptography.HashAlgorithm" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SHA256 extends System.Security.Cryptography.HashAlgorithm" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.SHA256" />
@@ -107,8 +107,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Allows specific implementations of this abstract class to be instantiated.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName="Create">

@@ -1,4 +1,4 @@
-<Type Name="ToBase64Transform" FullName="System.Security.Cryptography.ToBase64Transform">
+﻿<Type Name="ToBase64Transform" FullName="System.Security.Cryptography.ToBase64Transform">
   <TypeSignature Language="C#" Value="public class ToBase64Transform : System.Security.Cryptography.ICryptoTransform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToBase64Transform extends System.Object implements class System.IDisposable, class System.Security.Cryptography.ICryptoTransform" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ToBase64Transform" />
@@ -502,6 +502,12 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

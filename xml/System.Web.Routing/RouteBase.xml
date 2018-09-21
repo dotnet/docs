@@ -1,4 +1,4 @@
-<Type Name="RouteBase" FullName="System.Web.Routing.RouteBase">
+﻿<Type Name="RouteBase" FullName="System.Web.Routing.RouteBase">
   <TypeSignature Language="C#" Value="public abstract class RouteBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RouteBase extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RouteBase" />
@@ -141,6 +141,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

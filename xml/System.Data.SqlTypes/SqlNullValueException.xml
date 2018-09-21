@@ -1,4 +1,4 @@
-<Type Name="SqlNullValueException" FullName="System.Data.SqlTypes.SqlNullValueException">
+﻿<Type Name="SqlNullValueException" FullName="System.Data.SqlTypes.SqlNullValueException">
   <TypeSignature Language="C#" Value="public sealed class SqlNullValueException : System.Data.SqlTypes.SqlTypeException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SqlNullValueException extends System.Data.SqlTypes.SqlTypeException" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlNullValueException" />
@@ -206,6 +206,15 @@
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

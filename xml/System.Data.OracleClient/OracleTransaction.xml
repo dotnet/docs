@@ -1,4 +1,4 @@
-<Type Name="OracleTransaction" FullName="System.Data.OracleClient.OracleTransaction">
+﻿<Type Name="OracleTransaction" FullName="System.Data.OracleClient.OracleTransaction">
   <TypeSignature Language="C#" Value="public sealed class OracleTransaction : System.Data.Common.DbTransaction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OracleTransaction extends System.Data.Common.DbTransaction" />
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleTransaction" />
@@ -15,8 +15,7 @@
     <BaseTypeName>System.Data.Common.DbTransaction</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-1.1">System.MarshalByRefObject</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Represents a transaction to be made in the database.</summary>
     <remarks>

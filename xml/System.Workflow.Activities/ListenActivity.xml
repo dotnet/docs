@@ -1,4 +1,4 @@
-<Type Name="ListenActivity" FullName="System.Workflow.Activities.ListenActivity">
+﻿<Type Name="ListenActivity" FullName="System.Workflow.Activities.ListenActivity">
   <TypeSignature Language="C#" Value="public sealed class ListenActivity : System.Workflow.ComponentModel.CompositeActivity, System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ListenActivity extends System.Workflow.ComponentModel.CompositeActivity implements class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ListenActivity" />

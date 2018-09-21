@@ -1,4 +1,4 @@
-<Type Name="Debug" FullName="System.Diagnostics.Debug">
+﻿<Type Name="Debug" FullName="System.Diagnostics.Debug">
   <TypeSignature Language="C#" Value="public static class Debug" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Debug extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Debug" />
@@ -999,6 +999,12 @@ End of list of errors
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceListenerCollection</ReturnType>

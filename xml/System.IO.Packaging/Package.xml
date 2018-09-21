@@ -1,4 +1,4 @@
-<Type Name="Package" FullName="System.IO.Packaging.Package">
+﻿<Type Name="Package" FullName="System.IO.Packaging.Package">
   <TypeSignature Language="C#" Value="public abstract class Package : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Package extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.Package" />
@@ -144,6 +144,9 @@
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="openFileAccess" Type="System.IO.FileAccess" />

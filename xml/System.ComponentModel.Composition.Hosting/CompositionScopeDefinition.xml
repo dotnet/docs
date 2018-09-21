@@ -218,8 +218,8 @@
   
 -   The `Finalize()` method of the current object should call `Dispose(Boolean)` with the Boolean parameter set to `false` to release only unmanaged resources.  
   
- For more information, see .  
-  
+For more information, see [Implementing a Dispose method](~/docs/standard/garbage-collection/implementing-dispose.md).
+
  ]]></format>
         </remarks>
       </Docs>

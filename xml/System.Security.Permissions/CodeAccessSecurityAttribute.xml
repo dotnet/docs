@@ -1,4 +1,4 @@
-<Type Name="CodeAccessSecurityAttribute" FullName="System.Security.Permissions.CodeAccessSecurityAttribute">
+﻿<Type Name="CodeAccessSecurityAttribute" FullName="System.Security.Permissions.CodeAccessSecurityAttribute">
   <TypeSignature Language="C#" Value="public abstract class CodeAccessSecurityAttribute : System.Security.Permissions.SecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit CodeAccessSecurityAttribute extends System.Security.Permissions.SecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.CodeAccessSecurityAttribute" />
@@ -20,6 +20,9 @@
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Permissions</AssemblyName>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.Permissions.SecurityAttribute</BaseTypeName>
@@ -95,6 +98,9 @@
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Security.Permissions.SecurityAction" />

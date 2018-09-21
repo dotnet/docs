@@ -1,4 +1,4 @@
-<Type Name="GregorianCalendar" FullName="System.Globalization.GregorianCalendar">
+﻿<Type Name="GregorianCalendar" FullName="System.Globalization.GregorianCalendar">
   <TypeSignature Language="C#" Value="public class GregorianCalendar : System.Globalization.Calendar" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit GregorianCalendar extends System.Globalization.Calendar" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.GregorianCalendar" />
@@ -55,7 +55,7 @@
 > [!IMPORTANT]
 >  By default, all <xref:System.DateTime> and <xref:System.DateTimeOffset> values express dates and times in the Gregorian calendar.  
   
- The Gregorian calendar was developed as a replacement for the Julian calendar (which is represented by the <xref:System.Globalization.JulianCalendar> class) and was first introduced in a small number of cultures on October 15, 1582. When working with historic dates that precede a culture's adoption of the Gregorian calendar, you should use the original calendar if it is available in the .NET Framework. For example, Denmark changed from the Julian calendar to the Gregorian calendar on February 19 (in the Julian calendar) or March 1 (in the Gregorian calendar) of 1700. In this case, for dates before the adoption of the Gregorian calendar, you should use the Julian calendar. However, note that no culture offers intrinsic support for the <xref:System.Globalization.JulianCalendar> class. You must use the <xref:System.Globalization.JulianCalendar> class as a standalone calendar. For more information, see .  
+ The Gregorian calendar was developed as a replacement for the Julian calendar (which is represented by the <xref:System.Globalization.JulianCalendar> class) and was first introduced in a small number of cultures on October 15, 1582. When working with historic dates that precede a culture's adoption of the Gregorian calendar, you should use the original calendar if it is available in the .NET Framework. For example, Denmark changed from the Julian calendar to the Gregorian calendar on February 19 (in the Julian calendar) or March 1 (in the Gregorian calendar) of 1700. In this case, for dates before the adoption of the Gregorian calendar, you should use the Julian calendar. However, note that no culture offers intrinsic support for the <xref:System.Globalization.JulianCalendar> class. You must use the <xref:System.Globalization.JulianCalendar> class as a standalone calendar. For more information, see [Working with calendars](~/docs/standard/datetime/working-with-calendars.md).
   
  The following example illustrates that February 18, 1700 in the Julian calendar, which is the last day the Julian calendar was officially used in Denmark, is one day earlier than March 1, 1700 in the Gregorian calendar.  
   
@@ -277,6 +277,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Calendars</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
@@ -392,6 +401,9 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Calendars</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -432,6 +444,9 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Calendars</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
@@ -1152,6 +1167,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Calendars</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0">

@@ -1,4 +1,4 @@
-<Type Name="Group" FullName="System.Text.RegularExpressions.Group">
+﻿<Type Name="Group" FullName="System.Text.RegularExpressions.Group">
   <TypeSignature Language="C#" Value="public class Group : System.Text.RegularExpressions.Capture" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Group extends System.Text.RegularExpressions.Capture" />
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.Group" />
@@ -133,6 +133,9 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

@@ -1,4 +1,4 @@
-<Type Name="Queryable" FullName="System.Linq.Queryable">
+﻿<Type Name="Queryable" FullName="System.Linq.Queryable">
   <TypeSignature Language="C#" Value="public static class Queryable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Queryable extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Queryable" />
@@ -474,6 +474,12 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.IQueryable&lt;TSource&gt;</ReturnType>
@@ -4981,6 +4987,12 @@
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.IQueryable&lt;TSource&gt;</ReturnType>
       </ReturnValue>
@@ -5959,6 +5971,12 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.IQueryable&lt;TSource&gt;</ReturnType>
@@ -7425,6 +7443,12 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.IQueryable&lt;TSource&gt;</ReturnType>

@@ -1,4 +1,4 @@
-<Type Name="DoWorkEventArgs" FullName="System.ComponentModel.DoWorkEventArgs">
+﻿<Type Name="DoWorkEventArgs" FullName="System.ComponentModel.DoWorkEventArgs">
   <TypeSignature Language="C#" Value="public class DoWorkEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DoWorkEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DoWorkEventArgs" />
@@ -144,6 +144,12 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

@@ -1,4 +1,4 @@
-<Type Name="SqlTypeException" FullName="System.Data.SqlTypes.SqlTypeException">
+﻿<Type Name="SqlTypeException" FullName="System.Data.SqlTypes.SqlTypeException">
   <TypeSignature Language="C#" Value="public class SqlTypeException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SqlTypeException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlTypeException" />
@@ -143,6 +143,9 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="si" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="sc" Type="System.Runtime.Serialization.StreamingContext" />
@@ -214,6 +217,15 @@
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

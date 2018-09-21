@@ -1,4 +1,4 @@
-<Type Name="HashAlgorithm" FullName="System.Security.Cryptography.HashAlgorithm">
+﻿<Type Name="HashAlgorithm" FullName="System.Security.Cryptography.HashAlgorithm">
   <TypeSignature Language="C#" Value="public abstract class HashAlgorithm : System.Security.Cryptography.ICryptoTransform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HashAlgorithm extends System.Object implements class System.IDisposable, class System.Security.Cryptography.ICryptoTransform" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.HashAlgorithm" />
@@ -263,10 +263,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example computes the <xref:System.Security.Cryptography.MD5> hash value of a string and returns the hash as a 32-character, hexadecimal-formatted string.  The hash string created by this code example is compatible with any MD5 hash function (on any platform) that creates a 32-character, hexadecimal-formatted hash string.  
+ The following example computes the <xref:System.Security.Cryptography.SHA256> hash value of a string and returns the hash as a 64-character, hexadecimal-formatted string.  The hash string created by this code example is compatible with any SHA256 hash function (on any platform) that creates a 64-character, hexadecimal-formatted hash string.  
   
- [!code-csharp[Security.Cryptography.MD5#1](~/samples/snippets/csharp/VS_Snippets_CLR/Security.Cryptography.MD5/cs/example.cs#1)]
- [!code-vb[Security.Cryptography.MD5#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Security.Cryptography.MD5/vb/example.vb#1)]  
+ [!code-csharp[HashAlgorithm.ComputeHash-1](~/samples/snippets/csharp/api/system.security.cryptography/hashalgorithm/example1.cs)]
+ [!code-vb[HashAlgorithm.ComputeHash-1](~/samples/snippets/visualbasic/api/system.security.cryptography/hashalgorithm/example1.vb)]  
   
  ]]></format>
         </remarks>
@@ -314,12 +314,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example calculates the <xref:System.Security.Cryptography.RIPEMD160> hash for all files in a directory.  
+
+The following example calculates the <xref:System.Security.Cryptography.SHA256> hash for all files in a directory.  
   
- [!code-cpp[RIPEMD160#1](~/samples/snippets/cpp/VS_Snippets_CLR/RIPEMD160/CPP/ripemd160.cpp#1)]
- [!code-csharp[RIPEMD160#1](~/samples/snippets/csharp/VS_Snippets_CLR/RIPEMD160/CS/ripemd160.cs#1)]
- [!code-vb[RIPEMD160#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RIPEMD160/vb/ripemd160.vb#1)]  
-  
+[!code-csharp[HashAlgorithm.ComputeHash Example](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SHA256 Example/CS/source.cs#1)]
+[!code-vb[HashAlgorithm.ComputeHash Example](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SHA256 Example/VB/source.vb#1)] 
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed.</exception>
@@ -681,6 +681,12 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1074,6 +1080,12 @@
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1255,6 +1267,12 @@
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1283,6 +1301,12 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

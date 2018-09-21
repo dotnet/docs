@@ -1,4 +1,4 @@
-<Type Name="TaskCanceledException" FullName="System.Threading.Tasks.TaskCanceledException">
+﻿<Type Name="TaskCanceledException" FullName="System.Threading.Tasks.TaskCanceledException">
   <TypeSignature Language="C#" Value="public class TaskCanceledException : OperationCanceledException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TaskCanceledException extends System.OperationCanceledException" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskCanceledException" />
@@ -291,6 +291,12 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />

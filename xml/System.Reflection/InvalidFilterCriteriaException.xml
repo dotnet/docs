@@ -1,4 +1,4 @@
-<Type Name="InvalidFilterCriteriaException" FullName="System.Reflection.InvalidFilterCriteriaException">
+﻿<Type Name="InvalidFilterCriteriaException" FullName="System.Reflection.InvalidFilterCriteriaException">
   <TypeSignature Language="C#" Value="public class InvalidFilterCriteriaException : ApplicationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit InvalidFilterCriteriaException extends System.ApplicationException" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.InvalidFilterCriteriaException" />
@@ -184,6 +184,9 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">

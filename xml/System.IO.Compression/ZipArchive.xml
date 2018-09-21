@@ -469,7 +469,7 @@
   
  When you are finished using this instance of <xref:System.IO.Compression.ZipArchive>, call <xref:System.IO.Compression.ZipArchive.Dispose> to release all resources used by this instance. You should eliminate further references to this <xref:System.IO.Compression.ZipArchive> instance so that the garbage collector can reclaim the memory of the instance instead of keeping it alive for finalization.  
   
- <xref:System.IO.Compression.ZipArchive.Dispose> calls the <xref:System.IO.Compression.ZipArchive.Dispose%28System.Boolean%29> method, which contains the code to release managed and unmanaged resources. For more information, see .  
+ <xref:System.IO.Compression.ZipArchive.Dispose> calls the <xref:System.IO.Compression.ZipArchive.Dispose%28System.Boolean%29> method, which contains the code to release managed and unmanaged resources. For more information, see [Implementing a Dispose method](~/docs/standard/garbage-collection/implementing-dispose.md).
   
  ]]></format>
         </remarks>
@@ -517,10 +517,10 @@
   
 -   The <xref:System.IO.Compression.ZipArchive.Dispose> method of the current object should call <xref:System.IO.Compression.ZipArchive.Dispose%28System.Boolean%29> with the Boolean parameter set to `true` to release both managed and unmanaged resources.  
   
--   The <xref:System.Object.Finalize> method of the current object should call <xref:System.IO.Compression.ZipArchive.Dispose%28System.Boolean%29> with the Boolean parameter set to `false` to release only unmanaged resources.  
+-   The <xref:System.Object.Finalize> method of the current object should call <xref:System.IO.Compression.ZipArchive.Dispose%28System.Boolean%29> with the Boolean parameter set to `false` to release only unmanaged resources.
   
- For more information, see .  
-  
+ For more information, see [Implementing a Dispose method](~/docs/standard/garbage-collection/implementing-dispose.md).
+
  ]]></format>
         </remarks>
       </Docs>

@@ -1,4 +1,4 @@
-<Type Name="IsolatedStorage" FullName="System.IO.IsolatedStorage.IsolatedStorage">
+﻿<Type Name="IsolatedStorage" FullName="System.IO.IsolatedStorage.IsolatedStorage">
   <TypeSignature Language="C#" Value="public abstract class IsolatedStorage : MarshalByRefObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit IsolatedStorage extends System.MarshalByRefObject" />
   <TypeSignature Language="DocId" Value="T:System.IO.IsolatedStorage.IsolatedStorage" />
@@ -67,6 +67,9 @@
         <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -316,6 +319,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.IsolatedStoragePermission</ReturnType>

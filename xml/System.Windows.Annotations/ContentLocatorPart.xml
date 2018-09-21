@@ -1,4 +1,4 @@
-<Type Name="ContentLocatorPart" FullName="System.Windows.Annotations.ContentLocatorPart">
+﻿<Type Name="ContentLocatorPart" FullName="System.Windows.Annotations.ContentLocatorPart">
   <TypeSignature Language="C#" Value="public sealed class ContentLocatorPart" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContentLocatorPart extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.ContentLocatorPart" />
@@ -13,8 +13,7 @@
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Represents a set of name/value pairs that identify an item of content.</summary>
     <remarks>To be added.</remarks>

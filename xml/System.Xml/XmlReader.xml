@@ -1,4 +1,4 @@
-<Type Name="XmlReader" FullName="System.Xml.XmlReader">
+﻿<Type Name="XmlReader" FullName="System.Xml.XmlReader">
   <TypeSignature Language="C#" Value="public abstract class XmlReader : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlReader extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlReader" />
@@ -984,7 +984,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
         <exception cref="T:System.UriFormatException">
           <block subset="none" type="note">
             <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
+ In the <see href="https://go.microsoft.com/fwlink/?LinkID=247912">.NET for Windows Store apps</see> or the <see href="https://docs.microsoft.com/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library">Portable Class Library</see>, catch the base class exception, <see cref="T:System.FormatException" />, instead.  
   
 </para>
           </block>  
@@ -1198,7 +1198,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
         <exception cref="T:System.UriFormatException">
           <block subset="none" type="note">
             <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
+ In the <see href="https://go.microsoft.com/fwlink/?LinkID=247912">.NET for Windows Store apps</see> or the <see href="https://docs.microsoft.com/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library">Portable Class Library</see>, catch the base class exception, <see cref="T:System.FormatException" />, instead.  
   
 </para>
           </block>  
@@ -8367,6 +8367,12 @@ reader.ReadToFollowing("item", "urn:1");
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
@@ -8385,7 +8391,7 @@ reader.ReadToFollowing("item", "urn:1");
 
 This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.XmlReader> instance is cast to an <xref:System.IDisposable> interface.
 
-This member may behave differently when it is used in a Portable Class Library project. For more information, see [API Differences in Portable Class Library](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/gg597392(v=vs.100)).
+This member may behave differently when it is used in a [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md) project. For more information, see [API Differences in Portable Class Library](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/gg597392(v=vs.100)).
 
  ]]></format>
         </remarks>

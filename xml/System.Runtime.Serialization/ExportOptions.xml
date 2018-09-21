@@ -1,4 +1,4 @@
-<Type Name="ExportOptions" FullName="System.Runtime.Serialization.ExportOptions">
+﻿<Type Name="ExportOptions" FullName="System.Runtime.Serialization.ExportOptions">
   <TypeSignature Language="C#" Value="public class ExportOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExportOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ExportOptions" />
@@ -101,6 +101,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.IDataContractSurrogate</ReturnType>

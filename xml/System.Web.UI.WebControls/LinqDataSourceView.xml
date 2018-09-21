@@ -1,4 +1,4 @@
-<Type Name="LinqDataSourceView" FullName="System.Web.UI.WebControls.LinqDataSourceView">
+﻿<Type Name="LinqDataSourceView" FullName="System.Web.UI.WebControls.LinqDataSourceView">
   <TypeSignature Language="C#" Value="public class LinqDataSourceView : System.Web.UI.WebControls.ContextDataSourceView" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinqDataSourceView extends System.Web.UI.WebControls.ContextDataSourceView" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceView" />
@@ -14,8 +14,7 @@
     <BaseTypeName>System.Web.UI.WebControls.ContextDataSourceView</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-3.5">System.Web.UI.DataSourceView</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Supports the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control and provides an interface for data-bound controls to perform LINQ data operations.</summary>
     <remarks>

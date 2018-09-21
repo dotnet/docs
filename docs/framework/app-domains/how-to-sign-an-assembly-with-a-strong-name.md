@@ -97,4 +97,4 @@ al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk
  [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)  
  [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md)  
  [Managing Assembly and Manifest Signing](/visualstudio/ide/managing-assembly-and-manifest-signing)  
- [Signing Page, Project Designer](https://msdn.microsoft.com/library/0k50fs3b)
+ [Signing Page, Project Designer](/visualstudio/ide/reference/signing-page-project-designer)

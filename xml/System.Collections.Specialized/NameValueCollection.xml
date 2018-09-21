@@ -1401,7 +1401,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Collections.Specialized.NameValueCollection> does not contain an element with the specified key, the <xref:System.Collections.Specialized.NameValueCollection> remains unchanged. No exception is thrown.  
+ If the <xref:System.Collections.Specialized.NameValueCollection> doesn't contain an element with the specified key, the <xref:System.Collections.Specialized.NameValueCollection> remains unchanged. No exception is thrown.
+
+ If you specify a `null` value to the `name` parameter, an entry with a `null` key is removed, if found.
   
  In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
   

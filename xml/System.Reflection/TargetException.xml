@@ -1,4 +1,4 @@
-<Type Name="TargetException" FullName="System.Reflection.TargetException">
+﻿<Type Name="TargetException" FullName="System.Reflection.TargetException">
   <TypeSignature Language="C#" Value="public class TargetException : ApplicationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TargetException extends System.ApplicationException" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.TargetException" />
@@ -183,6 +183,9 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">

@@ -1,4 +1,4 @@
-<Type Name="Ping" FullName="System.Net.NetworkInformation.Ping">
+﻿<Type Name="Ping" FullName="System.Net.NetworkInformation.Ping">
   <TypeSignature Language="C#" Value="public class Ping : System.ComponentModel.Component, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Ping extends System.ComponentModel.Component implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.Ping" />
@@ -150,6 +150,12 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2048,6 +2054,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Ping</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -81,9 +81,8 @@
  [!code-vb[stringinfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/StringInfo/vb/stringinfo.vb#1)]  
 
  ]]></format>
-    <related type="ExternalDocumentation" href="https://www.microsoft.com/en-us/download/details.aspx?id=10921">Sorting Weight Tables for Windows operating systems</related> 
+      <related type="ExternalDocumentation" href="https://www.microsoft.com/en-us/download/details.aspx?id=10921">Sorting Weight Tables for Windows operating systems</related>
     </remarks>
-    
     <block subset="none" type="usage">
       <para>Internally, the methods of the <see cref="T:System.Globalization.StringInfo" /> class call the methods of the <see cref="T:System.Globalization.CharUnicodeInfo" /> class to determine character categories. Starting with the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], character classification is based on [The Unicode Standard, Version 8.0.0](https://unicode.org/versions/Unicode8.0.0). For the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] through the [!INCLUDE[net_v461](~/includes/net-v461-md.md)], it is based on [The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/).</para>
     </block>
@@ -766,6 +765,9 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -814,6 +816,9 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

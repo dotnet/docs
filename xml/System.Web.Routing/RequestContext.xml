@@ -1,4 +1,4 @@
-<Type Name="RequestContext" FullName="System.Web.Routing.RequestContext">
+﻿<Type Name="RequestContext" FullName="System.Web.Routing.RequestContext">
   <TypeSignature Language="C#" Value="public class RequestContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequestContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RequestContext" />
@@ -56,6 +56,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">

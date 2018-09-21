@@ -4255,6 +4255,18 @@
       <Member Id="M:System.Runtime.InteropServices.ComVisibleAttribute.#ctor(System.Boolean)" />
       <Member Id="P:System.Runtime.InteropServices.ComVisibleAttribute.Value" />
     </Type>
+    <Type Name="System.Runtime.InteropServices.CriticalHandle" Id="T:System.Runtime.InteropServices.CriticalHandle">
+      <Member Id="F:System.Runtime.InteropServices.CriticalHandle.handle" />
+      <Member Id="M:System.Runtime.InteropServices.CriticalHandle.#ctor(System.IntPtr)" />
+      <Member Id="M:System.Runtime.InteropServices.CriticalHandle.Dispose" />
+      <Member Id="M:System.Runtime.InteropServices.CriticalHandle.Dispose(System.Boolean)" />
+      <Member Id="M:System.Runtime.InteropServices.CriticalHandle.Finalize" />
+      <Member Id="M:System.Runtime.InteropServices.CriticalHandle.ReleaseHandle" />
+      <Member Id="M:System.Runtime.InteropServices.CriticalHandle.SetHandle(System.IntPtr)" />
+      <Member Id="M:System.Runtime.InteropServices.CriticalHandle.SetHandleAsInvalid" />
+      <Member Id="P:System.Runtime.InteropServices.CriticalHandle.IsClosed" />
+      <Member Id="P:System.Runtime.InteropServices.CriticalHandle.IsInvalid" />
+    </Type>
     <Type Name="System.Runtime.InteropServices.CurrencyWrapper" Id="T:System.Runtime.InteropServices.CurrencyWrapper">
       <Member Id="M:System.Runtime.InteropServices.CurrencyWrapper.#ctor(System.Decimal)" />
       <Member Id="M:System.Runtime.InteropServices.CurrencyWrapper.#ctor(System.Object)" />
@@ -4566,6 +4578,21 @@
       <Member Id="M:System.Runtime.InteropServices.SafeBuffer.WriteArray``1(System.UInt64,``0[],System.Int32,System.Int32)" />
       <Member Id="P:System.Runtime.InteropServices.SafeBuffer.ByteLength" />
       <Member Id="P:System.Runtime.InteropServices.SafeBuffer.IsInvalid" />
+    </Type>
+    <Type Name="System.Runtime.InteropServices.SafeHandle" Id="T:System.Runtime.InteropServices.SafeHandle">
+      <Member Id="F:System.Runtime.InteropServices.SafeHandle.handle" />
+      <Member Id="M:System.Runtime.InteropServices.SafeHandle.#ctor(System.IntPtr,System.Boolean)" />
+      <Member Id="M:System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)" />
+      <Member Id="M:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle" />
+      <Member Id="M:System.Runtime.InteropServices.SafeHandle.DangerousRelease" />
+      <Member Id="M:System.Runtime.InteropServices.SafeHandle.Dispose" />
+      <Member Id="M:System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)" />
+      <Member Id="M:System.Runtime.InteropServices.SafeHandle.Finalize" />
+      <Member Id="M:System.Runtime.InteropServices.SafeHandle.ReleaseHandle" />
+      <Member Id="M:System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)" />
+      <Member Id="M:System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid" />
+      <Member Id="P:System.Runtime.InteropServices.SafeHandle.IsClosed" />
+      <Member Id="P:System.Runtime.InteropServices.SafeHandle.IsInvalid" />
     </Type>
     <Type Name="System.Runtime.InteropServices.SEHException" Id="T:System.Runtime.InteropServices.SEHException">
       <Member Id="M:System.Runtime.InteropServices.SEHException.#ctor" />

@@ -1,4 +1,4 @@
-<Type Name="TransportContext" FullName="System.Net.TransportContext">
+﻿<Type Name="TransportContext" FullName="System.Net.TransportContext">
   <TypeSignature Language="C#" Value="public abstract class TransportContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TransportContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.TransportContext" />
@@ -145,6 +145,12 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Security.Authentication.ExtendedProtection.TokenBinding&gt;</ReturnType>

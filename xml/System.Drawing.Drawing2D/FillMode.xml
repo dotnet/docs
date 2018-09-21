@@ -1,4 +1,4 @@
-<Type Name="FillMode" FullName="System.Drawing.Drawing2D.FillMode">
+﻿<Type Name="FillMode" FullName="System.Drawing.Drawing2D.FillMode">
   <TypeSignature Language="C#" Value="public enum FillMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FillMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.FillMode" />
@@ -9,6 +9,10 @@
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing.Common</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -59,6 +63,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Common</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.FillMode</ReturnType>
       </ReturnValue>
@@ -79,6 +87,10 @@
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Common</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

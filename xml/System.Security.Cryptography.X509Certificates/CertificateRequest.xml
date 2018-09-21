@@ -1,4 +1,4 @@
-<Type Name="CertificateRequest" FullName="System.Security.Cryptography.X509Certificates.CertificateRequest">
+﻿<Type Name="CertificateRequest" FullName="System.Security.Cryptography.X509Certificates.CertificateRequest">
   <TypeSignature Language="C#" Value="public sealed class CertificateRequest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CertificateRequest extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.CertificateRequest" />
@@ -30,6 +30,14 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs />
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CertificateRequest (System.Security.Cryptography.X509Certificates.X500DistinguishedName subjectName, System.Security.Cryptography.ECDsa key, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X500DistinguishedName subjectName, class System.Security.Cryptography.ECDsa key, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
@@ -259,6 +267,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs />
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2 Create (System.Security.Cryptography.X509Certificates.X509Certificate2 issuerCertificate, DateTimeOffset notBefore, DateTimeOffset notAfter, byte[] serialNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Cryptography.X509Certificates.X509Certificate2 Create(class System.Security.Cryptography.X509Certificates.X509Certificate2 issuerCertificate, valuetype System.DateTimeOffset notBefore, valuetype System.DateTimeOffset notAfter, unsigned int8[] serialNumber) cil managed" />
@@ -404,6 +420,14 @@ The type of signing key represented by <paramref name="issuerCertificate" /> cou
         <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurs during the certificate creation process.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateSigningRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs />
+    </MemberGroup>
     <Member MemberName="CreateSigningRequest">
       <MemberSignature Language="C#" Value="public byte[] CreateSigningRequest ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] CreateSigningRequest() cil managed" />
@@ -578,29 +602,5 @@ The type of signing key represented by <paramref name="issuerCertificate" /> cou
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateSigningRequest">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs />
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs />
-    </MemberGroup>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs />
-    </MemberGroup>
   </Members>
 </Type>

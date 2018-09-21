@@ -1,4 +1,4 @@
-<Type Name="RSACryptoServiceProvider" FullName="System.Security.Cryptography.RSACryptoServiceProvider">
+﻿<Type Name="RSACryptoServiceProvider" FullName="System.Security.Cryptography.RSACryptoServiceProvider">
   <TypeSignature Language="C#" Value="public sealed class RSACryptoServiceProvider : System.Security.Cryptography.RSA, System.Security.Cryptography.ICspAsymmetricAlgorithm" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RSACryptoServiceProvider extends System.Security.Cryptography.RSA implements class System.Security.Cryptography.ICspAsymmetricAlgorithm" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSACryptoServiceProvider" />
@@ -934,6 +934,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1254,6 +1260,12 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.KeySizes[]</ReturnType>

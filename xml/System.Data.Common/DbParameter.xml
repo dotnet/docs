@@ -1,4 +1,4 @@
-<Type Name="DbParameter" FullName="System.Data.Common.DbParameter">
+﻿<Type Name="DbParameter" FullName="System.Data.Common.DbParameter">
   <TypeSignature Language="C#" Value="public abstract class DbParameter : MarshalByRefObject, System.Data.IDbDataParameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbParameter extends System.MarshalByRefObject implements class System.Data.IDataParameter, class System.Data.IDbDataParameter" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbParameter" />
@@ -639,6 +639,12 @@ FieldName = @OriginalFieldName
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRowVersion</ReturnType>

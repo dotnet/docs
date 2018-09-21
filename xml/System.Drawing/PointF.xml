@@ -1,4 +1,4 @@
-<Type Name="PointF" FullName="System.Drawing.PointF">
+﻿<Type Name="PointF" FullName="System.Drawing.PointF">
   <TypeSignature Language="C#" Value="public struct PointF" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit PointF extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.PointF" />
@@ -242,6 +242,12 @@
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

@@ -1,4 +1,4 @@
-<Type Name="RegisteredWaitHandle" FullName="System.Threading.RegisteredWaitHandle">
+﻿<Type Name="RegisteredWaitHandle" FullName="System.Threading.RegisteredWaitHandle">
   <TypeSignature Language="C#" Value="public sealed class RegisteredWaitHandle : MarshalByRefObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegisteredWaitHandle extends System.MarshalByRefObject" />
   <TypeSignature Language="DocId" Value="T:System.Threading.RegisteredWaitHandle" />
@@ -69,6 +69,12 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.ThreadPool</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

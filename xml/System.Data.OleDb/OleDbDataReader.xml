@@ -1,4 +1,4 @@
-<Type Name="OleDbDataReader" FullName="System.Data.OleDb.OleDbDataReader">
+﻿<Type Name="OleDbDataReader" FullName="System.Data.OleDb.OleDbDataReader">
   <TypeSignature Language="C#" Value="public sealed class OleDbDataReader : System.Data.Common.DbDataReader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OleDbDataReader extends System.Data.Common.DbDataReader" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbDataReader" />
@@ -15,8 +15,7 @@
     <BaseTypeName>System.Data.Common.DbDataReader</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-1.1">System.MarshalByRefObject</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Provides a way of reading a forward-only stream of data rows from a data source. This class cannot be inherited.</summary>
     <remarks>

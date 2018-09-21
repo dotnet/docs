@@ -300,6 +300,9 @@ DbParameter cmd = newFactory.CreateParameter();
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Odbc</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.CodeAccessPermission</ReturnType>
       </ReturnValue>

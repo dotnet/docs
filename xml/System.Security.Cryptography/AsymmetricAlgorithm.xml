@@ -1,4 +1,4 @@
-<Type Name="AsymmetricAlgorithm" FullName="System.Security.Cryptography.AsymmetricAlgorithm">
+﻿<Type Name="AsymmetricAlgorithm" FullName="System.Security.Cryptography.AsymmetricAlgorithm">
   <TypeSignature Language="C#" Value="public abstract class AsymmetricAlgorithm : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AsymmetricAlgorithm extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.AsymmetricAlgorithm" />
@@ -768,6 +768,12 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

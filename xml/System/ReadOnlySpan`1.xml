@@ -114,6 +114,9 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="array" Type="T[]" />
         <Parameter Name="start" Type="System.Int32" />
@@ -337,6 +340,9 @@ This reference is used for pinning and must never be dereferenced.]]></format>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;T&gt;+Enumerator</ReturnType>
       </ReturnValue>
@@ -382,38 +388,6 @@ This reference is used for pinning and must never be dereferenced.]]></format>
         <returns>Not supported.</returns>
         <remarks>Not supported.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown by this method.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="GetPinnableReference">
-      <MemberSignature Language="C#" Value="public T&amp; GetPinnableReference ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance T&amp; modreq(System.Runtime.InteropServices.InAttribute) GetPinnableReference() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ReadOnlySpan`1.GetPinnableReference" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetPinnableReference () As T&amp;" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; T&amp; ^ GetPinnableReference();" />
-      <MemberSignature Language="F#" Value="member this.GetPinnableReference : unit -&gt; T&amp;" Usage="readOnlySpan.GetPinnableReference " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.2.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.1">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue RefType="Readonly">
-        <ReturnType>T</ReturnType>
-        <Attributes>
-          <Attribute FrameworkAlternate="netcore-2.1">
-            <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
-          </Attribute>
-        </Attributes>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -738,6 +712,9 @@ This reference is used for pinning and must never be dereferenced.]]></format>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

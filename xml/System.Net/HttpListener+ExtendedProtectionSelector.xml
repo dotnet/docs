@@ -1,4 +1,4 @@
-<Type Name="HttpListener+ExtendedProtectionSelector" FullName="System.Net.HttpListener+ExtendedProtectionSelector">
+﻿<Type Name="HttpListener+ExtendedProtectionSelector" FullName="System.Net.HttpListener+ExtendedProtectionSelector">
   <TypeSignature Language="C#" Value="public delegate System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy HttpListener.ExtendedProtectionSelector(HttpListenerRequest request);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed HttpListener/ExtendedProtectionSelector extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Net.HttpListener.ExtendedProtectionSelector" />

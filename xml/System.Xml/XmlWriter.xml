@@ -1,4 +1,4 @@
-<Type Name="XmlWriter" FullName="System.Xml.XmlWriter">
+﻿<Type Name="XmlWriter" FullName="System.Xml.XmlWriter">
   <TypeSignature Language="C#" Value="public abstract class XmlWriter : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlWriter extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlWriter" />
@@ -1284,6 +1284,12 @@ async Task TestWriter(Stream stream)
         <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">

@@ -1,4 +1,4 @@
-<Type Name="INotifyCollectionChanged" FullName="System.Collections.Specialized.INotifyCollectionChanged">
+﻿<Type Name="INotifyCollectionChanged" FullName="System.Collections.Specialized.INotifyCollectionChanged">
   <TypeSignature Language="C#" Value="public interface INotifyCollectionChanged" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INotifyCollectionChanged" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.INotifyCollectionChanged" />
@@ -24,6 +24,9 @@
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Windows</AssemblyName>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
@@ -79,6 +82,9 @@
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>

@@ -1,4 +1,4 @@
-<Type Name="Size" FullName="System.Drawing.Size">
+﻿<Type Name="Size" FullName="System.Drawing.Size">
   <TypeSignature Language="C#" Value="public struct Size" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Size extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Size" />
@@ -276,6 +276,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -524,6 +530,12 @@
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
@@ -550,6 +562,12 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.SizeF</ReturnType>
@@ -762,6 +780,12 @@
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
@@ -788,6 +812,12 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.SizeF</ReturnType>
@@ -816,6 +846,12 @@
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
@@ -842,6 +878,12 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.SizeF</ReturnType>

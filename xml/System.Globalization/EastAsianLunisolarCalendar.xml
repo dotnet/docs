@@ -1,4 +1,4 @@
-<Type Name="EastAsianLunisolarCalendar" FullName="System.Globalization.EastAsianLunisolarCalendar">
+﻿<Type Name="EastAsianLunisolarCalendar" FullName="System.Globalization.EastAsianLunisolarCalendar">
   <TypeSignature Language="C#" Value="public abstract class EastAsianLunisolarCalendar : System.Globalization.Calendar" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit EastAsianLunisolarCalendar extends System.Globalization.Calendar" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.EastAsianLunisolarCalendar" />
@@ -205,6 +205,9 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Calendars</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.CalendarAlgorithmType</ReturnType>

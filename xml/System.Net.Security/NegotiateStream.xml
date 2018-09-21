@@ -1,4 +1,4 @@
-<Type Name="NegotiateStream" FullName="System.Net.Security.NegotiateStream">
+﻿<Type Name="NegotiateStream" FullName="System.Net.Security.NegotiateStream">
   <TypeSignature Language="C#" Value="public class NegotiateStream : System.Net.Security.AuthenticatedStream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NegotiateStream extends System.Net.Security.AuthenticatedStream" />
   <TypeSignature Language="DocId" Value="T:System.Net.Security.NegotiateStream" />
@@ -2892,6 +2892,12 @@
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

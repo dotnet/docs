@@ -1,4 +1,4 @@
-<Type Name="CancellationTokenRegistration" FullName="System.Threading.CancellationTokenRegistration">
+﻿<Type Name="CancellationTokenRegistration" FullName="System.Threading.CancellationTokenRegistration">
   <TypeSignature Language="C#" Value="public struct CancellationTokenRegistration : IDisposable, IEquatable&lt;System.Threading.CancellationTokenRegistration&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CancellationTokenRegistration extends System.ValueType implements class System.IDisposable, class System.IEquatable`1&lt;valuetype System.Threading.CancellationTokenRegistration&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Threading.CancellationTokenRegistration" />
@@ -352,6 +352,15 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.CancellationToken</ReturnType>

@@ -1,4 +1,4 @@
-<Type Name="IProvideValueTarget" FullName="System.Windows.Markup.IProvideValueTarget">
+﻿<Type Name="IProvideValueTarget" FullName="System.Windows.Markup.IProvideValueTarget">
   <TypeSignature Language="C#" Value="public interface IProvideValueTarget" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProvideValueTarget" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IProvideValueTarget" />
@@ -12,6 +12,9 @@
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
@@ -85,6 +88,9 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -121,6 +127,9 @@
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>

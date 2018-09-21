@@ -1,4 +1,4 @@
-<Type Name="Enumerable" FullName="System.Linq.Enumerable">
+﻿<Type Name="Enumerable" FullName="System.Linq.Enumerable">
   <TypeSignature Language="C#" Value="public static class Enumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Enumerable extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Enumerable" />
@@ -9222,6 +9222,12 @@ Dim doubles = From item As Integer In sequence
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TSource&gt;</ReturnType>
       </ReturnValue>
@@ -10794,6 +10800,12 @@ Dim doubles = From item As Integer In sequence
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TSource&gt;</ReturnType>
       </ReturnValue>
@@ -11636,6 +11648,9 @@ Dim doubles = From item As Integer In sequence
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.HashSet&lt;TSource&gt;</ReturnType>
       </ReturnValue>
@@ -11669,6 +11684,9 @@ Dim doubles = From item As Integer In sequence
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.HashSet&lt;TSource&gt;</ReturnType>

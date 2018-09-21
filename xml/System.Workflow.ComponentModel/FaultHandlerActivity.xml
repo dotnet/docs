@@ -1,4 +1,4 @@
-<Type Name="FaultHandlerActivity" FullName="System.Workflow.ComponentModel.FaultHandlerActivity">
+﻿<Type Name="FaultHandlerActivity" FullName="System.Workflow.ComponentModel.FaultHandlerActivity">
   <TypeSignature Language="C#" Value="public sealed class FaultHandlerActivity : System.Workflow.ComponentModel.CompositeActivity, System.Workflow.ComponentModel.Design.ITypeFilterProvider, System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;, System.Workflow.ComponentModel.IDynamicPropertyTypeProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FaultHandlerActivity extends System.Workflow.ComponentModel.CompositeActivity implements class System.Workflow.ComponentModel.Design.ITypeFilterProvider, class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;, class System.Workflow.ComponentModel.IDynamicPropertyTypeProvider" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.FaultHandlerActivity" />

@@ -1,4 +1,4 @@
-<Type Name="EndOfStreamException" FullName="System.IO.EndOfStreamException">
+﻿<Type Name="EndOfStreamException" FullName="System.IO.EndOfStreamException">
   <TypeSignature Language="C#" Value="public class EndOfStreamException : System.IO.IOException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit EndOfStreamException extends System.IO.IOException" />
   <TypeSignature Language="DocId" Value="T:System.IO.EndOfStreamException" />
@@ -179,6 +179,9 @@
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">

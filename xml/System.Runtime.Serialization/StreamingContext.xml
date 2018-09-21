@@ -1,4 +1,4 @@
-<Type Name="StreamingContext" FullName="System.Runtime.Serialization.StreamingContext">
+﻿<Type Name="StreamingContext" FullName="System.Runtime.Serialization.StreamingContext">
   <TypeSignature Language="C#" Value="public struct StreamingContext" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit StreamingContext extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.StreamingContext" />
@@ -96,6 +96,9 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="System.Runtime.Serialization.StreamingContextStates" />
       </Parameters>
@@ -129,6 +132,9 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="System.Runtime.Serialization.StreamingContextStates" />
@@ -176,6 +182,9 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -312,6 +321,9 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.StreamingContextStates</ReturnType>

@@ -1,4 +1,4 @@
-<Type Name="IUriContext" FullName="System.Windows.Markup.IUriContext">
+﻿<Type Name="IUriContext" FullName="System.Windows.Markup.IUriContext">
   <TypeSignature Language="C#" Value="public interface IUriContext" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUriContext" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IUriContext" />
@@ -12,6 +12,9 @@
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
@@ -60,6 +63,9 @@
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>

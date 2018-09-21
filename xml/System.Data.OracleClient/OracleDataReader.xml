@@ -1,4 +1,4 @@
-<Type Name="OracleDataReader" FullName="System.Data.OracleClient.OracleDataReader">
+﻿<Type Name="OracleDataReader" FullName="System.Data.OracleClient.OracleDataReader">
   <TypeSignature Language="C#" Value="public sealed class OracleDataReader : System.Data.Common.DbDataReader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OracleDataReader extends System.Data.Common.DbDataReader" />
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleDataReader" />
@@ -15,8 +15,7 @@
     <BaseTypeName>System.Data.Common.DbDataReader</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-1.1">System.MarshalByRefObject</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Provides a way of reading a forward-only stream of data rows from a data source. This class cannot be inherited.</summary>
     <remarks>

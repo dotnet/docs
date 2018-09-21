@@ -1,4 +1,4 @@
-<Type Name="ContractBase" FullName="System.AddIn.Pipeline.ContractBase">
+﻿<Type Name="ContractBase" FullName="System.AddIn.Pipeline.ContractBase">
   <TypeSignature Language="C#" Value="public class ContractBase : MarshalByRefObject, System.AddIn.Contract.IContract, System.Runtime.Remoting.Lifetime.ISponsor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContractBase extends System.MarshalByRefObject implements class System.AddIn.Contract.IContract, class System.Runtime.Remoting.Lifetime.ISponsor" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Pipeline.ContractBase" />

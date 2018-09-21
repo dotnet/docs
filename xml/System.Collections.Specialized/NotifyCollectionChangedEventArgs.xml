@@ -25,6 +25,9 @@
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Windows</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
   </Base>
@@ -79,6 +82,9 @@
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
       </Parameters>
@@ -115,6 +121,9 @@
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
@@ -155,6 +164,9 @@
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
         <Parameter Name="changedItem" Type="System.Object" />
@@ -194,6 +206,9 @@
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
@@ -238,6 +253,9 @@
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
         <Parameter Name="changedItems" Type="System.Collections.IList" />
@@ -281,6 +299,9 @@
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
         <Parameter Name="changedItem" Type="System.Object" />
@@ -323,6 +344,9 @@
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
         <Parameter Name="newItem" Type="System.Object" />
@@ -364,6 +388,9 @@
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
@@ -410,6 +437,9 @@
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
         <Parameter Name="changedItems" Type="System.Collections.IList" />
@@ -453,6 +483,9 @@
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
@@ -498,6 +531,9 @@
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
         <Parameter Name="newItem" Type="System.Object" />
@@ -542,6 +578,9 @@
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
           <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
@@ -583,6 +622,9 @@
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -626,6 +668,9 @@
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
           <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
@@ -668,6 +713,9 @@
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
           <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
@@ -709,6 +757,9 @@
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">

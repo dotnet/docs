@@ -1,4 +1,4 @@
-<Type Name="ContentLocatorBase" FullName="System.Windows.Annotations.ContentLocatorBase">
+﻿<Type Name="ContentLocatorBase" FullName="System.Windows.Annotations.ContentLocatorBase">
   <TypeSignature Language="C#" Value="public abstract class ContentLocatorBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ContentLocatorBase extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.ContentLocatorBase" />
@@ -13,8 +13,7 @@
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Represents an object that identifies an item of content.</summary>
     <remarks>

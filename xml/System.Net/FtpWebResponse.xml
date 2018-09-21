@@ -1,4 +1,4 @@
-<Type Name="FtpWebResponse" FullName="System.Net.FtpWebResponse">
+﻿<Type Name="FtpWebResponse" FullName="System.Net.FtpWebResponse">
   <TypeSignature Language="C#" Value="public class FtpWebResponse : System.Net.WebResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FtpWebResponse extends System.Net.WebResponse" />
   <TypeSignature Language="DocId" Value="T:System.Net.FtpWebResponse" />
@@ -23,8 +23,7 @@
   <Base>
     <BaseTypeName>System.Net.WebResponse</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Encapsulates a File Transfer Protocol (FTP) server's response to a request.</summary>
     <remarks>
@@ -231,6 +230,12 @@
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

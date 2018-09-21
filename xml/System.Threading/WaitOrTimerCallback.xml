@@ -1,4 +1,4 @@
-<Type Name="WaitOrTimerCallback" FullName="System.Threading.WaitOrTimerCallback">
+﻿<Type Name="WaitOrTimerCallback" FullName="System.Threading.WaitOrTimerCallback">
   <TypeSignature Language="C#" Value="public delegate void WaitOrTimerCallback(object state, bool timedOut);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WaitOrTimerCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Threading.WaitOrTimerCallback" />

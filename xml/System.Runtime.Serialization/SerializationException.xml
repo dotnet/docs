@@ -1,4 +1,4 @@
-<Type Name="SerializationException" FullName="System.Runtime.Serialization.SerializationException">
+﻿<Type Name="SerializationException" FullName="System.Runtime.Serialization.SerializationException">
   <TypeSignature Language="C#" Value="public class SerializationException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SerializationException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.SerializationException" />
@@ -188,6 +188,9 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">

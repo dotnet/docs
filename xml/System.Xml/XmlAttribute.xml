@@ -1,4 +1,4 @@
-<Type Name="XmlAttribute" FullName="System.Xml.XmlAttribute">
+﻿<Type Name="XmlAttribute" FullName="System.Xml.XmlAttribute">
   <TypeSignature Language="C#" Value="public class XmlAttribute : System.Xml.XmlNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlAttribute extends System.Xml.XmlNode" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlAttribute" />
@@ -1102,6 +1102,9 @@
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">

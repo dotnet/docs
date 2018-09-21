@@ -1,4 +1,4 @@
-<Type Name="OdbcDataAdapter" FullName="System.Data.Odbc.OdbcDataAdapter">
+﻿<Type Name="OdbcDataAdapter" FullName="System.Data.Odbc.OdbcDataAdapter">
   <TypeSignature Language="C#" Value="public sealed class OdbcDataAdapter : System.Data.Common.DbDataAdapter, ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OdbcDataAdapter extends System.Data.Common.DbDataAdapter implements class System.Data.IDataAdapter, class System.Data.IDbDataAdapter, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcDataAdapter" />
@@ -426,6 +426,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Odbc</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

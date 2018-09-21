@@ -1,6 +1,6 @@
 ---
 title: "Reference tables for types (C# Reference)"
-ms.date: 07/20/2015
+ms.date: 09/21/2018
 f1_keywords: 
   - "cs.referencetables"
 helpviewer_keywords: 
@@ -13,25 +13,20 @@ ms.assetid: 1d2b6a9b-31fd-4fa6-a7b2-bfd9c806ac8a
 
 The following reference tables summarize the C# types:
 
-- [Built-in Types Table](built-in-types-table.md)
-
-- [Integral types](integral-types-table.md)
-
-- [Floating-point types](floating-point-types-table.md)
-
-- [Default values](default-values-table.md)
-
-- [Value types](value-types-table.md)
-
-- [Implicit numeric conversions](implicit-numeric-conversions-table.md)
-
-- [Explicit Numeric Conversions Table](explicit-numeric-conversions-table.md)
-
-For information on formatting the output of numeric types, see [Formatting Numeric Results Table](formatting-numeric-results-table.md).
+|Table|Description|
+|---------|---------|
+|[Built-in types](built-in-types-table.md)|Lists built-in C# types and corresponding .NET types.|
+|[Integral types](integral-types-table.md)|Provides an overview of the integral types.|
+|[Floating-point types](floating-point-types-table.md)|Provides an overview of the floating-point types.|
+|[Value types](value-types-table.md)|Lists C# value types.|
+|[Default values](default-values-table.md)|Lists default values of C# value types.|
+|[Implicit numeric conversions](implicit-numeric-conversions-table.md)|Provides an overview of supported implicit conversions between C# numeric types.|
+|[Explicit numeric conversions](explicit-numeric-conversions-table.md)|Provides an overview of supported explicit conversions between C# numeric types.|
+|[Formatting numeric results](formatting-numeric-results-table.md)|Provides an overview of standard numeric format strings.|
 
 ## See also
 
-- [C# Reference](../../language-reference/index.md)
+- [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [Reference Types](reference-types.md)
 - [Value Types](value-types.md)

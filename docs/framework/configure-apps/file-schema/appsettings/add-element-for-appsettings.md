@@ -54,6 +54,15 @@ The following example shows how to add a custom configuration setting for the ap
 </appSettings>
 ```
 
+The following example uses the `<add>` element to define two compatibility settings in an ASP.NET application:
+
+```xml
+<appSettings>
+  <add key="AppContext.SetSwitch:Switch.System.Globalization.NoAsyncCurrentCulture" value="true" />
+  <add key="AppContext.SetSwitch:Switch.System.Uri.DontEnableStrictRFC3986ReservedCharacterSets" value="true" />
+</appSettings>
+```
+
 ## See also
 
 [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)

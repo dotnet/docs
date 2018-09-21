@@ -17,7 +17,7 @@ With each topic there is a list of recommendations for your OSS project using **
 
 On the other hand **Consider** recommendations should generally be followed, but there are legitimate exceptions to the rule and you should not feel bad about not following the guidance:
 
-**✔️️ CONSIDER** using [SemVer 2.0.0](https://semver.org/) to version your NuGet package.
+**✔️ CONSIDER** using [SemVer 2.0.0](https://semver.org/) to version your NuGet package.
 
 **Do not** indicates something you should almost never do:
 

@@ -7,7 +7,7 @@ ms.date: 09/20/2018
 ---
 # Get Started
 
-Your first steps to creating and publishing a .NET OSS project. Experienced OSS .NET developers can jump directly to the [full documentation](./introduction.md).
+Your first steps to creating and publishing a .NET OSS project. Experienced OSS .NET developers can jump directly to the [full documentation](./index.md).
 
 ## Setup
 

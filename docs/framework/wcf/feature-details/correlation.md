@@ -10,14 +10,8 @@ When workflow service applications communicate with other services, it is import
  [Correlation Overview](../../../../docs/framework/wcf/feature-details/correlation-overview.md)  
  Provides an overview of the types of correlation available in [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)].  
   
- [Context Exchange](../../../../docs/framework/wcf/feature-details/context-exchange-correlation.md)  
- Describes context exchange correlation.  
-  
  [Durable Duplex](../../../../docs/framework/wcf/feature-details/durable-duplex-correlation.md)  
- Describes durable duplex correlation.  
-  
- [Content Based](../../../../docs/framework/wcf/feature-details/content-based-correlation.md)  
- Describes content-based correlation.  
+ Describes durable duplex correlation.
   
  [Request-Reply](../../../../docs/framework/wcf/feature-details/request-reply-correlation.md)  
  Describes request-reply correlation.  

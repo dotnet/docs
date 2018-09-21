@@ -25,7 +25,12 @@ The rest of this document examines those four scenarios.
 
 ## The SDK uses the latest installed version
 
-SDK commands include `dotnet new`,  , or `dotnet run`. The `dotnet` CLI must choose an SDK version for any command. The .NET Core CLI uses the latest SDK installed on the machine by default. You'll use the .NET Core SDK v2.1.301 when it's installed, even if the project you are working with targets the .NET Core Runtime 2.0. You will use the latest preview versions as well as released versions. You can take advantage of the latest SDK features and improvements while targeting earlier .NET Core runtime versions. You can target multiple runtime versions of .NET Core on different projects, using the same SDK tools for all projects.
+SDK commands include `dotnet new` and `dotnet run`. The `dotnet` CLI must choose an SDK version for every dotnet command. The .NET Core CLI uses the latest SDK installed on the machine by default, even if:
+
+* The project targets an earlier version.
+* The latest version is a preview version.
+
+Apps can take advantage of the latest SDK features and improvements while targeting earlier .NET Core runtime versions. You can target multiple runtime versions of .NET Core on different projects, using the same SDK tools for all projects.
 
 On rare occasions, you may need to use an earlier version of the SDK. You specify that version in a [*global.json* file](../tools/global-json.md). The "use latest" policy means you only use *global.json* to specify a .NET Core SDK version earlier than the latest installed version.
 

@@ -31,7 +31,7 @@ You use a format specifier to create a format string. The format string is of th
 - `A` is the format specifier, which controls the type of formatting applied to the numeric value.
 - `xx` is the precision specifier, which affects the number of digits in the formatted output. The value of the precision specifier ranges from 0 to 99.
 
-Decimal and hexadecimal format specifiers are supported only for integral types. The round-trip format specifier is supported only for <xref:System.Single>, <xref:System.Double>, and <xref:System.Numerics.BigInteger> types.
+The decimal ("D" or "d") and hexadecimal ("X" or "x") format specifiers are supported only for integral types. The round-trip ("R" or "r") format specifier is supported only for <xref:System.Single>, <xref:System.Double>, and <xref:System.Numerics.BigInteger> types.
 
 Standard numeric format strings are supported by:
 

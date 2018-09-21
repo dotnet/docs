@@ -58,7 +58,7 @@ A string is an object of type <xref:System.String> whose value is text. Internal
 |\U|Unicode escape sequence for surrogate pairs.|\Unnnnnnnn|  
 |\u|Unicode escape sequence|\u0041 = "A"|  
 |\v|Vertical tab|0x000B|  
-|\x|Unicode escape sequence similar to "\u" except with variable length.|\x0041 = "A"|  
+|\x|Unicode escape sequence similar to "\u" except with variable length.|\x0041 or \x41 = "A"|  
   
 > [!NOTE]
 >  At compile time, verbatim strings are converted to ordinary strings with all the same escape sequences. Therefore, if you view a verbatim string in the debugger watch window, you will see the escape characters that were added by the compiler, not the verbatim version from your source code. For example, the verbatim string @"C:\files.txt" will appear in the watch window as "C:\\\files.txt".  

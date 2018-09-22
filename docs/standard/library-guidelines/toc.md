@@ -1,4 +1,4 @@
-# [Open-source Library Guidelines](index.md)
+# [Open-source Library Guidance](index.md)
 ## [Get started](get-started.md)
 ## [Cross-platform targeting](cross-platform-targeting.md)
 ## [Strong naming](strong-naming.md)

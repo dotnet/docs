@@ -11,7 +11,7 @@ The modern .NET ecosystem supports multiple operating systems and devices. It is
 
 ## .NET Standard
 
-.NET Standard is the best way to add cross-platform support to a .NET library. .NET Standard is a specification of .NET APIs that are available on all .NET implementations. Targeting a .NET Standard lets you produce a library that is usable by all platforms that support that version of .NET Standard.
+.NET Standard is the best way to add cross-platform support to a .NET library. .NET Standard is a specification of .NET APIs that are available on all .NET implementations. Targeting .NET Standard lets you produce a library that is constrained to only use APIs that are in a given version of .NET Standard, which means it's usable by all platforms that implement that version of the .NET Standard.
 
 ![.NET Standard](./media/platforms-netstandard.png ".NET Standard")
 
@@ -30,8 +30,10 @@ Targeting .NET Standard, and successfully compiling your project, does not guara
 **❌ AVOID** including a `netstandard1.x` target.
 
 > A .NET Standard 1.x is distributed as a granular set of NuGet packages, which creates large package dependency graph and results in developers downloading a lot of packages when building. Modern .NET platforms, including .NET Framework 4.6.1, UWP and Xamarin, all support .NET Standard 2.0. You should only target .NET Standard 1.x if you specifically need to target an older platform.
->
-> If you do have a .NET Standard 1.x target then also include a 2.0 target. Modern platforms will use the 2.0 target and older platforms will fall back to 1.x.
+
+✔️ **DO** include a `netstandard2.0` target if you require a `netstandard1.x` target.
+
+> All platforms supporting .NET Standard 2.0 will use the `netstandard2.0` target and benefit from having a smaller package graph while older platforms will still work and fall back to using the `netstandard1.x` target.
 
 **❌ DO NOT** include a .NET Standard target if the library relies on a platform specific app model.
 
@@ -44,9 +46,9 @@ Targeting .NET Standard, and successfully compiling your project, does not guara
 
 ## Multi-targeting
 
-An alternative way to add cross-platform support to a .NET library is multi-targeting. Multi-targeting involves targeting .NET implementations individually and includes multiple assemblies in a NuGet package. This leverages NuGet's ability to have multiple assemblies in a package and select the best one when added to an application.
+Sometimes you need to access framework-specific APIs from your libraries. The best way to do this is by using multi-targeting, which builds your project for multiple frameworks rather than for just one.
 
-You can combine multi-targeting with .NET Standard. For example, a `netstandard2.0` target could be the default implementation and you could provide a .NET implementation specific target that uses implementation specific APIs for additional features. NuGet will automatically select the implementation specific target when possible, e.g. a .NET Core application will use the `netcoreapp2.0` assembly over the `netstandard2.0` assembly in a NuGet package.
+In order to shield your consumers from having to build for multiple frameworks too you should always strive to have a .NET Standard output plus one or more framework-specific outputs. All outputs will be packaged inside a single NuGet package, allowing consumers to reference the same package and let NuGet pick the appropriate implementation. Your .NET Standard library serves as the fall-back library that is used everywhere, except for the cases where your NuGet package offers a framework-specific implementation. This enables you to use conditional compilation in your code in order to call framework-specific APIs.
 
 ![NuGet package with multiple assemblies](./media/nuget-package-multiple-assemblies.png "NuGet package with multiple assemblies")
 
@@ -79,6 +81,8 @@ You can combine multi-targeting with .NET Standard. For example, a `netstandard2
 </Project>
 ```
 
+**✔️ CONSIDER** using [MSBuild.Sdk.Extras](https://github.com/onovotny/MSBuildSdkExtras) when multi-targeting for UWP and Xamarin as it greatly simplifies your project file.
+
 **More Information**
 
 * [.NET target frameworks](https://docs.microsoft.com/en-us/dotnet/standard/frameworks)
@@ -86,7 +90,7 @@ You can combine multi-targeting with .NET Standard. For example, a `netstandard2
 
 ## Older Targets
 
-.NET supports targeting versions of the .NET Framework that are long out of support, e.g. .NET 2.0, as well as platforms that are no longer commonly used, e.g. Silverlight and Windows Phone. The value of targeting such old platforms can be easily outweighed by the overhead of programming around missing APIs.
+.NET supports targeting versions of the .NET Framework that are long out of support, e.g. .NET Framework 2.0, as well as platforms that are no longer commonly used, e.g. Silverlight and Windows Phone. While there is value in making your library work on as many targets as possible, there is also significant overhead if you have to workaround missing APIs. We believe certain frameworks are no longer worth targeting, considering their reach and limitations:
 
 **❌ DO NOT** include a Portable Class Library (PCL) target, e.g. `portable-net45+win8+wpa81+wp8`.
 

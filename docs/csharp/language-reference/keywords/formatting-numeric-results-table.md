@@ -1,32 +1,54 @@
 ---
-title: "Formatting Numeric Results Table (C# Reference)"
-ms.date: 07/20/2015
+title: "Formatting numeric results table (C# Reference)"
+description: "Learn about C# standard numeric format strings"
+ms.date: 09/20/2018
 helpviewer_keywords: 
   - "formatting [C#]"
   - "numeric formatting [C#]"
   - "String.Format method"
-  - "Console.Write method"
 ms.assetid: 120ba537-4448-4c62-8676-7a8fdd98f496
 ---
-# Formatting Numeric Results Table (C# Reference)
-You can format numeric results by using the <xref:System.String.Format%2A?displayProperty=nameWithType> method, through the <xref:System.Console.Write%2A?displayProperty=nameWithType> or <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> methods, which call `String.Format`, or by using [string interpolation](../tokens/interpolated.md). The format is specified by using format strings. The following table contains the supported standard format strings. The format string takes the following form: `Axx`, where `A` is the format specifier and `xx` is the precision specifier. The format specifier controls the type of formatting applied to the numeric value, and the precision specifier controls the number of significant digits or decimal places of the formatted output. The value of the precision specifier ranges from 0 to 99.  
-  
- For more information about standard and custom formatting strings, see [Formatting Types](../../../standard/base-types/formatting-types.md).
-  
-|Format Specifier|Description|Examples|Output|  
-|----------------------|-----------------|--------------|------------|  
-|C or c|Currency|Console.Write("{0:C}", 2.5);<br /><br /> Console.Write("{0:C}", -2.5);|$2.50<br /><br /> ($2.50)|  
-|D or d|Decimal|Console.Write("{0:D5}", 25);|00025|  
-|E or e|Scientific|Console.Write("{0:E}", 250000);|2.500000E+005|  
-|F or f|Fixed-point|Console.Write("{0:F2}", 25);<br /><br /> Console.Write("{0:F0}", 25);|25.00<br /><br /> 25|  
-|G or g|General|Console.Write("{0:G}", 2.5);|2.5|  
-|N or n|Number|Console.Write("{0:N}", 2500000);|2,500,000.00|  
-|X or x|Hexadecimal|Console.Write("{0:X}", 250);<br /><br /> Console.Write("{0:X}", 0xffff);|FA<br /><br /> FFFF|  
-  
-## See Also
+# Formatting numeric results table (C# Reference)
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)  
-- [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)  
-- [string](../../../csharp/language-reference/keywords/string.md)
+The following table shows supported format specifiers for formatting numeric results. The formatted result corresponds to the "en-US" <xref:System.Globalization.CultureInfo>.
+
+|Format specifier|Description|Examples|Result|  
+|----------------------|-----------------|--------------|------------|  
+|C or c|Currency|`string s = $"{2.5:C}";`<br /><br /> `string s = $"{-2.5:C}";`|$2.50<br /><br /> ($2.50)|  
+|D or d|Decimal|`string s = $"{25:D5}";`|00025|  
+|E or e|Exponential|`string s = $"{250000:E2}";`|2.50E+005|  
+|F or f|Fixed-point|`string s = $"{2.5:F2}";`<br /><br /> `string s = $"{2.5:F0}";`|2.50<br /><br /> 3|  
+|G or g|General|`string s = $"{2.5:G}";`|2.5|  
+|N or n|Numeric|`string s = $"{2500000:N}";`|2,500,000.00|  
+|P or p|Percent|`string s = $"{0.25:P}";`|25.00%|  
+|R or r|Round-trip|`string s = $"{2.5:R}";`|2.5|  
+|X or x|Hexadecimal|`string s = $"{250:X}";`<br /><br /> `string s = $"{0xffff:X}";`|FA<br /><br /> FFFF|  
+
+## Remarks
+
+You use a format specifier to create a format string. The format string is of the following form: `Axx`, where
+
+- `A` is the format specifier, which controls the type of formatting applied to the numeric value.
+- `xx` is the precision specifier, which affects the number of digits in the formatted output. The value of the precision specifier ranges from 0 to 99.
+
+The decimal ("D" or "d") and hexadecimal ("X" or "x") format specifiers are supported only for integral types. The round-trip ("R" or "r") format specifier is supported only for <xref:System.Single>, <xref:System.Double>, and <xref:System.Numerics.BigInteger> types.
+
+Standard numeric format strings are supported by:
+
+- Some overloads of the `ToString` method of all numeric types. For example, you can supply a numeric format string to the <xref:System.Int32.ToString%28System.String%29?displayProperty=nameWithType> and <xref:System.Int32.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> methods.
+
+- The .NET [composite formatting feature](../../../standard/base-types/composite-formatting.md), which is supported by the <xref:System.String.Format%2A?displayProperty=nameWithType> method, for example.
+
+- [Interpolated strings](../tokens/interpolated.md).
+
+For more information, see [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md).
+
+## See also
+
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [Reference tables for types](reference-tables-for-types.md)
+- [Formatting types](../../../standard/base-types/formatting-types.md)
+- [Composite formatting](../../../standard/base-types/composite-formatting.md)
+- [String interpolation](../tokens/interpolated.md)
+- [string](string.md)

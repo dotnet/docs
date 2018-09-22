@@ -29,9 +29,9 @@ Targeting .NET Standard, and successfully compiling your project, does not guara
 
 **❌ AVOID** including a `netstandard1.x` target.
 
-> A .NET Standard 1.x is distributed as a granular set of NuGet packages, which creates large package dependency graph and results in developers downloading a lot of packages when building. Modern .NET platforms, including .NET Framework 4.6.1, UWP and Xamarin, all support .NET Standard 2.0. You should only target .NET Standard 1.x if you specifically need to target an older platform.
+> .NET Standard 1.x is distributed as a granular set of NuGet packages, which creates a large package dependency graph and results in developers downloading a lot of packages when building. Modern .NET platforms, including .NET Framework 4.6.1, UWP and Xamarin, all support .NET Standard 2.0. You should only target .NET Standard 1.x if you specifically need to target an older platform.
 
-✔️ **DO** include a `netstandard2.0` target if you require a `netstandard1.x` target.
+**✔️ DO** include a `netstandard2.0` target if you require a `netstandard1.x` target.
 
 > All platforms supporting .NET Standard 2.0 will use the `netstandard2.0` target and benefit from having a smaller package graph while older platforms will still work and fall back to using the `netstandard1.x` target.
 

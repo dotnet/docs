@@ -1,4 +1,4 @@
-﻿<Type Name="Geometry" FullName="System.Windows.Media.Geometry">
+<Type Name="Geometry" FullName="System.Windows.Media.Geometry">
   <TypeSignature Language="C#" Value="public abstract class Geometry : System.Windows.Media.Animation.Animatable, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract Geometry extends System.Windows.Media.Animation.Animatable implements class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Geometry" />
@@ -41,7 +41,7 @@
   
  The <xref:System.Windows.Media.Geometry> class, on the other hand, simply defines the geometry of a shape, and cannot render itself. Because of its simplicity, it has a wider range of uses.  
   
- **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Geometry> class provides several special features: <xref:System.Windows.Media.Geometry> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Geometry> class provides several special features: <xref:System.Windows.Media.Geometry> objects can be declared as [resources](~/docs/framework/wpf/advanced/xaml-resources.md), shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
  ]]></format>
     </remarks>

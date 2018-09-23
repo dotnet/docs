@@ -3,7 +3,6 @@ title: "Reliable Secure Profile"
 ms.date: "03/30/2017"
 ms.assetid: 921edc41-e91b-40f9-bde9-b6148b633e61
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Reliable Secure Profile
 This sample demonstrates how to compose WCF and [Reliable Secure Profile](https://go.microsoft.com/fwlink/?LinkId=178140) (RSP). This sample demonstrates the implementation of a [Make Connection](https://go.microsoft.com/fwlink/?LinkId=178141) channel which can be composed together with Reliable Messaging and optionally a secure channel to create a Reliable Secure Binding based on the RSP specification.  

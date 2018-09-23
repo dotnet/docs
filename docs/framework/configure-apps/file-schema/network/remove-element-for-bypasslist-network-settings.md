@@ -12,7 +12,6 @@ helpviewer_keywords:
 ms.assetid: 61dcfb4a-e3d9-4abf-a2cd-7d685fe2f64b
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;remove&gt; Element for bypasslist (Network Settings)
 Removes an IP address or DNS name from the proxy bypass list.  

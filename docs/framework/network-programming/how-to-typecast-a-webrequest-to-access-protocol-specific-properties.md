@@ -7,7 +7,6 @@ dev_langs:
 ms.assetid: d9a8eae2-7454-46f9-b43b-c98477c5bcde
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # How to: Typecast a WebRequest to Access Protocol Specific Properties
 This example shows how to typecast a WebRequest so that you can access protocol specific properties.  

@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 52de4d6c-b24d-44aa-ba7d-6b5061f1357e
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;system.Net&gt; Element (Network Settings)
 Contains settings that specify how the .NET Framework connects to the network.  

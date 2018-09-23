@@ -3,7 +3,6 @@ title: "Windows Identity Foundation 4.5 Overview"
 ms.date: "03/30/2017"
 ms.assetid: 5f723345-7270-49e2-b638-b3a34bd40517
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Windows Identity Foundation 4.5 Overview
 Windows Identity Foundation 4.5 is a set of .NET Framework classes for implementing claims-based identity in your applications. By using it, you’ll more easily reap the benefits of claims-aware applications and services. WIF 4.5 can be used in any Web application or Web service that uses the .NET Framework version 4.5 or later. WIF is just one part of Microsoft’s Federated Identity software family that implements the shared industry vision based on open standards. Federated Identity comprises three components: [Active Directory® Federation Services](https://go.microsoft.com/fwlink/?LinkID=247516) (AD FS) 2.0, [Windows Azure Access Control Services](https://go.microsoft.com/fwlink/?LinkID=247517) (ACS), and WIF. Together, these three components form the core of Microsoft’s new claims-based cloud identity and access platform.  

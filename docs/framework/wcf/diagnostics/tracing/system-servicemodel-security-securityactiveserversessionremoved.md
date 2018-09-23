@@ -3,7 +3,6 @@ title: "System.ServiceModel.Security.SecurityActiveServerSessionRemoved"
 ms.date: "03/30/2017"
 ms.assetid: f62789ea-d455-43f5-ab6c-21588184b528
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.SecurityActiveServerSessionRemoved
 System.ServiceModel.Security.SecurityActiveServerSessionRemoved  

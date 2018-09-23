@@ -17,7 +17,6 @@ helpviewer_keywords:
 ms.assetid: e41d7f1a-0a6a-4dee-97d1-c6a8b6a07fc2
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Location-Based Cache Policies
 A location-based cache policy defines the freshness of valid cached entries based on where the requested resource can be taken from. A cached resource is valid if using it does not does not violate server-specified revalidation requirements. A location-based cache policy is created programmatically by using a <xref:System.Net.Cache.RequestCachePolicy> or <xref:System.Net.Cache.HttpRequestCachePolicy> class constructor. The type of location-based policy is passed to the constructor using a <xref:System.Net.Cache.RequestCacheLevel> or <xref:System.Net.Cache.HttpRequestCacheLevel> enumeration value. For code examples that create location-based cache policies, see [How to: Set a Location-Based Cache Policy for an Application](../../../docs/framework/network-programming/how-to-set-a-location-based-cache-policy-for-an-application.md). The following sections explain each type of location-based cache policy for Hypertext Transfer Protocol (http and https) resources.  

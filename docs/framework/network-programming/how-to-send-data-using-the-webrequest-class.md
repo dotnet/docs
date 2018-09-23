@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 66686878-38ac-4aa6-bf42-ffb568ffc459
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # How to: Send Data Using the WebRequest Class
 The following procedure describes the steps used to send data to a server. This procedure is commonly used to post data to a Web page.  

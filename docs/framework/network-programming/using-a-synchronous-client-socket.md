@@ -19,7 +19,6 @@ helpviewer_keywords:
 ms.assetid: 945d00c6-7202-466c-9df9-140b84156d43
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Using a Synchronous Client Socket
 A synchronous client socket suspends the application program while the network operation completes. Synchronous sockets are not suitable for applications that make heavy use of the network for their operation, but they can enable simple access to network services for other applications.  

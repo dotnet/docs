@@ -7,7 +7,6 @@ helpviewer_keywords:
 ms.assetid: 94c15031-4975-43cc-bcd5-c9439ed21c9c
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Caching in UI Automation Clients
 > [!NOTE]

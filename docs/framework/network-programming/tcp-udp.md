@@ -18,7 +18,6 @@ helpviewer_keywords:
 ms.assetid: df29b4b0-49e8-4923-82b9-13150dfc40f5
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # TCP-UDP
 Applications can use Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) services with the <xref:System.Net.Sockets.TcpClient>, <xref:System.Net.Sockets.TcpListener>, and <xref:System.Net.Sockets.UdpClient> classes. These protocol classes are built on top of the <xref:System.Net.Sockets.Socket?displayProperty=nameWithType> class and take care of the details of transferring data.  

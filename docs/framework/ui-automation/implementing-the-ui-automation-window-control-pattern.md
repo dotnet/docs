@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: a28cb286-296e-4a62-b4cb-55ad636ebccc
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Implementing the UI Automation Window Control Pattern
 > [!NOTE]

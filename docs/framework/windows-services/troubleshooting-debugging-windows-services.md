@@ -12,7 +12,6 @@ helpviewer_keywords:
   - "Windows Service applications, troubleshooting"
 ms.assetid: cf859d4c-f04c-4cb7-81e3-bc7de8bea190
 author: "ghogen"
-manager: "douge"
 ---
 # Troubleshooting: Debugging Windows Services
 When you debug a Windows service application, your service and the **Windows Service Manager** interact. The **Service Manager** starts your service by calling the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method, and then waits 30 seconds for the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method to return. If the method does not return in this time, the manager shows an error that the service cannot be started.  

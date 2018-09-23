@@ -3,7 +3,6 @@ title: "SslStreamSecurityBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 18130d50-8996-4257-9c60-bc457f8654d8
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # SslStreamSecurityBindingElement
 SslStreamSecurityBindingElement  

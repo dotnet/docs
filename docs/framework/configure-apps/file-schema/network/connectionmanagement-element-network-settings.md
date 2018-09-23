@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: bedccaab-12a2-4511-8f67-e961f249aec6
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;connectionManagement&gt; Element (Network Settings)
 Specifies the maximum number of connections to a network host.  

@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 2ec1c9dc-2e5c-4ef0-9958-81670ab88449
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 
 # \<configuration> element

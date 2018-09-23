@@ -3,7 +3,6 @@ title: "&lt;samlSecurityTokenRequirement&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 09202d12-88d3-49cc-953b-703bcc1690eb
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;samlSecurityTokenRequirement&gt;
 Provides configuration for the <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler> class, the <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> class, or a derived class of either of these classes. Represented by the <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement> class.  

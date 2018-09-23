@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: 79761191-4449-4630-899c-9cbdb8867d3f
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Support for the Pane Control Type
 > [!NOTE]

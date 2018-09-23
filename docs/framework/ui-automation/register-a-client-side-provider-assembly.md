@@ -12,7 +12,6 @@ helpviewer_keywords:
 ms.assetid: a03af4d9-2771-43cc-b07b-d468dca23190
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Register a Client-Side Provider Assembly
 > [!NOTE]

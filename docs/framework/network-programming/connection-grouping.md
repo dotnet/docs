@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 2ec502e8-4ba0-4c22-9410-f28eaf4eee63
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Connection Grouping
 Connection grouping associates specific requests within a single application to a defined connection pool. This can be required by a middle-tier application that connects to a back-end server on behalf of a user and uses an authentication protocol that supports delegation, such as Kerberos, or by a middle-tier application that supplies its own credentials, as in the example below. For example, suppose a user, Joe, visits an internal Web site that displays his payroll information. After authenticating Joe, the middle-tier application server uses Joe's credentials to connect to the back-end server to retrieve his payroll information. Next, Susan visits the site and requests her payroll information. Because the middle-tier application has already made a connection using Joe's credentials, the back-end server responds with Joe's information. However, if the application assigns each request sent to the back-end server to a connection group formed from the user name, then each user belongs to a separate connection pool and cannot accidentally share authentication information with another user.  

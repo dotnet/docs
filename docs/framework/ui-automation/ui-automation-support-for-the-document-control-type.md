@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: a79d594b-1ca0-4543-8dac-afd2c645201d
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Support for the Document Control Type
 > [!NOTE]

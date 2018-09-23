@@ -3,7 +3,6 @@ title: "Using Impersonation with Transport Security"
 ms.date: "03/30/2017"
 ms.assetid: 426df8cb-6337-4262-b2c0-b96c2edf21a9
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Using Impersonation with Transport Security
 *Impersonation* is the ability of a server application to take on the identity of the client. It is common for services to use impersonation when validating access to resources. The server application runs using a service account, but when the server accepts a client connection, it impersonates the client so that access checks are performed using the client's credentials. Transport security is a mechanism both for passing credentials and securing communication using those credentials. This topic describes using transport security in Windows Communication Foundation (WCF) with the impersonation feature. For more information about impersonation using message security, see [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  

@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: 55d419c0-2201-4101-90c9-2888df4dbb47
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Expose a Server-side UI Automation Provider
 > [!NOTE]

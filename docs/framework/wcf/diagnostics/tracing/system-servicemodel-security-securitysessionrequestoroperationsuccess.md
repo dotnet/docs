@@ -3,7 +3,6 @@ title: "System.ServiceModel.Security.SecuritySessionRequestorOperationSuccess"
 ms.date: "03/30/2017"
 ms.assetid: 33093589-731c-4ca0-8d79-cc4628794e62
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.SecuritySessionRequestorOperationSuccess
 System.ServiceModel.Security.SecuritySessionRequestorOperationSuccess  

@@ -3,7 +3,6 @@ title: "System.ServiceModel.Security.SecurityBindingVerifyIncomingMessageFailure
 ms.date: "03/30/2017"
 ms.assetid: a4447ad6-7f41-47ef-bdd1-8b4a908e156f
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.SecurityBindingVerifyIncomingMessageFailure
 System.ServiceModel.Security.SecurityBindingVerifyIncomingMessageFailure  

@@ -3,7 +3,6 @@ title: "How To: Enable WIF for a WCF Web Service Application"
 ms.date: "03/30/2017"
 ms.assetid: bfc64b3d-64e9-4093-a6a4-72e933917af7
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How To: Enable WIF for a WCF Web Service Application
 ## Applies To  

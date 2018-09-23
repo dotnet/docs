@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: 34f533bf-fc14-4e78-8fee-fb7107345fab
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Support for the ListItem Control Type
 > [!NOTE]

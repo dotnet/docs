@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: 76b0949a-5b23-4cfc-84cc-154f713e2e12
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Implementing the UI Automation SelectionItem Control Pattern
 > [!NOTE]

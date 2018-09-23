@@ -3,7 +3,6 @@ title: "Securing Messages Using Transport Security"
 ms.date: "03/30/2017"
 ms.assetid: 9029771a-097e-448a-a13a-55d2878330b8
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Securing Messages Using Transport Security
 This section discusses Message Queuing (MSMQ) transport security that you can use to secure messages sent to a queue.  

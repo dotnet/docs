@@ -4,7 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: c98731b4-b542-46a2-9947-1cea63c186b2
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # IPv6 Routing
 A flexible routing mechanism is a benefit of IPv6. Due to the way in which IPv4 network IDs were and are allocated, large routing tables need to be maintained by the routers that are on the Internet backbones. These routers must know all the routes in order to forward packets that are potentially directed to any node on the Internet. With its ability to aggregate addresses, IPv6 allows flexible addressing and drastically reduces the size of routing tables. In this new addressing architecture, intermediate routers must keep track only of the local portion of their network in order to forward the messages appropriately.  

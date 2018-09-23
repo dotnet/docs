@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: 6db9d231-c0a0-4e17-910e-ac80357f774f
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Support for the Edit Control Type
 > [!NOTE]

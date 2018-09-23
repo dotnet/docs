@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: e7ec856e-41ee-47b1-9d57-b75a3dad088c
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Accessibility
 > [!NOTE]

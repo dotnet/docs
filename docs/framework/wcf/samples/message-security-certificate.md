@@ -5,7 +5,6 @@ helpviewer_keywords:
   - "WS Security"
 ms.assetid: 909333b3-35ec-48f0-baff-9a50161896f6
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Message Security Certificate
 This sample demonstrates how to implement an application that uses WS-Security with X.509 v3 certificate authentication for the client and requires server authentication using the server's X.509 v3 certificate. This sample uses default settings such that all application messages between the client and server are signed and encrypted. This sample is based on the [WSHttpBinding](../../../../docs/framework/wcf/samples/wshttpbinding.md) and consists of a client console program and a service library hosted by Internet Information Services (IIS). The service implements a contract that defines a request-reply communication pattern.  

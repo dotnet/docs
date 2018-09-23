@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: 225feaa4-918e-418b-938e-7389338d0a69
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Implementing the UI Automation RangeValue Control Pattern
 > [!NOTE]

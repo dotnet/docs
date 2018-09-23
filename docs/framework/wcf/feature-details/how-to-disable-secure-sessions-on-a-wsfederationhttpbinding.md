@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "federation"
 ms.assetid: 675fa143-6a4e-4be3-8afc-673334ab55ec
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How to: Disable Secure Sessions on a WSFederationHttpBinding
 Some services may require federated credentials but not support secure sessions. In that case, you must disable the secure session feature. Unlike the <<!--zz xref:System.ServiceModel.WsHttpBinding --> `xref:System.ServiceModel.WsHttpBinding`>, the <xref:System.ServiceModel.WSFederationHttpBinding> class does not provide a way to disable secure sessions when communicating with a service. Instead, you must create a custom binding that replaces the secure session settings with a bootstrap.  

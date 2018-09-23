@@ -3,7 +3,6 @@ title: "System.ServiceModel.Security.IssuanceTokenProviderRedirectApplied"
 ms.date: "03/30/2017"
 ms.assetid: d69e50dc-f7d5-423d-9a1c-a23d558e78af
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.IssuanceTokenProviderRedirectApplied
 System.ServiceModel.Security.IssuanceTokenProviderRedirectApplied  

@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "security [WCF], creating a session"
 ms.assetid: b6f42b5a-bbf7-45cf-b917-7ec9fa7ae110
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How to: Create a Secure Session
 With the exception of the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) binding, the system-provided bindings in Windows Communication Foundation (WCF) automatically use secure sessions when message security is enabled.  

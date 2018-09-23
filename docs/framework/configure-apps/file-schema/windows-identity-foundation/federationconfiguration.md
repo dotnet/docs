@@ -3,7 +3,6 @@ title: "&lt;federationConfiguration&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 8b14054c-6d07-46ab-ab58-03f14beac0f2
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;federationConfiguration&gt;
 Configures the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) when using federated authentication through the WS-Federation protocol. Configures the <xref:System.Security.Claims.ClaimsAuthorizationManager> when using the <xref:System.IdentityModel.Services.ClaimsPrincipalPermission> or the <xref:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute> class to provide claims-based access control.  

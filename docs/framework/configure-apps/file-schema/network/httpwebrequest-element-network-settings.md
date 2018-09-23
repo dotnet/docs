@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 52acd9d2-5bdc-4dc4-9c2a-f0a476ccbb31
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;httpWebRequest&gt; Element (Network Settings)
 Customizes Web request parameters.  

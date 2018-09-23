@@ -3,7 +3,6 @@ title: "&lt;claimsAuthorizationManager&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 9354eee3-f692-4ad6-8427-3169686b8bcc
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;claimsAuthorizationManager&gt;
 Registers a claims authorization manager for the incoming claims.  

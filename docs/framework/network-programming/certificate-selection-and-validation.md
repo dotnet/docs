@@ -4,7 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: c933aca2-4cd0-4ff1-9df9-267143f25a6f
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Certificate Selection and Validation
 The <xref:System.Net> classes support several ways to select and validate <xref:System.Security.Cryptography.X509Certificates> for Secure Socket Layer (SSL) connections. A client can select one or more certificates to authenticate itself to a server. A server can require that a client certificate have one or more specific attributes for authentication.  

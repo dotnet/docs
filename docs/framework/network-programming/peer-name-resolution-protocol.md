@@ -4,7 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: 11940511-c124-4d91-ae31-d4ed6e81ee58
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Peer Name Resolution Protocol
 In peer-to-peer environments, peers use specific name resolution systems to resolve each other's network locations (addresses, protocols, and ports) from names or other types of identifiers. In the past, peer name resolution has been complicated by the inherently transient connectivity as well as other shortcomings within the Domain Name System (DNS).  

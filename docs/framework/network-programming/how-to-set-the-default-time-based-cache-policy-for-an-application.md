@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: 6bfce066-a2e7-4add-a05e-85c12ec9f07f
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # How to: Set the Default Time-Based Cache Policy for an Application
 The default time-based cache policy allows an application to have its cache behavior defined by the headers sent with the cached resource and the cache behavior defined in sections 13 and 14 of RFC 2616, available at [http://www.ietf.org](http://www.ietf.org/). This is the appropriate cache behavior for most applications.  

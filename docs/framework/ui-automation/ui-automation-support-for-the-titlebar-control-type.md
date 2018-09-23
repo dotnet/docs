@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: 3b7a4e13-0305-45d5-bc33-1f4133c50782
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Support for the TitleBar Control Type
 > [!NOTE]

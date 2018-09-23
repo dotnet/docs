@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 3acaee5a-6ce8-4c3e-81c8-67e59eb74477
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Find a UI Automation Element Based on a Property Condition
 > [!NOTE]

@@ -39,8 +39,8 @@
   </Attributes>
   <Docs>
     <summary>Represents a synchronization primitive that is signaled when its count reaches zero.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
 
 ## Examples  
   
@@ -50,7 +50,7 @@
  [!code-vb[System.Threading.CountdownEvent#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.countdownevent/vb/countdownevent.vb#01)]  
   
           ]]></format>
-        </remarks>
+    </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Threading.CountdownEvent" /> are thread-safe and may be used concurrently from multiple threads, with the exception of <see cref="M:System.Threading.CountdownEvent.Dispose" />, which must only be used when all other operations on the <see cref="T:System.Threading.CountdownEvent" /> have completed, and <see cref="M:System.Threading.CountdownEvent.Reset" />, which should only be used when no other threads are accessing the event.  
   
 </threadsafe>

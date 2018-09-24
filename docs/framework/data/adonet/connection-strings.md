@@ -12,9 +12,13 @@ The .NET Framework 2.0 introduced new capabilities for working with connection s
   
  `keyword1=value; keyword2=value;`  
   
- Keywords are not case sensitive, and spaces between key/value pairs are ignored. However, values may be case sensitive, depending on the data source. Any values containing a semicolon, single quotation marks, or double quotation marks must be enclosed in double quotation marks.  
+ Keywords are not case-sensitive, and spaces between key-value pairs are ignored. Values, however, may be case-sensitive, depending on the data provider. Any values containing semicolons (`;`), equals signs (`=`), single quotation marks (`'`), or double quotation marks (`"`) must be enclosed in either double or single quotation marks. The enclosing character cannot occur in the value being enclosed, therefore use double quotation marks to enclose a value containing a single quotation mark and vice versa, for example:
+
+`keyword1="aa'bb";keyword2='aa"bb';`
+
+A value that contains both single and double quotations marks cannot be encoded in a connection string.
   
- Valid connection string syntax depends on the provider, and has evolved over the years from earlier APIs like ODBC. The .NET Framework Data Provider for SQL Server (SqlClient) incorporates many elements from older syntax and is generally more flexible with common connection string syntax. There are frequently equally valid synonyms for connection string syntax elements, but some syntax and spelling errors can cause problems. For example, "`Integrated Security=true`" is valid, whereas "`IntegratedSecurity=true`" causes an error. In addition, connection strings constructed at run time from unvalidated user input can lead to string injection attacks, jeopardizing security at the data source.  
+ Valid connection string syntax depends on the provider, and has evolved over the years from earlier APIs like ODBC. The .NET Framework Data Provider for SQL Server (`SqlClient`) incorporates many elements from older syntax and is generally more flexible with common connection string syntax. There are frequently equally valid synonyms for connection string syntax elements, but some syntax and spelling errors can cause problems. For example, "`Integrated Security=true`" is valid, whereas "`IntegratedSecurity=true`" causes an error. In addition, connection strings constructed at run time from unvalidated user input can lead to string injection attacks, jeopardizing security at the data source.  
   
  To address these problems, ADO.NET 2.0 introduced new connection string builders for each .NET Framework data provider. Keywords are exposed as properties, enabling connection string syntax to be validated before submission to the data source.  
   

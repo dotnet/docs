@@ -101,7 +101,7 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
 ## Painting Shapes  
  <xref:System.Windows.Media.Brush> objects are used to paint a shape's <xref:System.Windows.Shapes.Shape.Stroke%2A> and <xref:System.Windows.Shapes.Shape.Fill%2A>. In the following example, the stroke and fill of an <xref:System.Windows.Shapes.Ellipse> are specified. Note that valid input for brush properties can be either a keyword or hexadecimal color value. For more information about available color keywords, see properties of the <xref:System.Windows.Media.Colors> class in the <xref:System.Windows.Media> namespace.  
   
-```  
+```xaml 
 <Canvas Background="LightGray">   
    <Ellipse  
       Canvas.Top="50"  
@@ -120,7 +120,7 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   
  Alternatively, you can use property element syntax to explicitly create a <xref:System.Windows.Media.SolidColorBrush> object to paint the shape with a solid color.  
   
-```  
+```xaml
 <!-- This polygon shape uses pre-defined color values for its Stroke and  
      Fill properties.   
      The SolidColorBrush's Opacity property affects the fill color in   
@@ -161,8 +161,7 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   
  In the following example, a <xref:System.Windows.Shapes.Polygon> is used to draw a very small triangle from (0,0) to (0,1) to (1,1). The <xref:System.Windows.Shapes.Polygon> object's <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> are set to 100, and its stretch property is set to Fill. As a result, the <xref:System.Windows.Shapes.Polygon> object's contents (the triangle) are stretched to fill the larger space.  
   
-```  
-...  
+```xaml
 <Polygon  
   Points="0,0 0,1 1,1"  
   Fill="Blue"  
@@ -171,11 +170,9 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   Stretch="Fill"  
   Stroke="Black"  
   StrokeThickness="2" />  
-...  
 ```  
   
-```  
-...  
+```csharp
 PointCollection myPointCollection = new PointCollection();  
 myPointCollection.Add(new Point(0,0));  
 myPointCollection.Add(new Point(0,1));  
@@ -189,7 +186,6 @@ myPolygon.Height = 100;
 myPolygon.Stretch = Stretch.Fill;  
 myPolygon.Stroke = Brushes.Black;  
 myPolygon.StrokeThickness = 2;  
-...  
 ```  
   
 <a name="transforms"></a>   

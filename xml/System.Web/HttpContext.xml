@@ -33,8 +33,6 @@
 > This object is only available in the thread controlled by ASP.NET. Usage in background threads could lead to undefined behavior.
 
 ## Examples  
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=192422).  
-  
  The following example demonstrates how to access and display properties of the <xref:System.Web.HttpContext> object. The context of the current HTTP request is accessed by using the <xref:System.Web.UI.Page.Context%2A> property of the <xref:System.Web.UI.Page> object.  
   
  [!code-aspx-csharp[System.Web.HttpContext#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpContext/cs/httpcontextcs.aspx#1)]

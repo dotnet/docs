@@ -6,9 +6,9 @@ ms.date: 09/19/2018
 
 # Version and update considerations for C# developers
 
-Compatibility is a very important goal as new features are added to the C# language. In almost all cases, existing code can be recompiled with a new compiler version without issue.
+Compatibility is a very important goal as new features are added to the C# language. In almost all cases, existing code can be recompiled with a new compiler version without any issuea.
 
-More care may be required when you adopt new language features in a library. You may be creating a new library with features found in the latest version, and need to ensure apps that target older versions can use it. Or, you may be upgrading an existing library and many of your users may not have upgraded versions yet. As you make decisions on adopting new features, you'll need to two variations of compatibility: source compatible and binary compatible.
+More care may be required when you adopt new language features in a library. You may be creating a new library with features found in the latest version, and need to ensure apps built using previous versions of the compiler can use it. Or, you may be upgrading an existing library and many of your users may not have upgraded versions yet. As you make decisions on adopting new features, you'll need to consider two variations of compatibility: source compatible and binary compatible.
 
 ## Binary compatible changes
 

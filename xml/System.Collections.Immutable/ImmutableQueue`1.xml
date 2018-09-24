@@ -38,7 +38,7 @@
     <typeparam name="T">The type of elements in the queue.</typeparam>
     <summary>Represents an immutable queue.  
   
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)</summary>
     <remarks>To be added.</remarks>
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
@@ -222,7 +222,7 @@
       <Docs>
         <summary>Gets a value that indicates whether this immutable queue is empty.  
   
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)</summary>
         <value>
           <see langword="true" /> if this queue is empty; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>

@@ -10,7 +10,7 @@ ms.assetid: 120ba537-4448-4c62-8676-7a8fdd98f496
 ---
 # Formatting numeric results table (C# Reference)
 
-The following table shows supported format specifiers for formatting numeric results. The formatted result corresponds to the "en-US" <xref:System.Globalization.CultureInfo>.
+The following table shows supported format specifiers for formatting numeric results. The formatted result in the last column corresponds to the "en-US" <xref:System.Globalization.CultureInfo>.
 
 |Format specifier|Description|Examples|Result|  
 |----------------------|-----------------|--------------|------------|  

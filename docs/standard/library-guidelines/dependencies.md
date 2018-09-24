@@ -84,7 +84,7 @@ Shared source packages can only be used by `PackageReference`, and should be a p
 
 **✔️ DO** reference shared source packages with `PrivateAssets="All"`.
 
-**❌ AVOID** shared-source package types in your public API.
+**❌ DO NOT** have shared-source package types in your public API.
 
 > Shared-source types are compiled into the referencing assembly and can't be exchanged across assembly boundaries, e.g. a shared-source `IRepository` type in one project is a separate type from the same shared-source `IRepository` in another project.
 

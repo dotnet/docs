@@ -1,5 +1,5 @@
 ---
-title: SourceLink
+title: Strong Naming
 description: Best practice recommendations for strong-naming .NET libraries.
 author: jamesnk
 ms.author: jamesnk

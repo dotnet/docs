@@ -21,7 +21,9 @@ How a project is used by the .NET community changes the effect of breaking chang
 
   Because a high-level library is likely to be directly referenced in the end user application, in the event of breaking changes the developer can choose to not update to the latest version, or can modify their application to work with the breaking change.
 
-**✔️ DO** what you can to minimise breaking changes when developing a low-level .NET library.
+**✔️ DO** think about how your library will be used and what effect of breaking changes will have on applications and libraries that use it.
+
+**✔️ DO** minimize breaking changes when developing a low-level .NET library.
 
 **✔️ CONSIDER** publishing a major rewrite of a library as a new NuGet package.
 

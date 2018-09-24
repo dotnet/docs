@@ -1,5 +1,5 @@
 ﻿---
-title: SourceLink
+title: Versioning
 description: Best practice recommendations for versioning .NET libraries.
 author: jamesnk
 ms.author: jamesnk

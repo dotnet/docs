@@ -1,6 +1,6 @@
 ---
 title: Identifying domain-model boundaries for each microservice
-description: .NET Microservices Architecture for Containerized .NET Applications | Identifying domain-model boundaries for each microservice
+description: .NET Microservices Architecture for Containerized .NET Applications | Explore the essence of partitioning a large application into microservices to achive a sound architecture.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
@@ -33,7 +33,7 @@ However, you might also have entities that have a different shape but share the 
 
 A similar approach is illustrated in Figure 4-11.
 
-![Whe decomposing a traditional data model between bounded contexts, you can have different entities that share the same identity (a buyer is also a user) with different attributes in each bounded context.](./media/image11.png)
+![When decomposing a traditional data model between bounded contexts, you can have different entities that share the same identity (a buyer is also a user) with different attributes in each bounded context.](./media/image11.png)
 
 **Figure 4-11**. Decomposing traditional data models into multiple domain models
 

@@ -1,6 +1,6 @@
 ---
 title: Creating, evolving, and versioning microservice APIs and contracts
-description: .NET Microservices Architecture for Containerized .NET Applications | Creating, evolving, and versioning microservice APIs and contracts
+description: .NET Microservices Architecture for Containerized .NET Applications | Create microservice APIs and contracts considering evolution and versioning, because nedds will change.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
@@ -21,14 +21,14 @@ Finally, if you are using a REST architecture, [Hypermedia](https://www.infoq.co
 
 ## Additional resources
 
--   **Scott Hanselman. ASP.NET Core RESTful Web API versioning made easy**  
-    *https://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx*
+-   **Scott Hanselman. ASP.NET Core RESTful Web API versioning made easy** <br/>
+    [*https://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx*](https://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx)
 
--   **Versioning a RESTful web API**  
-    *https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api*
+-   **Versioning a RESTful web API** <br/>
+    [*https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api*](https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)
 
--   **Roy Fielding. Versioning, Hypermedia, and REST**  
-    *https://www.infoq.com/articles/roy-fielding-on-versioning*
+-   **Roy Fielding. Versioning, Hypermedia, and REST** <br/>
+    [*https://www.infoq.com/articles/roy-fielding-on-versioning*](https://www.infoq.com/articles/roy-fielding-on-versioning)
 
 
 >[!div class="step-by-step"]

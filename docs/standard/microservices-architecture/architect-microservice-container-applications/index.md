@@ -1,19 +1,19 @@
 ---
 title: Architecting Container and Microservice Based Applications
-description: .NET Microservices Architecture for Containerized .NET Applications | Architecting Container and Microservice Based Applications
+description: .NET Microservices Architecture for Containerized .NET Applications | Architecting Container and Microservice Based Applications is no small feat and shouldn't be taken lightly, get to know the core concepts in this chapter.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
 ---
 # Architecting Container-and Microservice-Based Applications
 
+Enterprise applications can be complex and are often composed of multiple services instead of a single service-based application. For those cases, you need to understand additional architectural approaches, such as the microservices and certain Domain-Driven Design (DDD) patterns plus container orchestration concepts. Note that this chapter describes not just microservices on containers, but any containerized application, as well.
+
 ## Vision
 
 *Microservices offer great benefits but also raise huge new challenges. Microservice architecture patterns are fundamental pillars when creating a microservice-based application.*
 
-Earlier in this guide, you learned basic concepts about containers and Docker. That was the minimum information you need in order to get started with containers. Although, even when containers are enablers and a great fit for microservices, they are not mandatory for a microservice architecture and many architectural concepts in this architecture section could be applied without containers, too. However, this guidance focuses on the intersection of both due to the already introduced importance of containers.
-
-Enterprise applications can be complex and are often composed of multiple services instead of a single service-based application. For those cases, you need to understand additional architectural approaches, such as the microservices and certain Domain-Driven Design (DDD) patterns plus container orchestration concepts. Note that this chapter describes not just microservices on containers, but any containerized application, as well.
+Earlier in this guide, you learned basic concepts about containers and Docker. That was the minimum information you needed to get started with containers. Although, even when containers are enablers and a great fit for microservices, they are not mandatory for a microservice architecture and many architectural concepts in this architecture section could be applied without containers, too. However, this guidance focuses on the intersection of both due to the already introduced importance of containers.
 
 ## Container design principles
 

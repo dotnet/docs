@@ -1,6 +1,6 @@
 ---
 title: Resiliency and high availability in microservices
-description: .NET Microservices Architecture for Containerized .NET Applications | Resiliency and high availability in microservices
+description: .NET Microservices Architecture for Containerized .NET Applications | Microservices have to be designed to withstand transient network and dependencies failures they must be resilient to achieve high availability.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
@@ -27,8 +27,8 @@ In the [Implementing health checks in ASP.NET Core services](../implement-resili
 
 You also have the option of using an excellent open source library called Beat Pulse, available on [GitHub](https://github.com/Xabaril/BeatPulse) and as a [NuGet package](https://www.nuget.org/packages/BeatPulse/). This library also does health checks, with a twist, it handles two types of checks:
 
-   - **Liveness**: Checks if the microservice is alive, that is, if it’s able to accept requests and respond. 
-   - **Readiness**: Checks if the microservice’s dependencies (Database, queue services, etc.) are themselves ready, so the microservice can do what it’s supposed to do. 
+-   **Liveness**: Checks if the microservice is alive, that is, if it’s able to accept requests and respond. 
+-   **Readiness**: Checks if the microservice’s dependencies (Database, queue services, etc.) are themselves ready, so the microservice can do what it’s supposed to do. 
 
 ### Using diagnostics and logs event streams
 
@@ -52,26 +52,26 @@ Different orchestrators might sound similar, but the diagnostics and health chec
 
 ## Additional resources
 
--   **The Twelve-Factor App. XI. Logs: Treat logs as event streams**  
-    *https://12factor.net/logs*
+-   **The Twelve-Factor App. XI. Logs: Treat logs as event streams** <br/>
+    [*https://12factor.net/logs*](https://12factor.net/logs)
 
--   **Microsoft Diagnostic EventFlow Library.** GitHub repo.  
-    *https://github.com/Azure/diagnostics-eventflow*
+-   **Microsoft Diagnostic EventFlow Library** GitHub repo. <br/>
+    [*https://github.com/Azure/diagnostics-eventflow*](https://github.com/Azure/diagnostics-eventflow)
 
--   **What is Azure Diagnostics**  
-    *https://docs.microsoft.com/azure/azure-diagnostics*
+-   **What is Azure Diagnostics** <br/>
+    [*https://docs.microsoft.com/azure/azure-diagnostics*](https://docs.microsoft.com/azure/azure-diagnostics)
 
--   **Connect Windows computers to the Log Analytics service in Azure**  
-    *https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents*
+-   **Connect Windows computers to the Log Analytics service in Azure** <br/>
+    [*https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents*](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents)
 
--   **Logging What You Mean: Using the Semantic Logging Application Block**  
-    *https://msdn.microsoft.com/library/dn440729(v=pandp.60).aspx*
+-   **Logging What You Mean: Using the Semantic Logging Application Block** <br/>
+    [*https://msdn.microsoft.com/library/dn440729(v=pandp.60).aspx*](https://msdn.microsoft.com/library/dn440729(v=pandp.60).aspx)
 
--   **Splunk.** Official site.  
-    *https://www.splunk.com/*
+-   **Splunk** Official site. <br/>
+    [*https://www.splunk.com/*](https://www.splunk.com/)
 
--   **EventSource Class**. API for events tracing for Windows (ETW)
-    *https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource*
+-   **EventSource Class** API for events tracing for Windows (ETW) <br/>
+    [*https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource*](https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource)
 
 
 

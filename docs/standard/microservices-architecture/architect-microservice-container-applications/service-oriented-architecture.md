@@ -1,6 +1,6 @@
 ---
 title: Service-oriented architecture
-description: .NET Microservices Architecture for Containerized .NET Applications | Service-oriented architecture
+description: .NET Microservices Architecture for Containerized .NET Applications | Get to know the fundamental differences between microservices and a Service-oriented architecture (SOA)
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018

@@ -1,15 +1,15 @@
 ---
 title: Containerizing monolithic applications
-description: .NET Microservices Architecture for Containerized .NET Applications | Containerizing monolithic applications
+description: .NET Microservices Architecture for Containerized .NET Applications | Containerizing monolithic applications, although doesn't get all the benefits from the microservices architecture, has important deployment benefits that can be delivered right away.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
 ---
 # Containerizing monolithic applications
 
-You might want to build a single, monolithically deployed web application or service and deploy it as a container. The application itself might not be internally monolithic, but structured as several libraries, components, or even layers (application layer, domain layer, data-access layer, etc.). Externally, however, it is a single container�a single process, a single web application, or a single service.
+You might want to build a single, monolithically deployed web application or service and deploy it as a container. The application itself might not be internally monolithic, but structured as several libraries, components, or even layers (application layer, domain layer, data-access layer, etc.). Externally, however, it is a single container—a single process, a single web application, or a single service.
 
-To manage this model, you deploy a single container to represent the application. To increase capacity, you scale out, i.e just add more copies with a load balancer in front. The simplicity comes from managing a single deployment in a single container or VM.
+To manage this model, you deploy a single container to represent the application. To increase capacity, you scale out, that is, just add more copies with a load balancer in front. The simplicity comes from managing a single deployment in a single container or VM.
 
 ![A monolithic containerized application has most of its functionality within a single container, with internal layers or libraries, ans scales out by cloning the container on multiple servers/VMs](./media/image1.png)
 

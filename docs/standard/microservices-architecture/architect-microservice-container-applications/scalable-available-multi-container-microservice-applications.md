@@ -1,6 +1,6 @@
 ---
 title: Orchestrating microservices and multi-container applications for high scalability and availability
-description: .NET Microservices Architecture for Containerized .NET Applications | Orchestrating microservices and multi-container applications for high scalability and availability
+description: .NET Microservices Architecture for Containerized .NET Applications | Get to know the options to orchestrate microservices and multi-container applications for high scalability and availability. Discover the possibilities of Azure Dev Spaces while developing Kubernetes application lifecycle.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
@@ -23,9 +23,9 @@ To go beyond the management of individual containers or very simple composed app
 
 From an architecture and development point of view, if you are building large enterprise composed of microservices-based applications, it is important to understand the following platforms and products that support advanced scenarios:
 
-**Clusters and orchestrators**. When you need to scale out applications across many Docker hosts, as when a large microservice-based application, it is critical to be able to manage all those hosts as a single cluster by abstracting the complexity of the underlying platform. That is what the container clusters and orchestrators provide. Examples of orchestrators are Azure Service Fabric and Kubernetes. Kubernetes is available in Azure through Azure Kubernetes Service.
+**Clusters and orchestrators.** When you need to scale out applications across many Docker hosts, as when a large microservice-based application, it is critical to be able to manage all those hosts as a single cluster by abstracting the complexity of the underlying platform. That is what the container clusters and orchestrators provide. Examples of orchestrators are Azure Service Fabric and Kubernetes. Kubernetes is available in Azure through Azure Kubernetes Service.
 
-**Schedulers**. *Scheduling* means to have the capability for an administrator to launch containers in a cluster so they also provide a UI. A cluster scheduler has several responsibilities: to use the cluster's resources efficiently, to set the constraints provided by the user, to efficiently load-balance containers across nodes or hosts, and to be robust against errors while providing high availability.
+**Schedulers.** *Scheduling* means to have the capability for an administrator to launch containers in a cluster so they also provide a UI. A cluster scheduler has several responsibilities: to use the cluster's resources efficiently, to set the constraints provided by the user, to efficiently load-balance containers across nodes or hosts, and to be robust against errors while providing high availability.
 
 The concepts of a cluster and a scheduler are closely related, so the products provided by different vendors often provide both sets of capabilities. The following list shows the most important platform and software choices you have for clusters and schedulers. These orchestrators are generally offered in public clouds like Azure.
 
@@ -116,7 +116,7 @@ Helm is maintained by the [Cloud Native Computing Foundation (CNCF)](https://www
 
 For further implementation information on Helm charts and Kubernetes check the post on [Using Helm Charts to deploy eShopOnContainers to AKS](https://github.com/dotnet-architecture/eShopOnContainers/wiki/10.1-Deploying-to-AKS-using-Helm-Charts).
 
-## Use Azure Dev Spaces for you Kuberentes application lifecycle
+## Use Azure Dev Spaces for your Kuberentes application lifecycle
 
 [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces) provides a rapid, iterative Kubernetes development experience for teams. With minimal dev machine setup, you can iteratively run and debug containers directly in Azure Kubernetes Service (AKS). Develop on Windows, Mac, or Linux using familiar tools like Visual Studio, Visual Studio Code, or the command line.
 
@@ -140,14 +140,14 @@ For further information check the article on [Team Development with Azure Dev Sp
 
 ## Additional resources
 
-  - **Getting started with Azure Kubernetes Service (AKS)**  
-    *https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal*
+-   **Getting started with Azure Kubernetes Service (AKS)** <br/>
+    [*https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal*](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal)
 
-  - **Azure Dev Spaces**  
-    *https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces*
+-   **Azure Dev Spaces** <br/>
+    [*https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces*](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces)
 
-  - **Kubernetes.** The official site.  
-    *https://kubernetes.io/*
+-   **Kubernetes** The official site. <br/>
+    [*https://kubernetes.io/*](https://kubernetes.io/)
 
 >[!div class="step-by-step"]
 [Previous](resilient-high-availability-microservices.md)

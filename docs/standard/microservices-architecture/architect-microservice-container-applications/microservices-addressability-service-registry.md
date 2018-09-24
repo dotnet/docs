@@ -1,6 +1,6 @@
 ---
 title: Microservices addressability and the service registry
-description: .NET Microservices Architecture for Containerized .NET Applications | Microservices addressability and the service registry
+description: .NET Microservices Architecture for Containerized .NET Applications | Understand the role of the container image registries in the microservices architecture.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
@@ -17,14 +17,14 @@ Note that there is certain overlap between the service registry and the API gate
 
 ## Additional resources
 
--   **Chris Richardson. Pattern: Service registry**  
-    *https://microservices.io/patterns/service-registry.html*
+-   **Chris Richardson. Pattern: Service registry** <br/>
+    [*https://microservices.io/patterns/service-registry.html*](https://microservices.io/patterns/service-registry.html)
 
--   **Auth0. The Service Registry**  
-    *https://auth0.com/blog/an-introduction-to-microservices-part-3-the-service-registry/*
+-   **Auth0. The Service Registry** <br/>
+    [*https://auth0.com/blog/an-introduction-to-microservices-part-3-the-service-registry/*](https://auth0.com/blog/an-introduction-to-microservices-part-3-the-service-registry/)
 
--   **Gabriel Schenker. Service discovery**  
-    *https://lostechies.com/gabrielschenker/2016/01/27/service-discovery/*
+-   **Gabriel Schenker. Service discovery** <br/>
+    [*https://lostechies.com/gabrielschenker/2016/01/27/service-discovery/*](https://lostechies.com/gabrielschenker/2016/01/27/service-discovery/)
 
 
 >[!div class="step-by-step"]

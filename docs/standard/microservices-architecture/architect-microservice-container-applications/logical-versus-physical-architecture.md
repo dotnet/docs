@@ -1,6 +1,6 @@
 ---
 title: Logical architecture versus physical architecture
-description: .NET Microservices Architecture for Containerized .NET Applications | Logical architecture versus physical architecture
+description: .NET Microservices Architecture for Containerized .NET Applications | Understand the differences between Logical and physical architectures.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018

@@ -1,6 +1,6 @@
 ---
 title: Data sovereignty per microservice
-description: .NET Microservices Architecture for Containerized .NET Applications | Data sovereignty per microservice
+description: .NET Microservices Architecture for Containerized .NET Applications | Data sovereignty per microservice is one of the kay point of microservices. Each microservice must be the sole owner of its database, sharing it with no other. Of course all instances of a microservice connect to the same high avalilability database. 
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
@@ -27,7 +27,7 @@ However, data access becomes much more complex when you move to a microservices 
 
 Going even further, different microservices often use different *kinds* of databases. Modern applications store and process diverse kinds of data, and a relational database is not always the best choice. For some use cases, a NoSQL database such as Azure CosmosDB or MongoDB might have a more convenient data model and offer better performance and scalability than a SQL database like SQL Server or Azure SQL Database. In other cases, a relational database is still the best approach. Therefore, microservices-based applications often use a mixture of SQL and NoSQL databases, which is sometimes called the [polyglot persistence](http://martinfowler.com/bliki/PolyglotPersistence.html) approach.
 
-A partitioned, polyglot-persistent architecture for data storage has many benefits. These include loosely coupled services and better performance, scalability, costs, and manageability. However, it can introduce some distributed data management challenges, as we will explain in "[Identifying domain-model boundaries](./identify-microservice-domain-model-boundaries.md)" later in this chapter.
+A partitioned, polyglot-persistent architecture for data storage has many benefits. These include loosely coupled services and better performance, scalability, costs, and manageability. However, it can introduce some distributed data management challenges, as we will explain in "[Identifying domain-model boundaries](identify-microservice-domain-model-boundaries.md)" later in this chapter.
 
 ## The relationship between microservices and the Bounded Context pattern
 
@@ -43,17 +43,17 @@ DDD benefits from microservices by getting real boundaries in the form of distri
 
 ### Additional resources
 
-  - **Chris Richardson. Pattern: Database per service**  
-    *https://microservices.io/patterns/data/database-per-service.html*
+-   **Chris Richardson. Pattern: Database per service** <br/>
+    [*https://microservices.io/patterns/data/database-per-service.html*](https://microservices.io/patterns/data/database-per-service.html)
 
-  - **Martin Fowler. BoundedContext**  
-    *https://martinfowler.com/bliki/BoundedContext.html*
+-   **Martin Fowler. BoundedContext** <br/>
+    [*https://martinfowler.com/bliki/BoundedContext.html*](https://martinfowler.com/bliki/BoundedContext.html)
 
-  - **Martin Fowler. PolyglotPersistence**  
-    *https://martinfowler.com/bliki/PolyglotPersistence.html*
+-   **Martin Fowler. PolyglotPersistence** <br/>
+    [*https://martinfowler.com/bliki/PolyglotPersistence.html*](https://martinfowler.com/bliki/PolyglotPersistence.html)
 
-  - **Alberto Brandolini. Strategic Domain Driven Design with Context Mapping**  
-    *https://www.infoq.com/articles/ddd-contextmapping*
+-   **Alberto Brandolini. Strategic Domain Driven Design with Context Mapping** <br/>
+    [*https://www.infoq.com/articles/ddd-contextmapping*](https://www.infoq.com/articles/ddd-contextmapping)
 
 
 >[!div class="step-by-step"]

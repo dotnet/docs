@@ -4962,7 +4962,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
  [!code-vb[System.String.Format#33](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#33)]  
   
  ### Controlling alignment  
- By default, strings are right-aligned within their field if you specify a field width. To left-align strings in a field, you preface the field width with a negative sign, such as `{0,-12}` to define a 12-character right-aligned field.  
+ By default, strings are right-aligned within their field if you specify a field width. To left-align strings in a field, you preface the field width with a negative sign, such as `{0,-12}` to define a 12-character left-aligned field.  
   
  The following example is similar to the previous one, except that it left-aligns both labels and data.  
   

@@ -8,7 +8,7 @@ ms.assetid: d4b67ee2-66e8-40c1-ae9d-545d32c71387
 ---
 # How to: Identify a nullable type (C# Programming Guide)
 
-The following example shows how to determine whether a <xref:System.Type?displayProperty=nameWithType> instance represents a closed generic nullable type, that is the <xref:System.Nullable%601?displayProperty=nameWithType> type with specified type parameter `T`:
+The following example shows how to determine whether a <xref:System.Type?displayProperty=nameWithType> instance represents a closed generic nullable type, that is, the <xref:System.Nullable%601?displayProperty=nameWithType> type with a specified type parameter `T`:
 
 [!code-csharp-interactive[whether Type is nullable](../../../../samples/snippets/csharp/programming-guide/nullable-types/IdentifyNullableType.cs#1)]
 

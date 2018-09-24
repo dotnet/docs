@@ -101,7 +101,7 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
 ## Painting Shapes  
  <xref:System.Windows.Media.Brush> objects are used to paint a shape's <xref:System.Windows.Shapes.Shape.Stroke%2A> and <xref:System.Windows.Shapes.Shape.Fill%2A>. In the following example, the stroke and fill of an <xref:System.Windows.Shapes.Ellipse> are specified. Note that valid input for brush properties can be either a keyword or hexadecimal color value. For more information about available color keywords, see properties of the <xref:System.Windows.Media.Colors> class in the <xref:System.Windows.Media> namespace.  
   
-```xaml 
+```xaml
 <Canvas Background="LightGray">   
    <Ellipse  
       Canvas.Top="50"  
@@ -170,8 +170,8 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   Stretch="Fill"  
   Stroke="Black"  
   StrokeThickness="2" />  
-```  
-  
+```
+
 ```csharp
 PointCollection myPointCollection = new PointCollection();  
 myPointCollection.Add(new Point(0,0));  
@@ -186,8 +186,8 @@ myPolygon.Height = 100;
 myPolygon.Stretch = Stretch.Fill;  
 myPolygon.Stroke = Brushes.Black;  
 myPolygon.StrokeThickness = 2;  
-```  
-  
+```
+
 <a name="transforms"></a>   
 ## Transforming Shapes  
  The <xref:System.Windows.Media.Transform> class provides the means to transform shapes in a two-dimensional plane.  The different types of transformation include rotation (<xref:System.Windows.Media.RotateTransform>), scale (<xref:System.Windows.Media.ScaleTransform>), skew (<xref:System.Windows.Media.SkewTransform>), and translation (<xref:System.Windows.Media.TranslateTransform>).  

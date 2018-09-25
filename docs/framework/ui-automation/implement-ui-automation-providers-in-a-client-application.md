@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: f325f0d8-1715-41ea-85ca-45b82ffea8bc
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Implement UI Automation Providers in a Client Application
 > [!NOTE]

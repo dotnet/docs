@@ -16,7 +16,6 @@ helpviewer_keywords:
 ms.assetid: f3fc7533-6956-42c6-bbc3-73e5a221027d
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Socket Code Examples
 The following code examples demonstrate how to use the <xref:System.Net.Sockets.Socket> class as a client to connect to remote network services and as a server to listen for connections from remote clients.  

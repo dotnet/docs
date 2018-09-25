@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 10318725-9666-4d65-ab61-b94c64e59f13
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;module&gt; Element (Network Settings)
 Adds a new proxy module to the application.  

@@ -4,7 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: 594a7b3b-af23-4cfa-b616-0b2dddb1a705
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;add&gt; Element for schemeSettings (Uri Settings)
 Adds a scheme setting for a scheme name.  

@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: d91edaf2-be28-41ec-a508-af421cb43c3d
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Create a Client-Side UI Automation Provider
 > [!NOTE]

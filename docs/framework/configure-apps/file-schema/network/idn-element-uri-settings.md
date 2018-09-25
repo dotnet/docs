@@ -4,7 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: 16c8e869-1791-4cf5-9244-3d3c738f60ec
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;idn&gt; Element (Uri Settings)
 Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain name.  

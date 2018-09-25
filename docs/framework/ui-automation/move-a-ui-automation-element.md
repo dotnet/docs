@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: 4042cb44-e27e-4a03-ac36-9be1eed65b47
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Move a UI Automation Element
 > [!NOTE]

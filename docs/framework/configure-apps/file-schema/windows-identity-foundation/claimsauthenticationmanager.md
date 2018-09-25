@@ -3,7 +3,6 @@ title: "&lt;claimsAuthenticationManager&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 6d30a450-6d13-4671-81a8-77e0204500c5
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;claimsAuthenticationManager&gt;
 Registers a claims authentication manager for the incoming claims.  

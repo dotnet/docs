@@ -7,7 +7,6 @@ helpviewer_keywords:
 ms.assetid: 46d1baaa-e343-4639-b70d-2a43a9f62b2a
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;applicationPool&gt; Element (Web Settings)
 Specifies configuration settings that are used by ASP.NET to manage process-wide behavior when an ASP.NET application is running in Integrated mode on [!INCLUDE[iisver](../../../../../includes/iisver-md.md)] or a later version.  

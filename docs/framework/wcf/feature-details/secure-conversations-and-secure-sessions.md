@@ -3,7 +3,6 @@ title: "Secure Conversations and Secure Sessions"
 ms.date: "03/30/2017"
 ms.assetid: 48cb104a-532d-40ae-aa57-769dae103fda
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Secure Conversations and Secure Sessions
 A feature of Windows Communication Foundation (WCF) is the ability to establish secure sessions between two endpoints that authenticate each other and agree upon an encryption and digital signature process. For example, the service endpoint might require a client endpoint to send a security token based upon an X.509 certificate for authentication. Once the client is authenticated, the service endpoint returns a security context token (SCT) back to the client that is then used to secure all subsequent messages within the session. Establishing this secure session enables the set of messages that are exchanged between the two endpoints to be more efficient, because the SCT has a symmetric key. Asymmetric keys, which X.509 certificates are based upon, require significantly more computational power than symmetric keys when generating a digital signature or encrypting a set of data.  

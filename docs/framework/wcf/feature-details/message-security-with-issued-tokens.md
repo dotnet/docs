@@ -3,7 +3,6 @@ title: "Message Security with Issued Tokens"
 ms.date: "03/30/2017"
 ms.assetid: 731fc871-54d0-4689-90fd-1c9415c45621
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Message Security with Issued Tokens
 The issued token client enables the federated security scenario in Windows Communication Foundation (WCF).  

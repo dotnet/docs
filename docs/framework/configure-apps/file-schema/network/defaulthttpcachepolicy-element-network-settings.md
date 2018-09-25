@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 2c1247d0-39b0-4c12-919a-a925ce075c79
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;defaultHttpCachePolicy&gt; Element (Network Settings)
 Describes whether HTTP caching is active and describes the default caching policy.  

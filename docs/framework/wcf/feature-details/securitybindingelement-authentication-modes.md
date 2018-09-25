@@ -6,7 +6,6 @@ dev_langs:
   - "vb"
 ms.assetid: 12300bf4-c730-4405-9f65-d286f68b5a43
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # SecurityBindingElement Authentication Modes
 Windows Communication Foundation (WCF) provides several modes by which clients and services authenticate to one another. You can create security binding elements for these authentication modes by using static methods on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class or through configuration. This topic briefly describes the 18 authentication modes.  

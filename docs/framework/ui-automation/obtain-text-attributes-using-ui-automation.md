@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: fdefc6c3-b836-4cfe-8dec-1484bfdc5551
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Obtain Text Attributes Using UI Automation
 > [!NOTE]

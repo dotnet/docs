@@ -14,7 +14,6 @@ helpviewer_keywords:
 ms.assetid: afb07899-2707-49ab-a57f-e0caf20d0171
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Security in network programming
 

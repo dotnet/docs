@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: 057c983a-da83-4c50-86c7-26fe381076a6
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Support for the Button Control Type
 > [!NOTE]

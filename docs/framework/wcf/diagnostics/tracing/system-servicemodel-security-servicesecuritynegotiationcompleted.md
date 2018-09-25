@@ -3,7 +3,6 @@ title: "System.ServiceModel.Security.ServiceSecurityNegotiationCompleted"
 ms.date: "03/30/2017"
 ms.assetid: c43d2d67-8b9b-4a2b-b0cd-ceab8ad38141
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.ServiceSecurityNegotiationCompleted
 System.ServiceModel.Security.ServiceSecurityNegotiationCompleted  

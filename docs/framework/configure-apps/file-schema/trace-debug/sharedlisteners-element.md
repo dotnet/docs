@@ -13,7 +13,6 @@ helpviewer_keywords:
 ms.assetid: de200534-19dd-4156-86cf-c50521802c4c
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;sharedListeners&gt; Element
 Contains listeners that any source or trace element can reference.  These listeners do not receive any traces by default, and it is not possible to retrieve these listeners at run time. Listeners identified as shared listeners can be added to sources or traces by name.  

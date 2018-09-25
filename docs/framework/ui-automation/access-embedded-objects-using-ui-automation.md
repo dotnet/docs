@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: a5b513ec-7fa6-4460-869f-c18ff04f7cf2
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Access Embedded Objects Using UI Automation
 > [!NOTE]

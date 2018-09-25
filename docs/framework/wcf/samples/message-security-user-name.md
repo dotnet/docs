@@ -5,7 +5,6 @@ helpviewer_keywords:
   - "WS Security"
 ms.assetid: c63cfc87-6b20-4949-93b3-bcd4b732b0a2
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Message Security User Name
 This sample demonstrates how to implement an application that uses WS-Security with username authentication for the client and requires server authentication using the server's X.509v3 certificate. All application messages between the client and server are signed and encrypted. By default, the username and password supplied by the client are used to logon to a valid Windows account. This sample is based on the [WSHttpBinding](../../../../docs/framework/wcf/samples/wshttpbinding.md). This sample consists of a client console program (Client.exe) and a service library (Service.dll) hosted by Internet Information Services (IIS). The service implements a contract that defines a request-reply communication pattern.  

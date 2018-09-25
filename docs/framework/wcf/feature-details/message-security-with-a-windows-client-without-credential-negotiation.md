@@ -6,7 +6,6 @@ dev_langs:
   - "vb"
 ms.assetid: fc07a26c-cbee-41c5-8fb0-329085fef749
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Message Security with a Windows Client without Credential Negotiation
 The following scenario shows a Windows Communication Foundation (WCF) client and service secured by the Kerberos protocol.  

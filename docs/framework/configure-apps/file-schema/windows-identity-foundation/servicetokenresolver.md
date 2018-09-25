@@ -3,7 +3,6 @@ title: "&lt;serviceTokenResolver&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 6e9001e1-e064-4f47-84b2-46225c177746
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;serviceTokenResolver&gt;
 Registers the service token resolver that is used by handlers in the token handler collection. The service token resolver is used to resolve the encryption token on incoming tokens and messages.  

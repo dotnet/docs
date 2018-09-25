@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 124446b7-abb1-4e5e-a492-b64398f268f1
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;bypasslist&gt; Element (Network Settings)
 Provides a set of regular expressions that describe addresses that do not use a proxy.  

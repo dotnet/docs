@@ -17,7 +17,6 @@ helpviewer_keywords:
 ms.assetid: 40e426cc-13db-4371-95eb-f7388bd23ebf
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Listening with Sockets
 Listener or server sockets open a port on the network and then wait for a client to connect to that port. Although other network address families and protocols exist, this example shows how to create remote service for a TCP/IP network.  

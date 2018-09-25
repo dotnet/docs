@@ -3,7 +3,6 @@ title: "How to: Use Multiple Security Tokens of the Same Type"
 ms.date: "03/30/2017"
 ms.assetid: cf179f48-4ed4-4caa-86a5-ef8eecc231cd
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How to: Use Multiple Security Tokens of the Same Type
 -   In [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 3.0, a client message only contained one token of any given type. Now client messages can contain multiple tokens of a type. This topic shows how to include multiple tokens of the same type in a client message.  

@@ -3,7 +3,6 @@ title: "Building My First Claims-Aware ASP.NET Web Application"
 ms.date: "03/30/2017"
 ms.assetid: 3ee8ee7f-caba-4267-9343-e313fae2876d
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Building My First Claims-Aware ASP.NET Web Application
 ## Applies To  

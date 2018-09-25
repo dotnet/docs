@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: a24e807b-d7c3-4e93-ac48-80094c4e1c90
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Use the AutomationID Property
 > [!NOTE]

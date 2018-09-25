@@ -24,7 +24,6 @@ helpviewer_keywords:
 ms.assetid: 4b48e22d-e4e5-48f0-be80-d549bda97415
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Introducing Pluggable Protocols
 The Microsoft .NET Framework provides a layered, extensible, and managed implementation of Internet services that can be integrated quickly and easily into your applications. The Internet access classes in the <xref:System.Net> and <xref:System.Net.Sockets> namespaces can be used to implement both Web-based and Internet-based applications.  

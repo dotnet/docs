@@ -12,7 +12,6 @@ helpviewer_keywords:
 ms.assetid: b688effa-b3e8-4b05-944d-05ed89a245aa
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Subscribe to UI Automation Events
 > [!NOTE]

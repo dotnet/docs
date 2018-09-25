@@ -3,7 +3,6 @@ title: "System.ServiceModel.Security.IssuanceTokenProviderUsingCachedToken"
 ms.date: "03/30/2017"
 ms.assetid: ee51ed4e-821c-4010-8d64-eabde522169f
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.IssuanceTokenProviderUsingCachedToken
 System.ServiceModel.Security.IssuanceTokenProviderUsingCachedToken  

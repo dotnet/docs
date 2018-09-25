@@ -3,7 +3,6 @@ title: "WSTrustChannelFactory and WSTrustChannel"
 ms.date: "03/30/2017"
 ms.assetid: 96cec467-e963-4132-b18b-7d0b3a2e979f
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # WSTrustChannelFactory and WSTrustChannel
 If you are already familiar with Windows Communication Foundation (WCF), you know that a WCF client is already federation aware. By configuring a WCF client with a <xref:System.ServiceModel.WSFederationHttpBinding> or similar custom binding, you can enable federated authentication to a service.

@@ -3,7 +3,6 @@ title: "System.ServiceModel.Channels.StreamSecurityUpgradeAccepted"
 ms.date: "03/30/2017"
 ms.assetid: da6c1a6a-1862-4d82-8b44-4b99463a95b8
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # System.ServiceModel.Channels.StreamSecurityUpgradeAccepted
 System.ServiceModel.Channels.StreamSecurityUpgradeAccepted  

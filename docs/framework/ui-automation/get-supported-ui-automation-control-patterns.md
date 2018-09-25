@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: 006c54c9-50bf-48d9-a855-9d62eb95603a
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Get Supported UI Automation Control Patterns
 > [!NOTE]

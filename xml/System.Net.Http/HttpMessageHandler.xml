@@ -35,7 +35,7 @@
   
 1.  <xref:System.Net.Http.DelegatingHandler> - A class used to plug a handler into a handler chain.  
   
-2.  <xref:System.Net.Http.HttpMessageHandler> - A simple to class to derive from that supports the most common requirements for most applications.  
+2.  <xref:System.Net.Http.HttpMessageHandler> - A simple class to derive from that supports the most common requirements for most applications.  
   
 3.  <xref:System.Net.Http.HttpClientHandler> - A class that operates at the bottom of the handler chain that actually handles the HTTP transport operations.  
   

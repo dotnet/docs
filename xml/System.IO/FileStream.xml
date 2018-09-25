@@ -2655,12 +2655,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the <see langword="FileStream" /> that was passed to the constructor.</summary>
-        <value>A string that is the name of the <see langword="FileStream" />.</value>
+        <summary>Gets the absolute path of the file opened in the <see langword="FileStream" />.</summary>
+        <value>A string that is the absolute path of the file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
+## Remarks
+
+If the absolute path is not known, this property returns a string similar to "[Unknown]".
+
  For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    

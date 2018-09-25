@@ -299,7 +299,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.IO.FileInfo.CopyTo%2A> method to allow overwriting of an existing file.  
+ Use the <xref:System.IO.FileInfo.CopyTo(System.String,System.Boolean)> method to allow overwriting of an existing file.  
   
 > [!CAUTION]
 >  Whenever possible, avoid using short file names (such as XXXXXX~1.XXX) with this method. If two files have equivalent short file names then this method may fail and raise an exception and/or result in undesirable behavior  
@@ -381,7 +381,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to allow or prevent overwriting of an existing file. Use the <xref:System.IO.FileInfo.CopyTo%2A> method to prevent overwriting of an existing file by default.  
+ Use this method to allow or prevent overwriting of an existing file. Use the <xref:System.IO.FileInfo.CopyTo(System.String)> method to prevent overwriting of an existing file by default.  
   
 > [!CAUTION]
 >  Whenever possible, avoid using short file names (such as XXXXXX~1.XXX) with this method. If two files have equivalent short file names then this method may fail and raise an exception and/or result in undesirable behavior  

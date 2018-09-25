@@ -31,9 +31,9 @@
   
  The <xref:System.Net.Http.HttpClient> also acts as a base class for more specific HTTP clients. An example would be a FacebookHttpClient providing additional methods specific to a Facebook web service (a GetFriends method, for instance). Derived classes should not override the virtual methods on the class. Instead, use a constructor overload that accepts <xref:System.Net.Http.HttpMessageHandler> to configure any pre- or post-request processing instead.
   
- By default, <xref:System.Net.HttpWebRequest> will be used to send requests to the server. This behavior can be modified by specifying a different channel in one of the constructor overloads taking a <xref:System.Net.Http.HttpMessageHandler> instance as parameter. If features like authentication or caching are required, <xref:System.Net.Http.WebRequestHandler> can be used to configure settings and the instance can be passed to the constructor. The returned handler can be passed to one of the constructor overloads taking a <xref:System.Net.Http.HttpMessageHandler> parameter.  
+ By default on .NET Framework and Mono, <xref:System.Net.HttpWebRequest> is used to send requests to the server. This behavior can be modified by specifying a different channel in one of the constructor overloads taking a <xref:System.Net.Http.HttpMessageHandler> instance as parameter. If features like authentication or caching are required, <xref:System.Net.Http.WebRequestHandler> can be used to configure settings and the instance can be passed to the constructor. The returned handler can be passed to one of the constructor overloads taking a <xref:System.Net.Http.HttpMessageHandler> parameter.  
   
- If an app using <xref:System.Net.Http.HttpClient> and related classes in the  <xref:System.Net.Http> namespace intends to download large amounts of data (50 megabytes or more), then the app should stream those downloads and not use the default buffering. If the default buffering is used the client memory usage will get very large, potentially resulting in substantially reduced performance.  
+ If an app using <xref:System.Net.Http.HttpClient> and related classes in the <xref:System.Net.Http> namespace intends to download large amounts of data (50 megabytes or more), then the app should stream those downloads and not use the default buffering. If the default buffering is used the client memory usage will get very large, potentially resulting in substantially reduced performance.  
   
  The following methods are thread safe:  
   
@@ -57,18 +57,17 @@
   
  <xref:System.Net.Http.HttpClient> is intended to be instantiated once and re-used throughout the life of an application. Instantiating an HttpClient class for every request will exhaust the number of sockets available under heavy loads. This will result in SocketException errors. Below is an example using HttpClient correctly.  
   
-```csharp  
-public class GoodController : ApiController  
-{  
-    // OK  
-    private static readonly HttpClient HttpClient;  
-  
-    static GoodController()  
-    {  
-        HttpClient = new HttpClient();  
-    }  
-}  
-  
+```csharp
+public class GoodController : ApiController
+{
+    // OK
+    private static readonly HttpClient HttpClient;
+
+    static GoodController()
+    {
+        HttpClient = new HttpClient();
+    }
+}
 ```  
   
 The <xref:System.Net.Http.HttpClient> is a high-level API that wraps the lower-level functionality available on each platform where it runs.
@@ -98,6 +97,7 @@ Starting with .NET Core 2.1, the <xref:System.Net.Http.SocketsHttpHandler?displa
 ```csharp
 AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", false);
 ```
+
 ```vb
 AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", False)
 ``` 

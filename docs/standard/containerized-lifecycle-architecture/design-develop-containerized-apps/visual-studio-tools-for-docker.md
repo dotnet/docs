@@ -23,7 +23,7 @@ Docker support is included in Visual Studio 2017. Download Visual Studio 2017 he
 
 There are two levels of Docker support you can add to a project. In .NET Core web app projects, you can just add a *Dockerfile* file to the project by enabling Docker support. The next level is container orchestration support, which adds a *Dockerfile* to the project (if it doesn't already exist) and a *docker-compose.yml* file at the solution level. Container orchestration support, via Docker Compose, is added by default in Visual Studio 2017 versions 15.7 or earlier. Container orchestration support is an opt-in feature in Visual Studio 2017 versions 15.8 or later, in which case Docker Compose and Service Fabric are supported.
 
-With Visual Studio version 15.8 and later, you can add support for multiple projects in a solution that each have an associated container. The **Add** > **Docker Support** and **Add** > **Container orchestration Support** commands are located on the right-click menu (or context menu) of the project node for a web app project in **Solution Explorer**, as shown in Figure 4-26:
+The **Add** > **Docker Support** and **Add** > **Container orchestration Support** commands are located on the right-click menu (or context menu) of the project node for a web app project in **Solution Explorer**, as shown in Figure 4-26:
 
 ![Add Docker Support menu option in Visual Studio](media/add-docker-support-menu.png)
 
@@ -48,7 +48,7 @@ When you add or enable Docker support, Visual Studio adds a *Dockerfile* file to
 
 ### Add container orchestration support
 
-When you want to compose a multicontainer solution, add container orchestration support to your projects. This lets you run and debug a group of containers (a whole solution) at the same time if they're defined in the same *docker-compose.yml* file. If *docker-compose.yml* already exists, Visual Studio just adds the required lines of configuration code to it.
+When you want to compose a multicontainer solution, add container orchestration support to your projects. This lets you run and debug a group of containers (a whole solution) at the same time if they're defined in the same *docker-compose.yml* file.
 
 To add container orchestration support, right-click on the solution or project node in **Solution Explorer**, and choose **Add** > **Container Orchestration Support**.  Then choose **Docker Compose** or **Service Fabric** to manage the containers.
 
@@ -57,6 +57,8 @@ After you add container orchestration support to your project, you see a Dockerf
 ![Docker files in Solution Explorer in Visual Studio](media/docker-support-solution-explorer.png)
 
 Figure 4-29: Docker files in Solution Explorer in Visual Studio 2017
+
+If *docker-compose.yml* already exists, Visual Studio just adds the required lines of configuration code to it.
 
 **More information:** For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:
 

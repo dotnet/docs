@@ -165,9 +165,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 -   Samples:  
   
-    -   [Fault Handling in a Flowchart Activity Using TryCatch](../../../docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)  
-  
-    -   [StateMachine Scenario Using a Combination of FlowChart and Pick](../../../docs/framework/windows-workflow-foundation/samples/statemachine-scenario-using-a-combination-of-flowchart-and-pick.md)  
+    -   [Fault Handling in a Flowchart Activity Using TryCatch](../../../docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) 
   
     -   [Hiring Process](../../../docs/framework/windows-workflow-foundation/samples/hiring-process.md)  
   
@@ -222,10 +220,6 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 -   In [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)], create a workflow console application. Add an <xref:System.Activities.Statements.InvokeMethod> activity in the workflow designer, and configure static and instance methods on it.  
   
--   Samples:  
-  
-    -   [InvokeMethod](../../../docs/framework/windows-workflow-foundation/samples/invokemethod.md)  
-  
 -   Designer Documentation: [InvokeMethod Activity Designer](/visualstudio/workflow-designer/invokemethod-activity-designer)  
   
 ### InvokeMethod Scenarios  
@@ -241,11 +235,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 -   In [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)], create a workflow console application. Add a <xref:System.Activities.Statements.TryCatch> activity in the workflow designer.  
   
--   Samples:  
-  
-    1.  [Fault Handling in a Flowchart Activity Using TryCatch](../../../docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)  
-  
-    2.  [Using Procedural Activities](../../../docs/framework/windows-workflow-foundation/samples/using-procedural-activities.md)  
+-   Sample: [Fault Handling in a Flowchart Activity Using TryCatch](../../../docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)  
   
 -   Designer Documentation: [Error Handling Activity Designers](/visualstudio/workflow-designer/error-handling-activity-designers)  
   

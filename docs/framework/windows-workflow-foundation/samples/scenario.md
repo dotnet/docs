@@ -11,10 +11,7 @@ This section contains examples of Windows Workflow Foundation (WF) scenarios.
  Contains samples that demonstrate scenarios using the built-in activity library.  
   
  [Services](../../../../docs/framework/windows-workflow-foundation/samples/services.md)  
- Contains samples that demonstrate scenarios using workflow services.
-  
- [StateMachine Scenario Using a Combination of FlowChart and Pick](../../../../docs/framework/windows-workflow-foundation/samples/statemachine-scenario-using-a-combination-of-flowchart-and-pick.md)  
- Demonstrates how to implement a simple stopwatch scenario using a combination of the <xref:System.Activities.Statements.Flowchart> and <xref:System.Activities.Statements.Pick> activities.  
+ Contains samples that demonstrate scenarios using workflow services.activities.  
   
  [WPF and WF Integration in XAML](../../../../docs/framework/windows-workflow-foundation/samples/wpf-and-wf-integration-in-xaml.md)  
  Demonstrates how to create an application that uses Windows Presentation Foundation (WPF) and Windows Workflow Foundation (WF) features in a single XAML document. To accomplish this, the sample uses Windows Workflow Foundation (WF) and XAML extensibility.  

@@ -13,9 +13,6 @@ Through thread local storage (TLS), the CLR maintains an execution context for e
 ## Creating and Using Workflow Execution Properties  
  Workflow execution properties usually implement the <xref:System.Activities.IExecutionProperty> interface, though properties focused on messaging may implement <xref:System.ServiceModel.Activities.ISendMessageCallback> and <xref:System.ServiceModel.Activities.IReceiveMessageCallback> instead. To create a workflow execution property, create a class that implements the <xref:System.Activities.IExecutionProperty> interface and implement the members <xref:System.Activities.IExecutionProperty.SetupWorkflowThread%2A> and <xref:System.Activities.IExecutionProperty.CleanupWorkflowThread%2A>. These members provide the execution property with an opportunity to properly set up and tear down the thread local storage during each pulse of work of the activity that contains the property, including any child activities. In this example, a `ConsoleColorProperty` is created that sets the `Console.ForegroundColor`.  
   
-> [!NOTE]
->  The following example code in this topic is based on the [Execution Properties](../../../docs/framework/windows-workflow-foundation/samples/execution-properties.md) sample.  
-  
 ```csharp  
 class ConsoleColorProperty : IExecutionProperty  
 {  

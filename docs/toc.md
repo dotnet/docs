@@ -241,6 +241,7 @@
 ### [C# 6](csharp/whats-new/csharp-6.md)
 ### [C# Version History](csharp/whats-new/csharp-version-history.md)
 ### [Relationships between language and framework](csharp/whats-new/relationships-between-language-and-library.md)
+### [Version and update considerations](csharp/whats-new/version-update-considerations.md)
 <!-- End What's New -->
 ## C# Concepts
 ### [C# Type system](csharp/programming-guide/types/index.md)

@@ -18,16 +18,10 @@ You can use Windows Presentation Foundation (WPF) controls in your Windows Forms
  Shows how to copy a Windows Presentation Foundation control on a Windows Form.  
   
  [Walkthrough: Arranging WPF Content on Windows Forms at Design Time](../../../../docs/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time.md)  
- Shows how to use the Windows Forms layout features, such as anchoring and snaplines, to arrange Windows Presentation Foundation controls.  
-  
- [Walkthrough: Changing Properties of a Hosted WPF Element at Design Time](../../../../docs/framework/winforms/advanced/walkthrough-changing-properties-of-a-hosted-wpf-element-at-design-time.md)  
- Shows the workflow between the Windows Forms Designer and the [!INCLUDE[wpfdesigner_current_long](../../../../includes/wpfdesigner-current-long-md.md)] for changing properties on WPF controls.  
+ Shows how to use the Windows Forms layout features, such as anchoring and snaplines, to arrange Windows Presentation Foundation controls.
   
  [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](../../../../docs/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md)  
- Shows how to create a Windows Presentation Foundation control for use in your Windows Forms-based applications.  
-  
- [Walkthrough: Copying and Pasting an ElementHost Control into Separate Windows Forms](../../../../docs/framework/winforms/advanced/copy--paste-an-elementhost-control-into-forms.md)  
- Shows how to copy a Windows Presentation Foundation control from one Windows Form to another.  
+ Shows how to create a Windows Presentation Foundation control for use in your Windows Forms-based applications.
   
  [Walkthrough: Assigning WPF Content on Windows Forms at Design Time](../../../../docs/framework/winforms/advanced/walkthrough-assigning-wpf-content-on-windows-forms-at-design-time.md)  
  Shows how to select the Windows Presentation Foundation control types you want to display on your form.  

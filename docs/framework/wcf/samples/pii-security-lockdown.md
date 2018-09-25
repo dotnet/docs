@@ -3,7 +3,6 @@ title: "PII Security Lockdown"
 ms.date: "03/30/2017"
 ms.assetid: c44fb338-9527-4dd0-8607-b8787d15acb4
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # PII Security Lockdown
 This sample demonstrates how to control several security-related features of a Windows Communication Foundation (WCF) service by:  

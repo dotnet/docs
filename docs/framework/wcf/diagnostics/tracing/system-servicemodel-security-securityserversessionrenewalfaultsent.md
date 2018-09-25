@@ -3,7 +3,6 @@ title: "System.ServiceModel.Security.SecurityServerSessionRenewalFaultSent"
 ms.date: "03/30/2017"
 ms.assetid: dc6379dd-a15d-4063-9939-a2edd08cfdcb
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.SecurityServerSessionRenewalFaultSent
 System.ServiceModel.Security.SecurityServerSessionRenewalFaultSent  

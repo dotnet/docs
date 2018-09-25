@@ -40,11 +40,11 @@ This tutorial explains how to create a localized application by using the LocBam
   
 3.  Add Uids to your [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files. Uids are used to keep track of changes to files and to identify items that must be translated. To add Uids to your files, run **updateuid** on your project file:  
   
-     **msbuild /t:updateuid helloapp.csproj**  
+     **msbuild -t:updateuid helloapp.csproj**  
   
      To verify that you have no missing or duplicate Uids, run **checkuid**:  
   
-     **msbuild /t:checkuid helloapp.csproj**  
+     **msbuild -t:checkuid helloapp.csproj**  
   
      After running **updateuid**, your files should contain Uids. For example, in the Pane1.xaml file of HelloApp, you should find the following:  
   

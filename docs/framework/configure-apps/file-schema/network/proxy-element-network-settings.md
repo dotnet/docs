@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 37a548d8-fade-4ac5-82ec-b49b6c6cb22a
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;proxy&gt; Element (Network Settings)
 Defines a proxy server.  

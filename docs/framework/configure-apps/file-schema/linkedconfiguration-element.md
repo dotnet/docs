@@ -13,7 +13,6 @@ helpviewer_keywords:
 ms.assetid: 8eb34f3b-427e-4288-a7ff-c73f489deb45
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 
 # \<linkedConfiguration> element

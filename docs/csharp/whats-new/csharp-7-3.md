@@ -30,7 +30,7 @@ The new compiler options are:
 
 The remainder of this article provides details and links to learn more about each of the improvements.
 
-## Enabling more performant safe code
+## Enabling more efficient safe code
 
 You should be able to write C# code safely that performs as well as unsafe code. Safe code avoids classes of errors, such as buffer overruns, stray pointers, and other memory access errors. These new features expand the capabilities of verifiable safe code. Strive to write more of your code using safe constructs. These features make that easier.
 
@@ -121,6 +121,8 @@ You can now specify the type <xref:System.Enum?displayProperty=nameWithType> or 
 You can also use the new `unmanaged` constraint, to specify that a type parameter must be an **unmanaged type**. An **unmanaged type** is a type that isn't a reference type and doesn't contain any reference type at any level of nesting.
 
 For more information, see the articles on [`where` generic constraints](../language-reference/keywords/where-generic-type-constraint.md) and [constraints on type parameters](../programming-guide/generics/constraints-on-type-parameters.md).
+
+Adding these constraints to existing types is an [incompatible change](version-update-considerations.md#incompatible-changes). Closed generic types may no longer meet these new constraints.
 
 ## Make existing features better
 

@@ -3,7 +3,6 @@ title: "&lt;system.identityModel.services&gt;"
 ms.date: "03/30/2017"
 ms.assetid: fa1624dd-2d74-4ae3-942e-498cee261ac5
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;system.identityModel.services&gt;
 Configuration section for authentication using the WS-Federation protocol.  

@@ -4,7 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: 0ae45c6e-8c4c-4c0d-8b9f-a93824648890
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;schemeSettings&gt; Element (Uri Settings)
 Specifies how a <xref:System.Uri> will be parsed for specific schemes.  

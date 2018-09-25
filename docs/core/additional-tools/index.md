@@ -8,7 +8,7 @@ ms.custom: mvc
 ---
 # .NET Core additional tools
 
-This section compiles a list of tools that support and extend the .NET Core functionality, in addition to the [.NET Core command-line interface (CLI)](..\tools\index.md) tools.
+This section compiles a list of tools that support and extend the .NET Core functionality, in addition to the [.NET Core command-line interface (CLI)](../tools/index.md) tools.
 
 ## [WCF Web Service Reference tool](wcf-web-service-reference-guide.md)
 

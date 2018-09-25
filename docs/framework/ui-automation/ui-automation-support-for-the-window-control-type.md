@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: 53be78a6-cdcc-4af3-a464-5927d19c54e8
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Support for the Window Control Type
 > [!NOTE]

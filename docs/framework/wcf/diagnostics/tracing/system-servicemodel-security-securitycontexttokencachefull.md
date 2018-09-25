@@ -3,7 +3,6 @@ title: "System.ServiceModel.Security.SecurityContextTokenCacheFull"
 ms.date: "03/30/2017"
 ms.assetid: 45e53edb-29ff-4729-a6c1-57ede0da1d00
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.SecurityContextTokenCacheFull
 System.ServiceModel.Security. SecurityContextTokenCacheFull  

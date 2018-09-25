@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: b51206f2-1281-4ad0-9820-ea39d88ae577
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Text Pattern
 > [!NOTE]

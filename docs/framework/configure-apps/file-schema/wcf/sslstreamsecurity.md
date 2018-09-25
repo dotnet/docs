@@ -3,7 +3,6 @@ title: "&lt;sslStreamSecurity&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 430a378b-a742-4858-8a12-9f9b235fd627
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;sslStreamSecurity&gt;
 Represents a custom binding element that supports channel security using an SSL stream.  

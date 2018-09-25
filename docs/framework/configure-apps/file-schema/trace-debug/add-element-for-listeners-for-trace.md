@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 81e804a3-ef11-4d39-bbde-bfa012c179e2
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;add&gt; Element for &lt;listeners&gt; for &lt;trace&gt;
 Adds a listener to the **Listeners** collection.  

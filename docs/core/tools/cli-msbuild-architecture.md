@@ -57,7 +57,7 @@ From an execution perspective, the CLI commands will take their parameters and c
     
 This command is publishing an application into a `pub` folder using the "Release" configuration. Internally, this command gets translated into the following MSBuild invocation: 
 
-   `dotnet msbuild /t:Publish /p:OutputPath=pub /p:Configuration=Release`
+   `dotnet msbuild -t:Publish -p:OutputPath=pub -p:Configuration=Release`
 
 The notable exception to this rule are `new` and `run` commands, as they have not been implemented as MSBuild targets.
 

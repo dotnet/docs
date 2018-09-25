@@ -1,7 +1,7 @@
 ---
 title: "&lt;AppContextSwitchOverrides&gt; Element"
 ms.custom: "updateeachrelease"
-ms.date: "04/19/2018"
+ms.date: "09/19/2018"
 helpviewer_keywords: 
   - "AppContextSwitchOverrides"
   - "compatibility switches"
@@ -119,7 +119,21 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
   
  Library developers can also define custom switches to allow callers to opt out of changed functionality introduced  in later versions of their libraries. For more information, see the <xref:System.AppContext> class.  
   
-## Example  
+## Switches in ASP.NET applications
+
+You can configure an ASP.NET application to use compatibility settings by adding an [\<Add>](~/docs/framework/configure-apps/file-schema/appsettings/add-element-for-appsettings.md) element to the [\<appSettings>](~/docs/framework/configure-apps/file-schema/appsettings/index.md) section of the web.config file. 
+
+The following example uses the `<add>` element to add two settings to the `<appSettings>` section of a web.config file:
+
+```xml
+<appSettings>
+  <add key="AppContext.SetSwitch:Switch.System.Globalization.NoAsyncCurrentCulture" value="true" />
+  <add key="AppContext.SetSwitch:Switch.System.Uri.DontEnableStrictRFC3986ReservedCharacterSets" value="true" />
+</appSettings>
+```
+
+## Example
+
  The following example uses the `AppContextSwitchOverrides` element to define a single application  compatibility switch, `Switch.System.Globalization.NoAsyncCurrentCulture`, that prevents culture from flowing across threads in asynchronous method calls.  
   
 ```xml  

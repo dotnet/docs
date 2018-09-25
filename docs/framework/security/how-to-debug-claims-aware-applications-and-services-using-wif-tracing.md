@@ -3,7 +3,6 @@ title: "How To: Debug Claims-Aware Applications And Services Using WIF Tracing"
 ms.date: "03/30/2017"
 ms.assetid: 3d51ba59-3adb-4ca4-bd33-5027531af687
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How To: Debug Claims-Aware Applications And Services Using WIF Tracing
 ## Applies To  

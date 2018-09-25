@@ -1,14 +1,9 @@
 ---
 title: Samples and tutorials
 description: Information on samples and tutorials for .NET Core, ASP.NET Core, and the C# language that help you learn about .NET.
-keywords: .NET, .NET Core, ASP.NET, C#, sample, tutorial
 author: BillWagner
 ms.author: wiwagn
 ms.date: 04/11/2017
-ms.topic: article
-ms.prod: .net
-ms.devlang: dotnet
-ms.assetid: 617310e7-336b-4864-8dab-7e2021512929
 ---
 
 # Samples and tutorials

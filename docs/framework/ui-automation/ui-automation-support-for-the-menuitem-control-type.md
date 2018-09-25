@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: 54bce311-3d23-40b9-ba90-1bdbdaf8fbba
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Support for the MenuItem Control Type
 > [!NOTE]

@@ -7,7 +7,6 @@ helpviewer_keywords:
 ms.assetid: 24a5cdff-7ed9-4195-93f3-edf6899019fc
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Assembly Binding Redirection Security Permission
 Explicit assembly binding redirection in an application configuration file requires a security permission. This applies to redirection of .NET Framework assemblies and assemblies from third parties. The permission is granted by setting the <xref:System.Security.Permissions.SecurityPermissionFlag> flag on the <xref:System.Security.Permissions.SecurityPermission>. Managed assemblies have no permissions by default.  

@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 3cb6092a-58c9-4ca0-84a5-0e54d5d00a0d
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Enable Navigation in a UI Automation Fragment Provider
 > [!NOTE]

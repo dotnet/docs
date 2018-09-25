@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: fc258a40-f370-434f-ae09-4a8cb11ddaeb
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Cache Management for Network Applications
 This topic and its related subtopics describe caching for resources obtained using the <xref:System.Net.WebClient>, <xref:System.Net.WebRequest>, <xref:System.Net.HttpWebRequest>, and <xref:System.Net.FtpWebRequest> classes.  

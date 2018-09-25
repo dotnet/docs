@@ -3,7 +3,6 @@ title: "&lt;certificateValidator&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 86161897-c20f-4ad8-9d7f-050c247251bf
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;certificateValidator&gt;
 Specifies a custom type for certificate validation. This type is used only if the `certificateValidationMode` attribute of the [\<certificateValidation>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/certificatevalidation.md) element is set to "Custom".  

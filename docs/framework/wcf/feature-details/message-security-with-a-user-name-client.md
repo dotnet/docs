@@ -6,7 +6,6 @@ dev_langs:
   - "vb"
 ms.assetid: 36335cb9-76b8-4443-92c7-44f081eabb21
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Message Security with a User Name Client
 The following illustration shows an Windows Communication Foundation (WCF) service and client secured using message-level security. The service is authenticated with an X.509 certificate. The client authenticates using a user name and password.  

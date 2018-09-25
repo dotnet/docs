@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: 65847654-9994-4a9e-b36d-2dd5d998770b
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Overview
 > [!NOTE]

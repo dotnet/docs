@@ -37,9 +37,9 @@ This procedure shows you how to copy a Windows Presentation Foundation (WPF) con
      A new <xref:System.Windows.Forms.Integration.ElementHost> control named `elementHost2` is created on the form.  
   
 ## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost>  
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
- [Walkthrough: Copying and Pasting an ElementHost Control into Separate Windows Forms](../../../../docs/framework/winforms/advanced/copy--paste-an-elementhost-control-into-forms.md)  
- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+
+- <xref:System.Windows.Forms.Integration.ElementHost>  
+- <xref:System.Windows.Forms.Integration.WindowsFormsHost>   
+- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
+- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
+- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

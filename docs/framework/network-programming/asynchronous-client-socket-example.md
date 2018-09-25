@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: d4ac53a0-b50b-4232-9726-d47d25fcc38a
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Asynchronous Client Socket Example
 The following example program creates a client that connects to a server. The client is built with an asynchronous socket, so execution of the client application is not suspended while the server returns a response. The application sends a string to the server and then displays the string returned by the server on the console.  

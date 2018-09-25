@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "security [WCF], auditing events"
 ms.assetid: e71e9587-3336-46a2-9a9e-d72a1743ecec
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How to: Audit Windows Communication Foundation Security Events
 Windows Communication Foundation (WCF) allows you to log security events to the Windows event log, which can be viewed using the Windows Event Viewer. This topic explains how to set up an application so that it logs security events. For more information about WCF auditing, see [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  

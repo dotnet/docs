@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: 03de6972-442a-4648-9f3e-efa654e3b949
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Startup Settings Schema
 Startup settings specify the version of the common language runtime that should run the application.  

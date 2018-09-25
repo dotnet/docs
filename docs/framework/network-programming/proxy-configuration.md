@@ -13,7 +13,6 @@ helpviewer_keywords:
 ms.assetid: 353c0a8b-4cee-44f6-8e65-60e286743df9
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Proxy Configuration
 A proxy server handles client requests for resources. A proxy can return a requested resource from its cache or forward the request to the server where the resource resides. Proxies can improve network performance by reducing the number of requests sent to remote servers. Proxies can also be used to restrict access to resources.  

@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: b0fcdd87-3add-4345-bca9-e891205e02ba
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Implementing the UI Automation Value Control Pattern
 > [!NOTE]

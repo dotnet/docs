@@ -7,7 +7,6 @@ helpviewer_keywords:
 ms.assetid: ea01a858-65da-4348-800f-5e3df59d4d79
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;clear&gt; Element for &lt;namedCaches&gt;
 Clears all `namedCache` entries in the `namedCaches` collection for a memory cache.  

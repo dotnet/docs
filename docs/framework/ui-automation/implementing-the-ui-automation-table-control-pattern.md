@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: 880cd85c-aa8c-4fb5-9369-45491d34bb78
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Implementing the UI Automation Table Control Pattern
 > [!NOTE]

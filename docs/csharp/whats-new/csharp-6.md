@@ -46,7 +46,7 @@ than on the constructs of the language.
 
 The remainder of this topic provides details on each of these features.
 
-## Auto-Property enhancements 
+## Auto-Property enhancements
 
 The syntax for automatically implemented properties (usually referred to as 'auto-properties')
 made it very easy to create properties
@@ -101,6 +101,8 @@ public class Student
 This feature enables true language support for creating immutable types and using
 the more concise and convenient auto-property syntax.
 
+If adding this syntax does not not remove an accessible method, it is a [binary compatible change](version-update-considerations.md#binary-compatible-changes).
+
 ### Auto-Property Initializers
 
 *Auto-Property Initializers* let you declare the initial value for
@@ -143,6 +145,9 @@ a great candidate:
 You can also use expression-bodied members in read-only properties as well:
 
 [!code-csharp[FullNameExpressionMember](../../../samples/snippets/csharp/new-in-6/newcode.cs#FullNameExpressionMember)]
+
+Changing an existing member to an expression bodied member is a [binary compatible change](version-update-considerations.md#binary-compatible-changes).
+
 
 ## using static
 
@@ -580,4 +585,3 @@ The `-deterministic` option instructs the compiler to produce a byte-for-byte id
 By default, every compilation produces unique output on each compilation. The compiler adds a timestamp, and a GUID generated from random numbers. You use this option if you want to compare the byte-for-byte output to ensure consistency across builds.
 
 For more information, see the [-deterministic compiler option](../language-reference/compiler-options/deterministic-compiler-option.md) article.
-

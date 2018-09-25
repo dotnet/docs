@@ -3,7 +3,6 @@ title: "System.ServiceModel.Security.SecurityAuditWrittenFailure"
 ms.date: "03/30/2017"
 ms.assetid: f8740d0d-753a-490e-b1b8-dfa352ec25b5
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.SecurityAuditWrittenFailure
 System.ServiceModel.Security.SecurityAuditWrittenFailure  

@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: 3584c0a1-9cd0-4968-8b63-b06390890ef6
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Client-Side UI Automation Provider Implementation
 > [!NOTE]

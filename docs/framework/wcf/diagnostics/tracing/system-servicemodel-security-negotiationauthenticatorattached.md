@@ -3,7 +3,6 @@ title: "System.ServiceModel.Security.NegotiationAuthenticatorAttached"
 ms.date: "03/30/2017"
 ms.assetid: 20a289a5-6450-46dd-bb83-c394379b857b
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.NegotiationAuthenticatorAttached
 System.ServiceModel.Security.NegotiationAuthenticatorAttached  

@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: 3ddb3b7b-1d6b-4dba-8678-5a68e868aadb
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Traverse Text Using UI Automation
 > [!NOTE]

@@ -12,7 +12,6 @@ helpviewer_keywords:
 ms.assetid: a0b86e28-86b4-4497-abe8-d5fd614c7926
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;add&gt; Element for bypasslist (Network Settings)
 Adds an IP address or DNS name to the proxy bypass list.  

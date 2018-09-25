@@ -12,5 +12,4 @@ Adding two or more service references to services that contain the same operatio
 ## See Also
 
 - [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)
-- [How to: Create a Workflow Service That Calls Another Workflow Service](../../../../docs/framework/wcf/feature-details/how-to-create-a-workflow-service-that-calls-another-workflow-service.md)
 - [Calling a WCF Service from a Workflow in a Web Project](https://go.microsoft.com/fwlink/?LinkId=207725)

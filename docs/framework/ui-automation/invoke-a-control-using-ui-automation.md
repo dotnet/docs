@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: 5ee2de3f-256c-43ec-b64c-62ace91f9983
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Invoke a Control Using UI Automation
 > [!NOTE]

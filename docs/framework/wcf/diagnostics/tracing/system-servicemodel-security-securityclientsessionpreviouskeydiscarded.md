@@ -3,7 +3,6 @@ title: "System.ServiceModel.Security.SecurityClientSessionPreviousKeyDiscarded"
 ms.date: "03/30/2017"
 ms.assetid: 339f0e2a-452b-43eb-9f6d-f48ceb1414f3
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.SecurityClientSessionPreviousKeyDiscarded
 System.ServiceModel.Security.SecurityClientSessionPreviousKeyDiscarded  

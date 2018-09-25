@@ -7,7 +7,6 @@ helpviewer_keywords:
 ms.assetid: 0ab8d42c-5b8b-481b-b788-2caecc2f0191
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Threading Issues
 > [!NOTE]

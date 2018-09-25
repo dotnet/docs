@@ -5,7 +5,6 @@ helpviewer_keywords:
   - "clients [WCF], security considerations"
 ms.assetid: 44c8578c-9a5b-4acd-8168-1c30a027c4c5
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Securing Clients
 In Windows Communication Foundation (WCF), the service dictates the security requirements for clients. That is, the service specifies what security mode to use, and whether or not the client must provide a credential. The process of securing a client, therefore, is simple: use the metadata obtained from the service (if it is published) and build a client. The metadata specifies how to configure the client. If the service requires that the client supply a credential, then you must obtain a credential that fits the requirement. This topic discusses the process in further detail. For more information about creating a secure service, see [Securing Services](../../../docs/framework/wcf/securing-services.md).  

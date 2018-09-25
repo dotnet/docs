@@ -3,7 +3,6 @@ title: "System.ServiceModel.Security.SpnegoServiceNegotiationCompleted"
 ms.date: "03/30/2017"
 ms.assetid: 840c7537-81df-4bb6-affb-c6c9036453d0
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.SpnegoServiceNegotiationCompleted
 System.ServiceModel.Security.SpnegoServiceNegotiationCompleted  

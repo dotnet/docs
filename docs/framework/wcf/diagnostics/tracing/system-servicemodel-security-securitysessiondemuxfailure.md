@@ -3,7 +3,6 @@ title: "System.ServiceModel.Security.SecuritySessionDemuxFailure"
 ms.date: "03/30/2017"
 ms.assetid: 74b89d9a-22be-4799-b9fb-e3dfa5426dec
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.SecuritySessionDemuxFailure
 System.ServiceModel.Security.SecuritySessionDemuxFailure  

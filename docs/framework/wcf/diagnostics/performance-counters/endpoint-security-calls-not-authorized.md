@@ -3,7 +3,6 @@ title: "Endpoint: Security Calls Not Authorized"
 ms.date: "03/30/2017"
 ms.assetid: d25095ff-9ff0-4c69-a674-4e6a9fe3f4dc
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Endpoint: Security Calls Not Authorized
 Counter Name: Security Calls Not Authorized.  

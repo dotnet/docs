@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "security [WCF], providing credentials"
 ms.assetid: db8cb478-aa43-478b-bf97-c6489ad7c7fd
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How to: Create a Custom Security Token Provider
 This topic shows how to create new token types with a custom security token provider and how to integrate the provider with a custom security token manager.  

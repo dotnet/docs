@@ -3,7 +3,6 @@ title: "Endpoint: Security Validation and Authentication Failures Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 89a70b90-d7e4-4b03-9b84-4dc88ce3d605
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Endpoint: Security Validation and Authentication Failures Per Second
 Counter name: Security Validation and Authentication Failures Per Second  

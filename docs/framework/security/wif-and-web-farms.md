@@ -3,7 +3,6 @@ title: "WIF and Web Farms"
 ms.date: "03/30/2017"
 ms.assetid: fc3cd7fa-2b45-4614-a44f-8fa9b9d15284
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # WIF and Web Farms
 When you use Windows Identity Foundation (WIF) to secure the resources of a relying party (RP) application that is deployed in a web farm, you must take specific steps to ensure that WIF can process tokens from instances of the RP application running on different computers in the farm. This processing includes validating session token signatures, encrypting and decrypting session tokens, caching session tokens, and detecting replayed security tokens.  

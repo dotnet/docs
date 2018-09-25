@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 09576b1a-291f-435c-980e-dee32d899ae1
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Get UI Automation Element Properties
 > [!NOTE]

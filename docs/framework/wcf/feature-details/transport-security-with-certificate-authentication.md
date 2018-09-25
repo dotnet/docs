@@ -5,7 +5,6 @@ dev_langs:
   - "vb"
 ms.assetid: 3d726b71-4d8b-4581-a3bb-02b9af51d11b
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Transport Security with Certificate Authentication
 This topic discusses using X.509 certificates for server and client authentication when using transport security. For more information about X.509 certificates see [X.509 Public Key Certificates](https://msdn.microsoft.com/library/bb540819\(VS.85\).aspx). Certificates must be issued by a certification authority, which is often a third-party issuer of certificates. On a Windows Server domain, Active Directory Certificate Services can be used to issue certificates to client computers on the domain. For more information see [Windows 2008 R2 Certificate Services](https://go.microsoft.com/fwlink/?LinkID=209949&clcid=0x409). In this scenario, the service is hosted under Internet Information Services (IIS) which is configured with Secure Sockets Layer (SSL). The service is configured with an SSL (X.509) certificate to allow clients to verify the identity of the server. The client is also configured with an X.509 certificate that allows the service to verify the identity of the client. The server’s certificate must be trusted by the client and the client’s certificate must be trusted by the server. The actual mechanics of how the service and client verifies each other’s identity is beyond the scope of this topic. For more information see [Digital Signature on Wikipedia](https://go.microsoft.com/fwlink/?LinkId=253157).  

@@ -3,7 +3,6 @@ title: "&lt;remove&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 4058e2f1-7db4-4d1a-84dd-1b52836f2ae6
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;remove&gt;
 Removes the specified security token handler from the token handler collection.  

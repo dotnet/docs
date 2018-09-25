@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: 045ea62f-7b50-46cf-a5a9-8eb97704355f
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Support for the Slider Control Type
 > [!NOTE]

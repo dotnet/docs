@@ -3,7 +3,6 @@ title: "System.ServiceModel.Security.SecuritySpnToSidMappingFailure"
 ms.date: "03/30/2017"
 ms.assetid: 45c658a9-7dcb-42a9-9bd0-e2a06a2a00b6
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.SecuritySpnToSidMappingFailure
 System.ServiceModel.Security.SecuritySpnToSidMappingFailure  

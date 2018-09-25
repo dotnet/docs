@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 3afa1586-e1b8-473d-8985-c3fc90cf561b
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;performanceCounter&gt; Element (Network Settings)
 Enables or disables networking performance counters.  

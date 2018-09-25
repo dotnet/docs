@@ -3,7 +3,6 @@ title: "Security Validation"
 ms.date: "03/30/2017"
 ms.assetid: 48dcd496-0c4f-48ce-8b9b-0e25b77ffa58
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Security Validation
 This sample demonstrates how to use a custom behavior to validate services on a computer to ensure they meet specific criteria. In this sample, services are validated by the custom behavior by scanning through each endpoint on the service and checking to see whether they contain secure binding elements. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  

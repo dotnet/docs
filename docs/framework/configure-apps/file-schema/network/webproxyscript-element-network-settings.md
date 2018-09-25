@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: a13c26db-6218-4af3-9696-38f24b23bfac
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;webProxyScript&gt; Element (Network Settings)
 Configures the characteristics of the script used to discover Web proxies.  

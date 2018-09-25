@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "bindings [WCF]"
 ms.assetid: 4de03dd3-968a-4e65-af43-516e903d7f95
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Bindings and Security
 The system-provided bindings included with Windows Communication Foundation (WCF) offer a quick way to program WCF applications. With one exception, all the bindings have a default security scheme enabled. This topic helps you select the right binding for your security needs.  

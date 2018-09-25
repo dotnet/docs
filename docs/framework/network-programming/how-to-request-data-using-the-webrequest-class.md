@@ -13,7 +13,6 @@ helpviewer_keywords:
 ms.assetid: 368b8d0f-dc5e-4469-a8b8-b2adbf5dd800
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # How to: Request Data Using the WebRequest Class
 The following procedure describes the steps used to request a resource from a server, for example, a Web page or file. The resource must be identified by a URI.  

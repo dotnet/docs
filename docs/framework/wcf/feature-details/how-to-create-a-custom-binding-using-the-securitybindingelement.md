@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "security [WCF], creating custom bindings"
 ms.assetid: 203a9f9e-3a73-427c-87aa-721c56265b29
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How to: Create a Custom Binding Using the SecurityBindingElement
 Windows Communication Foundation (WCF) includes several system-provided bindings that can be configured but do not provide full flexibility when configuring all the security options that WCF supports. This topic demonstrates how to create a custom binding directly from individual binding elements and highlights some of the security settings that can be specified when creating such a binding. For more information about creating custom bindings, see [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md).  

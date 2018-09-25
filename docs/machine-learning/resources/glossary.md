@@ -5,9 +5,6 @@ author: jralexander
 ms.author: johalex
 ms.date: 05/31/2018
 ms.topic: conceptual
-ms.prod: dotnet-ml
-ms.devlang: dotnet
-manager: wpickett
 ---
 # Machine learning glossary
 

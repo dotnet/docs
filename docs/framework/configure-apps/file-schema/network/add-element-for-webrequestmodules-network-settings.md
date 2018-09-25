@@ -12,7 +12,6 @@ helpviewer_keywords:
 ms.assetid: 47ec4adc-f39f-4bcd-8680-1ec21fd26890
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;add&gt; Element for webRequestModules (Network Settings)
 Adds a custom Web request module to the application.  

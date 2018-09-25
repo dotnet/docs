@@ -79,7 +79,7 @@ a pattern, and raise the correct event when a match is discovered.
 
 [!code-csharp[FileSearxcher](../../samples/csharp/events/Program.cs#FileSearcherV1 "Create the initial file searcher")]
 
-## Definining and Raising Field-Like Events
+## Defining and Raising Field-Like Events
 
 The simplest way to add an event to your class is to declare that
 event as a public field, as in the preceding example:

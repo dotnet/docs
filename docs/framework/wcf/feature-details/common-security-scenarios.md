@@ -5,7 +5,6 @@ helpviewer_keywords:
   - "security [WCF], scenarios"
 ms.assetid: 201923b5-5162-4a8a-8d4c-e7bd242748d5
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Common Security Scenarios
 The topics in this section catalog a number of possible client and service security configurations. Configurations vary according to a number of factors. For example, whether a service or client is on an intranet, or whether the security is provided by Windows or transport (such as HTTPS).  

@@ -10,7 +10,6 @@ helpviewer_keywords:
   - "Claimset class"
 ms.assetid: 389b5a57-4175-4bc0-ada0-fc750d51149f
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How to: Examine the Security Context
 When programming Windows Communication Foundation (WCF) services, the service security context enables you to determine details about the client credentials and claims used to authenticate with the service. This is done by using the properties of the <xref:System.ServiceModel.ServiceSecurityContext> class.  

@@ -88,10 +88,10 @@
       "ms.devlang": "dotnet",
       "author": "dotnet-bot",
       "ms.author": "dotnetcontent",
-      "manager": "wpickett",
       "searchScope": [".NET"],
       "uhfHeaderId": "MSDocsHeader-DotNet",
       "apiPlatform": "dotnet",
+      "ms.prod":"dotnet",
       "ms.topic": "conceptual",
       "feedback_system": "GitHub",
       "feedback_github_repo": "dotnet/docs",
@@ -151,9 +151,6 @@
         "docs/framework/data/adonet/**/**.md": "douglasl",
         "docs/fsharp/**/**.md": "phcart",
         "docs/machine-learning/**/**.md": "johnalex"
-      },
-      "manager": {
-        "docs/framework/data/adonet/**/**.md": "craigg"
       },
       "ms.date": {
         "_csharplang/spec/*.md": "07/01/2017",

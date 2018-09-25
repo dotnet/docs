@@ -10,9 +10,6 @@ This section contains samples that demonstrate hosting Windows Communication Fou
  [Windows Process Activation](../../../../docs/framework/wcf/samples/windows-process-activation.md)  
  Demonstrates service activation through network protocols.  
   
- [Configuration-Based Activation](../../../../docs/framework/wcf/samples/configuration-based-activation.md)  
- Demonstrates activation of WCF services without requiring a .svc file.  
-  
  [SystemWebRouting Integration Sample](../../../../docs/framework/wcf/samples/systemwebrouting-integration-sample.md)  
  Demonstrates the hosting layer’s integration with the classes in the <xref:System.Web.Routing> namespace.  
   

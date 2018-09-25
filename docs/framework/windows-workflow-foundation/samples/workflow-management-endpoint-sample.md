@@ -6,7 +6,7 @@ ms.assetid: 3ac6e08f-c43d-4bb7-83c3-e3890a4dac03
 # Workflow Management Endpoint Sample
 This sample shows how a workflow control endpoint can be used to create and run workflows both locally and remotely. The sample demonstrates how to host a control endpoint and write clients that call the control endpoint to create and run the instance of a workflow. The workflow is not a service.  
   
- On the service side of the sample a workflow is hosted with WorkflowServiceHost and a WorkflowControlEndpoint is added so that clients can perform control operations (Suspend, Start, etc). A user-defined CreationEndpoint is also added to allow the workflow to be created. The service then uses these endpoints to start the workflow in a suspended state and then resume the workflow. The client performs the same operations but from the client code. For more information about these interfaces see, [Workflow Control Endpoint](../../../../docs/framework/wcf/feature-details/workflow-control-endpoint.md) and [How to: Host a non-service workflow in IIS](../../../../docs/framework/wcf/feature-details/how-to-host-a-non-service-workflow-in-iis.md)  
+ On the service side of the sample a workflow is hosted with WorkflowServiceHost and a WorkflowControlEndpoint is added so that clients can perform control operations (Suspend, Start, etc). A user-defined CreationEndpoint is also added to allow the workflow to be created. The service then uses these endpoints to start the workflow in a suspended state and then resume the workflow. The client performs the same operations but from the client code. For more information about these interfaces see, [Workflow Control Endpoint](../../../../docs/framework/wcf/feature-details/workflow-control-endpoint.md).  
   
 #### To run the sample  
   

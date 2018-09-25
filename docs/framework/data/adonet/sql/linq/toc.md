@@ -105,7 +105,6 @@
 #### [N-Tier and Remote Applications with LINQ to SQL](n-tier-and-remote-applications-with-linq-to-sql.md)
 ##### [LINQ to SQL N-Tier with ASP.NET](linq-to-sql-n-tier-with-aspnet.md)
 ##### [LINQ to SQL N-Tier with Web Services](linq-to-sql-n-tier-with-web-services.md)
-##### [LINQ to SQL with Tightly-Coupled Client-Server Applications](linq-to-sql-with-tightly-coupled-client-server-applications.md)
 ##### [Implementing N-Tier Business Logic](implementing-business-logic-linq-to-sql.md)
 ##### [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](data-retrieval-and-cud-operations-in-n-tier-applications.md)
 #### [Object Identity](object-identity.md)

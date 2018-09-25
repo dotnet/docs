@@ -41,12 +41,4 @@ This section provides samples that demonstrate basic Windows Workflow Foundation
  Contains samples that demonstrate workflow services.  
   
  [Tracking](../../../../docs/framework/windows-workflow-foundation/samples/tracking.md)  
- Contains samples that demonstrate workflow tracking.  
-  
- [Transactions](../../../../docs/framework/windows-workflow-foundation/samples/transactions.md)  
- Contains samples that demonstrate workflow transactions.  
-  
- [Validation](../../../../docs/framework/windows-workflow-foundation/samples/validation.md)  
- Contains samples that demonstrate validation in Windows Workflow Foundation.  
-  
-## Reference
+ Contains samples that demonstrate workflow tracking.

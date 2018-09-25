@@ -11,13 +11,7 @@ This section contains examples of Windows Workflow Foundation (WF) scenarios.
  Contains samples that demonstrate scenarios using the built-in activity library.  
   
  [Services](../../../../docs/framework/windows-workflow-foundation/samples/services.md)  
- Contains samples that demonstrate scenarios using workflow services.  
-  
- [Transactions](../../../../docs/framework/windows-workflow-foundation/samples/transactions.md)  
- Contains samples that demonstrate scenarios using transactions.  
-  
- [Auto-Confirm Pattern](../../../../docs/framework/windows-workflow-foundation/samples/auto-confirm-pattern.md)  
- Consists of three scenarios that run illustrating a custom `AutoConfirmScope` activity.  
+ Contains samples that demonstrate scenarios using workflow services.
   
  [StateMachine Scenario Using a Combination of FlowChart and Pick](../../../../docs/framework/windows-workflow-foundation/samples/statemachine-scenario-using-a-combination-of-flowchart-and-pick.md)  
  Demonstrates how to implement a simple stopwatch scenario using a combination of the <xref:System.Activities.Statements.Flowchart> and <xref:System.Activities.Statements.Pick> activities.  

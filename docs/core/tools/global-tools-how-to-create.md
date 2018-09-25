@@ -162,7 +162,7 @@ The `botsay.1.0.0.nupkg` file is created in the folder identified by the `<Packa
 Now that you have a package, install the tool from that package: 
 
 ```console
-dotnet tool install --global --add-source ./nupkg botsay`
+dotnet tool install --global --add-source ./nupkg botsay
 ```
 
 The `--add-source` parameter tells the .NET Core CLI to temporarily use the `./nupkg` folder (our `<PackageOutputPath>` folder) as an additional source feed for NuGet packages. For more information about installing Global Tools, see [.NET Core Global Tools overview][global-tool-info].

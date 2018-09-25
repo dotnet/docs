@@ -82,7 +82,7 @@ The `do!` keyword is for calling a computation expression that returns a `unit`-
 ```fsharp
 let doThingsAsync data url =
     async {
-        do! sumbitData data url
+        do! submitData data url
         ...
     }
 ```

@@ -40,4 +40,3 @@
 ### [SchemaImporterExtension Technology Sample](schemaimporterextension-technology-sample.md)
 ### [Version Tolerant Serialization Technology Sample](version-tolerant-serialization-technology-sample.md)
 ### [Web Services Generics Serialization Technology Sample](web-services-generics-serialization-technology-sample.md)
-### [Web Services IXmlSerializable Technology Sample](web-services-ixmlserializable-technology-sample.md)

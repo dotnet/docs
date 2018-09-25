@@ -33,10 +33,10 @@ are designed to increase performance by minimizing copying value types without
 incurring the memory allocations associated with using reference types. The
 features include:
 
- - The `in` modifier on parameters, to specify that an argument is passed by reference but not modified by the called method.
- - The `ref readonly` modifier on method returns, to indicate that a method returns its value by reference but doesn't allow writes to that object.
- - The `readonly struct` declaration, to indicate that a struct is immutable and should be passed as an `in` parameter to its member methods.
- - The `ref struct` declaration, to indicate that a struct type accesses managed memory directly and must always be stack allocated.
+ - The `in` modifier on parameters, to specify that an argument is passed by reference but not modified by the called method. Adding the `in` modifier to an argument is a [source compatible change](version-update-considerations.md#source-compatible-changes).
+ - The `ref readonly` modifier on method returns, to indicate that a method returns its value by reference but doesn't allow writes to that object. Adding the `ref readonly` modifier is a [source compatible change](version-update-considerations.md#source-compatible-changes), if the return is assigned to a value. Adding the `readonly` modifer to an existing `ref` return statement is an [incompatible change](version-update-considerations.md#incompatible-changes). It requires callers to update the declaration of `ref` local variables to include the `readonly` modifier.
+ - The `readonly struct` declaration, to indicate that a struct is immutable and should be passed as an `in` parameter to its member methods. Adding the `readonly` modifier to an existing struct declaration is a [binary compatible change](version-update-considerations.md#binary-compatible-changes).
+ - The `ref struct` declaration, to indicate that a struct type accesses managed memory directly and must always be stack allocated. Adding the `ref` modifier to an existing `struct` declaration is an [incompatible change](version-update-considerations.md#incompatible-changes). A `ref struct` cannot be a member of a class or used in other locations where it may be allocated on the heap.
 
 You can read more about all these changes in [Using value types with reference semantics](../reference-semantics-with-value-types.md).
 

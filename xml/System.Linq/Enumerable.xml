@@ -521,7 +521,22 @@
         <param name="element">The value to append to <paramref name="source" />.</param>
         <summary>Appends a value to the end of the sequence.</summary>
         <returns>A new sequence that ends with <paramref name="element" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This method does not modify the elements of the collection. Instead, it creates a copy of the collection with the new element.
+  
+## Examples  
+ The following code example demonstrates how to use <xref:System.Linq.Enumerable.Append%2A> to append a value to the end of the sequence.  
+  
+ [!code-csharp[System.Linq.Enumerable#201](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Enumerable/CS/enumerable.cs#201)]
+ [!code-vb[System.Linq.Enumerable#201](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Enumerable/VB/Enumerable.vb#201)]  
+  
+ ]]></format>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
@@ -8056,7 +8071,22 @@ Dim doubles = From item As Integer In sequence
         <param name="element">The value to prepend to <paramref name="source" />.</param>
         <summary>Adds a value to the beginning of the sequence.</summary>
         <returns>A new sequence that begins with <paramref name="element" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[    
+          
+## Remarks  
+  
+> [!NOTE]
+>  This method does not modify the elements of the collection. Instead, it creates a copy of the collection with the new element.
+  
+## Examples  
+ The following code example demonstrates how to use <xref:System.Linq.Enumerable.Prepend%2A> to prepend a value to the beginning of the sequence.  
+  
+ [!code-csharp[System.Linq.Enumerable#202](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Enumerable/CS/enumerable.cs#202)]
+ [!code-vb[System.Linq.Enumerable#202](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Enumerable/VB/Enumerable.vb#202)]  
+  
+ ]]></format>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>

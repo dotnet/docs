@@ -24,19 +24,19 @@ The downside to strong-naming is that the .NET Framework on Windows enables stri
 </configuration>
 ```
 
-When .NET developers complain about strong-naming, what they are usually complaining about is strict assembly loading. Fortunately, this issue is isolated to the .NET Framework. .NET Core, Xamarin, UWP and most other .NET implementations do not have strict assembly loading and removes the main downside of strong-naming.
+When .NET developers complain about strong-naming, what they're usually complaining about is strict assembly loading. Fortunately, this issue is isolated to the .NET Framework. .NET Core, Xamarin, UWP, and most other .NET implementations don't have strict assembly loading and removes the main downside of strong-naming.
 
-One important aspect of strong naming is it is viral: a strong named assembly can only reference other strong named assemblies. If your library is not strong named then developers who are building an application or library that needs strong naming are excluded from using it.
+One important aspect of strong naming is it's viral: a strong named assembly can only reference other strong named assemblies. If your library isn't strong named then you have excluded developers who are building an application or library that needs strong naming from using it.
 
 The benefits of strong naming are:
 
 1. The assembly can be referenced and used by other strong-named assemblies.
 2. The assembly can be stored in the Global Assembly Cache (GAC).
-3. The assembly can be loaded side-by-side with other versions of the assembly. This is commonly required by applications with plug-in architectures.
+3. The assembly can be loaded side by side with other versions of the assembly. Side-by-side assembly loading is commonly required by applications with plug-in architectures.
 
 ## What should I do?
 
-Applications don't need to strong name most of the time, but strong naming is recommended for .NET OSS libraries. Strong-naming a library's assembly ensures that the most people can use it, and only the .NET Framework is effected by strict assembly loading.
+Applications don't need to strong name most of the time, but strong naming is recommended for .NET OSS libraries. Strong-naming an assembly ensures the most people can use it, and strict assembly loading only affects the .NET Framework.
 
 **✔️ CONSIDER** strong-naming your library's assemblies.
 
@@ -47,9 +47,9 @@ Applications don't need to strong name most of the time, but strong naming is re
 > [!NOTE]
 > When a cryptographic identity is desired, [Authenticode](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/authenticode) and [NuGet Package Signing](https://docs.microsoft.com/en-us/nuget/create-packages/sign-a-package) are recommended. Strong naming should not be used for security considerations.
 
-**✔️ CONSIDER** incrementing the assembly version on only major version changes to help users reduce binding redirects, and how often they are updated.
+**✔️ CONSIDER** incrementing the assembly version on only major version changes to help users reduce binding redirects, and how often they're updated.
 
-**❌ DO NOT** publish strong-named and non-strong-named versions of your project, e.g. `Contoso.Api` and `Contoso.Api.StrongNamed`.
+**❌ DO NOT** publish strong-named and non-strong-named versions of your project. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
 
 > Publishing two packages forks your developer eco-system. Also if an application ends up depending on both packages the developer can encounter type name conflicts. As far as .NET is concerned they are different types in different assemblies.
 

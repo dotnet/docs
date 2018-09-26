@@ -11,7 +11,7 @@ ms.assetid: af44596f-bf6a-4149-9f04-08d8e8f45250
   
  ![WorkflowServiceHost Overview](../../../../docs/framework/wcf/feature-details/media/wfshhighlevel.gif "WFSHHighLevel")  
   
- This diagram shows that <xref:System.ServiceModel.WorkflowServiceHost> loads workflow service definitions from .xamlx files and loads configuration information from a configuration file. It also loads tracking configuration from the tracking profile. <xref:System.ServiceModel.WorkflowServiceHost> exposes a workflow control endpoint which allows you to send control operations to workflow instances.  For more information see [Workflow Control Endpoint](../../../../docs/framework/wcf/feature-details/workflow-control-endpoint.md) and [Workflow Management Endpoint Sample](../../../../docs/framework/windows-workflow-foundation/samples/workflow-management-endpoint-sample.md).  
+ This diagram shows that <xref:System.ServiceModel.WorkflowServiceHost> loads workflow service definitions from .xamlx files and loads configuration information from a configuration file. It also loads tracking configuration from the tracking profile. <xref:System.ServiceModel.WorkflowServiceHost> exposes a workflow control endpoint which allows you to send control operations to workflow instances.  For more information see [Workflow Control Endpoint sample](../../../../docs/framework/wcf/feature-details/workflow-control-endpoint.md).  
   
  <xref:System.ServiceModel.WorkflowServiceHost> also exposes application endpoints that listen for incoming application messages. When an incoming message arrives it is sent to the appropriate workflow service instance (if it is currently loaded). If needed a new workflow instance is created. Or if an existing instance has been persisted it is loaded from the persistence store.  
   
@@ -41,13 +41,13 @@ ms.assetid: af44596f-bf6a-4149-9f04-08d8e8f45250
  The message arrives and is processed by the WCF channel stack. Throttles are checked and correlation queries are executed. The message is bound for an existing instance (because CanCreateInstance is false) so the instance is loaded from persistence store, the bookmark is resumed and the workflow executes.  
   
 > [!WARNING]
->  Workflow Service Host will fail to open if SQL Server is configured to listen on NamedPipe protocol only.  
+> Workflow Service Host will fail to open if SQL Server is configured to listen on NamedPipe protocol only.  
   
-## See Also  
- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)  
- [Hosting Workflow Services](../../../../docs/framework/wcf/feature-details/hosting-workflow-services.md)  
- [Workflow Control Endpoint](../../../../docs/framework/wcf/feature-details/workflow-control-endpoint.md)  
- [Workflow Management Endpoint Sample](../../../../docs/framework/windows-workflow-foundation/samples/workflow-management-endpoint-sample.md)  
- [How to: Configure Workflow Unhandled Exception Behavior with WorkflowServiceHost](../../../../docs/framework/wcf/feature-details/config-workflow-unhandled-exception-workflowservicehost.md)  
- [Creating a Long-running Workflow Service](../../../../docs/framework/wcf/feature-details/creating-a-long-running-workflow-service.md)  
- [Workflow Persistence](../../../../docs/framework/windows-workflow-foundation/workflow-persistence.md)
+## See Also
+
+- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)  
+- [Hosting Workflow Services](../../../../docs/framework/wcf/feature-details/hosting-workflow-services.md)  
+- [Workflow Control Endpoint](../../../../docs/framework/wcf/feature-details/workflow-control-endpoint.md)  
+- [How to: Configure Workflow Unhandled Exception Behavior with WorkflowServiceHost](../../../../docs/framework/wcf/feature-details/config-workflow-unhandled-exception-workflowservicehost.md)  
+- [Creating a Long-running Workflow Service](../../../../docs/framework/wcf/feature-details/creating-a-long-running-workflow-service.md)  
+- [Workflow Persistence](../../../../docs/framework/windows-workflow-foundation/workflow-persistence.md)

@@ -25,7 +25,7 @@ ms.assetid: 497e81ed-5eef-460c-ba55-fae73c05824f
  [!code-csharp[CFX_ActivityExample#10](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#10)]  
   
 ### Invoking Asynchronous Methods on a Class  
- Many of the classes in the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provide asynchronous functionality, and this functionality can be asynchronously invoked by using an <xref:System.Activities.AsyncCodeActivity> based activity. In the following example from the [Using AsyncOperationContext in an Activity](../../../docs/framework/windows-workflow-foundation/samples/using-asyncoperationcontext-in-an-activity-sample.md), an activity is created that asynchronously creates a file by using the <xref:System.IO.FileStream> class.  
+ Many of the classes in the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provide asynchronous functionality, and this functionality can be asynchronously invoked by using an <xref:System.Activities.AsyncCodeActivity> based activity. In the following example, an activity is created that asynchronously creates a file by using the <xref:System.IO.FileStream> class.  
   
  [!code-csharp[CFX_ActivityExample#12](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#12)]  
   
@@ -38,9 +38,9 @@ ms.assetid: 497e81ed-5eef-460c-ba55-fae73c05824f
  [!code-csharp[CFX_ActivityExample#9](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#9)]  
   
 ### Scheduling Actions or Child Activities Using AsyncCodeActivity  
- <xref:System.Activities.AsyncCodeActivity> derived custom activities  provide a method for performing work asynchronously with regard to the workflow thread, but do not provide the ability to schedule child activities or actions. However, asynchronous behavior can be incorporated with scheduling of child activities through composition. An asynchronous activity can be created, and then composed with an <xref:System.Activities.Activity> or <xref:System.Activities.NativeActivity> derived activity to provide asynchronous behavior and scheduling of child activities or actions. For example, an activity could be created that derives from <xref:System.Activities.Activity>, and has as its implementation a <xref:System.Activities.Statements.Sequence> containing the asynchronous activity as well the other activities that implement the logic of the activity. For more examples of composing activities using <xref:System.Activities.Activity> and <xref:System.Activities.NativeActivity>, see [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md), [Activity Authoring Options](../../../docs/framework/windows-workflow-foundation/activity-authoring-options-in-wf.md), and the [Composite](../../../docs/framework/windows-workflow-foundation/samples/composite.md) activity samples.  
+ <xref:System.Activities.AsyncCodeActivity> derived custom activities  provide a method for performing work asynchronously with regard to the workflow thread, but do not provide the ability to schedule child activities or actions. However, asynchronous behavior can be incorporated with scheduling of child activities through composition. An asynchronous activity can be created, and then composed with an <xref:System.Activities.Activity> or <xref:System.Activities.NativeActivity> derived activity to provide asynchronous behavior and scheduling of child activities or actions. For example, an activity could be created that derives from <xref:System.Activities.Activity>, and has as its implementation a <xref:System.Activities.Statements.Sequence> containing the asynchronous activity as well the other activities that implement the logic of the activity. For more examples of composing activities using <xref:System.Activities.Activity> and <xref:System.Activities.NativeActivity>, see [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md) and [Activity Authoring Options](../../../docs/framework/windows-workflow-foundation/activity-authoring-options-in-wf.md).  
   
 ## See Also  
- <xref:System.Action>  
- <xref:System.Func%602>  
- [Using AsyncOperationContext in an Activity](../../../docs/framework/windows-workflow-foundation/samples/using-asyncoperationcontext-in-an-activity-sample.md)
+
+- <xref:System.Action>  
+- <xref:System.Func%602>  

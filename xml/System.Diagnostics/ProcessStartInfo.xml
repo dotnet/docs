@@ -1478,6 +1478,8 @@ p.WaitForExit();
 
 Setting this property to `false` enables you to redirect input, output, and error streams.
 
+The word "shell" in this context (`UseShellExecute`) refers to a graphical shell (similar to the Windows shell) rather than command shells (for example, `bash` or `sh`) and lets users launch graphical applications or open documents.
+
 > [!NOTE]
 > <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute> must be `false` if the <xref:System.Diagnostics.ProcessStartInfo.UserName> property is not `null` or an empty string, or an <xref:System.InvalidOperationException> will be thrown when the <xref:System.Diagnostics.Process.Start(System.Diagnostics.ProcessStartInfo)?displayProperty=nameWithType> method is called.
 

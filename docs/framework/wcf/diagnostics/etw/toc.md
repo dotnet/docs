@@ -355,5 +355,4 @@
 ### [57403 - TraceCodeEventLogWarning](57403-tracecodeeventlogwarning.md)
 ### [57404 - HandledExceptionWarning](57404-handledexceptionwarning.md)
 ### [62326 - HttpHandlerPickedForUrl](62326-httphandlerpickedforurl.md)
-## [Determining service operation duration](determining-service-operation-duration.md)
-## [Monitoring Service Operation Failures](monitoring-service-operation-failures.md)
+## [Determine service operation duration](determining-service-operation-duration.md)

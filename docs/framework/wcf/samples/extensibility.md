@@ -32,10 +32,7 @@ This section contains samples that deal with custom extensibility and other feat
  Demonstrates custom syndication.  
   
  [Transport Extensibility](../../../../docs/framework/wcf/samples/transport-extensibility.md)  
- Demonstrates custom transports.  
-  
- [Web Extensibility](../../../../docs/framework/wcf/samples/web-extensibility.md)  
- Demonstrates custom Web functionality.  
+ Demonstrates custom transports.
   
  [Operation Formatter and Operation Selector](../../../../docs/framework/wcf/samples/operation-formatter-and-operation-selector.md)  
  Demonstrates how extensibility points can consume custom message data formats.  

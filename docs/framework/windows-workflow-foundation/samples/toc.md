@@ -23,7 +23,7 @@
 #### [Removing the View State the Designer Adds to an XAML File](removing-the-view-state-the-designer-adds-to-an-xaml-file.md)
 #### [Programming Model Item Tree](programming-model-item-tree.md)
 #### [Property Grid Extensibliity](property-grid-extensibliity.md)
-### [Designer ReHosting](designer-rehosting.md)
+### [Designer Rehosting](designer-rehosting.md)
 ### [Execution](execution.md)
 #### [Creating and Running a Workflow Instance](creating-and-running-a-workflow-instance.md)
 #### [WorkflowHostingEndpoint Resume Bookmark](workflowhostingendpoint-resume-bookmark.md)
@@ -41,7 +41,7 @@
 #### [Non-Generic ForEach](non-generic-foreach.md)
 #### [Non-Generic ParallelForEach](non-generic-parallelforeach.md)
 #### [Get WorkflowInstanceId](get-workflowinstanceid.md)
-### [Services](services.md)
+### Services
 #### [Accessing OperationContext](accessing-operationcontext.md)
 #### [LINQ Message Query Correlation](linq-message-query-correlation.md)
 #### [Asynchronous Communication](asynchronous-communication.md)

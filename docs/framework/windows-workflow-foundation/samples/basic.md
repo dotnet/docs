@@ -22,14 +22,5 @@ This section provides samples that demonstrate basic Windows Workflow Foundation
  [Execution](../../../../docs/framework/windows-workflow-foundation/samples/execution.md)  
  Contains samples that demonstrate executing workflows.
   
- [Migration](../../../../docs/framework/windows-workflow-foundation/samples/migration.md)  
- Contains samples that demonstrate migrating workflows created with previous versions of Windows Workflow Foundation (WF).  
-  
- [Persistence](../../../../docs/framework/windows-workflow-foundation/samples/persistence.md)  
- Contains samples that demonstrate persisting workflows to a durable medium.  
-  
- [Services](../../../../docs/framework/windows-workflow-foundation/samples/services.md)  
- Contains samples that demonstrate workflow services.  
-  
  [Tracking](../../../../docs/framework/windows-workflow-foundation/samples/tracking.md)  
  Contains samples that demonstrate workflow tracking.

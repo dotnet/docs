@@ -1,11 +1,11 @@
 ---
-title: Breaking Changes
+title: Breaking changes
 description: Best practice recommendations for navigating breaking changes when creating .NET libraries.
 author: jamesnk
-ms.author: jamesnk
+ms.author: James.NewtonKing
 ms.date: 09/20/2018
 ---
-# Breaking Changes
+# Breaking changes
 
 It's important for an open-source project to find a balance between stability for existing users and innovation for the future. As developers, we lend towards refactoring and rethinking code until it's perfect, but breaking your existing users has a negative impact, especially for low-level libraries.
 
@@ -27,11 +27,11 @@ How a project is used by the .NET community changes the effect of breaking chang
 
 **✔️ CONSIDER** publishing a major rewrite of a library as a new NuGet package.
 
-## Types of Breaking Changes
+## Types of breaking changes
 
 Breaking changes fall into different categories and aren't equally impactful.
 
-### Source Breaking Change
+### Source breaking change
 
 A source breaking change doesn't affect program execution but will cause compilation errors the next time the application is recompiled. Examples of source breaking changes include adding an overload that can result in ambiguity in method calls that were unambiguous previously, or changing a parameter name that can break callers using named parameters.
 
@@ -44,13 +44,13 @@ public class Task
 
 Because a source breaking change is only harmful when the developer recompiles their application, it's the least disruptive. Developers can fix their own broken source code easily.
 
-### Behavior Breaking Change
+### Behavior breaking change
 
 Behavior changes are the most common breaking change: almost any change in behavior could break someone. Even a bug fix can qualify if users relied on the previously broken behavior.
 
 **✔️ CONSIDER** leaving new features off by default if they affect existing users, and let developers opt in to the feature with a setting.
 
-### Binary Breaking Change
+### Binary breaking change
 
 A binary breaking change happens when you change the public API of a library so assemblies compiled against older versions are no longer able to call it. For example, changing a method's signature by adding a new parameter will cause already compiled assemblies that called it to throw a `MissingMethodException`.
 
@@ -84,7 +84,7 @@ public class Document
 }
 ```
 
-**More Information**
+**More information**
 
 * [A definitive guide to API-breaking changes in .NET](https://stackoverflow.com/questions/1456785/a-definitive-guide-to-api-breaking-changes-in-net)
 * [CoreFX Breaking Change Rules](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/breaking-change-rules.md)

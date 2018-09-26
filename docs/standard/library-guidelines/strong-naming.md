@@ -1,11 +1,11 @@
 ---
-title: Strong Naming
+title: Strong naming
 description: Best practice recommendations for strong-naming .NET libraries.
 author: jamesnk
-ms.author: jamesnk
+ms.author: James.NewtonKing
 ms.date: 09/20/2018
 ---
-# Strong Naming
+# Strong naming
 
 Strong naming refers to signing an assembly with a key, producing a strong named assembly. When an assembly is strong-named, it creates a unique identity based on the name and assembly version number, and can help prevent assembly conflicts.
 
@@ -34,9 +34,12 @@ The benefits of strong naming are:
 2. The assembly can be stored in the Global Assembly Cache (GAC).
 3. The assembly can be loaded side by side with other versions of the assembly. Side-by-side assembly loading is commonly required by applications with plug-in architectures.
 
-## What should I do?
+## Create strong named .NET libraries
 
-Applications don't need to strong name most of the time, but strong naming is recommended for .NET OSS libraries. Strong-naming an assembly ensures the most people can use it, and strict assembly loading only affects the .NET Framework.
+You should strong-name your open-source .NET libraries. Strong-naming an assembly ensures the most people can use it, and strict assembly loading only affects the .NET Framework.
+
+> [!NOTE]
+> This guidance is specific to .NET libraries. Strong naming is not as important for most .NET applications and should not be done by default.
 
 **✔️ CONSIDER** strong-naming your library's assemblies.
 
@@ -44,16 +47,18 @@ Applications don't need to strong name most of the time, but strong naming is re
 
 > A publicly available key lets developers modify and recompile your library source code with the same key.
 
-> [!NOTE]
+> [!IMPORTANT]
 > When a cryptographic identity is desired, [Authenticode](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/authenticode) and [NuGet Package Signing](https://docs.microsoft.com/en-us/nuget/create-packages/sign-a-package) are recommended. Strong naming should not be used for security considerations.
 
 **✔️ CONSIDER** incrementing the assembly version on only major version changes to help users reduce binding redirects, and how often they're updated.
+
+> Read more about [versioning and the assembly version](./versioning.md#assembly-version).
 
 **❌ DO NOT** publish strong-named and non-strong-named versions of your project. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
 
 > Publishing two packages forks your developer eco-system. Also if an application ends up depending on both packages the developer can encounter type name conflicts. As far as .NET is concerned they are different types in different assemblies.
 
-**More Information**
+**More information**
 
 * [Strong-Named Assemblies](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/strong-named-assemblies)
 * [Redirecting Assembly Versions](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/redirect-assembly-versions)

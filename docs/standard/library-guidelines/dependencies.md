@@ -2,7 +2,7 @@
 title: Dependencies
 description: Best practice recommendations for managing NuGet dependencies in .NET libraries.
 author: jamesnk
-ms.author: jamesnk
+ms.author: James.NewtonKing
 ms.date: 09/20/2018
 ---
 # Dependencies
@@ -15,12 +15,12 @@ It's a common situation for a .NET project to have multiple versions of a packag
 
 ![Diamond dependency](./media/diamond-dependency.png "Diamond dependency")
 
-At build time NuGet analyzes all the packages that a project depends on, including the dependencies of dependencies, and when multiple versions of a package is detected, rules are evaluated to pick one. Unifying packages is necessary because running side-by-side versions of an assembly is problematic in .NET.
+At build time NuGet analyzes all the packages that a project depends on, including the dependencies of dependencies, and when multiple versions of a package is detected, rules are evaluated to pick one. Unifying packages is necessary because running side-by-side versions of an assembly in the same application is problematic in .NET.
 
-Most diamond dependencies are resolved without issue, however they can create issues in certain circumstances:
+Most diamond dependencies are easily resolved, however they can create issues in certain circumstances:
 
 1. **Conflicting NuGet package references** prevent a version from being resolved during package restore.
-2. **Breaking changes between the versions** causes bugs and exceptions at runtime.
+2. **Breaking changes between the versions** cause bugs and exceptions at runtime.
 3. **The package assembly is strong named**, the assembly version changed, and the app is running on the .NET Framework. Assembly binding redirects are required.
 
 It's not possible to know what packages will be used alongside your own. A good way to reduce the likelihood of a diamond dependency breaking your library is to minimize the number of packages you depend on.
@@ -58,7 +58,7 @@ Upper version limits will cause NuGet to fail if there's a conflict. For example
 
 **❌ AVOID** NuGet package references with a version upper limit.
 
-**More Information**
+**More information**
 
 * [How NuGet resolves package dependencies](https://docs.microsoft.com/en-us/nuget/consume-packages/dependency-resolution)
 
@@ -88,7 +88,7 @@ Shared source packages can only be used by `PackageReference`, and should be a p
 
 > Shared-source types are compiled into the referencing assembly and can't be exchanged across assembly boundaries, e.g. a shared-source `IRepository` type in one project is a separate type from the same shared-source `IRepository` in another project.
 
-**More Information**
+**More information**
 
 * [NuGet - Including content files](https://docs.microsoft.com/en-us/nuget/reference/nuspec#including-content-files)
 

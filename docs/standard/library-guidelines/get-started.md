@@ -2,7 +2,7 @@
 title: Get Started
 description: Getting started building .NET libraries.
 author: jamesnk
-ms.author: jamesnk
+ms.author: James.NewtonKing
 ms.date: 09/20/2018
 ---
 # Get Started
@@ -43,6 +43,6 @@ Your first steps to creating and publishing a .NET OSS project. Experienced OSS 
 
 > A project without a license defaults to [exclusive copyright](https://choosealicense.com/no-permission/), making it impossible for other people to use.
 
-**More Information**
+**More information**
 
 * [Choose an open source license](https://choosealicense.com/)

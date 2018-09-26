@@ -1,21 +1,21 @@
 ---
-title: NuGet
+title: NuGet and open-source libraries
 description: Best practice recommendations for packaging with NuGet for .NET libraries.
 author: jamesnk
-ms.author: jamesnk
+ms.author: James.NewtonKing
 ms.date: 09/20/2018
 ---
-# NuGet
+# NuGet and open-source libraries
 
 NuGet is a package manager for the .NET eco-system and is the primary way developers discover and acquire .NET open-source projects. NuGet.org, a free service provided by Microsoft for hosting NuGet packages, is the primary host for public NuGet packages but you can publish to custom NuGet services like MyGet and Azure DevOps.
 
 ![NuGet](./media/nuget-logo.png "NuGet")
 
-## Creating a NuGet Package
+## Create a NuGet package
 
 A NuGet package (`*.nupkg`) is a zip file containing .NET assemblies and associated metadata.
 
-There are two main ways to create a NuGet package. The newer and recommended way is to create a package from a SDK-style project (project file the content starts with `<Project Sdk="Microsoft.NET.Sdk">`). Assemblies and targets are automatically added to the package and remaining metadata is added to the MSBuild file, like package name and version number. Compiling with the `pack` command outputs a `*.nupkg` file instead of assemblies.
+There are two main ways to create a NuGet package. The newer and recommended way is to create a package from a SDK-style project (project file the content starts with `<Project Sdk="Microsoft.NET.Sdk">`). Assemblies and targets are automatically added to the package and remaining metadata is added to the MSBuild file, like package name and version number. Compiling with the [`dotnet pack`](../../core/tools/dotnet-pack.md) command outputs a `*.nupkg` file instead of assemblies.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -34,26 +34,26 @@ The older way of creating a NuGet package is with a `*.nuspec` file and the `nug
 
 **✔️ CONSIDER** setting up SourceLink to add source control metadata to your assemblies and NuGet package.
 
-**More Information**
+**More information**
 
 * [Creating NuGet packages](https://docs.microsoft.com/en-us/nuget/create-packages/creating-a-package)
 * [Migrate from packages.config to PackageReference](https://docs.microsoft.com/en-us/nuget/reference/migrate-packages-config-to-package-reference)
 
-## Package Dependences
+## Package dependences
 
 NuGet package dependencies are covered in detail [here](./dependencies.md).
 
-## Important NuGet Package Metadata
+## Important NuGet package metadata
 
-A NuGet package supports many metadata properties. The following table is core metadata that every open-source project should provide:
+A NuGet package supports many metadata properties. The following table contains the core metadata that every open-source project should provide:
 
 | MSBuild Property name            | Nuspec name              | Description  |
 | -------------------------------- | ------------------------ | ------------ |
-| PackageId                        | id                       | The package identifier. Prefix can be reserved if it meets the [criteria](https://docs.microsoft.com/en-us/nuget/reference/id-prefix-reservation) |
+| PackageId                        | id                       | The package identifier. A prefix from the identifier can be reserved if it meets the [criteria](https://docs.microsoft.com/en-us/nuget/reference/id-prefix-reservation). |
 | PackageVersion                   | version                  | NuGet package version. Read more about it [here](./versioning.md#nuget-package-version).             |
 | Title                            | title                    | A human-friendly title of the package. It defaults to the `PackageId`.             |
 | Description                      | description              | A long description of the package displayed in UI.             |
-| Authors                          | authors                  | A comma-separated list of packages authors, matching the profile names on nuget.org.             |
+| Authors                          | authors                  | A comma-separated list of package authors, matching the profile names on nuget.org.             |
 | PackageTags                      | tags                     | A space-delimited list of tags and keywords that describe the package. Tags are used when searching for packages.             |
 | PackageIconUrl                   | iconUrl                  | A URL for an image to use as the icon for the package. URL should be HTTPS and the image should be 64x64 and have a transparent background.             |
 | PackageProjectUrl                | projectUrl               | A URL for the project homepage or source repository.             |
@@ -69,11 +69,11 @@ A NuGet package supports many metadata properties. The following table is core m
 
 **✔️ DO** use a package icon image that is 64x64 and has a transparent background for best viewing results.
 
-**More Information**
+**More information**
 
 * [.nuspec reference](https://docs.microsoft.com/en-us/nuget/reference/nuspec)
 
-## Pre-release Packages
+## Pre-release packages
 
 NuGet packages with a version suffix are considered pre-release. By default the NuGet Package Manager UI shows stable releases unless a user opts-in to pre-release packages, making pre-release packages ideal for limited user testing.
 
@@ -90,13 +90,13 @@ NuGet packages with a version suffix are considered pre-release. By default the 
 
 **✔️ DO** publish a stable package when its ready so other stable packages can reference it.
 
-**More Information**
+**More information**
 
 * [Building pre-release packages](https://docs.microsoft.com/en-us/nuget/create-packages/prerelease-packages)
 
-## Symbol Packages
+## Symbol packages
 
-NuGet supports generating a separate symbol package containing debug PDB files along side the main package containing .NET assemblies. The idea of symbol packages is they're hosted on a symbol server and are only downloaded by a tool like Visual Studio on demand.
+NuGet supports generating a separate symbol package containing debug PDB files alongside the main package containing .NET assemblies. The idea of symbol packages is they're hosted on a symbol server and are only downloaded by a tool like Visual Studio on demand.
 
 Currently the main public host for symbols - [SymbolSource](http://www.symbolsource.org/) - doesn't support the portable PDBs created by SDK-style projects and symbol packages aren't useful.
 
@@ -104,6 +104,6 @@ Currently the main public host for symbols - [SymbolSource](http://www.symbolsou
 
 **❌ AVOID** creating a symbols package containing PDBs.
 
-**More Information**
+**More information**
 
 * [Creating symbol packages](https://docs.microsoft.com/en-us/nuget/create-packages/symbol-packages)

@@ -2,7 +2,7 @@
 title: SourceLink
 description: Best practice recommendations for using SourceLink to improve debugging for .NET libraries.
 author: jamesnk
-ms.author: jamesnk
+ms.author: James.NewtonKing
 ms.date: 09/20/2018
 ---
 # SourceLink

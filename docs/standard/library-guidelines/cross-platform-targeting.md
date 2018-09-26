@@ -1,11 +1,11 @@
 ---
-title: Cross-platform Targeting
+title: Cross-platform targeting
 description: Best practice recommendations for creating cross-platform .NET libraries.
 author: jamesnk
-ms.author: jamesnk
+ms.author: James.NewtonKing
 ms.date: 09/20/2018
 ---
-# Cross-platform Targeting
+# Cross-platform targeting
 
 Modern .NET supports multiple operating systems and devices. It's important for .NET open-source projects to support as many developers as possible, whether they're building an ASP.NET website hosted in Azure, or a .NET game in Unity.
 
@@ -39,7 +39,7 @@ Targeting .NET Standard, and successfully compiling your project, doesn't guaran
 
 > For example, a UWP control toolkit library depends on an app model that is only available on UWP. App model specific APIs will not be available in .NET Standard.
 
-**More Information**
+**More information**
 
 * [.NET Standard](https://docs.microsoft.com/en-us/dotnet/standard/net-standard)
 * [.NET API analyzer](https://docs.microsoft.com/en-us/dotnet/standard/analyzers/api-analyzer)
@@ -83,12 +83,12 @@ To shield your consumers from having to build for individual frameworks, you sho
 
 **✔️ CONSIDER** using [MSBuild.Sdk.Extras](https://github.com/onovotny/MSBuildSdkExtras) when multi-targeting for UWP and Xamarin as it greatly simplifies your project file.
 
-**More Information**
+**More information**
 
 * [.NET target frameworks](https://docs.microsoft.com/en-us/dotnet/standard/frameworks)
 * [Multi-Targeting and Porting a .NET Library to .NET Core 2.0](https://weblog.west-wind.com/posts/2017/Jun/22/MultiTargeting-and-Porting-a-NET-Library-to-NET-Core-20)
 
-## Older Targets
+## Older targets
 
 .NET supports targeting versions of the .NET Framework that are long out of support as well as platforms that are no longer commonly used. While there's value in making your library work on as many targets as possible, having to work around missing APIs can add significant overhead. We believe certain frameworks are no longer worth targeting, considering their reach and limitations.
 

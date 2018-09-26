@@ -2,22 +2,22 @@
 title: Versioning
 description: Best practice recommendations for versioning .NET libraries.
 author: jamesnk
-ms.author: jamesnk
+ms.author: James.NewtonKing
 ms.date: 09/20/2018
 ---
 # Versioning
 
 It's rare for a .NET library to have one release. You must think about how you'll go about releasing new versions.
 
-## Breaking Changes
+## Breaking changes
 
 Handling breaking changes between versions is covered in detail [here](./breaking-changes.md).
 
-## Version Numbers
+## Version numbers
 
 A .NET library has many ways to specify a version. These versions are the most important:
 
-### NuGet Package Version
+### NuGet package version
 
 The NuGet package version is displayed on NuGet.org, the Visual Studio NuGet package manager, and is written to `package.config`/`*.csproj` when the packaged is used. This version number is what users will commonly see and refer to when they talk about the version of a library they're using. The NuGet package version is used by NuGet and has no effect on runtime behavior.
 
@@ -42,7 +42,7 @@ Because the NuGet package version is the most visible version to developers, it'
 * [NuGet package versioning](https://docs.microsoft.com/en-us/nuget/reference/package-versioning)
 * [Semantic Versioning 2.0.0](https://semver.org/)
 
-### Assembly Version
+### Assembly version
 
 The assembly version is what the CLR uses at runtime to select which version of an assembly to load. Selecting an assembly using versioning only applies to assemblies with a strong name.
 
@@ -71,7 +71,7 @@ Strong naming combined with assembly version is a controversial subject. While s
 * [Assembly versioning](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/assembly-versioning)
 * [Redirecting Assembly Versions](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/redirect-assembly-versions)
 
-### Assembly File Version
+### Assembly file version
 
 The assembly file version is used to display a file version in Windows and has no effect on runtime behavior. Setting this version is optional. It's visible in the File Properties dialog in Windows Explorer:
 
@@ -81,13 +81,13 @@ The assembly file version is used to display a file version in Windows and has n
 
 ![Windows Explorer](./media/win-properties.png "Windows Explorer")
 
-**✔️ CONSIDER including a continuous integration builds number as AssemblyFileVersion revision.
+**✔️ CONSIDER** including a continuous integration builds number as AssemblyFileVersion revision.
 
-> e.g. you are building version 1.0.0 of your project, and the continuous integration build number is 99 so your AssemblyFileVersion is 1.0.0.99.
+> For example, you are building version 1.0.0 of your project, and the continuous integration build number is 99 so your AssemblyFileVersion is 1.0.0.99.
 
-### Assembly Informational Version
+### Assembly informational version
 
-The assembly informational version is used to record additional version information and has no effect on runtime behavior. Setting this version is optional. If you're using SourceLink, this version will be set on build with the NuGet package version plus a source control version. For example, the commit hash of the source code the assembly was built from. Read more about SourceLink [here](./sourcelink.md).
+The assembly informational version is used to record additional version information and has no effect on runtime behavior. Setting this version is optional. If you're using SourceLink, this version will be set on build with the NuGet package version plus a source control version. For example, `1.0.0-beta1+204ff0a` includes the commit hash of the source code the assembly was built from. Read more about SourceLink [here](./sourcelink.md).
 
 ```xml
 <AssemblyInformationalVersion>The quick brown fox jumped over the lazy dog.</AssemblyInformationalVersion>

@@ -1,11 +1,11 @@
 ﻿---
-title: Publishing a NuGet Package
+title: Publishing a NuGet package
 description: Best practice recommendations for publishing .NET libraries to NuGet.
 author: jamesnk
-ms.author: jamesnk
+ms.author: James.NewtonKing
 ms.date: 09/20/2018
 ---
-# Publishing a NuGet Package
+# Publishing a NuGet package
 
 NuGet packages are published and consumed from package repositories. While NuGet.org is the most widely known and used repository, there are many places to publish NuGet packages:
 
@@ -24,7 +24,7 @@ NuGet packages are published and consumed from package repositories. While NuGet
 
 **✔️ CONSIDER** testing packages in your development environment using a local feed or MyGet. Check the package works then publish it to NuGet.org.
 
-**More Information**
+**More information**
 
 * [Publish a package to NuGet.org](https://docs.microsoft.com/en-us/nuget/create-packages/publish-a-package)
 * [Deleting packages on NuGet.org](https://docs.microsoft.com/en-us/nuget/policies/deleting-packages)
@@ -32,7 +32,7 @@ NuGet packages are published and consumed from package repositories. While NuGet
 * [NuGet local feeds](https://docs.microsoft.com/en-us/nuget/hosting-packages/local-feeds)
 * [Configure NuGet package sources](https://docs.microsoft.com/en-us/nuget/reference/nuget-config-file#package-source-sections)
 
-## NuGet.org Security
+## NuGet.org security
 
 It's important that bad actors can't access your NuGet account and upload a malicious version of your library. NuGet.org offers two-factor authentication and email notifications when a package is published. Enable these features after logging into NuGet.org on the **Account settings** page.
 

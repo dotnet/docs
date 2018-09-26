@@ -7,7 +7,7 @@ ms.date: 09/20/2018
 ---
 # Open-source Library Guidance
 
-This set of guidelines provides recommendations for developers to create high quality .NET libraries. This documentation focuses on the *what* and the *why* when building a .NET library, not the *how*. After each topic there are links to more information, usually to detailed documentation and references.
+This set of guidelines provides recommendations for developers to create high-quality .NET libraries. This documentation focuses on the *what* and the *why* when building a .NET library, not the *how*. After each topic there are links to more information, usually to detailed documentation and references.
 
 ## Recommendations
 
@@ -21,7 +21,7 @@ On the other hand **Consider** recommendations should generally be followed, but
 
 **Do not** indicates something you should almost never do:
 
-**❌ DO NOT** publish strong-named and non-strong-named versions of your project, e.g. `Contoso.Api` and `Contoso.Api.StrongNamed`.
+**❌ DO NOT** publish strong-named and non-strong-named versions of your project. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
 
 And finally less strong, **avoid** recommendations are something this is not a good idea, but breaking the rule sometimes makes sense:
 

@@ -10,47 +10,47 @@ ms.assetid: 09c575df-e0a3-4f3b-9e01-a7ac59d65287
 `WorkflowIdentity` provides a way for workflow application developers to associate a name and a version with a workflow definition, and for this information to be associated with a persisted workflow instance. This identity information can be used by workflow application developers to enable scenarios such as side-by-side execution of multiple versions of a workflow definition, and provides the cornerstone for other functionality such as dynamic update. This step in the tutorial demonstrates how to use `WorkflowIdentity` to host multiple versions of a workflow at the same time.
 
 > [!NOTE]
->  To download a completed version or view a video walkthrough of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkID=248976).
-
-## In this topic
- In this step of the tutorial, the `WriteLine` activities in the workflow are modified to provide additional information, and a new `WriteLine` activity is added. A copy of the original workflow assembly is stored, and the host application is updated so that it can run both the original and the updated workflows at the same time.
-
--   [To make a copy of the NumberGuessWorkflowActivities project](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_BackupCopy)
-
--   [To update the workflows](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateWorkflows)
-
-    -   [To update the StateMachine workflow](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateStateMachine)
-
-    -   [To update the Flowchart workflow](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateFlowchart)
-
-    -   [To update the Sequential workflow](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateSequential)
-
--   [To update WorkflowVersionMap to include the previous workflow versions](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateWorkflowVersionMap)
-
--   [To build and run the application](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_BuildAndRun)
-
+>  To download a completed version or view a video walkthrough of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
+  
+## In this topic  
+ In this step of the tutorial, the `WriteLine` activities in the workflow are modified to provide additional information, and a new `WriteLine` activity is added. A copy of the original workflow assembly is stored, and the host application is updated so that it can run both the original and the updated workflows at the same time.  
+  
+-   [To make a copy of the NumberGuessWorkflowActivities project](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_BackupCopy)  
+  
+-   [To update the workflows](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateWorkflows)  
+  
+    -   [To update the StateMachine workflow](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateStateMachine)  
+  
+    -   [To update the Flowchart workflow](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateFlowchart)  
+  
+    -   [To update the Sequential workflow](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateSequential)  
+  
+-   [To update WorkflowVersionMap to include the previous workflow versions](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateWorkflowVersionMap)  
+  
+-   [To build and run the application](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_BuildAndRun)  
+  
 > [!NOTE]
 >  Before following the steps in this topic, run the application, start several workflows of each type, and making one or two guesses for each one. These persisted workflows are used in this step and the following step, [How to: Update the Definition of a Running Workflow Instance](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md).
 
 > [!NOTE]
->  Each step in the Getting Started tutorial depends on the previous steps. If you did not complete the previous steps you can download a completed version of the tutorial from [Windows Workflow Foundation (WF45) - Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkID=248976).
-
-###  <a name="BKMK_BackupCopy"></a> To make a copy of the NumberGuessWorkflowActivities project
-
-1.  Open the **WF45GettingStartedTutorial** solution in Visual Studio 2012 if it is not open.
-
-2.  Press CTRL+SHIFT+B to build the solution.
-
-3.  Close the **WF45GettingStartedTutorial** solution.
-
-4.  Open Windows Explorer and navigate to the folder where the tutorial solution file and the project folders are located.
-
-5.  Create a new folder named **PreviousVersions** in the same folder as **NumberGuessWorkflowHost** and **NumberGuessWorkflowActivities**. This folder is used to contain the assemblies that contain the different versions of the workflows used in the subsequent tutorial steps.
-
-6.  Navigate to the **NumberGuessWorkflowActivities\bin\debug** folder (or **bin\release** depending on your project settings). Copy **NumberGuessWorkflowActivities.dll** and paste it into the **PreviousVersions** folder.
-
-7.  Rename **NumberGuessWorkflowActivities.dll** in the **PreviousVersions** folder to **NumberGuessWorkflowActivities_v1.dll**.
-
+>  Each step in the Getting Started tutorial depends on the previous steps. If you did not complete the previous steps you can download a completed version of the tutorial from [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
+  
+###  <a name="BKMK_BackupCopy"></a> To make a copy of the NumberGuessWorkflowActivities project  
+  
+1.  Open the **WF45GettingStartedTutorial** solution in [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)] if it is not open.  
+  
+2.  Press CTRL+SHIFT+B to build the solution.  
+  
+3.  Close the **WF45GettingStartedTutorial** solution.  
+  
+4.  Open Windows Explorer and navigate to the folder where the tutorial solution file and the project folders are located.  
+  
+5.  Create a new folder named **PreviousVersions** in the same folder as **NumberGuessWorkflowHost** and **NumberGuessWorkflowActivities**. This folder is used to contain the assemblies that contain the different versions of the workflows used in the subsequent tutorial steps.  
+  
+6.  Navigate to the **NumberGuessWorkflowActivities\bin\debug** folder (or **bin\release** depending on your project settings). Copy **NumberGuessWorkflowActivities.dll** and paste it into the **PreviousVersions** folder.  
+  
+7.  Rename **NumberGuessWorkflowActivities.dll** in the **PreviousVersions** folder to **NumberGuessWorkflowActivities_v1.dll**.  
+  
     > [!NOTE]
     >  The steps in this topic demonstrate one way to manage the assemblies used to contain multiple versions of the workflows. Other methods such as strong naming the assemblies and registering them in the global assembly cache could also be used.
 

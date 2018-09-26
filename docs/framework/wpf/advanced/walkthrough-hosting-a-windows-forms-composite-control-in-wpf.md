@@ -10,82 +10,82 @@ helpviewer_keywords:
 ms.assetid: 96fcd78d-1c77-4206-8928-3a0579476ef4
 ---
 # Walkthrough: Hosting a Windows Forms Composite Control in WPF
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides a rich environment for creating applications. However, when you have a substantial investment in [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] code, it can be more effective to reuse at least some of that code in your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application rather than to rewrite it from scratch. The most common scenario is when you have existing Windows Forms controls. In some cases, you might not even have access to the source code for these controls. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides a straightforward procedure for hosting such controls in a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application. For example, you can use [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] for most of your programming while hosting your specialized <xref:System.Windows.Forms.DataGridView> controls.
-
- This walkthrough steps you through an application that hosts a Windows Forms composite control to perform data entry in a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application. The composite control is packaged in a DLL. This general procedure can be extended to more complex applications and controls. This walkthrough is designed to be nearly identical in appearance and functionality to [Walkthrough: Hosting a WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md). The primary difference is that the hosting scenario is reversed.
-
- The walkthrough is divided into two sections. The first section briefly describes the implementation of the Windows Forms composite control. The second section discusses in detail how to host the composite control in a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application, receive events from the control, and access some of the control's properties.
-
- Tasks illustrated in this walkthrough include:
-
--   Implementing the Windows Forms composite control.
-
--   Implementing the WPF host application.
-
- For a complete code listing of the tasks illustrated in this walkthrough, see [Hosting a Windows Forms Composite Control in WPF Sample](http://go.microsoft.com/fwlink/?LinkID=159999).
-
-## Prerequisites
- You need the following components to complete this walkthrough:
-
--   Visual Studio 2010.
-
-## Implementing the Windows Forms Composite Control
- The Windows Forms composite control used in this example is a simple data-entry form. This form takes the user's name and address and then uses a custom event to return that information to the host. The following illustration shows the rendered control.
-
- ![Simple Windows Forms control](../../../../docs/framework/wpf/advanced/media/wfcontrol.gif "WFControl")
-Windows Forms composite control
-
-### Creating the Project
- To start the project:
-
-1.  Launch [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], and open the **New Project** dialog box.
-
-2.  In the Window category, select the **Windows Forms Control Library** template.
-
-3.  Name the new project `MyControls`.
-
-4.  For the location, specify a conveniently named top-level folder, such as `WpfHostingWindowsFormsControl`. Later, you will put the host application in this folder.
-
-5.  Click **OK** to create the project. The default project contains a single control named `UserControl1`.
-
-6.  In Solution Explorer, rename `UserControl1` to `MyControl1`.
-
- Your project should have references to the following system DLLs. If any of these DLLs are not included by default, add them to the project.
-
--   System
-
--   System.Data
-
--   System.Drawing
-
--   System.Windows.Forms
-
--   System.Xml
-
-### Adding Controls to the Form
- To add controls to the form:
-
--   Open `MyControl1` in the designer.
-
- Add five <xref:System.Windows.Forms.Label> controls and their corresponding <xref:System.Windows.Forms.TextBox> controls, sized and arranged as they are in the preceding illustration, on the form. In the example, the <xref:System.Windows.Forms.TextBox> controls are named:
-
--   `txtName`
-
--   `txtAddress`
-
--   `txtCity`
-
--   `txtState`
-
--   `txtZip`
-
- Add two <xref:System.Windows.Forms.Button> controls labeled **OK** and **Cancel**. In the example, the button names are `btnOK` and `btnCancel`, respectively.
-
-### Implementing the Supporting Code
- Open the form in code view. The control returns the collected data to its host by raising the custom `OnButtonClick` event. The data is contained in the event argument object. The following code shows the event and delegate declaration.
-
- Add the following code to the `MyControl1` class.
-
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides a rich environment for creating applications. However, when you have a substantial investment in [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] code, it can be more effective to reuse at least some of that code in your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application rather than to rewrite it from scratch. The most common scenario is when you have existing Windows Forms controls. In some cases, you might not even have access to the source code for these controls. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides a straightforward procedure for hosting such controls in a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application. For example, you can use [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] for most of your programming while hosting your specialized <xref:System.Windows.Forms.DataGridView> controls.  
+  
+ This walkthrough steps you through an application that hosts a Windows Forms composite control to perform data entry in a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application. The composite control is packaged in a DLL. This general procedure can be extended to more complex applications and controls. This walkthrough is designed to be nearly identical in appearance and functionality to [Walkthrough: Hosting a WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md). The primary difference is that the hosting scenario is reversed.  
+  
+ The walkthrough is divided into two sections. The first section briefly describes the implementation of the Windows Forms composite control. The second section discusses in detail how to host the composite control in a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application, receive events from the control, and access some of the control's properties.  
+  
+ Tasks illustrated in this walkthrough include:  
+  
+-   Implementing the Windows Forms composite control.  
+  
+-   Implementing the WPF host application.  
+  
+ For a complete code listing of the tasks illustrated in this walkthrough, see [Hosting a Windows Forms Composite Control in WPF Sample](https://go.microsoft.com/fwlink/?LinkID=159999).  
+  
+## Prerequisites  
+ You need the following components to complete this walkthrough:  
+  
+-   [!INCLUDE[vs_dev10_long](../../../../includes/vs-dev10-long-md.md)].  
+  
+## Implementing the Windows Forms Composite Control  
+ The Windows Forms composite control used in this example is a simple data-entry form. This form takes the user's name and address and then uses a custom event to return that information to the host. The following illustration shows the rendered control.  
+  
+ ![Simple Windows Forms control](../../../../docs/framework/wpf/advanced/media/wfcontrol.gif "WFControl")  
+Windows Forms composite control  
+  
+### Creating the Project  
+ To start the project:  
+  
+1.  Launch [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], and open the **New Project** dialog box.  
+  
+2.  In the Window category, select the **Windows Forms Control Library** template.  
+  
+3.  Name the new project `MyControls`.  
+  
+4.  For the location, specify a conveniently named top-level folder, such as `WpfHostingWindowsFormsControl`. Later, you will put the host application in this folder.  
+  
+5.  Click **OK** to create the project. The default project contains a single control named `UserControl1`.  
+  
+6.  In Solution Explorer, rename `UserControl1` to `MyControl1`.  
+  
+ Your project should have references to the following system DLLs. If any of these DLLs are not included by default, add them to the project.  
+  
+-   System  
+  
+-   System.Data  
+  
+-   System.Drawing  
+  
+-   System.Windows.Forms  
+  
+-   System.Xml  
+  
+### Adding Controls to the Form  
+ To add controls to the form:  
+  
+-   Open `MyControl1` in the designer.  
+  
+ Add five <xref:System.Windows.Forms.Label> controls and their corresponding <xref:System.Windows.Forms.TextBox> controls, sized and arranged as they are in the preceding illustration, on the form. In the example, the <xref:System.Windows.Forms.TextBox> controls are named:  
+  
+-   `txtName`  
+  
+-   `txtAddress`  
+  
+-   `txtCity`  
+  
+-   `txtState`  
+  
+-   `txtZip`  
+  
+ Add two <xref:System.Windows.Forms.Button> controls labeled **OK** and **Cancel**. In the example, the button names are `btnOK` and `btnCancel`, respectively.  
+  
+### Implementing the Supporting Code  
+ Open the form in code view. The control returns the collected data to its host by raising the custom `OnButtonClick` event. The data is contained in the event argument object. The following code shows the event and delegate declaration.  
+  
+ Add the following code to the `MyControl1` class.  
+  
  [!code-csharp[WpfHostingWindowsFormsControl#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/CSharp/MyControls/MyControl1.cs#2)]
  [!code-vb[WpfHostingWindowsFormsControl#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/VisualBasic/MyControls/MyControl1.vb#2)]
 
@@ -227,14 +227,13 @@ using MyControls;
  Add the following code to the `MainWindow` class.
 
  [!code-csharp[WpfHostingWindowsFormsControl#13](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/CSharp/WpfHost/Page1.xaml.cs#13)]
- [!code-vb[WpfHostingWindowsFormsControl#13](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/VisualBasic/WpfHost/Page1.xaml.vb#13)]
-
- Build and run the application. Add some text in the Windows Forms composite control and then click **OK**. The text appears in the labels. Click the different radio buttons to see the effect on the control.
-
-## See Also
-
-- <xref:System.Windows.Forms.Integration.ElementHost>
-- <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)
-- [Walkthrough: Hosting a Windows Forms Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf.md)
-- [Walkthrough: Hosting a WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)
+ [!code-vb[WpfHostingWindowsFormsControl#13](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/VisualBasic/WpfHost/Page1.xaml.vb#13)]  
+  
+ Build and run the application. Add some text in the Windows Forms composite control and then click **OK**. The text appears in the labels. Click the different radio buttons to see the effect on the control.  
+  
+## See Also  
+ <xref:System.Windows.Forms.Integration.ElementHost>  
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
+ [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)  
+ [Walkthrough: Hosting a Windows Forms Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf.md)  
+ [Walkthrough: Hosting a WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)

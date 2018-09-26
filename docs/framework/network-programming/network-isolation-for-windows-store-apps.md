@@ -4,7 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: b064497c-d956-46b8-838d-7a0223c7e200
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Network Isolation for Windows Store Apps
 Classes in the <xref:System.Net>,  <xref:System.Net.Http>, and <xref:System.Net.Http.Headers> namespaces can be used to develop Windows Store  apps  or desktop apps. When used in a Windows Store app, classes in these namespaces are affected by network isolation, part of the application security model used by the [!INCLUDE[win8](../../../includes/win8-md.md)]. The appropriate network capabilities must be enabled in the app manifest for a Windows Store app for the system to allow network access.  
@@ -20,12 +19,12 @@ Classes in the <xref:System.Net>,  <xref:System.Net.Http>, and <xref:System.Net.
   
 4.  Deploy and run your app to test it using the network isolation tools provided for troubleshooting.  
   
- For more detailed information on how to configure network capabilities and isolation tools used for troubleshooting network isolation, see [How to configure network isolation capabilities](http://go.microsoft.com/fwlink/?LinkID=228265) in the [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] developer documentation.  
+ For more detailed information on how to configure network capabilities and isolation tools used for troubleshooting network isolation, see [How to configure network isolation capabilities](https://go.microsoft.com/fwlink/?LinkID=228265) in the [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] developer documentation.  
   
 ## See Also  
- [Connecting to a web service](http://go.microsoft.com/fwlink/?LinkID=245696)  
- [Guidelines and checklist for network isolation](http://go.microsoft.com/fwlink/?LinkID=228265)  
- [Quickstart: Connecting using HttpClient](http://go.microsoft.com/fwlink/?LinkId=245697)  
- [How to use HttpClient handlers](http://go.microsoft.com/fwlink/?LinkId=245699)  
- [How to secure HttpClient connections](http://go.microsoft.com/fwlink/?LinkId=245698)  
- [HttpClient Sample](http://go.microsoft.com/fwlink/?LinkId=242550)
+ [Connecting to a web service](https://go.microsoft.com/fwlink/?LinkID=245696)  
+ [Guidelines and checklist for network isolation](https://go.microsoft.com/fwlink/?LinkID=228265)  
+ [Quickstart: Connecting using HttpClient](https://go.microsoft.com/fwlink/?LinkId=245697)  
+ [How to use HttpClient handlers](https://go.microsoft.com/fwlink/?LinkId=245699)  
+ [How to secure HttpClient connections](https://go.microsoft.com/fwlink/?LinkId=245698)  
+ [HttpClient Sample](https://go.microsoft.com/fwlink/?LinkId=242550)

@@ -7,7 +7,6 @@ dev_langs:
 ms.assetid: f8848c7e-f5c5-4d42-b86d-9951ff8f4146
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # How to: Access HTTP-Specific Properties
 This sample shows how to turn off the HTTP **Keep-alive** behavior and get the protocol version number from the Web server.  

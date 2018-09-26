@@ -4,6 +4,7 @@ description: Publishing creates the set of files that are needed to run your app
 author: BillWagner
 ms.author: wiwagn
 ms.date: 10/05/2017
+ms.custom: vs-dotnet
 ---
 # Publish your Hello World application with Visual Studio 2017
 

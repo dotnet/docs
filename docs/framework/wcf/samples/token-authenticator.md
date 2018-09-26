@@ -327,38 +327,38 @@ static void DisplayIdentityInformation()
 1.  Run Setup.bat from the sample installation folder inside a Visual Studio 2012 command prompt opened with administrator privileges. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.
-
-2.  Launch service.exe from service\bin.
-
-3.  Launch client.exe from \client\bin. Client activity is displayed on the client console application.
-
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
-
-#### To run the sample across computers
-
-1.  Create a directory on the service computer for the service binaries.
-
-2.  Copy the service program files to the service directory on the service computer. Also copy the Setup.bat and Cleanup.bat files to the service computer.
-
-3.  You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The service App.config file must be updated to reflect this new certificate name. You can create one by using the Setup.bat if you set the `%SERVER_NAME%` variable to fully-qualified host name of the computer on which the service will run. Note that the setup.bat file must be run from a Visual Studio command prompt opened with administrator privileges.
-
-4.  Copy the server certificate into the CurrentUser-TrustedPeople store of the client. You do not need to do this except when the server certificate is issued by a client trusted issuer.
-
-5.  In the App.config file on the service computer, change the value of the base address to specify a fully-qualified computer name instead of localhost.
-
-6.  On the service computer, run service.exe from a command prompt.
-
-7.  Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.
-
-8.  In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service.
-
-9. On the client computer, launch Client.exe from a command prompt.
-
-10. If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
-
-#### To clean up after the sample
-
-1.  Run Cleanup.bat in the samples folder once you have finished running the sample.
-
+    >  The Setup.bat batch file is designed to be run from a [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Command Prompt. The PATH environment variable set within the [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Command Prompt points to the directory that contains executables required by the Setup.bat script.  
+  
+2.  Launch service.exe from service\bin.  
+  
+3.  Launch client.exe from \client\bin. Client activity is displayed on the client console application.  
+  
+4.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+  
+#### To run the sample across computers  
+  
+1.  Create a directory on the service computer for the service binaries.  
+  
+2.  Copy the service program files to the service directory on the service computer. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
+  
+3.  You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The service App.config file must be updated to reflect this new certificate name. You can create one by using the Setup.bat if you set the `%SERVER_NAME%` variable to fully-qualified host name of the computer on which the service will run. Note that the setup.bat file must be run from a Visual Studio command prompt opened with administrator privileges.  
+  
+4.  Copy the server certificate into the CurrentUser-TrustedPeople store of the client. You do not need to do this except when the server certificate is issued by a client trusted issuer.  
+  
+5.  In the App.config file on the service computer, change the value of the base address to specify a fully-qualified computer name instead of localhost.  
+  
+6.  On the service computer, run service.exe from a command prompt.  
+  
+7.  Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.  
+  
+8.  In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service.  
+  
+9. On the client computer, launch Client.exe from a command prompt.  
+  
+10. If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+  
+#### To clean up after the sample  
+  
+1.  Run Cleanup.bat in the samples folder once you have finished running the sample.  
+  
 ## See Also

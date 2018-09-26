@@ -215,11 +215,12 @@ xsd /dataset /language:CS XSDSchemaFile.xsd
 xsd myAssembly.dll    
 ```  
   
-## See Also  
- <xref:System.Data.DataSet>  
- <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>  
- [Tools](../../../docs/framework/tools/index.md)      
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)  
- [LINQ to DataSet Overview](../../../docs/framework/data/adonet/linq-to-dataset-overview.md)  
- [Querying Typed DataSets](../../../docs/framework/data/adonet/querying-typed-datasets.md)  
- [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)
+## See also
+
+- <xref:System.Data.DataSet>  
+- <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>  
+- [Tools](../../../docs/framework/tools/index.md)      
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)  
+- [LINQ to DataSet Overview](../../../docs/framework/data/adonet/linq-to-dataset-overview.md)  
+- [Querying Typed DataSets](../../../docs/framework/data/adonet/querying-typed-datasets.md)  
+- [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)

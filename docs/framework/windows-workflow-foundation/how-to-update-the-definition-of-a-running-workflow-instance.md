@@ -10,36 +10,36 @@ ms.assetid: 26dfac36-ae23-4909-9867-62495b55fb5e
 Dynamic update provides a mechanism for workflow application developers to update the workflow definition of a persisted workflow instance. The required change can be to implement a bug fix, new requirements, or to accommodate unexpected changes. This step in the tutorial demonstrates how to use dynamic update to modify  persisted instances of the `v1` number guessing workflow to match the new functionality introduced in [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md).
 
 > [!NOTE]
->  To download a completed version or view a video walkthrough of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkID=248976).
-
-## In this topic
-
--   [To create the CreateUpdateMaps project](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_CreateProject)
-
--   [To update StateMachineNumberGuessWorkflow](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_StateMachine)
-
--   [To update FlowchartNumberGuessWorkflow](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_Flowchart)
-
--   [To update SequentialNumberGuessWorkflow](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_Sequential)
-
--   [To build and run the CreateUpdateMaps application](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_CreateUpdateMaps)
-
--   [To build the updated workflow assembly](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_BuildAssembly)
-
--   [To update WorkflowVersionMap with the new versions](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_UpdateWorkflowVersionMap)
-
--   [To apply the dynamic updates](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_ApplyUpdate)
-
--   [To run the application with the updated workflows](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_BuildAndRun)
-
--   [To enable starting previous versions of the workflows](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_StartPreviousVersions)
-
-###  <a name="BKMK_CreateProject"></a> To create the CreateUpdateMaps project
-
-1.  Right-click **WF45GettingStartedTutorial** in **Solution Explorer** and choose **Add**, **New Project**.
-
-2.  In the **Installed** node, select **Visual C#**, **Windows** (or **Visual Basic**, **Windows**).
-
+>  To download a completed version or view a video walkthrough of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
+  
+## In this topic  
+  
+-   [To create the CreateUpdateMaps project](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_CreateProject)  
+  
+-   [To update StateMachineNumberGuessWorkflow](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_StateMachine)  
+  
+-   [To update FlowchartNumberGuessWorkflow](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_Flowchart)  
+  
+-   [To update SequentialNumberGuessWorkflow](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_Sequential)  
+  
+-   [To build and run the CreateUpdateMaps application](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_CreateUpdateMaps)  
+  
+-   [To build the updated workflow assembly](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_BuildAssembly)  
+  
+-   [To update WorkflowVersionMap with the new versions](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_UpdateWorkflowVersionMap)  
+  
+-   [To apply the dynamic updates](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_ApplyUpdate)  
+  
+-   [To run the application with the updated workflows](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_BuildAndRun)  
+  
+-   [To enable starting previous versions of the workflows](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_StartPreviousVersions)  
+  
+###  <a name="BKMK_CreateProject"></a> To create the CreateUpdateMaps project  
+  
+1.  Right-click **WF45GettingStartedTutorial** in **Solution Explorer** and choose **Add**, **New Project**.  
+  
+2.  In the **Installed** node, select **Visual C#**, **Windows** (or **Visual Basic**, **Windows**).  
+  
     > [!NOTE]
     >  Depending on which programming language is configured as the primary language in Visual Studio, the **Visual C#** or **Visual Basic** node may be under the **Other Languages** node in the **Installed** node.
 

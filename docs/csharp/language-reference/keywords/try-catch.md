@@ -37,7 +37,7 @@ catch (InvalidCastException e)
   
  It is possible to use more than one specific `catch` clause in the same try-catch statement. In this case, the order of the `catch` clauses is important because the `catch` clauses are examined in order. Catch the more specific exceptions before the less specific ones. The compiler produces an error if you order your catch blocks so that a later block can never be reached.  
   
- Using `catch` arguments is one way to filter for the exceptions you want to handle.  You can also use a exception filter that further examines the exception to decide whether to handle it.  If the exception filter returns false, then the search for a handler continues.  
+ Using `catch` arguments is one way to filter for the exceptions you want to handle.  You can also use an exception filter that further examines the exception to decide whether to handle it.  If the exception filter returns false, then the search for a handler continues.  
   
 ```csharp  
 catch (ArgumentException e) when (e.ParamName == "…")  
@@ -165,12 +165,13 @@ static void Main()
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [try, throw, and catch Statements (C++)](/cpp/cpp/try-throw-and-catch-statements-cpp)  
- [Exception Handling Statements](../../../csharp/language-reference/keywords/exception-handling-statements.md)  
- [throw](../../../csharp/language-reference/keywords/throw.md)  
- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)  
- [How to: Explicitly Throw Exceptions](../../../standard/exceptions/how-to-explicitly-throw-exceptions.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [try, throw, and catch Statements (C++)](/cpp/cpp/try-throw-and-catch-statements-cpp)  
+- [Exception Handling Statements](../../../csharp/language-reference/keywords/exception-handling-statements.md)  
+- [throw](../../../csharp/language-reference/keywords/throw.md)  
+- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)  
+- [How to: Explicitly Throw Exceptions](../../../standard/exceptions/how-to-explicitly-throw-exceptions.md)

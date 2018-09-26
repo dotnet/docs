@@ -23,6 +23,7 @@ type [accessibility-modifier] type-name =
 ```
 
 ## Remarks
+
 Structures are *value types*, which means that they are stored directly on the stack or, when they are used as fields or array elements, inline in the parent type. Unlike classes and records, structures have pass-by-value semantics. This means that they are useful primarily for small aggregates of data that are accessed and copied frequently.
 
 In the previous syntax, two forms are shown. The first is not the lightweight syntax, but it is nevertheless frequently used because, when you use the `struct` and `end` keywords, you can omit the `StructAttribute` attribute, which appears in the second form. You can abbreviate `StructAttribute` to just `Struct`.
@@ -41,15 +42,55 @@ The following code examples illustrate structure definitions.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2501.fs)]
 
+## ByRefLike structs
+
+You can define your own structs that can adhere to `byref`-like semantics: see [Byrefs](byrefs.md) for more information. This is done with the <xref:System.Runtime.CompilerServices.IsByRefLikeAttribute> attribute:
+
+```fsharp
+open System
+open System.Runtime.CompilerServices
+
+[<IsByRefLike; Struct>]
+type S(count1: Span<int>, count2: Span<int>) =
+    member x.Count1 = count1
+    member x.Count2 = count2
+```
+
+`IsByRefLike` does not imply `Struct`. Both must be present on the type.
+
+A "`byref`-like" struct in F# is a stack-bound value type. It is never allocated on the managed heap. A `byref`-like struct is useful for high-performance programming, as it is enforced with set of strong checks about lifetime and non-capture. The rules are:
+
+* They can be used as function parameters, method parameters, local variables, method returns.
+* They cannot be static or instance members of a class or normal struct.
+* They cannot be captured by any closure construct (`async` methods or lambda expressions).
+* They cannot be used as a generic parameter.
+
+Although these rules very strongly restrict usage, they do so to fulfill the promise of high-performance computing in a safe manner.
+
+## ReadOnly structs
+
+You can annotate structs with the <xref:System.Runtime.CompilerServices.IsReadOnlyAttribute> attribute. For example:
+
+```fsharp
+[<IsReadOnly; Struct>]
+type S(count1: int, count2: int) =
+    member x.Count1 = count1
+    member x.Count2 = count2
+```
+
+`IsReadOnly` does not imply `Struct`. You must add both to have an `IsReadOnly` struct.
+
+Use of this attribute emits metadata letting F# and C# know to treat it as `inref<'T>` and `in ref`, respectively.
+
+Defining a mutable value inside of a readonly struct produces an error.
+
 ## Struct Records and Discriminated Unions
 
-Starting with F# 4.1, you can represent [Records](records.md) and [Discriminated Unions](discriminated-unions.md) as structs with the `[<Struct>]` attribute.  See each article to learn more.
-    
-## See Also
-[F# Language Reference](index.md)
+You can represent [Records](records.md) and [Discriminated Unions](discriminated-unions.md) as structs with the `[<Struct>]` attribute.  See each article to learn more.
 
-[Classes](classes.md)
+## See also
 
-[Records](records.md)
-
-[Members](members/index.md)
+- [F# Language Reference](index.md)
+- [Classes](classes.md)
+- [Records](records.md)
+- [Members](members/index.md)

@@ -3,7 +3,6 @@ title: "HTTP Transport Security"
 ms.date: "03/30/2017"
 ms.assetid: d3439262-c58e-4d30-9f2b-a160170582bb
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # HTTP Transport Security
 When using HTTP as the transport, security is provided by a Secure Sockets Layer (SSL) implementation. SSL is widely used on the Internet to authenticate a service to a client, and then to provide confidentiality (encryption) to the channel. This topic explains how SSL works and how it is implemented in Windows Communication Foundation (WCF).  
@@ -34,17 +33,17 @@ When using HTTP as the transport, security is provided by a Secure Sockets Layer
 ### Using IIS for Transport Security  
   
 #### IIS 7.0  
- To set up [!INCLUDE[iisver](../../../../includes/iisver-md.md)] as a secure host (using SSL), see [IIS 7.0 Beta: Configuring Secure Sockets Layer in IIS 7.0](http://go.microsoft.com/fwlink/?LinkId=88600).  
+ To set up [!INCLUDE[iisver](../../../../includes/iisver-md.md)] as a secure host (using SSL), see [IIS 7.0 Beta: Configuring Secure Sockets Layer in IIS 7.0](https://go.microsoft.com/fwlink/?LinkId=88600).  
   
- To configure certificates for use with [!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configuring Server Certificates in IIS 7.0](http://go.microsoft.com/fwlink/?LinkID=88595).  
+ To configure certificates for use with [!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configuring Server Certificates in IIS 7.0](https://go.microsoft.com/fwlink/?LinkID=88595).  
   
 #### IIS 6.0  
- To set up [!INCLUDE[iis601](../../../../includes/iis601-md.md)] as a secure host (using SSL), see [Configuring Secure Sockets Layer](http://go.microsoft.com/fwlink/?LinkId=88601).  
+ To set up [!INCLUDE[iis601](../../../../includes/iis601-md.md)] as a secure host (using SSL), see [Configuring Secure Sockets Layer](https://go.microsoft.com/fwlink/?LinkId=88601).  
   
- To configure certificates for use with [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Certificates_IIS_SP1_Ops](http://go.microsoft.com/fwlink/?LinkId=88602).  
+ To configure certificates for use with [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Certificates_IIS_SP1_Ops](https://go.microsoft.com/fwlink/?LinkId=88602).  
   
 ### Using HttpCfg for SSL  
- If you are creating a self-hosted WCF application, download the HttpCfg.exe tool, available at the [Windows XP Service Pack 2 Support Tools site](http://go.microsoft.com/fwlink/?LinkId=29002).  
+ If you are creating a self-hosted WCF application, download the HttpCfg.exe tool, available at the [Windows XP Service Pack 2 Support Tools site](https://go.microsoft.com/fwlink/?LinkId=29002).  
   
  For more information about using the HttpCfg.exe tool to set up a port with an X.509 certificate, see [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md).  
   

@@ -39,6 +39,7 @@ ms.assetid: 2a183664-bfbf-4ff0-96f6-c836284ea916
 > [!NOTE]
 >  The sample builds console applications. You must launch and run them in a Command Prompt window to view their output.  
   
-## See Also  
- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>  
- <xref:System.IO.FileStream>
+## See also
+
+- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>  
+- <xref:System.IO.FileStream>

@@ -13,7 +13,6 @@ helpviewer_keywords:
 ms.assetid: 735d3fce-f80c-437f-b02c-5c47f5739674
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Making Asynchronous Requests
 The <xref:System.Net> classes use the .NET Framework's standard asynchronous programming model for asynchronous access to Internet resources. The <xref:System.Net.WebRequest.BeginGetResponse%2A> and <xref:System.Net.WebRequest.EndGetResponse%2A> methods of the <xref:System.Net.WebRequest> class start and complete asynchronous requests for an Internet resource.  
@@ -25,7 +24,7 @@ The <xref:System.Net> classes use the .NET Framework's standard asynchronous pro
   
  The program defines two classes for its own use, the **RequestState** class, which passes data across asynchronous calls, and the **ClientGetAsync** class, which implements the asynchronous request to an Internet resource.  
   
- The **RequestState** class preserves the state of the request across calls to the asynchronous methods that service the request. It contains **WebRequest** and <xref:System.IO.Stream> instances that contain the current request to the resource and the stream received in response, a buffer that contains the data currently received from the Internet resource, and a <xref:System.Text.StringBuilder> that contains the complete response. A **RequestState**is passed as the *state* parameter when the <xref:System.AsyncCallback> method is registered with **WebRequest.BeginGetResponse**.  
+ The **RequestState** class preserves the state of the request across calls to the asynchronous methods that service the request. It contains **WebRequest** and <xref:System.IO.Stream> instances that contain the current request to the resource and the stream received in response, a buffer that contains the data currently received from the Internet resource, and a <xref:System.Text.StringBuilder> that contains the complete response. A **RequestState** is passed as the *state* parameter when the <xref:System.AsyncCallback> method is registered with **WebRequest.BeginGetResponse**.  
   
  The **ClientGetAsync** class implements an asynchronous request to an Internet resource and writes the resulting response to the console. It contains the methods and properties described in the following list.  
   

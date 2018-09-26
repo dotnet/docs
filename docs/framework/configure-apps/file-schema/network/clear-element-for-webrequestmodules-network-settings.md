@@ -12,7 +12,6 @@ helpviewer_keywords:
 ms.assetid: 48f38bcb-f30c-4b74-a8f0-1a3caf1aa96f
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;clear&gt; Element for webRequestModules (Network Settings)
 Removes all registered Web request modules from the application.  

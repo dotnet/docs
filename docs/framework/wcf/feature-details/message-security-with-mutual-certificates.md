@@ -6,7 +6,6 @@ dev_langs:
   - "vb"
 ms.assetid: 99d7a528-7ae4-4d39-a0f9-3066ea237de0
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Message Security with Mutual Certificates
 The following scenario shows a Windows Communication Foundation (WCF) service and client secured using message security mode. The client and the service are authenticated with certificates.  
@@ -156,5 +155,5 @@ The following scenario shows a Windows Communication Foundation (WCF) service an
   
 ## See Also  
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)  
- [How to: Create and Install Temporary Certificates in WCF for Transport Security During Development](http://go.microsoft.com/fwlink/?LinkId=244264)
+ [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)  
+ [How to: Create and Install Temporary Certificates in WCF for Transport Security During Development](https://go.microsoft.com/fwlink/?LinkId=244264)

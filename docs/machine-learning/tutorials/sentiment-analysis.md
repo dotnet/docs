@@ -50,7 +50,7 @@ The workflow phases are as follows:
 
 ### Understand the problem
 
-You first need to understand the problem, so you can break it down to parts that can support building and training the model. Breaking the problem down you to predict and evaluate the results.
+You first need to understand the problem, so you can break it down to parts that can support building and training the model. Breaking the problem down allows you to predict and evaluate the results.
 
 The problem for this tutorial is to understand incoming website comment sentiment to take the appropriate action.
 
@@ -86,7 +86,7 @@ Classification tasks are frequently one of the following types:
 
 ## Create a console application
 
-1. Open Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the *New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "SentimentAnalysis" and then select the **OK** button.
+1. Open Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the **New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "SentimentAnalysis" and then select the **OK** button.
 
 2. Create a directory named *Data* in your project to save your data set files:
 

@@ -26,6 +26,7 @@ In addition to taking items from a <xref:System.Collections.Concurrent.BlockingC
   
  To enumerate the collection without modifying it, just use `foreach` (`For Each`) without the <xref:System.Collections.Concurrent.BlockingCollection%601.GetConsumingEnumerable%2A> method. However, it is important to understand that this kind of enumeration represents a snapshot of the collection at a precise point in time. If other threads are adding or removing items concurrently while you are executing the loop, then the loop might not represent the actual state of the collection.  
   
-## See Also  
- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
- [Parallel Programming](../../../../docs/standard/parallel-programming/index.md)
+## See also
+
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
+- [Parallel Programming](../../../../docs/standard/parallel-programming/index.md)

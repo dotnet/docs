@@ -67,7 +67,7 @@ The `DataGridView` control provides a powerful and flexible way to display data 
  [Differences Between the Windows Forms DataGridView and DataGrid Controls](../../../../docs/framework/winforms/controls/differences-between-the-windows-forms-datagridview-and-datagrid-controls.md)  
  Describes how the `DataGridView` control improves upon and replaces the <xref:System.Windows.Forms.DataGrid> control.  
   
- Also see [Using the Designer with the Windows Forms DataGridView Control](http://msdn.microsoft.com/library/ms171593\(v=vs.110\)).  
+ Also see [Using the Designer with the Windows Forms DataGridView Control](using-the-designer-with-the-windows-forms-datagridview-control.md).  
   
 ## Reference  
  <xref:System.Windows.Forms.DataGridView>  

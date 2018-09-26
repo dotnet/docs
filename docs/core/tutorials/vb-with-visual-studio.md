@@ -6,6 +6,7 @@ ms.author: ronpet
 ms.date: 08/07/2017
 dev_langs: 
   - "vb"
+ms.custom: vs-dotnet
 ---
 # Build a Visual Basic Hello World application with .NET Core in Visual Studio 2017
 

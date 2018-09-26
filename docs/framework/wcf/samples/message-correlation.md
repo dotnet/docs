@@ -4,13 +4,13 @@ ms.date: "03/30/2017"
 ms.assetid: 3f62babd-c991-421f-bcd8-391655c82a1f
 ---
 # Message Correlation
-This sample demonstrates how a Message Queuing (MSMQ) application can send an MSMQ message to a Windows Communication Foundation (WCF) service and how messages can be correlated between sender and receiver applications in a request/response scenario. This sample uses the msmqIntegrationBinding binding. The service in this case is a self-hosted console application to allow you to observe the service that receives queued messages. k
-
- The service processes the message received from the sender and sends a response message back to the sender. The sender correlates the response it received to the request it sent originally. The `MessageID` and `CorrelationID` properties of the message are used to correlate the request and response messages.
-
- The `IOrderProcessor` service contract defines a one-way service operation that is suitable for use with queuing. An MSMQ message does not have an Action header, so it is not possible to map different MSMQ messages to operation contracts automatically. Therefore, there can be only one operation contract in this case. If you want to define more operation contracts in the service, the application must provide information as to which header in the MSMQ message (for example, the label, or correlationID) can be used to decide which operation contract to dispatch. This is demonstrated in the [Custom Demux](../../../../docs/framework/wcf/samples/custom-demux.md).
-
- The MSMQ message also does not contain information as to which headers are mapped to the different parameters of the operation contract. Therefore, there can be only one parameter in the operation contract. The parameter is of type <!--zz <xref:System.ServiceModel.MSMQIntegration.MsmqMessage%601>`MsmqMessage<T>`--> , `System.ServiceModel.MSMQIntegration.MsmqMessage` which contains the underlying MSMQ message. The type "T" in the `MsmqMessage<T>` class represents the data that is serialized into the MSMQ message body. In this sample, the `PurchaseOrder` type is serialized into the MSMQ message body.
+This sample demonstrates how a Message Queuing (MSMQ) application can send an MSMQ message to a Windows Communication Foundation (WCF) service and how messages can be correlated between sender and receiver applications in a request/response scenario. This sample uses the msmqIntegrationBinding binding. The service in this case is a self-hosted console application to allow you to observe the service that receives queued messages. k  
+  
+ The service processes the message received from the sender and sends a response message back to the sender. The sender correlates the response it received to the request it sent originally. The `MessageID` and `CorrelationID` properties of the message are used to correlate the request and response messages.  
+  
+ The `IOrderProcessor` service contract defines a one-way service operation that is suitable for use with queuing. An MSMQ message does not have an Action header, so it is not possible to map different MSMQ messages to operation contracts automatically. Therefore, there can be only one operation contract in this case. If you want to define more operation contracts in the service, the application must provide information as to which header in the MSMQ message (for example, the label, or correlationID) can be used to decide which operation contract to dispatch. 
+  
+ The MSMQ message also does not contain information as to which headers are mapped to the different parameters of the operation contract. Therefore, there can be only one parameter in the operation contract. The parameter is of type <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601>, which contains the underlying MSMQ message. The type "T" in the `MsmqMessage<T>` class represents the data that is serialized into the MSMQ message body. In this sample, the `PurchaseOrder` type is serialized into the MSMQ message body.  
 
 ```csharp
 [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]
@@ -298,14 +298,14 @@ static void DisplayOrderStatus()
 6.  On the client computer, launch Client.exe from a command prompt.
 
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.
->
->  `<InstallDrive>:\WF_WCF_Samples`
->
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\MessageCorrelation`
-
-## See Also
- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)
- [Message Queuing](http://go.microsoft.com/fwlink/?LinkId=94968)
+>  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+>   
+>  `<InstallDrive>:\WF_WCF_Samples`  
+>   
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>   
+>  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\MessageCorrelation`  
+  
+## See Also  
+ [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
+ [Message Queuing](https://go.microsoft.com/fwlink/?LinkId=94968)

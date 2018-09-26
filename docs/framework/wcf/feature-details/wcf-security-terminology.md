@@ -7,7 +7,6 @@ helpviewer_keywords:
   - "security terms [WCF]"
 ms.assetid: 68dde024-8e51-40ba-804f-ec52d85e9ca9
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # WCF Security Terminology
 Some of the terminology used when discussing security may be unfamiliar. This topic provides short explanations of some of security terms, but is not intended to provide comprehensive documentation for every item.  
@@ -180,4 +179,4 @@ Some of the terminology used when discussing security may be unfamiliar. This to
 ## See Also  
  [Fundamental Windows Communication Foundation Concepts](../../../../docs/framework/wcf/fundamental-concepts.md)  
  [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+ [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

@@ -23,10 +23,11 @@ The C# typing system contains the following categories:
   
  Value types are also nullable, which means they can store an additional non-value state. For more information, see [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md).  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)  
- [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)  
- [Types](../../../csharp/programming-guide/types/index.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)  
+- [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)  
+- [Types](../../../csharp/programming-guide/types/index.md)

@@ -3,7 +3,6 @@ title: "WIF and Web Farms"
 ms.date: "03/30/2017"
 ms.assetid: fc3cd7fa-2b45-4614-a44f-8fa9b9d15284
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # WIF and Web Farms
 When you use Windows Identity Foundation (WIF) to secure the resources of a relying party (RP) application that is deployed in a web farm, you must take specific steps to ensure that WIF can process tokens from instances of the RP application running on different computers in the farm. This processing includes validating session token signatures, encrypting and decrypting session tokens, caching session tokens, and detecting replayed security tokens.  
@@ -50,7 +49,7 @@ When you use Windows Identity Foundation (WIF) to secure the resources of a rely
 -   If your application detects replayed tokens you must follow a similar distributed caching strategy for the token replay cache by deriving from <xref:System.IdentityModel.Tokens.TokenReplayCache> and pointing to your token replay caching service in the [\<tokenReplayCache>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/tokenreplaycache.md) configuration element.  
   
 > [!IMPORTANT]
->  All of the example XML and code in this topic is taken from the [ClaimsAwareWebFarm](http://go.microsoft.com/fwlink/?LinkID=248408) (http://go.microsoft.com/fwlink/?LinkID=248408) sample.  
+>  All of the example XML and code in this topic is taken from the [ClaimsAwareWebFarm](https://go.microsoft.com/fwlink/?LinkID=248408) sample.  
   
 > [!IMPORTANT]
 >  The examples in this topic are provided as-is and are not intended to be used in production code without modification.  

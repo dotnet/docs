@@ -10,132 +10,132 @@ helpviewer_keywords:
 ms.assetid: a1db8049-15c7-45d6-ae3d-36a6735cb848
 ---
 # Walkthrough: Arranging Windows Forms Controls in WPF
-This walkthrough shows you how to use [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout features to arrange [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls in a hybrid application.
-
- Tasks illustrated in this walkthrough include:
-
--   Creating the project.
-
--   Using default layout settings.
-
--   Sizing to content.
-
--   Using absolute positioning.
-
--   Specifying size explicitly.
-
--   Setting layout properties.
-
--   Understanding z-order limitations.
-
--   Docking.
-
--   Setting visibility.
-
--   Hosting a control that does not stretch.
-
--   Scaling.
-
--   Rotating.
-
--   Setting padding and margins.
-
--   Using dynamic layout containers.
-
- For a complete code listing of the tasks illustrated in this walkthrough, see [Arranging Windows Forms Controls in WPF Sample](http://go.microsoft.com/fwlink/?LinkID=159971).
-
- When you are finished, you will have an understanding of [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] layout features in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-based applications.
-
-## Prerequisites
- You need the following components to complete this walkthrough:
-
--   Visual Studio 2010.
-
-## Creating the Project
-
-#### To create and set up the project
-
-1.  Create a WPF Application project named `WpfLayoutHostingWf`.
-
-2.  In Solution Explorer, add references to the following assemblies.
-
-    -   WindowsFormsIntegration
-
-    -   System.Windows.Forms
-
-    -   System.Drawing
-
-3.  Double-click MainWindow.xaml to open it in XAML view.
-
-4.  In the <xref:System.Windows.Window> element, add the following [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] namespace mapping.
-
-    ```xaml
-    xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
-    ```
-
-5.  In the <xref:System.Windows.Controls.Grid> element set the <xref:System.Windows.Controls.Grid.ShowGridLines%2A> property to `true` and define five rows and three columns.
-
-     [!code-xaml[WpfLayoutHostingWfWithXaml#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#2)]
-
-## Using Default Layout Settings
- By default, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element handles the layout for the hosted [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control.
-
-#### To use default layout settings
-
-1.  Copy the following XAML into the <xref:System.Windows.Controls.Grid> element.
-
-     [!code-xaml[WpfLayoutHostingWfWithXaml#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#3)]
-
-2.  Press F5 to build and run the application. The [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]<xref:System.Windows.Forms.Button?displayProperty=nameWithType> control appears in the <xref:System.Windows.Controls.Canvas>. The hosted control is sized based on its content, and the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is sized to accommodate the hosted control.
-
-## Sizing to Content
- The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element ensures that the hosted control is sized to display its content properly.
-
-#### To size to content
-
-1.  Copy the following XAML into the <xref:System.Windows.Controls.Grid> element.
-
-     [!code-xaml[WpfLayoutHostingWfWithXaml#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#4)]
-
-2.  Press F5 to build and run the application. The two new button controls are sized to display the longer text string and larger font size properly, and the <xref:System.Windows.Forms.Integration.WindowsFormsHost> elements are resized to accommodate the hosted controls.
-
-## Using Absolute Positioning
- You can use absolute positioning to place the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element anywhere in the user interface (UI).
-
-#### To use absolute positioning
-
-1.  Copy the following XAML into the <xref:System.Windows.Controls.Grid> element.
-
-     [!code-xaml[WpfLayoutHostingWfWithXaml#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#5)]
-
-2.  Press F5 to build and run the application. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is placed 20 pixels from the top side of the grid cell and 20 pixels from the left.
-
-## Specifying Size Explicitly
- You can specify the size of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element using the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties.
-
-#### To specify size explicitly
-
-1.  Copy the following XAML into the <xref:System.Windows.Controls.Grid> element.
-
-     [!code-xaml[WpfLayoutHostingWfWithXaml#6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#6)]
-
-2.  Press F5 to build and run the application. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is set to a size of 50 pixels wide by 70 pixels high, which is smaller than the default layout settings. The content of the [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control is rearranged accordingly.
-
-## Setting Layout Properties
- Always set layout-related properties on the hosted control by using the properties of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element. Setting layout properties directly on the hosted control will yield unintended results.
-
- Setting layout-related properties on the hosted control in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] has no effect.
-
-#### To see the effects of setting properties on the hosted control
-
-1.  Copy the following XAML into the <xref:System.Windows.Controls.Grid> element.
-
-     [!code-xaml[WpfLayoutHostingWfWithXaml#7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#7)]
-
-2.  In Solution Explorer, double-click MainWindow.xaml. vb or MainWindow.xaml.cs to open it in the Code Editor.
-
-3.  Copy the following code into the `MainWindow` class definition.
-
+This walkthrough shows you how to use [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout features to arrange [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls in a hybrid application.  
+  
+ Tasks illustrated in this walkthrough include:  
+  
+-   Creating the project.  
+  
+-   Using default layout settings.  
+  
+-   Sizing to content.  
+  
+-   Using absolute positioning.  
+  
+-   Specifying size explicitly.  
+  
+-   Setting layout properties.  
+  
+-   Understanding z-order limitations.  
+  
+-   Docking.  
+  
+-   Setting visibility.  
+  
+-   Hosting a control that does not stretch.  
+  
+-   Scaling.  
+  
+-   Rotating.  
+  
+-   Setting padding and margins.  
+  
+-   Using dynamic layout containers.  
+  
+ For a complete code listing of the tasks illustrated in this walkthrough, see [Arranging Windows Forms Controls in WPF Sample](https://go.microsoft.com/fwlink/?LinkID=159971).  
+  
+ When you are finished, you will have an understanding of [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] layout features in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-based applications.  
+  
+## Prerequisites  
+ You need the following components to complete this walkthrough:  
+  
+-   [!INCLUDE[vs_dev10_long](../../../../includes/vs-dev10-long-md.md)].  
+  
+## Creating the Project  
+  
+#### To create and set up the project  
+  
+1.  Create a WPF Application project named `WpfLayoutHostingWf`.  
+  
+2.  In Solution Explorer, add references to the following assemblies.  
+  
+    -   WindowsFormsIntegration  
+  
+    -   System.Windows.Forms  
+  
+    -   System.Drawing  
+  
+3.  Double-click MainWindow.xaml to open it in XAML view.  
+  
+4.  In the <xref:System.Windows.Window> element, add the following [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] namespace mapping.  
+  
+    ```xaml  
+    xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"  
+    ```  
+  
+5.  In the <xref:System.Windows.Controls.Grid> element set the <xref:System.Windows.Controls.Grid.ShowGridLines%2A> property to `true` and define five rows and three columns.  
+  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#2)]  
+  
+## Using Default Layout Settings  
+ By default, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element handles the layout for the hosted [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control.  
+  
+#### To use default layout settings  
+  
+1.  Copy the following XAML into the <xref:System.Windows.Controls.Grid> element.  
+  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#3)]  
+  
+2.  Press F5 to build and run the application. The [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]<xref:System.Windows.Forms.Button?displayProperty=nameWithType> control appears in the <xref:System.Windows.Controls.Canvas>. The hosted control is sized based on its content, and the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is sized to accommodate the hosted control.  
+  
+## Sizing to Content  
+ The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element ensures that the hosted control is sized to display its content properly.  
+  
+#### To size to content  
+  
+1.  Copy the following XAML into the <xref:System.Windows.Controls.Grid> element.  
+  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#4)]  
+  
+2.  Press F5 to build and run the application. The two new button controls are sized to display the longer text string and larger font size properly, and the <xref:System.Windows.Forms.Integration.WindowsFormsHost> elements are resized to accommodate the hosted controls.  
+  
+## Using Absolute Positioning  
+ You can use absolute positioning to place the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element anywhere in the user interface (UI).  
+  
+#### To use absolute positioning  
+  
+1.  Copy the following XAML into the <xref:System.Windows.Controls.Grid> element.  
+  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#5)]  
+  
+2.  Press F5 to build and run the application. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is placed 20 pixels from the top side of the grid cell and 20 pixels from the left.  
+  
+## Specifying Size Explicitly  
+ You can specify the size of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element using the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties.  
+  
+#### To specify size explicitly  
+  
+1.  Copy the following XAML into the <xref:System.Windows.Controls.Grid> element.  
+  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#6)]  
+  
+2.  Press F5 to build and run the application. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is set to a size of 50 pixels wide by 70 pixels high, which is smaller than the default layout settings. The content of the [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control is rearranged accordingly.  
+  
+## Setting Layout Properties  
+ Always set layout-related properties on the hosted control by using the properties of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element. Setting layout properties directly on the hosted control will yield unintended results.  
+  
+ Setting layout-related properties on the hosted control in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] has no effect.  
+  
+#### To see the effects of setting properties on the hosted control  
+  
+1.  Copy the following XAML into the <xref:System.Windows.Controls.Grid> element.  
+  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#7)]  
+  
+2.  In Solution Explorer, double-click MainWindow.xaml. vb or MainWindow.xaml.cs to open it in the Code Editor.  
+  
+3.  Copy the following code into the `MainWindow` class definition.  
+  
      [!code-csharp[WpfLayoutHostingWfWithXaml#101](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml.cs#101)]
      [!code-vb[WpfLayoutHostingWfWithXaml#101](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml.vb#101)]
 
@@ -249,15 +249,15 @@ This walkthrough shows you how to use [!INCLUDE[TLA2#tla_winclient](../../../../
 3.  Add a call to the `InitializeFlowLayoutPanel` method in the constructor.
 
      [!code-csharp[WpfLayoutHostingWfWithXaml#104](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml.cs#104)]
-     [!code-vb[WpfLayoutHostingWfWithXaml#104](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml.vb#104)]
-
-4.  Press F5 to build and run the application. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element fills the <xref:System.Windows.Controls.DockPanel>, and <xref:System.Windows.Forms.FlowLayoutPanel> arranges its child controls in the default <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A>.
-
-## See Also
- <xref:System.Windows.Forms.Integration.ElementHost>
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>
- [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)
- [Layout Considerations for the WindowsFormsHost Element](../../../../docs/framework/wpf/advanced/layout-considerations-for-the-windowsformshost-element.md)
- [Arranging Windows Forms Controls in WPF Sample](http://go.microsoft.com/fwlink/?LinkID=159971)
- [Walkthrough: Hosting a Windows Forms Composite Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)
+     [!code-vb[WpfLayoutHostingWfWithXaml#104](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml.vb#104)]  
+  
+4.  Press F5 to build and run the application. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element fills the <xref:System.Windows.Controls.DockPanel>, and <xref:System.Windows.Forms.FlowLayoutPanel> arranges its child controls in the default <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A>.  
+  
+## See Also  
+ <xref:System.Windows.Forms.Integration.ElementHost>  
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
+ [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)  
+ [Layout Considerations for the WindowsFormsHost Element](../../../../docs/framework/wpf/advanced/layout-considerations-for-the-windowsformshost-element.md)  
+ [Arranging Windows Forms Controls in WPF Sample](https://go.microsoft.com/fwlink/?LinkID=159971)  
+ [Walkthrough: Hosting a Windows Forms Composite Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)  
  [Walkthrough: Hosting a WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)

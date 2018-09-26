@@ -178,7 +178,8 @@ End Class
   
  Objects are reconstructed from the inside out; and calling methods during deserialization can have undesirable side effects, because the methods called might refer to object references that have not been deserialized by the time the call is made. If the class being deserialized implements the <xref:System.Runtime.Serialization.IDeserializationCallback>, the <xref:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization*> method is automatically called when the entire object graph has been deserialized. At this point, all the child objects referenced have been fully restored. A hash table is a typical example of a class that is difficult to deserialize without using the event listener. It is easy to retrieve the key and value pairs during deserialization, but adding these objects back to the hash table can cause problems, because there is no guarantee that classes that derived from the hash table have been deserialized. Calling methods on a hash table at this stage is therefore not advisable.  
   
-## See also  
- [Binary Serialization](binary-serialization.md)  
- [XML and SOAP Serialization](xml-and-soap-serialization.md)  
- [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)
+## See also
+
+- [Binary Serialization](binary-serialization.md)  
+- [XML and SOAP Serialization](xml-and-soap-serialization.md)  
+- [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)

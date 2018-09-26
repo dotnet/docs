@@ -6,7 +6,6 @@ dev_langs:
   - "vb"
 ms.assetid: 97a10d79-3e7d-4bd1-9a99-fd9807fd70bc
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Internet Unsecured Client and Service
 The following illustration shows an example of a public, unsecured Windows Communication Foundation (WCF) client and service.  
@@ -108,4 +107,4 @@ The following illustration shows an example of a public, unsecured Windows Commu
 ## See Also  
  [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)  
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+ [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

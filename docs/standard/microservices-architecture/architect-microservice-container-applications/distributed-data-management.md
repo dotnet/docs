@@ -13,7 +13,7 @@ Defining microservice boundaries is probably the first challenge anyone encounte
 
 First, you need to focus on the application’s logical domain models and related data. You must try to identify decoupled islands of data and different contexts within the same application. Each context could have a different business language (different business terms). The contexts should be defined and managed independently. The terms and entities used in those different contexts might sound similar, but you might discover that in a particular context, a business concept with one is used for a different purpose in another context, and might even have a different name. For instance, a user can be referred as a user in the identity or membership context, as a customer in a CRM context, as a buyer in an ordering context, and so forth.
 
-The way you identify boundaries between multiple application contexts with a different domain for each context is exactly how you can identify the boundaries for each business microservice and its related domain model and data. You always attempt to minimize the coupling between those microservices. This guide goes into more detail about this identification and domain model design in the section [Identifying domain-model boundaries for each microservice](#identifying-domain-model-boundaries-for-each-microservice) later.
+The way you identify boundaries between multiple application contexts with a different domain for each context is exactly how you can identify the boundaries for each business microservice and its related domain model and data. You always attempt to minimize the coupling between those microservices. This guide goes into more detail about this identification and domain model design in the section [Identifying domain-model boundaries for each microservice](identify-microservice-domain-model-boundaries.md) later.
 
 ## Challenge \#2: How to create queries that retrieve data from several microservices
 
@@ -37,7 +37,7 @@ However, if your application design involves constantly aggregating information 
 
 As stated previously, the data owned by each microservice is private to that microservice and can only be accessed using its microservice API. Therefore, a challenge presented is how to implement end-to-end business processes while keeping consistency across multiple microservices.
 
-To analyze this problem, let’s look at an example from the [eShopOnContainers reference application](http://aka.ms/eshoponcontainers). The Catalog microservice maintains information about all the products, including their stock level. The Ordering microservice manages orders and must verify that a new order does not exceed the available catalog product stock. (Or the scenario might involve logic that handles backordered products.) In a hypothetical monolithic version of this application, the ordering subsystem could simply use an ACID transaction to check the available stock, create the order in the Orders table, and update the available stock in the Products table.
+To analyze this problem, let’s look at an example from the [eShopOnContainers reference application](https://aka.ms/eshoponcontainers). The Catalog microservice maintains information about all the products, including their stock level. The Ordering microservice manages orders and must verify that a new order does not exceed the available catalog product stock. (Or the scenario might involve logic that handles backordered products.) In a hypothetical monolithic version of this application, the ordering subsystem could simply use an ACID transaction to check the available stock, create the order in the Orders table, and update the available stock in the Products table.
 
 However, in a microservices-based application, the Order and Product tables are owned by their respective microservices. No microservice should ever include databases owned by another microservice in its own transactions or queries, as shown in Figure 4-9.
 
@@ -45,13 +45,13 @@ However, in a microservices-based application, the Order and Product tables are 
 
 **Figure 4-9**. A microservice cannot directly access a table in another microservice
 
-The Ordering microservice should not update the Products table directly, because the Products table is owned by the Catalog microservice. To make an update to the Catalog microservice, the Ordering microservice should only ever use asynchronous communication such as integration events (message and event-based communication). This is how the [eShopOnContainers](http://aka.ms/eshoponcontainers) reference application performs this type of update.
+The Ordering microservice should not update the Products table directly, because the Products table is owned by the Catalog microservice. To make an update to the Catalog microservice, the Ordering microservice should only ever use asynchronous communication such as integration events (message and event-based communication). This is how the [eShopOnContainers](https://aka.ms/eshoponcontainers) reference application performs this type of update.
 
 As stated by the [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem), you need to choose between availability and ACID strong consistency. Most microservice-based scenarios demand availability and high scalability as opposed to strong consistency. Mission-critical applications must remain up and running, and developers can work around strong consistency by using techniques for working with weak or eventual consistency. This is the approach taken by most microservice-based architectures.
 
 Moreover, ACID-style or two-phase commit transactions are not just against microservices principles; most NoSQL databases (like Azure Cosmos DB, MongoDB, etc.) do not support two-phase commit transactions. However, maintaining data consistency across services and databases is essential. This challenge is also related to the question of how to propagate changes across multiple microservices when certain data needs to be redundant—for example, when you need to have the product’s name or description in the Catalog microservice and the Basket microservice.
 
-A good solution for this problem is to use eventual consistency between microservices articulated through event-driven communication and a publish-and-subscribe system. These topics are covered in the section [Asynchronous event-driven communication](#async_event_driven_communication) later in this guide.
+A good solution for this problem is to use eventual consistency between microservices articulated through event-driven communication and a publish-and-subscribe system. These topics are covered in the section [Asynchronous event-driven communication](asynchronous-message-based-communication.md#asynchronous-event-driven-communication) later in this guide.
 
 ## Challenge \#4: How to design communication across microservice boundaries
 
@@ -73,7 +73,7 @@ In fact, if your internal microservices are communicating by creating chains of 
 
 Therefore, in order to enforce microservice autonomy and have better resiliency, you should minimize the use of chains of request/response communication across microservices. It is recommended that you use only asynchronous interaction for inter-microservice communication, either by using asynchronous message- and event-based communication, or by using HTTP polling independently of the original HTTP request/response cycle.
 
-The use of asynchronous communication is explained with additional details later in this guide in the sections [Asynchronous microservice integration enforces microservice’s autonomy](#asynchronous-microservice-integration-enforce-microservices-autonomy) and [Asynchronous message-based communication](#asynchronous-message-based-communication).
+The use of asynchronous communication is explained with additional details later in this guide in the sections [Asynchronous microservice integration enforces microservice’s autonomy](communication-in-microservice-architecture.md#asynchronous-microservice-integration-enforces-microservices-autonomy) and [Asynchronous message-based communication](asynchronous-message-based-communication.md).
 
 ## Additional resources
 

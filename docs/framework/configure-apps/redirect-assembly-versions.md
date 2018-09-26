@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 88fb1a17-6ac9-4b57-8028-193aec1f727c
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Redirecting Assembly Versions
 
@@ -51,17 +50,18 @@ You can redirect compile-time binding references to .NET Framework assemblies, t
 ```
 
 ### Relying on automatic binding redirection
- Starting with Visual Studio 2013, new desktop apps that target the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] use automatic binding redirection. This means that if two components reference different versions of the same strong-named assembly, the runtime automatically adds a binding redirection to the newer version of the assembly in the output app configuration (app.config) file. This redirection overrides the assembly unification that might otherwise take place. The source app.config file is not modified. For example, let's say that your app directly references an out-of-band .NET Framework component but uses a third-party library that targets an older version of the same component. When you compile the app, the output app configuration file is modified to contain a binding redirection to the newer version of the component. If you create a web app, you receive a build warning regarding the binding conflict, which in turn, gives you the option to add the necessary binding redirect to the source web configuration file.
 
- If you  manually add binding redirects to the source app.config file, at compile time, Visual Studio 2013 tries to unify the assemblies based on the binding redirects you added. For example, let's say you insert the following binding redirect for an assembly:
+When you create a desktop app in Visual Studio that targets the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] or a later version, the app uses automatic binding redirection. This means that if two components reference different versions of the same strong-named assembly, the runtime automatically adds a binding redirection to the newer version of the assembly in the output app configuration (app.config) file. This redirection overrides the assembly unification that might otherwise take place. The source app.config file is not modified. For example, let's say that your app directly references an out-of-band .NET Framework component but uses a third-party library that targets an older version of the same component. When you compile the app, the output app configuration file is modified to contain a binding redirection to the newer version of the component. If you create a web app, you receive a build warning regarding the binding conflict, which in turn, gives you the option to add the necessary binding redirect to the source web configuration file.
 
- `<bindingRedirect oldVersion="3.0.0.0" newVersion="2.0.0.0" />`
+If you manually add binding redirects to the source app.config file, at compile time, Visual Studio tries to unify the assemblies based on the binding redirects you added. For example, let's say you insert the following binding redirect for an assembly:
 
- If another project in your app references version 1.0.0.0 of the same assembly, automatic binding redirection adds the following entry to the output app.config file so that the app is unified on version 2.0.0.0 of this assembly:
+`<bindingRedirect oldVersion="3.0.0.0" newVersion="2.0.0.0" />`
 
- `<bindingRedirect oldVersion="1.0.0.0" newVersion="2.0.0.0" />`
+If another project in your app references version 1.0.0.0 of the same assembly, automatic binding redirection adds the following entry to the output app.config file so that the app is unified on version 2.0.0.0 of this assembly:
 
- You can enable automatic binding redirection if your app targets older versions of the .NET Framework in Visual Studio 2013. You can override this default behavior by providing binding redirection information in the app.config file for any assembly, or turn off the binding redirection feature. For information about how to turn this feature on or off, see [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md).
+`<bindingRedirect oldVersion="1.0.0.0" newVersion="2.0.0.0" />`
+
+You can enable automatic binding redirection if your app targets older versions of the .NET Framework. You can override this default behavior by providing binding redirection information in the app.config file for any assembly, or by turning off the binding redirection feature. For information about how to turn this feature on or off, see [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md).
 
 <a name="bypass_PP"></a>
 ### Bypassing publisher policy

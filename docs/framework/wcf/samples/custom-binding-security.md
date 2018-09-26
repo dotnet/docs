@@ -3,7 +3,6 @@ title: "Custom Binding Security"
 ms.date: "03/30/2017"
 ms.assetid: a6383dff-4308-46d2-bc6d-acd4e18b4b8d
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Custom Binding Security
 This sample demonstrates how to configure security by using a custom binding. It shows how to use a custom binding to enable message-level security together with a secure transport. This is useful when a secure transport is required to transmit the messages between client and service and simultaneously the messages must be secure on the message level. This configuration is not supported by system-provided bindings.
@@ -112,26 +111,26 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
 1.  Open a Visual Studio Command Prompt window with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.
-
-2.  Launch Service.exe from \service\bin.
-
-3.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.
-
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
-
-### To run the sample across computers
-
-1.  On the service computer:
-
-    1.  Create a virtual directory named servicemodelsamples on the service computer.
-
-    2.  Copy the service program files from \inetpub\wwwroot\servicemodelsamples to the virtual directory on the service computer. Ensure that you copy the files in the \bin subdirectory.
-
-    3.  Copy the Setup.bat and Cleanup.bat files to the service computer.
-
-    4.  Run the following command in a Visual Studio command prompt opened with administrator privileges: `Setup.bat service`. This creates the service certificate with the subject name matching the name of the computer the batch file was run on.
-
+    >  The Setup.bat batch file is designed to be run from a [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Command Prompt. The PATH environment variable set within the [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Command Prompt points to the directory that contains executables required by the Setup.bat script.  
+  
+2.  Launch Service.exe from \service\bin.  
+  
+3.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
+  
+4.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+  
+### To run the sample across computers  
+  
+1.  On the service computer:  
+  
+    1.  Create a virtual directory named servicemodelsamples on the service computer.  
+  
+    2.  Copy the service program files from \inetpub\wwwroot\servicemodelsamples to the virtual directory on the service computer. Ensure that you copy the files in the \bin subdirectory.  
+  
+    3.  Copy the Setup.bat and Cleanup.bat files to the service computer.  
+  
+    4.  Run the following command in a Visual Studio command prompt opened with administrator privileges: `Setup.bat service`. This creates the service certificate with the subject name matching the name of the computer the batch file was run on.  
+  
         > [!NOTE]
         >  The Setup.bat batch file is designed to be run from a Visual Studio 2010 Command Prompt. It requires that the path environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Visual Studio 2010 Command Prompt.
 

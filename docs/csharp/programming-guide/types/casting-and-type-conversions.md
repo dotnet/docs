@@ -73,18 +73,19 @@ Giraffe g2 = (Giraffe) a;
   
  [!code-csharp[csProgGuideTypes#41](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/casting-and-type-conversions_3.cs)]  
   
- C# provides the [is](../../../csharp/language-reference/keywords/is.md) and [as](../../../csharp/language-reference/keywords/as.md) operators to enable you to test for compatibility before actually performing a cast. For more information, see [How to: Safely Cast by Using as and is Operators](../../../csharp/programming-guide/types/how-to-safely-cast-by-using-as-and-is-operators.md).  
+ C# provides the [is](../../../csharp/language-reference/keywords/is.md) and [as](../../../csharp/language-reference/keywords/as.md) operators to enable you to test for compatibility before actually performing a cast. For more information, see [How to: Safely cast using pattern matching, as and is Operators](../../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md).  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
 
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Types](../../../csharp/programming-guide/types/index.md)  
- [() Operator](../../../csharp/language-reference/operators/invocation-operator.md)  
- [explicit](../../../csharp/language-reference/keywords/explicit.md)  
- [implicit](../../../csharp/language-reference/keywords/implicit.md)  
- [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)  
- [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada)  
- [Exported Type Conversion](http://msdn.microsoft.com/library/1dfe55f4-07a2-4b61-aabf-a8cf65783a6b)  
- [How to: Convert a String to a Number](../../../csharp/programming-guide/types/how-to-convert-a-string-to-a-number.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Types](../../../csharp/programming-guide/types/index.md)  
+- [() Operator](../../../csharp/language-reference/operators/invocation-operator.md)  
+- [explicit](../../../csharp/language-reference/keywords/explicit.md)  
+- [implicit](../../../csharp/language-reference/keywords/implicit.md)  
+- [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)  
+- [Generalized Type Conversion](https://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada)  
+- [Exported Type Conversion](https://msdn.microsoft.com/library/1dfe55f4-07a2-4b61-aabf-a8cf65783a6b)  
+- [How to: Convert a String to a Number](../../../csharp/programming-guide/types/how-to-convert-a-string-to-a-number.md)

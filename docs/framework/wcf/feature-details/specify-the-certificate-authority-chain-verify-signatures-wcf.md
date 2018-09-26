@@ -23,7 +23,7 @@ When Windows Communication Foundation (WCF) receives a SOAP message signed using
   
     2.  Import the certification authority certificate chain.  
   
-         In the Microsoft Management Console (MMC), open the Certificates snap-in. For the certificate store that WCF is configured to retrieve X.509 certificates from, select the **Trusted Root** **Certification Authorities**folder. Under the **Trusted Root Certification Authorities** folder, right-click the **Certificates**folder, point to **All Tasks**, and then click **Import**. Provide the file exported in step a.  
+         In the Microsoft Management Console (MMC), open the Certificates snap-in. For the certificate store that WCF is configured to retrieve X.509 certificates from, select the **Trusted Root** **Certification Authorities** folder. Under the **Trusted Root Certification Authorities** folder, right-click the **Certificates** folder, point to **All Tasks**, and then click **Import**. Provide the file exported in step a.  
   
          For more information about using the Certificates snap-in with MMC, see [How to: View Certificates with the MMC Snap-in](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md).  
   

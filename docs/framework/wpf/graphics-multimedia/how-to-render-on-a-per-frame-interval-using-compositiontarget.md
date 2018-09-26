@@ -15,7 +15,7 @@ The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md
  <xref:System.Windows.Media.CompositionTarget> is a static class which represents the display surface on which your application is being drawn. The <xref:System.Windows.Media.CompositionTarget.Rendering> event is raised each time the application's scene is drawn. The rendering frame rate is the number of times the scene is drawn per second.  
   
 > [!NOTE]
->  For a complete code sample using <xref:System.Windows.Media.CompositionTarget>, see [Using the CompositionTarget Sample](http://go.microsoft.com/fwlink/?LinkID=160045).  
+>  For a complete code sample using <xref:System.Windows.Media.CompositionTarget>, see [Using the CompositionTarget Sample](https://go.microsoft.com/fwlink/?LinkID=160045).  
   
 ## Example  
  The <xref:System.Windows.Media.CompositionTarget.Rendering> event fires during the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] rendering process. The following example shows how you register an <xref:System.EventHandler> delegate to the static <xref:System.Windows.Media.CompositionTarget.Rendering> method on <xref:System.Windows.Media.CompositionTarget>.  

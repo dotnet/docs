@@ -22,10 +22,11 @@ Windows Communication Foundation (WCF) is a framework for building service-orien
 
 -   A Silverlight application to poll a service for the latest data feeds.
 
- While creating such applications was possible prior to the existence of WCF, WCF makes the development of endpoints easier than ever. In summary, WCF is designed to offer a manageable approach to creating Web services and Web service clients.
+While creating such applications was possible prior to the existence of WCF, WCF makes the development of endpoints easier than ever. In summary, WCF is designed to offer a manageable approach to creating Web services and Web service clients.
 
 ## Features of WCF
- WCF includes the following set of features. For more information, see [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md).
+
+WCF includes the following set of features. For more information, see [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md).
 
 -   **Service Orientation**
 
@@ -76,15 +77,16 @@ Windows Communication Foundation (WCF) is a framework for building service-orien
      The WCF architecture has a number of extensibility points. If extra capability is required, there are a number of entry points that allow you to customize the behavior of a service. For more information about available extensibility points see [Extending WCF](../../../docs/framework/wcf/extending/index.md).
 
 ## WCF Integration with Other Microsoft Technologies
- WCF is a flexible platform. Because of this extreme flexibility, WCF is also used in several other Microsoft products. By understanding the basics of WCF, you have an immediate advantage if you also use any of these products.
 
- The first technology to pair with WCF was the Windows Workflow Foundation (WF). Workflows simplify application development by encapsulating steps in the workflow as "activities." In the first version of Windows Workflow Foundation, a developer had to create a host for the workflow. The next version of Windows Workflow Foundation was integrated with WCF. That allowed any workflow to be easily hosted in a WCF service; you can do this by automatically choosing the WF/WCF a project type in Visual Studio 2012.
+WCF is a flexible platform. Because of this extreme flexibility, WCF is also used in several other Microsoft products. By understanding the basics of WCF, you have an immediate advantage if you also use any of these products.
 
- Microsoft BizTalk Server R2 also utilizes WCF as a communication technology. BizTalk is designed to receive and transform data from one standardized format to another. Messages must be delivered to its central message box where the message can be transformed using either a strict mapping or by using one of the BizTalk features such as its workflow engine. BizTalk can now use the WCF Line of Business (LOB) adapter to deliver messages to the message box.
+The first technology to pair with WCF was the Windows Workflow Foundation (WF). Workflows simplify application development by encapsulating steps in the workflow as "activities." In the first version of Windows Workflow Foundation, a developer had to create a host for the workflow. The next version of Windows Workflow Foundation was integrated with WCF. That allowed any workflow to be easily hosted in a WCF service. You can do this by automatically choosing the WF/WCF project type in Visual Studio 2012 or later.
 
- Microsoft Silverlight is a platform for creating interoperable, rich Web applications that allow developers to create media-intensive Web sites (such as streaming video). Beginning with version 2, Silverlight has incorporated WCF as a communication technology to connect Silverlight applications to WCF endpoints.
+Microsoft BizTalk Server R2 also utilizes WCF as a communication technology. BizTalk is designed to receive and transform data from one standardized format to another. Messages must be delivered to its central message box where the message can be transformed using either a strict mapping or by using one of the BizTalk features such as its workflow engine. BizTalk can now use the WCF Line of Business (LOB) adapter to deliver messages to the message box.
 
- The [!INCLUDE[dublin](../../../includes/dublin-md.md)] application server is specifically built for deploying and managing applications that use WCF for communication. The [!INCLUDE[dublin2](../../../includes/dublin2-md.md)] includes rich tooling and configuration options specifically designed for WCF-enabled applications.
+Microsoft Silverlight is a platform for creating interoperable, rich Web applications that allow developers to create media-intensive Web sites (such as streaming video). Beginning with version 2, Silverlight has incorporated WCF as a communication technology to connect Silverlight applications to WCF endpoints.
+
+The [!INCLUDE[dublin](../../../includes/dublin-md.md)] application server is specifically built for deploying and managing applications that use WCF for communication. The [!INCLUDE[dublin2](../../../includes/dublin2-md.md)] includes rich tooling and configuration options specifically designed for WCF-enabled applications.
 
 ## See Also
 

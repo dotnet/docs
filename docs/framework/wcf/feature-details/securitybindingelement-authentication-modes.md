@@ -6,7 +6,6 @@ dev_langs:
   - "vb"
 ms.assetid: 12300bf4-c730-4405-9f65-d286f68b5a43
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # SecurityBindingElement Authentication Modes
 Windows Communication Foundation (WCF) provides several modes by which clients and services authenticate to one another. You can create security binding elements for these authentication modes by using static methods on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class or through configuration. This topic briefly describes the 18 authentication modes.  
@@ -91,7 +90,7 @@ Windows Communication Foundation (WCF) provides several modes by which clients a
 ### MutualCertificateDuplex  
  With this authentication mode, the client authenticates using an X.509 certificate that appears at the SOAP layer as an endorsing supporting token; that is, a token that signs the message signature. The service is also authenticated using an X.509 certificate. The binding is a `AsymmetricSecurityBindingElement` returned by the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateMutualCertificateDuplexBindingElement%2A> method. Alternatively, set the `authenticationMode` attribute to `MutualCertificateDuplex`.  
   
-### MutalSslNegotiation  
+### MutualSslNegotiated  
  With this authentication mode, the client and the service authenticate using X.509 certificates. The security binding element is a `SymmetricSecurityBindingElement` returned by the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSslNegotiationBindingElement%2A> method when a value of `true` is passed for the first parameter. Alternatively, set the `authenticationMode` attribute to `MutualSslNegotiated`.  
   
 ### SecureConversation  

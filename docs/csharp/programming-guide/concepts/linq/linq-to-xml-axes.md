@@ -23,6 +23,7 @@ After you have created an XML tree or loaded an XML document into an XML tree, y
 |[How to: Retrieve the Value of an Attribute (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-retrieve-the-value-of-an-attribute-linq-to-xml.md)|Shows how to get the values of attributes.|  
 |[How to: Retrieve the Shallow Value of an Element (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-retrieve-the-shallow-value-of-an-element.md)|Shows how to retrieve the shallow value of an element.|  
   
-## See Also  
- [Extension Methods](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)  
- [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## See Also
+
+- [Extension Methods](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)  
+- [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

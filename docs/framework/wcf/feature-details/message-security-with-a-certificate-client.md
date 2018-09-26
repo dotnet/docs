@@ -6,7 +6,6 @@ dev_langs:
   - "vb"
 ms.assetid: 99770573-c815-4428-a38c-e4335c8bd7ce
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Message Security with a Certificate Client
 The following scenario shows a Windows Communication Foundation (WCF) client and service secured using message security mode. Both the client and the service are authenticated with certificates. For more information, see [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md).  
@@ -143,4 +142,4 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
  [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+ [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

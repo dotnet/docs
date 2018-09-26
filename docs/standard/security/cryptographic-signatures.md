@@ -166,5 +166,6 @@ else
   
  This code fragment will display "`The signature is valid`" if the signature is valid and "`The signature is not valid`" if it is not.  
   
-## See Also  
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+## See also
+
+- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)

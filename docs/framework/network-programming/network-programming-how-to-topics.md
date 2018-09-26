@@ -9,7 +9,6 @@ helpviewer_keywords:
 ms.assetid: 8fd6c675-9ea6-4fad-a412-e2c2c1f233d8
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Network Programming How-to Topics
 The following list includes links to the How-to topics found in the conceptual documentation for network programming.  
@@ -77,4 +76,4 @@ The following list includes links to the How-to topics found in the conceptual d
 ## See Also  
  [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
  [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)  
- [Networking Samples for .NET on MSDN Code Gallery](http://code.msdn.microsoft.com/Wiki/View.aspx?ProjectName=nclsamples)
+ [Networking Samples for .NET on MSDN Code Gallery](https://code.msdn.microsoft.com/Wiki/View.aspx?ProjectName=nclsamples)

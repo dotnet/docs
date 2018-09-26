@@ -3,7 +3,6 @@ title: "SymmetricSecurityBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: b2e182b6-c041-4d80-a926-6058068d9f79
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # SymmetricSecurityBindingElement
 SymmetricSecurityBindingElement  

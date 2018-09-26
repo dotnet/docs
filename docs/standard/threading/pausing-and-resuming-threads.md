@@ -43,10 +43,11 @@ The most common ways to synchronize the activities of threads are to block and r
   
 -   <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> wakes a thread out of any wait it might be in and causes a <xref:System.Threading.ThreadAbortException> to be thrown on the thread. For details, see [Destroying Threads](../../../docs/standard/threading/destroying-threads.md).  
   
-## See Also  
- <xref:System.Threading.Thread>  
- <xref:System.Threading.ThreadInterruptedException>  
- <xref:System.Threading.ThreadAbortException>  
- [Threading](../../../docs/standard/threading/index.md)  
- [Using Threads and Threading](../../../docs/standard/threading/using-threads-and-threading.md)  
- [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md)
+## See also
+
+- <xref:System.Threading.Thread>  
+- <xref:System.Threading.ThreadInterruptedException>  
+- <xref:System.Threading.ThreadAbortException>  
+- [Threading](../../../docs/standard/threading/index.md)  
+- [Using Threads and Threading](../../../docs/standard/threading/using-threads-and-threading.md)  
+- [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md)

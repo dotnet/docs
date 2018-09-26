@@ -31,7 +31,7 @@ Receive approveExpense = new Receive
   
  Click the **Add new type** link and use the drop down to select or search for a type to add to the known types collection. To specify known types in code use the <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> property as shown in the following example.  
   
-```  
+```csharp
 Receive approveExpense = new Receive  
             {  
                 OperationName = "ApproveExpense",  
@@ -42,6 +42,4 @@ Receive approveExpense = new Receive
             };  
             approveExpense.KnownTypes.Add(typeof(Travel));  
             approveExpense.KnownTypes.Add(typeof(Meal));  
-```  
-  
- To see a complete code example showing how to configure serialization for a workflow service see [Formatting messages in Workflow Services](../../../../docs/framework/windows-workflow-foundation/samples/formatting-messages-in-workflow-services.md).
+```

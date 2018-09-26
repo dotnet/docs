@@ -21,7 +21,6 @@ helpviewer_keywords:
 ms.assetid: 8cce2742-8d52-4643-9dd2-64ddf38aa878
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Basic and Digest Authentication
 The <xref:System.Net> implementation of basic and digest authentication complies with RFC2617 – HTTP Authentication: Basic and Digest Authentication (available on the World Wide Web Consortium's Web site at www.w3.org).  

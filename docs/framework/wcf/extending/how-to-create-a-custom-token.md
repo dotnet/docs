@@ -24,7 +24,7 @@ This topic shows how to create a custom security token using the <xref:System.Id
   
  See the <xref:System.IdentityModel.Tokens> namespace for more classes that represent security tokens.  
   
- For more information about credentials, security token manager, and provider and authenticator classes, see [Security Architecture](http://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f).  
+ For more information about credentials, security token manager, and provider and authenticator classes, see [Security Architecture](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f).  
   
 ## Procedures  
  A client application must be provided with a way to specify credit card information for the security infrastructure. This information is made available to the application by a custom client credentials class. The first step is to create a class to represent the credit card information for custom client credentials.  
@@ -159,4 +159,4 @@ This topic shows how to create a custom security token using the <xref:System.Id
  [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)  
  [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)  
  [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)  
- [Security Architecture](http://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)
+ [Security Architecture](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)

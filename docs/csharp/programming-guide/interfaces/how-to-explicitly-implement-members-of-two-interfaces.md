@@ -21,8 +21,9 @@ Explicit [interface](../../../csharp/language-reference/keywords/interface.md) i
   
  [!code-csharp[csProgGuideInheritance#11](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-explicitly-implement-members-of-two-interfaces_3.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
- [How to: Explicitly Implement Interface Members](../../../csharp/programming-guide/interfaces/how-to-explicitly-implement-interface-members.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
+- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
+- [How to: Explicitly Implement Interface Members](../../../csharp/programming-guide/interfaces/how-to-explicitly-implement-interface-members.md)

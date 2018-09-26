@@ -6,7 +6,6 @@ dev_langs:
   - "vb"
 ms.assetid: 056653a5-384e-4a02-ae3c-1b0157d2ccb4
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Transport Security with an Anonymous Client
 This Windows Communication Foundation (WCF) scenario uses transport security (HTTPS) to ensure confidentiality and integrity. The server must be authenticated with a Secure Sockets Layer (SSL) certificate, and the clients must trust the server's certificate. The client is not authenticated by any mechanism and is, therefore, anonymous.  
@@ -114,4 +113,4 @@ This Windows Communication Foundation (WCF) scenario uses transport security (HT
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [WS Transport Security](../../../../docs/framework/wcf/samples/ws-transport-security.md)  
  [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+ [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

@@ -3,7 +3,6 @@ title: "Service: Security Validation and Authentication Failures Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 4af18009-e778-490b-9ba6-e76485285830
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Service: Security Validation and Authentication Failures Per Second
 Counter name: Security Validation and Authentication Failures Per Second.  
@@ -25,6 +24,6 @@ Counter name: Security Validation and Authentication Failures Per Second.
   
 -   Errors have occurred during TLSNEGO/SPNEGO handshake.  
   
- This counter is of performance counter type [PERF_COUNTER_COUNTER](http://go.microsoft.com/fwlink/?LinkID=94649), whose value is calculated using the following formula,  
+ This counter is of performance counter type [PERF_COUNTER_COUNTER](https://go.microsoft.com/fwlink/?LinkID=94649), whose value is calculated using the following formula,  
   
  (N 1 - N 0 ) / ( (D 1 -D 0 ) / F)

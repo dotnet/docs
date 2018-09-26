@@ -42,6 +42,7 @@ This example shows how to add, retrieve, update, and remove items from a <xref:S
   
  Therefore, it is not guaranteed that the data that is returned by <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A> is the same data that was created by the thread's valueFactory. A similar sequence of events can occur when <xref:System.Collections.Concurrent.ConcurrentDictionary%602.AddOrUpdate%2A> is called.  
   
-## See Also  
- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)
+## See also
+
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
+- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)

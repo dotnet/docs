@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: e6fa8ebd-010a-4c48-a5ec-a5102c53c06f
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Internet Protocol Version 6
 The Internet Protocol version 6 (IPv6) is a new suite of standard protocols for the network layer of the Internet. IPv6 is designed to solve many of the problems of the current version of the Internet Protocol suite (known as IPv4) with regard to address depletion, security, auto-configuration, extensibility, and so on. IPv6 expands the capabilities of the Internet to enable new kinds of applications, including peer-to-peer and mobile applications. The following are the main issues of the current IPv4 protocol:  
@@ -52,7 +51,7 @@ The Internet Protocol version 6 (IPv6) is a new suite of standard protocols for 
   
 -   RFC 2374, An IPv6 Aggregatable Global Unicast Address Format.  
   
- You can also find IPv6-related information on the [IPv6 area on Technet](http://go.microsoft.com/fwlink/?LinkID=179658).  
+ You can also find IPv6-related information on the [IPv6 area on Technet](https://go.microsoft.com/fwlink/?LinkID=179658).  
   
 ## See Also  
  [IPv6 Sockets Sample](https://msdn.microsoft.com/library/ms180981(v=vs.85).aspx)  

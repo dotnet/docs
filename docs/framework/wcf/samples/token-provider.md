@@ -3,7 +3,6 @@ title: "Token Provider"
 ms.date: "03/30/2017"
 ms.assetid: 947986cf-9946-4987-84e5-a14678d96edb
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Token Provider
 This sample demonstrates how to implement a custom token provider. A token provider in Windows Communication Foundation (WCF) is used for supplying credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. WCF ships with the default Credential Manager Token Provider. WCF also ships with an [!INCLUDE[infocard](../../../../includes/infocard-md.md)] token provider. Custom token providers are useful in the following cases:
@@ -251,42 +250,42 @@ static void DisplayIdentityInformation()
 1.  Run Setup.bat from the sample installation folder inside a Visual Studio 2012 command prompt opened with administrator privileges. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.
-
-2.  Launch service.exe from service\bin.
-
-3.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.
-
-4.  At the username prompt, type a user name.
-
-5.  At the password prompt, use the same string that was typed for the username prompt.
-
-6.  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
-
-#### To run the sample across computers
-
-1.  Create a directory on the service computer for the service binaries.
-
-2.  Copy the service program files to the service directory on the service computer. Also copy the Setup.bat and Cleanup.bat files to the service computer.
-
-3.  You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The Service.exe.config file must be updated to reflect this new certificate name. You can create server certificate by modifying the Setup.bat batch file. Note that the setup.bat file must be run from a Visual Studio command prompt opened with administrator privileges. You must set `%SERVER_NAME%` variable to fully-qualified host name of the computer that is used to host the service.
-
-4.  Copy the server certificate into the CurrentUser-TrustedPeople store of the client. You do not need to do this when the server certificate is issued by a client trusted issuer.
-
-5.  In the Service.exe.config file on the service computer, change the value of the base address to specify a fully-qualified computer name instead of localhost.
-
-6.  On the service computer, run service.exe from a command prompt.
-
-7.  Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.
-
-8.  In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service.
-
-9. On the client computer, launch `Client.exe` from a command prompt window.
-
-10. If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
-
-#### To clean up after the sample
-
-1.  Run Cleanup.bat in the samples folder once you have finished running the sample.
-
+    >  The Setup.bat batch file is designed to be run from a [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Command Prompt. The PATH environment variable set within the [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Command Prompt points to the directory that contains executables required by the Setup.bat script.  
+  
+2.  Launch service.exe from service\bin.  
+  
+3.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
+  
+4.  At the username prompt, type a user name.  
+  
+5.  At the password prompt, use the same string that was typed for the username prompt.  
+  
+6.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+  
+#### To run the sample across computers  
+  
+1.  Create a directory on the service computer for the service binaries.  
+  
+2.  Copy the service program files to the service directory on the service computer. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
+  
+3.  You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The Service.exe.config file must be updated to reflect this new certificate name. You can create server certificate by modifying the Setup.bat batch file. Note that the setup.bat file must be run from a Visual Studio command prompt opened with administrator privileges. You must set `%SERVER_NAME%` variable to fully-qualified host name of the computer that is used to host the service.  
+  
+4.  Copy the server certificate into the CurrentUser-TrustedPeople store of the client. You do not need to do this when the server certificate is issued by a client trusted issuer.  
+  
+5.  In the Service.exe.config file on the service computer, change the value of the base address to specify a fully-qualified computer name instead of localhost.  
+  
+6.  On the service computer, run service.exe from a command prompt.  
+  
+7.  Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.  
+  
+8.  In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service.  
+  
+9. On the client computer, launch `Client.exe` from a command prompt window.  
+  
+10. If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+  
+#### To clean up after the sample  
+  
+1.  Run Cleanup.bat in the samples folder once you have finished running the sample.  
+  
 ## See Also

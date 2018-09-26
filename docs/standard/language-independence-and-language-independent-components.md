@@ -579,5 +579,6 @@ vbc example.vb /r:UtilityLib.dll
 csc example.cs /r:UtilityLib.dll  
 ```  
   
-## See Also  
- <xref:System.CLSCompliantAttribute>
+## See also
+
+- <xref:System.CLSCompliantAttribute>

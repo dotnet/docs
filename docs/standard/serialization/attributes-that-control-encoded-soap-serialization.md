@@ -26,12 +26,12 @@ For more information about attributes, see [Attributes](../../../docs/standard/a
 |<xref:System.Xml.Serialization.SoapIncludeAttribute>|Public-derived class declarations and public methods for Web Services Description Language (WSDL) documents.|The type should be included when generating schemas (to be recognized when serialized).|
 |<xref:System.Xml.Serialization.SoapTypeAttribute>|Public class declarations.|The class should be serialized as an XML type.|
 
-## See Also
+## See also
 
-[XML and SOAP Serialization](xml-and-soap-serialization.md)  
-[How to: Serialize an Object as a SOAP-Encoded XML Stream](how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md)  
-[How to: Override Encoded SOAP XML Serialization](how-to-override-encoded-soap-xml-serialization.md)  
-[Attributes](../../../docs/standard/attributes/index.md)  
-<xref:System.Xml.Serialization.XmlSerializer>  
-[How to: Serialize an Object](how-to-serialize-an-object.md)  
-[How to: Deserialize an Object](how-to-deserialize-an-object.md)
+- [XML and SOAP Serialization](xml-and-soap-serialization.md)  
+- [How to: Serialize an Object as a SOAP-Encoded XML Stream](how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md)  
+- [How to: Override Encoded SOAP XML Serialization](how-to-override-encoded-soap-xml-serialization.md)  
+- [Attributes](../../../docs/standard/attributes/index.md)  
+- <xref:System.Xml.Serialization.XmlSerializer>  
+- [How to: Serialize an Object](how-to-serialize-an-object.md)  
+- [How to: Deserialize an Object](how-to-deserialize-an-object.md)

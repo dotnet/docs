@@ -9,17 +9,19 @@ helpviewer_keywords:
   - "controls [WPF], DataGrid"
 ms.assetid: 6810b048-0a23-4f86-bfa5-97f92b3cfab4
 ---
-# Walkthrough: Display Data from a SQL Server Database in a DataGrid Control
+# Walkthrough: Display data from a SQL Server database in a DataGrid control
+
 In this walkthrough, you retrieve data from a SQL Server database and display that data in a <xref:System.Windows.Controls.DataGrid> control. You use the ADO.NET Entity Framework to create the entity classes that represent the data, and use LINQ to write a query that retrieves the specified data from an entity class.
 
 ## Prerequisites
- You need the following components to complete this walkthrough:
 
--   Visual Studio 2012.
+You need the following components to complete this walkthrough:
+
+-   Visual Studio.
 
 -   Access to a running instance of SQL Server or SQL Server Express that has the AdventureWorks sample database attached to it. You can download the AdventureWorks database from the [GitHub](https://github.com/Microsoft/sql-server-samples/releases).
 
-### To create entity classes
+## Create entity classes
 
 1.  Create a new WPF Application project in Visual Basic or C#, and name it `DataGridSQLExample`.
 
@@ -27,37 +29,33 @@ In this walkthrough, you retrieve data from a SQL Server database and display th
 
      The Add New Item dialog box appears.
 
-3.  In the Installed Templates pane, select **Data** and in the list of templates, select **ADO.NET Entity Data Mode**l.
+3.  In the Installed Templates pane, select **Data** and in the list of templates, select **ADO.NET Entity Data Model**.
 
-     ![Select ADO.NET Entity Data Model](../../../../docs/framework/wpf/controls/media/datagrid-sql-ef-step1.png "DataGrid_SQL_EF_Step1")
+     ![ADO.NET Entity Data Model item template](../../wcf/feature-details/media/ado-net-entity-data-model-item-template.png)
 
 4.  Name the file `AdventureWorksModel.edmx` and then click **Add**.
 
      The Entity Data Model Wizard appears.
 
-5.  In the Choose Model Contents screen, select **Generate from database** and then click **Next**.
+5.  In the Choose Model Contents screen, select **EF Designer from database** and then click **Next**.
 
-     ![Select Generate from database option](../../../../docs/framework/wpf/controls/media/datagrid-sql-ef-step2.png "DataGrid_SQL_EF_Step2")
+6.  In the Choose Your Data Connection screen, provide the connection to your AdventureWorksLT2008 database. For more information, see [Choose Your Data Connection Dialog Box](https://go.microsoft.com/fwlink/?LinkId=160190).
 
-6.  In the Choose Your Data Connection screen, provide the connection to your AdventureWorksLT2008 database. For more information, see [Choose Your Data Connection Dialog Box](http://go.microsoft.com/fwlink/?LinkId=160190).
+    Make sure that the name is `AdventureWorksLT2008Entities` and that the **Save entity connection settings in App.Config as** check box is selected, and then click **Next**.
 
-     ![Provide connection to database](../../../../docs/framework/wpf/controls/media/datagrid-sql-ef-step3.png "DataGrid_SQL_EF_Step3")
-
-7.  Make sure that the name is `AdventureWorksLT2008Entities` and that the **Save entity connection settings in App.Config as** check box is selected, and then click **Next**.
-
-8.  In the Choose Your Database Objects screen, expand the Tables node, and select the **Product** and **ProductCategory** tables.
+7.  In the Choose Your Database Objects screen, expand the Tables node, and select the **Product** and **ProductCategory** tables.
 
      You can generate entity classes for all of the tables; however, in this example you only retrieve data from those two tables.
 
      ![Select Product and ProductCategory from tables](../../../../docs/framework/wpf/controls/media/datagrid-sql-ef-step4.png "DataGrid_SQL_EF_Step4")
 
-9. Click **Finish**.
+8. Click **Finish**.
 
      The Product and ProductCategory entities are displayed in the Entity Designer.
 
      ![Product and ProductCategory entity models](../../../../docs/framework/wpf/controls/media/datagrid-sql-ef-step5.png "DataGrid_SQL_EF_Step5")
 
-### To retrieve and present the data
+## Retrieve and present the data
 
 1.  Open the MainWindow.xaml file.
 
@@ -71,12 +69,12 @@ In this walkthrough, you retrieve data from a SQL Server database and display th
 
 4.  Select the <xref:System.Windows.Window>.
 
-5.  Using the Properties window or XAML editor, create an event handler for the <xref:System.Windows.Window> named `Window_Loaded` for the <xref:System.Windows.FrameworkElement.Loaded> event. For more information, see [How to: Create a Simple Event Handler](http://msdn.microsoft.com/library/b1456e07-9dec-4354-99cf-18666b64f480).
+5.  Using the Properties window or XAML editor, create an event handler for the <xref:System.Windows.Window> named `Window_Loaded` for the <xref:System.Windows.FrameworkElement.Loaded> event. For more information, see [How to: Create a Simple Event Handler](https://msdn.microsoft.com/library/b1456e07-9dec-4354-99cf-18666b64f480).
 
      The following shows the XAML for MainWindow.xaml.
 
     > [!NOTE]
-    >  If you are using Visual Basic, in the first line of MainWindow.xaml, replace `x:Class="DataGridSQLExample.MainWindow"` with `x:Class="MainWindow"`.
+    > If you are using Visual Basic, in the first line of MainWindow.xaml, replace `x:Class="DataGridSQLExample.MainWindow"` with `x:Class="MainWindow"`.
 
      [!code-xaml[DataGrid_SQL_EF_Walkthrough#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataGrid_SQL_EF_Walkthrough/CS/MainWindow.xaml#1)]
 
@@ -93,9 +91,7 @@ In this walkthrough, you retrieve data from a SQL Server database and display th
 
      ![DataGrid with data from SQL database](../../../../docs/framework/wpf/controls/media/datagrid-sql-ef-step7.png "DataGrid_SQL_EF_Step7")
 
-## Next Steps
-
-## See Also
+## See also
 
 - <xref:System.Windows.Controls.DataGrid>
-- [How Do I: Get Started with Entity Framework in WPF Applications?](http://go.microsoft.com/fwlink/?LinkId=159868)
+- [How Do I: Get Started with Entity Framework in WPF Applications?](https://go.microsoft.com/fwlink/?LinkId=159868)

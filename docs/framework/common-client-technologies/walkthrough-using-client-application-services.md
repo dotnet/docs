@@ -10,77 +10,75 @@ helpviewer_keywords:
 ms.assetid: bb7c8950-4517-4dae-b705-b74a14059b26
 ---
 # Walkthrough: Using Client Application Services
-
-This topic describes how to create a Windows application that uses client application services to authenticate users and retrieve user roles and settings.
-
-In this walkthrough, you perform the following tasks:
-
--   Create a Windows Forms application and use the Visual Studio project designer to enable and configure client application services.
-
--   Create a simple ASP.NET Web Service application to host the application services and test your client configuration.
-
--   Add forms authentication to your application. You will start by using a hard-coded user name and password to test the service. You will then add a login form by specifying it as a credentials provider in your application configuration.
-
--   Add role-based functionality, enabling and displaying a button only for users in the "manager" role.
-
--   Access Web settings. You will start by loading Web settings for an authenticated (test) user on the **Settings** page of the project designer. You will then use the Windows Forms Designer to bind a text box to a Web setting. Finally, you will save the modified value back to the server.
-
--   Implement logout. You will add a logout option to the form and call a logout method.
-
--   Enable offline mode. You will provide a check box so that users can specify their connection status. You will then use this value to specify whether the client application service providers will use locally cached data instead of accessing their Web services. Finally, you will re-authenticate the current user when the application returns to online mode.
-
-## Prerequisites
-
-You need the following component to complete this walkthrough:
-
--   Visual Studio 2008.
-
-## Creating the Client Application
- The first thing that you will do is create a Windows Forms project. This walkthrough uses Windows Forms because more people are familiar with it, but the process is similar for Windows Presentation Foundation (WPF) projects.
-
-### To create a client application and enable client application services
-
-1.  In Visual Studio, select the **File &#124; New &#124; Project** menu option.
-
-2.  In the **New Project** dialog box, in the **Project types** pane, expand the **Visual Basic** or **Visual C#** node and select the **Windows** project type.
-
-3.  Make sure that **.NET Framework 3.5** is selected, and then select the **Windows Forms Application** template.
-
-4.  Change the project **Name** to `ClientAppServicesDemo`, and then click **OK**.
-
-     A new Windows Forms project is opened in Visual Studio.
-
-5.  On the **Project** menu, select **ClientAppServicesDemo Properties**.
-
-     The project designer appears.
-
-6.  On the **Services** tab, select **Enable client application services**.
-
-7.  Make sure that **Use Forms authentication** is selected, and then set **Authentication service location**, **Roles service location**, and **Web settings service location** to `http://localhost:55555/AppServices`.
-
-8.  For Visual Basic, on the **Application** tab, set **Authentication mode** to **Application-defined**.
-
- The designer stores the specified settings in the application's app.config file.
-
- At this point, the application is configured to access all three services from the same host. In the next section, you will create the host as a simple Web service application, enabling you to test your client configuration.
-
-## Creating the Application Services Host
- In this section, you will create a simple Web service application that accesses user data from a local SQL Server Compact database file. Then, you will populate the database using the [ASP.NET Web Site Administration Tool](http://msdn.microsoft.com/library/100ddd8b-7d11-4df9-91ef-0bbbe92e5aec). This simple configuration enables you to quickly test your client application. As an alternative, you can configure the Web service host to access user data from a full SQL Server database or through custom <xref:System.Web.Security.MembershipProvider> and <xref:System.Web.Security.RoleProvider> classes. For more information, see [Creating and Configuring the Application Services Database for SQL Server](http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2).
-
- In the following procedure, you create and configure the AppServices Web service.
-
-### To create and configure the application services host
-
-1.  In **Solution Explorer**, select the ClientAppServicesDemo solution, and then on the **File** menu, select **Add &#124; New Project**.
-
-2.  In the **Add New Project** dialog box, in the **Project types** pane, expand the **Visual Basic** or **Visual C#** node and select the **Web** project type.
-
-3.  Make sure that **.NET Framework 3.5** is selected, and then select the **ASP.NET Web Service Application** template.
-
-4.  Change the project **Name** to `AppServices` and then click **OK**.
-
-     A new ASP.NET Web service application project is added to the solution, and the Service1.asmx.vb or Service1.asmx.cs file appears in the editor.
-
+This topic describes how to create a Windows application that uses client application services to authenticate users and retrieve user roles and settings.  
+  
+ In this walkthrough, you perform the following tasks:  
+  
+-   Create a Windows Forms application and use the Visual Studio project designer to enable and configure client application services.  
+  
+-   Create a simple ASP.NET Web Service application to host the application services and test your client configuration.  
+  
+-   Add forms authentication to your application. You will start by using a hard-coded user name and password to test the service. You will then add a login form by specifying it as a credentials provider in your application configuration.  
+  
+-   Add role-based functionality, enabling and displaying a button only for users in the "manager" role.  
+  
+-   Access Web settings. You will start by loading Web settings for an authenticated (test) user on the **Settings** page of the project designer. You will then use the Windows Forms Designer to bind a text box to a Web setting. Finally, you will save the modified value back to the server.  
+  
+-   Implement logout. You will add a logout option to the form and call a logout method.  
+  
+-   Enable offline mode. You will provide a check box so that users can specify their connection status. You will then use this value to specify whether the client application service providers will use locally cached data instead of accessing their Web services. Finally, you will re-authenticate the current user when the application returns to online mode.  
+  
+## Prerequisites  
+ You need the following component to complete this walkthrough:  
+  
+-   [!INCLUDE[vs_orcas_long](../../../includes/vs-orcas-long-md.md)].  
+  
+## Creating the Client Application  
+ The first thing that you will do is create a Windows Forms project. This walkthrough uses Windows Forms because more people are familiar with it, but the process is similar for Windows Presentation Foundation (WPF) projects.  
+  
+#### To create a client application and enable client application services  
+  
+1.  In Visual Studio, select the **File &#124; New &#124; Project** menu option.  
+  
+2.  In the **New Project** dialog box, in the **Project types** pane, expand the **Visual Basic** or **Visual C#** node and select the **Windows** project type.  
+  
+3.  Make sure that **.NET Framework 3.5** is selected, and then select the **Windows Forms Application** template.  
+  
+4.  Change the project **Name** to `ClientAppServicesDemo`, and then click **OK**.  
+  
+     A new Windows Forms project is opened in Visual Studio.  
+  
+5.  On the **Project** menu, select **ClientAppServicesDemo Properties**.  
+  
+     The project designer appears.  
+  
+6.  On the **Services** tab, select **Enable client application services**.  
+  
+7.  Make sure that **Use Forms authentication** is selected, and then set **Authentication service location**, **Roles service location**, and **Web settings service location** to `http://localhost:55555/AppServices`.  
+  
+8.  For Visual Basic, on the **Application** tab, set **Authentication mode** to **Application-defined**.  
+  
+ The designer stores the specified settings in the application's app.config file.  
+  
+ At this point, the application is configured to access all three services from the same host. In the next section, you will create the host as a simple Web service application, enabling you to test your client configuration.  
+  
+## Creating the Application Services Host  
+ In this section, you will create a simple Web service application that accesses user data from a local SQL Server Compact database file. Then, you will populate the database using the [ASP.NET Web Site Administration Tool](https://msdn.microsoft.com/library/100ddd8b-7d11-4df9-91ef-0bbbe92e5aec). This simple configuration enables you to quickly test your client application. As an alternative, you can configure the Web service host to access user data from a full SQL Server database or through custom <xref:System.Web.Security.MembershipProvider> and <xref:System.Web.Security.RoleProvider> classes. For more information, see [Creating and Configuring the Application Services Database for SQL Server](https://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2).  
+  
+ In the following procedure, you create and configure the AppServices Web service.  
+  
+#### To create and configure the application services host  
+  
+1.  In **Solution Explorer**, select the ClientAppServicesDemo solution, and then on the **File** menu, select **Add &#124; New Project**.  
+  
+2.  In the **Add New Project** dialog box, in the **Project types** pane, expand the **Visual Basic** or **Visual C#** node and select the **Web** project type.  
+  
+3.  Make sure that **.NET Framework 3.5** is selected, and then select the **ASP.NET Web Service Application** template.  
+  
+4.  Change the project **Name** to `AppServices` and then click **OK**.  
+  
+     A new ASP.NET Web service application project is added to the solution, and the Service1.asmx.vb or Service1.asmx.cs file appears in the editor.  
+  
     > [!NOTE]
     > The Service1.asmx.vb or Service1.asmx.cs file is not used in this example. If you want to keep your work environment uncluttered, you can close it and delete it from **Solution Explorer**.
 
@@ -101,89 +99,89 @@ You need the following component to complete this walkthrough:
      The `authenticationService`, `profileService`, and `roleService` elements in this markup enable and configure the application services. For testing purposes, the `requireSSL` attribute of the `authenticationService` element is set to "false". The `readAccessProperties` and `writeAccessProperties` attributes of the `profileService` element indicate that the `WebSettingsTestText` property is read/write.
 
     > [!NOTE]
-    > In production code, you should always access the authentication service over the secure sockets layer (SSL, by using the HTTPS protocol). For information about how to set up SSL, see [Configuring Secure Sockets Layer (IIS 6.0 Operations Guide)](http://go.microsoft.com/fwlink/?LinkId=91844).
-
-    ```xml
-    <system.web.extensions>
-      <scripting>
-        <webServices>
-          <authenticationService enabled="true" requireSSL = "false"/>
-          <profileService enabled="true"
-            readAccessProperties="WebSettingsTestText"
-            writeAccessProperties="WebSettingsTestText" />
-          <roleService enabled="true"/>
-        </webServices>
-      </scripting>
-    </system.web.extensions>
-    ```
-
-11. Add the following markup after the `<system.web>` opening tag so that it is within the `<system.web>` element.
-
-     The `profile` element configures a single Web setting named `WebSettingsTestText`.
-
-    ```xml
-    <profile enabled="true" >
-      <properties>
-        <add name="WebSettingsTestText" type="string"
-          readOnly="false" defaultValue="DefaultText"
-          serializeAs="String" allowAnonymous="false" />
-      </properties>
-    </profile>
-    ```
-
- In the following procedure, you use the ASP.NET Web Site Administration tool to complete the service configuration and populate the local database file. You will add two users named `employee` and `manager` belonging to two roles with the same names. The user passwords are `employee!` and `manager!` respectively.
-
-### To configure membership and roles
-
-1.  In **Solution Explorer**, select the AppServices project, and then on the **Project** menu, select **ASP.NET Configuration**.
-
-     The **ASP.NET Web Site Administration Tool** appears.
-
-2.  On the **Security** tab, click **Use the security Setup Wizard to configure security step by step**.
-
-     The **Security Setup Wizard** appears and displays the **Welcome** step.
-
-3.  Click **Next**.
-
-     The **Select Access Method** step appears.
-
-4.  Select **From the internet**. This configures the service to use Forms authentication instead of Windows authentication.
-
-5.  Click **Next** twice.
-
-     The **Define Roles** step appears.
-
-6.  Select **Enable roles for this Web site**.
-
-7.  Click **Next**. The **Create New Role** form appears.
-
-8.  In the **New Role Name** text box, type `manager` and then click **Add Role**.
-
-     The **Existing Roles** table appears with the specified value.
-
-9. In the **New Role Name** text box, replace `manager` with `employee` and then click **Add Role**.
-
-     The new value appears in the **Existing Roles** table.
-
-10. Click **Next**.
-
-     The **Add New Users** step appears.
-
-11. In the **Create User** form, specify the following values.
-
-    |||
-    |-|-|
-    |**User Name**|`manager`|
-    |**Password**|`manager!`|
-    |**Confirm Password**|`manager!`|
-    |**Email**|`manager@contoso.com`|
-    |**Security Question**|`manager`|
-    |**Security Answer**|`manager`|
-
-12. Click **Create User**.
-
-     A success message appears.
-
+    >  In production code, you should always access the authentication service over the secure sockets layer (SSL, by using the HTTPS protocol). For information about how to set up SSL, see [Configuring Secure Sockets Layer (IIS 6.0 Operations Guide)](https://go.microsoft.com/fwlink/?LinkId=91844).  
+  
+    ```xml  
+    <system.web.extensions>  
+      <scripting>  
+        <webServices>  
+          <authenticationService enabled="true" requireSSL = "false"/>  
+          <profileService enabled="true"  
+            readAccessProperties="WebSettingsTestText"  
+            writeAccessProperties="WebSettingsTestText" />  
+          <roleService enabled="true"/>  
+        </webServices>  
+      </scripting>  
+    </system.web.extensions>  
+    ```  
+  
+11. Add the following markup after the `<system.web>` opening tag so that it is within the `<system.web>` element.  
+  
+     The `profile` element configures a single Web setting named `WebSettingsTestText`.  
+  
+    ```xml  
+    <profile enabled="true" >  
+      <properties>  
+        <add name="WebSettingsTestText" type="string"   
+          readOnly="false" defaultValue="DefaultText"   
+          serializeAs="String" allowAnonymous="false" />  
+      </properties>  
+    </profile>  
+    ```  
+  
+ In the following procedure, you use the ASP.NET Web Site Administration tool to complete the service configuration and populate the local database file. You will add two users named `employee` and `manager` belonging to two roles with the same names. The user passwords are `employee!` and `manager!` respectively.  
+  
+#### To configure membership and roles  
+  
+1.  In **Solution Explorer**, select the AppServices project, and then on the **Project** menu, select **ASP.NET Configuration**.  
+  
+     The **ASP.NET Web Site Administration Tool** appears.  
+  
+2.  On the **Security** tab, click **Use the security Setup Wizard to configure security step by step**.  
+  
+     The **Security Setup Wizard** appears and displays the **Welcome** step.  
+  
+3.  Click **Next**.  
+  
+     The **Select Access Method** step appears.  
+  
+4.  Select **From the internet**. This configures the service to use Forms authentication instead of Windows authentication.  
+  
+5.  Click **Next** twice.  
+  
+     The **Define Roles** step appears.  
+  
+6.  Select **Enable roles for this Web site**.  
+  
+7.  Click **Next**. The **Create New Role** form appears.  
+  
+8.  In the **New Role Name** text box, type `manager` and then click **Add Role**.  
+  
+     The **Existing Roles** table appears with the specified value.  
+  
+9. In the **New Role Name** text box, replace `manager` with `employee` and then click **Add Role**.  
+  
+     The new value appears in the **Existing Roles** table.  
+  
+10. Click **Next**.  
+  
+     The **Add New Users** step appears.  
+  
+11. In the **Create User** form, specify the following values.  
+  
+    |||  
+    |-|-|  
+    |**User Name**|`manager`|  
+    |**Password**|`manager!`|  
+    |**Confirm Password**|`manager!`|  
+    |**Email**|`manager@contoso.com`|  
+    |**Security Question**|`manager`|  
+    |**Security Answer**|`manager`|  
+  
+12. Click **Create User**.  
+  
+     A success message appears.  
+  
     > [!NOTE]
     > The **Email**, **Security Question**, and **Security Answer** values are required by the form, but are not used in this example.
 
@@ -518,23 +516,22 @@ To test the logout functionality, run the application and select **Remember me**
 7.  Add the following code to the end of the `Form1_Load` method to make sure that the check box displays the current connection state.
 
      [!code-csharp[ClientApplicationServices#014](../../../samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Form1.cs#014)]
-     [!code-vb[ClientApplicationServices#014](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Form1.vb#014)]
-
-This completes the example application. To test the offline capability, run the application, log in as either employee or manager, and then select **Work offline**. Modify the value in the text box, and then close the application. Restart the application. Before you log in, right-click the ASP.NET Development Server icon in the notification area of the taskbar and then click **Stop**. Then, log in like normal. Even when the server is not running, you can still log in. Modify the text box value, exit, and restart to see the modified value.
-
-## Summary
- In this walkthrough, you learned how to enable and use client application services in a Windows Forms application. After setting up a test server, you added code to your application to authenticate users and retrieve user roles and application settings from the server. You also learned how to enable offline mode so that your application uses a local data cache instead of the remote services when connectivity is not available.
-
-## Next Steps
- In a real-world application, you will access data for many users from a remote server that may not always be available, or may go down without notice. To make your application robust, you must respond appropriately to situations where the service is not available. This walkthrough includes try/catch blocks to catch a <xref:System.Net.WebException> and display an error message when the service is not available. In production code, you might want to handle this case by switching to offline mode, exiting the application, or denying access to specific functionality.
-
- To increase the security of your application, make sure to thoroughly test the application and server before deployment.
-
-## See Also
-
-- [Client Application Services](../../../docs/framework/common-client-technologies/client-application-services.md)
-- [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md)
-- [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md)
-- [ASP.NET Web Site Administration Tool](http://msdn.microsoft.com/library/100ddd8b-7d11-4df9-91ef-0bbbe92e5aec)
-- [Creating and Configuring the Application Services Database for SQL Server](http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)
-- [Walkthrough: Using ASP.NET Application Services](http://msdn.microsoft.com/library/f3f394f0-20d6-4361-aa8f-4b21bf4933eb)
+     [!code-vb[ClientApplicationServices#014](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Form1.vb#014)]  
+  
+ This completes the example application. To test the offline capability, run the application, log in as either employee or manager, and then select **Work offline**. Modify the value in the text box, and then close the application. Restart the application. Before you log in, right-click the ASP.NET Development Server icon in the notification area of the taskbar and then click **Stop**. Then, log in like normal. Even when the server is not running, you can still log in. Modify the text box value, exit, and restart to see the modified value.  
+  
+## Summary  
+ In this walkthrough, you learned how to enable and use client application services in a Windows Forms application. After setting up a test server, you added code to your application to authenticate users and retrieve user roles and application settings from the server. You also learned how to enable offline mode so that your application uses a local data cache instead of the remote services when connectivity is not available.  
+  
+## Next Steps  
+ In a real-world application, you will access data for many users from a remote server that may not always be available, or may go down without notice. To make your application robust, you must respond appropriately to situations where the service is not available. This walkthrough includes try/catch blocks to catch a <xref:System.Net.WebException> and display an error message when the service is not available. In production code, you might want to handle this case by switching to offline mode, exiting the application, or denying access to specific functionality.  
+  
+ To increase the security of your application, make sure to thoroughly test the application and server before deployment.  
+  
+## See Also  
+ [Client Application Services](../../../docs/framework/common-client-technologies/client-application-services.md)  
+ [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md)  
+ [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md)  
+ [ASP.NET Web Site Administration Tool](https://msdn.microsoft.com/library/100ddd8b-7d11-4df9-91ef-0bbbe92e5aec)  
+ [Creating and Configuring the Application Services Database for SQL Server](https://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)  
+ [Walkthrough: Using ASP.NET Application Services](https://msdn.microsoft.com/library/f3f394f0-20d6-4361-aa8f-4b21bf4933eb)

@@ -96,10 +96,10 @@ You can use the .NET Framework [Portable Class Library](../../../docs/standard/c
  The following code illustrates how the `UILibrary` class and its resources can be accessed from a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app. It requires a reference to UILIbrary.dll to be added to the Windows Store app project. It uses the static `ApplicationLanguages.PrimaryLanguageOverride` property to set the app's preferred language to French.
 
  [!code-csharp[Conceptual.Resources.PortableMetroLoc#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.portablemetroloc/cs/blankpage.xaml.cs#1)]
- [!code-vb[Conceptual.Resources.PortableMetroLoc#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.portablemetroloc/vb/blankpage.xaml.vb#1)]
+ [!code-vb[Conceptual.Resources.PortableMetroLoc#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.portablemetroloc/vb/blankpage.xaml.vb#1)]  
+  
+## See also
 
-## See Also
-
-- <xref:System.Resources.ResourceManager>
-- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
+- <xref:System.Resources.ResourceManager>  
+- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)  
 - [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)

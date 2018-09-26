@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "source element"
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;source&gt; Element
 Specifies a trace source that initiates tracing messages.  

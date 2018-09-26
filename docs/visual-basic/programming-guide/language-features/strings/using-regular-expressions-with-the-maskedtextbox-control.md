@@ -32,7 +32,7 @@ This example demonstrates how to convert simple regular expressions to work with
 |\<|Converts all characters that follow to lowercase.|Not available.|  
 |>|Converts all characters that follow to uppercase.|Not available.|  
 |&#124;|Undoes a previous shift up or shift down.|Not available.|  
-|\|Escapes a mask character, turning it into a literal. "\\\\" is the escape sequence for a backslash.|\|  
+|&#92;|Escapes a mask character, turning it into a literal. "\\\\" is the escape sequence for a backslash.|&#92;|  
 |All other characters.|Literals. All non-mask elements will appear as themselves within <xref:System.Windows.Forms.MaskedTextBox>.|All other characters.|  
   
  The decimal (.), thousandths (,), time (:), date (/), and currency ($) symbols default to displaying those symbols as defined by the application's culture. You can force them to display symbols for another culture by using the <xref:System.Windows.Forms.MaskedTextBox.FormatProvider%2A> property.  

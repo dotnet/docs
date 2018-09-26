@@ -420,44 +420,44 @@ iisreset
 1.  Run Setup.bat from the sample install folder inside a Visual Studio 2012 command prompt run with administrator privileges. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script. Be sure to remove the certificates by running Cleanup.bat when finished with the sample. Other security samples use the same certificates.
-
-2.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.
-
-3.  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
-
-##### To run the sample across machines
-
-1.  Create a directory on the service machine. Create a virtual application named servicemodelsamples for this directory using the Internet Information Services (IIS) management tool.
-
-2.  Copy the service program files from \inetpub\wwwroot\servicemodelsamples to the virtual directory on the service machine. Ensure that you copy the files in the \bin subdirectory. Also copy the Setup.bat, Cleanup.bat, and ImportClientCert.bat files to the service machine.
-
-3.  Create a directory on the client machine for the client binaries.
-
-4.  Copy the client program files to the client directory on the client machine. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.
-
-5.  On the server, run `setup.bat service` in a Visual Studio command prompt opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the machine and exports the service certificate to a file named Service.cer.
-
-6.  Edit Web.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the machine.
-
-7.  Copy the Service.cer file from the service directory to the client directory on the client machine.
-
-8.  On the client, run `setup.bat client` in a Visual Studio command prompt opened with administrator privileges. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.
-
-9. In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service. Do this by replacing localhost with the fully-qualified domain name of the server.
-
-10. Copy the Client.cer file from the client directory to the service directory on the server.
-
-11. On the client, run ImportServiceCert.bat. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.
-
-12. On the server, run ImportClientCert.bat, This imports the client certificate from the Client.cer file into the LocalMachine - TrustedPeople store.
-
-13. On the client machine, launch Client.exe from a command prompt window. If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
-
-##### To clean up after the sample
-
--   Run Cleanup.bat in the samples folder once you have finished running the sample.
-
+    >  The Setup.bat batch file is designed to be run from a [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Command Prompt. The PATH environment variable set within the [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Command Prompt points to the directory that contains executables required by the Setup.bat script. Be sure to remove the certificates by running Cleanup.bat when finished with the sample. Other security samples use the same certificates.  
+  
+2.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
+  
+3.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+  
+##### To run the sample across machines  
+  
+1.  Create a directory on the service machine. Create a virtual application named servicemodelsamples for this directory using the Internet Information Services (IIS) management tool.  
+  
+2.  Copy the service program files from \inetpub\wwwroot\servicemodelsamples to the virtual directory on the service machine. Ensure that you copy the files in the \bin subdirectory. Also copy the Setup.bat, Cleanup.bat, and ImportClientCert.bat files to the service machine.  
+  
+3.  Create a directory on the client machine for the client binaries.  
+  
+4.  Copy the client program files to the client directory on the client machine. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
+  
+5.  On the server, run `setup.bat service` in a Visual Studio command prompt opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the machine and exports the service certificate to a file named Service.cer.  
+  
+6.  Edit Web.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the machine.  
+  
+7.  Copy the Service.cer file from the service directory to the client directory on the client machine.  
+  
+8.  On the client, run `setup.bat client` in a Visual Studio command prompt opened with administrator privileges. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
+  
+9. In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service. Do this by replacing localhost with the fully-qualified domain name of the server.  
+  
+10. Copy the Client.cer file from the client directory to the service directory on the server.  
+  
+11. On the client, run ImportServiceCert.bat. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.  
+  
+12. On the server, run ImportClientCert.bat, This imports the client certificate from the Client.cer file into the LocalMachine - TrustedPeople store.  
+  
+13. On the client machine, launch Client.exe from a command prompt window. If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+  
+##### To clean up after the sample  
+  
+-   Run Cleanup.bat in the samples folder once you have finished running the sample.  
+  
 > [!NOTE]
 >  This script does not remove service certificates on a client when running this sample across machines. If you have run WCF samples that use certificates across machines, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.
 

@@ -54,8 +54,9 @@ Sometimes you might need to obtain a Windows account token to impersonate a Wind
   
  Note that neither **Impersonate** nor **Undo** changes the **Principal** object (<xref:System.Security.Principal.IPrincipal>)  associated with the current call context. Rather, impersonation and reverting change the token associated with the current operating system process..  
   
-## See Also  
- <xref:System.Security.Principal.WindowsIdentity>  
- <xref:System.Security.Principal.WindowsImpersonationContext>  
- [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)  
- [Interoperating with Unmanaged Code](../../../docs/framework/interop/index.md)
+## See also
+
+- <xref:System.Security.Principal.WindowsIdentity>  
+- <xref:System.Security.Principal.WindowsImpersonationContext>  
+- [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)  
+- [Interoperating with Unmanaged Code](../../../docs/framework/interop/index.md)

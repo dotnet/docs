@@ -15,31 +15,22 @@ ms.assetid: ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Creating and Using Strong-Named Assemblies
+# Create and use strong-named assemblies
 
-<a name="top"></a> A strong name consists of the assembly's identity—its simple text name, version number, and culture information (if provided)—plus a public key and a digital signature. It is generated from an assembly file using the corresponding private key. (The assembly file contains the assembly manifest, which contains the names and hashes of all the files that make up the assembly.)
+A strong name consists of the assembly's identity—its simple text name, version number, and culture information (if provided)—plus a public key and a digital signature. It is generated from an assembly file using the corresponding private key. (The assembly file contains the assembly manifest, which contains the names and hashes of all the files that make up the assembly.)
 
 > [!WARNING]
 > Do not rely on strong names for security. They provide a unique identity only.
 
- A strong-named assembly can only use types from other strong-named assemblies. Otherwise, the integrity of the strong-named assembly would be compromised.
+A strong-named assembly can only use types from other strong-named assemblies. Otherwise, the integrity of the strong-named assembly would be compromised.
 
- This overview contains the following sections:
-
--   [Strong Name Scenario](#strong_name_scenario)
-
--   [Bypassing Signature Verification of Trusted Assemblies](#bypassing_signature_verification)
-
--   [Related Topics](#related_topics)
-
-<a name="strong_name_scenario"></a>
-## Strong Name Scenario
+## Strong name scenario
 
 The following scenario outlines the process of signing an assembly with a strong name and later referencing it by that name.
 
 1.  Assembly A is created with a strong name using one of the following methods:
 
-    -   Using a development environment that supports creating strong names, such as Visual Studio 2005.
+    -   Using a development environment that supports creating strong names, such as Visual Studio.
 
     -   Creating a cryptographic key pair using the [Strong Name tool (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) and assigning that key pair to the assembly using either a command-line compiler or the [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md). The Windows Software Development Kit (SDK) provides both Sn.exe and Al.exe.
 
@@ -52,10 +43,7 @@ The following scenario outlines the process of signing an assembly with a strong
 > [!NOTE]
 > This scenario doesn't address trust issues. Assemblies can carry full Microsoft Authenticode signatures in addition to a strong name. Authenticode signatures include a certificate that establishes trust. It's important to note that strong names don't require code to be signed in this way. Strong names only provide a unique identity.
 
- [Back to top](#top)
-
-<a name="bypassing_signature_verification"></a>
-## Bypassing Signature Verification of Trusted Assemblies
+## Bypass signature verification of trusted assemblies
 
 Starting with the [!INCLUDE[net_v35SP1_long](../../../includes/net-v35sp1-long-md.md)], strong-name signatures are not validated when an assembly is loaded into a full-trust application domain, such as the default application domain for the `MyComputer` zone. This is referred to as the strong-name bypass feature. In a full-trust environment, demands for <xref:System.Security.Permissions.StrongNameIdentityPermission> always succeed for signed, full-trust assemblies, regardless of their signature. The strong-name bypass feature avoids the unnecessary overhead of strong-name signature verification of full-trust assemblies in this situation, allowing the assemblies to load faster.
 
@@ -71,10 +59,7 @@ The bypass feature applies to any assembly that is signed with a strong name and
 
 This feature can be disabled for individual applications or for a computer. See [How to: Disable the Strong-Name Bypass Feature](../../../docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md).
 
-[Back to top](#top)
-
-<a name="related_topics"></a>
-## Related Topics
+## Related topics
 
 |Title|Description|
 |-----------|-----------------|

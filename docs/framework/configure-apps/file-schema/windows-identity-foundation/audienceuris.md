@@ -3,7 +3,6 @@ title: "&lt;audienceUris&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 7a3d8515-d756-4afe-a22d-07cbe2217ee3
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;audienceUris&gt;
 Specifies the set of URIs that are acceptable identifiers of the relying party (RP). Tokens will not be accepted unless they are scoped for one of the allowed audience URIs.  

@@ -27,8 +27,8 @@ A type cannot directly overload the conditional logical operators [&&](../operat
 
 ## See also
 
-[C# Reference](../index.md)  
-[C# Programming Guide](../../programming-guide/index.md)  
-[C# Keywords](index.md)  
-[C# Operators](../operators/index.md)  
-[true](true.md)  
+- [C# Reference](../index.md)  
+- [C# Programming Guide](../../programming-guide/index.md)  
+- [C# Keywords](index.md)  
+- [C# Operators](../operators/index.md)  
+- [true](true.md)  

@@ -12,7 +12,7 @@ ms.assetid: 28d8faf2-490c-4e17-a447-df25a66f6679
 The topics in this section describe how to use the <xref:System.Windows.Controls.Panel> element and related [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)].  
   
 ## In This Section  
- [How to: Apply a LayoutTransform to an Element](http://msdn.microsoft.com/library/8221db67-d99f-4783-b65e-a6c5a52c03ab)  
+ [How to: Apply a LayoutTransform to an Element](https://msdn.microsoft.com/library/8221db67-d99f-4783-b65e-a6c5a52c03ab)  
  [Create a Custom Panel Element](../../../../docs/framework/wpf/controls/how-to-create-a-custom-panel-element.md)  
  [Override the Panel OnRender Method](../../../../docs/framework/wpf/controls/how-to-override-the-panel-onrender-method.md)  
  [Set the Height Properties of an Element](../../../../docs/framework/wpf/controls/how-to-set-the-height-properties-of-an-element.md)  

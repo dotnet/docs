@@ -19,7 +19,7 @@ ms.author: "ronpet"
 -   The [MissingMetadataException troubleshooter](http://dotnet.github.io/native/troubleshooter/method.html) for methods.  
   
 > [!NOTE]
->  This reference documents three exception types that are unique to [!INCLUDE[net_native](../../../includes/net-native-md.md)]. For reference documentation for the .NET Framework core reflection API, see [System.Reflection Namespaces](http://msdn.microsoft.com/library/gg145033.aspx). For reference documentation for the .NET Framework core interop API, see <xref:System.Runtime.InteropServices>.  
+>  This reference documents three exception types that are unique to [!INCLUDE[net_native](../../../includes/net-native-md.md)]. For reference documentation for the .NET Framework core reflection API, see [System.Reflection Namespaces](https://msdn.microsoft.com/library/gg145033.aspx). For reference documentation for the .NET Framework core interop API, see <xref:System.Runtime.InteropServices>.  
   
 ## System.Reflection namespace  
  The <xref:System.Reflection> namespace contains the core types used for reflection in the .NET Framework. For [!INCLUDE[net_native](../../../includes/net-native-md.md)], it also includes two new exception types:  

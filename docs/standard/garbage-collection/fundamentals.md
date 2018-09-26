@@ -290,5 +290,6 @@ Background workstation garbage collection
  ![Background server garbage collection](../../../docs/standard/garbage-collection/media/backgroundserver.png "BackgroundServer")  
 Background server garbage collection  
   
-## See Also  
- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)
+## See also
+
+- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)

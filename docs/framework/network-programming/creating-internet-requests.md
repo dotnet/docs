@@ -12,7 +12,6 @@ helpviewer_keywords:
 ms.assetid: faab683e-3f1e-4eee-b5e9-59f7245033d5
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Creating Internet Requests
 Applications create <xref:System.Net.WebRequest> instances through the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. This is a static method that creates a class derived from **WebRequest** based on the URI scheme passed to it.  

@@ -20,4 +20,4 @@ The following example shows how to use the `global` contextual keyword to specif
 
 ## See also
 
-[Namespaces](../../programming-guide/namespaces/index.md)
+- [Namespaces](../../programming-guide/namespaces/index.md)

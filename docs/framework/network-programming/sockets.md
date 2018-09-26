@@ -17,7 +17,6 @@ helpviewer_keywords:
 ms.assetid: 10d22735-bd37-42c1-a2be-c1932f979a7d
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Sockets
 The <xref:System.Net.Sockets> namespace contains a managed implementation of the Windows Sockets interface. All other network-access classes in the <xref:System.Net> namespace are built on top of this implementation of sockets.  

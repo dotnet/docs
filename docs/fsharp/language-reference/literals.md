@@ -11,6 +11,7 @@ The API reference links in this article will take you to MSDN (for now).
 This topic provides a table that shows how to specify the type of a literal in F#.
 
 ## Literal Types
+
 The following table shows the literal types in F#. Characters that represent digits in hexadecimal notation are not case-sensitive; characters that identify the type are case-sensitive.
 
 |Type|Description|Suffix or prefix|Examples|
@@ -37,6 +38,7 @@ The following table shows the literal types in F#. Characters that represent dig
 |String or byte[]|verbatim string|@ prefix|`@"\\server\share"` (Unicode)<br /><br />`@"\\server\share"B` (ASCII)|
 
 ## Remarks
+
 Unicode strings can contain explicit encodings that you can specify by using `\u` followed by a 16-bit hexadecimal code or UTF-32 encodings that you can specify by using `\U` followed by a 32-bit hexadecimal code that represents a Unicode surrogate pair.
 
 As of F# 3.1, you can use the `+` sign to combine string literals. You can also use the bitwise or (`|||`) operator to combine enum flags. For example, the following code is legal in F# 3.1:
@@ -57,8 +59,8 @@ let Literal3 = System.IO.FileAccess.Read ||| System.IO.FileAccess.Write
 
 The use of other bitwise operators isn't allowed.
 
-
 ## Named Literals
+
 Values that are intended to be constants can be marked with the [Literal](https://msdn.microsoft.com/library/465f36ce-d146-41c0-b425-679c509cd285) attribute. This attribute has the effect of causing a value to be compiled as a constant.
 
 In pattern matching expressions, identifiers that begin with lowercase characters are always treated as variables to be bound, rather than as literals, so you should generally use initial capitals when you define literals.
@@ -84,6 +86,6 @@ let DeadBeefAsBits = 0b1101_1110_1010_1101_1011_1110_1110_1111
 let ExampleSSN = 123_456_7890
 ```
 
-## See Also
+## See also
 
-[Core.LiteralAttribute Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.literalattribute-class-%5bfsharp%5d)
+- [Core.LiteralAttribute Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.literalattribute-class-%5bfsharp%5d)

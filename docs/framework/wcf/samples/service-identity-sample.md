@@ -114,42 +114,42 @@ class CustomIdentityVerifier : IdentityVerifier
 2.  On [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], run Setup.bat from the sample install folder inside a Visual Studio 2012 command prompt with administrator privileges. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script. Ensure that you remove the certificates by running Cleanup.bat when you have finished with the sample. Other security samples use the same certificates.
-
-3.  Launch Service.exe from the \service\bin directory. Ensure that the service indicates that it is ready and displays a prompt to Press \<Enter> to terminate the service.
-
-4.  Launch Client.exe from \client\bin directory or by pressing F5 in Visual Studio to build and run. Client activity is displayed on the client console application.
-
-5.  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
-
-### To run the sample across computers
-
-1.  Before building the client part of the sample, be sure to change the value for the service's endpoint address in the Client.cs file in the `CallServiceCustomClientIdentity` method. Then build the sample.
-
-2.  Create a directory on the service computer.
-
-3.  Copy the service program files from service\bin to the directory on the service computer. Also copy the Setup.bat and Cleanup.bat files to the service computer.
-
-4.  Create a directory on the client computer for the client binaries.
-
-5.  Copy the client program files to the client directory on the client computer. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.
-
-6.  On the service, run `setup.bat service` in a Visual Studio command prompt opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.
-
-7.  Copy the Service.cer file from the service directory to the client directory on the client computer.
-
-8.  In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service. There are multiple instances that must be changed.
-
-9. On the client, run ImportServiceCert.bat in a Visual Studio command prompt opened with administrator privileges. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.
-
-10. On the service computer, launch the Service.exe from the command prompt.
-
-11. On the client computer, launch Client.exe from a command prompt. If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
-
-### To clean up after the sample
-
--   Run Cleanup.bat in the samples folder once you have finished running the sample.
-
+    >  The Setup.bat batch file is designed to be run from a [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Command Prompt. The PATH environment variable set within the [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Command Prompt points to the directory that contains executables required by the Setup.bat script. Ensure that you remove the certificates by running Cleanup.bat when you have finished with the sample. Other security samples use the same certificates.  
+  
+3.  Launch Service.exe from the \service\bin directory. Ensure that the service indicates that it is ready and displays a prompt to Press \<Enter> to terminate the service.  
+  
+4.  Launch Client.exe from \client\bin directory or by pressing F5 in Visual Studio to build and run. Client activity is displayed on the client console application.  
+  
+5.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+  
+### To run the sample across computers  
+  
+1.  Before building the client part of the sample, be sure to change the value for the service's endpoint address in the Client.cs file in the `CallServiceCustomClientIdentity` method. Then build the sample.  
+  
+2.  Create a directory on the service computer.  
+  
+3.  Copy the service program files from service\bin to the directory on the service computer. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
+  
+4.  Create a directory on the client computer for the client binaries.  
+  
+5.  Copy the client program files to the client directory on the client computer. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
+  
+6.  On the service, run `setup.bat service` in a Visual Studio command prompt opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.  
+  
+7.  Copy the Service.cer file from the service directory to the client directory on the client computer.  
+  
+8.  In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service. There are multiple instances that must be changed.  
+  
+9. On the client, run ImportServiceCert.bat in a Visual Studio command prompt opened with administrator privileges. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.  
+  
+10. On the service computer, launch the Service.exe from the command prompt.  
+  
+11. On the client computer, launch Client.exe from a command prompt. If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+  
+### To clean up after the sample  
+  
+-   Run Cleanup.bat in the samples folder once you have finished running the sample.  
+  
     > [!NOTE]
     >  This script does not remove service certificates on a client when running this sample across computers. If you have run Windows Communication Foundation (WCF) samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.
 

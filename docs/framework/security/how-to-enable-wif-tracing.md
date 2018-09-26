@@ -3,7 +3,6 @@ title: "How To: Enable WIF Tracing"
 ms.date: "03/30/2017"
 ms.assetid: 271b6889-3454-46ff-96ab-9feb15e742ee
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How To: Enable WIF Tracing
 ## Applies To  
@@ -13,7 +12,7 @@ manager: "mbaldwin"
 -   ASP.NET® Web Forms  
   
 ## Summary  
- This How-To provides detailed step-by-step procedures for enabling WIF tracing in an ASP.NET application. It also provides instructions testing the application to verify that the trace listener and log are working correctly. This How-To does not have detailed instructions for creating a Security Token Service (STS), and instead uses the Development STS that comes with the Identity and Access tool. The Development STS does not perform real authentication and is intended for testing purposes only. You will need to install the Identity and Access tool to complete this How-To. It can be downloaded from the following location: [Identity and Access Tool](http://go.microsoft.com/fwlink/?LinkID=245849)  
+ This How-To provides detailed step-by-step procedures for enabling WIF tracing in an ASP.NET application. It also provides instructions testing the application to verify that the trace listener and log are working correctly. This How-To does not have detailed instructions for creating a Security Token Service (STS), and instead uses the Development STS that comes with the Identity and Access tool. The Development STS does not perform real authentication and is intended for testing purposes only. You will need to install the Identity and Access tool to complete this How-To. It can be downloaded from the following location: [Identity and Access Tool](https://go.microsoft.com/fwlink/?LinkID=245849)  
   
 > [!IMPORTANT]
 >  Enabling WIF tracing for passive applications, that is, applications that use the WS-Federation protocol, can potentially expose the application to denial of service (DoS) attacks or to information disclosure to a malicious party. This includes both passive RPs and passive STSes. For this reason, we recommend that you not enable WIF tracing for passive RPs or STSes in a production environment.  

@@ -4,7 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: afa538e8-948f-4a98-aa9f-305134004115
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Peer Names and PNRP IDs
 A Peer Name represents an endpoint for communication, which can be a computer, a user, a group, a service, or anything associated with a Peer that can be resolved to an IPv6 address. The Peer Name Resolution Protocol (PNRP) takes the statistically unique Peer Name for the creation of a PNRP ID, which is used to identify cloud members.  

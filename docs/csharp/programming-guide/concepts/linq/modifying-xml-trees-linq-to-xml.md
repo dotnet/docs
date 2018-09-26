@@ -21,5 +21,6 @@ ms.assetid: 8ec47e6d-2363-4694-be46-8d5ca4d15fc9
 |[Maintaining Name/Value Pairs (C#)](../../../../csharp/programming-guide/concepts/linq/maintaining-name-value-pairs.md)|Describes how to maintain application information that is best kept as name/value pairs, such as configuration information or global settings.|  
 |[How to: Change the Namespace for an Entire XML Tree (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-change-the-namespace-for-an-entire-xml-tree.md)|Shows how to move an XML tree from one namespace into another.|  
   
-## See Also  
- [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## See Also
+
+- [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

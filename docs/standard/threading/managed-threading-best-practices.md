@@ -190,6 +190,7 @@ else {
   
 -   Avoid providing static methods that alter static state. In common server scenarios, static state is shared across requests, which means multiple threads can execute that code at the same time. This opens up the possibility of threading bugs. Consider using a design pattern that encapsulates data into instances that are not shared across requests. Furthermore, if static data are synchronized, calls between static methods that alter state can result in deadlocks or redundant synchronization, adversely affecting performance.  
   
-## See Also  
- [Threading](../../../docs/standard/threading/index.md)  
- [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)
+## See also
+
+- [Threading](../../../docs/standard/threading/index.md)  
+- [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)

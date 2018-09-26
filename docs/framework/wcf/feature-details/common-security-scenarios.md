@@ -5,7 +5,6 @@ helpviewer_keywords:
   - "security [WCF], scenarios"
 ms.assetid: 201923b5-5162-4a8a-8d4c-e7bd242748d5
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Common Security Scenarios
 The topics in this section catalog a number of possible client and service security configurations. Configurations vary according to a number of factors. For example, whether a service or client is on an intranet, or whether the security is provided by Windows or transport (such as HTTPS).  
@@ -77,4 +76,4 @@ The topics in this section catalog a number of possible client and service secur
   
 ## See Also  
  [Security Guidance and Best Practices](../../../../docs/framework/wcf/feature-details/security-guidance-and-best-practices.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+ [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

@@ -4,7 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: f0370e08-9fa6-4ee5-ab78-9a58a20a7da2
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Peer Name Publication and Resolution
 ## Publishing a Peer Name  

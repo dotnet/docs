@@ -3,7 +3,6 @@ title: "Securing Messages Using Transport Security"
 ms.date: "03/30/2017"
 ms.assetid: 9029771a-097e-448a-a13a-55d2878330b8
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Securing Messages Using Transport Security
 This section discusses Message Queuing (MSMQ) transport security that you can use to secure messages sent to a queue.  
@@ -93,6 +92,6 @@ This section discusses Message Queuing (MSMQ) transport security that you can us
  The supported algorithms are `MD5`, `SHA1`, `SHA256`, and `SHA512`. The default is `SHA1`.  
   
 ## See Also  
- [Message Queuing](http://msdn.microsoft.com/library/ff917e87-05d5-478f-9430-0f560675ece1)  
+ [Message Queuing](https://msdn.microsoft.com/library/ff917e87-05d5-478f-9430-0f560675ece1)  
  [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
  [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

@@ -19,7 +19,6 @@ helpviewer_keywords:
 ms.assetid: 02b05fba-7235-45ce-94e5-060436ee0875
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Using Streams on the Network
 Network resources are represented in the .NET Framework as streams. By treating streams generically, the .NET Framework offers the following capabilities:  

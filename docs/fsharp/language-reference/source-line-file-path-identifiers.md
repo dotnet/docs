@@ -7,7 +7,6 @@ ms.date: 05/16/2016
 
 The identifiers `__LINE__`, `__SOURCE_DIRECTORY__` and `__SOURCE_FILE__` are built-in values that enable you to access the source line number, directory and file name in your code.
 
-
 ## Syntax
 
 ```fsharp
@@ -17,6 +16,7 @@ __SOURCE_FILE__
 ```
 
 ## Remarks
+
 Each of these values has type `string`.
 
 The following table summarizes the source line, file, and path identifiers that are available in F#. These identifiers are not preprocessor macros; they are built-in values that are recognized by the compiler.
@@ -42,7 +42,7 @@ Source Directory: C:\Users\username\Documents\Visual Studio 2017\Projects\Source
 Source File: C:\Users\username\Documents\Visual Studio 2017\Projects\SourceInfo\SourceInfo\Program.fs
 ```
 
-## See Also
-[Compiler Directives](compiler-directives.md)
+## See also
 
-[F# Language Reference](index.md)
+- [Compiler Directives](compiler-directives.md)
+- [F# Language Reference](index.md)

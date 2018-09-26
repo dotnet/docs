@@ -3,7 +3,6 @@ title: "Cryptographic Agility in WCF Security"
 ms.date: "03/30/2017"
 ms.assetid: c2c549e5-ac19-40c5-b686-8f67f52b6dbf
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Cryptographic Agility in WCF Security
 This sample shows how to specify in a standard/custom algorithm to provide a cryptographic agile implementation in a Windows Communication Foundation (WCF) client and service. The sample is composed of the following projects:
@@ -25,13 +24,13 @@ This sample shows how to specify in a standard/custom algorithm to provide a cry
 4.  Navigate to \WCF\Basic\Security\CryptoAgility\Client\bin directory and run the client.exe file normally.
 
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
->  `<InstallDrive>:\WF_WCF_Samples`
->
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Security\CryptoAgility`
-
-## See Also
+>  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+>   
+>  `<InstallDrive>:\WF_WCF_Samples`  
+>   
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>   
+>  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Security\CryptoAgility`  
+  
+## See Also  
  [Security](../../../../docs/framework/wcf/feature-details/security.md)

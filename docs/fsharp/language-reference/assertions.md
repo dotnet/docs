@@ -31,7 +31,7 @@ The `assert` function resolves to <xref:System.Diagnostics.Debug.Assert*?display
 The following code example illustrates the use of the `assert` expression.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5401.fs)]
-    
-## See Also
 
-[F# Language Reference](index.md)
+## See also
+
+- [F# Language Reference](index.md)

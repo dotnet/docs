@@ -6,7 +6,6 @@ dev_langs:
   - "vb"
 ms.assetid: cad53e1a-b7c9-4064-bc87-508c3d1dce49
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Message Security with an Anonymous Client
 The following scenario shows a client and service secured by Windows Communication Foundation (WCF) message security. A design goal is to use message security rather than transport security, so that in the future it can support a richer claims-based model. For more information about using rich claims for authorization, see [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md).  
@@ -132,4 +131,4 @@ The following scenario shows a client and service secured by Windows Communicati
  [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md)  
  [Message Security Anonymous](../../../../docs/framework/wcf/samples/message-security-anonymous.md)  
  [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+ [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

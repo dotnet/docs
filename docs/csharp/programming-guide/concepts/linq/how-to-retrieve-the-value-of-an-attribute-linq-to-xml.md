@@ -43,5 +43,6 @@ Console.WriteLine(str);
 abcde  
 ```  
   
-## See Also  
- [LINQ to XML Axes (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)
+## See Also
+
+- [LINQ to XML Axes (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)

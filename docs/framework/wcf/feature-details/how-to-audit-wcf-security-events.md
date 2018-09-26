@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "security [WCF], auditing events"
 ms.assetid: e71e9587-3336-46a2-9a9e-d72a1743ecec
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How to: Audit Windows Communication Foundation Security Events
 Windows Communication Foundation (WCF) allows you to log security events to the Windows event log, which can be viewed using the Windows Event Viewer. This topic explains how to set up an application so that it logs security events. For more information about WCF auditing, see [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
@@ -75,7 +74,7 @@ Windows Communication Foundation (WCF) allows you to log security events to the 
  [!code-vb[AuditingSecurityEvents#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/auditingsecurityevents/vb/auditingsecurityevents.vb#1)]  
   
 ## .NET Framework Security  
- Setting the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> property to `true`, suppresses any failure to generate security audits (if set to `false`, an exception is thrown). However, if you enable the following Windows **Local Security Setting**property, a failure to generate audit events will cause Windows to shut down immediately:  
+ Setting the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> property to `true`, suppresses any failure to generate security audits (if set to `false`, an exception is thrown). However, if you enable the following Windows **Local Security Setting** property, a failure to generate audit events will cause Windows to shut down immediately:  
   
  **Audit: Shut down system immediately if unable to log security audits**  
   

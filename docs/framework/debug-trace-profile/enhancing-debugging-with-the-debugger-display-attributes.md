@@ -18,11 +18,11 @@ ms.author: "mairaw"
 ---
 # Enhancing Debugging with the Debugger Display Attributes
 
-Debugger display attributes allow the developer of the type, who specifies and best understands the runtime behavior of that type, to also specify what that type will look like when it is displayed in a debugger. In addition, debugger display attributes that provide a `Target` property can be applied at the assembly level by users without knowledge of the source code. The <xref:System.Diagnostics.DebuggerDisplayAttribute> attribute controls how a type or member is displayed in the debugger variable windows. The <xref:System.Diagnostics.DebuggerBrowsableAttribute> attribute determines if and how a field or property is displayed in the debugger variable windows. The <xref:System.Diagnostics.DebuggerTypeProxyAttribute> attribute specifies a substitute type, or a proxy, for a type and changes the way the type is displayed in debugger windows. When you view a variable that has a proxy, or substitute type, the proxy stands in for the original type in the debugger display window**.** The debugger variable windowdisplays only the public members of the proxy type. Private members are not displayed.
+Debugger display attributes allow the developer of the type, who specifies and best understands the runtime behavior of that type, to also specify what that type will look like when it is displayed in a debugger. In addition, debugger display attributes that provide a `Target` property can be applied at the assembly level by users without knowledge of the source code. The <xref:System.Diagnostics.DebuggerDisplayAttribute> attribute controls how a type or member is displayed in the debugger variable windows. The <xref:System.Diagnostics.DebuggerBrowsableAttribute> attribute determines if and how a field or property is displayed in the debugger variable windows. The <xref:System.Diagnostics.DebuggerTypeProxyAttribute> attribute specifies a substitute type, or a proxy, for a type and changes the way the type is displayed in debugger windows. When you view a variable that has a proxy, or substitute type, the proxy stands in for the original type in the debugger display window. The debugger variable window displays only the public members of the proxy type. Private members are not displayed.  
+  
+## Using the DebuggerDisplayAttribute  
 
-## Using the DebuggerDisplayAttribute
-
- The <xref:System.Diagnostics.DebuggerDisplayAttribute.%23ctor%2A> constructor has a single argument: a string to be displayed in the value column for instances of the type. This string can contain braces ({ and }). The text within a pair of braces is evaluated as an expression. For example, the following C# code causes "Count = 4" to be displayed when the plus sign (+) is selected to expand the debugger display for an instance of `MyHashtable`.
+The <xref:System.Diagnostics.DebuggerDisplayAttribute.%23ctor%2A> constructor has a single argument: a string to be displayed in the value column for instances of the type. This string can contain braces ({ and }). The text within a pair of braces is evaluated as an expression. For example, the following C# code causes "Count = 4" to be displayed when the plus sign (+) is selected to expand the debugger display for an instance of `MyHashtable`.  
 
 ```csharp
 [DebuggerDisplay("Count = {count}")]
@@ -32,13 +32,12 @@ class MyHashtable
 }
 ```
 
- Attributes applied to properties referenced in the expression are not processed. For the C# compiler, a general expression is allowed that has only implicit access to this reference for the current instance of the target type. The expression is limited; there is no access to aliases, locals, or pointers. In C# code, you can use a general expression between the braces that has implicit access to the `this` pointer for the current instance of the target type only.
+Attributes applied to properties referenced in the expression are not processed. For the C# compiler, a general expression is allowed that has only implicit access to this reference for the current instance of the target type. The expression is limited; there is no access to aliases, locals, or pointers. In C# code, you can use a general expression between the braces that has implicit access to the `this` pointer for the current instance of the target type only.
 
- For example, if a C# object has an overridden `ToString()`, the debugger will call the override and show its result instead of the standard `{<typeName>}.` Thus, if you have overridden `ToString()`, you do not need to use <xref:System.Diagnostics.DebuggerDisplayAttribute>. If you use both, the <xref:System.Diagnostics.DebuggerDisplayAttribute> attribute takes precedence over the `ToString()` override.
+For example, if a C# object has an overridden `ToString()`, the debugger will call the override and show its result instead of the standard `{<typeName>}.` Thus, if you have overridden `ToString()`, you do not need to use <xref:System.Diagnostics.DebuggerDisplayAttribute>. If you use both, the <xref:System.Diagnostics.DebuggerDisplayAttribute> attribute takes precedence over the `ToString()` override.
 
 ## Using the DebuggerBrowsableAttribute
-
-Apply the <xref:System.Diagnostics.DebuggerBrowsableAttribute> to a field or property to specify how the field or property is to be displayed in the debugger window. The constructor for this attribute takes one of the <xref:System.Diagnostics.DebuggerBrowsableState> enumeration values, which specifies one of the following states:
+ Apply the <xref:System.Diagnostics.DebuggerBrowsableAttribute> to a field or property to specify how the field or property is to be displayed in the debugger window. The constructor for this attribute takes one of the <xref:System.Diagnostics.DebuggerBrowsableState> enumeration values, which specifies one of the following states:
 
 -   <xref:System.Diagnostics.DebuggerBrowsableState.Never> indicates that the member is not displayed in the data window.  For example, using this value for the <xref:System.Diagnostics.DebuggerBrowsableAttribute> on a field removes the field from the hierarchy; the field is not displayed when you expand the enclosing type by clicking the plus sign (+) for the type instance.
 
@@ -91,12 +90,14 @@ class MyHashtable : Hashtable
 ## Example
 
 ### Description
- The following code example can be viewed in Visual Studio 2005 to see the results of applying the <xref:System.Diagnostics.DebuggerDisplayAttribute>, <xref:System.Diagnostics.DebuggerBrowsableAttribute>, and <xref:System.Diagnostics.DebuggerTypeProxyAttribute> attributes.
+
+The following code example can be viewed in Visual Studio to see the results of applying the <xref:System.Diagnostics.DebuggerDisplayAttribute>, <xref:System.Diagnostics.DebuggerBrowsableAttribute>, and <xref:System.Diagnostics.DebuggerTypeProxyAttribute> attributes.
 
 ### Code
- [!code-cpp[System.Diagnostics.DebuggerBrowsableAttribute#1](../../../samples/snippets/cpp/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/cpp/program.cpp#1)]
- [!code-csharp[System.Diagnostics.DebuggerBrowsableAttribute#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/CS/program.cs#1)]
- [!code-vb[System.Diagnostics.DebuggerBrowsableAttribute#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/VB/module1.vb#1)]
+
+[!code-cpp[System.Diagnostics.DebuggerBrowsableAttribute#1](../../../samples/snippets/cpp/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/cpp/program.cpp#1)]
+[!code-csharp[System.Diagnostics.DebuggerBrowsableAttribute#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/CS/program.cs#1)]
+[!code-vb[System.Diagnostics.DebuggerBrowsableAttribute#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/VB/module1.vb#1)]
 
 ## See Also
 

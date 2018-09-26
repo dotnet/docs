@@ -56,8 +56,9 @@ Console.WriteLine(newTree);
 </Root>  
 ```  
   
-## See Also  
- <xref:System.Xml.Linq.XContainer.CreateWriter%2A>  
- <xref:System.Xml.XmlWriter>  
- <xref:System.Xml.Xsl.XslCompiledTransform>  
- [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)
+## See Also
+
+- <xref:System.Xml.Linq.XContainer.CreateWriter%2A>  
+- <xref:System.Xml.XmlWriter>  
+- <xref:System.Xml.Xsl.XslCompiledTransform>  
+- [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)

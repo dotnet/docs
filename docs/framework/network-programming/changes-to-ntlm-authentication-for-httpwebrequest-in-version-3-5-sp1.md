@@ -4,7 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: 8bf0b428-5a21-4299-8d6e-bf8251fd978a
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Changes to NTLM authentication for HttpWebRequest in Version 3.5 SP1
 Security changes were made in .NET Framework version 3.5 SP1 and later that affect how integrated Windows authentication is handled by the <xref:System.Net.HttpWebRequest>, <xref:System.Net.HttpListener>, <xref:System.Net.Security.NegotiateStream>, and related classes in the System.Net namespace. These changes can affect applications that use these classes to make web requests and receive responses where integrated Windows authentication based on NTLM is used. This change can impact web servers and client applications that are configured to use integrated Windows authentication.  
@@ -45,7 +44,7 @@ Security changes were made in .NET Framework version 3.5 SP1 and later that affe
   
  7. Quit Registry Editor, and then restart the IISAdmin service and run IISReset.  
   
- A less secure work around is to disable the loop back check, as described in [http://support.microsoft.com/kb/896861](http://go.microsoft.com/fwlink/?LinkID=179657). This disables the protection against reflection attacks. So it is better to constrain the set of alternate names to only those you expect the machine to actually use.  
+ A less secure work around is to disable the loop back check, as described in [http://support.microsoft.com/kb/896861](https://go.microsoft.com/fwlink/?LinkID=179657). This disables the protection against reflection attacks. So it is better to constrain the set of alternate names to only those you expect the machine to actually use.  
   
 ## See Also  
  <xref:System.Net.AuthenticationManager.CustomTargetNameDictionary%2A?displayProperty=nameWithType>  

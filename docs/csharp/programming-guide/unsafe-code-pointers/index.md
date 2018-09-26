@@ -44,5 +44,6 @@ To maintain type safety and security, C# does not support pointer arithmetic, by
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)

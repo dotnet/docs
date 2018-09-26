@@ -9,15 +9,13 @@ ms.assetid: 9ac1b522-77ab-4cdc-852a-20fcdc9ae498
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# SOS.dll (SOS Debugging Extension)
-The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual Studio and in the Windows debugger (WinDbg.exe) by providing information about the internal Common Language Runtime (CLR) environment. This tool requires your project to have unmanaged debugging enabled. SOS.dll is automatically installed with the .NET Framework. To use SOS.dll in Visual Studio, install the [Windows Driver Kit (WDK)](http://msdn.microsoft.com/windows/hardware/hh852362).
+# SOS.dll (SOS debugging extension)
 
-> [!NOTE]
->  If you are using Visual Studio 2013, SOS.dll is supported in the Windows Debugger within Visual Studio, but not in the Immediate window of the Visual Studio debugger.
+The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual Studio and in the Windows debugger (WinDbg.exe) by providing information about the internal Common Language Runtime (CLR) environment. This tool requires your project to have unmanaged debugging enabled. SOS.dll is automatically installed with the .NET Framework. To use SOS.dll in Visual Studio, install the [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
 
 ## Syntax
 
-```
+```shell
 ![command] [options]
 ```
 
@@ -25,9 +23,9 @@ The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual
 
 |Command|Description|
 |-------------|-----------------|
-|**AnalyzeOOM** (**ao**)|Displays the information for the last OOM that occurred on an allocation request to the garbage collection heap. (In server garbage collection, it displays OOM, if any, on each garbage collection heap.)|
+|**AnalyzeOOM** (**ao**)|Displays the information for the last out of memory (OOM) that occurred on an allocation request to the garbage collection heap. (In server garbage collection, it displays OOM, if any, on each garbage collection heap.)|
 |**BPMD** [**-nofuturemodule**] [\<*module name*> \<*method name*>] [**-md** <`MethodDesc`>] **-list** **-clear** \<*pending breakpoint number*> **-clearall**|Creates a breakpoint at the specified method in the specified module.<br /><br /> If the specified module and method have not been loaded, this command waits for a notification that the module was loaded and just-in-time (JIT) compiled before creating a breakpoint.<br /><br /> You can manage the list of pending breakpoints by using the **-list**, **-clear**, and **-clearall** options:<br /><br /> The **-list** option generates a list of all the pending breakpoints. If a pending breakpoint has a non-zero module ID, that breakpoint is specific to a function in that particular loaded module. If the pending breakpoint has a zero module ID, that breakpoint applies to modules that have not yet been loaded.<br /><br /> Use the **-clear** or **-clearall** option to remove pending breakpoints from the list.|
-|**CLRStack** [**-a**] [**-l**] [**-p**] [**-n**]|Provides a stack trace of managed code only.<br /><br /> The **-p** option shows arguments to the managed function.<br /><br /> The **-l** option shows information on local variables in a frame. The SOS Debugging Extension cannot retrieve local names, so the output for local names is in the format \<*local address*> **=** \<*value*>.<br /><br /> The **-a**(all) option is a shortcut for **-l** and **-p**combined.<br /><br /> The **-n** option disables the display of source file names and line numbers. If the debugger has the option SYMOPT_LOAD_LINES specified, SOS will look up the symbols for every managed frame and if successful will display the corresponding source file name and line number. The **-n** (No line numbers) parameter can be specified to disable this behavior.<br /><br /> The SOS Debugging Extension does not display transition frames on x64 and IA-64-based platforms.|
+|**CLRStack** [**-a**] [**-l**] [**-p**] [**-n**]|Provides a stack trace of managed code only.<br /><br /> The **-p** option shows arguments to the managed function.<br /><br /> The **-l** option shows information on local variables in a frame. The SOS Debugging Extension cannot retrieve local names, so the output for local names is in the format \<*local address*> **=** \<*value*>.<br /><br /> The **-a**(all) option is a shortcut for **-l** and **-p** combined.<br /><br /> The **-n** option disables the display of source file names and line numbers. If the debugger has the option SYMOPT_LOAD_LINES specified, SOS will look up the symbols for every managed frame and if successful will display the corresponding source file name and line number. The **-n** (No line numbers) parameter can be specified to disable this behavior.<br /><br /> The SOS Debugging Extension does not display transition frames on x64 and IA-64-based platforms.|
 |**COMState**|Lists the COM apartment model for each thread and a `Context` pointer, if available.|
 |**DumpArray** [**-start** \<*startIndex*>] [**-length** \<*length*>] [**-details**] [**-nofields**] \<*array object address*><br /><br /> -or-<br /><br /> **DA** [**-start** \<*startIndex*>] [**-length** \<*length*>] [**-detail**] [**-nofields**] *array object address*>|Examines elements of an array object.<br /><br /> The **-start** option specifies the starting index at which to display elements.<br /><br /> The **-length** option specifies how many elements to show.<br /><br /> The **-details** option displays details of the element using the **DumpObj** and **DumpVC** formats.<br /><br /> The **-nofields** option prevents arrays from displaying. This option is available only when the **-detail** option is specified.|
 |**DumpAssembly** \<*assembly address*>|Displays information about an assembly.<br /><br /> The **DumpAssembly** command lists multiple modules, if they exist.<br /><br /> You can get an assembly address by using the **DumpDomain** command.|
@@ -83,7 +81,7 @@ The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual
 |**Token2EE** \<*module name*> \<*token*>|Turns the specified metadata token in the specified module into a `MethodTable` structure or `MethodDesc` structure.<br /><br /> You can pass `*` for the module name parameter to find what that token maps to in every loaded managed module. You can also pass the debugger's name for a module, such as `mscorlib` or `image00400000`.|
 |**Threads** [**-live**] [**-special**]|Displays all managed threads in the process.<br /><br /> The **Threads** command displays the debugger shorthand ID, the CLR thread ID, and the operating system thread ID.  Additionally, the **Threads** command displays a Domain column that indicates the application domain in which a thread is executing, an APT column that displays the COM apartment mode, and an Exception column that displays the last exception thrown in the thread.<br /><br /> The **-live** option displays threads associated with a live thread.<br /><br /> The **-special** option displays all special threads created by the CLR. Special threads include garbage collection threads (in concurrent and server garbage collection), debugger helper threads, finalizer threads, <xref:System.AppDomain> unload threads, and thread pool timer threads.|
 |**ThreadState \<** *State value field* **>**|Displays the state of the thread. The `value` parameter is the value of the `State` field in the **Threads** report output.<br /><br /> Example:<br /><br /> `0:003> !Threads     ThreadCount:      2     UnstartedThread:  0     BackgroundThread: 1     PendingThread:    0     DeadThread:       0     Hosted Runtime:   no                                           PreEmptive   GC Alloc           Lock            ID OSID ThreadOBJ    State     GC       Context       Domain   Count APT Exception        0    1  250 0019b068      a020 Disabled 02349668:02349fe8 0015def0     0 MTA        2    2  944 001a6020      b220 Enabled  00000000:00000000 0015def0     0 MTA (Finalizer)     0:003> !ThreadState b220         Legal to Join         Background         CLR Owns         CoInitialized         In Multi Threaded Apartment`|
-|**TraverseHeap** [**-xml**] \<*filename*>|Writes heap information to the specified file in a format understood by the CLR profiler. The **-xml** option causes the **TraverseHeap** command to format the file as XML.<br /><br /> You can download the CLR Profiler from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=67325).|
+|**TraverseHeap** [**-xml**] \<*filename*>|Writes heap information to the specified file in a format understood by the CLR profiler. The **-xml** option causes the **TraverseHeap** command to format the file as XML.<br /><br /> You can download the CLR Profiler from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=67325).|
 |**U** [**-gcinfo**] [**-ehinfo**] [**-n**] \<*MethodDesc address*> &#124; \<*Code address*>|Displays an annotated disassembly of a managed method specified either by a `MethodDesc` structure pointer for the method or by a code address within the method body. The **U** command displays the entire method from start to finish, with annotations that convert metadata tokens to names.<br /><br /> The **-gcinfo** option causes the **U** command to display the `GCInfo` structure for the method.<br /><br /> The **-ehinfo** option displays exception information for the method. You can also obtain this information with the **EHInfo** command.<br /><br /> The **-n** option disables the display of source file names and line numbers. If the debugger has the option SYMOPT_LOAD_LINES specified, SOS looks up the symbols for every managed frame and, if successful, displays the corresponding source file name and line number. You can specify the **-n** option to disable this behavior.|
 |**VerifyHeap**|Checks the garbage collector heap for signs of corruption and displays any errors found.<br /><br /> Heap corruptions can be caused by platform invoke calls that are constructed incorrectly.|
 |**VerifyObj** \<*object address*>|Checks the object that is passed as an argument for signs of corruption.|
@@ -91,30 +89,32 @@ The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual
 |**VMStat**|Provides a summary view of the virtual address space, ordered by each type of protection applied to that memory (free, reserved, committed, private, mapped, image). The TOTAL column displays the result of the AVERAGE column multiplied by the BLK COUNT column.|
 
 ## Remarks
- The SOS Debugging Extension lets you view information about code that is running inside the CLR. For example, you can use the SOS Debugging Extension to display information about the managed heap, look for heap corruptions, display internal data types used by the runtime, and view information about all managed code running inside the runtime.
 
- To use the SOS Debugging Extension in Visual Studio, install the [Windows Driver Kit (WDK)](http://msdn.microsoft.com/windows/hardware/hh852362). For information about the integrated debugging environment in Visual Studio, see [Debugging Environments](http://msdn.microsoft.com/library/windows/hardware/hh406268.aspx) in the Windows Dev Center.
+The SOS Debugging Extension lets you view information about code that is running inside the CLR. For example, you can use the SOS Debugging Extension to display information about the managed heap, look for heap corruptions, display internal data types used by the runtime, and view information about all managed code running inside the runtime.
 
- You can also use the SOS Debugging Extension by loading it into the WinDbg.exe debugger, which is available from the [WDK and Developer Tools Web site](http://go.microsoft.com/fwlink/?LinkId=103787), and executing commands within WinDbg.exe.
+To use the SOS Debugging Extension in Visual Studio, install the [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk). For information about the integrated debugging environment in Visual Studio, see [Debugging Environments](/windows-hardware/drivers/debugger/debuggers-in-the-debugging-tools-for-windows-package).
 
- To load the SOS Debugging Extension into the WinDbg.exe debugger, run the following command in the tool:
+You can also use the SOS Debugging Extension by loading it into the [WinDbg.exe debugger](/windows-hardware/drivers/debugger/debugger-download-tools) and executing commands within WinDbg.exe.
+
+To load the SOS Debugging Extension into the WinDbg.exe debugger, run the following command in the tool:
 
 ```
 .loadby sos clr
 ```
 
- WinDbg.exe and Visual Studio use a version of SOS.dll that corresponds to the version of Mscorwks.dll currently in use. In versions 1.1 and 2.0 of the .NET Framework, SOS.dll is installed in the same directory as Mscorwks.dll. By default, you should use the version of SOS.dll that matches the current version of Mscorwks.dll.
+WinDbg.exe and Visual Studio use a version of SOS.dll that corresponds to the version of Mscorwks.dll currently in use. By default, you should use the version of SOS.dll that matches the current version of Mscorwks.dll.
 
- To use a dump file created on another computer, make sure that the Mscorwks.dll file that came with that installation is in your symbol path, and load the corresponding version of SOS.dll.
+To use a dump file created on another computer, make sure that the Mscorwks.dll file that came with that installation is in your symbol path, and load the corresponding version of SOS.dll.
 
- To load a specific version of SOS.dll, type the following command into the Windows Debugger:
+To load a specific version of SOS.dll, type the following command into the Windows Debugger:
 
 ```
 .load <full path to sos.dll>
 ```
 
 ## Examples
- The following command displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
+
+The following command displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
 
 ```
 !dumparray -start 2 -length 5 -detail 00ad28d0
@@ -198,7 +198,7 @@ The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual
 !token2ee unittest.exe 02000003
 ```
 
-## See Also
+## See also
 
 - [Tools](../../../docs/framework/tools/index.md)
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

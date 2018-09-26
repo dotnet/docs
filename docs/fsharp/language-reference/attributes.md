@@ -97,6 +97,6 @@ Although you do not usually need to specify the attribute target explicitly, val
   </tr>
 </table>
 
-## See Also
+## See also
 
-[F# Language Reference](index.md)
+- [F# Language Reference](index.md)

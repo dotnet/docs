@@ -6,7 +6,6 @@ helpviewer_keywords:
 ms.assetid: d4377115-4a76-4848-ab23-4898d65c771c
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # How to: Detect Network Availability and Address Changes
 This sample shows how to detect changes in the network address of an interface.  

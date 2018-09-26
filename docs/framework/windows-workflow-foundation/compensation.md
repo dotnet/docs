@@ -305,20 +305,22 @@ Activity wf = new Sequence()
 </Sequence>  
 ```  
   
- When the workflow is invoked, the following output is displayed to the console.  
+When the workflow is invoked, the following output is displayed to the console.  
   
- **ReserveFlight: Ticket is reserved.**  
+**ReserveFlight: Ticket is reserved.**  
 **ManagerApproval: Manager approval received.**   
 **PurchaseFlight: Ticket is purchased.**   
 **TakeFlight: Flight is completed.**   
 **ConfirmFlight: Flight has been taken, no compensation possible.**   
 **Workflow completed successfully with status: Closed.**   
+
 ## Nesting Compensation Activities  
- A <xref:System.Activities.Statements.CompensableActivity> can be placed into the <xref:System.Activities.Statements.CompensableActivity.Body%2A> section of another <xref:System.Activities.Statements.CompensableActivity>. A <xref:System.Activities.Statements.CompensableActivity> may not be placed into a handler of another <xref:System.Activities.Statements.CompensableActivity>. It is the responsibility of a parent <xref:System.Activities.Statements.CompensableActivity> to ensure that when it is canceled, confirmed, or compensated, all child compensable activities that have completed successfully and have not already been confirmed or compensated must be confirmed or compensated before the parent completes cancellation, confirmation, or compensation. If this is not modeled explicitly the parent <xref:System.Activities.Statements.CompensableActivity> will implicitly compensate child compensable activities if the parent received the cancel or compensate signal. If the parent received the confirm signal the parent will implicitly confirm child compensable activities. If the logic to handle cancellation, confirmation, or compensation is explicitly modeled in the handler of the parent <xref:System.Activities.Statements.CompensableActivity>, any child not explicitly handled will be implicitly confirmed.  
+
+A <xref:System.Activities.Statements.CompensableActivity> can be placed into the <xref:System.Activities.Statements.CompensableActivity.Body%2A> section of another <xref:System.Activities.Statements.CompensableActivity>. A <xref:System.Activities.Statements.CompensableActivity> may not be placed into a handler of another <xref:System.Activities.Statements.CompensableActivity>. It is the responsibility of a parent <xref:System.Activities.Statements.CompensableActivity> to ensure that when it is canceled, confirmed, or compensated, all child compensable activities that have completed successfully and have not already been confirmed or compensated must be confirmed or compensated before the parent completes cancellation, confirmation, or compensation. If this is not modeled explicitly the parent <xref:System.Activities.Statements.CompensableActivity> will implicitly compensate child compensable activities if the parent received the cancel or compensate signal. If the parent received the confirm signal the parent will implicitly confirm child compensable activities. If the logic to handle cancellation, confirmation, or compensation is explicitly modeled in the handler of the parent <xref:System.Activities.Statements.CompensableActivity>, any child not explicitly handled will be implicitly confirmed.  
   
-## See Also  
- <xref:System.Activities.Statements.CompensableActivity>  
- <xref:System.Activities.Statements.Compensate>  
- <xref:System.Activities.Statements.Confirm>  
- <xref:System.Activities.Statements.CompensationToken>  
- [Compensable Activity](../../../docs/framework/windows-workflow-foundation/samples/compensable-activity-sample.md)
+## See Also
+
+- <xref:System.Activities.Statements.CompensableActivity>  
+- <xref:System.Activities.Statements.Compensate>  
+- <xref:System.Activities.Statements.Confirm>  
+- <xref:System.Activities.Statements.CompensationToken>

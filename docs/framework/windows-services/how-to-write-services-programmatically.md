@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "Windows Service applications, creating"
 ms.assetid: 3abbb2ec-78d2-41e6-b9f9-6662d4e2cdc7
 author: "ghogen"
-manager: "douge"
 ---
 # How to: Write Services Programmatically
 If you choose not to use the Windows Service project template, you can write your own services by setting up the inheritance and other infrastructure elements yourself. When you create a service programmatically, you must perform several steps that the template would otherwise handle for you:  

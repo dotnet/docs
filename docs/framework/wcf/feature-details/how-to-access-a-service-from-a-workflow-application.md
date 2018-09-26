@@ -8,7 +8,7 @@ This topic describes how to call a workflow service from a workflow console appl
 
 ### Create a Workflow Console Application Project
 
-1.  Start Visual Studio 2012.
+1.  Start [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)].
 
 2.  Load the MyWFService project you created in the [How to: Create a Workflow Service with Messaging Activities](../../../../docs/framework/wcf/feature-details/how-to-create-a-workflow-service-with-messaging-activities.md) topic.
 
@@ -20,11 +20,11 @@ This topic describes how to call a workflow service from a workflow console appl
 
 4.  After the project is created, the Workflow1.xaml file is opened in the designer. Click the **Toolbox** tab to open the toolbox if it is not already open and click the pushpin to keep the toolbox window open.
 
-5.  Press Ctrl + F5 to build and launch the service. As before, the ASP.NET Development Server is launched and Internet Explorer displays the WCF Help Page. Notice the URI for this page as you must use it in the next step.
+5.  Press **Ctrl**+**F5** to build and launch the service. As before, the ASP.NET Development Server is launched and Internet Explorer displays the WCF Help Page. Notice the URI for this page as you must use it in the next step.
 
      ![IE displaying WCF Help Page and URI](../../../../docs/framework/wcf/feature-details/media/iewcfhelppagewuri.JPG "IEWCFHelpPageWURI")
 
-6.  Right click the **MyWFClient** project in the **Solution Explorer** and select **Add Service Reference**. Click the **Discover** button to search the current solution for any services. Click the triangle next to Service1.xamlx in the Services list. Click the triangle next to Service1 to list the contracts implemented by the Service1 service. Expand the **Service1** node in the **Services** list. The Echo operation is displayed in the **Operations** list as shown in the following illustration.
+6.  Right click the **MyWFClient** project in the **Solution Explorer** and select **Add** > **Service Reference**. Click the **Discover** button to search the current solution for any services. Click the triangle next to Service1.xamlx in the Services list. Click the triangle next to Service1 to list the contracts implemented by the Service1 service. Expand the **Service1** node in the **Services** list. The Echo operation is displayed in the **Operations** list as shown in the following illustration.
 
      ![Add Service Reference Dialog](../../../../docs/framework/wcf/feature-details/media/addservicereference.JPG "AddServiceReference")
 
@@ -36,13 +36,13 @@ This topic describes how to call a workflow service from a workflow console appl
 
      ![Echo activity in toolbox](../../../../docs/framework/wcf/feature-details/media/echoactivity.JPG "EchoActivity")
 
-7.  Drag and drop a <!--zz <xref:System.ServiceModel.Activities.Sequence>--> `System.ServiceModel.Activities.Sequence` activity onto the designer surface. It is under the **Control Flow** section of the toolbox.
+7.  Drag and drop a <xref:System.Activities.Statements.Sequence> activity onto the designer surface. It is under the **Control Flow** section of the toolbox.
 
-8.  With the <!--zz <xref:System.ServiceModel.Activities.Sequence>--> `System.ServiceModel.Activities.Sequence` activity in focus, click the **Variables** link and add a string variable named `inString`. Give the variable a default value of `"Hello, world"` as well as a string variable named `outString` as shown in the following diagram.
+8.  With the <xref:System.Activities.Statements.Sequence> activity in focus, click the **Variables** link and add a string variable named `inString`. Give the variable a default value of `"Hello, world"` as well as a string variable named `outString` as shown in the following diagram.
 
      ![Adding a variable](../../../../docs/framework/wcf/feature-details/media/instringvar.JPG "inStringVar")
 
-9. Drag and drop an **Echo** activity into the <!--zz <xref:System.ServiceModel.Activities.Sequence>--> `System.ServiceModel.Activities.Sequence`. In the properties window bind the `inMsg` argument to the `inString` variable and the `outMsg` argument to the `outString` variable as shown in the following illustration. This passes in the value of the `inString` variable to the operation and then takes the return value and places it in the `outString` variable.
+9. Drag and drop an **Echo** activity into the <xref:System.Activities.Statements.Sequence>. In the properties window bind the `inMsg` argument to the `inString` variable and the `outMsg` argument to the `outString` variable as shown in the following illustration. This passes in the value of the `inString` variable to the operation and then takes the return value and places it in the `outString` variable.
 
      ![Binding the arguments to variables](../../../../docs/framework/wcf/feature-details/media/argumentbind.JPG "ArgumentBind")
 
@@ -60,4 +60,4 @@ This topic describes how to call a workflow service from a workflow console appl
 
 - [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)
 - [How to: Create a Workflow Service with Messaging Activities](../../../../docs/framework/wcf/feature-details/how-to-create-a-workflow-service-with-messaging-activities.md)
-- [Consuming a WCF Service from a Workflow in a Web Project](http://go.microsoft.com/fwlink/?LinkId=207725)
+- [Consuming a WCF Service from a Workflow in a Web Project](https://go.microsoft.com/fwlink/?LinkId=207725)

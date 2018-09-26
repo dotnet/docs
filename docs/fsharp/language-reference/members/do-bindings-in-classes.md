@@ -7,7 +7,6 @@ ms.date: 05/16/2016
 
 A `do` binding in a class definition performs actions when the object is constructed or, for a static `do` binding, when the type is first used.
 
-
 ## Syntax
 
 ```fsharp
@@ -15,6 +14,7 @@ A `do` binding in a class definition performs actions when the object is constru
 ```
 
 ## Remarks
+
 A `do` binding appears together with or after `let` bindings but before member definitions in a class definition. Although the `do` keyword is optional for `do` bindings at the module level, it is not optional for `do` bindings in a class definition.
 
 For the construction of every object of any given type, non-static `do` bindings and non-static `let` bindings are executed in the order in which they appear in the class definition. Multiple `do` bindings can occur in one type. The non-static `let` bindings and the non-static `do` bindings become the body of the primary constructor. The code in the non-static `do` bindings section can reference the primary constructor parameters and any values or functions that are defined in the `let` bindings section.
@@ -38,13 +38,10 @@ Initializing MyType.
 Initializing object 1 2 2 4 8 16
 ```
 
-## See Also
-[Members](index.md)
+## See also
 
-[Classes](../classes.md)
-
-[Constructors](constructors.md)
-
-[`let` Bindings in Classes](let-bindings-in-classes.md)
-
-[`do` Bindings](../functions/do-Bindings.md)
+- [Members](index.md)
+- [Classes](../classes.md)
+- [Constructors](constructors.md)
+- [`let` Bindings in Classes](let-bindings-in-classes.md)
+- [`do` Bindings](../functions/do-Bindings.md)

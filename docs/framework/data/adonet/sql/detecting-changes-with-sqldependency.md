@@ -88,7 +88,7 @@ void SomeMethod()
   
         // Create a dependency and associate it with the SqlCommand.  
         SqlDependency dependency=new SqlDependency(command);  
-        // Maintain the refence in a class member.  
+        // Maintain the reference in a class member.  
   
         // Subscribe to the SqlDependency event.  
         dependency.OnChange+=new  
@@ -118,4 +118,4 @@ void Termination()
   
 ## See Also  
  [Query Notifications in SQL Server](../../../../../docs/framework/data/adonet/sql/query-notifications-in-sql-server.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -5,7 +5,6 @@ helpviewer_keywords:
   - "security [WCF], protocols"
 ms.assetid: 57ffcbea-807c-4e43-a41c-44b3db8ed2af
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Security Protocols
 The Web Services Security Protocols provide Web services security mechanisms that cover all existing enterprise messaging security requirements. This section describes the Windows Communication Foundation (WCF) details (implemented in the <xref:System.ServiceModel.Channels.SecurityBindingElement>) for the following Web services security protocols.  

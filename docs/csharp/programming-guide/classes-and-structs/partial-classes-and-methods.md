@@ -154,9 +154,10 @@ partial void onNameChanged()
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)  
- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)  
- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
- [partial (Type)](../../../csharp/language-reference/keywords/partial-type.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)  
+- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)  
+- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
+- [partial (Type)](../../../csharp/language-reference/keywords/partial-type.md)

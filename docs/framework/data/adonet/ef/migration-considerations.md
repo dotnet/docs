@@ -4,24 +4,24 @@ ms.date: "03/30/2017"
 ms.assetid: c85b6fe8-cc32-4642-8f0a-dc0e5a695936
 ---
 # Migration Considerations (Entity Framework)
-The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framework provides several benefits to an existing application. One of the most important of these benefits is the ability to use a conceptual model to separate data structures used by the application from the schema in the data source. This enables you to easily make future changes to the storage model or to the data source itself without making compensating changes to the application. For more information about the benefits of using the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], see [Entity Framework Overview](../../../../../docs/framework/data/adonet/ef/overview.md) and [Entity Data Model](../../../../../docs/framework/data/adonet/entity-data-model.md).
-
- To take advantage of the benefits of the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], you can migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]. Some tasks are common to all migrated applications. These common tasks include upgrading the application to use the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] starting with version 3.5 Service Pack 1 (SP1), defining models and mapping, and configuring the Entity Framework. When you migrate an application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], there are additional considerations that apply. These considerations depend on the type of application being migrated and on the specific functionality of the application. This topic provides information to help you choose the best approach to use when you upgrade an existing application.
-
-## General Migration Considerations
- The following considerations apply when you migrate any application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]:
-
--   Any application that uses the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] starting with version 3.5 SP1 can be migrated to the Entity Framework, as long as the data provider for the data source that is used by the application supports the Entity Framework.
-
--   The Entity Framework may not support all the functionality of a data source provider, even if that provider supports the Entity Framework.
-
--   For a large or complex application, you are not required to migrate the whole application to the Entity Framework at one time. However, any part of the application that does not use the Entity Framework must still be changed when the data source changes.
-
--   The data provider connection used by the Entity Framework can be shared with other parts of your application because the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] uses [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] data providers to access the data source. For example, the SqlClient provider is used by the Entity Framework to access a SQL Server database. For more information, see [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md).
-
-## Common Migration Tasks
- The path to migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] depends both on the type of application and on the existing data access strategy. However, you must always perform the following tasks when you migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].
-
+The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framework provides several benefits to an existing application. One of the most important of these benefits is the ability to use a conceptual model to separate data structures used by the application from the schema in the data source. This enables you to easily make future changes to the storage model or to the data source itself without making compensating changes to the application. For more information about the benefits of using the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], see [Entity Framework Overview](../../../../../docs/framework/data/adonet/ef/overview.md) and [Entity Data Model](../../../../../docs/framework/data/adonet/entity-data-model.md).  
+  
+ To take advantage of the benefits of the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], you can migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]. Some tasks are common to all migrated applications. These common tasks include upgrading the application to use the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] starting with version 3.5 Service Pack 1 (SP1), defining models and mapping, and configuring the Entity Framework. When you migrate an application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], there are additional considerations that apply. These considerations depend on the type of application being migrated and on the specific functionality of the application. This topic provides information to help you choose the best approach to use when you upgrade an existing application.  
+  
+## General Migration Considerations  
+ The following considerations apply when you migrate any application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]:  
+  
+-   Any application that uses the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] starting with version 3.5 SP1 can be migrated to the Entity Framework, as long as the data provider for the data source that is used by the application supports the Entity Framework.  
+  
+-   The Entity Framework may not support all the functionality of a data source provider, even if that provider supports the Entity Framework.  
+  
+-   For a large or complex application, you are not required to migrate the whole application to the Entity Framework at one time. However, any part of the application that does not use the Entity Framework must still be changed when the data source changes.  
+  
+-   The data provider connection used by the Entity Framework can be shared with other parts of your application because the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] uses [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] data providers to access the data source. For example, the SqlClient provider is used by the Entity Framework to access a SQL Server database. For more information, see [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md).  
+  
+## Common Migration Tasks  
+ The path to migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] depends both on the type of application and on the existing data access strategy. However, you must always perform the following tasks when you migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  
+  
 > [!NOTE]
 >  All of these tasks are performed automatically when you use the Entity Data Model tools starting with [!INCLUDE[vsOrcas](../../../../../includes/vsorcas-md.md)]. For more information, see [How to: Use the Entity Data Model Wizard](https://msdn.microsoft.com/library/dadb058a-c5d9-4c5c-8b01-28044112231d).  
   

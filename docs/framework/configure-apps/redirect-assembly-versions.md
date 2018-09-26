@@ -1,7 +1,7 @@
 ---
 title: "Redirecting Assembly Versions"
 ms.date: "03/30/2017"
-helpviewer_keywords:
+helpviewer_keywords: 
   - "assembly binding, redirection"
   - "redirecting assembly binding to earlier version"
   - "configuration [.NET Framework], applications"

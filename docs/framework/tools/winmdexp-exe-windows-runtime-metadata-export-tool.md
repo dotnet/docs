@@ -1,7 +1,7 @@
 ---
 title: "Winmdexp.exe (Windows Runtime Metadata Export Tool)"
 ms.date: "03/30/2017"
-helpviewer_keywords:
+helpviewer_keywords: 
   - "Windows Runtime Metadata Export Tool"
   - "Winmdexp.exe"
 ms.assetid: d2ce0683-343d-403e-bb8d-209186f7a19d

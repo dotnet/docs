@@ -1,7 +1,7 @@
 ---
 title: "Client Application Services Overview"
 ms.date: "03/30/2017"
-helpviewer_keywords:
+helpviewer_keywords: 
   - "client application services, classes"
   - "client application services, about client application services"
 ms.assetid: f0a2da13-e282-4fd7-88a1-f9102c9aeab1

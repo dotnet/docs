@@ -1,7 +1,7 @@
 ---
 title: "Winmdexp.exe Error Messages"
 ms.date: "03/30/2017"
-f1_keywords:
+f1_keywords: 
   - "WME1095"
   - "WME1110"
   - "WME15"
@@ -152,7 +152,7 @@ f1_keywords:
   - "WME1015"
   - "WME1047"
   - "WME9"
-helpviewer_keywords:
+helpviewer_keywords: 
   - "Winmdexp.exe, error messages"
   - "Windows Runtime Metadata Export Tool, error messages"
   - "error messages, Winmdexp.exe"

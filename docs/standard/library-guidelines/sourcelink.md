@@ -7,7 +7,7 @@ ms.date: 09/20/2018
 ---
 # SourceLink
 
-SourceLink is a technology that enables source code debugging of .NET assemblies from NuGet by developers. When creating a NuGet package you use the SourceLink tooling to embed source control metadata inside assemblies and the package. Developers who download the package and have SourceLink enabled in Visual Studio can step into the source code using the source control metadata to create a great debugging experience.
+SourceLink is a technology that enables source code debugging of .NET assemblies from NuGet by developers. SourceLink executes when creating the NuGet package, and embeds source control metadata inside assemblies and the package. Developers who download the package, and have SourceLink enabled in Visual Studio, can step into its source code. SourceLink provides source control metadata to create a great debugging experience.
 
 [![Newtonsoft.Json SourceLink Demo](./media/sourcelink-youtube-thumbnail.png)](https://www.youtube.com/watch?time_continue=61&v=gyRGhCQPkB4)
 

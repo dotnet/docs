@@ -63,6 +63,9 @@ A NuGet package supports many metadata properties. The following table contains 
 
 **✔️ CONSIDER** using the `LICENSE` file in source control as the `LicenseUrl`. For example, https://github.com/JamesNK/Newtonsoft.Json/blob/master/LICENSE.md
 
+> [!IMPORTANT]
+> A project without a license defaults to [exclusive copyright](https://choosealicense.com/no-permission/), making it impossible for other people to use.
+
 **✔️ DO** use an HTTPS href to your package icon.
 
 > Sites like NuGet.org run with HTTPS enabled and displaying a non-HTTPS image will create a mixed content warning.

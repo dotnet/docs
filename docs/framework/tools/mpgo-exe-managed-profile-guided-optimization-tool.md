@@ -12,21 +12,22 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # Mpgo.exe (Managed Profile Guided Optimization Tool)
-The Managed Profile Guided Optimization Tool (Mpgo.exe) is a command-line tool that uses common end-user scenarios to optimize the native image assemblies that are created by the [Native Image Generator (Ngen.exe)](../../../docs/framework/tools/ngen-exe-native-image-generator.md). This tool enables you to run training scenarios that generate profile data. The [Native Image Generator (Ngen.exe)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) uses this data to optimize its generated native image application assemblies. A training scenario is a trial run of an expected use of your application. Mpgo.exe is available in Visual Studio Ultimate 2012 and later versions. Starting with [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], you can also use Mpgo.exe to optimize [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.  
+
+The Managed Profile Guided Optimization Tool (Mpgo.exe) is a command-line tool that uses common end-user scenarios to optimize the native image assemblies that are created by the [Native Image Generator (Ngen.exe)](../../../docs/framework/tools/ngen-exe-native-image-generator.md). This tool enables you to run training scenarios that generate profile data. The [Native Image Generator (Ngen.exe)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) uses this data to optimize its generated native image application assemblies. A training scenario is a trial run of an expected use of your application. Mpgo.exe is available in Visual Studio Ultimate 2012 and later versions. Starting with Visual Studio 2013, you can also use Mpgo.exe to optimize [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.  
   
- Profile-guided optimization improves application startup time, memory utilization (working set size), and throughput by gathering data from training scenarios and using it to optimize the layout of native images.  
+Profile-guided optimization improves application startup time, memory utilization (working set size), and throughput by gathering data from training scenarios and using it to optimize the layout of native images.  
   
- When you encounter performance issues with startup time and working set size for Intermediate Language (IL) assemblies, we recommend that you first use Ngen.exe to eliminate just-in-time (JIT) compilation costs and to facilitate code sharing. If you need additional improvements, you can then use Mpgo.exe to further optimize your application. You can use the performance data from the un-optimized native image assemblies as a baseline to evaluate the performance gains. Using Mpgo.exe may result in faster cold startup times and a smaller working set size. Mpgo.exe adds information to IL assemblies that Ngen.exe uses to create optimized native image assemblies. For more information, see the entry [Improving Launch Performance for your Desktop Applications](https://go.microsoft.com/fwlink/p/?LinkId=248943) in the .NET blog.  
+When you encounter performance issues with startup time and working set size for Intermediate Language (IL) assemblies, we recommend that you first use Ngen.exe to eliminate just-in-time (JIT) compilation costs and to facilitate code sharing. If you need additional improvements, you can then use Mpgo.exe to further optimize your application. You can use the performance data from the un-optimized native image assemblies as a baseline to evaluate the performance gains. Using Mpgo.exe may result in faster cold startup times and a smaller working set size. Mpgo.exe adds information to IL assemblies that Ngen.exe uses to create optimized native image assemblies. For more information, see the entry [Improving Launch Performance for your Desktop Applications](https://go.microsoft.com/fwlink/p/?LinkId=248943) in the .NET blog.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7) with administrator credentials, and type the following at the command prompt. For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7) with administrator credentials, and type the following at the command prompt. For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
- For desktop apps:  
+For desktop apps:  
   
 ```  
 mpgo –Scenario <command> [-Import <directory>] –AssemblyList <assembly1>  <assembly2> ... -OutDir <directory> [options]  
 ```  
   
- For [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps:  
+For [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps:  
   
 ## Syntax  
   
@@ -38,7 +39,7 @@ mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
  All arguments to Mpgo.exe are case-insensitive. Commands are prefixed with a dash.  
   
 > [!NOTE]
->  You can use either `–Scenario` or `–Import` as a required command, but not both. None of the required parameters are used if you specify the `–Reset` option.
+> You can use either `–Scenario` or `–Import` as a required command, but not both. None of the required parameters are used if you specify the `–Reset` option.
 
 |Required parameter|Description|
 |------------------------|-----------------|
@@ -68,7 +69,7 @@ mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
  The use of Ngen.exe and Mpgo.exe is recommended only for large managed applications, because the benefit of precompiled native images is typically seen only when it eliminates significant JIT compilation at run time. Running Mpgo.exe on "Hello World" style applications that aren’t working-set intensive will not provide any benefits, and Mpgo.exe may even fail to gather profile data.
 
 > [!NOTE]
->  Ngen.exe and Mpgo.exe are not recommended for ASP.NET applications and Windows Communication Foundation (WCF) services.  
+> Ngen.exe and Mpgo.exe are not recommended for ASP.NET applications and Windows Communication Foundation (WCF) services.  
   
 ## To Use Mpgo.exe  
   

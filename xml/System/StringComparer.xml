@@ -59,17 +59,17 @@
  A comparison operation that is represented by the <xref:System.StringComparer> class is defined to be either case-sensitive or case-insensitive, and use either word (culture-sensitive) or ordinal (culture-insensitive) comparison rules. For more information about word and ordinal comparison rules, see <xref:System.Globalization.CompareOptions?displayProperty=nameWithType>.  
 
 > [!NOTE]
-> You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921), a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems.
+> You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921), a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems, and the [Default Unicode Collation Element Table](https://www.unicode.org/Public/UCA/latest/allkeys.txt), the latest version of the sort weight table for Linux and macOS. The specific version of the sort weight table on Linux and macOS depends on the version of the [International Components for Unicode](http://site.icu-project.org/) libraries installed on the system. For information on ICU versions and the Unicode versions that they implement, see [Downloading ICU](http://site.icu-project.org/download).
 
-## Implemented Properties  
- You might be confused about how to use the <xref:System.StringComparer> class properties because of a seeming contradiction. The <xref:System.StringComparer> class is declared `abstract` (`MustInherit` in Visual Basic), which means its members can be invoked only on an object of a class derived from the <xref:System.StringComparer> class. The contradiction is that each property of the <xref:System.StringComparer> class is declared `static` (`Shared` in Visual Basic), which means the property can be invoked without first creating a derived class.  
+## Implemented properties  
+
+You might be confused about how to use the <xref:System.StringComparer> class properties because of a seeming contradiction. The <xref:System.StringComparer> class is declared `abstract` (`MustInherit` in Visual Basic), which means its members can be invoked only on an object of a class derived from the <xref:System.StringComparer> class. The contradiction is that each property of the <xref:System.StringComparer> class is declared `static` (`Shared` in Visual Basic), which means the property can be invoked without first creating a derived class.  
   
  You can call a <xref:System.StringComparer> property directly because each property actually returns an instance of an anonymous class that is derived from the <xref:System.StringComparer> class. Consequently, the type of each property value is <xref:System.StringComparer>, which is the base class of the anonymous class, not the type of the anonymous class itself. Each <xref:System.StringComparer> class property returns a <xref:System.StringComparer> object that supports predefined case and comparison rules.  
   
-   
-  
 ## Examples  
- The following example demonstrates the properties and the <xref:System.StringComparer.Create%2A> method of the <xref:System.StringComparer> class. The example illustrates how different <xref:System.StringComparer> objects sort three versions of the Latin letter I.  
+
+The following example demonstrates the properties and the <xref:System.StringComparer.Create%2A> method of the <xref:System.StringComparer> class. The example illustrates how different <xref:System.StringComparer> objects sort three versions of the Latin letter I.  
   
  [!code-cpp[System.StringComparer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.StringComparer/cpp/omni.cpp#1)]
  [!code-csharp[System.StringComparer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.StringComparer/cs/omni.cs#1)]

@@ -134,28 +134,14 @@
      [!code-vb[System.String.Class#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Class/vb/surrogate1.vb#3)]  
   
 <a name="Unicode"></a>   
-## Strings and The Unicode Standard  
+## Strings and the Unicode Standard  
  Characters in a string are represented by UTF-16 encoded code units, which correspond to <xref:System.Char> values.  
   
  Each character in a string has an associated Unicode character category, which is represented in .NET by the <xref:System.Globalization.UnicodeCategory> enumeration. The category of a character or a surrogate pair can be determined by calling the <xref:System.Globalization.CharUnicodeInfo.GetUnicodeCategory%2A?displayProperty=nameWithType> method.  
+
+[!INCLUDE[character-categories](~/includes/unicode-categories.md)]
   
- .NET maintains its own table of characters and their corresponding categories, which ensures that a specific version of a .NET implementation running on different platforms returns identical character category information. The following table lists .NET versions and the versions of the Unicode Standard on which their character categories are based.  
-  
-|.NET version|Version of the Unicode Standard|  
-|----------------------------|-------------------------------------|  
-|[!INCLUDE[net_v11_long](~/includes/net-v11-long-md.md)]|[The Unicode Standard, Version 4.0.0](https://www.unicode.org/versions/Unicode4.0.0/)|  
-|The .NET Framework 2.0|[The Unicode Standard, Version 5.0.0](https://www.unicode.org/versions/Unicode5.0.0)|  
-|[!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]|[The Unicode Standard, Version 5.0.0](https://www.unicode.org/versions/Unicode5.0.0)|  
-|[!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]|[The Unicode Standard, Version 5.0.0](https://www.unicode.org/versions/Unicode5.0.0)|  
-|[!INCLUDE[net_v45](~/includes/net-v45-md.md)]|[The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/)|  
-|[!INCLUDE[net_v451](~/includes/net-v451-md.md)]|[The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/)|  
-|[!INCLUDE[net_v452](~/includes/net-v452-md.md)]|[The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/)|  
-|[!INCLUDE[net_v46](~/includes/net-v46-md.md)]|[The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/)|  
-|[!INCLUDE[net_v461](~/includes/net-v461-md.md)]|[The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/)|  
-|[!INCLUDE[net_v462](~/includes/net-v462-md.md)]|[The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/)|  
-|.NET Core (all versions)|[The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/)|
-  
- In addition, .NET supports string comparison and sorting based on the Unicode standard. In versions of the .NET Framework through the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the .NET Framework maintains its own table of string data. This is also true of versions of the .NET Framework starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on Windows 7. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on Window 8 and later versions of the Windows operating system, the runtime delegates string comparison and sorting operations to the operating system. The following table lists the versions of .NET and the versions of the Unicode Standard on which character comparison and sorting are based.  
+ In addition, .NET supports string comparison and sorting based on the Unicode standard. In versions of the .NET Framework through the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the .NET Framework maintains its own table of string data. This is also true of versions of the .NET Framework starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on Windows 7. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on Window 8 and later versions of the Windows operating system, the runtime delegates string comparison and sorting operations to the operating system. On .NET Core, string comparison and sorting information is provided by  [International Components for Unicode](http://site.icu-project.org/) libraries.The following table lists the versions of .NET and the versions of the Unicode Standard on which character comparison and sorting are based.  
   
 |.NET version|Version of the Unicode Standard|  
 |----------------------------|-------------------------------------|  
@@ -165,7 +151,7 @@
 |[!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]|[The Unicode Standard, Version 5.0.0](https://www.unicode.org/versions/Unicode5.0.0)|  
 |[!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later on Windows 7|[The Unicode Standard, Version 5.0.0](https://www.unicode.org/versions/Unicode5.0.0)|  
 |[!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later on Windows 8 and later Windows operating systems|[The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/)|  
-|.NET Core (all versions)|[The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/).|
+|.NET Core (all versions)|Depends on the version of hte Unicode Standard supported by the underlying operating system.|
 
 <a name="EmbeddedNulls"></a>   
 ## Strings and embedded null characters  
@@ -262,7 +248,7 @@
 > [!TIP]
 >  You should always call a method overload that makes the intent of your method call clear. For example, instead of calling the <xref:System.String.Compare%28System.String%2CSystem.String%29> method to perform a culture-sensitive comparison of two strings by using the conventions of the current culture, you should call the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method with a value of <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType> for the `comparisonType` argument. For more information, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
 
-You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921), a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems.
+You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921), a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems, and the [Default Unicode Collation Element Table](https://www.unicode.org/Public/UCA/latest/allkeys.txt), the sort weight table for Linux and macOS.
 
 <a name="casing"></a>   
 ### Casing  
@@ -360,7 +346,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
 -   For a comparison that involves a security decision (such as whether a username is valid), you should always perform an ordinal test for equality by calling an overload of the <xref:System.String.Equals%2A> method.  
   
 > [!NOTE]
->  The culture-sensitive sorting and casing rules used in string comparison depend on the version of the .NET Framework. In the .NET Framework [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on the [!INCLUDE[win8](~/includes/win8-md.md)] operating system, sorting, casing, normalization, and Unicode character information conforms to the Unicode 6.0 standard. On other operating systems, it conforms to the Unicode 5.0 standard.  
+>  The culture-sensitive sorting and casing rules used in string comparison depend on the version of the .NET. In the .NET Framework 4.5 and later versions running on the [!INCLUDE[win8](~/includes/win8-md.md)] operating system, sorting, casing, normalization, and Unicode character information conforms to the Unicode 6.0 standard. On other Windows operating systems, it conforms to the Unicode 5.0 standard. On .NET Core, it depends on the version of the Unicode Standard supported by the underlying operating system. 
   
  For more information about word, string, and ordinal sort rules, see the <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> topic. For additional recommendations on when to use each rule, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
   
@@ -537,7 +523,8 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
 
  ]]></format>
     </remarks>
-    <related type="ExternalDocumentation" href="https://www.microsoft.com/en-us/download/details.aspx?id=10921">Sorting Weight Tables for Windows operating systems</related>
+    <related type="ExternalDocumentation" href="https://www.microsoft.com/en-us/download/details.aspx?id=10921">Sorting Weight Tables for Windows operating systems</related> 
+    <related type="ExternalDocumentation"  href="https://www.unicode.org/Public/UCA/latest/allkeys.txt">Default Unicode Collation Elemeent Table, for Linux and macOS</related>
     <threadsafe>This type is thread safe.</threadsafe>
     <altmember cref="T:System.IComparable" />
     <altmember cref="T:System.ICloneable" />

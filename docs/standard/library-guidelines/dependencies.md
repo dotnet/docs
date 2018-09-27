@@ -15,7 +15,7 @@ It's a common situation for a .NET project to have multiple versions of a packag
 
 ![Diamond dependency](./media/diamond-dependency.png "Diamond dependency")
 
-At build time NuGet analyzes all the packages that a project depends on, including the dependencies of dependencies, and when multiple versions of a package is detected, rules are evaluated to pick one. Unifying packages is necessary because running side-by-side versions of an assembly in the same application is problematic in .NET.
+At build time NuGet analyzes all the packages that a project depends on, including the dependencies of dependencies, and when multiple versions of a package are detected, rules are evaluated to pick one. Unifying packages is necessary because running side-by-side versions of an assembly in the same application is problematic in .NET.
 
 Most diamond dependencies are easily resolved, however they can create issues in certain circumstances:
 
@@ -66,11 +66,9 @@ Upper version limits will cause NuGet to fail if there's a conflict. For example
 
 One way to reduce external NuGet package dependencies is to reference share source packages. A shared source package contains source code files that are included in a project when referenced. Because you're just including source code files that are compiled with the rest of your project, there's no external dependency and chance of conflict.
 
-Shared source packages are great for including small pieces of functionality, e.g. a shared source package containing helper methods for making HTTP calls.
+Shared source packages are great for including small pieces of functionality. For example, a shared source package of helper methods for making HTTP calls.
 
 ![Shared source package](./media/shared-source-package.png "Shared source package")
-
-Shared source packages can only be used by `PackageReference`, and should be a private reference to tell NuGet it's only used at development time and shouldn't be exposed to anyone using your package.
 
 ```xml
 <PackageReference Include="Microsoft.Extensions.Buffers.Testing.Sources" PrivateAssets="All" Version="1.0" />
@@ -78,15 +76,23 @@ Shared source packages can only be used by `PackageReference`, and should be a p
 
 ![Shared source project](./media/shared-source-project.png "Shared source project")
 
+Shared source packages have some limitations. They can only be referenced by `PackageReference`, so older `packages.config` projects are excluded. Also shared source packages are only usable by projects with the same language type. Because of these limitations shared source packages are best used to share functionality within an open-source project.
+
 **✔️ CONSIDER** referencing shared source packages for small, internal pieces of functionality.
 
 **✔️ CONSIDER** making your package a shared source package if it provides small, internal pieces of functionality.
 
 **✔️ DO** reference shared source packages with `PrivateAssets="All"`.
 
-**❌ DO NOT** have shared-source package types in your public API.
+> This setting tells NuGet the package is only to be used at development time and shouldn't be exposed as a public dependency.
 
-> Shared-source types are compiled into the referencing assembly and can't be exchanged across assembly boundaries, e.g. a shared-source `IRepository` type in one project is a separate type from the same shared-source `IRepository` in another project.
+**❌ DO NOT** have shared source package types in your public API.
+
+> Shared source types are compiled into the referencing assembly and can't be exchanged across assembly boundaries. For example, a shared-source `IRepository` type in one project is a separate type from the same shared-source `IRepository` in another project. Types in shared source packages should have an `internal` visibility.
+
+**❌ DO NOT** publish shared source packages to nuget.org.
+
+> Shared source packages contain source code and can only be used by projects with the same language type. For example, a C# shared source package cannot be used by an F# application.
 
 **More information**
 

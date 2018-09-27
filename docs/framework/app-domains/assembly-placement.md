@@ -18,5 +18,5 @@ For most .NET Framework applications, you locate assemblies that make up an appl
 ## See Also  
  [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
  [Configuring Apps](../../../docs/framework/configure-apps/index.md)  
- [Advanced COM Interoperability](../../../docs/framework/interop/index.md)  
+ [Interoperating with unmanaged code](../../../docs/framework/interop/index.md)  
  [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)

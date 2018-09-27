@@ -18,10 +18,10 @@ ms.author: "ronpet"
 ---
 # How to: Build a Single-File Assembly
 
-A single-file assembly, which is the simplest type of assembly, contains type information and implementation, as well as the [assembly manifest](../../../docs/framework/app-domains/assembly-manifest.md). You can use command-line compilers or Visual Studio 2005 to create a single-file assembly. By default, the compiler creates an assembly file with an .exe extension.
+A single-file assembly, which is the simplest type of assembly, contains type information and implementation, as well as the [assembly manifest](../../../docs/framework/app-domains/assembly-manifest.md). You can use command-line compilers or Visual Studio to create a single-file assembly. By default, the compiler creates an assembly file with an .exe extension.
 
 > [!NOTE]
-> Visual Studio 2005 for C# and Visual Basic can be used only to create single-file assemblies. If you want to create multifile assemblies, you must use command-line compilers or Visual Studio 2005 for Visual C++.
+> Visual Studio for C# and Visual Basic can be used only to create single-file assemblies. If you want to create multifile assemblies, you must use command-line compilers or Visual C++.
 
 The following procedures show how to create single-file assemblies using command-line compilers.
 

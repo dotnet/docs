@@ -14,7 +14,7 @@ ms.assetid: 1aef42cb-4cfb-44b4-9a7a-c02632d3d9c7
   
 ## Prerequisites  
 
-You need the following Visual Studio to complete this walkthrough.  
+You need Visual Studio to complete this walkthrough.  
   
 ## Hosting the Windows Forms Control  
   

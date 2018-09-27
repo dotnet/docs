@@ -12,10 +12,10 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 
  This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
 
- Two versions of Mage.exe and MageUI.exe are included as a component of the Visual Studio 2010 setup. To see version information, run MageUI.exe, select **Help**, and select **About**. This documentation describes version 4.0.x.x of Mage.exe and MageUI.exe.
+ Two versions of Mage.exe and MageUI.exe are included as a component of the Visual Studio. To see version information, run MageUI.exe, select **Help**, and select **About**. This documentation describes version 4.0.x.x of Mage.exe and MageUI.exe.
 
 > [!NOTE]
->  MageUI.exe does not support the [compatibleFrameworks](/visualstudio/deployment/compatibleframeworks-element-clickonce-deployment) element when saving an application manifest that has already been signed with a certificate using MageUI.exe. Instead, you must use [Mage.exe](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md).  
+> MageUI.exe does not support the [compatibleFrameworks](/visualstudio/deployment/compatibleframeworks-element-clickonce-deployment) element when saving an application manifest that has already been signed with a certificate using MageUI.exe. Instead, you must use [Mage.exe](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md).  
   
 ## UIElement List  
  The following table lists the menu and toolbar items that are available.  

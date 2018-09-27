@@ -48,7 +48,7 @@ This walkthrough shows you how to use [!INCLUDE[TLA2#tla_winclient](../../../../
   
 ## Prerequisites  
 
-You need Visual Studuio to complete this walkthrough.
+You need Visual Studio to complete this walkthrough.
   
 ## Creating the Project  
   

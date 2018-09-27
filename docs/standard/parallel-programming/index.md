@@ -8,7 +8,7 @@ ms.assetid: 4d83c690-ad2d-489e-a2e0-b85b898a672d
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Parallel programming in .NET
+# Parallel Programming in .NET
 
 Many personal computers and workstations have multiple CPU cores that enable multiple threads to be executed simultaneously. To take advantage of the hardware, you can parallelize your code to distribute work across multiple processors.
 
@@ -18,7 +18,7 @@ The following illustration provides a high-level overview of the parallel progra
 
 ![.NET Parallel Programming Architecture](./media/tpl-architecture.png)
 
-## Related topics
+## Related Topics
 
 |Technology|Description|
 |----------------|-----------------|

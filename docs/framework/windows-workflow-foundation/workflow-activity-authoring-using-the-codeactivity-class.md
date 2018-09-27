@@ -17,7 +17,7 @@ Activities created by inheriting from <xref:System.Activities.CodeActivity> can 
 
 #### To create a custom activity that inherits from CodeActivity
 
-1.  OpenVisual Studio 2010.
+1.  Open Visual Studio 2010.
 
 2.  Select **File**, **New**, and then **Project**. Select **Workflow 4.0** under **Visual C#** in the **Project Types** window, and select the **v2010** node. Select **Activity Library** in the **Templates** window. Name the new project HelloActivity.
 

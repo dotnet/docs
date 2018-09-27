@@ -198,7 +198,7 @@ Press <ENTER> to terminate client.
 2.  Run Setup.bat from the sample install folder in a Visual Studio command prompt run with administrator privileges. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    >  The setup batch file is designed to be run from a  Visual Studio 2012Command Prompt. It requires that the path environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Visual Studio 2012Command Prompt.  
+    > The setup batch file is designed to be run from a  Visual Studio Command Prompt. It requires that the path environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Visual Studio Command Prompt.  
   
 3.  Verify access to the service using a browser by entering the address http://localhost/servicemodelsamples/service.svc.  
   

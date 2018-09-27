@@ -137,7 +137,7 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
   
 #### To use this sample  
   
-1.  Using [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)], open the PurchaseProcess.sln solution file.  
+1.  Using Visual Studio 2010, open the PurchaseProcess.sln solution file.  
   
 2.  To execute the Web Client project, open **Solution Explorer** and right-click the **Web Client** project. Select **Set as Startup Project**.  
   

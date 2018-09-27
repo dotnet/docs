@@ -37,7 +37,7 @@ This sample demonstrates how to add your own tracing events into the stream of a
   
 #### To use this sample  
   
-1.  Using [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)], open the WCFAnalyticTracingExtensibility.sln solution file.  
+1.  Using Visual Studio 2012, open the WCFAnalyticTracingExtensibility.sln solution file.  
   
 2.  To build the solution, press CTRL+SHIFT+B.  
   
@@ -47,7 +47,7 @@ This sample demonstrates how to add your own tracing events into the stream of a
   
 4.  Run the WCF test client (WcfTestClient.exe).  
   
-     The WCF test client (WcfTestClient.exe) is located in the \<[!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Install Dir>\Common7\IDE\ WcfTestClient.exe (default [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] install dir is C:\Program Files\Microsoft Visual Studio 10.0).  
+     The WCF test client (WcfTestClient.exe) is located in the \<Visual Studio 2012 Install Dir>\Common7\IDE\ WcfTestClient.exe (default Visual Studio 2012 install dir is C:\Program Files\Microsoft Visual Studio 10.0).  
   
 5.  Within the WCF test client, add the service by selecting **File**, and then **Add Service**.  
   

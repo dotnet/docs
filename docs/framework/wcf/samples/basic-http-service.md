@@ -21,7 +21,7 @@ This sample demonstrates how to implement an HTTP-based, RPC-based service - pop
   
 #### To use this sample  
   
-1.  Open the solution for the Basic Http Service Sample. When launching [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)], you must run as an administrator for the sample to execute successfully. Do this by right-clicking the [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] icon and selecting **Run as Administrator** from the context menu.  
+1.  Open the solution for the Basic Http Service Sample. When launching Visual Studio 2012, you must run as an administrator for the sample to execute successfully. Do this by right-clicking the Visual Studio 2012 icon and selecting **Run as Administrator** from the context menu.  
   
 2.  Press CTRL+SHIFT+B to build the solution and then press Ctrl+F5 to run the console application without debugging. The console window appears and provides the URI of the running service and the URI of the HTML help page for the running service. At any point in time you can view the HTML help page by typing the URI of the help page in a browser. As the sample runs, the client writes the status of the current activity.  
   

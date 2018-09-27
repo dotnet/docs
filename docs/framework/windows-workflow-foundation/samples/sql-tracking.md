@@ -15,7 +15,7 @@ This sample demonstrates how to write a custom SQL tracking participant, that wr
     > [!NOTE]
     >  The script creates the database on the default instance of SQL Express. If you want to install it on a different database instance, edit the Trackingsetup.cmd script.  
   
-3.  Open SqlTrackingSample.sln in [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)].  
+3.  Open SqlTrackingSample.sln in Visual Studio 2010.  
   
 4.  Press CTRL+SHIFT+B to build the solution.  
   

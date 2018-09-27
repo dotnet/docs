@@ -17,9 +17,7 @@ ms.assetid: d69e602e-9a25-4e24-950b-e89eaa2a906b
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   [!INCLUDE[vs_dev10_ext](../../../../includes/vs-dev10-ext-md.md)].  
-  
--   Windows 7.  
+-   Visual Studio.  
   
 -   A device that accepts touch input, such as a touchscreen, that supports Windows Touch.  
   

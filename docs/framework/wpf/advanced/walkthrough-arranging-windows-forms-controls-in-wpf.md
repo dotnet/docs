@@ -47,9 +47,8 @@ This walkthrough shows you how to use [!INCLUDE[TLA2#tla_winclient](../../../../
  When you are finished, you will have an understanding of [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] layout features in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-based applications.  
   
 ## Prerequisites  
- You need the following components to complete this walkthrough:  
-  
--   [!INCLUDE[vs_dev10_long](../../../../includes/vs-dev10-long-md.md)].  
+
+You need Visual Studuio to complete this walkthrough.
   
 ## Creating the Project  
   

@@ -35,7 +35,7 @@ Binding a data source to a control is essential for providing users with access 
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   [!INCLUDE[vs_dev10_long](../../../../includes/vs-dev10-long-md.md)].  
+-   Visual Studio.  
   
 -   Access to the Northwind sample database running on Microsoft SQL Server.  
   

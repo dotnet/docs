@@ -305,7 +305,7 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
 1.  Run Setup.bat from the sample install folder inside a Visual Studio 2012 command prompt opened with administrator privileges. This installs all the certificates required for running the sample.
 
     > [!IMPORTANT]
-    >  The Setup.bat batch file is designed to be run from a [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Command Prompt. The PATH environment variable set within the [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Command Prompt points to the directory that contains executables required by the Setup.bat script.  
+    >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
   
 2.  Launch Service.exe from service\bin.  
   

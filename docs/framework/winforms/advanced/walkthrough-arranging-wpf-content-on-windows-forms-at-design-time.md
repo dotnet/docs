@@ -31,7 +31,7 @@ This walkthrough shows you how to use the Windows Forms layout features, such as
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   [!INCLUDE[vs_dev11_long](../../../../includes/vs-dev11-long-md.md)].  
+-   Visual Studio 2012.  
   
 ## Creating the Project  
  The first step is to create the Windows Forms project.  

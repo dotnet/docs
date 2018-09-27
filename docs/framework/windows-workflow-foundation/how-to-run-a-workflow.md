@@ -17,7 +17,7 @@ This topic is a continuation of the Windows Workflow Foundation Getting Started 
   
 ### To create the workflow host project  
   
-1.  Open the solution from the previous [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md) topic by using [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)].  
+1.  Open the solution from the previous [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md) topic by using Visual Studio 2012.  
   
 2.  Right-click the **WF45GettingStartedTutorial** solution in **Solution Explorer** and select **Add**, **New Project**.  
   

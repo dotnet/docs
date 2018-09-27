@@ -37,7 +37,7 @@ ms.assetid: 09c575df-e0a3-4f3b-9e01-a7ac59d65287
   
 ###  <a name="BKMK_BackupCopy"></a> To make a copy of the NumberGuessWorkflowActivities project  
   
-1.  Open the **WF45GettingStartedTutorial** solution in [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)] if it is not open.  
+1.  Open the **WF45GettingStartedTutorial** solution in Visual Studio 2012 if it is not open.  
   
 2.  Press CTRL+SHIFT+B to build the solution.  
   

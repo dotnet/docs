@@ -8,7 +8,7 @@ Hosting workflow services in App Fabric is similar to hosting under IIS/WAS. The
   
 ### Creating a Simple Workflow Service  
   
-1.  Open [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] and load the OrderProcessing solution you created in the [Creating a Long-running Workflow Service](../../../../docs/framework/wcf/feature-details/creating-a-long-running-workflow-service.md) topic.  
+1.  Open Visual Studio 2012 and load the OrderProcessing solution you created in the [Creating a Long-running Workflow Service](../../../../docs/framework/wcf/feature-details/creating-a-long-running-workflow-service.md) topic.  
   
 2.  Right click the **OrderService** project and select **Properties** and select the **Web** tab.  
   

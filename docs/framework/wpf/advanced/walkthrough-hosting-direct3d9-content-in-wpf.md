@@ -22,7 +22,7 @@ This walkthrough shows how to host Direct3D9 content in a Windows Presentation F
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   [!INCLUDE[vs_dev10_long](../../../../includes/vs-dev10-long-md.md)].  
+-   Visual Studio.  
   
 -   DirectX SDK 9 or later.  
   

@@ -17,7 +17,7 @@ Most of the Windows Communication Foundation (WCF) samples are hosted in Interne
   
 2.  Ensure that [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] is installed. Search the following directory for v4.0 (or later): **\Windows\Microsoft.NET\Framework**  
   
-3.  If [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] is not installed, and your operating system is not Windows Server 2008 SP2 or later, install [Hotfix 251798](https://go.microsoft.com/fwlink/?LinkId=184693).  
+3.  If Visual Studio 2012 is not installed, and your operating system is not Windows Server 2008 SP2 or later, install [Hotfix 251798](https://go.microsoft.com/fwlink/?LinkId=184693).  
   
 4.  Run the following commands. For more information about why these commands must be run, see [IIS Hosted Service Fails](https://msdn.microsoft.com/library/ee5499fc-1b10-4cda-a9b1-13dba70f05f8).  
   

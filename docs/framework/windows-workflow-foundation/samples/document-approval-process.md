@@ -74,11 +74,11 @@ This sample demonstrates the use of many Windows Workflow Foundation (WF) and Wi
   
 ##### To set up the database  
   
-1.  From a [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] command prompt opened with Administrator privileges, navigate to this DocumentApprovalProcess folder and run Setup.cmd.  
+1.  From a Visual Studio 2010 command prompt opened with Administrator privileges, navigate to this DocumentApprovalProcess folder and run Setup.cmd.  
   
 ##### To set up the application  
   
-1.  Using [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)], open the DocumentApprovalProcess.sln solution file.  
+1.  Using Visual Studio 2010, open the DocumentApprovalProcess.sln solution file.  
   
 2.  To build the solution, press CTRL+SHIFT+B.  
   
@@ -140,4 +140,4 @@ This sample demonstrates the use of many Windows Workflow Foundation (WF) and Wi
   
 ##### To clean up  
   
-1.  From a [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] command prompt, navigate to the DocumentApprovalProcess folder and run Cleanup.cmd.
+1.  From a Visual Studio 2010 command prompt, navigate to the DocumentApprovalProcess folder and run Cleanup.cmd.

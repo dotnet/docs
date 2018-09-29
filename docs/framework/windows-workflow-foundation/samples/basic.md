@@ -10,9 +10,6 @@ This section provides samples that demonstrate basic Windows Workflow Foundation
  [Built-in Activities](../../../../docs/framework/windows-workflow-foundation/samples/built-in-activities.md)  
  Contains samples that use the built-in activity library.  
   
- [Compensation](../../../../docs/framework/windows-workflow-foundation/samples/compensation-samples.md)  
- Contains samples that demonstrate compensation.  
-  
  [Custom Activities](../../../../docs/framework/windows-workflow-foundation/samples/custom-activities.md)  
  Contains samples that demonstrate creating custom activities.  
   
@@ -23,30 +20,7 @@ This section provides samples that demonstrate basic Windows Workflow Foundation
  Contains samples that demonstrate re-hosting the activity designer.  
   
  [Execution](../../../../docs/framework/windows-workflow-foundation/samples/execution.md)  
- Contains samples that demonstrate executing workflows.  
-  
- [Expressions](../../../../docs/framework/windows-workflow-foundation/samples/expressions.md)  
- Contains samples that demonstrate Windows Workflow Foundation (WF) expressions.  
-  
- [Migration](../../../../docs/framework/windows-workflow-foundation/samples/migration.md)  
- Contains samples that demonstrate migrating workflows created with previous versions of Windows Workflow Foundation (WF).  
-  
- [Persistence](../../../../docs/framework/windows-workflow-foundation/samples/persistence.md)  
- Contains samples that demonstrate persisting workflows to a durable medium.  
-  
- [Rules Samples](../../../../docs/framework/windows-workflow-foundation/samples/rules-samples.md)  
- Contains samples that demonstrate using the workflow rules engine from [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)].  
-  
- [Services](../../../../docs/framework/windows-workflow-foundation/samples/services.md)  
- Contains samples that demonstrate workflow services.  
+ Contains samples that demonstrate executing workflows.
   
  [Tracking](../../../../docs/framework/windows-workflow-foundation/samples/tracking.md)  
- Contains samples that demonstrate workflow tracking.  
-  
- [Transactions](../../../../docs/framework/windows-workflow-foundation/samples/transactions.md)  
- Contains samples that demonstrate workflow transactions.  
-  
- [Validation](../../../../docs/framework/windows-workflow-foundation/samples/validation.md)  
- Contains samples that demonstrate validation in Windows Workflow Foundation.  
-  
-## Reference
+ Contains samples that demonstrate workflow tracking.

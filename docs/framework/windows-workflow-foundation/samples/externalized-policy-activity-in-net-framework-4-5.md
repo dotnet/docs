@@ -50,7 +50,7 @@ The ExternalizedPolicy4 designer allows you to configure an activity to use an e
 
 ## Policy4 and ExternalPolicy4
 
-The [Policy Activity in .NET Framework 4.5](../../../../docs/framework/windows-workflow-foundation/samples/policy-activity-in-net-framework-4-5.md) activity allows you to create and execute a .NET Framework 3.5 RuleSet in a WF 4.5 workflow. The <xref:System.Workflow.Activities.Rules.RuleSet> is serialized inline in the Policy4 activity XAML definition. The ExternalizedPolicy4 sample shows how to use an existing external <xref:System.Workflow.Activities.Rules.RuleSet> (contained in a .rules file).
+The Policy activity allows you to create and execute a .NET Framework 3.5 RuleSet in a WF 4.5 workflow. The <xref:System.Workflow.Activities.Rules.RuleSet> is serialized inline in the Policy4 activity XAML definition. The ExternalizedPolicy4 sample shows how to use an existing external <xref:System.Workflow.Activities.Rules.RuleSet> (contained in a .rules file).
 
 ## Use this sample
 

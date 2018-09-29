@@ -1,29 +1,21 @@
 ---
-title: "Windows Workflow (WF) Samples"
-ms.date: "03/30/2017"
+title: "Windows Workflow (WF) sample documentation"
+ms.date: 09/24/2018
 ms.assetid: e0aef017-4381-4f2f-a904-6e1ed898687e
 ---
 # Windows Workflow (WF) Samples
 
-These samples provide instruction on various aspects of Windows Workflow Foundation (WF).
+You can [download Windows Workflow samples](https://go.microsoft.com/fwlink/?LinkId=150780) that provide instruction on various aspects of Windows Workflow Foundation (WF).
 
-The samples can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=150780).
+The articles in this section describe some of the samples in the download package. For a complete documentation set that covers all of the samples, check the [.NET Framework 4 WF samples](/previous-versions/dotnet/netframework-4.0/dd483375(v%3dvs.100)) section.
 
 > [!NOTE]
-> These samples were created with Visual Studio 2010 and [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], but are compatible with later versions of Visual Studio and the .NET Framework. Additional samples for Windows Workflow Foundation in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] can be found on [MSDN code samples](https://aka.ms/WF45Samples).
+> The downloadable samples were created with Visual Studio 2010 and [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], but are compatible with later versions of Visual Studio and the .NET Framework. Additional samples for Windows Workflow Foundation in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] can be found on [MSDN code samples](https://aka.ms/WF45Samples).
 
 ## In this section
 
-[Application](../../../../docs/framework/windows-workflow-foundation/samples/application.md)
+[Application](../../../../docs/framework/windows-workflow-foundation/samples/application.md) - Provides samples that are related to workflow applications.
 
-Provides samples that are related to workflow applications.
+[Basic](../../../../docs/framework/windows-workflow-foundation/samples/basic.md) - Provides samples that demonstrate basic Windows Workflow Foundation (WF) functionality.
 
-[Basic](../../../../docs/framework/windows-workflow-foundation/samples/basic.md)
-
-Provides samples that demonstrate basic Windows Workflow Foundation (WF) functionality.
-
-[Scenario](../../../../docs/framework/windows-workflow-foundation/samples/scenario.md)
-
-Provides examples of Windows Workflow Foundation (WF) scenarios.
-
-The samples can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=150780).
+[Scenario](../../../../docs/framework/windows-workflow-foundation/samples/scenario.md) - Provides examples of Windows Workflow Foundation (WF) scenarios.

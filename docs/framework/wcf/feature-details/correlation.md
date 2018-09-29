@@ -20,9 +20,8 @@ When workflow service applications communicate with other services, it is import
  Provides methods for troubleshooting correlation.  
   
 ## See Also  
- <xref:System.ServiceModel.Activities.CorrelationHandle>  
- <xref:System.ServiceModel.Activities.Send>  
- <xref:System.ServiceModel.Activities.Receive>  
- <xref:System.ServiceModel.CorrelationQuery>  
- [Content-Based Correlation](../../../../docs/framework/windows-workflow-foundation/samples/content-based-correlation.md)  
- [Correlated Calculator](../../../../docs/framework/windows-workflow-foundation/samples/correlated-calculator.md)
+
+- <xref:System.ServiceModel.Activities.CorrelationHandle>  
+- <xref:System.ServiceModel.Activities.Send>  
+- <xref:System.ServiceModel.Activities.Receive>  
+- <xref:System.ServiceModel.CorrelationQuery>  

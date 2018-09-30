@@ -46,9 +46,11 @@ Because a source breaking change is only harmful when the developer recompiles t
 
 ### Behavior breaking change
 
-Behavior changes are the most common breaking change: almost any change in behavior could break someone. Changing the results a method produces, the exception your library throws, or the data output it writes could all negatively impact applications and libraries than depend on you. Even a bug fix can qualify if users relied on the previously broken behavior.
+Behavior changes are the most common breaking change: almost any change in behavior could break someone. Changing the results a method produces, the exception your library throws, or the data output it writes to the network or disk could all negatively impact applications and libraries than depend on you. Even a bug fix can qualify as a breaking change if users relied on the previously broken behavior.
 
-An approach to behavior breaking changes is to hide them behind settings. Settings let developers update to the latest version of your library while at the same time choosing to opt-in or opt-out of breaking changes. For example, ASP.NET Core MVC has the concept of a [compatibility version](https://docs.microsoft.com/en-us/aspnet/core/mvc/compatibility-version) that modifies the features enabled and disabled on `MvcOptions`.
+Adding features and improving bad behaviors is a good thing, but without care it can make it very hard for existing software to upgrade. One approach to helping developers deal with behavior breaking changes is to hide them behind settings. Settings let developers update to the latest version of your library while at the same time choosing to opt-in or opt-out of breaking changes. This strategy lets developers stay up to date while letting their consuming code adapt over time.
+
+For example, ASP.NET Core MVC has the concept of a [compatibility version](https://docs.microsoft.com/en-us/aspnet/core/mvc/compatibility-version) that modifies the features enabled and disabled on `MvcOptions`.
 
 **✔️ CONSIDER** leaving new features off by default if they affect existing users, and let developers opt-in to the feature with a setting.
 

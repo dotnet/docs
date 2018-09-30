@@ -46,15 +46,17 @@ Because a source breaking change is only harmful when the developer recompiles t
 
 ### Behavior breaking change
 
-Behavior changes are the most common breaking change: almost any change in behavior could break someone. Even a bug fix can qualify if users relied on the previously broken behavior.
+Behavior changes are the most common breaking change: almost any change in behavior could break someone. Changing the results a method produces, the exception your library throws, or the data output it writes could all negatively impact applications and libraries than depend on you. Even a bug fix can qualify if users relied on the previously broken behavior.
 
-**✔️ CONSIDER** leaving new features off by default if they affect existing users, and let developers opt in to the feature with a setting.
+An approach to behavior breaking changes is to hide them behind settings. Settings let developers update to the latest version of your library while at the same time choosing to opt-in or opt-out of breaking changes. For example, ASP.NET Core MVC has the concept of a [compatibility version](https://docs.microsoft.com/en-us/aspnet/core/mvc/compatibility-version) that modifies the features enabled and disabled on `MvcOptions`.
+
+**✔️ CONSIDER** leaving new features off by default if they affect existing users, and let developers opt-in to the feature with a setting.
 
 ### Binary breaking change
 
-A binary breaking change happens when you change the public API of a library so assemblies compiled against older versions are no longer able to call it. For example, changing a method's signature by adding a new parameter will cause already compiled assemblies that called it to throw a `MissingMethodException`.
+A binary breaking change happens when you change the public API of a library so assemblies compiled against older versions are no longer able to call it. For example, changing a method's signature by adding a new parameter will cause assemblies compiled against the older version of the library to throw a `MissingMethodException`.
 
-A binary breaking change can also break an **entire assembly**. Renaming an assembly in `AssemblyNameAttribute` will change the assembly's identity, as will adding, removing, or changing an assembly's strong naming key. A change of an assembly's identity will break all compiled code that uses it.
+A binary breaking change can also break an **entire assembly**. Renaming an assembly with `AssemblyNameAttribute` will change the assembly's identity, as will adding, removing, or changing an assembly's strong naming key. A change of an assembly's identity will break all compiled code that uses it.
 
 **❌ DO NOT** change an assembly name.
 

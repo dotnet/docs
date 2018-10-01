@@ -73,13 +73,13 @@ For more information about benefits and drawbacks of using spin lock, see the [S
 
 ### ReaderWriterLockSlim class
 
-Use the <xref:System.Threading.ReaderWriterLockSlim?displayProperty=nameWithType> class to grant exclusive access to a shared resource for writing. Multiple threads can access the resource simultaneously for reading. You might want to use <xref:System.Threading.ReaderWriterLockSlim> to synchronize access to a shared data structure that supports thread-safe read operations, but requires exclusive access to perform write operation. When a thread requests exclusive access (for example, by calling the <xref:System.Threading.ReaderWriterLockSlim.EnterWriteLock%2A?displayProperty=nameWithType> method), subsequent reader requests block until all existing readers have exited the lock, and the writer has entered and exited the lock.
+The <xref:System.Threading.ReaderWriterLockSlim?displayProperty=nameWithType> class grants exclusive access to a shared resource for writing and allows multiple threads access the resource simultaneously for reading. You might want to use <xref:System.Threading.ReaderWriterLockSlim> to synchronize access to a shared data structure that supports thread-safe read operations, but requires exclusive access to perform write operation. When a thread requests exclusive access (for example, by calling the <xref:System.Threading.ReaderWriterLockSlim.EnterWriteLock%2A?displayProperty=nameWithType> method), subsequent reader requests block until all existing readers have exited the lock, and the writer has entered and exited the lock.
   
 For more information, see the [Reader-Writer locks](reader-writer-locks.md) article and the <xref:System.Threading.ReaderWriterLockSlim> API reference.
 
 ### Semaphore and SemaphoreSlim classes
 
-Use <xref:System.Threading.Semaphore?displayProperty=nameWithType> or <xref:System.Threading.SemaphoreSlim?displayProperty=nameWithType> to limit the number of threads that can access a resource concurrently. Additional threads that request the resource wait until any thread releases the semaphore.
+The <xref:System.Threading.Semaphore?displayProperty=nameWithType> and <xref:System.Threading.SemaphoreSlim?displayProperty=nameWithType> classes limit the number of threads that can access a resource concurrently. Additional threads that request the resource wait until any thread releases the semaphore.
 
 You create a <xref:System.Threading.Semaphore> instance that represents a named system semaphore by using one of the [Semaphore constructors](<xref:System.Threading.Semaphore.%23ctor%2A>) that specifies a name or the <xref:System.Threading.Semaphore.OpenExisting%2A?displayProperty=nameWithType> method. A named system semaphore can be used for the inter-process synchronization.
 

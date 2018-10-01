@@ -13,10 +13,10 @@ Aspects of high-quality .NET libraries:
 
 > [!div class="checklist"]
 > * **Inclusive** - Good .NET libraries strive to support many platforms and applications.
-> * **Stable** - Modern .NET applications are built from many libraries. Good .NET libraries should co-exist in the greater .NET ecosystem.
+> * **Stable** - Good .NET libraries should co-exist in the greater .NET ecosystem in applictions with many libraries.
 > * **Designed to evolve** - .NET libraries should improve and evolve over time while supporting existing users.
 > * **Debuggable** - A high-quality .NET library should use the latest tools to create a great debugging experience for its users.
-> * **Trusted** - It is important that security best practices are used to publish to NuGet and developers trust the source of a .NET library.
+> * **Trusted** - .NET libraries have developers trust and publish to NuGet following security best practices.
 
 > [!div class="nextstepaction"]
 > [Get Started](./get-started.md)
@@ -25,7 +25,7 @@ Aspects of high-quality .NET libraries:
 
 With each topic there is a list of recommendations for your open-source .NET library using **Do**, **Consider**, **Avoid** and **Do not**. The wording of each recommendation indicates how strongly it should be followed. For example a **Do** recommendation is one that should almost always be followed:
 
-**✔️ DO** choose an [OSS license](https://choosealicense.com/).
+**✔️ DO** distribute your library using a NuGet package.
 
 On the other hand **Consider** recommendations should generally be followed, but there are legitimate exceptions to the rule and you should not feel bad about not following the guidance:
 

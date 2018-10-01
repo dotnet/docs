@@ -1,11 +1,11 @@
 ---
-title: Get Started
+title: Get started
 description: Getting started building .NET libraries.
 author: jamesnk
 ms.author: James.NewtonKing
 ms.date: 09/20/2018
 ---
-# Get Started
+# Get started
 
 ## [Cross-platform targeting](./cross-platform-targeting.md)
 

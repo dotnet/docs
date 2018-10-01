@@ -48,11 +48,7 @@ Some of those types are alternatives to the types derived from <xref:System.Thre
 
 ### Monitor class
 
-The <xref:System.Threading.Monitor?displayProperty=nameWithType> class allows you to synchronize access to a shared resource by acquiring or releasing a lock on the dedicated object that identifies the resource.
-
-Use the <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> method to acquire a lock on an object. As the <xref:System.Threading.Monitor> class has thread affinity, the thread that acquired a lock must release the lock by calling the <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType> method.
-
-<xref:System.Threading.Monitor> grants mutually exclusive access to a shared resource. While a lock is held, the thread that holds the lock can again acquire and release the lock. Any other thread is blocked from acquiring the lock and the <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> method waits until the lock is released to acquire it. Use the <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=nameWithType> method if you want to specify the amount of time, for which a thread attempts to acquire a lock.
+The <xref:System.Threading.Monitor?displayProperty=nameWithType> class grants mutually exclusive access to a shared resource by acquiring or releasing a lock on the object that identifies the resource. While a lock is held, the thread that holds the lock can again acquire and release the lock. Any other thread is blocked from acquiring the lock and the <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> method waits until the lock is released. The <xref:System.Threading.Monitor.Enter%2A> method acquires a released lock. You can also use the <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=nameWithType> method to specify the amount of time during which a thread attempts to acquire a lock. Because the <xref:System.Threading.Monitor> class has thread affinity, the thread that acquired a lock must release the lock by calling the <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType> method.
 
 You can coordinate the interaction of threads that acquire a lock on the same object by using the <xref:System.Threading.Monitor.Wait%2A?displayProperty=nameWithType>, <xref:System.Threading.Monitor.Pulse%2A?displayProperty=nameWithType>, and <xref:System.Threading.Monitor.PulseAll%2A?displayProperty=nameWithType> methods.
 

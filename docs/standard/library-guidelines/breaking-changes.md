@@ -88,10 +88,10 @@ public class Document
 }
 ```
 
-**More information**
+>[!div class="step-by-step"]
+[Previous](./versioning.md)
+
+## See also
 
 * [A definitive guide to API-breaking changes in .NET](https://stackoverflow.com/questions/1456785/a-definitive-guide-to-api-breaking-changes-in-net)
 * [CoreFX Breaking Change Rules](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/breaking-change-rules.md)
-
->[!div class="step-by-step"]
-[Previous](./versioning.md)

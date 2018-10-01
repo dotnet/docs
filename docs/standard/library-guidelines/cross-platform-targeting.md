@@ -11,7 +11,7 @@ Modern .NET supports multiple operating systems and devices. It's important for 
 
 ## .NET Standard
 
-.NET Standard is the best way to add cross-platform support to a .NET library. .NET Standard is a specification of .NET APIs that are available on all .NET implementations. Targeting .NET Standard lets you produce libraries that are constrained to use APIs that are in a given version of .NET Standard, which means it's usable by all platforms that implement that version of the .NET Standard.
+.NET Standard is the best way to add cross-platform support to a .NET library. [.NET Standard](../net-standard.md) is a specification of .NET APIs that are available on all .NET implementations. Targeting .NET Standard lets you produce libraries that are constrained to use APIs that are in a given version of .NET Standard, which means it's usable by all platforms that implement that version of the .NET Standard.
 
 ![.NET Standard](./media/platforms-netstandard.png ".NET Standard")
 
@@ -21,7 +21,7 @@ Targeting .NET Standard, and successfully compiling your project, doesn't guaran
 2. APIs can behave differently. For example, reflection APIs have different performance characteristics when an application uses ahead-of-time compilation on iOS or UWP.
 
 > [!TIP]
-> The .NET team [offers a Roslyn analyzer](https://docs.microsoft.com/en-us/dotnet/standard/analyzers/api-analyzer) to help you discover possible issues.
+> The .NET team [offers a Roslyn analyzer](../analyzers/api-analyzer.md) to help you discover possible issues.
 
 **✔️ DO** start with including a `netstandard2.0` target.
 
@@ -39,14 +39,9 @@ Targeting .NET Standard, and successfully compiling your project, doesn't guaran
 
 > For example, a UWP control toolkit library depends on an app model that is only available on UWP. App model specific APIs will not be available in .NET Standard.
 
-**More information**
-
-* [.NET Standard](https://docs.microsoft.com/en-us/dotnet/standard/net-standard)
-* [.NET API analyzer](https://docs.microsoft.com/en-us/dotnet/standard/analyzers/api-analyzer)
-
 ## Multi-targeting
 
-Sometimes you need to access framework-specific APIs from your libraries. The best way to call framework-specific APIs is using multi-targeting, which builds your project for many frameworks rather than for just one.
+Sometimes you need to access framework-specific APIs from your libraries. The best way to call framework-specific APIs is using multi-targeting, which builds your project for many [.NET target frameworks](../frameworks.md) rather than for just one.
 
 To shield your consumers from having to build for individual frameworks, you should strive to have a .NET Standard output plus one or more framework-specific outputs. With multi-targeting, all assemblies are packaged inside a single NuGet package. Consumers can then reference the same package and NuGet will pick the appropriate implementation. Your .NET Standard library serves as the fall-back library that is used everywhere, except for the cases where your NuGet package offers a framework-specific implementation. Multi-targeting allows you to use conditional compilation in your code and call framework-specific APIs.
 
@@ -82,11 +77,6 @@ To shield your consumers from having to build for individual frameworks, you sho
 ```
 
 **✔️ CONSIDER** using [MSBuild.Sdk.Extras](https://github.com/onovotny/MSBuildSdkExtras) when multi-targeting for UWP and Xamarin as it greatly simplifies your project file.
-
-**More information**
-
-* [.NET target frameworks](https://docs.microsoft.com/en-us/dotnet/standard/frameworks)
-* [Multi-Targeting and Porting a .NET Library to .NET Core 2.0](https://weblog.west-wind.com/posts/2017/Jun/22/MultiTargeting-and-Porting-a-NET-Library-to-NET-Core-20)
 
 ## Older targets
 

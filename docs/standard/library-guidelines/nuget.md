@@ -34,18 +34,13 @@ The older way of creating a NuGet package is with a `*.nuspec` file and the `nug
 
 **✔️ CONSIDER** setting up SourceLink to add source control metadata to your assemblies and NuGet package.
 
-**More information**
-
-* [Creating NuGet packages](https://docs.microsoft.com/en-us/nuget/create-packages/creating-a-package)
-* [Migrate from packages.config to PackageReference](https://docs.microsoft.com/en-us/nuget/reference/migrate-packages-config-to-package-reference)
-
 ## Package dependences
 
 NuGet package dependencies are covered in detail [here](./dependencies.md).
 
 ## Important NuGet package metadata
 
-A NuGet package supports many metadata properties. The following table contains the core metadata that every open-source project should provide:
+A NuGet package supports many [metadata properties](https://docs.microsoft.com/en-us/nuget/reference/nuspec). The following table contains the core metadata that every open-source project should provide:
 
 | MSBuild Property name              | Nuspec name              | Description  |
 | ---------------------------------- | ------------------------ | ------------ |
@@ -72,13 +67,9 @@ A NuGet package supports many metadata properties. The following table contains 
 
 **✔️ DO** use a package icon image that is 64x64 and has a transparent background for best viewing results.
 
-**More information**
-
-* [.nuspec reference](https://docs.microsoft.com/en-us/nuget/reference/nuspec)
-
 ## Pre-release packages
 
-NuGet packages with a version suffix are considered pre-release. By default the NuGet Package Manager UI shows stable releases unless a user opts-in to pre-release packages, making pre-release packages ideal for limited user testing.
+NuGet packages with a version suffix are considered [pre-release](https://docs.microsoft.com/en-us/nuget/create-packages/prerelease-packages). By default the NuGet Package Manager UI shows stable releases unless a user opts-in to pre-release packages, making pre-release packages ideal for limited user testing.
 
 ```xml
 <PackageVersion>1.0.1-beta1</PackageVersion>
@@ -93,23 +84,15 @@ NuGet packages with a version suffix are considered pre-release. By default the 
 
 **✔️ DO** publish a stable package when its ready so other stable packages can reference it.
 
-**More information**
-
-* [Building pre-release packages](https://docs.microsoft.com/en-us/nuget/create-packages/prerelease-packages)
-
 ## Symbol packages
 
-NuGet supports generating a separate symbol package containing debug PDB files alongside the main package containing .NET assemblies. The idea of symbol packages is they're hosted on a symbol server and are only downloaded by a tool like Visual Studio on demand.
+NuGet supports [generating a separate symbol package](https://docs.microsoft.com/en-us/nuget/create-packages/symbol-packages) containing debug PDB files alongside the main package containing .NET assemblies. The idea of symbol packages is they're hosted on a symbol server and are only downloaded by a tool like Visual Studio on demand.
 
 Currently the main public host for symbols - [SymbolSource](http://www.symbolsource.org/) - doesn't support the portable PDBs created by SDK-style projects and symbol packages aren't useful.
 
 **✔️ CONSIDER** embedding PDBs in the main NuGet package.
 
 **❌ AVOID** creating a symbols package containing PDBs.
-
-**More information**
-
-* [Creating symbol packages](https://docs.microsoft.com/en-us/nuget/create-packages/symbol-packages)
 
 >[!div class="step-by-step"]
 [Previous](./strong-naming.md)

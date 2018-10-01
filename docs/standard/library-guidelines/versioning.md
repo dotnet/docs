@@ -19,7 +19,7 @@ A .NET library has many ways to specify a version. These versions are the most i
 
 ### NuGet package version
 
-The NuGet package version is displayed on NuGet.org, the Visual Studio NuGet package manager, and is added to source code when the packaged is used. The NuGet package version is the version number users will commonly see, and they'll refer to it when they talk about the version of a library they're using. The NuGet package version is used by NuGet and has no effect on runtime behavior.
+The [NuGet package version](https://docs.microsoft.com/en-us/nuget/reference/package-versioning) is displayed on NuGet.org, the Visual Studio NuGet package manager, and is added to source code when the packaged is used. The NuGet package version is the version number users will commonly see, and they'll refer to it when they talk about the version of a library they're using. The NuGet package version is used by NuGet and has no effect on runtime behavior.
 
 ```xml
 <PackageVersion>1.0.0-alpha1</PackageVersion>
@@ -37,11 +37,6 @@ Because the NuGet package version is the most visible version to developers, it'
 
 > Users must opt-in to getting pre-release packages so they will understand that the package is not complete.
 
-**More information**
-
-* [NuGet package versioning](https://docs.microsoft.com/en-us/nuget/reference/package-versioning)
-* [Semantic Versioning 2.0.0](https://semver.org/)
-
 ### Assembly version
 
 The assembly version is what the CLR uses at runtime to select which version of an assembly to load. Selecting an assembly using versioning only applies to assemblies with a strong name.
@@ -52,7 +47,7 @@ The assembly version is what the CLR uses at runtime to select which version of 
 
 The Windows .NET Framework CLR demands an exact match to load a strong named assembly. For example, `Libary1, Version=1.0.0.0` was compiled with a reference to `Newtonsoft.Json, Version=11.0.0.0`. The .NET Framework will only load that exact version `11.0.0.0`. To load a different version at runtime, a binding redirect must be added to the .NET application's config file.
 
-Strong naming combined with assembly version is a controversial subject. While strong naming a library has a number of benefits, it often results in runtime exceptions that an assembly can't be found and [requires binding redirects](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/redirect-assembly-versions) in `app.config`/`web.config` to be fixed. .NET Core assembly loading has been relaxed, and the .NET Core CLR will automatically load assemblies at runtime with a higher version.
+Strong naming combined with assembly version enables [strict assembly version loading](../../framework/app-domains/assembly-versioning). While strong naming a library has a number of benefits, it often results in runtime exceptions that an assembly can't be found and [requires binding redirects](../../framework/configure-apps/redirect-assembly-versions) in `app.config`/`web.config` to be fixed. .NET Core assembly loading has been relaxed, and the .NET Core CLR will automatically load assemblies at runtime with a higher version.
 
 **✔️ CONSIDER** only including a major version in the AssemblyVersion.
 
@@ -65,11 +60,6 @@ Strong naming combined with assembly version is a controversial subject. While s
 **❌ DO NOT** have a fixed AssemblyVersion.
 
 > While an unchanging AssemblyVersion avoids the need for binding redirects, it means that only a single version of the assembly can be GACed. Also, the applications that reference the assembly in the GAC will break if another application updates the GACed assembly with breaking changes.
-
-**More information**
-
-* [Assembly versioning](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/assembly-versioning)
-* [Redirecting Assembly Versions](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/redirect-assembly-versions)
 
 ### Assembly file version
 

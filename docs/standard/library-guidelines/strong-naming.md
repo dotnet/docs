@@ -7,9 +7,9 @@ ms.date: 09/20/2018
 ---
 # Strong naming
 
-Strong naming refers to signing an assembly with a key, producing a strong named assembly. When an assembly is strong-named, it creates a unique identity based on the name and assembly version number, and can help prevent assembly conflicts.
+Strong naming refers to signing an assembly with a key, producing a [strong named assembly](../../framework/app-domains/strong-named-assemblies.md). When an assembly is strong-named, it creates a unique identity based on the name and assembly version number, and can help prevent assembly conflicts.
 
-The downside to strong-naming is that the .NET Framework on Windows enables strict loading of assemblies once an assembly is strong named. A strong-named assembly reference must exactly match the version referenced by an assembly, forcing developers to [configure binding redirects](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/redirect-assembly-versions) when using the assembly:
+The downside to strong-naming is that the .NET Framework on Windows enables strict loading of assemblies once an assembly is strong named. A strong-named assembly reference must exactly match the version referenced by an assembly, forcing developers to [configure binding redirects](../../framework/configure-apps/redirect-assembly-versions) when using the assembly:
 
 ```xml
 <configuration>
@@ -57,11 +57,6 @@ You should strong-name your open-source .NET libraries. Strong-naming an assembl
 **❌ DO NOT** publish strong-named and non-strong-named versions of your project. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
 
 > Publishing two packages forks your developer eco-system. Also if an application ends up depending on both packages the developer can encounter type name conflicts. As far as .NET is concerned they are different types in different assemblies.
-
-**More information**
-
-* [Strong-Named Assemblies](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/strong-named-assemblies)
-* [Redirecting Assembly Versions](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/redirect-assembly-versions)
 
 >[!div class="step-by-step"]
 [Previous](./cross-platform-targeting.md)

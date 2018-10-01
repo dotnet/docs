@@ -58,13 +58,9 @@ Upper version limits will cause NuGet to fail if there's a conflict. For example
 
 **❌ AVOID** NuGet package references with a version upper limit.
 
-**More information**
-
-* [How NuGet resolves package dependencies](https://docs.microsoft.com/en-us/nuget/consume-packages/dependency-resolution)
-
 ## NuGet shared source packages
 
-One way to reduce external NuGet package dependencies is to reference share source packages. A shared source package contains source code files that are included in a project when referenced. Because you're just including source code files that are compiled with the rest of your project, there's no external dependency and chance of conflict.
+One way to reduce external NuGet package dependencies is to reference share source packages. A shared source package contains [source code files](https://docs.microsoft.com/en-us/nuget/reference/nuspec#including-content-files) that are included in a project when referenced. Because you're just including source code files that are compiled with the rest of your project, there's no external dependency and chance of conflict.
 
 Shared source packages are great for including small pieces of functionality. For example, a shared source package of helper methods for making HTTP calls.
 
@@ -93,12 +89,6 @@ Shared source packages have some limitations. They can only be referenced by `Pa
 **❌ DO NOT** publish shared source packages to nuget.org.
 
 > Shared source packages contain source code and can only be used by projects with the same language type. For example, a C# shared source package cannot be used by an F# application.
-
-**More information**
-
-* [NuGet - Including content files](https://docs.microsoft.com/en-us/nuget/reference/nuspec#including-content-files)
-
-* [Source Code Only NuGet Packages](https://medium.com/@attilah/source-code-only-nuget-packages-8f34a8fb4738)
 
 >[!div class="step-by-step"]
 [Previous](./nuget.md)

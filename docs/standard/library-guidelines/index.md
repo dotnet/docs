@@ -9,7 +9,7 @@ ms.date: 09/20/2018
 
 This guidance provides recommendations for developers to create high-quality .NET libraries. This documentation focuses on the *what* and the *why* when building a .NET library, not the *how*.
 
-The aspects of high-quality .NET libraries:
+Aspects of high-quality .NET libraries:
 
 > [!div class="checklist"]
 > * **Inclusive** - Good .NET libraries strive to support many platforms and applications.

@@ -17,7 +17,7 @@ Learn about what strong naming and its advantages and disadvantages. Strong nami
 
 ## [NuGet and open-source libraries](./nuget.md)
 
-The recommended way to create NuGet packages for open-source .NET libraries, including metadata that packages published publicly on NuGet.org should have.
+The recommended way to create NuGet packages for open-source .NET libraries, including the required metadata that all packages published publicly on NuGet.org should have.
 
 ### [Dependencies](./dependencies.md)
 

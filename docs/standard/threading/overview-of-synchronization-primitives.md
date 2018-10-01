@@ -20,15 +20,21 @@ ms.author: "ronpet"
 
 ## WaitHandle class and lightweight synchronization types
 
-Multiple .NET synchronization primitives derive from the <xref:System.Threading.WaitHandle?displayProperty=nameWithType> class, which encapsulates a native operating system synchronization handle. Those classes include:
+Multiple .NET synchronization primitives derive from the <xref:System.Threading.WaitHandle?displayProperty=nameWithType> class, which encapsulates a native operating system synchronization handle and uses a signaling mechanism for thread interaction. Those classes include:
 
-- <xref:System.Threading.Mutex?displayProperty=nameWithType>
-- <xref:System.Threading.Semaphore?displayProperty=nameWithType>
-- <xref:System.Threading.EventWaitHandle?displayProperty=nameWithType>
-- <xref:System.Threading.AutoResetEvent?displayProperty=nameWithType>
-- <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType>
+- <xref:System.Threading.Mutex?displayProperty=nameWithType>, which grants exclusive access to a shared resource. The state of a mutex is signaled if no thread owns it.
+- <xref:System.Threading.Semaphore?displayProperty=nameWithType>, which limits the number of threads that can access a shared resource or a pool of resources concurrently. The state of a semaphore is set to signaled when its count is greater than zero, and nonsignaled when its count is zero.
+- <xref:System.Threading.EventWaitHandle?displayProperty=nameWithType>, which represents a thread synchronization event and can be either in a signaled or unsignaled state.
+- <xref:System.Threading.AutoResetEvent?displayProperty=nameWithType>, which derives from <xref:System.Threading.EventWaitHandle> and, when signaled, resets automatically to an unsignaled state after releasing a single waiting thread.
+- <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType>, which derives from <xref:System.Threading.EventWaitHandle> and, when signaled, stays in a signaled state until the <xref:System.Threading.EventWaitHandle.Reset%2A> method is called.
 
-As <xref:System.Threading.WaitHandle> derives from <xref:System.MarshalByRefObject?displayProperty=nameWithType>, those types can be used to synchronize the activities of threads across application domain boundaries. Moreover, <xref:System.Threading.Mutex>, <xref:System.Threading.Semaphore>, and <xref:System.Threading.EventWaitHandle> can represent named system synchronization handles, which are visible throughout the operating system and can be used for the inter-process synchronization.
+In the .NET Framework, because <xref:System.Threading.WaitHandle> derives from <xref:System.MarshalByRefObject?displayProperty=nameWithType>, these types can be used to synchronize the activities of threads across application domain boundaries.
+
+In the .NET Framework and .NET Core, some of these types can represent named system synchronization handles, which are visible throughout the operating system and can be used for the inter-process synchronization:
+
+- <xref:System.Threading.Mutex> (.NET Framework and .NET Core),
+- <xref:System.Threading.Semaphore> (.NET Framework and .NET Core on Windows),
+- <xref:System.Threading.EventWaitHandle> (.NET Framework and .NET Core on Windows).
 
 For more information, see the <xref:System.Threading.WaitHandle> API reference.
 

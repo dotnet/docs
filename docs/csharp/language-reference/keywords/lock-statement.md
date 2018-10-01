@@ -1,7 +1,7 @@
 ---
 title: "lock statement (C# Reference)"
 description: "Use the C# lock statement to synchronize thread access to a shared resource"
-ms.date: 08/28/2018
+ms.date: 10/01/2018
 f1_keywords: 
   - "lock_CSharpKeyword"
   - "lock"
@@ -44,13 +44,11 @@ You can't use the [await](await.md) keyword in the body of a `lock` statement.
 
 ## Remarks
 
-When you synchronize thread access to a shared resource, lock on a dedicated object instance (for example, `private readonly object balanceLock = new object();`) or another instance that is unlikely to be used as a lock object by unrelated parts of the code. Avoid using the same lock object instance for different shared resources, as it might result in deadlock or lock contention. In particular, avoid using
+When you synchronize thread access to a shared resource, lock on a dedicated object instance (for example, `private readonly object balanceLock = new object();`) or another instance that is unlikely to be used as a lock object by unrelated parts of the code. Avoid using the same lock object instance for different shared resources, as it might result in deadlock or lock contention. In particular, avoid using the following as lock objects:
 
-- `this` (might be used by the callers as a lock),
-- <xref:System.Type> instances (might be obtained by the [typeof](typeof.md) operator or reflection),
-- string instances, including string literals,
-
-as lock objects.
+- `this`, as it might be used by the callers as a lock.
+- <xref:System.Type> instances, as those might be obtained by the [typeof](typeof.md) operator or reflection.
+- string instances, including string literals, as those might be [interned](/dotnet/api/system.string.intern#remarks).
 
 ## Example
 

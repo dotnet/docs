@@ -3,7 +3,6 @@ title: "System.ServiceModel.Security.SecurityInactiveSessionFaulted"
 ms.date: "03/30/2017"
 ms.assetid: 66016fd0-bdaf-48c9-9922-629c30b5fc54
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.SecurityInactiveSessionFaulted
 System.ServiceModel.Security.SecurityInactiveSessionFaulted  

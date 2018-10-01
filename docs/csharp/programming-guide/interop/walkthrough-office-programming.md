@@ -170,7 +170,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
   
 1.  In **Solution Explorer**, click the **Show All Files** button. Expand the **References** folder and select **Microsoft.Office.Interop.Excel**. Press F4 to display the **Properties** window.  
   
-2.  In the **Propertie**s window, change the **Embed Interop Types** property from **True** to **False**.  
+2.  In the **Properties** window, change the **Embed Interop Types** property from **True** to **False**.  
   
 3.  Repeat steps 1 and 2 in this procedure for `Microsoft.Office.Interop.Word`.  
   

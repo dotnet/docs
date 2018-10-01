@@ -126,7 +126,7 @@ This containerized service has the following basic configuration:
 
 -   The SQL Server name is sql.data, which is the same name used for the container that is running the SQL Server instance for Linux. This is convenient; being able to use this name resolution (internal to the Docker host) will resolve the network address so you don’t need to know the internal IP for the containers you are accessing from other containers.
 
-Because the connection string is defined by an environment variable, you could set that variable through a different mechanism and at a different time. For example, you could set a different connection string when deploying to production in the final hosts, or by doing it from your CI/CD pipelines in VSTS or your preferred DevOps system.
+Because the connection string is defined by an environment variable, you could set that variable through a different mechanism and at a different time. For example, you could set a different connection string when deploying to production in the final hosts, or by doing it from your CI/CD pipelines in Azure DevOps Services or your preferred DevOps system.
 
 -   It exposes port 80 for internal access to the catalog.api service within the Docker host. The host is currently a Linux VM because it is based on a Docker image for Linux, but you could configure the container to run on a Windows image instead.
 
@@ -180,7 +180,7 @@ When targeting different environments, you should use multiple compose files. Th
 
 You could use a single docker-compose.yml file as in the simplified examples shown in previous sections. However, that is not recommended for most applications.
 
-By default, Compose reads two files, a docker-compose.yml and an optional docker-compose.override.yml file. As shown in Figure 8-11, when you are using Visual Studio and enabling Docker support, Visual Studio also creates an additional docker-compose.ci.build,yml file for you to use from your CI/CD pipelines like in VSTS.
+By default, Compose reads two files, a docker-compose.yml and an optional docker-compose.override.yml file. As shown in Figure 8-11, when you are using Visual Studio and enabling Docker support, Visual Studio also creates an additional docker-compose.ci.build,yml file for you to use from your CI/CD pipelines like in Azure DevOps Services.
 
 ![](./media/image12.png)
 

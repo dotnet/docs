@@ -12,7 +12,6 @@ helpviewer_keywords:
 ms.assetid: 856bf57d-1c63-46c7-a178-03d97b0a4149
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;add&gt; Element for connectionManagement (Network Settings)
 Adds an IP address or DNS name to the connection management list.  

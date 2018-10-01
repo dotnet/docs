@@ -12,7 +12,6 @@ helpviewer_keywords:
 ms.assetid: 716decc6-5952-47b7-9c5a-ba6fc5698684
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Best Practices for System.Net Classes
 The following recommendations will help you use the classes contained in <xref:System.Net> to their best advantage:  

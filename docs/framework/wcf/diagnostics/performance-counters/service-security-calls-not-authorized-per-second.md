@@ -3,7 +3,6 @@ title: "Service: Security Calls Not Authorized Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 1eeade5a-ea62-4757-b1f9-1b1b1746abd1
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Service: Security Calls Not Authorized Per Second
 Counter name: Security Calls Not Authorized Per Second  

@@ -88,10 +88,10 @@
       "ms.devlang": "dotnet",
       "author": "dotnet-bot",
       "ms.author": "dotnetcontent",
-      "manager": "wpickett",
       "searchScope": [".NET"],
       "uhfHeaderId": "MSDocsHeader-DotNet",
       "apiPlatform": "dotnet",
+      "ms.prod":"dotnet",
       "ms.topic": "conceptual",
       "feedback_system": "GitHub",
       "feedback_github_repo": "dotnet/docs",
@@ -145,23 +145,16 @@
         "_csharplang/spec/*.md": "wiwagn",
         "_vblang/spec/*.md": "wiwagn",
         "docs/core/**/**.md": "mairaw",
+        "docs/core/docker/**.md": "johnalex",
         "docs/csharp/**/**.md": "wiwagn",
         "docs/csharp/**/**.yml": "wiwagn",
         "docs/framework/data/adonet/**/**.md": "douglasl",
         "docs/fsharp/**/**.md": "phcart",
-        "docs/machine-learning/**/**.md": "johalex"
-      },
-      "manager": {
-        "docs/framework/data/adonet/**/**.md": "craigg"
+        "docs/machine-learning/**/**.md": "johnalex"
       },
       "ms.date": {
         "_csharplang/spec/*.md": "07/01/2017",
         "_vblang/spec/*.md": "07/21/2017"
-      },
-      "ms.workload": {
-        "docs/core/**/**.md": ["dotnetcore"],
-        "docs/framework/**/**.md": ["dotnet"],
-        "docs/standard/**/**.md": ["dotnet", "dotnetcore"]
       },
       "ms.technology": {
         "_csharplang/spec/*.md": "csharp-spec",

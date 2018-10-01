@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 9d663c4b-07b4-4f6f-9b12-efbd3630354f
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;defaultProxy&gt; Element (Network Settings)
 Configures the Hypertext Transfer Protocol (HTTP) proxy server.  

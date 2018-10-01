@@ -9,7 +9,6 @@ helpviewer_keywords:
 ms.assetid: 93fdfbb9-0025-4b72-8ca0-0714adbb70d5
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # TextPattern and Embedded Objects Overview
 > [!NOTE]

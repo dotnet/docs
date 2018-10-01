@@ -3,7 +3,6 @@ title: "Custom Binding Security"
 ms.date: "03/30/2017"
 ms.assetid: a6383dff-4308-46d2-bc6d-acd4e18b4b8d
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Custom Binding Security
 This sample demonstrates how to configure security by using a custom binding. It shows how to use a custom binding to enable message-level security together with a secure transport. This is useful when a secure transport is required to transmit the messages between client and service and simultaneously the messages must be secure on the message level. This configuration is not supported by system-provided bindings.  

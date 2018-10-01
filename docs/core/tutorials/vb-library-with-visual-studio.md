@@ -6,6 +6,7 @@ ms.author: ronpet
 ms.date: 08/07/2017
 dev_langs: 
   - "vb"
+ms.custom: vs-dotnet
 ---
 # Building a class library with Visual Basic and .NET Core in Visual Studio 2017
 

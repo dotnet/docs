@@ -149,7 +149,7 @@ Private Shared Sub FillError(sender As Object, _
     DataRow myRow = args.DataTable.Rows.Add(New Object() _  
       {args.Values(0), args.Values(1), DBNull.Value})  
     ' Set the RowError containing the value for the third column.  
-    args.RowError = _  
+    myRow.RowError = _  
       "OverflowException encountered. Value from data source: " & _  
       args.Values(2)  
     args.Continue = True  
@@ -172,7 +172,7 @@ protected static void FillError(object sender, FillErrorEventArgs args)
     DataRow myRow = args.DataTable.Rows.Add(new object[]  
        {args.Values[0], args.Values[1], DBNull.Value});  
     //Set the RowError containing the value for the third column.  
-    args.RowError =   
+    myRow.RowError =   
        "OverflowException Encountered. Value from data source: " +  
        args.Values[2];  
     args.Continue = true;  

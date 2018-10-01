@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Properties for Clients
 > [!NOTE]

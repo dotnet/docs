@@ -3,7 +3,6 @@ title: "SecurityNegotiationSuccess"
 ms.date: "03/30/2017"
 ms.assetid: 884dc3ae-c2ff-4793-b60c-d01d44712687
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # SecurityNegotiationSuccess
 Id: 171  

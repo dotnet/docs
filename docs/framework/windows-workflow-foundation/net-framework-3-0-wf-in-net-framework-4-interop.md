@@ -46,7 +46,4 @@ The <xref:System.Activities.Statements.Interop> activity is a [!INCLUDE[netfx_cu
   
 3.  WF 3 tracking records for activities within an <xref:System.Activities.Statements.Interop> activity are provided to WF 4.5 tracking participants as <xref:System.Activities.Tracking.InteropTrackingRecord> objects. <xref:System.Activities.Tracking.InteropTrackingRecord> is a derivative of <xref:System.Activities.Tracking.CustomTrackingRecord>.  
   
-4.  A WF 3 custom activity can access data using workflow queues within the interoperation environment in exactly the same way as within the WF 3 workflow runtime. No custom activity code changes are required. On the host, data is enqueued to a WF 3 workflow queue by resuming a <xref:System.Activities.Bookmark>. The name of the bookmark is the string form of the <xref:System.IComparable> workflow queue name.  
-  
-## See Also  
- [Using a .NET Framework 3.0 or .NET Framework 3.5 Activity in a .NET Framework 4.5 Workflow](../../../docs/framework/windows-workflow-foundation/samples/using-a-net-3-0-or-net-3-5-activity-in-a-net-4-5-workflow.md)
+4.  A WF 3 custom activity can access data using workflow queues within the interoperation environment in exactly the same way as within the WF 3 workflow runtime. No custom activity code changes are required. On the host, data is enqueued to a WF 3 workflow queue by resuming a <xref:System.Activities.Bookmark>. The name of the bookmark is the string form of the <xref:System.IComparable> workflow queue name.

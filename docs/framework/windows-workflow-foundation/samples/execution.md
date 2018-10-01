@@ -6,15 +6,7 @@ ms.assetid: a9dcedcc-9f4c-45c2-8222-6bcbf48f3534
 # Execution
 This section contains samples that demonstrate executing workflows in Windows Workflow Foundation (WF).  
   
-## In This Section  
- [Workflow Management Endpoint Sample](../../../../docs/framework/windows-workflow-foundation/samples/workflow-management-endpoint-sample.md)  
- Demonstrates how a workflow control endpoint can be used to create and run workflows both locally and remotely.  
-  
- [Using the WorkflowInvoker Class](../../../../docs/framework/windows-workflow-foundation/samples/using-the-workflowinvoker-class.md)  
- Demonstrates how to use the <xref:System.Activities.WorkflowInvoker> class to invoke an activity as if it were a method.  
-  
- [WorkflowApplication ReadLine Host](../../../../docs/framework/windows-workflow-foundation/samples/workflowapplication-readline-host.md)  
- Demonstrates how to create a generic ReadLine host.  
+## In This Section
   
  [Creating and Running a Workflow Instance](../../../../docs/framework/windows-workflow-foundation/samples/creating-and-running-a-workflow-instance.md)  
  Demonstrates how to run a workflow instance. It shows how to execute it synchronously and asynchronously.  

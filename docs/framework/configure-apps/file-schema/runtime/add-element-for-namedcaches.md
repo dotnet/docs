@@ -7,7 +7,6 @@ helpviewer_keywords:
 ms.assetid: ce2a63a8-c829-4742-a6ea-72ee5d89f169
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;add&gt; Element for &lt;namedCaches&gt;
 Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.  

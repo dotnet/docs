@@ -3,7 +3,6 @@ title: "How To: Build Claims-Aware ASP.NET Application Using Windows Authenticat
 ms.date: "03/30/2017"
 ms.assetid: 11c53d9d-d34a-44b4-8b5e-22e3eaeaee93
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How To: Build Claims-Aware ASP.NET Application Using Windows Authentication
 ## Applies To  

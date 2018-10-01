@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "federation"
 ms.assetid: 98e82101-4cff-4bb8-a220-f7abed3556e5
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How to: Create a Security Token Service
 A security token service implements the protocol defined in the WS-Trust specification. This protocol defines message formats and message exchange patterns for issuing, renewing, canceling, and validating security tokens. A given security token service provides one or more of these capabilities. This topic looks at the most common scenario: implementing token issuance.  

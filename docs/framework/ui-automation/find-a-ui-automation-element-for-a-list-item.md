@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: c326ad2b-2144-4f64-ae4c-d850c74f95c5
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Find a UI Automation Element for a List Item
 > [!NOTE]

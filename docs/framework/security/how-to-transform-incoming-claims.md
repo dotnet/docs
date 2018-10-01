@@ -3,7 +3,6 @@ title: "How To: Transform Incoming Claims"
 ms.date: "03/30/2017"
 ms.assetid: 2831d514-d9d8-4200-9192-954bb6da1126
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How To: Transform Incoming Claims
 ## Applies To  

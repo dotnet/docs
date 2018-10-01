@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "WCF, security"
 ms.assetid: d171b5ca-96ef-47ff-800c-c138023cf76e
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How to: Secure a Service with Windows Credentials
 This topic shows how to enable transport security on a Windows Communication Foundation (WCF) service that resides in a Windows domain and is called by clients in the same domain. For more information about this scenario, see [Transport Security with Windows Authentication](../../../docs/framework/wcf/feature-details/transport-security-with-windows-authentication.md). For a sample application, see the [WSHttpBinding](../../../docs/framework/wcf/samples/wshttpbinding.md) sample.  

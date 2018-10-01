@@ -66,7 +66,7 @@ You can enable persistence for self-hosted workflows that use <xref:System.Activ
    ```
 
 > [!NOTE]
-> See the [Persisting a Workflow Application](../../../docs/framework/windows-workflow-foundation/samples/persisting-a-workflow-application.md) sample at [Persistence](../../../docs/framework/windows-workflow-foundation/samples/persistence.md) for an example of enabling persistence for workflows using the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>, and the [How to: Create and Run a Long Running Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md) step of the [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md) for step by step instructions.  
+> See the [How to: Create and Run a Long Running Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md) step of the [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md) for step by step instructions.  
 
 ## Enabling Persistence for Self-Hosted Workflow Services that use the WorkflowServiceHost
 
@@ -76,7 +76,7 @@ You can enable persistence for self-hosted workflow services that use <xref:Syst
 
 The following procedure contains steps to use the <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior> class to enable persistence for self-hosted workflow services.  
 
-##### To enable persistence using SqlWorkflowInstanceStoreBehavior
+#### To enable persistence using SqlWorkflowInstanceStoreBehavior
 
 1.  Add a reference to the System.ServiceModel.dll.  
   
@@ -110,9 +110,6 @@ The following procedure contains steps to use the <xref:System.ServiceModel.Acti
     ```csharp
     host.Open();
     ```
-
-> [!IMPORTANT]
-> See the [Built-in Configuration](../../../docs/framework/windows-workflow-foundation/samples/built-in-configuration.md) sample at [Persistence](../../../docs/framework/windows-workflow-foundation/samples/persistence.md) for an example of enabling persistence for workflow services using the `SqlWorkflowInstanceStoreBehavior` class.  
 
 ### Using the DurableInstancingOptions Property
 

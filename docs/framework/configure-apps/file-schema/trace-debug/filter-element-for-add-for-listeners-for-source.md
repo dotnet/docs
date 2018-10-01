@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: 15808b80-4579-4c25-b385-178cfdf154ba
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;filter&gt; Element for &lt;add&gt; for &lt;listeners&gt; for &lt;source&gt;
 Adds a filter to a listener in the `Listeners` collection for a trace source.  

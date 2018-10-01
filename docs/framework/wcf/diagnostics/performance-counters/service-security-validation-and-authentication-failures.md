@@ -3,7 +3,6 @@ title: "Service: Security Validation and Authentication Failures"
 ms.date: "03/30/2017"
 ms.assetid: 55c98268-b1ad-459d-851b-25ef52248187
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Service: Security Validation and Authentication Failures
 Counter name: Security Validation and Authentication Failures  

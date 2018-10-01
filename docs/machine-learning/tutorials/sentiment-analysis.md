@@ -50,7 +50,7 @@ The workflow phases are as follows:
 
 ### Understand the problem
 
-You first need to understand the problem, so you can break it down to parts that can support building and training the model. Breaking the problem down you to predict and evaluate the results.
+You first need to understand the problem, so you can break it down to parts that can support building and training the model. Breaking the problem down allows you to predict and evaluate the results.
 
 The problem for this tutorial is to understand incoming website comment sentiment to take the appropriate action.
 

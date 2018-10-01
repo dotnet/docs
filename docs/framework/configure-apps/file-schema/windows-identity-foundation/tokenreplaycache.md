@@ -3,7 +3,6 @@ title: "&lt;tokenReplayCache&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 1572ab23-6933-41b5-bfb4-0c4548145500
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;tokenReplayCache&gt;
 Registers a token replay cache with a service or a security token handler collection.  

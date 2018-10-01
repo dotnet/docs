@@ -3,7 +3,6 @@ title: "WIF Session Management"
 ms.date: "03/30/2017"
 ms.assetid: 98bce126-18a9-401b-b20d-67ee462a5f8a
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # WIF Session Management
 When a client first tries to access a protected resource that is hosted by a relying party, the client must first authenticate itself to a security token service (STS) that is trusted by the relying party. The STS then issues a security token to the client. The client presents this token to the relying party, which then grants the client access to the protected resource. However, you don’t want the client to have to re-authenticate to the STS for each request, especially because it might not even be on the same computer or in the same domain as the relying party. Instead, Windows Identity Foundation (WIF) has the client and relying party establish a session in which the client uses a session security token to authenticate itself to the relying party for all requests after the first request. The relying party can use this session security token, which is stored inside a cookie, to reconstruct the client’s <xref:System.Security.Claims.ClaimsPrincipal?displayProperty=nameWithType>.  

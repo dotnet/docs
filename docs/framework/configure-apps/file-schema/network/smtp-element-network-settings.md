@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 220b0329-e384-4e0c-86b4-0945ad17efd9
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;smtp&gt; Element (Network Settings)
 Configures the delivery format, delivery method, and from address for sending emails.  

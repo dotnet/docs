@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: d40fba59-98f9-4783-ae0c-2ebea27ce77b
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;compilers&gt; Element
 Container for compiler configuration elements; contains zero or more [\<compiler>](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md) elements.  

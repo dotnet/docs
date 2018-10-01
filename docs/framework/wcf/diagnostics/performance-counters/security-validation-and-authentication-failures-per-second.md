@@ -3,7 +3,6 @@ title: "Security Validation and Authentication Failures Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 266c3bd3-2ffc-4471-94b7-3675443be1ac
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Security Validation and Authentication Failures Per Second
 Counter name: Security Validation and Authentication Failures Per Second.  

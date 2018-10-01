@@ -4,7 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: 62f121fd-3f2e-4033-bb39-48ae996bfbd9
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;httpListener&gt; Element (Network Settings)
 Customizes parameters used by the <xref:System.Net.HttpListener> class.  

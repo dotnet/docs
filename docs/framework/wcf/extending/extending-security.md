@@ -5,7 +5,6 @@ helpviewer_keywords:
   - "security [WCF], extending"
 ms.assetid: a015a040-9fdf-4147-9ea9-f83b570be1d4
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Extending Security
 To accommodate new claim types and custom tokens, you can extend the security infrastructure of Windows Communication Foundation (WCF). The topics in this section show you how this is done.  

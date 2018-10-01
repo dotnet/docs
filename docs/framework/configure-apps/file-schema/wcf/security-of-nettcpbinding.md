@@ -3,7 +3,6 @@ title: "&lt;security&gt; of &lt;netTcpBinding&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 286cd191-4fd5-4c4e-a223-9c71cf7fdead
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;security&gt; of &lt;netTcpBinding&gt;
 Defines the security settings for a binding.  

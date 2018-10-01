@@ -3,7 +3,6 @@ title: "&lt;security&gt; of &lt;peerTransport&gt;"
 ms.date: "03/30/2017"
 ms.assetid: f73634ed-f896-4968-bf74-5e5ac52d3b6b
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;security&gt; of &lt;peerTransport&gt;
 Contains the security settings associated with a peer channel, including the type of authentication used and the security used for the message transport.  

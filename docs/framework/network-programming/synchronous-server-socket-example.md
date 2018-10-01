@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: 5916c764-879f-4716-99fb-1d21c6237f1c
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # Synchronous Server Socket Example
 The following example program creates a server that receives connection requests from clients. The server is built with a synchronous socket, so execution of the server application is suspended while it waits for a connection from a client. The application receives a string from the client, displays the string on the console, and then echoes the string back to the client. The string from the client must contain the string "\<EOF>" to signal the end of the message.  

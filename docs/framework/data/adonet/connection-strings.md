@@ -19,7 +19,7 @@ If a value contains the semicolon, [Unicode control characters](https://en.wikip
 	Keyword=" whitespace  ";
 	Keyword='special;character';
 
-The enclosing character may not occur within the value it encloses. Therefore, a value containing single quotation marks can be enclosed only in double quotations marks and vice versa:
+The enclosing character may not occur within the value it encloses. Therefore, a value containing single quotation marks can be enclosed only in double quotation marks and vice versa:
 
 	Keyword='double"quotation;mark';
 	Keyword="single'quotation;mark";

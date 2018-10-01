@@ -43,3 +43,7 @@ It's important that bad actors can't access your NuGet account and upload a mali
 **✔️ DO** enable two factor authentication for accessing NuGet.
 
 **✔️ DO** enable email notification when a package is published.
+
+>[!div class="step-by-step"]
+[Previous](./sourcelink.md)
+[Next](./versioning.md)

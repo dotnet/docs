@@ -110,3 +110,7 @@ Currently the main public host for symbols - [SymbolSource](http://www.symbolsou
 **More information**
 
 * [Creating symbol packages](https://docs.microsoft.com/en-us/nuget/create-packages/symbol-packages)
+
+>[!div class="step-by-step"]
+[Previous](./strong-naming.md)
+[Next](./dependencies.md)

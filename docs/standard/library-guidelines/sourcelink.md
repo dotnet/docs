@@ -24,3 +24,7 @@ You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuG
 **✔️ CONSIDER** using SourceLink to add source control metadata to your assemblies and NuGet package.
 
 **✔️ CONSIDER** including PDB files in the NuGet package.
+
+>[!div class="step-by-step"]
+[Previous](./dependencies.md)
+[Next](./nuget-publishing.md)

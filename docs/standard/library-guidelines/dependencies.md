@@ -99,3 +99,7 @@ Shared source packages have some limitations. They can only be referenced by `Pa
 * [NuGet - Including content files](https://docs.microsoft.com/en-us/nuget/reference/nuspec#including-content-files)
 
 * [Source Code Only NuGet Packages](https://medium.com/@attilah/source-code-only-nuget-packages-8f34a8fb4738)
+
+>[!div class="step-by-step"]
+[Previous](./nuget.md)
+[Next](./sourcelink.md)

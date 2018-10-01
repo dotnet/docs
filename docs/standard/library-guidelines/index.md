@@ -12,18 +12,23 @@ This guidance provides recommendations for developers to create high-quality .NE
 The aspects of high-quality .NET libraries:
 
 * **Inclusive**
+
   Good .NET libraries strive to support many platforms and applications.
 
 * **Stable**
+
   Modern .NET applications are built using many libraries and .NET libraries should co-exist in the greater .NET ecosystem.
 
 * **Designed to evolve**
+
   .NET libraries should improve and evolve over time while supporting existing users.
 
 * **Debuggable**
+
   A high-quality .NET library should use the latest tools to create a great debugging experience for its users.
 
 * **Trusted**
+
   It is important that developers trust the source of a .NET library and security best practices are used to publish the NuGet package.
 
 > [!div class="nextstepaction"]

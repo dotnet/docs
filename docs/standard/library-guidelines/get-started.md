@@ -38,3 +38,6 @@ Good .NET libraries evolve over time, adding features, fixing bugs and improving
 ### [Breaking changes](./breaking-changes.md)
 
 It's important for an open-source project to find a balance between stability for existing users and innovation for the future. Learn about the different kinds of breaking changes and strategies for adding new features while maintaining backwards compatibility.
+
+>[!div class="step-by-step"]
+[Next](./cross-platform-targeting.md)

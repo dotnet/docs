@@ -62,3 +62,7 @@ You should strong-name your open-source .NET libraries. Strong-naming an assembl
 
 * [Strong-Named Assemblies](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/strong-named-assemblies)
 * [Redirecting Assembly Versions](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/redirect-assembly-versions)
+
+>[!div class="step-by-step"]
+[Previous](./cross-platform-targeting.md)
+[Next](./nuget.md)

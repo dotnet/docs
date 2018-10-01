@@ -97,3 +97,7 @@ To shield your consumers from having to build for individual frameworks, you sho
 > .NET Standard is the modern way to support cross-platform .NET libraries and replaces PCLs.
 
 **❌ DO NOT** include targets for .NET platforms that are no longer supported. For example, `SL4`, `WP`.
+
+>[!div class="step-by-step"]
+[Previous](./get-started.md)
+[Next](./strong-naming.md)

@@ -93,40 +93,20 @@ Thread interaction (or thread signaling) means that a thread must wait for notif
 
 This section describes additional signaling constructs provided by .NET.
 
-### EventWaitHandle class
+### EventWaitHandle, AutoResetEvent, ManualResetEvent, and ManualResetEventSlim classes
 
 The <xref:System.Threading.EventWaitHandle?displayProperty=nameWithType> class represents a thread synchronization event.
 
-A synchronization event can be either in an unsignaled or signaled state.
-
-When the state of an event is unsignaled, a thread that calls the event's <xref:System.Threading.WaitHandle.WaitOne%2A?> overload is blocked until an event is signaled. The <xref:System.Threading.EventWaitHandle.Set%2A?displayProperty=nameWithType> method sets the state of an event to signaled.
+A synchronization event can be either in an unsignaled or signaled state. When the state of an event is unsignaled, a thread that calls the event's <xref:System.Threading.WaitHandle.WaitOne%2A?> overload is blocked until an event is signaled. The <xref:System.Threading.EventWaitHandle.Set%2A?displayProperty=nameWithType> method sets the state of an event to signaled.
 
 The behavior of an <xref:System.Threading.EventWaitHandle> that has been signaled depends on its reset mode:
 
-- An <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.AutoReset?displayProperty=nameWithType> flag resets automatically after releasing a single waiting thread. It's like a turnstile that allows only one thread through each time it's signaled.
-- An <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.ManualReset?displayProperty=nameWithType> flag remains signaled until its <xref:System.Threading.EventWaitHandle.Reset%2A> method is called. It's like a gate that is closed until signaled and then stays open until someone closes it.
+- An <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.AutoReset?displayProperty=nameWithType> flag resets automatically after releasing a single waiting thread. It's like a turnstile that allows only one thread through each time it's signaled. The <xref:System.Threading.AutoResetEvent?displayProperty=nameWithType> class, which derives from <xref:System.Threading.EventWaitHandle>, represents that behavior.
+- An <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.ManualReset?displayProperty=nameWithType> flag remains signaled until its <xref:System.Threading.EventWaitHandle.Reset%2A> method is called. It's like a gate that is closed until signaled and then stays open until someone closes it. The <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> class, which derives from <xref:System.Threading.EventWaitHandle>, represents that behavior. The <xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType> class is a lightweight alternative to <xref:System.Threading.ManualResetEvent>.
 
-You create a <xref:System.Threading.EventWaitHandle> instance that represents a named system synchronization event by using one of the [EventWaitHandle constructors](<xref:System.Threading.EventWaitHandle.%23ctor%2A>) that specifies a name or the <xref:System.Threading.EventWaitHandle.OpenExisting%2A?displayProperty=nameWithType> method. A named system synchronization event can be used for the inter-process synchronization.
+On Windows, you can use <xref:System.Threading.EventWaitHandle> for the inter-process synchronization. To do that, create a <xref:System.Threading.EventWaitHandle> instance that represents a named system synchronization event by using one of the [EventWaitHandle constructors](<xref:System.Threading.EventWaitHandle.%23ctor%2A>) that specifies a name or the <xref:System.Threading.EventWaitHandle.OpenExisting%2A?displayProperty=nameWithType> method.
 
-For more information, see the [EventWaitHandle](eventwaithandle.md) article and the <xref:System.Threading.EventWaitHandle> API reference.
-
-### AutoResetEvent class
-
-The <xref:System.Threading.AutoResetEvent?displayProperty=nameWithType> class derives from <xref:System.Threading.EventWaitHandle> and represents a synchronization event that, when signaled, resets automatically to an unsignaled state after releasing a single waiting thread.
-
-The <xref:System.Threading.AutoResetEvent> class cannot represent a named system synchronization event and cannot be used for the inter-process synchronization.
-
-For more information, see the [AutoResetEvent](autoresetevent.md) article and the <xref:System.Threading.AutoResetEvent> API reference.
-
-### ManualResetEvent and ManualResetEventSlim classes
-
-The <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> class derives from <xref:System.Threading.EventWaitHandle> and represents a synchronization event that, when signaled, stays in a signaled state until its <xref:System.Threading.EventWaitHandle.Reset%2A> method is called.
-
-The <xref:System.Threading.ManualResetEvent> class cannot represent a named system synchronization event and cannot be used for the inter-process synchronization.
-
-The <xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType> class is a lightweight alternative to <xref:System.Threading.ManualResetEvent>.
-
-For more information, see the [ManualResetEvent and ManualResetEventSlim](manualresetevent-and-manualreseteventslim.md) article and the <xref:System.Threading.ManualResetEvent> or <xref:System.Threading.ManualResetEventSlim> API reference.
+For more information, see the [EventWaitHandle](eventwaithandle.md), [AutoResetEvent](autoresetevent.md), and [ManualResetEvent and ManualResetEventSlim](manualresetevent-and-manualreseteventslim.md) articles. For the API reference, see <xref:System.Threading.EventWaitHandle>, <xref:System.Threading.AutoResetEvent>, <xref:System.Threading.ManualResetEvent>, and <xref:System.Threading.ManualResetEventSlim>.
 
 ### CountdownEvent class
 

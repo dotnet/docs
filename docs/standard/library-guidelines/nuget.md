@@ -47,17 +47,17 @@ NuGet package dependencies are covered in detail [here](./dependencies.md).
 
 A NuGet package supports many metadata properties. The following table contains the core metadata that every open-source project should provide:
 
-| MSBuild Property name            | Nuspec name              | Description  |
-| -------------------------------- | ------------------------ | ------------ |
-| PackageId                        | id                       | The package identifier. A prefix from the identifier can be reserved if it meets the [criteria](https://docs.microsoft.com/en-us/nuget/reference/id-prefix-reservation). |
-| PackageVersion                   | version                  | NuGet package version. Read more about it [here](./versioning.md#nuget-package-version).             |
-| Title                            | title                    | A human-friendly title of the package. It defaults to the `PackageId`.             |
-| Description                      | description              | A long description of the package displayed in UI.             |
-| Authors                          | authors                  | A comma-separated list of package authors, matching the profile names on nuget.org.             |
-| PackageTags                      | tags                     | A space-delimited list of tags and keywords that describe the package. Tags are used when searching for packages.             |
-| PackageIconUrl                   | iconUrl                  | A URL for an image to use as the icon for the package. URL should be HTTPS and the image should be 64x64 and have a transparent background.             |
-| PackageProjectUrl                | projectUrl               | A URL for the project homepage or source repository.             |
-| PackageLicenseUrl                | licenseUrl               | A URL to the project license. Can be the URL to the `LICENSE` file in source control.             |
+| MSBuild Property name              | Nuspec name              | Description  |
+| ---------------------------------- | ------------------------ | ------------ |
+| `PackageId`                        | `id`                       | The package identifier. A prefix from the identifier can be reserved if it meets the [criteria](https://docs.microsoft.com/en-us/nuget/reference/id-prefix-reservation). |
+| `PackageVersion`                   | `version`                  | NuGet package version. Read more about it [here](./versioning.md#nuget-package-version).             |
+| `Title`                            | `title`                    | A human-friendly title of the package. It defaults to the `PackageId`.             |
+| `Description`                      | `description`              | A long description of the package displayed in UI.             |
+| `Authors`                          | `authors`                  | A comma-separated list of package authors, matching the profile names on nuget.org.             |
+| `PackageTags`                      | `tags`                     | A space-delimited list of tags and keywords that describe the package. Tags are used when searching for packages.             |
+| `PackageIconUrl`                   | `iconUrl`                  | A URL for an image to use as the icon for the package. URL should be HTTPS and the image should be 64x64 and have a transparent background.             |
+| `PackageProjectUrl`                | `projectUrl`               | A URL for the project homepage or source repository.             |
+| `PackageLicenseUrl`                | `licenseUrl`               | A URL to the project license. Can be the URL to the `LICENSE` file in source control.             |
 
 **✔️ CONSIDER** choosing a NuGet package name with a prefix that meets NuGet's prefix reservation [criteria](https://docs.microsoft.com/en-us/nuget/reference/id-prefix-reservation).
 

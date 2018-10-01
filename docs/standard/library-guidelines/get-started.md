@@ -13,11 +13,11 @@ How to use .NET Standard and multi-targeting to create cross-platform libraries.
 
 ## [Strong naming](./strong-naming.md)
 
-Learn about what strong naming is and its advantages and disadvantages. Strong naming a .NET library allows the most developers to use the library and is a recommended best practice.
+Learn about what strong naming is and its advantages and disadvantages. Strong naming a .NET library allows the most developers to use the library, and is a recommended best practice.
 
 ## [NuGet and open-source libraries](./nuget.md)
 
-The recommended way to create NuGet packages for open-source .NET libraries, including the required metadata that all packages published publicly on NuGet.org should have.
+The best way to create NuGet packages for open-source .NET libraries, including recommended metadata for all packages published publicly on NuGet.org.
 
 ### [Dependencies](./dependencies.md)
 

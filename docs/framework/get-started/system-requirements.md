@@ -21,6 +21,8 @@ The tables in this topic provide the hardware, operating system, and software re
 * .NET Framework 4.6 and its point releases (4.6.1 and 4.6.2).
 * .NET Framework 4.7 and its point releases (4.7.1 and 4.7.2).
 
+For information on .NET Framework versions earlier than .NET Framework 4.5, see [.NET Framework versions and dependencies](../migration-guide/versions-and-dependencies.md).
+
 Development environments that enable you to develop apps for the .NET Framework have a separate set of requirements.
 
 [!INCLUDE[net-framework-4-versions](../../../includes/net-framework-4x-versions.md)]
@@ -67,7 +69,7 @@ The .NET Framework requires administrator privileges for installation. If you do
 
 - The .NET Framework 4 also supports the IA64 platform.
 
-- For all platforms, we recommend that you upgrade to the latest Windows Service Pack and install critical updates available from the [Windows Update website](https://go.microsoft.com/fwlink/?LinkId=168461) to ensure the best compatibility and security.
+- For all platforms, we recommend that you upgrade to the latest Windows Service Pack and install critical updates available from the [Windows Update website](http://go.microsoft.com/fwlink/?LinkId=168461) to ensure the best compatibility and security.
 
 - On 64-bit operating systems, the .NET Framework supports both WOW64 (32-bit processing on a 64-bit machine) and native 64-bit processing.
 
@@ -75,7 +77,6 @@ The .NET Framework requires administrator privileges for installation. If you do
 
 | Operating system | Supported editions | Preinstalled with the OS | Installable separately |
 | ---------------- | ------------------ | ------------------------ | ---------------------- |
-| Windows Server, version 1803 | 64-bit | .NET Framework 4.7.2 | -- |
 | Windows Server, version 1709 | 64-bit | .NET Framework 4.7.1 | .NET Framework 4.7.2 | 
 | Windows Server 2016 | 64-bit | [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] | .NET Framework 4.7<br/><br/> .NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2 |
 | Windows Server 2012 R2 | 64-bit | [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] | [!INCLUDE[net_v452](../../../includes/net-v452-md.md)]<br /><br /> [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]<br /><br /> [!INCLUDE[net_v461](../../../includes/net-v461-md.md)]<br /><br /> [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]<br /><br />.NET Framework 4.7<br/><br/> .NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2 |
@@ -93,7 +94,7 @@ The .NET Framework requires administrator privileges for installation. If you do
 
 - On Windows Server 2008 SP2, the .NET Framework is not supported in the Server Core Role.
 
-- For all platforms, we recommend that you upgrade to the latest Windows Service Pack and critical updates available from the [Windows Update website](https://go.microsoft.com/fwlink/?LinkId=168461) to ensure the best compatibility and security. Installation of the latest Windows Service Pack may be required on some operating systems.
+- For all platforms, we recommend that you upgrade to the latest Windows Service Pack and critical updates available from the [Windows Update website](http://go.microsoft.com/fwlink/?LinkId=168461) to ensure the best compatibility and security. Installation of the latest Windows Service Pack may be required on some operating systems.
 
 - On 64-bit operating systems, the .NET Framework supports both WOW64 (32-bit processing on a 64-bit machine) and native 64-bit processing.
 

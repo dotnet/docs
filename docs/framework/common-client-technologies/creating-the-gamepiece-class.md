@@ -19,7 +19,7 @@ The **GamePiece** class encapsulates all the functionality required to load a Mi
 ## Class Constructor  
  The constructor for the **GamePiece** class accepts the following parameters:  
   
--   A <xref:T:Microsoft.Xna.Framework.Graphics.SpriteBatch> type. The reference passed here is assigned to the private member `spriteBatch`, and is used to access the [SpriteBatch.Draw](xref:Overload:Microsoft.Xna.Framework.Graphics.SpriteBatch.Draw) method when the game piece renders itself. In addition, the <xref:P:Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice> property is used to create the <xref:T:Microsoft.Xna.Framework.Graphics.Texture> object associated with the game piece, and to obtain the size of the view port in order to detect when the game piece encounters a window boundary so that the piece can bounce.  
+-   A [SpriteBatch](/previous-versions/windows/xna/bb199034%28v%3dxnagamestudio.41%29) type. The reference passed here is assigned to the private member `spriteBatch`, and is used to access the [SpriteBatch.Draw](/previous-versions/windows/xna/bb196426%28v%3dxnagamestudio.41%29) method when the game piece renders itself. In addition, the [GraphicsDevice](/previous-versions/windows/xna/bb197338%28v%3dxnagamestudio.41%29) property is used to create the [Texture](/previous-versions/windows/xna/bb199375%28v%3xnagamestudio.41%29) object associated with the game piece, and to obtain the size of the view port in order to detect when the game piece encounters a window boundary so that the piece can bounce.  
   
 -   A string that specifies the file name of the image to use for the game piece.  
   
@@ -72,11 +72,11 @@ The **GamePiece** class encapsulates all the functionality required to load a Mi
   
  [!code-csharp[ManipulationXNA#_GamePiece_OnInertiaCompleted](../../../samples/snippets/csharp/VS_Snippets_Misc/manipulationxna/cs/gamepiece.cs#_gamepiece_oninertiacompleted)]  
   
- None of the logic presented so far actually causes inertia extrapolation to occur. This is accomplished in the **ProcessInertia** method. This method, which is called repeatedly from the game update loop (the [Game.Update](xref:M:Microsoft.Xna.Framework.Game.Update(Microsoft.Xna.Framework.GameTime)) method) checks to see if the *processInertia* flag is set to `true`, and if so, calls the <xref:System.Windows.Input.Manipulations.InertiaProcessor2D.Process%2A> method. Calling this method causes extrapolation to occur, and raises the <xref:System.Windows.Input.Manipulations.InertiaProcessor2D.Delta> event.  
+ None of the logic presented so far actually causes inertia extrapolation to occur. This is accomplished in the **ProcessInertia** method. This method, which is called repeatedly from the game update loop (the [Game.Update](/previous-versions/windows/xna/bb199616%28v%3dxnagamestudio.41%29) method) checks to see if the *processInertia* flag is set to `true`, and if so, calls the <xref:System.Windows.Input.Manipulations.InertiaProcessor2D.Process%2A> method. Calling this method causes extrapolation to occur, and raises the <xref:System.Windows.Input.Manipulations.InertiaProcessor2D.Delta> event.  
   
  [!code-csharp[ManipulationXNA#_GamePiece_ProcessInertia](../../../samples/snippets/csharp/VS_Snippets_Misc/manipulationxna/cs/gamepiece.cs#_gamepiece_processinertia)]  
   
- The game piece is not actually rendered until one of the Draw method overloads is called. The first overload of this method is called repeatedly from the game draw loop (the [Game.Draw](xref:M:Microsoft.Xna.Framework.Game.Draw(Microsoft.Xna.Framework.GameTime)) method). This renders the game piece with the current position, rotation, and scale factors.  
+ The game piece is not actually rendered until one of the Draw method overloads is called. The first overload of this method is called repeatedly from the game draw loop (the [Game.Draw](/previous-versions/windows/xna/bb196422%28v%3dxnagamestudio.41%29) method). This renders the game piece with the current position, rotation, and scale factors.  
   
  [!code-csharp[ManipulationXNA#_GamePiece_Draw](../../../samples/snippets/csharp/VS_Snippets_Misc/manipulationxna/cs/gamepiece.cs#_gamepiece_draw)]  
   

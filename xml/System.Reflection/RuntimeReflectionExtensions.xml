@@ -490,6 +490,11 @@
         <summary>Retrieves an object that represents a specified property.</summary>
         <returns>An object that represents the specified property, or <see langword="null" /> if the property is not found.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="type" /> is not a <see langword="RuntimeType" />.</exception>
+        <exception cref="T:System.Reflection.AmbiguousMatchException">More than one property with the requested name was found.</exception>
       </Docs>
     </Member>
   </Members>

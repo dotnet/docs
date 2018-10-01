@@ -65,11 +65,11 @@ Unlike <xref:System.Threading.Monitor>, the <xref:System.Threading.Mutex> class 
   
 For more information, see the [Mutexes](mutexes.md) article and the <xref:System.Threading.Mutex> API reference.
 
-### SpinLock struct
+### SpinLock structure
 
-The <xref:System.Threading.SpinLock?displayProperty=nameWithType> struct, like <xref:System.Threading.Monitor>, grants exclusive access to a shared resource. When <xref:System.Threading.SpinLock> attempts to acquire the taken lock, it waits in a loop repeatedly checking until the lock becomes available.
+The <xref:System.Threading.SpinLock?displayProperty=nameWithType> structure, like <xref:System.Threading.Monitor>, grants exclusive access to a shared resource based on the availability of a lock. When <xref:System.Threading.SpinLock> attempts to acquire a lock that is unavailable, it waits in a loop, repeatedly checking until the lock becomes available.
 
-For more information about benefits and drawbacks of using spin lock, see the [SpinLock](spinlock.md) article and the <xref:System.Threading.SpinLock> API reference.
+For more information about the benefits and drawbacks of using spin lock, see the [SpinLock](spinlock.md) article and the <xref:System.Threading.SpinLock> API reference.
 
 ### ReaderWriterLockSlim class
 
@@ -154,9 +154,9 @@ The <xref:System.Threading.Interlocked?displayProperty=nameWithType> class provi
 
 For more information, see the [Interlocked operations](interlocked-operations.md) article and the <xref:System.Threading.Interlocked> API reference.
 
-## SpinWait struct
+## SpinWait structure
 
-The <xref:System.Threading.SpinWait?displayProperty=nameWithType> struct provides support for spin-based waiting. You might want to use it when a thread has to wait for an event to be signaled or a condition to be met, but when the actual wait time is expected to be less than the waiting time required by using a wait handle or by otherwise blocking the thread. By using <xref:System.Threading.SpinWait>, you can specify a short period of time to spin while waiting, and then yield (for example, by waiting or sleeping) only if the condition was not met in the specified time.
+The <xref:System.Threading.SpinWait?displayProperty=nameWithType> structure provides support for spin-based waiting. You might want to use it when a thread has to wait for an event to be signaled or a condition to be met, but when the actual wait time is expected to be less than the waiting time required by using a wait handle or by otherwise blocking the thread. By using <xref:System.Threading.SpinWait>, you can specify a short period of time to spin while waiting, and then yield (for example, by waiting or sleeping) only if the condition was not met in the specified time.
 
 For more information, see the [SpinWait](spinwait.md) article and the <xref:System.Threading.SpinWait> API reference.
 

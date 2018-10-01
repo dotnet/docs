@@ -7,7 +7,7 @@ ms.date: 09/20/2018
 ---
 # Versioning
 
-It's rare for a .NET library to have one release. You must think about how you'll go about releasing new versions.
+A software library is rarely complete in its first release. Good libraries evolve over time, adding features, fixing bugs and improving performance in later releases. It is important that you can release new versions of a .NET library, providing additional value with each release, while not breaking its existing users.
 
 ## Breaking changes
 

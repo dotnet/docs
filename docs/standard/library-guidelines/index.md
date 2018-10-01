@@ -7,11 +7,14 @@ ms.date: 09/20/2018
 ---
 # Open-source library guidance
 
-This set of guidelines provides recommendations for developers to create high-quality .NET libraries. This documentation focuses on the *what* and the *why* when building a .NET library, not the *how*. After each topic there are links to more information, usually to detailed documentation and references.
+This set of guidelines provides recommendations for developers to create high-quality .NET libraries. This documentation focuses on the *what* and the *why* when building a .NET library, not the *how*. In additional to recommendations, after each topic there are links to detailed documentation and references.
+
+> [!div class="nextstepaction"]
+> [Get Started](./get-started.md)
 
 ## Recommendations
 
-With each topic there is a list of recommendations for your OSS project using **Do**, **Consider**, **Avoid** and **Do not**. The wording of each recommendation indicates how strongly it should be followed. For example a **Do** recommendation is one that should almost always be followed:
+With each topic there is a list of recommendations for your open-source .NET library using **Do**, **Consider**, **Avoid** and **Do not**. The wording of each recommendation indicates how strongly it should be followed. For example a **Do** recommendation is one that should almost always be followed:
 
 **✔️ DO** choose an [OSS license](https://choosealicense.com/).
 

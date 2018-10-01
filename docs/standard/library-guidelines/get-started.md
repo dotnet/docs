@@ -7,42 +7,34 @@ ms.date: 09/20/2018
 ---
 # Get Started
 
-Your first steps to creating and publishing a .NET OSS project. Experienced OSS .NET developers can jump directly to the [full documentation](./index.md).
+## [Cross-platform targeting](./cross-platform-targeting.md)
 
-## Setup
+How to use .NET Standard and multi-targeting to create cross-platform libraries. .NET runs in many places, and good .NET libraries should strive to support as many platforms and developers as possible.
 
-1. Download the tools useful for developing a .NET library:
+## [Strong naming](./strong-naming.md)
 
-    * [.NET Core SDK](https://www.microsoft.com/net/download) contains everything you need to compile a .NET library and NuGet package.
+Learn about what strong naming and its advantages and disadvantages. Strong naming a .NET library allows the most applications to use the library and is a recommended best practice.
 
-    * [Visual Studio Community](https://visualstudio.microsoft.com/downloads/) is a fully featured IDE for Windows that is free for OSS projects. [Visual Studio Code](https://code.visualstudio.com/Download) is a free cross-platform IDE.
+## [NuGet and open-source libraries](./nuget.md)
 
-    * [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer#readme) lets you view NuGet package metadata and content.
+The recommended way to create NuGet packages for open-source .NET libraries, including metadata that packages published publicly on NuGet.org should have.
 
-## Design and development
+### [Dependencies](./dependencies.md)
 
-1. Plan early for your library to be [cross-platform](./cross-platform-targeting.md). .NET runs in many places, the more people you can reach the better.
+NuGet makes it easy to use existing packages when building a .NET library. Learn about NuGet dependencies' common sources of friction and how to avoid them.
 
-2. Manage what [dependencies](./dependencies.md) your library will reference. There is a big eco-system of packages to use but dependencies are a common source of friction.
+### [SourceLink](./sourcelink.md)
 
-3. Decide on [strong naming](./strong-naming.md) your library.
+SourceLink is a great tool that allows users of your .NET library to step into its source code while debugging. This is an overview of what SourceLink is and why you should use it.
 
-## Packaging and publishing
+### [Publishing](./nuget-publishing.md)
 
-1. [Create a NuGet package](./nuget.md). NuGet is the primary way developers discover and acquired open source libraries.
+While NuGet.org is the most widely known and used repository, there are many places to publish NuGet packages. Learn about the different NuGet package repositories available, and security best practices for publishing a .NET library.
 
-2. Enable [SourceLink debugging](./sourcelink.md) for your package.
+## [Versioning](./versioning.md)
 
-3. [Publish to NuGet.org](./nuget-publishing.md).
+Good .NET libraries evolve over time, adding features, fixing bugs and improving performance in later releases. Learn about the various version numbers and how to communicate breaking changes to developers.
 
-## Future development
+### [Breaking changes](./breaking-changes.md)
 
-1. [Iterate and version](./versioning.md) your library.
-
-2. Learn about [breaking changes](./breaking-changes.md). Do your best to minimize disruption to your users while fixing bugs and adding features.
-
-> A project without a license defaults to [exclusive copyright](https://choosealicense.com/no-permission/), making it impossible for other people to use.
-
-**More information**
-
-* [Choose an open source license](https://choosealicense.com/)
+It's important for an open-source project to find a balance between stability for existing users and innovation for the future. Learn about the different kinds of breaking changes and strategies for adding new features while maintaining backwards compatibility.

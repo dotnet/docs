@@ -89,7 +89,7 @@ For more information, see the [Semaphore and SemaphoreSlim](semaphore-and-semaph
 
 ## Thread interaction, or signaling
 
-Thread interaction occurs when a thread must wait for notification, or signal, from one or more threads in order to proceed. For example, if a thread A calls the <xref:System.Threading.Thread.Join%2A?displayProperty=nameWithType> method of a thread B, the thread A is blocked until the thread B completes. The synchronization primitives described in the preceding section is another example of signaling: by releasing a lock a thread notifies another thread that it can proceed by acquiring the lock.
+Thread interaction (or thread signaling) means that a thread must wait for notification, or a signal, from one or more threads in order to proceed. For example, if thread A calls the <xref:System.Threading.Thread.Join%2A?displayProperty=nameWithType> method of thread B, thread A is blocked until thread B completes. The synchronization primitives described in the preceding section provide a different mechanism for signaling: by releasing a lock, a thread notifies another thread that it can proceed by acquiring the lock.
 
 This section describes additional signaling constructs provided by .NET.
 

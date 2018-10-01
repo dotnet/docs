@@ -7,7 +7,14 @@ ms.date: 09/20/2018
 ---
 # Open-source library guidance
 
-This set of guidelines provides recommendations for developers to create high-quality .NET libraries. This documentation focuses on the *what* and the *why* when building a .NET library, not the *how*. In additional to recommendations, after each topic there are links to detailed documentation and references.
+This guidance provides recommendations for developers to create high-quality .NET libraries. This documentation focuses on the *what* and the *why* when building a .NET library, not the *how*.
+
+The aspects of high-quality .NET libraries:
+
+* **Inclusive**. Good .NET libraries strive to support many platforms and applications.
+* **Stable**. Modern .NET applications are built using many libraries and .NET libraries should co-exist in the greater .NET ecosystem.
+* **Designed to evolve**. .NET libraries should improve and evolve over time while supporting existing users.
+* **Debuggable**. A high-quality .NET library should use the latest tools to create a great debugging experience for its users.
 
 > [!div class="nextstepaction"]
 > [Get Started](./get-started.md)

@@ -13,7 +13,7 @@ How to use .NET Standard and multi-targeting to create cross-platform libraries.
 
 ## [Strong naming](./strong-naming.md)
 
-Learn about what strong naming and its advantages and disadvantages. Strong naming a .NET library allows the most applications to use the library and is a recommended best practice.
+Learn about what strong naming is and its advantages and disadvantages. Strong naming a .NET library allows the most developers to use the library and is a recommended best practice.
 
 ## [NuGet and open-source libraries](./nuget.md)
 

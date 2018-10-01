@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 47932ce3-2ba5-476f-a26b-3ddfd5226f27
 ---
 # Creating the Game1 Class
-As with all Microsoft XNA projects, the Game1 class derives from the [ManipulationXNA#_Game1_PrivateMembers](/previous-versions/windows/xna/bb197040%28v%3dxnagamestudio.41%29) class, which provides basic graphics device initialization, game logic, and rendering code for XNA games. The Game1 class is fairly simple because most of the work in done in the GamePiece and GamePieceCollection classes.  
+As with all Microsoft XNA projects, the Game1 class derives from the [Microsoft.Xna.Framework.Game](/previous-versions/windows/xna/bb197040%28v%3dxnagamestudio.41%29) class, which provides basic graphics device initialization, game logic, and rendering code for XNA games. The Game1 class is fairly simple because most of the work in done in the GamePiece and GamePieceCollection classes.  
   
 ## Creating the Code  
  The private members for the class consist of a **GamePieceCollection** object to hold the game pieces, a [GraphicsDeviceManager](/previous-versions/windows/xna/bb197317%28v%3dxnagamestudio.41%29) object, and a [SpriteBatch](/previous-versions/windows/xna/bb199034%28v%3dxnagamestudio.41%29) object used to render game pieces.  

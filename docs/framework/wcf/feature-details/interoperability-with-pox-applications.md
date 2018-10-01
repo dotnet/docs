@@ -50,7 +50,7 @@ private static Binding CreatePoxBinding()
   
 -   <xref:System.ServiceModel.Channels.HttpResponseMessageProperty>, which contains information about the HTTP response, such as the HTTP status code and status description, as well as any HTTP response headers.  
   
- The following code example shows how to create an HTTP GET request message that is addressed to http://localhost:8100/customers.  
+ The following code example shows how to create an HTTP GET request message that is addressed to`http://localhost:8100/customers`.  
   
 ```  
 Message request = Message.CreateMessage( MessageVersion.None, String.Empty );  

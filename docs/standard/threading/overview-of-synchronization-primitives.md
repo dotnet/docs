@@ -1,7 +1,7 @@
 ---
 title: "Overview of synchronization primitives"
 description: "Learn about .NET thread synchronization primitives used to synchronize access to a shared resource or control thread interaction"
-ms.date: "09/20/2018"
+ms.date: "10/01/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "synchronization, threads"
@@ -14,6 +14,9 @@ ms.author: "ronpet"
 # Overview of synchronization primitives
 
 .NET provides a range of types that you can use to synchronize access to a shared resource or coordinate thread interaction.
+
+> [!IMPORTANT]
+> Use the same synchronization primitive instance to protect every access to a shared resource. Multiple threads can access a resource concurrently if you use different synchronization primitive instances to protect access to a resource or some parts of code access a resource directly.
 
 ## WaitHandle class and lightweight synchronization types
 

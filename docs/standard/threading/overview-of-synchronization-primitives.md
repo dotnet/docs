@@ -79,14 +79,12 @@ For more information, see the [Reader-Writer locks](reader-writer-locks.md) arti
 
 ### Semaphore and SemaphoreSlim classes
 
-The <xref:System.Threading.Semaphore?displayProperty=nameWithType> and <xref:System.Threading.SemaphoreSlim?displayProperty=nameWithType> classes limit the number of threads that can access a resource concurrently. Additional threads that request the resource wait until any thread releases the semaphore.
+The <xref:System.Threading.Semaphore?displayProperty=nameWithType> and <xref:System.Threading.SemaphoreSlim?displayProperty=nameWithType> classes limit the number of threads that can access a shared resource or a pool of resources concurrently. Additional threads that request the resource wait until any thread releases the semaphore. Because the semaphore doesn't have thread affinity, a thread can acquire the semaphore and another one can release it.
 
-You create a <xref:System.Threading.Semaphore> instance that represents a named system semaphore by using one of the [Semaphore constructors](<xref:System.Threading.Semaphore.%23ctor%2A>) that specifies a name or the <xref:System.Threading.Semaphore.OpenExisting%2A?displayProperty=nameWithType> method. A named system semaphore can be used for the inter-process synchronization.
+<xref:System.Threading.SemaphoreSlim> is a lightweight alternative to <xref:System.Threading.Semaphore> and can be used only for synchronization within a single process boundary.
 
-<xref:System.Threading.SemaphoreSlim> is a lightweight alternative to <xref:System.Threading.Semaphore> and can be used only for synchronization within a single process boundary. <xref:System.Threading.SemaphoreSlim> doesn't support named system semaphores.
+On Windows, you can use <xref:System.Threading.Semaphore> for the inter-process synchronization. To do that, create a <xref:System.Threading.Semaphore> instance that represents a named system semaphore by using one of the [Semaphore constructors](<xref:System.Threading.Semaphore.%23ctor%2A>) that specifies a name or the <xref:System.Threading.Semaphore.OpenExisting%2A?displayProperty=nameWithType> method. <xref:System.Threading.SemaphoreSlim> doesn't support named system semaphores.
 
-Neither of the semaphore classes has thread affinity. That means that one thread can acquire the semaphore and another one can release it.
-  
 For more information, see the [Semaphore and SemaphoreSlim](semaphore-and-semaphoreslim.md) article and the <xref:System.Threading.Semaphore> or <xref:System.Threading.SemaphoreSlim> API reference.
 
 ## Thread interaction, or signaling

@@ -93,7 +93,7 @@
   
  To create the example, create a WPF application project in Visual Studio and assign it a name of your choice. Then do the following:  
   
-1.  In design view, drag an <xref:System.Windows.Controls.Image> control from the **Toolbox** to the design surface. In XAML view, specify the horizontal alignment as "Left." The size does not matter because the control is be dynamically resized at run time. Accept the default name, "image".  
+1.  In design view, drag an <xref:System.Windows.Controls.Image> control from the **Toolbox** to the design surface. In XAML view, specify the horizontal alignment as "Left." The size does not matter because the control is dynamically resized at run time. Accept the default name, "image".  
   
 2.  Drag a <xref:System.Windows.Controls.Button> control from the **Toolbox** to the lower left part of the application window. Double-click the button to add a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler. In XAML view, specify the <xref:System.Windows.Controls.ContentControl.Content%2A> property of the button as "Make a Mosaic" and specify its horizontal alignment as "Left". Accept the default name, "button".  
   

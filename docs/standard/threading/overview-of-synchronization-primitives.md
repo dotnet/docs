@@ -110,11 +110,9 @@ For more information, see the [EventWaitHandle](eventwaithandle.md), [AutoResetE
 
 ### CountdownEvent class
 
-The <xref:System.Threading.CountdownEvent?displayProperty=nameWithType> class represents an event that becomes set when its count is zero.
+The <xref:System.Threading.CountdownEvent?displayProperty=nameWithType> class represents an event that becomes set when its count is zero. While <xref:System.Threading.CountdownEvent.CurrentCount?displayProperty=nameWithType> is greater than zero, a thread that calls <xref:System.Threading.CountdownEvent.Wait%2A?displayProperty=nameWithType> is blocked. Call <xref:System.Threading.CountdownEvent.Signal%2A?displayProperty=nameWithType> to decrement an event's count.
 
-While <xref:System.Threading.CountdownEvent.CurrentCount?displayProperty=nameWithType> is greater than zero, a thread that calls <xref:System.Threading.CountdownEvent.Wait%2A?displayProperty=nameWithType> is blocked. Call <xref:System.Threading.CountdownEvent.Signal%2A?displayProperty=nameWithType> to decrement an event's count.
-
-In contrast to <xref:System.Threading.ManualResetEvent> or <xref:System.Threading.ManualResetEventSlim>, which you might use to unblock multiple threads with a signal from one thread, you might use <xref:System.Threading.CountdownEvent> to unblock a single thread with signals from multiple threads.
+In contrast to <xref:System.Threading.ManualResetEvent> or <xref:System.Threading.ManualResetEventSlim>, which you can use to unblock multiple threads with a signal from one thread, you can use <xref:System.Threading.CountdownEvent> to unblock one or more threads with signals from multiple threads.
 
 For more information, see the [CountdownEvent](countdownevent.md) article and the <xref:System.Threading.CountdownEvent> API reference.
 

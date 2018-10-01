@@ -7,7 +7,7 @@ ms.date: 09/20/2018
 ---
 # Versioning
 
-A software library is rarely complete in version 1.0. Good libraries evolve over time, adding features, fixing bugs and improving performance. It is important that you can release new versions of a .NET library, providing additional value with each release, without breaking existing users.
+A software library is rarely complete in version 1.0. Good libraries evolve over time, adding features, fixing bugs and improving performance. It is important that you can release new versions of a .NET library, providing additional value with each version, without breaking existing users.
 
 ## Breaking changes
 
@@ -19,7 +19,7 @@ A .NET library has many ways to specify a version. These versions are the most i
 
 ### NuGet package version
 
-The NuGet package version is displayed on NuGet.org, the Visual Studio NuGet package manager, and is written to `package.config`/`*.csproj` when the packaged is used. This version number is what users will commonly see and refer to when they talk about the version of a library they're using. The NuGet package version is used by NuGet and has no effect on runtime behavior.
+The NuGet package version is displayed on NuGet.org, the Visual Studio NuGet package manager, and is added to source code when the packaged is used. The NuGet package version is the version number users will commonly see, and they'll refer to it when they talk about the version of a library they're using. The NuGet package version is used by NuGet and has no effect on runtime behavior.
 
 ```xml
 <PackageVersion>1.0.0-alpha1</PackageVersion>

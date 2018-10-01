@@ -35,7 +35,7 @@ Breaking changes fall into different categories and aren't equally impactful.
 
 A source breaking change doesn't affect program execution but will cause compilation errors the next time the application is recompiled. Examples of source breaking changes include adding an overload that can result in ambiguity in method calls that were unambiguous previously, or changing a parameter name that can break callers using named parameters.
 
-```cs
+```csharp
 public class Task
 {
     // Adding a type called Task could conflict with System.Threading.Task at compilation
@@ -72,7 +72,7 @@ A binary breaking change can also break an **entire assembly**. Renaming an asse
 
 > Code that calls types and methods with the `ObsoleteAttribute` will generate a build warning with the message supplied to the attribute. The warnings give people who use the obsolete API surface time to migrate so that when the obsolete API is removed, most are no longer be using it.
 
-```cs
+```csharp
 public class Document
 {
     [Obsolete("LoadDocument(string) is obsolete. Use LoadDocument(Uri) instead.")]

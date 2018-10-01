@@ -44,12 +44,7 @@ Some of those types are alternatives to the types derived from <xref:System.Thre
 
 ## Synchronization of access to a shared resource
 
-When you synchronize access to a shared resource, you might need to implement one of the two following scenarios:
-
-- At maximum only one thread can access the resource at any given time moment. The access to the resource is mutually exclusive.
-- The number of threads that access the resource at the same time is limited.
-
-.NET provides synchronization primitives to implement either scenario.
+.NET provides a range of synchronization primitives to control access to a shared resource by multiple threads.
 
 ### Monitor class
 

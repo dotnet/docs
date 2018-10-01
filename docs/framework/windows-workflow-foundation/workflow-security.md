@@ -34,7 +34,7 @@ Windows Workflow Foundation (WF) is integrated with several different technologi
 
 -   Windows Communication Foundation (WCF) endpoints used in workflows should be secured. For more information, see [WCF Security Overview](https://go.microsoft.com/fwlink/?LinkID=164975).
 
--   Host-level authorization can be implemented by using <xref:System.ServiceModel.ServiceAuthorizationManager>. See [How To: Create a Custom Authorization Manager for a Service](https://go.microsoft.com/fwlink/?LinkId=192228) for details. This is also demonstrated in the following sample: [Securing Workflow Services](../../../docs/framework/windows-workflow-foundation/samples/securing-workflow-services.md).
+-   Host-level authorization can be implemented by using <xref:System.ServiceModel.ServiceAuthorizationManager>. See [How To: Create a Custom Authorization Manager for a Service](https://go.microsoft.com/fwlink/?LinkId=192228) for details.
 
 -   The ServiceSecurityContext for the incoming message is also available from within workflow by accessing OperationContext.
 

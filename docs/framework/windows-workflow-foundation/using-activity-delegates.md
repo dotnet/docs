@@ -48,7 +48,4 @@ The examples in this topic use object initialization syntax. Object initializati
   
  To use the `TextGenerator` activity with the `WriteFillerText` activity, specify it as the <xref:System.Activities.ActivityDelegate.Handler%2A>.  
   
- [!code-csharp[CFX_ActivityExample#5](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#5)]  
-  
-## See Also  
- [Exposing and Invoking ActivityActions](../../../docs/framework/windows-workflow-foundation/samples/exposing-and-invoking-activityactions.md)
+ [!code-csharp[CFX_ActivityExample#5](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#5)]

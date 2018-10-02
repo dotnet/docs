@@ -164,3 +164,7 @@ Build a project and its dependencies for a specific runtime (in this example, Ub
 Build the project and use the specified NuGet package source during the restore operation (.NET Core SDK 2.0 and later versions):
 
 `dotnet build --source c:\packages\mypackages`
+
+Build the project and set 1.2.3.4 version as a build parameter
+
+`dotnet build /p:Version=1.2.3.4`

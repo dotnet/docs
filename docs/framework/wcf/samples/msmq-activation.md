@@ -167,7 +167,7 @@ public class OrderStatusService : IOrderStatus
   
  The order status queue is created in the `Main` method. The client configuration includes the order status service configuration to host the order status service, as shown in the following sample configuration.  
   
-```csharp  
+```xml  
 <appSettings>  
     <!-- use appSetting to configure MSMQ queue name -->  
     <add key="targetQueueName" value=".\private$\ServiceModelSamples/service.svc" />  

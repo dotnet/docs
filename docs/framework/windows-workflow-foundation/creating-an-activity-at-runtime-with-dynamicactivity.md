@@ -15,7 +15,7 @@ ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
   
 #### To create an activity at runtime using imperative code  
   
-1.  Open[!INCLUDE[vs2010](../../../includes/vs2010-md.md)].  
+1.  OpenVisual Studio 2010.  
   
 2.  Select **File**, **New**, **Project**. Select **Workflow 4.0** under **Visual C#** in the **Project Types** window, and select the **v2010** node. Select **Sequential Workflow Console Application** in the **Templates** window. Name the new project DynamicActivitySample.  
   
@@ -64,7 +64,7 @@ ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
   
 #### To create an activity at runtime using XAML  
   
-1.  Open [!INCLUDE[vs2010](../../../includes/vs2010-md.md)].  
+1.  Open Visual Studio 2010.  
   
 2.  Select **File**, **New**, **Project**. Select **Workflow 4.0** under **Visual C#** in the **Project Types** window, and select the **v2010** node. Select  **Workflow Console Application** in the **Templates** window. Name the new project DynamicActivitySample.  
   

@@ -29,9 +29,8 @@ This topic describes how to create a Windows application that uses client applic
 -   Enable offline mode. You will provide a check box so that users can specify their connection status. You will then use this value to specify whether the client application service providers will use locally cached data instead of accessing their Web services. Finally, you will re-authenticate the current user when the application returns to online mode.  
   
 ## Prerequisites  
- You need the following component to complete this walkthrough:  
-  
--   [!INCLUDE[vs_orcas_long](../../../includes/vs-orcas-long-md.md)].  
+
+You need Visual Studio to complete this walkthrough.
   
 ## Creating the Client Application  
  The first thing that you will do is create a Windows Forms project. This walkthrough uses Windows Forms because more people are familiar with it, but the process is similar for Windows Presentation Foundation (WPF) projects.  

@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Arranging WPF Content on Windows Forms at Design Time"
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "WPF user control [Windows Forms], hosting in a layout panel"
   - "WPF content [Windows Forms], arranging at design time"
   - "Windows Forms, arranging WPF content at design time"
@@ -11,27 +11,27 @@ helpviewer_keywords:
 ms.assetid: 5efb1c53-1484-43d6-aa8a-f4861b99bb8a
 ---
 # Walkthrough: Arranging WPF Content on Windows Forms at Design Time
-This walkthrough shows you how to use the Windows Forms layout features, such as anchoring and snaplines, to arrange Windows Presentation Foundation (WPF) controls.  
-  
- In this walkthrough, you perform the following tasks:  
-  
--   Create the project.  
-  
--   Create the WPF control.  
-  
--   Host WPF controls in a layout panel.  
-  
--   Use snaplines to align WPF controls.  
-  
--   Anchor and dock WPF controls.  
-  
+This walkthrough shows you how to use the Windows Forms layout features, such as anchoring and snaplines, to arrange Windows Presentation Foundation (WPF) controls.
+
+ In this walkthrough, you perform the following tasks:
+
+-   Create the project.
+
+-   Create the WPF control.
+
+-   Host WPF controls in a layout panel.
+
+-   Use snaplines to align WPF controls.
+
+-   Anchor and dock WPF controls.
+
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   [!INCLUDE[vs_dev11_long](../../../../includes/vs-dev11-long-md.md)].  
+-   Visual Studio 2012.  
   
 ## Creating the Project  
  The first step is to create the Windows Forms project.  

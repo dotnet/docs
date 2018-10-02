@@ -4,8 +4,8 @@ ms.date: "03/30/2017"
 ms.assetid: 9b240937-76a7-45cd-8823-7f82c34d03bd
 ---
 # Document Approval Process
-This sample demonstrates the use of many Windows Workflow Foundation (WF) and Windows Communication Foundation (WCF) features together. Together they implement a document approval process scenario. A client application can submit documents for approval and approve documents. An approval manager application exists to facilitate communications between clients and to enforce the rules of the approval process. The approval process is a workflow that can execute several types of approval. Activities exist to get a single approval, a quorum approval (a percentage of set of approvers), and a complex approval process that consists of a quorum and single approval in a sequence.  
-  
+This sample demonstrates the use of many Windows Workflow Foundation (WF) and Windows Communication Foundation (WCF) features together. Together they implement a document approval process scenario. A client application can submit documents for approval and approve documents. An approval manager application exists to facilitate communications between clients and to enforce the rules of the approval process. The approval process is a workflow that can execute several types of approval. Activities exist to get a single approval, a quorum approval (a percentage of set of approvers), and a complex approval process that consists of a quorum and single approval in a sequence.
+
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
@@ -74,11 +74,11 @@ This sample demonstrates the use of many Windows Workflow Foundation (WF) and Wi
   
 ##### To set up the database  
   
-1.  From a [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] command prompt opened with Administrator privileges, navigate to this DocumentApprovalProcess folder and run Setup.cmd.  
+1.  From a Visual Studio 2010 command prompt opened with Administrator privileges, navigate to this DocumentApprovalProcess folder and run Setup.cmd.  
   
 ##### To set up the application  
   
-1.  Using [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)], open the DocumentApprovalProcess.sln solution file.  
+1.  Using Visual Studio 2010, open the DocumentApprovalProcess.sln solution file.  
   
 2.  To build the solution, press CTRL+SHIFT+B.  
   
@@ -140,4 +140,4 @@ This sample demonstrates the use of many Windows Workflow Foundation (WF) and Wi
   
 ##### To clean up  
   
-1.  From a [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] command prompt, navigate to the DocumentApprovalProcess folder and run Cleanup.cmd.
+1.  From a Visual Studio 2010 command prompt, navigate to the DocumentApprovalProcess folder and run Cleanup.cmd.

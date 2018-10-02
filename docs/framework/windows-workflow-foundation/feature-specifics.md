@@ -11,7 +11,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started with Messaging Activities  
   
--   In [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)], create a WCF Workflow Service Application project. A <xref:System.ServiceModel.Activities.Receive> and <xref:System.ServiceModel.Activities.SendReply> pair will be placed on your canvas.  
+-   In Visual Studio 2012, create a WCF Workflow Service Application project. A <xref:System.ServiceModel.Activities.Receive> and <xref:System.ServiceModel.Activities.SendReply> pair will be placed on your canvas.  
   
 -   Right-click on the project and select **Add Service Reference**.  Point to an existing web service WSDL and click **OK**.  Build your project to show the generated activities (implemented using <xref:System.ServiceModel.Activities.Send> and <xref:System.ServiceModel.Activities.ReceiveReply>) in your toolbox.
   
@@ -131,7 +131,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
--   In [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)], create a workflow console application. Add a Flowchart in the workflow designer.  
+-   In Visual Studio 2012, create a workflow console application. Add a Flowchart in the workflow designer.  
   
 -   The flowchart feature uses the following classes:  
   
@@ -175,7 +175,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
--   In [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)], create a workflow console application. Add procedural activities in the workflow designer.  
+-   In Visual Studio 2012, create a workflow console application. Add procedural activities in the workflow designer.  
   
 -   Samples:  
   
@@ -200,7 +200,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
--   In [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)], create a workflow console application. Add an <xref:System.Activities.Statements.InvokeMethod> activity in the workflow designer, and configure static and instance methods on it.  
+-   In Visual Studio 2012, create a workflow console application. Add an <xref:System.Activities.Statements.InvokeMethod> activity in the workflow designer, and configure static and instance methods on it.  
   
 -   Designer Documentation: [InvokeMethod Activity Designer](/visualstudio/workflow-designer/invokemethod-activity-designer)  
   
@@ -215,7 +215,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
--   In [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)], create a workflow console application. Add a <xref:System.Activities.Statements.TryCatch> activity in the workflow designer.  
+-   In Visual Studio 2012, create a workflow console application. Add a <xref:System.Activities.Statements.TryCatch> activity in the workflow designer.  
   
 -   Sample: [Fault Handling in a Flowchart Activity Using TryCatch](../../../docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)  
   
@@ -229,7 +229,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
--   In [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)], create a workflow console application. Add a <xref:System.Activities.Statements.Pick> activity in the workflow designer.  
+-   In Visual Studio 2012, create a workflow console application. Add a <xref:System.Activities.Statements.Pick> activity in the workflow designer.  
   
 -   Sample: [Using the Pick Activity](../../../docs/framework/windows-workflow-foundation/samples/using-the-pick-activity.md)  
   
@@ -303,7 +303,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
-1.  In [!INCLUDE[vs2010](../../../includes/vs2010-md.md)], create a WCF Workflow Service Application project. A <xref:System.ServiceModel.Activities.Receive> and <xref:System.ServiceModel.Activities.SendReply> pair will be placed on your canvas to start.  
+1.  In Visual Studio 2010, create a WCF Workflow Service Application project. A <xref:System.ServiceModel.Activities.Receive> and <xref:System.ServiceModel.Activities.SendReply> pair will be placed on your canvas to start.  
   
 2.  Open the web.config and add an ETW tracking behavior with no profile.  
   
@@ -324,7 +324,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
-1.  In [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)], create a Workflow that contains an implicit or explicit <xref:System.Activities.Statements.Persist> activity. Add the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> behavior to your workflow service host. This can be done in code or in the application configuration file.  
+1.  In Visual Studio 2012, create a Workflow that contains an implicit or explicit <xref:System.Activities.Statements.Persist> activity. Add the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> behavior to your workflow service host. This can be done in code or in the application configuration file.  
   
 2.  Samples: [Persistence](../../../docs/framework/windows-workflow-foundation/samples/persistence.md)  
   

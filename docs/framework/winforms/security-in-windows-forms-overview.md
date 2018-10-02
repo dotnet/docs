@@ -1,7 +1,7 @@
 ---
 title: "Security in Windows Forms Overview"
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "code access security [Windows Forms], Windows Forms"
   - "permissions [Windows Forms], Windows Forms"
   - "Windows Forms, security"
@@ -43,7 +43,7 @@ Before the release of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-m
   
  When you request optional permissions, you must handle security exceptions that will be generated if your application performs an action that requires permissions not granted to it. Appropriate handling of the <xref:System.Security.SecurityException> will ensure that your application can continue to operate. Your application can use the exception to determine whether a feature should become disabled for the user. For example, an application can disable the **Save** menu option if the required file permission is not granted.  
   
- Sometimes, it is difficult to know if you have asserted all the appropriate permissions. A method call which looks innocuous on the surface, for example, may access the file system at some point during its execution. If you do not deploy your application with all the required permissions, it may test fine when you debug it on your desktop, but fail when deployed. Both the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] SDK and [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] contain tools for calculating the permissions an application needs: the MT.exe command line tool and the Calculate Permissions feature of Visual Studio, respectively.  
+ Sometimes, it is difficult to know if you have asserted all the appropriate permissions. A method call which looks innocuous on the surface, for example, may access the file system at some point during its execution. If you do not deploy your application with all the required permissions, it may test fine when you debug it on your desktop, but fail when deployed. Both the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] SDK and Visual Studio 2005 contain tools for calculating the permissions an application needs: the MT.exe command line tool and the Calculate Permissions feature of Visual Studio, respectively.  
   
  The following topics describe additional Windows Forms security features.  
   

@@ -108,7 +108,7 @@ protected override void OnInitialized(EventArgs e)
   
 #### Using the sample  
   
-1.  Open the DesignerRehosting.sln solution in [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)].  
+1.  Open the DesignerRehosting.sln solution in Visual Studio 2010.  
   
 2.  Press F5 to compile and run the application.  
   

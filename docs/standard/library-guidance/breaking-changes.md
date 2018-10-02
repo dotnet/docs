@@ -7,7 +7,7 @@ ms.date: 10/02/2018
 ---
 # Breaking changes
 
-It's important for .NET library to find a balance between stability for existing users and innovation for the future. .NET library authors lend towards refactoring and rethinking code until it's perfect, but breaking your existing users has a negative impact, especially for low-level libraries.
+It's important for a .NET library to find a balance between stability for existing users and innovation for the future. Library authors lean towards refactoring and rethinking code until it's perfect, but breaking your existing users has a negative impact, especially for low-level libraries.
 
 ## Project types and breaking changes
 

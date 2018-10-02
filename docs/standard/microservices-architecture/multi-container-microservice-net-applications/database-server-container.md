@@ -1,38 +1,37 @@
 ---
 title: Using a database server running as a container
-description: .NET Microservices Architecture for Containerized .NET Applications | Using a database server running as a container
+description: .NET Microservices Architecture for Containerized .NET Applications | Using a database server running as a container? only for development! Understand why.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/30/2017
+ms.date: 10/02/2018
 ---
 # Using a database server running as a container
 
-You can have your databases (SQL Server, PostgreSQL, MySQL, etc.) on regular standalone servers, in on-premises clusters, or in PaaS services in the cloud like Azure SQL DB. However, for development and test environments, having your databases running as containers is convenient, because you do not have any external dependency, and simply running the docker-compose command starts the whole application. Having those databases as containers is also great for integration tests, because the database is started in the container and is always populated with the same sample data, so tests can be more predictable.
+You can have your databases (SQL Server, PostgreSQL, MySQL, etc.) on regular standalone servers, in on-premises clusters, or in PaaS services in the cloud like Azure SQL DB. However, for development and test environments, having your databases running as containers is convenient, because you do not have any external dependency and simply running the `docker-compose up` command starts the whole application. Having those databases as containers is also great for integration tests, because the database is started in the container and is always populated with the same sample data, so tests can be more predictable.
 
 ### SQL Server running as a container with a microservice-related database
 
 In eShopOnContainers, there is a container named sql.data defined in the [docker-compose.yml](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/docker-compose.yml) file that runs SQL Server for Linux with all the SQL Server databases needed for the microservices. (You could also have one SQL Server container for each database, but that would require more memory assigned to Docker.) The important point in microservices is that each microservice owns its related data, therefore its related SQL database in this case. But the databases can be anywhere.
 
-The SQL Server container in the sample application is configured with the following YAML code in the docker-compose.yml file, which is executed when you run docker-compose up. Note that the YAML code has consolidated configuration information from the generic docker-compose.yml file and the docker-compose.override.yml file. (Usually you would separate the environment settings from the base or static information related to the SQL Server image.)
+The SQL Server container in the sample application is configured with the following YAML code in the docker-compose.yml file, which is executed when you run `docker-compose up`. Note that the YAML code has consolidated configuration information from the generic docker-compose.yml file and the docker-compose.override.yml file. (Usually you would separate the environment settings from the base or static information related to the SQL Server image.)
 
 ```yml
   sql.data:
-    image: microsoft/mssql-server-linux
+    image: microsoft/mssql-server-linux:2017-latest
     environment:
-      - MSSQL_SA_PASSWORD=Pass@word
+      - SA_PASSWORD=Pass@word
       - ACCEPT_EULA=Y
-      - MSSQL_PID=Developer
     ports:
       - "5434:1433"
 ```
 
-In a similar way, instead of using `docker-compose`, the following `docker run` command can run that container:
+In a similar way, instead of using `docker-compose`, the following `docker run` command can run that container:
 
 ```
-  docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD= your@password' -p 1433:1433 -d microsoft/mssql-server-linux
+  docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Pass@word' -p 5433:1433 -d microsoft/mssql-server-linux:2017-latest
 ```
 
-However, if you are deploying a multi-container application like eShopOnContainers, it is more convenient to use the docker-compose up command so that it deploys all the required containers for the application.
+However, if you are deploying a multi-container application like eShopOnContainers, it is more convenient to use the `docker-compose up` command so that it deploys all the required containers for the application.
 
 When you start this SQL Server container for the first time, the container initializes SQL Server with the password that you provide. Once SQL Server is running as a container, you can update the database by connecting through any regular SQL connection, such as from SQL Server Management Studio, Visual Studio, or C\# code.
 
@@ -42,10 +41,10 @@ Having SQL Server running as a container is not just useful for a demo where you
 
 #### Additional resources
 
--   **Run the SQL Server Docker image on Linux, Mac, or Windows**
+-   **Run the SQL Server Docker image on Linux, Mac, or Windows** <br/>
     [*https://docs.microsoft.com/sql/linux/sql-server-linux-setup-docker*](https://docs.microsoft.com/sql/linux/sql-server-linux-setup-docker)
 
--   **Connect and query SQL Server on Linux with sqlcmd**
+-   **Connect and query SQL Server on Linux with sqlcmd** <br/>
     [*https://docs.microsoft.com/sql/linux/sql-server-linux-connect-and-query-sqlcmd*](https://docs.microsoft.com/sql/linux/sql-server-linux-connect-and-query-sqlcmd)
 
 ### Seeding with test data on Web application startup
@@ -160,7 +159,7 @@ However, when you run Redis in production, it is better to look for a high-avail
 
 Redis provides a Docker image with Redis. That image is available from Docker Hub at this URL:
 
-<https://hub.docker.com/_/redis/>
+[https://hub.docker.com/_/redis/](https://hub.docker.com/_/redis/)
 
 You can directly run a Docker Redis container by executing the following Docker CLI command in your command prompt:
 
@@ -193,6 +192,7 @@ Finally, in the docker-compose.override.yml file, the basket.api microservice fo
       - EventBusConnection=rabbitmq
 ```
 
+As mentioned before, the name of the microservice "basket.data" is resolved by docker's internal network DNS.
 
 >[!div class="step-by-step"]
 [Previous](multi-container-applications-docker-compose.md)

@@ -5,7 +5,7 @@ author: jamesnk
 ms.author: mairaw
 ms.date: 10/02/2018
 ---
-# Breaking changes and .NET libraries
+# Breaking changes
 
 It's important for an open-source project to find a balance between stability for existing users and innovation for the future. .NET library authors lend towards refactoring and rethinking code until it's perfect, but breaking your existing users has a negative impact, especially for low-level libraries.
 

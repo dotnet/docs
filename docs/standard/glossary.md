@@ -64,7 +64,7 @@ See [Intro to .NET Native and CoreRT](https://github.com/dotnet/corert/blob/mast
 
 ## cross-platform
 
-The ability to write an application that can be used on multiple different operating systems, such as Linux, Windows and iOS, without having to re-write specifically for each one. This enables code re-use and consistency between applications on different platforms.
+The ability to develop and execute an application that can be used on multiple different operating systems, such as Linux, Windows and iOS, without having to re-write specifically for each one. This enables code re-use and consistency between applications on different platforms.
 
 ## ecosystem
 

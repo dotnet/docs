@@ -7,15 +7,15 @@ ms.date: 10/02/2018
 ---
 # Breaking changes
 
-It's important for an open-source project to find a balance between stability for existing users and innovation for the future. .NET library authors lend towards refactoring and rethinking code until it's perfect, but breaking your existing users has a negative impact, especially for low-level libraries.
+It's important for .NET library to find a balance between stability for existing users and innovation for the future. .NET library authors lend towards refactoring and rethinking code until it's perfect, but breaking your existing users has a negative impact, especially for low-level libraries.
 
 ## Project types and breaking changes
 
-How a project is used by the .NET community changes the effect of breaking changes on end-user developers.
+How a library is used by the .NET community changes the effect of breaking changes on end-user developers.
 
 * **Low and middle-level libraries** like a serializer, HTML parser, database object-relational mapper, or web framework are the most affected by breaking changes.
 
-  Building block packages are used by end-user developers to build applications, and by other projects as NuGet dependencies. For example, you're building an application and are using an open-source client to call a web service. A breaking update to dependency the client uses isn't something you can fix. It's the open-source client that needs to be changed and you have no control over it. You have to find compatible versions of the libraries, or submit a fix to the client library and wait for a new version. The worst-case situation is if you want to use two libraries that depend on mutually incompatible versions of a third library.
+  Building block packages are used by end-user developers to build applications, and by other libraries as NuGet dependencies. For example, you're building an application and are using an open-source client to call a web service. A breaking update to dependency the client uses isn't something you can fix. It's the open-source client that needs to be changed and you have no control over it. You have to find compatible versions of the libraries, or submit a fix to the client library and wait for a new version. The worst-case situation is if you want to use two libraries that depend on mutually incompatible versions of a third library.
 
 * **High-level libraries** like a suite of UI controls are less sensitive to breaking changes.
 

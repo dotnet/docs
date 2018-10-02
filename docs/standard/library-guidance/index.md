@@ -33,7 +33,7 @@ On the other hand **Consider** recommendations should generally be followed, but
 
 **Do not** indicates something you should almost never do:
 
-**❌ DO NOT** publish strong-named and non-strong-named versions of your project. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
+**❌ DO NOT** publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
 
 And finally less strong, **avoid** recommendations are something isn't a good idea, but breaking the rule sometimes makes sense:
 

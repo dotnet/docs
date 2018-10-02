@@ -7,7 +7,7 @@ ms.date: 10/02/2018
 ---
 # Cross-platform targeting
 
-Modern .NET supports multiple operating systems and devices. It's important for .NET open-source projects to support as many developers as possible, whether they're building an ASP.NET website hosted in Azure, or a .NET game in Unity.
+Modern .NET supports multiple operating systems and devices. It's important for .NET open-source libraries to support as many developers as possible, whether they're building an ASP.NET website hosted in Azure, or a .NET game in Unity.
 
 ## .NET Standard
 
@@ -63,7 +63,7 @@ To shield your consumers from having to build for individual frameworks, you sho
 
 **✔️ DO** distribute your library using a NuGet package.
 
-> NuGet will select the best target for developer and shield them having to pick the appropriate implementation.
+> NuGet will select the best target for the developer and shield them having to pick the appropriate implementation.
 
 **✔️ DO** use a project file's `TargetFrameworks` property when multi-targeting.
 

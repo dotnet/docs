@@ -5,7 +5,7 @@ The goals of the process are:
 1. Ensure errors or omissions in our docs are not blocking customer success.
 1. Be responsive to customer feedback and concerns.
 1. Continually improve the customer experience.
-1. Learn more about customer experiences through open dialog  on challenges and solutions.
+1. Learn more about customer experiences through open dialog on challenges and solutions.
 
 The process uses two stages to ensure responsiveness while prioritizing work. The initial stage diagnoses and triages the issue. The second stage resolves the issue. When an issue is both easy and urgent, the two stages may be combined.
 
@@ -48,9 +48,9 @@ Evaluating the correct course of action is subjective. The team members use thei
 
 For other issues, the team:
 
-- assigns a priority
-- assigns a milestone, usually "Backlog"
-- assesses if an issue is a good "up for grabs" issue, or the [Projects for .NET Community Contributors](https://github.com/dotnet/docs/projects/35)
+- Assigns a priority
+- Assigns a milestone, usually "Backlog"
+- Assesses if an issue is a good "up for grabs" issue, or the [Projects for .NET Community Contributors](https://github.com/dotnet/docs/projects/35)
 
 Priority levels are based on the following guidelines but are subjective. The milestones are also subjective and are based on other priorities such as current product release schedules and upcoming launches.
 

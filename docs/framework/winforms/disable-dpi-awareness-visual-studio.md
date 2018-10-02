@@ -29,6 +29,9 @@ If you aren't working in the designer and don't need to adjust the layout of you
 
 There are three options to resolve the display problem.
 
+> [!NOTE]
+> If the `dpiAwareness` value is present in the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\devenv.exe** subkey, you need to remove this value for the DPI-awareness transition to work in Visual Studio.
+
 ### Restart Visual Studio as a DPI-unaware process
 
 You can restart Visual Studio as a DPI-unaware process by selecting the option on the yellow informational bar. This is the preferred way of resolving the problem.
@@ -54,8 +57,7 @@ You can mark Visual Studio as DPI-unaware by modifying the registry. Open **Regi
 
 **Value**: DPIUNAWARE
 
-> [!NOTE]
-> Visual Studio remains in DPI-unaware mode until you remove the registry entry.
+Visual Studio remains in DPI-unaware mode until you remove the registry entry.
 
 ### Set your display scaling setting to 100%
 

@@ -1,9 +1,9 @@
-﻿---
-title: Versioning
+---
+title: Versioning and .NET libraries
 description: Best practice recommendations for versioning .NET libraries.
 author: jamesnk
-ms.author: James.NewtonKing
-ms.date: 09/20/2018
+ms.author: mairaw
+ms.date: 10/02/2018
 ---
 # Versioning
 
@@ -19,7 +19,7 @@ A .NET library has many ways to specify a version. These versions are the most i
 
 ### NuGet package version
 
-The [NuGet package version](https://docs.microsoft.com/en-us/nuget/reference/package-versioning) is displayed on NuGet.org, the Visual Studio NuGet package manager, and is added to source code when the packaged is used. The NuGet package version is the version number users will commonly see, and they'll refer to it when they talk about the version of a library they're using. The NuGet package version is used by NuGet and has no effect on runtime behavior.
+The [NuGet package version](/nuget/reference/package-versioning) is displayed on NuGet.org, the Visual Studio NuGet package manager, and is added to source code when the packaged is used. The NuGet package version is the version number users will commonly see, and they'll refer to it when they talk about the version of a library they're using. The NuGet package version is used by NuGet and has no effect on runtime behavior.
 
 ```xml
 <PackageVersion>1.0.0-alpha1</PackageVersion>
@@ -91,5 +91,5 @@ The assembly informational version is used to record additional version informat
 > Allow SourceLink to automatically generate the version containing NuGet and source control metadata.
 
 >[!div class="step-by-step"]
-[Previous](./nuget-publishing.md)
+[Previous](./publish-nuget-package.md)
 [Next](./breaking-changes.md)

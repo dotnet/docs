@@ -2,8 +2,8 @@
 title: Cross-platform targeting
 description: Best practice recommendations for creating cross-platform .NET libraries.
 author: jamesnk
-ms.author: James.NewtonKing
-ms.date: 09/20/2018
+ms.author: mairaw
+ms.date: 10/02/2018
 ---
 # Cross-platform targeting
 
@@ -43,7 +43,7 @@ Targeting .NET Standard, and successfully compiling your project, doesn't guaran
 
 Sometimes you need to access framework-specific APIs from your libraries. The best way to call framework-specific APIs is using multi-targeting, which builds your project for many [.NET target frameworks](../frameworks.md) rather than for just one.
 
-To shield your consumers from having to build for individual frameworks, you should strive to have a .NET Standard output plus one or more framework-specific outputs. With multi-targeting, all assemblies are packaged inside a single NuGet package. Consumers can then reference the same package and NuGet will pick the appropriate implementation. Your .NET Standard library serves as the fall-back library that is used everywhere, except for the cases where your NuGet package offers a framework-specific implementation. Multi-targeting allows you to use conditional compilation in your code and call framework-specific APIs.
+To shield your consumers from having to build for individual frameworks, you should strive to have a .NET Standard output plus one or more framework-specific outputs. With multi-targeting, all assemblies are packaged inside a single NuGet package. Consumers can then reference the same package and NuGet will pick the appropriate implementation. Your .NET Standard library serves as the fallback library that is used everywhere, except for the cases where your NuGet package offers a framework-specific implementation. Multi-targeting allows you to use conditional compilation in your code and call framework-specific APIs.
 
 ![NuGet package with multiple assemblies](./media/nuget-package-multiple-assemblies.png "NuGet package with multiple assemblies")
 

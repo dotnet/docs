@@ -1,9 +1,9 @@
 ---
-title: Get started
+title: Get started creating high-quality .NET libraries
 description: Getting started building .NET libraries.
 author: jamesnk
-ms.author: James.NewtonKing
-ms.date: 09/20/2018
+ms.author: mairaw
+ms.date: 10/02/2018
 ---
 # Get started
 
@@ -25,15 +25,15 @@ NuGet makes it easy to use existing packages when building a .NET library. Learn
 
 ### [SourceLink](./sourcelink.md)
 
-SourceLink is a great tool that allows users of your .NET library to step into its source code while debugging. This is an overview of what SourceLink is and why you should use it.
+SourceLink is a great tool that allows users of your .NET library to step into its source code while debugging. This article is an overview of what SourceLink is and why you should use it.
 
-### [Publishing](./nuget-publishing.md)
+### [Publishing](./publish-nuget-package.md)
 
 While NuGet.org is the most widely known and used repository, there are many places to publish NuGet packages. Learn about the different NuGet package repositories available, and security best practices for publishing a .NET library.
 
 ## [Versioning](./versioning.md)
 
-Good .NET libraries evolve over time, adding features, fixing bugs and improving performance in later releases. Learn about the various version numbers and how to communicate breaking changes to developers.
+Good .NET libraries evolve over time, adding features, fixing bugs, and improving performance in later releases. Learn about the various version numbers and how to communicate breaking changes to developers.
 
 ### [Breaking changes](./breaking-changes.md)
 

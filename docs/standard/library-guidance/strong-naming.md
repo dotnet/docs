@@ -1,9 +1,9 @@
 ---
-title: Strong naming
+title: Strong naming and .NET libraries
 description: Best practice recommendations for strong-naming .NET libraries.
 author: jamesnk
-ms.author: James.NewtonKing
-ms.date: 09/20/2018
+ms.author: mairaw
+ms.date: 10/02/2018
 ---
 # Strong naming
 
@@ -26,7 +26,7 @@ The downside to strong-naming is that the .NET Framework on Windows enables stri
 
 When .NET developers complain about strong-naming, what they're usually complaining about is strict assembly loading. Fortunately, this issue is isolated to the .NET Framework. .NET Core, Xamarin, UWP, and most other .NET implementations don't have strict assembly loading and removes the main downside of strong-naming.
 
-One important aspect of strong naming is it's viral: a strong named assembly can only reference other strong named assemblies. If your library isn't strong named then you have excluded developers who are building an application or library that needs strong naming from using it.
+One important aspect of strong naming is it's viral: a strong named assembly can only reference other strong named assemblies. If your library isn't strong named, then you have excluded developers who are building an application or library that needs strong naming from using it.
 
 The benefits of strong naming are:
 
@@ -36,7 +36,7 @@ The benefits of strong naming are:
 
 ## Create strong named .NET libraries
 
-You should strong-name your open-source .NET libraries. Strong-naming an assembly ensures the most people can use it, and strict assembly loading only affects the .NET Framework.
+You should strong-name your open-source .NET libraries. Strong naming an assembly ensures the most people can use it, and strict assembly loading only affects the .NET Framework.
 
 > [!NOTE]
 > This guidance is specific to .NET libraries. Strong naming is not required by most .NET applications and should not be done by default.
@@ -48,7 +48,7 @@ You should strong-name your open-source .NET libraries. Strong-naming an assembl
 > A publicly available key lets developers modify and recompile your library source code with the same key.
 
 > [!IMPORTANT]
-> When a cryptographic identity is desired, [Authenticode](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/authenticode) and [NuGet Package Signing](https://docs.microsoft.com/en-us/nuget/create-packages/sign-a-package) are recommended. Strong naming should not be used for security considerations.
+> When a cryptographic identity is desired, [Authenticode](/windows-hardware/drivers/install/authenticode) and [NuGet Package Signing](/nuget/create-packages/sign-a-package) are recommended. Strong naming should not be used for security considerations.
 
 **✔️ CONSIDER** incrementing the assembly version on only major version changes to help users reduce binding redirects, and how often they're updated.
 

@@ -1,11 +1,11 @@
 ---
-title: NuGet and open-source libraries
+title: NuGet and .NET libraries
 description: Best practice recommendations for packaging with NuGet for .NET libraries.
 author: jamesnk
-ms.author: James.NewtonKing
-ms.date: 09/20/2018
+ms.author: mairaw
+ms.date: 10/02/2018
 ---
-# NuGet and open-source libraries
+# NuGet
 
 NuGet is a package manager for the .NET eco-system and is the primary way developers discover and acquire .NET open-source projects. NuGet.org, a free service provided by Microsoft for hosting NuGet packages, is the primary host for public NuGet packages but you can publish to custom NuGet services like MyGet and Azure DevOps.
 
@@ -13,7 +13,7 @@ NuGet is a package manager for the .NET eco-system and is the primary way develo
 
 ## Create a NuGet package
 
-A NuGet package (`*.nupkg`) is a zip file containing .NET assemblies and associated metadata.
+A NuGet package (`*.nupkg`) is a zip file that contains .NET assemblies and associated metadata.
 
 There are two main ways to create a NuGet package. The newer and recommended way is to create a package from a SDK-style project (project file the content starts with `<Project Sdk="Microsoft.NET.Sdk">`). Assemblies and targets are automatically added to the package and remaining metadata is added to the MSBuild file, like package name and version number. Compiling with the [`dotnet pack`](../../core/tools/dotnet-pack.md) command outputs a `*.nupkg` file instead of assemblies.
 
@@ -40,11 +40,11 @@ NuGet package dependencies are covered in detail [here](./dependencies.md).
 
 ## Important NuGet package metadata
 
-A NuGet package supports many [metadata properties](https://docs.microsoft.com/en-us/nuget/reference/nuspec). The following table contains the core metadata that every open-source project should provide:
+A NuGet package supports many [metadata properties](/nuget/reference/nuspec). The following table contains the core metadata that every open-source project should provide:
 
 | MSBuild Property name              | Nuspec name              | Description  |
 | ---------------------------------- | ------------------------ | ------------ |
-| `PackageId`                        | `id`                       | The package identifier. A prefix from the identifier can be reserved if it meets the [criteria](https://docs.microsoft.com/en-us/nuget/reference/id-prefix-reservation). |
+| `PackageId`                        | `id`                       | The package identifier. A prefix from the identifier can be reserved if it meets the [criteria](/nuget/reference/id-prefix-reservation). |
 | `PackageVersion`                   | `version`                  | NuGet package version. Read more about it [here](./versioning.md#nuget-package-version).             |
 | `Title`                            | `title`                    | A human-friendly title of the package. It defaults to the `PackageId`.             |
 | `Description`                      | `description`              | A long description of the package displayed in UI.             |
@@ -54,7 +54,7 @@ A NuGet package supports many [metadata properties](https://docs.microsoft.com/e
 | `PackageProjectUrl`                | `projectUrl`               | A URL for the project homepage or source repository.             |
 | `PackageLicenseUrl`                | `licenseUrl`               | A URL to the project license. Can be the URL to the `LICENSE` file in source control.             |
 
-**✔️ CONSIDER** choosing a NuGet package name with a prefix that meets NuGet's prefix reservation [criteria](https://docs.microsoft.com/en-us/nuget/reference/id-prefix-reservation).
+**✔️ CONSIDER** choosing a NuGet package name with a prefix that meets NuGet's prefix reservation [criteria](/nuget/reference/id-prefix-reservation).
 
 **✔️ CONSIDER** using the `LICENSE` file in source control as the `LicenseUrl`. For example, https://github.com/JamesNK/Newtonsoft.Json/blob/master/LICENSE.md
 
@@ -69,7 +69,7 @@ A NuGet package supports many [metadata properties](https://docs.microsoft.com/e
 
 ## Pre-release packages
 
-NuGet packages with a version suffix are considered [pre-release](https://docs.microsoft.com/en-us/nuget/create-packages/prerelease-packages). By default the NuGet Package Manager UI shows stable releases unless a user opts-in to pre-release packages, making pre-release packages ideal for limited user testing.
+NuGet packages with a version suffix are considered [pre-release](/nuget/create-packages/prerelease-packages). By default the NuGet Package Manager UI shows stable releases unless a user opts-in to pre-release packages, making pre-release packages ideal for limited user testing.
 
 ```xml
 <PackageVersion>1.0.1-beta1</PackageVersion>
@@ -86,7 +86,7 @@ NuGet packages with a version suffix are considered [pre-release](https://docs.m
 
 ## Symbol packages
 
-NuGet supports [generating a separate symbol package](https://docs.microsoft.com/en-us/nuget/create-packages/symbol-packages) containing debug PDB files alongside the main package containing .NET assemblies. The idea of symbol packages is they're hosted on a symbol server and are only downloaded by a tool like Visual Studio on demand.
+NuGet supports [generating a separate symbol package](/nuget/create-packages/symbol-packages) containing debug PDB files alongside the main package containing .NET assemblies. The idea of symbol packages is they're hosted on a symbol server and are only downloaded by a tool like Visual Studio on demand.
 
 Currently the main public host for symbols - [SymbolSource](http://www.symbolsource.org/) - doesn't support the portable PDBs created by SDK-style projects and symbol packages aren't useful.
 

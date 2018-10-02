@@ -1,9 +1,9 @@
 ---
-title: SourceLink
+title: SourceLink and .NET libraries
 description: Best practice recommendations for using SourceLink to improve debugging for .NET libraries.
 author: jamesnk
-ms.author: James.NewtonKing
-ms.date: 09/20/2018
+ms.author: mairaw
+ms.date: 10/02/2018
 ---
 # SourceLink
 
@@ -27,4 +27,4 @@ You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuG
 
 >[!div class="step-by-step"]
 [Previous](./dependencies.md)
-[Next](./nuget-publishing.md)
+[Next](./publish-nuget-package.md)

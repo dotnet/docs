@@ -1,9 +1,9 @@
-﻿---
-title: Dependencies
+---
+title: Dependencies and .NET libraries
 description: Best practice recommendations for managing NuGet dependencies in .NET libraries.
 author: jamesnk
-ms.author: James.NewtonKing
-ms.date: 09/20/2018
+ms.author: mairaw
+ms.date: 10/02/2018
 ---
 # Dependencies
 
@@ -15,9 +15,9 @@ It's a common situation for a .NET project to have multiple versions of a packag
 
 ![Diamond dependency](./media/diamond-dependency.png "Diamond dependency")
 
-At build time NuGet analyzes all the packages that a project depends on, including the dependencies of dependencies, and when multiple versions of a package are detected, rules are evaluated to pick one. Unifying packages is necessary because running side-by-side versions of an assembly in the same application is problematic in .NET.
+At build time, NuGet analyzes all the packages that a project depends on, including the dependencies of dependencies. When multiple versions of a package are detected, rules are evaluated to pick one. Unifying packages is necessary because running side-by-side versions of an assembly in the same application is problematic in .NET.
 
-Most diamond dependencies are easily resolved, however they can create issues in certain circumstances:
+Most diamond dependencies are easily resolved; however, they can create issues in certain circumstances:
 
 1. **Conflicting NuGet package references** prevent a version from being resolved during package restore.
 2. **Breaking changes between the versions** cause bugs and exceptions at runtime.
@@ -29,14 +29,14 @@ It's not possible to know what packages will be used alongside your own. A good 
 
 ## NuGet dependency version ranges
 
-A package reference specifies the range of valid packages it allows. Typically, the package reference version in the `csproj` file is the minimum version and there's no maximum.
+A package reference specifies the range of valid packages it allows. Typically, the package reference version in the project file is the minimum version and there's no maximum.
 
 ```xml
 <!-- Accepts any version 1.0 and above. -->
 <PackageReference Include="ExamplePackage" Version="1.0" />
 ```
 
-The rules that NuGet uses when resolving dependencies are [complex](https://docs.microsoft.com/en-us/nuget/consume-packages/dependency-resolution), but NuGet always looks for the lowest applicable version. NuGet prefers the lowest application version over using the highest available because the lowest will have the least compatibility issues.
+The rules that NuGet uses when resolving dependencies are [complex](/nuget/consume-packages/dependency-resolution), but NuGet always looks for the lowest applicable version. NuGet prefers the lowest application version over using the highest available because the lowest will have the least compatibility issues.
 
 Because of NuGet's lowest application version rule, it isn't necessary to place an upper version or exact range on package references to avoid getting the latest version. NuGet already tries to find the lowest, most compatible version for you.
 
@@ -60,7 +60,7 @@ Upper version limits will cause NuGet to fail if there's a conflict. For example
 
 ## NuGet shared source packages
 
-One way to reduce external NuGet package dependencies is to reference share source packages. A shared source package contains [source code files](https://docs.microsoft.com/en-us/nuget/reference/nuspec#including-content-files) that are included in a project when referenced. Because you're just including source code files that are compiled with the rest of your project, there's no external dependency and chance of conflict.
+One way to reduce external NuGet package dependencies is to reference share source packages. A shared source package contains [source code files](/nuget/reference/nuspec#including-content-files) that are included in a project when referenced. Because you're just including source code files that are compiled with the rest of your project, there's no external dependency and chance of conflict.
 
 Shared source packages are great for including small pieces of functionality. For example, a shared source package of helper methods for making HTTP calls.
 

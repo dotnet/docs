@@ -19,7 +19,7 @@ Instructions for using SourceLink can be found on the [SourceLink GitHub reposit
 
 You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer) to confirm SourceLink metadata has been successfully embedded in the package. Check the  `Repository` metadata is present with a comment identifier and that .pdb files are located with each target's .dll.
 
-![SourceLink in NuGet Package Explorer](./media/nuget-package-explorer-sourcelink.png "SourceLink in NuGet Package Explorer")
+![SourceLink in NuGet Package Explorer](./media/sourcelink/nuget-package-explorer-sourcelink.png "SourceLink in NuGet Package Explorer")
 
 **✔️ CONSIDER** using SourceLink to add source control metadata to your assemblies and NuGet package.
 

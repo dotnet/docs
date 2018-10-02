@@ -13,7 +13,7 @@ Modern .NET supports multiple operating systems and devices. It's important for 
 
 .NET Standard is the best way to add cross-platform support to a .NET library. [.NET Standard](../net-standard.md) is a specification of .NET APIs that are available on all .NET implementations. Targeting .NET Standard lets you produce libraries that are constrained to use APIs that are in a given version of .NET Standard, which means it's usable by all platforms that implement that version of the .NET Standard.
 
-![.NET Standard](./media/platforms-netstandard.png ".NET Standard")
+![.NET Standard](./media/cross-platform-targeting/platforms-netstandard.png ".NET Standard")
 
 Targeting .NET Standard, and successfully compiling your project, doesn't guarantee the library will run successfully on all platforms:
 
@@ -45,7 +45,7 @@ Sometimes you need to access framework-specific APIs from your libraries. The be
 
 To shield your consumers from having to build for individual frameworks, you should strive to have a .NET Standard output plus one or more framework-specific outputs. With multi-targeting, all assemblies are packaged inside a single NuGet package. Consumers can then reference the same package and NuGet will pick the appropriate implementation. Your .NET Standard library serves as the fallback library that is used everywhere, except for the cases where your NuGet package offers a framework-specific implementation. Multi-targeting allows you to use conditional compilation in your code and call framework-specific APIs.
 
-![NuGet package with multiple assemblies](./media/nuget-package-multiple-assemblies.png "NuGet package with multiple assemblies")
+![NuGet package with multiple assemblies](./media/cross-platform-targeting/nuget-package-multiple-assemblies.png "NuGet package with multiple assemblies")
 
 **✔️ CONSIDER** targeting .NET implementations in addition to .NET Standard.
 

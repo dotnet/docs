@@ -69,7 +69,7 @@ The assembly file version is used to display a file version in Windows and has n
 <FileVersion>11.0.2.21924</FileVersion>
 ```
 
-![Windows Explorer](./media/win-properties.png "Windows Explorer")
+![Windows Explorer](./media/versioning/win-properties.png "Windows Explorer")
 
 **✔️ CONSIDER** including a continuous integration builds number as AssemblyFileVersion revision.
 

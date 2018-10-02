@@ -28,7 +28,7 @@ NuGet packages are published and consumed from package repositories. While NuGet
 
 It's important that bad actors can't access your NuGet account and upload a malicious version of your library. NuGet.org offers two-factor authentication and email notifications when a package is published. Enable these features after logging into NuGet.org on the **Account settings** page.
 
-![alt text](./media/nuget-2fa.png "NuGet Account Security")
+![alt text](./media/publish-nuget-package/nuget-2fa.png "NuGet Account Security")
 
 **✔️ DO** use a Microsoft account to sign in to NuGet.
 

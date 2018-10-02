@@ -9,7 +9,7 @@ ms.date: 10/02/2018
 
 NuGet is a package manager for the .NET eco-system and is the primary way developers discover and acquire .NET open-source projects. NuGet.org, a free service provided by Microsoft for hosting NuGet packages, is the primary host for public NuGet packages but you can publish to custom NuGet services like MyGet and Azure DevOps.
 
-![NuGet](./media/nuget-logo.png "NuGet")
+![NuGet](./media/nuget/nuget-logo.png "NuGet")
 
 ## Create a NuGet package
 
@@ -78,7 +78,7 @@ NuGet packages with a version suffix are considered [pre-release](/nuget/create-
 > [!NOTE]
 > A stable package cannot depend on a pre-release package. You must either make your own package pre-release, or depend on an older stable version.
 
-![NuGet pre-release package dependency](./media/nuget-prerelease-package.png "NuGet pre-release package dependency")
+![NuGet pre-release package dependency](./media/nuget/nuget-prerelease-package.png "NuGet pre-release package dependency")
 
 **✔️ DO** publish a pre-release package when testing, previewing, or experimenting.
 

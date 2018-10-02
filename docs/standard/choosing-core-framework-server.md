@@ -81,7 +81,7 @@ Some .NET Framework technologies aren't available in .NET Core. Some of them mig
 
 * ASP.NET Web Forms applications: ASP.NET Web Forms are only available in the .NET Framework. ASP.NET Core cannot be used for ASP.NET Web Forms. There are no plans to bring ASP.NET Web Forms to .NET Core.
 
-* ASP.NET Web Pages applications: ASP.NET Web Pages aren't included in ASP.NET Core. ASP.NET Core [Razor Pages](/aspnet/core/mvc/razor-pages/) have many similarities with Web Pages.
+* ASP.NET Web Pages applications: ASP.NET Web Pages aren't included in ASP.NET Core. 
 
 * WCF services implementation. Even when there’s a [WCF-Client library](https://github.com/dotnet/wcf) to consume WCF services from .NET Core, WCF server implementation is currently only available in the .NET Framework. This scenario is not part of the current plan for .NET Core but it’s being considered for the future.
 
@@ -98,6 +98,7 @@ Some Microsoft or third-party platforms don’t support .NET Core. For example, 
 ## See also
 
 * [Choose between ASP.NET and ASP.NET Core](/aspnet/core/choose-aspnet-framework)
+* [ASP.NET Core targeting .NET Framework](/aspnet/core#target-framework)
 * [Target frameworks](frameworks.md)
 * [.NET Core Guide](../core/index.md)  
 * [Porting from .NET Framework to .NET Core](../core/porting/index.md)  

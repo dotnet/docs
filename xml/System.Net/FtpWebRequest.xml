@@ -1290,11 +1290,14 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the proxy used to communicate with the FTP server.</summary>
-        <value>An <see cref="T:System.Net.IWebProxy" /> instance responsible for communicating with the FTP server.</value>
+        <value>An <see cref="T:System.Net.IWebProxy" /> instance responsible for communicating with the FTP server. On .NET Core, its value is<see langword="null" />. </value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+### On .NET Framework
+
  The <xref:System.Net.FtpWebRequest.Proxy%2A> property identifies the <xref:System.Net.IWebProxy> instance that communicates with the FTP server. The proxy is set by the system by using configuration files and the Internet Explorer Local Area Network settings. To specify that no proxy should be used, set <xref:System.Net.FtpWebRequest.Proxy%2A> to the proxy instance returned by the <xref:System.Net.GlobalProxySelection.GetEmptyWebProxy%2A?displayProperty=nameWithType> method. For more information about automatic proxy detection, see [Automatic Proxy Detection](~/docs/framework/network-programming/automatic-proxy-detection.md).  
   
  You must set <xref:System.Net.FtpWebRequest.Proxy%2A> before writing data to the request's stream or getting the response. Changing <xref:System.Net.FtpWebRequest.Proxy%2A> after calling the <xref:System.Net.FtpWebRequest.GetRequestStream%2A>, <xref:System.Net.FtpWebRequest.BeginGetRequestStream%2A>, <xref:System.Net.FtpWebRequest.GetResponse%2A>, or <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> method causes an <xref:System.InvalidOperationException> exception.  
@@ -1303,8 +1306,11 @@
   
  If the specified proxy is an HTTP proxy, only the <xref:System.Net.WebRequestMethods.Ftp.DownloadFile>, <xref:System.Net.WebRequestMethods.Ftp.ListDirectory>, and <xref:System.Net.WebRequestMethods.Ftp.ListDirectoryDetails> commands are supported.  
   
-   
-  
+### On .NET Core   
+
+The `FtpWebRequest.Proxy` property is not supported. Setting the property has no effect. Getting the property value returns `null`. 
+
+
 ## Examples  
  The following code example displays this property value.  
   

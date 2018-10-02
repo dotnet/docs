@@ -301,9 +301,6 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The value of the <paramref name="dateTime" /> parameter represents an invalid time.</exception>
         <exception cref="T:System.ArgumentNullException">The value of the <paramref name="destinationTimeZone" /> parameter is <see langword="null" />.</exception>
-        <block subset="none" type="usage">
-          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method recognizes only the current adjustment rule when performing the conversion if <paramref name="dateTime" /> is treated as a local time or if <paramref name="destinationTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
-        </block>
         <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
     </Member>
@@ -371,9 +368,6 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value of the <paramref name="destinationTimeZone" /> parameter is <see langword="null" />.</exception>
-        <block subset="none" type="usage">
-          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule to the time zone conversion if <paramref name="dateTimeOffset" /> is treated as a local time or if <paramref name="destinationTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
-        </block>
         <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
     </Member>
@@ -474,9 +468,6 @@
  -or-  
   
  The <paramref name="destinationTimeZone" /> parameter is <see langword="null" />.</exception>
-        <block subset="none" type="usage">
-          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when performing the conversion if <paramref name="dateTime" /> is treated as a local time, if <paramref name="sourceTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />, or if <paramref name="destinationTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
-        </block>
         <altmember cref="Overload:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId" />
         <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
@@ -792,9 +783,6 @@
         <exception cref="T:System.ArgumentException">The <see cref="P:System.DateTime.Kind" /> property of <paramref name="dateTime" /> is <see cref="F:System.DateTimeKind.Local" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="destinationTimeZone" /> is <see langword="null" />.</exception>
-        <block subset="none" type="usage">
-          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule to the time zone conversion if <paramref name="destinationTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
-        </block>
         <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
     </Member>
@@ -877,9 +865,6 @@
           <see langword="TimeZoneInfo.Local.IsInvalidDateTime(" />
           <paramref name="dateTime" />
           <see langword=")" /> returns <see langword="true" />.</exception>
-        <block subset="none" type="usage">
-          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule to the time zone conversion. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
-        </block>
         <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
     </Member>
@@ -953,9 +938,6 @@
  <paramref name="sourceTimeZone" /><see langword=".IsInvalidDateTime(" /><paramref name="dateTime" /><see langword=")" /> returns <see langword="true" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="sourceTimeZone" /> is <see langword="null" />.</exception>
-        <block subset="none" type="usage">
-          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, the method applies only the current adjustment rule to the time zone conversion if <paramref name="sourceTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
-        </block>
         <related type="Article" href="http://msdn.microsoft.com/library/a51e1a3b-c983-4320-b31a-1f9fa3cf824a">Converting Times Between Time Zones</related>
       </Docs>
     </Member>
@@ -1612,7 +1594,7 @@
 ## Remarks  
  The `id` parameter must correspond exactly to the time zone's registry key in length, but not in case, for a successful match to occur; that is, the comparison of `id` with time zone identifiers is case-insensitive. If you want to retrieve time zone objects based on partial matches, you can write custom procedures that work with the read-only collection of <xref:System.TimeZoneInfo> objects returned by the <xref:System.TimeZoneInfo.GetSystemTimeZones%2A> method.  
   
- <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> tries to match `id` to the subkey names of the HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Time Zones branch of the registry under Windows XP and Windows Vista. This branch does not necessarily contain a comprehensive list of time zone identifiers. If required by an application, you can create a particular time zone either by calling one of the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method or by calling <xref:System.TimeZoneInfo.FromSerializedString%2A> to deserialize a <xref:System.TimeZoneInfo> object that represents the required time zone. However, time zones created by these method calls are not included in the registry and cannot be retrieved using the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method. These custom time zones can be accessed only through the object reference returned by the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> or <xref:System.TimeZoneInfo.FromSerializedString%2A> method call.  
+ On Windows systems, <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> tries to match `id` to the subkey names of the HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Time Zones branch of the registry. This branch does not necessarily contain a comprehensive list of time zone identifiers. If required by an application, you can create a particular time zone either by calling one of the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method or by calling <xref:System.TimeZoneInfo.FromSerializedString%2A> to deserialize a <xref:System.TimeZoneInfo> object that represents the required time zone. However, time zones created by these method calls are not included in the registry and cannot be retrieved using the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method. These custom time zones can be accessed only through the object reference returned by the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> or <xref:System.TimeZoneInfo.FromSerializedString%2A> method call.  
   
    
   
@@ -1836,9 +1818,6 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="dateTime" /> is not an ambiguous time.</exception>
-        <block subset="none" type="usage">
-          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when determining whether <paramref name="dateTime" /> is ambiguous if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report ambiguous time offsets for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
-        </block>
         <altmember cref="Overload:System.TimeZoneInfo.IsAmbiguousTime" />
         <related type="Article" href="http://msdn.microsoft.com/library/2cf5fb25-492c-4875-9245-98cac8348e97">How to: Resolve Ambiguous Times</related>
         <related type="Article" href="http://msdn.microsoft.com/library/bca874ee-5b68-4654-8bbd-3711220ef332">How to: Let Users Resolve Ambiguous Times</related>
@@ -1895,9 +1874,6 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="dateTimeOffset" /> is not an ambiguous time.</exception>
-        <block subset="none" type="usage">
-          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when determining whether <paramref name="dateTimeOffset" /> is ambiguous if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report ambiguous time offsets for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
-        </block>
         <altmember cref="M:System.TimeZoneInfo.IsAmbiguousTime(System.DateTime)" />
         <related type="Article" href="http://msdn.microsoft.com/library/2cf5fb25-492c-4875-9245-98cac8348e97">How to: Resolve Ambiguous Times</related>
         <related type="Article" href="http://msdn.microsoft.com/library/bca874ee-5b68-4654-8bbd-3711220ef332">How to: Let Users Resolve Ambiguous Times</related>
@@ -2097,9 +2073,6 @@
   
  ]]></format>
         </remarks>
-        <block subset="none" type="usage">
-          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when calculating the offset from UTC if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately calculate the difference between the local time and UTC on <paramref name="dateTime" />. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
-        </block>
         <altmember cref="P:System.TimeZoneInfo.BaseUtcOffset" />
       </Docs>
     </Member>
@@ -2150,9 +2123,6 @@
   
  ]]></format>
         </remarks>
-        <block subset="none" type="usage">
-          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when calculating the offset from UTC if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately calculate the difference between the local time and UTC on <paramref name="dateTimeOffset" />. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
-        </block>
       </Docs>
     </Member>
     <Member MemberName="HasSameRules">
@@ -2249,7 +2219,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time zone identifier is a key string that uniquely identifies a particular time zone. In Windows XP and Windows Vista, it corresponds to the subkeys of the HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Time Zone branch of the registry. It can be passed as a parameter to the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method to retrieve a particular time zone from the registry.  
+ The time zone identifier is a key string that uniquely identifies a particular time zone. On Windows systems, it corresponds to the subkeys of the HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Time Zone branch of the registry. It can be passed as a parameter to the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method to retrieve a particular time zone from the registry.  
   
 > [!IMPORTANT]
 >  Although a key name in the Windows registry can be a maximum of 255 characters, we recommend that an identifier that you assign to a custom time zone be 32 characters or fewer. The longer the identifier, the greater the probability that an incorrect key name will be supplied when retrieving it.  
@@ -2351,9 +2321,6 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.DateTime.Kind" /> property of the <paramref name="dateTime" /> value is <see cref="F:System.DateTimeKind.Local" /> and <paramref name="dateTime" /> is an invalid time.</exception>
-        <block subset="none" type="usage">
-          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTime" /> is an ambiguous time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
-        </block>
         <altmember cref="M:System.TimeZoneInfo.IsInvalidTime(System.DateTime)" />
       </Docs>
     </Member>
@@ -2407,9 +2374,6 @@
   
  ]]></format>
         </remarks>
-        <block subset="none" type="usage">
-          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTimeOffset" /> is an ambiguous time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
-        </block>
       </Docs>
     </Member>
     <MemberGroup MemberName="IsDaylightSavingTime">
@@ -2505,9 +2469,6 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.DateTime.Kind" /> property of the <paramref name="dateTime" /> value is <see cref="F:System.DateTimeKind.Local" /> and <paramref name="dateTime" /> is an invalid time.</exception>
-        <block subset="none" type="usage">
-          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTime" /> is a daylight saving time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
-        </block>
         <altmember cref="P:System.TimeZoneInfo.SupportsDaylightSavingTime" />
       </Docs>
     </Member>
@@ -2561,9 +2522,6 @@
   
  ]]></format>
         </remarks>
-        <block subset="none" type="usage">
-          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTimeOffset" /> is a daylight saving time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
-        </block>
         <altmember cref="P:System.TimeZoneInfo.SupportsDaylightSavingTime" />
       </Docs>
     </Member>
@@ -2632,9 +2590,6 @@
   
  ]]></format>
         </remarks>
-        <block subset="none" type="usage">
-          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTime" /> is an invalid time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
-        </block>
         <altmember cref="Overload:System.TimeZoneInfo.IsAmbiguousTime" />
       </Docs>
     </Member>
@@ -2688,7 +2643,7 @@
 > [!IMPORTANT]
 >  You should always access the local time zone through the <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> property rather than assigning the local time zone to a <xref:System.TimeZoneInfo> object variable. This prevents the <xref:System.TimeZoneInfo> object variable from being invalidated by a call to the <xref:System.TimeZoneInfo.ClearCachedData%2A> method.  
   
- The <xref:System.TimeZoneInfo> object returned by the <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> property reflects the setting of the **Automatically adjust clock for daylight saving changes** checkbox or the **Automatically adjust clock for Daylight Saving Time** checkbox in the Control Panel **Date and Time** application for Windows XP and Windows Vista, respectively. If the checkbox is unchecked, the cached copy of the local time zone contains no daylight saving time information. This means that:  
+ On Windows systems, the <xref:System.TimeZoneInfo> object returned by the <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> property reflects the setting of the **Automatically adjust clock for Daylight Saving Time** checkbox in the Control Panel **Date and Time** application. If the checkbox is unchecked, the cached copy of the local time zone contains no daylight saving time information. This means that:  
   
 -   The local time zone's <xref:System.TimeZoneInfo.GetAdjustmentRules%2A> method returns an array whose length is zero.  
   
@@ -2712,14 +2667,6 @@
   
  ]]></format>
         </remarks>
-        <block subset="none" type="usage">
-          <para>In converting dates and times, [!INCLUDE[winxp](~/includes/winxp-md.md)] recognizes only the current adjustment rule, which it applies to all dates, including down-level dates (that is, dates that are earlier than the starting date of the current adjustment rule). On [!INCLUDE[winxp](~/includes/winxp-md.md)], to prevent local date and time information provided by the <see cref="P:System.TimeZoneInfo.Local" /> object from diverging from the date and time information displayed in the system tray, the <see cref="T:System.TimeZoneInfo" /> object returned by the <see cref="P:System.TimeZoneInfo.Local" /> property also applies the current adjustment rule to down-level dates. Applications running on [!INCLUDE[winxp](~/includes/winxp-md.md)] that require historically accurate local date and time calculations must work around this behavior by using the <see cref="M:System.TimeZoneInfo.FindSystemTimeZoneById(System.String)" /> method to retrieve a <see cref="T:System.TimeZoneInfo" /> object that corresponds to the local time zone.  
-  
- The following example provides an illustration for a [!INCLUDE[winxp](~/includes/winxp-md.md)] system in the U.S. Pacific Time zone. Because the first three method calls all use the local time zone returned by the <see cref="P:System.TimeZoneInfo.Local" /> property, they apply the current time zone adjustment rule (which went into effect in 2007) to a date in 2006. The current adjustment rule provides for the transition to daylight saving time to occur on the second Sunday of March; the previous rule, which was in effect in 2006, provided for the transition to daylight saving time to occur on the first Sunday of April. Only the fourth method call, which uses the <see cref="M:System.TimeZoneInfo.FindSystemTimeZoneById(System.String)" /> method to retrieve the local time zone, accurately performs this historical date and time conversion.  
-  
- [!code-csharp[System.TimeZoneInfo.ConvertTimeToUtc#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timezoneinfo.converttimetoutc/cs/converttimetoutc.cs#1)]
- [!code-vb[System.TimeZoneInfo.ConvertTimeToUtc#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timezoneinfo.converttimetoutc/vb/converttimetoutc.vb#1)]</para>
-        </block>
         <related type="Article" href="http://msdn.microsoft.com/library/961fb70b-83f0-4dab-a042-cb5fcd817cf5">How to: Access the Predefined UTC and Local Time Zone Objects</related>
       </Docs>
     </Member>

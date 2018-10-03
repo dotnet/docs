@@ -43,7 +43,7 @@ When you compile an application, you can specify that it should run on a Windows
   
 -   For information about how to download a 64-bit version of the CLR, see [.NET Framework Developer Center Downloads](https://go.microsoft.com/fwlink/?LinkId=50953) on the MSDN website.  
   
--   For information about Visual Studio support for creating 64-bit applications, see [Visual Studio IDE 64-Bit Support](https://msdn.microsoft.com/library/b08ff3ad-c6fd-468f-94d5-01a61aab6833).  
+-   For information about Visual Studio support for creating 64-bit applications, see [Visual Studio IDE 64-Bit Support](/visualstudio/ide/visual-studio-ide-64-bit-support).  
   
 ## Compiler Support for Creating 64-Bit Applications  
  By default, when you use the .NET Framework to build an application on either a 32-bit or a 64-bit computer, the application will run on a 64-bit computer as a native application (that is, not under WOW64). The following table lists documents that explain how to use Visual Studio compilers to create 64-bit applications that will run as native, under WOW64, or both.  

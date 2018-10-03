@@ -2,7 +2,7 @@
 title: ".NET Framework system requirements"
 description: "Find out what are the hardware, operating system and software requirements to install .NET Framework 4.5 and later versions."
 ms.custom: "updateeachrelease"
-ms.date: "04/10/2018"
+ms.date: "10/01/2018"
 helpviewer_keywords: 
   - "software requirements"
   - ".NET Framework, system requirements"
@@ -20,6 +20,8 @@ The tables in this topic provide the hardware, operating system, and software re
 * .NET Framework 4.5 and its point releases (4.5.1 and 4.5.2).
 * .NET Framework 4.6 and its point releases (4.6.1 and 4.6.2).
 * .NET Framework 4.7 and its point releases (4.7.1 and 4.7.2).
+
+For information on .NET Framework versions earlier than .NET Framework 4.5, see [.NET Framework versions and dependencies](../migration-guide/versions-and-dependencies.md).
 
 Development environments that enable you to develop apps for the .NET Framework have a separate set of requirements.
 
@@ -99,6 +101,6 @@ The .NET Framework requires administrator privileges for installation. If you do
 
 ## See also
 
-[Installation Guide](../../../docs/framework/install/index.md)   
-[Getting Started](../../../docs/framework/get-started/index.md)   
-[Troubleshoot blocked .NET Framework installations and uninstallations](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)
+- [Installation Guide](../../../docs/framework/install/index.md)   
+- [Getting Started](../../../docs/framework/get-started/index.md)   
+- [Troubleshoot blocked .NET Framework installations and uninstallations](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)

@@ -48,7 +48,7 @@ This Windows Communication Foundation (WCF) scenario uses transport security (HT
   <system.serviceModel>  
     <services>  
       <service name="ServiceModel.Calculator">  
-        <endpoint address="http://localhost/Calculator"   
+        <endpoint address="https://localhost/Calculator"   
                   binding="wsHttpBinding"  
                   bindingConfiguration="WSHttpBinding_ICalculator"   
                   name="SecuredByTransportEndpoint"  

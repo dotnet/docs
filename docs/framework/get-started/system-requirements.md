@@ -23,6 +23,8 @@ The tables in this topic provide the hardware, operating system, and software re
 
 For information on .NET Framework versions earlier than .NET Framework 4.5, see [.NET Framework versions and dependencies](../migration-guide/versions-and-dependencies.md).
 
+Development environments that enable you to develop apps for the .NET Framework have a separate set of requirements.
+
 [!INCLUDE[net-framework-4-versions](../../../includes/net-framework-4x-versions.md)]
 
 For download information and links, see [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md).

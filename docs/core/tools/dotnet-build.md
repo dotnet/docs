@@ -18,13 +18,13 @@ ms.date: 05/25/2018
 # [.NET Core 2.x](#tab/netcore2x)
 ```
 dotnet build [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--no-dependencies] [--no-incremental]
-    [--no-restore] [-o|--output] [-r|--runtime] [-v|--verbosity] [--version-suffix] [-p|-property] [-l|-logger]
+    [--no-restore] [-o|--output] [-r|--runtime] [-v|--verbosity] [--version-suffix]
 dotnet build [-h|--help]
 ```
 # [.NET Core 1.x](#tab/netcore1x)
 ```
 dotnet build [<PROJECT>] [-c|--configuration] [-f|--framework] [--no-dependencies] [--no-incremental] [-o|--output]
-    [-r|--runtime] [-v|--verbosity] [--version-suffix] [-p|-property] [-l|-logger]
+    [-r|--runtime] [-v|--verbosity] [--version-suffix]
 dotnet build [-h|--help]
 ```
 ---
@@ -49,7 +49,7 @@ Whether the project is executable or not is determined by the `<OutputType>` pro
 
 In order to produce a library, omit the `<OutputType>` property. The main difference in built output is that the IL DLL for a library doesn't contain entry points and can't be executed.
 
-### MSBuild Arguments
+### MSBuild
 
 `dotnet build` uses MSBuild to build the project, so it supports both parallel and incremental builds. For more information, see [Incremental Builds](/visualstudio/msbuild/incremental-builds).
 
@@ -109,14 +109,6 @@ Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal
 
 Defines the version suffix for an asterisk (`*`) in the version field of the project file. The format follows NuGet's version guidelines.
 
-`-p|-property:<name>=<value>`
-
-Set or override a specific project-level property, where `name` is the property anme and `value` is the property value. See [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference) for more information and other MSBuild supported switches.
-
-`-l|-logger:<logger>`
-
-Specifies the logger to use to log events from MSBuild. See [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference) for more information and other MSBuild supported switches.
-
 # [.NET Core 1.x](#tab/netcore1x)
 
 `-c|--configuration {Debug|Release}`
@@ -154,14 +146,6 @@ Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal
 `--version-suffix <VERSION_SUFFIX>`
 
 Defines the version suffix for an asterisk (`*`) in the version field of the project file. The format follows NuGet's version guidelines.
-
-`-p|-property:<name>=<value>`
-
-Set or override a specific project-level property, where `name` is the property anme and `value` is the property value. See [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference) for more information and other MSBuild supported switches.
-
-`-l|-logger:<logger>`
-
-Specifies the logger to use to log events from MSBuild. See [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference) for more information and other MSBuild supported switches.
 
 ---
 

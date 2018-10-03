@@ -96,8 +96,8 @@ class1.ExplicitProperty = 1131210765
 
 The output of the preceding code shows that the value of AutoProperty is unchanged when called repeatedly, whereas the ExplicitProperty changes each time it is called. This demonstrates that the expression for an automatically implemented property is not evaluated each time, as is the getter method for the explicit property.
 
->[!WARNING]
-There are some libraries, such as the Entity Framework (`System.Data.Entity`) that perform custom operations in base class constructors that don't work well with the initialization of automatically implemented properties. In those cases, try using explicit properties.
+> [!WARNING]
+> There are some libraries, such as the Entity Framework (`System.Data.Entity`) that perform custom operations in base class constructors that don't work well with the initialization of automatically implemented properties. In those cases, try using explicit properties.
 
 Properties can be members of classes, structures, discriminated unions, records, interfaces, and type extensions and can also be defined in object expressions.
 

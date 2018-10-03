@@ -13,6 +13,6 @@ Vision: Design and develop scalable solutions with Docker in mind.
 There are many great-fit use cases for containers, not just for microservices-oriented architectures, but also when you simply have regular services or web applications to run and you want to reduce frictions between development and production environment deployments.
 
 
->[!div class="step-by-step"]
-[Prev](../Microsoft-platform-tools-containerized-apps/index.md)
-[Next](design-docker-applications.md)
+> [!div class="step-by-step"]
+> [Prev](../Microsoft-platform-tools-containerized-apps/index.md)
+> [Next](design-docker-applications.md)

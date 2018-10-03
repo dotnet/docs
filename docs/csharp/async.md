@@ -224,11 +224,11 @@ This is the convention used in .NET to more-easily differentiate synchronous and
 
 `async void` is the only way to allow asynchronous event handlers to work because events do not have return types (thus cannot make use of `Task` and `Task<T>`). Any other use of `async void` does not follow the TAP model and can be challenging to use, such as:
 
-  *   Exceptions thrown in an `async void` method can’t be caught outside of that method.
-  *   `async void` methods are very difficult to test.
-  *   `async void` methods can cause bad side effects if the caller isn’t expecting them to be async.
+* Exceptions thrown in an `async void` method can’t be caught outside of that method.
+* `async void` methods are very difficult to test.
+* `async void` methods can cause bad side effects if the caller isn’t expecting them to be async.
 
-*   **Tread carefully when using async lambdas in LINQ expressions**
+  *   **Tread carefully when using async lambdas in LINQ expressions**
 
 Lambda expressions in LINQ use deferred execution, meaning code could end up executing at a time when you’re not expecting it to. The introduction of blocking tasks into this can easily result in a deadlock if not written correctly. Additionally, the nesting of asynchronous code like this can also make it more difficult to reason about the execution of the code. Async and LINQ are powerful, but should be used together as carefully and clearly as possible.
 

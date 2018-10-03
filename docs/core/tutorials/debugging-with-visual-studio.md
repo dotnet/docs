@@ -8,7 +8,7 @@ ms.custom: vs-dotnet
 ---
 # Debug your Hello World application with Visual Studio 2017
 
-So far, you've followed the steps in [Build a C# Hello World Application with .NET Core in Visual Studio 2017](.\with-visual-studio.md) or [Build a Visual Basic Hello World Application with .NET Core in Visual Studio 2017](vb-with-visual-studio.md) to create and run a simple console application. Once you've written and compiled your application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use when testing and troubleshooting your application.
+So far, you've followed the steps in [Build a C# Hello World Application with .NET Core in Visual Studio 2017](./with-visual-studio.md) or [Build a Visual Basic Hello World Application with .NET Core in Visual Studio 2017](vb-with-visual-studio.md) to create and run a simple console application. Once you've written and compiled your application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use when testing and troubleshooting your application.
 
 ## Debugging in Debug mode
 
@@ -86,7 +86,7 @@ Your program displays the string that the user enters. What happens if the user 
 
 To set a conditional breakpoint and test what happens when the user fails to enter a string, do the following:
 
-# [C#](#tab/csharp)
+#### [C#](#tab/csharp/)
 1. Right-click on the red dot that represents the breakpoint. On the context menu, select **Conditions** to open the **Breakpoint Settings** dialog. Check the box for **Conditions**.
 
    ![Breakpoint settings panel](./media/debugging-with-visual-studio/breakpointsettings.png)
@@ -122,12 +122,12 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 1. Press any key to close the console window and exit Debug mode.
 
 1. Clear the breakpoint by clicking on the dot in the left margin of the code window or by choosing the **Debug > Toggle Breakpoint** menu item with the row selected.
-# [Visual Basic](#tab/vb)
+#### [Visual Basic](#tab/vb/)
 1. Right-click on the red dot that represents the breakpoint. On the context menu, select **Conditions** to open the **Breakpoint Settings** dialog. Check the box for **Conditions**.
 
    ![Breakpoint settings panel](./media/debugging-with-visual-studio/vb-breakpointsettings.png)
 
-1. For the **Conditional Expression** replace "e.g. x = 5" with the following:
+2. For the **Conditional Expression** replace "e.g. x = 5" with the following:
 
    ```vb
    String.IsNullOrEmpty(name)
@@ -135,29 +135,29 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
    You're testing for a code condition, that the `String.IsNullOrEmpty(name)` method call is `True` either because *name* has not been assigned a value or because its value is an empty string (""). You can also specify a *hit count*, which interrupts program execution before a statement is executed a specified number of times, or a *filter condition*, which interrupts program execution based on such attributes as a thread identifier, process name, or thread name.
 
-1. Select the **Close** button to close the dialog.
+3. Select the **Close** button to close the dialog.
 
-1. Run the program in Debug mode.
+4. Run the program in Debug mode.
 
-1. In the console window, press the Enter key when prompted to enter your name.
+5. In the console window, press the Enter key when prompted to enter your name.
 
-1. Because the condition we specified, `name` is either `null` or <xref:System.String.Empty?displayProperty=nameWithType>, has been satisfied, program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes.
+6. Because the condition we specified, `name` is either `null` or <xref:System.String.Empty?displayProperty=nameWithType>, has been satisfied, program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes.
 
-1. Select the **Locals** window, which shows the values of variables that are local to the currently executing method, which is the `Main` method in your program. Observe that the value of the `name` variable is `""`, or <xref:System.String.Empty?displayProperty=nameWithType>.
+7. Select the **Locals** window, which shows the values of variables that are local to the currently executing method, which is the `Main` method in your program. Observe that the value of the `name` variable is `""`, or <xref:System.String.Empty?displayProperty=nameWithType>.
 
-1. Confirm the value is an empty string by entering the following statement in the **Immediate Window**. The result is `true`.
+8. Confirm the value is an empty string by entering the following statement in the **Immediate Window**. The result is `true`.
 
    ```vb
    ? String.IsNullOrEmpty(name)
    ```
-  ![Immediate Window returning a value of true after the statement is executed](./media/debugging-with-visual-studio/vb-emptystring.png)
+   ![Immediate Window returning a value of true after the statement is executed](./media/debugging-with-visual-studio/vb-emptystring.png)
 
-1. Select the **Continue** button on the toolbar to continue program execution.
+9. Select the **Continue** button on the toolbar to continue program execution.
 
-1. Press any key to close the console window and exit Debug mode.
+10. Press any key to close the console window and exit Debug mode.
 
-1. Clear the breakpoint by clicking on the dot in the left margin of the code window or by choosing the **Debug > Toggle Breakpoint** menu item with the row selected.
----
+11. Clear the breakpoint by clicking on the dot in the left margin of the code window or by choosing the **Debug > Toggle Breakpoint** menu item with the row selected.
+* * *
 ## Stepping through a program
 
 Visual Studio also allows you to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and use this feature to follow program flow though a small part of your program code. Since your program is small, you can step through the entire program by doing the following:

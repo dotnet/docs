@@ -57,6 +57,6 @@ In summary, these are the most important concepts in regards to validation:
 
 - In most of the cases, having redundant validation in the client side is good, because the application can be proactive.
 
->[!div class="step-by-step"]
-[Previous](domain-model-layer-validations.md)
-[Next](domain-events-design-implementation.md)
+> [!div class="step-by-step"]
+> [Previous](domain-model-layer-validations.md)
+> [Next](domain-events-design-implementation.md)

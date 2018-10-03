@@ -217,7 +217,7 @@ Documenting code is recommended for many reasons. What follows are some best pra
 * Documentation text should be written using complete sentences ending with full stops.
 * Partial classes are fully supported, and documentation information will be concatenated into a single entry for that type.
 * The compiler verifies the syntax of the `<exception>`, `<include>`, `<param>`, `<see>`, `<seealso>` and `<typeparam>` tags.
-- The compiler validates the parameters that contain file paths and references to other parts of the code.
+* The compiler validates the parameters that contain file paths and references to other parts of the code.
 
 ## See also
 

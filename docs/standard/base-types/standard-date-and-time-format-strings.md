@@ -57,20 +57,20 @@ Standard date and time format strings can be used with both <xref:System.DateTim
   
  If a standard format string in a formatting operation maps to a particular culture's custom format string, your application can define the specific culture whose custom format strings are used in one of these ways:  
   
--   You can use the default (or current) culture. The following example displays a date using the current culture's short date format. In this case, the current culture is en-US.  
+- You can use the default (or current) culture. The following example displays a date using the current culture's short date format. In this case, the current culture is en-US.  
   
-     [!code-csharp-interactive[System.DateTime.Conceptual.Formatting#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/cs/StandardFormats1.cs#1)]
-     [!code-vb[System.DateTime.Conceptual.Formatting#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/vb/StandardFormats1.vb#1)]  
+   [!code-csharp-interactive[System.DateTime.Conceptual.Formatting#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/cs/StandardFormats1.cs#1)]
+   [!code-vb[System.DateTime.Conceptual.Formatting#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/vb/StandardFormats1.vb#1)]  
   
--   You can pass a <xref:System.Globalization.CultureInfo> object representing the culture whose formatting is to be used to a method that has an <xref:System.IFormatProvider> parameter. The following example displays a date using the short date format of the pt-BR culture.  
+- You can pass a <xref:System.Globalization.CultureInfo> object representing the culture whose formatting is to be used to a method that has an <xref:System.IFormatProvider> parameter. The following example displays a date using the short date format of the pt-BR culture.  
   
-     [!code-csharp[System.DateTime.Conceptual.Formatting#2](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/cs/StandardFormats1.cs#2)]
-     [!code-vb[System.DateTime.Conceptual.Formatting#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/vb/StandardFormats1.vb#2)]  
+   [!code-csharp[System.DateTime.Conceptual.Formatting#2](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/cs/StandardFormats1.cs#2)]
+   [!code-vb[System.DateTime.Conceptual.Formatting#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/vb/StandardFormats1.vb#2)]  
   
--   You can pass a <xref:System.Globalization.DateTimeFormatInfo> object that provides formatting information to a method that has an <xref:System.IFormatProvider> parameter. The following example displays a date using the short date format from a <xref:System.Globalization.DateTimeFormatInfo> object for the hr-HR culture.  
+- You can pass a <xref:System.Globalization.DateTimeFormatInfo> object that provides formatting information to a method that has an <xref:System.IFormatProvider> parameter. The following example displays a date using the short date format from a <xref:System.Globalization.DateTimeFormatInfo> object for the hr-HR culture.  
   
-     [!code-csharp[System.DateTime.Conceptual.Formatting#3](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/cs/StandardFormats1.cs#3)]
-     [!code-vb[System.DateTime.Conceptual.Formatting#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/vb/StandardFormats1.vb#3)]  
+   [!code-csharp[System.DateTime.Conceptual.Formatting#3](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/cs/StandardFormats1.cs#3)]
+   [!code-vb[System.DateTime.Conceptual.Formatting#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/vb/StandardFormats1.vb#3)]  
   
 > [!NOTE]
 >  For information about customizing the patterns or strings used in formatting date and time values, see the <xref:System.Globalization.NumberFormatInfo> class topic.  

@@ -121,13 +121,13 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
   
  Keys that are removed:  
   
- \- For xmlns:wst="http://schemas.xmlsoap.org/ws/2004/04/trust" and xmlns:wst="http://schemas.xmlsoap.org/ws/2005/02/trust"  
+ \- For xmlns:wst="<http://schemas.xmlsoap.org/ws/2004/04/trust>" and xmlns:wst="<http://schemas.xmlsoap.org/ws/2005/02/trust>"  
   
  wst:BinarySecret  
   
  wst:Entropy  
   
- \- For xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.1.xsd" and xmlns:wsse="http://docs.oasis-open.org/wss/2005/xx/oasis-2005xx-wss-wssecurity-secext-1.1.xsd"  
+ \- For xmlns:wsse="<http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.1.xsd>" and xmlns:wsse="<http://docs.oasis-open.org/wss/2005/xx/oasis-2005xx-wss-wssecurity-secext-1.1.xsd>"  
   
  wsse:Password  
   
@@ -135,7 +135,7 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
   
  Potentially personal information that is removed:  
   
- \- For xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.1.xsd" and xmlns:wsse="http://docs.oasis-open.org/wss/2005/xx/oasis-2005xx-wss-wssecurity-secext-1.1.xsd"  
+ \- For xmlns:wsse="<http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.1.xsd>" and xmlns:wsse="<http://docs.oasis-open.org/wss/2005/xx/oasis-2005xx-wss-wssecurity-secext-1.1.xsd>"  
   
  wsse:Username  
   
@@ -298,7 +298,7 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
   
  For the following namespaces:  
   
- xmlns:wst="http://schemas.xmlsoap.org/ws/2004/04/trust" and xmlns:wst="http://schemas.xmlsoap.org/ws/2005/02/trust" (for example, if no action available)  
+ xmlns:wst="<http://schemas.xmlsoap.org/ws/2004/04/trust>" and xmlns:wst="<http://schemas.xmlsoap.org/ws/2005/02/trust>" (for example, if no action available)  
   
  Information is removed for these body elements, which involve key exchange:  
   

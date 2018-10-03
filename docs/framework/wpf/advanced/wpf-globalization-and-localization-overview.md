@@ -76,15 +76,15 @@ When you limit your product's availability to only one language, you limit your 
 -   When the file is compiled into the build, the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] is converted to the BAML form of XAML. The culturally neutral `MyDialog.exe` and the culturally dependent (English) `MyDialog.resources.dll` files are released to the English-speaking customer.  
   
 ### Localization Workflow  
- The localization process begins after the unlocalized `MyDialog.resources.dll` file is built. The [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] elements and properties in your original [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] are extracted from the BAML form of XAML into key-value pairs by using the [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] under <xref:System.Windows.Markup.Localizer>. Localizers use the key-value pairs to localize the application. You can generate a new .resource.dll from the new values after localization is complete.  
+ The localization process begins after the unlocalized `MyDialog.resources.dll` file is built. The [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] elements and properties in your original [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] are extracted from the BAML form of XAML into key-value pairs by using the [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] under &lt;xref:System.Windows.Markup.Localizer&gt;. Localizers use the key-value pairs to localize the application. You can generate a new .resource.dll from the new values after localization is complete.  
   
  The keys of the key-value pairs are `x:Uid` values that are placed by the developer in the original [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. These `x:Uid` values enable the [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] to track and merge changes that happen between the developer and the localizer during localization. For example, if the developer changes the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] after the localizer begins localizing, you can merge the development change with the already completed localization work so that minimal translation work is lost.  
   
  The following graphic shows a typical localization workflow that is based on the BAML form of XAML. This diagram assumes the developer writes the application in English. The developer creates and globalizes the WPF application. In the project file the developer sets `<UICulture>en-US</UICulture>` so that on build, a language neutral main assembly gets generated with a satellite .resources.dll containing all localizable resources. Alternately, one could keep the source language in the main assembly because WPF localization APIs support extraction from the main assembly. After the build process, the XAML get compiled into BAML. The culturally neutral MyDialog.exe.resources.dll get shipped to the English speaking customer.  
   
- ![Localization workflow](../../../../docs/framework/wpf/advanced/media/localizationworkflow.png "LocalizationWorkflow")  
+ ![Localization workflow](../../../../docs/framework/wpf/advanced/media/localizationworkflow.png &quot;LocalizationWorkflow&quot;)  
   
- ![Unlocalized work flow](../../../../docs/framework/wpf/advanced/media/localizationworkflow2.png "LocalizationWorkflow2")  
+ ![Unlocalized work flow](../../../../docs/framework/wpf/advanced/media/localizationworkflow2.png &quot;LocalizationWorkflow2&quot;)  
   
 <a name="examples_of_localization" />   
 ## Examples of WPF Localization  
@@ -95,11 +95,11 @@ When you limit your product's availability to only one language, you limit your 
   
  **English:**  
   
- ![Run dialog box](../../../../docs/framework/wpf/advanced/media/rundialogenglish.PNG "RunDialogEnglish")  
+ ![Run dialog box](../../../../docs/framework/wpf/advanced/media/rundialogenglish.PNG &quot;RunDialogEnglish&quot;)  
   
  **German:**  
   
- ![German Run dialog box](../../../../docs/framework/wpf/advanced/media/rundialoggerman.PNG "RunDialogGerman")  
+ ![German Run dialog box](../../../../docs/framework/wpf/advanced/media/rundialoggerman.PNG &quot;RunDialogGerman&quot;)  
   
  **Designing a Global Run Dialog Box**  
   
@@ -117,25 +117,25 @@ When you limit your product's availability to only one language, you limit your 
   
  `<Grid x:Uid="Grid_1">`  
   
- <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties are needed in order for [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] localization [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] to work correctly.  
+ &lt;xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A&gt; properties are needed in order for [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] localization [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] to work correctly.  
   
- They are used by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] localization [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] to track changes between the development and localization of the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]. <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties enable you to merge a newer version of the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] with an older localization of the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]. You add a <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> property by running `msbuild -t:updateuid RunDialog.csproj` in a command shell. This is the recommended method of adding <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties because manually adding them is typically time-consuming and less accurate. You can check that <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties are correctly set by running `msbuild -t:checkuid RunDialog.csproj`.
+ They are used by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] localization [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] to track changes between the development and localization of the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]. &lt;xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A&gt; properties enable you to merge a newer version of the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] with an older localization of the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]. You add a &lt;xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A&gt; property by running `msbuild -t:updateuid RunDialog.csproj` in a command shell. This is the recommended method of adding &lt;xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A&gt; properties because manually adding them is typically time-consuming and less accurate. You can check that &lt;xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A&gt; properties are correctly set by running `msbuild -t:checkuid RunDialog.csproj`.
   
- The [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] is structured by using the <xref:System.Windows.Controls.Grid> control, which is a useful control for taking advantage of the automatic layout in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. Note that the dialog box is split into three rows and five columns. Not one of the row and column definitions has a fixed size; hence, the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] elements that are positioned in each cell can adapt to increases and decreases in size during localization.  
+ The [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] is structured by using the &lt;xref:System.Windows.Controls.Grid&gt; control, which is a useful control for taking advantage of the automatic layout in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. Note that the dialog box is split into three rows and five columns. Not one of the row and column definitions has a fixed size; hence, the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] elements that are positioned in each cell can adapt to increases and decreases in size during localization.  
   
  [!code-xaml[GlobalizationRunDialog#GridColumnDef](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GlobalizationRunDialog/CS/Window1.xaml#gridcolumndef)]  
   
- The first two columns where the **Open:** label and <xref:System.Windows.Controls.ComboBox> are placed use 10 percent of the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] total width.  
+ The first two columns where the **Open:** label and &lt;xref:System.Windows.Controls.ComboBox&gt; are placed use 10 percent of the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] total width.  
   
  [!code-xaml[GlobalizationRunDialog#GridColumnDef2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GlobalizationRunDialog/CS/Window1.xaml#gridcolumndef2)]  
   
- Note that of the example uses the shared-sizing feature of <xref:System.Windows.Controls.Grid>. The last three columns take advantage of this by placing themselves in the same <xref:System.Windows.Controls.DefinitionBase.SharedSizeGroup%2A>. As one would expect from the name of the property, this allows the columns to share the same size. So when the "Browse…" gets localized to the longer string "Durchsuchen…", all buttons grow in width instead of having a small "OK" button and a disproportionately large "Durchsuchen…" button.  
+ Note that of the example uses the shared-sizing feature of &lt;xref:System.Windows.Controls.Grid&gt;. The last three columns take advantage of this by placing themselves in the same &lt;xref:System.Windows.Controls.DefinitionBase.SharedSizeGroup%2A&gt;. As one would expect from the name of the property, this allows the columns to share the same size. So when the &quot;Browse…&quot; gets localized to the longer string &quot;Durchsuchen…&quot;, all buttons grow in width instead of having a small &quot;OK&quot; button and a disproportionately large &quot;Durchsuchen…&quot; button.  
   
  **Xml:lang**
   
- `Xml:lang="en-US"`  
+ `Xml:lang=&quot;en-US&quot;`  
   
- Notice the [xml:lang Handling in XAML](../../../../docs/framework/xaml-services/xml-lang-handling-in-xaml.md) placed at the root element of the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]. This property describes the culture of a given element and its children. This value is used by several features in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and should be changed appropriately during localization. This value changes what language dictionary is use to hyphenate and spell check words. It also affects the display of digits and how the font fallback system selects which font to use. Finally, the property affects the way numbers are displayed and the way texts written in complex scripts are shaped. The default value is "en-US".  
+ Notice the [xml:lang Handling in XAML](../../../../docs/framework/xaml-services/xml-lang-handling-in-xaml.md) placed at the root element of the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]. This property describes the culture of a given element and its children. This value is used by several features in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and should be changed appropriately during localization. This value changes what language dictionary is use to hyphenate and spell check words. It also affects the display of digits and how the font fallback system selects which font to use. Finally, the property affects the way numbers are displayed and the way texts written in complex scripts are shaped. The default value is &quot;en-US&quot;.  
   
  **Building a Satellite Resource Assembly**  
   

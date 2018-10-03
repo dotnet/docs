@@ -122,5 +122,5 @@ Figure 11-2 shows an example reference architecture. This diagram describes a re
 - Introduction to Azure Kubernetes Service (AKS)\
   <https://docs.microsoft.com/azure/aks/intro-kubernetes>
 
->[!div class="step-by-step"]
-[Previous](development-process-for-azure.md)
+> [!div class="step-by-step"]
+> [Previous](development-process-for-azure.md)

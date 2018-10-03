@@ -30,6 +30,6 @@ The services in the example share the same data model because the Web API servic
 In short, the logical architecture of microservices does not always have to coincide with the physical deployment architecture. In this guide, whenever we mention a microservice, we mean a business or logical microservice that could map to one or more services. In most cases, this will be a single service, but it might be more.
 
 
->[!div class="step-by-step"]
-[Previous](data-sovereignty-per-microservice.md)
-[Next](distributed-data-management.md)
+> [!div class="step-by-step"]
+> [Previous](data-sovereignty-per-microservice.md)
+> [Next](distributed-data-management.md)

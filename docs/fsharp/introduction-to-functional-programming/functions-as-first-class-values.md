@@ -97,15 +97,15 @@ The following example uses the first-class status of functions in F# to declare 
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet34.fs)]
 
->[!NOTE]
-For an even shorter version, see the following section, "Curried Functions."
+> [!NOTE]
+> For an even shorter version, see the following section, "Curried Functions."
 
 The following code sends two functions as arguments to `compose`, both of which take a single argument of the same type. The return value is a new function that is a composition of the two function arguments.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet35.fs)]
 
->[!NOTE]
-F# provides two operators, `<<` and `>>`, that compose functions. For example, `let squareAndDouble2 = doubleIt << squareIt` is equivalent to `let squareAndDouble = compose doubleIt squareIt` in the previous example.
+> [!NOTE]
+> F# provides two operators, `<<` and `>>`, that compose functions. For example, `let squareAndDouble2 = doubleIt << squareIt` is equivalent to `let squareAndDouble = compose doubleIt squareIt` in the previous example.
 
 The following example of returning a function as the value of a function call creates a simple guessing game. To create a game, call `makeGame` with the value that you want someone to guess sent in for `target`. The return value from function `makeGame` is a function that takes one argument (the guess) and reports whether the guess is correct.
 
@@ -133,8 +133,8 @@ To verify that the function still works as it did before, try the original test 
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet41.fs)]
 
->[!NOTE]
-You can restrict currying by enclosing parameters in tuples. For more information, see "Parameter Patterns" in [Parameters and Arguments](../language-reference/parameters-and-arguments.md).
+> [!NOTE]
+> You can restrict currying by enclosing parameters in tuples. For more information, see "Parameter Patterns" in [Parameters and Arguments](../language-reference/parameters-and-arguments.md).
 
 The following example uses implicit currying to write a shorter version of `makeGame`. The details of how `makeGame` constructs and returns the `game` function are less explicit in this format, but you can verify by using the original test cases that the result is the same.
 
@@ -159,16 +159,16 @@ To take it one step further, substitute the value that `applyIt` is bound to for
 The examples in the previous sections demonstrate that functions in F# satisfy the criteria for being first-class values in F#:
 
 - You can bind an identifier to a function definition.
-[!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet21.fs)]
+  [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet21.fs)]
 
 - You can store a function in a data structure.
-[!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet45.fs)]
+  [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet45.fs)]
 
 - You can pass a function as an argument.
-[!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet46.fs)]
+  [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet46.fs)]
 
 - You can return a function as the value of a function call.
-[!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet32.fs)]
+  [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet32.fs)]
 
 For more information about F#, see the [F# Language Reference](../language-reference/index.md).
 

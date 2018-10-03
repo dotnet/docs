@@ -27,6 +27,6 @@ Note that there is certain overlap between the service registry and the API gate
     [*https://lostechies.com/gabrielschenker/2016/01/27/service-discovery/*](https://lostechies.com/gabrielschenker/2016/01/27/service-discovery/)
 
 
->[!div class="step-by-step"]
-[Previous](maintain-microservice-apis.md)
-[Next](microservice-based-composite-ui-shape-layout.md)
+> [!div class="step-by-step"]
+> [Previous](maintain-microservice-apis.md)
+> [Next](microservice-based-composite-ui-shape-layout.md)

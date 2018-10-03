@@ -91,6 +91,6 @@ For more information, see [Azure IoT Hub ping](https://azure.microsoft.com/resou
 * [Lift and shift with serverless Azure functions](https://channel9.msdn.com/Events/Connect/2017/E102)
 * [Serverless URL shortener](https://github.com/jeremylikness/serverless-url-shortener)
 
->[!div class="step-by-step"]
-[Previous](orchestration-patterns.md)
-[Next](serverless-conclusion.md)
+> [!div class="step-by-step"]
+> [Previous](orchestration-patterns.md)
+> [Next](serverless-conclusion.md)

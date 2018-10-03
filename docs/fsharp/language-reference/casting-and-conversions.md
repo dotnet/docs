@@ -17,23 +17,25 @@ Each of these operators has the same name as the name of the destination type. F
 
 The following table shows conversion operators defined in F#.
 
-|Operator|Description|
-|--------|-----------|
-|`byte`|Convert to byte, an 8-bit unsigned type.|
-|`sbyte`|Convert to signed byte.|
-|`int16`|Convert to a 16-bit signed integer.|
-|`uint16`|Convert to a 16-bit unsigned integer.|
-|`int32, int`|Convert to a 32-bit signed integer.|
-|`uint32`|Convert to a 32-bit unsigned integer.|
-|`int64`|Convert to a 64-bit signed integer.|
-|`uint64`|Convert to a 64-bit unsigned integer.|
-|`nativeint`|Convert to a native integer.|
-|`unativeint`|Convert to an unsigned native integer.|
-|`float, double`|Convert to a 64-bit double-precision IEEE floating point number.|
-|`float32, single`|Convert to a 32-bit single-precision IEEE floating point number.|
-|`decimal`|Convert to `System.Decimal`.|
-|`char`|Convert to `System.Char`, a Unicode character.|
-|`enum`|Convert to an enumerated type.|
+
+|     Operator      |                           Description                            |
+|-------------------|------------------------------------------------------------------|
+|      `byte`       |             Convert to byte, an 8-bit unsigned type.             |
+|      `sbyte`      |                     Convert to signed byte.                      |
+|      `int16`      |               Convert to a 16-bit signed integer.                |
+|     `uint16`      |              Convert to a 16-bit unsigned integer.               |
+|   `int32, int`    |               Convert to a 32-bit signed integer.                |
+|     `uint32`      |              Convert to a 32-bit unsigned integer.               |
+|      `int64`      |               Convert to a 64-bit signed integer.                |
+|     `uint64`      |              Convert to a 64-bit unsigned integer.               |
+|    `nativeint`    |                   Convert to a native integer.                   |
+|   `unativeint`    |              Convert to an unsigned native integer.              |
+|  `float, double`  | Convert to a 64-bit double-precision IEEE floating point number. |
+| `float32, single` | Convert to a 32-bit single-precision IEEE floating point number. |
+|     `decimal`     |                   Convert to `System.Decimal`.                   |
+|      `char`       |          Convert to `System.Char`, a Unicode character.          |
+|      `enum`       |                  Convert to an enumerated type.                  |
+
 In addition to built-in primitive types, you can use these operators with types that implement `op_Explicit` or `op_Implicit` methods with appropriate signatures. For example, the `int` conversion operator works with any type that provides a static method `op_Explicit` that takes the type as a parameter and returns `int`. As a special exception to the general rule that methods cannot be overloaded by return type, you can do this for `op_Explicit` and `op_Implicit`.
 
 ## Enumerated Types

@@ -18,7 +18,7 @@ This article provides tips for improving the performance of large .NET Framework
  When your end users interact with your app, they expect it to be responsive.  Typing or command handling should never be blocked.  Help should pop up quickly or give up if the user continues typing.  Your app should avoid blocking the UI thread with long computations that make the app feel sluggish.  
   
  For more information about Roslyn compilers, visit the [dotnet/roslyn](https://github.com/dotnet/roslyn) repo on GitHub.
- <!-- TODO: replace with link to Roslyn conceptual docs once that's published -->
+ &lt;!-- TODO: replace with link to Roslyn conceptual docs once that&#39;s published --&gt;
   
 ## Just the Facts  
  Consider these facts when tuning performance and creating responsive .NET Framework apps.  

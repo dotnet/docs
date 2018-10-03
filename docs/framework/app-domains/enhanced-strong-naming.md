@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Enhanced Strong Naming"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

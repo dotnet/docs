@@ -62,6 +62,6 @@ In the meantime, if any platform or service in Azure still doesn't support .NET 
 
 
 
->[!div class="step-by-step"]
-[Previous](net-core-container-scenarios.md)
-[Next](container-framework-choice-factors.md)
+> [!div class="step-by-step"]
+> [Previous](net-core-container-scenarios.md)
+> [Next](container-framework-choice-factors.md)

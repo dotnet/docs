@@ -270,7 +270,7 @@ type PostalAddress =
     City: string
     Zip: string }
     member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
-    
+
 // Unusual in F#
 type PostalAddress =
     { 
@@ -425,7 +425,6 @@ match lam with
     1 + sizeLambda body
 | App(lam1, lam2) ->
     sizeLambda lam1 + sizeLambda lam2
-
 ```
 
 Pattern matching of anonymous functions, starting by `function`, should generally not indent too far. For example, indenting one scope as follows is fine:

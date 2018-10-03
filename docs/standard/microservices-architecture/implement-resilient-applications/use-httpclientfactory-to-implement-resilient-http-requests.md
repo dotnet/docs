@@ -158,6 +158,6 @@ Until this point, the code shown is just performing regular Http requests, but t
 
 
 
->[!div class="step-by-step"]
-[Previous] (explore-custom-http-call-retries-exponential-backoff.md)
-[Next] (implement-http-call-retries-exponential-backoff-polly.md)
+> [!div class="step-by-step"]
+> [Previous](explore-custom-http-call-retries-exponential-backoff.md)
+> [Next](implement-http-call-retries-exponential-backoff-polly.md)

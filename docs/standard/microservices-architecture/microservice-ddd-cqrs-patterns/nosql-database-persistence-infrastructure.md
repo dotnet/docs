@@ -271,7 +271,6 @@ services:
     environment:
       # Other settings
       - ConnectionString=${ESHOP_AZURE_COSMOSDB:-mongodb://nosql.data}
-
 ```
 
 The `ConnectionString` environment variable is resolved this way: If the `ESHOP_AZURE_COSMOSDB` global variable is defined in the `.env` file with the Azure Cosmos DB connection string, it will use it to access the Azure Cosmos DB database in the cloud. 
@@ -327,6 +326,6 @@ If the `ESHOP_AZURE_COSMOSDB` global variable is empty, meaning that it is comme
     [*https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb-mongochef*](https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb-mongochef)
 
 
->[!div class="step-by-step"]
-[Previous](infrastructure-persistence-layer-implemenation-entity-framework-core.md)
-[Next](microservice-application-layer-web-api-design.md)
+> [!div class="step-by-step"]
+> [Previous](infrastructure-persistence-layer-implemenation-entity-framework-core.md)
+> [Next](microservice-application-layer-web-api-design.md)

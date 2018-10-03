@@ -82,6 +82,6 @@ Other microservice frameworks that allow stateful services, that support the Act
 
 Note that Docker containers are themselves stateless. If you want to implement a stateful service, you need one of the additional prescriptive and higher-level frameworks noted earlier. 
 
->[!div class="step-by-step"]
-[Previous](scalable-available-multi-container-microservice-applications.md)
-[Next](../docker-application-development-process/index.md)
+> [!div class="step-by-step"]
+> [Previous](scalable-available-multi-container-microservice-applications.md)
+> [Next](../docker-application-development-process/index.md)

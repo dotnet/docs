@@ -147,6 +147,6 @@ Identifying and working with aggregates requires research and experience. For mo
     [*http://deviq.com/aggregate-pattern/*](http://deviq.com/aggregate-pattern/)
 
 
->[!div class="step-by-step"]
-[Previous](ddd-oriented-microservice.md)
-[Next](net-core-microservice-domain-model.md)
+> [!div class="step-by-step"]
+> [Previous](ddd-oriented-microservice.md)
+> [Next](net-core-microservice-domain-model.md)

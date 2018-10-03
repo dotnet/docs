@@ -8,7 +8,7 @@ This topic describes how to create a simple workflow service using messaging act
   
 ### To create a workflow service project  
   
-1.  Start [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)].  
+1.  Start Visual Studio 2012.  
   
 2.  Click the **File** menu, select **New**, and then **Project** to display the **New Project Dialog**. Select **Workflow** from the list of installed templates and **WCF Workflow Service Application** from the list of project types. Name the project `MyWFService` and use the default location as shown in the following illustration.  
   

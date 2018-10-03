@@ -4,8 +4,8 @@ ms.date: "03/30/2017"
 ms.assetid: c1910bc1-3d0a-4fa6-b12a-4ed6fe759620
 ---
 # Basic Sample
-This sample shows how to make a service discoverable and how to search for and call a discoverable service. This sample is composed of two projects: service and client.  
-  
+This sample shows how to make a service discoverable and how to search for and call a discoverable service. This sample is composed of two projects: service and client.
+
 > [!NOTE]
 >  This sample implements discovery in code.  For a sample that implements discovery in configuration, see [Configuration](../../../../docs/framework/wcf/samples/configuration-sample.md).  
   
@@ -78,7 +78,7 @@ static void InvokeCalculatorService(ServiceEndpoint serviceEndpoint)
   
 1.  This sample uses HTTP endpoints and to run this sample, proper URL ACLs must be added. For more information, see [Configuring HTTP and HTTPS](https://go.microsoft.com/fwlink/?LinkId=70353). Executing the following command at an elevated privilege should add the appropriate ACLs. You may want to substitute your Domain and Username for the following arguments if the command does not work as is. `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`  
   
-2.  Using [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)], open the Basic.sln and build the sample.  
+2.  Using Visual Studio 2012, open the Basic.sln and build the sample.  
   
 3.  Run the service.exe application.  
   

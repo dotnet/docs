@@ -21,7 +21,7 @@ The easiest way to inherit a form or other object is to use the **Inheritance Pi
   
      The **Add New Item** dialog box opens.  
   
-2.  Select the **Inherited Form** template, and name it in the **Name** box. Click the **Add** button to proceed.  
+2.  Search the **Inherited Form** template either from the searchbox or by clicking on the **Windows Forms** category, select it, and name it in the **Name** box. Click the **Add** button to proceed.  
   
      The **Inheritance Picker** dialog box opens. If the current project already contains forms, they are displayed in the **Inheritance Picker** dialog box.  
   

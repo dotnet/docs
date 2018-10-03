@@ -1,20 +1,21 @@
 ---
 title: "MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)"
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Manifest Generation and Editing tool"
   - "MageUI.exe"
 ms.assetid: f9e130a6-8117-49c4-839c-c988f641dc14
 ---
 # MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)
-MageUI.exe supports the same functionality as the command-line tool Mage.exe, but with a Windows-based user interface (UI). With this tool you can create, edit, and sign deployment and application manifests. New manifests that are created with MageUI.exe target the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]. Previous versions of MageUI.exe should be used to target previous .NET Framework versions. When adding or removing assemblies from a manifest, or re-signing existing manifests, MageUI.exe does not update the manifest to target [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]. For more information, see [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md).  
-  
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
-  
- Two versions of Mage.exe and MageUI.exe are included as a component of the [!INCLUDE[vs_dev10_long](../../../includes/vs-dev10-long-md.md)] setup. To see version information, run MageUI.exe, select **Help**, and select **About**. This documentation describes version 4.0.x.x of Mage.exe and MageUI.exe.  
-  
+
+MageUI.exe supports the same functionality as the command-line tool Mage.exe, but with a Windows-based user interface (UI). With this tool you can create, edit, and sign deployment and application manifests. New manifests that are created with MageUI.exe target the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]. Previous versions of MageUI.exe should be used to target previous .NET Framework versions. When adding or removing assemblies from a manifest, or re-signing existing manifests, MageUI.exe does not update the manifest to target [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]. For more information, see [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md).
+
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
+
+ Two versions of Mage.exe and MageUI.exe are included as a component of Visual Studio. To see version information, run MageUI.exe, select **Help**, and select **About**. This documentation describes version 4.0.x.x of Mage.exe and MageUI.exe.
+
 > [!NOTE]
->  MageUI.exe does not support the [compatibleFrameworks](/visualstudio/deployment/compatibleframeworks-element-clickonce-deployment) element when saving an application manifest that has already been signed with a certificate using MageUI.exe. Instead, you must use [Mage.exe](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md).  
+> MageUI.exe does not support the [compatibleFrameworks](/visualstudio/deployment/compatibleframeworks-element-clickonce-deployment) element when saving an application manifest that has already been signed with a certificate using MageUI.exe. Instead, you must use [Mage.exe](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md).  
   
 ## UIElement List  
  The following table lists the menu and toolbar items that are available.  

@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: f0a2da13-e282-4fd7-88a1-f9102c9aeab1
 ---
 # Client Application Services Overview
-Client application services provide simplified access to [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] login, roles, and profile services from Windows Forms and Windows Presentation Foundation (WPF) applications. [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application services are included in the Microsoft ASP.NET 2.0 AJAX Extensions, which is included with [!INCLUDE[vs_orcas_long](../../../includes/vs-orcas-long-md.md)] and the [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)]. These services enable multiple Web and Windows-based applications to share user information and user-management functionality from a single server.  
+Client application services provide simplified access to [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] login, roles, and profile services from Windows Forms and Windows Presentation Foundation (WPF) applications. [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application services are included in the Microsoft ASP.NET 2.0 AJAX Extensions, which is included with Visual Studio 2008 and the [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)]. These services enable multiple Web and Windows-based applications to share user information and user-management functionality from a single server.  
   
  Client application services include client service providers that plug into the Web services extensibility model to enable the following features for Windows-based applications:  
   

@@ -120,6 +120,14 @@ Deploying a self-contained deployment without third-party dependencies involves 
 
    Run the [dotnet restore](../tools/dotnet-restore.md) ([see note](#dotnet-restore-note)) command to restore the dependencies specified in your project.
 
+1. Decide if you want to use globalization to distinguish between modes.
+
+If your application is compiled for Linux, you can use [globalization indistinguishable mode] (https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md) Reduce the size of your self-styled app. Globalization indistinguishable patterns are useful for applications that cannot be globally recognized and can be formatted, case-sensitive, string-compared, and sized using [culturally irrelevant] (xref: System.Globalization.CultureInfo.InvariantCulture).
+
+To enable indistinguish mode, right click on your project (not the scenario) in **Program Manager** and select **Edit SCD.csproj** or **Edit SCD.vbproj**. Add the following highlighted string to the file:
+
+[!code-xml[globalization-invariant-mode](~/samples/snippets/core/deploying/xml/invariant.csproj)]
+
 1. Determine whether you want to use globalization invariant mode.
 
    Particularly if your app targets Linux, you can reduce the total size of your deployment by taking advantage of [globalization invariant mode](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md). Globalization invariant mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture).

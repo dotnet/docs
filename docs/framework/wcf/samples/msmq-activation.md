@@ -14,7 +14,7 @@ This sample demonstrates how to host applications in Windows Process Activation 
 >   
 >  \<InstallDrive>:\WF_WCF_Samples  
 >   
->  If this directory does not exist, go to Windows Communication Foundation (WCF) HYPERLINK "https://go.microsoft.com/fwlink/?LinkId=150780" \t "_blank"  and Windows Workflow Foundation (WF) Samples for [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] to download all WCF and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to Windows Communication Foundation (WCF) HYPERLINK "https://go.microsoft.com/fwlink/?LinkId=150780" \t "\_blank"  and Windows Workflow Foundation (WF) Samples for [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] to download all WCF and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  \<InstallDrive>:\Samples\WCFWFCardSpace\WCF\Basic\Services\Hosting\WASHost\MsmqActivation.  
   
@@ -70,7 +70,8 @@ public class OrderProcessorService : IOrderProcessor
             client.OrderStatus(po.PONumber, po.Status);  
             scope.Complete();  
         }  
-    }  
+    }
+}
 ```  
   
  The client binding to use is specified using a configuration file.  
@@ -167,7 +168,7 @@ public class OrderStatusService : IOrderStatus
   
  The order status queue is created in the `Main` method. The client configuration includes the order status service configuration to host the order status service, as shown in the following sample configuration.  
   
-```csharp  
+```xml  
 <appSettings>  
     <!-- use appSetting to configure MSMQ queue name -->  
     <add key="targetQueueName" value=".\private$\ServiceModelSamples/service.svc" />  
@@ -263,7 +264,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
         > [!NOTE]
         >  This command is a single line of text.  
   
-         This command enables the /servicemodelsamples application to be accessed using http://localhost/servicemodelsamples and net.msmq://localhost/servicemodelsamples.  
+         This command enables the /servicemodelsamples application to be accessed using `http://localhost/servicemodelsamples` and `net.msmq://localhost/servicemodelsamples`.
   
 7.  If you have not done so previously, ensure that the MSMQ activation service is enabled. From the **Start** menu, click **Run**, and type `Services.msc`. Search the list of services for the **Net.Msmq Listener Adapter**. Right-click and select **Properties**. Set the **Startup Type** to **Automatic**, click **Apply** and click the **Start** button. This step must only be done once prior to the first usage of the Net.Msmq Listener Adapter service.  
   

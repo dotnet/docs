@@ -44,7 +44,7 @@ In general, we recommend you to target the *lowest* version of .NET Standard pos
 1. Target the next lower version of .NET Standard and build your project.
 2. If your project builds successfully, repeat step 1. Otherwise, retarget to the next higher version and that's the version you should use.
 
-However, targeting lower .NET Standard versions introduces a number of support dependencies. If your project targets .NET Standard 1.x, [we recommend that you *also* target .NET Standard 2.0](library-guidance/cross-platform-targeting.md). This simplifies the dependency graph for users of your library that run on .NET Standard 2.0 compatible frameworks, and it reduces the number of packages they need to download.
+However, targeting lower .NET Standard versions introduces a number of support dependencies. If your project targets .NET Standard 1.x, we recommend that you *also* target .NET Standard 2.0. This simplifies the dependency graph for users of your library that run on .NET Standard 2.0 compatible frameworks, and it reduces the number of packages they need to download.
 
 ### .NET Standard versioning rules
 

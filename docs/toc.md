@@ -42,6 +42,7 @@
 #### [Asynchronous Programming Patterns](standard/asynchronous-programming-patterns/)
 ### [Parallel Programming](standard/parallel-programming/)
 ### [Threading](standard/threading/)
+## [Memory and span-related types](standard/memory-and-spans/index.md)
 ## [Native interoperability](standard/native-interop.md)
 ## [Collections and Data Structures](standard/collections/)
 ## [Numerics in .NET](standard/numerics.md)

@@ -16,7 +16,7 @@ For .NET Core 1.0, libraries are expected to be distributed as NuGet packages.  
 
 Imagine that you just wrote an awesome new library that you would like to distribute over NuGet.  You can create a NuGet package with cross platform tools to do exactly that!  The following example assumes a library called **SuperAwesomeLibrary** which targets `netstandard1.0`.
 
-If you have transitive dependencies; that is, a project which depends on another project, you'll need to make sure to restore packages for your entire solution with the `dotnet restore` command before creating a NuGet package.  Failing to do so will result in the `dotnet pack` command to not work properly.
+If you have transitive dependencies; that is, a project which depends on another package, you'll need to make sure to restore packages for your entire solution with the `dotnet restore` command before creating a NuGet package.  Failing to do so will result in the `dotnet pack` command to not work properly.
 
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 

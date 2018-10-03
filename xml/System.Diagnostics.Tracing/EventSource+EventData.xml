@@ -85,7 +85,7 @@ public unsafe void WriteEvent(int eventId, int arg1, int arg2, int arg3, int arg
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.7.2;netframework-4.8">
           <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>

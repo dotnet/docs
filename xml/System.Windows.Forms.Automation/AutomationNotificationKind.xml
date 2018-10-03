@@ -1,0 +1,121 @@
+﻿<Type Name="AutomationNotificationKind" FullName="System.Windows.Forms.Automation.AutomationNotificationKind">
+  <TypeSignature Language="C#" Value="public enum AutomationNotificationKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutomationNotificationKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Automation.AutomationNotificationKind" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AutomationNotificationKind" />
+  <TypeSignature Language="C++ CLI" Value="public enum class AutomationNotificationKind" />
+  <TypeSignature Language="F#" Value="type AutomationNotificationKind = " />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActionAborted">
+      <MemberSignature Language="C#" Value="ActionAborted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Automation.AutomationNotificationKind ActionAborted = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Automation.AutomationNotificationKind.ActionAborted" />
+      <MemberSignature Language="VB.NET" Value="ActionAborted" />
+      <MemberSignature Language="C++ CLI" Value="ActionAborted" />
+      <MemberSignature Language="F#" Value="ActionAborted = 3" Usage="System.Windows.Forms.Automation.AutomationNotificationKind.ActionAborted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Automation.AutomationNotificationKind</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionCompleted">
+      <MemberSignature Language="C#" Value="ActionCompleted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Automation.AutomationNotificationKind ActionCompleted = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Automation.AutomationNotificationKind.ActionCompleted" />
+      <MemberSignature Language="VB.NET" Value="ActionCompleted" />
+      <MemberSignature Language="C++ CLI" Value="ActionCompleted" />
+      <MemberSignature Language="F#" Value="ActionCompleted = 2" Usage="System.Windows.Forms.Automation.AutomationNotificationKind.ActionCompleted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Automation.AutomationNotificationKind</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemAdded">
+      <MemberSignature Language="C#" Value="ItemAdded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Automation.AutomationNotificationKind ItemAdded = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Automation.AutomationNotificationKind.ItemAdded" />
+      <MemberSignature Language="VB.NET" Value="ItemAdded" />
+      <MemberSignature Language="C++ CLI" Value="ItemAdded" />
+      <MemberSignature Language="F#" Value="ItemAdded = 0" Usage="System.Windows.Forms.Automation.AutomationNotificationKind.ItemAdded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Automation.AutomationNotificationKind</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemRemoved">
+      <MemberSignature Language="C#" Value="ItemRemoved" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Automation.AutomationNotificationKind ItemRemoved = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Automation.AutomationNotificationKind.ItemRemoved" />
+      <MemberSignature Language="VB.NET" Value="ItemRemoved" />
+      <MemberSignature Language="C++ CLI" Value="ItemRemoved" />
+      <MemberSignature Language="F#" Value="ItemRemoved = 1" Usage="System.Windows.Forms.Automation.AutomationNotificationKind.ItemRemoved" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Automation.AutomationNotificationKind</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Other">
+      <MemberSignature Language="C#" Value="Other" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Automation.AutomationNotificationKind Other = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Automation.AutomationNotificationKind.Other" />
+      <MemberSignature Language="VB.NET" Value="Other" />
+      <MemberSignature Language="C++ CLI" Value="Other" />
+      <MemberSignature Language="F#" Value="Other = 4" Usage="System.Windows.Forms.Automation.AutomationNotificationKind.Other" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Automation.AutomationNotificationKind</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

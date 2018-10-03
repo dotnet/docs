@@ -35,10 +35,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
       <AttributeName>Serializable</AttributeName>
     </Attribute>
   </Attributes>
@@ -528,7 +528,7 @@
         <Attribute FrameworkAlternate="netframework-4.6">
           <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Reflection.TypeInfo/&lt;get_DeclaredNestedTypes&gt;d__1))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Reflection.TypeInfo/&lt;get_DeclaredNestedTypes&gt;d__23))</AttributeName>
         </Attribute>
       </Attributes>
@@ -1161,7 +1161,7 @@
         <Attribute FrameworkAlternate="netframework-4.6">
           <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Reflection.TypeInfo/&lt;GetDeclaredMethods&gt;d__1))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Reflection.TypeInfo/&lt;GetDeclaredMethods&gt;d__9))</AttributeName>
         </Attribute>
       </Attributes>

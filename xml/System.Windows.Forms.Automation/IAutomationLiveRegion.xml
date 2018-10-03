@@ -1,0 +1,40 @@
+﻿<Type Name="IAutomationLiveRegion" FullName="System.Windows.Forms.Automation.IAutomationLiveRegion">
+  <TypeSignature Language="C#" Value="public interface IAutomationLiveRegion" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAutomationLiveRegion" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Automation.IAutomationLiveRegion" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAutomationLiveRegion" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IAutomationLiveRegion" />
+  <TypeSignature Language="F#" Value="type IAutomationLiveRegion = interface" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LiveSetting">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Automation.AutomationLiveSetting LiveSetting { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Automation.AutomationLiveSetting LiveSetting" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Automation.IAutomationLiveRegion.LiveSetting" />
+      <MemberSignature Language="VB.NET" Value="Public Property LiveSetting As AutomationLiveSetting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Automation::AutomationLiveSetting LiveSetting { System::Windows::Forms::Automation::AutomationLiveSetting get(); void set(System::Windows::Forms::Automation::AutomationLiveSetting value); };" />
+      <MemberSignature Language="F#" Value="member this.LiveSetting : System.Windows.Forms.Automation.AutomationLiveSetting with get, set" Usage="System.Windows.Forms.Automation.IAutomationLiveRegion.LiveSetting" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Automation.AutomationLiveSetting</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

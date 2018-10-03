@@ -11,7 +11,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.ServiceModel.ServiceContract(Name="IWSTrustFeb2005Sync", Namespace="http://schemas.microsoft.com/ws/2008/06/identity/securitytokenservice")</AttributeName>
     </Attribute>
   </Attributes>
@@ -32,7 +32,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Cancel", Name="TrustFeb2005Cancel", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Cancel")</AttributeName>
         </Attribute>
       </Attributes>
@@ -61,7 +61,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Cancel", Name="TrustFeb2005CancelResponse", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Cancel")</AttributeName>
         </Attribute>
       </Attributes>
@@ -90,7 +90,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue", Name="TrustFeb2005Issue", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue")</AttributeName>
         </Attribute>
       </Attributes>
@@ -119,7 +119,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue", Name="TrustFeb2005IssueResponse", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue")</AttributeName>
         </Attribute>
       </Attributes>
@@ -148,7 +148,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Renew", Name="TrustFeb2005Renew", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Renew")</AttributeName>
         </Attribute>
       </Attributes>
@@ -177,7 +177,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Renew", Name="TrustFeb2005RenewResponse", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Renew")</AttributeName>
         </Attribute>
       </Attributes>
@@ -206,7 +206,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Validate", Name="TrustFeb2005Validate", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Validate")</AttributeName>
         </Attribute>
       </Attributes>
@@ -235,7 +235,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Validate", Name="TrustFeb2005ValidateResponse", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Validate")</AttributeName>
         </Attribute>
       </Attributes>

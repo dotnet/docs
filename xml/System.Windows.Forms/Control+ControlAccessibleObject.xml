@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -456,6 +456,28 @@
       <Docs>
         <summary>Gets the parent of an accessible object.</summary>
         <value>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the parent of an accessible object, or <see langword="null" /> if there is no parent object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseLiveRegionChanged">
+      <MemberSignature Language="C#" Value="public override bool RaiseLiveRegionChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool RaiseLiveRegionChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlAccessibleObject.RaiseLiveRegionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function RaiseLiveRegionChanged () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool RaiseLiveRegionChanged();" />
+      <MemberSignature Language="F#" Value="override this.RaiseLiveRegionChanged : unit -&gt; bool" Usage="controlAccessibleObject.RaiseLiveRegionChanged " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1001,12 +1001,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void swap(class Microsoft.VisualC.StlClr.IVector`1&lt;!TValue&gt; ) cil managed" FrameworkAlternate="netframework-3.5;netframework-4.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub swap ( As IVector(Of TValue))" FrameworkAlternate="netframework-3.5;netframework-4.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void swap(Microsoft::VisualC::StlClr::IVector&lt;TValue&gt; ^ );" FrameworkAlternate="netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="C#" Value="public void swap (Microsoft.VisualC.StlClr.IVector&lt;TValue&gt; A_0);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void swap(class Microsoft.VisualC.StlClr.IVector`1&lt;!TValue&gt; A_0) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public void swap (Microsoft.VisualC.StlClr.IVector&lt;TValue&gt; A_0);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void swap(class Microsoft.VisualC.StlClr.IVector`1&lt;!TValue&gt; A_0) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.swap(Microsoft.VisualC.StlClr.IVector{`0})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub swap (A_0 As IVector(Of TValue))" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void swap(Microsoft::VisualC::StlClr::IVector&lt;TValue&gt; ^ A_0);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="F#" Value="abstract member swap : Microsoft.VisualC.StlClr.IVector&lt;'Value&gt; -&gt; unit" Usage="iVector.swap A_0" FrameworkAlternate="netframework-4.5;netframework-3.5;netframework-4.0;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="VB.NET" Value="Public Sub swap (A_0 As IVector(Of TValue))" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void swap(Microsoft::VisualC::StlClr::IVector&lt;TValue&gt; ^ A_0);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="abstract member swap : Microsoft.VisualC.StlClr.IVector&lt;'Value&gt; -&gt; unit" Usage="iVector.swap A_0" FrameworkAlternate="netframework-4.5;netframework-3.5;netframework-4.0;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -1018,7 +1018,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.IVector&lt;TValue&gt;" Index="0" FrameworkAlternate="netframework-3.5;netframework-4.0" />
-        <Parameter Name="A_0" Type="Microsoft.VisualC.StlClr.IVector&lt;TValue&gt;" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+        <Parameter Name="A_0" Type="Microsoft.VisualC.StlClr.IVector&lt;TValue&gt;" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="A_0">The container with which to swap contents.</param>

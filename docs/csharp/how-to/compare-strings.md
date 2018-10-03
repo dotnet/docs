@@ -30,9 +30,9 @@ equality, but some differences, such as case differences, may be ignored.
 
 The most common operations:
 
-**System.String.CompareTo(String)**,
-**System.String.Equals(String)**
-**System.String.Equality(String,String)**
+- <xref:System.String.CompareTo%2A?displayProperty=nameWithType>
+- <xref:System.String.Equals%2A?displayProperty=nameWithType>
+- <xref:System.String.op_Equality%2A?displayProperty=nameWithType> 
 
 use an ordinal comparison, a case-sensitive comparison, and use the current
 culture. The results are shown in the following example.

@@ -21,5 +21,5 @@ Routing contracts define the message patterns that the Routing Service can proce
 |<xref:System.ServiceModel.Routing.IDuplexSessionRouter>|SessionMode=SessionMode.Required<br /><br /> CallbackContract=typeof(ISimplexSession)<br /><br /> AsyncPattern = true<br /><br /> IsOneWay = true<br /><br /> TransactionFlow(TransactionFlowOption.Allowed)|IDuplexSessionChannel -> IDuplexSessionChannel|  
   
 ## See Also  
- [Routing Service](https://msdn.microsoft.com/library/5ac8718c-bcef-456f-bfd5-1e60a30d6eaa)  
+ [Routing Service](../../../../docs/framework/wcf/feature-details/routing-service.md)  
  [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md)

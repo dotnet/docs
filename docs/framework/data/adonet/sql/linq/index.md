@@ -35,7 +35,7 @@ ms.assetid: 73d13345-eece-471a-af40-4cc7a2f11655
  [LINQ](../../../../../visual-basic/programming-guide/language-features/linq/index.md)  
  Describes [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] technologies for Visual Basic users.  
   
- [LINQ to ADO.NET](https://msdn.microsoft.com/library/be3297b9-1b54-4d4c-82a8-add0d79c2006)  
+ [LINQ and ADO.NET](../../../../../../docs/framework/data/adonet/linq-and-ado-net.md)  
  Links to the [!INCLUDE[vstecado](../../../../../../includes/vstecado-md.md)] portal.  
   
  [LINQ to SQL Walkthroughs](https://msdn.microsoft.com/library/308e66ac-f704-4e00-9b4e-7af0045a2374)  

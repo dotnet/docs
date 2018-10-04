@@ -242,17 +242,17 @@ This step-by-step article describes how a system administrator can deploy the [!
 <a name="additional_error_codes"></a>   
 ### Download error codes  
   
--   [Background Intelligent Transfer Service (BITS) error codes](https://msdn.microsoft.com/library/aa362823.aspx)  
+-   [Background Intelligent Transfer Service (BITS) error codes](/windows/desktop/Bits/bits-return-values)  
   
--   [URL moniker error codes](https://msdn.microsoft.com/library/ms775145.aspx)  
+-   [URL moniker error codes](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775145%28v=vs.85%29)  
   
 -   [WinHttp error codes](/windows/desktop/WinHttp/error-messages)  
   
  Other error codes:  
   
--   [Windows Installer error codes](https://msdn.microsoft.com/library/aa368542.aspx)  
+-   [Windows Installer error codes](/windows/desktop/msi/error-codes)  
   
--   [Windows Update Agent result codes](https://technet.microsoft.com/library/cc720442.aspx)  
+-   [Windows Update Agent result codes](/security-updates/WindowsUpdateServices/18127055)  
   
 ## See Also  
  [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md)  

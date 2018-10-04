@@ -108,7 +108,7 @@ dotnet sln add .\MathService.Tests\MathService.Tests.fsproj
 
 ## Creating the first test
 
-The TDD approach calls for writing one failing test, making it pass, then repeating the process. Open *Tests.fs* and add the following code:
+The TDD approach calls for writing one failing test, making it pass, then repeating the process. Open *UnitTest1.fs* and add the following code:
 
 ```fsharp
 namespace MathService.Tests
@@ -144,14 +144,14 @@ member this.TestEvenSequence() =
 
 Notice that the `expected` sequence has been converted to a list. The NUnit framework relies on many standard .NET types. That dependency means that your public interface and expected results support <xref:System.Collections.ICollection> rather than <xref:System.Collections.IEnumerable>.
 
-When you run the test, you see that your test fails. You haven't created the implementation yet. Make this test by writing the simplest code in the `Mathservice` class that works:
+When you run the test, you see that your test fails. You haven't created the implementation yet. Make this test pass by writing the simplest code in the *Library.fs* class in your MathService project that works:
 
 ```csharp
 let squaresOfOdds xs =
     Seq.empty<int>
 ```
 
-In the *unit-testing-with-fsharp* directory, run `dotnet test` again. The `dotnet test` command runs a build for the `MathService` project and then for the `MathService.Tests` project. After building both projects, it runs this single test. It passes.
+In the *unit-testing-with-fsharp* directory, run `dotnet test` again. The `dotnet test` command runs a build for the `MathService` project and then for the `MathService.Tests` project. After building both projects, it runs your tests. Two tests pass now.
 
 ## Completing the requirements
 

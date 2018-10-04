@@ -74,3 +74,13 @@ Namespace Examples.System.Net
     End Module
 End Namespace
 ```
+
+If you need to browse a specific directory, just add the directory to the end of URI you're using in `WebRequest.Create` method:
+
+````csharp
+FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://www.contoso.com/your_preferred_directory");
+```
+
+```vb
+Dim request As FtpWebRequest = CType(WebRequest.Create("ftp://www.contoso.com/your_preferred_directory"), FtpWebRequest)
+```

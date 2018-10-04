@@ -235,6 +235,12 @@ Specifies the URL for the repository where the source code for the package resid
 ### RepositoryType
 Specifies the type of the repository. Default is "git". 
 
+### RepositoryBranch
+Specifies the name of the source branch in the repository. When the project is packaged in a Nuget package it is added to the package metadata.
+
+### RepositoryCommit
+Specifies the commit hash for the source. When the project is packaged in a Nuget package this commit hash is added to the package metadata.
+
 ### NoPackageAnalysis
 Specifies that pack should not run package analysis after building the package.
 

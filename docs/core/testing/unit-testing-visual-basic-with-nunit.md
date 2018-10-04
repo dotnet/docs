@@ -17,6 +17,7 @@ This tutorial takes you through an interactive experience building a sample solu
 ## Creating the source project
 
 Open a shell window. Create a directory called *unit-testing-vb-nunit* to hold the solution. Inside this new directory, run the following command to create a new solution file for the class library and the test project:
+
 ```console
 dotnet new sln
 ```
@@ -88,7 +89,7 @@ You can see the entire file in the [samples repository](https://github.com/dotne
 
 You have the following final solution layout:
 
-```console
+```
 /unit-testing-vb-nunit
     unit-testing-vb-nunit.sln
     /PrimeService

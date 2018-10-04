@@ -64,6 +64,10 @@ For example, the following method call has two positional arguments between a na
 StudentInfo.Display("Mary", age:=19, #9/21/1998#)
 ```
 
+[`Private Protected` member access modifier](../language-reference/modifiers/private-protected.md)
+
+This new keyword combination defines a member that is accessible by all members in its containing class as well as by types derived from the containing class, but only if they are found in the containing assembly. Because structures cannot be inherited, `Private Protected` can only be applied to the members of a class.
+
 **Leading hex/binary/octal separator**
 
 Visual Basic 2017 added support for the underscore character (`_`) as a digit separator. Starting with Visual Basic 15.5, you can use the underscore character as a leading separator between the prefix and hexadecimal, binary, or octal digits. The following example uses a leading digit separator to define 3,271,948,384 as a hexadecimal number:

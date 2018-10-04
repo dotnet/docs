@@ -15,3 +15,5 @@ We anticipate that [Xamarin](https://docs.microsoft.com/xamarin), [Mono](http://
 This project has adopted the code of conduct defined by the Contributor Covenant
 to clarify expected behavior in our community.
 For more information, see the [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct).
+
+You are very welcome to contribute to improve this documentation and we do appreciate the help, but before please be sure you have read the [Contribution Guide](https://docs.microsoft.com/contribute).

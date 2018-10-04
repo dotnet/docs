@@ -19,13 +19,13 @@ Developers can use development environments on Windows, Linux, or macOS. On the 
 
 To host containers in development environments and provide additional developer tools, Docker ships [Docker Community Edition (CE)](https://www.docker.com/community-edition) for Windows or for macOS. These products install the necessary VM (the Docker host) to host the containers. Docker also makes available [Docker Enterprise Edition (EE)](https://www.docker.com/enterprise-edition), which is designed for enterprise development and is used by IT teams who build, ship, and run large business-critical applications in production.
 
-To run [Windows Containers](https://msdn.microsoft.com/virtualization/windowscontainers/about/about_overview), there are two types of runtimes:
+To run [Windows Containers](/virtualization/windowscontainers/about/), there are two types of runtimes:
 
 -   **Windows Server Container** This runtime provides application isolation through process and namespace isolation technology. A Windows Server Container shares a kernel with the container host and with all containers running on the host.
 
 -   **Hyper-V Container** This expands on the isolation provided by Windows Server Containers by running each container in a highly optimized VM. In this configuration, the kernel of the container host is not shared with the Hyper-V Containers, providing better isolation.
 
-The images for these containers are created in the same way and function the same. The difference is in how the container is created from the image—running a Hyper-V Container requires an extra parameter. For details, see [Hyper-V Containers](https://msdn.microsoft.com/virtualization/windowscontainers/about/about_overview).
+The images for these containers are created in the same way and function the same. The difference is in how the container is created from the image—running a Hyper-V Container requires an extra parameter. For details, see [Hyper-V Containers](/virtualization/windowscontainers/about/).
 
 ## Comparing Docker containers with VMs
 

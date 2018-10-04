@@ -21,7 +21,7 @@ Windows Communication Foundation (WCF) clients are wire-level compatible with We
   
 2.  Create a class that represents a binding that can communicate with WSE 3.0 Web services.  
   
-     The following class is part of the [Interoperating with WSE](https://msdn.microsoft.com/library/f6816861-96a0-45f9-8736-8e4e82cd3a41) sample:  
+     The following class is part of the [Interoperating with WSE](/previous-versions/dotnet/netframework-3.5/ms752257%28v=vs.90%29) sample:  
   
     1.  Create a class that derives from the <xref:System.ServiceModel.Channels.Binding> class.  
   
@@ -58,4 +58,4 @@ Windows Communication Foundation (WCF) clients are wire-level compatible with We
   
 ## See Also  
  <xref:System.ServiceModel.Channels.Binding>  
- [Interoperating with WSE](https://msdn.microsoft.com/library/f6816861-96a0-45f9-8736-8e4e82cd3a41)
+ [Interoperating with WSE](/previous-versions/dotnet/netframework-3.5/ms752257%28v=vs.90%29)

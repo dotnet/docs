@@ -7,4 +7,4 @@ ms.date: 06/20/2016
 ---
 # Getting started with ASP.NET Core
 
-For tutorials about developing ASP.NET Core web applications, we suggest you head over to [ASP.NET Core documentation](/aspnet/core/).
+For tutorials about developing ASP.NET Core web applications, see [ASP.NET Core Tutorials](aspnet/core/tutorials).

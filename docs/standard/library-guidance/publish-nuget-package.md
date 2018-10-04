@@ -32,7 +32,7 @@ It's important that bad actors can't access your NuGet account and upload a mali
 
 **✔️ DO** use a Microsoft account to sign in to NuGet.
 
-**✔️ DO** enable two factor authentication for accessing NuGet.
+**✔️ DO** enable two-factor authentication for accessing NuGet.
 
 **✔️ DO** enable email notification when a package is published.
 

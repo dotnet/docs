@@ -30,13 +30,13 @@ There are two main ways to create a NuGet package. The newer and recommended way
 
 The older way of creating a NuGet package is with a `*.nuspec` file and the `nuget.exe` command-line tool. A nuspec file gives you great control but you must carefully specify what assemblies and targets to include in the final NuGet package. It's easy to make a mistake or for someone to forget to update the nuspec when making changes. The advantage of a nuspec is you can use it create NuGet packages for frameworks that don't yet support an SDK-style project file.
 
-**✔️ CONSIDER** using a SDK-style project file to create the NuGet package.
+**✔️ CONSIDER** using an SDK-style project file to create the NuGet package.
 
 **✔️ CONSIDER** setting up SourceLink to add source control metadata to your assemblies and NuGet package.
 
 ## Package dependences
 
-NuGet package dependencies are covered in detail [here](./dependencies.md).
+NuGet package dependencies are covered in detail in the [Dependencies](./dependencies.md) article.
 
 ## Important NuGet package metadata
 
@@ -45,7 +45,7 @@ A NuGet package supports many [metadata properties](/nuget/reference/nuspec). Th
 | MSBuild Property name              | Nuspec name              | Description  |
 | ---------------------------------- | ------------------------ | ------------ |
 | `PackageId`                        | `id`                       | The package identifier. A prefix from the identifier can be reserved if it meets the [criteria](/nuget/reference/id-prefix-reservation). |
-| `PackageVersion`                   | `version`                  | NuGet package version. Read more about it [here](./versioning.md#nuget-package-version).             |
+| `PackageVersion`                   | `version`                  | NuGet package version. For more information, see [NuGet package version](./versioning.md#nuget-package-version).             |
 | `Title`                            | `title`                    | A human-friendly title of the package. It defaults to the `PackageId`.             |
 | `Description`                      | `description`              | A long description of the package displayed in UI.             |
 | `Authors`                          | `authors`                  | A comma-separated list of package authors, matching the profile names on nuget.org.             |
@@ -69,14 +69,14 @@ A NuGet package supports many [metadata properties](/nuget/reference/nuspec). Th
 
 ## Pre-release packages
 
-NuGet packages with a version suffix are considered [pre-release](/nuget/create-packages/prerelease-packages). By default the NuGet Package Manager UI shows stable releases unless a user opts-in to pre-release packages, making pre-release packages ideal for limited user testing.
+NuGet packages with a version suffix are considered [pre-release](/nuget/create-packages/prerelease-packages). By default, the NuGet Package Manager UI shows stable releases unless a user opts-in to pre-release packages, making pre-release packages ideal for limited user testing.
 
 ```xml
 <PackageVersion>1.0.1-beta1</PackageVersion>
 ```
 
 > [!NOTE]
-> A stable package cannot depend on a pre-release package. You must either make your own package pre-release, or depend on an older stable version.
+> A stable package cannot depend on a pre-release package. You must either make your own package pre-release or depend on an older stable version.
 
 ![NuGet pre-release package dependency](./media/nuget/nuget-prerelease-package.png "NuGet pre-release package dependency")
 

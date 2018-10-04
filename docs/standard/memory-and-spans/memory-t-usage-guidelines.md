@@ -11,13 +11,13 @@ ms.author: "ronpet"
 
 .NET Core includes a number of types that represent an arbitrary contiguous region of memory. .NET Core 2.0 introduced <xref:System.Span%601> and <xref:System.ReadOnlySpan%601>, which are lightweight memory buffers stored on the stack that can be backed by managed or unmanaged memory. Their stack-only storage makes these types unsuitable for a number of scenarios, including asynchronous method calls. .NET Core 2.1 adds a number of additional types, including <xref:System.Memory%601>, <xref:System.ReadOnlyMemory%601>, <xref:System.Buffers.IMemoryOwner%601>, and <xref:System.Buffers.MemoryPool%601>. Like <xref:System.Span%601>, <xref:Memory%601> and its related types can be backed by both managed and unmanaged memory. Unlike <xref:System.Span%601>, <xref:System.Memory%601> can be stored on the managed heap.
 
-Both <xref:System.Span%601> and <xref:System.Memory%601> are buffers of structured data that can be used in pipelines. That is, they are designed so that some or all of the data can be efficiently passed to components in the pipeline, which can process them and optionally modify the buffer. Because <xref:System.Memory%601> and its related types can be accessed  by multiple components or by multiple threads, it is important that developers follow some standard usage guidelines to produce robust code.
+Both <xref:System.Span%601> and <xref:System.Memory%601> are buffers of structured data that can be used in pipelines. That is, they are designed so that some or all of the data can be efficiently passed to components in the pipeline, which can process them and optionally modify the buffer. Because <xref:System.Memory%601> and its related types can be accessed by multiple components or by multiple threads, it's important that developers follow some standard usage guidelines to produce robust code.
 
 ## Owners, consumers, and lifetime management
 
-Since buffers can be passed around between APIs, and since buffers can sometimes be accessed from multiple threads, it is important to consider lifetime management. There are three core concepts:
+Since buffers can be passed around between APIs, and since buffers can sometimes be accessed from multiple threads, it's important to consider lifetime management. There are three core concepts:
 
-- **Ownership**. The owner of a buffer instance is responsible for lifetime management, including destroying the buffer when it is no longer in use. All buffers have a single owner. Generally the owner is the component that created the buffer or that received the buffer from a factory. Ownership can also be transferred; **Component-** can relinquish control of the buffer to **Component-B**, at which point **Component-A** may no longer use the buffer, and **Component-B** becomes responsible for destroying the buffer when it is no longer in use.
+- **Ownership**. The owner of a buffer instance is responsible for lifetime management, including destroying the buffer when it's no longer in use. All buffers have a single owner. Generally the owner is the component that created the buffer or that received the buffer from a factory. Ownership can also be transferred; **Component-** can relinquish control of the buffer to **Component-B**, at which point **Component-A** may no longer use the buffer, and **Component-B** becomes responsible for destroying the buffer when it's no longer in use.
 
 - **Consumption**. The consumer of a buffer instance is allowed to use the buffer instance by reading from it and possibly writing to it. Buffers can have one consumer at a time unless some external synchronization mechanism is provided. Note that the active consumer of a buffer is not necessarily the buffer's owner.
 
@@ -52,15 +52,21 @@ class Program
 }
 ```
 
-The `Main` method creates the buffer (in this case an <xref:System.Span%601> instance) and so is its owner. Therefore, `Main` is responsible for destroying the buffer when it's no longer in use. It does this by calling the buffer's <xref:System.Span%601.Clear?displayProperty=nameWithType> method. (The <xref:System.Span%601.Clear> method here actually clears the buffer's memory; the <xref:System.Span%601> structure does not actually have a method that destroys the buffer.)
+The `Main` method creates the buffer (in this case an <xref:System.Span%601> instance) and so is its owner. Therefore, `Main` is responsible for destroying the buffer when it's no longer in use. It does this by calling the buffer's <xref:System.Span%601.Clear?displayProperty=nameWithType> method. (The <xref:System.Span%601.Clear> method here actually clears the buffer's memory; the <xref:System.Span%601> structure doesn't actually have a method that destroys the buffer.)
 
-The buffer has two consumers, `WriteInt32ToBuffer` and `DisplayBufferToConsole`. There is only one consumer at a time (first `WriteInt32ToBuffer`, then `DisplayBufferToConsole`), and neither of the consumers owns the buffer. Note also that "consumer" in this context does not imply a read-only view of the buffer; consumers can modify the buffer's contents, as `WriteInt32ToBuffer does, if given a read/write view of the buffer.
+The buffer has two consumers, `WriteInt32ToBuffer` and `DisplayBufferToConsole`. There is only one consumer at a time (first `WriteInt32ToBuffer`, then `DisplayBufferToConsole`), and neither of the consumers owns the buffer. Note also that "consumer" in this context doesn't imply a read-only view of the buffer; consumers can modify the buffer's contents, as `WriteInt32ToBuffer does, if given a read/write view of the buffer.
 
-The `WriteInt32ToBuffer` method has a lease on (can consume) the buffer between the start of the method call and the time the method returns. Similarly, `DisplayBufferToConsole` has a lease on the buffer while it is executing, and the lease is released when the method unwinds. (There is no API for lease management; a "lease" is simply a conceptual matter.)
+The `WriteInt32ToBuffer` method has a lease on (can consume) the buffer between the start of the method call and the time the method returns. Similarly, `DisplayBufferToConsole` has a lease on the buffer while it's executing, and the lease is released when the method unwinds. (There is no API for lease management; a "lease" is a conceptual matter.)
 
 ## Memory\<T> and the owner/consumer model
 
-.NET Core 2.1 includes the <xref:System.Buffers.IMemoryOwner%601?displayProperty=nameWithType> interface, which represents the owner of its associated <xref:System.IMemory%601> instance. If a component has an <xref:System.Buffers.IMemoryOwner%601> reference, that component owns the buffer. The following example uses an <xref:System.Buffers.IMemoryOwner%601?> to reflect the ownership of an <xref:System.Memory%601> buffer.
+As the [Owners, consumers, and lifetime management](#owners-consumers-and-lifetime-management) section noted, a buffer always has an owner. .NET Core supports two ownership models:
+
+- A model that supports single ownership. A buffer has a single owner for its entire lifetime.
+
+- A model that supports ownership transfer. Ownership of a buffer can be transferred from its original owner (its creator) to another component, which then becomes responsible for the buffer's lifetime management. That owner can in turn transfer ownership to another component, and so on.
+
+You use the <xref:System.Buffers.IMemoryOwner%601?displayProperty=nameWithType> interface to explicitly manage the ownership of a buffer. <xref:System.Buffers.IMemoryOwner%601> supports both ownership models. The component that has an <xref:System.Buffers.IMemoryOwner%601> reference owns the buffer. The following example uses an <xref:System.Buffers.IMemoryOwner%601?> instance to reflect the ownership of an <xref:System.Memory%601> buffer.
 
 [!code-csharp[memory-intro](~/samples/snippets/standard/buffers/memory-t/owner/owner.cs)]
 
@@ -78,7 +84,7 @@ Although the `WriteInt32ToBuffer` method is intended to write a value to the buf
 
 ### "Ownerless" Memory\<T> instances
 
-You can create a <xref:System.Memory%601> instance without using <xref:System..Buffers.IMemoryOwner<%601>. You can do this by:
+You can create a <xref:System.Memory%601> instance without using <xref:System..Buffers.IMemoryOwner<%601>. In this case, ownership of the buffer is implicit rather than explicit, and only the single-owner model is supported. You can do this by:
 
 - Calling one of the  <xref:System.Memory%601> constructors directly, passing in a `T[]`, as the following example does.
 
@@ -103,7 +109,7 @@ Sometimes, you'll have to use a <xref:System.Memory%601> parameter instead of a 
 <a name="rule-2 />
 **Rule #2: Use ReadOnlySpan\<T> or ReadOnlyMemory\<T> if the buffer should be immutable.**
 
-In the earlier examples, the `DisplayBufferToConsole` method only reads from the buffer; it does not modify the contents of the buffer. The method signature should be changed to the following.
+In the earlier examples, the `DisplayBufferToConsole` method only reads from the buffer; it doesn't modify the contents of the buffer. The method signature should be changed to the following.
 
 ```csharp
 void DisplayBufferToConsole(ReadOnlyMemory<char> buffer);
@@ -115,7 +121,7 @@ In fact, if we combine this rule and Rule #1, we can do even better and rewrite 
 void DisplayBufferToConsole(ReadOnlySpan<char> buffer);
 ```
 
-The `DisplayBufferToConsole` method now works with virtually every buffer type imaginable: `T[]`, [stackalloc](~/docs/csharp/language-reference/keywords/stackalloc.md), and so on. You can even pass a <xref:System.String> directly into it!
+The `DisplayBufferToConsole` method now works with virtually every buffer type imaginable: `T[]`, storage allocated with [stackalloc](~/docs/csharp/language-reference/keywords/stackalloc.md), and so on. You can even pass a <xref:System.String> directly into it!
 
 **Rule #3: If your method accepts Memory\<T> and returns `void`, you must not use the Memory\<T> instance after your method returns.**
 

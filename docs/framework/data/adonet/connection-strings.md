@@ -5,7 +5,7 @@ ms.assetid: 745c5f95-2f02-4674-b378-6d51a7ec2490
 ---
 # Connection Strings in ADO.NET
 
-A connection string contains initialization information that is passed as a parameter from a data provider to a data source. The data provider accepts the connection string via <xref:System.String> the <xref:System.Data.Common.DbConnection.ConnectionString?displayProperty=nameWithType> property, whose setter parses it and ensures the syntax is correct and the keywords are supported.
+A connection string contains initialization information that is passed as a parameter from a data provider to a data source. The data provider accepts the connection string via the <xref:System.Data.Common.DbConnection.ConnectionString?displayProperty=nameWithType> property, whose setter parses it and ensures the syntax is correct and the keywords are supported.
 The <xref:System.Data.Common.DbConnection.Open?displayProperty=nameWithType> method passes the parsed connection parameters to the data source, which performs further validation and establishes a connection.
 
 A connection string is a semicolon-delimited list of key/value parameter pairs:

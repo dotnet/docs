@@ -3,7 +3,7 @@ title: Prerequisites for .NET Core on Mac
 description: Supported macOS versions and .NET Core dependencies to develop, deploy, and run .NET Core applications on macOS machines.
 author: guardrex
 ms.author: mairaw
-ms.date: 09/27/2017
+ms.date: 10/03/2018
 ---
 # Prerequisites for .NET Core on macOS
 
@@ -17,7 +17,7 @@ This article shows you the supported macOS versions and .NET Core dependencies t
 
 * macOS 10.12 "Sierra" and later versions
 
-See [.NET Core 2.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md) for the complete list of .NET Core 2.x supported operating systems, out of support OS versions, and lifecycle policy links.
+See [.NET Core 2.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) for the complete list of .NET Core 2.x supported operating systems, out of support OS versions, and lifecycle policy links.
 
 # [.NET Core 1.x](#tab/netcore1x)
 
@@ -34,7 +34,7 @@ See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 # [.NET Core 2.x](#tab/netcore2x)
 
-Download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult the [Known issues](https://github.com/dotnet/core/tree/master/release-notes/2.0) topic for the version you have installed.
+Download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult the [Known issues](https://github.com/dotnet/core/tree/master/release-notes/2.1) topic for the version you have installed.
 
 # [.NET Core 1.x](#tab/netcore1x)
 

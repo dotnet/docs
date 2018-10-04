@@ -23,6 +23,8 @@ In this walkthrough, you will create a basic `Loan` object and persist its data 
 > [!TIP]
 > Need to install a code editor? Try [Visual Studio](https://visualstudio.com/downloads)!
 
+* The example requires C# 7.3. See [Select the C# language version](../../../language-reference/configure-language-version.md) 
+
 You can examine the sample code online [at the .NET samples GitHub repository](https://github.com/dotnet/samples/tree/master/csharp/serialization).
 
 ## Creating the loan object

@@ -19,7 +19,7 @@ ms.assetid: dd31b89b-eab6-45a1-8d0b-11e0eb84b234
   
  An image being manipulated by two manipulators  
   
- Manipulation processing provides a framework that monitors a subset of manipulators and interprets them as if they are acting together, instead of independently. You can create several manipulation processor objects simultaneously, one for each UI element to be manipulated in an application. A manipulation processor is informed of which input devices to observe and it reports manipulations through [.NET events](https://msdn.microsoft.com/library/17sde2xt.aspx).  
+ Manipulation processing provides a framework that monitors a subset of manipulators and interprets them as if they are acting together, instead of independently. You can create several manipulation processor objects simultaneously, one for each UI element to be manipulated in an application. A manipulation processor is informed of which input devices to observe and it reports manipulations through [.NET events](../../../docs/standard/events/index.md).  
   
  A manipulation processor does not have information about the particular element that is being manipulated. An application separately applies the changes to an application-specific element. For example, an application applies transformations to an image or redraws it to display it at its new location or with a new size or orientation.  
   

@@ -18,7 +18,7 @@ Once you have written a COM+ integration application, you may want to deploy it 
   
 5.  Copy the Application.config and Application.manifest files from the application root directory on machine A to the application root directory on machine B.  
   
-6.  Edit the service endpoint addresses in the Application.config file on machine B to identify the appropriate machine. For example, change http://machineA/MyService to http://machineB/MyService.  
+6.  Edit the service endpoint addresses in the Application.config file on machine B to identify the appropriate machine. For example, change `http://machineA/MyService` to `http://machineB/MyService`.  
   
 ### Moving a Web-hosted integration application  
   

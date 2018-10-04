@@ -17,7 +17,7 @@ Modern .NET supports multiple operating systems and devices. It's important for 
 
 Targeting .NET Standard, and successfully compiling your project, doesn't guarantee the library will run successfully on all platforms:
 
-1. Platform-specific APIs will fail on other platforms. For example, `Microsoft.Win32.Registry` will succeed on Windows and throw `PlatformNotSupportedException` when used on any other OS.
+1. Platform-specific APIs will fail on other platforms. For example, <xref:Microsoft.Win32.Registry?displayProperty=nameWithType> will succeed on Windows and throw <xref:System.PlatformNotSupportedException> when used on any other OS.
 2. APIs can behave differently. For example, reflection APIs have different performance characteristics when an application uses ahead-of-time compilation on iOS or UWP.
 
 > [!TIP]
@@ -25,7 +25,7 @@ Targeting .NET Standard, and successfully compiling your project, doesn't guaran
 
 **✔️ DO** start with including a `netstandard2.0` target.
 
-> Most general purpose libraries should not need APIs outside of .NET Standard 2.0. .NET Standard 2.0 is supported by all modern platforms and is the recommended way to support multiple platforms with one target.
+> Most general-purpose libraries should not need APIs outside of .NET Standard 2.0. .NET Standard 2.0 is supported by all modern platforms and is the recommended way to support multiple platforms with one target.
 
 **❌ AVOID** including a `netstandard1.x` target.
 

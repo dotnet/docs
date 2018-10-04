@@ -36,4 +36,4 @@ Support has been added to allow for WCF services with Internationalized Domain N
 >  When adding Unicode characters to applicationHost.exe.config, save the file using the UTF-8 encoding.  
   
 ## See Also  
- [System.Uri](https://msdn.microsoft.com/library/system.uri.aspx)
+ <xref:System.Uri?displayProperty=nameWithType>

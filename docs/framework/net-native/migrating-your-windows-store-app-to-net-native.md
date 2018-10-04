@@ -73,7 +73,7 @@ ms.author: "ronpet"
   
 -   Public members on the <xref:System.RuntimeFieldHandle> and <xref:System.RuntimeMethodHandle> structures aren't supported. These types are supported only for LINQ, expression trees, and static array initialization.  
   
--   <xref:System.Reflection.RuntimeReflectionExtensions.GetRuntimeProperties%2A?displayProperty=nameWithType> and <xref:System.Reflection.RuntimeReflectionExtensions.GetRuntimeEvents%2A?displayProperty=nameWithType> include hidden members in base classes and thus may be overridden without explicit overrides. This is also true of other [RuntimeReflectionExtensions.GetRuntime*](https://msdn.microsoft.com/library/system.reflection.runtimereflectionextensions_methods.aspx) methods.  
+-   <xref:System.Reflection.RuntimeReflectionExtensions.GetRuntimeProperties%2A?displayProperty=nameWithType> and <xref:System.Reflection.RuntimeReflectionExtensions.GetRuntimeEvents%2A?displayProperty=nameWithType> include hidden members in base classes and thus may be overridden without explicit overrides. This is also true of other [RuntimeReflectionExtensions.GetRuntime*](xref:System.Reflection.RuntimeReflectionExtensions) methods.  
   
 -   <xref:System.Type.MakeArrayType%2A?displayProperty=nameWithType> and <xref:System.Type.MakeByRefType%2A?displayProperty=nameWithType> don't fail when you try to create certain combinations (for example, an array of byrefs).  
   
@@ -394,7 +394,7 @@ ms.author: "ronpet"
   
  **Windows Communication Foundation (WCF) (System.ServiceModel.\*)**  
   
- The types in the [System.ServiceModel.* namespaces](https://msdn.microsoft.com/library/gg145010.aspx) aren't supported in .NET Native. These includes the following types:  
+ The types in the [System.ServiceModel.* namespaces](xref:System.ServiceModel) aren't supported in .NET Native. These includes the following types:  
   
 ||  
 |-|  

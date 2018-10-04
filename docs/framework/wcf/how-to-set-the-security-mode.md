@@ -82,7 +82,7 @@ Windows Communication Foundation (WCF) security has three common security modes 
     ```xml  
     <wsHttpBinding>  
     <binding name="TransportSecurity">  
-        <security mode="Transport" />  
+        <security mode="Transport" >  
            <transport clientCredentialType = "Windows" />  
         </security>  
     </binding>  
@@ -94,7 +94,7 @@ Windows Communication Foundation (WCF) security has three common security modes 
     ```xml  
     <wsHttpBinding>  
     <binding name="MessageSecurity">  
-        <security mode="Message" />  
+        <security mode="Message" >  
            <message clientCredentialType = "Certificate" />  
         </security>  
     </binding>  

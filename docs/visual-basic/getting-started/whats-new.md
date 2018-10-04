@@ -13,7 +13,7 @@ ms.author: ronpet
 ---
 # What's new for Visual Basic
 
-This topic lists key feature names for each version of Visual Basic, with detailed descriptions of the new and enhanced features in the lastest version of the language.
+This topic lists key feature names for each version of Visual Basic, with detailed descriptions of the new and enhanced features in the latest versions of the language.
   
 ## Current version
 

@@ -374,7 +374,7 @@
       <Docs>
         <param name="key">A string specifying the <c>key</c>.</param>
         <summary>Removes a <see cref="T:System.Configuration.KeyValueConfigurationElement" /> object from the collection.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>Remove does not throw an exception if the object is not found.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThrowOnDuplicate">

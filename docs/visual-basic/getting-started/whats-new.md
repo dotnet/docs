@@ -1,6 +1,6 @@
 ---
 title: "What's new for Visual Basic"
-ms.date: 02/15/2018
+ms.date: 10/04/2018
 f1_keywords: 
   - "VB.StartPage.WhatsNew"
 helpviewer_keywords: 

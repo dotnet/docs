@@ -93,7 +93,7 @@ Applies runtime reflection policy to a constructed generic type.
  If a `<TypeInstantiation>` element is the child of an [\<Assembly>](../../../docs/framework/net-native/assembly-element-net-native.md), [\<Namespace>](../../../docs/framework/net-native/namespace-element-net-native.md), or [\<Type>](../../../docs/framework/net-native/type-element-net-native.md), element, it overrides the policy settings defined by the parent element. If a [\<Type>](../../../docs/framework/net-native/type-element-net-native.md) element defines a corresponding generic type definition, the `<TypeInstantiation>` element overrides runtime reflection policy only for instantiations of the specified constructed generic type.  
   
 ## Example  
- The following example uses reflection to retrieve the generic type definition from a constructed <xref:System.Collections.Generic.Dictionary%602> object. It also uses reflection to display information about <xref:System.Type> objects that represent constructed generic types and generic type definitions. The variable `b` in the example is a [TextBlock](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) control.  
+ The following example uses reflection to retrieve the generic type definition from a constructed <xref:System.Collections.Generic.Dictionary%602> object. It also uses reflection to display information about <xref:System.Type> objects that represent constructed generic types and generic type definitions. The variable `b` in the example is a <xref:Windows.UI.Xaml.Controls.TextBlock> control.  
   
  [!code-csharp[ProjectN_Reflection#2](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn_reflection/cs/makegenerictype1.cs#2)]  
   

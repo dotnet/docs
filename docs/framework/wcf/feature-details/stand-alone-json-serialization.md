@@ -172,7 +172,7 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
   
  The type hint is very similar to the `xsi:type` attribute defined by the XML Schema Instance standard and used when serializing/deserializing XML.  
   
- Data members called "__type" are forbidden due to potential conflict with the type hint.  
+ Data members called "\_\_type" are forbidden due to potential conflict with the type hint.  
   
 #### Reducing the Size of Type Hints  
  To reduce the size of JSON messages, the default data contract namespace prefix (`http://schemas.datacontract.org/2004/07/`) is replaced with the "#" character. (To make this replacement reversible, an escaping rule is used: if the namespace starts with the "#" or "\\" characters, they are appended with an extra "\\" character). Thus, if "Circle" is a type in the .NET namespace "MyApp.Shapes", its default data contract namespace is `http://schemas.datacontract.org/2004/07/MyApp`. Shapes and the JSON representation is as follows.  

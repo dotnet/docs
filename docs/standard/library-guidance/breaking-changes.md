@@ -15,11 +15,11 @@ How a library is used by the .NET community changes the effect of breaking chang
 
 * **Low and middle-level libraries** like a serializer, HTML parser, database object-relational mapper, or web framework are the most affected by breaking changes.
 
-  Building block packages are used by end-user developers to build applications, and by other libraries as NuGet dependencies. For example, you're building an application and are using an open-source client to call a web service. A breaking update to dependency the client uses isn't something you can fix. It's the open-source client that needs to be changed and you have no control over it. You have to find compatible versions of the libraries, or submit a fix to the client library and wait for a new version. The worst-case situation is if you want to use two libraries that depend on mutually incompatible versions of a third library.
+  Building block packages are used by end-user developers to build applications, and by other libraries as NuGet dependencies. For example, you're building an application and are using an open-source client to call a web service. A breaking update to dependency the client uses isn't something you can fix. It's the open-source client that needs to be changed and you have no control over it. You have to find compatible versions of the libraries or submit a fix to the client library and wait for a new version. The worst-case situation is if you want to use two libraries that depend on mutually incompatible versions of a third library.
 
 * **High-level libraries** like a suite of UI controls are less sensitive to breaking changes.
 
-  High-level libraries are directly referenced in an end-user application. If breaking changes occur the developer can choose to update to the latest version, or can modify their application to work with the breaking change.
+  High-level libraries are directly referenced in an end-user application. If breaking changes occur, the developer can choose to update to the latest version, or can modify their application to work with the breaking change.
 
 **✔️ DO** think about how your library will be used. What effect will breaking changes have on applications and libraries that use it?
 
@@ -48,7 +48,7 @@ Because a source breaking change is only harmful when developers recompile their
 
 Behavior changes are the most common type of breaking change: almost any change in behavior could break someone. Changes to your library, such as method signatures, exceptions thrown or input or output data formats, could all negatively impact your library consumers. Even a bug fix can qualify as a breaking change if users relied on the previously broken behavior.
 
-Adding features and improving bad behaviors is a good thing, but without care it can make it very hard for existing users to upgrade. One approach to helping developers deal with behavior breaking changes is to hide them behind settings. Settings let developers update to the latest version of your library while at the same time choosing to opt in or opt out of breaking changes. This strategy lets developers stay up-to-date while letting their consuming code adapt over time.
+Adding features and improving bad behaviors is a good thing, but without care it can make it very hard for existing users to upgrade. One approach to helping developers deal with behavior breaking changes is to hide them behind settings. Settings let developers update to the latest version of your library while at the same time choosing to opt in or opt out of breaking changes. This strategy lets developers stay up to date while letting their consuming code adapt over time.
 
 For example, ASP.NET Core MVC has the concept of a [compatibility version](/aspnet/core/mvc/compatibility-version) that modifies the features enabled and disabled on `MvcOptions`.
 
@@ -56,7 +56,7 @@ For example, ASP.NET Core MVC has the concept of a [compatibility version](/aspn
 
 ### Binary breaking change
 
-A binary breaking change happens when you change the public API of your library so assemblies compiled against older versions of your library are no longer able to call the API. For example, changing a method's signature by adding a new parameter will cause assemblies compiled against the older version of the library to throw a <xref:System.MissingMethodException>.
+A binary breaking change happens when you change the public API of your library, so assemblies compiled against older versions of your library are no longer able to call the API. For example, changing a method's signature by adding a new parameter will cause assemblies compiled against the older version of the library to throw a <xref:System.MissingMethodException>.
 
 A binary breaking change can also break an **entire assembly**. Renaming an assembly with `AssemblyName` will change the assembly's identity, as will adding, removing, or changing the assembly's strong naming key. A change of an assembly's identity will break all compiled code that uses it.
 

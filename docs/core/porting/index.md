@@ -21,7 +21,7 @@ The recommended process for porting follows the following series of steps.  Each
 
    This ensures that you can use API alternatives for .NET Framework-specific targets in the cases where .NET Core can't support a particular API.
    
-3. Use the [API Portability Analyzer tool](https://github.com/Microsoft/dotnet-apiport/) to analyze your assemblies and develop a plan to port based on its results.
+3. Use the [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md) to analyze your assemblies and develop a plan to port based on its results.
 
    The API Portability Analyzer tool will analyze your compiled assemblies and generate a report which shows a high-level portability summary and a breakdown of each API you're using that isn't available on .NET Core.  You can use this report alongside an analysis of your codebase to develop a plan for how you'll port your code over.
    

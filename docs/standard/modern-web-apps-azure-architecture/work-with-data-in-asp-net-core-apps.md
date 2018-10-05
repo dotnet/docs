@@ -275,7 +275,7 @@ The DocumentDB query language is a simple yet powerful interface for querying JS
 
 **References – DocumentDB**
 
-- DocumentDB Introduction\
+- DocumentDB Introduction  
   <https://docs.microsoft.com/azure/documentdb/documentdb-introduction>
 
 ## Other persistence options
@@ -292,7 +292,7 @@ In addition to relational and NoSQL storage options, ASP.NET Core applications c
 
 **References – Azure Storage**
 
-- Azure Storage Introduction\
+- Azure Storage Introduction  
   <https://docs.microsoft.com/azure/storage/storage-introduction>
 
 ## Caching

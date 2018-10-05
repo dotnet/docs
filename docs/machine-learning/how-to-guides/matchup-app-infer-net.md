@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.custom: mvc
 #Customer intent: As a developer, I want to use probalistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
 ---
-# Create a game matchup list app with Infer.NET and probabilistic programming
+# Create a game match up list app with Infer.NET and probabilistic programming
 
 This how-to guide teaches you about probabilistic programming using Infer.NET. This is an approach to machine learning where bespoke models are expressed as computer programs. It allows for incorporating domain knowledge in the models and makes the machine learning system more interpretable. It also supports online inference – the process of learning as new data arrives. Infer.NET is a framework for Infer.NET is used in various products at Microsoft in Azure, Xbox, and Bing.
 
@@ -18,7 +18,7 @@ Probabilistic programming allows us to create statistical models of real-world p
 
 - Local development environment setup
 
-  This quickstart expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC, or Linux.
+  This how-to guide expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC, or Linux.
 
 ## Create your app
 
@@ -41,22 +41,22 @@ dotnet add package Microsoft.ML.Probabilistic
 
 ## Design your model
 
-We'll use for our example some sample table tennis or foosball matches played in the office. We have the participants and outcome of each match.  We want to infer the player's skills from this data. We’ll assume that each player has a normally distributed latent skill and their performance in a given match is a noisy version of this skill. The data constrains the winner’s performance to be greater than the loser’s performance. This is a simplified version of the popular [TrueSkill](https://www.microsoft.com/en-us/research/project/trueskill-ranking-system/) model, which also supports teams, draws, and other extensions. An [advanced version](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/) of this model is used for matchmaking in the best-selling game titles Halo and Gears of War.
+We'll use for our example sample table tennis or foosball matches played in the office. We have the participants and outcome of each match.  We want to infer the player's skills from this data. We’ll assume that each player has a normally distributed latent skill and their performance in a given match is a noisy version of this skill. The data constrains the winner’s performance to be greater than the loser’s performance. This is a simplified version of the popular [TrueSkill](https://www.microsoft.com/en-us/research/project/trueskill-ranking-system/) model, which also supports teams, draws, and other extensions. An [advanced version](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/) of this model is used for matchmaking in the best-selling game titles Halo and Gears of War.
 
 We need to list the inferred player skills, alongside with their variance – the measure of uncertainty around the skills.
 
-*Sample Data*
+*Game result sample data*
 
 Game |Winner | Loser
 ---------|----------|---------
- 1 | Computer | Player 1
- 2 | Computer | Player 3
- 3 | Computer | Player 4
+ 1 | Player 0 | Player 1
+ 2 | Player 0 | Player 3
+ 3 | Player 0 | Player 4
  4 | Player 1 | Player 2
  5 | Player 3 | Player 1
  6 | Player 4 | Player 2
 
-With a closer look at the sample data, you’ll notice that players 3 and 4 both have one win and one loss. Let's see what the rankings look like using probablistic programming. 
+With a closer look at the sample data, you’ll notice that players 3 and 4 both have one win and one loss. Let's see what the rankings look like using probablistic programming.
 
 ## Write some code
 

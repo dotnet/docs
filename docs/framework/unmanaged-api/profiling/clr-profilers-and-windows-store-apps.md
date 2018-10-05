@@ -118,7 +118,7 @@ If Process A attempts to spawn Windows Store app Process B, Process A should be 
 
 First, you’ll want to ask your profiler user which Windows Store app to launch. For desktop apps, perhaps you’d show a file Browse dialog, and the user would find and select an .exe file. But Windows Store apps are different, and using a Browse dialog doesn’t make sense. Instead, it’s better to show the user a list of Windows Store apps installed for that user to select from.
 
-You can use the [PackageManager class](/uwp/api/windows.management.deployment.packagemanager) to generate this list. `PackageManager` is a Windows Runtime class that is available to desktop apps, and in fact it is *only* available to desktop apps.
+You can use the <xref:Windows.Management.Deployment.PackageManager> class to generate this list. `PackageManager` is a Windows Runtime class that is available to desktop apps, and in fact it is *only* available to desktop apps.
 
 The following code example from a hypothetical Profiler UI written as a desktop app in C# yses the `PackageManager` to generate a list of Windows apps:
 
@@ -292,7 +292,7 @@ ApplicationData appData =
 tempDir = appData.TemporaryFolder.Path;
 ```
 
-Meanwhile, your Profiler DLL can do basically the same thing, though it can more easily get to the [ApplicationData](https://msdn.microsoft.com/library/windows/apps/windows.storage.applicationdata.aspx) class by using the [ApplicationData.Current](https://msdn.microsoft.com/library/windows/apps/windows.storage.applicationdata.current.aspx) property.
+Meanwhile, your Profiler DLL can do basically the same thing, though it can more easily get to the <xrerf:Windows.Storage.ApplicationData> class by using the [ApplicationData.Current](Windows.Storage.ApplicationData.Current%2A) property.
 
 **Communicating via events**
 

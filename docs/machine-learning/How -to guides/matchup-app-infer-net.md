@@ -4,12 +4,11 @@ description: Discover how to use probalistic programming with Infer.NET to creat
 ms.date: 10/04/2018
 ms.topic: how-to
 ms.custom: mvc
----
 #Customer intent: As a developer, I want to use probalistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
 ---
 # Create a game matchup list app with Infer.NET and probabilistic programming
 
-This how-to guide teaches you about probabilistic programming using Infer.NET. This is an approach to machine learning where bespoke models are expressed as computer programs. It allows for incorporating domain knowledge in the models and makes the machine learning system more interpretable. It also supports online inference – the process of learning as new data arrives. Infer.NET is a framework for Infer.NET is used in various products at Microsoft in Azure, Xbox, and Bing. 
+This how-to guide teaches you about probabilistic programming using Infer.NET. This is an approach to machine learning where bespoke models are expressed as computer programs. It allows for incorporating domain knowledge in the models and makes the machine learning system more interpretable. It also supports online inference – the process of learning as new data arrives. Infer.NET is a framework for Infer.NET is used in various products at Microsoft in Azure, Xbox, and Bing.
 
 ## What is probabilistic programming? 
 
@@ -19,7 +18,7 @@ Probabilistic programming allows us to create statistical models of real-world p
 
 - Local development environment setup
 
-This quickstart expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC, or Linux.
+  This quickstart expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC, or Linux.
 
 ## Create your app
 
@@ -57,27 +56,17 @@ Game |Winner | Loser
  5 | Player 3 | Player 1
  6 | Player 4 | Player 2
 
-*Player Standings after six games*
-
-
-Player # | Wins  | Losses | Rank
----------|----------|---------
- 3 | 1 | 1 | 1
- 4 | 1 | 1 | 2
- 1 | 1 | 2 | 3
-A3 | 0 | 2 | 4
-
-During a closer look at the sample data, you’ll notice that players 3 and 4 both have one win and one loss. But interestingly, player 3 ranks slightly higher than player 4 according to our model. That’s because the victory of player 3 over player 1 is more significant than the victory of player 4 over player 2 – note that player 1 beats player 2.  
+With a closer look at the sample data, you’ll notice that players 3 and 4 both have one win and one loss. Let's see what the rankings look like using probablistic programming. 
 
 ## Write some code
 
 Having designed the model, it’s time to express it as a probabilistic program using the Infer.NET modeling API. Open `Program.cs` in your favorite text editor and replace all of the code with the following:
 
 ```csharp
-namespace myApp 
+namespace myApp
 
 {
-    using System; 
+    using System;
     using System.Linq;
     using Microsoft.ML.Probabilistic;
     using Microsoft.ML.Probabilistic.Distributions;
@@ -141,12 +130,29 @@ In your command prompt, run the following command:
 dotnet run
 ```
 
+## Results
+
+Your results should be similar to the following:
+
+```
+Compiling model...done.
+Iterating:
+.........|.........|.........|.........|.........| 50
+Player 0 skill: Gaussian(9.517, 3.926)
+Player 3 skill: Gaussian(6.834, 3.892)
+Player 4 skill: Gaussian(6.054, 4.731)
+Player 1 skill: Gaussian(4.955, 3.503)
+Player 2 skill: Gaussian(2.639, 4.288)
+```
+
+In the results, notice that player 3 ranks slightly higher than player 4 according to our model. That’s because the victory of player 3 over player 1 is more significant than the victory of player 4 over player 2 – note that player 1 beats player 2.  
+
 ## Keep learning
 
-Designing statistical models is a skill on its own. Our team at Microsoft Research Cambridge has written a [free online book, which gives a gentle introduction to the article. Chapter 3 of this book covers the TrueSkill model in more detail. Once you have a model in mind, you can transform it into code using the [extensive documentation](https://dotnet.github.io/infer/) on the Infer.NET website.
+Designing statistical models is a skill on its own. Our team at Microsoft Research Cambridge has written a [free online book](http://mbmlbook.com/), which gives a gentle introduction to the article. Chapter 3 of this book covers the TrueSkill model in more detail. Once you have a model in mind, you can transform it into code using the [extensive documentation](https://dotnet.github.io/infer/) on the Infer.NET website.
 
 ## Next steps
 
-Check out our GitHub repository to continue learning and find more samples.
+Check out the Infer.NET GitHub repository to continue learning and find more samples.
 > [!div class="nextstepaction"]
-> [dotnet/machinelearning GitHub repository](https://github.com/dotnet/machinelearning/)
+> [dotnet/infer GitHub repository](https://github.com/dotnet/infer)

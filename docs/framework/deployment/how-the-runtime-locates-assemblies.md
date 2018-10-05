@@ -209,7 +209,7 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
   
 -   Referenced assembly name: myAssembly  
   
--   Application root directory: http://www.code.microsoft.com  
+-   Application root directory: `http://www.code.microsoft.com`  
   
 -   [\<probing>](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) element in configuration file specifies: bin  
   
@@ -217,13 +217,13 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
   
  The runtime probes the following URLs:  
   
- http://www.code.microsoft.com/de/myAssembly.dll  
+ `http://www.code.microsoft.com/de/myAssembly.dll`
   
- http://www.code.microsoft.com/de/myAssembly/myAssembly.dll  
+ `http://www.code.microsoft.com/de/myAssembly/myAssembly.dll`
   
- http://www.code.microsoft.com/bin/de/myAssembly.dll  
+ `http://www.code.microsoft.com/bin/de/myAssembly.dll`
   
- http://www.code.microsoft.com/bin/de/myAssembly/myAssembly.dll  
+ `http://www.code.microsoft.com/bin/de/myAssembly/myAssembly.dll`
   
 ##### Multiple Assemblies with the Same Name  
  The following example shows how to configure multiple assemblies with the same name.  
@@ -239,7 +239,7 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
 #### Other Locations Probed  
  Assembly location can also be determined using the current binding context. This most often occurs when the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method is used and in COM interop scenarios. If an assembly uses the <xref:System.Reflection.Assembly.LoadFrom%2A> method to reference another assembly, the calling assembly's location is considered to be a hint about where to find the referenced assembly. If a match is found, that assembly is loaded. If no match is found, the runtime continues with its search semantics and then queries the Windows Installer to provide the assembly. If no assembly is provided that matches the binding request, an exception is thrown. This exception is a <xref:System.TypeLoadException> in managed code if a type was referenced, or a <xref:System.IO.FileNotFoundException> if an assembly being loaded was not found.  
   
- For example, if Assembly1 references Assembly2 and Assembly1 was downloaded from http://www.code.microsoft.com/utils, that location is considered to be a hint about where to find Assembly2.dll. The runtime then probes for the assembly in http://www.code.microsoft.com/utils/Assembly2.dll and http://www.code.microsoft.com/utils/Assembly2/Assembly2.dll. If Assembly2 is not found at either of those locations, the runtime queries the Windows Installer.  
+ For example, if Assembly1 references Assembly2 and Assembly1 was downloaded from `http://www.code.microsoft.com/utils`, that location is considered to be a hint about where to find Assembly2.dll. The runtime then probes for the assembly in `http://www.code.microsoft.com/utils/Assembly2.dll` and `http://www.code.microsoft.com/utils/Assembly2/Assembly2.dll`. If Assembly2 is not found at either of those locations, the runtime queries the Windows Installer.  
   
 ## See Also  
  [Best Practices for Assembly Loading](../../../docs/framework/deployment/best-practices-for-assembly-loading.md)  

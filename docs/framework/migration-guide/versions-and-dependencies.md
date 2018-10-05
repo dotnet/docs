@@ -8,7 +8,7 @@ ms.assetid: f75a72de-e2f2-4a7a-9574-3f278684ea90
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# .NET Framework Versions and Dependencies
+# .NET Framework versions and dependencies
 Each version of the .NET Framework contains the common language runtime (CLR), the base class libraries, and other managed libraries. This topic describes the key features of the .NET Framework by version, provides information about the underlying CLR versions and associated development environments, and identifies the versions that are installed by the Windows operating system.  
   
 > [!NOTE]
@@ -34,7 +34,7 @@ Each version of the .NET Framework contains the common language runtime (CLR), t
 |4.5.1<br/><br/>[New features](../whats-new/index.md#whats-new-in-the-net-framework-451)|4|2013|✓ 8.1<br />+ 8<br />+ 7<br />+ Vista|✓ 2012 R2<br />+ 2012<br />+ 2008 R2 SP1<br />+ 2008 SP2|Use `Release` DWORD:<br /><br /> -   378675 (Windows 8.1)<br />-   378758 (all other)<br /><br /> (see [instructions](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md))|  
 |4.5<br/><br/>[New features](../whats-new/index.md#whats-new-in-the-net-framework-45)|4|2012|✓ 8<br />+ 7<br />+ Vista|✓ 2012<br />+ 2008 R2 SP1<br />+ 2008 SP2|Use `Release` DWORD:<br /><br /> 378389<br /><br />(see [instructions](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md))|  
 |4<br/><br/>[New features](../whats-new/index.md)|4|2010|+ 7<br />+ Vista|+ 2008 R2 SP1<br />+ 2008 SP2<br />+ 2003|See [instructions](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)|  
-|3.5<br/><br/>[New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ms171868\(v=vs.90\))|2.0|2008|✓ 10\*<br/>✓ 8.1\*<br />✓ 8\*<br />✓ 7<br />+ Vista|✓2008 R2 SP1\*<br />+ 2012 R2\*<br />+ 2012\*<br />+ 2008 SP2<br />+ 2003|See [instructions](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)|  
+|3.5<br/><br/>[New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ms171868\(v=vs.90\))|2.0|2008|✓ 10\*<br/>✓ 8.1\*<br />✓ 8\*<br />✓ 7<br />+ Vista|  + Windows Server, version 1803\* <br/> + Windows Server, version 1709\* <br/> + 2016\* <br/>+ 2012 R2\*<br />+ 2012\*<br />✓2008 R2 SP1\*<br />+ 2008 SP2<br />+ 2003|See [instructions](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)|  
 |3.0<br/><br/>New:<br/>WPF, WCF, WF, CardSpace|2.0|-|✓ Vista|✓ 2008 R2 SP1*<br />✓ 2008 SP2\*<br />+ 2003|See [instructions](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)|  
 |2.0<br/><br/>[New features](https://docs.microsoft.com/previous-versions/dotnet/netframework-2.0/ms229284\(v%3dvs.80\))|2.0|2005|-|✓ 2008 R2 SP1<br />✓ 2008 SP2<br />✓ 2003|See [instructions](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)|  
 |1.1<br/><br/>[New features](https://docs.microsoft.com/previous-versions/dotnet/netframework-1.1/9wtde3k4\(v%3dvs.71\))|1.1|2003|-|✓ 2003|See [instructions](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)|  
@@ -46,7 +46,7 @@ Each version of the .NET Framework contains the common language runtime (CLR), t
 
  In general, you should not uninstall any versions of the .NET Framework that are installed on your computer, because an application you use may depend on a specific version and may break if that version is removed. You can load multiple versions of the .NET Framework on a single computer at the same time. This means that you can install the .NET Framework without having to uninstall previous versions. For more information, see [Getting Started](../../../docs/framework/get-started/index.md).
 
-## Targeting and Running .NET Framework apps for version 4.5 and later  
+## Targeting and running .NET Framework apps for version 4.5 and later  
  The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is an in-place update that replaces the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] on your computer, and similarly, the .NET Framework 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, and 4.7.2 are in-place updates to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], which means that they use the same runtime version, but the assembly versions are updated and include new types and members. After you install one of these updates, your [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], .NET Framework 4.6, or .NET Framework 4.7 apps should continue to run without requiring recompilation. However, the reverse is not true. We do not recommend running apps that target a later version of the .NET Framework on an earlier version of the .NET Framework. For example, we do not recommend that you run an app the targets the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] on the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. The following guidelines apply:  
   
 -   In Visual Studio, you can choose the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] as the target framework for a project (this sets the <xref:Microsoft.Build.Tasks.GetReferenceAssemblyPaths.TargetFrameworkMoniker%2A?displayProperty=nameWithType> property) to compile the project as a [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] assembly or executable. This assembly or executable can then be used on any computer that has the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, or 4.7.2 installed.  
@@ -74,6 +74,6 @@ Each version of the .NET Framework contains the common language runtime (CLR), t
   
 ## See also
 
-[Version Compatibility](../../../docs/framework/migration-guide/version-compatibility.md)   
-[Microsoft .NET Framework Support Lifecycle Policy](https://go.microsoft.com/fwlink/?LinkId=196607)   
-[Troubleshoot blocked .NET Framework installations and uninstallations](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)
+- [Version Compatibility](../../../docs/framework/migration-guide/version-compatibility.md)   - 
+- [Microsoft .NET Framework Support Lifecycle Policy](https://go.microsoft.com/fwlink/?LinkId=196607)   
+- [Troubleshoot blocked .NET Framework installations and uninstallations](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)

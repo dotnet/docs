@@ -129,9 +129,9 @@ This topic covers Windows Communication Foundation (WCF) implementation details 
   
 -   B1201:WCF generates and accesses sequence numbers no higher than `xs:long`’s maximum inclusive value, 9223372036854775807.  
   
--   B1202:WCF always generates an empty-bodied last message with the action URI of http://schemas.xmlsoap.org/ws/2005/02/rm/LastMessage.  
+-   B1202:WCF always generates an empty-bodied last message with the action URI of `http://schemas.xmlsoap.org/ws/2005/02/rm/LastMessage`.  
   
--   B1203: WCF receives and delivers a message with a Sequence header that contains a `LastMessage` element as long as the action URI is not http://schemas.xmlsoap.org/ws/2005/02/rm/LastMessage.  
+-   B1203: WCF receives and delivers a message with a Sequence header that contains a `LastMessage` element as long as the action URI is not `http://schemas.xmlsoap.org/ws/2005/02/rm/LastMessage`.  
   
  An example of a Sequence Header.  
   
@@ -380,7 +380,7 @@ This topic covers Windows Communication Foundation (WCF) implementation details 
 #### LastMessage Exchange  
  The WCF Initiator generates and transmits an empty bodied last message on the HTTP request leg. WCF requires a response but ignores the actual response message. The WCF Responder replies to the request sequence’s empty-bodied last message with the reply sequence’s empty-bodied last message.  
   
- If the WCF Responder receives a last message in which the action URI is not http://schemas.xmlsoap.org/ws/2005/02/rm/LastMessage, WCF replies with a last message. In the case of a two-way message exchange protocol, the last message carries the application message; in the case of a one-way message exchange protocol, the last message is empty.  
+ If the WCF Responder receives a last message in which the action URI is not `http://schemas.xmlsoap.org/ws/2005/02/rm/LastMessage`, WCF replies with a last message. In the case of a two-way message exchange protocol, the last message carries the application message; in the case of a one-way message exchange protocol, the last message is empty.  
   
  The WCF Responder does not require an acknowledgement for the reply sequence’s empty-bodied last message.  
   

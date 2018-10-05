@@ -75,7 +75,7 @@ Make the *PrimeService.Tests* directory the current directory and create a new p
 dotnet new nunit -lang VB
 ```
 
-The [dotnet new](../tools/dotnet-new.md) command creates a test project that uses NUnit as the test library. The generated template configures the test runner in the *PrimeServiceTests.vbproj*:
+The [dotnet new](../tools/dotnet-new.md) command creates a test project that uses NUnit as the test library. The generated template configures the test runner in the *PrimeServiceTests.vbproj* file:
 
 [!code-xml[Packages](~/samples/core/getting-started/unit-testing-using-nunit/PrimeService.Tests/PrimeService.Tests.vbproj#Packages)]
 

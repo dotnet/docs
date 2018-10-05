@@ -6,9 +6,7 @@ ms.date: 10/05/2018
 # How to (ML.NET)
 
 In the How to section of the ML.NET Guide you can find quick answers
-to common questions. In some cases, articles may
-be listed in multiple sections. We wanted to make them easy to find
-for multiple search paths.
+to common questions. In some cases, articles may be listed in multiple sections to make them easy to find.
 
 ## Infer.NET
 

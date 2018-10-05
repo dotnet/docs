@@ -8,7 +8,7 @@ ms.custom: mvc
 ---
 # Create a game match up list app with Infer.NET and probabilistic programming
 
-This how-to guide teaches you about probabilistic programming using Infer.NET. This is an approach to machine learning where bespoke models are expressed as computer programs. It allows for incorporating domain knowledge in the models and makes the machine learning system more interpretable. It also supports online inference – the process of learning as new data arrives. Infer.NET is a framework for Infer.NET is used in various products at Microsoft in Azure, Xbox, and Bing.
+This how-to guide teaches you about probabilistic programming using Infer.NET. Probabilistic programming is a machine learning approach where custom models are expressed as computer programs. It allows for incorporating domain knowledge in the models and makes the machine learning system more interpretable. It also supports online inference – the process of learning as new data arrives. Infer.NET is used in various products at Microsoft in Azure, Xbox, and Bing.
 
 ## What is probabilistic programming? 
 
@@ -18,7 +18,7 @@ Probabilistic programming allows us to create statistical models of real-world p
 
 - Local development environment setup
 
-  This how-to guide expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC, or Linux.
+  This how-to guide expects you to have a machine you can use for development. The .NET [Get Started in 10 minutes](https://www.microsoft.com/net/core) tutorial has instructions for setting up your local development environment on Mac, PC, or Linux.
 
 ## Create your app
 
@@ -29,11 +29,11 @@ dotnet new console -o myApp
 cd myApp
 ```
 
-The `dotnet` command creates a `new` application of type `console`. The `-o` parameter creates a directory named `myApp` where your app is stored, and populates it with the required files. The `cd myApp` command puts you into the newly created app directory.
+The `dotnet` command creates a `new` application of type `console`. The `-o` parameter creates a directory named `myApp` where your app is stored and populates it with the required files. The `cd myApp` command puts you into the newly created app directory.
 
 ## Install Infer.NET package
 
-To use Infer.NET, you need to install the Microsoft.ML.Probabilistic package. In your command prompt, run the following command:
+To use Infer.NET, you need to install the `Microsoft.ML.Probabilistic.Compiler` package. In your command prompt, run the following command:
 
 ```console
 dotnet add package Microsoft.ML.Probabilistic.Compiler
@@ -41,7 +41,7 @@ dotnet add package Microsoft.ML.Probabilistic.Compiler
 
 ## Design your model
 
-We'll use for our example sample table tennis or foosball matches played in the office. We have the participants and outcome of each match.  We want to infer the player's skills from this data. We’ll assume that each player has a normally distributed latent skill and their performance in a given match is a noisy version of this skill. The data constrains the winner’s performance to be greater than the loser’s performance. This is a simplified version of the popular [TrueSkill](https://www.microsoft.com/en-us/research/project/trueskill-ranking-system/) model, which also supports teams, draws, and other extensions. An [advanced version](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/) of this model is used for matchmaking in the best-selling game titles Halo and Gears of War.
+The example sample uses table tennis or foosball matches played in the office. We have the participants and outcome of each match.  We want to infer the player's skills from this data. We’ll assume that each player has a normally distributed latent skill and their performance in a given match is a noisy version of this skill. The data constrains the winner’s performance to be greater than the loser’s performance. This is a simplified version of the popular [TrueSkill](https://www.microsoft.com/en-us/research/project/trueskill-ranking-system/) model, which also supports teams, draws, and other extensions. An [advanced version](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/) of this model is used for matchmaking in the best-selling game titles Halo and Gears of War.
 
 We need to list the inferred player skills, alongside with their variance – the measure of uncertainty around the skills.
 
@@ -56,11 +56,11 @@ Game |Winner | Loser
  5 | Player 3 | Player 1
  6 | Player 4 | Player 2
 
-With a closer look at the sample data, you’ll notice that players 3 and 4 both have one win and one loss. Let's see what the rankings look like using probablistic programming.
+With a closer look at the sample data, you’ll notice that players 3 and 4 both have one win and one loss. Let's see what the rankings look like using probabilistic programming.
 
 ## Write some code
 
-Having designed the model, it’s time to express it as a probabilistic program using the Infer.NET modeling API. Open `Program.cs` in your favorite text editor and replace all of the code with the following:
+Having designed the model, it’s time to express it as a probabilistic program using the Infer.NET modeling API. Open `Program.cs` in your favorite text editor and replace all of its contents with the following code:
 
 ```csharp
 namespace myApp
@@ -149,7 +149,7 @@ In the results, notice that player 3 ranks slightly higher than player 4 accordi
 
 ## Keep learning
 
-Designing statistical models is a skill on its own. Our team at Microsoft Research Cambridge has written a [free online book](http://mbmlbook.com/), which gives a gentle introduction to the article. Chapter 3 of this book covers the TrueSkill model in more detail. Once you have a model in mind, you can transform it into code using the [extensive documentation](https://dotnet.github.io/infer/) on the Infer.NET website.
+Designing statistical models is a skill on its own. The Microsoft Research Cambridge team has written a [free online book](http://mbmlbook.com/), which gives a gentle introduction to the article. Chapter 3 of this book covers the TrueSkill model in more detail. Once you have a model in mind, you can transform it into code using the [extensive documentation](https://dotnet.github.io/infer/) on the Infer.NET website.
 
 ## Next steps
 

@@ -89,3 +89,6 @@ Add multiple C# projects to a solution using a globbing pattern:
 Remove multiple C# projects from a solution using a globbing pattern:
 
 `dotnet sln todo.sln remove **/*.csproj`
+
+> [!NOTE]
+> Globbing is not a CLI feature but rather a feature of the command shell, to sucessfully expand the files you must be using a shell that supports.

@@ -31,5 +31,4 @@ Threading enables your C# program to perform concurrent processing so that you c
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Thread Synchronization (C#)](../../../../csharp/programming-guide/concepts/threading/thread-synchronization.md)|Describes how to control the interactions of threads.|  
 |[Threading](../../../../../docs/standard/threading/index.md)|Describes how to implement threading in the .NET Framework.|

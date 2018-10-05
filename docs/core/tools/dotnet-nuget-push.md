@@ -173,9 +173,9 @@ Pushes *foo.nupkg* to the default push source, specifying an API key:
 
 `dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a`
 
-Push *foo.nupkg* to the custom push source `http://customsource`, specifying an API key:
+Push *foo.nupkg* to the custom push source `https://customsource`, specifying an API key:
 
-`dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s http://customsource/`
+`dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://customsource/`
 
 Pushes *foo.nupkg* to the default push source:
 

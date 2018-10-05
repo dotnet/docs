@@ -56,7 +56,7 @@ Game |Winner | Loser
  5 | Player 3 | Player 1
  6 | Player 4 | Player 2
 
-With a closer look at the sample data, you’ll notice that players 3 and 4 both have one win and one loss. Let's see what the rankings look like using probabilistic programming.
+With a closer look at the sample data, you’ll notice that players 3 and 4 both have one win and one loss. Let's see what the rankings look like using probabilistic programming. Notice also there is a player zero because even office match up lists are zero based to us developers.
 
 ## Write some code
 
@@ -145,7 +145,7 @@ Player 1 skill: Gaussian(4.955, 3.503)
 Player 2 skill: Gaussian(2.639, 4.288)
 ```
 
-In the results, notice that player 3 ranks slightly higher than player 4 according to our model. That’s because the victory of player 3 over player 1 is more significant than the victory of player 4 over player 2 – note that player 1 beats player 2.  
+In the results, notice that player 3 ranks slightly higher than player 4 according to our model. That’s because the victory of player 3 over player 1 is more significant than the victory of player 4 over player 2 – note that player 1 beats player 2. Player 0 is the overall champ!  
 
 ## Keep learning
 

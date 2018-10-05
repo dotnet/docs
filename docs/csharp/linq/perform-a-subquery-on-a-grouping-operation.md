@@ -19,7 +19,7 @@ For more information about continuations, see [into](../language-reference/keywo
 
 [!code-csharp[csProgGuideLINQ#23](~/samples/snippets/csharp/concepts/linq/how-to-perform-a-subquery-on-a-grouping-operation_1.cs)] 
 
-The query in the snippet above can also be written using method syntax. The code snippet below has a semantically equivalent query written using method syntax.
+The query in the snippet above can also be written using method syntax. The following code snippet has a semantically equivalent query written using method syntax.
 
 [!code-csharp[csProgGuideLINQ#86](~/samples/snippets/csharp/concepts/linq/how-to-perform-a-subquery-on-a-grouping-operation_2.cs)]
 

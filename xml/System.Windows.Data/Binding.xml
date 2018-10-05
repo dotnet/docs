@@ -534,7 +534,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Data.Binding" /> should get and set values asynchronously.</summary>
-        <value>The default is <see langword="null" />.</value>
+        <value>The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

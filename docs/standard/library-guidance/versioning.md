@@ -11,7 +11,7 @@ A software library is rarely complete in version 1.0. Good libraries evolve over
 
 ## Breaking changes
 
-Handling breaking changes between versions is covered in detail [here](./breaking-changes.md).
+For information about handling breaking changes between versions, see [Breaking changes](./breaking-changes.md).
 
 ## Version numbers
 
@@ -25,7 +25,7 @@ The [NuGet package version](/nuget/reference/package-versioning) is displayed on
 <PackageVersion>1.0.0-alpha1</PackageVersion>
 ```
 
-The NuGet package identifier combined with the NuGet package version is used to identify a package in NuGet. For example, `Newtonsoft.Json` + `11.0.2`. A package with a suffix is a pre-release package and has special behavior that makes it ideal for testing. Read about pre-release NuGet packages [here](./nuget.md#pre-release-packages).
+The NuGet package identifier combined with the NuGet package version is used to identify a package in NuGet. For example, `Newtonsoft.Json` + `11.0.2`. A package with a suffix is a pre-release package and has special behavior that makes it ideal for testing. For more information, see [Pre-release packages](./nuget.md#pre-release-packages).
 
 Because the NuGet package version is the most visible version to developers, it's a good idea to update it using [Semantic Versioning (SemVer)](https://semver.org/). SemVer indicates the significance of changes between release and helps developers make an informed decision when choosing what version to use. For example, going from `1.0` to `2.0` indicates that there are potentially breaking changes.
 
@@ -35,7 +35,7 @@ Because the NuGet package version is the most visible version to developers, it'
 
 **✔️ DO** include a pre-release suffix when releasing a non-stable package.
 
-> Users must opt-in to getting pre-release packages so they will understand that the package is not complete.
+> Users must opt in to getting pre-release packages, so they will understand that the package is not complete.
 
 ### Assembly version
 
@@ -59,7 +59,7 @@ Strong naming combined with assembly version enables [strict assembly version lo
 
 **❌ DO NOT** have a fixed AssemblyVersion.
 
-> While an unchanging AssemblyVersion avoids the need for binding redirects, it means that only a single version of the assembly can be GACed. Also, the applications that reference the assembly in the GAC will break if another application updates the GACed assembly with breaking changes.
+> While an unchanging AssemblyVersion avoids the need for binding redirects, it means that only a single version of the assembly can be installed in the Global Assembly Cache (GAC). Also, the applications that reference the assembly in the GAC will break if another application updates the GAC assembly with breaking changes.
 
 ### Assembly file version
 
@@ -77,7 +77,7 @@ The assembly file version is used to display a file version in Windows and has n
 
 ### Assembly informational version
 
-The assembly informational version is used to record additional version information and has no effect on runtime behavior. Setting this version is optional. If you're using SourceLink, this version will be set on build with the NuGet package version plus a source control version. For example, `1.0.0-beta1+204ff0a` includes the commit hash of the source code the assembly was built from. Read more about SourceLink [here](./sourcelink.md).
+The assembly informational version is used to record additional version information and has no effect on runtime behavior. Setting this version is optional. If you're using SourceLink, this version will be set on build with the NuGet package version plus a source control version. For example, `1.0.0-beta1+204ff0a` includes the commit hash of the source code the assembly was built from. For more information, see [SourceLink](./sourcelink.md).
 
 ```xml
 <AssemblyInformationalVersion>The quick brown fox jumped over the lazy dog.</AssemblyInformationalVersion>

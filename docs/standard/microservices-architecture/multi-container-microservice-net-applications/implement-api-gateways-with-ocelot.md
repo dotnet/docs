@@ -515,9 +515,9 @@ In that example, when the authorization middleware is called, Ocelot will find i
 
 ## Using Kubernetes Ingress plus Ocelot API Gateways
 
-When using Kubernetes (like in an Azure Kubernetes Service cluster),, you usually unify all the HTTP requests through the [Kuberentes Ingress tier](https://kubernetes.io/docs/concepts/services-networking/ingress/) based on *Nginx*. 
+When using Kubernetes (like in an Azure Kubernetes Service cluster),, you usually unify all the HTTP requests through the [Kubernetes Ingress tier](https://kubernetes.io/docs/concepts/services-networking/ingress/) based on *Nginx*. 
 
-In Kuberentes, if you don’t use any ingress approach, then your services and pods have IPs only routable by the cluster network. 
+In Kubernetes, if you don’t use any ingress approach, then your services and pods have IPs only routable by the cluster network. 
 
 But if you use an ingress approach, you'll have a middle tier between the Internet and your services (including your API Gateways), acting as a reverse proxy.
 
@@ -525,19 +525,19 @@ As a definition, an Ingress is a collection of rules that allow inbound connecti
 
 In eShopOnContainers, when developing locally and using just your development machine as the Docker host, you are not using any ingress but only the multiple API Gateways. 
 
-However, when targeting a “production” environment based on Kuberentes, eShopOnCOntainers is using an ingress in front of the API gateways. That way, the clients still call the same base URL but the requests are routed to multiple API Gateways or BFF. 
+However, when targeting a “production” environment based on Kubernetes, eShopOnContainers is using an ingress in front of the API gateways. That way, the clients still call the same base URL but the requests are routed to multiple API Gateways or BFF. 
 
 Note that API Gateways are front-ends or facades surfacing only the services but not the web applications that are usually out of their scope. In addition, the API Gateways might hide certain internal microservices. 
 
 The ingress, however, is just redirecting HTTP requests but not trying to hide any microservice or web app.
 
-Having an ingress Nginx tier in Kuberentes in front of the web applications plus the several Ocelot API Gateways / BFF is the ideal architecture, as shown in the following diagram.
+Having an ingress Nginx tier in Kubernetes in front of the web applications plus the several Ocelot API Gateways / BFF is the ideal architecture, as shown in the following diagram.
 
  ![](./media/image41.png)
 
 **Figure 8-40.** The ingress tier in eShopOnContainers when deployed into Kubernetes
 
-When you deploy eShopOnContainers into Kuberentes, it exposes just a few services or endpoints via _ingress_, basically the following list of postfixes on the URLs:
+When you deploy eShopOnContainers into Kubernetes, it exposes just a few services or endpoints via _ingress_, basically the following list of postfixes on the URLs:
 
 -	`/` for the client SPA web application
 -	`/webmvc` for the client MVC web application
@@ -547,10 +547,9 @@ When you deploy eShopOnContainers into Kuberentes, it exposes just a few service
 -	`/mobileshoppingapigw` for the mobile BFF and shopping business processes
 -	`/mobilemarketingapigw` for the mobile BFF and marketing business processes
 
-When deploying to Kubernetes, each Ocelot API Gateway is using a different “configuration.json” file for each _pod_ running the API Gateways. Those “configuration.json” files are provided by mounting (originally with the deploy.ps1 script) a volume created based on a Kuberentes _config map_ named ‘ocelot’. Each container mounts its related configuration file in the container’s folder named `/app/configuration`.
+When deploying to Kubernetes, each Ocelot API Gateway is using a different “configuration.json” file for each _pod_ running the API Gateways. Those “configuration.json” files are provided by mounting (originally with the deploy.ps1 script) a volume created based on a Kubernetes _config map_ named ‘ocelot’. Each container mounts its related configuration file in the container’s folder named `/app/configuration`.
 
 In the source code files of eShopOnContainers, the original “configuration.json” files can be found within the `k8s/ocelot/` folder. There’s one file for each BFF/APIGateway.
-
 
 ## Additional cross-cutting features in an Ocelot API Gateway
 
@@ -570,9 +569,6 @@ There are other important features to research and use, when using an Ocelot API
 
 -   **Rate limiting** 
     [*http://ocelot.readthedocs.io/en/latest/features/ratelimiting.html*](http://ocelot.readthedocs.io/en/latest/features/ratelimiting.html )
-
-
-
 
 >[!div class="step-by-step"]
 [Previous] (background-tasks-with-ihostedservice.md)

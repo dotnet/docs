@@ -336,7 +336,7 @@ svcutil.exe MyService.wsdl MyServiceSchema.xsd /r:C:\full_path_to_system_dll\Sys
 ### Collection Naming  
  The following is a list of collection naming rules:  
   
--   The default namespace for all dictionary collection data contracts, as well as for list collection data contracts that contain primitive types, is http://schemas.microsoft.com/2003/10/Serialization/Arrays unless overridden using Namespace. Types that map to built-in XSD types, as well as `char`, `Timespan`, and `Guid` types, are considered primitives for this purpose.  
+-   The default namespace for all dictionary collection data contracts, as well as for list collection data contracts that contain primitive types, is `http://schemas.microsoft.com/2003/10/Serialization/Arrays` unless overridden using Namespace. Types that map to built-in XSD types, as well as `char`, `Timespan`, and `Guid` types, are considered primitives for this purpose.  
   
 -   The default namespace for collection types that contain non-primitive types, unless it is overridden using Namespace, is the same as the data contract namespace of the type contained in the collection.  
   

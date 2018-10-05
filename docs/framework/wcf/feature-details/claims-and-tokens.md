@@ -10,7 +10,7 @@ This topic describes the various claim types that Windows Communication Foundati
   
  You can examine the claims of a client credential by using the <xref:System.IdentityModel.Claims.ClaimSet> and <xref:System.IdentityModel.Claims.Claim> classes. The `ClaimSet` contains a collection of `Claim` objects. Each `Claim` has the following important members:  
   
--   The <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> property returns a Uniform Resource Identifier (URI) that specifies the type of claim being made. For example, a claim type may be a thumbprint of a certificate, in which case the URI is http:schemas.microsoft.com/ws/20005/05/identity/claims/thumprint.  
+-   The <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> property returns a Uniform Resource Identifier (URI) that specifies the type of claim being made. For example, a claim type may be a thumbprint of a certificate, in which case the URI is `http://schemas.microsoft.com/ws/20005/05/identity/claims/thumprint`.  
   
 -   The <xref:System.IdentityModel.Claims.Claim.Right%2A> property returns a URI that specifies the right of the claim. Predefined rights are found in the <xref:System.IdentityModel.Claims.Rights> class (<xref:System.IdentityModel.Claims.Rights.Identity%2A>,  <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>).  
   

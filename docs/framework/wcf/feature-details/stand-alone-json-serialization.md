@@ -175,7 +175,7 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
  Data members called "__type" are forbidden due to potential conflict with the type hint.  
   
 #### Reducing the Size of Type Hints  
- To reduce the size of JSON messages, the default data contract namespace prefix (http://schemas.datacontract.org/2004/07/) is replaced with the "#" character. (To make this replacement reversible, an escaping rule is used: if the namespace starts with the "#" or "\\" characters, they are appended with an extra "\\" character). Thus, if "Circle" is a type in the .NET namespace "MyApp.Shapes", its default data contract namespace is http://schemas.datacontract.org/2004/07/MyApp. Shapes and the JSON representation is as follows.  
+ To reduce the size of JSON messages, the default data contract namespace prefix (`http://schemas.datacontract.org/2004/07/`) is replaced with the "#" character. (To make this replacement reversible, an escaping rule is used: if the namespace starts with the "#" or "\\" characters, they are appended with an extra "\\" character). Thus, if "Circle" is a type in the .NET namespace "MyApp.Shapes", its default data contract namespace is `http://schemas.datacontract.org/2004/07/MyApp`. Shapes and the JSON representation is as follows.  
   
 ```json  
 {"__type":"Circle:#MyApp.Shapes","x":50,"y":70,"radius":10}  

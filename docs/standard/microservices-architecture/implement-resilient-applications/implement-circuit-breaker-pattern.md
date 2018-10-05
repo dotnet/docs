@@ -91,7 +91,7 @@ For instance, once the application is running, you can enable the middleware by 
 
 `http://localhost:5103/failing?enable` 
 
-You can then check the status using the URI http://localhost:5103/failing, as shown in Figure 10-4.
+You can then check the status using the URI `http://localhost:5103/failing`, as shown in Figure 10-4.
 
 ![](./media/image4.png)
 

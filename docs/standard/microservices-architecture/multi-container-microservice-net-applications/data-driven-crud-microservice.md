@@ -389,7 +389,7 @@ Once this is done, you can start your application and browse the following Swagg
   http://<your-root-url>/swagger/
 ```
 
-You previously saw the generated UI created by Swashbuckle for a URL like http://&lt;your-root-url&gt;/swagger/ui. In Figure 8-9 you can also see how you can test any API method.
+You previously saw the generated UI created by Swashbuckle for a URL like `http://<your-root-url>/swagger/ui`. In Figure 8-9 you can also see how you can test any API method.
 
 ![](./media/image10.png)
 

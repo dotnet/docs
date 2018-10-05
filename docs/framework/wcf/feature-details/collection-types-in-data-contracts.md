@@ -239,7 +239,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
  When generic types are being referenced, they must either be fully-open generics or fully-closed generics.  
   
 > [!NOTE]
->  When using the Svcutil.exe tool, this reference can be accomplished by using the **/collectionType** command-line switch (short form: **/ct**). Keep in mind that you must also specify the assembly for the referenced collection types using the **/reference** switch (short form: **/r**). If the type is generic, it must be followed by a back quote and the number of generic parameters. The back quote (`) is not to be confused with the single quote (‘) character. You can specify multiple referenced collection types by using the **/collectionType** switch more than once.  
+>  When using the Svcutil.exe tool, this reference can be accomplished by using the **/collectionType** command-line switch (short form: **/ct**). Keep in mind that you must also specify the assembly for the referenced collection types using the **/reference** switch (short form: **/r**). If the type is generic, it must be followed by a back quote and the number of generic parameters. The back quote (\`) is not to be confused with the single quote (‘) character. You can specify multiple referenced collection types by using the **/collectionType** switch more than once.  
   
  For example, to cause all lists to be imported as Generic <xref:System.Collections.Generic.List%601>.  
   

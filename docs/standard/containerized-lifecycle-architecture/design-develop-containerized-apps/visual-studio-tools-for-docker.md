@@ -78,7 +78,7 @@ The following table might help you decide how to set these options.
 | Do not prompt for trusting localhost SSL certificate | Off | ASP.NET Core 2.1 projects | If the localhost SSL certificate is not trusted, Visual Studio will prompt every time you run your project, unless this checkbox is checked. |
 
 > [!WARNING]
-> If the localhost SSL certificate is not trusted, and you check the box to suppress prompting, then your project can't run. In that case, disable the checkbox, run your project, indicate trust at the prompt.
+> If the localhost SSL certificate is not trusted, and you check the box to suppress prompting, then your project can't run. In that case, uncheck the **Do not prompt** checkbox, run your project, indicate trust at the prompt.
 
 **More information:** For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:
 

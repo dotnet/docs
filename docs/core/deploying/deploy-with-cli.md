@@ -72,7 +72,7 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
 
 Deploying a framework-dependent deployment with one or more third-party dependencies requires that those dependencies be available to your project. Two additional steps are required before you can run the `dotnet restore` ([see note](#dotnet-restore-note)) command:
 
-1. Add references to required third-party libraries to the `<ItemGroup>` section of your *csproj* file. The following `<ItemGroup>` section contains a dependency on [Json.NET](http://www.newtonsoft.com/json) as a third-party library:
+1. Add references to required third-party libraries to the `<ItemGroup>` section of your *csproj* file. The following `<ItemGroup>` section contains a dependency on [Json.NET](https://www.newtonsoft.com/json) as a third-party library:
 
       ```xml
       <ItemGroup>

@@ -61,7 +61,7 @@ Securing an application is an ongoing process. There will never be a point where
 |Resource|Description|  
 |--------------|-----------------|  
 |[Code Access Security and ADO.NET](../../../../docs/framework/data/adonet/code-access-security.md)|Describes the interactions between code access security, role-based security, and partially trusted environments from the perspective of an ADO.NET application.|  
-|[Code Access Security](https://msdn.microsoft.com/library/23a20143-241d-4fe5-9d9f-3933fd594c03)|Contains links to additional topics describing CAS in the .NET Framework.|  
+|[Code Access Security](../../../../docs/framework/misc/code-access-security.md)|Contains links to additional topics describing CAS in the .NET Framework.|  
   
 ## Database Security  
  The principle of least privilege also applies to your data source. Some general guidelines for database security include:  

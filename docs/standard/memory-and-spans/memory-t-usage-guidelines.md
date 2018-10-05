@@ -1,5 +1,5 @@
 ---
-title: "Memory\<T> and Span\<T> usage guidelines"
+title: "Memory&lt;T&gt; and Span&lt;T&gt; usage guidelines"
 ms.date: "10/01/2018"
 helpviewer_keywords: 
   - "Memory\<T> and Span\<T> best practices"
@@ -9,7 +9,7 @@ ms.author: "ronpet"
 ---
 # Memory\<T> and Span\<T> usage guidelines
 
-.NET Core includes a number of types that represent an arbitrary contiguous region of memory. .NET Core 2.0 introduced <xref:System.Span%601> and <xref:System.ReadOnlySpan%601>, which are lightweight memory buffers stored on the stack that can be backed by managed or unmanaged memory. Their stack-only storage makes these types unsuitable for a number of scenarios, including asynchronous method calls. .NET Core 2.1 adds a number of additional types, including <xref:System.Memory%601>, <xref:System.ReadOnlyMemory%601>, <xref:System.Buffers.IMemoryOwner%601>, and <xref:System.Buffers.MemoryPool%601>. Like <xref:System.Span%601>, <xref:Memory%601> and its related types can be backed by both managed and unmanaged memory. Unlike <xref:System.Span%601>, <xref:System.Memory%601> can be stored on the managed heap.
+.NET Core includes a number of types that represent an arbitrary contiguous region of memory. .NET Core 2.0 introduced <xref:System.Span%601> and <xref:System.ReadOnlySpan%601>, which are lightweight memory buffers stored on the stack that can be backed by managed or unmanaged memory. Their stack-only storage makes these types unsuitable for a number of scenarios, including asynchronous method calls. .NET Core 2.1 adds a number of additional types, including <xref:System.Memory%601>, <xref:System.ReadOnlyMemory%601>, <xref:System.Buffers.IMemoryOwner%601>, and <xref:System.Buffers.MemoryPool%601>. Like <xref:System.Span%601>, <xref:System.Memory%601> and its related types can be backed by both managed and unmanaged memory. Unlike <xref:System.Span%601>, <xref:System.Memory%601> can be stored on the managed heap.
 
 Both <xref:System.Span%601> and <xref:System.Memory%601> are buffers of structured data that can be used in pipelines. That is, they are designed so that some or all of the data can be efficiently passed to components in the pipeline, which can process them and optionally modify the buffer. Because <xref:System.Memory%601> and its related types can be accessed by multiple components or by multiple threads, it's important that developers follow some standard usage guidelines to produce robust code.
 
@@ -19,7 +19,7 @@ Since buffers can be passed around between APIs, and since buffers can sometimes
 
 - **Ownership**. The owner of a buffer instance is responsible for lifetime management, including destroying the buffer when it's no longer in use. All buffers have a single owner. Generally the owner is the component that created the buffer or that received the buffer from a factory. Ownership can also be transferred; **Component-** can relinquish control of the buffer to **Component-B**, at which point **Component-A** may no longer use the buffer, and **Component-B** becomes responsible for destroying the buffer when it's no longer in use.
 
-- **Consumption**. The consumer of a buffer instance is allowed to use the buffer instance by reading from it and possibly writing to it. Buffers can have one consumer at a time unless some external synchronization mechanism is provided. Note that the active consumer of a buffer is not necessarily the buffer's owner.
+- **Consumption**. The consumer of a buffer instance is allowed to use the buffer instance by reading from it and possibly writing to it. Buffers can have one consumer at a time unless some external synchronization mechanism is provided. Note that the active consumer of a buffer isn't necessarily the buffer's owner.
 
 - **Lease**. The lease is the length of time that a particular component is allowed to be the consumer of the buffer.
 
@@ -60,7 +60,7 @@ The `WriteInt32ToBuffer` method has a lease on (can consume) the buffer between 
 
 ## Memory\<T> and the owner/consumer model
 
-As the [Owners, consumers, and lifetime management](#owners-consumers-and-lifetime-management) section noted, a buffer always has an owner. .NET Core supports two ownership models:
+As the [Owners, consumers, and lifetime management](#owners-consumers-and-lifetime-management) section notes, a buffer always has an owner. .NET Core supports two ownership models:
 
 - A model that supports single ownership. A buffer has a single owner for its entire lifetime.
 
@@ -68,11 +68,11 @@ As the [Owners, consumers, and lifetime management](#owners-consumers-and-lifeti
 
 You use the <xref:System.Buffers.IMemoryOwner%601?displayProperty=nameWithType> interface to explicitly manage the ownership of a buffer. <xref:System.Buffers.IMemoryOwner%601> supports both ownership models. The component that has an <xref:System.Buffers.IMemoryOwner%601> reference owns the buffer. The following example uses an <xref:System.Buffers.IMemoryOwner%601?> instance to reflect the ownership of an <xref:System.Memory%601> buffer.
 
-[!code-csharp[memory-intro](~/samples/snippets/standard/buffers/memory-t/owner/owner.cs)]
+[!code-csharp[ownership](~/samples/snippets/standard/buffers/memory-t/owner/owner.cs)]
 
 We can also write this example with the [`using`](~/docs/csharp/language-reference/keywords/using-statement.md):
 
-[!code-csharp[memory-intro-using](~/samples/snippets/standard/buffers/memory-t/owner-using/owner.cs)]
+[!code-csharp[ownership-using](~/samples/snippets/standard/buffers/memory-t/owner-using/owner-using.cs)]
 
 In this code:
 
@@ -80,11 +80,11 @@ In this code:
 
 - The `WriteInt32ToBuffer` and `DisplayBufferToConsole` methods accept xref:System.Memory%601> as a public API. Therefore, they are consumers of the buffer. And they only consume it one at a time.
 
-Although the `WriteInt32ToBuffer` method is intended to write a value to the buffer, the `DisplayBufferToConsole` method is not. To reflect this, it could have accepted an argument of type <xref:System.ReadOnlyMemory%601>. For additional information on <xref:System.ReadOnlyMemory%601>, see [Rule #2: Use ReadOnlySpan\<T> or ReadOnlyMemory\<T> if the buffer should be immutable](#rule-2).
+Although the `WriteInt32ToBuffer` method is intended to write a value to the buffer, the `DisplayBufferToConsole` method isn't. To reflect this, it could have accepted an argument of type <xref:System.ReadOnlyMemory%601>. For additional information on <xref:System.ReadOnlyMemory%601>, see [Rule #2: Use ReadOnlySpan\<T> or ReadOnlyMemory\<T> if the buffer should be immutable](#rule-2).
 
 ### "Ownerless" Memory\<T> instances
 
-You can create a <xref:System.Memory%601> instance without using <xref:System..Buffers.IMemoryOwner<%601>. In this case, ownership of the buffer is implicit rather than explicit, and only the single-owner model is supported. You can do this by:
+You can create a <xref:System.Memory%601> instance without using <xref:System..Buffers.IMemoryOwner%601>. In this case, ownership of the buffer is implicit rather than explicit, and only the single-owner model is supported. You can do this by:
 
 - Calling one of the  <xref:System.Memory%601> constructors directly, passing in a `T[]`, as the following example does.
 
@@ -96,11 +96,19 @@ The method that initially creates the <xref:System.Memory%601> instance is the i
 
 ## Usage guidelines
 
+Because a memory block is owned but it intended to be passed to multiple components, some of which may operate upon a particular memory block simultaneously, it is important to establish guidelines for using both <xref:System.Memory%601> and <xref:System.Span%601> because:
+
+- It is possible for a component to retain a reference to a memory block after its owner has released it.
+
+- It is possible for a component to operate on a buffer at the same time that another component is operating on it, in the process corrupting the data in the buffer.
+
+- While the stack-allocated nature of <xref:System.Span%601> optimizes performance and makes <xref:System.Span%601> the preferred type for operating on a memory block, it also subjects <xref:System.Span%601> to some major restrictions restrictions. It is important to know when to use a <xref:System.Span%601> and when to use <xref:System.Memory%601>.
+
 The following are our recommendations for successfully using <xref:System.Memory%601> and its related types. Note that guidance that applies to <xref:System.Memory%601> and <xref:System.Span%601> also applies to <xref:System.ReadOnlyMemory%601> and <xref:System.ReadOnlySpan%601> unless we explicitly note otherwise.
 
 **Rule #1: For a synchronous API, use Span\<T> instead of Memory\<T> as a parameter if possible.**
 
-<xref:System.Span%601> is more versatile than <xref:System.Memory%601> and can represent a wider variety of contiguous memory buffers. <xref:System.Span%601> also offers better performance than <xref:System.Memory%601>>. Finally, you can use the <xref:System.Memory%601.Span?displayProperty=nameWithType> property to convert a <xref:System.Memory%601> instance to a <xref:System.Span%601>, although Span\<T>-to-Memory\<T> conversion is not possible. So if your callers happen to have a <xref:System.Memory%601> instance, they'll be able to call your methods with <xref:System.Span%601> parameters anyway.
+<xref:System.Span%601> is more versatile than <xref:System.Memory%601> and can represent a wider variety of contiguous memory buffers. <xref:System.Span%601> also offers better performance than <xref:System.Memory%601>>. Finally, you can use the <xref:System.Memory%601.Span?displayProperty=nameWithType> property to convert a <xref:System.Memory%601> instance to a <xref:System.Span%601>, although Span\<T>-to-Memory\<T> conversion isn't possible. So if your callers happen to have a <xref:System.Memory%601> instance, they'll be able to call your methods with <xref:System.Span%601> parameters anyway.
 
 Using a parameter of type <xref:System.Span%601> instead of type <xref:System.Memory%601> also helps you write a correct consuming method implementation. You'll automatically get compile-time checks to ensure that you're not attempting to access the buffer beyond your method's lease (more on this later).
 
@@ -147,11 +155,13 @@ In this implementation, `Log` violates its lease because it still attempts to us
 
 There are several ways to resolve this:
 
-- The `Log` method can return a <xref:System.Threading.Tasks.Task> instead of `void`.
+- The `Log` method can return a <xref:System.Threading.Tasks.Task> instead of `void`, as the following implementation of the `Log` method does.
+
+   [!code-csharp[task-returning](~/samples/snippets/standard/buffers/memory-t/task-returning2/task-returning2.cs#1)]
 
 - `Log` can instead be implemented as follows:
 
-   [!code-csharp[void-returning](~/samples/snippets/standard/buffers/memory-t/task-returning/task-returning.cs#1)]
+   [!code-csharp[defensive-copy](~/samples/snippets/standard/buffers/memory-t/task-returning/task-returning.cs#1)]
 
 **Rule #4: If your method accepts a Memory\<<T> and returns a Task, you must not use the Memory\<T> instance after the Task transitions to a terminal state.**
 
@@ -207,20 +217,20 @@ class Person
 
 **Rule #7: If you have an IMemoryOwner\<T> reference, you must at some point dispose of it or transfer its ownership (but not both).**
 
-Since a <xref:System.Memory%601> instance may be backed by either managed or unmanaged memory, the owner must call <xref:System.Buffer.IMemoryOwner%601.Dispose%2A?displayProperty=nameWithType> when work performed on the <xref:System.Memory%601> instance is complete. Alternatively, the owner may transfer ownership of the <xref:System.Buffer.IMemoryOwner%601> instance to a different component, at which point the acquiring component becomes responsible for calling <xref:System.Buffer.IMemoryOwner%601.Dispose%2A?displayProperty=nameWithType> at the appropriate time (more on this later).
+Since a <xref:System.Memory%601> instance may be backed by either managed or unmanaged memory, the owner must call <xref:System.Buffers.IMemoryOwner%601.Dispose%2A?displayProperty=nameWithType> when work performed on the <xref:System.Memory%601> instance is complete. Alternatively, the owner may transfer ownership of the <xref:System.Buffers.IMemoryOwner%601> instance to a different component, at which point the acquiring component becomes responsible for calling <xref:System.Buffers.IMemoryOwner%601.Dispose%2A?displayProperty=nameWithType> at the appropriate time (more on this later).
 
-Failure to call the <xref:System.Buffer.IMemoryOwner%601.Dispose%2A> method may lead to unmanaged memory leaks or other performance degradation.
+Failure to call the <xref:System.Buffers.IMemoryOwner%601.Dispose%2A> method may lead to unmanaged memory leaks or other performance degradation.
 
-This rule also applies to code that calls factory methods like <xref:System.Buffer.MemoryPool%601.Rent%2A?displayProperty=nameWithType>. The caller becomes the owner of the returned <xref:System.Buffer.IMemoryOwner%601> and is responsible for disposing of the instance when finished.
+This rule also applies to code that calls factory methods like <xref:System.Buffers.MemoryPool%601.Rent%2A?displayProperty=nameWithType>. The caller becomes the owner of the returned <xref:System.Buffers.IMemoryOwner%601> and is responsible for disposing of the instance when finished.
 
 **Rule #8: If you have an IMemoryOwner\<T> parameter in your API surface are, you are accepting ownership of that instance.**
 
 Accepting an instance of this type signals that your component intends to take ownership of this instance. Your component becomes responsible for proper disposal according to Rule #7.
 
-Any component that transfers ownership of the <xref:System.Buffer.IMemoryOwner%601> instance to a different component should no longer use that instance after the method call completes.
+Any component that transfers ownership of the <xref:System.Buffers.IMemoryOwner%601> instance to a different component should no longer use that instance after the method call completes.
 
 > [!IMPORTANT]
-> If your constructor accepts <xref:System.Buffer.IMemoryOwner%601> as a parameter, it should implement <xref:System.IDisposable>, and your <xref:System.IDisposable.Dispose%2A> method should call <xref:System.Buffer.IMemoryOwner%601.Dispose%2A?displayProperty=nameWithType>.
+> If your constructor accepts <xref:System.Buffers.IMemoryOwner%601> as a parameter, it should implement <xref:System.IDisposable>, and your <xref:System.IDisposable.Dispose%2A> method should call <xref:System.Buffers.IMemoryOwner%601.Dispose%2A?displayProperty=nameWithType>.
 
 **Rule #9: If you're wrapping a synchronous p/invoke method, your API should accept Span\<T> as a parameter.**
 
@@ -339,5 +349,5 @@ private class MyCompletedCallbackState
 ## See also
 
 - <xref:System.Memory%601?displayProperty=nameWithType>
-- <xref:System.Buffers.IMemoryOwner~601?displayProperty=nameWithType>
+- <xref:System.Buffers.IMemoryOwner%601?displayProperty=nameWithType>
 - <xref:System.Span%601?displayProperty=nameWithType>

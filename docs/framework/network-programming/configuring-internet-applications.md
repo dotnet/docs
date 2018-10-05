@@ -31,7 +31,7 @@ The [\<system.Net> Element (Network Settings)](../../../docs/framework/configure
   
  It is important to note that the Microsoft Internet Explorer settings are combined with the configuration settings, with the latter taking precedence.  
   
- The following example sets the default proxy server address to http://proxyserver, indicates that the proxy should not be used for local addresses, and specifies that all requests to servers located in the contoso.com domain should bypass the proxy.  
+ The following example sets the default proxy server address to `http://proxyserver`, indicates that the proxy should not be used for local addresses, and specifies that all requests to servers located in the contoso.com domain should bypass the proxy.  
   
 ```xml  
 <configuration>  

@@ -137,5 +137,5 @@ CMyClass::MethodThatThrows
  Exception fields, such as **Message**, **Source**, and **StackTrace** are not available for the **StackOverflowException**.  
   
 ## See Also  
- [Advanced COM Interoperability](https://msdn.microsoft.com/library/3ada36e5-2390-4d70-b490-6ad8de92f2fb(v=vs.100))  
+ [Advanced COM Interoperability](/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))  
  [Exceptions](../../standard/exceptions/index.md)

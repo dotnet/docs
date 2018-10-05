@@ -77,8 +77,6 @@ The following table might help you decide how to set these options.
 | Automatically kill containers on solution close | On | Docker Compose | Turn this off if you would like containers for your solution to continue to run after closing the solution or closing Visual Studio. |
 | Do not prompt for trusting localhost SSL certificate | Off | All projects | When off, Visual Studio will prompt you about trusting the SSL certificate even after the SSL certificate has been trusted earlier. |
 
-The first three settings only apply to solutions that use Docker Compose.
-
 **More information:** For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:
 
 Build, debug, update, and refresh apps in a local Docker container: [https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh/](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)

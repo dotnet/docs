@@ -70,12 +70,14 @@ Figure 4-30: Docker Tools Options
 
 The following table might help you decide how to set these options.
 
-| Name | Default Setting | Description |
-| -----|:---------------:| ----------- |
-| Automatically pull required Docker images on project load | On | For increased performance, when loading projects, Visual Studio will start a Docker pull operation in the background so that when you are ready to run your code, the image is already downloaded or in the process of downloading. If you're just loading projects and browsing code, you can turn this off to avoid downloading container images you don't need. |
-| Automatically start containers in background | On | Again for increased performance, Visual Studio creates a container with volume mounts ready for when you build and run your container. If you want to control when your container is created, turn this off. |
-| Automatically kill containers on solution close | On | Turn this off if you would like containers for your solution to continue to run after closing the solution or closing Visual Studio. |
-| Do not prompt for trusting localhost SSL certificate | Off | Visual Studio will continue to prompt for new projects even after the SSL certificate has been trusted for an earlier project. You can set this checkbox to avoid getting the prompt when you open other projects. |
+| Name | Default Setting | Applies To | Description |
+| -----|:---------------:|:----------:| ----------- |
+| Automatically pull required Docker images on project load | On | Docker Compose | For increased performance, when loading projects, Visual Studio will start a Docker pull operation in the background so that when you are ready to run your code, the image is already downloaded or in the process of downloading. If you're just loading projects and browsing code, you can turn this off to avoid downloading container images you don't need. |
+| Automatically start containers in background | On | Docker Compose | Again for increased performance, Visual Studio creates a container with volume mounts ready for when you build and run your container. If you want to control when your container is created, turn this off. |
+| Automatically kill containers on solution close | On | Docker Compose | Turn this off if you would like containers for your solution to continue to run after closing the solution or closing Visual Studio. |
+| Do not prompt for trusting localhost SSL certificate | Off | All projects | When off, Visual Studio will prompt you about trusting the SSL certificate even after the SSL certificate has been trusted earlier. |
+
+The first three settings only apply to solutions that use Docker Compose.
 
 **More information:** For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:
 

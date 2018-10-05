@@ -22,13 +22,13 @@ Starting with .NET Core 2.1, .NET includes a number of interrelated types that r
 
 - <xref:System.ReadOnlyMemory%601?displayProperty=nameWithtype>, an immutable version of the <xref:System.Memory%601> structure.
 
-- <xref:System.Buffers.MemoryPool%601?displayProperty=nameWithType>, which allocates strongly-typed blocks of memory from a memory pool to an owner. <xref:System.Buffers.IMemoryOwner%601> instances can be rented from the pool by calling <xref:System.Buffers.MemoryPool<%601.Rent?displayProperty=nameWithType> and released back to the pool by calling <xref:System.Buffers.MemoryPool%601.Dispose?displayProperty=nameWithType>.
+- <xref:System.Buffers.MemoryPool%601?displayProperty=nameWithType>, which allocates strongly-typed blocks of memory from a memory pool to an owner. <xref:System.Buffers.IMemoryOwner%601> instances can be rented from the pool by calling <xref:System.Buffers.MemoryPool%601.Rent?displayProperty=nameWithType> and released back to the pool by calling <xref:System.Buffers.MemoryPool%601.Dispose?displayProperty=nameWithType>.
 
 - <xref:System.Buffers.IMemoryOwner%601?displayProperty=nameWithType>, which represents the owner of a block of memory and controls its lifetime management. 
 
 - <xref:System.Buffers.MemoryManager%601>, an abstract base class that can be used to replace the implementation of <xref:System.Memory%601> so that <xref:System.Memory%601> can be backed by additional types, such as safe handles. <xref:System.Buffers.MemoryManager%601> is intended for advanced scenarios.
 
-- <xref:System.Buffers.ArraySegment%601>, a wrapper for a particular number of array elements starting at a particular index.
+- <xref:System.ArraySegment%601>, a wrapper for a particular number of array elements starting at a particular index.
 
 - <xref:System.MemoryExtensions?displayProperty=nameWithType>, a collection of extension methods for converting strings, arrays, and array segments to <xref:System.Memory%601> blocks.
 

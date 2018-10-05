@@ -2,8 +2,8 @@
 title: "Memory&lt;T&gt; and Span&lt;T&gt; usage guidelines"
 ms.date: "10/01/2018"
 helpviewer_keywords: 
-  - "Memory\<T> and Span\<T> best practices"
-  - "using Memory\<T> and Span\<T>"
+  - "Memory&lt;T&gt; and Span&lt;T&gt; best practices"
+  - "using Memory&lt;T&gt; and Span&lt;T&gt;"
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
@@ -84,7 +84,7 @@ Although the `WriteInt32ToBuffer` method is intended to write a value to the buf
 
 ### "Ownerless" Memory\<T> instances
 
-You can create a <xref:System.Memory%601> instance without using <xref:System..Buffers.IMemoryOwner%601>. In this case, ownership of the buffer is implicit rather than explicit, and only the single-owner model is supported. You can do this by:
+You can create a <xref:System.Memory%601> instance without using <xref:System.Buffers.IMemoryOwner%601>. In this case, ownership of the buffer is implicit rather than explicit, and only the single-owner model is supported. You can do this by:
 
 - Calling one of the  <xref:System.Memory%601> constructors directly, passing in a `T[]`, as the following example does.
 
@@ -217,7 +217,7 @@ class Person
 
 **Rule #7: If you have an IMemoryOwner\<T> reference, you must at some point dispose of it or transfer its ownership (but not both).**
 
-Since a <xref:System.Memory%601> instance may be backed by either managed or unmanaged memory, the owner must call <xref:System.Buffers.IMemoryOwner%601.Dispose%2A?displayProperty=nameWithType> when work performed on the <xref:System.Memory%601> instance is complete. Alternatively, the owner may transfer ownership of the <xref:System.Buffers.IMemoryOwner%601> instance to a different component, at which point the acquiring component becomes responsible for calling <xref:System.Buffers.IMemoryOwner%601.Dispose%2A?displayProperty=nameWithType> at the appropriate time (more on this later).
+Since a <xref:System.Memory%601> instance may be backed by either managed or unmanaged memory, the owner must call <xref:System.Buffers.MemoryPool%601.Dispose%2A?displayProperty=nameWithType> when work performed on the <xref:System.Memory%601> instance is complete. Alternatively, the owner may transfer ownership of the <xref:System.Buffers.IMemoryOwner%601> instance to a different component, at which point the acquiring component becomes responsible for calling <xref:System.Buffers.MemoryPool%601.Dispose%2A?displayProperty=nameWithType> at the appropriate time (more on this later).
 
 Failure to call the <xref:System.Buffers.IMemoryOwner%601.Dispose%2A> method may lead to unmanaged memory leaks or other performance degradation.
 

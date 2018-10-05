@@ -115,4 +115,4 @@ An alternative to using patch packages is _pinning_ the packages to a specific v
 
 ## Building packages
 
-The https://github.com/dotnet/source-build repository provides instructions on how to build a source tarball of the .NET Core SDK and all its components. The output of the source-build repository matches the layout described in the first section of this article.
+The [dotnet/source-build](https://github.com/dotnet/source-build) repository provides instructions on how to build a source tarball of the .NET Core SDK and all its components. The output of the source-build repository matches the layout described in the first section of this article.

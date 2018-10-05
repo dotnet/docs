@@ -199,7 +199,7 @@ docker run -it --rm --name aspnetcore_sample aspnetapp
 ```
 
 > [!IMPORTANT]
-> You must navigate to the **container IP address** (as opposed to http://localhost) in your browser directly when using Windows containers. You can get the IP address of your container with the following steps:
+> You must navigate to the **container IP address** (as opposed to `http://localhost`) in your browser directly when using Windows containers. You can get the IP address of your container with the following steps:
 
 * Open up another command prompt.
 * Run `docker ps` to see your running containers. The "aspnetcore_sample" container should be there.

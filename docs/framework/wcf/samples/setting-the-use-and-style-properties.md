@@ -67,7 +67,7 @@ public interface IUseAndStyleCalculator
 }  
 ```  
   
- To see the difference between the different <xref:System.ServiceModel.XmlSerializerFormatAttribute.Use%2A> and <xref:System.ServiceModel.XmlSerializerFormatAttribute.Style%2A> settings, modify them in the service, regenerate the client, run the sample, and examine the c:\logs\message.logs file with the Service Trace Viewer tool. Also observe the impact on the metadata by viewing http://localhost/ServiceModelSamples/service.svc?wsdl. The metadata for services is typically broken up into multiple pages. The main wsdl page contains the WSDL bindings, but view http://localhost/ServiceModelSamples/service.svc?wsdl=wsdl0 to observe the message definitions.  
+ To see the difference between the different <xref:System.ServiceModel.XmlSerializerFormatAttribute.Use%2A> and <xref:System.ServiceModel.XmlSerializerFormatAttribute.Style%2A> settings, modify them in the service, regenerate the client, run the sample, and examine the c:\logs\message.logs file with the Service Trace Viewer tool. Also observe the impact on the metadata by viewing `http://localhost/ServiceModelSamples/service.svc?wsdl`. The metadata for services is typically broken up into multiple pages. The main wsdl page contains the WSDL bindings, but view `http://localhost/ServiceModelSamples/service.svc?wsdl=wsdl0` to observe the message definitions.  
   
 ### To set up, build, and run the sample  
   

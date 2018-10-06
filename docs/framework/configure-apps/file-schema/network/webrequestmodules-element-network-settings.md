@@ -48,7 +48,7 @@ Specifies modules to use to request information from network hosts.
 ## Remarks  
  The `webRequestModules` element registers descendants of the <xref:System.Net.WebRequest> class to handle information requests to network hosts. Web request modules must implement the <xref:System.Net.IWebRequestCreate> interface.  
   
- The .NET Framework includes Web request modules for URIs that begin with http://, https://, and file://. You can override the default modules only by registering a custom module in the configuration file.  
+ The .NET Framework includes Web request modules for URIs that begin with `http://`, `https://`, and `file://`. You can override the default modules only by registering a custom module in the configuration file.  
   
 ## Configuration Files  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  

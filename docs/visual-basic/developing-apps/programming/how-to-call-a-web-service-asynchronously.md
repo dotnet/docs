@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: ff8046f4-f1f2-4d8b-90b7-95e3f7415418
 ---
 # How to: Call a Web Service Asynchronously (Visual Basic)
-This example attaches a handler to a Web service's asynchronous handler event, so that it can retrieve the result of an asynchronous method call. This example used the DemoTemperatureService Web service at http://www.xmethods.net.  
+This example attaches a handler to a Web service's asynchronous handler event, so that it can retrieve the result of an asynchronous method call. This example used the DemoTemperatureService Web service at `http://www.xmethods.net`.  
   
  When you reference a Web service in your project in the Visual Studio Integrated Development Environment (IDE), it is added to the `My.WebServices` object, and the IDE generates a client proxy class to access a specified Web service  
   
@@ -18,7 +18,7 @@ This example attaches a handler to a Web service's asynchronous handler event, s
   
 ### To call a Web service asynchronously  
   
-1.  Reference the DemoTemperatureService Web service at http://www.xmethods.net. The address is  
+1.  Reference the DemoTemperatureService Web service at `http://www.xmethods.net`. The address is  
   
     ```  
     http://www.xmethods.net/sd/2001/DemoTemperatureService.wsdl  

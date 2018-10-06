@@ -17,7 +17,7 @@ The Metadata Publishing Behavior sample demonstrates how to control the metadata
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
- For a service to expose metadata, the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> must be configured on the service. When this behavior is present, you can publish metadata by configuring an endpoint to expose the <xref:System.ServiceModel.Description.IMetadataExchange> contract as an implementation of a WS-MetadataExchange (MEX) protocol. As a convenience, this contract has been given the abbreviated configuration name of "IMetadataExchange". This sample uses the `mexHttpBinding`, which is a convenience standard binding that is equivalent to the `wsHttpBinding` with the security mode set to `None`. A relative address of "mex" is used in the endpoint, which when resolved against the services base address results in an endpoint address of http://localhost/servicemodelsamples/service.svc/mex. The following shows the behavior configuration:  
+ For a service to expose metadata, the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> must be configured on the service. When this behavior is present, you can publish metadata by configuring an endpoint to expose the <xref:System.ServiceModel.Description.IMetadataExchange> contract as an implementation of a WS-MetadataExchange (MEX) protocol. As a convenience, this contract has been given the abbreviated configuration name of "IMetadataExchange". This sample uses the `mexHttpBinding`, which is a convenience standard binding that is equivalent to the `wsHttpBinding` with the security mode set to `None`. A relative address of "mex" is used in the endpoint, which when resolved against the services base address results in an endpoint address of `http://localhost/servicemodelsamples/service.svc/mex`. The following shows the behavior configuration:  
   
 ```xml  
 <behaviors>  
@@ -49,7 +49,7 @@ The Metadata Publishing Behavior sample demonstrates how to control the metadata
           contract="IMetadataExchange" />  
 ```  
   
- This sample sets the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> property to `true`, which also exposes the service's metadata using HTTP GET. To enable an HTTP GET metadata endpoint, the service must have an HTTP base address. The query string `?wsdl` is used on the base address of the service to access the metadata. For example, to see the WSDL for the service in a Web browser you would use the address http://localhost/servicemodelsamples/service.svc?wsdl. Alternatively, you can use this behavior to expose metadata over HTTPS by setting <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A> to `true`. This requires an HTTPS base address.  
+ This sample sets the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> property to `true`, which also exposes the service's metadata using HTTP GET. To enable an HTTP GET metadata endpoint, the service must have an HTTP base address. The query string `?wsdl` is used on the base address of the service to access the metadata. For example, to see the WSDL for the service in a Web browser you would use the address `http://localhost/servicemodelsamples/service.svc?wsdl`. Alternatively, you can use this behavior to expose metadata over HTTPS by setting <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A> to `true`. This requires an HTTPS base address.  
   
  To access the service's MEX endpoint use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
@@ -57,7 +57,7 @@ The Metadata Publishing Behavior sample demonstrates how to control the metadata
   
  This generates a client based on the service's metadata.  
   
- To access the service's metadata using HTTP GET, point your browser to http://localhost/servicemodelsamples/service.svc?wsdl.  
+ To access the service's metadata using HTTP GET, point your browser to `http://localhost/servicemodelsamples/service.svc?wsdl`.  
   
  If you remove this behavior and try to open the service you get an exception. This error occurs because without the behavior, the endpoint configured with the `IMetadataExchange` contract has no implementation.  
   

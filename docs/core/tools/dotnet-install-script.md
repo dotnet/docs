@@ -27,8 +27,8 @@ The `dotnet-install` scripts are used to perform a non-admin installation of the
 
 We recommend that you use the stable version that is hosted on [.NET Core main website](https://dot.net). The direct paths to the scripts are:
 
-* https://dot.net/v1/dotnet-install.sh (bash, UNIX)
-* https://dot.net/v1/dotnet-install.ps1 (Powershell, Windows)
+* <https://dot.net/v1/dotnet-install.sh> (bash, UNIX)
+* <https://dot.net/v1/dotnet-install.ps1> (Powershell, Windows)
 
 The main usefulness of these scripts is in automation scenarios and non-admin installations. There are two scripts: One is a PowerShell script that works on Windows. The other script is a bash script that works on Linux/macOS. Both scripts have the same behavior. The bash script also reads PowerShell switches, so you can use PowerShell switches with the script on Linux/macOS systems.
 

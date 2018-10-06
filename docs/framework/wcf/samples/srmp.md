@@ -60,7 +60,7 @@ This sample demonstrates how to perform transacted queued communication by using
       <netMsmqBinding>  
         <binding name="srmpBinding"  
                  queueTransferProtocol="Srmp">  
-          <security mode="None"></security>  
+          <security mode="None" />  
         </binding>  
       </netMsmqBinding>  
     </bindings>  

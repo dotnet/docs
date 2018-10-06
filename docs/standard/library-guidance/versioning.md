@@ -19,7 +19,7 @@ A .NET library has many ways to specify a version. These versions are the most i
 
 ### NuGet package version
 
-The [NuGet package version](/nuget/reference/package-versioning) is displayed on NuGet.org, the Visual Studio NuGet package manager, and is added to source code when the packaged is used. The NuGet package version is the version number users will commonly see, and they'll refer to it when they talk about the version of a library they're using. The NuGet package version is used by NuGet and has no effect on runtime behavior.
+The [NuGet package version](/nuget/reference/package-versioning) is displayed on NuGet.org, the Visual Studio NuGet package manager, and is added to source code when the package is used. The NuGet package version is the version number users will commonly see, and they'll refer to it when they talk about the version of a library they're using. The NuGet package version is used by NuGet and has no effect on runtime behavior.
 
 ```xml
 <PackageVersion>1.0.0-alpha1</PackageVersion>

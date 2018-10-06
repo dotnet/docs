@@ -34,7 +34,7 @@ The older way of creating a NuGet package is with a `*.nuspec` file and the `nug
 
 **✔️ CONSIDER** setting up SourceLink to add source control metadata to your assemblies and NuGet package.
 
-## Package dependences
+## Package dependencies
 
 NuGet package dependencies are covered in detail in the [Dependencies](./dependencies.md) article.
 

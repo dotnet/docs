@@ -11,7 +11,7 @@ This sample demonstrates how to define a <<!--zz xref:System.ServiceModel.WsHttp
   
  The following code demonstrates how to define a binding imperatively in code.  
   
-```  
+```csharp
 public static void Main()  
 {  
     WSHttpBinding binding = new WSHttpBinding();  
@@ -46,7 +46,7 @@ public static void Main()
   
  The client creates a channel to communicate with the service as shown in the following sample code.  
   
-```  
+```csharp
 WSHttpBinding binding = new WSHttpBinding();  
 binding.Name = "binding1";  
 binding.HostNameComparisonMode = HostNameComparisonMode.StrongWildcard;  

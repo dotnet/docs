@@ -464,6 +464,9 @@ namespace OcelotApiGw
                     };
                 });
             //...
+        }
+    }
+}
 ```
 
 Then, you also need to set authorization with the [Authorize] attribute on any resource to be accessed like the microservices, such as in the following Basket microservice controller.

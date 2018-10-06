@@ -153,7 +153,7 @@ public class Sample
  discount.xsl  
   
 ```xml  
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
+<xsl:stylesheet version="1.0" xmlns:xsl="https://www.w3.org/1999/XSL/Transform">  
   <xsl:param name="discount"/>  
   <xsl:template match="/">  
     <order>  
@@ -319,7 +319,7 @@ public class Sample
  circle.xsl  
   
 ```xml  
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
+<xsl:stylesheet version="1.0" xmlns:xsl="https://www.w3.org/1999/XSL/Transform"  
     xmlns:myObj="urn:myObj">  
   
   <xsl:template match="data">  

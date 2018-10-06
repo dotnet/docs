@@ -198,7 +198,7 @@ public class GameBoard {
   
      Note that a XAML node stream might contain an Items property with items that turn out to not be parseable based on the backing type resolution and XAML schema context. For example,  
   
--   **XML-defined members:** The XML-defined `xml:base`, `xml:lang` and `xml:space` members are reported as XAML directives named `base`, `lang`, and `space` in the .NET Framework XAML Services implementations. The namespace for these is the XML namespace `http://www.w3.org/XML/1998/namespace`. Constants for each of these can be obtained from <xref:System.Xaml.XamlLanguage>.  
+-   **XML-defined members:** The XML-defined `xml:base`, `xml:lang` and `xml:space` members are reported as XAML directives named `base`, `lang`, and `space` in the .NET Framework XAML Services implementations. The namespace for these is the XML namespace `https://www.w3.org/XML/1998/namespace`. Constants for each of these can be obtained from <xref:System.Xaml.XamlLanguage>.  
   
 ## Node Order  
  In some cases, <xref:System.Xaml.XamlXmlReader> changes the order of XAML nodes in the XAML node stream, versus the order the nodes appear if viewed in the markup or if processed as XML. This is done in order to order the nodes such that a <xref:System.Xaml.XamlObjectWriter> can process the node stream in a forward-only manner.  In .NET Framework XAML Services, the XAML reader reorders nodes rather than leaving this task to the XAML writer, as a performance optimization for XAML object writer consumers of the node stream.  

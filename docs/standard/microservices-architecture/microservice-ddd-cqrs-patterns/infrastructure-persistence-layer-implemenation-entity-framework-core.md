@@ -33,7 +33,7 @@ Since an introduction to EF Core is already available in Microsoft documentation
 
 ## Infrastructure in Entity Framework Core from a DDD perspective
 
-From a DDD point of view, an important capability of EF is the ability to use POCO domain entities, also known in EF terminology as POCO *code-first entities*. If you use POCO domain entities, your domain model classes are persistence-ignorant, following the [Persistence Ignorance](http://deviq.com/persistence-ignorance/) and the [Infrastructure Ignorance](https://ayende.com/blog/3137/infrastructure-ignorance) principles.
+From a DDD point of view, an important capability of EF is the ability to use POCO domain entities, also known in EF terminology as POCO *code-first entities*. If you use POCO domain entities, your domain model classes are persistence-ignorant, following the [Persistence Ignorance](https://deviq.com/persistence-ignorance/) and the [Infrastructure Ignorance](https://ayende.com/blog/3137/infrastructure-ignorance) principles.
 
 Per DDD patterns, you should encapsulate domain behavior and rules within the entity class itself, so it can control invariants, validations, and rules when accessing any collection. Therefore, it is not a good practice in DDD to allow public access to collections of child entities or value objects. Instead, you want to expose methods that control how and when your fields and property collections can be updated, and what behavior and actions should occur when that happens.
 
@@ -461,7 +461,7 @@ Although we don't recommended to return IQueryable from a repository, it’s per
     [*https://docs.microsoft.com/ef/core/modeling/shadow-properties*](https://docs.microsoft.com/ef/core/modeling/shadow-properties)
 
 -   **The Specification pattern**
-    [*http://deviq.com/specification-pattern/*](http://deviq.com/specification-pattern/)
+    [*https://deviq.com/specification-pattern/*](https://deviq.com/specification-pattern/)
     
 
 >[!div class="step-by-step"]

@@ -18,7 +18,7 @@ ms.author: "mairaw"
  The <xref:System.Xml.Xsl.XslTransform> object in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] only supports the XSLT 1.0 specification, defined with the following namespace:  
   
 ```xml  
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">    
+<xsl:stylesheet xmlns:xsl="https://www.w3.org/1999/XSL/Transform" version="1.0">    
 ```  
   
  The style sheet can be loaded, using the <xref:System.Xml.Xsl.XslTransform.Load%2A> method, from one of the following classes:  
@@ -189,7 +189,7 @@ Root node is book.
  print_root.xsl  
   
 ```xml  
-<stylesheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
+<stylesheet version="1.0" xmlns="https://www.w3.org/1999/XSL/Transform" >  
   <output method="text" />   
   <template match="/">  
      Root node is  <value-of select="local-name(//*[position() = 1])" />   

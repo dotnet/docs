@@ -30,7 +30,7 @@ The <xref:System.Xml.Schema.XmlSchemaValidator> class provides an efficient, hig
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.contoso.com/books" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.contoso.com/books" xmlns:xs="https://www.w3.org/2001/XMLSchema">  
     <xs:element name="bookstore">  
         <xs:complexType>  
             <xs:sequence>  
@@ -119,7 +119,7 @@ validator.ValidateEndElement(null);
   
  The example takes the following XML schema as input.  
   
- `<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">`  
+ `<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema">`  
   
  `<xs:element name="orderNumber" type="xs:int" />`  
   
@@ -333,7 +333,7 @@ validator.ValidateEndElement(null);
   
  The example takes the following XML as input.  
   
- `<xs:schema xmlns:xs="http://www.w3c.org/2001/XMLSchema">`  
+ `<xs:schema xmlns:xs="https://www.w3c.org/2001/XMLSchema">`  
   
  `<xs:element name="book">`  
   

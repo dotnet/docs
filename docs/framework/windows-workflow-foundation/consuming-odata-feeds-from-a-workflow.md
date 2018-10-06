@@ -10,7 +10,7 @@ WCF Data Services is a component of the [!INCLUDE[dnprdnshort](../../../includes
 
 ## Using the Sample Northwind OData Service
 
-The examples in this topic use the sample Northwind data service located at [http://services.odata.org/Northwind/Northwind.svc/](https://go.microsoft.com/fwlink/?LinkID=187426). This service is provided as part of the [OData SDK](https://go.microsoft.com/fwlink/?LinkID=185248) and provides read-only access to the sample Northwind database. If write access is desired, or if a local WCF Data Service is desired, you can follow the steps of the [WCF Data Services Quickstart](https://go.microsoft.com/fwlink/?LinkID=131076) to create a local OData service that provides access to the Northwind database. If you follow the quickstart, substitute the local URI for the one provided in the example code in this topic.
+The examples in this topic use the sample Northwind data service located at [https://services.odata.org/Northwind/Northwind.svc/](https://go.microsoft.com/fwlink/?LinkID=187426). This service is provided as part of the [OData SDK](https://go.microsoft.com/fwlink/?LinkID=185248) and provides read-only access to the sample Northwind database. If write access is desired, or if a local WCF Data Service is desired, you can follow the steps of the [WCF Data Services Quickstart](https://go.microsoft.com/fwlink/?LinkID=131076) to create a local OData service that provides access to the Northwind database. If you follow the quickstart, substitute the local URI for the one provided in the example code in this topic.
 
 ## Consuming an OData Feed Using the Client Libraries
 
@@ -129,16 +129,16 @@ Raw data returned:
 
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>*
 <feed
-xml:base="http://services.odata.org/Northwind/Northwind.svc/"
+xml:base="https://services.odata.org/Northwind/Northwind.svc/"
 xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
 xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
-xmlns="http://www.w3.org/2005/Atom">
+xmlns="https://www.w3.org/2005/Atom">
 <title type="text">Orders\</title>
-<id>http://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')/Orders\</id>
+<id>https://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')/Orders\</id>
 <updated>2010-05-19T19:37:07Z\</updated>
 <link rel="self" title="Orders" href="Orders" />
 <entry>
-<id>http://services.odata.org/Northwind/Northwind.svc/Orders(10643)\</id>
+<id>https://services.odata.org/Northwind/Northwind.svc/Orders(10643)\</id>
 <title type="text">\</title>
 <updated>2010-05-19T19:37:07Z\</updated>
 <author>

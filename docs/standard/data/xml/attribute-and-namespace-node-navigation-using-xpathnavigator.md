@@ -28,7 +28,7 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides two sets of navigation
 >  When the <xref:System.Xml.XPath.XPathNavigator> object is positioned on an attribute or namespace node, the <xref:System.Xml.XPath.XPathNavigator.MoveToChild%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToFirst%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToFirstChild%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToFollowing%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToNext%2A> and <xref:System.Xml.XPath.XPathNavigator.MoveToPrevious%2A> methods always return `false`, and have no effect on the position of the <xref:System.Xml.XPath.XPathNavigator>. The exceptions are the <xref:System.Xml.XPath.XPathNavigator.MoveTo%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToParent%2A>, and <xref:System.Xml.XPath.XPathNavigator.MoveToRoot%2A> methods.  
   
 ## Namespace Node Navigation  
- Each element has an associated set of namespace nodes, one for each distinct namespace prefix that is bound to a namespace URI in scope for the element (including the XML prefix bound to the `http://www.w3.org/XML/1998/namespace` namespace, which is implicitly declared in every XML document) and one for the default namespace if one is in scope for the element. The element is the parent of each of these namespace nodes; however, a namespace node is not a child of its parent element.  
+ Each element has an associated set of namespace nodes, one for each distinct namespace prefix that is bound to a namespace URI in scope for the element (including the XML prefix bound to the `https://www.w3.org/XML/1998/namespace` namespace, which is implicitly declared in every XML document) and one for the default namespace if one is in scope for the element. The element is the parent of each of these namespace nodes; however, a namespace node is not a child of its parent element.  
   
  As with attributes, the <xref:System.Xml.XPath.XPathNavigator.MoveToPrevious%2A> and <xref:System.Xml.XPath.XPathNavigator.MoveToNext%2A> methods are not used to navigate from an element to a namespace node, or between namespace nodes. Instead, namespace nodes have distinct methods of navigation.  
   
@@ -40,7 +40,7 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides two sets of navigation
   
 -   <xref:System.Xml.XPath.XPathNavigator.MoveToNextNamespace%2A>  
   
- There is always at least one namespace node in scope for any element in an XML document. This is the namespace node with the prefix `xml` and namespace URI `http://www.w3.org/XML/1998/namespace`. To retrieve a namespace URI in scope given a particular prefix, use the <xref:System.Xml.XPath.XPathNavigator.GetNamespace%2A> method. To move the <xref:System.Xml.XPath.XPathNavigator> object to a particular namespace node, use the <xref:System.Xml.XPath.XPathNavigator.MoveToNamespace%2A> method. You can also iterate over each namespace node in scope for an element by using the <xref:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace%2A> method followed by multiple calls to the <xref:System.Xml.XPath.XPathNavigator.MoveToNextNamespace%2A> method.  
+ There is always at least one namespace node in scope for any element in an XML document. This is the namespace node with the prefix `xml` and namespace URI `https://www.w3.org/XML/1998/namespace`. To retrieve a namespace URI in scope given a particular prefix, use the <xref:System.Xml.XPath.XPathNavigator.GetNamespace%2A> method. To move the <xref:System.Xml.XPath.XPathNavigator> object to a particular namespace node, use the <xref:System.Xml.XPath.XPathNavigator.MoveToNamespace%2A> method. You can also iterate over each namespace node in scope for an element by using the <xref:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace%2A> method followed by multiple calls to the <xref:System.Xml.XPath.XPathNavigator.MoveToNextNamespace%2A> method.  
   
 > [!NOTE]
 >  When the <xref:System.Xml.XPath.XPathNavigator> object is positioned on an attribute or namespace node, the <xref:System.Xml.XPath.XPathNavigator.MoveToChild%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToFirst%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToFirstChild%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToFollowing%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToNext%2A> and <xref:System.Xml.XPath.XPathNavigator.MoveToPrevious%2A> methods always return `false`, and have no effect on the position of the <xref:System.Xml.XPath.XPathNavigator>. The exceptions are the <xref:System.Xml.XPath.XPathNavigator.MoveTo%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToParent%2A>, and <xref:System.Xml.XPath.XPathNavigator.MoveToRoot%2A> methods.  
@@ -60,11 +60,11 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides two sets of navigation
   
  The namespace sequence (the namespace the <xref:System.Xml.XPath.XPathNavigator> is positioned upon after calling the <xref:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace%2A> method followed by a series of calls to the <xref:System.Xml.XPath.XPathNavigator.MoveToNextNamespace%2A> method) is as follows.  
   
--   When positioned on `element2`: `xmlns:books="http://www.contoso.com/books"`, `xmlns="http://www.contoso.com"`, and `xmlns:xml="http://www.w3.org/XML/1998/namespace"`.  
+-   When positioned on `element2`: `xmlns:books="http://www.contoso.com/books"`, `xmlns="http://www.contoso.com"`, and `xmlns:xml="https://www.w3.org/XML/1998/namespace"`.  
   
--   When positioned on `element1`: `xmlns:books="http://www.contoso.com/books"`, `xmlns="http://www.contoso.com"`, and `xmlns:xml="http://www.w3.org/XML/1998/namespace"`.  
+-   When positioned on `element1`: `xmlns:books="http://www.contoso.com/books"`, `xmlns="http://www.contoso.com"`, and `xmlns:xml="https://www.w3.org/XML/1998/namespace"`.  
   
--   When positioned on `root`: `xmlns:xml="http://www.w3.org/XML/1998/namespace".`  
+-   When positioned on `root`: `xmlns:xml="https://www.w3.org/XML/1998/namespace".`  
   
 > [!NOTE]
 >  The <xref:System.Xml.XPath.XPathNavigator> class returns namespace nodes in reverse document order. Therefore, <xref:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace%2A> essentially moves to the last namespace node in the current scope.  
@@ -81,7 +81,7 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides two sets of navigation
   
  When positioned on `child2`, the namespace sequence (the namespace the <xref:System.Xml.XPath.XPathNavigator> is positioned upon after calling the <xref:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace%2A> method followed by a series of calls to the <xref:System.Xml.XPath.XPathNavigator.MoveToNextNamespace%2A> method) is as follows.  
   
--   <xref:System.Xml.XPath.XPathNamespaceScope.All>: `xmlns:c="urn:c"`, `xmlns:a="urn:a"`, `xmlns=""`, `xmlns:b="http://www.contoso.com/b"`, `xmlns:a="http://www.contoso.com/a"`, `xmlns="http://www.contoso.com"`, and `xmlns:xml="http://www.w3.org/XML/1998/namespace"`.  
+-   <xref:System.Xml.XPath.XPathNamespaceScope.All>: `xmlns:c="urn:c"`, `xmlns:a="urn:a"`, `xmlns=""`, `xmlns:b="http://www.contoso.com/b"`, `xmlns:a="http://www.contoso.com/a"`, `xmlns="http://www.contoso.com"`, and `xmlns:xml="https://www.w3.org/XML/1998/namespace"`.  
   
 -   <xref:System.Xml.XPath.XPathNamespaceScope.ExcludeXml>: `xmlns:c="urn:c"`, `xmlns:a="urn:a"`, `xmlns=""`, `xmlns:b="http://www.contoso.com/b"`, `xmlns:a="http://www.contoso.com/a"`, and `xmlns="http://www.contoso.com"`.  
   

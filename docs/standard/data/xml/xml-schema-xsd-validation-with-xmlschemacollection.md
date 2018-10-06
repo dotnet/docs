@@ -18,7 +18,7 @@ You can use the <xref:System.Xml.Schema.XmlSchemaCollection> to validate an XML 
  The following example shows the root element of a data file.  
   
 ```xml  
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema"  
     xmlns="urn:bookstore-schema"  
     elementFormDefault="qualified"  
     targetNamespace="urn:bookstore-schema">  
@@ -132,7 +132,7 @@ namespace ValidationSample
  The following outlines the contents of the XML Schema file, HeadCount.xsd, to be validated against.  
   
 ```xml  
-<xs:schema xmlns="xsdHeadCount" targetNamespace="xsdHeadCount" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
+<xs:schema xmlns="xsdHeadCount" targetNamespace="xsdHeadCount" xmlns:xs="https://www.w3.org/2001/XMLSchema">  
    <xs:element name='HeadCount' type="HEADCOUNT"/>  
    <xs:complexType name="HEADCOUNT">  
       <xs:sequence>  
@@ -181,7 +181,7 @@ while(vr.Read()) {
   
 ```xml  
 <xs:schema   
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"   
+    xmlns:xs="https://www.w3.org/2001/XMLSchema"   
     xmlns:tns="datatypesTest"   
     targetNamespace="datatypesTest"  
     elementFormDefault="qualified">  

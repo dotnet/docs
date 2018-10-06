@@ -88,7 +88,7 @@ public class MyService {
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">  
+<soap:Envelope xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">  
     <soap:Body>  
         <MyLiteralMethodResponse xmlns="http://tempuri.org/">  
             <MyLiteralMethodResult>  
@@ -103,7 +103,7 @@ public class MyService {
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:types="http://tempuri.org/encodedTypes" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">  
+<soap:Envelope xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:types="http://tempuri.org/encodedTypes" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">  
     <soap:Body soap:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">  
         <tns:MyEncodedMethodResponse>  
             <MyEncodedMethodResult href="#id1" />  
@@ -143,7 +143,7 @@ public Order MyLiteralMethod(){
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">  
+<soap:Envelope xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">  
     <soap:Body>  
         <MyLiteralMethodResponse xmlns="http://tempuri.org/">  
             <BookOrder xmlns="http://www.cohowinery.com">  
@@ -186,7 +186,7 @@ Namespace="http://www.microsoft.com")] string ID){
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">  
+<soap:Envelope xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">  
     <soap:Body>  
         <MyLiteralMethod xmlns="http://tempuri.org/">  
             <MyOrderID xmlns="http://www.microsoft.com">string</MyOrderID>  

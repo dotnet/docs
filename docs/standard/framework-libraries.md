@@ -53,4 +53,4 @@ The BCL provides the most foundational types and utility functionality and are t
 
 There are many app-models that can be used with .NET, provided by several companies.
 
-*   [ASP.NET](http://asp.net) - Provides a web framework for building Web sites and services. Supported on Windows, Linux and macOS (depends on ASP.NET version).
+*   [ASP.NET](https://www.asp.net) - Provides a web framework for building Web sites and services. Supported on Windows, Linux and macOS (depends on ASP.NET version).

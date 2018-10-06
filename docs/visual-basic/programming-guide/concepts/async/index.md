@@ -49,7 +49,7 @@ Async Function AccessTheWebAsync() As Task(Of Integer)
   
     ' GetStringAsync returns a Task(Of String). That means that when you await the  
     ' task you'll get a string (urlContents).  
-    Dim getStringTask As Task(Of String) = client.GetStringAsync("http://msdn.microsoft.com")  
+    Dim getStringTask As Task(Of String) = client.GetStringAsync("https://msdn.microsoft.com")  
   
     ' You can do work here that doesn't rely on the string from GetStringAsync.  
     DoIndependentWork()  
@@ -278,7 +278,7 @@ Class MainWindow
   
         ' GetStringAsync returns a Task(Of String). That means that when you await the  
         ' task you'll get a string (urlContents).  
-        Dim getStringTask As Task(Of String) = client.GetStringAsync("http://msdn.microsoft.com")  
+        Dim getStringTask As Task(Of String) = client.GetStringAsync("https://msdn.microsoft.com")  
   
         ' You can do work here that doesn't rely on the string from GetStringAsync.  
         DoIndependentWork()  

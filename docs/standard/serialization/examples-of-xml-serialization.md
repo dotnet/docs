@@ -176,7 +176,7 @@ public class Item
  The serialized class instance might resemble the following, if two items are ordered.  
   
 ```xml  
-<PurchaseOrder xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+<PurchaseOrder xmlns:xsi=https://www.w3.org/2001/XMLSchema-instance xmlns:xsd="https://www.w3.org/2001/XMLSchema">  
     <Items>  
         <Item>  
             <ItemID>aaa111</ItemID>  
@@ -733,7 +733,7 @@ public class Test
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<PurchaseOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.cpandl.com">  
+<PurchaseOrder xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns="http://www.cpandl.com">  
     <ShipTo Name="Teresa Atkinson">  
         <Line1>1 Main St.</Line1>  
         <City>AnyTown</City>  

@@ -29,7 +29,7 @@ This topic describes the XML schema definition (XSD) used by the Microsoft Annot
 ```xml  
 <xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified"  
             blockDefault="#all"  
-            xmlns:xsd="http://www.w3.org/2001/XMLSchema"  
+            xmlns:xsd="https://www.w3.org/2001/XMLSchema"  
             targetNamespace="http://schemas.microsoft.com/windows/annotations/2003/11/core"  
             xmlns:anc="http://schemas.microsoft.com/windows/annotations/2003/11/core">  
   
@@ -181,7 +181,7 @@ This topic describes the XML schema definition (XSD) used by the Microsoft Annot
 ```xml  
 <xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified"  
      blockDefault="#all"  
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema"  
+     xmlns:xsd="https://www.w3.org/2001/XMLSchema"  
      targetNamespace="http://schemas.microsoft.com/windows/annotations/2003/11/base"  
      xmlns:anb="http://schemas.microsoft.com/windows/annotations/2003/11/base"   
      xmlns:anc="http://schemas.microsoft.com/windows/annotations/2003/11/core">  

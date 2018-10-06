@@ -165,7 +165,7 @@ schemaSet.Compile()
 Dim element As XmlSchemaElement = New XmlSchemaElement()  
 schema.Items.Add(element)  
 element.Name = "book"  
-element.SchemaTypeName = New XmlQualifiedName("string", "http://www.w3.org/2001/XMLSchema")  
+element.SchemaTypeName = New XmlQualifiedName("string", "https://www.w3.org/2001/XMLSchema")  
   
 schemaSet.Reprocess(schema)  
 ```  
@@ -178,7 +178,7 @@ schemaSet.Compile();
 XmlSchemaElement element = new XmlSchemaElement();  
 schema.Items.Add(element);  
 element.Name = "book";  
-element.SchemaTypeName = new XmlQualifiedName("string", "http://www.w3.org/2001/XMLSchema");  
+element.SchemaTypeName = new XmlQualifiedName("string", "https://www.w3.org/2001/XMLSchema");  
   
 schemaSet.Reprocess(schema);  
 ```  

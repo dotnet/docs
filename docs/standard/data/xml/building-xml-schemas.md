@@ -64,7 +64,7 @@ The classes in the <xref:System.Xml.Schema?displayProperty=nameWithType> namespa
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<xs:schema xmlns:tns="http://www.tempuri.org" targetNamespace="http://www.tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
+<xs:schema xmlns:tns="http://www.tempuri.org" targetNamespace="http://www.tempuri.org" xmlns:xs="https://www.w3.org/2001/XMLSchema">  
    <xs:element name="Customer">  
       <xs:complexType>  
          <xs:sequence>  

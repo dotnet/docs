@@ -66,7 +66,7 @@ This topic describes how to use the <xref:System.Xml.Schema.XmlSchemaInference> 
   
 ```xml  
 <root xmlns:ex="http://www.contoso.com" xmlns="http://www.tempuri.org">  
-    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.contoso.com">  
+    <xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema" targetNamespace="http://www.contoso.com">  
         <xs:element name="Contoso" type="xs:normalizedString" />  
     </xs:schema>  
     <ex:Contoso>Test</ex:Contoso>  

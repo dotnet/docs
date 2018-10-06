@@ -17,7 +17,7 @@ The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assemb
 -   Copy the XSLT file to your local computer and name it Transform.xsl.  
   
     ```xml  
-    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
+    <xsl:stylesheet version="1.0" xmlns:xsl="https://www.w3.org/1999/XSL/Transform"  
       xmlns:msxsl="urn:schemas-microsoft-com:xslt"  
       xmlns:user="urn:my-scripts">  
       <msxsl:script language="C#" implements-prefix="user">  

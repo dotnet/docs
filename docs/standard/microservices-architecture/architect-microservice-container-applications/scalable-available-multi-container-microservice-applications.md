@@ -43,7 +43,7 @@ Kubernetes
 
 Docker Swarm
 
-![http://rancher.com/wp-content/themes/rancher-2016/assets/images/swarm.png?v=2016-07-10-am](./media/image25.png)
+![https://raw.githubusercontent.com/docker/swarm/master/logo.png](./media/image25.png)
 
 > Docker Swarm lets you cluster and schedule Docker containers. By using Swarm, you can turn a pool of Docker hosts into a single, virtual Docker host. Clients can make API requests to Swarm the same way they do to hosts, meaning that Swarm makes it easy for applications to scale to multiple hosts.
 >

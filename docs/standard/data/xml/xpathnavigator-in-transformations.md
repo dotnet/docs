@@ -21,7 +21,7 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides read-only random acces
 ## test.xsl  
   
 ```xml  
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
+<xsl:stylesheet xmlns:xsl="https://www.w3.org/1999/XSL/Transform"  
                 xmlns:msxsl ="urn:schemas-microsoft-com:xslt"  
                 xmlns:user="http://www.adventure-works.com"  
                 version="1.0">  

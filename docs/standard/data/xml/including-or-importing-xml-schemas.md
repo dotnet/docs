@@ -38,7 +38,7 @@ An XML schema may contain `<xs:import />`, `<xs:include />`, and `<xs:redefine /
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<xs:schema xmlns:tns="http://www.tempuri.org" targetNamespace="http://www.tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
+<xs:schema xmlns:tns="http://www.tempuri.org" targetNamespace="http://www.tempuri.org" xmlns:xs="https://www.w3.org/2001/XMLSchema">  
   <xs:import namespace="http://www.example.com/IPO" />  
   <xs:element name="Customer">  
     <xs:complexType>  
@@ -56,7 +56,7 @@ An XML schema may contain `<xs:import />`, `<xs:include />`, and `<xs:redefine /
     </xs:restriction>  
   </xs:simpleType>  
 </xs:schema>  
-<schema targetNamespace="http://www.example.com/IPO" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ipo="http://www.example.com/IPO">  
+<schema targetNamespace="http://www.example.com/IPO" xmlns="https://www.w3.org/2001/XMLSchema" xmlns:ipo="http://www.example.com/IPO">  
   <annotation>  
     <documentation xml:lang="en">  
       Addresses for International Purchase order schema  

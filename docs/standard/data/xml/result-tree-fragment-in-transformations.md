@@ -38,7 +38,7 @@ A result tree fragment, in concept, behaves like a node set with nothing more th
 To iterate over the returned nodes of a result tree fragment, an <xref:System.Xml.XPath.XPathNavigator> is used. The following code sample shows how to create a result tree fragment within a style sheet by calling the function with a parameter `fragment`, which contains XML.
 
 ```xml
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+<xsl:stylesheet xmlns:xsl="https://www.w3.org/1999/XSL/Transform"
                 xmlns:msxsl="urn:schemas-microsoft-com:xslt"
                 xmlns:user="http://www.adventure-works.com"
                 version="1.0">
@@ -66,7 +66,7 @@ To iterate over the returned nodes of a result tree fragment, an <xref:System.Xm
 Here is another sample showing a variable, which is in Rich Text Format (RTF), and hence, a type of result tree fragment, that is not converted to a node set. Instead, it is passed to a script function, and the <xref:System.Xml.XPath.XPathNavigator> is used to navigate over the nodes.
 
 ```xml
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+<xsl:stylesheet version="1.0" xmlns:xsl="https://www.w3.org/1999/XSL/Transform"
         xmlns:msxsl="urn:schemas-microsoft-com:xslt"
         xmlns:user="urn:books"
         exclude-result-prefixes="msxsl">
@@ -124,7 +124,7 @@ When a fragment is converted to a node set, you no longer use the <xref:System.X
 In the following example, `$var` is a variable that is a node tree in the style sheet. The for-each statement, combined with the `node-set` function, allows the user to iterate over this tree as a node set.
 
 ```xml
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+<xsl:stylesheet xmlns:xsl="https://www.w3.org/1999/XSL/Transform"
                 xmlns:msxsl="urn:schemas-microsoft-com:xslt"
                 xmlns:user="http://www.adventure-works.com"
                 version="1.0">
@@ -144,7 +144,7 @@ In the following example, `$var` is a variable that is a node tree in the style 
 Here is another example of a variable that is in RTF, and hence of type result tree fragment, that is converted to a node set before being passed to a script function as XPathNodeIterator.
 
 ```xml
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+<xsl:stylesheet version="1.0" xmlns:xsl="https://www.w3.org/1999/XSL/Transform"
         xmlns:msxsl="urn:schemas-microsoft-com:xslt"
         xmlns:user="urn:books"
         exclude-result-prefixes="msxsl">

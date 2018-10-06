@@ -28,7 +28,7 @@ The Schema Object Model (SOM) API can be used to read and write XML Schema defin
   
 ```xml  
 <?xml version="1.0"?>  
-<xs:schema id="play" targetNamespace="http://tempuri.org/play.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/play.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
+<xs:schema id="play" targetNamespace="http://tempuri.org/play.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/play.xsd" xmlns:xs="https://www.w3.org/2001/XMLSchema">  
     <xs:element name='myShoeSize'>  
         <xs:complexType>  
             <xs:simpleContent>  

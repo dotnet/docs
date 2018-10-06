@@ -11,7 +11,7 @@ The Fault Contract sample demonstrates how to communicate error information from
   
  The calculator contract has been modified to include a <xref:System.ServiceModel.FaultContractAttribute> as shown in the following sample code.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface ICalculator  
 {  
@@ -29,7 +29,7 @@ public interface ICalculator
   
  The <xref:System.ServiceModel.FaultContractAttribute> attribute indicates that the `Divide` operation may return a fault of type `MathFault`. A fault can be of any type that can be serialized. In this case, the `MathFault` is a data contract, as follows:  
   
-```  
+```csharp
 [DataContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public class MathFault  
 {      
@@ -54,7 +54,7 @@ public class MathFault
   
  The `Divide` method throws a <xref:System.ServiceModel.FaultException%601> exception when a divide by zero exception occurs as shown in the following sample code. This exception results in a fault being sent to the client.  
   
-```  
+```csharp
 public int Divide(int n1, int n2)  
 {  
     try  
@@ -84,7 +84,7 @@ Press <ENTER> to terminate client.
   
  The client does this by catching the appropriate `FaultException<MathFault>` exception:  
   
-```  
+```csharp
 catch (FaultException<MathFault> e)  
 {  
     Console.WriteLine("FaultException<MathFault>: Math fault while doing " + e.Detail.operation + ". Problem: " + e.Detail.problemType);  

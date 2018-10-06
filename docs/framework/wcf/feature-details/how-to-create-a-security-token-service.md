@@ -14,18 +14,18 @@ author: "BrucePerlerMS"
 A security token service implements the protocol defined in the WS-Trust specification. This protocol defines message formats and message exchange patterns for issuing, renewing, canceling, and validating security tokens. A given security token service provides one or more of these capabilities. This topic looks at the most common scenario: implementing token issuance.  
   
 ## Issuing Tokens  
- WS-Trust defines message formats, based on the `RequestSecurityToken` XML Schema definition language (XSD) schema element, and `RequestSecurityTokenResponse` XSD schema element for performing token issuance. In addition, it defines the associated Action Uniform Resource Identifiers (URIs). The action URI associated with the `RequestSecurityToken` message is http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue. The action URI associated with the `RequestSecurityTokenResponse` message is   http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue.  
+ WS-Trust defines message formats, based on the `RequestSecurityToken` XML Schema definition language (XSD) schema element, and `RequestSecurityTokenResponse` XSD schema element for performing token issuance. In addition, it defines the associated Action Uniform Resource Identifiers (URIs). The action URI associated with the `RequestSecurityToken` message is `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue`. The action URI associated with the `RequestSecurityTokenResponse` message is   `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue`.  
   
 ### Request Message Structure  
  The issue request message structure typically consists of the following items:  
   
--   A request type URI with a value of    http://schemas.xmlsoap.org/ws/2005/02/trust/Issue.  
+-   A request type URI with a value of `http://schemas.xmlsoap.org/ws/2005/02/trust/Issue`.
   
--   A token type URI. For Security Assertions Markup Language (SAML) 1.1 tokens, the value of this URI is http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1.  
+-   A token type URI. For Security Assertions Markup Language (SAML) 1.1 tokens, the value of this URI is `http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1`.  
   
 -   A key size value that indicates the number of bits in the key to be associated with the issued token.  
   
--   A key type URI. For symmetric keys, the value of this URI is http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey.  
+-   A key type URI. For symmetric keys, the value of this URI is `http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey`.  
   
  In addition, a couple of other items might be present:  
   

@@ -23,7 +23,7 @@ This sample demonstrates hosting a service that uses Windows Process Activation 
   
  The service implements a contract that defines a request-reply communication pattern. The contract is defined by the `ICalculator` interface, which exposes math operations (Add, Subtract, Multiply, and Divide), as shown in the following sample code.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface ICalculator  
 {  
@@ -40,7 +40,7 @@ public interface ICalculator
   
  The client makes synchronous requests to a given math operation and the service implementation calculates and returns the appropriate result.  
   
-```  
+```csharp
 // Service class that implements the service contract.  
 public class CalculatorService : ICalculator  
 {  
@@ -140,7 +140,7 @@ public class CalculatorService : ICalculator
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  
@@ -149,7 +149,7 @@ Divide(22,7) = 3.14285714285714
 Press <ENTER> to terminate client.  
 ```  
   
-#### To set up, build, and run the sample  
+### To set up, build, and run the sample  
   
 1.  Ensure that [!INCLUDE[iisver](../../../../includes/iisver-md.md)] is installed. [!INCLUDE[iisver](../../../../includes/iisver-md.md)] is required for WAS activation.  
   
@@ -216,5 +216,6 @@ Press <ENTER> to terminate client.
         > [!NOTE]
         >  This command must be typed in as a single line of text.  
   
-## See Also  
- [AppFabric Hosting and Persistence Samples](https://go.microsoft.com/fwlink/?LinkId=193961)
+## See also
+
+- [AppFabric Hosting and Persistence Samples](https://docs.microsoft.com/previous-versions/appfabric/ff383418(v=azure.10))

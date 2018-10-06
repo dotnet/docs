@@ -97,7 +97,7 @@ public DbProviderManifest GetProviderManifest(string manifestToken);
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <xs:schema elementFormDefault="qualified"  
-   xmlns:xs="http://www.w3.org/2001/XMLSchema"  
+   xmlns:xs="https://www.w3.org/2001/XMLSchema"  
    targetNamespace="http://schemas.microsoft.com/ado/2006/04/edm/providermanifest"  
    xmlns:pm="http://schemas.microsoft.com/ado/2006/04/edm/providermanifest">  
   

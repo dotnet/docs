@@ -15,7 +15,7 @@ In an XML Schema definition language (XSD) schema, you can specify constraints (
   
 ```xml  
 <xs:schema id="MyDataSet" xmlns=""   
-            xmlns:xs="http://www.w3.org/2001/XMLSchema"   
+            xmlns:xs="https://www.w3.org/2001/XMLSchema"   
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
   
  <xs:element name="MyDataSet" msdata:IsDataSet="true">  
@@ -83,7 +83,7 @@ In an XML Schema definition language (XSD) schema, you can specify constraints (
   
 ```xml  
 <xs:schema id="MyDataSet" xmlns=""   
-            xmlns:xs="http://www.w3.org/2001/XMLSchema"   
+            xmlns:xs="https://www.w3.org/2001/XMLSchema"   
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
   
  <xs:element name="MyDataSet" msdata:IsDataSet="true">  

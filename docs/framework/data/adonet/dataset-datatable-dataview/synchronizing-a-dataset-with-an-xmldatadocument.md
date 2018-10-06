@@ -110,7 +110,7 @@ This section demonstrates one step in the processing of a purchase order, using 
 ```xml  
 <?xml version="1.0" standalone="yes"?>  
 <xs:schema id="OrderDetail" xmlns=""   
-                            xmlns:xs="http://www.w3.org/2001/XMLSchema"   
+                            xmlns:xs="https://www.w3.org/2001/XMLSchema"   
                             xmlns:codegen="urn:schemas-microsoft-com:xml-msprop"   
                             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
   <xs:element name="OrderDetail" msdata:IsDataSet="true">  

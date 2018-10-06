@@ -17,7 +17,7 @@ In an XML Schema definition language (XSD) schema, the **unique** element specif
   
 ```xml  
 <xs:schema id="SampleDataSet"   
-            xmlns:xs="http://www.w3.org/2001/XMLSchema"   
+            xmlns:xs="https://www.w3.org/2001/XMLSchema"   
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
   <xs:element name="Customers">  
     <xs:complexType>  

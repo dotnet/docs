@@ -33,7 +33,7 @@ ms.assetid: 076606b8-d889-4ba0-b5da-ae577b146f23
   
 ```  
 ?<?xml version="1.0" encoding="utf-16"?>  
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://schemas.microsoft.com/linqtosql/mapping/2007" xmlns="http://schemas.microsoft.com/linqtosql/mapping/2007"  
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema" targetNamespace="http://schemas.microsoft.com/linqtosql/mapping/2007" xmlns="http://schemas.microsoft.com/linqtosql/mapping/2007"  
 elementFormDefault="qualified" >  
   <xs:element name="Database" type="Database" />  
   <xs:complexType name="Database">  

@@ -96,6 +96,6 @@ Windows 8.1 applications and Windows Desktop applications that target the.NET Fr
   
 ## See Also  
  [Metadata and Self-Describing Components](../../../docs/standard/metadata-and-self-describing-components.md)  
- [Inside .NET Native (Channel 9 Video)](http://channel9.msdn.com/Shows/Going+Deep/Inside-NET-Native)  
+ [Inside .NET Native (Channel 9 Video)](https://channel9.msdn.com/Shows/Going+Deep/Inside-NET-Native)  
  [Reflection and .NET Native](../../../docs/framework/net-native/reflection-and-net-native.md)  
  [.NET Native General Troubleshooting](../../../docs/framework/net-native/net-native-general-troubleshooting.md)

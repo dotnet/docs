@@ -21,7 +21,7 @@ sqlmetal /server:myserver /database:northwind /map:externalfile.xml
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<Database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="northwnd">  
+<Database xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="https://www.w3.org/2001/XMLSchema" Name="northwnd">  
   <Table Name="Customers">  
     <Type Name=".Customer">  
       <Column Name="CustomerID" Member="CustomerID" Storage="_CustomerID" DbType="NChar(5) NOT NULL" CanBeNull="False" IsPrimaryKey="True" />  

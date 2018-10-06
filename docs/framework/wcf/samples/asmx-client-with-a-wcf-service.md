@@ -13,7 +13,7 @@ This sample demonstrates how to create a service using Windows Communication Fou
   
  The service implements an `ICalculator` contract as defined in the following code.  
   
-```  
+```csharp  
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples"), XmlSerializerFormat]  
 public interface ICalculator  
 {  
@@ -77,7 +77,7 @@ wsdl /n:Microsoft.ServiceModel.Samples /o:generatedClient.cs /urlkey:CalculatorS
   
  The client implementation constructs an instance of the typed proxy to begin communicating with the service.  
   
-```  
+```csharp
 // Create a client to the CalculatorService.  
 using (CalculatorService client = new CalculatorService())  
 {  

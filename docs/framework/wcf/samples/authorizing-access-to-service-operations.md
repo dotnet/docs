@@ -35,7 +35,7 @@ This sample demonstrates how to use the [\<serviceAuthorization>](../../../../do
   
  The <xref:System.Security.Permissions.PrincipalPermissionAttribute> is applied to each operation to require the caller to be part of the Windows administrators group, as shown in the following sample code.  
   
-```  
+```csharp
 [PrincipalPermission(SecurityAction.Demand,   
                              Role = "Builtin\\Administrators")]  
 public double Add(double n1, double n2)  

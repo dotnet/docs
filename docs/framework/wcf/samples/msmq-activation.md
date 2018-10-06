@@ -85,13 +85,13 @@ public class OrderProcessorService : IOrderProcessor
   
  The Service.svc file itself contains a directive to create the `OrderProcessorService`.  
   
-```xml  
+```svc
 <%@ServiceHost language="c#" Debug="true" Service="Microsoft.ServiceModel.Samples.OrderProcessorService"%>  
 ```  
   
  The Service.svc file also contains an assembly directive to ensure that System.Transactions.dll is loaded.  
   
-```xml  
+```svc  
 <%@Assembly name="System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"%>  
 ```  
   
@@ -264,13 +264,13 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
         > [!NOTE]
         >  This command is a single line of text.  
   
-         This command enables the /servicemodelsamples application to be accessed using `http://localhost/servicemodelsamples` and `net.msmq://localhost/servicemodelsamples`.
+         This command enables the /servicemodelsamples application to be accessed using [http://localhost/servicemodelsamples](http://localhost/servicemodelsamples) and `net.msmq://localhost/servicemodelsamples`.
   
 7.  If you have not done so previously, ensure that the MSMQ activation service is enabled. From the **Start** menu, click **Run**, and type `Services.msc`. Search the list of services for the **Net.Msmq Listener Adapter**. Right-click and select **Properties**. Set the **Startup Type** to **Automatic**, click **Apply** and click the **Start** button. This step must only be done once prior to the first usage of the Net.Msmq Listener Adapter service.  
   
 8.  To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md). Additionally, change the code on the client that submits the purchase order to reflect the computer name in the URI of the queue when submitting the purchase order. Use the following code:  
   
-    ```  
+    ```csharp  
     client.SubmitPurchaseOrder(po, "net.msmq://localhost/private/ServiceModelSamples/OrderStatus");  
     ```  
   

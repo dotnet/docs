@@ -16,7 +16,7 @@ This sample covers the usage of the <xref:System.ServiceModel.Configuration.Conf
 
  The following code adds a custom configuration file to a client application.
 
-```
+```csharp
 ExeConfigurationFileMap fileMap = new ExeConfigurationFileMap();
 fileMap.ExeConfigFilename = "Test.config";
 Configuration newConfiguration = ConfigurationManager.OpenMappedExeConfiguration(fileMap, ConfigurationUserLevel.None);

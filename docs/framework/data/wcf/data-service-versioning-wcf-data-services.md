@@ -38,9 +38,9 @@ The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] enables you 
 ### How to Version a Data Service
  When required, a new data service version is defined by creating a new instance of the service with an updated service contract or data model. This new service is then exposed by using a new URI endpoint, which differentiates it from the previous version. For example:
 
--   Old version: `http://services.odata.org/Northwind/v1/Northwind.svc/`
+-   Old version: `https://services.odata.org/Northwind/v1/Northwind.svc/`
 
--   New version: `http://services.odata.org/Northwind/v2/Northwind.svc/`
+-   New version: `https://services.odata.org/Northwind/v2/Northwind.svc/`
 
  When upgrading a data service, clients will need to also be updated based on the new data service metadata and to use the new root URI. When possible, you should maintain the previous version of the data service to support clients that have not yet been upgraded to use the new version. Older versions of a data service can be removed when they are no longer needed. You should consider maintaining the data service endpoint URI in an external configuration file.
 

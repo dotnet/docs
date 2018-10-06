@@ -27,7 +27,7 @@ Service contracts often need to be created from existing services. In [!INCLUDE[
     elementFormDefault="qualified"
     xmlns="http://tempuri.org/ServiceSchema.xsd"
     xmlns:mstns="http://tempuri.org/ServiceSchema.xsd"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xs="https://www.w3.org/2001/XMLSchema"
 >
   <xs:complexType name="SearchRequest">
     <xs:sequence>

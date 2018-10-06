@@ -24,7 +24,7 @@ OOB releases for core common language runtime (CLR) components are delivered thr
   
 3.  After the download completes, restart Visual Studio.  
   
- For detailed installation instructions, see [Installing NuGet](http://docs.nuget.org/docs/start-here/installing-nuget) on the NuGet Docs website. For more information about NuGet, see the [NuGet documentation](http://docs.nuget.org/).  
+ For detailed installation instructions, see [Installing NuGet](https://docs.nuget.org/docs/start-here/installing-nuget) on the NuGet Docs website. For more information about NuGet, see the [NuGet documentation](https://docs.nuget.org/).  
   
 ## Using a NuGet OOB package  
  After you install NuGet, you can browse and add references to NuGet packages by using Solution Explorer in Visual Studio:  

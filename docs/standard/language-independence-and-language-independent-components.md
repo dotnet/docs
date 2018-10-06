@@ -122,7 +122,7 @@ The .NET Framework is language independent. This means that, as a developer, you
 |Generics|[Generic types and members](#Generics)|A generic type shall redeclare sufficient constraints to guarantee that any constraints on the base type, or interfaces would be satisfied by the generic type constraints.|4444|  
 |Generics|[Generic types and members](#Generics)|Types used as constraints on generic parameters shall themselves be CLS-compliant.|45|  
 |Generics|[Generic types and members](#Generics)|The visibility and accessibility of members (including nested types) in an instantiated generic type shall be considered to be scoped to the specific instantiation rather than the generic type declaration as a whole. Assuming this, the visibility and accessibility rules of CLS rule 12 still apply.|46|  
-|Generics|[Generic types and members](#Generics)|For each abstract or virtual generic method, there shall be a default concrete (non abstract) implementation.|47|  
+|Generics|[Generic types and members](#Generics)|For each abstract or virtual generic method, there shall be a default concrete (non-abstract) implementation.|47|  
 |Interfaces|[Interfaces](#Interfaces)|CLS-compliant interfaces shall not require the definition of non-CLS compliant methods in order to implement them.|18|  
 |Interfaces|[Interfaces](#Interfaces)|CLS-compliant interfaces shall not define static methods, nor shall they define fields.|19|  
 |Members|[Type members in general](#members)|Global static fields and methods are not CLS-compliant.|36|  

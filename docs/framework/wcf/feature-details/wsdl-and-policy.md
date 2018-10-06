@@ -13,7 +13,7 @@ This topic covers Windows Communication Foundation (WCF) WSDL 1.1, WS-Policy and
 |Prefix|Namespace|  
 |------------|---------------|  
 |wsp (WS-Policy 1.2)|http://schemas.xmlsoap.org/ws/2004/09/policy|  
-|wsp (WS-Policy 1.5)|http://www.w3.org/ns/ws-policy|  
+|wsp (WS-Policy 1.5)|https://www.w3.org/ns/ws-policy|  
 |http|http://schemas.microsoft.com/ws/06/2004/policy/http|  
 |msmq|http://schemas.microsoft.com/ws/06/2004/mspolicy/msmq|  
 |msf|http://schemas.microsoft.com/ws/2006/05/framing/policy|  

@@ -91,7 +91,7 @@ The EII for the Root JSON Element has the following characteristics:
 
 - The Data Contract Name Attribute ("\_\_type") as described further. This attribute is can only be present if the JSON type attribute is also present and its [normalized value] is "object". This attribute is used by the `DataContractJsonSerializer` to preserve data contract type information - for example, in polymorphic cases where a derived type is serialized and where a base type is expected. If you are not working with the `DataContractJsonSerializer`, in most cases, this attribute is ignored.
 
-- [in-scope namespaces] contains the binding of "xml" to `http://www.w3.org/XML/1998/namespace` as mandated by the infoset specification.
+- [in-scope namespaces] contains the binding of "xml" to `https://www.w3.org/XML/1998/namespace` as mandated by the infoset specification.
 
 - [children], [attributes] and [in-scope namespaces] must not have any items other than as specified previously and [namespace attributes] must have no members, but do not rely on these facts when reading XML mapped from JSON.
 

@@ -26,9 +26,9 @@ The sample uses the <xref:System.ServiceModel.Syndication.SyndicationFeed> class
                  p3:type="application/xhtml+xml"   
                  xmlns:p3="http://contoso.org/syndication/thread/1.0"   
                  xmlns="http://contoso.org/syndication/thread/1.0">  
-      <anotherElement xmlns="http://www.w3.org/2005/Atom">  
+      <anotherElement xmlns="https://www.w3.org/2005/Atom">  
                      Some more data</anotherElement>  
-      <aDifferentElement xmlns="http://www.w3.org/2005/Atom">  
+      <aDifferentElement xmlns="https://www.w3.org/2005/Atom">  
                      Even more data</aDifferentElement>  
     </in-reply-to>  
 </entry>  

@@ -54,12 +54,12 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
 |Prefix|Namespace URI|  
 |------------|-------------------|  
 |s11|http://schemas.xmlsoap.org/soap/envelope|  
-|wsa|http://www.w3.org/2004/08/addressing|  
+|wsa|https://www.w3.org/2004/08/addressing|  
 |wscoor|http://schemas.xmlsoap.org/ws/2004/10/wscoor|  
 |wsat|http://schemas.xmlsoap.org/ws/2004/10/wsat|  
 |t|http://schemas.xmlsoap.org/ws/2005/02/trust|  
 |o|http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd|  
-|xsd|http://www.w3.org/2001/XMLSchema|  
+|xsd|https://www.w3.org/2001/XMLSchema|  
   
 ## Transaction Manager Bindings  
  R1001: Transaction Managers must use SOAP 1.1 and WS-Addressing 2004/08 for WS-Atomic Transaction and WS-Coordination message exchanges.  
@@ -269,15 +269,15 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
       </wssu:Identifier>  
       </wsc:SecurityContextToken>  
       <!-- supporting signature over the timestamp -->  
-      <wsse:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">  
+      <wsse:Signature xmlns:ds="https://www.w3.org/2000/09/xmldsig#">  
         <ds:SignedInfo>  
-          <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>  
-          <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#hmac-sha1"/>  
+          <ds:CanonicalizationMethod Algorithm="https://www.w3.org/2001/10/xml-exc-c14n#"/>  
+          <ds:SignatureMethod Algorithm="https://www.w3.org/2000/09/xmldsig#hmac-sha1"/>  
           <ds:Reference URI="#_0">  
             <ds:Transforms>  
-              <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>  
+              <ds:Transform Algorithm="https://www.w3.org/2001/10/xml-exc-c14n#"/>  
             </ds:Transforms>  
-            <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>  
+            <ds:DigestMethod Algorithm="https://www.w3.org/2000/09/xmldsig#sha1"/>  
             <ds:DigestValue>  
               alRzyhjLgoUOYoh8cx4n75eTcUk=  
             </ds:DigestValue>  
@@ -389,13 +389,13 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
       </wsse:BinarySecurityToken>  
       <e:EncryptedKey Id="encrypted_key">  
             <!-- ephemeral key encrypted for PA certificate -->    
-        <e:ReferenceList xmlns:e="http://www.w3.org/2001/04/xmlenc#">  
+        <e:ReferenceList xmlns:e="https://www.w3.org/2001/04/xmlenc#">  
           <e:DataReference URI="#encrypted_body"/>  
           <e:DataReference URI="#encrypted_CCi"/>  
           <e:DataReference URI="#encrypted_issuedtokens"/>  
         </e:ReferenceList>  
       </e:EncryptedKey>  
-      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  
+      <Signature xmlns="https://www.w3.org/2000/09/xmldsig#">  
         <!-- signature over Addressing headers, Timestamp, and Body -->  
       </Signature>  
     </wsse:Security>  
@@ -410,8 +410,8 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
   <s:Body wssu:Id="body">  
     <!-- encrypted content of the Body element of the application message -->      
     <e:EncryptedData Id="encrypted_body"   
-           Type="http://www.w3.org/2001/04/xmlenc#Content"   
-           xmlns:e="http://www.w3.org/2001/04/xmlenc#">  
+           Type="https://www.w3.org/2001/04/xmlenc#Content"   
+           xmlns:e="https://www.w3.org/2001/04/xmlenc#">  
 ...  
     </e:EncryptedData>  
   </s:Body>  

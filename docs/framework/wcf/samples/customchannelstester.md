@@ -34,7 +34,7 @@ The `CustomChannelsTester` is a tool that you can use to test your custom channe
   
     ```xml  
     <TestSpec xmlns="http://WCF/TestSpec" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"   
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >  
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" >  
     <ServiceContract>  
     <!-- Test a contract which has oneway / twoway operations. If you set ExpandAll = true, both types of contracts are tested -->    <IsOneWay ExpandAll="true">true</IsOneWay>  
     <!-- Test a contract with Asynchronous / Synchronous Operations-->  

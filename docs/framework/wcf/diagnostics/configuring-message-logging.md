@@ -124,7 +124,7 @@ This topic describes how you can configure message logging for different scenari
     logMessagesAtTransportLevel="true"  
     maxMessagesToLog="420">  
     <filters>  
-        <add nodeQuota="10" xmlns:soap="http://www.w3.org/2003/05/soap-envelope">  
+        <add nodeQuota="10" xmlns:soap="https://www.w3.org/2003/05/soap-envelope">  
                  /soap:Envelope/soap:Header  
         </add>  
      </filters>  

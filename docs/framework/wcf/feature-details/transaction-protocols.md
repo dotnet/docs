@@ -54,7 +54,7 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
 |Prefix|Version|Namespace URI|  
 |------------|-------------|-------------------|  
 |s11||[https://go.microsoft.com/fwlink/?LinkId=96014](https://go.microsoft.com/fwlink/?LinkId=96014)|  
-|wsa|Pre-1.0<br /><br /> 1.0|http://www.w3.org/2004/08/addressing<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96022](https://go.microsoft.com/fwlink/?LinkId=96022)|  
+|wsa|Pre-1.0<br /><br /> 1.0|https://www.w3.org/2004/08/addressing<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96022](https://go.microsoft.com/fwlink/?LinkId=96022)|  
 |wscoor|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96078](https://go.microsoft.com/fwlink/?LinkId=96078)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96079](https://go.microsoft.com/fwlink/?LinkId=96079)|  
 |wsat|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96080](https://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96081](https://go.microsoft.com/fwlink/?LinkId=96081)|  
 |t|Pre-1.3<br /><br /> 1.3|[https://go.microsoft.com/fwlink/?LinkId=96082](https://go.microsoft.com/fwlink/?LinkId=96082)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96100](https://go.microsoft.com/fwlink/?LinkId=96100)|  
@@ -373,15 +373,15 @@ xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
       </wssu:Identifier>  
       </wsc:SecurityContextToken>  
       <!-- supporting signature over the timestamp -->  
-      <wsse:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">  
+      <wsse:Signature xmlns:ds="https://www.w3.org/2000/09/xmldsig#">  
         <ds:SignedInfo>  
-          <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>  
-          <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#hmac-sha1"/>  
+          <ds:CanonicalizationMethod Algorithm="https://www.w3.org/2001/10/xml-exc-c14n#"/>  
+          <ds:SignatureMethod Algorithm="https://www.w3.org/2000/09/xmldsig#hmac-sha1"/>  
           <ds:Reference URI="#_0">  
             <ds:Transforms>  
-              <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>  
+              <ds:Transform Algorithm="https://www.w3.org/2001/10/xml-exc-c14n#"/>  
             </ds:Transforms>  
-            <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>  
+            <ds:DigestMethod Algorithm="https://www.w3.org/2000/09/xmldsig#sha1"/>  
             <ds:DigestValue>  
               alRzyhjLgoUOYoh8cx4n75eTcUk=  
             </ds:DigestValue>  
@@ -433,16 +433,16 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
 </wssu:Identifier>   
 </wsc:SecurityContextToken>   
 <!-- supporting signature over the timestamp -->  
-<wsse:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">  
+<wsse:Signature xmlns:ds="https://www.w3.org/2000/09/xmldsig#">  
 <ds:SignedInfo>   
-<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>   
-<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#hmac-sha1"/>   
+<ds:CanonicalizationMethod Algorithm="https://www.w3.org/2001/10/xml-exc-c14n#"/>   
+<ds:SignatureMethod Algorithm="https://www.w3.org/2000/09/xmldsig#hmac-sha1"/>   
 <ds:Reference URI="#_0">   
 <ds:Transforms>   
-<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>   
+<ds:Transform Algorithm="https://www.w3.org/2001/10/xml-exc-c14n#"/>   
 </ds:Transforms>   
 <ds:DigestMethod  
-Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>   
+Algorithm="https://www.w3.org/2000/09/xmldsig#sha1"/>   
 <ds:DigestValue> alRzyhjLgoUOYoh8cx4n75eTcUk=  
 </ds:DigestValue>   
 </ds:Reference>   
@@ -606,13 +606,13 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
       </wsse:BinarySecurityToken>  
       <e:EncryptedKey Id="encrypted_key">  
             <!-- ephemeral key encrypted for PA certificate -->    
-        <e:ReferenceList xmlns:e="http://www.w3.org/2001/04/xmlenc#">  
+        <e:ReferenceList xmlns:e="https://www.w3.org/2001/04/xmlenc#">  
           <e:DataReference URI="#encrypted_body"/>  
           <e:DataReference URI="#encrypted_CCi"/>  
           <e:DataReference URI="#encrypted_issuedtokens"/>  
         </e:ReferenceList>  
       </e:EncryptedKey>  
-      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  
+      <Signature xmlns="https://www.w3.org/2000/09/xmldsig#">  
         <!-- signature over Addressing headers, Timestamp, and Body -->  
       </Signature>  
     </wsse:Security>  
@@ -627,8 +627,8 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
   <s:Body wssu:Id="body">  
     <!-- encrypted content of the Body element of the application message -->      
     <e:EncryptedData Id="encrypted_body"   
-           Type="http://www.w3.org/2001/04/xmlenc#Content"   
-           xmlns:e="http://www.w3.org/2001/04/xmlenc#">  
+           Type="https://www.w3.org/2001/04/xmlenc#Content"   
+           xmlns:e="https://www.w3.org/2001/04/xmlenc#">  
 ...  
     </e:EncryptedData>  
   </s:Body>  

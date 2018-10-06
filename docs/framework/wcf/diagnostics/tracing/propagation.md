@@ -38,8 +38,8 @@ This topic describes activity propagation in the Windows Communication Foundatio
   
 ```xml  
 <MessageLogTraceRecord>  
-  <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"     
-                      xmlns:a="http://www.w3.org/2005/08/addressing">  
+  <s:Envelope xmlns:s="https://www.w3.org/2003/05/soap-envelope"     
+                      xmlns:a="https://www.w3.org/2005/08/addressing">  
     <s:Header>  
       <a:Action s:mustUnderstand="1">http://Microsoft.ServiceModel.Samples/ICalculator/Subtract  
       </a:Action>  
@@ -51,7 +51,7 @@ This topic describes activity propagation in the Windows Communication Foundatio
         17f59a29-b435-4a15-bf7b-642ffc40eac8  
       </ActivityId>  
       <a:ReplyTo>  
-          <a:Address>http://www.w3.org/2005/08/addressing/anonymous  
+          <a:Address>https://www.w3.org/2005/08/addressing/anonymous  
           </a:Address>  
       </a:ReplyTo>  
       <a:To s:mustUnderstand="1">net.tcp://localhost/servicemodelsamples/service</a:To>  

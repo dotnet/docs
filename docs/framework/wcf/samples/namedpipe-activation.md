@@ -23,7 +23,7 @@ This sample demonstrates hosting a service that uses Windows Process Activation 
   
  The service implements a contract that defines a request-reply communication pattern. The contract is defined by the `ICalculator` interface, which exposes math operations (Add, Subtract, Multiply, and Divide), as shown in the following sample code.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface ICalculator  
 {  
@@ -40,7 +40,7 @@ public interface ICalculator
   
  The client makes synchronous requests to a given math operation and the service implementation calculates and returns the appropriate result.  
   
-```  
+```csharp
 // Service class that implements the service contract.  
 public class CalculatorService : ICalculator  
 {  
@@ -190,7 +190,7 @@ Press <ENTER> to terminate client.
         > [!NOTE]
         >  This command is a single line of text.  
   
-         This command enables the /servicemodelsamples application to be accessed using both `http://localhost/servicemodelsamples` and `net.tcp://localhost/servicemodelsamples`.  
+         This command enables the /servicemodelsamples application to be accessed using both [http://localhost/servicemodelsamples](http://localhost/servicemodelsamples) and `net.tcp://localhost/servicemodelsamples`.  
   
 4.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   

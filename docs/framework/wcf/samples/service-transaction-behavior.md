@@ -13,7 +13,7 @@ This sample demonstrates the use of a client-coordinated transaction and the set
   
  The contract for the service defines that all of the operations require a transaction to be flowed with requests:  
   
-```  
+```csharp
 [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples",  
                     SessionMode = SessionMode.Required)]  
 public interface ICalculator  
@@ -45,7 +45,7 @@ public interface ICalculator
   
  After initiating both a connection to the service and a transaction, the client accesses several service operations within the scope of that transaction and then completes the transaction and closes the connection:  
   
-```  
+```csharp
 // Create a client  
 CalculatorClient client = new CalculatorClient();  
   
@@ -108,7 +108,7 @@ client.Close();
   
  The attributed service implementation is as follows:  
   
-```  
+```csharp
 [ServiceBehavior(  
     TransactionIsolationLevel = System.Transactions.IsolationLevel.Serializable,  
     TransactionTimeout = "00:00:30",  

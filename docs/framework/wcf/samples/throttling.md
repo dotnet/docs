@@ -34,7 +34,7 @@ The Throttling sample demonstrates the use of throttling controls. Throttling co
   
  In order to demonstrate throttling we define a sleep time on the service methods as follows:  
   
-```  
+```csharp
 public double Add(double n1, double n2)  
 {  
     System.Threading.Thread.Sleep(2000);  

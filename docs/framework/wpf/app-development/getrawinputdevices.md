@@ -32,5 +32,5 @@ HRESULT GetRawInputDevices( [out] IEnumRAWINPUTDEVICE **ppEnum );
  Once the list of raw input devices has been retrieved, PresentationHost.exe registers with the devices to receive WM_INPUT notification messages.  
   
 ## See Also  
- [http://msdn.microsoft.com/library/default.asp?url=/library/winui/winui/windowsuserinterface/userinput/rawinput/rawinputreference/rawinputfunctions/getrawinputdevicelist.asp](https://msdn.microsoft.com/library/default.asp?url=/library/winui/winui/windowsuserinterface/userinput/rawinput/rawinputreference/rawinputfunctions/getrawinputdevicelist.asp)  
+ [GetRawInputDeviceList](/windows/desktop/api/winuser/nf-winuser-getrawinputdevicelist)  
  [FilterInputMessage](../../../../docs/framework/wpf/app-development/filterinputmessage.md)

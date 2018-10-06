@@ -23,18 +23,18 @@ The Syndication object model provides rich support for working with extension da
   
 ```xml  
 <?xml version="1.0" encoding="IBM437"?>  
-<feed myAttribute="someValue" xmlns="http://www.w3.org/2005/Atom">  
+<feed myAttribute="someValue" xmlns="https://www.w3.org/2005/Atom">  
   <title type="text"></title>  
   <id>uuid:8f60c7b3-a3c0-4de7-a642-2165d77ce3c1;id=1</id>  
   <updated>2007-09-07T22:15:34Z</updated>  
   <simpleString xmlns="">hello, world!</simpleString>  
   <simpleString xmlns="">another simple string</simpleString>  
-  <DataContractExtension xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.d  
+  <DataContractExtension xmlns:i="https://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.d  
 atacontract.org/2004/07/Microsoft.Syndication.Samples">  
     <Key>X</Key>  
     <Value>4</Value>  
   </DataContractExtension>  
-  <XmlSerializerExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://ww  
+  <XmlSerializerExtension xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://ww  
 w.w3.org/2001/XMLSchema" xmlns="">  
     <Key>Y</Key>  
     <Value>8</Value>  

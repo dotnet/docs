@@ -107,7 +107,7 @@ This topic outlines the basic steps required to create a routing configuration t
      This **MessageFilter** looks for a RoundingCalculator header in the message that contains a value of "rounding". This header is set by the client to indicate that the message should be routed to the roundingCalc service.  
   
     > [!NOTE]
-    > The s12 namespace prefix is defined by default in the namespace table, and represents the namespace `http://www.w3.org/2003/05/soap-envelope`.
+    > The s12 namespace prefix is defined by default in the namespace table, and represents the namespace `https://www.w3.org/2003/05/soap-envelope`.
   
 2.  You must also define filters that look for messages received on the two virtual endpoints. The first virtual endpoint is the "regular/calculator" endpoint. The client can send requests to this endpoint to indicate that the message should be routed to the regularCalc service. The following configuration defines a filter that uses the <xref:System.ServiceModel.Dispatcher.EndpointNameMessageFilter> to determine if the message arrived through an endpoint with the name specified in filterData.  
   

@@ -82,7 +82,7 @@ protected override IEnumerable<SyndicationItem> ReadItems(XmlReader reader, Synd
   
 private IEnumerable<SyndicationItem> DelayReadItems(XmlReader reader, SyndicationFeed feed)  
 {  
-    while (reader.IsStartElement("entry", "http://www.w3.org/2005/Atom"))  
+    while (reader.IsStartElement("entry", "https://www.w3.org/2005/Atom"))  
     {  
         yield return this.ReadItem(reader, feed);  
     }  

@@ -63,9 +63,9 @@ The Web Services Security Protocols provide Web services security mechanisms tha
   
 |Prefix|Namespace|  
 |------------|---------------|  
-|s|http://www.w3.org/2003/05/soap-envelope|  
+|s|https://www.w3.org/2003/05/soap-envelope|  
 |sp|http://schemas.xmlsoap.org/ws/2005/07/securitypolicy|  
-|a|http://www.w3.org/2005/08/addressing|  
+|a|https://www.w3.org/2005/08/addressing|  
 |wsse|TBD – OASIS WSS 1.0 URI|  
 |wsse11|TBD – OASIS WSS 1.1 URI|  
 |wsu|TBD – OASIS WSS 1.0 Utility URI|  
@@ -301,7 +301,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
           </sp:X509Token>  
           <sp:SignedParts>  
             <sp:Header Name='To'   
-Namespace='http://www.w3.org/2005/08/addressing' />   
+Namespace='https://www.w3.org/2005/08/addressing' />   
           </sp:SignedParts>  
         </wsp:Policy>  
       </sp:EndorsingSupportingTokens>  
@@ -398,7 +398,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
           </sp:IssuedToken>  
           <sp:SignedParts>  
             <sp:Header Name='To'   
-Namespace='http://www.w3.org/2005/08/addressing' />   
+Namespace='https://www.w3.org/2005/08/addressing' />   
           </sp:SignedParts>  
         </wsp:Policy>  
       </sp:EndorsingSupportingTokens>  
@@ -490,7 +490,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
           </sp:KerberosToken>  
           <sp:SignedParts>  
             <sp:Header Name='To'   
-Namespace='http://www.w3.org/2005/08/addressing' />   
+Namespace='https://www.w3.org/2005/08/addressing' />   
           </sp:SignedParts>  
         </wsp:Policy>  
       </sp:EndorsingSupportingTokens>  
@@ -580,7 +580,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
           </sp:SpnegoContextToken>  
           <sp:SignedParts>  
             <sp:Header Name='To'   
-Namespace='http://www.w3.org/2005/08/addressing' />   
+Namespace='https://www.w3.org/2005/08/addressing' />   
           </sp:SignedParts>  
         </wsp:Policy>  
       </sp:EndorsingSupportingTokens>  
@@ -2570,13 +2570,13 @@ Token Protection: False
                     <wsp:Policy>  
                       <sp:SignedParts>  
                         <sp:Body />   
-                        <sp:Header Name='To' Namespace='http://www.w3.org/2005/08/addressing' />   
-                        <sp:Header Name='From' Namespace='http://www.w3.org/2005/08/addressing' />   
-                        <sp:Header Name='FaultTo' Namespace='http://www.w3.org/2005/08/addressing' />   
-                        <sp:Header Name='ReplyTo' Namespace='http://www.w3.org/2005/08/addressing' />   
-                        <sp:Header Name='MessageID' Namespace='http://www.w3.org/2005/08/addressing' />   
-                        <sp:Header Name='RelatesTo' Namespace='http://www.w3.org/2005/08/addressing' />   
-                        <sp:Header Name='Action' Namespace='http://www.w3.org/2005/08/addressing' />   
+                        <sp:Header Name='To' Namespace='https://www.w3.org/2005/08/addressing' />   
+                        <sp:Header Name='From' Namespace='https://www.w3.org/2005/08/addressing' />   
+                        <sp:Header Name='FaultTo' Namespace='https://www.w3.org/2005/08/addressing' />   
+                        <sp:Header Name='ReplyTo' Namespace='https://www.w3.org/2005/08/addressing' />   
+                        <sp:Header Name='MessageID' Namespace='https://www.w3.org/2005/08/addressing' />   
+                        <sp:Header Name='RelatesTo' Namespace='https://www.w3.org/2005/08/addressing' />   
+                        <sp:Header Name='Action' Namespace='https://www.w3.org/2005/08/addressing' />   
                       </sp:SignedParts>  
                       <sp:EncryptedParts>  
                         <sp:Body />   

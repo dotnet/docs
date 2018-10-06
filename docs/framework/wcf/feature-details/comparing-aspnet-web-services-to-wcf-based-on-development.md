@@ -515,7 +515,7 @@ public interface IItemService
       contract="IEchoService ">  
       <headers>  
       <dsig:X509Certificate   
-       xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">  
+       xmlns:dsig="https://www.w3.org/2000/09/xmldsig#">  
        ...  
       </dsig:X509Certificate>  
       </headers>  

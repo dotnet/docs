@@ -292,7 +292,7 @@ ApplicationData appData =
 tempDir = appData.TemporaryFolder.Path;
 ```
 
-Meanwhile, your Profiler DLL can do basically the same thing, though it can more easily get to the <xrerf:Windows.Storage.ApplicationData> class by using the [ApplicationData.Current](Windows.Storage.ApplicationData.Current%2A) property.
+Meanwhile, your Profiler DLL can do basically the same thing, though it can more easily get to the <xrerf:Windows.Storage.ApplicationData> class by using the [ApplicationData.Current](xref:Windows.Storage.ApplicationData.Current%2A) property.
 
 **Communicating via events**
 

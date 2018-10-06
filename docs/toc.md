@@ -1118,7 +1118,7 @@
 ### [Taxi fare predictor (regression)](machine-learning/tutorials/taxi-fare.md)
 ### [Iris petals (clustering)](machine-learning/tutorials/iris-clustering.md)
 ## [How-to guides](machine-learning/how-to-guides/index.md)
-### [Probalistic programming with Infer.NET](machine-learning/how-to-guides/matchup-app-infer-net.md)
+### [Probabilistic programming with Infer.NET](machine-learning/how-to-guides/matchup-app-infer-net.md)
 ## [Resources](machine-learning/resources/index.md)
 ### [Machine learning glossary](machine-learning/resources/glossary.md)
 ### [Machine learning basics](machine-learning/resources/basics.md)

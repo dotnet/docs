@@ -121,7 +121,7 @@ To link to an external file, use the full URL as the link.
 
 If a URL appears in a Markdown file, it will be transformed into a clickable link.
 
-- Example: http://www.github.com
+- Example: <http://www.github.com>
 
 ### Links to APIs
 

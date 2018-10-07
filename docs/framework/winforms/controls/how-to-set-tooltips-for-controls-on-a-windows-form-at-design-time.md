@@ -66,7 +66,7 @@ You can set a <xref:System.Windows.Forms.ToolTip> string in code or in the Windo
   
 ### To remove a ToolTip in the designer  
   
-1.  Select the control that will display the ToolTip.  
+1.  Select the control that is displaying the ToolTip.  
   
 2.  In the **Properties** window, set the **ToolTip on ToolTip1** value to an empty string.  
 

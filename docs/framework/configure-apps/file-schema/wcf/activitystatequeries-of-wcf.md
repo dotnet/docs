@@ -17,7 +17,24 @@ Represents a collection of queries that are used to track life cycle changes of 
 ## Syntax  
   
 ```xml  
-<tracking>   <trackingProfile name="Name">       <workflow>          <activityStateQueries>             <activityStateQuery activityName="String" />                <arguments>                   <argument name="String"/>                </arguments>                <states>                   <state name="String"/>                </states>                <variables>                   <variable name="String"/>                </variables>          </activityStateQueries>       </workflow>   </trackingProfile></tracking>  
+<tracking>
+  <trackingProfile name="Name">
+    <workflow>
+      <activityStateQueries>
+        <activityStateQuery activityName="String" />
+        <arguments>
+          <argument name="String"/>
+        </arguments>
+        <states>
+          <state name="String"/>
+        </states>
+        <variables>
+          <variable name="String"/>
+        </variables>
+      </activityStateQueries>
+    </workflow>
+  </trackingProfile>
+</tracking>  
 ```  
   
 ## Attributes and Elements  

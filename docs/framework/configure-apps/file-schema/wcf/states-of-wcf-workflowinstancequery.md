@@ -19,7 +19,19 @@ Represents a collection of subscribed states from the tracked workflow instance 
 ## Syntax  
   
 ```xml
-<tracking>   <trackingProfile name="Name">       <workflow>          <workflowInstanceQueries>             <workflowInstanceQuery>                <states>                   <state name="Name"/>                </states>            </workflowInstanceQuery>         </workflowInstanceQueries>       </workflow>   </trackingProfile></tracking>  
+<tracking>
+  <trackingProfile name="Name">
+    <workflow>
+      <workflowInstanceQueries>
+        <workflowInstanceQuery>
+          <states>
+            <state name="Name"/>
+          </states>
+        </workflowInstanceQuery>
+      </workflowInstanceQueries>
+    </workflow>
+  </trackingProfile>
+</tracking>  
 ```
   
 ## Attributes and Elements  

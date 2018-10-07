@@ -18,7 +18,19 @@ Represents a query that tracks workflow instance life cycle changes such as a st
 ## Syntax  
   
 ```xml
-<tracking>   <trackingProfile name="Name">       <workflow>          <workflowInstanceQueries>             <workflowInstanceQuery>                <states>                   <state name="Name"/>                </states>            </workflowInstanceQuery>         </workflowInstanceQueries>       </workflow>   </trackingProfile></tracking>  
+<tracking>
+  <trackingProfile name="Name">
+    <workflow>
+      <workflowInstanceQueries>
+        <workflowInstanceQuery>
+          <states>
+            <state name="Name"/>
+          </states>
+        </workflowInstanceQuery>
+      </workflowInstanceQueries>
+    </workflow>
+  </trackingProfile>
+</tracking>  
 ```
   
 ## Attributes and Elements  

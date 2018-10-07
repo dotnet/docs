@@ -51,5 +51,7 @@ Example of an image brush applied to the stroke and highlight
  [!code-csharp[OutlineTextControlViewer#OnRender](../../../../samples/snippets/csharp/VS_Snippets_Wpf/OutlineTextControlViewer/CSharp/OutlineTextControl.cs#onrender)]
  [!code-vb[OutlineTextControlViewer#OnRender](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/OutlineTextControlViewer/visualbasic/outlinetextcontrol.vb#onrender)]  
   
+  For the source of the example custom user control object, see ![OutlineTextControl](../../../../samples/snippets/csharp/VS_Snippets_Wpf/OutlineTextControlViewer/CSharp/OutlineTextControl.cs)
+  
 ## See Also  
  [Drawing Formatted Text](../../../../docs/framework/wpf/advanced/drawing-formatted-text.md)

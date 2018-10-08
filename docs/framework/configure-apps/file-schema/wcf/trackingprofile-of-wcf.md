@@ -40,10 +40,10 @@ Represents a configuration section for creating a subscription to workflow track
           <bookmarkResumptionQueries>
             <bookmarkResumptionQuery name="String" />
           </bookmarkResumptionQueries>
-          <cancelRequestQueries>
-            <cancelRequestQuery activityName="String" 
+          <cancelRequestedQueries>
+            <cancelRequestedQuery activityName="String" 
                                 childActivityName="String"/>
-          </cancelRequestQueries>
+          </cancelRequestedQueries>
           <customTrackingQueries>
             <customTrackingQuery activityName="String" 
                                  name="String"/>

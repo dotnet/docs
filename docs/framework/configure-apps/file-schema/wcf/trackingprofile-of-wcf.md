@@ -24,16 +24,18 @@ Represents a configuration section for creating a subscription to workflow track
             <activityScheduledQuery activityName="String" 
                                     childActivityName="String"/>
           </activityScheduledQueries>
-          <activityStateQuery activityName="String" />
-            <arguments>
-              <argument name="String"/>
-            </arguments>
-            <states>
-              <state name="String"/>
-            </states>
-            <variables>
-              <variable name="String"/>
-            </variables>
+          <activityStateQueries>
+            <activityStateQuery activityName="String" />
+              <arguments>
+                <argument name="String"/>
+              </arguments>
+              <states>
+                <state name="String"/>
+              </states>
+              <variables>
+                <variable name="String"/>
+              </variables>
+            <activityStateQuery>
           </activityStateQueries>
           <bookmarkResumptionQueries>
             <bookmarkResumptionQuery name="String" />

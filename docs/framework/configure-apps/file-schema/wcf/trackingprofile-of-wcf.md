@@ -22,7 +22,7 @@ Represents a configuration section for creating a subscription to workflow track
         <workflow activityDefinitionId="String">
           <activityScheduledQueries>
             <activityScheduledQuery activityName="String" 
-                                    childActivityName="String">
+                                    childActivityName="String" />
           </activityScheduledQueries>
           <activityStateQueries>
             <activityStateQuery activityName="String" />

@@ -233,7 +233,7 @@
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the key data for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <summary>Gets the key code combined with key modifiers such as the SHIFT, CONTROL, and ALT keys for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
         <value>One of the <see cref="T:System.Windows.Forms.Keys" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -9,12 +9,12 @@ Represents a collection of queries that are used to track life cycle changes of 
 
 For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md).
 
-\<system.serviceModel>
-\<tracking>
-\<profiles>
-\<trackingProfile>
-\<workflow> 
-\<activityStateQueries>
+\<system.serviceModel>  
+\<tracking>  
+\<profiles>  
+\<trackingProfile>  
+\<workflow>  
+\<activityStateQueries>  
 
 ## Syntax  
   

@@ -48,7 +48,7 @@ root.GetDirectories("*.*", System.IO.SearchOption.AllDirectories);
  If you must store the contents of a directory tree, either in memory or on disk, the best option is to store only the <xref:System.IO.FileSystemInfo.FullName%2A> property (of type `string`) for each file. You can then use this string to create a new <xref:System.IO.FileInfo> or <xref:System.IO.DirectoryInfo> object as necessary, or open any file that requires additional processing.  
   
 ## Robust Programming  
- Robust file iteration code must take into account many complexities of the file system. For more information on the Windows file system, see [NTFS Technical Reference](/previous-versions/windows/it-pro/windows-server-2003/cc758691%28v=ws.10%29).  
+ Robust file iteration code must take into account many complexities of the file system. For more information on the Windows file system, see [NTFS Technical Reference](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc758691%28v=ws.10%29).  
   
 ## See Also
 

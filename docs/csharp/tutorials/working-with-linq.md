@@ -86,6 +86,7 @@ These two methods both utilize the `yield return` syntax to produce a sequence a
 For this to compile you’ll need to add the following two lines to the top of the file:
 
 ```csharp
+using System;
 using System.Collections.Generic;
 using System.Linq;
 ```

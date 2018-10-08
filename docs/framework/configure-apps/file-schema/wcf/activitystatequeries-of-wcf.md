@@ -54,7 +54,7 @@ None.
 
 |Element|Description|
 |-------------|-----------------|
-|[\<activityStateQuery>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/activitystatequery.md)|A query that is used to track the handling of faults that occur within an activity.  This event occurs each time a FaultHandler processes a fault.|
+|[\<activityStateQuery>](activitystatequery-of-wcf.md)|A query that is used to track the handling of faults that occur within an activity.  This event occurs each time a FaultHandler processes a fault.|
 
 ### Parent elements
 

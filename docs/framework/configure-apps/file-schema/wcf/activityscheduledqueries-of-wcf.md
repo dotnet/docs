@@ -8,9 +8,9 @@ Represents a collection of queries that are used to track an activity scheduled 
   
 For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  
   
-\<system.serviceModel>
-\<tracking>
-\<profiles>
+\<system.serviceModel>  
+\<tracking>  
+\<profiles>  
 \<trackingProfile>  
 \<workflow>  
 \<activityScheduledQueries>  

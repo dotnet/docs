@@ -1730,7 +1730,7 @@ The <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.Str
 
 In addition, on Windows systems only, the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method lets you define an environment variable that is available to all processes that run on a machine (the <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType> value) and to all processes run by a user (the <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> value). Per-machine and per-user environment variables are copied into the environment block of the current process.  
  
-On .NET Core on maxOS and Linux systems, calls to the  <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a value of <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType> value) or <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> are ignored. 
+On .NET Core on maxOS and Linux systems, calls to the  <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a value of <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType> or <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> are ignored. 
   
  If the `value` argument is not empty (see the discussion of deleting an environment variable later in this section for the definition of an empty value) and the environment variable named by the `variable` argument does not exist, the environment variable is created and assigned the contents of `value`.  If it does exist, its value is modified.  
   

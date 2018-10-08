@@ -21,7 +21,8 @@ Represents a configuration section for creating a subscription to workflow track
       <trackingProfile name="String">
         <workflow activityDefinitionId="String">
           <activityScheduledQueries>
-            <activityScheduledQuery activityName="String" childActivityName="String"/>
+            <activityScheduledQuery activityName="String" 
+                                    childActivityName="String"/>
           </activityScheduledQueries>
           <activityStateQuery activityName="String" />
             <arguments>
@@ -38,13 +39,16 @@ Represents a configuration section for creating a subscription to workflow track
             <bookmarkResumptionQuery name="String" />
           </bookmarkResumptionQueries>
           <cancelRequestQueries>
-            <cancelRequestQuery activityName="String" childActivityName="String"/>
+            <cancelRequestQuery activityName="String" 
+                                childActivityName="String"/>
           </cancelRequestQueries>
           <customTrackingQueries>
-            <customTrackingQuery activityName="String" name="String"/>
+            <customTrackingQuery activityName="String" 
+                                 name="String"/>
           </customTrackingQueries>
           <faultPropagationQueries>
-            <faultPropagationQuery activityName="String" faultHandlerActivityName="String"/>
+            <faultPropagationQuery activityName="String" 
+                                   faultHandlerActivityName="String"/>
           </faultPropagationQueries>
           <workflowInstanceQueries>
             <workflowInstanceQuery>

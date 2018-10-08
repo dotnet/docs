@@ -14,13 +14,11 @@ A number of samples and walkthroughs in the [!INCLUDE[vbtecdlinq](../../../../..
   
 1.  Select **Download**.  
   
-1.  In the **File Download** dialog box, select **Save**.  
-  
 1.  After the file has downloaded, double-click the file to extract the databases and scripts.  
   
      By default, the databases are installed in the folder *drive*:\SQL Server 2000 Sample Databases.
 
-1. Before you can use the Northwind databases, you have to choose one of two options:
+1. Before you can use the Northwind database, you have to choose one of two options:
 
     - Recreate the database by running the `instnwnd.sql` script file in the installation folder.
 
@@ -42,7 +40,7 @@ SQL Server Express is available without charge, and you can redistribute it with
 ## Download SQL Server Management Studio
 If you want to modify a database that you have downloaded, you can access the database from **Server Explorer** in the Visual Studio integrated development environment (IDE), or you can use Microsoft SQL Server Management Studio (SSMS).  
   
-#### To download SQL Server Management Studio  
+### To download SQL Server Management Studio  
   
 -   Follow the instructions at the [Download SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) page.  
   

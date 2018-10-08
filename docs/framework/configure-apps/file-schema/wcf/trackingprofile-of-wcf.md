@@ -35,7 +35,7 @@ Represents a configuration section for creating a subscription to workflow track
               <variables>
                 <variable name="String"/>
               </variables>
-            <activityStateQuery>
+            </activityStateQuery>
           </activityStateQueries>
           <bookmarkResumptionQueries>
             <bookmarkResumptionQuery name="String" />

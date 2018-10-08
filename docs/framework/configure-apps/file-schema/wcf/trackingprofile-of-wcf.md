@@ -15,7 +15,52 @@ Represents a configuration section for creating a subscription to workflow track
 ## Syntax  
   
 ```xml
-   <system.serviceModel>  <tracking>      <trackingProfile name="String">      <workflow activityDefinitionId="String">          <activityScheduledQueries>             <activityScheduledQuery activityName="String"                 childActivityName="String"/>          </activityScheduledQueries>             <activityStateQuery activityName="String" />                <arguments>                   <argument name="String"/>                </arguments>                <states>                   <state name="String"/>                </states>                <variables>                   <variable name="String"/>                </variables>          </activityStateQueries>          <bookmarkResumptionQueries>             <bookmarkResumptionQuery name="String" />          </bookmarkResumptionQueries>          <cancelRequestQueries>             <cancelRequestQuery activityName="String"                 childActivityName="String"/>          </cancelRequestQueries>          <customTrackingQueries>             <customTrackingQuery activityName="String"                 name="String"/>          </customTrackingQueries>          <faultPropagationQueries>             <faultPropagationQuery activityName="String"                 faultHandlerActivityName="String"/>          </faultPropagationQueries>         <workflowInstanceQueries>            <workflowInstanceQuery>              <states>                 <state name="String"/>              </states>          </workflowInstanceQuery>        </workflowInstanceQueries>      </workflow>    </trackingProfile>           </profiles>  </tracking></system.serviceModel>    
+<system.serviceModel>
+  <tracking>
+    <trackingProfile name="String">
+      <workflow activityDefinitionId="String">
+        <activityScheduledQueries>
+          <activityScheduledQuery activityName="String"       
+                                  childActivityName="String"/>
+        </activityScheduledQueries>
+        <activityStateQueries>
+          <activityStateQuery activityName="String" />
+          <arguments>
+            <argument name="String"/>
+          </arguments>
+          <states>
+            <state name="String"/>
+          </states>
+          <variables>
+            <variable name="String"/>
+          </variables>
+        </activityStateQueries>
+        <bookmarkResumptionQueries>
+          <bookmarkResumptionQuery name="String" />
+        </bookmarkResumptionQueries>
+        <cancelRequestQueries>
+          <cancelRequestQuery activityName="String" 
+                              childActivityName="String"/>
+        </cancelRequestQueries>
+        <customTrackingQueries>
+          <customTrackingQuery activityName="String" 
+                               name="String"/>
+        </customTrackingQueries>
+        <faultPropagationQueries>
+          <faultPropagationQuery activityName="String" 
+                                 faultHandlerActivityName="String"/>
+        </faultPropagationQueries>
+        <workflowInstanceQueries>
+          <workflowInstanceQuery>
+            <states>
+              <state name="String"/>
+            </states>
+          </workflowInstanceQuery>
+        </workflowInstanceQueries>
+      </workflow>
+    </trackingProfile>
+  </tracking>
+</system.serviceModel>     
 ```  
   
 ## Attributes and Elements  
@@ -31,7 +76,7 @@ Represents a configuration section for creating a subscription to workflow track
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<participants>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/participants.md)|A configuration element that contains all queries for a specific workflow identified by the `a HYPERLINK "http://msdn.microsoft.com/library/library/system.servicemodel.activities.tracking.configuration.profileworkflowelement.activitydefinitionid(VS.100).aspx" ctivityDefinitionId` property.|  
+|[\<participants>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/participants.md)|A configuration element that contains all queries for a specific workflow identified by the <xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ActivityDefinitionId?displayProperty=nameWithType> property.|  
   
 ### Parent Elements  
   

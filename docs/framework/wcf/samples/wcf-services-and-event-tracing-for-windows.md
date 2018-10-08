@@ -28,7 +28,7 @@ This sample demonstrates how to use the analytic tracing in Windows Communicatio
 
 5.  Within the WCF test client, add the service by selecting **File**, and then **Add Service**.
 
-     Add the endpoint address in the input box. The default is http://localhost:1378/Calculator.svc.
+     Add the endpoint address in the input box. The default is `http://localhost:1378/Calculator.svc`.
 
 6.  Open the Event Viewer application.
 

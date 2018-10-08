@@ -200,7 +200,7 @@ Press <ENTER> to terminate client.
     > [!NOTE]
     > The setup batch file is designed to be run from a  Visual Studio Command Prompt. It requires that the path environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Visual Studio Command Prompt.  
   
-3.  Verify access to the service using a browser by entering the address http://localhost/servicemodelsamples/service.svc.  
+3.  Verify access to the service using a browser by entering the address `http://localhost/servicemodelsamples/service.svc`.  
   
 4.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   

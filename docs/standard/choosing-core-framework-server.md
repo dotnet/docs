@@ -98,7 +98,7 @@ Some Microsoft or third-party platforms don’t support .NET Core. For example, 
 ## See also
 
 * [Choose between ASP.NET and ASP.NET Core](/aspnet/core/choose-aspnet-framework)
-* [ASP.NET Core targeting .NET Framework](/aspnet/core#target-framework)
+* [ASP.NET Core targeting .NET Framework](/aspnet/core#aspnet-core-targeting-net-framework)
 * [Target frameworks](frameworks.md)
 * [.NET Core Guide](../core/index.md)  
 * [Porting from .NET Framework to .NET Core](../core/porting/index.md)  

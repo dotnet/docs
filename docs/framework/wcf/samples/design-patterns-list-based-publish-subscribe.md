@@ -112,7 +112,7 @@ public class PriceChangeEventArgs : EventArgs
   
 ### To run the sample on the same machine  
   
-1.  Test that you can access the service using a browser by entering the following address: http://localhost/servicemodelsamples/service.svc. A confirmation page should be displayed in response.  
+1.  Test that you can access the service using a browser by entering the following address: `http://localhost/servicemodelsamples/service.svc`. A confirmation page should be displayed in response.  
   
 2.  Run Client.exe from \client\bin\\, from under the language-specific folder. Client activity is displayed on the client console window. Launch several clients.  
   

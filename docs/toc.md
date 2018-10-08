@@ -303,9 +303,9 @@
 
 ## [Get Started](fsharp/get-started/index.md)
 ### [Install F#](fsharp/get-started/install-fsharp.md)
-### [Get Started with Visual Studio](fsharp/get-started/get-started-visual-studio.md)
-### [Get Started with Visual Studio for Mac](fsharp/get-started/get-started-with-visual-studio-for-mac.md)
-### [Get Started with Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)
+### [Get Started with F# in Visual Studio](fsharp/get-started/get-started-visual-studio.md)
+### [Get Started with F# in Visual Studio for Mac](fsharp/get-started/get-started-with-visual-studio-for-mac.md)
+### [Get Started with F# in Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)
 ### [Get Started with F# with the .NET Core CLI](fsharp/get-started/get-started-command-line.md)
 
 ## [What is F#](fsharp/what-is-fsharp.md)
@@ -1116,7 +1116,9 @@
 ## [Tutorials](machine-learning/tutorials/index.md)
 ### [Sentiment analysis (binary classification)](machine-learning/tutorials/sentiment-analysis.md)
 ### [Taxi fare predictor (regression)](machine-learning/tutorials/taxi-fare.md)
-### [Iris clustering](machine-learning/tutorials/iris-clustering.md)
+### [Iris petals (clustering)](machine-learning/tutorials/iris-clustering.md)
+## [How-to guides](machine-learning/how-to-guides/index.md)
+### [Probabilistic programming with Infer.NET](machine-learning/how-to-guides/matchup-app-infer-net.md)
 ## [Resources](machine-learning/resources/index.md)
 ### [Machine learning glossary](machine-learning/resources/glossary.md)
 ### [Machine learning basics](machine-learning/resources/basics.md)

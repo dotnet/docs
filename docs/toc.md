@@ -306,7 +306,7 @@
 ### [Get Started with F# in Visual Studio](fsharp/get-started/get-started-visual-studio.md)
 ### [Get Started with F# in Visual Studio for Mac](fsharp/get-started/get-started-with-visual-studio-for-mac.md)
 ### [Get Started with F# in Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)
-### [Get Started with with the .NET Core CLI](fsharp/get-started/get-started-command-line.md)
+### [Get Started with F# with the .NET Core CLI](fsharp/get-started/get-started-command-line.md)
 
 ## [What is F#](fsharp/what-is-fsharp.md)
 ## [Tour of F#](fsharp/tour.md)

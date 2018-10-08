@@ -46,7 +46,7 @@ See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 #### Installing Docker Client
 
-Install [Docker 18.06](https://docs.docker.com/release-notes/docker-ce/) or later of the Docker CE.
+Install [Docker 18.06](https://docs.docker.com/release-notes/docker-ce/) or later of the Docker client.
 
 The Docker client can be installed in:
 

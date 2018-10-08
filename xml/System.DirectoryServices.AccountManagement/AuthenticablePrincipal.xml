@@ -1138,7 +1138,7 @@ ctx.Dispose();
       <Docs>
         <summary>Gets or sets a Boolean value that specifies whether a password is required for this account.</summary>
         <value>
-          <see langword="true" /> if a password is required for this account; otherwise <see langword="false" />.</value>
+          <see langword="false" /> if a password is required for this account; otherwise <see langword="true" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />

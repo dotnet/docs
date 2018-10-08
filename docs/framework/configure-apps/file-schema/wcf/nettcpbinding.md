@@ -15,36 +15,39 @@ Specifies a secure, reliable, optimized binding suitable for cross-machine commu
 ## Syntax  
   
 ```xml  
-<netTcpBinding>  
-   <binding   
-      closeTimeout="TimeSpan"  
-      hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
-      listenBacklog="Integer"  
-      maxBufferPoolSize="integer"  
-      maxBufferSize="Integer"  
-      maxConnections="Integer"   
-      maxReceivedMessageSize="Integer"  
-      name="string"  
-      openTimeout="TimeSpan"  
-      portSharingEnabled="Boolean"  
-      receiveTimeout="TimeSpan"  
-      sendTimeout="TimeSpan"  
-      transactionFlow="Boolean"   
-      transactionProtocol="OleTransactions/WSAtomicTransactionOctober2004"   
-            transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
-  
-      <reliableSession ordered="Boolean"  
-            inactivityTimeout="TimeSpan"  
-            enabled="Boolean" />  
-      <security mode="None/Transport/Message/Both">  
-            <message clientCredentialType="None/Windows/UserName/Certificate/CardSpace"  
-                defaultProtectionLevel="None/Sign/EncryptAndSign"   
-algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15" />  
-            <transport clientCredentialType="None/Windows/Certificate"  
-                protectionLevel="None/Sign/EncryptAndSign" />  
-      </security>  
-       <readerQuotas             maxArrayLength="Integer"            maxBytesPerRead="Integer"            maxDepth="Integer"             maxNameTableCharCount="Integer"                     maxStringContentLength="Integer" />   </binding>  
-</netTcpBinding>  
+<netTcpBinding>
+  <binding closeTimeout="TimeSpan"  
+           hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"
+           listenBacklog="Integer"  
+           maxBufferPoolSize="integer"  
+           maxBufferSize="Integer"  
+           maxConnections="Integer"   
+           maxReceivedMessageSize="Integer"  
+           name="string"  
+           openTimeout="TimeSpan"  
+           portSharingEnabled="Boolean"  
+           receiveTimeout="TimeSpan"  
+           sendTimeout="TimeSpan"  
+           transactionFlow="Boolean"   
+           transactionProtocol="OleTransactions/WSAtomicTransactionOctober2004"   
+           transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse">
+    <reliableSession ordered="Boolean"  
+                     inactivityTimeout="TimeSpan"  
+                     enabled="Boolean" />
+    <security mode="None/Transport/Message/Both">
+      <message clientCredentialType="None/Windows/UserName/Certificate/CardSpace"  
+               defaultProtectionLevel="None/Sign/EncryptAndSign"   
+               algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15" />
+      <transport clientCredentialType="None/Windows/Certificate"  
+                 protectionLevel="None/Sign/EncryptAndSign" />
+    </security>
+    <readerQuotas maxArrayLength="Integer"     
+                  maxBytesPerRead="Integer"      
+                  maxDepth="Integer" 
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</netTcpBinding> 
 ```  
   
 ## Attributes and Elements  

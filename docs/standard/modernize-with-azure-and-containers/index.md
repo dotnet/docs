@@ -19,7 +19,7 @@ Copyright © 2018 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced in any form or by any means without the written permission of the publisher.
 
-This book is available for free in the form of an electronic book (e-book) available through multiple channels at Microsoft such as http://dot.net/architecture.
+This book is available for free in the form of an electronic book (e-book) available through multiple channels at Microsoft such as <http://dot.net/architecture>.
 
 If you have questions related to this book, email at [dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com?subject=Feedback%20for%20.NET%20Container%20&%20Microservices%20Architecture%20book)
 
@@ -27,7 +27,7 @@ This book is provided "as-is" and expresses the author's views and opinions. The
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.
 
-Microsoft and the trademarks listed at http://www.microsoft.com on the "Trademarks" webpage are trademarks of the Microsoft group of companies. All other marks are property of their respective owners.
+Microsoft and the trademarks listed at <https://www.microsoft.com> on the "Trademarks" webpage are trademarks of the Microsoft group of companies. All other marks are property of their respective owners.
 
 Author:
 > **Cesar de la Torre**, Sr. PM, .NET Product Team, Microsoft Corp.

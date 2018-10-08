@@ -25,7 +25,7 @@ Represents a configuration section for creating a subscription to workflow track
                                     childActivityName="String" />
           </activityScheduledQueries>
           <activityStateQueries>
-            <activityStateQuery activityName="String" />
+            <activityStateQuery activityName="String">
               <arguments>
                 <argument name="String"/>
               </arguments>

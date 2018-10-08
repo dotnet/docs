@@ -49,7 +49,7 @@ Represents a configuration section for creating a subscription to workflow track
                                  name="String"/>
           </customTrackingQueries>
           <faultPropagationQueries>
-            <faultPropagationQuery activityName="String" 
+            <faultPropagationQuery faultSourceActivityName="String" 
                                    faultHandlerActivityName="String"/>
           </faultPropagationQueries>
           <workflowInstanceQueries>

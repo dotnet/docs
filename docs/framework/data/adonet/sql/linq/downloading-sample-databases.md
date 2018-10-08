@@ -42,7 +42,7 @@ If you want to modify a database that you have downloaded, you can access the da
   
 ### To download SQL Server Management Studio  
   
--   Follow the instructions at the [Download SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) page.  
+-   Follow the instructions at the [Download SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) page.  
   
 ## See Also  
  [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)

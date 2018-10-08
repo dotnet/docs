@@ -10,7 +10,7 @@ Represents a collection of subscribed states from the tracked workflow instance 
   
 \<system.serviceModel>  
 \<tracking>  
-\<profiles>
+\<profiles>  
 \<trackingProfile>  
 \<workflow>  
 \<workflowInstanceQueries>  

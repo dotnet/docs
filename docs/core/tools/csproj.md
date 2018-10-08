@@ -104,14 +104,14 @@ Item that specifies a NuGet dependency in the project. The `Include` attribute s
 `Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
 
 #### IncludeAssets, ExcludeAssets and PrivateAssets
-`IncludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
+`IncludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be 
 consumed. 
 
-`ExcludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should not 
+`ExcludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should not 
 be consumed.
 
-`PrivateAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
-consumed but that they should not flow to the next project. 
+`PrivateAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be 
+consumed but not flow to the next project. 
 
 > [!NOTE]
 > `PrivateAssets` is equivalent to the *project.json*/*xproj* `SuppressParent` element.

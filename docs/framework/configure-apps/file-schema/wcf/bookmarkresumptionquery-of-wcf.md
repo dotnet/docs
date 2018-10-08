@@ -18,7 +18,15 @@ Represents a query that is used to track resumption of a bookmark within a workf
 ## Syntax  
   
 ```xml
-<tracking>   <trackingProfile name="Name">       <workflow>          <bookmarkResumptionQueries>             <bookmarkResumptionQuery name="String" />          </bookmarkResumptionQueries>       </workflow>   </trackingProfile></tracking>  
+<tracking>
+  <trackingProfile name="Name">
+    <workflow>
+      <bookmarkResumptionQueries>
+        <bookmarkResumptionQuery name="String" />
+      </bookmarkResumptionQueries>
+    </workflow>
+  </trackingProfile>
+</tracking>  
 ```
 
 ## Attributes and Elements  

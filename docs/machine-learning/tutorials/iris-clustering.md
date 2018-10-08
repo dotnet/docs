@@ -81,7 +81,7 @@ Remove the existing class definition and add the following code, which defines t
 
 `IrisData` is the input data class and has definitions for each feature from the data set. Use the [Column](xref:Microsoft.ML.Runtime.Api.ColumnAttribute) attribute to specify the indices of the source columns in the data set file.
 
-The `ClusterPrediction` class represents the output of the clustering model applied to an `IrisData` instance. Use the [ColumnName](xref:Microsoft.ML.Runtime.Api.ColumnNameAttribute) attribute to bind the `PredictedClusterId` and `Distances` fields to the **PredictedLabel** and **Score** columns respectively. In case of the clustering task those columns has the following meaning:
+The `ClusterPrediction` class represents the output of the clustering model applied to an `IrisData` instance. Use the [ColumnName](xref:Microsoft.ML.Runtime.Api.ColumnNameAttribute) attribute to bind the `PredictedClusterId` and `Distances` fields to the **PredictedLabel** and **Score** columns respectively. In case of the clustering task those columns have the following meaning:
 
 - **PredictedLabel** column contains the ID of the predicted cluster.
 - **Score** column contains an array with squared Euclidean distances to the cluster centroids. The array length is equal to the number of clusters.

@@ -18,7 +18,16 @@ Represents a query that is used to track requests to cancel a child activity by 
 ## Syntax  
   
 ```xml
-<tracking>   <trackingProfile name="Name">       <workflow>          <cancelRequestQueries>             <cancelRequestQuery activityName="String"                 childActivityName="String"/>          </cancelRequestQueries>       </workflow>   </trackingProfile></tracking>  
+<tracking>
+  <trackingProfile name="Name">
+    <workflow>
+      <cancelRequestQueries>
+        <cancelRequestQuery activityName="String"
+                            childActivityName="String"/>
+      </cancelRequestQueries>
+    </workflow>
+  </trackingProfile>
+</tracking>  
 ```
 
 ## Attributes and Elements  

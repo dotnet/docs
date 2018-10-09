@@ -1,6 +1,6 @@
 ---
 title: "Connection Strings"
-ms.date: "03/30/2017"
+ms.date: "10/08/2018"
 ms.assetid: 78d516bc-c99f-4865-8ff1-d856bc1a01c0
 ---
 # Connection Strings
@@ -9,13 +9,37 @@ A connection string contains initialization information that is passed as a para
  The connection string is used by the EntityClient provider when accessing model and mapping metadata and connecting to the data source. The connection string can be accessed or set through the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> property of <xref:System.Data.EntityClient.EntityConnection>. The <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class can be used to programmatically construct or access parameters in the connection string. For more information, see [How to: Build an EntityConnection Connection String](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md).  
   
  The [Entity Data Model tools](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527) generate a connection string that is stored in the application's configuration file. <xref:System.Data.Objects.ObjectContext> retrieves this connection information automatically when creating object queries. The <xref:System.Data.EntityClient.EntityConnection> used by an <xref:System.Data.Objects.ObjectContext> instance can be accessed from the <xref:System.Data.Objects.ObjectContext.Connection%2A> property. For more information, see [Managing Connections and Transactions](https://msdn.microsoft.com/library/b6659d2a-9a45-4e98-acaa-d7a8029e5b99).  
+
+## Connection String Syntax
+
+The format of a connection string is a semicolon-delimited list of key/value parameter pairs:
   
+	keyword1=value; keyword2=value;
+  
+Keywords are not case-sensitive. Values, however, may be case-sensitive, depending on the data source. Both keywords and values may contain [whitespace characters](https://en.wikipedia.org/wiki/Whitespace_character#Unicode), although leading and trailing whitespace is ignored in keywords and unquoted values.
+
+If a value contains the semicolon, [Unicode control characters](https://en.wikipedia.org/wiki/Unicode_control_characters), leading or trailing whitespace it must be enclosed in single or double quotation marks, e.g.:
+
+	Keyword=" whitespace  ";
+	Keyword='special;character';
+
+The enclosing character may not occur within the value it encloses. Therefore, a value containing single quotation marks can be enclosed only in double quotation marks and vice versa:
+
+	Keyword='double"quotation;mark';
+	Keyword="single'quotation;mark";
+
+The quotation marks themselves, as well as the equals sign, do not require escaping, so the following connection strings are valid:
+
+	Keyword=no "escaping" 'required';
+	Keyword=a=b=c
+
+Since each value is read till the next semicolon or the end of string, the value in the latter example is `a=b=c`, and the final semicolon is optional.
+
+Valid connection string syntax depends on the provider, and has evolved over the years from earlier APIs like ODBC. The .NET Framework Data Provider for SQL Server (SqlClient) incorporates many elements from older syntax and is generally more flexible with common connection string syntax. There are frequently equally valid synonyms for connection string syntax elements, but some syntax and spelling errors can cause problems. For example, "`Integrated Security=true`" is valid, whereas "`IntegratedSecurity=true`" causes an error. In addition, connection strings constructed at run time from unvalidated user input can lead to string injection attacks, jeopardizing security at the data source.
+
 ## Connection String Parameters  
- The format of a connection string is a semicolon-delimited list of key/value parameter pairs:  
-  
- `keyword1=value; keyword2=value;`  
-  
- The equal sign (=) connects each keyword and its value. Keywords are not case sensitive, and spaces between key/value pairs are ignored. However, values  can be case sensitive, depending on the data source. Any values that contain a semicolon, single quotation marks, or double quotation marks must be enclosed in double quotation marks. The following table lists the valid names for keyword values in the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A>.  
+
+The following table lists the valid names for keyword values in the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A>.  
   
 |Keyword|Description|  
 |-------------|-----------------|  

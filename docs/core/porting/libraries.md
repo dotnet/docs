@@ -158,7 +158,7 @@ The best way to make sure everything works when you've ported your code is to te
 - [xUnit](https://xunit.github.io/)
   * [Getting Started](https://xunit.github.io/docs/getting-started-dotnet-core.html)
   * [Tool to convert an MSTest project to xUnit](https://github.com/dotnet/codeformatter/tree/master/src/XUnitConverter)
-- [NUnit](https://www.nunit.org/)
+- [NUnit](https://nunit.org/)
   * [Getting Started](https://github.com/nunit/docs/wiki/Installation)
   * [Blog post about migrating from MSTest to NUnit](https://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)
 - [MSTest](https://docs.microsoft.com/visualstudio/test/unit-test-basics)

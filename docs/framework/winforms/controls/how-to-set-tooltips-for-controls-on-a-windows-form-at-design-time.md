@@ -68,9 +68,9 @@ You can set a <xref:System.Windows.Forms.ToolTip> string in code or in the Windo
   
 1.  Select the control that is displaying the ToolTip.  
   
-2.  In the **Properties** window, set the **ToolTip on ToolTip1** value to an empty string.  
+2.  In the **Properties** window, delete the text in the **ToolTip on ToolTip1**.  
 
 ## See Also  
- [ToolTip Component Overview](../../../../docs/framework/winforms/controls/tooltip-component-overview-windows-forms.md)  
- [How to: Change the Delay of the Windows Forms ToolTip Component](../../../../docs/framework/winforms/controls/how-to-change-the-delay-of-the-windows-forms-tooltip-component.md)  
- [ToolTip Component](../../../../docs/framework/winforms/controls/tooltip-component-windows-forms.md)
+- [ToolTip Component Overview](../../../../docs/framework/winforms/controls/tooltip-component-overview-windows-forms.md)  
+- [How to: Change the Delay of the Windows Forms ToolTip Component](../../../../docs/framework/winforms/controls/how-to-change-the-delay-of-the-windows-forms-tooltip-component.md)  
+- [ToolTip Component](../../../../docs/framework/winforms/controls/tooltip-component-windows-forms.md)

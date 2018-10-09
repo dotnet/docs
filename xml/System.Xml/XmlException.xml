@@ -85,7 +85,18 @@
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see langword="XmlException" /> class.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+      ## Remarks  
+
+The `XmlException` is a generic XML-related error that is thrown if problems occur during XML processing. The following example throws an XML exception because the \<contacts> end tag is misspelled:
+ 
+[!code-csharp[Example Usage](~/samples/snippets/csharp/api/system.xml/xmlexception/Program.cs)]
+[!code-vb[Example Usage](~/samples/snippets/visualbasic/api/system.xml/xmlexception/Program.vb)]
+
+       ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

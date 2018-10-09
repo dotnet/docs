@@ -134,7 +134,7 @@
         <param name="closeStatus">Indicates the reason for closing the WebSocket connection.</param>
         <param name="statusDescription">Specifies a human readable explanation as to why the connection is closed.</param>
         <param name="cancellationToken">The token that can be used to propagate notification that operations should be canceled.</param>
-        <summary>Closes the WebSocket connection as an asynchronous operation using the close handshake defined in the [WebSocket protocol specification](http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-06) section 7.</summary>
+        <summary>Closes the WebSocket connection as an asynchronous operation using the close handshake defined in the <see href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-06">WebSocket protocol specification</see> section 7.</summary>
         <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.  
   
  The task object representing the asynchronous operation.</returns>
@@ -184,7 +184,7 @@
         <param name="closeStatus">Indicates the reason for closing the WebSocket connection.</param>
         <param name="statusDescription">Allows applications to specify a human readable explanation as to why the connection is closed.</param>
         <param name="cancellationToken">The token that can be used to propagate notification that operations should be canceled.</param>
-        <summary>Initiates or completes the close handshake defined in the [WebSocket protocol specification section 7](http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-06).</summary>
+        <summary>Initiates or completes the close handshake defined in the <see href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-06">WebSocket protocol specification section 7</see>.</summary>
         <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.  
   
  The task object representing the asynchronous operation.</returns>

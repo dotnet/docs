@@ -949,7 +949,7 @@
         <param name="endOperationDelegate">A delegate that is used to end the asynchronous call after it has completed.</param>
         <param name="operationCompletedCallback">A client-supplied callback that is invoked when the asynchronous method is complete. The callback is passed to the <see cref="T:System.ServiceModel.ClientBase`1.BeginOperationDelegate" />.</param>
         <param name="userState">The <c>userState</c> object to associate with the asynchronous call.</param>
-        <summary>Provides support for implementing the event-based asynchronous pattern. For more information about this pattern, see [Event-based Asynchronous Pattern Overview](~/docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md).</summary>
+        <summary>Provides support for implementing the event-based asynchronous pattern. For more information about this pattern, see <see href="https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview">Event-based Asynchronous Pattern Overview</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

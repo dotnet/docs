@@ -136,7 +136,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Indicates that an interface is exposed to COM as a [dispinterface](http://msdn.microsoft.com/library/e8c18ae5-3d9e-4dff-aa20-b5acc723eacf), which enables late binding only.</summary>
+        <summary>Indicates that an interface is exposed to COM as a <see href="http://msdn.microsoft.com/library/e8c18ae5-3d9e-4dff-aa20-b5acc723eacf">dispinterface</see>, which enables late binding only.</summary>
       </Docs>
     </Member>
     <Member MemberName="InterfaceIsIInspectable">
@@ -213,7 +213,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Indicates that an interface is exposed to COM as an interface that is derived from [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003), which enables only early binding.</summary>
+        <summary>Indicates that an interface is exposed to COM as an interface that is derived from <see href="http://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see>, which enables only early binding.</summary>
       </Docs>
     </Member>
   </Members>

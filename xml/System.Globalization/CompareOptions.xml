@@ -178,7 +178,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Indicates that the string comparison must ignore nonspacing combining characters, such as diacritics. The [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123) defines combining characters as characters that are combined with base characters to produce a new character. Nonspacing combining characters do not occupy a spacing position by themselves when rendered.</summary>
+        <summary>Indicates that the string comparison must ignore nonspacing combining characters, such as diacritics. The <see href="http://go.microsoft.com/fwlink/?linkid=37123">Unicode Standard</see> defines combining characters as characters that are combined with base characters to produce a new character. Nonspacing combining characters do not occupy a spacing position by themselves when rendered.</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreSymbols">

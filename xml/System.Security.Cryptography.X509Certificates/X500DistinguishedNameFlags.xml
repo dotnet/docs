@@ -149,7 +149,7 @@
       </ReturnValue>
       <MemberValue>16384</MemberValue>
       <Docs>
-        <summary>Forces the distinguished name to encode specific X.500 keys as UTF-8 strings rather than printable Unicode strings. For more information and the list of X.500 keys affected, see the [X500NameFlags enumeration](http://msdn.microsoft.com/library/windows/desktop/aa379394.aspx).</summary>
+        <summary>Forces the distinguished name to encode specific X.500 keys as UTF-8 strings rather than printable Unicode strings. For more information and the list of X.500 keys affected, see the <see href="http://msdn.microsoft.com/library/windows/desktop/aa379394.aspx">X500NameFlags enumeration</see>.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">

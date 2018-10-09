@@ -111,7 +111,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>When searching for assembly dependencies, include the directory that contains the assembly itself, and search that directory first. This value is used by the .NET Framework, before the paths are passed to the Win32 [LoadLibraryEx](http://go.microsoft.com/fwlink/?LinkId=236091) function.</summary>
+        <summary>When searching for assembly dependencies, include the directory that contains the assembly itself, and search that directory first. This value is used by the .NET Framework, before the paths are passed to the Win32 <see href="http://go.microsoft.com/fwlink/?LinkId=236091">LoadLibraryEx</see> function.</summary>
       </Docs>
     </Member>
     <Member MemberName="LegacyBehavior">

@@ -104,7 +104,7 @@
       </ReturnValue>
       <MemberValue>252</MemberValue>
       <Docs>
-        <summary>The specified user is not local, but the receiving SMTP service accepted the message and attempted to deliver it. This status code is defined in RFC 1123, which is available at [https://www.ietf.org](https://www.ietf.org/).</summary>
+        <summary>The specified user is not local, but the receiving SMTP service accepted the message and attempted to deliver it. This status code is defined in RFC 1123, which is available at <see href="https://www.ietf.org/">https://www.ietf.org</see>.</summary>
       </Docs>
     </Member>
     <Member MemberName="ClientNotPermitted">

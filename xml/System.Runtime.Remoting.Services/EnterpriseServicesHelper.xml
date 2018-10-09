@@ -124,7 +124,7 @@
       <Docs>
         <param name="oldcp">A proxy that represents the old instance of a class that is referenced by a CCW.</param>
         <param name="newcp">A proxy that represents the new instance of a class that is referenced by a CCW.</param>
-        <summary>Switches a [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md) (CCW) from one instance of a class to another instance of the same class.</summary>
+        <summary>Switches a <see href="https://docs.microsoft.com/dotnet/framework/interop/com-callable-wrapper">COM Callable Wrapper</see> (CCW) from one instance of a class to another instance of the same class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

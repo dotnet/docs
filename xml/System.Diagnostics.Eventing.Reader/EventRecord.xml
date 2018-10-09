@@ -798,7 +798,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the XML representation of the event. All of the event properties are represented in the event XML. The XML conforms to the [event schema](http://go.microsoft.com/fwlink/?LinkId=81771).</summary>
+        <summary>Gets the XML representation of the event. All of the event properties are represented in the event XML. The XML conforms to the <see href="http://go.microsoft.com/fwlink/?LinkId=81771">event schema</see>.</summary>
         <returns>Returns a string that contains the XML representation of the event.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>

@@ -554,7 +554,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Notifies the runtime to clean up all [Runtime Callable Wrappers](~/docs/framework/interop/runtime-callable-wrapper.md) (RCWs) allocated in the current context.</summary>
+        <summary>Notifies the runtime to clean up all <see href="https://docs.microsoft.com/dotnet/framework/interop/runtime-callable-wrapper">Runtime Callable Wrappers</see> (RCWs) allocated in the current context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2152,7 +2152,7 @@
       </Parameters>
       <Docs>
         <param name="o">The RCW to be released.</param>
-        <summary>Releases all references to a [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md) (RCW) by setting its reference count to 0.</summary>
+        <summary>Releases all references to a <see href="https://docs.microsoft.com/dotnet/framework/interop/runtime-callable-wrapper">Runtime Callable Wrapper</see> (RCW) by setting its reference count to 0.</summary>
         <returns>The new value of the reference count of the RCW associated with the <paramref name="o" /> parameter, which is 0 (zero) if the release is successful.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2598,7 +2598,7 @@
       <Docs>
         <param name="o">The object that provides the interface.</param>
         <param name="T">The type of interface that is requested.</param>
-        <summary>Returns a pointer to an [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) interface that represents the specified interface on the specified object. Custom query interface access is enabled by default.</summary>
+        <summary>Returns a pointer to an <see href="http://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface that represents the specified interface on the specified object. Custom query interface access is enabled by default.</summary>
         <returns>The interface pointer that represents the specified interface for the object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2687,7 +2687,7 @@
         <param name="o">The object that provides the interface.</param>
         <param name="T">The type of interface that is requested.</param>
         <param name="mode">One of the enumeration values that indicates whether to apply an <see langword="IUnknown::QueryInterface" /> customization that is supplied by an <see cref="T:System.Runtime.InteropServices.ICustomQueryInterface" />.</param>
-        <summary>Returns a pointer to an [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) interface that represents the specified interface on the specified object. Custom query interface access is controlled by the specified customization mode.</summary>
+        <summary>Returns a pointer to an <see href="http://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface that represents the specified interface on the specified object. Custom query interface access is controlled by the specified customization mode.</summary>
         <returns>The interface pointer that represents the interface for the object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3756,7 +3756,7 @@
       </Parameters>
       <Docs>
         <param name="o">The object whose <see langword="IDispatch" /> interface is requested.</param>
-        <summary>Returns an [IDispatch](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) interface from a managed object.</summary>
+        <summary>Returns an <see href="http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5">IDispatch</see> interface from a managed object.</summary>
         <returns>The <see langword="IDispatch" /> pointer for the <paramref name="o" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3808,7 +3808,7 @@
       </Parameters>
       <Docs>
         <param name="o">The object whose <see langword="IDispatch" /> interface is requested.</param>
-        <summary>Returns an [IDispatch](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) interface pointer from a managed object, if the caller is in the same context as that object.</summary>
+        <summary>Returns an <see href="http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5">IDispatch</see> interface pointer from a managed object, if the caller is in the same context as that object.</summary>
         <returns>The <see langword="IDispatch" /> interface pointer for the specified object, or <see langword="null" /> if the caller is not in the same context as the specified object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3933,7 +3933,7 @@
       </Parameters>
       <Docs>
         <param name="o">The object whose <see langword="IUnknown" /> interface is requested.</param>
-        <summary>Returns an [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) interface from a managed object.</summary>
+        <summary>Returns an <see href="http://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface from a managed object.</summary>
         <returns>The <see langword="IUnknown" /> pointer for the <paramref name="o" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3991,7 +3991,7 @@
       </Parameters>
       <Docs>
         <param name="o">The object whose <see langword="IUnknown" /> interface is requested.</param>
-        <summary>Returns an [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) interface from a managed object, if the caller is in the same context as that object.</summary>
+        <summary>Returns an <see href="http://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface from a managed object, if the caller is in the same context as that object.</summary>
         <returns>The <see langword="IUnknown" /> pointer for the specified object, or <see langword="null" /> if the caller is not in the same context as the specified object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4369,7 +4369,7 @@
       </Parameters>
       <Docs>
         <param name="pUnk">A pointer to the <see langword="IUnknown" /> interface.</param>
-        <summary>Returns an instance of a type that represents a COM object by a pointer to its [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) interface.</summary>
+        <summary>Returns an instance of a type that represents a COM object by a pointer to its <see href="http://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface.</summary>
         <returns>An object that represents the specified unmanaged COM object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4585,7 +4585,7 @@
       <Docs>
         <param name="aSrcNativeVariant">A pointer to the first element of an array of COM VARIANTs.</param>
         <param name="cVars">The count of COM VARIANTs in <c>aSrcNativeVariant</c>.</param>
-        <summary>Converts an array of COM [VARIANTs](http://go.microsoft.com/fwlink/?LinkId=148670) to an array of objects.</summary>
+        <summary>Converts an array of COM <see href="http://go.microsoft.com/fwlink/?LinkId=148670">VARIANTs</see> to an array of objects.</summary>
         <returns>An object array that corresponds to <paramref name="aSrcNativeVariant" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5543,7 +5543,7 @@
       </Parameters>
       <Docs>
         <param name="unknown">A managed pointer to an <see langword="IUnknown" /> interface.</param>
-        <summary>Creates a unique [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md) (RCW) object for a given [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) interface.</summary>
+        <summary>Creates a unique [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md) (RCW) object for a given <see href="http://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface.</summary>
         <returns>A unique RCW for the specified <see langword="IUnknown" /> interface.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -9982,7 +9982,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <Docs>
         <param name="errorCode">The HRESULT corresponding to the desired exception.</param>
         <param name="errorInfo">A pointer to the [IErrorInfo](https://msdn.microsoft.com/library/ms221233\(v=vs.85\).aspx) interface that provides more information about the error. You can specify <c>IntPtr(0)</c> to use the current [IErrorInfo](https://msdn.microsoft.com/library/ms221233\(v=vs.85\).aspx) interface, or <c>IntPtr(-1)</c> to ignore the current [IErrorInfo](https://msdn.microsoft.com/library/ms221233\(v=vs.85\).aspx) interface and construct the exception just from the error code.</param>
-        <summary>Throws an exception with a specific failure HRESULT, based on the specified [IErrorInfo](https://msdn.microsoft.com/library/ms221233\(v=vs.85\).aspx) interface.</summary>
+        <summary>Throws an exception with a specific failure HRESULT, based on the specified <see href="https://msdn.microsoft.com/library/ms221233\(v=vs.85\">IErrorInfo</see>.aspx) interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

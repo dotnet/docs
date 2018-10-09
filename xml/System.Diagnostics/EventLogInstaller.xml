@@ -1128,7 +1128,7 @@ SVC_UPDATE.EXE
         <ReturnType>System.Configuration.Install.UninstallAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the [Installutil.exe (Installer Tool)](~/docs/framework/tools/installutil-exe-installer-tool.md) should remove the event log or leave it in its installed state at uninstall time.</summary>
+        <summary>Gets or sets a value that indicates whether the <see href="https://docs.microsoft.com/dotnet/framework/tools/installutil-exe-installer-tool">Installutil.exe (Installer Tool)</see> should remove the event log or leave it in its installed state at uninstall time.</summary>
         <value>One of the <see cref="T:System.Configuration.Install.UninstallAction" /> values that indicates what state to leave the event log in when the <see cref="T:System.Diagnostics.EventLog" /> is uninstalled. The default is <see langword="Remove" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

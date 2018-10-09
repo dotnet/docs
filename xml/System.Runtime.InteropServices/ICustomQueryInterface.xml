@@ -37,7 +37,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enables developers to provide a custom, managed implementation of the [IUnknown::QueryInterface(REFIID riid, void **ppvObject)](http://go.microsoft.com/fwlink/?LinkID=144867) method.</summary>
+    <summary>Enables developers to provide a custom, managed implementation of the <see href="http://go.microsoft.com/fwlink/?LinkID=144867">IUnknown::QueryInterface(REFIID riid, void **ppvObject)</see> method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

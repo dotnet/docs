@@ -227,7 +227,7 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>The method is not optimized by the just-in-time (JIT) compiler or by native code generation (see [Ngen.exe](~/docs/framework/tools/ngen-exe-native-image-generator.md)) when debugging possible code generation problems.</summary>
+        <summary>The method is not optimized by the just-in-time (JIT) compiler or by native code generation (see <see href="https://docs.microsoft.com/dotnet/framework/tools/ngen-exe-native-image-generator">Ngen.exe</see>) when debugging possible code generation problems.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreserveSig">

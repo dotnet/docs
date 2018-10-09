@@ -110,7 +110,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The calling code can access the resource identified by the current permission object, even if callers higher in the stack have not been granted permission to access the resource (see [Using the Assert Method](~/docs/framework/misc/using-the-assert-method.md)).</summary>
+        <summary>The calling code can access the resource identified by the current permission object, even if callers higher in the stack have not been granted permission to access the resource (see <see href="https://docs.microsoft.com/dotnet/framework/misc/using-the-assert-method">Using the Assert Method</see>).</summary>
       </Docs>
     </Member>
     <Member MemberName="Demand">
@@ -188,7 +188,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>The ability to access the resource specified by the current permission object is denied to callers, even if they have been granted permission to access it (see [Using the Deny Method](http://msdn.microsoft.com/library/6b4d2e01-c504-4ac3-b50e-d6f5e7f5df25)).</summary>
+        <summary>The ability to access the resource specified by the current permission object is denied to callers, even if they have been granted permission to access it (see <see href="http://msdn.microsoft.com/library/6b4d2e01-c504-4ac3-b50e-d6f5e7f5df25">Using the Deny Method</see>).</summary>
       </Docs>
     </Member>
     <Member MemberName="InheritanceDemand">

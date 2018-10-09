@@ -23,7 +23,7 @@ Aspects of high-quality open-source .NET libraries:
 
 ## Recommendations
 
-With each article, there is a list of recommendations for your open-source .NET library using **Do**, **Consider**, **Avoid**, and **Do not**. The wording of each recommendation indicates how strongly it should be followed.
+With each article, there is a list of recommendations for your .NET library using **Do**, **Consider**, **Avoid**, and **Do not**. The wording of each recommendation indicates how strongly it should be followed.
 
 A **Do** recommendation is one that should almost always be followed:
 

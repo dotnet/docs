@@ -87,7 +87,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum number of messages that may be buffered by the block.</summary>
-        <value>The maximum number of messages.</value>
+        <value>The maximum number of messages. The default is -1, which indicates an unlimited number of messages.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

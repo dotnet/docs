@@ -66,7 +66,7 @@ StudentInfo.Display("Mary", age:=19, #9/21/1998#)
 
 [`Private Protected` member access modifier](../language-reference/modifiers/private-protected.md)
 
-This new keyword combination defines a member that is accessible by all members in its containing class as well as by types derived from the containing class, but only if they are found in the containing assembly. Because structures cannot be inherited, `Private Protected` can only be applied to the members of a class.
+This new keyword combination defines a member that is accessible by all members in its containing class as well as by types derived from the containing class, but only if they are also found in the containing assembly. Because structures cannot be inherited, `Private Protected` can only be applied to the members of a class.
 
 **Leading hex/binary/octal separator**
 

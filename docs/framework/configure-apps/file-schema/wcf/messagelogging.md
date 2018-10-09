@@ -47,7 +47,7 @@ This element defines the settings for the message-logging capabilities of Window
   
 |Element|Description|  
 |-------------|-----------------|  
-|filters|The `filters` element holds a collection of XPath filters. When transport message logging is enabled (`logMessagesAtTransportLevel` is `true`), only messages matching the filters will be logged.<br /><br /> Filters are applied only at the transport layer. Service level and malformed message logging are not affected by filters.<br /><br /> The only attribute for this element, `filter`, is an XpathFilter.<br /><br /> `<filters>     <add xmlns:soap="https://www.w3.org/2003/05/soap-envelope">/soap:Envelope</add> </filters>`|  
+|filters|The `filters` element holds a collection of XPath filters. When transport message logging is enabled (`logMessagesAtTransportLevel` is `true`), only messages matching the filters will be logged.<br /><br /> Filters are applied only at the transport layer. Service level and malformed message logging are not affected by filters.<br /><br /> The only attribute for this element, `filter`, is an XpathFilter.<br /><br /> `<filters>     <add xmlns:soap="http://www.w3.org/2003/05/soap-envelope">/soap:Envelope</add> </filters>`|  
   
 ### Parent Elements  
   

@@ -10,7 +10,7 @@ A schema can include an **msdata:Relationship** annotation to explicitly specify
   
 ```xml  
 <xs:schema id="MyDataSet" xmlns=""   
-            xmlns:xs="https://www.w3.org/2001/XMLSchema"   
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"   
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
 <xs:element name="MyDataSet" msdata:IsDataSet="true">  
  <xs:complexType>  

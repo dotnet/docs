@@ -101,7 +101,7 @@ foreach (DataTable dataTable in dataSet.Tables)
   elementFormDefault="qualified"  
   targetNamespace="http://www.tempuri.org/customDataSet.xsd"   
   xmlns="http://www.tempuri.org/customDataSet.xsd"   
-  xmlns:xsd="https://www.w3.org/2001/XMLSchema"   
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
   xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
 </xsd:schema>  
 ```  

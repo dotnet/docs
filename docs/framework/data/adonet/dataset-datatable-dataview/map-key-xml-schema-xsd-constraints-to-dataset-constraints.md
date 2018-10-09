@@ -21,7 +21,7 @@ In a schema, you can specify a key constraint on an element or attribute using t
   
 ```xml  
 <xs:schema id="cod"  
-            xmlns:xs="https://www.w3.org/2001/XMLSchema"   
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"   
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
   <xs:element name="Customers">  
     <xs:complexType>  

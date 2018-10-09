@@ -81,7 +81,7 @@ xmlns:codegen="urn:schemas-microsoft-com:xml-msprop"
 <xs:schema id="CustomerDataSet"   
       xmlns:codegen="urn:schemas-microsoft-com:xml-msprop"  
       xmlns=""   
-      xmlns:xs="https://www.w3.org/2001/XMLSchema"   
+      xmlns:xs="http://www.w3.org/2001/XMLSchema"   
       xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
   <xs:element name="CustomerDataSet" msdata:IsDataSet="true">  
     <xs:complexType>  

@@ -13,7 +13,7 @@ This section provides an overview of how the relational schema of a `DataSet` is
 ```xml  
 <xs:schema id="SomeID"   
             xmlns=""   
-            xmlns:xs="https://www.w3.org/2001/XMLSchema"   
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"   
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
    <xs:element name="MyDataSet" msdata:IsDataSet="true">  
      <xs:complexType>  
@@ -51,7 +51,7 @@ Customers (CustomerID , CompanyName, Phone)
 ```xml  
 <xs:schema id="SomeID"   
             xmlns=""   
-            xmlns:xs="https://www.w3.org/2001/XMLSchema"   
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"   
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
    <xs:element name="InStateCustomers" type="customerType" />  
    <xs:element name="OutOfStateCustomers" type="customerType" />  

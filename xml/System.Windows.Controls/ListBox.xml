@@ -371,6 +371,13 @@
 ## Remarks  
  If the object is not visible, it is aligned at the top or bottom of the viewport.  
   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Controls.ListBox.ScrollIntoView%2A> method to scroll an item in the list box into the viewport.
+  
+ [!code-csharp[ListBox_snip#ListBoxScrollIntoView](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBox_snip/CSharp/Window1.xaml.cs#listboxscrollintoview)]
+ [!code-vb[ListBox_snip#ListBoxScrollIntoView](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBox_snip/visualbasic/window1.xaml.vb#listboxscrollintoview)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

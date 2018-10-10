@@ -10,7 +10,7 @@ ms.date: 06/27/2018
 
 This article provides information on getting started with .NET Core. .NET Core can be installed on Windows, Linux, and macOS. You can code in your favorite text editor and produce cross-platform libraries and applications. 
 
-If you're unsure what .NET Core is, or how it relates to other .NET technologies, start with the [What is .NET](https://www.microsoft.com/net/learn/what-is-dotnet) overview. Put simply, .NET Core is an open-source, cross-platform, implementation of .NET.
+If you're unsure what .NET Core is, or how it relates to other .NET technologies, start with the [What is .NET](https://www.microsoft.com/net/learn/dotnet/what-is-dotnet) overview. Put simply, .NET Core is an open-source, cross-platform, implementation of .NET.
 
 ## Create an application
 

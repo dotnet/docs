@@ -625,6 +625,8 @@
 ## Remarks  
  The minimum size of the key is 128 bits, and the maximum size is 256 bits.  
   
+ Changing the `KeySize` value resets the key and generates a new random key. This happens whenever the `KeySize` property setter is invoked (including when it's assigned the same value).  
+  
  ]]></format>
         </remarks>
       </Docs>

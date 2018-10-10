@@ -1,11 +1,31 @@
 ---
-title: Reference semantics with value types
-description: Understand the language features that minimize copying structures safely
+title: Write safe and efficient code
+description: Recent enhancements to the C# language enable you to write verifiable safe code that the performance previously associated with unsafe code. 
 ms.date: 11/10/2017
 ms.custom: mvc
 ---
 
-# Reference semantics with value types
+# Write safe and efficient code
+
+. Define safe code (briefly)
+. Reference passing vs. value passing. And size of references.
+
+Goals for performance: minimize both copying and allocations.
+
+## Structs help minimize allocations
+
+. as members of other types
+. as arguments to methods
+. as return values
+
+## Structs mean more copies
+
+## pass structs by readonly copy (when size is larger than a reference)
+
+## Understand defensive copies
+
+
+=========================================
 
 An advantage to using value types is that they often avoid heap allocations.
 The disadvantage is that they are copied by value. This tradeoff

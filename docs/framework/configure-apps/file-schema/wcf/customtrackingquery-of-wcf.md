@@ -53,7 +53,7 @@ None.
 
 |Element|Description|  
 |-------------|-----------------|  
-|[\<customTrackingQuery>](customtrackingqueries-of-wcf.md)|Represents a collection of queries that are used to track events that you define in your code activities.|
+|[\<customTrackingQueries>](customtrackingqueries-of-wcf.md)|Represents a collection of queries that are used to track events that you define in your code activities.|
   
 ## See also
 

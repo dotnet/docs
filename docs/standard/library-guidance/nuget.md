@@ -15,7 +15,7 @@ NuGet is a package manager for the .NET eco-system and is the primary way develo
 
 A NuGet package (`*.nupkg`) is a zip file that contains .NET assemblies and associated metadata.
 
-There are two main ways to create a NuGet package. The newer and recommended way is to create a package from a SDK-style project (project file the content starts with `<Project Sdk="Microsoft.NET.Sdk">`). Assemblies and targets are automatically added to the package and remaining metadata is added to the MSBuild file, like package name and version number. Compiling with the [`dotnet pack`](../../core/tools/dotnet-pack.md) command outputs a `*.nupkg` file instead of assemblies.
+There are two main ways to create a NuGet package. The newer and recommended way is to create a package from a SDK-style project (project file whose content starts with `<Project Sdk="Microsoft.NET.Sdk">`). Assemblies and targets are automatically added to the package and remaining metadata is added to the MSBuild file, like package name and version number. Compiling with the [`dotnet pack`](../../core/tools/dotnet-pack.md) command outputs a `*.nupkg` file instead of assemblies.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

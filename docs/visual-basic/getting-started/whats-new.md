@@ -1,6 +1,6 @@
 ---
 title: "What's new for Visual Basic"
-ms.date: 02/15/2018
+ms.date: 10/04/2018
 f1_keywords: 
   - "VB.StartPage.WhatsNew"
 helpviewer_keywords: 
@@ -13,7 +13,7 @@ ms.author: ronpet
 ---
 # What's new for Visual Basic
 
-This topic lists key feature names for each version of Visual Basic, with detailed descriptions of the new and enhanced features in the lastest version of the language.
+This topic lists key feature names for each version of Visual Basic, with detailed descriptions of the new and enhanced features in the latest versions of the language.
   
 ## Current version
 
@@ -63,6 +63,10 @@ For example, the following method call has two positional arguments between a na
 ```vb
 StudentInfo.Display("Mary", age:=19, #9/21/1998#)
 ```
+
+[`Private Protected` member access modifier](../language-reference/modifiers/private-protected.md)
+
+This new keyword combination defines a member that is accessible by all members in its containing class as well as by types derived from the containing class, but only if they are also found in the containing assembly. Because structures cannot be inherited, `Private Protected` can only be applied to the members of a class.
 
 **Leading hex/binary/octal separator**
 

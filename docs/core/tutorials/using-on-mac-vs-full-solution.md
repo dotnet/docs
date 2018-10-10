@@ -26,7 +26,7 @@ For more information on prerequisites, see the [Prerequisites for .NET Core on M
 
 ## Building a library
 
-1. On the Welcome screen, select **New Project**. In the **New Project** dialog under the **Multiplatform** node, select the **.NET Standard Library** template. Select **Next**.
+1. On the Welcome screen, select **New Project**. In the **New Project** dialog under the **Multiplatform** node, select the **.NET Standard Library** template. This creates a .NET Standard library that targets .NET Core as well as any other .NET implementation that supports version 2.0 of the [.Net Standard](https://docs.microsoft.com/en-us/dotnet/standard/net-standard). Select **Next**.
 
    ![New project dialog](./media/using-on-mac-vs-full-solution/vsmacfull01.png)
 

@@ -1,6 +1,6 @@
 ---
 title: "Connection Strings in ADO.NET"
-ms.date: "10/18/2017"
+ms.date: "10/10/2018"
 ms.assetid: 745c5f95-2f02-4674-b378-6d51a7ec2490
 ---
 # Connection Strings in ADO.NET
@@ -32,11 +32,11 @@ The quotation marks themselves, as well as the equals sign, do not require escap
 
 Since each value is read till the next semicolon or the end of string, the value in the latter example is `a=b=c`, and the final semicolon is optional.
 
-All connection strings share the same basic syntax described above. The set of recognized keywords depends on the provider, however, and has evolved over the years from earlier APIs such as *ODBC*. The *.NET Framework* data provider for *SQL Server* (`SqlClient`) supports many keywords from older APIs, but is generally more flexible, and accepts synonyms for many of the common connection string keywords.
+All connection strings share the same basic syntax described above. The set of recognized keywords depends on the provider, however, and has evolved over the years from earlier APIs such as *ODBC*. The *.NET Framework* data provider for *SQL Server* (`SqlClient`) supports many keywords from older APIs, but is generally more flexible and accepts synonyms for many of the common connection string keywords.
 
-Spelling mistakes can cause errors. For example, `Integrated Security=true` is valid, but `IntegratedSecurity=true` causes an error.
+Typing mistakes can cause errors. For example, `Integrated Security=true` is valid, but `IntegratedSecurity=true` causes an error.
 
-Connection strings constructed manually at run time from unvalidated user input are vulnerable to string-injection attacks, and jeopardize security at the data source. To address these problems, *ADO.NET* 2.0 introduced [connection string builders](../../../../docs/framework/data/adonet/connection-string-builders.md) for each *.NET Framework* data provider. These connection string builders expose parameters as strongly-typed properties, and make it possible to validate the connection string before it's sent to the data source.
+Connection strings constructed manually at run time from unvalidated user input are vulnerable to string-injection attacks and jeopardize security at the data source. To address these problems, *ADO.NET* 2.0 introduced [connection string builders](../../../../docs/framework/data/adonet/connection-string-builders.md) for each *.NET Framework* data provider. These connection string builders expose parameters as strongly-typed properties, and make it possible to validate the connection string before it's sent to the data source.
 
 ## In This Section  
  [Connection String Builders](../../../../docs/framework/data/adonet/connection-string-builders.md)  

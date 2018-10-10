@@ -1302,7 +1302,7 @@
         <param name="directory">Path of the directory.</param>
         <summary>Returns <see langword="True" /> if the specified directory exists.</summary>
         <returns>
-          <see langword="True" /> if the directory exists; otherwise <see langword="False" />.</returns>
+          <see langword="True" /> if the directory exists; otherwise <see langword="False" />. This method also returns <see langword="False" /> if the parameter represents the name and path of a file rather than a directory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1378,7 +1378,7 @@
       <Docs>
         <param name="file">Name and path of the file.</param>
         <summary>Returns <see langword="True" /> if the specified file exists.</summary>
-        <returns>Returns <see langword="True" /> if the file exists; otherwise this method returns <see langword="False" />.</returns>
+        <returns>Returns <see langword="True" /> if the file exists; otherwise this method returns <see langword="False" />. This method also returns <see langword="False" /> if the parameter represents the path of a directory rather than a file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

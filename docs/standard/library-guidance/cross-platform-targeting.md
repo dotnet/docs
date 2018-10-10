@@ -70,8 +70,8 @@ To shield your consumers from having to build for individual frameworks, you sho
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <!-- This project will output netstandard2.0 and net471 assemblies -->
-    <TargetFrameworks>netstandard2.0;net471</TargetFrameworks>
+    <!-- This project will output netstandard2.0 and net461 assemblies -->
+    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
   </PropertyGroup>
 </Project>
 ```

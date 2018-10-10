@@ -10,25 +10,25 @@ ms.assetid: 4d879f69-f889-4d3f-a781-75194e143400
 The 6.0 release of C# contained many features that improve
 productivity for developers. Features in this release include:
 
-* [Read-only Auto-properties](#read-only-auto-properties):
+* [Read-only auto-properties](#read-only-auto-properties):
     - You can create read-only auto-properties that can be set only in constructors.
-* [Auto-Property Initializers](#auto-property-initializers):
+* [Auto-property initializers](#auto-property-initializers):
     - You can write initialization expressions to set the initial value of an auto-property.
 * [Expression-bodied function members](#expression-bodied-function-members):
     - You can author one-line methods using lambda expressions.
 * [using static](#using-static):
     - You can import all the methods of a single class into the current namespace.
-* [Null - conditional operators](#null-conditional-operators):
+* [Null-conditional operators](#null-conditional-operators):
     - You can concisely and safely access members of an object while still checking for null with the null conditional operator.
-* [String Interpolation](#string-interpolation):
+* [String interpolation](#string-interpolation):
     - You can write string formatting expressions using inline expressions instead of positional arguments.
 * [Exception filters](#exception-filters):
     - You can catch expressions based on properties of the exception or other program state. 
-* [nameof Expressions](#nameof-expressions):
+* [The `nameof` expression](#the-nameof-expression):
     - You can let the compiler generate string representations of symbols.
 * [await in catch and finally blocks](#await-in-catch-and-finally-blocks):
     - You can use `await` expressions in locations that previously disallowed them.
-* [index initializers](#index-initializers):
+* [Index initializers](#index-initializers):
     - You can author initialization expressions for associative containers as well as sequence containers.
 * [Extension methods for collection initializers](#extension-add-methods-in-collection-initializers):
     - Collection initializers can rely on accessible extension methods, in addition to member methods.
@@ -46,7 +46,7 @@ than on the constructs of the language.
 
 The remainder of this topic provides details on each of these features.
 
-## Auto-Property enhancements
+## Auto-property enhancements
 
 The syntax for automatically implemented properties (usually referred to as 'auto-properties')
 made it very easy to create properties
@@ -103,9 +103,9 @@ the more concise and convenient auto-property syntax.
 
 If adding this syntax does not not remove an accessible method, it is a [binary compatible change](version-update-considerations.md#binary-compatible-changes).
 
-### Auto-Property Initializers
+### Auto-property initializers
 
-*Auto-Property Initializers* let you declare the initial value for
+*Auto-property initializers* let you declare the initial value for
 an auto-property as part of the property declaration.  In earlier versions,
 these properties would need to have setters and you would need
 to use that setter to initialize the data storage used by the backing
@@ -288,23 +288,22 @@ to use any expression, including method calls, on the left side of the
 side effects occur only once. You can see an example in our content
 on [events](../events-overview.md#language-support-for-events).
 
-## String Interpolation
+## String interpolation
 
-C# 6 contains new syntax for composing strings from a format string
-and expressions that are evaluated to produce other string values.
+C# 6 contains new syntax for composing strings from a string
+and embedded expressions that are evaluated to produce other string values.
 
 Traditionally, you needed to use positional parameters in a method
-like `string.Format`:
+like <xref:System.String.Format%2A?displayProperty=nameWithType>:
 
 [!code-csharp[stringFormat](../../../samples/snippets/csharp/new-in-6/oldcode.cs#stringFormat)]
 
 With C# 6, the new [string interpolation](../language-reference/tokens/interpolated.md) feature enables you to embed
-the expressions in the format string. Simply preface the string with
-`$`:
+the expressions in a string. Simply preface the string with `$`:
 
 [!code-csharp[stringInterpolation](../../../samples/snippets/csharp/new-in-6/newcode.cs#FullNameExpressionMember)]
 
-This initial example uses property expressions for the substituted
+This example uses property expressions for the substituted
 expressions. You can expand on this syntax to use any expression. For
 example, you could compute a student's grade point average as part of
 the interpolation:
@@ -314,7 +313,7 @@ the interpolation:
 Running the preceding example, you would find that the output for `Grades.Average()`
 might have more decimal places than you would like. The string interpolation
 syntax supports all the format strings available using earlier formatting
-methods. You add the format strings inside the braces. Add a `:` following
+methods. You specify the format string inside the braces. Add a `:` following
 the expression to format:
 
 [!code-csharp[stringInterpolationFormat](../../../samples/snippets/csharp/new-in-6/newcode.cs#stringInterpolationFormat)]
@@ -324,7 +323,7 @@ a floating-point number with two decimal places.
 
 The `:` is always interpreted as the separator between the expression
 being formatted and the format string. This can introduce problems when
-your expression uses a `:` in another way, such as a conditional operator:
+your expression uses a `:` in another way, such as a [conditional operator](../language-reference/operators/conditional-operator.md):
 
 ```csharp
 public string GetGradePointPercentages() =>
@@ -332,8 +331,7 @@ public string GetGradePointPercentages() =>
 ```
 
 In the preceding example, the `:` is parsed as the beginning of the format string, not part
-of the conditional operator. In all cases where this happens, you can
-surround the expression with parentheses to force the compiler to interpret
+of the conditional operator. In all cases where this happens, surround the expression with parentheses to force the compiler to interpret
 the expression as you intend:
 
 [!code-csharp[stringInterpolationConditional](../../../samples/snippets/csharp/new-in-6/newcode.cs#stringInterpolationConditional)]
@@ -350,16 +348,17 @@ is very likely more complex than you would want in production code.
 Rather, it is illustrative of the breadth of the feature. Any C# expression
 can be placed between the curly braces of an interpolated string.
 
+To get started with string interpolation, check the [String interpolation in C#](../quick-starts/interpolated-strings.yml) interactive quickstart.
+
 ### String interpolation and specific cultures
 
 All the examples shown in the preceding section format the strings using the current
-culture and language on the machine where the code executes. Often you
+culture on the machine where the code executes. Often you
 may need to format the string produced using a specific culture.
-To do that use the fact that the object produced by a string interpolation can be implicitly converted to <xref:System.FormattableString>.
+To do that use the fact that the object produced by a string interpolation can be implicitly converted to <xref:System.FormattableString?displayProperty=nameWithType>.
 
-The <xref:System.FormattableString> instance contains the format string, and the results
-of evaluating the expressions before converting them to strings. You can
-use public methods of <xref:System.FormattableString> to specify the culture when
+The <xref:System.FormattableString> instance contains the composite format string, and the results
+of evaluating the expressions before converting them to strings. Use the <xref:System.FormattableString.ToString(System.IFormatProvider)> method to specify the culture when
 formatting a string. For example, the following example produces a string
 using German culture. (It uses the ',' character
 for the decimal separator,
@@ -370,9 +369,9 @@ FormattableString str = $"Average grade is {s.Grades.Average()}";
 var gradeStr = str.ToString(new System.Globalization.CultureInfo("de-DE"));
 ```
 
-For more information, see the [String interpolation](../language-reference/tokens/interpolated.md) topic.
+For more information, see the [String interpolation](../language-reference/tokens/interpolated.md) article and the [String interpolation in C#](../tutorials/string-interpolation.md) tutorial.
 
-## Exception Filters
+## Exception filters
 
 Another new feature in C# 6 is *exception filters*. Exception Filters
 are clauses that determine when a given catch clause should be applied.
@@ -453,7 +452,7 @@ whenever `PerformFailingOperation()` throws a `RecoverableException`.
 The debugger breaks your program, because the catch clause won't be executed
 due to the false-returning exception filter.
 
-## `nameof` Expressions
+## The `nameof` expression
 
 The `nameof` expression evaluates to the name of a symbol. It's a great
 way to get tools working whenever you need the name of a variable,
@@ -512,7 +511,7 @@ if any, is lost.
 > This behavior is the reason it's recommended to write `catch` and `finally`
 > clauses carefully, to avoid introducing new exceptions.
 
-## Index Initializers
+## Index initializers
 
 *Index Initializers* is one of two features that make collection
 initializers more consistent with index usage. In earlier releases of C#, you could use

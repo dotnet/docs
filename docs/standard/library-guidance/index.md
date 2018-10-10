@@ -33,10 +33,10 @@ On the other hand, **Consider** recommendations should generally be followed, bu
 
 **✔️ CONSIDER** using [SemVer 2.0.0](https://semver.org/) to version your NuGet package.
 
-**Avoid** recommendations are things that aren't a good idea, but breaking the rule sometimes makes sense:
+**Avoid** recommendations are things that are generally not a good idea, but breaking the rule sometimes makes sense:
 
 **❌ AVOID** NuGet package references that demand an exact version.
 
-And finally, **Do not** indicates something you should almost never do:
+And finally, **do not** indicates something you should almost never do:
 
 **❌ DO NOT** publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.

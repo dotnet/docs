@@ -186,8 +186,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.ComponentModel.DataAnnotations.RangeAttribute.%23ctor%2A> method to specify the range for a `DateTime` field. It also includes a custom error message that shows how to use the formatting capabilities of the <xref:System.ComponentModel.DataAnnotations.RangeAttribute.FormatErrorMessage%2A> method.  
   
- [!code-csharp[System.ComponentModel.DataAnnotations.RangeAttribute#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.RangeAttribute/CS/Product.cs#12)]
- [!code-vb[System.ComponentModel.DataAnnotations.RangeAttribute#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.RangeAttribute/VB/Product.vb#12)]  
+ [!code-csharp[System.ComponentModel.DataAnnotations.RangeAttribute#13](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.RangeAttribute/CS/Product.cs#13)]
+ [!code-vb[System.ComponentModel.DataAnnotations.RangeAttribute#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.RangeAttribute/VB/Product.vb#13)]  
   
  ]]></format>
         </remarks>

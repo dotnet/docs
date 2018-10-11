@@ -9,7 +9,7 @@ ms.date: 09/22/2017
 
 A primitive of containers is immutability. When compared to a VM, containers don't disappear as a common occurrence. A VM might fail in various forms from dead processes, overloaded CPU, or a full or failed disk. Yet, we expect the VM to be available and RAID drives are commonplace to assure drive failures maintain data.
 
-However, containers are thought to be instances of processes. A process doesn't maintain durable state. Even though a container can write to its local storage, assuming that that instance will be around indefinitely would be equivalent to assuming a single-copy memory will be durable. You should assume that containers, like processes, are duplicated, killed, or, when managed with a container orchestrator, they might be moved.
+However, containers are thought to be instances of processes. A process doesn't maintain durable state. Even though a container can write to its local storage, assuming that the instance will be around indefinitely would be equivalent to assuming a single-copy memory will be durable. You should assume that containers, like processes, are duplicated, killed, or, when managed with a container orchestrator, they might be moved.
 
 Docker uses a feature known as an *overlay file system* to implement a copy-on-write process that stores any updated information to the root file system of a container, compared to the original image on which it is based. These changes are lost if the container is subsequently deleted from the system. A container, therefore, does not have persistent storage by default. Although it's possible to save the state of a container, designing a system around this would be in conflict with the principle of container architecture.
 

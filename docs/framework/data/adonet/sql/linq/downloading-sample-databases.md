@@ -36,14 +36,14 @@ SQL Server Express is a free, entry-level edition of SQL Server that you can red
   
 [SQL Server Express Editions](https://www.microsoft.com/sql-server/sql-server-editions-express)
 
-If you're using Visual Studio, SQL Server Express LocalDB is included in the Community edition as well as the Professional and higher editions.  
+If you're using [Visual Studio](https://visualstudio.microsoft.com/free-developer-offers/), SQL Server Express LocalDB is included in the Community edition as well as the Professional and higher editions.  
 
 ## <a name="get_ssms"></a> Get SQL Server Management Studio
 If you want to view or modify a database that you've downloaded, you can use SQL Server Management Studio (SSMS). Download SSMS from the following page:
 
 [Download SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) 
 
-You can also view and manage databases in the Visual Studio integrated development environment (IDE). In Visual Studio, connect to the database from **SQL Server Object Explorer**, or create a Data Connection to the database in **Server Explorer**. Open these explorer panes from the **View** menu.
+You can also view and manage databases in the Visual Studio integrated development environment (IDE). In [Visual Studio](https://visualstudio.microsoft.com/free-developer-offers/), connect to the database from **SQL Server Object Explorer**, or create a Data Connection to the database in **Server Explorer**. Open these explorer panes from the **View** menu.
   
 ## See Also  
  [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)

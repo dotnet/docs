@@ -48,7 +48,21 @@
  <xref:System.Numerics.Vector%601> is an immutable structure that represents a single vector of a specified numeric type. The count of a <xref:System.Numerics.Vector%601> instance is fixed, but its upper limit is CPU-register dependent. It is intended to be used as a building block for vectorizing large algorithms.  
   
  The <xref:System.Numerics.Vector%601> structure provides support for hardware acceleration.  
-  
+ 
+ The following table shows which primitive numeric data type and operation combination uses intrinsic instructions for faster executions:
+| | `+` | `-` | `*` | `/` |
+| --- | :---: | :---: | :---: | :---: |
+|`sbyte` | Yes | Yes | No | No |
+|`byte` | Yes | Yes | No | No |
+|`short` | Yes | Yes | Yes | No |
+|`ushort` | Yes | Yes | No | No |
+| `int` | Yes | Yes | Yes | No |
+| `uint` | Yes | Yes | No | No |
+| `long` | Yes | Yes | No | No |
+| `ulong` | Yes | Yes | No | No |
+| `float` | Yes | Yes | Yes | Yes |
+| `double` | Yes | Yes | Yes | Yes |
+
  ]]></format>
     </remarks>
   </Docs>

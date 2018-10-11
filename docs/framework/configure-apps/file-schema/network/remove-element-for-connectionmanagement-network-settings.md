@@ -56,7 +56,7 @@ Removes an IP address or DNS name from the connection management list.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following example removes any connection management list entries for the server www.adventure-works.com and then configures an application to use four connections to the server www.contoso.com and two connections to all other servers.  
+ The following example removes any connection management list entries for the server `www.adventure-works.com` and then configures an application to use four connections to the server `www.contoso.com` and two connections to all other servers.  
   
 ```xml  
 <configuration>  

@@ -36,7 +36,7 @@ IPHostEntry ipHostInfo = Dns.Resolve("host.contoso.com");
 IPAddress ipAddress = ipHostInfo.AddressList[0];  
 ```  
   
- The Internet Assigned Numbers Authority (Iana) defines port numbers for common services (for more information, see www.iana.org/assignments/port-numbers). Other services can have registered port numbers in the range 1,024 to 65,535. The following code combines the IP address for host.contoso.com with a port number to create a remote endpoint for a connection.  
+ The Internet Assigned Numbers Authority (Iana) defines port numbers for common services (for more information, see [Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)). Other services can have registered port numbers in the range 1,024 to 65,535. The following code combines the IP address for host.contoso.com with a port number to create a remote endpoint for a connection.  
   
 ```vb  
 Dim ipe As New IPEndPoint(ipAddress, 11000)  

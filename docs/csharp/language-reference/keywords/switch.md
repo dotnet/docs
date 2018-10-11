@@ -92,7 +92,7 @@ You can correct this issue and eliminate the compiler warning in one of two ways
 
 - By changing the order of the switch sections.
 
-- By using a </a name="when">when clause</a> in the `case` label.
+- By using a [when clause](#when) in the `case` label.
 
 ## The `default` case
 

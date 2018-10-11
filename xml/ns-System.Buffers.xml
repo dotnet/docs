@@ -1,13 +1,7 @@
 <Namespace Name="System.Buffers">
   <Docs>
-    <summary>The <see cref="N:System.Buffers" /> namespace contains the <see cref="T:System.Buffers.ArrayPool`1" /> class, which represents a shared resource pool of reusable instances of type <see cref="T:T[]"/>.</summary>
+    <summary>The <see cref="N:System.Buffers" /> namespace contains types used in creating and managing memory buffers, such as those represented by <see cref="T:System.Span`1" /> and <see cref="T:System.Memory`1" />. </summary>
     <remarks>
-       <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-The <see cref="T:System.Buffers.ArrayPool`1" /> class, by allocating a shared buffer for array values, can offer significant improvements in performance for apps that make extensive use of arrays.
- ]]></format>
     </remarks>
   </Docs>
 </Namespace>

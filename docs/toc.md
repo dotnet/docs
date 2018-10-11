@@ -999,6 +999,7 @@
 #### [Range variable name can be inferred only from a simple or qualified name with no arguments](visual-basic/language-reference/error-messages/range-variable-name-can-be-inferred.md)
 #### [Reference required to assembly '<assemblyidentity>' containing type '<typename>', but a suitable reference could not be found due to ambiguity between projects '<projectname1>' and '<projectname2>'](visual-basic/language-reference/error-messages/reference-required-to-assembly-containing-type-but-suitable-reference-not-found.md)
 #### [Reference required to assembly '<assemblyname>' containing the base class '<classname>'](visual-basic/language-reference/error-messages/reference-required-to-assembly-assemblyname-containing-the-base-class-classname.md)
+#### [Requested operation is not available (BC35000)](visual-basic/language-reference/error-messages/bc35000.md)
 #### [Resume without error](visual-basic/language-reference/error-messages/resume-without-error.md)
 #### [Return type of function '<procedurename>' is not CLS-compliant](visual-basic/language-reference/error-messages/return-type-of-function-procedurename-is-not-cls-compliant.md)
 #### ['Set' accessor of property '<propertyname>' is not accessible](visual-basic/language-reference/error-messages/set-accessor-of-property-propertyname-is-not-accessible.md)

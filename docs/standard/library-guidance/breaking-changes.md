@@ -15,7 +15,7 @@ How a library is used by the .NET community changes the effect of breaking chang
 
 * **Low and middle-level libraries** like a serializer, HTML parser, database object-relational mapper, or web framework are the most affected by breaking changes.
 
-  Building block packages are used by end-user developers to build applications, and by other libraries as NuGet dependencies. For example, you're building an application and are using an open-source client to call a web service. A breaking update to dependency the client uses isn't something you can fix. It's the open-source client that needs to be changed and you have no control over it. You have to find compatible versions of the libraries or submit a fix to the client library and wait for a new version. The worst-case situation is if you want to use two libraries that depend on mutually incompatible versions of a third library.
+  Building block packages are used by end-user developers to build applications, and by other libraries as NuGet dependencies. For example, you're building an application and are using an open-source client to call a web service. A breaking update to a dependency the client uses isn't something you can fix. It's the open-source client that needs to be changed and you have no control over it. You have to find compatible versions of the libraries or submit a fix to the client library and wait for a new version. The worst-case situation is if you want to use two libraries that depend on mutually incompatible versions of a third library.
 
 * **High-level libraries** like a suite of UI controls are less sensitive to breaking changes.
 

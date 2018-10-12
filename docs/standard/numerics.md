@@ -1,6 +1,6 @@
 ---
-title: "Numerics in the .NET Framework"
-ms.date: "03/30/2017"
+title: "Numerics in .NET"
+ms.date: "10/12/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "SIMD"
@@ -14,15 +14,15 @@ ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Numerics in the .NET Framework
-The .NET Framework supports the standard numeric integral and floating-point primitives, as well as <xref:System.Numerics.BigInteger>, an integral type with no theoretical upper or lower bound, <xref:System.Numerics.Complex>, a type that represents complex numbers, and a set of SIMD-enabled vector types in the <xref:System.Numerics> namespace.  
+# Numerics in .NET
+
+.NET provides the standard numeric integral and floating-point primitives, as well as <xref:System.Numerics.BigInteger?displayProperty=nameWithType>, an integral type with no theoretical upper or lower bound, <xref:System.Numerics.Complex?displayProperty=nameWithType>, a type that represents complex numbers, and a set of SIMD-enabled vector types in the <xref:System.Numerics> namespace.
   
- In addition, System.Numerics.Vectors, the SIMD-enabled library of vectory types, was released as a NuGet package.  
+## Integral types
+
+.NET supports both signed and unsigned integers ranging from one byte to eight bytes in size. The following table lists the integral types and their size, indicates whether they are signed or unsigned, and documents their range. All integers are value types.  
   
-## Integral types  
- The .NET Framework supports both signed and unsigned integers ranging from one byte to eight bytes in length. The following table lists the integral types and their size, indicates whether they are signed or unsigned, and documents their range. All integers are value types.  
-  
-|Type|Signed/Unsigned|Size (bytes)|Minimum value|Maximum Value|  
+|Type|Signed/Unsigned|Size (in bytes)|Minimum value|Maximum value|  
 |----------|----------------------|--------------------|-------------------|-------------------|  
 |<xref:System.Byte?displayProperty=nameWithType>|Unsigned|1|0|255|  
 |<xref:System.Int16?displayProperty=nameWithType>|Signed|2|-32,768|32,767|  
@@ -33,31 +33,37 @@ The .NET Framework supports the standard numeric integral and floating-point pri
 |<xref:System.UInt32?displayProperty=nameWithType>|Unsigned|4|0|4,294,967,295|  
 |<xref:System.UInt64?displayProperty=nameWithType>|Unsigned|8|0|18,446,744,073,709,551,615|  
   
- Each integral type supports a standard set of arithmetic, comparison, equality, explicit conversion, and implicit conversion operators. Each integer also includes methods to perform equality comparisons and relative comparisons, to convert the string representation of a number to that integer, and to convert an integer to its string representation. Some additional mathematical operations beyond those handled by the standard operators, such as rounding and identifying the smaller or larger value of two integers, are available from the <xref:System.Math> class. You can also work with the individual bits in an integer value by using the <xref:System.BitConverter> class.  
+ Each integral type supports a standard set of arithmetic, comparison, equality, explicit conversion, and implicit conversion operators. Each integer also includes methods to perform equality comparisons and relative comparisons, to convert the string representation of a number to that integer, and to convert an integer to its string representation. Some additional mathematical operations beyond those handled by the standard operators, such as rounding and identifying the smaller or larger value of two integers, are available from the <xref:System.Math?displayProperty=nameWithType> class. You can also work with the individual bits in an integer value by using the <xref:System.BitConverter?displayProperty=nameWithType> class.  
   
- Note that the unsigned integral types are not CLS-compliant. For more information, see [Language Independence and Language-Independent Components](../../docs/standard/language-independence-and-language-independent-components.md).  
+ Note that the unsigned integral types are not CLS-compliant. For more information, see [Language Independence and Language-Independent Components](language-independence-and-language-independent-components.md).  
   
-## Floating-point types  
- The .NET Framework includes three primitive floating point types, which are listed in the following table.  
+## Floating-point types
+
+.NET includes three primitive floating-point types, which are listed in the following table.  
   
-|Type|Size (in bytes)|Minimum|Maximum|  
-|----------|-----------------------|-------------|-------------|  
-|<xref:System.Double?displayProperty=nameWithType>|8|-1.79769313486232e308|1.79769313486232e308|  
-|<xref:System.Single?displayProperty=nameWithType>|4|-3.402823e38|3.402823e38|  
-|<xref:System.Decimal?displayProperty=nameWithType>|16|-79,228,162,514,264,337,593,543,950,335|79,228,162,514,264,337,593,543,950,335|  
+|Type|Size (in bytes)|Approximate range|Precision|  
+|----------|--------|---------------------|--------------------|  
+|<xref:System.Single?displayProperty=nameWithType>|4|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|7 digits|  
+|<xref:System.Double?displayProperty=nameWithType>|8|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|15-16 digits|  
+|<xref:System.Decimal?displayProperty=nameWithType>|16|±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>|28-29 digits|  
   
- Each floating-point type supports a standard set of arithmetic, comparison, equality, explicit conversion, and implicit conversion operators. Each also includes methods to perform equality comparisons and relative comparisons, to convert the string representation of a floating-point number, and to convert a floating-point number to its string representation. Some additional mathematical, algebraic, and trigonometric operations are available from the <xref:System.Math> class. You can also work with the individual bits in <xref:System.Double> and <xref:System.Single> values by using the <xref:System.BitConverter> class. The <xref:System.Decimal?displayProperty=nameWithType> structure has its own methods, <xref:System.Decimal.GetBits%2A?displayProperty=nameWithType> and <xref:System.Decimal.%23ctor%28System.Int32%5B%5D%29?displayProperty=nameWithType>, for working with a decimal value's individual bits, as well as its own set of methods for performing some additional mathematical operations.  
+Each floating-point type supports a standard set of arithmetic, comparison, equality, explicit conversion, and implicit conversion operators. Each also includes methods to perform equality comparisons and relative comparisons, to convert the string representation of a floating-point number, and to convert a floating-point number to its string representation. Some additional mathematical, algebraic, and trigonometric operations are available from the <xref:System.Math?displayProperty=nameWithType> class. .NET Core 2.0 and later provides <xref:System.MathF?displayProperty=nameWithType> class to perform operations on <xref:System.Single> operands. You can also work with the individual bits in <xref:System.Double> and <xref:System.Single> values by using the <xref:System.BitConverter?displayProperty=nameWithType> class.
+
+The <xref:System.Decimal?displayProperty=nameWithType> structure has its own methods, <xref:System.Decimal.GetBits%2A?displayProperty=nameWithType> and <xref:System.Decimal.%23ctor%28System.Int32%5B%5D%29?displayProperty=nameWithType>, for working with a decimal value's individual bits, as well as its own set of methods for performing some additional mathematical operations.  
   
- The <xref:System.Double> and <xref:System.Single> types are intended to be used for values that by their nature are imprecise (such as the distance between two stars in the solar system) and for applications in which a high degree of precision and small rounding error is not required. You should use the <xref:System.Decimal?displayProperty=nameWithType> type for cases in which greater precision is required and rounding error is undesirable,  
+ The <xref:System.Double> and <xref:System.Single> types are intended to be used for values that by their nature are imprecise (such as the distance between two stars) and for applications in which a high degree of precision and small rounding error is not required. You should use the <xref:System.Decimal?displayProperty=nameWithType> type for cases in which greater precision is required and rounding error is undesirable.
   
-## BigInteger  
- <xref:System.Numerics.BigInteger?displayProperty=nameWithType> is an immutable type that represents an arbitrarily large integer whose value in theory has no upper or lower bounds. The methods of the <xref:System.Numerics.BigInteger> type closely parallel those of the other integral types.  
+## BigInteger
+
+<xref:System.Numerics.BigInteger?displayProperty=nameWithType> is an immutable type that represents an arbitrarily large integer whose value in theory has no upper or lower bounds. The methods of the <xref:System.Numerics.BigInteger> type closely parallel those of the other integral types.
   
-## Complex  
- The <xref:System.Numerics.Complex> type represents a complex number, that is, a number with a real number part and an imaginary number part. It supports a standard set of arithmetic, comparison, equality, explicit conversion, and implicit conversion operators, as well as mathematical, algebraic, and trigonometric methods.  
+## Complex
+
+The <xref:System.Numerics.Complex?displayProperty=nameWithType> type represents a complex number, that is, a number with a real number part and an imaginary number part. It supports a standard set of arithmetic, comparison, equality, explicit conversion, and implicit conversion operators, as well as mathematical, algebraic, and trigonometric methods.  
   
-## SIMD-enabled vector types  
- The <xref:System.Numerics> namespace includes a set of SIMD-enabled vector types for the .NET Framework. SIMD (Single Instruction Multiple Data operations) allows some operations to be parallelized at the hardware level, which results in huge performance improvements in mathematical, scientific, and graphics apps that perform computations over vectors.  
+## SIMD-enabled vector types
+
+The <xref:System.Numerics> namespace includes a set of SIMD-enabled vector types for the .NET Framework. SIMD (Single Instruction Multiple Data operations) allows some operations to be parallelized at the hardware level, which results in huge performance improvements in mathematical, scientific, and graphics apps that perform computations over vectors.  
   
  The SIMD-enabled vector types in the .NET Framework include the following: .  In addition, System.Numerics.Vectors includes a Plane type and a Quaternion type.  
   
@@ -73,4 +79,4 @@ The .NET Framework supports the standard numeric integral and floating-point pri
   
 ## See also
 
-- [Application Essentials](../../docs/standard/application-essentials.md)
+- [Application Essentials](application-essentials.md)

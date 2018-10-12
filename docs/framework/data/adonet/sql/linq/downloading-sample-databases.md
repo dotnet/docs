@@ -45,6 +45,6 @@ If you want to view or modify a database that you've downloaded, you can use SQL
 
 You can also view and manage databases in the Visual Studio integrated development environment (IDE). In [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), connect to the database from **SQL Server Object Explorer**, or create a Data Connection to the database in **Server Explorer**. Open these explorer panes from the **View** menu.
   
-## See Also  
+## See also
 
 - [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)

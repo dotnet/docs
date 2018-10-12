@@ -121,7 +121,7 @@ Next, copy over the package references into the `dependencies` section of the li
 }
 ```
 
-That's quite a lot of packages, many of which which certainly aren't necessary for extending collection types.  You can either remove packages manually or use a tool such as [ILSpy](http://ilspy.net) or [.NET Reflector](http://www.red-gate.com/products/dotnet-development/reflector) to identify which packages your code actually uses.
+That's quite a lot of packages, many of which certainly aren't necessary for extending collection types.  You can either remove packages manually or use a tool such as [ILSpy](http://ilspy.net) or [.NET Reflector](http://www.red-gate.com/products/dotnet-development/reflector) to identify which packages your code actually uses.
 
 Here's what a trimmed package could look like:
 

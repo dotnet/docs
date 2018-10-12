@@ -39,7 +39,9 @@ The benefits of strong naming are:
 You should strong name your open-source .NET libraries. Strong naming an assembly ensures the most people can use it, and strict assembly loading only affects the .NET Framework.
 
 > [!NOTE]
-> This guidance is specific to .NET libraries. Strong naming is not required by most .NET applications and should not be done by default.
+> This guidance is specific to publicly distributed .NET libraries, such as .NET libraries published on NuGet.org.
+>
+> Strong naming is not required by most .NET applications and should not be done by default.
 
 **✔️ CONSIDER** strong naming your library's assemblies.
 

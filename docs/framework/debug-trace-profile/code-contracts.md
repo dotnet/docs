@@ -84,7 +84,7 @@ Contract.EndContractBlock(); // All previous "if" checks are preconditions
   
 -   A prestate value in a postcondition refers to the value of an expression at the start of a method or property. It uses the expression `Contract.OldValue<T>(e)`, where `T` is the type of `e`. You can omit the generic type argument whenever the compiler is able to infer its type. (For example, the C# compiler always infers the type because it takes an argument.) There are several restrictions on what can occur in `e` and the contexts in which an old expression may appear. An old expression cannot contain another old expression. Most importantly, an old expression must refer to a value that existed in the method's precondition state. In other words, it must be an expression that can be evaluated as long as the method's precondition is `true`. Here are several instances of that rule.  
   
-    -   The value must exist in the method's precondition state. In order to reference a field on an object, the preconditions must guarantee that that object is always non-null.  
+    -   The value must exist in the method's precondition state. In order to reference a field on an object, the preconditions must guarantee that the object is always non-null.  
   
     -   You cannot refer to the method's return value in an old expression:  
   

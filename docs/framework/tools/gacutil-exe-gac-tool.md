@@ -87,7 +87,13 @@ myAssembly1,Version=1.1.0.0,Culture=en,PublicKeyToken=874e23ab874e23ab
 myAssembly2,Version=1.1.0.0,Culture=en,PublicKeyToken=874e23ab874e23ab  
 myAssembly3,Version=1.1.0.0,Culture=en,PublicKeyToken=874e23ab874e23ab  
 ```  
-  
+
+> [!NOTE]
+>  Attempting to install an assembly with a name longer than 85 characters (excluding the file extension) will result in the following error:
+> ```
+> Failure adding assembly to the cache:   The file name is too long.
+> ```
+
 ## Examples  
  The following command installs the assembly `mydll.dll` into the global assembly cache.  
   

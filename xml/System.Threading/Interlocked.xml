@@ -514,16 +514,16 @@
         <Parameter Name="comparand" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="location1">The destination object that is compared with <c>comparand</c> and possibly replaced.</param>
-        <param name="value">The object that replaces the destination object if the comparison results in equality.</param>
-        <param name="comparand">The object that is compared to the object at <c>location1</c>.</param>
+        <param name="location1">The destination object that is compared by reference with <c>comparand</c> and possibly replaced.</param>
+        <param name="value">The object that replaces the destination object if the reference comparison results in equality.</param>
+        <param name="comparand">The object that is compared by reference to the object at <c>location1</c>.</param>
         <summary>Compares two objects for reference equality and, if they are equal, replaces the first object.</summary>
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `comparand` and the object in `location1` are equal, then `value` is stored in `location1`. Otherwise, no operation is performed. The compare and exchange operations are performed as an atomic operation. The return value of <xref:System.Threading.Interlocked.CompareExchange%2A> is the original value in `location1`, whether or not the exchange takes place.  
+ If `comparand` and the object in `location1` are equal by reference, then `value` is stored in `location1`. Otherwise, no operation is performed. The compare and exchange operations are performed as an atomic operation. The return value of <xref:System.Threading.Interlocked.CompareExchange%2A> is the original value in `location1`, whether or not the exchange takes place.  
   
  Beginning with .NET Framework version 2.0, the <xref:System.Threading.Interlocked.CompareExchange%60%601%28%60%600%40%2C%60%600%2C%60%600%29> method overload provides a type-safe alternative for reference types.  
   
@@ -658,16 +658,16 @@
       </Parameters>
       <Docs>
         <typeparam name="T">The type to be used for <c>location1</c>, <c>value</c>, and <c>comparand</c>. This type must be a reference type.</typeparam>
-        <param name="location1">The destination, whose value is compared with <c>comparand</c> and possibly replaced. This is a reference parameter (<see langword="ref" /> in C#, <see langword="ByRef" /> in Visual Basic).</param>
-        <param name="value">The value that replaces the destination value if the comparison results in equality.</param>
-        <param name="comparand">The value that is compared to the value at <c>location1</c>.</param>
-        <summary>Compares two instances of the specified reference type <paramref name="T" /> for equality and, if they are equal, replaces the first one.</summary>
+        <param name="location1">The destination, whose value is compared by reference with <c>comparand</c> and possibly replaced. This is a reference parameter (<see langword="ref" /> in C#, <see langword="ByRef" /> in Visual Basic).</param>
+        <param name="value">The value that replaces the destination value if the comparison by reference results in equality.</param>
+        <param name="comparand">The value that is compared by reference to the value at <c>location1</c>.</param>
+        <summary>Compares two instances of the specified reference type <paramref name="T" /> for reference equality and, if they are equal, replaces the first one.</summary>
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `comparand` and the value in `location1` are equal, then `value` is stored in `location1`. Otherwise, no operation is performed. The comparison and the exchange are performed as an atomic operation. The return value of this method is the original value in `location1`, whether or not the exchange takes place.  
+ If `comparand` and the value in `location1` are equal by reference, then `value` is stored in `location1`. Otherwise, no operation is performed. The comparison and the exchange are performed as an atomic operation. The return value of this method is the original value in `location1`, whether or not the exchange takes place.  
   
  This method only supports reference types. There are overloads of the <xref:System.Threading.Interlocked.CompareExchange%2A> method for the value types <xref:System.Int32>, <xref:System.Int64>, <xref:System.IntPtr>, <xref:System.Single>, and <xref:System.Double>, but there is no support for other value types.  
   

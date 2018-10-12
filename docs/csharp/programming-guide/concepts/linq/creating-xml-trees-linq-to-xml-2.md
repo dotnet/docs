@@ -162,7 +162,23 @@ Console.WriteLine(contacts);
   </Contact>  
 </Contacts>  
 ```  
+
+### Creating an XElement with an XAttribute
+ If you pass an instance of the <xref:System.Xml.Linq.XAttribute> class for the content argument, the constructor creates an element with an attribute:
+
+```csharp  
+XElement phone = new XElement("Phone",  
+    new XAttribute("Type", "Home"),  
+    "555-555-5555");  
+Console.WriteLine(phone);  
+```  
   
+ This example produces the following output:  
+  
+```xml  
+<Phone Type="Home">555-555-5555</Phone>
+```   
+
 ### Creating an empty element  
  To create an empty <xref:System.Xml.Linq.XElement>, you do not pass any content to the constructor. The following example creates an empty element:  
   

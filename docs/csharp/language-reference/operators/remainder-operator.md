@@ -27,7 +27,7 @@ For the [float](../keywords/float.md) and [double](../keywords/double.md) operan
 - the sign of `z`, if non-zero, is the same as the sign of `x`;
 - the absolute value of `z` is the value produced by `|x| - n * |y|` where `n` is the largest possible integer that is less than or equal to `|x| / |y|` and `|x|` and `|y|` are the absolute values of `x` and `y`, respectively.
 
-For information about behavior of the `%` operator in case of non-finite operands, see the [Remainder operator](/dotnet/csharp/language-reference/language-specification/expressions#remainder-operator) section of the [C# language specification](/dotnet/csharp/language-reference/language-specification/index).
+For information about behavior of the `%` operator in case of non-finite operands, see the [Remainder operator](~/_csharplang/spec/expressions.md#remainder-operator) section of the [C# language specification](/dotnet/csharp/language-reference/language-specification/index).
 
 > [!NOTE]
 > This method of computing the remainder is analogous to that used for integer operands, but differs from the IEEE 754. If you need the remainder operation that complies with the IEEE 754, use the <xref:System.Math.IEEERemainder%2A?displayProperty=nameWithType> method.

@@ -51,7 +51,7 @@ Generics were added to version 2.0 of the C# language and the common language ru
 -   [Generics in the Run Time](../../../csharp/programming-guide/generics/generics-in-the-run-time.md)  
   
 ## C# Language Specification  
- For more information, see the [C# Language Specification](../../../csharp/language-reference/language-specification/index.md).  
+ For more information, see the [C# Language Specification](~/_csharplang/spec/types.md#constructed-types).  
   
 ## See Also
 

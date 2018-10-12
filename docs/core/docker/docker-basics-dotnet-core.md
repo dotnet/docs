@@ -1,9 +1,7 @@
 ---
 title: Learn Docker Basics with .NET Core
 description: A Docker and .NET Core Basic Tutorial
-author: jralexander
-ms.author: johalex
-ms.date: 11/06/2017
+ms.date: 10/11/2018
 ms.topic: tutorial
 ms.custom: mvc
 ---
@@ -35,14 +33,14 @@ To complete this tutorial:
 
 #### .NET Core 2.1 SDK
 
-* Install [.NET Core SDK 2.1](https://www.microsoft.com/net/core).
+* Install [.NET Core SDK 2.1](https://www.microsoft.com/net/download).
 
 See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) for the complete list of .NET Core 2.1 supported operating systems, out of support OS versions, and lifecycle policy links.
 
 * Install your favorite code editor, if you haven't already.
 
 > [!TIP]
-> Need to install a code editor? Try [Visual Studio](https://visualstudio.com/downloads)!
+> Need to install a code editor? Try [Visual Studio Code](https://code.visualstudio.com/download)!
 
 #### Installing Docker Client
 

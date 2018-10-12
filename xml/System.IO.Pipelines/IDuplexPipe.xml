@@ -1,0 +1,61 @@
+﻿<Type Name="IDuplexPipe" FullName="System.IO.Pipelines.IDuplexPipe">
+  <TypeSignature Language="C#" Value="public interface IDuplexPipe" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDuplexPipe" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Pipelines.IDuplexPipe" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDuplexPipe" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDuplexPipe" />
+  <TypeSignature Language="F#" Value="type IDuplexPipe = interface" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Pipelines</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a class that provides a duplex pipe from which data can be read from and written to.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="public System.IO.Pipelines.PipeReader Input { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Pipelines.PipeReader Input" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipelines.IDuplexPipe.Input" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Input As PipeReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Pipelines::PipeReader ^ Input { System::IO::Pipelines::PipeReader ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Input : System.IO.Pipelines.PipeReader" Usage="System.IO.Pipelines.IDuplexPipe.Input" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Pipelines.PipeReader</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.IO.Pipelines.PipeReader" /> half of the duplex pipe.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Output">
+      <MemberSignature Language="C#" Value="public System.IO.Pipelines.PipeWriter Output { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Pipelines.PipeWriter Output" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipelines.IDuplexPipe.Output" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Output As PipeWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Pipelines::PipeWriter ^ Output { System::IO::Pipelines::PipeWriter ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Output : System.IO.Pipelines.PipeWriter" Usage="System.IO.Pipelines.IDuplexPipe.Output" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Pipelines.PipeWriter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.IO.Pipelines.PipeWriter" /> half of the duplex pipe.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

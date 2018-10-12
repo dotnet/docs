@@ -1,0 +1,109 @@
+﻿<Type Name="XmlUriData" FullName="System.ServiceModel.Syndication.XmlUriData">
+  <TypeSignature Language="C#" Value="public struct XmlUriData" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit XmlUriData extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.XmlUriData" />
+  <TypeSignature Language="VB.NET" Value="Public Structure XmlUriData" />
+  <TypeSignature Language="C++ CLI" Value="public value class XmlUriData" />
+  <TypeSignature Language="F#" Value="type XmlUriData = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlUriData (string uriString, UriKind uriKind, System.Xml.XmlQualifiedName elementQualifiedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string uriString, valuetype System.UriKind uriKind, class System.Xml.XmlQualifiedName elementQualifiedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlUriData.#ctor(System.String,System.UriKind,System.Xml.XmlQualifiedName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlUriData(System::String ^ uriString, UriKind uriKind, System::Xml::XmlQualifiedName ^ elementQualifiedName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.XmlUriData : string * UriKind * System.Xml.XmlQualifiedName -&gt; System.ServiceModel.Syndication.XmlUriData" Usage="new System.ServiceModel.Syndication.XmlUriData (uriString, uriKind, elementQualifiedName)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uriString" Type="System.String" />
+        <Parameter Name="uriKind" Type="System.UriKind" />
+        <Parameter Name="elementQualifiedName" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="uriString">To be added.</param>
+        <param name="uriKind">To be added.</param>
+        <param name="elementQualifiedName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementQualifiedName">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName ElementQualifiedName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName ElementQualifiedName" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.XmlUriData.ElementQualifiedName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementQualifiedName As XmlQualifiedName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ ElementQualifiedName { System::Xml::XmlQualifiedName ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementQualifiedName : System.Xml.XmlQualifiedName" Usage="System.ServiceModel.Syndication.XmlUriData.ElementQualifiedName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UriKind">
+      <MemberSignature Language="C#" Value="public UriKind UriKind { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.UriKind UriKind" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.XmlUriData.UriKind" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UriKind As UriKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property UriKind UriKind { UriKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.UriKind : UriKind" Usage="System.ServiceModel.Syndication.XmlUriData.UriKind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UriKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UriString">
+      <MemberSignature Language="C#" Value="public string UriString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UriString" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.XmlUriData.UriString" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UriString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UriString { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UriString : string" Usage="System.ServiceModel.Syndication.XmlUriData.UriString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

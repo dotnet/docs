@@ -1,0 +1,433 @@
+﻿<Type Name="Rfc3161TimestampRequest" FullName="System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest">
+  <TypeSignature Language="C#" Value="public sealed class Rfc3161TimestampRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Rfc3161TimestampRequest extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Rfc3161TimestampRequest" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Rfc3161TimestampRequest sealed" />
+  <TypeSignature Language="F#" Value="type Rfc3161TimestampRequest = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateFromData">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest CreateFromData (ReadOnlySpan&lt;byte&gt; data, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, System.Security.Cryptography.Oid requestedPolicyId = null, Nullable&lt;ReadOnlyMemory&lt;byte&gt;&gt; nonce = null, bool requestSignerCertificates = false, System.Security.Cryptography.X509Certificates.X509ExtensionCollection extensions = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest CreateFromData(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; data, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, class System.Security.Cryptography.Oid requestedPolicyId, valuetype System.Nullable`1&lt;valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt;&gt; nonce, bool requestSignerCertificates, class System.Security.Cryptography.X509Certificates.X509ExtensionCollection extensions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.CreateFromData(System.ReadOnlySpan{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.Oid,System.Nullable{System.ReadOnlyMemory{System.Byte}},System.Boolean,System.Security.Cryptography.X509Certificates.X509ExtensionCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromData (data As ReadOnlySpan(Of Byte), hashAlgorithm As HashAlgorithmName, Optional requestedPolicyId As Oid = null, Optional nonce As Nullable(Of ReadOnlyMemory(Of Byte)) = null, Optional requestSignerCertificates As Boolean = false, Optional extensions As X509ExtensionCollection = null) As Rfc3161TimestampRequest" />
+      <MemberSignature Language="F#" Value="static member CreateFromData : ReadOnlySpan&lt;byte&gt; * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.Oid * Nullable&lt;ReadOnlyMemory&lt;byte&gt;&gt; * bool * System.Security.Cryptography.X509Certificates.X509ExtensionCollection -&gt; System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest" Usage="System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.CreateFromData (data, hashAlgorithm, requestedPolicyId, nonce, requestSignerCertificates, extensions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+        <Parameter Name="requestedPolicyId" Type="System.Security.Cryptography.Oid" />
+        <Parameter Name="nonce" Type="System.Nullable&lt;System.ReadOnlyMemory&lt;System.Byte&gt;&gt;" />
+        <Parameter Name="requestSignerCertificates" Type="System.Boolean" />
+        <Parameter Name="extensions" Type="System.Security.Cryptography.X509Certificates.X509ExtensionCollection" />
+      </Parameters>
+      <Docs>
+        <param name="data">To be added.</param>
+        <param name="hashAlgorithm">To be added.</param>
+        <param name="requestedPolicyId">To be added.</param>
+        <param name="nonce">To be added.</param>
+        <param name="requestSignerCertificates">To be added.</param>
+        <param name="extensions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromHash">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest CreateFromHash (ReadOnlyMemory&lt;byte&gt; hash, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, System.Security.Cryptography.Oid requestedPolicyId = null, Nullable&lt;ReadOnlyMemory&lt;byte&gt;&gt; nonce = null, bool requestSignerCertificates = false, System.Security.Cryptography.X509Certificates.X509ExtensionCollection extensions = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest CreateFromHash(valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; hash, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, class System.Security.Cryptography.Oid requestedPolicyId, valuetype System.Nullable`1&lt;valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt;&gt; nonce, bool requestSignerCertificates, class System.Security.Cryptography.X509Certificates.X509ExtensionCollection extensions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.CreateFromHash(System.ReadOnlyMemory{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.Oid,System.Nullable{System.ReadOnlyMemory{System.Byte}},System.Boolean,System.Security.Cryptography.X509Certificates.X509ExtensionCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromHash (hash As ReadOnlyMemory(Of Byte), hashAlgorithm As HashAlgorithmName, Optional requestedPolicyId As Oid = null, Optional nonce As Nullable(Of ReadOnlyMemory(Of Byte)) = null, Optional requestSignerCertificates As Boolean = false, Optional extensions As X509ExtensionCollection = null) As Rfc3161TimestampRequest" />
+      <MemberSignature Language="F#" Value="static member CreateFromHash : ReadOnlyMemory&lt;byte&gt; * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.Oid * Nullable&lt;ReadOnlyMemory&lt;byte&gt;&gt; * bool * System.Security.Cryptography.X509Certificates.X509ExtensionCollection -&gt; System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest" Usage="System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.CreateFromHash (hash, hashAlgorithm, requestedPolicyId, nonce, requestSignerCertificates, extensions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hash" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+        <Parameter Name="requestedPolicyId" Type="System.Security.Cryptography.Oid" />
+        <Parameter Name="nonce" Type="System.Nullable&lt;System.ReadOnlyMemory&lt;System.Byte&gt;&gt;" />
+        <Parameter Name="requestSignerCertificates" Type="System.Boolean" />
+        <Parameter Name="extensions" Type="System.Security.Cryptography.X509Certificates.X509ExtensionCollection" />
+      </Parameters>
+      <Docs>
+        <param name="hash">To be added.</param>
+        <param name="hashAlgorithm">To be added.</param>
+        <param name="requestedPolicyId">To be added.</param>
+        <param name="nonce">To be added.</param>
+        <param name="requestSignerCertificates">To be added.</param>
+        <param name="extensions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromHash">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest CreateFromHash (ReadOnlyMemory&lt;byte&gt; hash, System.Security.Cryptography.Oid hashAlgorithmId, System.Security.Cryptography.Oid requestedPolicyId = null, Nullable&lt;ReadOnlyMemory&lt;byte&gt;&gt; nonce = null, bool requestSignerCertificates = false, System.Security.Cryptography.X509Certificates.X509ExtensionCollection extensions = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest CreateFromHash(valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; hash, class System.Security.Cryptography.Oid hashAlgorithmId, class System.Security.Cryptography.Oid requestedPolicyId, valuetype System.Nullable`1&lt;valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt;&gt; nonce, bool requestSignerCertificates, class System.Security.Cryptography.X509Certificates.X509ExtensionCollection extensions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.CreateFromHash(System.ReadOnlyMemory{System.Byte},System.Security.Cryptography.Oid,System.Security.Cryptography.Oid,System.Nullable{System.ReadOnlyMemory{System.Byte}},System.Boolean,System.Security.Cryptography.X509Certificates.X509ExtensionCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromHash (hash As ReadOnlyMemory(Of Byte), hashAlgorithmId As Oid, Optional requestedPolicyId As Oid = null, Optional nonce As Nullable(Of ReadOnlyMemory(Of Byte)) = null, Optional requestSignerCertificates As Boolean = false, Optional extensions As X509ExtensionCollection = null) As Rfc3161TimestampRequest" />
+      <MemberSignature Language="F#" Value="static member CreateFromHash : ReadOnlyMemory&lt;byte&gt; * System.Security.Cryptography.Oid * System.Security.Cryptography.Oid * Nullable&lt;ReadOnlyMemory&lt;byte&gt;&gt; * bool * System.Security.Cryptography.X509Certificates.X509ExtensionCollection -&gt; System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest" Usage="System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.CreateFromHash (hash, hashAlgorithmId, requestedPolicyId, nonce, requestSignerCertificates, extensions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hash" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" />
+        <Parameter Name="hashAlgorithmId" Type="System.Security.Cryptography.Oid" />
+        <Parameter Name="requestedPolicyId" Type="System.Security.Cryptography.Oid" />
+        <Parameter Name="nonce" Type="System.Nullable&lt;System.ReadOnlyMemory&lt;System.Byte&gt;&gt;" />
+        <Parameter Name="requestSignerCertificates" Type="System.Boolean" />
+        <Parameter Name="extensions" Type="System.Security.Cryptography.X509Certificates.X509ExtensionCollection" />
+      </Parameters>
+      <Docs>
+        <param name="hash">To be added.</param>
+        <param name="hashAlgorithmId">To be added.</param>
+        <param name="requestedPolicyId">To be added.</param>
+        <param name="nonce">To be added.</param>
+        <param name="requestSignerCertificates">To be added.</param>
+        <param name="extensions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromSignerInfo">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest CreateFromSignerInfo (System.Security.Cryptography.Pkcs.SignerInfo signerInfo, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, System.Security.Cryptography.Oid requestedPolicyId = null, Nullable&lt;ReadOnlyMemory&lt;byte&gt;&gt; nonce = null, bool requestSignerCertificates = false, System.Security.Cryptography.X509Certificates.X509ExtensionCollection extensions = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest CreateFromSignerInfo(class System.Security.Cryptography.Pkcs.SignerInfo signerInfo, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, class System.Security.Cryptography.Oid requestedPolicyId, valuetype System.Nullable`1&lt;valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt;&gt; nonce, bool requestSignerCertificates, class System.Security.Cryptography.X509Certificates.X509ExtensionCollection extensions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.CreateFromSignerInfo(System.Security.Cryptography.Pkcs.SignerInfo,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.Oid,System.Nullable{System.ReadOnlyMemory{System.Byte}},System.Boolean,System.Security.Cryptography.X509Certificates.X509ExtensionCollection)" />
+      <MemberSignature Language="F#" Value="static member CreateFromSignerInfo : System.Security.Cryptography.Pkcs.SignerInfo * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.Oid * Nullable&lt;ReadOnlyMemory&lt;byte&gt;&gt; * bool * System.Security.Cryptography.X509Certificates.X509ExtensionCollection -&gt; System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest" Usage="System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.CreateFromSignerInfo (signerInfo, hashAlgorithm, requestedPolicyId, nonce, requestSignerCertificates, extensions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="signerInfo" Type="System.Security.Cryptography.Pkcs.SignerInfo" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+        <Parameter Name="requestedPolicyId" Type="System.Security.Cryptography.Oid" />
+        <Parameter Name="nonce" Type="System.Nullable&lt;System.ReadOnlyMemory&lt;System.Byte&gt;&gt;" />
+        <Parameter Name="requestSignerCertificates" Type="System.Boolean" />
+        <Parameter Name="extensions" Type="System.Security.Cryptography.X509Certificates.X509ExtensionCollection" />
+      </Parameters>
+      <Docs>
+        <param name="signerInfo">To be added.</param>
+        <param name="hashAlgorithm">To be added.</param>
+        <param name="requestedPolicyId">To be added.</param>
+        <param name="nonce">To be added.</param>
+        <param name="requestSignerCertificates">To be added.</param>
+        <param name="extensions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encode">
+      <MemberSignature Language="C#" Value="public byte[] Encode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Encode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.Encode" />
+      <MemberSignature Language="VB.NET" Value="Public Function Encode () As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Encode();" />
+      <MemberSignature Language="F#" Value="member this.Encode : unit -&gt; byte[]" Usage="rfc3161TimestampRequest.Encode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExtensions">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509ExtensionCollection GetExtensions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Cryptography.X509Certificates.X509ExtensionCollection GetExtensions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.GetExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetExtensions () As X509ExtensionCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::X509Certificates::X509ExtensionCollection ^ GetExtensions();" />
+      <MemberSignature Language="F#" Value="member this.GetExtensions : unit -&gt; System.Security.Cryptography.X509Certificates.X509ExtensionCollection" Usage="rfc3161TimestampRequest.GetExtensions " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509ExtensionCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMessageHash">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory&lt;byte&gt; GetMessageHash ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; GetMessageHash() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.GetMessageHash" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMessageHash () As ReadOnlyMemory(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlyMemory&lt;System::Byte&gt; GetMessageHash();" />
+      <MemberSignature Language="F#" Value="member this.GetMessageHash : unit -&gt; ReadOnlyMemory&lt;byte&gt;" Usage="rfc3161TimestampRequest.GetMessageHash " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNonce">
+      <MemberSignature Language="C#" Value="public Nullable&lt;ReadOnlyMemory&lt;byte&gt;&gt; GetNonce ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt;&gt; GetNonce() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.GetNonce" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNonce () As Nullable(Of ReadOnlyMemory(Of Byte))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Nullable&lt;ReadOnlyMemory&lt;System::Byte&gt;&gt; GetNonce();" />
+      <MemberSignature Language="F#" Value="member this.GetNonce : unit -&gt; Nullable&lt;ReadOnlyMemory&lt;byte&gt;&gt;" Usage="rfc3161TimestampRequest.GetNonce " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.ReadOnlyMemory&lt;System.Byte&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasExtensions">
+      <MemberSignature Language="C#" Value="public bool HasExtensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasExtensions" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.HasExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasExtensions As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasExtensions { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasExtensions : bool" Usage="System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.HasExtensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HashAlgorithmId">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.Oid HashAlgorithmId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Oid HashAlgorithmId" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.HashAlgorithmId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HashAlgorithmId As Oid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Oid ^ HashAlgorithmId { System::Security::Cryptography::Oid ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HashAlgorithmId : System.Security.Cryptography.Oid" Usage="System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.HashAlgorithmId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Oid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessResponse">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.Pkcs.Rfc3161TimestampToken ProcessResponse (ReadOnlyMemory&lt;byte&gt; responseBytes, out int bytesConsumed);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Cryptography.Pkcs.Rfc3161TimestampToken ProcessResponse(valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; responseBytes, [out] int32&amp; bytesConsumed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.ProcessResponse(System.ReadOnlyMemory{System.Byte},System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessResponse (responseBytes As ReadOnlyMemory(Of Byte), ByRef bytesConsumed As Integer) As Rfc3161TimestampToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::Pkcs::Rfc3161TimestampToken ^ ProcessResponse(ReadOnlyMemory&lt;System::Byte&gt; responseBytes, [Runtime::InteropServices::Out] int % bytesConsumed);" />
+      <MemberSignature Language="F#" Value="member this.ProcessResponse : ReadOnlyMemory&lt;byte&gt; *  -&gt; System.Security.Cryptography.Pkcs.Rfc3161TimestampToken" Usage="rfc3161TimestampRequest.ProcessResponse (responseBytes, bytesConsumed)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Pkcs.Rfc3161TimestampToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="responseBytes" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="responseBytes">To be added.</param>
+        <param name="bytesConsumed">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestedPolicyId">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.Oid RequestedPolicyId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Oid RequestedPolicyId" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.RequestedPolicyId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestedPolicyId As Oid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Oid ^ RequestedPolicyId { System::Security::Cryptography::Oid ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestedPolicyId : System.Security.Cryptography.Oid" Usage="System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.RequestedPolicyId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Oid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestSignerCertificate">
+      <MemberSignature Language="C#" Value="public bool RequestSignerCertificate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RequestSignerCertificate" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.RequestSignerCertificate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestSignerCertificate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequestSignerCertificate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestSignerCertificate : bool" Usage="System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.RequestSignerCertificate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryDecode">
+      <MemberSignature Language="C#" Value="public static bool TryDecode (ReadOnlyMemory&lt;byte&gt; encodedBytes, out System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest request, out int bytesConsumed);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryDecode(valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; encodedBytes, [out] class System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest&amp; request, [out] int32&amp; bytesConsumed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.TryDecode(System.ReadOnlyMemory{System.Byte},System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryDecode (encodedBytes As ReadOnlyMemory(Of Byte), ByRef request As Rfc3161TimestampRequest, ByRef bytesConsumed As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryDecode(ReadOnlyMemory&lt;System::Byte&gt; encodedBytes, [Runtime::InteropServices::Out] System::Security::Cryptography::Pkcs::Rfc3161TimestampRequest ^ % request, [Runtime::InteropServices::Out] int % bytesConsumed);" />
+      <MemberSignature Language="F#" Value="static member TryDecode : ReadOnlyMemory&lt;byte&gt; *  *  -&gt; bool" Usage="System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.TryDecode (encodedBytes, request, bytesConsumed)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="encodedBytes" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" />
+        <Parameter Name="request" Type="System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest" RefType="out" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="encodedBytes">To be added.</param>
+        <param name="request">To be added.</param>
+        <param name="bytesConsumed">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryEncode">
+      <MemberSignature Language="C#" Value="public bool TryEncode (Span&lt;byte&gt; destination, out int bytesWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryEncode(valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.TryEncode(System.Span{System.Byte},System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryEncode (destination As Span(Of Byte), ByRef bytesWritten As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryEncode(Span&lt;System::Byte&gt; destination, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="member this.TryEncode : Span&lt;byte&gt; *  -&gt; bool" Usage="rfc3161TimestampRequest.TryEncode (destination, bytesWritten)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="destination">To be added.</param>
+        <param name="bytesWritten">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public int Version { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Version" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.Version" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Version { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : int" Usage="System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -10,9 +10,11 @@
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="dotnet-plat-ext-2.1">System.Text.EncodingProvider</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
@@ -64,6 +66,56 @@
     </remarks>
   </Docs>
   <Members>
+    <Member MemberName="GetEncoding">
+      <MemberSignature Language="C#" Value="public override System.Text.Encoding GetEncoding (int codepage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Text.Encoding GetEncoding(int32 codepage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.CodePagesEncodingProvider.GetEncoding(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEncoding (codepage As Integer) As Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Text::Encoding ^ GetEncoding(int codepage);" />
+      <MemberSignature Language="F#" Value="override this.GetEncoding : int -&gt; System.Text.Encoding" Usage="codePagesEncodingProvider.GetEncoding codepage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.CodePages</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Encoding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="codepage" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="codepage">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEncoding">
+      <MemberSignature Language="C#" Value="public override System.Text.Encoding GetEncoding (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Text.Encoding GetEncoding(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.CodePagesEncodingProvider.GetEncoding(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEncoding (name As String) As Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Text::Encoding ^ GetEncoding(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.GetEncoding : string -&gt; System.Text.Encoding" Usage="codePagesEncodingProvider.GetEncoding name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.CodePages</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Encoding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Instance">
       <MemberSignature Language="C#" Value="public static System.Text.EncodingProvider Instance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Text.EncodingProvider Instance" />
@@ -77,6 +129,7 @@
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.EncodingProvider</ReturnType>

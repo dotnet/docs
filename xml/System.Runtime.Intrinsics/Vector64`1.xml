@@ -1,0 +1,31 @@
+﻿<Type Name="Vector64&lt;T&gt;" FullName="System.Runtime.Intrinsics.Vector64&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public struct Vector64&lt;T&gt; where T : struct" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Vector64`1&lt;struct .ctor (class System.ValueType) T&gt; extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Intrinsics.Vector64`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Vector64(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : value classpublic value class Vector64" />
+  <TypeSignature Language="F#" Value="type Vector64&lt;'T (requires 'T : struct)&gt; = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+        <BaseTypeName>System.ValueType</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

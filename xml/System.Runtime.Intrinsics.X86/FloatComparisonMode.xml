@@ -1,0 +1,661 @@
+﻿<Type Name="FloatComparisonMode" FullName="System.Runtime.Intrinsics.X86.FloatComparisonMode">
+  <TypeSignature Language="C#" Value="public enum FloatComparisonMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FloatComparisonMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Intrinsics.X86.FloatComparisonMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FloatComparisonMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class FloatComparisonMode" />
+  <TypeSignature Language="F#" Value="type FloatComparisonMode = " />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EqualOrderedNonSignaling">
+      <MemberSignature Language="C#" Value="EqualOrderedNonSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode EqualOrderedNonSignaling = unsigned int8(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.EqualOrderedNonSignaling" />
+      <MemberSignature Language="VB.NET" Value="EqualOrderedNonSignaling" />
+      <MemberSignature Language="C++ CLI" Value="EqualOrderedNonSignaling" />
+      <MemberSignature Language="F#" Value="EqualOrderedNonSignaling = 0" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.EqualOrderedNonSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EqualOrderedSignaling">
+      <MemberSignature Language="C#" Value="EqualOrderedSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode EqualOrderedSignaling = unsigned int8(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.EqualOrderedSignaling" />
+      <MemberSignature Language="VB.NET" Value="EqualOrderedSignaling" />
+      <MemberSignature Language="C++ CLI" Value="EqualOrderedSignaling" />
+      <MemberSignature Language="F#" Value="EqualOrderedSignaling = 16" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.EqualOrderedSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EqualUnorderedNonSignaling">
+      <MemberSignature Language="C#" Value="EqualUnorderedNonSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode EqualUnorderedNonSignaling = unsigned int8(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.EqualUnorderedNonSignaling" />
+      <MemberSignature Language="VB.NET" Value="EqualUnorderedNonSignaling" />
+      <MemberSignature Language="C++ CLI" Value="EqualUnorderedNonSignaling" />
+      <MemberSignature Language="F#" Value="EqualUnorderedNonSignaling = 8" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.EqualUnorderedNonSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EqualUnorderedSignaling">
+      <MemberSignature Language="C#" Value="EqualUnorderedSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode EqualUnorderedSignaling = unsigned int8(24)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.EqualUnorderedSignaling" />
+      <MemberSignature Language="VB.NET" Value="EqualUnorderedSignaling" />
+      <MemberSignature Language="C++ CLI" Value="EqualUnorderedSignaling" />
+      <MemberSignature Language="F#" Value="EqualUnorderedSignaling = 24" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.EqualUnorderedSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>24</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FalseOrderedNonSignaling">
+      <MemberSignature Language="C#" Value="FalseOrderedNonSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode FalseOrderedNonSignaling = unsigned int8(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.FalseOrderedNonSignaling" />
+      <MemberSignature Language="VB.NET" Value="FalseOrderedNonSignaling" />
+      <MemberSignature Language="C++ CLI" Value="FalseOrderedNonSignaling" />
+      <MemberSignature Language="F#" Value="FalseOrderedNonSignaling = 11" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.FalseOrderedNonSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>11</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FalseOrderedSignaling">
+      <MemberSignature Language="C#" Value="FalseOrderedSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode FalseOrderedSignaling = unsigned int8(27)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.FalseOrderedSignaling" />
+      <MemberSignature Language="VB.NET" Value="FalseOrderedSignaling" />
+      <MemberSignature Language="C++ CLI" Value="FalseOrderedSignaling" />
+      <MemberSignature Language="F#" Value="FalseOrderedSignaling = 27" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.FalseOrderedSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>27</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThanOrderedNonSignaling">
+      <MemberSignature Language="C#" Value="GreaterThanOrderedNonSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode GreaterThanOrderedNonSignaling = unsigned int8(30)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.GreaterThanOrderedNonSignaling" />
+      <MemberSignature Language="VB.NET" Value="GreaterThanOrderedNonSignaling" />
+      <MemberSignature Language="C++ CLI" Value="GreaterThanOrderedNonSignaling" />
+      <MemberSignature Language="F#" Value="GreaterThanOrderedNonSignaling = 30" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.GreaterThanOrderedNonSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>30</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThanOrderedSignaling">
+      <MemberSignature Language="C#" Value="GreaterThanOrderedSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode GreaterThanOrderedSignaling = unsigned int8(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.GreaterThanOrderedSignaling" />
+      <MemberSignature Language="VB.NET" Value="GreaterThanOrderedSignaling" />
+      <MemberSignature Language="C++ CLI" Value="GreaterThanOrderedSignaling" />
+      <MemberSignature Language="F#" Value="GreaterThanOrderedSignaling = 14" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.GreaterThanOrderedSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>14</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThanOrEqualOrderedNonSignaling">
+      <MemberSignature Language="C#" Value="GreaterThanOrEqualOrderedNonSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode GreaterThanOrEqualOrderedNonSignaling = unsigned int8(29)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.GreaterThanOrEqualOrderedNonSignaling" />
+      <MemberSignature Language="VB.NET" Value="GreaterThanOrEqualOrderedNonSignaling" />
+      <MemberSignature Language="C++ CLI" Value="GreaterThanOrEqualOrderedNonSignaling" />
+      <MemberSignature Language="F#" Value="GreaterThanOrEqualOrderedNonSignaling = 29" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.GreaterThanOrEqualOrderedNonSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>29</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThanOrEqualOrderedSignaling">
+      <MemberSignature Language="C#" Value="GreaterThanOrEqualOrderedSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode GreaterThanOrEqualOrderedSignaling = unsigned int8(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.GreaterThanOrEqualOrderedSignaling" />
+      <MemberSignature Language="VB.NET" Value="GreaterThanOrEqualOrderedSignaling" />
+      <MemberSignature Language="C++ CLI" Value="GreaterThanOrEqualOrderedSignaling" />
+      <MemberSignature Language="F#" Value="GreaterThanOrEqualOrderedSignaling = 13" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.GreaterThanOrEqualOrderedSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>13</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThanOrderedNonSignaling">
+      <MemberSignature Language="C#" Value="LessThanOrderedNonSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode LessThanOrderedNonSignaling = unsigned int8(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.LessThanOrderedNonSignaling" />
+      <MemberSignature Language="VB.NET" Value="LessThanOrderedNonSignaling" />
+      <MemberSignature Language="C++ CLI" Value="LessThanOrderedNonSignaling" />
+      <MemberSignature Language="F#" Value="LessThanOrderedNonSignaling = 17" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.LessThanOrderedNonSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>17</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThanOrderedSignaling">
+      <MemberSignature Language="C#" Value="LessThanOrderedSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode LessThanOrderedSignaling = unsigned int8(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.LessThanOrderedSignaling" />
+      <MemberSignature Language="VB.NET" Value="LessThanOrderedSignaling" />
+      <MemberSignature Language="C++ CLI" Value="LessThanOrderedSignaling" />
+      <MemberSignature Language="F#" Value="LessThanOrderedSignaling = 1" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.LessThanOrderedSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThanOrEqualOrderedNonSignaling">
+      <MemberSignature Language="C#" Value="LessThanOrEqualOrderedNonSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode LessThanOrEqualOrderedNonSignaling = unsigned int8(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.LessThanOrEqualOrderedNonSignaling" />
+      <MemberSignature Language="VB.NET" Value="LessThanOrEqualOrderedNonSignaling" />
+      <MemberSignature Language="C++ CLI" Value="LessThanOrEqualOrderedNonSignaling" />
+      <MemberSignature Language="F#" Value="LessThanOrEqualOrderedNonSignaling = 18" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.LessThanOrEqualOrderedNonSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>18</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThanOrEqualOrderedSignaling">
+      <MemberSignature Language="C#" Value="LessThanOrEqualOrderedSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode LessThanOrEqualOrderedSignaling = unsigned int8(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.LessThanOrEqualOrderedSignaling" />
+      <MemberSignature Language="VB.NET" Value="LessThanOrEqualOrderedSignaling" />
+      <MemberSignature Language="C++ CLI" Value="LessThanOrEqualOrderedSignaling" />
+      <MemberSignature Language="F#" Value="LessThanOrEqualOrderedSignaling = 2" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.LessThanOrEqualOrderedSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotEqualOrderedNonSignaling">
+      <MemberSignature Language="C#" Value="NotEqualOrderedNonSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode NotEqualOrderedNonSignaling = unsigned int8(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.NotEqualOrderedNonSignaling" />
+      <MemberSignature Language="VB.NET" Value="NotEqualOrderedNonSignaling" />
+      <MemberSignature Language="C++ CLI" Value="NotEqualOrderedNonSignaling" />
+      <MemberSignature Language="F#" Value="NotEqualOrderedNonSignaling = 12" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.NotEqualOrderedNonSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>12</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotEqualOrderedSignaling">
+      <MemberSignature Language="C#" Value="NotEqualOrderedSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode NotEqualOrderedSignaling = unsigned int8(28)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.NotEqualOrderedSignaling" />
+      <MemberSignature Language="VB.NET" Value="NotEqualOrderedSignaling" />
+      <MemberSignature Language="C++ CLI" Value="NotEqualOrderedSignaling" />
+      <MemberSignature Language="F#" Value="NotEqualOrderedSignaling = 28" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.NotEqualOrderedSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>28</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotEqualUnorderedNonSignaling">
+      <MemberSignature Language="C#" Value="NotEqualUnorderedNonSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode NotEqualUnorderedNonSignaling = unsigned int8(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.NotEqualUnorderedNonSignaling" />
+      <MemberSignature Language="VB.NET" Value="NotEqualUnorderedNonSignaling" />
+      <MemberSignature Language="C++ CLI" Value="NotEqualUnorderedNonSignaling" />
+      <MemberSignature Language="F#" Value="NotEqualUnorderedNonSignaling = 4" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.NotEqualUnorderedNonSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotEqualUnorderedSignaling">
+      <MemberSignature Language="C#" Value="NotEqualUnorderedSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode NotEqualUnorderedSignaling = unsigned int8(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.NotEqualUnorderedSignaling" />
+      <MemberSignature Language="VB.NET" Value="NotEqualUnorderedSignaling" />
+      <MemberSignature Language="C++ CLI" Value="NotEqualUnorderedSignaling" />
+      <MemberSignature Language="F#" Value="NotEqualUnorderedSignaling = 20" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.NotEqualUnorderedSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>20</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotGreaterThanOrEqualUnorderedNonSignaling">
+      <MemberSignature Language="C#" Value="NotGreaterThanOrEqualUnorderedNonSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode NotGreaterThanOrEqualUnorderedNonSignaling = unsigned int8(25)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.NotGreaterThanOrEqualUnorderedNonSignaling" />
+      <MemberSignature Language="VB.NET" Value="NotGreaterThanOrEqualUnorderedNonSignaling" />
+      <MemberSignature Language="C++ CLI" Value="NotGreaterThanOrEqualUnorderedNonSignaling" />
+      <MemberSignature Language="F#" Value="NotGreaterThanOrEqualUnorderedNonSignaling = 25" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.NotGreaterThanOrEqualUnorderedNonSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>25</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotGreaterThanOrEqualUnorderedSignaling">
+      <MemberSignature Language="C#" Value="NotGreaterThanOrEqualUnorderedSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode NotGreaterThanOrEqualUnorderedSignaling = unsigned int8(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.NotGreaterThanOrEqualUnorderedSignaling" />
+      <MemberSignature Language="VB.NET" Value="NotGreaterThanOrEqualUnorderedSignaling" />
+      <MemberSignature Language="C++ CLI" Value="NotGreaterThanOrEqualUnorderedSignaling" />
+      <MemberSignature Language="F#" Value="NotGreaterThanOrEqualUnorderedSignaling = 9" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.NotGreaterThanOrEqualUnorderedSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotGreaterThanUnorderedNonSignaling">
+      <MemberSignature Language="C#" Value="NotGreaterThanUnorderedNonSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode NotGreaterThanUnorderedNonSignaling = unsigned int8(26)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.NotGreaterThanUnorderedNonSignaling" />
+      <MemberSignature Language="VB.NET" Value="NotGreaterThanUnorderedNonSignaling" />
+      <MemberSignature Language="C++ CLI" Value="NotGreaterThanUnorderedNonSignaling" />
+      <MemberSignature Language="F#" Value="NotGreaterThanUnorderedNonSignaling = 26" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.NotGreaterThanUnorderedNonSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>26</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotGreaterThanUnorderedSignaling">
+      <MemberSignature Language="C#" Value="NotGreaterThanUnorderedSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode NotGreaterThanUnorderedSignaling = unsigned int8(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.NotGreaterThanUnorderedSignaling" />
+      <MemberSignature Language="VB.NET" Value="NotGreaterThanUnorderedSignaling" />
+      <MemberSignature Language="C++ CLI" Value="NotGreaterThanUnorderedSignaling" />
+      <MemberSignature Language="F#" Value="NotGreaterThanUnorderedSignaling = 10" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.NotGreaterThanUnorderedSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>10</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotLessThanOrEqualUnorderedNonSignaling">
+      <MemberSignature Language="C#" Value="NotLessThanOrEqualUnorderedNonSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode NotLessThanOrEqualUnorderedNonSignaling = unsigned int8(22)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.NotLessThanOrEqualUnorderedNonSignaling" />
+      <MemberSignature Language="VB.NET" Value="NotLessThanOrEqualUnorderedNonSignaling" />
+      <MemberSignature Language="C++ CLI" Value="NotLessThanOrEqualUnorderedNonSignaling" />
+      <MemberSignature Language="F#" Value="NotLessThanOrEqualUnorderedNonSignaling = 22" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.NotLessThanOrEqualUnorderedNonSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>22</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotLessThanOrEqualUnorderedSignaling">
+      <MemberSignature Language="C#" Value="NotLessThanOrEqualUnorderedSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode NotLessThanOrEqualUnorderedSignaling = unsigned int8(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.NotLessThanOrEqualUnorderedSignaling" />
+      <MemberSignature Language="VB.NET" Value="NotLessThanOrEqualUnorderedSignaling" />
+      <MemberSignature Language="C++ CLI" Value="NotLessThanOrEqualUnorderedSignaling" />
+      <MemberSignature Language="F#" Value="NotLessThanOrEqualUnorderedSignaling = 6" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.NotLessThanOrEqualUnorderedSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotLessThanUnorderedNonSignaling">
+      <MemberSignature Language="C#" Value="NotLessThanUnorderedNonSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode NotLessThanUnorderedNonSignaling = unsigned int8(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.NotLessThanUnorderedNonSignaling" />
+      <MemberSignature Language="VB.NET" Value="NotLessThanUnorderedNonSignaling" />
+      <MemberSignature Language="C++ CLI" Value="NotLessThanUnorderedNonSignaling" />
+      <MemberSignature Language="F#" Value="NotLessThanUnorderedNonSignaling = 21" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.NotLessThanUnorderedNonSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>21</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotLessThanUnorderedSignaling">
+      <MemberSignature Language="C#" Value="NotLessThanUnorderedSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode NotLessThanUnorderedSignaling = unsigned int8(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.NotLessThanUnorderedSignaling" />
+      <MemberSignature Language="VB.NET" Value="NotLessThanUnorderedSignaling" />
+      <MemberSignature Language="C++ CLI" Value="NotLessThanUnorderedSignaling" />
+      <MemberSignature Language="F#" Value="NotLessThanUnorderedSignaling = 5" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.NotLessThanUnorderedSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OrderedNonSignaling">
+      <MemberSignature Language="C#" Value="OrderedNonSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode OrderedNonSignaling = unsigned int8(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.OrderedNonSignaling" />
+      <MemberSignature Language="VB.NET" Value="OrderedNonSignaling" />
+      <MemberSignature Language="C++ CLI" Value="OrderedNonSignaling" />
+      <MemberSignature Language="F#" Value="OrderedNonSignaling = 7" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.OrderedNonSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OrderedSignaling">
+      <MemberSignature Language="C#" Value="OrderedSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode OrderedSignaling = unsigned int8(23)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.OrderedSignaling" />
+      <MemberSignature Language="VB.NET" Value="OrderedSignaling" />
+      <MemberSignature Language="C++ CLI" Value="OrderedSignaling" />
+      <MemberSignature Language="F#" Value="OrderedSignaling = 23" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.OrderedSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>23</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TrueUnorderedNonSignaling">
+      <MemberSignature Language="C#" Value="TrueUnorderedNonSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode TrueUnorderedNonSignaling = unsigned int8(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.TrueUnorderedNonSignaling" />
+      <MemberSignature Language="VB.NET" Value="TrueUnorderedNonSignaling" />
+      <MemberSignature Language="C++ CLI" Value="TrueUnorderedNonSignaling" />
+      <MemberSignature Language="F#" Value="TrueUnorderedNonSignaling = 15" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.TrueUnorderedNonSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>15</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TrueUnorderedSignaling">
+      <MemberSignature Language="C#" Value="TrueUnorderedSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode TrueUnorderedSignaling = unsigned int8(31)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.TrueUnorderedSignaling" />
+      <MemberSignature Language="VB.NET" Value="TrueUnorderedSignaling" />
+      <MemberSignature Language="C++ CLI" Value="TrueUnorderedSignaling" />
+      <MemberSignature Language="F#" Value="TrueUnorderedSignaling = 31" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.TrueUnorderedSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>31</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnorderedNonSignaling">
+      <MemberSignature Language="C#" Value="UnorderedNonSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode UnorderedNonSignaling = unsigned int8(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.UnorderedNonSignaling" />
+      <MemberSignature Language="VB.NET" Value="UnorderedNonSignaling" />
+      <MemberSignature Language="C++ CLI" Value="UnorderedNonSignaling" />
+      <MemberSignature Language="F#" Value="UnorderedNonSignaling = 3" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.UnorderedNonSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnorderedSignaling">
+      <MemberSignature Language="C#" Value="UnorderedSignaling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Intrinsics.X86.FloatComparisonMode UnorderedSignaling = unsigned int8(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.UnorderedSignaling" />
+      <MemberSignature Language="VB.NET" Value="UnorderedSignaling" />
+      <MemberSignature Language="C++ CLI" Value="UnorderedSignaling" />
+      <MemberSignature Language="F#" Value="UnorderedSignaling = 19" Usage="System.Runtime.Intrinsics.X86.FloatComparisonMode.UnorderedSignaling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.X86.FloatComparisonMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>19</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

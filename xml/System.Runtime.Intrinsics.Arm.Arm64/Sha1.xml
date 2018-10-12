@@ -1,0 +1,211 @@
+﻿<Type Name="Sha1" FullName="System.Runtime.Intrinsics.Arm.Arm64.Sha1">
+  <TypeSignature Language="C#" Value="public static class Sha1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Sha1 extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Intrinsics.Arm.Arm64.Sha1" />
+  <TypeSignature Language="VB.NET" Value="Public Class Sha1" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Sha1 abstract sealed" />
+  <TypeSignature Language="F#" Value="type Sha1 = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FixedRotate">
+      <MemberSignature Language="C#" Value="public static uint FixedRotate (uint hash_e);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 FixedRotate(unsigned int32 hash_e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Arm.Arm64.Sha1.FixedRotate(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FixedRotate (hash_e As UInteger) As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 FixedRotate(System::UInt32 hash_e);" />
+      <MemberSignature Language="F#" Value="static member FixedRotate : uint32 -&gt; uint32" Usage="System.Runtime.Intrinsics.Arm.Arm64.Sha1.FixedRotate hash_e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hash_e" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="hash_e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HashChoose">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;uint&gt; HashChoose (System.Runtime.Intrinsics.Vector128&lt;uint&gt; hash_abcd, uint hash_e, System.Runtime.Intrinsics.Vector128&lt;uint&gt; wk);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; HashChoose(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; hash_abcd, unsigned int32 hash_e, valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; wk) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Arm.Arm64.Sha1.HashChoose(System.Runtime.Intrinsics.Vector128{System.UInt32},System.UInt32,System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HashChoose (hash_abcd As Vector128(Of UInteger), hash_e As UInteger, wk As Vector128(Of UInteger)) As Vector128(Of UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; HashChoose(System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; hash_abcd, System::UInt32 hash_e, System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; wk);" />
+      <MemberSignature Language="F#" Value="static member HashChoose : System.Runtime.Intrinsics.Vector128&lt;uint32&gt; * uint32 * System.Runtime.Intrinsics.Vector128&lt;uint32&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;uint32&gt;" Usage="System.Runtime.Intrinsics.Arm.Arm64.Sha1.HashChoose (hash_abcd, hash_e, wk)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hash_abcd" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
+        <Parameter Name="hash_e" Type="System.UInt32" />
+        <Parameter Name="wk" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="hash_abcd">To be added.</param>
+        <param name="hash_e">To be added.</param>
+        <param name="wk">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HashMajority">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;uint&gt; HashMajority (System.Runtime.Intrinsics.Vector128&lt;uint&gt; hash_abcd, uint hash_e, System.Runtime.Intrinsics.Vector128&lt;uint&gt; wk);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; HashMajority(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; hash_abcd, unsigned int32 hash_e, valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; wk) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Arm.Arm64.Sha1.HashMajority(System.Runtime.Intrinsics.Vector128{System.UInt32},System.UInt32,System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HashMajority (hash_abcd As Vector128(Of UInteger), hash_e As UInteger, wk As Vector128(Of UInteger)) As Vector128(Of UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; HashMajority(System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; hash_abcd, System::UInt32 hash_e, System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; wk);" />
+      <MemberSignature Language="F#" Value="static member HashMajority : System.Runtime.Intrinsics.Vector128&lt;uint32&gt; * uint32 * System.Runtime.Intrinsics.Vector128&lt;uint32&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;uint32&gt;" Usage="System.Runtime.Intrinsics.Arm.Arm64.Sha1.HashMajority (hash_abcd, hash_e, wk)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hash_abcd" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
+        <Parameter Name="hash_e" Type="System.UInt32" />
+        <Parameter Name="wk" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="hash_abcd">To be added.</param>
+        <param name="hash_e">To be added.</param>
+        <param name="wk">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HashParity">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;uint&gt; HashParity (System.Runtime.Intrinsics.Vector128&lt;uint&gt; hash_abcd, uint hash_e, System.Runtime.Intrinsics.Vector128&lt;uint&gt; wk);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; HashParity(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; hash_abcd, unsigned int32 hash_e, valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; wk) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Arm.Arm64.Sha1.HashParity(System.Runtime.Intrinsics.Vector128{System.UInt32},System.UInt32,System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HashParity (hash_abcd As Vector128(Of UInteger), hash_e As UInteger, wk As Vector128(Of UInteger)) As Vector128(Of UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; HashParity(System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; hash_abcd, System::UInt32 hash_e, System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; wk);" />
+      <MemberSignature Language="F#" Value="static member HashParity : System.Runtime.Intrinsics.Vector128&lt;uint32&gt; * uint32 * System.Runtime.Intrinsics.Vector128&lt;uint32&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;uint32&gt;" Usage="System.Runtime.Intrinsics.Arm.Arm64.Sha1.HashParity (hash_abcd, hash_e, wk)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hash_abcd" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
+        <Parameter Name="hash_e" Type="System.UInt32" />
+        <Parameter Name="wk" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="hash_abcd">To be added.</param>
+        <param name="hash_e">To be added.</param>
+        <param name="wk">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public static bool IsSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsSupported" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Intrinsics.Arm.Arm64.Sha1.IsSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSupported As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="System.Runtime.Intrinsics.Arm.Arm64.Sha1.IsSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchedulePart1">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;uint&gt; SchedulePart1 (System.Runtime.Intrinsics.Vector128&lt;uint&gt; w0_3, System.Runtime.Intrinsics.Vector128&lt;uint&gt; w4_7, System.Runtime.Intrinsics.Vector128&lt;uint&gt; w8_11);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; SchedulePart1(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; w0_3, valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; w4_7, valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; w8_11) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Arm.Arm64.Sha1.SchedulePart1(System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SchedulePart1 (w0_3 As Vector128(Of UInteger), w4_7 As Vector128(Of UInteger), w8_11 As Vector128(Of UInteger)) As Vector128(Of UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; SchedulePart1(System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; w0_3, System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; w4_7, System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; w8_11);" />
+      <MemberSignature Language="F#" Value="static member SchedulePart1 : System.Runtime.Intrinsics.Vector128&lt;uint32&gt; * System.Runtime.Intrinsics.Vector128&lt;uint32&gt; * System.Runtime.Intrinsics.Vector128&lt;uint32&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;uint32&gt;" Usage="System.Runtime.Intrinsics.Arm.Arm64.Sha1.SchedulePart1 (w0_3, w4_7, w8_11)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="w0_3" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
+        <Parameter Name="w4_7" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
+        <Parameter Name="w8_11" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="w0_3">To be added.</param>
+        <param name="w4_7">To be added.</param>
+        <param name="w8_11">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchedulePart2">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;uint&gt; SchedulePart2 (System.Runtime.Intrinsics.Vector128&lt;uint&gt; tw0_3, System.Runtime.Intrinsics.Vector128&lt;uint&gt; w12_15);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; SchedulePart2(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; tw0_3, valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; w12_15) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Arm.Arm64.Sha1.SchedulePart2(System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SchedulePart2 (tw0_3 As Vector128(Of UInteger), w12_15 As Vector128(Of UInteger)) As Vector128(Of UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; SchedulePart2(System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; tw0_3, System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; w12_15);" />
+      <MemberSignature Language="F#" Value="static member SchedulePart2 : System.Runtime.Intrinsics.Vector128&lt;uint32&gt; * System.Runtime.Intrinsics.Vector128&lt;uint32&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;uint32&gt;" Usage="System.Runtime.Intrinsics.Arm.Arm64.Sha1.SchedulePart2 (tw0_3, w12_15)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tw0_3" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
+        <Parameter Name="w12_15" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="tw0_3">To be added.</param>
+        <param name="w12_15">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

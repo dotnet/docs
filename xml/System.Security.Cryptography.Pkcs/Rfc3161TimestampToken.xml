@@ -1,0 +1,209 @@
+﻿<Type Name="Rfc3161TimestampToken" FullName="System.Security.Cryptography.Pkcs.Rfc3161TimestampToken">
+  <TypeSignature Language="C#" Value="public sealed class Rfc3161TimestampToken" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Rfc3161TimestampToken extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Rfc3161TimestampToken" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Rfc3161TimestampToken sealed" />
+  <TypeSignature Language="F#" Value="type Rfc3161TimestampToken = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsSignedCms">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.Pkcs.SignedCms AsSignedCms ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Cryptography.Pkcs.SignedCms AsSignedCms() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken.AsSignedCms" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsSignedCms () As SignedCms" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::Pkcs::SignedCms ^ AsSignedCms();" />
+      <MemberSignature Language="F#" Value="member this.AsSignedCms : unit -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="rfc3161TimestampToken.AsSignedCms " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Pkcs.SignedCms</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenInfo">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo TokenInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo TokenInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken.TokenInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TokenInfo As Rfc3161TimestampTokenInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Pkcs::Rfc3161TimestampTokenInfo ^ TokenInfo { System::Security::Cryptography::Pkcs::Rfc3161TimestampTokenInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TokenInfo : System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo" Usage="System.Security.Cryptography.Pkcs.Rfc3161TimestampToken.TokenInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryDecode">
+      <MemberSignature Language="C#" Value="public static bool TryDecode (ReadOnlyMemory&lt;byte&gt; encodedBytes, out System.Security.Cryptography.Pkcs.Rfc3161TimestampToken token, out int bytesConsumed);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryDecode(valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; encodedBytes, [out] class System.Security.Cryptography.Pkcs.Rfc3161TimestampToken&amp; token, [out] int32&amp; bytesConsumed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken.TryDecode(System.ReadOnlyMemory{System.Byte},System.Security.Cryptography.Pkcs.Rfc3161TimestampToken@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryDecode (encodedBytes As ReadOnlyMemory(Of Byte), ByRef token As Rfc3161TimestampToken, ByRef bytesConsumed As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryDecode(ReadOnlyMemory&lt;System::Byte&gt; encodedBytes, [Runtime::InteropServices::Out] System::Security::Cryptography::Pkcs::Rfc3161TimestampToken ^ % token, [Runtime::InteropServices::Out] int % bytesConsumed);" />
+      <MemberSignature Language="F#" Value="static member TryDecode : ReadOnlyMemory&lt;byte&gt; *  *  -&gt; bool" Usage="System.Security.Cryptography.Pkcs.Rfc3161TimestampToken.TryDecode (encodedBytes, token, bytesConsumed)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="encodedBytes" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" />
+        <Parameter Name="token" Type="System.Security.Cryptography.Pkcs.Rfc3161TimestampToken" RefType="out" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="encodedBytes">To be added.</param>
+        <param name="token">To be added.</param>
+        <param name="bytesConsumed">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifySignatureForData">
+      <MemberSignature Language="C#" Value="public bool VerifySignatureForData (ReadOnlySpan&lt;byte&gt; data, out System.Security.Cryptography.X509Certificates.X509Certificate2 signerCertificate, System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraCandidates = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifySignatureForData(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; data, [out] class System.Security.Cryptography.X509Certificates.X509Certificate2&amp; signerCertificate, class System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraCandidates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken.VerifySignatureForData(System.ReadOnlySpan{System.Byte},System.Security.Cryptography.X509Certificates.X509Certificate2@,System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VerifySignatureForData (data As ReadOnlySpan(Of Byte), ByRef signerCertificate As X509Certificate2, Optional extraCandidates As X509Certificate2Collection = null) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.VerifySignatureForData : ReadOnlySpan&lt;byte&gt; *  * System.Security.Cryptography.X509Certificates.X509Certificate2Collection -&gt; bool" Usage="rfc3161TimestampToken.VerifySignatureForData (data, signerCertificate, extraCandidates)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="signerCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" RefType="out" />
+        <Parameter Name="extraCandidates" Type="System.Security.Cryptography.X509Certificates.X509Certificate2Collection" />
+      </Parameters>
+      <Docs>
+        <param name="data">To be added.</param>
+        <param name="signerCertificate">To be added.</param>
+        <param name="extraCandidates">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifySignatureForHash">
+      <MemberSignature Language="C#" Value="public bool VerifySignatureForHash (ReadOnlySpan&lt;byte&gt; hash, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, out System.Security.Cryptography.X509Certificates.X509Certificate2 signerCertificate, System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraCandidates = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifySignatureForHash(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; hash, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, [out] class System.Security.Cryptography.X509Certificates.X509Certificate2&amp; signerCertificate, class System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraCandidates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken.VerifySignatureForHash(System.ReadOnlySpan{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.X509Certificates.X509Certificate2@,System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VerifySignatureForHash (hash As ReadOnlySpan(Of Byte), hashAlgorithm As HashAlgorithmName, ByRef signerCertificate As X509Certificate2, Optional extraCandidates As X509Certificate2Collection = null) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.VerifySignatureForHash : ReadOnlySpan&lt;byte&gt; * System.Security.Cryptography.HashAlgorithmName *  * System.Security.Cryptography.X509Certificates.X509Certificate2Collection -&gt; bool" Usage="rfc3161TimestampToken.VerifySignatureForHash (hash, hashAlgorithm, signerCertificate, extraCandidates)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hash" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+        <Parameter Name="signerCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" RefType="out" />
+        <Parameter Name="extraCandidates" Type="System.Security.Cryptography.X509Certificates.X509Certificate2Collection" />
+      </Parameters>
+      <Docs>
+        <param name="hash">To be added.</param>
+        <param name="hashAlgorithm">To be added.</param>
+        <param name="signerCertificate">To be added.</param>
+        <param name="extraCandidates">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifySignatureForHash">
+      <MemberSignature Language="C#" Value="public bool VerifySignatureForHash (ReadOnlySpan&lt;byte&gt; hash, System.Security.Cryptography.Oid hashAlgorithmId, out System.Security.Cryptography.X509Certificates.X509Certificate2 signerCertificate, System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraCandidates = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifySignatureForHash(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; hash, class System.Security.Cryptography.Oid hashAlgorithmId, [out] class System.Security.Cryptography.X509Certificates.X509Certificate2&amp; signerCertificate, class System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraCandidates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken.VerifySignatureForHash(System.ReadOnlySpan{System.Byte},System.Security.Cryptography.Oid,System.Security.Cryptography.X509Certificates.X509Certificate2@,System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VerifySignatureForHash (hash As ReadOnlySpan(Of Byte), hashAlgorithmId As Oid, ByRef signerCertificate As X509Certificate2, Optional extraCandidates As X509Certificate2Collection = null) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.VerifySignatureForHash : ReadOnlySpan&lt;byte&gt; * System.Security.Cryptography.Oid *  * System.Security.Cryptography.X509Certificates.X509Certificate2Collection -&gt; bool" Usage="rfc3161TimestampToken.VerifySignatureForHash (hash, hashAlgorithmId, signerCertificate, extraCandidates)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hash" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="hashAlgorithmId" Type="System.Security.Cryptography.Oid" />
+        <Parameter Name="signerCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" RefType="out" />
+        <Parameter Name="extraCandidates" Type="System.Security.Cryptography.X509Certificates.X509Certificate2Collection" />
+      </Parameters>
+      <Docs>
+        <param name="hash">To be added.</param>
+        <param name="hashAlgorithmId">To be added.</param>
+        <param name="signerCertificate">To be added.</param>
+        <param name="extraCandidates">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifySignatureForSignerInfo">
+      <MemberSignature Language="C#" Value="public bool VerifySignatureForSignerInfo (System.Security.Cryptography.Pkcs.SignerInfo signerInfo, out System.Security.Cryptography.X509Certificates.X509Certificate2 signerCertificate, System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraCandidates = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifySignatureForSignerInfo(class System.Security.Cryptography.Pkcs.SignerInfo signerInfo, [out] class System.Security.Cryptography.X509Certificates.X509Certificate2&amp; signerCertificate, class System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraCandidates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken.VerifySignatureForSignerInfo(System.Security.Cryptography.Pkcs.SignerInfo,System.Security.Cryptography.X509Certificates.X509Certificate2@,System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
+      <MemberSignature Language="F#" Value="member this.VerifySignatureForSignerInfo : System.Security.Cryptography.Pkcs.SignerInfo *  * System.Security.Cryptography.X509Certificates.X509Certificate2Collection -&gt; bool" Usage="rfc3161TimestampToken.VerifySignatureForSignerInfo (signerInfo, signerCertificate, extraCandidates)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="signerInfo" Type="System.Security.Cryptography.Pkcs.SignerInfo" />
+        <Parameter Name="signerCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" RefType="out" />
+        <Parameter Name="extraCandidates" Type="System.Security.Cryptography.X509Certificates.X509Certificate2Collection" />
+      </Parameters>
+      <Docs>
+        <param name="signerInfo">To be added.</param>
+        <param name="signerCertificate">To be added.</param>
+        <param name="extraCandidates">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,52 @@
+﻿<Type Name="WebSocketProtocol" FullName="System.Net.WebSockets.WebSocketProtocol">
+  <TypeSignature Language="C#" Value="public static class WebSocketProtocol" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WebSocketProtocol extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.WebSocketProtocol" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebSocketProtocol" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebSocketProtocol abstract sealed" />
+  <TypeSignature Language="F#" Value="type WebSocketProtocol = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.WebSockets.WebSocketProtocol</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateFromStream">
+      <MemberSignature Language="C#" Value="public static System.Net.WebSockets.WebSocket CreateFromStream (System.IO.Stream stream, bool isServer, string subProtocol, TimeSpan keepAliveInterval);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.WebSockets.WebSocket CreateFromStream(class System.IO.Stream stream, bool isServer, string subProtocol, valuetype System.TimeSpan keepAliveInterval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocketProtocol.CreateFromStream(System.IO.Stream,System.Boolean,System.String,System.TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::WebSockets::WebSocket ^ CreateFromStream(System::IO::Stream ^ stream, bool isServer, System::String ^ subProtocol, TimeSpan keepAliveInterval);" />
+      <MemberSignature Language="F#" Value="static member CreateFromStream : System.IO.Stream * bool * string * TimeSpan -&gt; System.Net.WebSockets.WebSocket" Usage="System.Net.WebSockets.WebSocketProtocol.CreateFromStream (stream, isServer, subProtocol, keepAliveInterval)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets.WebSocketProtocol</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebSockets.WebSocket</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="isServer" Type="System.Boolean" />
+        <Parameter Name="subProtocol" Type="System.String" />
+        <Parameter Name="keepAliveInterval" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="isServer">To be added.</param>
+        <param name="subProtocol">To be added.</param>
+        <param name="keepAliveInterval">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -8508,31 +8508,6 @@ MyControl.Font = New Font(MyControl.Font, _
       </Docs>
     </Member>
     <Member MemberName="LogicalToDeviceUnits">
-      <MemberSignature Language="C#" Value="public System.Drawing.Size LogicalToDeviceUnits (System.Drawing.Size value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Size LogicalToDeviceUnits(valuetype System.Drawing.Size value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.LogicalToDeviceUnits(System.Drawing.Size)" />
-      <MemberSignature Language="VB.NET" Value="Public Function LogicalToDeviceUnits (value As Size) As Size" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Size LogicalToDeviceUnits(System::Drawing::Size value);" />
-      <MemberSignature Language="F#" Value="member this.LogicalToDeviceUnits : System.Drawing.Size -&gt; System.Drawing.Size" Usage="control.LogicalToDeviceUnits value" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Drawing.Size</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Drawing.Size" />
-      </Parameters>
-      <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="LogicalToDeviceUnits">
       <MemberSignature Language="C#" Value="public int LogicalToDeviceUnits (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LogicalToDeviceUnits(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.LogicalToDeviceUnits(System.Int32)" />

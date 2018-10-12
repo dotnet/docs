@@ -9,13 +9,14 @@
     <AssemblyName>System.Composition.TypedParts</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
     <AssemblyVersion>1.0.32.0</AssemblyVersion>
+    <AssemblyVersion>1.0.33.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0">
+    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;dotnet-plat-ext-2.1">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Composition.Debugging.ContainerConfigurationDebuggerProxy))</AttributeName>
     </Attribute>
   </Attributes>
@@ -35,6 +36,7 @@
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -54,6 +56,7 @@
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Hosting.CompositionHost</ReturnType>
@@ -77,6 +80,7 @@
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
@@ -103,6 +107,7 @@
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
@@ -130,6 +135,7 @@
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
@@ -155,6 +161,7 @@
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
@@ -183,6 +190,7 @@
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
@@ -209,6 +217,7 @@
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
@@ -235,6 +244,7 @@
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
@@ -263,6 +273,7 @@
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
@@ -290,6 +301,7 @@
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
@@ -320,6 +332,7 @@
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
@@ -346,6 +359,7 @@
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
@@ -378,6 +392,7 @@
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
@@ -405,6 +420,7 @@
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>

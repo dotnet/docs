@@ -1,0 +1,137 @@
+﻿<Type Name="Channel&lt;TWrite,TRead&gt;" FullName="System.Threading.Channels.Channel&lt;TWrite,TRead&gt;">
+  <TypeSignature Language="C#" Value="public abstract class Channel&lt;TWrite,TRead&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Channel`2&lt;TWrite, TRead&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Channels.Channel`2" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Channel(Of TWrite, TRead)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TWrite, typename TRead&gt;&#xA;public ref class Channel abstract" />
+  <TypeSignature Language="F#" Value="type Channel&lt;'Write, 'Read&gt; = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Channels</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TWrite" />
+    <TypeParameter Name="TRead" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TWrite">Specifies the type of data that may be written to the channel.</typeparam>
+    <typeparam name="TRead">Specifies the type of data that may be read from the channel.</typeparam>
+    <summary>Provides a base class for channels that support reading elements of type <typeparamref name="TRead" /> and writing elements of type <typeparamref name="TWrite" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Channel ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Channels.Channel`2.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Channel();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator System.Threading.Channels.ChannelReader&lt;TRead&gt; (System.Threading.Channels.Channel&lt;TWrite,TRead&gt; channel);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Threading.Channels.ChannelReader`1&lt;!TRead&gt; op_Implicit(class System.Threading.Channels.Channel`2&lt;!TWrite, !TRead&gt; channel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Channels.Channel`2.op_Implicit(System.Threading.Channels.Channel{`0,`1})~System.Threading.Channels.ChannelReader{`1}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (channel As Channel(Of TWrite, TRead)) As ChannelReader(Of TRead)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Threading::Channels::ChannelReader&lt;TRead&gt; ^(System::Threading::Channels::Channel&lt;TWrite, TRead&gt; ^ channel);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Threading.Channels.Channel&lt;'Write, 'Read&gt; -&gt; System.Threading.Channels.ChannelReader&lt;'Read&gt;" Usage="System.Threading.Channels.Channel&lt;'Write, 'Read&gt;.op_Implicit channel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Channels.ChannelReader&lt;TRead&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channel" Type="System.Threading.Channels.Channel&lt;TWrite,TRead&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="channel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator System.Threading.Channels.ChannelWriter&lt;TWrite&gt; (System.Threading.Channels.Channel&lt;TWrite,TRead&gt; channel);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Threading.Channels.ChannelWriter`1&lt;!TWrite&gt; op_Implicit(class System.Threading.Channels.Channel`2&lt;!TWrite, !TRead&gt; channel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Channels.Channel`2.op_Implicit(System.Threading.Channels.Channel{`0,`1})~System.Threading.Channels.ChannelWriter{`0}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (channel As Channel(Of TWrite, TRead)) As ChannelWriter(Of TWrite)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Threading::Channels::ChannelWriter&lt;TWrite&gt; ^(System::Threading::Channels::Channel&lt;TWrite, TRead&gt; ^ channel);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Threading.Channels.Channel&lt;'Write, 'Read&gt; -&gt; System.Threading.Channels.ChannelWriter&lt;'Write&gt;" Usage="System.Threading.Channels.Channel&lt;'Write, 'Read&gt;.op_Implicit channel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Channels.ChannelWriter&lt;TWrite&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channel" Type="System.Threading.Channels.Channel&lt;TWrite,TRead&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="channel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reader">
+      <MemberSignature Language="C#" Value="public System.Threading.Channels.ChannelReader&lt;TRead&gt; Reader { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.Channels.ChannelReader`1&lt;!TRead&gt; Reader" />
+      <MemberSignature Language="DocId" Value="P:System.Threading.Channels.Channel`2.Reader" />
+      <MemberSignature Language="VB.NET" Value="Public Property Reader As ChannelReader(Of TRead)" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Threading::Channels::ChannelReader&lt;TRead&gt; ^ Reader {  public:&#xA;System::Threading::Channels::ChannelReader&lt;TRead&gt; ^ get(); protected:&#xA; void set(System::Threading::Channels::ChannelReader&lt;TRead&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Reader : System.Threading.Channels.ChannelReader&lt;'Read&gt; with get, set" Usage="System.Threading.Channels.Channel&lt;'Write, 'Read&gt;.Reader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Channels.ChannelReader&lt;TRead&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the readable half of this channel.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Writer">
+      <MemberSignature Language="C#" Value="public System.Threading.Channels.ChannelWriter&lt;TWrite&gt; Writer { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.Channels.ChannelWriter`1&lt;!TWrite&gt; Writer" />
+      <MemberSignature Language="DocId" Value="P:System.Threading.Channels.Channel`2.Writer" />
+      <MemberSignature Language="VB.NET" Value="Public Property Writer As ChannelWriter(Of TWrite)" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Threading::Channels::ChannelWriter&lt;TWrite&gt; ^ Writer {  public:&#xA;System::Threading::Channels::ChannelWriter&lt;TWrite&gt; ^ get(); protected:&#xA; void set(System::Threading::Channels::ChannelWriter&lt;TWrite&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Writer : System.Threading.Channels.ChannelWriter&lt;'Write&gt; with get, set" Usage="System.Threading.Channels.Channel&lt;'Write, 'Read&gt;.Writer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Channels.ChannelWriter&lt;TWrite&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the writable half of this channel.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

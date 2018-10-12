@@ -1,0 +1,85 @@
+﻿<Type Name="BoundedChannelOptions" FullName="System.Threading.Channels.BoundedChannelOptions">
+  <TypeSignature Language="C#" Value="public sealed class BoundedChannelOptions : System.Threading.Channels.ChannelOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BoundedChannelOptions extends System.Threading.Channels.ChannelOptions" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Channels.BoundedChannelOptions" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BoundedChannelOptions&#xA;Inherits ChannelOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BoundedChannelOptions sealed : System::Threading::Channels::ChannelOptions" />
+  <TypeSignature Language="F#" Value="type BoundedChannelOptions = class&#xA;    inherit ChannelOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Channels</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Threading.Channels.ChannelOptions</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides options that control the behavior of <see cref="T:System.Threading.Channels.BoundedChannel`1" /> instances.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BoundedChannelOptions (int capacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Channels.BoundedChannelOptions.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BoundedChannelOptions(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Channels.BoundedChannelOptions : int -&gt; System.Threading.Channels.BoundedChannelOptions" Usage="new System.Threading.Channels.BoundedChannelOptions capacity" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="capacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="capacity">The maximum number of items the bounded channel may store.</param>
+        <summary>Initializes the options.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Capacity">
+      <MemberSignature Language="C#" Value="public int Capacity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Capacity" />
+      <MemberSignature Language="DocId" Value="P:System.Threading.Channels.BoundedChannelOptions.Capacity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Capacity As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Capacity { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Capacity : int with get, set" Usage="System.Threading.Channels.BoundedChannelOptions.Capacity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of items the bounded channel may store.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullMode">
+      <MemberSignature Language="C#" Value="public System.Threading.Channels.BoundedChannelFullMode FullMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Threading.Channels.BoundedChannelFullMode FullMode" />
+      <MemberSignature Language="DocId" Value="P:System.Threading.Channels.BoundedChannelOptions.FullMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property FullMode As BoundedChannelFullMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Channels::BoundedChannelFullMode FullMode { System::Threading::Channels::BoundedChannelFullMode get(); void set(System::Threading::Channels::BoundedChannelFullMode value); };" />
+      <MemberSignature Language="F#" Value="member this.FullMode : System.Threading.Channels.BoundedChannelFullMode with get, set" Usage="System.Threading.Channels.BoundedChannelOptions.FullMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Channels.BoundedChannelFullMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the behavior incurred by write operations when the channel is full.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

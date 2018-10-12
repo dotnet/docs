@@ -311,6 +311,50 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="System.ServiceModel.Administration.IWmiInstanceProvider.FillInstance">
+      <MemberSignature Language="C#" Value="void IWmiInstanceProvider.FillInstance (System.ServiceModel.Administration.IWmiInstance wmiInstance);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Administration.IWmiInstanceProvider.FillInstance(class System.ServiceModel.Administration.IWmiInstance wmiInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebInvokeAttribute.System#ServiceModel#Administration#IWmiInstanceProvider#FillInstance(System.ServiceModel.Administration.IWmiInstance)" />
+      <MemberSignature Language="VB.NET" Value="Sub FillInstance (wmiInstance As IWmiInstance) Implements IWmiInstanceProvider.FillInstance" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Administration.IWmiInstanceProvider.FillInstance(System::ServiceModel::Administration::IWmiInstance ^ wmiInstance) = System::ServiceModel::Administration::IWmiInstanceProvider::FillInstance;" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wmiInstance" Type="System.ServiceModel.Administration.IWmiInstance" />
+      </Parameters>
+      <Docs>
+        <param name="wmiInstance">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Administration.IWmiInstanceProvider.GetInstanceType">
+      <MemberSignature Language="C#" Value="string IWmiInstanceProvider.GetInstanceType ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ServiceModel.Administration.IWmiInstanceProvider.GetInstanceType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebInvokeAttribute.System#ServiceModel#Administration#IWmiInstanceProvider#GetInstanceType" />
+      <MemberSignature Language="VB.NET" Value="Function GetInstanceType () As String Implements IWmiInstanceProvider.GetInstanceType" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ServiceModel.Administration.IWmiInstanceProvider.GetInstanceType() = System::ServiceModel::Administration::IWmiInstanceProvider::GetInstanceType;" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="System.ServiceModel.Description.IOperationBehavior.AddBindingParameters">
       <MemberSignature Language="VB.NET" Value="Sub AddBindingParameters (operation As OperationDescription, parameters As BindingParameterCollection) Implements IOperationBehavior.AddBindingParameters" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0;xamarinandroid-7.1" />
       <MemberSignature Language="C#" Value="void IOperationBehavior.AddBindingParameters (System.ServiceModel.Description.OperationDescription operationDescription, System.ServiceModel.Channels.BindingParameterCollection bindingParameters);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netframework-4.8" />
@@ -481,6 +525,27 @@
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.IOperationContractAttributeProvider.GetOperationContractAttribute">
+      <MemberSignature Language="C#" Value="System.ServiceModel.OperationContractAttribute IOperationContractAttributeProvider.GetOperationContractAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ServiceModel.OperationContractAttribute System.ServiceModel.IOperationContractAttributeProvider.GetOperationContractAttribute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebInvokeAttribute.System#ServiceModel#IOperationContractAttributeProvider#GetOperationContractAttribute" />
+      <MemberSignature Language="VB.NET" Value="Function GetOperationContractAttribute () As OperationContractAttribute Implements IOperationContractAttributeProvider.GetOperationContractAttribute" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ServiceModel::OperationContractAttribute ^ System.ServiceModel.IOperationContractAttributeProvider.GetOperationContractAttribute() = System::ServiceModel::IOperationContractAttributeProvider::GetOperationContractAttribute;" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.OperationContractAttribute</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UriTemplate">

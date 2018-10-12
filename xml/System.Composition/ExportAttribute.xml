@@ -9,13 +9,14 @@
     <AssemblyName>System.Composition.AttributedModel</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
     <AssemblyVersion>1.0.32.0</AssemblyVersion>
+    <AssemblyVersion>1.0.33.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0">
+    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;dotnet-plat-ext-2.1">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Property, AllowMultiple=true, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -207,6 +208,7 @@ End Sub
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -235,6 +237,7 @@ The contract name is compared by using the <xref:System.StringComparer.Ordinal> 
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contractName" Type="System.String" />
@@ -266,6 +269,7 @@ The contract name is compared by using the <xref:System.StringComparer.Ordinal> 
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contractType" Type="System.Type" />
@@ -297,6 +301,7 @@ The contract name is compared by using the <xref:System.StringComparer.Ordinal> 
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contractName" Type="System.String" />
@@ -321,6 +326,7 @@ The contract name is compared by using the <xref:System.StringComparer.Ordinal> 
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -343,6 +349,7 @@ The contract name is compared by using the <xref:System.StringComparer.Ordinal> 
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
+        <AssemblyVersion>1.0.33.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>

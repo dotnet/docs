@@ -1452,57 +1452,6 @@
         <altmember cref="P:System.Windows.Forms.AccessibleObject.Value" />
       </Docs>
     </Member>
-    <Member MemberName="RaiseAutomationNotification">
-      <MemberSignature Language="C#" Value="public bool RaiseAutomationNotification (System.Windows.Forms.Automation.AutomationNotificationKind notificationKind, System.Windows.Forms.Automation.AutomationNotificationProcessing notificationProcessing, string notificationText);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RaiseAutomationNotification(valuetype System.Windows.Forms.Automation.AutomationNotificationKind notificationKind, valuetype System.Windows.Forms.Automation.AutomationNotificationProcessing notificationProcessing, string notificationText) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.RaiseAutomationNotification(System.Windows.Forms.Automation.AutomationNotificationKind,System.Windows.Forms.Automation.AutomationNotificationProcessing,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function RaiseAutomationNotification (notificationKind As AutomationNotificationKind, notificationProcessing As AutomationNotificationProcessing, notificationText As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RaiseAutomationNotification(System::Windows::Forms::Automation::AutomationNotificationKind notificationKind, System::Windows::Forms::Automation::AutomationNotificationProcessing notificationProcessing, System::String ^ notificationText);" />
-      <MemberSignature Language="F#" Value="member this.RaiseAutomationNotification : System.Windows.Forms.Automation.AutomationNotificationKind * System.Windows.Forms.Automation.AutomationNotificationProcessing * string -&gt; bool" Usage="accessibleObject.RaiseAutomationNotification (notificationKind, notificationProcessing, notificationText)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="notificationKind" Type="System.Windows.Forms.Automation.AutomationNotificationKind" />
-        <Parameter Name="notificationProcessing" Type="System.Windows.Forms.Automation.AutomationNotificationProcessing" />
-        <Parameter Name="notificationText" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="notificationKind">To be added.</param>
-        <param name="notificationProcessing">To be added.</param>
-        <param name="notificationText">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RaiseLiveRegionChanged">
-      <MemberSignature Language="C#" Value="public virtual bool RaiseLiveRegionChanged ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool RaiseLiveRegionChanged() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.RaiseLiveRegionChanged" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RaiseLiveRegionChanged () As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool RaiseLiveRegionChanged();" />
-      <MemberSignature Language="F#" Value="abstract member RaiseLiveRegionChanged : unit -&gt; bool&#xA;override this.RaiseLiveRegionChanged : unit -&gt; bool" Usage="accessibleObject.RaiseLiveRegionChanged " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Role">
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.AccessibleRole Role { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AccessibleRole Role" />

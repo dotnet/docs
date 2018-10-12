@@ -1,0 +1,93 @@
+﻿<Type Name="Lzcnt" FullName="System.Runtime.Intrinsics.X86.Lzcnt">
+  <TypeSignature Language="C#" Value="public static class Lzcnt" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Lzcnt extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Intrinsics.X86.Lzcnt" />
+  <TypeSignature Language="VB.NET" Value="Public Class Lzcnt" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Lzcnt abstract sealed" />
+  <TypeSignature Language="F#" Value="type Lzcnt = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public static bool IsSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsSupported" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Intrinsics.X86.Lzcnt.IsSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSupported As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="System.Runtime.Intrinsics.X86.Lzcnt.IsSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LeadingZeroCount">
+      <MemberSignature Language="C#" Value="public static uint LeadingZeroCount (uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 LeadingZeroCount(unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Lzcnt.LeadingZeroCount(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LeadingZeroCount (value As UInteger) As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 LeadingZeroCount(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member LeadingZeroCount : uint32 -&gt; uint32" Usage="System.Runtime.Intrinsics.X86.Lzcnt.LeadingZeroCount value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LeadingZeroCount">
+      <MemberSignature Language="C#" Value="public static ulong LeadingZeroCount (ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 LeadingZeroCount(unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Lzcnt.LeadingZeroCount(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LeadingZeroCount (value As ULong) As ULong" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 LeadingZeroCount(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member LeadingZeroCount : uint64 -&gt; uint64" Usage="System.Runtime.Intrinsics.X86.Lzcnt.LeadingZeroCount value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

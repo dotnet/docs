@@ -1,0 +1,93 @@
+﻿<Type Name="Popcnt" FullName="System.Runtime.Intrinsics.X86.Popcnt">
+  <TypeSignature Language="C#" Value="public static class Popcnt" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Popcnt extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Intrinsics.X86.Popcnt" />
+  <TypeSignature Language="VB.NET" Value="Public Class Popcnt" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Popcnt abstract sealed" />
+  <TypeSignature Language="F#" Value="type Popcnt = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public static bool IsSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsSupported" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Intrinsics.X86.Popcnt.IsSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSupported As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="System.Runtime.Intrinsics.X86.Popcnt.IsSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopCount">
+      <MemberSignature Language="C#" Value="public static int PopCount (uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 PopCount(unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Popcnt.PopCount(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PopCount (value As UInteger) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int PopCount(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member PopCount : uint32 -&gt; int" Usage="System.Runtime.Intrinsics.X86.Popcnt.PopCount value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopCount">
+      <MemberSignature Language="C#" Value="public static long PopCount (ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 PopCount(unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Popcnt.PopCount(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PopCount (value As ULong) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long PopCount(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member PopCount : uint64 -&gt; int64" Usage="System.Runtime.Intrinsics.X86.Popcnt.PopCount value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

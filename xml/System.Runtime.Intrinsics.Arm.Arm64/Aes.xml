@@ -1,0 +1,147 @@
+﻿<Type Name="Aes" FullName="System.Runtime.Intrinsics.Arm.Arm64.Aes">
+  <TypeSignature Language="C#" Value="public static class Aes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Aes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Intrinsics.Arm.Arm64.Aes" />
+  <TypeSignature Language="VB.NET" Value="Public Class Aes" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Aes abstract sealed" />
+  <TypeSignature Language="F#" Value="type Aes = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Decrypt">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;byte&gt; Decrypt (System.Runtime.Intrinsics.Vector128&lt;byte&gt; value, System.Runtime.Intrinsics.Vector128&lt;byte&gt; roundKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; Decrypt(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; value, valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; roundKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Arm.Arm64.Aes.Decrypt(System.Runtime.Intrinsics.Vector128{System.Byte},System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Decrypt (value As Vector128(Of Byte), roundKey As Vector128(Of Byte)) As Vector128(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; Decrypt(System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; value, System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; roundKey);" />
+      <MemberSignature Language="F#" Value="static member Decrypt : System.Runtime.Intrinsics.Vector128&lt;byte&gt; * System.Runtime.Intrinsics.Vector128&lt;byte&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;byte&gt;" Usage="System.Runtime.Intrinsics.Arm.Arm64.Aes.Decrypt (value, roundKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
+        <Parameter Name="roundKey" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="roundKey">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encrypt">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;byte&gt; Encrypt (System.Runtime.Intrinsics.Vector128&lt;byte&gt; value, System.Runtime.Intrinsics.Vector128&lt;byte&gt; roundKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; Encrypt(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; value, valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; roundKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Arm.Arm64.Aes.Encrypt(System.Runtime.Intrinsics.Vector128{System.Byte},System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Encrypt (value As Vector128(Of Byte), roundKey As Vector128(Of Byte)) As Vector128(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; Encrypt(System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; value, System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; roundKey);" />
+      <MemberSignature Language="F#" Value="static member Encrypt : System.Runtime.Intrinsics.Vector128&lt;byte&gt; * System.Runtime.Intrinsics.Vector128&lt;byte&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;byte&gt;" Usage="System.Runtime.Intrinsics.Arm.Arm64.Aes.Encrypt (value, roundKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
+        <Parameter Name="roundKey" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="roundKey">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InverseMixColumns">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;byte&gt; InverseMixColumns (System.Runtime.Intrinsics.Vector128&lt;byte&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; InverseMixColumns(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Arm.Arm64.Aes.InverseMixColumns(System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InverseMixColumns (value As Vector128(Of Byte)) As Vector128(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; InverseMixColumns(System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; value);" />
+      <MemberSignature Language="F#" Value="static member InverseMixColumns : System.Runtime.Intrinsics.Vector128&lt;byte&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;byte&gt;" Usage="System.Runtime.Intrinsics.Arm.Arm64.Aes.InverseMixColumns value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public static bool IsSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsSupported" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Intrinsics.Arm.Arm64.Aes.IsSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSupported As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="System.Runtime.Intrinsics.Arm.Arm64.Aes.IsSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MixColumns">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;byte&gt; MixColumns (System.Runtime.Intrinsics.Vector128&lt;byte&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; MixColumns(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Arm.Arm64.Aes.MixColumns(System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MixColumns (value As Vector128(Of Byte)) As Vector128(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; MixColumns(System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; value);" />
+      <MemberSignature Language="F#" Value="static member MixColumns : System.Runtime.Intrinsics.Vector128&lt;byte&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;byte&gt;" Usage="System.Runtime.Intrinsics.Arm.Arm64.Aes.MixColumns value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -10,6 +10,7 @@
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
     <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,6 +23,36 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="Add&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void* Add&lt;T&gt; (void* source, int elementOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void* Add&lt;T&gt;(void* source, int32 elementOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Add``1(System.Void*,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void* Add(void* source, int elementOffset);" />
+      <MemberSignature Language="F#" Value="static member Add : nativeptr&lt;unit&gt; * int -&gt; nativeptr&lt;unit&gt;" Usage="System.Runtime.CompilerServices.Unsafe.Add (source, elementOffset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void*</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Void*" />
+        <Parameter Name="elementOffset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="elementOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Add&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static T Add&lt;T&gt; (ref T source, int elementOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Add&lt;T&gt;(!!T&amp; source, int32 elementOffset) cil managed" />
@@ -132,6 +163,7 @@
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -168,6 +200,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -236,6 +269,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void*</ReturnType>
@@ -288,6 +322,35 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AsRef&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T AsRef&lt;T&gt; (ref T source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T AsRef&lt;T&gt;([in]!!T&amp; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.AsRef``1(``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AsRef(Of T) (ByRef source As T) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T % AsRef(T % source);" />
+      <MemberSignature Language="F#" Value="static member AsRef :  -&gt; " Usage="System.Runtime.CompilerServices.Unsafe.AsRef source" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue RefType="Ref">
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="T" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ByteOffset&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static IntPtr ByteOffset&lt;T&gt; (ref T origin, ref T target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int ByteOffset&lt;T&gt;(!!T&amp; origin, !!T&amp; target) cil managed" />
@@ -299,6 +362,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
@@ -333,6 +397,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -366,6 +431,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -398,6 +464,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -429,6 +496,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -459,6 +527,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -489,6 +558,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -520,6 +590,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -551,6 +622,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -581,6 +653,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -611,6 +684,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -631,6 +705,68 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsAddressGreaterThan&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool IsAddressGreaterThan&lt;T&gt; (ref T left, ref T right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsAddressGreaterThan&lt;T&gt;(!!T&amp; left, !!T&amp; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.IsAddressGreaterThan``1(``0@,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsAddressGreaterThan(Of T) (ByRef left As T, ByRef right As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool IsAddressGreaterThan(T % left, T % right);" />
+      <MemberSignature Language="F#" Value="static member IsAddressGreaterThan :  *  -&gt; bool" Usage="System.Runtime.CompilerServices.Unsafe.IsAddressGreaterThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="left" Type="T" RefType="ref" />
+        <Parameter Name="right" Type="T" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAddressLessThan&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool IsAddressLessThan&lt;T&gt; (ref T left, ref T right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsAddressLessThan&lt;T&gt;(!!T&amp; left, !!T&amp; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.IsAddressLessThan``1(``0@,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsAddressLessThan(Of T) (ByRef left As T, ByRef right As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool IsAddressLessThan(T % left, T % right);" />
+      <MemberSignature Language="F#" Value="static member IsAddressLessThan :  *  -&gt; bool" Usage="System.Runtime.CompilerServices.Unsafe.IsAddressLessThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="left" Type="T" RefType="ref" />
+        <Parameter Name="right" Type="T" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Read&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static T Read&lt;T&gt; (void* source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Read&lt;T&gt;(void* source) cil managed" />
@@ -643,6 +779,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -674,6 +811,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -705,6 +843,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -739,6 +878,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -751,6 +891,36 @@
         <typeparam name="T">The type of object whose size is retrieved.</typeparam>
         <summary>Returns the size of an object of the given type parameter.</summary>
         <returns>The size of an object of type <typeparamref name="T" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtract&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void* Subtract&lt;T&gt; (void* source, int elementOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void* Subtract&lt;T&gt;(void* source, int32 elementOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Subtract``1(System.Void*,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void* Subtract(void* source, int elementOffset);" />
+      <MemberSignature Language="F#" Value="static member Subtract : nativeptr&lt;unit&gt; * int -&gt; nativeptr&lt;unit&gt;" Usage="System.Runtime.CompilerServices.Unsafe.Subtract (source, elementOffset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void*</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Void*" />
+        <Parameter Name="elementOffset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="elementOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -865,6 +1035,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -897,6 +1068,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -929,6 +1101,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

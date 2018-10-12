@@ -4407,31 +4407,6 @@
         <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
-    <Member MemberName="VerticalScrollBarArrowHeightForDpi">
-      <MemberSignature Language="C#" Value="public static int VerticalScrollBarArrowHeightForDpi (int dpi);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 VerticalScrollBarArrowHeightForDpi(int32 dpi) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SystemInformation.VerticalScrollBarArrowHeightForDpi(System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function VerticalScrollBarArrowHeightForDpi (dpi As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int VerticalScrollBarArrowHeightForDpi(int dpi);" />
-      <MemberSignature Language="F#" Value="static member VerticalScrollBarArrowHeightForDpi : int -&gt; int" Usage="System.Windows.Forms.SystemInformation.VerticalScrollBarArrowHeightForDpi dpi" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="dpi" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="dpi">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="VerticalScrollBarThumbHeight">
       <MemberSignature Language="C#" Value="public static int VerticalScrollBarThumbHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 VerticalScrollBarThumbHeight" />

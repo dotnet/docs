@@ -1,0 +1,138 @@
+﻿<Type Name="Channel" FullName="System.Threading.Channels.Channel">
+  <TypeSignature Language="C#" Value="public static class Channel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Channel extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Channels.Channel" />
+  <TypeSignature Language="VB.NET" Value="Public Class Channel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Channel abstract sealed" />
+  <TypeSignature Language="F#" Value="type Channel = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Channels</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides static methods for creating channels.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateBounded&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Channels.Channel&lt;T&gt; CreateBounded&lt;T&gt; (int capacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Channels.Channel`1&lt;!!T&gt; CreateBounded&lt;T&gt;(int32 capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Channels.Channel.CreateBounded``1(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateBounded(Of T) (capacity As Integer) As Channel(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Threading::Channels::Channel&lt;T&gt; ^ CreateBounded(int capacity);" />
+      <MemberSignature Language="F#" Value="static member CreateBounded : int -&gt; System.Threading.Channels.Channel&lt;'T&gt;" Usage="System.Threading.Channels.Channel.CreateBounded capacity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Channels.Channel&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="capacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Specifies the type of data in the channel.</typeparam>
+        <param name="capacity">The maximum number of items the channel may store.</param>
+        <summary>Creates a channel with the specified maximum capacity.</summary>
+        <returns>The created channel.</returns>
+        <remarks>
+            Channels created with this method apply the <see cref="F:System.Threading.Channels.BoundedChannelFullMode.Wait" />
+            behavior and prohibit continuations from running synchronously.
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBounded&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Channels.Channel&lt;T&gt; CreateBounded&lt;T&gt; (System.Threading.Channels.BoundedChannelOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Channels.Channel`1&lt;!!T&gt; CreateBounded&lt;T&gt;(class System.Threading.Channels.BoundedChannelOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Channels.Channel.CreateBounded``1(System.Threading.Channels.BoundedChannelOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateBounded(Of T) (options As BoundedChannelOptions) As Channel(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Threading::Channels::Channel&lt;T&gt; ^ CreateBounded(System::Threading::Channels::BoundedChannelOptions ^ options);" />
+      <MemberSignature Language="F#" Value="static member CreateBounded : System.Threading.Channels.BoundedChannelOptions -&gt; System.Threading.Channels.Channel&lt;'T&gt;" Usage="System.Threading.Channels.Channel.CreateBounded options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Channels.Channel&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="options" Type="System.Threading.Channels.BoundedChannelOptions" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Specifies the type of data in the channel.</typeparam>
+        <param name="options">Options that guide the behavior of the channel.</param>
+        <summary>Creates a channel with the specified maximum capacity.</summary>
+        <returns>The created channel.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateUnbounded&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Channels.Channel&lt;T&gt; CreateUnbounded&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Channels.Channel`1&lt;!!T&gt; CreateUnbounded&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Channels.Channel.CreateUnbounded``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateUnbounded(Of T) () As Channel(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Threading::Channels::Channel&lt;T&gt; ^ CreateUnbounded();" />
+      <MemberSignature Language="F#" Value="static member CreateUnbounded : unit -&gt; System.Threading.Channels.Channel&lt;'T&gt;" Usage="System.Threading.Channels.Channel.CreateUnbounded " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Channels.Channel&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>Creates an unbounded channel usable by any number of readers and writers concurrently.</summary>
+        <returns>The created channel.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateUnbounded&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Channels.Channel&lt;T&gt; CreateUnbounded&lt;T&gt; (System.Threading.Channels.UnboundedChannelOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Channels.Channel`1&lt;!!T&gt; CreateUnbounded&lt;T&gt;(class System.Threading.Channels.UnboundedChannelOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Channels.Channel.CreateUnbounded``1(System.Threading.Channels.UnboundedChannelOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateUnbounded(Of T) (options As UnboundedChannelOptions) As Channel(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Threading::Channels::Channel&lt;T&gt; ^ CreateUnbounded(System::Threading::Channels::UnboundedChannelOptions ^ options);" />
+      <MemberSignature Language="F#" Value="static member CreateUnbounded : System.Threading.Channels.UnboundedChannelOptions -&gt; System.Threading.Channels.Channel&lt;'T&gt;" Usage="System.Threading.Channels.Channel.CreateUnbounded options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Channels.Channel&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="options" Type="System.Threading.Channels.UnboundedChannelOptions" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Specifies the type of data in the channel.</typeparam>
+        <param name="options">Options that guide the behavior of the channel.</param>
+        <summary>Creates an unbounded channel subject to the provided options.</summary>
+        <returns>The created channel.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,244 @@
+﻿<Type Name="PipeWriter" FullName="System.IO.Pipelines.PipeWriter">
+  <TypeSignature Language="C#" Value="public abstract class PipeWriter : System.Buffers.IBufferWriter&lt;byte&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PipeWriter extends System.Object implements class System.Buffers.IBufferWriter`1&lt;unsigned int8&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Pipelines.PipeWriter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PipeWriter&#xA;Implements IBufferWriter(Of Byte)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PipeWriter abstract : System::Buffers::IBufferWriter&lt;System::Byte&gt;" />
+  <TypeSignature Language="F#" Value="type PipeWriter = class&#xA;    interface IBufferWriter&lt;byte&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Pipelines</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Buffers.IBufferWriter&lt;System.Byte&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines a class that provides a pipeline to which data can be written.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PipeWriter ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.PipeWriter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PipeWriter();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Advance">
+      <MemberSignature Language="C#" Value="public abstract void Advance (int bytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Advance(int32 bytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.PipeWriter.Advance(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Advance (bytes As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Advance(int bytes);" />
+      <MemberSignature Language="F#" Value="abstract member Advance : int -&gt; unit" Usage="pipeWriter.Advance bytes" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Buffers.IBufferWriter`1.Advance(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytes" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bytes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="CancelPendingFlush">
+      <MemberSignature Language="C#" Value="public abstract void CancelPendingFlush ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CancelPendingFlush() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.PipeWriter.CancelPendingFlush" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub CancelPendingFlush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void CancelPendingFlush();" />
+      <MemberSignature Language="F#" Value="abstract member CancelPendingFlush : unit -&gt; unit" Usage="pipeWriter.CancelPendingFlush " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cancels the pending <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> operation. If there is none, cancels next <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> operation, without completing the <see cref="T:System.IO.Pipelines.PipeWriter" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Complete">
+      <MemberSignature Language="C#" Value="public abstract void Complete (Exception exception = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Complete(class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.PipeWriter.Complete(System.Exception)" />
+      <MemberSignature Language="F#" Value="abstract member Complete : Exception -&gt; unit" Usage="pipeWriter.Complete exception" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exception" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="exception">Optional <see cref="T:System.Exception" /> indicating a failure that's causing the pipeline to complete.</param>
+        <summary>Marks the <see cref="T:System.IO.Pipelines.PipeWriter" /> as being complete, meaning no more items will be written to it.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlushAsync">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.ValueTask&lt;System.IO.Pipelines.FlushResult&gt; FlushAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;valuetype System.IO.Pipelines.FlushResult&gt; FlushAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member FlushAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;System.IO.Pipelines.FlushResult&gt;" Usage="pipeWriter.FlushAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;System.IO.Pipelines.FlushResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">To be added.</param>
+        <summary>Makes bytes written available to <see cref="T:System.IO.Pipelines.PipeReader" /> and runs <see cref="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)" /> continuation.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMemory">
+      <MemberSignature Language="C#" Value="public abstract Memory&lt;byte&gt; GetMemory (int sizeHint = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Memory`1&lt;unsigned int8&gt; GetMemory(int32 sizeHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.PipeWriter.GetMemory(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMemory (Optional sizeHint As Integer = 0) As Memory(Of Byte)" />
+      <MemberSignature Language="F#" Value="abstract member GetMemory : int -&gt; Memory&lt;byte&gt;" Usage="pipeWriter.GetMemory sizeHint" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Buffers.IBufferWriter`1.GetMemory(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sizeHint" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sizeHint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="GetSpan">
+      <MemberSignature Language="C#" Value="public abstract Span&lt;byte&gt; GetSpan (int sizeHint = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Span`1&lt;unsigned int8&gt; GetSpan(int32 sizeHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.PipeWriter.GetSpan(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetSpan (Optional sizeHint As Integer = 0) As Span(Of Byte)" />
+      <MemberSignature Language="F#" Value="abstract member GetSpan : int -&gt; Span&lt;byte&gt;" Usage="pipeWriter.GetSpan sizeHint" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Buffers.IBufferWriter`1.GetSpan(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sizeHint" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sizeHint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="OnReaderCompleted">
+      <MemberSignature Language="C#" Value="public abstract void OnReaderCompleted (Action&lt;Exception,object&gt; callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnReaderCompleted(class System.Action`2&lt;class System.Exception, object&gt; callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.PipeWriter.OnReaderCompleted(System.Action{System.Exception,System.Object},System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub OnReaderCompleted (callback As Action(Of Exception, Object), state As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void OnReaderCompleted(Action&lt;Exception ^, System::Object ^&gt; ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member OnReaderCompleted : Action&lt;Exception, obj&gt; * obj -&gt; unit" Usage="pipeWriter.OnReaderCompleted (callback, state)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Action&lt;System.Exception,System.Object&gt;" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>Registers a callback that gets executed when the <see cref="T:System.IO.Pipelines.PipeReader" /> side of the pipe is completed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.ValueTask&lt;System.IO.Pipelines.FlushResult&gt; WriteAsync (ReadOnlyMemory&lt;byte&gt; source, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;valuetype System.IO.Pipelines.FlushResult&gt; WriteAsync(valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; source, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.PipeWriter.WriteAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member WriteAsync : ReadOnlyMemory&lt;byte&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;System.IO.Pipelines.FlushResult&gt;&#xA;override this.WriteAsync : ReadOnlyMemory&lt;byte&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;System.IO.Pipelines.FlushResult&gt;" Usage="pipeWriter.WriteAsync (source, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;System.IO.Pipelines.FlushResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>Writes <paramref name="source" /> to the pipe and makes data accessible to <see cref="T:System.IO.Pipelines.PipeReader" /></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

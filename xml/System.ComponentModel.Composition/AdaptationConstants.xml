@@ -1,0 +1,82 @@
+﻿<Type Name="AdaptationConstants" FullName="System.ComponentModel.Composition.AdaptationConstants">
+  <TypeSignature Language="C#" Value="public static class AdaptationConstants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AdaptationConstants extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.AdaptationConstants" />
+  <TypeSignature Language="VB.NET" Value="Public Class AdaptationConstants" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AdaptationConstants abstract sealed" />
+  <TypeSignature Language="F#" Value="type AdaptationConstants = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AdapterContractName">
+      <MemberSignature Language="C#" Value="public const string AdapterContractName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AdapterContractName" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.AdaptationConstants.AdapterContractName" />
+      <MemberSignature Language="VB.NET" Value="Public Const AdapterContractName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ AdapterContractName;" />
+      <MemberSignature Language="F#" Value="val mutable AdapterContractName : string" Usage="System.ComponentModel.Composition.AdaptationConstants.AdapterContractName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdapterFromContractMetadataName">
+      <MemberSignature Language="C#" Value="public const string AdapterFromContractMetadataName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AdapterFromContractMetadataName" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.AdaptationConstants.AdapterFromContractMetadataName" />
+      <MemberSignature Language="VB.NET" Value="Public Const AdapterFromContractMetadataName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ AdapterFromContractMetadataName;" />
+      <MemberSignature Language="F#" Value="val mutable AdapterFromContractMetadataName : string" Usage="System.ComponentModel.Composition.AdaptationConstants.AdapterFromContractMetadataName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdapterToContractMetadataName">
+      <MemberSignature Language="C#" Value="public const string AdapterToContractMetadataName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AdapterToContractMetadataName" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.AdaptationConstants.AdapterToContractMetadataName" />
+      <MemberSignature Language="VB.NET" Value="Public Const AdapterToContractMetadataName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ AdapterToContractMetadataName;" />
+      <MemberSignature Language="F#" Value="val mutable AdapterToContractMetadataName : string" Usage="System.ComponentModel.Composition.AdaptationConstants.AdapterToContractMetadataName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

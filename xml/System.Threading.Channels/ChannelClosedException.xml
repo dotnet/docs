@@ -1,0 +1,104 @@
+﻿<Type Name="ChannelClosedException" FullName="System.Threading.Channels.ChannelClosedException">
+  <TypeSignature Language="C#" Value="public class ChannelClosedException : InvalidOperationException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChannelClosedException extends System.InvalidOperationException" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Channels.ChannelClosedException" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChannelClosedException&#xA;Inherits InvalidOperationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChannelClosedException : InvalidOperationException" />
+  <TypeSignature Language="F#" Value="type ChannelClosedException = class&#xA;    inherit InvalidOperationException" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Channels</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.InvalidOperationException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Exception thrown when a channel is used after it's been closed.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelClosedException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Channels.ChannelClosedException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelClosedException();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Channels.ChannelClosedException" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelClosedException (Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Channels.ChannelClosedException.#ctor(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelClosedException(Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Channels.ChannelClosedException : Exception -&gt; System.Threading.Channels.ChannelClosedException" Usage="new System.Threading.Channels.ChannelClosedException innerException" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="innerException">The exception that is the cause of this exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Channels.ChannelClosedException" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelClosedException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Channels.ChannelClosedException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelClosedException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Channels.ChannelClosedException : string -&gt; System.Threading.Channels.ChannelClosedException" Usage="new System.Threading.Channels.ChannelClosedException message" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that describes the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Channels.ChannelClosedException" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelClosedException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Channels.ChannelClosedException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelClosedException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Channels.ChannelClosedException : string * Exception -&gt; System.Threading.Channels.ChannelClosedException" Usage="new System.Threading.Channels.ChannelClosedException (message, innerException)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that describes the error.</param>
+        <param name="innerException">The exception that is the cause of this exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Channels.ChannelClosedException" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

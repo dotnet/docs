@@ -1,0 +1,471 @@
+﻿<Type Name="Ssse3" FullName="System.Runtime.Intrinsics.X86.Ssse3">
+  <TypeSignature Language="C#" Value="public static class Ssse3" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Ssse3 extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Intrinsics.X86.Ssse3" />
+  <TypeSignature Language="VB.NET" Value="Public Class Ssse3" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Ssse3 abstract sealed" />
+  <TypeSignature Language="F#" Value="type Ssse3 = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Abs">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;ushort&gt; Abs (System.Runtime.Intrinsics.Vector128&lt;short&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int16&gt; Abs(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Ssse3.Abs(System.Runtime.Intrinsics.Vector128{System.Int16})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Abs (value As Vector128(Of Short)) As Vector128(Of UShort)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;System::UInt16&gt; Abs(System::Runtime::Intrinsics::Vector128&lt;short&gt; value);" />
+      <MemberSignature Language="F#" Value="static member Abs : System.Runtime.Intrinsics.Vector128&lt;int16&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;uint16&gt;" Usage="System.Runtime.Intrinsics.X86.Ssse3.Abs value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Abs">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;uint&gt; Abs (System.Runtime.Intrinsics.Vector128&lt;int&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; Abs(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int32&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Ssse3.Abs(System.Runtime.Intrinsics.Vector128{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Abs (value As Vector128(Of Integer)) As Vector128(Of UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; Abs(System::Runtime::Intrinsics::Vector128&lt;int&gt; value);" />
+      <MemberSignature Language="F#" Value="static member Abs : System.Runtime.Intrinsics.Vector128&lt;int&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;uint32&gt;" Usage="System.Runtime.Intrinsics.X86.Ssse3.Abs value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Abs">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;byte&gt; Abs (System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; Abs(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int8&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Ssse3.Abs(System.Runtime.Intrinsics.Vector128{System.SByte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Abs (value As Vector128(Of SByte)) As Vector128(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; Abs(System::Runtime::Intrinsics::Vector128&lt;System::SByte&gt; value);" />
+      <MemberSignature Language="F#" Value="static member Abs : System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;byte&gt;" Usage="System.Runtime.Intrinsics.X86.Ssse3.Abs value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlignRight">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; AlignRight (System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; left, System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; right, byte mask);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;int8&gt; AlignRight(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int8&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int8&gt; right, unsigned int8 mask) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Ssse3.AlignRight(System.Runtime.Intrinsics.Vector128{System.SByte},System.Runtime.Intrinsics.Vector128{System.SByte},System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AlignRight (left As Vector128(Of SByte), right As Vector128(Of SByte), mask As Byte) As Vector128(Of SByte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;System::SByte&gt; AlignRight(System::Runtime::Intrinsics::Vector128&lt;System::SByte&gt; left, System::Runtime::Intrinsics::Vector128&lt;System::SByte&gt; right, System::Byte mask);" />
+      <MemberSignature Language="F#" Value="static member AlignRight : System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; * System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; * byte -&gt; System.Runtime.Intrinsics.Vector128&lt;sbyte&gt;" Usage="System.Runtime.Intrinsics.X86.Ssse3.AlignRight (left, right, mask)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" />
+        <Parameter Name="mask" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <param name="mask">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalAdd">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;short&gt; HorizontalAdd (System.Runtime.Intrinsics.Vector128&lt;short&gt; left, System.Runtime.Intrinsics.Vector128&lt;short&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; HorizontalAdd(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Ssse3.HorizontalAdd(System.Runtime.Intrinsics.Vector128{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int16})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HorizontalAdd (left As Vector128(Of Short), right As Vector128(Of Short)) As Vector128(Of Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;short&gt; HorizontalAdd(System::Runtime::Intrinsics::Vector128&lt;short&gt; left, System::Runtime::Intrinsics::Vector128&lt;short&gt; right);" />
+      <MemberSignature Language="F#" Value="static member HorizontalAdd : System.Runtime.Intrinsics.Vector128&lt;int16&gt; * System.Runtime.Intrinsics.Vector128&lt;int16&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;int16&gt;" Usage="System.Runtime.Intrinsics.X86.Ssse3.HorizontalAdd (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalAdd">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;int&gt; HorizontalAdd (System.Runtime.Intrinsics.Vector128&lt;int&gt; left, System.Runtime.Intrinsics.Vector128&lt;int&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;int32&gt; HorizontalAdd(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Ssse3.HorizontalAdd(System.Runtime.Intrinsics.Vector128{System.Int32},System.Runtime.Intrinsics.Vector128{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HorizontalAdd (left As Vector128(Of Integer), right As Vector128(Of Integer)) As Vector128(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;int&gt; HorizontalAdd(System::Runtime::Intrinsics::Vector128&lt;int&gt; left, System::Runtime::Intrinsics::Vector128&lt;int&gt; right);" />
+      <MemberSignature Language="F#" Value="static member HorizontalAdd : System.Runtime.Intrinsics.Vector128&lt;int&gt; * System.Runtime.Intrinsics.Vector128&lt;int&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;int&gt;" Usage="System.Runtime.Intrinsics.X86.Ssse3.HorizontalAdd (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalAddSaturate">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;short&gt; HorizontalAddSaturate (System.Runtime.Intrinsics.Vector128&lt;short&gt; left, System.Runtime.Intrinsics.Vector128&lt;short&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; HorizontalAddSaturate(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Ssse3.HorizontalAddSaturate(System.Runtime.Intrinsics.Vector128{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int16})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HorizontalAddSaturate (left As Vector128(Of Short), right As Vector128(Of Short)) As Vector128(Of Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;short&gt; HorizontalAddSaturate(System::Runtime::Intrinsics::Vector128&lt;short&gt; left, System::Runtime::Intrinsics::Vector128&lt;short&gt; right);" />
+      <MemberSignature Language="F#" Value="static member HorizontalAddSaturate : System.Runtime.Intrinsics.Vector128&lt;int16&gt; * System.Runtime.Intrinsics.Vector128&lt;int16&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;int16&gt;" Usage="System.Runtime.Intrinsics.X86.Ssse3.HorizontalAddSaturate (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalSubtract">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;short&gt; HorizontalSubtract (System.Runtime.Intrinsics.Vector128&lt;short&gt; left, System.Runtime.Intrinsics.Vector128&lt;short&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; HorizontalSubtract(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Ssse3.HorizontalSubtract(System.Runtime.Intrinsics.Vector128{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int16})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HorizontalSubtract (left As Vector128(Of Short), right As Vector128(Of Short)) As Vector128(Of Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;short&gt; HorizontalSubtract(System::Runtime::Intrinsics::Vector128&lt;short&gt; left, System::Runtime::Intrinsics::Vector128&lt;short&gt; right);" />
+      <MemberSignature Language="F#" Value="static member HorizontalSubtract : System.Runtime.Intrinsics.Vector128&lt;int16&gt; * System.Runtime.Intrinsics.Vector128&lt;int16&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;int16&gt;" Usage="System.Runtime.Intrinsics.X86.Ssse3.HorizontalSubtract (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalSubtract">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;int&gt; HorizontalSubtract (System.Runtime.Intrinsics.Vector128&lt;int&gt; left, System.Runtime.Intrinsics.Vector128&lt;int&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;int32&gt; HorizontalSubtract(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Ssse3.HorizontalSubtract(System.Runtime.Intrinsics.Vector128{System.Int32},System.Runtime.Intrinsics.Vector128{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HorizontalSubtract (left As Vector128(Of Integer), right As Vector128(Of Integer)) As Vector128(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;int&gt; HorizontalSubtract(System::Runtime::Intrinsics::Vector128&lt;int&gt; left, System::Runtime::Intrinsics::Vector128&lt;int&gt; right);" />
+      <MemberSignature Language="F#" Value="static member HorizontalSubtract : System.Runtime.Intrinsics.Vector128&lt;int&gt; * System.Runtime.Intrinsics.Vector128&lt;int&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;int&gt;" Usage="System.Runtime.Intrinsics.X86.Ssse3.HorizontalSubtract (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalSubtractSaturate">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;short&gt; HorizontalSubtractSaturate (System.Runtime.Intrinsics.Vector128&lt;short&gt; left, System.Runtime.Intrinsics.Vector128&lt;short&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; HorizontalSubtractSaturate(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Ssse3.HorizontalSubtractSaturate(System.Runtime.Intrinsics.Vector128{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int16})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HorizontalSubtractSaturate (left As Vector128(Of Short), right As Vector128(Of Short)) As Vector128(Of Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;short&gt; HorizontalSubtractSaturate(System::Runtime::Intrinsics::Vector128&lt;short&gt; left, System::Runtime::Intrinsics::Vector128&lt;short&gt; right);" />
+      <MemberSignature Language="F#" Value="static member HorizontalSubtractSaturate : System.Runtime.Intrinsics.Vector128&lt;int16&gt; * System.Runtime.Intrinsics.Vector128&lt;int16&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;int16&gt;" Usage="System.Runtime.Intrinsics.X86.Ssse3.HorizontalSubtractSaturate (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public static bool IsSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsSupported" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Intrinsics.X86.Ssse3.IsSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSupported As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="System.Runtime.Intrinsics.X86.Ssse3.IsSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAddAdjacent">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;short&gt; MultiplyAddAdjacent (System.Runtime.Intrinsics.Vector128&lt;byte&gt; left, System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; MultiplyAddAdjacent(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int8&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Ssse3.MultiplyAddAdjacent(System.Runtime.Intrinsics.Vector128{System.Byte},System.Runtime.Intrinsics.Vector128{System.SByte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyAddAdjacent (left As Vector128(Of Byte), right As Vector128(Of SByte)) As Vector128(Of Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;short&gt; MultiplyAddAdjacent(System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; left, System::Runtime::Intrinsics::Vector128&lt;System::SByte&gt; right);" />
+      <MemberSignature Language="F#" Value="static member MultiplyAddAdjacent : System.Runtime.Intrinsics.Vector128&lt;byte&gt; * System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;int16&gt;" Usage="System.Runtime.Intrinsics.X86.Ssse3.MultiplyAddAdjacent (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyHighRoundScale">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;short&gt; MultiplyHighRoundScale (System.Runtime.Intrinsics.Vector128&lt;short&gt; left, System.Runtime.Intrinsics.Vector128&lt;short&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; MultiplyHighRoundScale(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Ssse3.MultiplyHighRoundScale(System.Runtime.Intrinsics.Vector128{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int16})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyHighRoundScale (left As Vector128(Of Short), right As Vector128(Of Short)) As Vector128(Of Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;short&gt; MultiplyHighRoundScale(System::Runtime::Intrinsics::Vector128&lt;short&gt; left, System::Runtime::Intrinsics::Vector128&lt;short&gt; right);" />
+      <MemberSignature Language="F#" Value="static member MultiplyHighRoundScale : System.Runtime.Intrinsics.Vector128&lt;int16&gt; * System.Runtime.Intrinsics.Vector128&lt;int16&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;int16&gt;" Usage="System.Runtime.Intrinsics.X86.Ssse3.MultiplyHighRoundScale (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shuffle">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; Shuffle (System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; value, System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; mask);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;int8&gt; Shuffle(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int8&gt; value, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int8&gt; mask) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Ssse3.Shuffle(System.Runtime.Intrinsics.Vector128{System.SByte},System.Runtime.Intrinsics.Vector128{System.SByte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Shuffle (value As Vector128(Of SByte), mask As Vector128(Of SByte)) As Vector128(Of SByte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;System::SByte&gt; Shuffle(System::Runtime::Intrinsics::Vector128&lt;System::SByte&gt; value, System::Runtime::Intrinsics::Vector128&lt;System::SByte&gt; mask);" />
+      <MemberSignature Language="F#" Value="static member Shuffle : System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; * System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;sbyte&gt;" Usage="System.Runtime.Intrinsics.X86.Ssse3.Shuffle (value, mask)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="mask">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sign">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;short&gt; Sign (System.Runtime.Intrinsics.Vector128&lt;short&gt; left, System.Runtime.Intrinsics.Vector128&lt;short&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; Sign(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Ssse3.Sign(System.Runtime.Intrinsics.Vector128{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int16})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Sign (left As Vector128(Of Short), right As Vector128(Of Short)) As Vector128(Of Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;short&gt; Sign(System::Runtime::Intrinsics::Vector128&lt;short&gt; left, System::Runtime::Intrinsics::Vector128&lt;short&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Sign : System.Runtime.Intrinsics.Vector128&lt;int16&gt; * System.Runtime.Intrinsics.Vector128&lt;int16&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;int16&gt;" Usage="System.Runtime.Intrinsics.X86.Ssse3.Sign (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sign">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;int&gt; Sign (System.Runtime.Intrinsics.Vector128&lt;int&gt; left, System.Runtime.Intrinsics.Vector128&lt;int&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;int32&gt; Sign(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Ssse3.Sign(System.Runtime.Intrinsics.Vector128{System.Int32},System.Runtime.Intrinsics.Vector128{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Sign (left As Vector128(Of Integer), right As Vector128(Of Integer)) As Vector128(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;int&gt; Sign(System::Runtime::Intrinsics::Vector128&lt;int&gt; left, System::Runtime::Intrinsics::Vector128&lt;int&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Sign : System.Runtime.Intrinsics.Vector128&lt;int&gt; * System.Runtime.Intrinsics.Vector128&lt;int&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;int&gt;" Usage="System.Runtime.Intrinsics.X86.Ssse3.Sign (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sign">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; Sign (System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; left, System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;int8&gt; Sign(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int8&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int8&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Ssse3.Sign(System.Runtime.Intrinsics.Vector128{System.SByte},System.Runtime.Intrinsics.Vector128{System.SByte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Sign (left As Vector128(Of SByte), right As Vector128(Of SByte)) As Vector128(Of SByte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;System::SByte&gt; Sign(System::Runtime::Intrinsics::Vector128&lt;System::SByte&gt; left, System::Runtime::Intrinsics::Vector128&lt;System::SByte&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Sign : System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; * System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;sbyte&gt;" Usage="System.Runtime.Intrinsics.X86.Ssse3.Sign (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

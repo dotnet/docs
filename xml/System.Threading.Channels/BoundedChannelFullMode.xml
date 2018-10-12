@@ -1,0 +1,101 @@
+﻿<Type Name="BoundedChannelFullMode" FullName="System.Threading.Channels.BoundedChannelFullMode">
+  <TypeSignature Language="C#" Value="public enum BoundedChannelFullMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BoundedChannelFullMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Channels.BoundedChannelFullMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BoundedChannelFullMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class BoundedChannelFullMode" />
+  <TypeSignature Language="F#" Value="type BoundedChannelFullMode = " />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Channels</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the behavior to use when writing to a bounded channel that is already full.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DropNewest">
+      <MemberSignature Language="C#" Value="DropNewest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Channels.BoundedChannelFullMode DropNewest = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Channels.BoundedChannelFullMode.DropNewest" />
+      <MemberSignature Language="VB.NET" Value="DropNewest" />
+      <MemberSignature Language="C++ CLI" Value="DropNewest" />
+      <MemberSignature Language="F#" Value="DropNewest = 1" Usage="System.Threading.Channels.BoundedChannelFullMode.DropNewest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Channels.BoundedChannelFullMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>Removes and ignores the newest item in the channel in order to make room for the item being written.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropOldest">
+      <MemberSignature Language="C#" Value="DropOldest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Channels.BoundedChannelFullMode DropOldest = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Channels.BoundedChannelFullMode.DropOldest" />
+      <MemberSignature Language="VB.NET" Value="DropOldest" />
+      <MemberSignature Language="C++ CLI" Value="DropOldest" />
+      <MemberSignature Language="F#" Value="DropOldest = 2" Usage="System.Threading.Channels.BoundedChannelFullMode.DropOldest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Channels.BoundedChannelFullMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>Removes and ignores the oldest item in the channel in order to make room for the item being written.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropWrite">
+      <MemberSignature Language="C#" Value="DropWrite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Channels.BoundedChannelFullMode DropWrite = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Channels.BoundedChannelFullMode.DropWrite" />
+      <MemberSignature Language="VB.NET" Value="DropWrite" />
+      <MemberSignature Language="C++ CLI" Value="DropWrite" />
+      <MemberSignature Language="F#" Value="DropWrite = 3" Usage="System.Threading.Channels.BoundedChannelFullMode.DropWrite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Channels.BoundedChannelFullMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>Drops the item being written.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Wait">
+      <MemberSignature Language="C#" Value="Wait" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Channels.BoundedChannelFullMode Wait = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Channels.BoundedChannelFullMode.Wait" />
+      <MemberSignature Language="VB.NET" Value="Wait" />
+      <MemberSignature Language="C++ CLI" Value="Wait" />
+      <MemberSignature Language="F#" Value="Wait = 0" Usage="System.Threading.Channels.BoundedChannelFullMode.Wait" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Channels.BoundedChannelFullMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Waits for space to be available in order to complete the write operation.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

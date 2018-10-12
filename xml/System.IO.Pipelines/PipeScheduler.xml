@@ -1,0 +1,107 @@
+﻿<Type Name="PipeScheduler" FullName="System.IO.Pipelines.PipeScheduler">
+  <TypeSignature Language="C#" Value="public abstract class PipeScheduler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PipeScheduler extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Pipelines.PipeScheduler" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PipeScheduler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PipeScheduler abstract" />
+  <TypeSignature Language="F#" Value="type PipeScheduler = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Pipelines</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Abstraction for running <see cref="T:System.IO.Pipelines.PipeReader" /> and <see cref="T:System.IO.Pipelines.PipeWriter" /> callbacks and continuations.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PipeScheduler ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.PipeScheduler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PipeScheduler();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inline">
+      <MemberSignature Language="C#" Value="public static System.IO.Pipelines.PipeScheduler Inline { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.IO.Pipelines.PipeScheduler Inline" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipelines.PipeScheduler.Inline" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Inline As PipeScheduler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IO::Pipelines::PipeScheduler ^ Inline { System::IO::Pipelines::PipeScheduler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Inline : System.IO.Pipelines.PipeScheduler" Usage="System.IO.Pipelines.PipeScheduler.Inline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Pipelines.PipeScheduler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.IO.Pipelines.PipeScheduler" /> implementation that runs callbacks inline.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Schedule">
+      <MemberSignature Language="C#" Value="public abstract void Schedule (Action&lt;object&gt; action, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Schedule(class System.Action`1&lt;object&gt; action, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.PipeScheduler.Schedule(System.Action{System.Object},System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Schedule (action As Action(Of Object), state As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Schedule(Action&lt;System::Object ^&gt; ^ action, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member Schedule : Action&lt;obj&gt; * obj -&gt; unit" Usage="pipeScheduler.Schedule (action, state)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="System.Action&lt;System.Object&gt;" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="action">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>Requests <paramref name="action" /> to be run on scheduler with <paramref name="state" /> being passed in.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreadPool">
+      <MemberSignature Language="C#" Value="public static System.IO.Pipelines.PipeScheduler ThreadPool { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.IO.Pipelines.PipeScheduler ThreadPool" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipelines.PipeScheduler.ThreadPool" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ThreadPool As PipeScheduler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IO::Pipelines::PipeScheduler ^ ThreadPool { System::IO::Pipelines::PipeScheduler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThreadPool : System.IO.Pipelines.PipeScheduler" Usage="System.IO.Pipelines.PipeScheduler.ThreadPool" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Pipelines.PipeScheduler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.IO.Pipelines.PipeScheduler" /> implementation that queues callbacks to thread pool.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,222 @@
+﻿<Type Name="PipeOptions" FullName="System.IO.Pipelines.PipeOptions">
+  <TypeSignature Language="C#" Value="public class PipeOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PipeOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Pipelines.PipeOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class PipeOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PipeOptions" />
+  <TypeSignature Language="F#" Value="type PipeOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Pipelines</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a set of <see cref="T:System.IO.Pipelines.Pipe" /> options.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PipeOptions (System.Buffers.MemoryPool&lt;byte&gt; pool = null, System.IO.Pipelines.PipeScheduler readerScheduler = null, System.IO.Pipelines.PipeScheduler writerScheduler = null, long pauseWriterThreshold = 32768, long resumeWriterThreshold = 16384, int minimumSegmentSize = 2048, bool useSynchronizationContext = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Buffers.MemoryPool`1&lt;unsigned int8&gt; pool, class System.IO.Pipelines.PipeScheduler readerScheduler, class System.IO.Pipelines.PipeScheduler writerScheduler, int64 pauseWriterThreshold, int64 resumeWriterThreshold, int32 minimumSegmentSize, bool useSynchronizationContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.PipeOptions.#ctor(System.Buffers.MemoryPool{System.Byte},System.IO.Pipelines.PipeScheduler,System.IO.Pipelines.PipeScheduler,System.Int64,System.Int64,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional pool As MemoryPool(Of Byte) = null, Optional readerScheduler As PipeScheduler = null, Optional writerScheduler As PipeScheduler = null, Optional pauseWriterThreshold As Long = 32768, Optional resumeWriterThreshold As Long = 16384, Optional minimumSegmentSize As Integer = 2048, Optional useSynchronizationContext As Boolean = true)" />
+      <MemberSignature Language="F#" Value="new System.IO.Pipelines.PipeOptions : System.Buffers.MemoryPool&lt;byte&gt; * System.IO.Pipelines.PipeScheduler * System.IO.Pipelines.PipeScheduler * int64 * int64 * int * bool -&gt; System.IO.Pipelines.PipeOptions" Usage="new System.IO.Pipelines.PipeOptions (pool, readerScheduler, writerScheduler, pauseWriterThreshold, resumeWriterThreshold, minimumSegmentSize, useSynchronizationContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pool" Type="System.Buffers.MemoryPool&lt;System.Byte&gt;" />
+        <Parameter Name="readerScheduler" Type="System.IO.Pipelines.PipeScheduler" />
+        <Parameter Name="writerScheduler" Type="System.IO.Pipelines.PipeScheduler" />
+        <Parameter Name="pauseWriterThreshold" Type="System.Int64" />
+        <Parameter Name="resumeWriterThreshold" Type="System.Int64" />
+        <Parameter Name="minimumSegmentSize" Type="System.Int32" />
+        <Parameter Name="useSynchronizationContext" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="pool">To be added.</param>
+        <param name="readerScheduler">To be added.</param>
+        <param name="writerScheduler">To be added.</param>
+        <param name="pauseWriterThreshold">To be added.</param>
+        <param name="resumeWriterThreshold">To be added.</param>
+        <param name="minimumSegmentSize">To be added.</param>
+        <param name="useSynchronizationContext">To be added.</param>
+        <summary>Creates a new instance of <see cref="T:System.IO.Pipelines.PipeOptions" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static System.IO.Pipelines.PipeOptions Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.IO.Pipelines.PipeOptions Default" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipelines.PipeOptions.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As PipeOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IO::Pipelines::PipeOptions ^ Default { System::IO::Pipelines::PipeOptions ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.IO.Pipelines.PipeOptions" Usage="System.IO.Pipelines.PipeOptions.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Pipelines.PipeOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default instance of <see cref="T:System.IO.Pipelines.PipeOptions" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumSegmentSize">
+      <MemberSignature Language="C#" Value="public int MinimumSegmentSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinimumSegmentSize" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipelines.PipeOptions.MinimumSegmentSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinimumSegmentSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinimumSegmentSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumSegmentSize : int" Usage="System.IO.Pipelines.PipeOptions.MinimumSegmentSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the minimum size of the segment requested from <see cref="P:System.IO.Pipelines.PipeOptions.Pool" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PauseWriterThreshold">
+      <MemberSignature Language="C#" Value="public long PauseWriterThreshold { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 PauseWriterThreshold" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipelines.PipeOptions.PauseWriterThreshold" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PauseWriterThreshold As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long PauseWriterThreshold { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.PauseWriterThreshold : int64" Usage="System.IO.Pipelines.PipeOptions.PauseWriterThreshold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the amount of bytes in <see cref="T:System.IO.Pipelines.Pipe" /> when <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> starts blocking.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pool">
+      <MemberSignature Language="C#" Value="public System.Buffers.MemoryPool&lt;byte&gt; Pool { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Buffers.MemoryPool`1&lt;unsigned int8&gt; Pool" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipelines.PipeOptions.Pool" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pool As MemoryPool(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Buffers::MemoryPool&lt;System::Byte&gt; ^ Pool { System::Buffers::MemoryPool&lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pool : System.Buffers.MemoryPool&lt;byte&gt;" Usage="System.IO.Pipelines.PipeOptions.Pool" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.MemoryPool&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Buffers.MemoryPool`1" /> instances used for buffer management.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReaderScheduler">
+      <MemberSignature Language="C#" Value="public System.IO.Pipelines.PipeScheduler ReaderScheduler { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Pipelines.PipeScheduler ReaderScheduler" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipelines.PipeOptions.ReaderScheduler" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReaderScheduler As PipeScheduler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Pipelines::PipeScheduler ^ ReaderScheduler { System::IO::Pipelines::PipeScheduler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReaderScheduler : System.IO.Pipelines.PipeScheduler" Usage="System.IO.Pipelines.PipeOptions.ReaderScheduler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Pipelines.PipeScheduler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.IO.Pipelines.PipeScheduler" /> used to execute <see cref="T:System.IO.Pipelines.PipeReader" /> callbacks.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeWriterThreshold">
+      <MemberSignature Language="C#" Value="public long ResumeWriterThreshold { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 ResumeWriterThreshold" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipelines.PipeOptions.ResumeWriterThreshold" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResumeWriterThreshold As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long ResumeWriterThreshold { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResumeWriterThreshold : int64" Usage="System.IO.Pipelines.PipeOptions.ResumeWriterThreshold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets amount of bytes in <see cref="T:System.IO.Pipelines.Pipe" /> when <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> stops blocking.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseSynchronizationContext">
+      <MemberSignature Language="C#" Value="public bool UseSynchronizationContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseSynchronizationContext" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipelines.PipeOptions.UseSynchronizationContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UseSynchronizationContext As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseSynchronizationContext { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UseSynchronizationContext : bool" Usage="System.IO.Pipelines.PipeOptions.UseSynchronizationContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that determines if asynchronous callbacks should be executed on the <see cref="T:System.Threading.SynchronizationContext" /> they were captured on. This takes precedence over the schedulers specified in <see cref="P:System.IO.Pipelines.PipeOptions.ReaderScheduler" /> and <see cref="P:System.IO.Pipelines.PipeOptions.WriterScheduler" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriterScheduler">
+      <MemberSignature Language="C#" Value="public System.IO.Pipelines.PipeScheduler WriterScheduler { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Pipelines.PipeScheduler WriterScheduler" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipelines.PipeOptions.WriterScheduler" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WriterScheduler As PipeScheduler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Pipelines::PipeScheduler ^ WriterScheduler { System::IO::Pipelines::PipeScheduler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WriterScheduler : System.IO.Pipelines.PipeScheduler" Usage="System.IO.Pipelines.PipeOptions.WriterScheduler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Pipelines.PipeScheduler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.IO.Pipelines.PipeScheduler" /> used to execute <see cref="T:System.IO.Pipelines.PipeWriter" /> callbacks.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

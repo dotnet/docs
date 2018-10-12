@@ -1,0 +1,178 @@
+﻿<Type Name="Sse42" FullName="System.Runtime.Intrinsics.X86.Sse42">
+  <TypeSignature Language="C#" Value="public static class Sse42" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Sse42 extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Intrinsics.X86.Sse42" />
+  <TypeSignature Language="VB.NET" Value="Public Class Sse42" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Sse42 abstract sealed" />
+  <TypeSignature Language="F#" Value="type Sse42 = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CompareGreaterThan">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;long&gt; CompareGreaterThan (System.Runtime.Intrinsics.Vector128&lt;long&gt; left, System.Runtime.Intrinsics.Vector128&lt;long&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;int64&gt; CompareGreaterThan(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int64&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int64&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse42.CompareGreaterThan(System.Runtime.Intrinsics.Vector128{System.Int64},System.Runtime.Intrinsics.Vector128{System.Int64})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareGreaterThan (left As Vector128(Of Long), right As Vector128(Of Long)) As Vector128(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;long&gt; CompareGreaterThan(System::Runtime::Intrinsics::Vector128&lt;long&gt; left, System::Runtime::Intrinsics::Vector128&lt;long&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareGreaterThan : System.Runtime.Intrinsics.Vector128&lt;int64&gt; * System.Runtime.Intrinsics.Vector128&lt;int64&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;int64&gt;" Usage="System.Runtime.Intrinsics.X86.Sse42.CompareGreaterThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Crc32">
+      <MemberSignature Language="C#" Value="public static uint Crc32 (uint crc, byte data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 Crc32(unsigned int32 crc, unsigned int8 data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse42.Crc32(System.UInt32,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Crc32 (crc As UInteger, data As Byte) As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 Crc32(System::UInt32 crc, System::Byte data);" />
+      <MemberSignature Language="F#" Value="static member Crc32 : uint32 * byte -&gt; uint32" Usage="System.Runtime.Intrinsics.X86.Sse42.Crc32 (crc, data)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="crc" Type="System.UInt32" />
+        <Parameter Name="data" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="crc">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Crc32">
+      <MemberSignature Language="C#" Value="public static uint Crc32 (uint crc, ushort data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 Crc32(unsigned int32 crc, unsigned int16 data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse42.Crc32(System.UInt32,System.UInt16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Crc32 (crc As UInteger, data As UShort) As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 Crc32(System::UInt32 crc, System::UInt16 data);" />
+      <MemberSignature Language="F#" Value="static member Crc32 : uint32 * uint16 -&gt; uint32" Usage="System.Runtime.Intrinsics.X86.Sse42.Crc32 (crc, data)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="crc" Type="System.UInt32" />
+        <Parameter Name="data" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="crc">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Crc32">
+      <MemberSignature Language="C#" Value="public static uint Crc32 (uint crc, uint data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 Crc32(unsigned int32 crc, unsigned int32 data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse42.Crc32(System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Crc32 (crc As UInteger, data As UInteger) As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 Crc32(System::UInt32 crc, System::UInt32 data);" />
+      <MemberSignature Language="F#" Value="static member Crc32 : uint32 * uint32 -&gt; uint32" Usage="System.Runtime.Intrinsics.X86.Sse42.Crc32 (crc, data)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="crc" Type="System.UInt32" />
+        <Parameter Name="data" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="crc">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Crc32">
+      <MemberSignature Language="C#" Value="public static ulong Crc32 (ulong crc, ulong data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 Crc32(unsigned int64 crc, unsigned int64 data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse42.Crc32(System.UInt64,System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Crc32 (crc As ULong, data As ULong) As ULong" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 Crc32(System::UInt64 crc, System::UInt64 data);" />
+      <MemberSignature Language="F#" Value="static member Crc32 : uint64 * uint64 -&gt; uint64" Usage="System.Runtime.Intrinsics.X86.Sse42.Crc32 (crc, data)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="crc" Type="System.UInt64" />
+        <Parameter Name="data" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="crc">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public static bool IsSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsSupported" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Intrinsics.X86.Sse42.IsSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSupported As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="System.Runtime.Intrinsics.X86.Sse42.IsSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

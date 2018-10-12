@@ -1,0 +1,29 @@
+﻿<Type Name="TryParseDateTimeCallback" FullName="System.ServiceModel.Syndication.TryParseDateTimeCallback">
+  <TypeSignature Language="C#" Value="public delegate bool TryParseDateTimeCallback(XmlDateTimeData data, out DateTimeOffset dateTimeOffset);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TryParseDateTimeCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.TryParseDateTimeCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function TryParseDateTimeCallback(data As XmlDateTimeData, ByRef dateTimeOffset As DateTimeOffset) As Boolean " />
+  <TypeSignature Language="C++ CLI" Value="public delegate bool TryParseDateTimeCallback(XmlDateTimeData data, [Runtime::InteropServices::Out] DateTimeOffset % dateTimeOffset);" />
+  <TypeSignature Language="F#" Value="type TryParseDateTimeCallback = delegate of XmlDateTimeData *  -&gt; bool" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="data" Type="System.ServiceModel.Syndication.XmlDateTimeData" />
+    <Parameter Name="dateTimeOffset" Type="System.DateTimeOffset" RefType="out" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="data">To be added.</param>
+    <param name="dateTimeOffset">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

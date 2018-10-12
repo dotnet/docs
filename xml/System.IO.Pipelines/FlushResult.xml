@@ -1,0 +1,87 @@
+﻿<Type Name="FlushResult" FullName="System.IO.Pipelines.FlushResult">
+  <TypeSignature Language="C#" Value="public struct FlushResult" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit FlushResult extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Pipelines.FlushResult" />
+  <TypeSignature Language="VB.NET" Value="Public Structure FlushResult" />
+  <TypeSignature Language="C++ CLI" Value="public value class FlushResult" />
+  <TypeSignature Language="F#" Value="type FlushResult = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Pipelines</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Result returned by <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> call.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FlushResult (bool isCanceled, bool isCompleted);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isCanceled, bool isCompleted) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.FlushResult.#ctor(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isCanceled As Boolean, isCompleted As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FlushResult(bool isCanceled, bool isCompleted);" />
+      <MemberSignature Language="F#" Value="new System.IO.Pipelines.FlushResult : bool * bool -&gt; System.IO.Pipelines.FlushResult" Usage="new System.IO.Pipelines.FlushResult (isCanceled, isCompleted)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="isCanceled" Type="System.Boolean" />
+        <Parameter Name="isCompleted" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isCanceled">To be added.</param>
+        <param name="isCompleted">To be added.</param>
+        <summary>Creates a new instance of <see cref="T:System.IO.Pipelines.FlushResult" /> setting <see cref="P:System.IO.Pipelines.FlushResult.IsCanceled" /> and <see cref="P:System.IO.Pipelines.FlushResult.IsCompleted" /> flags.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCanceled">
+      <MemberSignature Language="C#" Value="public bool IsCanceled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCanceled" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipelines.FlushResult.IsCanceled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCanceled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCanceled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCanceled : bool" Usage="System.IO.Pipelines.FlushResult.IsCanceled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary><see langword="true" /> if the current <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> operation was canceled; otherwise, <see langword="false" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCompleted">
+      <MemberSignature Language="C#" Value="public bool IsCompleted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCompleted" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipelines.FlushResult.IsCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompleted As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompleted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCompleted : bool" Usage="System.IO.Pipelines.FlushResult.IsCompleted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary><see langword="true" /> if the <see cref="T:System.IO.Pipelines.PipeWriter" /> is complete; otherwise, <see langword="false" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

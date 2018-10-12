@@ -1,0 +1,39 @@
+﻿<Type Name="UnboundedChannelOptions" FullName="System.Threading.Channels.UnboundedChannelOptions">
+  <TypeSignature Language="C#" Value="public sealed class UnboundedChannelOptions : System.Threading.Channels.ChannelOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UnboundedChannelOptions extends System.Threading.Channels.ChannelOptions" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Channels.UnboundedChannelOptions" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UnboundedChannelOptions&#xA;Inherits ChannelOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UnboundedChannelOptions sealed : System::Threading::Channels::ChannelOptions" />
+  <TypeSignature Language="F#" Value="type UnboundedChannelOptions = class&#xA;    inherit ChannelOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Channels</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Threading.Channels.ChannelOptions</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides options that control the behavior of <see cref="T:System.Threading.Channels.UnboundedChannel`1" /> instances.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UnboundedChannelOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Channels.UnboundedChannelOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UnboundedChannelOptions();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

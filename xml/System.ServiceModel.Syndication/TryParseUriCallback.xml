@@ -1,0 +1,29 @@
+﻿<Type Name="TryParseUriCallback" FullName="System.ServiceModel.Syndication.TryParseUriCallback">
+  <TypeSignature Language="C#" Value="public delegate bool TryParseUriCallback(XmlUriData data, out Uri uri);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TryParseUriCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.TryParseUriCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function TryParseUriCallback(data As XmlUriData, ByRef uri As Uri) As Boolean " />
+  <TypeSignature Language="C++ CLI" Value="public delegate bool TryParseUriCallback(XmlUriData data, [Runtime::InteropServices::Out] Uri ^ % uri);" />
+  <TypeSignature Language="F#" Value="type TryParseUriCallback = delegate of XmlUriData *  -&gt; bool" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="data" Type="System.ServiceModel.Syndication.XmlUriData" />
+    <Parameter Name="uri" Type="System.Uri" RefType="out" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="data">To be added.</param>
+    <param name="uri">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

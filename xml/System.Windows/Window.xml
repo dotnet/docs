@@ -1542,32 +1542,6 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="OnVisualChildrenChanged">
-      <MemberSignature Language="C#" Value="protected internal override void OnVisualChildrenChanged (System.Windows.DependencyObject visualAdded, System.Windows.DependencyObject visualRemoved);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnVisualChildrenChanged(class System.Windows.DependencyObject visualAdded, class System.Windows.DependencyObject visualRemoved) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Window.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnVisualChildrenChanged (visualAdded As DependencyObject, visualRemoved As DependencyObject)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnVisualChildrenChanged(System::Windows::DependencyObject ^ visualAdded, System::Windows::DependencyObject ^ visualRemoved);" />
-      <MemberSignature Language="F#" Value="override this.OnVisualChildrenChanged : System.Windows.DependencyObject * System.Windows.DependencyObject -&gt; unit" Usage="window.OnVisualChildrenChanged (visualAdded, visualRemoved)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="visualAdded" Type="System.Windows.DependencyObject" />
-        <Parameter Name="visualRemoved" Type="System.Windows.DependencyObject" />
-      </Parameters>
-      <Docs>
-        <param name="visualAdded">To be added.</param>
-        <param name="visualRemoved">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="OnVisualParentChanged">
       <MemberSignature Language="C#" Value="protected internal override sealed void OnVisualParentChanged (System.Windows.DependencyObject oldParent);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnVisualParentChanged(class System.Windows.DependencyObject oldParent) cil managed" />

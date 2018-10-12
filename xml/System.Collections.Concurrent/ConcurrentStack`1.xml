@@ -74,13 +74,13 @@
 ## Examples  
  The following example shows how to use a <xref:System.Collections.Concurrent.ConcurrentStack%601> to push and pop individual items:  
   
- [!code-csharp[System.Collections.Concurrent.ConcurrentStack#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentstack/cs/concstack.cs#2)]
- [!code-vb[System.Collections.Concurrent.ConcurrentStack#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentstack/vb/concstack.vb#2)]  
+ [!code-csharp[System.Collections.Concurrent.ConcurrentStack#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentstack/cs/concstack_single.cs#1)]
+ [!code-vb[System.Collections.Concurrent.ConcurrentStack#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentstack/vb/concstack_single.vb#1)]
   
  The following example shows how to use a <xref:System.Collections.Concurrent.ConcurrentStack%601> to push and pop ranges of items:  
   
- [!code-csharp[System.Collections.Concurrent.ConcurrentStack#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentstack/cs/concstack.cs#1)]
- [!code-vb[System.Collections.Concurrent.ConcurrentStack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentstack/vb/concstack.vb#1)]  
+ [!code-csharp[System.Collections.Concurrent.ConcurrentStack#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentstack/cs/concstack_range.cs#1)]
+ [!code-vb[System.Collections.Concurrent.ConcurrentStack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentstack/vb/concstack_range.vb#1)]
   
  ]]></format>
     </remarks>

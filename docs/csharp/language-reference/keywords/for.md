@@ -103,7 +103,7 @@ The following example defines the infinite `for` loop:
 
 ## See also
 
-- [The for statement (C# language specification)](/dotnet/csharp/language-reference/language-specification/statements#the-for-statement)
+- [The for statement (C# language specification)](~/_csharplang/spec/statements.md#the-for-statement)
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)

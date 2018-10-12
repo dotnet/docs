@@ -19,7 +19,7 @@ An alternative is to make Point a struct.
 
 Now, only one object is instantiated—the one for the array—and the `Point` instances are stored in-line in the array.
 
-Struct constructors are invoked with the `new` operator, but that does not imply that memory is being allocated. Instead of dynamically allocating an object and returning a reference to it, a struct constructor simply returns the struct value itself (typically in a temporary location on the stack), and this value is then copied as necessary.
+Struct constructors are invoked with the `new` operator, similar to a class constructor. But, instead of dynamically allocating an object on the managed heap and returning a reference to it, a struct constructor simply returns the struct value itself (typically in a temporary location on the stack), and this value is then copied as necessary.
 
 With classes, it is possible for two variables to reference the same object and thus possible for operations on one variable to affect the object referenced by the other variable. With structs, the variables each have their own copy of the data, and it is not possible for operations on one to affect the other. For example, the output produced by the following code fragment depends on whether Point is a class or a struct.
 

@@ -75,9 +75,9 @@ Namespace Examples.System.Net
 End Namespace
 ```
 
-If you need to browse a specific directory, just add the directory to the end of URI you're using in `WebRequest.Create` method:
+If you need to list a specific directory, just add the directory to the end of URI you're using in `WebRequest.Create` method:
 
-````csharp
+```csharp
 FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://www.contoso.com/your_preferred_directory");
 ```
 

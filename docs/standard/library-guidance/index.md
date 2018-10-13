@@ -13,10 +13,10 @@ Aspects of high-quality open-source .NET libraries:
 
 > [!div class="checklist"]
 > * **Inclusive** - Good .NET libraries strive to support many platforms and applications.
-> * **Stable** - Good .NET libraries co-exist in the .NET ecosystem, running in applications built with many libraries.
+> * **Stable** - Good .NET libraries coexist in the .NET ecosystem, running in applications built with many libraries.
 > * **Designed to evolve** - .NET libraries should improve and evolve over time, while supporting existing users.
-> * **Debuggable** - A high-quality .NET library should use the latest tools to create a great debugging experience for users.
-> * **Trusted** - .NET libraries have developers trust by publishing to NuGet using security best practices.
+> * **Debuggable** - .NET libraries should use the latest tools to create a great debugging experience for users.
+> * **Trusted** - .NET libraries have developers' trust by publishing to NuGet using security best practices.
 
 > [!div class="nextstepaction"]
 > [Get Started](./get-started.md)

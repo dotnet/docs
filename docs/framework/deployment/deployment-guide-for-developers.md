@@ -45,7 +45,7 @@ For download links, see the section [Redistributable Packages](#redistributable-
 
 - You must have administrator privileges to install the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its point releases.
 
-- The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is included in [!INCLUDE[win8](../../../includes/win8-md.md)] and [!INCLUDE[winserver8](../../../includes/winserver8-md.md)], so you don't have to deploy it with your app on those operating systems. Similarly, the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] is included in [!INCLUDE[win81](../../../includes/win81-md.md)] and Windows Server 2012 R2. The .NET Framework 4.5.2 isn't included in any operating systems. The [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] is included in Windows 10, the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] is included in Windows 10 November Update, and the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] is included in Windows 10 Anniversary Update.  The .NET Framework 4.7 is included in Windows 10 Creators Update, the .NET Framework 4.7.1 is included in Windows 10 Fall Creators Update, and the .NET Framework 4.7.2 is included in Windows 10 April 2018 Update. For a full list of hardware and software requirements, see [System Requirements](../../../docs/framework/get-started/system-requirements.md).
+- The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is included in [!INCLUDE[win8](../../../includes/win8-md.md)] and [!INCLUDE[winserver8](../../../includes/winserver8-md.md)], so you don't have to deploy it with your app on those operating systems. Similarly, the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] is included in [!INCLUDE[win81](../../../includes/win81-md.md)] and Windows Server 2012 R2. The .NET Framework 4.5.2 isn't included in any operating systems. The [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] is included in Windows 10, the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] is included in Windows 10 November Update, and the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] is included in Windows 10 Anniversary Update.  The .NET Framework 4.7 is included in Windows 10 Creators Update, the .NET Framework 4.7.1 is included in Windows 10 Fall Creators Update, and the .NET Framework 4.7.2 is included in Windows 10 October 2018 Update and Windows 10 April 2018 Update. For a full list of hardware and software requirements, see [System Requirements](../../../docs/framework/get-started/system-requirements.md).
 
 - Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], your users can view a list of running .NET Framework apps during setup and close them easily. This may help avoid system restarts caused by .NET Framework installations. See [Reducing System Restarts](../../../docs/framework/deployment/reducing-system-restarts.md).
 
@@ -241,8 +241,9 @@ dotNetFx45_Full_x86_x64.exe /q /norestart /ChainingPackage Contoso
 
 |Version|Value of the Release DWORD|
 |-------------|--------------------------------|
+|.NET Framework 4.7.2 installed on Windows 10 October 2018 Update|461814|
 |.NET Framework 4.7.2 installed on Windows 10 April 2018 Update and on Windows Server, version 1803|461808|
-|.NET Framework 4.7.2 installed on all OS versions other than Windows 10 April 2018 Update and Windows Server, version 1803|461814|
+|.NET Framework 4.7.2 installed on all OS versions other than Windows 10 October 2018 Update, Windows 10 April 2018 Update, and Windows Server, version 1803|461814|
 |.NET Framework 4.7.1 installed on Windows 10 Fall Creators Update and on Windows Server, version 1709|461308|
 |.NET Framework 4.7.1 installed on all OS versions other than Windows 10 Fall Creators Update and Windows Server, version 1709|461310|
 |.NET Framework 4.7 installed on Windows 10 Creators Update|460798|

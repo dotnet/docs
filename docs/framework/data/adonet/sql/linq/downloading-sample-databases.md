@@ -1,48 +1,50 @@
 ---
-title: "Downloading Sample Databases"
-ms.date: "10/18/2018"
+title: "Get the sample databases for ADO.NET code samples"
+description: "Download the sample databases used in the code samples in the ADO.NET documentation, as well as SQL Server and management tools"
+ms.date: "10/12/2018"
 ms.assetid: ef9d69a1-9461-43fe-94bb-7c836754bcb5
 ---
-# Download the Sample Databases, SQL Server Express, and tools
-A number of samples and walkthroughs in the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] documentation use the Northwind sample database and SQL Server Express. You can download these products free of charge from Microsoft.
+# Get the sample databases for ADO.NET code samples
 
-## Download the Sample Databases
+A number of samples and walkthroughs in the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] documentation use sample databases and SQL Server Express. You can download these products free of charge from Microsoft.
 
-### To download the sample databases
+## Get the AdventureWorks sample database
 
-1.  In your browser, go to the [Northwind and Pubs Sample Databases](https://go.microsoft.com/fwlink?linkid=64296) download page.  
-  
-1.  Select **Download**.  
-  
-1.  After the file has downloaded, double-click the file to extract the databases and scripts.  
-  
-     By default, the databases are installed in the folder *drive*:\SQL Server 2000 Sample Databases.
+Download the AdventureWorks sample database from the following GitHub repository:
 
-1. Before you can use the Northwind database, you have to choose one of two options:
+[AdventureWorks sample databases](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
 
-    - Recreate the database by running the `instnwnd.sql` script file in the installation folder.
+After you download one of the database backup (\*.bak) files, restore the backup to an instance of SQL Server by using SQL Server Management Studio (SSMS). See [Get SQL Server Management Studio](#get_ssms).
 
-    - Attach the `northwnd.mdf` file with its corresponding `*.ldf` log file.
+## Get the Northwind sample database
 
-    Optionally, you can also install the Pubs sample database in the same way.
+Download the Northwind sample database from the following page in the Microsoft Download Center:
+
+[Northwind and Pubs Sample Databases](https://go.microsoft.com/fwlink?linkid=64296)
+
+After the file has downloaded, double-click the file to extract the databases and scripts. By default, the files are installed in the folder `<drive>:\SQL Server 2000 Sample Databases`.
+
+Before you can use the Northwind database, you have to do one of the following things:
+
+- Recreate the database on an instance of SQL Server by running the `instnwnd.sql` script file in the installation folder.
+
+- Attach the `northwnd.mdf` file with its corresponding `*.ldf` log file to an instance of SQL Server.
+
+## <a name="get_sql"></a> Get SQL Server Express
+
+SQL Server Express is a free, entry-level edition of SQL Server that you can redistribute with applications. Download SQL Server Express from the following page:
   
-## Download SQL Server Express  
-SQL Server Express is available without charge, and you can redistribute it with applications. If you are using Visual Studio, SQL Server Express is included in the Pro and higher editions.  
+[SQL Server Express Editions](https://www.microsoft.com/sql-server/sql-server-editions-express)
+
+If you're using [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), SQL Server Express LocalDB is included in the Community edition as well as the Professional and higher editions.  
+
+## <a name="get_ssms"></a> Get SQL Server Management Studio
+If you want to view or modify a database that you've downloaded, you can use SQL Server Management Studio (SSMS). Download SSMS from the following page:
+
+[Download SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) 
+
+You can also view and manage databases in the Visual Studio integrated development environment (IDE). In [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), connect to the database from **SQL Server Object Explorer**, or create a Data Connection to the database in **Server Explorer**. Open these explorer panes from the **View** menu.
   
-### To download and install SQL Server Express 
-  
-1.  Go to the [SQL Server Express Editions](https://www.microsoft.com/sql-server/sql-server-editions-express) page.  
-  
-1.  Select **Download now**. 
-  
-1.  After the file has downloaded, double-click the file and follow the installation instructions in the setup program.  
-  
-## Download SQL Server Management Studio
-If you want to modify a database that you have downloaded, you can access the database from **Server Explorer** in the Visual Studio integrated development environment (IDE), or you can use Microsoft SQL Server Management Studio (SSMS).  
-  
-### To download SQL Server Management Studio  
-  
--   Follow the instructions at the [Download SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) page.  
-  
-## See Also  
- [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)
+## See also
+
+- [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)

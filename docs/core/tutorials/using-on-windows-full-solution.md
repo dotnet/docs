@@ -67,6 +67,6 @@ Follow the instructions on [our prerequisites page](../windows-prerequisites.md)
 
 8. Set a breakpoint after the line that you just added.
 
-9. Press F5 to run the application..
+9. Press F5 to run the application.
 
    The application should build without error, and should hit the breakpoint. You should also be able to check that the application output "The answer is 42.".

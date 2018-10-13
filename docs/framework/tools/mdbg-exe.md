@@ -11,9 +11,9 @@ ms.author: "mairaw"
 # MDbg.exe (.NET Framework Command-Line Debugger)
 The NET Framework Command-Line Debugger helps tools vendors and application developers find and fix bugs in programs that target the .NET Framework common language runtime. This tool uses the runtime debugging API to provide debugging services. You can use MDbg.exe to debug only managed code; there is no support for debugging unmanaged code.  
   
- This tool is available through NuGet. For installation information, see [MDbg 0.1.0](http://www.nuget.org/packages/MDbg/0.1.0). To run the tool, use the Package Manager Console. For more information how to use the Package Manager Console, see [Using the Package Manager Console](http://docs.nuget.org/docs/start-here/Using-the-Package-Manager-Console).  
+This tool is available through NuGet. For installation information, see [MDbg 0.1.0](https://www.nuget.org/packages/MDbg/0.1.0). To run the tool, use the Package Manager Console. For more information about how to use the Package Manager Console, see the [Package Manager Console](/nuget/tools/package-manager-console) article.
   
- At the Package Manager prompt, type the following:  
+At the Package Manager prompt, type the following:  
   
 ## Syntax  
   

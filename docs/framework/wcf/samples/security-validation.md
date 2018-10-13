@@ -17,7 +17,7 @@ This sample demonstrates how to use a custom behavior to validate services on a 
 public void Validate(ServiceDescription serviceDescription,   
                                        ServiceHostBase serviceHostBase)  
 {  
-    // Loop through each endpoint individually gathering their    
+    // Loop through each endpoint individually, gathering their    
     // binding elements.  
     foreach (ServiceEndpoint endpoint in serviceDescription.Endpoints)  
     {  

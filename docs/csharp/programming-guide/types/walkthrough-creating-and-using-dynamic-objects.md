@@ -93,12 +93,12 @@ The first project that you create in this walkthrough defines a custom dynamic o
     ```  
     List of customers and suppliers  
   
-    Supplier: Lucerne Publishing (http://www.lucernepublishing.com/)  
+    Supplier: Lucerne Publishing (https://www.lucernepublishing.com/)  
     Customer: Preston, Chris  
     Customer: Hines, Patrick  
     Customer: Cameron, Maria  
-    Supplier: Graphic Design Institute (http://www.graphicdesigninstitute.com/)   
-    Supplier: Fabrikam, Inc. (http://www.fabrikam.com/)   
+    Supplier: Graphic Design Institute (https://www.graphicdesigninstitute.com/)   
+    Supplier: Fabrikam, Inc. (https://www.fabrikam.com/)   
     Customer: Seubert, Roxanne  
     Supplier: Proseware, Inc. (http://www.proseware.com/)   
     Customer: Adolphi, Stephan  

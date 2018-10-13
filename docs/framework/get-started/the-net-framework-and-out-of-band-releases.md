@@ -6,6 +6,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # The .NET Framework and Out-of-Band Releases
+
 The .NET Framework is evolving to accommodate different platforms such as Windows Phone and Windows Store apps as well as traditional desktop and web apps, and to maximize code reuse. In addition to our regular .NET Framework releases, we release new features out of band (OOB) to improve cross-platform development or to introduce new functionality. This topic discusses the future direction of the .NET Framework and its OOB releases.
 
 ## Advantages of OOB releases
@@ -24,7 +25,7 @@ OOB releases for core common language runtime (CLR) components are delivered thr
 
 3.  After the download completes, restart Visual Studio.
 
- For detailed installation instructions, see [Installing NuGet](http://docs.nuget.org/docs/start-here/installing-nuget) on the NuGet Docs website. For more information about NuGet, see the [NuGet documentation](http://docs.nuget.org/).
+ For detailed installation instructions, see [Installing NuGet](/nuget/install-nuget-client-tools) on the NuGet Docs website. For more information about NuGet, see the [NuGet documentation](/nuget).
 
 ## Using a NuGet OOB package
  After you install NuGet, you can browse and add references to NuGet packages by using Solution Explorer in Visual Studio:

@@ -19,7 +19,7 @@ ms.date: 08/01/2018
 
 ## Languages
 
-C#, Visual Basic, and F# languages can be used to write applications and libraries for .NET Core. These languages are or can be integrated into your favorite text editors and IDEs, including [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp), Sublime Text and Vim. This integration is provided, in part, by the good folks from the [OmniSharp](http://www.omnisharp.net/) and [Ionide](http://ionide.io) projects.
+C#, Visual Basic, and F# languages can be used to write applications and libraries for .NET Core. These languages are or can be integrated into your favorite text editors and IDEs, including [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp), Sublime Text and Vim. This integration is provided, in part, by the good folks from the [OmniSharp](https://www.omnisharp.net/) and [Ionide](http://ionide.io) projects.
 
 ## APIs
 
@@ -105,7 +105,7 @@ While .NET Core is unique and has significant differences to the .NET Framework 
 
 ### Comparison with Mono
 
-[Mono](http://www.mono-project.com/) is the original cross-platform and [open source](https://github.com/mono/mono) .NET implementation, first shipping in 2004. It can be thought of as a community clone of the .NET Framework. The Mono project team relied on the open [.NET standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) (notably ECMA 335) published by Microsoft in order to provide a compatible implementation.
+[Mono](https://www.mono-project.com/) is the original cross-platform and [open source](https://github.com/mono/mono) .NET implementation, first shipping in 2004. It can be thought of as a community clone of the .NET Framework. The Mono project team relied on the open [.NET standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) (notably ECMA 335) published by Microsoft in order to provide a compatible implementation.
 
 The major differences between .NET Core and Mono:
 

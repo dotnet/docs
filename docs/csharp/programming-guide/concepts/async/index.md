@@ -48,7 +48,7 @@ async Task<int> AccessTheWebAsync()
   
     // GetStringAsync returns a Task<string>. That means that when you await the  
     // task you'll get a string (urlContents).  
-    Task<string> getStringTask = client.GetStringAsync("http://msdn.microsoft.com");  
+    Task<string> getStringTask = client.GetStringAsync("https://msdn.microsoft.com");  
   
     // You can do work here that doesn't rely on the string from GetStringAsync.  
     DoIndependentWork();  
@@ -296,7 +296,7 @@ namespace AsyncFirstExample
   
             // GetStringAsync returns a Task<string>. That means that when you await the  
             // task you'll get a string (urlContents).  
-            Task<string> getStringTask = client.GetStringAsync("http://msdn.microsoft.com");  
+            Task<string> getStringTask = client.GetStringAsync("https://msdn.microsoft.com");  
   
             // You can do work here that doesn't rely on the string from GetStringAsync.  
             DoIndependentWork();  

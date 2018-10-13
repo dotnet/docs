@@ -18,7 +18,7 @@ of existing code to the new version of your library. Here are several things to 
 
 ### Semantic Versioning
 
-[Semantic versioning](http://semver.org/) (SemVer for short) is a naming convention applied to versions of your library to signify specific milestone events.
+[Semantic versioning](https://semver.org/) (SemVer for short) is a naming convention applied to versions of your library to signify specific milestone events.
 Ideally, the version information you give your library should help developers determine the compatibility
 with their projects that make use of older versions of that same library.
 

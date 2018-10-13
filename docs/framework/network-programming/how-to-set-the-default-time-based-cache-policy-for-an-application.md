@@ -13,7 +13,7 @@ author: "mcleblanc"
 ms.author: "markl"
 ---
 # How to: Set the Default Time-Based Cache Policy for an Application
-The default time-based cache policy allows an application to have its cache behavior defined by the headers sent with the cached resource and the cache behavior defined in sections 13 and 14 of RFC 2616, available at [http://www.ietf.org](http://www.ietf.org/). This is the appropriate cache behavior for most applications.  
+The default time-based cache policy allows an application to have its cache behavior defined by the headers sent with the cached resource and the cache behavior defined in sections 13 and 14 of RFC 2616, available at [Internet Engineering Task Force (IETF)](https://www.ietf.org/) website. This is the appropriate cache behavior for most applications.  
   
 ### To set the default automatic policy for an application  
   

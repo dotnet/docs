@@ -8,7 +8,7 @@ ServiceTimeoutsBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class ServiceTimeoutsBehavior : Behavior  
 {  
   datetime TransactionTimeout;  

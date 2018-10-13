@@ -8,7 +8,7 @@ NamedPipeConnectionPoolSettings
   
 ## Syntax  
   
-```  
+```csharp
 class NamedPipeConnectionPoolSettings  
 {  
   string GroupName;  

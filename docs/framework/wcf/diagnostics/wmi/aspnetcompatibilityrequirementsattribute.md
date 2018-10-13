@@ -8,7 +8,7 @@ AspNetCompatibilityRequirementsAttribute
   
 ## Syntax  
   
-```  
+```csharp
 class AspNetCompatibilityRequirementsAttribute : Behavior  
 {  
   string RequirementsMode;  

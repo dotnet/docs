@@ -20,7 +20,7 @@ This sample demonstrates how to use the analytic tracing in Windows Communicatio
 
      In the Web browser, click **Calculator.svc**. The URI of the WSDL document for the service should appear in the browser. Copy that URI.
 
-     By default, the service starts listening for requests on port 1378 [http://localhost:1378/Calculator.svc](http://localhost:1378/Calculator.svc).
+     By default, the service starts listening for requests on port 1378 `http://localhost:1378/Calculator.svc`.
 
 4.  Run the WCF test client (WcfTestClient.exe).
 
@@ -28,7 +28,7 @@ This sample demonstrates how to use the analytic tracing in Windows Communicatio
 
 5.  Within the WCF test client, add the service by selecting **File**, and then **Add Service**.
 
-     Add the endpoint address in the input box. The default is [http://localhost:1378/Calculator.svc](http://localhost:1378/Calculator.svc).
+     Add the endpoint address in the input box. The default is `http://localhost:1378/Calculator.svc`.
 
 6.  Open the Event Viewer application.
 

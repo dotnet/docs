@@ -110,7 +110,7 @@ Console.WriteLine("Binary Stream is {0} bytes long", stream2.Length);
   
  When you run the sample, the original record and the deserialized record are displayed, followed by the comparison between the length of the text encoding and the binary encoding. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Original record: Record: 1 + 2 = 3  
 Deserialized record: Record: 1 + 2 = 3  
 Text Stream is 233 bytes long  

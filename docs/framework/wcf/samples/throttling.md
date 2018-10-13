@@ -44,7 +44,7 @@ public double Add(double n1, double n2)
   
  When you run the sample, the operation requests and responses are displayed in the client console window. The Add and Subtract methods are executed concurrently and the Multiply and Divide methods are executed concurrently proving that not more than 2 methods can be executed concurrently thus demonstrating throttling.  
   
-```  
+```console  
 Press <ENTER> to terminate client.  
 Add(100,15.99)  
 Subtract(145,76.54)  

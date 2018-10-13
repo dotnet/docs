@@ -86,7 +86,7 @@ using (new OperationContextScope(client1.InnerChannel))
   
  This sample is self-hosted. The following sample output from running the sample is provided:  
   
-```  
+```console  
 Prompt> Service.exe  
 The service is ready.  
 Press <ENTER> to terminate service.  

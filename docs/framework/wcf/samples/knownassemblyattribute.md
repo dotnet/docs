@@ -318,7 +318,7 @@ public class ComplexNumberWithMagnitude : ComplexNumber
   
  When the sample is built and executed, this is the expected output obtained in the client:  
   
-```  
+```console  
 Add(1 + 2i, 3 + 4i) = 4 + 6i  
 Magnitude: 7.21110255092798  
   

@@ -135,7 +135,7 @@ else
   
  When you run the sample, the requests and responses of the operation are displayed in the client console window. Note that a magnitude is printed for addition and subtraction but not for multiplication and division because of the way the service was implemented. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(1 + 2i, 3 + 4i) = 4 + 6i  
 Magnitude: 7.21110255092798  
 Subtract(1 + 2i, 3 + 4i) = -2 + -2i  

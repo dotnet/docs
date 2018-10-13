@@ -76,7 +76,7 @@ public int Sum(Message message)
   
  When you run the sample, the requests and responses of the operation are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  

@@ -52,7 +52,7 @@ public class CalculatorService : IOneWayCalculator
   
  The client finishes ahead of the service, demonstrating that a client does not wait for one-way service operations to complete. The client output is as follows:  
   
-```  
+```console  
 Add(100,15.99)  
 Subtract(145,76.54)  
 Multiply(9,81.25)  
@@ -63,7 +63,7 @@ Press <ENTER> to terminate client.
   
  The following service output is shown:  
   
-```  
+```console  
 The service is ready.  
 Press <ENTER> to terminate service.  
   

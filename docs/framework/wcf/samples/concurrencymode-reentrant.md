@@ -49,7 +49,7 @@ public void Pong(int ticks)
 ## Demonstrates  
  To run the sample, build the client and server projects. Then open two command windows and change the directories to the \<sample>\CS\Service\bin\debug and \<sample>\CS\Client\bin\debug directories. Then start the service by typing `service.exe` and then invoke the Client.exe with the initial value of ticks passed as an input argument. A sample output for 10 ticks is shown.  
   
-```  
+```console  
 Prompt>Service.exe  
 ServiceHost Started. Press Enter to terminate service.  
 Ping: Ticks = 10  

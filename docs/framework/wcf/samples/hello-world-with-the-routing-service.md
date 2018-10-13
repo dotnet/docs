@@ -23,7 +23,7 @@ This sample demonstrates the Windows Communication Foundation (WCF) Routing Serv
 
      You should see the following output:
 
-    ```
+    ```console
      Add(100,15.99) = 115.99
 
      Subtract(145,76.54) = 68.46

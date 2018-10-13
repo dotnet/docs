@@ -59,7 +59,7 @@ public string GetServiceDescriptionInfo()
   
  When you run the sample, you see the calculator operations and then the service information returned by the `GetServiceDescriptionInfo` operation. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(15,3) = 18  
 Subtract(145,76) = 69  
 Multiply(9,81) = 729  

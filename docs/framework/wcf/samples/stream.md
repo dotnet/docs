@@ -111,7 +111,7 @@ class ReverseStream : Stream
   
  Service Output:  
   
-```  
+```console  
 The streaming service is ready.  
 Press <ENTER> to terminate service.  
   
@@ -125,7 +125,7 @@ File D:\...\uploadedfile saved
   
  Client Output:  
   
-```  
+```console  
 Press <ENTER> when service is ready  
 ------ Using HTTP ------   
 Calling GetStream()  

@@ -162,7 +162,7 @@ public class CalculatorService : ICalculator
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Starting transaction  
 Performing calculations...  
   Adding 100, running total=100  
@@ -176,7 +176,7 @@ Press <ENTER> to terminate client.
   
  The logging of the service operation requests are displayed in the service's console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Press <ENTER> to terminate service.  
 Creating new service instance...  
   Writing row 1 to database: Adding 100 to 0  

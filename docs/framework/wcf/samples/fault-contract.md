@@ -73,7 +73,7 @@ public int Divide(int n1, int n2)
   
  The client code forces an error by requesting a division by zero. When you run the sample, the operation requests and responses are displayed in the client console window. You see the division by zero being reported as a fault. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(15,3) = 18  
 Subtract(145,76) = 69  
 Multiply(9,81) = 729  

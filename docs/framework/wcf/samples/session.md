@@ -64,7 +64,7 @@ public class CalculatorService : ICalculatorSession
   
  When you run the sample, the client makes several requests to the server and requests the result, which it then displays in the client console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 (((0 + 100) - 50) * 17.65) / 2 = 441.25  
 Press <ENTER> to terminate client.  
 ```  

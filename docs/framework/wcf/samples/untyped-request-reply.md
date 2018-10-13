@@ -57,7 +57,7 @@ using (new OperationContextScope(client.InnerChannel))
   
  This sample is a Web-hosted sample and so only the client executable must be run. The following is the sample output on the client.  
   
-```  
+```console  
 Prompt>Client.exe  
 Sum of numbers passed (1,2,3,4,5) = 15  
   

@@ -127,7 +127,7 @@ public class CalculatorService : ICalculator
   
  The generated client code for the client was created with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool. The tool automatically creates message contract types in the generated client code if necessary. The `/messageContract` command option may be specified to force the generation of message contracts.  
   
-```  
+```console  
 svcutil.exe /n:"http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples" /o:client\generatedClient.cs http://localhost/servicemodelsamples/service.svc/mex  
 ```  
   
@@ -151,7 +151,7 @@ Console.WriteLine("Add({0},{1}) = {2}", request.N1, request.N2, response.Result)
   
  When you run the sample, the calculations are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  

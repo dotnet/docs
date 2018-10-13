@@ -22,7 +22,7 @@ its functionality for any class derived from `EventArgs`. That
 functionality is easier to create in a specific derived class. That
 effectively means that deriving from System.EventArgs is a constraint
 that limits your designs, but does not provide any additional benefit.
-In fact, you can changes the definitions of `FileFoundArgs` and
+In fact, you can change the definitions of `FileFoundArgs` and
 `SearchDirectoryArgs` so that they do not derive from `EventArgs`.
 The program will work exactly the same.
 

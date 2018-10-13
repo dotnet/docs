@@ -138,7 +138,7 @@ End Class
 public class MyAddin  
 {  
     //Explicitly specifying a generic type.  
-    [Export(typeof(Func<int, string>)]  
+    [Export(typeof(Func<int, string>))]  
     public string DoSomething(int TheParam);  
 }  
 ```  

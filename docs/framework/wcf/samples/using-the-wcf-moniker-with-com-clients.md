@@ -73,7 +73,7 @@ gacutil.exe /i client.dll
   
  ComCalcClient.vbs client application uses the `GetObject` function to construct a proxy for the service, using the service moniker syntax to specify the address, binding, and contract for the service.  
   
-```vb
+```vbscript
 Set typedServiceMoniker = GetObject(  
 "service4:address=http://localhost/ServiceModelSamples/service.svc, binding=wsHttpBinding,   
 contractType={9213C6D2-5A6F-3D26-839B-3BA9B82228D3}")  
@@ -89,7 +89,7 @@ contractType={9213C6D2-5A6F-3D26-839B-3BA9B82228D3}")
   
  Having constructed the proxy instance with the service moniker, the client application can call methods on the proxy, which results in the service moniker infrastructure calling the corresponding service operations.  
   
-```vb  
+```vbscript  
 ' Call the service operations using the moniker object  
 WScript.Echo "Typed service moniker: 100 + 15.99 = " & typedServiceMoniker.Add(100, 15.99)  
 ```  
@@ -101,7 +101,7 @@ WScript.Echo "Typed service moniker: 100 + 15.99 = " & typedServiceMoniker.Add(1
   
  The ComCalcClient.vbs client application uses the `FileSystemObject` to access the locally saved WSDL file and then again uses the `GetObject` function to construct a proxy for the service.  
   
-```vb  
+```vbscript  
 ' Open the WSDL contract file and read it all into the wsdlContract string  
 Const ForReading = 1  
 Set objFSO = CreateObject("Scripting.FileSystemObject")  
@@ -134,7 +134,7 @@ Set wsdlServiceMoniker = GetObject(wsdlMonikerString)
   
  Having constructed the proxy instance with the service moniker, the client application can call methods on the proxy, which results in the service moniker infrastructure calling the corresponding service operations.  
   
-```vb  
+```vbscript  
 ' Call the service operations using the moniker object  
 WScript.Echo "WSDL service moniker: 145 - 76.54 = " & wsdlServiceMoniker.Subtract(145, 76.54)  
 ```  
@@ -146,7 +146,7 @@ WScript.Echo "WSDL service moniker: 145 - 76.54 = " & wsdlServiceMoniker.Subtrac
   
  The ComCalcClient.vbs client application again uses the `GetObject` function to construct a proxy for the service.  
   
-```vb  
+```vbscript  
 ' Create a string for the service moniker specifying the address to retrieve the service metadata from  
 mexMonikerString = "service4:mexAddress='http://localhost/servicemodelsamples/service.svc/mex'"  
 mexMonikerString = mexMonikerString + ", address='http://localhost/ServiceModelSamples/service.svc'"  
@@ -169,7 +169,7 @@ Set mexServiceMoniker = GetObject(mexMonikerString)
   
  Having constructed the proxy instance with the service moniker, the client application can call methods on the proxy, which results in the service moniker infrastructure calling the corresponding service operations.  
   
-```vb  
+```vbscript  
 ' Call the service operations using the moniker object  
 WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9, 81.25)  
 ```  

@@ -123,7 +123,7 @@ Passing a reference-type parameter allows you to change the value of the referen
 <a name="paramarray"></a>
 ### Parameter arrays ###
 
-Sometimes, the requirement that you specify the exact number of arguments to your method is restrictive. By using the `params` keyword to indicate that a parameter is a parameter array, you allow your method to be called with a variable number of arguments. The parameter tagged with the `params` keyword must must be an array type, and it must be the last parameter in the method's parameter list.
+Sometimes, the requirement that you specify the exact number of arguments to your method is restrictive. By using the `params` keyword to indicate that a parameter is a parameter array, you allow your method to be called with a variable number of arguments. The parameter tagged with the `params` keyword must be an array type, and it must be the last parameter in the method's parameter list.
 
 A caller can then invoke the method in either of three ways:
 

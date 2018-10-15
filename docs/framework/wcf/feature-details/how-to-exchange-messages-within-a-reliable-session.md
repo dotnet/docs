@@ -18,7 +18,7 @@ For the source copy of this example, see [WS Reliable Session](../../../../docs/
 
    [!code-csharp[c_HowTo_UseReliableSession#1121](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_usereliablesession/cs/service.cs#1121)]
 
-1. Implement the service contract in a service class. Note that the address or binding information isn't specified inside the implementation of the service. You aren't required to write code to retrieve the address or binding information information from the configuration file.
+1. Implement the service contract in a service class. Note that the address or binding information isn't specified inside the implementation of the service. You aren't required to write code to retrieve the address or binding information from the configuration file.
 
    [!code-csharp[c_HowTo_UseReliableSession#1122](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_usereliablesession/cs/service.cs#1122)]
 
@@ -46,7 +46,7 @@ For the source copy of this example, see [WS Reliable Session](../../../../docs/
 
    [!code-csharp[C_HowTo_UseReliableSession#1221](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_usereliablesession/cs/client.cs#1221)]
 
-1. The generated client application also contains the implementation of the `ClientCalculator`. Note that the address and binding information isn't specified anywhere inside the implementation of the service. You aren't required to write code to retrieve the address or binding information information from the configuration file.
+1. The generated client application also contains the implementation of the `ClientCalculator`. Note that the address and binding information isn't specified anywhere inside the implementation of the service. You aren't required to write code to retrieve the address or binding information from the configuration file.
 
    [!code-csharp[C_HowTo_UseReliableSession#1222](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_usereliablesession/cs/client.cs#1222)]
 

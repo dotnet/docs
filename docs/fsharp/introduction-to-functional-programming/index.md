@@ -6,7 +6,7 @@ ms.date: 10/15/2018
 
 # Introduction to Functional Programming in F# #
 
-Functional programming is a style of programming that emphasizes the use of functions and immutable data. Typed functional programming is when this is combined with static types, such as with F#. In general, the following concepts are emphasized in functional programming:
+Functional programming is a style of programming that emphasizes the use of functions and immutable data. Typed functional programming is when functional programming is combined with static types, such as with F#. In general, the following concepts are emphasized in functional programming:
 
 * Functions over objects
 * Expressions over statements
@@ -23,7 +23,7 @@ Functional programming, like other programming paradigms, comes with a vocabular
 * **Expression** - An expression is an entity in code that produces a value. In F#, this value must be bound or explicitly ignored. An expression can be trivially replaced by a function call.
 * **Purity** - Purity is a property of a function such that its return value is always the same for the same arguments, and that its evaluation has no side effects. A pure function depends entirely on its arguments.
 * **Referential Transparency** - Referential Transparency is a property of expressions such that they can be replaced with their output without affecting a program's behavior.
-* **Immutability** - Immutability means that a value cannot be changed in-place. This is in contrast with variables, which can change in-place.
+* **Immutability** - Immutability means that a value cannot be changed in-place. This is in contrast with variables, which can change in place.
 
 ## Examples
 
@@ -31,7 +31,7 @@ The following examples demonstrate these core concepts.
 
 ### Functions
 
-The most common and fundamental constructs in functional programming are functions. For example, here is a simple function that adds 1 to an integer:
+The most common and fundamental construct in functional programming is the function. Here's a simple function that adds 1 to an integer:
 
 ```fsharp
 let addOne x = x + 1
@@ -43,7 +43,7 @@ Its type signature is as follows:
 val addOne: x:int -> int
 ```
 
-The signature can be read as, "`addOne` accepts an `int` and will produce an `int`". More formally, this is _mapping_ a value from the set of integers to the set of integers. The `->` token signifies this mapping. In F#, you can usually look at the function signature to get a sense for what it does.
+The signature can be read as, "`addOne` accepts an `int` and will produce an `int`". More formally, `addOne` is _mapping_ a value from the set of integers to the set of integers. The `->` token signifies this mapping. In F#, you can usually look at the function signature to get a sense for what it does.
 
 So, why is the signature important? In typed functional programming, the implementation of a function is often less important than the actual type signature! The fact that `addOne` adds the value 1 to an integer is interesting at runtime, but when you are constructing a program, the fact that it accepts and returns an `int` is what informs how you will actually use this function. Furthermore, once you use this function correctly (with respect to its type signature), diagnosing any problems can be done only within the body of the `addOne` function. This is the impetus behind typed functional programming.
 
@@ -51,7 +51,7 @@ So, why is the signature important? In typed functional programming, the impleme
 
 Expressions are constructs that evaluate to a value. In contrast to statements, which perform an action, expressions can be thought of performing an action that gives back a value. Expressions are almost always used in favor of statements in functional programming.
 
-Consider the previous function, `addOne`. The body of this function is an expression:
+Consider the previous function, `addOne`. The body of `addOne`` is an expression:
 
 ```fsharp
 // 'x + 1' is an expression!
@@ -72,7 +72,7 @@ val addOne: x:'a -> string
 
 Since any type in F# can have `ToString()` called on it, the type of `x` has been generalized to be anything, and the resultant type is a `string`.
 
-Expressions are not just the bodies of functions. You can have expressions that simply produce a value you use elsewhere. A common one is `if`:
+Expressions are not just the bodies of functions. You can have expressions that produce a value you use elsewhere. A common one is `if`:
 
 ```fsharp
 // Checks if 'x' is odd by using the mod operator
@@ -88,16 +88,16 @@ let addOneIfOdd input =
     result
 ```
 
-In this example, the `if` expression produces a value called `result`. The key thing to remember about expressions is that they produce values in functional programming.
+The `if` expression produces a value called `result`. The key thing to remember about expressions is that they produce values in functional programming.
 
 ### Pure functions
 
-As previously-mentioned, pure functions are functions that:
+As previously mentioned, pure functions are functions that:
 
 * Always evaluate to the same value for the same input
 * Have no side effects
 
-From the standpoint of code, this means that a pure function depends only on its arguments and does not perform an action that results in a side effect.
+When writing a pure function, it must depend only on its arguments and not perform any action that results in a side effect.
 
 Here is an example of a non-pure function because it depends on a global value:
 
@@ -125,11 +125,11 @@ Removing the `printfn` statement finally makes the function pure:
 let addOneToValue x = x + 1
 ```
 
-Although this function is not inherently _better_ that the previous version with the `printfn` statement, it does guarantee that all this function does is return a value. Calling this function once or one billion times will still result in the same thing: just producing a value. This predictability is valuable in functional programming, as it means that any pure function is referentially transparent.
+Although this function is not inherently _better_ that the previous version with the `printfn` statement, it does guarantee that all this function does is return a value. Calling this function once or 1 billion times will still result in the same thing: just producing a value. This predictability is valuable in functional programming, as it means that any pure function is referentially transparent.
 
 ### Referential Transparency
 
-Referential transparency is a property of expressions and functions. For an expression to be referentially transparent, it must be able to be replaced with its resultant value without changing the program's behavior. All pure functions are referentially transparent. Consider calling the previously-defined `addOneIfOdd` function twice:
+Referential transparency is a property of expressions and functions. For an expression to be referentially transparent, it must be able to be replaced with its resultant value without changing the program's behavior. All pure functions are referentially transparent. Consider calling the previously defined `addOneIfOdd` function twice:
 
 ```fsharp
 // Checks if 'x' is odd by using the mod operator
@@ -183,7 +183,7 @@ let res2 =
 
 Both `res1` and `res2` have the same value as if the function was called, indicating that `addOneIfOdd` is referentially transparent!
 
-Additionally, a function need not be pure to also be referentially transparent. Consider a previous definition of  `addOneTovalue`:
+Additionally, a function doesn't have to be pure to also be referentially transparent. Consider a previous definition of  `addOneTovalue`:
 
 ```fsharp
 let addOneToValue x = 
@@ -204,7 +204,7 @@ Finally, one of the most fundamental concepts of typed functional programming is
 
 In practice, working with immutable values means that you change your approach to programming from, "I need to change something", to "I need to produce a new value". If there is one thing to reduce functional programming down to, it is that your code is all about calling functions to produce values to work with.
 
-This concept extends even further to data structures. In functional programming, immutable data structures such as sets (and many more) have a very different implementation than you might initially expect. Conceptually, something like adding an item to a set does not change the set, it produces a _new_ set with the added value. Under the covers, this is often accomplished by a different data structure that allows for efficiently tracking a value so that the appropriate representation of the data can be given as a result.
+This concept extends even further to data structures. In functional programming, immutable data structures such as sets (and many more) have a different implementation than you might initially expect. Conceptually, something like adding an item to a set does not change the set, it produces a _new_ set with the added value. Under the covers, this is often accomplished by a different data structure that allows for efficiently tracking a value so that the appropriate representation of the data can be given as a result.
 
 This style of working with values and data structures is critical, as it forces you to treat any operation that modifies something as if it creates a new version of that thing. This allows for things like equality and comparability to be consistent in your programs.
 

@@ -13,9 +13,24 @@
       "(?i)dotnet-api$": ":books: Area - API Reference,:file_folder: Repo - dotnet-api-docs"
     },
     "contentsource": {
+      "(?i).*master\/docs\/core\/tools.*": ":card_file_box: Technology - CLI",
+      "(?i).*master\/docs\/core\/docker.*": ":card_file_box: Technology - Docker",
+      "(?i).*master\/docs\/framework\/data\/adonet.*": ":card_file_box: Technology - Data Access",
+      "(?i).*master\/docs\/framework\/data\/wcf.*": ":card_file_box: Technology - WCF",
+      "(?i).*master\/docs\/framework\/docker.*": ":card_file_box: Technology - Docker",
+      "(?i).*master\/docs\/framework\/install.*": ":card_file_box: Technology - Installers",
+      "(?i).*master\/docs\/framework\/migration-guide.*": ":card_file_box: Technology - AppCompat",
+      "(?i).*master\/docs\/framework\/network-programming.*": ":card_file_box: Technology - NCL",
       "(?i).*master\/docs\/framework\/wpf.*": ":card_file_box: Technology - WPF",
       "(?i).*master\/docs\/framework\/wcf.*": ":card_file_box: Technology - WCF",
       "(?i).*master\/docs\/framework\/winforms.*": ":card_file_box: Technology - WinForms",
+      "(?i).*master\/docs\/standard\/containerized-lifecycle-architecture.*": ":card_file_box: Technology - .NET Architecture,:book: e-book - Docker lifecycle",
+      "(?i).*master\/docs\/standard\/microservices-architecture.*": ":card_file_box: Technology - .NET Architecture,:book: e-book - .NET Microservices",
+      "(?i).*master\/docs\/standard\/modern-web-apps-azure-architecture.*": ":card_file_box: Technology - .NET Architecture,:book: e-book - ASP.NET Core web apps",
+      "(?i).*master\/docs\/standard\/modernize-with-azure-and-containers.*": ":card_file_box: Technology - .NET Architecture,:book: e-book - Modernizing w/ Windows containers",
+      "(?i).*master\/docs\/standard\/security.*": ":card_file_box: Technology - Security",
+      "(?i).*master\/docs\/standard\/serverless-architecture.*": ":card_file_box: Technology - .NET Architecture,:book: e-book - Serverless apps",
+      "(?i).*dotnet-api-docs\/blob\/master\/xml\/system\\.net.*": ":card_file_box: Technology - NCL",
       "(?i).*dotnet-api-docs\/blob\/master\/xml\/system\\.windows\\.forms.*": ":card_file_box: Technology - WinForms",
       "(?i).*dotnet-api-docs\/blob\/master\/xml\/system\\.security.*": ":card_file_box: Technology - Security"
     }

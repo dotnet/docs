@@ -155,9 +155,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <summary>Diffuses the hash code returned by the specified value.</summary>
         <returns>The hash code that represents the single value.</returns>
         <remarks>
-          Some data structures assume that hash codes are diffused across a large range. This method improves the
-          quality of the hash code returned by the value and is useful when the underlying data type is simple, for
-          example, an integer value.
+          Some data structures assume that hash codes are diffused across a large range. This method improves the quality of the hash code returned by the value and is useful when the underlying data type is simple, for example, an integer value.
         </remarks>
       </Docs>
     </Member>

@@ -210,7 +210,7 @@ This style of working with values and data structures is critical, as it forces 
 
 ## Next step
 
-[Functions as first-class values(functions-as-first-class-values.md) explores functions deeply, showing how you can use them in various contexts.
+[Functions as first-class values](functions-as-first-class-values.md) explores functions deeply, showing how you can use them in various contexts.
 
 ## Further reading
 

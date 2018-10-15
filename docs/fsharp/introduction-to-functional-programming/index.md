@@ -208,10 +208,14 @@ This concept extends even further to data structures. In functional programming,
 
 This style of working with values and data structures is critical, as it forces you to treat any operation that modifies something as if it creates a new version of that thing. This allows for things like equality and comparability to be consistent in your programs.
 
-## Next step
+## Next steps
+
+The next section will thoroughly cover functions, exploring different ways you can use them in functional programming.
+
+[!div class="nextstepaction"] First-class functions
 
 [Functions as first-class values](functions-as-first-class-values.md) explores functions deeply, showing how you can use them in various contexts.
 
 ## Further reading
 
-We recommend reading the [Thinking Functionally](https://fsharpforfunandprofit.com/posts/thinking-functionally-intro/) series to learn about functional programming with F#. It covers fundamentals of functional programming in a pragmatic and easy-to-read way, using F# features to illustrate the concepts.
+The [Thinking Functionally](https://fsharpforfunandprofit.com/posts/thinking-functionally-intro/) series is another great resource to learn about functional programming with F#. It covers fundamentals of functional programming in a pragmatic and easy-to-read way, using F# features to illustrate the concepts.

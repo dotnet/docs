@@ -101,7 +101,7 @@ public class Student
 This feature enables true language support for creating immutable types and using
 the more concise and convenient auto-property syntax.
 
-If adding this syntax does not not remove an accessible method, it is a [binary compatible change](version-update-considerations.md#binary-compatible-changes).
+If adding this syntax does not remove an accessible method, it is a [binary compatible change](version-update-considerations.md#binary-compatible-changes).
 
 ### Auto-property initializers
 

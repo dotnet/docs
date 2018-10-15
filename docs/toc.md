@@ -313,7 +313,7 @@
 ## [Tour of F#](fsharp/tour.md)
 
 ## Tutorials
-### Introduction to Functional Programming
+### [Introduction to Functional Programming](fsharp/introduction-to-functional-programming/index.md)
 #### [Functions as First-Class Values](fsharp/introduction-to-functional-programming/functions-as-first-class-values.md)
 ### Asynchronous and Concurrent Programming
 #### [Asynchronous Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)

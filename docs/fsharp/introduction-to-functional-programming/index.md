@@ -1,7 +1,7 @@
 ---
 title: Introduction to Functional Programming in F#
 description: Learn the fundamentals of functional programming in F#.
-ms.date: 10/11/2018
+ms.date: 10/15/2018
 ---
 
 # Introduction to Functional Programming in F# #

@@ -33,8 +33,8 @@ C#, Visual Basic, and F# languages can be used to write applications and librari
 
 .NET Core provides compatibility with .NET Framework and Mono APIs by implementing the [.NET Standard](../standard/net-standard.md) specification.
 
-[bool]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/bool
-[int]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/int
+[bool]: https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/bool
+[int]: https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/int
 [pipelines]: https://blogs.msdn.microsoft.com/dotnet/2018/07/09/system-io-pipelines-high-performance-io-in-net/
 [dbset]: https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/
 

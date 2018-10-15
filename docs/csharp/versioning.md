@@ -8,7 +8,7 @@ ms.assetid: aa8732d7-5cd0-46e1-994a-78017f20d861
 # Versioning in C# #
 
 In this tutorial you'll learn what versioning means in .NET. You'll also learn the factors to consider when versioning your library as well as upgrading
-to a new version of the a library.
+to a new version of a library.
 
 ## Authoring Libraries
 

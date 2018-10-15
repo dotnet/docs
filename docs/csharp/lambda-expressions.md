@@ -47,7 +47,7 @@ Ordinarily, the compiler uses type inference in determining parameter types. How
 
 [!code-csharp[csSnippets.Lambdas](../../samples/snippets/csharp/concepts/lambda-expressions/expression3.cs#3)]
 
-Note in the previous example that the body of an expression lambda can consist of a method call. However, if you are creating expression trees that are evaluated outside of the .NET Framework, such as in SQL Server or Entity Framework (EF), you should refrain from using method calls in lambda expressions, since the methods may have no meaning outside the context of the .NET implementation. If you do choose to use method calls in this case, be sure to test them thoroughly to ensure that the method calls can be successfuly resolved.
+Note in the previous example that the body of an expression lambda can consist of a method call. However, if you are creating expression trees that are evaluated outside of the .NET Framework, such as in SQL Server or Entity Framework (EF), you should refrain from using method calls in lambda expressions, since the methods may have no meaning outside the context of the .NET implementation. If you do choose to use method calls in this case, be sure to test them thoroughly to ensure that the method calls can be successfully resolved.
 
 ## Statement lambdas ##
 

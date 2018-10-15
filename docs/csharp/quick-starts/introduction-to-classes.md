@@ -188,7 +188,7 @@ Save the file and type `dotnet run` to try it.
 
 ## Challenge - log all transactions
 
-To finish this quickstart, you can write the `GetAccountHistory` method that creates a `string` for the transaction history. add this method to the `BankAccount` type:
+To finish this quickstart, you can write the `GetAccountHistory` method that creates a `string` for the transaction history. Add this method to the `BankAccount` type:
 
 [!code-csharp[History](../../../samples/csharp/classes-quickstart/BankAccount.cs#History "Display transaction history")]
 

@@ -1,6 +1,6 @@
 ---
 title: "Connection Strings"
-ms.date: "10/08/2018"
+ms.date: "10/15/2018"
 ms.assetid: 78d516bc-c99f-4865-8ff1-d856bc1a01c0
 ---
 # Connection Strings
@@ -12,30 +12,7 @@ A connection string contains initialization information that is passed as a para
 
 ## Connection String Syntax
 
-The format of a connection string is a semicolon-delimited list of key/value parameter pairs:
-  
-	keyword1=value; keyword2=value;
-  
-Keywords are not case-sensitive. Values, however, may be case-sensitive, depending on the data source. Both keywords and values may contain [whitespace characters](https://en.wikipedia.org/wiki/Whitespace_character#Unicode), although leading and trailing whitespace is ignored in keywords and unquoted values.
-
-If a value contains the semicolon, [Unicode control characters](https://en.wikipedia.org/wiki/Unicode_control_characters), leading or trailing whitespace it must be enclosed in single or double quotation marks, e.g.:
-
-	Keyword=" whitespace  ";
-	Keyword='special;character';
-
-The enclosing character may not occur within the value it encloses. Therefore, a value containing single quotation marks can be enclosed only in double quotation marks and vice versa:
-
-	Keyword='double"quotation;mark';
-	Keyword="single'quotation;mark";
-
-The quotation marks themselves, as well as the equals sign, do not require escaping, so the following connection strings are valid:
-
-	Keyword=no "escaping" 'required';
-	Keyword=a=b=c
-
-Since each value is read till the next semicolon or the end of string, the value in the latter example is `a=b=c`, and the final semicolon is optional.
-
-Valid connection string syntax depends on the provider, and has evolved over the years from earlier APIs like ODBC. The .NET Framework Data Provider for SQL Server (SqlClient) incorporates many elements from older syntax and is generally more flexible with common connection string syntax. There are frequently equally valid synonyms for connection string syntax elements, but some syntax and spelling errors can cause problems. For example, "`Integrated Security=true`" is valid, whereas "`IntegratedSecurity=true`" causes an error. In addition, connection strings constructed at run time from unvalidated user input can lead to string injection attacks, jeopardizing security at the data source.
+To learn about the general syntax for connection strings, see [Connection string syntax | Connection Strings in ADO.NET](../connection-strings.md#connection-string-syntax).
 
 ## Connection String Parameters  
 

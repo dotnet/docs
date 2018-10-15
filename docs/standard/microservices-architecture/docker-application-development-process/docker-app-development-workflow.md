@@ -1,25 +1,25 @@
 ---
 title: Development workflow for Docker apps
-description: .NET Microservices Architecture for Containerized .NET Applications | Understand the details of the workflow for developing Docker-based applications. Begin step by step and get into some details to optimize Dockerfiles and end with the simplified workflow available when using Visual Studio
+description: Understand the details of the workflow for developing Docker-based applications. Begin step by step and get into some details to optimize Dockerfiles and end with the simplified workflow available when using Visual Studio.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/27/2018
 ---
 # Development workflow for Docker apps
 
-The application development life cycle starts at each developer's machine, where the developer codes the application using their preferred language and tests it locally. No matter which language, framework, and platform the developer chooses, with this workflow, the developer is always developing and testing Docker containers, but doing so locally.
+The application development life cycle starts at your computer, as a developer, where you code the application using your preferred language and test it locally. With this workflow, no matter which language, framework, and platform you choose, you're always developing and testing Docker containers, but doing so locally.
 
 Each container (an instance of a Docker image) includes the following components:
 
--   An operating system selection (for example, a Linux distribution, Windows Nano Server, or Windows Server Core).
+- An operating system selection, for example, a Linux distribution, Windows Nano Server, or Windows Server Core.
 
--   Files added by the developer (application binaries, etc.).
+- Files added during development, for example, source code and application binaries.
 
--   Configuration information (environment settings and dependencies).
+- Configuration information, such as environment settings and dependencies.
 
 ## Workflow for developing Docker container-based applications
 
-This section describes the *inner-loop* development workflow for Docker container-based applications. The inner-loop workflow means it is not considering the broader DevOps workflow (that can include up to production deployment) and just focuses on the development work done on the developer's computer. The initial steps to set up the environment are not included, since those are done only once.
+This section describes the *inner-loop* development workflow for Docker container-based applications. The inner-loop workflow means it's not considering the broader DevOps workflow, that can include up to production deployment, and just focuses on the development work done on the developer's computer. The initial steps to set up the environment aren't included, since those steps are done only once.
 
 An application is composed of your own services plus additional libraries (dependencies). The following are the basic steps you usually take when building a Docker application, as illustrated in Figure 5-1.
 
@@ -29,11 +29,11 @@ An application is composed of your own services plus additional libraries (depen
 
 In this section, this whole process is detailed and every major step is explained by focusing on a Visual Studio environment.
 
-When you're using an editor/CLI development approach (for example, Visual Studio Code plus Docker CLI on macOS or Windows), you need to know every step, generally in more detail than if you are using Visual Studio. For more details about working in a CLI environment, refer to the e-book [Containerized Docker Application lifecycle with Microsoft Platforms and Tools](https://aka.ms/dockerlifecycleebook/).
+When you're using an editor/CLI development approach (for example, Visual Studio Code plus Docker CLI on macOS or Windows), you need to know every step, generally in more detail than if you're using Visual Studio. For more information about working in a CLI environment, see the e-book [Containerized Docker Application lifecycle with Microsoft Platforms and Tools](https://aka.ms/dockerlifecycleebook/).
 
 When you're using Visual Studio 2017, many of those steps are handled for you, which dramatically improves your productivity. This is especially true when you are using Visual Studio 2017 and targeting multi-container applications. For instance, with just one mouse click, Visual Studio adds the Dockerfile and docker-compose.yml file to your projects with the configuration for your application. When you run the application in Visual Studio, it builds the Docker image and runs the multi-container application directly in Docker; it even allows you to debug several containers at once. These features will boost your development speed.
 
-However, just because Visual Studio makes those steps automatic does not mean that you do not need to know what is going on underneath with Docker. Therefore, in the guidance that follows, we detail every step.
+However, just because Visual Studio makes those steps automatic doesn't mean that you don't need to know what's going on underneath with Docker. Therefore, the following guidance details every step.
 
 ![1 - Code your app](./media/image2.png)
 
@@ -43,11 +43,11 @@ Developing a Docker application is similar to the way you develop an application
 
 ### Set up your local environment with Visual Studio
 
-To begin, make sure you have [Docker Community Edition (CE)](https://www.docker.com/community-edition) for Windows installed, as explained in the following instructions:
+To begin, make sure you have [Docker Community Edition (CE)](https://docs.docker.com/docker-for-windows/) for Windows installed, as explained in the following instructions:
 
 [Get started with Docker CE for Windows](https://docs.docker.com/docker-for-windows/)
 
-In addition, you need Visual Studio 2017 (15.7 or later) with the **.NET Core cross-platform development** workload installed, as shown in Figure 5-2.
+In addition, you need Visual Studio 2017 version 15.7 or later, with the **.NET Core cross-platform development** workload installed, as shown in Figure 5-2.
 
 ![.NET Core cross-platform development workload selection, during Visual Studio installation.](./media/image3.png)
 
@@ -57,11 +57,11 @@ You can start coding your application in plain .NET (usually in .NET Core if you
 
 ### Additional resources
 
--   **Get started with Docker CE for Windows** <br/>
-    [*https://docs.docker.com/docker-for-windows/*](https://docs.docker.com/docker-for-windows/)
+- **Get started with Docker CE for Windows** \
+  [*https://docs.docker.com/docker-for-windows/*](https://docs.docker.com/docker-for-windows/)
 
--   **Visual Studio 2017** <br/>
-    [*https://visualstudio.microsoft.com/downloads/*](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+- **Visual Studio 2017** \
+  [*https://visualstudio.microsoft.com/downloads/*](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
 
 ![2 - Write Dockerfiles](./media/image4.png)
 
@@ -71,7 +71,7 @@ You need a Dockerfile for each custom image you want to build; you also need a D
 
 The Dockerfile is placed in the root folder of your application or service. It contains the commands that tell Docker how to set up and run your application or service in a container. You can manually create a Dockerfile in code and add it to your project along with your .NET dependencies.
 
-With Visual Studio and its tools for Docker, this task requires only a few mouse clicks. When you create a new project in Visual Studio 2017, there is an option named **Enable Container (Docker) Support**, as shown in Figure 5-3.
+With Visual Studio and its tools for Docker, this task requires only a few mouse clicks. When you create a new project in Visual Studio 2017, there's an option named **Enable Container (Docker) Support**, as shown in Figure 5-3.
 
 ![Enable Docker Support checkbox when creating a new ASP.NET Core project in Visual Studio 2017](./media/image5.png)
 
@@ -85,13 +85,13 @@ You can also enable Docker support on an existing ASP.NET Core web app project b
 
 This action adds a *Dockerfile* to the project with the required configuration, and is only available on ASP.NET Core projects.
 
-In a similar fashion, Visual Studio can also add a docker-compose.yml file for the whole solution with the option **Add > Container Orchestrator Support**. In step 4 we'll explore this option with greater detail.
+In a similar fashion, Visual Studio can also add a docker-compose.yml file for the whole solution with the option **Add > Container Orchestrator Support**. In step 4, we'll explore this option in greater detail.
 
 ### Using an existing official .NET Docker image
 
 You usually build a custom image for your container on top of a base image you get from an official repository like the [Docker Hub](https://hub.docker.com/) registry. That is precisely what happens under the covers when you enable Docker support in Visual Studio. Your Dockerfile will use an existing aspnetcore image.
 
-Earlier we explained which Docker images and repos you can use, depending on the framework and OS you have chosen. For instance, if you want to use ASP.NET Core (Linux or Windows), the image to use is microsoft/dotnet:2.1-aspnetcore-runtime. Therefore, you just need to specify what base Docker image you will use for your container. You do that by adding FROM microsoft/dotnet:2.1-aspnetcore-runtime to your Dockerfile. This will be automatically performed by Visual Studio, but if you were to update the version, you update this value.
+Earlier we explained which Docker images and repos you can use, depending on the framework and OS you have chosen. For instance, if you want to use ASP.NET Core (Linux or Windows), the image to use is `microsoft/dotnet:2.1-aspnetcore-runtime`. Therefore, you just need to specify what base Docker image you will use for your container. You do that by adding `FROM microsoft/dotnet:2.1-aspnetcore-runtime` to your Dockerfile. This will be automatically performed by Visual Studio, but if you were to update the version, you update this value.
 
 Using an official .NET image repository from Docker Hub with a version number ensures that the same language features are available on all machines (including development, testing, and production).
 
@@ -106,23 +106,23 @@ COPY ${source:-obj/Docker/publish} .
 ENTRYPOINT ["dotnet", " MySingleContainerWebApp.dll "]
 ```
 
-In this case, the image is based on version 2.1 of the official ASP.NET Core Docker image (multi-arch for Linux and Windows). This is the setting `FROM microsoft/dotnet:2.1-aspnetcore-runtime`. (For further details about this base image, see the [ASP.NET Core Docker Image](https://hub.docker.com/r/microsoft/aspnetcore/) page and the [.NET Core Docker Image](https://hub.docker.com/r/microsoft/dotnet/) page.) In the Dockerfile, you also need to instruct Docker to listen on the TCP port you will use at runtime (in this case, port 80, as configured with the EXPOSE setting).
+In this case, the image is based on version 2.1 of the official ASP.NET Core Docker image (multi-arch for Linux and Windows). This is the setting `FROM microsoft/dotnet:2.1-aspnetcore-runtime`. (For more information about this base image, see the [ASP.NET Core Docker Image](https://hub.docker.com/r/microsoft/aspnetcore/) page and the [.NET Core Docker Image](https://hub.docker.com/r/microsoft/dotnet/) page.) In the Dockerfile, you also need to instruct Docker to listen on the TCP port you will use at runtime (in this case, port 80, as configured with the EXPOSE setting).
 
-You can specify additional configuration settings in the Dockerfile, depending on the language and framework you are using. For instance, the ENTRYPOINT line with \["dotnet", "MySingleContainerWebApp.dll"\] tells Docker to run a .NET Core application. If you are using the SDK and the .NET Core CLI (dotnet CLI) to build and run the .NET application, this setting would be different. The bottom line is that the ENTRYPOINT line and other settings will be different depending on the language and platform you choose for your application.
+You can specify additional configuration settings in the Dockerfile, depending on the language and framework you are using. For instance, the ENTRYPOINT line with `["dotnet", "MySingleContainerWebApp.dll"]` tells Docker to run a .NET Core application. If you are using the SDK and the .NET Core CLI (dotnet CLI) to build and run the .NET application, this setting would be different. The bottom line is that the ENTRYPOINT line and other settings will be different depending on the language and platform you choose for your application.
 
 ### Additional resources
 
--   **Building Docker Images for .NET Core Applications** <br/>
-    [*https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images*](../../../core/docker/building-net-docker-images.md)
+- **Building Docker Images for .NET Core Applications** \
+  [*https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images*](../../../core/docker/building-net-docker-images.md)
 
--   **Build your own image**. In the official Docker documentation.<br/>
-    [*https://docs.docker.com/engine/tutorials/dockerimages/*](https://docs.docker.com/engine/tutorials/dockerimages/)
+- **Build your own image**. In the official Docker documentation.\
+  [*https://docs.docker.com/engine/tutorials/dockerimages/*](https://docs.docker.com/engine/tutorials/dockerimages/)
 
--   **Staying up-to-date with .NET Container Images** <br/>
-    [*https://blogs.msdn.microsoft.com/dotnet/2018/06/18/staying-up-to-date-with-net-container-images/*](https://blogs.msdn.microsoft.com/dotnet/2018/06/18/staying-up-to-date-with-net-container-images/)
+- **Staying up-to-date with .NET Container Images** \
+  [*https://blogs.msdn.microsoft.com/dotnet/2018/06/18/staying-up-to-date-with-net-container-images/*](https://blogs.msdn.microsoft.com/dotnet/2018/06/18/staying-up-to-date-with-net-container-images/)
 
--   **Using .NET and Docker Together - DockerCon 2018 Update** <br/>
-    [*https://blogs.msdn.microsoft.com/dotnet/2018/06/13/using-net-and-docker-together-dockercon-2018-update/*](https://blogs.msdn.microsoft.com/dotnet/2018/06/13/using-net-and-docker-together-dockercon-2018-update/)
+- **Using .NET and Docker Together - DockerCon 2018 Update** \
+  [*https://blogs.msdn.microsoft.com/dotnet/2018/06/13/using-net-and-docker-together-dockercon-2018-update/*](https://blogs.msdn.microsoft.com/dotnet/2018/06/13/using-net-and-docker-together-dockercon-2018-update/)
 
 ### Using multi-arch image repositories
 
@@ -130,26 +130,22 @@ A single repo can contain platform variants, such as a Linux image and a Windows
 
 If you specify a tag, targeting a platform that is explicit like in the following cases:
 
--   **microsoft/dotnet:2.1-aspnetcore-runtime-stretch-slim**
-    
-    Targets: .NET Core 2.1 runtime-only on Linux
+- `microsoft/dotnet:2.1-aspnetcore-runtime-stretch-slim` \
+  Targets: .NET Core 2.1 runtime-only on Linux
 
--   **microsoft/dotnet:2.1-aspnetcore-runtime-nanoserver-1709**
+- `microsoft/dotnet:2.1-aspnetcore-runtime-nanoserver-1709` \
+  Targets: .NET Core 2.1 runtime-only on Windows Nano Server
 
-    Targets: .NET Core 2.1 runtime-only on Windows Nano Server
+But, if you specify the same image name, even with the same tag, the multi-arch images (like the aspnetcore image) will use the Linux or Windows version depending on the Docker host OS you are deploying, as shown in the following example:
 
-But, and this is new since mid-2017, if you specify the same image name, even with the same tag, the new multi-arch images (like the aspnetcore image, which supports multi-arch) will use the Linux or Windows version depending on the Docker host OS you are deploying, as shown in the following example:
-
--   **microsoft/dotnet:2.1-aspnetcore-runtime**
-
-    Multi-arch: .NET Core 2.1 runtime-only on Linux or Windows Nano Server depending on the Docker host OS
+- `microsoft/dotnet:2.1-aspnetcore-runtime` \
+  Multi-arch: .NET Core 2.1 runtime-only on Linux or Windows Nano Server depending on the Docker host OS
 
 This way, when you pull an image from a Windows host, it will pull the Windows variant, and pulling the same image name from a Linux host will pull the Linux variant.
 
-
 ### Multi-stage builds in Dockerfile
 
-The Dockerfile is similar to a batch script. Similar to what you would do if you had to setup the machine from the command line.
+The Dockerfile is similar to a batch script. Similar to what you would do if you had to set up the machine from the command line.
 
 It starts with a base image that sets up the initial context, it's like the startup filesystem, that sits on top of the host OS. It's not an OS, but you can think of if like "the" OS inside the container.
 
@@ -163,15 +159,15 @@ The core idea is that you can separate the Dockerfile execution process in stage
 
 In short, multi-stage builds allow splitting the creation in different "phases" and then assemble the final image taking only the relevant directories from the intermediate stages. The general strategy to use this feature is:
 
-1.  Use a base SDK image (doesn't matter how large), with everything needed to build and publish the application to a folder and then
+1. Use a base SDK image (doesn't matter how large), with everything needed to build and publish the application to a folder and then
 
-2.  Use a base, small, runtime-only image and copy the publishing folder from the previous stage to produce a small final image.
+2. Use a base, small, runtime-only image and copy the publishing folder from the previous stage to produce a small final image.
 
 Probably the best way to understand multi-stage is going through a Dockerfile in detail, line by line, so let's begin with the initial Dockerfile created by Visual Studio when adding Docker support to a project and will get into some optimizations later.
 
 The initial Dockerfile might look something like this:
 
-```
+```Dockerfile
  1  FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
  2  WORKDIR /app
  3  EXPOSE 80
@@ -201,6 +197,7 @@ The initial Dockerfile might look something like this:
 27  COPY --from=publish /app
 28  ENTRYPOINT ["dotnet", "Catalog.API.dll"]
 ```
+
 And these are the details, line by line:
 
 1.  Begin a stage with a "small" runtime-only base image, call it **base** for reference.
@@ -209,7 +206,7 @@ And these are the details, line by line:
 <!-- skip -->
 5.  Begin a new stage with "large" image for building/publishing, call it **build** for reference.
 6.  Create directory **/src** in the image.
-7.  Up to line 16, copy referenced projects **.csproj** files, to be able to restore pakages later.
+7.  Up to line 16, copy referenced projects **.csproj** files, to be able to restore packages later.
 <!-- skip -->
 17. Restore packages for the **Catalog.API** project and the referenced projects.
 18. Copy **all directory tree for the solution** (except the files/directories included in the **.dockerignore** file) from to the **/src** directory in the image.
@@ -224,11 +221,11 @@ And these are the details, line by line:
 27. Copy the **/app** directory from stage **publish** to the current directory
 28. Define the command to run when the container is started.
 
-Now we'll explore some optimizations to improve the whole process performance that, in the case of eShopOnContainers, means about 22 minutes or more to build the complete solution in Linux containers.
+Now let's explore some optimizations to improve the whole process performance that, in the case of eShopOnContainers, means about 22 minutes or more to build the complete solution in Linux containers.
 
-We'll take advantage of Doker's layer cache feature, which is quite simple: if the base image and the commands are the same as some previously executed, it can just use the resulting layer without the need to execute the commands, thus saving some time.
+You'll take advantage of Docker's layer cache feature, which is quite simple: if the base image and the commands are the same as some previously executed, it can just use the resulting layer without the need to execute the commands, thus saving some time.
 
-So, let's focus on the **build** stage, lines 5-6 are mostly the same, but lines 7-17 are different for every service from eShopOnContainers, so they have to execute every single time, however if we changed lines 7-16 to:
+So, let's focus on the **build** stage, lines 5-6 are mostly the same, but lines 7-17 are different for every service from eShopOnContainers, so they have to execute every single time, however if you changed lines 7-16 to:
 
 ```
 COPY . .
@@ -236,33 +233,33 @@ COPY . .
 
 Then it would be just the same for every service, it would copy the whole solution and would create a larger layer but:
 
-1)  The copy process would only be executed the first time (and when rebuilding if a file is changed) and would use the cache for all other services and
+1) The copy process would only be executed the first time (and when rebuilding if a file is changed) and would use the cache for all other services and
 
-2)  Since the larger image occurs in an intermediate stage it doesn't affects the final image size.
+2) Since the larger image occurs in an intermediate stage it, doesn't affect the final image size.
 
 The next significant optimization involves the restore command executed in line 17, which is also different for every service of eShopOnContainers. If we changed that line to just:
 
-```
+```console
 RUN dotnet restore
 ```
 
-It whould restore the packages for the whole solution, but then again, it would do it just once, instead of the 15 times with the current strategy.
+It'd restore the packages for the whole solution, but then again, it would do it just once, instead of the 15 times with the current strategy.
 
-However, dotnet restore only runs if there's a single project or solution file in the folder, so achieving this is a bit more complicated and the way to solve it, without getting into too much details, is this:
+However, `dotnet restore` only runs if there's a single project or solution file in the folder, so achieving this is a bit more complicated and the way to solve it, without getting into too many details, is this:
 
-1)  Add the following lines to **.dockerignore**:
-    
-    -   **\*.sln**, to ignore all solution files in the main folder tree
-    
-    -   **\!eShopOnContainers-ServicesAndWebApps.sln**, to include only this solution file.
+1) Add the following lines to **.dockerignore**:
 
-2)  Include the **/ignoreprojectextensions:.dcproj** argument to dotnet restore, so it also ignores the docker-compose project and only restores the packages for the eShopOnContainers-ServicesAndWebApps solution.
+   - `*.sln`, to ignore all solution files in the main folder tree
+
+   - `!eShopOnContainers-ServicesAndWebApps.sln`, to include only this solution file.
+
+2) Include the `/ignoreprojectextensions:.dcproj` argument to `dotnet restore`, so it also ignores the docker-compose project and only restores the packages for the eShopOnContainers-ServicesAndWebApps solution.
 
 For the final optimization, it just happens that line 20 is redundant, as line 23 also builds the application and comes, in essence, right after line 20, so there goes another time-consuming command.
 
 The resulting file is then:
 
-```
+```Dockerfile
  1  FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
  2  WORKDIR /app
  3  EXPOSE 80
@@ -286,11 +283,11 @@ You can create your own Docker base image from scratch. This scenario is not rec
 
 ### Additional resources
 
--   **Multi-arch .NET Core images**. <br/>
-    [*https://github.com/dotnet/announcements/issues/14*](https://github.com/dotnet/announcements/issues/14)
+- **Multi-arch .NET Core images**.\
+  [*https://github.com/dotnet/announcements/issues/14*](https://github.com/dotnet/announcements/issues/14)
 
--   **Create a base image**. Official Docker documentation.<br/>
-    [*https://docs.docker.com/engine/userguide/eng-image/baseimages/*](https://docs.docker.com/engine/userguide/eng-image/baseimages/)
+- **Create a base image**. Official Docker documentation.\
+  [*https://docs.docker.com/engine/userguide/eng-image/baseimages/*](https://docs.docker.com/engine/userguide/eng-image/baseimages/)
 
 ![3 - Create images defined at Dockerfiles](./media/image7.png)
 
@@ -312,7 +309,7 @@ Optionally, instead of directly running docker build from the project folder, yo
 
 This will create a Docker image with the name `cesardl/netcore-webapi-microservice-docker:first`. In this case, :first is a tag representing a specific version. You can repeat this step for each custom image you need to create for your composed Docker application.
 
-When an application is made of multiple containers (that is, it is a multi-container application), you can also use the docker-compose up --build command to build all the related images with a single command by using the metadata exposed in the related docker-compose.yml files.
+When an application is made of multiple containers (that is, it is a multi-container application), you can also use the `docker-compose up --build` command to build all the related images with a single command by using the metadata exposed in the related docker-compose.yml files.
 
 You can find the existing images in your local repository by using the docker images command, as shown in Figure 5-6.
 
@@ -383,13 +380,13 @@ The docker-compose.yml file example defines four services: the `webmvc` service 
 
 The docker-compose.yml file specifies not only what containers are being used, but how they are individually configured. For instance, the webmvc container definition in the .yml file:
 
--   Uses a pre-built eshop/web:latest image. However, you could also configure the image to be built as part of the docker-compose execution with an additional configuration based on a build: section in the docker-compose file.
+- Uses a pre-built eshop/web:latest image. However, you could also configure the image to be built as part of the docker-compose execution with an additional configuration based on a build: section in the docker-compose file.
 
--   Initializes two environment variables (CatalogUrl and OrderingUrl).
+- Initializes two environment variables (CatalogUrl and OrderingUrl).
 
--   Forwards the exposed port 80 on the container to the external port 80 on the host machine.
+- Forwards the exposed port 80 on the container to the external port 80 on the host machine.
 
--   Links the web app to the catalog and ordering service with the depends_on setting. This causes the service to wait until those services are started.
+- Links the web app to the catalog and ordering service with the depends_on setting. This causes the service to wait until those services are started.
 
 We will revisit the docker-compose.yml file in a later section when we cover how to implement microservices and multi-container apps.
 
@@ -401,7 +398,7 @@ When you add container orchestrator support, as shown in Figure 5-7, for the fir
 
 You have to repeat this operation form every project you want to include in the docker-compose.yml file.
 
-At the time of this writing, Visual Studio suports Docker Compose and Service Fabric orchestrators.
+At the time of this writing, Visual Studio supports Docker Compose and Service Fabric orchestrators.
 
 ![Context menu option to add orchestrator support to an ASP.NET Core project](./media/image21.png)
 
@@ -465,7 +462,7 @@ After the docker-compose up command runs, the application and its related contai
 
 #### Using Visual Studio
 
-Running a multi-container application using Visual Studio 2017 can't get any simpler. You you just press **Ctrl-F5** to run or **F5** to debug, as usual, setting up the **docker-compose** project as the startup project.  Visual Studio handles all needed setup, so you can create breakpoints as usual and debug what finally become independent processes running in "remote servers", just like that.
+Running a multi-container application using Visual Studio 2017 can't get any simpler. You just press **Ctrl-F5** to run or **F5** to debug, as usual, setting up the **docker-compose** project as the startup project.  Visual Studio handles all needed setup, so you can create breakpoints as usual and debug what finally become independent processes running in "remote servers", just like that.
 
 As mentioned before, each time you add Docker solution support to a project within a solution, that project is configured in the global (solution-level) docker-compose.yml file, which lets you run or debug the whole solution at once. Visual Studio will start one container for each project that has Docker solution support enabled, and perform all the internal steps for you (dotnet publish, docker build, etc.).
 
@@ -481,8 +478,8 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2017
 
 ### Additional resources
 
--   **Deploy an ASP.NET container to a remote Docker host** <br/>
-    [*https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker*](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
+- **Deploy an ASP.NET container to a remote Docker host** \
+  [*https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker*](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
 
 ### A note about testing and deploying with orchestrators
 
@@ -518,11 +515,11 @@ If you are developing using the editor/CLI approach, debugging containers is mor
 
 ### Additional resources
 
--   **Debugging apps in a local Docker container** <br/>
-    [*https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh*](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)
+- **Debugging apps in a local Docker container** \
+  [*https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh*](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)
 
--   **Steve Lasker. Build, Debug, Deploy ASP.NET Core Apps with Docker.** Video. <br/>
-    [*https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115*](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115)
+- **Steve Lasker. Build, Debug, Deploy ASP.NET Core Apps with Docker.** Video. \
+  [*https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115*](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115)
 
 ## Simplified workflow when developing containers with Visual Studio
 
@@ -536,8 +533,8 @@ In addition, you need to perform step 2 (adding Docker support to your projects)
 
 ### Additional resources
 
--   **Steve Lasker. .NET Docker Development with Visual Studio 2017** <br/>
-    [*https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111*](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111)
+- **Steve Lasker. .NET Docker Development with Visual Studio 2017** \
+  [*https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111*](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111)
 
 ## Using PowerShell commands in a Dockerfile to set up Windows Containers 
 
@@ -558,8 +555,8 @@ RUN powershell add-windowsfeature web-asp-net45
 
 ### Additional resources
 
--   **aspnet-docker/Dockerfile.** Example Powershell commands to run from dockerfiles to include Windows features.<br/>
-    [*https://github.com/Microsoft/aspnet-docker/blob/master/4.7.1-windowsservercore-ltsc2016/runtime/Dockerfile*](https://github.com/Microsoft/aspnet-docker/blob/master/4.7.1-windowsservercore-ltsc2016/runtime/Dockerfile)
+- **aspnet-docker/Dockerfile.** Example PowerShell commands to run from dockerfiles to include Windows features.\
+  [*https://github.com/Microsoft/aspnet-docker/blob/master/4.7.1-windowsservercore-ltsc2016/runtime/Dockerfile*](https://github.com/Microsoft/aspnet-docker/blob/master/4.7.1-windowsservercore-ltsc2016/runtime/Dockerfile)
 
 >[!div class="step-by-step"]
 [Previous](index.md)

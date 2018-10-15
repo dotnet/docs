@@ -15,10 +15,6 @@ Functional programming is a style of programming that emphasizes the use of func
 
 Throughout this series, you'll explore concepts and patterns in functional programming using F#. Along the way, you'll learn some F# too.
 
-## Why functional programming
-
-Why? TODO
-
 ## Terminology
 
 Functional programming, like other programming paradigms, comes with a vocabulary that you will eventually need to learn. Here are some common terms you'll see all of the time:

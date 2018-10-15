@@ -76,9 +76,9 @@
 ## Notes on XAML Usage  
  <xref:System.Collections.ObjectModel.ObservableCollection%601> can be used as a XAML object element in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)], in versions 3.0 and 3.5. However, the usage has substantial limitations.  
   
--   <xref:System.Collections.ObjectModel.ObservableCollection%601> must be the root element, because the  that must be used to specify the constrained type of the generic <xref:System.Collections.ObjectModel.ObservableCollection%601> is only supported on the object element for the root element.  
+-   <xref:System.Collections.ObjectModel.ObservableCollection%601> must be the root element, because the `x:TypeArguments` attribute that must be used to specify the constrained type of the generic <xref:System.Collections.ObjectModel.ObservableCollection%601> is only supported on the object element for the root element.  
   
--   You must declare an  (which entails that the build action for this XAML file must be `Page` or some other build action that compiles the XAML).  
+-   You must declare an `x:Class` attribute (which entails that the build action for this XAML file must be `Page` or some other build action that compiles the XAML).  
   
 -   <xref:System.Collections.ObjectModel.ObservableCollection%601> is in a namespace and assembly that are not initially mapped to the default XML namespace. You must map a prefix for the namespace and assembly, and then use that prefix on the object element tag for <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
   

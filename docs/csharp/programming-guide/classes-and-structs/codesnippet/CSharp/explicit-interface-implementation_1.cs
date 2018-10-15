@@ -3,8 +3,8 @@ class Test
     static void Main()
     {
         SampleClass sc = new SampleClass();
-        IControl ctrl = (IControl)sc;
-        ISurface srfc = (ISurface)sc;
+        IControl ctrl = sc;
+        ISurface srfc = sc;
 
         // The following lines all call the same method.
         sc.Paint();

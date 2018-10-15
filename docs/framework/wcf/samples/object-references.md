@@ -14,7 +14,7 @@ This sample demonstrates how to pass objects by references between server and cl
 ## Service  
  The `Person` class has the <xref:System.Runtime.Serialization.DataContractAttribute> attribute applied, with the <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A> field set to `true` to declare it as a reference type. All properties have the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute applied.  
   
-```  
+```csharp
 [DataContract(IsReference=true)]  
 public class Person  
 {  
@@ -47,7 +47,7 @@ public class Person
   
  The `GetPeopleInNetwork` operation takes a parameter of type `Person` and returns all the people in the network; that is, all the people in the `friends` list, the friend's friends, and so on, without duplicates.  
   
-```  
+```csharp
 public List<Person> GetPeopleInNetwork(Person p)  
 {  
     List<Person> people = new List<Person>();  
@@ -59,7 +59,7 @@ public List<Person> GetPeopleInNetwork(Person p)
   
  The `GetMutualFriends` operation takes a parameter of type `Person` and returns all the friends in the list who also have this person in their `friends` list.  
   
-```  
+```csharp
 public List<Person> GetMutualFriends(Person p)  
 {  
     List<Person> mutual = new List<Person>();  
@@ -74,7 +74,7 @@ public List<Person> GetMutualFriends(Person p)
   
  The `GetCommonFriends` operation takes a list of type `Person`. The list is expected to have two `Person` objects in it. The operation returns a list of `Person` objects that are in the `friends` lists of both `Person` objects in the input list.  
   
-```  
+```csharp
 public List<Person> GetCommonFriends(List<Person> people)  
 {  
     List<Person> common = new List<Person>();  

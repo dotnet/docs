@@ -60,7 +60,7 @@ Figure 3: The LOH after a generation 2 GC
 
 ## When is a large object collected?
 
-In general, a GC occurs when one of the following following 3 conditions happens:
+In general, a GC occurs when one of the following 3 conditions happens:
 
 - Allocation exceeds the generation 0 or large object threshold.
 

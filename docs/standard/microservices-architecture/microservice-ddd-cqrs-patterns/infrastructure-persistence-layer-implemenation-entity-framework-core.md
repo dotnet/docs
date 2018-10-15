@@ -394,7 +394,7 @@ public abstract class BaseSpecification<T> : ISpecification<T>
 }
 ```
 
-The following specification loads a single basket entity given either the basket’s ID or the ID of the buyer to whom the basket belongs. It will [eager load](https://docs.microsoft.com/en-us/ef/core/querying/related-data) the basket’s Items collection.
+The following specification loads a single basket entity given either the basket’s ID or the ID of the buyer to whom the basket belongs. It will [eager load](https://docs.microsoft.com/ef/core/querying/related-data) the basket’s Items collection.
 
 ```csharp
 // SAMPLE QUERY SPECIFICATION IMPLEMENTATION

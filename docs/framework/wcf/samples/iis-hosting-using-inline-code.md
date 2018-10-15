@@ -23,7 +23,7 @@ This sample demonstrates how to implement a service hosted by Internet Informati
   
  The sample demonstrates a typical service that implements a contract that defines a request-reply communication pattern. The service is hosted in IIS and the service code is entirely contained in the Service.svc file. The service is host-activated and compiled on-demand by the first message sent to the service. There is no pre-compilation necessary. The service implements an `ICalculator` contract as defined in the following code:  
   
-```  
+```csharp
 // Define a service contract.  
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
     public interface ICalculator  
@@ -41,9 +41,10 @@ This sample demonstrates how to implement a service hosted by Internet Informati
   
  The service implementation calculates and returns the appropriate result.  
   
-```  
+```svc
 <%@ServiceHost language=c# Debug="true" Service="Microsoft.ServiceModel.Samples.CalculatorService" %>   
-…  
+```
+```csharp
 // Service class that implements the service contract.  
 public class CalculatorService : ICalculator  
 {  
@@ -68,7 +69,7 @@ public class CalculatorService : ICalculator
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  

@@ -8,7 +8,7 @@ This sample demonstrates the necessity and implications of using ConcurrencyMode
   
  The contract defined is a duplex contract with the `Ping` method being implemented by the service and the callback method `Pong` being implemented by the client. A client invokes the server's `Ping` method with a tick count thereby initiating the call. The service checks whether the tick count is not equal to 0 and then invokes the callbacks `Pong` method while decrementing the tick count. This is done by the following code in the sample.  
   
-```  
+```csharp
 public void Ping(int ticks)  
 {  
      Console.WriteLine("Ping: Ticks = " + ticks);  
@@ -22,7 +22,7 @@ public void Ping(int ticks)
   
  The callback's `Pong` implementation has the same logic as the `Ping` implementation. That is, it checks whether the tick count is not zero and then invokes the `Ping` method on the callback channel (in this case, it is the channel that was used to send the original `Ping` message) with the tick count decremented by 1. The moment the tick count reaches 0, the method returns thereby unwrapping all the replies back to the first call made by the client that initiated the call. This is shown in the callback implementation.  
   
-```  
+```csharp
 public void Pong(int ticks)  
 {  
     Console.WriteLine("Pong: Ticks = " + ticks);  
@@ -49,7 +49,7 @@ public void Pong(int ticks)
 ## Demonstrates  
  To run the sample, build the client and server projects. Then open two command windows and change the directories to the \<sample>\CS\Service\bin\debug and \<sample>\CS\Client\bin\debug directories. Then start the service by typing `service.exe` and then invoke the Client.exe with the initial value of ticks passed as an input argument. A sample output for 10 ticks is shown.  
   
-```  
+```console  
 Prompt>Service.exe  
 ServiceHost Started. Press Enter to terminate service.  
 Ping: Ticks = 10  

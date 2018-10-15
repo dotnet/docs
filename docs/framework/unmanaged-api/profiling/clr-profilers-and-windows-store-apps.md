@@ -174,7 +174,7 @@ There are a couple of items you'll need to get right:
 
 **Launching the Windows Store app**
 
-The moment to launch the Windows Store app has finally arrived. If you’ve already already tried doing this yourself, you may have noticed that [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) is not how you create a Windows Store app process. Instead, you’ll need to use the [IApplicationActivationManager::ActivateApplication](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iapplicationactivationmanager-activateapplication) method. To do that, you’ll need to get the App User Model ID of the Windows Store app that you’re launching. And that means you’ll need to do a little digging through the manifest.
+The moment to launch the Windows Store app has finally arrived. If you’ve already tried doing this yourself, you may have noticed that [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) is not how you create a Windows Store app process. Instead, you’ll need to use the [IApplicationActivationManager::ActivateApplication](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iapplicationactivationmanager-activateapplication) method. To do that, you’ll need to get the App User Model ID of the Windows Store app that you’re launching. And that means you’ll need to do a little digging through the manifest.
 
 While iterating over your packages (see "Choosing a Windows Store App to Profile" in the [Startup load](#startup-load) section earlier), you’ll want to grab the set of applications contained in the current package’s manifest:
 

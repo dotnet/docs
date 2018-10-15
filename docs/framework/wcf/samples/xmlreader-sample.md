@@ -13,7 +13,7 @@ The XmlReader sample demonstrates the processing of a message body using an <xre
   
  The calculator interface includes a service operation named `Sum` that accepts a <xref:System.ServiceModel.Channels.Message> parameter, as shown in the following sample code.  
   
-```  
+```csharp
 public interface ICalculator  
 {  
     [OperationContract]  
@@ -31,9 +31,10 @@ public interface ICalculator
   
  The client accesses `Sum` by first creating an array of integer values, then creating a message from the array, and then calling the `Sum` method using the created message, as shown in the following sample code.  
   
-```  
+```csharp
 CalculatorClient client = new CalculatorClient();  
-...  
+//...  
+
 // Call the Sum service operation.  
 int[] values = { 1, 2, 3, 4, 5 };  
 using (new OperationContextScope(client.InnerChannel))  
@@ -48,7 +49,7 @@ using (new OperationContextScope(client.InnerChannel))
   
  In the service, the implementation of the service operation `Sum` accesses the message body using an <xref:System.Xml.XmlReader> object to iterate through the values to sum. The <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> method is called to access the message body, as shown in the following sample code.  
   
-```  
+```csharp  
 public int Sum(Message message)  
 {  
     int sum = 0;  
@@ -75,7 +76,7 @@ public int Sum(Message message)
   
  When you run the sample, the requests and responses of the operation are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  

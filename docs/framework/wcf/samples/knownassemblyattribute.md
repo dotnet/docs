@@ -9,7 +9,7 @@ This sample demonstrates how the serialization and deserialization processes can
 ## Sample Details  
  This sample is composed of four projects. One of them corresponds to the service, to be hosted by IIS, which defines the following service contract.  
   
-```  
+```csharp
 // Definition of a service contract.  
 [ServiceContract(Namespace = "http://Microsoft.Samples.KAA")]  
 [KnownAssembly("Types")]  
@@ -34,7 +34,7 @@ public interface IDataContractCalculator
   
  The service contract is implemented as shown in the following example.  
   
-```  
+```csharp
 // Service class that implements the service contract.  
  public class DataContractCalculatorService : IDataContractCalculator  
  {  
@@ -80,7 +80,7 @@ public interface IDataContractCalculator
   
  Another project corresponds to the client, which communicates with the server and invokes the methods that it exposes. The definition of the client is shown in the following example.  
   
-```  
+```csharp  
  // Client implementation code.  
  class Client  
  {  
@@ -187,7 +187,7 @@ public interface IDataContractCalculator
   
  The `DataContractResolver` defined for this sample is shown in the following example.  
   
-```  
+```csharp
 public class MyDataContractResolver : DataContractResolver  
     {  
        Dictionary<string, XmlDictionaryString> dictionary = new Dictionary<string, XmlDictionaryString>();  
@@ -271,7 +271,7 @@ public class MyDataContractResolver : DataContractResolver
   
  The library of types used in this sample is shown in the following example.  
   
-```  
+```csharp 
  [DataContract]  
  public class ComplexNumber  
  {  
@@ -318,7 +318,7 @@ public class ComplexNumberWithMagnitude : ComplexNumber
   
  When the sample is built and executed, this is the expected output obtained in the client:  
   
-```  
+```console  
 Add(1 + 2i, 3 + 4i) = 4 + 6i  
 Magnitude: 7.21110255092798  
   

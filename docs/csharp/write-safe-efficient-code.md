@@ -9,25 +9,20 @@ ms.custom: mvc
 
 New features in C# enable you to write verifiable safe code with better performance metrics. If you carefully apply these new techniques, far fewer scenarios require using unsafe code. The new features make it easier to use references to value types as method arguments and method returns. When done safely, these techniques minimize copying value types. By using value types, you can minimize the number of allocations and garbage collection passes.
 
-Much of the sample code in this article demonstrates features added in C# 7.2. In order to
+Much of the sample code in this article uses features added in C# 7.2. In order to
 use those features, you must configure your project to use C# 7.2 or later. For more information on setting the language version see [configure the language version](language-reference/configure-language-version.md).
 
-This article focuses on the following techniques:
+This article focuses on techniques for efficient resource management. One advantage to using value types is that they often avoid heap allocations. The disadvantage is that they are copied by value. This tradeoff makes it harder to optimize algorithms that operate on large amounts of data. New language features in C# 7.2 provide mechanisms that enable safe efficient code using references to value types. Use these features wisely to minimize both allocations and copy operations. This article explores those new features.
+
+This article focuses on the following resource management techniques:
 
 - Declare a [`readonly struct`](language-reference/keywords/readonly.md#readonly-struct-example) to express that a type is **immutable** and enables the compiler to save copies when using [`in`](language-reference/keywords/in-parameter-modifier.md) parameters.
 - Use a [`ref readonly`](language-reference/keywords/ref.md#reference-return-values) return when the return value is a `struct` larger than <xref:System.IntPtr.Size?displayProperty=nameWithType> and the storage lifetime is greater than the method returning the value.
 - When the size of a `readonly struct` is bigger than <xref:System.IntPtr.Size?displayProperty=nameWithType> you should pass it as an `in` parameter for performance reasons.
 - You should never pass a `struct` as an `in` parameter unless it's declared with the `readonly` modifier because it may negatively affect performance and could lead to an obscure behavior.
-- Use a [`ref struct`](language-reference/keywords/ref.md#ref-struct-types) such as <xref:System.Span%601> or <xref:System.ReadonlySpan%601> to work with memory as a sequence of bytes.
+- Use a [`ref struct`](language-reference/keywords/ref.md#ref-struct-types), or a `readonly ref struct` such as <xref:System.Span%601> or <xref:System.ReadonlySpan%601> to work with memory as a sequence of bytes.
 
-An advantage to using value types is that they often avoid heap allocations.
-The disadvantage is that they are copied by value. This tradeoff
-makes it harder to optimize algorithms that operate on large amounts of
-data. New language features in C# 7.2 provide mechanisms that enable pass-by-reference
-semantics with value types. Use these features wisely to minimize both allocations
-and copy operations. This article explores those new features.
-
-These techniques force you to balance two competing goals with regard to **references** and **values**. Variables that are [reference types](programming-guide/types/index.md#reference-types) hold a reference to the location in memory. Variables that are [value types](programming-guide/types/index.md#value-types) directly contain their value. These difference highlight the key differences that are important for managing memory resources. **Value types** are typically copied when passed to a method or returned from a method. The cost of the copy is related to the size of the type. **Reference types** are allocated on the managed heap. Each new object requires a new allocation, and subsequently must be reclaimed. Both these operations take time.
+These techniques force you to balance two competing goals with regard to **references** and **values**. Variables that are [reference types](programming-guide/types/index.md#reference-types) hold a reference to the location in memory. Variables that are [value types](programming-guide/types/index.md#value-types) directly contain their value. These difference highlight the key differences that are important for managing memory resources. **Value types** are typically copied when passed to a method or returned from a method. This includes copying the value of `this` when calling members of a value type. The cost of the copy is related to the size of the type. **Reference types** are allocated on the managed heap. Each new object requires a new allocation, and subsequently must be reclaimed. Both these operations take time. The reference is copied when a reference type is passes as an argument to a method, or returned from a method.
 
 This article uses the following example concept of the 3D point structure to explain these recommendations:
 

@@ -3,7 +3,7 @@ title: Strong naming and .NET libraries
 description: Best practice recommendations for strong naming .NET libraries.
 author: jamesnk
 ms.author: mairaw
-ms.date: 10/02/2018
+ms.date: 10/16/2018
 ---
 # Strong naming
 
@@ -39,9 +39,7 @@ The benefits of strong naming are:
 You should strong name your open-source .NET libraries. Strong naming an assembly ensures the most people can use it, and strict assembly loading only affects the .NET Framework.
 
 > [!NOTE]
-> This guidance is specific to publicly distributed .NET libraries, such as .NET libraries published on NuGet.org.
->
-> Strong naming is not required by most .NET applications and should not be done by default.
+> This guidance is specific to publicly distributed .NET libraries, such as .NET libraries published on NuGet.org. Strong naming is not required by most .NET applications and should not be done by default.
 
 **✔️ CONSIDER** strong naming your library's assemblies.
 
@@ -55,6 +53,10 @@ You should strong name your open-source .NET libraries. Strong naming an assembl
 **✔️ CONSIDER** incrementing the assembly version on only major version changes to help users reduce binding redirects, and how often they're updated.
 
 > Read more about [versioning and the assembly version](./versioning.md#assembly-version).
+
+**❌ DO NOT** add, remove, or change the strong naming key.
+
+> Modifying an assembly's strong naming key changes the assembly's identity and breaks compiled code that uses it. For more information, see [binary breaking changes](./breaking-changes.md#binary-breaking-change).
 
 **❌ DO NOT** publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
 

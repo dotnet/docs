@@ -27,7 +27,14 @@
   </Attributes>
   <Docs>
     <summary>Generates a column schema.</summary>
-    <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+A data provider can use the <xref:System.Data.Common.IDbColumnSchemaGenerator> interface to populate <xref:System.Data.Common.DbColumn> schema metadata without using a <xref:System.Data.DataTable> by providing a custom implementation in the <xref:System.Data.Common.IDbColumnSchemaGenerator.GetColumnSchema> method.
+  
+ ]]></format>
+        </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetColumnSchema">
@@ -59,7 +66,14 @@
       <Docs>
         <summary>Gets the column schema (<see cref="T:System.Data.Common.DbColumn" /> collection).</summary>
         <returns>The column schema (<see cref="T:System.Data.Common.DbColumn" /> collection).</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+By providing a custom implementation for the <xref:System.Data.Common.IDbColumnSchemaGenerator.GetColumnSchema> method, a data provider can use the <xref:System.Data.Common.IDbColumnSchemaGenerator> interface to populate <xref:System.Data.Common.DbColumn> schema metadata without using a <xref:System.Data.DataTable>.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

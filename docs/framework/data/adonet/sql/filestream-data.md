@@ -161,17 +161,15 @@ namespace FileStreamTest
 }
 ```  
   
- For another sample, see [How to store and fetch binary data into a file stream column](http://www.codeproject.com/Articles/32216/How-to-store-and-fetch-binary-data-into-a-file-str).  
+ For another sample, see [How to store and fetch binary data into a file stream column](https://www.codeproject.com/Articles/32216/How-to-store-and-fetch-binary-data-into-a-file-str).  
   
 ## Resources in SQL Server Books Online  
  The complete documentation for FILESTREAM is located in the following sections in SQL Server Books Online.  
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[Designing and Implementing FILESTREAM Storage](http://msdn2.microsoft.com/library/bb895234\(SQL.105\).aspx)|Provides links to FILESTREAM documentation and related topics.|  
-|[FILESTREAM Overview](http://msdn2.microsoft.com/library/bb933993\(SQL.105\).aspx)|Describes when to use FILESTREAM storage and how it integrates the SQL Server Database Engine with an NTFS file system.|  
-|[Getting Started with FILESTREAM Storage](https://msdn.microsoft.com/library/bb933995\(SQL.105\).aspx)|Describes how to enable FILESTREAM on an instance of SQL Server, how to create a database and a table to stored FILESTREAM data, and how to manipulate rows containing FILESTREAM data.|  
-|[Using FILESTREAM Storage in Client Applications](https://msdn.microsoft.com/library/bb933877\(SQL.105\).aspx)|Describes the Win32 API functions for working with FILESTREAM data.|  
+|[FILESTREAM (SQL Server)](/sql/relational-databases/blob/filestream-sql-server)|Describes when to use FILESTREAM storage and how it integrates the SQL Server Database Engine with an NTFS file system.|  
+|[Create Client Applications for FILESTREAM Data](/sql/relational-databases/blob/create-client-applications-for-filestream-data)|Describes the Win32 API functions for working with FILESTREAM data.|  
 |[FILESTREAM and Other SQL Server Features](/sql/relational-databases/blob/filestream-compatibility-with-other-sql-server-features)|Provides considerations, guidelines and limitations for using FILESTREAM data with other features of SQL Server.|  
   
 ## See Also  
@@ -179,4 +177,4 @@ namespace FileStreamTest
  [Retrieving and Modifying Data in ADO.NET](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
  [Code Access Security and ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md)  
  [SQL Server Binary and Large-Value Data](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Overview](../../../../../docs/framework/data/adonet/ado-net-overview.md)

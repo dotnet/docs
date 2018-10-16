@@ -10,13 +10,13 @@ ms.date: 03/23/2017
 This document provides the steps and workflow to create a .NET Core solution for macOS. Learn how to create projects, unit tests, use the debugging tools, and incorporate third-party libraries via [NuGet](https://www.nuget.org/).
 
 > [!NOTE]
-> This article uses [Visual Studio Code](http://code.visualstudio.com) on macOS.
+> This article uses [Visual Studio Code](https://code.visualstudio.com) on macOS.
 
 ## Prerequisites
 
 Install the [.NET Core SDK](https://www.microsoft.com/net/core). The .NET Core SDK includes the latest release of the .NET Core framework and runtime.
 
-Install [Visual Studio Code](http://code.visualstudio.com). During the course of this article, you also install Visual Studio Code extensions that improve the .NET Core development experience.
+Install [Visual Studio Code](https://code.visualstudio.com). During the course of this article, you also install Visual Studio Code extensions that improve the .NET Core development experience.
 
 Install the Visual Studio Code C# extension by opening Visual Studio Code and pressing <kbd>F1</kbd> to open the Visual Studio Code palette. Type **ext install** to see the list of extensions. Select the C# extension. Restart Visual Studio Code to activate the extension. For more information, see the [Visual Studio Code C# Extension documentation](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
 

@@ -10,7 +10,7 @@ ms.date: 06/12/2017
 Visual Studio for Mac provides a full-featured Integrated Development Environment (IDE) for developing .NET Core applications. This topic walks you through building a simple console application using Visual Studio for Mac and .NET Core.
 
 > [!NOTE]
-> Your feedback is highly valued. There are a two ways you can provide feedback to the development team on Visual Studio for Mac:
+> Your feedback is highly valued. There are two ways you can provide feedback to the development team on Visual Studio for Mac:
 > * In Visual Studio for Mac, select **Help** > **Report a Problem** from the menu or **Report a Problem** from the Welcome screen, which will open a window for filing a bug report. You can track your feedback in the [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html) portal.
 > * To make a suggestion, select **Help** > **Provide a Suggestion** from the menu or **Provide a Suggestion** from the Welcome screen, which will take you to the [Visual Studio for Mac UserVoice webpage](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac).
 

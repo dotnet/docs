@@ -24,7 +24,7 @@ The <xref:System.Net.Sockets.TcpClient> class requests data from an Internet res
   
  The TCP protocol establishes a connection with a remote endpoint and then uses that connection to send and receive data packets. TCP is responsible for ensuring that data packets are sent to the endpoint and assembled in the correct order when they arrive.  
   
- To establish a TCP connection, you must know the address of the network device hosting the service you need and you must know the TCP port that the service uses to communicate. The Internet Assigned Numbers Authority (Iana) defines port numbers for common services (see www.iana.org/assignments/port-numbers). Services not on the Iana list can have port numbers in the range 1,024 to 65,535.  
+ To establish a TCP connection, you must know the address of the network device hosting the service you need and you must know the TCP port that the service uses to communicate. The Internet Assigned Numbers Authority (Iana) defines port numbers for common services (see [Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)). Services not on the Iana list can have port numbers in the range 1,024 to 65,535.  
   
  The following example demonstrates setting up a **TcpClient** to connect to a time server on TCP port 13.  
   

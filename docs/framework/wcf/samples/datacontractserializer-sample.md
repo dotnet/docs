@@ -13,7 +13,7 @@ The DataContractSerializer sample demonstrates the <xref:System.Runtime.Serializ
   
  The data contract for `Record` is shown in the following sample code.  
   
-```  
+```csharp  
 [DataContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 internal class Record  
 {  
@@ -68,14 +68,14 @@ internal class Record
   
  The sample code creates a `Record` object named `record1` then displays the object.  
   
-```  
+```csharp
 Record record1 = new Record(1, 2, "+", 3);  
 Console.WriteLine("Original record: {0}", record1.ToString());  
 ```  
   
  The sample then uses the <xref:System.Runtime.Serialization.DataContractSerializer> to serialize `record1` into a memory stream.  
   
-```  
+```csharp  
 MemoryStream stream1 = new MemoryStream();  
   
 //Serialize the Record object to a memory stream using DataContractSerializer.  
@@ -85,7 +85,7 @@ serializer.WriteObject(stream1, record1);
   
  Next, the sample uses the <xref:System.Runtime.Serialization.DataContractSerializer> to deserialize the memory stream back into a new `Record` object and displays it.  
   
-```  
+```csharp  
 stream1.Position = 0;  
   
 //Deserialize the Record object back into a new record object.  
@@ -96,7 +96,7 @@ Console.WriteLine("Deserialized record: {0}", record2.ToString());
   
  By default, the `DataContractSerializer` encodes objects into a stream using a textual representation of XML. However, you can influence the encoding of the XML by passing in a different writer. The sample creates a binary writer by calling <xref:System.Xml.XmlDictionaryWriter.CreateBinaryWriter%2A>. It then passes the writer and the record object to the serializer when it calls <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A>. Finally, the sample flushes the writer and reports on the length of the streams.  
   
-```  
+```csharp  
 MemoryStream stream2 = new MemoryStream();  
   
 XmlDictionaryWriter binaryDictionaryWriter = XmlDictionaryWriter.CreateBinaryWriter(stream2);  
@@ -110,7 +110,7 @@ Console.WriteLine("Binary Stream is {0} bytes long", stream2.Length);
   
  When you run the sample, the original record and the deserialized record are displayed, followed by the comparison between the length of the text encoding and the binary encoding. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Original record: Record: 1 + 2 = 3  
 Deserialized record: Record: 1 + 2 = 3  
 Text Stream is 233 bytes long  

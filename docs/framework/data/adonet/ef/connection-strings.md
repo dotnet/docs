@@ -1,6 +1,6 @@
 ---
 title: "Connection Strings"
-ms.date: "10/08/2018"
+ms.date: "10/15/2018"
 ms.assetid: 78d516bc-c99f-4865-8ff1-d856bc1a01c0
 ---
 # Connection Strings
@@ -12,30 +12,7 @@ A connection string contains initialization information that is passed as a para
 
 ## Connection String Syntax
 
-The format of a connection string is a semicolon-delimited list of key/value parameter pairs:
-  
-	keyword1=value; keyword2=value;
-  
-Keywords are not case-sensitive. Values, however, may be case-sensitive, depending on the data source. Both keywords and values may contain [whitespace characters](https://en.wikipedia.org/wiki/Whitespace_character#Unicode), although leading and trailing whitespace is ignored in keywords and unquoted values.
-
-If a value contains the semicolon, [Unicode control characters](https://en.wikipedia.org/wiki/Unicode_control_characters), leading or trailing whitespace it must be enclosed in single or double quotation marks, e.g.:
-
-	Keyword=" whitespace  ";
-	Keyword='special;character';
-
-The enclosing character may not occur within the value it encloses. Therefore, a value containing single quotation marks can be enclosed only in double quotation marks and vice versa:
-
-	Keyword='double"quotation;mark';
-	Keyword="single'quotation;mark";
-
-The quotation marks themselves, as well as the equals sign, do not require escaping, so the following connection strings are valid:
-
-	Keyword=no "escaping" 'required';
-	Keyword=a=b=c
-
-Since each value is read till the next semicolon or the end of string, the value in the latter example is `a=b=c`, and the final semicolon is optional.
-
-Valid connection string syntax depends on the provider, and has evolved over the years from earlier APIs like ODBC. The .NET Framework Data Provider for SQL Server (SqlClient) incorporates many elements from older syntax and is generally more flexible with common connection string syntax. There are frequently equally valid synonyms for connection string syntax elements, but some syntax and spelling errors can cause problems. For example, "`Integrated Security=true`" is valid, whereas "`IntegratedSecurity=true`" causes an error. In addition, connection strings constructed at run time from unvalidated user input can lead to string injection attacks, jeopardizing security at the data source.
+To learn about the general syntax for connection strings, see [Connection string syntax | Connection Strings in ADO.NET](../connection-strings.md#connection-string-syntax).
 
 ## Connection String Parameters  
 
@@ -44,7 +21,7 @@ The following table lists the valid names for keyword values in the <xref:System
 |Keyword|Description|  
 |-------------|-----------------|  
 |`Provider`|Required if the `Name` keyword is not specified. The provider name, which is used to retrieve the <xref:System.Data.Common.DbProviderFactory> object for the underlying provider. This value is constant.<br /><br /> When the `Name` keyword is not included in an entity connection string, a non-empty value for the `Provider` keyword is required. This keyword is mutually exclusive with the `Name` keyword.|  
-|`Provider Connection String`|Optional. Specifies the provider-specific connection string that is passed to the underlying data source. This connection string is expressed by using valid keyword/value pairs for the data provider. An invalid `Provider Connection String` will cause a run-time error when it is evaluated by the data source.<br /><br /> This keyword is mutually exclusive with the `Name` keyword.<br /><br /> The value of the `Provider Connection String` must be surrounded by quotes. The following is an example:<br /><br /> `Provider Connection String ="Server=serverName; User ID = userID";`<br /><br /> The following example is not going to work:<br /><br /> `Provider Connection String =Server=serverName; User ID = userID`|  
+|`Provider Connection String`|Optional. Specifies the provider-specific connection string that is passed to the underlying data source. This connection string contains valid keyword/value pairs for the data provider. An invalid `Provider Connection String` will cause a run-time error when it is evaluated by the data source.<br /><br /> This keyword is mutually exclusive with the `Name` keyword.<br /><br /> Make sure to escape the value according to the general syntax of [ADO.NET connection strings](../../../../../docs/framework/data/adonet/connection-strings.md). Consider for example the following connection string: `Server=serverName; User ID = userID`. It must be escaped because it contains a semicolon. Since it does not contain double quotation marks, they may be used for escaping:<br /><br /> `Provider Connection String ="Server=serverName; User ID = userID";`|  
 |`Metadata`|Required if the `Name` keyword is not specified. A pipe-delimited list of directories, files, and resource locations in which to look for metadata and mapping information. The following is an example:<br /><br /> `Metadata=`<br /><br /> `c:\model &#124; c:\model\sql\mapping.msl;`<br /><br /> Blank spaces on each side of the pipe separator are ignored.<br /><br /> This keyword is mutually exclusive with the `Name` keyword.|  
 |`Name`|The application can optionally specify the connection name in an application configuration file that provides the required keyword/value connection string values. In this case, you cannot supply them directly in the connection string. The `Name` keyword is not allowed in a configuration file.<br /><br /> When the `Name` keyword is not included in the connection string, a non-empty values for Provider keyword is required.<br /><br /> This keyword is mutually exclusive with all the other connection string keywords.|  
   

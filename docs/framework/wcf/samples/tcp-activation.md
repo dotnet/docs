@@ -22,7 +22,7 @@ This sample demonstrates hosting a service that uses Windows Process Activation 
   
  The service implements a contract that defines a request-reply communication pattern. The contract is defined by the `ICalculator` interface, which exposes math operations (Add, Subtract, Multiply, and Divide), as shown in the following sample code:  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface ICalculator  
 {  
@@ -39,7 +39,7 @@ public interface ICalculator
   
  The service implementation calculates and returns the appropriate result:  
   
-```  
+```csharp
 // Service class that implements the service contract.  
 public class CalculatorService : ICalculator  
 {  
@@ -123,7 +123,7 @@ public class CalculatorService : ICalculator
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  
@@ -154,7 +154,7 @@ Press <ENTER> to terminate client.
   
     1.  To support net.tcp activation, the default Web site must first be bound to a net.tcp port. This can be done using Appcmd.exe, which is installed with the Internet Information Services 7.0 (IIS) management toolset. From an administrator-level command prompt, run the following command:  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site" -+bindings.[protocol='net.tcp',bindingInformation='808:*']  
         ```  
   
@@ -163,7 +163,7 @@ Press <ENTER> to terminate client.
   
     2.  Although all applications within a site share a common net.tcp binding, each application can enable net.tcp support individually. To enable net.tcp for the /servicemodelsamples application, run the following command from an administrator-level command prompt:  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set app   
         "Default Web Site/servicemodelsamples" /enabledProtocols:http,net.tcp  
         ```  
@@ -181,7 +181,7 @@ Press <ENTER> to terminate client.
   
     1.  Remove net.tcp from the list of enabled protocols by running the following command from an administrator-level command prompt:  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set app   
         "Default Web Site/servicemodelsamples" /enabledProtocols:http  
         ```  
@@ -191,7 +191,7 @@ Press <ENTER> to terminate client.
   
     2.  Remove the net.tcp site binding by running the following command from an administrator-level command prompt:  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site"   
         --bindings.[protocol='net.tcp',bindingInformation='808:*']  
         ```  

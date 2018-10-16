@@ -8,10 +8,10 @@ ms.date: 10/15/2018
 
 Functional programming is a style of programming that emphasizes the use of functions and immutable data. Typed functional programming is when functional programming is combined with static types, such as with F#. In general, the following concepts are emphasized in functional programming:
 
-* Functions over objects
-* Expressions over statements
+* Functions as the primary constructs you use
+* Expressions instead of statements
 * Immutable values over variables
-* Declarative over imperative
+* Declarative programming over imperative programming
 
 Throughout this series, you'll explore concepts and patterns in functional programming using F#. Along the way, you'll learn some F# too.
 
@@ -88,7 +88,40 @@ let addOneIfOdd input =
     result
 ```
 
-The `if` expression produces a value called `result`. The key thing to remember about expressions is that they produce values in functional programming.
+The `if` expression produces a value called `result`. The key thing to remember about expressions is that they produce a value. There is a special value, `unit`, that is used when there is nothing to return. For example, consider this simple function:
+
+```fsharp
+let printString (str: string) =
+    printfn "String is: %s" s
+```
+
+The signature looks like this:
+
+```fsharp
+val printString: string -> unit
+```
+
+The `unit` type indicates that there is no actual value being returned, and allows for you to specify something that conceptually does nothing.
+
+This is in sharp contrast to imperative programming, where the equivalent `if` construct is a statement, and producing values is often done with mutating variables. For example, in C#, the code might be written like this:
+
+```csharp
+bool IsOdd(int x) => x % 2 != 0;
+
+int AddOneIfOdd(int input)
+{
+    var result = input;
+
+    if (IsOdd(input))
+    {
+        result = input + 1;
+    }
+
+    return result;
+}
+```
+
+In functional programming, it is rare to mutate values with statements. Although some functional languages support statements and mutation, it is not common.
 
 ### Pure functions
 
@@ -97,7 +130,9 @@ As previously mentioned, pure functions are functions that:
 * Always evaluate to the same value for the same input
 * Have no side effects
 
-When writing a pure function, it must depend only on its arguments and not perform any action that results in a side effect.
+It is helpful to think of mathematical functions in this context. In mathematics, functions depend only on their arguments and do not have any side effects. In the mathematical expression `y = f(x)`, the value of `y` depends only on the value of `x`. Pure functions are the same way.
+
+When writing a pure function, the function must depend only on its arguments and not perform any action that results in a side effect.
 
 Here is an example of a non-pure function because it depends on a global value:
 
@@ -129,7 +164,11 @@ Although this function is not inherently _better_ that the previous version with
 
 ### Referential Transparency
 
-Referential transparency is a property of expressions and functions. For an expression to be referentially transparent, it must be able to be replaced with its resultant value without changing the program's behavior. All pure functions are referentially transparent. Consider calling the previously defined `addOneIfOdd` function twice:
+Referential transparency is a property of expressions and functions. For an expression to be referentially transparent, it must be able to be replaced with its resulting value without changing the program's behavior. All pure functions are referentially transparent.
+
+As with pure functions, it can be helpful to think of referential transparency from a mathematical perspective. In the mathematical expression `y = f(x)`, `f(x)` can be replaced by the result of the function call it and it will still be equal to `y`. This is equally true for referential transparency in functional programming.
+
+Consider calling the previously defined `addOneIfOdd` function twice:
 
 ```fsharp
 // Checks if 'x' is odd by using the mod operator
@@ -203,6 +242,22 @@ When programming in F#, it is often referential transparency that is the goal, r
 Finally, one of the most fundamental concepts of typed functional programming is immutability. In F#, all values are immutable by default. That means they cannot be mutated in-place unless you explicitly mark them as mutable.
 
 In practice, working with immutable values means that you change your approach to programming from, "I need to change something", to "I need to produce a new value". If there is one thing to reduce functional programming down to, it is that your code is all about calling functions to produce values to work with.
+
+For example, adding 1 to a value means producing a new value, not mutating the existing one:
+
+```fsharp
+let value = 1
+let secondValue = value + 1
+```
+
+In F#, the following code does **not** mutate the `value` function; instead, it performs an equality check:
+
+```fsharp
+let value = 1
+value = value + 1 // Produces a 'bool' value!
+```
+
+Some functional programming languages do not support mutation at all. In F#, it is supported, but it is not the default behavior for values.
 
 This concept extends even further to data structures. In functional programming, immutable data structures such as sets (and many more) have a different implementation than you might initially expect. Conceptually, something like adding an item to a set does not change the set, it produces a _new_ set with the added value. Under the covers, this is often accomplished by a different data structure that allows for efficiently tracking a value so that the appropriate representation of the data can be given as a result.
 

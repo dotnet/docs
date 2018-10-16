@@ -9,7 +9,7 @@ PeerTransportSecuritySettings
   
 ## Syntax  
   
-```  
+```csharp
 class PeerTransportSecuritySettings  
 {  
   string CredentialType;  

@@ -9,7 +9,7 @@ SslStreamSecurityBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class SslStreamSecurityBindingElement : BindingElement  
 {  
   boolean RequireClientCertificate;  

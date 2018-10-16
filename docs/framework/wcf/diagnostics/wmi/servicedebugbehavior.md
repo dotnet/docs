@@ -8,7 +8,7 @@ ServiceDebugBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class ServiceDebugBehavior : Behavior  
 {  
   boolean HttpHelpPageEnabled;  

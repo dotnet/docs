@@ -8,7 +8,7 @@ TransactionFlowBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class TransactionFlowBindingElement : BindingElement  
 {  
   string IssuedTokens;  

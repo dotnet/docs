@@ -53,6 +53,7 @@ A NuGet package supports many [metadata properties](/nuget/reference/nuspec). Th
 | `PackageIconUrl`                   | `iconUrl`                  | A URL for an image to use as the icon for the package. URL should be HTTPS and the image should be 64x64 and have a transparent background.             |
 | `PackageProjectUrl`                | `projectUrl`               | A URL for the project homepage or source repository.             |
 | `PackageLicenseUrl`                | `licenseUrl`               | A URL to the project license. Can be the URL to the `LICENSE` file in source control.             |
+| `RepositoryUrl` and `RepositoryType` | `repository url="" type=""` | A URL that can be directly used by source control software of the specified type. It should not be an HTML page. |
 
 **✔️ CONSIDER** choosing a NuGet package name with a prefix that meets NuGet's prefix reservation [criteria](/nuget/reference/id-prefix-reservation).
 

@@ -49,6 +49,8 @@
 3.  Store the value in the instance variable.  
   
  If you do not use <xref:System.Threading.Interlocked.Increment%2A> and <xref:System.Threading.Interlocked.Decrement%2A>, a thread can be preempted after executing the first two steps. Another thread can then execute all three steps. When the first thread resumes execution, it overwrites the value in the instance variable, and the effect of the increment or decrement performed by the second thread is lost.  
+
+ The <xref:System.Threading.Interlocked.Add%2A> method atomically adds an integer value to an integer variable and returns the new value of the variable.  
   
  The <xref:System.Threading.Interlocked.Exchange%2A> method atomically exchanges the values of the specified variables. The <xref:System.Threading.Interlocked.CompareExchange%2A> method combines two operations: comparing two values and storing a third value in one of the variables, based on the outcome of the comparison. The compare and exchange operations are performed as an atomic operation.  
   

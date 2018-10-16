@@ -15,7 +15,8 @@ The `ref` keyword indicates a value that is passed by reference. It is used in f
 - In a method signature and in a method call, to pass an argument to a method by reference. See [Passing an argument by reference](#passing-an-argument-by-reference) for more information.
 - In a method signature, to return a value to the caller by reference. See [Reference return values](#reference-return-values) for more information.
 - In a member body, to indicate that a reference return value is stored locally as a reference that the caller intends to modify or, in general, a local variable accesses another value by reference. See [Ref locals](#ref-locals) for more information.
-- In a `struct` declaration to declare a `ref struct` or a `ref readonly struct`. For more information, see [Write safe efficient code](../../write-safe-efficient-code.md).
+- In a `struct` declaration to declare a `ref struct` or a `ref readonly struct`. See [ref struct types](#ref-struct-types) for more information.
+
 
 ## Passing an argument by reference
 
@@ -83,6 +84,8 @@ return ref DecimalArray[0];
 
 In order for the caller to modify the object's state, the reference return value must be stored to a variable that is explicitly defined as a [ref local](#ref-locals).
 
+The called method may also declare the return value as `ref readonly` to return the value by reference, and enforce that the calling code cannot modify the returned value. The calling method can avoid copying the returned valued by storing the value in a variable that is defined as a [ref readonly local](#ref-readonly-local).
+
 For an example, see [A ref returns and ref locals example](#a-ref-returns-and-ref-locals-example)
 
 ## Ref locals
@@ -105,6 +108,10 @@ ref VeryLargeStruct reflocal = ref veryLargeStruct;
 
 Note that in both examples the `ref` keyword must be used in both places, or the compiler generates error CS8172, "Cannot initialize a by-reference variable with a value."
 
+## ref readonly local
+
+A ref readonly local is used to refer to values returned using `return readonly ref`. A ref readonly variable 
+
 ## A ref returns and ref locals example
 
 The following example defines a `Book` class that has two <xref:System.String> fields, `Title` and `Author`. It also defines a `BookCollection` class that includes a private array of `Book` objects. Individual book objects are returned by reference by calling its `GetBookByTitle` method.
@@ -114,6 +121,23 @@ The following example defines a `Book` class that has two <xref:System.String> f
 When the caller stores the value returned by the `GetBookByTitle` method as a ref local, changes that the caller makes to the return value are reflected in the `BookCollection` object, as the following example shows.
 
 [!code-csharp[csrefKeywordsMethodParams#6](~/samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#5)]
+
+## Ref struct types
+
+Adding the `ref` modifier to a `struct` declaration declares that instances of that type must be stack allocated. In other words, these types can never be created on the
+heap as a member of another class. The primary motivation for this feature was <xref:System.Span%601> and related structures. <xref:System.Span%601> may contain a managed pointer as one of its members, the other being the length of the span. It's implemented a bit differently because C# doesn't support pointers to managed memory outside of an unsafe context. Any write that changes the pointer and the length is not atomic. That means a <xref:System.Span%601> would be subject to out of range errors or other type safety violations were it not constrained to a single stack frame. In addition, putting a managed pointer on the GC heap typically crashes at JIT time. The language rules ensure the safe use of these types.
+
+The goal of keeping a `ref struct` type as a stack-allocated variable introduces several rules that the compiler enforces for all `ref struct` types.
+
+- You can't box a `ref struct`. You cannot assign a `ref struct` type to a variable of type `object`, `dynamic`, or any interface type.
+- You can't declare a `ref struct` as a member of a class or a normal struct.
+- You cannot declare local variables that are `ref struct` types in async methods. You can declare them in synchronous methods that return `Task`, `Task<T>` or Task-like types.
+- You cannot declare `ref struct` local variables in iterators.
+- You cannot capture `ref struct` variables in lambda expressions or local functions.
+
+These restrictions ensure you do not accidentally use a `ref struct` in a manner that could promote it to the managed heap.
+
+You can combine modifiers to Declare a struct as `readonly ref`. A `readonly ref struct` combines the benefits and restrictions of `ref struct` and `readonly struct` declarations.
 
 ## C# language specification
 

@@ -7,7 +7,7 @@ ms.date: 10/02/2018
 ---
 # NuGet
 
-NuGet is a package manager for the .NET eco-system and is the primary way developers discover and acquire .NET open-source libraries. NuGet.org, a free service provided by Microsoft for hosting NuGet packages, is the primary host for public NuGet packages but you can publish to custom NuGet services like MyGet and Azure DevOps.
+NuGet is a package manager for the .NET ecosystem and is the primary way developers discover and acquire .NET open-source libraries. [NuGet.org](https://www.nuget.org/), a free service provided by Microsoft for hosting NuGet packages, is the primary host for public NuGet packages, but you can publish to custom NuGet services like [MyGet](https://www.myget.org/) and [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/).
 
 ![NuGet](./media/nuget/nuget-logo.png "NuGet")
 

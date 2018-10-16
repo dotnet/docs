@@ -380,7 +380,7 @@
       <Docs>
         <param name="computer">A <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object.</param>
         <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object.</summary>
-        <returns>`true` if the collection contains the specified object; `false` otherwise. </returns>
+        <returns>Returns <see langword="true" /> if the collection contains the specified object; <see langword="false" /> otherwise.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
         <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
@@ -417,7 +417,7 @@
       <Docs>
         <param name="group">A <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object</param>
         <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object.</summary>
-        <returns>`true` if the collection contains the specified object; `false` otherwise.</returns>
+        <returns>Returns <see langword="true" /> if the collection contains the specified object; <see langword="false" /> otherwise.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
         <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
@@ -453,7 +453,7 @@
       <Docs>
         <param name="principal">A <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object</param>
         <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object.</summary>
-        <returns>`true` if the collection contains the specified object; `false` otherwise.</returns>
+        <returns>Returns <see langword="true" /> if the collection contains the specified object; <see langword="false" /> otherwise.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
         <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
@@ -490,7 +490,7 @@
       <Docs>
         <param name="user">A <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object.</param>
         <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object.</summary>
-        <returns>`true` if the collection contains the specified object; `false` otherwise.</returns>
+        <returns>Returns <see langword="true" /> if the collection contains the specified object; <see langword="false" /> otherwise.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
         <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
@@ -526,8 +526,8 @@
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object of the principal.</param>
         <param name="identityType">An <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> object that specifies the format of <c>identityValue</c></param>
         <param name="identityValue">A string that identifies the principal, in the format specified by <c>identityType</c></param>
-        <summary>Returns `true` if the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object matching the <paramref name="identityType" />/<paramref name="identityValue" /> pair is in the collection. </summary>
-        <returns>`true` if an object matching the <paramref name="identityType" />/<paramref name="identityValue" /> pair is in the collection; `false` otherwise. </returns>
+        <summary>Returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object matching the <paramref name="identityType" />/<paramref name="identityValue" /> pair is in the collection. </summary>
+        <returns>Returns <see langword="true" /> if an object matching the <paramref name="identityType" />/<paramref name="identityValue" /> pair is in the collection; <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -762,7 +762,7 @@
       <Docs>
         <param name="computer">A <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object.</param>
         <summary>Removes the specified <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object from the collection, and returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />, and <see langword="false" /> otherwise (in which case the method performs no operation).</summary>
-        <returns>Returns a <see langword="bool" />.</returns>
+        <returns>Returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />; <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -810,7 +810,7 @@
       <Docs>
         <param name="group">A <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object.</param>
         <summary>Removes the specified <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object from the collection, and returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />, and <see langword="false" /> otherwise (in which case the method performs no operation).</summary>
-        <returns>Returns a <see langword="bool" />.</returns>
+        <returns>Returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />; <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -857,7 +857,7 @@
       <Docs>
         <param name="principal">A <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object.</param>
         <summary>Removes the specified <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object from the collection, and returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />, and <see langword="false" /> otherwise (in which case the method performs no operation).</summary>
-        <returns>Returns a <see langword="bool" />.</returns>
+        <returns>Returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />; <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -905,7 +905,7 @@
       <Docs>
         <param name="user">A <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object.</param>
         <summary>Removes the specified <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object from the collection, and returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />, and <see langword="false" /> otherwise (in which case the method performs no operation).</summary>
-        <returns>Returns a <see langword="bool" />.</returns>
+        <returns>Returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />; <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -953,7 +953,7 @@
         <param name="identityType">An <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> that identifies the format of <c>identityValue</c>.</param>
         <param name="identityValue">A string.</param>
         <summary>Finds the <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object specified by the given <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> and <paramref name="identityType" />/<paramref name="identityValue" /> pair from the collection, and returns <see langword="true" /> if the identified <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />, and <see langword="false" /> otherwise (in which case the method performs no operation).</summary>
-        <returns>Returns a <see langword="bool" />.</returns>
+        <returns>Returns <see langword="true" /> if the identified <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />; <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

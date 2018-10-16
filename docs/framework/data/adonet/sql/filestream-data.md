@@ -168,9 +168,7 @@ namespace FileStreamTest
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[Designing and Implementing FILESTREAM Storage](/previous-versions/sql/sql-server-2008-r2/bb895234%28v=sql.105%29)|Provides links to FILESTREAM documentation and related topics.|  
-|[FILESTREAM Overview](/sql/relational-databases/blob/filestream-sql-server)|Describes when to use FILESTREAM storage and how it integrates the SQL Server Database Engine with an NTFS file system.|  
-|[Getting Started with FILESTREAM Storage](/previous-versions/sql/sql-server-2008-r2/bb933995%28v=sql.105%29)|Describes how to enable FILESTREAM on an instance of SQL Server, how to create a database and a table to stored FILESTREAM data, and how to manipulate rows containing FILESTREAM data.|  
+|[FILESTREAM (SQL Server)](/sql/relational-databases/blob/filestream-sql-server)|Describes when to use FILESTREAM storage and how it integrates the SQL Server Database Engine with an NTFS file system.|  
 |[Create Client Applications for FILESTREAM Data](/sql/relational-databases/blob/create-client-applications-for-filestream-data)|Describes the Win32 API functions for working with FILESTREAM data.|  
 |[FILESTREAM and Other SQL Server Features](/sql/relational-databases/blob/filestream-compatibility-with-other-sql-server-features)|Provides considerations, guidelines and limitations for using FILESTREAM data with other features of SQL Server.|  
   

@@ -1,6 +1,6 @@
 ---
 title: "Managed Threading Best Practices"
-ms.date: "11/30/2017"
+ms.date: "10/15/2018"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -63,31 +63,6 @@ else {
  This particular race condition is easily avoided by using methods of the <xref:System.Threading.Interlocked> class, such as <xref:System.Threading.Interlocked.Increment%2A?displayProperty=nameWithType>. To read about other techniques for synchronizing data among multiple threads, see [Synchronizing Data for Multithreading](../../../docs/standard/threading/synchronizing-data-for-multithreading.md).  
   
  Race conditions can also occur when you synchronize the activities of multiple threads. Whenever you write a line of code, you must consider what might happen if a thread were preempted before executing the line (or before any of the individual machine instructions that make up the line), and another thread overtook it.  
-  
-## Number of Processors  
- Most computers now have multiple processors (also called cores), even small devices such as tablets and phones. If you know you're developing software that will also run on single-processor computers, you should be aware that multithreading solves different problems for single-processor computers and multiprocessor computers.  
-  
-### Multiprocessor Computers  
- Multithreading provides greater throughput. Ten processors can do ten times the work of one, but only if the work is divided so that all ten can be working at once; threads provide an easy way to divide the work and exploit the extra processing power. If you use multithreading on a multiprocessor computer:  
-  
--   The number of threads that can execute concurrently is limited by the number of processors.  
-  
--   A background thread executes only when the number of foreground threads executing is smaller than the number of processors.  
-  
--   When you call the <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType> method on a thread, that thread might or might not start executing immediately, depending on the number of processors and the number of threads currently waiting to execute.  
-  
--   Race conditions can occur not only because threads are preempted unexpectedly, but because two threads executing on different processors might be racing to reach the same code block.  
-  
-### Single-Processor Computers  
- Multithreading provides greater responsiveness to the computer user, and uses idle time for background tasks. If you use multithreading on a single-processor computer:  
-  
--   Only one thread runs at any instant.  
-  
--   A background thread executes only when the main user thread is idle. A foreground thread that executes constantly starves background threads of processor time.  
-  
--   When you call the <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType> method on a thread, that thread does not start executing until the current thread yields or is preempted by the operating system.  
-  
--   Race conditions typically occur because the programmer did not anticipate the fact that a thread can be preempted at an awkward moment, sometimes allowing another thread to reach a code block first.  
   
 ## Static Members and Static Constructors  
  A class is not initialized until its class constructor (`static` constructor in C#, `Shared Sub New` in Visual Basic) has finished running. To prevent the execution of code on a type that is not initialized, the common language runtime blocks all calls from other threads to `static` members of the class (`Shared` members in Visual Basic) until the class constructor has finished running.  

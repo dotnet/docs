@@ -82,7 +82,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
 |Resource|Description|  
 |--------------|-----------------|  
 |[Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)|Contains topics describing how to expose COM components to the .NET Framework and how to expose .NET Framework components to COM.|  
-|[Advanced COM Interoperability](https://msdn.microsoft.com/library/3ada36e5-2390-4d70-b490-6ad8de92f2fb)|Contains advanced topics such as primary interop assemblies, threading and custom marshaling.|  
+|[Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx)|Contains advanced topics such as primary interop assemblies, threading and custom marshaling.|  
   
 ## See Also  
  [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  

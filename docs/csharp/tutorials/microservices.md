@@ -48,7 +48,7 @@ source, cross platform editor. However, you can use whatever tools you are
 comfortable with.
 
 You'll also need to install the Docker engine. See the 
-[Docker Installation page](http://www.docker.com/products/docker) 
+[Docker Installation page](https://docs.docker.com/install/overview/) 
 for instructions for your platform.
 Docker can be installed in many Linux distributions, macOS, or Windows. The page
 referenced above contains sections to each of the available installations.

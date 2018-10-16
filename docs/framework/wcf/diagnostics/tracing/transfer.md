@@ -54,33 +54,44 @@ This topic describes transfer in the Windows Communication Foundation (WCF) acti
   
  The following code example demonstrates how to do this. This sample assumes a blocking call is made when transferring to the new activity, and includes suspend/resume traces.  
   
-```  
+```csharp
 // 0. Create a trace source  
 TraceSource ts = new TraceSource("myTS");  
+
 // 1. remember existing ("ambient") activity for clean up  
 Guid oldGuid = Trace.CorrelationManager.ActivityId;  
 // this will be our new activity  
 Guid newGuid = Guid.NewGuid();   
+
 // 2. call transfer, indicating that we are switching to the new AID  
 ts.TraceTransfer(667, "Transferring.", newGuid);  
+
 // 3. Suspend the current activity.  
 ts.TraceEvent(TraceEventType.Suspend, 667, "Suspend: Activity " + i-1);  
+
 // 4. set the new AID in TLS  
 Trace.CorrelationManager.ActivityId = newGuid;  
+
 // 5. Emit the start trace  
 ts.TraceEvent(TraceEventType.Start, 667, "Boundary: Activity " + i);  
+
 // trace something  
 ts.TraceEvent(TraceEventType.Information, 667, "Hello from activity " + i);  
+
 // Perform Work  
 // some work.  
 // Return  
 ts.TraceEvent(TraceEventType.Information, 667, "Work complete on activity " + i);   
+
 // 6. Emit the transfer returning to the original activity  
 ts.TraceTransfer(667, "Transferring Back.", oldGuid);  
+
 // 7. Emit the End trace  
 ts.TraceEvent(TraceEventType.Stop, 667, "Boundary: Activity " + i);  
+
 // 8. Change the tls variable to the original AID  
 Trace.CorrelationManager.ActivityId = oldGuid;    
+
 // 9. Resume the old activity  
 ts.TraceEvent(TraceEventType.Resume, 667, "Resume: Activity " + i-1);  
 ```  

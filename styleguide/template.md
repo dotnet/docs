@@ -113,6 +113,12 @@ To link to a header in a Markdown file in the same repo, use relative linking + 
 
 - Example: [.NET Community](../docs/welcome.md#community)
 
+The C# language specification and the Visual Basic language specification are included in the .NET docs by including the source from the language repositories. The markdown sources are managed in the [csharplang](../csharplang) and [visual basic](../vblang) repositories.
+
+Links to the spec must point to the source directories where those specs are included. For C#, it's **~/_csharplang/spec** and for VB, it's **~/_vblang/spec**.
+
+- Example: [C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)
+
 ### External Links
 
 To link to an external file, use the full URL as the link.

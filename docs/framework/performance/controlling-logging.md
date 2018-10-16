@@ -10,9 +10,9 @@ ms.author: "mairaw"
 # Controlling .NET Framework Logging
 You can use event tracing for Windows (ETW) to record common language runtime (CLR) events. You can create and view traces by using the following tools:  
   
--   The [Logman](https://go.microsoft.com/fwlink/?LinkId=150916) and [Tracerpt](https://go.microsoft.com/fwlink/?LinkId=150919) command-line tools, which are included with the Windows operating system.  
+-   The [Logman](/windows-server/administration/windows-commands/logman) and [Tracerpt](/windows-server/administration/windows-commands/tracerpt_1) command-line tools, which are included with the Windows operating system.  
   
--   The [Xperf](https://msdn.microsoft.com/library/windows/hardware/hh162920.aspx) tools in the [Windows Performance Toolkit](https://msdn.microsoft.com/library/windows/hardware/hh162945.aspx). For more information about Xperf, see the [Windows Performance blog](https://go.microsoft.com/fwlink/?LinkId=179509).  
+-   The [Xperf](/windows-hardware/test/wpt/xperf-command-line-reference) tools in the [Windows Performance Toolkit](/windows-hardware/test/wpt/). For more information about Xperf, see the [Windows Performance blog](https://go.microsoft.com/fwlink/?LinkId=179509).  
   
  To capture CLR event information, the CLR provider must be installed on your computer. To confirm that the provider is installed, type `logman query providers` at the command prompt. A list of providers is displayed. This list should contain an entry for the CLR provider, as follows.  
   
@@ -22,12 +22,12 @@ Provider                                 GUID
 .NET Common Language Runtime    {E13C0D23-CCBC-4E12-931B-D9CC2EEE27E4}.  
 ```  
   
- If the CLR provider is not listed, you can install it on Windows Vista and later operating systems by using the Windows [Wevtutil](https://go.microsoft.com/fwlink/?LinkID=150915) command-line tool. Open the Command Prompt window as an administrator. Change the prompt directory to the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)] folder (%WINDIR%\Microsoft.NET\Framework[64]\v4.\<.NET version>\ ). This folder contains the CLR-ETW.man file. At the command prompt, type the following command to install the CLR provider:  
+ If the CLR provider is not listed, you can install it on Windows Vista and later operating systems by using the Windows [Wevtutil](/windows-server/administration/windows-commands/wevtutil) command-line tool. Open the Command Prompt window as an administrator. Change the prompt directory to the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)] folder (%WINDIR%\Microsoft.NET\Framework[64]\v4.\<.NET version>\ ). This folder contains the CLR-ETW.man file. At the command prompt, type the following command to install the CLR provider:  
   
  `wevtutil im CLR-ETW.man`  
   
 ## Capturing CLR ETW Events  
- You can use the [Logman](https://go.microsoft.com/fwlink/?LinkId=150916) and [Xperf](https://msdn.microsoft.com/library/windows/hardware/hh162920.aspx) command-line tools to capture ETW events, and the [Tracerpt](https://go.microsoft.com/fwlink/?LinkId=150919) and [Xperf](https://msdn.microsoft.com/library/windows/hardware/hh162920.aspx) tools to decode the trace events.  
+ You can use the [Logman](/windows-server/administration/windows-commands/logman) and [Xperf](/windows-hardware/test/wpt/xperf-command-line-reference) command-line tools to capture ETW events, and the [Tracerpt](/windows-server/administration/windows-commands/tracerpt_1) and [Xperf](/windows-hardware/test/wpt/xperf-command-line-reference) tools to decode the trace events.  
   
  To turn on logging, a user must specify three things:  
   
@@ -103,5 +103,5 @@ Provider                                 GUID
      This command causes XPerf to dump the events as a comma separated value (CSV) file that you can view. Because different events have different fields, this CSV file is contains more than one header line before the data. The first field of every line is the event type, which indicates which header should be used to determine the rest of the fields.  
   
 ## See Also  
- [Windows Performance Toolkit](https://go.microsoft.com/fwlink/?LinkID=161141)  
+ [Windows Performance Toolkit](/windows-hardware/test/wpt/)  
  [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)

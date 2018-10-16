@@ -85,13 +85,13 @@ public class OrderProcessorService : IOrderProcessor
   
  The Service.svc file itself contains a directive to create the `OrderProcessorService`.  
   
-```xml  
+```svc
 <%@ServiceHost language="c#" Debug="true" Service="Microsoft.ServiceModel.Samples.OrderProcessorService"%>  
 ```  
   
  The Service.svc file also contains an assembly directive to ensure that System.Transactions.dll is loaded.  
   
-```xml  
+```svc  
 <%@Assembly name="System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"%>  
 ```  
   
@@ -202,7 +202,7 @@ public class OrderStatusService : IOrderStatus
   
  The client displays the order status information sent by the server:  
   
-```Output  
+```console  
 Press <ENTER> to terminate client.  
 Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending  
 ```  
@@ -245,7 +245,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
     1.  To support net.msmq activation, the default Web site must first be bound to the net.msmq protocol. This can be done using appcmd.exe, which is installed with the [!INCLUDE[iisver](../../../../includes/iisver-md.md)] management toolset. From an elevated (administrator) command prompt, run the following command.  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site"   
         -+bindings.[protocol='net.msmq',bindingInformation='localhost']  
         ```  
@@ -257,7 +257,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
     2.  Although all applications within a site share a common net.msmq binding, each application can enable net.msmq support individually. To enable net.msmq for the /servicemodelsamples application, run the following command from an elevated command prompt.  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set app "Default Web Site/servicemodelsamples" /enabledProtocols:http,net.msmq  
         ```  
   
@@ -270,7 +270,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
 8.  To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md). Additionally, change the code on the client that submits the purchase order to reflect the computer name in the URI of the queue when submitting the purchase order. Use the following code:  
   
-    ```  
+    ```csharp  
     client.SubmitPurchaseOrder(po, "net.msmq://localhost/private/ServiceModelSamples/OrderStatus");  
     ```  
   
@@ -280,7 +280,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
     1.  Remove net.msmq from the list of enabled protocols by running the following command from an elevated command prompt.  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set app "Default Web Site/servicemodelsamples" /enabledProtocols:http  
         ```  
   
@@ -289,7 +289,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
     2.  Remove the net.msmq site binding by running the following command from an elevated command prompt.  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site" --bindings.[protocol='net.msmq',bindingInformation='localhost']  
         ```  
   
@@ -340,7 +340,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
 5.  In workgroup, the service must also run using an unrestricted token. To do this, run the following in a command window:  
   
-    ```  
+    ```console  
     sc sidtype netmsmqactivator unrestricted  
     ```  
   

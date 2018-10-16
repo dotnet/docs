@@ -72,7 +72,7 @@ You specify `Task<TResult>` as the return type of an async method if the [return
   
 You use the `void` return type primarily to define event handlers, which require that return type. The caller of a `void`-returning async method can't await it and can't catch exceptions that the method throws.  
 
-Starting with C# 7.0, you return another type, typically a value type, that has a `GetAwaiter` method to miminize memory allocations in performance-critical sections of code. 
+Starting with C# 7.0, you return another type, typically a value type, that has a `GetAwaiter` method to minimize memory allocations in performance-critical sections of code. 
 
 For more information and examples, see [Async Return Types](../../../csharp/programming-guide/concepts/async/async-return-types.md).  
   

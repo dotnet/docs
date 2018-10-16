@@ -9,7 +9,7 @@ SecurityBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class SecurityBindingElement : BindingElement  
 {  
   string DefaultAlgorithmSuite;  

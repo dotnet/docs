@@ -9,7 +9,7 @@ ServiceSecurityAuditBehavior
   
 ## Syntax  
   
-```  
+```csharp  
 class ServiceSecurityAuditBehavior : Behavior  
 {  
   string AuditLogLocation;  

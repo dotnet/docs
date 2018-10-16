@@ -100,7 +100,7 @@ Add the following member declaration to the `BankAccount` class:
 private static int accountNumberSeed = 1234567890;
 ```
 
-This is a data member. It's `private`, which means it can only be accessed by code inside the `BankAccount` class. It's a way of separating the public responsibilities (like having an account number) from the private implementation (how account numbers are generated.) Add the following two lines to the constructor to assign the account number:
+This is a data member. It's `private`, which means it can only be accessed by code inside the `BankAccount` class. It's a way of separating the public responsibilities (like having an account number) from the private implementation (how account numbers are generated.) It is also `static`, which means it is shared by all of the ``BankAccount`` objects. The value of a non-static variable is unique to each instance of the ``BankAccount`` object. Add the following two lines to the constructor to assign the account number:
 
 ```csharp
 this.Number = accountNumberSeed.ToString();
@@ -188,7 +188,7 @@ Save the file and type `dotnet run` to try it.
 
 ## Challenge - log all transactions
 
-To finish this quickstart, you can write the `GetAccountHistory` method that creates a `string` for the transaction history. add this method to the `BankAccount` type:
+To finish this quickstart, you can write the `GetAccountHistory` method that creates a `string` for the transaction history. Add this method to the `BankAccount` type:
 
 [!code-csharp[History](../../../samples/csharp/classes-quickstart/BankAccount.cs#History "Display transaction history")]
 

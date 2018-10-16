@@ -9,7 +9,7 @@ LocalServiceSecuritySettings
   
 ## Syntax  
   
-```  
+```csharp
 class LocalServiceSecuritySettings  
 {  
   boolean DetectReplays;  

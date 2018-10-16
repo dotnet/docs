@@ -45,7 +45,7 @@ A floating-point expression can contain the following sets of values:
 
 - The finite set of nonzero values
 
-For more information about these values, see IEEE Standard for Binary Floating-Point Arithmetic, available on the [IEEE](http://www.ieee.org) website.
+For more information about these values, see IEEE Standard for Binary Floating-Point Arithmetic, available on the [IEEE](https://www.ieee.org) website.
 
 ## Example
 

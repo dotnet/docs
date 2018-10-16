@@ -54,7 +54,7 @@ All calendars in .NET derive from the <xref:System.Globalization.Calendar?displa
 
 A calendar can be used in one of two ways:
 
-* As the calendar used by a specific culture. Each <xref:System.Globalization.CultureInfo> object has a current calendar, which is the calendar that the object is currently using. The string representations of all date and time values automatically reflect the current culture and its current calendar. Typically, the current calendar is the culture's default calendar. <xref:System.Globalization.CultureInfo> objects also have optional calendars, which include additional calendars that that culture can use.
+* As the calendar used by a specific culture. Each <xref:System.Globalization.CultureInfo> object has a current calendar, which is the calendar that the object is currently using. The string representations of all date and time values automatically reflect the current culture and its current calendar. Typically, the current calendar is the culture's default calendar. <xref:System.Globalization.CultureInfo> objects also have optional calendars, which include additional calendars that the culture can use.
 
 * As a standalone calendar independent of a specific culture. In this case, <xref:System.Globalization.Calendar> methods are used to express dates as values that reflect the calendar.
 

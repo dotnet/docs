@@ -161,7 +161,7 @@ namespace MultitargetLib
         // .NET Framework 4.0 does not have async/await
         public string GetDotNetCount()
         {
-            string url = "http://www.dotnetfoundation.org/";
+            string url = "https://www.dotnetfoundation.org/";
 
             var uri = new Uri(url);
 
@@ -181,7 +181,7 @@ namespace MultitargetLib
         // .NET 4.5+ can use async/await!
         public async Task<string> GetDotNetCountAsync()
         {
-            string url = "http://www.dotnetfoundation.org/";
+            string url = "https://www.dotnetfoundation.org/";
 
             // HttpClient is thread-safe, so no need to explicitly lock here
             var result = await _client.GetStringAsync(url);
@@ -207,7 +207,7 @@ Each of these contain the `.dll` files for each target.
 
 ## How to test libraries on .NET Core
 
-It's important to be able to test across platforms. You can use either [xUnit](http://xunit.github.io/) or MSTest out of the box. Both are perfectly suitable for unit testing your library on .NET Core. How you set up your solution with test projects will depend on the [structure of your solution](#structuring-a-solution). The following example assumes that the test and source directories live in the same top-level directory.
+It's important to be able to test across platforms. You can use either [xUnit](https://xunit.github.io/) or MSTest out of the box. Both are perfectly suitable for unit testing your library on .NET Core. How you set up your solution with test projects will depend on the [structure of your solution](#structuring-a-solution). The following example assumes that the test and source directories live in the same top-level directory.
 
 > [!NOTE]
 > This uses some [.NET Core CLI commands](../tools/index.md). See [dotnet new](../tools/dotnet-new.md) and [dotnet sln](../tools/dotnet-sln.md) for more information.

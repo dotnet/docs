@@ -1,8 +1,6 @@
 ---
-title: Machine Learning Glossary
+title: Machine learning glossary
 description: A glossary of machine learning terms.
-author: jralexander
-ms.author: johalex
 ms.date: 05/31/2018
 ms.topic: conceptual
 ---
@@ -14,13 +12,13 @@ The following list is a compilation of important machine learning terms that are
 
 In [classification](#classification), accuracy is the number of correctly classified items divided by the total number of items in the test set. Ranges from 0 (least accurate) to 1 (most accurate). Accuracy is one of evaluation metrics of the performance of your model. Consider it in conjunction with [precision](#precision), [recall](#recall), and [F-score](#f-score).
 
-Related ML.NET API: <xref:Microsoft.ML.Models.BinaryClassificationMetrics.Accuracy?displayProperty=nameWithType>.
+Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.Accuracy?displayProperty=nameWithType>.
 
 ## Area under the curve (AUC)
 
 In [binary classification](#binary-classification), an evaluation metric that is the value of the area under the curve that plots the true positives rate (on the y-axis) against the false positives rate (on the x-axis). Ranges from 0.5 (worst) to 1 (best). Also known as the area under the ROC curve, i.e., receiver operating characteristic curve. For more information, see the [Receiver operating characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) article on Wikipedia.
 
-Related ML.NET API: <xref:Microsoft.ML.Models.BinaryClassificationMetrics.Auc?displayProperty=nameWithType>.
+Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.Auc?displayProperty=nameWithType>.
 
 ## Binary classification
 
@@ -34,7 +32,7 @@ When the data is used to predict a category, [supervised machine learning](#supe
 
 In [regression](#regression), an evaluation metric that indicates how well data fits a model. Ranges from 0 to 1. A value of 0 means that the data is random or otherwise cannot be fit to the model. A value of 1 means that the model exactly matches the data. This is often referred to as r<sup>2</sup>, R<sup>2</sup>, or r-squared.
 
-Related ML.NET API: <xref:Microsoft.ML.Models.RegressionMetrics.RSquared?displayProperty=nameWithType>.
+Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.RegressionMetrics.RSquared?displayProperty=nameWithType>.
 
 ## Feature
 
@@ -48,7 +46,7 @@ Feature engineering is the process that involves defining a set of [features](#f
 
 In [classification](#classification), an evaluation metric that balances [precision](#precision) and [recall](#recall).
 
-Related ML.NET API: <xref:Microsoft.ML.Models.BinaryClassificationMetrics.F1Score?displayProperty=nameWithType>.
+Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.F1Score?displayProperty=nameWithType>.
 
 ## Hyperparameter
 
@@ -62,13 +60,13 @@ The element to be predicted with the machine learning model. For example, the br
 
 In [classification](#classification), an evaluation metric that characterizes the accuracy of a classifier. The smaller log loss is, the more accurate a classifier is.
 
-Related ML.NET API: <xref:Microsoft.ML.Models.BinaryClassificationMetrics.LogLoss?displayProperty=nameWithType>.
+Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.LogLoss?displayProperty=nameWithType>.
 
 ## Mean absolute error (MAE)
 
 In [regression](#regression), an evaluation metric that is the average of all the model errors, where model error is the distance between the predicted [label](#label) value and the correct label value.
 
-Related ML.NET API: <xref:Microsoft.ML.Models.RegressionMetrics.L1?displayProperty=nameWithType>.
+Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.RegressionMetrics.L1?displayProperty=nameWithType>.
 
 ## Model
 
@@ -94,13 +92,13 @@ All of the operations needed to fit a model to a data set. A pipeline consists o
 
 In [classification](#classification), the precision for a class is the number of items correctly predicted as belonging to that class divided by the total number of items predicted as belonging to the class.
 
-Related ML.NET API: <xref:Microsoft.ML.Models.BinaryClassificationMetrics.NegativePrecision?displayProperty=nameWithType>, <xref:Microsoft.ML.Models.BinaryClassificationMetrics.PositivePrecision?displayProperty=nameWithType>.
+Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.NegativePrecision?displayProperty=nameWithType>, <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.PositivePrecision?displayProperty=nameWithType>.
 
 ## Recall
 
 In [classification](#classification), the recall for a class is the number of items correctly predicted as belonging to that class divided by the total number of items that actually belong to the class.
 
-Related ML.NET API: <xref:Microsoft.ML.Models.BinaryClassificationMetrics.NegativeRecall?displayProperty=nameWithType>, <xref:Microsoft.ML.Models.BinaryClassificationMetrics.PositiveRecall?displayProperty=nameWithType>.
+Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.NegativeRecall?displayProperty=nameWithType>, <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.PositiveRecall?displayProperty=nameWithType>.
 
 ## Regression
 
@@ -118,7 +116,7 @@ In [regression](#regression), an evaluation metric that is the sum of all square
 
 In [regression](#regression), an evaluation metric that is the square root of the average of the squares of the errors.
 
-Related ML.NET API: <xref:Microsoft.ML.Models.RegressionMetrics.Rms?displayProperty=nameWithType>.
+Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.RegressionMetrics.Rms?displayProperty=nameWithType>.
 
 ## Supervised machine learning
 

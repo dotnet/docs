@@ -40,3 +40,6 @@ On the other hand, **Consider** recommendations should generally be followed, bu
 And finally, **do not** indicates something you should almost never do:
 
 **❌ DO NOT** publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
+
+>[!div class="step-by-step"]
+[Next](./get-started.md)

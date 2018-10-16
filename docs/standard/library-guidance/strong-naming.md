@@ -56,7 +56,7 @@ You should strong name your open-source .NET libraries. Strong naming an assembl
 
 **❌ DO NOT** add, remove, or change the strong naming key.
 
-> Modifying an assembly's strong naming key changes the assembly's identity and breaks compiled code that uses it. For more information, see [binary breaking changes](./versioning.md#assembly-version).
+> Modifying an assembly's strong naming key changes the assembly's identity and breaks compiled code that uses it. For more information, see [binary breaking changes](./breaking-changes.md#binary-breaking-change).
 
 **❌ DO NOT** publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
 

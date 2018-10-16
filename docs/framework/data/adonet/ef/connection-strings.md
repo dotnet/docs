@@ -1,5 +1,5 @@
 ---
-title: "Connection Strings"
+title: "Connection Strings in the ADO.NET Entity Framework"
 ms.date: "10/15/2018"
 ms.assetid: 78d516bc-c99f-4865-8ff1-d856bc1a01c0
 ---

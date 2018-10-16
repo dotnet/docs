@@ -3989,12 +3989,17 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <exception cref="T:System.ArgumentException">
           <paramref name="interfaceType" /> is not implemented by the current type.  
   
- -or-  
+-or-  
   
- The <paramref name="interfaceType" /> parameter does not refer to an interface.  
+The <paramref name="interfaceType" /> argument does not refer to an interface.  
   
- -or-  
-  
+-or-  
+
+The current instance or <paramref name="interfaceType" /> argument is an open generic type; that is, the <see cref="P:System.Type.ContainsGenericParameters" /> property returns <see langword ="true" />.
+
+-or-
+
+
  <paramref name="interfaceType" /> is a generic interface, and the current type is an array type.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="interfaceType" /> is <see langword="null" />.</exception>

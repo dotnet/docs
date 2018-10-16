@@ -95,7 +95,7 @@ public void deserialize(Type type)
 
  The following code example is a class deriving from <xref:System.Runtime.Serialization.DataContractResolver>.
 
-```
+```csharp
 class MyDataContractResolver : DataContractResolver
 {
     private Dictionary<string, XmlDictionaryString> dictionary = new Dictionary<string, XmlDictionaryString>();

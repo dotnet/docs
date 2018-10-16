@@ -199,7 +199,7 @@ The full technical walkthrough is available in the eShopModernizing GitHub repo 
 
 ### Overview
 
-[Azure Container Instances (ACI)](https://docs.microsoft.com/en-us/azure/container-instances/) is the quickest way to have a Containers dev/test/staging environment where you can deploy single instances of containers.
+[Azure Container Instances (ACI)](https://docs.microsoft.com/azure/container-instances/) is the quickest way to have a Containers dev/test/staging environment where you can deploy single instances of containers.
 
 ### Goals
 

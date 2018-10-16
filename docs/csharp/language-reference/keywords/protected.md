@@ -55,4 +55,4 @@ If you change the access levels of `x` and `y` to [private](private.md), the com
 - [public](public.md)
 - [private](private.md)
 - [internal](internal.md)
-- [Security concerns for internal virtual keywords](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/heyd8kky(v=vs.100))
+- [Security concerns for internal virtual keywords](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/heyd8kky(v=vs.100))

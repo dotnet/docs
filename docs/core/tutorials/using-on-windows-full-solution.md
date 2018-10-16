@@ -18,7 +18,7 @@ Follow the instructions on [our prerequisites page](../windows-prerequisites.md)
 
 ### Writing the library
 
-1. In Visual Studio, choose **File**, **New**, **Project**. In the **New Project** dialog, expand the **Visual C#** node and choose the **.NET Standard** node, and then choose **Class Library (.NET Standard)**. This creates a .NET Standard library that targets .NET Core as well as any other .NET implementation that supports version 2.0 of the [.Net Standard](https://docs.microsoft.com/en-us/dotnet/standard/net-standard)
+1. In Visual Studio, choose **File**, **New**, **Project**. In the **New Project** dialog, expand the **Visual C#** node and choose the **.NET Standard** node, and then choose **Class Library (.NET Standard)**. This creates a .NET Standard library that targets .NET Core as well as any other .NET implementation that supports version 2.0 of the [.NET Standard](../../standard/net-standard.md).
 
 2. Name the project "Library" and the solution "Golden". Leave **Create directory for solution** checked. Click **OK**.
 

@@ -31,7 +31,7 @@ From an infrastructure perspective, each server can run many applications within
 
 Figure 4-2: A host running multiple apps/containers
 
-You can deploy monolithic applications in Azure by using dedicated VMs for each instance. Using [Azure VM Scale Sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/), you can scale the VMs easily. [Azure App Services](https://azure.microsoft.com/en-us/services/app-service/) can run monolithic applications and easily scale instances without having to manage the VMs. Since 2016, Azure App Services can run single instances of Docker containers, as well, simplifying the deployment. And, using Docker, you can deploy a single VM as a Docker host and run multiple instances. Using the Azure balancer, as illustrated in the Figure 4-3, you can manage scaling.
+You can deploy monolithic applications in Azure by using dedicated VMs for each instance. Using [Azure VM Scale Sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/), you can scale the VMs easily. [Azure App Services](https://azure.microsoft.com/services/app-service/) can run monolithic applications and easily scale instances without having to manage the VMs. Since 2016, Azure App Services can run single instances of Docker containers, as well, simplifying the deployment. And, using Docker, you can deploy a single VM as a Docker host and run multiple instances. Using the Azure balancer, as illustrated in the Figure 4-3, you can manage scaling.
 
 ![](./media/image3.png)
 

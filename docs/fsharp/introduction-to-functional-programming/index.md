@@ -241,7 +241,7 @@ When programming in F#, it is often referential transparency that is the goal, r
 
 Finally, one of the most fundamental concepts of typed functional programming is immutability. In F#, all values are immutable by default. That means they cannot be mutated in-place unless you explicitly mark them as mutable.
 
-In practice, working with immutable values means that you change your approach to programming from, "I need to change something", to "I need to produce a new value". If there is one thing to reduce functional programming down to, it is that your code is all about calling functions to produce values to work with.
+In practice, working with immutable values means that you change your approach to programming from, "I need to change something", to "I need to produce a new value".
 
 For example, adding 1 to a value means producing a new value, not mutating the existing one:
 

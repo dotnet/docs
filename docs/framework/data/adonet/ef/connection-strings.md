@@ -1,9 +1,9 @@
 ---
-title: "Connection Strings"
+title: "Connection Strings in the ADO.NET Entity Framework"
 ms.date: "10/15/2018"
 ms.assetid: 78d516bc-c99f-4865-8ff1-d856bc1a01c0
 ---
-# Connection Strings
+# Connection Strings in the ADO.NET Entity Framework
 A connection string contains initialization information that is passed as a parameter from a data provider to a data source. The syntax depends on the data provider, and the connection string is parsed during the attempt to open a connection. Connection strings used by the Entity Framework contain information used to connect to the underlying ADO.NET data provider that supports the Entity Framework. They also contain information about the required model and mapping files.  
   
  The connection string is used by the EntityClient provider when accessing model and mapping metadata and connecting to the data source. The connection string can be accessed or set through the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> property of <xref:System.Data.EntityClient.EntityConnection>. The <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class can be used to programmatically construct or access parameters in the connection string. For more information, see [How to: Build an EntityConnection Connection String](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md).  

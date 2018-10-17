@@ -17,11 +17,7 @@ member self-identifier.Index
     and set index-values values-to-set =
         set-member-body
 
-// Indexed property that has get only.
-member self-identifier.Index(index-values) =
-    get-member-body
-
-// Alternative syntax for indexed property with get only
+// Indexed property with get only
 member self-identifier.Index
     with get(index-values) =
         get-member-body

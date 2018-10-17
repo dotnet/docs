@@ -2068,7 +2068,7 @@ End Sub
       </Parameters>
       <Docs>
         <param name="millisecondsDelay">The number of milliseconds to wait before completing the returned task, or -1 to wait indefinitely.</param>
-        <summary>Creates a task that completes after a time delay.</summary>
+        <summary>Creates a task that completes after a specified number of milliseconds.</summary>
         <returns>A task that represents the time delay.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2203,8 +2203,8 @@ End Sub
       </Parameters>
       <Docs>
         <param name="millisecondsDelay">The number of milliseconds to wait before completing the returned task, or -1 to wait indefinitely.</param>
-        <param name="cancellationToken">The cancellation token that will be checked prior to completing the returned task.</param>
-        <summary>Creates a cancellable task that completes after a time delay.</summary>
+        <param name="cancellationToken">A cancellation token to observe while waiting for the task to complete.</param>
+        <summary>Creates a cancellable task that completes after a specified number of milliseconds.</summary>
         <returns>A task that represents the time delay.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2266,7 +2266,7 @@ End Sub
       </Parameters>
       <Docs>
         <param name="delay">The time span to wait before completing the returned task, or <see langword="TimeSpan.FromMilliseconds(-1)" /> to wait indefinitely.</param>
-        <param name="cancellationToken">The cancellation token that will be checked prior to completing the returned task.</param>
+        <param name="cancellationToken">A cancellation token to observe while waiting for the task to complete.</param>
         <summary>Creates a cancellable task that completes after a specified time interval.</summary>
         <returns>A task that represents the time delay.</returns>
         <remarks>

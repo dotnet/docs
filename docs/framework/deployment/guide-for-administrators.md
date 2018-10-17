@@ -31,16 +31,16 @@ This step-by-step article describes how a system administrator can deploy the [!
 ## The deployment process  
  When you have the supporting infrastructure in place, you use System Center 2012 Configuration Manager to deploy the .NET Framework redistributable package to computers on the network. Building the infrastructure involves creating and defining five primary areas: collections, a package and program for the software, distribution points, and deployments.  
   
--   **Collections** are groups of Configuration Manager resources, such as users, user groups, or computers, to which the .NET Framework is deployed. For more information, see [Collections in Configuration Manager](https://technet.microsoft.com/library/gg682169.aspx) in the Configuration Manager documentation library.  
+-   **Collections** are groups of Configuration Manager resources, such as users, user groups, or computers, to which the .NET Framework is deployed. For more information, see [Introduction to collections in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/collections/introduction-to-collections) in the Configuration Manager documentation library.  
   
--   **Packages and programs** typically represent software applications to be installed on a client computer, but they might also contain individual files, updates, or even individual commands. For more information, see [Packages and Programs in Configuration Manager](https://technet.microsoft.com/library/gg699369.aspx) in the Configuration Manager documentation library.  
+-   **Packages and programs** typically represent software applications to be installed on a client computer, but they might also contain individual files, updates, or even individual commands. For more information, see [Packages and programs in System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs) in the Configuration Manager documentation library.  
   
--   **Distribution points** are Configuration Manager site system roles that store files required for software to run on client computers. When the Configuration Manager client receives and processes a software deployment, it contacts a distribution point to download the content associated with the software and to start the installation process. For more information, see [Introduction to content Management in Configuration Manager](https://technet.microsoft.com/library/gg682083.aspx) in the Configuration Manager documentation library.  
+-   **Distribution points** are Configuration Manager site system roles that store files required for software to run on client computers. When the Configuration Manager client receives and processes a software deployment, it contacts a distribution point to download the content associated with the software and to start the installation process. For more information, see [Fundamental concepts for content management in Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management) in the Configuration Manager documentation library.  
   
--   **Deployments** instruct applicable members of the specified target collection to install the software package. For more information, see [How to Deploy Applications in Configuration Manager](https://technet.microsoft.com/library/gg682082.aspx) in the Configuration Manager documentation library.  
+-   **Deployments** instruct applicable members of the specified target collection to install the software package. 
   
 > [!IMPORTANT]
->  The procedures in this topic contain typical settings for creating and deploying a package and program, and might not cover all possible settings. For other Configuration Manager deployment options, see the [Configuration Manager Documentation Library](https://technet.microsoft.com/library/gg682041.aspx).  
+>  The procedures in this topic contain typical settings for creating and deploying a package and program, and might not cover all possible settings. For other Configuration Manager deployment options, see the [Configuration Manager Documentation Library](/previous-versions/system-center/system-center-2012-R2/gg682041%28v=technet.10%29).  
   
 <a name="deploying_in_a_test_environment"></a>   
 ## Deploying the .NET Framework  
@@ -56,7 +56,7 @@ This step-by-step article describes how a system administrator can deploy the [!
   
 <a name="creating_a_collection"></a>   
 ### Create a collection  
- In this step, you select the computers to which you will deploy the package and program, and group them into a device collection. To create a collection in Configuration Manager, you can use direct membership rules (where you manually specify the collection members) or query rules (where Configuration Manager determines the collection members based on criteria you specify). For more information about membership rules, including queries and direct rules, see [Introduction to Collections in Configuration Manager](https://technet.microsoft.com/library/gg682177.aspx) in the Configuration Manager Documentation Library.  
+ In this step, you select the computers to which you will deploy the package and program, and group them into a device collection. To create a collection in Configuration Manager, you can use direct membership rules (where you manually specify the collection members) or query rules (where Configuration Manager determines the collection members based on criteria you specify). For more information about membership rules, including queries and direct rules, see [Introduction to collections in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/collections/introduction-to-collections) in the Configuration Manager Documentation Library.  
   
  To create a collection:  
   
@@ -77,8 +77,6 @@ This step-by-step article describes how a system administrator can deploy the [!
 8.  On the **Select Resources** page, select the check box for each computer that you want to deploy the .NET Framework to. Choose **Next**, and then complete the wizard.  
   
 9. On the **Membership Rules** page of the **Create Device Collection Wizard**, choose **Next**, and then complete the wizard.  
-  
- For more information about collections, see [Collections in Configuration Manager](https://technet.microsoft.com/library/bb693730.aspx) in the Configuration Manager Documentation Library.  
   
 <a name="creating_a_package"></a>   
 ### Create a package and program for the .NET Framework redistributable package  
@@ -148,7 +146,7 @@ This step-by-step article describes how a system administrator can deploy the [!
   
 8.  Complete the wizard.  
   
- The package now contains all the information you need to silently deploy the .NET Framework 4.5. Before you deploy the package and program, verify that it was installed on the distribution point; see the "Monitor Content" section of [Operations and Maintenance for Content Management in Configuration Manager](https://technet.microsoft.com/library/gg712694.aspx#BKMK_MonitorContent) in the Configuration Manager Documentation Library.  
+ The package now contains all the information you need to silently deploy the .NET Framework 4.5. Before you deploy the package and program, verify that it was installed on the distribution point; see the "Monitor Content" section of [Monitor content you have distributed with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/servers/deploy/configure/monitor-content-you-have-distributed) in the Configuration Manager Documentation Library.  
   
 <a name="deploying_package"></a>   
 ### Deploy the package  
@@ -187,27 +185,27 @@ This step-by-step article describes how a system administrator can deploy the [!
   
  **Active Directory, DNS, DHCP:**  
   
--   [Active Directory Domain Services for Windows Server 2008](https://technet.microsoft.com/library/dd378891.aspx)  
+-   [Active Directory Domain Services](/windows/desktop/ad/active-directory-domain-services)  
   
--   [DNS Server](https://technet.microsoft.com/library/cc732997.aspx)  
+-   [Domain Name System (DNS)](/windows-server/networking/dns/dns-top)  
   
--   [DHCP Server](https://technet.microsoft.com/library/cc896553.aspx)  
+-   [Dynamic Host Configuration Protocol (DHCP)](/windows-server/networking/technologies/dhcp/dhcp-top)  
   
  **SQL Server 2008:**  
   
--   [Installing SQL Server 2008 (SQL Server Video)](https://technet.microsoft.com/library/dd299415.aspx)  
+-   [Installing SQL Server 2008 (SQL Server Video)](/previous-versions/sql/sql-server-2008-r2/dd299415%28v=sql.100%29)  
   
 -   [SQL Server 2008 Security Overview for Database Administrators](https://download.microsoft.com/download/a/c/d/acd8e043-d69b-4f09-bc9e-4168b65aaa71/SQL2008SecurityOverviewforAdmins.docx)  
   
  **System Center 2012 Configuration Manager (Management Point, Distribution Point):**  
   
--   [Site Administration for System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg681983.aspx)  
+-   [Site Administration for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg681983%28v=technet.10%29)  
   
 -   [Configuration Manager Single Site Planning and Deployment](https://technet.microsoft.com/library/bb680961.aspx)  
   
  **System Center 2012 Configuration Manager client for Windows computers:**  
   
--   [Deploying Clients for System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg699391.aspx)  
+-   [Deploying Clients for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699391%28v=technet.10%29)  
   
 <a name="troubleshooting"></a>   
 ## Troubleshooting  
@@ -242,17 +240,17 @@ This step-by-step article describes how a system administrator can deploy the [!
 <a name="additional_error_codes"></a>   
 ### Download error codes  
   
--   [Background Intelligent Transfer Service (BITS) error codes](https://msdn.microsoft.com/library/aa362823.aspx)  
+-   [Background Intelligent Transfer Service (BITS) error codes](/windows/desktop/Bits/bits-return-values)  
   
--   [URL moniker error codes](https://msdn.microsoft.com/library/ms775145.aspx)  
+-   [URL moniker error codes](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775145%28v=vs.85%29)  
   
 -   [WinHttp error codes](/windows/desktop/WinHttp/error-messages)  
   
  Other error codes:  
   
--   [Windows Installer error codes](https://msdn.microsoft.com/library/aa368542.aspx)  
+-   [Windows Installer error codes](/windows/desktop/msi/error-codes)  
   
--   [Windows Update Agent result codes](https://technet.microsoft.com/library/cc720442.aspx)  
+-   [Windows Update Agent result codes](/security-updates/WindowsUpdateServices/18127055)  
   
 ## See Also  
  [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md)  

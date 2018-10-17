@@ -22,4 +22,4 @@ ms.assetid: 7bf37ccb-5d09-4eae-9661-929582aeb259
  <xref:System.Windows.Controls.DocumentViewer>  
  <xref:System.Windows.Documents.FlowDocument>  
  <xref:System.Windows.Xps>  
- [isXPS.exe (isXPS Conformance Tool)](https://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3(v=vs.100))
+ [isXPS.exe (isXPS Conformance Tool)](/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))

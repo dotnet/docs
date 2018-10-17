@@ -133,19 +133,19 @@ The first step to perform is to load the training data set. In our case, the tra
 
 [!code-csharp[Add step to load data](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#6)]
 
-The next step is to combine all of the feature columns into the **Features** column using the <xref:Microsoft.ML.Transforms.ColumnConcatenator> transformation class. By default, a learning algorithm processes only features from the **Features** column. Add the following code:
+The next step is to combine all of the feature columns into the **Features** column using the <xref:Microsoft.ML.Legacy.Transforms.ColumnConcatenator> transformation class. By default, a learning algorithm processes only features from the **Features** column. Add the following code:
 
 [!code-csharp[Add step to concatenate columns](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#7)]
 
 ## Choose a learning algorithm
 
-After adding the data to the pipeline and transforming it into the correct input format, you select a learning algorithm (**learner**). The learner trains the model. ML.NET provides a <xref:Microsoft.ML.Trainers.KMeansPlusPlusClusterer> learner that implements [k-means algorithm](https://en.wikipedia.org/wiki/K-means_clustering) with an improved method for choosing the initial cluster centroids.
+After adding the data to the pipeline and transforming it into the correct input format, you select a learning algorithm (**learner**). The learner trains the model. ML.NET provides a <xref:Microsoft.ML.Legacy.Trainers.KMeansPlusPlusClusterer> learner that implements [k-means algorithm](https://en.wikipedia.org/wiki/K-means_clustering) with an improved method for choosing the initial cluster centroids.
 
 Add the following code into the `Train` method following the data processing code added in the previous step:
 
 [!code-csharp[Add a learner step](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#8)]
 
-Use the <xref:Microsoft.ML.Trainers.KMeansPlusPlusClusterer.K?displayProperty=nameWithType> property to specify number of clusters. The code above specifies that the data set should be split in three clusters.
+Use the <xref:Microsoft.ML.Legacy.Trainers.KMeansPlusPlusClusterer.K?displayProperty=nameWithType> property to specify number of clusters. The code above specifies that the data set should be split in three clusters.
 
 ## Train the model
 

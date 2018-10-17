@@ -8,7 +8,7 @@ XmlSerializerOperationBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class XmlSerializerOperationBehavior : Behavior  
 {  
   string Style;  

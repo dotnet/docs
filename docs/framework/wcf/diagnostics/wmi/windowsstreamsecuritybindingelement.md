@@ -9,7 +9,7 @@ WindowsStreamSecurityBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class WindowsStreamSecurityBindingElement : BindingElement  
 {  
   string ProtectionLevel;  

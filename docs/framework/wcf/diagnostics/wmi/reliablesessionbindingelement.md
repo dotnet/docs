@@ -8,7 +8,7 @@ ReliableSessionBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class ReliableSessionBindingElement : BindingElement  
 {  
   datetime AcknowledgementInterval;  

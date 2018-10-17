@@ -8,7 +8,7 @@ ChannelPoolSettings
   
 ## Syntax  
   
-```  
+```csharp
 class ChannelPoolSettings  
 {  
   datetime IdleTimeout;  

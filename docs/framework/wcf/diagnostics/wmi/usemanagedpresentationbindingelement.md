@@ -8,7 +8,7 @@ UseManagedPresentationBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class UseManagedPresentationBindingElement : BindingElement  
 {  
 };  

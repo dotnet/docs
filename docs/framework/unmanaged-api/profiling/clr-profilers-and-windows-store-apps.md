@@ -94,7 +94,7 @@ When Windows attempts to load your Profiler DLL, it verifies that your Profiler 
 
 - Ensure that your Profiler DLL is signed.
 
-- Tell your user that they must install a developer license on their Windows 8 machine before using your tool. This can be done automatically from Visual Studio or manually from a command prompt. For more information, see [Get a developer license](https://msdn.microsoft.com/library/windows/apps/Hh974578.aspx).
+- Tell your user that they must install a developer license on their Windows 8 machine before using your tool. This can be done automatically from Visual Studio or manually from a command prompt. For more information, see [Get a developer license](/previous-versions/windows/apps/hh974578(v=win.10)).
 
 **File system permissions**
 
@@ -118,7 +118,7 @@ If Process A attempts to spawn Windows Store app Process B, Process A should be 
 
 First, you’ll want to ask your profiler user which Windows Store app to launch. For desktop apps, perhaps you’d show a file Browse dialog, and the user would find and select an .exe file. But Windows Store apps are different, and using a Browse dialog doesn’t make sense. Instead, it’s better to show the user a list of Windows Store apps installed for that user to select from.
 
-You can use the [PackageManager class](https://msdn.microsoft.com/library/windows/apps/windows.management.deployment.packagemanager.aspx) to generate this list. `PackageManager` is a Windows Runtime class that is available to desktop apps, and in fact it is *only* available to desktop apps.
+You can use the <xref:Windows.Management.Deployment.PackageManager> class to generate this list. `PackageManager` is a Windows Runtime class that is available to desktop apps, and in fact it is *only* available to desktop apps.
 
 The following code example from a hypothetical Profiler UI written as a desktop app in C# yses the `PackageManager` to generate a list of Windows apps:
 
@@ -131,7 +131,7 @@ IEnumerable<Package> packages = packageManager.FindPackagesForUser(currentUserSI
 
 **Specifying the custom environment block**
 
-A new COM interface, [IPackageDebugSettings](https://msdn.microsoft.com/library/hh438393\(v=vs.85\).aspx), allows you to customize the execution behavior of a Windows Store app to make some forms of diagnostics easier. One of its methods, [EnableDebugging](https://msdn.microsoft.com/library/hh438395\(v=vs.85\).aspx), lets you pass an environment block to the Windows Store app when it’s launched, along with other useful effects like disabling automatic process suspension. The environment block is important because that’s where you need to specify the environment variables (`COR_PROFILER`, `COR_ENABLE_PROFILING`, and `COR_PROFILER_PATH)`) used by the CLR to load your Profiler DLL .
+A new COM interface, [IPackageDebugSettings](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings), allows you to customize the execution behavior of a Windows Store app to make some forms of diagnostics easier. One of its methods, [EnableDebugging](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipackagedebugsettings-enabledebugging), lets you pass an environment block to the Windows Store app when it’s launched, along with other useful effects like disabling automatic process suspension. The environment block is important because that’s where you need to specify the environment variables (`COR_PROFILER`, `COR_ENABLE_PROFILING`, and `COR_PROFILER_PATH)`) used by the CLR to load your Profiler DLL .
 
 Consider the following code snippet:
 
@@ -215,7 +215,7 @@ appActivationMgr.ActivateApplication(appUserModelId, appArgs, ACTIVATEOPTIONS.AO
 
 **Remember to call DisableDebugging**
 
-When you called [IPackageDebugSettings::EnableDebugging](https://msdn.microsoft.com/library/hh438395\(v=VS.85\).aspx), you made a promise that you would clean up after yourself by calling the [IPackageDebugSettings::DisableDebugging](https://msdn.microsoft.com/library/hh438394\(v=vs.85\).aspx) method, so be sure to do that when the profiling session is over.
+When you called [IPackageDebugSettings::EnableDebugging](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipackagedebugsettings-enabledebugging), you made a promise that you would clean up after yourself by calling the [IPackageDebugSettings::DisableDebugging](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipackagedebugsettings-disabledebugging) method, so be sure to do that when the profiling session is over.
 
 ### Attach load
 
@@ -223,7 +223,7 @@ When your Profiler UI wants to attach its Profiler DLL to an application that ha
 
 **EnableDebugging**
 
-As with startup load, call the [IPackageDebugSettings::EnableDebugging](https://msdn.microsoft.com/library/hh438395\(v=VS.85\).aspx) method. You don’t need it for passing an environment block, but you need one of its other features: disabling automatic process suspension. Otherwise, when your Profiler UI calls [AttachProfiler](iclrprofiling-attachprofiler-method.md), the target Windows Store app may be suspended. In fact, this is likely if the user is now interacting with your Profiler UI, and the Windows Store app is not active on any of the user’s screens. And if the Windows Store app is suspended, it won’t be able to respond to any signal that the CLR sends to it to attach your Profiler DLL.
+As with startup load, call the [IPackageDebugSettings::EnableDebugging](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipackagedebugsettings-enabledebugging) method. You don’t need it for passing an environment block, but you need one of its other features: disabling automatic process suspension. Otherwise, when your Profiler UI calls [AttachProfiler](iclrprofiling-attachprofiler-method.md), the target Windows Store app may be suspended. In fact, this is likely if the user is now interacting with your Profiler UI, and the Windows Store app is not active on any of the user’s screens. And if the Windows Store app is suspended, it won’t be able to respond to any signal that the CLR sends to it to attach your Profiler DLL.
 
 So you’ll want to do something like this:
 
@@ -237,7 +237,7 @@ This is the same call you’d make for the startup load case, except you don’t
 
 **DisableDebugging**
 
-As always, don’t forget to call [IPackageDebugSettings::DisableDebugging](https://msdn.microsoft.com/library/hh438394\(v=vs.85\).aspx) when your profiling session is completed.
+As always, don’t forget to call [IPackageDebugSettings::DisableDebugging](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipackagedebugsettings-disabledebugging) when your profiling session is completed.
 
 ## Running inside the Windows Store app
 
@@ -267,7 +267,7 @@ You might find that you absolutely cannot do without a particular API and cannot
 
 ### Reduced permissions
 
-It’s outside the scope of this topic to list all the ways that Windows Store app permissions differ from desktop apps. But certainly the behavior will be different every time your Profiler DLL (when loaded into a Windows Store app as compared to a desktop app) tries to access any resources. The file system is the most common example. There are but a few places on disk that a given Windows Store app is allowed to access (see [File access and permissions (Windows Runtime apps](https://msdn.microsoft.com/library/windows/apps/hh967755.aspx)), and your Profiler DLL will be under the same restrictions. Test your code thoroughly.
+It’s outside the scope of this topic to list all the ways that Windows Store app permissions differ from desktop apps. But certainly the behavior will be different every time your Profiler DLL (when loaded into a Windows Store app as compared to a desktop app) tries to access any resources. The file system is the most common example. There are but a few places on disk that a given Windows Store app is allowed to access (see [File access and permissions (Windows Runtime apps](/previous-versions/windows/apps/hh967755(v=win.10))), and your Profiler DLL will be under the same restrictions. Test your code thoroughly.
 
 ### Inter-process communication
 
@@ -292,7 +292,7 @@ ApplicationData appData =
 tempDir = appData.TemporaryFolder.Path;
 ```
 
-Meanwhile, your Profiler DLL can do basically the same thing, though it can more easily get to the [ApplicationData](https://msdn.microsoft.com/library/windows/apps/windows.storage.applicationdata.aspx) class by using the [ApplicationData.Current](https://msdn.microsoft.com/library/windows/apps/windows.storage.applicationdata.current.aspx) property.
+Meanwhile, your Profiler DLL can do basically the same thing, though it can more easily get to the <xref:Windows.Storage.ApplicationData> class by using the [ApplicationData.Current](xref:Windows.Storage.ApplicationData.Current%2A) property.
 
 **Communicating via events**
 
@@ -406,8 +406,8 @@ It is possible to use the CLR Profiling API to analyze managed code running insi
 
 **Windows Store apps**
 
-- [File access and permissions (Windows Runtime apps](https://msdn.microsoft.com/library/windows/apps/hh967755.aspx)
+- [File access and permissions (Windows Runtime apps](/previous-versions/windows/apps/hh967755%28v=win.10%29)
 
-- [Get a developer license](https://msdn.microsoft.com/library/windows/apps/Hh974578.aspx)
+- [Get a developer license](/previous-versions/windows/apps/hh974578%28v=win.10%29)
 
-- [IPackageDebugSettings Interface](https://msdn.microsoft.com/library/hh438393\(v=vs.85\).aspx)
+- [IPackageDebugSettings Interface](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings)

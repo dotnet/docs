@@ -8,7 +8,7 @@ Maps a service to an application domain.
   
 ## Syntax  
   
-```  
+```csharp
 class ServiceAppDomain  
 {  
   Service ref;  

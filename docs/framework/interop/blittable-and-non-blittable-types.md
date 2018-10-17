@@ -56,13 +56,13 @@ Most data types have a common representation in both managed and unmanaged memor
 |Non-blittable type|Description|  
 |-------------------------|-----------------|  
 |[System.Array](../../../docs/framework/interop/default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
-|[System.Boolean](https://msdn.microsoft.com/library/d4c00537-70f7-4ca6-8197-bfc1ec037ff9(v=vs.100))|Converts to a 1, 2, or 4-byte value with `true` as 1 or -1.|  
-|[System.Char](https://msdn.microsoft.com/library/cecc87c1-075e-4cde-aa56-33d189f66feb(v=vs.100))|Converts to a Unicode or ANSI character.|  
-|[System.Class](https://msdn.microsoft.com/library/fe334af5-0123-43d8-be84-26f6f023ddb6(v=vs.100))|Converts to a class interface.|  
+|[System.Boolean](/previous-versions/dotnet/netframework-4.0/t2t3725f(v=vs.100))|Converts to a 1, 2, or 4-byte value with `true` as 1 or -1.|  
+|[System.Char](/previous-versions/dotnet/netframework-4.0/6tyybbf2(v=vs.100))|Converts to a Unicode or ANSI character.|  
+|[System.Class](/previous-versions/dotnet/netframework-4.0/s0968xy8(v=vs.100))|Converts to a class interface.|  
 |[System.Object](../../../docs/framework/interop/default-marshaling-for-objects.md)|Converts to a variant or an interface.|  
 |[System.Mdarray](../../../docs/framework/interop/default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
 |[System.String](../../../docs/framework/interop/default-marshaling-for-strings.md)|Converts to a string terminating in a null reference or to a BSTR.|  
-|[System.Valuetype](https://msdn.microsoft.com/library/4d9a876c-e05a-40ba-bd85-bd22877f984a(v=vs.100))|Converts to a structure with a fixed memory layout.|  
+|[System.Valuetype](/previous-versions/dotnet/netframework-4.0/0t2cwe11(v=vs.100))|Converts to a structure with a fixed memory layout.|  
 |[System.Szarray](../../../docs/framework/interop/default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
   
  Class and object types are supported only by COM interop. For corresponding types in [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], C#, and C++, see the [Class Library Overview](../../../docs/standard/class-library-overview.md).  

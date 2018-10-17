@@ -9,7 +9,7 @@ SymmetricSecurityBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class SymmetricSecurityBindingElement : SecurityBindingElement  
 {  
   string MessageProtectionOrder;  

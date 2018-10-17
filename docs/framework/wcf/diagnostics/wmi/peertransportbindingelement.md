@@ -8,7 +8,7 @@ PeerTransportBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class PeerTransportBindingElement : TransportBindingElement  
 {  
   string ListenIPAddress;  

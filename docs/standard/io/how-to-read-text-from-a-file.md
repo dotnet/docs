@@ -39,7 +39,7 @@ The following examples show how to read text synchronously and asynchronously fr
 - <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType>  
 - [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)  
 - [NIB: How to: Create a Directory Listing](https://msdn.microsoft.com/library/4d2772b1-b991-4532-a8a6-6ef733277e69)  
-- [Quickstart: Reading and writing files](https://msdn.microsoft.com/library/windows/apps/hh758325.aspx)  
+- [Quickstart: Reading and writing files](/previous-versions/windows/apps/hh758325%28v=win.10%29)  
 - [How to: Convert Between .NET Framework Streams and Windows Runtime Streams](../../../docs/standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md)  
 - [How to: Read and Write to a Newly Created Data File](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
 - [How to: Open and Append to a Log File](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  

@@ -105,11 +105,9 @@ namespace Microsoft.eShopOnContainers.WebMVC
     {
         public static void Main(string[] args)
         {
-            var host = new WebHostBuilder()
-                .UseKestrel()
+            var host = WebHost.CreateDefaultBuilder(args)
                 .UseHealthChecks("/hc")
                 .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
             host.Run();

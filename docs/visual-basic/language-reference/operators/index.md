@@ -1,39 +1,42 @@
 ---
 title: "Operators (Visual Basic)"
-ms.date: 07/20/2015
+ms.date: 10/17/2018
 helpviewer_keywords: 
   - "operators [Visual Basic]"
 ms.assetid: 3d3421df-fcc5-4888-9249-d78f16774ce6
 ---
 # Operators (Visual Basic)
-## In This Section  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
+## In this section
+
+ [Operator precedence in Visual Basic](operator-precedence.md)  
   
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
+ [Operators listed by functionality](operators-listed-by-functionality.md)  
   
- [Data Types of Operator Results](../../../visual-basic/language-reference/operators/data-types-of-operator-results.md)  
+ [Data types of operator results](data-types-of-operator-results.md)  
   
- [DirectCast Operator](../../../visual-basic/language-reference/operators/directcast-operator.md)  
+ [DirectCast operator](directcast-operator.md)  
   
- [TryCast Operator](../../../visual-basic/language-reference/operators/trycast-operator.md)  
+ [TryCast operator](trycast-operator.md)  
   
- [New Operator](../../../visual-basic/language-reference/operators/new-operator.md)  
+ [New operator](new-operator.md)  
+
+ [Null-conditional operators](null-conditional-operators.md)
+
+ [Arithmetic operators](arithmetic-operators.md)  
   
- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  
+ [Assignment operators](assignment-operators.md)  
   
- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  
+ [Bit Shift operators](bit-shift-operators.md)  
   
- [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)  
+ [Comparison operators](comparison-operators.md)  
   
- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)  
+ [Concatenation operators](concatenation-operators.md)  
   
- [Concatenation Operators](../../../visual-basic/language-reference/operators/concatenation-operators.md)  
+ [Logical/Bitwise operators](logical-bitwise-operators.md)  
   
- [Logical/Bitwise Operators](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)  
+ [Miscellaneous operators](miscellaneous-operators.md)  
   
- [Miscellaneous Operators](../../../visual-basic/language-reference/operators/miscellaneous-operators.md)  
-  
-## Related Sections  
- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  
+## Related sections  
+ [Visual Basic language reference](../../../visual-basic/language-reference/index.md)  
   
  [Visual Basic](../../../visual-basic/index.md)

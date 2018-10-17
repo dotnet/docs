@@ -6,8 +6,8 @@ helpviewer_keywords:
   - "?. operator [Visual Basic]"
   - "?[] operator [C#]"
   - "?[] operator [Visual Basic]"
-
-# ?. and ?[] null-conditional operators (Visual Basic)
+---
+# ?. and ?() null-conditional operators (Visual Basic)
 
 Tests the value of the left-hand operand for null (`Nothing`) before performing a member access (`?.`) or index (`?()`) operation; returns `Nothing` if the left-hand operand evaluates to `Nothing`.
 

@@ -23,7 +23,7 @@ Aspects of high-quality open-source .NET libraries:
 
 ## Types of recommendations
 
-Articles in this guidance present recommendations of four types: **Do**, **Consider**, **Avoid**, and **Do not**. The type of recommendation indicates how strongly it should be followed.
+Each article presents four types of recommendations: **Do**, **Consider**, **Avoid**, and **Do not**. The type of recommendation indicates how strongly it should be followed.
 
 You should almost always follow a **Do** recommendation. For example:
 

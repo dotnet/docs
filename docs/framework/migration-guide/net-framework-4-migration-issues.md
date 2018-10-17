@@ -14,7 +14,7 @@ This topic describes migration issues between the .NET Framework version 3.5 Ser
 
 This topic describes notable changes in the following areas:
 
-* [ASP.NET and Web](#asp-net-and-web)
+* [ASP.NET and Web](#aspnet-and-web)
 
 * [Core](#core)
 

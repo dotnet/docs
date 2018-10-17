@@ -158,7 +158,7 @@ Performance counters can also be queried programmatically. Many people collect t
 > [!NOTE]
 > We recommend that you to use ETW events instead of performance counters, because ETW provides much richer information.
 
-### ETW
+### ETW events
 
 The garbage collector provides a rich set of ETW events to help you understand what the heap is doing and why. The following blog posts show how to collect and understand GC events with ETW:
 

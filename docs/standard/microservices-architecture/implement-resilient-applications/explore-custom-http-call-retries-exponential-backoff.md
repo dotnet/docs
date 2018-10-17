@@ -1,9 +1,9 @@
 ---
 title: Explore custom HTTP call retries with exponential backoff
-description: Learn how you could implement, from scratch, HTTP call retries with exponential backoff to handle possible HTTP failure scenarios.
+description: Resiliency | Learn how you could implement HTTP call retries with exponential backoff, from scratch, to handle possible HTTP failure scenarios.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 06/08/2018
+ms.date: 16/10/2018
 ---
 # Explore custom HTTP call retries with exponential backoff
 

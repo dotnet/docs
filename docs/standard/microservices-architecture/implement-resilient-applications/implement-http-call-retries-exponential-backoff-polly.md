@@ -1,9 +1,9 @@
 ---
 title: Implement HTTP call retries with exponential backoff with Polly
-description: Learn how to handle HTTP failures with Polly and HttpClientFactory
+description: Resiliency | Learn how to handle HTTP failures with Polly and HttpClientFactory.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 06/10/2018
+ms.date: 16/10/2018
 ---
 
 # Implement HTTP call retries with exponential backoff with HttpClientFactory and Polly policies
@@ -66,21 +66,17 @@ Policy
 
 ## Additional resources
 
--   **Retry pattern**
-    [*https://docs.microsoft.com/azure/architecture/patterns/retry*](https://docs.microsoft.com/azure/architecture/patterns/retry)
+- **Retry pattern**\
+  [*https://docs.microsoft.com/azure/architecture/patterns/retry*](https://docs.microsoft.com/azure/architecture/patterns/retry)
 
--   **Polly and HttpClientFactory**
-    [*https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory*](https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory)
+- **Polly and HttpClientFactory**\
+  [*https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory*](https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory)
 
--   **Polly (.NET resilience and transient-fault-handling library)**
+- **Polly (.NET resilience and transient-fault-handling library)**\
+  [*https://github.com/App-vNext/Polly*](https://github.com/App-vNext/Polly)
 
-    [*https://github.com/App-vNext/Polly*](https://github.com/App-vNext/Polly)
-
--   **Marc Brooker. Jitter: Making Things Better With Randomness**
-
-    [*https://brooker.co.za/blog/2015/03/21/backoff.html*](https://brooker.co.za/blog/2015/03/21/backoff.html)
-
-
+- **Marc Brooker. Jitter: Making Things Better With Randomness**\
+  [*https://brooker.co.za/blog/2015/03/21/backoff.html*](https://brooker.co.za/blog/2015/03/21/backoff.html)
 
 >[!div class="step-by-step"]
 [Previous](explore-custom-http-call-retries-exponential-backoff.md)

@@ -1,9 +1,9 @@
 ---
 title: Strategies for handling partial failure
-description: .NET Microservices Architecture for Containerized .NET Applications | Strategies for handling partial failure
+description: Resiliency | Get to know several strategies for handling partial failures gracefully.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 06/08/2018
+ms.date: 16/10/2018
 ---
 # Strategies for handling partial failure
 
@@ -23,21 +23,20 @@ Strategies for dealing with partial failures include the following.
 
 ## Additional resources
 
--   **Resiliency patterns**
-    [*https://docs.microsoft.com/azure/architecture/patterns/category/resiliency*](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency)
+- **Resiliency patterns**\
+  [*https://docs.microsoft.com/azure/architecture/patterns/category/resiliency*](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency)
 
--   **Adding Resilience and Optimizing Performance**
-    [*https://msdn.microsoft.com/library/jj591574.aspx*](https://msdn.microsoft.com/library/jj591574.aspx)
+- **Adding Resilience and Optimizing Performance**\
+  [*https://msdn.microsoft.com/library/jj591574.aspx*](https://msdn.microsoft.com/library/jj591574.aspx)
 
--   **Bulkhead.** GitHub repo. Implementation with Polly policy.\
-    [*https://github.com/App-vNext/Polly/wiki/Bulkhead*](https://github.com/App-vNext/Polly/wiki/Bulkhead)
+- **Bulkhead.** GitHub repo. Implementation with Polly policy.\
+  [*https://github.com/App-vNext/Polly/wiki/Bulkhead*](https://github.com/App-vNext/Polly/wiki/Bulkhead)
 
--   **Designing resilient applications for Azure**
-    [*https://docs.microsoft.com/azure/architecture/resiliency/*](https://docs.microsoft.com/azure/architecture/resiliency/)
+- **Designing resilient applications for Azure**\
+  [*https://docs.microsoft.com/azure/architecture/resiliency/*](https://docs.microsoft.com/azure/architecture/resiliency/)
 
--   **Transient fault handling**
-    <https://docs.microsoft.com/azure/architecture/best-practices/transient-faults>
-
+- **Transient fault handling**\
+  [*https://docs.microsoft.com/azure/architecture/best-practices/transient-faults*](https://docs.microsoft.com/azure/architecture/best-practices/transient-faults)
 
 >[!div class="step-by-step"]
 [Previous](handle-partial-failure.md)

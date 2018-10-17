@@ -1,9 +1,9 @@
 ---
 title: Health monitoring
-description: .NET Microservices Architecture for Containerized .NET Applications | Health monitoring
+description: Resiliency | Explore one way of implementing heath monitoring.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 12/11/2017
+ms.date: 16/10/2018
 ---
 # Health monitoring
 
@@ -36,9 +36,9 @@ You could also use additional checks like the ones for Azure (Microsoft.Extensio
 
 Figure 10-6 shows the HealthChecks library in Visual Studio, ready to be used as a building block by any microservices.
 
-![](./media/image6.png)
+![Solution explorer view of the HealthChecks folder, showing the three projects.](./media/image6.png)
 
-**Figure 10-6**. ASP.NET Core HealthChecks library source code in a Visual Studio solution
+**Figure 8-7**. ASP.NET Core HealthChecks library source code in a Visual Studio solution
 
 As introduced earlier, the first thing to do in each microservice project is to add a reference to the three HealthChecks libraries. After that, you add the health check actions that you want to perform in that microservice. These actions are basically dependencies on other microservices (HttpUrlCheck) or databases (currently SqlCheck\* for SQL Server databases). You add the action within the Startup class of each ASP.NET microservice or ASP.NET web application.
 
@@ -136,9 +136,9 @@ checks.AddUrlCheck(Configuration["CatalogUrl"],1); // 1 min as cache duration
 
 When you have configured health checks as described here, once the microservice is running in Docker, you can directly check from a browser if it is healthy. (This does require that you are publishing the container port out of the Docker host, so you can access the container through localhost or through the external Docker host IP.) Figure 10-7 shows a request in a browser and the corresponding response.
 
-![](./media/image7.png)
+![Browser view of the json response returned by a health check](./media/image7.png)
 
-**Figure 10-7**. Checking health status of a single service from a browser
+**Figure 8-8**. Checking health status of a single service from a browser
 
 In that test, you can see that the catalog.api microservice (running on port 5101) is healthy, returning HTTP status 200 and status information in JSON. It also means that internally the service also checked the health of its SQL Server database dependency and that health check was reported itself as healthy.
 
@@ -148,9 +148,9 @@ A watchdog is a separate service that can watch health and load across services,
 
 The eShopOnContainers sample contains a web page that displays sample health check reports, as shown in Figure 10-8. This is the simplest watchdog you could have, since all it does is shows the state of the microservices and web applications in eShopOnContainers. Usually a watchdog also takes actions when it detects unhealthy states.
 
-![](./media/image8.png)
+![Browser view of the WebStatus app, showing the health status of five microservices from eShopOnContainers](./media/image8.png)
 
-**Figure 10-8**. Sample health check report in eShopOnContainers
+**Figure 8-9**. Sample health check report in eShopOnContainers
 
 In summary, the ASP.NET middleware of the ASP.NET Core HealthChecks library provides a single health check endpoint for each microservice. This will execute all the health checks defined within it and return an overall health state depending on all those checks.
 
@@ -178,17 +178,17 @@ Finally, if you were storing all the event streams, you can use Microsoft Power 
 
 ## Additional resources
 
--   **ASP.NET Core HealthChecks** (early release)
-    [*https://github.com/aspnet/HealthChecks/*](https://github.com/aspnet/HealthChecks/)
+- **ASP.NET Core HealthChecks** (experimental release)\
+  [*https://github.com/dotnet-architecture/HealthChecks/*](https://github.com/dotnet-architecture/HealthChecks/)
 
--   **Introduction to Service Fabric health monitoring**
-    [*https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction*](https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction)
+- **Introduction to Service Fabric health monitoring**\
+  [*https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction*](https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction)
 
--   **Azure Application Insights**
-    [*https://azure.microsoft.com/services/application-insights/*](https://azure.microsoft.com/services/application-insights/)
+- **Azure Application Insights**\
+  [*https://azure.microsoft.com/services/application-insights/*](https://azure.microsoft.com/services/application-insights/)
 
--   **Microsoft Operations Management Suite**
-    [*https://www.microsoft.com/en-us/cloud-platform/operations-management-suite*](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite)
+- **Microsoft Operations Management Suite**\
+  [*https://www.microsoft.com/cloud-platform/operations-management-suite*](https://www.microsoft.com/cloud-platform/operations-management-suite)
 
 >[!div class="step-by-step"]
 [Previous](implement-circuit-breaker-pattern.md)

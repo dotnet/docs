@@ -1073,7 +1073,7 @@ So far, this document has explained how to provide erased types. You can also us
 ```fsharp
 open Microsoft.FSharp.TypeProviders 
 
-type Service = ODataService<"https://services.odata.org/Northwind/Northwind.svc/">
+type Service = ODataService<"http://services.odata.org/Northwind/Northwind.svc/">
 ```
 
 The ProvidedTypes-0.2 helper code that is part of the F# 3.0 release has only limited support for providing generated types. The following statements must be true for a generated type definition:

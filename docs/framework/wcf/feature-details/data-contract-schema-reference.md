@@ -544,7 +544,7 @@ public class Employee : Person
    elementFormDefault="qualified"        
    targetNamespace =   
     "http://schemas.microsoft.com/2003/10/Serialization/"   
-   xmlns:xs="https://www.w3.org/2001/XMLSchema"        
+   xmlns:xs="http://www.w3.org/2001/XMLSchema"        
    xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">  
   
  <!-- Top-level elements for primitive types. -->  
@@ -653,10 +653,10 @@ new XmlQualifiedName("Person","http://Microsoft.ServiceModel.Samples");
 ```xml  
 <OffSet xmlns:a="http://schemas.datacontract.org/2004/07/System">  
   <DateTime i:type="b:dateTime" xmlns=""   
-    xmlns:b="https://www.w3.org/2001/XMLSchema">2008-08-28T08:00:00    
+    xmlns:b="http://www.w3.org/2001/XMLSchema">2008-08-28T08:00:00    
   </DateTime>   
   <OffsetMinutes i:type="b:short" xmlns=""   
-   xmlns:b="https://www.w3.org/2001/XMLSchema">-480  
+   xmlns:b="http://www.w3.org/2001/XMLSchema">-480  
    </OffsetMinutes>   
 </OffSet>  
 ```  

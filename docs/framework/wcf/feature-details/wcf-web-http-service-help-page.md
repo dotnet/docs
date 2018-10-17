@@ -57,7 +57,7 @@ using (WebServiceHost host = new WebServiceHost(typeof(Service), new Uri("http:/
   
 ```xml  
 <?xml version="1.0" encoding="utf-16"?>  
-<xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="https://www.w3.org/2001/XMLSchema">  
+<xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
   <xs:element name="anyType" nillable="true" type="xs:anyType" />  
   <xs:element name="anyURI" nillable="true" type="xs:anyURI" />  
   <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />  
@@ -100,7 +100,7 @@ using (WebServiceHost host = new WebServiceHost(typeof(Service), new Uri("http:/
 </xs:schema>  
   
 <?xml version="1.0" encoding="utf-16"?>  
-<xs:schema xmlns:tns="http://microsoft.com/wsdl/types/" elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/" xmlns:xs="https://www.w3.org/2001/XMLSchema">  
+<xs:schema xmlns:tns="http://microsoft.com/wsdl/types/" elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
   <xs:simpleType name="guid">  
     <xs:restriction base="xs:string">  
       <xs:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />  
@@ -112,7 +112,7 @@ using (WebServiceHost host = new WebServiceHost(typeof(Service), new Uri("http:/
 </xs:schema>  
   
 <?xml version="1.0" encoding="utf-16"?>  
-<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/System" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System" xmlns:xs="https://www.w3.org/2001/XMLSchema">  
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/System" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
   <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />  
   <xs:complexType name="DateTimeOffset">  
     <xs:annotation>  
@@ -133,7 +133,7 @@ using (WebServiceHost host = new WebServiceHost(typeof(Service), new Uri("http:/
 </xs:schema>  
   
 <?xml version="1.0" encoding="utf-16"?>  
-<xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:xs="https://www.w3.org/2001/XMLSchema">  
+<xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
   <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />  
   <xs:complexType name="ArrayOfboolean">  
     <xs:sequence>  

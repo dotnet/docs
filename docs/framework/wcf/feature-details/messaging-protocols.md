@@ -44,14 +44,14 @@ The following XML namespaces and associated prefixes are used throughout this to
 |Prefix|Namespace Uniform Resource Identifier (URI)|
 [------------|---------------------------------------------------|
 |s11|`http://schemas.xmlsoap.org/soap/envelope`|
-|s12|`https://www.w3.org/2003/05/soap-envelope`|
-|wsa|`https://www.w3.org/2004/08/addressing`|
-|wsam|`https://www.w3.org/2007/05/addressing/metadata`|
+|s12|`http://www.w3.org/2003/05/soap-envelope`|
+|wsa|`http://www.w3.org/2004/08/addressing`|
+|wsam|`http://www.w3.org/2007/05/addressing/metadata`|
 |wsap|`http://schemas.xmlsoap.org/ws/2004/09/policy/addressing`|
-|wsa10|`https://www.w3.org/2005/08/addressing`|
-|wsaw10|`https://www.w3.org/2006/05/addressing/wsdl`|
-|xop|`https://www.w3.org/2004/08/xop/include`|
-|xmime|`https://www.w3.org/2004/06/xmlmime`<br /><br /> `https://www.w3.org/2005/05/xmlmime`|
+|wsa10|`http://www.w3.org/2005/08/addressing`|
+|wsaw10|`http://www.w3.org/2006/05/addressing/wsdl`|
+|xop|`http://www.w3.org/2004/08/xop/include`|
+|xmime|`http://www.w3.org/2004/06/xmlmime`<br /><br /> `http://www.w3.org/2005/05/xmlmime`|
 |dp|`http://schemas.microsoft.com/net/2006/06/duplex`|
 
 ## SOAP 1.1 and SOAP 1.2
@@ -188,7 +188,7 @@ When a WCF endpoint is configured for a message with a given `Action` to follow 
 
 - R3322: When WS-Addressing 2004/08 is used, `ReplyTo` must also be included in the request.
 
-- R3323: When WS-Addressing 1.0 is used and `ReplyTo` is not present in the request, a default endpoint reference with the [address] property equal to `https://www.w3.org/2005/08/addressing/anonymous` is used.
+- R3323: When WS-Addressing 1.0 is used and `ReplyTo` is not present in the request, a default endpoint reference with the [address] property equal to `http://www.w3.org/2005/08/addressing/anonymous` is used.
 
 - R3324: The requester must include `wsa:To`, `wsa:Action`, and `wsa:RelatesTo` headers in the reply message, as well as headers for all reference parameters or reference properties (or both) specified by the `ReplyTo` endpoint reference in the request.
 
@@ -285,11 +285,11 @@ Use of the following assertion that has Endpoint Policy Subject [WS-PA] on endpo
 
 The previous statement leads to the following requirements on the `wsa:ReplyTo` header for request messages:
 
-- R3514: Request messages sent to an endpoint must have a `ReplyTo` header with the `[address]` property not equal to `https://www.w3.org/2005/08/addressing/anonymous` if the endpoint uses a WSDL 1.1 SOAP 1.x HTTP binding and has a policy alternative with a `wsap10:UsingAddressing` or `wsap:UsingAddressing` assertion coupled with `cdp:CompositeDuplex` attached.
+- R3514: Request messages sent to an endpoint must have a `ReplyTo` header with the `[address]` property not equal to `http://www.w3.org/2005/08/addressing/anonymous` if the endpoint uses a WSDL 1.1 SOAP 1.x HTTP binding and has a policy alternative with a `wsap10:UsingAddressing` or `wsap:UsingAddressing` assertion coupled with `cdp:CompositeDuplex` attached.
 
-- R3515: Request messages sent to an endpoint must have a `ReplyTo` header with the `[address]` property equal to `https://www.w3.org/2005/08/addressing/anonymous`, or not have a `ReplyTo` header at all, if the endpoint uses a WSDL 1.1 SOAP 1.x HTTP binding and has a policy alternative with `wsap10:UsingAddressing` assertion and no `cdp:CompositeDuplex` assertion attached.
+- R3515: Request messages sent to an endpoint must have a `ReplyTo` header with the `[address]` property equal to `http://www.w3.org/2005/08/addressing/anonymous`, or not have a `ReplyTo` header at all, if the endpoint uses a WSDL 1.1 SOAP 1.x HTTP binding and has a policy alternative with `wsap10:UsingAddressing` assertion and no `cdp:CompositeDuplex` assertion attached.
 
-- R3516: Request messages sent to an endpoint must have a `ReplyTo` header with an `[address]` property equal to `https://www.w3.org/2005/08/addressing/anonymous` if the endpoint uses a WSDL 1.1 SOAP 1.x HTTP binding and has a policy alternative with `wsap:UsingAddressing` assertion and no `cdp:CompositeDuplex` assertion attached.
+- R3516: Request messages sent to an endpoint must have a `ReplyTo` header with an `[address]` property equal to `http://www.w3.org/2005/08/addressing/anonymous` if the endpoint uses a WSDL 1.1 SOAP 1.x HTTP binding and has a policy alternative with `wsap:UsingAddressing` assertion and no `cdp:CompositeDuplex` assertion attached.
 
 The WS-addressing WSDL specification attempts to describe similar protocol bindings by introducing an element `<wsaw:Anonymous/>` with three textual values (required, optional, and prohibited) to indicate requirements on the `wsa:ReplyTo` header (section 3.2). Unfortunately, such element definition is not particularly usable as an assertion in the context of WS-Policy, because it requires domain-specific extensions to support the intersection of alternatives using such an element as an assertion. Such element definition also indicates the value of the `ReplyTo` header as opposed to the endpoint behavior on the wire, which makes it specific to HTTP transport.
 
@@ -391,7 +391,7 @@ The [XOP] section 3.1 describes the process of encoding XML with element informa
 
 The following sequence of steps describes the MTOM-specific encoding process:
 
-1. Ensure that the SOAP Envelope to be encoded contains no element information item with a `[namespace name]` of `https://www.w3.org/2004/08/xop/include` and a `[local name]` of `Include`.
+1. Ensure that the SOAP Envelope to be encoded contains no element information item with a `[namespace name]` of `http://www.w3.org/2004/08/xop/include` and a `[local name]` of `Include`.
 
 2. Create an empty MIME package.
 
@@ -592,7 +592,7 @@ Content-Type: application/xop+xml;charset=utf-8;type="text/xml"
       <array>
         <xop:Include
          href="cid:http%3A%2F%2Ftempuri.org%2F1%2F632618206521093670"
-         xmlns:xop="https://www.w3.org/2004/08/xop/include"/>
+         xmlns:xop="http://www.w3.org/2004/08/xop/include"/>
       </array>
     </EchoBinaryAsString>
   </s:Body>
@@ -629,11 +629,11 @@ Content-Type: application/xop+xml;charset=utf-8;type="application/soap+xml"
         <u:Expires>2005-09-09T07:02:32.488Z</u:Expires>
       </u:Timestamp>
       <o:BinarySecurityToken u:Id="uuid-4d4ee765-5717-4d53-9ac9-99bddc07df6c-2" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">
-        <xop:Include href="cid:http%3A%2F%2Ftempuri.org%2F1%2F632618206525089430" xmlns:xop="https://www.w3.org/2004/08/xop/include"/>
+        <xop:Include href="cid:http%3A%2F%2Ftempuri.org%2F1%2F632618206525089430" xmlns:xop="http://www.w3.org/2004/08/xop/include"/>
       </o:BinarySecurityToken>
-      <e:EncryptedKey Id="_1" xmlns:e="https://www.w3.org/2001/04/xmlenc#">
-        <e:EncryptionMethod Algorithm="https://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
-        <KeyInfo xmlns="https://www.w3.org/2000/09/xmldsig#">
+      <e:EncryptedKey Id="_1" xmlns:e="http://www.w3.org/2001/04/xmlenc#">
+        <e:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+        <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
           <o:SecurityTokenReference>
             <o:KeyIdentifier ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509SubjectKeyIdentifier">Xeg55vRyK3ZhAEhEf+YT0z986L0=</o:KeyIdentifier>
           </o:SecurityTokenReference>
@@ -647,36 +647,36 @@ Content-Type: application/xop+xml;charset=utf-8;type="application/soap+xml"
         </o:SecurityTokenReference>
         <c:Nonce>OrEPRX7fISIS4sXYWPMv3g==</c:Nonce>
       </c:DerivedKeyToken>
-      <e:ReferenceList xmlns:e="https://www.w3.org/2001/04/xmlenc#">
+      <e:ReferenceList xmlns:e="http://www.w3.org/2001/04/xmlenc#">
         <e:DataReference URI="#_3"/>
         <e:DataReference URI="#_4"/>
       </e:ReferenceList>
-      <e:EncryptedData Id="_4" Type="https://www.w3.org/2001/04/xmlenc#Element" xmlns:e="https://www.w3.org/2001/04/xmlenc#">
-        <e:EncryptionMethod Algorithm="https://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
-        <KeyInfo xmlns="https://www.w3.org/2000/09/xmldsig#">
+      <e:EncryptedData Id="_4" Type="http://www.w3.org/2001/04/xmlenc#Element" xmlns:e="http://www.w3.org/2001/04/xmlenc#">
+        <e:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+        <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
           <o:SecurityTokenReference>
             <o:Reference URI="#_2"/>
           </o:SecurityTokenReference>
         </KeyInfo>
         <e:CipherData>
           <e:CipherValue>
-            <xop:Include href="cid:http%3A%2F%2Ftempuri.org%2F2%2F632618206525089430" xmlns:xop="https://www.w3.org/2004/08/xop/include"/>
+            <xop:Include href="cid:http%3A%2F%2Ftempuri.org%2F2%2F632618206525089430" xmlns:xop="http://www.w3.org/2004/08/xop/include"/>
           </e:CipherValue>
         </e:CipherData>
       </e:EncryptedData>
     </o:Security>
   </s:Header>
   <s:Body u:Id="_0">
-    <e:EncryptedData Id="_3" Type="https://www.w3.org/2001/04/xmlenc#Content" xmlns:e="https://www.w3.org/2001/04/xmlenc#">
-      <e:EncryptionMethod Algorithm="https://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
-      <KeyInfo xmlns="https://www.w3.org/2000/09/xmldsig#">
+    <e:EncryptedData Id="_3" Type="http://www.w3.org/2001/04/xmlenc#Content" xmlns:e="http://www.w3.org/2001/04/xmlenc#">
+      <e:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
         <o:SecurityTokenReference xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
           <o:Reference URI="#_2"/>
         </o:SecurityTokenReference>
       </KeyInfo>
       <e:CipherData>
         <e:CipherValue>
-          <xop:Include href="cid:http%3A%2F%2Ftempuri.org%2F3%2F632618206525089430" xmlns:xop="https://www.w3.org/2004/08/xop/include"/>
+          <xop:Include href="cid:http%3A%2F%2Ftempuri.org%2F3%2F632618206525089430" xmlns:xop="http://www.w3.org/2004/08/xop/include"/>
         </e:CipherValue>
       </e:CipherData>
     </e:EncryptedData>

@@ -130,7 +130,7 @@ Following is the full contents of the *WebForm1.aspx* page:
 
 <!DOCTYPE html>
 
-<html xmlns="https://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
     <script type="text/javascript">

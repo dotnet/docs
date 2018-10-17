@@ -65,8 +65,8 @@ interface ITestService
 ### Start Message  
   
 ```xml  
-<s:Envelope xmlns:a="https://www.w3.org/2005/08/addressing"   
-            xmlns:s="https://www.w3.org/2003/05/soap-envelope">  
+<s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing"   
+            xmlns:s="http://www.w3.org/2003/05/soap-envelope">  
   <s:Header>  
 <!—Original message action is replaced with a chunking-specific action. -->  
     <a:Action s:mustUnderstand="1">http://samples.microsoft.com/chunkingAction</a:Action>  
@@ -80,7 +80,7 @@ in a MessageId header. Note that this is different from the WS-Addressing Messag
 <!--  
 ChunkingStart header signals the start of a chunked message.  
 -->  
-    <ChunkingStart s:mustUnderstand="1" i:nil="true" xmlns:i="https://www.w3.org/2001/XMLSchema-instance" xmlns="http://samples.microsoft.com/chunking" />  
+    <ChunkingStart s:mustUnderstand="1" i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://samples.microsoft.com/chunking" />  
 <!--  
 Original message action is transmitted in OriginalAction.  
 This is required to re-create the original message on the other side.  
@@ -112,8 +112,8 @@ the data to be chunked.
   
 ```xml  
 <s:Envelope   
-  xmlns:a="https://www.w3.org/2005/08/addressing"   
-  xmlns:s="https://www.w3.org/2003/05/soap-envelope">  
+  xmlns:a="http://www.w3.org/2005/08/addressing"   
+  xmlns:s="http://www.w3.org/2003/05/soap-envelope">  
   <s:Header>  
    <!--  
     All chunking protocol messages have this action.  
@@ -153,8 +153,8 @@ kfSr2QcBlkHTvQ==
 ### End Message  
   
 ```xml  
-<s:Envelope xmlns:a="https://www.w3.org/2005/08/addressing"   
-            xmlns:s="https://www.w3.org/2003/05/soap-envelope">  
+<s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing"   
+            xmlns:s="http://www.w3.org/2003/05/soap-envelope">  
   <s:Header>  
     <a:Action s:mustUnderstand="1">  
       http://samples.microsoft.com/chunkingAction  
@@ -170,7 +170,7 @@ Same as MessageId in the start message. The GUID indicates which original messag
 ChunkingEnd header signals the end of a chunk sequence.  
 -->  
     <ChunkingEnd s:mustUnderstand="1" i:nil="true"   
-                 xmlns:i="https://www.w3.org/2001/XMLSchema-instance"   
+                 xmlns:i="http://www.w3.org/2001/XMLSchema-instance"   
                  xmlns="http://samples.microsoft.com/chunking" />  
 <!--  
 ChunkingEnd messages have a sequence number.  

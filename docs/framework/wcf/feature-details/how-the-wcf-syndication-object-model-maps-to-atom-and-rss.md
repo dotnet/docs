@@ -51,7 +51,7 @@ When developing a Windows Communication Foundation (WCF) syndication service, yo
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<feed xml:lang="EN-US" xmlns="https://www.w3.org/2005/Atom">  
+<feed xml:lang="EN-US" xmlns="http://www.w3.org/2005/Atom">  
   <title type="text">My Feed Title</title>  
   <subtitle type="text">My Feed Description</subtitle>  
   <id>FeedID</id>  
@@ -100,7 +100,7 @@ When developing a Windows Communication Foundation (WCF) syndication service, yo
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<rss xmlns:a10="https://www.w3.org/2005/Atom" version="2.0">  
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0">  
   <channel>  
     <title>My Feed Title</title>  
     <link>http://myfeeduri/</link>  
@@ -147,7 +147,7 @@ When developing a Windows Communication Foundation (WCF) syndication service, yo
  The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationItem> is serialized to Atom 1.0.  
   
 ```xml  
-<entry xmlns="https://www.w3.org/2005/Atom">  
+<entry xmlns="http://www.w3.org/2005/Atom">  
   <id>ItemID</id>  
   <title type="text">Item Title</title>  
   <summary type="text">Item Summary</summary>  
@@ -192,12 +192,12 @@ When developing a Windows Communication Foundation (WCF) syndication service, yo
 <item>  
   <guid isPermaLink="false">ItemID</guid>  
   <link>http://myitemuri/</link>  
-  <author xmlns="https://www.w3.org/2005/Atom">  
+  <author xmlns="http://www.w3.org/2005/Atom">  
     <name>Jesper Aaberg</name>  
     <uri>http://Jesper/Aaberg</uri>  
     <email>Jesper@Aaberg.com</email>  
   </author>  
-  <author xmlns="https://www.w3.org/2005/Atom">  
+  <author xmlns="http://www.w3.org/2005/Atom">  
     <name>Syed Abbas</name>  
     <uri>http://Contoso/Abbas</uri>  
     <email>Syed.Abbas@contoso.com</email>  
@@ -208,15 +208,15 @@ When developing a Windows Communication Foundation (WCF) syndication service, yo
   <description>Item Summary</description>  
   <source>My Feed Title</source>  
   <pubDate>Wed, 29 Aug 2007 00:00:00 -0700</pubDate>  
-  <updated xmlns="https://www.w3.org/2005/Atom">2007-08-29T14:07:09-07:00</updated>  
-  <rights type="text" xmlns="https://www.w3.org/2005/Atom">Copyright 2007</rights>  
-  <content type="text" xmlns="https://www.w3.org/2005/Atom">Item Content</content>  
-  <contributor xmlns="https://www.w3.org/2005/Atom">  
+  <updated xmlns="http://www.w3.org/2005/Atom">2007-08-29T14:07:09-07:00</updated>  
+  <rights type="text" xmlns="http://www.w3.org/2005/Atom">Copyright 2007</rights>  
+  <content type="text" xmlns="http://www.w3.org/2005/Atom">Item Content</content>  
+  <contributor xmlns="http://www.w3.org/2005/Atom">  
     <name>Lene Aaling</name>  
     <uri>http://Contoso/Aaling</uri>  
     <email>Lene.Aaling@contoso.com</email>  
   </contributor>  
-  <contributor xmlns="https://www.w3.org/2005/Atom">  
+  <contributor xmlns="http://www.w3.org/2005/Atom">  
     <name>Kim Abercrombie</name>  
     <uri>http://Contoso/Abercrombie</uri>  
     <email>Kim.Abercrombie@contoso.com</email>  
@@ -367,7 +367,7 @@ When developing a Windows Communication Foundation (WCF) syndication service, yo
   
  `<description />`  
   
- `<content type="audio" src="http://Contoso/someurl/" xmlns="https://www.w3.org/2005/Atom" />`  
+ `<content type="audio" src="http://Contoso/someurl/" xmlns="http://www.w3.org/2005/Atom" />`  
   
 ## XmlSyndicationContent  
  The following code example shows how to serialize the <xref:System.ServiceModel.Syndication.XmlSyndicationContent> class to Atom 1.0 and RSS 2.0.  
@@ -379,15 +379,15 @@ When developing a Windows Communication Foundation (WCF) syndication service, yo
   
  `<content type="mytype">`  
   
- `<SomeData xmlns:i="https://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/FeedMapping" />`  
+ `<SomeData xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/FeedMapping" />`  
   
  `</content>`  
   
  The following XML shows how the <xref:System.ServiceModel.Syndication.XmlSyndicationContent> class with XHTML content is serialized to RSS 2.0.  
   
- `<content type="mytype" xmlns="https://www.w3.org/2005/Atom">`  
+ `<content type="mytype" xmlns="http://www.w3.org/2005/Atom">`  
   
- `<SomeData xmlns:i="https://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/FeedMapping" />`  
+ `<SomeData xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/FeedMapping" />`  
   
  `</content>`  
   

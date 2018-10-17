@@ -88,7 +88,7 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
     ```  
   
     > [!NOTE]
-    > The s12 namespace prefix is defined by default in the namespace table, and represents the namespace `https://www.w3.org/2003/05/soap-envelope`.
+    > The s12 namespace prefix is defined by default in the namespace table, and represents the namespace `http://www.w3.org/2003/05/soap-envelope`.
   
 3.  Define the filter table, which associates each filter with a client endpoint. If the message contains the "CalcVer" header with a value of 1, it will be sent to the regularCalc service. If the header contains a value of 2, it will be sent to the roundingCalc service. If no header is present, the message will be routed to the regularCalc.  
   

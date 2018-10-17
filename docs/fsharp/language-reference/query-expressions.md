@@ -25,7 +25,7 @@ Query expressions are a type of computation expression similar to sequence expre
 // Add References to FSharp.Data.TypeProviders and System.Data.Services.Client
 open Microsoft.FSharp.Data.TypeProviders
 
-type Northwind = ODataService<"https://services.odata.org/Northwind/Northwind.svc">
+type Northwind = ODataService<"http://services.odata.org/Northwind/Northwind.svc">
 let db = Northwind.GetDataContext()
 
 // A query expression.

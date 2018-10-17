@@ -1,9 +1,9 @@
 ---
 title: Implement resilient Entity Framework Core SQL connections
-description: .NET Microservices Architecture for Containerized .NET Applications | Implement resilient Entity Framework Core SQL connections. This technique is especially important when using Azure SQL Database in the cloud.
+description: Resiliency | Implement resilient Entity Framework Core SQL connections. This technique is especially important when using Azure SQL Database in the cloud.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 06/08/2018
+ms.date: 16/10/2018
 ---
 # Implement resilient Entity Framework Core SQL connections
 
@@ -79,15 +79,13 @@ The first DbContext is \_catalogContext and the second DbContext is within the \
 
 ## Additional resources
 
--   **EF Connection Resiliency** (Entity Framework Core)
-    [*https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency*](https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency)
+- **Connection Resiliency and Command Interception with EF in an ASP<span>.NET</span> MVC Application**\
+  [*https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application*](https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application)
 
--   **Connection Resiliency and Command Interception with the Entity Framework**
-    [*https://docs.microsoft.com/azure/architecture/patterns/category/resiliency*](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency)
-
--   **Cesar de la Torre. Using Resilient Entity Framework Core Sql Connections and Transactions**
-    <https://blogs.msdn.microsoft.com/cesardelatorre/2017/03/26/using-resilient-entity-framework-core-sql-connections-and-transactions-retries-with-exponential-backoff/>
+- **Cesar de la Torre. Using Resilient Entity Framework Core Sql Connections and Transactions**
+  [*https://blogs.msdn.microsoft.com/cesardelatorre/2017/03/26/using-resilient-entity-framework-core-sql-connections-and-transactions-retries-with-exponential-backoff/*](https://blogs.msdn.microsoft.com/cesardelatorre/2017/03/26/using-resilient-entity-framework-core-sql-connections-and-transactions-retries-with-exponential-backoff/)
 
 >[!div class="step-by-step"]
 [Previous](implement-retries-exponential-backoff.md)
 [Next](explore-custom-http-call-retries-exponential-backoff.md)
+

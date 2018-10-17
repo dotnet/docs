@@ -1,9 +1,9 @@
 ---
 title: Use HttpClientFactory to implement resilient HTTP requests
-description: HttpClientFactory is an opinionated factory, available since .NET Core 2.1, for creating `HttpClient` instances to be used in your applications. 
+description: Resiliency | HttpClientFactory is an opinionated factory, available since .NET Core 2.1, for creating `HttpClient` instances, making it easy for you to include  to be used in your applications. 
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 07/03/2018
+ms.date: 16/10/2018
 ---
 # Use HttpClientFactory to implement resilient HTTP requests
 
@@ -45,9 +45,9 @@ For the sake of brevity, this guidance shows the most structured way to use `Htt
 
 The following diagram shows how Typed Clients are used with HttpClientFactory.
 
-![Diagram with an MVC controller using an injected ClientService, which internally is using a configured HttpClient by HttpClientFactory and Polly's policies](./media/image3.5.png)
+![A ClientService (used by a controller or client code) uses an HttpClient created by the registered IHttpClientFactory. This factory assigns the HttpClient an HttpMessageHandler from a pool it manages. The HttpClient can be configured with Polly's policies when registering the IHttpClientFactory in the DI container with the extension method AddHttpClient.](./media/image3.5.png)
 
-**Figure 10-4**. Using `HttpClientFactory`with Typed Client classes.
+**Figure 8-4**. Using HttpClientFactory with Typed Client classes.
 
 First, setup `HttpClientFactory` in your application. Add a reference to the `Microsoft.Extensions.Http` package which includes the `AddHttpClient()` extension method for `IServiceCollection`. This extension method registers the `DefaultHttpClientFactory` to be used as a singleton for the interface `IHttpClientFactory`. It defines a transient configuration for the `HttpMessageHandlerBuilder`. This message handler (`HttpMessageHandler` object), taken from a pool, is used by the `HttpClient` returned from the factory.
 
@@ -145,19 +145,14 @@ namespace Microsoft.eShopOnContainers.WebMVC.Controllers
 
 Until this point, the code shown is just performing regular Http requests, but the ‘magic’ comes in the following sections where, just by adding policies and delegating handlers to your registered typed clients, all the Http requests to be done by `HttpClient` will behave taking into account resilient policies such as retries with exponential backoff, circuit breakers, or any other custom delegating handler to implement additional security features, like using auth tokens, or any other custom feature. 
 
-
 ## Additional resources
 
--   **Using HttpClientFactory in .NET Core 2.1**
-    [*https://docs.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1*](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1)
+- **Using HttpClientFactory in .NET Core 2.1**\
+  [*https://docs.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1*](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1)
 
-
--   **HttpClientFactory GitHub repo**
-
-    [*https://github.com/aspnet/HttpClientFactory*](https://github.com/aspnet/HttpClientFactory)
-
-
+- **HttpClientFactory GitHub repo**\
+  [*https://github.com/aspnet/HttpClientFactory*](https://github.com/aspnet/HttpClientFactory)
 
 >[!div class="step-by-step"]
-[Previous] (explore-custom-http-call-retries-exponential-backoff.md)
-[Next] (implement-http-call-retries-exponential-backoff-polly.md)
+[Previous](explore-custom-http-call-retries-exponential-backoff.md)
+[Next](implement-http-call-retries-exponential-backoff-polly.md)

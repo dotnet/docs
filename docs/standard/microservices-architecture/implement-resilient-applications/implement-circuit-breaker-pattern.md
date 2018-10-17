@@ -1,9 +1,9 @@
 ---
 title: Implementing the Circuit Breaker pattern
-description: .NET Microservices Architecture for Containerized .NET Applications | Implement the Circuit Breaker pattern as a complementary system to Http retries
+description: Resiliency | Implement the Circuit Breaker pattern as a complementary system to Http retries.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 07/03/2018
+ms.date: 16/10/2018
 ---
 
 # Implement the Circuit Breaker pattern
@@ -93,9 +93,9 @@ For instance, once the application is running, you can enable the middleware by 
 
 You can then check the status using the URI `http://localhost:5103/failing`, as shown in Figure 10-4.
 
-![](./media/image4.png)
+![Browser view of the result from checking the status of the failing middleware simulation](./media/image4.png)
 
-**Figure 10-4**. Checking the state of the “Failing” ASP.NET middleware – In this case, disabled. 
+**Figure 8-5**. Checking the state of the “Failing” ASP.NET middleware – In this case, disabled.
 
 At this point, the Basket microservice responds with status code 500 whenever you call invoke it.
 
@@ -133,21 +133,18 @@ public class CartController : Controller
 
 Here’s a summary. The Retry policy tries several times to make the HTTP request and gets HTTP errors. When the number of retries reaches the maximum number set for the Circuit Breaker policy (in this case, 5), the application throws a BrokenCircuitException. The result is a friendly message, as shown in Figure 10-5.
 
-![](./media/image5.png)
+![Browser view of the MVC web app showing a "basket service inoperative" message triggered by the circuit breaker policy](./media/image5.png)
 
-**Figure 10-5**. Circuit breaker returning an error to the UI
+**Figure 8-6**. Circuit breaker returning an error to the UI
 
 You can implement different logic for when to open/break the circuit. Or you can try an HTTP request against a different back-end microservice if there is a fallback datacenter or redundant back-end system. 
 
 Finally, another possibility for the `CircuitBreakerPolicy` is to use `Isolate` (which forces open and holds open the circuit) and `Reset` (which closes it again). These could be used to build a utility HTTP endpoint that invokes Isolate and Reset directly on the policy.  Such an HTTP endpoint could also be used, suitably secured, in production for temporarily isolating a downstream system, such as when you want to upgrade it. Or it could trip the circuit manually to protect a downstream system you suspect to be faulting.
 
-
 ## Additional resources
 
-
--   **Circuit Breaker pattern**
-    [*https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker*](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker)
-
+- **Circuit Breaker pattern**\
+  [*https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker*](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker)
 
 >[!div class="step-by-step"]
 [Previous](implement-http-call-retries-exponential-backoff-polly.md)

@@ -33,7 +33,8 @@ The only addition here to the code used for HTTP call retries is the code where 
 ```csharp
 //ConfigureServices()  - Startup.cs
 services.AddHttpClient<IBasketService, BasketService>()
-        .SetHandlerLifetime(TimeSpan.FromMinutes(5))  //Set lifetime to 5 minutes
+        .SetHandlerLifetime(TimeSpan.FromMinutes(5))  //Sample. Default lifetime is 2 minutes
+        .AddHttpMessageHandler<HttpClientAuthorizationDelegatingHandler>()
         .AddPolicyHandler(GetRetryPolicy())
         .AddPolicyHandler(GetCircuitBreakerPolicy());
 ```
@@ -110,7 +111,7 @@ public class CartController : Controller
     public async Task<IActionResult> Index()
     {
         try
-        {          
+        {
             var user = _appUserParser.Parse(HttpContext.User);
             //Http requests using the Typed Client (Service Agent)
             var vm = await _basketSvc.GetBasket(user);
@@ -118,11 +119,11 @@ public class CartController : Controller
         }
         catch (BrokenCircuitException)
         {
-            // Catches error when Basket.api is in circuit-opened mode                 
+            // Catches error when Basket.api is in circuit-opened mode
             HandleBrokenCircuitException();
         }
         return View();
-    }       
+    }
 
     private void HandleBrokenCircuitException()
     {

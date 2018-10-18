@@ -272,7 +272,7 @@ To enable or re-enable TLS 1.2 and/or TLS 1.1 on a system that supports them, se
 | Windows Server 2008 | Support for TLS 1.2 and TLS 1.1 requires an update. See [Update to add support for TLS 1.1 and TLS 1.2 in Windows Server 2008 SP2](https://support.microsoft.com/help/4019276/update-to-add-support-for-tls-1-1-and-tls-1-2-in-windows-server-2008-s). |
 | Windows Vista | Not supported. |
 
-For information about which TLS/SSL protocols are enabled by default on each version of Windows, see [Protocols in TLS/SSL (Schannel SSP)](https://msdn.microsoft.com/library/windows/desktop/mt808159).
+For information about which TLS/SSL protocols are enabled by default on each version of Windows, see [Protocols in TLS/SSL (Schannel SSP)](/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
 
 **Requirements to support TLS 1.2 with .NET Framework 3.5**
 

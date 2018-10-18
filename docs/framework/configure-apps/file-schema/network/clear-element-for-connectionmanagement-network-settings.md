@@ -49,7 +49,7 @@ Clears the connection management list.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following example clears the connection management list and then adds new connection management entries for the server www.contoso.com and all other network hosts.  
+ The following example clears the connection management list and then adds new connection management entries for the server `www.contoso.com` and all other network hosts.  
   
 ```xml  
 <configuration>  

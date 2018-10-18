@@ -2,7 +2,7 @@
 title: Unit testing F# libraries in .NET Core using dotnet test and NUnit
 description: Learn unit test concepts for F# in .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and NUnit.
 author: rprouse
-ms.date: 12/01/2017
+ms.date: 10/04/2018
 dev_langs: 
   - "fsharp"
 ---
@@ -10,12 +10,20 @@ dev_langs:
 
 This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/master/core/getting-started/unit-testing-with-fsharp-nunit/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
+## Prerequisites 
+- [.NET Core SDK 2.1 (v. 2.1.400)](https://www.microsoft.com/net/download) or later versions. 
+- A text editor or code editor of your choice.
+
 ## Creating the source project
 
 Open a shell window. Create a directory called *unit-testing-with-fsharp* to hold the solution.
-Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to create a new solution. This
-makes it easier to manage both the class library and the unit test project.
-Inside the solution directory, create a *MathService* directory. The directory and file structure thus far is shown below:
+Inside this new directory, run the following command to create a new solution file for the class library and the test project:
+
+```console
+dotnet new sln
+```
+
+Next, create a *MathService* directory. The following outline shows the directory and file structure so far:
 
 ```
 /unit-testing-with-fsharp
@@ -23,23 +31,24 @@ Inside the solution directory, create a *MathService* directory. The directory a
     /MathService
 ```
 
-Make *MathService* the current directory and run [`dotnet new classlib -lang F#`](../tools/dotnet-new.md) to create the source project.  To use test-driven development (TDD), you'll create a failing implementation of the math service:
+Make *MathService* the current directory and run the following command to create the source project:
+
+```console
+dotnet new classlib -lang F#
+```
+
+To use test-driven development (TDD), you create a failing implementation of the math service:
 
 ```fsharp
 module MyMath =
     let squaresOfOdds xs = raise (System.NotImplementedException("You haven't written a test yet!"))
 ```
 
-Change the directory back to the *unit-testing-with-fsharp* directory. Run [`dotnet sln add .\MathService\MathService.fsproj`](../tools/dotnet-sln.md)
-to add the class library project to the solution.
+Change the directory back to the *unit-testing-with-fsharp* directory. Run the following command to add the class library project to the solution:
 
-## Install the NUnit project template
-
-The NUnit test project templates need to be installed before creating a test project. This only needs to be done once on each developer machine where you'll create new NUnit projects. Run [`dotnet new -i NUnit3.DotNetNew.Template`](../tools/dotnet-new.md) to install the NUnit templates.
-
- ```
- dotnet new -i NUnit3.DotNetNew.Template
- ```
+```console
+dotnet sln add .\MathService\MathService.fsproj
+```
 
 ## Creating the test project
 
@@ -54,7 +63,13 @@ Next, create the *MathService.Tests* directory. The following outline shows the 
     /MathService.Tests
 ```
 
-Make the *MathService.Tests* directory the current directory and create a new project using [`dotnet new nunit -lang F#`](../tools/dotnet-new.md). This creates a test project that uses NUnit as the test framework. The generated template configures the test runner in the *MathServiceTests.fsproj*:
+Make the *MathService.Tests* directory the current directory and create a new project using the following command:
+
+```console
+dotnet new nunit -lang F#
+```
+
+This creates a test project that uses NUnit as the test framework. The generated template configures the test runner in the *MathServiceTests.fsproj*:
 
 ```xml
 <ItemGroup>
@@ -66,7 +81,7 @@ Make the *MathService.Tests* directory the current directory and create a new pr
 
 The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added NUnit and the NUnit test adapter. Now, add the `MathService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
-```
+```console
 dotnet add reference ../MathService/MathService.fsproj
 ```
 
@@ -82,14 +97,18 @@ You have the following final solution layout:
         MathService.fsproj
     /MathService.Tests
         Test Source Files
-        MathServiceTests.fsproj
+        MathService.Tests.fsproj
 ```
 
-Execute [`dotnet sln add .\MathService.Tests\MathService.Tests.fsproj`](../tools/dotnet-sln.md) in the *unit-testing-with-fsharp* directory.
+Execute the following command in the *unit-testing-with-fsharp* directory:
+
+```console
+dotnet sln add .\MathService.Tests\MathService.Tests.fsproj
+```
 
 ## Creating the first test
 
-The TDD approach calls for writing one failing test, making it pass, then repeating the process. Open *Tests.fs* and add the following code:
+The TDD approach calls for writing one failing test, making it pass, then repeating the process. Open *UnitTest1.fs* and add the following code:
 
 ```fsharp
 namespace MathService.Tests
@@ -125,14 +144,14 @@ member this.TestEvenSequence() =
 
 Notice that the `expected` sequence has been converted to a list. The NUnit framework relies on many standard .NET types. That dependency means that your public interface and expected results support <xref:System.Collections.ICollection> rather than <xref:System.Collections.IEnumerable>.
 
-When you run the test, you see that your test fails. You haven't created the implementation yet. Make this test by writing the simplest code in the `Mathservice` class that works:
+When you run the test, you see that your test fails. You haven't created the implementation yet. Make this test pass by writing the simplest code in the *Library.fs* class in your MathService project that works:
 
 ```csharp
 let squaresOfOdds xs =
     Seq.empty<int>
 ```
 
-In the *unit-testing-with-fsharp* directory, run `dotnet test` again. The `dotnet test` command runs a build for the `MathService` project and then for the `MathService.Tests` project. After building both projects, it runs this single test. It passes.
+In the *unit-testing-with-fsharp* directory, run `dotnet test` again. The `dotnet test` command runs a build for the `MathService` project and then for the `MathService.Tests` project. After building both projects, it runs your tests. Two tests pass now.
 
 ## Completing the requirements
 

@@ -10,7 +10,7 @@ The first step to trying a quickstart locally is to setup a development environm
 The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting
 up your local development environment on Mac, PC or Linux.
 
-Alternatively, you can install the [.NET Core SDK](http://dot.net/core) and
+Alternatively, you can install the [.NET Core SDK](https://www.microsoft.com/net/download) and
 [Visual Studio Code](https://code.visualstudio.com/).
 
 ## Basic application development flow

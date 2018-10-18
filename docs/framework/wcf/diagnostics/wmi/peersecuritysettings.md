@@ -9,7 +9,7 @@ PeerSecuritySettings
   
 ## Syntax  
   
-```  
+```csharp
 class PeerSecuritySettings  
 {  
   string Mode;  

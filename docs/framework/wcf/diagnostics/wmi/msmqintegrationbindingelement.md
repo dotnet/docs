@@ -8,7 +8,7 @@ MsmqIntegrationBindingElement
   
 ## Syntax  
   
-```  
+```csharp  
 class MsmqIntegrationBindingElement : MsmqBindingElementBase  
 {  
   string SerializationFormat;  

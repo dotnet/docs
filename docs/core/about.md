@@ -19,24 +19,19 @@ ms.date: 08/01/2018
 
 ## Languages
 
-C#, Visual Basic, and F# languages can be used to write applications and libraries for .NET Core. These languages are or can be integrated into your favorite text editors and IDEs, including [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp), Sublime Text and Vim. This integration is provided, in part, by the good folks from the [OmniSharp](http://www.omnisharp.net/) and [Ionide](http://ionide.io) projects.
+C#, Visual Basic, and F# languages can be used to write applications and libraries for .NET Core. These languages are or can be integrated into your favorite text editors and IDEs, including [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp), Sublime Text and Vim. This integration is provided, in part, by the good folks from the [OmniSharp](https://www.omnisharp.net/) and [Ionide](http://ionide.io) projects.
 
 ## APIs
 
 .NET Core exposes APIs for many scenarios, a few of which follow:
 
-- Primitive types, such as [bool][bool] and [int][int].
+- Primitive types, such as [bool](../csharp/language-reference/keywords/bool.md) and [int](../csharp/language-reference/keywords/int.md).
 - Collections, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.
 - Utility types, such as <xref:System.Net.Http.HttpClient?displayProperty=nameWithType>, and <xref:System.IO.FileStream?displayProperty=nameWithType>.
-- Data types, such as <xref:System.Data.DataSet?displayProperty=nameWithType>, and [DbSet][dbset].
-- High performance types, such as <xref:System.Numerics.Vector?displayProperty=nameWithType> and [Pipelines][pipelines].
+- Data types, such as <xref:System.Data.DataSet?displayProperty=nameWithType>, and [DbSet](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/).
+- High performance types, such as <xref:System.Numerics.Vector?displayProperty=nameWithType> and [Pipelines](https://blogs.msdn.microsoft.com/dotnet/2018/07/09/system-io-pipelines-high-performance-io-in-net/).
 
 .NET Core provides compatibility with .NET Framework and Mono APIs by implementing the [.NET Standard](../standard/net-standard.md) specification.
-
-[bool]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/bool
-[int]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/int
-[pipelines]: https://blogs.msdn.microsoft.com/dotnet/2018/07/09/system-io-pipelines-high-performance-io-in-net/
-[dbset]: https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/
 
 ## Frameworks
 
@@ -105,7 +100,7 @@ While .NET Core is unique and has significant differences to the .NET Framework 
 
 ### Comparison with Mono
 
-[Mono](http://www.mono-project.com/) is the original cross-platform and [open source](https://github.com/mono/mono) .NET implementation, first shipping in 2004. It can be thought of as a community clone of the .NET Framework. The Mono project team relied on the open [.NET standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) (notably ECMA 335) published by Microsoft in order to provide a compatible implementation.
+[Mono](https://www.mono-project.com/) is the original cross-platform and [open source](https://github.com/mono/mono) .NET implementation, first shipping in 2004. It can be thought of as a community clone of the .NET Framework. The Mono project team relied on the open [.NET standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) (notably ECMA 335) published by Microsoft in order to provide a compatible implementation.
 
 The major differences between .NET Core and Mono:
 

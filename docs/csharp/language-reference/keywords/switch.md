@@ -92,7 +92,7 @@ You can correct this issue and eliminate the compiler warning in one of two ways
 
 - By changing the order of the switch sections.
 
-- By using a </a name="when">when clause</a> in the `case` label.
+- By using a [when clause](#when) in the `case` label.
 
 ## The `default` case
 
@@ -183,7 +183,7 @@ Note that the `when` clause in the example that attempts to test whether a `Shap
 
 ## C# language specification
 
-For more information, see [The switch statement](/dotnet/csharp/language-reference/language-specification/statements#the-switch-statement) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [The switch statement](~/_csharplang/spec/statements.md#the-switch-statement) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 

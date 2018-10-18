@@ -8,7 +8,7 @@ PrivacyNoticeBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class PrivacyNoticeBindingElement : BindingElement  
 {  
   sint32 PrivacyNoticeVersion;  

@@ -186,11 +186,11 @@ Failed, as expected: Request failed.
 ## Interoperability with Unmanaged Code  
  Code that runs outside the CLR is called unmanaged code. Therefore, security mechanisms such as CAS cannot be applied to unmanaged code. COM components, ActiveX interfaces, and Win32 API functions are examples of unmanaged code. Special security considerations apply when executing unmanaged code so that you do not jeopardize overall application security. For more information, see [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md).  
   
- The .NET Framework also supports backward compatibility to existing COM components by providing access through COM interop. You can incorporate COM components into a .NET Framework application by using COM interop tools to import the relevant COM types. Once imported, the COM types are ready to use. COM interop also enables COM clients to access managed code by exporting assembly metadata to a type library and registering the managed component as a COM component. For more information, see [Advanced COM Interoperability](https://msdn.microsoft.com/library/3ada36e5-2390-4d70-b490-6ad8de92f2fb).  
+ The .NET Framework also supports backward compatibility to existing COM components by providing access through COM interop. You can incorporate COM components into a .NET Framework application by using COM interop tools to import the relevant COM types. Once imported, the COM types are ready to use. COM interop also enables COM clients to access managed code by exporting assembly metadata to a type library and registering the managed component as a COM component. For more information, see [Advanced COM Interoperability](/previous-versions/dotnet/netframework-4.0/bd9cdfyx).  
   
 ## See Also  
  [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [PAVE Security in Native and .NET Framework Code](https://msdn.microsoft.com/library/bd61be84-c143-409a-a75a-44253724f784)  
- [Code Access Security](https://msdn.microsoft.com/library/23a20143-241d-4fe5-9d9f-3933fd594c03)  
- [Role-Based Security](https://msdn.microsoft.com/library/239442e3-5be4-4203-b7fd-793baffea803)  
+ [Code Access Security](../../../../docs/framework/misc/code-access-security.md)  
+ [Role-Based Security](../../../../docs/standard/security/role-based-security.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

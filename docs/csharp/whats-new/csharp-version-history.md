@@ -140,10 +140,10 @@ They did one other thing along with this version, though it's not a traditional 
 
 The most recent major version is C# version 7.0. This version has some evolutionary and cool stuff in the vein of C# 6.0, but without the compiler as a service. Here are some of the new features:
 
-- [Out variables](http://www.c-sharpcorner.com/article/out-variables-in-c-sharp-7-0/)
+- [Out variables](https://www.c-sharpcorner.com/article/out-variables-in-c-sharp-7-0/)
 - [Tuples and deconstruction](https://www.thomaslevesque.com/2016/08/23/tuple-deconstruction-in-c-7/)
 - [Pattern matching](./csharp-7.md#pattern-matching)
-- [Local functions](http://www.infoworld.com/article/3182416/application-development/c-7-in-depth-exploring-local-functions.html)
+- [Local functions](https://www.infoworld.com/article/3182416/application-development/c-7-in-depth-exploring-local-functions.html)
 - [Expanded expression bodied members](./csharp-7.md#more-expression-bodied-members)
 - [Ref locals and returns](./csharp-7.md#ref-locals-and-returns)
 

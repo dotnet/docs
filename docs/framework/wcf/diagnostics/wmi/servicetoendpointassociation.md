@@ -8,7 +8,7 @@ Maps a service to an endpoint.
   
 ## Syntax  
   
-```  
+```csharp
 class ServiceToEndpointAssociation  
 {  
   Service ref;  

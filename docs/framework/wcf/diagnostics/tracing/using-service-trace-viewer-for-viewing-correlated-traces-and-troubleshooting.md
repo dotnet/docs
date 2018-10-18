@@ -37,19 +37,19 @@ This topic describes the format of trace data, how to view it, and approaches th
   
  In the XML view, useful xml tags include the following:  
   
--   \<SubType> (trace level).  
+-   `<SubType>` (trace level).  
   
--   \<TimeCreated>.  
+-   `<TimeCreated>`.  
   
--   \<Source> (trace source name).  
+-   `<Source>` (trace source name).  
   
--   \<Correlation> (activity id set when emitting the trace).  
+-   `<Correlation>` (activity id set when emitting the trace).  
   
--   \<Execution> (process and thread id).  
+-   `<Execution>` (process and thread id).  
   
--   \<Computer>.  
+-   `<Computer>`.  
   
--   \<ExtendedData>, including \<Action>, \<MessageID> and the \<ActivityId> set in the message header when sending a message.  
+-   `<ExtendedData>`, including `<Action>`, `<MessageID>` and the `<ActivityId>` set in the message header when sending a message.  
   
  If you examine the "Sent a message over a channel" trace, you may see the following content.  
   

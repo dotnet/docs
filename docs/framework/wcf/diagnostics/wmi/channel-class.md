@@ -8,7 +8,7 @@ Channel
   
 ## Syntax  
   
-```  
+```csharp
 class Channel  
 {  
   string LocalAddress;  

@@ -31,7 +31,7 @@ The <xref:System.Threading.Interlocked?displayProperty=nameWithType> class provi
   
  On modern processors, the methods of the <xref:System.Threading.Interlocked> class can often be implemented by a single instruction. Thus, they provide very high-performance synchronization and can be used to build higher-level synchronization mechanisms, like spin locks.  
   
- For an example that uses the <xref:System.Threading.Monitor> and <xref:System.Threading.Interlocked> classes in combination, see [Monitors](https://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db).  
+ For an example that uses the <xref:System.Threading.Monitor> and <xref:System.Threading.Interlocked> classes in combination, see <xref:System.Threading.Monitor>.  
   
 ## CompareExchange example
 

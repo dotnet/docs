@@ -9,7 +9,7 @@ TransportSecurityBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class TransportSecurityBindingElement : SecurityBindingElement  
 {  
 };  

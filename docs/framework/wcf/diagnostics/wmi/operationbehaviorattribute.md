@@ -8,7 +8,7 @@ OperationBehaviorAttribute
   
 ## Syntax  
   
-```  
+```csharp
 class OperationBehaviorAttribute : Behavior  
 {  
   boolean AutoDisposeParameters;  

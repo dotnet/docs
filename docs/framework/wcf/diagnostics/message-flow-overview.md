@@ -46,13 +46,13 @@ In a distributed system containing interconnected services, it is necessary to d
 
 8.  In Program.cs in the client, add the following Using statement.
 
-    ```
+    ```csharp
     using System.Diagnostics;
     ```
 
 9. In the Main method in the program.cs file in the client project, set the Trace GUID to be propagated in the event log.
 
-    ```
+    ```csharp
     Guid guid = Guid.NewGuid();
     Trace.CorrelationManager.ActivityId = guid;
     ```

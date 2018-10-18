@@ -7,7 +7,7 @@ ms.assetid: ff8b0014-c5d4-4614-90f0-13fcc0ba777a
 
 This topic discusses how to download and use the Validating Issuer Name Registry (VINR) in your project.
 
-The VINR is available as a NuGet package, which adds the necessary assemblies and references to your project. If you do not already have NuGet installed, go to [nuget.org](http://nuget.org) to install it. You can see the versioning history for the extension by visiting its page on NuGet: [Microsoft Validating Issuer Name Registry on NuGet](https://nuget.org/packages/System.IdentityModel.Tokens.ValidatingIssuerNameRegistry/)
+The VINR is available as a NuGet package, which adds the necessary assemblies and references to your project. If you do not already have NuGet installed, go to [nuget.org](https://nuget.org) to install it. You can see the versioning history for the extension by visiting its page on NuGet: [Microsoft Validating Issuer Name Registry on NuGet](https://nuget.org/packages/System.IdentityModel.Tokens.ValidatingIssuerNameRegistry/)
 
 ## Use the Package Manager GUI
 

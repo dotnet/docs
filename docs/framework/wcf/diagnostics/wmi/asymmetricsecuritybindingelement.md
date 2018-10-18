@@ -9,7 +9,7 @@ AsymmetricSecurityBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class AsymmetricSecurityBindingElement : SecurityBindingElement  
 {  
   string MessageProtectionOrder;  

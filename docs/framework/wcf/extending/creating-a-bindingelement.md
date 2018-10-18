@@ -24,15 +24,15 @@ Bindings and binding elements (objects that extend <xref:System.ServiceModel.Cha
   
  In the sample, the binding element is `UdpTransportBindingElement`, which derives from <xref:System.ServiceModel.Channels.TransportBindingElement>. It overrides the following methods to build the factories associated with the channel.  
   
-```  
+```csharp  
 public IChannelFactory<TChannel> BuildChannelFactory<TChannel>(BindingContext context)  
 {  
-            return (IChannelFactory<TChannel>)(object)new UdpChannelFactory(this, context);  
+    return (IChannelFactory<TChannel>)(object)new UdpChannelFactory(this, context);  
 }  
   
 public IChannelListener<TChannel> BuildChannelListener<TChannel>(BindingContext context)  
 {  
-            return (IChannelListener<TChannel>)(object)new UdpChannelListener(this, context);  
+    return (IChannelListener<TChannel>)(object)new UdpChannelListener(this, context);  
 }  
 ```  
   

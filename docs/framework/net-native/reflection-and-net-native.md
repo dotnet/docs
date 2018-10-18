@@ -10,9 +10,9 @@ In the .NET Framework, managed development supports metaprogramming through the 
   
  The [!INCLUDE[net_native](../../../includes/net-native-md.md)] runtime doesn't include a JIT compiler. As a result, all necessary native code must be generated in advance. A set of heuristics is used to determine what code should be generated, but these heuristics cannot cover all possible metaprogramming scenarios.  Therefore, you must provide hints for these metaprogramming scenarios by using [runtime directives](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md). If the necessary metadata or implementation code is not available at runtime, your app throws a [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md), [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md), or [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md) exception. Two troubleshooters are available that will generate the appropriate entry for your runtime directives file that eliminates the exception:  
   
--   The [MissingMetadataException troubleshooter](http://dotnet.github.io/native/troubleshooter/type.html) for types.  
+-   The [MissingMetadataException troubleshooter](https://dotnet.github.io/native/troubleshooter/type.html) for types.  
   
--   The [MissingMetadataException troubleshooter](http://dotnet.github.io/native/troubleshooter/method.html) for methods.  
+-   The [MissingMetadataException troubleshooter](https://dotnet.github.io/native/troubleshooter/method.html) for methods.  
   
 > [!NOTE]
 >  For an overview of the .NET Native compilation process that provides background on why a runtime directives file is needed, see [.NET Native and Compilation](../../../docs/framework/net-native/net-native-and-compilation.md).  

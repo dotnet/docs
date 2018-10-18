@@ -102,32 +102,36 @@ Use for inline code, language keywords, NuGet package names, command-line comman
 To link to a header in the same Markdown file (also known as anchor links), you'll need to find out the id of the header you're trying to link to. To confirm the ID, view the source of the rendered article, find the id of the header (for example, `id="blockquote"`), and link using # + id (for example, `#blockquote`).
 The id is auto-generated based on the header text. So, for example, given a unique section named `## Step 2`, the id would look like this `id="step-2"`.
 
-- Example: [Chapter 1](#chapter-1)
+- Example: `[Declare inline blocks with a language identifier](#inline-code-blocks-with-language-identifier)` produces [Declare inline blocks with a language identifier](#inline-code-blocks-with-language-identifier).
 
 To link to a Markdown file in the same repo, use [relative links](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2), including the ".md" at the end of the filename.
 
-- Example: [Readme file](../readme.md)
-- Example: [Welcome to .NET](../docs/welcome.md)
+- Example: `[Readme file](../README.md)` produces [Readme file](../README.md). (Note that links are case-sensitive.)
+- Example: `[Welcome to .NET](../docs/welcome.md)` produces [Welcome to .NET](../docs/welcome.md).
 
 To link to a header in a Markdown file in the same repo, use relative linking + hashtag linking.
 
-- Example: [.NET Community](../docs/welcome.md#community)
+- Example: `[.NET Community](../docs/welcome.md#open-source)` produces [.NET Community](../docs/welcome.md#open-source).
 
-The C# language specification and the Visual Basic language specification are included in the .NET docs by including the source from the language repositories. The markdown sources are managed in the [csharplang](../csharplang) and [visual basic](../vblang) repositories.
+In most cases, we use the relative links and discourage the use of `~/` in links because relative links resolve in the source on GitHub. However, whenever we link to a file in a dependent repo, we'll use the `~/` character to provide the path. Because the files in the dependent repo are in a different location in GitHub the links won't resolve correctly with relative links regardless of how they were written.
+
+The C# language specification and the Visual Basic language specification are included in the .NET docs by including the source from the language repositories. The markdown sources are managed in the [csharplang](https://github.com/dotnet/csharplang) and [visual basic](https://github.com/dotnet/vblang) repositories.
 
 Links to the spec must point to the source directories where those specs are included. For C#, it's **~/_csharplang/spec** and for VB, it's **~/_vblang/spec**.
 
-- Example: [C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)
+- Example: `[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)` produces [C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions).
 
 ### External Links
 
 To link to an external file, use the full URL as the link.
 
-- Example: [GitHub](http://www.github.com)
+- Example: `[GitHub](https://www.github.com)` produces [GitHub](https://www.github.com).
 
 If a URL appears in a Markdown file, it will be transformed into a clickable link.
 
-- Example: <http://www.github.com>
+- Example: `<https://www.github.com>` produces <https://www.github.com>.
+
+Prefer the `https` protocol for external links. Only use `http` links for sites that do not support `https`.
 
 ### Links to APIs
 

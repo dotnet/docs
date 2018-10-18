@@ -9,14 +9,14 @@ helpviewer_keywords:
 ---
 # ?. and ?() null-conditional operators (Visual Basic)
 
-Tests the value of the left-hand operand for null (`Nothing`) before performing a member access (`?.`) or index (`?()`) operation; returns `Nothing` if the left-hand operand evaluates to `Nothing`.
+Tests the value of the left-hand operand for null (`Nothing`) before performing a member access (`?.`) or index (`?()`) operation; returns `Nothing` if the left-hand operand evaluates to `Nothing`. Note that, in the expressions that would ordinarily return value types, the null-conditional operator returns a <xref:System.Nullable%601>.
 
 These operators help you write less code to handle null checks, especially when descending into data structures. For example:
 
 ```vb
-Dim length = customers?.Length  ' Nothing if customers is Nothing  
-Dim first as Customer = customers?(0)  ' Nothing if customers is Nothing  
-Dim count as Integer? = customers?(0)?.Orders?.Count()  ' Nothing if customers, the first customer, or Orders is Nothing  
+Dim length As Integer? = customers?.Length  ' Nothing if customers is Nothing  
+Dim first As Customer = customers?(0)  ' Nothing if customers is Nothing  
+Dim count As Integer? = customers?(0)?.Orders?.Count()  ' Nothing if customers, the first customer, or Orders is Nothing  
 ```
 
 For comparison, the alternative code for the first of these expressions without a null-conditional operator is:

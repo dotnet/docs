@@ -65,4 +65,4 @@ csc /t:library myAssembly.cs /reference:myLibAssembly.dll
  **sn -tp \<** *public key file* **>**  
   
 ## See Also  
- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)
+- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)

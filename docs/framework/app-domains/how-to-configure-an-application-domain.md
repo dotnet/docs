@@ -28,5 +28,5 @@ You can provide the common language runtime with configuration information for a
  [!code-vb[ADApplicationBase#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/ADApplicationBase/VB/source2.vb#2)]  
   
 ## See Also  
- [Programming with Application Domains](application-domains.md#programming-with-application-domains)  
- [Using Application Domains](../../../docs/framework/app-domains/use.md)
+- [Programming with Application Domains](application-domains.md#programming-with-application-domains)  
+- [Using Application Domains](../../../docs/framework/app-domains/use.md)

@@ -3,7 +3,7 @@ title: Prerequisites for .NET Core on Linux
 description: Supported Linux versions and .NET Core dependencies to develop, deploy, and run .NET Core applications on Linux machines.
 author: jralexander
 ms.author: johalex
-ms.date: 03/10/2018
+ms.date: 10/18/2018
 ---
 # Prerequisites for .NET Core on Linux
 
@@ -17,9 +17,9 @@ This article shows the dependencies needed to develop .NET Core applications on 
 
 ## Supported Linux versions
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore21)
 
-.NET Core 2.x treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions.
+.NET Core 2.1 treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions.
 
 **NET Core 2.1**
 
@@ -111,7 +111,7 @@ On Linux, there are two installer package choices:
 
 The [dotnet-install scripts](./tools/dotnet-install-script.md) are used to perform a non-admin install of the CLI toolchain and the shared runtime. You can download the script from [https://dot.net/v1/dotnet-install.sh](https://dot.net/v1/dotnet-install.sh).
 
-The script defaults to installing the latest "LTS" version, which is currently .NET Core 1.1. To install .NET Core 2.x, run the script with the following switch:
+The script defaults to installing the latest "LTS" version, which is currently .NET Core 1.1. To install .NET Core 2.1, run the script with the following switch:
 
 ```console
 ./dotnet-install.sh -c Current
@@ -123,7 +123,7 @@ The installer bash script is used in automation scenarios and non-admin installa
 
 To install .NET Core on supported RHEL versions:
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore21)
 
 **.NET Core 2.1**
 
@@ -151,11 +151,11 @@ For Red Hat .NET channel access registration help, see [Chapter 1 of the .NET Co
 
 ## Install .NET Core for supported Ubuntu and Linux Mint distributions/versions (64 bit)
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore21)
 
 1. Remove any **previous preview** versions of .NET Core from your system.
 
-2. Install .NET Core 2.x on supported Ubuntu and Linux Mint distributions/versions (64 bit):
+2. Install .NET Core 2.1 on supported Ubuntu and Linux Mint distributions/versions (64 bit):
 
 **.NET Core 2.1**
 
@@ -210,11 +210,11 @@ To install .NET Core on supported Debian versions (64 bit):
 > [!NOTE]
 > A user-controlled directory is required for Linux system installs from tar.gz.
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore2x)
 
 1. Remove any **previous preview** versions of .NET Core from your system.
 
-2. Install .NET Core 2.x on supported Debian versions (64 bit):
+2. Install .NET Core 2.1 on supported Debian versions (64 bit):
 
 **.NET Core 2.1**
 
@@ -270,11 +270,11 @@ To install .NET Core on supported Fedora versions:
 > [!NOTE]
 > A user-controlled directory is required for Linux system installs from tar.gz.
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore2x)
 
 1. Remove any **previous preview** versions of .NET Core from your system.
 
-2. Install .NET Core 2.x on supported Fedora versions (64 bit):
+2. Install .NET Core 2.1 on supported Fedora versions (64 bit):
 
 **.NET Core 2.1**
 
@@ -335,11 +335,11 @@ To install .NET Core for supported CentOS and Oracle Linux distributions/version
 > [!NOTE]
 > A user-controlled directory is required for Linux system installs from tar.gz.
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore2x)
 
 1. Remove any **previous preview** versions of .NET Core from your system.
 
-2. Install .NET Core 2.x on supported CentOS and Oracle Linux distributions/versions (64 bit):
+2. Install .NET Core 2.1 on supported CentOS and Oracle Linux distributions/versions (64 bit):
 
 **.NET Core 2.1**
 
@@ -389,13 +389,13 @@ To install .NET Core for supported CentOS and Oracle Linux distributions/version
 
 ## Install .NET Core for supported SUSE Linux Enterprise Server and OpenSUSE distributions/versions (64 bit)
 
-To install .NET Core 2.x for supported SUSE Linux Enterprise Server and OpenSUSE distributions/versions (64 bit):
+To install .NET Core 2.1 for supported SUSE Linux Enterprise Server and OpenSUSE distributions/versions (64 bit):
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore2x)
 
 1. Remove any **previous preview** versions of .NET Core from your system.
 
-2. Install .NET Core 2.x on supported SUSE Linux Enterprise Server and OpenSUSE distributions/versions (64 bit):
+2. Install .NET Core 2.1 on supported SUSE Linux Enterprise Server and OpenSUSE distributions/versions (64 bit):
  
 **.NET Core 2.1**
 

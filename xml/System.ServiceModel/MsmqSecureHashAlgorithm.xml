@@ -47,7 +47,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The [Message Digest Algorithm 5 (MD5)](http://go.microsoft.com/fwlink/?LinkId=95939).</summary>
+        <summary>The <see href="https://en.wikipedia.org/wiki/MD5">Message Digest Algorithm 5 (MD5)</see>.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sha1">
@@ -69,7 +69,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The [Secure Hash Algorithm (SHA-1)](http://go.microsoft.com/fwlink/?LinkId=95940).</summary>
+        <summary>The <see href="https://en.wikipedia.org/wiki/SHA_hash_functions">Secure Hash Algorithm (SHA-1)</see>.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sha256">
@@ -91,7 +91,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The [SHA-256](http://go.microsoft.com/fwlink/?LinkId=95940) algorithm.</summary>
+        <summary>The <see href="https://en.wikipedia.org/wiki/SHA_hash_functions">SHA-256</see> algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sha512">
@@ -113,7 +113,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The [SHA 512](http://go.microsoft.com/fwlink/?LinkId=95940) algorithm.</summary>
+        <summary>The <see href="https://en.wikipedia.org/wiki/SHA_hash_functions">SHA 512</see> algorithm.</summary>
       </Docs>
     </Member>
   </Members>

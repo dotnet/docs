@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a tag that contains [ECMAScript](https://www.ecma-international.org/publications/standards/Ecma-327.htm) that is run when the rule is matched.</summary>
+    <summary>Represents a tag that contains <see href="https://www.ecma-international.org/publications/standards/Ecma-327.htm">ECMAScript</see> that is run when the rule is matched.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -250,7 +250,7 @@ version="1.0" xmlns="http://www.w3.org/2001/06/grammar">
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the [ECMAScript](https://www.ecma-international.org/publications/standards/Ecma-327.htm) for the tag.</summary>
+        <summary>Gets or sets the <see href="https://www.ecma-international.org/publications/standards/Ecma-327.htm">ECMAScript</see> for the tag.</summary>
         <value>A string that contains the semantic interpretation script for the tag.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">An attempt is made to set **Script** to <see langword="null" />.</exception>

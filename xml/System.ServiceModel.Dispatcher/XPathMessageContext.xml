@@ -216,8 +216,8 @@
         <param name="prefix">The prefix of the function as it appears in the XPath expression.</param>
         <param name="name">The name of the function.</param>
         <param name="argTypes">An array of argument types for the function being resolved. This allows you to select between methods with the same name (for example, overloaded methods).</param>
-        <summary>Resolves a function reference and returns an [T:System.Xml.Xsl.IXsltContextFunction](ms-help://MS.MSSDK.1033/MS.WinFXSDK.1033/cpref37/html/T_System_Xml_Xsl_IXsltContextFunction.htm) that represents the function.</summary>
-        <returns>An [T:System.Xml.Xsl.IXsltContextFunction](ms-help://MS.MSSDK.1033/MS.WinFXSDK.1033/cpref37/html/T_System_Xml_Xsl_IXsltContextFunction.htm) that represents the function.</returns>
+        <summary>Resolves a function reference and returns an <see cref="T:System.Xml.Xsl.IXsltContextFunction" /> that represents the function.</summary>
+        <returns>An <see cref="T:System.Xml.Xsl.IXsltContextFunction" /> that represents the function.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

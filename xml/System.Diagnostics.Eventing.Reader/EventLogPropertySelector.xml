@@ -19,7 +19,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Contains an array of strings that represent XPath queries for elements in the XML representation of an event, which is based on the [Event Schema](http://go.microsoft.com/fwlink/?LinkID=81771). The queries in this object are used to extract values from the event.</summary>
+    <summary>Contains an array of strings that represent XPath queries for elements in the XML representation of an event, which is based on the <see href="https://docs.microsoft.com/windows/desktop/WES/eventschema-schema">Event Schema</see>. The queries in this object are used to extract values from the event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

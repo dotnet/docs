@@ -71,6 +71,9 @@ The assembly file version is used to display a file version in Windows and has n
 
 ![Windows Explorer](./media/versioning/win-properties.png "Windows Explorer")
 
+> [!NOTE]
+> An innocuous build warning is raised if this version does not follow the format `Major.Minor.Build.Revision`. The warning can be safely ignored.
+
 **✔️ CONSIDER** including a continuous integration build number as the AssemblyFileVersion revision.
 
 > For example, you are building version 1.0.0 of your project, and the continuous integration build number is 99 so your AssemblyFileVersion is 1.0.0.99.
@@ -82,9 +85,6 @@ The assembly informational version is used to record additional version informat
 ```xml
 <AssemblyInformationalVersion>The quick brown fox jumped over the lazy dog.</AssemblyInformationalVersion>
 ```
-
-> [!NOTE]
-> An innocuous build warning is raised if this version does not follow the format `Major.Minor.Build.Revision`. The warning can be safely ignored.
 
 **❌ AVOID** setting the assembly informational version yourself.
 

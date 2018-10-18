@@ -286,7 +286,7 @@ catch (FaultException<CustomerServiceFault> fault)
   
 ### Why Migrate from Remoting to WCF?  
   
--   **.NET Remoting is a legacy product.** As described in [.NET Remoting](/previous-versions/dotnet/netframework-4.0/72x4h507%28v=vs.100%29), it is considered a legacy product and is not recommended for new development. WCF or ASP.NET Web API are recommended for new and existing applications.  
+-   **.NET Remoting is a legacy product.** As described in [.NET Remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507%28v=vs.100%29), it is considered a legacy product and is not recommended for new development. WCF or ASP.NET Web API are recommended for new and existing applications.  
   
 -   **WCF uses cross-platform standards.** WCF was designed with cross-platform interoperability in mind and supports many industry standards (SOAP, WS-Security, WS-Trust, etc.). A WCF service can interoperate with clients running on operating systems other than Windows. Remoting was designed primarily for environments where both the server and client applications run using the .NET framework on a Windows operating system.  
   

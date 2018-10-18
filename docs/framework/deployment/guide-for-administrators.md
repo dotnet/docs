@@ -40,7 +40,7 @@ This step-by-step article describes how a system administrator can deploy the [!
 -   **Deployments** instruct applicable members of the specified target collection to install the software package. 
   
 > [!IMPORTANT]
->  The procedures in this topic contain typical settings for creating and deploying a package and program, and might not cover all possible settings. For other Configuration Manager deployment options, see the [Configuration Manager Documentation Library](/previous-versions/system-center/system-center-2012-R2/gg682041%28v=technet.10%29).  
+>  The procedures in this topic contain typical settings for creating and deploying a package and program, and might not cover all possible settings. For other Configuration Manager deployment options, see the [Configuration Manager Documentation Library](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682041%28v=technet.10%29).  
   
 <a name="deploying_in_a_test_environment"></a>   
 ## Deploying the .NET Framework  
@@ -193,19 +193,19 @@ This step-by-step article describes how a system administrator can deploy the [!
   
  **SQL Server 2008:**  
   
--   [Installing SQL Server 2008 (SQL Server Video)](/previous-versions/sql/sql-server-2008-r2/dd299415%28v=sql.100%29)  
+-   [Installing SQL Server 2008 (SQL Server Video)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/dd299415%28v=sql.100%29)  
   
 -   [SQL Server 2008 Security Overview for Database Administrators](https://download.microsoft.com/download/a/c/d/acd8e043-d69b-4f09-bc9e-4168b65aaa71/SQL2008SecurityOverviewforAdmins.docx)  
   
  **System Center 2012 Configuration Manager (Management Point, Distribution Point):**  
   
--   [Site Administration for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg681983%28v=technet.10%29)  
+-   [Site Administration for System Center 2012 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg681983%28v=technet.10%29)  
   
 -   [Configuration Manager Single Site Planning and Deployment](https://technet.microsoft.com/library/bb680961.aspx)  
   
  **System Center 2012 Configuration Manager client for Windows computers:**  
   
--   [Deploying Clients for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699391%28v=technet.10%29)  
+-   [Deploying Clients for System Center 2012 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699391%28v=technet.10%29)  
   
 <a name="troubleshooting"></a>   
 ## Troubleshooting  
@@ -242,7 +242,7 @@ This step-by-step article describes how a system administrator can deploy the [!
   
 -   [Background Intelligent Transfer Service (BITS) error codes](/windows/desktop/Bits/bits-return-values)  
   
--   [URL moniker error codes](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775145%28v=vs.85%29)  
+-   [URL moniker error codes](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775145%28v=vs.85%29)  
   
 -   [WinHttp error codes](/windows/desktop/WinHttp/error-messages)  
   

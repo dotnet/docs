@@ -44,7 +44,17 @@
   
  The following is an excerpt of the configuration file used by the code in the previous example.  
   
-  
+```xml
+<configuration>
+  <configSections>
+    <section name="CustomSection" type="ConfigurationPropertyExample.CustomSection, ConfigurationPropertyExample" 
+      allowDefinition="Everywhere" allowExeDefinition="MachineToApplication" 
+      restartOnExternalChanges="true" />
+  </configSections>
+  <CustomSection fileName="override.txt" alias="alias.txt" 
+    maxUsers="1000" maxIdleTime="00:05:00" />
+</configuration>
+```
   
  The following example shows how to create the previous section in code.  
   

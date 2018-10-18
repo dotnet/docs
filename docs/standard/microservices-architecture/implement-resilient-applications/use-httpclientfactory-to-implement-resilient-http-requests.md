@@ -43,13 +43,15 @@ For the sake of brevity, this guidance shows the most structured way to use `Htt
 
 ## How to use Typed Clients with HttpClientFactory
 
-The following diagram shows how Typed Clients are used with HttpClientFactory.
+So, what's a "typed client" anyway? It's just an `HttpClient` that's configured upon injection by  the `DefaultHttpClientFactory`.
+
+The following diagram shows how Typed Clients are used with `HttpClientFactory`.
 
 ![A ClientService (used by a controller or client code) uses an HttpClient created by the registered IHttpClientFactory. This factory assigns the HttpClient an HttpMessageHandler from a pool it manages. The HttpClient can be configured with Polly's policies when registering the IHttpClientFactory in the DI container with the extension method AddHttpClient.](./media/image3.5.png)
 
 **Figure 8-4**. Using HttpClientFactory with Typed Client classes.
 
-First, setup `HttpClientFactory` in your application. Add a reference to the `Microsoft.Extensions.Http` package which includes the `AddHttpClient()` extension method for `IServiceCollection`. This extension method registers the `DefaultHttpClientFactory` to be used as a singleton for the interface `IHttpClientFactory`. It defines a transient configuration for the `HttpMessageHandlerBuilder`. This message handler (`HttpMessageHandler` object), taken from a pool, is used by the `HttpClient` returned from the factory.
+First, setup `HttpClientFactory` in your application, adding a reference to the `Microsoft.Extensions.Http` package that includes the `AddHttpClient()` extension method for `IServiceCollection`. This extension method registers the `DefaultHttpClientFactory` to be used as a singleton for the interface `IHttpClientFactory`. It defines a transient configuration for the `HttpMessageHandlerBuilder`. This message handler (`HttpMessageHandler` object), taken from a pool, is used by the `HttpClient` returned from the factory.
 
 In the next code, you can see how `AddHttpClient()` can be used to register Typed Clients (Service Agents) that need to use `HttpClient`.
 
@@ -61,15 +63,17 @@ services.AddHttpClient<IBasketService, BasketService>();
 services.AddHttpClient<IOrderingService, OrderingService>();
 ```
 
-Just by adding your typed client classes with AddHttpClient(), whenever you use the `HttpClient` object that will be injected to your class through its constructor, that `HttpClient` object will be using all the configuration and policies provided. In the next sections, you will see those policies like Polly’s retries or circuit-breakers.
+Registering the client services as shown in the code above, makes the `DefaultClientFactory` create an `HttpClient` configured specifically for each service, as we'll see in just a moment.
+
+Just by registering your client classes with AddHttpClient(), whenever you use the `HttpClient` object injected to your class through its constructor, that `HttpClient` object will be using all the configuration and policies provided upon registration. In the next sections, you will see those policies like Polly’s retries or circuit-breakers.
 
 ### HttpClient lifetimes
 
-Each time you get an `HttpClient` object from IHttpClientFactory, a new instance of an `HttpClient` is returned. There will be an HttpMessageHandler** per named of typed client. `IHttpClientFactory` will pool the HttpMessageHandler instances created by the factory to reduce resource consumption. An HttpMessageHandler instance may be reused from the pool when creating a new `HttpClient` instance if its lifetime hasn't expired.
+Each time you get an `HttpClient` object from IHttpClientFactory, a new instance of an `HttpClient` is returned. There will be an `HttpMessageHandler` per named of typed client. `IHttpClientFactory` will pool the `HttpMessageHandler` instances created by the factory to reduce resource consumption. An `HttpMessageHandler` instance may be reused from the pool when creating a new `HttpClient` instance if its lifetime hasn't expired.
 
 Pooling of handlers is desirable as each handler typically manages its own underlying HTTP connections; creating more handlers than necessary can result in connection delays. Some handlers also keep connections open indefinitely, which can prevent the handler from reacting to DNS changes.
 
-The HttpMessageHandler objects in the pool have a lifetime that is the length of time that an HttpMessageHandler instance in the pool can be reused. The default value is two minutes, but it can be overridden per named or typed client basis. To override it, call SetHandlerLifetime() on the IHttpClientBuilder that is returned when creating the client, as shown in the following code.
+The `HttpMessageHandler` objects in the pool have a lifetime that is the length of time that an `HttpMessageHandler` instance in the pool can be reused. The default value is two minutes, but it can be overridden per named or typed client basis. To override it, call SetHandlerLifetime() on the IHttpClientBuilder that is returned when creating the client, as shown in the following code.
 
 ```csharp
 //Set 5 min as the lifetime for the HttpMessageHandler objects in the pool used for the Catalog Typed Client 
@@ -143,7 +147,7 @@ namespace Microsoft.eShopOnContainers.WebMVC.Controllers
 }
 ```
 
-Until this point, the code shown is just performing regular Http requests, but the ‘magic’ comes in the following sections where, just by adding policies and delegating handlers to your registered typed clients, all the Http requests to be done by `HttpClient` will behave taking into account resilient policies such as retries with exponential backoff, circuit breakers, or any other custom delegating handler to implement additional security features, like using auth tokens, or any other custom feature. 
+Up to this point, the code shown is just performing regular Http requests, but the ‘magic’ comes in the following sections where, just by adding policies and delegating handlers to your registered typed clients, all the Http requests to be done by `HttpClient` will behave taking into account resilient policies such as retries with exponential backoff, circuit breakers, or any other custom delegating handler to implement additional security features, like using auth tokens, or any other custom feature. 
 
 ## Additional resources
 

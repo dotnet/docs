@@ -39,7 +39,7 @@ public class Startup
 
 When retries are enabled in EF Core connections, each operation you perform using EF Core becomes its own retryable operation. Each query and each call to SaveChanges will be retried as a unit if a transient failure occurs.
 
-However, if your code initiates a transaction using BeginTransaction, you are defining your own group of operations that need to be treated as a unit—everything inside the transaction has be rolled back if a failure occurs. You will see an exception like the following if you attempt to execute that transaction when using an EF execution strategy (retry policy) and you include several SaveChanges calls from multiple DbContexts in the transaction.
+However, if your code initiates a transaction using BeginTransaction, you are defining your own group of operations that need to be treated as a unit—everything inside the transaction has to be rolled back if a failure occurs. You will see an exception like the following if you attempt to execute that transaction when using an EF execution strategy (retry policy) and you include several SaveChanges calls from multiple DbContexts in the transaction.
 
 > System.InvalidOperationException: The configured execution strategy 'SqlServerRetryingExecutionStrategy' does not support user initiated transactions. Use the execution strategy returned by 'DbContext.Database.CreateExecutionStrategy()' to execute all the operations in the transaction as a retriable unit.
 
@@ -84,6 +84,8 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem
 
 The first DbContext is \_catalogContext and the second DbContext is within the \_integrationEventLogService object. The Commit action is performed across multiple DbContexts using an EF execution strategy.
 
+To achieve this multiple DbContext commit, the SaveEventAndCatalogContextChangesAsync uses a ResilientTransaction class like so:
+
 ```csharp
 public class CatalogIntegrationEventService : ICatalogIntegrationEventService
 {
@@ -105,6 +107,8 @@ public class CatalogIntegrationEventService : ICatalogIntegrationEventService
     }
 }
 ```
+
+The ResilientTransaction.ExecuteAsync method basically begins a transaction from the passed DbContext (\_catalogContext) and then makes the EventLogService use that transaction to save changes from the IntegrationEventLogContext and then commit the whole transaction.
 
 ```csharp
 public class ResilientTransaction

@@ -33,7 +33,7 @@ services.AddHttpClient<IBasketService, BasketService>()
 
 The **AddPolicyHandler()** method is what adds policies to the `HttpClient` objects you will use. In this case, it is adding a Polly’s policy for Http Retries with exponential backoff.
 
-In order to have a more modular approach, the Http Retry Policy can be defined in a separate method within the ConfigureServices() method, as the following code.
+In order to have a more modular approach, the Http Retry Policy can be defined in a separate method within the `Startup.cs` file, as the following code.
 
 ```csharp
 static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
@@ -50,7 +50,7 @@ With Polly, you can define a Retry policy with the number of retries, the expone
 
 so it will try six times and the seconds between each retry will be exponential, starting on two seconds.
 
-### Adding a jitter strategy to the retry policy
+## Add a jitter strategy to the retry policy
 
 A regular Retry policy can impact your system in cases of high concurrency and scalability and under high contention. To overcome peaks of similar retries coming from many clients in case of partial outages, a good workaround is to add a jitter strategy to the retry algorithm/policy. This can improve the overall performance of the end-to-end system by adding randomness to the exponential backoff. This spreads out the spikes when issues arise. When you use a plain Polly policy, code to implement jitter could look like the following example:
 

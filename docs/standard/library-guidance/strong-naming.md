@@ -43,7 +43,7 @@ You should strong name your open-source .NET libraries. Strong naming an assembl
 
 **✔️ CONSIDER** strong naming your library's assemblies.
 
-**✔️ CONSIDER** checking in the key used to strong name into your source control system.
+**✔️ CONSIDER** adding the strong naming key to your source control system.
 
 > A publicly available key lets developers modify and recompile your library source code with the same key.
 > 

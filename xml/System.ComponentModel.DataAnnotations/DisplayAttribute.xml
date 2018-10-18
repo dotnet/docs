@@ -1,4 +1,4 @@
-﻿<Type Name="DisplayAttribute" FullName="System.ComponentModel.DataAnnotations.DisplayAttribute">
+<Type Name="DisplayAttribute" FullName="System.ComponentModel.DataAnnotations.DisplayAttribute">
   <TypeSignature Language="C#" Value="public sealed class DisplayAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DisplayAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.DisplayAttribute" />
@@ -542,7 +542,7 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Do not use this property to get the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetDescription%2A> method instead. A `null` value or empty string is valid.  
+ Do not use this property to get the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetGroupName%2A> method instead. A `null` value or empty string is valid.  
   
  ]]></format>
         </remarks>

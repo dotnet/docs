@@ -16,7 +16,7 @@ ms.author: "ronpet"
 ---
 # Numerics in .NET
 
-.NET provides the range of numeric integer and floating-point primitives, as well as <xref:System.Numerics.BigInteger?displayProperty=nameWithType>, which is an integral type with no theoretical upper or lower bound, <xref:System.Numerics.Complex?displayProperty=nameWithType>, which represents complex numbers, and a set of SIMD-enabled types in the <xref:System.Numerics> namespace.
+.NET provides a range of numeric integer and floating-point primitives, as well as <xref:System.Numerics.BigInteger?displayProperty=nameWithType>, which is an integral type with no theoretical upper or lower bound, <xref:System.Numerics.Complex?displayProperty=nameWithType>, which represents complex numbers, and a set of SIMD-enabled types in the <xref:System.Numerics> namespace.
   
 ## Integer types
 
@@ -33,7 +33,7 @@ ms.author: "ronpet"
 |<xref:System.UInt32?displayProperty=nameWithType>|Unsigned|4|0|4,294,967,295|  
 |<xref:System.UInt64?displayProperty=nameWithType>|Unsigned|8|0|18,446,744,073,709,551,615|  
   
-Each integer type supports standard arithmetic operators. The <xref:System.Math?displayProperty=nameWithType> class provides methods for a broader set of mathematical functions.
+Each integer type supports a set of standard arithmetic operators. The <xref:System.Math?displayProperty=nameWithType> class provides methods for a broader set of mathematical functions.
 
 You can also work with the individual bits in an integer value by using the <xref:System.BitConverter?displayProperty=nameWithType> class.  
 
@@ -50,13 +50,13 @@ The <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure is 
   
 |Type|Size (in bytes)|Approximate range|Precision|  
 |----------|--------|---------------------|--------------------|  
-|<xref:System.Single?displayProperty=nameWithType>|4|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|6-9 digits|  
-|<xref:System.Double?displayProperty=nameWithType>|8|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|15-17 digits|  
+|<xref:System.Single?displayProperty=nameWithType>|4|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|~6-9 digits|  
+|<xref:System.Double?displayProperty=nameWithType>|8|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|~15-17 digits|  
 |<xref:System.Decimal?displayProperty=nameWithType>|16|±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>|28-29 digits|  
   
-Both <xref:System.Single> and <xref:System.Double> types support special values that represent non-a-number and infinity. For example, the <xref:System.Double> type provides the following values: <xref:System.Double.NaN?displayProperty=nameWithType>, <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, and <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. You use the <xref:System.Double.IsNaN%2A?displayProperty=nameWithType>, <xref:System.Double.IsInfinity%2A?displayProperty=nameWithType>, <xref:System.Double.IsPositiveInfinity%2A?displayProperty=nameWithType>, and <xref:System.Double.IsNegativeInfinity%2A?displayProperty=nameWithType> methods to test for these special values.
+Both <xref:System.Single> and <xref:System.Double> types support special values that represent not-a-number and infinity. For example, the <xref:System.Double> type provides the following values: <xref:System.Double.NaN?displayProperty=nameWithType>, <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, and <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. You use the <xref:System.Double.IsNaN%2A?displayProperty=nameWithType>, <xref:System.Double.IsInfinity%2A?displayProperty=nameWithType>, <xref:System.Double.IsPositiveInfinity%2A?displayProperty=nameWithType>, and <xref:System.Double.IsNegativeInfinity%2A?displayProperty=nameWithType> methods to test for these special values.
 
-Each floating-point type supports standard arithmetic operators. The <xref:System.Math?displayProperty=nameWithType> class provides methods for a broader set of mathematical functions. .NET Core 2.0 and later includes the <xref:System.MathF?displayProperty=nameWithType> class that provides methods which accept arguments of the <xref:System.Single> type.
+Each floating-point type supports a set of standard arithmetic operators. The <xref:System.Math?displayProperty=nameWithType> class provides methods for a broader set of mathematical functions. .NET Core 2.0 and later includes the <xref:System.MathF?displayProperty=nameWithType> class that provides methods which accept arguments of the <xref:System.Single> type.
 
 You can also work with the individual bits in <xref:System.Double> and <xref:System.Single> values by using the <xref:System.BitConverter?displayProperty=nameWithType> class. The <xref:System.Decimal?displayProperty=nameWithType> structure has its own methods, <xref:System.Decimal.GetBits%2A?displayProperty=nameWithType> and <xref:System.Decimal.%23ctor%28System.Int32%5B%5D%29?displayProperty=nameWithType>, for working with a decimal value's individual bits, as well as its own set of methods for performing some additional mathematical operations.
   

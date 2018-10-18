@@ -1,7 +1,7 @@
 ---
 title: Data transforms
 description: Explore the different data transforms supported in ML.NET.
-ms.date: 08/08/2018
+ms.date: 10/16/2018
 ---
 # Data transforms
 
@@ -64,7 +64,7 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Legacy.Transforms.LabelToFloatConverter> | Transforms the label to float to make it suitable for regression. |
 | <xref:Microsoft.ML.Legacy.Transforms.PredictedLabelColumnOriginalValueConverter> | Transforms a predicted label column to its original values, unless it is of type bool. |
 
-## Missing Values
+## Missing values
 
 | Transform | Definition |
 | --- | --- |
@@ -85,7 +85,6 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Legacy.Transforms.LpNormalizer> | Normalize vectors (rows) individually by rescaling them to the unit norm (L2, L1 or LInf). Performs the following operation on a vector X: Y = (X - M) / D, where M is mean and D is either the L2 norm, the L1 norm, or the LInf norm. |
 | <xref:Microsoft.ML.Legacy.Transforms.MeanVarianceNormalizer> | Normalizes the data based on the computed mean and variance of the data. |
 | <xref:Microsoft.ML.Legacy.Transforms.MinMaxNormalizer> | Normalizes the data based on the observed minimum and maximum values of the data. |
-| <xref:Microsoft.ML.Legacy.Transforms.SupervisedBinNormalizer> | Similar to <xref:Microsoft.ML.Legacy.Transforms.BinNormalizer>, but calculates bins based on correlation with the label column, not equidensity. The new value is bin_number / number_of_bins. |
 
 ## Row Filters
 

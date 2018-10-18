@@ -6,7 +6,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Migrating Your Windows Store App to .NET Native
-.NET Native provides static compilation of apps in the Windows Store or on the developer’s computer. This differs from the dynamic compilation performed for Windows Store apps by the just-in-time (JIT) compiler or the [Native Image Generator (Ngen.exe)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) on the device. Despite the differences, .NET Native tries to maintain compatibility with the [.NET for Windows Store apps](/previous-versions/windows/apps/br230302%28v=vs.140%29). For the most part, things that work on the .NET for Windows Store apps also work with .NET Native.  However, in some cases, you may encounter behavioral changes. This document discusses these differences between the standard .NET for Windows Store apps and .NET Native in the following areas:  
+.NET Native provides static compilation of apps in the Windows Store or on the developer’s computer. This differs from the dynamic compilation performed for Windows Store apps by the just-in-time (JIT) compiler or the [Native Image Generator (Ngen.exe)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) on the device. Despite the differences, .NET Native tries to maintain compatibility with the [.NET for Windows Store apps](https://docs.microsoft.com/previous-versions/windows/apps/br230302%28v=vs.140%29). For the most part, things that work on the .NET for Windows Store apps also work with .NET Native.  However, in some cases, you may encounter behavioral changes. This document discusses these differences between the standard .NET for Windows Store apps and .NET Native in the following areas:  
   
 -   [General runtime differences](#Runtime)  
   
@@ -667,5 +667,5 @@ ms.author: "ronpet"
 ## See Also  
  [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)  
  [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [.NET For Windows Store apps overview](/previous-versions/windows/apps/br230302%28v=vs.140%29)  
+ [.NET For Windows Store apps overview](https://docs.microsoft.com/previous-versions/windows/apps/br230302%28v=vs.140%29)  
  [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)

@@ -41,5 +41,5 @@ Defines methods that allow the host to get information about requested tasks and
 ## See Also  
  <xref:System.Threading.Thread>  
  [IHostSyncManager Interface](ihostsyncmanager-interface.md)  
- [Managed and Unmanaged Threading](/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100))  
+ [Managed and Unmanaged Threading](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100))  
  [Hosting Interfaces](hosting-interfaces.md)

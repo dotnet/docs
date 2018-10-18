@@ -32,10 +32,10 @@ The following table lists the enumeration formatting strings and the values they
         G or g
     :::column-end:::
     :::column:::
-        Displays the enumeration entry as a string value, if possible, and otherwise displays the integer value of the current instance. If the enumeration is defined with the **Flags** attribute set, the string values of each valid entry are concatenated together, separated by commas. If the **Flags** attribute is not set, an invalid value is displayed as a numeric entry. The following example illustrates the G format specifier.<br /><br />
-        [!code-csharp[Formatting.Enum#1](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.Enum/cs/enum1.cs#1)] 
-        
-        [!code-vb[Formatting.Enum#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Enum/vb/enum1.vb#1)]
+        Displays the enumeration entry as a string value, if possible, and otherwise displays the integer value of the current instance. If the enumeration is defined with the **Flags** attribute set, the string values of each valid entry are concatenated together, separated by commas. If the **Flags** attribute is not set, an invalid value is displayed as a numeric entry. The following example illustrates the G format specifier.
+
+  [!code-csharp[Formatting.Enum#1](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.Enum/cs/enum1.cs#1)]
+  [!code-vb[Formatting.Enum#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Enum/vb/enum1.vb#1)]
         
     :::column-end:::
 :::row-end:::
@@ -45,10 +45,10 @@ The following table lists the enumeration formatting strings and the values they
         F or f
     :::column-end:::
     :::column:::
-        Displays the enumeration entry as a string value, if possible. If the value can be completely displayed as a summation of the entries in the enumeration (even if the **Flags** attribute is not present), the string values of each valid entry are concatenated together, separated by commas. If the value cannot be completely determined by the enumeration entries, then the value is formatted as the integer value. The following example illustrates the F format specifier.<br /><br />
-        [!code-csharp[Formatting.Enum#2](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.Enum/cs/enum1.cs#2)] 
+        Displays the enumeration entry as a string value, if possible. If the value can be completely displayed as a summation of the entries in the enumeration (even if the **Flags** attribute is not present), the string values of each valid entry are concatenated together, separated by commas. If the value cannot be completely determined by the enumeration entries, then the value is formatted as the integer value. The following example illustrates the F format specifier.
         
-        [!code-vb[Formatting.Enum#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Enum/vb/enum1.vb#2)]
+  [!code-csharp[Formatting.Enum#2](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.Enum/cs/enum1.cs#2)]         
+  [!code-vb[Formatting.Enum#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Enum/vb/enum1.vb#2)]
         
     :::column-end:::
 :::row-end:::
@@ -58,10 +58,10 @@ The following table lists the enumeration formatting strings and the values they
         D or d
     :::column-end:::
     :::column:::
-        Displays the enumeration entry as an integer value in the shortest representation possible. The following example illustrates the D format specifier.<br /><br />
-        [!code-csharp[Formatting.Enum#3](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.Enum/cs/enum1.cs#3)] 
+        Displays the enumeration entry as an integer value in the shortest representation possible. The following example illustrates the D format specifier.
         
-        [!code-vb[Formatting.Enum#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Enum/vb/enum1.vb#3)]
+  [!code-csharp[Formatting.Enum#3](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.Enum/cs/enum1.cs#3)]
+  [!code-vb[Formatting.Enum#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Enum/vb/enum1.vb#3)]
         
     :::column-end:::
 :::row-end:::
@@ -71,22 +71,22 @@ The following table lists the enumeration formatting strings and the values they
         X or x
     :::column-end:::
     :::column:::
-        Displays the enumeration entry as a hexadecimal value. The value is represented with leading zeros as necessary, to ensure that the value is a minimum eight digits in length. The following example illustrates the X format specifier.<br /><br />
-         [!code-csharp[Formatting.Enum#4](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.Enum/cs/enum1.cs#4)] 
+        Displays the enumeration entry as a hexadecimal value. The value is represented with leading zeros as necessary, to ensure that the value is a minimum eight digits in length. The following example illustrates the X format specifier.
         
-        [!code-vb[Formatting.Enum#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Enum/vb/enum1.vb#4)]
+  [!code-csharp[Formatting.Enum#4](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.Enum/cs/enum1.cs#4)]      
+  [!code-vb[Formatting.Enum#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Enum/vb/enum1.vb#4)]
         
     :::column-end:::
 :::row-end:::
 
 ## Example
 
-The following example defines an enumeration called `Colors` that consists of three entries: `Red`, `Blue`, and `Green`.
+The following example defines an enumeration called `Colors` that consists of three entries: `Red`, `Blue`, and `Green`:
 
 [!code-csharp[Formatting.Enum#5](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.Enum/cs/enum1.cs#5)]
 [!code-vb[Formatting.Enum#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Enum/vb/enum1.vb#5)]
 
-After the enumeration is defined, an instance can be declared in the following manner.
+After the enumeration is defined, an instance can be declared in the following manner:
 
 [!code-csharp[Formatting.Enum#6](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.Enum/cs/enum1.cs#6)]
 [!code-vb[Formatting.Enum#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Enum/vb/enum1.vb#6)]

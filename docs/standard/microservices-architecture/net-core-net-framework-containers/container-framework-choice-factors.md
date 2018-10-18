@@ -38,12 +38,12 @@ The following decision table summarizes whether to use .NET Framework or .NET Co
 <td>.NET Core</td>
 </tr>
 <tr class="even">
-<td>Windows Server legacy app ("brown-field") migration to containers</td>
+<td>Windows Server legacy app (&quot;brown-field&quot;) migration to containers</td>
 <td>--</td>
 <td>.NET Framework</td>
 </tr>
 <tr class="odd">
-<td>New container-based development ("green-field")</td>
+<td>New container-based development (&quot;green-field&quot;)</td>
 <td>.NET Core</td>
 <td>.NET Core</td>
 </tr>
@@ -81,6 +81,6 @@ The following decision table summarizes whether to use .NET Framework or .NET Co
 </tbody>
 </table>
 
->[!div class="step-by-step"]
-[Previous](net-framework-container-scenarios.md)
-[Next](net-container-os-targets.md)
+> [!div class="step-by-step"]
+> [Previous](net-framework-container-scenarios.md)
+> [Next](net-container-os-targets.md)

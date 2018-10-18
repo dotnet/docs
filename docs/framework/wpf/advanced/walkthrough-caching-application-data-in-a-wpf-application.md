@@ -282,36 +282,36 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
 #### To test caching in the WPF application
 
-1.  Press CTRL+F5 to run the application.
+1. Press CTRL+F5 to run the application.
 
-     The `MainWindow` window is displayed.
+    The `MainWindow` window is displayed.
 
-2.  Click **Get Cache**.
+2. Click **Get Cache**.
 
-     The cached content from the text file is displayed in a message box. Notice the timestamp on the file.
+    The cached content from the text file is displayed in a message box. Notice the timestamp on the file.
 
-3.  Close the message box and then click **Get Cache** again**.**
+3. Close the message box and then click **Get Cache** again<strong>.</strong>
 
-     The timestamp is unchanged. This indicates the cached content is displayed.
+    The timestamp is unchanged. This indicates the cached content is displayed.
 
-4.  Wait 10 seconds or more and then click **Get Cache** again.
+4. Wait 10 seconds or more and then click **Get Cache** again.
 
-     This time a new timestamp is displayed. This indicates that the policy let the cache entry expire and that new cached content is displayed.
+    This time a new timestamp is displayed. This indicates that the policy let the cache entry expire and that new cached content is displayed.
 
-5.  In a text editor, open the text file that you created. Do not make any changes yet.
+5. In a text editor, open the text file that you created. Do not make any changes yet.
 
-6.  Close the message box and then click **Get Cache** again**.**
+6. Close the message box and then click **Get Cache** again<strong>.</strong>
 
-     Notice the timestamp again.
+    Notice the timestamp again.
 
-7.  Make a change to the text file and then save the file.
+7. Make a change to the text file and then save the file.
 
-8.  Close the message box and then click **Get Cache** again.
+8. Close the message box and then click **Get Cache** again.
 
-     This message box contains the updated content from the text file and a new timestamp. This indicates that the host-file change monitor evicted the cache entry immediately when you changed the file, even though the absolute timeout period had not expired.
+    This message box contains the updated content from the text file and a new timestamp. This indicates that the host-file change monitor evicted the cache entry immediately when you changed the file, even though the absolute timeout period had not expired.
 
-    > [!NOTE]
-    >  You can increase the eviction time to 20 seconds or more to allow more time for you to make a change in the file.
+   > [!NOTE]
+   >  You can increase the eviction time to 20 seconds or more to allow more time for you to make a change in the file.
 
 ## Code Example
  After you have completed this walkthrough, the code for the project you created will resemble the following example.

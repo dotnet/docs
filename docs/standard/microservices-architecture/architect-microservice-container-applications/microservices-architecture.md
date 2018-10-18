@@ -57,6 +57,6 @@ Of these, only the first three are covered or introduced in this guide. The last
 
 
 
->[!div class="step-by-step"]
-[Previous](service-oriented-architecture.md)
-[Next](data-sovereignty-per-microservice.md)
+> [!div class="step-by-step"]
+> [Previous](service-oriented-architecture.md)
+> [Next](data-sovereignty-per-microservice.md)

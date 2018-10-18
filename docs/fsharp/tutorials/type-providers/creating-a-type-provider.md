@@ -85,8 +85,8 @@ type Type100 =
 
 Note that the set of types and members provided is statically known. This example doesn't leverage the ability of providers to provide types that depend on a schema. The implementation of the type provider is outlined in the following code, and the details are covered in later sections of this topic.
 
->[!WARNING]
-There may be differences between this code and the online samples.
+> [!WARNING]
+> There may be differences between this code and the online samples.
 
 ```fsharp
 namespace Samples.FSharp.HelloWorldTypeProvider
@@ -347,7 +347,7 @@ t.AddMembersDelayed(fun () ->
           p.AddXmlDocDelayed(fun () -> 
               sprintf "This is StaticProperty%d on NestedType" i)
 
-          yield p ]
+          yield p ]
 
     staticPropsInNestedType)
 

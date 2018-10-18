@@ -464,6 +464,6 @@ Although we don't recommended to return IQueryable from a repository, it’s per
     [*http://deviq.com/specification-pattern/*](http://deviq.com/specification-pattern/)
     
 
->[!div class="step-by-step"]
-[Previous](infrastructure-persistence-layer-design.md)
-[Next](nosql-database-persistence-infrastructure.md)
+> [!div class="step-by-step"]
+> [Previous](infrastructure-persistence-layer-design.md)
+> [Next](nosql-database-persistence-infrastructure.md)

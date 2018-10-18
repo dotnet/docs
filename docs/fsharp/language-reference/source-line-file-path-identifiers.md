@@ -21,11 +21,13 @@ Each of these values has type `string`.
 
 The following table summarizes the source line, file, and path identifiers that are available in F#. These identifiers are not preprocessor macros; they are built-in values that are recognized by the compiler.
 
-|Predefined identifier|Description|
-|---------------------|-----------|
-|`__LINE__`|Evaluates to the current line number, considering `#line` directives.|
-|`__SOURCE_DIRECTORY__`|Evaluates to the current full path of the source directory, considering `#line` directives.|
-|`__SOURCE_FILE__`|Evaluates to the current source file name and its path, considering `#line` directives.|
+
+| Predefined identifier  |                                         Description                                         |
+|------------------------|---------------------------------------------------------------------------------------------|
+|       `__LINE__`       |            Evaluates to the current line number, considering `#line` directives.            |
+| `__SOURCE_DIRECTORY__` | Evaluates to the current full path of the source directory, considering `#line` directives. |
+|   `__SOURCE_FILE__`    |   Evaluates to the current source file name and its path, considering `#line` directives.   |
+
 For more information about the `#line` directive, see [Compiler Directives](compiler-directives.md).
 
 ## Example

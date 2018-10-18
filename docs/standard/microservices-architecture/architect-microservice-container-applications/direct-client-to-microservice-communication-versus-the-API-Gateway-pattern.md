@@ -179,6 +179,6 @@ After the initial architecture and patterns explanation sections, the next secti
 - **API Gateway in a Nutshell** (ASP.net Core API Gateway Tutorial Series)
      [*http://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html*](http://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html)
 
->[!div class="step-by-step"]
-[Previous](identify-microservice-domain-model-boundaries.md)
-[Next](communication-in-microservice-architecture.md)
+> [!div class="step-by-step"]
+> [Previous](identify-microservice-domain-model-boundaries.md)
+> [Next](communication-in-microservice-architecture.md)

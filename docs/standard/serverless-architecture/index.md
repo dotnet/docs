@@ -132,5 +132,5 @@ The first part of this guide examines why serverless is a viable option by compa
 
 The guide and related samples are constantly evolving, so your feedback is welcomed! If you have comments about how this guide can be improved, use the feedback section at the bottom of any page built on [GitHub issues](https://github.com/dotnet/docs/issues).
 
->[!div class="step-by-step"]
-[Next](architecture-approaches.md)
+> [!div class="step-by-step"]
+> [Next](architecture-approaches.md)

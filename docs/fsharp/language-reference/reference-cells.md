@@ -44,13 +44,15 @@ let ref x = { contents = x }
 
 The following table shows the features that are available on the reference cell.
 
-|Operator, member, or field|Description|Type|Definition|
-|--------------------------|-----------|----|----------|
-|`!` (dereference operator)|Returns the underlying value.|`'a ref -> 'a`|`let (!) r = r.contents`|
-|`:=` (assignment operator)|Changes the underlying value.|`'a ref -> 'a -> unit`|`let (:=) r x = r.contents <- x`|
-|`ref` (operator)|Encapsulates a value into a new reference cell.|`'a -> 'a ref`|`let ref x = { contents = x }`|
-|`Value` (property)|Gets or sets the underlying value.|`unit -> 'a`|`member x.Value = x.contents`|
-|`contents` (record field)|Gets or sets the underlying value.|`'a`|`let ref x = { contents = x }`|
+
+| Operator, member, or field |                   Description                   |          Type          |            Definition            |
+|----------------------------|-------------------------------------------------|------------------------|----------------------------------|
+| `!` (dereference operator) |          Returns the underlying value.          |     `'a ref -> 'a`     |     `let (!) r = r.contents`     |
+| `:=` (assignment operator) |          Changes the underlying value.          | `'a ref -> 'a -> unit` | `let (:=) r x = r.contents <- x` |
+|      `ref` (operator)      | Encapsulates a value into a new reference cell. |     `'a -> 'a ref`     |  `let ref x = { contents = x }`  |
+|     `Value` (property)     |       Gets or sets the underlying value.        |      `unit -> 'a`      |  `member x.Value = x.contents`   |
+| `contents` (record field)  |       Gets or sets the underlying value.        |          `'a`          |  `let ref x = { contents = x }`  |
+
 There are several ways to access the underlying value. The value returned by the dereference operator (`!`) is not an assignable value. Therefore, if you are modifying the underlying value, you must use the assignment operator (`:=`) instead.
 
 Both the `Value` property and the `contents` field are assignable values. Therefore, you can use these to either access or change the underlying value, as shown in the following code.

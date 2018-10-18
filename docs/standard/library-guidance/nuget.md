@@ -94,6 +94,6 @@ Currently the main public host for symbols - [SymbolSource](http://www.symbolsou
 
 **❌ AVOID** creating a symbols package containing PDBs.
 
->[!div class="step-by-step"]
-[Previous](./strong-naming.md)
-[Next](./dependencies.md)
+> [!div class="step-by-step"]
+> [Previous](./strong-naming.md)
+> [Next](./dependencies.md)

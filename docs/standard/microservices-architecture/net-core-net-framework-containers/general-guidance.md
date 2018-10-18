@@ -40,6 +40,6 @@ Using .NET Framework on Docker can improve your deployment experiences by minimi
     https://aka.ms/eshopmodernizing
 
 
->[!div class="step-by-step"]
-[Previous](index.md)
-[Next](net-core-container-scenarios.md)
+> [!div class="step-by-step"]
+> [Previous](index.md)
+> [Next](net-core-container-scenarios.md)

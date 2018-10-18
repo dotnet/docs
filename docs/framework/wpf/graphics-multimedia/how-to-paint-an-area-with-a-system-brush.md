@@ -12,21 +12,21 @@ The <xref:System.Windows.SystemColors> class provides access to system brushes a
   
  You can use system brushes as either a static or a dynamic resource. Use a dynamic resource if you want the brush to update automatically if the user changes the system brush as the application is running; otherwise, use a static resource. The SystemColors class contains a variety of static properties that follow a strict naming convention:  
   
--   *\<SystemColor>*Brush  
+- <em>\<SystemColor></em>Brush  
   
-     Gets a static reference to a <xref:System.Windows.Media.SolidColorBrush> of the specified system color.  
+   Gets a static reference to a <xref:System.Windows.Media.SolidColorBrush> of the specified system color.  
   
--   *\<SystemColor>*BrushKey  
+- <em>\<SystemColor></em>BrushKey  
   
-     Gets a dynamic reference to a <xref:System.Windows.Media.SolidColorBrush> of the specified system color.  
+   Gets a dynamic reference to a <xref:System.Windows.Media.SolidColorBrush> of the specified system color.  
   
--   *\<SystemColor>*Color  
+- <em>\<SystemColor></em>Color  
   
-     Gets a static reference to a <xref:System.Windows.Media.Color> structure of the specified system color.  
+   Gets a static reference to a <xref:System.Windows.Media.Color> structure of the specified system color.  
   
--   *\<SystemColor>*ColorKey  
+- <em>\<SystemColor></em>ColorKey  
   
-     Gets a dynamic reference to the <xref:System.Windows.Media.Color> structure of the specified system color.  
+   Gets a dynamic reference to the <xref:System.Windows.Media.Color> structure of the specified system color.  
   
  A system color is a <xref:System.Windows.Media.Color> structure that can be used to configure a brush. For example, you can create a gradient using system colors by setting the <xref:System.Windows.Media.GradientStop.Color%2A> properties of a <xref:System.Windows.Media.LinearGradientBrush> object's gradient stops with system colors. For an example, see [Use System Colors in a Gradient](../../../../docs/framework/wpf/graphics-multimedia/how-to-use-system-colors-in-a-gradient.md).  
   

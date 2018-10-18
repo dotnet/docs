@@ -90,6 +90,6 @@ The assembly informational version is used to record additional version informat
 
 > Allow SourceLink to automatically generate the version containing NuGet and source control metadata.
 
->[!div class="step-by-step"]
-[Previous](./publish-nuget-package.md)
-[Next](./breaking-changes.md)
+> [!div class="step-by-step"]
+> [Previous](./publish-nuget-package.md)
+> [Next](./breaking-changes.md)

@@ -173,6 +173,6 @@ An example of using proxies is shown in the video [Azure: Bring your app to the 
 
 For more information about Proxies, see [Work with Azure Functions Proxies](https://docs.microsoft.com/azure/azure-functions/functions-proxies).
 
->[!div class="step-by-step"]
-[Previous](azure-serverless-platform.md)
-[Next](application-insights.md)
+> [!div class="step-by-step"]
+> [Previous](azure-serverless-platform.md)
+> [Next](application-insights.md)

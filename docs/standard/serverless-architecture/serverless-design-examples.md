@@ -82,6 +82,6 @@ An API gateway provides a single point of entry for clients and then intelligent
 * [Service Bus](https://docs.microsoft.com/azure/service-bus)
 * [Working with the change feed support in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/change-feed)
 
->[!div class="step-by-step"]
-[Previous](serverless-architecture-considerations.md)
-[Next](azure-serverless-platform.md)
+> [!div class="step-by-step"]
+> [Previous](serverless-architecture-considerations.md)
+> [Next](azure-serverless-platform.md)

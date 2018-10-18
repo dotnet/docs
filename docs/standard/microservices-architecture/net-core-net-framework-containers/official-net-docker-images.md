@@ -45,6 +45,6 @@ When you explore the .NET image repositories at Docker Hub, you will find multip
 | microsoft/dotnet:**2.1-sdk**                | .NET Core, with SDKs included, on Linux and Windows (multi-arch)                                  |
 
 
->[!div class="step-by-step"]
-[Previous](net-container-os-targets.md)
-[Next](../architect-microservice-container-applications/index.md)
+> [!div class="step-by-step"]
+> [Previous](net-container-os-targets.md)
+> [Next](../architect-microservice-container-applications/index.md)

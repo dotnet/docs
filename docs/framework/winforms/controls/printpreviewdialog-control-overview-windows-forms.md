@@ -37,7 +37,7 @@ For apps running on the .NET Framework 4.6 or later versions, you can add the fo
 
 ```xml
 <runtime >
-   <!-- AppContextSwitchOverrides values are in the form of 'key1=true|false;key2=true|false -->
+   <!-- AppContextSwitchOverrides values are in the form of 'key1=true|false;key2=true|false -->
    <AppContextSwitchOverrides value = "Switch.System.Drawing.Printing.OptimizePrintPreview=true" />
 </runtime >
 ``` 

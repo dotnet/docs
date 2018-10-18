@@ -25,6 +25,6 @@ You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuG
 
 **✔️ CONSIDER** including PDB files in the NuGet package.
 
->[!div class="step-by-step"]
-[Previous](./dependencies.md)
-[Next](./publish-nuget-package.md)
+> [!div class="step-by-step"]
+> [Previous](./dependencies.md)
+> [Next](./publish-nuget-package.md)

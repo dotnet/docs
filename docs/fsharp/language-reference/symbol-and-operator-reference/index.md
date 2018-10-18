@@ -6,7 +6,7 @@ ms.date: 04/04/2018
 # Symbol and Operator Reference
 
 > [!NOTE]
-The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+> The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 This topic includes a table of symbols and operators that are used in the F# language.
 
@@ -112,34 +112,36 @@ The following table describes symbols used in the F# language, provides links to
 
 The following table shows the order of precedence of operators and other expression keywords in the F# language, in order from lowest precedence to the highest precedence. Also listed is the associativity, if applicable.
 
-|Operator|Associativity|
-|--------|-------------|
-|`as`|Right|
-|`when`|Right|
-|<code>&#124;</code> (pipe)|Left|
-|`;`|Right|
-|`let`|Nonassociative|
-|`function`, `fun`, `match`, `try`|Nonassociative|
-|`if`|Nonassociative|
-|`->`|Right|
-|`:=`|Right|
-|`,`|Nonassociative|
-|`or`, <code>&#124;&#124;</code>|Left|
-|`&`, `&&`|Left|
-|`:>`, `:?>`|Right|
-|`!=`*op*, `<`*op*, `>`*op*, `=`, <code>&#124;</code>*op*, `&`*op*, `&`<br /><br />(including `<<<`, `>>>`, <code>&#124;&#124;&#124;</code>, `&&&`)|Left|
-|`^`*op*<br /><br />(including `^^^`)|Right|
-|`::`|Right|
-|`:?`|Not associative|
-|`-`*op*, `+`*op*|Applies to infix uses of these symbols|
-|`*`*op*, `/`*op*, `%`*op*|Left|
-|`**`*op*|Right|
-|`f x` (function application)|Left|
-|<code>&#124;</code> (pattern match)|Right|
-|prefix operators (`+`*op*, `-`*op*, `%`, `%%`, `&`, `&&`, `!`*op*, `~`*op*)|Left|
-|`.`|Left|
-|`f(x)`|Left|
-|`f<`*types*`>`|Left|
+
+|                                                                      Operator                                                                      |             Associativity              |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
+|                                                                        `as`                                                                        |                 Right                  |
+|                                                                       `when`                                                                       |                 Right                  |
+|                                                             <code>&#124;</code> (pipe)                                                             |                  Left                  |
+|                                                                        `;`                                                                         |                 Right                  |
+|                                                                       `let`                                                                        |             Nonassociative             |
+|                                                         `function`, `fun`, `match`, `try`                                                          |             Nonassociative             |
+|                                                                        `if`                                                                        |             Nonassociative             |
+|                                                                        `->`                                                                        |                 Right                  |
+|                                                                        `:=`                                                                        |                 Right                  |
+|                                                                        `,`                                                                         |             Nonassociative             |
+|                                                          `or`, <code>&#124;&#124;</code>                                                           |                  Left                  |
+|                                                                     `&`, `&&`                                                                      |                  Left                  |
+|                                                                    `:>`, `:?>`                                                                     |                 Right                  |
+| `!=`*op*, `<`*op*, `>`*op*, `=`, <code>&#124;</code>*op*, `&`*op*, `&`<br /><br />(including `<<<`, `>>>`, <code>&#124;&#124;&#124;</code>, `&&&`) |                  Left                  |
+|                                                        `^`*op*<br /><br />(including `^^^`)                                                        |                 Right                  |
+|                                                                        `::`                                                                        |                 Right                  |
+|                                                                        `:?`                                                                        |            Not associative             |
+|                                                                  `-`*op*, `+`*op*                                                                  | Applies to infix uses of these symbols |
+|                                                             `*`*op*, `/`*op*, `%`*op*                                                              |                  Left                  |
+|                                                                      `**`*op*                                                                      |                 Right                  |
+|                                                            `f x` (function application)                                                            |                  Left                  |
+|                                                        <code>&#124;</code> (pattern match)                                                         |                 Right                  |
+|                                    prefix operators (`+`*op*, `-`*op*, `%`, `%%`, `&`, `&&`, `!`*op*, `~`*op*)                                     |                  Left                  |
+|                                                                        `.`                                                                         |                  Left                  |
+|                                                                       `f(x)`                                                                       |                  Left                  |
+|                                                                   `f<`*types*`>`                                                                   |                  Left                  |
+
 F# supports custom operator overloading. This means that you can define your own operators. In the previous table, *op* can be any valid (possibly empty) sequence of operator characters, either built-in or user-defined. Thus, you can use this table to determine what sequence of characters to use for a custom operator to achieve the desired level of precedence. Leading `.` characters are ignored when the compiler determines precedence.
 
 ## See also

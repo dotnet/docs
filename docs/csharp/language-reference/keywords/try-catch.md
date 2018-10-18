@@ -56,11 +56,11 @@ catch (FileNotFoundException e)
 }  
 catch (IOException e)  
 {  
-    // Extract some information from this exception, and then   
-    // throw it to the parent method.  
-    if (e.Source != null)  
-        Console.WriteLine("IOException source: {0}", e.Source);  
-    throw;  
+    // Extract some information from this exception, and then   
+    // throw it to the parent method.  
+    if (e.Source != null)  
+        Console.WriteLine("IOException source: {0}", e.Source);  
+    throw;  
 }  
 ```  
   

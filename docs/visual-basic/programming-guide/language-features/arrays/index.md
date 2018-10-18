@@ -103,7 +103,7 @@ You can define the size of an array in several ways:
   
     [!code-vb[creating1](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/create-array.vb#1)]  
   
- - You can use a `New` clause to supply the size of an array when it’s created:  
+  - You can use a `New` clause to supply the size of an array when it’s created:  
   
     [!code-vb[creating2](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/create-array.vb#2)]  
   

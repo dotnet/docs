@@ -5,4 +5,4 @@ redirect_url: /dotnet/fsharp/introduction-to-functional-programming/functions-as
 # Introduction to Functional Programming in F# #
 
 > [!NOTE]
-This is still in-progress.
+> This is still in-progress.

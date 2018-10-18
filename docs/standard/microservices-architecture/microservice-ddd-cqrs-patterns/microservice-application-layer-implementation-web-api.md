@@ -55,7 +55,7 @@ public class CreateOrderCommandHandler
         var order = new Order(message.UserId, address, message.CardTypeId, 
                               message.CardNumber, message.CardSecurityNumber, 
                               message.CardHolderName, message.CardExpiration);
-            
+
         foreach (var item in message.OrderItems)
         {
             order.AddOrderItem(item.ProductId, item.ProductName, item.UnitPrice,
@@ -277,7 +277,7 @@ public class CreateOrderCommand
 }
 ```
 
-Basically, the command class contains all the data you need for performing a business transaction by using the domain model objects. Thus, commands are simply data structures that contain read-only data, and no behavior. The command’s name indicates its purpose. In many languages like C\#, commands are represented as classes, but they are not true classes in the real object-oriented sense.
+Basically, the command class contains all the data you need for performing a business transaction by using the domain model objects. Thus, commands are simply data structures that contain read-only data, and no behavior. The command’s name indicates its purpose. In many languages like C\#, commands are represented as classes, but they are not true classes in the real object-oriented sense.
 
 As an additional characteristic, commands are immutable, because the expected usage is that they are processed directly by the domain model. They do not need to change during their projected lifetime. In a C\# class, immutability can be achieved by not having any setters or other methods that change internal state.
 
@@ -361,7 +361,7 @@ public class CreateOrderCommandHandler
         var order = new Order(message.UserId, address, message.CardTypeId, 
                               message.CardNumber, message.CardSecurityNumber, 
                               message.CardHolderName, message.CardExpiration);
-            
+
         foreach (var item in message.OrderItems)
         {
             order.AddOrderItem(item.ProductId, item.ProductName, item.UnitPrice,
@@ -568,7 +568,7 @@ public class IdentifiedCommandHandler<T, R> :
             // Send the embeded business command to mediator 
             // so it runs its related CommandHandler 
             var result = await _mediator.Send(message.Command);
-                
+
             return result;
         }
     }
@@ -609,7 +609,7 @@ public class CreateOrderCommandHandler
         var order = new Order(message.UserId, address, message.CardTypeId,  
                               message.CardNumber, message.CardSecurityNumber, 
                               message.CardHolderName, message.CardExpiration);
-            
+
         foreach (var item in message.OrderItems)
         {
             order.AddOrderItem(item.ProductId, item.ProductName, item.UnitPrice,
@@ -810,7 +810,6 @@ public class CreateOrderCommandValidator : AbstractValidator<CreateOrderCommand>
         return orderItems.Any();
     }
 }
-
 ```
 
 You could create additional validations. This is a very clean and elegant way to implement your command validations.
@@ -860,6 +859,6 @@ In a similar way, you could implement other behaviors for additional aspects or 
 -   **Jeremy Skinner. FluentValidation.** GitHub repo.
     [*https://github.com/JeremySkinner/FluentValidation*](https://github.com/JeremySkinner/FluentValidation)
 
->[!div class="step-by-step"]
-[Previous](microservice-application-layer-web-api-design.md)
-[Next](../implement-resilient-applications/index.md)
+> [!div class="step-by-step"]
+> [Previous](microservice-application-layer-web-api-design.md)
+> [Next](../implement-resilient-applications/index.md)

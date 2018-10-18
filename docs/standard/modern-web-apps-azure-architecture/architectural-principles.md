@@ -109,6 +109,6 @@ At a minimum, individual web applications should strive to be their own bounded 
 > - **Bounded Context**  
 > <https://martinfowler.com/bliki/BoundedContext.html>
 
->[!div class="step-by-step"]
-[Previous](choose-between-traditional-web-and-single-page-apps.md)
-[Next](common-web-application-architectures.md)
+> [!div class="step-by-step"]
+> [Previous](choose-between-traditional-web-and-single-page-apps.md)
+> [Next](common-web-application-architectures.md)

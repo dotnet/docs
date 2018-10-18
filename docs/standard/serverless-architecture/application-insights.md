@@ -51,6 +51,6 @@ Application Insights provides a powerful, convenient way to log detailed telemet
 
 For more information, see [Monitor Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-monitoring).
 
->[!div class="step-by-step"]
-[Previous](azure-functions.md)
-[Next](logic-apps.md)
+> [!div class="step-by-step"]
+> [Previous](azure-functions.md)
+> [Next](logic-apps.md)

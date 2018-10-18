@@ -242,5 +242,5 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
  For example, if Assembly1 references Assembly2 and Assembly1 was downloaded from `http://www.code.microsoft.com/utils`, that location is considered to be a hint about where to find Assembly2.dll. The runtime then probes for the assembly in `http://www.code.microsoft.com/utils/Assembly2.dll` and `http://www.code.microsoft.com/utils/Assembly2/Assembly2.dll`. If Assembly2 is not found at either of those locations, the runtime queries the Windows Installer.  
   
 ## See Also  
- [Best Practices for Assembly Loading](../../../docs/framework/deployment/best-practices-for-assembly-loading.md)  
- [Deployment](../../../docs/framework/deployment/index.md)
+- [Best Practices for Assembly Loading](../../../docs/framework/deployment/best-practices-for-assembly-loading.md)  
+- [Deployment](../../../docs/framework/deployment/index.md)

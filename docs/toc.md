@@ -700,6 +700,8 @@
 ##### [\= Operator](visual-basic/language-reference/operators/integer-division-assignment-operator.md)
 ##### [^ Operator](visual-basic/language-reference/operators/exponentiation-operator.md)
 ##### [^= Operator](visual-basic/language-reference/operators/exponentiation-assignment-operator.md)
+##### [?() Operator](visual-basic/language-reference/operators/null-conditional-operators.md)
+##### [?. Operator](visual-basic/language-reference/operators/null-conditional-operators.md)
 ##### [AddressOf Operator](visual-basic/language-reference/operators/addressof-operator.md)
 ##### [And Operator](visual-basic/language-reference/operators/and-operator.md)
 ##### [AndAlso Operator](visual-basic/language-reference/operators/andalso-operator.md)

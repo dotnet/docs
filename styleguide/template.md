@@ -102,7 +102,7 @@ Use for inline code, language keywords, NuGet package names, command-line comman
 To link to a header in the same Markdown file (also known as anchor links), you'll need to find out the id of the header you're trying to link to. To confirm the ID, view the source of the rendered article, find the id of the header (for example, `id="blockquote"`), and link using # + id (for example, `#blockquote`).
 The id is auto-generated based on the header text. So, for example, given a unique section named `## Step 2`, the id would look like this `id="step-2"`.
 
-- Example: `[Guidance on file names](#file-name)` produces [Guidance on file names](#file-name).
+- Example: `[Declare inline blocks with a language identifier](#inline-code-blocks-with-language-identifier)` produces [Declare inline blocks with a language identifier](#inline-code-blocks-with-language-identifier).
 
 To link to a Markdown file in the same repo, use [relative links](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2), including the ".md" at the end of the filename.
 
@@ -111,7 +111,7 @@ To link to a Markdown file in the same repo, use [relative links](https://www.w3
 
 To link to a header in a Markdown file in the same repo, use relative linking + hashtag linking.
 
-- Example: `[.NET Community](../docs/welcome.md#community)` produces [.NET Community](../docs/welcome.md#community).
+- Example: `[.NET Community](../docs/welcome.md#open-source)` produces [.NET Community](../docs/welcome.md#open-source).
 
 In most cases, we use the relative links and discourage the use of `~/` in links because relative links resolve in the source on GitHub. However, whenever we link to a file in a dependent repo, we'll use the `~/` character to provide the path. Because the files in the dependent repo are in a different location in GitHub the links won't resolve correctly with relative links regardless of how they were written.
 

@@ -94,8 +94,8 @@ else
 You can test more complicated conditions. Add the following code in your `Main` method after the code you've written so far:
 
 ```csharp
-    int c = 4;
-    if ((a + b + c > 10) && (a > b))
+int c = 4;
+if ((a + b + c > 10) && (a > b))
 {
     Console.WriteLine("The answer is greater than 10");
     Console.WriteLine("And the first number is greater than the second");

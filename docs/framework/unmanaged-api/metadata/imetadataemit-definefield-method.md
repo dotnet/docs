@@ -53,7 +53,7 @@ HRESULT DefineField (
  `cbSigBlob`  
  [in] The count of bytes in `pvSigBlob`.  
   
- `dwCPlusTypeFlage`  
+ `dwCPlusTypeFlag`  
  [in] The `ELEMENT_TYPE_`*\** for the constant value. This is a `CorElementType` value. If not defining a constant value for the field, use `ELEMENT_TYPE_END`.  
   
  `pValue`  

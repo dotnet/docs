@@ -17,7 +17,7 @@ ms.author: "ronpet"
 
 You can use the <xref:System.Enum.ToString%2A?displayProperty=nameWithType> method to create a new string object that represents the numeric, hexadecimal, or string value of an enumeration member. This method takes one of the enumeration formatting strings to specify the value that you want returned.
 
-The following sections lists the enumeration formatting strings and the values they return. These format specifiers are not case-sensitive.
+The following sections list the enumeration formatting strings and the values they return. These format specifiers are not case-sensitive.
 
 ## G or g
 

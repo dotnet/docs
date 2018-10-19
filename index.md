@@ -11,7 +11,7 @@ ms.date: "06/21/2018"
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
-                <a href="/dotnet/csharp/quick-starts">
+                <a href="/dotnet/csharp/tutorials/intro-to-csharp/">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -166,7 +166,7 @@ ms.date: "06/21/2018"
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/csharp">C# Guide</a></h3>
-                                                <p><a href="/dotnet/csharp/quick-starts">Quickstarts</a></p>
+                                                <p><a href="/dotnet/csharp/tutorials/intro-to-csharp">Learn C#</a></p>
                                                 <p><a href="/dotnet/csharp/getting-started">Get Started</a></p>
                                                 <p><a href="/dotnet/csharp/tour-of-csharp">Tour of C#</a></p>
                                                 <p><a href="/dotnet/csharp/language-reference">C# Language Reference</a></p>

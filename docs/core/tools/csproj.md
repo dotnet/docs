@@ -86,10 +86,11 @@ If the project has multiple target frameworks, the results of the command should
 ## Additions
 
 ### Sdk attribute 
-The `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](cli-msbuild-architecture.md) describes, is a set of MSBuild [tasks](/visualstudio/msbuild/msbuild-tasks) and [targets](/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. We ship two main SDKs with the .NET Core tools:
+The `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](cli-msbuild-architecture.md) describes, is a set of MSBuild [tasks](/visualstudio/msbuild/msbuild-tasks) and [targets](/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. We ship three main SDKs with the .NET Core tools:
 
 1. The .NET Core SDK with the ID of `Microsoft.NET.Sdk`
 2. The .NET Core web SDK with the ID of `Microsoft.NET.Sdk.Web`
+3. The .NET Core Razor Class Library SDK with the ID of `Microsoft.NET.Sdk.Razor`
 
 You need to have the `Sdk` attribute set to one of those IDs on the `<Project>` element in order to use the .NET Core tools and build your code. 
 

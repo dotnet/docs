@@ -1,9 +1,9 @@
 ---
 title: Using Azure Key Vault to protect secrets at production time
-description: .NET Microservices Architecture for Containerized .NET Applications | Using Azure Key Vault to protect secrets at production time
+description: Securing .NET Microservices and Web Applications | Azure Key Vault is an excellent way to handle application secrets that are completely controlled by administrators. Administrators can even assign and revoke development values without developers having to handle them. Take a look here.
 author: mjrousos
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 10/19/2018
 ---
 # Using Azure Key Vault to protect secrets at production time
 
@@ -53,20 +53,20 @@ In this example, the call to AddAzureKeyVault comes at the end of configuration 
 
 ## Additional resources
 
--   **Using Azure Key Vault to protect application secrets**
-    [*https://docs.microsoft.com/azure/guidance/guidance-multitenant-identity-keyvault*](https://docs.microsoft.com/azure/guidance/guidance-multitenant-identity-keyvault)
+- **Using Azure Key Vault to protect application secrets** \
+  [*https://docs.microsoft.com/azure/guidance/guidance-multitenant-identity-keyvault*](https://docs.microsoft.com/azure/guidance/guidance-multitenant-identity-keyvault)
 
--   **Safe storage of app secrets during development**
-    [*https://docs.microsoft.com/aspnet/core/security/app-secrets*](https://docs.microsoft.com/aspnet/core/security/app-secrets)
+- **Safe storage of app secrets during development** \
+  [*https://docs.microsoft.com/aspnet/core/security/app-secrets*](https://docs.microsoft.com/aspnet/core/security/app-secrets)
 
--   **Configuring data protection**
-    [*https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/overview*](https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/overview)
+- **Configuring data protection** \
+  [*https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/overview*](https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/overview)
 
--   **Key management and lifetime**
-    [*https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings\#data-protection-default-settings*](https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings#data-protection-default-settings)
+- **Key management and lifetime** \
+  [*https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings\#data-protection-default-settings*](https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings#data-protection-default-settings)
 
--   **Microsoft.Extensions.Configuration.KeyPerFile** GitHub repo.
-    [*https://github.com/aspnet/Configuration/tree/master/src/Config.KeyPerFile*](https://github.com/aspnet/Configuration/tree/master/src/Config.KeyPerFile)
+- **Microsoft.Extensions.Configuration.KeyPerFile** GitHub repo. \
+  [*https://github.com/aspnet/Configuration/tree/master/src/Config.KeyPerFile*](https://github.com/aspnet/Configuration/tree/master/src/Config.KeyPerFile)
 
 >[!div class="step-by-step"]
 [Previous](developer-app-secrets-storage.md)

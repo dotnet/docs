@@ -1,9 +1,9 @@
 ---
 title: key takeaways
-description: .NET Microservices Architecture for Containerized .NET Applications | key takeaways
+description: .NET Microservices Architecture for Containerized .NET Applications | The key takeaways from this book are, understand the benefits, and drawbacks, of using microservices, and that microservices are units of deployment. Get to know the DDD patterns for design and development, and the correct way to handle resiliency and security, as well as the use of orchestrators to manage deployments.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 10/19/2018
 ---
 # Key Takeaways
 

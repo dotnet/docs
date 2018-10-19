@@ -1,9 +1,9 @@
 ---
 title: Storing application secrets safely during development
-description: .NET Microservices Architecture for Containerized .NET Applications | Storing application secrets safely during development
+description: Securing .NET Microservices and Web Applications | Don't store your application secrets like passwords, connection strings or API keys in source control, understand the options you can use in ASP.NET Core, in particular you have to understand how to handle "user secrets".
 author: mjrousos
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 10/19/2018
 ---
 # Storing application secrets safely during development
 

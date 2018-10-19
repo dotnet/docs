@@ -1,9 +1,9 @@
 ---
 title: Securing .NET Microservices and Web Applications
-description: .NET Microservices Architecture for Containerized .NET Applications | Securing .NET Microservices and Web Applications
+description: Securing .NET Microservices and Web Applications | Get to know the authentication options in ASP.NET Core web applications.
 author: mjrousos
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 10/19/2018
 ---
 # Securing .NET Microservices and Web Applications
 
@@ -11,15 +11,15 @@ It is often necessary for resources and APIs exposed by a service to be limited 
 
 In microservice scenarios, authentication is typically handled centrally. If you are using an API Gateway, the gateway is a good place to authenticate, as shown in Figure 11-1. If you use this approach, make sure that the individual microservices cannot be reached directly (without the API Gateway) unless additional security is in place to authenticate messages whether they come from the gateway or not.
 
-![](./media/image1.png)
+![When the API Gateway centralizes authentication, it adds user information when forwarding requests to the microservices.](./media/image1.png)
 
-**Figure 11-1**. Centralized authentication with an API Gateway
+**Figure 9-1**. Centralized authentication with an API Gateway
 
 If services can be accessed directly, an authentication service like Azure Active Directory or a dedicated authentication microservice acting as a security token service (STS) can be used to authenticate users. Trust decisions are shared between services with security tokens or cookies. (These can be shared between applications, if needed, in ASP.NET Core with [data protection services](https://docs.microsoft.com/aspnet/core/security/data-protection/compatibility/cookie-sharing#sharing-authentication-cookies-between-applications).) This pattern is illustrated in Figure 11-2.
 
-![](./media/image2.png)
+![When microservices are accessed directly, trust, that includes authentication and authorization, is handled by a security token issued by a dedicated microservice, shared between microservices.](./media/image2.png)
 
-**Figure 11-2**. Authentication by identity microservice; trust is shared using an authorization token
+**Figure 9-2**. Authentication by identity microservice; trust is shared using an authorization token
 
 ## Authenticating using ASP.NET Core Identity
 
@@ -112,9 +112,9 @@ else
 
 If you choose the **Individual User Account** authentication option when you create the ASP.NET Code web application project in Visual Studio, all the code necessary to sign in with an external provider is already in the project, as shown in Figure 11-3.
 
-![https://msdnshared.blob.core.windows.net/media/2016/10/new-web-app.png](./media/image3.png)
+![Dialog for the New ASP.NET Core Web Application, highlighting the button to change authentication.](./media/image3.png)
 
-**Figure 11-3**. Selecting an option for using external authentication when creating a web application project
+**Figure 9-3**. Selecting an option for using external authentication when creating a web application project
 
 In addition to the external authentication providers listed previously, third-party packages are available that provide middleware for using many more external authentication providers. For a list, see the [AspNet.Security.OAuth.Providers](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src) repo on GitHub.
 
@@ -218,30 +218,29 @@ The JWT bearer authentication middleware can also support more advanced scenario
 
 ## Additional resources
 
--   **Sharing cookies between applications**
-    [*https://docs.microsoft.com/aspnet/core/security/data-protection/compatibility/cookie-sharing\#sharing-authentication-cookies-between-applications*](https://docs.microsoft.com/aspnet/core/security/data-protection/compatibility/cookie-sharing#sharing-authentication-cookies-between-applications)
+- **Sharing cookies between applications** \
+  [*https://docs.microsoft.com/aspnet/core/security/data-protection/compatibility/cookie-sharing\#sharing-authentication-cookies-between-applications*](https://docs.microsoft.com/aspnet/core/security/data-protection/compatibility/cookie-sharing#sharing-authentication-cookies-between-applications)
 
--   **Introduction to Identity**
-    [*https://docs.microsoft.com/aspnet/core/security/authentication/identity*](https://docs.microsoft.com/aspnet/core/security/authentication/identity)
+- **Introduction to Identity** \
+  [*https://docs.microsoft.com/aspnet/core/security/authentication/identity*](https://docs.microsoft.com/aspnet/core/security/authentication/identity)
 
--   **Rick Anderson. Two-factor authentication with SMS**
-    [*https://docs.microsoft.com/aspnet/core/security/authentication/2fa*](https://docs.microsoft.com/aspnet/core/security/authentication/2fa)
+- **Rick Anderson. Two-factor authentication with SMS** \
+  [*https://docs.microsoft.com/aspnet/core/security/authentication/2fa*](https://docs.microsoft.com/aspnet/core/security/authentication/2fa)
 
--   **Enabling authentication using Facebook, Google and other external providers**
-    [*https://docs.microsoft.com/aspnet/core/security/authentication/social/*](https://docs.microsoft.com/aspnet/core/security/authentication/social/)
+- **Enabling authentication using Facebook, Google and other external providers** \
+  [*https://docs.microsoft.com/aspnet/core/security/authentication/social/*](https://docs.microsoft.com/aspnet/core/security/authentication/social/)
 
--   **Michell Anicas. An Introduction to OAuth 2**
-    [*https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2*](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)
+- **Michell Anicas. An Introduction to OAuth 2** \
+  [*https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2*](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)
 
--   **AspNet.Security.OAuth.Providers** (GitHub repo for ASP.NET OAuth providers.
-    [*https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src*](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src)
+- **AspNet.Security.OAuth.Providers** (GitHub repo for ASP.NET OAuth providers. \
+  [*https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src*](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src)
 
--   **Danny Strockis. Integrating Azure AD into an ASP.NET Core web app**
-    [*https://azure.microsoft.com/resources/samples/active-directory-dotnet-webapp-openidconnect-aspnetcore/*](https://azure.microsoft.com/resources/samples/active-directory-dotnet-webapp-openidconnect-aspnetcore/)
+- **Danny Strockis. Integrating Azure AD into an ASP.NET Core web app** \
+  [*https://azure.microsoft.com/resources/samples/active-directory-dotnet-webapp-openidconnect-aspnetcore/*](https://azure.microsoft.com/resources/samples/active-directory-dotnet-webapp-openidconnect-aspnetcore/)
 
--   **IdentityServer4. Official documentation**
-    [*https://identityserver4.readthedocs.io/en/release/*](https://identityserver4.readthedocs.io/en/release/)
-
+- **IdentityServer4. Official documentation** \
+  [*https://identityserver4.readthedocs.io/en/release/*](https://identityserver4.readthedocs.io/en/release/)
 
 >[!div class="step-by-step"]
 [Previous](../implement-resilient-applications/monitor-app-health.md)

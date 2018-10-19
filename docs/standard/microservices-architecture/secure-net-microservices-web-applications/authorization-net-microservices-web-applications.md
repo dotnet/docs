@@ -1,9 +1,9 @@
 ---
 title: About authorization in .NET microservices and web applications
-description: .NET Microservices Architecture for Containerized .NET Applications | About authorization in .NET microservices and web applications
+description: Securing .NET Microservices and Web Applications | Get an overview of the main authorization options in ASP.NET Core applications - role-based and policy-based.
 author: mjrousos
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 10/19/2018
 ---
 # About authorization in .NET microservices and web applications
 
@@ -107,20 +107,17 @@ An example of a custom authorization requirement and handler for checking a user
 
 ## Additional resources
 
--   **ASP.NET Core Authentication**
-    [*https://docs.microsoft.com/aspnet/core/security/authentication/identity*](https://docs.microsoft.com/aspnet/core/security/authentication/identity)
+- **ASP.NET Core Authentication** \
+  [*https://docs.microsoft.com/aspnet/core/security/authentication/identity*](https://docs.microsoft.com/aspnet/core/security/authentication/identity)
 
--   **ASP.NET Core Authorization**
-    [*https://docs.microsoft.com/aspnet/core/security/authorization/introduction*](https://docs.microsoft.com/aspnet/core/security/authorization/introduction)
+- **ASP.NET Core Authorization** \
+  [*https://docs.microsoft.com/aspnet/core/security/authorization/introduction*](https://docs.microsoft.com/aspnet/core/security/authorization/introduction)
 
--   **Role based Authorization**
-    [*https://docs.microsoft.com/aspnet/core/security/authorization/roles*](https://docs.microsoft.com/aspnet/core/security/authorization/roles)
+- **Role based Authorization** \
+  [*https://docs.microsoft.com/aspnet/core/security/authorization/roles*](https://docs.microsoft.com/aspnet/core/security/authorization/roles)
 
--   **Custom Policy-Based Authorization**
-    [*https://docs.microsoft.com/aspnet/core/security/authorization/policies*](https://docs.microsoft.com/aspnet/core/security/authorization/policies)
-
-
-
+- **Custom Policy-Based Authorization** \
+  [*https://docs.microsoft.com/aspnet/core/security/authorization/policies*](https://docs.microsoft.com/aspnet/core/security/authorization/policies)
 
 >[!div class="step-by-step"]
 [Previous](index.md)

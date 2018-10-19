@@ -613,7 +613,7 @@ The `userName` argument in both overloads of this method must take the form *use
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` arguments are `null`, the credentials specified in the constructor are validated. If no credential were specified in the constructor, and the `username` and `password` parameters are `null`, this method validates the default credentials for the current principal.  
+ The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` arguments are `null`, this method validates the default credentials for the current principal.  
 
 The `userName` argument must take the form *userName* (for example, *mcampbell*) rather than *domain\username* or *username@domain*.
 
@@ -655,7 +655,7 @@ The `userName` argument must take the form *userName* (for example, *mcampbell*)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` parameters are null, the credentials specified in the constructor are validated. If no credential were specified in the constructor, and the `username` and `password` parameters are null, this method validates the default credentials for the current principal.  
+ The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` parameters are null, this method validates the default credentials for the current principal.  
 
 The `userName` argument must take the form *username* (for example, *mcampbell*) rather than *domain\username* or *username@domain*. 
  

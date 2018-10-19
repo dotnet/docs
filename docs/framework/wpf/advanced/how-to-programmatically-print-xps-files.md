@@ -12,7 +12,7 @@ ms.assetid: 0b1c0a3f-b19e-43d6-bcc9-eb3ec4e555ad
 # How to: Programmatically Print XPS Files
 You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> method to print [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] files without opening a <xref:System.Windows.Controls.PrintDialog> or, in principle, any [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] at all.  
   
- You can also print [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] files using the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>. For more about this, [Printing an XPS Document](/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90)).  
+ You can also print [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] files using the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>. For more about this, [Printing an XPS Document](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90)).  
   
  Another way of printing [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] is to use the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A> or <xref:System.Windows.Controls.PrintDialog.PrintVisual%2A> methods of the <xref:System.Windows.Controls.PrintDialog> control. See [Invoke a Print Dialog](how-to-invoke-a-print-dialog.md).  
   
@@ -50,7 +50,7 @@ You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> meth
   
  This disguise will enable you to pass `true` as the final parameter of <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> without causing an exception, but since *\<PseudoXPSPrinter>* is not really an XPSDrv printer, only garbage will print.  
   
- **Note** For simplicity, the example above uses the presence of an \*.xps extension as its test that a file is [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]. However, [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] files do not have to have this extension. The [isXPS.exe (isXPS Conformance Tool)](/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100)) is one way of testing a file for [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] validity.  
+ **Note** For simplicity, the example above uses the presence of an \*.xps extension as its test that a file is [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]. However, [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] files do not have to have this extension. The [isXPS.exe (isXPS Conformance Tool)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100)) is one way of testing a file for [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] validity.  
   
 ## See Also  
  <xref:System.Printing.PrintQueue>  
@@ -58,8 +58,8 @@ You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> meth
  <xref:System.Threading.ApartmentState>  
  <xref:System.STAThreadAttribute>  
  [XPS](https://www.microsoft.com/xps)  
- [Printing an XPS Document](/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90))  
- [Managed and Unmanaged Threading](/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100))  
- [isXPS.exe (isXPS Conformance Tool)](/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))  
+ [Printing an XPS Document](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90))  
+ [Managed and Unmanaged Threading](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100))  
+ [isXPS.exe (isXPS Conformance Tool)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))  
  [Documents in WPF](documents-in-wpf.md)  
  [Printing Overview](printing-overview.md)

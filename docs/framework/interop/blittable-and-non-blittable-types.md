@@ -56,13 +56,13 @@ Most data types have a common representation in both managed and unmanaged memor
 |Non-blittable type|Description|  
 |-------------------------|-----------------|  
 |[System.Array](../../../docs/framework/interop/default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
-|[System.Boolean](/previous-versions/dotnet/netframework-4.0/t2t3725f(v=vs.100))|Converts to a 1, 2, or 4-byte value with `true` as 1 or -1.|  
-|[System.Char](/previous-versions/dotnet/netframework-4.0/6tyybbf2(v=vs.100))|Converts to a Unicode or ANSI character.|  
-|[System.Class](/previous-versions/dotnet/netframework-4.0/s0968xy8(v=vs.100))|Converts to a class interface.|  
+|[System.Boolean](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/t2t3725f(v=vs.100))|Converts to a 1, 2, or 4-byte value with `true` as 1 or -1.|  
+|[System.Char](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/6tyybbf2(v=vs.100))|Converts to a Unicode or ANSI character.|  
+|[System.Class](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/s0968xy8(v=vs.100))|Converts to a class interface.|  
 |[System.Object](../../../docs/framework/interop/default-marshaling-for-objects.md)|Converts to a variant or an interface.|  
 |[System.Mdarray](../../../docs/framework/interop/default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
 |[System.String](../../../docs/framework/interop/default-marshaling-for-strings.md)|Converts to a string terminating in a null reference or to a BSTR.|  
-|[System.Valuetype](/previous-versions/dotnet/netframework-4.0/0t2cwe11(v=vs.100))|Converts to a structure with a fixed memory layout.|  
+|[System.Valuetype](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/0t2cwe11(v=vs.100))|Converts to a structure with a fixed memory layout.|  
 |[System.Szarray](../../../docs/framework/interop/default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
   
  Class and object types are supported only by COM interop. For corresponding types in [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], C#, and C++, see the [Class Library Overview](../../../docs/standard/class-library-overview.md).  

@@ -15,7 +15,7 @@ Correlation is the mechanism for relating workflow service messages to each othe
 
 Protocol-based correlation uses the transport mechanism to relate messages to each other and the appropriate instance. Some system-provided protocol correlations include request-reply correlation and context-based correlation. A request-reply correlation is used to correlate a single pair of messaging activities to form a two-way operation, such as a <xref:System.ServiceModel.Activities.Send> paired with a <xref:System.ServiceModel.Activities.ReceiveReply>, or a <xref:System.ServiceModel.Activities.Receive> paired with a <xref:System.ServiceModel.Activities.SendReply>. The Visual Studio Workflow Designer also provides a set of activity templates to quickly implement this pattern. A context-based correlation is based on the context exchange mechanism described in the [.NET Context Exchange Protocol Specification](https://go.microsoft.com/fwlink/?LinkID=166059). To use context-based correlation, a context-based binding such as <xref:System.ServiceModel.BasicHttpContextBinding>, <xref:System.ServiceModel.WSHttpContextBinding> or <xref:System.ServiceModel.NetTcpContextBinding> must be used on the endpoint.  
   
-For more information about protocol correlation, see [Durable Duplex](../../../../docs/framework/wcf/feature-details/durable-duplex-correlation.md) and [Request-Reply](../../../../docs/framework/wcf/feature-details/request-reply-correlation.md). For more information about using the Visual Studio Workflow Designer activity templates, see [Messaging Activities](../../../../docs/framework/wcf/feature-details/messaging-activities.md). For sample code, see the [NetContextExchangeCorrelation](/previous-versions/dotnet/netframework-4.0/ee662963%28v%3dvs.100%29) sample.  
+For more information about protocol correlation, see [Durable Duplex](../../../../docs/framework/wcf/feature-details/durable-duplex-correlation.md) and [Request-Reply](../../../../docs/framework/wcf/feature-details/request-reply-correlation.md). For more information about using the Visual Studio Workflow Designer activity templates, see [Messaging Activities](../../../../docs/framework/wcf/feature-details/messaging-activities.md). For sample code, see the [NetContextExchangeCorrelation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee662963%28v%3dvs.100%29) sample.  
   
 ## Content-Based Correlation
 
@@ -23,4 +23,4 @@ Content-based correlation uses some piece of information in the message to assoc
   
 ## See Also  
 
-- [NetContextExchangeCorrelation](/previous-versions/dotnet/netframework-4.0/ee662963%28v%3dvs.100%29)
+- [NetContextExchangeCorrelation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee662963%28v%3dvs.100%29)

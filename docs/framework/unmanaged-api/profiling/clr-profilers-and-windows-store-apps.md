@@ -94,7 +94,7 @@ When Windows attempts to load your Profiler DLL, it verifies that your Profiler 
 
 - Ensure that your Profiler DLL is signed.
 
-- Tell your user that they must install a developer license on their Windows 8 machine before using your tool. This can be done automatically from Visual Studio or manually from a command prompt. For more information, see [Get a developer license](/previous-versions/windows/apps/hh974578(v=win.10)).
+- Tell your user that they must install a developer license on their Windows 8 machine before using your tool. This can be done automatically from Visual Studio or manually from a command prompt. For more information, see [Get a developer license](https://docs.microsoft.com/previous-versions/windows/apps/hh974578(v=win.10)).
 
 **File system permissions**
 
@@ -267,7 +267,7 @@ You might find that you absolutely cannot do without a particular API and cannot
 
 ### Reduced permissions
 
-It’s outside the scope of this topic to list all the ways that Windows Store app permissions differ from desktop apps. But certainly the behavior will be different every time your Profiler DLL (when loaded into a Windows Store app as compared to a desktop app) tries to access any resources. The file system is the most common example. There are but a few places on disk that a given Windows Store app is allowed to access (see [File access and permissions (Windows Runtime apps](/previous-versions/windows/apps/hh967755(v=win.10))), and your Profiler DLL will be under the same restrictions. Test your code thoroughly.
+It’s outside the scope of this topic to list all the ways that Windows Store app permissions differ from desktop apps. But certainly the behavior will be different every time your Profiler DLL (when loaded into a Windows Store app as compared to a desktop app) tries to access any resources. The file system is the most common example. There are but a few places on disk that a given Windows Store app is allowed to access (see [File access and permissions (Windows Runtime apps](https://docs.microsoft.com/previous-versions/windows/apps/hh967755(v=win.10))), and your Profiler DLL will be under the same restrictions. Test your code thoroughly.
 
 ### Inter-process communication
 
@@ -406,8 +406,8 @@ It is possible to use the CLR Profiling API to analyze managed code running insi
 
 **Windows Store apps**
 
-- [File access and permissions (Windows Runtime apps](/previous-versions/windows/apps/hh967755%28v=win.10%29)
+- [File access and permissions (Windows Runtime apps](https://docs.microsoft.com/previous-versions/windows/apps/hh967755%28v=win.10%29)
 
-- [Get a developer license](/previous-versions/windows/apps/hh974578%28v=win.10%29)
+- [Get a developer license](https://docs.microsoft.com/previous-versions/windows/apps/hh974578%28v=win.10%29)
 
 - [IPackageDebugSettings Interface](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings)

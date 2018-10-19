@@ -7298,7 +7298,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
   
 |To Get|Use|  
 |------------|---------|  
-|A nullable <xref:System.Int32>|`Type.GetType("System.Nullable`1[System.Int32]")`|  
+|A nullable <xref:System.Int32>|``Type.GetType("System.Nullable`1[System.Int32]")``|  
 |An unmanaged pointer to `MyType`|`Type.GetType("MyType*")`|  
 |An unmanaged pointer to a pointer to `MyType`|`Type.GetType("MyType**")`|  
 |A managed pointer or reference to `MyType`|`Type.GetType("MyType&")`. Note that unlike pointers, references are limited to one level.|  
@@ -7308,11 +7308,11 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
 |An n-dimensional array|A comma (,) inside the brackets a total of n-1 times. For example, `System.Object[,,]` represents a three-dimensional `Object` array.|  
 |An array of one-dimensional arrays|`Type.GetType("MyType[][]")`|  
 |A rectangular two-dimensional array with unknown lower bounds|`Type.GetType("MyType[,]")`|  
-|A generic type with one type argument|`Type.GetType("MyGenericType`1[MyType]")`|  
-|A generic type with two type arguments|`Type.GetType("MyGenericType`2[MyType,AnotherType]")`|  
-|A generic type with two assembly-qualified type arguments|`Type.GetType("MyGenericType`2[[MyType,MyAssembly],[AnotherType,AnotherAssembly]]")`|  
-|An assembly-qualified generic type with an assembly-qualified type argument|`Type.GetType("MyGenericType`1[[MyType,MyAssembly]],MyGenericTypeAssembly")`|  
-|A generic type whose type argument is a generic type with two type arguments|`Type.GetType("MyGenericType`1[AnotherGenericType`2[MyType,AnotherType]]")`|  
+|A generic type with one type argument|``Type.GetType("MyGenericType`1[MyType]")``|  
+|A generic type with two type arguments|``Type.GetType("MyGenericType`2[MyType,AnotherType]")``|  
+|A generic type with two assembly-qualified type arguments|``Type.GetType("MyGenericType`2[[MyType,MyAssembly],[AnotherType,AnotherAssembly]]")``|  
+|An assembly-qualified generic type with an assembly-qualified type argument|``Type.GetType("MyGenericType`1[[MyType,MyAssembly]],MyGenericTypeAssembly")`|  
+|A generic type whose type argument is a generic type with two type arguments|``Type.GetType("MyGenericType`1[AnotherGenericType`2[MyType,AnotherType]]")`|  
   
    
   
@@ -7504,7 +7504,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
   
 |To Get|Use|  
 |------------|---------|  
-|A nullable <xref:System.Int32>|`Type.GetType("System.Nullable`1[System.Int32]")`|  
+|A nullable <xref:System.Int32>|``Type.GetType("System.Nullable`1[System.Int32]")``|  
 |An unmanaged pointer to `MyType`|`Type.GetType("MyType*")`|  
 |An unmanaged pointer to a pointer to `MyType`|`Type.GetType("MyType**")`|  
 |A managed pointer or reference to `MyType`|`Type.GetType("MyType&")`. Note that unlike pointers, references are limited to one level.|  
@@ -7514,11 +7514,11 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
 |An n-dimensional array|A comma (,) inside the brackets a total of n-1 times. For example, `System.Object[,,]` represents a three-dimensional `Object` array.|  
 |A two-dimensional array's array|`Type.GetType("MyArray[][]")`|  
 |A rectangular two-dimensional array with unknown lower bounds|`Type.GetType("MyArray[,]")`|  
-|A generic type with one type argument|`Type.GetType("MyGenericType`1[MyType]")`|  
-|A generic type with two type arguments|`Type.GetType("MyGenericType`2[MyType,AnotherType]")`|  
-|A generic type with two assembly-qualified type arguments|`Type.GetType("MyGenericType`2[[MyType,MyAssembly],[AnotherType,AnotherAssembly]]")`|  
-|An assembly-qualified generic type with an assembly-qualified type argument|`Type.GetType("MyGenericType`1[[MyType,MyAssembly]],MyGenericTypeAssembly")`|  
-|A generic type whose type argument is a generic type with two type arguments|`Type.GetType("MyGenericType`1[AnotherGenericType`2[MyType,AnotherType]]")`|  
+|A generic type with one type argument|``Type.GetType("MyGenericType`1[MyType]")``|  
+|A generic type with two type arguments|``Type.GetType("MyGenericType`2[MyType,AnotherType]")``|  
+|A generic type with two assembly-qualified type arguments|``Type.GetType("MyGenericType`2[[MyType,MyAssembly],[AnotherType,AnotherAssembly]]")``|  
+|An assembly-qualified generic type with an assembly-qualified type argument|``Type.GetType("MyGenericType`1[[MyType,MyAssembly]],MyGenericTypeAssembly")``|  
+|A generic type whose type argument is a generic type with two type arguments|``Type.GetType("MyGenericType`1[AnotherGenericType`2[MyType,AnotherType]]")``|  
   
    
   
@@ -7733,7 +7733,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
   
 |To Get|Use|  
 |------------|---------|  
-|A nullable <xref:System.Int32>|`Type.GetType("System.Nullable`1[System.Int32]")`|  
+|A nullable <xref:System.Int32>|``Type.GetType("System.Nullable`1[System.Int32]")``|  
 |An unmanaged pointer to `MyType`|`Type.GetType("MyType*")`|  
 |An unmanaged pointer to a pointer to `MyType`|`Type.GetType("MyType**")`|  
 |A managed pointer or reference to `MyType`|`Type.GetType("MyType&")`. Note that unlike pointers, references are limited to one level.|  
@@ -7743,11 +7743,11 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
 |An n-dimensional array|A comma (,) inside the brackets a total of n-1 times. For example, `System.Object[,,]` represents a three-dimensional `Object` array.|  
 |A two-dimensional array's array|`Type.GetType("MyArray[][]")`|  
 |A rectangular two-dimensional array with unknown lower bounds|`Type.GetType("MyArray[,]")`|  
-|A generic type with one type argument|`Type.GetType("MyGenericType`1[MyType]")`|  
-|A generic type with two type arguments|`Type.GetType("MyGenericType`2[MyType,AnotherType]")`|  
-|A generic type with two assembly-qualified type arguments|`Type.GetType("MyGenericType`2[[MyType,MyAssembly],[AnotherType,AnotherAssembly]]")`|  
-|An assembly-qualified generic type with an assembly-qualified type argument|`Type.GetType("MyGenericType`1[[MyType,MyAssembly]],MyGenericTypeAssembly")`|  
-|A generic type whose type argument is a generic type with two type arguments|`Type.GetType("MyGenericType`1[AnotherGenericType`2[MyType,AnotherType]]")`|  
+|A generic type with one type argument|``Type.GetType("MyGenericType`1[MyType]")``|  
+|A generic type with two type arguments|``Type.GetType("MyGenericType`2[MyType,AnotherType]")``|  
+|A generic type with two assembly-qualified type arguments|``Type.GetType("MyGenericType`2[[MyType,MyAssembly],[AnotherType,AnotherAssembly]]")``|  
+|An assembly-qualified generic type with an assembly-qualified type argument|``Type.GetType("MyGenericType`1[[MyType,MyAssembly]],MyGenericTypeAssembly")``|  
+|A generic type whose type argument is a generic type with two type arguments|``Type.GetType("MyGenericType`1[AnotherGenericType`2[MyType,AnotherType]]")``|  
   
  ]]></format>
         </remarks>

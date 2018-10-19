@@ -180,9 +180,9 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 ## Behavior Merge  
  The behavior merge feature makes it easier to manage behaviors when you want a set of common behaviors to be used consistently. This feature allows you to specify behaviors at different levels of the configuration hierarchy and have services inherit behaviors from multiple levels of the configuration hierarchy. To illustrate how this works assume you have the following virtual directory layout in IIS:  
   
- ~\Web.config~\Service.svc~\Child\Web.config~\Child\Service.svc  
+ `~\Web.config~\Service.svc~\Child\Web.config~\Child\Service.svc`
   
- And your ~\Web.config file has the following contents:  
+ And your `~\Web.config` file has the following contents:  
   
 ```xml  
 <configuration>  

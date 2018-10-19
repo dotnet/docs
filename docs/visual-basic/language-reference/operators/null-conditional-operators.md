@@ -1,6 +1,6 @@
 ---
 title: "Null-conditional Operators (Visual Basic)"
-ms.date: 10/16/2015
+ms.date: 10/19/2018
 helpviewer_keywords: 
   - "null-conditional operators [Visual Basic]"
   - "?. operator [Visual Basic]"

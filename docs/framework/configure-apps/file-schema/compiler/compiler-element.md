@@ -102,5 +102,5 @@ The following example illustrates a typical compiler configuration element:
 - <xref:System.CodeDom.Compiler.CodeDomProvider>
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [\<compilers> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/compilers-element.md)
-- [Specifying Fully Qualified Type Names]-(../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)
+- [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)
 - [compiler Element for compilers for compilation (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/f7d6b078-5d42-4134-b3f7-62e1aba1df1e(v=vs.100))

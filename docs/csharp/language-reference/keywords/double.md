@@ -14,7 +14,7 @@ The `double` keyword signifies a simple type that stores 64-bit floating-point v
 
 |Type|Approximate range|Precision|.NET type|
 |----------|-----------------------|---------------|-------------------------|
-|`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|15-16 digits|<xref:System.Double?displayProperty=nameWithType>|
+|`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|~15-17 digits|<xref:System.Double?displayProperty=nameWithType>|
 
 ## Literals
 

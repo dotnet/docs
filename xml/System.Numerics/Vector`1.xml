@@ -291,7 +291,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The copy operation begins at index `startIndex` of `destination`. The destination array must have at least `startIndex` + [CopyTo Method (T\<xref:System.Numerics.Vector%601.Count%2A> – 1 elements.  
+ The copy operation begins at index `startIndex` of `destination`. The destination array must have at least `startIndex` + <xref:System.Numerics.Vector%601.Count%2A?displayProperty=nameWithType> elements.  
   
  ]]></format>
         </remarks>

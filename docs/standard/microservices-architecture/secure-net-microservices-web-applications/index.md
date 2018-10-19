@@ -134,15 +134,49 @@ For example, in an ASP.NET Core Web API that exposes RESTful endpoints that migh
 If user information is stored in Azure Active Directory or another identity solution that supports OpenID Connect or OAuth 2.0, you can use the Microsoft.AspNetCore.Authentication.OpenIdConnect package to authenticate using the OpenID Connect workflow. For example, to authenticate to the Identity.Api microservice in eShopOnContainers, an ASP.NET Core web application can use middleware from that package as shown in the following simplified example in `Startup.cs`:
 
 ```csharp
-// Configure the OWIN pipeline to use OpenID Connect auth
-app.UseOpenIdConnectAuthentication(new OpenIdConnectOptions
+// Startup.cs
+
+public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 {
-    ClientId = Configuration["AzureAD:ClientId"],
-    Authority = String.Format(Configuration["AzureAd:AadInstance"],
-    Configuration["AzureAd:Tenant"]),
-    ResponseType = OpenIdConnectResponseType.IdToken,
-    PostLogoutRedirectUri = Configuration["AzureAd:PostLogoutRedirectUri"]
-});
+    //…
+    // Configure the pipeline to use authentication
+    app.UseAuthentication();
+    //…
+    app.UseMvc();
+}
+
+public void ConfigureServices(IServiceCollection services)
+{
+    var identityUrl = Configuration.GetValue<string>("IdentityUrl");
+    var callBackUrl = Configuration.GetValue<string>("CallBackUrl");
+
+    // Add Authentication services
+
+    services.AddAuthentication(options =>
+    {
+        options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+        options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
+    })
+    .AddCookie()
+    .AddOpenIdConnect(options =>
+    {
+        options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+        options.Authority = identityUrl;
+        options.SignedOutRedirectUri = callBackUrl;
+        options.ClientSecret = "secret";
+        options.SaveTokens = true;
+        options.GetClaimsFromUserInfoEndpoint = true;
+        options.RequireHttpsMetadata = false;
+        options.Scope.Add("openid");
+        options.Scope.Add("profile");
+        options.Scope.Add("orders");
+        options.Scope.Add("basket");
+        options.Scope.Add("marketing");
+        options.Scope.Add("locations");
+        options.Scope.Add("webshoppingagg");
+        options.Scope.Add("orders.signalrhub");
+    });
+}
 ```
 
 Note that when you use this workflow, the ASP.NET Core Identity middleware is not needed, because all user information storage and authentication is handled by the Identity service.
@@ -191,12 +225,37 @@ Authenticating against an OpenID Connect endpoint or issuing your own security t
 For that scenario, authentication middleware that handles JWT tokens is available in the `Microsoft.AspNetCore.Authentication.JwtBearer` package. JWT stands for "[JSON Web Token](https://tools.ietf.org/html/rfc7519)" and is a common security token format (defined by RFC 7519) for communicating security claims. A simplified example of how to use middleware to consume such tokens might look like this code fragment, taken from the Ordering.Api microservice of eShopOnContainers.
 
 ```csharp
-app.UseJwtBearerAuthentication(new JwtBearerOptions()
+// Startup.cs
+
+public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 {
-    Audience = "http://localhost:5001/",
-    Authority = "http://localhost:5000/",
-    AutomaticAuthenticate = true
-});
+    //…
+    // Configure the pipeline to use authentication
+    app.UseAuthentication();
+    //…
+    app.UseMvc();
+}
+
+public void ConfigureServices(IServiceCollection services)
+{
+    var identityUrl = Configuration.GetValue<string>("IdentityUrl");
+
+    // Add Authentication services
+
+    var identityUrl = configuration.GetValue<string>("IdentityUrl");
+
+    services.AddAuthentication(options =>
+    {
+        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+
+    }).AddJwtBearer(options =>
+    {
+        options.Authority = identityUrl;
+        options.RequireHttpsMetadata = false;
+        options.Audience = "orders";
+    });
+}
 ```
 
 The parameters in this usage are:

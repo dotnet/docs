@@ -52,6 +52,6 @@ The new way is thread-safe because the compiler generates code to evaluate `Prop
 
 ## See also
 
-- [Operators (Visual Basic)](operators.md)
+- [Operators (Visual Basic)](index.md)
 - [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)
 - [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  

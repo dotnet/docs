@@ -85,7 +85,7 @@ This topic describes the format of trace data, how to view it, and approaches th
                      <MessageID xmlns="http://www.w3.org/2005/08/addressing">urn:uuid:7c6670d8-4c9c-496e-b6a0-2ceb6db35338</MessageID>  
                      <ActivityId CorrelationId="b02e2189-0816-4387-980c-dd8e306440f5" xmlns="http://schemas.microsoft.com/2004/09/ServiceModel/Diagnostics">27c6331d-8998-43aa-a382-03239013a6bd</ActivityId>  
                      <ReplyTo xmlns="http://www.w3.org/2005/08/addressing">  
-                        <Address>https://www.w3.org/2005/08/addressing/anonymous</Address>  
+                        <Address>http://www.w3.org/2005/08/addressing/anonymous</Address>  
                     </ReplyTo>  
                     <To d4p1:mustUnderstand="1" xmlns:d4p1="http://www.w3.org/2003/05/soap-envelope" xmlns="http://www.w3.org/2005/08/addressing">net.tcp://localhost/servicemodelsamples/service</To>  
                   </MessageHeaders>  

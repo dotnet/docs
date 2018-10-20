@@ -12,7 +12,7 @@ The following XSD file is used in various examples in the [!INCLUDE[sqltecxlinq]
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
-<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema">  
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">  
   <xs:element name='Root'>  
     <xs:complexType>  
       <xs:sequence>  

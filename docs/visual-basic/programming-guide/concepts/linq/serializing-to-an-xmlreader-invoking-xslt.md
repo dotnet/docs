@@ -12,7 +12,7 @@ When you use the <xref:System.Xml?displayProperty=nameWithType> interoperability
 ```vb  
 Dim xslMarkup As XDocument = _  
     <?xml version='1.0'?>  
-    <xsl:stylesheet xmlns:xsl='https://www.w3.org/1999/XSL/Transform' version='1.0'>  
+    <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
         <xsl:template match='/Parent'>  
             <Root>  
                 <C1>  

@@ -24,7 +24,7 @@ To use XPath queries with XML documents, you have to correctly address XML names
   <e:Body>  
     <s:Search xmlns:s="http://schemas.microsoft.com/v1/Search">  
       <r:request xmlns:r="http://schemas.microsoft.com/v1/Search/metadata"   
-                 xmlns:i="https://www.w3.org/2001/XMLSchema-instance">  
+                 xmlns:i="http://www.w3.org/2001/XMLSchema-instance">  
       </r:request>  
     </s:Search>  
   </e:Body>  
@@ -48,7 +48,7 @@ using (XmlReader reader = XmlReader.Create("response.xml"))
                 nsmgr.AddNamespace("r",   
                    @"http://schemas.microsoft.com/v1/Search/metadata");  
                 nsmgr.AddNamespace("i",   
-                         @"https://www.w3.org/2001/XMLSchema-instance");  
+                         @"http://www.w3.org/2001/XMLSchema-instance");  
   
                 string xpath = "/e:Envelope/e:Body/s:Search";  
   

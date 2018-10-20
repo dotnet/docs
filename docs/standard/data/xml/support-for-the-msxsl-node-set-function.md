@@ -20,7 +20,7 @@ The `msxsl:node-set` function enables you to convert a result tree fragment into
 ## nodeset.xsl  
   
 ```xml  
-<xsl:stylesheet xmlns:xsl="https://www.w3.org/1999/XSL/Transform"  
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
                 xmlns:msxsl="urn:schemas-microsoft-com:xslt"  
                 xmlns:user="http://www.contoso.com"  
                 version="1.0">  

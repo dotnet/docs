@@ -187,21 +187,21 @@ Example:
 ```fsharp
 open System.Threading
 
-let calculateForEver() = 
+// Create a workflow which will loop forever.
+let workflow =
     async {
         while true do
             printfn "Working..."
             do! Async.Sleep 1000
     }
+    
+let tokenSource = new CancellationTokenSource()
 
-let workflow = calculateForEver()
-let token = new CancellationTokenSource()
-
-// Start calculateForEver in the background
-Async.Start (workflow, token.Token)
+// Start the workflow in the background
+Async.Start (workflow, tokenSource.Token)
 
 // Executing the next line will stop the workflow
-token.Cancel()
+tokenSource.Cancel()
 ```
 
 And that’s it!

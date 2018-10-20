@@ -185,22 +185,22 @@ In contrast, F# async workflows are more naturally cancellable. Cancellation is 
 Example:
 
 ```fsharp
-open System
-open System.Net
+open System.Threading
 
-let uploadDataAsync url data = 
+let calculateForEver() = 
     async {
-        let uri = Uri(url)
-        use webClient = new WebClient()
-        webClient.UploadStringAsync(uri, data)
+        while true do
+            printfn "Working..."
+            do! Async.Sleep 1000
     }
 
-let workflow = uploadDataAsync "https://url-to-upload-to.com" "hello, world!"
-
+let workflow = calculateForEver()
 let token = new CancellationTokenSource()
-Async.Start (workflow, token)
 
-// Immediately cancel uploadDataAsync after it's been started.
+// Start calculateForEver in the background
+Async.Start (workflow, token.Token)
+
+// Executing the next line will stop the workflow
 token.Cancel()
 ```
 

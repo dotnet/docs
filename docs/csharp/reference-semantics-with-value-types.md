@@ -99,7 +99,7 @@ values for any `in` parameter. The following code specifies the origin
 
 [!code-csharp[InArgumentDefault](../../samples/csharp/reference-semantics/Program.cs#InArgumentDefault "Specifying defaults for an in parameter")]
 
-To force the compiler to pass read only arguments by reference, specify the `in` modifer
+To force the compiler to pass read only arguments by reference, specify the `in` modifier
 on the arguments at the call site, as shown in the following code:
 
 [!code-csharp[UseInArgument](../../samples/csharp/reference-semantics/Program.cs#ExplicitInArgument "Specifying an In argument")]

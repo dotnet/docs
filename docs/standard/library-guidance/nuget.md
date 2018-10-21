@@ -86,14 +86,14 @@ NuGet packages with a version suffix are considered [pre-release](/nuget/create-
 
 ## Symbol packages
 
-Symbol files (`*.pdb`) are produced by the .NET compiler along side assemblies. Symbole files map execution locations to the original source code so you can step through source code while it is running using a debugger. NuGet supports [generating a separate symbol package](/nuget/create-packages/symbol-packages) containing symbol files alongside the main package containing .NET assemblies. The idea of symbol packages is they're hosted on a symbol server, not NuGet.org, and are only downloaded by a tool like Visual Studio on demand.
+Symbol files (`*.pdb`) are produced by the .NET compiler alongside assemblies. Symbol files map execution locations to the original source code so you can step through source code as it is running using a debugger. NuGet supports [generating a separate symbol package](/nuget/create-packages/symbol-packages) containing symbol files alongside the main package containing .NET assemblies. The idea of symbol packages is they're hosted on a symbol server and are only downloaded by a tool like Visual Studio on demand.
 
-Currently the main public host for symbols - [SymbolSource](http://www.symbolsource.org/) - doesn't support the portable symbol files created by SDK-style projects and symbol packages aren't useful. Until there is a recommended host for symbol packages you can instead embed the symbol files in the main NuGet package. If you are building your NuGet package using an SDK-style project you can embed symbol files by setting the `AllowedOutputExtensionsInPackageBuildOutputFolder` property: 
+Currently the main public host for symbols - [SymbolSource](http://www.symbolsource.org/) - doesn't support the portable symbol files created by SDK-style projects and symbol packages aren't useful. Until there is a recommended host for symbol packages, symbol files can be embedded in the main NuGet package. If you are building your NuGet package using an SDK-style project you can embed symbol files by setting the `AllowedOutputExtensionsInPackageBuildOutputFolder` property: 
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
  <PropertyGroup>
-    <!-- Include the PDB in the built .nupkg -->
+    <!-- Include symbol files (*.pdb) in the built .nupkg -->
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
   </PropertyGroup>
 </Project>

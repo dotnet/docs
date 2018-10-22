@@ -8,8 +8,8 @@ ms.assetid: 77deec51-a14d-46d4-9bb3-faf449477149
 # What's new in C# #
 
 This page provides a roadmap of new features in each major release of
-the C# language. The following links provide detailed information on the
-major features added in each release.
+the C# language. The linked articles detail information on the
+major features added in each release. You will find information on new features that have been released, either in a general release, or in a public preview. Detailed language feature status, including features considered for upcoming releases can be found [on the dotnet/roslyn repository](https://github.com/dotnet/roslyn/blob/master/docs/Language%20Feature%20Status.md) on GitHub.
 
 > [!IMPORTANT]
 > The C# language relies on types and methods in a *standard library* for some of the features. One example is exception processing. Every `throw` statement or expression is checked to ensure the object being thrown is derived from <xref:System.Exception>. Similarly, every `catch` is checked to ensure that the type being caught is derived from <xref:System.Exception>. Each version may add new requirements. To use the latest language features in older environments, you may need to install specific libraries. These dependencies are documented in the page for each specific version. You can learn more about the [relationships between language and library](relationships-between-language-and-library.md) for background on this dependency. 

@@ -1,7 +1,7 @@
 ---
 title: Transport Layer Security (TLS) best practices with the .NET Framework
 description: Describes best practices using Transport Layer Security (TLS) with the .NET Framework
-ms.date: 03/15/2018
+ms.date: 10/22/2018
 helpviewer_keywords: 
   - "sending data, Internet security"
   - "protocols, Internet security"
@@ -299,6 +299,6 @@ If your app targets a .NET Framework version that is not available on the Azure 
 
 ### Azure Guest OS registry settings
 
-The Azure Guest OS image for [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) already has the `SchUseStrongCrypto` registry key set to a value of 1. For more information, see [SchUseStrongCrypto](#schusestrongcrypto).
+The Azure Guest OS Family 5 image for [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) already has the `SchUseStrongCrypto` registry key set to a value of 1. For more information, see [SchUseStrongCrypto](#schusestrongcrypto).
 
 Set the [SystemDefaultTlsVersions](#systemdefaulttlsversions) registry key to 1. See [Configuring security via the Windows Registry](#configuring-security-via-the-windows-registry).

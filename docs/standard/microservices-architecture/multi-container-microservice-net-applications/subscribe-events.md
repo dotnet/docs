@@ -177,7 +177,7 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem productToUp
   catalogItem = productToUpdate; 
 
   // Just save the updated product if the Product's Price hasn't changed.
-  if !(raiseProductPriceChangedEvent) 
+  if (!raiseProductPriceChangedEvent) 
   {
       await _catalogContext.SaveChangesAsync();
   }

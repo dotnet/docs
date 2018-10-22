@@ -1063,7 +1063,7 @@ End Module
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the time-to-live for column encryption key entries in the column encryption key cache for the [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine) feature. The default value is 2 hours. 0 means no caching at all.</summary>
+        <summary>Gets or sets the time-to-live for column encryption key entries in the column encryption key cache for the <see href="https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine">Always Encrypted</see> feature. The default value is 2 hours. 0 means no caching at all.</summary>
         <value>The time interval.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1092,7 +1092,7 @@ End Module
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether query metadata caching is enabled (true) or not (false) for parameterized queries running against [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine) enabled databases. The default value is true.</summary>
+        <summary>Gets or sets a value that indicates whether query metadata caching is enabled (true) or not (false) for parameterized queries running against <see href="https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine">Always Encrypted</see> enabled databases. The default value is true.</summary>
         <value>Returns true if query metadata caching is enabled; otherwise false. true is the default.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

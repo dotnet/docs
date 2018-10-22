@@ -194,7 +194,7 @@ catch (Exception ex) {
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the client connection ID. For more information, see [Data Tracing in ADO.NET](~/docs/framework/data/adonet/data-tracing.md).</summary>
+        <summary>Represents the client connection ID. For more information, see <see href="https://docs.microsoft.com/dotnet/framework/data/adonet/data-tracing">Data Tracing in ADO.NET</see>.</summary>
         <value>Returns the client connection ID.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

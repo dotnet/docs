@@ -14,7 +14,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how data will be sent and received when reading and writing encrypted columns. Depending on your specific query, performance impact may be reduced by bypassing the Always Encrypted driver’s processing when non-encrypted columns are being used. Note that these settings cannot be used to bypass encryption and gain access to plaintext data. For details, see [Always Encrypted (Database Engine)](/sql/relational-databases/security/encryption/always-encrypted-database-engine)</summary>
+    <summary>Specifies how data will be sent and received when reading and writing encrypted columns. Depending on your specific query, performance impact may be reduced by bypassing the Always Encrypted driver’s processing when non-encrypted columns are being used. Note that these settings cannot be used to bypass encryption and gain access to plaintext data. For details, see <see href="https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine">Always Encrypted (Database Engine)</see></summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -27,7 +27,7 @@
  ]]></format>
     </remarks>
     <related type="ExternalDocumentation" href="http://blogs.msdn.com/b/sqlsecurity/archive/2015/06/04/getting-started-with-always-encrypted.aspx">Getting Started with Always Encrypted</related>
-    <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/mt147923.aspx">Always Encrypted (client development)</related>
+    <related type="ExternalDocumentation" href="/sql/relational-databases/security/encryption/always-encrypted-client-development">Always Encrypted (client development)</related>
   </Docs>
   <Members>
     <Member MemberName="Disabled">

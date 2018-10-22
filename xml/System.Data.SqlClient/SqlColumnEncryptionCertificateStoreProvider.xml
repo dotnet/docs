@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The implementation of the key store provider for Windows Certificate Store. This class enables using certificates stored in the Windows Certificate Store as column master keys. For details, see [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine).</summary>
+    <summary>The implementation of the key store provider for Windows Certificate Store. This class enables using certificates stored in the Windows Certificate Store as column master keys. For details, see <see href="https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine">Always Encrypted</see>.</summary>
     <remarks>To be added.</remarks>
     <related type="ExternalDocumentation" href="http://blogs.msdn.com/b/sqlsecurity/archive/tags/always+encrypted/">Always Encrypted Blog</related>
     <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/mt147923.aspx">Always Encrypted (client development)</related>

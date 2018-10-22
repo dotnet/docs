@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The CMK Store provider implementation for using  Microsoft CAPI based Cryptographic Service Providers (CSP) with [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine).</summary>
+    <summary>The CMK Store provider implementation for using  Microsoft CAPI based Cryptographic Service Providers (CSP) with <see href="https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine">Always Encrypted</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -24,7 +24,7 @@
  ]]></format>
     </remarks>
     <related type="ExternalDocumentation" href="http://blogs.msdn.com/b/sqlsecurity/archive/tags/always+encrypted/">Always Encrypted Blog</related>
-    <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/mt147923.aspx">Always Encrypted (client development)</related>
+    <related type="ExternalDocumentation" href="/sql/relational-databases/security/encryption/always-encrypted-client-development">Always Encrypted (client development)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

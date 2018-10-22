@@ -717,7 +717,7 @@ Parameter = new SqlParameter("@pname", (object)0);
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Enforces encryption of a parameter when using [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine). If SQL Server informs the driver that the parameter does not need to be encrypted, the query using the parameter will fail. This property provides additional protection against security attacks that involve a compromised SQL Server providing incorrect encryption metadata to the client, which may lead to data disclosure.</summary>
+        <summary>Enforces encryption of a parameter when using <see href="https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine">Always Encrypted</see>. If SQL Server informs the driver that the parameter does not need to be encrypted, the query using the parameter will fail. This property provides additional protection against security attacks that involve a compromised SQL Server providing incorrect encryption metadata to the client, which may lead to data disclosure.</summary>
         <value>
           <see langword="true" /> if the parameter has a force column encryption; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>

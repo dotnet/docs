@@ -788,7 +788,7 @@ using (StreamWriter output =
   
 -   The <xref:System.Xml.NewLineHandling.Replace> setting tells the <xref:System.Xml.XmlWriter> to replace new line characters with `\r\n`, which is the new line format used by the Microsoft Windows operating system. This helps to ensure that the file can be correctly displayed by the Notepad or Microsoft Word applications. This setting also replaces new lines in attributes with character entities to preserve the characters. This is the default value.  
   
--   The <xref:System.Xml.NewLineHandling.None> setting tells the <xref:System.Xml.XmlWriter> to leave the input unchanged. This setting is used when you not want any new-line processing. This is useful when the output is read by an <xref:System.Xml.XmlReader> that does not do any normalization (for example, an <xref:System.Xml.XmlTextReader> with default settings.)  
+-   The <xref:System.Xml.NewLineHandling.None> setting tells the <xref:System.Xml.XmlWriter> to leave the input unchanged. This setting is used when you do not want any new-line processing. This is useful when the output is read by an <xref:System.Xml.XmlReader> that does not do any normalization (for example, an <xref:System.Xml.XmlTextReader> with default settings.)  
   
  The following tables show the output of the <xref:System.Xml.XmlWriter.WriteString%2A> method when supplied with the input value depending on the <xref:System.Xml.XmlWriterSettings.NewLineHandling%2A> property setting. The tables show the output when writing text content and also when writing an attribute value.  
   

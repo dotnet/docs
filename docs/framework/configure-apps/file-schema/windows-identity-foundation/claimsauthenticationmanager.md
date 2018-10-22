@@ -53,5 +53,5 @@ Registers a claims authentication manager for the incoming claims.
     <identityConfiguration name="MyIdentity">  
       <claimsAuthenticationManager type="MyNamespace.CustomClaimsAuthenticationManager, MyAssembly"/>          
     </identityConfiguration>  
-</microsoft.identityModel>  
+</system.identityModel>  
 ```

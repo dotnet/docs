@@ -26,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates the CLR property of a class that provides the [x:Uid Directive](~/docs/framework/xaml-services/x-uid-directive.md) value.</summary>
+    <summary>Indicates the CLR property of a class that provides the <see href="https://docs.microsoft.com/dotnet/framework/xaml-services/x-uid-directive">x:Uid Directive</see> value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -99,7 +99,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the CLR property that represents the [x:Uid Directive](~/docs/framework/xaml-services/x-uid-directive.md) value.</summary>
+        <summary>Gets the name of the CLR property that represents the <see href="https://docs.microsoft.com/dotnet/framework/xaml-services/x-uid-directive">x:Uid Directive</see> value.</summary>
         <value>The name of the CLR property that represents [x:Uid Directive](~/docs/framework/xaml-services/x-uid-directive.md).</value>
         <remarks>To be added.</remarks>
       </Docs>

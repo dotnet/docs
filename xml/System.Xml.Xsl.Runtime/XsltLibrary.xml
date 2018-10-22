@@ -206,7 +206,7 @@
         <param name="decimalFormatName">
           <see cref="T:System.Xml.XmlQualifiedName" /> that contains the format name.</param>
         <param name="errorMessageName">String that contains the error message name.</param>
-        <summary>Implements the format-number() XSLT function. For more information, see the [number formatting](http://go.microsoft.com/fwlink/?LinkId=144247) section in the W3C Recommendation.</summary>
+        <summary>Implements the format-number() XSLT function. For more information, see the <see href="https://www.w3.org/TR/xslt/all/">number formatting</see> section in the W3C Recommendation.</summary>
         <returns>Returns a string that indicates the number format. For more information, see the [number formatting](http://go.microsoft.com/fwlink/?LinkId=144247) section in the W3C Recommendation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -248,7 +248,7 @@
           <see cref="T:System.Double" /> that contains value to format.</param>
         <param name="decimalFormatterIndex">
           <see cref="T:System.Double" /> that contains the formatter index.</param>
-        <summary>Implements the format-number() XSLT function. For more information, see the [number formatting](http://go.microsoft.com/fwlink/?LinkId=144247) section in the W3C Recommendation.</summary>
+        <summary>Implements the format-number() XSLT function. For more information, see the <see href="https://www.w3.org/TR/xslt/all/">number formatting</see> section in the W3C Recommendation.</summary>
         <returns>A string that indicates the format. For more information, see the [number formatting](http://go.microsoft.com/fwlink/?LinkId=144247) section in the W3C Recommendation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -287,7 +287,7 @@
       <Docs>
         <param name="name">
           <see cref="T:System.Xml.XmlQualifiedName" /> name object.</param>
-        <summary>Implements the [function-available()](http://go.microsoft.com/fwlink/?LinkId=144249) XSLT function.</summary>
+        <summary>Implements the <see href="https://www.w3.org/TR/xslt/all/">function-available()</see> XSLT function.</summary>
         <returns>A Boolean value that is <see langword="true" /> if the function identified by <paramref name="name" /> is available.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
@@ -443,7 +443,7 @@
         <param name="infinitySymbol">String containing infinity symbol.</param>
         <param name="nanSymbol">String containing NaN symbol.</param>
         <param name="characters">String containing characters to format.</param>
-        <summary>Registers a decimal-format with the given expanded name. For more information, see the [number formatting](http://go.microsoft.com/fwlink/?LinkId=144247) section in the W3C Recommendation.</summary>
+        <summary>Registers a decimal-format with the given expanded name. For more information, see the <see href="https://www.w3.org/TR/xslt/all/">number formatting</see> section in the W3C Recommendation.</summary>
         <returns>In the current implementation the return value is always 0.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
@@ -480,7 +480,7 @@
         <param name="infinitySymbol">String that contains the infinity symbol.</param>
         <param name="nanSymbol">String that contains the NaN symbol.</param>
         <param name="characters">String that contains characters to format.</param>
-        <summary>Registers a decimal formatter object and returns a unique index assigned to it. The decimal formatter object is used by the format-number() XSLT function. For more information, see the [number formatting](http://go.microsoft.com/fwlink/?LinkId=144247) section in the W3C Recommendation.</summary>
+        <summary>Registers a decimal formatter object and returns a unique index assigned to it. The decimal formatter object is used by the format-number() XSLT function. For more information, see the <see href="https://www.w3.org/TR/xslt/all/">number formatting</see> section in the W3C Recommendation.</summary>
         <returns>Returns a unique index of type <see cref="T:System.Double" /> assigned to a decimal formatter object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

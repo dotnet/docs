@@ -567,7 +567,7 @@
       </Parameters>
       <Docs>
         <param name="e">The event data.</param>
-        <summary>Called when the hosted window receives a [WM_KEYDOWN](http://go.microsoft.com/fwlink/?LinkId=161282) message.</summary>
+        <summary>Called when the hosted window receives a <see href="https://docs.microsoft.com/windows/desktop/inputdev/wm-keydown">WM_KEYDOWN</see> message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -611,7 +611,7 @@
       </Parameters>
       <Docs>
         <param name="e">The event data.</param>
-        <summary>Called when the hosted window receives a [WM_KEYUP](http://go.microsoft.com/fwlink/?LinkId=161283) message.</summary>
+        <summary>Called when the hosted window receives a <see href="https://docs.microsoft.com/windows/desktop/inputdev/wm-keyup">WM_KEYUP</see> message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

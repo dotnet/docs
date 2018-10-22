@@ -122,7 +122,7 @@
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Xml.XPath.XPathItem" /> of which to determine type.</param>
-        <summary>Implements [exsl:object-type](http://go.microsoft.com/fwlink/?LinkId=143941).</summary>
+        <summary>Implements <see href="http://exslt.org/exsl/functions/object-type/index.html">exsl:object-type</see>.</summary>
         <returns>Object type as <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

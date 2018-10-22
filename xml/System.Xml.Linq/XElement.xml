@@ -45,12 +45,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an XML element.  See [XElement Class Overview](http://msdn.microsoft.com/library/d35180fe-7016-4895-9bfc-ba1e3f7875ec) and the Remarks section on this page for usage information and examples.</summary>
+    <summary>Represents an XML element.  See <see href="https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/xelement-class-overview">XElement Class Overview</see> and the Remarks section on this page for usage information and examples.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class represents an XML element, the fundamental XML construct.  See [XElement Class Overview](http://msdn.microsoft.com/library/d35180fe-7016-4895-9bfc-ba1e3f7875ec) for other usage information.  
+ This class represents an XML element, the fundamental XML construct.  See [XElement Class Overview](/dotnet/csharp/programming-guide/concepts/linq/xelement-class-overview) for other usage information.  
   
  An element has an <xref:System.Xml.Linq.XName>, optionally one or more attributes, and can optionally contain content (for more information, see <xref:System.Xml.Linq.XContainer.Nodes%2A>).  
   

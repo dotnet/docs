@@ -1239,7 +1239,7 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines whether ASP.NET examines input from the browser for dangerous values. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).</summary>
+        <summary>Gets or sets a value that determines whether ASP.NET examines input from the browser for dangerous values. For more information, see <see href="https://docs.microsoft.com/previous-versions/aspnet/w1sw53ds(v=vs.100)">Script Exploits Overview</see>.</summary>
         <value>
           <see langword="true" /> if ASP.NET examines input from the browser for dangerous values; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>

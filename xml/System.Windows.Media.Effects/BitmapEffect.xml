@@ -163,13 +163,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a handle to an [IMILBitmapEffect](http://msdn.microsoft.com/library/4bd5697d-bdde-4485-a05b-b3fea1403e16) object that is used to initialize a custom effect.</summary>
-        <returns>A handle to an [IMILBitmapEffect](http://msdn.microsoft.com/library/4bd5697d-bdde-4485-a05b-b3fea1403e16) object.</returns>
+        <summary>Creates a handle to an <see href="https://docs.microsoft.com/windows/desktop/api/mileffects/nn-mileffects-imilbitmapeffect">IMILBitmapEffect</see> object that is used to initialize a custom effect.</summary>
+        <returns>A handle to an <see href="https://docs.microsoft.com/windows/desktop/api/mileffects/nn-mileffects-imilbitmapeffect">IMILBitmapEffect</see> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Framework interaction with custom effects is handled through an [IMILBitmapEffect](http://msdn.microsoft.com/library/4bd5697d-bdde-4485-a05b-b3fea1403e16) object. The outer effect is initialized with the custom effect through the <xref:System.Windows.Media.Effects.BitmapEffect.InitializeBitmapEffect%2A> method.  
+ Framework interaction with custom effects is handled through an [IMILBitmapEffect](/windows/desktop/api/mileffects/nn-mileffects-imilbitmapeffect) object. The outer effect is initialized with the custom effect through the <xref:System.Windows.Media.Effects.BitmapEffect.InitializeBitmapEffect%2A> method.  
   
    
   

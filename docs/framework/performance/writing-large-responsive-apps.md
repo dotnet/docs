@@ -463,5 +463,5 @@ class Compilation { /*...*/
 - [Windows Phone Performance Analysis Tool](https://msdn.microsoft.com/magazine/hh781024.aspx)  
 - [Find Application Bottlenecks with Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)  
 - [Channel 9 PerfView tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial)  
-- [The .NET Compiler Platform SDK](~/docs/csharp/roslyn-sdk/index/md)
+- [The .NET Compiler Platform SDK](../../csharp/roslyn-sdk/index.md)
 - [dotnet/roslyn repo on GitHub](https://github.com/dotnet/roslyn)

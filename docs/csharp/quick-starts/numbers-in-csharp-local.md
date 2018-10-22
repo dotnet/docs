@@ -99,7 +99,7 @@ The `//` starts a **comment** in C#. Comments are any text you want to keep in y
 The C# language defines the precedence of different mathematics operations
 with rules consistent with the rules you learned in mathematics.
 Multiplication and division take precedence over addition and subtraction.
-Explore that by adding the following code to your `Main` method, and execuing
+Explore that by adding the following code to your `Main` method, and executing
 `dotnet run`:
 
 ```csharp

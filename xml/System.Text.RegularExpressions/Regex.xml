@@ -3345,7 +3345,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
 |`\.?`|Match zero or one occurrence of a period (used as a decimal separator character).|  
 |`((?<=\.)\d+)?`|If a period is the previous character, match one or more decimal digits. This pattern can be matched either zero or one time.|  
 |`(\d+\.?((?<=\.)\d+)?)`|Match the pattern of one or more decimal digits followed by an optional period and additional decimal digits. This is the second capturing group. The call to the <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%29> method replaces the entire match with the value of this captured group.|  
-|`(?(1)&#124;\s?\p{Sc})?`|If the first captured group exists, match an empty string. Otherwise, match zero or one white-space character followed by a currency symbol.|  
+|<code>(?(1)&#124;\s?\p{Sc})?</code>|If the first captured group exists, match an empty string. Otherwise, match zero or one white-space character followed by a currency symbol.|  
   
  ]]></format>
         </remarks>
@@ -3790,7 +3790,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
 |Pattern|Description|  
 |-------------|-----------------|  
 |`\w*`|Match zero or more word characters.|  
-|`(ie&#124;ei)`|Match either "ie" or "ei".|  
+|<code>(ie&#124;ei)</code>|Match either "ie" or "ei".|  
 |`\w*`|Match zero or more word characters.|  
   
  The regular expression pattern `([ie])([ie])` in the `ReverseLetter` method matches the first "i" or "e" in the diphthong "ie" or "ei" and assigns the letter to the first capturing group. It matches the second "i" or "e" and assigns the letter to the second capturing group. The two characters are then reversed by calling the <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.String%29> method with the replacement pattern `$2$1`.  

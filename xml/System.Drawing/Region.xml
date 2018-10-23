@@ -912,7 +912,13 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> on which this <see cref="T:System.Drawing.Region" /> is drawn.</param>
         <summary>Returns a Windows handle to this <see cref="T:System.Drawing.Region" /> in the specified graphics context.</summary>
         <returns>A Windows handle to this <see cref="T:System.Drawing.Region" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You are responsible for calling the <xref:System.Drawing.Region.ReleaseHrgn%2A> method to free the memory used by the [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] region object. 
+      
+   ]]></format></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="g" /> is <see langword="null" />.</exception>
       </Docs>

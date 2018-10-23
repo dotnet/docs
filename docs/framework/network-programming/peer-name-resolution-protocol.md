@@ -12,7 +12,7 @@ In peer-to-peer environments, peers use specific name resolution systems to reso
   
  In terms of security, peer names can be published as secured (protected) or unsecured (unprotected). PNRP uses public key cryptography to protect secure peer names against spoofing; both computers and services can be named with PNRP.  
   
--   The Peer Name Resolution Protocol demonstrates the following properties:  
+The Peer Name Resolution Protocol demonstrates the following properties:  
   
 -   Distributed and almost entirely serverless. Servers are only required for the bootstrapping process.  
   
@@ -22,21 +22,13 @@ In peer-to-peer environments, peers use specific name resolution systems to reso
   
 -   The resolution of names via PNRP extends beyond computers by also allowing name resolution for services.  
   
--  
-  
-## The System.Net.PeerToPeer Namespace  
+## The System.Net.PeerToPeer namespace  
   
 -   PNRP functionality is defined by the <xref:System.Net.PeerToPeer> namespace within the .NET Framework version 3.5. It provides a set of types that can be used to register and resolve peer names with an available PNRP service.  
   
--  
-  
 -   (PNRP and custom peer resolvers can be created and instantiated using the types provided in the <xref:System.ServiceModel.PeerResolvers> namespace.)  
   
--  
-  
 -   The basic types used to register and resolve names with an available PNRP service are as follows:  
-  
--  
   
 -   <xref:System.Net.PeerToPeer.Cloud>: Defines the information describing an available PNRP cloud, including its scope.  
   
@@ -48,12 +40,8 @@ In peer-to-peer environments, peers use specific name resolution systems to reso
   
 -   <xref:System.Net.PeerToPeer.PeerNameResolver>: Defines the process for resolving a peer name to its network endpoint(s), including both synchronous and asynchronous methods for resolution.  
   
--  
-  
--  
-  
-## See Also  
- <xref:System.ServiceModel.PeerResolvers>  
- <xref:System.Net.PeerToPeer>  
- [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)  
- [PeerToPeer Technology Sample](https://go.microsoft.com/fwlink/?LinkID=179571)
+## See also  
+- <xref:System.ServiceModel.PeerResolvers>  
+- <xref:System.Net.PeerToPeer>  
+- [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)
+- [PeerToPeer Technology Sample](https://go.microsoft.com/fwlink/?LinkID=179571)

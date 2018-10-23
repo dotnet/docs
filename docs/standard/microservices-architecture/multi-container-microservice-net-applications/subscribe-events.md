@@ -312,7 +312,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
 ### Additional resources
 
 -   **Forked eShopOnContainers using NServiceBus (Particular Software)**
-    [*http://go.particular.net/eShopOnContainers*](http://go.particular.net/eShopOnContainers)
+    [*https://go.particular.net/eShopOnContainers*](https://go.particular.net/eShopOnContainers)
 
 -   **Event Driven Messaging**
     [*http://soapatterns.org/design\_patterns/event\_driven\_messaging*](http://soapatterns.org/design_patterns/event_driven_messaging)
@@ -321,7 +321,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
     [*https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/*](https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/)
 
 -   **Publish-Subscribe channel**
-    [*http://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html*](http://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html)
+    [*https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html*](https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html)
 
 -   **Communicating Between Bounded Contexts**
     [*https://msdn.microsoft.com/library/jj591572.aspx*](https://msdn.microsoft.com/library/jj591572.aspx)

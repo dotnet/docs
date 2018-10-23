@@ -78,13 +78,13 @@ You need to be careful when implementing the API Gateway pattern. Usually it isn
 
 Therefore, the API Gateways should be segregated based on business boundaries and the client apps and not act as a single aggregator for all the internal microservices.
 
-When splitting the API Gateway tier into multiple API Gateways, if your application has multiple client apps, that can be a primary pivot when identifying the multiple API Gateways types, so that you can have a different façade for the needs of each client app. This case is a pattern named “Backend for Frontend” ([BFF](http://samnewman.io/patterns/architectural/bff/)) where each API Gateway can provide a different API tailored for each client app type, possibly even based on the client form factor by implementing specific adapter code which underneath calls multiple internal microservices, as shown in the following image:
+When splitting the API Gateway tier into multiple API Gateways, if your application has multiple client apps, that can be a primary pivot when identifying the multiple API Gateways types, so that you can have a different façade for the needs of each client app. This case is a pattern named “Backend for Frontend” ([BFF](https://samnewman.io/patterns/architectural/bff/)) where each API Gateway can provide a different API tailored for each client app type, possibly even based on the client form factor by implementing specific adapter code which underneath calls multiple internal microservices, as shown in the following image:
 
 ![Diagram showing multiple custom API Gateways](./media/image13.1.png)
 
 **Figure 4-13.1**. Using multiple custom API Gateways
 
-The previous image shows a simplified architecture with multiple fine-grained API Gateways. In this case, the boundaries identified for each API Gateway are based purely on the “Backend for Frontend” ([BFF](http://samnewman.io/patterns/architectural/bff/)) pattern, hence based just on the API needed per client app. But in larger applications you should also go further and create additional API Gateways based on business boundaries as a second design pivot.
+The previous image shows a simplified architecture with multiple fine-grained API Gateways. In this case, the boundaries identified for each API Gateway are based purely on the “Backend for Frontend” ([BFF](https://samnewman.io/patterns/architectural/bff/)) pattern, hence based just on the API needed per client app. But in larger applications you should also go further and create additional API Gateways based on business boundaries as a second design pivot.
 
 ## Main features in the API Gateway pattern
 
@@ -165,7 +165,7 @@ After the initial architecture and patterns explanation sections, the next secti
     [*https://docs.microsoft.com/azure/architecture/microservices/gateway*](https://docs.microsoft.com/azure/architecture/microservices/gateway)
 
 - **Aggregation and composition pattern**
-   [*http://microservices.io/patterns/data/api-composition.html*](http://microservices.io/patterns/data/api-composition.html)
+   [*https://microservices.io/patterns/data/api-composition.html*](https://microservices.io/patterns/data/api-composition.html)
 
 - **Azure API Management**
     [*https://azure.microsoft.com/services/api-management/*](https://azure.microsoft.com/services/api-management/)

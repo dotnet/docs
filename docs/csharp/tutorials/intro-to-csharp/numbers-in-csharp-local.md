@@ -1,15 +1,15 @@
 ---
-title: Numbers in C# tutorial - C# local quickstarts
+title: Numbers in C# - Introduction to C# tutorial
 description: Learn C# by exploring numeric types, their properties and methods.
 ms.date: 10/31/2017
 ms.custom: mvc
 ---
 
-# Numbers in C# quickstart
+# Numbers in C# introductory tutorial
 
-This quickstart teaches you about the number types in C# interactively. You'll write small amounts of code, then you'll compile and run that code. The quickstart contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
+This tutorial teaches you about the number types in C# interactively. You'll write small amounts of code, then you'll compile and run that code. The tutorial contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 
-This quickstart expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quickstarts](local-environment.md) with links to more details.
+This tutorial expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [Become familiar with the development tools](local-environment.md) with links to more details.
 
 ## Explore integer math
 

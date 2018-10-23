@@ -1,12 +1,11 @@
 ---
-title: Local environment tutorial - C# local quickstarts
-description: This quickstart provides the basics for running the quickstarts locally
-ms.date: 12/07/2017
-ms.custom: mvc
+title: Introduction to C# - become familiar with the development tools
+description: This article provides a basic introduction to the tools you'll use to develop C# and .NET Applications on your machine.
+ms.date: 10/23/2018
 ---
-# Local environment
+# Become familiar with the .NET Development tools
 
-The first step to trying a quickstart locally is to setup a development environment on your local machine.
+The first step in running a tutorial on your machine is to setup a development environment.
 The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting
 up your local development environment on Mac, PC or Linux.
 
@@ -16,49 +15,48 @@ Alternatively, you can install the [.NET Core SDK](https://www.microsoft.com/net
 ## Basic application development flow
 
 You'll create applications using the [`dotnet new`](../../core/tools/dotnet-new.md) command. This command
-generates the files and assets necessary for your application. The quickstarts all use the `console` application
-type.
+generates the files and assets necessary for your application. The introduction to C# tutorials all use the `console` application type. Once you've got the basics, you can expand to other application types.
 
 The other commands you'll use are [`dotnet build`](../../core/tools/dotnet-build.md) to build the executable,
 and [`dotnet run`](../../core/tools/dotnet-run.md) to run the executable.
 
-## Pick your quickstart
+## Pick your turorial
 
-You can start with any of the following quickstarts:
+You can start with any of the following tutorials:
 
 ## [Numbers in C#](numbers-in-csharp-local.md)
 
-In the [Numbers in C#](numbers-in-csharp-local.md) quickstart, you'll learn
+In the [Numbers in C#](numbers-in-csharp-local.md) tutorial, you'll learn
 how computers store numbers and how to perform calculations with different
 numeric types. You'll learn the basics of rounding, and how to perform
-mathematical calculations using C#. 
+mathematical calculations using C#.
 
-This quickstart assumes that you have finished the [Hello world](hello-world.yml) lesson.
+This tutorial assumes that you have finished the [Hello world](hello-world.yml) lesson.
 
 ## [Branches and loops](branches-and-loops-local.md)
 
-The [Branches and loops](branches-and-loops-local.md) quickstart teaches the basics of selecting
+The [Branches and loops](branches-and-loops-local.md) tutorial teaches the basics of selecting
 different paths of code execution based on the values stored in variables. You'll learn the
 basics of control flow, which is the basis of how programs make decisions and choose
-different actions. 
+different actions.
 
-This quickstart assumes that you have finished the [Hello world](hello-world.yml) and
+This tutorial assumes that you have finished the [Hello world](hello-world.yml) and
 [Numbers in C#](numbers-in-csharp-local.md) lessons.
 
 ## [String interpolation](interpolated-strings-local.md)
 
-The [String interpolation](interpolated-strings-local.md) quickstart shows you how to insert values into a string. You'll learn how to create an interpolated string with embedded C# expressions and how to control the text appearance of the expression results in the result string.
+The [String interpolation](interpolated-strings-local.md) tutorial shows you how to insert values into a string. You'll learn how to create an interpolated string with embedded C# expressions and how to control the text appearance of the expression results in the result string.
 
-This quickstart assumes that you have finished the [Hello world](hello-world.yml), [Numbers in C#](numbers-in-csharp-local.md), and [Branches and loops](branches-and-loops-local.md) lessons.
+This tutorial assumes that you have finished the [Hello world](hello-world.yml), [Numbers in C#](numbers-in-csharp-local.md), and [Branches and loops](branches-and-loops-local.md) lessons.
 
 ## [List collection](arrays-and-collections.md)
 
 The [List collection](arrays-and-collections.md) lesson gives you
 a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists. 
 
-This quickstart assumes that you have finished the lessons listed above.
+This tutorial assumes that you have finished the lessons listed above.
 
 ## [Introduction to classes](introduction-to-classes.md)
 
-This final quickstart is only available to run on your machine, using your own local development environment and .NET Core.
+This final introduction to C# tutorial is only available to run on your machine, using your own local development environment and .NET Core.
 You'll build a console application and see the basic object-oriented features that are part of the C# language.

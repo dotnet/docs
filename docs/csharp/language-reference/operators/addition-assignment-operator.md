@@ -27,7 +27,7 @@ x = x + y
 
 except that `x` is only evaluated once.
   
-For numeric types, the [addition operator](addition-operator.md) `+` computes the sum of its operands. If one or both operands of type [string](../keywords/string.md), it concatenates the string representations of its operands. For delegate types, the `+` operator returns a new delegate instance that is combination of its operands.
+For numeric types, the [addition operator](addition-operator.md) `+` computes the sum of its operands. If one or both operands is of type [string](../keywords/string.md), it concatenates the string representations of its operands. For delegate types, the `+` operator returns a new delegate instance that is combination of its operands.
 
 If a user-defined type [overloads](../keywords/operator.md) the [addition operator](addition-operator.md) `+`, the addition assignment operator `+=` is implicitly overloaded.
 

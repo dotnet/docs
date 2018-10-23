@@ -13,11 +13,11 @@ ms.assetid: 93e56486-bb42-43c1-bd43-60af11e64e67
 
 The `+` operator is supported in two forms: a unary plus operator or a binary addition operator.
 
-User-defined types can [overload](../keywords/operator.md) either of unary or binary `+` operators. When a binary `+` operator is overloaded, the [addition assignment operator](addition-assignment-operator.md) `+=` is also implicitly overloaded.
+User-defined types can [overload](../keywords/operator.md) the unary and binary `+` operators. When a binary `+` operator is overloaded, the [addition assignment operator](addition-assignment-operator.md) `+=` is also implicitly overloaded.
 
 ## Unary plus operator
 
-Unary `+` operator returns the value of its operand. It's supported by all numeric types.
+The unary `+` operator returns the value of its operand. It's supported by all numeric types.
 
 ## Numeric addition
 

@@ -213,7 +213,7 @@ You may need to format dates in a specific culture to support web scenarios wher
 
 The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> overload can also be used with a custom format string to specify other formats. The following example shows how to format a string using the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) standard format often used for web services. The Iso 8601 format does not have a corresponding standard format string.
 
-<a name="formatting05"></a>
+<a name="formatting-05"></a>
 [!code-csharp-interactive[System.DateTime.Formatting#5](~/samples/snippets/csharp/System.DateTime/StringFormat.cs#5)]
 [!code-vb[System.DateTime.Formatting#5](~/samples/snippets/visualbasic/System.DateTime/StringFormat.vb#5)]  
 

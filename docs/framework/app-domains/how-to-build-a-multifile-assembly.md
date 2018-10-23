@@ -82,7 +82,7 @@ This article explains how to create a multifile assembly and provides code that 
   
      In this command, the *module name* arguments specify the name of each module to include in the assembly. The **/main:** option specifies the method name that is the assembly's entry point. The **/out:** option specifies the name of the output file, which contains assembly metadata. The **/target:** option specifies that the assembly is a console application executable (.exe) file, a Windows executable (.win) file, or a library (.lib) file.  
   
-     In the following example, Al.exe creates an assembly that is a console application executable called `myAssembly.exe`. The application consists of two modules called `Client.netmodule` and `Stringer.netmodule`, and the executable file called `myAssembly.exe,` which contains only assembly metadata . The entry point of the assembly is the `Main` method in the class `MainClientApp`, which is located in `Client.dll`.  
+     In the following example, Al.exe creates an assembly that is a console application executable called `myAssembly.exe`. The application consists of two modules called `Client.netmodule` and `Stringer.netmodule`, and the executable file called `myAssembly.exe,` which contains only assembly metadata. The entry point of the assembly is the `Main` method in the class `MainClientApp`, which is located in `Client.dll`.  
   
     ```  
     al Client.netmodule Stringer.netmodule /main:MainClientApp.Main /out:myAssembly.exe /target:exe   

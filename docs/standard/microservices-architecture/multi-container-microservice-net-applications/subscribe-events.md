@@ -55,7 +55,7 @@ public class CatalogController : ControllerBase
 Then you use it from your controller’s methods, like in the UpdateProduct method:
 
 ```csharp
-[Route("update")]
+[Route("items")]
 [HttpPost]
 public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem product)
 {

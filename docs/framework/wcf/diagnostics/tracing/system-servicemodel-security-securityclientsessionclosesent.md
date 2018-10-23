@@ -2,7 +2,6 @@
 title: "System.ServiceModel.Security.SecurityClientSessionCloseSent"
 ms.date: "03/30/2017"
 ms.assetid: 6933e77d-ac9b-47cc-bc07-95f957d2299f
-author: "BrucePerlerMS"
 ---
 # System.ServiceModel.Security.SecurityClientSessionCloseSent
 System.ServiceModel.Security.SecurityClientSessionCloseSent  

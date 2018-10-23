@@ -2,7 +2,6 @@
 title: "System.ServiceModel.Security.SecuritySessionKeyRenewalFaultReceived"
 ms.date: "03/30/2017"
 ms.assetid: 857542f7-adcb-4769-bf4e-a85b87e58dc8
-author: "BrucePerlerMS"
 ---
 # System.ServiceModel.Security.SecuritySessionKeyRenewalFaultReceived
 System.ServiceModel.Security.SecuritySessionKeyRenewalFaultReceived  

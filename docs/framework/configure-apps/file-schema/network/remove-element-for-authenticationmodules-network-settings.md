@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "<remove> element, authenticationModules"
   - "authenticationModules, remove element"
 ms.assetid: abf79949-b05c-465a-b51c-bbeda9a74173
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;remove&gt; Element for authenticationModules (Network Settings)
 Removes an authentication module from the application.  

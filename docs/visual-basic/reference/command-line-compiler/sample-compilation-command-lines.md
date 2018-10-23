@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "compiling source code [Visual Basic], from command line"
   - "Visual Basic compiler, sample command lines"
 ms.assetid: 5bfbb487-5f47-4267-969a-39dfb917beeb
-author: rpetrusha
-ms.author: ronpet
 ---
 # Sample compilation command lines (Visual Basic)
 As an alternative to compiling Visual Basic programs from within Visual Studio, you can compile from the command line to produce executable (.exe) files or dynamic-link library (.dll) files.  

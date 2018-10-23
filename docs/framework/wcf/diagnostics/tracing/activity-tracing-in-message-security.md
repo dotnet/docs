@@ -2,7 +2,6 @@
 title: "Activity Tracing in Message Security"
 ms.date: "03/30/2017"
 ms.assetid: 68862534-3b2e-4270-b097-8121b12a2c97
-author: "BrucePerlerMS"
 ---
 # Activity Tracing in Message Security
 This topic describes activity tracing for security processing, which happens in the following three phases.  

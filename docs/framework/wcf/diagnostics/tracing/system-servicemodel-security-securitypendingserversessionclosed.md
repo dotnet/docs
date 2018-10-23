@@ -2,7 +2,6 @@
 title: "System.ServiceModel.Security.SecurityPendingServerSessionClosed"
 ms.date: "03/30/2017"
 ms.assetid: 1fa7098b-1724-4524-ad91-be7592951f69
-author: "BrucePerlerMS"
 ---
 # System.ServiceModel.Security.SecurityPendingServerSessionClosed
 System.ServiceModel.Security.SecurityPendingServerSessionClosed  

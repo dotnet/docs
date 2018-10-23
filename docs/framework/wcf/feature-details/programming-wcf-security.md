@@ -7,7 +7,6 @@ dev_langs:
 helpviewer_keywords: 
   - "message security [WCF], programming overview"
 ms.assetid: 739ec222-4eda-4cc9-a470-67e64a7a3f10
-author: "BrucePerlerMS"
 ---
 # Programming WCF Security
 This topic describes the fundamental programming tasks used to create a secure Windows Communication Foundation (WCF) application. This topic covers only authentication, confidentiality, and integrity, collectively known as *transfer security*. This topic does not cover authorization (the control of access to resources or services); for information on authorization, see [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md).  

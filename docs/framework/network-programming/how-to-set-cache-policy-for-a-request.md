@@ -7,8 +7,6 @@ dev_langs:
 helpviewer_keywords: 
   - "request cache policies"
 ms.assetid: 39c15e40-586b-4ac9-9cce-146f74b7e545
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # How to: Set Cache Policy for a Request
 The following example demonstrates setting a cache policy for a request. The example input is a URI such as `http://www.contoso.com/`.  

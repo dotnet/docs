@@ -2,7 +2,6 @@
 title: "Message Security Sample"
 ms.date: "03/30/2017"
 ms.assetid: 82444166-6288-493a-85d4-85f43f134d19
-author: "BrucePerlerMS"
 ---
 # Message Security Sample
 This sample demonstrates how to implement an application that uses the `basicHttpBinding` and message security. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service.  

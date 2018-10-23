@@ -2,7 +2,6 @@
 title: "&lt;security&gt; of &lt;wsHttpBinding&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 8658b162-2ddf-4162-a869-aa517a42288a
-author: "BrucePerlerMS"
 ---
 # &lt;security&gt; of &lt;wsHttpBinding&gt;
 Represents the security capabilities of the [\<wsHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md).  

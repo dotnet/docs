@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "<ipv6> element"
   - "ipv6 element"
 ms.assetid: 10b79aef-327b-4718-a892-e11f55e4d169
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;ipv6&gt; Element (Network Settings)
 Enables Internet Protocol version 6 (IPv6) responses from obsolete members of the <xref:System.Net.Dns> class.  

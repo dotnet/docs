@@ -2,7 +2,6 @@
 title: "&lt;security&gt; of &lt;customBinding&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 243a5148-bbd1-447f-a8a5-6e7792c0a3f1
-author: "BrucePerlerMS"
 ---
 # &lt;security&gt; of &lt;customBinding&gt;
 Specifies the security options for a custom binding.  

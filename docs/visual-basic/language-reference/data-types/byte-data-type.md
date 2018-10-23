@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "Byte data type"
   - "data types [Visual Basic], assigning"
 ms.assetid: eed44dff-eaee-4937-a89f-444e418e74f6
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Byte data type (Visual Basic)
 Holds unsigned 8-bit (1-byte) integers that range in value from 0 through 255.

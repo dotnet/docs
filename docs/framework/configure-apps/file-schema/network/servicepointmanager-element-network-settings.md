@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "servicePointManager element"
   - "<servicePointManager> element"
 ms.assetid: 6e5def51-3646-4ef6-a7bd-c69151321bec
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;servicePointManager&gt; Element (Network Settings)
 Configures connections to network resources.  

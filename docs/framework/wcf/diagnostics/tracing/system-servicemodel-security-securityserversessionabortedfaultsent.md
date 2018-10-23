@@ -2,7 +2,6 @@
 title: "System.ServiceModel.Security.SecurityServerSessionAbortedFaultSent"
 ms.date: "03/30/2017"
 ms.assetid: a27f4243-2b80-44da-bb79-674912395d93
-author: "BrucePerlerMS"
 ---
 # System.ServiceModel.Security.SecurityServerSessionAbortedFaultSent
 System.ServiceModel.Security.SecurityServerSessionAbortedFaultSent  

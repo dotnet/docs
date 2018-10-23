@@ -4,8 +4,6 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Network"
 ms.assetid: 31b44dd3-b903-4a48-8419-40419a3e4038
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # NetworkInformation
 The <xref:System.Net.NetworkInformation> namespace enables you to gather information about network events, changes, statistics, and properties. You can also determine whether a remote host is reachable by using the <xref:System.Net.NetworkInformation.Ping?displayProperty=nameWithType> class.  

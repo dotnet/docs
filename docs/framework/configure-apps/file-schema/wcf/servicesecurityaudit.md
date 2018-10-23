@@ -2,7 +2,6 @@
 title: "&lt;serviceSecurityAudit&gt;"
 ms.date: "03/30/2017"
 ms.assetid: ba517369-a034-4f8e-a2c4-66517716062b
-author: "BrucePerlerMS"
 ---
 # &lt;serviceSecurityAudit&gt;
 Specifies settings that enable auditing of security events during service operations.  

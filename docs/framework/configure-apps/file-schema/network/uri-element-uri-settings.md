@@ -2,8 +2,6 @@
 title: "&lt;Uri&gt; Element (Uri Settings)"
 ms.date: "03/30/2017"
 ms.assetid: c22bab8b-477c-4ae4-8498-65ad409e0847
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;Uri&gt; Element (Uri Settings)
 Contains settings that specify how the .NET Framework handles web addresses expressed using uniform resource identifiers (URIs).  

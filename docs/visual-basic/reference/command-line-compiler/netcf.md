@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "netcf compiler option [Visual Basic]"
   - "/netcf compiler option [Visual Basic]"
 ms.assetid: db7cfa59-c315-401c-a59b-0daf355343d6
-author: rpetrusha
-ms.author: ronpet
 ---
 # -netcf
 Sets the compiler to target the [!INCLUDE[Compact](~/includes/compact-md.md)].  

@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "-res compiler option [Visual Basic]"
   - "resource compiler option [Visual Basic]"
 ms.assetid: eee2f227-91f2-4f2b-a9d6-1c51c5320858
-author: rpetrusha
-ms.author: ronpet
 ---
 # -resource (Visual Basic)
 Embeds a managed resource in an assembly.  

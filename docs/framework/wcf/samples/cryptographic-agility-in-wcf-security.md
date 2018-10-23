@@ -2,7 +2,6 @@
 title: "Cryptographic Agility in WCF Security"
 ms.date: "03/30/2017"
 ms.assetid: c2c549e5-ac19-40c5-b686-8f67f52b6dbf
-author: "BrucePerlerMS"
 ---
 # Cryptographic Agility in WCF Security
 This sample shows how to specify in a standard/custom algorithm to provide a cryptographic agile implementation in a Windows Communication Foundation (WCF) client and service. The sample is composed of the following projects:

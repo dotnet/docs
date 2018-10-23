@@ -5,8 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d8c90785-f16b-42a5-8439-ed2f731b2ba8
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # How to: Retrieve a Protocol-Specific WebResponse that Matches a WebRequest
 This example shows how to retrieve a protocol-specific WebResponse that matches a WebRequest.  

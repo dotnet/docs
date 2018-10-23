@@ -1,8 +1,6 @@
 ---
 title: "$ (Visual Basic Reference)"
 ms.date: 10/31/2017
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # $ (Visual Basic Reference)
 

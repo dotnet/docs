@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "settings element"
   - "<settings> element"
 ms.assetid: 189ce989-c39b-427d-b004-6b82a668b931
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;settings&gt; Element (Network Settings)
 Configures basic network options for the <xref:System.Net?displayProperty=nameWithType> namespace.  

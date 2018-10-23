@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "protocols, TCP"
   - "Internet, TCP"
 ms.assetid: d2811830-3bcb-495c-b82d-cda9cf919aad
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Using TCP Services
 The <xref:System.Net.Sockets.TcpClient> class requests data from an Internet resource using TCP. The methods and properties of **TcpClient** abstract the details for creating a <xref:System.Net.Sockets.Socket> for requesting and receiving data using TCP. Because the connection to the remote device is represented as a stream, data can be read and written with .NET Framework stream-handling techniques.  

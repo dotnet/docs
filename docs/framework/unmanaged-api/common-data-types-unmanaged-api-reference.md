@@ -31,4 +31,4 @@ This topic lists simple data types used by the unmanaged APIs for the .NET Frame
 |ThreadID|`typedef UINT_PTR ThreadID;`|corprof.h|The identifier of a managed thread.|  
   
 ## See Also  
- [Unmanaged API Reference](../../../docs/framework/unmanaged-api/index.md)
+- [Unmanaged API Reference](../../../docs/framework/unmanaged-api/index.md)

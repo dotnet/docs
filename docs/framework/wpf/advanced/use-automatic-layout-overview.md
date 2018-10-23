@@ -62,8 +62,9 @@ For a discussion about various types of panels, see [Panels Overview](../../../.
 
    WPF provides a convenient way to support horizontal, bidirectional, and vertical layouts. In presentation framework, the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property can be used to define layout. The flow-direction patterns are:
    
-      - <xref:System.Windows.FlowDirection.LeftToRight?displayProperty=nameWithType> (LrTb) — horizontal layout for Latin, East Asian, and so forth.
-      - <xref:System.Windows.FlowDirection.RightToLeft?displayProperty=nameWithType> (RlTb) — bidirectional for Arabic, Hebrew, and so forth.
+     - <xref:System.Windows.FlowDirection.LeftToRight?displayProperty=nameWithType> (LrTb) — horizontal layout for Latin, East Asian, and so forth.
+     
+     - <xref:System.Windows.FlowDirection.RightToLeft?displayProperty=nameWithType> (RlTb) — bidirectional for Arabic, Hebrew, and so forth.
 
 **Use composite fonts instead of physical fonts**
 

@@ -16,7 +16,7 @@ author: "blowdart"
 ---
 # Transport Layer Security (TLS) best practices with the .NET Framework
 
-The Transport Layer Security (TLS) protocol is an industry standard designed to help protect the privacy of information communicated over the Internet. [TLS 1.2](https://tools.ietf.org/html/rfc5246) is the newest released standard and provides security improvements over previous versions. TLS 1.2 will eventually be replaced by [TLS 1.3](https://tools.ietf.org/html/draft-ietf-tls-tls13-22). This article presents recommendations to secure .NET Framework applications that use the TLS protocol.
+The Transport Layer Security (TLS) protocol is an industry standard designed to help protect the privacy of information communicated over the Internet. [TLS 1.2](https://tools.ietf.org/html/rfc5246) is a standard that provides security improvements over previous versions. TLS 1.2 will eventually be replaced by the newest released standard [TLS 1.3](https://tools.ietf.org/html/rfc8446) which is faster and has improved security. This article presents recommendations to secure .NET Framework applications that use the TLS protocol.
 
 To ensure .NET Framework applications remain secure, the TLS version should **not** be hardcoded. .NET Framework applications should use the TLS version the operating system (OS) supports.
 

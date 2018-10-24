@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Configuration.RsaProtectedConfigurationProvider> class gives you a way to encrypt sensitive information stored in a configuration file, which helps protect it from unauthorized access. You use the built-in <xref:System.Configuration.RsaProtectedConfigurationProvider> instance by declaring the provider and making appropriate settings in the configuration file instead of creating an instance of this class, as shown in the example later in this topic.  
+ The <xref:System.Configuration.RsaProtectedConfigurationProvider> class gives you a way to encrypt sensitive information stored in a configuration file, which helps protect it from unauthorized access. You use the built-in <xref:System.Configuration.RsaProtectedConfigurationProvider> instance by declaring the provider and making appropriate settings in the configuration file instead of creating an instance of this class, as shown in the [Examples](#examples) section.
   
  The <xref:System.Configuration.RsaProtectedConfigurationProvider> object uses the cryptography functions provided by <xref:System.Security.Cryptography.RSA> class to encrypt and decrypt configuration sections.  
   

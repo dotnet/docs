@@ -1727,7 +1727,11 @@ The following code example creates a process that prints a file. It sets the <xr
         <exception cref="T:System.ArgumentException">The <paramref name="machineName" /> parameter syntax is invalid. It might have length zero (0).</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="machineName" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The operating system platform does not support this operation on remote computers.</exception>
-        <exception cref="T:System.InvalidOperationException">There are problems accessing the performance counter API's used to get process information. This exception is specific to Windows NT, Windows 2000, and Windows XP.</exception>
+        <exception cref="T:System.InvalidOperationException">The attempt to connect to <paramref name="machineName" /> has failed.
+
+ -or- 
+        
+There are problems accessing the performance counter API's used to get process information. This exception is specific to Windows NT, Windows 2000, and Windows XP.</exception>
         <exception cref="T:System.ComponentModel.Win32Exception">A problem occurred accessing an underlying system API.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>

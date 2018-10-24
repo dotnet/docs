@@ -754,7 +754,7 @@
         <exception cref="T:System.NotSupportedException">The request scheme specified in <paramref name="requestUriString" /> has not been registered.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="requestUriString" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have permission to connect to the requested URI or a URI that the request is redirected to.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have <see cref="T:System.Net.WebPermissionAttribute" /> permission to connect to the requested URI or a URI that the request is redirected to.</exception>
         <exception cref="T:System.UriFormatException">
           <block subset="none" type="note">
             <para>  
@@ -846,7 +846,7 @@
         <exception cref="T:System.NotSupportedException">The request scheme specified in <paramref name="requestUri" /> is not registered.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="requestUri" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have permission to connect to the requested URI or a URI that the request is redirected to.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have <see cref="T:System.Net.WebPermissionAttribute" /> permission to connect to the requested URI or a URI that the request is redirected to.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateDefault">
@@ -902,7 +902,7 @@
         <exception cref="T:System.NotSupportedException">The request scheme specified in <paramref name="requestUri" /> is not registered.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="requestUri" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have permission to connect to the requested URI or a URI that the request is redirected to.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have <see cref="T:System.Net.WebPermissionAttribute" /> permission to connect to the requested URI or a URI that the request is redirected to.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateHttp">
@@ -968,7 +968,7 @@
         <exception cref="T:System.NotSupportedException">The request scheme specified in <paramref name="requestUriString" /> is the http or https scheme.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="requestUriString" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have permission to connect to the requested URI or a URI that the request is redirected to.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have <see cref="T:System.Net.WebPermissionAttribute" /> permission to connect to the requested URI or a URI that the request is redirected to.</exception>
         <exception cref="T:System.UriFormatException">The URI specified in <paramref name="requestUriString" /> is not a valid URI.</exception>
       </Docs>
     </Member>
@@ -1025,7 +1025,7 @@
         <exception cref="T:System.NotSupportedException">The request scheme specified in <paramref name="requestUri" /> is the http or https scheme.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="requestUri" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have permission to connect to the requested URI or a URI that the request is redirected to.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have <see cref="T:System.Net.WebPermissionAttribute" /> permission to connect to the requested URI or a URI that the request is redirected to.</exception>
         <exception cref="T:System.UriFormatException">The URI specified in <paramref name="requestUri" /> is not a valid URI.</exception>
       </Docs>
     </Member>

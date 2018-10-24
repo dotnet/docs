@@ -807,7 +807,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <Parameters />
       <Docs>
         <summary>Returns the hash code for the current <see cref="T:System.ValueTuple" /> instance.</summary>
-        <returns>The hash code for the current <see cref="T:System.ValueTuple" /> instance.</returns>
+        <returns>This method always return 0.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

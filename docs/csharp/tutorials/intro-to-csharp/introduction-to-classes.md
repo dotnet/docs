@@ -206,4 +206,4 @@ Type `dotnet run` to see the results.
 
 If you got stuck, you can see the source for this tutorial [in our GitHub repo](https://github.com/dotnet/samples/tree/master/csharp/classes-quickstart/)
 
-Congratulations, you've finished all our introduction to C# tutorials. If you're eager to learn more, try more of our [tutorials](../tutorials/index.md)
+Congratulations, you've finished all our introduction to C# tutorials. If you're eager to learn more, try more of our [tutorials](../index.md)

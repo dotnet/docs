@@ -272,7 +272,7 @@
 ### [Language Integrated Query (LINQ)](csharp/linq/)
 ### [Asynchronous programming](csharp/async.md)
 ### [Pattern Matching](csharp/pattern-matching.md)
-### [Reference semantics with value types](csharp/reference-semantics-with-value-types.md)
+### [Write safe, efficient code](csharp/write-safe-efficient-code.md)
 ### [Expression Trees](csharp/expression-trees.md)
 #### [Expression Trees Explained](csharp/expression-trees-explained.md)
 #### [Framework Types Supporting Expression Trees](csharp/expression-classes.md)

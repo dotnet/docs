@@ -1,6 +1,6 @@
 ---
 title: "volatile (C# Reference)"
-ms.date: 07/20/2015
+ms.date: 10/24/2018
 f1_keywords: 
   - "volatile_CSharpKeyword"
   - "volatile"
@@ -9,42 +9,46 @@ helpviewer_keywords:
 ms.assetid: 78089bc7-7b38-4cfd-9e49-87ac036af009
 ---
 # volatile (C# Reference)
+
 The `volatile` keyword indicates that a field might be modified by multiple threads that are executing at the same time. Fields that are declared `volatile` are not subject to compiler optimizations that assume access by a single thread. These restrictions ensure that all threads will observe volatile writes performed by any other thread in the order in which they were performed. There is no guarantee of a single total ordering of volatile writes as seen from all threads of execution.  
   
- The `volatile` modifier is usually used for a field that is accessed by multiple threads without using the [lock](../../../csharp/language-reference/keywords/lock-statement.md) statement to serialize access.  
+ The `volatile` modifier is usually used for a field that is accessed by multiple threads without using the [lock](lock-statement.md) statement to serialize access.  
   
  The `volatile` keyword can be applied to fields of these types:  
   
--   Reference types.  
+- Reference types.  
   
--   Pointer types (in an unsafe context). Note that although the pointer itself can be volatile, the object that it points to cannot. In other words, you cannot declare a "pointer to volatile."  
+- Pointer types (in an unsafe context). Note that although the pointer itself can be volatile, the object that it points to cannot. In other words, you cannot declare a "pointer to volatile."  
   
--   Types such as sbyte, byte, short, ushort, int, uint, char, float, and bool.  
+- Simple types such as `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `char`, `float`, and `bool`.  
   
--   An enum type with one of the following base types: byte, sbyte, short, ushort, int, or uint.  
+- An `enum` type with one of the following base types: `byte`, `sbyte`, `short`, `ushort`, `int`, or `uint`.  
   
--   Generic type parameters known to be reference types.  
+- Generic type parameters known to be reference types. 
   
--   <xref:System.IntPtr> and <xref:System.UIntPtr>.  
+- <xref:System.IntPtr> and <xref:System.UIntPtr>.  
   
- The volatile keyword can only be applied to fields of a class or struct. Local variables cannot be declared `volatile`.  
+The volatile keyword can only be applied to fields of a `class` or `struct`. Local variables cannot be declared `volatile`.
   
-## Example  
- The following example shows how to declare a public field variable as `volatile`.  
+## Example
+
+The following example shows how to declare a public field variable as `volatile`.  
   
- [!code-csharp[csrefKeywordsModifiers#24](../../../csharp/language-reference/keywords/codesnippet/CSharp/volatile_1.cs)]  
+[!code-csharp[declareVolatile](~/samples/snippets/csharp/language-reference/keywords/volatile/Program.cs#Declaration)]
+
+The following example demonstrates how an auxiliary or worker thread can be created and used to perform processing in parallel with that of the primary thread. For background information about multithreading, see [Managed Threading](../../../standard/threading/index.md) and [Threading (C#)](../../programming-guide/concepts/threading/index.md).  
   
-## Example  
- The following example demonstrates how an auxiliary or worker thread can be created and used to perform processing in parallel with that of the primary thread. For background information about multithreading, see [Managed Threading](../../../standard/threading/index.md) and [Threading (C#)](../../programming-guide/concepts/threading/index.md).  
-  
- [!code-csharp[csProgGuideThreading#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/volatile_2.cs)]  
-  
-## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+[!code-csharp[declareVolatile](~/samples/snippets/csharp/language-reference/keywords/volatile/Program.cs#Volatile)]
+
+With the `volatile` modifier on  the declaration of  in place, you'll always get the same results (similar to the excerpt shown in the preceding code). However, without that modifier on the `_shouldStop` member, the behavior is unpredictable. The `DoWork` method may optimize the member access, resulting in reading stale data. Because of the nature of multi-threaded programming, the number of stale reads is unpredictable. Different runs of the program will produce somewhat different results.
+
+## C# Language Specification
+
+[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)
+- [C# Reference](../index.md)  
+- [C# Programming Guide](../../programming-guide/index.md)  
+- [C# Keywords](index.md)  
+- [Modifiers](modifiers.md)

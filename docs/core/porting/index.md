@@ -3,7 +3,7 @@ title: Porting to .NET Core from .NET Framework
 description: Understand the porting process and discover tools you may find helpful when porting a .NET Framework project to .NET Core.
 author: cartermp
 ms.author: mairaw
-ms.date: 06/20/2016
+ms.date: 10/23/2018
 ---
 # Porting to .NET Core from .NET Framework
 

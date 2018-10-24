@@ -110,7 +110,7 @@ Note that in both examples the `ref` keyword must be used in both places, or the
 
 ## Ref readonly locals
 
-A ref readonly local is used to refer to values returned by the member that has `ref readonly` in its signature and uses `return ref`. A `ref readonly` variable combines the properties of a `ref` local variable with a `readonly` variable: it is an alias to the storage it's assigned to, and it cannot be modified. 
+A ref readonly local is used to refer to values returned by the method or property that has `ref readonly` in its signature and uses `return ref`. A `ref readonly` variable combines the properties of a `ref` local variable with a `readonly` variable: it is an alias to the storage it's assigned to, and it cannot be modified. 
 
 ## A ref returns and ref locals example
 

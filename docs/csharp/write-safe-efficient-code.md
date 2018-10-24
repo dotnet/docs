@@ -64,6 +64,8 @@ readonly public struct ReadonlyPoint3D
 
 Follow this recommendation whenever your design intent is to create an immutable value type. Any performance improvements are an added benefit. The `readonly struct` clearly expresses your design intent.
 
+The [unamanaged types](language-reference/keywords/sizeof.md) aren't explicitly marked as a `readonly struct` types, but the compiler treats them as such. These types are considered `readonly` from the perspective of the language. We know them to be immutable which is even a stronger guarantee than `readonly` can provide.
+
 ## Use `ref readonly return` statements for large structures when possible
 
 You can return values by reference when the value being returned isn't local to the returning method. Returning by reference means that only the reference is copied, not the structure. In the following example, the `Origin` property can't use a `ref` return because the value being returned is a local variable:

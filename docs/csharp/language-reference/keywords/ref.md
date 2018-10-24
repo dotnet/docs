@@ -84,7 +84,7 @@ return ref DecimalArray[0];
 
 In order for the caller to modify the object's state, the reference return value must be stored to a variable that is explicitly defined as a [ref local](#ref-locals).
 
-The called method may also declare the return value as `ref readonly` to return the value by reference, and enforce that the calling code cannot modify the returned value. The calling method can avoid copying the returned valued by storing the value in a local [ref readonly](#ref-readonly-local) variable.
+The called method may also declare the return value as `ref readonly` to return the value by reference, and enforce that the calling code cannot modify the returned value. The calling method can avoid copying the returned valued by storing the value in a local [ref readonly](#ref-readonly-locals) variable.
 
 For an example, see [A ref returns and ref locals example](#a-ref-returns-and-ref-locals-example)
 

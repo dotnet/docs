@@ -1,10 +1,10 @@
 ---
-title: Introduction to classes tutorial - Introduction to C# tutorial
+title: Classes and objects  - Introduction to C# tutorial
 description: Create your first C# program and explore object oriented concepts
 ms.date: 10/11/2017
 ms.custom: mvc
 ---
-# Introduction to classes
+# Explore object oriented programming with classes and objects
 
 This tutorial expects that you have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [Become familiar with the development tools](local-environment.md) with links to more details.
 

@@ -1,11 +1,11 @@
 ---
-title: String interpolation tutorial - C# tutorials
+title: String interpolation - C# tutorial
 description: This tutorial shows you how to use C# string interpolation feature to include formatted expression results in a larger string.
 author: rpetrusha
 ms.author: ronpet
 ms.date: 10/23/2018
 ---
-# String interpolation
+# Use string interpolation to construct formatted strings
 
 This tutorial teaches you how to use C# [string interpolation](../../language-reference/tokens/interpolated.md) to insert values into a single result string. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that show you how to insert values into a string and format those values in different ways.
 

@@ -1,10 +1,10 @@
 ---
-title: Collections tutorial - Introduction to C#
+title: Work with collections - Introduction to C# tutorial
 description: Learn C# by exploring the List collection in this tutorial.
 ms.date: 10/13/2017
 ms.custom: mvc
 ---
-# Introduction to C# tutorial: Collections
+# Learn to manage data collections using the generic list type
 
 This introductory tutorial provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List%601>
 class.

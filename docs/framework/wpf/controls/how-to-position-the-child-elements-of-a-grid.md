@@ -20,6 +20,9 @@ This example shows how to use the get and set methods that are defined on <xref:
   
  [!code-csharp[gridGetSetMethods#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/gridGetSetMethods/CSharp/Window1.xaml.cs#2)]
  [!code-vb[gridGetSetMethods#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/gridGetSetMethods/VisualBasic/Window1.xaml.vb#2)]  
+ Here is the finished result!
+ 
+ ![alt text](../controls/media/GridMethodsSample.png)
   
 ## See Also  
  <xref:System.Windows.Controls.Grid>  

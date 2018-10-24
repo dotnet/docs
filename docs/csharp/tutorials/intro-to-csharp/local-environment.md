@@ -14,11 +14,11 @@ Alternatively, you can install the [.NET Core SDK](https://www.microsoft.com/net
 
 ## Basic application development flow
 
-You'll create applications using the [`dotnet new`](../../core/tools/dotnet-new.md) command. This command
+You'll create applications using the [`dotnet new`](../../../core/tools/dotnet-new.md) command. This command
 generates the files and assets necessary for your application. The introduction to C# tutorials all use the `console` application type. Once you've got the basics, you can expand to other application types.
 
-The other commands you'll use are [`dotnet build`](../../core/tools/dotnet-build.md) to build the executable,
-and [`dotnet run`](../../core/tools/dotnet-run.md) to run the executable.
+The other commands you'll use are [`dotnet build`](../../../core/tools/dotnet-build.md) to build the executable,
+and [`dotnet run`](../../../core/tools/dotnet-run.md) to run the executable.
 
 ## Pick your turorial
 

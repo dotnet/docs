@@ -229,7 +229,7 @@
 <!-- Start of C# Content -->
 # [C# Guide](csharp/index.md)
 ## [Get Started](csharp/getting-started/)
-## [Tutorials](csharp/tutorials/)
+## [Tutorials](csharp/tutorials/index.md)
 ### [Introduction to C#](csharp/tutorials/intro-to-csharp/index.md)
 #### [Hello world](csharp/tutorials/intro-to-csharp/hello-world.yml)
 #### [Numbers in C#](csharp/tutorials/intro-to-csharp/numbers-in-csharp.yml)

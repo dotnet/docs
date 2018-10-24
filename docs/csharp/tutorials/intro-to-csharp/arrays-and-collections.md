@@ -44,7 +44,7 @@ Replace `<name>` with your name. Save **Program.cs**. Type `dotnet run` in your 
 
 You've just created a list of strings, added three names to that list, and printed out the names in all CAPS. You're using concepts that you've learned in earlier tutorials to loop through the list.
 
-The code to display names makes use of the [string interpolation](../language-reference/tokens/interpolated.md) feature.  When you precede a `string` with the `$` character, you can embed C# code in the string declaration. The actual string replaces that C# code with the value it generates. In this example, it replaces the `{name.ToUpper()}` with each name, converted to capital letters, because you called the <xref:System.String.ToUpper%2A> method.
+The code to display names makes use of the [string interpolation](../../language-reference/tokens/interpolated.md) feature.  When you precede a `string` with the `$` character, you can embed C# code in the string declaration. The actual string replaces that C# code with the value it generates. In this example, it replaces the `{name.ToUpper()}` with each name, converted to capital letters, because you called the <xref:System.String.ToUpper%2A> method.
 
 Let's keep exploring.
 
@@ -214,4 +214,4 @@ the [Introduction to classes](introduction-to-classes.md) tutorial in
 your own development environment.
 
 You can learn more about working with the `List` type in the
-[.NET Guide](../../standard/index.md) topic on [collections](../../standard/collections/index.md). You'll also learn about many other collection types.
+[.NET Guide](../../../standard/index.md) topic on [collections](../../../standard/collections/index.md). You'll also learn about many other collection types.

@@ -82,7 +82,7 @@ items:
     You've been using `+` to build strings from **variables** and **constant** strings. There's a better way.
     You can place a variable between `{` and `}` characters to tell C# to replace that text with the value of the variable.
     
-    This is called [String interpolation](../language-reference/tokens/interpolated.md).
+    This is called [String interpolation](../../language-reference/tokens/interpolated.md).
 
     If you add a `$` before the opening quote of the string, you can then include variables, like `aFriend`, inside the string between curly braces. Give it a try:
 
@@ -224,5 +224,5 @@ items:
     You've completed the "Hello C#" introduction to C# tutorial.
 
     You can learn more about working with the `string` type in the
-    [C# Programming Guide](../programming-guide/index.md) topic on [strings](../programming-guide/strings/index.md).
-    [How to tips on working with strings](../how-to/index.md#working-with-strings).
+    [C# Programming Guide](../../programming-guide/index.md) topic on [strings](../../programming-guide/strings/index.md).
+    [How to tips on working with strings](../../how-to/index.md#working-with-strings).

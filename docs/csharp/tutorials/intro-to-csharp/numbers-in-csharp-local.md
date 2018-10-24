@@ -356,9 +356,8 @@ your own development environment.
 
 You can learn more about numbers in C# in the following topics:
 
-[Integral Types Table](../language-reference/keywords/integral-types-table.md)   
-[Floating-Point Types Table](../language-reference/keywords/floating-point-types-table.md)   
-[Built-In Types Table](../language-reference/keywords/built-in-types-table.md)   
-[Implicit Numeric Conversions Table](../language-reference/keywords/implicit-numeric-conversions-table.md)   
-[Explicit Numeric Conversions Table](../language-reference/keywords/explicit-numeric-conversions-table.md)
-
+[Integral Types Table](../../language-reference/keywords/integral-types-table.md)   
+[Floating-Point Types Table](../../language-reference/keywords/floating-point-types-table.md)   
+[Built-In Types Table](../../language-reference/keywords/built-in-types-table.md)   
+[Implicit Numeric Conversions Table](../../language-reference/keywords/implicit-numeric-conversions-table.md)   
+[Explicit Numeric Conversions Table](../../language-reference/keywords/explicit-numeric-conversions-table.md)

@@ -69,7 +69,7 @@ Follow this recommendation whenever your design intent is to create an immutable
 You can return values by reference when the value being returned isn't local to the returning method. Returning by reference means that only the reference is copied, not the structure. In the following example, the `Origin` property can't use a `ref` return because the value being returned is a local variable:
 
 ```csharp
-public Point3D Origin {get;} => new Point3D(0,0,0);
+public Point3D Origin => new Point3D(0,0,0);
 ```
 
 However, the following property definition can be returned by reference because the returned value is a static member:
@@ -80,7 +80,7 @@ public struct Point3D
     private static Point3D origin = new Point3D(0,0,0);
 
     // Dangerous! returning a mutable reference to internal storage
-    public ref Point3D Origin { get; } => ref origin;
+    public ref Point3D Origin => ref origin;
 
     // other members removed for space
 }
@@ -93,13 +93,13 @@ public struct Point3D
 {
     private static Point3D origin = new Point3D(0,0,0);
 
-    public ref readonly Point3D Origin { get; } => ref origin;
+    public ref readonly Point3D Origin => ref origin;
 
     // other members removed for space
 }
 ```
 
-Returning by `readonly ref` enables you to save copying larger structures and preserve the immutability of your internal data members.
+Returning `ref readonly` enables you to save copying larger structures and preserve the immutability of your internal data members.
 
 At the call site, callers make the choice to use the `Origin` property as a `readonly ref` or as a value:
 

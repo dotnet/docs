@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "-vbruntime compiler option [Visual Basic]"
   - "/vbruntime compiler option [Visual Basic]"
 ms.assetid: 1aa0239e-511a-4c29-957d-fd72877b350a
-author: rpetrusha
-ms.author: ronpet
 ---
 # -vbruntime
 Specifies that the compiler should compile without a reference to the Visual Basic Runtime Library, or with a reference to a specific runtime library.  

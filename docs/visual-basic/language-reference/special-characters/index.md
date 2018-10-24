@@ -1,8 +1,6 @@
 ---
 title: "Special Characters (Visual Basic Reference)"
 ms.date: 10/31/2017
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # Special Characters (Visual Basic Reference)

@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "/refonly compiler option [Visual Basic]"
   - "-refonly compiler option [Visual Basic]"
   - "refonly compiler option [Visual Basic]"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # -refonly (Visual Basic)

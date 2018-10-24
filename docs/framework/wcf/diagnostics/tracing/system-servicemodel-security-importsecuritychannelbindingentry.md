@@ -2,7 +2,6 @@
 title: "System.ServiceModel.Security.ImportSecurityChannelBindingEntry"
 ms.date: "03/30/2017"
 ms.assetid: 167e4485-3595-43a9-a342-674cd6a35daa
-author: "BrucePerlerMS"
 ---
 # System.ServiceModel.Security.ImportSecurityChannelBindingEntry
 System.ServiceModel.Security.ImportSecurityChannelBindingEntry  

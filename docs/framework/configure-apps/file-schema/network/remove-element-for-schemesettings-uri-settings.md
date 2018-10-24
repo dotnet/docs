@@ -2,8 +2,6 @@
 title: "&lt;remove&gt; Element for schemeSettings (Uri Settings)"
 ms.date: "03/30/2017"
 ms.assetid: 4095ba51-de20-4f87-b562-018abe422c91
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;remove&gt; Element for schemeSettings (Uri Settings)
 Removes a scheme setting for a scheme name.  

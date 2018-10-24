@@ -1,6 +1,6 @@
 ---
 title: "Null-conditional Operators (Visual Basic)"
-ms.date: 10/16/2015
+ms.date: 10/19/2018
 helpviewer_keywords: 
   - "null-conditional operators [Visual Basic]"
   - "?. operator [Visual Basic]"
@@ -52,6 +52,6 @@ The new way is thread-safe because the compiler generates code to evaluate `Prop
 
 ## See also
 
-- [Operators (Visual Basic)](operators.md)
+- [Operators (Visual Basic)](index.md)
 - [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)
 - [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  

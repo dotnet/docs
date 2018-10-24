@@ -14,7 +14,7 @@ This tutorial shows you how to create an application that accepts a search word 
 > [!NOTE]
 > Your feedback is highly valued. There are two ways you can provide feedback to the development team on Visual Studio for Mac:
 > * In Visual Studio for Mac, select **Help** > **Report a Problem** from the menu or **Report a Problem** from the Welcome screen, which opens a window for filing a bug report. You can track your feedback in the [Developer Community](https://developercommunity.visualstudio.com/spaces/41/index.html) portal.
-> * To make a suggestion, select **Help** > **Provide a Suggestion** from the menu or **Provide a Suggestion** from the Welcome screen, which takes you to the [Visual Studio for Mac UserVoice webpage](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac).
+> * To make a suggestion, select **Help** > **Provide a Suggestion** from the menu or **Provide a Suggestion** from the Welcome screen, which takes you to the [Visual Studio for Mac Developer Community webpage](https://developercommunity.visualstudio.com/content/idea/post.html?space=41).
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ For more information on prerequisites, see the [Prerequisites for .NET Core on M
 
 ## Building a library
 
-1. On the Welcome screen, select **New Project**. In the **New Project** dialog under the **Multiplatform** node, select the **.NET Standard Library** template. This creates a .NET Standard library that targets .NET Core as well as any other .NET implementation that supports version 2.0 of the [.NET Standard](../../standard/net-standard.md). Select **Next**.
+1. On the Welcome screen, select **New Project**. In the **New Project** dialog under the **.NET Core** node, select the **.NET Standard Library** template. This creates a .NET Standard library that targets .NET Core as well as any other .NET implementation that supports version 2.0 of the [.NET Standard](../../standard/net-standard.md). Select **Next**.
 
    ![New project dialog](./media/using-on-mac-vs-full-solution/vsmacfull01.png)
 

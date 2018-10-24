@@ -2,7 +2,6 @@
 title: "Security Calls Not Authorized"
 ms.date: "03/30/2017"
 ms.assetid: cb6acdcd-7336-42e1-9ae8-ac891336cd58
-author: "BrucePerlerMS"
 ---
 # Security Calls Not Authorized
 Counter Name: Security Calls Not Authorized.  

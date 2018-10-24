@@ -36,10 +36,10 @@ However, we encourage you to use the following references to learn more about co
 ## Additional resources
 
 -   **Composite UI using ASP.NET (Particular’s Workshop)**
-    [*http://go.particular.net/workshop-composite-ui-demo*](http://go.particular.net/workshop-composite-ui-demo)
+    [*https://go.particular.net/workshop-composite-ui-demo*](https://go.particular.net/workshop-composite-ui-demo)
 
 -   **Ruben Oostinga. The Monolithic Frontend in the Microservices Architecture**
-    [*http://blog.xebia.com/the-monolithic-frontend-in-the-microservices-architecture/*](http://blog.xebia.com/the-monolithic-frontend-in-the-microservices-architecture/)
+    [*https://xebia.com/blog/the-monolithic-frontend-in-the-microservices-architecture/*](https://xebia.com/blog/the-monolithic-frontend-in-the-microservices-architecture/)
 
 -   **Mauro Servienti. The secret of better UI composition**
     [*https://particular.net/blog/secret-of-better-ui-composition*](https://particular.net/blog/secret-of-better-ui-composition)

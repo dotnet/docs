@@ -32,7 +32,7 @@ The client application uses the generated proxy class to communicate with the se
 
    2. Once the host is running, right-click the **References** folder under the GettingStartedClient project in **Solution Explorer** and select **Add** > **Service Reference**.
 
-   3. Enter the following URL in the address box of the **Add Service Reference** dialog: [http://localhost:8000/GettingStartedClient/Service](http://localhost:8000/GettingStartedClient/Service)
+   3. Enter the following URL in the address box of the **Add Service Reference** dialog: [http://localhost:8000/GettingStarted/CalculatorService](http://localhost:8000/GettingStarted/CalculatorService)
 
    4. Choose **Go**.
 
@@ -43,11 +43,11 @@ The client application uses the generated proxy class to communicate with the se
     You can also use the command-line tool [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) with the appropriate switches to create the client code. The following example generates a code file and a configuration file for the service. The first example shows how to generate the proxy in VB, and the second shows how to generate the proxy in C#:
 
     ```shell
-    svcutil.exe /language:vb /out:generatedProxy.vb /config:app.config http://localhost:8000/GettingStartedClient/service
+    svcutil.exe /language:vb /out:generatedProxy.vb /config:app.config http://localhost:8000/GettingStarted/CalculatorService
     ```
 
     ```shell
-    svcutil.exe /language:cs /out:generatedProxy.cs /config:app.config http://localhost:8000/GettingStartedClient/service
+    svcutil.exe /language:cs /out:generatedProxy.cs /config:app.config http://localhost:8000/GettingStarted/CalculatorService
     ```
 
 ## Next steps

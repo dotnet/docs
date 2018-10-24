@@ -49,4 +49,4 @@ Windows Workflow Foundation (WF) is integrated with several different technologi
 
 4.  Flowing a client security token to a back-end service (claims-based delegation) using WS-Trust ActAs
 
-For more information and to download the WF Security Pack CTP, see: [WF Security Pack CTP](http://wf.codeplex.com/releases/view/48114)
+For more information and to download the WF Security Pack CTP, see: [WF Security Pack CTP](https://wf.codeplex.com/releases/view/48114)

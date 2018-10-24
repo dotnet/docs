@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "<socket> element"
   - "socket element"
 ms.assetid: 366c634c-7d16-478f-aedf-053eda94a1a0
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;socket&gt; Element (Network Settings)
 Specifies whether socket operations use completion ports.  

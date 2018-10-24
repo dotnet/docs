@@ -60,7 +60,7 @@ DDD is a large topic with a rich set of resources for learning. You can start wi
 DDD training
 
 -   **Julie Lerman and Steve Smith. Domain-Driven Design Fundamentals**
-    [*http://bit.ly/PS-DDD*](http://bit.ly/PS-DDD)
+    [*https://bit.ly/PS-DDD*](https://bit.ly/PS-DDD)
 
 
 >[!div class="step-by-step"]

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "sockets, client sockets"
   - "client sockets"
 ms.assetid: 81de9f59-8177-4d98-b25d-43fc32a98383
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Using Client Sockets
 Before you can initiate a conversation through a <xref:System.Net.Sockets.Socket>, you must create a data pipe between your application and the remote device. Although other network address families and protocols exist, this example shows how to create a TCP/IP connection to a remote service.  

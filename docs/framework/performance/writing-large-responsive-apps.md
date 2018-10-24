@@ -17,8 +17,7 @@ This article provides tips for improving the performance of large .NET Framework
   
  When your end users interact with your app, they expect it to be responsive.  Typing or command handling should never be blocked.  Help should pop up quickly or give up if the user continues typing.  Your app should avoid blocking the UI thread with long computations that make the app feel sluggish.  
   
- For more information about Roslyn compilers, visit the [dotnet/roslyn](https://github.com/dotnet/roslyn) repo on GitHub.
- <!-- TODO: replace with link to Roslyn conceptual docs once that's published -->
+ For more information about Roslyn compilers, see [The .NET Compiler Platform SDK](../../csharp/roslyn-sdk/index.md).
   
 ## Just the Facts  
  Consider these facts when tuning performance and creating responsive .NET Framework apps.  
@@ -455,13 +454,14 @@ class Compilation { /*...*/
   
 -   It's all about allocations – that is where the compiler platform team spent most of their time improving the performance of the new compilers.  
   
-## See Also  
- [Video of presentation of this topic](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)  
- [Beginners Guide to Performance Profiling](/visualstudio/profiling/beginners-guide-to-performance-profiling)  
- [Performance](../../../docs/framework/performance/index.md)  
- [.NET Performance Tips](https://msdn.microsoft.com/library/ms973839.aspx)  
- [Windows Phone Performance Analysis Tool](https://msdn.microsoft.com/magazine/hh781024.aspx)  
- [Find Application Bottlenecks with Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)  
- [Channel 9 PerfView tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial)  
- [High-level Performance Tips](https://curah.microsoft.com/4604/improving-your-net-apps-startup-performance)  
- [dotnet/roslyn repo on GitHub](https://github.com/dotnet/roslyn)
+## See also
+
+- [Video of presentation of this topic](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)  
+- [Beginners Guide to Performance Profiling](/visualstudio/profiling/beginners-guide-to-performance-profiling)  
+- [Performance](../../../docs/framework/performance/index.md)  
+- [.NET Performance Tips](https://msdn.microsoft.com/library/ms973839.aspx)  
+- [Windows Phone Performance Analysis Tool](https://msdn.microsoft.com/magazine/hh781024.aspx)  
+- [Find Application Bottlenecks with Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)  
+- [Channel 9 PerfView tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial)  
+- [The .NET Compiler Platform SDK](../../csharp/roslyn-sdk/index.md)
+- [dotnet/roslyn repo on GitHub](https://github.com/dotnet/roslyn)

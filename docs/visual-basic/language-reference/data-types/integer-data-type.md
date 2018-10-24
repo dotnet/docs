@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "I literal type character [Visual Basic]"
   - "Integer data type"
 ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Integer data type (Visual Basic)
 Holds signed 32-bit (4-byte) integers that range in value from -2,147,483,648 through 2,147,483,647.  

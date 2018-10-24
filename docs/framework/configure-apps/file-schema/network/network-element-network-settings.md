@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "<network> element"
   - "network element"
 ms.assetid: 2c2c6ad4-ed11-48ab-b28e-2bc0ba9b42c7
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;network&gt; Element (Network Settings)
 Configures the network options for an external Simple Mail Transport Protocol (SMTP) server.  

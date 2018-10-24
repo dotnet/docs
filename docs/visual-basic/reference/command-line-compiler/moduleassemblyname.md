@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "/moduleassemblyname compiler option [Visual Basic]"
   - "-moduleassemblyname compiler option [Visual Basic]"
 ms.assetid: 013a57b6-f425-4dd3-b333-512d72c42f55
-author: rpetrusha
-ms.author: ronpet
 ---
 # -moduleassemblyname
 Specifies the name of the assembly that this module will be a part of.  

@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "requestCaching element"
   - "<requestCaching> element"
 ms.assetid: 9962a2fe-cbda-41a6-9377-571811eaea84
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;requestCaching&gt; Element (Network Settings)
 Controls the caching mechanism for network requests.  

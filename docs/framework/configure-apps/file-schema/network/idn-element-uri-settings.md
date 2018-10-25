@@ -88,6 +88,6 @@ Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain 
 ```  
   
 ## See Also  
- <xref:System.Configuration.IdnElement?displayProperty=nameWithType>  
- <xref:System.Configuration.UriSection?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Configuration.IdnElement?displayProperty=nameWithType>  
+- <xref:System.Configuration.UriSection?displayProperty=nameWithType>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

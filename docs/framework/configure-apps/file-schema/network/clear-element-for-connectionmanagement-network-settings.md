@@ -62,6 +62,6 @@ Clears the connection management list.
 ```  
   
 ## See Also  
- <xref:System.Net.ServicePoint>  
- <xref:System.Net.ServicePointManager>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.ServicePoint>  
+- <xref:System.Net.ServicePointManager>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

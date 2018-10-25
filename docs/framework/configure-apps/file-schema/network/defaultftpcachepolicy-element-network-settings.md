@@ -74,7 +74,7 @@ Describes whether FTP caching is active and describes the default caching policy
 ```  
   
 ## See Also  
- <xref:System.Net.Cache>  
- <xref:System.Net.WebRequest>  
- <xref:System.Net.Cache.RequestCacheLevel>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.Cache>  
+- <xref:System.Net.WebRequest>  
+- <xref:System.Net.Cache.RequestCacheLevel>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

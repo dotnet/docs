@@ -1,19 +1,18 @@
 ### YamlMime:Tutorial
-title: Collections in C#
+title: Learn to manage data collections using the generic list type
 metadata:
-  title:  Collections interactive tutorial - C# quickstarts
+  title:  Data collections - Introduction to C# interactive tutorial
   description: In this tutorial, you'll use your browser to learn C# interactively. You write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
-  ms.topic: quickstart
   ms.custom: mvc
-  ms.date: 08/24/2018
+  ms.date: 10/23/2018
   level: Beginner
   displayType: two-column
   interactive: csharp
 items:
 - durationInMinutes: 1
   content: |
-    This quickstart teaches you C# interactively, using your browser to write C# code and see the results of compiling and running your code. It contains a series of lessons that create, modify and explore collections and arrays.
+    This tutorial teaches you C# interactively, using your browser to write C# code and see the results of compiling and running your code. It contains a series of lessons that create, modify and explore collections and arrays.
 - title: Create lists
   durationInMinutes: 2
   content: |
@@ -28,9 +27,9 @@ items:
     ```
 
     You've just created a list of strings, added three names to that list, and printed out the names in all CAPS. You're using concepts
-    that you've learned in earlier quickstarts to loop through the list.
+    that you've learned in earlier tutorials to loop through the list.
 
-    The code to display names makes use of the [string interpolation](../language-reference/tokens/interpolated.md) feature. When you precede a `string` with the `$` character, you can embed C# code in the string declaration. The actual string replaces that C# code with the value it generates. In this example, it replaces the `{name.ToUpper()}` with each name, converted to capital letters, because you called the <xref:System.String.ToUpper%2A> method.
+    The code to display names makes use of the [string interpolation](../../language-reference/tokens/interpolated.md) feature. When you precede a `string` with the `$` character, you can embed C# code in the string declaration. The actual string replaces that C# code with the value it generates. In this example, it replaces the `{name.ToUpper()}` with each name, converted to capital letters, because you called the <xref:System.String.ToUpper%2A?displayProperty=nameWithType> method.
 
     Let's keep exploring.
     
@@ -163,7 +162,7 @@ items:
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
     
 - content: |
-    You've completed the list quickstart. This quickstart is the final interactive quickstart. You can continue these quickstarts on your own development environment. Learn the basics of [local development](local-environment.md) and then pick a quickstart. You can try this same exercise, move directly to the next quickstart, or start again at with the [numbers in C#](numbers-in-csharp-local.md) quickstart.
+    You've completed the list tutorial. This tutorial is the final interactive tutorial. You can continue these tutorials on your own development environment. Learn the basics of [local development](local-environment.md) and then pick a tutorial. You can try this same exercise, move directly to the next tutorial, or start again at with the [numbers in C#](numbers-in-csharp-local.md) tutorial.
 
     You can learn more about working with the `List` type in the
-    [.NET Guide](../../standard/index.md) topic on [collections](../../standard/collections/index.md). You'll also learn about many other collection types.
+    [.NET Guide](../../../standard/index.md) topic on [collections](../../../standard/collections/index.md). You'll also learn about many other collection types.

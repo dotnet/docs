@@ -1,18 +1,18 @@
 ---
-title: Branches and loops tutorial - C# local quickstarts
-description: In this quickstart about branches and loops, you write C# code to explore the language syntax that supports conditional branches and loops to execute statements repeatedly.
+title: Branches and loops - Introduction to C# tutorial
+description: In this tutorial about branches and loops, you write C# code to explore the language syntax that supports conditional branches and loops to execute statements repeatedly.
 ms.date: 10/31/2017
 ms.custom: mvc
 ---
-# Branches and loops
+# Learn conditional logic with branch and loop statements
 
-This quickstart teaches you how to write code that examines variables and changes the execution path based on those variables. You write C# code and see the results of compiling and running it. The quickstart contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
+This tutorial teaches you how to write code that examines variables and changes the execution path based on those variables. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
 
-This quickstart expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quickstarts](local-environment.md) with links to more details.
+This tutorial expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [Become familiar with the development tools](local-environment.md) with links to more details.
 
 ## Make decisions using the `if` statement
 
-Create a directory named **branches-quickstart**. Make that the current directory and run `dotnet new console -n BranchesAndLoops -o .`. This command creates a new .NET Core console application in the current directory.
+Create a directory named **branches-tutorial**. Make that the current directory and run `dotnet new console -n BranchesAndLoops -o .`. This command creates a new .NET Core console application in the current directory.
 
 Open **Program.cs** in your favorite editor, and replace the line `Console.Writeline("Hello World!");` with the following code:
 
@@ -65,7 +65,7 @@ The statement following the `else` keyword executes only when the condition bein
 > The indentation under the `if` and `else` statements is for human readers.
 > The C# language doesn't treat indentation or white space as significant. 
 > The statement following the `if` or `else` keyword will be executed based
-> on the condition. All the samples in this quickstart follow a common
+> on the condition. All the samples in this tutorial follow a common
 > practice to indent lines based on the control flow of statements.
 
 Because indentation is not significant, you need to use `{` and `}` to
@@ -88,7 +88,7 @@ else
 ```
 
 > [!TIP]
-> Through the rest of this quickstart, the code samples all include the braces,
+> Through the rest of this tutorial, the code samples all include the braces,
 > following accepted practices.
 
 You can test more complicated conditions. Add the following code in your `Main` method after the code you've written so far:
@@ -278,15 +278,15 @@ by 3.  Here are a few hints:
 Try it yourself. Then check how you did. You should get 63 for an answer. You can see one possible answer by
 [viewing the completed code on GitHub](https://github.com/dotnet/samples/tree/master/csharp/branches-quickstart/Program.cs#L46-L54).
 
-You've completed the "branches and loops" quickstart.
+You've completed the "branches and loops" tutorial.
 
 You can continue with
-the [String interpolation](interpolated-strings-local.md) quickstart in
+the [String interpolation](interpolated-strings-local.md) tutorial in
 your own development environment.
 
 You can learn more about these concepts in these topics:
 
-[If and else statement](../language-reference/keywords/if-else.md)  
-[While statement](../language-reference/keywords/while.md)  
-[Do statement](../language-reference/keywords/do.md)  
-[For statement](../language-reference/keywords/for.md)  
+[If and else statement](../../language-reference/keywords/if-else.md)  
+[While statement](../../language-reference/keywords/while.md)  
+[Do statement](../../language-reference/keywords/do.md)  
+[For statement](../../language-reference/keywords/for.md)  

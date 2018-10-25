@@ -1,19 +1,19 @@
 ---
-title: Collections tutorial - C# local quickstarts
+title: Work with collections - Introduction to C# tutorial
 description: Learn C# by exploring the List collection in this tutorial.
 ms.date: 10/13/2017
 ms.custom: mvc
 ---
-# C# Quickstart: Collections
+# Learn to manage data collections using the generic list type
 
-This quickstart provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List%601>
+This introductory tutorial provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List%601>
 class.
 
-This quickstart expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quickstarts](local-environment.md) with links to more details.
+This tutorial expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in [Become familiar with the development tools](local-environment.md), with links to more details.
 
 ## A basic list example
 
-Create a directory named **list-quickstart**. Make that the current directory and run `dotnet new console`.
+Create a directory named **list-tutorial**. Make that the current directory and run `dotnet new console`.
 
 > [!NOTE]
 > If you just completed [Get started with .NET in 10 minutes](https://www.microsoft.com/net), you can keep using the myApp application that you just created.
@@ -24,7 +24,7 @@ Open **Program.cs** in your favorite editor, and replace the existing code with 
 using System;
 using System.Collections.Generic;
 
-namespace list_quickstart
+namespace list_tutorial
 {
     class Program
     {
@@ -42,9 +42,9 @@ namespace list_quickstart
 
 Replace `<name>` with your name. Save **Program.cs**. Type `dotnet run` in your console window to try it.
 
-You've just created a list of strings, added three names to that list, and printed out the names in all CAPS. You're using concepts that you've learned in earlier quickstarts to loop through the list.
+You've just created a list of strings, added three names to that list, and printed out the names in all CAPS. You're using concepts that you've learned in earlier tutorials to loop through the list.
 
-The code to display names makes use of the [string interpolation](../language-reference/tokens/interpolated.md) feature.  When you precede a `string` with the `$` character, you can embed C# code in the string declaration. The actual string replaces that C# code with the value it generates. In this example, it replaces the `{name.ToUpper()}` with each name, converted to capital letters, because you called the <xref:System.String.ToUpper%2A> method.
+The code to display names makes use of the [string interpolation](../../language-reference/tokens/interpolated.md) feature.  When you precede a `string` with the `$` character, you can embed C# code in the string declaration. The actual string replaces that C# code with the value it generates. In this example, it replaces the `{name.ToUpper()}` with each name, converted to capital letters, because you called the <xref:System.String.ToUpper%2A> method.
 
 Let's keep exploring.
 
@@ -125,7 +125,7 @@ Before you start the next section, let's move the current code into a separate m
 using System;
 using System.Collections.Generic;
 
-namespace list_quickstart
+namespace list_tutorial
 {
     class Program
     {
@@ -209,9 +209,9 @@ You can see an example solution by [looking at the finished sample code on GitHu
 
 With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you've added 20 items to the list.
 
-Congratulations, you've completed the list quickstart. You can continue with
-the [Introduction to classes](introduction-to-classes.md) quickstart in
+Congratulations, you've completed the list tutorial. You can continue with
+the [Introduction to classes](introduction-to-classes.md) tutorial in
 your own development environment.
 
 You can learn more about working with the `List` type in the
-[.NET Guide](../../standard/index.md) topic on [collections](../../standard/collections/index.md). You'll also learn about many other collection types.
+[.NET Guide](../../../standard/index.md) topic on [collections](../../../standard/collections/index.md). You'll also learn about many other collection types.

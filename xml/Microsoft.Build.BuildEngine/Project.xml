@@ -247,7 +247,7 @@
         <param name="itemName">The name of the item collection to add the item to. Corresponds to the user-defined name of the <see langword="Item" /> element.</param>
         <param name="itemInclude">The value of the <see langword="Include" /> attribute of the item.</param>
         <param name="treatItemIncludeAsLiteral">
-          <see langword="true" /> to treat the <c>itemInclude</c> parameter as a literal value; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to treat the <paramref name="itemInclude" /> parameter as a literal value; otherwise, <see langword="false" />.</param>
         <summary>Adds the specified <see href="http://msdn.microsoft.com/library/dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9">Item</see> element to the project.</summary>
         <returns>A <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> containing the created item.</returns>
         <remarks>
@@ -1971,7 +1971,7 @@
         <param name="importedProject">The <see cref="T:Microsoft.Build.BuildEngine.Project" /> that contains the specified property.</param>
         <param name="position">A <see cref="T:Microsoft.Build.BuildEngine.PropertyPosition" /> value indicating the location to insert the property.</param>
         <param name="treatPropertyValueAsLiteral">
-          <see langword="true" /> to treat the <c>propertyValue</c> parameter as a literal value; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to treat the <paramref name="propertyValue" /> parameter as a literal value; otherwise, <see langword="false" />.</param>
         <summary>Sets the value of a property in the specified imported project.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2162,7 +2162,7 @@
         <param name="condition">The condition to use on the property. Corresponds to the <see langword="Condition" /> attribute of the Property element.</param>
         <param name="position">A <see cref="T:Microsoft.Build.BuildEngine.PropertyPosition" /> value indicating the location to insert the property.</param>
         <param name="treatPropertyValueAsLiteral">
-          <see langword="true" /> to treat the <c>propertyValue</c> parameter as a literal value; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to treat the <paramref name="propertyValue" /> parameter as a literal value; otherwise, <see langword="false" />.</param>
         <summary>Sets the value of the specified property.</summary>
         <remarks>To be added.</remarks>
       </Docs>

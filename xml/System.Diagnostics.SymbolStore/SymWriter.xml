@@ -397,7 +397,7 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
         <param name="name">The local variable name.</param>
         <param name="attributes">The local variable attributes specified using the <see cref="T:System.Reflection.FieldAttributes" /> enumerator.</param>
         <param name="signature">The local variable signature.</param>
-        <param name="addrKind">The address types for <c>addr1</c>, <c>addr2</c>, and <c>addr3</c> using <see cref="T:System.Diagnostics.SymbolStore.SymAddressKind" />.</param>
+        <param name="addrKind">The address types for <paramref name="addr1" />, <paramref name="addr2" />, and <paramref name="addr3" /> using <see cref="T:System.Diagnostics.SymbolStore.SymAddressKind" />.</param>
         <param name="addr1">The first address for the local variable specification.</param>
         <param name="addr2">The second address for the local variable specification.</param>
         <param name="addr3">The third address for the local variable specification.</param>

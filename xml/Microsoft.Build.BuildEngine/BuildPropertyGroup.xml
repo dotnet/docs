@@ -187,7 +187,7 @@
         <param name="propertyName">The <see cref="P:Microsoft.Build.BuildEngine.BuildProperty.Name" /> property value to assign the new <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" />.</param>
         <param name="propertyValue">The <see cref="P:Microsoft.Build.BuildEngine.BuildProperty.Value" /> property value to assign the new <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" />.</param>
         <param name="treatPropertyValueAsLiteral">
-          <see langword="true" /> to treat the <c>propertyValue</c> parameter as a literal value; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to treat the <paramref name="propertyValue" /> parameter as a literal value; otherwise, <see langword="false" />.</param>
         <summary>Adds a new <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> with the specified <see cref="P:Microsoft.Build.BuildEngine.BuildProperty.Name" /> and <see cref="P:Microsoft.Build.BuildEngine.BuildProperty.Value" /> to the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />.</summary>
         <returns>The new <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" />.</returns>
         <remarks>To be added.</remarks>
@@ -581,7 +581,7 @@
         <param name="propertyName">The <see cref="P:Microsoft.Build.BuildEngine.BuildProperty.Name" /> property value of the <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> to set.</param>
         <param name="propertyValue">The <see cref="P:Microsoft.Build.BuildEngine.BuildProperty.Value" /> property value to assign the <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" />.</param>
         <param name="treatPropertyValueAsLiteral">
-          <see langword="true" /> to treat the <c>propertyValue</c> parameter as a literal value; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to treat the <paramref name="propertyValue" /> parameter as a literal value; otherwise, <see langword="false" />.</param>
         <summary>Sets the <see cref="P:Microsoft.Build.BuildEngine.BuildProperty.Value" /> of the <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> with the specified <see cref="P:Microsoft.Build.BuildEngine.BuildProperty.Name" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>

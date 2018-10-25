@@ -148,7 +148,7 @@
         <param name="itemName">The <see cref="P:Microsoft.Build.BuildEngine.BuildItem.Name" /> property value to assign the new <see cref="T:Microsoft.Build.BuildEngine.BuildItem" />.</param>
         <param name="itemInclude">The <see cref="P:Microsoft.Build.BuildEngine.BuildItem.Include" /> property value to assign the new <see cref="T:Microsoft.Build.BuildEngine.BuildItem" />.</param>
         <param name="treatItemIncludeAsLiteral">
-          <see langword="true" /> to treat the <c>itemInclude</c> parameter as a literal value; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to treat the <paramref name="itemInclude" /> parameter as a literal value; otherwise, <see langword="false" />.</param>
         <summary>Adds a new <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> with the specified <see cref="P:Microsoft.Build.BuildEngine.BuildItem.Name" /> and <see cref="P:Microsoft.Build.BuildEngine.BuildItem.Include" /> property values to the <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" />, allowing you to specify whether the <see cref="P:Microsoft.Build.BuildEngine.BuildItem.Include" /> property value is treated as a literal.</summary>
         <returns>The new <see cref="T:Microsoft.Build.BuildEngine.BuildItem" />.</returns>
         <remarks>To be added.</remarks>

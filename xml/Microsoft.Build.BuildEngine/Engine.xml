@@ -233,7 +233,7 @@
         <param name="globalProperties">A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> that represents properties to be passed to the child engine.</param>
         <param name="locations">A <see cref="T:Microsoft.Build.BuildEngine.ToolsetDefinitionLocations" /> enumeration specifies the location of the Toolset definition.</param>
         <param name="numberOfCpus">An integer that specifies the number of CPUs or cores in the system.</param>
-        <param name="localNodeProviderParameters">A string of parameters that are used to configure the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] engine. You must format the parameters as <c>ParameterName</c>=<c>ParameterValue</c>. The valid semicolon-separated, optional parameters are as follows:  
+        <param name="localNodeProviderParameters">A string of parameters that are used to configure the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] engine. You must format the parameters as <paramref name="ParameterName" />=<paramref name="ParameterValue" />. The valid semicolon-separated, optional parameters are as follows:  
   
  <see langword="MSBUILDLOCATION" /> Indicates where the build process can find MSBuild.exe. This path enables the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] engine to locate MSBuild.exe and start it as a local node. <see langword="MSBUILDLOCATION" /> is the only essential parameter for a host. The default value is C:\Windows\Microsoft.Net\Framework\v3.5\\.  
   

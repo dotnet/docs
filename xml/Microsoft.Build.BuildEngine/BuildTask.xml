@@ -303,7 +303,7 @@
       </Parameters>
       <Docs>
         <param name="parameterName">The parameter name to set.</param>
-        <param name="parameterValue">The value to assign to <c>parameterName</c>.</param>
+        <param name="parameterValue">The value to assign to <paramref name="parameterName" />.</param>
         <summary>Sets the value of the specified task parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -332,9 +332,9 @@
       </Parameters>
       <Docs>
         <param name="parameterName">The parameter name to set.</param>
-        <param name="parameterValue">The value to assign to <c>parameterName</c>.</param>
+        <param name="parameterValue">The value to assign to <paramref name="parameterName" />.</param>
         <param name="treatParameterValueAsLiteral">
-          <see langword="true" /> to treat <c>parameterValue</c> as a literal value; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to treat <paramref name="parameterValue" /> as a literal value; otherwise, <see langword="false" />.</param>
         <summary>Sets the value of the specified task parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>

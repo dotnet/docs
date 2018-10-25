@@ -46,7 +46,7 @@
       </Parameters>
       <Docs>
         <param name="projectFile">A required string representing the name of the project file for the &lt;Import&gt; statement to be added. For example, "myproject.csproj."</param>
-        <param name="condition">An optional string indicating whether the element is processed. If <c>condition</c> is <see langword="true" />, then the specified &lt;Import&gt; tag is added, if <see langword="false" />, it is not.</param>
+        <param name="condition">An optional string indicating whether the element is processed. If <paramref name="condition" /> is <see langword="true" />, then the specified &lt;Import&gt; tag is added, if <see langword="false" />, it is not.</param>
         <summary>Allows hosts to programmatically add a new [&lt;Import&gt;](http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) tag to a project file being manipulated by the host.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -83,7 +83,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.Array" /> of <see cref="T:Microsoft.Build.BuildEngine.Import" /> objects that is the destination of the elements copied from <see cref="T:Microsoft.Build.BuildEngine.ImportCollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the entire <see cref="T:Microsoft.Build.BuildEngine.ImportCollection" /> to a compatible one-dimensional <see cref="T:System.Array" /> of <see cref="T:Microsoft.Build.BuildEngine.Import" /> objects, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,7 +113,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:Microsoft.Build.BuildEngine.ImportCollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the entire <see cref="T:Microsoft.Build.BuildEngine.ImportCollection" /> to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -49,7 +49,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the entire collection to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
       </Docs>

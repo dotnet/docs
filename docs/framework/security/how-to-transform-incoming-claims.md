@@ -3,7 +3,6 @@ title: "How To: Transform Incoming Claims"
 ms.date: "03/30/2017"
 ms.assetid: 2831d514-d9d8-4200-9192-954bb6da1126
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How To: Transform Incoming Claims
 ## Applies To  
@@ -168,4 +167,4 @@ manager: "mbaldwin"
   
     ||||||  
     |-|-|-|-|-|  
-    |LOCAL AUTHORITY|LOCAL AUTHORITY|http://schemas.microsoft.com/ws/2008/06/identity/claims/role|Admin|http://www.w3.org/2001/XMLSchema#string|
+    |LOCAL AUTHORITY|LOCAL AUTHORITY|`http://schemas.microsoft.com/ws/2008/06/identity/claims/role`|Admin|<https://www.w3.org/2001/XMLSchema#string>|

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "ULong data type"
   - "UL literal type characters [Visual Basic]"
 ms.assetid: 017e0702-774e-44ae-bedc-786b424ca84e
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ULong data type (Visual Basic)
 

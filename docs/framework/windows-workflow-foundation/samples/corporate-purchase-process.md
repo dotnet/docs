@@ -4,34 +4,34 @@ ms.date: "03/30/2017"
 ms.assetid: a5e57336-4290-41ea-936d-435593d97055
 ---
 # Corporate Purchase Process
-This sample shows how to create a very basic Request for Proposals (RFP) based purchase process with automatic best proposal selection. It combines <xref:System.Activities.Statements.Parallel>, <xref:System.Activities.Statements.ParallelForEach%601>, and <xref:System.Activities.Statements.ForEach%601> and a custom activity to create a workflow that represents the process.  
-  
- This sample contains an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] client application that allows interacting with the process as different participants (as the original requester or a particular vendor).  
-  
-## Requirements  
-  
--   [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)].  
-  
--   [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)].  
-  
-## Demonstrates  
-  
--   Custom activities.  
-  
--   Composition of activities.  
-  
--   Bookmarks.  
-  
--   Persistence.  
-  
--   Schematized persistence.  
-  
--   Tracing.  
-  
--   Tracking.  
-  
--   Hosting [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in different clients ([!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web applications and WinForms applications).  
-  
+This sample shows how to create a very basic Request for Proposals (RFP) based purchase process with automatic best proposal selection. It combines <xref:System.Activities.Statements.Parallel>, <xref:System.Activities.Statements.ParallelForEach%601>, and <xref:System.Activities.Statements.ForEach%601> and a custom activity to create a workflow that represents the process.
+
+ This sample contains an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] client application that allows interacting with the process as different participants (as the original requester or a particular vendor).
+
+## Requirements
+
+-   Visual Studio 2012.
+
+-   [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)].
+
+## Demonstrates
+
+-   Custom activities.
+
+-   Composition of activities.
+
+-   Bookmarks.
+
+-   Persistence.
+
+-   Schematized persistence.
+
+-   Tracing.
+
+-   Tracking.
+
+-   Hosting [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in different clients ([!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web applications and WinForms applications).
+
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
@@ -137,7 +137,7 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
   
 #### To use this sample  
   
-1.  Using [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)], open the PurchaseProcess.sln solution file.  
+1.  Using Visual Studio 2010, open the PurchaseProcess.sln solution file.  
   
 2.  To execute the Web Client project, open **Solution Explorer** and right-click the **Web Client** project. Select **Set as Startup Project**.  
   

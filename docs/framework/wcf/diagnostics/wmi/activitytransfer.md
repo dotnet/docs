@@ -8,7 +8,7 @@ Activity Transfer Event
   
 ## Syntax  
   
-```  
+```csharp
 class ActivityTransfer : WSAT_TraceEvent  
 {  
   object ActivityID;  

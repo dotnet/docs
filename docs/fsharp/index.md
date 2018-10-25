@@ -50,7 +50,7 @@ The F# guide provides many resources to learn the F# language.
 
 The [F# Snippets Website](http://www.fssnip.net) contains a massive set of code snippets showing how to do just about anything in F#, ranging from absolute beginner to highly advanced snippets.
 
-The [F# Software Foundation Slack](http://fsharp.org/guides/slack/) is a great place for beginners and experts alike, is highly active, and has some of world's best F# programmers available for a chat. We highly recommend joining.
+The [F# Software Foundation Slack](https://fsharp.org/guides/slack/) is a great place for beginners and experts alike, is highly active, and has some of world's best F# programmers available for a chat. We highly recommend joining.
 
 ## The F# Software Foundation
 
@@ -58,4 +58,4 @@ Although Microsoft is the primary developer of the F# language and its tools in 
 
 The mission of the F# Software Foundation is to promote, protect, and advance the F# programming language, and to support and facilitate the growth of a diverse and international community of F# programmers.
 
-To learn more and get involved, check out [fsharp.org](http://fsharp.org). It's free to join, and the network of F# developers in the foundation is something you don't want to miss out on!
+To learn more and get involved, check out [fsharp.org](https://fsharp.org). It's free to join, and the network of F# developers in the foundation is something you don't want to miss out on!

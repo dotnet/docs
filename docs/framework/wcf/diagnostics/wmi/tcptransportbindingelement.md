@@ -8,7 +8,7 @@ TcpTransportBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class TcpTransportBindingElement : ConnectionOrientedTransportBindingElement  
 {  
   TcpConnectionPoolSettings ConnectionPoolSettings;  

@@ -3,7 +3,6 @@ title: "How To: Enable WIF Tracing"
 ms.date: "03/30/2017"
 ms.assetid: 271b6889-3454-46ff-96ab-9feb15e742ee
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How To: Enable WIF Tracing
 ## Applies To  

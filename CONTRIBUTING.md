@@ -8,8 +8,8 @@ Thank you for your interest in contributing to the .NET documentation!
 The document covers the process for contributing to the articles and code samples that are hosted on the [.NET documentation site](https://docs.microsoft.com/dotnet). Contributions may be as simple as typo corrections or as complex as new articles.
 
 * [Process for contributing](#process-for-contributing)
+* [The C# interactive experience](#the-c-interactive-experience)
 * [DOs and DON'Ts](#dos-and-donts)
-* [Building the docs](#building-the-docs)
 * [Contributor License Agreement](#contributor-license-agreement)
 
 This repository contains the conceptual documentation for .NET. The .NET documentation site is built from multiple repositories in addition to this one:
@@ -29,7 +29,7 @@ The content inside the **docs** folder is organized into sections that are refle
 
 -or-
 
-You can also choose from existing issues for which community contributions are welcome. [Projects for .NET Community contributors](https://github.com/dotnet/docs/projects/35) lists many of the work items that are available for commmunity contributors. Depending on your interests and level of commitment, you can choose from issues in the following categories:
+You can also choose from existing issues for which community contributions are welcome. [Projects for .NET Community contributors](https://github.com/dotnet/docs/projects/35) lists many of the work items that are available for community contributors. Depending on your interests and level of commitment, you can choose from issues in the following categories:
 
 - **Maintenance**. This category includes fairly simple contributions, such as fixing broken or incorrect links, adding missing code examples, or addressing limited content issues. In some cases, these issues may concern large numbers of files. In that case, you should let us know what you'd like to work on before you begin.
 

@@ -1,10 +1,10 @@
 ---
 title: "Walkthrough: Binding to Data in Hybrid Applications"
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "hybrid applications [WPF interoperability]"
   - "data binding [WPF interoperability]"
 ms.assetid: 18997e71-745a-4425-9c69-2cbce1d8669e
@@ -35,7 +35,7 @@ Binding a data source to a control is essential for providing users with access 
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   [!INCLUDE[vs_dev10_long](../../../../includes/vs-dev10-long-md.md)].  
+-   Visual Studio.  
   
 -   Access to the Northwind sample database running on Microsoft SQL Server.  
   
@@ -134,34 +134,34 @@ Binding a data source to a control is essential for providing users with access 
      This code declares the <xref:System.Windows.Forms.BindingSource> component and associated helper classes that connect to the database.  
   
      [!code-csharp[WPFWithWFAndDatabinding#11](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#11)]
-     [!code-vb[WPFWithWFAndDatabinding#11](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#11)]  
-  
-3.  Copy the following code into the constructor.  
-  
-     This code creates and initializes the <xref:System.Windows.Forms.BindingSource> component.  
-  
+     [!code-vb[WPFWithWFAndDatabinding#11](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#11)]
+
+3.  Copy the following code into the constructor.
+
+     This code creates and initializes the <xref:System.Windows.Forms.BindingSource> component.
+
      [!code-csharp[WPFWithWFAndDatabinding#12](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#12)]
-     [!code-vb[WPFWithWFAndDatabinding#12](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#12)]  
-  
-4.  Open MainWindow.xaml.  
-  
-5.  In Design view or XAML view, select the <xref:System.Windows.Window> element.  
-  
-6.  In the Properties window, click the **Events** tab.  
-  
-7.  Double-click the <xref:System.Windows.FrameworkElement.Loaded> event.  
-  
-8.  Copy the following code into the <xref:System.Windows.FrameworkElement.Loaded> event handler.  
-  
-     This code assigns the <xref:System.Windows.Forms.BindingSource> component as the data context and populates the `Customers` and `Orders` adapter objects.  
-  
+     [!code-vb[WPFWithWFAndDatabinding#12](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#12)]
+
+4.  Open MainWindow.xaml.
+
+5.  In Design view or XAML view, select the <xref:System.Windows.Window> element.
+
+6.  In the Properties window, click the **Events** tab.
+
+7.  Double-click the <xref:System.Windows.FrameworkElement.Loaded> event.
+
+8.  Copy the following code into the <xref:System.Windows.FrameworkElement.Loaded> event handler.
+
+     This code assigns the <xref:System.Windows.Forms.BindingSource> component as the data context and populates the `Customers` and `Orders` adapter objects.
+
      [!code-csharp[WPFWithWFAndDatabinding#13](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#13)]
-     [!code-vb[WPFWithWFAndDatabinding#13](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#13)]  
-  
-9. Copy the following code into the `MainWindow` class definition.  
-  
-     This method handles the <xref:System.Windows.Data.CollectionView.CurrentChanged> event and updates the current item of the data binding.  
-  
+     [!code-vb[WPFWithWFAndDatabinding#13](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#13)]
+
+9. Copy the following code into the `MainWindow` class definition.
+
+     This method handles the <xref:System.Windows.Data.CollectionView.CurrentChanged> event and updates the current item of the data binding.
+
      [!code-csharp[WPFWithWFAndDatabinding#14](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#14)]
      [!code-vb[WPFWithWFAndDatabinding#14](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#14)]  
   

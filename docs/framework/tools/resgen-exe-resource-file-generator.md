@@ -313,7 +313,7 @@ resgen inputFilename [outputFilename] /str:language[,namespace,[classname[,filen
   
 -   A `static` (C#) or `Shared` (Visual Basic) and read-only `ResourceManager` property, which returns the <xref:System.Resources.ResourceManager> instance that manages the strongly typed resource.  
   
--   A static `Culture` property, which allows you to set the culture used for resource retrieval. By default, its value is `null`, which means that that the current UI culture is used.  
+-   A static `Culture` property, which allows you to set the culture used for resource retrieval. By default, its value is `null`, which means that the current UI culture is used.  
   
 -   One `static` (C#) or `Shared` (Visual Basic) and read-only property for each resource in the .resources file. The name of the property is the name of the resource.-  
   

@@ -52,7 +52,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
 ## Debug
 
-1. Open *Program.cs* by clicking on it. The first time you open a C# file in Visual Studio Code, [OmniSharp](http://www.omnisharp.net/) loads in the editor.
+1. Open *Program.cs* by clicking on it. The first time you open a C# file in Visual Studio Code, [OmniSharp](https://www.omnisharp.net/) loads in the editor.
 
     ![Open the Program.cs file](media/with-visual-studio-code/opencs.png)
 

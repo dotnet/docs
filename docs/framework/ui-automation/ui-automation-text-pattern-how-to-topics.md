@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: ca6ac045-7b21-4487-9379-59aa20909670
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Text Pattern-How-to Topics
 > [!NOTE]

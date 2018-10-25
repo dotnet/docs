@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: 88bc4212-3f4e-4bac-bae0-faef31944b71
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Providers for Managed Code How-to Topics
 > [!NOTE]

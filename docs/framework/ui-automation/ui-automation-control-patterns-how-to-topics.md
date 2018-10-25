@@ -9,7 +9,6 @@ helpviewer_keywords:
 ms.assetid: 72c80262-8ca9-4624-9bd6-96984c5b7c5c
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Control Patterns How-to Topics
 > [!NOTE]

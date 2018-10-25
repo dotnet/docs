@@ -3,7 +3,6 @@ title: "Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5"
 ms.date: "03/30/2017"
 ms.assetid: 7a32fe6e-5f68-4693-9371-19411fa8063c
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5
 ## Applies To  

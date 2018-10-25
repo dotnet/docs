@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: 18e01bab-01f8-4567-b867-88dce9c4a435
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Support for the Group Control Type
 > [!NOTE]

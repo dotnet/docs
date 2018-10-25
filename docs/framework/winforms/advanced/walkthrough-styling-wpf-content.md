@@ -1,30 +1,30 @@
 ---
 title: "Walkthrough: Styling WPF Content"
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "WPF Designer [Windows Forms], styling WPF content"
   - "interoperability [WDF]"
   - "styles [Windows Forms], WPF content"
 ms.assetid: e574aac7-7ea4-4cdb-8034-bab541f000df
 ---
 # Walkthrough: Styling WPF Content
-This walkthrough show you how to apply styling to a Windows Presentation Foundation (WPF) control hosted on a Windows Form.  
-  
- In this walkthrough, you perform the following tasks:  
-  
--   Create the project.  
-  
--   Create the WPF control type.  
-  
--   Apply a style to the WPF control.  
-  
+This walkthrough show you how to apply styling to a Windows Presentation Foundation (WPF) control hosted on a Windows Form.
+
+ In this walkthrough, you perform the following tasks:
+
+-   Create the project.
+
+-   Create the WPF control type.
+
+-   Apply a style to the WPF control.
+
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   [!INCLUDE[vs_dev11_long](../../../../includes/vs-dev11-long-md.md)].  
+-   Visual Studio 2012.  
   
 ## Creating the Project  
  The first step is to create the Windows Forms project.  

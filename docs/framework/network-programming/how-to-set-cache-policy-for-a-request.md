@@ -7,12 +7,9 @@ dev_langs:
 helpviewer_keywords: 
   - "request cache policies"
 ms.assetid: 39c15e40-586b-4ac9-9cce-146f74b7e545
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # How to: Set Cache Policy for a Request
-The following example demonstrates setting a cache policy for a request. The example input is a URI such as http://www.contoso.com/.  
+The following example demonstrates setting a cache policy for a request. The example input is a URI such as `http://www.contoso.com/`.  
   
 ## Example  
  The following code example creates a cache policy that allows the requested resource to be used from the cache if it has not been in the cache for longer than one day. The example displays a message that indicates whether the resource was used from the cache—for example, `"The response was retrieved from the cache : False."`—and then displays the resource. A request can be fulfilled by any cache between the client and server.  

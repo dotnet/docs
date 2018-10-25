@@ -8,7 +8,7 @@ ServiceThrottlingBehavior
   
 ## Syntax  
   
-```  
+```csharp  
 class ServiceThrottlingBehavior : Behavior  
 {  
   sint32 MaxConcurrentCalls;  

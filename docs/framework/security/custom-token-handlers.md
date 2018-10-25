@@ -3,7 +3,6 @@ title: "Custom Token Handlers"
 ms.date: "03/30/2017"
 ms.assetid: 5062669f-8bfc-420a-a25d-d8ab992ab10e
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Custom Token Handlers
 This topic discusses token handlers in WIF and how they are used to process tokens. The topic also covers what is necessary to create custom token handlers for token types that are not supported by default in WIF.  

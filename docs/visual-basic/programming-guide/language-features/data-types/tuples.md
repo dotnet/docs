@@ -4,8 +4,6 @@ ms.date: 04/23/2017
 helpviewer_keywords: 
   - "tuples [Visual Basic]"
 ms.assetid: 3e66cd1b-3432-4e1d-8c37-5ebacae8f53f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Tuples (Visual Basic)
 

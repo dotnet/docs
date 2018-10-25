@@ -3,7 +3,7 @@ title: dotnet new command - .NET Core CLI
 description: The dotnet new command creates new .NET Core projects based on the specified template.
 author: mairaw
 ms.author: mairaw
-ms.date: 07/31/2018
+ms.date: 10/24/2018
 ---
 # dotnet new
 
@@ -59,27 +59,27 @@ The template to instantiate when the command is invoked. Each template might hav
 
 The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK 2.1.300. The default language for the template is shown inside the brackets.
 
-|Template description                          | Template name   | Languages     |
-|----------------------------------------------|-----------------|---------------|
-| Console application                          | `console`       | [C#], F#, VB  |
-| Class library                                | `classlib`      | [C#], F#, VB  |
-| Unit test project                            | `mstest`        | [C#], F#, VB  |
-| xUnit test project                           | `xunit`         | [C#], F#, VB  |
-| Razor page                                   | `page`          | [C#]          |
-| MVC ViewImports                              | `viewimports`   | [C#]          |
-| MVC ViewStart                                | `viewstart`     | [C#]          |
-| ASP.NET Core empty                           | `web`           | [C#], F#      |
-| ASP.NET Core Web App (Model-View-Controller) | `mvc`           | [C#], F#      |
-| ASP.NET Core Web App                         | `razor`         | [C#]          |
-| ASP.NET Core with Angular                    | `angular`       | [C#]          |
-| ASP.NET Core with React.js                   | `react`         | [C#]          |
-| ASP.NET Core with React.js and Redux         | `reactredux`    | [C#]          |
-| ASP.NET Core Web API                         | `webapi`        | [C#], F#      |
-| Razor class library                          | `razorclasslib` | [C#]          |
-| global.json file                             | `globaljson`    |               |
-| NuGet config                                 | `nugetconfig`   |               |
-| Web config                                   | `webconfig`     |               |
-| Solution file                                | `sln`           |               |
+|Template description                          | Template name    | Languages     |
+|----------------------------------------------|------------------|---------------|
+| Console application                          | `console`        | [C#], F#, VB  |
+| Class library                                | `classlib`       | [C#], F#, VB  |
+| Unit test project                            | `mstest`         | [C#], F#, VB  |
+| xUnit test project                           | `xunit`          | [C#], F#, VB  |
+| Razor page                                   | `page`           | [C#]          |
+| MVC ViewImports                              | `viewimports`    | [C#]          |
+| MVC ViewStart                                | `viewstart`      | [C#]          |
+| ASP.NET Core empty                           | `web`            | [C#], F#      |
+| ASP.NET Core Web App (Model-View-Controller) | `mvc`            | [C#], F#      |
+| ASP.NET Core Web App                         | `razor`, `webapp`| [C#]          |
+| ASP.NET Core with Angular                    | `angular`        | [C#]          |
+| ASP.NET Core with React.js                   | `react`          | [C#]          |
+| ASP.NET Core with React.js and Redux         | `reactredux`     | [C#]          |
+| ASP.NET Core Web API                         | `webapi`         | [C#], F#      |
+| Razor class library                          | `razorclasslib`  | [C#]          |
+| global.json file                             | `globaljson`     |               |
+| NuGet config                                 | `nugetconfig`    |               |
+| Web config                                   | `webconfig`      |               |
+| Solution file                                | `sln`            |               |
 
 # [.NET Core 2.0](#tab/netcore20)
 
@@ -222,8 +222,9 @@ Filters templates based on available types. Predefined values are "project", "it
 Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided.
 
 > [!NOTE]
-> To uninstall a template using a `PATH`, you need to fully qualify the path. For example, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not.
-> Additionally, do not include a final terminating directory slash on your template path.
+> To uninstall a template using a source `PATH`, you need to fully qualify the path. For example, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not. Additionally, do not include a final terminating directory slash on your template path.
+> 
+> If you are unable to determine the `PATH` or `NUGET_ID` argument needed to uninstall a template, running `dotnet new --uninstall` without an argument will list all installed templates and the argument required to uninstall them.
 
 # [.NET Core 1.x](#tab/netcore1x)
 

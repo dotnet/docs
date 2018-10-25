@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Assigning WPF Content on Windows Forms at Design Time"
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "WPF content [Windows Forms], assigning at design time"
   - "ElementHost control [Windows Forms], assigning WPF content at design time"
   - "interoperability [WPF]"
@@ -10,23 +10,23 @@ helpviewer_keywords:
 ms.assetid: b3e9ef93-7e0f-4a2f-8f1e-3437609a1eb7
 ---
 # Walkthrough: Assigning WPF Content on Windows Forms at Design Time
-This walkthrough show you how to select the Windows Presentation Foundation (WPF) control types you want to display on your form. You can select any WPF control types which are included in your project.  
-  
- In this walkthrough, you perform the following tasks:  
-  
--   Create the project.  
-  
--   Create the WPF control types.  
-  
--   Select WPF controls.  
-  
+This walkthrough show you how to select the Windows Presentation Foundation (WPF) control types you want to display on your form. You can select any WPF control types which are included in your project.
+
+ In this walkthrough, you perform the following tasks:
+
+-   Create the project.
+
+-   Create the WPF control types.
+
+-   Select WPF controls.
+
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   [!INCLUDE[vs_dev11_long](../../../../includes/vs-dev11-long-md.md)].  
+-   Visual Studio 2012.  
   
 ## Creating the Project  
  The first step is to create the Windows Forms project.  

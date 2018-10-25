@@ -1,6 +1,6 @@
 ---
 title: "What's new for Visual Basic"
-ms.date: 02/15/2018
+ms.date: 10/04/2018
 f1_keywords: 
   - "VB.StartPage.WhatsNew"
 helpviewer_keywords: 
@@ -8,12 +8,10 @@ helpviewer_keywords:
   - "what's new [Visual Basic]"
   - "Visual Basic, what's new"
 ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
-author: rpetrusha
-ms.author: ronpet
 ---
 # What's new for Visual Basic
 
-This topic lists key feature names for each version of Visual Basic, with detailed descriptions of the new and enhanced features in the lastest version of the language.
+This topic lists key feature names for each version of Visual Basic, with detailed descriptions of the new and enhanced features in the latest versions of the language.
   
 ## Current version
 
@@ -63,6 +61,10 @@ For example, the following method call has two positional arguments between a na
 ```vb
 StudentInfo.Display("Mary", age:=19, #9/21/1998#)
 ```
+
+[`Private Protected` member access modifier](../language-reference/modifiers/private-protected.md)
+
+This new keyword combination defines a member that is accessible by all members in its containing class as well as by types derived from the containing class, but only if they are also found in the containing assembly. Because structures cannot be inherited, `Private Protected` can only be applied to the members of a class.
 
 **Leading hex/binary/octal separator**
 
@@ -147,7 +149,7 @@ For more information, see [Reference Return Values](../programming-guide/languag
 [String interpolation](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)  
  You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../../standard/base-types/composite-format.md).  
   
-[Null-conditional member access and indexing](../../csharp/language-reference/operators/null-conditional-operators.md)  
+[Null-conditional member access and indexing](../language-reference/operators/null-conditional-operators.md)  
 You can test for null in a very light syntactic way before performing a member access (`?.`) or index (`?[]`) operation.  These operators help you write less code to handle null checks, especially for descending into data structures.  If the left operand or object reference is null, the operations returns null.  
   
 [Multi-line string literals](../../visual-basic/programming-guide/language-features/strings/string-basics.md)  

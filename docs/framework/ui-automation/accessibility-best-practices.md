@@ -7,7 +7,6 @@ helpviewer_keywords:
 ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # Accessibility Best Practices
 > [!NOTE]
@@ -130,4 +129,4 @@ manager: "markl"
 ## See Also  
  <xref:System.Windows.Automation.Peers>  
  [NumericUpDown Custom Control with Theme and UI Automation Support Sample](https://msdn.microsoft.com/library/9aed3c10-68eb-419e-a57f-1d2af15a8253)  
- [Guidelines for Keyboard User Interface Design](http://msdn2.microsoft.com/library/ms971323.aspx)
+ [Guidelines for Keyboard User Interface Design](https://docs.microsoft.com/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)

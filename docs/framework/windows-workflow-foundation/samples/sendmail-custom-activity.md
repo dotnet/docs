@@ -113,7 +113,7 @@ new SendMail
   
 ##### To run this sample  
   
-1.  Using [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)], open the SendMail.sln solution file.  
+1.  Using Visual Studio 2010, open the SendMail.sln solution file.  
   
 2.  Ensure that you have access to a valid SMTP server. See the set-up instructions.  
   

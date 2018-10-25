@@ -9,7 +9,6 @@ helpviewer_keywords:
 ms.assetid: 5797fcff-6081-4e8c-bebf-63d9c70cf14b
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 
 # Application Settings schema

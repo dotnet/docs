@@ -1,52 +1,42 @@
 ---
 title: Indexed Properties (F#)
-description: Learn about F# indexed properties, which are properties that provide array-like access to ordered data.
-ms.date: 05/16/2016
+description: Learn about indexed properties in F#, which allow for array-like access to ordered data.
+ms.date: 10/17/2018
 ---
 # Indexed Properties
 
-*Indexed properties* are properties that provide array-like access to ordered data. They come in three forms:
-
-* `Item`
-* `Ordinal`
-* `Cardinal`
-
-An F# member must be named one of these three names to provide array-like access. `IndexerName` is used to represent any of the three options below:
+When defining a class that abstracts over ordered data, it can sometimes be helpful to provide indexed access to that data without exposing the underlying implementation. This is done with the `Index` member.
 
 ## Syntax
 
 ```fsharp
 // Indexed property that has both get and set defined.
-member self-identifier.IndexerName
-    with get(index-variable) =
-        get-function-body
-    and set index-variablesvalue-variables =
-        set-function-body
+member self-identifier.Index
+    with get(index-values) =
+        get-member-body
+    and set index-values values-to-set =
+        set-member-body
 
-// Indexed property that has get only.
-member self-identifier.IndexerName(index-variable) =
-    get-function-body
-
-// Alternative syntax for indexed property with get only
-member self-identifier.IndexerName
-    with get(index-variables) =
-        get-function-body
+// Indexed property with get only
+member self-identifier.Index
+    with get(index-values) =
+        get-member-body
 
 // Indexed property that has set only.
-member self-identifier.IndexerName
-    with set index-variablesvalue-variables = 
-        set-function-body
+member self-identifier.Index
+    with set index-values values-to-set =
+        set-member-body
 ```
 
 ## Remarks
 
 The forms of the previous syntax show how to define indexed properties that have both a `get` and a `set` method, have a `get` method only, or have a `set` method only. You can also combine both the syntax shown for get only and the syntax shown for set only, and produce a property that has both get and set. This latter form allows you to put different accessibility modifiers and attributes on the get and set methods.
 
-When the *IndexerName* is `Item`, the compiler treats the property as a default indexed property. A *default indexed property* is a property that you can access by using array-like syntax on the object instance. For example, if `obj` is an object of the type that defines this property, the syntax `obj.[index]` is used to access the property.
+By using the name `Item`, the compiler treats the property as a default indexed property. A *default indexed property* is a property that you can access by using array-like syntax on the object instance. For example, if `o` is an object of the type that defines this property, the syntax `o.[index]` is used to access the property.
 
-The syntax for accessing a nondefault indexed property is to provide the name of the property and the index in parentheses. For example, if the property is `Ordinal`, you write `obj.Ordinal(index)` to access it.
+The syntax for accessing a non-default indexed property is to provide the name of the property and the index in parentheses, just like a regular member. For example, if the property on `o` is called `Ordinal`, you write `o.Ordinal(index)` to access it.
 
-Regardless of which form you use, you should always use the curried form for the `set` method on an indexed property. For information about curried functions, see [Functions](../functions/index.md).
+Regardless of which form you use, you should always use the curried form for the set method on an indexed property. For information about curried functions, see [Functions](../functions/index.md).
 
 ## Example
 
@@ -56,7 +46,7 @@ The following code example illustrates the definition and use of default and non
 
 ## Output
 
-```
+```console
 ONE two three four five six seven eight nine ten
 ONE first two second three third four fourth five fifth six 6th
 seven seventh eight eighth nine ninth ten tenth

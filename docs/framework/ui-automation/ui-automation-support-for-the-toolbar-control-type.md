@@ -8,7 +8,6 @@ helpviewer_keywords:
 ms.assetid: 85152efd-f4c5-430c-8878-3371cc598616
 author: "Xansky"
 ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Support for the ToolBar Control Type
 > [!NOTE]

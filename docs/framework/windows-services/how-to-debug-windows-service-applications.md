@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "services, debugging"
 ms.assetid: 63ab0800-0f05-4f1e-88e6-94c73fd920a2
 author: "ghogen"
-manager: "douge"
 ---
 # How to: Debug Windows Service Applications
 A service must be run from within the context of the Services Control Manager rather than from within Visual Studio. For this reason, debugging a service is not as straightforward as debugging other Visual Studio application types. To debug a service, you must start the service and then attach a debugger to the process in which it is running. You can then debug your application by using all of the standard debugging functionality of Visual Studio.  

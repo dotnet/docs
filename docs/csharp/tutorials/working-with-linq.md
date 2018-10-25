@@ -83,6 +83,14 @@ static IEnumerable<string> Ranks()
 
 These two methods both utilize the `yield return` syntax to produce a sequence as they run. The compiler builds an object that implements `IEnumerable<T>` and generates the sequence of strings as they are requested.
 
+For this to compile you’ll need to add the following two lines to the top of the file:
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+```
+
 Go ahead and run the sample you've built at this point. It will display all 52 cards in the deck. You may find it very helpful to run this sample under a debugger to observe how the `Suits()` and `Values()` methods execute. You can clearly see that each string in each sequence is generated only as it is needed.
 
 ![Console window showing the app writing out 52 cards](./media/working-with-linq/console.png)

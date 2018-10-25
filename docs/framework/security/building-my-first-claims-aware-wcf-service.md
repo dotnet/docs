@@ -3,7 +3,6 @@ title: "Building My First Claims-Aware WCF Service"
 ms.date: "03/30/2017"
 ms.assetid: e0e6d091-9a97-4888-8f2c-cbcee42d90ee
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Building My First Claims-Aware WCF Service
 ## Applies To  

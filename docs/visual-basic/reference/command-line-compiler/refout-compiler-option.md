@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "refout compiler option [Visual Basic]"
   - "/refout compiler option [Visual Basic]"
   - "-refout compiler option [Visual Basic]"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # -refout (Visual Basic)

@@ -33,7 +33,7 @@ Only single inheritance is allowed in C#. In other words, a class can inherit im
 
 Classes that you declare directly within a namespace, not nested within other classes, can be either [public](../../../csharp/language-reference/keywords/public.md) or [internal](../../../csharp/language-reference/keywords/internal.md). Classes are `internal` by default.
 
-Class members, including nested classes, can be [public](../../../csharp/language-reference/keywords/public.md), `protected internal`, [protected](../../../csharp/language-reference/keywords/protected.md), [internal](../../../csharp/language-reference/keywords/internal.md), [private](../../../csharp/language-reference/keywords/private.md), or `private protected`. Members are [private](../../../csharp/language-reference/keywords/private.md) by default.
+Class members, including nested classes, can be [public](public.md), [protected internal](protected-internal.md), [protected](protected.md), [internal](internal.md), [private](private.md), or [private protected](private-protected.md). Members are `private` by default.
 
 For more information, see [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md).
 

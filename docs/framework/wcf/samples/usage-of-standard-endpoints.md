@@ -104,7 +104,7 @@ In the `CreateServiceEndpoint` function, a `CustomEndpoint` object is created. I
 ```csharp
 public class CustomEndpoint : ServiceEndpoint
 {
-    public CustomEndpoint() 
+    public CustomEndpoint()
         : this(string.Empty)
     {
     }
@@ -133,7 +133,7 @@ public class CustomEndpoint : ServiceEndpoint
 
 #### To use this sample
 
-1.  Using [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)], open the StandardEndpoints.sln file.
+1.  Using Visual Studio 2012, open the StandardEndpoints.sln file.
 
 2.  Enable multiple projects to start up.
 

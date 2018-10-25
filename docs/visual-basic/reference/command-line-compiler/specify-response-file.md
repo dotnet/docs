@@ -4,8 +4,6 @@ ms.date: 03/13/2018
 helpviewer_keywords: 
   - "@ (Specify Response File) compiler option [Visual Basic]"
 ms.assetid: a6847eaa-e5f9-4303-9421-45b55484b9ca
-author: rpetrusha
-ms.author: ronpet
 ---
 # @ (Specify Response File) (Visual Basic)
 Specifies a file that contains compiler options and source-code files to compile.  

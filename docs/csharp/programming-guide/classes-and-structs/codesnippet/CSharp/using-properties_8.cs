@@ -21,7 +21,7 @@
             public Employee()
             {
                 // Calculate the employee's number:
-                counter = ++counter + NumberOfEmployees;
+                counter = ++NumberOfEmployees;
             }
         }
 

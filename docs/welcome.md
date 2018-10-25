@@ -5,8 +5,6 @@ author: mairaw
 ms.author: mairaw
 ms.date: 09/07/2018
 ms.topic: article
-ms.prod: dotnet
-ms.devlang: dotnet
 ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET

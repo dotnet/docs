@@ -14,7 +14,7 @@ The topics in this section cover the Routing Service. The Routing Service is a g
  [Routing Service](../../../../docs/framework/wcf/feature-details/routing-service.md)  
  Provides an overview of the features of the Routing Service.  
   
- [Routing Service](https://msdn.microsoft.com/library/5ac8718c-bcef-456f-bfd5-1e60a30d6eaa)  
+ [Routing Service](../../../../docs/framework/wcf/feature-details/routing-service.md)  
  Describes the features of the Routing Service.  
   
  [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md)  

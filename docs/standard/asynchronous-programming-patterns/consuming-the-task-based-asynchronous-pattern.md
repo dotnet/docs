@@ -738,7 +738,7 @@ private async void btnDownload_Click(object sender, RoutedEventArgs e)
     btnDownload.IsEnabled = false;
     try
     {
-        txtContents.Text = await m_webPages["http://www.microsoft.com"];
+        txtContents.Text = await m_webPages["https://www.microsoft.com"];
     }
     finally { btnDownload.IsEnabled = true; }
 }

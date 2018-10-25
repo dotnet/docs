@@ -17,10 +17,7 @@ Workflow services must be hosted to execute. The <xref:System.ServiceModel.Workf
  Describes how to extend the functionality of the workflow service host.  
   
  [Workflow Control Endpoint](../../../../docs/framework/wcf/feature-details/workflow-control-endpoint.md)  
- Describes how to define an endpoint that allows you to create workflow instances.  
-  
- [How to: Host a non-service workflow in IIS](../../../../docs/framework/wcf/feature-details/how-to-host-a-non-service-workflow-in-iis.md)  
- Demonstrates hosting a workflow that is not a workflow service in IIS.  
+ Describes how to define an endpoint that allows you to create workflow instances.
   
  [How to: Host a Workflow Service with Windows Server App Fabric](../../../../docs/framework/wcf/feature-details/how-to-host-a-workflow-service-with-windows-server-app-fabric.md)  
  Demonstrates how to host an existing workflow service in Windows Server App Fabric.  

@@ -8,13 +8,7 @@ This section contains samples that demonstrate how to create custom activities i
   
 ## In This Section  
  [Code-Bodied](../../../../docs/framework/windows-workflow-foundation/samples/code-bodied.md)  
- Contains custom activity samples created declaratively in code.  
-  
- [Composite](../../../../docs/framework/windows-workflow-foundation/samples/composite.md)  
- Contains custom activity samples composed of other activities.  
+ Contains custom activity samples created declaratively in code.
   
  [Custom Activity Designers](../../../../docs/framework/windows-workflow-foundation/samples/custom-activity-designers.md)  
- Contains activity samples that use custom designers for display in the workflow designer.  
-  
- [Validation](../../../../docs/framework/windows-workflow-foundation/samples/validation.md)  
- Contains samples that demonstrate design-time activity validation.
+ Contains activity samples that use custom designers for display in the workflow designer.

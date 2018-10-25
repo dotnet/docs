@@ -7,8 +7,6 @@ dev_langs:
 helpviewer_keywords: 
   - "WCF, security"
 ms.assetid: d171b5ca-96ef-47ff-800c-c138023cf76e
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How to: Secure a Service with Windows Credentials
 This topic shows how to enable transport security on a Windows Communication Foundation (WCF) service that resides in a Windows domain and is called by clients in the same domain. For more information about this scenario, see [Transport Security with Windows Authentication](../../../docs/framework/wcf/feature-details/transport-security-with-windows-authentication.md). For a sample application, see the [WSHttpBinding](../../../docs/framework/wcf/samples/wshttpbinding.md) sample.  
@@ -50,7 +48,7 @@ This topic shows how to enable transport security on a Windows Communication Fou
   
 3.  Create a second `Type` variable named `serviceType` and assign it the type of the implemented contract (`Calculator`).  
   
-4.  Create an instance of the <xref:System.Uri> class named `baseAddress` with the base address of the service. The base address must have a scheme that matches the transport. In this case, the transport scheme is HTTP, and the address includes the special Uniform Resource Identifier (URI) "localhost" and a port number (8036) as well as a base endpoint address ("serviceModelSamples/): http://localhost:8036/serviceModelSamples/.  
+4.  Create an instance of the <xref:System.Uri> class named `baseAddress` with the base address of the service. The base address must have a scheme that matches the transport. In this case, the transport scheme is HTTP, and the address includes the special Uniform Resource Identifier (URI) "localhost" and a port number (8036) as well as a base endpoint address ("serviceModelSamples/): `http://localhost:8036/serviceModelSamples/`.  
   
 5.  Create an instance of the <xref:System.ServiceModel.ServiceHost> class with the `serviceType` and `baseAddress` variables.  
   

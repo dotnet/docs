@@ -14,7 +14,7 @@ The `unsafe` keyword denotes an unsafe context, which is required for any operat
  You can use the `unsafe` modifier in the declaration of a type or a member. The entire textual extent of the type or member is therefore considered an unsafe context. For example, the following is a method declared with the `unsafe` modifier:  
   
 ```csharp  
-      unsafe static void FastCopy(byte[] src, byte[] dst, int count)  
+unsafe static void FastCopy(byte[] src, byte[] dst, int count)  
 {  
     // Unsafe context: can use pointers here.  
 }  
@@ -29,7 +29,7 @@ unsafe static void FastCopy ( byte* ps, byte* pd, int count ) {...}
  You can also use an unsafe block to enable the use of an unsafe code inside this block. For example:  
   
 ```csharp  
-      unsafe  
+unsafe  
 {  
     // Unsafe context: can use pointers here.  
 }  

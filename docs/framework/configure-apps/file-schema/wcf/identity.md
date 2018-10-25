@@ -17,7 +17,7 @@ The identity element allows a client developer to specify at design time the exp
     <certificate encodedValue="String"/>  
     <certificateReference findValue="String"   
        isChainIncluded="Boolean"  
-       storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"storeName="  
+       storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  
        storeLocation="LocalMachine/CurrentUser"  
        X509FindType= Enumeration./>  
     <dns value="String"/>  

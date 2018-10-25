@@ -34,32 +34,30 @@ A channel factory creates channels.
   
  The override of <xref:System.ServiceModel.Channels.CommunicationObject.OnOpen%2A> creates a socket that is used to send messages to this <xref:System.Net.EndPoint>.  
   
- `this.socket = new Socket(`  
-  
- `this.remoteEndPoint.AddressFamily,`  
-  
- `SocketType.Dgram,`  
-  
- `ProtocolType.Udp`  
-  
- `);`  
-  
+ ```csharp 
+this.socket = new Socket(  
+this.remoteEndPoint.AddressFamily,
+   SocketType.Dgram,
+   ProtocolType.Udp
+);  
+```  
+
  The channel can be closed gracefully or ungracefully. If the channel is closed gracefully the socket is closed and a call is made to the base class `OnClose` method. If this throws an exception, the infrastructure calls `Abort` to ensure the channel is cleaned up.  
   
-```  
+```csharp  
 this.socket.Close();  
 base.OnClose(timeout);  
 ```  
   
  Implement `Send()` and `BeginSend()`/`EndSend()`. This breaks down into two main sections. First serialize the message into a byte array:  
   
-```  
+```csharp  
 ArraySegment<byte> messageBuffer = EncodeMessage(message);  
 ```  
   
  Then send the resulting data on the wire:  
   
-```  
+```csharp  
 this.socket.SendTo(  
   messageBuffer.Array,   
   messageBuffer.Offset,   

@@ -33,7 +33,7 @@ The concepts of a cluster and a scheduler are closely related, so the products p
 
 ### Kubernetes
 
-![Kubernetes Logo](./media/image24.png)
+![Kubernetes logo](./media/image24.png)
 
 > [*Kubernetes*](https://kubernetes.io/) is an open-source product that provides functionality that ranges from cluster infrastructure and container scheduling to orchestrating capabilities. It lets you automate deployment, scaling, and operations of application containers across clusters of hosts.
 >
@@ -43,13 +43,13 @@ The concepts of a cluster and a scheduler are closely related, so the products p
 
 ### Azure Kubernetes Service (AKS)
 
-![Azure Kubernetes Service Logo](./media/image41.png)
+![Azure Kubernetes Service logo](./media/image41.png)
 
 > [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/) is a managed Kubernetes container orchestration service in Azure that simplifies Kubernetes cluster’s management, deployment, and operations.
 
 ### Azure Service Fabric
 
-![Azure Service Fabric Logo](./media/image27.png)
+![Azure Service Fabric logo](./media/image27.png)
 
 > [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) is a Microsoft microservices platform for building applications. It is an [orchestrator](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-resource-manager-introduction) of services and creates clusters of machines. Service Fabric can deploy services as containers or as plain processes. It can even mix services in processes with services in containers within the same application and cluster.
 >
@@ -63,7 +63,7 @@ The concepts of a cluster and a scheduler are closely related, so the products p
 
 ### Azure Service Fabric Mesh
 
-![Azure Service Fabric Mesh Logo](./media/image35.png)
+![Azure Service Fabric Mesh logo](./media/image35.png)
 
 > [*Azure Service Fabric Mesh*](https://docs.microsoft.com/en-us/azure/service-fabric-mesh/service-fabric-mesh-overview) offers the same reliability, mission-critical performance and scale than Service Fabric, but offering a fully managed and serverless platform. You don't need to manage a cluster, VMs, storage or networking configuration. You just focus on your application's development.
 >

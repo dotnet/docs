@@ -1,40 +1,46 @@
 ---
 title: "+= Operator (C# Reference)"
-ms.date: 07/20/2015
+ms.date: 10/22/2018
 f1_keywords: 
   - "+=_CSharpKeyword"
 helpviewer_keywords: 
   - "+= operator [C#]"
   - "addition assignment operator (+=) [C#]"
+  - "event subscription [C#]"
 ms.assetid: 9cdf97e6-331d-492b-85e1-3ec3171484e9
 ---
 # += Operator (C# Reference)
-The addition assignment operator.  
-  
-## Remarks  
- An expression using the `+=` assignment operator, such as  
-  
-```csharp  
-x += y  
-```  
-  
- is equivalent to  
-  
-```csharp  
-x = x + y  
-```  
-  
- except that `x` is only evaluated once. The meaning of the [+ operator](../../../csharp/language-reference/operators/addition-operator.md) depends on the types of `x` and `y` (addition for numeric operands, concatenation for string operands, and so forth).  
-  
- The `+=` operator cannot be overloaded directly, but user-defined types can overload the [+ operator](../../../csharp/language-reference/operators/addition-operator.md) (see [operator](../../../csharp/language-reference/keywords/operator.md)).  
-  
- The `+=` operator is also used to specify a method that will be called in response to an event; such methods are called event handlers. The use of the `+=` operator in this context is referred to as *subscribing to an event*. For more information, see [How to: Subscribe to and Unsubscribe from Events](../../../csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md) and [Delegates](../../../csharp/programming-guide/delegates/index.md).  
-  
-## Example  
- [!code-csharp[csRefOperators#35](../../../csharp/language-reference/operators/codesnippet/CSharp/addition-assignment-operator_1.cs)]  
-  
-## See Also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [C# Operators](../../../csharp/language-reference/operators/index.md)
+The addition assignment operator.
+
+An expression using the `+=` operator, such as  
+
+```csharp
+x += y
+```  
+
+is equivalent to  
+
+```csharp
+x = x + y
+```  
+
+except that `x` is only evaluated once.
+  
+For numeric types, the [addition operator](addition-operator.md) `+` computes the sum of its operands. If one or both operands is of type [string](../keywords/string.md), it concatenates the string representations of its operands. For delegate types, the `+` operator returns a new delegate instance that is combination of its operands.
+
+If a user-defined type [overloads](../keywords/operator.md) the [addition operator](addition-operator.md) `+`, the addition assignment operator `+=` is implicitly overloaded.
+
+You also use the `+=` operator to specify an event handler method when you subscribe to an [event](../keywords/event.md). For more information, see [How to: Subscribe to and Unsubscribe from Events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
+
+The following example demonstrates the usage of the `+=` operator:
+
+[!code-csharp-interactive[+= examples](~/samples/snippets/csharp/language-reference/operators/AdditionExamples.cs#AddAndAssign)]
+  
+## See also
+
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Operators](index.md)
+- [Events](../../programming-guide/events/index.md)
+- [Delegates](../../programming-guide/delegates/index.md)

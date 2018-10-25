@@ -22,7 +22,7 @@ A discovery find operation is initiated by a client to discover one or more serv
   
     -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByExact?displayProperty=nameWithType> does a basic case-sensitive string comparison.  
   
-    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix?displayProperty=nameWithType> matches by segments separated by "/". A search for http://contoso/building1 matches a service with scope http://contoso/building/floor1. Note that it does not match http://contoso/building100 because the last two segments do not match.  
+    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix?displayProperty=nameWithType> matches by segments separated by "/". A search for `http://contoso/building1` matches a service with scope `http://contoso/building/floor1`. Note that it does not match `http://contoso/building100` because the last two segments do not match.  
   
     -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByLdap?displayProperty=nameWithType> matches scopes by segments using an LDAP URL.  
   
@@ -62,5 +62,4 @@ Console.WriteLine("Found {0} ICalculatorService endpoint(s).", findResponse.Endp
  [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)  
  [Using the Discovery Client Channel](../../../../docs/framework/wcf/feature-details/using-the-discovery-client-channel.md)  
  [Discovery with Scopes](../../../../docs/framework/wcf/samples/discovery-with-scopes-sample.md)  
- [Asynchronous Find](../../../../docs/framework/wcf/samples/asynchronous-find-sample.md)  
  [Basic](../../../../docs/framework/wcf/samples/basic-sample.md)

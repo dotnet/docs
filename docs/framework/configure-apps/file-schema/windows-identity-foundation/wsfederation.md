@@ -3,7 +3,6 @@ title: "&lt;wsFederation&gt;"
 ms.date: "03/30/2017"
 ms.assetid: c537f770-68bd-4f82-96ad-6424ad91369f
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;wsFederation&gt;
 Provides configuration for the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM).  

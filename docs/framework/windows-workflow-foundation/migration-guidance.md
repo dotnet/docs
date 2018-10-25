@@ -10,7 +10,7 @@ In the [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], Microso
   
 -   WF3 applications run on the [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] without modification and continue to be fully supported.  
   
--   New WF3 applications can be created and your existing applications can be edited in [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)] and are fully supported.  
+-   New WF3 applications can be created and your existing applications can be edited in Visual Studio 2012 and are fully supported.  
   
  Thus, the decision to adopt the .NET Framework 4 is decoupled from your decision to move to WF4 (System.Activities.*) from WF3 (System.Workflow.\*). This topic provides links to WF migration guidance that provides information about working with WF3 and WF4.  
   

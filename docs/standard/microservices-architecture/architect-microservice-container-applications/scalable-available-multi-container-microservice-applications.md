@@ -1,6 +1,6 @@
 ---
 title: Orchestrating microservices and multi-container applications for high scalability and availability
-description: .NET Microservices Architecture for Containerized .NET Applications | Get to know the options to orchestrate microservices and multi-container applications for high scalability and availability. Discover the possibilities of Azure Dev Spaces while developing Kubernetes application lifecycle.
+description: Discover the options to orchestrate microservices and multi-container applications for high scalability and availability and the possibilities of Azure Dev Spaces while developing Kubernetes application lifecycle.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
@@ -21,9 +21,9 @@ The plain Docker Engine in single Docker hosts meets the needs of managing singl
 
 To go beyond the management of individual containers or very simple composed apps and move toward larger enterprise applications with microservices, you must turn to orchestration and clustering platforms.
 
-From an architecture and development point of view, if you are building large enterprise composed of microservices-based applications, it is important to understand the following platforms and products that support advanced scenarios:
+From an architecture and development point of view, if you're building large enterprise composed of microservices-based applications, it's important to understand the following platforms and products that support advanced scenarios:
 
-**Clusters and orchestrators.** When you need to scale out applications across many Docker hosts, as when a large microservice-based application, it is critical to be able to manage all those hosts as a single cluster by abstracting the complexity of the underlying platform. That is what the container clusters and orchestrators provide. Examples of orchestrators are Azure Service Fabric and Kubernetes. Kubernetes is available in Azure through Azure Kubernetes Service.
+**Clusters and orchestrators.** When you need to scale out applications across many Docker hosts, as when a large microservice-based application, it's critical to be able to manage all those hosts as a single cluster by abstracting the complexity of the underlying platform. That is what the container clusters and orchestrators provide. Examples of orchestrators are Azure Service Fabric and Kubernetes. Kubernetes is available in Azure through Azure Kubernetes Service.
 
 **Schedulers.** *Scheduling* means to have the capability for an administrator to launch containers in a cluster so they also provide a UI. A cluster scheduler has several responsibilities: to use the cluster's resources efficiently, to set the constraints provided by the user, to efficiently load-balance containers across nodes or hosts, and to be robust against errors while providing high availability.
 
@@ -55,7 +55,7 @@ The concepts of a cluster and a scheduler are closely related, so the products p
 >
 > *Service Fabric* clusters can be deployed in Azure, on-premises or in any cloud. However, deployment in Azure is simplified with a managed approach.
 >
-> *Service Fabric* provides additional and optional prescriptive [Service Fabric programming models](https://azure.microsoft.com/documentation/articles/service-fabric-choose-framework/) like [stateful services](https://azure.microsoft.com/documentation/articles/service-fabric-reliable-services-introduction/) and [Reliable Actors](https://azure.microsoft.com/documentation/articles/service-fabric-reliable-actors-introduction/).
+> *Service Fabric* provides additional and optional prescriptive [Service Fabric programming models](https://docs.microsoft.com/azure/service-fabric/service-fabric-choose-framework) like [stateful services](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction) and [Reliable Actors](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-actors-introduction).
 >
 > *Service Fabric* is mature in Windows (years evolving in Windows), less mature in Linux.
 >
@@ -65,10 +65,9 @@ The concepts of a cluster and a scheduler are closely related, so the products p
 
 ![Azure Service Fabric Mesh logo](./media/image35.png)
 
-> [*Azure Service Fabric Mesh*](https://docs.microsoft.com/en-us/azure/service-fabric-mesh/service-fabric-mesh-overview) offers the same reliability, mission-critical performance and scale than Service Fabric, but offering a fully managed and serverless platform. You don't need to manage a cluster, VMs, storage or networking configuration. You just focus on your application's development.
+> [*Azure Service Fabric Mesh*](https://docs.microsoft.com/azure/service-fabric-mesh/service-fabric-mesh-overview) offers the same reliability, mission-critical performance and scale than Service Fabric, but offering a fully managed and serverless platform. You don't need to manage a cluster, VMs, storage or networking configuration. You just focus on your application's development.
 >
 > *Service Fabric Mesh* supports both Windows and Linux containers allowing you to develop with any programming language and framework of your choice.
-
 
 ## Using container-based orchestrators in Microsoft Azure
 
@@ -90,7 +89,7 @@ If figure 4-24 you can see the structure of a Kubernetes cluster where a master 
 
 ## Development environment for Kubernetes
 
-In the development environment, [Docker announced in July 2018](https://blog.docker.com/2018/07/kubernetes-is-now-available-in-docker-desktop-stable-channel/), Kubernetes can also run in a single development machine (Windows 10 or macOS) by simply installing [Docker Desktop](https://www.docker.com/community-edition). You can later deploy to the cloud (AKS) for further integration tests, as shown in figure 4-25.
+In the development environment, [Docker announced in July 2018](https://blog.docker.com/2018/07/kubernetes-is-now-available-in-docker-desktop-stable-channel/) that Kubernetes can also run in a single development machine (Windows 10 or macOS) by simply installing [Docker Desktop](https://docs.docker.com/install/). You can later deploy to the cloud (AKS) for further integration tests, as shown in figure 4-25.
 
 ![Docker announced dev machine support for Kubernetes clusters on July'2018 with Docker Desktop.](media/image37.png) 
 
@@ -100,13 +99,13 @@ In the development environment, [Docker announced in July 2018](https://blog.doc
 
 To begin using AKS, you deploy an AKS cluster from the Azure portal or by using th CLI. For more information on deploying an Azure Container Service cluster, see [Deploy an Azure Kubernetes Service (AKS) cluster](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal).
 
-There are no fees for any of the software installed by default as part of AKS. All default options are implemented with open-source software. AKS is available for multiple virtual machines in Azure. You are charged only for the compute instances you choose, as well as the other underlying infrastructure resources consumed, such as storage and networking. There are no incremental charges for AKS itself. 
+There are no fees for any of the software installed by default as part of AKS. All default options are implemented with open-source software. AKS is available for multiple virtual machines in Azure. You are charged only for the compute instances you choose, as well as the other underlying infrastructure resources consumed, such as storage and networking. There are no incremental charges for AKS itself.
 
 For further implementation information on deployment to Kubernetes based on kubectl and original .yaml files, check the post on [Setting eShopOnContainers up in AKS (Azure Kubernetes Service)](https://github.com/dotnet-architecture/eShopOnContainers/wiki/10.-Setting-the-solution-up-in-AKS-(Azure-Kubernetes-Service)).
 
 ## Deploying with Helm charts into Kubernetes clusters
 
-When deploying an application to a Kuberentes cluster, you can use the original kubectl.exe CLI tool using deployment files based on the native format (.yaml files), as already mentioned in the previous section. However, for more complex Kuberentes applications such as when deploying complex microservice-based applications, it is recommended to use [Helm](https://helm.sh/).
+When deploying an application to a Kubernetes cluster, you can use the original kubectl.exe CLI tool using deployment files based on the native format (.yaml files), as already mentioned in the previous section. However, for more complex Kubernetes applications such as when deploying complex microservice-based applications, it's recommended to use [Helm](https://helm.sh/).
 
 Helm Charts helps you define, version, install, share, upgrade or rollback even the most complex Kubernetes application.
 
@@ -116,13 +115,13 @@ Helm is maintained by the [Cloud Native Computing Foundation (CNCF)](https://www
 
 For further implementation information on Helm charts and Kubernetes check the post on [Using Helm Charts to deploy eShopOnContainers to AKS](https://github.com/dotnet-architecture/eShopOnContainers/wiki/10.1-Deploying-to-AKS-using-Helm-Charts).
 
-## Use Azure Dev Spaces for your Kuberentes application lifecycle
+## Use Azure Dev Spaces for your Kubernetes application lifecycle
 
 [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces) provides a rapid, iterative Kubernetes development experience for teams. With minimal dev machine setup, you can iteratively run and debug containers directly in Azure Kubernetes Service (AKS). Develop on Windows, Mac, or Linux using familiar tools like Visual Studio, Visual Studio Code, or the command line.
 
-As mentioned, Azure Dev Spaces use Helm charts when deploying the container-based applications.
+As mentioned, Azure Dev Spaces uses Helm charts when deploying the container-based applications.
 
-Azure Dev Spaces helps development teams be more productive on Kubernetes because it allows you to rapidly iterate and debug code directly in a global Kubernetes cluster in Azure by simply using Visual Studio 2017 or Visual Studio Code. That Kuberentes cluster in Azure is a shared managed Kubernetes cluster, so your team can collaboratively work together. You can develop your code in isolation, then deploy to the global cluster and do end-to-end testing with other components without replicating or mocking up dependencies.
+Azure Dev Spaces helps development teams be more productive on Kubernetes because it allows you to rapidly iterate and debug code directly in a global Kubernetes cluster in Azure by simply using Visual Studio 2017 or Visual Studio Code. That Kubernetes cluster in Azure is a shared managed Kubernetes cluster, so your team can collaboratively work together. You can develop your code in isolation, then deploy to the global cluster and do end-to-end testing with other components without replicating or mocking up dependencies.
 
 As shown in figure 4-26, the most differential feature in Azure Dev Spaces is capability of creating 'spaces' that can run integrated to the rest of the global deployment in the cluster.
 
@@ -140,14 +139,14 @@ For further information check the article on [Team Development with Azure Dev Sp
 
 ## Additional resources
 
--   **Getting started with Azure Kubernetes Service (AKS)** <br/>
-    [*https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal*](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal)
+- **Getting started with Azure Kubernetes Service (AKS)** <br/>
+  [*https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal*](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal)
 
--   **Azure Dev Spaces** <br/>
-    [*https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces*](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces)
+- **Azure Dev Spaces** <br/>
+  [*https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces*](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces)
 
--   **Kubernetes** The official site. <br/>
-    [*https://kubernetes.io/*](https://kubernetes.io/)
+- **Kubernetes** The official site. <br/>
+  [*https://kubernetes.io/*](https://kubernetes.io/)
 
 >[!div class="step-by-step"]
 [Previous](resilient-high-availability-microservices.md)

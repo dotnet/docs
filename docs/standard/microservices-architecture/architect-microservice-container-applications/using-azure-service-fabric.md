@@ -1,27 +1,27 @@
 ---
 title: Using Azure Service Fabric
-description: .NET Microservices Architecture for Containerized .NET Applications | Understand what Azure Service Fabric application models you can use besides just using it for orchestrating containers.
+description: Understand what Azure Service Fabric application models you can use besides just using it for orchestrating containers.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
 ---
 # Using Azure Service Fabric
 
-Azure Service Fabric arose from Microsoft's transition from delivering box products, which were typically monolithic in style, to delivering services. The experience of building and operating large services at scale, such as Azure SQL Database, Azure Cosmos DB, Azure Service Bus, or Cortana's Backend, shaped Service Fabric. The platform evolved over time as more and more services adopted it. Importantly, Service Fabric had to run not only in Azure but also in standalone Windows Server deployments.
+Azure Service Fabric arose from Microsoft's transition from delivering box products, which were typically monolithic in style, to delivering services. The experience of building and operating large services at scale, such as Azure SQL Database, Azure Cosmos DB, Azure Service Bus, or Cortana's back end, shaped Service Fabric. The platform evolved over time as more and more services adopted it. Importantly, Service Fabric had to run not only in Azure but also in standalone Windows Server deployments.
 
 The aim of Service Fabric is to solve the hard problems of building and running a service and utilizing infrastructure resources efficiently, so that teams can solve business problems using a microservices approach.
 
 Service Fabric provides two broad areas to help you build applications that use a microservices approach:
 
--   A platform that provides system services to deploy, scale, upgrade, detect, and restart failed services, discover service location, manage state, and monitor health. These system services in effect enable many of the characteristics of microservices described previously.
+- A platform that provides system services to deploy, scale, upgrade, detect, and restart failed services, discover service location, manage state, and monitor health. These system services in effect enable many of the characteristics of microservices described previously.
 
--   Programming APIs, or frameworks, to help you build applications as microservices: [reliable actors and reliable services](https://docs.microsoft.com/azure/service-fabric/service-fabric-choose-framework). Of course, you can choose any code to build your microservice, but these APIs make the job more straightforward, and they integrate with the platform at a deeper level. This way you can get health and diagnostics information, or you can take advantage of reliable state management.
+- Programming APIs or frameworks to help you build applications as microservices: [reliable actors and reliable services](https://docs.microsoft.com/azure/service-fabric/service-fabric-choose-framework). You can choose any code to build your microservice, but these APIs make the job more straightforward, and they integrate with the platform at a deeper level. This way you can get health and diagnostics information, or you can take advantage of reliable state management.
 
 Service Fabric is agnostic with respect to how you build your service, and you can use any technology. However, it provides built-in programming APIs that make it easier to build microservices.
 
 As shown in Figure 4-27, you can create and run microservices in Service Fabric either as simple processes or as Docker containers. It is also possible to mix container-based microservices with process-based microservices within the same Service Fabric cluster.
 
-![Comparison of Azure service Fabric clusters: Microservices as processes where each node runs one process for each microservice; Microservices as containers where each node runs Docker with several containers, one container per micrservice.](./media/image30.png)
+![Comparison of Azure service Fabric clusters: Microservices as processes where each node runs one process for each microservice; Microservices as containers where each node runs Docker with several containers, one container per microservice.](./media/image30.png)
 
 **Figure 4-27**. Deploying microservices as processes or as containers in Azure Service Fabric
 
@@ -31,7 +31,7 @@ For up-to-date information about containers support in Azure Service Fabric, see
 
 Service Fabric is a good example of a platform where you can define a different logical architecture (business microservices or Bounded Contexts) than the physical implementation that were introduced in the [Logical architecture versus physical architecture](logical-architecture-versus-physical-architecture.md) section. For example, if you implement [Stateful Reliable Services](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction), which are introduced in the section [Stateless versus stateful microservices](#stateless-versus-stateful-microservices) later, you can have a business microservice concept with multiple physical services.
 
-As shown in Figure 4-28, and thinking from a logical/business microservice perspective, when implementing a Service Fabric Stateful Reliable Service, you usually will need to implement two tiers of services. The first is the back-end stateful reliable service, which handles multiple partitions (each partition is a stateful service). The second is the front-end service, or Gateway service, in charge of routing and data aggregation across multiple partitions or stateful service instances. That Gateway service also handles client-side communication with retry loops accessing the backend service. It is called a Gateway service if you implement your custom service, or alternatevely you can also use the out-of-the-box Service Fabric [reverse proxy](https://docs.microsoft.com/azure/service-fabric/service-fabric-reverseproxy).
+As shown in Figure 4-28, and thinking from a logical/business microservice perspective, when implementing a Service Fabric Stateful Reliable Service, you usually will need to implement two tiers of services. The first is the back-end stateful reliable service, which handles multiple partitions (each partition is a stateful service). The second is the front-end service, or Gateway service, in charge of routing and data aggregation across multiple partitions or stateful service instances. That Gateway service also handles client-side communication with retry loops accessing the back-end service. It is called a Gateway service if you implement your custom service, or alternatively you can also use the out-of-the-box Service Fabric [reverse proxy](https://docs.microsoft.com/azure/service-fabric/service-fabric-reverseproxy).
 
 ![](./media/image31.png)
 
@@ -45,7 +45,7 @@ In Service Fabric, you can group and deploy groups of services as a [Service Fab
 
 With regard to containers in Service Fabric, you can also deploy services in container images within a Service Fabric cluster. As Figure 4-29 shows, most of the time there will only be one container per service.
 
-![A Service Fabric application can run several containers accesing an externa database and the whole set would be the logical boundary of a Business Microservice](./media/image32.png)
+![A Service Fabric application can run several containers accessing an extern database and the whole set would be the logical boundary of a Business Microservice](./media/image32.png)
 
 **Figure 4-29**. Business microservice with several services (containers) in Service Fabric
 
@@ -53,7 +53,7 @@ However, so-called "sidecar" containers (two containers that must be deployed to
 
 Note that you can mix services in processes and services in containers in the same Service Fabric application, as shown in Figure 4-30.
 
-![A service fabeic application running both services an containers in the same node.](./media/image33.png)
+![A Service Fabric application running both services and containers in the same node.](./media/image33.png)
 
 **Figure 4-30**. Business microservice mapped to a Service Fabric application with containers and stateful services
 
@@ -65,13 +65,13 @@ As mentioned earlier, each microservice (logical Bounded Context) must own its d
 
 But the services themselves can also be stateful in Service Fabric, which means that the data resides within the microservice. This data might exist not just on the same server, but within the microservice process, in memory and persisted on hard drives and replicated to other nodes. Figure 4-30 shows the different approaches.
 
-![In stateless services the state (persistence, database) is kept out of the microservice. In stateful services states is kept inside the microservice.](./media/image34.png)
+![In stateless services, the state (persistence, database) is kept out of the microservice. In stateful services, states are kept inside the microservice.](./media/image34.png)
 
 **Figure 4-31**. Stateless versus stateful microservices
 
-A stateless approach is perfectly valid and is easier to implement than stateful microservices, since the approach is similar to traditional and well-known patterns. But stateless microservices impose latency between the process and data sources. They also involve more moving pieces when you are trying to improve performance with additional cache and queues. The result is that you can end up with complex architectures that have too many tiers.
+A stateless approach is perfectly valid and is easier to implement than stateful microservices, since the approach is similar to traditional and well-known patterns. But stateless microservices impose latency between the process and data sources. They also involve more moving pieces when you're trying to improve performance with additional cache and queues. The result is that you can end up with complex architectures that have too many tiers.
 
-In contrast, [stateful microservices](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction#when-to-use-reliable-services-apis) can excel in advanced scenarios, because there is no latency between the domain logic and data. Heavy data processing, gaming back ends, databases as a service, and other low-latency scenarios all benefit from stateful services, which enable local state for faster access.
+In contrast, [stateful microservices](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction#when-to-use-reliable-services-apis) can excel in advanced scenarios, because there's no latency between the domain logic and data. Heavy data processing, gaming back ends, databases as a service, and other low-latency scenarios all benefit from stateful services, which enable local state for faster access.
 
 Stateless and stateful services are complementary. For instance, you can see in Figure 4-31, in the right diagram, that a stateful service could be split into multiple partitions. To access those partitions, you might need a stateless service acting as a gateway service that knows how to address each partition based on partition keys.
 

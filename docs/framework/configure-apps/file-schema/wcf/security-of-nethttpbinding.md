@@ -33,7 +33,7 @@ Defines the security capabilities of the [\<basicHttpBinding>](../../../../../do
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|mode|Optional. Specifies the type of security that is used. The default is `None`. This attribute is of type <xref:System.ServiceModel.SecurityMode>.|
+|mode|Optional. Specifies the type of security that is used. The default is `None`. This attribute is of type <xref:System.ServiceModel.BasicHttpSecurityMode>.|
   
 ## mode Attribute  
   

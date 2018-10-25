@@ -1,9 +1,7 @@
 ---
 title: Learn Docker Basics with .NET Core
 description: A Docker and .NET Core Basic Tutorial
-author: jralexander
-ms.author: johalex
-ms.date: 11/06/2017
+ms.date: 10/11/2018
 ms.topic: tutorial
 ms.custom: mvc
 ---
@@ -33,38 +31,38 @@ You can build both Windows and Linux containers with [multi-arch based tags](htt
 
 To complete this tutorial:
 
-#### .NET Core 2.0 SDK
+#### .NET Core 2.1 SDK
 
-* Install [.NET Core SDK 2.0](https://www.microsoft.com/net/core).
+* Install [.NET Core SDK 2.1](https://www.microsoft.com/net/download).
 
-See [.NET Core 2.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md) for the complete list of .NET Core 2.x supported operating systems, out of support OS versions, and lifecycle policy links.
+See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) for the complete list of .NET Core 2.1 supported operating systems, out of support OS versions, and lifecycle policy links.
 
 * Install your favorite code editor, if you haven't already.
 
 > [!TIP]
-> Need to install a code editor? Try [Visual Studio](https://visualstudio.com/downloads)!
+> Need to install a code editor? Try [Visual Studio Code](https://code.visualstudio.com/download)!
 
 #### Installing Docker Client
 
-Install [Docker 17.06](https://docs.docker.com/release-notes/docker-ce/) or later of the Docker client.
+Install [Docker 18.06](https://docs.docker.com/release-notes/docker-ce/) or later of the Docker client.
 
 The Docker client can be installed in:
 
 * Linux distributions
 
-   * [CentOS](https://www.docker.com/docker-centos-distribution)
+   * [CentOS](https://docs.docker.com/install/linux/docker-ce/centos/)
 
-   * [Debian](https://www.docker.com/docker-debian)
+   * [Debian](https://docs.docker.com/install/linux/docker-ce/debian/)
 
-   * [Fedora](https://www.docker.com/docker-fedora)
+   * [Fedora](https://docs.docker.com/install/linux/docker-ce/fedora/)
 
-   * [Ubuntu](https://www.docker.com/docker-ubuntu)
+   * [Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
-* [macOS](https://docs.docker.com/docker-for-mac/)
+* [macOS](https://docs.docker.com/docker-for-mac/install/)
 
-* [Windows](https://docs.docker.com/docker-for-windows/).
+* [Windows](https://docs.docker.com/docker-for-windows/install/).
 
-### Create a .NET Core 2.0 console app for Dockerization
+### Create a .NET Core 2.1 console app for Dockerization
 
 Open a command prompt and create a folder named *Hello*. Navigate to the folder you created and type the following commands:
 
@@ -84,7 +82,7 @@ Let's do a quick walkthrough:
    The project file specifies everything that's needed to restore dependencies and build the program.
 
    * The `OutputType` tag specifies that we're building an executable, in other words a console application.
-   * The `TargetFramework` tag specifies what .NET implementation we're targeting. In an advanced scenario, you can specify multiple target frameworks and build to the specified frameworks in a single operation. In this tutorial, we build for .NET Core 2.0.
+   * The `TargetFramework` tag specifies what .NET implementation we're targeting. In an advanced scenario, you can specify multiple target frameworks and build to the specified frameworks in a single operation. In this tutorial, we build for .NET Core 2.1.
 
    `Program.cs`:
 
@@ -128,7 +126,7 @@ Open your text editor and let's get started! We're still working from the Hello 
 Add the following Docker instructions for either Linux or [Windows Containers](https://docs.microsoft.com/virtualization/windowscontainers/about/) to a new file. When finished, save it in the root of your Hello directory as **Dockerfile**, with no extension (You may need to set your file type to `All types (*.*)` or something similar).
 
 ```Dockerfile
-FROM microsoft/dotnet:2.0-sdk
+FROM microsoft/dotnet:2.1-sdk
 WORKDIR /app
 
 # copy csproj and restore as distinct layers
@@ -143,10 +141,10 @@ ENTRYPOINT ["dotnet", "out/Hello.dll"]
 
 The Dockerfile contains Docker build instructions that run sequentially.
 
-The first instruction must be [**FROM**](https://docs.docker.com/engine/reference/builder/#from). This instruction initializes a new build stage and sets the Base Image for the remaining instructions. The multi-arch tags pull either Windows or Linux containers depending on the Docker for Windows [container mode](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers). The Base Image for our sample is the 2.0-sdk image from the microsoft/dotnet repository,
+The first instruction must be [**FROM**](https://docs.docker.com/engine/reference/builder/#from). This instruction initializes a new build stage and sets the Base Image for the remaining instructions. The multi-arch tags pull either Windows or Linux containers depending on the Docker for Windows [container mode](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers). The Base Image for our sample is the 2.1-sdk image from the microsoft/dotnet repository,
 
 ```Dockerfile
-FROM microsoft/dotnet:2.0-sdk
+FROM microsoft/dotnet:2.1-sdk
 ```
 
 The [**WORKDIR**](https://docs.docker.com/engine/reference/builder/#workdir) instruction sets the working directory for any remaining RUN, CMD, ENTRYPOINT, COPY, and ADD Dockerfile instructions. If the directory doesn't exist, it's created. In this case, WORKDIR is set to the app directory.
@@ -191,7 +189,7 @@ Now you have a Dockerfile that:
 * your app's dependencies to the image
 * builds the app to run as an executable
 
-### Build and run the Hello .NET Core 2.0 app
+### Build and run the Hello .NET Core 2.1 app
 
 #### Essential Docker commands
 
@@ -217,9 +215,9 @@ docker run --rm dotnetapp-dev Hello from Docker
 The output from the `docker build` command should be similar to the following console output:
 
 ```console
-Sending build context to Docker daemon   72.7kB
-Step 1/7 : FROM microsoft/dotnet:2.0-sdk
- ---> d84f64b126a6
+Sending build context to Docker daemon   173.1kB
+Step 1/7 : FROM microsoft/dotnet:2.1-sdk
+ ---> 288f8c45f7c2
 Step 2/7 : WORKDIR /app
  ---> Using cache
  ---> 9af1fbdc7972
@@ -238,7 +236,7 @@ Step 6/7 : RUN dotnet publish -c Release -o out
 Step 7/7 : ENTRYPOINT dotnet out/Hello.dll
  ---> Using cache
  ---> 53c337887e18
-Successfully built 53c337887e18
+Successfully built 46db075bd98d
 Successfully tagged dotnetapp-dev:latest
 ```
 
@@ -274,7 +272,7 @@ Here are some next steps you can take:
 
 The following Docker images are used in this sample
 
-* [`microsoft/dotnet:2.0-sdk`](https://hub.docker.com/r/microsoft/dotnet)
+* [`microsoft/dotnet:2.1-sdk`](https://hub.docker.com/r/microsoft/dotnet)
 
 ## Related Resources
 

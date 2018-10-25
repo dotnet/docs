@@ -121,7 +121,7 @@ CUShort(expression)
 |`CDate`|[Date Data Type](../../../visual-basic/language-reference/data-types/date-data-type.md)|Any valid representation of a date and time.|  
 |`CDbl`|[Double Data Type](../../../visual-basic/language-reference/data-types/double-data-type.md)|-1.79769313486231570E+308 through -4.94065645841246544E-324 for negative values; 4.94065645841246544E-324 through 1.79769313486231570E+308 for positive values.|  
 |`CDec`|[Decimal Data Type](../../../visual-basic/language-reference/data-types/decimal-data-type.md)|+/-79,228,162,514,264,337,593,543,950,335 for zero-scaled numbers, that is, numbers with no decimal places. For numbers with 28 decimal places, the range is +/-7.9228162514264337593543950335. The smallest possible non-zero number is 0.0000000000000000000000000001 (+/-1E-28).|  
-|`CInt`|[Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)|-2,147,483,648 through 2,147,483,647; fractional parts are rounded.<sup>1</sup>|  
+|`CInt`|[Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)|-2,147,483,648 through 2,147,483,647; fractional parts are rounded.<sup>1</sup> <br/><br/>Starting with Visual Basic 15.8, Visual Basic optimizes the performance of floating-point to integer conversion. To take advantage of this optimization, you pass the value returned by the <xref:Microsoft.VisualBasic.Conversion.Fix%2A> function to the `CInt` function. See the [CInt Example](#cint-example) section for an example. |  
 |`CLng`|[Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)|-9,223,372,036,854,775,808 through 9,223,372,036,854,775,807; fractional parts are rounded.<sup>1</sup>|  
 |`CObj`|[Object Data Type](../../../visual-basic/language-reference/data-types/object-data-type.md)|Any valid expression.|  
 |`CSByte`|[SByte Data Type](../../../visual-basic/language-reference/data-types/sbyte-data-type.md)|-128 through 127; fractional parts are rounded.<sup>1</sup>|  
@@ -198,8 +198,19 @@ CUShort(expression)
  The following example uses the `CInt` function to convert a value to `Integer`.  
   
  [!code-vb[VbVbalrFunctions#8](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_8.vb)]  
-  
-## CLng Example  
+
+The following example converts floating-point values to integers by using an optimization introduced starting with Visual Basic 15.8.
+
+```vb
+Dim d As Double = 173.7619
+Dim i1 As Integer = CInt(Fix(d))           ' Displays 173
+Dim s As Single = 173.7619
+Dim i2 As Integer = CInt(Fix(s))           ' Displays 173
+Dim dec As Decimal = 175.7619d
+Dim i3 As Integer = CInt(Fix(dec))         ' Displays 173
+```
+
+## CLng Example
  The following example uses the `CLng` function to convert values to `Long`.  
   
  [!code-vb[VbVbalrFunctions#9](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_9.vb)]  

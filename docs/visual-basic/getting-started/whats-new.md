@@ -15,10 +15,13 @@ This topic lists key feature names for each version of Visual Basic, with detail
   
 ## Current version
 
-Visual Basic 15.5 / Visual Studio 2017 Version 15.5  
-For new features, see [Visual Basic 15.5](#visual-basic-155)
+Visual Basic 15.8 / Visual Studio 2017 Version 15.8
+For new features, see [Visual Basic 15.8](#visual-basic-158)
 
 ## Previous versions
+
+Visual Basic 15.5 / Visual Studio 2017 Version 15.5  
+For new features, see [Visual Basic 15.5](#visual-basic-155)
 
 Visual Basic 15.3 / Visual Studio 2017 Version 15.3  
 For new features, see [Visual Basic 15.3](#visual-basic-153)
@@ -49,6 +52,23 @@ Bit-shift operators, loop variable declaration
 
 Visual Basic / Visual Studio .NET 2002   
 The first release of Visual Basic .NET
+
+## Visual Basic 15.8
+
+**Optimized floating-point to integer conversion**
+
+In previous versions of Visual Basic, conversion of [Double](../language-reference/keywords/double-data-type.md), [Single](../language-reference/keywords/single-data-type.md), and [System.Decimal](../language-reference/keywords/ddecimal-data-type.md) types offered relatively poor performance. Visual Basic 15.8 significantly enhances the performance of floating-point conversions to integers when you call the [CInt](../language-reference/functions/type-conversion-functions.md#cint-example) and <xref:Microsoft.VisualBasic.Conversion.Fix%2A?displayProperty=nameWithType> methods. For example:
+
+```vb
+Dim d As Double = 173.7619
+Dim i1 As Integer = CInt(Fix(d))           ' Displays 173
+Dim s As Single = 173.7619
+Dim i2 As Integer = CInt(Fix(s))           ' Displays 173
+Dim dec As Decimal = 175.7619d
+Dim i3 As Integer = CInt(Fix(dec))         ' Displays 173
+```
+
+Note that this truncates rather than rounds floating-point value.
 
 ## Visual Basic 15.5
 

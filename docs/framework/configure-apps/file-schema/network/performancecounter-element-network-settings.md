@@ -68,7 +68,7 @@ Enables or disables networking performance counters.
 ```  
   
 ## See Also  
- <xref:System.Net.Configuration.PerformanceCountersElement?displayProperty=nameWithType>  
- <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)  
- [Networking Performance Counters](../../../../../docs/framework/debug-trace-profile/performance-counters.md#networking)
+- <xref:System.Net.Configuration.PerformanceCountersElement?displayProperty=nameWithType>  
+- <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)  
+- [Networking Performance Counters](../../../../../docs/framework/debug-trace-profile/performance-counters.md#networking)

@@ -62,4 +62,4 @@ Contains settings that specify how the .NET Framework handles web addresses expr
 ```  
   
 ## See Also  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

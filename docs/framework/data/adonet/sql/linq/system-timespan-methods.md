@@ -11,7 +11,8 @@ Member support for <xref:System.TimeSpan?displayProperty=nameWithType> greatly d
 ## Previous Limitations  
  When using LINQ to SQL with versions of the .NET Framework prior to .NET Framework 3.5 SP1, you cannot map SQL Server database fields to <xref:System.TimeSpan?displayProperty=nameWithType>. However, operations on <xref:System.TimeSpan> are supported because <xref:System.TimeSpan> values can be returned from <xref:System.DateTime> subtraction or introduced into an expression as a literal or bound variable.  
   
-## Supported System.TimeSpan Method Support  
+## Supported System.TimeSpan member support
+
  The following LINQ to SQL-supported methods, operators, and properties are available for you to use in your LINQ to SQL queries. Once mapped in the object model or external mapping file, LINQ to SQL allows you to call many of the <xref:System.TimeSpan?displayProperty=nameWithType> members inside your LINQ to SQL queries.  
   
 |Supported <xref:System.TimeSpan> Methods|Supported <xref:System.TimeSpan> Operators|Supported <xref:System.TimeSpan> Properties|  

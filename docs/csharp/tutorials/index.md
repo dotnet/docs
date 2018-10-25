@@ -17,18 +17,18 @@ programming or the C# language.
 
 ## [Hello world](intro-to-csharp/hello-world.yml)
 
-In the [Hello world](intro-to-csharphello-world.yml) tutorial, you'll create the most basic
+In the [Hello world](intro-to-csharp/hello-world.yml) tutorial, you'll create the most basic
 C# program. You'll explore the `string` type and how to work with text.
 
 ## [Numbers in C#](intro-to-csharp/numbers-in-csharp.yml)
 
-In the [Numbers in C#](intro-to-csharpnumbers-in-csharp.yml) tutorial, you'll learn
+In the [Numbers in C#](intro-to-csharp/numbers-in-csharp.yml) tutorial, you'll learn
 how computers store numbers and how to perform calculations with different
 numeric types. You'll learn the basics of rounding, and how to perform
 mathematical calculations using C#. This tutorial is also available
 [to run locally on your machine](intro-to-csharp/numbers-in-csharp-local.md).
 
-This tutorial assumes that you have finished the [Hello world](intro-to-csharphello-world.yml) lesson.
+This tutorial assumes that you have finished the [Hello world](intro-to-csharp/hello-world.yml) lesson.
 
 ## [Branches and loops](intro-to-csharp/branches-and-loops.yml)
 

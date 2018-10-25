@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "-delaysign compiler option [Visual Basic]"
   - "-delaysign compiler option [Visual Basic]"
 ms.assetid: c76e61a4-1884-4252-9fb2-377f99caa690
-author: rpetrusha
-ms.author: ronpet
 ---
 # -delaysign
 Specifies whether the assembly will be fully or partially signed.  

@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "/sdkpath compiler option [Visual Basic]"
   - "sdkpath compiler option [Visual Basic]"
 ms.assetid: fec8a3f1-b791-4a37-8af7-344859f8212d
-author: rpetrusha
-ms.author: ronpet
 ---
 # -sdkpath
 Specifies the location of mscorlib.dll and Microsoft.VisualBasic.dll.  

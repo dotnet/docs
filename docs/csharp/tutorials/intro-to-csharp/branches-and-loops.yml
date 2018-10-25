@@ -1,11 +1,10 @@
 ### YamlMime:Tutorial
-title: Branches and loops
+title: Learn conditional logic with branch and loop statements
 metadata:
-  title:  Branches and loops interactive tutorial - C# quickstarts
-  description: In this quickstart about branches and loops, you'll use your browser to learn C# interactively. You'll write C# code and see the results of compiling and running your code directly in the browser.
+  title:  Branches and loops - Introduction to C# interactive tutorial
+  description: In this tutorial about branches and loops, you'll use your browser to learn C# interactively. You'll write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
   level: Beginner
-  ms.topic: quickstart
   ms.custom: mvc
   ms.date: 08/24/2018
   displayType: two-column
@@ -15,7 +14,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    This quickstart teaches you how to write code that examines variables and changes execution path based on those variables. You'll use your browser to write C# interactively and see the results of compiling and running your code. This quickstart contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
+    This tutorial teaches you how to write code that examines variables and changes execution path based on those variables. You'll use your browser to write C# interactively and see the results of compiling and running your code. This tutorial contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
 - title: Make decisions using the if statement
   durationInMinutes: 4
   content: |
@@ -74,7 +73,7 @@ items:
     > The indentation under the `if` and `else` statements is for human readers.
     > The C# language doesn't treat indentation or white space as significant. 
     > The statement following the `if` or `else` keyword will be executed based
-    > on the condition. All the samples in this quickstart follow a common
+    > on the condition. All the samples in this tutorial follow a common
     > practice to indent lines based on the control flow of statements.
 
     Because indentation is not significant, you need to use `{` and `}` to
@@ -97,7 +96,7 @@ items:
     ```
 
     > [!TIP]
-    > Through the rest of this quickstart, the code samples all include the braces,
+    > Through the rest of this tutorial, the code samples all include the braces,
     > following accepted practices.
 
     You can test more complicated conditions:
@@ -271,13 +270,13 @@ items:
 
 - title: Congratulations!
   content: |
-    You've completed the "branches and loops" quickstart. 
+    You've completed the "branches and loops" tutorial. 
     
-    You can continue these quickstarts on your own development environment. Learn the basics of [local development](local-environment.md) and then pick a quickstart. You can try this same exercise, move directly to the next quickstart, or start again at with the [numbers in C#](numbers-in-csharp-local.md) quickstart.
+    You can continue these tutorials on your own development environment. Learn the basics of [local development](local-environment.md) and then pick a tutorial. You can try this same exercise, move directly to the next tutorial, or start again at the beginning of the series with the [numbers in C#](numbers-in-csharp-local.md) tutorial.
     
     You can learn more about these concepts in these topics:
 
-    [If and else statement](../language-reference/keywords/if-else.md)   
-    [While statement](../language-reference/keywords/while.md)   
-    [Do statement](../language-reference/keywords/do.md)   
-    [For statement](../language-reference/keywords/for.md)   
+    [If and else statement](../../language-reference/keywords/if-else.md)   
+    [While statement](../../language-reference/keywords/while.md)   
+    [Do statement](../../language-reference/keywords/do.md)   
+    [For statement](../../language-reference/keywords/for.md)   

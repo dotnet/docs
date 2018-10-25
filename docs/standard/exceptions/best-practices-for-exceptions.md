@@ -163,7 +163,12 @@ This example illustrates the use of `throw` to re-throw the original exception, 
 catch (Exception ex)
 {
     from.RollbackTransaction(withdrawalTrxID);
-    throw new Exception("Withdrawal failed", ex);
+    throw new TransferFundsException("Withdrawal failed", innerException: ex)
+    {
+    	From = from,
+	To = to,
+	Amount = amount
+    };
 }
 ```
 

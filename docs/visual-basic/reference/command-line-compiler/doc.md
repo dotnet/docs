@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "-doc compiler option [Visual Basic]"
   - "/doc compiler option [Visual Basic]"
 ms.assetid: 5fc32ec9-a149-4648-994c-a8d0cccd0a65
-author: rpetrusha
-ms.author: ronpet
 ---
 # -doc
 Processes documentation comments to an XML file.  

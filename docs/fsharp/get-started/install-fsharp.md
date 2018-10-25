@@ -28,7 +28,7 @@ You must have [git installed](https://git-scm.com/download) and available on you
 
 ### [macOS](#tab/macos)
 
-[Mono](http://www.mono-project.com) is used for [F# Interactive](../tutorials/fsharp-interactive/index.md) support. The easiest way to install Mono on macOS is via Homebrew. Simply type the following into your terminal:
+[Mono](https://www.mono-project.com) is used for [F# Interactive](../tutorials/fsharp-interactive/index.md) support. The easiest way to install Mono on macOS is via Homebrew. Simply type the following into your terminal:
 
 ```console
 brew install mono

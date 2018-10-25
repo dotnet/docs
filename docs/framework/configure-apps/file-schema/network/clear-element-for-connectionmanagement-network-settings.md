@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "clear element, connectionManagement"
   - "<connectionManagement>, clear element"
 ms.assetid: fb259282-84c4-4dc4-a226-78d904a6edc3
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;clear&gt; Element for connectionManagement (Network Settings)
 Clears the connection management list.  
@@ -64,6 +62,6 @@ Clears the connection management list.
 ```  
   
 ## See Also  
- <xref:System.Net.ServicePoint>  
- <xref:System.Net.ServicePointManager>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.ServicePoint>  
+- <xref:System.Net.ServicePointManager>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

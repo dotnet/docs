@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "/platform compiler option [Visual Basic]"
   - "-platform compiler option [Visual Basic]"
 ms.assetid: f9bc61e6-e854-4ae1-87b9-d6244de23fd1
-author: rpetrusha
-ms.author: ronpet
 ---
 # -platform (Visual Basic)
 Specifies which platform version of common language runtime (CLR) can run the output file.  

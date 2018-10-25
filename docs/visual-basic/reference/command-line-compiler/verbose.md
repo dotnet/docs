@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "-verbose compiler option [Visual Basic]"
   - "/verbose compiler option [Visual Basic]"
 ms.assetid: d1aec0c1-0261-421d-9adc-5b13756100be
-author: rpetrusha
-ms.author: ronpet
 ---
 # -verbose
 Causes the compiler to produce verbose status and error messages.  

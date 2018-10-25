@@ -16,7 +16,7 @@ configuration element to select the compiler language version.
 
 The new language features in this release are:
 
-* [Reference semantics with value types](#reference-semantics-with-value-types)
+* [Techniques for writing safe efficient code](#safe-efficient-code-enhancements)
   - A combination of syntax improvements that enable working with value types using reference semantics.
 * [Non-trailing named arguments](#non-trailing-named-arguments)
   - Named arguments can be followed by positional arguments.
@@ -25,7 +25,7 @@ The new language features in this release are:
 * [`private protected` access modifier](#private-protected-access-modifier)
   - The `private protected` access modifier enables access for derived classes in the same assembly.
 
-## Reference semantics with value types
+## Safe efficient code enhancements
 
 Language features introduced in 7.2 let you work with value types
 while using reference semantics. They 
@@ -38,7 +38,7 @@ features include:
  - The `readonly struct` declaration, to indicate that a struct is immutable and should be passed as an `in` parameter to its member methods. Adding the `readonly` modifier to an existing struct declaration is a [binary compatible change](version-update-considerations.md#binary-compatible-changes).
  - The `ref struct` declaration, to indicate that a struct type accesses managed memory directly and must always be stack allocated. Adding the `ref` modifier to an existing `struct` declaration is an [incompatible change](version-update-considerations.md#incompatible-changes). A `ref struct` cannot be a member of a class or used in other locations where it may be allocated on the heap.
 
-You can read more about all these changes in [Using value types with reference semantics](../reference-semantics-with-value-types.md).
+You can read more about all these changes in [Write safe efficient code](../write-safe-efficient-code.md).
 
 ## Non-trailing named arguments
 

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "sending data, UDP"
   - "application protocols, UDP"
 ms.assetid: d5c3477a-e798-454c-a890-738ba14c5707
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Using UDP Services
 The <xref:System.Net.Sockets.UdpClient> class communicates with network services using UDP. The properties and methods of the <xref:System.Net.Sockets.UdpClient> class abstract the details of creating a <xref:System.Net.Sockets.Socket> for requesting and receiving data using UDP.  

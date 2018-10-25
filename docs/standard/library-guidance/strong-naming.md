@@ -43,12 +43,14 @@ You should strong name your open-source .NET libraries. Strong naming an assembl
 
 **✔️ CONSIDER** strong naming your library's assemblies.
 
-**✔️ CONSIDER** checking in the key used to strong name into your source control system.
+**✔️ CONSIDER** adding the strong naming key to your source control system.
 
 > A publicly available key lets developers modify and recompile your library source code with the same key.
+> 
+> You shouldn't make the strong naming key public if it has been used in the past to give special permissions in [partial-trust scenarios](/dotnet/framework/misc/using-libraries-from-partially-trusted-code). Otherwise, you might compromise existing environments.
 
 > [!IMPORTANT]
-> When a cryptographic identity is desired, [Authenticode](/windows-hardware/drivers/install/authenticode) and [NuGet Package Signing](/nuget/create-packages/sign-a-package) are recommended. Strong naming should not be used for security considerations.
+> When the identity of the publisher of the code is desired, [Authenticode](/windows-hardware/drivers/install/authenticode) and [NuGet Package Signing](/nuget/create-packages/sign-a-package) are recommended. Code Access Security (CAS) should not be used as a security mitigation.
 
 **✔️ CONSIDER** incrementing the assembly version on only major version changes to help users reduce binding redirects, and how often they're updated.
 

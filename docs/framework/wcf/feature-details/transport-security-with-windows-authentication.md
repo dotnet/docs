@@ -5,7 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 96dd26e2-46e7-4de0-9a29-4fcb05bf187b
-author: "BrucePerlerMS"
 ---
 # Transport Security with Windows Authentication
 The following scenario shows a Windows Communication Foundation (WCF) client and service secured by Windows security. For more information about programming, see [How to: Secure a Service with Windows Credentials](../../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md).  

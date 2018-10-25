@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "add element, connectionManagement"
   - "connectionManagement, add element"
 ms.assetid: 856bf57d-1c63-46c7-a178-03d97b0a4149
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;add&gt; Element for connectionManagement (Network Settings)
 Adds an IP address or DNS name to the connection management list.  
@@ -72,6 +70,6 @@ Adds an IP address or DNS name to the connection management list.
 ```  
   
 ## See Also  
- <xref:System.Net.ServicePoint>  
- <xref:System.Net.ServicePointManager>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.ServicePoint>  
+- <xref:System.Net.ServicePointManager>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

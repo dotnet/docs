@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "<connectionManagement>, remove element"
   - "remove element, connectionManagement"
 ms.assetid: 94b81775-5a22-4975-8c47-8620c40c3f35
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;remove&gt; Element for connectionManagement (Network Settings)
 Removes an IP address or DNS name from the connection management list.  
@@ -71,6 +69,6 @@ Removes an IP address or DNS name from the connection management list.
 ```  
   
 ## See Also  
- <xref:System.Net.ServicePoint>  
- <xref:System.Net.ServicePointManager>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.ServicePoint>  
+- <xref:System.Net.ServicePointManager>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

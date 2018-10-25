@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "receiving data, pluggable protocols"
   - "protocols, pluggable"
 ms.assetid: 66ef8456-7576-4e97-8956-959b216373db
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Programming Pluggable Protocols
 The abstract <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes provide the base for pluggable protocols. By deriving protocol-specific classes from <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse>, an application can request data from an Internet resource and read the response without specifying the protocol being used.  

@@ -90,7 +90,7 @@ Cross-apartment call between a .NET client and COM object
     > [!NOTE]
     >  Once the thread of a C# client is set to STA, calls to MTA COM components will require cross-apartment marshaling.  
   
- For instructions on explicitly selecting an apartment model, see [Managed and Unmanaged Threading](/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100)).  
+ For instructions on explicitly selecting an apartment model, see [Managed and Unmanaged Threading](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100)).  
   
  [Back to top](#top)  
   
@@ -146,7 +146,7 @@ Remote calls across firewalls using SOAP or the TcpChannel class
 |[How to: Map HRESULTs and Exceptions](how-to-map-hresults-and-exceptions.md)|Describes how to map custom exceptions to HRESULTs and provides the complete mapping from each HRESULT to its comparable exception class in the .NET Framework.|  
 |[Interoperating Using Generic Types](https://msdn.microsoft.com/library/26b88e03-085b-4b53-94ba-a5a9c709ce58(v=vs.100))|Describes which actions are supported when using generic types for COM interoperability.|  
 |[Interoperating with Unmanaged Code](index.md)|Describes interoperability services provided by the common language runtime.|  
-|[Advanced COM Interoperability](/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))|Provides links to more information about incorporating COM components into your .NET Framework application.|  
+|[Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))|Provides links to more information about incorporating COM components into your .NET Framework application.|  
 |[Design Considerations for Interoperation](https://msdn.microsoft.com/library/b59637f6-fe35-40d6-ae72-901e7a707689(v=vs.100))|Provides tips for writing integrated COM components.|  
   
  [Back to top](#top)  

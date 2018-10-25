@@ -137,9 +137,15 @@
         "docs/core/**/**.md": "mairaw",
         "docs/csharp/**/**.md": "billwagner",
         "docs/csharp/**/**.yml": "billwagner",
+        "docs/framework/configure-apps/file-schema/network/**/**.md": "karelz",
+        "docs/framework/configure-apps/file-schema/wcf/**/**.md": "Lxiamail",
         "docs/framework/data/adonet/**/**.md": "douglaslMS",
+        "docs/framework/data/wcf/**/**.md": "Lxiamail",
+        "docs/framework/network-programming/**/**.md": "karelz",
+        "docs/framework/wcf/**/**.md": "Lxiamail",
         "docs/fsharp/**/**.md": "cartermp",
-        "docs/machine-learning/**/**.md": "JRAlexander"
+        "docs/machine-learning/**/**.md": "JRAlexander",
+        "docs/visual-basic/**/**.md": "KathleenDollard"
       },
       "ms.author": {
         "_csharplang/spec/*.md": "wiwagn",
@@ -148,9 +154,15 @@
         "docs/core/docker/**.md": "johnalex",
         "docs/csharp/**/**.md": "wiwagn",
         "docs/csharp/**/**.yml": "wiwagn",
+        "docs/framework/configure-apps/file-schema/network/**/**.md": "ncldev",
+        "docs/framework/configure-apps/file-schema/wcf/**/**.md": "wcfsrvt",
         "docs/framework/data/adonet/**/**.md": "douglasl",
+        "docs/framework/data/wcf/**/**.md": "wcfsrvt",
+        "docs/framework/network-programming/**/**.md": "ncldev",
+        "docs/framework/wcf/**/**.md": "wcfsrvt",
         "docs/fsharp/**/**.md": "phcart",
-        "docs/machine-learning/**/**.md": "johalex"
+        "docs/machine-learning/**/**.md": "johalex",
+        "docs/visual-basic/**/**.md": "kdollard"
       },
       "ms.date": {
         "_csharplang/spec/*.md": "07/01/2017",
@@ -164,6 +176,8 @@
         "docs/csharp/misc/**/**.md": "csharp-diagnostics",
         "docs/core/tools/**/**.md": "dotnet-cli",
         "docs/core/docker/**/**.md": "dotnet-docker",
+        "docs/framework/configure-apps/file-schema/network/**/**.md": "dotnet-networking",
+        "docs/framework/configure-apps/file-schema/wcf/**/**.md": "dotnet-wcf",
         "docs/framework/data/adonet/**/**.md": "dotnet-data",
         "docs/framework/data/wcf/**/**.md": "dotnet-wcf",
         "docs/framework/docker/**/**.md": "dotnet-docker",

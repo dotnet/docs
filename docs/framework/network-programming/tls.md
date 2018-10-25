@@ -1,7 +1,7 @@
 ---
 title: Transport Layer Security (TLS) best practices with the .NET Framework
 description: Describes best practices using Transport Layer Security (TLS) with the .NET Framework
-ms.date: 03/15/2018
+ms.date: 10/22/2018
 helpviewer_keywords: 
   - "sending data, Internet security"
   - "protocols, Internet security"
@@ -12,11 +12,10 @@ helpviewer_keywords:
   - "Internet, security"
   - "security [.NET Framework], Internet"
   - "permissions [.NET Framework], Internet"
-author: "blowdart"
 ---
 # Transport Layer Security (TLS) best practices with the .NET Framework
 
-The Transport Layer Security (TLS) protocol is an industry standard designed to help protect the privacy of information communicated over the Internet. [TLS 1.2](https://tools.ietf.org/html/rfc5246) is the newest released standard and provides security improvements over previous versions. TLS 1.2 will eventually be replaced by [TLS 1.3](https://tools.ietf.org/html/draft-ietf-tls-tls13-22). This article presents recommendations to secure .NET Framework applications that use the TLS protocol.
+The Transport Layer Security (TLS) protocol is an industry standard designed to help protect the privacy of information communicated over the Internet. [TLS 1.2](https://tools.ietf.org/html/rfc5246) is a standard that provides security improvements over previous versions. TLS 1.2 will eventually be replaced by the newest released standard [TLS 1.3](https://tools.ietf.org/html/rfc8446) which is faster and has improved security. This article presents recommendations to secure .NET Framework applications that use the TLS protocol.
 
 To ensure .NET Framework applications remain secure, the TLS version should **not** be hardcoded. .NET Framework applications should use the TLS version the operating system (OS) supports.
 
@@ -299,6 +298,6 @@ If your app targets a .NET Framework version that is not available on the Azure 
 
 ### Azure Guest OS registry settings
 
-The Azure Guest OS image for [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) already has the `SchUseStrongCrypto` registry key set to a value of 1. For more information, see [SchUseStrongCrypto](#schusestrongcrypto).
+The Azure Guest OS Family 5 image for [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) already has the `SchUseStrongCrypto` registry key set to a value of 1. For more information, see [SchUseStrongCrypto](#schusestrongcrypto).
 
 Set the [SystemDefaultTlsVersions](#systemdefaulttlsversions) registry key to 1. See [Configuring security via the Windows Registry](#configuring-security-via-the-windows-registry).

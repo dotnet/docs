@@ -348,7 +348,7 @@ is very likely more complex than you would want in production code.
 Rather, it is illustrative of the breadth of the feature. Any C# expression
 can be placed between the curly braces of an interpolated string.
 
-To get started with string interpolation, check the [String interpolation in C#](../quick-starts/interpolated-strings.yml) interactive quickstart.
+To get started with string interpolation, check the [String interpolation in C#](../tutorials/intro-to-csharp/interpolated-strings.yml) interactive tutorial.
 
 ### String interpolation and specific cultures
 

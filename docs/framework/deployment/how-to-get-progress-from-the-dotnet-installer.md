@@ -304,5 +304,5 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
  A typical server creates a random MMIO file name, creates the file (as shown in the previous code example, in `Server::CreateSection`), and launches the redistributable by using the `CreateProcess` method and passing the pipe name with the `-pipe someFileSectionName` option. The server should implement `OnProgress`, `Send`, and `Finished` methods with application UI-specific code.  
   
 ## See Also  
- [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md)  
- [Deployment](../../../docs/framework/deployment/index.md)
+- [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md)  
+- [Deployment](../../../docs/framework/deployment/index.md)

@@ -216,7 +216,7 @@ or unsubscribe from the event. Notice that you also must declare a
 private backing field to store the event variable. It is initialized
 to null.
 
-Next, let's add the overload of the Search() method that traverses
+Next, let's add the overload of the `Search()` method that traverses
 subdirectories and raises both events. The easiest way to accomplish
 this is to use a default argument to specify that you want to search
 all directories:

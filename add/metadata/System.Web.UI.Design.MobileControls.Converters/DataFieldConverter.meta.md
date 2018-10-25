@@ -1,31 +1,21 @@
 ---
 uid: System.Web.UI.Design.MobileControls.Converters.DataFieldConverter
-author: "tdykstra"
-ms.author: "tdykstra"
 ---
 
 ---
 uid: System.Web.UI.Design.MobileControls.Converters.DataFieldConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
-author: "tdykstra"
-ms.author: "tdykstra"
 ---
 
 ---
 uid: System.Web.UI.Design.MobileControls.Converters.DataFieldConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)
-author: "tdykstra"
-ms.author: "tdykstra"
 ---
 
 ---
 uid: System.Web.UI.Design.MobileControls.Converters.DataFieldConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)
-author: "tdykstra"
-ms.author: "tdykstra"
 ---
 
 ---
 uid: System.Web.UI.Design.MobileControls.Converters.DataFieldConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-author: "tdykstra"
-ms.author: "tdykstra"
 ---
 
 ---
@@ -34,8 +24,6 @@ uid: System.Web.UI.Design.MobileControls.Converters.DataFieldConverter.GetStanda
 
 ---
 uid: System.Web.UI.Design.MobileControls.Converters.DataFieldConverter.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
 ---
 
 ---
@@ -56,6 +44,4 @@ uid: System.Web.UI.Design.MobileControls.Converters.DataFieldConverter.GetStanda
 
 ---
 uid: System.Web.UI.Design.MobileControls.Converters.DataFieldConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
-author: "tdykstra"
-ms.author: "tdykstra"
 ---

@@ -1,6 +1,5 @@
 ---
 uid: System.Web.UI.Design.WebControls.DataProviderNameConverter
-ms.author: "riande"
 ---
 
 ---
@@ -9,12 +8,10 @@ uid: System.Web.UI.Design.WebControls.DataProviderNameConverter.GetStandardValue
 
 ---
 uid: System.Web.UI.Design.WebControls.DataProviderNameConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
-ms.author: "riande"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.DataProviderNameConverter.#ctor
-ms.author: "riande"
 ---
 
 ---
@@ -27,10 +24,8 @@ uid: System.Web.UI.Design.WebControls.DataProviderNameConverter.GetStandardValue
 
 ---
 uid: System.Web.UI.Design.WebControls.DataProviderNameConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)
-ms.author: "riande"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.DataProviderNameConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)
-ms.author: "riande"
 ---

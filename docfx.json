@@ -61,15 +61,16 @@
     "fileMetadata": {
       "author": {
         "api/Microsoft.SqlServer**.yml": "douglaslMS",
-        "api/System.Data**.yml": "douglaslMS"
+        "api/System.Data**.yml": "douglaslMS",
+        "api/System.Net**.yml": "karelz",
+        "api/System.Web**.yml": "scottaddie",
+        "api/Microsoft.VisualBasic**.yml": "KathleenDollard"
       },
       "ms.author": {
         "api/Microsoft.SqlServer**.yml": "douglasl",
-        "api/System.Data**.yml": "douglasl"
-      },
-      "manager": {
-        "api/Microsoft.SqlServer**.yml": "craigg",
-        "api/System.Data**.yml": "craigg"
+        "api/System.Data**.yml": "douglasl",
+        "api/System.Net**.yml": "ncldev",
+        "api/Microsoft.VisualBasic**.yml": "kdollard"
       },
       "ms.technology": {
         "api/Accessibility**.yml": "accessibility",

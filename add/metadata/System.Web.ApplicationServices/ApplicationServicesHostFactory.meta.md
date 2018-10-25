@@ -1,7 +1,5 @@
 ---
 uid: System.Web.ApplicationServices.ApplicationServicesHostFactory
-author: "tdykstra"
-ms.author: "tdykstra"
 ---
 
 ---
@@ -10,12 +8,8 @@ uid: System.Web.ApplicationServices.ApplicationServicesHostFactory.CreateService
 
 ---
 uid: System.Web.ApplicationServices.ApplicationServicesHostFactory.CreateServiceHost(System.Type,System.Uri[])
-author: "tdykstra"
-ms.author: "tdykstra"
 ---
 
 ---
 uid: System.Web.ApplicationServices.ApplicationServicesHostFactory.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
 ---

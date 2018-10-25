@@ -12,5 +12,4 @@ uid: System.Net.TransportContext.#ctor
 
 ---
 uid: System.Net.TransportContext.GetTlsTokenBindings
-ms.author: "alkoren"
 ---

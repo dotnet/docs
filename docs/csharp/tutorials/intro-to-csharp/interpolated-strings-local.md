@@ -1,6 +1,6 @@
 ---
 title: String interpolation - C# tutorial
-description: This tutorial shows you how to use C# string interpolation feature to include formatted expression results in a larger string.
+description: This tutorial shows you how to use the C# string interpolation feature to include formatted expression results in a larger string.
 author: rpetrusha
 ms.author: ronpet
 ms.date: 10/23/2018
@@ -9,7 +9,7 @@ ms.date: 10/23/2018
 
 This tutorial teaches you how to use C# [string interpolation](../../language-reference/tokens/interpolated.md) to insert values into a single result string. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that show you how to insert values into a string and format those values in different ways.
 
-This tutorial expects that you have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local tutorials](local-environment.md) with links to more details. You also can complete the [interactive version](interpolated-strings.yml) of this tutorial in your browser.
+This tutorial expects that you have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in [introduction to the local tutorials](local-environment.md), with links to more details. You also can complete the [interactive version](interpolated-strings.yml) of this tutorial in your browser.
 
 ## Create an interpolated string
 
@@ -42,13 +42,13 @@ Let's try a few more string interpolation examples with some other data types.
 
 In the previous section, you used string interpolation to insert one string inside of another. The result of an interpolated expression can be of any data type, though. Let's include values of various data types in an interpolated string.
 
-In the following example, first, we define a [class](../../programming-guide/classes-and-structs/classes.md) data type `Vegetable` that has the `Name` [property](../../properties.md) and the `ToString` [method](../../methods.md), which [overrides](../../language-reference/keywords/override.md) the behavior of the <xref:System.Object.ToString?displayProperty=nameWithType> method. The [`public` access modifier](../../language-reference/keywords/public.md) makes that method available to any client code to get the string representation of a `Vegetable` instance. In the example the `Vegetable.ToString` method returns the value of the `Name` property that is initialized at the `Vegetable` [constructor](../../programming-guide/classes-and-structs/constructors.md):
+In the following example, we first define a [class](../../programming-guide/classes-and-structs/classes.md) data type `Vegetable` that has a `Name` [property](../../properties.md) and a `ToString` [method](../../methods.md), which [overrides](../../language-reference/keywords/override.md) the behavior of the <xref:System.Object.ToString?displayProperty=nameWithType> method. The [`public` access modifier](../../language-reference/keywords/public.md) makes that method available to any client code to get the string representation of a `Vegetable` instance. In the example the `Vegetable.ToString` method returns the value of the `Name` property that is initialized at the `Vegetable` [constructor](../../programming-guide/classes-and-structs/constructors.md):
 
 ```csharp
 public Vegetable(string name) => Name = name;
 ```
 
-Then we create an instance of the `Vegetable` class by using [`new` keyword](../../language-reference/keywords/new-operator.md) and providing a name parameter for the constructor `Vegetable`:
+Then we create an instance of the `Vegetable` class named `item` by using the [`new` keyword](../../language-reference/keywords/new-operator.md) and providing a name for the constructor `Vegetable`:
 
 ```csharp
 var item = new Vegetable("eggplant");

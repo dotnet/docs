@@ -5,7 +5,7 @@ ms.date: 10/23/2018
 ---
 # Become familiar with the .NET development tools
 
-The first step in running a tutorial on your machine is to setup a development environment.
+The first step in running a tutorial on your machine is to set up a development environment.
 The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting
 up your local development environment on Mac, PC or Linux.
 
@@ -28,7 +28,7 @@ You can start with any of the following tutorials:
 
 In the [Numbers in C#](numbers-in-csharp-local.md) tutorial, you'll learn
 how computers store numbers and how to perform calculations with different
-numeric types. You'll learn the basics of rounding, and how to perform
+numeric types. You'll learn the basics of rounding and how to perform
 mathematical calculations using C#.
 
 This tutorial assumes that you have finished the [Hello world](hello-world.yml) lesson.
@@ -45,7 +45,7 @@ This tutorial assumes that you have finished the [Hello world](hello-world.yml) 
 
 ## [String interpolation](interpolated-strings-local.md)
 
-The [String interpolation](interpolated-strings-local.md) tutorial shows you how to insert values into a string. You'll learn how to create an interpolated string with embedded C# expressions and how to control the text appearance of the expression results in the result string.
+The [String interpolation](interpolated-strings-local.md) tutorial shows you how to insert values into a string. You'll learn how to create an interpolated string with embedded C# expressions and how to control the formatting of the result string.
 
 This tutorial assumes that you have finished the [Hello world](hello-world.yml), [Numbers in C#](numbers-in-csharp-local.md), and [Branches and loops](branches-and-loops-local.md) lessons.
 

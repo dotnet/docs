@@ -1,5 +1,5 @@
 ---
-title: Introduction to C# - interactive tutorial
+title: Introduction to C# - interactive tutorials
 description: Learn C# in your browser, and get started with your own development environment
 ms.date: 01/30/2018
 ms.custom: mvc
@@ -19,7 +19,7 @@ All the introductory tutorials following the Hello World lesson are available us
 the online browser experience or [in your own local development
 environment](local-environment.md). At the end of each tutorial, you decide if you want to continue
 with the next lesson online or on your own machine. There are links
-to help you setup your environment and continue with the next tutorial
+to help you set up your environment and continue with the next tutorial
 on your machine.
 
 ## [Hello world](hello-world.yml)
@@ -50,7 +50,7 @@ This tutorial assumes that you have finished the [Hello world](hello-world.yml) 
 
 ## [String interpolation](interpolated-strings.yml)
 
-The [String interpolation](interpolated-strings.yml) tutorial shows you how to insert values into a string. You'll learn how to create an interpolated string with embedded C# expressions and how to control the text appearance of the expression results in the result string. This tutorial is also available [to run locally on your machine](interpolated-strings-local.md).
+The [String interpolation](interpolated-strings.yml) tutorial shows you how to insert values into a string. You'll learn how to create an interpolated string with embedded C# expressions and how to control the formatting of the output string. This tutorial is also available [to run locally on your machine](interpolated-strings-local.md).
 
 This tutorial assumes that you have finished the [Hello world](hello-world.yml), [Numbers in C#](numbers-in-csharp.yml), and [Branches and loops](branches-and-loops.yml) lessons.
 

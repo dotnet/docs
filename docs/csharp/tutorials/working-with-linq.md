@@ -108,23 +108,38 @@ Go ahead and run the sample you've built at this point. It will display all 52 c
 
 ## Manipulating the Order
 
-Next, let's focus on how we're going to shuffle the cards in our deck. The first step in any good shuffle is to split the deck in two. The `Take()` and `Skip()` methods that are part of the LINQ APIs provide that feature for us:
+Next, let's focus on how we're going to shuffle the cards in our deck. The first step in any good shuffle is to split the deck in two. The `Take()` and `Skip()` methods that are part of the LINQ APIs provide that feature for us. Let's place them underneath our `foreach` loop:
 
 ```csharp
-var top = startingDeck.Take(26);
-var bottom = startingDeck.Skip(26);
+public static void Main(string[] args)
+{
+    var startingDeck = from s in Suits()
+                       from r in Ranks()
+                       select new { Suit = s, Rank = r };
+
+    foreach (var c in startingDeck)
+    {
+        Console.WriteLine(c);
+    }
+
+    // 52 cards in a deck, so 52 / 2 = 26    
+    var top = startingDeck.Take(26);
+    var bottom = startingDeck.Skip(26);
+}
 ```
 
-However, there's no shuffle method for us to take advantage of in the standard library, so we'll have to write our own. The shuffle method we'll be creating illustrates several techniques that you'll use with LINQ-based programs, so let's explain each part of the method in steps.
+However, there's no shuffle method for us to take advantage of in the standard library, so we'll have to write our own. The shuffle method we'll be creating illustrates several techniques that you'll use with LINQ-based programs, so let's explain each part of this process in steps.
 
-The signature for the method creates an *extension method*:
+In order to add some functionality to how we interact with the IEnumerables we get back from our LINQ queries, we'll need to write some special kinds of methods called [extension methods](../../csharp/programming-guide/classes-and-structs/extension-methods.md). Briefly, an extension method is a special purpose *static method* that adds new functionality to an already-existing type without having to modify the original type you want to add functionality to.
+
+Let's give our extension methods a home: add a new *static* class file to your program called `Extensions.cs`.
 
 ```csharp
 public static IEnumerable<T> InterleaveSequenceWith<T>
     (this IEnumerable<T> first, IEnumerable<T> second)
 ```
 
-An extension method is a special purpose *static method.* You can see the addition of the `this` modifier on the first argument to the method. That means you call the method as though it were a member method of the type of the first argument.
+ You can see the addition of the `this` modifier on the first argument to the method. That means you call the method as though it were a member method of the type of the first argument.
 
 Extension methods can be declared only inside `static` classes, so let's create a new static class called `extensions` for this functionality. You'll add more extension methods as you continue this tutorial, and those will be placed in the same class.
 

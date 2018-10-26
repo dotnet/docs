@@ -51,7 +51,7 @@ The first step is to create the application infrastructure, which includes an ap
 
       The **New Project** dialog opens.
 
-   2. Under the **Installed** category, expand either the **Visual C#** or **Visual Basic** node, and then select **Windows Classic Desktop**.
+   2. Under the **Installed** category, expand either the **Visual C#** or **Visual Basic** node, and then select **Windows Desktop**.
 
    3. Select the **WPF App (.NET Framework)** template. Enter the name **`ExpenseIt`** and then select **OK**.
 

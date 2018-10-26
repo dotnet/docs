@@ -59,7 +59,7 @@ In order to produce a library, omit the `<OutputType>` property. The main differ
 
 `PROJECT | SOLUTION`
 
-The project or solution file to build. If a project or solution file is not specified, MSBuild searches the current working directory for a file that has a file extension that ends in *proj* and uses that file.
+The project or solution file to build. If a project or solution file is not specified, MSBuild searches the current working directory for a file that has a file extension that ends in either *proj* or *sln* and uses that file.
 
 ## Options
 

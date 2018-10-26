@@ -137,9 +137,6 @@
         <Attribute FrameworkAlternate="xamarinios-10.8">
           <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="">
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(System.Net.Http.NSUrlSessionHandler/&lt;SendAsync&gt;c__async1))</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt;</ReturnType>

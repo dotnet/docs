@@ -22,11 +22,6 @@
     <BaseTypeName>System.ServiceModel.Syndication.CategoriesDocument</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.8">
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Represents a &lt;<see langword="atom:categories" />&gt; element within a service document.</summary>
     <remarks>To be added.</remarks>
@@ -61,11 +56,6 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.8">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" /> class.</summary>
@@ -93,11 +83,6 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.8">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="categories" Type="System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Syndication.SyndicationCategory&gt;" />
       </Parameters>
@@ -223,14 +208,6 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.8">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.8">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -261,14 +238,6 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.8">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.8">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

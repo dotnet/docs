@@ -201,7 +201,8 @@
       <Docs>
         <param name="result">The <see cref="T:System.IO.Pipelines.ReadResult" /></param>
         <summary>Attempts to synchronously read data the <see cref="T:System.IO.Pipelines.PipeReader" />.</summary>
-        <returns><see langword="true" /> if data was available, or if the call was canceled or the writer was completed; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if data was available, or if the call was canceled or the writer was completed; otherwise, <see langword="false" />.</returns>
         <remarks>If the pipe returns <see langword="false" />, there's no need to call <see cref="M:System.IO.Pipelines.PipeReader.AdvanceTo(System.SequencePosition,System.SequencePosition)" />.</remarks>
       </Docs>
     </Member>

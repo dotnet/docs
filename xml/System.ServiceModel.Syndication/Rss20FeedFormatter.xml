@@ -30,11 +30,8 @@
     <Attribute FrameworkAlternate="xamarinmac-3.0">
       <AttributeName>System.Xml.Serialization.XmlRoot("rss", Namespace="")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.8">
+    <Attribute FrameworkAlternate="netframework-3.5">
       <AttributeName>System.Xml.Serialization.XmlRoot(ElementName="rss", Namespace="")</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.8">
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -123,11 +120,6 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.8">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="feedToWrite" Type="System.ServiceModel.Syndication.SyndicationFeed" />
       </Parameters>
@@ -335,11 +327,6 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.8">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
@@ -370,14 +357,6 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.8">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.8">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -415,14 +394,6 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.8">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.8">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -591,14 +562,6 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.8">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.8">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>

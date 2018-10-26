@@ -459,6 +459,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RaiseLiveRegionChanged">
+      <MemberSignature Language="C#" Value="public override bool RaiseLiveRegionChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool RaiseLiveRegionChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlAccessibleObject.RaiseLiveRegionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function RaiseLiveRegionChanged () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool RaiseLiveRegionChanged();" />
+      <MemberSignature Language="F#" Value="override this.RaiseLiveRegionChanged : unit -&gt; bool" Usage="controlAccessibleObject.RaiseLiveRegionChanged " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Role">
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleRole Role { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AccessibleRole Role" />

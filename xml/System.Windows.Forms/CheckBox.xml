@@ -993,6 +993,32 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="RescaleConstantsForDpi">
+      <MemberSignature Language="C#" Value="protected override void RescaleConstantsForDpi (int deviceDpiOld, int deviceDpiNew);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RescaleConstantsForDpi(int32 deviceDpiOld, int32 deviceDpiNew) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckBox.RescaleConstantsForDpi(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RescaleConstantsForDpi (deviceDpiOld As Integer, deviceDpiNew As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RescaleConstantsForDpi(int deviceDpiOld, int deviceDpiNew);" />
+      <MemberSignature Language="F#" Value="override this.RescaleConstantsForDpi : int * int -&gt; unit" Usage="checkBox.RescaleConstantsForDpi (deviceDpiOld, deviceDpiNew)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deviceDpiOld" Type="System.Int32" />
+        <Parameter Name="deviceDpiNew" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="deviceDpiOld">To be added.</param>
+        <param name="deviceDpiNew">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TextAlign">
       <MemberSignature Language="C#" Value="public override System.Drawing.ContentAlignment TextAlign { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.ContentAlignment TextAlign" />

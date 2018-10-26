@@ -83,7 +83,8 @@
       <Docs>
         <param name="error">An <see cref="T:System.Exception" /> indicating the failure causing no more data to be written, or null for success.</param>
         <summary>Attempts to mark the channel as being completed, meaning no more data will be written to it.</summary>
-        <returns><see langword="true" /> if this operation successfully completes the channel; otherwise, <see langword="false" /> if the channel could not be marked for completion,
+        <returns>
+          <see langword="true" /> if this operation successfully completes the channel; otherwise, <see langword="false" /> if the channel could not be marked for completion,
             for example due to having already been marked as such, or due to not supporting completion.
             </returns>
         <remarks>To be added.</remarks>
@@ -110,7 +111,8 @@
       <Docs>
         <param name="item">The item to write.</param>
         <summary>Attempts to write the specified item to the channel.</summary>
-        <returns><see langword="true" /> if the item was written; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the item was written; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

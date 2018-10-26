@@ -1388,6 +1388,64 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RescaleConstantsForDpi">
+      <MemberSignature Language="C#" Value="protected override void RescaleConstantsForDpi (int deviceDpiOld, int deviceDpiNew);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RescaleConstantsForDpi(int32 deviceDpiOld, int32 deviceDpiNew) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBar.RescaleConstantsForDpi(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RescaleConstantsForDpi (deviceDpiOld As Integer, deviceDpiNew As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RescaleConstantsForDpi(int deviceDpiOld, int deviceDpiNew);" />
+      <MemberSignature Language="F#" Value="override this.RescaleConstantsForDpi : int * int -&gt; unit" Usage="scrollBar.RescaleConstantsForDpi (deviceDpiOld, deviceDpiNew)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deviceDpiOld" Type="System.Int32" />
+        <Parameter Name="deviceDpiNew" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="deviceDpiOld">To be added.</param>
+        <param name="deviceDpiNew">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleScrollBarForDpiChange">
+      <MemberSignature Language="C#" Value="public bool ScaleScrollBarForDpiChange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ScaleScrollBarForDpiChange" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollBar.ScaleScrollBarForDpiChange" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScaleScrollBarForDpiChange As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ScaleScrollBarForDpiChange { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ScaleScrollBarForDpiChange : bool with get, set" Usage="System.Windows.Forms.ScrollBar.ScaleScrollBarForDpiChange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Scroll">
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ScrollEventHandler Scroll;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ScrollEventHandler Scroll" />

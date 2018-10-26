@@ -57,7 +57,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><see langword="true" /> if the current <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> operation was canceled; otherwise, <see langword="false" />.</summary>
+        <summary>
+          <see langword="true" /> if the current <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> operation was canceled; otherwise, <see langword="false" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -78,7 +79,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><see langword="true" /> if the <see cref="T:System.IO.Pipelines.PipeWriter" /> is complete; otherwise, <see langword="false" />.</summary>
+        <summary>
+          <see langword="true" /> if the <see cref="T:System.IO.Pipelines.PipeWriter" /> is complete; otherwise, <see langword="false" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

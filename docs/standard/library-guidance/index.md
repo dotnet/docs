@@ -12,7 +12,7 @@ This guidance provides recommendations for developers to create high-quality .NE
 Aspects of high-quality open-source .NET libraries:
 
 > [!div class="checklist"]
-> * **Inclusive** - Good .NET libraries strive to support many platforms and applications.
+> * **Inclusive** - Good .NET libraries strive to support many platforms, programming languages, and applications.
 > * **Stable** - Good .NET libraries coexist in the .NET ecosystem, running in applications built with many libraries.
 > * **Designed to evolve** - .NET libraries should improve and evolve over time, while supporting existing users.
 > * **Debuggable** - .NET libraries should use the latest tools to create a great debugging experience for users.

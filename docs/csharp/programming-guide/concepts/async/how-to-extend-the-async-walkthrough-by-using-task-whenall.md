@@ -100,7 +100,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
      The only difference from the `ProcessURLAsync` method in the previous procedure is the use of the <xref:System.Net.Http.HttpClient> instance, `client`.  
   
     ```csharp  
-    async Task<int> ProcessURL(string url, HttpClient client)  
+    async Task<int> ProcessURLAsync(string url, HttpClient client)  
     {  
         byte[] byteArray = await client.GetByteArrayAsync(url);  
         DisplayResults(url, byteArray);  
@@ -137,7 +137,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     ```csharp  
     // Create a query.  
     IEnumerable<Task<int>> downloadTasksQuery =   
-        from url in urlList select ProcessURL(url, client);  
+        from url in urlList select ProcessURLAsync(url, client);  
   
     // Use ToArray to execute the query and start the download tasks.  
     Task<int>[] downloadTasks = downloadTasksQuery.ToArray();  
@@ -351,7 +351,7 @@ namespace AsyncExampleWPF_HttpClient_WhenAll
   
             // Create a query.  
             IEnumerable<Task<int>> downloadTasksQuery =   
-                from url in urlList select ProcessURL(url, client);  
+                from url in urlList select ProcessURLAsync(url, client);  
   
             // Use ToArray to execute the query and start the download tasks.  
             Task<int>[] downloadTasks = downloadTasksQuery.ToArray();  
@@ -408,7 +408,7 @@ namespace AsyncExampleWPF_HttpClient_WhenAll
         }  
   
         // The actions from the foreach loop are moved to this async method.  
-        async Task<int> ProcessURL(string url, HttpClient client)  
+        async Task<int> ProcessURLAsync(string url, HttpClient client)  
         {  
             byte[] byteArray = await client.GetByteArrayAsync(url);  
             DisplayResults(url, byteArray);  

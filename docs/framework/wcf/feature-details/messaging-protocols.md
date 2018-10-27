@@ -41,18 +41,18 @@ Specification/document:
 
 The following XML namespaces and associated prefixes are used throughout this topic:
 
-|Prefix|Namespace Uniform Resource Identifier (URI)|
+| Prefix | Namespace Uniform Resource Identifier (URI) |
 [------------|---------------------------------------------------|
-|s11|`http://schemas.xmlsoap.org/soap/envelope`|
-|s12|`http://www.w3.org/2003/05/soap-envelope`|
-|wsa|`http://www.w3.org/2004/08/addressing`|
-|wsam|`http://www.w3.org/2007/05/addressing/metadata`|
-|wsap|`http://schemas.xmlsoap.org/ws/2004/09/policy/addressing`|
-|wsa10|`http://www.w3.org/2005/08/addressing`|
-|wsaw10|`http://www.w3.org/2006/05/addressing/wsdl`|
-|xop|`http://www.w3.org/2004/08/xop/include`|
-|xmime|`http://www.w3.org/2004/06/xmlmime`<br /><br /> `http://www.w3.org/2005/05/xmlmime`|
-|dp|`http://schemas.microsoft.com/net/2006/06/duplex`|
+| s11 | `http://schemas.xmlsoap.org/soap/envelope` |
+| s12 |`http://www.w3.org/2003/05/soap-envelope` |
+| wsa |`http://www.w3.org/2004/08/addressing` |
+| wsam |`http://www.w3.org/2007/05/addressing/metadata` |
+| wsap |`http://schemas.xmlsoap.org/ws/2004/09/policy/addressing` |
+| wsa10 |`http://www.w3.org/2005/08/addressing` |
+| wsaw10 |`http://www.w3.org/2006/05/addressing/wsdl` |
+| xop |`http://www.w3.org/2004/08/xop/include` |
+| xmime |`http://www.w3.org/2004/06/xmlmime`<br /><br /> `http://www.w3.org/2005/05/xmlmime` |
+| dp |`http://schemas.microsoft.com/net/2006/06/duplex` |
 
 ## SOAP 1.1 and SOAP 1.2
 
@@ -195,20 +195,20 @@ When a WCF endpoint is configured for a message with a given `Action` to follow 
 ### Web Services Addressing Faults
 R3411: WCF produces the following faults defined by WS-Addressing 2004/08.
 
-|Code|Cause|
+| Code | Cause |
 |----------|-----------|
-|`wsa:DestinationUnreachable`|The message arrived with a `ReplyTo` that is different from the reply address established for this channel; there is no endpoint listening at the address specified in the To header.|
-|`wsa:ActionNotSupported`|the infrastructure channels or dispatcher associated with the endpoint do not recognize the action specified in the `Action` header.|
+| `wsa:DestinationUnreachable` | The message arrived with a `ReplyTo` that is different from the reply address established for this channel; there is no endpoint listening at the address specified in the To header. |
+| `wsa:ActionNotSupported` | the infrastructure channels or dispatcher associated with the endpoint do not recognize the action specified in the `Action` header. |
 
 R3412: WCF produces the following faults defined by WS-Addressing 1.0.
 
-|Code|Cause|
+| Code | Cause |
 |----------|-----------|
-|`wsa10:InvalidAddressingHeader`|Duplicate `wsa:To`, `wsa:ReplyTo`, `wsa:From` or `wsa:MessageID`. Duplicate `wsa:RelatesTo` with the same `RelationshipType`.|
-|`wsa10:MessageAddressingHeaderRequired`|The required Addressing header is missing.|
-|`wsa10:DestinationUnreachable`|The message arrived with a `ReplyTo` that is different from the reply address established for this channel. There is no endpoint listening at the address specified in the To header.|
-|`wsa10:ActionNotSupported`|An action specified in the `Action` header is not recognized by the infrastructure channels or dispatcher associated with the endpoint.|
-|`wsa10:EndpointUnavailable`|The RM channel sends this fault back, indicating the endpoint will not process the sequence based upon examination of the `CreateSequence` message’s addressing headers.|
+| `wsa10:InvalidAddressingHeader` | Duplicate `wsa:To`, `wsa:ReplyTo`, `wsa:From` or `wsa:MessageID`. Duplicate `wsa:RelatesTo` with the same `RelationshipType`. |
+| `wsa10:MessageAddressingHeaderRequired` | The required Addressing header is missing. |
+| `wsa10:DestinationUnreachable` | The message arrived with a `ReplyTo` that is different from the reply address established for this channel. There is no endpoint listening at the address specified in the To header. |
+| `wsa10:ActionNotSupported` | An action specified in the `Action` header is not recognized by the infrastructure channels or dispatcher associated with the endpoint. |
+| `wsa10:EndpointUnavailable` | The RM channel sends this fault back, indicating the endpoint will not process the sequence based upon examination of the `CreateSequence` message’s addressing headers. |
 
 Code in the preceding tables maps to `FaultCode` in SOAP 1.1 and `SubCode` (with Code=Sender) in SOAP 1.2.
 

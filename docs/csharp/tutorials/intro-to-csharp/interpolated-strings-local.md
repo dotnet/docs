@@ -1,16 +1,15 @@
 ---
-title: String interpolation tutorial - C# local quickstarts
-description: This quickstart shows you how to use C# string interpolation feature to include formatted expression results in a larger string.
+title: String interpolation - C# tutorial
+description: This tutorial shows you how to use the C# string interpolation feature to include formatted expression results in a larger string.
 author: rpetrusha
 ms.author: ronpet
-ms.date: 04/14/2018
-ms.custom: mvc
+ms.date: 10/23/2018
 ---
-# String interpolation
+# Use string interpolation to construct formatted strings
 
-This quickstart teaches you how to use C# [string interpolation](../language-reference/tokens/interpolated.md) to insert values into a single result string. You write C# code and see the results of compiling and running it. The quickstart contains a series of lessons that show you how to insert values into a string and format those values in different ways.
+This tutorial teaches you how to use C# [string interpolation](../../language-reference/tokens/interpolated.md) to insert values into a single result string. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that show you how to insert values into a string and format those values in different ways.
 
-This quickstart expects that you have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quickstarts](local-environment.md) with links to more details. You also can complete the [interactive version](interpolated-strings.yml) of this quickstart in your browser.
+This tutorial expects that you have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in [introduction to the local tutorials](local-environment.md), with links to more details. You also can complete the [interactive version](interpolated-strings.yml) of this tutorial in your browser.
 
 ## Create an interpolated string
 
@@ -43,19 +42,19 @@ Let's try a few more string interpolation examples with some other data types.
 
 In the previous section, you used string interpolation to insert one string inside of another. The result of an interpolated expression can be of any data type, though. Let's include values of various data types in an interpolated string.
 
-In the following example, first, we define a [class](../programming-guide/classes-and-structs/classes.md) data type `Vegetable` that has the `Name` [property](../properties.md) and the `ToString` [method](../methods.md), which [overrides](../language-reference/keywords/override.md) the behavior of the <xref:System.Object.ToString?displayProperty=nameWithType> method. The [`public` access modifier](../language-reference/keywords/public.md) makes that method available to any client code to get the string representation of a `Vegetable` instance. In the example the `Vegetable.ToString` method returns the value of the `Name` property that is initialized at the `Vegetable` [constructor](../programming-guide/classes-and-structs/constructors.md):
+In the following example, we first define a [class](../../programming-guide/classes-and-structs/classes.md) data type `Vegetable` that has a `Name` [property](../../properties.md) and a `ToString` [method](../../methods.md), which [overrides](../../language-reference/keywords/override.md) the behavior of the <xref:System.Object.ToString?displayProperty=nameWithType> method. The [`public` access modifier](../../language-reference/keywords/public.md) makes that method available to any client code to get the string representation of a `Vegetable` instance. In the example the `Vegetable.ToString` method returns the value of the `Name` property that is initialized at the `Vegetable` [constructor](../../programming-guide/classes-and-structs/constructors.md):
 
 ```csharp
 public Vegetable(string name) => Name = name;
 ```
 
-Then we create an instance of the `Vegetable` class by using [`new` keyword](../language-reference/keywords/new-operator.md) and providing a name parameter for the constructor `Vegetable`:
+Then we create an instance of the `Vegetable` class named `item` by using the [`new` keyword](../../language-reference/keywords/new-operator.md) and providing a name for the constructor `Vegetable`:
 
 ```csharp
 var item = new Vegetable("eggplant");
 ```
 
-Finally, we include the `item` variable into an interpolated string that also contains a <xref:System.DateTime> value, a <xref:System.Decimal> value, and a `Unit` [enumeration](../programming-guide/enumeration-types.md) value. Replace all of the C# code in your editor with the following code, and then use the `dotnet run` command to run it:
+Finally, we include the `item` variable into an interpolated string that also contains a <xref:System.DateTime> value, a <xref:System.Decimal> value, and a `Unit` [enumeration](../../programming-guide/enumeration-types.md) value. Replace all of the C# code in your editor with the following code, and then use the `dotnet run` command to run it:
 
 ```csharp
 using System;
@@ -100,9 +99,9 @@ In the previous section, two poorly formatted strings were inserted into the res
 Console.WriteLine($"On {date:d}, the price of {item} was {price:C2} per {unit}.");
 ```
 
-You specify a format string by following the interpolated expression with a colon (":") and the format string. "d" is a [standard date and time format string](../../standard/base-types/standard-date-and-time-format-strings.md#the-short-date-d-format-specifier) that represents the short date format. "C2" is a  [standard numeric format string](../../standard/base-types/standard-numeric-format-strings.md#the-currency-c-format-specifier) that represents a number as a currency value with two digits after the decimal point.
+You specify a format string by following the interpolated expression with a colon (":") and the format string. "d" is a [standard date and time format string](../../../standard/base-types/standard-date-and-time-format-strings.md#the-short-date-d-format-specifier) that represents the short date format. "C2" is a  [standard numeric format string](../../../standard/base-types/standard-numeric-format-strings.md#the-currency-c-format-specifier) that represents a number as a currency value with two digits after the decimal point.
 
-A number of types in the .NET libraries support a predefined set of format strings. These include all the numeric types and the date and time types. For a complete list of types that support format strings, see [Format Strings and .NET Class Library Types](../../standard/base-types/formatting-types.md#stringRef) in the [Formatting Types in .NET](../../standard/base-types/formatting-types.md) article.
+A number of types in the .NET libraries support a predefined set of format strings. These include all the numeric types and the date and time types. For a complete list of types that support format strings, see [Format Strings and .NET Class Library Types](../../../standard/base-types/formatting-types.md#stringRef) in the [Formatting Types in .NET](../../../standard/base-types/formatting-types.md) article.
 
 Try modifying the format strings in your text editor and, each time you make a change, rerun the program to see how the changes affect the formatting of the date and time and the numeric value. Change the "d" in `{date:d}` to "t" (to display the short time format), "y" (to display the year and month), and "yyyy" (to display the year as a four-digit number). Change the "C2" in `{price:C2}` to "e" (for exponential notation) and "F3" (for a numeric value with three digits after the decimal point).
 
@@ -160,8 +159,8 @@ The output looks something like the following:
 [04/14/2018          ] Hour [16        ] [       1,063.34] feet
 ```
 
-You've completed the string interpolation quickstart.
+You've completed the string interpolation tutorial.
 
-You can continue with the [List collection](arrays-and-collections.md) quickstart in your own development environment.
+You can continue with the [List collection](arrays-and-collections.md) tutorial in your own development environment.
 
-For more information, see the [String interpolation](../language-reference/tokens/interpolated.md) topic and the [String interpolation in C#](../tutorials/string-interpolation.md) tutorial.
+For more information, see the [String interpolation](../../language-reference/tokens/interpolated.md) topic and the [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial.

@@ -1,12 +1,12 @@
 ---
-title: Introduction to classes tutorial - C# local quickstarts
+title: Classes and objects  - Introduction to C# tutorial
 description: Create your first C# program and explore object oriented concepts
 ms.date: 10/11/2017
 ms.custom: mvc
 ---
-# Introduction to classes
+# Explore object oriented programming with classes and objects
 
-This quickstart expects that you have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quickstarts](local-environment.md) with links to more details.
+This tutorial expects that you have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [Become familiar with the development tools](local-environment.md) with links to more details.
 
 ## Create your application
 
@@ -27,9 +27,9 @@ namespace classes
 }
 ```
 
-In this quickstart, you're going to create new types that represent a bank account. Typically developers define each class in a different text file. That makes it easier to manage as a program grows in size.  Create a new file named **BankAccount.cs** in the **classes** directory. 
+In this tutorial, you're going to create new types that represent a bank account. Typically developers define each class in a different text file. That makes it easier to manage as a program grows in size.  Create a new file named **BankAccount.cs** in the **classes** directory. 
 
-This file will contain the definition of a ***bank account***. Object Oriented programming organizes code by creating types in the form of ***classes***. These classes contain the code that represents a specific entity. The `BankAccount` class represents a bank account. The code implements specific operations through methods and properties. In this quickstart, the bank account supports this behavior:
+This file will contain the definition of a ***bank account***. Object Oriented programming organizes code by creating types in the form of ***classes***. These classes contain the code that represents a specific entity. The `BankAccount` class represents a bank account. The code implements specific operations through methods and properties. In this tutorial, the bank account supports this behavior:
 
 1. It has a 10-digit number that uniquely identifies the bank account.
 1. It has a string that stores the name or names of the owners.
@@ -65,7 +65,7 @@ namespace classes
 }
 ```
 
-Before going on, let's take a look at what you've built.  The `namespace` declaration provides a way to logically organize your code. This quickstart is relatively small, so you'll put all the code in one namespace. 
+Before going on, let's take a look at what you've built.  The `namespace` declaration provides a way to logically organize your code. This tutorial is relatively small, so you'll put all the code in one namespace. 
 
 `public class BankAccount` defines the class, or type, you are creating. Everything inside the `{` and `}` that follows the class declaration defines the behavior of the class. There are five ***members*** of the `BankAccount` class. The first three are ***properties***. Properties are data elements and can have code that enforces validation or other rules. The last two are ***methods***. Methods are blocks of code that perform a single function. Reading the names of each of the members should provide enough information for you or another developer to understand what the class does.
 
@@ -83,7 +83,7 @@ public BankAccount(string name, decimal initialBalance)
 }
 ```
 
-Constructors are called when you create an object using [`new`](../language-reference/keywords/new.md). Replace the line `Console.WriteLine("Hello World!");` in ***program.cs*** with the following line (replace `<name>` with your name):
+Constructors are called when you create an object using [`new`](../../language-reference/keywords/new.md). Replace the line `Console.WriteLine("Hello World!");` in ***program.cs*** with the following line (replace `<name>` with your name):
 
 ```csharp
 var account = new BankAccount("<name>", 1000);
@@ -115,11 +115,11 @@ Your bank account class needs to accept deposits and withdrawals to work correct
 
 Let's start by creating a new type to represent a transaction. This is a simple type that doesn't have any responsibilities. It needs a few properties. Create a new file named ***Transaction.cs***. Add the following code to it:
 
-[!code-csharp[Transaction](../../../samples/csharp/classes-quickstart/Transaction.cs "Transaction declaration")]
+[!code-csharp[Transaction](../../../../samples/csharp/classes-quickstart/Transaction.cs "Transaction declaration")]
 
 Now, let's add a <xref:System.Collections.Generic.List%601> of `Transaction` objects to the `BankAccount` class. Add the following declaration:
 
-[!code-csharp[TransactionDecl](../../../samples/csharp/classes-quickstart/BankAccount.cs#TransactionDeclaration "Transaction declaration")]
+[!code-csharp[TransactionDecl](../../../../samples/csharp/classes-quickstart/BankAccount.cs#TransactionDeclaration "Transaction declaration")]
 
 The <xref:System.Collections.Generic.List%601> class requires you to import a different namespace. Add the following at the beginning of **BankAccount.cs**:
 
@@ -129,7 +129,7 @@ using System.Collections.Generic;
 
 Now, let's change how the `Balance` is reported.  It can be found by summing the values of all transactions. Modify the declaration of `Balance` in the `BankAccount` class to the following:
 
-[!code-csharp[BalanceComputation](../../../samples/csharp/classes-quickstart/BankAccount.cs#BalanceComputation "Computing the balance")]
+[!code-csharp[BalanceComputation](../../../../samples/csharp/classes-quickstart/BankAccount.cs#BalanceComputation "Computing the balance")]
 
 This example shows an important aspect of ***properties***. You're now computing the balance when another programmer asks for the value. Your computation enumerates all transactions, and provides the sum as the current balance.
 
@@ -137,13 +137,13 @@ Next, implement the `MakeDeposit` and `MakeWithdrawal` methods. These methods wi
 
 This introduces the concept of ***exceptions***. The standard way of indicating that a method cannot complete its work successfully is to throw an exception. The type of exception and the message associated with it describe the error. Here, the `MakeDeposit` method throws an exception if the amount of the deposit is negative. The `MakeWithdrawal` method throws an exception if the withdrawal amount is negative, or if applying the withdrawal results in a negative balance:
 
-[!code-csharp[DepositAndWithdrawal](../../../samples/csharp/classes-quickstart/BankAccount.cs#DepositAndWithdrawal "Make deposits and withdrawals")]
+[!code-csharp[DepositAndWithdrawal](../../../../samples/csharp/classes-quickstart/BankAccount.cs#DepositAndWithdrawal "Make deposits and withdrawals")]
 
-The [`throw`](../language-reference/keywords/throw.md) statement **throws** an exception. Execution of the current method ends, and will resume when a matching `catch` block is found. You'll add a `catch` block to test this code a little later on.
+The [`throw`](../../language-reference/keywords/throw.md) statement **throws** an exception. Execution of the current block ends, and control transfers to the first matching `catch` block found in the call stack. You'll add a `catch` block to test this code a little later on.
 
 The constructor should get one change so that it adds an initial transaction, rather than updating the balance directly. Since you already wrote the `MakeDeposit` method, call it from your constructor. The finished constructor should look like this:
 
-[!code-csharp[Constructor](../../../samples/csharp/classes-quickstart/BankAccount.cs#Constructor "The final version of the constructor")]
+[!code-csharp[Constructor](../../../../samples/csharp/classes-quickstart/BankAccount.cs#Constructor "The final version of the constructor")]
 
 <xref:System.DateTime.Now?displayProperty=nameWithType> is a property that returns the current date and time. Test this by adding a few deposits and withdrawals in your `Main` method:
 
@@ -169,7 +169,7 @@ catch (ArgumentOutOfRangeException e)
 }
 ```
 
-You use the [`try` and `catch` statements](../language-reference/keywords/try-catch.md) to mark a block of code that may throw exceptions, and to catch those errors that you expect. You can use the same technique to test the code that throws for a negative balance:
+You use the [`try` and `catch` statements](../../language-reference/keywords/try-catch.md) to mark a block of code that may throw exceptions and to catch those errors that you expect. You can use the same technique to test the code that throws an exception for a negative balance:
 
 ```csharp
 // Test for a negative balance
@@ -188,11 +188,11 @@ Save the file and type `dotnet run` to try it.
 
 ## Challenge - log all transactions
 
-To finish this quickstart, you can write the `GetAccountHistory` method that creates a `string` for the transaction history. Add this method to the `BankAccount` type:
+To finish this tutorial, you can write the `GetAccountHistory` method that creates a `string` for the transaction history. Add this method to the `BankAccount` type:
 
-[!code-csharp[History](../../../samples/csharp/classes-quickstart/BankAccount.cs#History "Display transaction history")]
+[!code-csharp[History](../../../../samples/csharp/classes-quickstart/BankAccount.cs#History "Display transaction history")]
 
-This uses the <xref:System.Text.StringBuilder> class to format a string that contains one line for each transaction. You've seen the string formatting code earlier in these quickstarts. One new character is `\t`. That inserts a tab to format the output.
+This uses the <xref:System.Text.StringBuilder> class to format a string that contains one line for each transaction. You've seen the string formatting code earlier in these tutorials. One new character is `\t`. That inserts a tab to format the output.
 
 Add this line to test it in **Program.cs**:
 
@@ -204,6 +204,6 @@ Type `dotnet run` to see the results.
 
 ## Next Steps
 
-If you got stuck, you can see the source for this quickstart [in our GitHub repo](https://github.com/dotnet/samples/tree/master/csharp/classes-quickstart/)
+If you got stuck, you can see the source for this tutorial [in our GitHub repo](https://github.com/dotnet/samples/tree/master/csharp/classes-quickstart/)
 
-Congratulations, you've finished all our Quickstarts. If you're eager to learn more, try our [tutorials](../tutorials/index.md)
+Congratulations, you've finished all our introduction to C# tutorials. If you're eager to learn more, try more of our [tutorials](../index.md)

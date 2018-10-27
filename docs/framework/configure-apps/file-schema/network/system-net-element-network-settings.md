@@ -87,4 +87,4 @@ Contains settings that specify how the .NET Framework connects to the network.
 ```  
   
 ## See Also  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

@@ -218,7 +218,7 @@ public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params st
 
 ## PLINQ
 
-PLINQ, or Parallel LINQ, is a parallel execution engine for LINQ expressions. In other words, a regular LINQ expressions can be trivially parallelized across any number of threads. This is accomplished via a call to `AsParallel()` preceding the expression.
+PLINQ, or Parallel LINQ, is a parallel execution engine for LINQ expressions. In other words, a regular LINQ expression can be trivially parallelized across any number of threads. This is accomplished via a call to `AsParallel()` preceding the expression.
 
 Consider the following:
 

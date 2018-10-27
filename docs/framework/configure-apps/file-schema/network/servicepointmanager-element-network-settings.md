@@ -61,6 +61,6 @@ Configures connections to network resources.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## See Also  
- <xref:System.Net.ServicePointManager>  
- <xref:System.Net.Security.EncryptionPolicy>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.ServicePointManager>  
+- <xref:System.Net.Security.EncryptionPolicy>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

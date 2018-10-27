@@ -4,18 +4,19 @@ ms.date: "03/30/2017"
 ms.assetid: f0370e08-9fa6-4ee5-ab78-9a58a20a7da2
 ---
 # Peer Name Publication and Resolution
-## Publishing a Peer Name  
+
+## Publishing a peer name  
+
  To publish a new PNRP ID, a peer performs the following:  
   
 -   Sends PNRP publication messages to its cache neighbors (the peers that have registered PNRP IDs in the lowest level of the cache) to seed their caches.  
   
 -   Chooses random nodes in the cloud that are not its neighbors and sends them PNRP name resolution requests for its own P2P ID. The resulting endpoint determination process seeds the caches of random nodes in the cloud with the PNRP ID of the publishing peer.  
   
--  
+PNRP version 2 nodes do not publish PNRP IDs if they are only resolving other P2P IDs. The HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PeerNet\PNRP\IPV6-Global\SearchOnly=1 registry value (REG_DWORD type) specifies that peers only use PNRP for name resolution, never for name publication. This registry value can also be configured through Group Policy.  
   
- PNRP version 2 nodes do not publish PNRP IDs if they are only resolving other P2P IDs. The HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PeerNet\PNRP\IPV6-Global\SearchOnly=1 registry value (REG_DWORD type) specifies that peers only use PNRP for name resolution, never for name publication. This registry value can also be configured through Group Policy.  
-  
-## Resolving a Peer Name  
+## Resolving a peer name
+
  Locating other peers in a PNRP network or cloud is a process comprised of two phases:  
   
 1.  Endpoint Determination  
@@ -36,11 +37,9 @@ ms.assetid: f0370e08-9fa6-4ee5-ab78-9a58a20a7da2
   
 -   If the PNRP ID is not found and there is no PNRP ID in its cache that is closer to the target PNRP ID, the requested peer sends the requesting peer a response that indicates this condition. The requesting peer then chooses the next-closest PNRP ID.  
   
--  
-  
- The requesting peer continues this process with successive iterations, eventually locating the node that registered the PNRP ID.  
+The requesting peer continues this process with successive iterations, eventually locating the node that registered the PNRP ID.  
   
  Within the <xref:System.Net.PeerToPeer> namespace, there is a many-to-many relationship between the <xref:System.Net.PeerToPeer.PeerName> records that contain endpoints and PNRP clouds or meshes in which they communicate. When there are duplicate or stale entries, or multiple nodes with the same peer name, PNRP nodes can obtain current information using the <xref:System.Net.PeerToPeer.PeerNameResolver> class. The <xref:System.Net.PeerToPeer.PeerNameResolver> methods use a single peer name to simplify the perspective to one peer-to-many peer name records and the same one peer to many clouds. This is similar to a query performed using a relational-table join. Upon successful completion, the Resolver object returns a <xref:System.Net.PeerToPeer.PeerNameRecordCollection> for the specified peer name.  For example, a peer name would occur in all the peer name records in the collection, ordered by cloud. These are the instances of the peer name whose supporting data may be requested by a PNRP-based application.  
   
-## See Also  
- <xref:System.Net.PeerToPeer>
+## See also  
+- <xref:System.Net.PeerToPeer>

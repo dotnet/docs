@@ -64,5 +64,5 @@ Removes all registered Web request modules from the application.
 ```  
   
 ## See Also  
- <xref:System.Net.WebRequest>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.WebRequest>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

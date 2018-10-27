@@ -6,7 +6,7 @@ ms.assetid: dc41f6f7-cabc-4a64-9fa0-ceabf861b348
 # &lt;security&gt; of &lt;netHttpBinding
 Defines the security capabilities of the [\<basicHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md).  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<bindings>  
 \<netHttpBinding>  
 \<binding>  
@@ -33,7 +33,7 @@ Defines the security capabilities of the [\<basicHttpBinding>](../../../../../do
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|mode|Optional. Specifies the type of security that is used. The default is `None`. This attribute is of type <!--zz <xref:System.ServiceModel.NetHttpSecurityMode> -->`System.ServiceModel.NetHttpSecurityMode`.|
+|mode|Optional. Specifies the type of security that is used. The default is `None`. This attribute is of type <xref:System.ServiceModel.BasicHttpSecurityMode>.|
   
 ## mode Attribute  
   

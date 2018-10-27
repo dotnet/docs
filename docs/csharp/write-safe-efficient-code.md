@@ -69,7 +69,7 @@ Follow this recommendation whenever your design intent is to create an immutable
 You can return values by reference when the value being returned isn't local to the returning method. Returning by reference means that only the reference is copied, not the structure. In the following example, the `Origin` property can't use a `ref` return because the value being returned is a local variable:
 
 ```csharp
-public Point3D Origin {get;} => new Point3D(0,0,0);
+public Point3D Origin => new Point3D(0,0,0);
 ```
 
 However, the following property definition can be returned by reference because the returned value is a static member:
@@ -80,7 +80,7 @@ public struct Point3D
     private static Point3D origin = new Point3D(0,0,0);
 
     // Dangerous! returning a mutable reference to internal storage
-    public ref Point3D Origin { get; } => ref origin;
+    public ref Point3D Origin => ref origin;
 
     // other members removed for space
 }
@@ -93,13 +93,13 @@ public struct Point3D
 {
     private static Point3D origin = new Point3D(0,0,0);
 
-    public ref readonly Point3D Origin { get; } => ref origin;
+    public ref readonly Point3D Origin => ref origin;
 
     // other members removed for space
 }
 ```
 
-Returning by `readonly ref` enables you to save copying larger structures and preserve the immutability of your internal data members.
+Returning `ref readonly` enables you to save copying larger structures and preserve the immutability of your internal data members.
 
 At the call site, callers make the choice to use the `Origin` property as a `readonly ref` or as a value:
 
@@ -140,7 +140,11 @@ expresses a different intent:
 Add the `in` modifier to pass an argument by reference and declare
 your design intent to pass arguments by reference to
 avoid unnecessary copying. You don't intend to modify the object used
-as that argument. The following code shows an example of a method
+as that argument.
+
+This practice often improves performance for readonly value types that are larger than <xref:System.IntPtr.Size?displayProperty=nameWithType>. For simple types (`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`, `float`, `double`, `decimal` and `bool`, and `enum` types), any potential performance gains are minimial. In fact, performance may degrade by using pass-by-reference for types smaller than <xref:System.IntPtr.Size?displayProperty=nameWithType>.
+
+The following code shows an example of a method
 that calculates the distance between two points in 3D space.
 
 [!code-csharp[InArgument](../../samples/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#InArgument "Specifying an in argument")]

@@ -25,22 +25,18 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used to specify the type of data to associate with a data column or a parameter. You use the ttribute class to specify the data type you want to associate with the data field or parameter. You select the data type from this enumeration.  
+ This enumeration is used to specify the type of data to associate with a data column or a parameter. You use the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute class to specify the data type you want to associate with the data field or parameter. You select the data type from this enumeration.  
   
- The ttribute attribute lets you mark fields by using a type that is more specific than the database intrinsic types. For example, a string data field that contains email addresses can be attributed with the EmailAddress type. This information can be accessed by the field templates and modify how the data field is processed.  
-  
- The following table lists the data types Dynamic Data provides.  
-  
-   
-  
+ The <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute lets you mark fields by using a type that is more specific than the database intrinsic types. For example, a string data field that contains email addresses can be attributed with the  <xref:System.ComponentModel.DataAnnotations.DataType.EmailAddress> enumerated value. This information can be accessed by the field templates and modify how the data field is processed.  
+
 ## Examples  
- The following example uses the ttribute to customize the display of EmailAddress data field of the customer table in the AdventureWorksLT database. The email addresses are shown as hyperlinks instead of the simple text that ASP.NET Dynamic Data would have inferred from the intrinsic data type.  
+ The following example uses the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to customize the display of EmailAddress data field of the customer table in the AdventureWorksLT database. The email addresses are shown as hyperlinks instead of the simple text that ASP.NET Dynamic Data would have inferred from the intrinsic data type.  
   
  The example code:  
   
 -   Implements a metadata partial class for the related table and the associated metadata class.  
   
--   Applies the ttribute attribute to the EmailAddress data field by specifying the EmailAddress enumerated value in the associated metadata class. This indicates to the Text.ascx field template that the email address display is customized.  
+-   Applies the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to the EmailAddress data field by specifying the <xref:System.ComponentModel.DataAnnotations.DataType.EmailAddress> enumerated value in the associated metadata class. This indicates to the Text.ascx field template that the email address display is customized.  
   
  [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Customer.cs#1)]
  [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Customer.vb#1)]  
@@ -53,7 +49,7 @@
   
 -   A Dynamic Data Web site. This enables you to create a data context for the database and the class that contains the data field to customize and the methods to override. In addition, it creates the environment in which to use the page described before. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](http://msdn.microsoft.com/library/1564aef2-9103-436a-9806-c8ad7abd616a).  
   
- For the complete code example that the field template uses to customize the display of the EmailAddress data fields, see ttribute.  
+ For the complete code example that the field template uses to customize the display of the EmailAddress data fields, see the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute.  
   
  ]]></format>
     </remarks>

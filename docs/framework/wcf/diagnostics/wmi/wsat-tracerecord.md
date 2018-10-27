@@ -8,7 +8,7 @@ WSAT_TraceRecord
   
 ## Syntax  
   
-```  
+```csharp
 class WSAT_TraceRecord : WSAT_TraceEvent  
 {  
   object ActivityID;  

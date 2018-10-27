@@ -8,7 +8,7 @@ BindingElement
   
 ## Syntax  
   
-```  
+```csharp  
 class BindingElement  
 {  
 };  

@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Hosting a WPF Composite Control in Windows Forms"
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "hosting WPF content in Windows Forms [WPF]"
 ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
 ---
@@ -21,9 +21,8 @@ ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
  For a complete code listing of the tasks illustrated in this walkthrough, see [Hosting a WPF Composite Control in Windows Forms Sample](https://go.microsoft.com/fwlink/?LinkID=159996).  
   
 ## Prerequisites  
- You need the following components to complete this walkthrough:  
-  
--   [!INCLUDE[vs_dev10_long](../../../../includes/vs-dev10-long-md.md)].  
+
+You need Visual Studio to complete this walkthrough.  
   
 ## Implementing the WPF Composite Control  
  The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] composite control used in this example is a simple data-entry form that takes the user's name and address. When the user clicks one of two buttons to indicate that the task is finished, the control raises a custom event to return that information to the host. The following illustration shows the rendered control.  

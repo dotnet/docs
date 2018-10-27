@@ -2,7 +2,6 @@
 title: "System.ServiceModel.Security.SecuritySessionRedirectApplied"
 ms.date: "03/30/2017"
 ms.assetid: b22736bc-61a3-47c7-8c13-e02e9f6848ef
-author: "BrucePerlerMS"
 ---
 # System.ServiceModel.Security.SecuritySessionRedirectApplied
 System.ServiceModel.Security.SecuritySessionRedirectApplied  

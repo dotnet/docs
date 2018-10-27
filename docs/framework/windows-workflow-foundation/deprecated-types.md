@@ -25,7 +25,7 @@ In .NET 4 the Workflow Team released an all new Workflow engine in the <xref:Sys
   
  As a result, customers who are using the deprecated WF 3 APIs will encounter build warnings with a message similar to the following:  
   
- **Warning BC40000: X is obsolete: WF 3 types are deprecated. Please use WF 4 instead.** We will remove the types from the .NET Framework in a future release, but we have not yet determined that timeframe (not in 4.5). This current step allows us to communicate our direction to our customers and allow them plenty of time to move to the new WF4 model. We will, of course, continue to support these WF 3 types under the [Microsoft Support Lifecycle Policy](https://aka.ms/MicrosoftSupportLifecycle). Existing WF3 applications will run without issue on .NET 4.5, and [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)] will support new and existing WF3-based solutions.  
+ **Warning BC40000: X is obsolete: WF 3 types are deprecated. Please use WF 4 instead.** We will remove the types from the .NET Framework in a future release, but we have not yet determined that timeframe (not in 4.5). This current step allows us to communicate our direction to our customers and allow them plenty of time to move to the new WF4 model. We will, of course, continue to support these WF 3 types under the [Microsoft Support Lifecycle Policy](https://aka.ms/MicrosoftSupportLifecycle). Existing WF3 applications will run without issue on .NET 4.5, and Visual Studio 2012 will support new and existing WF3-based solutions.  
   
  Rules related types in the <xref:System.Workflow.Activities.Rules> namespace, which do not have a replacement in WF 4.5, have not been deprecated.  
   

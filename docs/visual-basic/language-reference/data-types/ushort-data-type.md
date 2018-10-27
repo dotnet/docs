@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "UShort data type"
   - "US literal type characters [Visual Basic]"
 ms.assetid: 138db892-665d-4ba8-9cae-d8d91c4a8f39
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # UShort data type (Visual Basic)
 

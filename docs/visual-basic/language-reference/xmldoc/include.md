@@ -31,7 +31,7 @@ Refers to another file that describes the types and members in your source code.
 ## Remarks  
  Use the `<include>` tag to refer to comments in another file that describe the types and members in your source code. This is an alternative to placing documentation comments directly in your source code file.  
   
- The `<include>` tag uses the W3C XML Path Language (XPath) Version 1.0 Recommendation. More information for ways to customize your `<include>` use is available at http://www.w3.org/TR/xpath.  
+ The `<include>` tag uses the W3C XML Path Language (XPath) Version 1.0 Recommendation. For more information about ways to customize your `<include>` use, see <https://www.w3.org/TR/xpath>.  
   
 ## Example  
  This example uses the `<include>` tag to import member documentation comments from a file called `commentFile.xml`.  

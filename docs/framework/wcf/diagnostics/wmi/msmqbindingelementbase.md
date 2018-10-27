@@ -8,7 +8,7 @@ MsmqBindingElementBase
   
 ## Syntax  
   
-```  
+```csharp  
 class MsmqBindingElementBase : TransportBindingElement  
 {  
   string CustomDeadLetterQueue;  

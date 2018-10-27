@@ -77,7 +77,7 @@ Endpoints provide clients with access to the functionality a Windows Communicati
 ```  
   
 ## Example  
- The first endpoint definition shown in the following sample specifies a relative address, which means the endpoint address is a combination of the base address and the relative address following the rules of Uniform Resource Identifier (URI) composition. The relative address is empty (""), so the endpoint address is the same as the base address. The actual endpoint address is http://localhost:8000/servicemodelsamples/service.  
+ The first endpoint definition shown in the following sample specifies a relative address, which means the endpoint address is a combination of the base address and the relative address following the rules of Uniform Resource Identifier (URI) composition. The relative address is empty (""), so the endpoint address is the same as the base address. The actual endpoint address is `http://localhost:8000/servicemodelsamples/service`.  
   
 ```xml  
 <endpoint address=""   
@@ -86,7 +86,7 @@ Endpoints provide clients with access to the functionality a Windows Communicati
 ```  
   
 ## Example  
- The second endpoint definition also specifies a relative address, as shown in the following sample configuration. The relative address, "test", is appended to the base address. The actual endpoint address is http://localhost:8000/servicemodelsamples/service/test.  
+ The second endpoint definition also specifies a relative address, as shown in the following sample configuration. The relative address, "test", is appended to the base address. The actual endpoint address is `http://localhost:8000/servicemodelsamples/service/test`.  
   
 ```xml  
 <endpoint address="/test"  
@@ -95,7 +95,7 @@ Endpoints provide clients with access to the functionality a Windows Communicati
 ```  
   
 ## Example  
- The third endpoint definition specifies an absolute address, as shown in the following sample configuration. The base address plays no role in the address. The actual endpoint address is http://localhost:8001/hello/servicemodelsamples.  
+ The third endpoint definition specifies an absolute address, as shown in the following sample configuration. The base address plays no role in the address. The actual endpoint address is `http://localhost:8001/hello/servicemodelsamples`.  
   
 ```xml  
 <endpoint address="http://localhost:8001/hello/servicemodelsamples"  

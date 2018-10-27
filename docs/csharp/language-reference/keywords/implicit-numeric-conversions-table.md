@@ -42,7 +42,7 @@ The following table shows the predefined implicit conversions between .NET numer
   byte b = 300;   // CS0031: Constant value '300' cannot be converted to a 'byte'
   ```
 
-For more information about implicit conversions, see the [Implicit conversions](/dotnet/csharp/language-reference/language-specification/conversions#implicit-conversions) section of the [C# language specification](../language-specification/index.md).
+For more information about implicit conversions, see the [Implicit conversions](~/_csharplang/spec/conversions.md#implicit-conversions) section of the [C# language specification](../language-specification/index.md).
   
 ## See also
 

@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "-rootnamespace compiler option [Visual Basic]"
   - "rootnamespace compiler option [Visual Basic]"
 ms.assetid: e9245edf-6bef-420d-a7c7-324117752783
-author: rpetrusha
-ms.author: ronpet
 ---
 # -rootnamespace
 Specifies a namespace for all type declarations.  

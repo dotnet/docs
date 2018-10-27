@@ -86,7 +86,7 @@ The single default opt-in setting provided by setting `DpiAwareness` to `PerMoni
 ```xml
 <System.Windows.Forms.ApplicationConfigurationSection>
    <add key="DpiAwareness" value="PerMonitorV2" />
-   <--! Disable dynamic DPI support -->
+   <!-- Disable dynamic DPI support -->
    <add key="EnableWindowsFormsHighDpiAutoResizing" value="false" />
 </System.Windows.Forms.ApplicationConfigurationSection>
 ```

@@ -21,7 +21,7 @@ helpviewer_keywords:
 ms.assetid: 22e8965d-a712-42b3-8167-3ee346bd70f9
 ---
 # Encoding and Windows Forms Globalization
-Windows Forms applications are entirely Unicode-enabled, meaning that each character is represented by a unique number, no matter what the platform, program, or language. For more information about Unicode, see the [Unicode consortium Web site](http://www.unicode.org).  
+Windows Forms applications are entirely Unicode-enabled, meaning that each character is represented by a unique number, no matter what the platform, program, or language. For more information about Unicode, see the [Unicode consortium Web site](https://www.unicode.org).  
   
 ## Benefits of Unicode  
  The benefits of Unicode-enabled forms include the ability to work with scripts that are Unicode-only, such as Hindi. In addition, you can use multiple languages on a single form. In Unicode, all characters are two bytes long, so no special effort is needed to represent double-byte characters. You can also write a single set of code that will work on all platforms. This is a change from previous versions of Visual Basic, in which you had to write different code for different platforms, such as Windows NT and [!INCLUDE[win98](../../../../includes/win98-md.md)].  

@@ -74,7 +74,7 @@ Doesn't prompt for user input or confirmations.
 
 `-s|--source <SOURCE>`
 
-Specifies the server URL. Supported URLs for nuget.org include `http://www.nuget.org`, `http://www.nuget.org/api/v3`, and `http://www.nuget.org/api/v2/package`. For private feeds, replace the host name (for example, `%hostname%/api/v3`).
+Specifies the server URL. Supported URLs for nuget.org include `https://www.nuget.org`, `https://www.nuget.org/api/v3`, and `https://www.nuget.org/api/v2/package`. For private feeds, replace the host name (for example, `%hostname%/api/v3`).
 
 # [.NET Core 2.0](#tab/netcore20)
 
@@ -96,7 +96,7 @@ Doesn't prompt for user input or confirmations.
 
 `-s|--source <SOURCE>`
 
-Specifies the server URL. Supported URLs for nuget.org include `http://www.nuget.org`, `http://www.nuget.org/api/v3`, and `http://www.nuget.org/api/v2/package`. For private feeds, replace the host name (for example, `%hostname%/api/v3`).
+Specifies the server URL. Supported URLs for nuget.org include `https://www.nuget.org`, `https://www.nuget.org/api/v3`, and `https://www.nuget.org/api/v2/package`. For private feeds, replace the host name (for example, `%hostname%/api/v3`).
 
 # [.NET Core 1.x](#tab/netcore1x)
 
@@ -118,7 +118,7 @@ Doesn't prompt for user input or confirmations.
 
 `-s|--source <SOURCE>`
 
-Specifies the server URL. Supported URLs for nuget.org include `http://www.nuget.org`, `http://www.nuget.org/api/v3`, and `http://www.nuget.org/api/v2/package`. For private feeds, replace the host name (for example, `%hostname%/api/v3`).
+Specifies the server URL. Supported URLs for nuget.org include `https://www.nuget.org`, `https://www.nuget.org/api/v3`, and `https://www.nuget.org/api/v2/package`. For private feeds, replace the host name (for example, `%hostname%/api/v3`).
 
 ---
 

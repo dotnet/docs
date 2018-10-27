@@ -164,7 +164,7 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
 #### Preserving Type Information  
  As stated earlier, polymorphism is supported in JSON with some limitations. JavaScript is a weakly-typed language and type identity is normally not an issue. However, when using JSON to communicate between a strongly-typed system (.NET) and a weakly-typed system (JavaScript), it is useful to preserve type identity. For example, types with data contract names "Square" and "Circle" derive from a type with a data contract name of "Shape". If "Circle" is sent from .NET to JavaScript and is later returned to a .NET method that expects "Shape", it is useful for the .NET side to know that the object in question was originally a "Circle" - otherwise any information specific to the derived type (for example, "radius" data member on "Circle") may be lost.  
   
- To preserve type identity, when serializing complex types to JSON a "type hint" can be added, and the deserializer recognizes the hint and acts appropriately. The "type hint" is a JSON key/value pair with the key name of "__type" (two underscores followed by the word "type"). The value is a JSON string of the form "DataContractName:DataContractNamespace" (anything up to the first colon is the name). Using the earlier example, "Circle" can be serialized as follows.  
+ To preserve type identity, when serializing complex types to JSON a "type hint" can be added, and the deserializer recognizes the hint and acts appropriately. The "type hint" is a JSON key/value pair with the key name of "\_\_type" (two underscores followed by the word "type"). The value is a JSON string of the form "DataContractName:DataContractNamespace" (anything up to the first colon is the name). Using the earlier example, "Circle" can be serialized as follows.  
   
 ```json  
 {"__type":"Circle:http://example.com/myNamespace","x":50,"y":70,"radius":10}  
@@ -172,10 +172,10 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
   
  The type hint is very similar to the `xsi:type` attribute defined by the XML Schema Instance standard and used when serializing/deserializing XML.  
   
- Data members called "__type" are forbidden due to potential conflict with the type hint.  
+ Data members called "\_\_type" are forbidden due to potential conflict with the type hint.  
   
 #### Reducing the Size of Type Hints  
- To reduce the size of JSON messages, the default data contract namespace prefix (http://schemas.datacontract.org/2004/07/) is replaced with the "#" character. (To make this replacement reversible, an escaping rule is used: if the namespace starts with the "#" or "\\" characters, they are appended with an extra "\\" character). Thus, if "Circle" is a type in the .NET namespace "MyApp.Shapes", its default data contract namespace is http://schemas.datacontract.org/2004/07/MyApp. Shapes and the JSON representation is as follows.  
+ To reduce the size of JSON messages, the default data contract namespace prefix (`http://schemas.datacontract.org/2004/07/`) is replaced with the "#" character. (To make this replacement reversible, an escaping rule is used: if the namespace starts with the "#" or "\\" characters, they are appended with an extra "\\" character). Thus, if "Circle" is a type in the .NET namespace "MyApp.Shapes", its default data contract namespace is `http://schemas.datacontract.org/2004/07/MyApp`. Shapes and the JSON representation is as follows.  
   
 ```json  
 {"__type":"Circle:#MyApp.Shapes","x":50,"y":70,"radius":10}  
@@ -252,7 +252,8 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
  When serializing dictionary types, the JSON object that contains the "Key" and "Value" members is unaffected by the `alwaysEmitTypeInformation` setting and only contains a type hint when the preceding collection rules require it.  
   
 ### Valid JSON Key Names  
- The serializer XML-encodes key names that are not valid XML names. For example, a data member with the name of "123" would have an encoded name such as "_x0031\__x0032\__x0033\_" because "123" is an invalid XML element name (starts with a digit). A similar situation may arise with some international character sets not valid in XML names. For an explanation of this effect of XML on JSON processing, see [Mapping Between JSON and XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md).  
+ The serializer XML-encodes key names that are not valid XML names. For example, a data member with the name of "123" would have an encoded name such as "\_x0031\_\_x0032\_\_x0033\_" because "123" is an invalid XML element name (starts with a digit). A similar situation may arise with some international character sets not valid in XML names. For an explanation of this effect of XML on JSON processing, see [Mapping Between JSON and XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md).  
   
-## See Also  
- [Support for JSON and Other Data Transfer Formats](../../../../docs/framework/wcf/feature-details/support-for-json-and-other-data-transfer-formats.md)
+## See also  
+
+- [Support for JSON and Other Data Transfer Formats](../../../../docs/framework/wcf/feature-details/support-for-json-and-other-data-transfer-formats.md)

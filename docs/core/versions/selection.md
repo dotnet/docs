@@ -16,7 +16,7 @@ This article explains the policies used by the .NET Core tools, SDK, and runtime
 
 Version selection occurs:
 
-- When you run an SDK command, [the sdk uses the latest installed version](#the-sdk-uses-the-latest-installed-version).
+- When you run an SDK command, [the SDK uses the latest installed version](#the-sdk-uses-the-latest-installed-version).
 - When you build an assembly, [target framework monikers define build time APIs](#target-framework-monikers-define-build-time-apis).
 - When you run a .NET Core application, [target framework dependent apps roll forward](#framework-dependent-apps-roll-forward).
 - When you publish a self-contained application, [self-contained deployments include the selected runtime](#self-contained-deployments-include-the-selected-runtime).

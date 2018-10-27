@@ -14,7 +14,7 @@ The Stream sample demonstrates the use of streaming transfer mode communication.
 ## Streaming and Service Contracts  
  Streaming is something to be considered when designing a service contract. If an operation receives or returns large amounts of data, you should consider streaming this data to avoid high memory utilization due to buffering of input or output messages. To stream data, the parameter that holds that data must be the only parameter in the message. For example, if the input message is the one to be streamed, the operation must have exactly one input parameter. Similarly, if the output message is to be streamed, the operation must have either exactly one output parameter or a return value. In either case, the parameter or return value type must be either `Stream`, `Message`, or `IXmlSerializable`. The following is the service contract used in this streaming sample.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface IStreamingSample  
 {  
@@ -62,7 +62,7 @@ public interface IStreamingSample
   
  `GetReversedStream` creates and returns a new instance of `ReverseStream`. The actual processing happens as the system reads from that `ReverseStream` object. The `ReverseStream.Read` implementation reads a chunk of bytes from the underlying file, reverses them, then returns the reversed bytes. This does not reverse the entire file content; it reverses one chunk of bytes at a time. This is an example to show how you can perform stream processing as the content is being read or written from and to the stream.  
   
-```  
+```csharp
 class ReverseStream : Stream  
 {  
   
@@ -111,7 +111,7 @@ class ReverseStream : Stream
   
  Service Output:  
   
-```  
+```console  
 The streaming service is ready.  
 Press <ENTER> to terminate service.  
   
@@ -125,7 +125,7 @@ File D:\...\uploadedfile saved
   
  Client Output:  
   
-```  
+```console  
 Press <ENTER> when service is ready  
 ------ Using HTTP ------   
 Calling GetStream()  

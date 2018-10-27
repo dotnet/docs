@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "specifiedPickupDirectory element"
   - "<specifiedPickupDirectory> element"
 ms.assetid: 0121f49d-bff2-4bc6-af06-f1628dcd61f1
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;specifiedPickupDirectory&gt; Element (Network Settings)
 Configures the local directory for a Simple Mail Transport Protocol (SMTP) server.  
@@ -67,7 +65,7 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
 ```  
   
 ## See Also  
- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
- <xref:System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
+- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
+- <xref:System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement?displayProperty=nameWithType>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

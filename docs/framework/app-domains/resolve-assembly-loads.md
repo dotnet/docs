@@ -75,5 +75,5 @@ The .NET Framework provides the <xref:System.AppDomain.AssemblyResolve?displayPr
  [!code-vb[AssemblyResolveRecursive#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/assemblyresolverecursive/vb/example.vb#1)]  
   
 ## See Also  
- [Best Practices for Assembly Loading](../../../docs/framework/deployment/best-practices-for-assembly-loading.md)  
- [Using Application Domains](../../../docs/framework/app-domains/use.md)
+- [Best Practices for Assembly Loading](../../../docs/framework/deployment/best-practices-for-assembly-loading.md)  
+- [Using Application Domains](../../../docs/framework/app-domains/use.md)

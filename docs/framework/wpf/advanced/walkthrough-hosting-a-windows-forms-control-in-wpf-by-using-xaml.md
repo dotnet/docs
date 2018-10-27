@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Hosting a Windows Forms Control in WPF by Using XAML"
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "hosting Windows Forms control in WPF [WPF]"
 ms.assetid: 1aef42cb-4cfb-44b4-9a7a-c02632d3d9c7
 ---
@@ -13,9 +13,8 @@ ms.assetid: 1aef42cb-4cfb-44b4-9a7a-c02632d3d9c7
  For a complete code listing of the tasks shown in this walkthrough, see [Hosting a Windows Forms Control in WPF by Using XAML Sample](https://go.microsoft.com/fwlink/?LinkID=160000).  
   
 ## Prerequisites  
- You need the following components to complete this walkthrough:  
-  
--   [!INCLUDE[vs_dev10_long](../../../../includes/vs-dev10-long-md.md)].  
+
+You need Visual Studio to complete this walkthrough.  
   
 ## Hosting the Windows Forms Control  
   

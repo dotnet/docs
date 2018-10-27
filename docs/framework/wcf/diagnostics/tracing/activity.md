@@ -41,14 +41,14 @@ This topic describes activity traces in the Windows Communication Foundation (WC
   
  Developers can set the AID that is emitted with a trace by setting the <xref:System.Diagnostics.CorrelationManager.ActivityId%2A> property with a Guid on Thread Local Storage (TLS). The following example demonstrates this.  
   
-```  
+```csharp
 // set the current Activity ID to a new GUID.  
 CorrelationManager.ActivityId = Guid.NewGuid();  
-```  
+```
   
  Setting the gAId in TLS will be evident when traces are emitted using a trace source, as shown by the following example.  
   
-```  
+```csharp
 TraceSource traceSource = new TraceSource("myTraceSource");  
 traceSource.TraceEvent(TraceEventType.Warning, eventId, "Information");  
 ```  

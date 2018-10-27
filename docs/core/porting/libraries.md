@@ -156,11 +156,11 @@ It's likely that you'll mix the above approaches on a per-project basis. You sho
 The best way to make sure everything works when you've ported your code is to test your code as you port it to .NET Core. To do this, you'll need to use a testing framework that builds and runs tests for .NET Core. Currently, you have three options:
 
 - [xUnit](https://xunit.github.io/)
-  * [Getting Started](http://xunit.github.io/docs/getting-started-dotnet-core.html)
+  * [Getting Started](https://xunit.github.io/docs/getting-started-dotnet-core.html)
   * [Tool to convert an MSTest project to xUnit](https://github.com/dotnet/codeformatter/tree/master/src/XUnitConverter)
-- [NUnit](http://www.nunit.org/)
+- [NUnit](https://nunit.org/)
   * [Getting Started](https://github.com/nunit/docs/wiki/Installation)
-  * [Blog post about migrating from MSTest to NUnit](http://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)
+  * [Blog post about migrating from MSTest to NUnit](https://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)
 - [MSTest](https://docs.microsoft.com/visualstudio/test/unit-test-basics)
 
 ## Recommended approach to porting

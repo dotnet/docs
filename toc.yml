@@ -13,6 +13,9 @@
       tocHref: /dotnet/standard/
       topicHref: /dotnet/standard/index
       items:
+      - name: Open-source library guidance
+        tocHref: /dotnet/standard/library-guidance/
+        topicHref: /dotnet/standard/library-guidance/index
       - name: Modern ASP.NET Web applications e-book
         tocHref: /dotnet/standard/modern-web-apps-azure-architecture/
         topicHref: /dotnet/standard/modern-web-apps-azure-architecture/index
@@ -353,9 +356,9 @@
       tocHref: /dotnet/csharp/
       topicHref: /dotnet/csharp/index
       items:
-      - name: Quickstarts
-        tocHref: /dotnet/csharp/quick-starts/
-        topicHref: /dotnet/csharp/quick-starts/index
+      - name: Introduction to C#
+        tocHref: /dotnet/csharp/tutorials/intro-to-csharp/
+        topicHref: /dotnet/csharp/tutorials/intro-to-csharp/index
       - name: Getting started
         tocHref: /dotnet/csharp/getting-started/
         topicHref: /dotnet/csharp/getting-started/index
@@ -600,6 +603,9 @@
       tocHref: /dotnet/machine-learning/
       topicHref: /dotnet/machine-learning/index
       items:
+      - name: How-to guides
+        tocHref: /dotnet/machine-learning/how-to-guides/
+        topicHref: /dotnet/machine-learning/how-to-guides/index
       - name: Resources
         tocHref: /dotnet/machine-learning/resources/
         topicHref: /dotnet/machine-learning/resources/index

@@ -45,7 +45,7 @@ Here's code for the simple math library:
 The sample library supports four major arithmetic operations `add`, `subtract`, `multiply` and `divide` on `int` and `double` data types.
 
 Now you want to be able to create an API reference document from your code for third party developers who use your library but don't have access to the source code.
-As mentioned earlier XML documentation tags can be used to achieve this, You will now be introduced to the standard XML tags the C# compiler supports.
+As mentioned earlier XML documentation tags can be used to achieve this. You will now be introduced to the standard XML tags the C# compiler supports.
 
 ### &lt;summary&gt;
 

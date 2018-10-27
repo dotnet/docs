@@ -14,8 +14,8 @@ The following table shows the precision and approximate ranges for the floating-
   
 |Type|Approximate range|Precision|  
 |----------|-----------------------|---------------|  
-|[float](float.md)|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|7 digits|  
-|[double](double.md)|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|15-16 digits|  
+|[float](float.md)|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|~6-9 digits|  
+|[double](double.md)|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|~15-17 digits|  
 |[decimal](decimal.md)|±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>|28-29 digits|  
   
 ## See also

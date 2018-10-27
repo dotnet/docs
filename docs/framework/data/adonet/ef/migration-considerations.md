@@ -23,11 +23,11 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
  The path to migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] depends both on the type of application and on the existing data access strategy. However, you must always perform the following tasks when you migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  
   
 > [!NOTE]
->  All of these tasks are performed automatically when you use the Entity Data Model tools starting with [!INCLUDE[vsOrcas](../../../../../includes/vsorcas-md.md)]. For more information, see [How to: Use the Entity Data Model Wizard](https://msdn.microsoft.com/library/dadb058a-c5d9-4c5c-8b01-28044112231d).  
+>  All of these tasks are performed automatically when you use the Entity Data Model tools starting with Visual Studio 2008. For more information, see [How to: Use the Entity Data Model Wizard](https://msdn.microsoft.com/library/dadb058a-c5d9-4c5c-8b01-28044112231d).  
   
 1.  Upgrade the application.  
   
-     A project created by using an earlier version of Visual Studio and the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] must be upgraded to use [!INCLUDE[vsOrcas](../../../../../includes/vsorcas-md.md)] SP1 and the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] starting with version 3.5 SP1.  
+     A project created by using an earlier version of Visual Studio and the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] must be upgraded to use Visual Studio 2008 SP1 and the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] starting with version 3.5 SP1.  
   
 2.  Define the models and mapping.  
   

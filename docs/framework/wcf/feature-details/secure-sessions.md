@@ -2,7 +2,6 @@
 title: "Secure Sessions"
 ms.date: "03/30/2017"
 ms.assetid: 7b50602f-d7b5-42e9-8e92-1f0413df0d8b
-author: "BrucePerlerMS"
 ---
 # Secure Sessions
 A feature of Windows Communication Foundation (WCF) is reliable sessions that guarantee messages are received in the order they were sent. The topics in this section discuss the security implications to consider when creating a reliable session. For more information about reliable sessions, see [Using Sessions](../../../../docs/framework/wcf/using-sessions.md).  

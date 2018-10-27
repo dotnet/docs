@@ -55,7 +55,7 @@ The following table shows the predefined explicit conversions between .NET numer
   
 - When you convert `decimal` to `float` or `double`, the `decimal` value is rounded to the nearest `double` or `float` value.  
   
- For more information about explicit conversions, see the [Explicit conversions](/dotnet/csharp/language-reference/language-specification/conversions#explicit-conversions) section of the [C# language specification](../language-specification/index.md).
+ For more information about explicit conversions, see the [Explicit conversions](~/_csharplang/spec/conversions.md#explicit-conversions) section of the [C# language specification](../language-specification/index.md).
   
 ## See also
 

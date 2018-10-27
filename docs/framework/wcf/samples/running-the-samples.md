@@ -13,7 +13,7 @@ The Windows Communication Foundation (WCF) samples can be run in a single-machin
   
 ### To run the sample on the same machine  
   
-1.  If the service is hosted by IIS, ensure that you can access the service using a browser by entering the following address: http://localhost/servicemodelsamples/service.svc. A confirmation page should be displayed in response. If the confirmation page is not displayed, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+1.  If the service is hosted by IIS, ensure that you can access the service using a browser by entering the following address: `http://localhost/servicemodelsamples/service.svc`. A confirmation page should be displayed in response. If the confirmation page is not displayed, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
   
 2.  If the service is self-hosted, run Service.exe from \service\bin, from under the language-specific folder. Service activity is displayed on the service console window.  
   
@@ -57,7 +57,7 @@ The Windows Communication Foundation (WCF) samples can be run in a single-machin
   
 2.  If the service is hosted in IIS:  
   
-    1.  Activate the service using a browser by entering the address http://localhost/servicemodelsamples/service.svc.  
+    1.  Activate the service using a browser by entering the address `http://localhost/servicemodelsamples/service.svc`.  
   
     2.  In the solution, choose the **Debug** menu and the **Attach to Process** menu item.  
   

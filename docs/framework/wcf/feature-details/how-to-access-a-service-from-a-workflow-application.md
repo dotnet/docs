@@ -8,7 +8,7 @@ This topic describes how to call a workflow service from a workflow console appl
 
 ### Create a Workflow Console Application Project
 
-1.  Start [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)].
+1.  Start Visual Studio 2012.
 
 2.  Load the MyWFService project you created in the [How to: Create a Workflow Service with Messaging Activities](../../../../docs/framework/wcf/feature-details/how-to-create-a-workflow-service-with-messaging-activities.md) topic.
 

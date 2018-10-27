@@ -1,26 +1,27 @@
 ---
-title: "Connection Strings"
-ms.date: "03/30/2017"
+title: "Connection Strings in the ADO.NET Entity Framework"
+ms.date: "10/15/2018"
 ms.assetid: 78d516bc-c99f-4865-8ff1-d856bc1a01c0
 ---
-# Connection Strings
+# Connection Strings in the ADO.NET Entity Framework
 A connection string contains initialization information that is passed as a parameter from a data provider to a data source. The syntax depends on the data provider, and the connection string is parsed during the attempt to open a connection. Connection strings used by the Entity Framework contain information used to connect to the underlying ADO.NET data provider that supports the Entity Framework. They also contain information about the required model and mapping files.  
   
  The connection string is used by the EntityClient provider when accessing model and mapping metadata and connecting to the data source. The connection string can be accessed or set through the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> property of <xref:System.Data.EntityClient.EntityConnection>. The <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class can be used to programmatically construct or access parameters in the connection string. For more information, see [How to: Build an EntityConnection Connection String](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md).  
   
  The [Entity Data Model tools](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527) generate a connection string that is stored in the application's configuration file. <xref:System.Data.Objects.ObjectContext> retrieves this connection information automatically when creating object queries. The <xref:System.Data.EntityClient.EntityConnection> used by an <xref:System.Data.Objects.ObjectContext> instance can be accessed from the <xref:System.Data.Objects.ObjectContext.Connection%2A> property. For more information, see [Managing Connections and Transactions](https://msdn.microsoft.com/library/b6659d2a-9a45-4e98-acaa-d7a8029e5b99).  
-  
+
+## Connection String Syntax
+
+To learn about the general syntax for connection strings, see [Connection string syntax | Connection Strings in ADO.NET](../connection-strings.md#connection-string-syntax).
+
 ## Connection String Parameters  
- The format of a connection string is a semicolon-delimited list of key/value parameter pairs:  
-  
- `keyword1=value; keyword2=value;`  
-  
- The equal sign (=) connects each keyword and its value. Keywords are not case sensitive, and spaces between key/value pairs are ignored. However, values  can be case sensitive, depending on the data source. Any values that contain a semicolon, single quotation marks, or double quotation marks must be enclosed in double quotation marks. The following table lists the valid names for keyword values in the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A>.  
+
+The following table lists the valid names for keyword values in the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A>.  
   
 |Keyword|Description|  
 |-------------|-----------------|  
 |`Provider`|Required if the `Name` keyword is not specified. The provider name, which is used to retrieve the <xref:System.Data.Common.DbProviderFactory> object for the underlying provider. This value is constant.<br /><br /> When the `Name` keyword is not included in an entity connection string, a non-empty value for the `Provider` keyword is required. This keyword is mutually exclusive with the `Name` keyword.|  
-|`Provider Connection String`|Optional. Specifies the provider-specific connection string that is passed to the underlying data source. This connection string is expressed by using valid keyword/value pairs for the data provider. An invalid `Provider Connection String` will cause a run-time error when it is evaluated by the data source.<br /><br /> This keyword is mutually exclusive with the `Name` keyword.<br /><br /> The value of the `Provider Connection String` must be surrounded by quotes. The following is an example:<br /><br /> `Provider Connection String ="Server=serverName; User ID = userID";`<br /><br /> The following example is not going to work:<br /><br /> `Provider Connection String =Server=serverName; User ID = userID`|  
+|`Provider Connection String`|Optional. Specifies the provider-specific connection string that is passed to the underlying data source. This connection string contains valid keyword/value pairs for the data provider. An invalid `Provider Connection String` will cause a run-time error when it is evaluated by the data source.<br /><br /> This keyword is mutually exclusive with the `Name` keyword.<br /><br /> Make sure to escape the value according to the general syntax of [ADO.NET connection strings](../../../../../docs/framework/data/adonet/connection-strings.md). Consider for example the following connection string: `Server=serverName; User ID = userID`. It must be escaped because it contains a semicolon. Since it does not contain double quotation marks, they may be used for escaping:<br /><br /> `Provider Connection String ="Server=serverName; User ID = userID";`|  
 |`Metadata`|Required if the `Name` keyword is not specified. A pipe-delimited list of directories, files, and resource locations in which to look for metadata and mapping information. The following is an example:<br /><br /> `Metadata=`<br /><br /> `c:\model &#124; c:\model\sql\mapping.msl;`<br /><br /> Blank spaces on each side of the pipe separator are ignored.<br /><br /> This keyword is mutually exclusive with the `Name` keyword.|  
 |`Name`|The application can optionally specify the connection name in an application configuration file that provides the required keyword/value connection string values. In this case, you cannot supply them directly in the connection string. The `Name` keyword is not allowed in a configuration file.<br /><br /> When the `Name` keyword is not included in the connection string, a non-empty values for Provider keyword is required.<br /><br /> This keyword is mutually exclusive with all the other connection string keywords.|  
   

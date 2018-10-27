@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "argument passing [Visual Basic], by position"
   - "arguments [Visual Basic], listing by name"
 ms.assetid: 1ad7358f-1da9-48da-a95b-f3c7ed41eff3
-author: rpetrusha
-ms.author: ronpet
 ---
 # Passing Arguments by Position and by Name (Visual Basic)
 When you call a `Sub` or `Function` procedure, you can pass arguments *by position* — in the order in which they appear in the procedure's definition — or you can pass them *by name*, without regard to position.  

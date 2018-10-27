@@ -63,6 +63,10 @@ To set your display scaling setting to 100% in Windows 10, type **display settin
 
 Setting your display scaling to 100% may be undesirable, because it can make the user interface too small to be usable.
 
+## Troubleshoot
+
+If the DPI-awareness transition isn't working as expected in Visual Studio, check to see if you have the `dpiAwareness` value in the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\devenv.exe** subkey in Registry Editor. Delete the value if it's present.
+
 ## See also
 
 - [Automatic scaling in Windows Forms](automatic-scaling-in-windows-forms.md)

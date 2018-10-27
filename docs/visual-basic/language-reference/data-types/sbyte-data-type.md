@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "data types [Visual Basic], integral"
   - "SByte data type"
 ms.assetid: 5c38374a-18a1-4cc2-b493-299e3dcaa60f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # SByte data type (Visual Basic)
 

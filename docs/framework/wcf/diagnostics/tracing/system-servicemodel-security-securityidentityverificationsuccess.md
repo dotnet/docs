@@ -2,7 +2,6 @@
 title: "System.ServiceModel.Security.SecurityIdentityVerificationSuccess"
 ms.date: "03/30/2017"
 ms.assetid: 6744ac2f-4944-421d-9a17-bcc64f0f3d2f
-author: "BrucePerlerMS"
 ---
 # System.ServiceModel.Security.SecurityIdentityVerificationSuccess
 System.ServiceModel.Security.SecurityIdentityVerificationSuccess  

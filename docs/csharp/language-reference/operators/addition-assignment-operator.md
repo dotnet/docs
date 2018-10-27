@@ -13,17 +13,17 @@ ms.assetid: 9cdf97e6-331d-492b-85e1-3ec3171484e9
 
 The addition assignment operator.
 
-An expression using the `+=` operator, such as  
+An expression using the `+=` operator, such as
 
 ```csharp
 x += y
-```  
+```
 
-is equivalent to  
+is equivalent to
 
 ```csharp
 x = x + y
-```  
+```
 
 except that `x` is only evaluated once.
   

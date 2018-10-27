@@ -13,8 +13,6 @@ ms.assetid: 93e56486-bb42-43c1-bd43-60af11e64e67
 
 The `+` operator is supported in two forms: a unary plus operator or a binary addition operator.
 
-User-defined types can [overload](../keywords/operator.md) the unary and binary `+` operators. When a binary `+` operator is overloaded, the [addition assignment operator](addition-assignment-operator.md) `+=` is also implicitly overloaded.
-
 ## Unary plus operator
 
 The unary `+` operator returns the value of its operand. It's supported by all numeric types.
@@ -42,6 +40,10 @@ For [delegate](../keywords/delegate.md) types, the `+` operator returns a new de
 [!code-csharp-interactive[delegate combination](~/samples/snippets/csharp/language-reference/operators/AdditionExamples.cs#AddDelegates)]
 
 For more information about delegate types, see [Delegates](../../programming-guide/delegates/index.md).
+
+## Operator overloadability
+
+User-defined types can [overload](../keywords/operator.md) the unary and binary `+` operators. When a binary `+` operator is overloaded, the [addition assignment operator](addition-assignment-operator.md) `+=` is also implicitly overloaded.
 
 ## C# language specification
 

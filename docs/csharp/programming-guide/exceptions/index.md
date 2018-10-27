@@ -55,7 +55,8 @@ The C# language's exception handling features help you deal with any unexpected 
 -   [How to: Execute Cleanup Code Using finally](../../../csharp/programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md)  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+For more information, see [Exceptions](~/_csharplang/spec/exceptions.md) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See Also
 

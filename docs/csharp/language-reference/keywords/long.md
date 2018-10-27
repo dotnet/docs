@@ -94,7 +94,8 @@ long y = (long)3.0;   // OK: explicit conversion
 ```  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+For more information, see [Integral types](~/_csharplang/spec/types.md#integral-types) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See Also
 

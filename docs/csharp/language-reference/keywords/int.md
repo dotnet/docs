@@ -70,7 +70,8 @@ int y = (int)3.0;    // OK: explicit conversion.
  For more information on arithmetic expressions with mixed floating-point types and integral types, see [float](../../../csharp/language-reference/keywords/float.md) and [double](../../../csharp/language-reference/keywords/double.md).  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+For more information, see [Integral types](~/_csharplang/spec/types.md#integral-types) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See Also
 

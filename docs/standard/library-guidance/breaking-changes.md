@@ -88,6 +88,10 @@ public class Document
 }
 ```
 
+**✔️ CONSIDER** keeping types and methods with the <xref:System.ObsoleteAttribute> indefinitely in low and middle-level libraries.
+
+> Removing an obsolete type or method is a binary breaking change. Not removing them can help avoid the worst-case scenarios mentioned above.
+
 ## See also
 
 * [Version and update considerations for C# developers](../../csharp/whats-new/version-update-considerations.md)

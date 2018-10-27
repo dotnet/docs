@@ -11,7 +11,7 @@ NuGet packages are published and consumed from package repositories. While NuGet
 
 * **[NuGet.org](https://www.nuget.org/)** is the primary online repository for NuGet packages. All packages on NuGet.org are publicly available to everyone. By default, Visual Studio has NuGet.org as a package source and for many developers NuGet.org is the only package repository they'll interact with. NuGet.org is the best place to publish stable packages and pre-release packages that you want community feedback on.
 
-* **[MyGet](https://myget.org/)** repository service supports [free custom package feeds for open-source projects](https://www.myget.org/opensource). A MyGet public custom feed is an ideal place to publish pre-release packages created by your CI service. MyGet also provides private feeds commercially.
+* **[MyGet](https://myget.org/)** is a repository service that supports custom package feeds for open-source projects. A MyGet public custom feed is an ideal place to publish pre-release packages created by your CI service. MyGet also provides private feeds commercially.
 
 * A **[local feed](/nuget/hosting-packages/local-feeds)** allows you to treat a folder like a package repository and makes the `*.nupkg` files in the folder accessible by NuGet. A local feed is useful for testing a NuGet package before publishing it to NuGet.org.
 

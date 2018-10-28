@@ -321,54 +321,14 @@ Now the outer shuffle is down to 30 queries. Run again with the inner shuffle an
 
 Please note that this example is **designed** to highlight the use cases where lazy evaluation can cause performance difficulties. While it's important to see where lazy evaluation can impact code performance, it's equally important to understand that not all queries should run eagerly. The performance hit we incur without using `ToArray()` is because each new arrangement of the deck of cards is built from the previous arrangement. Using lazy evaluation means each new deck configuration is built from the original deck, even executing the code that built the `startingDeck`. That causes a large amount of extra work. 
 
-In practice, some algorithms run well using eager evaluation, and others run well using lazy evaluation. In general, lazy evaluation is a better choice when the data source is a separate process, like a database engine. In those cases, lazy evaluation enables more complex queries to execute only one round trip to the database process. LINQ enables both lazy and eager evaluation. Measure, and pick the best choice.
-
-## Preparing for New Features
-
-The code you've written for this sample is an example of creating a simple prototype that does the job. This is a great way to explore a problem space, and for many features, it may be the best permanent solution. You've leveraged *anonymous types* for the cards, and each card is represented by strings.
-
-*Anonymous Types* have many productivity advantages. You don't need to define a class yourself to represent the storage. The compiler generates the type for you. The compiler generated type utilizes many of the best practices for simple data objects. It's *immutable*, meaning that none of its properties can be changed after it has been constructed. Anonymous types are internal to an assembly, so they aren't seen as part of the public API for that assembly. Anonymous types also contain an override of the `ToString()` method that returns a formatted string with each of the values.
-
-Anonymous types also have disadvantages. They don't have accessible names, so you can't use them as return values or arguments. You'll notice that any methods above that used these anonymous types are generic methods. The override of `ToString()` may not be what you want as the application grows more features. 
-
-The sample also uses strings for the suit and the rank of each card. That's quite open ended. The C# type system can help us make better code, by leveraging `enum` types for those values.
-
-Start with the suits. This is a perfect time to use an `enum`:
-
-[!CODE-csharp[Suit enum](../../../samples/csharp/getting-started/console-linq/Program.cs?name=snippet2)]
-
-The `Suits()` method also changes type and implementation:
-
-[!CODE-csharp[Suit IEnumerable](../../../samples/csharp/getting-started/console-linq/Program.cs?name=snippet4)]
-
-Next, do the same change with the Rank of the cards:
-
-[!CODE-csharp[Rank enum](../../../samples/csharp/getting-started/console-linq/Program.cs?name=snippet3)]
-
-And the method that generates them:
-
-[!CODE-csharp[Rank IEnumerable](../../../samples/csharp/getting-started/console-linq/Program.cs?name=snippet5)]
-
-As one final cleanup, let's make a type to represent the card, instead of relying on an anonymous type. Anonymous types are great for lightweight, local types, but in this example, the playing card is one of the main concepts. It should be a concrete type.
-
-[!CODE-csharp[PlayingCard](../../../samples/csharp/getting-started/console-linq/playingcard.cs?name=snippet1)]
-
-This type uses *auto-implemented read-only properties* which are set in the constructor, and then cannot be modified. It also makes use of the [string interpolation](../language-reference/tokens/interpolated.md) feature that makes it easier to format string output.
-
-Update the query that generates the starting deck to use the new type:
-
-```csharp
-var startingDeck = (from s in Suits().LogQuery("Suit Generation")
-                    from r in Ranks().LogQuery("Value Generation")
-                    select new PlayingCard(s, r))
-                    .LogQuery("Starting Deck")
-                    .ToArray();
-```
-
-Compile and run again. The output is a little cleaner, and the code is a bit more clear and can be extended more easily.
+In practice, some algorithms run well using eager evaluation, and others run well using lazy evaluation. For daily usage, lazy evaluation is usually a better choice when the data source is a separate process, like a database engine. For databases, lazy evaluation allows more complex queries to execute only one round trip to the database process and back to the rest of your code. LINQ is flexible whether you choose to utilize lazy or eager evaluation, so measure your processes and pick whichever kind of evaluation gives you the best performance.
 
 ## Conclusion
 
-This sample showed you some of the methods used in LINQ, how to create your own methods that will be easily used with LINQ enabled code. It also showed you the differences between lazy and eager evaluation, and the effect that decision can have on performance.
+In this project, we covered:
+* using LINQ queries to aggregate data into a meaningful sequence
+* writing Extension methods to add our own custom functionality to LINQ queries
+* locating areas in our code where our LINQ queries might run into performance issues like degraded speed
+* lazy and eager evaluation in regards to LINQ queries and the implications they might have on query performance
 
-You learned a bit about one magician's technique. Magicians use the faro shuffle because they can control where every card moves in the deck. In some tricks, the magician has an audience member place a card on top of the deck, and shuffles a few times, knowing where that card goes. Other illusions require the deck set a certain way. A magician will set the deck prior to performing the trick. Then she will shuffle the deck 5 times using an outer shuffle. On stage, she can show what looks like a random deck, shuffle it 3 more times, and have the deck set exactly how she wants.
+Aside from LINQ, we learned a bit about a technique magicians use for card tricks. Magicians use the Faro shuffle because they can control where every card moves in the deck. Now that you know, don't spoil it for everyone else!

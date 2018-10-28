@@ -3,7 +3,7 @@ title: .NET Core Runtime IDentifier (RID) catalog
 description: Learn about the Runtime IDentifier (RID) and how RIDs are used in .NET Core.
 author: mairaw
 ms.author: mairaw
-ms.date: 07/19/2018
+ms.date: 10/28/2018
 ---
 # .NET Core RID Catalog
 
@@ -80,11 +80,13 @@ For the latest and complete version, see the [runtime.json](https://github.com/d
 
 .NET Core 2.0 SDK introduces the concept of portable RIDs. They are new values added to the RID graph that aren't tied to a specific version or OS distribution. They're particularly useful when dealing with multiple Linux distros.
 
-The following list shows the most common RIDs used for each OS. It doesn't cover `arm` or `corert` values.
+The following list shows a small subset of the most common RIDs used for each OS.
 
 ## Windows RIDs
 
-- Portable
+Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/runtime.json) file on CoreFX repo.
+
+- Portable (.NET Core 2.0 or later versions)
   - `win-x86`
   - `win-x64`
 - Windows 7 / Windows Server 2008 R2
@@ -108,8 +110,15 @@ See [Prerequisites for .NET Core on Windows](windows-prerequisites.md) for more 
 
 ## Linux RIDs
 
-- Portable
+Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/runtime.json) file on CoreFX repo. Devices running a distribution not listed below may work with one of the Portable RIDs. For example, Raspberry Pi devices running a Linux distribution not listed can be targeted with `linux-arm`.
+
+- Portable (.NET Core 2.0 or later versions)
+  - `linux-arm`
+  - `linux-musl`
   - `linux-x64`
+- Alpine Linux (.NET Core 2.1 or later versions)
+  - `alpine-x64`
+  - `alpine.3.7-x64`
 - CentOS
   - `centos-x64`
   - `centos.7-x64`
@@ -142,6 +151,12 @@ See [Prerequisites for .NET Core on Windows](windows-prerequisites.md) for more 
   - `rhel.7.2-x64`
   - `rhel.7.3-x64` (.NET Core 2.0 or later versions)
   - `rhel.7.4-x64` (.NET Core 2.0 or later versions)
+- SUSE Enterprise Linux (SLES) (.NET Core 2.0 or later versions)
+  - `sles-x64`
+  - `sles.12-x64`
+  - `sles.12.1-x64`
+  - `sles.12.2-x64`
+  - `sles.12.3-x64`
 - Tizen (.NET Core 2.0 or later versions)
   - `tizen`
   - `tizen.4.0.0`
@@ -150,7 +165,6 @@ See [Prerequisites for .NET Core on Windows](windows-prerequisites.md) for more 
   - `ubuntu-x64`
   - `ubuntu.14.04-x64`
   - `ubuntu.16.04-x64`
-  - `ubuntu.17.10-x64`
   - `ubuntu.18.04-x64`
 - Ubuntu derivatives
   - `linuxmint.17-x64`
@@ -161,31 +175,31 @@ See [Prerequisites for .NET Core on Windows](windows-prerequisites.md) for more 
   - `linuxmint.18.1-x64` (.NET Core 2.0 or later versions)
   - `linuxmint.18.2-x64` (.NET Core 2.0 or later versions)
   - `linuxmint.18.3-x64` (.NET Core 2.0 or later versions)
-- SUSE Enterprise Linux (SLES) (.NET Core 2.0 or later versions)
-  - `sles-x64`
-  - `sles.12-x64`
-  - `sles.12.1-x64`
-  - `sles.12.2-x64`
-  - `sles.12.3-x64`
-- Alpine Linux (.NET Core 2.1 or later versions)
-  - `alpine-x64`
-  - `alpine.3.7-x64`
 
 See [Prerequisites for .NET Core on Linux](linux-prerequisites.md) for more information.
 
 ## macOS RIDs
 
-macOS RIDs use the older "OSX" branding.
+macOS RIDs use the older "OSX" branding. Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/runtime.json) file on CoreFX repo.
 
-- `osx-x64` (.NET Core 2.0 or later versions, minimum version is `osx.10.12-x64`)
-- `osx.10.10-x64`
-- `osx.10.11-x64`
-- `osx.10.12-x64` (.NET Core 1.1 or later versions)
-- `osx.10.13-x64`
+- Portable (.NET Core 2.0 or later versions)
+  - `osx-x64` (Minimum OS version is `osx.10.12-x64`)
+- macOS 10.10  Yosemite
+  - `osx.10.10-x64`
+- macOS 10.11 El Capitan
+  - `osx.10.11-x64`
+- macOS 10.12 Sierra (.NET Core 1.1 or later versions)
+  - `osx.10.12-x64`
+- macOS 10.13 High Sierra (.NET Core 1.1 or later versions)
+  - `osx.10.13-x64`
+- macOS 10.14 Mojave (.NET Core 1.1 or later versions)
+  - `osx.10.14-x64`
 
 See [Prerequisites for .NET Core on macOS](macos-prerequisites.md) for more information.
 
 ## Android RIDs (.NET Core 2.0 or later versions)
+
+Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/runtime.json) file on CoreFX repo.
 
 - `android`
 - `android.21`

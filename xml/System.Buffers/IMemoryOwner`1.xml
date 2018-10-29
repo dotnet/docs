@@ -21,9 +21,16 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of elements to store in memory.</typeparam>
+    <summary>Defines the owner responsible for the lifetime management of a <see cref="System.Memory`1" /> buffer.</summary>
+    <remarks>
+<format type="text/markdown"><![CDATA[  
+
+The `IMemoryOwner<T>` interface defines the owner responsible for the lifetime management of a <xref:System.Memory%601> buffer, who is responsible for disposing of the underlying memory appropriately.
+An instance of the `IMemoryOwner<T>` interface is returned by the <xref:System.Buffers.MemoryPool%601.Rent%2A?displayProperty=nameWithType> method.
+    
+]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Memory">
@@ -45,8 +52,8 @@
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the associated <see cref="System.Memory`1" /> buffer.</summary>
+        <value>The associated <see cref="System.Memory`1" /> buffer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

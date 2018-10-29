@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Configuration.SpecialSetting> enumeration defines a set of special categories that are applied to application settings properties with the ttribute class.  
+ The <xref:System.Configuration.SpecialSetting> enumeration defines a set of special categories that are applied to application settings properties with the <xref:System.Configuration.SpecialSettingAttribute> class.  
   
 > [!CAUTION]
 >  The default settings provider, <xref:System.Configuration.LocalFileSettingsProvider>, does not encrypt or otherwise protect connection strings. It simple stores this type of settings in a separate `<connectionstrings>` section in the appropriate configuration file.  

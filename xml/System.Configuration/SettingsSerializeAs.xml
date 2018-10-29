@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Configuration.SettingsSerializeAs> enumeration is used to specify the serialization mechanism used by the application settings provider to persist the values of application settings properties. For example, the ttribute uses this enumeration in its constructor to request that a property or group of properties be persisted using the specified serialization mechanism.  
+ The <xref:System.Configuration.SettingsSerializeAs> enumeration is used to specify the serialization mechanism used by the application settings provider to persist the values of application settings properties. For example, the <System.Configuration.SettingsSerializeAsAttribute> uses this enumeration in its constructor to request that a property or group of properties be persisted using the specified serialization mechanism.  
   
  ]]></format>
     </remarks>

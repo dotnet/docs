@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Web.Compilation.BuildProvider> object provides functionality to parse a particular file type and generate code during compilation of a resource. A build provider generates code for those resources that correspond to the ttribute attribute and which have the extension mapped to the build provider.  
+ A <xref:System.Web.Compilation.BuildProvider> object provides functionality to parse a particular file type and generate code during compilation of a resource. A build provider generates code for those resources that correspond to the <xref:System.Web.Compilation.BuildProviderAppliesToAttribute> attribute and which have the extension mapped to the build provider.  
   
  ]]></format>
     </remarks>

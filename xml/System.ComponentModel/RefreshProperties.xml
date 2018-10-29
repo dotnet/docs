@@ -36,7 +36,7 @@
    
   
 ## Examples  
- The following code example demonstrates using the ttribute class to specify the refresh mode for a `DataSource` property. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
+ The following code example demonstrates using the <xref:System.ComponentModel.RefreshPropertiesAttribute> class to specify the refresh mode for a `DataSource` property. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
   
  [!code-csharp[System.ComponentModel.AttributesDemoControl#25](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#25)]
  [!code-vb[System.ComponentModel.AttributesDemoControl#25](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#25)]  
@@ -77,7 +77,6 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>The properties should be requeried and the view should be refreshed.</summary>
-        <altmember cref="T:System.ComponentModel.RefreshPropertiesAttribute" />
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -111,7 +110,6 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>No refresh is necessary.</summary>
-        <altmember cref="T:System.ComponentModel.RefreshPropertiesAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Repaint">
@@ -145,18 +143,7 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>The view should be refreshed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates using the ttribute class to specify the refresh mode for a `DataSource` property. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
-  
- [!code-csharp[System.ComponentModel.AttributesDemoControl#25](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#25)]
- [!code-vb[System.ComponentModel.AttributesDemoControl#25](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#25)]  
-  
- ]]></format>
-        </remarks>
-        <altmember cref="T:System.ComponentModel.RefreshPropertiesAttribute" />
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

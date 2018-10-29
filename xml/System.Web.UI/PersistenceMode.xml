@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates an <xref:System.Web.UI.ITemplate> property that will be persisted as an inner property, as defined by applying the ttribute attribute to the property's metadata.  
+ The following code example demonstrates an <xref:System.Web.UI.ITemplate> property that will be persisted as an inner property, as defined by applying the <xref:System.Web.UI.PersistenceModeAttribute> attribute to the property's metadata.  
   
  [!code-csharp[System.Web.UI.PersistenceMode#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PersistenceMode/CS/persistencemodeattributesamples.cs#2)]
  [!code-vb[System.Web.UI.PersistenceMode#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PersistenceMode/VB/persistencemodeattributesamples.vb#2)]  

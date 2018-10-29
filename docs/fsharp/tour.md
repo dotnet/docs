@@ -187,6 +187,6 @@ Classes are great for a huge number of reasons, such as when you need to represe
 
 Now that you've seen some of the primary features of the language, you should be ready to write your first F# programs!  Check out [Getting Started](tutorials/getting-started/index.md) to learn how to set up your development environment and write some code.
 
-The next steps for learning more can be whatever you like, but we recommend [Functions as First-Class Values](introduction-to-functional-programming/functions-as-first-class-values.md)<!--[Introduction to Functional Programming in F#](introduction-to-functional-programming/index.md)--> to get comfortable with core Functional Programming concepts.  These will be essential in building robust programs in F#.
+The next steps for learning more can be whatever you like, but we recommend [Introduction to Functional Programming in F#](introduction-to-functional-programming/index.md) to get comfortable with core Functional Programming concepts.  These will be essential in building robust programs in F#.
 
 Also, check out the [F# Language Reference](language-reference/index.md) to see a comprehensive collection of conceptual content on F#.

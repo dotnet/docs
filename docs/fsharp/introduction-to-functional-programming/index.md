@@ -273,7 +273,7 @@ The next section will thoroughly cover functions, exploring different ways you c
 
 [!div class="nextstepaction"] First-class functions
 
-[Functions as first-class values](functions-as-first-class-values.md) explores functions deeply, showing how you can use them in various contexts.
+[First-class functions](first-class-functions.md) explores functions deeply, showing how you can use them in various contexts.
 
 ## Further reading
 

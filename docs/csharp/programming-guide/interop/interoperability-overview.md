@@ -53,8 +53,8 @@ The topic describes methods to enable interoperability between C# managed code a
   
 ## See Also
 
-- [Improving Interop Performance](https://msdn.microsoft.com/library/ms998551.aspx)  
-- [Introduction to Interoperability between COM and .NET](https://msdn.microsoft.com/library/office/bb610378.aspx)  
+- [Improving Interop Performance](https://docs.microsoft.com/previous-versions/msp-n-p/ff647812%28v=pandp.10%29)  
+- [Introduction to Interoperability between COM and .NET](/office/client-developer/outlook/pia/introduction-to-interoperability-between-com-and-net)  
 - [Introduction to COM Interop in Visual Basic](../../../../docs/visual-basic/programming-guide/com-interop/introduction-to-com-interop.md)  
 - [Marshaling between Managed and Unmanaged Code](../../../../docs/framework/interop/interop-marshaling.md)  
 - [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)  

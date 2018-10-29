@@ -3102,6 +3102,7 @@
   
  ]]></format>
         </remarks>
+		<exception cref="T:System.ArgumentNullException"><paramref name="file" /> is <see langword="Nothing" /> or an empty string.</exception>
         <exception cref="T:System.ArgumentException">The file name ends with a trailing slash.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:System.Text.Encoding" />
@@ -3162,6 +3163,7 @@
   
  ]]></format>
         </remarks>
+		<exception cref="T:System.ArgumentNullException"><paramref name="file" /> is <see langword="Nothing" /> or an empty string.</exception>
         <exception cref="T:System.ArgumentException">The file name ends with a trailing slash.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="T:System.Text.Encoding" />

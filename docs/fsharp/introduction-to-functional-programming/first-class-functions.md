@@ -1,7 +1,7 @@
 ---
 title: First-class functions
 description: Learn about first-class functions and how they are important for functional programming in F#.
-ms.date: 10/18/2018
+ms.date: 10/29/2018
 ---
 # First-class functions
 

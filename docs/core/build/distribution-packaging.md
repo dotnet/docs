@@ -41,7 +41,7 @@ When installed, .NET Core consists of several components that are layed out as f
 
 - (1) **dotnet** The host (also known as the "muxer") has two distinct roles: activate a runtime to launch an application, and activate an SDK to dispatch commands to it. The host is a native executable (`dotnet.exe`).
 
-While there is a single host, most of the other components are in versioned directories (2,3,5,6). These means multiple versions can be present on the system since they are installed side-by-side.
+While there is a single host, most of the other components are in versioned directories (2,3,5,6). This means multiple versions can be present on the system since they are installed side-by-side.
 
 - (2) **host/fxr/\<fxr version>** contains the framework resolution logic used by the host. The host uses the latest hostfxr that is installed. The hostfxr is responsible for selecting the appropriate runtime when executing a .NET Core application. For example, an application built for .NET Core 2.0.0 will use the 2.0.5 runtime when it is available. Similarly, hostfxr selects the appropriate SDK during development.
 

@@ -35,11 +35,11 @@ Because operations on integer types are generally allowed on enumeration types, 
 
 For [bool](../keywords/bool.md) operands, the `&` operator computes the logical AND of its operands. The result of `x & y` is `true` if both `x` and `y` are `true`. Otherwise, the result is `false`.
 
-The `&` operator evaluates both operands regardless of the value of its first operand, as the following example shows:
+The `&` operator evaluates both operands even if the first operand evaluates to `false`, so that the result must be `false` regardless of the value of the second operand. The following example demonstrates that behavior:
 
 [!code-csharp-interactive[bool logical AND](~/samples/snippets/csharp/language-reference/operators/AndOperatorExamples.cs#BooleanOperands)]
 
-The [conditional AND operator](conditional-and-operator.md) `&&` also computes the logical AND of its operands, but evaluates the second operand only if necessary.
+The [conditional AND operator](conditional-and-operator.md) `&&` also computes the logical AND of its operands, but evaluates the second operand only if the first operand evaluates to `true`.
 
 For nullable bool operands, the behavior of the `&` operator is consistent with SQL's three-valued logic. For more information, see the [The bool? type](../../programming-guide/nullable-types/using-nullable-types.md#the-bool-type) section of the [Using nullable types](../../programming-guide/nullable-types/using-nullable-types.md) article.
 

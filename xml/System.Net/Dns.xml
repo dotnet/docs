@@ -680,7 +680,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Dns.GetHostAddresses%2A> method queries a DNS server for the IP addresses associated with a host name. If `hostNameOrAddress` is an IP address, this address is returned without querying the DNS server.  
+ The <xref:System.Net.Dns.GetHostAddresses%2A> method queries the DNS subsystem for the IP addresses associated with a host name. If `hostNameOrAddress` is an IP address, this address is returned without querying the DNS server.
   
  If an empty string is passed as the `hostNameOrAddress` argument, then this method returns the IPv4 and IPv6 addresses of the local host.
   

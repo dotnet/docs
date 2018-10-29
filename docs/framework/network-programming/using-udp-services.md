@@ -38,7 +38,6 @@ Broadcasts can be directed to specific portions of a network by setting all bits
 The following code example uses a <xref:System.Net.Sockets.UdpClient> to listen for UDP datagrams on port 11,000. The client receives a message string and writes the message to the console.
 
 ```vb
-Imports System
 Imports System.Net
 Imports System.Net.Sockets
 Imports System.Text
@@ -56,7 +55,7 @@ Public Class UDPListener
             Console.WriteLine("Received broadcast from {0} :", groupEP)
             Console.WriteLine(Encoding.ASCII.GetString(bytes, 0, bytes.Length))
          End While
-      Catch e As Exception
+      Catch e As SocketException
          Console.WriteLine(e)
       Finally
          listener.Close()
@@ -95,7 +94,7 @@ public class UDPListener
                 Console.WriteLine($" {Encoding.ASCII.GetString(bytes, 0, bytes.Length)}");
             }
         }
-        catch (Exception e)
+        catch (SocketException e)
         {
             Console.WriteLine(e);
         }
@@ -115,7 +114,6 @@ public class UDPListener
 The following code example uses a <xref:System.Net.Sockets.Socket> to send UDP datagrams to the directed broadcast address 192.168.1.255, using port 11,000. The client sends the message string specified on the command line.
 
 ```vb
-Imports System
 Imports System.Net
 Imports System.Net.Sockets
 Imports System.Text

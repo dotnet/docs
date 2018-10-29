@@ -271,8 +271,6 @@ This style of working with values and data structures is critical, as it forces 
 
 The next section will thoroughly cover functions, exploring different ways you can use them in functional programming.
 
-[!div class="nextstepaction"] First-class functions
-
 [First-class functions](first-class-functions.md) explores functions deeply, showing how you can use them in various contexts.
 
 ## Further reading

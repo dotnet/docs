@@ -3060,7 +3060,7 @@ We’re sorry, but we don’t have any specific information about this error. Yo
  [Visual Basic General](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vbgeneral)  
  Provides a forum for questions about and issues with Visual Basic that are not discussed in other forums.  
   
- [StackOverflow](http://stackoverflow.com/questions/tagged/vb.net)  
+ [StackOverflow](https://stackoverflow.com/questions/tagged/vb.net)  
  Provides a forum for questions about and issues with Visual Basic.  
   
  Also see:  

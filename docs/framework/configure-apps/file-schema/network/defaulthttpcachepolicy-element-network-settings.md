@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "defaultHttpCachePolicy element"
   - "<defaultHttpCachePolicy> element"
 ms.assetid: 2c1247d0-39b0-4c12-919a-a925ce075c79
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;defaultHttpCachePolicy&gt; Element (Network Settings)
 Describes whether HTTP caching is active and describes the default caching policy.  
@@ -77,7 +75,7 @@ Describes whether HTTP caching is active and describes the default caching polic
 ```  
   
 ## See Also  
- <xref:System.Net.Cache>  
- <xref:System.Net.WebRequest>  
- <xref:System.Net.Cache.RequestCacheLevel>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.Cache>  
+- <xref:System.Net.WebRequest>  
+- <xref:System.Net.Cache.RequestCacheLevel>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

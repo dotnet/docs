@@ -1,8 +1,6 @@
 ---
 title: "Interpolated Strings (Visual Basic)"
 ms.date: "10/31/2017"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Interpolated Strings (Visual Basic Reference)
 

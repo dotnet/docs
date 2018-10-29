@@ -31,9 +31,9 @@ If you change the `public` access level to [private](private.md) or [protected](
 
 'PointTest.y' is inaccessible due to its protection level.
 
-## C# language specification
+## C# language specification  
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+For more information, see [Declared accessibility](~/_csharplang/spec/basic-concepts.md#declared-accessibility) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 

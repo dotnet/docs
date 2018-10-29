@@ -11,7 +11,7 @@ This sample demonstrates a service contact with one-way service operations. The 
   
  To create a one-way service contract, define your service contract, apply the <xref:System.ServiceModel.OperationContractAttribute> class to each operation, and set <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> to `true` as shown in the following sample code:  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface IOneWayCalculator  
 {  
@@ -28,8 +28,8 @@ public interface IOneWayCalculator
   
  To demonstrate that the client does not wait for the service operations to complete, the service code in this sample implements a five-second delay, as shown in the following sample code:  
   
-```  
-/ This service class implements the service contract.  
+```csharp
+// This service class implements the service contract.  
 // This code writes output to the console window.  
  [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Multiple,  
     InstanceContextMode = InstanceContextMode.PerCall)]  
@@ -52,7 +52,7 @@ public class CalculatorService : IOneWayCalculator
   
  The client finishes ahead of the service, demonstrating that a client does not wait for one-way service operations to complete. The client output is as follows:  
   
-```  
+```console  
 Add(100,15.99)  
 Subtract(145,76.54)  
 Multiply(9,81.25)  
@@ -63,7 +63,7 @@ Press <ENTER> to terminate client.
   
  The following service output is shown:  
   
-```  
+```console  
 The service is ready.  
 Press <ENTER> to terminate service.  
   

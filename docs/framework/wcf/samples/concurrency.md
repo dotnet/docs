@@ -26,7 +26,7 @@ The Concurrency sample demonstrates using the <xref:System.ServiceModel.ServiceB
   
  The service class specifies concurrency behavior with the `[ServiceBehavior(ConcurrencyMode=<setting>)]` attribute as shown in the code sample that follows. By changing which lines are commented out, you can experiment with the `Single` and `Multiple` concurrency modes. Remember to rebuild the service after changing the concurrency mode.  
   
-```  
+```csharp
 // Single allows a single message to be processed sequentially by each service instance.  
 //[ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Single, InstanceContextMode = InstanceContextMode.Single)]  
   

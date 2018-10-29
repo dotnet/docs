@@ -221,8 +221,8 @@ pace.
 
 In this final step, you’ll add the code to write the output asynchronously
 in one task, while also running another task to read input from the user
-if they want to speed up or slow down the text display. This has a few
-steps in it and by the end, you’ll have all the updates that you need.
+if they want to speed up or slow down the text display, or stop the text display altogether. 
+This has a few steps in it and by the end, you’ll have all the updates that you need.
 The first step is to create an asynchronous <xref:System.Threading.Tasks.Task> returning method that
 represents the code you’ve created so far to read and display the file.
 
@@ -273,7 +273,7 @@ have completed.
 > If you use C# 7.1 or later, you can create console applications with [`async` `Main` method](../whats-new/csharp-7-1.md#async-main).
 
 Next, you need to write the second asynchronous method to read from the
-Console and watch for the ‘<’ (less than) and ‘>’ (greater than) keys. Here’s the method you add for
+Console and watch for the ‘<’ (less than), ‘>’ (greater than) and ‘X’ or ‘x’ keys. Here’s the method you add for
 that task:
 
 ```csharp
@@ -292,6 +292,10 @@ private static async Task GetInput()
             {
                 delay += 10;
             }
+            else if (key.KeyChar == 'X' || key.KeyChar == 'x')
+            {
+                break;
+            }
         } while (true);
     };
     await Task.Run(work);
@@ -300,8 +304,9 @@ private static async Task GetInput()
 
 This creates a lambda expression to represent an <xref:System.Action> delegate that reads a key
 from the Console and modifies a local variable representing the delay when
-the user presses the ‘<’ (less than) or ‘>’ (greater than) keys. This method uses <xref:System.Console.ReadKey>
-to block and wait for the user to press a key.
+the user presses the ‘<’ (less than) or ‘>’ (greater than) keys. The delegate method finishes when user presses
+the ‘X’ or ‘x’  keys, which allow the user to stop the text display at any time.
+This method uses <xref:System.Console.ReadKey> to block and wait for the user to press a key.
 
 To finish this feature, you need to create a new `async Task` returning
 method that starts both of these tasks (`GetInput` and 

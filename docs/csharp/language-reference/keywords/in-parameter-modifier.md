@@ -119,4 +119,4 @@ You can't use the `in`, `ref`, and `out` keywords for the following kinds of met
 - [C# Programming Guide](../../programming-guide/index.md)  
 - [C# Keywords](index.md)  
 - [Method Parameters](method-parameters.md)  
-- [Reference Semantics with Value Types](../../reference-semantics-with-value-types.md)  
+- [Write safe efficient code](../../write-safe-efficient-code.md)  

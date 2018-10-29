@@ -16,7 +16,7 @@ LINQ to DataSet requires two additional references to *System.Data.dll* and *Sys
 
 ## To enable LINQ to DataSet functionality
 
-Follow these steps to to enable LINQ to DataSet functionality in an existing project.
+Follow these steps to enable LINQ to DataSet functionality in an existing project.
 
 1. Add references to **System.Core**, **System.Data**, and **System.Data.DataSetExtensions**.
 

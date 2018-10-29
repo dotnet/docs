@@ -2,7 +2,6 @@
 title: "System.ServiceModel.Security.SecurityClientSessionCloseMessageReceived"
 ms.date: "03/30/2017"
 ms.assetid: 2be97eac-798a-48bc-bba8-a8753a28aeb7
-author: "BrucePerlerMS"
 ---
 # System.ServiceModel.Security.SecurityClientSessionCloseMessageReceived
 System.ServiceModel.Security.SecurityClientSessionCloseMessageReceived  

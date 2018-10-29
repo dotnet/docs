@@ -1,11 +1,10 @@
 ### YamlMime:Tutorial
-title: Hello C#
+title: Hello World - Introduction to C# interactive C# tutorial
 metadata:
-  title: Hello World interactive tutorial - C# quickstarts
-  description: In this quickstart, you'll use your browser to learn C# interactively. You write C# code and see the results of compiling and running your code directly in the browser.
+  title: Hello World - Introduction to C# interactive C# tutorial
+  description: In this tutorial, you'll use your browser to learn C# interactively. You write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
   level: Beginner
-  ms.topic: quickstart
   ms.date: 08/24/2018
   nextTutorialHref: numbers-in-csharp.yml
   nextTutorialTitle: Numbers in C#
@@ -15,7 +14,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    This quickstart teaches you C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that begin with a "Hello World" program. These lessons teach you the fundamentals of the C# language.
+    This tutorial teaches you C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that begin with a "Hello World" program. These lessons teach you the fundamentals of the C# language.
 - title: Run your first C# program
   durationInMinutes: 2
   content: |
@@ -83,7 +82,7 @@ items:
     You've been using `+` to build strings from **variables** and **constant** strings. There's a better way.
     You can place a variable between `{` and `}` characters to tell C# to replace that text with the value of the variable.
     
-    This is called [String interpolation](../language-reference/tokens/interpolated.md).
+    This is called [String interpolation](../../language-reference/tokens/interpolated.md).
 
     If you add a `$` before the opening quote of the string, you can then include variables, like `aFriend`, inside the string between curly braces. Give it a try:
 
@@ -222,8 +221,8 @@ items:
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
     
 - content: |
-    You've completed the "Hello C#" quickstart.
+    You've completed the "Hello C#" introduction to C# tutorial.
 
     You can learn more about working with the `string` type in the
-    [C# Programming Guide](../programming-guide/index.md) topic on [strings](../programming-guide/strings/index.md).
-    [How to tips on working with strings](../how-to/index.md#working-with-strings).
+    [C# Programming Guide](../../programming-guide/index.md) topic on [strings](../../programming-guide/strings/index.md).
+    [How to tips on working with strings](../../how-to/index.md#working-with-strings).

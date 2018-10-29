@@ -52,7 +52,7 @@ Behaviors enable you to modify default behavior and add custom extensions that i
   
 2.  Programmatically adding the behavior to the behaviors collection on <xref:System.ServiceModel.Description.ServiceDescription>. This can be accomplished with the following lines of code:  
   
-    ```  
+    ```csharp
     ServiceHost host = new ServiceHost(/* Parameters */);  
     host.Description.Behaviors.Add(/* Service Behavior */);  
     ```  
@@ -110,17 +110,17 @@ Behaviors enable you to modify default behavior and add custom extensions that i
   
  The following code example shows how an  <xref:System.ServiceModel.Description.IEndpointBehavior> implements <xref:System.ServiceModel.Configuration.BehaviorExtensionElement>:  
   
-```  
+```csharp
 // BehaviorExtensionElement members  
-    public override Type BehaviorType  
-    {  
-      get { return typeof(EndpointBehaviorMessageInspector); }  
-    }  
+public override Type BehaviorType  
+{  
+  get { return typeof(EndpointBehaviorMessageInspector); }  
+}  
   
-    protected override object CreateBehavior()  
-    {  
-      return new EndpointBehaviorMessageInspector();  
-    }  
+protected override object CreateBehavior()  
+{  
+  return new EndpointBehaviorMessageInspector();  
+}  
 ```  
   
  In order for the configuration system to load a custom <xref:System.ServiceModel.Configuration.BehaviorExtensionElement>, it must be registered as an extension. The following code example shows the configuration file for the preceding endpoint behavior:  
@@ -217,7 +217,7 @@ Behaviors enable you to modify default behavior and add custom extensions that i
 #### Service Behaviors  
  For a given service class, all service behavior attributes on that class, and on parents of that class, are applied. If the same type of attribute is applied at multiple places in the inheritance hierarchy, the most-derived type is used.  
   
-```  
+```csharp  
 [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Multiple)]  
 [AspNetCompatibilityRequirementsAttribute(  
     AspNetCompatibilityRequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]  

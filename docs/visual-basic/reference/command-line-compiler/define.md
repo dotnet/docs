@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "/define compiler option [Visual Basic]"
   - "define compiler option [Visual Basic]"
 ms.assetid: f735c57d-1cf9-4f2f-a26f-0de630fd4077
-author: rpetrusha
-ms.author: ronpet
 ---
 # -define (Visual Basic)
 Defines conditional compiler constants.  

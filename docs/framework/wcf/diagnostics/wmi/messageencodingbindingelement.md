@@ -7,13 +7,12 @@ ms.assetid: 7f750742-b96b-498f-bf5e-05933a1a5961
 MessageEncodingBindingElement  
   
 ## Syntax  
- `class MessageEncodingBindingElement : BindingElement`  
-  
- `{`  
-  
- `string MessageVersion;`  
-  
- `};`  
+```csharp
+class MessageEncodingBindingElement : BindingElement
+{
+    string MessageVersion;  
+};  
+ ```
   
 ## Methods  
  The MessageEncodingBindingElement class does not define any methods.  

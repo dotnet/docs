@@ -1,10 +1,9 @@
 ### YamlMime:Tutorial
-title: Numbers in C#
+title: Manipulate integral and floating point numbers in C#
 metadata:
-  title:  Numbers in C# interactive tutorial - C# quickstarts
-  description: In this quick start about numeric types, you'll use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
+  title:  Numbers in C# - Introduction to C# interactive tutorial
+  description: In this tutorial about numeric types, you'll use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
-  ms.topic: quickstart
   ms.custom: mvc
   ms.date: 08/24/2018
   level: Beginner
@@ -15,7 +14,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    This quick start teaches you about the number types in C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
+    This tutorial teaches you about the numeric types in C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 - title: Explore integer math
   durationInMinutes: 4
   content: |
@@ -35,7 +34,7 @@ items:
     - `/` for division
 
     > [!TIP]
-    > Throughout this quick start, you can explore on your own by modifying the code you've written in the interactive window. This quick start provides examples that you can try at each step.
+    > Throughout this interactive tutorial, you can explore on your own by modifying the code you've written in the interactive window. This tutorial provides examples that you can try at each step.
 
     Start by exploring those different operations. Modify the third line to try each of these operations. After each edit, click the **Run** button.
 
@@ -294,15 +293,15 @@ items:
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - content: |
-    You've completed the "Numbers in C#" quick start. 
+    You've completed the "Numbers in C#" interactie tutorial. 
     
-    You can continue these quick starts on your own development environment. Learn the basics of [local development](local-environment.md) and then pick a quick start. You can try this same exercise, move directly to the next quick start, or start again at with the [numbers in C#](numbers-in-csharp-local.md) quickstart.
+    You can continue these tutorials on your own development environment. Learn the basics of [local development](local-environment.md) and then pick a tutorial. You can directly to the next tutorial, or start again at with the [numbers in C#](numbers-in-csharp-local.md) tutorial.
     
     You can learn more about numbers in C# in the following topics:
 
-    [Integral Types Table](../language-reference/keywords/integral-types-table.md)   
-    [Floating-Point Types Table](../language-reference/keywords/floating-point-types-table.md)   
-    [Built-In Types Table](../language-reference/keywords/built-in-types-table.md)   
-    [Implicit Numeric Conversions Table](../language-reference/keywords/implicit-numeric-conversions-table.md)   
-    [Explicit Numeric Conversions Table](../language-reference/keywords/explicit-numeric-conversions-table.md)
+    [Integral Types Table](../../language-reference/keywords/integral-types-table.md)   
+    [Floating-Point Types Table](../../language-reference/keywords/floating-point-types-table.md)   
+    [Built-In Types Table](../../language-reference/keywords/built-in-types-table.md)   
+    [Implicit Numeric Conversions Table](../../language-reference/keywords/implicit-numeric-conversions-table.md)   
+    [Explicit Numeric Conversions Table](../../language-reference/keywords/explicit-numeric-conversions-table.md)
 

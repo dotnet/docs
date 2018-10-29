@@ -37,9 +37,9 @@ You use a type suffix to specify a type of a numerical literal. For example:
 decimal a = 0.1M;
 ```
 
-If an [integer numerical literal](/dotnet/csharp/language-reference/language-specification/lexical-structure#integer-literals) has no suffix, it has the first of the following types in which its value can be represented: `int`, `uint`, `long`, `ulong`.
+If an [integer numerical literal](~/_csharplang/spec/lexical-structure.md#integer-literals) has no suffix, it has the first of the following types in which its value can be represented: `int`, `uint`, `long`, `ulong`.
 
-If a [real numerical literal](/dotnet/csharp/language-reference/language-specification/lexical-structure#real-literals) has no suffix, it's of type `double`.
+If a [real numerical literal](~/_csharplang/spec/lexical-structure.md#real-literals) has no suffix, it's of type `double`.
 
 ## See also
 

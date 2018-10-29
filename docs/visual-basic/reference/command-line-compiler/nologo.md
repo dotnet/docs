@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "nologo compiler option [Visual Basic]"
   - "/nologo compiler option [Visual Basic]"
 ms.assetid: 25ef54b6-d676-4639-a2d2-a747a158bc07
-author: rpetrusha
-ms.author: ronpet
 ---
 # -nologo (Visual Basic)
 Suppresses display of the copyright banner and informational messages during compilation.  

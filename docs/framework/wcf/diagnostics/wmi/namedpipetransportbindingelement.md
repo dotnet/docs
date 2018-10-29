@@ -8,7 +8,7 @@ NamedPipeTransportBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class NamedPipeTransportBindingElement : ConnectionOrientedTransportBindingElement  
 {  
   NamedPipeConnectionPoolSettings ConnectionPoolSettings;  

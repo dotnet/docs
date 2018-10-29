@@ -8,7 +8,7 @@ DeliveryRequirementsAttribute
   
 ## Syntax  
   
-```  
+```csharp
 class DeliveryRequirementsAttribute : Behavior  
 {  
   string QueuedDeliveryRequirements;  

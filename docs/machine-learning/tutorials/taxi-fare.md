@@ -145,13 +145,13 @@ pipeline.Add(new TextLoader(_datapath).CreateFrom<TaxiTrip>(useHeader: true, sep
 
 In the next steps we refer to the columns by the names defined in the `TaxiTrip` class.
 
-When the model is trained and evaluated, by default, the values in the **Label** column are considered as correct values to be predicted. As we want to predict the taxi trip fare, copy the `FareAmount` column into the **Label** column. To do that, use <xref:Microsoft.ML.Transforms.ColumnCopier> and add the following code:
+When the model is trained and evaluated, by default, the values in the **Label** column are considered as correct values to be predicted. As we want to predict the taxi trip fare, copy the `FareAmount` column into the **Label** column. To do that, use <xref:Microsoft.ML.Legacy.Transforms.ColumnCopier> and add the following code:
 
 ```csharp
 pipeline.Add(new ColumnCopier(("FareAmount", "Label")));
 ```
 
-The algorithm that trains the model requires **numeric** features, so you have to transform the categorical data (`VendorId`, `RateCode`, and `PaymentType`) values into numbers. To do that, use <xref:Microsoft.ML.Transforms.CategoricalOneHotVectorizer>, which assigns different numeric key values to the different values in each of the columns, and add the following code:
+The algorithm that trains the model requires **numeric** features, so you have to transform the categorical data (`VendorId`, `RateCode`, and `PaymentType`) values into numbers. To do that, use <xref:Microsoft.ML.Legacy.Transforms.CategoricalOneHotVectorizer>, which assigns different numeric key values to the different values in each of the columns, and add the following code:
 
 ```csharp
 pipeline.Add(new CategoricalOneHotVectorizer("VendorId",
@@ -159,7 +159,7 @@ pipeline.Add(new CategoricalOneHotVectorizer("VendorId",
                                              "PaymentType"));
 ```
 
-The last step in data preparation combines all of the feature columns into the **Features** column using the <xref:Microsoft.ML.Transforms.ColumnConcatenator> transformation class. By default, a learning algorithm processes only features from the **Features** column. Add the following code:
+The last step in data preparation combines all of the feature columns into the **Features** column using the <xref:Microsoft.ML.Legacy.Transforms.ColumnConcatenator> transformation class. By default, a learning algorithm processes only features from the **Features** column. Add the following code:
 
 ```csharp
 pipeline.Add(new ColumnConcatenator("Features",
@@ -177,9 +177,9 @@ Notice that the `TripTime` column, which corresponds to the `trip_time_in_secs` 
 
 ## Choose a learning algorithm
 
-After adding the data to the pipeline and transforming it into the correct input format, you select a learning algorithm (**learner**). The learner trains the model. You chose a **regression** task for this problem, so you use a <xref:Microsoft.ML.Trainers.FastTreeRegressor> learner, which is one of the regression learners provided by ML.NET.
+After adding the data to the pipeline and transforming it into the correct input format, you select a learning algorithm (**learner**). The learner trains the model. You chose a **regression** task for this problem, so you use a <xref:Microsoft.ML.Legacy.Trainers.FastTreeRegressor> learner, which is one of the regression learners provided by ML.NET.
 
-<xref:Microsoft.ML.Trainers.FastTreeRegressor> learner utilizes gradient boosting. Gradient boosting is a machine learning technique for regression problems. It builds each regression tree in a step-wise fashion. It uses a pre-defined loss function to measure the error in each step and correct for it in the next. The result is a prediction model that is actually an ensemble of weaker prediction models. For more information about gradient boosting, see [Boosted Decision Tree Regression](/azure/machine-learning/studio-module-reference/boosted-decision-tree-regression).
+<xref:Microsoft.ML.Legacy.Trainers.FastTreeRegressor> learner utilizes gradient boosting. Gradient boosting is a machine learning technique for regression problems. It builds each regression tree in a step-wise fashion. It uses a pre-defined loss function to measure the error in each step and correct for it in the next. The result is a prediction model that is actually an ensemble of weaker prediction models. For more information about gradient boosting, see [Boosted Decision Tree Regression](/azure/machine-learning/studio-module-reference/boosted-decision-tree-regression).
 
 Add the following code into the `Train` method following the data processing code added in the previous step:
 

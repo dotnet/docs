@@ -74,7 +74,7 @@ public class NormalService : INormalInterface
 ```  
   
 ## Create the client proxy for the REST-style service  
- Using <!--zz<xref:System.ServiceModel.ClientBase%60>--> `System.ServiceModel.ClientBase` implement the client proxy. For each method called, a new <xref:System.ServiceModel.OperationContextScope> is created and used to call the operation.  
+ Using <xref:System.ServiceModel.ClientBase%601> to implement the client proxy. For each method called, a new <xref:System.ServiceModel.OperationContextScope> is created and used to call the operation.  
   
 ```csharp
 public class MyRestClient : ClientBase<IRestInterface>, IRestInterface

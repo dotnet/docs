@@ -99,7 +99,7 @@ The strong naming API enables a client to administer strong name signing for ass
  [StrongNameTokenFromPublicKey Function](../../../../docs/framework/unmanaged-api/strong-naming/strongnametokenfrompublickey-function.md)  
  Gets a token representing a public key. Deprecated starting with the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)].  
   
- [Strong Naming Structure](https://msdn.microsoft.com/library/4b041a2f-fd12-4b91-aacd-bc3b34a5124d)  
+ [Strong Naming Structures](https://msdn.microsoft.com/library/4b041a2f-fd12-4b91-aacd-bc3b34a5124d)  
  Describes the unmanaged structure that the strong naming API uses  to administer strong name signing for assemblies..  
   
  [PublicKeyBlob Structure](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md)  

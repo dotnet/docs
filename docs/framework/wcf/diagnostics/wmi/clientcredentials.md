@@ -8,7 +8,7 @@ ClientCredentials
   
 ## Syntax  
   
-```  
+```csharp
 class ClientCredentials : Behavior  
 {  
   string ClientCertificate;  

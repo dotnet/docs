@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "what's new [Visual Basic]"
   - "Visual Basic, what's new"
 ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
-author: rpetrusha
-ms.author: ronpet
 ---
 # What's new for Visual Basic
 
@@ -151,7 +149,7 @@ For more information, see [Reference Return Values](../programming-guide/languag
 [String interpolation](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)  
  You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../../standard/base-types/composite-format.md).  
   
-[Null-conditional member access and indexing](../../csharp/language-reference/operators/null-conditional-operators.md)  
+[Null-conditional member access and indexing](../language-reference/operators/null-conditional-operators.md)  
 You can test for null in a very light syntactic way before performing a member access (`?.`) or index (`?[]`) operation.  These operators help you write less code to handle null checks, especially for descending into data structures.  If the left operand or object reference is null, the operations returns null.  
   
 [Multi-line string literals](../../visual-basic/programming-guide/language-features/strings/string-basics.md)  

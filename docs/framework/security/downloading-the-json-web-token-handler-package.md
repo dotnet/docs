@@ -7,7 +7,7 @@ ms.assetid: d12b3f5b-f1f1-4a9d-a159-0c13e5976c90
 
 This topic discusses how to download and use the JSON Web Token Handler in your project.
 
-The JSON Web Token Handler extension is available as a NuGet package, which adds the necessary assemblies and references to your project. If you do not already have NuGet installed, go to [nuget.org](http://nuget.org) to install it. You can see the versioning history for the extension by visiting its page on NuGet: [JSON Web Token Handler on NuGet](http://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt/)
+The JSON Web Token Handler extension is available as a NuGet package, which adds the necessary assemblies and references to your project. If you do not already have NuGet installed, go to [nuget.org](https://nuget.org) to install it. You can see the versioning history for the extension by visiting its page on NuGet: [JSON Web Token Handler on NuGet](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt/)
 
 ## Use the Package Manager GUI
 

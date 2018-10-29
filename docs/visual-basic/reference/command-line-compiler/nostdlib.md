@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "-nostdlib compiler option [Visual Basic]"
   - "/nostdlib compiler option [Visual Basic]"
 ms.assetid: 140381b8-dc96-4ad5-ae11-792c9ed0be4d
-author: rpetrusha
-ms.author: ronpet
 ---
 # -nostdlib (Visual Basic)
 Causes the compiler not to automatically reference the standard libraries.  

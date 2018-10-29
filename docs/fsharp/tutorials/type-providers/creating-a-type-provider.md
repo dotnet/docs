@@ -742,7 +742,7 @@ This section shows how to provide a type that you can use to get rows with a `Di
 
 - Header names are either unit-less or have the form "Name (unit)" and don't contain commas.
 
-- Units are all Systeme International (SI) units as the [Microsoft.FSharp.Data.UnitSystems.SI.UnitNames Module (F#)](https://msdn.microsoft.com/library/3cb43485-11f5-4aa7-a779-558f19d4013b) module defines.
+- Units are all System International (SI) units as the [Microsoft.FSharp.Data.UnitSystems.SI.UnitNames Module (F#)](https://msdn.microsoft.com/library/3cb43485-11f5-4aa7-a779-558f19d4013b) module defines.
 
 - Units are all simple (for example, meter) rather than compound (for example, meter/second).
 
@@ -1104,9 +1104,9 @@ The type provider mechanism in F# has the following limitations:
 
 ## Development Tips
 
-You might find the following tips helpful during the development process.
+You might find the following tips helpful during the development process:
 
-### Run Two Instances of Visual Studio
+### Run two instances of Visual Studio
 
 You can develop the type provider in one instance and test the provider in the other because the test IDE will take a lock on the .dll file that prevents the type provider from being rebuilt. Thus, you must close the second instance of Visual Studio while the provider is built in the first instance, and then you must reopen the second instance after the provider is built.
 

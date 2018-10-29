@@ -40,9 +40,9 @@ If you change the access levels of `x` and `y` to [private](private.md), the com
 
 `'Point.x' is inaccessible due to its protection level.`
 
-## C# language specification
+## C# language specification  
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+For more information, see [Declared accessibility](~/_csharplang/spec/basic-concepts.md#declared-accessibility) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 
@@ -55,4 +55,4 @@ If you change the access levels of `x` and `y` to [private](private.md), the com
 - [public](public.md)
 - [private](private.md)
 - [internal](internal.md)
-- [Security concerns for internal virtual keywords](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/heyd8kky(v=vs.100))
+- [Security concerns for internal virtual keywords](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/heyd8kky(v=vs.100))

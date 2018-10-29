@@ -34,6 +34,10 @@ x | y
   
  [!code-csharp[csRefOperators#52](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-or-operator_1.cs)]  
   
+## C# Language Specification  
+
+For more information, see [Conditional logical operators](~/_csharplang/spec/expressions.md#conditional-logical-operators) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+  
 ## See Also
 
 - [C# Reference](../../../csharp/language-reference/index.md)  

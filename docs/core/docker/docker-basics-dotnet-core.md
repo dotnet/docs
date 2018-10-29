@@ -248,7 +248,7 @@ The output from the `docker run` command should be similar to the following cons
 Hello World!
 ```
 
-Congratulations! you have just:
+Congratulations! You have just:
 > [!div class="checklist"]
 > * Created a local .NET Core app
 > * Created a Dockerfile to build your first container

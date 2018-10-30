@@ -1,6 +1,6 @@
 ---
 title: "LINQ to XML Overview (C#)"
-ms.date: 07/20/2015
+ms.date: 10/30/2018
 ms.assetid: 716b94d3-0091-4de1-8e05-41bc069fa9dd
 ---
 # LINQ to XML Overview (C#)
@@ -38,7 +38,7 @@ IEnumerable<string> partNos =  from item in purchaseOrder.Descendants("Item")
 This can be rewritten in method syntax form:
 
 ```csharp
-IEnumerable<string> partNos = purchaseOrder.Descendants("Item").Select(x => x.Attribute("PartNumber"));
+IEnumerable<string> partNos = purchaseOrder.Descendants("Item").Select(x => (string) x.Attribute("PartNumber"));
 ```
 
 As another example, you might want a list, sorted by part number, of the items with a value greater than $100. To obtain this information, you could run the following query:  

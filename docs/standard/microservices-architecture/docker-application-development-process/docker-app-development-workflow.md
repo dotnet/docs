@@ -29,9 +29,9 @@ An application is composed of your own services plus additional libraries (depen
 
 In this section, this whole process is detailed and every major step is explained by focusing on a Visual Studio environment.
 
-When you're using an editor/CLI development approach (for example, Visual Studio Code plus Docker CLI on macOS or Windows), you need to know every step, generally in more detail than if you are using Visual Studio. For more information about working in a CLI environment, see the e-book [Containerized Docker Application lifecycle with Microsoft Platforms and Tools](https://aka.ms/dockerlifecycleebook/).
+When you're using an editor/CLI development approach (for example, Visual Studio Code plus Docker CLI on macOS or Windows), you need to know every step, generally in more detail than if you're using Visual Studio. For more information about working in a CLI environment, see the e-book [Containerized Docker Application lifecycle with Microsoft Platforms and Tools](https://aka.ms/dockerlifecycleebook/).
 
-When you're using Visual Studio 2017, many of those steps are handled for you, which dramatically improves your productivity. This is especially true when you are using Visual Studio 2017 and targeting multi-container applications. For instance, with just one mouse click, Visual Studio adds the Dockerfile and docker-compose.yml file to your projects with the configuration for your application. When you run the application in Visual Studio, it builds the Docker image and runs the multi-container application directly in Docker; it even allows you to debug several containers at once. These features will boost your development speed.
+When you're using Visual Studio 2017, many of those steps are handled for you, which dramatically improves your productivity. This is especially true when you're using Visual Studio 2017 and targeting multi-container applications. For instance, with just one mouse click, Visual Studio adds the Dockerfile and docker-compose.yml file to your projects with the configuration for your application. When you run the application in Visual Studio, it builds the Docker image and runs the multi-container application directly in Docker; it even allows you to debug several containers at once. These features will boost your development speed.
 
 However, just because Visual Studio makes those steps automatic doesn't mean that you don't need to know what's going on underneath with Docker. Therefore, the following guidance details every step.
 
@@ -39,7 +39,7 @@ However, just because Visual Studio makes those steps automatic doesn't mean tha
 
 ## Step 1. Start coding and create your initial application or service baseline
 
-Developing a Docker application is similar to the way you develop an application without Docker. The difference is that while developing for Docker, you are deploying and testing your application or services running within Docker containers in your local environment (either a Linux VM setup by Docker or directly Windows if using Windows Containers).
+Developing a Docker application is similar to the way you develop an application without Docker. The difference is that while developing for Docker, you're deploying and testing your application or services running within Docker containers in your local environment (either a Linux VM setup by Docker or directly Windows if using Windows Containers).
 
 ### Set up your local environment with Visual Studio
 
@@ -53,7 +53,7 @@ In addition, you need Visual Studio 2017 version 15.7 or later, with the **.NET 
 
 **Figure 5-2**. Selecting the **.NET Core cross-platform development** workload during Visual Studio 2017 setup
 
-You can start coding your application in plain .NET (usually in .NET Core if you are planning to use containers) even before enabling Docker in your application and deploying and testing in Docker. However, it is recommended that you start working on Docker as soon as possible, because that will be the real environment and any issues can be discovered as soon as possible. This is encouraged because Visual Studio makes it so easy to work with Docker that it almost feels transparent—the best example when debugging multi-container applications from Visual Studio.
+You can start coding your application in plain .NET (usually in .NET Core if you're planning to use containers) even before enabling Docker in your application and deploying and testing in Docker. However, it is recommended that you start working on Docker as soon as possible, because that will be the real environment and any issues can be discovered as soon as possible. This is encouraged because Visual Studio makes it so easy to work with Docker that it almost feels transparent—the best example when debugging multi-container applications from Visual Studio.
 
 ### Additional resources
 
@@ -89,7 +89,7 @@ In a similar fashion, Visual Studio can also add a docker-compose.yml file for t
 
 ### Using an existing official .NET Docker image
 
-You usually build a custom image for your container on top of a base image you get from an official repository like the [Docker Hub](https://hub.docker.com/) registry. That is precisely what happens under the covers when you enable Docker support in Visual Studio. Your Dockerfile will use an existing aspnetcore image.
+You usually build a custom image for your container on top of a base image you get from an official repository like the [Docker Hub](https://hub.docker.com/) registry. That is precisely what happens under the covers when you enable Docker support in Visual Studio. Your Dockerfile will use an existing `aspnetcore` image.
 
 Earlier we explained which Docker images and repos you can use, depending on the framework and OS you have chosen. For instance, if you want to use ASP.NET Core (Linux or Windows), the image to use is `microsoft/dotnet:2.1-aspnetcore-runtime`. Therefore, you just need to specify what base Docker image you will use for your container. You do that by adding `FROM microsoft/dotnet:2.1-aspnetcore-runtime` to your Dockerfile. This will be automatically performed by Visual Studio, but if you were to update the version, you update this value.
 
@@ -108,7 +108,7 @@ ENTRYPOINT ["dotnet", " MySingleContainerWebApp.dll "]
 
 In this case, the image is based on version 2.1 of the official ASP.NET Core Docker image (multi-arch for Linux and Windows). This is the setting `FROM microsoft/dotnet:2.1-aspnetcore-runtime`. (For more information about this base image, see the [ASP.NET Core Docker Image](https://hub.docker.com/r/microsoft/aspnetcore/) page and the [.NET Core Docker Image](https://hub.docker.com/r/microsoft/dotnet/) page.) In the Dockerfile, you also need to instruct Docker to listen on the TCP port you will use at runtime (in this case, port 80, as configured with the EXPOSE setting).
 
-You can specify additional configuration settings in the Dockerfile, depending on the language and framework you are using. For instance, the ENTRYPOINT line with `["dotnet", "MySingleContainerWebApp.dll"]` tells Docker to run a .NET Core application. If you are using the SDK and the .NET Core CLI (dotnet CLI) to build and run the .NET application, this setting would be different. The bottom line is that the ENTRYPOINT line and other settings will be different depending on the language and platform you choose for your application.
+You can specify additional configuration settings in the Dockerfile, depending on the language and framework you're using. For instance, the ENTRYPOINT line with `["dotnet", "MySingleContainerWebApp.dll"]` tells Docker to run a .NET Core application. If you're using the SDK and the .NET Core CLI (dotnet CLI) to build and run the .NET application, this setting would be different. The bottom line is that the ENTRYPOINT line and other settings will be different depending on the language and platform you choose for your application.
 
 ### Additional resources
 
@@ -136,7 +136,7 @@ If you specify a tag, targeting a platform that is explicit like in the followin
 - `microsoft/dotnet:2.1-aspnetcore-runtime-nanoserver-1709` \
   Targets: .NET Core 2.1 runtime-only on Windows Nano Server
 
-But, if you specify the same image name, even with the same tag, the multi-arch images (like the aspnetcore image) will use the Linux or Windows version depending on the Docker host OS you are deploying, as shown in the following example:
+But, if you specify the same image name, even with the same tag, the multi-arch images (like the `aspnetcore` image) will use the Linux or Windows version depending on the Docker host OS you're deploying, as shown in the following example:
 
 - `microsoft/dotnet:2.1-aspnetcore-runtime` \
   Multi-arch: .NET Core 2.1 runtime-only on Linux or Windows Nano Server depending on the Docker host OS
@@ -237,13 +237,13 @@ Then it would be just the same for every service, it would copy the whole soluti
 
 2) Since the larger image occurs in an intermediate stage it, doesn't affect the final image size.
 
-The next significant optimization involves the restore command executed in line 17, which is also different for every service of eShopOnContainers. If we changed that line to just:
+The next significant optimization involves the `restore` command executed in line 17, which is also different for every service of eShopOnContainers. If you change that line to just:
 
 ```console
 RUN dotnet restore
 ```
 
-It'd restore the packages for the whole solution, but then again, it would do it just once, instead of the 15 times with the current strategy.
+It would restore the packages for the whole solution, but then again, it would do it just once, instead of the 15 times with the current strategy.
 
 However, `dotnet restore` only runs if there's a single project or solution file in the folder, so achieving this is a bit more complicated and the way to solve it, without getting into too many details, is this:
 
@@ -378,9 +378,9 @@ This docker-compose.yml file is a simplified and merged version. It contains sta
 
 The docker-compose.yml file example defines four services: the `webmvc` service (a web application), two microservices (`ordering.api` and `basket.api`), and one data source container, `sql.data`, based on SQL Server for Linux running as a container. Each service will be deployed as a container, so a Docker image is required for each.
 
-The docker-compose.yml file specifies not only what containers are being used, but how they are individually configured. For instance, the webmvc container definition in the .yml file:
+The docker-compose.yml file specifies not only what containers are being used, but how they are individually configured. For instance, the `webmvc` container definition in the .yml file:
 
-- Uses a pre-built eshop/web:latest image. However, you could also configure the image to be built as part of the docker-compose execution with an additional configuration based on a build: section in the docker-compose file.
+- Uses a pre-built `eshop/web:latest` image. However, you could also configure the image to be built as part of the docker-compose execution with an additional configuration based on a build: section in the docker-compose file.
 
 - Initializes two environment variables (CatalogUrl and OrderingUrl).
 
@@ -394,7 +394,7 @@ We will revisit the docker-compose.yml file in a later section when we cover how
 
 Besides adding a Dockerfile to a project, as we mentioned before, Visual Studio 2017 (from 15.8 on) can add orchestrator support for Docker Compose to a solution.
 
-When you add container orchestrator support, as shown in Figure 5-7, for the first time, Visual Studio creates the Dockerfile for the project and creates a new (service section) project in your solution with several global **docker-compose\*.yml** files, and then adds the project to those files. You can then open the docker-compose.yml files and update them with additional features.
+When you add container orchestrator support, as shown in Figure 5-7, for the first time, Visual Studio creates the Dockerfile for the project and creates a new (service section) project in your solution with several global `docker-compose*.yml` files, and then adds the project to those files. You can then open the docker-compose.yml files and update them with additional features.
 
 You have to repeat this operation form every project you want to include in the docker-compose.yml file.
 
@@ -404,7 +404,7 @@ At the time of this writing, Visual Studio supports Docker Compose and Service F
 
 **Figure 5-7**. Adding Docker support in Visual Studio 2017 by right-clicking an ASP.NET Core project
 
-After you add orchestrator support to your solution in Visual Studio, you will also see a new node (in the docker-compose.dcproj project file) in Solution Explorer that contains the added docker-compose.yml files, as shown in Figure 5-8.
+After you add orchestrator support to your solution in Visual Studio, you will also see a new node (in the `docker-compose.dcproj` project file) in Solution Explorer that contains the added docker-compose.yml files, as shown in Figure 5-8.
 
 ![docker-compose node in Solution Explorer](./media/image11.png)
 
@@ -483,7 +483,7 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2017
 
 ### A note about testing and deploying with orchestrators
 
-The docker-compose up and docker run commands (or running and debugging the containers in Visual Studio) are adequate for testing containers in your development environment. But you should not use this approach for production deployments, where you should target orchestrators like [Kubernetes](https://kubernetes.io/) or [Service Fabric](https://azure.microsoft.com/services/service-fabric/). If you are using Kubernetes you have use [pods](https://kubernetes.io/docs/concepts/workloads/pods/pod/) to organize containers and [services](https://kubernetes.io/docs/concepts/services-networking/service/) to network them. You also use [deployments](https://kubernetes.io/docs/tutorials/k8s201/#deployments) to organize pod creation and modification.
+The docker-compose up and docker run commands (or running and debugging the containers in Visual Studio) are adequate for testing containers in your development environment. But you should not use this approach for production deployments, where you should target orchestrators like [Kubernetes](https://kubernetes.io/) or [Service Fabric](https://azure.microsoft.com/services/service-fabric/). If you're using Kubernetes you have to use [pods](https://kubernetes.io/docs/concepts/workloads/pods/pod/) to organize containers and [services](https://kubernetes.io/docs/concepts/services-networking/service/) to network them. You also use [deployments](https://kubernetes.io/docs/tutorials/k8s201/#deployments) to organize pod creation and modification.
 
 ![6 - Test your app or microservices](./media/image17.png)
 
@@ -511,7 +511,7 @@ When running and debugging the containers with Visual Studio 2017, you can debug
 
 ### Testing and debugging without Visual Studio
 
-If you are developing using the editor/CLI approach, debugging containers is more difficult and you will want to debug by generating traces.
+If you're developing using the editor/CLI approach, debugging containers is more difficult and you will want to debug by generating traces.
 
 ### Additional resources
 
@@ -529,7 +529,7 @@ Effectively, the workflow when using Visual Studio is a lot simpler than if you 
 
 **Figure 5-15**. Simplified workflow when developing with Visual Studio
 
-In addition, you need to perform step 2 (adding Docker support to your projects) just once. Therefore, the workflow is similar to your usual development tasks when using .NET for any other development. You need to know what is going on under the covers (the image build process, what base images you are using, deployment of containers, etc.) and sometimes you will also need to edit the Dockerfile or docker-compose.yml file to customize behaviors. But most of the work is greatly simplified by using Visual Studio, making you a lot more productive.
+In addition, you need to perform step 2 (adding Docker support to your projects) just once. Therefore, the workflow is similar to your usual development tasks when using .NET for any other development. You need to know what is going on under the covers (the image build process, what base images you're using, deployment of containers, etc.) and sometimes you will also need to edit the Dockerfile or docker-compose.yml file to customize behaviors. But most of the work is greatly simplified by using Visual Studio, making you a lot more productive.
 
 ### Additional resources
 

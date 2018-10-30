@@ -25,6 +25,7 @@ class DispatchByBodyElementOperationSelector : IDispatchOperationSelector
         this.dispatchDictionary = dispatchDictionary;  
         this.defaultOperationName = defaultOperationName;  
     }  
+}
 ```  
   
  <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector> implementations are very straightforward to build as there is only one method on the interface: <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector.SelectOperation%2A>. The job of this method is to inspect an incoming message and to return a string that equals the name of a method on the service contract for the current endpoint.  

@@ -51,8 +51,10 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
   
 -   [How to: Declare, Instantiate, and Use a Delegate](../../../csharp/programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate.md)  
   
+  
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+For more information, see [Delegates](~/_csharplang/spec/delegates.md) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
 ## Featured Book Chapters  
  [Delegates, Events, and Lambda Expressions](https://msdn.microsoft.com/library/orm-9780596516109-03-09.aspx) in [C# 3.0 Cookbook, Third Edition: More than 250 solutions for C# 3.0 programmers](https://msdn.microsoft.com/library/orm-9780596516109-03.aspx)  

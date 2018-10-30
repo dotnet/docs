@@ -170,8 +170,8 @@ This step-by-step article describes how a system administrator can deploy the [!
   
 9. On the **User Experience** page of the wizard, use the default values and choose **Next**.  
   
-    > [!WARNING]
-    >  Your production environment might have policies that require different selections for the deployment schedule. For information about these options, see [Advertisement Name Properties: Schedule Tab](https://technet.microsoft.com/library/bb694016.aspx) in the TechNet Library.  
+> [!WARNING]
+> Your production environment might have policies that require different selections for the deployment schedule. For information about these options, see [Advertisement Name Properties: Schedule Tab](https://docs.microsoft.com/previous-versions/system-center/configuration-manager-2007/bb694016%28v=technet.10%29).
   
 10. On the **Distribution Points** page of the wizard, use the default values and choose **Next**.  
   
@@ -201,7 +201,7 @@ This step-by-step article describes how a system administrator can deploy the [!
   
 -   [Site Administration for System Center 2012 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg681983%28v=technet.10%29)  
   
--   [Configuration Manager Single Site Planning and Deployment](https://technet.microsoft.com/library/bb680961.aspx)  
+-   [Configuration Manager Single Site Planning and Deployment](https://docs.microsoft.com/previous-versions/system-center/configuration-manager-2007/bb680961%28v=technet.10%29)  
   
  **System Center 2012 Configuration Manager client for Windows computers:**  
   

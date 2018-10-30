@@ -102,7 +102,6 @@ For more information about strings in C#, see [Strings](../../programming-guide/
 - [C# Programming Guide](../../programming-guide/index.md)
 - [Best Practices for Using Strings](../../../standard/base-types/best-practices-strings.md)
 - [C# Keywords](index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [Reference Types](reference-types.md)
 - [Value Types](value-types.md)
 - [Basic String Operations](../../../standard/base-types/basic-string-operations.md)

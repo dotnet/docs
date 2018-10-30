@@ -153,7 +153,7 @@ partial void onNameChanged()
   
 ## C# Language Specification  
 
-For more information, see [Partial types](~/_csharplang/spec/classes.md#partial-types) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Partial types](~/_csharplang/spec/classes.md#partial-types) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See Also
 

@@ -119,6 +119,9 @@ The output is as follows.
 Baud Rate: 9600 Duplex: Full Parity: false
 Baud Rate: 4800 Duplex: Half Parity: false
 Baud Rate: 300 Duplex: Half Parity: true
+Baud Rate: 9600 Duplex: Full Parity: false4
+Baud Rate: 9600 Duplex: Full Parity: false
+Baud Rate: 4800 Duplex: Half Parity: false
 ```
 
 Since F# 4.1 you can use the attributes `[<Optional; DefaultParameterValue<(...)>]` in F# for C# and VB interop, so that C#/VB callers will see an argument as optional. This is equivalent to defining the argument as optional in C# as in `MyMethod(int i = 3)`.

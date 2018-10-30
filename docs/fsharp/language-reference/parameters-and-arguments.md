@@ -137,11 +137,11 @@ type C =
 The value given as argument to `DefaultParameterValue` must match the type of the parameter, i.e. the following is not allowed:
 
 ```fsharp
-type C() =
+type C =
     static member Wrong([<Optional; DefaultParameterValue("string")>] i:int) = ()
 ```
 
-In this case compiler generate a warning, and ignore both attributes altogether. Note that the default value `null` needs to be type-annotated, as otherwise the compiler infers the wrong type, i.e. `[<Optional; DefaultParameterValue(null:obj)>] o:obj`.
+In this case, the compiler generates a warning and will ignore both attributes altogether. Note that the default value `null` needs to be type-annotated, as otherwise the compiler infers the wrong type, i.e. `[<Optional; DefaultParameterValue(null:obj)>] o:obj`.
 
 ## Passing by Reference
 

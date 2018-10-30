@@ -105,6 +105,8 @@ For more information, see [Constructors (F#)](https://msdn.microsoft.com/library
 
 You can specify an optional parameter for a method by using a question mark in front of the parameter name. Optional parameters are interpreted as the F# option type, so you can query them in the regular way that option types are queried, by using a `match` expression with `Some` and `None`. Optional parameters are permitted only on members, not on functions created by using `let` bindings.
 
+You can pass existing optional values to method by parameter name, such as `?arg=None` or `?arg=Some(3)` or `?arg=arg`. This can be useful when building a method that passes optional arguments on to another method.
+
 You can also use a function `defaultArg`, which sets a default value of an optional argument. The `defaultArg` function takes the optional parameter as the first argument and the default value as the second.
 
 The following example illustrates the use of optional parameters.
@@ -117,6 +119,16 @@ The output is as follows.
 Baud Rate: 9600 Duplex: Full Parity: false
 Baud Rate: 4800 Duplex: Half Parity: false
 Baud Rate: 300 Duplex: Half Parity: true
+```
+
+Since F# 4.1 you can use the attributes `[<Optional; DefaultParameterValue<(...)>]` in F# for C# and VB interop, so that C#/VB callers will see an argument as optional. This is equivalent to defining the argument as optional in C# as in `MyMethod(int i = 3)`.
+
+```fsharp
+open System
+open System.Runtime.InteropServices
+type C = 
+    static member Foo([<Optional; DefaultParameterValue("Hello world")>] message) =
+        printfn "%s" message
 ```
 
 ## Passing by Reference

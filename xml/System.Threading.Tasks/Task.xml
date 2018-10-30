@@ -2282,7 +2282,7 @@ End Sub
    
   
 ## Examples  
- The following example launches a task that includes a call to the <xref:System.Threading.Tasks.Task.Delay%28System.TimeSpan%2CSystem.Threading.CancellationToken%29> method with a one-and-a-half second delay. Before the delay interval elapses, the token is cancelled. The output from the example shows that, as a result, a <xref:System.Threading.Tasks.TaskCanceledException> is thrown, and the tasks' <xref:System.Threading.Tasks.Task.Status%2A> property is set to <xref:System.Threading.Tasks.TaskStatus.Canceled>.  
+ The following example launches a task that includes a call to the <xref:System.Threading.Tasks.Task.Delay%28System.TimeSpan%2CSystem.Threading.CancellationToken%29> method with a 1.5 second delay. Before the delay interval elapses, the token is cancelled. The output from the example shows that, as a result, a <xref:System.Threading.Tasks.TaskCanceledException> is thrown, and the tasks' <xref:System.Threading.Tasks.Task.Status%2A> property is set to <xref:System.Threading.Tasks.TaskStatus.Canceled>.  
   
  [!code-csharp[System.Threading.Tasks.Task.Delay#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.delay/cs/delay4.cs#4)]
  [!code-vb[System.Threading.Tasks.Task.Delay#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.delay/vb/delay4.vb#4)]  

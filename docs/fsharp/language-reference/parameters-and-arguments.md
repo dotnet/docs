@@ -119,7 +119,7 @@ The output is as follows.
 Baud Rate: 9600 Duplex: Full Parity: false
 Baud Rate: 4800 Duplex: Half Parity: false
 Baud Rate: 300 Duplex: Half Parity: true
-Baud Rate: 9600 Duplex: Full Parity: false4
+Baud Rate: 9600 Duplex: Full Parity: false
 Baud Rate: 9600 Duplex: Full Parity: false
 Baud Rate: 4800 Duplex: Half Parity: false
 ```

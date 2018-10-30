@@ -121,6 +121,6 @@ public abstract class CardType : Enumeration
     [*https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/BuyerAggregate/CardType.cs*](https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/BuyerAggregate/CardType.cs)
 
 
->[!div class="step-by-step"]
-[Previous](implement-value-objects.md)
-[Next](domain-model-layer-validations.md)
+> [!div class="step-by-step"]
+> [Previous](implement-value-objects.md)
+> [Next](domain-model-layer-validations.md)

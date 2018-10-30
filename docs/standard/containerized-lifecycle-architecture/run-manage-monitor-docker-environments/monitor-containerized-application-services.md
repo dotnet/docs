@@ -90,6 +90,6 @@ Saving queries is also a standard feature in Operations Management Suite and can
 
 **More info** To find information on installing and configuring the Docker container solution in [Operations Management Suite](https://microsoft.com/oms), go to <https://docs.microsoft.com/azure/log-analytics/log-analytics-containers>.
 
->[!div class="step-by-step"]
-[Previous](manage-production-docker-environments.md)
-[Next](../key-takeaways/index.md)
+> [!div class="step-by-step"]
+> [Previous](manage-production-docker-environments.md)
+> [Next](../key-takeaways/index.md)

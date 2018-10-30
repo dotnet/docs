@@ -19,10 +19,12 @@ In a signature file, you do not repeat the definition of the types and the imple
 
 If there is not enough information in the type signature to indicate whether a type is sealed, or whether it is an interface type, you must add an attribute that indicates the nature of the type to the compiler. Attributes that you use for this purpose are described in the following table.
 
-|Attribute|Description|
-|---------|-----------|
-|`[<Sealed>]`|For a type that has no abstract members, or that should not be extended.|
-|`[<Interface>]`|For a type that is an interface.|
+
+|    Attribute    |                               Description                                |
+|-----------------|--------------------------------------------------------------------------|
+|  `[<Sealed>]`   | For a type that has no abstract members, or that should not be extended. |
+| `[<Interface>]` |                     For a type that is an interface.                     |
+
 The compiler produces an error if the attributes are not consistent between the signature and the declaration in the implementation file.
 
 Use the keyword `val` to create a signature for a value or function value. The keyword `type` introduces a type signature.

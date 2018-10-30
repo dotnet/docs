@@ -159,6 +159,6 @@ The next chapter will focus on serverless architecture, use cases, and design pa
 * [What is Docker?](../microservices-architecture/container-docker-introduction/docker-defined.md)
 * [Wingtip Tickets SaaS application](https://docs.microsoft.com/azure/sql-database/saas-tenancy-welcome-wingtip-tickets-app)
 
->[!div class="step-by-step"]
-[Previous](architecture-approaches.md)
-[Next](serverless-architecture.md)
+> [!div class="step-by-step"]
+> [Previous](architecture-approaches.md)
+> [Next](serverless-architecture.md)

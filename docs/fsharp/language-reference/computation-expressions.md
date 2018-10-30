@@ -223,28 +223,30 @@ builder.Run(builder.Delay(fun () -> {| cexpr |}))
 
 In the above code, the calls to `Run` and `Delay` are omitted if they are not defined in the computation expression builder class. The body of the computation expression, here denoted as `{| cexpr |}`, is translated into calls involving the methods of the builder class by the translations described in the following table. The computation expression `{| cexpr |}` is defined recursively according to these translations where `expr` is an F# expression and `cexpr` is a computation expression.
 
-|Expression|Translation|
-|----------|-----------|
-|<code>{&#124; let binding in cexpr &#124;}</code>|<code>let binding in {&#124; cexpr &#124;}</code>|
-|<code>{&#124; let! pattern = expr in cexpr &#124;}</code>|<code>builder.Bind(expr, (fun pattern -> {&#124; cexpr &#124;}))</code>|
-|<code>{&#124; do! expr in cexpr &#124;}</code>|<code>builder.Bind(expr, (fun () -> {&#124; cexpr &#124;}))</code>|
-|<code>{&#124; yield expr &#124;}</code>|`builder.Yield(expr)`|
-|<code>{&#124; yield! expr &#124;}</code>|`builder.YieldFrom(expr)`|
-|<code>{&#124; return expr &#124;}</code>|`builder.Return(expr)`|
-|<code>{&#124; return! expr &#124;}</code>|`builder.ReturnFrom(expr)`|
-|<code>{&#124; use pattern = expr in cexpr &#124;}</code>|<code>builder.Using(expr, (fun pattern -> {&#124; cexpr &#124;}))</code>|
-|<code>{&#124; use! value = expr in cexpr &#124;}</code>|<code>builder.Bind(expr, (fun value -> builder.Using(value, (fun value -> {&#124; cexpr &#124;}))))</code>|
-|<code>{&#124; if expr then cexpr0 &#124;}</code>|<code>if expr then {&#124; cexpr0 &#124;} else binder.Zero()</code>|
-|<code>{&#124; if expr then cexpr0 else cexpr1 &#124;}</code>|<code>if expr then {&#124; cexpr0 &#124;} else {&#124; cexpr1 &#124;}</code>|
-|<code>{&#124; match expr with &#124; pattern_i -> cexpr_i &#124;}</code>|<code>match expr with &#124; pattern_i -> {&#124; cexpr_i &#124;}</code>|
-|<code>{&#124; for pattern in expr do cexpr &#124;}</code>|<code>builder.For(enumeration, (fun pattern -> {&#124; cexpr &#124;}))</code>|
-|<code>{&#124; for identifier = expr1 to expr2 do cexpr &#124;}</code>|<code>builder.For(enumeration, (fun identifier -> {&#124; cexpr &#124;}))</code>|
-|<code>{&#124; while expr do cexpr &#124;}</code>|<code>builder.While(fun () -> expr), builder.Delay({&#124;cexpr &#124;})</code>|
-|<code>{&#124; try cexpr with &#124; pattern_i -> expr_i &#124;}</code>|<code>builder.TryWith(builder.Delay({&#124; cexpr &#124;}), (fun value -> match value with &#124; pattern_i -> expr_i &#124; exn -> reraise exn)))</code>|
-|<code>{&#124; try cexpr finally expr &#124;}</code>|<code>builder.TryFinally(builder.Delay( {&#124; cexpr &#124;}), (fun () -> expr))</code>|
-|<code>{&#124; cexpr1; cexpr2 &#124;}</code>|<code>builder.Combine({&#124;cexpr1 &#124;}, {&#124; cexpr2 &#124;})</code>|
-|<code>{&#124; other-expr; cexpr &#124;}</code>|<code>expr; {&#124; cexpr &#124;}</code>|
-|<code>{&#124; other-expr &#124;}</code>|`expr; builder.Zero()`|
+
+|                                Expression                                |                                                                        Translation                                                                        |
+|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|            <code>{&#124; let binding in cexpr &#124;}</code>             |                                                     <code>let binding in {&#124; cexpr &#124;}</code>                                                     |
+|        <code>{&#124; let! pattern = expr in cexpr &#124;}</code>         |                                          <code>builder.Bind(expr, (fun pattern -> {&#124; cexpr &#124;}))</code>                                          |
+|              <code>{&#124; do! expr in cexpr &#124;}</code>              |                                            <code>builder.Bind(expr, (fun () -> {&#124; cexpr &#124;}))</code>                                             |
+|                 <code>{&#124; yield expr &#124;}</code>                  |                                                                   `builder.Yield(expr)`                                                                   |
+|                 <code>{&#124; yield! expr &#124;}</code>                 |                                                                 `builder.YieldFrom(expr)`                                                                 |
+|                 <code>{&#124; return expr &#124;}</code>                 |                                                                  `builder.Return(expr)`                                                                   |
+|                <code>{&#124; return! expr &#124;}</code>                 |                                                                `builder.ReturnFrom(expr)`                                                                 |
+|         <code>{&#124; use pattern = expr in cexpr &#124;}</code>         |                                         <code>builder.Using(expr, (fun pattern -> {&#124; cexpr &#124;}))</code>                                          |
+|         <code>{&#124; use! value = expr in cexpr &#124;}</code>          |                        <code>builder.Bind(expr, (fun value -> builder.Using(value, (fun value -> {&#124; cexpr &#124;}))))</code>                         |
+|             <code>{&#124; if expr then cexpr0 &#124;}</code>             |                                            <code>if expr then {&#124; cexpr0 &#124;} else binder.Zero()</code>                                            |
+|       <code>{&#124; if expr then cexpr0 else cexpr1 &#124;}</code>       |                                       <code>if expr then {&#124; cexpr0 &#124;} else {&#124; cexpr1 &#124;}</code>                                        |
+| <code>{&#124; match expr with &#124; pattern_i -> cexpr_i &#124;}</code> |                                         <code>match expr with &#124; pattern_i -> {&#124; cexpr_i &#124;}</code>                                          |
+|        <code>{&#124; for pattern in expr do cexpr &#124;}</code>         |                                       <code>builder.For(enumeration, (fun pattern -> {&#124; cexpr &#124;}))</code>                                       |
+|  <code>{&#124; for identifier = expr1 to expr2 do cexpr &#124;}</code>   |                                     <code>builder.For(enumeration, (fun identifier -> {&#124; cexpr &#124;}))</code>                                      |
+|             <code>{&#124; while expr do cexpr &#124;}</code>             |                                      <code>builder.While(fun () -> expr), builder.Delay({&#124;cexpr &#124;})</code>                                      |
+|  <code>{&#124; try cexpr with &#124; pattern_i -> expr_i &#124;}</code>  | <code>builder.TryWith(builder.Delay({&#124; cexpr &#124;}), (fun value -> match value with &#124; pattern_i -> expr_i &#124; exn -> reraise exn)))</code> |
+|           <code>{&#124; try cexpr finally expr &#124;}</code>            |                                 <code>builder.TryFinally(builder.Delay( {&#124; cexpr &#124;}), (fun () -> expr))</code>                                  |
+|               <code>{&#124; cexpr1; cexpr2 &#124;}</code>                |                                        <code>builder.Combine({&#124;cexpr1 &#124;}, {&#124; cexpr2 &#124;})</code>                                        |
+|              <code>{&#124; other-expr; cexpr &#124;}</code>              |                                                         <code>expr; {&#124; cexpr &#124;}</code>                                                          |
+|                 <code>{&#124; other-expr &#124;}</code>                  |                                                                  `expr; builder.Zero()`                                                                   |
+
 In the previous table, `other-expr` describes an expression that is not otherwise listed in the table. A builder class does not need to implement all of the methods and support all of the translations listed in the previous table. Those constructs that are not implemented are not available in computation expressions of that type. For example, if you do not want to support the `use` keyword in your computation expressions, you can omit the definition of `Use` in your builder class.
 
 The following code example shows a computation expression that encapsulates a computation as a series of steps that can be evaluated one step at a time. A discriminated union type, `OkOrException`, encodes the error state of the expression as evaluated so far. This code demonstrates several typical patterns that you can use in your computation expressions, such as boilerplate implementations of some of the builder methods.

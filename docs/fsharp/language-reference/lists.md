@@ -6,7 +6,7 @@ ms.date: 05/16/2016
 # Lists
 
 > [!NOTE]
-The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+> The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 A list in F# is an ordered, immutable series of elements of the same type. To perform basic operations on lists, use the functions in the [List module](https://msdn.microsoft.com/library/a2264ba3-2d45-40dd-9040-4f7aa2ad9788).
 
@@ -56,14 +56,16 @@ Lists in F# are implemented as singly linked lists, which means that operations 
 
 The list type supports the following properties:
 
-|Property|Type|Description|
-|--------|----|-----------|
-|[Head](https://msdn.microsoft.com/library/5f9414fd-6bdb-470a-8b72-40016db30740)|`'T`|The first element.|
-|[Empty](https://msdn.microsoft.com/library/44406ecb-1918-4d32-b32a-ca1f69840386)|`'T list`|A static property that returns an empty list of the appropriate type.|
-|[IsEmpty](https://msdn.microsoft.com/library/3ba087b2-2fc2-406d-b10a-cff6a19322da)|`bool`|`true` if the list has no elements.|
-|[Item](https://msdn.microsoft.com/library/bdb2553a-0e54-4ff8-baed-ab1aac8f5dae)|`'T`|The element at the specified index (zero-based).|
-|[Length](https://msdn.microsoft.com/library/25f715c8-9daa-4c4d-a6c7-26772f9dab4d)|`int`|The number of elements.|
-|[Tail](https://msdn.microsoft.com/library/2a6f8eb9-dc32-41aa-8b62-2baffaface91)|`'T list`|The list without the first element.|
+
+|                                      Property                                      |   Type    |                              Description                              |
+|------------------------------------------------------------------------------------|-----------|-----------------------------------------------------------------------|
+|  [Head](https://msdn.microsoft.com/library/5f9414fd-6bdb-470a-8b72-40016db30740)   |   `'T`    |                          The first element.                           |
+|  [Empty](https://msdn.microsoft.com/library/44406ecb-1918-4d32-b32a-ca1f69840386)  | `'T list` | A static property that returns an empty list of the appropriate type. |
+| [IsEmpty](https://msdn.microsoft.com/library/3ba087b2-2fc2-406d-b10a-cff6a19322da) |  `bool`   |                  `true` if the list has no elements.                  |
+|  [Item](https://msdn.microsoft.com/library/bdb2553a-0e54-4ff8-baed-ab1aac8f5dae)   |   `'T`    |           The element at the specified index (zero-based).            |
+| [Length](https://msdn.microsoft.com/library/25f715c8-9daa-4c4d-a6c7-26772f9dab4d)  |   `int`   |                        The number of elements.                        |
+|  [Tail](https://msdn.microsoft.com/library/2a6f8eb9-dc32-41aa-8b62-2baffaface91)   | `'T list` |                  The list without the first element.                  |
+
 Following are some examples of using these properties.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1307.fs)]

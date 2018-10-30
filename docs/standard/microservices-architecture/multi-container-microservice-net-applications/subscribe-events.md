@@ -21,7 +21,6 @@ eventBus.Subscribe<ProductPriceChangedIntegrationEvent,
 
 eventBus.Subscribe<OrderStartedIntegrationEvent, 
                    OrderStartedIntegrationEventHandler>();
-
 ```
 
 After this code runs, the subscriber microservice will be listening through RabbitMQ channels. When any message of type ProductPriceChangedIntegrationEvent arrives, the code invokes the event handler that is passed to it and processes the event.
@@ -82,7 +81,7 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem product)
 ```
 
 In this case, since the origin microservice is a simple CRUD microservice, that code is placed right into a Web API controller. 
- 
+
 In more advanced microservices, like when using CQRS approaches, it can be implemented in the `CommandHandler` class, within the `Handle()` method. 
 
 
@@ -206,7 +205,6 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem productToUp
 
   return Ok();
 }
-
 ```
 
 After the ProductPriceChangedIntegrationEvent integration event is created, the transaction that stores the original domain operation (update the catalog item) also includes the persistence of the event in the EventLog table. This makes it a single transaction, and you will always be able to check whether event messages were sent.
@@ -374,6 +372,6 @@ If the “redelivered” flag is set, the receiver must take that into account, 
 
 
 
->[!div class="step-by-step"]
-[Previous](rabbitmq-event-bus-development-test-environment.md)
-[Next](test-aspnet-core-services-web-apps.md)
+> [!div class="step-by-step"]
+> [Previous](rabbitmq-event-bus-development-test-environment.md)
+> [Next](test-aspnet-core-services-web-apps.md)

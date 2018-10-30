@@ -40,13 +40,13 @@ Just show me some code...
 
 I want to know more about OData...
 
- -   [Whitepaper: Introducing OData](https://go.microsoft.com/fwlink/?LinkId=220867)
+- [Whitepaper: Introducing OData](https://go.microsoft.com/fwlink/?LinkId=220867)
 
--   [Open Data Protocol Web site](https://go.microsoft.com/fwlink/?LinkID=184554)
+  -   [Open Data Protocol Web site](https://go.microsoft.com/fwlink/?LinkID=184554)
 
--   [OData: SDK](https://go.microsoft.com/fwlink/?LinkID=185248)
+  -   [OData: SDK](https://go.microsoft.com/fwlink/?LinkID=185248)
 
--   [OData: Frequently Asked Questions](https://go.microsoft.com/fwlink/?LinkId=185867)
+  -   [OData: Frequently Asked Questions](https://go.microsoft.com/fwlink/?LinkId=185867)
 
 I want to watch some videos...
 

@@ -5,22 +5,23 @@ ms.assetid: 2820b0ec-2f32-430c-b299-1f0e95e1f2dc
 ---
 # Transaction Protocols
 Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-Coordination protocols.  
-  
-|Specification/Document|Version|Link|  
-|-----------------------------|-------------|----------|  
-|WS-Coordination|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96104](https://go.microsoft.com/fwlink/?LinkId=96104)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96079](https://go.microsoft.com/fwlink/?LinkId=96079)|  
-|WS-AtomicTransaction|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96080](https://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> https://go.microsoft.com/fwlink/?LinkId=96081|  
-  
+
+
+| Specification/Document |       Version       |                                                                                                   Link                                                                                                    |
+|------------------------|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    WS-Coordination     | 1.0<br /><br /> 1.1 | [https://go.microsoft.com/fwlink/?LinkId=96104](https://go.microsoft.com/fwlink/?LinkId=96104)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96079](https://go.microsoft.com/fwlink/?LinkId=96079) |
+|  WS-AtomicTransaction  | 1.0<br /><br /> 1.1 |                         [https://go.microsoft.com/fwlink/?LinkId=96080](https://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> https://go.microsoft.com/fwlink/?LinkId=96081                          |
+
  Interoperability on these protocol specifications is required at two levels: between applications and between transaction managers (see the following figure). Specifications describe in great detail the message formats and message exchange for both interoperability levels. Certain security, reliability, and encodings for application-to-application exchange apply as they do for regular application exchange. However, successful interoperability between transaction managers requires agreement on the particular binding, because it is usually not configured by the user.  
-  
+
  This topic describes a composition of the WS-Atomic Transaction (WS-AT) specification with security and describes the secure binding used for communication between transaction managers. The approach described in this document has been successfully tested with other implementations of WS-AT and WS-Coordination including IBM, IONA, Sun Microsystems, and others.  
-  
+
  The following figure depicts the interoperability between two transaction managers, Transaction Manager 1 and Transaction Manager 2, and two applications, Application 1 and Application 2.  
-  
+
  ![Transaction Protocols](../../../../docs/framework/wcf/feature-details/media/transactionmanagers.gif "TransactionManagers")  
-  
+
  Consider a typical WS-Coordination/WS-Atomic Transaction scenario with one Initiator (I) and one Participant (P). Both Initiator and Participant have Transaction Managers, (ITM and PTM, respectively). Two-phase commit is referred to as 2PC in this topic.  
-  
+
 |||  
 |-|-|  
 |1. CreateCoordinationContext|12. Application Message Response|  
@@ -34,109 +35,110 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
 |9. CreateCoordinationContextResponse|20. Commit (2PC)|  
 |10. Register (Durable)|21. Committed (2PC)|  
 |11. RegisterResponse|22. Committed (2PC)|  
-  
+
  This document describes a composition of the WS-AtomicTransaction specification with security and describes the secure binding used for communication between transaction managers. The approach described in this document has been successfully tested with other implementations of WS-AT and WS-Coordination.  
-  
+
  The figure and table illustrate four classes of messages from the viewpoint of security:  
-  
+
 -   Activation messages (CreateCoordinationContext and CreateCoordinationContextResponse).  
-  
+
 -   Registration messages (Register and RegisterResponse)  
-  
+
 -   Protocol messages (Prepare, Rollback, Commit, Aborted, and so on).  
-  
+
 -   Application messages.  
-  
+
  The first three message classes are considered Transaction Manager messages and their binding configuration is described in the "Application Message Exchange" later in this topic. The fourth class of message is application to application messages and is described in the "Message Examples" section later in this topic. This section describes the protocol bindings used for each of these classes by WCF.  
-  
+
  The following XML Namespaces and associated prefixes are used throughout this document.  
-  
-|Prefix|Version|Namespace URI|  
-|------------|-------------|-------------------|  
-|s11||[https://go.microsoft.com/fwlink/?LinkId=96014](https://go.microsoft.com/fwlink/?LinkId=96014)|  
-|wsa|Pre-1.0<br /><br /> 1.0|http://www.w3.org/2004/08/addressing<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96022](https://go.microsoft.com/fwlink/?LinkId=96022)|  
-|wscoor|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96078](https://go.microsoft.com/fwlink/?LinkId=96078)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96079](https://go.microsoft.com/fwlink/?LinkId=96079)|  
-|wsat|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96080](https://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96081](https://go.microsoft.com/fwlink/?LinkId=96081)|  
-|t|Pre-1.3<br /><br /> 1.3|[https://go.microsoft.com/fwlink/?LinkId=96082](https://go.microsoft.com/fwlink/?LinkId=96082)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96100](https://go.microsoft.com/fwlink/?LinkId=96100)|  
-|o||[https://go.microsoft.com/fwlink/?LinkId=96101](https://go.microsoft.com/fwlink/?LinkId=96101)|  
-|xsd||[https://go.microsoft.com/fwlink/?LinkId=96102](https://go.microsoft.com/fwlink/?LinkId=96102)|  
-  
+
+
+| Prefix |         Version         |                                                                                               Namespace URI                                                                                               |
+|--------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  s11   |                         |                                                      [https://go.microsoft.com/fwlink/?LinkId=96014](https://go.microsoft.com/fwlink/?LinkId=96014)                                                       |
+|  wsa   | Pre-1.0<br /><br /> 1.0 |                              http://www.w3.org/2004/08/addressing<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96022](https://go.microsoft.com/fwlink/?LinkId=96022)                              |
+| wscoor |   1.0<br /><br /> 1.1   | [https://go.microsoft.com/fwlink/?LinkId=96078](https://go.microsoft.com/fwlink/?LinkId=96078)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96079](https://go.microsoft.com/fwlink/?LinkId=96079) |
+|  wsat  |   1.0<br /><br /> 1.1   | [https://go.microsoft.com/fwlink/?LinkId=96080](https://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96081](https://go.microsoft.com/fwlink/?LinkId=96081) |
+|   t    | Pre-1.3<br /><br /> 1.3 | [https://go.microsoft.com/fwlink/?LinkId=96082](https://go.microsoft.com/fwlink/?LinkId=96082)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96100](https://go.microsoft.com/fwlink/?LinkId=96100) |
+|   o    |                         |                                                      [https://go.microsoft.com/fwlink/?LinkId=96101](https://go.microsoft.com/fwlink/?LinkId=96101)                                                       |
+|  xsd   |                         |                                                      [https://go.microsoft.com/fwlink/?LinkId=96102](https://go.microsoft.com/fwlink/?LinkId=96102)                                                       |
+
 ## Transaction Manager Bindings  
  R1001: Transaction Managers participating in a WS-AT 1.0 transaction must use SOAP 1.1 and WS-Addressing 2004/08 for WS-Atomic Transaction and WS-Coordination message exchanges.  
-  
+
  R1002: Transaction Managers participating in a WS-AT 1.1 transaction must use SOAP 1.1 and WS-Addressing 2005/08 for WS-Atomic Transaction and WS-Coordination message exchanges.  
-  
+
  Application messages are not constrained to these bindings and are described later.  
-  
+
 ### Transaction Manager HTTPS Binding  
  The transaction manager HTTPS binding relies solely on transport security to achieve security and establish trust between each sender-receiver pair in the transaction tree.  
-  
+
 #### HTTPS Transport Configuration  
  X.509 certificates are used to establish Transaction Manager Identity. Client/server authentication is required, and client/server authorization is left as an implementation detail:  
-  
+
 -   R1111: X.509 certificates presented over the wire must have a subject name that matches the fully qualified domain name (FQDN) of the originating machine.  
-  
+
 -   B1112: DNS must be functional between each sender-receiver pair in the system for X.509 subject name checks to succeed.  
-  
+
 #### Activation and Registration Binding Configuration  
  WCF requires request/reply duplex binding with correlation over HTTPS. (For more information about correlation and descriptions of the request/reply message exchange patterns, see WS-Atomic Transaction, Section 8.)  
-  
+
 #### 2PC Protocol Binding Configuration  
  WCF supports one-way (datagram) messages over HTTPS. Correlation among the messages is left as an implementation detail.  
-  
+
  B1131: Implementations must support `wsa:ReferenceParameters` as described in WS-Addressing to achieve correlation of WCF’s 2PC messages.  
-  
+
 ### Transaction Manager Mixed Security Binding  
  This is an alternate (mixed mode) binding that uses transport security combined with the WS-Coordination Issued Token model for identity establishment purposes. Activation and Registration are the only elements that differ between the two bindings.  
-  
+
 #### HTTPS Transport Configuration  
  X.509 certificates are used to establish Transaction Manager Identity. Client/Server authentication is required, and client/server authorization is left as an implementation detail.  
-  
+
 #### Activation Message Binding Configuration  
  Activation Messages usually do not participate in interoperability because they typically occur between an application and its local Transaction Manager.  
-  
+
  B1221: WCF uses duplex HTTPS binding (described in [Messaging Protocols](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)) for Activation messages. Request and Reply messages are correlated using WS-Addressing 2004/08 for WS-AT 1.0 and WS-Addressing 2005/08 for WS-AT 1.1.  
-  
+
  WS-Atomic Transaction specification, Section 8, describes further details about correlation and the message exchange patterns.  
-  
+
 -   R1222: Upon receiving a `CreateCoordinationContext`, the Coordinator must issue a `SecurityContextToken` with associated secret `STx`. This token is returned inside a `t:IssuedTokens` header following WS-Trust specification.  
-  
+
 -   R1223: If Activation occurs within an existing Coordination Context, the `t:IssuedTokens` header with the `SecurityContextToken` associated with existing Context must flow on the `CreateCoordinationContext` message.  
-  
+
  A new `t:IssuedTokens` header should be generated for attaching to the outgoing `wscoor:CreateCoordinationContextResponse` message.  
-  
+
 #### Registration Message Binding Configuration  
  B1231: WCF uses duplex HTTPS binding (described in [Messaging Protocols](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)). Request and Reply messages are correlated using WS-Addressing 2004/08 for WS-AT 1.0 and WS-Addressing 2005/08 for WS-AT 1.1.  
-  
+
  WS-AtomicTransaction, Section 8, describes further details about correlation and descriptions of the message exchange patterns.  
-  
+
  R1232: Outgoing `wscoor:Register` messages must use the `IssuedTokenOverTransport` authentication mode described in [Security Protocols](../../../../docs/framework/wcf/feature-details/security-protocols.md).  
-  
+
  The `wsse:Timestamp` element must be signed using the `SecurityContextToken``STx` issued. This signature is a proof of possession of the token associated with particular transaction and is used to authenticate a participant enlisting in the transaction. The RegistrationResponse message is sent back over HTTPS.  
-  
+
 #### 2PC Protocol Binding Configuration  
  WCF supports one-way (datagram) messages over HTTPS. Correlation among the messages is left as an implementation detail.  
-  
+
  B1241: Implementations must support `wsa:ReferenceParameters` as described in WS-Addressing to achieve correlation of WCF’s 2PC messages.  
-  
+
 ## Application Message Exchange  
  Applications are free to use any particular binding for application-to-application messages, as long as the binding meets the following security requirements:  
-  
+
 -   R2001: Application-to-application messages must flow the `t:IssuedTokens` header along with the `CoordinationContext` in the header of the message.  
-  
+
 -   R2002: Integrity and confidentiality of `t:IssuedToken` must be provided.  
-  
+
  The `CoordinationContext` header contains `wscoor:Identifier`. While the definition of `xsd:AnyURI` allows the use of both absolute and relative URIs, WCF supports only `wscoor:Identifiers`, which are absolute URIs.  
-  
+
  B2003: If the `wscoor:Identifier` of the `wscoor:CoordinationContext` is a relative URI, faults will be returned from transactional WCF services.  
-  
+
 ## Message Examples  
-  
+
 ### CreateCoordinationContext Request/Response Messages  
  The following messages follow a request/response pattern.  
-  
+
 #### CreateCoordinationContext with WSCoor 1.0  
-  
+
 ```xml  
 <s:Envelope>  
   <s:Header>  
@@ -160,9 +162,9 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
   </s:Body>  
 </s11:Envelope>  
 ```  
-  
+
 #### CreateCoordinationContext with WSCoor 1.1  
-  
+
 ```xml  
 <s:Envelope>   
 <s:Header>  
@@ -186,9 +188,9 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
  </s:Body>  
 </s11:Envelope>  
 ```  
-  
+
 #### CreateCoordinationContextResponse with Trust Pre-1.3 and WSCoor 1.0  
-  
+
 ```xml  
 <s:Envelope>  
   <!-- Data below is shown in the clear for  
@@ -268,9 +270,9 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
   </s:Body>  
 </s:Envelope>  
 ```  
-  
+
 #### CreateCoordinationContextResponse with Trust 1.3 and WSCoor 1.1  
-  
+
 ```xml  
 <s:Envelope>  
 <!-- Data below is shown in the clear for illustration purposes only. -->   
@@ -344,12 +346,12 @@ xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
 </s:Body>   
 </s:Envelope>  
 ```  
-  
+
 ### Registration Messages  
  The following messages are registration messages.  
-  
+
 #### Register with WSCoor 1.0  
-  
+
 ```xml  
 <s:Envelope>  
   <s:Header>  
@@ -408,9 +410,9 @@ xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
   </s:Body>  
 </s:Envelope>  
 ```  
-  
+
 #### Register with WSCoor 1.1  
-  
+
 ```xml  
 <s:Envelope>  
 <s:Header>   
@@ -467,9 +469,9 @@ Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
 </s:Body>   
 </s:Envelope>  
 ```  
-  
+
 #### Register Response with WSCoor 1.0  
-  
+
 ```xml  
 <s:Envelope>  
   <s:Header>  
@@ -503,9 +505,9 @@ Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
   </s:Body>  
 </s:Envelope>  
 ```  
-  
+
 #### Register Response with WSCoor 1.1  
-  
+
 ```xml  
 <s:Envelope>  
 <s:Header>   
@@ -534,12 +536,12 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
 </s:Body>   
 </s:Envelope>  
 ```  
-  
+
 ### Two Phase Commit Protocol Messages  
  The following message relates to the two-phase commit (2PC) protocol.  
-  
+
 #### Commit with WSAT 1.0  
-  
+
 ```xml  
 <s:Envelope>  
   <s:Header>  
@@ -560,9 +562,9 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
   </s:Body>  
 </s:Envelope>  
 ```  
-  
+
 #### Commit with WSAT 1.1  
-  
+
 ```xml  
 <s:Envelope>  
 <s:Header>   
@@ -583,12 +585,12 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
 </s:Body>   
 </s:Envelope>  
 ```  
-  
+
 ### Application Messages  
  The following messages are application messages.  
-  
+
 #### Application message-Request  
-  
+
 ```xml  
 <s:Envelope>  
   <s:Header>  

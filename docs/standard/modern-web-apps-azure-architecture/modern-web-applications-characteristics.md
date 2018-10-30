@@ -71,6 +71,6 @@ In addition to ASP.NET Core, traditional ASP.NET 4.x continues to be a robust an
 > - **Testing in ASP.NET Core**  
 >   <https://docs.microsoft.com/aspnet/core/testing/>
 
->[!div class="step-by-step"]
-[Previous](index.md)
-[Next](choose-between-traditional-web-and-single-page-apps.md)
+> [!div class="step-by-step"]
+> [Previous](index.md)
+> [Next](choose-between-traditional-web-and-single-page-apps.md)

@@ -63,6 +63,6 @@ DDD training
     [*https://bit.ly/PS-DDD*](https://bit.ly/PS-DDD)
 
 
->[!div class="step-by-step"]
-[Previous](../multi-container-microservice-net-applications/implement-api-gateways-with-ocelot.md)
-[Next](apply-simplified-microservice-cqrs-ddd-patterns.md)
+> [!div class="step-by-step"]
+> [Previous](../multi-container-microservice-net-applications/implement-api-gateways-with-ocelot.md)
+> [Next](apply-simplified-microservice-cqrs-ddd-patterns.md)

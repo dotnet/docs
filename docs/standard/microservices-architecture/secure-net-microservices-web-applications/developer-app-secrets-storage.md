@@ -46,6 +46,6 @@ Secrets set by the Secret Manager tool are organized by the UserSecretsId proper
 Using secrets stored with Secret Manager in an application is accomplished by calling AddUserSecrets&lt;T&gt; on the ConfigurationBuilder instance to include secrets for the application in its configuration. The generic parameter T should be a type from the assembly that the UserSecretId was applied to. Usually using AddUserSecrets&lt;Startup&gt; is fine.
 
 
->[!div class="step-by-step"]
-[Previous](authorization-net-microservices-web-applications.md)
-[Next](azure-key-vault-protects-secrets.md)
+> [!div class="step-by-step"]
+> [Previous](authorization-net-microservices-web-applications.md)
+> [Next](azure-key-vault-protects-secrets.md)

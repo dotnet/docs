@@ -66,7 +66,7 @@ This change does not modify the main mechanics of other includes. However, if yo
 To disable **all implicit globs**, you can set the `<EnableDefaultItems>` property to `false` as in the following example:
 ```xml
 <PropertyGroup>
-    <EnableDefaultItems>false</EnableDefaultItems>
+    <EnableDefaultItems>false</EnableDefaultItems>
 </PropertyGroup>
 ```
 

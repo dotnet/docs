@@ -163,6 +163,6 @@ The upcoming sections explain how to implement the specification pattern with EF
 - **Specifications. Martin Fowler**
   [_https://www.martinfowler.com/apsupp/spec.pdf/_](https://www.martinfowler.com/apsupp/spec.pdf)
 
->[!div class="step-by-step"]
-[Previous](domain-events-design-implementation.md)
-[Next](infrastructure-persistence-layer-implemenation-entity-framework-core.md)
+> [!div class="step-by-step"]
+> [Previous](domain-events-design-implementation.md)
+> [Next](infrastructure-persistence-layer-implemenation-entity-framework-core.md)

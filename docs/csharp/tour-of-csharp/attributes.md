@@ -25,5 +25,5 @@ The following code sample demonstrates how to get the `HelpAttribute` instances 
 
 [!code-csharp[AttributeRead](../../../samples/snippets/csharp/tour/attributes/Program.cs#ReadAttributes)]
 
->[!div class="step-by-step"]
-[Previous](delegates.md)
+> [!div class="step-by-step"]
+> [Previous](delegates.md)

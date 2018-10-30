@@ -137,6 +137,6 @@ public interface IRepository<T> where T : IAggregateRoot
     [*https://www.martinfowler.com/eaaCatalog/separatedInterface.html*](https://www.martinfowler.com/eaaCatalog/separatedInterface.html)
 
 
->[!div class="step-by-step"]
-[Previous](net-core-microservice-domain-model.md)
-[Next](implement-value-objects.md)
+> [!div class="step-by-step"]
+> [Previous](net-core-microservice-domain-model.md)
+> [Next](implement-value-objects.md)

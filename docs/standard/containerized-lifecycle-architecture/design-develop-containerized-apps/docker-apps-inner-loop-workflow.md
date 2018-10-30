@@ -254,6 +254,6 @@ You also can debug .NET Core containers in Docker when using Visual Studio, as d
 user\_ed/2016/02/27/visual-studio-code-new-features-13-big-debugging-updates-rich-object-hover-conditional-breakpoints-node-js-mono-more/](https://blogs.msdn.microsoft.com/user_ed/2016/02/27/visual-studio-code-new-features-13-big-debugging-updates-rich-object-hover-conditional-breakpoints-node-js-mono-more/).
 
 
->[!div class="step-by-step"]
-[Previous](docker-apps-development-environment.md)
-[Next](visual-studio-tools-for-docker.md)
+> [!div class="step-by-step"]
+> [Previous](docker-apps-development-environment.md)
+> [Next](visual-studio-tools-for-docker.md)

@@ -90,6 +90,6 @@ Shared source packages have some limitations. They can only be referenced by `Pa
 
 > Shared source packages contain source code and can only be used by projects with the same language type. For example, a C# shared source package cannot be used by an F# application.
 
->[!div class="step-by-step"]
-[Previous](./nuget.md)
-[Next](./sourcelink.md)
+> [!div class="step-by-step"]
+> [Previous](./nuget.md)
+> [Next](./sourcelink.md)

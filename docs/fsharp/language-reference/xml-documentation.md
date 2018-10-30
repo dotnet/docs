@@ -17,18 +17,19 @@ For more information about how to generate documentation from XML, see [XML Docu
 
 There are two ways to write XML documentation comments. One is to just write the documentation directly in a triple-slash comment, without using XML tags. If you do this, the entire comment text is taken as the summary documentation for the code construct that immediately follows. Use this method when you want to write only a brief summary for each construct. The other method is to use XML tags to provide more structured documentation. The second method enables you to specify separate notes for a short summary, additional remarks, documentation for each parameter and type parameter and exceptions thrown, and a description of the return value. The following table describes XML tags that are recognized in F# XML code comments.
 
-|Tag syntax|Description|
-|----------|-----------|
-|**&lt;c&gt;***text***&lt;/c&gt;**|Specifies that *text* is code. This tag can be used by documentation generators to display text in a font that is appropriate for code.|
-|**&lt;summary&gt;***text***&lt;/summary&gt;**|Specifies that *text* is a brief description of the program element. The description is usually one or two sentences.|
-|**&lt;remarks&gt;***text***&lt;/remarks&gt;**|Specifies that *text* contains supplementary information about the program element.|
-|**&lt;param name="***name***"&gt;***description***&lt;/param&gt;**|Specifies the name and description for a function or method parameter.|
-|**&lt;typeparam name="***name***"&gt;***description***&lt;/typeparam&gt;**|Specifies the name and description for a type parameter.|
-|**&lt;returns&gt;***text***&lt;/returns&gt;**|Specifies that *text* describes the return value of a function or method.|
-|**&lt;exception cref="***type***"&gt;***description***&lt;/exception&gt;**|Specifies the type of exception that can be generated and the circumstances under which it is thrown.|
-|**&lt;see cref="***reference***"&gt;***text***&lt;/see&gt;**|Specifies an inline link to another program element. The *reference* is the name as it appears in the XML documentation file. The *text* is the text shown in the link.|
-|**&lt;seealso cref="***reference***"/&gt;**|Specifies a See Also link to the documentation for another type. The *reference* is the name as it appears in the XML documentation file. See Also links usually appear at the bottom of a documentation page.|
-|**&lt;para&gt;***text***&lt;/para&gt;**|Specifies a paragraph of text. This is used to separate text inside the **remarks** tag.|
+
+|                                        Tag syntax                                        |                                                                                                  Description                                                                                                   |
+|------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                         **&lt;c&gt;**<em>text</em>**&lt;/c&gt;**                         |                                    Specifies that *text* is code. This tag can be used by documentation generators to display text in a font that is appropriate for code.                                     |
+|                   **&lt;summary&gt;**<em>text</em>**&lt;/summary&gt;**                   |                                             Specifies that *text* is a brief description of the program element. The description is usually one or two sentences.                                              |
+|                   **&lt;remarks&gt;**<em>text</em>**&lt;/remarks&gt;**                   |                                                              Specifies that *text* contains supplementary information about the program element.                                                               |
+|     **&lt;param name="**<em>name</em>**"&gt;**<em>description</em>**&lt;/param&gt;**     |                                                                     Specifies the name and description for a function or method parameter.                                                                     |
+| **&lt;typeparam name="**<em>name</em>**"&gt;**<em>description</em>**&lt;/typeparam&gt;** |                                                                            Specifies the name and description for a type parameter.                                                                            |
+|                   **&lt;returns&gt;**<em>text</em>**&lt;/returns&gt;**                   |                                                                   Specifies that *text* describes the return value of a function or method.                                                                    |
+| **&lt;exception cref="**<em>type</em>**"&gt;**<em>description</em>**&lt;/exception&gt;** |                                                     Specifies the type of exception that can be generated and the circumstances under which it is thrown.                                                      |
+|        **&lt;see cref="**<em>reference</em>**"&gt;**<em>text</em>**&lt;/see&gt;**        |                    Specifies an inline link to another program element. The *reference* is the name as it appears in the XML documentation file. The *text* is the text shown in the link.                     |
+|                    **&lt;seealso cref="**<em>reference</em>**"/&gt;**                    | Specifies a See Also link to the documentation for another type. The *reference* is the name as it appears in the XML documentation file. See Also links usually appear at the bottom of a documentation page. |
+|                      **&lt;para&gt;**<em>text</em>**&lt;/para&gt;**                      |                                                            Specifies a paragraph of text. This is used to separate text inside the **remarks** tag.                                                            |
 
 ## Example
 

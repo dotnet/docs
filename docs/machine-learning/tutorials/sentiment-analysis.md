@@ -316,7 +316,6 @@ Sentiment Predictions
 ---------------------
 Sentiment: Please refrain from adding nonsense to Wikipedia. | Prediction: Negative
 Sentiment: He is the best, and the article should say that. | Prediction: Positive
-
 ```
 
 Congratulations! You've now successfully built a machine learning model for classifying and predicting messages sentiment. You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/SentimentAnalysis) repository.

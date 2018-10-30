@@ -13,9 +13,9 @@ A connection string is a semicolon-delimited list of key/value parameter pairs:
   
 	keyword1=value; keyword2=value;
   
-Keywords are not case-sensitive. Values, however, may be case-sensitive, depending on the data source. Both keywords and values may contain [whitespace characters](https://en.wikipedia.org/wiki/Whitespace_character#Unicode). Leading and trailing whitespace is ignored in keywords and unquoted values.
+Keywords are not case-sensitive. Values, however, may be case-sensitive, depending on the data source. Both keywords and values may contain [whitespace characters](https://en.wikipedia.org/wiki/Whitespace_character#Unicode). Leading and trailing white space is ignored in keywords and unquoted values.
 
-If a value contains the semicolon, [Unicode control characters](https://en.wikipedia.org/wiki/Unicode_control_characters), or leading or trailing whitespace, it must be enclosed in single or double quotation marks. For example:
+If a value contains the semicolon, [Unicode control characters](https://en.wikipedia.org/wiki/Unicode_control_characters), or leading or trailing white space, it must be enclosed in single or double quotation marks. For example:
 
 	Keyword=" whitespace  ";
 	Keyword='special;character';

@@ -141,16 +141,17 @@ namespace Microsoft.eShopOnContainers.Services.Ordering.API.Controllers
     [Authorize]
     public class OrdersController : Controller
     {
-       //Additional code...
-       [Route("")]
-       [HttpGet]
-       [ProducesResponseType(typeof(IEnumerable<OrderSummary>),
-                             (int)HttpStatusCode.OK)]
-       public async Task<IActionResult> GetOrders()
-       {
-           var orderTask = _orderQueries.GetOrdersAsync();
-           var orders = await orderTask;
-           return Ok(orders);
+        //Additional code...
+        [Route("")]
+        [HttpGet]
+        [ProducesResponseType(typeof(IEnumerable<OrderSummary>),
+            (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> GetOrders()
+        {
+            var userid = _identityService.GetUserIdentity();
+            var orders = await _orderQueries
+                .GetOrdersFromUserAsync(Guid.Parse(userid));
+            return Ok(orders);
         }
     }
 }

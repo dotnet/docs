@@ -44,7 +44,7 @@ Events enable a [class](../../../csharp/language-reference/keywords/class.md) or
   
 ## C# Language Specification  
 
-For more information, see [Events](~/_csharplang/spec/classes.md#events) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Events](~/_csharplang/spec/classes.md#events) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
 ## Featured Book Chapters  
  [Delegates, Events, and Lambda Expressions](https://msdn.microsoft.com/library/orm-9780596516109-03-09.aspx) in [C# 3.0 Cookbook, Third Edition: More than 250 solutions for C# 3.0 programmers](https://msdn.microsoft.com/library/orm-9780596516109-03.aspx)  

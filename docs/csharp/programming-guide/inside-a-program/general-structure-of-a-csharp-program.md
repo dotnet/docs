@@ -25,11 +25,11 @@ C# programs can consist of one or more files. Each file can contain zero or more
   
 ## C# Language Specification  
 
-For more information, see [Basic concepts](~/_csharplang/spec/basic-concepts.md) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Basic concepts](~/_csharplang/spec/basic-concepts.md) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See Also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Inside a C# Program](../../../csharp/programming-guide/inside-a-program/index.md)  
 - [C# Reference](../../../csharp/language-reference/index.md)  
-- [\<paveover>C# Sample Applications](https://msdn.microsoft.com/library/9a9d7aaa-51d3-4224-b564-95409b0f3e15)
+- [C# Sample Applications](https://msdn.microsoft.com/library/9a9d7aaa-51d3-4224-b564-95409b0f3e15)

@@ -52,7 +52,7 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
 `PROJECT`
 
-The project to publish. If not specified, it defaults to the current directory.
+The project to publish. It's either the path and filename of a [C#](csproj.md), F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If not specified, it defaults to the current directory.
 
 ## Options
 

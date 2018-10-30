@@ -1,7 +1,6 @@
 ---
 title: "System.ServiceModel.WarnServiceHealthEnabledNoBaseAddress"
 ms.date: "10/30/2018"
-ms.assetid: 1a0f22f1-1b08-4b10-ac08-b109209eda8b
 ---
 # System.ServiceModel.WarnServiceHealthEnabledNoBaseAddress
 System.ServiceModel.WarnServiceHealthEnabledNoBaseAddress  

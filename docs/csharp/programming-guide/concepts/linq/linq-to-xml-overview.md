@@ -25,9 +25,12 @@ XML has been widely adopted as a way to format data in many contexts. For exampl
  For example, you might have a typical XML purchase order as described in [Sample XML File: Typical Purchase Order (LINQ to XML)](sample-xml-file-typical-purchase-order-linq-to-xml-1.md). By using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], you could run the following query to obtain the part number attribute value for every item element in the purchase order:  
   
 ```csharp
-// Load the XML file containing the purchase orders
-string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-XElement purchaseOrder = XElement.Load($"{folderPath}\\PurchaseOrder.xml");
+// Load the XML file from our project directory containing the purchase orders
+var filename = "PurchaseOrder.xml";
+var currentDirectory = Directory.GetCurrentDirectory();
+var purchaseOrderFilepath = Path.Combine(currentDirectory, filename);
+
+XElement purchaseOrder = XElement.Load($"{purchaseOrderFilepath}");
 
 IEnumerable<string> partNos =  from item in purchaseOrder.Descendants("Item")  
                                select (string) item.Attribute("PartNumber");  
@@ -38,18 +41,22 @@ This can be rewritten in method syntax form:
 IEnumerable<string> partNos = purchaseOrder.Descendants("Item").Select(x => x.Attribute("PartNumber"));
 ```
 
- As another example, you might want a list, sorted by part number, of the items with a value greater than $100. To obtain this information, you could run the following query:  
+As another example, you might want a list, sorted by part number, of the items with a value greater than $100. To obtain this information, you could run the following query:  
   
 ```csharp 
-// Load the XML file containing the purchase orders
-string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-XElement purchaseOrder = XElement.Load($"{folderPath}\\PurchaseOrder.xml");
+// Load the XML file from our project directory containing the purchase orders
+var filename = "PurchaseOrder.xml";
+var currentDirectory = Directory.GetCurrentDirectory();
+var purchaseOrderFilepath = Path.Combine(currentDirectory, filename);
+
+XElement purchaseOrder = XElement.Load($"{purchaseOrderFilepath}");
 
 IEnumerable<XElement> pricesByPartNos =  from item in purchaseOrder.Descendants("Item")  
                                  where (int) item.Element("Quantity") * (decimal) item.Element("USPrice") > 100  
                                  orderby (string)item.Element("PartNumber")  
                                  select item;  
 ```  
+
 Again, this can be rewritten in method syntax form:
 
 ```csharp

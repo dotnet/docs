@@ -77,4 +77,4 @@ Finally, the conditional expression may produce a ref result instead of a value 
 ref var r = ref (arr != null ? ref arr[0] : ref otherArr[0]);
 ```
 
-The variable `r` is a reference to the first value in either `arr` or `otherArr`. For more information, see [conditional operator (?:)](../language-reference-operators/conditional-operator.md) in the language reference.
+The variable `r` is a reference to the first value in either `arr` or `otherArr`. For more information, see [conditional operator (?:)](../language-reference/operators/conditional-operator.md) in the language reference.

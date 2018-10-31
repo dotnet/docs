@@ -123,7 +123,7 @@ int AddOneIfOdd(int input)
 }
 ```
 
-It's worth noting that C# and other C-style languages do support the [ternary expression](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator), which allows for expression-based conditional programming.
+It's worth noting that C# and other C-style languages do support the [ternary expression](../../csharp/language-reference/operators/conditional-operator.md), which allows for expression-based conditional programming.
 
 In functional programming, it is rare to mutate values with statements. Although some functional languages support statements and mutation, it is not common to use these concepts in functional programming.
 

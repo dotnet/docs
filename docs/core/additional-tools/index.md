@@ -21,7 +21,7 @@ The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service R
 
 ## [WCF dotnet-svcutil.xmlserializer tool](dotnet-svcutil.xmlserializer-guide.md)
 
-On the full .NET Framework you are able to pre-generate a serialization assembly using the tool svcutil. We are providing similar functionality on .NET Core by releasing the dotnet-svcutil.xmlserializer NuGet package. It pre-generates c# serialization code for the types used by WCF Service Contract in the client applications that can be serialized using the XmlSerializer to improve the startup performance of Xml Serialization when serializing or de-serializing objects of those types using XmlSerializer.
+On the .NET Framework, you can pre-generate a serialization assembly using the svcutil tool. The dotnet-svcutil.xmlserializer NuGet package provides similar functionality on .NET Core. It per-generates C# serialization code for the types in the client application that are used by the WCF Service Contract and that can be serialized by the <xref:System.Xml.Serialization.XmlSerializer>. This improves the startup performance of XML serialization when serializing or deserializing objects of those types.
 
 ## [XML Serializer Generator](xml-serializer-generator.md)
 

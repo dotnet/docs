@@ -214,7 +214,7 @@ public class LocalFileImageServiceGetImageBytesById
 
 For ASP.NET Core applications, the TestServer class makes functional tests fairly easy to write. You configure a TestServer using a WebHostBuilder directly (just as you normally do for your application), or with the WebApplicationFactory type (available in 2.1). You should try match your test host to your production host as closely as possible, so your tests will exercise behavior similar to what the app will do in production. The WebApplicationFactory class is helpful for configuring the TestServer's ContentRoot, which is used by ASP.NET Core to locate static resource like Views.
 
-You can create simple functional tests by creating a test class that implements IClassFixture<WebApplicationFactory<TEntry>> where TEntry is your web application's Startup class. With this in place, your test fixture can create a client using the factory's CreateClient method:
+You can create simple functional tests by creating a test class that implements IClassFixture\<WebApplicationFactory\<TEntry>> where TEntry is your web application's Startup class. With this in place, your test fixture can create a client using the factory's CreateClient method:
 
 ```cs
 public class BasicWebTests : IClassFixture<WebApplicationFactory<Startup>>

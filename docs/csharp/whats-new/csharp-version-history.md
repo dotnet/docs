@@ -69,7 +69,7 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 - [Query expressions](../linq/query-expression-basics.md)
 - [Lambda expression](https://www.daedtech.com/introduction-to-c-lambda-expressions/)
 - [Expression trees](https://blogs.msdn.microsoft.com/charlie/2008/01/31/expression-tree-basics/)
-- [Extension methods](https://www.codeproject.com/Tips/709310/Extension-Method-In-Csharp)
+- [Extension methods](../programming-guide/classes-and-structs/extension-methods.md)
 - [Implicitly typed local variables](../language-reference/keywords/var.md)
 - [Partial methods](../language-reference/keywords/partial-method.md)
 - [Object and collection initializers](../programming-guide/classes-and-structs/object-and-collection-initializers.md)

@@ -75,7 +75,26 @@
       <Docs>
         <param name="scheme">The scheme to use for authorization.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.AuthenticationHeaderValue" /> class.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+<format type="text/markdown"><![CDATA[ 
+Example:
+```csharp
+HttpClient client = new HttpClient();
+client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(ACCESS_TOKEN);
+```
+
+```vb
+Dim client = New HttpClient()
+client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(ACCESS_TOKEN)
+```
+
+Will produce the following header:
+```
+Authorization: ACCESS_TOKEN
+```
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -106,7 +125,25 @@
         <param name="scheme">The scheme to use for authorization.</param>
         <param name="parameter">The credentials containing the authentication information of the user agent for the resource being requested.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.AuthenticationHeaderValue" /> class.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+<format type="text/markdown"><![CDATA[ 
+Example:
+```csharp
+HttpClient client = new HttpClient();
+client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", ACCESS_TOKEN);
+```
+
+```vb
+Dim client = new HttpClient()
+client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", ACCESS_TOKEN)
+```
+
+ Will produce the following header:
+```
+Authorization: Bearer ACCESS_TOKEN
+```
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">

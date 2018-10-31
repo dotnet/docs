@@ -85,9 +85,9 @@ On a certain cadence, we push all commits from master branch into the live branc
 
 We make the following distinction for code that exists in our repository:
 
-- samples: readers can download and run the samples. All samples should be complete applications or libraries. Where the sample creates a library, it should include unit tests or an application that lets readers run the code.
+- Samples: readers can download and run the samples. All samples should be complete applications or libraries. Where the sample creates a library, it should include unit tests or an application that lets readers run the code.
 
-- snippets: illustrate a smaller concept or task. They compile but they are not intended to be complete applications.
+- Snippets: illustrate a smaller concept or task. They compile but they are not intended to be complete applications.
 
 Code all lives in the [dotnet/samples](https://github.com/dotnet/samples) repository. We are working toward a model where our samples folder structure matches our docs folder structure. Standards that we follow are:
 

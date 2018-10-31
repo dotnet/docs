@@ -14,7 +14,7 @@ When you compile apps in Visual Studio that target the [!INCLUDE[net_v451](../..
 
 ## Disable automatic binding redirects in desktop apps
 
-Automatic binding redirects are enabled by default for Windows desktop apps that target the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] and later versions. The binding redirects are added to the output configuration (app.config) file when the app is compiled and override the assembly unification that might otherwise take place. The source app.config file is not modified. You can disable this feature by modifying the project file for the app or by deselecting a checkbox in the project's properties in Visual Studio.
+Automatic binding redirects are enabled by default for Windows desktop apps that target the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] and later versions. The binding redirects are added to the output configuration (**app.config**) file when the app is compiled and override the assembly unification that might otherwise take place. The source **app.config** file is not modified. You can disable this feature by modifying the project file for the app or by deselecting a checkbox in the project's properties in Visual Studio.
 
 ### Disable through project properties
 
@@ -81,9 +81,9 @@ You can enable automatic binding redirects in existing apps that target older ve
 
 ## Enable automatic binding redirects in web apps
 
-Automatic binding redirects are implemented differently for web apps. Because the source configuration (web.config) file must be modified for web apps, binding redirects are not automatically added to the configuration file. However, Visual Studio notifies you of binding conflicts, and you can add binding redirects to resolve the conflicts. Because you're always prompted to add binding redirects, you don't need to explicitly disable this feature for a web app.
+Automatic binding redirects are implemented differently for web apps. Because the source configuration (**web.config**) file must be modified for web apps, binding redirects are not automatically added to the configuration file. However, Visual Studio notifies you of binding conflicts, and you can add binding redirects to resolve the conflicts. Because you're always prompted to add binding redirects, you don't need to explicitly disable this feature for a web app.
 
-To add binding redirects to a web.config file:
+To add binding redirects to a **web.config** file:
 
 1. In Visual Studio, compile the app, and check for build warnings.
 
@@ -91,7 +91,7 @@ To add binding redirects to a web.config file:
 
 2. If there are assembly binding conflicts, a warning appears. Double-click the warning, or select the warning and press **Enter**.
 
-   A dialog box that enables you to automatically add the necessary binding redirects to the source web.config file appears.
+   A dialog box that enables you to automatically add the necessary binding redirects to the source **web.config** file appears.
 
    ![Binding redirect permission dialog](../../../docs/framework/configure-apps/media/clr-addbindingredirect.png "CLR_AddBindingRedirect")
 

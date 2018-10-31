@@ -29,9 +29,15 @@ The result may be assigned to a `ref` or `ref readonly` variable, or a variable 
 
 ## Remarks
 
-The `condition` must evaluate to `true` or `false`. If `condition` is `true`, `first_expression` is evaluated and becomes the result. If `condition` is `false`, `second_expression` is evaluated and becomes the result. Only one of the two expressions is evaluated.
+The `condition` must evaluate to `true` or `false`. If `condition` is `true`, `first_expression` is evaluated and becomes the result. If `condition` is `false`, `second_expression` is evaluated and becomes the result. Only one of the two expressions is evaluated. This is particularly important for expressions where the result is a `ref` as the following is valid:
 
-The type of `first_expression` and `second_expression` must be the same. If the conditional expression result is a value (not a `ref`), the expression compiles and executes if there exists an implicit conversion one type to the other.
+```csharp
+ref (storage != null) ? ref storage[3] : ref defaultValue;
+```
+
+The reference to `storage` is not evaluated when `storage` is null.
+
+When the result is a value, the type of `first_expression` and `second_expression` must be the same, or there must be an implicit conversion from one type to the other. When the result is a `ref`, the type of `first_expression` and `second_expression` must be the same.
 
 You can express calculations that might otherwise require an `if-else` construction more concisely by using the conditional operator. For example, the following code uses first an `if` statement and then a conditional operator to classify an integer as positive or negative.
 

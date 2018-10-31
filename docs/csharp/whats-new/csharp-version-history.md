@@ -124,7 +124,7 @@ With versions 3.0 and 5.0, C# had added major new features in an object-oriented
 - [Expression bodied members](https://lostechies.com/jimmybogard/2015/12/17/c-6-feature-review-expression-bodied-function-members/)
 - [Null propagator](https://davefancher.com/2014/08/14/c-6-0-null-propagation-operator/)
 - [String interpolation](../language-reference/tokens/interpolated.md)
-- [nameof operator](https://stackoverflow.com/questions/31695900/what-is-the-purpose-of-nameof)
+- [nameof operator](../language-reference/keywords/nameof.md)
 - [Index initializers](csharp-6.md#index-initializers)
 
 Other new features include:

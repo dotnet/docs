@@ -42,7 +42,7 @@ Specification/document:
 The following XML namespaces and associated prefixes are used throughout this topic:
 
 | Prefix | Namespace Uniform Resource Identifier (URI) |
-[------------|---------------------------------------------------|
+|------------|---------------------------------------------------|
 | s11 | `http://schemas.xmlsoap.org/soap/envelope` |
 | s12 |`http://www.w3.org/2003/05/soap-envelope` |
 | wsa |`http://www.w3.org/2004/08/addressing` |

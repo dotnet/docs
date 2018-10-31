@@ -14,7 +14,7 @@ today. You already create pattern matching algorithms using existing
 syntax. You write `if` or `switch` statements that test values. Then,
 when those statements match, you extract and use information from that
 value. The new syntax elements are extensions to statements you are already
-familiar with: `is` and `switch`. These new extensions combine testing
+familiar with: `if` and `switch`. These new extensions combine testing
 a value and extracting that information.
 
 In this topic, we'll look at the new syntax to show you how it enables

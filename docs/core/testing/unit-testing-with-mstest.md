@@ -83,7 +83,7 @@ The following outline shows the final solution layout:
         PrimeServiceTests.csproj
 ```
 
-Execute [`dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj`](../tools/dotnet-sln.md) in the *unit-testing-using-dotnet-test* directory. 
+Execute [`dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj`](../tools/dotnet-sln.md) in the *unit-testing-using-mstest* directory. 
 
 ## Creating the first test
 

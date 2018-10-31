@@ -15,13 +15,13 @@ The hypothetical application handles requests by executing business logic, acces
 
 The application will consist of these types of components:
 
--   Presentation components. These are responsible for handling the UI and consuming remote services.
+- Presentation components. These are responsible for handling the UI and consuming remote services.
 
--   Domain or business logic. This is the application's domain logic.
+- Domain or business logic. This is the application's domain logic.
 
--   Database access logic. This consists of data access components responsible for accessing databases (SQL or NoSQL).
+- Database access logic. This consists of data access components responsible for accessing databases (SQL or NoSQL).
 
--   Application integration logic. This includes a messaging channel, mainly based on message brokers.
+- Application integration logic. This includes a messaging channel, mainly based on message brokers.
 
 The application will require high scalability, while allowing its vertical subsystems to scale out autonomously, because certain subsystems will require more scalability than others.
 
@@ -31,17 +31,17 @@ The application must be able to be deployed in multiple infrastructure environme
 
 We also assume the following about the development process for the application:
 
--   You have multiple dev teams focusing on different business areas of the application.
+- You have multiple dev teams focusing on different business areas of the application.
 
--   New team members must become productive quickly, and the application must be easy to understand and modify.
+- New team members must become productive quickly, and the application must be easy to understand and modify.
 
--   The application will have a long-term evolution and ever-changing business rules.
+- The application will have a long-term evolution and ever-changing business rules.
 
--   You need good long-term maintainability, which means having agility when implementing new changes in the future while being able to update multiple subsystems with minimum impact on the other subsystems.
+- You need good long-term maintainability, which means having agility when implementing new changes in the future while being able to update multiple subsystems with minimum impact on the other subsystems.
 
--   You want to practice continuous integration and continuous deployment of the application.
+- You want to practice continuous integration and continuous deployment of the application.
 
--   You want to take advantage of emerging technologies (frameworks, programming languages, etc.) while evolving the application. You do not want to make full migrations of the application when moving to new technologies, because that would result in high costs and impact the predictability and stability of the application.
+- You want to take advantage of emerging technologies (frameworks, programming languages, etc.) while evolving the application. You do not want to make full migrations of the application when moving to new technologies, because that would result in high costs and impact the predictability and stability of the application.
 
 ## Choosing an architecture
 
@@ -69,9 +69,9 @@ The application consists of multiple subsystems, including several store UI fron
 
 **Communication architecture**. The eShopOnContainers application uses two communication types, depending on the kind of the functional action (queries versus updates and transactions):
 
--   Http client-to-microservice communication through API Gateways. This is used for queries and when accepting update or transactional commands from the client apps. The approach using API Gateways is explained in detail in later sections.
+- Http client-to-microservice communication through API Gateways. This is used for queries and when accepting update or transactional commands from the client apps. The approach using API Gateways is explained in detail in later sections.
 
--   Asynchronous event-based communication. This occurs through an event bus to propagate updates across microservices or to integrate with external applications. The event bus can be implemented with any messaging-broker infrastructure technology like RabbitMQ, or using higher-level (abstraction-level) service buses like Azure Service Bus, NServiceBus, MassTransit, or Brighter.
+- Asynchronous event-based communication. This occurs through an event bus to propagate updates across microservices or to integrate with external applications. The event bus can be implemented with any messaging-broker infrastructure technology like RabbitMQ, or using higher-level (abstraction-level) service buses like Azure Service Bus, NServiceBus, MassTransit, or Brighter.
 
 The application is deployed as a set of microservices in the form of containers. Client apps can communicate with those microservices running as containers through the public URLs published by the API Gateways.
 
@@ -85,7 +85,7 @@ Therefore, the units of deployment for microservices (and even for databases in 
 
 ### Additional resources
 
--   **eShopOnContainers GitHub repo. Source code for the reference application**  
+- **eShopOnContainers GitHub repo. Source code for the reference application**  
     [https://aka.ms/eShopOnContainers/](https://aka.ms/eShopOnContainers/)
 
 ## Benefits of a microservice-based solution
@@ -94,13 +94,13 @@ A microservice based solution like this has many benefits:
 
 **Each microservice is relatively small—easy to manage and evolve**. Specifically:
 
--   It is easy for a developer to understand and get started quickly with good productivity.
+- It is easy for a developer to understand and get started quickly with good productivity.
 
--   Containers start fast, which makes developers more productive.
+- Containers start fast, which makes developers more productive.
 
--   An IDE like Visual Studio can load smaller projects fast, making developers productive.
+- An IDE like Visual Studio can load smaller projects fast, making developers productive.
 
--   Each microservice can be designed, developed, and deployed independently of other microservices, which provides agility because it is easier to deploy new versions of microservices frequently.
+- Each microservice can be designed, developed, and deployed independently of other microservices, which provides agility because it is easier to deploy new versions of microservices frequently.
 
 **It is possible to scale out individual areas of the application**. For instance, the catalog service or the basket service might need to be scaled out, but not the ordering process. A microservices infrastructure will be much more efficient with regard to the resources used when scaling out than a monolithic architecture would be.
 
@@ -150,17 +150,17 @@ The bottom line is that each microservice can have a different internal architec
 
 There are many architectural patterns used by software architects and developers. The following are a few (mixing architecture styles and architecture patterns):
 
--   Simple CRUD, single-tier, single-layer.
+- Simple CRUD, single-tier, single-layer.
 
--   [Traditional N-Layered](https://msdn.microsoft.com/library/ee658109.aspx#Layers).
+- [Traditional N-Layered](https://msdn.microsoft.com/library/ee658109.aspx#Layers).
 
--   [Domain-Driven Design N-layered](https://blogs.msdn.microsoft.com/cesardelatorre/2011/07/03/published-first-alpha-version-of-domain-oriented-n-layered-architecture-v2-0/).
+- [Domain-Driven Design N-layered](https://blogs.msdn.microsoft.com/cesardelatorre/2011/07/03/published-first-alpha-version-of-domain-oriented-n-layered-architecture-v2-0/).
 
--   [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) (as used with [eShopOnWeb](https://aka.ms/WebAppArchitecture))
+- [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) (as used with [eShopOnWeb](https://aka.ms/WebAppArchitecture))
 
--   [Command and Query Responsibility Segregation](https://martinfowler.com/bliki/CQRS.html) (CQRS).
+- [Command and Query Responsibility Segregation](https://martinfowler.com/bliki/CQRS.html) (CQRS).
 
--   [Event-Driven Architecture](https://en.wikipedia.org/wiki/Event-driven_architecture) (EDA).
+- [Event-Driven Architecture](https://en.wikipedia.org/wiki/Event-driven_architecture) (EDA).
 
 You can also build microservices with many technologies and languages, such as ASP.NET Core Web APIs, NancyFx, ASP.NET Core SignalR (available with .NET Core 2), F\#, Node.js, Python, Java, C++, GoLang, and more.
 
@@ -177,7 +177,6 @@ For instance, for a simple CRUD maintenance application, it might not make sense
 Especially when you deal with large applications composed by multiple sub-systems, you should not apply a single top-level architecture based on a single architecture pattern. For instance, CQRS should not be applied as a top-level architecture for a whole application, but might be useful for a specific set of services.
 
 There is no silver bullet or a right architecture pattern for every given case. You cannot have "one architecture pattern to rule them all." Depending on the priorities of each microservice, you must choose a different approach for each, as explained in the following sections.
-
 
 >[!div class="step-by-step"]
 [Previous](index.md)

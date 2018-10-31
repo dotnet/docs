@@ -4,8 +4,6 @@ ms.date: 04/12/2018
 helpviewer_keywords: 
   - "Visual Basic compiler, options"
 ms.assetid: fbe36f7a-7cfa-4f77-a8d4-2be5958568e3
-author: rpetrusha
-ms.author: ronpet
 ---
 # Visual Basic compiler options listed by category
 The Visual Basic command-line compiler is provided as an alternative to compiling programs from within the Visual Studio integrated development environment (IDE). The following is a list of the Visual Basic command-line compiler options sorted by functional category.  

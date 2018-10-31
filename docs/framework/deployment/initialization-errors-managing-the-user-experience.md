@@ -81,7 +81,7 @@ Prompt for installing the .NET Framework 3.5 on demand
  Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], CLR activation logging has been improved to include log entries that record when and why the initialization error message is displayed. For more information, see [How to: Debug CLR Activation Issues](../../../docs/framework/deployment/how-to-debug-clr-activation-issues.md).  
   
 ## See Also  
- [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md)  
- [How to: Configure an App to Support .NET Framework 4 or 4.5](../../../docs/framework/migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)  
- [How to: Debug CLR Activation Issues](../../../docs/framework/deployment/how-to-debug-clr-activation-issues.md)  
- [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](../../../docs/framework/install/dotnet-35-windows-10.md)
+- [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md)  
+- [How to: Configure an App to Support .NET Framework 4 or 4.5](../../../docs/framework/migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)  
+- [How to: Debug CLR Activation Issues](../../../docs/framework/deployment/how-to-debug-clr-activation-issues.md)  
+- [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](../../../docs/framework/install/dotnet-35-windows-10.md)

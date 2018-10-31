@@ -72,7 +72,7 @@ Activation path from the add-in to the host
   
 -   [Walkthrough: Creating an Extensible Application](../../../docs/framework/add-ins/walkthrough-create-extensible-app.md)  
   
-     Describes a calculator add-in that performs addition, subtraction, multiplication, and divsion calculations for the host.  
+     Describes a calculator add-in that performs addition, subtraction, multiplication, and division calculations for the host.  
   
 -   [Walkthrough: Enabling Backward Compatibility as Your Host Changes](https://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848)  
   
@@ -83,5 +83,5 @@ Activation path from the add-in to the host
      Describes how to pass data collections over the pipeline using a book store scenario.  
   
 ## See Also  
- [Add-in Pipeline Scenarios](https://msdn.microsoft.com/library/feb70e0b-8734-494c-aeaf-b567f014043e)  
- [Add-ins and Extensibility](../../../docs/framework/add-ins/index.md)
+- [Add-in Pipeline Scenarios](https://msdn.microsoft.com/library/feb70e0b-8734-494c-aeaf-b567f014043e)  
+- [Add-ins and Extensibility](../../../docs/framework/add-ins/index.md)

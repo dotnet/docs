@@ -9,7 +9,7 @@ ms.assetid: 1dc5a8ad-a4f7-4f32-8506-3fc6d8c8bfed
 # How to: Implement a Lightweight Class with Auto-Implemented Properties (C# Programming Guide)
 This example shows how to create an immutable lightweight class that serves only to encapsulate a set of auto-implemented properties. Use this kind of construct instead of a struct when you must use reference type semantics.  
   
- You can make an immutable property in two ways.  You can declare the [set](../../../csharp/language-reference/keywords/set.md) accessor.to be [private](../../../csharp/language-reference/keywords/private.md).  The property is only settable within the type, but it is immutable to consumers.  You can instead declare only the [get](../../../csharp/language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type’s constructor.  
+ You can make an immutable property in two ways.  You can declare the [set](../../../csharp/language-reference/keywords/set.md) accessor to be [private](../../../csharp/language-reference/keywords/private.md).  The property is only settable within the type, but it is immutable to consumers.  You can instead declare only the [get](../../../csharp/language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type’s constructor.  
   
  When you declare a private `set` accessor, you cannot use an object initializer to initialize the property. You must use a constructor or a factory method.  
   

@@ -239,7 +239,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
  When generic types are being referenced, they must either be fully-open generics or fully-closed generics.  
   
 > [!NOTE]
->  When using the Svcutil.exe tool, this reference can be accomplished by using the **/collectionType** command-line switch (short form: **/ct**). Keep in mind that you must also specify the assembly for the referenced collection types using the **/reference** switch (short form: **/r**). If the type is generic, it must be followed by a back quote and the number of generic parameters. The back quote (`) is not to be confused with the single quote (‘) character. You can specify multiple referenced collection types by using the **/collectionType** switch more than once.  
+>  When using the Svcutil.exe tool, this reference can be accomplished by using the **/collectionType** command-line switch (short form: **/ct**). Keep in mind that you must also specify the assembly for the referenced collection types using the **/reference** switch (short form: **/r**). If the type is generic, it must be followed by a back quote and the number of generic parameters. The back quote (\`) is not to be confused with the single quote (‘) character. You can specify multiple referenced collection types by using the **/collectionType** switch more than once.  
   
  For example, to cause all lists to be imported as Generic <xref:System.Collections.Generic.List%601>.  
   
@@ -336,7 +336,7 @@ svcutil.exe MyService.wsdl MyServiceSchema.xsd /r:C:\full_path_to_system_dll\Sys
 ### Collection Naming  
  The following is a list of collection naming rules:  
   
--   The default namespace for all dictionary collection data contracts, as well as for list collection data contracts that contain primitive types, is http://schemas.microsoft.com/2003/10/Serialization/Arrays unless overridden using Namespace. Types that map to built-in XSD types, as well as `char`, `Timespan`, and `Guid` types, are considered primitives for this purpose.  
+-   The default namespace for all dictionary collection data contracts, as well as for list collection data contracts that contain primitive types, is `http://schemas.microsoft.com/2003/10/Serialization/Arrays` unless overridden using Namespace. Types that map to built-in XSD types, as well as `char`, `Timespan`, and `Guid` types, are considered primitives for this purpose.  
   
 -   The default namespace for collection types that contain non-primitive types, unless it is overridden using Namespace, is the same as the data contract namespace of the type contained in the collection.  
   

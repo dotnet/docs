@@ -46,5 +46,5 @@ The cryptography settings schema contains elements that specify how to map frien
 |[**\<oidMap>**](../../../../../docs/framework/configure-apps/file-schema/cryptography/oidmap-element.md)|Contains ASN.1 OID mappings to classes.|  
   
 ## See Also  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)

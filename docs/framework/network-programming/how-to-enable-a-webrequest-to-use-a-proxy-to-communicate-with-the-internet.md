@@ -5,8 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 63c0ef2c-44b5-4c54-9804-ba0b9b001ac7
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # How to: Enable a WebRequest to Use a Proxy to Communicate With the Internet
 This example creates a global proxy instance that will enable any <xref:System.Net.WebRequest> to use a proxy to communicate with the Internet. The example assumes that the proxy server is named `webproxy` and that it communicates on port 80, the standard HTTP port.  

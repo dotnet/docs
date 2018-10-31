@@ -2,7 +2,6 @@
 title: "System.ServiceModel.Security.SecurityPendingServerSessionAdded"
 ms.date: "03/30/2017"
 ms.assetid: 15d15f57-1482-419b-b841-fff7318b69d8
-author: "BrucePerlerMS"
 ---
 # System.ServiceModel.Security.SecurityPendingServerSessionAdded
 System.ServiceModel.Security.SecurityPendingServerSessionAdded  

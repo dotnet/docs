@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "security [.NET Framework], Internet"
   - "permissions [.NET Framework], Internet"
 ms.assetid: afb07899-2707-49ab-a57f-e0caf20d0171
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Security in network programming
 

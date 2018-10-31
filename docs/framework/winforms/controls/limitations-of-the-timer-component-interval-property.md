@@ -20,7 +20,7 @@ The Windows Forms <xref:System.Windows.Forms.Timer> component has an <xref:Syste
   
 -   The interval is not guaranteed to elapse exactly on time. To ensure accuracy, the timer should check the system clock as needed, rather than try to keep track of accumulated time internally.  
   
--   The precision of the <xref:System.Windows.Forms.Timer.Interval%2A> property is in milliseconds. Some computers provide a high-resolution counter that has a resolution higher than milliseconds. The availability of such a counter depends on the processor hardware of your computer. For more information, see article 172338, "How To Use QueryPerformanceCounter to Time Code," in the Microsoft Knowledge Base at http://support.microsoft.com.  
+-   The precision of the <xref:System.Windows.Forms.Timer.Interval%2A> property is in milliseconds. Some computers provide a high-resolution counter that has a resolution higher than milliseconds. The availability of such a counter depends on the processor hardware of your computer.
   
 ## See Also  
  <xref:System.Windows.Forms.Timer>  

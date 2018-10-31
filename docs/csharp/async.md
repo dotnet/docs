@@ -127,7 +127,7 @@ public async Task<int> GetDotNetCountAsync()
 {
     // Suspends GetDotNetCountAsync() to allow the caller (the web server)
     // to accept another request, rather than blocking on this one.
-    var html = await _httpClient.GetStringAsync("http://dotnetfoundation.org");
+    var html = await _httpClient.GetStringAsync("https://dotnetfoundation.org");
 
     return Regex.Matches(html, @"\.NET").Count;
 }
@@ -141,7 +141,7 @@ private readonly HttpClient _httpClient = new HttpClient();
 private async void SeeTheDotNets_Click(object sender, RoutedEventArgs e)
 {
     // Capture the task handle here so we can await the background task later.
-    var getDotNetFoundationHtmlTask = _httpClient.GetStringAsync("http://www.dotnetfoundation.org");
+    var getDotNetFoundationHtmlTask = _httpClient.GetStringAsync("https://www.dotnetfoundation.org");
 
     // Any other work on the UI thread can be done here, such as enabling a Progress Bar.
     // This is important to do here, before the "await" call, so that the user

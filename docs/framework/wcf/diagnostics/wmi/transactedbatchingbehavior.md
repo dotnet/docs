@@ -8,7 +8,7 @@ TransactedBatchingBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class TransactedBatchingBehavior : Behavior  
 {  
   sint32 MaxBatchSize;  

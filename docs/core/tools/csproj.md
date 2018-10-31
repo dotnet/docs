@@ -86,10 +86,11 @@ If the project has multiple target frameworks, the results of the command should
 ## Additions
 
 ### Sdk attribute 
-The `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](cli-msbuild-architecture.md) describes, is a set of MSBuild [tasks](/visualstudio/msbuild/msbuild-tasks) and [targets](/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. We ship two main SDKs with the .NET Core tools:
+The `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](cli-msbuild-architecture.md) describes, is a set of MSBuild [tasks](/visualstudio/msbuild/msbuild-tasks) and [targets](/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. We ship three main SDKs with the .NET Core tools:
 
 1. The .NET Core SDK with the ID of `Microsoft.NET.Sdk`
 2. The .NET Core web SDK with the ID of `Microsoft.NET.Sdk.Web`
+3. The .NET Core Razor Class Library SDK with the ID of `Microsoft.NET.Sdk.Razor`
 
 You need to have the `Sdk` attribute set to one of those IDs on the `<Project>` element in order to use the .NET Core tools and build your code. 
 
@@ -104,14 +105,14 @@ Item that specifies a NuGet dependency in the project. The `Include` attribute s
 `Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
 
 #### IncludeAssets, ExcludeAssets and PrivateAssets
-`IncludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
+`IncludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be 
 consumed. 
 
-`ExcludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should not 
+`ExcludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should not 
 be consumed.
 
-`PrivateAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
-consumed but that they should not flow to the next project. 
+`PrivateAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be 
+consumed but not flow to the next project. 
 
 > [!NOTE]
 > `PrivateAssets` is equivalent to the *project.json*/*xproj* `SuppressParent` element.

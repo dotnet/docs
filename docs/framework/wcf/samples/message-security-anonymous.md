@@ -1,10 +1,9 @@
 ---
 title: "Message Security Anonymous"
 ms.date: "03/30/2017"
-helpviewer_keywords:
+helpviewer_keywords: 
   - "WS Security"
 ms.assetid: c321cbf9-8c05-4cce-b5a5-4bf7b230ee03
-author: "BrucePerlerMS"
 ---
 # Message Security Anonymous
 The Message Security Anonymous sample demonstrates how to implement a Windows Communication Foundation (WCF) application that uses message-level security with no client authentication but that requires server authentication using the server's X.509 certificate. All application messages between the client and server are signed and encrypted. This sample is based on the [WSHttpBinding](../../../../docs/framework/wcf/samples/wshttpbinding.md) sample. This sample consists of a client console program (.exe) and a service library (.dll) hosted by Internet Information Services (IIS). The service implements a contract that defines a request-reply communication pattern.
@@ -200,7 +199,7 @@ Press <ENTER> to terminate client.
     > [!NOTE]
     > The setup batch file is designed to be run from a  Visual Studio Command Prompt. It requires that the path environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Visual Studio Command Prompt.  
   
-3.  Verify access to the service using a browser by entering the address http://localhost/servicemodelsamples/service.svc.  
+3.  Verify access to the service using a browser by entering the address `http://localhost/servicemodelsamples/service.svc`.  
   
 4.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   

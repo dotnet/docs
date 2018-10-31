@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "<bypasslist>, clear element"
   - "bypasslist, clear element"
 ms.assetid: 301584ca-a914-4100-b180-3b288d3b099e
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;clear&gt; Element for bypasslist (Network Settings)
 Clears the proxy bypass list.  
@@ -67,5 +65,5 @@ Clears the proxy bypass list.
 ```  
   
 ## See Also  
- <xref:System.Net.WebProxy?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.WebProxy?displayProperty=nameWithType>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

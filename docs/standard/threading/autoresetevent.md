@@ -18,9 +18,8 @@ The <xref:System.Threading.AutoResetEvent> class represents a local wait handle 
   
 ## See also
 
-- <xref:System.Threading.ManualResetEvent>  
-- <xref:System.Threading.Monitor>  
-- [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](../../../docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)  
-- [Threading](../../../docs/standard/threading/index.md)  
-- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)  
-- [Wait Handles](https://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)
+- <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType>
+- <xref:System.Threading.WaitHandle?displayProperty=nameWithType>
+- [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)  
+- [Threading objects and features](threading-objects-and-features.md)  
+- [Threading](index.md)  

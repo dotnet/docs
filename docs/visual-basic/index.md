@@ -4,8 +4,6 @@ ms.date: 03/28/2018
 helpviewer_keywords: 
   - "programming, Visual Basic"
   - "Visual Basic"
-author: rpetrusha
-ms.author: ronpet
 ---
 # Visual Basic Guide
 

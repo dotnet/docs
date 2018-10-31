@@ -12,13 +12,13 @@ You can install F# in multiple ways, depending on your environment.
 
 If you're downloading [Visual Studio](https://visualstudio.microsoft.com/) for the first time, it will first install the Visual Studio installer. Install the appropriate SKU of Visual Studio from the installer. If you already have it installed, click **Modify**.
 
-You'll next see a list of Workloads. Select **ASP.NET and web development**, which will install F# support, .NET Core support, and F# support for ASP.NET Core projects.
+You'll next see a list of Workloads. Select **ASP.NET and web development** which will install F# support and .NET Core support for ASP.NET Core projects.
 
 Next, click **Modify** in the lower right-hand side.  This will install everything you have selected. You can then open Visual Studio 2017 with F# language support by clicking **Launch**.
 
 ## Install F# with Visual Studio for Mac
 
-F# is installed by default in [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/), no matter what configuration you choose.
+F# is installed by default in [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/), no matter which configuration you choose.
 
 After the install completes, choose "Start Visual Studio". You can also launch it through Finder on macOS.
 
@@ -28,7 +28,7 @@ You must have [git installed](https://git-scm.com/download) and available on you
 
 ### [macOS](#tab/macos)
 
-[Mono](http://www.mono-project.com) is used for [F# Interactive](../tutorials/fsharp-interactive/index.md) support. The easiest way to install Mono on macOS is via Homebrew. Simply type the following into your terminal:
+[Mono](https://www.mono-project.com) is used for [F# Interactive](../tutorials/fsharp-interactive/index.md) support. The easiest way to install Mono on macOS is via Homebrew. Simply type the following into your terminal:
 
 ```console
 brew install mono

@@ -8,7 +8,7 @@ ServiceMetadataBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class ServiceMetadataBehavior : Behavior  
 {  
   string ExternalMetadataLocation;  

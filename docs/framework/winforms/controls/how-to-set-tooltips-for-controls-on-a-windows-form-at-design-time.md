@@ -44,8 +44,33 @@ You can set a <xref:System.Windows.Forms.ToolTip> string in code or in the Windo
 2.  Select the control that will display the ToolTip, or add it to the form.  
   
 3.  In the **Properties** window, set the **ToolTip on ToolTip1** value to an appropriate string of text.  
+
+### To remove a ToolTip programmatically  
   
+1.  Use the <xref:System.Windows.Forms.ToolTip.SetToolTip%2A> method of the <xref:System.Windows.Forms.ToolTip> component.  
+  
+    ```vb  
+    ' In this example, Button1 is the control displaying the ToolTip.  
+    ToolTip1.SetToolTip(Button1, Nothing)  
+    ```  
+  
+    ```csharp  
+    // In this example, button1 is the control displaying the ToolTip.  
+    toolTip1.SetToolTip(button1, null);  
+    ```  
+  
+    ```cpp  
+    // In this example, button1 is the control displaying the ToolTip.  
+    toolTip1->SetToolTip(button1, NULL);  
+    ```  
+  
+### To remove a ToolTip in the designer  
+  
+1.  Select the control that is displaying the ToolTip.  
+  
+2.  In the **Properties** window, delete the text in the **ToolTip on ToolTip1**.  
+
 ## See Also  
- [ToolTip Component Overview](../../../../docs/framework/winforms/controls/tooltip-component-overview-windows-forms.md)  
- [How to: Change the Delay of the Windows Forms ToolTip Component](../../../../docs/framework/winforms/controls/how-to-change-the-delay-of-the-windows-forms-tooltip-component.md)  
- [ToolTip Component](../../../../docs/framework/winforms/controls/tooltip-component-windows-forms.md)
+- [ToolTip Component Overview](../../../../docs/framework/winforms/controls/tooltip-component-overview-windows-forms.md)  
+- [How to: Change the Delay of the Windows Forms ToolTip Component](../../../../docs/framework/winforms/controls/how-to-change-the-delay-of-the-windows-forms-tooltip-component.md)  
+- [ToolTip Component](../../../../docs/framework/winforms/controls/tooltip-component-windows-forms.md)

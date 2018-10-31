@@ -12,5 +12,5 @@
 ## [Expressions](../../../../_vblang/spec/expressions.md)
 ## [Documentation Comments](../../../../_vblang/spec/documentation-comments.md)
 ## Grammar
-### [vb.html](http://ljw1004.github.io/vbspec/vb.html)
-### [vb.g4 - ANTLR format](http://ljw1004.github.io/vbspec/vb.g4?raw=true)
+### [vb.html](https://ljw1004.github.io/vbspec/vb.html)
+### [vb.g4 - ANTLR format](https://ljw1004.github.io/vbspec/vb.g4?raw=true)

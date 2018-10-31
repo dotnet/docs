@@ -15,7 +15,7 @@ ms.author: "mhopkins"
   
  [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] is the new accessibility framework for [!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)]. It addresses the needs of assistive technology products and automated test frameworks by providing programmatic access to information about the [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]. In addition, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] enables control and application developers to make their products accessible.  
   
- This documentation describes the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] [!INCLUDE[TLA#tla_api](../../../includes/tlasharptla-api-md.md)] for managed code. For information on programming for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] in C++, see [UI Automation for Win32 Applications](https://msdn.microsoft.com/library/ms726294.aspx).  
+ This documentation describes the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] [!INCLUDE[TLA#tla_api](../../../includes/tlasharptla-api-md.md)] for managed code. For information on programming for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] in C++, see [UI Automation for Win32 Applications](/windows/desktop/winauto/windows-automation-api-portal).  
   
 ## In This Section  
  [Accessibility Best Practices](../../../docs/framework/ui-automation/accessibility-best-practices.md)  

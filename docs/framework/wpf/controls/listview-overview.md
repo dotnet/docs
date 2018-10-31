@@ -69,13 +69,11 @@ The <xref:System.Windows.Controls.ListView> control provides the infrastructure 
 ## Sharing the Same View Mode  
  Two <xref:System.Windows.Controls.ListView> controls cannot share the same view mode at the same time. If you try to use the same view mode with more than one <xref:System.Windows.Controls.ListView> control, an exception occurs.  
   
- To specify a view mode that can be simultaneously used by more than one <xref:System.Windows.Controls.ListView>, use templates or styles. For an example of how to define views as <xref:System.Windows.FrameworkElement.Resources%2A>, see [ListView with Multiple Views Sample](https://go.microsoft.com/fwlink/?LinkID=160013).  
+ To specify a view mode that can be simultaneously used by more than one <xref:System.Windows.Controls.ListView>, use templates or styles.
   
 <a name="CreatingaCustomView"></a>   
 ## Creating a Custom View Mode  
- Customized views like <xref:System.Windows.Controls.GridView> are derived from the <xref:System.Windows.Controls.ViewBase> abstract class, which provides the tools to display data items that are represented as <xref:System.Windows.Controls.ListViewItem> objects.  
-  
- For an example of a custom view mode, see [ListView with Multiple Views Sample](https://go.microsoft.com/fwlink/?LinkID=160013).  
+ Customized views like <xref:System.Windows.Controls.GridView> are derived from the <xref:System.Windows.Controls.ViewBase> abstract class, which provides the tools to display data items that are represented as <xref:System.Windows.Controls.ListViewItem> objects.    
   
 ## See Also  
  <xref:System.Windows.Controls.GridView>  

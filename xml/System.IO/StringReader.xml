@@ -829,7 +829,7 @@
 ## Remarks  
  This method overrides the <xref:System.IO.TextReader.ReadLine%2A?displayProperty=nameWithType> method.  
   
- A line is defined as a sequence of characters followed by a line feed ("\n"), a carriage return ("\r"), or a carriage return immediately followed by a line feed ("\r\n"). The string that is returned does not contain the terminating carriage return or line feed. The returned value is `null` if the end of the string has been reached.  
+ A line is defined as a sequence of characters followed by a line feed ("\n"), a carriage return ("\r"), a carriage return immediately followed by a line feed ("\r\n"), or the end-of-stream marker. The string that is returned does not contain the terminating carriage return or line feed. The returned value is `null` if the end-of-stream marker has been reached. That is to say, if there is nothing between the last line read and the end-of-stream marker, the method returns `null`.  
   
  If the current method throws an <xref:System.OutOfMemoryException>, the reader's position in the underlying string is advanced by the number of characters the method was able to read, but the characters already read into the internal <xref:System.IO.StringReader.ReadLine%2A> buffer are discarded. Because the position of the reader in the string cannot be changed, the characters already read are unrecoverable, and can be accessed only by reinitializing the <xref:System.IO.StringReader>. To avoid such a situation, use the <xref:System.IO.StringReader.Read%2A> method and store the read characters in a preallocated buffer.  
   

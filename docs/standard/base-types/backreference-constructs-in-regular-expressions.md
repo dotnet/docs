@@ -97,7 +97,7 @@ However, if *name* is the string representation of a number and the capturing gr
 |Pattern|Description|  
 |-------------|-----------------|  
 |`(?<1>a)`|Match the character "a" and assign the result to the capturing group named `1`.|  
-|`(?<1>\1b)*`|Match 0 or 1 occurrence of the group named `1` along with a "b", and assign the result to the capturing group named `1`.|  
+|`(?<1>\1b)*`|Match zero or more occurrences of the group named `1` along with a "b", and assign the result to the capturing group named `1`.|  
   
  [!code-csharp[RegularExpressions.Language.Backreferences#4](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.backreferences/cs/backreference4.cs#4)]
  [!code-vb[RegularExpressions.Language.Backreferences#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.backreferences/vb/backreference4.vb#4)]  

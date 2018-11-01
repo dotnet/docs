@@ -25,11 +25,11 @@ Beginning with C# 7.2, the `first_expression` and `second_expression` my be `ref
 ref condition ? ref first_expression : ref second_expression;  
 ```
 
-The result may be assigned to a `ref` or `ref readonly` variable, or a variable with neither modifier.
+The result may be assigned to a `ref` or `ref readonly` variable, or to a variable with neither modifier.
 
 ## Remarks
 
-The `condition` must evaluate to `true` or `false`. If `condition` is `true`, `first_expression` is evaluated and becomes the result. If `condition` is `false`, `second_expression` is evaluated and becomes the result. Only one of the two expressions is evaluated. This is particularly important for expressions where the result is a `ref` as the following is valid:
+The `condition` must evaluate to `true` or `false`. If `condition` is `true`, `first_expression` is evaluated and becomes the result. If `condition` is `false`, `second_expression` is evaluated and becomes the result. Only one of the two expressions is evaluated. This is particularly important for expressions where the result is a `ref`, as the following is valid:
 
 ```csharp
 ref (storage != null) ? ref storage[3] : ref defaultValue;

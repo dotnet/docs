@@ -8,7 +8,7 @@ ms.custom: vs-dotnet
 ---
 # Debug your Hello World application with Visual Studio 2017
 
-So far, you've followed the steps in [Build a C# Hello World Application with .NET Core in Visual Studio 2017](.\with-visual-studio.md) or [Build a Visual Basic Hello World Application with .NET Core in Visual Studio 2017](vb-with-visual-studio.md) to create and run a simple console application. Once you've written and compiled your application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use when testing and troubleshooting your application.
+So far, you've followed the steps in [Build a C# Hello World Application with .NET Core in Visual Studio 2017](with-visual-studio.md) or [Build a Visual Basic Hello World Application with .NET Core in Visual Studio 2017](vb-with-visual-studio.md) to create and run a simple console application. Once you've written and compiled your application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use when testing and troubleshooting your application.
 
 ## Debugging in Debug mode
 
@@ -222,4 +222,4 @@ To build and test the Release version of your console application, change the bu
 
 When you press F5 or choose **Build Solution** from the **Build** menu, Visual Studio compiles the Release version of your console application. You can test it as you did the Debug version of the application.
 
-Once you've finished debugging your application, the next step is to publish a deployable version of your application. For information on how to do this, see [Publish the Hello World application with Visual Studio 2017](./publishing-with-visual-studio.md).
+Once you've finished debugging your application, the next step is to publish a deployable version of your application. For information on how to do this, see [Publish the Hello World application with Visual Studio 2017](publishing-with-visual-studio.md).

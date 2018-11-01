@@ -418,5 +418,6 @@
 ### [System.ServiceModel.UnhandledAction](system-servicemodel-unhandledaction.md)
 ### [System.ServiceModel.UnhandledExceptionInUserOperation](system-servicemodel-unhandledexceptioninuseroperation.md)
 ### [System.ServiceModel.WarnHelpPageEnabledNoBaseAddress](system-servicemodel-warnhelppageenablednobaseaddress.md)
+### [System.ServiceModel.WarnServiceHealthEnabledNoBaseAddress](system-servicemodel-warnservicehealthenablednobaseaddress.md)
 ### [System.ServiceModel.WsmexNonCriticalWsdlExportError](system-servicemodel-wsmexnoncriticalwsdlexporterror.md)
 ### [System.ServiceModel.WsmexNonCriticalWsdlImportError](system-servicemodel-wsmexnoncriticalwsdlimporterror.md)

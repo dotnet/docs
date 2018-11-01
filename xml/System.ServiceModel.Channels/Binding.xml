@@ -1178,7 +1178,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the interval of time that a connection can remain inactive, during which no application messages are received, before it is dropped.</summary>
-        <value>The <see cref="T:System.TimeSpan" /> that specifies how long the application has to receive a message before timing out. The default value is 10 minute.</value>
+        <value>The <see cref="T:System.TimeSpan" /> that specifies how long the application has to receive a message before timing out. The default value is 10 minutes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

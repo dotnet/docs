@@ -63,11 +63,11 @@ The conditional operator cannot be overloaded.
 
 The following example shows the conditional operator whose result is a value:
 
-[!code-csharp-interactive[csRefOperators?:](~/samples/snippets/csharp/language-reference/operators/ConditionalExamples.cs#ConditionalValue)]
+[!code-csharp[csRefOperators?:](~/samples/snippets/csharp/language-reference/operators/ConditionalExamples.cs#ConditionalValue)]
 
 The following alternative shows the conditional operator where the result is a reference:
 
-[!code-csharp-interactive[csRefOperatorsRef?:](~/samples/snippets/csharp/language-reference/operators/ConditionalExamples.cs#ConditionalRef)]
+[!code-csharp[csRefOperatorsRef?:](~/samples/snippets/csharp/language-reference/operators/ConditionalExamples.cs#ConditionalRef)]
 
 ## See Also
 

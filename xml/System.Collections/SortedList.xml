@@ -53,10 +53,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For the generic version of this collection, see <xref:System.Collections.Generic.SortedList%602?displayProperty=nameWithType>.  
-  
- A <xref:System.Collections.SortedList> element can be accessed by its key, like an element in any <xref:System.Collections.IDictionary> implementation, or by its index, like an element in any <xref:System.Collections.IList> implementation.  
-  
+
+A <xref:System.Collections.SortedList> element can be accessed by its key, like an element in any <xref:System.Collections.IDictionary> implementation, or by its index, like an element in any <xref:System.Collections.IList> implementation.  
+
+> [!IMPORTANT]
+> We don't recommend that you use the `SortedList` class for new development. Instead, we recommend that you use the generic <xref:System.Collections.Generic.SortedList%602?displayProperty=nameWithType> class. For more information, see [Non-generic collections shouldn't be used](https://github.com/dotnet/platform-compat/blob/master/docs/DE0006.md) on GitHub.
+
  A <xref:System.Collections.SortedList> object internally maintains two arrays to store the elements of the list; that is, one array for the keys and another array for the associated values. Each element is a key/value pair that can be accessed as a <xref:System.Collections.DictionaryEntry> object. A key cannot be `null`, but a value can be.  
   
  The capacity of a <xref:System.Collections.SortedList> object is the number of elements the <xref:System.Collections.SortedList> can hold. As elements are added to a <xref:System.Collections.SortedList>, the capacity is automatically increased as required through reallocation. The capacity can be decreased by calling <xref:System.Collections.SortedList.TrimToSize%2A> or by setting the <xref:System.Collections.SortedList.Capacity%2A> property explicitly.  

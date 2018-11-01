@@ -50,7 +50,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is the default implementation of the <xref:System.Collections.IComparer> interface. The <xref:System.Collections.CaseInsensitiveComparer> class is the implementation of the <xref:System.Collections.IComparer> interface that performs case-insensitive string comparisons.  
+ This class is the default implementation of the <xref:System.Collections.IComparer> interface. The <xref:System.Collections.CaseInsensitiveComparer> class is the implementation of the <xref:System.Collections.IComparer> interface that performs case-insensitive string comparisons. <xref:System.Collections.Generic.Comparer%601?displayProperty=nameWithType> is the generic equivalent of this class.  
   
  Comparison procedures use the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> of the current thread unless otherwise specified. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).  
   

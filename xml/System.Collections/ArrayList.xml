@@ -56,13 +56,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Collections.ArrayList> class is designed to hold heterogeneous collections of objects. However, it does not always offer the best performance. Instead, we recommend the following:  
-  
--   For a heterogeneous collection of objects, use the `List<Object>` (in C#) or `List(Of Object)` (in Visual Basic) type.  
-  
--   For a homogeneous collection of objects, use the <xref:System.Collections.Generic.List%601> class.  
-  
- See the "Performance Considerations" section in the <xref:System.Collections.Generic.List%601> reference topic for a discussion of the relative performance of these classes.  
+
+>  [!IMPORTANT]
+>  We don't recommend that you use the `ArrayList` class for new development. Instead, we recommend that you use the generic <xref:System.Collections.Generic.List%601> class.
+> The <xref:System.Collections.ArrayList> class is designed to hold heterogeneous collections of objects. However, it does not always offer the best performance. Instead, we recommend the following:  
+> - For a heterogeneous collection of objects, use the `List<Object>` (in C#) or `List(Of Object)` (in Visual Basic) type.  
+> - For a homogeneous collection of objects, use the <xref:System.Collections.Generic.List%601> class.  
+> See [Performance Considerations](xref:System.Collections.Generic.List%601#performance-considerations) in the <xref:System.Collections.Generic.List%601> reference topic for a discussion of the relative performance of these classes.  See [Non-generic collections shouldn't be used](https://github.com/dotnet/platform-compat/blob/master/docs/DE0006.md) on GitHub for general information on the use of generic instead of non-generic collection types. 
   
  The <xref:System.Collections.ArrayList> is not guaranteed to be sorted.  You must sort the <xref:System.Collections.ArrayList> by calling its <xref:System.Collections.ArrayList.Sort%2A> method prior to performing operations (such as <xref:System.Collections.ArrayList.BinarySearch%2A>) that require the <xref:System.Collections.ArrayList> to be sorted. To maintain a collection that is automatically sorted as new elements are added, you can use the <xref:System.Collections.Generic.SortedSet%601> class.  
   
@@ -79,7 +79,7 @@
    
   
 ## Examples  
- The following code example shows how to create and initialize an <xref:System.Collections.ArrayList> and how to display its values.  
+ The following example shows how to create and initialize an <xref:System.Collections.ArrayList> and how to display its values.  
   
  [!code-cpp[Classic ArrayList Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ArrayList Example/CPP/source.cpp#1)]
  [!code-csharp[Classic ArrayList Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ArrayList Example/CS/source.cs#1)]

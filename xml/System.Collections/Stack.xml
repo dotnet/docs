@@ -53,11 +53,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For the generic version of this collection, see <xref:System.Collections.Generic.Stack%601?displayProperty=nameWithType>.  
   
- The capacity of a <xref:System.Collections.Stack> is the number of elements the <xref:System.Collections.Stack> can hold. As elements are added to a <xref:System.Collections.Stack>, the capacity is automatically increased as required through reallocation.  
-  
- If <xref:System.Collections.Stack.Count%2A> is less than the capacity of the stack, <xref:System.Collections.Stack.Push%2A> is an O(1) operation. If the capacity needs to be increased to accommodate the new element, <xref:System.Collections.Stack.Push%2A> becomes an O(`n`) operation, where `n` is <xref:System.Collections.Stack.Count%2A>. <xref:System.Collections.Stack.Pop%2A> is an O(1) operation.  
+The capacity of a <xref:System.Collections.Stack> is the number of elements the <xref:System.Collections.Stack> can hold. As elements are added to a <xref:System.Collections.Stack>, the capacity is automatically increased as required through reallocation.  
+
+> [!IMPORTANT]
+> We don't recommend that you use the `Stack` class for new development. Instead, we recommend that you use the generic <xref:System.Collections.Generic.Stack%601?displayProperty=nameWithType> class. For more information, see [Non-generic collections shouldn't be used](https://github.com/dotnet/platform-compat/blob/master/docs/DE0006.md) on GitHub.
+
+If <xref:System.Collections.Stack.Count%2A> is less than the capacity of the stack, <xref:System.Collections.Stack.Push%2A> is an O(1) operation. If the capacity needs to be increased to accommodate the new element, <xref:System.Collections.Stack.Push%2A> becomes an O(`n`) operation, where `n` is <xref:System.Collections.Stack.Count%2A>. <xref:System.Collections.Stack.Pop%2A> is an O(1) operation.  
   
  <xref:System.Collections.Stack> accepts `null` as a valid value and allows duplicate elements.  
   

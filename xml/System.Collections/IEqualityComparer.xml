@@ -36,11 +36,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This interface allows the implementation of customized equality comparison for collections. That is, you can create your own definition of equality, and specify that this definition be used with a collection type that accepts the <xref:System.Collections.IEqualityComparer> interface. In the .NET Framework, constructors of the <xref:System.Collections.Hashtable>, <xref:System.Collections.Specialized.NameValueCollection>, and <xref:System.Collections.Specialized.OrderedDictionary> collection types accept this interface.  
+
+This interface allows the implementation of customized equality comparison for collections. That is, you can create your own definition of equality, and specify that this definition be used with a collection type that accepts the <xref:System.Collections.IEqualityComparer> interface. In the .NET Framework, constructors of the <xref:System.Collections.Hashtable>, <xref:System.Collections.Specialized.NameValueCollection>, and <xref:System.Collections.Specialized.OrderedDictionary> collection types accept this interface.  
+
+For the generic version of this interface, see <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=nameWithType>.  
   
- This interface supports only equality comparisons. Customization of comparisons for sorting and ordering is provided by the <xref:System.Collections.IComparer> interface.  
-  
- For the generic version of this interface, see <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=nameWithType>.  
+The `IEqualityComparer` interface supports only equality comparisons. Customization of comparisons for sorting and ordering is provided by the <xref:System.Collections.IComparer> interface.  
   
  ]]></format>
     </remarks>

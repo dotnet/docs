@@ -29,7 +29,11 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
+## Remarks
+
+>  [!IMPORTANT]
+>  We don't recommend that you use the `FtpWebRequest` class for new development. For more information and alternatives to `FtpWebRequest`, see [WebRequest shouldn't be used](https://github.com/dotnet/platform-compat/blob/master/docs/DE0003.md) on GitHub.
+
  To obtain an instance of <xref:System.Net.FtpWebRequest>, use the <xref:System.Net.WebRequest.Create%2A> method. You can also use the <xref:System.Net.WebClient> class to upload and download information from an FTP server. Using either of these approaches, when you specify a network resource that uses the FTP scheme (for example, `"ftp://contoso.com"`) the <xref:System.Net.FtpWebRequest> class provides the ability to programmatically interact with FTP servers.  
   
  The URI may be relative or absolute. If the URI is of the form `"ftp://contoso.com/%2fpath"` (%2f is an escaped '/'), then the URI is absolute, and the current directory is `/path`. If, however, the URI is of the form `"ftp://contoso.com/path"`, first the .NET Framework logs into the FTP server (using the user name and password set by the <xref:System.Net.FtpWebRequest.Credentials%2A> property), then the current directory is set to `<UserLoginDirectory>/path`.  

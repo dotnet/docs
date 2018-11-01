@@ -42,17 +42,16 @@
   
  You can use the underlying integer value of each <xref:System.PlatformID> enumeration member, as shown in the table, as the `PlatformId` argument for the [SignTool.exe (Sign Tool)](~/docs/framework/tools/signtool-exe.md) utility.  
   
-|Member|Underlying value|  
+|Member|Underlying value|Comments|  
 |------------|----------------------|  
-|Win32S|0|  
-|Win32Windows|1|  
-|Win32NT|2|  
-|WinCE|3|  
-|Unix|4|  
-|Xbox|5|  
-|MacOSX|6|  
-  
-   
+|Win32S|0|This value is no longer in use.|  
+|Win32Windows|1|This value is no longer in use.|
+|Win32NT|2||
+|WinCE|3|This value is no longer in use.|
+|Unix|4||
+|Xbox|5|This value is no longer in use.|
+|MacOSX|6|This value was only returned by Silverlight. On .NET Core, its replacement is `Unix`.|  
+ 
   
 ## Examples  
  The following example demonstrates using the <xref:System.PlatformID.Win32S> class to identify the currently executing operating system.  
@@ -98,7 +97,7 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>The operating system is Macintosh.</summary>
+        <summary>The operating system is Macintosh. This value was returned by Silverlight. On .NET Core, its replacement is `Unix`.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unix">
@@ -198,7 +197,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The operating system is Win32s. Win32s is a layer that runs on 16-bit versions of Windows to provide access to 32-bit applications.</summary>
+        <summary>The operating system is Win32s. This value is no longer in use.</summary>
       </Docs>
     </Member>
     <Member MemberName="Win32Windows">
@@ -235,7 +234,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The operating system is Windows 95 or Windows 98.</summary>
+        <summary>The operating system is Windows 95 or Windows 98. This value is no longer in use. </summary>
       </Docs>
     </Member>
     <Member MemberName="WinCE">
@@ -272,7 +271,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The operating system is Windows CE.</summary>
+        <summary>The operating system is Windows CE. This value is no longer in use.</summary>
       </Docs>
     </Member>
     <Member MemberName="Xbox">
@@ -308,7 +307,7 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>The development platform is Xbox 360.</summary>
+        <summary>The development platform is Xbox 360. This value is no longer in use. </summary>
       </Docs>
     </Member>
   </Members>

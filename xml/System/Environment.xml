@@ -1481,29 +1481,14 @@ Per-machine and per-user environment variables are not supported. A `target` val
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
-  
-> [!IMPORTANT]
->  Starting with Windows 8, the  <xref:System.Environment.OSVersion%2A> property returns the same major and minor version numbers for all Windows platforms. Therefore, we do not recommend that you retrieve the value of this property to determine the operating system version.  
-  
- Typically, the <xref:System.Environment.OSVersion%2A> property is used to ensure that an app is running on some base version of an operating system in which a particular feature was introduced. When this is the case, you should perform a version check by testing whether the current operating system version returned by the <xref:System.Environment.OSVersion%2A> property is the same as, or greater than, the base operating system version. For more information, see the <xref:System.Version> class topic.  
-  
- Through Windows 8, the <xref:System.Environment.OSVersion%2A> property returns the version reported by the Windows [GetVersionEx](http://msdn.microsoft.com/library/windows/desktop/ms724451\(v=vs.85\).aspx) function. For a list of Windows desktop operating system versions and their corresponding version numbers, see [Operating System Version](https://msdn.microsoft.com/library/windows/desktop/ms724832.aspx) in the Windows Dev Center.  
-  
-> [!NOTE]
->  The <xref:System.Environment.OSVersion%2A> property reports the same version number (6.2.0.0) for both [!INCLUDE[win8](~/includes/win8-md.md)] and [!INCLUDE[win81](~/includes/win81-md.md)] and the same major and minor version number for Windows 10.  
-  
- In some cases, the <xref:System.Environment.OSVersion%2A> property may not return the operating system version that matches the version specified for the Windows Program Compatibility mode feature.  
-  
-   
-  
-## Examples  
- The following example displays the platform identifier and version number of the computer that runs the code example.  
-  
- [!code-cpp[environment.osversion#1](~/samples/snippets/cpp/VS_Snippets_CLR/Environment.OSVersion/CPP/osversion.cpp#1)]
- [!code-csharp[environment.osversion#1](~/samples/snippets/csharp/VS_Snippets_CLR/Environment.OSVersion/CS/osversion.cs#1)]
- [!code-vb[environment.osversion#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Environment.OSVersion/VB/osversion.vb#1)]  
-  
+## Remarks
+
+The `Environment.OSVersion` property does not provide a reliable way to identify the exact operating system and its version. Therefore, we do not recommend that you use this method. Instead: 
+
+- To identify the operating system platform, use the <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform%2A?displayProperty=nameWithType> method. 
+
+- Avoid writing code that depends on a reported operating system version. Instead, check for the availability of the features that your application needs.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This property was unable to obtain the system version.  

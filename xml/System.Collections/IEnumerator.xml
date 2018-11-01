@@ -40,9 +40,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.IEnumerator> is the base interface for all non-generic enumerators.  
-  
- For the generic version of this interface see <xref:System.Collections.Generic.IEnumerator%601>.  
+ <xref:System.Collections.IEnumerator> is the base interface for all non-generic enumerators. Its generic equivalent is the <xref:System.Collections.Generic.IEnumerator%601?displayProperty=nameWithType> interface.  
   
  The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended instead of directly manipulating the enumerator.  
   

@@ -40,8 +40,9 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- The <xref:System.Collections.ICollection> interface is the base interface for classes in the <xref:System.Collections> namespace.  
+## Remarks
+
+The <xref:System.Collections.ICollection> interface is the base interface for classes in the <xref:System.Collections> namespace. Its generic equivalent is the <xref:System.Collections.Generic.ICollection%601?displayProperty=nameWithType> interface. 
   
  The <xref:System.Collections.ICollection> interface extends <xref:System.Collections.IEnumerable>; <xref:System.Collections.IDictionary> and <xref:System.Collections.IList> are more specialized interfaces that extend <xref:System.Collections.ICollection>. An <xref:System.Collections.IDictionary> implementation is a collection of key/value pairs, like the <xref:System.Collections.Hashtable> class. An <xref:System.Collections.IList> implementation is a collection of values and its members can be accessed by index, like the <xref:System.Collections.ArrayList> class.  
   

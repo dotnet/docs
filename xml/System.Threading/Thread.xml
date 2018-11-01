@@ -134,7 +134,11 @@
 <a name="Culture"></a>   
 ## Culture and threads  
  Each thread has a culture, represented by the <xref:System.Threading.Thread.CurrentCulture%2A> property, and a UI culture, represented by the <xref:System.Threading.Thread.CurrentUICulture%2A> property.  The current culture supports such culture-sensitive  operations as parsing and formatting, string comparison and sorting, and also controls the writing system and calendar used by a thread. The current UI culture provides for culture-sensitive retrieval of resources in resource files.  
-  
+
+> [!IMPORTANT]
+> The <xref:System.Threading.Thread.CurrentCulture> and <xref:System.Threading.Thread.CurrentUICulture> properties don't work reliably when used with any thread other than the current thread. In .NET Framework, reading these properties is reliable, although setting these properties for a thread other than the current thread is not. On .NET Core, an <xref:System.InvalidOperationException> is thrown if a thread attempts to read or write these properties on a different thread.
+> We recommend that you use the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=nameWithType> properties to retrieve and set the current culture.
+
  When a new thread is instantiated, its culture and UI culture are defined by the current system culture and UI culture, and not by the culture and UI culture of the thread from which the new thread is created. This means, for example, that if the current system culture is English (United States) and the current culture of the primary application thread is French (France), the culture of a new thread created by calling the   <xref:System.Threading.Thread.%23ctor%28System.Threading.ParameterizedThreadStart%29> constructor from the primary thread is English (United States), and not French (France). For more information, see the "Culture and threads" section of the <xref:System.Globalization.CultureInfo> class topic.  
   
 > [!IMPORTANT]
@@ -145,9 +149,9 @@
 -   You can pass a <xref:System.Globalization.CultureInfo> object that represents that culture to the <xref:System.Threading.ParameterizedThreadStart> delegate or the <xref:System.Threading.ThreadPool.QueueUserWorkItem%28System.Threading.WaitCallback%2CSystem.Object%29?displayProperty=nameWithType> method.  
   
 -   For apps running on the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later versions, you can define the culture and UI culture that is to be assigned to all threads created in an application domain by setting the value of the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A?displayProperty=nameWithType> properties. Note that this is a per-application domain setting.  
-  
- For more information and examples, see the "Culture and threads" section of the <xref:System.Globalization.CultureInfo> class topic.  
-  
+
+ For more information and examples, see the "Culture and threads" section of the <xref:System.Globalization.CultureInfo> class topic.
+
 <a name="Properties"></a>   
 ## Getting information about and controlling threads  
  You can retrieve a number of property values that provide information about a thread. In some cases, you can also set these property values to control the operation of the thread. These thread properties include:  
@@ -1096,13 +1100,15 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
 ## Remarks  
  The <xref:System.Globalization.CultureInfo> object that is returned by this property, together with its associated objects, determine the default format for dates, times, numbers, currency values, the sorting order of text, casing conventions, and string comparisons. See the <xref:System.Globalization.CultureInfo> class to learn about culture names and identifiers, the differences between invariant, neutral, and specific cultures, and the way culture information affects threads and application domains. See the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property to learn how a thread's default culture is determined, and how users set culture information for their computers.  
-  
+
+> [!IMPORTANT]
+> The <xref:System.Threading.Thread.CurrentCulture> property doesn't work reliably when used with any thread other than the current thread. In .NET Framework, reading the property is reliable, although setting it for a thread other than the current thread is not. On .NET Core, an <xref:System.InvalidOperationException> is thrown if a thread attempts to read or write the <xref:System.Threading.Thread.CurrentCulture> property on a different thread.
+> We recommend that you use the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> property to retrieve and set the current culture.
+
  Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], you can set the <xref:System.Threading.Thread.CurrentCulture%2A> property to a neutral culture. This is because the behavior of the <xref:System.Globalization.CultureInfo> class has changed: When it represents a neutral culture, its property values (in particular, the <xref:System.Globalization.CultureInfo.Calendar%2A>, <xref:System.Globalization.CultureInfo.CompareInfo%2A>, <xref:System.Globalization.CultureInfo.DateTimeFormat%2A>, <xref:System.Globalization.CultureInfo.NumberFormat%2A>, and <xref:System.Globalization.CultureInfo.TextInfo%2A> properties) now reflect the specific culture that is associated with the neutral culture. In earlier versions of the .NET Framework, the <xref:System.Threading.Thread.CurrentCulture%2A> property threw a <xref:System.NotSupportedException> exception when a neutral culture was assigned.  
   
-   
-  
 ## Examples  
- The following code example shows the threading statement that allows the user interface of a Windows Forms to display in the culture that is set in Control Panel. Additional code is needed.  
+ The following example shows the threading statement that allows the user interface of a Windows Forms application to display in the culture that is set in Control Panel. Additional code is needed.  
   
  [!code-cpp[System.Threading.Thread.Culture#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Thread.Culture/CPP/source.cpp#1)]
  [!code-csharp[System.Threading.Thread.Culture#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Thread.Culture/CS/source.cs#1)]
@@ -1111,6 +1117,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">.NET Core only: Reading or writing the culture of a thread from another thread is not supported.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for setting the property. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" /></permission>
       </Docs>
     </Member>
@@ -1273,7 +1280,11 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
 ## Remarks  
  The UI culture specifies the resources an application needs to support user input and output, and by default is the same as the operating system culture. See the <xref:System.Globalization.CultureInfo> class to learn about culture names and identifiers, the differences between invariant, neutral, and specific cultures, and the way culture information affects threads and application domains. See the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property to learn how a thread's default UI culture is determined.  
-  
+
+> [!IMPORTANT]
+> The <xref:System.Threading.Thread.CurrentUICulture> property doesn't work reliably when used with any thread other than the current thread. In .NET Framework, reading the property is reliable, although setting it for a thread other than the current thread is not. On .NET Core, an <xref:System.InvalidOperationException> is thrown if a thread attempts to read or write the <xref:System.Threading.Thread.CurrentUICulture> property on a different thread.
+> We recommend that you use the <xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=nameWithType> property to retrieve and set the current culture.
+
  The <xref:System.Globalization.CultureInfo> returned by this property can be a neutral culture. Neutral cultures should not be used with formatting methods such as <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>, <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType>, and <xref:System.Convert.ToString%28System.Char%2CSystem.IFormatProvider%29?displayProperty=nameWithType>. Use the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=nameWithType> method to get a specific culture, or use the <xref:System.Threading.Thread.CurrentCulture%2A> property.  
   
 > [!NOTE]
@@ -1297,6 +1308,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is set to <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The property is set to a culture name that cannot be used to locate a resource file. Resource filenames must include only letters, numbers, hyphens or underscores.</exception>
+        <exception cref="T:System.InvalidOperationException">.NET Core only: Reading or writing the culture of a thread from another thread is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="DisableComObjectEagerCleanup">

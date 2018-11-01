@@ -44,7 +44,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Collections.CollectionBase> instance is always modifiable. See <xref:System.Collections.ReadOnlyCollectionBase> for a read-only version of this class.  
+
+>  [!IMPORTANT]
+>  We don't recommend that you use the `CollectionBase` class for new development. Instead, we recommend that you use the generic <xref:System.Collections.ObjectModel.Collection%601> class. For more information, see [Non-generic collections shouldn't be used](https://github.com/dotnet/platform-compat/blob/master/docs/DE0006.md) on GitHub.
+
+A <xref:System.Collections.CollectionBase> instance is always modifiable. See <xref:System.Collections.ReadOnlyCollectionBase> for a read-only version of this class.  
   
  The capacity of a <xref:System.Collections.CollectionBase> is the number of elements the <xref:System.Collections.CollectionBase> can hold. As elements are added to a <xref:System.Collections.CollectionBase>, the capacity is automatically increased as required through reallocation. The capacity can be decreased by setting the <xref:System.Collections.CollectionBase.Capacity%2A> property explicitly.  
   

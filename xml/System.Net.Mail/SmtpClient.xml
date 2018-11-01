@@ -39,8 +39,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Mail.SmtpClient> class is used to send email to an SMTP server for delivery. The SMTP protocol is defined in RFC 2821, which is available at [https://www.ietf.org](https://www.ietf.org/).  
-  
+ The `System.Net.Mail.SmtpClient` class is used to send email to an SMTP server for delivery. The SMTP protocol is defined in RFC 2821, which is available at [https://www.ietf.org](https://www.ietf.org/).  
+
+>  [!IMPORTANT]
+>  We don't recommend that you use the `SmtpClient` class for new development. For more information, see [SmtpClient shouldn't be used](https://github.com/dotnet/platform-compat/blob/master/docs/DE0005.md) on GitHub.
+
  The classes shown in the following table are used to construct email messages that can be sent using <xref:System.Net.Mail.SmtpClient>.  
   
 |Class|Description|  

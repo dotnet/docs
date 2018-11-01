@@ -37,7 +37,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This interface is used in conjunction with the <xref:System.Array.Sort%2A?displayProperty=nameWithType> and <xref:System.Array.BinarySearch%2A?displayProperty=nameWithType> methods. It provides a way to customize the sort order of a collection. See the <xref:System.Collections.IComparer.Compare%2A> method for notes on parameters and return value.  
+ This interface is used in conjunction with the <xref:System.Array.Sort%2A?displayProperty=nameWithType> and <xref:System.Array.BinarySearch%2A?displayProperty=nameWithType> methods. It provides a way to customize the sort order of a collection. See the <xref:System.Collections.IComparer.Compare%2A> method for notes on parameters and return value.  Its generic equivalent is the <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> interface.   
   
  The default implementation of this interface is the <xref:System.Collections.Comparer> class. For the generic version of this interface, see <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType>.  
   

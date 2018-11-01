@@ -38,7 +38,11 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
+## Remarks
+
+>  [!IMPORTANT]
+>  We don't recommend that you use the `WebClient` class for new development. Instead, use the <xref:System.Net.Http.HttpClient?displayProperty=nameWithType> class.
+
  The <xref:System.Net.WebClient> class provides common methods for sending data to or receiving data from any local, intranet, or Internet resource identified by a URI.  
   
  The <xref:System.Net.WebClient> class uses the <xref:System.Net.WebRequest> class to provide access to resources. <xref:System.Net.WebClient> instances can access data with any <xref:System.Net.WebRequest> descendant registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A?displayProperty=nameWithType> method.  

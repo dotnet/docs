@@ -217,10 +217,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the WebSocket protocol keep-alive interval in milliseconds.</summary>
-        <value>Returns <see cref="T:System.TimeSpan" />.  
-  
- The WebSocket protocol keep-alive interval in milliseconds.</value>
+        <summary>Gets or sets the WebSocket protocol keep-alive interval.</summary>
+        <value>Returns the WebSocket protocol keep-alive interval.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

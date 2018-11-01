@@ -477,10 +477,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default WebSocket protocol keep-alive interval in milliseconds.</summary>
-        <value>Returns <see cref="T:System.TimeSpan" />.  
-  
- The default WebSocket protocol keep-alive interval in milliseconds. The typical value for this interval is 30 seconds.</value>
+        <summary>Gets the default WebSocket protocol keep-alive interval.</summary>
+        <value>Returns the default WebSocket protocol keep-alive interval. The typical value for this interval is 30 seconds (as defined by the OS or the .NET platform). It is used to initialize <see cref="P:System.Net.WebSockets.ClientWebSocketOptions.KeepAliveInterval" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

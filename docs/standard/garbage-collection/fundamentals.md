@@ -166,7 +166,7 @@ ms.author: "ronpet"
   
  The garbage collector uses the following information to determine whether objects are live:  
   
--   **Stack roots**. Stack variables provided by the just-in-time (JIT) compiler and stack walker. Note that JIT optimizations can lengthen and shorten region of code within which the stack variable is reported to the garbage collector.
+-   **Stack roots**. Stack variables provided by the just-in-time (JIT) compiler and stack walker. Note that JIT optimizations can lengthen and shorten regions of code within which stack variables are reported to the garbage collector.
   
 -   **Garbage collection handles**. Handles that point to managed objects and that can be allocated by user code or by the common language runtime.  
   

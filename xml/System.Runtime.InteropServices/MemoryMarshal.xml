@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods to interoperate with <see cref="T:System.Memory`1" />, <see cref="T:System.ReadOnlyMemory`1" />,  <see cref="T:System.Span`1" />, and  <see cref="T:System.ReadOnlySpan`1" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,11 +48,21 @@
         <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="span">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of items in the read-only span.</typeparam>
+        <param name="span">The source slice to convert.</param>
+        <summary>Casts a <see cref="T:System.ReadOnlySpan`1" /> of one primitive type, <paramref name="T" />, to a <see langword="ReadOnlySpan&lt;Byte&gt;" />.</summary>
+        <returns>A read-only span of type <see cref="T:System.Byte" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+`T` cannot contain pointers or references. `T` is checked at runtime in order to preserve type safety.  
+
+      ]]></format>        
+        </remarks>
+        <exception cref="T:System.ArgumentException"><paramref name="T" /> contains references or pointers.</exception>
+        <exception cref="T:System.OverflowException">The <see cref="P:System.ReadOnlySpan`1.Length" /> property of the new <see cref="T:System.ReadOnlySpan`1" /> would exceed <see cref="F:System.Int32.MaxValue" /></exception>        
       </Docs>
     </Member>
     <Member MemberName="AsBytes&lt;T&gt;">
@@ -84,11 +94,21 @@
         <Parameter Name="span" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="span">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of items in the span.</typeparam>
+        <param name="span">The source slice to convert.</param>
+        <summary>Casts a <see cref="T:System.Span`1" /> of one primitive type, <paramref name="T" />, to a <see langword="Span&lt;Byte&gt;" />.</summary>
+        <returns>A span of type <see cref="T:System.Byte" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+`T` cannot contain pointers or references. `T` is checked at runtime in order to preserve type safety.  
+
+       ]]></format>        
+        </remarks>
+        <exception cref="T:System.ArgumentException"><paramref name="T" /> contains references or pointers.</exception>
+        <exception cref="T:System.OverflowException">The <see cref="P:System.Span`1.Length" /> property of the new <see cref="T:System.Span`1" /> would exceed <see cref="F:System.Int32.MaxValue" /></exception>        
       </Docs>
     </Member>
     <Member MemberName="AsMemory&lt;T&gt;">
@@ -114,11 +134,19 @@
         <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="memory">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of items in the read-only memory buffer.</typeparam>
+        <param name="memory">The read-only memory buffer.</param>
+        <summary>Creates a <see cref="T:System.Memory`1" /> instance from a <see cref="T:System.ReadOnlyMemory`1" />.</summary>
+        <returns>A memory block that represetns the same memory as the <see cref="T:System.ReadOnlyMemory`1" /> .</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+This method must be used with extreme caution. <xref:System.ReadOnlyMemory%601> is used to represent immutable data and other memory that is not meant to be written to. <xref:System.Memory%601> instances created by this method should not be written to. The purpose of this method is to allow variables typed as <xref:System.Memory%601> but only used for reading to store a <xref:System.ReadOnlyMemory%601>. 
+
+       ]]></format>        
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cast&lt;TFrom,TTo&gt;">
@@ -157,12 +185,23 @@
         <Parameter Name="span" Type="System.ReadOnlySpan&lt;TFrom&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TFrom">To be added.</typeparam>
-        <typeparam name="TTo">To be added.</typeparam>
-        <param name="span">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TFrom">The type of the source span.</typeparam>
+        <typeparam name="TTo">The type of the target span.</typeparam>
+        <param name="span">The source slice to convert.</param>
+        <summary>Casts a read-only span of one primitive type to a read-only span of another primitive type.</summary>
+        <returns>The converted read-only span.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+Neither `TFrom` nor `TTo` can contain pointers or references. `TFrom` and `TTo` are checked at runtime in order to preserve type safety.  
+
+This method is supported only on platforms that support misaligned memory access or when the memory block is aligned by other means.
+
+       ]]></format>        
+        </remarks>
+        <exception cref="T:System.ArgumentException"><paramref name="TFrom" /> or <paramref name="TTo" /> contains references or pointers.</exception>
       </Docs>
     </Member>
     <Member MemberName="Cast&lt;TFrom,TTo&gt;">
@@ -201,12 +240,25 @@
         <Parameter Name="span" Type="System.Span&lt;TFrom&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TFrom">To be added.</typeparam>
-        <typeparam name="TTo">To be added.</typeparam>
-        <param name="span">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TFrom">The type of the source span.</typeparam>
+        <typeparam name="TTo">The type of the target span.</typeparam>
+        <param name="span">The source slice to convert.</param>
+        <summary>Casts a span of one primitive type to a span of another primitive type.</summary>
+        <returns>The converted span.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+Neither `TFrom` nor `TTo` can contain pointers or references. `TFrom` and `TTo` are checked at runtime in order to preserve type safety.  
+
+The cast occurs in an unchecked context. If the range of `TTo` is less than the range of `TFrom`, data loss can occur. For example, if `TFrom` is <xref:System.Int64>, one of the `ReadOnlySpan<Int32>` values is 0x100001111110F0F, and `TTo` is <xref:System.Int32>, the resulting value is 11110F0F.
+
+This method is supported only on platforms that support misaligned memory access or when the memory block is aligned by other means.
+
+       ]]></format>        
+        </remarks>
+        <exception cref="T:System.ArgumentException"><paramref name="TFrom" /> or <paramref name="TTo" /> contains references or pointers.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateFromPinnedArray&lt;T&gt;">
@@ -233,13 +285,23 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="array">To be added.</param>
-        <param name="start">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the array.</typeparam>
+        <param name="array">The pre-pinned source array.</param>
+        <param name="start">The index of <paramref name="array" /> at which to begin the memory block.</param>
+        <param name="length">The number of items to include in the memory block.</param>
+        <summary>Creates a new memory buffer over the portion of the pre-pinned target array beginning at the <paramref name="start" /> index and consisting of <paramref name="length" /> items.</summary>
+        <returns>A block of memory over the specified elements of <paramref name="array" />. If <paramref name="array" /> is <see langword="null" />, or if <paramref name="start" /> and <paramref name="length" /> are 0, the method returns a <see cref="T:System.Memory%601" /> instance of <see cref="System.Memory%601.Length" /> zero. </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The array must already be pinned before this method is called, and that array must not be unpinned while the <xref:System.Memory%601> buffer that it returns is still in use. Calling this method on an unpinned array could result in memory corruption.
+
+       ]]></format>        
+        </remarks>
+        <exception cref="T:System.ArrayTypeMismatchException"><paramref name="array" /> is covariant, and the type of <paramref name="array" /> is not exactly <paramref name="T[]" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="start" /> or the end index is not in the range of 0 to <see cref="P:System.Array.Length" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateReadOnlySpan&lt;T&gt;">
@@ -266,12 +328,23 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="reference">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the data items.</typeparam>
+        <param name="reference">A reference to data.</param>
+        <param name="length">The number of <paramref name="T" /> elements that <paramref name="reference" /> contains.</param>
+        <summary>Creates a new read-only span over a portion of a regular managed object.</summary>
+        <returns>A read-only span.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+This method can be useful if part of a managed object represents a fixed array. 
+
+> [!WARNING]
+> This method should be used with caution. It is dangerous because the `length` argument is not checked. In addition, the lifetime of the returned span is not validated for safety by span-aware languages.
+
+       ]]></format>        
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateSpan&lt;T&gt;">
@@ -298,12 +371,23 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="reference">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the data items.</typeparam>
+        <param name="reference">A reference to data.</param>
+        <param name="length">The number of <paramref name="T" /> elements that <paramref name="reference" /> contains.</param>
+        <summary>Creates a new span over a portion of a regular managed object.</summary>
+        <returns>A span.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+This method can be useful if part of a managed object represents a fixed array. 
+
+> [!WARNING]
+> This method should be used with caution. It is dangerous because the `length` argument is not checked. In addition, the lifetime of the returned span is not validated for safety by span-aware languages.
+
+       ]]></format>        
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetReference&lt;T&gt;">
@@ -328,11 +412,19 @@
         <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="span">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of items in the span.</typeparam>
+        <param name="span">The read-only span from which the reference is retrieved.</param>
+        <summary>Returns a reference to the element of the read-only span at index 0.</summary>
+        <returns>A reference to the element at index 0. </returns>
+        <remarks> 
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+If the read-only span is empty, this method returns a reference to the location where the element at index 0 would have been stored. Such a reference may or may not be `null`. The returned reference can be used for pinning, but it must never be dereferenced.
+
+       ]]></format>        
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetReference&lt;T&gt;">
@@ -357,11 +449,19 @@
         <Parameter Name="span" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="span">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of items in the span.</typeparam>
+        <param name="span">The span from which the reference is retrieved.</param>
+        <summary>Returns a reference to the element of the span at index 0.</summary>
+        <returns>A reference to the element at index 0. </returns>
+        <remarks> 
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+If the span is empty, this method returns a reference to the location where the element at index 0 would have been stored. Such a reference may or may not be `null`. The returned reference can be used for pinning, but it must never be dereferenced.
+
+       ]]></format> 
+        </remarks>        
       </Docs>
     </Member>
     <Member MemberName="Read&lt;T&gt;">
@@ -393,11 +493,21 @@
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the item to retrieve from the read-only span.</typeparam>
+        <param name="source">A read-only span.</param>
+        <summary>Reads a structure of type <param name="T" /> out of a read-only span of bytes.</summary>
+        <returns>The structure retrieved from the read-only span.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+`T` cannot contain pointers or references. `It is checked at runtime in order to preserve type safety.  
+
+       ]]></format>        
+        </remarks>
+        <exception cref="T:System.ArgumentException"><paramref name="T" /> contains references or pointers.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><param name="source" /> is smaller than <param name="T" /></exception>
       </Docs>
     </Member>
     <Member MemberName="ToEnumerable&lt;T&gt;">
@@ -423,11 +533,20 @@
         <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="memory">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the items in the read-only memory buffer.</typeparam>
+        <param name="memory">A read-only memory buffer.</param>
+        <summary>Creates an <see cref="T:System.Collections.Generic.IEnumerable`1" /> view of the given read-only memory buffer.</summary>
+        <returns>An enumerable view of <param name="memory" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+This method allows a read-only memory buffer to be used in existing APIs that require a parameter of type <xref:System.Collections.Generic.IEnumerable%601>. 
+
+       ]]></format>        
+        
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetArray&lt;T&gt;">
@@ -454,11 +573,11 @@
         <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="memory">To be added.</param>
-        <param name="segment">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the read-only memory buffer.</typeparam>
+        <param name="memory">A read-only memory buffer.</param>
+        <param name="segment">When this method returns, contains the array segment retrieved from the underlying read-only memory buffer. If the method fails, the method returns a default array segment. </param>
+        <summary>Tries to get an array segment from the underlying memory buffer. The return value indicates the success of the operation. </summary>
+        <returns><see langword="true" /> if the method call succeeds; <see langword="false" /> otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -491,12 +610,12 @@
         <Parameter Name="manager" Type="TManager" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <typeparam name="TManager">To be added.</typeparam>
-        <param name="memory">To be added.</param>
-        <param name="manager">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the items in the read-only memory buffer.</typeparam>
+        <typeparam name="TManager">The type of the <see cref="T:System.Buffers.MemoryManager`1" /> to retrieve.</typeparam>
+        <param name="memory">The read-only memory buffer for which to get the memory manager.</param>
+        <param name="manager">When the method returns, the manager of <param name="memory" />. </param>
+        <summary>Tries to retrieve a <see cref="T:System.Buffers.MemoryManager`1" /> from the underlying read-only memory buffer.</summary>
+        <returns><see langword="true" /> if the method retrieved the memory manager; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -531,14 +650,14 @@
         <Parameter Name="length" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <typeparam name="TManager">To be added.</typeparam>
-        <param name="memory">To be added.</param>
-        <param name="manager">To be added.</param>
-        <param name="start">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the items in the read-only memory buffer.</typeparam>
+        <typeparam name="TManager">The type of the <see cref="T:System.Buffers.MemoryManager`1" /> to retrieve.</typeparam>
+        <param name="memory">The read-only memory buffer for which to get the memory manager.</param>
+        <param name="manager">When the method returns, the manager of <param name="memory" />. </param>
+        <param name="start">When the method returns, the offset from the start of the <param name="manager" /> that the <param name="memory" /> represents.</param>
+        <param name="length">When the method returns, the length of the <param name="manager" /> that the <param name="memory" /> represents.</param>
+        <summary>Tries to retrieve a <see cref="T:System.Buffers.MemoryManager`1" />, start index, and length from the underlying read-only memory buffer.</summary>
+        <returns><see langword="true" /> if the method succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -565,12 +684,12 @@
         <Parameter Name="length" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="memory">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="start">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="memory">Read-only memory containing a block of characters.</param>
+        <param name="text">When the method returns, the string contained in the memory buffer.</param>
+        <param name="start">The starting location in <param name="text" />.</param>
+        <param name="length">The number of characters in <param name="text" />.</param>
+        <summary>Tries to get the underlying string from a <see langword="System.ReadOnlyMemory&lt;Char&gt;" />.</summary>
+        <returns><see langword="true" /> if the method successfully retrieves the underlying string; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -604,12 +723,21 @@
         <Parameter Name="value" Type="T" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the structure to retrieve.</typeparam>
+        <param name="source">A read-only span of bytes. </param>
+        <param name="value">When the method returns, an instance of <param name="T" />.</param>
+        <summary>Tries to read a structure of type <param name="T" /> from a read-only span of bytes.</summary>
+        <returns><see langword="true" /> if the method succeeds in retrieving an instance of the structure; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+`T` cannot contain pointers or references. `It is checked at runtime in order to preserve type safety.  
+
+       ]]></format>        
+        </remarks>
+        <exception cref="T:System.ArgumentException"><paramref name="T" /> contains references or pointers.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryWrite&lt;T&gt;">
@@ -642,12 +770,21 @@
         <Parameter Name="value" Type="T" RefType="ref" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="destination">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the structure.</typeparam>
+        <param name="destination">The span of bytes to contain the structure.</param>
+        <param name="value">The structure to be written to the span.</param>
+        <summary>Tries to writes a structure of type <param name="T" /> into a span of bytes.</summary>
+        <returns><see langword="true" /> if the write operation succeeded; otherwise, <see langword="false" />. The method returns <see langword="false" /> if the span is too small to contain <param name="T" />. </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+`T` cannot contain pointers or references. `It is checked at runtime in order to preserve type safety.  
+
+       ]]></format>        
+        </remarks>
+        <exception cref="T:System.ArgumentException"><paramref name="TFrom" /> or <paramref name="TTo" /> contains references or pointers.</exception>
       </Docs>
     </Member>
     <Member MemberName="Write&lt;T&gt;">
@@ -680,11 +817,21 @@
         <Parameter Name="value" Type="T" RefType="ref" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="destination">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the structure.</typeparam>
+        <param name="destination">The span of bytes to contain the structure.</param>
+        <param name="value">The structure to be written to the span.</param>
+        <summary>Writes a structure of type <param name="T" /> into a span of bytes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+`T` cannot contain pointers or references. `It is checked at runtime in order to preserve type safety.  
+
+       ]]></format>        
+        </remarks>
+        <exception cref="T:System.ArgumentException"><paramref name="T" /> contains references or pointers.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="destination" /> is too small to contain <paramref name="value" />.</exception>
       </Docs>
     </Member>
   </Members>

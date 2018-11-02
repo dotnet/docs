@@ -19,7 +19,7 @@ The conditional operator (`?:`), commonly known as the ternary conditional opera
 condition ? first_expression : second_expression;  
 ```
 
-Beginning with C# 7.2, the `first_expression` and `second_expression` my be `ref` expressions:
+Beginning with C# 7.2, the `first_expression` and `second_expression` my be [`ref` expressions](https://github.com/dotnet/csharplang/blob/master/proposals/csharp-7.2/conditional-ref.md):
 
 ```csharp
 ref condition ? ref first_expression : ref second_expression;  

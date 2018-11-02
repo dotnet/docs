@@ -97,7 +97,7 @@ However, if *name* is the string representation of a number and the capturing gr
 |Pattern|Description|  
 |-------------|-----------------|  
 |`(?<1>a)`|Match the character "a" and assign the result to the capturing group named `1`.|  
-|`(?<1>\1b)*`|Match 0 or 1 occurrence of the group named `1` along with a "b", and assign the result to the capturing group named `1`.|  
+|`(?<1>\1b)*`|Match zero or more occurrences of the group named `1` along with a "b", and assign the result to the capturing group named `1`.|  
   
  [!code-csharp[RegularExpressions.Language.Backreferences#4](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.backreferences/cs/backreference4.cs#4)]
  [!code-vb[RegularExpressions.Language.Backreferences#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.backreferences/vb/backreference4.vb#4)]  
@@ -108,7 +108,7 @@ However, if *name* is the string representation of a number and the capturing gr
   
 2.  It advances to the second character, and successfully matches the string "ab" with the expression `\1b`, or "ab". It then assigns the result, "ab" to `\1`.  
   
-3.  It advances to the fourth character. The expression `(?<1>\1b)` is to be matched zero or more times, so it successfully matches the string "abb" with the expression `\1b`. It assigns the result, "abb", back to `\1`.  
+3.  It advances to the fourth character. The expression `(?<1>\1b)*` is to be matched zero or more times, so it successfully matches the string "abb" with the expression `\1b`. It assigns the result, "abb", back to `\1`.  
   
  In this example, `*` is a looping quantifier -- it is evaluated repeatedly until the regular expression engine cannot match the pattern it defines. Looping quantifiers do not clear group definitions.  
   

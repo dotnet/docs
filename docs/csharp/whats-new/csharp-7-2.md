@@ -24,6 +24,8 @@ The new language features in this release are:
   - Numeric literals can now have leading underscores before any printed digits.
 * [`private protected` access modifier](#private-protected-access-modifier)
   - The `private protected` access modifier enables access for derived classes in the same assembly.
+* [Conditional `ref` expressions](#conditional-ref-expressions)
+  - The result of a conditional expression (`?:`) can now be a reference.
 
 ## Safe efficient code enhancements
 
@@ -60,9 +62,21 @@ int binaryValue = 0b_0101_0101;
 
 ## _private protected_ access modifier
 
-Finally, a new compound access modifier: `private protected` indicates that a member may be
+A new compound access modifier: `private protected` indicates that a member may be
 accessed by containing class or derived classes that are declared in the same assembly. While `protected internal`
 allows access by derived classes or classes that are in the same assembly, `private protected`
 limits access to derived types declared in the same assembly.
 
 For more information see [access modifiers](../language-reference/keywords/access-modifiers.md) in the language reference.
+
+## Conditional `ref` expressions
+
+Finally, the conditional expression may produce a ref result instead of a value result. For example, you would write the following to retrieve a reference to the first element in one of two arrays:
+
+```csharp
+ref var r = ref (arr != null ? ref arr[0] : ref otherArr[0]);
+```
+
+The variable `r` is a reference to the first value in either `arr` or `otherArr`.
+
+For more information, see [conditional operator (?:)](../language-reference/operators/conditional-operator.md) in the language reference.

@@ -18,7 +18,7 @@ ms.date: 05/29/2018
 # [.NET Core 2.x](#tab/netcore2x)
 ```
 dotnet restore [<ROOT>] [--configfile] [--disable-parallel] [--force] [--ignore-failed-sources] [--no-cache]
-    [--no-dependencies] [--packages] [-r|--runtime] [-s|--source] [-v|--verbosity]
+    [--no-dependencies] [--packages] [-r|--runtime] [-s|--source] [-v|--verbosity] [--interactive]
 dotnet restore [-h|--help]
 ```
 # [.NET Core 1.x](#tab/netcore1x)
@@ -112,6 +112,10 @@ Specifies a NuGet package source to use during the restore operation. This setti
 `--verbosity <LEVEL>`
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+
+`--interactive`
+
+Allows the command to stop and wait for user input or action (for example to complete authentication). Since .NET Core 2.1.400.
 
 # [.NET Core 1.x](#tab/netcore1x)
 

@@ -1,6 +1,6 @@
 ---
 title: "COM Callable Wrapper"
-ms.date: "03/30/2017"
+ms.date: "10/23/2018"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -56,7 +56,7 @@ COM interfaces and the COM callable wrapper
 |Interface|Description|  
 |---------------|-----------------|  
 |The (\_*classname*) class interface|Interface, exposed by the runtime and not explicitly defined, that exposes all public interfaces, methods, properties, and fields that are explicitly exposed on a managed object.|  
-|**IConnectionPoint** and **IconnectionPointContainer**|Interface for objects that source delegate-based events (an interface for registering event subscribers).|  
+|**IConnectionPoint** and **IConnectionPointContainer**|Interface for objects that source delegate-based events (an interface for registering event subscribers).|  
 |**IdispatchEx**|Interface supplied by the runtime if the class implements **IExpando**. The **IDispatchEx** interface is an extension of the **IDispatch** interface that, unlike **IDispatch**, enables enumeration, addition, deletion, and case-sensitive calling of members.|  
 |**IEnumVARIANT**|Interface for collection-type classes, which enumerates the objects in the collection if the class implements **IEnumerable**.|  
   
@@ -171,6 +171,16 @@ public class LoanApp : IAnother {
   
  An automatically generated dual interface might be appropriate in rare cases; however, more often it creates version-related complexity. For example, COM clients using the class interface of a derived class can easily break with changes to the base class. When a third party provides the base class, the layout of the class interface is out of your control. Further, unlike a dispatch-only interface, a dual interface (**ClassInterface.AutoDual**) provides a description of the class interface in the exported type library. Such a description encourages late-bound clients to cache DispIds at run time.  
   
+### Ensure that all COM event notifications are late-bound.
+
+By default, COM type information is embedded directly into managed assemblies, which eliminates the need for primary interop assemblies (PIAs). However, one of the limitations of embedded type information is that it does not supported delivery of COM event notiifcations by early-bound vtable calls, but only supports late-bound `IDispatch::Invoke` calls.
+
+If your application requires early-bound calls to COM event interface methods, you can set the **Embed Interop Types** property in Visual Studio to `true`, or include the following element in your project file:
+
+```xml
+<EmbedInteropTypes>True</EmbedInteropTypes>
+```
+
 ## See Also  
  <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>  
  [COM Wrappers](com-wrappers.md)  

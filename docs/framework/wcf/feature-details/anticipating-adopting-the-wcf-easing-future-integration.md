@@ -12,7 +12,7 @@ If you use ASP.NET today, and anticipate using WCF in the future, this topic pro
 ## Protocols  
  Use ASP.NET 2.0’s new facility for validating conformity to the WS-I Basic Profile 1.1:  
   
-```  
+```csharp  
 [WebService(Namespace = "http://tempuri.org/")]  
 [WebServiceBinding(  
      ConformsTo = WsiProfiles.BasicProfile1_1,  

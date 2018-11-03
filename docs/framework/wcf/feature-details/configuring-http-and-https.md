@@ -26,7 +26,7 @@ WCF services and clients can communicate over HTTP and HTTPS. The HTTP/HTTPS set
   
  The following shows the syntax of the Httpcfg command with the `set urlacl` option  
   
-```  
+```console  
 httpcfg set urlacl /u {http://URL:Port/ | https://URL:Port/} /aACL  
 ```  
   
@@ -36,14 +36,14 @@ httpcfg set urlacl /u {http://URL:Port/ | https://URL:Port/} /aACL
   
  The following shows an example of using this command.  
   
-```  
+```console  
 httpcfg.exe set urlacl /u http://myhost:8000/ /a "O:AOG:DAD:(A;;RPWPCCDCLCSWRCWDWOGA;;;S-1-0-0)"  
 ```  
   
 ### Running Windows Vista, Windows Server 2008 R2 or Windows 7  
  If you are running on [!INCLUDE[wv](../../../../includes/wv-md.md)], Windows Server 2008 R2 or Windows 7, use the Netsh.exe tool. The following shows an example of using this command.  
   
-```  
+```console  
 netsh http add urlacl url=http://+:80/MyUri user=DOMAIN\user  
 ```  
   
@@ -65,14 +65,14 @@ netsh http add urlacl url=http://+:80/MyUri user=DOMAIN\user
 ### Running Windows XP or Server 2003  
  Use the httpcfg tool to modify the IP Listen List, as shown in the following example. The [Windows Support Tools documentation](https://go.microsoft.com/fwlink/?LinkId=94840) explains the syntax for the httpcfg.exe tool.  
   
-```  
+```console  
 httpcfg.exe set iplisten -i 0.0.0.0:8000  
 ```  
   
 ### Running Windows Vista or Windows 7  
  Use the netsh tool to modify the IP Listen List, as shown in the following example.  
   
-```  
+```console  
 netsh http add iplisten ipaddress=0.0.0.0:8000  
 ```  
   

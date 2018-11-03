@@ -30,7 +30,7 @@ To ensure an easier future migration of new ASP.NET applications to WCF, follow 
   
 -   Provide explicit names for the operations of a service using the `MessageName` parameter of the <xref:System.Web.Services.WebMethodAttribute>.  
   
-    ```  
+    ```csharp  
     [WebMethod(MessageName="ExplicitName")]  
     string Echo(string input);  
     ```  
@@ -41,7 +41,7 @@ To ensure an easier future migration of new ASP.NET applications to WCF, follow 
   
 -   Use the <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> to provide explicit values for the SOAPAction HTTP headers by which HTTP requests will be routed to methods.  
   
-    ```  
+    ```csharp  
     [WebMethod]  
     [SoapDocumentMethod(RequestElementName="ExplicitAction")]  
     string Echo(string input);  
@@ -57,7 +57,7 @@ To ensure an easier future migration of new ASP.NET applications to WCF, follow 
 ## Exception Handling  
  In designing the structures of the data types to be sent and received by a service, also design structures to represent the various types of exceptions that might occur within a service that one might wish to convey to a client.  
   
-```  
+```csharp  
 [Serializable]  
 [XmlRoot(  
      Namespace="ExplicitNamespace", IsNullable=true)]  
@@ -78,7 +78,7 @@ To ensure an easier future migration of new ASP.NET applications to WCF, follow 
   
  Give such classes the ability to serialize themselves to XML:  
   
-```  
+```csharp  
 public XmlNode ToXML()  
 {  
      XmlSerializer serializer = new XmlSerializer(  
@@ -97,7 +97,7 @@ public XmlNode ToXML()
   
  The classes can then be used to provide the details for explicitly thrown <xref:System.Web.Services.Protocols.SoapException> instances:  
   
-```  
+```csharp  
 AnctipatedException exception = new AnticipatedException();  
 exception.AnticipatedExceptionInformation = "…";  
 throw new SoapException(  
@@ -107,7 +107,7 @@ throw new SoapException(
      exception.ToXML());  
 ```  
   
- These exception classes will be readily reusable with the WCF<xref:System.ServiceModel.FaultException%601> class to throw a new `FaultException<AnticipatedException>(anticipatedException);`  
+ These exception classes will be readily reusable with the WCF <xref:System.ServiceModel.FaultException%601> class to throw a new `FaultException<AnticipatedException>(anticipatedException);`  
   
 ## Security  
  The following are some security recommendations.  

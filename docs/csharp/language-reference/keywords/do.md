@@ -26,13 +26,12 @@ The following example shows the usage of the `do` statement. Select **Run** to r
 
 ## C# language specification
 
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+For more information, see [The do statement](~/_csharplang/spec/statements.md#the-do-statement) section of the [C# language specification](../language-specification/index.md).
 
 ## See also
 
-- [C# Reference](../index.md)  
-- [C# Programming Guide](../../programming-guide/index.md)  
-- [C# Keywords](index.md)  
-- [do-while Statement (C++)](/cpp/cpp/do-while-statement-cpp)  
-- [Iteration Statements](iteration-statements.md)  
-- [while statement](while.md)  
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
+- [Iteration Statements](iteration-statements.md)
+- [while statement](while.md)

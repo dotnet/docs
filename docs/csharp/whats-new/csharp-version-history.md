@@ -28,7 +28,7 @@ The major features of C# 1.0 included:
 - [Expressions](../programming-guide/statements-expressions-operators/expressions.md)
 - [Statements](../programming-guide/statements-expressions-operators/statements.md)
 - [Attributes](../programming-guide/concepts/attributes/index.md)
-- Literals
+- [Literals](../language-reference/keywords/literal-keywords.md)
 
 ## C# version 1.2
 
@@ -64,11 +64,11 @@ And yet, C# continued to play a bit of catch-up with Java. Java had already rele
 
 C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full boat of language features would actually come with .NET Framework version 3.5. This version marked a major change in the growth of C#. It established C# as a truly formidable programming language. Let's take a look at some major features in this version:
 
-- [Auto implemented properties](../programming-guide/classes-and-structs/auto-implemented-properties.md)
+- [Auto-implemented properties](../programming-guide/classes-and-structs/auto-implemented-properties.md)
 - [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)
 - [Query expressions](../linq/query-expression-basics.md)
-- [Lambda expression](https://www.daedtech.com/introduction-to-c-lambda-expressions/)
-- [Expression trees](https://blogs.msdn.microsoft.com/charlie/2008/01/31/expression-tree-basics/)
+- [Lambda expressions](../lambda-expressions.md)
+- [Expression trees](../expression-trees.md)
 - [Extension methods](../programming-guide/classes-and-structs/extension-methods.md)
 - [Implicitly typed local variables](../language-reference/keywords/var.md)
 - [Partial methods](../language-reference/keywords/partial-method.md)
@@ -91,7 +91,7 @@ The next version did introduce some interesting new features:
 - [Dynamic binding](../language-reference/keywords/dynamic.md)
 - [Named/optional arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - [Generic covariant and contravariant](../../standard/generics/covariance-and-contravariance.md)
-- [Embedded interop types](https://stackoverflow.com/questions/20514240/whats-the-difference-setting-embed-interop-types-true-and-false-in-visual-studi)
+- [Embedded interop types](../../framework/interop/type-equivalence-and-embedded-interop-types.md)
 
 Embedded interop types alleviated a deployment pain. Generic covariance and contravariance give you more power to use generics, but they're a bit academic and probably most appreciated by framework and library authors. Named and optional parameters let you eliminate many method overloads and provide convenience. But none of those features are exactly paradigm altering.
 
@@ -118,13 +118,13 @@ But `async` and `await` are the real stars of this release. When these features 
 
 With versions 3.0 and 5.0, C# had added major new features in an object-oriented language. With version 6.0, it would go away from doing a dominant killer feature and instead release many smaller features that made C# programming more productive. Here are some of them:
 
-- [Static imports](../language-reference/keywords/using-static.md)
-- [Exception filters](https://www.thomaslevesque.com/2015/06/21/exception-filters-in-c-6/)
-- [Property initializers](http://geekswithblogs.net/WinAZ/archive/2015/06/30/whatrsquos-new-in-c-6.0-auto-property-initializers.aspx)
-- [Expression bodied members](https://lostechies.com/jimmybogard/2015/12/17/c-6-feature-review-expression-bodied-function-members/)
-- [Null propagator](https://davefancher.com/2014/08/14/c-6-0-null-propagation-operator/)
-- [String interpolation](../language-reference/tokens/interpolated.md)
-- [nameof operator](../language-reference/keywords/nameof.md)
+- [Static imports](./csharp-6.md#using-static)
+- [Exception filters](./csharp-6.md#exception-filters)
+- [Auto-property initializers](./csharp-6.md#auto-property-initializers)
+- [Expression bodied members](./csharp-6.md#expression-bodied-function-members)
+- [Null propagator](./csharp-6.md#null-conditional-operators)
+- [String interpolation](./csharp-6.md#string-interpolation)
+- [nameof operator](./csharp-6.md#the-nameof-expression)
 - [Index initializers](csharp-6.md#index-initializers)
 
 Other new features include:
@@ -140,20 +140,19 @@ They did one other thing along with this version, though it's not a traditional 
 
 The most recent major version is C# version 7.0. This version has some evolutionary and cool stuff in the vein of C# 6.0, but without the compiler as a service. Here are some of the new features:
 
-- [Out variables](https://www.c-sharpcorner.com/article/out-variables-in-c-sharp-7-0/)
-- [Tuples and deconstruction](https://www.thomaslevesque.com/2016/08/23/tuple-deconstruction-in-c-7/)
+- [Out variables](./csharp-7.md#out-variables)
+- [Tuples and deconstruction](./csharp-7.md#tuples)
 - [Pattern matching](./csharp-7.md#pattern-matching)
-- [Local functions](https://www.infoworld.com/article/3182416/application-development/c-7-in-depth-exploring-local-functions.html)
+- [Local functions](./csharp-7.md#local-functions)
 - [Expanded expression bodied members](./csharp-7.md#more-expression-bodied-members)
 - [Ref locals and returns](./csharp-7.md#ref-locals-and-returns)
 
 Other features included:
 
-- [Discards](../discards.md)
-- [Binary Literals](https://github.com/dotnet/csharplang/blob/master/proposals/csharp-7.0/binary-literals.md)
-- [Digit Separators](https://github.com/dotnet/csharplang/blob/master/proposals/csharp-7.0/digit-separators.md)
-- Ref returns and locals
-- [Throw expressions](https://github.com/dotnet/csharplang/blob/master/proposals/csharp-7.0/throw-expression.md)
+- [Discards](./csharp-7.md#discards)
+- [Binary Literals and Digit Separators](./csharp-7.md#numeric-literal-syntax-improvements)
+- [Ref returns and locals](./csharp-7.md#ref-locals-and-returns)
+- [Throw expressions](./csharp-7.md#throw-expressions)
 
 All of these features offer cool new capabilities for developers and the opportunity to write even cleaner code than ever. A highlight is condensing the declaration of variables to use with the `out` keyword and by allowing multiple return values via tuple.
 

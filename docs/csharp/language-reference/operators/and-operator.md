@@ -59,4 +59,5 @@ For more information, see [The address-of operator](~/_csharplang/spec/unsafe-co
 - [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
 - [| operator](or-operator.md)
 - [^ operator](xor-operator.md)
+- [~ operator](bitwise-complement-operator.md)
 - [&& operator](conditional-and-operator.md)

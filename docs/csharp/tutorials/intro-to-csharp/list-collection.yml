@@ -162,7 +162,9 @@ items:
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
     
 - content: |
-    You've completed the list tutorial. You've completed the introduction to C# interactive tutorials. You can click the **Next** link below to start the **string interpolation interactive tutorial**, which is more advanced. Or, you can visit the [.NET site](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Keep Learning" step brings you back to these tutorials.
+    You've completed the list interactive tutorial. That's the final introduction to C# interactive tutorial. You can visit the [.NET site](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Keep Learning" step brings you back to these tutorials to build projects on your machine.
 
-    You can learn more about working with the `List` type in the following
-    [.NET Guide](../../../standard/index.md) topic on [collections](../../../standard/collections/index.md). You'll also learn about many other collection types.
+    You can learn more about [.NET collections]((../../../standard/collections/index.md) in the following topics:
+    - [Selecting a collection type](../../../standard/collections/selecting-a-collection-class.md)
+    - [Commonly used collection types](../../../standard/collections/commonly-used-collection-types.md)
+    - [hen to use generic collections](../../../standard/collections/when-to-use-generic-collections.md)

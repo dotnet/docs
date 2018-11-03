@@ -10,13 +10,11 @@ A number of samples and walkthroughs in the [!INCLUDE[vbtecdlinq](../../../../..
 
 ## Get the Northwind sample database
 
-Download the Northwind sample database from the following page in the Microsoft Download Center:
+Download the script `instnwnd.sql` to create and load the Northwind sample database from the following GitHub repo:
 
-[Northwind and Pubs Sample Databases](https://go.microsoft.com/fwlink?linkid=64296)
+[Northwind and pubs sample databases for Microsoft SQL Server](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs)
 
-After the file has downloaded, double-click the file to extract the databases and scripts. By default, the files are installed in the folder `<drive>:\SQL Server 2000 Sample Databases`.
-
-Before you can use the Northwind database, you have to recreate the database on an instance of SQL Server by using [SQL Server Management Studio](#get_ssms) or a similar tool to run the `instnwnd.sql` script file in the installation folder.
+Before you can use the Northwind database, you have to recreate the database on an instance of SQL Server by using [SQL Server Management Studio](#get_ssms) or a similar tool to run the `instnwnd.sql` script file. Follow the instructions in the Readme file in the repo.
 
 ## Get the AdventureWorks sample database
 

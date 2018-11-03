@@ -17,7 +17,7 @@ You can use the `when` contextual keyword to specify a filter condition in two c
 
 ## `when` in a `catch` statement
 
-Starting with C# 6, `When` can be used in a `catch` statement to specify a condition that must be true for the handler for a specific exception to execute. Its syntax is:
+Starting with C# 6, `when` can be used in a `catch` statement to specify a condition that must be true for the handler for a specific exception to execute. Its syntax is:
 
 ```csharp
 catch ExceptionType [e] when (expr)

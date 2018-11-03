@@ -15,7 +15,7 @@ ms.date: 05/25/2018
 
 ## Synopsis
 
-`dotnet add [<PROJECT>] package <PACKAGE_NAME> [-h|--help] [-f|--framework] [-n|--no-restore] [--package-directory] [-s|--source] [-v|--version]`
+`dotnet add [<PROJECT>] package <PACKAGE_NAME> [-h|--help] [-f|--framework] [-n|--no-restore] [--package-directory] [-s|--source] [-v|--version] [--interactive]`
 
 ## Description
 
@@ -76,6 +76,10 @@ Uses a specific NuGet package source during the restore operation.
 `-v|--version <VERSION>`
 
 Version of the package.
+
+`--interactive`
+
+Allows the command to stop and wait for user input or action (for example to complete authentication). Since .NET Core 2.1.400.
 
 ## Examples
 

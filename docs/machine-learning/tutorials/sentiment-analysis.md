@@ -24,7 +24,8 @@ In this tutorial, you learn how to:
 > * Load a classifier
 > * Train the model
 > * Evaluate the model with a different dataset
-> * Predict the test data outcomes with the model
+> * Predict a single instance of test data outcome with the model
+> * Predict the test data outcomes with a loaded model
 
 ## Sentiment analysis sample overview
 
@@ -304,18 +305,18 @@ Display `SentimentText` and corresponding sentiment prediction in order to share
 
 [!code-csharp[OutputPrediction](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#20 "Display prediction output")]
 
-## Create and train a new iteration of the model
+## Create and train the final model
 
-Create the `IterateModel` method, just after the `IterateModel` method, using the following code:
+Create the `TrainFinalModel` method, just after the `Predict` method, using the following code:
 
 ```csharp
-public static void IterateModel(MLContext mlContext)
+public static void TrainFinalModel(MLContext mlContext)
 {
 
 }
 ```
 
-The `IterateModel` method executes the following tasks:
+The `TrainFinalModel` method executes the following tasks:
 
 * Loads the data.
 * Trains the model.
@@ -326,17 +327,17 @@ Add a call to the new method from the `Main` method, right under the `Predict` m
 
 Now that we have trained, evaluated, and predicted results using the model, we'll retrain it using a dataset with combined the training and test data we used previously.
 
-To train the new model, call the `Train` method with the `mlContext` parameter, and the all data dataset path global field (`_allDataPath`). Add the following code as the first line of the `IterateModel` method:
+To train the new model, call the `Train` method with the `mlContext` parameter, and the all data dataset path global field (`_allDataPath`). Add the following code as the first line of the `TrainFinalModel` method:
 
 [!code-csharp[CallTrain](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#22 "Call the Train method")]
 
-To save your model to a .zip file before returning, add the following code to call the `SaveModelAsFile` method as the next line in `IterateModel`:
+To save your model to a .zip file before returning, add the following code to call the `SaveModelAsFile` method as the next line in `TrainFinalModel`:
 
 [!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#23 "Save the model")]
 
 ## Save the model as a .zip file
 
-Create the `SaveModelAsFile` method, just after the `IterateModel` method, using the following code:
+Create the `SaveModelAsFile` method, just after the `TrainFinalModel` method, using the following code:
 
 ```csharp
 private static void SaveModelAsFile(MLContext mlContext, ITransformer model)

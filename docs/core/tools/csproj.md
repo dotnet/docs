@@ -199,7 +199,7 @@ A semicolon-separated list of packages authors, matching the profile names on nu
 A long description of the package for UI display.
 
 ### Description
-A long description of the package for UI display. This property is used if `PackageDescription` is not specified. It is also used to specify the generated assembly's description.
+A long description for an assembly. This property is used if `PackageDescription` is not specified.
 
 ### Copyright
 Copyright details for the package.

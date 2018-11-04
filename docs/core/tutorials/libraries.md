@@ -33,7 +33,7 @@ If you're not quite familiar with the .NET Standard, refer to the [.NET Standard
 
 In that article, there is a table which maps .NET Standard versions to various implementations:
 
-[!INCLUDE [net-standard-table](~/includes/net-standard-table.md)]
+[!INCLUDE [net-standard-table](../../../includes/net-standard-table.md)]
 
 Here's what this table means for the purposes of creating a library:
 
@@ -130,7 +130,7 @@ You'll notice three major changes here:
 
 The build system is aware of the following preprocessor symbols used in `#if` directives:
 
-[!INCLUDE [Preprocessor symbols](~/includes/preprocessor-symbols.md)]
+[!INCLUDE [Preprocessor symbols](../../../includes/preprocessor-symbols.md)]
 
 Here is an example making use of conditional compilation per-target:
 
@@ -247,7 +247,7 @@ It's important to be able to test across platforms. You can use either [xUnit](h
    dotnet build
    ```
 
-   [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+   [!INCLUDE[DotNet Restore Note](../../../includes/dotnet-restore-note.md)]
 
 1. Verify that xUnit runs by executing the `dotnet test` command. If you chose to use MSTest, then the MSTest console runner should run instead.
     

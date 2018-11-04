@@ -24,7 +24,7 @@ You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuG
 **✔️ CONSIDER** using SourceLink to add source control metadata to your assemblies and NuGet package.
 
 > [!TIP]
-> You can further enhance a developer's debugging experience adding debugger attributes to your types.
+> You can further enhance a developer's debugging experience by adding debugger attributes to your types.
 > * <xref:System.Diagnostics.DebuggerDisplayAttribute> can customize how a class or field is displayed in the debugger variable windows.
 > * <xref:System.Diagnostics.DebuggerStepThroughAttribute> instructs the debugger to step through the code instead of stepping into the code.
 

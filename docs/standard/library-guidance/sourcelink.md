@@ -23,7 +23,14 @@ You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuG
 
 **✔️ CONSIDER** using SourceLink to add source control metadata to your assemblies and NuGet package.
 
-**✔️ CONSIDER** including PDB files in the NuGet package.
+> [!TIP]
+> You can further enhance a developer's debugging experience of your library by adding debugger attributes to your types.
+> * <xref:System.Diagnostics.DebuggerDisplayAttribute> can customize how a class or field is displayed in the debugger variable windows.
+> * <xref:System.Diagnostics.DebuggerStepThroughAttribute> instructs the debugger to step through the code instead of stepping into the code.
+
+**✔️ CONSIDER** including symbol files (`*.pdb`) in the NuGet package.
+
+> Currently the main public host for symbols doesn't support the portable symbol files (`*.pdb`) created by SDK-style projects, and [symbol packages](./nuget.md#symbol-packages) aren't useful.
 
 >[!div class="step-by-step"]
 [Previous](./dependencies.md)

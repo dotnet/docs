@@ -5,30 +5,27 @@ author: cjgronlund
 ms.author: cgronlun
 ms.date: 11/06/2018
 ---
-# ML.NET Guide
+# What is ML.NET?
 
-ML.NET is a free, open-source, and cross-platform machine learning framework that enables you to build custom machine learning solutions and integrate them into your .NET applications. This guide provides many resources about working with ML.NET.
+ML.NET is a free, open-source, and cross-platform machine learning framework that enables you to build custom machine learning solutions and integrate them into your .NET applications. With the ML.NET APIs you can incorporate AI into your apps using the .NET skills you already have and without leaving the .NET framework.
 
-For more information about ML.NET, see [Introducing ML.NET: Cross-platform, Proven and Open Source Machine Learning Framework](https://blogs.msdn.microsoft.com/dotnet/2018/05/07/introducing-ml-net-cross-platform-proven-and-open-source-machine-learning-framework/) post on the .NET blog.
+## What is machine learning?
 
-## Get started
+Machine learning is a data science technique that allows computers to use existing data to forecast future behaviors, outcomes, and trends. Using machine learning, computers learn without being explicitly programmed.
 
-To get started with ML.NET, check out the [Iris Petal Prediction quickstart](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet/get-started) or the more in-depth [tutorials](tutorials/index.md).
+Forecasts or predictions from machine learning can make apps and devices smarter. When you shop online, machine learning helps recommend other products you might like based on what you've purchased. When your credit card is swiped, machine learning compares the transaction to a database of transactions and helps detect fraud. When your robot vacuum cleaner vacuums a room, machine learning helps it decide whether the job is done.
 
-If you are new to machine learning, you can also review the [Machine Learning Basics](resources/basics.md), where you'll find machine learning resources to assist you.
 
-## How the ML.NET guide is organized
+## Data Science for Beginners videos
 
-There are several sections in the ML.NET Guide. You can read them in order, or jump directly to what interests you the most.
+Get a quick introduction to the basics of machine learning and data science from *Data Science for Beginners* in five short videos from a top data scientist. These videos are basic but useful, whether you're interested in doing data science or you work with data scientists.
 
-**[Tutorials](tutorials/index.md)**
+* Video 1: [The 5 questions data science answers](https://docs.microsoft.com/azure/machine-learning/studio/data-science-for-beginners-the-5-questions-data-science-answers) *(5 min 14 sec)*.
 
-In this section, you find step-by-step tutorials that guide you through building custom machine learning models for common developer scenarios.
+* Video 2: [Is your data ready for data science?](https://docs.microsoft.com/azure/machine-learning/studio/data-science-for-beginners-is-your-data-ready-for-data-science) *(4 min 56 sec)*
 
-**[Glossary](resources/glossary.md)**
+* Video 3: [Ask a question you can answer with data](https://docs.microsoft.com/azure/machine-learning/studio/data-science-for-beginners-ask-a-question-you-can-answer-with-data) *(4 min 17 sec)*
 
-Find a list of machine learning terminology and their definitions.
+* Video 4: [Predict an answer with a simple model](https://docs.microsoft.com/azure/machine-learning/studio/data-science-for-beginners-predict-an-answer-with-a-simple-model) *(7 min 42 sec)*
 
-## API reference
-
-Check out the [ML.NET API Reference](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet) to see the breadth of APIs available.
+* Video 5: [Copy other people's work to do data science](https://docs.microsoft.com/azure/machine-learning/studio/data-science-for-beginners-copy-other-peoples-work-to-do-data-science) *(3 min 18 sec)*

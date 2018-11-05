@@ -25,11 +25,11 @@ To understand basics, see [Basic concepts for model training in ML.NET](basic-co
 
 [Predict taxi fare using a regression model](/tutorials/taxi-fare.md) shows you how to build a predictive app that uses many factors from historical data to determine the answer.
 
-[New tutorial](/tutorials/placeholder.md)
+[New tutorial](/tutorials/placeholder.md) shows you how to....
 
 ## How to guide
 
-[Build a game match-up list app with Infer.NET and probalistic programming](/how-to-guides/matchup-app-infer-net.md) shows you how to build a simplified version of a match-up app list like you'd see in an Xbox game.
+[Build a game match-up list app with Infer.NET and probalistic programming](/how-to-guides/matchup-app-infer-net.md) shows you how to build a simplified version of a match-up app like you'd see in an Xbox game.
 
 ## Resources
 

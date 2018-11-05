@@ -1143,15 +1143,16 @@
 
 <!-- ML.NET Content -->
 # [ML.NET Guide](machine-learning/index.md)
+## [Overview]
+### [What is ML.NET?](machine-learning/what-is-mldotnet.md)
+### [Model training concepts](machine-learning/basic-concepts-model-training-in-mldotnet.md)
 ## [Tutorials](machine-learning/tutorials/index.md)
 ### [Sentiment analysis (binary classification)](machine-learning/tutorials/sentiment-analysis.md)
 ### [Taxi fare predictor (regression)](machine-learning/tutorials/taxi-fare.md)
 ### [Iris petals (clustering)](machine-learning/tutorials/iris-clustering.md)
 ## [How-to guides](machine-learning/how-to-guides/index.md)
 ### [Probabilistic programming with Infer.NET](machine-learning/how-to-guides/matchup-app-infer-net.md)
-## [Resources](machine-learning/resources/index.md)
-### [Machine learning glossary](machine-learning/resources/glossary.md)
-### [Machine learning basics](machine-learning/resources/basics.md)
+## [Resources](machine-learning/resources/index.md)### [Machine learning glossary](machine-learning/resources/glossary.md)
 ### [Machine learning tasks](machine-learning/resources/tasks.md)
 ### [Data transforms](machine-learning/resources/transforms.md)
 

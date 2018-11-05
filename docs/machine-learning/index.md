@@ -14,7 +14,7 @@ This guide explains basic concepts and provides tutorials and an API reference f
 
 To install and start building in ML.NET, follow the [Get started tutorial](https://www.microsoft.com/net/learn/machinelearning-ai/ml-dotnet-get-started-tutorial).
 
-To learn about ML.NET, see [What is ML.NET?](what-is-mldotnet.md).
+To learn about ML.NET, see [What is ML.NET?](what-is-mldotnet.md)
 
 To understand basics, see [Basic concepts for model training in ML.NET](basic-concepts-model-training-in-mldotnet.md).
 

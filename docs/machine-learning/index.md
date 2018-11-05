@@ -24,7 +24,7 @@ To understand basics, see [Basic concepts for model training in ML.NET](basic-co
 
 [Predict taxi fare using a regression model](/tutorials/taxi-fare.md) shows you how to build a predictive app that uses many factors from historical data to determine the answer.
 
-[New tutorial](/tutorials/placeholder.md) shows you how to....
+[Classify iris flowers by features](/tutorials/iris-clustering.md) shows you how to use a clustering model to analyze the iris data set. 
 
 ## How to guide
 
@@ -33,6 +33,8 @@ To understand basics, see [Basic concepts for model training in ML.NET](basic-co
 ## Resources
 
 [Machine learning glossary](/resources/glossary.md) defines key terminology.
+[Machine learning tasks](/resources/tasks.md) describes tasks, such as classification and anomaly detection. 
+[Data transforms](/resources/transforms.md) describes data preparation capabilities in ML.NET.
 
 
 ## API reference

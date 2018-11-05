@@ -33,7 +33,9 @@ To understand basics, see [Basic concepts for model training in ML.NET](basic-co
 ## Resources
 
 [Machine learning glossary](/resources/glossary.md) defines key terminology.
+
 [Machine learning tasks](/resources/tasks.md) describes tasks, such as classification and anomaly detection. 
+
 [Data transforms](/resources/transforms.md) describes data preparation capabilities in ML.NET.
 
 

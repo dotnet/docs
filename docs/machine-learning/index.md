@@ -1,7 +1,6 @@
 ---
 title: ML.NET Guide
 description: Learn how to build custom AI solutions and integrate them into your .NET applications using ML.NET.
-ms.author: johalex
 ms.date: 11/06/2018
 ---
 # ML.NET Guide

@@ -2,7 +2,7 @@
 title: What is ML.NET? 
 description: Learn about ML.NET, a free, open-source, and cross-platform machine learning framework that enables you to build custom AI solutions and integrate them into your .NET applications.
 author: cjgronlund
-ms.author: cgronlun
+ms.topic: overview
 ms.date: 11/06/2018
 ---
 # What is ML.NET?

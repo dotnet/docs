@@ -162,7 +162,9 @@ items:
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
     
 - content: |
-    You've completed the list tutorial. This tutorial is the final interactive tutorial. You can continue these tutorials on your own development environment. Learn the basics of [local development](local-environment.md) and then pick a tutorial. You can try this same exercise, move directly to the next tutorial, or start again at with the [numbers in C#](numbers-in-csharp-local.md) tutorial.
+    You've completed the list interactive tutorial. That's the final introduction to C# interactive tutorial. You can visit the [.NET site](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Keep Learning" step brings you back to these tutorials to build projects on your machine.
 
-    You can learn more about working with the `List` type in the
-    [.NET Guide](../../../standard/index.md) topic on [collections](../../../standard/collections/index.md). You'll also learn about many other collection types.
+    You can learn more about [.NET collections](../../../standard/collections/index.md) in the following topics:
+    - [Selecting a collection type](../../../standard/collections/selecting-a-collection-class.md)
+    - [Commonly used collection types](../../../standard/collections/commonly-used-collection-types.md)
+    - [hen to use generic collections](../../../standard/collections/when-to-use-generic-collections.md)

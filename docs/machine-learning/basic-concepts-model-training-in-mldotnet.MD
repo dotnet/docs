@@ -4,7 +4,7 @@ description: This article explains the basic concepts covering *model training* 
 ms.date: 11/06/2018
 ms.topic: overview
 ms.custom: mvc
-#Customer intent: As a developer, I want to learn high level ML.NET concepts so that I can understand how to leverage machine learning in my applications.
+#Customer intent: As a developer, I want to learn the basic ML.NET concepts related to model training so that I can understand how to leverage machine learning in my applications.
 ---
 # Overview of ML.NET
 

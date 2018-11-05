@@ -1,9 +1,12 @@
 ---
-title: Data transforms
+title: Data transforms in ML.NET
 description: Explore the different data transforms supported in ML.NET.
+ms.author: johalex 
+author:
+ms.prod: 
 ms.date: 10/16/2018
 ---
-# Data transforms
+# Data transforms in ML.NET
 
 The following tables contain information about all of the data transforms supported in ML.NET (select the data transform type to navigate to the corresponding table):
 

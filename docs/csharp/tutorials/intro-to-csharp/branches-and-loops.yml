@@ -210,7 +210,7 @@ items:
     already used. The `for` statement has three parts that control
     how it works. 
 
-    The first part is the **for initializer**: `for counter = 0;` declares
+    The first part is the **for initializer**: `int counter = 0;` declares
     that `counter` is the loop variable, and sets its initial value to `0`.
 
     The middle part is the **for condition**: `counter < 10` declares that this

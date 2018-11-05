@@ -1152,7 +1152,8 @@
 ### [Iris petals (clustering)](machine-learning/tutorials/iris-clustering.md)
 ## [How-to guides](machine-learning/how-to-guides/index.md)
 ### [Probabilistic programming with Infer.NET](machine-learning/how-to-guides/matchup-app-infer-net.md)
-## [Resources](machine-learning/resources/index.md)### [Machine learning glossary](machine-learning/resources/glossary.md)
+## [Resources](machine-learning/resources/index.md)
+### [Machine learning glossary](machine-learning/resources/glossary.md)
 ### [Machine learning tasks](machine-learning/resources/tasks.md)
 ### [Data transforms](machine-learning/resources/transforms.md)
 

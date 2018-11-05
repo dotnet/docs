@@ -6,11 +6,11 @@ ms.topic: overview
 ms.custom: mvc
 #Customer intent: As a developer, I want to learn the basic ML.NET concepts related to model training so that I can understand how to leverage machine learning in my applications.
 ---
-# Overview of ML.NET
+# Basic concepts for model training in ML.NET
 
 This article explains the basic concepts covering *model training* scenarios in ML.NET. Not all concepts are relevant to the more simple scenario of *prediction with existing model*.
 
-## Basic concepts for model training
+## Model training concepts
 
 This document covers the following concepts related to model training in ML.NET:
 

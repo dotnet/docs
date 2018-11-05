@@ -11,8 +11,6 @@ ms.custom: mvc
 > [!NOTE]
 > This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
 
-
-
 This sample tutorial illustrates using ML.NET to create a sentiment classifier via a .NET Core console application using C# in Visual Studio 2017.
 
 In this tutorial, you learn how to:
@@ -45,11 +43,14 @@ This tutorial follows a machine learning workflow that enables the process to mo
 The workflow phases are as follows:
 
 1. **Understand the problem**
-2. **Load the data**
-3. **Extract features (Transform your data)**
-4. **Train the model**
-5. **Evaluate the model**
-6. **Model consumption**
+2. **Prepare your data**
+   * **Load the data**
+   * **Extract features (Transform your data)**
+3. **Build and train** 
+   * **Train the model**
+   * **Evaluate the model**
+4. **Run**
+   * **Model consumption**
 
 ### Understand the problem
 
@@ -113,14 +114,13 @@ Add the following additional `using` statements to the top of the *Program.cs* f
 
 You need to create three global fields to hold the paths to the recently downloaded files, and a global variable for the `TextLoader`:
 
-
 * `_trainDataPath` has the path to the dataset used to train the model.
 * `_testDataPath` has the path to the dataset used to evaluate the model.
 * `_allDataPath` has the path to the combined training and test dataset used to retrain the model.
 * `_modelPath` has the path where the trained model is saved.
-* `_reader` is the <xsf:xref:Microsoft.ML.Runtime.Data.TextLoader> used to load and transform the datasets.
+* `_reader` is the <xref:Microsoft.ML.Runtime.Data.TextLoader> used to load and transform the datasets.
 
-Add the following code to the line right above the `Main` method to specify those paths and the LocalEnvironment / ML context:
+Add the following code to the line right above the `Main` method to specify those paths and the `_textLoader` variable:
 
 [!code-csharp[Declare global variables](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#2 "Declare global variables")]
 
@@ -142,6 +142,8 @@ Remove the existing class definition and add the following code, which has two c
 
 When building a model with ML.NET you start by creating an ML Context. This is comparable conceptually to using DbContext in Entity Framework. The environment provides a context for your ML job that can be used for exception tracking and logging.
 
+### Initialize variables in Main
+
 Create a variable called `mlContext` and initialize it with a new instance of <xref:Microsoft.ML.Context>.  Replace the `Console.WriteLine("Hello World!")` line with the following code in the `Main` method:
 
 [!code-csharp[CreateMLContext](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#3 "Create the ML Context")]
@@ -154,7 +156,6 @@ The `TextReader` class returns a fully initialized <xref:Microsoft.ML.Runtime.Da
 To initialize the `_textLoader` global variable in order to reuse it for the needed datasets, add the following code after the  `mlContext` initialization:
 
 [!code-csharp[initTextReader](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#4 "Initialize the TextReader")]
-
 
 Add the following as the next line of code in the `Main` method:
 
@@ -414,8 +415,7 @@ To do that, right-click on the project node in **Solution Explorer** and select 
 
 Your results should be similar to the following. As the pipeline processes, it displays messages. You may see warnings, or processing messages. These have been removed from the following results for clarity.
 
-```
-
+```console
 Model quality metrics evaluation
 --------------------------------
 Accuracy: 94.44%

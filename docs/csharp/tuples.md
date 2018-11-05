@@ -149,7 +149,7 @@ code written with C# 7.0, when tuple field name projections were not available.
 
 ## Equality and tuples
 
-Beginning with C# 7.3, tuple types support the `==` and `!=` operators. These operators work by comparing each member of the left argument to each member of the right argument in order. These comparisons short-circuit. The `==` operator stops evaluating members as soon as one pair is not equal. The `!=` operator stops evaluating members as soon as one pair is equal. The following code examples use `==`, but the comparison rules all apply to `!=`. The following code example shows an equality comparison for two pairs of integers:
+Beginning with C# 7.3, tuple types support the `==` and `!=` operators. These operators work by comparing each member of the left argument to each member of the right argument in order. These comparisons short-circuit. They will stop evaluating members as soon as one pair is not equal. The following code examples use `==`, but the comparison rules all apply to `!=`. The following code example shows an equality comparison for two pairs of integers:
 
 [!code-csharp[TupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#Equality "Testing tuples for equality")]
 

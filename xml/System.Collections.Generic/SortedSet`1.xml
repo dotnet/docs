@@ -99,7 +99,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor is an O(1) operation.  
+ This constructor is an `O(1)` operation.  
   
  ]]></format>
         </remarks>
@@ -222,7 +222,7 @@
 ## Remarks  
  Duplicate elements in the enumerable collection are not copied into the new instance of the <xref:System.Collections.Generic.SortedSet%601> class, and no exceptions are thrown.  
   
- This constructor is an O(`n` log `n`) operation, where `n` is the number of elements in the `collection` parameter.  
+ This constructor is an `O(n log n)` operation, where `n` is the number of elements in the `collection` parameter.  
   
  ]]></format>
         </remarks>
@@ -410,7 +410,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ This method is an `O(n)` operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
   
  ]]></format>
         </remarks>
@@ -457,7 +457,7 @@
 ## Remarks  
  The returned comparer can be either the default comparer of the type for a <xref:System.Collections.Generic.SortedSet%601>, or the comparer used for its constructor.  
   
- Retrieving the value of this property is an O(1) operation.  
+ Retrieving the value of this property is an `O(1)` operation.  
   
  ]]></format>
         </remarks>
@@ -505,7 +505,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is an O(ln n) operation.  
+ This method is an `O(log n)` operation.  
   
  ]]></format>
         </remarks>
@@ -523,7 +523,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ This method is an `O(n)` operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
   
  ]]></format>
         </remarks>
@@ -617,7 +617,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ This method is an `O(n)` operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
   
  ]]></format>
         </remarks>
@@ -669,7 +669,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is an O(`n`) operation, where `n` is `count`.  
+ This method is an `O(n)` operation, where `n` is `count`.  
   
  ]]></format>
         </remarks>
@@ -723,7 +723,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Retrieving the value of this property is an O(1) operation.  
+ Retrieving the value of this property is an `O(1)` operation.  
   
  ]]></format>
         </remarks>
@@ -774,7 +774,7 @@
 ## Remarks  
  The <xref:System.Collections.IEqualityComparer> object checks for equality at only one level; however, you can chain together comparers at additional levels to perform deeper equality testing.  
   
- Calling this method is an O(1) operation.  
+ Calling this method is an `O(1)` operation.  
   
  ]]></format>
         </remarks>
@@ -874,7 +874,7 @@
 ## Remarks  
  This method removes any element in the current <xref:System.Collections.Generic.SortedSet%601> that is also in `other`. Duplicate values in `other` are ignored.  
   
- This method is an O(`n`) operation, where `n` is the number of elements in the `other` parameter.  
+ This method is an `O(n)` operation, where `n` is the number of elements in the `other` parameter.  
   
    
   
@@ -927,7 +927,7 @@
 ## Remarks  
  An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.Generic.SortedSet%601.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.SortedSet%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> throws an <xref:System.InvalidOperationException>.  
   
- This method is an O(log n) operation.  
+ This method is an `O(log n)` operation.  
   
  ]]></format>
         </remarks>
@@ -973,7 +973,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ Calling this method is an `O(n)` operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
   
  ]]></format>
         </remarks>
@@ -1081,7 +1081,7 @@
 ## Remarks  
  This method ignores any duplicate elements in `other`.  
   
- If the collection represented by the `other` parameter is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A> and `m` is the number of elements in `other`.  
+ If the collection represented by the `other` parameter is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an `O(n)` operation. Otherwise, this method is an `O(n + m)` operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A> and `m` is the number of elements in `other`.  
   
  ]]></format>
         </remarks>
@@ -1140,7 +1140,7 @@
   
  This method always returns `false` if <xref:System.Collections.Generic.SortedSet%601.Count%2A> is greater than or equal to the number of elements in `other`.  
   
- If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, then this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A> and `m` is the number of elements in `other`.  
+ If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, then this method is an `O(n)` operation. Otherwise, this method is an `O(n + m)` operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A> and `m` is the number of elements in `other`.  
   
  ]]></format>
         </remarks>
@@ -1199,7 +1199,7 @@
   
  This method always returns `false` if <xref:System.Collections.Generic.SortedSet%601.Count%2A> is less than or equal to the number of elements in `other`.  
   
- If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an `O(n)` operation. Otherwise, this method is an `O(n + m)` operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
   
  ]]></format>
         </remarks>
@@ -1258,7 +1258,7 @@
   
  This method always returns `false` if <xref:System.Collections.Generic.SortedSet%601.Count%2A> is greater than the number of elements in `other`.  
   
- If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A> and `m` is the number of elements in `other`.  
+ If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an `O(n)` operation. Otherwise, this method is an `O(n + m)` operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A> and `m` is the number of elements in `other`.  
   
  ]]></format>
         </remarks>
@@ -1312,7 +1312,7 @@
   
  This method always returns `false` if <xref:System.Collections.Generic.SortedSet%601.Count%2A> is less than the number of elements in `other`.  
   
- If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an `O(n)` operation. Otherwise, this method is an `O(n + m)` operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
   
  ]]></format>
         </remarks>
@@ -1424,7 +1424,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ Calling this method is an `O(n)` operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
   
  ]]></format>
         </remarks>
@@ -1475,7 +1475,7 @@
 ## Remarks  
  Any duplicate elements in `other` are ignored.  
   
- This method is an O(`n`) operation, where `n` is the number of elements in `other`.  
+ This method is an `O(n)` operation, where `n` is the number of elements in `other`.  
   
  ]]></format>
         </remarks>
@@ -1534,7 +1534,7 @@
   
  `item` can be `null` for reference types.  
   
- This method is an O(log n) operation.  
+ This method is an `O(log n)` operation.  
   
  ]]></format>
         </remarks>
@@ -1580,7 +1580,7 @@
 ## Remarks  
  `match` must not modify the <xref:System.Collections.Generic.SortedSet%601>. Doing so can cause unexpected results.  
   
- Calling this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ Calling this method is an `O(n)` operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
   
    
   
@@ -1689,7 +1689,7 @@
 ## Remarks  
  This method ignores the order of elements and any duplicate elements in `other`.  
   
- If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(log`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an `O(log n)` operation. Otherwise, this method is an `O(n + m)` operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
   
  ]]></format>
         </remarks>
@@ -1739,7 +1739,7 @@
 ## Remarks  
  Any duplicate elements in `other` are ignored.  
   
- If the `other` parameter is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(n log `m`) operation. Otherwise, this method is an O(`n` log `m`) + O(`n` log `n`) operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ If the `other` parameter is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an `O(n log m)` operation. Otherwise, this method is an `O(n log m) + O(n log n)` operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
   
  ]]></format>
         </remarks>
@@ -1788,7 +1788,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
   
- If <xref:System.Collections.Generic.List%601.Count%2A> is less than <xref:System.Collections.Generic.List%601.Capacity%2A>, this method is an O(1) operation. If the capacity must be increased to accommodate the new element, this method becomes an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ If <xref:System.Collections.Generic.List%601.Count%2A> is less than <xref:System.Collections.Generic.List%601.Capacity%2A>, this method is an `O(1)` operation. If the capacity must be increased to accommodate the new element, this method becomes an `O(n)` operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
  ]]></format>
         </remarks>
@@ -1839,7 +1839,7 @@
   
  A collection that is read-only is simply a collection with a wrapper that prevents modifying the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
   
- Getting the value of this property is an O(1) operation.  
+ Getting the value of this property is an `O(1)` operation.  
   
  ]]></format>
         </remarks>
@@ -1884,7 +1884,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
 
- This method is an O(log n) operation.  
+ This method is an `O(log n)` operation.  
   
  ]]></format>
         </remarks>
@@ -2024,7 +2024,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
   
- This method is an O(1) operation.  
+ This method is an `O(1)` operation.  
   
  ]]></format>
         </remarks>
@@ -2069,7 +2069,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
   
- This method is an O(log n) operation.  
+ This method is an `O(log n)` operation.  
   
  ]]></format>
         </remarks>

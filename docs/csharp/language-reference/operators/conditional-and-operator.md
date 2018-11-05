@@ -1,6 +1,6 @@
 ---
 title: "&amp;&amp; Operator (C# Reference)"
-ms.date: 07/20/2015
+ms.date: 11/06/2018
 f1_keywords: 
   - "&&_CSharpKeyword"
 helpviewer_keywords: 
@@ -9,36 +9,26 @@ helpviewer_keywords:
 ms.assetid: 2e4f0a1c-92a3-40f8-8e3b-17b607f20c31
 ---
 # &amp;&amp; Operator (C# Reference)
-The conditional-AND operator (`&&`) performs a logical-AND of its `bool` operands, but only evaluates its second operand if necessary.  
-  
-## Remarks  
- The operation  
-  
-```csharp  
-x && y  
-```  
-  
- corresponds to the operation  
-  
-```csharp  
-x & y  
-```  
-  
- except that if `x` is `false`, `y` is not evaluated, because the result of the AND operation is `false` no matter what the value of `y`  is. This is known as "short-circuit" evaluation.  
-  
- The conditional-AND operator cannot be overloaded, but overloads of the regular logical operators and operators [true](../../../csharp/language-reference/keywords/true.md) and [false](../../../csharp/language-reference/keywords/false.md) are, with certain restrictions, also considered overloads of the conditional logical operators.  
-  
-## Example  
- In the following example, the conditional expression in the second `if` statement evaluates only the first operand because the operand returns `false`.  
-  
- [!code-csharp[csRefOperators#48](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-and-operator_1.cs)]  
-  
-## C# Language Specification  
 
-For more information, see [Conditional logical operators](~/_csharplang/spec/expressions.md#conditional-logical-operators) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
-  
-## See Also
+The conditional logical AND operator `&&`, also known as the "short-circuiting" logical AND operator, computes the logical AND of its [bool](../keywords/bool.md) operands. The result of `x && y` is `true` if both `x` and `y` evaluate to `true`. Otherwise, the result is `false`. If the first operand evaluates to `false`, the second operand is not evaluated and the result of operation is `false`. The following example demonstrates that behavior:
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [C# Operators](../../../csharp/language-reference/operators/index.md)
+[!code-csharp-interactive[conditional logical AND](~/samples/snippets/csharp/language-reference/operators/ConditionalLogicalOperatorsExamples.cs#And)]
+
+The [logical AND operator](and-operator.md) `&` also computes the logical AND of its `bool` operands, but always evaluates both operands.
+
+## Operator overloadability
+
+A user-defined type cannot overload the conditional logical AND operator. However, if a user-defined type overloads the [logical AND](and-operator.md), [true](../keywords/true-operator.md), and [false](../keywords/false-operator.md) operators in a certain way, the `&&` operation can be evaluated for the operands of that type. For more information, see the [User-defined conditional logical operators](~/_csharplang/spec/expressions.md#user-defined-conditional-logical-operators) section of the [C# language specification](../language-specification/index.md).
+
+## C# language specification
+
+For more information, see the [Conditional logical operators](~/_csharplang/spec/expressions.md#conditional-logical-operators) section of the [C# language specification](../language-specification/index.md).
+
+## See also
+
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Operators](index.md)
+- [|| operator](conditional-or-operator.md)
+- [! operator](logical-negation-operator.md)
+- [& operator](and-operator.md)

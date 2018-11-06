@@ -93,7 +93,7 @@ As a developer, you are responsible for handling the stopping action or your ser
 
 ## Implementing IHostedService with a custom hosted service class deriving from the BackgroundService base class
 
-You could go ahead and create you custom hosted service class from scratch and implement the `IHostedService`, as you need to do when using .NET Core 2.0. 
+You could go ahead and create your custom hosted service class from scratch and implement the `IHostedService`, as you need to do when using .NET Core 2.0. 
 
 However, since most background tasks will have similar needs in regard to the cancellation tokens management and other typical operations, .NET Core 2.1 will be providing a very convenient abstract base class you can derive from, named BackgroundService.
 

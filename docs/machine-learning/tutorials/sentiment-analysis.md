@@ -213,7 +213,7 @@ Add the following code to the `Train` method:
 
 ## Train the model
 
-You train the model, <xref:Microsoft.ML.Runtime.Data.TransformerChain>, based on the dataset that has been loaded and transformed. Once the estimator has been defined, you train your model using the <xref:Microsoft.ML.Runtime.Data.EstimatorChain%601.Fit> while providing the already loaded training data. This returns a model to use for predictions. `pipeline.Fit()` trains the pipeline and returns a `Transformer` based on the `DataView` passed in. The experiment is not executed until this happens.
+You train the model, <xref:Microsoft.ML.Runtime.Data.TransformerChain%601>, based on the dataset that has been loaded and transformed. Once the estimator has been defined, you train your model using the <xref:Microsoft.ML.Runtime.Data.EstimatorChain%601.Fit> while providing the already loaded training data. This returns a model to use for predictions. `pipeline.Fit()` trains the pipeline and returns a `Transformer` based on the `DataView` passed in. The experiment is not executed until this happens.
 
 Add the following code to the `Train` method:
 
@@ -221,7 +221,7 @@ Add the following code to the `Train` method:
 
 ### Save and Return the model trained to use for evaluation
 
-At this point, you have a model of type <xref:Microsoft.ML.Runtime.Data.TransformerChain> that can be integrated into any of your existing or new .NET applications. Return the model at the end of the `Train` method.
+At this point, you have a model of type <xref:Microsoft.ML.Runtime.Data.TransformerChain%601> that can be integrated into any of your existing or new .NET applications. Return the model at the end of the `Train` method.
 
 [!code-csharp[ReturnModel](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#11 "Return the model")]
 

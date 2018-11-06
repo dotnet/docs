@@ -59,7 +59,7 @@ Class PopulateCollection
                           Let splitScoreLine = scoreLine.Split(New Char() {","})
                           Where Convert.ToInt32(splitName(2)) = Convert.ToInt32(splitScoreLine(0))
                           Select New Student() With {
-                               .FirstName = splitName(0), .LastName = splitName(1), .ID = splitName(2),
+                               .FirstName = splitName(1), .LastName = splitName(0), .ID = splitName(2),
                                .ExamScores = (From scoreAsText In splitScoreLine Skip 1
                                              Select Convert.ToInt32(scoreAsText)).ToList()}
 

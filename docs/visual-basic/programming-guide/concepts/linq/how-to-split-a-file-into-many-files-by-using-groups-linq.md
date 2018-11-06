@@ -62,7 +62,7 @@ Class SplitWithGroups
         ' Note that nested foreach loops are required to access  
         ' individual items with each group.  
         For Each gGroup In groupQuery  
-            Dim fileName As String = "..'..'..'testFile_" & gGroup.groupKey & ".txt"  
+            Dim fileName As String = "../../../testFile_" & gGroup.groupKey & ".txt"  
             Dim sw As New System.IO.StreamWriter(fileName)  
             Console.WriteLine(gGroup.groupKey)  
             For Each item In gGroup.groupName  

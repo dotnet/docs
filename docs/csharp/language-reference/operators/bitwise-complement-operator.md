@@ -12,7 +12,7 @@ ms.assetid: 11bc078a-50e2-4d7e-9896-67ef669dc602
 ---
 # ~ Operator (C# Reference)
 
-The bitwise complement `~` operator is a unary operator that produces a bitwise complement of its operand, that is, reverses each bit in the operand's binary representation. All integer types support the `~` operator.
+The bitwise complement operator `~` is a unary operator that produces a bitwise complement of its operand, that is, reverses each bit in the operand's binary representation. All integer types support the `~` operator.
 
 > [!NOTE]
 > The `~` symbol is also used to declare finalizers. For more information, see [Finalizers](../../programming-guide/classes-and-structs/destructors.md).
@@ -22,7 +22,7 @@ The following example demonstrates the usage of the `~` operator:
 [!code-csharp-interactive[bitwise NOT](~/samples/snippets/csharp/language-reference/operators/BitwiseComplementExamples.cs#Example)]
 
 > [!NOTE]
-> The preceding example uses the binary literals that are [introduced in C# 7.0](../../whats-new/csharp-7.md#numeric-literal-syntax-improvements) and [enhanced  in C# 7.2](../../whats-new/csharp-7-2.md#leading-underscores-in-numeric-literals).
+> The preceding example uses the binary literals [introduced in C# 7.0](../../whats-new/csharp-7.md#numeric-literal-syntax-improvements) and [enhanced  in C# 7.2](../../whats-new/csharp-7-2.md#leading-underscores-in-numeric-literals).
 
 ## Operator overloadability
 

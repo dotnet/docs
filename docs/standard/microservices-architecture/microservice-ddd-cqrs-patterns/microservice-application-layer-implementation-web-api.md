@@ -281,7 +281,7 @@ Basically, the command class contains all the data you need for performing a bus
 
 As an additional characteristic, commands are immutable, because the expected usage is that they are processed directly by the domain model. They do not need to change during their projected lifetime. In a C\# class, immutability can be achieved by not having any setters or other methods that change internal state.
 
-Bear in mind that if you intend or expect commands will be going through a serializing/deserializing process, the properties have to be private set, otherwise the deserializer will not be able to reconstruct the object at destination with the required values.
+Bear in mind that if you intend or expect commands will be going through a serializing/deserializing process, the properties must have private setter, and the `[DataMemeber]` (or `[JsonProperty]`) attribute, otherwise the deserializer will not be able to reconstruct the object at destination with the required values.
 
 For example, the command class for creating an order is probably similar in terms of data to the order you want to create, but you probably do not need the same attributes. For instance, CreateOrderCommand does not have an order ID, because the order has not been created yet.
 
@@ -655,7 +655,7 @@ public class MediatorModule : Autofac.Module
 
 This is where “the magic happens” with MediatR.
 
-Because each command handler implements the generic **IAsyncRequestHandler\<T\>** interface, when registering the assemblies, the code registers with RegisteredAssemblyTypes all the types maked as IAsyncRequestHandler while relating the CommandHandlers with their Commands, thanks to the relationship stated at the CommandHandler class, as in the following example:
+Because each command handler implements the generic `IAsyncRequestHandler<T>` interface, when registering the assemblies, the code registers with `RegisteredAssemblyTypes` all the types marked as `IAsyncRequestHandler` while relating the `CommandHandlers` with their `Commands`, thanks to the relationship stated at the `CommandHandler` class, as in the following example:
 
 ```csharp
 public class CreateOrderCommandHandler
@@ -663,7 +663,7 @@ public class CreateOrderCommandHandler
 {
 ```
 
-That is the code that correlates commands with command handlers. The handler is just a simple class, but it inherits from RequestHandler\<T\>, where T is the command type, and MediatR makes sure it is invoked with the correct payload (the command).
+That is the code that correlates commands with command handlers. The handler is just a simple class, but it inherits from `RequestHandler<T>`, where T is the command type, and MediatR makes sure it is invoked with the correct payload (the command).
 
 ## Apply cross-cutting concerns when processing commands with the Behaviors in MediatR
 

@@ -21,7 +21,7 @@ Additionally, the domain model layer includes the repository contracts (interfac
 
 You can also see a [SeedWork](https://martinfowler.com/bliki/Seedwork.html) folder that contains custom base classes that you can use as a base for your domain entities and value objects, so you do not have redundant code in each domain’s object class.
 
-## Structure aggregates in a custom .NET Standard Library
+## Structure aggregates in a custom .NET Standard library
 
 An aggregate refers to a cluster of domain objects grouped together to match transactional consistency. Those objects could be instances of entities (one of which is the aggregate root or root entity) plus any additional value objects.
 

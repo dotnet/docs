@@ -124,7 +124,8 @@ public class Address : ValueObject
     }
 }
 ```
-You can see how this value object implementation of Address has no identity and therefore, no ID filed, neither at the Address class not even at the ValueObject class.
+
+You can see how this value object implementation of Address has no identity and therefore, no ID field, neither at the Address class not even at the ValueObject class.
 
 Having no ID field in a class to be used by Entity Framework was not possible until EF Core 2.0 which greatly helps to implement better value objects with no ID. That is precisely the explanation of the next section. 
 

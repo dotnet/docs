@@ -76,7 +76,7 @@ public class Order : Entity
 
 Note that the `OrderItems` property can only be accessed as read-only using `IReadOnlyCollection<OrderItem>`. This type is read-only so it is protected against regular external updates. 
 
-EF Core provides a way to map the domain model to the physical database without "contaminating" the domain model. It is pure .NET POCO code, because the mapping action is implemented in the persistence layer. In that mapping action, you need to configure the fields-to-database mapping. In the following example of the `OnModelCreating` method from `OrderingContext` and the `OrderEntityTypeConfiguration` class, the call to `SetPropertyAccessMode` tells EF Core to access the OrderItems property through its field.
+EF Core provides a way to map the domain model to the physical database without "contaminating" the domain model. It is pure .NET POCO code, because the mapping action is implemented in the persistence layer. In that mapping action, you need to configure the fields-to-database mapping. In the following example of the `OnModelCreating` method from `OrderingContext` and the `OrderEntityTypeConfiguration` class, the call to `SetPropertyAccessMode` tells EF Core to access the `OrderItems` property through its field.
 
 ```csharp
 // At OrderingContext.cs from eShopOnContainers
@@ -106,7 +106,7 @@ class OrderEntityTypeConfiguration : IEntityTypeConfiguration<Order>
 }
 ```
 
-When you use fields instead of properties, the OrderItem entity is persisted just as if it had a List\<OrderItem\> property. However, it exposes a single accessor, the `AddOrderItem` method, for adding new items to the order. As a result, behavior and data are tied together and will be consistent throughout any application code that uses the domain model.
+When you use fields instead of properties, the `OrderItem` entity is persisted just as if it had a `List<OrderItem>` property. However, it exposes a single accessor, the `AddOrderItem` method, for adding new items to the order. As a result, behavior and data are tied together and will be consistent throughout any application code that uses the domain model.
 
 ## Implement custom repositories with Entity Framework Core
 
@@ -152,7 +152,7 @@ namespace Microsoft.eShopOnContainers.Services.Ordering.Infrastructure.Repositor
 
 Note that the IBuyerRepository interface comes from the domain model layer as a contract. However, the repository implementation is done at the persistence and infrastructure layer.
 
-The EF DbContext comes through the constructor through Dependency Injection. It is shared between multiple repositories within the same HTTP request scope, thanks to its default lifetime (ServiceLifetime.Scoped) in the IoC container (which can also be explicitly set with services.AddDbContext\<\>).
+The EF DbContext comes through the constructor through Dependency Injection. It is shared between multiple repositories within the same HTTP request scope, thanks to its default lifetime (`ServiceLifetime.Scoped`) in the IoC container (which can also be explicitly set with `services.AddDbContext<>`).
 
 ### Methods to implement in a repository (updates or transactions versus queries)
 
@@ -184,9 +184,9 @@ If you were using DbContext directly, you would have to mock it or to run unit t
 
 ## EF DbContext and IUnitOfWork instance lifetime in your IoC container
 
-The DbContext object (exposed as an IUnitOfWork object) should be shared among multiple repositories within the same HTTP request scope. For example, this is true when the operation being executed must deal with multiple aggregates, or simply because you are using multiple repository instances. It is also important to mention that the IUnitOfWork interface is part of your domain layer, not an EF Core type.
+The `DbContext` object (exposed as an `IUnitOfWork` object) should be shared among multiple repositories within the same HTTP request scope. For example, this is true when the operation being executed must deal with multiple aggregates, or simply because you are using multiple repository instances. It is also important to mention that the `IUnitOfWork` interface is part of your domain layer, not an EF Core type.
 
-In order to do that, the instance of the DbContext object has to have its service lifetime set to ServiceLifetime.Scoped. This is the default lifetime when registering a DbContext with services.AddDbContext in your IoC container from the ConfigureServices method of the Startup.cs file in your ASP.NET Core Web API project. The following code illustrates this.
+In order to do that, the instance of the `DbContext` object has to have its service lifetime set to ServiceLifetime.Scoped. This is the default lifetime when registering a `DbContext` with `services.AddDbContext` in your IoC container from the ConfigureServices method of the `Startup.cs` file in your ASP.NET Core Web API project. The following code illustrates this.
 
 ```csharp
 public IServiceProvider ConfigureServices(IServiceCollection services)
@@ -241,7 +241,7 @@ Note that using the singleton lifetime for the repository could cause you seriou
 
 Table mapping identifies the table data to be queried from and saved to the database. Previously you saw how domain entities (for example, a product or order domain) can be used to generate a related database schema. EF is strongly designed around the concept of *conventions*. Conventions address questions like “What will the name of a table be?” or “What property is the primary key?” Conventions are typically based on conventional names—for example, it is typical for the primary key to be a property that ends with Id.
 
-By convention, each entity will be set up to map to a table with the same name as the DbSet\<TEntity\> property that exposes the entity on the derived context. If no DbSet\<TEntity\> value is provided for the given entity, the class name is used.
+By convention, each entity will be set up to map to a table with the same name as the `DbSet<TEntity>` property that exposes the entity on the derived context. If no `DbSet<TEntity>` value is provided for the given entity, the class name is used.
 
 ### Data Annotations versus Fluent API
 
@@ -288,7 +288,7 @@ class OrderEntityTypeConfiguration : IEntityTypeConfiguration<Order>
             orderConfiguration.Property<string>("Description").IsRequired(false);
 
             var navigation = orderConfiguration.Metadata.FindNavigation(nameof(Order.OrderItems));
-            
+
             // DDD Patterns comment:
             //Set as field (New since EF 1.1) to access the OrderItem collection property through its field
             navigation.SetPropertyAccessMode(PropertyAccessMode.Field);
@@ -323,11 +323,11 @@ The Hi/Lo algorithm is useful when you need unique keys before committing change
 
 The Hi/Lo algorithm describes a mechanism for getting a batch of unique IDs from a related database sequence. These IDs are safe to use because the database guarantees the uniqueness, so there will be no collisions between users. This algorithm is interesting for these reasons:
 
--   It does not break the Unit of Work pattern.
+- It does not break the Unit of Work pattern.
 
--   It gets sequence IDs in batches, to minimize round trips to the database.
+- It gets sequence IDs in batches, to minimize round trips to the database.
 
--   It generates a human readable identifier, unlike techniques that use GUIDs.
+- It generates a human readable identifier, unlike techniques that use GUIDs.
 
 EF Core supports [HiLo](https://stackoverflow.com/questions/282099/whats-the-hi-lo-algorithm) with the ForSqlServerUseSequenceHiLo method, as shown in the preceding example.
 

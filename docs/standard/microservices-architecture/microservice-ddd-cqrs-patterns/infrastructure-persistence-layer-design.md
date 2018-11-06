@@ -98,23 +98,23 @@ For instance, Jimmy Bogard, when providing direct feedback for this guide, said 
 
 > This’ll probably be my biggest feedback. I’m really not a fan of repositories, mainly because they hide the important details of the underlying persistence mechanism. It’s why I go for MediatR for commands, too. I can use the full power of the persistence layer, and push all that domain behavior into my aggregate roots. I don’t usually want to mock my repositories – I still need to have that integration test with the real thing. Going CQRS meant that we didn’t really have a need for repositories any more.
 
-We find repositories useful, but we acknowledge that they are not critical for your DDD design, in the way that the Aggregate pattern and rich domain model are. Therefore, use the Repository pattern or not, as you see fit. Anyway, you’ll be using the repository pattern whenever you use EF Core although, in this case, the repository covers the whole microservice or bounded context.
+Repositories might be useful, but they are not critical for your DDD design, in the way that the Aggregate pattern and rich domain model are. Therefore, use the Repository pattern or not, as you see fit. Anyway, you’ll be using the repository pattern whenever you use EF Core although, in this case, the repository covers the whole microservice or bounded context.
 
 ## Additional resources
 
 ### Repository pattern
 
--   **The Repository pattern** \
-    [*https://deviq.com/repository-pattern/*](https://deviq.com/repository-pattern/)
+- **The Repository pattern** \
+  [*https://deviq.com/repository-pattern/*](https://deviq.com/repository-pattern/)
 
--   **Edward Hieatt and Rob Mee. Repository pattern.** \
-    [*https://martinfowler.com/eaaCatalog/repository.html*](https://martinfowler.com/eaaCatalog/repository.html)
+- **Edward Hieatt and Rob Mee. Repository pattern.** \
+  [*https://martinfowler.com/eaaCatalog/repository.html*](https://martinfowler.com/eaaCatalog/repository.html)
 
--   **The Repository pattern** \
-    [*https://docs.microsoft.com/previous-versions/msp-n-p/ff649690(v=pandp.10)*](https://docs.microsoft.com/previous-versions/msp-n-p/ff649690(v=pandp.10))
+- **The Repository pattern** \
+  [*https://docs.microsoft.com/previous-versions/msp-n-p/ff649690(v=pandp.10)*](https://docs.microsoft.com/previous-versions/msp-n-p/ff649690(v=pandp.10))
 
--   **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of the Repository pattern) \
-    [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
+- **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of the Repository pattern) \
+  [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 
 ### Unit of Work pattern
 

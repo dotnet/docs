@@ -246,7 +246,7 @@ This does the same work as the `while` loop and the `do` loop you've
 already used. The `for` statement has three parts that control
 how it works.
 
-The first part is the **for initializer**: `for index = 0;` declares
+The first part is the **for initializer**: `int index = 0;` declares
 that `index` is the loop variable, and sets its initial value to `0`.
 
 The middle part is the **for condition**: `index < 10` declares that this

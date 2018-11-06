@@ -196,7 +196,7 @@ Note that you can paths of more than `MAX_PATH` characters to [GetFullPathName](
 A peculiarity of the Windows file system that non-Windows users and developers find confusing is that path and directory names are case-insensitive. That is, directory and file names reflect the casing of the strings used when they are created. For example, the method call
 
 ```csharp
-Directory.Create(TeStDiReCtOrY);
+Directory.Create("TeStDiReCtOrY");
 ```
 creates a directory named TeStDiReCtOrY. If you rename a directory or file to change its case, the directory or file name reflects the case of the string used when you rename it. For example, the following code renames a file named test.txt to Test.txt:
 

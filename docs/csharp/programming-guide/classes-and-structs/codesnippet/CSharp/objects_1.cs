@@ -7,7 +7,7 @@
                 Name = name;
                 Age = age;
             }
-            //Other properties, methods, events...
+            // Other properties, methods, events...
         }
 
         class Program
@@ -17,10 +17,10 @@
                 Person person1 = new Person("Leopold", 6);
                 Console.WriteLine("person1 Name = {0} Age = {1}", person1.Name, person1.Age);
 
-                // Declare  new person, assign person1 to it.
+                // Declare new person, assign person1 to it.
                 Person person2 = person1;
 
-                //Change the name of person2, and person1 also changes.
+                // Change the name of person2, and person1 also changes.
                 person2.Name = "Molly";
                 person2.Age = 16;
 

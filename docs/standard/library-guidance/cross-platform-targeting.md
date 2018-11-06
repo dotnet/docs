@@ -1,5 +1,5 @@
 ---
-title: Cross-platform targeting
+title: Cross-platform targeting for .NET libraries
 description: Best practice recommendations for creating cross-platform .NET libraries.
 author: jamesnk
 ms.author: mairaw

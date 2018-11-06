@@ -99,14 +99,12 @@ The following example defines the infinite `for` loop:
 
 ## C# language specification
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+For more information, see [The for statement](~/_csharplang/spec/statements.md#the-for-statement) section of the [C# language specification](../language-specification/index.md).
 
 ## See also
 
-- [The for statement (C# language specification)](~/_csharplang/spec/statements.md#the-for-statement)
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [foreach, in](foreach-in.md)
-- [for Statement (C++)](/cpp/cpp/for-statement-cpp)
 - [Iteration Statements](iteration-statements.md)
+- [foreach, in](foreach-in.md)

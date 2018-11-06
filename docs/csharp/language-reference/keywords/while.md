@@ -26,13 +26,12 @@ The following example shows the usage of the `while` statement. Select **Run** t
 
 ## C# language specification
 
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+For more information, see [The while statement](~/_csharplang/spec/statements.md#the-while-statement) section of the [C# language specification](../language-specification/index.md).
 
 ## See also
 
 - [C# Reference](../index.md)  
 - [C# Programming Guide](../../programming-guide/index.md)  
 - [C# Keywords](index.md)  
-- [while Statement (C++)](/cpp/cpp/while-statement-cpp)  
 - [Iteration Statements](iteration-statements.md)  
 - [do statement](do.md)  

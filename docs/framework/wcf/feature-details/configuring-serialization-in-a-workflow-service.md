@@ -10,7 +10,7 @@ Workflow services are Windows Communication Foundation (WCF) services and so hav
   
  The serializer can also be set in code as shown in the following example,  
   
-```  
+```csharp  
 Receive approveExpense = new Receive  
             {  
                 OperationName = "ApproveExpense",  

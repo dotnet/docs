@@ -37,14 +37,13 @@ Beginning with C# 7.3, if the enumerator's `Current` property returns a [referen
 
 ## C# language specification
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+For more information, see [The foreach statement](~/_csharplang/spec/statements.md#the-foreach-statement) section of the [C# language specification](../language-specification/index.md).
 
 ## See also
 
-- [The foreach statement (C# language specification)](~/_csharplang/spec/statements.md#the-foreach-statement)
-- [Using foreach with Arrays](../../programming-guide/arrays/using-foreach-with-arrays.md)
-- [for](for.md)
-- [Iteration Statements](iteration-statements.md)
-- [C# Keywords](index.md)
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
+- [Iteration Statements](iteration-statements.md)
+- [Using foreach with arrays](../../programming-guide/arrays/using-foreach-with-arrays.md)
+- [for statement](for.md)

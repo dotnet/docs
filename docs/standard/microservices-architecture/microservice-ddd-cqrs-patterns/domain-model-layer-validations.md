@@ -81,26 +81,26 @@ Using field validation with data annotations, for example, you do not duplicate 
 
 ## Additional resources
 
--   **Rachel Appel. Introduction to model validation in ASP.NET Core MVC** \
-    [*https://docs.microsoft.com/aspnet/core/mvc/models/validation*](https://docs.microsoft.com/aspnet/core/mvc/models/validation)
+- **Rachel Appel. Introduction to model validation in ASP.NET Core MVC** \
+  [*https://docs.microsoft.com/aspnet/core/mvc/models/validation*](https://docs.microsoft.com/aspnet/core/mvc/models/validation)
 
--   **Rick Anderson. Adding validation** \
-    [*https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation*](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation)
+- **Rick Anderson. Adding validation** \
+  [*https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation*](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation)
 
--   **Martin Fowler. Replacing Throwing Exceptions with Notification in Validations** \
-    [*https://martinfowler.com/articles/replaceThrowWithNotification.html*](https://martinfowler.com/articles/replaceThrowWithNotification.html)
+- **Martin Fowler. Replacing Throwing Exceptions with Notification in Validations** \
+  [*https://martinfowler.com/articles/replaceThrowWithNotification.html*](https://martinfowler.com/articles/replaceThrowWithNotification.html)
 
--   **Specification and Notification Patterns** \
-    [*https://www.codeproject.com/Tips/790758/Specification-and-Notification-Patterns*](https://www.codeproject.com/Tips/790758/Specification-and-Notification-Patterns)
+- **Specification and Notification Patterns** \
+  [*https://www.codeproject.com/Tips/790758/Specification-and-Notification-Patterns*](https://www.codeproject.com/Tips/790758/Specification-and-Notification-Patterns)
 
--   **Lev Gorodinski. Validation in Domain-Driven Design (DDD)** \
-    [*http://gorodinski.com/blog/2012/05/19/validation-in-domain-driven-design-ddd/*](http://gorodinski.com/blog/2012/05/19/validation-in-domain-driven-design-ddd/)
+- **Lev Gorodinski. Validation in Domain-Driven Design (DDD)** \
+  [*http://gorodinski.com/blog/2012/05/19/validation-in-domain-driven-design-ddd/*](http://gorodinski.com/blog/2012/05/19/validation-in-domain-driven-design-ddd/)
 
--   **Colin Jack. Domain Model Validation** \
-    [*http://colinjack.blogspot.com/2008/03/domain-model-validation.html*](http://colinjack.blogspot.com/2008/03/domain-model-validation.html)
+- **Colin Jack. Domain Model Validation** \
+  [*http://colinjack.blogspot.com/2008/03/domain-model-validation.html*](http://colinjack.blogspot.com/2008/03/domain-model-validation.html)
 
--   **Jimmy Bogard. Validation in a DDD world** \
-    [*https://lostechies.com/jimmybogard/2009/02/15/validation-in-a-ddd-world/*](https://lostechies.com/jimmybogard/2009/02/15/validation-in-a-ddd-world/)
+- **Jimmy Bogard. Validation in a DDD world** \
+  [*https://lostechies.com/jimmybogard/2009/02/15/validation-in-a-ddd-world/*](https://lostechies.com/jimmybogard/2009/02/15/validation-in-a-ddd-world/)
 
 
 >[!div class="step-by-step"]

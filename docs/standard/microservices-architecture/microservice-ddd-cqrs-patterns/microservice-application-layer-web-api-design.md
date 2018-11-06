@@ -11,15 +11,15 @@ ms.date: 10/08/2018
 
 SOLID principles are critical techniques to be used in any modern and mission-critical application, such as developing a microservice with DDD patterns. SOLID is an acronym that groups five fundamental principles:
 
--   Single Responsibility principle
+- Single Responsibility principle
 
--   Open/closed principle
+- Open/closed principle
 
--   Liskov substitution principle
+- Liskov substitution principle
 
--   Interface Segregation principle
+- Interface Segregation principle
 
--   Dependency Inversion principle
+- Dependency Inversion principle
 
 SOLID is more about how you design your application or microservice internal layers and about decoupling dependencies between them. It is not related to the domain, but to the application’s technical design. The final principle, the Dependency Inversion principle, allows you to decouple the infrastructure layer from the rest of the layers, which allows a better decoupled implementation of the DDD layers.
 
@@ -31,15 +31,14 @@ It would take another guide to cover SOLID in detail. Therefore, this guide requ
 
 #### Additional resources
 
--   **SOLID: Fundamental OOP Principles** \
-    [*https://deviq.com/solid/*](https://deviq.com/solid/%20)
+- **SOLID: Fundamental OOP Principles** \
+  [*https://deviq.com/solid/*](https://deviq.com/solid/%20)
 
--   **Inversion of Control Containers and the Dependency Injection pattern** \
-    [*https://martinfowler.com/articles/injection.html*](https://martinfowler.com/articles/injection.html)
+- **Inversion of Control Containers and the Dependency Injection pattern** \
+  [*https://martinfowler.com/articles/injection.html*](https://martinfowler.com/articles/injection.html)
 
--   **Steve Smith. New is Glue** \
-    [*https://ardalis.com/new-is-glue*](https://ardalis.com/new-is-glue)
-
+- **Steve Smith. New is Glue** \
+  [*https://ardalis.com/new-is-glue*](https://ardalis.com/new-is-glue)
 
 >[!div class="step-by-step"]
 [Previous](nosql-database-persistence-infrastructure.md)

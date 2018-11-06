@@ -23,9 +23,9 @@ As shown in Figure 7-13, an entity is usually composed of multiple attributes. F
 
 There are two main characteristics for value objects:
 
--   They have no identity.
+- They have no identity.
 
--   They are immutable.
+- They are immutable.
 
 The first characteristic was already discussed. Immutability is an important requirement. The values of a value object must be immutable once the object is created. Therefore, when the object is constructed, you must provide the required values, but you must not allow them to change during the object’s lifetime.
 
@@ -265,67 +265,64 @@ public class Address
 
 ### Additional details on owned entity types
 
--   Owned types are defined when you configure a navigation property to a particular type using the OwnsOne fluent API.
+- Owned types are defined when you configure a navigation property to a particular type using the OwnsOne fluent API.
 
--   The definition of an owned type in our metadata model is a composite of: the owner type, the navigation property, and the CLR type of the owned type.
+- The definition of an owned type in our metadata model is a composite of: the owner type, the navigation property, and the CLR type of the owned type.
 
--   The identity (key) of an owned type instance in our stack is a composite of the identity of the owner type and the definition of the owned type.
+- The identity (key) of an owned type instance in our stack is a composite of the identity of the owner type and the definition of the owned type.
 
 #### Owned entities capabilities:
 
--   Owned types can reference other entities, either owned (nested owned types) or non-owned (regular reference navigation properties to other entities).
+- Owned types can reference other entities, either owned (nested owned types) or non-owned (regular reference navigation properties to other entities).
 
--   You can map the same CLR type as different owned types in the same owner entity through separate navigation properties.
+- You can map the same CLR type as different owned types in the same owner entity through separate navigation properties.
 
--   Table splitting is setup by convention, but you can opt out by mapping the owned type to a different table using ToTable.
+- Table splitting is setup by convention, but you can opt out by mapping the owned type to a different table using ToTable.
 
--   Eager loading is performed automatically on owned types, i.e. no need to call Include() on the query.
+- Eager loading is performed automatically on owned types, i.e. no need to call Include() on the query.
 
--   Can be configured with attribute \[Owned\], as of EF Core 2.1
+- Can be configured with attribute \[Owned\], as of EF Core 2.1
 
 #### Owned entities limitations:
 
--   You cannot create a DbSet\<T\> of an owned type (by design).
+- You cannot create a DbSet\<T\> of an owned type (by design).
 
--   You cannot call ModelBuilder.Entity\<T\>() on owned types (currently by design).
+- You cannot call ModelBuilder.Entity\<T\>() on owned types (currently by design).
 
--   No collections of owned types yet (as of EF Core 2.1, but they will be supported in 2.2).
+- No collections of owned types yet (as of EF Core 2.1, but they will be supported in 2.2).
 
--   No support for optional (that is, nullable) owned types that are mapped with the owner in the same table (i.e. using table splitting). This is because mapping is done for each property, we don't have a separate sentinel for the null complex value a as whole.
+- No support for optional (that is, nullable) owned types that are mapped with the owner in the same table (i.e. using table splitting). This is because mapping is done for each property, we don't have a separate sentinel for the null complex value a as whole.
 
--   No inheritance mapping support for owned types, but you should be able to map two leaf types of the same inheritance hierarchies as different owned types. EF Core will not reason about the fact that they are part of the same hierarchy.
+- No inheritance mapping support for owned types, but you should be able to map two leaf types of the same inheritance hierarchies as different owned types. EF Core will not reason about the fact that they are part of the same hierarchy.
 
 #### Main differences with EF6's complex types
 
--   Table splitting is optional, i.e. they can optionally be mapped to a separate table and still be owned types.
+- Table splitting is optional, i.e. they can optionally be mapped to a separate table and still be owned types.
 
--   They can reference other entities (i.e. they can act as the dependent side on relationships to other non-owned types).
-
+- They can reference other entities (i.e. they can act as the dependent side on relationships to other non-owned types).
 
 ## Additional resources
 
--   **Martin Fowler. ValueObject pattern** \
-    [*https://martinfowler.com/bliki/ValueObject.html*](https://martinfowler.com/bliki/ValueObject.html)
+- **Martin Fowler. ValueObject pattern** \
+  [*https://martinfowler.com/bliki/ValueObject.html*](https://martinfowler.com/bliki/ValueObject.html)
 
--   **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of value objects) \
-    [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
+- **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of value objects) \
+  [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 
--   **Vaughn Vernon. Implementing Domain-Driven Design.** (Book; includes a discussion of value objects) \
-    [*https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/*](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/)
+- **Vaughn Vernon. Implementing Domain-Driven Design.** (Book; includes a discussion of value objects) \
+  [*https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/*](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/)
 
--   **Shadow Properties** \
-    [*https://docs.microsoft.com/ef/core/modeling/shadow-properties*](https://docs.microsoft.com/ef/core/modeling/shadow-properties)
+- **Shadow Properties** \
+  [*https://docs.microsoft.com/ef/core/modeling/shadow-properties*](https://docs.microsoft.com/ef/core/modeling/shadow-properties)
 
--   **Complex types and/or value objects**. Discussion in the EF Core GitHub repo (Issues tab) \
-    [*https://github.com/aspnet/EntityFramework/issues/246*](https://github.com/aspnet/EntityFramework/issues/246)
+- **Complex types and/or value objects**. Discussion in the EF Core GitHub repo (Issues tab) \
+  [*https://github.com/aspnet/EntityFramework/issues/246*](https://github.com/aspnet/EntityFramework/issues/246)
 
--   **ValueObject.cs.** Base value object class in eShopOnContainers.**  \
-    [*https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs*](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs)
+- **ValueObject.cs.** Base value object class in eShopOnContainers.**  \
+  [*https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs*](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs)
 
--   **Address class.** Sample value object class in eShopOnContainers. \
-    [*https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs*](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs)
-
-
+- **Address class.** Sample value object class in eShopOnContainers. \
+  [*https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs*](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs)
 
 >[!div class="step-by-step"]
 [Previous](seedwork-domain-model-base-classes-interfaces.md)

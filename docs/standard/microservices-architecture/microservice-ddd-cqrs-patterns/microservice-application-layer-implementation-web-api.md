@@ -105,11 +105,11 @@ When using DI in .NET Core, you might want to be able to scan an assembly and au
 
 #### Additional resources
 
--   **Matthew King. Registering services with Scrutor** \
-    [*https://www.mking.net/blog/registering-services-with-scrutor*](https://www.mking.net/blog/registering-services-with-scrutor)
+- **Matthew King. Registering services with Scrutor** \
+  [*https://www.mking.net/blog/registering-services-with-scrutor*](https://www.mking.net/blog/registering-services-with-scrutor)
 
--   **Kristian Hellang. Scrutor.** GitHub repo. \
-    [*https://github.com/khellang/Scrutor*](https://github.com/khellang/Scrutor)
+- **Kristian Hellang. Scrutor.** GitHub repo. \
+  [*https://github.com/khellang/Scrutor*](https://github.com/khellang/Scrutor)
 
 #### Use Autofac as an IoC container
 
@@ -152,22 +152,22 @@ In the example code, the abstraction IOrderRepository is registered along with t
 
 The instance scope type determines how an instance is shared between requests for the same service or dependency. When a request is made for a dependency, the IoC container can return the following:
 
--   A single instance per lifetime scope (referred to in the ASP.NET Core IoC container as *scoped*).
+- A single instance per lifetime scope (referred to in the ASP.NET Core IoC container as *scoped*).
 
--   A new instance per dependency (referred to in the ASP.NET Core IoC container as *transient*).
+- A new instance per dependency (referred to in the ASP.NET Core IoC container as *transient*).
 
--   A single instance shared across all objects using the IoC container (referred to in the ASP.NET Core IoC container as *singleton*).
+- A single instance shared across all objects using the IoC container (referred to in the ASP.NET Core IoC container as *singleton*).
 
 #### Additional resources
 
--   **Introduction to Dependency Injection in ASP.NET Core** \
-    [*https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection*](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection)
+- **Introduction to Dependency Injection in ASP.NET Core** \
+  [*https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection*](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection)
 
--   **Autofac.** Official documentation. \
-    [*http://docs.autofac.org/en/latest/*](http://docs.autofac.org/en/latest/)
+- **Autofac.** Official documentation. \
+  [*http://docs.autofac.org/en/latest/*](http://docs.autofac.org/en/latest/)
 
--   **Comparing ASP.NET Core IoC container service lifetimes with Autofac IoC container instance scopes - Cesar de la Torre.** \
-    [*https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/*](https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/)
+- **Comparing ASP.NET Core IoC container service lifetimes with Autofac IoC container instance scopes - Cesar de la Torre.** \
+  [*https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/*](https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/)
 
 ## Implement the Command and Command Handler patterns
 
@@ -315,15 +315,15 @@ A command handler receives a command and obtains a result from the aggregate tha
 
 The command handler usually takes the following steps:
 
--   It receives the command object, like a DTO (from the [mediator](https://en.wikipedia.org/wiki/Mediator_pattern) or other infrastructure object).
+- It receives the command object, like a DTO (from the [mediator](https://en.wikipedia.org/wiki/Mediator_pattern) or other infrastructure object).
 
--   It validates that the command is valid (if not validated by the mediator).
+- It validates that the command is valid (if not validated by the mediator).
 
--   It instantiates the aggregate root instance that is the target of the current command.
+- It instantiates the aggregate root instance that is the target of the current command.
 
--   It executes the method on the aggregate root instance, getting the required data from the command.
+- It executes the method on the aggregate root instance, getting the required data from the command.
 
--   It persists the new state of the aggregate to its related database. This last operation is the actual transaction.
+- It persists the new state of the aggregate to its related database. This last operation is the actual transaction.
 
 Typically, a command handler deals with a single aggregate driven by its aggregate root (root entity). If multiple aggregates should be impacted by the reception of a single command, you could use domain events to propagate states or actions across multiple aggregates.
 
@@ -382,28 +382,28 @@ public class CreateOrderCommandHandler
 
 These are additional steps a command handler should take:
 
--   Use the command’s data to operate with the aggregate root’s methods and behavior.
+- Use the command’s data to operate with the aggregate root’s methods and behavior.
 
--   Internally within the domain objects, raise domain events while the transaction is executed, but that is transparent from a command handler point of view.
+- Internally within the domain objects, raise domain events while the transaction is executed, but that is transparent from a command handler point of view.
 
--   If the aggregate’s operation result is successful and after the transaction is finished, raise integration events. (These might also be raised by infrastructure classes like repositories.)
+- If the aggregate’s operation result is successful and after the transaction is finished, raise integration events. (These might also be raised by infrastructure classes like repositories.)
 
 #### Additional resources
 
--   **Mark Seemann. At the Boundaries, Applications are Not Object-Oriented** \
-    [*http://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/*](http://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/)
+- **Mark Seemann. At the Boundaries, Applications are Not Object-Oriented** \
+  [*http://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/*](http://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/)
 
--   **Commands and events** \
-    [*http://cqrs.nu/Faq/commands-and-events*](http://cqrs.nu/Faq/commands-and-events)
+- **Commands and events** \
+  [*http://cqrs.nu/Faq/commands-and-events*](http://cqrs.nu/Faq/commands-and-events)
 
--   **What does a command handler do?** \
-    [*http://cqrs.nu/Faq/command-handlers*](http://cqrs.nu/Faq/command-handlers)
+- **What does a command handler do?** \
+  [*http://cqrs.nu/Faq/command-handlers*](http://cqrs.nu/Faq/command-handlers)
 
--   **Jimmy Bogard. Domain Command Patterns – Handlers** \
-    [*https://jimmybogard.com/domain-command-patterns-handlers/*](https://jimmybogard.com/domain-command-patterns-handlers/)
+- **Jimmy Bogard. Domain Command Patterns – Handlers** \
+  [*https://jimmybogard.com/domain-command-patterns-handlers/*](https://jimmybogard.com/domain-command-patterns-handlers/)
 
--   **Jimmy Bogard. Domain Command Patterns – Validation** \
-    [*https://jimmybogard.com/domain-command-patterns-validation/*](https://jimmybogard.com/domain-command-patterns-validation/)
+- **Jimmy Bogard. Domain Command Patterns – Validation** \
+  [*https://jimmybogard.com/domain-command-patterns-validation/*](https://jimmybogard.com/domain-command-patterns-validation/)
 
 ## The Command process pipeline: how to trigger a command handler
 
@@ -411,9 +411,9 @@ The next question is how to invoke a command handler. You could manually call it
 
 The other two main options, which are the recommended options, are:
 
--   Through an in-memory Mediator pattern artifact.
+- Through an in-memory Mediator pattern artifact.
 
--   With an asynchronous message queue, in between controllers and handlers.
+- With an asynchronous message queue, in between controllers and handlers.
 
 ### Use the Mediator pattern (in-memory) in the command pipeline
 
@@ -790,44 +790,44 @@ In a similar way, you could implement other behaviors for additional aspects or 
 
 ##### The mediator pattern
 
--   **Mediator pattern** \
-    [*https://en.wikipedia.org/wiki/Mediator\_pattern*](https://en.wikipedia.org/wiki/Mediator_pattern)
+- **Mediator pattern** \
+  [*https://en.wikipedia.org/wiki/Mediator\_pattern*](https://en.wikipedia.org/wiki/Mediator_pattern)
 
 ##### The decorator pattern
 
--   **Decorator pattern** \
-    [*https://en.wikipedia.org/wiki/Decorator\_pattern*](https://en.wikipedia.org/wiki/Decorator_pattern)
+- **Decorator pattern** \
+  [*https://en.wikipedia.org/wiki/Decorator\_pattern*](https://en.wikipedia.org/wiki/Decorator_pattern)
 
 ##### MediatR (Jimmy Bogard)
 
--   **MediatR.** GitHub repo. \
-    [*https://github.com/jbogard/MediatR*](https://github.com/jbogard/MediatR)
+- **MediatR.** GitHub repo. \
+  [*https://github.com/jbogard/MediatR*](https://github.com/jbogard/MediatR)
 
--   **CQRS with MediatR and AutoMapper** \
-    [*https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/*](https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/)
+- **CQRS with MediatR and AutoMapper** \
+  [*https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/*](https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/)
 
--   **Put your controllers on a diet: POSTs and commands.** \
-    [*https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/*](https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/)
+- **Put your controllers on a diet: POSTs and commands.** \
+  [*https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/*](https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/)
 
--   **Tackling cross-cutting concerns with a mediator pipeline** \
-    [*https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/*](https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/)
+- **Tackling cross-cutting concerns with a mediator pipeline** \
+  [*https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/*](https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/)
 
--   **CQRS and REST: the perfect match** \
-    [*https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/*](https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/)
+- **CQRS and REST: the perfect match** \
+  [*https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/*](https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/)
 
--   **MediatR Pipeline Examples** \
-    [*https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/*](https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/)
+- **MediatR Pipeline Examples** \
+  [*https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/*](https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/)
 
--   **Vertical Slice Test Fixtures for MediatR and ASP.NET Core** \
-    [*https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and-asp-net-core/*](https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and-asp-net-core/)
+- **Vertical Slice Test Fixtures for MediatR and ASP.NET Core** \
+  [*https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and-asp-net-core/*](https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and-asp-net-core/)
 
--   **MediatR Extensions for Microsoft Dependency Injection Released** \
-    [*https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/*](https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/)
+- **MediatR Extensions for Microsoft Dependency Injection Released** \
+  [*https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/*](https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/)
 
 ##### Fluent validation
 
--   **Jeremy Skinner. FluentValidation.** GitHub repo. \
-    [*https://github.com/JeremySkinner/FluentValidation*](https://github.com/JeremySkinner/FluentValidation)
+- **Jeremy Skinner. FluentValidation.** GitHub repo. \
+  [*https://github.com/JeremySkinner/FluentValidation*](https://github.com/JeremySkinner/FluentValidation)
 
 >[!div class="step-by-step"]
 [Previous](microservice-application-layer-web-api-design.md)

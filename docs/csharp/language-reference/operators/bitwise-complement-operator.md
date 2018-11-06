@@ -22,7 +22,7 @@ The following example demonstrates the usage of the `~` operator:
 [!code-csharp-interactive[bitwise NOT](~/samples/snippets/csharp/language-reference/operators/BitwiseComplementExamples.cs#Example)]
 
 > [!NOTE]
-> The preceding example uses the binary literals that are [introduced](../../whats-new/csharp-7.md#numeric-literal-syntax-improvements) in C# 7.0 and [enhanced](../../whats-new/csharp-7-2.md#leading-underscores-in-numeric-literals) in C# 7.2.
+> The preceding example uses the binary literals that are [introduced in C# 7.0](../../whats-new/csharp-7.md#numeric-literal-syntax-improvements) and [enhanced  in C# 7.2](../../whats-new/csharp-7-2.md#leading-underscores-in-numeric-literals).
 
 ## Operator overloadability
 

@@ -326,37 +326,37 @@ As stated, use domain events to explicitly implement side effects of changes wit
 
 ## Additional resources
 
--   **Greg Young. What is a Domain Event?** <br/>
+-   **Greg Young. What is a Domain Event?** \
     [*http://codebetter.com/gregyoung/2010/04/11/what-is-a-domain-event/*](http://codebetter.com/gregyoung/2010/04/11/what-is-a-domain-event/)
 
--   **Jan Stenberg. Domain Events and Eventual Consistency** <br/>
+-   **Jan Stenberg. Domain Events and Eventual Consistency** \
     [*https://www.infoq.com/news/2015/09/domain-events-consistency*](https://www.infoq.com/news/2015/09/domain-events-consistency)
 
--   **Jimmy Bogard. A better domain events pattern** <br/>
+-   **Jimmy Bogard. A better domain events pattern** \
     [*https://lostechies.com/jimmybogard/2014/05/13/a-better-domain-events-pattern/*](https://lostechies.com/jimmybogard/2014/05/13/a-better-domain-events-pattern/)
 
--   **Vaughn Vernon. Effective Aggregate Design Part II: Making Aggregates Work Together** <br/>
+-   **Vaughn Vernon. Effective Aggregate Design Part II: Making Aggregates Work Together** \
     [*https://dddcommunity.org/wp-content/uploads/files/pdf\_articles/Vernon\_2011\_2.pdf*](https://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_2.pdf)
 
--   **Jimmy Bogard. Strengthening your domain: Domain Events** <br/>
+-   **Jimmy Bogard. Strengthening your domain: Domain Events** \
     [*https://lostechies.com/jimmybogard/2010/04/08/strengthening-your-domain-domain-events/*](https://lostechies.com/jimmybogard/2010/04/08/strengthening-your-domain-domain-events/)
 
--   **Tony Truong. Domain Events Pattern Example** <br/>
+-   **Tony Truong. Domain Events Pattern Example** \
     [*https://www.tonytruong.net/domain-events-pattern-example/*](https://www.tonytruong.net/domain-events-pattern-example/)
 
--   **Udi Dahan. How to create fully encapsulated Domain Models** <br/>
+-   **Udi Dahan. How to create fully encapsulated Domain Models** \
     [*http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/*](http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/)
 
--   **Udi Dahan. Domain Events – Take 2** <br/>
+-   **Udi Dahan. Domain Events – Take 2** \
     [*http://udidahan.com/2008/08/25/domain-events-take-2/*](http://udidahan.com/2008/08/25/domain-events-take-2/%20)
 
--   **Udi Dahan. Domain Events – Salvation** <br/>
+-   **Udi Dahan. Domain Events – Salvation** \
     [*http://udidahan.com/2009/06/14/domain-events-salvation/*](http://udidahan.com/2009/06/14/domain-events-salvation/)
 
--   **Jan Kronquist. Don't publish Domain Events, return them!** <br/>
+-   **Jan Kronquist. Don't publish Domain Events, return them!** \
     [*https://blog.jayway.com/2013/06/20/dont-publish-domain-events-return-them/*](https://blog.jayway.com/2013/06/20/dont-publish-domain-events-return-them/)
 
--   **Cesar de la Torre. Domain Events vs. Integration Events in DDD and microservices architectures** <br/>
+-   **Cesar de la Torre. Domain Events vs. Integration Events in DDD and microservices architectures** \
     [*https://blogs.msdn.microsoft.com/cesardelatorre/2017/02/07/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/*](https://blogs.msdn.microsoft.com/cesardelatorre/2017/02/07/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/)
 
 

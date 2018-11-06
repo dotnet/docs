@@ -162,13 +162,13 @@ For example, in the preceding OrderAggregate code example, there are several pri
 
 ### Additional resources
 
--   **Vaughn Vernon. Modeling Aggregates with DDD and Entity Framework.** Note that this is *not* Entity Framework Core. <br/>
+-   **Vaughn Vernon. Modeling Aggregates with DDD and Entity Framework.** Note that this is *not* Entity Framework Core. \
     [*https://vaughnvernon.co/?p=879*](https://vaughnvernon.co/?p=879)
 
--   **Julie Lerman. Coding for Domain-Driven Design: Tips for Data-Focused Devs** <br/>
+-   **Julie Lerman. Coding for Domain-Driven Design: Tips for Data-Focused Devs** \
     [*https://msdn.microsoft.com/magazine/dn342868.aspx*](https://msdn.microsoft.com/en-us/magazine/dn342868.aspx)
 
--   **Udi Dahan. How to create fully encapsulated Domain Models** <br/>
+-   **Udi Dahan. How to create fully encapsulated Domain Models** \
     [*http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/*](http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/)
 
 

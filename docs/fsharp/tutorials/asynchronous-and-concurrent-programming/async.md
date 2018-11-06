@@ -187,6 +187,7 @@ Example:
 ```fsharp
 open System
 open System.Net
+open System.Threading
 
 let uploadDataAsync url data = 
     async {
@@ -198,7 +199,7 @@ let uploadDataAsync url data =
 let workflow = uploadDataAsync "https://url-to-upload-to.com" "hello, world!"
 
 let token = new CancellationTokenSource()
-Async.Start (workflow, token)
+Async.Start (workflow, token.Token)
 
 // Immediately cancel uploadDataAsync after it's been started.
 token.Cancel()

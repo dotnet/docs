@@ -23,7 +23,7 @@ Windows Communication Foundation (WCF) has an ASP.NET compatibility mode option 
   
  The WCF<xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> can be added to .NET Framework types to indicate that instances of the type are to be serialized into XML, and which particular fields or properties of the type are to be serialized, as shown in the following sample code.  
   
-```  
+```csharp  
 //Example One:   
 [DataContract]  
 public class LineItem  
@@ -143,7 +143,7 @@ public class LineItem
   
 -   The <xref:System.Xml.Serialization.XmlSerializer> and the attributes of the <xref:System.Xml.Serialization> namespace are designed to allow you to map .NET Framework types to any valid type defined in XML Schema, and so they provide for very precise control over how a type is represented in XML. The <xref:System.Runtime.Serialization.DataContractSerializer>, <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> provide very little control over how a type is represented in XML. You can only specify the namespaces and names used to represent the type and its fields or properties in the XML, and the sequence in which the fields and properties appear in the XML:  
   
-    ```  
+    ```csharp  
     [DataContract(  
     Namespace="urn:Contoso:2006:January:29",  
     Name="LineItem")]  
@@ -178,7 +178,7 @@ public class LineItem
   
  Despite all of the differences, the XML into which the <xref:System.Xml.Serialization.XmlSerializer> serializes a type by default is semantically identical to the XML into which the <xref:System.Runtime.Serialization.DataContractSerializer> serializes a type, provided the namespace for the XML is explicitly defined. The following class, which has attributes for use with both of the serializers, is translated into semantically identical XML by the <xref:System.Xml.Serialization.XmlSerializer> and by the <xref:System.Runtime.Serialization.DataContractAttribute>:  
   
-```  
+```csharp  
 [Serializable]  
 [XmlRoot(Namespace="urn:Contoso:2006:January:29")]  
 [DataContract(Namespace="urn:Contoso:2006:January:29")]  
@@ -201,7 +201,7 @@ public class LineItem
 ## Service Development  
  To develop a service using ASP.NET, it has been customary to add the <xref:System.Web.Services.WebService> attribute to a class, and the <xref:System.Web.Services.WebMethodAttribute> to any of that class’ methods that are to be operations of the service:  
   
-```  
+```csharp  
 [WebService]  
 public class Service : T:System.Web.Services.WebService  
 {  
@@ -215,7 +215,7 @@ public class Service : T:System.Web.Services.WebService
   
  ASP.NET 2.0 introduced the option of adding the attribute <xref:System.Web.Services.WebService> and <xref:System.Web.Services.WebMethodAttribute> to an interface rather than to a class, and writing a class to implement the interface:  
   
-```  
+```csharp  
 [WebService]  
 public interface IEcho  
 {  
@@ -239,7 +239,7 @@ public class Service : IEcho
   
  The service contract is usually defined first, by adding <xref:System.ServiceModel.ServiceContractAttribute> and <xref:System.ServiceModel.OperationContractAttribute> to an interface:  
   
-```  
+```csharp  
 [ServiceContract]  
 public interface IEcho  
 {  
@@ -252,7 +252,7 @@ public interface IEcho
   
  Once a service contract has been defined, it is implemented in a class, by having the class implement the interface by which the service contract is defined:  
   
-```  
+```csharp  
 public class Service : IEcho  
 {  
     public string Echo(string input)  
@@ -302,7 +302,7 @@ public class Service : IEcho
   
  The internal behavior of service types can be adjusted using the properties of a family of classes called behaviors. Here, the <xref:System.ServiceModel.ServiceBehaviorAttribute> class is used to specify that the service type is to be multithreaded.  
   
-```  
+```csharp  
 [ServiceBehavior(ConcurrencyMode=ConcurrencyMode.Multiple]  
 public class DerivativesCalculatorServiceType: IDerivativesCalculator  
 ```  
@@ -340,7 +340,7 @@ public class DerivativesCalculatorServiceType: IDerivativesCalculator
   
  To host a WCF service within a .NET application, compile the service type into a class library assembly referenced by the application, and program the application to host the service using the <xref:System.ServiceModel.ServiceHost> class. The following is an example of the basic programming required:  
   
-```  
+```csharp  
 string httpBaseAddress = "http://www.contoso.com:8000/";  
 string tcpBaseAddress = "net.tcp://www.contoso.com:8080/";  
   
@@ -369,7 +369,7 @@ typeof(Service), //"Service" is the name of the service type baseAdresses))
   
 1.  The programmer must add the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> attribute to the service type and specify that ASP.NET compatibility mode is either allowed or required.  
   
-    ```  
+    ```csharp  
     [System.ServiceModel.Activation.AspNetCompatibilityRequirements(  
           RequirementsMode=AspNetCompatbilityRequirementsMode.Require)]  
     public class DerivativesCalculatorServiceType: IDerivativesCalculator  
@@ -420,7 +420,7 @@ typeof(Service), //"Service" is the name of the service type baseAdresses))
 ## Message Representation  
  The headers of the SOAP messages sent and received by ASP.NET Web services can be customized. A class is derived from <xref:System.Web.Services.Protocols.SoapHeader> to define the structure of the header, and then the <xref:System.Web.Services.Protocols.SoapHeaderAttribute> is used to indicate the presence of the header.  
   
-```  
+```csharp  
 public class SomeProtocol : SoapHeader  
 {  
      public long CurrentValue;  
@@ -467,7 +467,7 @@ public class Service: WebService, IEcho
   
  The WCF provides the attributes, <xref:System.ServiceModel.MessageContractAttribute>, <xref:System.ServiceModel.MessageHeaderAttribute>, and <xref:System.ServiceModel.MessageBodyMemberAttribute> to describe the structure of the SOAP messages sent and received by a service.  
   
-```  
+```csharp  
 [DataContract]  
 public class SomeProtocol  
 {  
@@ -530,7 +530,7 @@ public interface IItemService
   
  ASP.NET 2.0 made it possible to validate that a service is compliant with the Basic Profile 1.1 of the Web Services-Interoperability Organization (WS-I), and to insert a claim that the service is compliant into its WSDL. That is done using the `ConformsTo` and `EmitConformanceClaims` parameters of the <xref:System.Web.Services.WebServiceBindingAttribute> attribute.  
   
-```  
+```csharp  
 [WebService(Namespace = "http://tempuri.org/")]  
 [WebServiceBinding(  
      ConformsTo = WsiProfiles.BasicProfile1_1,  
@@ -566,7 +566,7 @@ public interface IEcho
   
  To return SOAP faults to clients, you can throw instances of the generic type, <xref:System.ServiceModel.FaultException%601>, using the data contract type as the generic type. You can also add <xref:System.ServiceModel.FaultContractAttribute> attributes to operations to specify the faults that an operation might yield.  
   
-```  
+```csharp  
 [DataContract]  
 public class MathFault  
 {   
@@ -587,7 +587,7 @@ public interface ICalculator
   
  Doing so results in the possible faults being advertised in the WSDL for the service, allowing client programmers to anticipate which faults can result from an operation, and write the appropriate catch statements.  
   
-```  
+```csharp  
 try  
 {  
      result = client.Divide(value1, value2);  
@@ -604,7 +604,7 @@ catch (FaultException<MathFault> e)
 ## State Management  
  The class used to implement an ASP.NET Web service may be derived from <xref:System.Web.Services.WebService>.  
   
-```  
+```csharp  
 public class Service : WebService, IEcho  
 {  
   
@@ -623,14 +623,14 @@ public class Service : WebService, IEcho
   
  Here, the service type, `TradingSystem`, has a <xref:System.ServiceModel.ServiceBehaviorAttribute> that specifies that all calls from the same WCF client instance are routed to the same instance of the service type.  
   
-```  
+```csharp  
 [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]  
 public class TradingSystem: ITradingService  
 ```  
   
  The class, `DealData`, defines state that can be accessed by any code running in the same instance of a service type.  
   
-```  
+```csharp  
 internal class DealData: IExtension<InstanceContext>  
 {  
  public string DealIdentifier = null;  
@@ -640,7 +640,7 @@ internal class DealData: IExtension<InstanceContext>
   
  In the code of the service type that implements one of the operations of the service contract, a `DealData` state object is added to the state of the current instance of the service type.  
   
-```  
+```csharp  
 string ITradingService.BeginDeal()  
 {  
  string dealIdentifier = Guid.NewGuid().ToString();  
@@ -652,7 +652,7 @@ string ITradingService.BeginDeal()
   
  That state object can then be retrieved and modified by the code that implements another of the service contract’s operations.  
   
-```  
+```csharp  
 void ITradingService.AddTrade(Trade trade)  
 {  
  DealData dealData =  OperationContext.Current.InstanceContext.Extensions.Find<DealData>();  
@@ -685,7 +685,7 @@ void ITradingService.AddTrade(Trade trade)
   
  Service operations can be configured to impersonate whichever user’s credentials are provided with the current request.  
   
-```  
+```csharp  
 [OperationBehavior(Impersonation = ImpersonationOption.Required)]  
 public void Receive(Message input)  
 ```  

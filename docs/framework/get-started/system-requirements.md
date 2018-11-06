@@ -49,6 +49,7 @@ The .NET Framework requires administrator privileges for installation. If you do
 
 | Operating system | Supported editions | Preinstalled with the OS | Installable separately |
 | ---------------- | ------------------ | ------------------------ | ---------------------- |
+| Windows 10 October 2018 Update | 32-bit and 64-bit | .NET Framework 4.7.2 |--|
 | Windows 10 April 2018 Update | 32-bit and 64-bit | .NET Framework 4.7.2 |--|
 | Windows 10 Fall Creators Update | 32-bit and 64-bit | .NET Framework 4.7.1 | .NET Framework 4.7.2 |
 | Windows 10 Creators Update | 32-bit and 64-bit | .NET Framework 4.7 | .NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2 | 

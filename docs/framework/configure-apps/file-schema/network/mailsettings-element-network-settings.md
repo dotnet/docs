@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "mailSettings element"
   - "<mailSettings> element"
 ms.assetid: 54f0f153-17e5-4f49-afdc-deadb940c9c1
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;mailSettings&gt; Element (Network Settings)
 Configures mail sending options.  
@@ -64,5 +62,5 @@ Configures mail sending options.
 ```  
   
 ## See Also  
- <xref:System.Net.Mail.SmtpClient>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.Mail.SmtpClient>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

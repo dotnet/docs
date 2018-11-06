@@ -2,8 +2,6 @@
 title: "NAT Traversal using IPv6 and Teredo"
 ms.date: "03/30/2017"
 ms.assetid: 568cd245-3300-49ef-a995-d81bf845d961
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # NAT Traversal using IPv6 and Teredo
 Enhancements were made that provide support for Network Address Translation (NAT) traversal. These changes are designed for use with IPv6 and Teredo, but they are also applicable to other IP tunneling technologies. These enhancements affect classes in the <xref:System.Net> and related namespaces.  

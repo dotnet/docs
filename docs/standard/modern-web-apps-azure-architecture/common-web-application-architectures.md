@@ -91,7 +91,7 @@ The simplest approach to scaling a web application in Azure is to configure scal
 
 ## Clean architecture
 
-Applications that follow the Dependency Inversion Principle as well as the Domain-Driven Design (DDD) principles tend to arrive at a similar architecture. This architecture has gone by many names over the years. One of the first names was Hexagonal Architecture, followed by Ports-and-Adapters. More recently, it's been cited as the [Onion Architecture](http://jeffreypalermo.com/blog/the-onion-architecture-part-1/) or [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html). The latter name, Clean Architecture, is used as the name for this architecture in this e-book.
+Applications that follow the Dependency Inversion Principle as well as the Domain-Driven Design (DDD) principles tend to arrive at a similar architecture. This architecture has gone by many names over the years. One of the first names was Hexagonal Architecture, followed by Ports-and-Adapters. More recently, it's been cited as the [Onion Architecture](https://jeffreypalermo.com/blog/the-onion-architecture-part-1/) or [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html). The latter name, Clean Architecture, is used as the name for this architecture in this e-book.
 
 > [!NOTE]
 > The term Clean Architecture can be applied to applications that are built using DDD Principles as well as to those that are not built using DDD. In the case of the former, this combination may be referred to as "Clean DDD Architecture".
@@ -301,7 +301,7 @@ If you want to add Docker support to your application using Visual Studio, make 
 > - **The Clean Architecture**  
 >   <https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html>
 > - **The Onion Architecture**  
->   <http://jeffreypalermo.com/blog/the-onion-architecture-part-1/>
+>   <https://jeffreypalermo.com/blog/the-onion-architecture-part-1/>
 > - **The Repository Pattern**  
 >   <https://deviq.com/repository-pattern/>
 > - **Clean Architecture Solution Sample**  

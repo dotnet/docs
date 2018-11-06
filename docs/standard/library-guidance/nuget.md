@@ -7,7 +7,7 @@ ms.date: 10/02/2018
 ---
 # NuGet
 
-NuGet is a package manager for the .NET eco-system and is the primary way developers discover and acquire .NET open-source libraries. NuGet.org, a free service provided by Microsoft for hosting NuGet packages, is the primary host for public NuGet packages but you can publish to custom NuGet services like MyGet and Azure DevOps.
+NuGet is a package manager for the .NET ecosystem and is the primary way developers discover and acquire .NET open-source libraries. [NuGet.org](https://www.nuget.org/), a free service provided by Microsoft for hosting NuGet packages, is the primary host for public NuGet packages, but you can publish to custom NuGet services like [MyGet](https://www.myget.org/) and [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/).
 
 ![NuGet](./media/nuget/nuget-logo.png "NuGet")
 
@@ -15,7 +15,7 @@ NuGet is a package manager for the .NET eco-system and is the primary way develo
 
 A NuGet package (`*.nupkg`) is a zip file that contains .NET assemblies and associated metadata.
 
-There are two main ways to create a NuGet package. The newer and recommended way is to create a package from a SDK-style project (project file the content starts with `<Project Sdk="Microsoft.NET.Sdk">`). Assemblies and targets are automatically added to the package and remaining metadata is added to the MSBuild file, like package name and version number. Compiling with the [`dotnet pack`](../../core/tools/dotnet-pack.md) command outputs a `*.nupkg` file instead of assemblies.
+There are two main ways to create a NuGet package. The newer and recommended way is to create a package from a SDK-style project (project file whose content starts with `<Project Sdk="Microsoft.NET.Sdk">`). Assemblies and targets are automatically added to the package and remaining metadata is added to the MSBuild file, like package name and version number. Compiling with the [`dotnet pack`](../../core/tools/dotnet-pack.md) command outputs a `*.nupkg` file instead of assemblies.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -31,8 +31,6 @@ There are two main ways to create a NuGet package. The newer and recommended way
 The older way of creating a NuGet package is with a `*.nuspec` file and the `nuget.exe` command-line tool. A nuspec file gives you great control but you must carefully specify what assemblies and targets to include in the final NuGet package. It's easy to make a mistake or for someone to forget to update the nuspec when making changes. The advantage of a nuspec is you can use it create NuGet packages for frameworks that don't yet support an SDK-style project file.
 
 **✔️ CONSIDER** using an SDK-style project file to create the NuGet package.
-
-**✔️ CONSIDER** setting up SourceLink to add source control metadata to your assemblies and NuGet package.
 
 ## Package dependencies
 
@@ -56,7 +54,7 @@ A NuGet package supports many [metadata properties](/nuget/reference/nuspec). Th
 
 **✔️ CONSIDER** choosing a NuGet package name with a prefix that meets NuGet's prefix reservation [criteria](/nuget/reference/id-prefix-reservation).
 
-**✔️ CONSIDER** using the `LICENSE` file in source control as the `LicenseUrl`. For example, https://github.com/JamesNK/Newtonsoft.Json/blob/master/LICENSE.md
+**✔️ CONSIDER** using the `LICENSE` file in source control as the `LicenseUrl`. For example, [LICENSE.md](https://github.com/JamesNK/Newtonsoft.Json/blob/c4af75c8e91ca0d75aa6c335e8c106780c4f7712/LICENSE.md).
 
 > [!IMPORTANT]
 > A project without a license defaults to [exclusive copyright](https://choosealicense.com/no-permission/), making it impossible for other people to use.
@@ -66,6 +64,12 @@ A NuGet package supports many [metadata properties](/nuget/reference/nuspec). Th
 > Sites like NuGet.org run with HTTPS enabled and displaying a non-HTTPS image will create a mixed content warning.
 
 **✔️ DO** use a package icon image that is 64x64 and has a transparent background for best viewing results.
+
+**✔️ CONSIDER** setting up [SourceLink](./sourcelink.md) to add source control metadata to your assemblies and NuGet package.
+
+> SourceLink automatically adds `RepositoryUrl` and `RepositoryType` metadata to the NuGet package.
+> SourceLink also adds information about the exact source code the package was built from.
+> For example, a package created from a Git repository will have the commit hash added as metadata.
 
 ## Pre-release packages
 
@@ -86,13 +90,22 @@ NuGet packages with a version suffix are considered [pre-release](/nuget/create-
 
 ## Symbol packages
 
-NuGet supports [generating a separate symbol package](/nuget/create-packages/symbol-packages) containing debug PDB files alongside the main package containing .NET assemblies. The idea of symbol packages is they're hosted on a symbol server and are only downloaded by a tool like Visual Studio on demand.
+Symbol files (`*.pdb`) are produced by the .NET compiler alongside assemblies. Symbol files map execution locations to the original source code so you can step through source code as it is running using a debugger. NuGet supports [generating a separate symbol package](/nuget/create-packages/symbol-packages) containing symbol files alongside the main package containing .NET assemblies. The idea of symbol packages is they're hosted on a symbol server and are only downloaded by a tool like Visual Studio on demand.
 
-Currently the main public host for symbols - [SymbolSource](http://www.symbolsource.org/) - doesn't support the portable PDBs created by SDK-style projects and symbol packages aren't useful.
+Currently the main public host for symbols - [SymbolSource](http://www.symbolsource.org/) - doesn't support the new [portable symbol files](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) (`*.pdb`) created by SDK-style projects, and symbol packages aren't useful. Until there is a recommended host for symbol packages, symbol files can be embedded in the main NuGet package. If you are building your NuGet package using an SDK-style project you can embed symbol files by setting the `AllowedOutputExtensionsInPackageBuildOutputFolder` property: 
 
-**✔️ CONSIDER** embedding PDBs in the main NuGet package.
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup>
+    <!-- Include symbol files (*.pdb) in the built .nupkg -->
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+  </PropertyGroup>
+</Project>
+```
 
-**❌ AVOID** creating a symbols package containing PDBs.
+**✔️ CONSIDER** embedding symbol files in the main NuGet package.
+
+**❌ AVOID** creating a symbols package containing symbol files.
 
 >[!div class="step-by-step"]
 [Previous](./strong-naming.md)

@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "<proxy> element"
   - "proxy element"
 ms.assetid: 37a548d8-fade-4ac5-82ec-b49b6c6cb22a
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;proxy&gt; Element (Network Settings)
 Defines a proxy server.  
@@ -87,5 +85,5 @@ Defines a proxy server.
 ```  
   
 ## See Also  
- <xref:System.Net.WebProxy?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.WebProxy?displayProperty=nameWithType>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

@@ -2,7 +2,6 @@
 title: "System.ServiceModel.Security.SecurityServerSessionKeyUpdated"
 ms.date: "03/30/2017"
 ms.assetid: 2740a8e1-b775-464f-8ef4-6c44640285a0
-author: "BrucePerlerMS"
 ---
 # System.ServiceModel.Security.SecurityServerSessionKeyUpdated
 System.ServiceModel.Security.SecurityServerSessionKeyUpdated  

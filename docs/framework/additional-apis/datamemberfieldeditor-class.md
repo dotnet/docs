@@ -41,4 +41,4 @@ internal class DataMemberFieldEditor : UITypeEditor
   
 ## See also
 
-<xref:System.Windows.Forms.Design?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.Design?displayProperty=nameWithType>

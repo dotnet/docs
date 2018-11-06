@@ -1,12 +1,12 @@
 ---
-title: "Using foreach with Arrays (C# Programming Guide)"
+title: "Using foreach with arrays (C# Programming Guide)"
 ms.date: 05/23/2018
 helpviewer_keywords: 
   - "arrays [C#], foreach"
   - "foreach statement [C#], using with arrays"
 ms.assetid: 5f2da2a9-1f56-4de5-94cc-e07f4f7a0244
 ---
-# Using foreach with Arrays (C# Programming Guide)
+# Using foreach with arrays (C# Programming Guide)
 
 The [foreach](../../language-reference/keywords/foreach-in.md) statement provides a simple, clean way to iterate through the elements of an array.
 

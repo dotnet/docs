@@ -1,8 +1,6 @@
 ---
 title: "Short Data Type (Visual Basic)"
 ms.date: 01/31/2018
-author: "rpetrusha"
-ms.author: "ronpet"
 f1_keywords: 
   - "vb.Short"
 helpviewer_keywords: 
@@ -18,8 +16,6 @@ helpviewer_keywords:
   - "Short data type"
   - "literal type characters [Visual Basic], S"
 ms.assetid: 65fcbcf3-a841-400e-885e-301497729a8b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Short data type (Visual Basic)
 Holds signed 16-bit (2-byte) integers that range in value from -32,768 through 32,767.  
@@ -52,7 +48,7 @@ Dim number As Short = &H_3264
 
 [!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
-Numeric literals can also include the `S` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `Short` data type, as the following example shows.
+Numeric literals can also include the `S` [type character](../../programming-guide/language-features/data-types/type-characters.md) to denote the `Short` data type, as the following example shows.
 
 ```vb
 Dim number = &H_3264S

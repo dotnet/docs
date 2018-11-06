@@ -13,7 +13,7 @@ Represents a configuration section for creating a subscription to workflow track
 \<trackingProfile>  
   
 ## Syntax  
-  
+
 ```xml
 <system.serviceModel>
   <tracking>

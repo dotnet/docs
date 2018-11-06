@@ -91,7 +91,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |On Windows 10 Anniversary Update and Windows Server 2016: 394802<br /><br /> On all other OS versions: 394806|[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]| 
     |On Windows 10 Creators Update only: 460798<br/><br/> On all other OS versions: 460805 | .NET Framework 4.7 |
     |On Windows 10 Fall Creators Update only: 461308<br/><br/> On all other OS versions: 461310 | .NET Framework 4.7.1 |
-    |On Windows 10 April 2018 Update only: 461808<br/><br/> On all other OS versions: 461814| .NET Framework 4.7.2 |
+    |On Windows 10 October 2018 Update only: 461814<br/><br/> On Windows 10 April 2018 Update only: 461808<br/><br/> On all other OS versions: 461814| .NET Framework 4.7.2 |
     
 <a name="net_c"></a> 
 ## To find .NET Framework versions by querying the registry in code (.NET Framework 1-4)
@@ -142,8 +142,9 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |.NET Framework 4.7 installed on all other Windows OS versions|460805|
     |.NET Framework 4.7.1 installed on Windows 10 Fall Creators Update|461308|
     |.NET Framework 4.7.1 installed on all other Windows OS versions|461310|
+    |.NET Framework 4.7.2 installed on Windows 10 October 2018 Update|461814|
     |.NET Framework 4.7.2 installed on Windows 10 April 2018 Update|461808|
-    |.NET Framework 4.7.2 installed on all other Windows OS versions|461814|
+    |.NET Framework 4.7.2 installed on Windows 10 Fall Creators Update and earlier OS versions|461814|
     
      The following example checks the `Release` value in the registry to determine whether the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or a later version of the .NET Framework is installed.
 
@@ -162,7 +163,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
 - The following example checks the value of the `Release` keyword to determine whether .NET Framework 4.6.2 or higher is installed, regardless of Windows OS version (returning `True` if it is and `False` otherwise).
 
     ```PowerShell
-    Get-ChildItem "HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\" | Get-ItemPropertyValue -Name Release | ForEach-Object { $_ -ge 394802 } 
+    Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\' | Get-ItemPropertyValue -Name Release | Foreach-Object { $_ -ge 394802 } 
     ```
 
     You can replace `394802` in the previous example with another value from the following table to check for a different minimum-required .NET Framework version.

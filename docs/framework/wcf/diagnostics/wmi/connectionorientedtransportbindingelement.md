@@ -8,7 +8,7 @@ ConnectionOrientedTransportBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class ConnectionOrientedTransportBindingElement : TransportBindingElement  
 {  
   datetime ChannelInitializationTimeout;  

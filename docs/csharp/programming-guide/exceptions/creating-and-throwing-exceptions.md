@@ -56,11 +56,12 @@ Exceptions are used to indicate that an error has occurred while running the pro
  New properties should only be added to the exception class when the data they provide is useful to resolving the exception. If new properties are added to the derived exception class, `ToString()` should be overridden to return the added information.  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+For more information, see [Exceptions](~/_csharplang/spec/exceptions.md) and [The throw statement](~/_csharplang/spec/statements.md#the-throw-statement) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See Also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)  
-- [Exception Hierarchy](https://msdn.microsoft.com/library/f7d68675-be06-40fb-a555-05f0c5a6f66b)  
+- [Exception Hierarchy](../../../standard/exceptions/index.md)  
 - [Exception Handling](../../../csharp/programming-guide/exceptions/exception-handling.md)

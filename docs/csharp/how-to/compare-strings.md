@@ -16,7 +16,7 @@ Those two questions are complicated by factors that affect string comparisons:
 - You can choose an ordinal or linguistic comparison.
 - You can choose if case matters.
 - You can choose culture specific comparisons.
-- Linguistic comparisions are culture and platform dependent.
+- Linguistic comparisons are culture and platform dependent.
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
@@ -58,7 +58,7 @@ specify case-insensitive comparisons. These are shown in the following code:
 
 Strings can also be ordered using linguistic rules for the current culture.
 This is sometimes referred to as "word sort order." When you perform a
-linguistic comparision, some nonalphanumeric Unicode characters might have
+linguistic comparison, some nonalphanumeric Unicode characters might have
 special weights assigned. For example, the hyphen "-" may have a very small
 weight assigned to it so that "co-op" and "coop" appear next to each other
 in sort order. In addition, some Unicode characters may be equivalent to a
@@ -111,7 +111,7 @@ Culture-sensitive comparisons are typically used to compare and sort strings inp
 <co-op> is less than <cop> using ordinal comparison
 ```
 
-Linguistic comparisions are dependent on the current culture, and are OS dependent. You must take that into account when you work with string comparisons.
+Linguistic comparisons are dependent on the current culture, and are OS dependent. You must take that into account when you work with string comparisons.
 
 ## Linguistic sorting and searching strings in arrays
 

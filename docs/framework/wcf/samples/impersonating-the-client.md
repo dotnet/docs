@@ -17,7 +17,7 @@ The Impersonation sample demonstrates how to impersonate the caller application 
   
  The service code has been modified such that the `Add` method on the service impersonates the caller using the <xref:System.ServiceModel.OperationBehaviorAttribute> as shown in the following sample code.  
   
-```  
+```csharp
 [OperationBehavior(Impersonation = ImpersonationOption.Required)]  
 public double Add(double n1, double n2)  
 {  
@@ -33,7 +33,7 @@ public double Add(double n1, double n2)
   
  The `DisplayIdentityInformation` method shown in the following sample code is a utility function that displays the caller's identity.  
   
-```  
+```csharp
 static void DisplayIdentityInformation()  
 {  
     Console.WriteLine("\t\tThread Identity            :{0}",  
@@ -48,14 +48,14 @@ static void DisplayIdentityInformation()
   
  The `Subtract` method on the service impersonates the caller using imperative calls as shown in the following sample code.  
   
-```  
+```csharp
 public double Subtract(double n1, double n2)  
 {  
     double result = n1 - n2;  
     Console.WriteLine("Received Subtract({0},{1})", n1, n2);  
     Console.WriteLine("Return: {0}", result);  
-Console.WriteLine("Before impersonating");  
-DisplayIdentityInformation();  
+    Console.WriteLine("Before impersonating");  
+    DisplayIdentityInformation();  
   
     if (ServiceSecurityContext.Current.WindowsIdentity.ImpersonationLevel == TokenImpersonationLevel.Impersonation ||  
         ServiceSecurityContext.Current.WindowsIdentity.ImpersonationLevel == TokenImpersonationLevel.Delegation)  
@@ -74,8 +74,8 @@ DisplayIdentityInformation();
         Console.WriteLine("ImpersonationLevel is not high enough to perform this operation.");  
     }  
   
-Console.WriteLine("After reverting");  
-DisplayIdentityInformation();  
+    Console.WriteLine("After reverting");  
+    DisplayIdentityInformation();  
     return result;  
 }  
 ```  
@@ -86,7 +86,7 @@ DisplayIdentityInformation();
   
  The client code has been modified to set the impersonation level to <xref:System.Security.Principal.TokenImpersonationLevel.Impersonation>. The client specifies the impersonation level to be used by the service, by using the <xref:System.Security.Principal.TokenImpersonationLevel> enumeration. The enumeration supports the following values: <xref:System.Security.Principal.TokenImpersonationLevel.None>, <xref:System.Security.Principal.TokenImpersonationLevel.Anonymous>, <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, <xref:System.Security.Principal.TokenImpersonationLevel.Impersonation> and <xref:System.Security.Principal.TokenImpersonationLevel.Delegation>. To perform an access check when accessing a system resource on the local machine that is protected using Windows ACLs, the impersonation level must be set to <xref:System.Security.Principal.TokenImpersonationLevel.Impersonation>, as shown in the following sample code.  
   
-```  
+```csharp
 // Create a client with given client endpoint configuration  
 CalculatorClient client = new CalculatorClient();  
   

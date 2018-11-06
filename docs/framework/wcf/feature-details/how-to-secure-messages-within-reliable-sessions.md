@@ -2,7 +2,6 @@
 title: "How to: Secure Messages within Reliable Sessions"
 ms.date: "03/30/2017"
 ms.assetid: aee33e50-936f-4486-9ca8-c1520c19a62d
-author: "BrucePerlerMS"
 ---
 
 # How to: Secure Messages within Reliable Sessions

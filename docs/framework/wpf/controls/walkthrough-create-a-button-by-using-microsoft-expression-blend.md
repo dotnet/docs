@@ -125,7 +125,7 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
   
      This creates a "wavy" glass look.  
   
-     ![A rectangle that that looks like glass](../../../../docs/framework/wpf/controls/media/custom-button-blend-glassrectangleproperties2.png "custom_button_blend_glassRectangleProperties2")  
+     ![A rectangle that looks like glass](../../../../docs/framework/wpf/controls/media/custom-button-blend-glassrectangleproperties2.png "custom_button_blend_glassRectangleProperties2")  
   
 11. **Hide the glass layer:** Now that you see what the glassy layer looks like, go into the **Appearance pane** of the **Properties panel** and set the Opacity to 0% to hide it. In the sections ahead, we'll use property triggers and events to show and manipulate the glass layer.  
   

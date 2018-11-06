@@ -13,7 +13,7 @@ To begin, ensure that you have [F# and the Ionide plugin correctly installed](in
 
 To create a new F# project, open Visual Studio Code in a new folder (you can name it whatever you like).
 
-Next, open the command pallette (**View > Command Pallette**) and type the following:
+Next, open the command palette (**View > Command Palette**) and type the following:
 
 ```
 > F# new project

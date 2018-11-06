@@ -1,50 +1,44 @@
 ---
-title: "Downloading Sample Databases"
-ms.date: "03/30/2017"
+title: "Get the sample databases for ADO.NET code samples"
+description: "Download the sample databases used in the code samples in the ADO.NET documentation, as well as SQL Server and management tools"
+ms.date: "10/18/2018"
 ms.assetid: ef9d69a1-9461-43fe-94bb-7c836754bcb5
 ---
-# Downloading Sample Databases
-A number of samples and walkthroughs in the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] documentation use the Northwind sample database and SQL Server Express Edition. You can download these products free of charge from the Microsoft download site.  
+# Get the sample databases for ADO.NET code samples
+
+A number of samples and walkthroughs in the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] documentation use sample databases and SQL Server Express. You can download these products free of charge from Microsoft.
+
+## Get the Northwind sample database
+
+Download the script `instnwnd.sql` to create and load the Northwind sample database from the following GitHub repo:
+
+[Northwind and pubs sample databases for Microsoft SQL Server](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs)
+
+Before you can use the Northwind database, you have to recreate the database on an instance of SQL Server by using [SQL Server Management Studio](#get_ssms) or a similar tool to run the `instnwnd.sql` script file. Follow the instructions in the Readme file in the repo.
+
+## Get the AdventureWorks sample database
+
+Download the AdventureWorks sample database from the following GitHub repository:
+
+[AdventureWorks sample databases](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
+
+After you download one of the database backup (\*.bak) files, restore the backup to an instance of SQL Server by using SQL Server Management Studio (SSMS). See [Get SQL Server Management Studio](#get_ssms).
+
+## <a name="get_sql"></a> Get SQL Server Express
+
+SQL Server Express is a free, entry-level edition of SQL Server that you can redistribute with applications. Download SQL Server Express from the following page:
   
-## Downloading the Northwind Database  
+[SQL Server Express Editions](https://www.microsoft.com/sql-server/sql-server-editions-express)
+
+If you're using [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), SQL Server Express LocalDB is included in the free Community edition as well as the Professional and higher editions.  
+
+## <a name="get_ssms"></a> Get SQL Server Management Studio
+If you want to view or modify a database that you've downloaded, you can use SQL Server Management Studio (SSMS). Download SSMS from the following page:
+
+[Download SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) 
+
+You can also view and manage databases in the Visual Studio integrated development environment (IDE). In [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), connect to the database from **SQL Server Object Explorer**, or create a Data Connection to the database in **Server Explorer**. Open these explorer panes from the **View** menu.
   
-#### To download and install the Northwind sample database for SQL Server  
-  
-1.  Start Internet Explorer.  
-  
-2.  Go to the [Northwind and Pubs Sample Databases](https://go.microsoft.com/fwlink?linkid=64296) Web site.  
-  
-3.  Click **Download**.  
-  
-4.  In the **File Download** dialog box, select **Save**.  
-  
-5.  After the file has downloaded, double-click the **Nwind.exe** file to install the database.  
-  
-     By default, the database is installed at *drive*:\SQL Server 2000 Sample Databases.  
-  
-## Downloading SQL Server Express Edition  
- SQL Server Express Edition is available without charge, and you can redistribute it with applications. If you are using Visual Studio, SQL Server Express Edition is included in the Pro and greater editions.  
-  
-#### To download and install SQL Server Express Edition  
-  
-1.  Start Internet Explorer.  
-  
-2.  Go to the [Microsoft Download Center](https://go.microsoft.com/fwlink?linkid=74602) Web site.  
-  
-3.  In the keywords box, type **SQL Server Express**.  
-  
-4.  Click **Go**.  
-  
-5.  On the results page, click the link to the **Microsoft SQL Server 2005 Express Edition** download page.  
-  
-6.  Follow the installation instructions on the Web site.  
-  
-## Downloading Management Studio Express  
- If you want to modify a database that you have downloaded, you can access the database from **Server Explorer** in the Visual Studio integrated development environment (IDE), or use Microsoft SQL Server Management Studio Express (SSMSE).  
-  
-#### To download Management Studio Express  
-  
--   Follow the instructions at the [SSMSE site](https://go.microsoft.com/fwlink/?LinkId=95933).  
-  
-## See Also  
- [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)
+## See also
+
+- [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)

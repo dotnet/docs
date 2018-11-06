@@ -17,7 +17,7 @@ In the following sections, you will find resources on how to use a range of Azur
 
 Azure supports a wide range of virtual machine (VM) configurations, see [Linux and Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines/).
 
-To install F# on a virtual machine for execution, compilation and/or scripting see [Using F# on Linux](http://fsharp.org/use/linux) and [Using F# on Windows](http://fsharp.org/use/windows).
+To install F# on a virtual machine for execution, compilation and/or scripting see [Using F# on Linux](https://fsharp.org/use/linux) and [Using F# on Windows](https://fsharp.org/use/windows).
 
 
 ## Using Azure Functions with F# #
@@ -34,7 +34,7 @@ Other resources for using Azure Functions and F#:
 
 ## Using Azure Storage with F# #
 
-Azure Storage is a base layer of storage services for modern applications that rely on durability, availability, and scalability to meet the needs of customers. F# programs can interact directly with Azure storage services, using the techinques described in the following articles.
+Azure Storage is a base layer of storage services for modern applications that rely on durability, availability, and scalability to meet the needs of customers. F# programs can interact directly with Azure storage services, using the techniques described in the following articles.
 
 * [Get started with Azure Blob storage using F#](blob-storage.md)
 * [Get started with Azure File storage using F#](file-storage.md)

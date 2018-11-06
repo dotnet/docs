@@ -2,8 +2,6 @@
 title: "Integrated Windows Authentication with Extended Protection"
 ms.date: "03/30/2017"
 ms.assetid: 81731998-d5e7-49e4-ad38-c8e6d01689d0
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Integrated Windows Authentication with Extended Protection
 Enhancements were made that affect how integrated Windows authentication is handled by the <xref:System.Net.HttpWebRequest>, <xref:System.Net.HttpListener>, <xref:System.Net.Mail.SmtpClient>, <xref:System.Net.Security.SslStream>, <xref:System.Net.Security.NegotiateStream>, and related classes in the <xref:System.Net> and related namespaces. Support was added for extended protection to enhance security.  

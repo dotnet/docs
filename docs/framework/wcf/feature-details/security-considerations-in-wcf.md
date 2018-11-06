@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "Windows Communication Foundation, security"
   - "WCF, security"
 ms.assetid: 42055ee0-6d0c-443d-9d89-788dfc345d6d
-author: "BrucePerlerMS"
 ---
 # Security Considerations in WCF
 The topics in this section list various security-related items to consider when designing a Windows Communication Foundation (WCF) application.  

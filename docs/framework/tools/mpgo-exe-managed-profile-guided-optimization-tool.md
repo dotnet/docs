@@ -94,7 +94,7 @@ mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
  This process ensures that all assemblies have optimization data. If you check in updated optimized assemblies (steps 1 and 2) more frequently, the performance numbers will be more consistent throughout product development.  
   
 ## Using Mpgo.exe from Visual Studio  
- You can run Mpgo.exe from Visual Studio (see the article [How to: Specify Build Events (C#)](https://msdn.microsoft.com/library/b4ce1ad9-5215-4b6f-b6a2-798b249aa335)) with the following restrictions:  
+ You can run Mpgo.exe from Visual Studio (see the article [How to: Specify Build Events (C#)](/visualstudio/ide/how-to-specify-build-events-csharp)) with the following restrictions:  
   
 -   You cannot use quoted paths with trailing slash marks, because Visual Studio macros also use trailing slash marks by default. (For example, `–OutDir "C:\Output Folder\"` is invalid.) To work around this restriction, you can escape the trailing slash. (For example, use `-OutDir "$(OutDir)\"` instead.)  
   

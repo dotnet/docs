@@ -5,7 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 640676b6-c75a-4ff7-aea4-b1a1524d71b2
-author: "BrucePerlerMS"
 ---
 # How to: Create a Security Context Token for a Secure Session
 By using a stateful security context token (SCT) in a secure session, the session can withstand the service being recycled. For instance, when a stateless SCT is used in a secure session and Internet Information Services (IIS) is reset, then the session data that is associated with the service is lost. This session data includes an SCT token cache. So, the next time a client sends the service a stateless SCT, an error is returned, because the key that is associated with the SCT cannot be retrieved. If, however, a stateful SCT is used, then the key that is associated with the SCT is contained within the SCT. Because the key is contained within the SCT and thus contained within the message, the secure session is not affected by the service being recycled. By default, Windows Communication Foundation (WCF) uses stateless SCTs in a secure session. This topic details how to use stateful SCTs in a secure session.  

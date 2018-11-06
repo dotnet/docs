@@ -121,4 +121,4 @@ closer to the end of the array.
 ## See also
 
 - [ref keyword](../../language-reference/keywords/ref.md)  
-- [Reference Semantics with Value Types](../../../csharp/reference-semantics-with-value-types.md)
+- [Write safe efficient code](../../../csharp/write-safe-efficient-code.md)

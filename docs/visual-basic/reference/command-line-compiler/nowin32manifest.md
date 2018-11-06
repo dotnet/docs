@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "nowin32manifest compiler option [Visual Basic]"
   - "-nowin32manifest compiler option [Visual Basic]"
 ms.assetid: c0528aae-83b3-4425-99f0-19448e9843e3
-author: rpetrusha
-ms.author: ronpet
 ---
 # -nowin32manifest (Visual Basic)
 Instructs the compiler not to embed any application manifest into the executable file.  

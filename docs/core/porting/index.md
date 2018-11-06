@@ -3,11 +3,11 @@ title: Porting to .NET Core from .NET Framework
 description: Understand the porting process and discover tools you may find helpful when porting a .NET Framework project to .NET Core.
 author: cartermp
 ms.author: mairaw
-ms.date: 06/20/2016
+ms.date: 10/23/2018
 ---
 # Porting to .NET Core from .NET Framework
 
-If you've got code running on the .NET Framework, you may be interested in running your code on .NET Core 1.0.  This article covers an overview of the porting process and a list of the tools you may find helpful when porting to .NET Core.
+If you've got code running on the .NET Framework, you may be interested in running your code on .NET Core.  This article covers an overview of the porting process and a list of the tools you may find helpful when porting to .NET Core.
 
 ## Overview of the Porting Process
 
@@ -17,7 +17,7 @@ The recommended process for porting follows the following series of steps.  Each
 
    This will involve understanding what your third-party dependencies are, how you depend on them, how to see if they also run on .NET Core, and steps you can take if they don't.
    
-2. Retarget all projects you wish to port to target .NET Framework 4.6.2.
+2. Retarget all projects you wish to port to target the latest version of .NET Framework.
 
    This ensures that you can use API alternatives for .NET Framework-specific targets in the cases where .NET Core can't support a particular API.
    
@@ -27,7 +27,7 @@ The recommended process for porting follows the following series of steps.  Each
    
 4. Port your tests code.
 
-   Because porting to .NET Core is such a big change to your codebase, it's highly recommended to get your tests ported so that you can run tests as you port code over.  MSTest, xUnit, and NUnit all support .NET Core 1.0 today.
+   Because porting to .NET Core is such a big change to your codebase, it's highly recommended to get your tests ported so that you can run tests as you port code over.  MSTest, xUnit, and NUnit all support .NET Core today.
    
 6. Execute your plan for porting!
 

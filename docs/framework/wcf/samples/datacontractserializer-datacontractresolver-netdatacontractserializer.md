@@ -13,7 +13,7 @@ This sample demonstrates how the use of <xref:System.Runtime.Serialization.DataC
 
  The following code example shows the implementation of a custom <xref:System.Runtime.Serialization.DataContractResolver> named `MyDataContractResolver` that is added to the <xref:System.Runtime.Serialization.DataContractSerializer> in the DCSwithDCR project.
 
-```
+```csharp
 class MyDataContractResolver : DataContractResolver
 {
     private XmlDictionary dictionary = new XmlDictionary();

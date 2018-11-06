@@ -171,11 +171,11 @@ public static async Task<PredictionModel<SentimentData, SentimentPrediction>> Tr
 
 ## Ingest the data
 
-Initialize a new instance of <xref:Microsoft.ML.LearningPipeline> that will include the data loading, data processing/featurization, and model. Add the following code as the first line of the `Train` method:
+Initialize a new instance of <xref:Microsoft.ML.Legacy.LearningPipeline> that will include the data loading, data processing/featurization, and model. Add the following code as the first line of the `Train` method:
 
 [!code-csharp[LearningPipeline](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#5 "Create a learning pipeline")]
 
-The <xref:Microsoft.ML.Data.TextLoader> object is the first part of the pipeline, and loads the training file data.
+The <xref:Microsoft.ML.Legacy.Data.TextLoader> object is the first part of the pipeline, and loads the training file data.
 
 [!code-csharp[TextLoader](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#6 "Add a text loader to the pipeline")]
 
@@ -183,13 +183,13 @@ The <xref:Microsoft.ML.Data.TextLoader> object is the first part of the pipeline
 
 Pre-processing and cleaning data are important tasks that occur before a dataset is used effectively for machine learning. Raw data is often noisy and unreliable, and may be missing values. Using data without these modeling tasks can produce misleading results. ML.NET's transform pipelines allow you to compose a custom set of transforms that are applied to your data before training or testing. The transforms' primary purpose is for data featurization. A transform pipeline's advantage is that after transform pipeline definition, save the pipeline to apply it to test data.
 
-Apply a <xref:Microsoft.ML.Transforms.TextFeaturizer> to convert the `SentimentText` column into a [numeric vector](../resources/glossary.md#numerical-feature-vector) called `Features` used by the machine learning algorithm. This is the preprocessing/featurization step. Using additional components available in ML.NET can enable better results with your model. Add `TextFeaturizer` to the pipeline as the next line of code:
+Apply a <xref:Microsoft.ML.Legacy.Transforms.TextFeaturizer> to convert the `SentimentText` column into a [numeric vector](../resources/glossary.md#numerical-feature-vector) called `Features` used by the machine learning algorithm. This is the preprocessing/featurization step. Using additional components available in ML.NET can enable better results with your model. Add `TextFeaturizer` to the pipeline as the next line of code:
 
 [!code-csharp[TextFeaturizer](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#7 "Add a TextFeaturizer to the pipeline")]
 
 ## Choose a learning algorithm
 
-The <xref:Microsoft.ML.Trainers.FastTreeBinaryClassifier> object is a decision tree learner you'll use in this pipeline. Similar to the featurization step, trying out different learners available in ML.NET and changing their parameters leads to different results. For tuning, you can set [hyperparameters](../resources/glossary.md#hyperparameter) like <xref:Microsoft.ML.Trainers.FastTreeBinaryClassifier.NumTrees>, <xref:Microsoft.ML.Trainers.FastTreeBinaryClassifier.NumLeaves>, and <xref:Microsoft.ML.Trainers.FastTreeBinaryClassifier.MinDocumentsInLeafs>. These hyperparameters are set before anything affects the model and are model-specific. They're used to tune the decision tree for performance, so larger values can negatively impact performance.
+The <xref:Microsoft.ML.Legacy.Trainers.FastTreeBinaryClassifier> object is a decision tree learner you'll use in this pipeline. Similar to the featurization step, trying out different learners available in ML.NET and changing their parameters leads to different results. For tuning, you can set [hyperparameters](../resources/glossary.md#hyperparameter) like <xref:Microsoft.ML.Legacy.Trainers.FastTreeBinaryClassifier.NumTrees>, <xref:Microsoft.ML.Legacy.Trainers.FastTreeBinaryClassifier.NumLeaves>, and <xref:Microsoft.ML.Legacy.Trainers.FastTreeBinaryClassifier.MinDocumentsInLeafs>. These hyperparameters are set before anything affects the model and are model-specific. They're used to tune the decision tree for performance, so larger values can negatively impact performance.
 
 Add the following code to the `Train` method:
 
@@ -197,7 +197,7 @@ Add the following code to the `Train` method:
 
 ## Train the model
 
-You train the model, <xref:Microsoft.ML.PredictionModel%602>, based on the dataset that has been loaded and transformed. `pipeline.Train<SentimentData, SentimentPrediction>()` trains the pipeline (loads the data, trains the featurizer and learner). The experiment is not executed until this happens.
+You train the model, <xref:Microsoft.ML.Legacy.PredictionModel%602>, based on the dataset that has been loaded and transformed. `pipeline.Train<SentimentData, SentimentPrediction>()` trains the pipeline (loads the data, trains the featurizer and learner). The experiment is not executed until this happens.
 
 Add the following code to the `Train` method:
 
@@ -235,15 +235,15 @@ Add a call to the new method from the `Main` method, right under the `Train` met
 
 [!code-csharp[CallEvaluate](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#12 "Call the Evaluate method")]
 
-The <xref:Microsoft.ML.Data.TextLoader> class loads the new test dataset with the same schema. You can evaluate the model using this dataset as a quality check. Add the following code to the `Evaluate` method:
+The <xref:Microsoft.ML.Legacy.Data.TextLoader> class loads the new test dataset with the same schema. You can evaluate the model using this dataset as a quality check. Add the following code to the `Evaluate` method:
 
 [!code-csharp[LoadText](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#13 "Load the test dataset")]
 
-The <xref:Microsoft.ML.Models.BinaryClassificationEvaluator> object computes the quality metrics for the `PredictionModel` using the specified dataset. To see those metrics, add the evaluator as the next line in the `Evaluate` method, with the following code:
+The <xref:Microsoft.ML.Legacy.Models.BinaryClassificationEvaluator> object computes the quality metrics for the `PredictionModel` using the specified dataset. To see those metrics, add the evaluator as the next line in the `Evaluate` method, with the following code:
 
 [!code-csharp[BinaryEvaluator](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#14 "Create the binary evaluator")]
 
-The <xref:Microsoft.ML.Models.BinaryClassificationMetrics> contains the overall metrics computed by binary classification evaluators. To display these to determine the quality of the model, you need to get the metrics first. Add the following code:
+The <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics> contains the overall metrics computed by binary classification evaluators. To display these to determine the quality of the model, you need to get the metrics first. Add the following code:
 
 [!code-csharp[CreateMetrics](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#15 "Evaluate the model and create metrics")]
 
@@ -279,7 +279,7 @@ Add some comments to test the trained model's predictions in the `Predict` metho
 
 [!code-csharp[PredictionData](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#18 "Create test data for predictions")]
 
-Now that you have a model, you can use that to predict the positive or negative sentiment of the comment data using the <xref:Microsoft.ML.PredictionModel.Predict%2A?displayProperty=nameWithType> method. To get a prediction, use `Predict` on new data. Note that the input data is a string and the model includes the featurization. Your pipeline is in sync during training and prediction. You didn’t have to write preprocessing/featurization code specifically for predictions, and the same API takes care of both batch and one-time predictions.
+Now that you have a model, you can use that to predict the positive or negative sentiment of the comment data using the <xref:Microsoft.ML.Legacy.PredictionModel.Predict%2A?displayProperty=nameWithType> method. To get a prediction, use `Predict` on new data. Note that the input data is a string and the model includes the featurization. Your pipeline is in sync during training and prediction. You didn’t have to write preprocessing/featurization code specifically for predictions, and the same API takes care of both batch and one-time predictions.
 
 [!code-csharp[Predict](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#19 "Create predictions of sentiments")]
 

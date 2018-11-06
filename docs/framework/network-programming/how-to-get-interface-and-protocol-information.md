@@ -4,8 +4,6 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Network"
 ms.assetid: fd88d26c-4063-495e-a253-736ac3e6b23f
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # How to: Get Interface and Protocol Information
 This sample shows how to read the TCP statistics of a network interface.  

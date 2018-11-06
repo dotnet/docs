@@ -29,7 +29,7 @@ This topic outlines some best practices for hosting Windows Communication Founda
 ## WCF in Multi-Homed or Multi-named scenarios  
  You can deploy WCF services inside of an IIS Web farm, where a set of computers share a common external name (such as `http://www.contoso.com`) but are individually addressed by different hostnames (for example, `http://www.contoso.com` might direct traffic to two different machines named `http://machine1.internal.contoso.com` and `http://machine2.internal.contoso.com`). This deployment scenario is fully supported by WCF, but requires special configuration of the IIS Web site hosting WCF services to display the correct (external) hostname in the service's metadata (Web Services Description Language).  
   
- To ensure that the correct hostname appears in the service metadata WCF generates, configure the default identity for the IIS Web site that hosts WCF services to use an explicit hostname. For example, computers that reside inside of the www.contoso.com farm should use an IIS site binding of *:80:www.contoso.com for HTTP and \*:443:www.contoso.com for HTTPS.  
+ To ensure that the correct hostname appears in the service metadata WCF generates, configure the default identity for the IIS Web site that hosts WCF services to use an explicit hostname. For example, computers that reside inside of the `www.contoso.com` farm should use an IIS site binding of *:80:www.contoso.com for HTTP and \*:443:www.contoso.com for HTTPS.  
   
  You can configure IIS Web site bindings by using the IIS Microsoft Management Console (MMC) snap-in.  
   

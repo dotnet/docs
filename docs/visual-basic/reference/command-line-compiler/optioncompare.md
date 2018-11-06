@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "-optioncompare compiler option [Visual Basic]"
   - "/optioncompare compiler option [Visual Basic]"
 ms.assetid: 7237b766-b44d-4cc5-9a3c-885348a7d9e4
-author: rpetrusha
-ms.author: ronpet
 ---
 # -optioncompare
 Specifies how string comparisons are made.  

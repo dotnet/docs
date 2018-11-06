@@ -1,6 +1,6 @@
 ---
 title: "|| Operator (C# Reference)"
-ms.date: 07/20/2015
+ms.date: 11/06/2018
 f1_keywords: 
   - "||_CSharpKeyword"
 helpviewer_keywords: 
@@ -10,36 +10,26 @@ helpviewer_keywords:
 ms.assetid: 7d442d8e-400d-421f-b4d2-034bf82bcbdc
 ---
 # || Operator (C# Reference)
-The conditional-OR operator (`||`) performs a logical-OR of its `bool` operands. If the first operand evaluates to `true`, the second operand isn't evaluated. If the first operand evaluates to `false`, the second operator determines whether the OR expression as a whole evaluates to `true` or `false`.  
-  
-## Remarks  
- The operation  
-  
-```csharp  
-x || y  
-```  
-  
- corresponds to the operation  
-  
-```csharp  
-x | y  
-```  
-  
- except that if `x` is `true`, `y` is not evaluated because the OR operation is `true` regardless of the value of `y`. This concept is known as "short-circuit" evaluation.  
-  
- The conditional-OR operator cannot be overloaded, but overloads of the regular logical operators and the [true](../../../csharp/language-reference/keywords/true.md) and [false](../../../csharp/language-reference/keywords/false.md) operators are, with certain restrictions, also considered to be overloads of the conditional logical operators.  
-  
-## Example  
- In the following examples, the expression that uses `||` evaluates only the first operand. The expression that uses `|` evaluates both operands. In the second example, a run-time exception occurs if both operands are evaluated.  
-  
- [!code-csharp[csRefOperators#52](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-or-operator_1.cs)]  
-  
-## C# Language Specification  
 
-For more information, see [Conditional logical operators](~/_csharplang/spec/expressions.md#conditional-logical-operators) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
-  
-## See Also
+The conditional logical OR operator `||`, also known as the "short-circuiting" logical OR operator, computes the logical OR of its [bool](../keywords/bool.md) operands. The result of `x || y` is `true` if either `x` or `y` evaluates to `true`. Otherwise, the result is `false`. If the first operand evaluates to `true`, the second operand is not evaluated and the result of operation is `true`. The following example demonstrates that behavior:
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [C# Operators](../../../csharp/language-reference/operators/index.md)
+[!code-csharp-interactive[conditional logical OR](~/samples/snippets/csharp/language-reference/operators/ConditionalLogicalOperatorsExamples.cs#Or)]
+
+The [logical OR operator](or-operator.md) `|` also computes the logical OR of its `bool` operands, but always evaluates both operands.
+
+## Operator overloadability
+
+A user-defined type cannot overload the conditional logical OR operator. However, if a user-defined type overloads the [logical OR](or-operator.md), [true](../keywords/true-operator.md), and [false](../keywords/false-operator.md) operators in a certain way, the `||` operation can be evaluated for the operands of that type. For more information, see the [User-defined conditional logical operators](~/_csharplang/spec/expressions.md#user-defined-conditional-logical-operators) section of the [C# language specification](../language-specification/index.md).
+
+## C# language specification
+
+For more information, see the [Conditional logical operators](~/_csharplang/spec/expressions.md#conditional-logical-operators) section of the [C# language specification](../language-specification/index.md).
+
+## See also
+
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Operators](index.md)
+- [&& operator](conditional-and-operator.md)
+- [! operator](logical-negation-operator.md)
+- [| operator](or-operator.md)

@@ -18,7 +18,7 @@ This document covers the following concepts related to model training in ML.NET:
   - In ML.NET, data is very similar to a SQL view: it's a lazily-evaluated, immutable, cursorable, heterogenous, schematized dataset. 
   - An excellent document about the data interface is [IDataView Design Principles](https://github.com/dotnet/machinelearning/blob/master/docs/code/IDataViewDesignPrinciples.md).
 - [*Transformer*](#transformer), represented as `ITransformer` interface.
-  - In one sentence, a transformer is a component that takes data, does some work on it, and returns new 'transformed' data.
+  - A transformer is a component that takes data, does some work on it, and returns new 'transformed' data.
   - For example, you can think of a machine learning model as a transformer that takes features and returns predictions.
   - Another example, 'text tokenizer' would take a single text column and output a vector column with individual 'words' extracted out of the texts.
 - [*Data reader*](#data-reader), represented as an `IDataReader<T>` interface.
@@ -32,15 +32,15 @@ This document covers the following concepts related to model training in ML.NET:
 
 ## Data
 
-In ML.NET, data is very similar to a SQL view: it's a lazily-evaluated, cursorable, heterogenous, schematized dataset.
+In ML.NET, data is very similar to a SQL view: It's a lazily-evaluated, cursorable, heterogenous, schematized dataset.
 
 - It has *Schema* (an instance of an `ISchema` interface), that contains the information about the data view's columns.
   - Each column has a *Name*, a *Type*, and an arbitrary set of *metadata* associated with it.
   - It is important to note that one of the types is the `vector<T, N>` type, which means that the column's values are *vectors of items of type T, with the size of N*. This is a recommended way to represent multi-dimensional data associated with every row, like pixels in an image, or tokens in a text.
   - The column's *metadata* contains information like 'slot names' of a vector column and suchlike. The metadata itself is actually represented as another one-row *data*, that is unique to each column.
-- The data view is a source of *cursors*. Think SQL cursors: a cursor is an object that iterates through the data, one row at a time, and presents the available data.
-  - Naturally, data can have as many active cursors over it as needed: since data itself is immutable, cursors are truly independent.
-  - Note that cursors typically access only a subset of columns: for efficiency, we do not compute the values of columns that are not 'needed' by the cursor.
+- The data view is a source of *cursors*. Think SQL cursors: A cursor is an object that iterates through the data, one row at a time, and presents the available data.
+  - Naturally, data can have as many active cursors over it as needed. Since data itself is immutable, cursors are truly independent.
+  - Note that cursors typically access only a subset of columns: For efficiency, ML.NET doesn't compute the values of columns that are not needed by the cursor.
 
 ## Transformer
 
@@ -80,7 +80,7 @@ A useful property of a transformer is that *you can phrase a sequential applicat
 var fullTransformer = transformer1.Append(transformer2).Append(transformer3);
 ```
 
-We utilize this property a lot in ML.NET: typically, the trained ML.NET model is a 'chain of transformers', which is, for all intents and purposes, a *transformer*. 
+This property is commonly used in ML.NET: typically, the trained ML.NET model is a chain of transformers, which is, for all intents and purposes, a *transformer*. 
 
 ## Data reader
 
@@ -120,30 +120,33 @@ public interface IEstimator<out TTransformer>
 }
 ```
 
-You can easily imagine how *a sequence of estimators can be phrased as an estimator* of its own. In ML.NET, we rely on this property to create 'learning pipelines' that chain together different estimators:
+You can easily imagine how *a sequence of estimators can be phrased as an estimator* of its own. In ML.NET, use this property to create learning pipelines that chain together different estimators:
 
 ```c#
-var env = new LocalEnvironment(); // Initialize the ML.NET environment.
-var estimator = new ConcatEstimator(env, "Features", "SepalLength", "SepalWidth", "PetalLength", "PetalWidth")
-    .Append(new ToKeyEstimator(env, "Label"))
-    .Append(new SdcaMultiClassTrainer(env, "Features", "Label")) // This is the actual 'machine learning algorithm'.
-    .Append(new ToValueEstimator(env, "PredictedLabel"));
+MLContext mlContext = new MLContext(seed: 0);
 
-var endToEndModel = estimator.Fit(data); // This now contains all the transformers that were used at training.
+var pipeline = new CopyColumnsEstimator(mlContext, "FareAmount", "Label")
+.Append(new OneHotEncodingEstimator(mlContext, "VendorId"))
+.Append(new OneHotEncodingEstimator(mlContext, "RateCode"))
+.Append(new OneHotEncodingEstimator(mlContext, "PaymentType"))
+.Append(new ColumnConcatenatingEstimator(mlContext, "Features", "VendorId", "RateCode", "PassengerCount", "TripTime", "TripDistance", "PaymentType"))
+.Append(mlContext.Regression.Trainers.FastTree("Label", "Features"));
+
+var model = pipeline.Fit(dataView);
 ```
 
-One important property of estimators is that *estimators are eager, not lazy*: every call to `Fit` is causing 'learning' to happen, which is potentially a time-consuming operation.
+One important property of estimators is that *estimators are eager, not lazy*: every call to `Fit` is causing learning to happen, which is potentially a time-consuming operation.
 
 ## Prediction function
 
-The prediction function can be seen as a machine that applies a transformer to one 'row', such as at prediction time.
+The prediction function can be seen as a machine that applies a transformer to one row, such as at prediction time.
 
-Once we obtain the model (a *transformer* either trained via `Fit()`, or loaded from somewhere), we can use it to make 'predictions' using the normal calls to `model.Transform(data)`. However, when we use this model in a real life scenario, we often don't have a whole 'batch' of examples to predict on. Instead, we have one example at a time, and we need to make timely predictions on them immediately.
+Once you get the model (a *transformer* either trained via `Fit()`, or loaded from somewhere), you can use it to make predictions using the normal calls to `model.Transform(data)`. However, when you use this model in a real life scenario, you often don't have a lot of examples to predict on. Instead, you have one example at a time, and you need to make timely predictions on them immediately.
 
-Of course, we can reduce this to the batch prediction:
+Of course, you can reduce this to the batch prediction:
 
 - Create a data view with exactly one row.
-- Call `model.Transform(data)` to obtain the 'predicted data view'.
+- Call `model.Transform(data)` to obtain the predicted data view.
 - Get a cursor over the resulting data.
 - Advance the cursor one step to get to the first (and only) row.
 - Extract the predicted values out of it.
@@ -156,8 +159,8 @@ var outputData = model.Transform(inputData);
 var output = outputData.AsDynamic.AsEnumerable<OutputPrediction>(env, reuseRowObject: false).Single();
 ```
 
-But this would be cumbersome, and would incur performance costs. 
-Instead, we have a 'prediction function' object that performs the same work, but faster and more convenient, via an extension method `MakePredictionFunction`:
+But this is cumbersome and incurs performance costs. 
+Instead, a prediction function object performs the same work, but faster and more convenient, via an extension method `MakePredictionFunction`:
 
 ```c#
 var predictionFunc = model.MakePredictionFunction<InputExample, OutputPrediction>(env);

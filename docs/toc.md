@@ -1143,7 +1143,7 @@
 
 <!-- ML.NET Content -->
 # [ML.NET Guide](machine-learning/index.md)
-## [Overview]
+## Overview
 ### [What is ML.NET?](machine-learning/what-is-mldotnet.md)
 ### [Model training concepts](machine-learning/basic-concepts-model-training-in-mldotnet.md)
 ## [Tutorials](machine-learning/tutorials/index.md)

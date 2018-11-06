@@ -16,7 +16,7 @@ This document covers the following concepts related to model training in ML.NET:
 
 - [*Data*](#data), represented as an `IDataView` interface.
   - In ML.NET, data is very similar to a SQL view: it's a lazily-evaluated, immutable, cursorable, heterogenous, schematized dataset. 
-  - An excellent document about the data interface is [IDataView Design Principles](IDataViewDesignPrinciples.md).
+  - An excellent document about the data interface is [IDataView Design Principles](https://github.com/dotnet/machinelearning/blob/master/docs/code/IDataViewDesignPrinciples.md).
 - [*Transformer*](#transformer), represented as `ITransformer` interface.
   - In one sentence, a transformer is a component that takes data, does some work on it, and returns new 'transformed' data.
   - For example, you can think of a machine learning model as a transformer that takes features and returns predictions.
@@ -148,7 +148,7 @@ Of course, we can reduce this to the batch prediction:
 - Advance the cursor one step to get to the first (and only) row.
 - Extract the predicted values out of it.
 
-The above algorithm can be implemented using the [schema comprehension](SchemaComprehension.md), with two user-defined objects `InputExample` and `OutputPrediction` as follows:
+The above algorithm can be implemented using the [schema comprehension](https://github.com/dotnet/machinelearning/blob/master/docs/code/SchemaComprehension.md), with two user-defined objects `InputExample` and `OutputPrediction` as follows:
 
 ```c#
 var inputData = env.CreateDataView(new InputExample[] { example });

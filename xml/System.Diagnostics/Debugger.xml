@@ -255,7 +255,7 @@ Console.WriteLine("Hello, world.");
       <Docs>
         <summary>Checks to see if logging is enabled by an attached debugger.</summary>
         <returns>
-          <see langword="true" /> if a debugger is attached and logging is enabled; otherwise, <see langword="false" />. The attached debugger is the registered managed debugger in the <see langword="DbgManagedDebugger" /> registry key. For more information on this key, see [Enabling JIT-Attach Debugging](~/docs/framework/debug-trace-profile/enabling-jit-attach-debugging.md).</returns>
+          <see langword="true" /> if a debugger is attached and logging is enabled; otherwise, <see langword="false" />. The attached debugger is the registered managed debugger in the <see langword="DbgManagedDebugger" /> registry key. For more information on this key, see <see href="https://docs.microsoft.com/dotnet/framework/debug-trace-profile/enabling-jit-attach-debugging">Enabling JIT-Attach Debugging</see>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

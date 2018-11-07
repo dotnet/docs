@@ -324,7 +324,7 @@
       <Parameters />
       <Docs>
         <summary>Returns a <see cref="T:System.IO.MemoryStream" /> object that represents the property values of a <see cref="T:System.Printing.PrintTicket" /> as an XML stream that conforms to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
-        <returns>A <see cref="T:System.IO.MemoryStream" /> object that describes the print ticket with XML that conforms to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</returns>
+        <returns>A <see cref="T:System.IO.MemoryStream" /> object that describes the print ticket with XML that conforms to the <see href="https://docs.microsoft.com/windows/desktop/printdocs/printschema">Print Schema</see>.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

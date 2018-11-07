@@ -242,7 +242,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
       <Parameters />
       <Docs>
         <summary>Returns a semantic markup language (SML) document for the semantic information in the <see cref="T:System.Speech.Recognition.RecognizedPhrase" /> object.</summary>
-        <returns>Returns an SML description of the semantics of the <see cref="T:System.Speech.Recognition.RecognizedPhrase" /> as an [XPath](http://msdn.microsoft.com/library/ms256115.aspx) navigable object.</returns>
+        <returns>Returns an SML description of the semantics of the <see cref="T:System.Speech.Recognition.RecognizedPhrase" /> as an <see href="https://msdn.microsoft.com/library/ms256115.aspx">XPath</see> navigable object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

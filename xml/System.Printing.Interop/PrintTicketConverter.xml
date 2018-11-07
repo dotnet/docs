@@ -206,7 +206,7 @@
         <param name="printTicket">The <see cref="T:System.Printing.PrintTicket" /> to convert.</param>
         <param name="baseType">A value that identifies whether to use the user default or printer default DEVMODE as the base DEVMODE.</param>
         <summary>Converts the specified managed <see cref="T:System.Printing.PrintTicket" /> to an unmanaged [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure that is based on the [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure identified by the <see cref="T:System.Printing.Interop.BaseDevModeType" />.</summary>
-        <returns>A <see cref="T:System.Byte" /> array that contains the new [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure.</returns>
+        <returns>A <see cref="T:System.Byte" /> array that contains the new <see href="https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodea">DEVMODE</see> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -251,7 +251,7 @@
         <param name="baseType">A value that identifies whether to use the user default or printer default DEVMODE as the base DEVMODE.</param>
         <param name="scope">A <see cref="T:System.Printing.PrintTicketScope" /> value that specifies whether the conversion of the <see cref="T:System.Printing.PrintTicket" /> should be done at the scope of a page, a document, or an entire print job.</param>
         <summary>Converts the specified managed code <see cref="T:System.Printing.PrintTicket" /> with the specified scope, into an unmanaged [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure that is based on the [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure identified by the <see cref="T:System.Printing.Interop.BaseDevModeType" />.</summary>
-        <returns>A <see cref="T:System.Byte" /> buffer that represents the new [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure.</returns>
+        <returns>A <see cref="T:System.Byte" /> buffer that represents the new <see href="https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodea">DEVMODE</see> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -97,7 +97,7 @@
         <param name="iid">The GUID of the requested interface.</param>
         <param name="ppv">A reference to the requested interface, when this method returns.</param>
         <summary>Returns an interface according to a specified interface ID.</summary>
-        <returns>One of the enumeration values that indicates whether a custom implementation of [IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkID=144867) was used.</returns>
+        <returns>One of the enumeration values that indicates whether a custom implementation of <see href="https://docs.microsoft.com/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)">IUnknown::QueryInterface</see> was used.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

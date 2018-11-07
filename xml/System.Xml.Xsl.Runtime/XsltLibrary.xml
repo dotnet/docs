@@ -90,7 +90,7 @@
         <param name="name">The XML qualified name.</param>
         <summary>Evaluates the argument to a string that is an XML qualified name. This method implements the <c>element-available</c> function specified by [W3C XSL Transformations (XSLT)](http://go.microsoft.com/fwlink/?LinkID=49919).</summary>
         <returns>
-          <see langword="true" /> if the [expanded name](http://go.microsoft.com/fwlink/?LinkId=148269) is the name of an instruction. If the <see langword="expanded name" /> has a namespace URI equal to the XSLT namespace URI, then it refers to an element defined by XSLT. Otherwise, the expanded-name refers to an extension element. If the <see langword="expanded name" /> has a null namespace URI, the element-available function will return <see langword="false" />.</returns>
+          <see langword="true" /> if the <see href="https://www.w3.org/TR/xml-names11/">expanded name</see> is the name of an instruction. If the <see langword="expanded name" /> has a namespace URI equal to the XSLT namespace URI, then it refers to an element defined by XSLT. Otherwise, the expanded-name refers to an extension element. If the <see langword="expanded name" /> has a null namespace URI, the element-available function will return <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -207,7 +207,7 @@
           <see cref="T:System.Xml.XmlQualifiedName" /> that contains the format name.</param>
         <param name="errorMessageName">String that contains the error message name.</param>
         <summary>Implements the format-number() XSLT function. For more information, see the <see href="https://www.w3.org/TR/xslt/all/">number formatting</see> section in the W3C Recommendation.</summary>
-        <returns>Returns a string that indicates the number format. For more information, see the [number formatting](http://go.microsoft.com/fwlink/?LinkId=144247) section in the W3C Recommendation.</returns>
+        <returns>Returns a string that indicates the number format. For more information, see the <see href="https://www.w3.org/TR/xslt/all/">number formatting</see> section in the W3C Recommendation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -249,7 +249,7 @@
         <param name="decimalFormatterIndex">
           <see cref="T:System.Double" /> that contains the formatter index.</param>
         <summary>Implements the format-number() XSLT function. For more information, see the <see href="https://www.w3.org/TR/xslt/all/">number formatting</see> section in the W3C Recommendation.</summary>
-        <returns>A string that indicates the format. For more information, see the [number formatting](http://go.microsoft.com/fwlink/?LinkId=144247) section in the W3C Recommendation.</returns>
+        <returns>A string that indicates the format. For more information, see the <see href="https://www.w3.org/TR/xslt/all/">number formatting</see> section in the W3C Recommendation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -1807,7 +1807,7 @@
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
   
  Aggregates a managed object of the specified type with the specified COM object.</summary>
-        <returns>The inner [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) pointer of the managed object.</returns>
+        <returns>The inner <see href="https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown">IUnknown</see> pointer of the managed object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3410,7 +3410,7 @@
       <Parameters />
       <Docs>
         <summary>Retrieves a computer-independent description of an exception, and information about the state that existed for the thread when the exception occurred.</summary>
-        <returns>A pointer to an [EXCEPTION_POINTERS](http://go.microsoft.com/fwlink/?LinkId=148648) structure.</returns>
+        <returns>A pointer to an <see href="https://docs.microsoft.com/windows/desktop/api/winnt/ns-winnt-_exception_pointers">EXCEPTION_POINTERS</see> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4058,7 +4058,7 @@
       <Parameters />
       <Docs>
         <summary>Returns the error code returned by the last unmanaged function that was called using platform invoke that has the <see cref="F:System.Runtime.InteropServices.DllImportAttribute.SetLastError" /> flag set.</summary>
-        <returns>The last error code set by a call to the Win32 [SetLastError](http://go.microsoft.com/fwlink/?LinkId=148656) function.</returns>
+        <returns>The last error code set by a call to the Win32 <see href="https://msdn.microsoft.com/library/ms680627.aspx">SetLastError</see> function.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4715,7 +4715,7 @@
       <Docs>
         <param name="t">A type that represents an interface.</param>
         <summary>Gets the first slot in the virtual function table (v-table or VTBL) that contains user-defined methods.</summary>
-        <returns>The first VTBL slot that contains user-defined methods. The first slot is 3 if the interface is based on [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003), and 7 if the interface is based on [IDispatch](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5).</returns>
+        <returns>The first VTBL slot that contains user-defined methods. The first slot is 3 if the interface is based on <see href="https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown">IUnknown</see>, and 7 if the interface is based on [IDispatch](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

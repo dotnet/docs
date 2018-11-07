@@ -852,7 +852,7 @@
       <Docs>
         <param name="itemName">The name of the specified item collection.</param>
         <summary>Returns all items belonging to the specified item collection.</summary>
-        <returns>A <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" /> containing all items belonging to the specified item collection, even those not used in the build process because a [Condition](http://msdn.microsoft.com/library/9d7aa308-b667-48ed-b4c9-a61e49eb0a85) attribute evaluated to <see langword="false" />.</returns>
+        <returns>A <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" /> containing all items belonging to the specified item collection, even those not used in the build process because a <see href="https://docs.microsoft.com/visualstudio/msbuild/msbuild-conditions">Condition</see> attribute evaluated to <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

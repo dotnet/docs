@@ -1639,7 +1639,7 @@
       <Docs>
         <param name="font">The IFont to create a <see cref="T:System.Drawing.Font" /> from.</param>
         <summary>Returns a <see cref="T:System.Drawing.Font" /> created from the specified OLE [IFont](http://go.microsoft.com/fwlink/?LinkId=166075) object.</summary>
-        <returns>The <see cref="T:System.Drawing.Font" /> created from the specified [IFont](http://go.microsoft.com/fwlink/?LinkId=166075), <see cref="P:System.Windows.Forms.Control.DefaultFont" /> if the font could not be created, or <see langword="null" /> if <paramref name="font" /> is <see langword="null" />.</returns>
+        <returns>The <see cref="T:System.Drawing.Font" /> created from the specified <see href="https://docs.microsoft.com/windows/desktop/api/ocidl/nn-ocidl-ifont">IFont</see>, <see cref="P:System.Windows.Forms.Control.DefaultFont" /> if the font could not be created, or <see langword="null" /> if <paramref name="font" /> is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Drawing.Font" />
         <altmember cref="P:System.Windows.Forms.Control.DefaultFont" />
@@ -1676,7 +1676,7 @@
       <Docs>
         <param name="font">The IFontDisp to create a <see cref="T:System.Drawing.Font" /> from.</param>
         <summary>Returns a <see cref="T:System.Drawing.Font" /> created from the specified OLE [IFontDisp](http://go.microsoft.com/fwlink/?LinkId=166073) object.</summary>
-        <returns>The <see cref="T:System.Drawing.Font" /> created from the specified [IFontDisp](http://go.microsoft.com/fwlink/?LinkId=166073), <see cref="P:System.Windows.Forms.Control.DefaultFont" /> if the font could not be created, or <see langword="null" /> if <paramref name="font" /> is <see langword="null" />.</returns>
+        <returns>The <see cref="T:System.Drawing.Font" /> created from the specified <see href="https://msdn.microsoft.com/library/ms692695(VS.85).aspx">IFontDisp</see>, <see cref="P:System.Windows.Forms.Control.DefaultFont" /> if the font could not be created, or <see langword="null" /> if <paramref name="font" /> is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Drawing.Font" />
         <altmember cref="P:System.Windows.Forms.Control.DefaultFont" />
@@ -1713,7 +1713,7 @@
       <Docs>
         <param name="font">The font to create an IFontDisp object from.</param>
         <summary>Returns an OLE [IFontDisp](http://go.microsoft.com/fwlink/?LinkId=166073) object created from the specified <see cref="T:System.Drawing.Font" /> object.</summary>
-        <returns>The [IFontDisp](http://go.microsoft.com/fwlink/?LinkId=166073) object created from the specified font or <see langword="null" /> if <paramref name="font" /> is <see langword="null" />.</returns>
+        <returns>The <see href="https://msdn.microsoft.com/library/ms692695(VS.85).aspx">IFontDisp</see> object created from the specified font or <see langword="null" /> if <paramref name="font" /> is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Font.Unit" /> property value is not <see cref="F:System.Drawing.GraphicsUnit.Point" />.</exception>
         <altmember cref="T:System.Drawing.Font" />
@@ -1750,7 +1750,7 @@
       <Docs>
         <param name="font">The font to create an IFont object from.</param>
         <summary>Returns an OLE [IFont](http://go.microsoft.com/fwlink/?LinkId=166075) object created from the specified <see cref="T:System.Drawing.Font" /> object.</summary>
-        <returns>The [IFont](http://go.microsoft.com/fwlink/?LinkId=166075) object created from the specified font, or <see langword="null" /> if <paramref name="font" /> is <see langword="null" /> or the [IFont](http://go.microsoft.com/fwlink/?LinkId=166075) could not be created.</returns>
+        <returns>The <see href="https://docs.microsoft.com/windows/desktop/api/ocidl/nn-ocidl-ifont">IFont</see> object created from the specified font, or <see langword="null" /> if <paramref name="font" /> is <see langword="null" /> or the [IFont](http://go.microsoft.com/fwlink/?LinkId=166075) could not be created.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Font.Unit" /> property value is not <see cref="F:System.Drawing.GraphicsUnit.Point" />.</exception>
         <altmember cref="T:System.Drawing.Font" />

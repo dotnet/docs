@@ -451,7 +451,7 @@
       <Docs>
         <param name="index">The zero-based column ordinal.</param>
         <summary>Gets the name of the source data type.</summary>
-        <returns>The name of the back-end data type. For more information, see [SQL Server data types](http://go.microsoft.com/fwlink/?LinkId=198032) or [Access data types](http://go.microsoft.com/fwlink/?LinkId=198033).</returns>
+        <returns>The name of the back-end data type. For more information, see <see href="https://docs.microsoft.com/sql/t-sql/data-types/data-types-transact-sql">SQL Server data types</see> or <see href="https://docs.microsoft.com/sql/odbc/microsoft/microsoft-access-data-types">Access data types</see>.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="~/docs/framework/data/adonet/dataadapters-and-datareaders.md">DataAdapters and DataReaders</related>
       </Docs>

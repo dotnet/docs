@@ -200,7 +200,7 @@
       <Docs>
         <param name="ptr">An unmanaged pointer to the [HSTRING](http://go.microsoft.com/fwlink/p/?LinkId=246451) to copy.</param>
         <summary>Returns a managed string that contains a copy of the specified [!INCLUDE[wrt](~/includes/wrt-md.md)][HSTRING](http://go.microsoft.com/fwlink/p/?LinkId=246451).</summary>
-        <returns>A managed string that contains a copy of the [HSTRING](http://go.microsoft.com/fwlink/p/?LinkId=246451) if <paramref name="ptr" /> is not <see cref="F:System.IntPtr.Zero" />; otherwise, <see cref="F:System.String.Empty" />.</returns>
+        <returns>A managed string that contains a copy of the <see href="https://docs.microsoft.com/windows/desktop/WinRT/hstring">HSTRING</see> if <paramref name="ptr" /> is not <see cref="F:System.IntPtr.Zero" />; otherwise, <see cref="F:System.String.Empty" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.PlatformNotSupportedException">The [!INCLUDE[wrt](~/includes/wrt-md.md)] is not supported on the current version of the operating system.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -323,7 +323,7 @@
       <Docs>
         <param name="s">The managed string to copy.</param>
         <summary>Allocates a [!INCLUDE[wrt](~/includes/wrt-md.md)][HSTRING](http://go.microsoft.com/fwlink/p/?LinkId=246451) and copies the specified managed string to it.</summary>
-        <returns>An unmanaged pointer to the new [HSTRING](http://go.microsoft.com/fwlink/p/?LinkId=246451), or <see cref="F:System.IntPtr.Zero" /> if <paramref name="s" /> is <see cref="F:System.String.Empty" />.</returns>
+        <returns>An unmanaged pointer to the new <see href="https://docs.microsoft.com/windows/desktop/WinRT/hstring">HSTRING</see>, or <see cref="F:System.IntPtr.Zero" /> if <paramref name="s" /> is <see cref="F:System.String.Empty" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

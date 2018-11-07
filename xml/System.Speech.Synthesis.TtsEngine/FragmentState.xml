@@ -240,7 +240,7 @@
       <Docs>
         <param name="obj">An object that can be cast to an instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /></param>
         <summary>Determines if a given object is an instance <see cref="T:System.Speech.Synthesis.TtsEngine.FragmentState" /> equal to the current instance of <see cref="T:System.Speech.Synthesis.TtsEngine.FragmentState" />.</summary>
-        <returns>Returns <see langword="true" />, if the current instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> and that obtained from the [Object](http://msdn.microsoft.com/library/vstudio/system.object\(v=vs.110\).aspx) provided by the <paramref name="obj" /> argument describe the same <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state. Returns <see langword="false" /> if the current <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> and the <paramref name="obj" /> argument do not support the same <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state.</returns>
+        <returns>Returns <see langword="true" />, if the current instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> and that obtained from the <see cref="T:System.Object" /> provided by the <paramref name="obj" /> argument describe the same <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state. Returns <see langword="false" /> if the current <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> and the <paramref name="obj" /> argument do not support the same <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

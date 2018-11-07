@@ -1383,7 +1383,7 @@
       <Parameters />
       <Docs>
         <summary>Gets a <see cref="T:System.IO.MemoryStream" /> object that specifies the printer's capabilities as an XML stream that complies with the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
-        <returns>A <see cref="T:System.IO.MemoryStream" /> specifying the printer's capabilities by using the XML schema "PrintCapabilities," a part of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) system.</returns>
+        <returns>A <see cref="T:System.IO.MemoryStream" /> specifying the printer's capabilities by using the XML schema "PrintCapabilities," a part of the <see href="https://docs.microsoft.com/windows/desktop/printdocs/printschema">Print Schema</see> system.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Printing.PrintQueueException">The print capabilities could not be retrieved.</exception>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">for permission to get print capabilities. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" /></permission>
@@ -1415,7 +1415,7 @@
       <Docs>
         <param name="printTicket">A print ticket that provides the basis on which the print capabilities are reported.</param>
         <summary>Gets a <see cref="T:System.IO.MemoryStream" /> object that specifies the printer's capabilities in an XML format that complies with the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
-        <returns>A <see cref="T:System.IO.MemoryStream" /> specifying the printer's capabilities by using the XML schema "PrintCapabilities," a part of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) system.</returns>
+        <returns>A <see cref="T:System.IO.MemoryStream" /> specifying the printer's capabilities by using the XML schema "PrintCapabilities," a part of the <see href="https://docs.microsoft.com/windows/desktop/printdocs/printschema">Print Schema</see> system.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

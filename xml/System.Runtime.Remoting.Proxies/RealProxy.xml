@@ -326,7 +326,7 @@
         <param name="fIsMarshalled">
           <see langword="true" /> if the object reference is requested for marshaling to a remote location; <see langword="false" /> if the object reference is requested for communication with unmanaged objects in the current process through COM.</param>
         <summary>Requests an unmanaged reference to the object represented by the current proxy instance.</summary>
-        <returns>A pointer to a [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md) if the object reference is requested for communication with unmanaged objects in the current process through COM, or a pointer to a cached or newly generated <see langword="IUnknown" /> COM interface if the object reference is requested for marshaling to a remote location.</returns>
+        <returns>A pointer to a <see href="https://docs.microsoft.com/dotnet/framework/interop/com-callable-wrapper">COM Callable Wrapper</see> if the object reference is requested for communication with unmanaged objects in the current process through COM, or a pointer to a cached or newly generated <see langword="IUnknown" /> COM interface if the object reference is requested for marshaling to a remote location.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

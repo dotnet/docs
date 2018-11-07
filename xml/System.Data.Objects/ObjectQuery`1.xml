@@ -182,7 +182,7 @@
       <Parameters />
       <Docs>
         <summary>Limits the query to unique results.</summary>
-        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with [SELECT DISTINCT](~/docs/framework/data/adonet/ef/language-reference/select-entity-sql.md) applied.</returns>
+        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with <see href="https://docs.microsoft.com/dotnet/framework/data/adonet/ef/language-reference/select-entity-sql">SELECT DISTINCT</see> applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -226,7 +226,7 @@
       <Docs>
         <param name="query">An <see cref="T:System.Data.Objects.ObjectQuery`1" /> that represents the results to exclude from the query.</param>
         <summary>Limits the query results by excluding results based on the results of another object query.</summary>
-        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with [EXCEPT](~/docs/framework/data/adonet/ef/language-reference/except-entity-sql.md) applied based on the specified <paramref name="query" />.</returns>
+        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with <see href="https://docs.microsoft.com/dotnet/framework/data/adonet/ef/language-reference/except-entity-sql">EXCEPT</see> applied based on the specified <paramref name="query" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -324,7 +324,7 @@
         <param name="projection">The list of selected properties that defines the projection.</param>
         <param name="parameters">Zero or more parameters that are used in this method.</param>
         <summary>Groups the query results by the specified criteria.</summary>
-        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance of type <see cref="T:System.Data.Common.DbDataRecord" /> that is equivalent to the original instance with [GROUP BY](~/docs/framework/data/adonet/ef/language-reference/group-by-entity-sql.md) applied.</returns>
+        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance of type <see cref="T:System.Data.Common.DbDataRecord" /> that is equivalent to the original instance with <see href="https://docs.microsoft.com/dotnet/framework/data/adonet/ef/language-reference/group-by-entity-sql">GROUP BY</see> applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -431,7 +431,7 @@
       <Docs>
         <param name="query">An <see cref="T:System.Data.Objects.ObjectQuery`1" /> that represents the results to include in the query.</param>
         <summary>Limits the query results by including only the results that exist in another object query.</summary>
-        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with [INTERSECT](~/docs/framework/data/adonet/ef/language-reference/intersect-entity-sql.md) applied based on the specified <paramref name="query" />.</returns>
+        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with <see href="https://docs.microsoft.com/dotnet/framework/data/adonet/ef/language-reference/intersect-entity-sql">INTERSECT</see> applied based on the specified <paramref name="query" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -527,7 +527,7 @@
       <Docs>
         <typeparam name="TResultType">The type of the <see cref="T:System.Data.Objects.ObjectResult`1" /> returned when the query is executed with the applied filter.</typeparam>
         <summary>Limits the query to only results of a specific type.</summary>
-        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with [OFTYPE](~/docs/framework/data/adonet/ef/language-reference/oftype-entity-sql.md) applied.</returns>
+        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with <see href="https://docs.microsoft.com/dotnet/framework/data/adonet/ef/language-reference/oftype-entity-sql">OFTYPE</see> applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -573,7 +573,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
         <param name="keys">The key columns by which to order the results.</param>
         <param name="parameters">Zero or more parameters that are used in this method.</param>
         <summary>Orders the query results by the specified criteria.</summary>
-        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with [ORDER BY](~/docs/framework/data/adonet/ef/language-reference/order-by-entity-sql.md) applied.</returns>
+        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with <see href="https://docs.microsoft.com/dotnet/framework/data/adonet/ef/language-reference/order-by-entity-sql">ORDER BY</see> applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -627,7 +627,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
         <param name="projection">The list of selected properties that defines the projection.</param>
         <param name="parameters">Zero or more parameters that are used in this method.</param>
         <summary>Limits the query results to only the properties that are defined in the specified projection.</summary>
-        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance of type <see cref="T:System.Data.Common.DbDataRecord" /> that is equivalent to the original instance with [SELECT](~/docs/framework/data/adonet/ef/language-reference/select-entity-sql.md) applied.</returns>
+        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance of type <see cref="T:System.Data.Common.DbDataRecord" /> that is equivalent to the original instance with <see href="https://docs.microsoft.com/dotnet/framework/data/adonet/ef/language-reference/select-entity-sql">SELECT</see> applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -690,7 +690,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
         <param name="projection">The projection list.</param>
         <param name="parameters">An optional set of query parameters that should be in scope when parsing.</param>
         <summary>Limits the query results to only the property specified in the projection.</summary>
-        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance of a type compatible with the specific projection. The returned <see cref="T:System.Data.Objects.ObjectQuery`1" /> is equivalent to the original instance with [SELECT VALUE](~/docs/framework/data/adonet/ef/language-reference/select-entity-sql.md) applied.</returns>
+        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance of a type compatible with the specific projection. The returned <see cref="T:System.Data.Objects.ObjectQuery`1" /> is equivalent to the original instance with <see href="https://docs.microsoft.com/dotnet/framework/data/adonet/ef/language-reference/select-entity-sql">SELECT VALUE</see> applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -751,7 +751,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
         <param name="count">The number of results to skip. This must be either a constant or a parameter reference.</param>
         <param name="parameters">An optional set of query parameters that should be in scope when parsing.</param>
         <summary>Orders the query results by the specified criteria and skips a specified number of results.</summary>
-        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with both [ORDER BY](~/docs/framework/data/adonet/ef/language-reference/order-by-entity-sql.md) and [SKIP](~/docs/framework/data/adonet/ef/language-reference/skip-entity-sql.md) applied.</returns>
+        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with both <see href="https://docs.microsoft.com/dotnet/framework/data/adonet/ef/language-reference/order-by-entity-sql">ORDER BY</see> and [SKIP](~/docs/framework/data/adonet/ef/language-reference/skip-entity-sql.md) applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -841,7 +841,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
         <param name="count">The number of items in the results as a string.</param>
         <param name="parameters">An optional set of query parameters that should be in scope when parsing.</param>
         <summary>Limits the query results to a specified number of items.</summary>
-        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with [TOP](~/docs/framework/data/adonet/ef/language-reference/top-entity-sql.md) applied.</returns>
+        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with <see href="https://docs.microsoft.com/dotnet/framework/data/adonet/ef/language-reference/top-entity-sql">TOP</see> applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -896,7 +896,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
       <Docs>
         <param name="query">An <see cref="T:System.Data.Objects.ObjectQuery`1" /> that represents the results to add.</param>
         <summary>Combines the results of the query with the results of another object query, without any duplicates.</summary>
-        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with [UNION](~/docs/framework/data/adonet/ef/language-reference/union-entity-sql.md) applied to add the results of the specified <paramref name="query" />.</returns>
+        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with <see href="https://docs.microsoft.com/dotnet/framework/data/adonet/ef/language-reference/union-entity-sql">UNION</see> applied to add the results of the specified <paramref name="query" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -957,7 +957,7 @@ ObjectQuery <DiscontinuedProduct>.Union(ObjectQuery<Product>)
       <Docs>
         <param name="query">An <see cref="T:System.Data.Objects.ObjectQuery`1" /> that represents the results to add.</param>
         <summary>Combines the results of the query with the results of another object query, including all duplicates.</summary>
-        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with [UNION ALL](~/docs/framework/data/adonet/ef/language-reference/union-entity-sql.md) applied to add the results of the specified <paramref name="query" />.</returns>
+        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with <see href="https://docs.microsoft.com/dotnet/framework/data/adonet/ef/language-reference/union-entity-sql">UNION ALL</see> applied to add the results of the specified <paramref name="query" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1026,7 +1026,7 @@ ObjectQuery <DiscontinuedProduct>.Union(ObjectQuery<Product>)
         <param name="predicate">The filter predicate.</param>
         <param name="parameters">Zero or more parameters that are used in this method.</param>
         <summary>Limits the query to results that match specified filtering criteria.</summary>
-        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with [WHERE](~/docs/framework/data/adonet/ef/language-reference/where-entity-sql.md) applied.</returns>
+        <returns>A new <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance that is equivalent to the original instance with <see href="https://docs.microsoft.com/dotnet/framework/data/adonet/ef/language-reference/where-entity-sql">WHERE</see> applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

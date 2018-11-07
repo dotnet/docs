@@ -151,7 +151,18 @@ Starting with Visual Basic 15.8, the performance of floating-point-to-integer co
 - <xref:System.Math.Round(System.Double)?displayProperty=nameWithType>
 - <xref:System.Math.Truncate(System.Double)?displayProperty=nameWithType>
 
-This optimization allows code that does a large number of integer conversions to run up to twice as fast.
+This optimization allows code that does a large number of integer conversions to run up to twice as fast. The following example illustrates these optimized floating-point-to-integer conversions:
+
+```vb
+Dim s As Single = 173.7619
+Dim d As Double = s 
+
+Dim i1 As Integer = CInt(Fix(s))               ' Result: 173
+Dim b1 As Byte = CByte(Int(d))                 ' Result: 173
+Dim s1 AS Short = CShort(Math.Truncate(s))     ' Result: 173
+Dim i2 As Integer = CInt(Math.Ceiling(d))      ' Result: 174
+Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
+```
 
 ## Behavior  
   
@@ -214,17 +225,6 @@ This optimization allows code that does a large number of integer conversions to
  The following example uses the `CInt` function to convert a value to `Integer`.  
   
  [!code-vb[VbVbalrFunctions#8](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_8.vb)]  
-
-The following example converts floating-point values to integers by using an optimization introduced starting with Visual Basic 15.8.
-
-```vb
-Dim d As Double = 173.7619
-Dim i1 As Integer = CInt(Fix(d))           ' Displays 173
-Dim s As Single = 173.7619
-Dim i2 As Integer = CInt(Fix(s))           ' Displays 173
-Dim dec As Decimal = 175.7619d
-Dim i3 As Integer = CInt(Fix(dec))         ' Displays 173
-```
 
 ## CLng Example
  The following example uses the `CLng` function to convert values to `Long`.  

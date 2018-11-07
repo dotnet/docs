@@ -84,8 +84,8 @@ The DOS device path consists of the following components:
 
    There is a specific link for UNCs that is called, not surprisingly, `UNC`. For example:
 
-      `\\.\UNC\Server\Share\Test\Foo.txt`
-      `\\?\UNC\Server\Share\Test\Foo.txt`
+  `\\.\UNC\Server\Share\Test\Foo.txt`  
+  `\\?\UNC\Server\Share\Test\Foo.txt`
 
     For device UNCs, the server/share portion is forms the volume. For example, in `\\?\server1\e:\utilities\\filecomparer\`, the server/share portion is server1\utilities. This is significant when calling a method such as <xref:System.IO.Path.GetFullPath(System.String,System.String)?displayProperty=nameWithType> with relative directory segments; it is never possible to navigate past the volume. 
 

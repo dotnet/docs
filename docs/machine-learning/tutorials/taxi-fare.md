@@ -145,7 +145,7 @@ public static ITransformer Train(MLContext mlContext, string dataPath)
 }
 ```
 
-We are passing two parameters into the Train method; an MLContext for the context (`mlContext`), and a string for the dataset path (`dataPath`). We're going to reuse this method for loading datasets.
+We are passing two parameters into the `Train` method; an `MLContext` for the context (`mlContext`), and a string for the dataset path (`dataPath`). We're going to reuse this method for loading datasets.
 
 ## Load and transform data
 
@@ -186,7 +186,7 @@ Add the following code into the `Train` method to add the `FastTreeRegressionTra
 
 ## Train the model
 
-The final step is to train the model. We train the model, <xref:Microsoft.ML.Runtime.Data.TransformerChain>, based on the dataset that has been loaded and transformed. Once the estimator has been defined, we train the model using the <xref:Microsoft.ML.Runtime.Data.EstimatorChain`1.Fit> while providing the already loaded training data. This returns a model to use for predictions. `pipeline.Fit()` trains the pipeline and returns a `Transformer` based on the `DataView` passed in. The experiment is not executed until this happens.
+The final step is to train the model. We train the model, <xref:Microsoft.ML.Runtime.Data.TransformerChain>, based on the dataset that has been loaded and transformed. Once the estimator has been defined, we train the model using the <xref:Microsoft.ML.Runtime.Data.EstimatorChain%601.Fit> while providing the already loaded training data. This returns a model to use for predictions. `pipeline.Fit()` trains the pipeline and returns a `Transformer` based on the `DataView` passed in. The experiment is not executed until this happens.
 
 [!code-csharp[TrainModel](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#11 "Train the model")]
 
@@ -213,7 +213,7 @@ The `SaveModelAsFile` method executes the following tasks:
 
 * Saves the model as a .zip file.
 
-We need to create a method to save the model so that it can be reused and consumed in other applications. The `ITransformer` has a <xref:Microsoft.ML.Runtime.Data.TransformerChain`1.SaveTo(Microsoft.ML.Runtime.IHostEnvironment,System.IO.Stream)> method that takes in the `_modelPath` global field, and a <xref:System.IO.Stream>. Since we want to save this as a zip file, we'll create the `FileStream` immediately before calling the `SaveTo` method. Add the following code to the `SaveModelAsFile` method as the next line:
+We need to create a method to save the model so that it can be reused and consumed in other applications. The `ITransformer` has a <xref:Microsoft.ML.Runtime.Data.TransformerChain%601.SaveTo(Microsoft.ML.Runtime.IHostEnvironment,System.IO.Stream)> method that takes in the `_modelPath` global field, and a <xref:System.IO.Stream>. Since we want to save this as a zip file, we'll create the `FileStream` immediately before calling the `SaveTo` method. Add the following code to the `SaveModelAsFile` method as the next line:
 
 [!code-csharp[SaveToMethod](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#13 "Add the SaveTo Method")]
 

@@ -40,19 +40,18 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- These culture type values are returned by the <xref:System.Globalization.CultureInfo.CultureTypes%2A?displayProperty=nameWithType> property, and also serve as a filter that limits the cultures returned by the <xref:System.Globalization.CultureInfo.GetCultures%2A?displayProperty=nameWithType> method. For more information on cultures, see <xref:System.Globalization.CultureInfo>.  
+## Remarks
+
+These culture type values are returned by the <xref:System.Globalization.CultureInfo.CultureTypes%2A?displayProperty=nameWithType> property, and also serve as a filter that limits the cultures returned by the <xref:System.Globalization.CultureInfo.GetCultures%2A?displayProperty=nameWithType> method. For more information on cultures, see <xref:System.Globalization.CultureInfo>.  
   
- Generally, your application should enumerate all cultures, using the AllCultures value. This allows enumeration of custom cultures, as well as the other culture types.  
+Generally, your application should enumerate all cultures by using the `CultureTypes.AllCultures` value. This allows enumeration of custom cultures as well as the other culture types.  
   
- Note that the FrameworkCultures and WindowsOnlyCultures members have been deprecated.  
-  
-   
+Note that all `CultureTypes` members have been deprecated except for `CultureTypes.AllCultures`, `CultureTypes.NeutralCultures`, and `CultureTypes.SpecificCultures`.  
   
 ## Examples  
- The following example demonstrates the <xref:System.Globalization.CultureTypes.AllCultures> enumeration and the <xref:System.Globalization.CultureInfo.CultureTypes%2A> property.  
+
+The following example demonstrates the `CultureTypes.AllCultures` enumeration member and the <xref:System.Globalization.CultureInfo.CultureTypes%2A> property.  
   
- [!code-cpp[System.Globalization.CultureTypes#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.globalization.cultureTypes/cpp/ct.cpp#1)]
  [!code-csharp[System.Globalization.CultureTypes#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.cultureTypes/cs/ct.cs#1)]
  [!code-vb[System.Globalization.CultureTypes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureTypes/vb/ct.vb#1)]  
   
@@ -97,7 +96,7 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>All cultures that ship with the .NET Framework, including neutral and specific cultures, cultures installed in the Windows operating system, and custom cultures created by the user.  
+        <summary>All cultures that ship with .NET, including neutral and specific cultures, cultures installed with the operating system, and custom cultures created by the user.  
   
  <see cref="F:System.Globalization.CultureTypes.AllCultures" /> is a composite field that includes the <see cref="F:System.Globalization.CultureTypes.NeutralCultures" />, <see cref="F:System.Globalization.CultureTypes.SpecificCultures" />, and <see cref="F:System.Globalization.CultureTypes.InstalledWin32Cultures" /> values.</summary>
       </Docs>
@@ -135,7 +134,7 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>This member is deprecated; using this value with <see cref="M:System.Globalization.CultureInfo.GetCultures(System.Globalization.CultureTypes)" /> returns neutral and specific cultures shipped with the .NET Framework 2.0.</summary>
+        <summary>**This member is deprecated**; using this value with <see cref="M:System.Globalization.CultureInfo.GetCultures(System.Globalization.CultureTypes)" /> returns neutral and specific cultures shipped with the .NET Framework 2.0.</summary>
       </Docs>
     </Member>
     <Member MemberName="InstalledWin32Cultures">
@@ -167,7 +166,14 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>All cultures that are installed in the Windows operating system. Note that not all cultures supported by the .NET Framework are installed in the operating system.</summary>
+        <summary>**This member is deprecated.** All cultures that are installed in the Windows operating system. </summary>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+Note that not all cultures supported by the .NET Framework are installed in the Windows operating system.
+  
+     ]]></format>
       </Docs>
     </Member>
     <Member MemberName="NeutralCultures">
@@ -199,12 +205,13 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Cultures that are associated with a language but are not specific to a country/region. The names of .NET Framework cultures consist of the lowercase two-letter code derived from ISO 639-1. For example: "en" (English) is a neutral culture.</summary>
+        <summary>Cultures that are associated with a language but are not specific to a country/region. </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Custom cultures can have any user-specified name, not just a two-letter code.  
+
+The names of .NET cultures consist of the lowercase two-letter code derived from ISO 639-1. For example: "en" (English) is a neutral culture. Custom cultures (that is, cultures that are application- rather than system-defined) can have any user-specified name, not just a two-letter code.  
   
  The invariant culture is included in the array of cultures returned by the <xref:System.Globalization.CultureInfo.GetCultures%2A?displayProperty=nameWithType> method that specifies this value.  
   
@@ -240,7 +247,7 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>Custom cultures created by the user that replace cultures shipped with the .NET Framework.</summary>
+        <summary>**This member is deprecated.** Custom cultures created by the user that replace cultures shipped with the .NET Framework.</summary>
       </Docs>
     </Member>
     <Member MemberName="SpecificCultures">
@@ -272,12 +279,15 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Cultures that are specific to a country/region. The names of these cultures follow RFC 4646 (Windows Vista and later). The format is "&lt;languagecode2&gt;-&lt;country/regioncode2&gt;", where &lt;languagecode2&gt; is a lowercase two-letter code derived from ISO 639-1 and &lt;country/regioncode2&gt; is an uppercase two-letter code derived from ISO 3166. For example, "en-US" for English (United States) is a specific culture.</summary>
+        <summary>Cultures that are specific to a country/region. </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- Custom cultures can have any user-specified name, not just a standard-compliant name.  
+## Remarks 
+
+The names of these cultures follow RFC 4646 (Windows Vista and later). The format is "&lt;languagecode2&gt;-&lt;country/regioncode2&gt;", where &lt;languagecode2&gt; is a lowercase two-letter code derived from ISO 639-1 and &lt;country/regioncode2&gt; is an uppercase two-letter code derived from ISO 3166. For example, "en-US" for English (United States) is a specific culture.
+
+Custom cultures (that is, cultures that are application- rather than system-defined) can have any user-specified name, not just a standard-compliant one.  
   
  ]]></format>
         </remarks>
@@ -311,22 +321,13 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>Custom cultures created by the user.</summary>
+        <summary>**This member is deprecated.** Custom cultures created by the user.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In Windows versions prior to Windows 10, the UserCustomCulture value is assigned to custom cultures created by the developer. In Windows 10, the UserCustomCulture value is also assigned to system cultures that are not backed by a complete set of cultural data and that do not have unique local identifiers. (All cultures of type UserCustomCulture share a <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType> value of `LOCALE_CUSTOM_UNSPECIFIED` (0x1000, or 4096). As a result, code such as  
-  
- [!code-csharp[System.Globalization.CultureTypes#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.cultureTypes/cs/getcultures3.cs#2)]
- [!code-vb[System.Globalization.CultureTypes#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureTypes/vb/getcultures3.vb#2)]  
-  
- or  
-  
- [!code-csharp[System.Globalization.CultureTypes#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.cultureTypes/cs/getcultures3.cs#3)]
- [!code-vb[System.Globalization.CultureTypes#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureTypes/vb/getcultures3.vb#3)]  
-  
- will return different sets of cultures on different Windows versions.  
+
+In Windows versions prior to Windows 10, the `UserCustomCulture` value is assigned to custom cultures created by the developer. In Windows 10, the `UserCustomCulture` value is also assigned to system cultures that are not backed by a complete set of cultural data and that do not have unique local identifiers. (All cultures of type `UserCustomCulture` share a <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType> value of `LOCALE_CUSTOM_UNSPECIFIED` (0x1000, or 4096)). As a result, the `CultureInfo.GetCultures(CultureTypes.UserCustomCulture)` method returns different sets of cultures on different Windows versions.  
   
  ]]></format>
         </remarks>
@@ -365,7 +366,14 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>This member is deprecated. If it is used as an argument to the <see cref="M:System.Globalization.CultureInfo.GetCultures(System.Globalization.CultureTypes)" /> method, the method returns an empty array.</summary>
+        <summary>**This member is deprecated** and is ignored.</summary>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks 
+
+If it is used as an argument to the <xref:System.Globalization.CultureInfo.GetCultures%2A?displayProperty=nameWithType> method, the method returns an empty array.
+
+     ]]></format>
       </Docs>
     </Member>
   </Members>

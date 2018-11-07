@@ -230,9 +230,9 @@
           <paramref name="assemblyName" /> is the empty string ("").</exception>
         <exception cref="T:System.IO.PathTooLongException">An assembly or module was loaded twice with two different evidences.
         
-        -or- 
+ -or- 
         
-        <paramref name="assemblyName" /> is longer than the system-defined maximum length.</exception>
+ <paramref name="assemblyName" /> is longer than the system-defined maximum length.</exception>
         <exception cref="T:System.IO.FileNotFoundException">
           <paramref name="assemblyName" /> is not found, or the module you are trying to load does not specify a file name extension.</exception>
         <exception cref="T:System.IO.FileLoadException">

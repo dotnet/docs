@@ -15,7 +15,7 @@ This topic lists key feature names for each version of Visual Basic, with detail
   
 ## Current version
 
-Visual Basic 15.8 / Visual Studio 2017 Version 15.8
+Visual Basic 15.8 / Visual Studio 2017 Version 15.8  
 For new features, see [Visual Basic 15.8](#visual-basic-158)
 
 ## Previous versions

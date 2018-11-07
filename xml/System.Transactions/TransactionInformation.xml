@@ -108,9 +108,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the transaction is escalated to a two-phase commit transaction, this property returns its unique identifier. If the transaction is not escalated, the value is `null`.  
+ If the transaction is escalated to a two-phase commit transaction, this property returns its unique identifier. If the transaction is not escalated, the value is <xref:System.Guid.Empty>.  
   
- For more information on how a transaction's management is escalated, see [Transaction Management Escalation](http://msdn.microsoft.com/library/5b87ae58-8ccf-4b9b-9715-41e4aade89b7).  
+ For more information on how a transaction's management is escalated, see [Transaction Management Escalation](~/docs/framework/data/transactions/transaction-management-escalation.md).  
   
  ]]></format>
         </remarks>

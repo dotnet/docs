@@ -27,7 +27,7 @@ For integer types, the `&` operator computes the logical bitwise AND of its oper
 [!code-csharp-interactive[integer logical bitwise AND](~/samples/snippets/csharp/language-reference/operators/AndOperatorExamples.cs#IntegerOperands)]
 
 > [!NOTE]
-> The preceding example uses the binary literals that are [introduced](../../whats-new/csharp-7.md#numeric-literal-syntax-improvements) in C# 7.0 and [enhanced](../../whats-new/csharp-7-2.md#leading-underscores-in-numeric-literals) in C# 7.2.
+> The preceding example uses the binary literals [introduced in C# 7.0](../../whats-new/csharp-7.md#numeric-literal-syntax-improvements) and [enhanced in C# 7.2](../../whats-new/csharp-7-2.md#leading-underscores-in-numeric-literals).
 
 Because operations on integer types are generally allowed on enumeration types, the `&` operator also supports [enum](../keywords/enum.md) operands.
 

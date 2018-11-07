@@ -2199,7 +2199,6 @@ There are problems accessing the performance counter API's used to get process i
 ## Examples  
  To use the following example you must first start at least one instance of Notepad on a remote computer. The example requests the name of the remote computer on which Notepad is running, and then displays the respective <xref:System.Diagnostics.Process.ProcessName%2A>, <xref:System.Diagnostics.Process.Id%2A>, and <xref:System.Diagnostics.Process.MachineName%2A> properties for each instance.  
   
- [!code-cpp[process_GetProcessesByName2_2#2](~/samples/snippets/cpp/VS_Snippets_CLR/Process_GetProcessesByName2_2/CPP/process_getprocessesbyname2_2.cpp#2)]
  [!code-csharp[process_GetProcessesByName2_2#2](~/samples/snippets/csharp/VS_Snippets_CLR/Process_GetProcessesByName2_2/CS/process_getprocessesbyname2_2.cs#2)]
  [!code-vb[process_GetProcessesByName2_2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Process_GetProcessesByName2_2/VB/process_getprocessesbyname2_2.vb#2)]  
   

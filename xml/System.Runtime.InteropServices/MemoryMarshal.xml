@@ -290,7 +290,7 @@ This method is supported only on platforms that support misaligned memory access
         <param name="start">The index of <paramref name="array" /> at which to begin the memory block.</param>
         <param name="length">The number of items to include in the memory block.</param>
         <summary>Creates a new memory buffer over the portion of the pre-pinned target array beginning at the <paramref name="start" /> index and consisting of <paramref name="length" /> items.</summary>
-        <returns>A block of memory over the specified elements of <paramref name="array" />. If <paramref name="array" /> is <see langword="null" />, or if <paramref name="start" /> and <paramref name="length" /> are 0, the method returns a <see cref="T:System.Memory%601" /> instance of <see cref="System.Memory%601.Length" /> zero. </returns>
+        <returns>A block of memory over the specified elements of <paramref name="array" />. If <paramref name="array" /> is <see langword="null" />, or if <paramref name="start" /> and <paramref name="length" /> are 0, the method returns a <see cref="T:System.Memory`1" /> instance of <see cref="System.Memory`1.Length" /> zero. </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

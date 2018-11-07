@@ -2112,9 +2112,6 @@
  -or-  
   
  <paramref name="assertion" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The assertion specified by <paramref name="assertion" /> has both the <see cref="T:System.IdentityModel.Tokens.EncryptingCredentials" /> and <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReceivedEncryptingCredentials" /> properties set to <see langword="null" />.  
-  
- </exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The token encrypting credentials do not have a Symmetric Key specified.</exception>
       </Docs>
     </Member>

@@ -2367,7 +2367,7 @@
  -or-  
   
  <paramref name="data" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The assertion specified by <paramref name="data" /> has both the <see cref="P:System.IdentityModel.Tokens.Saml2Assertion.EncryptingCredentials" /> and <see cref="T:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReceivedEncryptingCredentials" /> properties set to <see langword="null" />.  
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.Saml2Assertion.ExternalEncryptedKeys" /> property of the assertion specified by <paramref name="data" /> is either <see langword="null" /> or has no elements.  
   
  -or-  
   

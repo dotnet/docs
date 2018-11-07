@@ -29,7 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The values in the `outArguments` dictionary are the <xref:System.Activities.ActivityDelegateParameter> values of the <xref:System.Activities.ActivityDelegate> that are assigned when the <xref:System.Activities.ActivityDelegate> is invoked, keyed by <xref:System.Activities.ActivityDelegateParameter.Name%2A>.  
+ The values in the `outArguments` dictionary are the <xref:System.Activities.RuntimeDelegateArgument> values of the <xref:System.Activities.ActivityDelegate> that are assigned when the <xref:System.Activities.ActivityDelegate> is invoked, keyed by <xref:System.Activities.RuntimeDelegateArgument.Name?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>

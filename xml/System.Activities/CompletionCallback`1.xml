@@ -27,7 +27,7 @@
     <typeparam name="TResult">The type of the result value.</typeparam>
     <param name="context">The execution environment of the activity.</param>
     <param name="completedInstance">The activity that completed.</param>
-    <param name="result">The <see cref="P:System.Activities.WorkflowElement`1.Result" /> value of the activity that completed.</param>
+    <param name="result">The <paramref name="TResult" /> value of the activity that completed.</param>
     <summary>The method that is called when an activity completes.</summary>
     <remarks>To be added.</remarks>
   </Docs>

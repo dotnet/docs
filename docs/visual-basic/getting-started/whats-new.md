@@ -57,15 +57,31 @@ The first release of Visual Basic .NET
 
 **Optimized floating-point to integer conversion**
 
-In previous versions of Visual Basic, conversion of [Double](../language-reference/keywords/double-data-type.md), [Single](../language-reference/keywords/single-data-type.md), and [System.Decimal](../language-reference/keywords/ddecimal-data-type.md) types offered relatively poor performance. Visual Basic 15.8 significantly enhances the performance of floating-point conversions to integers when you call the [CInt](../language-reference/functions/type-conversion-functions.md#cint-example) and <xref:Microsoft.VisualBasic.Conversion.Fix%2A?displayProperty=nameWithType> methods. For example:
+In previous versions of Visual Basic, conversion of [Double](../language-reference/keywords/double-data-type.md) and [Single](../language-reference/keywords/single-data-type.md) values to integers offered relatively poor performance. Visual Basic 15.8 significantly enhances the performance of floating-point conversions to integers when you pass the value returned by any of the following methods to one of the [intrinsic Visual Basic integer conversion functions](../language-reference/functions/type-conversion-functions.md) (CByte, CShort, CInt, CLng, CSByte, CUShort, CUInt, CULng), or when the value returned by any of the following methods is implicitly cast to an integral type when [Option Strict](~/docs/visual-basic/language-reference/statements/option-strict-statement.md) is set to `Off`:
+
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Double)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Object)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Single)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Double)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Object)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Single)?displayProperty=nameWithType>
+- <xref:System.Math.Ceiling(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Floor(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Round(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Truncate(System.Double)?displayProperty=nameWithType>
+
+This optimization allows code to run faster -- up to twice as fast for code that does a large number of conversions to integer types. The following example illustrates some simple method calls that are affected by this optimization:
 
 ```vb
-Dim d As Double = 173.7619
-Dim i1 As Integer = CInt(Fix(d))           ' Displays 173
 Dim s As Single = 173.7619
-Dim i2 As Integer = CInt(Fix(s))           ' Displays 173
-Dim dec As Decimal = 175.7619d
-Dim i3 As Integer = CInt(Fix(dec))         ' Displays 173
+Dim d As Double = s 
+
+Dim i1 As Integer = CInt(Fix(s))               ' Result: 173
+Dim b1 As Byte = CByte(Int(d))                 ' Result: 173
+Dim s1 AS Short = CShort(Math.Truncate(s))     ' Result: 173
+Dim i2 As Integer = CInt(Math.Ceiling(d))      ' Result: 174
+Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
+
 ```
 
 Note that this truncates rather than rounds floating-point value.

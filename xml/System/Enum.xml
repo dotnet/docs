@@ -70,7 +70,7 @@
  [Formatting enumeration values](#formatting)  
 [Iterating enumeration members](#iterating)  
 [Non-exclusive members and the Flags attribute](#Flags)  
-[Adding enumeration methods](#methods)  
+[Adding enumeration methods](#Methods)  
   
 <a name="Creating"></a>   
 ## Creating an enumeration type  
@@ -214,7 +214,7 @@
   
 -   Do not define an enumeration value solely to mirror the state of the enumeration itself. For example, do not define an enumerated constant that merely marks the end of the enumeration. If you need to determine the last value of the enumeration, check for that value explicitly. In addition, you can perform a range check for the first and last enumerated constant if all values within the range are valid.  
   
-<a name="methods"></a>   
+<a name="Methods"></a>   
 ## Adding enumeration methods  
  Because enumeration types are defined by language structures, such as `enum` (C#) and `Enum` (Visual Basic), you cannot define custom methods for an enumeration type other than those methods inherited from the <xref:System.Enum> class.  However, you can use extension methods to add functionality to a particular enumeration type.  
   

@@ -61,7 +61,7 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
 > [!TIP]
 >  You may be able to use the [\<relativeBindForResources>](../../../docs/framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) configuration element to optimize the resource fallback process and the process by which the runtime probes for resource assemblies. For more information, see the [Optimizing the Resource Fallback Process](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md#Optimizing) section.  
   
- The resource fallback process is involves the following steps:  
+ The .NET Framework resource fallback process is involves the following steps:  
   
 1.  The runtime first checks the [global assembly cache](../../../docs/framework/app-domains/gac.md) for an assembly that matches the requested culture for your application.  
   
@@ -95,7 +95,7 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
  For example, suppose the application requests a resource localized for Spanish (Mexico) (the es-MX culture). The runtime first searches the global assembly cache for the assembly that matches es-MX, but doesn't find it. The runtime then searches the directory of the currently executing assembly for an es-MX directory. Failing that, the runtime searches the global assembly cache again for a parent assembly that reflects the appropriate fallback culture — in this case, es (Spanish). If the parent assembly is not found, the runtime searches all potential levels of parent assemblies for the es-MX culture until it finds a corresponding resource. If a resource isn't found, the runtime uses the resource for the default culture.  
   
 <a name="Optimizing"></a>   
-### Optimizing the Resource Fallback Process  
+### Optimizing the .NET Framework Resource Fallback Process  
  Under the following conditions, you can optimize the process by which the runtime searches for resources in satellite assemblies  
   
 -   Satellite assemblies are deployed in the same location as the code assembly. If the code assembly is installed in the [Global Assembly Cache](../../../docs/framework/app-domains/gac.md), satellite assemblies are also installed in the global assembly cache. If the code assembly is installed in a directory, satellite assemblies are installed in culture-specific folders of that directory.  
@@ -177,7 +177,29 @@ vbc Example1.vb
 ```  
 Bon jour!  
 ```  
+
+### .NET Core resource fallback process
+ The .NET Core resource fallback process involves the following steps:  
   
+1.  The runtime checks the directory of the currently executing assembly for a directory that matches the requested culture. If it finds the directory, it searches that directory for a valid satellite assembly for the requested culture. The runtime then searches the satellite assembly for the requested resource. If it finds the resource in the assembly, it uses it. If it doesn't find the resource, it continues the search.  
+  
+2.  The runtime raises the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> event to indicate that it is unable to find the satellite assembly. If you choose to handle the event, your event handler can return a reference to the satellite assembly whose resources will be used for the lookup. Otherwise, the event handler returns `null` and the search continues.  
+  
+3. The runtime next searches the parent culture assemblies through many potential levels, each time repeating steps 1 & 2. 
+
+The parent culture is defined as the appropriate fallback culture. Consider parents as fallback candidates, because providing any resource is preferable to throwing an exception. This process also allows you to reuse resources. You should include a particular resource at the parent level only if the child culture doesn't need to localize the requested resource. For example, if you supply satellite assemblies for en (neutral English), en-GB (English as spoken in the United Kingdom), and en-US (English as spoken in the United States), the en satellite would contain the common terminology, and the en-GB and en-US satellites could provide overrides for only those terms that differ.  
+  
+Each culture has only one parent, which is defined by the <xref:System.Globalization.CultureInfo.Parent%2A?displayProperty=nameWithType> property, but a parent might have its own parent. The search for parent cultures stops when a culture's <xref:System.Globalization.CultureInfo.Parent%2A> property returns <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>; for resource fallback, the invariant culture is not considered a parent culture or a culture that can have resources.  
+  
+4. If the culture that was originally specified and all parents have been searched and the resource is still not found, the resource for the default (fallback) culture is used. Typically, the resources for the default culture are included in the main application assembly. However, you can specify a value of <xref:System.Resources.UltimateResourceFallbackLocation.Satellite> for the <xref:System.Resources.NeutralResourcesLanguageAttribute.Location%2A> property of the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to indicate that the ultimate fallback location for resources is a satellite assembly, rather than the main assembly.  
+  
+    > [!NOTE]
+    >  The default resource is the only resource that can be compiled with the main assembly. Unless you specify a satellite assembly by using the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute, it is the ultimate fallback (final parent). Therefore, we recommend that you always include a default set of resources in your main assembly. This helps prevent exceptions from being thrown. By including a default resource file you provide a fallback for all resources, and ensure that at least one resource is always present for the user, even if it is not culturally specific.  
+  
+5. Finally, if the runtime doesn't find a resource for a default (fallback) culture, a <xref:System.Resources.MissingManifestResourceException> or <xref:System.Resources.MissingSatelliteAssemblyException> exception is thrown to indicate that the resource could not be found.  
+  
+ For example, suppose the application requests a resource localized for Spanish (Mexico) (the es-MX culture). The runtime first searches the global assembly cache for the assembly that matches es-MX, but doesn't find it. The runtime then searches the directory of the currently executing assembly for an es-MX directory. Failing that, the runtime searches the global assembly cache again for a parent assembly that reflects the appropriate fallback culture — in this case, es (Spanish). If the parent assembly is not found, the runtime searches all potential levels of parent assemblies for the es-MX culture until it finds a corresponding resource. If a resource isn't found, the runtime uses the resource for the default culture.    
+
 ## Suggested Packaging Alternative  
  Time or budget constraints might prevent you from creating a set of resources for every subculture that your application supports. Instead, you can create a single satellite assembly for a parent culture that all related subcultures can use. For example, you can provide a single English satellite assembly (en) that is retrieved by users who request region-specific English resources, and a single German satellite assembly (de) for users who request region-specific German resources. For example, requests for German as spoken in Germany (de-DE), Austria (de-AT), and Switzerland (de-CH) would fall back to the German satellite assembly (de). The default resources are the final fallback and therefore should be the resources that will be requested by the majority of your application's users, so choose these resources carefully. This approach deploys resources that are less culturally specific, but can significantly reduce your application's localization costs.  
   

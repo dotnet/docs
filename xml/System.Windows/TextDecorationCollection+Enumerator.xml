@@ -17,6 +17,12 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerator&lt;System.Windows.TextDecoration&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerator</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Enumerates <see cref="T:System.Windows.TextDecoration" /> items in a <see cref="T:System.Windows.TextDecoration" />.</summary>

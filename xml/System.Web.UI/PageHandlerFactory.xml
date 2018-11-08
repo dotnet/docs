@@ -13,7 +13,11 @@
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.IHttpHandlerFactory</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
     <summary>Creates instances of classes that inherit from the <see cref="T:System.Web.UI.Page" /> class and implement the <see cref="T:System.Web.IHttpHandler" /> interface. Instances are created dynamically to handle requests for ASP.NET files. The <see cref="T:System.Web.UI.PageHandlerFactory" /> class is the default handler factory implementation for ASP.NET pages.</summary>
     <remarks>

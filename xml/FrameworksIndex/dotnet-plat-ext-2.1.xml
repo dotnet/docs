@@ -1,5 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="dotnet-plat-ext-2.1">
+  <Assemblies>
+    <Assembly Name="Microsoft.Win32.Registry.AccessControl" Version="4.0.3.0" />
+    <Assembly Name="Microsoft.Win32.Registry" Version="4.1.1.0" />
+    <Assembly Name="Microsoft.Win32.SystemEvents" Version="4.0.0.0" />
+    <Assembly Name="System.CodeDom" Version="4.0.1.0" />
+    <Assembly Name="System.ComponentModel.Composition" Version="4.0.0.0" />
+    <Assembly Name="System.Composition.AttributedModel" Version="1.0.33.0" />
+    <Assembly Name="System.Composition.Convention" Version="1.0.33.0" />
+    <Assembly Name="System.Composition.Hosting" Version="1.0.33.0" />
+    <Assembly Name="System.Composition.Runtime" Version="1.0.33.0" />
+    <Assembly Name="System.Composition.TypedParts" Version="1.0.33.0" />
+    <Assembly Name="System.Configuration.ConfigurationManager" Version="4.0.1.0" />
+    <Assembly Name="System.Data.DataSetExtensions" Version="4.0.0.0" />
+    <Assembly Name="System.Data.Odbc" Version="4.0.0.0" />
+    <Assembly Name="System.Data.SqlClient" Version="4.4.0.0" />
+    <Assembly Name="System.Diagnostics.EventLog" Version="4.0.0.0" />
+    <Assembly Name="System.Diagnostics.PerformanceCounter" Version="4.0.0.0" />
+    <Assembly Name="System.DirectoryServices.AccountManagement" Version="4.0.0.0" />
+    <Assembly Name="System.DirectoryServices" Version="4.0.0.0" />
+    <Assembly Name="System.DirectoryServices.Protocols" Version="4.0.0.0" />
+    <Assembly Name="System.Drawing.Common" Version="4.0.0.0" />
+    <Assembly Name="System.IO.FileSystem.AccessControl" Version="4.0.3.0" />
+    <Assembly Name="System.IO.Packaging" Version="4.0.3.0" />
+    <Assembly Name="System.IO.Pipelines" Version="4.0.0.0" />
+    <Assembly Name="System.IO.Pipes.AccessControl" Version="4.0.3.0" />
+    <Assembly Name="System.IO.Ports" Version="4.0.1.0" />
+    <Assembly Name="System.Json" Version="2.0.6.0" />
+    <Assembly Name="System.Management" Version="4.0.0.0" />
+    <Assembly Name="System.Net.Http.WinHttpHandler" Version="4.0.3.0" />
+    <Assembly Name="System.Net.WebSockets.WebSocketProtocol" Version="4.0.0.0" />
+    <Assembly Name="System.Reflection.DispatchProxy" Version="4.0.4.0" />
+    <Assembly Name="System.Runtime.Caching" Version="4.0.0.0" />
+    <Assembly Name="System.Runtime.CompilerServices.Unsafe" Version="4.0.4.0" />
+    <Assembly Name="System.Runtime.Intrinsics.Experimental" Version="4.0.0.0" />
+    <Assembly Name="System.Security.AccessControl" Version="4.1.1.0" />
+    <Assembly Name="System.Security.Cryptography.Cng" Version="4.3.1.0" />
+    <Assembly Name="System.Security.Cryptography.OpenSsl" Version="4.1.1.0" />
+    <Assembly Name="System.Security.Cryptography.Pkcs" Version="4.0.3.0" />
+    <Assembly Name="System.Security.Cryptography.ProtectedData" Version="4.0.3.0" />
+    <Assembly Name="System.Security.Cryptography.Xml" Version="4.0.1.0" />
+    <Assembly Name="System.Security.Permissions" Version="4.0.1.0" />
+    <Assembly Name="System.Security.Principal.Windows" Version="4.1.1.0" />
+    <Assembly Name="System.ServiceModel" Version="4.0.0.0" />
+    <Assembly Name="System.ServiceModel.Duplex" Version="4.1.0.0" />
+    <Assembly Name="System.ServiceModel.Http" Version="4.1.2.0" />
+    <Assembly Name="System.ServiceModel.NetTcp" Version="4.1.2.0" />
+    <Assembly Name="System.ServiceModel.Primitives" Version="4.2.0.0" />
+    <Assembly Name="System.ServiceModel.Security" Version="4.0.3.0" />
+    <Assembly Name="System.ServiceModel.Syndication" Version="4.0.0.0" />
+    <Assembly Name="System.ServiceProcess.ServiceController" Version="4.2.1.0" />
+    <Assembly Name="System.Text.Encoding.CodePages" Version="4.1.1.0" />
+    <Assembly Name="System.Text.Encodings.Web" Version="4.0.3.0" />
+    <Assembly Name="System.Threading.AccessControl" Version="4.0.3.0" />
+    <Assembly Name="System.Threading.Channels" Version="4.0.0.0" />
+  </Assemblies>
   <Namespace Name="Microsoft.CSharp">
     <Type Name="Microsoft.CSharp.CSharpCodeProvider" Id="T:Microsoft.CSharp.CSharpCodeProvider">
       <Member Id="M:Microsoft.CSharp.CSharpCodeProvider.#ctor" />

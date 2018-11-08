@@ -34,6 +34,9 @@
       <InterfaceName>System.Collections.Generic.ICollection&lt;TValue&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;TValue&gt;</InterfaceName>
     </Interface>
     <Interface>
@@ -41,6 +44,9 @@
     </Interface>
     <Interface>
       <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

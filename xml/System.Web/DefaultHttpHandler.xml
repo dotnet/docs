@@ -17,6 +17,9 @@
     <Interface>
       <InterfaceName>System.Web.IHttpAsyncHandler</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Web.IHttpHandler</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents the properties and methods of a default HTTP handler.</summary>

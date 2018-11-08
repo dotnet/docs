@@ -15,6 +15,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Web.DynamicData.IDynamicValidatorException</InterfaceName>
     </Interface>
   </Interfaces>

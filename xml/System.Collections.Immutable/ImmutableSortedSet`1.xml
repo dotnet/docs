@@ -38,6 +38,12 @@
       <InterfaceName>System.Collections.Generic.ISet&lt;T&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Collections.IList</InterfaceName>
     </Interface>
     <Interface>
@@ -616,36 +622,6 @@
   
  ]]></format>
         </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ItemRef">
-      <MemberSignature Language="C#" Value="public T&amp; ItemRef (int index);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance T&amp; modreq(System.Runtime.InteropServices.InAttribute) ItemRef(int32 index) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet`1.ItemRef(System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ItemRef (index As Integer) As T&amp;" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; T&amp; ^ ItemRef(int index);" />
-      <MemberSignature Language="F#" Value="member this.ItemRef : int -&gt; T&amp;" Usage="immutableSortedSet.ItemRef index" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.Immutable</AssemblyName>
-        <AssemblyVersion>1.2.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue RefType="Readonly">
-        <ReturnType>T</ReturnType>
-        <Attributes>
-          <Attribute FrameworkAlternate="netcore-2.1">
-            <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
-          </Attribute>
-        </Attributes>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyComparer">

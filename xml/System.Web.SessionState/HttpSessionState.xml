@@ -18,6 +18,9 @@
     <Interface>
       <InterfaceName>System.Collections.ICollection</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Provides access to session-state values as well as session-level settings and lifetime management methods.</summary>

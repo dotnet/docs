@@ -20,6 +20,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Threading.Tasks.Dataflow.IDataflowBlock</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;</InterfaceName>
     </Interface>
   </Interfaces>

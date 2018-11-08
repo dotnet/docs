@@ -25,6 +25,9 @@
     <Interface>
       <InterfaceName>System.Runtime.CompilerServices.ICriticalNotifyCompletion</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.CompilerServices.INotifyCompletion</InterfaceName>
+    </Interface>
   </Interfaces>
   <Attributes>
     <Attribute FrameworkAlternate="netcore-2.1">

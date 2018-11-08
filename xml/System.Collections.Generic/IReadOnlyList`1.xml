@@ -37,6 +37,9 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <typeparam name="T">The type of elements in the read-only list.</typeparam>

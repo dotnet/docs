@@ -22,10 +22,16 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Threading.Tasks.Dataflow.IDataflowBlock</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Threading.Tasks.Dataflow.IReceivableSourceBlock&lt;System.Tuple&lt;System.Collections.Generic.IList&lt;T1&gt;,System.Collections.Generic.IList&lt;T2&gt;,System.Collections.Generic.IList&lt;T3&gt;&gt;&gt;</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.Threading.Tasks.Dataflow.ISourceBlock&lt;System.Tuple&lt;System.Collections.Generic.IList&lt;T1&gt;,System.Collections.Generic.IList&lt;T2&gt;,System.Collections.Generic.IList&lt;T3&gt;&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

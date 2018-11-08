@@ -17,7 +17,13 @@
       <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.ServiceModel.ICommunicationObject</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ServiceModel.Security.IWSTrustChannelContract</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Security.IWSTrustContract</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>

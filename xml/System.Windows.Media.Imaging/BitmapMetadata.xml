@@ -17,6 +17,9 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.String&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Provides support for reading and writing metadata to and from a bitmap image.</summary>

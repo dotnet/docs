@@ -16,6 +16,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.ComponentModel.IComponent</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ComponentModel.ISynchronizeInvoke</InterfaceName>
     </Interface>
     <Interface>

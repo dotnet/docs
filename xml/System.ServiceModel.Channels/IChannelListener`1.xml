@@ -22,6 +22,9 @@
     <Interface>
       <InterfaceName>System.ServiceModel.Channels.IChannelListener</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.ICommunicationObject</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <typeparam name="TChannel">The type of channel that the channel listener accepts.</typeparam>

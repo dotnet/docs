@@ -27,6 +27,12 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerator&lt;System.Xml.Schema.XmlSchema&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerator</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Enables iteration over a collection of <see cref="T:System.Xml.Schema.XmlSchema" /> objects.</summary>

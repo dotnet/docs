@@ -18,6 +18,9 @@
     <Interface>
       <InterfaceName>System.Collections.ICollection</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents a collection that contains the key field of each record in a data source. This class cannot be inherited.</summary>

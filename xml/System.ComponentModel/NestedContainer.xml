@@ -25,6 +25,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.ComponentModel.IContainer</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ComponentModel.INestedContainer</InterfaceName>
     </Interface>
     <Interface>

@@ -19,6 +19,12 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerator&lt;System.Reflection.Metadata.DocumentHandle&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerator</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>To be added.</summary>

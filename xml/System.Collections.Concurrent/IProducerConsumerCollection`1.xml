@@ -30,6 +30,9 @@
     <Interface>
       <InterfaceName>System.Collections.ICollection</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <typeparam name="T">Specifies the type of elements in the collection.</typeparam>

@@ -16,6 +16,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Web.UI.IParserAccessor</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Web.UI.IPostBackDataHandler</InterfaceName>
     </Interface>
   </Interfaces>

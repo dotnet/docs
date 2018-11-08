@@ -33,6 +33,12 @@
       <InterfaceName>System.Collections.Generic.IEnumerator&lt;T&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.Collections.IEnumerator</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Runtime.Serialization.IDeserializationCallback</InterfaceName>
     </Interface>
     <Interface>

@@ -20,6 +20,12 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Data.Objects.ObjectParameter&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents the query parameters as <see cref="T:System.Data.Objects.ObjectParameter" /> objects that are defined in an <see cref="T:System.Data.Objects.ObjectQuery`1" />.</summary>

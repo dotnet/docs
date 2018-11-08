@@ -24,6 +24,9 @@
     <Interface>
       <InterfaceName>System.ComponentModel.ISite</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.IServiceProvider</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Provides the ability to retrieve the full nested name of a component.</summary>

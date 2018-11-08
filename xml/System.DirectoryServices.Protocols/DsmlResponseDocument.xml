@@ -17,6 +17,9 @@
     <Interface>
       <InterfaceName>System.Collections.ICollection</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>The <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" /> class is a read-only collection generated as a response to a <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> object that contains zero, or more, objects derived from <see cref="T:System.DirectoryServices.Protocols.DirectoryResponse" />.</summary>

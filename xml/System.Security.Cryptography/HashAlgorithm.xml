@@ -27,6 +27,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Security.Cryptography.ICryptoTransform</InterfaceName>
     </Interface>
   </Interfaces>

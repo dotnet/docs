@@ -26,6 +26,9 @@
   </TypeParameters>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Threading.Tasks.Dataflow.IDataflowBlock</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</InterfaceName>
     </Interface>
     <Interface>

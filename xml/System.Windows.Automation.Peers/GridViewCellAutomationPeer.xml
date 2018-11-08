@@ -15,6 +15,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Windows.Automation.Provider.IGridItemProvider</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Windows.Automation.Provider.ITableItemProvider</InterfaceName>
     </Interface>
   </Interfaces>

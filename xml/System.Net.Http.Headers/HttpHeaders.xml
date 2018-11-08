@@ -24,6 +24,9 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Collections.Generic.IEnumerable&lt;System.String&gt;&gt;&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>A collection of headers and their values as defined in RFC 2616.</summary>

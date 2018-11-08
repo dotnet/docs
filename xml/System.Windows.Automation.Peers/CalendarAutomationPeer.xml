@@ -14,6 +14,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Windows.Automation.Provider.IGridProvider</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Windows.Automation.Provider.IItemContainerProvider</InterfaceName>
     </Interface>
     <Interface>

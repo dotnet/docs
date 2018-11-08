@@ -24,6 +24,9 @@
     <Interface>
       <InterfaceName>System.ServiceModel.Channels.IOutputSession</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.ISession</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Defines the interface for the session implemented on each side of a bi-directional communication between messaging endpoints.</summary>

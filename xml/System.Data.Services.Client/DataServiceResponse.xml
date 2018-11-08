@@ -18,6 +18,9 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Data.Services.Client.OperationResponse&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents the response to operations sent to the data service as a result of calling <see cref="M:System.Data.Services.Client.DataServiceContext.SaveChanges" />.</summary>

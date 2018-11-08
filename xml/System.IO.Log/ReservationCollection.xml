@@ -20,6 +20,12 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Int64&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Manages the collection of space reservations made in a record sequence.</summary>

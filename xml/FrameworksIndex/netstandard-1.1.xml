@@ -1,5 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="netstandard-1.1">
+  <Assemblies>
+    <Assembly Name="System.Collections.Concurrent" Version="4.0.0.0" />
+    <Assembly Name="System.Collections" Version="4.0.0.0" />
+    <Assembly Name="System.Diagnostics.Debug" Version="4.0.0.0" />
+    <Assembly Name="System.Diagnostics.Tools" Version="4.0.0.0" />
+    <Assembly Name="System.Diagnostics.Tracing" Version="4.0.0.0" />
+    <Assembly Name="System.Globalization" Version="4.0.0.0" />
+    <Assembly Name="System.IO.Compression" Version="4.0.0.0" />
+    <Assembly Name="System.IO" Version="4.0.0.0" />
+    <Assembly Name="System.Linq" Version="4.0.0.0" />
+    <Assembly Name="System.Linq.Expressions" Version="4.0.0.0" />
+    <Assembly Name="System.Net.Http" Version="4.0.0.0" />
+    <Assembly Name="System.Net.Primitives" Version="4.0.0.0" />
+    <Assembly Name="System.ObjectModel" Version="4.0.0.0" />
+    <Assembly Name="System.Reflection" Version="4.0.0.0" />
+    <Assembly Name="System.Reflection.Extensions" Version="4.0.0.0" />
+    <Assembly Name="System.Reflection.Primitives" Version="4.0.0.0" />
+    <Assembly Name="System.Resources.ResourceManager" Version="4.0.0.0" />
+    <Assembly Name="System.Runtime" Version="4.0.0.0" />
+    <Assembly Name="System.Runtime.Extensions" Version="4.0.0.0" />
+    <Assembly Name="System.Runtime.InteropServices" Version="4.0.0.0" />
+    <Assembly Name="System.Runtime.InteropServices.RuntimeInformation" Version="4.0.2.0" />
+    <Assembly Name="System.Runtime.Numerics" Version="4.0.0.0" />
+    <Assembly Name="System.Text.Encoding" Version="4.0.0.0" />
+    <Assembly Name="System.Text.Encoding.Extensions" Version="4.0.0.0" />
+    <Assembly Name="System.Text.RegularExpressions" Version="4.0.0.0" />
+    <Assembly Name="System.Threading" Version="4.0.0.0" />
+    <Assembly Name="System.Threading.Tasks" Version="4.0.0.0" />
+    <Assembly Name="System.Xml.ReaderWriter" Version="4.0.0.0" />
+    <Assembly Name="System.Xml.XDocument" Version="4.0.0.0" />
+  </Assemblies>
   <Namespace Name="System">
     <Type Name="System.Action" Id="T:System.Action" />
     <Type Name="System.Action`1" Id="T:System.Action`1" />

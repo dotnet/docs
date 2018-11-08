@@ -25,6 +25,9 @@
       <InterfaceName>System.Security.IPermission</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.Security.ISecurityEncodable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Security.Permissions.IUnrestrictedPermission</InterfaceName>
     </Interface>
   </Interfaces>

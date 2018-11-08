@@ -16,6 +16,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Web.UI.MobileControls.IControlAdapter</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Web.UI.MobileControls.IPageAdapter</InterfaceName>
     </Interface>
   </Interfaces>

@@ -24,6 +24,12 @@
     <Interface>
       <InterfaceName>System.ServiceModel.Channels.ITransportTokenAssertionProvider</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Description.IPolicyExportExtension</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Description.IWsdlExportExtension</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents the binding element used to specify an HTTPS transport for transmitting messages.</summary>

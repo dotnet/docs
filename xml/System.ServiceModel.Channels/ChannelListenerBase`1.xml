@@ -23,7 +23,13 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IChannelListener</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.ICommunicationObject</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>

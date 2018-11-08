@@ -16,6 +16,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Web.IHttpModule</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Web.SessionState.ISessionStateModule</InterfaceName>
     </Interface>
   </Interfaces>

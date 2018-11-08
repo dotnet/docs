@@ -17,6 +17,12 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Runtime.Remoting.Messaging.IMessage</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Remoting.Messaging.IMethodMessage</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Runtime.Remoting.Messaging.IMethodReturnMessage</InterfaceName>
     </Interface>
     <Interface>

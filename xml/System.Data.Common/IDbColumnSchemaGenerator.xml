@@ -27,14 +27,14 @@
   </Attributes>
   <Docs>
     <summary>Generates a column schema.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
 A data provider can use the <xref:System.Data.Common.IDbColumnSchemaGenerator> interface to populate <xref:System.Data.Common.DbColumn> schema metadata without using a <xref:System.Data.DataTable> by providing a custom implementation in the <xref:System.Data.Common.IDbColumnSchemaGenerator.GetColumnSchema> method.
   
  ]]></format>
-        </remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetColumnSchema">

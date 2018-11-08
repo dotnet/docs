@@ -12,6 +12,9 @@
   </AssemblyInfo>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.Build.Framework.ILogger</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Build.Framework.INodeLogger</InterfaceName>
     </Interface>
   </Interfaces>

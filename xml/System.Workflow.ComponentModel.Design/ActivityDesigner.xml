@@ -15,7 +15,13 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.ComponentModel.Design.IDesigner</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ComponentModel.Design.IDesignerFilter</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.Design.IRootDesigner</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.Drawing.Design.IToolboxUser</InterfaceName>

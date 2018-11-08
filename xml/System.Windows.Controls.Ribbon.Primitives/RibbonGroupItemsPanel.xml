@@ -16,6 +16,9 @@
     <Interface>
       <InterfaceName>System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfo</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents a panel that arranges items in a <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" />.</summary>

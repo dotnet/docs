@@ -17,6 +17,9 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.IO.Log.LogExtent&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents the collection of <see cref="T:System.IO.Log.LogExtent" /> objects associated with a <see cref="T:System.IO.Log.LogStore" />.</summary>

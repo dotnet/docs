@@ -17,6 +17,9 @@
     <Interface>
       <InterfaceName>System.Web.UI.IDataItemContainer</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.INamingContainer</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents an individual row in a <see cref="T:System.Web.UI.WebControls.GridView" /> control.</summary>

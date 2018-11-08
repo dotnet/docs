@@ -22,6 +22,9 @@
       <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.ServiceModel.ICommunicationObject</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ServiceModel.IExtensibleObject&lt;System.ServiceModel.IContextChannel&gt;</InterfaceName>
     </Interface>
   </Interfaces>

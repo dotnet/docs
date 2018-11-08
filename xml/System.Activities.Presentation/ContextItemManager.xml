@@ -16,6 +16,9 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.ContextItem&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents a class that maintains a set of context items published into the designer editing context. This class is abstract.</summary>

@@ -20,6 +20,12 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Data.IDataAdapter</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Data.IDbDataAdapter</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ICloneable</InterfaceName>
     </Interface>
   </Interfaces>

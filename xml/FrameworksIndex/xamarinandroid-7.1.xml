@@ -1,5 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="xamarinandroid-7.1">
+  <Assemblies>
+    <Assembly Name="Microsoft.CSharp" Version="2.0.5.0" />
+    <Assembly Name="mscorlib" Version="2.0.5.0" />
+    <Assembly Name="System.ComponentModel.Composition" Version="2.0.5.0" />
+    <Assembly Name="System.ComponentModel.DataAnnotations" Version="2.0.5.0" />
+    <Assembly Name="System.Core" Version="2.0.5.0" />
+    <Assembly Name="System.Data" Version="2.0.5.0" />
+    <Assembly Name="System.Data.Services.Client" Version="2.0.5.0" />
+    <Assembly Name="System" Version="2.0.5.0" />
+    <Assembly Name="System.IdentityModel" Version="2.0.5.0" />
+    <Assembly Name="System.IO.Compression" Version="2.0.5.0" />
+    <Assembly Name="System.IO.Compression.FileSystem" Version="2.0.5.0" />
+    <Assembly Name="System.Json" Version="2.0.5.0" />
+    <Assembly Name="System.Net" Version="2.0.5.0" />
+    <Assembly Name="System.Net.Http" Version="4.0.0.0" />
+    <Assembly Name="System.Net.Http.WinHttpHandler" Version="2.0.5.0" />
+    <Assembly Name="System.Numerics" Version="2.0.5.0" />
+    <Assembly Name="System.Numerics.Vectors" Version="2.0.5.0" />
+    <Assembly Name="System.Reflection.Context" Version="2.0.5.0" />
+    <Assembly Name="System.Reflection.DispatchProxy" Version="2.0.5.0" />
+    <Assembly Name="System.Runtime.InteropServices.RuntimeInformation" Version="4.0.0.0" />
+    <Assembly Name="System.Runtime.Serialization" Version="2.0.5.0" />
+    <Assembly Name="System.Security" Version="2.0.5.0" />
+    <Assembly Name="System.ServiceModel" Version="2.0.5.0" />
+    <Assembly Name="System.ServiceModel.Internals" Version="0.0.0.0" />
+    <Assembly Name="System.ServiceModel.Web" Version="2.0.5.0" />
+    <Assembly Name="System.Transactions" Version="2.0.5.0" />
+    <Assembly Name="System.Web.Services" Version="2.0.5.0" />
+    <Assembly Name="System.Windows" Version="2.0.5.0" />
+    <Assembly Name="System.Xml" Version="2.0.5.0" />
+    <Assembly Name="System.Xml.Linq" Version="2.0.5.0" />
+    <Assembly Name="System.Xml.Serialization" Version="2.0.5.0" />
+    <Assembly Name="System.Xml.XPath.XmlDocument" Version="2.0.5.0" />
+  </Assemblies>
   <Namespace Name="Microsoft.CSharp.RuntimeBinder">
     <Type Name="Microsoft.CSharp.RuntimeBinder.Binder" Id="T:Microsoft.CSharp.RuntimeBinder.Binder">
       <Member Id="M:Microsoft.CSharp.RuntimeBinder.Binder.BinaryOperation(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Linq.Expressions.ExpressionType,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})" />

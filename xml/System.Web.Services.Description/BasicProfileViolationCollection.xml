@@ -17,6 +17,9 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Web.Services.Description.BasicProfileViolation&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Contains a strongly typed collection of <see cref="T:System.Web.Services.Description.BasicProfileViolation" /> objects.</summary>

@@ -21,7 +21,19 @@
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.IListSource</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Linq.IOrderedQueryable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Linq.IOrderedQueryable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Linq.IQueryable</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.Linq.IQueryable&lt;T&gt;</InterfaceName>

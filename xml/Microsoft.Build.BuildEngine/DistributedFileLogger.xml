@@ -17,6 +17,12 @@
     <Interface>
       <InterfaceName>Microsoft.Build.Framework.IForwardingLogger</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Framework.ILogger</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Framework.INodeLogger</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents a text file that contains the build log for a build node.</summary>

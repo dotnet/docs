@@ -22,6 +22,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.Build.Framework.ITaskItem</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Build.Framework.ITaskItem2</InterfaceName>
     </Interface>
   </Interfaces>

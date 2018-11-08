@@ -20,6 +20,12 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;Microsoft.Build.BuildEngine.Toolset&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents one or more <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> objects. A Toolset is a combination of a Toolset version (such as "2.0"), a tools path, and an optional set of associated properties.</summary>

@@ -21,6 +21,9 @@
     <Interface>
       <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.ICommunicationObject</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Defines the contract that a channel must implement to be on the requesting side of a request-reply communication between messaging endpoints.</summary>

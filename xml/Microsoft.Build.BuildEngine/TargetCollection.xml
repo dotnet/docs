@@ -18,6 +18,9 @@
     <Interface>
       <InterfaceName>System.Collections.ICollection</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents a collection of all <see href="http://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca">Target</see> elements in a project.</summary>

@@ -22,6 +22,12 @@
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;TElement&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Linq.IQueryable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Linq.IQueryable&lt;TElement&gt;</InterfaceName>
     </Interface>
   </Interfaces>

@@ -12,6 +12,9 @@
   </AssemblyInfo>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.ServiceModel.Channels.ISession</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ServiceModel.Security.ISecuritySession</InterfaceName>
     </Interface>
   </Interfaces>

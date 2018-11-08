@@ -14,7 +14,13 @@
   </AssemblyInfo>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Runtime.Remoting.Messaging.IMessage</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Runtime.Remoting.Messaging.IMethodCallMessage</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Remoting.Messaging.IMethodMessage</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

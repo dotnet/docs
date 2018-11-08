@@ -17,6 +17,9 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.SecurityKeyIdentifierClause&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents a key identifier.</summary>

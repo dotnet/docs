@@ -21,6 +21,9 @@
     <Interface>
       <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.ICommunicationObject</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Defines the interface that a channel must implement to receive a message.</summary>

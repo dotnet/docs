@@ -17,6 +17,9 @@
     <Interface>
       <InterfaceName>System.Collections.IDictionaryEnumerator</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerator</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Defines a specialized enumerator that can enumerate over the content of a <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" /> object.</summary>

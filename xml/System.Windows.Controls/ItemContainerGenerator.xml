@@ -15,6 +15,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Windows.Controls.Primitives.IItemContainerGenerator</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator</InterfaceName>
     </Interface>
     <Interface>

@@ -24,6 +24,9 @@
     <Interface>
       <InterfaceName>Microsoft.Build.Framework.ICancelableTask</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Framework.ITask</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>When overridden in a derived form, provides functionality for a task that wraps a command line tool.</summary>

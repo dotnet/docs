@@ -25,10 +25,16 @@
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;TEntity&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ComponentModel.IListSource</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.Data.Linq.ITable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Linq.IQueryable</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.Linq.IQueryable&lt;TEntity&gt;</InterfaceName>

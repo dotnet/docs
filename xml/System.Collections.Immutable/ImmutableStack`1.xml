@@ -23,6 +23,9 @@
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Collections.Immutable.IImmutableStack&lt;T&gt;</InterfaceName>
     </Interface>
   </Interfaces>
@@ -170,33 +173,6 @@
       <Docs>
         <summary>Returns the object at the top of the stack without removing it.</summary>
         <returns>The object at the top of the stack.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="PeekRef">
-      <MemberSignature Language="C#" Value="public T&amp; PeekRef ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance T&amp; modreq(System.Runtime.InteropServices.InAttribute) PeekRef() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableStack`1.PeekRef" />
-      <MemberSignature Language="VB.NET" Value="Public Function PeekRef () As T&amp;" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; T&amp; ^ PeekRef();" />
-      <MemberSignature Language="F#" Value="member this.PeekRef : unit -&gt; T&amp;" Usage="immutableStack.PeekRef " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.Immutable</AssemblyName>
-        <AssemblyVersion>1.2.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue RefType="Readonly">
-        <ReturnType>T</ReturnType>
-        <Attributes>
-          <Attribute FrameworkAlternate="netcore-2.1">
-            <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
-          </Attribute>
-        </Attributes>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

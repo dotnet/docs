@@ -19,6 +19,9 @@
     <Interface>
       <InterfaceName>System.Web.ModelBinding.IUnvalidatedValueProvider</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Web.ModelBinding.IValueProvider</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents the collection of value-provider objects for the application.</summary>

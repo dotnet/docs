@@ -35,6 +35,9 @@
       <InterfaceName>System.IDisposable</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ServiceModel.Channels.IOutputChannel</InterfaceName>
     </Interface>
     <Interface>
@@ -42,6 +45,12 @@
     </Interface>
     <Interface>
       <InterfaceName>System.ServiceModel.IClientChannel</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.ICommunicationObject</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.IContextChannel</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.ServiceModel.IExtensibleObject&lt;System.ServiceModel.IContextChannel&gt;</InterfaceName>

@@ -17,6 +17,9 @@
     <Interface>
       <InterfaceName>Microsoft.Vsa.IVsaGlobalItem</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Vsa.IVsaItem</InterfaceName>
+    </Interface>
   </Interfaces>
   <Attributes>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">

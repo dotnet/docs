@@ -25,6 +25,12 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Collections.IList</InterfaceName>
     </Interface>
   </Interfaces>

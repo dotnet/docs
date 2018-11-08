@@ -17,6 +17,9 @@
     <Interface>
       <InterfaceName>Microsoft.VisualC.StlClr.Generic.IBaseIterator&lt;TValue&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <typeparam name="TValue">[!INCLUDE[cpp_iter_arg](~/includes/cpp-iter-arg-md.md)]</typeparam>

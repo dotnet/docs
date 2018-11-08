@@ -1,5 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="netframework-1.1">
+  <Assemblies>
+    <Assembly Name="Accessibility" Version="1.0.5000.0" />
+    <Assembly Name="cscompmgd" Version="7.0.5000.0" />
+    <Assembly Name="CustomMarshalers" Version="1.0.5000.0" />
+    <Assembly Name="IEExecRemote" Version="1.0.5000.0" />
+    <Assembly Name="IEHost" Version="1.0.5000.0" />
+    <Assembly Name="IIEHost" Version="1.0.5000.0" />
+    <Assembly Name="ISymWrapper" Version="1.0.5000.0" />
+    <Assembly Name="Microsoft.JScript" Version="7.0.5000.0" />
+    <Assembly Name="Microsoft.VisualBasic" Version="7.0.5000.0" />
+    <Assembly Name="Microsoft.VisualBasic.Vsa" Version="7.0.5000.0" />
+    <Assembly Name="Microsoft.VisualC" Version="7.0.5000.0" />
+    <Assembly Name="Microsoft.Vsa" Version="7.0.5000.0" />
+    <Assembly Name="Microsoft.Vsa.Vb.CodeDOMProcessor" Version="7.0.5000.0" />
+    <Assembly Name="Microsoft_VsaVb" Version="7.0.5000.0" />
+    <Assembly Name="mscorcfg" Version="1.0.5000.0" />
+    <Assembly Name="mscorlib" Version="1.0.5000.0" />
+    <Assembly Name="System.Configuration.Install" Version="1.0.5000.0" />
+    <Assembly Name="System.Data" Version="1.0.5000.0" />
+    <Assembly Name="System.Data.OracleClient" Version="1.0.5000.0" />
+    <Assembly Name="System.Design" Version="1.0.5000.0" />
+    <Assembly Name="System.DirectoryServices" Version="1.0.5000.0" />
+    <Assembly Name="System" Version="1.0.5000.0" />
+    <Assembly Name="System.Drawing.Design" Version="1.0.5000.0" />
+    <Assembly Name="System.Drawing" Version="1.0.5000.0" />
+    <Assembly Name="System.EnterpriseServices" Version="1.0.5000.0" />
+    <Assembly Name="System.Management" Version="1.0.5000.0" />
+    <Assembly Name="System.Messaging" Version="1.0.5000.0" />
+    <Assembly Name="System.Runtime.Remoting" Version="1.0.5000.0" />
+    <Assembly Name="System.Runtime.Serialization.Formatters.Soap" Version="1.0.5000.0" />
+    <Assembly Name="System.Security" Version="1.0.5000.0" />
+    <Assembly Name="System.ServiceProcess" Version="1.0.5000.0" />
+    <Assembly Name="System.Web" Version="1.0.5000.0" />
+    <Assembly Name="System.Web.Mobile" Version="1.0.5000.0" />
+    <Assembly Name="System.Web.RegularExpressions" Version="1.0.5000.0" />
+    <Assembly Name="System.Web.Services" Version="1.0.5000.0" />
+    <Assembly Name="System.Windows.Forms" Version="1.0.5000.0" />
+    <Assembly Name="System.Xml" Version="1.0.5000.0" />
+  </Assemblies>
   <Namespace Name="">
     <Type Name="_GUID" Id="T:_GUID" />
     <Type Name="IStream" Id="T:IStream" />

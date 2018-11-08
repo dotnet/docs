@@ -19,7 +19,11 @@
   <Base>
     <BaseTypeName>System.ServiceModel.HttpBindingBase</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IBindingRuntimePreferences</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
     <summary>Specifies basic https binding settings.</summary>
     <remarks>To be added.</remarks>

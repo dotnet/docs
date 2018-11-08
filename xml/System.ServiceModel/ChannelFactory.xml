@@ -27,6 +27,9 @@
     <Interface>
       <InterfaceName>System.ServiceModel.Channels.IChannelFactory</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.ICommunicationObject</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Creates and manages the channels that are used by clients to send messages to service endpoints.</summary>

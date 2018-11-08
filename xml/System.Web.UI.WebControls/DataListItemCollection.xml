@@ -18,6 +18,9 @@
     <Interface>
       <InterfaceName>System.Collections.ICollection</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents the collection of <see cref="T:System.Web.UI.WebControls.DataListItem" /> objects in the <see cref="T:System.Web.UI.WebControls.DataList" /> control. This class cannot be inherited.</summary>

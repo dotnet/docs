@@ -25,6 +25,9 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IReadOnlyList&lt;T&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <typeparam name="T">The type of elements in the list.</typeparam>

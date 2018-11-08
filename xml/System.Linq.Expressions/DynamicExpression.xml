@@ -28,6 +28,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Linq.Expressions.IArgumentProvider</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Linq.Expressions.IDynamicExpression</InterfaceName>
     </Interface>
   </Interfaces>

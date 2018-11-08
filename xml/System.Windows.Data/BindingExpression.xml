@@ -13,7 +13,11 @@
   <Base>
     <BaseTypeName>System.Windows.Data.BindingExpressionBase</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.IWeakEventListener</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
     <summary>Contains information about a single instance of a <see cref="T:System.Windows.Data.Binding" />.</summary>
     <remarks>

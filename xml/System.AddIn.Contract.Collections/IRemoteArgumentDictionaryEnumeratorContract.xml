@@ -14,6 +14,9 @@
     <Interface>
       <InterfaceName>System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.AddIn.Contract.IContract</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Enumerates the elements of an <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" />.</summary>

@@ -14,6 +14,12 @@
       <InterfaceName>Microsoft.Build.Framework.ITaskHost</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>Microsoft.Build.Tasks.Hosting.ICscHostObject</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Tasks.Hosting.ICscHostObject2</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Build.Tasks.Hosting.ICscHostObject3</InterfaceName>
     </Interface>
   </Interfaces>

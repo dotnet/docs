@@ -16,6 +16,9 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.PropertyEditing.PropertyEntry&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Maintains the collection of sub-properties of a given parent <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" />.</summary>

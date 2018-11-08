@@ -20,6 +20,9 @@
     <Interface>
       <InterfaceName>Microsoft.Build.Framework.ICancelableTask</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Framework.ITask</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Implements the <c>Copy</c> task. Use the <c>Copy</c> element in your project file to create and execute this task. For usage and parameter information, see [Copy Task](http://msdn.microsoft.com/library/a46ba9da-3e4e-4890-b4ea-09a099b6bc40).</summary>

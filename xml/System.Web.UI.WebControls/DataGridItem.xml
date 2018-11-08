@@ -18,6 +18,9 @@
     <Interface>
       <InterfaceName>System.Web.UI.IDataItemContainer</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.INamingContainer</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents an item (row) in a <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>

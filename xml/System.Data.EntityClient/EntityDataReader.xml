@@ -15,6 +15,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Data.IDataRecord</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Data.IExtendedDataRecord</InterfaceName>
     </Interface>
   </Interfaces>

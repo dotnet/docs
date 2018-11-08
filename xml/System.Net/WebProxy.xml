@@ -26,6 +26,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Net.IWebProxy</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
     </Interface>
   </Interfaces>

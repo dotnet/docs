@@ -17,6 +17,9 @@
     <Interface>
       <InterfaceName>System.Web.UI.IBindableTemplate</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.ITemplate</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Provides the default implementation of an <see cref="T:System.Web.UI.IBindableTemplate" /> object, which ASP.NET uses whenever it parses two-way data-binding within the templated content of an ASP.NET control such as <see cref="T:System.Web.UI.WebControls.FormView" />. This class cannot be inherited.</summary>

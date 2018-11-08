@@ -12,7 +12,16 @@
   </AssemblyInfo>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.AddIn.Contract.Collections.IRemoteArgumentEnumerableContract</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.AddIn.Contract.IContract</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>

@@ -29,6 +29,9 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;TSource&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <typeparam name="TSource">The type of element in the source sequence.</typeparam>

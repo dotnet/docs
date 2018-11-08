@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="netstandard-2.0">
+  <Assemblies>
+    <Assembly Name="netstandard" Version="2.0.0.0" />
+  </Assemblies>
   <Namespace Name="Microsoft.Win32.SafeHandles">
     <Type Name="Microsoft.Win32.SafeHandles.CriticalHandleMinusOneIsInvalid" Id="T:Microsoft.Win32.SafeHandles.CriticalHandleMinusOneIsInvalid">
       <Member Id="M:Microsoft.Win32.SafeHandles.CriticalHandleMinusOneIsInvalid.#ctor" />

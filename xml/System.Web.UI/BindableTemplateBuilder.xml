@@ -17,6 +17,9 @@
     <Interface>
       <InterfaceName>System.Web.UI.IBindableTemplate</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.ITemplate</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Supports page parsing of data-bound controls that automatically bind to an ASP.NET data source control within templated content sections. This class cannot be inherited.</summary>

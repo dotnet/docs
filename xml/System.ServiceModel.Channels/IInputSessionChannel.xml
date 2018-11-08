@@ -19,10 +19,16 @@
   </AssemblyInfo>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ServiceModel.Channels.IInputChannel</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.ServiceModel.Channels.ISessionChannel&lt;System.ServiceModel.Channels.IInputSession&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.ICommunicationObject</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>

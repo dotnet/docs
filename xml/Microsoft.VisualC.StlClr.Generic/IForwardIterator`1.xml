@@ -15,10 +15,16 @@
   </TypeParameters>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.VisualC.StlClr.Generic.IBaseIterator&lt;TValue&gt;</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.VisualC.StlClr.Generic.IOutputIterator&lt;TValue&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>

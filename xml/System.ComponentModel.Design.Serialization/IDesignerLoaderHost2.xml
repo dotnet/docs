@@ -22,7 +22,16 @@
   </AssemblyInfo>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.ComponentModel.Design.IDesignerHost</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.Design.IServiceContainer</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ComponentModel.Design.Serialization.IDesignerLoaderHost</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IServiceProvider</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>

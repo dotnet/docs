@@ -20,6 +20,9 @@
     <Interface>
       <InterfaceName>Microsoft.Build.Framework.ICancelableTask</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Framework.ITask</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Implements the <c>Delete</c> task. Use the <c>Delete</c> element in your project file to create and execute this task. For usage and parameter information, see [Delete Task](http://msdn.microsoft.com/library/916bb2e3-3017-4828-ae27-c0b5c99bbb48).</summary>

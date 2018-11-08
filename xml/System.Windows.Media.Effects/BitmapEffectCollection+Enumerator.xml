@@ -17,6 +17,12 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerator&lt;System.Windows.Media.Effects.BitmapEffect&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerator</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Enumerates <see cref="T:System.Windows.Media.Effects.BitmapEffect" /> objects in a <see cref="T:System.Windows.Media.Effects.BitmapEffectCollection" />.</summary>

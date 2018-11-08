@@ -17,6 +17,9 @@
     <Interface>
       <InterfaceName>System.Runtime.Serialization.IFormatter</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.IStateFormatter</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Serializes and deserializes object graphs that represent the state of an object. This class cannot be inherited.</summary>

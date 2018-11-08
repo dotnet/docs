@@ -36,6 +36,12 @@
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ServiceModel.IExtensionCollection&lt;T&gt;</InterfaceName>
     </Interface>
   </Interfaces>

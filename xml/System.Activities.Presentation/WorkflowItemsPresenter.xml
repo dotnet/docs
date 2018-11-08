@@ -14,6 +14,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Activities.Presentation.ICompositeView</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Activities.Presentation.IMultipleDragEnabledCompositeView</InterfaceName>
     </Interface>
   </Interfaces>

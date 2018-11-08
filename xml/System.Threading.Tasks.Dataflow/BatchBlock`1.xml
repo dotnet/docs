@@ -20,6 +20,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Threading.Tasks.Dataflow.IDataflowBlock</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Threading.Tasks.Dataflow.IPropagatorBlock&lt;T,T[]&gt;</InterfaceName>
     </Interface>
     <Interface>
@@ -29,7 +32,13 @@
       <InterfaceName>System.Threading.Tasks.Dataflow.ISourceBlock&lt;T[]&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

@@ -28,6 +28,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Resources.IResourceWriter</InterfaceName>
     </Interface>
   </Interfaces>

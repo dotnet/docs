@@ -23,6 +23,9 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.IO.Packaging.PackagePart&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents a collection of <see cref="T:System.IO.Packaging.PackagePart" /> objects.</summary>

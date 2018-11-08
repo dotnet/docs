@@ -17,6 +17,9 @@
     <Interface>
       <InterfaceName>System.Collections.ICollection</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Contains the <see cref="T:System.Windows.Input.TabletDevice" /> objects that represent the digitizer devices of a tablet device.</summary>

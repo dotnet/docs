@@ -420,7 +420,7 @@
  -or-  
   
  The two permissions are not equal and one is not a subset of the other.</exception>
-      <exception cref="T:System.NotSupportedException">The operation is ambiguous because the permission represents multiple identities.</exception>
+        <exception cref="T:System.NotSupportedException">The operation is ambiguous because the permission represents multiple identities.</exception>
       </Docs>
     </Member>
     <Member MemberName="Url">

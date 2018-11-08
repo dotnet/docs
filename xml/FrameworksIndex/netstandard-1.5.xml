@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="netstandard-1.5">
+  <Assemblies>
+    <Assembly Name="System.Diagnostics.Tracing" Version="4.1.0.0" />
+    <Assembly Name="System.IO" Version="4.1.0.0" />
+    <Assembly Name="System.Reflection" Version="4.1.0.0" />
+    <Assembly Name="System.Runtime" Version="4.1.0.0" />
+    <Assembly Name="System.Runtime.Extensions" Version="4.1.0.0" />
+    <Assembly Name="System.Runtime.InteropServices" Version="4.1.0.0" />
+  </Assemblies>
   <Namespace Name="System">
     <Type Name="System.Action" Id="T:System.Action" />
     <Type Name="System.Action`1" Id="T:System.Action`1" />

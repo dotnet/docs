@@ -17,6 +17,9 @@
     <Interface>
       <InterfaceName>System.ServiceModel.Channels.IChannelListener</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.ICommunicationObject</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Provides a common base implementation for channel listeners on the service.</summary>

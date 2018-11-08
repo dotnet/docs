@@ -13,7 +13,14 @@
   <Base>
     <BaseTypeName>System.Data.Common.DbParameter</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Data.IDataParameter</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Data.IDbDataParameter</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
     <summary>Represents a parameter used in EntityCommand.</summary>
     <remarks>

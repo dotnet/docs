@@ -28,6 +28,12 @@
       <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.Security.ISecurityEncodable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Security.ISecurityPolicyEncodable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Security.Policy.IMembershipCondition</InterfaceName>
     </Interface>
   </Interfaces>

@@ -16,6 +16,12 @@
     <Interface>
       <InterfaceName>Microsoft.Build.Framework.IForwardingLogger</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Framework.ILogger</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Framework.INodeLogger</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents a logger that forwards events to a central logger (e.g ConsoleLogger) residing on the parent node.</summary>

@@ -15,6 +15,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Xml.Serialization.IXmlSerializable</InterfaceName>
     </Interface>
   </Interfaces>

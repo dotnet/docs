@@ -21,10 +21,16 @@
       <InterfaceName>System.Web.UI.IDataItemContainer</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.Web.UI.INamingContainer</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Web.UI.IPostBackEventHandler</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.Web.UI.WebControls.ICallbackContainer</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.WebControls.IDataBoundControl</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.Web.UI.WebControls.IDataBoundItemControl</InterfaceName>

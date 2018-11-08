@@ -20,6 +20,12 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Windows.Media.Animation.Clock&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents an ordered collection of <see cref="T:System.Windows.Media.Animation.Clock" /> objects.</summary>

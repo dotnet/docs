@@ -16,6 +16,9 @@
     <Interface>
       <InterfaceName>System.Web.ModelBinding.IUnvalidatedValueProvider</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Web.ModelBinding.IValueProvider</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents the base class for value providers whose values come from a name/value collection.</summary>

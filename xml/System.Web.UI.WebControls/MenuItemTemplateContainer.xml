@@ -17,6 +17,9 @@
     <Interface>
       <InterfaceName>System.Web.UI.IDataItemContainer</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.INamingContainer</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents a container that holds the contents of a templated menu item in a <see cref="T:System.Web.UI.WebControls.Menu" /> control.</summary>

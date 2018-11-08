@@ -21,6 +21,9 @@
     <Interface>
       <InterfaceName>System.ICloneable</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents a managed <see cref="T:System.Data.OracleClient.OracleBFile" /> object designed to work with the Oracle <see langword="BFILE" /> data type. This class cannot be inherited.</summary>

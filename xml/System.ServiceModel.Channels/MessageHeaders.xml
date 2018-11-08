@@ -24,6 +24,9 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Channels.MessageHeaderInfo&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents a collection of message headers for a message. This class cannot be inherited.</summary>

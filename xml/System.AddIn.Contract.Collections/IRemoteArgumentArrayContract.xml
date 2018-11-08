@@ -14,6 +14,12 @@
     <Interface>
       <InterfaceName>System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.AddIn.Contract.Collections.IRemoteArgumentEnumerableContract</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.AddIn.Contract.IContract</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents an array of <see cref="T:System.AddIn.Contract.RemoteArgument" /> objects.</summary>

@@ -16,6 +16,12 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Collections.IList</InterfaceName>
     </Interface>
   </Interfaces>
@@ -412,12 +418,12 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridTableStylesCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnCollectionChanged (ccevent As CollectionChangeEventArgs)" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnCollectionChanged(System::ComponentModel::CollectionChangeEventArgs ^ ccevent);" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="F#" Value="member this.OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="gridTableStylesCollection.OnCollectionChanged ccevent" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="F#" Value="member this.OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="gridTableStylesCollection.OnCollectionChanged ccevent" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="C#" Value="protected void OnCollectionChanged (System.ComponentModel.CollectionChangeEventArgs e);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnCollectionChanged(class System.ComponentModel.CollectionChangeEventArgs e) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnCollectionChanged (e As CollectionChangeEventArgs)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnCollectionChanged(System::ComponentModel::CollectionChangeEventArgs ^ e);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="member this.OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="gridTableStylesCollection.OnCollectionChanged e" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="member this.OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="gridTableStylesCollection.OnCollectionChanged e" FrameworkAlternate="netframework-2.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

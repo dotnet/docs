@@ -19,10 +19,22 @@
   </AssemblyInfo>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ServiceModel.Channels.IDuplexChannel</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IInputChannel</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IOutputChannel</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ServiceModel.Channels.ISessionChannel&lt;System.ServiceModel.Channels.IDuplexSession&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.ICommunicationObject</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>

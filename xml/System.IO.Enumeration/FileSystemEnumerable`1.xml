@@ -19,6 +19,9 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;TResult&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <typeparam name="TResult">To be added.</typeparam>

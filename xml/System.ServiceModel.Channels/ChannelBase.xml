@@ -25,6 +25,9 @@
       <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.ServiceModel.ICommunicationObject</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ServiceModel.IDefaultCommunicationTimeouts</InterfaceName>
     </Interface>
   </Interfaces>

@@ -21,6 +21,9 @@
     <Interface>
       <InterfaceName>System.AddIn.Contract.Collections.IEnumerableContract&lt;C&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.AddIn.Contract.IContract</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <typeparam name="C">The type of elements in the array. <c>C</c> must implement the <see cref="T:System.AddIn.Contract.IContract" /> interface.</typeparam>

@@ -25,6 +25,12 @@
     <Interface>
       <InterfaceName>System.ComponentModel.Design.IDesignerHost</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.Design.IServiceContainer</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IServiceProvider</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Provides an interface that can extend a designer host to support loading from a serialized state.</summary>

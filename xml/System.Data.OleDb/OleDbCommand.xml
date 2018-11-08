@@ -17,6 +17,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Data.IDbCommand</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ICloneable</InterfaceName>
     </Interface>
     <Interface>

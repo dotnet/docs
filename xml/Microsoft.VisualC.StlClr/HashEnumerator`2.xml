@@ -25,6 +25,12 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerator&lt;TValue&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerator</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <typeparam name="TKey">The type of the hash iterator key.</typeparam>

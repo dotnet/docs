@@ -28,6 +28,12 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Data.IDataParameter</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Data.IDbDataParameter</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ICloneable</InterfaceName>
     </Interface>
   </Interfaces>

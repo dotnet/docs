@@ -24,6 +24,9 @@
     <Interface>
       <InterfaceName>System.ServiceModel.Channels.IChannelFactory</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.ICommunicationObject</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <typeparam name="TChannel">The type of channel that the channel factory creates.</typeparam>

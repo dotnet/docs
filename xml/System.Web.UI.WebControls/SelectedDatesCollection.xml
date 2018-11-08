@@ -18,6 +18,9 @@
     <Interface>
       <InterfaceName>System.Collections.ICollection</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Encapsulates a collection of <see cref="T:System.DateTime" /> objects that represent the selected dates in a <see cref="T:System.Web.UI.WebControls.Calendar" /> control. This class cannot be inherited.</summary>

@@ -31,6 +31,9 @@
     <Interface>
       <InterfaceName>System.IDisposable</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.IServiceProvider</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>Provides a simple implementation of the <see cref="T:System.ComponentModel.Design.IServiceContainer" /> interface. This class cannot be inherited.</summary>

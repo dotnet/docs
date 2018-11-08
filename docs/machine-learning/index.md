@@ -1,33 +1,44 @@
 ---
 title: ML.NET Guide
 description: Learn how to build custom AI solutions and integrate them into your .NET applications using ML.NET.
-author: aditidugar
-ms.date: 05/07/2018
+ms.date: 11/06/2018
 ---
 # ML.NET Guide
 
-ML.NET is a free, open-source, and cross-platform machine learning framework that enables you to build custom machine learning solutions and integrate them into your .NET applications. This guide provides many resources about working with ML.NET.
+This guide explains basic concepts and provides tutorials and an API reference for working with ML.NET.
 
-For more information about ML.NET, see [Introducing ML.NET: Cross-platform, Proven and Open Source Machine Learning Framework](https://blogs.msdn.microsoft.com/dotnet/2018/05/07/introducing-ml-net-cross-platform-proven-and-open-source-machine-learning-framework/) post on the .NET blog.
+> [!NOTE]
+> This documentation refers to ML.NET, which is currently in Preview. Material may be subject to change. For more information, see the [ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
 
 ## Get started
 
-To get started with ML.NET, check out the [Iris Petal Prediction quickstart](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet/get-started) or the more in-depth [tutorials](tutorials/index.md).
+To install and start building in ML.NET, follow the [Get started tutorial](https://www.microsoft.com/net/learn/machinelearning-ai/ml-dotnet-get-started-tutorial).
 
-If you are new to machine learning, you can also review the [Machine Learning Basics](resources/basics.md), where you'll find machine learning resources to assist you.
+To learn about ML.NET, see [What is ML.NET?](what-is-mldotnet.md)
 
-## How the ML.NET guide is organized
+To understand basics, see [Basic concepts for model training in ML.NET](basic-concepts-model-training-in-mldotnet.md).
 
-There are several sections in the ML.NET Guide. You can read them in order, or jump directly to what interests you the most.
+## Tutorials
 
-**[Tutorials](tutorials/index.md)**
+[Analyze sentiment using a binary classification model](tutorials/sentiment-analysis.md) shows you how to build an app that determines whether sentiment is positive or negative.
 
-In this section, you find step-by-step tutorials that guide you through building custom machine learning models for common developer scenarios.
+[Predict taxi fare using a regression model](tutorials/taxi-fare.md) shows you how to build a predictive app that uses many factors from historical data to determine the answer.
 
-**[Glossary](resources/glossary.md)**
+[Classify iris flowers by features](tutorials/iris-clustering.md) shows you how to use a clustering model to analyze the iris data set. 
 
-Find a list of machine learning terminology and their definitions.
+## How to guide
+
+[Build a game match-up list app with Infer.NET and probabilistic programming](how-to-guides/matchup-app-infer-net.md) shows you how to build a simplified version of a match-up app like you'd see in an Xbox game.
+
+## Resources
+
+[Machine learning glossary](resources/glossary.md) defines key terminology.
+
+[Machine learning tasks](resources/tasks.md) describes tasks, such as classification and anomaly detection. 
+
+[Data transforms](resources/transforms.md) describes data preparation capabilities in ML.NET.
+
 
 ## API reference
 
-Check out the [ML.NET API Reference](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet) to see the breadth of APIs available.
+[ML.NET API Reference](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet) describes the breadth of APIs available.

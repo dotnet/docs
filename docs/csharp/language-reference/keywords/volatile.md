@@ -23,7 +23,7 @@ The `volatile` keyword can be applied to fields of these types:
 
 Other types, including `double` and `long`, cannot be marked `volatile` because reads and writes to fields of those types cannot be guaranteed to be atomic. To protect multi-threaded access to those types of fields, use the <xref:System.Threading.Interlocked> class members or protect access using the [`lock`](lock-statement.md) statement.
 
-The volatile keyword can only be applied to fields of a `class` or `struct`. Local variables cannot be declared `volatile`.
+The `volatile` keyword can only be applied to fields of a `class` or `struct`. Local variables cannot be declared `volatile`.
   
 ## Example
 
@@ -31,7 +31,7 @@ The following example shows how to declare a public field variable as `volatile`
   
 [!code-csharp[declareVolatile](~/samples/snippets/csharp/language-reference/keywords/volatile/Program.cs#Declaration)]
 
-The following example demonstrates how an auxiliary or worker thread can be created and used to perform processing in parallel with that of the primary thread. For background information about multithreading, see [Managed Threading](../../../standard/threading/index.md) and [Threading (C#)](../../programming-guide/concepts/threading/index.md).  
+The following example demonstrates how an auxiliary or worker thread can be created and used to perform processing in parallel with that of the primary thread. For more information about multithreading, see [Managed Threading](../../../standard/threading/index.md).
   
 [!code-csharp[declareVolatile](~/samples/snippets/csharp/language-reference/keywords/volatile/Program.cs#Volatile)]
 

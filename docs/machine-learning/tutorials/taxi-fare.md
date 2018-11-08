@@ -172,8 +172,6 @@ The last step in data preparation combines all of the feature columns into the *
 
 [!code-csharp[ColumnConcatenatingEstimator](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#9 "Use the ColumnConcatenatingEstimator")]
 
-Notice that the `TripTime` column, which corresponds to the `trip_time_in_secs` column in the data set file, isn't included. We already determined that it isn't a useful prediction feature.
-
 ## Choose a learning algorithm
 
 After adding the data to the pipeline and transforming it into the correct input format, we select a learning algorithm (**learner**). The learner trains the model. We chose a **regression** task for this problem, so we use a `FastTreeRegressionTrainer` learner, which is one of the regression learners provided by ML .NET.

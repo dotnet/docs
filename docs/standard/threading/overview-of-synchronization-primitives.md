@@ -128,7 +128,7 @@ For more information, see the [Barrier](barrier.md) article and the <xref:System
 
 The <xref:System.Threading.Interlocked?displayProperty=nameWithType> class provides static methods that perform simple atomic operations on a variable. Those atomic operations include addition, increment and decrement, exchange and conditional exchange that depends on a comparison, and read operation of a 64-bit integer value.
 
-For more information, see the [Interlocked operations](interlocked-operations.md) article and the <xref:System.Threading.Interlocked> API reference.
+For more information, see the <xref:System.Threading.Interlocked> API reference.
 
 ## SpinWait structure
 

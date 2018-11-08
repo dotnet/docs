@@ -352,9 +352,9 @@ The `PredictWithModelLoadedFromFile` method executes the following tasks:
 * Combines test data and predictions for reporting.
 * Displays the predicted results.
 
-Add a call to the new method from the `Main` method, right under the `IterateModel` method call, using the following code:
+Add a call to the new method from the `Main` method, right under the `Predict` method call, using the following code:
 
-[!code-csharp[CallPredictWithModelLoadedFromFile](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#25 "Call the PredictWithModelLoadedFromFile method")]
+[!code-csharp[CallPredictModelLoaded](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#25 "Call the PredictWithModelLoadedFromFile method")]
 
 Add some comments to test the trained model's predictions in the `PredictWithModelLoadedFromFile` method:
 

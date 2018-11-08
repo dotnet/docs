@@ -240,7 +240,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum number of concurrent connections allowed by a <see cref="T:System.Net.ServicePoint" /> object.</summary>
-        <value>The maximum number of concurrent connections allowed by a <see cref="T:System.Net.ServicePoint" /> object. The default value is 2. When an app is running as an ASP.NET host, it is not possible to alter the value of this property through the config file if the autoConfig property is set to <see langword="true" />. However, you can change the value programmatically when the autoConfig property is <see langword="true" />. Set your preferred value once, when the AppDomain loads.</value>
+        <value>The maximum number of concurrent connections allowed by a <see cref="T:System.Net.ServicePoint" /> object. The default connection limit is 10 for ASP.NET hosted applications and 2 for all others. When an app is running as an ASP.NET host, it is not possible to alter the value of this property through the config file if the autoConfig property is set to <see langword="true" />. However, you can change the value programmatically when the autoConfig property is <see langword="true" />. Set your preferred value once, when the AppDomain loads.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -250,7 +250,7 @@
  Changing the <xref:System.Net.ServicePointManager.DefaultConnectionLimit%2A> property has no effect on existing <xref:System.Net.ServicePoint> objects; it affects only <xref:System.Net.ServicePoint> objects that are initialized after the change. If the value of this property has not been set either directly or through configuration, the value defaults to the constant <xref:System.Net.ServicePointManager.DefaultPersistentConnectionLimit>.  
   
 > [!NOTE]
->  Any changes to the <xref:System.Net.ServicePointManager.DefaultConnectionLimit%2A> property affect both HTTP 1.0 and HTTP 1.1 connections. It is not possible to separately alter the connection limit for HTTP 1.0 and HTTP 1.1 protocols. When used in the server environment (ASP.NET) <xref:System.Net.ServicePointManager.DefaultConnectionLimit%2A> defaults to higher number of connections, which is 10.  
+>  Any changes to the <xref:System.Net.ServicePointManager.DefaultConnectionLimit%2A> property affect both HTTP 1.0 and HTTP 1.1 connections. It is not possible to separately alter the connection limit for HTTP 1.0 and HTTP 1.1 protocols.
   
    
   

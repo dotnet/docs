@@ -90,7 +90,7 @@ public class Document
 
 **✔️ CONSIDER** keeping types and methods with the <xref:System.ObsoleteAttribute> indefinitely in low and middle-level libraries.
 
-> Removing an obsolete type or method is a binary breaking change. Not removing them can help avoid the worst-case scenarios mentioned above.
+> Removing APIs is a binary breaking change. Considering keeping obsolete types and methods if maintaining them is low cost and doesn't add lot of technical debt to your library. Not removing types and methods can help avoid the worst-case scenarios mentioned above.
 
 ## See also
 

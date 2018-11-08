@@ -116,7 +116,6 @@ You need to create three global fields to hold the paths to the recently downloa
 
 * `_trainDataPath` has the path to the dataset used to train the model.
 * `_testDataPath` has the path to the dataset used to evaluate the model.
-* `_allDataPath` has the path to the combined training and test dataset used to retrain the model.
 * `_modelPath` has the path where the trained model is saved.
 * `_reader` is the <xref:Microsoft.ML.Runtime.Data.TextLoader> used to load and transform the datasets.
 
@@ -197,7 +196,7 @@ Pre-processing and cleaning data are important tasks that occur before a dataset
 
 ML .NET's transform pipelines compose a custom set of transforms that are applied to your data before training or testing. The transforms' primary purpose is data [featurization](../resources/glossary.md#feature-engineering). Machine learning algorithms understand [featurized](../resources/glossary.md#feature) data, so the next step is to transform our textual data into a format that our ML algorithms recognize. That format is a [numeric vector](../resources/glossary.md#numerical-feature-vector).
 
- We create an estimator of type `TextFeaturizingEstimator` which featurizes the text column (`SentimentText`) column into a numeric vector called `Features` used by the machine learning algorithm. The `TextFeaturizingEstimator` returns an <xref:Microsoft.ML.Runtime.Data.EstimatorChain%601> that will effectively be a pipeline. We'll name this `pipeline` as we will append the trainer to the `TransformerChain`. Add this as the next line of code:
+Next, call `mlContext.Transforms.Text.FeaturizeText` which featurizes the text column (`SentimentText`) column into a numeric vector called `Features` used by the machine learning algorithm. This is a wrapper call that returns an <xref:Microsoft.ML.Runtime.Data.EstimatorChain%601> that will effectively be a pipeline. Name this `pipeline` as we will next  append the trainer to the `EstimatorChain`. Add this as the next line of code:
 
 [!code-csharp[TextFeaturizingEstimator](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#7 "Add a TextFeaturizingEstimator")]
 
@@ -205,7 +204,7 @@ This is the preprocessing/featurization step. Using additional components availa
 
 ## Choose a learning algorithm
 
-The `FastTreeBinaryClassificationTrainer` object is a decision tree learner you'll use in this pipeline. The `FastTreeBinaryClassificationTrainer` is appended to the `pipeline` and accepts the featurized `SentimentText` (`Features`) and the `Label` input parameters to learn from the historic data.
+To add the trainer, call the `mlContext.Transforms.Text.FeaturizeText` wrapper method which returns a <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryClassificationTrainer> object. This is a decision tree learner you'll use in this pipeline. The `FastTreeBinaryClassificationTrainer` is appended to the `pipeline` and accepts the featurized `SentimentText` (`Features`) and the `Label` input parameters to learn from the historic data.
 
 Add the following code to the `Train` method:
 
@@ -265,6 +264,35 @@ Use the following code to display the metrics, share the results, and then act o
 
 [!code-csharp[DisplayMetrics](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#15 "Display selected metrics")]
 
+To save your model to a .zip file before returning, add the following code to call the `SaveModelAsFile` method as the next line in `TrainFinalModel`:
+
+[!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#23 "Save the model")]
+
+## Save the model as a.zip file
+
+Create the `SaveModelAsFile` method, just after the `Evaluate` method, using the following code:
+
+```csharp
+private static void SaveModelAsFile(MLContext mlContext, ITransformer model)
+{
+
+}
+```
+
+The `SaveModelAsFile` method executes the following tasks:
+
+* Saves the model as a .zip file.
+
+We need to create a method to save the model so that it can be reused and consumed in other applications. The `ITransformer` has a <xref:Microsoft.ML.Runtime.Data.TransformerChain%601.SaveTo(Microsoft.ML.Runtime.IHostEnvironment,System.IO.Stream)> method that takes in the `_modelPath` global field, and a <xref:System.IO.Stream>. Since we want to save this as a zip file, we'll create the `FileStream` immediately before calling the `SaveTo` method. Add the following code to the `SaveModelAsFile` method as the next line:
+
+[!code-csharp[SaveToMethod](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#24 "Add the SaveTo Method")]
+
+We could also display where the file was written by writing a console message with the `_modelPath`, using the following code:
+
+```csharp
+Console.WriteLine("The model is saved to {0}", _modelPath);
+```
+
 ## Predict the test data outcome with the model and a single comment
 
 Create the `Predict` method, just after the `Evaluate` method, using the following code:
@@ -305,61 +333,6 @@ Add a comment to test the trained model's prediction in the `Predict` method by 
 Display `SentimentText` and corresponding sentiment prediction in order to share the results and act on them accordingly. This is called operationalization, using the returned data as part of the operational policies. Create a display for the results using the following <xref:System.Console.WriteLine?displayProperty=nameWithType> code:
 
 [!code-csharp[OutputPrediction](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#20 "Display prediction output")]
-
-## Create and train the final model
-
-Create the `TrainFinalModel` method, just after the `Predict` method, using the following code:
-
-```csharp
-public static void TrainFinalModel(MLContext mlContext)
-{
-
-}
-```
-
-The `TrainFinalModel` method executes the following tasks:
-
-* Loads the data.
-* Trains the model.
-
-Add a call to the new method from the `Main` method, right under the `Predict` method call, using the following code:
-
-[!code-csharp[CallIterateModel](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#21 "Call the IterateModel method")]
-
-Now that we have trained, evaluated, and predicted results using the model, we'll retrain it using a dataset with combined the training and test data we used previously.
-
-To train the new model, call the `Train` method with the `mlContext` parameter, and the all data dataset path global field (`_allDataPath`). Add the following code as the first line of the `TrainFinalModel` method:
-
-[!code-csharp[CallTrain](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#22 "Call the Train method")]
-
-To save your model to a .zip file before returning, add the following code to call the `SaveModelAsFile` method as the next line in `TrainFinalModel`:
-
-[!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#23 "Save the model")]
-
-## Save the model as a .zip file
-
-Create the `SaveModelAsFile` method, just after the `TrainFinalModel` method, using the following code:
-
-```csharp
-private static void SaveModelAsFile(MLContext mlContext, ITransformer model)
-{
-
-}
-```
-
-The `SaveModelAsFile` method executes the following tasks:
-
-* Saves the model as a .zip file.
-
-We need to create a method to save the model so that it can be reused and consumed in other applications. The `ITransformer` has a <xref:Microsoft.ML.Runtime.Data.TransformerChain%601.SaveTo(Microsoft.ML.Runtime.IHostEnvironment,System.IO.Stream)> method that takes in the `_modelPath` global field, and a <xref:System.IO.Stream>. Since we want to save this as a zip file, we'll create the `FileStream` immediately before calling the `SaveTo` method. Add the following code to the `SaveModelAsFile` method as the next line:
-
-[!code-csharp[SaveToMethod](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#24 "Add the SaveTo Method")]
-
-We could also display where the file was written by writing a console message with the `_modelPath`, using the following code:
-
-```csharp
-Console.WriteLine("The model is saved to {0}", _modelPath);
-```
 
 ## Predict the test data outcomes with the saved model
 

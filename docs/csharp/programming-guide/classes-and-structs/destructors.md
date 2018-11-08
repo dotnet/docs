@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 1ae6e46d-a4b1-4a49-abe5-b97f53d9e049
 ---
 # Finalizers (C# Programming Guide)
-Finalizers are used to destruct instances of classes.  
+Finalizers are used to perform any necessary final clean-up when a class instance is being collected by the garbage collector.
   
 ## Remarks  
   

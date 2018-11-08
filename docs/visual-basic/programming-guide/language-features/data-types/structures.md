@@ -1,5 +1,6 @@
 ---
 title: "Structures (Visual Basic)"
+description: "Learn about the Visual Basic structure, a compact object type often more efficient than a class for types with a small amount of data and simple behavior."
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "structures [Visual Basic]"
@@ -8,6 +9,8 @@ helpviewer_keywords:
   - "data types [Visual Basic], user-defined"
   - "user-defined data types [Visual Basic], about user-defined data types"
   - "types [Visual Basic], user-defined"
+  - "Visual Basic language, structures"
+  - "Structure statement [Visual Basic]"
 ms.assetid: 55e86462-5e99-4d33-8018-6d097ca491b2
 ---
 # Structures (Visual Basic)

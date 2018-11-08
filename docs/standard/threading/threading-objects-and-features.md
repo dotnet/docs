@@ -20,7 +20,6 @@ Along with the <xref:System.Threading.Thread?displayProperty=nameWithType> class
 |[Overview of synchronization primitives](overview-of-synchronization-primitives.md)|Describes types that can be used to synchronize access to a shared resource or control thread interaction.|
 |[EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)|Describes managed event wait handles, which are used to synchronize thread activities by signaling and waiting for signals.|
 |[Mutexes](mutexes.md)|Describes <xref:System.Threading.Mutex?displayProperty=nameWithType>, which grants exclusive access to a shared resource.|
-|[Interlocked operations](interlocked-operations.md)|Describes the <xref:System.Threading.Interlocked?displayProperty=nameWithType> class, which provides atomic operations for variables that are shared by multiple threads.|
 |[Reader-Writer Locks](reader-writer-locks.md)|Describes the <xref:System.Threading.ReaderWriterLockSlim?displayProperty=nameWithType> class, which provides single-writer/multiple-reader access to a shared resource.|
 |[Semaphore and SemaphoreSlim](semaphore-and-semaphoreslim.md)|Describes the <xref:System.Threading.Semaphore?displayProperty=nameWithType> class, which limits number of threads that can access a shared resource or a pool of resources concurrently.|
 |[Barrier](barrier.md)|Describes the <xref:System.Threading.Barrier?displayProperty=nameWithType> class that implements the barrier pattern for coordination of threads in phased operations.|

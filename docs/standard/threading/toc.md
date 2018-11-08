@@ -30,7 +30,6 @@
 #### [CountdownEvent](countdownevent.md)
 #### [ManualResetEvent and ManualResetEventSlim](manualresetevent-and-manualreseteventslim.md)
 ### [Mutexes](mutexes.md)
-### [Interlocked operations](interlocked-operations.md)
 ### [Reader-Writer locks](reader-writer-locks.md)
 ### [Semaphore and SemaphoreSlim](semaphore-and-semaphoreslim.md)
 ### [Barrier](barrier.md)

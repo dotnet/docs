@@ -3,7 +3,7 @@ title: Health monitoring
 description: Resiliency | Explore one way of implementing heath monitoring.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 16/10/2018
+ms.date: 10/16/2018
 ---
 # Health monitoring
 

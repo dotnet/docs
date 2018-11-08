@@ -3,7 +3,7 @@ title: Implement retries with exponential backoff
 description: Resiliency | Implement retries with exponential backoff.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 16/10/2018
+ms.date: 10/16/2018
 ---
 # Implement retries with exponential backoff
 

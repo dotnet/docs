@@ -3,7 +3,7 @@ title: Handling partial failure
 description: Resiliency | If you think handling failure is not enough, get ready to handle partial failures gracefully. A microservice might not be fully functional but it might still be able to do some useful work.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 16/10/2018
+ms.date: 10/16/2018
 ---
 # Handle partial failure
 

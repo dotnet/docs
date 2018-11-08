@@ -3,7 +3,7 @@ title: Strategies for handling partial failure
 description: Resiliency | Get to know several strategies for handling partial failures gracefully.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 16/10/2018
+ms.date: 10/16/2018
 ---
 # Strategies to handle partial failure
 

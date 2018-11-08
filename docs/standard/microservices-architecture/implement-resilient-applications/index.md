@@ -3,7 +3,7 @@ title: Implementing Resilient Applications
 description: Resilience is a core concept in a microservices architecture, you have to learn how to handle transient failures gracefully because they will occur.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 16/10/2018
+ms.date: 10/16/2018
 ---
 # Implement Resilient Applications
 

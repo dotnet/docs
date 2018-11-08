@@ -3,7 +3,7 @@ title: Implement resilient Entity Framework Core SQL connections
 description: Resiliency | Implement resilient Entity Framework Core SQL connections. This technique is especially important when using Azure SQL Database in the cloud.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 16/10/2018
+ms.date: 10/16/2018
 ---
 # Implement resilient Entity Framework Core SQL connections
 

@@ -148,7 +148,7 @@ Create a variable called `mlContext` and initialize it with a new instance of `M
 
 [!code-csharp[CreateMLContext](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#3 "Create the ML Context")]
 
-Next, to setup for data loading initialize the `_textLoader` global variable in order to reuse it.  Notice that we are using a <xref:Microsoft.ML.Runtime.DataLoadSaveOperations.TextReader>. When you create a `TextLoader` using a `TextReader`, you pass in the context needed and the <xref:Microsoft.ML.Runtime.Data.TextLoader.Arguments> class which enables customization.
+Next, to setup for data loading initialize the `_textLoader` global variable in order to reuse it.  Notice that we are using a `TextReader`. When you create a `TextLoader` using a `TextReader`, you pass in the context needed and the <xref:Microsoft.ML.Runtime.Data.TextLoader.Arguments> class which enables customization.
 
  Specify the data schema by passing an array of <xref:Microsoft.ML.Runtime.Data.TextLoader.Column> objects to the loader containing all the column names and their types. We defined the data schema previously when we created our `SentimentData` class. For our schema, the first column (Label) is a <xref:System.Boolean> (the prediction) and the second column (SentimentText) is the feature of type text/string used for predicting the sentiment.
 The `TextReader` class returns a fully initialized <xref:Microsoft.ML.Runtime.Data.TextLoader>  
@@ -197,7 +197,7 @@ Pre-processing and cleaning data are important tasks that occur before a dataset
 
 ML .NET's transform pipelines compose a custom set of transforms that are applied to your data before training or testing. The transforms' primary purpose is data [featurization](../resources/glossary.md#feature-engineering). Machine learning algorithms understand [featurized](../resources/glossary#feature) data, so the next step is to transform our textual data into a format that our ML algorithms recognize. That format is a [numeric vector](../resources/glossary.md#numerical-feature-vector).
 
- We create an estimator of type <xref:Microsoft.ML.Transforms.Text.TextFeaturizingEstimator> which featurizes the text column (`SentimentText`) column into a numeric vector called `Features` used by the machine learning algorithm. The `TextFeaturizingEstimator` returns an <xref:Microsoft.ML.Runtime.Data.EstimatorChain%601> that will effectively be a pipeline. We'll name this `pipeline` as we will append the trainer to the `TransformerChain`. Add this as the next line of code:
+ We create an estimator of type `TextFeaturizingEstimator` which featurizes the text column (`SentimentText`) column into a numeric vector called `Features` used by the machine learning algorithm. The `TextFeaturizingEstimator` returns an <xref:Microsoft.ML.Runtime.Data.EstimatorChain%601> that will effectively be a pipeline. We'll name this `pipeline` as we will append the trainer to the `TransformerChain`. Add this as the next line of code:
 
 [!code-csharp[TextFeaturizingEstimator](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#7 "Add a TextFeaturizingEstimator")]
 
@@ -205,7 +205,7 @@ This is the preprocessing/featurization step. Using additional components availa
 
 ## Choose a learning algorithm
 
-The <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryClassificationTrainer> object is a decision tree learner you'll use in this pipeline. The `FastTreeBinaryClassificationTrainer` is appended to the `pipeline` and accepts the featurized `SentimentText` (`Features`) and the `Label` input parameters to learn from the historic data.
+The `FastTreeBinaryClassificationTrainer` object is a decision tree learner you'll use in this pipeline. The `FastTreeBinaryClassificationTrainer` is appended to the `pipeline` and accepts the featurized `SentimentText` (`Features`) and the `Label` input parameters to learn from the historic data.
 
 Add the following code to the `Train` method:
 
@@ -213,7 +213,7 @@ Add the following code to the `Train` method:
 
 ## Train the model
 
-You train the model, <xref:Microsoft.ML.Runtime.Data.TransformerChain%601>, based on the dataset that has been loaded and transformed. Once the estimator has been defined, you train your model using the <xref:Microsoft.ML.Runtime.Data.EstimatorChain%601.Fit> while providing the already loaded training data. This returns a model to use for predictions. `pipeline.Fit()` trains the pipeline and returns a `Transformer` based on the `DataView` passed in. The experiment is not executed until this happens.
+You train the model, <xref:Microsoft.ML.Runtime.Data.TransformerChain%601>, based on the dataset that has been loaded and transformed. Once the estimator has been defined, you train your model using the <xref:Microsoft.ML.Runtime.Data.EstimatorChain%601.Fit%2A> while providing the already loaded training data. This returns a model to use for predictions. `pipeline.Fit()` trains the pipeline and returns a `Transformer` based on the `DataView` passed in. The experiment is not executed until this happens.
 
 Add the following code to the `Train` method:
 
@@ -255,7 +255,7 @@ Next, we'll use the machine learning `model` parameter (a transformer) to input 
 
 [!code-csharp[PredictWithTransformer](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#13 "Predict using the Transformer")]
 
-The <xref:Microsoft.ML.Runtime.Data.BinaryClassificationContext.Evaluate> method computes the quality metrics for the `PredictionModel` using the specified dataset. It returns a <xref:Microsoft.ML.Runtime.Data.BinaryClassificationEvaluator.CalibratedResult> object contains the overall metrics computed by binary classification evaluators. To display these to determine the quality of the model, you need to get the metrics first. Add the following code as the next line in the `Evaluate` method:
+The `BinaryClassificationContext.Evaluate` method computes the quality metrics for the `PredictionModel` using the specified dataset. It returns a `BinaryClassificationEvaluator.CalibratedResult` object contains the overall metrics computed by binary classification evaluators. To display these to determine the quality of the model, you need to get the metrics first. Add the following code as the next line in the `Evaluate` method:
 
 [!code-csharp[ComputeMetrics](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#14 "Compute Metrics")]
 
@@ -287,7 +287,7 @@ Add a call to the new method from the `Main` method, right under the `Evaluate` 
 
 [!code-csharp[CallPredict](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#16 "Call the Predict method")]
 
-While the `model` is a `transformer` that operates on many rows of data, a very common production scenario is a need for predictions on individual examples. The <xref:Microsoft.ML.Runtime.Data.PredictionFunction%602> is a wrapper that is returned from the <xref:Microsoft.ML.Runtime.Data.PredictionFunctionExtensions.MakePredictionFunction%602(Microsoft.ML.Core.Data.ITransformer,Microsoft.ML.Runtime.IHostEnvironment)> method. Let's add the following code to create the PredictionFunction as the first line in the `Predict` Method:
+While the `model` is a `transformer` that operates on many rows of data, a very common production scenario is a need for predictions on individual examples. The <xref:Microsoft.ML.Runtime.Data.PredictionFunction%602> is a wrapper that is returned from the `MakePredictionFunction` method. Let's add the following code to create the PredictionFunction as the first line in the `Predict` Method:
 
 [!code-csharp[MakePredictionFunction](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#17 "Create the PredictionFunction")]
   

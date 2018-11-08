@@ -1,6 +1,6 @@
     class Car
     {
-        ~Car()  // destructor
+        ~Car()  // finalizer
         {
             // cleanup statements...
         }

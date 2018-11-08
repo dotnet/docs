@@ -14,7 +14,7 @@ ms.author: "ronpet"
 
 Starting with .NET Core 2.1, .NET includes a number of interrelated types that represent a contiguous, strongly-typed region of arbitrary memory. These include:
 
-- <xref:System.Span%601?displayProperty=nameWithType>, a contiguous region of memory that is allocated on the stack rather than the managed heap. This allows for enhanced performance. A <xref:System.Span%601> instance can be backed by an array of type \<T>, a <xref:System.String>, a buffer allocated with [stackalloc](~/docs/csharp/language-reference/keywords/stackalloc.md), or a pointer to unmanaged memory. Because it is allocated on the stack, it has a number of restrictions. For example, a field in a class cannot be of type <xref:System.Span%601>, nor can span be used in asynchronous operations. 
+- <xref:System.Span%601?displayProperty=nameWithType>, a contiguous region of memory that is allocated on the stack rather than the managed heap. This allows for enhanced performance. A <xref:System.Span%601> instance can be backed by an array of type `T`, a <xref:System.String>, a buffer allocated with [stackalloc](~/docs/csharp/language-reference/keywords/stackalloc.md), or a pointer to unmanaged memory. Because it is allocated on the stack, it has a number of restrictions. For example, a field in a class cannot be of type <xref:System.Span%601>, nor can span be used in asynchronous operations. 
 
 - <xref:System.ReadOnlySpan%601?displayProperty=nameWithtype>, an immutable version of the <xref:System.Span%601> structure.
 
@@ -31,6 +31,9 @@ Starting with .NET Core 2.1, .NET includes a number of interrelated types that r
 - <xref:System.ArraySegment%601>, a wrapper for a particular number of array elements starting at a particular index.
 
 - <xref:System.MemoryExtensions?displayProperty=nameWithType>, a collection of extension methods for converting strings, arrays, and array segments to <xref:System.Memory%601> blocks.
+
+> [!NOTE]
+> For earlier frameworks, <xref:System.Span%601> and <xref:System.Memory%601> are available in the [System.Memory NuGet package](https://www.nuget.org/packages/System.Memory/).
 
 For more information, see the <xref:System.Buffers?displayProperty=nameWithType> namespace.
 

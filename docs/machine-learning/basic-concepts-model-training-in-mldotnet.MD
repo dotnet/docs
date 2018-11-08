@@ -45,18 +45,6 @@ In ML.NET, data is similar to a SQL view: It's a lazily evaluated, cursorable, h
 
 A transformer is a component that takes data, does some work on it, and return new transformed data.
 
-Here's the interface of `ITransformer`:
-
-```csharp
-public interface ITransformer
-{
-    IDataView Transform(IDataView input);
-    ISchema GetOutputSchema(ISchema inputSchema);
-}
-```
-
-As you can see, the transformer can `Transform` an input data to produce the output data. The other method, `GetOutputSchema`, is a mechanism of *schema propagation*. It allows you to see what the output data looks like for a given shape of input data without performing the transformation.
-
 Most transformers in ML.NET tend to operate on one *input column* at a time, and produce the *output column*. For example, a `new HashTransformer("foo", "bar")` takes the values from column "foo", hash them, and put them into column "bar". 
 
 It's also common that the input and output column names are the same. In this case, the old column is replaced with the new one. For example, a `new HashTransformer("foo")` takes the values from column "foo", hash them, and put them back into "foo". 
@@ -85,18 +73,6 @@ This property is commonly used in ML.NET: typically, the trained ML.NET model is
 
 The data reader is ML.NET component to 'create' data: it takes an instance of `T` and returns data out of it.
 
-Here's the exact interface of `IDataReader<T>`:
-
-```c#
-public interface IDataReader<in TSource>
-{
-    IDataView Read(TSource input);
-    ISchema GetOutputSchema();
-}
-```
-
-As you can see, the reader can read data multiple times and from different inputs, but the resulting data is always have the same schema, denoted by `GetOutputSchema`.
-
 An interesting property to note is that you can create a data reader by attaching a transformer to an existing data reader. This way you can have a reader with transformation behavior baked in:
 
 ```c#
@@ -108,20 +84,10 @@ Another similarity to transformers is that, since data is lazily evaluated, *rea
 ## Estimator
 
 The *estimator* is an object that learns from data. The result of the learning is a *transformer*.
-Here is the interface of `IEstimator<T>`:
 
-```c#
-public interface IEstimator<out TTransformer>
-    where TTransformer : ITransformer
-{
-    TTransformer Fit(IDataView input);
-    SchemaShape GetOutputSchema(SchemaShape inputSchema);
-}
-```
+In ML.NET, use this property to create learning pipelines that chain together different estimators:
 
-You can easily imagine how *a sequence of estimators can be phrased as an estimator* of its own. In ML.NET, use this property to create learning pipelines that chain together different estimators:
-
-```c#
+```csharp
 MLContext mlContext = new MLContext(seed: 0);
 
 var pipeline = new CopyColumnsEstimator(mlContext, "FareAmount", "Label")
@@ -138,7 +104,7 @@ One important property of estimators is that *estimators are eager, not lazy*: e
 
 ## Prediction function
 
-The prediction function can be seen as a machine that applies a transformer to one row, such as at prediction time.
+The prediction function can be seen as a machine that applies a transformer to one row.
 
 Once you get the model (a *transformer* either trained via `Fit()`, or loaded from somewhere), you can use it to make predictions using the normal calls to `model.Transform(data)`. However, when you use this model in a real-life scenario, you often don't have many examples to predict on. Instead, you have one example at a time, and you need to make timely predictions on them immediately.
 
@@ -165,7 +131,5 @@ Instead, a prediction function object performs the same work, but faster and mor
 var predictionFunc = model.MakePredictionFunction<InputExample, OutputPrediction>(env);
 var output = predictionFunc.Predict(example);
 ```
-
-The same `predictionFunc` can (and should!) be used multiple times, thus amortizing the initial cost of `MakePredictionFunction` call.
 
 The prediction function is *not re-entrant / thread-safe*. If you want to conduct predictions simultaneously with multiple threads, you need to have a prediction function per thread.

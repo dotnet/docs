@@ -11,7 +11,7 @@ Health monitoring can allow near-real-time information about the state of your c
 
 Microservices-based applications often use heartbeats or health checks to enable their performance monitors, schedulers, and orchestrators to keep track of the multitude of services. If services cannot send some sort of “I’m alive” signal, either on demand or on a schedule, your application might face risks when you deploy updates, or it might just detect failures too late and not be able to stop cascading failures that can end up in major outages.
 
-In the typical model, services send reports about their status, and that information is aggregated to provide an overall view of the state of health of your application. If you are using an orchestrator, you can provide health information to your orchestrator’s cluster, so that the cluster can act accordingly. If you invest in high-quality health reporting that's customized for your application, you can detect and fix issues for your running application much more easily.
+In the typical model, services send reports about their status, and that information is aggregated to provide an overall view of the state of health of your application. If you're using an orchestrator, you can provide health information to your orchestrator’s cluster, so that the cluster can act accordingly. If you invest in high-quality health reporting that's customized for your application, you can detect and fix issues for your running application much more easily.
 
 ## Implement health checks in ASP.NET Core services
 
@@ -25,7 +25,7 @@ In order to use this library, you need to first use the library in your microser
 
 You can see how the HealthChecks library is used in the eShopOnContainers sample application. To begin, you need to define what constitutes a healthy status for each microservice. In the sample application, the microservices are healthy if the microservice API is accessible via HTTP and if its related SQL Server database is also available.
 
-In the future, you will be able to install the HealthChecks library as a NuGet package. But as of this writing, you need to download and compile the code as part of your solution. Clone the code available at [https://github.com/dotnet-architecture/HealthChecks](https://github.com/dotnet-architecture/HealthChecks) and copy the following folders to your solution:
+In the future, you'll be able to install the HealthChecks library as a NuGet package. But as of this writing, you need to download and compile the code as part of your solution. Clone the code available at [https://github.com/dotnet-architecture/HealthChecks](https://github.com/dotnet-architecture/HealthChecks) and copy the following folders to your solution:
 
 - src/common
 - src/Microsoft.AspNetCore.HealthChecks
@@ -132,7 +132,7 @@ checks.AddUrlCheck(Configuration["CatalogUrl"],1); // 1 min as cache duration
 
 ### Query your microservices to report about their health status
 
-When you have configured health checks as described here, once the microservice is running in Docker, you can directly check from a browser if it's healthy. (This does require that you are publishing the container port out of the Docker host, so you can access the container through localhost or through the external Docker host IP.) Figure 8-8 shows a request in a browser and the corresponding response.
+When you've configured health checks as described here, once the microservice is running in Docker, you can directly check from a browser if it's healthy. (This does require that you're publishing the container port out of the Docker host, so you can access the container through localhost or through the external Docker host IP.) Figure 8-8 shows a request in a browser and the corresponding response.
 
 ![Browser view of the json response returned by a health check](./media/image7.png)
 
@@ -172,7 +172,7 @@ The final part of monitoring is visualizing the event stream, reporting on servi
 
 You can use simple custom applications showing the state of your services, like the custom page we showed when we explained [ASP.NET Core HealthChecks](https://github.com/dotnet-architecture/HealthChecks). Or you could use more advanced tools like Azure Application Insights and Operations Management Suite to raise alerts based on the stream of events.
 
-Finally, if you are storing all the event streams, you can use Microsoft Power BI or a third-party solution like Kibana or Splunk to visualize the data.
+Finally, if you're storing all the event streams, you can use Microsoft Power BI or a third-party solution like Kibana or Splunk to visualize the data.
 
 ## Additional resources
 

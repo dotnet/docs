@@ -65,7 +65,7 @@ services.AddHttpClient<IOrderingService, OrderingService>();
 
 Registering the client services as shown in the code above, makes the `DefaultClientFactory` create an `HttpClient` configured specifically for each service, as we'll see in just a moment.
 
-Just by registering your client classes with AddHttpClient(), whenever you use the `HttpClient` object injected to your class through its constructor, that `HttpClient` object will be using all the configuration and policies provided upon registration. In the next sections, you will see those policies like Polly’s retries or circuit-breakers.
+Just by registering your client classes with AddHttpClient(), whenever you use the `HttpClient` object injected to your class through its constructor, that `HttpClient` object will be using all the configuration and policies provided upon registration. In the next sections, you'll see those policies like Polly’s retries or circuit-breakers.
 
 ### HttpClient lifetimes
 

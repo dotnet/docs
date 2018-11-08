@@ -39,7 +39,7 @@ services.AddHttpClient<IBasketService, BasketService>()
         .AddPolicyHandler(GetCircuitBreakerPolicy());
 ```
 
-The `AddPolicyHandler()` method is what adds policies to the `HttpClient` objects you will use. In this case, it's adding a Polly policy for a circuit breaker.
+The `AddPolicyHandler()` method is what adds policies to the `HttpClient` objects you'll use. In this case, it's adding a Polly policy for a circuit breaker.
 
 In order to have a more modular approach, the Circuit Breaker Policy is defined in a separate method named `GetCircuitBreakerPolicy()`, as the following code.
 
@@ -54,7 +54,7 @@ static IAsyncPolicy<HttpResponseMessage> GetCircuitBreakerPolicy()
 
 In the code example above, the circuit breaker policy is configured so it breaks or opens the circuit when there have been five consecutive faults when retrying the Http requests. When that happens, the circuit will break for 30 seconds: in that period, calls will be failed immediately by the circuit-breaker rather than actually be placed.  The policy automatically interprets [relevant exceptions and HTTP status codes](https://docs.microsoft.com/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1#handle-transient-faults) as faults.  
 
-Circuit breakers should also be used to redirect requests to a fallback infrastructure if you had issues in a particular resource that's deployed in a different environment than the client application or service that's performing the HTTP call. That way, if there is an outage in the datacenter that impacts only your backend microservices but not your client applications, the client applications can redirect to the fallback services. Polly is planning a new policy to automate this [failover policy](https://github.com/App-vNext/Polly/wiki/Polly-Roadmap#failover-policy) scenario. 
+Circuit breakers should also be used to redirect requests to a fallback infrastructure if you had issues in a particular resource that's deployed in a different environment than the client application or service that's performing the HTTP call. That way, if there's an outage in the datacenter that impacts only your backend microservices but not your client applications, the client applications can redirect to the fallback services. Polly is planning a new policy to automate this [failover policy](https://github.com/App-vNext/Polly/wiki/Polly-Roadmap#failover-policy) scenario. 
 
 All those features are for cases where you're managing the failover from within the .NET code, as opposed to having it managed automatically for you by Azure, with location transparency. 
 
@@ -72,12 +72,12 @@ The way 'eShopOnContainers' solves those issues when starting all the containers
 
 There are a few ways you can break/open the circuit and test it with eShopOnContainers.
 
-One option is to lower the allowed number of retries to 1 in the circuit breaker policy and redeploy the whole solution into Docker. With a single retry, there is a good chance that an HTTP request will fail during deployment, the circuit breaker will open, and you get an error.
+One option is to lower the allowed number of retries to 1 in the circuit breaker policy and redeploy the whole solution into Docker. With a single retry, there's a good chance that an HTTP request will fail during deployment, the circuit breaker will open, and you get an error.
 
 Another option is to use custom middleware that's implemented in the **Basket** microservice. When this middleware is enabled, it catches all HTTP requests and returns status code 500. You can enable the middleware by making a GET request to the failing URI, like the following:
 
 - `GET http://localhost:5103/failing`\
-  This request returns the current state of the middleware. If the middleware is enabled, the request return status code 500. If the middleware is disabled, there is no response.
+  This request returns the current state of the middleware. If the middleware is enabled, the request return status code 500. If the middleware is disabled, there's no response.
 
 - `GET http://localhost:5103/failing?enable`\
   This request enables the middleware.
@@ -135,7 +135,7 @@ Here’s a summary. The Retry policy tries several times to make the HTTP reques
 
 **Figure 8-6**. Circuit breaker returning an error to the UI
 
-You can implement different logic for when to open/break the circuit. Or you can try an HTTP request against a different back-end microservice if there is a fallback datacenter or redundant back-end system. 
+You can implement different logic for when to open/break the circuit. Or you can try an HTTP request against a different back-end microservice if there's a fallback datacenter or redundant back-end system. 
 
 Finally, another possibility for the `CircuitBreakerPolicy` is to use `Isolate` (which forces open and holds open the circuit) and `Reset` (which closes it again). These could be used to build a utility HTTP endpoint that invokes Isolate and Reset directly on the policy.  Such an HTTP endpoint could also be used, suitably secured, in production for temporarily isolating a downstream system, such as when you want to upgrade it. Or it could trip the circuit manually to protect a downstream system you suspect to be faulting.
 

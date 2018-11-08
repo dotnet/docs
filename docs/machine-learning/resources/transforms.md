@@ -1,9 +1,7 @@
 ---
 title: Data transforms in ML.NET
 description: Explore the different data transforms supported in ML.NET.
-ms.author: johalex 
-author:
-ms.prod: 
+author: JRAlexander
 ms.date: 10/16/2018
 ---
 # Data transforms in ML.NET

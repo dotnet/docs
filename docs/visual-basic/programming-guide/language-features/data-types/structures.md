@@ -1,6 +1,6 @@
 ---
 title: "Structures (Visual Basic)"
-description: "Learn about the Visual Basic structure, a compact object type often more efficient than a class for types with a small amount of data and simple behavior."
+description: "Learn about Visual Basic structures, a compact object type often more efficient than a class for types with a small amount of data and simple behavior."
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "structures [Visual Basic]"

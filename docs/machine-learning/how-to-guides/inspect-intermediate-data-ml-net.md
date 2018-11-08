@@ -14,7 +14,7 @@ The `GetColumn<T>` extension method lets you inspect the intermediate data. It r
 
 The following example shows how to use the `GetColumn<T>` extension method:
 
-[Example file](../../test/data/adult.tiny.with-schema.txt):
+[Example file](https://github.com/dotnet/machinelearning/tree/master/test/data/adult.tiny.with-schema.txt):
 ```
 Label	Workclass	education	marital-status
 0	Private	11th	Never-married

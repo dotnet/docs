@@ -14,7 +14,7 @@ Generally, there are three steps for model training in ML.NET:
 2. Build the 'learning pipeline' as a sequence of elementary 'operators' (estimators).
 3. Call `Fit` on the pipeline to obtain the trained model.
 
-In this [Example file](../../test/data/generated_regression_dataset.csv),the predicted label (`target`) is the last column (12th) and all the rest are features:
+In this [Example file](https://github.com/dotnet/machinelearning/tree/master/test/data/generated_regression_dataset.csv),the predicted label (`target`) is the last column (12th) and all the rest are features:
 
 ```console
 feature_0;feature_1;feature_2;feature_3;feature_4;feature_5;feature_6;feature_7;feature_8;feature_9;feature_10;target

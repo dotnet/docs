@@ -15,7 +15,7 @@ However, in real-time training scenarios the data can be elsewhere, such as:
 * extracted from log files
 * generated on the fly
 
-Use [schema comprehension](SchemaComprehension.md) to bring an existing C# `IEnumerable` into ML.NET as a `DataView`.
+Use [schema comprehension](https://github.com/dotnet/machinelearning/tree/master/docs/code/SchemaComprehension.md) to bring an existing C# `IEnumerable` into ML.NET as a `DataView`.
 
 For this example, you'll build the customer churn prediction model, and extract the following features from your production system:
 

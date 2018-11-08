@@ -12,7 +12,7 @@ ms.custom: mvc
 
 When the input file contains many columns of the same type and always used together, read them as a *vector column*. This strategy results in a clean data schema and avoids unnecessary performance costs, as shown in the following example:
 
-[Example file](../../test/data/generated_regression_dataset.csv):
+[Example file](https://github.com/dotnet/machinelearning/tree/master/test/data/generated_regression_dataset.csv):
 
 ```console
 -2.75,0.77,-0.61,0.14,1.39,0.38,-0.53,-0.50,-2.13,-0.39,0.46,140.66

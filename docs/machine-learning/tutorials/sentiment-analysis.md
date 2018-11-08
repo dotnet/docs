@@ -144,7 +144,7 @@ When building a model with ML.NET you start by creating an `MLContext`. This is 
 
 ### Initialize variables in Main
 
-Create a variable called `mlContext` and initialize it with a new instance of <xref:Microsoft.ML.Context>.  Replace the `Console.WriteLine("Hello World!")` line with the following code in the `Main` method:
+Create a variable called `mlContext` and initialize it with a new instance of `MLContext`.  Replace the `Console.WriteLine("Hello World!")` line with the following code in the `Main` method:
 
 [!code-csharp[CreateMLContext](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#3 "Create the ML Context")]
 
@@ -178,7 +178,7 @@ Create the `Train` method, just after the `Main` method, using the following cod
 }
 ```
 
-Notice that two parameters are passed into the Train method; a <xref:Microsoft.ML.Context> for the context (`mlContext`), and a <xref:System.String> for the dataset path (`dataPath`). We're going to use this method more than once for training and testing.
+Notice that two parameters are passed into the Train method; a `MLContext` for the context (`mlContext`), and a <xref:System.String> for the dataset path (`dataPath`). We're going to use this method more than once for training and testing.
 
 ## Load the data
 
@@ -287,7 +287,7 @@ Add a call to the new method from the `Main` method, right under the `Evaluate` 
 
 [!code-csharp[CallPredict](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#16 "Call the Predict method")]
 
-While the `model` is a `transformer` that operates on many rows of data, a very common production scenario is a need for predictions on individual examples. The <xref:Microsoft.ML.Runtime.Data.PredictionFunction%2A2> is a wrapper that is returned from the <xref:Microsoft.ML.Runtime.Data.PredictionFunctionExtensions.MakePredictionFunction%2A2(Microsoft.ML.Core.Data.ITransformer,Microsoft.ML.Runtime.IHostEnvironment)> method. Let's add the following code to create the PredictionFunction as the first line in the `Predict` Method:
+While the `model` is a `transformer` that operates on many rows of data, a very common production scenario is a need for predictions on individual examples. The <xref:Microsoft.ML.Runtime.Data.PredictionFunction%602> is a wrapper that is returned from the <xref:Microsoft.ML.Runtime.Data.PredictionFunctionExtensions.MakePredictionFunction%602(Microsoft.ML.Core.Data.ITransformer,Microsoft.ML.Runtime.IHostEnvironment)> method. Let's add the following code to create the PredictionFunction as the first line in the `Predict` Method:
 
 [!code-csharp[MakePredictionFunction](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#17 "Create the PredictionFunction")]
   
@@ -296,7 +296,7 @@ Add a comment to test the trained model's prediction in the `Predict` method by 
 [!code-csharp[PredictionData](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#18 "Create test data for single prediction")]
 
 
- We can use that to predict the Toxic or Non Toxic sentiment of a single instance of the comment data. To get a prediction, use <xref:Microsoft.ML.Runtime.Data.PredictionFunction%2A2.Predict(%2A0)> on the data. Note that the input data is a string and the model includes the featurization. Your pipeline is in sync during training and prediction. You didn’t have to write preprocessing/featurization code specifically for predictions, and the same API takes care of both batch and one-time predictions.
+ We can use that to predict the Toxic or Non Toxic sentiment of a single instance of the comment data. To get a prediction, use <xref:Microsoft.ML.Runtime.Data.PredictionFunction%602.Predict(%600)> on the data. Note that the input data is a string and the model includes the featurization. Your pipeline is in sync during training and prediction. You didn’t have to write preprocessing/featurization code specifically for predictions, and the same API takes care of both batch and one-time predictions.
 
 [!code-csharp[Predict](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#18 "Create a prediction of sentiment")]
 
@@ -351,7 +351,7 @@ The `SaveModelAsFile` method executes the following tasks:
 
 * Saves the model as a .zip file.
 
-We need to create a method to save the model so that it can be reused and consumed in other applications. The `ITransformer` has a <xref:Microsoft.ML.Runtime.Data.TransformerChain%2A1.SaveTo(Microsoft.ML.Runtime.IHostEnvironment,System.IO.Stream)> method that takes in the `_modelPath` global field, and a <xref:System.IO.Stream>. Since we want to save this as a zip file, we'll create the `FileStream` immediately before calling the `SaveTo` method. Add the following code to the `SaveModelAsFile` method as the next line:
+We need to create a method to save the model so that it can be reused and consumed in other applications. The `ITransformer` has a <xref:Microsoft.ML.Runtime.Data.TransformerChain%601.SaveTo(Microsoft.ML.Runtime.IHostEnvironment,System.IO.Stream)> method that takes in the `_modelPath` global field, and a <xref:System.IO.Stream>. Since we want to save this as a zip file, we'll create the `FileStream` immediately before calling the `SaveTo` method. Add the following code to the `SaveModelAsFile` method as the next line:
 
 [!code-csharp[SaveToMethod](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#24 "Add the SaveTo Method")]
 

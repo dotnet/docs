@@ -1,6 +1,6 @@
 ---
 title: Health monitoring
-description: Resiliency | Explore one way of implementing heath monitoring.
+description: Resiliency | Explore one way of implementing health monitoring.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/16/2018
@@ -15,7 +15,7 @@ In the typical model, services send reports about their status, and that informa
 
 ## Implement health checks in ASP.NET Core services
 
-When developing an ASP.NET Core microservice or web application, you can use an experimental out-of-band library (not official as part of ASP.NETCore and now deprecated) named `HealthChecks` from the ASP.NET team. It's available at this [GitHub repo](https://github.com/dotnet-architecture/HealthChecks). However, the official version of HealthChecks [will be released in ASP.NET Core 2.2](https://github.com/aspnet/Announcements/issues/307) (GA around end of 2018).
+When developing an ASP.NET Core microservice or web application, you can use an experimental out-of-band library (not official as part of ASP.NETCore and now deprecated) named *Health Checks* from the ASP.NET team. It's available at this [dotnet-architecture GitHub repository](https://github.com/dotnet-architecture/HealthChecks). However, the official version of *Health Checks* [will be released in ASP.NET Core 2.2](https://github.com/aspnet/Announcements/issues/307) (Should be officially released by the end of 2018).
 
 This library is easy to use and provides features that let you validate that any specific external resource needed for your application (like a SQL Server database or remote API) is working properly. When you use this library, you can also decide what it means that the resource is healthy, as we explain later.
 
@@ -25,7 +25,7 @@ In order to use this library, you need to first use the library in your microser
 
 You can see how the HealthChecks library is used in the eShopOnContainers sample application. To begin, you need to define what constitutes a healthy status for each microservice. In the sample application, the microservices are healthy if the microservice API is accessible via HTTP and if its related SQL Server database is also available.
 
-In the future, you'll be able to install the HealthChecks library as a NuGet package. But as of this writing, you need to download and compile the code as part of your solution. Clone the code available at [https://github.com/dotnet-architecture/HealthChecks](https://github.com/dotnet-architecture/HealthChecks) and copy the following folders to your solution:
+In the future, you'll be able to install the HealthChecks library as a NuGet package. But as of this writing, you need to download and compile the code as part of your solution. Clone the code available at <https://github.com/dotnet-architecture/HealthChecks> and copy the following folders to your solution:
 
 - src/common
 - src/Microsoft.AspNetCore.HealthChecks
@@ -86,7 +86,7 @@ public class Startup
 
 Thus, a microservice will not provide a “healthy” status until all its checks are healthy as well.
 
-If the microservice does not have a dependency on a service or on SQL Server, you should just add a Healthy("Ok") check. The following code is from the eShopOnContainers basket.api microservice. (The basket microservice uses the Redis cache, but the library does not yet include a Redis health check provider.)
+If the microservice does not have a dependency on a service or on SQL Server, you should just add a Healthy("Ok") check. The following code is from the eShopOnContainers `basket.api` microservice. (The basket microservice uses the Redis cache, but the library does not yet include a Redis health check provider.)
 
 ```csharp
 services.AddHealthChecks(checks =>
@@ -96,7 +96,7 @@ services.AddHealthChecks(checks =>
 });
 ```
 
-For a service or web application to expose the health check endpoint, it has to enable the UserHealthChecks(\[*url\_for\_health\_checks*\]) extension method. This method goes at the WebHostBuilder level in the main method of the Program class of your ASP.NET Core service or web application, right after CreateDefaultBuilder as shown in the (simplified) code below.
+For a service or web application to expose the health check endpoint, it has to enable the `UseHealthChecks([*url_for_health_checks*])` extension method. This method goes at the `WebHostBuilder` level in the main method of the `Program` class of your ASP.NET Core service or web application, right after <xref:Microsoft.AspNetCore.WebHost.CreateDefaultBuilder> as shown in the following simplified code:
 
 ```csharp
 namespace Microsoft.eShopOnContainers.WebMVC
@@ -110,6 +110,7 @@ namespace Microsoft.eShopOnContainers.WebMVC
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseStartup<Startup>()
                 .Build();
+
             host.Run();
         }
     }
@@ -132,9 +133,11 @@ checks.AddUrlCheck(Configuration["CatalogUrl"],1); // 1 min as cache duration
 
 ### Query your microservices to report about their health status
 
-When you've configured health checks as described here, once the microservice is running in Docker, you can directly check from a browser if it's healthy. (This does require that you're publishing the container port out of the Docker host, so you can access the container through localhost or through the external Docker host IP.) Figure 8-8 shows a request in a browser and the corresponding response.
+When you've configured health checks as described in this article and you have the microservice running in Docker, you can directly check from a browser if it's healthy.
 
-![Browser view of the json response returned by a health check](./media/image7.png)
+You have to publish the container port in the Docker host, so you can access the container through the external Docker host IP or through `localhost`, as shown in figure 8-8.
+
+![Browser view of the JSON response returned by a health check](./media/image7.png)
 
 **Figure 8-8**. Checking health status of a single service from a browser
 
@@ -142,9 +145,9 @@ In that test, you can see that the catalog.api microservice (running on port 510
 
 ## Use watchdogs
 
-A watchdog is a separate service that can watch health and load across services, and report health about the microservices by querying with the HealthChecks library introduced earlier. This can help prevent errors that would not be detected based on the view of a single service. Watchdogs also are a good place to host code that can perform remediation actions for known conditions without user interaction.
+A watchdog is a separate service that can watch health and load across services, and report health about the microservices by querying with the `HealthChecks` library introduced earlier. This can help prevent errors that would not be detected based on the view of a single service. Watchdogs also are a good place to host code that can perform remediation actions for known conditions without user interaction.
 
-The eShopOnContainers sample contains a web page that displays sample health check reports, as shown in Figure 8-9. This is the simplest watchdog you could have, since all it does is shows the state of the microservices and web applications in eShopOnContainers. Usually a watchdog also takes actions when it detects unhealthy states.
+The eShopOnContainers sample contains a web page that displays sample health check reports, as shown in Figure 8-9. This is the simplest watchdog you could have since it only shows the state of the microservices and web applications in eShopOnContainers. Usually a watchdog also takes actions when it detects unhealthy states.
 
 ![Browser view of the WebStatus app, showing the health status of five microservices from eShopOnContainers](./media/image8.png)
 
@@ -170,9 +173,9 @@ Note that Azure Service Fabric provides its own [Health Monitoring model](https:
 
 The final part of monitoring is visualizing the event stream, reporting on service performance, and alerting when an issue is detected. You can use different solutions for this aspect of monitoring.
 
-You can use simple custom applications showing the state of your services, like the custom page we showed when we explained [ASP.NET Core HealthChecks](https://github.com/dotnet-architecture/HealthChecks). Or you could use more advanced tools like Azure Application Insights and Operations Management Suite to raise alerts based on the stream of events.
+You can use simple custom applications showing the state of your services, like the custom page shown when explaining the [ASP.NET Core HealthChecks](https://github.com/dotnet-architecture/HealthChecks). Or you could use more advanced tools like Azure Application Insights to raise alerts based on the stream of events.
 
-Finally, if you're storing all the event streams, you can use Microsoft Power BI or a third-party solution like Kibana or Splunk to visualize the data.
+Finally, if you're storing all the event streams, you can use Microsoft Power BI or other solutions like Kibana or Splunk to visualize the data.
 
 ## Additional resources
 

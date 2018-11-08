@@ -7,7 +7,7 @@ ms.date: 10/16/2018
 ---
 # Use HttpClientFactory to implement resilient HTTP requests
 
-`HttpClientFactory` is an opinionated factory, available since .NET Core 2.1, for creating `HttpClient` instances to be used in your applications. 
+`HttpClientFactory` is an opinionated factory, available since .NET Core 2.1, for creating <xref:System.Net.Http.HttpClient> instances to be used in your applications.
 
 ## Issues with the original HttpClient class available in .NET Core
 
@@ -43,9 +43,9 @@ For the sake of brevity, this guidance shows the most structured way to use `Htt
 
 ## How to use Typed Clients with HttpClientFactory
 
-So, what's a "typed client" anyway? It's just an `HttpClient` that's configured upon injection by  the `DefaultHttpClientFactory`.
+So, what's a "Typed Client"? It's just an `HttpClient` that's configured upon injection by the `DefaultHttpClientFactory`.
 
-The following diagram shows how Typed Clients are used with `HttpClientFactory`.
+The following diagram shows how Typed Clients are used with `HttpClientFactory`:
 
 ![A ClientService (used by a controller or client code) uses an HttpClient created by the registered IHttpClientFactory. This factory assigns the HttpClient an HttpMessageHandler from a pool it manages. The HttpClient can be configured with Polly's policies when registering the IHttpClientFactory in the DI container with the extension method AddHttpClient.](./media/image3.5.png)
 
@@ -63,17 +63,17 @@ services.AddHttpClient<IBasketService, BasketService>();
 services.AddHttpClient<IOrderingService, OrderingService>();
 ```
 
-Registering the client services as shown in the code above, makes the `DefaultClientFactory` create an `HttpClient` configured specifically for each service, as we'll see in just a moment.
+Registering the client services as shown in the previous code, makes the `DefaultClientFactory` create an `HttpClient` configured specifically for each service, as we'll explain in the next paragraph.
 
-Just by registering your client classes with AddHttpClient(), whenever you use the `HttpClient` object injected to your class through its constructor, that `HttpClient` object will be using all the configuration and policies provided upon registration. In the next sections, you'll see those policies like Polly’s retries or circuit-breakers.
+Just by registering your client service class with `AddHttpClient()`, the `HttpClient` object that will be injected into your class will use the configuration and policies provided upon registration. In the next sections, you'll see those policies like Polly’s retries or circuit-breakers.
 
 ### HttpClient lifetimes
 
-Each time you get an `HttpClient` object from IHttpClientFactory, a new instance of an `HttpClient` is returned. There will be an `HttpMessageHandler` per named of typed client. `IHttpClientFactory` will pool the `HttpMessageHandler` instances created by the factory to reduce resource consumption. An `HttpMessageHandler` instance may be reused from the pool when creating a new `HttpClient` instance if its lifetime hasn't expired.
+Each time you get an `HttpClient` object from the `IHttpClientFactory`, a new instance is returned. But each `HttpClient` uses an `HttpMessageHandler` that's pooled and reused by the `IHttpClientFactory` to reduce resource consumption, as long as the `HttpMessageHandler`'s lifetime hasn't expired.
 
 Pooling of handlers is desirable as each handler typically manages its own underlying HTTP connections; creating more handlers than necessary can result in connection delays. Some handlers also keep connections open indefinitely, which can prevent the handler from reacting to DNS changes.
 
-The `HttpMessageHandler` objects in the pool have a lifetime that's the length of time that an `HttpMessageHandler` instance in the pool can be reused. The default value is two minutes, but it can be overridden per named or typed client basis. To override it, call SetHandlerLifetime() on the IHttpClientBuilder that's returned when creating the client, as shown in the following code.
+The `HttpMessageHandler` objects in the pool have a lifetime that's the length of time that an `HttpMessageHandler` instance in the pool can be reused. The default value is two minutes, but it can be overridden per Typed Client. To override it, call `SetHandlerLifetime()` on the `IHttpClientBuilder` that's returned when creating the client, as shown in the following code:
 
 ```csharp
 //Set 5 min as the lifetime for the HttpMessageHandler objects in the pool used for the Catalog Typed Client 
@@ -81,11 +81,11 @@ services.AddHttpClient<ICatalogService, CatalogService>()
                  .SetHandlerLifetime(TimeSpan.FromMinutes(5));  
 ```
 
-Each typed client or named client can have its own configured handler lifetime value. Set the lifetime to InfiniteTimeSpan to disable handler expiry.
+Each Typed Client can have its own configured handler lifetime value. Set the lifetime to `InfiniteTimeSpan` to disable handler expiry.
 
 ### Implement your Typed Client classes that use the injected and configured HttpClient
 
-As a previous step, you need to have your Typed Client classes defined, such as the classes in the sample code, like ‘BasketService’, ‘CatalogService’, ‘OrderingService’, etc. – A typed client is a class that accepts an `HttpClient` object (injected through its constructor) and uses it to call some remote HTTP service. For example:
+As a previous step, you need to have your Typed Client classes defined, such as the classes in the sample code, like ‘BasketService’, ‘CatalogService’, ‘OrderingService’, etc. – A Typed Client is a class that accepts an `HttpClient` object (injected through its constructor) and uses it to call some remote HTTP service. For example:
 
 ```csharp
 public class CatalogService : ICatalogService
@@ -112,9 +112,9 @@ public class CatalogService : ICatalogService
 }
 ```
 
-The typed client (CatalogService in the example) is activated by DI (Dependency Injection), meaning that it can accept any registered service in its constructor, in addition to HttpClient.
+The Typed Client (CatalogService in the example) is activated by DI (Dependency Injection), meaning that it can accept any registered service in its constructor, in addition to HttpClient.
 
-A typed client is, effectively, a transient object, meaning that a new instance is created each time one is needed and it will receive a new `HttpClient` instance each time it's constructed. However, the HttpMessageHandler objects in the pool are the objects that are reused by multiple Http requests.
+A Typed Client is, effectively, a transient object, meaning that a new instance is created each time one is needed and it will receive a new `HttpClient` instance each time it's constructed. However, the HttpMessageHandler objects in the pool are the objects that are reused by multiple Http requests.
 
 ### Use your Typed Client classes
 
@@ -147,7 +147,7 @@ namespace Microsoft.eShopOnContainers.WebMVC.Controllers
 }
 ```
 
-Up to this point, the code shown is just performing regular Http requests, but the ‘magic’ comes in the following sections where, just by adding policies and delegating handlers to your registered typed clients, all the Http requests to be done by `HttpClient` will behave taking into account resilient policies such as retries with exponential backoff, circuit breakers, or any other custom delegating handler to implement additional security features, like using auth tokens, or any other custom feature. 
+Up to this point, the code shown is just performing regular Http requests, but the ‘magic’ comes in the following sections where, just by adding policies and delegating handlers to your registered Typed Clients, all the HTTP requests to be done by `HttpClient` will behave taking into account resilient policies such as retries with exponential backoff, circuit breakers, or any other custom delegating handler to implement additional security features, like using auth tokens, or any other custom feature. 
 
 ## Additional resources
 

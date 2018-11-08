@@ -33,7 +33,7 @@ services.AddHttpClient<IBasketService, BasketService>()
 
 The **AddPolicyHandler()** method is what adds policies to the `HttpClient` objects you'll use. In this case, it's adding a Polly’s policy for Http Retries with exponential backoff.
 
-In order to have a more modular approach, the Http Retry Policy can be defined in a separate method within the `Startup.cs` file, as the following code.
+To have a more modular approach, the Http Retry Policy can be defined in a separate method within the `Startup.cs` file, as shown in the following code:
 
 ```csharp
 static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()

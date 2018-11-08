@@ -41,7 +41,7 @@ services.AddHttpClient<IBasketService, BasketService>()
 
 The `AddPolicyHandler()` method is what adds policies to the `HttpClient` objects you'll use. In this case, it's adding a Polly policy for a circuit breaker.
 
-In order to have a more modular approach, the Circuit Breaker Policy is defined in a separate method named `GetCircuitBreakerPolicy()`, as the following code.
+To have a more modular approach, the Circuit Breaker Policy is defined in a separate method called `GetCircuitBreakerPolicy()`, as shown in the following code:
 
 ```csharp
 static IAsyncPolicy<HttpResponseMessage> GetCircuitBreakerPolicy()

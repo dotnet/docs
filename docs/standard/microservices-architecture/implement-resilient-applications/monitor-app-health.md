@@ -11,11 +11,11 @@ Health monitoring can allow near-real-time information about the state of your c
 
 Microservices-based applications often use heartbeats or health checks to enable their performance monitors, schedulers, and orchestrators to keep track of the multitude of services. If services cannot send some sort of “I’m alive” signal, either on demand or on a schedule, your application might face risks when you deploy updates, or it might just detect failures too late and not be able to stop cascading failures that can end up in major outages.
 
-In the typical model, services send reports about their status, and that information is aggregated to provide an overall view of the state of health of your application. If you are using an orchestrator, you can provide health information to your orchestrator’s cluster, so that the cluster can act accordingly. If you invest in high-quality health reporting that is customized for your application, you can detect and fix issues for your running application much more easily.
+In the typical model, services send reports about their status, and that information is aggregated to provide an overall view of the state of health of your application. If you are using an orchestrator, you can provide health information to your orchestrator’s cluster, so that the cluster can act accordingly. If you invest in high-quality health reporting that's customized for your application, you can detect and fix issues for your running application much more easily.
 
 ## Implement health checks in ASP.NET Core services
 
-When developing an ASP.NET Core microservice or web application, you can use an experimental out-of-band library (not official as part of ASP.NETCore and now deprecated) named `HealthChecks` from the ASP.NET team. It is available at this [GitHub repo](https://github.com/dotnet-architecture/HealthChecks). However, the official version of HealthChecks [will be released in ASP.NET Core 2.2](https://github.com/aspnet/Announcements/issues/307) (GA around end of 2018).
+When developing an ASP.NET Core microservice or web application, you can use an experimental out-of-band library (not official as part of ASP.NETCore and now deprecated) named `HealthChecks` from the ASP.NET team. It's available at this [GitHub repo](https://github.com/dotnet-architecture/HealthChecks). However, the official version of HealthChecks [will be released in ASP.NET Core 2.2](https://github.com/aspnet/Announcements/issues/307) (GA around end of 2018).
 
 This library is easy to use and provides features that let you validate that any specific external resource needed for your application (like a SQL Server database or remote API) is working properly. When you use this library, you can also decide what it means that the resource is healthy, as we explain later.
 
@@ -132,7 +132,7 @@ checks.AddUrlCheck(Configuration["CatalogUrl"],1); // 1 min as cache duration
 
 ### Query your microservices to report about their health status
 
-When you have configured health checks as described here, once the microservice is running in Docker, you can directly check from a browser if it is healthy. (This does require that you are publishing the container port out of the Docker host, so you can access the container through localhost or through the external Docker host IP.) Figure 8-8 shows a request in a browser and the corresponding response.
+When you have configured health checks as described here, once the microservice is running in Docker, you can directly check from a browser if it's healthy. (This does require that you are publishing the container port out of the Docker host, so you can access the container through localhost or through the external Docker host IP.) Figure 8-8 shows a request in a browser and the corresponding response.
 
 ![Browser view of the json response returned by a health check](./media/image7.png)
 
@@ -160,7 +160,7 @@ To monitor the availability of your microservices, orchestrators like Kubernetes
 
 For instance, most orchestrators can use health checks to manage zero-downtime deployments. Only when the status of a service/container changes to healthy will the orchestrator start routing traffic to service/container instances.
 
-Health monitoring is especially important when an orchestrator performs an application upgrade. Some orchestrators (like Azure Service Fabric) update services in phases—for example, they might update one-fifth of the cluster surface for each application upgrade. The set of nodes that is upgraded at the same time is referred to as an *upgrade domain*. After each upgrade domain has been upgraded and is available to users, that upgrade domain must pass health checks before the deployment moves to the next upgrade domain.
+Health monitoring is especially important when an orchestrator performs an application upgrade. Some orchestrators (like Azure Service Fabric) update services in phases—for example, they might update one-fifth of the cluster surface for each application upgrade. The set of nodes that's upgraded at the same time is referred to as an *upgrade domain*. After each upgrade domain has been upgraded and is available to users, that upgrade domain must pass health checks before the deployment moves to the next upgrade domain.
 
 Another aspect of service health is reporting metrics from the service. This is an advanced capability of the health model of some orchestrators, like Service Fabric. Metrics are important when using an orchestrator because they are used to balance resource usage. Metrics also can be an indicator of system health. For example, you might have an application that has many microservices, and each instance reports a requests-per-second (RPS) metric. If one service is using more resources (memory, processor, etc.) than another service, the orchestrator could move service instances around in the cluster to try to maintain even resource utilization.
 

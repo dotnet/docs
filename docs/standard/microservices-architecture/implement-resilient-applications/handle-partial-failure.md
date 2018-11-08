@@ -15,13 +15,13 @@ For example, consider the Order details page from the eShopOnContainers sample a
 
 **Figure 8-1**. Partial failures because of dependencies that impact service thread availability
 
-In a large microservices-based application, any partial failure can be amplified, especially if most of the internal microservices interaction is based on synchronous HTTP calls (which is considered an anti-pattern). Think about a system that receives millions of incoming calls per day. If your system has a bad design that is based on long chains of synchronous HTTP calls, these incoming calls might result in many more millions of outgoing calls (let’s suppose a ratio of 1:4) to dozens of internal microservices as synchronous dependencies. This situation is shown in Figure 8-2, especially dependency \#3.
+In a large microservices-based application, any partial failure can be amplified, especially if most of the internal microservices interaction is based on synchronous HTTP calls (which is considered an anti-pattern). Think about a system that receives millions of incoming calls per day. If your system has a bad design that's based on long chains of synchronous HTTP calls, these incoming calls might result in many more millions of outgoing calls (let’s suppose a ratio of 1:4) to dozens of internal microservices as synchronous dependencies. This situation is shown in Figure 8-2, especially dependency \#3.
 
 ![An incorrect design for web app microservice that depends on a chain of dependencies on other microservices](./media/image2.png)
 
 **Figure 8-2**. The impact of having an incorrect design featuring long chains of HTTP requests
 
-Intermittent failure is guaranteed in a distributed and cloud-based system, even if every dependency itself has excellent availability. It is a fact you need to consider.
+Intermittent failure is guaranteed in a distributed and cloud-based system, even if every dependency itself has excellent availability. It's a fact you need to consider.
 
 If you do not design and implement techniques to ensure fault tolerance, even small downtimes can be amplified. As an example, 50 dependencies each with 99.99% of availability would result in several hours of downtime each month because of this ripple effect. When a microservice dependency fails while handling a high volume of requests, that failure can quickly saturate all available request threads in each service and crash the whole application.
 
@@ -31,7 +31,7 @@ If you do not design and implement techniques to ensure fault tolerance, even sm
 
 To minimize this problem, in the section [Asynchronous microservice integration enforce microservice’s autonomy](../architect-microservice-container-applications/communication-in-microservice-architecture.md#asynchronous-microservice-integration-enforces-microservices-autonomy), this guide encourages you to use asynchronous communication across the internal microservices.
 
-In addition, it is essential that you design your microservices and client applications to handle partial failures—that is, to build resilient microservices and client applications.
+In addition, it's essential that you design your microservices and client applications to handle partial failures—that is, to build resilient microservices and client applications.
 
 >[!div class="step-by-step"]
 [Previous](index.md)

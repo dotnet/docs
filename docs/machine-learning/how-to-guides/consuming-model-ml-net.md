@@ -21,7 +21,7 @@ using (var stream = File.Create(modelPath))
 
 // Potentially, the lines below can be in a different process altogether.
 
-// When you load the model, it's a 'dynamic' transformer. 
+// When you load the model, it's a transformer.
 ITransformer loadedModel;
 using (var stream = File.OpenRead(modelPath))
     loadedModel = mlContext.Model.Load(stream);

@@ -8,7 +8,7 @@ ms.custom: mvc
 ---
 # Calculate metrics to evaluate machine learning model quality - ML.NET
 
-How do you evaluate quality after you train the model? Each machine learning tasks exposes metrics for quality evaluation.
+How do you evaluate quality after you train the model? Each machine learning task exposes metrics for quality evaluation.
 
 You can use the corresponding 'context' of the task to evaluate the model, as in the following example:
 

@@ -31,7 +31,7 @@ var mlContext = new MLContext();
 // Create the reader: define the data columns and where to find them in the text file.
 var reader = mlContext.Data.TextReader(new[] {
         // We read the first 10 values as a single float vector.
-        new TextLoader.Column("FeatureVector", DataKind.R4, new[] {new TextLoader.Range(0, 9)}),
+        new TextLoader.Column("FeatureVector", DataKind.R4, 0, 9),
         // Separately, read the target variable.
         new TextLoader.Column("Target", DataKind.R4, 10)
     },

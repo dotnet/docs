@@ -41,7 +41,7 @@ var reader = mlContext.Data.TextReader(new TextLoader.Arguments
 var trainData = reader.Read(irisDataPath);
 
 // Build the training pipeline.
-var dynamicPipeline =
+var pipeline =
     // Concatenate all the features together into one column 'Features'.
     mlContext.Transforms.Concatenate("Features", "SepalLength", "SepalWidth", "PetalLength", "PetalWidth")
     // Note that the label is text, so it needs to be converted to key.
@@ -52,7 +52,7 @@ var dynamicPipeline =
     .Append(mlContext.Transforms.Conversion.MapKeyToValue(("PredictedLabel", "Data")));
 
 // Train the model.
-var model = dynamicPipeline.Fit(trainData);
+var model = pipeline.Fit(trainData);
 ```
 
 To use [schema comprehension](https://github.com/dotnet/machinelearning/blob/master/docs/code/SchemaComprehension.md) for prediction, define a pair of classes like the following:

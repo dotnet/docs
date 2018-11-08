@@ -52,10 +52,6 @@ IEnumerable<CustomerChurnInfo> churnData = GetChurnInfo();
 // or merely an IEnumerable.
 var trainData = mlContext.CreateStreamingDataView(churnData);
 
-// Now note that 'trainData' is just an IDataView, so we face a choice here: either declare the static type
-// and proceed in the statically typed fashion, or keep dynamic types and build a dynamic pipeline.
-// We demonstrate both below.
-
 // Build the learning pipeline.
 // In our case, we will one-hot encode the demographic category, and concatenate that with the number of visits.
 // We apply our FastTree binary classifier to predict the 'HasChurned' label.
@@ -64,5 +60,5 @@ var pipeline = mlContext.Transforms.Categorical.OneHotEncoding("DemographicCateg
     .Append(mlContext.Transforms.Concatenate("Features", "DemographicCategory", "LastVisits"))
     .Append(mlContext.BinaryClassification.Trainers.FastTree("HasChurned", "Features", numTrees: 20));
 
-var dynamicModel = pipeline.Fit(trainData);
+var model = pipeline.Fit(trainData);
 ```

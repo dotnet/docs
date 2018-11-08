@@ -36,41 +36,51 @@ Sentiment   SentimentText
 var mlContext = new MLContext();
 
 // Define the reader: specify the data columns and where to find them in the text file.
-var reader = mlContext.Data.TextReader(ctx => (
-        IsToxic: ctx.LoadBool(0),
-        Message: ctx.LoadText(1)
-    ), hasHeader: true);
+var reader = mlContext.Data.TextReader(new TextLoader.Arguments
+{
+    Column = new[] {
+        new TextLoader.Column("IsToxic", DataKind.BL, 0),
+        new TextLoader.Column("Message", DataKind.TX, 1),
+    },
+    HasHeader = true
+});
 
 // Read the data.
 var data = reader.Read(dataPath);
 
 // Inspect the message texts that are read from the file.
-var messageTexts = data.GetColumn(x => x.Message).Take(20).ToArray();
+var messageTexts = data.GetColumn<string>(mlContext, "Message").Take(20).ToArray();
 
 // Apply various kinds of text operations supported by ML.NET.
-var learningPipeline = reader.MakeNewEstimator()
-    .Append(r => (
-        // One-stop shop to run the full text featurization.
-        TextFeatures: r.Message.FeaturizeText(),
+var pipeline =
+    // One-stop shop to run the full text featurization.
+    mlContext.Transforms.Text.FeaturizeText("Message", "TextFeatures")
 
-        // NLP pipeline 1: bag of words.
-        BagOfWords: r.Message.NormalizeText().ToBagofWords(),
+    // Normalize the message for later transforms
+    .Append(mlContext.Transforms.Text.NormalizeText("Message", "NormalizedMessage"))
 
-        // NLP pipeline 2: bag of bigrams, using hashes instead of dictionary indices.
-        BagOfBigrams: r.Message.NormalizeText().ToBagofHashedWords(ngramLength: 2, allLengths: false),
+    // NLP pipeline 1: bag of words.
+    .Append(new WordBagEstimator(mlContext, "NormalizedMessage", "BagOfWords"))
 
-        // NLP pipeline 3: bag of tri-character sequences with TF-IDF weighting.
-        BagOfTrichar: r.Message.TokenizeIntoCharacters().ToNgrams(ngramLength: 3, weighting: NgramTransform.WeightingCriteria.TfIdf),
+    // NLP pipeline 2: bag of bigrams, using hashes instead of dictionary indices.
+    .Append(new WordHashBagEstimator(mlContext, "NormalizedMessage", "BagOfBigrams",
+                ngramLength: 2, allLengths: false))
 
-        // NLP pipeline 4: word embeddings.
-        Embeddings: r.Message.NormalizeText().TokenizeText().WordEmbeddings(WordEmbeddingsTransform.PretrainedModelKind.GloVeTwitter25D)
-    ));
+    // NLP pipeline 3: bag of tri-character sequences with TF-IDF weighting.
+    .Append(mlContext.Transforms.Text.TokenizeCharacters("Message", "MessageChars"))
+    .Append(new NgramEstimator(mlContext, "MessageChars", "BagOfTrichar",
+                ngramLength: 3, weighting: NgramTransform.WeightingCriteria.TfIdf))
+
+    // NLP pipeline 4: word embeddings.
+    .Append(mlContext.Transforms.Text.TokenizeWords("NormalizedMessage", "TokenizedMessage"))
+    .Append(mlContext.Transforms.Text.ExtractWordEmbeedings("TokenizedMessage", "Embeddings",
+                WordEmbeddingsTransform.PretrainedModelKind.GloVeTwitter25D));
 
 // Let's train our pipeline, and then apply it to the same data.
 // Note that even on a small dataset of 70KB the pipeline above can take up to a minute to completely train.
-var transformedData = learningPipeline.Fit(data).Transform(data);
+var transformedData = pipeline.Fit(data).Transform(data);
 
 // Inspect some columns of the resulting dataset.
-var embeddings = transformedData.GetColumn(x => x.Embeddings).Take(10).ToArray();
-var unigrams = transformedData.GetColumn(x => x.BagOfWords).Take(10).ToArray();
+var embeddings = transformedData.GetColumn<float[]>(mlContext, "Embeddings").Take(10).ToArray();
+var unigrams = transformedData.GetColumn<float[]>(mlContext, "BagOfWords").Take(10).ToArray();
 ```

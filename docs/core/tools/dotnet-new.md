@@ -65,6 +65,7 @@ The command contains a default list of templates. Use `dotnet new -l` to obtain 
 | Class library                                | `classlib`       | [C#], F#, VB  |
 | Unit test project                            | `mstest`         | [C#], F#, VB  |
 | xUnit test project                           | `xunit`          | [C#], F#, VB  |
+| NUnit test project                           | `nunit`          | [C#], F#, VB  |
 | Razor page                                   | `page`           | [C#]          |
 | MVC ViewImports                              | `viewimports`    | [C#]          |
 | MVC ViewStart                                | `viewstart`      | [C#]          |

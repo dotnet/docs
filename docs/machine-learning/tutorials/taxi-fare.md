@@ -112,11 +112,11 @@ When building a model with ML .NET you start by creating an ML Context. This is 
 
 ### Initialize variables in Main
 
-Create a variable called `mlContext` and initialize it with a new instance of <xref:Microsoft.ML.Context>.  Replace the `Console.WriteLine("Hello World!")` line with the following code in the `Main` method:
+Create a variable called `mlContext` and initialize it with a new instance of `MLContext`.  Replace the `Console.WriteLine("Hello World!")` line with the following code in the `Main` method:
 
 [!code-csharp[CreateMLContext](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#3 "Create the ML Context")]
 
-Next, to setup for data loading initialize the `_textLoader` global variable in order to reuse it.  Notice that we are using a <xref:Microsoft.ML.Runtime.DataLoadSaveOperations.TextReader>. When you create a `TextLoader` using a `TextReader`, you pass in the context needed and the <xref:Microsoft.ML.Runtime.Data.TextLoader.Arguments> class which enables customization. Specify the data schema by passing an array of <xref:Microsoft.ML.Runtime.Data.TextLoader.Column> objects to the `TextReader` containing all the column names and their types. We defined the data schema previously when we created our `TaxiTrip` class.
+Next, to setup for data loading initialize the `_textLoader` global variable in order to reuse it.  Notice that we are using a `TextReader`. When you create a `TextLoader` using a `TextReader`, you pass in the context needed and the <xref:Microsoft.ML.Runtime.Data.TextLoader.Arguments> class which enables customization. Specify the data schema by passing an array of <xref:Microsoft.ML.Runtime.Data.TextLoader.Column> objects to the `TextReader` containing all the column names and their types. We defined the data schema previously when we created our `TaxiTrip` class.
 
 The `TextReader` class returns a fully initialized <xref:Microsoft.ML.Runtime.Data.TextLoader>  
 
@@ -160,15 +160,15 @@ In ML.NET, data is similar to a SQL view. It is lazily evaluated, schematized, a
 
 In the next steps we refer to the columns by the names defined in the `TaxiTrip` class.
 
-When the model is trained and evaluated, by default, the values in the **Label** column are considered as correct values to be predicted. As we want to predict the taxi trip fare, copy the `FareAmount` column into the **Label** column. To do that, use <xref:Microsoft.ML.Transforms.CopyColumnsEstimator> and add the following code:
+When the model is trained and evaluated, by default, the values in the **Label** column are considered as correct values to be predicted. As we want to predict the taxi trip fare, copy the `FareAmount` column into the **Label** column. To do that, use the `CopyColumnsEstimator` transformation class, and add the following code:
 
 [!code-csharp[CopyColumnsEstimator](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#7 "Use the CopyColumnsEstimator")]
 
-The algorithm that trains the model requires **numeric** features, so you have to transform the categorical data (`VendorId`, `RateCode`, and `PaymentType`) values into numbers. To do that, use <xref:Microsoft.ML.Transforms.Categorical.OneHotEncodingEstimator>, which assigns different numeric key values to the different values in each of the columns, and add the following code:
+The algorithm that trains the model requires **numeric** features, so you have to transform the categorical data (`VendorId`, `RateCode`, and `PaymentType`) values into numbers. To do that, use the `OneHotEncodingEstimator` transformation class, which assigns different numeric key values to the different values in each of the columns, and add the following code:
 
 [!code-csharp[OneHotEncodingEstimator](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#8 "Use the OneHotEncodingEstimator")]
 
-The last step in data preparation combines all of the feature columns into the **Features** column using the <xref:Microsoft.ML.Transforms.ColumnConcatenatingEstimator> transformation class. By default, a learning algorithm processes only features from the **Features** column. Add the following code:
+The last step in data preparation combines all of the feature columns into the **Features** column using the `ColumnConcatenatingEstimator` transformation class. By default, a learning algorithm processes only features from the **Features** column. Add the following code:
 
 [!code-csharp[ColumnConcatenatingEstimator](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#9 "Use the ColumnConcatenatingEstimator")]
 
@@ -176,9 +176,9 @@ Notice that the `TripTime` column, which corresponds to the `trip_time_in_secs` 
 
 ## Choose a learning algorithm
 
-After adding the data to the pipeline and transforming it into the correct input format, we select a learning algorithm (**learner**). The learner trains the model. We chose a **regression** task for this problem, so we use a <xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer> learner, which is one of the regression learners provided by ML .NET.
+After adding the data to the pipeline and transforming it into the correct input format, we select a learning algorithm (**learner**). The learner trains the model. We chose a **regression** task for this problem, so we use a `FastTreeRegressionTrainer` learner, which is one of the regression learners provided by ML .NET.
 
-<xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer> learner utilizes gradient boosting. Gradient boosting is a machine learning technique for regression problems. It builds each regression tree in a step-wise fashion. It uses a pre-defined loss function to measure the error in each step and correct for it in the next. The result is a prediction model that is actually an ensemble of weaker prediction models. For more information about gradient boosting, see [Boosted Decision Tree Regression](/azure/machine-learning/studio-module-reference/boosted-decision-tree-regression).
+The `FastTreeRegressionTrainer` learner utilizes gradient boosting. Gradient boosting is a machine learning technique for regression problems. It builds each regression tree in a step-wise fashion. It uses a pre-defined loss function to measure the error in each step and correct for it in the next. The result is a prediction model that is actually an ensemble of weaker prediction models. For more information about gradient boosting, see [Boosted Decision Tree Regression](/azure/machine-learning/studio-module-reference/boosted-decision-tree-regression).
 
 Add the following code into the `Train` method to add the `FastTreeRegressionTrainer` to the data processing code added in the previous step:
 
@@ -186,7 +186,7 @@ Add the following code into the `Train` method to add the `FastTreeRegressionTra
 
 ## Train the model
 
-The final step is to train the model. We train the model, <xref:Microsoft.ML.Runtime.Data.TransformerChain>, based on the dataset that has been loaded and transformed. Once the estimator has been defined, we train the model using the <xref:Microsoft.ML.Runtime.Data.EstimatorChain%601.Fit> while providing the already loaded training data. This returns a model to use for predictions. `pipeline.Fit()` trains the pipeline and returns a `Transformer` based on the `DataView` passed in. The experiment is not executed until this happens.
+The final step is to train the model. We train the model, <xref:Microsoft.ML.Runtime.Data.TransformerChain>, based on the dataset that has been loaded and transformed. Once the estimator has been defined, we train the model using the <xref:Microsoft.ML.Runtime.Data.EstimatorChain%601.Fit%2A> while providing the already loaded training data. This returns a model to use for predictions. `pipeline.Fit()` trains the pipeline and returns a `Transformer` based on the `DataView` passed in. The experiment is not executed until this happens.
 
 [!code-csharp[TrainModel](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#11 "Train the model")]
 
@@ -258,7 +258,7 @@ Next, we'll use the machine learning `model` parameter (a transformer) to input 
 
 [!code-csharp[PredictWithTransformer](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#15 "Predict using the Transformer")]
 
-The <xref:Microsoft.ML.Runtime.Data.RegressionContext.Evaluate> method computes the quality metrics for the `PredictionModel` using the specified dataset. It returns a <xref:Microsoft.ML.Runtime.Data.RegressionEvaluator.Result> object contains the overall metrics computed by regression evaluators. To display these to determine the quality of the model, you need to get the metrics first. Add the following code as the next line in the `Evaluate` method:
+The `RegressionContext.Evaluate` method computes the quality metrics for the `PredictionModel` using the specified dataset. It returns a <xref:Microsoft.ML.Runtime.Data.RegressionEvaluator.Result> object contains the overall metrics computed by regression evaluators. To display these to determine the quality of the model, you need to get the metrics first. Add the following code as the next line in the `Evaluate` method:
 
 [!code-csharp[ComputeMetrics](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#16 "Compute Metrics")]
 
@@ -306,11 +306,11 @@ Add a call to the new method from the `Main` method, right under the `Evaluate` 
 
 [!code-csharp[CallTestSinglePrediction](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#16 "Call the TestSinglePrediction method")]
 
-Since we want to load the model from the zip file we saved, we'll create the `FileStream` immediately before calling the `LoadFrom` method. Add the following code to the `SaveModePredictWithModelLoadedFromFilelAsFile` method as the next line:
+Since we want to load the model from the zip file we saved, we'll create the `FileStream` immediately before calling the `Load` method. Add the following code to the `TestSinglePrediction` method as the next line:
 
 [!code-csharp[LoadTheModel](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#20 "Load the model")]
 
-While the `model` is a `transformer` that operates on many rows of data, a very common production scenario is a need for predictions on individual examples. The <xref:Microsoft.ML.Runtime.Data.PredictionFunction`2> is a wrapper that is returned from the <xref:Microsoft.ML.Runtime.Data.PredictionFunctionExtensions.MakePredictionFunction``2(Microsoft.ML.Core.Data.ITransformer,Microsoft.ML.Runtime.IHostEnvironment)> method. Let's add the following code to create the PredictionFunction as the first line in the `Predict` Method:
+While the `model` is a `transformer` that operates on many rows of data, a very common production scenario is a need for predictions on individual examples. The <xref:Microsoft.ML.Runtime.Data.PredictionFunction%602> is a wrapper that is returned from the `MakePredictionFunction` method. Let's add the following code to create the `PredictionFunction` as the first line in the `Predict` Method:
 
 [!code-csharp[MakePredictionFunction](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#21 "Create the PredictionFunction")]
   
@@ -318,7 +318,7 @@ This tutorial uses one test trip within this class. Later you can add other scen
 
 [!code-csharp[PredictionData](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#22 "Create test data for single prediction")]
 
- We can use that to predict the fare based on a single instance of the taxi trip data. To get a prediction, use <xref:Microsoft.ML.Runtime.Data.PredictionFunction`2.Predict(`0)> on the data. Note that the input data is a string and the model includes the featurization. Your pipeline is in sync during training and prediction. You didn’t have to write preprocessing/featurization code specifically for predictions, and the same API takes care of both batch and one-time predictions.
+ We can use that to predict the fare based on a single instance of the taxi trip data. To get a prediction, use <xref:Microsoft.ML.Runtime.Data.PredictionFunction%602.Predict(%600)> on the data. Note that the input data is a string and the model includes the featurization. Your pipeline is in sync during training and prediction. You didn’t have to write preprocessing/featurization code specifically for predictions, and the same API takes care of both batch and one-time predictions.
 
 [!code-csharp[Predict](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#23 "Create a prediction of taxi fare")]
 

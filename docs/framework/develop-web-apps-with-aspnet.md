@@ -16,7 +16,7 @@ ASP.NET is a .NET Framework technology for creating web apps. For more informati
 - [ASP.NET Web Pages](https://go.microsoft.com/fwlink/p/?LinkId=251040)
 - [ASP.NET Web API](https://go.microsoft.com/fwlink/p/?LinkId=251041)  
 - [Create an ASP.NET Framework web app in Azure](/azure/app-service/app-service-web-get-started-dotnet-framework)
-- 
+
 ## Developing Web apps with ASP.NET Core
 
 ASP.NET Core is a redesign of ASP.NET 4.x. Some of the benefits ASP.NET Core provides over ASP.NET:

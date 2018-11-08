@@ -194,8 +194,12 @@ A human-friendly title of the package, typically used in UI displays as on nuget
 ### Authors
 A semicolon-separated list of packages authors, matching the profile names on nuget.org. These are displayed in the NuGet Gallery on nuget.org and are used to cross-reference packages by the same authors.
 
-### Description
+### PackageDescription
+
 A long description of the package for UI display.
+
+### Description
+A long description for the assembly. If `PackageDescription` is not specified then this property is also used as the description of the package.
 
 ### Copyright
 Copyright details for the package.

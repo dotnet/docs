@@ -523,13 +523,15 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- If `comparand` and the object in `location1` are equal by reference, then `value` is stored in `location1`. Otherwise, no operation is performed. The compare and exchange operations are performed as an atomic operation. The return value of <xref:System.Threading.Interlocked.CompareExchange%2A> is the original value in `location1`, whether or not the exchange takes place.  
-  
- Beginning with .NET Framework version 2.0, the <xref:System.Threading.Interlocked.CompareExchange%60%601%28%60%600%40%2C%60%600%2C%60%600%29> method overload provides a type-safe alternative for reference types.  
-  
+## Remarks
+
+> [!IMPORTANT]
+> Beginning with .NET Framework 2.0, the <xref:System.Threading.Interlocked.CompareExchange%60%601%28%60%600%40%2C%60%600%29> method overload provides a type-safe alternative for reference types. We recommend that you call it instead of this overload.
+
+If `comparand` and the object in `location1` are equal by reference, then `value` is stored in `location1`. Otherwise, no operation is performed. The compare and exchange operations are performed as an atomic operation. The return value of <xref:System.Threading.Interlocked.CompareExchange%2A> is the original value in `location1`, whether or not the exchange takes place.  
+
 > [!NOTE]
->  The objects are compared for reference equality, rather than <xref:System.Object.Equals%2A?displayProperty=nameWithType>. As a result, two boxed instances of the same value type (for example, the integer 3) always appear to be unequal, and no operation is performed. Do not use this overload with value types.  
+>  The objects are compared for reference equality rather than value equality. As a result, two boxed instances of the same value type (for example, the integer 3) always appear to be unequal and no operation is performed. Do not use this overload with value types.  
   
  ]]></format>
         </remarks>
@@ -1090,8 +1092,9 @@
   
 ## Remarks
 
-> [!NOTE]
-> Beginning with .NET Framework version 2.0, the <xref:System.Threading.Interlocked.Exchange%60%601%28%60%600%40%2C%60%600%29> method overload provides a type-safe alternative for reference types.  
+> [!IMPORTANT]
+> Beginning with .NET Framework 2.0, the <xref:System.Threading.Interlocked.Exchange%60%601%28%60%600%40%2C%60%600%29> method overload provides a type-safe alternative for reference types. We recommend that you call it instead of this overload.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The address of <paramref name="location1" /> is a null pointer.</exception>

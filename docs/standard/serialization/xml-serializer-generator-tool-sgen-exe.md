@@ -25,7 +25,7 @@ sgen [options]
 |**/n**[**ologo**]|Suppresses the display of the Microsoft startup banner.|  
 |**/o**[**ut**]**:***path*|Specifies the directory in which to save the generated assembly. **Note:**  The name of the generated assembly is composed of the name of the input assembly plus "xmlSerializers.dll".|  
 |**/p**[**roxytypes**]|Generates serialization code only for the XML Web service proxy types.|  
-|**/r**[**eference**]**:**_assemblyfiles__|Specifies the assemblies that are referenced by the types requiring XML serialization. Accepts multiple assembly files separated by commas.|  
+|**/r**[**eference**]**:**_assemblyfiles_|Specifies the assemblies that are referenced by the types requiring XML serialization. Accepts multiple assembly files separated by commas.|  
 |**/s**[**ilent**]|Suppresses the display of success messages.|  
 |**/t**[**ype**]**:**_type_|Generates serialization code only for the specified type.|  
 |**/v**[**erbose**]|Displays verbose output for debugging. Lists types from the target assembly that cannot be serialized with the <xref:System.Xml.Serialization.XmlSerializer>.|  

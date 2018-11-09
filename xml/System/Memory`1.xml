@@ -573,7 +573,9 @@ The garbage collector will not move the memory until the returned <xref:System.B
         <remarks>
           <format type="text/markdown"><![CDATA[  
 
-Because a call to the <xref="System.Memory%601.ToArray%2A> method performs a heap allocation, it should generally be avoided. However, it is sometimes necessary to take advantage of functionality that is only available for arrays.
+Because a call to the <xref=System.Memory%601.ToArray%2A> method performs a heap allocation, it should generally be avoided. However, it is sometimes necessary to take advantage of functionality that is only available for arrays.
+
+Each call to the `ToArray` method returns a new array. 
 
          ]]></format>
         </remarks>

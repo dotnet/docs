@@ -96,7 +96,9 @@ The following example demonstrates the `CultureTypes.AllCultures` enumeration me
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>All cultures that ship with .NET, including neutral and specific cultures, cultures installed with the operating system, and custom cultures created by the user.  
+        <summary>All cultures that recognized by .NET, including neutral and specific cultures and custom cultures created by the user.
+
+On .NET Framework 4 and later versions and .NET Core running on Windows, it includes the culture data available from the Windows operating system. On .NET Core running on Linux and macOS, it includes culture data defined in the [ICU libraries](http://site.icu-project.org/).
   
  <see cref="F:System.Globalization.CultureTypes.AllCultures" /> is a composite field that includes the <see cref="F:System.Globalization.CultureTypes.NeutralCultures" />, <see cref="F:System.Globalization.CultureTypes.SpecificCultures" />, and <see cref="F:System.Globalization.CultureTypes.InstalledWin32Cultures" /> values.</summary>
       </Docs>
@@ -167,13 +169,6 @@ The following example demonstrates the `CultureTypes.AllCultures` enumeration me
       <MemberValue>4</MemberValue>
       <Docs>
         <summary>**This member is deprecated.** All cultures that are installed in the Windows operating system. </summary>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-
-Note that not all cultures supported by the .NET Framework are installed in the Windows operating system.
-  
-     ]]></format>
       </Docs>
     </Member>
     <Member MemberName="NeutralCultures">
@@ -371,7 +366,7 @@ In Windows versions prior to Windows 10, the `UserCustomCulture` value is assign
   
 ## Remarks 
 
-If it is used as an argument to the <xref:System.Globalization.CultureInfo.GetCultures%2A?displayProperty=nameWithType> method, the method returns an empty array.
+If it is used as an argument to the <xref:System.Globalization.CultureInfo.GetCultures%2A?displayProperty=nameWithType> method on .NET Framework 4 and later versions, the method returns an empty array.
 
      ]]></format>
       </Docs>

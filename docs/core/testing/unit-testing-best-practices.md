@@ -323,7 +323,7 @@ public interface IDateTimeProvider
     DayOfWeek DayOfWeek();
 }
 
-public bool GetDiscountedPrice(int price, IDateTimeProvider dateTimeProvider)
+public int GetDiscountedPrice(int price, IDateTimeProvider dateTimeProvider)
 {
     if(dateTimeProvider.DayOfWeek() == DayOfWeek.Tuesday) 
     {

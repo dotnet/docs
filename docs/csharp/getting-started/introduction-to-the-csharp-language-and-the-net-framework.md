@@ -32,7 +32,7 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
 - [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] which provides built-in query capabilities across a variety of data sources.  
   
- If you have to interact with other Windows software such as COM objects or native Win32 DLLs, you can do this in C# through a process called "Interop." Interop enables C# programs to do almost anything that a native C++ application can do. C# even supports pointers and the concept of "unsafe" code for those cases in which direct memory access is absolutely critical.  
+ If you have to interact with other Windows software such as COM objects or native Win32 DLLs, you can do this in C# through a process called "Interop". Interop enables C# programs to do almost anything that a native C++ application can do. C# even supports pointers and the concept of "unsafe" code for those cases in which direct memory access is absolutely critical.  
   
  The C# build process is simple compared to C and C++ and more flexible than in Java. There are no separate header files, and no requirement that methods and types be declared in a particular order. A C# source file may define any number of classes, structs, interfaces, and events.  
   

@@ -79,8 +79,8 @@ Lists, Arrays, and Sequences are three primary collection types in the F# core l
 
 Processing collections or sequences of elements is typically done with [recursion](language-reference/functions/index.md#recursive-functions) in F#.  Although F# has support for loops and imperative programming, recursion is preferred because it is easier to guarantee correctness.
 
->[!NOTE]
-The following example makes use of the pattern matching via the `match` expression.  This fundamental construct is covered later in this article.
+> [!NOTE]
+> The following example makes use of the pattern matching via the `match` expression.  This fundamental construct is covered later in this article.
 
 [!code-fsharp[RecursiveFunctions](../../samples/snippets/fsharp/tour.fs#L461-L500)]
 

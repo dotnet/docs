@@ -27,8 +27,8 @@ The following example shows how to close a file automatically by using the `use`
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6301.fs)]
 
->[!NOTE]
-You can use `use` in computation expressions, in which case a customized version of the `use` expression is used. For more information, see [Sequences](sequences.md), [Asynchronous Workflows](asynchronous-workflows.md), and [Computation Expressions](computation-expressions.md).
+> [!NOTE]
+> You can use `use` in computation expressions, in which case a customized version of the `use` expression is used. For more information, see [Sequences](sequences.md), [Asynchronous Workflows](asynchronous-workflows.md), and [Computation Expressions](computation-expressions.md).
 
 ## using Function
 

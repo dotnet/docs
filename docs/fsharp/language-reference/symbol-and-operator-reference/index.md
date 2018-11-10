@@ -6,7 +6,7 @@ ms.date: 04/04/2018
 # Symbol and Operator Reference
 
 > [!NOTE]
-The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+> The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 This topic includes a table of symbols and operators that are used in the F# language.
 

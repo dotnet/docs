@@ -158,7 +158,7 @@ Use the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> pr
     ```  
   
     > [!NOTE]
-    > Beginning with .NET Framework 2.0, the <xref:System.Threading.Interlocked.CompareExchange%60%601%28%60%600%40%2C%60%600%29> method overload provides a type-safe alternative for reference types.
+    > Beginning with .NET Framework 2.0, the <xref:System.Threading.Interlocked.CompareExchange%60%601%28%60%600%40%2C%60%600%2C%60%600%29> method overload provides a type-safe alternative for reference types.
   
 ## Recommendations for class libraries  
  Consider the following guidelines when designing class libraries for multithreading:  

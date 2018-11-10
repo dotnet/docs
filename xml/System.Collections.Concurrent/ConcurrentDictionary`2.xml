@@ -780,7 +780,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Adds a key/value pair to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> if the key does not already exist, or returns the existing value if the key exists.</summary>
+        <summary>Adds a key/value pair to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> if the key does not already exist. Returns the new value, or the existing value if the key already exists.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -829,8 +829,8 @@
       <Docs>
         <param name="key">The key of the element to add.</param>
         <param name="valueFactory">The function used to generate a value for the key.</param>
-        <summary>Adds a key/value pair to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> by using the specified function if the key does not already exist, or returns the existing value if the key exists.</summary>
-        <returns>The value for the key.</returns>
+        <summary>Adds a key/value pair to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> by using the specified function if the key does not already exist. Returns the new value, or the existing value if the key exists.</summary>
+        <returns>The value for the key. This will be either the existing value for the key if the key is already in the dictionary, or the new value if the key was not in the dictionary.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -889,7 +889,7 @@
       <Docs>
         <param name="key">The key of the element to add.</param>
         <param name="value">The value to be added, if the key does not already exist.</param>
-        <summary>Adds a key/value pair to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> if the key does not already exist, or returns the existing value if the key exists.</summary>
+        <summary>Adds a key/value pair to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> if the key does not already exist. Returns the new value, or the existing value if the key exists.</summary>
         <returns>The value for the key. This will be either the existing value for the key if the key is already in the dictionary, or the new value if the key was not in the dictionary.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

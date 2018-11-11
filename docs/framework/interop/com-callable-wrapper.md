@@ -158,7 +158,7 @@ End Class
 ```  
   
 ```csharp
-[ClassInterface(ClassInterfaceType.AutoDispatch]
+[ClassInterface(ClassInterfaceType.AutoDispatch)]
 public class LoanApp : IAnother {
     public void M() {}
 }

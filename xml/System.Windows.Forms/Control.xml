@@ -8066,6 +8066,12 @@ MyControl.Font = New Font(MyControl.Font, _
  [!code-cpp[Control.KeyDown#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.KeyDown/CPP/form1.cpp#1)]
  [!code-csharp[Control.KeyDown#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.KeyDown/CS/form1.cs#1)]
  [!code-vb[Control.KeyDown#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control.KeyDown/VB/form1.vb#1)]  
+ 
+ 
+ The following code example demonstrates the order of raising the <xref:System.Windows.Forms.Control.KeyDown>, <xref:System.Windows.Forms.Control.KeyUp>, <xref:System.Windows.Forms.Control.KeyPress> events, and how to register event handlers on them.  
+ 
+ [!code-csharp[Control.KeyDown#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.KeyDown/CS/form2.cs#1)]
+ [!code-vb[Control.KeyDown#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control.KeyDown/VB/Form2.vb#1)]
   
  ]]></format>
         </remarks>
@@ -8124,6 +8130,12 @@ MyControl.Font = New Font(MyControl.Font, _
  [!code-cpp[Control.KeyDown#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.KeyDown/CPP/form1.cpp#1)]
  [!code-csharp[Control.KeyDown#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.KeyDown/CS/form1.cs#1)]
  [!code-vb[Control.KeyDown#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control.KeyDown/VB/form1.vb#1)]  
+ 
+ 
+  The following code example demonstrates the order of rising the <xref:System.Windows.Forms.Control.KeyDown>, <xref:System.Windows.Forms.Control.KeyUp> and <xref:System.Windows.Forms.Control.KeyPress> events, also how to register event handlers on them.  
+ 
+ [!code-csharp[Control.KeyPress#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.KeyDown/CS/form2.cs#1)]
+ [!code-vb[Control.KeyPress#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control.KeyDown/VB/Form2.vb#1)]
   
  ]]></format>
         </remarks>
@@ -8177,6 +8189,12 @@ MyControl.Font = New Font(MyControl.Font, _
  [!code-cpp[Control.KeyUp#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.KeyUp/CPP/form1.cpp#1)]
  [!code-csharp[Control.KeyUp#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.KeyUp/CS/form1.cs#1)]
  [!code-vb[Control.KeyUp#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control.KeyUp/VB/form1.vb#1)]  
+ 
+ 
+  The following code example demonstrates the order of rising the <xref:System.Windows.Forms.Control.KeyDown>, <xref:System.Windows.Forms.Control.KeyUp> and <xref:System.Windows.Forms.Control.KeyPress> events, also how to register event handlers on them.  
+ 
+ [!code-csharp[Control.KeyUp#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.KeyDown/CS/form2.cs#1)]
+ [!code-vb[Control.KeyUp#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control.KeyDown/VB/Form2.vb#1)]
   
  ]]></format>
         </remarks>

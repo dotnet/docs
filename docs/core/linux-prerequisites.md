@@ -210,7 +210,7 @@ To install .NET Core on supported Debian versions (64 bit):
 > [!NOTE]
 > A user-controlled directory is required for Linux system installs from tar.gz.
 
-# [.NET Core 2.1](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore21)
 
 1. Remove any **previous preview** versions of .NET Core from your system.
 
@@ -270,7 +270,7 @@ To install .NET Core on supported Fedora versions:
 > [!NOTE]
 > A user-controlled directory is required for Linux system installs from tar.gz.
 
-# [.NET Core 2.1](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore21)
 
 1. Remove any **previous preview** versions of .NET Core from your system.
 
@@ -335,7 +335,7 @@ To install .NET Core for supported CentOS and Oracle Linux distributions/version
 > [!NOTE]
 > A user-controlled directory is required for Linux system installs from tar.gz.
 
-# [.NET Core 2.1](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore21)
 
 1. Remove any **previous preview** versions of .NET Core from your system.
 
@@ -391,7 +391,7 @@ To install .NET Core for supported CentOS and Oracle Linux distributions/version
 
 To install .NET Core 2.1 for supported SUSE Linux Enterprise Server and OpenSUSE distributions/versions (64 bit):
 
-# [.NET Core 2.1](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore21)
 
 1. Remove any **previous preview** versions of .NET Core from your system.
 

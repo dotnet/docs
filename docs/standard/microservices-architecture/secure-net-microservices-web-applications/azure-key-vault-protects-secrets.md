@@ -1,6 +1,6 @@
 ---
 title: Using Azure Key Vault to protect secrets at production time
-description: Securing .NET Microservices and Web Applications | Azure Key Vault is an excellent way to handle application secrets that are completely controlled by administrators. Administrators can even assign and revoke development values without developers having to handle them. Take a look here.
+description: Security in .NET Microservices and Web Applications - Azure Key Vault is an excellent way to handle application secrets that are completely controlled by administrators. Administrators can even assign and revoke development values without developers having to handle them.
 author: mjrousos
 ms.author: wiwagn
 ms.date: 10/19/2018
@@ -22,11 +22,11 @@ The Microsoft.Extensions.Configuration.AzureKeyVault package allows an ASP.NET C
    Set-AzureRmKeyVaultAccessPolicy -VaultName "<VaultName>" -ServicePrincipalName $sp.ServicePrincipalNames[0] -PermissionsToSecrets all -ResourceGroupName "<KeyVault Resource Group>"
    ```
 
-3. Include the key vault as a configuration source in your application by calling the `IConfigurationBuilder.AddAzureKeyVault` extension method when you create an `IConfigurationRoot` instance. Note that calling `AddAzureKeyVault` will require the application ID that was registered and given access to the key vault in the previous steps.
+3. Include the key vault as a configuration source in your application by calling the <xref:Microsoft.Extensions.Configuration.AzureKeyVaultConfigurationExtensions.AddAzureKeyVault> extension method when you create an <xref:Microsoft.Extensions.Configuration.IConfigurationRoot > instance. Note that calling `AddAzureKeyVault` will require the application ID that was registered and given access to the key vault in the previous steps.
 
    You can also use an overload of `AddAzureKeyVault` that takes a certificate in place of the client secret by just including a reference to the [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) package.
 
-**It's a best practice to register Azure Key Vault as the last configuration provider so it can  override configuration values from previous providers.**
+>[!IMPORTANT] It's a best practice to register Azure Key Vault as the last configuration provider so it can  override configuration values from previous providers.
 
 ## Additional resources
 

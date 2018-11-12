@@ -1,6 +1,6 @@
 ---
-title: key takeaways
-description: .NET Microservices Architecture for Containerized .NET Applications | The key takeaways from this book are, understand the benefits, and drawbacks, of using microservices, and that microservices are units of deployment. Get to know the DDD patterns for design and development, and the correct way to handle resiliency and security, as well as the use of orchestrators to manage deployments.
+title: Key takeaways
+description: Get the key takeaways from the .NET Microservices Architecture for Containerized .NET Applications guide/e-book, to have a quick look at the high-level issues involved when using a microservices architecture, like benefits and drawbacks, DDD patterns for design and development, as well as resiliency, security, and the use of orchestrators.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/19/2018
@@ -19,7 +19,7 @@ As a summary and key takeaways, the following are the most important conclusions
 
 **Domain-driven design and SOA.** The microservices architecture patterns derive from service-oriented architecture (SOA) and domain-driven design (DDD). When you design and develop microservices for environments with evolving business needs and rules, it's important to consider DDD approaches and patterns.
 
-**Microservices challenges.** Microservices offer many powerful capabilities, like independent deployment, strong subsystem boundaries, and technology diversity. However, they also raise many new challenges related to distributed application development, such as fragmented and independent data models, resilient communication between microservices, eventual consistency, and operational complexity that results from aggregating logging and monitoring information from multiple microservices. These aspects introduce a much higher complexity level than a traditional monolithic application. As a result, only specific scenarios are suitable for microservice-based applications. These include large and complex applications with multiple evolving subsystems; in these cases, it's worth investing in a more complex software architecture, because it will provide better long-term agility and application maintenance.
+**Microservices challenges.** Microservices offer many powerful capabilities, like independent deployment, strong subsystem boundaries, and technology diversity. However, they also raise many new challenges related to distributed application development, such as fragmented and independent data models, resilient communication between microservices, eventual consistency, and operational complexity that results from aggregating logging and monitoring information from multiple microservices. These aspects introduce a much higher complexity level than a traditional monolithic application. As a result, only specific scenarios are suitable for microservice-based applications. These include large and complex applications with multiple evolving subsystems. In these cases, it's worth investing in a more complex software architecture, because it will provide better long-term agility and application maintenance.
 
 **Containers for any application.** Containers are convenient for microservices, but can also be useful for monolithic applications based on the traditional .NET Framework, when using Windows Containers. The benefits of using Docker, such as solving many deployment-to-production issues and providing state-of-the-art Dev and Test environments, apply to many different types of applications.
 

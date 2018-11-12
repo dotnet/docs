@@ -1,6 +1,6 @@
 ---
 title: About authorization in .NET microservices and web applications
-description: Securing .NET Microservices and Web Applications | Get an overview of the main authorization options in ASP.NET Core applications - role-based and policy-based.
+description: Security in .NET Microservices and Web Applications - Get an overview of the main authorization options in ASP.NET Core applications - role-based and policy-based.
 author: mjrousos
 ms.author: wiwagn
 ms.date: 10/19/2018
@@ -29,7 +29,7 @@ By default, adding an Authorize attribute without parameters will limit access t
 
 ## Implement role-based authorization
 
-ASP.NET Core Identity has a built-in concept of roles. In addition to users, ASP.NET Core Identity stores information about different roles used by the application and keeps track of which users are assigned to which roles. These assignments can be changed programmatically with the RoleManager type (which updates roles in persisted storage) and UserManager type (which can assign or unassigned users from roles).
+ASP.NET Core Identity has a built-in concept of roles. In addition to users, ASP.NET Core Identity stores information about different roles used by the application and keeps track of which users are assigned to which roles. These assignments can be changed programmatically with the `RoleManager` type that updates roles in persisted storage, and the `UserManager` type that can grant or revoke roles from users.
 
 If you are authenticating with JWT bearer tokens, the ASP.NET Core JWT bearer authentication middleware will populate a user’s roles based on role claims found in the token. To limit access to an MVC action or controller to users in specific roles, you can include a Roles parameter in the Authorize annotation (attribute), as shown in the following code fragment:
 
@@ -71,7 +71,7 @@ In this example, to call API1, a user must:
 
 ## Implement policy-based authorization
 
-Custom authorization rules can also be written using [authorization policies](https://docs.asp.net/en/latest/security/authorization/policies.html). In this section, we provide an overview. More detail is available in the online [ASP.NET Authorization Workshop](https://github.com/blowdart/AspNetAuthorizationWorkshop).
+Custom authorization rules can also be written using [authorization policies](https://docs.asp.net/en/latest/security/authorization/policies.html). This section provides an overview. For more information, see the [ASP.NET Authorization Workshop](https://github.com/blowdart/AspNetAuthorizationWorkshop).
 
 Custom authorization policies are registered in the Startup.ConfigureServices method using the service.AddAuthorization method. This method takes a delegate that configures an AuthorizationOptions argument.
 
@@ -91,13 +91,13 @@ As shown in the example, policies can be associated with different types of requ
 
 In the previous example, the first AddPolicy call is just an alternative way of authorizing by role. If `[Authorize(Policy="AdministratorsOnly")]` is applied to an API, only users in the Administrator role will be able to access it.
 
-The second `AddPolicy` call demonstrates an easy way to require that a particular claim should be present for the user. The `RequireClaim` method also optionally takes expected values for the claim. If values are specified, the requirement is met only if the user has both a claim of the correct type and one of the specified values. If you are using the JWT bearer authentication middleware, all JWT properties will be available as user claims.
+The second <xref:Microsoft.AspNetCore.Authorization.AuthorizationOptions.AddPolicy> call demonstrates an easy way to require that a particular claim should be present for the user. The <xref:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder.RequireClaim> method also optionally takes expected values for the claim. If values are specified, the requirement is met only if the user has both a claim of the correct type and one of the specified values. If you are using the JWT bearer authentication middleware, all JWT properties will be available as user claims.
 
 The most interesting policy shown here is in the third `AddPolicy` method, because it uses a custom authorization requirement. By using custom authorization requirements, you can have a great deal of control over how authorization is performed. For this to work, you must implement these types:
 
-- A Requirements type that derives from `IAuthorizationRequirement` and that contains fields specifying the details of the requirement. In the example, this is an age field for the sample `MinimumAgeRequirement` type.
+- A Requirements type that derives from <xref:Microsoft.AspNetCore.Authorization.IAuthorizationRequirement> and that contains fields specifying the details of the requirement. In the example, this is an age field for the sample `MinimumAgeRequirement` type.
 
-- A handler that implements `AuthorizationHandler<T>`, where T is the type of `IAuthorizationRequirement` that the handler can satisfy. The handler must implement the `HandleRequirementAsync` method, which checks whether a specified context that contains information about the user satisfies the requirement.
+- A handler that implements <xref:Microsoft.AspNetCore.Authorization.AuthorizationHandler-1>, where T is the type of <xref:Microsoft.AspNetCore.Authorization.IAuthorizationRequirement> that the handler can satisfy. The handler must implement the <xref:Microsoft.AspNetCore.Authorization.AuthorizationHandler-1.HandleRequirementAsync> method, which checks whether a specified context that contains information about the user satisfies the requirement.
 
 If the user meets the requirement, a call to `context.Succeed` will indicate that the user is authorized. If there are multiple ways that a user might satisfy an authorization requirement, multiple handlers can be created.
 

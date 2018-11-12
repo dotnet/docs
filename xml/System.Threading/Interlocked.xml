@@ -68,7 +68,7 @@
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
     <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+    <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Add">
@@ -137,7 +137,7 @@
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -198,7 +198,7 @@
         <altmember cref="Overload:System.Threading.Interlocked.Decrement" />
         <altmember cref="M:System.Threading.Interlocked.Read(System.Int64@)" />
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CompareExchange">
@@ -276,7 +276,7 @@
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange">
@@ -349,7 +349,7 @@
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange">
@@ -406,7 +406,7 @@
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange">
@@ -469,7 +469,7 @@
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange">
@@ -537,7 +537,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         </remarks>
         <exception cref="T:System.ArgumentNullException">The address of <paramref name="location1" /> is a null pointer.</exception>
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange">
@@ -605,7 +605,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange&lt;T&gt;">
@@ -760,7 +760,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         </remarks>
         <exception cref="T:System.ArgumentNullException">The address of <paramref name="location" /> is a null pointer.</exception>
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Decrement">
@@ -817,7 +817,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <altmember cref="Overload:System.Threading.Interlocked.Add" />
         <altmember cref="M:System.Threading.Interlocked.Read(System.Int64@)" />
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Exchange">
@@ -876,7 +876,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <remarks>To be added.</remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Exchange">
@@ -939,7 +939,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         </remarks>
         <exception cref="T:System.ArgumentNullException">The address of <paramref name="location1" /> is a null pointer.</exception>
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Exchange">
@@ -987,7 +987,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <remarks>To be added.</remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Exchange">
@@ -1038,7 +1038,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <remarks>To be added.</remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Exchange">
@@ -1099,7 +1099,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         </remarks>
         <exception cref="T:System.ArgumentNullException">The address of <paramref name="location1" /> is a null pointer.</exception>
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Exchange">
@@ -1148,7 +1148,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <remarks>To be added.</remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Exchange&lt;T&gt;">
@@ -1298,7 +1298,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location" /> is a null pointer.</exception>
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Increment">
@@ -1358,7 +1358,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <altmember cref="Overload:System.Threading.Interlocked.Add" />
         <altmember cref="M:System.Threading.Interlocked.Read(System.Int64@)" />
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="MemoryBarrier">
@@ -1485,7 +1485,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <altmember cref="Overload:System.Threading.Interlocked.Decrement" />
         <altmember cref="Overload:System.Threading.Interlocked.Add" />
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
   </Members>

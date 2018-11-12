@@ -13,7 +13,7 @@ The **Microsoft.Extensions.Configuration.AzureKeyVault** package allows an ASP.N
 
 1. Register your application as an Azure AD application. (Access to key vaults is managed by Azure AD.) This can be done through the Azure management portal.\
 
-   Alternatively, if you want your application to authenticate using a certificate instead of a password or client secret, you can use the [New-AzureRmADApplication](https://docs.microsoft.com/powershell/module/azurerm.resources/new-azurermadapplication) PowerShell cmdlet. The certificate that you register with Azure Key Vault needs only your public key. (Your application will use the private key.)
+   Alternatively, if you want your application to authenticate using a certificate instead of a password or client secret, you can use the [New-AzureRmADApplication](/powershell/module/azurerm.resources/new-azurermadapplication) PowerShell cmdlet. The certificate that you register with Azure Key Vault needs only your public key. (Your application will use the private key.)
 
 2. Give the registered application access to the key vault by creating a new service principal. You can do this using the following PowerShell commands:
 
@@ -31,16 +31,16 @@ The **Microsoft.Extensions.Configuration.AzureKeyVault** package allows an ASP.N
 ## Additional resources
 
 - **Using Azure Key Vault to protect application secrets** \
-  [*https://docs.microsoft.com/azure/guidance/guidance-multitenant-identity-keyvault*](https://docs.microsoft.com/azure/guidance/guidance-multitenant-identity-keyvault)
+  [*https://docs.microsoft.com/azure/guidance/guidance-multitenant-identity-keyvault*](/azure/guidance/guidance-multitenant-identity-keyvault)
 
 - **Safe storage of app secrets during development** \
-  [*https://docs.microsoft.com/aspnet/core/security/app-secrets*](https://docs.microsoft.com/aspnet/core/security/app-secrets)
+  [*https://docs.microsoft.com/aspnet/core/security/app-secrets*](/aspnet/core/security/app-secrets)
 
 - **Configuring data protection** \
-  [*https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/overview*](https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/overview)
+  [*https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/overview*](/aspnet/core/security/data-protection/configuration/overview)
 
 - **Key management and lifetime** \
-  [*https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings\#data-protection-default-settings*](https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings#data-protection-default-settings)
+  [*https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings\#data-protection-default-settings*](/aspnet/core/security/data-protection/configuration/default-settings#data-protection-default-settings)
 
 - **Microsoft.Extensions.Configuration.KeyPerFile** GitHub repo. \
   [*https://github.com/aspnet/Configuration/tree/master/src/Config.KeyPerFile*](https://github.com/aspnet/Configuration/tree/master/src/Config.KeyPerFile)

@@ -13,7 +13,7 @@ You must separate the secrets for accessing development and staging resources fr
 
 ## Store secrets in environment variables
 
-One way to keep secrets out of source code is for developers to set string-based secrets as [environment variables](https://docs.microsoft.com/aspnet/core/security/app-secrets#environment-variables) on their development machines. When you use environment variables to store secrets with hierarchical names, such as the ones nested in configuration sections, you must name the variables to include the complete hierarchy of its sections, delimited with colons (:).
+One way to keep secrets out of source code is for developers to set string-based secrets as [environment variables](/aspnet/core/security/app-secrets#environment-variables) on their development machines. When you use environment variables to store secrets with hierarchical names, such as the ones nested in configuration sections, you must name the variables to include the complete hierarchy of its sections, delimited with colons (:).
 
 For example, setting an environment variable `Logging:LogLevel:Default` to `Debug` value would be equivalent to a configuration value from the following JSON file:
 
@@ -33,7 +33,7 @@ Note that environment variables are commonly stored as plain text, so if the mac
 
 ## Store secrets with the ASP.NET Core Secret Manager
 
-The ASP.NET Core [Secret Manager](https://docs.microsoft.com/aspnet/core/security/app-secrets#secret-manager) tool provides another method of keeping secrets out of source code. To use the Secret Manager tool, install the package **Microsoft.Extensions.Configuration.SecretManager** in your project file. Once that dependency is present and has been restored, the `dotnet user-secrets` command can be used to set the value of secrets from the command line. These secrets will be stored in a JSON file in the user’s profile directory (details vary by OS), away from source code.
+The ASP.NET Core [Secret Manager](/aspnet/core/security/app-secrets#secret-manager) tool provides another method of keeping secrets out of source code. To use the Secret Manager tool, install the package **Microsoft.Extensions.Configuration.SecretManager** in your project file. Once that dependency is present and has been restored, the `dotnet user-secrets` command can be used to set the value of secrets from the command line. These secrets will be stored in a JSON file in the user’s profile directory (details vary by OS), away from source code.
 
 Secrets set by the Secret Manager tool are organized by the `UserSecretsId` property of the project that's using the secrets. Therefore, you must be sure to set the UserSecretsId property in your project file, as shown in the snippet below. The default value is a GUID assigned by Visual Studio, but the actual string is not important as long as it's unique in your computer.
 

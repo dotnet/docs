@@ -63,10 +63,10 @@ Popular external authentication providers and their associated NuGet packages ar
 
 | **Provider**  | **Package**                                          |
 | ------------- | ---------------------------------------------------- |
-| **Microsoft** | Microsoft.AspNetCore.Authentication.MicrosoftAccount |
-| **Google**    | Microsoft.AspNetCore.Authentication.Google           |
-| **Facebook**  | Microsoft.AspNetCore.Authentication.Facebook         |
-| **Twitter**   | Microsoft.AspNetCore.Authentication.Twitter          |
+| **Microsoft** | **Microsoft.AspNetCore.Authentication.MicrosoftAccount** |
+| **Google**    | **Microsoft.AspNetCore.Authentication.Google**           |
+| **Facebook**  | **Microsoft.AspNetCore.Authentication.Facebook**         |
+| **Twitter**   | **Microsoft.AspNetCore.Authentication.Twitter**          |
 
 In all cases, the middleware is registered with a call to a registration method similar to `app.Use{ExternalProvider}Authentication` in `Startup.Configure`. These registration methods take an options object that contains an application ID and secret information (a password, for instance), as needed by the provider. External authentication providers require the application to be registered (as explained in [ASP.NET Core documentation](https://docs.microsoft.com/aspnet/core/security/authentication/social/)) so that they can inform the user what application is requesting access to their identity.
 
@@ -131,7 +131,7 @@ For example, in an ASP.NET Core Web API that exposes RESTful endpoints that migh
 
 ### Authenticate with an OpenID Connect or OAuth 2.0 Identity provider
 
-If user information is stored in Azure Active Directory or another identity solution that supports OpenID Connect or OAuth 2.0, you can use the Microsoft.AspNetCore.Authentication.OpenIdConnect package to authenticate using the OpenID Connect workflow. For example, to authenticate to the Identity.Api microservice in eShopOnContainers, an ASP.NET Core web application can use middleware from that package as shown in the following simplified example in `Startup.cs`:
+If user information is stored in Azure Active Directory or another identity solution that supports OpenID Connect or OAuth 2.0, you can use the **Microsoft.AspNetCore.Authentication.OpenIdConnect** package to authenticate using the OpenID Connect workflow. For example, to authenticate to the Identity.Api microservice in eShopOnContainers, an ASP.NET Core web application can use middleware from that package as shown in the following simplified example in `Startup.cs`:
 
 ```csharp
 // Startup.cs

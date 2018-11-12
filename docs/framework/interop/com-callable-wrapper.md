@@ -84,6 +84,8 @@ End Class
 // Implicitly extends System.Object.
 public class Mammal
 {
+    public Mammal() {}
+
     public void Eat() {}
     public void Breathe() {}
     public void Sleep() {}
@@ -134,9 +136,14 @@ End Class
 ```  
   
 ```csharp
+// The CLR does not expose a class interface for this type.
+// COM clients can call the members of this class using the methods from the IExplicit interface.
 [ClassInterface(ClassInterfaceType.None)]
-public class LoanApp : IExplicit {
-    public void M() {}
+public class LoanApp : IExplicit
+{
+    public LoanApp() {}
+
+    Int32 IExplicit.M() { return 0; }
 }
 ```
   
@@ -158,9 +165,14 @@ End Class
 ```  
   
 ```csharp
+// Have the CLR expose a class interface (derived from IDispatch) for this type.
+// COM clients can call the members of this class using the Invoke method from the IDispatch interface.
 [ClassInterface(ClassInterfaceType.AutoDispatch)]
-public class LoanApp : IAnother {
-    public void M() {}
+public class LoanApp
+{
+    public LoanApp() {}
+
+    public Int32 M() { return 0; }
 }
 ```
   

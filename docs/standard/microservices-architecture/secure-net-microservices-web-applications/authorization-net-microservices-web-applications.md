@@ -31,7 +31,7 @@ By default, adding an Authorize attribute without parameters will limit access t
 
 ASP.NET Core Identity has a built-in concept of roles. In addition to users, ASP.NET Core Identity stores information about different roles used by the application and keeps track of which users are assigned to which roles. These assignments can be changed programmatically with the `RoleManager` type that updates roles in persisted storage, and the `UserManager` type that can grant or revoke roles from users.
 
-If you are authenticating with JWT bearer tokens, the ASP.NET Core JWT bearer authentication middleware will populate a user’s roles based on role claims found in the token. To limit access to an MVC action or controller to users in specific roles, you can include a Roles parameter in the Authorize annotation (attribute), as shown in the following code fragment:
+If you're authenticating with JWT bearer tokens, the ASP.NET Core JWT bearer authentication middleware will populate a user’s roles based on role claims found in the token. To limit access to an MVC action or controller to users in specific roles, you can include a Roles parameter in the Authorize annotation (attribute), as shown in the following code fragment:
 
 ```csharp
 [Authorize(Roles = "Administrator, PowerUser")]
@@ -91,7 +91,7 @@ As shown in the example, policies can be associated with different types of requ
 
 In the previous example, the first AddPolicy call is just an alternative way of authorizing by role. If `[Authorize(Policy="AdministratorsOnly")]` is applied to an API, only users in the Administrator role will be able to access it.
 
-The second <xref:Microsoft.AspNetCore.Authorization.AuthorizationOptions.AddPolicy> call demonstrates an easy way to require that a particular claim should be present for the user. The <xref:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder.RequireClaim> method also optionally takes expected values for the claim. If values are specified, the requirement is met only if the user has both a claim of the correct type and one of the specified values. If you are using the JWT bearer authentication middleware, all JWT properties will be available as user claims.
+The second <xref:Microsoft.AspNetCore.Authorization.AuthorizationOptions.AddPolicy> call demonstrates an easy way to require that a particular claim should be present for the user. The <xref:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder.RequireClaim> method also optionally takes expected values for the claim. If values are specified, the requirement is met only if the user has both a claim of the correct type and one of the specified values. If you're using the JWT bearer authentication middleware, all JWT properties will be available as user claims.
 
 The most interesting policy shown here is in the third `AddPolicy` method, because it uses a custom authorization requirement. By using custom authorization requirements, you can have a great deal of control over how authorization is performed. For this to work, you must implement these types:
 

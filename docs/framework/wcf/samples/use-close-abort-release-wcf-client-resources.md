@@ -1,10 +1,11 @@
 ---
-title: "Avoiding Problems with the Using Statement"
-ms.date: "03/30/2017"
+title: "Use Close and Abort to release WCF client resources"
+description: "Dispose can fail and throw exceptions when the network fails. That can cause unwanted behavior. Instead, use Close and Abort to release client resources when the network has failed."
+ms.date: "11/12/2018"
 ms.assetid: aff82a8d-933d-4bdc-b0c2-c2f7527204fb
 ---
-# Avoiding Problems with the Using Statement
-This sample demonstrates how you should not use the C# "using" statement to automatically clean up resources when using a typed client. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service. In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
+# Close and Abort release resources safely when network connections have dropped
+This sample demonstrates using the `Close` and `Abort` methods to clean up resources when using a typed client. The `using` statement causes exceptions when the network connection is not robust. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service. In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
   
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  

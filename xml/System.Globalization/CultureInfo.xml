@@ -1038,9 +1038,8 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the <xref:System.Globalization.CultureTypes> enumeration and the <xref:System.Globalization.CultureInfo.CultureTypes%2A> property.  
+ The following example demonstrates the <xref:System.Globalization.CultureTypes> enumeration and the <xref:System.Globalization.CultureInfo.CultureTypes%2A> property.  
   
- [!code-cpp[system.globalization.cultureTypes#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.globalization.cultureTypes/cpp/ct.cpp#1)]
  [!code-csharp[system.globalization.cultureTypes#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.cultureTypes/cs/ct.cs#1)]
  [!code-vb[system.globalization.cultureTypes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureTypes/vb/ct.vb#1)]  
   

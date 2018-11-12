@@ -32,7 +32,8 @@ End Sub 'acceptCallback
 ```  
   
 ```csharp  
-void acceptCallback( IAsyncResult ar) {  
+void acceptCallback(IAsyncResult ar)
+{  
     // Add the callback code here.  
 }  
 ```  
@@ -46,9 +47,7 @@ listener.BeginAccept( _
 ```  
   
 ```csharp  
-listener.BeginAccept(  
-    new AsyncCallback(SocketListener.acceptCallback),   
-    listener);  
+listener.BeginAccept(new AsyncCallback(SocketListener.acceptCallback), listener);  
 ```  
   
  Asynchronous sockets use threads from the system thread pool to process incoming connections. One thread is responsible for accepting connections, another thread is used to handle each incoming connection, and another thread is responsible for receiving data from the connection. These could be the same thread, depending on which thread is assigned by the thread pool. In the following example, the <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> class suspends execution of the main thread and signals when execution can continue.  
@@ -87,30 +86,32 @@ End Sub 'StartListening
 ```  
   
 ```csharp  
-public void StartListening() {  
+public void StartListening()
+{  
     IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());  
-    IPEndPoint localEP = new IPEndPoint(ipHostInfo.AddressList[0],11000);  
+    IPEndPoint localEP = new IPEndPoint(ipHostInfo.AddressList[0], 11000);  
   
-    Console.WriteLine("Local address and port : {0}",localEP.ToString());  
+    Console.WriteLine("Local address and port : {0}", localEP.ToString());  
   
-    Socket listener = new Socket( localEP.Address.AddressFamily,  
-        SocketType.Stream, ProtocolType.Tcp );  
+    Socket listener = new Socket(localEP.Address.AddressFamily, SocketType.Stream, ProtocolType.Tcp);  
   
-    try {  
+    try 
+    {  
         listener.Bind(localEP);  
         listener.Listen(10);  
   
-        while (true) {  
+        while (true)
+        {  
             allDone.Reset();  
   
             Console.WriteLine("Waiting for a connection...");  
-            listener.BeginAccept(  
-                new AsyncCallback(SocketListener.acceptCallback),   
-                listener );  
+            listener.BeginAccept(new AsyncCallback(SocketListener.acceptCallback), listener);  
   
             allDone.WaitOne();  
         }  
-    } catch (Exception e) {  
+    }
+    catch (Exception e)
+    {  
         Console.WriteLine(e.ToString());  
     }  
   
@@ -132,7 +133,8 @@ End Sub 'acceptCallback
 ```  
   
 ```csharp  
-public void acceptCallback(IAsyncResult ar) {  
+public void acceptCallback(IAsyncResult ar) 
+{  
     allDone.Set();  
   
     Socket listener = (Socket) ar.AsyncState;  
@@ -154,7 +156,8 @@ End Class 'StateObject
 ```  
   
 ```csharp  
-public class StateObject {  
+public class StateObject 
+{  
     public Socket workSocket = null;  
     public const int BufferSize = 1024;  
     public byte[] buffer = new byte[BufferSize];  
@@ -184,7 +187,8 @@ End Sub 'acceptCallback
 ```  
   
 ```csharp  
-public static void acceptCallback(IAsyncResult ar) {  
+public static void acceptCallback(IAsyncResult ar)
+{  
     // Get the socket that handles the client request.  
     Socket listener = (Socket) ar.AsyncState;  
     Socket handler = listener.EndAccept(ar);  
@@ -195,7 +199,7 @@ public static void acceptCallback(IAsyncResult ar) {
     // Create the state object.  
     StateObject state = new StateObject();  
     state.workSocket = handler;  
-    handler.BeginReceive( state.buffer, 0, StateObject.BufferSize, 0,  
+    handler.BeginReceive(state.buffer, 0, StateObject.BufferSize, 0,  
         new AsyncCallback(AsynchronousSocketListener.readCallback), state);  
 }  
 ```  
@@ -230,7 +234,8 @@ End Sub 'readCallback
 ```  
   
 ```csharp  
-public static void readCallback(IAsyncResult ar) {  
+public static void readCallback(IAsyncResult ar)
+{  
     StateObject state = (StateObject) ar.AsyncState;  
     Socket handler = state.WorkSocket;  
   
@@ -238,12 +243,16 @@ public static void readCallback(IAsyncResult ar) {
     int read = handler.EndReceive(ar);  
   
     // Data was read from the client socket.  
-    if (read > 0) {  
+    if (read > 0)
+    {  
         state.sb.Append(Encoding.ASCII.GetString(state.buffer,0,read));  
-        handler.BeginReceive(state.buffer,0,StateObject.BufferSize, 0,  
+        handler.BeginReceive(state.buffer, 0, StateObject.BufferSize, 0,  
             new AsyncCallback(readCallback), state);  
-    } else {  
-        if (state.sb.Length > 1) {  
+    } 
+    else 
+    {  
+        if (state.sb.Length > 1) 
+        {  
             // All the data has been read from the client;  
             // display it on the console.  
             string content = state.sb.ToString();  

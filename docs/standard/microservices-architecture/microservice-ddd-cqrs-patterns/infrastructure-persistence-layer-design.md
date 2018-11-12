@@ -1,17 +1,17 @@
 ---
 title: Designing the infrastructure persistence layer
-description: Learn how to design the infrastructure persistence layer.
+description: .NET Microservices Architecture for Containerized .NET Applications | Explore the repository pattern in the design of the infrastructure persistence layer.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 06/28/2017
+ms.date: 10/08/2018
 ---
-# Designing the infrastructure persistence layer
+# Design the infrastructure persistence layer
 
-Data persistence components provide access to the data hosted within the boundaries of a microservice (that is, a microservice’s database). They contain the actual implementation of components such as repositories and [Unit of Work](https://martinfowler.com/eaaCatalog/unitOfWork.html) classes, like custom Entity Framework (EF) <xref:Microsoft.EntityFrameworkCore.DbContext> objects.
+Data persistence components provide access to the data hosted within the boundaries of a microservice (that is, a microservice’s database). They contain the actual implementation of components such as repositories and [Unit of Work](https://martinfowler.com/eaaCatalog/unitOfWork.html) classes, like custom Entity Framework (EF) <xref:Microsoft.EntityFrameworkCore.DbContext> objects. EF DbContext implements both, the Repository and the Unit of Work patterns.
 
 ## The Repository pattern
 
-Repositories are classes or components that encapsulate the logic required to access data sources. They centralize common data access functionality, providing better maintainability and decoupling the infrastructure or technology used to access databases from the domain model layer. If you use an object-relational mapping (ORM) like Entity Framework, the code that must be implemented is simplified, thanks to LINQ and strong typing. This lets you focus on the data persistence logic rather than on data access plumbing.
+Repositories are classes or components that encapsulate the logic required to access data sources. They centralize common data access functionality, providing better maintainability and decoupling the infrastructure or technology used to access databases from the domain model layer. If you use an Object-Relational Mapper (ORM) like Entity Framework, the code that must be implemented is simplified, thanks to LINQ and strong typing. This lets you focus on the data persistence logic rather than on data access plumbing.
 
 The Repository pattern is a well-documented way of working with a data source. In the book [Patterns of Enterprise Application Architecture](https://www.amazon.com/Patterns-Enterprise-Application-Architecture-Martin/dp/0321127420/), Martin Fowler describes a repository as follows:
 
@@ -19,21 +19,21 @@ The Repository pattern is a well-documented way of working with a data source. I
 
 ### Define one repository per aggregate
 
-For each aggregate or aggregate root, you should create one repository class. In a microservice based on domain-driven design (DDD) patterns, the only channel you should use to update the database should be the repositories. This is because they have a one-to-one relationship with the aggregate root, which controls the aggregate’s invariants and transactional consistency. It's okay to query the database through other channels (as you can do following a CQRS approach), because queries don't change the state of the database. However, the transactional area (that is, the updates) must always be controlled by the repositories and the aggregate roots.
+For each aggregate or aggregate root, you should create one repository class. In a microservice based on Domain-Driven Design (DDD) patterns, the only channel you should use to update the database should be the repositories. This is because they have a one-to-one relationship with the aggregate root, which controls the aggregate’s invariants and transactional consistency. It's okay to query the database through other channels (as you can do following a CQRS approach), because queries don't change the state of the database. However, the transactional area (that is, the updates) must always be controlled by the repositories and the aggregate roots.
 
 Basically, a repository allows you to populate data in memory that comes from the database in the form of the domain entities. Once the entities are in memory, they can be changed and then persisted back to the database through transactions.
 
 As noted earlier, if you're using the CQS/CQRS architectural pattern, the initial queries are performed by side queries out of the domain model, performed by simple SQL statements using Dapper. This approach is much more flexible than repositories because you can query and join any tables you need, and these queries aren't restricted by rules from the aggregates. That data goes to the presentation layer or client app.
 
-If the user makes changes, the data to be updated comes from the client app or presentation layer to the application layer (such as a Web API service). When you receive a command with data in a command handler, you use repositories to get the data you want to update from the database. You update it in memory with the information passed with the commands, and you then add or update the data (domain entities) in the database through a transaction.
+If the user makes changes, the data to be updated comes from the client app or presentation layer to the application layer (such as a Web API service). When you receive a command in a command handler, you use repositories to get the data you want to update from the database. You update it in memory with the data passed with the commands, and you then add or update the data (domain entities) in the database through a transaction.
 
-Remember that only one repository should be defined for each aggregate root, as shown in Figure 9-17. To achieve the goal of the aggregate root to maintain transactional consistency between all the objects within the aggregate, you should never create a repository for each table in the database.
+It's important to emphasize again that you should only define one repository for each aggregate root, as shown in Figure 7-17. To achieve the goal of the aggregate root to maintain transactional consistency between all the objects within the aggregate, you should never create a repository for each table in the database.
 
-![](./media/image18.png)
+![Relationships between Domain and Infrastructure layers: Buyer Aggregate depends on the IBuyerRepository and Order Aggregate depends on the IOrderRepository interfaces, these interfaces are implemented in the Infrastructure layer by the corresponding repositories that depend on UnitOfWork, also implemented there, that accesses the tables in the Data tier.](./media/image18.png)
 
-**Figure 9-17**. The relationship between repositories, aggregates, and database tables
+**Figure 7-17**. The relationship between repositories, aggregates, and database tables
 
-### Enforcing one aggregate root per repository
+### Enforce one aggregate root per repository
 
 It can be valuable to implement your repository design in such a way that it enforces the rule that only aggregate roots should have repositories. You can create a generic or base repository type that constrains the type of entities it works with to ensure they have the `IAggregateRoot` marker interface.
 
@@ -72,17 +72,19 @@ public interface IRepository<T> where T : IAggregateRoot
 
 The Repository pattern allows you to easily test your application with unit tests. Remember that unit tests only test your code, not infrastructure, so the repository abstractions make it easier to achieve that goal.
 
-As noted in an earlier section, it's recommended that you define and place the repository interfaces in the domain model layer so the application layer, such as your Web API microservice, doesn't depend directly on the infrastructure layer where you've implemented the actual repository classes. By doing this and using Dependency Injection in the controllers of your Web API, you can implement mock repositories that return fake data instead of data from the database. This decoupled approach allows you to create and run unit tests that can test just the logic of your application without requiring connectivity to the database.
+As noted in an earlier section, it's recommended that you define and place the repository interfaces in the domain model layer so the application layer, such as your Web API microservice, doesn't depend directly on the infrastructure layer where you've implemented the actual repository classes. By doing this and using Dependency Injection in the controllers of your Web API, you can implement mock repositories that return fake data instead of data from the database. This decoupled approach allows you to create and run unit tests that focus the logic of your application without requiring connectivity to the database.
 
 Connections to databases can fail and, more importantly, running hundreds of tests against a database is bad for two reasons. First, it can take a long time because of the large number of tests. Second, the database records might change and impact the results of your tests, so that they might not be consistent. Testing against the database isn't a unit test but an integration test. You should have many unit tests running fast, but fewer integration tests against the databases.
 
 In terms of separation of concerns for unit tests, your logic operates on domain entities in memory. It assumes the repository class has delivered those. Once your logic modifies the domain entities, it assumes the repository class will store them correctly. The important point here is to create unit tests against your domain model and its domain logic. Aggregate roots are the main consistency boundaries in DDD.
 
+The repositories implemented in eShopOnContainers rely on EF Core’s DbContext implementation of the Repository and Unit of Work patterns using its change tracker, so they don’t duplicate this functionality.
+
 ### The difference between the Repository pattern and the legacy Data Access class (DAL class) pattern
 
-A data access object directly performs data access and persistence operations against storage. A repository marks the data with the operations you want to perform in the memory of a unit of work object (as in EF when using the <xref:Microsoft.EntityFrameworkCore.DbContext> class), but these updates aren't performed immediately.
+A data access object directly performs data access and persistence operations against storage. A repository marks the data with the operations you want to perform in the memory of a unit of work object (as in EF when using the <xref:Microsoft.EntityFrameworkCore.DbContext> class), but these updates aren't performed immediately to the database.
 
-A unit of work is referred to as a single transaction that involves multiple insert, update, or delete operations. In simple terms, it means that for a specific user action, such as a registration on a website, all the insert, update, and delete transactions are handled in a single transaction. This is more efficient than handling multiple database transactions in a chattier way.
+A unit of work is referred to as a single transaction that involves multiple insert, update, or delete operations. In simple terms, it means that for a specific user action, such as a registration on a website, all the insert, update, and delete operations are handled in a single transaction. This is more efficient than handling multiple database transactions in a chattier way.
 
 These multiple persistence operations are performed later in a single action when your code from the application layer commands it. The decision about applying the in-memory changes to the actual database storage is typically based on the [Unit of Work pattern](https://martinfowler.com/eaaCatalog/unitOfWork.html). In EF, the Unit of Work pattern is implemented as the <xref:Microsoft.EntityFrameworkCore.DbContext>.
 
@@ -96,72 +98,31 @@ For instance, Jimmy Bogard, when providing direct feedback for this guide, said 
 
 > This’ll probably be my biggest feedback. I’m really not a fan of repositories, mainly because they hide the important details of the underlying persistence mechanism. It’s why I go for MediatR for commands, too. I can use the full power of the persistence layer, and push all that domain behavior into my aggregate roots. I don’t usually want to mock my repositories – I still need to have that integration test with the real thing. Going CQRS meant that we didn’t really have a need for repositories any more.
 
-Repositories are useful, but they aren't critical for your DDD, in the way that the Aggregate pattern and rich domain model are. Therefore, use the Repository pattern or not, as you see fit.
-
-## The Specification pattern
-
-The specification pattern (its full name would be Query-specification pattern) is a DDD pattern designed as the place where you can put the definition of a query with optional sorting and paging logic.
-
-The specification pattern defines a query in an object. For example, to encapsulate a paged query that searches for some products, you can create a `PagedProduct` specification that takes the necessary input parameters, such as `pageNumber`, `pageSize`, `filter`, etc. Then, within any Repository method (usually a List() overload), it'd accept an `ISpecification` and run the expected query based on that specification.
-
-There are several benefits to this approach:
-
-- The specification has a name (as opposed to just a bunch of LINQ expressions) that you can discuss about.
-
-- The specification can be unit tested in isolation to ensure it's right. It can also easily be reused if you need similar behavior. For example, on an MVC View action and a Web API action, as well as in various services.
-
-- A specification can also be used to describe the shape of the data to be returned, so that queries can return just the data they required. This eliminates the need for lazy loading in web applications, which is usually not recommended, and helps keep repository implementations from becoming cluttered with these details.
-
-An example of a generic specification interface is the following code from [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb).
-
-```csharp
-// https://github.com/dotnet-architecture/eShopOnWeb
-public interface ISpecification<T>
-{
-    Expression<Func<T, bool>> Criteria { get; }
-    List<Expression<Func<T, object>>> Includes { get; }
-    List<string> IncludeStrings { get; }
-}
-```
-
-The upcoming sections explain how to implement the specification pattern with EF Core 2.x and how to use it from any Repository class.
-
-> [!IMPORTANT]
-> The specification pattern is an old pattern that can be implemented in many different ways, as in the following additional resources. As a pattern/idea, older approaches are good to know, but beware of older implementations that are not taking advantage of modern language capabilities like Linq and expressions.
+Repositories might be useful, but they are not critical for your DDD design, in the way that the Aggregate pattern and rich domain model are. Therefore, use the Repository pattern or not, as you see fit. Anyway, you’ll be using the repository pattern whenever you use EF Core although, in this case, the repository covers the whole microservice or bounded context.
 
 ## Additional resources
 
-### The Repository pattern
+### Repository pattern
 
-- **The Repository pattern**
-  [https://deviq.com/repository-pattern/](https://deviq.com/repository-pattern/)
+- **The Repository pattern** \
+  [*https://deviq.com/repository-pattern/*](https://deviq.com/repository-pattern/)
 
-- **Edward Hieatt and Rob Mee. Repository pattern.**
-  [_https://martinfowler.com/eaaCatalog/repository.html_](https://martinfowler.com/eaaCatalog/repository.html)
+- **Edward Hieatt and Rob Mee. Repository pattern.** \
+  [*https://martinfowler.com/eaaCatalog/repository.html*](https://martinfowler.com/eaaCatalog/repository.html)
 
-- **The Repository pattern**
-  [_https://docs.microsoft.com/previous-versions/msp-n-p/ff649690(v=pandp.10)_](https://docs.microsoft.com/previous-versions/msp-n-p/ff649690(v=pandp.10))
+- **The Repository pattern** \
+  [*https://docs.microsoft.com/previous-versions/msp-n-p/ff649690(v=pandp.10)*](https://docs.microsoft.com/previous-versions/msp-n-p/ff649690(v=pandp.10))
 
-- **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of the Repository pattern)
-  [_https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/_](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
+- **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of the Repository pattern) \
+  [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 
 ### Unit of Work pattern
 
-- **Martin Fowler. Unit of Work pattern.**
-  [_https://martinfowler.com/eaaCatalog/unitOfWork.html_](https://martinfowler.com/eaaCatalog/unitOfWork.html)
+- **Martin Fowler. Unit of Work pattern.** \
+  [*https://martinfowler.com/eaaCatalog/unitOfWork.html*](https://martinfowler.com/eaaCatalog/unitOfWork.html)
 
-- **Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application**
-  [_https://docs.microsoft.com/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application_](https://docs.microsoft.com/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
-
-### The Specification pattern
-
-- **The Specification pattern.**
-  [_https://deviq.com/specification-pattern/_](https://deviq.com/specification-pattern/)
-
-- **Evans, Eric (2004). Domain Driven Design. Addison-Wesley. p. 224.**
-
-- **Specifications. Martin Fowler**
-  [_https://www.martinfowler.com/apsupp/spec.pdf/_](https://www.martinfowler.com/apsupp/spec.pdf)
+- **Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application** \
+  [*https://docs.microsoft.com/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application*](https://docs.microsoft.com/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
 
 >[!div class="step-by-step"]
 [Previous](domain-events-design-implementation.md)

@@ -2251,7 +2251,7 @@ Dim fullname2 As String = Request("fullname")
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the raw user agent string of the client browser.</summary>
+        <summary>Gets the raw user agent string of the client browser that has been provided. Please note it may be null.</summary>
         <value>The raw user agent string of the client browser.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

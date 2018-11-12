@@ -79,7 +79,7 @@
  [!code-csharp[System.Text.UTF8Encoding Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding Example/CS/snippet.cs#1)]
  [!code-vb[System.Text.UTF8Encoding Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding Example/VB/snippet.vb#1)]  
   
- The following example uses the same string as the previous example, except that it writes the encoded bytes to a file and prefixes the byte stream with a byte order mark (BOM). It then reads the file in two different ways: as a text file by using a <xref:System.IO.StreamReader> object; and as a binary file. As you would expect, in neither case is the BOM included in the newly read string.  
+ The following example uses the same string as the previous example, except that it writes the encoded bytes to a file and prefixes the byte stream with a byte order mark (BOM). It then reads the file in two different ways: as a text file by using a <xref:System.IO.StreamReader> object; and as a binary file. As you would expect, neither newly-read string includes the BOM.  
   
  [!code-csharp[System.Text.UTF8Encoding Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding Example/CS/bom1.cs#2)]
  [!code-vb[System.Text.UTF8Encoding Example#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding Example/VB/bom1.vb#2)]  

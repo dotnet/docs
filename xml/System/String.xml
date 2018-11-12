@@ -10318,16 +10318,17 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
 ## Remarks  
  <xref:System.String.Split%2A> is used to break a delimited string into substrings. You can use either a character array to specify zero, one, or multiple delimiting characters (the <xref:System.String.Split%28System.Char%5B%5D%29> method), or you can use a character array to specify zero, one, or multiple delimiting strings. Overloads of the <xref:System.String.Split%2A> method allow you to limit the number of substrings returned by the method (the <xref:System.String.Split%28System.Char%5B%5D%2CSystem.Int32%29> method), to determine whether empty strings are included in the returned substrings (the <xref:System.String.Split%28System.Char%5B%5D%2CSystem.StringSplitOptions%29> and <xref:System.String.Split%28System.String%5B%5D%2CSystem.StringSplitOptions%29> methods, or to do both (the <xref:System.String.Split%28System.Char%5B%5D%2CSystem.Int32%2CSystem.StringSplitOptions%29> and <xref:System.String.Split%28System.String%5B%5D%2CSystem.Int32%2CSystem.StringSplitOptions%29> methods).  
-  
-> [!IMPORTANT]
->  For more detailed information on the <xref:System.String.Split%2A> method, as well as for examples that call each overload, see the documentation for the individual overloads of <xref:System.String.Split%2A>.  
-  
+
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
+
+### Alternatives to String.Split
+
  The <xref:System.String.Split%2A> method is not always the best way to break a delimited string into substrings. If you don't want to extract all of the substrings of a delimited string, or if you want to parse a string based on a pattern instead of a set of delimiter characters, consider the following alternatives.  
   
-## Regular expressions  
+### Regular expressions  
  If your strings conform to a fixed pattern, you can use a regular expression to extract and handle their elements. For example, if strings take the form "*number* *operand* *number*" you can use a [regular expression](~/docs/standard/base-types/regular-expressions.md) to extract and handle the string's elements. Here's an example:  
   
- [!code-csharp[System.String.Split#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt1.cs#8)]
+ [!code-csharp-interactive[System.String.Split#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt1.cs#8)]
  [!code-vb[System.String.Split#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt1.vb#8)]  
   
  The regular expression pattern `(\d+)\s+([-+*/])\s+(\d+)` is defined like this:  
@@ -10348,16 +10349,14 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  For example, the <xref:System.String.Split%2A> method cannot be used to split the following string, because the number of `\n` (in C#) or `vbCrLf` (in Visual Basic) characters is variable, and they don't always serve as delimiters.  
   
-```  
-  
+```text
 [This is captured\ntext.]\n\n[\n[This is more captured text.]\n]  
 \n[Some more captured text:\n   Option1\n   Option2][Terse text.]  
-  
 ```  
   
  A regular expression can split this string easily, as the following example shows.  
   
- [!code-csharp[System.String.Split#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt2.cs#9)]
+ [!code-csharp-interactive[System.String.Split#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt2.cs#9)]
  [!code-vb[System.String.Split#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt2.vb#9)]  
   
  The regular expression pattern `\[([^\[\]]+)\]` is defined like this:  
@@ -10370,7 +10369,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  The <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=nameWithType> method is almost identical to <xref:System.String.Split%2A?displayProperty=nameWithType>, except that it splits a string based on a regular expression pattern instead of a fixed character set. For example, the following example uses the <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=nameWithType> method to split a string that contains substrings delimited by various combinations of hyphens and other characters.  
   
- [!code-csharp[System.String.Split#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt3.cs#10)]
+ [!code-csharp-interactive[System.String.Split#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt3.cs#10)]
  [!code-vb[System.String.Split#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt3.vb#10)]  
   
  The regular expression pattern `\s-\s?[+*]?\s?-\s` is defined like this:  
@@ -10383,7 +10382,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 |`\s?`|Match zero or one white-space character.|  
 |`-\s`|Match a hyphen followed by a white-space character.|  
   
-## Search methods and the Substring method  
+### Search methods and the Substring method  
  If you aren't interested in all of the substrings in a string, you might prefer to work with one of the string comparison methods that returns the index at which the match begins. You can then call the <xref:System.String.Substring%2A> method to extract the substring that you want. The string comparison methods include:  
   
 -   <xref:System.String.IndexOf%2A>, which returns the zero-based index of the first occurrence of a character or string in a string instance.  
@@ -10396,7 +10395,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  The following example uses the <xref:System.String.IndexOf%2A> method to find the periods in a string. It then uses the <xref:System.String.Substring%2A> method to return full sentences.  
   
- [!code-csharp[System.String.Split#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt4.cs#11)]
+ [!code-csharp-interactive[System.String.Split#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt4.cs#11)]
  [!code-vb[System.String.Split#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt4.vb#11)]  
   
  ]]></format>
@@ -10451,9 +10450,9 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a string is delimited by a known set of characters, you can use the <xref:System.String.Split%28System.Char%5B%5D%29> method to separate it into substrings. For other ways to extract substrings from a string, see the [Alternatives to String.Split](#Alternatives) section.  
+ When a string is delimited by a known set of characters, you can use the <xref:System.String.Split%28System.Char%5B%5D%29> method to separate it into substrings.   
   
-## Return value details  
+### Return value details  
  Delimiter characters are not included in the elements of the returned array. For example, if the separator array includes the character "-" and the value of the current string instance is "aa-bb-cc", the method returns an array that contains three elements: "aa", "bb", and "cc".  
   
  If this instance does not contain any of the characters in `separator`, the returned array consists of a single element that contains this instance.  
@@ -10468,120 +10467,39 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 |"Darb\nSmarba" (C#)<br /><br /> "Darb" & vbLf & "Smarba" (Visual Basic)|new Char[] {} (C#)<br /><br /> Char() = {} (Visual Basic)|{"Darb", "Smarba"}|  
 |"Darb\nSmarba" (C#)<br /><br /> "Darb" & vbLf & "Smarba" (Visual Basic)|null (C#)<br /><br /> Nothing (Visual Basic)|{"Darb", "Smarba"}|  
   
-## The separator array  
+### The separator array  
  Each element of separator defines a separate delimiter that consists of a single character. If the `separator` argument is `null` or contains no characters, the method treats white-space characters as the delimiters. White-space characters are defined by the Unicode standard; they return `true` if they are passed to the <xref:System.Char.IsWhiteSpace%2A?displayProperty=nameWithType> method.  
   
-## String.Split(Char[]) and compiler overload resolution  
+### String.Split(Char[]) and compiler overload resolution  
  Although the single parameter for this overload of <xref:System.String.Split%2A?displayProperty=nameWithType> is a character array, you can call it with a single character, as the following example shows.  
   
- [!code-csharp[System.String.Split#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/Split_CompilerResolution1.cs#12)]
+ [!code-csharp-interactive[System.String.Split#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/Split_CompilerResolution1.cs#12)]
  [!code-vb[System.String.Split#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/Split_CompilerResolution1.vb#12)]  
   
  Because the `separator` parameter is decorated  with the <xref:System.ParamArrayAttribute> attribute, compilers will interpret a single character as a single-element character array. This is not the case for other <xref:System.String.Split%2A?displayProperty=nameWithType> overloads that include a `separator` parameter; you must explicitly pass these overloads a character array as the `separator` argument.  
   
-## Comparison details  
+### Comparison details  
  The <xref:System.String.Split%28System.Char%5B%5D%29> method extracts the substrings in this string that are delimited by one or more of the characters in the `separator` array, and returns those substrings as elements of an array.  
   
  The <xref:System.String.Split%28System.Char%5B%5D%29> method looks for delimiters by performing comparisons using case-sensitive ordinal sort rules. For more information about word, string, and ordinal sorts, see the <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> enumeration.  
   
-<a name="Alternatives"></a>   
-## Alternatives to String.Split  
- The <xref:System.String.Split%2A> method is not always the best way to break a delimited string into substrings. If you don't want to extract all of the substrings of a delimited string, or if you want to parse a string based on a pattern instead of a set of delimiter characters, consider the following alternatives.  
-  
-### Regular expressions  
- If your strings conform to a fixed pattern, you can use a regular expression to extract and handle their elements. For example, if strings take the form "*number* *operand* *number*" you can use a [regular expression](~/docs/standard/base-types/regular-expressions.md) to extract and handle the string's elements. Here's an example:  
-  
- [!code-csharp[System.String.Split#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt1.cs#8)]
- [!code-vb[System.String.Split#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt1.vb#8)]  
-  
- The regular expression pattern `(\d+)\s+([-+*/])\s+(\d+)` is defined like this:  
-  
-|Pattern|Description|  
-|-------------|-----------------|  
-|`(\d+)`|Match one or more decimal digits. This is the first capturing group.|  
-|`\s+`|Match one or more white-space characters.|  
-|`([-+*/])`|Match an arithmetic operator sign (+, -, *, or /). This is the second capturing group.|  
-|`\s+`|Match one or more white-space characters.|  
-|`(\d+)`|Match one or more decimal digits. This is the third capturing group.|  
-  
- You can also use a regular expression to extract substrings from a string based on a pattern rather than a fixed set of characters. This is a common scenario when either of these conditions occurs:  
-  
--   One or more of the delimiter characters does not always serve as a delimiter in the <xref:System.String> instance.  
-  
--   The sequence and number of delimiter characters is variable or unknown.  
-  
- For example, the <xref:System.String.Split%2A> method cannot be used to split the following string, because the number of `\n` (in C#) or `vbCrLf` (in Visual Basic) characters is variable, and they don't always serve as delimiters.  
-  
-```  
-  
-[This is captured\ntext.]\n\n[\n[This is more captured text.]\n]  
-\n[Some more captured text:\n   Option1\n   Option2][Terse text.]  
-  
-```  
-  
- A regular expression can split this string easily, as the following example shows.  
-  
- [!code-csharp[System.String.Split#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt2.cs#9)]
- [!code-vb[System.String.Split#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt2.vb#9)]  
-  
- The regular expression pattern `\[([^\[\]]+)\]` is defined like this:  
-  
-|Pattern|Description|  
-|-------------|-----------------|  
-|`\[`|Match an opening bracket.|  
-|`([^\[\]]+)`|Match any character that is not an opening or a closing bracket one or more times. This is the first capturing group.|  
-|`\]`|Match a closing bracket.|  
-  
- The <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=nameWithType> method is almost identical to <xref:System.String.Split%2A?displayProperty=nameWithType>, except that it splits a string based on a regular expression pattern instead of a fixed character set. For example, the following example uses the <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=nameWithType> method to split a string that contains substrings delimited by various combinations of hyphens and other characters.  
-  
- [!code-csharp[System.String.Split#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt3.cs#10)]
- [!code-vb[System.String.Split#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt3.vb#10)]  
-  
- The regular expression pattern `\s-\s?[+*]?\s?-\s` is defined like this:  
-  
-|Pattern|Description|  
-|-------------|-----------------|  
-|`\s-`|Match a white-space character followed by a hyphen.|  
-|`\s?`|Match zero or one white-space character.|  
-|`[+*]?`|Match zero or one occurrence of either the + or * character.|  
-|`\s?`|Match zero or one white-space character.|  
-|`-\s`|Match a hyphen followed by a white-space character.|  
-  
-### Search methods and the Substring method  
- If you aren't interested in all of the substrings in a string, you might prefer to work with one of the string comparison methods that returns the index at which the match begins. You can then call the <xref:System.String.Substring%2A> method to extract the substring that you want. The string comparison methods include:  
-  
--   <xref:System.String.IndexOf%2A>, which returns the zero-based index of the first occurrence of a character or string in a string instance.  
-  
--   <xref:System.String.IndexOfAny%2A>, which returns the zero-based index in the current string instance of the first occurrence of any character in a character array.  
-  
--   <xref:System.String.LastIndexOf%2A>, which returns the zero-based index of the last occurrence of a character or string in a string instance.  
-  
--   <xref:System.String.LastIndexOfAny%2A>, which returns a zero-based index in the current string instance of the last occurrence of any character in a character array.  
-  
- The following example uses the <xref:System.String.IndexOf%2A> method to find the periods in a string. It then uses the <xref:System.String.Substring%2A> method to return full sentences.  
-  
- [!code-csharp[System.String.Split#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt4.cs#11)]
- [!code-vb[System.String.Split#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt4.vb#11)]  
-  
-## Performance Considerations  
+### Performance Considerations  
  The <xref:System.String.Split%2A> methods allocate memory for the returned array object and a <xref:System.String> object for each array element. If your application requires optimal performance or if managing memory allocation is critical in your application, consider using the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method. You also have the option of using the <xref:System.String.Compare%2A> method to locate a substring within a string.  
   
  To split a string at a separator character, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate a separator character in the string. To split a string at a separator string, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate the first character of the separator string. Then use the <xref:System.String.Compare%2A> method to determine whether the characters after that first character are equal to the remaining characters of the separator string.  
   
  In addition, if the same set of characters is used to split strings in multiple <xref:System.String.Split%2A> method calls, consider creating a single array and referencing it in each method call. This significantly reduces the additional overhead of each method call.  
   
-   
-  
 ## Examples  
  The following example demonstrates how to extract individual words from a block of text by treating white space and punctuation marks as delimiters. The character array passed to the `separator` parameter of the <xref:System.String.Split%28System.Char%5B%5D%29?displayProperty=nameWithType> method consists of a space character and a tab character, together with some common punctuation symbols.  
   
- [!code-csharp[System.String.Split#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/split2.cs#2)]
+ [!code-csharp-interactive[System.String.Split#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/split2.cs#2)]
  [!code-vb[System.String.Split#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/split2.vb#2)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
-          <para>In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, if the <see cref="M:System.String.Split(System.Char[])" /> method is passed a <paramref name="separator" /> that is <see langword="null" /> or contains no characters, the method uses a slightly different set of characters to split the string than the <see cref="M:System.String.Trim(System.Char[])" /> method does to trim the string. In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], both methods use an identical set of Unicode white-space characters.</para>
+          <para>In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, if the <see cref="M:System.String.Split(System.Char[])" /> method is passed a <paramref name="separator" /> that is <see langword="null" /> or contains no characters, the method uses a slightly different set of characters to split the string than the <see cref="M:System.String.Trim(System.Char[])" /> method does to trim the string. Starting with the .NET Framework 4, both methods use an identical set of Unicode white-space characters.</para>
         </block>
         <altmember cref="T:System.Char" />
         <altmember cref="M:System.String.Concat(System.Object)" />
@@ -10693,7 +10611,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 |"Darb\nSmarba" (C#)<br /><br /> "Darb" & vbLf & "Smarba" (Visual Basic)|new Char[] null (C#)<br /><br /> Char() = Nothing|2|{"Darb", "Smarba"}|  
 |"Darb\nSmarba" (C#)<br /><br /> "Darb" & vbLf & "Smarba" (Visual Basic)|new Char[] null (C#)<br /><br /> Char() = Nothing|100|{"Darb", "Smarba"}|  
   
-## Performance Considerations  
+### Performance Considerations  
  The <xref:System.String.Split%2A> methods allocate memory for the returned array object and a <xref:System.String> object for each array element. If your application requires optimal performance or if managing memory allocation is critical in your application, consider using the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method, and optionally the <xref:System.String.Compare%2A> method, to locate a substring within a string.  
   
  If you are splitting a string at a separator character, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate a separator character in the string. If you are splitting a string at a separator string, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate the first character of the separator string. Then use the <xref:System.String.Compare%2A> method to determine whether the characters after that first character are equal to the remaining characters of the separator string.  
@@ -10705,7 +10623,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ## Examples  
  The following example demonstrates how `count` affects the number of strings returned by <xref:System.String.Split%2A>.  
   
- [!code-csharp[StringSplit2#10](~/samples/snippets/csharp/VS_Snippets_CLR/StringSplit2/CS/StringSplit10.cs#10)]
+ [!code-csharp-interactive[StringSplit2#10](~/samples/snippets/csharp/VS_Snippets_CLR/StringSplit2/CS/StringSplit10.cs#10)]
  [!code-vb[StringSplit2#10](~/samples/snippets/visualbasic/VS_Snippets_CLR/StringSplit2/VB/stringsplit10.vb#10)]  
   
  ]]></format>
@@ -10713,7 +10631,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="count" /> is negative.</exception>
         <block subset="none" type="usage">
-          <para>In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, if the <see cref="M:System.String.Split(System.Char[])" /> method is passed a <paramref name="separator" /> that is <see langword="null" /> or contains no characters, the method uses a slightly different set of characters to split the string than the <see cref="M:System.String.Trim(System.Char[])" /> method does to trim the string. In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], both methods use an identical set of Unicode white-space characters.</para>
+          <para>In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, if the <see cref="M:System.String.Split(System.Char[])" /> method is passed a <paramref name="separator" /> that is <see langword="null" /> or contains no characters, the method uses a slightly different set of characters to split the string than the <see cref="M:System.String.Trim(System.Char[])" /> method does to trim the string. Starting with the .NET Framework 4, both methods use an identical set of Unicode white-space characters.</para>
         </block>
         <altmember cref="T:System.Char" />
         <altmember cref="T:System.Array" />
@@ -10777,7 +10695,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
 ## Remarks  
   
-## Return value details  
+### Return value details  
  Delimiter characters (the characters in the `separator` array) are not included in the elements of the returned array. For example, if the `separator` array includes the character "-" and the value of the current string instance is "aa-bb-cc", the method returns an array that contains three elements: "aa", "bb", and "cc".  
   
  If this instance does not contain any of the characters in `separator`, the returned array consists of a single element that contains this instance.  
@@ -10796,7 +10714,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
 5.  <xref:System.String.Empty?displayProperty=nameWithType>, which represents the empty string that follows the "-" character at index 5.  
   
-## The separator array  
+### The separator array  
  If the `separator` parameter is `null` or contains no characters, white-space characters are assumed to be the delimiters. White-space characters are defined by the Unicode standard and return `true` if they are passed to the <xref:System.Char.IsWhiteSpace%2A?displayProperty=nameWithType> method.  
   
  If the `separator` parameter in the call to this method overload is `null`, compiler overload resolution fails. To unambiguously identify the called method, your code must indicate the type of the `null`. The following example shows several ways to unambiguously identify this overload.  
@@ -10804,12 +10722,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  [!code-csharp[System.String.Split#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/split3.cs#5)]
  [!code-vb[System.String.Split#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/split3.vb#5)]  
   
-## Comparison details  
+### Comparison details  
  The <xref:System.String.Split%2A> method extracts the substrings in this string that are delimited by one or more of the characters in the `separator` parameter, and returns those substrings as elements of an array.  
   
  The <xref:System.String.Split%2A> method looks for delimiters by performing comparisons using case-sensitive ordinal sort rules. For more information about word, string, and ordinal sorts, see the <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> enumeration.  
   
-## Performance Considerations  
+### Performance Considerations  
  The <xref:System.String.Split%2A> methods allocate memory for the returned array object and a <xref:System.String> object for each array element. If your application requires optimal performance or if managing memory allocation is critical in your application, consider using the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method, and optionally the <xref:System.String.Compare%2A> method, to locate a substring within a string.  
   
  If you are splitting a string at a separator character, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate a separator character in the string. If you are splitting a string at a separator string, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate the first character of the separator string. Then use the <xref:System.String.Compare%2A> method to determine whether the characters after that first character are equal to the remaining characters of the separator string.  
@@ -10822,7 +10740,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  The following example uses the <xref:System.StringSplitOptions> enumeration to include or exclude substrings generated by the <xref:System.String.Split%2A> method.  
   
  [!code-cpp[string.split3#1](~/samples/snippets/cpp/VS_Snippets_CLR/string.split3/CPP/omit.cpp#1)]
- [!code-csharp[string.split3#1](~/samples/snippets/csharp/VS_Snippets_CLR/string.split3/CS/omit.cs#1)]
+ [!code-csharp-interactive[string.split3#1](~/samples/snippets/csharp/VS_Snippets_CLR/string.split3/CS/omit.cs#1)]
  [!code-vb[string.split3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/string.split3/VB/omit.vb#1)]  
   
  ]]></format>
@@ -10830,7 +10748,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <exception cref="T:System.ArgumentException">
           <paramref name="options" /> is not one of the <see cref="T:System.StringSplitOptions" /> values.</exception>
         <block subset="none" type="usage">
-          <para>In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, if the <see cref="M:System.String.Split(System.Char[])" /> method is passed a <paramref name="separator" /> that is <see langword="null" /> or contains no characters, the method uses a slightly different set of characters to split the string than the <see cref="M:System.String.Trim(System.Char[])" /> method does to trim the string. In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], both methods use an identical set of Unicode white-space characters.</para>
+          <para>In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, if the <see cref="M:System.String.Split(System.Char[])" /> method is passed a <paramref name="separator" /> that is <see langword="null" /> or contains no characters, the method uses a slightly different set of characters to split the string than the <see cref="M:System.String.Trim(System.Char[])" /> method does to trim the string. Starting with the .NET Framework 4, both methods use an identical set of Unicode white-space characters.</para>
         </block>
       </Docs>
     </Member>
@@ -10918,7 +10836,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ## Remarks  
  When a string is delimited by a known set of strings, you can use the <xref:System.String.Split%2A> method to separate it into substrings.  
   
-## Return value details  
+### Return value details  
  Delimiter strings are not included in the elements of the returned array. For example, if the `separator` array includes the string "--" and the value of the current string instance is "aa--bb-cc", the method returns an array that contains three elements: "aa", "bb", and "cc".  
   
  If this instance does not contain any of the strings in `separator`, the returned array consists of a single element that contains this instance.  
@@ -10937,7 +10855,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
 5.  <xref:System.String.Empty?displayProperty=nameWithType>, which represents the empty string that follows the "-" substring at index 5.  
   
-## The separator array  
+### The separator array  
  If any of the elements in `separator` consists of multiple characters, the entire substring is considered a delimiter. For example, if one of the elements in `separator` is "10", attempting to split the string "This10is10a10string." returns the following four-element array: { "This", "is", "a", "string." }.  
   
  If the `separator` parameter is `null` or contains no characters, white-space characters are assumed to be the delimiters. White-space characters are defined by the Unicode standard and return `true` if they are passed to the <xref:System.Char.IsWhiteSpace%2A?displayProperty=nameWithType> method.  
@@ -10947,7 +10865,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  [!code-csharp[System.String.Split#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/split3.cs#6)]
  [!code-vb[System.String.Split#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/split3.vb#6)]  
   
-## Comparison details  
+### Comparison details  
  The <xref:System.String.Split%2A> method extracts the substrings in this string that are delimited by one or more of the strings in the `separator` parameter, and returns those substrings as elements of an array.  
   
  The <xref:System.String.Split%2A> method looks for delimiters by performing comparisons using case-sensitive ordinal sort rules. For more information about word, string, and ordinal sorts, see the <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> enumeration.  
@@ -10960,7 +10878,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  However, if the first element of `separator` was "bcd" and the second element was "bc", the result of the split operation would be a string array that contains two elements, "a" and "ef". This is because "bcd" is the first delimiter in `separator` that matches a delimiter in the instance. If the order of the separators was reversed so the first element was "bc" and the second element was "bcd", the result would be a string array that contains two elements,  "a" and "def".  
   
-## Performance considerations  
+### Performance considerations  
  The <xref:System.String.Split%2A> methods allocate memory for the returned array object and a <xref:System.String> object for each array element. If your application requires optimal performance or if managing memory allocation is critical in your application, consider using the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method, and optionally the <xref:System.String.Compare%2A> method, to locate a substring within a string.  
   
  If you are splitting a string at a separator character, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate a separator character in the string. If you are splitting a string at a separator string, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate the first character of the separator string. Then use the <xref:System.String.Compare%2A> method to determine whether the characters after that first character are equal to the remaining characters of the separator string.  
@@ -10972,12 +10890,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ## Examples  
  The following example illustrates the difference in the arrays returned by calling a string's <xref:System.String.Split%28System.String%5B%5D%2CSystem.StringSplitOptions%29?displayProperty=nameWithType> method with its `options` parameter equal to <xref:System.StringSplitOptions.None?displayProperty=nameWithType> and <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType>.  
   
- [!code-csharp[System.String.Split#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/Split.cs#1)]
+ [!code-csharp-interactive[System.String.Split#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/Split.cs#1)]
  [!code-vb[System.String.Split#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/Split.vb#1)]  
   
  The following example defines an array of separators that include punctuation and white-space characters. Passing this array along with a value of <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType> to the <xref:System.String.Split%28System.String%5B%5D%2CSystem.StringSplitOptions%29> method returns an array that consists of the individual words from the string.  
   
- [!code-csharp[System.String.Split#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/split7.cs#7)]
+ [!code-csharp-interactive[System.String.Split#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/split7.cs#7)]
  [!code-vb[System.String.Split#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/split7.vb#7)]  
   
  Note that the method is called with the `options` argument set to <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType>. This prevents the returned array from including <xref:System.String.Empty?displayProperty=nameWithType> values that represent empty substring matches between punctuation marks and white-space characters.  
@@ -10987,7 +10905,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <exception cref="T:System.ArgumentException">
           <paramref name="options" /> is not one of the <see cref="T:System.StringSplitOptions" /> values.</exception>
         <block subset="none" type="usage">
-          <para>In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, if the <see cref="M:System.String.Split(System.Char[])" /> method is passed a <paramref name="separator" /> that is <see langword="null" /> or contains no characters, the method uses a slightly different set of characters to split the string than the <see cref="M:System.String.Trim(System.Char[])" /> method does to trim the string. In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], both methods use an identical set of Unicode white-space characters.</para>
+          <para>In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, if the <see cref="M:System.String.Split(System.Char[])" /> method is passed a <paramref name="separator" /> that is <see langword="null" /> or contains no characters, the method uses a slightly different set of characters to split the string than the <see cref="M:System.String.Trim(System.Char[])" /> method does to trim the string. Starting with the .NET Framework 4, both methods use an identical set of Unicode white-space characters.</para>
         </block>
       </Docs>
     </Member>
@@ -11092,7 +11010,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  If `count` is greater than the number of substrings, the available substrings are returned and no exception is thrown.  
   
-## Performance Considerations  
+### Performance Considerations  
  The <xref:System.String.Split%2A> methods allocate memory for the returned array object and a <xref:System.String> object for each array element. If your application requires optimal performance or if managing memory allocation is critical in your application, consider using the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method, and optionally the <xref:System.String.Compare%2A> method, to locate a substring within a string.  
   
  If you are splitting a string at a separator character, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate a separator character in the string. If you are splitting a string at a separator string, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate the first character of the separator string. Then use the <xref:System.String.Compare%2A> method to determine whether the characters after that first character are equal to the remaining characters of the separator string.  
@@ -11105,7 +11023,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  The following example uses the <xref:System.StringSplitOptions> enumeration to include or exclude substrings generated by the <xref:System.String.Split%2A> method.  
   
  [!code-cpp[string.split3#1](~/samples/snippets/cpp/VS_Snippets_CLR/string.split3/CPP/omit.cpp#1)]
- [!code-csharp[string.split3#1](~/samples/snippets/csharp/VS_Snippets_CLR/string.split3/CS/omit.cs#1)]
+ [!code-csharp-interactive[string.split3#1](~/samples/snippets/csharp/VS_Snippets_CLR/string.split3/CS/omit.cs#1)]
  [!code-vb[string.split3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/string.split3/VB/omit.vb#1)]  
   
  ]]></format>
@@ -11115,7 +11033,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <exception cref="T:System.ArgumentException">
           <paramref name="options" /> is not one of the <see cref="T:System.StringSplitOptions" /> values.</exception>
         <block subset="none" type="usage">
-          <para>In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, if the <see cref="M:System.String.Split(System.Char[])" /> method is passed a <paramref name="separator" /> that is <see langword="null" /> or contains no characters, the method uses a slightly different set of characters to split the string than the <see cref="M:System.String.Trim(System.Char[])" /> method does to trim the string. In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], both methods use an identical set of Unicode white-space characters.</para>
+          <para>In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, if the <see cref="M:System.String.Split(System.Char[])" /> method is passed a <paramref name="separator" /> that is <see langword="null" /> or contains no characters, the method uses a slightly different set of characters to split the string than the <see cref="M:System.String.Trim(System.Char[])" /> method does to trim the string. Starting with the .NET Framework 4, both methods use an identical set of Unicode white-space characters.</para>
         </block>
       </Docs>
     </Member>
@@ -11206,7 +11124,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
 ## Remarks  
   
-## Return value details  
+### Return value details  
  Delimiter strings are not included in the elements of the returned array.  
   
  If this instance does not contain any of the strings in `separator`, or the `count` parameter is 1, the returned array consists of a single element that contains this instance. If the `separator` parameter is `null` or contains no characters, white-space characters are assumed to be the delimiters. White-space characters are defined by the Unicode standard and return `true` if they are passed to the <xref:System.Char.IsWhiteSpace%2A?displayProperty=nameWithType> method. However, if the `separator` parameter in the call to this method overload is `null`, compiler overload resolution fails. To unambiguously identify the called method, your code must indicate the type of the `null`. The following example shows several ways to unambiguously identify this overload.  
@@ -11222,10 +11140,10 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  If `count` is greater than the number of substrings, the available substrings are returned and no exception is thrown.  
   
-## The separator array  
+### The separator array  
  If any of the elements in `separator` consists of multiple characters, the entire substring is considered a delimiter. For example, if one of the elements in `separator` is "10", attempting to split the string "This10is10a10string." returns this four-element array: { "This", "is", "a", "string." }.  
   
-## Comparison details  
+### Comparison details  
  The <xref:System.String.Split%2A> method extracts the substrings in this string that are delimited by one or more of the strings in the `separator` parameter, and returns those substrings as elements of an array.  
   
  The <xref:System.String.Split%2A> method looks for delimiters by performing comparisons using case-sensitive ordinal sort rules. For more information about word, string, and ordinal sorts, see the <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> enumeration.  
@@ -11238,7 +11156,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  However, if the first element of `separator` was "bcd" and the second element was "bc", the result of the split operation would be "a" and "ef". This is because "bcd" is the first delimiter in `separator` that matches a delimiter in the instance. If the order of the separators was reversed so the first element was "bc" and the second element was "bcd", the result would be "a" and "def".  
   
-## Performance considerations  
+### Performance considerations  
  The <xref:System.String.Split%2A> methods allocate memory for the returned array object and a <xref:System.String> object for each array element. If your application requires optimal performance or if managing memory allocation is critical in your application, consider using the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method, and optionally the <xref:System.String.Compare%2A> method, to locate a substring within a string.  
   
  If you are splitting a string at a separator character, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate a separator character in the string. If you are splitting a string at a separator string, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate the first character of the separator string. Then use the <xref:System.String.Compare%2A> method to determine whether the characters after that first character are equal to the remaining characters of the separator string.  
@@ -11251,7 +11169,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  The following example uses the <xref:System.StringSplitOptions> enumeration to include or exclude substrings generated by the <xref:System.String.Split%2A> method.  
   
  [!code-cpp[string.split3#1](~/samples/snippets/cpp/VS_Snippets_CLR/string.split3/CPP/omit.cpp#1)]
- [!code-csharp[string.split3#1](~/samples/snippets/csharp/VS_Snippets_CLR/string.split3/CS/omit.cs#1)]
+ [!code-csharp-interactive[string.split3#1](~/samples/snippets/csharp/VS_Snippets_CLR/string.split3/CS/omit.cs#1)]
  [!code-vb[string.split3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/string.split3/VB/omit.vb#1)]  
   
  ]]></format>
@@ -11261,7 +11179,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <exception cref="T:System.ArgumentException">
           <paramref name="options" /> is not one of the <see cref="T:System.StringSplitOptions" /> values.</exception>
         <block subset="none" type="usage">
-          <para>In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, if the <see cref="M:System.String.Split(System.Char[])" /> method is passed a <paramref name="separator" /> that is <see langword="null" /> or contains no characters, the method uses a slightly different set of characters to split the string than the <see cref="M:System.String.Trim(System.Char[])" /> method does to trim the string. In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], both methods use an identical set of Unicode white-space characters.</para>
+          <para>In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, if the <see cref="M:System.String.Split(System.Char[])" /> method is passed a <paramref name="separator" /> that is <see langword="null" /> or contains no characters, the method uses a slightly different set of characters to split the string than the <see cref="M:System.String.Trim(System.Char[])" /> method does to trim the string. Starting with the .NET Framework 4, both methods use an identical set of Unicode white-space characters.</para>
         </block>
       </Docs>
     </Member>

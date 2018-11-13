@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In a visual designer, when you switch to a designer view (such as **Design** view in Visual Studio]), the <xref:System.Web.UI.WebControls.ListView> control markup is parsed. A design-time version of the control is then created on the design surface. When you switch to source view, the design-time control is persisted as the markup for the Web page.  
+ In a visual designer, when you switch to a designer view (such as **Design** view in Visual Studio), the <xref:System.Web.UI.WebControls.ListView> control markup is parsed. A design-time version of the control is then created on the design surface. When you switch to source view, the design-time control is persisted as the markup for the Web page.  
   
  The properties of the <xref:System.Web.UI.Design.WebControls.ListViewDesigner> class provide the following functionality:  
   

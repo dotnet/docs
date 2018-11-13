@@ -1,32 +1,42 @@
 ---
 title: Unit Testing in .NET Core
-description: Unit testing has never been easier. See how to use unit testing in .NET Core and .NET Standard projects.
+description: Unit testing in .NET Core and .NET Standard projects.
 author: ardalis
 ms.author: wiwagn
 ms.date: 08/30/2017
 ---
 # Unit testing in .NET Core and .NET Standard
 
-.NET Core has been designed with testability in mind, so that creating unit tests for your applications is easier than ever before. This article briefly introduces unit tests (and how they differ from other kinds of tests). Linked resources demonstrate how to add a test project to your solution and then run unit tests using either the command line or Visual Studio.
+.NET Core makes it easy to create unit tests. This article introduces unit tests and illustrates how they differ from other kinds of tests. The linked resources near the bottom of the page show you how to add a test project to your solution. After you set up your test project, you will be able to run your unit tests using the command line or Visual Studio.
 
-.NET Core 2.0 supports [.NET Standard 2.0](../../standard/net-standard.md). The libraries used to demonstrate unit testing in this section rely on .NET Standard and will work in other project types as well.
+.NET Core 2.0 and later supports [.NET Standard 2.0](../../standard/net-standard.md), and we will use it's libraries to demonstrate unit tests.
 
-Beginning with .NET Core 2.0, there are unit test project templates for C#, F# and Visual Basic.
+You are able to use built-in .NET Core 2.0 and later unit test project templates for C#, F# and Visual Basic as a starting point for your personal project.
 
-## Getting started with testing
+## What are unit tests?
 
-Having a suite of automated tests is one of the best ways to ensure a software application does what its authors intended it to do. There are different kinds of tests for software applications, including integration tests, web tests, load tests, and others. Unit tests that test individual software components or methods are the lowest level tests. Unit tests should only test code within the developer’s control, and should not test infrastructure concerns, like databases, file systems, or network resources. Unit tests may be written using [Test Driven Development (TDD)](https://deviq.com/test-driven-development/), or they can be added to existing code to confirm its correctness. In either case, they should be small, well-named, and fast, since ideally you want to be able to run hundreds of them before pushing your changes into the project’s shared code repository.
+Having automated tests is a great way to ensure a software application does what its authors intend it to do. There are multiple types of tests for software applications. These include integration tests, web tests, load tests, and others. **Unit tests** test individual software components and methods. Unit tests should only test code within the developer’s control. They should not test infrastructure concerns. Infrastructure concerns include databases, file systems, and network resources. 
+
+Also, keep in mind there are best practices for writing tests. For example, [Test Driven Development (TDD)](https://deviq.com/test-driven-development/) is when a unit test is written before the code it is meant to check. TDD is like creating an outline for a book before we write it. It is meant to help developers write simpler, more readable, and efficient code. 
 
 > [!NOTE]
-> Developers often struggle with coming up with good names for their test classes and methods. As a starting point, the ASP.NET product team follows [these conventions](https://github.com/aspnet/Home/wiki/Engineering-guidelines#unit-tests-and-functional-tests).
+> The ASP.NET team follows [these conventions](https://github.com/aspnet/Home/wiki/Engineering-guidelines#unit-tests-and-functional-tests) to help developers come up with good names for test classes and methods.
 
-When writing unit tests, be careful you don’t accidentally introduce dependencies on infrastructure. These tend to make tests slower and more brittle, and thus should be reserved for integration tests. You can avoid these hidden dependencies in your application code by following the [Explicit Dependencies Principle](https://deviq.com/explicit-dependencies-principle/) and using [Dependency Injection](/aspnet/core/fundamentals/dependency-injection) to request your dependencies from the framework. You can also keep your unit tests in a separate project from your integration tests and ensure your unit test project doesn’t have references to or dependencies on infrastructure packages.
+Try not to introduce dependencies on infrastructure when writing unit tests. These make the tests slow and brittle, and should be reserved for integration tests. You can avoid these dependencies in your application by following the [Explicit Dependencies Principle](https://deviq.com/explicit-dependencies-principle/) and using [Dependency Injection](/aspnet/core/fundamentals/dependency-injection). You can also keep your unit tests in a separate project from your integration tests. This ensures your unit test project doesn’t have references to or dependencies on infrastructure packages.
 
-Learn more about unit testing in .NET Core projects:
+More information on unit testing in .NET Core projects:
 
-Unit test projects for .NET Core are supported for [C#](../../csharp/index.md), [F#](../../fsharp/index.md) and [Visual Basic](../../visual-basic/index.md). You can also choose between [xUnit](https://xunit.github.io), [NUnit](https://nunit.org) and [MSTest](https://github.com/Microsoft/vstest-docs).
+.NET Core unit test projects are supported for:
+* [C#](../../csharp/index.md)
+* [F#](../../fsharp/index.md)
+* [Visual Basic](../../visual-basic/index.md) 
 
-You can read about those combinations in these walkthroughs:
+You can also choose between:
+* [xUnit](https://xunit.github.io) 
+* [NUnit](https://nunit.org)
+* [MSTest](https://github.com/Microsoft/vstest-docs)
+
+You can learn more in the following walkthroughs:
 
 * Create unit tests using [*xUnit* and *C#* with the .NET Core CLI](unit-testing-with-dotnet-test.md).
 * Create unit tests using [*NUnit* and *C#* with the .NET Core CLI](unit-testing-with-nunit.md).
@@ -38,9 +48,8 @@ You can read about those combinations in these walkthroughs:
 * Create unit tests using [*NUnit* and *Visual Basic* with the .NET Core CLI](unit-testing-visual-basic-with-nunit.md).
 * Create unit tests using [*MSTest* and *Visual Basic* with the .NET Core CLI](unit-testing-visual-basic-with-mstest.md).
 
-You can choose different languages for your class libraries and your unit test libraries. You can learn how by mixing and matching the walkthroughs referenced above.
+You can learn more in the following articles:
 
 * Visual Studio Enterprise offers great testing tools for .NET Core. Check out [Live Unit Testing](/visualstudio/test/live-unit-testing) or [code coverage](https://github.com/Microsoft/vstest-docs/blob/master/docs/analyze.md#working-with-code-coverage) to learn more.
-* For additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](selective-unit-tests.md), or [including and excluding tests with Visual Studio](/visualstudio/test/live-unit-testing#include-and-exclude-test-projects-and-test-methods).
-* The xUnit team has written a tutorial that shows
-[how to use xUnit with .NET Core and Visual Studio](https://xunit.github.io/docs/getting-started-dotnet-core.html).
+* For more information on how to run selective unit tests, see [Running selective unit tests](selective-unit-tests.md), or [including and excluding tests with Visual Studio](/visualstudio/test/live-unit-testing#include-and-exclude-test-projects-and-test-methods).
+* [How to use xUnit with .NET Core and Visual Studio](https://xunit.github.io/docs/getting-started-dotnet-core.html).

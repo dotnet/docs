@@ -3,7 +3,7 @@ title: Prerequisites for .NET Core on Windows
 description: Learn what dependencies you need on your Windows machine to develop and run .NET Core applications.
 author: mairaw
 ms.author: mairaw
-ms.date: 08/31/2018
+ms.date: 10/18/2018
 ---
 # Prerequisites for .NET Core on Windows
 
@@ -30,7 +30,6 @@ This article shows the dependencies needed to develop .NET Core applications on 
 The following articles have a complete list of .NET Core supported operating systems per version:
 
 * [.NET Core 2.1 - Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md)
-* [.NET Core 2.0 - Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md)
 * [.NET Core 1.x - Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md)
 
 ## .NET Core dependencies
@@ -83,29 +82,6 @@ Once you have Visual Studio configured with .NET Core 2.1 SDK, you can do the fo
 * Retarget .NET Core 1.x and 2.0 projects to .NET Core 2.1, build, and run.
 * Create new .NET Core 2.1 projects.
 
-# [.NET Core 2.0](#tab/netcore20)
-
-To develop .NET Core 2.0 apps in Visual Studio 2017:
-
- 1. [Download and install Visual Studio 2017 version 15.3.0 or higher](/visualstudio/install/install-visual-studio) with the **.NET Core cross-platform development** workload (in the **Other Toolsets** section) selected.
-
-![Screenshot of Visual Studio 2017 installation with the ".NET Core cross-platform development" workload selected](./media/windows-prerequisites/vs-15-3-workloads.jpg)
-
-After the **.NET Core cross-platform development** toolset is installed, Visual Studio 2017 uses .NET Core 1.x by default. Install the .NET Core 2.0 SDK to get .NET Core 2.0 support in Visual Studio 2017.
-
- 2. Install the [.NET Core 2.0 SDK](https://www.microsoft.com/net/download/dotnet-core/2.0).
- 3. Retarget existing or new .NET Core 1.x projects to .NET Core 2.0 using the following instructions:
-    * On the **Project** menu, Choose **Properties**.
-    * In the **Target framework** selection menu, set the value to **.NET Core 2.0**.
-
-![Screenshot of Visual Studio 2017 Application Project Property with the ".NET Core 2.0" Target framework menu item selected](./media/windows-prerequisites/Targeting-dotnetCore2.png)
-
-Once the .NET Core 2.0 SDK is installed, Visual Studio 2017 uses the .NET Core SDK 2.0 by default, and supports the following actions:
-
-* Open, build, and run existing .NET Core 1.x projects.
-* Retarget .NET Core 1.x projects to .NET Core 2.0, build, and run.
-* Create new .NET Core 2.0 projects.
-
 # [.NET Core 1.x](#tab/netcore1x)
 
 To develop .NET Core 1.x apps in Visual Studio, [download and install Visual Studio 2017](/visualstudio/install/install-visual-studio) with the **".NET Core cross-platform development"** workload (in the **Other Toolsets** section) selected.
@@ -129,5 +105,4 @@ To develop .NET Core 1.x apps in Visual Studio, [download and install Visual Stu
 > * In the **About Microsoft Visual Studio** dialog, verify the version number.
 >   * For .NET Core 2.2 Preview 1 apps, Visual Studio 2017 version 15.9 (currently in Preview) or higher.
 >   * For .NET Core 2.1 apps, Visual Studio 2017 version 15.7 or higher.
->   * For .NET Core 2.0 apps, Visual Studio 2017 version 15.3 or higher.
 >   * For .NET Core 1.x apps, Visual Studio 2017 version 15.0 or higher.

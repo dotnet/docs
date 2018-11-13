@@ -1,6 +1,6 @@
 ---
 title: Create a WPF application in Visual Studio
-ms.date: 04/12/2018
+ms.date: 10/26/2018
 dev_langs:
   - "csharp"
   - "vb"
@@ -37,7 +37,7 @@ By the end of the walkthrough, you'll have built a standalone Windows applicatio
 
 ## Prerequisites
 
-- Visual Studio 2012 or later (this article is based on Visual Studio 2017)
+- Visual Studio 2017 or later
 
    For more information about installing the latest version of Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio).
 
@@ -51,7 +51,7 @@ The first step is to create the application infrastructure, which includes an ap
 
       The **New Project** dialog opens.
 
-   2. Under the **Installed** category, expand either the **Visual C#** or **Visual Basic** node, and then select **Windows Classic Desktop**.
+   2. Under the **Installed** category, expand either the **Visual C#** or **Visual Basic** node, and then select **Windows Desktop**.
 
    3. Select the **WPF App (.NET Framework)** template. Enter the name **`ExpenseIt`** and then select **OK**.
 

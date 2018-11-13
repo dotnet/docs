@@ -1,13 +1,13 @@
 ---
 title: Designing a microservice domain model
-description: .NET Microservices Architecture for Containerized .NET Applications | Designing a microservice domain model
+description: .NET Microservices Architecture for Containerized .NET Applications | Understand the key concepts when designing a DDD-oriented domain model.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 11/09/2017
+ms.date: 10/08/2018
 ---
-# Designing a microservice domain model
+# Design a microservice domain model
 
-*Define one rich domain model for each business microservice or Bounded Context*
+*Define one rich domain model for each business microservice or Bounded Context *
 
 Your goal is to create a single cohesive domain model for each business microservice or Bounded Context (BC). Keep in mind, however, that a BC or business microservice could sometimes be composed of several physical services that share a single domain model. The domain model must capture the rules, behavior, business language, and constraints of the single Bounded Context or business microservice that it represents.
 
@@ -17,7 +17,7 @@ Entities represent domain objects and are primarily defined by their identity, c
 
 *An entity’s identity can cross multiple microservices or Bounded Contexts.*
 
-The same identity (though not the same entity) can be modeled across multiple Bounded Contexts or microservices. However, that does not imply that the same entity, with the same attributes and logic would be implemented in multiple Bounded Contexts. Instead, entities in each Bounded Context limit their attributes and behaviors to those required in that Bounded Context’s domain.
+The same identity (that is, the same `Id` value, although perhaps not the same domain entity) can be modeled across multiple Bounded Contexts or microservices. However, that does not imply that the same entity, with the same attributes and logic would be implemented in multiple Bounded Contexts. Instead, entities in each Bounded Context limit their attributes and behaviors to those required in that Bounded Context’s domain.
 
 For instance, the buyer entity might have most of a person’s attributes that are defined in the user entity in the profile or identity microservice, including the identity. But the buyer entity in the ordering microservice might have fewer attributes, because only certain buyer data is related to the order process. The context of each microservice or Bounded Context impacts its domain model.
 
@@ -25,11 +25,11 @@ For instance, the buyer entity might have most of a person’s attributes that a
 
 A domain entity in DDD must implement the domain logic or behavior related to the entity data (the object accessed in memory). For example, as part of an order entity class you must have business logic and operations implemented as methods for tasks such as adding an order item, data validation, and total calculation. The entity’s methods take care of the invariants and rules of the entity instead of having those rules spread across the application layer.
 
-Figure 9-8 shows a domain entity that implements not only data attributes but operations or methods with related domain logic.
+Figure 7-8 shows a domain entity that implements not only data attributes but operations or methods with related domain logic.
 
-![](./media/image9.png)
+![A domain model entity implements behaviors through methods, that is, it's not an "anemic" model.](./media/image9.png)
 
-**Figure 9-8**. Example of a domain entity design implementing data plus behavior
+**Figure 7-8**. Example of a domain entity design implementing data plus behavior
 
 Of course, sometimes you can have entities that do not implement any logic as part of the entity class. This can happen in child entities within an aggregate if the child entity does not have any special logic because most of the logic is defined in the aggregate root. If you have a complex microservice that has a lot of logic implemented in the service classes instead of in the domain entities, you could be falling into the anemic domain model, explained in the following section.
 
@@ -51,15 +51,14 @@ Some people say that the anemic domain model is an anti-pattern. It really depen
 
 #### Additional resources
 
--   **DevIQ. Domain Entity**
-    [*https://deviq.com/entity/*](https://deviq.com/entity/)
+- **DevIQ. Domain Entity** \
+  [*https://deviq.com/entity/*](https://deviq.com/entity/)
 
--   **Martin Fowler. The Domain Model**
-    [*https://martinfowler.com/eaaCatalog/domainModel.html*](https://martinfowler.com/eaaCatalog/domainModel.html)
+- **Martin Fowler. The Domain Model** \
+  [*https://martinfowler.com/eaaCatalog/domainModel.html*](https://martinfowler.com/eaaCatalog/domainModel.html)
 
--   **Martin Fowler. The Anemic Domain Model**
-
-    <https://martinfowler.com/bliki/AnemicDomainModel.html>
+- **Martin Fowler. The Anemic Domain Model** \
+  [*https://martinfowler.com/bliki/AnemicDomainModel.html*](https://martinfowler.com/bliki/AnemicDomainModel.html)
 
 ### The Value Object pattern
 
@@ -73,23 +72,25 @@ A person with a name and surname is usually an entity because a person has ident
 
 Value objects are hard to manage in relational databases and ORMs like EF, whereas in document oriented databases they are easier to implement and use.
 
+EF Core 2.0 includes the [Owned Entities](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-entity-framework-core-2-0/#owned-entities-and-table-splitting) feature that makes it easier to handle value objects, as we’ll see in detail later on.
+
 #### Additional resources
 
--   **Martin Fowler. Value Object pattern**
-    [*https://martinfowler.com/bliki/ValueObject.html*](https://martinfowler.com/bliki/ValueObject.html)
+- **Martin Fowler. Value Object pattern**
+  [*https://martinfowler.com/bliki/ValueObject.html*](https://martinfowler.com/bliki/ValueObject.html)
 
--   **Value Object**
-    [*https://deviq.com/value-object/*](https://deviq.com/value-object/)
+- **Value Object**
+  [*https://deviq.com/value-object/*](https://deviq.com/value-object/)
 
--   **Value Objects in Test-Driven Development**
-    [*https://leanpub.com/tdd-ebook/read\#leanpub-auto-value-objects*](https://leanpub.com/tdd-ebook/read#leanpub-auto-value-objects)
+- **Value Objects in Test-Driven Development**
+  [*https://leanpub.com/tdd-ebook/read\#leanpub-auto-value-objects*](https://leanpub.com/tdd-ebook/read#leanpub-auto-value-objects)
 
--   **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of value objects)
-    [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
+- **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of value objects)
+  [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 
 ### The Aggregate pattern
 
-A domain model contains clusters of different data entities and processes that can control a significant area of functionality, such as order fulfilment or inventory. A more fine-grained DDD unit is the aggregate, which describes a cluster or group of entities and behaviors that can be treated as a cohesive unit.
+A domain model contains clusters of different data entities and processes that can control a significant area of functionality, such as order fulfillment or inventory. A more fine-grained DDD unit is the aggregate, which describes a cluster or group of entities and behaviors that can be treated as a cohesive unit.
 
 You usually define an aggregate based on the transactions that you need. A classic example is an order that also contains a list of order items. An order item will usually be an entity. But it will be a child entity within the order aggregate, which will also contain the order entity as its root entity, typically called an aggregate root.
 
@@ -99,15 +100,15 @@ Identifying aggregates can be hard. An aggregate is a group of objects that must
 
 An aggregate is composed of at least one entity: the aggregate root, also called root entity or primary entity. Additionally, it can have multiple child entities and value objects, with all entities and objects working together to implement required behavior and transactions.
 
-The purpose of an aggregate root is to ensure the consistency of the aggregate; it should be the only entry point for updates to the aggregate through methods or operations in the aggregate root class. You should make changes to entities within the aggregate only via the aggregate root. It is the aggregate’s consistency guardian, taking into account all the invariants and consistency rules you might need to comply with in your aggregate. If you change a child entity or value object independently, the aggregate root cannot ensure that the aggregate is in a valid state. It would be like a table with a loose leg. Maintaining consistency is the main purpose of the aggregate root.
+The purpose of an aggregate root is to ensure the consistency of the aggregate; it should be the only entry point for updates to the aggregate through methods or operations in the aggregate root class. You should make changes to entities within the aggregate only via the aggregate root. It is the aggregate’s consistency guardian, considering all the invariants and consistency rules you might need to comply with in your aggregate. If you change a child entity or value object independently, the aggregate root cannot ensure that the aggregate is in a valid state. It would be like a table with a loose leg. Maintaining consistency is the main purpose of the aggregate root.
 
-In Figure 9-9, you can see sample aggregates like the buyer aggregate, which contains a single entity (the aggregate root Buyer). The order aggregate contains multiple entities and a value object.
+In Figure 7-9, you can see sample aggregates like the buyer aggregate, which contains a single entity (the aggregate root Buyer). The order aggregate contains multiple entities and a value object.
 
-![](./media/image10.png)
+![A DDD domain model is composed from aggregates, an aggregate can have just one entity or more, and can include value objects as well.](./media/image10.png)
 
-**Figure 9-9**. Example of aggregates with multiple or single entities
+**Figure 7-9**. Example of aggregates with multiple or single entities
 
-Note that the Buyer aggregate could have additional child entities, depending on your domain, as it does in the ordering microservice in the eShopOnContainers reference application. Figure 9-9 just illustrates a case in which the buyer has a single entity, as an example of an aggregate that contains only an aggregate root.
+Note that the Buyer aggregate could have additional child entities, depending on your domain, as it does in the ordering microservice in the eShopOnContainers reference application. Figure 7-9 just illustrates a case in which the buyer has a single entity, as an example of an aggregate that contains only an aggregate root.
 
 In order to maintain separation of aggregates and keep clear boundaries between them, it is a good practice in a DDD domain model to disallow direct navigation between aggregates and only having the foreign key (FK) field, as implemented in the [Ordering microservice domain model](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Order.cs) in eShopOnContainers. The Order entity only has a FK field for the buyer, but not an EF Core navigation property, as shown in the following code:
 
@@ -128,23 +129,23 @@ Identifying and working with aggregates requires research and experience. For mo
 
 #### Additional resources
 
--   **Vaughn Vernon. Effective Aggregate Design - Part I: Modeling a Single Aggregate**
-    [*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD\_COMMUNITY\_ESSAY\_AGGREGATES\_PART\_1.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_1.pdf)
+- **Vaughn Vernon. Effective Aggregate Design - Part I: Modeling a Single Aggregate** \
+  [*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD\_COMMUNITY\_ESSAY\_AGGREGATES\_PART\_1.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_1.pdf)
 
--   **Vaughn Vernon. Effective Aggregate Design - Part II: Making Aggregates Work Together**
-    [*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_2.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_2.pdf)
+- **Vaughn Vernon. Effective Aggregate Design - Part II: Making Aggregates Work Together** \
+  [*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_2.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_2.pdf)
 
--   **Vaughn Vernon. Effective Aggregate Design - Part III: Gaining Insight Through Discovery**
-    [*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_3.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_3.pdf)
+- **Vaughn Vernon. Effective Aggregate Design - Part III: Gaining Insight Through Discovery** \
+  [*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_3.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_3.pdf)
 
--   **Sergey Grybniak. DDD Tactical Design Patterns**
-    [*https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part*](https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part)
+- **Sergey Grybniak. DDD Tactical Design Patterns** \
+  [*https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part*](https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part)
 
--   **Chris Richardson. Developing Transactional Microservices Using Aggregates**
-    [*https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-1-richardson*](https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-1-richardson)
+- **Chris Richardson. Developing Transactional Microservices Using Aggregates** \
+  [*https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-1-richardson*](https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-1-richardson)
 
--   **DevIQ. The Aggregate pattern**
-    [*https://deviq.com/aggregate-pattern/*](https://deviq.com/aggregate-pattern/)
+- **DevIQ. The Aggregate pattern** \
+  [*https://deviq.com/aggregate-pattern/*](https://deviq.com/aggregate-pattern/)
 
 >[!div class="step-by-step"]
 [Previous](ddd-oriented-microservice.md)

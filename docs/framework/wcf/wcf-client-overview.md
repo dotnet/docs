@@ -64,7 +64,7 @@ svcutil /language:vb /out:ClientCode.vb /config:app.config http://computerName/M
   
  This class can be created as a local object using one of the constructors, configured, and then used to connect to a service of the type `ISampleService`.  
   
- It is recommended that you create your WCF client object first, and then use it and close it inside a single try/catch block. You should not use the `using` statement (`Using` in Visual Basic) because it may mask exceptions in certain failure modes. For more information, see the following sections as well as [Avoiding Problems with the Using Statement](../../../docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md).  
+ It is recommended that you create your WCF client object first, and then use it and close it inside a single try/catch block. You should not use the `using` statement (`Using` in Visual Basic) because it may mask exceptions in certain failure modes. For more information, see the following sections as well as [Use Close and Abort to release WCF client resources](../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md).  
   
 ### Contracts, Bindings, and Addresses  
  Before you can create a WCF client object, you must configure the client object. Specifically, it must have a service *endpoint* to use. An endpoint is the combination of a service contract, a binding, and an address. (For more information about endpoints, see [Endpoints: Addresses, Bindings, and Contracts](../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md).) Typically, this information is located in the [\<endpoint>](../../../docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element in a client application configuration file, such as the one the Svcutil.exe tool generates, and is loaded automatically when you create your client object. Both WCF client types also have overloads that enable you to programmatically specify this information.  
@@ -121,7 +121,7 @@ Namespace Microsoft.ServiceModel.Samples
 End Interface  
 ```  
   
- You can call operations by creating a WCF client object and calling its methods, as the following code example demonstrates. Note that the opening, calling, and closing of the WCF client object occurs within a single try/catch block. For more information, see [Accessing Services Using a WCF Client](../../../docs/framework/wcf/feature-details/accessing-services-using-a-client.md) and [Avoiding Problems with the Using Statement](../../../docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md).  
+ You can call operations by creating a WCF client object and calling its methods, as the following code example demonstrates. Note that the opening, calling, and closing of the WCF client object occurs within a single try/catch block. For more information, see [Accessing Services Using a WCF Client](../../../docs/framework/wcf/feature-details/accessing-services-using-a-client.md) and [Use Close and Abort to release WCF client resources](../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md).  
   
  [!code-csharp[C_GeneratedCodeFiles#20](../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#20)]  
   

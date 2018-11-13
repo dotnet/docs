@@ -1,17 +1,17 @@
 ---
 title: Applying simplified CQRS and DDD patterns in a microservice
-description: .NET Microservices Architecture for Containerized .NET Applications | Applying simplified CQRS and DDD patterns in a microservice
+description: .NET Microservices Architecture for Containerized .NET Applications | Understand the overall relation between CQRS and DDD patterns.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 10/08/2018
 ---
-# Applying simplified CQRS and DDD patterns in a microservice
+# Apply simplified CQRS and DDD patterns in a microservice
 
 CQRS is an architectural pattern that separates the models for reading and writing data. The related term [Command Query Separation (CQS)](https://martinfowler.com/bliki/CommandQuerySeparation.html) was originally defined by Bertrand Meyer in his book *Object Oriented Software Construction*. The basic idea is that you can divide a system’s operations into two sharply separated categories:
 
--   Queries. These return a result and do not change the state of the system, and they are free of side effects.
+- Queries. These return a result and do not change the state of the system, and they are free of side effects.
 
--   Commands. These change the state of a system.
+- Commands. These change the state of a system.
 
 CQS is a simple concept—it is about methods within the same object being either queries or commands. Each method either returns state or mutates state, but not both. Even a single repository pattern object can comply with CQS. CQS can be considered a foundational principle for CQRS.
 
@@ -21,11 +21,11 @@ The separation aspect of CQRS is achieved by grouping query operations in one la
 
 CQRS means having two objects for a read/write operation where in other contexts there is one. There are reasons to have a denormalized reads database, which you can learn about in more advanced CQRS literature. But we are not using that approach here, where the goal is to have more flexibility in the queries instead of limiting the queries with constraints from DDD patterns like aggregates.
 
-An example of this kind of service is the ordering microservice from the eShopOnContainers reference application. This service implements a microservice based on a simplified CQRS approach. It uses a single data source or database, but two logical models plus DDD patterns for the transactional domain, as shown in Figure 9-2.
+An example of this kind of service is the ordering microservice from the eShopOnContainers reference application. This service implements a microservice based on a simplified CQRS approach. It uses a single data source or database, but two logical models plus DDD patterns for the transactional domain, as shown in Figure 7-2.
 
-![](./media/image2.png)
+![The logical Ordering microservice includes its Ordering database, which can be or not in the same Docker host. Having the database in the same Docker host is good for development, but not for production.](./media/image2.png)
 
-**Figure 9-2**. Simplified CQRS- and DDD-based microservice
+**Figure 7-2**. Simplified CQRS- and DDD-based microservice
 
 The application layer can be the Web API itself. The important design aspect here is that the microservice has split the queries and ViewModels (data models especially created for the client applications) from the commands, domain model, and transactions following the CQRS pattern. This approach keeps the queries independent from restrictions and constraints coming from DDD patterns that only make sense for transactions and updates, as explained in later sections.
 

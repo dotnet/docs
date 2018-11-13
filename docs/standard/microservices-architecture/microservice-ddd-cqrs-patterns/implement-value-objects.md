@@ -1,31 +1,31 @@
 ---
 title: Implementing value objects
-description: .NET Microservices Architecture for Containerized .NET Applications | Implementing value objects
+description: .NET Microservices Architecture for Containerized .NET Applications | Get into the details and options to implement value objects using new Entity Framework features.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 12/12/2017
+ms.date: 10/08/2018
 ---
-# Implementing value objects
+# Implement value objects
 
 As discussed in earlier sections about entities and aggregates, identity is fundamental for entities. However, there are many objects and data items in a system that do not require an identity and identity tracking, such as value objects.
 
 A value object can reference other entities. For example, in an application that generates a route that describes how to get from one point to another, that route would be a value object. It would be a snapshot of points on a specific route, but this suggested route would not have an identity, even though internally it might refer to entities like City, Road, etc.
 
-Figure 9-13 shows the Address value object within the Order aggregate.
+Figure 7-13 shows the Address value object within the Order aggregate.
 
-![](./media/image14.png)
+![The Address value-object inside the Order Aggregate.](./media/image14.png)
 
-**Figure 9-13**. Address value object within the Order aggregate
+**Figure 7-13**. Address value object within the Order aggregate
 
-As shown in Figure 9-13, an entity is usually composed of multiple attributes. For example, the `Order` entity can be modeled as an entity with an identity and composed internally of a set of attributes such as OrderId, OrderDate, OrderItems, etc. But the address, which is simply a complex value composed of country, street, city, etc. and has no identity in this domain,  must be modeled and treated as a value object.
+As shown in Figure 7-13, an entity is usually composed of multiple attributes. For example, the `Order` entity can be modeled as an entity with an identity and composed internally of a set of attributes such as OrderId, OrderDate, OrderItems, etc. But the address, which is simply a complex-value composed of country, street, city, etc. and has no identity in this domain, must be modeled and treated as a value object.
 
 ## Important characteristics of value objects
 
 There are two main characteristics for value objects:
 
--   They have no identity.
+- They have no identity.
 
--   They are immutable.
+- They are immutable.
 
 The first characteristic was already discussed. Immutability is an important requirement. The values of a value object must be immutable once the object is created. Therefore, when the object is constructed, you must provide the required values, but you must not allow them to change during the object’s lifetime.
 
@@ -96,11 +96,11 @@ You can use this class when implementing your actual value object, as with the A
 ```csharp
 public class Address : ValueObject
 {
-    public String Street { get; }
-    public String City { get; }
-    public String State { get; }
-    public String Country { get; }
-    public String ZipCode { get; }
+    public String Street { get; private set; }
+    public String City { get; private set; }
+    public String State { get; private set; }
+    public String Country { get; private set; }
+    public String ZipCode { get; private set; }
 
     private Address() { }
 
@@ -125,13 +125,19 @@ public class Address : ValueObject
 }
 ```
 
+You can see how this value object implementation of Address has no identity and therefore, no ID field, neither at the Address class not even at the ValueObject class.
+
+Having no ID field in a class to be used by Entity Framework was not possible until EF Core 2.0 which greatly helps to implement better value objects with no ID. That is precisely the explanation of the next section. 
+
+It could be argued that value objects, being immutable, should be read only (i.e. get-only properties) and that’s indeed true. However, value objects are usually serialized and deserialized to go through message queues, and being read only, stops the deserializer from assigning values so we just leave them as private set which is read-only enough to be practical.
+
 ## How to persist value objects in the database with EF Core 2.0
 
 You just saw how to define a value object in your domain model. But, how can you actually persist it into the database through Entity Framework (EF) Core which usually targets entities with identity?
 
 ### Background and older approaches using EF Core 1.1
 
-As background, a limitation when using EF Core 1.0 and 1.1 was that you cannot use  [complex types](xref:System.ComponentModel.DataAnnotations.Schema.ComplexTypeAttribute) as defined in EF 6.x in the traditional .NET Framework. Therefore, if using EF Core 1.0 or 1.1, you needed to store your value object as an EF entity with an ID field. Then, so it looked more like a value object with no identity, you could hide its ID so you make clear that the identity of a value object is not important in the domain model. You could hide that ID by using the ID as a [shadow property](https://docs.microsoft.com/ef/core/modeling/shadow-properties ). Since that configuration for hiding the ID in the model is set up in the EF infrastructure level, it would be kind of transparent for your domain model.
+As background, a limitation when using EF Core 1.0 and 1.1 was that you could not use  [complex types](xref:System.ComponentModel.DataAnnotations.Schema.ComplexTypeAttribute) as defined in EF 6.x in the traditional .NET Framework. Therefore, if using EF Core 1.0 or 1.1, you needed to store your value object as an EF entity with an ID field. Then, so it looked more like a value object with no identity, you could hide its ID so you make clear that the identity of a value object is not important in the domain model. You could hide that ID by using the ID as a [shadow property](https://docs.microsoft.com/ef/core/modeling/shadow-properties ). Since that configuration for hiding the ID in the model is set up in the EF infrastructure level, it would be kind of transparent for your domain model.
 
 In the initial version of eShopOnContainers (.NET Core 1.1), the hidden ID needed by EF Core infrastructure was implemented in the following way in the DbContext level, using Fluent API at the infrastructure project. Therefore, the ID was hidden from the domain model point of view, but still present in the infrastructure.
 
@@ -158,18 +164,17 @@ Even with some gaps between the canonical value object pattern in DDD and the ow
 
 The owned entity type feature was added to EF Core since version 2.0.
 
-An owned entity type allows you to map types that do not have their own identity explicitely defined in the domain model and are used as properties, such as a value object, within any of your entities. An owned entity type shares the same CLR type with another entity type. The entity containing the defining navigation is the owner entity. When querying the owner, the owned types are included by default.
+An owned entity type allows you to map types that do not have their own identity explicitly defined in the domain model and are used as properties, such as a value object, within any of your entities. An owned entity type shares the same CLR type with another entity type (that is, it’s just a regular class). The entity containing the defining navigation is the owner entity. When querying the owner, the owned types are included by default.
 
-Just by looking at the domain model, an owned type looks like it doesn’t have any identity.
-However, under the covers, owned types do have identity, but the owner navigation property is part of this identity.
+Just by looking at the domain model, an owned type looks like it doesn’t have any identity. However, under the covers, owned types do have identity, but the owner navigation property is part of this identity.
 
-The identity of instances of own types is not completely their own. It consists of three components:
+The identity of instances of owned types is not completely their own. It consists of three components:
 
 - The identity of the owner
 
 - The navigation property pointing to them
 
-- In the case of collections of owned types, an independent component (not yet supported in EF Core 2.0).
+- In the case of collections of owned types, an independent component (not yet supported in EF Core 2.0, coming up on 2.2).
 
 For example, in the Ordering domain model at eShopOnContainers, as part of the Order entity, the Address value object is implemented as an owned entity type within the owner entity, which is the Order entity. Address is a type with no identity property defined in the domain model. It is used as a property of the Order type to specify the shipping address for a particular order.
 
@@ -260,67 +265,64 @@ public class Address
 
 ### Additional details on owned entity types
 
-•	Owned types are defined when you configure a navigation property to a particular type using the OwnsOne fluent API.
+- Owned types are defined when you configure a navigation property to a particular type using the OwnsOne fluent API.
 
-•	The definition of an owned type in our metadata model is a composite of: the owner type, the navigation property, and the CLR type of the owned type.
+- The definition of an owned type in our metadata model is a composite of: the owner type, the navigation property, and the CLR type of the owned type.
 
-•	The identity (key) of an owned type instance in our stack is a composite of the identity of the owner type and the definition of the owned type.
+- The identity (key) of an owned type instance in our stack is a composite of the identity of the owner type and the definition of the owned type.
 
 #### Owned entities capabilities:
 
-•	Owned type can reference other entities, either owned (nested owned types) or non-owned (regular reference navigation properties to other entities).
+- Owned types can reference other entities, either owned (nested owned types) or non-owned (regular reference navigation properties to other entities).
 
-•	You can map the same CLR type as different owned types in the same owner entity through separate navigation properties.
+- You can map the same CLR type as different owned types in the same owner entity through separate navigation properties.
 
-•	Table splitting is setup by convention, but you can opt out by mapping the owned type to a different table using ToTable.
+- Table splitting is setup by convention, but you can opt out by mapping the owned type to a different table using ToTable.
 
-•	Eager loading is performed automatically on owned types, i.e. no need to call Include() on the query.
+- Eager loading is performed automatically on owned types, i.e. no need to call Include() on the query.
+
+- Can be configured with attribute \[Owned\], as of EF Core 2.1
 
 #### Owned entities limitations:
 
-•	You cannot create a DbSet<T> of an owned type (by design).
+- You cannot create a DbSet\<T\> of an owned type (by design).
 
-•	You cannot call ModelBuilder.Entity<T>() on owned types (currently by design).
+- You cannot call ModelBuilder.Entity\<T\>() on owned types (currently by design).
 
-•	No collections of owned types yet (but they will be supported in versions after EF Core 2.0).
+- No collections of owned types yet (as of EF Core 2.1, but they will be supported in 2.2).
 
-•	No support for configuring them via an attribute.
+- No support for optional (that is, nullable) owned types that are mapped with the owner in the same table (i.e. using table splitting). This is because mapping is done for each property, we don't have a separate sentinel for the null complex value a as whole.
 
-•	No support for optional (i.e. nullable) owned types that are mapped with the owner in the same table (i.e. using table splitting). This is because we don't have a separate sentinel for the null.
-
-•	No inheritance mapping support for owned types, but you should be able to map two leaf types of the same inheritance hierarchies as different owned types. EF Core will not reason about the fact that they are part of the same hierarchy.
+- No inheritance mapping support for owned types, but you should be able to map two leaf types of the same inheritance hierarchies as different owned types. EF Core will not reason about the fact that they are part of the same hierarchy.
 
 #### Main differences with EF6's complex types
 
-•	Table splitting is optional, i.e. they can optionally be mapped to a separate table and still be owned types.
+- Table splitting is optional, i.e. they can optionally be mapped to a separate table and still be owned types.
 
-•	They can reference other entities (i.e. they can act as the dependent side on relationships to other non-owned types).
-
+- They can reference other entities (i.e. they can act as the dependent side on relationships to other non-owned types).
 
 ## Additional resources
 
--   **Martin Fowler. ValueObject pattern**
-    [*https://martinfowler.com/bliki/ValueObject.html*](https://martinfowler.com/bliki/ValueObject.html)
+- **Martin Fowler. ValueObject pattern** \
+  [*https://martinfowler.com/bliki/ValueObject.html*](https://martinfowler.com/bliki/ValueObject.html)
 
--   **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of value objects)
-    [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
+- **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of value objects) \
+  [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 
--   **Vaughn Vernon. Implementing Domain-Driven Design.** (Book; includes a discussion of value objects)
-    [*https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/*](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/)
+- **Vaughn Vernon. Implementing Domain-Driven Design.** (Book; includes a discussion of value objects) \
+  [*https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/*](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/)
 
--   **Shadow Properties**
-    [*https://docs.microsoft.com/ef/core/modeling/shadow-properties*](https://docs.microsoft.com/ef/core/modeling/shadow-properties)
+- **Shadow Properties** \
+  [*https://docs.microsoft.com/ef/core/modeling/shadow-properties*](https://docs.microsoft.com/ef/core/modeling/shadow-properties)
 
--   **Complex types and/or value objects**. Discussion in the EF Core GitHub repo (Issues tab)
-    [*https://github.com/aspnet/EntityFramework/issues/246*](https://github.com/aspnet/EntityFramework/issues/246)
+- **Complex types and/or value objects**. Discussion in the EF Core GitHub repo (Issues tab) \
+  [*https://github.com/aspnet/EntityFramework/issues/246*](https://github.com/aspnet/EntityFramework/issues/246)
 
--   **ValueObject.cs.** Base value object class in eShopOnContainers.
-    [*https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs*](https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs)
+- **ValueObject.cs.** Base value object class in eShopOnContainers.**  \
+  [*https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs*](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs)
 
--   **Address class.** Sample value object class in eShopOnContainers.
-    [*https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs*](https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs)
-
-
+- **Address class.** Sample value object class in eShopOnContainers. \
+  [*https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs*](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs)
 
 >[!div class="step-by-step"]
 [Previous](seedwork-domain-model-base-classes-interfaces.md)

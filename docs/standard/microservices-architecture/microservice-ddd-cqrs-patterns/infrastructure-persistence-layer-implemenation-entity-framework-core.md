@@ -1,11 +1,11 @@
 ---
 title: Implementing the infrastructure persistence layer with Entity Framework Core
-description: .NET Microservices Architecture for Containerized .NET Applications | Implementing the infrastructure persistence layer with Entity Framework Core
+description: .NET Microservices Architecture for Containerized .NET Applications | Explore the implementation details for the infrastructure persistance layer, using Entity Framework Core.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 12/12/2017
+ms.date: 10/08/2018
 ---
-# Implementing the infrastructure persistence layer with Entity Framework Core
+# Implement the infrastructure persistence layer with Entity Framework Core
 
 When you use relational databases such as SQL Server, Oracle, or PostgreSQL, a recommended approach is to implement the persistence layer based on Entity Framework (EF). EF supports LINQ and provides strongly typed objects for your model, as well as simplified persistence into your database.
 
@@ -19,17 +19,17 @@ Since an introduction to EF Core is already available in Microsoft documentation
 
 #### Additional resources
 
--   **Entity Framework Core**
-    [*https://docs.microsoft.com/ef/core/*](https://docs.microsoft.com/ef/core/)
+- **Entity Framework Core** \
+  [*https://docs.microsoft.com/ef/core/*](https://docs.microsoft.com/ef/core/)
 
--   **Getting started with ASP.NET Core and Entity Framework Core using Visual Studio**
-    [*https://docs.microsoft.com/aspnet/core/data/ef-mvc/*](https://docs.microsoft.com/aspnet/core/data/ef-mvc/)
+- **Getting started with ASP.NET Core and Entity Framework Core using Visual Studio** \
+  [*https://docs.microsoft.com/aspnet/core/data/ef-mvc/*](https://docs.microsoft.com/aspnet/core/data/ef-mvc/)
 
--   **DbContext Class**
-    [*https://docs.microsoft.com/ef/core/api/microsoft.entityframeworkcore.dbcontext*](https://docs.microsoft.com/ef/core/api/microsoft.entityframeworkcore.dbcontext)
+- **DbContext Class** \
+  [*https://docs.microsoft.com/ef/core/api/microsoft.entityframeworkcore.dbcontext*](https://docs.microsoft.com/ef/core/api/microsoft.entityframeworkcore.dbcontext)
 
--   **Compare EF Core & EF6.x**
-    [*https://docs.microsoft.com/ef/efcore-and-ef6/index*](https://docs.microsoft.com/ef/efcore-and-ef6/index)
+- **Compare EF Core & EF6.x** \
+  [*https://docs.microsoft.com/ef/efcore-and-ef6/index*](https://docs.microsoft.com/ef/efcore-and-ef6/index)
 
 ## Infrastructure in Entity Framework Core from a DDD perspective
 
@@ -76,7 +76,7 @@ public class Order : Entity
 
 Note that the `OrderItems` property can only be accessed as read-only using `IReadOnlyCollection<OrderItem>`. This type is read-only so it is protected against regular external updates. 
 
-EF Core provides a way to map the domain model to the physical database without "contaminating" the domain model. It is pure .NET POCO code, because the mapping action is implemented in the persistence layer. In that mapping action, you need to configure the fields-to-database mapping. In the following example of an OnModelCreating method, the highlighted code tells EF Core to access the OrderItems property through its field.
+EF Core provides a way to map the domain model to the physical database without "contaminating" the domain model. It is pure .NET POCO code, because the mapping action is implemented in the persistence layer. In that mapping action, you need to configure the fields-to-database mapping. In the following example of the `OnModelCreating` method from `OrderingContext` and the `OrderEntityTypeConfiguration` class, the call to `SetPropertyAccessMode` tells EF Core to access the `OrderItems` property through its field.
 
 ```csharp
 // At OrderingContext.cs from eShopOnContainers
@@ -106,9 +106,9 @@ class OrderEntityTypeConfiguration : IEntityTypeConfiguration<Order>
 }
 ```
 
-When you use fields instead of properties, the OrderItem entity is persisted just as if it had a List&lt;OrderItem&gt; property. However, it exposes a single accessor, the `AddOrderItem` method for adding new items to the order. As a result, behavior and data are tied together and will be consistent throughout any application code that uses the domain model.
+When you use fields instead of properties, the `OrderItem` entity is persisted just as if it had a `List<OrderItem>` property. However, it exposes a single accessor, the `AddOrderItem` method, for adding new items to the order. As a result, behavior and data are tied together and will be consistent throughout any application code that uses the domain model.
 
-## Implementing custom repositories with Entity Framework Core
+## Implement custom repositories with Entity Framework Core
 
 At the implementation level, a repository is simply a class with data persistence code coordinated by a unit of work (DBContext in EF Core) when performing updates, as shown in the following class:
 
@@ -152,11 +152,11 @@ namespace Microsoft.eShopOnContainers.Services.Ordering.Infrastructure.Repositor
 
 Note that the IBuyerRepository interface comes from the domain model layer as a contract. However, the repository implementation is done at the persistence and infrastructure layer.
 
-The EF DbContext comes through the constructor through Dependency Injection. It is shared between multiple repositories within the same HTTP request scope, thanks to its default lifetime (ServiceLifetime.Scoped) in the IoC container (which can also be explicitly set with services.AddDbContext&lt;&gt;).
+The EF DbContext comes through the constructor through Dependency Injection. It is shared between multiple repositories within the same HTTP request scope, thanks to its default lifetime (`ServiceLifetime.Scoped`) in the IoC container (which can also be explicitly set with `services.AddDbContext<>`).
 
 ### Methods to implement in a repository (updates or transactions versus queries)
 
-Within each repository class, you should put the persistence methods that update the state of entities contained by its related aggregate. Remember there is one-to-one relationship between an aggregate and its related repository. Take into account that an aggregate root entity object might have embedded child entities within its EF graph. For example, a buyer might have multiple payment methods as related child entities.
+Within each repository class, you should put the persistence methods that update the state of entities contained by its related aggregate. Remember there is one-to-one relationship between an aggregate and its related repository. Consider that an aggregate root entity object might have embedded child entities within its EF graph. For example, a buyer might have multiple payment methods as related child entities.
 
 Since the approach for the ordering microservice in eShopOnContainers is also based on CQS/CQRS, most of the queries are not implemented in custom repositories. Developers have the freedom to create the queries and joins they need for the presentation layer without the restrictions imposed by aggregates, custom repositories per aggregate, and DDD in general. Most of the custom repositories suggested by this guide have several update or transactional methods but just the query methods needed to get data to be updated. For example, the BuyerRepository repository implements a FindAsync method, because the application needs to know whether a particular buyer exists before creating a new buyer related to the order.
 
@@ -168,11 +168,11 @@ The Entity Framework DbContext class is based on the Unit of Work and Repository
 
 However, implementing custom repositories provides several benefits when implementing more complex microservices or applications. The Unit of Work and Repository patterns are intended to encapsulate the infrastructure persistence layer so it is decoupled from the application and domain model layers. Implementing these patterns can facilitate the use of mock repositories simulating access to the database.
 
-In Figure 9-18 you can see the differences between not using repositories (directly using the EF DbContext) versus using repositories which make it easier to mock those repositories.
+In Figure 7-18 you can see the differences between not using repositories (directly using the EF DbContext) versus using repositories which make it easier to mock those repositories.
 
-![](./media/image19.png)
+![Comparison between using a custom repository and a plain DbContext: the custom repository adds an abstraction layer that can be used to ease testing by mocking the repository.](./media/image19.png)
 
-**Figure 9-18**. Using custom repositories versus a plain DbContext
+**Figure 7-18**. Using custom repositories versus a plain DbContext
 
 There are multiple alternatives when mocking. You could mock just repositories or you could mock a whole unit of work. Usually mocking just the repositories is enough, and the complexity to abstract and mock a whole unit of work is usually not needed.
 
@@ -180,13 +180,13 @@ Later, when we focus on the application layer, you will see how Dependency Injec
 
 In short, custom repositories allow you to test code more easily with unit tests that are not impacted by the data tier state. If you run tests that also access the actual database through the Entity Framework, they are not unit tests but integration tests, which are a lot slower.
 
-If you were using DbContext directly, the only choice you would have would be to run unit tests by using an in-memory SQL Server with predictable data for unit tests. You would not be able to control mock objects and fake data in the same way at the repository level. Of course, you could always test the MVC controllers.
+If you were using DbContext directly, you would have to mock it or to run unit tests by using an in-memory SQL Server with predictable data for unit tests. But mocking the DbContext or controlling fake data requires more work than mocking at the repository level. Of course, you could always test the MVC controllers.
 
 ## EF DbContext and IUnitOfWork instance lifetime in your IoC container
 
-The DbContext object (exposed as an IUnitOfWork object) might need to be shared among multiple repositories within the same HTTP request scope. For example, this is true when the operation being executed must deal with multiple aggregates, or simply because you are using multiple repository instances. It is also important to mention that the IUnitOfWork interface is part of your domain layer, not an EF Core type.
+The `DbContext` object (exposed as an `IUnitOfWork` object) should be shared among multiple repositories within the same HTTP request scope. For example, this is true when the operation being executed must deal with multiple aggregates, or simply because you are using multiple repository instances. It is also important to mention that the `IUnitOfWork` interface is part of your domain layer, not an EF Core type.
 
-In order to do that, the instance of the DbContext object has to have its service lifetime set to ServiceLifetime.Scoped. This is the default lifetime when registering a DbContext with services.AddDbContext in your IoC container from the ConfigureServices method of the Startup.cs file in your ASP.NET Core Web API project. The following code illustrates this.
+In order to do that, the instance of the `DbContext` object has to have its service lifetime set to ServiceLifetime.Scoped. This is the default lifetime when registering a `DbContext` with `services.AddDbContext` in your IoC container from the ConfigureServices method of the `Startup.cs` file in your ASP.NET Core Web API project. The following code illustrates this.
 
 ```csharp
 public IServiceProvider ConfigureServices(IServiceCollection services)
@@ -228,20 +228,20 @@ Note that using the singleton lifetime for the repository could cause you seriou
 
 #### Additional resources
 
--   **Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application**
-    [*https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application*](https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
+- **Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application** \
+  [*https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application*](https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
 
--   **Jonathan Allen. Implementation Strategies for the Repository Pattern with Entity Framework, Dapper, and Chain**
-    [*https://www.infoq.com/articles/repository-implementation-strategies*](https://www.infoq.com/articles/repository-implementation-strategies)
+- **Jonathan Allen. Implementation Strategies for the Repository Pattern with Entity Framework, Dapper, and Chain** \
+  [*https://www.infoq.com/articles/repository-implementation-strategies*](https://www.infoq.com/articles/repository-implementation-strategies)
 
--   **Cesar de la Torre. Comparing ASP.NET Core IoC container service lifetimes with Autofac IoC container instance scopes**
-    [*https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/*](https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/)
+- **Cesar de la Torre. Comparing ASP.NET Core IoC container service lifetimes with Autofac IoC container instance scopes** \
+  [*https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/*](https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/)
 
 ## Table mapping
 
 Table mapping identifies the table data to be queried from and saved to the database. Previously you saw how domain entities (for example, a product or order domain) can be used to generate a related database schema. EF is strongly designed around the concept of *conventions*. Conventions address questions like “What will the name of a table be?” or “What property is the primary key?” Conventions are typically based on conventional names—for example, it is typical for the primary key to be a property that ends with Id.
 
-By convention, each entity will be set up to map to a table with the same name as the DbSet&lt;TEntity&gt; property that exposes the entity on the derived context. If no DbSet&lt;TEntity&gt; value is provided for the given entity, the class name is used.
+By convention, each entity will be set up to map to a table with the same name as the `DbSet<TEntity>` property that exposes the entity on the derived context. If no `DbSet<TEntity>` value is provided for the given entity, the class name is used.
 
 ### Data Annotations versus Fluent API
 
@@ -251,7 +251,7 @@ Data annotations must be used on the entity model classes themselves, which is a
 
 ### Fluent API and the OnModelCreating method
 
-As mentioned, in order to change conventions and mappings, you can use the OnModelCreating method in the DbContext class. 
+As mentioned, in order to change conventions and mappings, you can use the OnModelCreating method in the DbContext class.
 
 The ordering microservice in eShopOnContainers implements explicit mapping and configuration, when needed, as shown in the following code.
 
@@ -288,7 +288,7 @@ class OrderEntityTypeConfiguration : IEntityTypeConfiguration<Order>
             orderConfiguration.Property<string>("Description").IsRequired(false);
 
             var navigation = orderConfiguration.Metadata.FindNavigation(nameof(Order.OrderItems));
-            
+
             // DDD Patterns comment:
             //Set as field (New since EF 1.1) to access the OrderItem collection property through its field
             navigation.SetPropertyAccessMode(PropertyAccessMode.Field);
@@ -315,39 +315,39 @@ You could set all the Fluent API mappings within the same OnModelCreating method
 
 The code in the example shows a few explicit declarations and mapping. However, EF Core conventions do many of those mappings automatically, so the actual code you would need in your case might be smaller.
 
-
 ### The Hi/Lo algorithm in EF Core
 
 An interesting aspect of code in the preceding example is that it uses the [Hi/Lo algorithm](https://vladmihalcea.com/the-hilo-algorithm/) as the key generation strategy.
 
-The Hi/Lo algorithm is useful when you need unique keys. As a summary, the Hi-Lo algorithm assigns unique identifiers to table rows while not depending on storing the row in the database immediately. This lets you start using the identifiers right away, as happens with regular sequential database IDs.
+The Hi/Lo algorithm is useful when you need unique keys before committing changes. As a summary, the Hi-Lo algorithm assigns unique identifiers to table rows while not depending on storing the row in the database immediately. This lets you start using the identifiers right away, as happens with regular sequential database IDs.
 
-The Hi/Lo algorithm describes a mechanism for generating safe IDs on the client side rather than in the database. *Safe* in this context means without collisions. This algorithm is interesting for these reasons:
+The Hi/Lo algorithm describes a mechanism for getting a batch of unique IDs from a related database sequence. These IDs are safe to use because the database guarantees the uniqueness, so there will be no collisions between users. This algorithm is interesting for these reasons:
 
--   It does not break the Unit of Work pattern.
+- It does not break the Unit of Work pattern.
 
--   It does not require round trips the way sequence generators do in other DBMSs.
+- It gets sequence IDs in batches, to minimize round trips to the database.
 
--   It generates a human readable identifier, unlike techniques that use GUIDs.
+- It generates a human readable identifier, unlike techniques that use GUIDs.
 
 EF Core supports [HiLo](https://stackoverflow.com/questions/282099/whats-the-hi-lo-algorithm) with the ForSqlServerUseSequenceHiLo method, as shown in the preceding example.
 
-### Mapping fields instead of properties
+### Map fields instead of properties
 
-With this feature, available since EF Core 1.1, you can directly map columns to fields. It is possible to not use properties in the entity class, and just to map columns from a table to fields. A common use for that would be private fields for any internal state that do not need to be accessed from outside the entity. 
+With this feature, available since EF Core 1.1, you can directly map columns to fields. It is possible to not use properties in the entity class, and just to map columns from a table to fields. A common use for that would be private fields for any internal state that do not need to be accessed from outside the entity.
 
 You can do this with single fields or also with collections, like a `List<>` field. This point was mentioned earlier when we discussed modeling the domain model classes, but here you can see how that mapping is performed with the `PropertyAccessMode.Field` configuration highlighted in the previous code.
 
-### Using shadow properties in EF Core, hidden at the infrastructure level
+### Use shadow properties in EF Core, hidden at the infrastructure level
 
 Shadow properties in EF Core are properties that do not exist in your entity class model. The values and states of these properties are maintained purely in the [ChangeTracker](https://docs.microsoft.com/ef/core/api/microsoft.entityframeworkcore.changetracking.changetracker) class at the infrastructure level.
 
+## Implement the Query Specification pattern
 
-## Implementing the Specification pattern
+As introduced earlier in the design section, the Query Specification pattern is a Domain-Driven Design pattern designed as the place where you can put the definition of a query with optional sorting and paging logic.
 
-As introduced earlier in the design section, the Specification pattern (its full name would be Query-specification pattern) is a Domain-Driven Design pattern designed as the place where you can put the definition of a query with optional sorting and paging logic. The Specification pattern defines a query in an object. For example, in order to encapsulate a paged query that searches for some products you can create a PagedProduct specification that takes the necessary input parameters (pageNumber, pageSize, filter, etc.). Then, any Repository’s method (usually a List() overload) would accept an ISpecification and run the expected query based on that specification.
+The Query Specification pattern defines a query in an object. For example, in order to encapsulate a paged query that searches for some products you can create a PagedProduct specification that takes the necessary input parameters (pageNumber, pageSize, filter, etc.). Then, within any Repository method (usually a List() overload) it would accept an IQuerySpecification and run the expected query based on that specification.
 
-An example of a generic Specification interface is the following code from [eShopOnweb](https://github.com/dotnet-architecture/eShopOnWeb). 
+An example of a generic Specification interface is the following code from [eShopOnweb](https://github.com/dotnet-architecture/eShopOnWeb).
 
 ```csharp
 // GENERIC SPECIFICATION INTERFACE
@@ -394,7 +394,7 @@ public abstract class BaseSpecification<T> : ISpecification<T>
 }
 ```
 
-The following specification loads a single basket entity given either the basket’s ID or the ID of the buyer to whom the basket belongs. It will [eager load](https://docs.microsoft.com/ef/core/querying/related-data) the basket’s Items collection.
+The following specification loads a single basket entity given either the basket’s ID or the ID of the buyer to whom the basket belongs. It will [eagerly load](https://docs.microsoft.com/ef/core/querying/related-data) the basket’s Items collection.
 
 ```csharp
 // SAMPLE QUERY SPECIFICATION IMPLEMENTATION
@@ -438,31 +438,30 @@ public IEnumerable<T> List(ISpecification<T> spec)
                     .AsEnumerable();
 }
 ```
-In addition to encapsulating filtering logic, the specification can specify the shape of the data to be returned, including which properties to populate. 
+In addition to encapsulating filtering logic, the specification can specify the shape of the data to be returned, including which properties to populate.
 
-Although we don't recommended to return IQueryable from a repository, it’s perfectly fine to use them within the repository to build up a set of results. You can see this approach used in the List method above, which uses intermediate IQueryable expressions to build up the query’s list of includes before executing the query with the specification’s criteria on the last line.
-
+Although we don’t recommend to return IQueryable from a repository, it’s perfectly fine to use them within the repository to build up a set of results. You can see this approach used in the List method above, which uses intermediate IQueryable expressions to build up the query’s list of includes before executing the query with the specification’s criteria on the last line.
 
 #### Additional resources
 
--   **Table Mapping**
-    [*https://docs.microsoft.com/ef/core/modeling/relational/tables*](https://docs.microsoft.com/ef/core/modeling/relational/tables)
+- **Table Mapping** \
+  [*https://docs.microsoft.com/ef/core/modeling/relational/tables*](https://docs.microsoft.com/ef/core/modeling/relational/tables)
 
--   **Use HiLo to generate keys with Entity Framework Core**
-    [*http://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/*](http://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/)
+- **Use HiLo to generate keys with Entity Framework Core** \
+  [*http://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/*](http://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/)
 
--   **Backing Fields**
-    [*https://docs.microsoft.com/ef/core/modeling/backing-field*](https://docs.microsoft.com/ef/core/modeling/backing-field)
+- **Backing Fields** \
+  [*https://docs.microsoft.com/ef/core/modeling/backing-field*](https://docs.microsoft.com/ef/core/modeling/backing-field)
 
--   **Steve Smith. Encapsulated Collections in Entity Framework Core**
-    [*https://ardalis.com/encapsulated-collections-in-entity-framework-core*](https://ardalis.com/encapsulated-collections-in-entity-framework-core)
+- **Steve Smith. Encapsulated Collections in Entity Framework Core** \
+  [*https://ardalis.com/encapsulated-collections-in-entity-framework-core*](https://ardalis.com/encapsulated-collections-in-entity-framework-core)
 
--   **Shadow Properties**
-    [*https://docs.microsoft.com/ef/core/modeling/shadow-properties*](https://docs.microsoft.com/ef/core/modeling/shadow-properties)
+- **Shadow Properties** \
+  [*https://docs.microsoft.com/ef/core/modeling/shadow-properties*](https://docs.microsoft.com/ef/core/modeling/shadow-properties)
 
--   **The Specification pattern**
-    [*https://deviq.com/specification-pattern/*](https://deviq.com/specification-pattern/)
-    
+- **The Specification pattern** \
+  [*https://deviq.com/specification-pattern/*](https://deviq.com/specification-pattern/)
+
 
 >[!div class="step-by-step"]
 [Previous](infrastructure-persistence-layer-design.md)

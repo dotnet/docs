@@ -142,7 +142,6 @@
 ### [dotnet build-server](core/tools/dotnet-build-server.md)
 ### [dotnet clean](core/tools/dotnet-clean.md)
 ### [dotnet help](core/tools/dotnet-help.md)
-### [dotnet install-script](core/tools/dotnet-install-script.md)
 ### [dotnet migrate](core/tools/dotnet-migrate.md)
 ### [dotnet msbuild](core/tools/dotnet-msbuild.md)
 ### [dotnet new](core/tools/dotnet-new.md)
@@ -163,6 +162,7 @@
 #### [dotnet tool uninstall](core/tools/dotnet-tool-uninstall.md)
 #### [dotnet tool update](core/tools/dotnet-tool-update.md)
 ### [dotnet vstest](core/tools/dotnet-vstest.md)
+### [dotnet-install scripts](core/tools/dotnet-install-script.md)
 ### Project modification commands
 #### References
 ##### [dotnet add reference](core/tools/dotnet-add-reference.md)

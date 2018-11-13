@@ -82,7 +82,20 @@ Private Sub Form1_FormClosing( _
     End If  
 End Sub  
 ```  
-  
+
+This table shows the different icons:
+
+|Icon|Name|
+|-|-|
+|![White X in red circle](~/add/media/messagebox-hand.png "White X in red circle")|Hand|
+|![White question mark in blue circle](~/add/media/messagebox-question.png "White question mark in blue circle")|Question|
+|![Black exclamation point in yellow triangle](~/add/media/messagebox-exclamation.png "Black exclamation point in yellow triangle")|Exclamation|
+|![White lowercase i in blue circle](~/add/media/messagebox-asterisk.png "White lowercase i in blue circle")|Asterisk|
+|![White X in red circle](~/add/media/messagebox-stop.png "White X in red circle")|Stop|
+|![White X in red circle](~/add/media/messagebox-error.png "White X in red circle")|Error|
+|![Black exclamation point in yellow triangle](~/add/media/messagebox-warning.png "Black exclamation point in yellow triangle")|Warning|
+|![White lowercase i in blue circle](~/add/media/messagebox-information.png "White lowercase i in blue circle")|Information|
+
  ]]></format>
     </remarks>
   </Docs>

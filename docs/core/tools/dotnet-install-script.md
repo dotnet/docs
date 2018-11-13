@@ -15,7 +15,7 @@ ms.date: 09/11/2017
 
 Windows:
 
-`dotnet-install.ps1 [-Channel] [-Version] [-InstallDir] [-Architecture] [-SharedRuntime] [-DryRun] [-NoPath] [-AzureFeed] [-ProxyAddress] [--Verbose] [--Help]`
+`dotnet-install.ps1 [-Channel] [-Version] [-InstallDir] [-Architecture] [-SharedRuntime] [-DryRun] [-NoPath] [-AzureFeed] [-ProxyAddress] [-ProxyUseDefaultCredentials] [--Verbose] [--Help]`
 
 macOS/Linux:
 
@@ -91,6 +91,10 @@ Specifies the URL for the Azure feed to the installer. It isn't recommended that
 
 If set, the installer uses the proxy when making web requests. (Only valid for Windows)
 
+`-ProxyUseDefaultCredentials`
+
+If set, the installer uses the credentials of the current user to access the proxy server that is specified by the `-Proxy` parameter. (Only valid for Windows)
+
 `--verbose`
 
 Display diagnostics information.
@@ -130,6 +134,15 @@ Windows:
 macOS/Linux:
 
 `./dotnet-install.sh --shared-runtime --version 1.1.0`
+
+Obtain script and install the 2.1.2 version behind a corporate proxy:
+
+Windows:
+
+```powershell
+Invoke-WebRequest 'https://dot.net/v1/dotnet-install.ps1' -Proxy $env:HTTP_PROXY -ProxyUseDefaultCredentials -OutFile 'dotnet-install.ps1';
+./dotnet-install.ps1 -InstallDir '~/.dotnet' -Version '2.1.2' -ProxyAddress $env:HTTP_PROXY -ProxyUseDefaultCredentials;
+```
 
 Obtain script and install .NET Core CLI one-liner examples:
 

@@ -118,6 +118,9 @@ See [Prerequisites for .NET Core on Windows](windows-prerequisites.md) for more 
   - `debian-x64`
 - Fedora
   - `fedora-x64`
+- Linux Mint
+  - `linuxmint.17-x64`
+  - `linuxmint.18-x64`
 - openSUSE
   - `opensuse-x64`
 - Oracle Linux

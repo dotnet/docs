@@ -1,6 +1,6 @@
 ---
 title: "Backtracking in Regular Expressions"
-ms.date: "03/30/2017"
+ms.date: "11/12/2018"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -93,7 +93,7 @@ ms.author: "ronpet"
   
 -   It compares "s" in the pattern to the "s" that follows the matched "e" character (the first "s" in "expressions"). The match is successful.  
   
- When you use backtracking, matching the regular expression pattern with the input string, which is 55 characters long, requires 67 comparison operations. Interestingly, if the regular expression pattern included a lazy quantifier, .`*?(es)`, matching the regular expression would require additional comparisons. In this case, instead of having to backtrack from the end of the string to the "r" in "expressions", the regular expression engine would have to backtrack all the way to the beginning of the string to match "Es" and would require 113 comparisons. Generally, if a regular expression pattern has a single alternation construct or a single optional quantifier, the number of comparison operations required to match the pattern is more than twice the number of characters in the input string.  
+ When you use backtracking, matching the regular expression pattern with the input string, which is 55 characters long, requires 67 comparison operations. Generally, if a regular expression pattern has a single alternation construct or a single optional quantifier, the number of comparison operations required to match the pattern is more than twice the number of characters in the input string.  
   
  [Back to top](#top)  
   

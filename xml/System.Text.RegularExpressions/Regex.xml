@@ -5148,7 +5148,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
 > [!NOTE]
 >  <xref:System.Text.RegularExpressions.Regex.Unescape%2A> cannot reverse an escaped string perfectly because it cannot deduce precisely which characters were escaped,  
   
--   It replaces the hexadecimal values in verbatim string literals with the actual printable characters. For example, it replaces @"\0x07" with @"\a", or @"\x0A" with @"\n". It converts to supported escape characters such as \a, \b, \e, \n, \r, \f, \t, \v, and alphanumeric characters.
+-   It replaces the hexadecimal values in verbatim string literals with the actual printable characters. For example, it replaces @"\x07" with "\a", or @"\x0A" with "\n". It converts to supported escape characters such as \a, \b, \e, \n, \r, \f, \t, \v, and alphanumeric characters.
   
  If the <xref:System.Text.RegularExpressions.Regex.Unescape%2A> method encounters other escape sequences that it cannot convert, such as \w or \s, it throws an <xref:System.ArgumentException>.  
   

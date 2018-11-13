@@ -93,7 +93,7 @@ SOAP faults convey error condition information from a service to a client and in
  The following code example shows how to handle SOAP fault exceptions in a basic client application, including a declared fault and an undeclared fault.  
   
 > [!NOTE]
->  This sample code does not use the `using` construct. Because closing channels can throw exceptions, it is recommended that applications create a WCF client first, and then open, use, and close the WCF client in the same try block. For details, see [WCF Client Overview](../../../docs/framework/wcf/wcf-client-overview.md) and [Avoiding Problems with the Using Statement](../../../docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md).  
+>  This sample code does not use the `using` construct. Because closing channels can throw exceptions, it is recommended that applications create a WCF client first, and then open, use, and close the WCF client in the same try block. For details, see [WCF Client Overview](../../../docs/framework/wcf/wcf-client-overview.md) and [Use Close and Abort to release WCF client resources](../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md).  
   
  [!code-csharp[FaultContractAttribute#3](../../../samples/snippets/csharp/VS_Snippets_CFX/faultcontractattribute/cs/client.cs#3)]
  [!code-vb[FaultContractAttribute#3](../../../samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/client.vb#3)]  
@@ -103,4 +103,4 @@ SOAP faults convey error condition information from a service to a client and in
  <xref:System.ServiceModel.FaultException%601>  
  <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType>  
  [Expected Exceptions](../../../docs/framework/wcf/samples/expected-exceptions.md)  
- [Avoiding Problems with the Using Statement](../../../docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md)
+ [Use Close and Abort to release WCF client resources](../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md)

@@ -142,7 +142,7 @@
 ### [dotnet build-server](core/tools/dotnet-build-server.md)
 ### [dotnet clean](core/tools/dotnet-clean.md)
 ### [dotnet help](core/tools/dotnet-help.md)
-### [dotnet install-script](core/tools/dotnet-install-script.md)
+### [dotnet-install scripts](core/tools/dotnet-install-script.md)
 ### [dotnet migrate](core/tools/dotnet-migrate.md)
 ### [dotnet msbuild](core/tools/dotnet-msbuild.md)
 ### [dotnet new](core/tools/dotnet-new.md)

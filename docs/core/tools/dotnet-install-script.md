@@ -49,7 +49,7 @@ Specifies the source channel for the installation. The possible values are:
 * Two-part version in X.Y format representing a specific release (for example, `2.0` or `1.0`).
 * Branch name. For example, `release/2.0.0`, `release/2.0.0-preview2`, or `master` (for nightly releases).
 
-The default value is `LTS`. For more information on .NET support channels, see the [.NET Support Policy](https://www.microsoft.com/net/platform/support-policy) page.
+The default value is `LTS`. For more information on .NET support channels, see the [.NET Support Policy](https://www.microsoft.com/net/platform/support-policy#dotnet-core) page.
 
 `-Version <VERSION>`
 

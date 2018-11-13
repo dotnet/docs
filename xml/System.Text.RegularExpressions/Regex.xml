@@ -1,4 +1,4 @@
-﻿<Type Name="Regex" FullName="System.Text.RegularExpressions.Regex">
+<Type Name="Regex" FullName="System.Text.RegularExpressions.Regex">
   <TypeSignature Language="C#" Value="public class Regex : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Regex extends System.Object implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.Regex" />
@@ -5137,7 +5137,8 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
         <summary>Converts any escaped characters in the input string.</summary>
         <returns>A string of characters with any escaped characters converted to their unescaped form.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown">
+    <![CDATA[  
   
 ## Remarks  
  The <xref:System.Text.RegularExpressions.Regex.Unescape%2A> method performs one of the following two transformations:  
@@ -5147,7 +5148,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
 > [!NOTE]
 >  <xref:System.Text.RegularExpressions.Regex.Unescape%2A> cannot reverse an escaped string perfectly because it cannot deduce precisely which characters were escaped,  
   
--   It replaces the representation of unprintable characters with the characters themselves. For example, it replaces \a with \x07. The character representations it replaces are \a, \b, \e, \n, \r, \f, \t, and \v.  
+-   It replaces the hexadecimal values in verbatim string literals with the actual printable characters. For example, it replaces @"\0x07" with @"\a", or @"\x0A" with @"\n". It converts to supported escape characters such as \a, \b, \e, \n, \r, \f, \t, \v, and alphanumeric characters.
   
  If the <xref:System.Text.RegularExpressions.Regex.Unescape%2A> method encounters other escape sequences that it cannot convert, such as \w or \s, it throws an <xref:System.ArgumentException>.  
   

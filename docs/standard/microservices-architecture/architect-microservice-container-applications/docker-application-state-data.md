@@ -13,7 +13,7 @@ The following solutions are used to manage persistent data in Docker application
 
 From the Docker host, as [Docker Volumes](https://docs.docker.com/engine/admin/volumes/):
 
-- **Volumes** are stored in an area of the host filesystem that is managed by Docker.
+- **Volumes** are stored in an area of the host filesystem that's managed by Docker.
 
 - **Bind mounts** can map to any folder in the host filesystem, so access can't be controlled from Docker process and can pose a security risk as a container could access sensitive OS folders.
 
@@ -27,7 +27,7 @@ From remote storage:
 
 From the Docker container:
 
-> Docker provides a feature named the *overlay file system*. This implements a copy-on-write task that stores updated information to the root file system of the container. That information is in addition to the original image on which the container is based. If the container is deleted from the system, those changes are lost. Therefore, while it is possible to save the state of a container within its local storage, designing a system around this would conflict with the premise of container design, which by default is stateless.
+> Docker provides a feature named the *overlay file system*. This implements a copy-on-write task that stores updated information to the root file system of the container. That information is in addition to the original image on which the container is based. If the container is deleted from the system, those changes are lost. Therefore, while it's possible to save the state of a container within its local storage, designing a system around this would conflict with the premise of container design, which by default is stateless.
 >
 > However, the previously introduced Docker Volumes is now the preferred way to handling local data Docker. If you need more information about storage in containers check on [Docker storage drivers](https://docs.docker.com/storage/storagedriver/select-storage-driver/) and [About storage drivers](https://docs.docker.com/storage/storagedriver/).
 

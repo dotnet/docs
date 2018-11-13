@@ -89,6 +89,9 @@ The following list shows the most common RIDs used for each OS.
   - `win-x64`
   - `win-arm`
   - `win-arm64`
+- Windows 7 / Windows Server 2008 R2
+  - `win7-x64`
+  - `win7-x86`
 - Windows 10 / Windows Server 2016
   - `win10-x64`
   - `win10-x86`

@@ -68,58 +68,58 @@
 This article includes several examples that use the `DateTime` type:
 
 **Initialization Examples**      
- [Invoke a constructor](#initialization-01)     
- [Invoke the implicit default constructor](#initialization-02)     
- [Assignment from return value](#initialization-03)     
- [Parsing a string that represents a date and time](#initialization-04)     
- [Visual Basic syntax to initialize a date and time](#initialization-05)     
+- [Invoke a constructor](#initialization-01)
+- [Invoke the implicit default constructor](#initialization-02)
+- [Assignment from return value](#initialization-03)
+- [Parsing a string that represents a date and time](#initialization-04)
+- [Visual Basic syntax to initialize a date and time](#initialization-05)
 
 **Formatting `DateTime` objects as strings**  
- [Use the default date time format](#formatting-01)     
- [Format a date and time using a specific culture](#formatting-02)     
- [Format a date time using a standard or custom format string](#formatting-03)     
- [Specify both a format string and a specific culture](#formatting-04)     
- [Format a date time using the ISO 8601 standard for web services](#formatting-05)     
+- [Use the default date time format](#formatting-01)
+- [Format a date and time using a specific culture](#formatting-02)
+- [Format a date time using a standard or custom format string](#formatting-03)
+- [Specify both a format string and a specific culture](#formatting-04)
+- [Format a date time using the ISO 8601 standard for web services](#formatting-05)
 
 **Parsing strings as `DateTime` objects**  
- [Use `Parse` or `TryParse` to convert a string to a date and time](#parsing-01)     
- [Use `ParseExact` or `TryParseExact` to convert a string in a known format](#parsing-02)     
- [Convert from the ISO 8601 string representation to a date and time](#parsing-03)     
+- [Use `Parse` or `TryParse` to convert a string to a date and time](#parsing-01)
+- [Use `ParseExact` or `TryParseExact` to convert a string in a known format](#parsing-02)
+- [Convert from the ISO 8601 string representation to a date and time](#parsing-03)
 
 **`DateTime` resolution**  
- [Explore the resolution of date and time values](#resolution-01)     
- [Comparing for equality within a tolerance](#comparison-01)     
+- [Explore the resolution of date and time values](#resolution-01)
+- [Comparing for equality within a tolerance](#comparison-01)
 
 **Culture and calendars**  
- [Display date and time values using culture specific calendars](#calendars-01)     
- [Parse strings according to a culture specific calendar](#calendars-02)     
- [Initialize a date and time from a specific culture's calendar](#calendars-03)     
- [Accessing date and time properties using a specific culture's calendar](#calendars-04)     
- [Retrieving the week of the year using culture specific calendars](#calendars-05)     
+- [Display date and time values using culture specific calendars](#calendars-01)
+- [Parse strings according to a culture specific calendar](#calendars-02)
+- [Initialize a date and time from a specific culture's calendar](#calendars-03)
+- [Accessing date and time properties using a specific culture's calendar](#calendars-04)
+- [Retrieving the week of the year using culture specific calendars](#calendars-05)
 
 **Persistence**  
- [Persisting date and time values as strings in the local time zone](#persistence-01)     
- [Persisting date and time values as strings in a culture and time invariant format](#persistence-02)     
- [Persisting date and time values as integers](#persistence-03)     
- [Persisting date and time values using the `XmlSerializer`](#persistence-04)     
- [Persisting date and time values using the `BinaryFormatter`](#persistence-05)     
- [Persisting date and time values with time zone data](#persistence-06)     
+- [Persisting date and time values as strings in the local time zone](#persistence-01)
+- [Persisting date and time values as strings in a culture and time invariant format](#persistence-02)
+- [Persisting date and time values as integers](#persistence-03)
+- [Persisting date and time values using the `XmlSerializer`](#persistence-04)
+- [Persisting date and time values using the `BinaryFormatter`](#persistence-05)
+- [Persisting date and time values with time zone data](#persistence-06)
 
 ## Quick links to Remarks topics.
 
 This section contains topics for many common uses of the `DateTime` struct:
   
- [Initializing a `DateTime` object](#initializing-a-datetime-object)   
- [DateTime values and their string representations](#datetime-values-and-their-string-representations)   
- [Parsing DateTime values from strings](#parsing-datetime-values-from-strings)   
- [DateTime values](#datetime-values)   
- [DateTime operations](#datetime-operations)   
- [DateTime resolution](#datetime-resolution)   
- [DateTime values and calendars](#datetime-values-and-calendars)   
- [Persisting DateTime values](#persisting-datetime-values)   
- [DateTime vs. TimeSpan](#datetime-vs-timespan)   
- [Comparing for equality within tolerance](#comparing-for-equality-within-tolerance)
- [COM interop considerations](#com-interop-considerations)  
+- [Initializing a `DateTime` object](#initializing-a-datetime-object)
+- [DateTime values and their string representations](#datetime-values-and-their-string-representations)
+- [Parsing DateTime values from strings](#parsing-datetime-values-from-strings)
+- [DateTime values](#datetime-values)
+- [DateTime operations](#datetime-operations)
+- [DateTime resolution](#datetime-resolution)
+- [DateTime values and calendars](#datetime-values-and-calendars)
+- [Persisting DateTime values](#persisting-datetime-values)
+- [DateTime vs. TimeSpan](#datetime-vs-timespan)
+- [Comparing for equality within tolerance](#comparing-for-equality-within-tolerance)
+- [COM interop considerations](#com-interop-considerations)
    
 The <xref:System.DateTime> value type represents dates and times with values ranging from 00:00:00 (midnight), January 1, 0001 Anno Domini (Common Era) through 11:59:59 P.M., December 31, 9999 A.D. (C.E.) in the Gregorian calendar.  
   
@@ -140,7 +140,7 @@ You can assign an initial value to a new `DateTime` value in many different ways
 - Calling a constructor, either one where you specify arguments for values, or use the implicit default constructor.
 - Assigning a `DateTime` to the return value of a property or method.
 - Parsing a `DateTime` value from its string representation.
-- Using Visual Basic specific language features to instantiate a `DateTime`. 
+- Using Visual Basic-specific language features to instantiate a `DateTime`. 
 
 The following code snippets show examples of each:
 
@@ -4741,11 +4741,11 @@ juillet 2009
 ## Remarks  
  In this section:  
   
- [Which method do I call?](#Tasks)   
- [The string to parse](#StringToParse)   
- [Parsing and cultural conventions](#Culture)   
- [Parsing and style elements](#Styles)   
- [The return value and DateTime.Kind](#kind)
+- [Which method do I call?](#Tasks)
+- [The string to parse](#StringToParse)
+- [Parsing and cultural conventions](#Culture)
+- [Parsing and style elements](#Styles)
+- [The return value and DateTime.Kind](#kind)
  
 <a name="Tasks"></a>   
 ### Which method do I call?  

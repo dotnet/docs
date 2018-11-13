@@ -8,7 +8,7 @@ ms.date: 07/19/2018
 # .NET Core RID Catalog
 
 RID is short for *Runtime IDentifier*. RID values are used to identify target platforms where the application runs.
-They're used by .NET packages to represent platform-specific assets in NuGet packages. The following values are examples of RIDs: `linux-x64`, `ubuntu.14.04-x64`, `win7-x64`, or `osx.10.12-x64`.
+They're used by .NET packages to represent platform-specific assets in NuGet packages. The following values are examples of RIDs: `linux-x64`, `ubuntu.18.04-arm64`, `win7-x86`, or `osx.10.12-x64`.
 For the packages with native dependencies, the RID designates on which platforms the package can be restored.
 
 A single RID can be set in the `<RuntimeIdentifier>` element of your project file. Multiple RIDs can be defined as a semicolon-delimited list in the project file's `<RuntimeIdentifiers>` element. They're also used via the `--runtime` option with the following [.NET Core CLI commands](./tools/index.md):
@@ -31,7 +31,7 @@ RIDs that represent concrete operating systems usually follow this pattern: `[os
 
 - `[architecture]` is the processor architecture. For example: `x86`, `x64`, `arm`, or `arm64`.
 
-- `[additional qualifiers]` further differentiate different platforms. For example: `aot` or `corert`.
+- `[additional qualifiers]` further differentiate different platforms. For example: `aot`.
 
 ## RID graph
 
@@ -80,24 +80,15 @@ For the latest and complete version, see the [runtime.json](https://github.com/d
 
 .NET Core 2.0 SDK introduces the concept of portable RIDs. They are new values added to the RID graph that aren't tied to a specific version or OS distribution. They're particularly useful when dealing with multiple Linux distros.
 
-The following list shows the most common RIDs used for each OS. It doesn't cover `arm` or `corert` values.
+The following list shows the most common RIDs used for each OS.
 
 ## Windows RIDs
 
 - Portable
   - `win-x86`
   - `win-x64`
-- Windows 7 / Windows Server 2008 R2
-  - `win7-x64`
-  - `win7-x86`
-- Windows 8 / Windows Server 2012
-  - `win8-x64`
-  - `win8-x86`
-  - `win8-arm`
-- Windows 8.1 / Windows Server 2012 R2
-  - `win81-x64`
-  - `win81-x86`
-  - `win81-arm`
+  - `win-arm`
+  - `win-arm64`
 - Windows 10 / Windows Server 2016
   - `win10-x64`
   - `win10-x86`
@@ -110,85 +101,46 @@ See [Prerequisites for .NET Core on Windows](windows-prerequisites.md) for more 
 
 - Portable
   - `linux-x64`
+  - `linux-arm`
+  - `linux-arm64`
+- Portable (musl-libc based distros)
+  - `linux-musl-x64`
+  - `linux-musl-arm`
+  - `linux-musl-arm64`
+- Alpine
+  - `alpine-x64`
 - CentOS
   - `centos-x64`
-  - `centos.7-x64`
 - Debian
   - `debian-x64`
-  - `debian.8-x64`
-  - `debian.9-x64` (.NET Core 1.1 or later versions)
 - Fedora
   - `fedora-x64`
-  - `fedora.27-x64`
-  - `fedora.28-x64` (.NET Core 1.1 or later versions)
-- Gentoo (.NET Core 2.0 or later versions)
-  - `gentoo-x64`
 - openSUSE
   - `opensuse-x64`
-  - `opensuse.42.3-x64`
 - Oracle Linux
   - `ol-x64`
-  - `ol.7-x64`
-  - `ol.7.0-x64`
-  - `ol.7.1-x64`
-  - `ol.7.2-x64`
-  - `ol.7.3-x64`
-  - `ol.7.4-x64`
 - Red Hat Enterprise Linux
   - `rhel-x64`
-  - `rhel.6-x64` (.NET Core 2.0 or later versions)
-  - `rhel.7-x64`
-  - `rhel.7.1-x64`
-  - `rhel.7.2-x64`
-  - `rhel.7.3-x64` (.NET Core 2.0 or later versions)
-  - `rhel.7.4-x64` (.NET Core 2.0 or later versions)
-- Tizen (.NET Core 2.0 or later versions)
-  - `tizen`
-  - `tizen.4.0.0`
-  - `tizen.5.0.0`
+  - `rhel.6-x64`
 - Ubuntu
   - `ubuntu-x64`
   - `ubuntu.14.04-x64`
   - `ubuntu.16.04-x64`
   - `ubuntu.17.10-x64`
   - `ubuntu.18.04-x64`
-- Ubuntu derivatives
-  - `linuxmint.17-x64`
-  - `linuxmint.17.1-x64`
-  - `linuxmint.17.2-x64`
-  - `linuxmint.17.3-x64`
-  - `linuxmint.18-x64` (.NET Core 2.0 or later versions)
-  - `linuxmint.18.1-x64` (.NET Core 2.0 or later versions)
-  - `linuxmint.18.2-x64` (.NET Core 2.0 or later versions)
-  - `linuxmint.18.3-x64` (.NET Core 2.0 or later versions)
-- SUSE Enterprise Linux (SLES) (.NET Core 2.0 or later versions)
+- SUSE Enterprise Linux (SLES)
   - `sles-x64`
-  - `sles.12-x64`
-  - `sles.12.1-x64`
-  - `sles.12.2-x64`
-  - `sles.12.3-x64`
-- Alpine Linux (.NET Core 2.1 or later versions)
-  - `alpine-x64`
-  - `alpine.3.7-x64`
 
-See [Prerequisites for .NET Core on Linux](linux-prerequisites.md) for more information.
+See [Prerequisites for .NET Core on Linux](linux-prerequisites.md) for more information about supported Linux versions.
 
 ## macOS RIDs
 
 macOS RIDs use the older "OSX" branding.
 
-- `osx-x64` (.NET Core 2.0 or later versions, minimum version is `osx.10.12-x64`)
-- `osx.10.10-x64`
-- `osx.10.11-x64`
-- `osx.10.12-x64` (.NET Core 1.1 or later versions)
-- `osx.10.13-x64`
+- `osx-x64`
+- `osx.10.12-x64`
 
-See [Prerequisites for .NET Core on macOS](macos-prerequisites.md) for more information.
-
-## Android RIDs (.NET Core 2.0 or later versions)
-
-- `android`
-- `android.21`
+See [Prerequisites for .NET Core on macOS](macos-prerequisites.md) for more information about supported macOS versions.
 
 ## See also
 

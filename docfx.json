@@ -134,6 +134,9 @@
       },
       "langs": {
         "api/**.yml": ["csharp", "vb", "fsharp", "cpp"]
+      },
+      "feedback_system": {
+        "api/System.Web**.yml": "None"
       }
     },
     "dest": "_site",

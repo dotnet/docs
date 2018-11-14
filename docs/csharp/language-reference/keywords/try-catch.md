@@ -49,7 +49,7 @@ catch (ArgumentException e) when (e.ParamName == "…")
 
 Exception filters are preferable to catching and rethrowing (explained below) because filters leave the stack unharmed.  If a later handler dumps the stack, you can see where the exception originally came from, rather than just the last place it was rethrown.  A common use of exception filter expressions is logging.  You can create a filter that always returns false that also outputs to a log, you can log exceptions as they go by without having to handle them and rethrow.
 
-A [throw](../../../csharp/language-reference/keywords/throw.md) statement can be used in a `catch` block to re-throw the exception that is caught by the `catch` statement. The following example extracts source information from an <xref:System.IO.IOException> exception, and then throws the exception to the parent method.
+A [throw](throw.md) statement can be used in a `catch` block to re-throw the exception that is caught by the `catch` statement. The following example extracts source information from an <xref:System.IO.IOException> exception, and then throws the exception to the parent method.
 
 ```csharp
 catch (FileNotFoundException e)
@@ -121,12 +121,12 @@ static void Main()
 }
 ```
 
-For more information about catch, see [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md).
+For more information about catch, see [try-catch-finally](try-catch-finally.md).
 
 ## Exceptions in Async Methods
-An async method is marked  by an  [async](../../../csharp/language-reference/keywords/async.md) modifier and usually contains one or more await expressions or statements. An await expression applies the [await](../../../csharp/language-reference/keywords/await.md) operator to a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
+An async method is marked  by an  [async](async.md) modifier and usually contains one or more await expressions or statements. An await expression applies the [await](await.md) operator to a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
 
-When control reaches an `await` in the async method, progress in the method is suspended until the awaited task completes. When the task  is complete, execution can resume in the method. For more information, see [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md) and [Control Flow in Async Programs](../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md).
+When control reaches an `await` in the async method, progress in the method is suspended until the awaited task completes. When the task  is complete, execution can resume in the method. For more information, see [Asynchronous Programming with async and await](../../programming-guide/concepts/async/index.md) and [Control Flow in Async Programs](../../programming-guide/concepts/async/control-flow-in-async-programs.md).
 
 The completed task to which `await` is applied might be in a faulted state because of an unhandled exception in the method that returns the task. Awaiting the task throws an exception. A task can also end up in a canceled state if the asynchronous process that returns it is canceled. Awaiting a canceled task throws  an `OperationCanceledException`. For more information about how to cancel an asynchronous process, see [Fine-Tuning Your Async Application](../../programming-guide/concepts/async/fine-tuning-your-async-application.md).
 
@@ -138,7 +138,7 @@ A task can be in a faulted state because multiple exceptions occurred in the awa
 
 In the following example, the `try` block contains a call to the `ProcessString` method that may cause an exception. The `catch` clause contains the exception handler that just displays a message on the screen. When the `throw` statement is called from inside `MyMethod`, the system looks for the `catch` statement and displays the message `Exception caught`.
 
-[!code-csharp[csrefKeywordsExceptions#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-catch_1.cs)]
+[!code-csharp[csrefKeywordsExceptions#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsExceptions/CS/csrefKeywordsExceptions.cs#2)]
 
 ## Example
 
@@ -148,7 +148,7 @@ To catch the least specific exception, you can replace the throw statement in `P
 
 If you place the least-specific catch block first in the example, the following  error message appears: `A previous catch clause already catches all exceptions of this or a super type ('System.Exception')`.
 
-[!code-csharp[csrefKeywordsExceptions#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-catch_2.cs)]
+[!code-csharp[csrefKeywordsExceptions#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsExceptions/CS/csrefKeywordsExceptions.cs#3)]
 
 ## Example
 
@@ -158,7 +158,7 @@ Uncomment the `throw new Exception` line in the example to demonstrate exception
 
 Uncomment the `throw new OperationCancelledException` line to demonstrate what happens when you cancel an asynchronous process. The task's `IsCanceled` property is set to `true`, and the exception is caught in the `catch` block. Under some conditions that don't apply to this example, the task's `IsFaulted` property is set to `true` and `IsCanceled` is set to `false`.
 
-[!code-csharp[csAsyncExceptions#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-catch_3.cs)]
+[!code-csharp[csAsyncExceptions#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csasyncexceptions/cs/class1.cs#2)]  
 
 ## Example
 
@@ -166,7 +166,7 @@ The following example illustrates exception handling where multiple tasks can re
 
 Each of the three tasks causes an exception. The `catch` block iterates through the exceptions, which are found in the `Exception.InnerExceptions` property of the task that was returned by <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>.
 
-[!code-csharp[csAsyncExceptions#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-catch_4.cs)]
+[!code-csharp[csAsyncExceptions#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csasyncexceptions/cs/class1.cs#4)] 
 
 ## C# language specification
 
@@ -174,11 +174,11 @@ Each of the three tasks causes an exception. The `catch` block iterates through 
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
 - [try, throw, and catch Statements (C++)](/cpp/cpp/try-throw-and-catch-statements-cpp)
-- [Exception Handling Statements](../../../csharp/language-reference/keywords/exception-handling-statements.md)
-- [throw](../../../csharp/language-reference/keywords/throw.md)
-- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)
+- [Exception Handling Statements](exception-handling-statements.md)
+- [throw](throw.md)
+- [try-finally](try-finally.md)
 - [How to: Explicitly Throw Exceptions](../../../standard/exceptions/how-to-explicitly-throw-exceptions.md)

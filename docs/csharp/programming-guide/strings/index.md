@@ -69,14 +69,12 @@ A string is an object of type <xref:System.String> whose value is text. Internal
 ### String Interpolation  
 Available in C# 6.0 and later, [*interpolated strings*](../../../csharp/language-reference/tokens/interpolated) are identified by the `$` special character and include interpolated expressions in braces. If you are new to string interpolation, see the [String interpolation - C# interactive tutorial](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/intro-to-csharp/interpolated-strings) for a quick overview.
 
-Utilizing string interpolation improves the syntax and readability of C# code. String interpolation achieves the same results as the `String.Format` method below, but represents an improvement due to ease of use of clarity inline.
+Utilizing string interpolation improves the syntax and readability of C# code. String interpolation achieves the same results as the `String.Format` method below, but represents an improvement due to ease of use and inline clarity.
 
 `Sample...`
 
-###Format Method
-The [format method](https://docs.microsoft.com/en-us/dotnet/api/system.string.format?view=netframework-4.7.2) utilizes placeholders in braces to create a format string. The following example uses a format string to output the result of each iteration of a loop:  
-
-// Should sample create same output as above...? Or keep existing?
+### Format Method
+The [format method](https://docs.microsoft.com/en-us/dotnet/api/system.string.format?view=netframework-4.7.2) utilizes placeholders in braces to create a format string. The following example uses a format string to output the result of each iteration of a loop:
 
 using the static <xref:System.String.Format%2A> method 
   

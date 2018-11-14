@@ -17,7 +17,7 @@ A common usage of `catch` and `finally` together is to obtain and use resources 
 
 ## Example
 
-[!code-csharp[csrefKeywordsExceptions#1](codesnippet/CSharp/try-catch-finally_1.cs)]
+[!code-csharp[csrefKeywordsExceptions#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsExceptions/CS/csrefKeywordsExceptions.cs#1)]  
 
 ## C# language specification
 

@@ -63,6 +63,11 @@ A string is an object of type <xref:System.String> whose value is text. Internal
 > [!NOTE]
 >  At compile time, verbatim strings are converted to ordinary strings with all the same escape sequences. Therefore, if you view a verbatim string in the debugger watch window, you will see the escape characters that were added by the compiler, not the verbatim version from your source code. For example, the verbatim string @"C:\files.txt" will appear in the watch window as "C:\\\files.txt".  
   
+## String Interpolation  
+The special character: `$` identifies an [*interpolated string*](../../../csharp/language-reference/tokens/interpolated). Interpolated strings may contain *interpolated expressions* inside of `{}`. Expressions are resolved at run time outputting a cohesive string. Interpolated strings are available in C# 6.0 and later. Utilizing string interpolation improves the syntax and readability of C# code. String interpolation can acheive the same results as [string composite formatting](../../../standard/base-types/composite-formatting.md), but represents an improvement due to readability and ease of use.
+  
+ [!code-csharp[csProgGuideStrings#26](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_13.cs)]
+
 ## Format Strings  
  A format string is a string whose contents can be determined dynamically at runtime. You create a format string by using the static <xref:System.String.Format%2A> method and embedding placeholders in braces that will be replaced by other values at runtime. The following example uses a format string to output the result of each iteration of a loop:  
   

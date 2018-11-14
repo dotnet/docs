@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.custom: mvc
 #Customer intent: As a developer, I want to apply feature engineering for my model training on textual data with ML.NET so that I can use my model in the ML.NET processing pipeline.
 ---
-# Applying feature engineering for machine learning model training on textual data with ML.NET
+# Apply feature engineering for machine learning model training on textual data with ML.NET
 
 You need to convert any non float data to `float` data types since all ML.NET `learners` expect features as a `float vector`.
 

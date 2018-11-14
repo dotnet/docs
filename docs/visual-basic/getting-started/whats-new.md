@@ -84,7 +84,7 @@ Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
 
 ```
 
-Note that this truncates rather than rounds floating-point value.
+Note that this truncates rather than rounds floating-point values.
 
 ## Visual Basic 15.5
 

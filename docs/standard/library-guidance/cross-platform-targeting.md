@@ -57,7 +57,7 @@ To shield your consumers from having to build for individual frameworks, you sho
 
 > The .NET Standard assembly will automatically be used by NuGet. Targeting individual .NET implementations increases the `*.nupkg` size for no benefit.
 
-**✔️ CONSIDER** adding a target for `net461` when you're offering a `netstandard2.0` target. 
+**✔️ DO** add a target for `net461` when you're offering a `netstandard2.0` target. 
 
 > Using .NET Standard 2.0 from .NET Framework has some issues that were addressed in .NET Framework 4.7.2. You can improve the experience for developers that are still on .NET Framework 4.6.1 - 4.7.1 by offering them a binary that is built for .NET Framework 4.6.1.
 

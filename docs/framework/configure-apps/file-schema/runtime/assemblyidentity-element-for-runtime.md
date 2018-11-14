@@ -46,10 +46,10 @@ culture="assembly culture"/>
   
 |Value|Description|  
 |-----------|-----------------|  
-|`amd64`|A 64-bit AMD processor only.|  
-|`ia64`|A 64-bit Intel processor only.|  
-|`msil`|Neutral with respect to processor and bits-per-word|  
-|`x86`|A 32-bit Intel processor, either native or in the Windows on Windows (WOW) environment on a 64-bit platform.|  
+|`amd64`|AMD x86-64 architecture only.|  
+|`ia64`|Intel Itanium architecture only.|  
+|`msil`|Neutral with respect to processor and bits-per-word.|  
+|`x86`|A 32-bit x86 processor, either native or in the Windows on Windows (WOW) environment on a 64-bit platform.|  
   
 ### Child Elements  
  None.  

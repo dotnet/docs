@@ -338,9 +338,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the accessibility object for the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> control.</summary>
+        <returns>The accessibility object for this <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> control.</returns>        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultMargin">
@@ -422,9 +421,10 @@
         <ReturnType>System.Windows.Forms.Automation.AutomationLiveSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates the politeness level that a client should use to notify the user of changes to the live region.</summary>
+        <value>The politeness level for notifications. Its default value is <see cref="F:System.Windows.Forms.Automation.AutomationLiveSetting.Off" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Windows.Forms.Automation.AutomationLiveSetting" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnPaint">
@@ -473,8 +473,8 @@
       </Parameters>
       <Docs>
         <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Raises the <see cref="System.Windows.Forms.ToolStripItem.TextChanged" /> event.</summary>
+        <remarks>An object that contains event information.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Spring">

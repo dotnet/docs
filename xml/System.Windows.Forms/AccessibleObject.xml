@@ -1473,12 +1473,20 @@
         <Parameter Name="notificationText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="notificationKind">To be added.</param>
-        <param name="notificationProcessing">To be added.</param>
-        <param name="notificationText">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="notificationKind">The type of notification.</param>
+        <param name="notificationProcessing">An indicator of how to process notifications.</param>
+        <param name="notificationText">The text of the notification.</param>
+        <summary>Raises the UI automation notification event.</summary>
+        <returns><see langword="true" /> if the operation succeeds; <see langword="false" /> if the underlying Windows infrastucture is not available or the operation failed. Call <see cref="M:System.Runtime.InteropServices.Marshal.GetLastWin32Error" /> for details. </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks
+
+This event is available starting with Windows 10, version 1709.
+  
+       ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RaiseLiveRegionChanged">
@@ -1498,9 +1506,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Raises the LiveRegionChanged UI automation event.</summary>
+        <returns><see langword="true" /> if the operation succeeds; <see langword="False" /> otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks
+
+This method must be overridden in derived classes that support the UI automation live region feature.
+  
+     ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Accessibility object live regions are not supported. </exception>
       </Docs>
     </Member>
     <Member MemberName="Role">

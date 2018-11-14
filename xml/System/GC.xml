@@ -722,9 +722,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the total number of bytes allocated to the current thread since the beginning of its lifetime.</summary>
+        <returns>The total number of bytes allocated to the current thread since the beginning of its lifetime.</returns>
+        <remarks>
+         <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The `GetAllocatedBytesForCurrentThread` method returns the total number of bytes allocated on the managed heap during the lifetime of a thread, not the total number of bytes that have survived garbage collection. The returned value also does not include any native allocations.
+
+This method is most useful in monitoring scenarious for measuring the difference in memory allocation between time intervals or events.
+
+       ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetGeneration">

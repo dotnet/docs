@@ -4426,9 +4426,9 @@
         <Parameter Name="dpi" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dpi">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dpi">An arbitrary DPI value used to scale the vertical scroll bar arrow bitmap.</param>
+        <summary>Gets the height of the vertical scroll bar arrow bitmap in pixels.</summary>
+        <returns>The height of the vertical scroll bar arrow bitmap in pixels.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

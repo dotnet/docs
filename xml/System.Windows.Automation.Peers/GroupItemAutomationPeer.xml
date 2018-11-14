@@ -152,8 +152,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Supplies the method called by the <see cref="M:System.Windows.Automation.Peers.AutomationPeer.HasKeyboardFocus" /> method to indicate whether the element associated with this automation peer currently has keyboard focus.</summary>
+        <returns><see langword="true" /> if the element has keyboard focus; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,8 +174,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Supplies the method called by the <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsKeyboardFocusable" /> method to indicate whether the element can accept keyboard focus.</summary>
+        <returns><see langword="true" /> if the element can accept keyboard focus; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,7 +228,7 @@ In some circumstances, the element can be on the screen but still not be visible
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Supplies the method called by the <see cref="M:System.Windows.Automation.Peers.AutomationPeer.SetFocus" /> method to set the keyboard focus on the element that's associated with this automation peer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

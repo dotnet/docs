@@ -476,9 +476,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Raises the LiveRegionChanged UI automation event.</summary>
+        <returns><see langword="true" /> if the operation succeeds; otherwise, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+For this method to be effective, the control must implement the <xref:System.Windows.Forms.Automation.IAutomationLiveRegion?displayProperty=nameWithType> interface, and its `LiveSetting` property must return either <xref:System.Windows.Automation.AutomationLiveSetting.Polite?displayProperty=nameWithType> or <xref:System.Windows.Automation.AutomationLiveSetting.Assertive?displayProperty=<nameWithType>. In addition, the application must be recompiled to target .NET Framework 4.8 or opt in to this feature by using compatibility switches.
+
+       ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The owner control is not a live region.</exception>
       </Docs>
     </Member>
     <Member MemberName="Role">

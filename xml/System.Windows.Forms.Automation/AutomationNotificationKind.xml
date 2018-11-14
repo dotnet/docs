@@ -13,7 +13,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates the type of notification when raising the UI automation notification event. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current element has a notification that an action was abandoned.</summary>
       </Docs>
     </Member>
     <Member MemberName="ActionCompleted">
@@ -54,7 +54,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current element has a notification that an action was completed.</summary>
       </Docs>
     </Member>
     <Member MemberName="ItemAdded">
@@ -74,7 +74,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Something that should be presented to the user was added to the current element.</summary>
       </Docs>
     </Member>
     <Member MemberName="ItemRemoved">
@@ -94,7 +94,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Something that should be presented to the user was removed from the current element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Other">
@@ -114,7 +114,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current element has a notification that is not due to an addition or removal of something, or to a completed or aborted action.</summary>
       </Docs>
     </Member>
   </Members>

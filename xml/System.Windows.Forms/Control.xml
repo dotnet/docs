@@ -8547,9 +8547,9 @@ MyControl.Font = New Font(MyControl.Font, _
         <Parameter Name="value" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The size to be scaled.</param>
+        <summary>Transforms a size from logical to device units by scaling it for the current DPI and rounding down to the nearest integer value for width and height.</summary>
+        <returns>The scaled size.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8573,7 +8573,7 @@ MyControl.Font = New Font(MyControl.Font, _
       </Parameters>
       <Docs>
         <param name="value">The Logical value to convert.</param>
-        <summary>Converts a Logical DPI value to it's equivalent DeviceUnit DPI value.</summary>
+        <summary>Converts a Logical DPI value to its equivalent DeviceUnit DPI value.</summary>
         <returns>The resulting DeviceUnit value.</returns>
         <remarks>To be added.</remarks>
       </Docs>

@@ -11,8 +11,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides support for UI automation live regions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+This feature is available in applications that are recompiled to target .NET Framework 4.8 or that opt into this functionality by using compatibility switches.
+
+   ]]></format>
+    
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="LiveSetting">
@@ -31,8 +38,8 @@
         <ReturnType>System.Windows.Forms.Automation.AutomationLiveSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the notification characteristics of the live region.</summary>
+        <value>The notification characteristics of the live region.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1408,9 +1408,9 @@
         <Parameter Name="deviceDpiNew" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="deviceDpiOld">To be added.</param>
-        <param name="deviceDpiNew">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="deviceDpiOld">The DPI value prior to the change.</param>
+        <param name="deviceDpiNew">The DPI value after the change.</param>
+        <summary>Provides constants for rescaling the <see cref="T:System.Windows.Forms.ScrollBar" /> control when a DPI change occurs.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1441,8 +1441,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag to let the scrollbar scale according to the DPI of the window.</summary>
+        <value><see langword="true" /> to let the scrollbar scale according to the DPI of the window; <see langword="false" /> otherwise. The default value is <see langword="true" />. </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

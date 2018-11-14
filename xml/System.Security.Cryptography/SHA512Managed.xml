@@ -127,9 +127,17 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing"><see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases unmanaged resources used by the <see cref="T:System.Security.Cryptography.SHA512Managed" /> object and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+This method is called by the public <xref:System.Security.Cryptography.HashAlgorithm.Dispose> method and the <xref:System.Security.Cryptography.SHA512Managed.Finalize%2A> method. <xref:System.Security.Cryptography.HashAlgorithm.Dispose> invokes the protected <xref:System.Security.Cryptography.SHA512Managed.Dispose(System.Boolean)> method with the `disposing` parameter set to `true`. <xref:System.Security.Cryptography.SHA512Managed.Finalize%2A> invokes <xref:System.Security.Cryptography.SHA512Managed.Dispose(System.Boolean)> with `disposing` set to `false`.</remarks>
+
+       ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">

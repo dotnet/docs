@@ -1325,9 +1325,10 @@
         <ReturnType>System.Windows.Forms.Automation.AutomationLiveSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates the politeness level that a client should use to notify the user of changes to the live region.</summary>
+        <value>The politeness level for notifications. Its default value is <see cref="F:System.Windows.Forms.Automation.AutomationLiveSetting.Off" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Windows.Forms.Automation.AutomationLiveSetting" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnAutoSizeChanged">

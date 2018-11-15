@@ -91,19 +91,17 @@
  [!code-csharp[TPL_SyncContext#01](~/samples/snippets/csharp/VS_Snippets_Misc/tpl_synccontext/cs/mainwindow.xaml.cs#01)]
  [!code-vb[TPL_SyncContext#01](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpl_synccontext/vb/MainWindow.xaml.vb#01)]  
   
- To create the example, create a WPF application project in Visual Studio and assign it a name of your choice. Then do the following:  
+ To create the example, create a WPF application project in Visual Studio and name it WPF_CS1 (for a C# WPF project) or WPF_VB1 (for a Visual Basic WPF project). Then do the following:  
   
-1.  In design view, drag an <xref:System.Windows.Controls.Image> control from the **Toolbox** to the design surface. In XAML view, specify the horizontal alignment as "Left." The size does not matter because the control is dynamically resized at run time. Accept the default name, "image".  
+1. In design view, drag an <xref:System.Windows.Controls.Image> control from the **Toolbox** onto the upper left corner of the design surface. In the **Name** textbox of the **Properties** window, name the control "image".    
   
-2.  Drag a <xref:System.Windows.Controls.Button> control from the **Toolbox** to the lower left part of the application window. Double-click the button to add a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler. In XAML view, specify the <xref:System.Windows.Controls.ContentControl.Content%2A> property of the button as "Make a Mosaic" and specify its horizontal alignment as "Left". Accept the default name, "button".  
+2. Drag a <xref:System.Windows.Controls.Button> control from the **Toolbox** to the lower left part of the application window. In XAML view, specify the <xref:System.Windows.Controls.ContentControl.Content%2A> property of the button as "Make a mosaic", and specify its <xref:System.Windows.FrameworkElement.Width> property as "100". Connect the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event with the `button_Click` event handler defined in the example's code by adding `Click="button_Click"` to the `<Button>` element. In the **Name** textbox of the **Properties** window, name the control "button".  
   
-3.  Replace the entire contents of the MainWindow.xaml.cs or MainWindow.xaml.vb file with the code from this example. Make sure that the name of the workspace matches the project name.  
+3. Replace the entire contents of the MainWindow.xaml.cs or MainWindow.xaml.vb file with the code from this example. For a C# WPF project, make sure that the name of the workspace matches the project name. 
   
-4.  The example reads JPEG images from a directory named C:\Users\Public\Pictures\Sample Pictures\\. Either create the directory and place some images in it, or change the path to refer to some other directory that contains images.  
+4. The example reads JPEG images from a directory named C:\Users\Public\Pictures\Sample Pictures\\. Either create the directory and place some images in it, or change the path to refer to some other directory that contains images. 
   
- This example has some limitations. For example, only 32-bits-per-pixel images are supported; images in other formats are corrupted by the <xref:System.Windows.Media.Imaging.BitmapImage> object during the resizing operation. Also, the source images must all be larger than the tile size. As a further exercise, you can add functionality to handle multiple pixel formats and file sizes.  
-  
-   
+This example has some limitations. For example, only 32-bits-per-pixel images are supported; images in other formats are corrupted by the <xref:System.Windows.Media.Imaging.BitmapImage> object during the resizing operation. Also, the source images must all be larger than the tile size. As a further exercise, you can add functionality to handle multiple pixel formats and file sizes.  
   
 ## Examples  
  The following example is taken from the [Samples for Parallel Programming with the .NET Framework 4](http://go.microsoft.com/fwlink/?LinkID=165717) on the MSDN Code Gallery Web site.  It creates a custom task scheduler that limits the number of threads used by the app. It then launches two sets of tasks and displays information about the task and the thread on which the task is executing.  

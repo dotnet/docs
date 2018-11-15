@@ -53,13 +53,6 @@ In some scenarios, there is a requirement to control access to data at a more gr
   
 -   Grant EXECUTE on the stored procedures to database roles. Users can only access data through the stored procedures provided.  
   
-## External Resources  
- For more information, see the following resource.  
-  
-|||  
-|-|-|  
-|[Implementing Row- and Cell-Level Security in Classified Databases Using SQL Server 2005](https://go.microsoft.com/fwlink/?LinkId=98227) on the SQL Server TechCenter site.|Describes how to use row- and cell-level security to meet classified database security requirements.|  
-  
 ## See Also  
  [Row-Level Security](https://msdn.microsoft.com/library/dn765131.aspx)  
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  

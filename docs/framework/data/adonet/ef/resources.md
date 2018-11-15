@@ -18,8 +18,8 @@ The following external resources provide information and support for creating En
  [Data Platform How Do I? Videos: Entity Framework Series](https://go.microsoft.com/fwlink/?LinkId=124600)  
  Contains a set of video screen casts that demonstrate how to build applications by using various components of the Entity Framework.  
   
- [Entity Framework FAQ](https://go.microsoft.com/fwlink/?LinkID=213877)  
- Blog containing frequently asked questions about the Entity Framework.  
+ [Entity Framework FAQ](https://social.technet.microsoft.com/wiki/contents/articles/3737.entity-framework-faq.aspx)  
+ Wiki section containing frequently asked questions about the Entity Framework.  
   
 ## See Also  
  [Entity Framework Overview](../../../../../docs/framework/data/adonet/ef/overview.md)  

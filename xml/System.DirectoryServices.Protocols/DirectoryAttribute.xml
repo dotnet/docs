@@ -342,7 +342,7 @@
       </Parameters>
       <Docs>
         <param name="array">A one-dimensional array that is the destination of the elements copied from the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object.</param>
-        <param name="index">The zero-based index of <c>array</c> where the copying begins.</param>
+        <param name="index">The zero-based index of <paramref name="array" /> where the copying begins.</param>
         <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.CopyTo(System.Object[],System.Int32)" /> method copies the entire collection to a one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -448,7 +448,7 @@
         <Parameter Name="value" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="index">The index in the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> collection at which to insert the <c>value</c>.</param>
+        <param name="index">The index in the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> collection at which to insert the <paramref name="value" />.</param>
         <param name="value">The value to insert.</param>
         <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.Insert(System.Int32,System.Byte[])" /> method inserts the specified <paramref name="value" /> into the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> collection at the specified <paramref name="index" />.</summary>
         <remarks>To be added.</remarks>
@@ -480,7 +480,7 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="index">The index in the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> collection at which to insert the <c>value</c>.</param>
+        <param name="index">The index in the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> collection at which to insert the <paramref name="value" />.</param>
         <param name="value">The value to insert.</param>
         <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.Insert(System.Int32,System.String)" /> method inserts the specified <paramref name="value" /> into the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> collection at the specified <paramref name="index" />.</summary>
         <remarks>To be added.</remarks>
@@ -512,7 +512,7 @@
         <Parameter Name="value" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="index">The index in the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> collection at which to insert the <c>value</c>.</param>
+        <param name="index">The index in the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> collection at which to insert the <paramref name="value" />.</param>
         <param name="value">The value to insert.</param>
         <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.Insert(System.Int32,System.Uri)" /> method inserts the specified <paramref name="value" /> into the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> collection at the specified <paramref name="index" />.</summary>
         <remarks>To be added.</remarks>

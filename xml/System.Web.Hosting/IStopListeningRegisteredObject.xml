@@ -15,9 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Listens for <c>GL_STOP_LISTENING</c> notifications from IIS.</summary>
+    <summary>Listens for <c>GL_STOP_LISTENING</c> notifications from IIS.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -46,9 +44,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Stops listening for new requests.</summary>
+        <summary>Stops listening for new requests.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

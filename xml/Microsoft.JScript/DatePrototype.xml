@@ -764,7 +764,7 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="ddate">The date value to set for <c>thisob</c>.</param>
+        <param name="ddate">The date value to set for <paramref name="thisob" />.</param>
         <summary>Sets the date value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified date value.</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
@@ -802,9 +802,9 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dyear">The year value to set for <c>thisob</c>.</param>
-        <param name="month">The month value to set for <c>thisob</c>.</param>
-        <param name="date">The date value to set for <c>thisob</c>.</param>
+        <param name="dyear">The year value to set for <paramref name="thisob" />.</param>
+        <param name="month">The month value to set for <paramref name="thisob" />.</param>
+        <param name="date">The date value to set for <paramref name="thisob" />.</param>
         <summary>Sets the year value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified year value.</summary>
         <returns>The year value that is set for <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
@@ -843,10 +843,10 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dhour">The hour value to set for <c>thisob</c>.</param>
-        <param name="min">The minutes value to set for <c>thisob</c>.</param>
-        <param name="sec">The seconds value to set for <c>thisob</c>.</param>
-        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
+        <param name="dhour">The hour value to set for <paramref name="thisob" />.</param>
+        <param name="min">The minutes value to set for <paramref name="thisob" />.</param>
+        <param name="sec">The seconds value to set for <paramref name="thisob" />.</param>
+        <param name="msec">The milliseconds value to set for <paramref name="thisob" />.</param>
         <summary>Sets the hour value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified hour value.</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
@@ -882,7 +882,7 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dmsec">The millisecond value to set for <c>thisob</c>.</param>
+        <param name="dmsec">The millisecond value to set for <paramref name="thisob" />.</param>
         <summary>Sets the millisecond value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified millisecond value.</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
@@ -920,9 +920,9 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dmin">The minutes value to set for <c>thisob</c>.</param>
-        <param name="sec">The seconds value to set for <c>thisob</c>.</param>
-        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
+        <param name="dmin">The minutes value to set for <paramref name="thisob" />.</param>
+        <param name="sec">The seconds value to set for <paramref name="thisob" />.</param>
+        <param name="msec">The milliseconds value to set for <paramref name="thisob" />.</param>
         <summary>Sets the minutes value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified minutes value.</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
@@ -959,8 +959,8 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dmonth">The month value to set for <c>thisob</c>.</param>
-        <param name="date">The date value to set for <c>thisob</c>.</param>
+        <param name="dmonth">The month value to set for <paramref name="thisob" />.</param>
+        <param name="date">The date value to set for <paramref name="thisob" />.</param>
         <summary>Sets the month value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified month value.</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
@@ -997,8 +997,8 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dsec">The seconds value to set for <c>thisob</c>.</param>
-        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
+        <param name="dsec">The seconds value to set for <paramref name="thisob" />.</param>
+        <param name="msec">The milliseconds value to set for <paramref name="thisob" />.</param>
         <summary>Sets the seconds value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified seconds value.</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
@@ -1034,7 +1034,7 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="time">The time value to set for <c>thisob</c>.</param>
+        <param name="time">The time value to set for <paramref name="thisob" />.</param>
         <summary>Sets the time value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified time value.</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
@@ -1070,7 +1070,7 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="ddate">The date value to set for <c>thisob</c>.</param>
+        <param name="ddate">The date value to set for <paramref name="thisob" />.</param>
         <summary>Sets the date value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified date value, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
@@ -1108,9 +1108,9 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dyear">The year value to set for <c>thisob</c>.</param>
-        <param name="month">The month value to set for <c>thisob</c>.</param>
-        <param name="date">The date value to set for <c>thisob</c>.</param>
+        <param name="dyear">The year value to set for <paramref name="thisob" />.</param>
+        <param name="month">The month value to set for <paramref name="thisob" />.</param>
+        <param name="date">The date value to set for <paramref name="thisob" />.</param>
         <summary>Sets the year value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified year value, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
@@ -1149,10 +1149,10 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dhour">The hour value to set for <c>thisob</c>.</param>
-        <param name="min">The minutes value to set for <c>thisob</c>.</param>
-        <param name="sec">The seconds value to set for <c>thisob</c>.</param>
-        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
+        <param name="dhour">The hour value to set for <paramref name="thisob" />.</param>
+        <param name="min">The minutes value to set for <paramref name="thisob" />.</param>
+        <param name="sec">The seconds value to set for <paramref name="thisob" />.</param>
+        <param name="msec">The milliseconds value to set for <paramref name="thisob" />.</param>
         <summary>Sets the hour value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified hour value, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
@@ -1188,7 +1188,7 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dmsec">The millisecond value to set for <c>thisob</c>.</param>
+        <param name="dmsec">The millisecond value to set for <paramref name="thisob" />.</param>
         <summary>Sets the millisecond value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified millisecond value, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
@@ -1226,9 +1226,9 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dmin">The minutes value to set for <c>thisob</c>.</param>
-        <param name="sec">The seconds value to set for <c>thisob</c>.</param>
-        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
+        <param name="dmin">The minutes value to set for <paramref name="thisob" />.</param>
+        <param name="sec">The seconds value to set for <paramref name="thisob" />.</param>
+        <param name="msec">The milliseconds value to set for <paramref name="thisob" />.</param>
         <summary>Sets the minutes value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified minutes value, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
@@ -1265,8 +1265,8 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dmonth">The month value to set for <c>thisob</c>.</param>
-        <param name="date">The date value to set for <c>thisob</c>.</param>
+        <param name="dmonth">The month value to set for <paramref name="thisob" />.</param>
+        <param name="date">The date value to set for <paramref name="thisob" />.</param>
         <summary>Sets the month value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified month value, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
@@ -1303,8 +1303,8 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dsec">The seconds value to set for <c>thisob</c>.</param>
-        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
+        <param name="dsec">The seconds value to set for <paramref name="thisob" />.</param>
+        <param name="msec">The milliseconds value to set for <paramref name="thisob" />.</param>
         <summary>Sets the seconds value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified seconds value, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
@@ -1343,7 +1343,7 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dyear">The year value to set for <c>thisob</c>.</param>
+        <param name="dyear">The year value to set for <paramref name="thisob" />.</param>
         <summary>Sets the year value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified year value.</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>

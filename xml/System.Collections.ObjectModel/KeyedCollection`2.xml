@@ -320,7 +320,7 @@
       </Parameters>
       <Docs>
         <param name="item">The element to change the key of.</param>
-        <param name="newKey">The new key for <c>item</c>.</param>
+        <param name="newKey">The new key for <paramref name="item" />.</param>
         <summary>Changes the key associated with the specified element in the lookup dictionary.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -708,7 +708,7 @@
         <Parameter Name="item" Type="TItem" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>item</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
         <param name="item">The object to insert.</param>
         <summary>Inserts an element into the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" /> at the specified index.</summary>
         <remarks>

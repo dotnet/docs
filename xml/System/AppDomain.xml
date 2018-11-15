@@ -1196,7 +1196,7 @@
         <param name="shadowCopyFiles">
           <see langword="true" /> to load a shadow copy of an assembly into the application domain.</param>
         <param name="adInit">An <see cref="T:System.AppDomainInitializer" /> delegate that represents a callback method to invoke when the new <see cref="T:System.AppDomain" /> object is initialized.</param>
-        <param name="adInitArgs">An array of string arguments to be passed to the callback represented by <c>adInit</c>, when the new <see cref="T:System.AppDomain" /> object is initialized.</param>
+        <param name="adInitArgs">An array of string arguments to be passed to the callback represented by <paramref name="adInit" />, when the new <see cref="T:System.AppDomain" /> object is initialized.</param>
         <summary>Creates a new application domain with the given name, using evidence, application base path, relative search path, and a parameter that specifies whether a shadow copy of an assembly is to be loaded into the application domain. Specifies a callback method that is invoked when the application domain is initialized, and an array of string arguments to pass the callback method.</summary>
         <returns>The newly created application domain.</returns>
         <remarks>
@@ -1427,10 +1427,10 @@
         <param name="assemblyName">The display name of the assembly. See <see cref="P:System.Reflection.Assembly.FullName" />.</param>
         <param name="typeName">The fully qualified name of the requested type, including the namespace but not the assembly, as returned by the <see cref="P:System.Type.FullName" /> property.</param>
         <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
-        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
-        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects using reflection. If <c>binder</c> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <c>args</c> must be an empty array or null.</param>
-        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>typeName</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <paramref name="typeName" /> constructor. If <paramref name="bindingAttr" /> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects using reflection. If <paramref name="binder" /> is null, the default binder is used.</param>
+        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
+        <param name="culture">Culture-specific information that governs the coercion of <paramref name="args" /> to the formal types declared for the <paramref name="typeName" /> constructor. If <paramref name="culture" /> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
         <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
   
  This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
@@ -1523,14 +1523,14 @@
         <param name="assemblyName">The display name of the assembly. See <see cref="P:System.Reflection.Assembly.FullName" />.</param>
         <param name="typeName">The fully qualified name of the requested type, including the namespace but not the assembly, as returned by the <see cref="P:System.Type.FullName" /> property.</param>
         <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
-        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
-        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects using reflection. If <c>binder</c> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <c>args</c> must be an empty array or null.</param>
-        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>typeName</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <paramref name="typeName" /> constructor. If <paramref name="bindingAttr" /> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects using reflection. If <paramref name="binder" /> is null, the default binder is used.</param>
+        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
+        <param name="culture">Culture-specific information that governs the coercion of <paramref name="args" /> to the formal types declared for the <paramref name="typeName" /> constructor. If <paramref name="culture" /> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
         <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
   
  This parameter is related to client-activated objects.Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
-        <param name="securityAttributes">Information used to authorize creation of <c>typeName</c>.</param>
+        <param name="securityAttributes">Information used to authorize creation of <paramref name="typeName" />.</param>
         <summary>Creates a new instance of the specified type defined in the specified assembly. Parameters specify a binder, binding flags, constructor arguments, culture-specific information used to interpret arguments, activation attributes, and authorization to create the type.</summary>
         <returns>An object that is a wrapper for the new instance specified by <paramref name="typeName" />. The return value needs to be unwrapped to access the real object.</returns>
         <remarks>
@@ -1792,10 +1792,10 @@
         <param name="assemblyName">The display name of the assembly. See <see cref="P:System.Reflection.Assembly.FullName" />.</param>
         <param name="typeName">The fully qualified name of the requested type, including the namespace but not the assembly, as returned by the <see cref="P:System.Type.FullName" /> property.</param>
         <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
-        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
-        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects using reflection. If <c>binder</c> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <c>args</c> must be an empty array or null.</param>
-        <param name="culture">A culture-specific object used to govern the coercion of types. If <c>culture</c> is <see langword="null" />, the <see langword="CultureInfo" /> for the current thread is used.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <paramref name="typeName" /> constructor. If <paramref name="bindingAttr" /> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects using reflection. If <paramref name="binder" /> is null, the default binder is used.</param>
+        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
+        <param name="culture">A culture-specific object used to govern the coercion of types. If <paramref name="culture" /> is <see langword="null" />, the <see langword="CultureInfo" /> for the current thread is used.</param>
         <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object. that specifies the URL that is required to activate a remote object.  
   
  This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
@@ -1896,14 +1896,14 @@
         <param name="assemblyName">The display name of the assembly. See <see cref="P:System.Reflection.Assembly.FullName" />.</param>
         <param name="typeName">The fully qualified name of the requested type, including the namespace but not the assembly, as returned by the <see cref="P:System.Type.FullName" /> property.</param>
         <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
-        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
-        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects using reflection. If <c>binder</c> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <c>args</c> must be an empty array or null.</param>
-        <param name="culture">A culture-specific object used to govern the coercion of types. If <c>culture</c> is <see langword="null" />, the <see langword="CultureInfo" /> for the current thread is used.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <paramref name="typeName" /> constructor. If <paramref name="bindingAttr" /> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects using reflection. If <paramref name="binder" /> is null, the default binder is used.</param>
+        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
+        <param name="culture">A culture-specific object used to govern the coercion of types. If <paramref name="culture" /> is <see langword="null" />, the <see langword="CultureInfo" /> for the current thread is used.</param>
         <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
   
  This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
-        <param name="securityAttributes">Information used to authorize creation of <c>typeName</c>.</param>
+        <param name="securityAttributes">Information used to authorize creation of <paramref name="typeName" />.</param>
         <summary>Creates a new instance of the specified type. Parameters specify the name of the type, and how it is found and created.</summary>
         <returns>An instance of the object specified by <paramref name="typeName" />.</returns>
         <remarks>
@@ -2193,10 +2193,10 @@
         <param name="assemblyFile">The name, including the path, of a file that contains an assembly that defines the requested type. The assembly is loaded using the <see cref="M:System.Reflection.Assembly.LoadFrom(System.String)" /> method.</param>
         <param name="typeName">The fully qualified name of the requested type, including the namespace but not the assembly, as returned by the <see cref="P:System.Type.FullName" /> property.</param>
         <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
-        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
-        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects through reflection. If <c>binder</c> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <c>args</c> must be an empty array or null.</param>
-        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>typeName</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <paramref name="typeName" /> constructor. If <paramref name="bindingAttr" /> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects through reflection. If <paramref name="binder" /> is null, the default binder is used.</param>
+        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
+        <param name="culture">Culture-specific information that governs the coercion of <paramref name="args" /> to the formal types declared for the <paramref name="typeName" /> constructor. If <paramref name="culture" /> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
         <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
   
  This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
@@ -2295,14 +2295,14 @@
         <param name="assemblyFile">The name, including the path, of a file that contains an assembly that defines the requested type. The assembly is loaded using the <see cref="M:System.Reflection.Assembly.LoadFrom(System.String)" /> method.</param>
         <param name="typeName">The fully qualified name of the requested type, including the namespace but not the assembly, as returned by the <see cref="P:System.Type.FullName" /> property.</param>
         <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
-        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
-        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects through reflection. If <c>binder</c> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <c>args</c> must be an empty array or null.</param>
-        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>typeName</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <paramref name="typeName" /> constructor. If <paramref name="bindingAttr" /> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects through reflection. If <paramref name="binder" /> is null, the default binder is used.</param>
+        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
+        <param name="culture">Culture-specific information that governs the coercion of <paramref name="args" /> to the formal types declared for the <paramref name="typeName" /> constructor. If <paramref name="culture" /> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
         <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
   
  This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
-        <param name="securityAttributes">Information used to authorize creation of <c>typeName</c>.</param>
+        <param name="securityAttributes">Information used to authorize creation of <paramref name="typeName" />.</param>
         <summary>Creates a new instance of the specified type defined in the specified assembly file.</summary>
         <returns>An object that is a wrapper for the new instance, or <see langword="null" /> if <paramref name="typeName" /> is not found. The return value needs to be unwrapped to access the real object.</returns>
         <remarks>
@@ -2552,10 +2552,10 @@
         <param name="assemblyFile">The file name and path of the assembly that defines the requested type.</param>
         <param name="typeName">The fully qualified name of the requested type, including the namespace but not the assembly, as returned by the <see cref="P:System.Type.FullName" /> property.</param>
         <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
-        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
-        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects through reflection. If <c>binder</c> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <c>args</c> must be an empty array or null.</param>
-        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>typeName</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <paramref name="typeName" /> constructor. If <paramref name="bindingAttr" /> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects through reflection. If <paramref name="binder" /> is null, the default binder is used.</param>
+        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
+        <param name="culture">Culture-specific information that governs the coercion of <paramref name="args" /> to the formal types declared for the <paramref name="typeName" /> constructor. If <paramref name="culture" /> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
         <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
   
  This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
@@ -2646,14 +2646,14 @@
         <param name="assemblyName">The file name and path of the assembly that defines the requested type.</param>
         <param name="typeName">The fully qualified name of the requested type, including the namespace but not the assembly, as returned by the <see cref="P:System.Type.FullName" /> property.</param>
         <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
-        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
-        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects through reflection. If <c>binder</c> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <c>args</c> must be an empty array or null.</param>
-        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>typeName</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <paramref name="typeName" /> constructor. If <paramref name="bindingAttr" /> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects through reflection. If <paramref name="binder" /> is null, the default binder is used.</param>
+        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
+        <param name="culture">Culture-specific information that governs the coercion of <paramref name="args" /> to the formal types declared for the <paramref name="typeName" /> constructor. If <paramref name="culture" /> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
         <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
   
  This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
-        <param name="securityAttributes">Information used to authorize creation of <c>typeName</c>.</param>
+        <param name="securityAttributes">Information used to authorize creation of <paramref name="typeName" />.</param>
         <summary>Creates a new instance of the specified type defined in the specified assembly file.</summary>
         <returns>The requested object, or <see langword="null" /> if <paramref name="typeName" /> is not found.</returns>
         <remarks>
@@ -3023,7 +3023,7 @@
       <Docs>
         <param name="name">The unique identity of the dynamic assembly.</param>
         <param name="access">The mode in which the dynamic assembly will be accessed.</param>
-        <param name="dir">The name of the directory where the assembly will be saved. If <c>dir</c> is <see langword="null" />, the directory defaults to the current directory.</param>
+        <param name="dir">The name of the directory where the assembly will be saved. If <paramref name="dir" /> is <see langword="null" />, the directory defaults to the current directory.</param>
         <summary>Defines a dynamic assembly using the specified name, access mode, and storage directory.</summary>
         <returns>A dynamic assembly with the specified name and features.</returns>
         <remarks>
@@ -3164,7 +3164,7 @@
       <Docs>
         <param name="name">The unique identity of the dynamic assembly.</param>
         <param name="access">The mode in which the dynamic assembly will be accessed.</param>
-        <param name="dir">The name of the directory where the assembly will be saved. If <c>dir</c> is <see langword="null" />, the directory defaults to the current directory.</param>
+        <param name="dir">The name of the directory where the assembly will be saved. If <paramref name="dir" /> is <see langword="null" />, the directory defaults to the current directory.</param>
         <param name="evidence">The evidence supplied for the dynamic assembly. The evidence is used unaltered as the final set of evidence used for policy resolution.</param>
         <summary>Defines a dynamic assembly using the specified name, access mode, storage directory, and evidence.</summary>
         <returns>A dynamic assembly with the specified name and features.</returns>
@@ -3329,7 +3329,7 @@
       <Docs>
         <param name="name">The unique identity of the dynamic assembly.</param>
         <param name="access">The mode in which the dynamic assembly will be accessed.</param>
-        <param name="dir">The name of the directory where the dynamic assembly will be saved. If <c>dir</c> is <see langword="null" />, the current directory is used.</param>
+        <param name="dir">The name of the directory where the dynamic assembly will be saved. If <paramref name="dir" /> is <see langword="null" />, the current directory is used.</param>
         <param name="isSynchronized">
           <see langword="true" /> to synchronize the creation of modules, types, and members in the dynamic assembly; otherwise, <see langword="false" />.</param>
         <param name="assemblyAttributes">An enumerable list of attributes to be applied to the assembly, or <see langword="null" /> if there are no attributes.</param>
@@ -3498,7 +3498,7 @@
       <Docs>
         <param name="name">The unique identity of the dynamic assembly.</param>
         <param name="access">The mode in which the dynamic assembly will be accessed.</param>
-        <param name="dir">The name of the directory where the assembly will be saved. If <c>dir</c> is <see langword="null" />, the directory defaults to the current directory.</param>
+        <param name="dir">The name of the directory where the assembly will be saved. If <paramref name="dir" /> is <see langword="null" />, the directory defaults to the current directory.</param>
         <param name="requiredPermissions">The required permissions request.</param>
         <param name="optionalPermissions">The optional permissions request.</param>
         <param name="refusedPermissions">The refused permissions request.</param>
@@ -3587,7 +3587,7 @@
       <Docs>
         <param name="name">The unique identity of the dynamic assembly.</param>
         <param name="access">The mode in which the dynamic assembly will be accessed.</param>
-        <param name="dir">The name of the directory where the assembly will be saved. If <c>dir</c> is <see langword="null" />, the directory defaults to the current directory.</param>
+        <param name="dir">The name of the directory where the assembly will be saved. If <paramref name="dir" /> is <see langword="null" />, the directory defaults to the current directory.</param>
         <param name="evidence">The evidence supplied for the dynamic assembly. The evidence is used unaltered as the final set of evidence used for policy resolution.</param>
         <param name="requiredPermissions">The required permissions request.</param>
         <param name="optionalPermissions">The optional permissions request.</param>
@@ -3683,7 +3683,7 @@
       <Docs>
         <param name="name">The unique identity of the dynamic assembly.</param>
         <param name="access">The mode in which the dynamic assembly will be accessed.</param>
-        <param name="dir">The name of the directory where the dynamic assembly will be saved. If <c>dir</c> is <see langword="null" />, the directory defaults to the current directory.</param>
+        <param name="dir">The name of the directory where the dynamic assembly will be saved. If <paramref name="dir" /> is <see langword="null" />, the directory defaults to the current directory.</param>
         <param name="evidence">The evidence supplied for the dynamic assembly. The evidence is used unaltered as the final set of evidence used for policy resolution.</param>
         <param name="requiredPermissions">The required permissions request.</param>
         <param name="optionalPermissions">The optional permissions request.</param>
@@ -3778,7 +3778,7 @@
       <Docs>
         <param name="name">The unique identity of the dynamic assembly.</param>
         <param name="access">The mode in which the dynamic assembly will be accessed.</param>
-        <param name="dir">The name of the directory where the dynamic assembly will be saved. If <c>dir</c> is <see langword="null" />, the current directory is used.</param>
+        <param name="dir">The name of the directory where the dynamic assembly will be saved. If <paramref name="dir" /> is <see langword="null" />, the current directory is used.</param>
         <param name="evidence">The evidence that is supplied for the dynamic assembly. The evidence is used unaltered as the final set of evidence used for policy resolution.</param>
         <param name="requiredPermissions">The required permissions request.</param>
         <param name="optionalPermissions">The optional permissions request.</param>

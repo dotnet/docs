@@ -53,7 +53,7 @@
       </Parameters>
       <Docs>
         <param name="source">The code to evaluate.</param>
-        <param name="engine">A reference to the scripting engine to use to evaluate <c>source</c>.</param>
+        <param name="engine">A reference to the scripting engine to use to evaluate <paramref name="source" />.</param>
         <summary>Evaluates the specified JScript code by using the specified engine.</summary>
         <returns>The result of the evaluation. If <paramref name="source" /> is not a string, return value is <paramref name="source" />.</returns>
         <remarks>To be added.</remarks>
@@ -85,7 +85,7 @@
       <Docs>
         <param name="source">The code to evaluate.</param>
         <param name="unsafeOption">The string literal <c>unsafe</c> to enable unsafe evaluation; otherwise, <see langword="false" />.</param>
-        <param name="engine">A reference to the scripting engine to use to evaluate <c>source</c>.</param>
+        <param name="engine">A reference to the scripting engine to use to evaluate <paramref name="source" />.</param>
         <summary>Evaluates the specified JScript code by using the specified engine and safety option.</summary>
         <returns>The result of the evaluation. If <paramref name="source" /> is not a string, return value is <paramref name="source" />.</returns>
         <remarks>To be added.</remarks>

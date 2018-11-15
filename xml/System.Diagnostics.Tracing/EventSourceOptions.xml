@@ -98,7 +98,7 @@
         <ReturnType>System.Diagnostics.Tracing.EventKeywords</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the keywords applied to the event. If this property is not set, the event’s keywords will be <see langword="None" />.</summary>
+        <summary>Gets or sets the keywords applied to the event. If this property is not set, the event's keywords will be <see langword="None" />.</summary>
         <value>The keywords applied to the event, or <see langword="None" /> if no keywords are set.</value>
         <remarks>To be added.</remarks>
       </Docs>

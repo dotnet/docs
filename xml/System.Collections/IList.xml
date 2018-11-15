@@ -321,7 +321,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
         <param name="value">The object to insert into the <see cref="T:System.Collections.IList" />.</param>
         <summary>Inserts an item to the <see cref="T:System.Collections.IList" /> at the specified index.</summary>
         <remarks>

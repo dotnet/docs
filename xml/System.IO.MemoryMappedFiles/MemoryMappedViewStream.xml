@@ -165,9 +165,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Gets the number of bytes by which the starting position of this view is offset from the beginning of the memory-mapped file.</summary>
+        <summary>Gets the number of bytes by which the starting position of this view is offset from the beginning of the memory-mapped file.</summary>
         <value>The number of bytes between the starting position of this view and the beginning of the memory-mapped file.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The object from which this instance was created is <see langword="null" />.</exception>

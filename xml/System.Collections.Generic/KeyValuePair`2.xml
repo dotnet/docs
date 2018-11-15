@@ -109,7 +109,7 @@
       </Parameters>
       <Docs>
         <param name="key">The object defined in each key/value pair.</param>
-        <param name="value">The definition associated with <c>key</c>.</param>
+        <param name="value">The definition associated with <paramref name="key" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure with the specified key and value.</summary>
         <remarks>To be added.</remarks>
       </Docs>

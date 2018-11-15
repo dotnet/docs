@@ -116,7 +116,7 @@
       </Parameters>
       <Docs>
         <param name="arglist">An argument list consisting of mandatory and optional arguments.</param>
-        <param name="ptr">A pointer to the argument in <c>arglist</c> to access first, or the first mandatory argument in <c>arglist</c> if <c>ptr</c> is <see langword="null" />.</param>
+        <param name="ptr">A pointer to the argument in <paramref name="arglist" /> to access first, or the first mandatory argument in <paramref name="arglist" /> if <paramref name="ptr" /> is <see langword="null" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ArgIterator" /> structure using the specified argument list and a pointer to an item in the list.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

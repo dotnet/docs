@@ -1,4 +1,4 @@
-﻿<Type Name="X509ContentType" FullName="System.Security.Cryptography.X509Certificates.X509ContentType">
+<Type Name="X509ContentType" FullName="System.Security.Cryptography.X509Certificates.X509ContentType">
   <TypeSignature Language="C#" Value="public enum X509ContentType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed X509ContentType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509ContentType" />
@@ -171,7 +171,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>A PKCS #12–formatted certificate. The <see langword="Pkcs12" /> value is identical to the <see langword="Pfx" /> value.</summary>
+        <summary>A PKCS #12-formatted certificate. The <see langword="Pkcs12" /> value is identical to the <see langword="Pfx" /> value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pkcs7">
@@ -204,7 +204,7 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>A PKCS #7–formatted certificate.</summary>
+        <summary>A PKCS #7-formatted certificate.</summary>
       </Docs>
     </Member>
     <Member MemberName="SerializedCert">

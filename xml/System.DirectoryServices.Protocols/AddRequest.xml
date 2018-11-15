@@ -81,7 +81,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="distinguishedName">The <c>distinguishedName</c> of the new object in the directory.</param>
+        <param name="distinguishedName">The <paramref name="distinguishedName" /> of the new object in the directory.</param>
         <param name="attributes">An array, of  <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> objects, that contains the attributes for this object. This parameter may be <see langword="null" />.</param>
         <summary>The <see cref="M:System.DirectoryServices.Protocols.AddRequest.#ctor(System.String,System.DirectoryServices.Protocols.DirectoryAttribute[])" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.AddRequest" /> class using the specified distinguished name and attributes.</summary>
         <remarks>To be added.</remarks>
@@ -106,7 +106,7 @@
         <Parameter Name="objectClass" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="distinguishedName">The <c>distinguishedName</c> of the new object in the directory.</param>
+        <param name="distinguishedName">The <paramref name="distinguishedName" /> of the new object in the directory.</param>
         <param name="objectClass">The object class for this object. If this parameter is <see langword="null" />, an exception is thrown.</param>
         <summary>The <see cref="M:System.DirectoryServices.Protocols.AddRequest.#ctor(System.String,System.String)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.AddRequest" /> class using the specified <paramref name="distinguishedName" /> and the object class.</summary>
         <remarks>

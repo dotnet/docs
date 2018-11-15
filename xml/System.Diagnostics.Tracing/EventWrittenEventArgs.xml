@@ -66,9 +66,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Gets the activity ID on the thread that the event was written to.</summary>
+        <summary>Gets the activity ID on the thread that the event was written to.</summary>
         <value>The activity ID on the thread that the event was written to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -464,9 +462,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Gets the identifier of an activity that is related to the activity represented by the current instance.</summary>
+        <summary>Gets the identifier of an activity that is related to the activity represented by the current instance.</summary>
         <value>The identifier of the related activity, or <see cref="F:System.Guid.Empty" /> if there is no related activity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

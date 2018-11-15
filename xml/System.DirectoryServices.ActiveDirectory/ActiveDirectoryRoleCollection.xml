@@ -74,7 +74,7 @@
       </Parameters>
       <Docs>
         <param name="roles">The array of <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole" /> objects that receives the elements of this collection.</param>
-        <param name="index">The zero-based index in <c>roles</c> where this method starts copying this collection.</param>
+        <param name="index">The zero-based index in <paramref name="roles" /> where this method starts copying this collection.</param>
         <summary>Copies all <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole" /> objects in this collection to the specified array, starting at the specified index in the array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>

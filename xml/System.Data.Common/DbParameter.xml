@@ -312,9 +312,7 @@
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Gets or sets the maximum number of digits used to represent the <see cref="P:System.Data.Common.DbParameter.Value" /> property.</summary>
+        <summary>Gets or sets the maximum number of digits used to represent the <see cref="P:System.Data.Common.DbParameter.Value" /> property.</summary>
         <value>The maximum number of digits used to represent the <see cref="P:System.Data.Common.DbParameter.Value" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>

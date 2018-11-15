@@ -183,7 +183,7 @@
       </Parameters>
       <Docs>
         <param name="array">The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> array that receives the elements of this collection.</param>
-        <param name="index">The zero-based index in <c>array</c> where this method starts copying this collection.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> where this method starts copying this collection.</param>
         <summary>Copies all <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> objects in this collection to the specified array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The destination array is not large enough, based on the source collection size and the <paramref name="index" /> specified.</exception>
@@ -339,7 +339,7 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index at which the element was inserted.</param>
-        <param name="value">The new value of the element at <c>index</c>.</param>
+        <param name="value">The new value of the element at <paramref name="index" />.</param>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnClearComplete" /> method.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Collections.CollectionBase.OnClearComplete" />
@@ -398,8 +398,8 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index at which the set operation occurred.</param>
-        <param name="oldValue">The element that was replaced by <c>newValue</c>.</param>
-        <param name="newValue">The element that replaced <c>oldValue</c>.</param>
+        <param name="oldValue">The element that was replaced by <paramref name="newValue" />.</param>
+        <param name="newValue">The element that replaced <paramref name="oldValue" />.</param>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnSetComplete(System.Int32,System.Object,System.Object)" /> method.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Collections.CollectionBase.OnSetComplete(System.Int32,System.Object,System.Object)" />

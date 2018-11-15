@@ -1899,7 +1899,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the <see cref="T:System.Collections.DictionaryEntry" /> objects copied from <see cref="T:System.Collections.Hashtable" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the <see cref="T:System.Collections.Hashtable" /> elements to a one-dimensional <see cref="T:System.Array" /> instance at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2570,8 +2570,8 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The <see cref="T:System.Object" /> to compare with <c>key</c>.</param>
-        <param name="key">The key in the <see cref="T:System.Collections.Hashtable" /> to compare with <c>item</c>.</param>
+        <param name="item">The <see cref="T:System.Object" /> to compare with <paramref name="key" />.</param>
+        <param name="key">The key in the <see cref="T:System.Collections.Hashtable" /> to compare with <paramref name="item" />.</param>
         <summary>Compares a specific <see cref="T:System.Object" /> with a specific key in the <see cref="T:System.Collections.Hashtable" />.</summary>
         <returns>
           <see langword="true" /> if <paramref name="item" /> and <paramref name="key" /> are equal; otherwise, <see langword="false" />.</returns>

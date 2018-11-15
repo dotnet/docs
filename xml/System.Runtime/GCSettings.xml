@@ -152,9 +152,7 @@
         <ReturnType>System.Runtime.GCLargeObjectHeapCompactionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Gets or sets a value that indicates whether a full blocking garbage collection compacts the large object heap (LOH).</summary>
+        <summary>Gets or sets a value that indicates whether a full blocking garbage collection compacts the large object heap (LOH).</summary>
         <value>One of the enumeration values that indicates whether a full blocking garbage collection compacts the LOH.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

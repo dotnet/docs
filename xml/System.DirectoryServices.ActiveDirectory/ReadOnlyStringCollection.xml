@@ -73,7 +73,7 @@
       </Parameters>
       <Docs>
         <param name="values">The array of <see cref="T:System.String" /> objects that receives the elements of this collection.</param>
-        <param name="index">The zero-based index in <c>values</c> where this method starts copying this collection.</param>
+        <param name="index">The zero-based index in <paramref name="values" /> where this method starts copying this collection.</param>
         <summary>Copies all <see cref="T:System.String" /> objects in this collection to the specified array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The destination array is not large enough, based on the source collection size and the <paramref name="index" /> specified.</exception>

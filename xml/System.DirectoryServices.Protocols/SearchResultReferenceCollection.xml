@@ -71,7 +71,7 @@
       </Parameters>
       <Docs>
         <param name="values">A one-dimensional array that is the destination of the elements copied from the <see cref="T:System.DirectoryServices.Protocols.SearchResultReferenceCollection" /> object.</param>
-        <param name="index">The zero-based index of <c>values</c> where copying begins.</param>
+        <param name="index">The zero-based index of <paramref name="values" /> where copying begins.</param>
         <summary>The <see cref="M:System.DirectoryServices.Protocols.SearchResultReferenceCollection.CopyTo(System.DirectoryServices.Protocols.SearchResultReference[],System.Int32)" /> method copies the entire collection to a one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

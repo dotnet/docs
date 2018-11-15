@@ -173,7 +173,7 @@
       </Parameters>
       <Docs>
         <param name="array">The array of <see cref="T:System.DirectoryServices.PropertyValueCollection" /> objects that receives the elements of this collection.</param>
-        <param name="index">The zero-based index in <c>array</c> where this method starts copying this collection.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> where this method starts copying this collection.</param>
         <summary>Copies all <see cref="T:System.DirectoryServices.PropertyValueCollection" /> objects in this collection to the specified array, starting at the specified index in the target array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -326,8 +326,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert <c>value</c>.</param>
-        <param name="value">The new value of the element at <c>index</c>.</param>
+        <param name="index">The zero-based index at which to insert <paramref name="value" />.</param>
+        <param name="value">The new value of the element at <paramref name="index" />.</param>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnInsertComplete(System.Int32,System.Object)" /> method.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
@@ -358,7 +358,7 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index at which value can be found.</param>
-        <param name="value">The value of the element to remove from <c>index</c>.</param>
+        <param name="value">The value of the element to remove from <paramref name="index" />.</param>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnRemoveComplete(System.Int32,System.Object)" /> method.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
@@ -389,9 +389,9 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>oldValue</c> can be found.</param>
-        <param name="oldValue">The value to replace with <c>newValue</c>.</param>
-        <param name="newValue">The new value of the element at <c>index</c>.</param>
+        <param name="index">The zero-based index at which <paramref name="oldValue" /> can be found.</param>
+        <param name="oldValue">The value to replace with <paramref name="newValue" />.</param>
+        <param name="newValue">The new value of the element at <paramref name="index" />.</param>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnSetComplete(System.Int32,System.Object,System.Object)" /> method.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">

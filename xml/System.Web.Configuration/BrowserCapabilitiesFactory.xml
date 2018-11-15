@@ -10601,9 +10601,7 @@
           <see langword="true" /> to ignore definitions for the Internetexplorer browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
         <param name="headers">The collection of headers included in the current request.</param>
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Internetexplorer browser making the current request.</summary>
+        <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Internetexplorer browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:System.Web.HttpBrowserCapabilities" />
@@ -10631,9 +10629,7 @@
       <Docs>
         <param name="headers">The collection of headers included in the current request.</param>
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Internetexplorer gateway handling the current request.</summary>
+        <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Internetexplorer gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:System.Web.HttpBrowserCapabilities" />

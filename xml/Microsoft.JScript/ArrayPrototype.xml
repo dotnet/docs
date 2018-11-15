@@ -60,7 +60,7 @@
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
         <param name="engine">A reference to the scripting engine.</param>
-        <param name="args">The objects or arrays to append to <c>thisob</c>.</param>
+        <param name="args">The objects or arrays to append to <paramref name="thisob" />.</param>
         <summary>Concatenates objects or arrays to the end of the specified object or array.</summary>
         <returns>
           <paramref name="thisob" /> and <paramref name="args" /> concatenated.</returns>
@@ -205,7 +205,7 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="args">The elements to add to <c>thisob</c>.</param>
+        <param name="args">The elements to add to <paramref name="thisob" />.</param>
         <summary>Adds new elements to the end of the specified array.</summary>
         <returns>The new length of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
@@ -516,7 +516,7 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="args">The elements to add to <c>thisob</c>.</param>
+        <param name="args">The elements to add to <paramref name="thisob" />.</param>
         <summary>Adds new elements to the start of the specified array. Shifts the existing elements to the next positions.</summary>
         <returns>The new length of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>

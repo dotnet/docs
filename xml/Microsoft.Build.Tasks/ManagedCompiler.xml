@@ -235,7 +235,7 @@
       <Docs>
         <param name="parameterName">The parameter name to set on the host compiler.</param>
         <param name="resultFromHostObjectSetOperation">
-          <see langword="true" /> if the host compiler supports <c>parameterName</c>; otherwise, <see langword="false" /></param>
+          <see langword="true" /> if the host compiler supports <paramref name="parameterName" />; otherwise, <see langword="false" /></param>
         <summary>Logs a message if the specified parameter is not supported by the host compiler.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
@@ -635,7 +635,7 @@
       </Parameters>
       <Docs>
         <param name="itemList">The list of items to examine for duplicates.</param>
-        <param name="parameterName">The name of the parameter that contains the <c>itemList</c>.</param>
+        <param name="parameterName">The name of the parameter that contains the <paramref name="itemList" />.</param>
         <summary>Determines if any duplicate items exist in the specified task parameter.</summary>
         <returns>
           <see langword="true" /> if the item list contains no duplicates; otherwise, <see langword="false" />.</returns>

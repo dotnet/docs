@@ -1509,7 +1509,7 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the value to retrieve. This string is not case-sensitive.</param>
-        <param name="defaultValue">The value to return if <c>name</c> does not exist.</param>
+        <param name="defaultValue">The value to return if <paramref name="name" /> does not exist.</param>
         <summary>Retrieves the value associated with the specified name. If the name is not found, returns the default value that you provide.</summary>
         <returns>The value associated with <paramref name="name" />, with any embedded environment variables left unexpanded, or <paramref name="defaultValue" /> if <paramref name="name" /> is not found.</returns>
         <remarks>
@@ -1593,7 +1593,7 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the value to retrieve. This string is not case-sensitive.</param>
-        <param name="defaultValue">The value to return if <c>name</c> does not exist.</param>
+        <param name="defaultValue">The value to return if <paramref name="name" /> does not exist.</param>
         <param name="options">One of the enumeration values that specifies optional processing of the retrieved value.</param>
         <summary>Retrieves the value associated with the specified name and retrieval options. If the name is not found, returns the default value that you provide.</summary>
         <returns>The value associated with <paramref name="name" />, processed according to the specified <paramref name="options" />, or <paramref name="defaultValue" /> if <paramref name="name" /> is not found.</returns>

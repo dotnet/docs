@@ -23,9 +23,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Specifies whether transaction flow across thread continuations is enabled for <see cref="T:System.Transactions.TransactionScope" />.</summary>
+    <summary>Specifies whether transaction flow across thread continuations is enabled for <see cref="T:System.Transactions.TransactionScope" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

@@ -74,7 +74,7 @@
       </Parameters>
       <Docs>
         <param name="connections">The array of <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> objects that receives the elements of this collection.</param>
-        <param name="index">The zero-based index in <c>connections</c> where this method starts copying this collection.</param>
+        <param name="index">The zero-based index in <paramref name="connections" /> where this method starts copying this collection.</param>
         <summary>Copies all <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> objects in this collection to the specified array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>

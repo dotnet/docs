@@ -98,8 +98,8 @@
         <Parameter Name="y" Type="T" />
       </Parameters>
       <Docs>
-        <param name="x">The first object of type <c>T</c> to compare.</param>
-        <param name="y">The second object of type <c>T</c> to compare.</param>
+        <param name="x">The first object of type <paramref name="T" /> to compare.</param>
+        <param name="y">The second object of type <paramref name="T" /> to compare.</param>
         <summary>Determines whether the specified objects are equal.</summary>
         <returns>
           <see langword="true" /> if the specified objects are equal; otherwise, <see langword="false" />.</returns>
@@ -112,9 +112,9 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>Implementations are required to ensure that if the <see cref="M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)" /> method returns <see langword="true" /> for two objects <c>x</c> and <c>y</c>, then the value returned by the <see cref="M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)" /> method for <c>x</c> must equal the value returned for <c>y</c>.  
+          <para>Implementations are required to ensure that if the <see cref="M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)" /> method returns <see langword="true" /> for two objects <paramref name="x" /> and <paramref name="y" />, then the value returned by the <see cref="M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)" /> method for <paramref name="x" /> must equal the value returned for <paramref name="y" />.  
   
- The <see cref="M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)" /> method is reflexive, symmetric, and transitive. That is, it returns <see langword="true" /> if used to compare an object with itself; <see langword="true" /> for two objects <c>x</c> and <c>y</c> if it is <see langword="true" /> for <c>y</c> and <c>x</c>; and <see langword="true" /> for two objects <c>x</c> and <c>z</c> if it is <see langword="true" /> for <c>x</c> and <c>y</c> and also <see langword="true" /> for <c>y</c> and <c>z</c>.</para>
+ The <see cref="M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)" /> method is reflexive, symmetric, and transitive. That is, it returns <see langword="true" /> if used to compare an object with itself; <see langword="true" /> for two objects <paramref name="x" /> and <paramref name="y" /> if it is <see langword="true" /> for <paramref name="y" /> and <paramref name="x" />; and <see langword="true" /> for two objects <paramref name="x" /> and <paramref name="z" /> if it is <see langword="true" /> for <paramref name="x" /> and <paramref name="y" /> and also <see langword="true" /> for <paramref name="y" /> and <paramref name="z" />.</para>
         </block>
       </Docs>
     </Member>
@@ -165,7 +165,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The type of <paramref name="obj" /> is a reference type and <paramref name="obj" /> is <see langword="null" />.</exception>
         <block subset="none" type="overrides">
-          <para>Implementations are required to ensure that if the <see cref="M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)" /> method returns <see langword="true" /> for two objects <c>x</c> and <c>y</c>, then the value returned by the <see cref="M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)" /> method for <c>x</c> must equal the value returned for <c>y</c>.</para>
+          <para>Implementations are required to ensure that if the <see cref="M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)" /> method returns <see langword="true" /> for two objects <paramref name="x" /> and <paramref name="y" />, then the value returned by the <see cref="M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)" /> method for <paramref name="x" /> must equal the value returned for <paramref name="y" />.</para>
         </block>
         <altmember cref="M:System.Object.GetHashCode" />
         <altmember cref="T:System.Collections.IHashCodeProvider" />

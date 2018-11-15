@@ -73,7 +73,7 @@
       </Parameters>
       <Docs>
         <param name="links">The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> array that receives the elements of this collection. The array must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>links</c> where this method starts copying this collection.</param>
+        <param name="index">The zero-based index in <paramref name="links" /> where this method starts copying this collection.</param>
         <summary>Copies all <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> objects in this collection to the specified array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>

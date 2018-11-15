@@ -408,9 +408,7 @@
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Gets any exception that was thrown during the construction of the event source.</summary>
+        <summary>Gets any exception that was thrown during the construction of the event source.</summary>
         <value>The exception that was thrown during the construction of the event source, or <see langword="null" /> if no exception was thrown.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -459,9 +457,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Gets the activity ID of the current thread.</summary>
+        <summary>Gets the activity ID of the current thread.</summary>
         <value>The activity ID of the current thread.</value>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId(System.Guid)" />
@@ -1242,9 +1238,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Sets the activity ID on the current thread.</summary>
+        <summary>Sets the activity ID on the current thread.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="SetCurrentThreadActivityId">
@@ -1285,9 +1279,7 @@
       </Parameters>
       <Docs>
         <param name="activityId">The current thread's new activity ID, or <see cref="F:System.Guid.Empty" /> to indicate that work on the current thread is not associated with any activity.</param>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Sets the activity ID on the current thread.</summary>
+        <summary>Sets the activity ID on the current thread.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1340,9 +1332,7 @@
       <Docs>
         <param name="activityId">The current thread's new activity ID, or <see cref="F:System.Guid.Empty" /> to indicate that work on the current thread is not associated with any activity.</param>
         <param name="oldActivityThatWillContinue">When this method returns, contains the previous activity ID on the current thread.</param>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Sets the activity ID on the current thread, and returns the previous activity ID.</summary>
+        <summary>Sets the activity ID on the current thread, and returns the previous activity ID.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3099,9 +3089,7 @@ class AnotherEventSource : EventSource {
         <param name="relatedActivityId">The related activity identifier.</param>
         <param name="childActivityID">To be added.</param>
         <param name="args">An array of objects that contain data about the event.</param>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Writes an event that indicates that the current activity is related to another activity.</summary>
+        <summary>Writes an event that indicates that the current activity is related to another activity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3182,9 +3170,7 @@ class AnotherEventSource : EventSource {
         <param name="childActivityID">To be added.</param>
         <param name="eventDataCount">The number of items in the <c>data</c> field.</param>
         <param name="data">A pointer to the first item in the event data field.</param>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Writes an event that indicates that the current activity is related to another activity.</summary>
+        <summary>Writes an event that indicates that the current activity is related to another activity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

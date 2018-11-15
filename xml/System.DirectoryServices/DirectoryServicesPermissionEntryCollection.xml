@@ -320,8 +320,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert <c>value</c>.</param>
-        <param name="value">The new value of the element at <c>index</c>.</param>
+        <param name="index">The zero-based index at which to insert <paramref name="value" />.</param>
+        <param name="value">The new value of the element at <paramref name="index" />.</param>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnInsert(System.Int32,System.Object)" /> method.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
@@ -350,8 +350,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> can be found.</param>
-        <param name="value">The value of the element to remove from <c>index</c>.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> can be found.</param>
+        <param name="value">The value of the element to remove from <paramref name="index" />.</param>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnRemove(System.Int32,System.Object)" /> method.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
@@ -381,9 +381,9 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>oldValue</c> can be found.</param>
-        <param name="oldValue">The value to replace with <c>newValue</c>.</param>
-        <param name="newValue">The new value of the element at <c>index</c>.</param>
+        <param name="index">The zero-based index at which <paramref name="oldValue" /> can be found.</param>
+        <param name="oldValue">The value to replace with <paramref name="newValue" />.</param>
+        <param name="newValue">The new value of the element at <paramref name="index" />.</param>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnSet(System.Int32,System.Object,System.Object)" /> method.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />

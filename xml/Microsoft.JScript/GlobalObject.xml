@@ -1458,7 +1458,7 @@
       </Parameters>
       <Docs>
         <param name="string">The string to convert.</param>
-        <param name="radix">A number between 2 and 36 that represents the base of the number system that <c>string</c> is expressed in. The default is 10.</param>
+        <param name="radix">A number between 2 and 36 that represents the base of the number system that <paramref name="string" /> is expressed in. The default is 10.</param>
         <summary>Converts the specified string to its <see cref="T:System.Double" /> equivalent, using the specified base.</summary>
         <returns>A value that is equivalent to the value that is contained in <paramref name="string" />.</returns>
         <remarks>To be added.</remarks>

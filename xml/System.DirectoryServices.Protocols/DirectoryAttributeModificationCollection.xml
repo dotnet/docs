@@ -186,7 +186,7 @@
       </Parameters>
       <Docs>
         <param name="array">A one-dimensional array that is the destination of the elements copied from the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeModificationCollection" /> object.</param>
-        <param name="index">The zero-based index of <c>array</c> where copying begins.</param>
+        <param name="index">The zero-based index of <paramref name="array" /> where copying begins.</param>
         <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttributeModificationCollection.CopyTo(System.DirectoryServices.Protocols.DirectoryAttributeModification[],System.Int32)" /> method copies the entire collection to a one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

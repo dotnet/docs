@@ -43,7 +43,7 @@
         <Parameter Name="v2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="v1">The object to coerce to the type of object <c>v2</c>.</param>
+        <param name="v1">The object to coerce to the type of object <paramref name="v2" />.</param>
         <param name="v2">The object that has the desired type.</param>
         <summary>Determines whether the first specified object can be coerced to the type of the second specified object.</summary>
         <returns>

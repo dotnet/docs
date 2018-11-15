@@ -48,7 +48,7 @@
       </Parameters>
       <Docs>
         <param name="value">A one-dimensional array that is the destination of the elements copied from the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> object.</param>
-        <param name="i">The zero-based index of <c>value</c> where copying begins.</param>
+        <param name="i">The zero-based index of <paramref name="value" /> where copying begins.</param>
         <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlResponseDocument.CopyTo(System.DirectoryServices.Protocols.DirectoryResponse[],System.Int32)" /> method copies the entire collection to a one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -297,7 +297,7 @@
       </Parameters>
       <Docs>
         <param name="value">A one-dimensional array that is the destination of the elements copied from the <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" /> object.</param>
-        <param name="i">The zero-based index of <c>value</c> where copying begins.</param>
+        <param name="i">The zero-based index of <paramref name="value" /> where copying begins.</param>
         <summary>Copies the entire <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" /> collection to a one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
       </Docs>

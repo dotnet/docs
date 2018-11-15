@@ -15,9 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Listens for suspend and resume notifications.</summary>
+    <summary>Listens for suspend and resume notifications.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -46,9 +44,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Called when ASP.NET notifies an application that a process is being suspended.</summary>
+        <summary>Called when ASP.NET notifies an application that a process is being suspended.</summary>
         <returns>To be added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

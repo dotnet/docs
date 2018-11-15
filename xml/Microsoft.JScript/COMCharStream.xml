@@ -256,7 +256,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of bytes in which to store the data that is read from the stream.</param>
-        <param name="offset">The zero-based byte offset in <c>buffer</c> at which to begin storing the data that is read from the stream.</param>
+        <param name="offset">The zero-based byte offset in <paramref name="buffer" /> at which to begin storing the data that is read from the stream.</param>
         <param name="count">The maximum number of bytes to read from the stream.</param>
         <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
         <returns>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</returns>
@@ -288,7 +288,7 @@
         <Parameter Name="origin" Type="System.IO.SeekOrigin" />
       </Parameters>
       <Docs>
-        <param name="offset">A byte offset relative to the <c>origin</c> parameter.</param>
+        <param name="offset">A byte offset relative to the <paramref name="origin" /> parameter.</param>
         <param name="origin">A value that indicates the reference point that is used to obtain the new position.</param>
         <summary>Sets the position in the current stream. This method does not do anything. It always returns 0.</summary>
         <returns>0 in all cases.</returns>
@@ -351,8 +351,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of byte data to copy to the current stream.</param>
-        <param name="offset">The zero-based byte offset in <c>buffer</c> at which to begin copying bytes to the current stream.</param>
-        <param name="count">The number of bytes to copy from <c>buffer</c> to the current stream.</param>
+        <param name="offset">The zero-based byte offset in <paramref name="buffer" /> at which to begin copying bytes to the current stream.</param>
+        <param name="count">The number of bytes to copy from <paramref name="buffer" /> to the current stream.</param>
         <summary>Writes the specified byte data to the stream.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

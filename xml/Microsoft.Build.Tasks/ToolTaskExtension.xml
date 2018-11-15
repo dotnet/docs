@@ -191,7 +191,7 @@
       </Parameters>
       <Docs>
         <param name="parameterName">The name of the parameter to return.</param>
-        <param name="defaultValue">The value to return if <c>parameterName</c> does not exist in the <see cref="P:Microsoft.Build.Tasks.ToolTaskExtension.Bag" />.</param>
+        <param name="defaultValue">The value to return if <paramref name="parameterName" /> does not exist in the <see cref="P:Microsoft.Build.Tasks.ToolTaskExtension.Bag" />.</param>
         <summary>Gets the value of the specified Boolean parameter.</summary>
         <returns>The parameter value.</returns>
         <remarks>
@@ -230,7 +230,7 @@
       </Parameters>
       <Docs>
         <param name="parameterName">The name of the parameter to return.</param>
-        <param name="defaultValue">The value to return if <c>parameterName</c> does not exist in the <see cref="P:Microsoft.Build.Tasks.ToolTaskExtension.Bag" />.</param>
+        <param name="defaultValue">The value to return if <paramref name="parameterName" /> does not exist in the <see cref="P:Microsoft.Build.Tasks.ToolTaskExtension.Bag" />.</param>
         <summary>Gets the value of the specified integer parameter.</summary>
         <returns>The parameter value.</returns>
         <remarks>

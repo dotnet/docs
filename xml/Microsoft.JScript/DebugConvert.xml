@@ -707,7 +707,7 @@
       </Parameters>
       <Docs>
         <param name="value">The value to convert to a new type.</param>
-        <param name="typeCode">The type to convert <c>value</c> to.</param>
+        <param name="typeCode">The type to convert <paramref name="value" /> to.</param>
         <param name="truncationPermitted">
           <see langword="true" /> to allow data loss; otherwise, <see langword="false" />.</param>
         <summary>Converts the specified value to the specified <see cref="T:System.TypeCode" />, optionally allowing data loss.</summary>

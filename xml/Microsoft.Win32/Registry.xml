@@ -211,7 +211,7 @@
         <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Contains information about the current user preferences. This field reads the Windows registry base key HKEY_CURRENT_USER</summary>
+        <summary>Contains information about the current user preferences. This field reads the Windows registry base key HKEY_CURRENT_USER.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -323,7 +323,7 @@
       <Docs>
         <param name="keyName">The full registry path of the key, beginning with a valid registry root, such as "HKEY_CURRENT_USER".</param>
         <param name="valueName">The name of the name/value pair.</param>
-        <param name="defaultValue">The value to return if <c>valueName</c> does not exist.</param>
+        <param name="defaultValue">The value to return if <paramref name="valueName" /> does not exist.</param>
         <summary>Retrieves the value associated with the specified name, in the specified registry key. If the name is not found in the specified key, returns a default value that you provide, or <see langword="null" /> if the specified key does not exist.</summary>
         <returns>
           <see langword="null" /> if the subkey specified by <paramref name="keyName" /> does not exist; otherwise, the value associated with <paramref name="valueName" />, or <paramref name="defaultValue" /> if <paramref name="valueName" /> is not found.</returns>

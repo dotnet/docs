@@ -1640,8 +1640,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;TKey&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> containing the keys of the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
+        <value>An <see cref="T:System.Collections.Generic.ICollection`1" /> of type <paramref name="TKey" /> containing the keys of the <see cref="T:System.Collections.Generic.IDictionary`2" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1677,8 +1677,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;TValue&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> containing the values in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
+        <value>An <see cref="T:System.Collections.Generic.ICollection`1" /> of type <paramref name="TValue" /> containing the values in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1750,8 +1750,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TKey&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection containing the keys of the <see cref="T:System.Collections.Generic.IReadOnlyDictionary`2" />.</summary>
+        <value>A collection containing the keys of the <see cref="T:System.Collections.Generic.IReadOnlyDictionary`2" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1786,8 +1786,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TValue&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection containing the values of the <see cref="T:System.Collections.Generic.IReadOnlyDictionary`2" />.</summary>
+        <value>A collection containing the values of the <see cref="T:System.Collections.Generic.IReadOnlyDictionary`2" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

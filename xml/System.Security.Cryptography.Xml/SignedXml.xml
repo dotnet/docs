@@ -1242,9 +1242,7 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Gets the names of methods whose canonicalization algorithms are explicitly allowed.</summary>
+        <summary>Gets the names of methods whose canonicalization algorithms are explicitly allowed.</summary>
         <value>A collection of the names of methods that safely produce canonical XML.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

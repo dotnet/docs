@@ -6,15 +6,15 @@ ms.assetid: ef9d69a1-9461-43fe-94bb-7c836754bcb5
 ---
 # Get the sample databases for ADO.NET code samples
 
-A number of samples and walkthroughs in the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] documentation use sample databases and SQL Server Express. You can download these products free of charge from Microsoft.
+A number of examples and walkthroughs in the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] documentation use sample SQL Server databases and SQL Server Express. You can download these products free of charge from Microsoft.
 
 ## Get the Northwind sample database
 
-Download the script `instnwnd.sql` to create and load the Northwind sample database from the following GitHub repo:
+Download the script `instnwnd.sql` to create and load the Northwind sample database from the following GitHub repository:
 
 [Northwind and pubs sample databases for Microsoft SQL Server](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs)
 
-Before you can use the Northwind database, you have to recreate the database on an instance of SQL Server by using [SQL Server Management Studio](#get_ssms) or a similar tool to run the `instnwnd.sql` script file. Follow the instructions in the Readme file in the repo.
+Before you can use the Northwind database, you have to run the downloaded `instnwnd.sql` script file to recreate the database on an instance of SQL Server by using [SQL Server Management Studio](#get_ssms) or a similar tool. Follow the instructions in the Readme file in the repository.
 
 ## Get the AdventureWorks sample database
 
@@ -28,9 +28,9 @@ After you download one of the database backup (\*.bak) files, restore the backup
 
 SQL Server Express is a free, entry-level edition of SQL Server that you can redistribute with applications. Download SQL Server Express from the following page:
   
-[SQL Server Express Editions](https://www.microsoft.com/sql-server/sql-server-editions-express)
+[SQL Server Express Edition](https://www.microsoft.com/sql-server/sql-server-editions-express)
 
-If you're using [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), SQL Server Express LocalDB is included in the free Community edition as well as the Professional and higher editions.  
+If you're using [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), SQL Server Express LocalDB is included in the free Community edition of Visual Studio, as well as the Professional and higher editions.  
 
 ## <a name="get_ssms"></a> Get SQL Server Management Studio
 If you want to view or modify a database that you've downloaded, you can use SQL Server Management Studio (SSMS). Download SSMS from the following page:

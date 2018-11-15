@@ -133,11 +133,15 @@ You can install a specific version using the `--version` argument. The version m
 
   Windows:
 
-  `./dotnet-install.ps1 -Channel LTS`
+  ```powershell
+  ./dotnet-install.ps1 -Channel LTS
+  ```
 
   macOS/Linux:
 
-  `./dotnet-install.sh --channel LTS`
+  ```bash
+  ./dotnet-install.sh --channel LTS
+  ```
 
 * Install the latest version from 2.0 channel to the specified location:
 

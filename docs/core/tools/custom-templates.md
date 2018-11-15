@@ -123,7 +123,7 @@ dotnet new -u <NUGET_PACKAGE_ID>
 
 ### To uninstall a template from a local nupkg file
 
-When you wish to uninstall the template, don't attempt to use the path to the *nupkg* file. Attempting to uninstall a template using `dotnet new -u <PATH_TO_NUPKG_FILE>` fails. Reference the package by its `id`:
+To uninstall the template, don't attempt to use the path to the *nupkg* file. Attempting to uninstall a template using `dotnet new -u <PATH_TO_NUPKG_FILE>` fails. Reference the package by its `id`:
 
 ```console
 dotnet new -u <NUGET_PACKAGE_ID>

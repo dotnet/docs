@@ -73,6 +73,8 @@ Use string interpolation to improve the readability and maintainability of C# co
 
 `Sample...`
 
+For more information on formatting C# code see [Formatting Types in .NET](../../../standard/base-types/formatting-types.md). 
+
 ### Format Method
 The <xref:System.String.Format%2A?displayProperty=nameWithType> utilizes placeholders in braces to create a format string. The following example uses a format string to output the result of each iteration of a loop:
 

@@ -14,8 +14,16 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a mechanism for pinning and unpinning objects to prevent the garbage collector from moving them.</summary>
+    <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The <xref:System.Buffers.MemoryManager%601> class implements the `IPinnable` interface.
+
+       ]]></format>        
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Pin">
@@ -40,10 +48,21 @@
         <Parameter Name="elementIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="elementIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="elementIndex">The offset to the element within the memory buffer to which the returned <see cref="T:System.Buffers.MemoryHandle" /> points.</param>
+        <summary>Pins a block of memory.</summary>
+        <returns>A handle to the block of memory.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+A developer can access an object that implements the <xref:System.Buffers.IPinnable> interface without pinning it only through managed APIs. Pinning is required for access by unmanaged APIs. 
+
+Call this method to indicate that the <xref:System.Buffers.IPinnable> object cannot be moved by the garbage collector so that the address of the pinned object can be used.
+
+
+       ]]></format>        
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Unpin">
@@ -66,8 +85,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Frees a block of pinned memory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+Call this method to indicate that the <xref:System.Buffers.IPinnable> object no longer needs to be pinned, and that the garbage collector can now move the object.
+
+
+       ]]></format>        
+        </remarks>
       </Docs>
     </Member>
   </Members>

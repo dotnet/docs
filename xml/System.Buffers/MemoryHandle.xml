@@ -21,8 +21,21 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a memory handle for a block of memory.</summary>
+    <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+A `MemoryHandle` instance represents a handle to a pinned block of memory. It is returned by the following methods:
+
+- <xref:System.Buffers.IPinnable.Pin%2A?displayProperty=nameWithType>.
+- <xref:System.Memory%601.Pin%2A?displayProperty=nameWithType>
+- <xref:System.ReadOnlyMemory%601.Pin%2A?displayProperty=nameWithType>.
+- <xref:System.Buffers.MemoryManager%601.Pin%2A?displayProperty=<nameWithType>
+
+ ]]></format>    
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,10 +62,10 @@
         <Parameter Name="pinnable" Type="System.Buffers.IPinnable" />
       </Parameters>
       <Docs>
-        <param name="pointer">To be added.</param>
-        <param name="handle">To be added.</param>
-        <param name="pinnable">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pointer">A pointer to memory..</param>
+        <param name="handle">A handle used to pin array buffers.</param>
+        <param name="pinnable">A reference to a manually managed object, or <see langword="default" /> if there is no memory manager.</param>
+        <summary>Creates a new memory handle for the block of memory.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +92,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Frees the pinned handle and releases the <see cref="T:System.Buffers.IPinnable" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,9 +119,9 @@
         <ReturnType>System.Void*</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns a pointer to the memory block.</summary>
+        <value>A pointer to the memory block.</value>
+        <remarks>The memory is assumed to be pinned so that its address won't change.</remarks>
       </Docs>
     </Member>
   </Members>

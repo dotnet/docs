@@ -20,8 +20,8 @@ ms.author: "ronpet"
 
 The .NET composite formatting feature takes a list of objects and a composite format string as input. A composite format string consists of fixed text intermixed with indexed placeholders, called format items, that correspond to the objects in the list. The formatting operation yields a result string that consists of the original fixed text intermixed with the string representation of the objects in the list.  
   
->  [!IMPORTANT]
->  Instead of using composite format strings, you can use *interpolated strings* if the language and language version that you're using support them. An interpolated string is a string that contains *interpolated expressions*. Each interpolated expression is resolved with the expression's value and included in the result string when the string is assigned. For more information, see [String interpolation (C# Reference)](../../csharp/language-reference/tokens/interpolated.md) and [Interpolated strings (Visual Basic Reference)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md).
+> [!IMPORTANT]
+> Instead of using composite format strings, you can use *interpolated strings* if the language and language version that you're using support them. An interpolated string is a string that contains *interpolated expressions*. Each interpolated expression is resolved with the expression's value and included in the result string when the string is assigned. For more information, see [String interpolation (C# Reference)](../../csharp/language-reference/tokens/interpolated.md) and [Interpolated strings (Visual Basic Reference)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md).
 
 The composite formatting feature is supported by methods such as the following:  
   

@@ -21,13 +21,13 @@ The two commonly used protocols are HTTP request/response with resource APIs (wh
 
 Client and services can communicate through many different types of communication, each one targeting a different scenario and goals. Initially, those types of communications can be classified in two axes.
 
-The first axis is defining if the protocol is synchronous or asynchronous:
+The first axis defines if the protocol is synchronous or asynchronous:
 
 - Synchronous protocol. HTTP is a synchronous protocol. The client sends a request and waits for a response from the service. That's independent of the client code execution that could be synchronous (thread is blocked) or asynchronous (thread isn't blocked, and the response will reach a callback eventually). The important point here is that the protocol (HTTP/HTTPS) is synchronous and the client code can only continue its task when it receives the HTTP server response.
 
 - Asynchronous protocol. Other protocols like AMQP (a protocol supported by many operating systems and cloud environments) use asynchronous messages. The client code or message sender usually doesn't wait for a response. It just sends the message as when sending a message to a RabbitMQ queue or any other message broker.
 
-The second axis is defining if the communication has a single receiver or multiple receivers:
+The second axis defines if the communication has a single receiver or multiple receivers:
 
 - Single receiver. Each request must be processed by exactly one receiver or service. An example of this communication is the [Command pattern](https://en.wikipedia.org/wiki/Command_pattern).
 

@@ -1,30 +1,31 @@
 ---
 title: Implement background tasks in microservices with IHostedService and the BackgroundService class
-description: .NET Microservices Architecture for Containerized .NET Applications | Implement background tasks in microservices with IHostedService and the BackgroundService class
+description: .NET Microservices Architecture for Containerized .NET Applications | Understand the new options to use IHostedService and BackgroundService to implement background tasks in microservices .NET Core.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 12/11/2017
+ms.date: 10/02/2018
 ---
 # Implement background tasks in microservices with IHostedService and the BackgroundService class
 
 Background tasks and scheduled jobs are something you might need to implement, eventually, in a microservice based application or in any kind of application. The difference when using a microservices architecture is that you can implement a single microservice process/container for hosting these background tasks so you can scale it down/up as you need or you can even make sure that it runs a single instance of that microservice process/container.
 
-From a generic point of view, in .NET Core we called these type of tasks Hosted Services, because they are services/logic that you host within your host/application/microservice. Note that in this case, the hosted service simply means a class with the background task logic.
+From a generic point of view, in .NET Core we called these type of tasks *Hosted Services*, because they are services/logic that you host within your host/application/microservice. Note that in this case, the hosted service simply means a class with the background task logic.
 
-Since .NET Core 2.0, the framework provides a new interface named <xref:Microsoft.Extensions.Hosting.IHostedService> helping you to easily implement hosted services. The basic idea is that you can register multiple background tasks (hosted services), that run in the background while your web host or host is running, as shown in the image below.
+Since .NET Core 2.0, the framework provides a new interface named <xref:Microsoft.Extensions.Hosting.IHostedService> helping you to easily implement hosted services. The basic idea is that you can register multiple background tasks (hosted services), that run in the background while your web host or host is running, as shown in the image 6-26.
 
-![](./media/image26.png)
+![ASP.NET Core 1.x and 2.x support IWebHost for background processes in web apps, .NET Core 2,1 supports IHost for background processes with plain console apps.](./media/image26.png)
 
-**Figure 8-25.** Using IHostedService in a WebHost vs. a Host
+**Figure 6-26**. Using IHostedService in a WebHost vs. a Host
 
 Note the difference made between `WebHost` and `Host`. 
-A `WebHost` (base class implementing `IWebHost`) in ASP.NET Core 2.0 is the infrastructure artifact you use to provide HTTP server features to your process, such as if you are implementing an MVC web app or Web API service. It provides all the new infrastructure goodness in ASP.NET Core, enabling you to use dependency injection, insert middlewares in the HTTP pipeline, etc. and precisely use these `IHostedServices` for background tasks.
+
+A `WebHost` (base class implementing `IWebHost`) in ASP.NET Core 2.0 is the infrastructure artifact you use to provide HTTP server features to your process, such as if you are implementing an MVC web app or Web API service. It provides all the new infrastructure goodness in ASP.NET Core, enabling you to use dependency injection, insert middlewares in the request pipeline, etc. and precisely use these `IHostedServices` for background tasks.
 
 A `Host` (base class implementing `IHost`), however, is something new in .NET Core 2.1. Basically, a `Host` allows you to have a similar infrastructure than what you have with `WebHost` (dependency injection, hosted services, etc.), but in this case, you just want to have a simple and lighter process as the host, with nothing related to MVC, Web API or HTTP server features.
 
 Therefore, you can choose and either create a specialized host-process with IHost to handle the hosted services and nothing else, such a microservice made just for hosting the `IHostedServices`, or you can alternatively extend an existing ASP.NET Core `WebHost`, such as an existing ASP.NET Core Web API or MVC app. 
 
-Each approach has pros and cons depending on your business and scalability needs. The bottom line is basically that if your background tasks have nothing to do with HTTP (IWebHost) you should use and IHost, when available in .NET Core 2.1.
+Each approach has pros and cons depending on your business and scalability needs. The bottom line is basically that if your background tasks have nothing to do with HTTP (IWebHost) you should use IHost (with .NET Core 2.1).
 
 ## Registering hosted services in your WebHost or Host
 
@@ -61,7 +62,6 @@ The `IHostedService` background task execution is coordinated with the lifetime 
 
 Without using `IHostedService`, you could always start a background thread to run any task. The difference is precisely at the app’s shutdown time when that thread would simply be killed without having the opportunity to run graceful clean-up actions.
 
-
 ## The IHostedService interface
 
 When you register an `IHostedService`, .NET Core will call the `StartAsync()` and `StopAsync()` methods of your `IHostedService` type during application start and stop respectively. Specifically, start is called after the server has started and `IApplicationLifetime.ApplicationStarted` is triggered.
@@ -95,11 +95,9 @@ As a developer, you are responsible for handling the stopping action or your ser
 
 You could go ahead and create your custom hosted service class from scratch and implement the `IHostedService`, as you need to do when using .NET Core 2.0. 
 
-However, since most background tasks will have similar needs in regard to the cancellation tokens management and other typical operations, .NET Core 2.1 will be providing a very convenient abstract base class you can derive from, named BackgroundService.
+However, since most background tasks will have similar needs in regard to the cancellation tokens management and other typical operations, .NET Core 2.1 provides a very convenient abstract base class you can derive from, named BackgroundService.
 
-That class provides the main work needed to set up the background task. Note that this class will come in the .NET Core 2.1 library so you don’t need to write it.
-
-However, as of the time of this writing, .NET Core 2.1 has not been released. Therefore, in eShopOnContainers which is currently using .NET Core 2.0, we are just temporally incorporating that class from the .NET Core 2.1 open-source repo (no need of any proprietary license other than the open-source license) because it is compatible with the current IHostedService interface in .NET Core 2.0. When .NET Core 2.1 is released, you’ll just need to point to the right NuGet package.
+That class provides the main work needed to set up the background task.
 
 The next code is the abstract BackgroundService base class as implemented in .NET Core 2.1.
 
@@ -207,7 +205,7 @@ public class GracePeriodManagerService : BackgroundService
 }
 ```
 
-In this specific case for eShopOnContainers, it is executing an application method which is querying a database table looking for orders with a specific state and when applying changes, it is publishing integration events through the event bus (underneath it can be using RabbitMQ or Azure Service Bus). 
+In this specific case for eShopOnContainers, it's executing an application method that's querying a database table looking for orders with a specific state and when applying changes, it is publishing integration events through the event bus (underneath it can be using RabbitMQ or Azure Service Bus).
 
 Of course, you could run any other business background task, instead.
 
@@ -223,11 +221,11 @@ WebHost.CreateDefaultBuilder(args)
 
 ### Summary class diagram
 
-The following image 8-26 shows a visual summary of the classes and interfaced involved when implementing IHostedServices.
+The following image shows a visual summary of the classes and interfaced involved when implementing IHostedServices.
  
-![](./media/image27.png)
+![Class diagram: IWebHost and IHost can host many services, which inherit from BackgroundService, which implements IHostedService.](./media/image27.png)
 
-**Figure 8-26.** Class diagram showing the multiple classes and interfaces related to IHostedService
+**Figure 6-27**. Class diagram showing the multiple classes and interfaces related to IHostedService
 
 ### Deployment considerations and takeaways
 
@@ -237,21 +235,17 @@ But even for a `WebHost` deployed into an app pool, there are scenarios like rep
 
 The `IHostedService` interface provides a convenient way to start background tasks in an ASP.NET Core web application (in .NET Core 2.0) or in any process/host (starting in .NET Core 2.1 with `IHost`). Its main benefit is the opportunity you get with the graceful cancellation to clean-up code of your background tasks when the host itself is shutting down.
 
-
 #### Additional resources
 
--   **Building a scheduled task in ASP.NET Core/Standard 2.0** 
-
+-   **Building a scheduled task in ASP.NET Core/Standard 2.0** <br/>
     [*https://blog.maartenballiauw.be/post/2017/08/01/building-a-scheduled-cache-updater-in-aspnet-core-2.html*](https://blog.maartenballiauw.be/post/2017/08/01/building-a-scheduled-cache-updater-in-aspnet-core-2.html)
 
--   **Implementing IHostedService in ASP.NET Core 2.0** 
-
+-   **Implementing IHostedService in ASP.NET Core 2.0** <br/>
     [*https://www.stevejgordon.co.uk/asp-net-core-2-ihostedservice*](https://www.stevejgordon.co.uk/asp-net-core-2-ihostedservice)
 
--   **ASP.NET Core 2.1 Hosting samples** 
-
+-   **ASP.NET Core 2.1 Hosting samples** <br/>
     [*https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample*](https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample)
 
 >[!div class="step-by-step"]
 [Previous](test-aspnet-core-services-web-apps.md)
-[Next](../microservice-ddd-cqrs-patterns/index.md)
+[Next](implement-api-gateways-with-ocelot.md)

@@ -1,21 +1,21 @@
 ---
 title: Implementing an event bus with RabbitMQ for the development or test environment
-description: .NET Microservices Architecture for Containerized .NET Applications | Implementing an event bus with RabbitMQ for the development or test environment
+description: .NET Microservices Architecture for Containerized .NET Applications | Use RabbitMQ to implement an event bus messaging for integration events for the development or test environments.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 12/11/2017
+ms.date: 10/02/2018
 ---
 # Implementing an event bus with RabbitMQ for the development or test environment
 
 We should start by saying that if you create your custom event bus based on RabbitMQ running in a container, as the eShopOnContainers application does, it should be used only for your development and test environments. You should not use it for your production environment, unless you are building it as a part of a production-ready service bus. A simple custom event bus might be missing many production-ready critical features that a commercial service bus has.
 
-One of the event bus custom implementation in eShopOnContainers is basically a library using the RabbitMQ API (There’s another implementation based on Azure Service Bus). 
+One of the event bus custom implementation in eShopOnContainers is basically a library using the RabbitMQ API (There’s another implementation based on Azure Service Bus).
 
-The event bus implementation with RabbitMQ lets microservices subscribe to events, publish events, and receive events, as shown in Figure 8-21.
+The event bus implementation with RabbitMQ lets microservices subscribe to events, publish events, and receive events, as shown in Figure 6-21.
 
-![](./media/image22.png)
+![RabbitMQ functions as an intermediary between message publisher and subscribers, to handle distribution.](./media/image22.png)
 
-**Figure 8-21.** RabbitMQ implementation of an event bus
+**Figure 6-21.** RabbitMQ implementation of an event bus
 
 In the code, the EventBusRabbitMQ class implements the generic IEventBus interface. This is based on Dependency Injection so that you can swap from this dev/test version to a production version.
 
@@ -26,11 +26,11 @@ public class EventBusRabbitMQ : IEventBus, IDisposable
     //...
 ```
 
-The RabbitMQ implementation of a sample dev/test event bus is boilerplate code. It has to handle the connection to the RabbitMQ server and provide code for publishing a message event to the queues. It also has to implement a dictionary of collections of integration event handlers for each event type; these event types can have a different instantiation and different subscriptions for each receiver microservice, as shown in Figure 8-21.
+The RabbitMQ implementation of a sample dev/test event bus is boilerplate code. It has to handle the connection to the RabbitMQ server and provide code for publishing a message event to the queues. It also has to implement a dictionary of collections of integration event handlers for each event type; these event types can have a different instantiation and different subscriptions for each receiver microservice, as shown in Figure 6-21.
 
 ## Implementing a simple publish method with RabbitMQ
 
-The following code is part is a simplified event bus implementation for RabbitMQ, improved in the [actual code](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) of eShopOnContainers. You usually do not need to code it unless you are making improvements. The code gets a connection and channel to RabbitMQ, creates a message, and then publishes the message into the queue.
+The following code is part of a simplified event bus implementation for RabbitMQ, improved in the [actual code](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) of eShopOnContainers. You usually do not need to code it unless you are making improvements. The code gets a connection and channel to RabbitMQ, creates a message, and then publishes the message into the queue.
 
 ```csharp
 public class EventBusRabbitMQ : IEventBus, IDisposable

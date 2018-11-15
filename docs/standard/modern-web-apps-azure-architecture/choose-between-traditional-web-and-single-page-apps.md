@@ -68,7 +68,7 @@ Writing SPAs requires familiarity with JavaScript and/or TypeScript and client-s
 > - **Angular**  
 >   <https://angular.io>
 > - **Comparison of JavaScript Frameworks**  
->   <https://javascriptreport.com/the-ultimate-guide-to-javascript-frameworks/>
+>   <https://jsreport.io/the-ultimate-guide-to-javascript-frameworks/>
 
 **Your application must already expose an API for other (internal or public) clients**
 

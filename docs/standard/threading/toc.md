@@ -30,7 +30,6 @@
 #### [CountdownEvent](countdownevent.md)
 #### [ManualResetEvent and ManualResetEventSlim](manualresetevent-and-manualreseteventslim.md)
 ### [Mutexes](mutexes.md)
-### [Reader-Writer locks](reader-writer-locks.md)
 ### [Semaphore and SemaphoreSlim](semaphore-and-semaphoreslim.md)
 ### [Barrier](barrier.md)
 #### [How to: Synchronize concurrent operations with a Barrier](how-to-synchronize-concurrent-operations-with-a-barrier.md)

@@ -1,9 +1,9 @@
 ---
 title: Subscribing to events
-description: .NET Microservices Architecture for Containerized .NET Applications | Subscribing to events
+description: .NET Microservices Architecture for Containerized .NET Applications | Understand the details of publishing and subscription to integration events.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 12/11/2017
+ms.date: 10/02/2018
 ---
 # Subscribing to events
 
@@ -55,7 +55,7 @@ public class CatalogController : ControllerBase
 Then you use it from your controller’s methods, like in the UpdateProduct method:
 
 ```csharp
-[Route("update")]
+[Route("items")]
 [HttpPost]
 public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem product)
 {
@@ -85,14 +85,13 @@ In this case, since the origin microservice is a simple CRUD microservice, that 
  
 In more advanced microservices, like when using CQRS approaches, it can be implemented in the `CommandHandler` class, within the `Handle()` method. 
 
-
 ### Designing atomicity and resiliency when publishing to the event bus
 
-When you publish integration events through a distributed messaging system like your event bus, you have the problem of atomically updating the original database and publishing an event. For instance, in the simplified example shown earlier, the code commits data to the database when the product price is changed and then publishes a ProductPriceChangedIntegrationEvent message. Initially, it might look essential that these two operations be performed atomically. However, if you are using a distributed transaction involving the database and the message broker, as you do in older systems like [Microsoft Message Queuing (MSMQ)](https://msdn.microsoft.com/library/ms711472(v=vs.85).aspx), this is not recommended for the reasons described by the [CAP theorem](https://www.quora.com/What-Is-CAP-Theorem-1).
+When you publish integration events through a distributed messaging system like your event bus, you have the problem of atomically updating the original database and publishing an event (that is, either both operations complete or none of them). For instance, in the simplified example shown earlier, the code commits data to the database when the product price is changed and then publishes a ProductPriceChangedIntegrationEvent message. Initially, it might look essential that these two operations be performed atomically. However, if you are using a distributed transaction involving the database and the message broker, as you do in older systems like [Microsoft Message Queuing (MSMQ)](https://msdn.microsoft.com/library/ms711472\(v=vs.85\).aspx), this is not recommended for the reasons described by the [CAP theorem](https://www.quora.com/What-Is-CAP-Theorem-1).
 
-Basically, you use microservices to build scalable and highly available systems. Simplifying somewhat, the CAP theorem says that you cannot build a database (or a microservice that owns its model) that is continually available, strongly consistent, *and* tolerant to any partition. You must choose two of these three properties.
+Basically, you use microservices to build scalable and highly available systems. Simplifying somewhat, the CAP theorem says that you cannot build a (distributed) database (or a microservice that owns its model) that is continually available, strongly consistent, *and* tolerant to any partition. You must choose two of these three properties.
 
-In microservices-based architectures, you should choose availability and tolerance, and you should deemphasize strong consistency. Therefore, in most modern microservice-based applications, you usually do not want to use distributed transactions in messaging, as you do when you implement [distributed transactions](https://msdn.microsoft.com/library/ms978430.aspx#bdadotnetasync2_topic3c) based on the Windows Distributed Transaction Coordinator (DTC) with [MSMQ](https://msdn.microsoft.com/library/ms711472(v=vs.85).aspx).
+In microservices-based architectures, you should choose availability and tolerance, and you should deemphasize strong consistency. Therefore, in most modern microservice-based applications, you usually do not want to use distributed transactions in messaging, as you do when you implement [distributed transactions](https://msdn.microsoft.com/library/ms681205\(v=vs.85\).aspx) based on the Windows Distributed Transaction Coordinator (DTC) with [MSMQ](https://msdn.microsoft.com/library/ms711472\(v=vs.85\).aspx).
 
 Let’s go back to the initial issue and its example. If the service crashes after the database is updated (in this case, right after the line of code with \_context.SaveChangesAsync()), but before the integration event is published, the overall system could become inconsistent. This might be business critical, depending on the specific business operation you are dealing with.
 
@@ -104,7 +103,7 @@ As mentioned earlier in the architecture section, you can have several approache
 
 -   Using the [Outbox pattern](http://gistlabs.com/2014/05/the-outbox/). This is a transactional table to store the integration events (extending the local transaction).
 
-For this scenario, using the full Event Sourcing (ES) pattern is one of the best approaches, if not *the* best. However, in many application scenarios, you might not be able to implement a full ES system. ES means storing only domain events in your transactional database, instead of storing current state data. Storing only domain events can have great benefits, such as having the history of your system available and being able to determine the state of your system at any moment in the past. However, implementing a full ES system requires you to rearchitect most of your system and introduces many other complexities and requirements. For example, you would want to use a database specifically made for event sourcing, such as [Event Store](https://geteventstore.com/), or a document-oriented database such as Azure Cosmos DB, MongoDB, Cassandra, CouchDB, or RavenDB. ES is a great approach for this problem, but not the easiest solution unless you are already familiar with event sourcing.
+For this scenario, using the full Event Sourcing (ES) pattern is one of the best approaches, if not *the* best. However, in many application scenarios, you might not be able to implement a full ES system. ES means storing only domain events in your transactional database, instead of storing current state data. Storing only domain events can have great benefits, such as having the history of your system available and being able to determine the state of your system at any moment in the past. However, implementing a full ES system requires you to rearchitect most of your system and introduces many other complexities and requirements. For example, you would want to use a database specifically made for event sourcing, such as [Event Store](https://eventstore.org/), or a document-oriented database such as Azure Cosmos DB, MongoDB, Cassandra, CouchDB, or RavenDB. ES is a great approach for this problem, but not the easiest solution unless you are already familiar with event sourcing.
 
 The option to use transaction log mining initially looks very transparent. However, to use this approach, the microservice has to be coupled to your RDBMS transaction log, such as the SQL Server transaction log. This is probably not desirable. Another drawback is that the low-level updates recorded in the transaction log might not be at the same level as your high-level integration events. If so, the process of reverse-engineering those transaction log operations can be difficult.
 
@@ -118,7 +117,15 @@ Therefore, this balanced approach is a simplified ES system. You need a list of 
 
 If you are already using a relational database, you can use a transactional table to store integration events. To achieve atomicity in your application, you use a two-step process based on local transactions. Basically, you have an IntegrationEvent table in the same database where you have your domain entities. That table works as an insurance for achieving atomicity so that you include persisted integration events into the same transactions that are committing your domain data.
 
-Step by step, the process goes like this: the application begins a local database transaction. It then updates the state of your domain entities and inserts an event into the integration event table. Finally, it commits the transaction. You get the desired atomicity.
+Step by step, the process goes like this:
+
+1.  The application begins a local database transaction.
+
+2.  It then updates the state of your domain entities and inserts an event into the integration event table.
+
+3.  Finally, it commits the transaction, so you get the desired atomicity and then
+
+4.  You publish the event somehow (next).
 
 When implementing the steps of publishing the events, you have these choices:
 
@@ -126,21 +133,21 @@ When implementing the steps of publishing the events, you have these choices:
 
 -   Use the table as a kind of queue. A separate application thread or process queries the integration event table, publishes the events to the event bus, and then uses a local transaction to mark the events as published.
 
-Figure 8-22 shows the architecture for the first of these approaches.
+Figure 6-22 shows the architecture for the first of these approaches.
 
-![](./media/image23.png)
+![One approach to handle atomicity when publishing events: use one transaction to commit event to an event-log table, and then another transaction to publish (used in eShopOnContainers)](./media/image23.png)
 
-**Figure 8-22**. Atomicity when publishing events to the event bus
+**Figure 6-22**. Atomicity when publishing events to the event bus
 
-The approach illustrated in Figure 8-22 is missing an additional worker microservice that is in charge of checking and confirming the success of the published integration events. In case of failure, that additional checker worker microservice can read events from the table and republish them.
+The approach illustrated in Figure 6-22 is missing an additional worker microservice that is in charge of checking and confirming the success of the published integration events. In case of failure, that additional checker worker microservice can read events from the table and republish them, that is, repeat step number 2.
 
-About the second approach: you use the EventLog table as a queue and always use a worker microservice to publish the messages. In that case, the process is like that shown in Figure 8-23. This shows an additional microservice, and the table is the single source when publishing events.
+About the second approach: you use the EventLog table as a queue and always use a worker microservice to publish the messages. In that case, the process is like that shown in Figure 6-23. This shows an additional microservice, and the table is the single source when publishing events.
 
-![](./media/image24.png)
+![Another approach to handle atomicity: Publish to an event-log table and then have another microservice (a background worker) publish the event.](./media/image24.png)
 
-**Figure 8-23**. Atomicity when publishing events to the event bus with a worker microservice
+**Figure 6-23**. Atomicity when publishing events to the event bus with a worker microservice
 
-For simplicity, the eShopOnContainers sample uses the first approach (with no additional processes or checker microservices) plus the event bus. However, the eShopOnContainers is not handling all possible failure cases. In a real application deployed to the cloud, you must embrace the fact that issues will arise eventually, and you must implement that check and resend logic. Using the table as a queue can be more effective than the first approach if you have that table as a single source of events when publishing them through the event bus.
+For simplicity, the eShopOnContainers sample uses the first approach (with no additional processes or checker microservices) plus the event bus. However, the eShopOnContainers is not handling all possible failure cases. In a real application deployed to the cloud, you must embrace the fact that issues will arise eventually, and you must implement that check and resend logic. Using the table as a queue can be more effective than the first approach if you have that table as a single source of events when publishing them (with the worker) through the event bus.
 
 ### Implementing atomicity when publishing integration events through the event bus
 
@@ -211,7 +218,7 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem productToUp
 
 After the ProductPriceChangedIntegrationEvent integration event is created, the transaction that stores the original domain operation (update the catalog item) also includes the persistence of the event in the EventLog table. This makes it a single transaction, and you will always be able to check whether event messages were sent.
 
-The event log table is updated atomically with the original database operation, using a local transaction against the same database. If any of the operations fail, an exception is thrown and the transaction rolls back any completed operation, thus maintaining consistency between the domain operations and the event messages sent.
+The event log table is updated atomically with the original database operation, using a local transaction against the same database. If any of the operations fail, an exception is thrown and the transaction rolls back any completed operation, thus maintaining consistency between the domain operations and the event messages saved to the table.
 
 ### Receiving messages from subscriptions: event handlers in receiver microservices
 
@@ -266,11 +273,11 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.Even
 }
 ```
 
-The event handler needs to verify whether the product exists in any of the basket instances. It also updates the item price for each related basket line item. Finally, it creates an alert to be displayed to the user about the price change, as shown in Figure 8-24.
+The event handler needs to verify whether the product exists in any of the basket instances. It also updates the item price for each related basket line item. Finally, it creates an alert to be displayed to the user about the price change, as shown in Figure 6-24.
 
-![](./media/image25.png)
+![Browser view of the proce change notification on the user cart.](./media/image25.png)
 
-**Figure 8-24**. Displaying an item price change in a basket, as communicated by integration events
+**Figure 6-24**. Displaying an item price change in a basket, as communicated by integration events
 
 ## Idempotency in update message events
 
@@ -280,7 +287,7 @@ As noted earlier, idempotency means that an operation can be performed multiple 
 
 An example of an idempotent operation is a SQL statement that inserts data into a table only if that data is not already in the table. It does not matter how many times you run that insert SQL statement; the result will be the same—the table will contain that data. Idempotency like this can also be necessary when dealing with messages if the messages could potentially be sent and therefore processed more than once. For instance, if retry logic causes a sender to send exactly the same message more than once, you need to make sure that it is idempotent.
 
-It is possible to design idempotent messages. For example, you can create an event that says "set the product price to \$25" instead of "add \$5 to the product price." You could safely process the first message any number of times and the result will be the same. That is not true for the second message. But even in the first case, you might not want to process the first event, because the system could also have sent a newer price-change event and you would be overwriting the new price.
+It is possible to design idempotent messages. For example, you can create an event that says "set the product price to $25" instead of "add $5 to the product price." You could safely process the first message any number of times and the result will be the same. That is not true for the second message. But even in the first case, you might not want to process the first event, because the system could also have sent a newer price-change event and you would be overwriting the new price.
 
 Another example might be an order-completed event being propagated to multiple subscribers. It is important that order information be updated in other systems just once, even if there are duplicated message events for the same order-completed event.
 
@@ -290,8 +297,8 @@ Some message processing is inherently idempotent. For example, if a system gener
 
 ### Additional resources
 
--   **Honoring message idempotency** (subhead on this page)
-    [*https://msdn.microsoft.com/library/jj591565.aspx*](https://msdn.microsoft.com/library/jj591565.aspx)
+-   **Honoring message idempotency** <br/>
+    [*https://msdn.microsoft.com/library/jj591565.aspx#honoring_message_idempotency*](https://msdn.microsoft.com/library/jj591565.aspx)
 
 ## Deduplicating integration event messages
 
@@ -299,7 +306,7 @@ You can make sure that message events are sent and processed just once per subsc
 
 ### Deduplicating message events at the EventHandler level
 
-One way to make sure that an event is processed just once by any receiver is by implementing certain logic when processing the message events in event handlers. For example, that is the approach used in the eShopOnContainers application, as you can see in the [source code](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Controllers/OrdersController.cs) of the OrdersController class when it receives a CreateOrderCommand command. (In this case we use an HTTP request command, not a message-based command, but the logic you need to make a message-based command idempotent is similar.)
+One way to make sure that an event is processed just once by any receiver is by implementing certain logic when processing the message events in event handlers. For example, that is the approach used in the eShopOnContainers application, as you can see in the [source code of the UserCheckoutAcceptedIntegrationEventHandler class](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/IntegrationEvents/EventHandling/UserCheckoutAcceptedIntegrationEventHandler.cs) when it receives an UserCheckoutAcceptedIntegrationEvent integration event. (In this case we wrap the CreateOrderCommand with an IdentifiedCommand, using the eventMsg.RequestId as an identifier, before sending it to the command handler).
 
 ### Deduplicating messages when using RabbitMQ
 
@@ -311,64 +318,70 @@ If the “redelivered” flag is set, the receiver must take that into account, 
 
 ### Additional resources
 
--   **Forked eShopOnContainers using NServiceBus (Particular Software)**
+-   **Forked eShopOnContainers using NServiceBus (Particular Software)** <br/>
     [*https://go.particular.net/eShopOnContainers*](https://go.particular.net/eShopOnContainers)
 
--   **Event Driven Messaging**
+-   **Event Driven Messaging** <br/>
     [*http://soapatterns.org/design\_patterns/event\_driven\_messaging*](http://soapatterns.org/design_patterns/event_driven_messaging)
 
--   **Jimmy Bogard. Refactoring Towards Resilience: Evaluating Coupling**
+-   **Jimmy Bogard. Refactoring Towards Resilience: Evaluating Coupling** <br/>
     [*https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/*](https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/)
 
--   **Publish-Subscribe channel**
+-   **Publish-Subscribe channel** <br/>
     [*https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html*](https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html)
 
--   **Communicating Between Bounded Contexts**
+-   **Communicating Between Bounded Contexts** <br/>
     [*https://msdn.microsoft.com/library/jj591572.aspx*](https://msdn.microsoft.com/library/jj591572.aspx)
 
--   **Eventual Consistency**
+-   **Eventual Consistency** <br/>
     [*https://en.wikipedia.org/wiki/Eventual\_consistency*](https://en.wikipedia.org/wiki/Eventual_consistency)
 
--   **Philip Brown. Strategies for Integrating Bounded Contexts**
-    [*http://culttt.com/2014/11/26/strategies-integrating-bounded-contexts/*](http://culttt.com/2014/11/26/strategies-integrating-bounded-contexts/)
+-   **Philip Brown. Strategies for Integrating Bounded Contexts** <br/>
+    [*https://www.culttt.com/2014/11/26/strategies-integrating-bounded-contexts/*](https://www.culttt.com/2014/11/26/strategies-integrating-bounded-contexts/)
 
--   **Chris Richardson. Developing Transactional Microservices Using Aggregates, Event Sourcing and CQRS - Part 2**
+-   **Chris Richardson. Developing Transactional Microservices Using Aggregates, Event Sourcing and CQRS - Part 2** <br/>
     [*https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-2-richardson*](https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-2-richardson)
 
--   **Chris Richardson. Event Sourcing pattern**
+-   **Chris Richardson. Event Sourcing pattern** <br/>
     [*https://microservices.io/patterns/data/event-sourcing.html*](https://microservices.io/patterns/data/event-sourcing.html)
 
--   **Introducing Event Sourcing**
+-   **Introducing Event Sourcing** <br/>
     [*https://msdn.microsoft.com/library/jj591559.aspx*](https://msdn.microsoft.com/library/jj591559.aspx)
 
--   **Event Store database**. Official site.
+-   **Event Store database**. Official site. <br/>
     [*https://geteventstore.com/*](https://geteventstore.com/)
 
--   **Patrick Nommensen. Event-Driven Data Management for Microservices**
+-   **Patrick Nommensen. Event-Driven Data Management for Microservices** <br/>
     *<https://dzone.com/articles/event-driven-data-management-for-microservices-1> *
 
--   **The CAP Theorem**
+-   **The CAP Theorem** <br/>
     [*https://en.wikipedia.org/wiki/CAP\_theorem*](https://en.wikipedia.org/wiki/CAP_theorem)
 
--   **What is CAP Theorem?**
+-   **What is CAP Theorem?** <br/>
     [*https://www.quora.com/What-Is-CAP-Theorem-1*](https://www.quora.com/What-Is-CAP-Theorem-1)
 
--   **Data Consistency Primer**
+-   **Data Consistency Primer** <br/>
     [*https://msdn.microsoft.com/library/dn589800.aspx*](https://msdn.microsoft.com/library/dn589800.aspx)
 
--   **Rick Saling. The CAP Theorem: Why “Everything is Different” with the Cloud and Internet**
+-   **Rick Saling. The CAP Theorem: Why “Everything is Different” with the Cloud and Internet** <br/>
     [*https://blogs.msdn.microsoft.com/rickatmicrosoft/2013/01/03/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/*](https://blogs.msdn.microsoft.com/rickatmicrosoft/2013/01/03/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/)
 
--   **Eric Brewer. CAP Twelve Years Later: How the "Rules" Have Changed**
+-   **Eric Brewer. CAP Twelve Years Later: How the "Rules" Have Changed** <br/>
     [*https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed*](https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed)
 
--   **Participating in External (DTC) Transactions** (MSMQ)
-    [*https://msdn.microsoft.com/library/ms978430.aspx\#bdadotnetasync2\_topic3c*](https://msdn.microsoft.com/library/ms978430.aspx%23bdadotnetasync2_topic3c)
-
--   **Azure Service Bus. Brokered Messaging: Duplicate Detection**
+-   **Azure Service Bus. Brokered Messaging: Duplicate Detection**  <br/>
     [*https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25*](https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25)
 
--   **Reliability Guide** (RabbitMQ documentation)
+-   **Reliability Guide** (RabbitMQ documentation)* <br/>
+    [*https://www.rabbitmq.com/reliability.html\#consumer*](https://www.rabbitmq.com/reliability.html#consumer)
+
+-   **Participating in External (DTC) Transactions** (MSMQ) <br/>
+    [*https://msdn.microsoft.com/library/ms978430.aspx\#bdadotnetasync2\_topic3c*](https://msdn.microsoft.com/library/ms978430.aspx%23bdadotnetasync2_topic3c)
+
+-   **Azure Service Bus. Brokered Messaging: Duplicate Detection** <br/>
+    [*https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25*](https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25)
+
+-   **Reliability Guide** (RabbitMQ documentation) <br/>
     [*https://www.rabbitmq.com/reliability.html\#consumer*](https://www.rabbitmq.com/reliability.html%23consumer)
 
 

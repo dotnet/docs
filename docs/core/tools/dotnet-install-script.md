@@ -1,7 +1,7 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET Core CLI tools and the shared runtime.
-ms.date: 11/12/2018
+ms.date: 11/15/2018
 ---
 # dotnet-install scripts reference
 
@@ -28,7 +28,7 @@ We recommend that you use the stable version that is hosted on [.NET Core main w
 * <https://dot.net/v1/dotnet-install.sh> (bash, UNIX)
 * <https://dot.net/v1/dotnet-install.ps1> (Powershell, Windows)
 
-The main usefulness of these scripts is in automation scenarios and non-admin installations. There are two scripts: one is a PowerShell script that works on Windows and the other is a bash script that works on Linux/macOS. Both scripts have the same behavior. The bash script also reads PowerShell switches, so you can use PowerShell switches with the script on Linux/macOS systems.
+The main usefulness of these scripts is in automation scenarios and non-admin installations. There are two scripts: one is a PowerShell script that works on Windows, and the other is a bash script that works on Linux/macOS. Both scripts have the same behavior. The bash script also reads PowerShell switches, so you can use PowerShell switches with the script on Linux/macOS systems.
 
 The installation scripts download the ZIP/tarball file from the CLI build drops and proceed to install it in either the default location or in a location specified by `-InstallDir|--install-dir`. By default, the installation scripts download the SDK and install it. If you wish to only obtain the shared runtime, specify the `--shared-runtime` argument.
 
@@ -40,7 +40,7 @@ You can install a specific version using the `--version` argument. The version m
 
 ## Options
 
-`-Channel <CHANNEL>`
+**`-Channel <CHANNEL>`**
 
 Specifies the source channel for the installation. The possible values are:
 
@@ -51,7 +51,7 @@ Specifies the source channel for the installation. The possible values are:
 
 The default value is `LTS`. For more information on .NET support channels, see the [.NET Support Policy](https://www.microsoft.com/net/platform/support-policy#dotnet-core) page.
 
-`-Version <VERSION>`
+**`-Version <VERSION>`**
 
 Represents a specific build version. The possible values are:
 
@@ -61,69 +61,69 @@ Represents a specific build version. The possible values are:
 
 If not specified, `-Version` defaults to `latest`.
 
-`-InstallDir <DIRECTORY>`
+**`-InstallDir <DIRECTORY>`**
 
-Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\.dotnet*. Binaries are placed directly in the directory.
+Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\.dotnet*. Binaries are placed directly in this directory.
 
-`-Architecture <ARCHITECTURE>`
+**`-Architecture <ARCHITECTURE>`**
 
 Architecture of the .NET Core binaries to install. Possible values are `auto`, `x64`, and `x86`. The default value is `auto`, which represents the currently running OS architecture.
 
-`-SharedRuntime`
+**`-SharedRuntime`**
 
 > [!NOTE]
 > This parameter is obsolete and may be removed in a future version of the script. The recommended alternative is the `Runtime` option.
 
 Installs just the shared runtime bits, not the entire SDK. This is equivalent to specifying `-Runtime dotnet`.
 
-`-Runtime <RUNTIME>`
+**`-Runtime <RUNTIME>`**
 
 Installs just the shared runtime, not the entire SDK. The possible values are:
 
 * `dotnet` - the `Microsoft.NETCore.App` shared runtime.
 * `aspnetcore` - the `Microsoft.AspNetCore.App` shared runtime.
 
-`-DryRun`
+**`-DryRun`**
 
 If set, the script won't perform the installation. Instead, it displays what command line to use to consistently install the currently requested version of the .NET Core CLI. For example, if you specify version `latest`, it displays a link with the specific version so that this command can be used deterministically in a build script. It also displays the binary's location if you prefer to install or download it yourself.
 
-`-NoPath`
+**`-NoPath`**
 
 If set, the installation folder isn't exported to the path for the current session. By default, the script modifies the PATH, which makes the CLI tools available immediately after install.
 
-`-Verbose`
+**`-Verbose`**
 
 Displays diagnostics information.
 
-`-AzureFeed`
+**`-AzureFeed`**
 
-Specifies the URL for the Azure feed to the installer. It isn't recommended that you change this value. The default value is `https://dotnetcli.azureedge.net/dotnet`.
+Specifies the URL for the Azure feed to the installer. We recommended that you don't change this value. The default value is `https://dotnetcli.azureedge.net/dotnet`.
 
-`-UncachedFeed`
+**`-UncachedFeed`**
 
-It allows changing the URL for the Uncached feed used by this installer. It isn't recommended that you change this value.
+Allows changing the URL for the uncached feed used by this installer. We recommended that you don't change this value.
 
-`-NoCdn`
+**`-NoCdn`**
 
-Disables downloading from the Azure CDN and uses the uncached feed directly.
+Disables downloading from the [Azure Content Delivery Network (CDN)](https://docs.microsoft.com/azure/cdn/cdn-overview) and uses the uncached feed directly.
 
-`-FeedCredential`
+**`-FeedCredential`**
 
 Used as a query string to append to the Azure feed. It allows changing the URL to use non-public blob storage accounts.
 
-`-ProxyAddress`
+**`-ProxyAddress`**
 
 If set, the installer uses the proxy when making web requests. (Only valid for Windows)
 
-`ProxyUseDefaultCredentials`
+**`ProxyUseDefaultCredentials`**
 
 If set, the installer uses the credentials of the current user when using proxy address. (Only valid for Windows)
 
-`-SkipNonVersionedFiles`
+**`-SkipNonVersionedFiles`**
 
-Skips installing non-versioned files if they already exist, such as *dotnet.exe*.
+Skips installing non-versioned files, such as *dotnet.exe*, if they already exist.
 
-`-Help`
+**`-Help`**
 
 Prints out help for the script.
 

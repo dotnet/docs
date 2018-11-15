@@ -294,7 +294,7 @@ public unsafe Task<int> ManagedWrapperAsync(Memory<byte> data)
     var state = new MyCompletedCallbackState {
         Tcs = tcs
     };
-    var pState = (IntPtr)GCHandle.Alloc();
+    var pState = (IntPtr)GCHandle.Alloc(state;
 
     var memoryHandle = data.Pin();
     state.MemoryHandle = memoryHandle;

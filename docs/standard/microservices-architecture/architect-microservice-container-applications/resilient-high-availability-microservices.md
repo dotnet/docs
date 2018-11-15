@@ -52,25 +52,25 @@ Different orchestrators might sound similar, but the diagnostics and health chec
 
 ## Additional resources
 
-- **The Twelve-Factor App. XI. Logs: Treat logs as event streams** <br/>
+- **The Twelve-Factor App. XI. Logs: Treat logs as event streams** \
   [*https://12factor.net/logs*](https://12factor.net/logs)
 
-- **Microsoft Diagnostic EventFlow Library** GitHub repo. <br/>
+- **Microsoft Diagnostic EventFlow Library** GitHub repo. \
   [*https://github.com/Azure/diagnostics-eventflow*](https://github.com/Azure/diagnostics-eventflow)
 
-- **What is Azure Diagnostics** <br/>
+- **What is Azure Diagnostics** \
   [*https://docs.microsoft.com/azure/azure-diagnostics*](https://docs.microsoft.com/azure/azure-diagnostics)
 
-- **Connect Windows computers to the Log Analytics service in Azure** <br/>
+- **Connect Windows computers to the Log Analytics service in Azure** \
   [*https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents*](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents)
 
-- **Logging What You Mean: Using the Semantic Logging Application Block** <br/>
+- **Logging What You Mean: Using the Semantic Logging Application Block** \
   [*https://msdn.microsoft.com/library/dn440729(v=pandp.60).aspx*](https://msdn.microsoft.com/library/dn440729(v=pandp.60).aspx)
 
-- **Splunk** Official site. <br/>
+- **Splunk** Official site. \
   [*https://www.splunk.com/*](https://www.splunk.com/)
 
-- **EventSource Class** API for events tracing for Windows (ETW) <br/>
+- **EventSource Class** API for events tracing for Windows (ETW) \
   [*https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource*](https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource)
 
 >[!div class="step-by-step"]
